@@ -1,0 +1,57 @@
+service: louis-static-site
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:ListBucket"
+        - "s3:PutObject"
+      Resource:
+        - "arn:aws:s3:::louis-static-site"
+        - "arn:aws:s3:::louis-static-site/*"
+
+defaults:
+ stage: dev
+ region: eu-west-1
+
+functions:
+  publish:
+    handler: handler.publish
+
+#   you can add any of the following events
+#   events:
+#     - http:
+#         path: users/create
+#         method: get
+#     - s3: ${bucket}
+#     - schedule: rate(10 minutes)
+#     - sns: greeter-topic
+
+# CloudFormation resource templates
+resources:
+
+  Resources:
+    SiteBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: louis-static-site
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: error.html
+
+    SiteBucketPolicy:
+      Type: "AWS::S3::BucketPolicy"
+      DependsOn: "SiteBucket"
+      Properties:
+        Bucket: louis-static-site
+        PolicyDocument:
+          Statement:
+            - Effect: Allow
+              Principal: "*"
+              Action:
+                - "s3:GetObject"
+              Resource:
+                - "arn:aws:s3:::louis-static-site/*"
