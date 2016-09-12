@@ -9,10 +9,8 @@ const pages = [
     Body: 'Error :(',
     ContentType: 'text/html',
   },
-]
+];
 
 module.exports = function compileSite() {
-  return new Promise((resolve) => {
-    resolve(pages);
-  })
-}
+  return new Promise(resolve => resolve(pages););
+};

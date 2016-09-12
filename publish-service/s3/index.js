@@ -5,7 +5,7 @@ function makeUploader({ bucketName }) {
 
   const s3bucket = new AWS.S3({ params: { Bucket: BucketName }});
   return (page) => s3bucket.upload(page).promise();
-}
+};
 
 module.exports = {
   makeUploader,

@@ -7,7 +7,7 @@ const makeUploader = require('./s3').makeUploader;
 const bucketName = 'website-honestly-dev'
 const uploadPage = makeUploader({ bucketName });
 
-module.exports.publish = function(event, context, cb) {
+module.exports.publish = function publish(event, context, cb) {
 
   const uploads = compileSite()
     .then(pages => pages.map(uploadPage));
