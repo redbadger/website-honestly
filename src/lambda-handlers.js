@@ -1,22 +1,23 @@
 'use strict';
 
-module.exports.publish = (event, context, cb) => {
+const compileSite = require('./site-compile');
+
+// TODO : Make this value vary with the environment
+const BucketName = 'website-honestly-dev'
+
+module.exports.publish = function(event, context, cb) {
   const AWS = require('aws-sdk');
   AWS.config.region = 'eu-west-1';
+  AWS.config.setPromisesDependency(null);
 
-  const s3bucket = new AWS.S3({ params: { Bucket: 'louis-static-site' }});
+  const s3bucket = new AWS.S3({ params: { Bucket: BucketName }});
 
-  const index = {
-    Key: 'index.html',
-    Body: 'Published at ' + (new Date().toString()),
-    ContentType: 'text/html',
-  };
-  const error = {
-    Key: 'error.html',
-    Body: 'Error :(',
-    ContentType: 'text/html',
-  };
-  s3bucket.upload(index , () => {
-    s3bucket.upload(error, cb);
-  });
+  const uploads = compileSite()
+    .then(pages =>
+      pages.map(page => s3bucket.upload(page).promise())
+    );
+
+  Promise.all(uploads)
+    .then(data => cb(null, data))
+    .catch(error => eb(error));
 };
