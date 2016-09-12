@@ -18,7 +18,7 @@ defaults:
 
 functions:
   publish:
-    handler: src/lambda-handlers.publish
+    handler: handlers.publish
 
 #   you can add any of the following events
 #   events:
