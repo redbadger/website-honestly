@@ -1,4 +1,4 @@
-service: louis-static-site
+service: website-honestly
 
 provider:
   name: aws
@@ -18,7 +18,7 @@ defaults:
 
 functions:
   publish:
-    handler: handler.publish
+    handler: src/lambda-handlers.publish
 
 #   you can add any of the following events
 #   events:
@@ -29,9 +29,7 @@ functions:
 #     - schedule: rate(10 minutes)
 #     - sns: greeter-topic
 
-# CloudFormation resource templates
 resources:
-
   Resources:
     SiteBucket:
       Type: AWS::S3::Bucket
