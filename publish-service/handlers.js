@@ -1,6 +1,7 @@
 'use strict';
 
 const compileSite = require('../site/compiler');
+const getSiteState = require('../state');
 const makeUploader = require('./s3').makeUploader;
 
 // TODO : Make this value vary with the environment
@@ -9,7 +10,8 @@ const uploadPage = makeUploader({ bucketName });
 
 module.exports.publish = function publish(event, context, cb) {
 
-  const uploads = compileSite()
+  const uploads = getSiteState()
+    .then(compileSite)
     .then(pages => pages.map(uploadPage));
 
   Promise.all(uploads)

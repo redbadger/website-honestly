@@ -11,6 +11,6 @@ const pages = [
   },
 ];
 
-module.exports = function compileSite() {
-  return new Promise(resolve => resolve(pages););
+module.exports = function compileSite(_data) {
+  return pages;
 };
