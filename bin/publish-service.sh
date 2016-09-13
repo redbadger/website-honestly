@@ -10,4 +10,12 @@ source $ENV_FILE                # Load .env variables
 export $(cut -d= -f1 $ENV_FILE) # Expose variables to child processes
 
 cd $SERVICE_DIR
-$SERVERLESS deploy
+
+case "$1" in
+  deploy) $SERVERLESS deploy
+    ;;
+  invoke) $SERVERLESS invoke --function publish
+    ;;
+  *) echo "Unknown command $1"
+    ;;
+esac
