@@ -1,12 +1,4 @@
-
-const params = {
-  Bucket: 'bucket',
-  Key: 'example1.txt',
-  Body: 'Uploaded text using the simplified callback method!'
-};
-
-
-function makeUploader({ bucketName }) {
+module.exports.makeUploader = function makeUploader({ bucketName }) {
   const AWS = require('aws-sdk');
   const s3 = new AWS.S3({
     apiVersion: '2006-03-01',
@@ -22,7 +14,3 @@ function makeUploader({ bucketName }) {
     }).promise()
   );
 }
-
-module.exports = {
-  makeUploader,
-};
