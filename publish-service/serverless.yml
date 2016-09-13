@@ -1,0 +1,87 @@
+service: website-honestly
+
+custom:
+  bucket_name: "${env:BUCKET_NAME_PREFIX}-${opt:stage, self:provider.stage}"
+
+provider:
+  name: aws
+  stage: dev
+  region: eu-west-1
+  runtime: nodejs4.3
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:ListBucket"
+        - "s3:PutObject"
+      Resource:
+        - "arn:aws:s3:::${self:custom.bucket_name}"
+        - "arn:aws:s3:::${self:custom.bucket_name}/*"
+
+
+functions:
+  publish:
+    handler: handlers.publish
+#   events:
+#     - http:
+#         path: users/create
+#         method: get
+
+resources:
+  Resources:
+    SiteContentBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: "${self:custom.bucket_name}"
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: 404.html
+
+    SiteContentBucketPolicy:
+      Type: "AWS::S3::BucketPolicy"
+      DependsOn: "SiteContentBucket"
+      Properties:
+        Bucket: "${self:custom.bucket_name}"
+        PolicyDocument:
+          Statement:
+            - Effect: Allow
+              Principal: "*"
+              Action:
+                - "s3:GetObject"
+              Resource:
+                - "arn:aws:s3:::${self:custom.bucket_name}/*"
+
+    SiteCloudfrontDistribution:
+      Type: "AWS::CloudFront::Distribution"
+      Properties:
+        DistributionConfig:
+          # Aliases:
+          #   - "mysite.example.com"
+          Origins:
+            - DomainName: "${self:custom.bucket_name}.s3.amazonaws.com"
+              Id: "S3Origin"
+              CustomOriginConfig:
+                HTTPPort: "80"
+                HTTPSPort: "443"
+                OriginProtocolPolicy: "https-only"
+          CustomErrorResponses:
+            - ErrorCachingMinTTL : 20
+              ErrorCode: 404
+              ResponseCode: 404
+              ResponsePagePath: "/404.html"
+          Enabled: "true"
+          PriceClass: "PriceClass_200"
+          DefaultRootObject: "index.html"
+          DefaultCacheBehavior:
+            TargetOriginId: "S3Origin"
+            ViewerProtocolPolicy: "allow-all"
+            AllowedMethods:
+              - "HEAD"
+              - "GET"
+            MinTTL: 5
+            DefaultTTL: 60
+            MaxTTL: 120
+            ForwardedValues:
+              QueryString: "false"
+              Cookies:
+                Forward: "none"
