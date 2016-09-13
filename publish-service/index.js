@@ -1,8 +1,6 @@
-'use strict';
-
-const compileSite = require('../site/compiler');
-const getSiteState = require('../state');
-const makeUploader = require('./s3').makeUploader;
+import compileSite from '../site/compiler';
+import getSiteState from '../state';
+import { makeUploader } from './s3';
 
 // TODO : Make this value vary with the environment
 const bucketName = 'website-honestly-dev'
@@ -16,7 +14,7 @@ function doPublish(cb) {
     .catch(error => cb(error));
 }
 
-module.exports.publish = function publish(event, context, cb) {
+export function publish(event, context, cb) {
   try {
     doPublish(cb);
   } catch (e) {

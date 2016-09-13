@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    'publish-service': './publish-service/handlers.js',
+    'publish-service': './publish-service/index.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),
