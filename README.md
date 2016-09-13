@@ -7,12 +7,9 @@ Red Badger Website Episode 6: Return of the Jedi.
 ## Usage
 
 ```sh
-make # Print the help
-
-npm install # Install the deps
-
-# Run the dev server
-TODO
+make         # Print the help
+make install # Install the deps
+make dev     # Run the dev server
 
 # Deploy to dev lambda environment
 make clean publish-service-deploy
@@ -22,7 +19,7 @@ make publish-service-invoke
 ```
 
 
-## Infrastructure
+## Technical Overview
 
 This site is a static site hosted on AWS S3 behind AWS Cloudfront.
 

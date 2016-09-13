@@ -16,14 +16,22 @@ clean: ## Remove compiled files
 	rm -rf dist
 
 
+install: ## Install deps
+	npm install
+
+
+dev: ## Run the frontend dev server
+	@echo "Oops... This doesn't exist yet... :("
+
+
 build: dist/publish-service.zip ## Compile project
 
 
-dist/publish-service.zip: dist/publish-service/index.js
+dist/publish-service.zip: dist/publish-service
 	cd dist/publish-service && zip -r ../publish-service.zip *
 
 
-dist/publish-service/index.js:
+dist/publish-service:
 	$(WEBPACK)
 
 

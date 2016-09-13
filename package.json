@@ -1,0 +1,24 @@
+{
+  "name": "website-honestly",
+  "version": "1.0.0",
+  "description": "Red Badger Website. Honestly.",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-es2015": "^6.14.0",
+    "json-loader": "^0.5.4",
+    "serverless": "^1.0.0-rc.1",
+    "webpack": "^1.13.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redbadger/website-honestly.git"
+  },
+  "author": "Badger Labs @ Red Badger!",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/redbadger/website-honestly/issues"
+  },
+  "homepage": "https://github.com/redbadger/website-honestly#readme"
+}
