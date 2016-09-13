@@ -8,13 +8,18 @@ const makeUploader = require('./s3').makeUploader;
 const bucketName = 'website-honestly-dev'
 const uploadPage = makeUploader({ bucketName });
 
-module.exports.publish = function publish(event, context, cb) {
-
+function doPublish(cb) {
   const uploads = getSiteState()
     .then(compileSite)
-    .then(pages => pages.map(uploadPage));
-
-  Promise.all(uploads)
+    .then(pages => Promise.all(pages.map(uploadPage)))
     .then(data => cb(null, data))
-    .catch(error => eb(error));
+    .catch(error => cb(error));
+}
+
+module.exports.publish = function publish(event, context, cb) {
+  try {
+    doPublish(cb);
+  } catch (e) {
+    cb(e);
+  }
 };

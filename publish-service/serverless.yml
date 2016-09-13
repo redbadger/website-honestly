@@ -3,6 +3,9 @@ service: website-honestly
 custom:
   bucket_name: "${env:BUCKET_NAME_PREFIX}-${opt:stage, self:provider.stage}"
 
+package:
+  artifact: ../dist/publish-service.zip
+
 provider:
   name: aws
   stage: dev
@@ -20,7 +23,7 @@ provider:
 
 functions:
   publish:
-    handler: handlers.publish
+    handler: index.publish
 #   events:
 #     - http:
 #         path: users/create

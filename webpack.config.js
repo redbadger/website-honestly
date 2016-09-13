@@ -2,13 +2,14 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-	entry: {
-		'publish-service': './publish-service/handlers.js',
-	},
-	output: {
-		path: path.join(__dirname, 'dist'),
-		filename: "[name]/index.js",
-	},
+  entry: {
+    'publish-service': './publish-service/handlers.js',
+  },
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: '[name]/index.js',
+    libraryTarget: 'commonjs',
+  },
   module: {
     loaders: [
       {
@@ -25,7 +26,7 @@ module.exports = {
   },
   target: 'node',
   externals: [
-    'aws-sdk'
+    'aws-sdk',
   ],
   devtool: 'source-map',
   plugins: [

@@ -13,11 +13,16 @@ then
   export $VAR_NAMES # Expose variables to child processes
 fi
 
+doDeploy() {
+  echo Deploying publish-service.
+  $SERVERLESS deploy
+}
+
 cd $SERVICE_DIR
 
 case "$1" in
   deploy)
-    $SERVERLESS deploy
+    doDeploy
     ;;
   invoke)
     $SERVERLESS invoke --function publish
