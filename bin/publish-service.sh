@@ -6,8 +6,9 @@ NODE_BIN=$(realpath ./node_modules/.bin)
 SERVERLESS=$NODE_BIN/serverless
 
 ENV_FILE=.env
-source $ENV_FILE                # Load .env variables
-export $(cut -d= -f1 $ENV_FILE) # Expose variables to child processes
+VAR_NAMES=$(cat $ENV_FILE | grep = | cut -d= -f1)
+source $ENV_FILE  # Load .env variables
+export $VAR_NAMES # Expose variables to child processes
 
 cd $SERVICE_DIR
 
@@ -17,5 +18,6 @@ case "$1" in
   invoke) $SERVERLESS invoke --function publish
     ;;
   *) echo "Unknown command $1"
+    exit 1
     ;;
 esac

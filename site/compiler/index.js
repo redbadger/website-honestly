@@ -5,8 +5,8 @@ const pages = [
     ContentType: 'text/html',
   },
   {
-    Key: 'error.html',
-    Body: 'Error :(',
+    Key: '404.html',
+    Body: 'Not found :(',
     ContentType: 'text/html',
   },
 ];

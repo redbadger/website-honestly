@@ -35,7 +35,7 @@ resources:
         AccessControl: PublicRead
         WebsiteConfiguration:
           IndexDocument: index.html
-          ErrorDocument: error.html
+          ErrorDocument: 404.html
 
     SiteContentBucketPolicy:
       Type: "AWS::S3::BucketPolicy"
@@ -50,3 +50,38 @@ resources:
                 - "s3:GetObject"
               Resource:
                 - "arn:aws:s3:::${self:custom.bucket_name}/*"
+
+    SiteCloudfrontDistribution:
+      Type: "AWS::CloudFront::Distribution"
+      Properties:
+        DistributionConfig:
+          # Aliases:
+          #   - "mysite.example.com"
+          Origins:
+            - DomainName: "${self:custom.bucket_name}.s3.amazonaws.com"
+              Id: "S3Origin"
+              CustomOriginConfig:
+                HTTPPort: "80"
+                HTTPSPort: "443"
+                OriginProtocolPolicy: "https-only"
+          CustomErrorResponses:
+            - ErrorCachingMinTTL : 20
+              ErrorCode: 404
+              ResponseCode: 404
+              ResponsePagePath: "/404.html"
+          Enabled: "true"
+          PriceClass: "PriceClass_200"
+          DefaultRootObject: "index.html"
+          DefaultCacheBehavior:
+            TargetOriginId: "S3Origin"
+            ViewerProtocolPolicy: "allow-all"
+            AllowedMethods:
+              - "HEAD"
+              - "GET"
+            MinTTL: 5
+            DefaultTTL: 60
+            MaxTTL: 120
+            ForwardedValues:
+              QueryString: "false"
+              Cookies:
+                Forward: "none"
