@@ -1,7 +1,12 @@
 service: website-honestly
 
+custom:
+  bucket_name: "${env:BUCKET_NAME_PREFIX}-${opt:stage, self:provider.stage}"
+
 provider:
   name: aws
+  stage: dev
+  region: eu-west-1
   runtime: nodejs4.3
   iamRoleStatements:
     - Effect: "Allow"
@@ -9,42 +14,34 @@ provider:
         - "s3:ListBucket"
         - "s3:PutObject"
       Resource:
-        - "arn:aws:s3:::louis-static-site"
-        - "arn:aws:s3:::louis-static-site/*"
+        - "arn:aws:s3:::${self:custom.bucket_name}"
+        - "arn:aws:s3:::${self:custom.bucket_name}/*"
 
-defaults:
- stage: dev
- region: eu-west-1
 
 functions:
   publish:
     handler: handlers.publish
-
-#   you can add any of the following events
 #   events:
 #     - http:
 #         path: users/create
 #         method: get
-#     - s3: ${bucket}
-#     - schedule: rate(10 minutes)
-#     - sns: greeter-topic
 
 resources:
   Resources:
-    SiteBucket:
+    SiteContentBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: louis-static-site
+        BucketName: "${self:custom.bucket_name}"
         AccessControl: PublicRead
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: error.html
 
-    SiteBucketPolicy:
+    SiteContentBucketPolicy:
       Type: "AWS::S3::BucketPolicy"
-      DependsOn: "SiteBucket"
+      DependsOn: "SiteContentBucket"
       Properties:
-        Bucket: louis-static-site
+        Bucket: "${self:custom.bucket_name}"
         PolicyDocument:
           Statement:
             - Effect: Allow
@@ -52,4 +49,4 @@ resources:
               Action:
                 - "s3:GetObject"
               Resource:
-                - "arn:aws:s3:::louis-static-site/*"
+                - "arn:aws:s3:::${self:custom.bucket_name}/*"
