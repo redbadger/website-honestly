@@ -9,3 +9,5 @@ then
   source $ENV_FILE  # Load .env variables
   export $VAR_NAMES # Expose variables to child processes
 fi
+
+export BUCKET_NAME="$BUCKET_NAME_PREFIX-$BUCKET_NAME_SUFFIX"
