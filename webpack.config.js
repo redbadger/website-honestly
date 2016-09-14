@@ -33,6 +33,7 @@ module.exports = {
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         unused: true,

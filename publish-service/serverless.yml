@@ -1,7 +1,7 @@
 service: website-honestly
 
 custom:
-  bucket_name: "${env:BUCKET_NAME_PREFIX}-${opt:stage, self:provider.stage}"
+  bucket_name: "${env:BUCKET_NAME}"
 
 package:
   artifact: ../dist/publish-service.zip

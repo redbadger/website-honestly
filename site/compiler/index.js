@@ -1,11 +1,11 @@
 const pages = [
   {
     path: 'index.html',
-    content: 'Published at ' + (new Date().toString()),
+    body: 'Published at ' + (new Date().toString()),
   },
   {
     path: '404.html',
-    content: 'Not found :(',
+    body: 'Not found :(',
   },
 ];
 
