@@ -4,6 +4,7 @@ PUBLISH_SERVICE=$(BIN)/publish-service.sh
 NBIN=./node_modules/.bin
 WEBPACK=$(BIN)/webpack.sh
 MOCHA=$(NBIN)/mocha
+ESLINT=$(NBIN)/eslint
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
@@ -34,6 +35,10 @@ test-watch: ## Run the tests and watch for changes
 
 
 build: dist/publish-service.zip ## Compile project
+
+
+lint: ## Lint Javascript files
+	$(ESLINT) . --ext .js --ext .jsx --ignore-path .gitignore --cache
 
 
 dist/publish-service.zip: dist/publish-service
