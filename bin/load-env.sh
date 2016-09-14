@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-source ./bin/fullpath.sh
-
-ENV_FILE=$(fullpath .env)
+ENV_FILE=".env"
 
 if [ -f $ENV_FILE ];
 then

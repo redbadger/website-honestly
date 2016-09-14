@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-source ./bin/fullpath.sh
+fullpath() {
+  [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
 source $(fullpath bin/load-env.sh)
 
 SERVICE_DIR=$(fullpath ./publish-service)
