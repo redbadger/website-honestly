@@ -5,11 +5,11 @@ export function makeUploader({ bucketName }) {
     region: 'eu-west-1',
   });
 
-  return ({ path, contents }) => (
+  return ({ path, body }) => (
     s3.putObject({
       Bucket: bucketName,
       Key: path,
-      Body: contents,
+      Body: body,
       ContentType: 'text/html',
     }).promise()
   );

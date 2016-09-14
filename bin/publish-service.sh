@@ -1,17 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ENV_FILE=$(realpath .env)
-SERVICE_DIR=$(realpath ./publish-service)
-NODE_BIN=$(realpath ./node_modules/.bin)
-SERVERLESS=$NODE_BIN/serverless
+source ./bin/fullpath.sh
+source $(fullpath bin/load-env.sh)
 
-if [ -f $ENV_FILE ];
-then
-  VAR_NAMES=$(cat $ENV_FILE | grep -Ev '^#' | grep = | cut -d= -f1)
-  source $ENV_FILE  # Load .env variables
-  export $VAR_NAMES # Expose variables to child processes
-fi
+SERVICE_DIR=$(fullpath ./publish-service)
+NODE_BIN=$(fullpath ./node_modules/.bin)
+SERVERLESS=$NODE_BIN/serverless
 
 doDeploy() {
   echo Deploying publish-service.

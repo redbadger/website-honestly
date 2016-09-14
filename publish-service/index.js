@@ -2,8 +2,7 @@ import compileSite from '../site/compiler';
 import getSiteState from '../state';
 import { makeUploader } from './s3';
 
-// TODO : Make this value vary with the environment
-const bucketName = 'website-honestly-dev'
+const bucketName = process.env.BUCKET_NAME;
 const uploadPage = makeUploader({ bucketName });
 
 function doPublish(cb) {
