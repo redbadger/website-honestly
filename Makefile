@@ -2,7 +2,6 @@ BIN=./bin
 PUBLISH_SERVICE=$(BIN)/publish-service.sh
 
 NBIN=./node_modules/.bin
-# WEBPACK=$(NBIN)/webpack --bail
 WEBPACK=$(BIN)/webpack.sh
 
 help:
