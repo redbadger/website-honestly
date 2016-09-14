@@ -4,6 +4,8 @@ PUBLISH_SERVICE=$(BIN)/publish-service.sh
 NBIN=./node_modules/.bin
 WEBPACK=$(BIN)/webpack.sh
 
+mocha=./node_modules/mocha/bin/mocha
+
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
@@ -22,6 +24,14 @@ install: ## Install deps
 
 dev: ## Run the frontend dev server
 	@echo "Oops... This doesn't exist yet... :("
+
+
+test: ## Run the tests
+	$(mocha)
+
+
+test-watch: ## Run the tests and watch for changes
+	$(mocha) --reporter min --watch
 
 
 build: dist/publish-service.zip ## Compile project
@@ -49,4 +59,6 @@ publish-service-invoke: ## Invoke the publish service
 	build \
 	badger \
 	publish-service-deploy \
-	publish-service-invoke
+	publish-service-invoke \
+	test \
+	test-watch
