@@ -1,6 +1,8 @@
 Website. Honestly.
 ==================
 
+[![CircleCI](https://circleci.com/gh/redbadger/website-honestly.svg?style=svg)](https://circleci.com/gh/redbadger/website-honestly)
+
 Red Badger Website Episode 6: Return of the Jedi.
 
 

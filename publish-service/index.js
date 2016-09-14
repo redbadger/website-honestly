@@ -6,7 +6,7 @@ const bucketName = process.env.BUCKET_NAME;
 const uploadPage = makeUploader({ bucketName });
 
 function doPublish(cb) {
-  const uploads = getSiteState()
+  getSiteState()
     .then(compileSite)
     .then(pages => Promise.all(pages.map(uploadPage)))
     .then(data => cb(null, data))
@@ -19,4 +19,4 @@ export function publish(event, context, cb) {
   } catch (e) {
     cb(e);
   }
-};
+}
