@@ -24,10 +24,10 @@ provider:
 functions:
   publish:
     handler: index.publish
-#   events:
-#     - http:
-#         path: users/create
-#         method: get
+    events:
+      - http:
+          path: site/publish
+          method: get
 
 resources:
   Resources:
