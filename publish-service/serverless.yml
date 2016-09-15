@@ -27,7 +27,8 @@ functions:
     events:
       - http:
           path: site/publish
-          method: get
+          method: post
+          private: true
 
 resources:
   Resources:
