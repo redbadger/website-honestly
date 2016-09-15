@@ -17,6 +17,7 @@
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "mocha": "^3.0.2",
+    "npm-check-updates": "^2.8.0",
     "pre-git": "^3.10.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",

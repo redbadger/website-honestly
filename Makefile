@@ -6,6 +6,7 @@ WEBPACK=$(BIN)/webpack.sh
 MOCHA=$(NBIN)/mocha
 ESLINT=$(NBIN)/eslint
 WEBPACK_DEV_SERVER=$(NBIN)/webpack-dev-server
+NPM_CHECK_UPDATES=$(NBIN)/ncu
 
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
@@ -21,6 +22,10 @@ clean: ## Remove compiled files
 
 install: ## Install deps
 	npm install
+
+
+check-deps: ## Check deps for updates
+	$(NPM_CHECK_UPDATES)
 
 
 dev: ## Run the frontend dev server
