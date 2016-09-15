@@ -13,9 +13,7 @@ help:
 
 
 badger: ## Red Badger 4 lyfe!
-	@echo ''
 	@cat assets/badger.txt
-	@echo ''
 
 
 clean: ## Remove compiled files
