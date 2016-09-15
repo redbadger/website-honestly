@@ -13,6 +13,7 @@
     }
   },
   "rules": {
+    "comma-dangle": ["error", "always-multiline"],
     "import/prefer-default-export": 0,
     "import/extensions": 1,
     "no-underscore-dangle": 0,

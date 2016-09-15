@@ -1,45 +1,9 @@
-import React, { PropTypes } from 'react';
-import {
-  IndexRoute,
-  Link,
-  Route,
-  Router,
-  browserHistory,
-} from 'react-router';
+import React from 'react';
+import { IndexRoute, Route, Router, browserHistory } from 'react-router';
 
-
-function Layout({ children }) {
-  return (
-    <div>
-      <h1>Website. Honestly.</h1>
-      <div>{children}</div>
-    </div>
-  );
-}
-Layout.propTypes = {
-  children: PropTypes.element.isRequired,
-};
-
-
-function HomePage() {
-  return (
-    <div>
-      <h1>Homepage</h1>
-      <Link to="/somewhere">Go somewhere?</Link>
-    </div>
-  );
-}
-
-
-function NotFoundPage() {
-  return (
-    <div>
-      <h1>Nothing here...</h1>
-      <Link to="/">Go home?</Link>
-    </div>
-  );
-}
-
+import Layout from '../layout';
+import HomePage from '../pages/home';
+import NotFoundPage from '../pages/not-found';
 
 export default function routes() {
   return (
