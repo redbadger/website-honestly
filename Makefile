@@ -13,7 +13,9 @@ help:
 
 
 badger: ## Red Badger 4 lyfe!
+	@echo ''
 	@cat assets/badger.txt
+	@echo ''
 
 
 clean: ## Remove compiled files
@@ -28,7 +30,7 @@ check-deps: ## Check deps for updates
 	$(NPM_CHECK_UPDATES)
 
 
-dev: ## Run the frontend dev server
+dev: badger ## Run the frontend dev server
 	$(WEBPACK_DEV_SERVER) --hot --inline
 
 
