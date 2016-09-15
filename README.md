@@ -9,9 +9,10 @@ Red Badger Website Episode 6: Return of the Jedi.
 ## Usage
 
 ```sh
-make         # Print the help
-make install # Install the deps
-make dev     # Run the dev server
+make             # Print the help
+make install     # Install the deps
+make dev         # Run the dev server
+make dev-compile # Compile the site locally
 
 # Deploy to dev lambda environment
 make clean publish-service-deploy

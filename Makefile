@@ -32,6 +32,10 @@ dev: badger ## Run the frontend dev server
 	$(WEBPACK_DEV_SERVER) --hot --inline
 
 
+dev-compile: dist/dev-compiler/index.js ## Compile the site to HTML locally
+	node dist/dev-compiler/index.js
+
+
 test: ## Run the tests
 	$(MOCHA)
 
@@ -40,7 +44,7 @@ test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
 
-build: dist/publish-service.zip ## Compile project
+build: dist/publish-service.zip dist/dev-compiler/index.js ## Compile project
 
 
 lint: ## Lint Javascript files
@@ -54,6 +58,9 @@ dist/publish-service.zip: dist/publish-service
 dist/publish-service:
 	$(WEBPACK)
 
+dist/dev-compiler/index.js:
+	$(WEBPACK)
+
 
 publish-service-deploy: dist/publish-service.zip ## Upload the publish service to AWS Lambda
 	$(PUBLISH_SERVICE) deploy
@@ -64,6 +71,11 @@ publish-service-invoke: ## Invoke the publish service
 
 
 .PHONY: \
+	dev \
+	dev-compile \
+	install \
+	check-deps \
+	lint \
 	help \
 	clear \
 	build \

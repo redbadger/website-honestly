@@ -56,7 +56,7 @@ const lambdaConfig = webpackMerge(baseConfig, {
 
 const devAppConfig = webpackMerge(baseConfig, {
   entry: {
-    'dev-app': './dev-app/index.js',
+    'dev-app': './dev/browser-app/index.js',
   },
   target: 'web',
   plugins: [
@@ -64,7 +64,15 @@ const devAppConfig = webpackMerge(baseConfig, {
   ],
 });
 
+const devCompilerConfig = webpackMerge(baseConfig, {
+  entry: {
+    'dev-compiler': './dev/fs-compiler/index.js',
+  },
+  target: 'node',
+});
+
 module.exports = [
   lambdaConfig,
   devAppConfig,
+  devCompilerConfig,
 ];
