@@ -66,7 +66,7 @@ const devAppConfig = webpackMerge(baseConfig, {
 
 const devCompilerConfig = webpackMerge(baseConfig, {
   entry: {
-    'dev-compiler': './dev/fs-compiler/index.js',
+    'dev-compiler': './dev/compiler/index.js',
   },
   target: 'node',
 });

@@ -58,6 +58,7 @@ dist/publish-service.zip: dist/publish-service
 dist/publish-service:
 	$(WEBPACK)
 
+
 dist/dev-compiler/index.js:
 	$(WEBPACK)
 

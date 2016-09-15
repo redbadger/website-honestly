@@ -9,6 +9,6 @@ const pages = [
   },
 ];
 
-module.exports = function compileSite() {
+export default function compileSite() {
   return pages;
-};
+}
