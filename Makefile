@@ -24,7 +24,7 @@ install: ## Install deps
 
 
 dev: ## Run the frontend dev server
-	$(WEBPACK_DEV_SERVER)
+	$(WEBPACK_DEV_SERVER) --hot --inline
 
 
 test: ## Run the tests
