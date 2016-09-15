@@ -11,8 +11,6 @@ provider:
   stage: dev
   region: eu-west-1
   runtime: nodejs4.3
-  apiKeys:
-    - "website-honestly-dev---prismic-webhook"
   iamRoleStatements:
     - Effect: "Allow"
       Action:
@@ -29,7 +27,8 @@ functions:
       - http:
           path: site/publish
           method: post
-          private: true
+          # request:
+            # passThrough: WHEN_NO_MATCH
 
 resources:
   Resources:
