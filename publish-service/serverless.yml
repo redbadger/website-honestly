@@ -11,6 +11,8 @@ provider:
   stage: dev
   region: eu-west-1
   runtime: nodejs4.3
+  apiKeys:
+    - ${env:API_KEY}
   iamRoleStatements:
     - Effect: "Allow"
       Action:
@@ -19,7 +21,6 @@ provider:
       Resource:
         - "arn:aws:s3:::${self:custom.bucket_name}"
         - "arn:aws:s3:::${self:custom.bucket_name}/*"
-
 
 functions:
   publish:
