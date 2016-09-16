@@ -11,8 +11,9 @@ function compilePage(routes, location) {
     match({ routes, location }, (error, redirectLocation, renderProps) => {
       if (error || redirectLocation || !renderProps) {
         reject(`Unable to render path ${location}`);
+      } else {
+        resolve(renderToString(<RouterContext {...renderProps} />));
       }
-      resolve(renderToString(<RouterContext {...renderProps} />));
     });
   });
 }
