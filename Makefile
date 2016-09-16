@@ -32,8 +32,9 @@ dev: badger ## Run the frontend dev server
 	$(WEBPACK_DEV_SERVER) --hot --inline
 
 
-dev-compile: dist/dev-compiler/index.js ## Compile the site to HTML locally
+dev-compile: dist/static-site dist/dev-compiler/index.js ## Compile the site to HTML locally and serve
 	node dist/dev-compiler/index.js
+	ruby -run -ehttpd ./dist/static-site -p8000
 
 
 test: ## Run the tests
@@ -51,6 +52,14 @@ lint: ## Lint Javascript files
 	$(ESLINT) . --ext .js --ext .jsx --ignore-path .gitignore --cache
 
 
+publish-service-deploy: dist/publish-service.zip ## Upload the publish service to AWS Lambda
+	$(PUBLISH_SERVICE) deploy
+
+
+publish-service-invoke: ## Invoke the publish service
+	$(PUBLISH_SERVICE) invoke
+
+
 dist/publish-service.zip: dist/publish-service
 	cd dist/publish-service && zip -r ../publish-service.zip *
 
@@ -63,13 +72,8 @@ dist/dev-compiler/index.js:
 	$(WEBPACK)
 
 
-publish-service-deploy: dist/publish-service.zip ## Upload the publish service to AWS Lambda
-	$(PUBLISH_SERVICE) deploy
-
-
-publish-service-invoke: ## Invoke the publish service
-	$(PUBLISH_SERVICE) invoke
-
+dist/static-site:
+	mkdir -p ./dist/static-site
 
 .PHONY: \
 	dev \

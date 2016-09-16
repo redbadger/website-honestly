@@ -37,9 +37,9 @@ export function parseRouter(router) {
 }
 
 
-export function routeFilePath(route) {
-  if (route.path === '/*') {
+export function routeFilePath(path) {
+  if (path === '/*') {
     return '/404.html';
   }
-  return `${route.path}/index.html`.replace(/\/+/, '/');
+  return `${path}/index.html`.replace(/\/+/, '/');
 }

@@ -62,7 +62,7 @@ describe('site/compiler/router-parser', () => {
 
     cases.forEach(({ routePath, filePath }) => {
       it(`converts ${routePath} to ${filePath}`, () => {
-        expect(routeFilePath({ path: routePath })).to.equal(filePath);
+        expect(routeFilePath(routePath)).to.equal(filePath);
       });
     });
   });

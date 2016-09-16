@@ -1,5 +1,26 @@
-import compileSite from '../../site/compiler';
+import * as fs from 'fs';
+import { compileSite } from '../../site/compiler';
+import getSiteState from '../../state';
 
-const pages = compileSite();
+function writePage({ path, body }) {
+  return new Promise((resolve, reject) => (
+    fs.writeFile(`./dist/static-site${path}`, body, err => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(true);
+      }
+    })
+  ));
+}
 
-console.log(pages);
+getSiteState()
+  .then(compileSite)
+  .then(pages => Promise.all(pages.map(writePage)))
+  .then(() => {
+    console.log('Site compiled to dist/static-site/');
+  })
+  .catch(error => {
+    console.error(error);
+    process.exit(1);
+  });
