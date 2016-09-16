@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import routes from '../site/routes';
+import routes from '../../site/routes';
 
 document.writeln('<main/>');
 
