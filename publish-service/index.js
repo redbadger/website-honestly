@@ -16,7 +16,7 @@ function doPublish(cb) {
 
 export function publish(event, context, cb) {
   try {
-    if (event && event.body && event.body.secret === secretAuth) {
+    if (event.body && event.body.secret === secretAuth) {
       doPublish(cb);
     } else {
       cb('Not authorised to trigger this function');
