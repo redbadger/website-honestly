@@ -1,7 +1,7 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
-import { uniq } from '../../lib/array';
+import uniq from 'ramda/src/uniq';
 import makeRoutes from '../routes';
 import { parseRouter, routeFilePath } from './parse-router';
 

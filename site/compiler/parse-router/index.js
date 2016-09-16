@@ -1,4 +1,4 @@
-import { flatMap } from '../../../lib/array';
+import flatMap from 'ramda/src/chain';
 
 function compactSlashes(string) {
   return string.replace(/\/+/, '/');
@@ -33,13 +33,13 @@ function parseRoute(route, prefix) {
   const info = routeInfo(route, prefix);
   const children = getChildren(route);
   const parseChild = r => parseRoute(r, fullPath(route, prefix));
-  const childrenInfo = flatMap(children, parseChild);
+  const childrenInfo = flatMap(parseChild, children);
   return [info].concat(childrenInfo);
 }
 
 export function parseRouter(router) {
   const routes = getChildren(router);
-  return flatMap(routes, r => parseRoute(r, ''));
+  return flatMap(r => parseRoute(r, ''), routes);
 }
 
 

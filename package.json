@@ -19,6 +19,7 @@
     "mocha": "^3.0.2",
     "npm-check-updates": "^2.8.0",
     "pre-git": "^3.10.0",
+    "ramda": "^0.22.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-router": "^2.8.1",
