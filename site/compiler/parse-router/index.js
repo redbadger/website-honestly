@@ -31,7 +31,15 @@ function parseRoute(route, prefix) {
   return [info].concat(childrenInfo);
 }
 
-export default function parseRouter(router) {
+export function parseRouter(router) {
   const routes = getChildren(router);
   return flatMap(routes, r => parseRoute(r, ''));
+}
+
+
+export function routeFilePath(route) {
+  if (route.path === '/*') {
+    return '/404.html';
+  }
+  return `${route.path}/index.html`.replace(/\/+/, '/');
 }

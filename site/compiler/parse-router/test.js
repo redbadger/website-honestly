@@ -1,7 +1,7 @@
 import React from 'react';
 import { IndexRoute, Route, Router, browserHistory } from 'react-router';
 
-import parseRouter from '.';
+import { parseRouter, routeFilePath } from '.';
 
 const A = () => <div>A</div>;
 const routes = (
@@ -15,29 +15,55 @@ const routes = (
 );
 
 describe('site/compiler/router-parser', () => {
-  it('parses routes component into a nicer data structure', () => {
-    const parsed = parseRouter(routes);
-    expect(parsed).to.deep.equal([
+  describe('parseRouter', () => {
+    it('parses routes component into a nicer data structure', () => {
+      const parsed = parseRouter(routes);
+      expect(parsed).to.deep.equal([
+        {
+          indexRoute: false,
+          numChildren: 3,
+          path: '/',
+        },
+        {
+          indexRoute: true,
+          numChildren: 0,
+          path: '/',
+        },
+        {
+          indexRoute: false,
+          numChildren: 0,
+          path: '/*',
+        },
+        {
+          indexRoute: false,
+          numChildren: 0,
+          path: '/hello/world',
+        },
+      ]);
+    });
+  });
+
+
+  describe('routeFilePath', () => {
+    const cases = [
       {
-        indexRoute: false,
-        numChildren: 3,
-        path: '/',
+        routePath: '/',
+        filePath: '/index.html',
       },
       {
-        indexRoute: true,
-        numChildren: 0,
-        path: '/',
+        routePath: '/*',
+        filePath: '/404.html',
       },
       {
-        indexRoute: false,
-        numChildren: 0,
-        path: '/*',
+        routePath: '/hello',
+        filePath: '/hello/index.html',
       },
-      {
-        indexRoute: false,
-        numChildren: 0,
-        path: '/hello/world',
-      },
-    ]);
+    ];
+
+    cases.forEach(({ routePath, filePath }) => {
+      it(`converts ${routePath} to ${filePath}`, () => {
+        expect(routeFilePath({ path: routePath })).to.equal(filePath);
+      });
+    });
   });
 });
