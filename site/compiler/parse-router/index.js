@@ -45,7 +45,7 @@ export function parseRouter(router) {
 
 export function routeFilePath(path) {
   if (path === '/*') {
-    return '/404.html';
+    return '404.html';
   }
-  return compactSlashes(`${path}/index.html`);
+  return compactSlashes(`${path}/index.html`).replace(/^\//, '');
 }

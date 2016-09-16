@@ -48,15 +48,15 @@ describe('site/compiler/router-parser', () => {
     const cases = [
       {
         routePath: '/',
-        filePath: '/index.html',
+        filePath: 'index.html',
       },
       {
         routePath: '/*',
-        filePath: '/404.html',
+        filePath: '404.html',
       },
       {
         routePath: '/hello',
-        filePath: '/hello/index.html',
+        filePath: 'hello/index.html',
       },
     ];
 
