@@ -1,7 +1,13 @@
 import { flatMap } from '../../../lib/array';
 
-function fullPath(route, prefix) {
-  return (prefix + (route.props.path || '')).replace(/\/+/, '/');
+function compactSlashes(string) {
+  return string.replace(/\/+/, '/');
+}
+
+function fullPath(route, pathPrefix) {
+  const routePath = route.props.path || '';
+  const path = pathPrefix + routePath;
+  return compactSlashes(path);
 }
 
 function routeInfo(route, prefix) {
@@ -41,5 +47,5 @@ export function routeFilePath(path) {
   if (path === '/*') {
     return '/404.html';
   }
-  return `${path}/index.html`.replace(/\/+/, '/');
+  return compactSlashes(`${path}/index.html`);
 }
