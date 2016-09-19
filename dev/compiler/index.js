@@ -4,7 +4,7 @@ import getSiteState from '../../state';
 
 function writePage({ path, body }) {
   return new Promise((resolve, reject) => (
-    fs.writeFile(`./dist/static-site${path}`, body, err => {
+    fs.writeFile(`./dist/static-site/${path}`, body, err => {
       if (err) {
         reject(err);
       } else {

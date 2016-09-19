@@ -25,10 +25,10 @@ describe('site/compiler', () => {
       return compileRoutes(routes).then(pages => {
         expect(pages.length).to.equal(2);
 
-        expect(pages[0].path).to.equal('/hello/index.html');
+        expect(pages[0].path).to.equal('hello/index.html');
         expect(pages[0].body).to.match(/<div[^>]+>A<\/div>/);
 
-        expect(pages[1].path).to.equal('/hello/world/index.html');
+        expect(pages[1].path).to.equal('hello/world/index.html');
         expect(pages[1].body).to.match(/<div[^>]+>B<\/div>/);
       });
     });
