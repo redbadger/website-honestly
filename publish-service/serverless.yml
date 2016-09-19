@@ -20,14 +20,15 @@ provider:
         - "arn:aws:s3:::${self:custom.bucket_name}"
         - "arn:aws:s3:::${self:custom.bucket_name}/*"
 
-
 functions:
   publish:
     handler: index.publish
-#   events:
-#     - http:
-#         path: users/create
-#         method: get
+    events:
+      - http:
+          path: site/publish
+          method: post
+          # request:
+            # passThrough: WHEN_NO_MATCH
 
 resources:
   Resources:
