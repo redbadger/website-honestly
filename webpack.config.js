@@ -39,6 +39,12 @@ const baseConfig = {
   resolve: {
     modulesDirectories: ['node_modules', 'site/pages'],
   },
+
+  node: {
+    net: 'empty',
+    fs: 'empty',
+    tls: 'empty',
+  },
 };
 
 const lambdaConfig = webpackMerge(baseConfig, {
