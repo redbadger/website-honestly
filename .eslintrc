@@ -49,10 +49,5 @@
     "react/sort-comp": 1,
     "react/jsx-wrap-multilines": 1,
     "react/jsx-filename-extension": 0,
-  },
-  "settings": {
-    "import/ignore": [
-        ".css$"
-    ]
   }
 }
