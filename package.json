@@ -20,13 +20,14 @@
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
     "mocha": "^3.0.2",
-    "npm-check-updates": "^2.8.0",
     "node-hook": "^0.4.0",
+    "npm-check-updates": "^2.8.0",
     "postcss-loader": "^0.13.0",
     "pre-git": "^3.10.0",
     "ramda": "^0.22.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
+    "react-helmet": "^3.1.0",
     "react-router": "^2.8.1",
     "serverless": "^1.0.0-rc.1",
     "style-loader": "^0.13.1",
@@ -52,6 +53,5 @@
       ]
     }
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
