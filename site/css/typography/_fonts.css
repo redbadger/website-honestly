@@ -1,0 +1,49 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3286567, 2016-09-22T07:01:50-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: ProximaNova-Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ *
+ * Webfont: ProximaNova-Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3286567
+ * Licensed pageviews: 1,000,000
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ *
+ * © 2016 MyFonts Inc
+*/
+
+@import url("//hello.myfonts.net/count/322627");
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('./fonts/322627_0_0.eot');
+    src: url('./fonts/322627_0_0.eot?#iefix') format('embedded-opentype'), url('./fonts/322627_0_0.woff2') format('woff2'), url('./fonts/322627_0_0.woff') format('woff'), url('./fonts/322627_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('./fonts/322627_1_0.eot');
+    src: url('./fonts/322627_1_0.eot?#iefix') format('embedded-opentype'), url('./fonts/322627_1_0.woff2') format('woff2'), url('./fonts/322627_1_0.woff') format('woff'), url('./fonts/322627_1_0.ttf') format('truetype');
+}
+
+.fontS {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.fontXS {
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
