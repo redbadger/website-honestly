@@ -35,16 +35,6 @@ const baseConfig = {
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new ExtractTextPlugin('style.css', { allChunks: true }),
   ],
-
-  resolve: {
-    modulesDirectories: ['node_modules', 'site/pages'],
-  },
-
-  node: {
-    net: 'empty',
-    fs: 'empty',
-    tls: 'empty',
-  },
 };
 
 const lambdaConfig = webpackMerge(baseConfig, {
