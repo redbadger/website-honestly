@@ -1,4 +1,4 @@
 .hello {
-  composes: fontS from "../../css/typography/_fonts.css";
+  composes: sentinel from "../../css/typography/_fonts.css";
   color: red;
 }
