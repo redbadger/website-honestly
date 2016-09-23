@@ -6,13 +6,6 @@ export default function Layout({ children }) {
     <div className="application">
       <Helmet
         title="Red Badger"
-        link={[
-          {
-            rel: 'stylesheet',
-            type: 'text/css',
-            href: '/style.css',
-          },
-        ]}
       />
       <h1>Website. Honestly.</h1>
       <div>{children}</div>
