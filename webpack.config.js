@@ -69,7 +69,9 @@ const devAppConfig = webpackMerge(baseConfig, {
   },
   target: 'web',
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Red Badger',
+    }),
   ],
 });
 
