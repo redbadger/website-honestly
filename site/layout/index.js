@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import Header from '../components/header';
-import styles from '../css/_base.css';
-
+import styles from './style.css';
 
 export default function Layout({ children }) {
   return (

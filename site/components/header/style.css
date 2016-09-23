@@ -5,3 +5,11 @@
   background-repeat: no-repeat;
   background-image: url('../../img/rb-logo-placeholder.svg');
 }
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+}
