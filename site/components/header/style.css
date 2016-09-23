@@ -1,5 +1,7 @@
 .logo {
-  width: 258px;
-  height: 40px;
+  width: 187px;
+  height: 29px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-image: url('../../img/rb-logo-placeholder.svg');
 }
