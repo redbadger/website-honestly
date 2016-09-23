@@ -26,7 +26,12 @@ const baseConfig = {
 
       },
       {
-        test: /\.(png|jpe?g|eot|ttf|woff|woff2|svg)$/, exclude: [/dist\//, /node_modules/], loader: 'file-loader', query: { name: '[name]-[hash:base64:5].[ext]' },
+        test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/, exclude: [/dist\//, /node_modules/], loader: 'file-loader', query: { name: '[name]-[hash:base64:5].[ext]' },
+      },
+      {
+        test: /\.svg$/,
+        loader: 'file',
+        include: path.images,
       },
     ],
   },
