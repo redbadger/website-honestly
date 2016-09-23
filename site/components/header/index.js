@@ -3,7 +3,7 @@ import styles from './style.css';
 
 const Header = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <div className={styles.logo} />
       <nav>
         <ul className={styles.nav}>

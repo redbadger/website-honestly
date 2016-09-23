@@ -1,3 +1,8 @@
+.header {
+  display: flex;
+  padding: 15px 20px;
+}
+
 .logo {
   width: 187px;
   height: 29px;
@@ -8,8 +13,19 @@
 
 .nav {
   list-style: none;
+  composes: boldXS from "../../css/typography/_fonts.css";
 }
 
 .nav li {
   display: inline-block;
+  margin-left: 43px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.nav a:hover {
+  border-bottom: 2px solid #fc1d42;
 }
