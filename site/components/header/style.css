@@ -4,8 +4,8 @@
   background-color: #f8f8f8;
 }
 
-.header nav {
-  display: flex;
+.header .desktopNav {
+  display: none;
   width: 100%;
   justify-content: flex-end;
 }
@@ -22,6 +22,7 @@
   list-style: none;
   composes: boldXS from "../../css/typography/_fonts.css";
   align-self: center;
+  display: none;
 }
 
 .nav li {
@@ -34,6 +35,91 @@
   color: #212121;
 }
 
-.nav a:hover {
+.nav a:hover, .navContainer a:hover {
   border-bottom: 2px solid #fc1d42;
+}
+
+.overlay {
+  position: absolute;
+  background: #212121;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  left: 40px;
+  composes: fontL from "../../css/typography/_fonts.css";
+  font-weight: bold;
+  left: 100%;
+  transition: all 0.3s;
+}
+
+.overlay .navContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.overlay .nav {
+  display: block;
+}
+
+.overlay ul {
+  width: 150px;
+  display: inline-block;
+  text-align: left;
+}
+
+.overlay li {
+  margin: 0 0 24px 0;
+}
+
+.overlay li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menuCloseButton {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.triggerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  align-self: center;
+  composes: boldXS from "../../css/typography/_fonts.css";
+  border-bottom: 2px solid #fc1d42;
+  line-height: 1em;
+}
+
+.trigger {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.trigger:checked + .overlay {
+  left: 40px;
+  right: 0;
+}
+
+
+@media (min-width: 690px) {
+  .triggerContainer {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .header nav {
+    display: flex;
+  }
 }
