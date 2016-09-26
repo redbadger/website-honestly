@@ -35,6 +35,11 @@ const baseConfig = {
       },
     ],
   },
+  postcss() {
+    return [
+      require('autoprefixer'), // eslint-disable-line global-require
+    ];
+  },
   devtool: 'source-map',
   plugins: [
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
