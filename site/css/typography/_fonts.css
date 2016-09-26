@@ -47,13 +47,13 @@
 @import url("//hello.myfonts.net/count/322627");
 
 @font-face {
-    font-family: 'ProximaNova-Bold';
-    src: url('./fonts/322627_0_0.woff2') format('woff2'), url('./fonts/322627_0_0.woff') format('woff'), url('./fonts/322627_0_0.ttf') format('truetype');
+  font-family: 'ProximaNova-Bold';
+  src: url('./fonts/322627_0_0.woff2') format('woff2'), url('./fonts/322627_0_0.woff') format('woff'), url('./fonts/322627_0_0.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'ProximaNova-Light';
-    src: url('./fonts/322627_1_0.woff2') format('woff2'), url('./fonts/322627_1_0.woff') format('woff'), url('./fonts/322627_1_0.ttf') format('truetype');
+  font-family: 'ProximaNova-Light';
+  src: url('./fonts/322627_1_0.woff2') format('woff2'), url('./fonts/322627_1_0.woff') format('woff'), url('./fonts/322627_1_0.ttf') format('truetype');
 }
 
 /* Importing base64 encoded Sentinel fonts */
@@ -74,8 +74,16 @@
   line-height: 1.1em;
 }
 
-.fontS {
+.fontS-Sans-Serif {
   font-family: 'ProximaNova-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.fontS-Serif {
+  font-family: 'Sentinel A', sans-serif;
+  font-weight: bold;
   font-size: 24px;
   line-height: 1.5em;
 }

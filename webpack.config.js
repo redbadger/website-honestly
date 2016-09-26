@@ -61,16 +61,16 @@ const lambdaConfig = webpackMerge(baseConfig, {
   externals: [
     'aws-sdk',
   ],
-  // plugins: [
-  //   new webpack.optimize.UglifyJsPlugin({
-  //     compress: {
-  //       unused: true,
-  //       dead_code: true,
-  //       warnings: false,
-  //       drop_debugger: true,
-  //     },
-  //   }),
-  // ],
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        unused: true,
+        dead_code: true,
+        warnings: false,
+        drop_debugger: true,
+      },
+    }),
+  ],
 });
 
 const devAppConfig = webpackMerge(baseConfig, {
@@ -93,7 +93,7 @@ const devCompilerConfig = webpackMerge(baseConfig, {
 });
 
 module.exports = [
-  // lambdaConfig,
+  lambdaConfig,
   devAppConfig,
-  // devCompilerConfig,
+  devCompilerConfig,
 ];
