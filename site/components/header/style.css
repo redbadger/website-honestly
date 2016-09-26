@@ -1,6 +1,13 @@
 .header {
   display: flex;
   padding: 15px 20px;
+  background-color: #f8f8f8;
+}
+
+.header nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .logo {
@@ -14,6 +21,7 @@
 .nav {
   list-style: none;
   composes: boldXS from "../../css/typography/_fonts.css";
+  align-self: center;
 }
 
 .nav li {
