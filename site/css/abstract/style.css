@@ -1,0 +1,25 @@
+.angle-top {
+  width:50%;
+  height:10px;
+  background:#212121;
+  text-align:center;
+  font-size:26px;
+  color:#fff;
+  vertical-align:middle;
+  overflow: visible;
+  position: relative;
+  float:right;
+}
+
+.angle-top:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -10px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-top: solid 10px #212121;
+  border-right: solid 10px transparent;
+  transform: rotate(180deg);
+}
