@@ -1,10 +1,10 @@
 /*
   ### Example
 
-  @value dave from "../../css/_colors.css";
+  @value daveGreen from "../../css/_colors.css";
 
   a {
-    color: dave;
+    color: daveGreen;
   }
 */
 
@@ -14,9 +14,9 @@
 @value black: #212121;
 
 /* Secondary Colour Palette */
-@value dave: #22D69B; /* green */
-@value stu: #00D5EC; /* blue */
-@value cain: #FFD811; /* yellow */
+@value daveGreen: #22D69B; /* green */
+@value stuBlue: #00D5EC; /* blue */
+@value cainYellow: #FFD811; /* yellow */
 
 /* Lines and shades */
 @value linesOnBlack: #565656;
