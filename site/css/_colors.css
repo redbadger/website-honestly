@@ -1,7 +1,7 @@
 /*
   ### Example
 
-  @value daveGreen from "../../css/_colors.css";
+  @value daveGreen, red from "../../css/_colors.css";
 
   a {
     color: daveGreen;

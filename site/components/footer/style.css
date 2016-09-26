@@ -1,0 +1,17 @@
+@value red, white, black from "../../css/_colors.css";
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  list-style: none;
+  composes: boldXS from "../../css/typography/_fonts.css";
+}
+
+.nav :global a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
