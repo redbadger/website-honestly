@@ -1,19 +1,11 @@
 import React, { PropTypes } from 'react';
-import Helmet from 'react-helmet';
+import Header from '../components/header';
+import styles from './style.css';
 
 export default function Layout({ children }) {
   return (
-    <div className="application">
-      <Helmet
-        title="Red Badger"
-        link={[
-          {
-            rel: 'stylesheet',
-            type: 'text/css',
-            href: '/style.css',
-          },
-        ]}
-      />
+    <div className={styles.application}>
+      <Header />
       <h1>Website. Honestly.</h1>
       <div>{children}</div>
     </div>
