@@ -1,6 +1,4 @@
 ### Motivation
-![gif](gif.gif)
-
 [Related story links?](ticket, design)
 
 ### Test plan
@@ -9,3 +7,4 @@
 ### Pre-flight checklist
 - [ ] Unit tests
 - [ ] Has been design reviewed
+- [ ] Add a gif - `![gif](gif.gif)`
