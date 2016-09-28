@@ -4,8 +4,16 @@ import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 
+const routePrefix = process.env.URL_BASENAME || '';
+
+function prefixRoutes(rs) {
+  return rs.map(route => {
+    return Object.assign({}, route, { route: `${routePrefix}${route.route}` });
+  });
+}
+
 export default function routes() {
-  return [
+  return prefixRoutes([
     {
       key: 'homePage',
       route: '',
@@ -16,5 +24,5 @@ export default function routes() {
       route: '404',
       component: () => <L><NotFoundPage /></L>,
     },
-  ];
+  ]);
 }

@@ -9,9 +9,6 @@ function routeFilePath(path) {
     case '':
       return 'index.html';
 
-    case '404':
-      return '404.html';
-
     default:
       return `${path}/index.html`;
   }

@@ -21,6 +21,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
+    "mkdirp": "^0.5.1",
     "mocha": "^3.0.2",
     "navigation": "^3.0.0",
     "navigation-react": "^2.0.3",
