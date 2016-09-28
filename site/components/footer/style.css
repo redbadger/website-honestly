@@ -37,4 +37,9 @@
 .social a {
   color: white;
   display: block;
+  text-decoration: none;
+}
+
+.socialIcon svg {
+  height: 20px;
 }

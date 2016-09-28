@@ -30,8 +30,7 @@ const baseConfig = {
       },
       {
         test: /\.svg$/,
-        loader: 'file',
-        include: path.images,
+        loader: 'svg-inline',
       },
     ],
   },
@@ -60,16 +59,6 @@ const lambdaConfig = webpackMerge(baseConfig, {
   target: 'node',
   externals: [
     'aws-sdk',
-  ],
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        unused: true,
-        dead_code: true,
-        warnings: false,
-        drop_debugger: true,
-      },
-    }),
   ],
 });
 

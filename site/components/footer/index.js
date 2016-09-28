@@ -1,7 +1,17 @@
 import classnames from 'classnames/bind';
-
+import InlineSVG from 'svg-inline-react';
 import React from 'react';
 import styles from './style.css';
+
+/* SVGs */
+import githubSVG from './github.svg';
+import facebookSVG from './facebook.svg';
+import gplusSVG from './g-plus.svg';
+import instagramSVG from './instagram.svg';
+import linkedinSVG from './linked-in.svg';
+import slackSVG from './slack.svg';
+import twitterSVG from './twitter.svg';
+import youtubeSVG from './youtube.svg';
 
 const cx = classnames.bind(styles);
 
@@ -33,6 +43,66 @@ const Footer = () => (
     <div className={cx('section', 'social')}>
       <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>
       <a href="tel:+442035670555">+44 (0) 20 3567 0555</a>
+      <ul className={styles.socialLinks}>
+        <li className={styles.github}>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Github"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={githubSVG} />
+          </a>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Facebook"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={facebookSVG} />
+          </a>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Google Plus"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={gplusSVG} />
+          </a>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Instagram"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={instagramSVG} />
+          </a>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Linkedin"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={linkedinSVG} />
+          </a>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Slack"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={slackSVG} />
+          </a>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Twitter"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={twitterSVG} />
+          </a>
+          <a
+            href="https://github.com/redbadger"
+            alt="Red Badger Youtube"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={youtubeSVG} />
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div className={cx('section', 'address')}>
