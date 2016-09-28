@@ -1,10 +1,12 @@
 import React from 'react';
+import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
+import logoSVG from './rb-logo-placeholder.svg';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo} />
+      <InlineSVG src={logoSVG} className={styles.logo} />
 
       <nav className={styles.mediumScreenNavContainer}>
         <ul className={styles.mediumScreenNav}>
