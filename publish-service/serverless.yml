@@ -1,4 +1,4 @@
-service: website-honestly
+service: "website-honestly-${env:ENVIRONMENT_NAME}-publish-service"
 
 custom:
   bucket_name: "${env:BUCKET_NAME}"

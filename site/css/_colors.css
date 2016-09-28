@@ -1,0 +1,23 @@
+/*
+  ### Example
+
+  @value daveGreen, red from "../../css/_colors.css";
+
+  a {
+    color: daveGreen;
+  }
+*/
+
+/* Main Colour Palette */
+@value red: #FC1D42;
+@value white: #F8F8F8;
+@value black: #212121;
+
+/* Secondary Colour Palette */
+@value daveGreen: #22D69B; /* green */
+@value stuBlue: #00D5EC; /* blue */
+@value cainYellow: #FFD811; /* yellow */
+
+/* Lines and shades */
+@value linesOnBlack: #565656;
+@value linesOnWhite: #CCCCCC;

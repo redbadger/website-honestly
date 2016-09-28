@@ -1,6 +1,8 @@
 machine:
   node:
     version: 4.3.1
+  environment:
+    ENVIRONMENT_NAME: CI
 
 dependencies:
   override:

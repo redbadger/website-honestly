@@ -1,0 +1,32 @@
+@value red, white, black, linesOnBlack from "../../css/_colors.css";
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  list-style: none;
+  composes: fontS-Serif from "../../css/typography/_fonts.css";
+}
+
+.nav :global a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.section {
+  padding: 30px 0px;
+  margin: 0px 20px;
+  border-bottom: 1px solid linesOnBlack;
+}
+
+.social {
+  composes: fontS-Serif from "../../css/typography/_fonts.css";
+}
+
+.social :global a {
+  color: white;
+  display: block;
+}
