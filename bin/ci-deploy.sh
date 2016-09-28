@@ -1,21 +1,26 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-source bin/load-env.sh
-
 #
 # Create a new preview site namespaced under the current commit SHA
 #
 createCommitSite() {
-  export URL_BASENAME="$(git rev-parse --short HEAD)/"
+  COMMIT_REF=$(git rev-parse --short HEAD)
+  export ENVIRONMENT_NAME="staging"
+  export URL_BASENAME="$COMMIT_REF/"
+  source bin/load-env.sh
+
   echo Deploying site to $URL_BASENAME
   make clean
   make build
   make publish-service-deploy
   make publish-service-invoke
-  echo "http://$BUCKET_NAME.s3-website-eu-west-1.amazonaws.com/$URL_BASENAME"
-}
+  echo Done!
 
+  echo Registering deployment with GitHub
+  ./bin/register-github-deployment.js $COMMIT_REF
+  echo Done!
+}
 
 case "$1" in
   create-commit-site)

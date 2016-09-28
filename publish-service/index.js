@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import getSiteState from '../state';
 import { compileSite } from '../site/compiler';
 import { makeUploader } from './s3';
@@ -10,6 +11,7 @@ if (!bucketName) {
 }
 
 function doPublish(cb) {
+  console.log(`Publishing to S3 bucket ${bucketName}`);
   getSiteState()
     .then(compileSite)
     .then(pages => Promise.all(pages.map(uploadPage)))

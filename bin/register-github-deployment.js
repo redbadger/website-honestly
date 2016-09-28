@@ -17,9 +17,10 @@ const env = key => {
   process.exit(1);
 };
 
+const environment = env('ENVIRONMENT_NAME');
 const gitHubUsername = env('GITHUB_USERNAME');
 const gitHubToken = env('GITHUB_TOKEN');
-const targetUrl = `http://rb-website-honestly--louis.s3-website-eu-west-1.amazonaws.com/${ref}/`;
+const targetUrl = `http://rb-website-honestly--${environment}.s3-website-eu-west-1.amazonaws.com/${ref}/`;
 const environmentUrl = targetUrl;
 
 const creds = `${gitHubUsername}:${gitHubToken}`;
@@ -37,9 +38,11 @@ const assertStatusOK = response => {
   if (response.status >= 200 && response.status < 300) {
     return response;
   }
-  const error = new Error(response.statusText);
-  error.response = response;
-  throw error;
+  return response.json().then(json => {
+    console.error(`Expected HTTP status to be OK. Was ${response.status} ${response.statusText}`);
+    console.error(json);
+    process.exit(1);
+  });
 };
 
 const registerDeployment = () =>
@@ -47,7 +50,10 @@ const registerDeployment = () =>
     method: 'POST',
     headers,
     body: JSON.stringify({
-      auto_merge: false, ref,
+      auto_merge: false,
+      environment: `Preview [${ref}]`,
+      required_contexts: [],
+      ref,
     }),
   });
 
@@ -65,11 +71,11 @@ const addDeploymentLink = args =>
 const parseJson = blob => blob.json();
 
 registerDeployment()
-  .then(parseJson)
   .then(assertStatusOK)
+  .then(parseJson)
   .then(addDeploymentLink)
-  .then(parseJson)
   .then(assertStatusOK)
+  .then(parseJson)
   .catch(err => {
     console.error(err);
     process.exit(1);
