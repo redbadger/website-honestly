@@ -9,8 +9,6 @@ source bin/load-env.sh
 createCommitSite() {
   export URL_BASENAME="$(git rev-parse --short HEAD)/"
   echo Deploying site to $URL_BASENAME
-  make clean
-  make build
   make publish-service-deploy
   make publish-service-invoke
   echo "http://$BUCKET_NAME.s3-website-eu-west-1.amazonaws.com/$URL_BASENAME"
