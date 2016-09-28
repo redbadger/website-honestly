@@ -1,3 +1,6 @@
+@value mediumScreen from "../../css/_breakpoints.css";
+
+
 .header {
   display: flex;
   padding: 15px 20px;
@@ -110,7 +113,7 @@
 }
 
 
-@media (min-width: 690px) {
+@media mediumScreen {
   .triggerContainer {
     display: none;
   }
