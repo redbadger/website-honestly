@@ -7,8 +7,6 @@ const cx = classnames.bind(styles);
 
 const Footer = () => (
   <footer className={styles.footer}>
-    <h2>footer</h2>
-
     <nav className={styles.section}>
       <ul className={styles.nav}>
         <li>
