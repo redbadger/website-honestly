@@ -7,7 +7,7 @@
   background-color: #f8f8f8;
 }
 
-.header .desktopNav {
+.header .mediumScreenNavContainer {
   display: none;
   width: 100%;
   justify-content: flex-end;
@@ -21,24 +21,26 @@
   background-image: url('../../img/rb-logo-placeholder.svg');
 }
 
-.nav {
+.mediumScreenNav {
   list-style: none;
   composes: boldXS from "../../css/typography/_fonts.css";
   align-self: center;
-  display: none;
+  justify-content: flex-end;
+  display: flex;
 }
 
-.nav li {
+.mediumScreenNav li {
   display: inline-block;
   margin-left: 43px;
 }
 
-.nav a {
+.mediumScreenNav a {
   text-decoration: none;
   color: #212121;
 }
 
-.nav a:hover, .navContainer a:hover {
+.mediumScreenNav a:hover,
+.smallScreenNavContainer a:hover {
   border-bottom: 2px solid #fc1d42;
 }
 
@@ -55,12 +57,12 @@
   transition: all 0.3s;
 }
 
-.overlay .navContainer {
+.overlay .smallScreenNavContainer {
   margin-top: 30px;
   text-align: center;
 }
 
-.overlay .nav {
+.overlay .mediumScreenNav {
   display: block;
 }
 
@@ -118,11 +120,8 @@
     display: none;
   }
 
-  .nav {
+  .header .mediumScreenNavContainer {
     display: block;
-  }
-
-  .header nav {
     display: flex;
   }
 }

@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo} />
-      <nav className={styles.desktopNav}>
-        <ul className={styles.nav}>
+      <nav className={styles.mediumScreenNavContainer}>
+        <ul className={styles.mediumScreenNav}>
           <li><a href="/services/">Services</a></li>
           <li><a href="/about-us/">About us</a></li>
           <li><a href="/blog/">Blog</a></li>
@@ -19,8 +19,8 @@ const Header = () => {
       <input type="checkbox" className={styles.trigger} id="burger" />
       <div className={styles.overlay}>
         <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
-        <nav className={styles.navContainer}>
-          <ul className={styles.mobileNav}>
+        <nav className={styles.smallScreenNavContainer}>
+          <ul className={styles.smallScreenNav}>
             <li><a href="/">Home</a></li>
             <li><a href="/about-us/">About us</a></li>
             <li><a href="/services/">Services</a></li>
