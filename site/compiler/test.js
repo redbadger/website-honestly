@@ -17,16 +17,19 @@ describe('site/compiler', () => {
       {
         key: 'home',
         route: '',
+        filePath: 'index.html',
         component: () => <A />,
       },
       {
         key: 'notFound',
         route: '404',
+        filePath: '404/index.html',
         component: () => <B />,
       },
       {
         key: 'about',
         route: 'site/about',
+        filePath: 'site/about/index.html',
         component: () => <C />,
       },
     ];

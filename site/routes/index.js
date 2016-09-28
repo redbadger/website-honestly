@@ -6,9 +6,23 @@ import NotFoundPage from '../pages/not-found';
 
 const routePrefix = process.env.URL_BASENAME || '';
 
+function routeFilePath(path) {
+  switch (path) {
+    case '':
+      return `${routePrefix}index.html`;
+
+    default:
+      return `${routePrefix}${path}/index.html`;
+  }
+}
+
 function prefixRoutes(rs) {
   return rs.map(route => {
-    return Object.assign({}, route, { route: `${routePrefix}${route.route}` });
+    const fullRoute = `${routePrefix}${route.route}`;
+    return Object.assign({}, route, {
+      route: fullRoute,
+      filePath: routeFilePath(route.route),
+    });
   });
 }
 
