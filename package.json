@@ -25,6 +25,7 @@
     "mocha": "^3.0.2",
     "navigation": "^3.0.0",
     "navigation-react": "^2.0.3",
+    "node-fetch": "^1.6.3",
     "node-hook": "^0.4.0",
     "npm-check-updates": "^2.8.0",
     "postcss-loader": "^0.13.0",
