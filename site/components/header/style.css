@@ -1,10 +1,10 @@
 @value mediumScreen from "../../css/_breakpoints.css";
-
+@value red, white, black from "../../css/_colors.css";
 
 .header {
   display: flex;
   padding: 15px 20px;
-  background-color: #f8f8f8;
+  background-color: white;
 }
 
 .header .mediumScreenNavContainer {
@@ -36,47 +36,49 @@
 
 .mediumScreenNav a {
   text-decoration: none;
-  color: #212121;
+  color: black;
 }
 
 .mediumScreenNav a:hover,
-.smallScreenNavContainer a:hover {
-  border-bottom: 2px solid #fc1d42;
+.smallScreenNavContainer a {
+  border-bottom: 2px solid red;
 }
 
 .overlay {
+  background: black;
+
   position: absolute;
-  background: #212121;
   top: 0;
   right: -100%;
   bottom: 0;
-  left: 40px;
+  left: 100%;
+
   composes: fontL from "../../css/typography/_fonts.css";
   font-weight: bold;
-  left: 100%;
-  transition: all 0.3s;
-}
 
-.overlay .smallScreenNavContainer {
-  margin-top: 30px;
-  text-align: center;
+  transition: all 0.3s;
 }
 
 .overlay .mediumScreenNav {
   display: block;
 }
 
-.overlay ul {
+.smallScreenNavContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.smallScreenNav {
   width: 150px;
   display: inline-block;
   text-align: left;
 }
 
-.overlay li {
+.smallScreenNav li {
   margin: 0 0 24px 0;
 }
 
-.overlay li a {
+.smallScreenNav li a {
   color: white;
   text-decoration: none;
 }
@@ -96,10 +98,10 @@
   justify-content: flex-end;
 }
 
-.menu {
+.triggerLabel {
   align-self: center;
   composes: boldXS from "../../css/typography/_fonts.css";
-  border-bottom: 2px solid #fc1d42;
+  border-bottom: 2px solid red;
   line-height: 1em;
 }
 
@@ -114,14 +116,12 @@
   right: 0;
 }
 
-
 @media mediumScreen {
   .triggerContainer {
     display: none;
   }
 
-  .header .mediumScreenNavContainer {
-    display: block;
+  .mediumScreenNavContainer {
     display: flex;
   }
 }
