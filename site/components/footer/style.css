@@ -34,10 +34,25 @@
   composes: fontS-Serif from "../../css/typography/_fonts.css";
 }
 
-.social a {
+.mailtoLink,
+.telLink {
   color: white;
   display: block;
   text-decoration: none;
+}
+
+.telLink {
+  margin-bottom: 30px;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 190px;
+}
+
+.socialLinks li {
+  margin-right: 20px;
 }
 
 .socialIcon svg {

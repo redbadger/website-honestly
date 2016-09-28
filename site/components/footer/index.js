@@ -41,65 +41,80 @@ const Footer = () => (
     </nav>
 
     <div className={cx('section', 'social')}>
-      <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>
-      <a href="tel:+442035670555">+44 (0) 20 3567 0555</a>
+      <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>hello@red-badger.com</a>
+      <a href="tel:+442035670555" className={styles.telLink}>+44 (0) 20 3567 0555</a>
       <ul className={styles.socialLinks}>
-        <li className={styles.github}>
+        <li>
           <a
             href="https://github.com/redbadger"
-            alt="Red Badger Github"
+            title="Red Badger Github"
             className={styles.socialIcon}
           >
             <InlineSVG src={githubSVG} />
           </a>
+        </li>
+        <li>
           <a
             href="https://github.com/redbadger"
-            alt="Red Badger Facebook"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={facebookSVG} />
-          </a>
-          <a
-            href="https://github.com/redbadger"
-            alt="Red Badger Google Plus"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={gplusSVG} />
-          </a>
-          <a
-            href="https://github.com/redbadger"
-            alt="Red Badger Instagram"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={instagramSVG} />
-          </a>
-          <a
-            href="https://github.com/redbadger"
-            alt="Red Badger Linkedin"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={linkedinSVG} />
-          </a>
-          <a
-            href="https://github.com/redbadger"
-            alt="Red Badger Slack"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={slackSVG} />
-          </a>
-          <a
-            href="https://github.com/redbadger"
-            alt="Red Badger Twitter"
+            title="Red Badger Twitter"
             className={styles.socialIcon}
           >
             <InlineSVG src={twitterSVG} />
           </a>
+        </li>
+        <li>
           <a
             href="https://github.com/redbadger"
-            alt="Red Badger Youtube"
+            title="Red Badger Slack"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={slackSVG} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/redbadger"
+            title="Red Badger Linkedin"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={linkedinSVG} />
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/redbadger"
+            title="Red Badger Instagram"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={instagramSVG} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/redbadger"
+            title="Red Badger Facebook"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={facebookSVG} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/redbadger"
+            title="Red Badger Youtube"
             className={styles.socialIcon}
           >
             <InlineSVG src={youtubeSVG} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/redbadger"
+            title="Red Badger Google Plus"
+            className={styles.socialIcon}
+          >
+            <InlineSVG src={gplusSVG} />
           </a>
         </li>
       </ul>
