@@ -144,8 +144,9 @@ const Footer = () => (
         </a>
       </div>
     </div>
-    <div className={cx('section', 'disclaimer')}>
-      <p>&copy; Red Badger Consultancy Ltd 2016 Registered number 345 678 912 UK</p>
+    <div className={cx('section', 'disclaimer', 'noBorder')}>
+      <p className={styles.afterDivider}>&copy; Red Badger Consultancy Ltd 2016</p>
+      <p className={styles.afterDivider}>Registered number 345 678 912 UK</p>
       <p>VAT Registration No. 990 8085 82</p>
       <p className={styles.cookieWarning}>
         We use cookies on our website. For more information, view our privacy policy.

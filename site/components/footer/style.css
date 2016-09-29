@@ -31,7 +31,7 @@
   border-bottom: 1px solid linesOnBlack;
 }
 
-.section:last-of-type {
+.disclaimer.noBorder {
   border-bottom: none;
 }
 
@@ -138,5 +138,26 @@
   .footerSections {
     display: flex;
     width: 60%;
+  }
+
+  .section {
+    border-bottom: none;
+  }
+
+  .disclaimer p {
+    padding: 0 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .afterDivider:after {
+    content: ' ';
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: grey;
+    position: absolute;
+    right: 0;
+    top: 8px;
   }
 }
