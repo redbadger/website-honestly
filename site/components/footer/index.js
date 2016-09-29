@@ -16,10 +16,15 @@ import mapPinSVG from './SVG/map-pin.svg';
 import badgerSVG from './SVG/badger-on-black.svg';
 import mapSVG from './SVG/map.svg';
 
+import angleSVG from '../../img/angle.svg';
+
 const cx = classnames.bind(styles);
 
 const Footer = () => (
   <footer className={styles.footer}>
+
+    <InlineSVG src={angleSVG} className={styles.angle} />
+
     <InlineSVG src={mapSVG} className={styles.footerMap} />
     <div className={styles.footerSections}>
       <nav className={cx('section', 'footerLinks')}>

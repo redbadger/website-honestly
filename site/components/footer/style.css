@@ -5,6 +5,14 @@
   background-color: black;
   color: white;
   padding: 0px 20px;
+  position: relative;
+}
+
+.angle svg {
+  top: -34px;
+  position: absolute;
+  left: 50%;
+  fill: black;
 }
 
 .nav {
