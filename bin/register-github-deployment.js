@@ -75,7 +75,6 @@ registerDeployment()
   .then(parseJson)
   .then(addDeploymentLink)
   .then(assertStatusOK)
-  .then(parseJson)
   .catch(err => {
     console.error(err);
     process.exit(1);
