@@ -2,7 +2,7 @@ machine:
   node:
     version: 4.3.1
   environment:
-    ENVIRONMENT_NAME: CI
+    ENVIRONMENT_NAME: staging
 
 dependencies:
   override:
@@ -12,4 +12,9 @@ test:
   override:
     - make lint
     - make test
-    - make build
+
+deployment:
+  preview:
+    branch: /.*/
+    commands:
+      - ./bin/ci-deploy.sh create-commit-site

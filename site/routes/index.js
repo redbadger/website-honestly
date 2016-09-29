@@ -4,8 +4,30 @@ import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 
+const routePrefix = process.env.URL_BASENAME || '';
+
+function routeFilePath(path) {
+  switch (path) {
+    case '':
+      return `${routePrefix}index.html`;
+
+    default:
+      return `${routePrefix}${path}/index.html`;
+  }
+}
+
+function prefixRoutes(rs) {
+  return rs.map(route => {
+    const fullRoute = `${routePrefix}${route.route}`;
+    return Object.assign({}, route, {
+      route: fullRoute,
+      filePath: routeFilePath(route.route),
+    });
+  });
+}
+
 export default function routes() {
-  return [
+  return prefixRoutes([
     {
       key: 'homePage',
       route: '',
@@ -16,5 +38,5 @@ export default function routes() {
       route: '404',
       component: () => <L><NotFoundPage /></L>,
     },
-  ];
+  ]);
 }

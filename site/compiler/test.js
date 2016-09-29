@@ -17,16 +17,19 @@ describe('site/compiler', () => {
       {
         key: 'home',
         route: '',
+        filePath: 'index.html',
         component: () => <A />,
       },
       {
         key: 'notFound',
         route: '404',
+        filePath: '404/index.html',
         component: () => <B />,
       },
       {
         key: 'about',
         route: 'site/about',
+        filePath: 'site/about/index.html',
         component: () => <C />,
       },
     ];
@@ -38,7 +41,7 @@ describe('site/compiler', () => {
       expect(pages[0].path).to.equal('index.html');
       expect(pages[0].body).to.match(/<div[^>]+>A<\/div>/);
 
-      expect(pages[1].path).to.equal('404.html');
+      expect(pages[1].path).to.equal('404/index.html');
       expect(pages[1].body).to.match(/<div[^>]+>B<\/div>/);
 
       expect(pages[2].path).to.equal('site/about/index.html');
