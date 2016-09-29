@@ -14,7 +14,7 @@
 }
 
 .logo {
-  width: 187px;
+  min-width: 150px;
   height: 29px;
 }
 
@@ -120,5 +120,9 @@
 
   .mediumScreenNavContainer {
     display: flex;
+  }
+
+  .logo {
+    min-width: 187px;
   }
 }
