@@ -3,6 +3,7 @@
 .footer {
   background-color: black;
   color: white;
+  padding: 0px 20px;
 }
 
 .nav {
@@ -26,8 +27,11 @@
 
 .section {
   padding: 30px 0px;
-  margin: 0px 20px;
   border-bottom: 1px solid linesOnBlack;
+}
+
+.section:last-of-type {
+  border-bottom: none;
 }
 
 .social {
@@ -57,4 +61,41 @@
 
 .socialIcon svg {
   height: 20px;
+}
+
+.address {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  display: flex;
+}
+
+.mapPin svg {
+  width: 22px;
+}
+
+.mapContainer {
+  margin-left: 15px;
+}
+
+.mapLink {
+  composes: redUnderlineLink from "../../css/_links.css";
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.disclaimer {
+  composes: fontXS from "../../css/typography/_fonts.css";
+}
+
+.cookieWarning {
+  margin-top: 16px;
+}
+
+.badgerIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.badgerIcon svg {
+  margin: 15px 20px;
+  width: 40px;
 }

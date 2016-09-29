@@ -12,6 +12,8 @@ import linkedinSVG from './linked-in.svg';
 import slackSVG from './slack.svg';
 import twitterSVG from './twitter.svg';
 import youtubeSVG from './youtube.svg';
+import mapPinSVG from './map-pin.svg';
+import badgerSVG from './badger-on-black.svg';
 
 const cx = classnames.bind(styles);
 
@@ -121,24 +123,34 @@ const Footer = () => (
     </div>
 
     <div className={cx('section', 'address')}>
-      <address>
-        <p>12 Mallow St</p>
-        <p>London</p>
-        <p>EC1Y 8RQ</p>
-        <p>UK</p>
-      </address>
+      <InlineSVG src={mapPinSVG} className={styles.mapPin} />
 
-      <a href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16">
-        Open in Google maps
-      </a>
+      <div className={styles.mapContainer}>
+        <address>
+          <p>12 Mallow St</p>
+          <p>London</p>
+          <p>EC1Y 8RQ</p>
+          <p>UK</p>
+        </address>
+
+        <a
+          className={styles.mapLink}
+          href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16"
+        >
+          Open in Google maps
+        </a>
+      </div>
     </div>
 
     <div className={cx('section', 'disclaimer')}>
       <p>&copy; Red Badger Consultancy Ltd 2016 Registered number 345 678 912 UK</p>
       <p>VAT Registration No. 990 8085 82</p>
-      <p>We use cookies on our website. For more information, view our privacy policy.</p>
+      <p className={styles.cookieWarning}>
+        We use cookies on our website. For more information, view our privacy policy.
+      </p>
     </div>
 
+    <InlineSVG src={badgerSVG} className={styles.badgerIcon} />
   </footer>
 );
 

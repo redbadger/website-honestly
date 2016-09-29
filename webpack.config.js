@@ -49,19 +49,6 @@ const baseConfig = {
   ],
 };
 
-const lambdaConfig = webpackMerge(baseConfig, {
-  entry: {
-    'publish-service': './publish-service/index.js',
-  },
-  output: {
-    libraryTarget: 'commonjs',
-  },
-  target: 'node',
-  externals: [
-    'aws-sdk',
-  ],
-});
-
 const devAppConfig = webpackMerge(baseConfig, {
   entry: {
     'dev-app': './dev/browser-app/index.js',
@@ -75,15 +62,6 @@ const devAppConfig = webpackMerge(baseConfig, {
   ],
 });
 
-const devCompilerConfig = webpackMerge(baseConfig, {
-  entry: {
-    'dev-compiler': './dev/compiler/index.js',
-  },
-  target: 'node',
-});
-
 module.exports = [
-  lambdaConfig,
   devAppConfig,
-  devCompilerConfig,
 ];
