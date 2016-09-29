@@ -5,7 +5,7 @@ import styles from './index.css';
 export default function HomePage() {
   return (
     <div>
-      <h1 className={styles.hello}>Homepage</h1>
+      <h1 className={styles.hello}>Hi Andy.</h1>
       <Link to="notFoundPage">Go somewhere?</Link>
     </div>
   );
