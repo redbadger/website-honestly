@@ -4,127 +4,130 @@ import React from 'react';
 import styles from './style.css';
 
 /* SVGs */
-import githubSVG from './github.svg';
-import facebookSVG from './facebook.svg';
-import gplusSVG from './g-plus.svg';
-import instagramSVG from './instagram.svg';
-import linkedinSVG from './linked-in.svg';
-import slackSVG from './slack.svg';
-import twitterSVG from './twitter.svg';
-import youtubeSVG from './youtube.svg';
-import mapPinSVG from './map-pin.svg';
-import badgerSVG from './badger-on-black.svg';
+import githubSVG from './SVG/github.svg';
+import facebookSVG from './SVG/facebook.svg';
+import gplusSVG from './SVG/g-plus.svg';
+import instagramSVG from './SVG/instagram.svg';
+import linkedinSVG from './SVG/linked-in.svg';
+import slackSVG from './SVG/slack.svg';
+import twitterSVG from './SVG/twitter.svg';
+import youtubeSVG from './SVG/youtube.svg';
+import mapPinSVG from './SVG/map-pin.svg';
+import badgerSVG from './SVG/badger-on-black.svg';
+import mapSVG from './SVG/map.svg';
 
 const cx = classnames.bind(styles);
 
 const Footer = () => (
   <footer className={styles.footer}>
-    <nav className={styles.section}>
-      <ul className={styles.nav}>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about-us/">About us</a>
-        </li>
-        <li>
-          <a href="/about-us/join-us/">What we do</a>
-        </li>
-        <li>
-          <a href="/blog/">Blog</a>
-        </li>
-        <li>
-          <a href="/about-us/events/">Events</a>
-        </li>
-        <li>
-          <a href="/about-us/join-us/">Jobs</a>
-        </li>
-      </ul>
-    </nav>
+    <InlineSVG src={mapSVG} className={styles.footerMap} />
+    <div className={styles.footerSections}>
+      <nav className={cx('section', 'footerLinks')}>
+        <ul className={styles.nav}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about-us/">About us</a>
+          </li>
+          <li>
+            <a href="/about-us/join-us/">What we do</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+          <li>
+            <a href="/about-us/events/">Events</a>
+          </li>
+          <li>
+            <a href="/about-us/join-us/">Jobs</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div className={cx('section', 'social')}>
-      <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>hello@red-badger.com</a>
-      <a href="tel:+442035670555" className={styles.telLink}>+44 (0) 20 3567 0555</a>
-      <ul className={styles.socialLinks}>
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Github"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={githubSVG} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Twitter"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={twitterSVG} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Slack"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={slackSVG} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Linkedin"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={linkedinSVG} />
-          </a>
-        </li>
+      <div className={cx('section', 'social')}>
+        <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>hello@red-badger.com</a>
+        <a href="tel:+442035670555" className={styles.telLink}>+44 (0) 20 3567 0555</a>
+        <ul className={styles.socialLinks}>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Github"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={githubSVG} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Twitter"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={twitterSVG} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Slack"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={slackSVG} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Linkedin"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={linkedinSVG} />
+            </a>
+          </li>
 
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Instagram"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={instagramSVG} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Facebook"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={facebookSVG} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Youtube"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={youtubeSVG} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/redbadger"
-            title="Red Badger Google Plus"
-            className={styles.socialIcon}
-          >
-            <InlineSVG src={gplusSVG} />
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Instagram"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={instagramSVG} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Facebook"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={facebookSVG} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Youtube"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={youtubeSVG} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/redbadger"
+              title="Red Badger Google Plus"
+              className={styles.socialIcon}
+            >
+              <InlineSVG src={gplusSVG} />
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </div>
-
     <div className={cx('section', 'address')}>
       <InlineSVG src={mapPinSVG} className={styles.mapPin} />
-
       <div className={styles.mapContainer}>
         <address>
           <p>12 Mallow St</p>
@@ -141,7 +144,6 @@ const Footer = () => (
         </a>
       </div>
     </div>
-
     <div className={cx('section', 'disclaimer')}>
       <p>&copy; Red Badger Consultancy Ltd 2016 Registered number 345 678 912 UK</p>
       <p>VAT Registration No. 990 8085 82</p>
@@ -149,7 +151,6 @@ const Footer = () => (
         We use cookies on our website. For more information, view our privacy policy.
       </p>
     </div>
-
     <InlineSVG src={badgerSVG} className={styles.badgerIcon} />
   </footer>
 );

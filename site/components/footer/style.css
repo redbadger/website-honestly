@@ -1,4 +1,5 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
+@value mediumScreen from "../../css/_breakpoints.css";
 
 .footer {
   background-color: black;
@@ -98,4 +99,44 @@
 .badgerIcon svg {
   margin: 15px 20px;
   width: 40px;
+}
+
+.footerMap {
+  display: none;
+}
+
+@media mediumScreen {
+  .footerLinks {
+    flex-grow: 2;
+  }
+
+  .social {
+    flex-grow: 1;
+  }
+
+  .socialLinks {
+    width: 100%;
+  }
+
+  .mapPin {
+    display: none;
+  }
+
+  .address {
+    position: absolute;
+    right: 12%;
+    top: 60%;
+  }
+
+  .footerMap {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    display: block;
+  }
+
+  .footerSections {
+    display: flex;
+    width: 60%;
+  }
 }
