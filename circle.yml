@@ -13,3 +13,10 @@ test:
     - make lint
     - make test
     - make build
+
+deployment:
+  preview:
+    branch: /.*/
+    commands:
+      - ENVIRONMENT_NAME=staging ./bin/ci-deploy.sh create-commit-site
+      - ENVIRONMENT_NAME=staging ./bin/register-github-deployment.js $(git rev-parse --short HEAD)
