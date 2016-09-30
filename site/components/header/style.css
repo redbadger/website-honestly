@@ -87,6 +87,7 @@
   left: 10px;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .triggerContainer {
@@ -100,6 +101,7 @@
   composes: boldXS from "../../css/typography/_fonts.css";
   border-bottom: 2px solid red;
   line-height: 1em;
+  cursor: pointer;
 }
 
 .trigger {
