@@ -29,11 +29,11 @@ check-deps: ## Check deps for updates
 
 
 dev: badger ## Run the frontend dev server
-	$(WEBPACK_DEV_SERVER) --hot --inline
+	$(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js
 
 
-dev-compile: dist/static-site dist/dev-compiler/index.js ## Compile the site to HTML locally and serve
-	node dist/dev-compiler/index.js
+dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
+	node dist/dev-static/index.js
 	ruby -run -ehttpd ./dist/static-site -p8000
 
 
@@ -45,7 +45,7 @@ test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
 
-build: dist/publish-service.zip dist/dev-compiler/index.js ## Compile project
+build: dist/publish-service.zip dist/dev-static/index.js ## Compile project
 
 
 lint: ## Lint Javascript files
@@ -65,11 +65,11 @@ dist/publish-service.zip: dist/publish-service
 
 
 dist/publish-service:
-	$(WEBPACK)
+	$(WEBPACK) webpack.lambda.config.js
 
 
-dist/dev-compiler/index.js:
-	$(WEBPACK)
+dist/dev-static/index.js:
+	$(WEBPACK) webpack.dev.static.config.js
 
 
 dist/static-site:
@@ -77,7 +77,7 @@ dist/static-site:
 
 .PHONY: \
 	dev \
-	dev-compile \
+	dev-static \
 	install \
 	check-deps \
 	lint \
