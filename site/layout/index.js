@@ -1,14 +1,15 @@
 import React, { PropTypes } from 'react';
-import Helmet from 'react-helmet';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import styles from './style.css';
 
 export default function Layout({ children }) {
   return (
-    <div className="application">
-      <Helmet
-        title="Red Badger"
-      />
+    <div className={styles.application}>
+      <Header />
       <h1>Website. Honestly.</h1>
       <div>{children}</div>
+      <Footer />
     </div>
   );
 }
@@ -16,4 +17,3 @@ export default function Layout({ children }) {
 Layout.propTypes = {
   children: PropTypes.element.isRequired,
 };
-

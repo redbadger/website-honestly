@@ -1,0 +1,164 @@
+@value red, white, black, linesOnBlack from "../../css/_colors.css";
+@value mediumScreen from "../../css/_breakpoints.css";
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 0px 20px;
+}
+
+.nav {
+  list-style: none;
+  composes: fontS-Serif from "../../css/typography/_fonts.css";
+}
+
+.nav li {
+  margin: 0 0 20px 0;
+}
+
+.nav li:last-child {
+  margin: 0;
+}
+
+.nav li a {
+  border-bottom: 2px solid red;
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 30px 0px;
+  border-bottom: 1px solid linesOnBlack;
+}
+
+.disclaimer.noBorder {
+  border-bottom: none;
+}
+
+.social {
+  composes: fontS-Serif from "../../css/typography/_fonts.css";
+}
+
+.mailtoLink,
+.telLink {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.telLink {
+  margin-bottom: 30px;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 190px;
+}
+
+.socialLinks li {
+  margin-right: 20px;
+}
+
+.socialIcon svg {
+  height: 20px;
+}
+
+.address {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  display: flex;
+}
+
+.mapPin svg {
+  width: 22px;
+}
+
+.mapContainer {
+  margin-left: 15px;
+}
+
+.mapLink {
+  composes: redUnderlineLink from "../../css/_links.css";
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.disclaimer {
+  composes: fontXS from "../../css/typography/_fonts.css";
+}
+
+.cookieWarning {
+  margin-top: 16px;
+}
+
+.badgerIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.badgerIcon svg {
+  margin: 15px 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.footerMap {
+  display: none;
+}
+
+@media mediumScreen {
+  .footerLinks {
+    flex-grow: 2;
+  }
+
+  .social {
+    flex-grow: 1;
+  }
+
+  .socialLinks {
+    width: 100%;
+  }
+
+  .mapPin {
+    display: none;
+  }
+
+  .address {
+    position: absolute;
+    right: 12%;
+    top: 60%;
+  }
+
+  .footerMap {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    display: block;
+  }
+
+  .footerSections {
+    display: flex;
+    width: 60%;
+  }
+
+  .section {
+    border-bottom: none;
+  }
+
+  .disclaimer p {
+    padding: 0 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .afterDivider:after {
+    content: ' ';
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: grey;
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
+}

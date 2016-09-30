@@ -1,0 +1,129 @@
+@value red, white, black from "../../css/_colors.css";
+@value mediumScreen from "../../css/_breakpoints.css";
+
+.header {
+  display: flex;
+  padding: 15px 20px;
+  background-color: white;
+}
+
+.mediumScreenNavContainer {
+  display: none;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.logo {
+  min-width: 150px;
+  height: 29px;
+}
+
+.mediumScreenNav {
+  list-style: none;
+  composes: boldXS from "../../css/typography/_fonts.css";
+  align-self: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.mediumScreenNav li {
+  display: inline-block;
+  margin-left: 43px;
+}
+
+.mediumScreenNav a {
+  text-decoration: none;
+  color: black;
+}
+
+.mediumScreenNav a:hover,
+.smallScreenNavContainer a {
+  border-bottom: 2px solid red;
+}
+
+.overlay {
+  background: black;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  left: 100%;
+
+  composes: fontL from "../../css/typography/_fonts.css";
+  font-weight: bold;
+
+  transition: left 0.3s;
+}
+
+.overlay .mediumScreenNav {
+  display: block;
+}
+
+.smallScreenNavContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.smallScreenNav {
+  width: 150px;
+  display: inline-block;
+  text-align: left;
+}
+
+.smallScreenNav li {
+  margin: 0 0 20px 0;
+}
+
+.smallScreenNav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menuCloseButton {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.triggerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.triggerLabel {
+  align-self: center;
+  composes: boldXS from "../../css/typography/_fonts.css";
+  border-bottom: 2px solid red;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.trigger {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.trigger:checked + .overlay {
+  left: 40px;
+  right: 0;
+}
+
+@media mediumScreen {
+  .triggerContainer {
+    display: none;
+  }
+
+  .mediumScreenNavContainer {
+    display: flex;
+  }
+
+  .logo {
+    min-width: 187px;
+  }
+}

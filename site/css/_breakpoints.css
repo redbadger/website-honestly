@@ -1,0 +1,10 @@
+/*
+  ## Example
+  @value mediumScreen from "../../css/_breakpoints.css";
+
+  @media mediumScreen {
+
+  }
+*/
+
+@value mediumScreen: screen and (min-width: 690px);
