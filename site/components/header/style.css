@@ -1,5 +1,5 @@
-@value mediumScreen from "../../css/_breakpoints.css";
 @value red, white, black from "../../css/_colors.css";
+@value mediumScreen from "../../css/_breakpoints.css";
 
 .header {
   display: flex;
