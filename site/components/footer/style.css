@@ -5,7 +5,42 @@
   background-color: black;
   color: white;
   padding: 0px 20px;
+  position: relative;
 }
+
+
+.angle {
+  top: -6px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+}
+
+.angle svg {
+  fill: black;
+  height: 6px;
+  width: 6px;
+  display: block;
+  margin-left: -6px;
+}
+
+@media mediumScreen {
+
+  .angle {
+    top: -10px;
+    height: 10px;
+  }
+
+  .angle svg {
+    height: 10px;
+    width: 10px;
+    margin-left: -10px;
+  }
+
+}
+
 
 .nav {
   list-style: none;
