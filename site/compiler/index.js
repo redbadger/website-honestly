@@ -1,34 +1,21 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { match, RouterContext } from 'react-router';
-import uniq from 'ramda/src/uniq';
+import Navigation from 'navigation';
 import makeRoutes from '../routes';
-import { parseRouter, routeFilePath } from './parse-router';
-
-
-function compilePage(routes, location) {
-  return new Promise((resolve, reject) => {
-    match({ routes, location }, (error, redirectLocation, renderProps) => {
-      if (error || redirectLocation || !renderProps) {
-        reject(`Unable to render path ${location}`);
-      } else {
-        resolve(renderToString(<RouterContext {...renderProps} />));
-      }
-    });
-  });
-}
+import { registerStateNavigator } from '../../site/components/link';
 
 export function compileRoutes(siteRoutes) {
-  const routes = uniq(parseRouter(siteRoutes).map(r => r.path));
-  const promises = routes.map(route => (
-    compilePage(siteRoutes, route)
-      .then(body => ({
-        path: routeFilePath(route),
-        body,
-      }))
-    )
+  const stateNavigator = new Navigation.StateNavigator(
+    siteRoutes,
+    new Navigation.HTML5HistoryManager()
   );
-  return Promise.all(promises);
+  registerStateNavigator(stateNavigator);
+  return siteRoutes.map(route => {
+    const Component = route.component;
+    const path = route.filePath;
+    const body = renderToString(<Component />);
+    return { body, path };
+  });
 }
 
 export function compileSite(data) {

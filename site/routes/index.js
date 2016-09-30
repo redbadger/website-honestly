@@ -1,17 +1,42 @@
 import React from 'react';
-import { IndexRoute, Route, Router, browserHistory } from 'react-router';
 
-import Layout from '../layout';
+import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 
+const routePrefix = process.env.URL_BASENAME || '';
+
+function routeFilePath(path) {
+  switch (path) {
+    case '':
+      return `${routePrefix}index.html`;
+
+    default:
+      return `${routePrefix}${path}/index.html`;
+  }
+}
+
+function prefixRoutes(rs) {
+  return rs.map(route => {
+    const fullRoute = `${routePrefix}${route.route}`;
+    return Object.assign({}, route, {
+      route: fullRoute,
+      filePath: routeFilePath(route.route),
+    });
+  });
+}
+
 export default function routes() {
-  return (
-    <Router history={browserHistory}>
-      <Route path="/" component={Layout}>
-        <IndexRoute component={HomePage} />
-        <Route path="*" component={NotFoundPage} />
-      </Route>
-    </Router>
-  );
+  return prefixRoutes([
+    {
+      key: 'homePage',
+      route: '',
+      component: () => <L><HomePage /></L>,
+    },
+    {
+      key: 'notFoundPage',
+      route: '404',
+      component: () => <L><NotFoundPage /></L>,
+    },
+  ]);
 }
