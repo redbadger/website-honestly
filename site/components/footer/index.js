@@ -19,10 +19,10 @@ import mapSVG from './SVG/map.svg';
 const cx = classnames.bind(styles);
 
 const Footer = () => (
-  <footer className={styles.footer}>
+  <footer role="contentinfo" className={styles.footer}>
     <InlineSVG src={mapSVG} className={styles.footerMap} />
     <div className={styles.footerSections}>
-      <nav className={cx('section', 'footerLinks')}>
+      <nav role="navigation" className={cx('section', 'footerLinks')}>
         <ul className={styles.nav}>
           <li>
             <a href="/">Home</a>

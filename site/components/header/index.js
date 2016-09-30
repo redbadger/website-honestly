@@ -5,10 +5,12 @@ import logoSVG from './rb-logo-placeholder.svg';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <InlineSVG src={logoSVG} className={styles.logo} />
+    <header className={styles.header} role="banner">
+      <a href="/" title="Home" className={styles.logo}>
+        <InlineSVG src={logoSVG} />
+      </a>
 
-      <nav className={styles.mediumScreenNavContainer}>
+      <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul className={styles.mediumScreenNav}>
           <li><a href="/services/">Services</a></li>
           <li><a href="/about-us/">About us</a></li>
@@ -25,7 +27,7 @@ const Header = () => {
       <div className={styles.overlay}>
         <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
 
-        <nav className={styles.smallScreenNavContainer}>
+        <nav className={styles.smallScreenNavContainer} role="navigation">
           <ul className={styles.smallScreenNav}>
             <li><a href="/">Home</a></li>
             <li><a href="/about-us/">About us</a></li>

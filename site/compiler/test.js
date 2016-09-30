@@ -4,7 +4,7 @@ import { compileSite, compileRoutes } from '.';
 
 describe('site/compiler', () => {
   describe('compileSite', () => {
-    it.only('renders all the pages of the site', () => (
+    it('renders all the pages of the site', () => (
       compileSite().then(pages => {
         expect(pages.length).to.be.above(0);
       })
