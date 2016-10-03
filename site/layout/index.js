@@ -7,7 +7,6 @@ export default function Layout({ children }) {
   return (
     <div className={styles.application}>
       <Header />
-      <h1>Website. Honestly.</h1>
       <div>{children}</div>
       <Footer />
     </div>

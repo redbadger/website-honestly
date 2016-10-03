@@ -1,12 +1,10 @@
 import React from 'react';
-import Link from '../../components/link';
-import styles from './index.css';
+import HomepageTopSlice from '../../components/homepage-top-slice';
 
 export default function HomePage() {
   return (
     <div>
-      <h1 className={styles.hello}>Homepage</h1>
-      <Link to="notFoundPage">Go somewhere?</Link>
+      <HomepageTopSlice />
     </div>
   );
 }
