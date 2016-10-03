@@ -2,9 +2,10 @@
 @value mediumScreen from "../../css/_breakpoints.css";
 
 .footer {
-  background-color: black;
   color: white;
   padding: 0px 20px;
+  background-color: black;
+  composes: dividerBlack from "../../css/_divider.css";
 }
 
 .nav {

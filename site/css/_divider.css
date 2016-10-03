@@ -1,0 +1,26 @@
+@value red, white, black from "./_colors.css";
+
+.divider {
+  position: relative;
+}
+
+.divider:before {
+  content:"";
+  position: absolute;
+  right: -6px;
+  width: 50%;
+  height: 10px;
+  top: 0px;
+  transform: skew(-40deg);
+  margin-top: -10px;
+
+  background-color: red;
+}
+
+.dividerBlack {
+  composes: divider;
+}
+
+.dividerBlack:before {
+  background-color: black;
+}
