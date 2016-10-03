@@ -60,7 +60,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://github.com/redbadger"
+              href="https://twitter.com/redbadgerteam"
               title="Red Badger Twitter"
               className={styles.socialIcon}
             >
@@ -69,7 +69,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://github.com/redbadger"
+              href="https://redbadger.typeform.com/to/cBuJUl"
               title="Red Badger Slack"
               className={styles.socialIcon}
             >
@@ -78,7 +78,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://github.com/redbadger"
+              href="https://www.linkedin.com/company/red-badger"
               title="Red Badger Linkedin"
               className={styles.socialIcon}
             >
@@ -88,7 +88,7 @@ const Footer = () => (
 
           <li>
             <a
-              href="https://github.com/redbadger"
+              href="https://www.instagram.com/redbadgerteam/"
               title="Red Badger Instagram"
               className={styles.socialIcon}
             >
@@ -97,7 +97,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://github.com/redbadger"
+              href="https://www.facebook.com/RedBadger"
               title="Red Badger Facebook"
               className={styles.socialIcon}
             >
@@ -106,7 +106,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://github.com/redbadger"
+              href="https://www.youtube.com/playlist?list=PLW6ORi0XZU0BL3Up9mXpP75ilJBDOjMsQ"
               title="Red Badger Youtube"
               className={styles.socialIcon}
             >
@@ -115,7 +115,7 @@ const Footer = () => (
           </li>
           <li>
             <a
-              href="https://github.com/redbadger"
+              href="https://plus.google.com/+Redbadgerteam"
               title="Red Badger Google Plus"
               className={styles.socialIcon}
             >
