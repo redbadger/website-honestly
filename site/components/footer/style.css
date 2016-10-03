@@ -183,4 +183,7 @@
     right: 0;
     top: 8px;
   }
+  .footerEndContainer {
+    display: flex;
+  }
 }
