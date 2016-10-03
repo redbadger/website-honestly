@@ -1,11 +1,14 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_breakpoints.css";
-
 .footer {
   color: white;
   padding: 0px 20px;
   background-color: black;
   composes: dividerBlack from "../../css/_divider.css";
+}
+.footerContainer {
+  max-width: 1200px;
+  position: relative;
 }
 
 .nav {
@@ -117,8 +120,8 @@
 
   .address {
     position: absolute;
-    right: 250px;
-    top: 380px;
+    right: 230px;
+    top: 280px;
   }
   .section {
     border-bottom: none;
@@ -133,6 +136,10 @@
 }
 
 @media largeScreen {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
   .footerLinks {
     flex-grow: 2;
   }
@@ -152,7 +159,7 @@
   }
 
   .disclaimer {
-    margin-top: 30px;
+    margin-top: 70px;
   }
 
   .disclaimer p {
@@ -161,7 +168,7 @@
     position: relative;
   }
   .disclaimer p:first-child {
-    padding: 0px;
+    padding: 0px 20px 0px 0px;
   }
   .disclaimer p:last-child {
     padding: 0px;
