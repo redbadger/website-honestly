@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Red Badger Website. Honestly.",
   "dependencies": {
+    "assets-webpack-plugin": "^3.4.0",
     "autoprefixer": "^6.4.1",
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",

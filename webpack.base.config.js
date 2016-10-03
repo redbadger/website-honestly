@@ -1,11 +1,10 @@
 const webpack = require('webpack');
-const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 const baseConfig = {
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: 'dist',
     filename: '[name]/index.js',
   },
   module: {
@@ -30,7 +29,10 @@ const baseConfig = {
         test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/,
         exclude: [/dist\//, /node_modules/],
         loader: 'file-loader',
-        query: { name: 'assets/[name]-[hash:base64:5].[ext]' },
+        query: {
+          publicPath: '../',
+          name: 'assets/[name]-[hash:base64:5].[ext]',
+        },
       },
       {
         test: /\.svg$/,

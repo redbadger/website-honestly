@@ -4,6 +4,9 @@ import Navigation from 'navigation';
 import makeRoutes from '../routes';
 import { registerStateNavigator } from '../../site/components/link';
 import layoutTemplate from '../index.ejs';
+import assetsDigest from './assets-digest'; // eslint-disable-line import/no-unresolved
+
+const cssPath = assetsDigest[assetsDigest.metadata.bundleName].css;
 
 export function compileRoutes(siteRoutes) {
   const stateNavigator = new Navigation.StateNavigator(
@@ -15,7 +18,7 @@ export function compileRoutes(siteRoutes) {
     const Component = route.component;
     const path = route.filePath;
     const bodyContent = renderToString(<Component />);
-    const body = layoutTemplate({ bodyContent });
+    const body = layoutTemplate({ bodyContent, cssPath });
     return { body, path };
   });
 }
