@@ -33,6 +33,7 @@ dev: badger ## Run the frontend dev server
 
 
 dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
+	ln -fs ../assets dist/static-site/assets
 	node dist/dev-static/index.js
 	ruby -run -ehttpd ./dist/static-site -p8000
 

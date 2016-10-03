@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const baseConfig = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
+const AssetsPlugin = require('assets-webpack-plugin');
 
 const lambdaConfig = webpackMerge(baseConfig, {
   entry: {
@@ -12,6 +13,7 @@ const lambdaConfig = webpackMerge(baseConfig, {
   target: 'node',
   externals: [
     'aws-sdk',
+    './assets-digest',
   ],
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
@@ -21,6 +23,11 @@ const lambdaConfig = webpackMerge(baseConfig, {
         warnings: false,
         drop_debugger: true,
       },
+    }),
+    new AssetsPlugin({
+      filename: 'assets-digest.json',
+      path: './dist/publish-service',
+      metadata: { bundleName: 'publish-service' },
     }),
   ],
 });

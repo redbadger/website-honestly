@@ -13,6 +13,8 @@ createCommitSite() {
   echo Deploying site to $URL_BASENAME
   make clean
   make build
+  echo Copying assets to S3
+  aws s3 sync ./dist/assets s3://$BUCKET_NAME/$COMMIT_REF/assets
   make publish-service-deploy
   make publish-service-invoke
   echo Done!
