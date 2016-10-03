@@ -12,16 +12,23 @@ cssHook({
   generateScopedName: '[name]__[hash:base64:5]',
 });
 
-/* Polyfill File Loader */
-const fileTypes = ['png', 'jpg', 'jpeg', 'eot', 'ttf', 'woff', 'svg'];
+/* Polyfill file loader */
+const assetFileTypes = ['png', 'jpg', 'jpeg', 'eot', 'ttf', 'woff', 'svg'];
 
 const loadAsset = (source, name) => {
   return `module.exports = ${JSON.stringify(name)}`;
 };
 
-fileTypes.forEach(ext => {
+assetFileTypes.forEach(ext => {
   requireHook(`.${ext}`, loadAsset);
 });
+
+/* Polyfill EJS template loader */
+requireHook('.ejs', () =>
+  `module.exports = function(data) {
+    return data.bodyContent;
+  }`
+);
 
 
 /* Polyfill DOM api */

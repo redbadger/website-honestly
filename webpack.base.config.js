@@ -36,6 +36,10 @@ const baseConfig = {
         test: /\.svg$/,
         loader: 'svg-inline',
       },
+      {
+        test: /\.ejs/,
+        loader: 'underscore-template-loader',
+      },
     ],
   },
   postcss() {

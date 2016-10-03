@@ -3,6 +3,7 @@ import { renderToString } from 'react-dom/server';
 import Navigation from 'navigation';
 import makeRoutes from '../routes';
 import { registerStateNavigator } from '../../site/components/link';
+import layoutTemplate from '../index.ejs';
 
 export function compileRoutes(siteRoutes) {
   const stateNavigator = new Navigation.StateNavigator(
@@ -13,7 +14,8 @@ export function compileRoutes(siteRoutes) {
   return siteRoutes.map(route => {
     const Component = route.component;
     const path = route.filePath;
-    const body = renderToString(<Component />);
+    const bodyContent = renderToString(<Component />);
+    const body = layoutTemplate({ bodyContent });
     return { body, path };
   });
 }
