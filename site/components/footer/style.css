@@ -1,5 +1,5 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen from "../../css/_breakpoints.css";
+@value mediumScreen, largeScreen from "../../css/_breakpoints.css";
 
 .footer {
   color: white;
@@ -54,11 +54,12 @@
 .socialLinks {
   display: flex;
   flex-wrap: wrap;
-  width: 190px;
+  width: 200px;
 }
 
 .socialLinks li {
-  margin-right: 20px;
+  margin-right: 23px;
+  margin-bottom: 5px;
 }
 
 .socialIcon svg {
@@ -85,7 +86,7 @@
 }
 
 .disclaimer {
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldXS from "../../css/typography/_fonts.css";
 }
 
 .cookieWarning {
@@ -106,35 +107,43 @@
 .footerMap {
   display: none;
 }
+@media screen and (min-width: 820px) {
+  .footerMap {
+    position: absolute;
+    width: 824px;
+    right: 0;
+    display: block;
+  }
 
-@media mediumScreen {
+  .address {
+    position: absolute;
+    right: 250px;
+    top: 380px;
+  }
+  .section {
+    border-bottom: none;
+  }
+
+  .mapPin {
+    display: none;
+  }
+  .footerSections {
+    position: relative;
+  }
+}
+
+@media largeScreen {
   .footerLinks {
     flex-grow: 2;
   }
 
   .social {
     flex-grow: 1;
+    position: relative;
   }
 
   .socialLinks {
     width: 100%;
-  }
-
-  .mapPin {
-    display: none;
-  }
-
-  .address {
-    position: absolute;
-    right: 12%;
-    top: 60%;
-  }
-
-  .footerMap {
-    position: absolute;
-    width: 50%;
-    right: 0;
-    display: block;
   }
 
   .footerSections {
@@ -142,8 +151,8 @@
     width: 60%;
   }
 
-  .section {
-    border-bottom: none;
+  .disclaimer {
+    margin-top: 30px;
   }
 
   .disclaimer p {
@@ -151,7 +160,12 @@
     display: inline-block;
     position: relative;
   }
-
+  .disclaimer p:first-child {
+    padding: 0px;
+  }
+  .disclaimer p:last-child {
+    padding: 0px;
+  }
   .afterDivider:after {
     content: ' ';
     display: block;
