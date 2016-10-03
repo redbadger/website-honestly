@@ -67,7 +67,7 @@
 }
 
 .address {
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldXS from "../../css/typography/_fonts.css";
   display: flex;
 }
 
