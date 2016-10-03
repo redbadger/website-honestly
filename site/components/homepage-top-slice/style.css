@@ -1,4 +1,5 @@
 @value white from "../../css/_colors.css";
+@value largeScreen from "../../css/_breakpoints.css";
 
 .homepageTopSlice {
   padding: 50px 60px 100px 60px;
@@ -14,4 +15,17 @@
 
 .sloganDescription {
   composes: fontS-Serif from "../../css/typography/_fonts.css";
+}
+
+@media largeScreen {
+  .homepageTopSlice {
+    text-align: center;
+    padding: 160px 0 230px 0;
+  }
+
+  .sliceContainer {
+    max-width: 730px;
+    display: inline-block;
+    text-align: left;
+  }
 }
