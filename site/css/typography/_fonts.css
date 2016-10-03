@@ -59,7 +59,6 @@
 /* Importing base64 encoded Sentinel fonts */
 @import url("./fonts/sentinel-woff.css");
 @import url("./fonts/sentinel-woff2.css");
-@import url("./fonts/sentinel-opentype.css");
 @import url("./fonts/sentinel-truetype.css");
 
 .fontXL {
