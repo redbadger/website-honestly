@@ -90,6 +90,7 @@
 
 .disclaimer {
   composes: boldXS from "../../css/typography/_fonts.css";
+  padding-bottom: 0px;
 }
 
 .cookieWarning {
@@ -99,6 +100,7 @@
 .badgerIcon {
   display: flex;
   justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .badgerIcon svg {
@@ -116,6 +118,9 @@
     width: 824px;
     right: 0;
     display: block;
+  }
+  .badgerIcon {
+    margin-bottom: 16px;
   }
 
   .address {
@@ -160,6 +165,7 @@
 
   .disclaimer {
     margin-top: 70px;
+    padding-bottom: 20px;
   }
 
   .disclaimer p {
