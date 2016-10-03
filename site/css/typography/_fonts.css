@@ -62,7 +62,7 @@
 @import url("./fonts/sentinel-opentype.css");
 @import url("./fonts/sentinel-truetype.css");
 
-@value largeScreen from "../_breakpoints.css";
+@value mediumScreen, largeScreen from "../_breakpoints.css";
 
 .fontXL {
   font-family: 'Sentinel A';
@@ -102,8 +102,18 @@
   line-height: 1.5em;
 }
 
+@media mediumScreen {
+  .fontXL {
+    font-size: 60px;
+  }
+}
+
 @media largeScreen {
   .fontXL {
     font-size: 90px;
+  }
+
+  .fontM {
+    font-size: 40px;
   }
 }
