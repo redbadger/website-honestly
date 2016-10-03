@@ -1,3 +1,13 @@
+@value daveGreen, red from "./_colors.css";
+/*
+### Example
+
+  .navBar {
+    composes: redUnderlineLink from "../../css/typography/_links.css";
+  }
+
+ */
+
 .redUnderlineLink {
   border-bottom: 2px solid red;
   color: white;
