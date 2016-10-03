@@ -1,6 +1,4 @@
 const webpack = require('webpack');
-const webpackMerge = require('webpack-merge').smart;
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -23,10 +21,12 @@ const baseConfig = {
       {
         test: /\.json$/,
         loader: 'json-loader',
-
       },
       {
-        test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/, exclude: [/dist\//, /node_modules/], loader: 'file-loader', query: { name: '[name]-[hash:base64:5].[ext]' },
+        test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/,
+        exclude: [/dist\//, /node_modules/],
+        loader: 'file-loader',
+        query: { name: '[name]-[hash:base64:5].[ext]' },
       },
       {
         test: /\.svg$/,
@@ -49,19 +49,4 @@ const baseConfig = {
   ],
 };
 
-const devAppConfig = webpackMerge(baseConfig, {
-  entry: {
-    'dev-app': './dev/browser-app/index.js',
-  },
-  target: 'web',
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Red Badger',
-      template: './site/index.ejs',
-    }),
-  ],
-});
-
-module.exports = [
-  devAppConfig,
-];
+module.exports = baseConfig;

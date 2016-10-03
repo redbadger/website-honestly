@@ -43,8 +43,7 @@
 
 .overlay {
   background: black;
-
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -100%;
   bottom: 0;
@@ -53,7 +52,7 @@
   composes: fontL from "../../css/typography/_fonts.css";
   font-weight: bold;
 
-  transition: all 0.3s;
+  transition: left 0.3s;
 }
 
 .overlay .mediumScreenNav {

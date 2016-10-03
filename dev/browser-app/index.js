@@ -1,9 +1,24 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
-import routes from '../../site/routes';
+import Navigation from 'navigation';
 
-document.writeln('<main/>');
+import { registerStateNavigator } from '../../site/components/link';
+import makeRoutes from '../../site/routes';
 
-ReactDOM.render(
-  routes(),
-  document.querySelector('main')
+const element = document.querySelector('.js-app');
+const data = {};
+const routes = makeRoutes(data);
+const stateNavigator = new Navigation.StateNavigator(
+  routes,
+  new Navigation.HTML5HistoryManager()
 );
+registerStateNavigator(stateNavigator);
+
+routes.forEach(route => {
+  const render = () => {
+    const Component = route.component;
+    ReactDOM.render(<Component />, element);
+  };
+  stateNavigator.states[route.key].navigated = render;
+});
+stateNavigator.start();
