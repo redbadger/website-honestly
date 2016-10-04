@@ -1,5 +1,5 @@
-@value white from "../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../css/_breakpoints.css";
+@value white from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
 
 .homepageTopSlice {
   padding: 50px 60px 100px 60px;
@@ -8,13 +8,13 @@
 }
 
 .badgerSlogan {
-  composes: fontXL from "../../css/typography/_fonts.css";
+  composes: fontXL from "../../../css/typography/_fonts.css";
   font-weight: bold;
   margin-bottom: 30px;
 }
 
 .sloganDescription {
-  composes: fontM from "../../css/typography/_fonts.css";
+  composes: fontM from "../../../css/typography/_fonts.css";
   font-weight: bold;
 }
 

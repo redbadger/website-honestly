@@ -1,5 +1,5 @@
 import React from 'react';
-import HomepageTopSlice from '../../components/homepage-top-slice';
+import HomepageTopSlice from './homepage-top-slice';
 
 export default function HomePage() {
   return (
