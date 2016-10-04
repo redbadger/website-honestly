@@ -109,7 +109,7 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="https://www.youtube.com/playlist?list=PLW6ORi0XZU0BL3Up9mXpP75ilJBDOjMsQ"
+                href="https://www.youtube.com/redbadgerteam"
                 title="Red Badger Youtube"
                 className={styles.socialIcon}
               >
