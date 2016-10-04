@@ -3,13 +3,17 @@ import { NavigationLink } from 'navigation-react';
 
 let stateNavigator;
 
-export default function Link({ to, children }) {
+export default function Link(props) {
+  const linkProps = Object.assign({}, props, {
+    stateKey: props.to,
+    stateNavigator,
+  });
+
   return (
     <NavigationLink
-      stateKey={to}
-      stateNavigator={stateNavigator}
+      {...linkProps}
     >
-      {children}
+      {props.children}
     </NavigationLink>
   );
 }

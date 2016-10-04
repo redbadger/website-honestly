@@ -17,10 +17,14 @@
   background-color: red;
 }
 
-.dividerBlack {
+.dividerBlack, .dividerWhite {
   composes: divider;
 }
 
 .dividerBlack:before {
   background-color: black;
+}
+
+.dividerWhite:before {
+  background-color: white;
 }
