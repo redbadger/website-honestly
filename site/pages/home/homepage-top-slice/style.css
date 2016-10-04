@@ -2,20 +2,18 @@
 @value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
 
 .homepageTopSlice {
-  padding: 50px 60px 100px 60px;
+  padding: 50px 20px 100px 20px;
   text-align: center;
   background-color: white;
 }
 
 .badgerSlogan {
   composes: fontXL from "../../../css/typography/_fonts.css";
-  font-weight: bold;
   margin-bottom: 30px;
 }
 
 .sloganDescription {
   composes: fontM from "../../../css/typography/_fonts.css";
-  font-weight: bold;
 }
 
 @keyframes fadeInUp {
