@@ -7,7 +7,7 @@
   composes: dividerBlack from "../../css/_divider.css";
 }
 .footerContainer {
-  max-width: 1200px;
+  max-width: 1440px;
   position: relative;
 }
 
