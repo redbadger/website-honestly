@@ -1,6 +1,6 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
-import Link from '../link';
+import Link from '../../../components/link';
 import styles from './style.css';
 import illustrationSVG from './illustration.svg';
 

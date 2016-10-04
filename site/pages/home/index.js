@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '../../components/link';
-import Brie from '../../components/brie';
+import Brie from './brie-slice';
 import styles from './index.css';
 
 export default function HomePage() {
