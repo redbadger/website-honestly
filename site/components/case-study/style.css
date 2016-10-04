@@ -1,3 +1,40 @@
+@value black, white, linesOnBlack from "../../css/_colors.css";
 .test {
-  color: red;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 30px;
+  composes: fontXL from "../../css/typography/_fonts.css";
+  font-weight: bold;
+}
+.caseStudyContainer {
+  background-color: black;
+  padding: 0px 10px;
+}
+.figuresContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.figuresContainer div {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid linesOnBlack;
+}
+.figuresContainer .caseFigure svg {
+  height: 80px;
+}
+.figuresContainer .caseLogo svg {
+  height: 20px;
+}
+.caseText {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 30px;
+  composes: fontXL from "../../css/typography/_fonts.css";
+  font-weight: bold;
 }

@@ -1,24 +1,49 @@
 import React from 'react';
 import styles from './style.css';
+import InlineSVG from 'svg-inline-react';
+
+/* SVG logo imports */
+import bbcSVG from './SVG/bbc.svg';
+import bmwSVG from './SVG/bmw.svg';
+import camdenSVG from './SVG/camden.svg';
+import cartrawlerSVG from './SVG/cartrawler.svg';
+import financialTimesSVG from './SVG/financialtimes.svg';
+import fortnumSVG from './SVG/fortnum.svg';
+import lloydsSVG from './SVG/lloyds.svg';
+import selfridgesSVG from './SVG/selfridges.svg';
+import skySVG from './SVG/sky.svg';
+import tescoSVG from './SVG/tesco.svg';
+
+/* SVG figure imports */
+import tescoFigureSVG from './SVG/tesco-figure.svg';
+import fortnumFigureSVG from './SVG/fortnum-figure.svg';
+import camdenFigureSVG from './SVG/camden-figure.svg';
+import skyFigureSVG from './SVG/sky-figure.svg';
 
 const CaseStudy = () => (
-  <div>
+  <div className={styles.caseStudyContainer}>
     <h2 className={styles.test}>We solve complex problems and deliver real impact.</h2>
-    <div>
-      <span>3</span>
-      <span>Number of awards for the new online store</span>
-    </div>
-    <div>
-      <span>50%</span>
-      <span>Drop in customers pushing the 'need more help' button</span>
-    </div>
-    <div>
-      <span>54%</span>
-      <span>Increase in number of online orders across 7 countries</span>
-    </div>
-    <div>
-      <span>10</span>
-      <span>Weeks to deliver a new online platform</span>
+    <div className={styles.figuresContainer}>
+      <div>
+        <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
+        <span className={styles.caseText}>Number of awards for the new online store</span>
+        <InlineSVG src={fortnumSVG} className={styles.caseLogo} />
+      </div>
+      <div>
+        <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
+        <span className={styles.caseText}>Drop in customers pushing the 'need more help' button</span>
+        <InlineSVG src={skySVG} />
+      </div>
+      <div>
+        <InlineSVG src={tescoFigureSVG} className={styles.caseFigure} />
+        <span className={styles.caseText}>Increase in number of online orders across 7 countries</span>
+        <InlineSVG src={tescoSVG} />
+      </div>
+      <div>
+        <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
+        <span className={styles.caseText}>Weeks to deliver a new online platform</span>
+        <InlineSVG src={camdenSVG} />
+      </div>
     </div>
   </div>
 );
