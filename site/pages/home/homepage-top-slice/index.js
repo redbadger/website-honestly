@@ -8,7 +8,7 @@ const HomepageTopSlice = () => {
   return (
     <section className={styles.homepageTopSlice}>
       <div className={styles.sliceContainer}>
-        <h1 className={cx('badgerSlogan', 'fadeInUp')}>Let’s make things better.</h1>
+        <h1 className={cx('badgerSlogan', 'fadeInUp')}>Let’s make<br />things better.</h1>
         <p className={cx('sloganDescription', 'fadeInUp')}>
           We work with you to deliver digital products that
           make a difference to people.
