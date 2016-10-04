@@ -8,7 +8,6 @@ export default function Layout({ children }) {
     <div className={styles.application}>
       <Header />
       <div>{children}</div>
-      <Footer />
     </div>
   );
 }
