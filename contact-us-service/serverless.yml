@@ -1,0 +1,67 @@
+###
+#        we want
+#        - an API gateway endpoint
+#          - with CORS because browser trigger
+#          - that triggers
+#        - an SNS topic
+#          - that sends an email to hello@red-badger.com
+###
+
+service: "website-honestly-${env:ENVIRONMENT_NAME}-contact-us-service"
+
+provider:
+  name: aws
+  stage: dev
+  region: eu-west-1
+  runtime: nodejs4.3
+
+resources:
+  Resources:
+
+    ContactUsSNSTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        Subscription: ${file(./config/env.json):ContactUsSNSSubscriptions}
+
+# http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
+
+    # ContactUsEndpoint:
+    #   Type: "AWS::ApiGateway::Method"
+    #   Properties:
+
+
+    # ContactUsEndpoint:
+    #   Type: "AWS::ApiGateway::Method"
+    #   Properties:
+    #     AuthorizationType: String
+    #     AuthorizerId: String
+    #     HttpMethod: "POST"
+    #     Integration:
+    #       CacheKeyParameters:
+    #         - String
+    #       CacheNamespace: String
+    #       Credentials: String
+    #       IntegrationHttpMethod: String
+    #       IntegrationResponses:
+    #         IntegrationResponse
+    #       PassthroughBehavior: String
+    #       RequestParameters:
+    #         String: String
+    #       RequestTemplates:
+    #         String: String
+    #       Type: String
+    #       Uri: String
+
+    #     MethodResponses:
+    #       # ones for all the codes - 404, 200, validation errors...
+    #       - ResponseModels:
+    #           String: String
+    #         ResponseParameters:
+    #           String: Boolean
+    #         StatusCode: String
+    #     RequestModels: # The resources used for the response's content type.
+    #       String: String
+    #     RequestParameters: # Request parameters that API Gateway accepts.
+    #       String: Boolean
+    #     ResourceId: String
+    #     RestApiId: String
