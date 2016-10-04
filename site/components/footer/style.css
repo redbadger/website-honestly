@@ -13,7 +13,7 @@
 
 .nav {
   list-style: none;
-  composes: fontS-Serif from "../../css/typography/_fonts.css";
+  composes: serifFontS from "../../css/typography/_fonts.css";
 }
 
 .nav li {
@@ -40,7 +40,7 @@
 }
 
 .social {
-  composes: fontS-Serif from "../../css/typography/_fonts.css";
+  composes: serifFontS from "../../css/typography/_fonts.css";
 }
 
 .mailtoLink,

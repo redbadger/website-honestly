@@ -19,7 +19,7 @@
   color: white;
   text-align: center;
   padding: 16px 20px 16px 20px;
-  composes: fontS-Sans-Serif from "./typography/_fonts.css";
+  composes: sansSerifFontS from "./typography/_fonts.css";
   text-decoration: none;
   display: inline-block;
 }
