@@ -1,9 +1,9 @@
-@value daveGreen, red from "./_colors.css";
+@value white, red from "./_colors.css";
 /*
 ### Example
 
-  .navBar {
-    composes: redUnderlineLink from "../../css/typography/_links.css";
+  .link {
+    composes: redUnderlineLink from "../../css/_links.css";
   }
 
  */
@@ -11,5 +11,14 @@
 .redUnderlineLink {
   border-bottom: 2px solid red;
   color: white;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 16px 20px 16px 20px;
+  composes: fontS-Sans-Serif from "./typography/_fonts.css";
   text-decoration: none;
 }
