@@ -8,3 +8,4 @@
 */
 
 @value mediumScreen: screen and (min-width: 690px);
+@value largeScreen: screen and (min-width: 980px);

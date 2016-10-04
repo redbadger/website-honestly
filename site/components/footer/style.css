@@ -1,16 +1,19 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen from "../../css/_breakpoints.css";
-
+@value mediumScreen, largeScreen from "../../css/_breakpoints.css";
 .footer {
   color: white;
   padding: 0px 20px;
   background-color: black;
   composes: dividerBlack from "../../css/_divider.css";
 }
+.footerContainer {
+  max-width: 1440px;
+  position: relative;
+}
 
 .nav {
   list-style: none;
-  composes: fontS-Serif from "../../css/typography/_fonts.css";
+  composes: serifFontS from "../../css/typography/_fonts.css";
 }
 
 .nav li {
@@ -37,7 +40,7 @@
 }
 
 .social {
-  composes: fontS-Serif from "../../css/typography/_fonts.css";
+  composes: serifFontS from "../../css/typography/_fonts.css";
 }
 
 .mailtoLink,
@@ -54,11 +57,12 @@
 .socialLinks {
   display: flex;
   flex-wrap: wrap;
-  width: 190px;
+  width: 200px;
 }
 
 .socialLinks li {
-  margin-right: 20px;
+  margin-right: 23px;
+  margin-bottom: 5px;
 }
 
 .socialIcon svg {
@@ -66,7 +70,7 @@
 }
 
 .address {
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldXS from "../../css/typography/_fonts.css";
   display: flex;
 }
 
@@ -85,7 +89,8 @@
 }
 
 .disclaimer {
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldXS from "../../css/typography/_fonts.css";
+  padding-bottom: 0px;
 }
 
 .cookieWarning {
@@ -95,6 +100,7 @@
 .badgerIcon {
   display: flex;
   justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .badgerIcon svg {
@@ -106,35 +112,50 @@
 .footerMap {
   display: none;
 }
+@media screen and (min-width: 820px) {
+  .footerMap {
+    position: absolute;
+    width: 824px;
+    right: 0;
+    display: block;
+  }
+  .badgerIcon {
+    margin-bottom: 16px;
+  }
 
-@media mediumScreen {
+  .address {
+    position: absolute;
+    right: 230px;
+    top: 280px;
+  }
+  .section {
+    border-bottom: none;
+  }
+
+  .mapPin {
+    display: none;
+  }
+  .footerSections {
+    position: relative;
+  }
+}
+
+@media largeScreen {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
   .footerLinks {
     flex-grow: 2;
   }
 
   .social {
     flex-grow: 1;
+    position: relative;
   }
 
   .socialLinks {
     width: 100%;
-  }
-
-  .mapPin {
-    display: none;
-  }
-
-  .address {
-    position: absolute;
-    right: 12%;
-    top: 60%;
-  }
-
-  .footerMap {
-    position: absolute;
-    width: 50%;
-    right: 0;
-    display: block;
   }
 
   .footerSections {
@@ -142,8 +163,9 @@
     width: 60%;
   }
 
-  .section {
-    border-bottom: none;
+  .disclaimer {
+    margin-top: 70px;
+    padding-bottom: 20px;
   }
 
   .disclaimer p {
@@ -151,7 +173,12 @@
     display: inline-block;
     position: relative;
   }
-
+  .disclaimer p:first-child {
+    padding: 0px 20px 0px 0px;
+  }
+  .disclaimer p:last-child {
+    padding: 0px;
+  }
   .afterDivider:after {
     content: ' ';
     display: block;
@@ -161,5 +188,8 @@
     position: absolute;
     right: 0;
     top: 8px;
+  }
+  .footerEndContainer {
+    display: flex;
   }
 }
