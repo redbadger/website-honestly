@@ -56,10 +56,12 @@
   src: url('./fonts/322627_1_0.woff2') format('woff2'), url('./fonts/322627_1_0.woff') format('woff'), url('./fonts/322627_1_0.ttf') format('truetype');
 }
 
+@value mediumScreen, largeScreen from "../_breakpoints.css";
+
 .fontXL {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-size: 40px;
-  line-height: 1.1em;
+  line-height: 1em;
   font-style: normal;
   font-weight: 800;
 }
@@ -67,7 +69,7 @@
 .fontL, .fontM {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-size: 24px;
-  line-height: 1.1em;
+  line-height: 1.2em;
   font-style: normal;
   font-weight: 800;
 }
@@ -98,4 +100,20 @@
   font-family: 'ProximaNova-Bold', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+}
+
+@media mediumScreen {
+  .fontXL {
+    font-size: 60px;
+  }
+}
+
+@media largeScreen {
+  .fontXL {
+    font-size: 90px;
+  }
+
+  .fontM {
+    font-size: 40px;
+  }
 }
