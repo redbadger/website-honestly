@@ -1,0 +1,45 @@
+@value red, white, black from "../../../css/_colors.css";
+@value mediumScreen from "../../../css/_breakpoints.css";
+
+.brieContainer {
+  padding: 30px 20px 40px 20px;
+  composes: dividerWhite from "../../../css/_divider.css";
+  background-color: white;
+  text-align: center;
+}
+
+.heading {
+  composes: fontL from "../../../css/typography/_fonts.css";
+  max-width: 1000px;
+  margin: 0px auto;
+  color: black;
+}
+
+.brie {
+  margin: 30px auto;
+  display: block;
+}
+
+.featureBtn {
+  line-height: 1;
+  composes: primaryButton from "../../../css/_links.css";
+}
+
+@media mediumScreen {
+  .brieContainer {
+    padding: 60px 20px 70px 20px;
+  }
+  .brie {
+    margin: 60px auto;
+    max-width: 650px;
+  }
+  .featureBtn {
+    display: inline-block;
+  }
+}
+
+@media largeScreen {
+  .brie {
+    max-width: 800px;
+  }
+}
