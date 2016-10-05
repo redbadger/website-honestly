@@ -1,0 +1,14 @@
+{
+  "name": "contact-us-service",
+  "version": "1.0.0",
+  "description": "Contact us service",
+  "main": "handler.js",
+  "scripts": {
+    "test": "sls deploy && sls invoke --function contactUs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "2.4.9"
+  }
+}

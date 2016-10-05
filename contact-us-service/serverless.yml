@@ -1,67 +1,69 @@
-###
-#        we want
-#        - an API gateway endpoint
-#          - with CORS because browser trigger
-#          - that triggers
-#        - an SNS topic
-#          - that sends an email to hello@red-badger.com
-###
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
 
-service: "website-honestly-${env:ENVIRONMENT_NAME}-contact-us-service"
+service: contact-us-service # NOTE: update this with your service name
 
 provider:
   name: aws
-  stage: dev
-  region: eu-west-1
   runtime: nodejs4.3
-
-resources:
-  Resources:
-
-    ContactUsSNSTopic:
-      Type: AWS::SNS::Topic
-      Properties:
-        Subscription: ${file(./config/env.json):ContactUsSNSSubscriptions}
-
-# http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
-
-    # ContactUsEndpoint:
-    #   Type: "AWS::ApiGateway::Method"
-    #   Properties:
+  region: eu-west-1
+# you can add statements to the Lambda function's IAM Role here
+  iamRoleStatements:
+    - Effect: 'Allow'
+      Action:
+        - 'SES:SendEmail'
+        - 'SES:SendRawEmail'
+      Resource: 'arn:aws:ses:eu-west-1:578418881509:identity/hello@red-badger.com'
+      # - Effect: 'Allow'
+      #   Action:
+      #   - 'es:ESHttpPost'
+      #   Resource: 'arn:aws:ses:eu-west-1:578418881509:identity/hello@red-badger.com'
 
 
-    # ContactUsEndpoint:
-    #   Type: "AWS::ApiGateway::Method"
-    #   Properties:
-    #     AuthorizationType: String
-    #     AuthorizerId: String
-    #     HttpMethod: "POST"
-    #     Integration:
-    #       CacheKeyParameters:
-    #         - String
-    #       CacheNamespace: String
-    #       Credentials: String
-    #       IntegrationHttpMethod: String
-    #       IntegrationResponses:
-    #         IntegrationResponse
-    #       PassthroughBehavior: String
-    #       RequestParameters:
-    #         String: String
-    #       RequestTemplates:
-    #         String: String
-    #       Type: String
-    #       Uri: String
+# you can overwrite defaults here
+#defaults:
+#  stage: dev
+#  region: us-east-1
 
-    #     MethodResponses:
-    #       # ones for all the codes - 404, 200, validation errors...
-    #       - ResponseModels:
-    #           String: String
-    #         ResponseParameters:
-    #           String: Boolean
-    #         StatusCode: String
-    #     RequestModels: # The resources used for the response's content type.
-    #       String: String
-    #     RequestParameters: # Request parameters that API Gateway accepts.
-    #       String: Boolean
-    #     ResourceId: String
-    #     RestApiId: String
+# you can add packaging information here
+#package:
+#  include:
+#    - include-me.js
+#  exclude:
+#    - exclude-me.js
+#  artifact: my-service-code.zip
+
+functions:
+  contactUs:
+    handler: handler.contactUs
+
+#    you can add any of the following events
+#    events:
+#      - http:
+#          path: users/create
+#          method: get
+#      - s3: ${env.BUCKET}
+#      - schedule: rate(10 minutes)
+#      - sns: greeter-topic
+
+# you can add CloudFormation resource templates here
+#resources:
+#  Resources:
+#    NewResource:
+#      Type: AWS::S3::Bucket
+#      Properties:
+#        BucketName: my-new-bucket
+#  Outputs:
+#     NewOutput:
+#       Description: "Description for the output"
+#       Value: "Some output value"
