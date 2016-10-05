@@ -1,0 +1,84 @@
+@value black, white from "../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen from "../../../css/_breakpoints.css";
+
+.widthContainer {
+  max-width: maxWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.techSlice {
+  composes: dividerBlack from "../../../css/_divider.css";
+  color: white;
+  background-color: black;
+  padding: 30px 20px 70px 20px;
+  text-align: center;
+}
+
+.heading {
+  composes: widthContainer;
+  composes: fontL from "../../../css/typography/_fonts.css";
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projectsBlerb {
+  composes: widthContainer;
+  composes: fontSerif from "../../../css/typography/_fonts.css";
+  composes: fontS from "../../../css/typography/_fonts.css";
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.techList {
+  composes: widthContainer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.techListItem {
+  width: calc(100% / 2);
+  text-align: center;
+  display: flex;
+}
+
+.techItem {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.techLogo {
+  max-height: 70px;
+}
+
+.techName {
+  composes: fontBold from "../../../css/typography/_fonts.css";
+  margin: 20px 0px 40px 0px;
+}
+
+.moreBtn {
+  composes: primaryButton from "../../../css/_links.css";
+}
+
+@media mediumScreen {
+  .techSlice {
+    padding: 60px 20px 70px 20px;
+  }
+
+  .projectsBlerb {
+    composes: fontSerif from "../../../css/typography/_fonts.css";
+    composes: fontS from "../../../css/typography/_fonts.css";
+  }
+
+  .techListItem {
+    width: calc(100% / 3);
+  }
+}
+
+@media largeScreen {
+  .techListItem {
+    width: calc(100% / 6);
+  }
+}

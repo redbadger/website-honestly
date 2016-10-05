@@ -21,7 +21,8 @@
 
 .mediumScreenNav {
   list-style: none;
-  composes: boldXS from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: fontBold from "../../css/typography/_fonts.css";
   align-self: center;
   justify-content: flex-end;
   display: flex;
@@ -100,7 +101,8 @@
 
 .triggerLabel {
   align-self: center;
-  composes: boldXS from "../../css/typography/_fonts.css";
+  composes: fontBold from "../../css/typography/_fonts.css";
+  composes: foldXS from "../../css/typography/_fonts.css";
   border-bottom: 2px solid red;
   line-height: 1em;
   cursor: pointer;
