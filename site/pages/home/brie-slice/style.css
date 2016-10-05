@@ -23,7 +23,6 @@
 .featureBtn {
   line-height: 1;
   composes: primaryButton from "../../../css/_links.css";
-  /*display: block;*/
 }
 
 @media mediumScreen {

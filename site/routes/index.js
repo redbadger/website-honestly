@@ -34,6 +34,11 @@ export default function routes() {
       component: () => <L><HomePage /></L>,
     },
     {
+      key: 'servicesPage',
+      route: 'services',
+      component: () => <L><NotFoundPage /></L>,
+    },
+    {
       key: 'notFoundPage',
       route: '404',
       component: () => <L><NotFoundPage /></L>,
