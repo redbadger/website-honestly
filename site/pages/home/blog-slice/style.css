@@ -1,0 +1,42 @@
+@value white, black, red, linesOnWhite from "../../../css/_colors.css";
+
+.homepageBlogSlice {
+  padding: 50px 20px 100px 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.blogSliceTitle {
+  composes: fontL from "../../../css/typography/_fonts.css";
+}
+
+.blogLink {
+  composes: primaryButton from "../../../css/_links.css";
+}
+
+.blogLinkList {
+  margin: 20px 0 30px 0;
+  text-align: left;
+}
+
+.blogLinkList li {
+  padding: 20px 0;
+  border-top: 1px solid linesOnWhite;
+}
+
+.blogLinkList li:last-child {
+  border-bottom: 1px solid linesOnWhite;
+}
+
+.category {
+  composes: boldXS from "../../../css/typography/_fonts.css";
+  text-transform: uppercase;
+  color: red;
+}
+
+.link {
+  composes: fontL from "../../../css/typography/_fonts.css";
+  text-decoration: none;
+  color: black;
+}
