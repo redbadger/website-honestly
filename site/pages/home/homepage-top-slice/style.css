@@ -1,0 +1,57 @@
+@value white, black from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
+
+.homepageTopSlice {
+  padding: 50px 20px 100px 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.badgerSlogan {
+  composes: fontXL from "../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.sloganDescription {
+  composes: fontM from "../../../css/typography/_fonts.css";
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.010, 0.830, 0.560, 1.010);
+  animation-duration: 1.2s;
+}
+
+@media mediumScreen {
+  .homepageTopSlice {
+    text-align: left;
+    padding: 50px 100px 100px 120px;
+  }
+}
+
+@media largeScreen {
+  .homepageTopSlice {
+    text-align: center;
+    padding: 160px 0 230px 0;
+  }
+
+  .sliceContainer {
+    max-width: 830px;
+    display: inline-block;
+    text-align: left;
+  }
+}

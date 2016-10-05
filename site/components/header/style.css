@@ -68,6 +68,7 @@
   width: 150px;
   display: inline-block;
   text-align: left;
+  margin: 10px 0 0 20px;
 }
 
 .smallScreenNav li {
