@@ -48,11 +48,25 @@ function sendEmail(
 
 // Your first function handler
 module.exports.contactUs = (event, context, cb) => {
+  console.log('event:', event);
+  const message = event.message;
+  const contact = event.contact;
+
+  const messageLabel = 'This email was sent through the contact us form on red-badger.com: ';
+  const contactLabel = 'Contact details: ';
+
+  const formattedTxtMessage = `${messageLabel} \n\n ${message} \n\n ${contactLabel} \n\n ${contact}`;
+
+  const formattedHTMLMessage = `<p><strong>${messageLabel}</strong></p><p>
+    ${message}</p><p><strong>${contactLabel}</strong></p><p>${contact}</p>`;
+
+  const formattedSubjectLine = 'Message submitted through the contact us form';
+
   return sendEmail(
     'zoe.bryant@red-badger.com',
-    'html',
-    'txt',
-    'subject'
+    formattedHTMLMessage,
+    formattedTxtMessage,
+    formattedSubjectLine
   )
   .then(result => cb(null, result))
   .catch(err => cb(err));

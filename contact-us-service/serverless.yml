@@ -29,7 +29,6 @@ provider:
       #   - 'es:ESHttpPost'
       #   Resource: 'arn:aws:ses:eu-west-1:578418881509:identity/hello@red-badger.com'
 
-
 # you can overwrite defaults here
 #defaults:
 #  stage: dev
@@ -46,7 +45,16 @@ provider:
 functions:
   contactUs:
     handler: handler.contactUs
+    events:
+      - http:
+          path: contact-us
+          method: post
+          request:
+            template:
+              application/json: "{\"message\" : \"$input.path('$.message')\",\"contact\" : \"$input.path('$.contact')\"}"
 
+            # template:
+            #   application/json: '{ "message" : "$input.params(''message'')", "contact" : "$input.params(''contact'')", }'
 #    you can add any of the following events
 #    events:
 #      - http:

@@ -4,7 +4,7 @@
   "description": "Contact us service",
   "main": "handler.js",
   "scripts": {
-    "test": "sls deploy && sls invoke --function contactUs"
+    "test": "sls deploy && sls invoke --function contactUs -p event.json"
   },
   "author": "",
   "license": "ISC",
