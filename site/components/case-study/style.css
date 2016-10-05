@@ -1,4 +1,5 @@
 @value black, white, linesOnBlack from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_breakpoints.css";
 .test {
   color: white;
   text-align: center;
@@ -9,11 +10,13 @@
 }
 .caseStudyContainer {
   background-color: black;
-  padding: 0px 10px;
+  padding-bottom: 74px;
+  padding-top: 30px;
 }
 .figuresContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .figuresContainer div {
   padding: 50px;
@@ -28,7 +31,7 @@
   height: 80px;
 }
 .figuresContainer .caseLogo svg {
-  height: 20px;
+  height: 50px;
 }
 .caseText {
   color: white;
@@ -37,4 +40,43 @@
   padding: 30px;
   composes: fontXL from "../../css/typography/_fonts.css";
   font-weight: bold;
+}
+.button {
+  composes: primaryButton from "../../css/_links.css";
+  font-size: 24px;
+  padding: 15px 31px;
+}
+.caseCompany {
+  height: 50px;
+}
+.caseCompanies {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  flex-wrap: wrap;
+}
+@media largeScreen {
+  .figuresContainer div {
+    width: 37%;
+  }
+  .figuresContainer div:nth-child(odd){
+    border-right: 1px solid linesOnBlack;
+  }
+  .test {
+    font-size: 60px;
+  }
+  .caseText {
+    font-size: 40px;
+  }
+  .caseCompanies {
+    display: flex;
+    flex-direction: row;
+    border: none;
+  }
+  .figuresContainer .caseFigure svg {
+    height: 150px;
+  }
+  .figuresContainer .caseLogo svg {
+    height: 80px;
+  }
 }

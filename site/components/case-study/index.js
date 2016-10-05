@@ -30,21 +30,34 @@ const CaseStudy = () => (
         <InlineSVG src={fortnumSVG} className={styles.caseLogo} />
       </div>
       <div>
+        <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
+        <span className={styles.caseText}>Weeks to deliver a new online platform</span>
+        <InlineSVG src={camdenSVG} className={styles.caseLogo} />
+      </div>
+      <div>
         <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
-        <span className={styles.caseText}>Drop in customers pushing the 'need more help' button</span>
-        <InlineSVG src={skySVG} />
+        <span className={styles.caseText}>
+          Drop in customers pushing the 'need more help' button
+        </span>
+        <InlineSVG src={skySVG} className={styles.caseLogo} />
       </div>
       <div>
         <InlineSVG src={tescoFigureSVG} className={styles.caseFigure} />
-        <span className={styles.caseText}>Increase in number of online orders across 7 countries</span>
-        <InlineSVG src={tescoSVG} />
-      </div>
-      <div>
-        <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
-        <span className={styles.caseText}>Weeks to deliver a new online platform</span>
-        <InlineSVG src={camdenSVG} />
+        <span className={styles.caseText}>
+          Increase in number of online orders across 7 countries
+        </span>
+        <InlineSVG src={tescoSVG} className={styles.caseLogo} />
       </div>
     </div>
+      <div className={styles.caseCompanies}>
+        <InlineSVG className={styles.caseCompany} src={selfridgesSVG} />
+        <InlineSVG className={styles.caseCompany} src={cartrawlerSVG} />
+        <InlineSVG className={styles.caseCompany} src={financialTimesSVG} />
+        <InlineSVG className={styles.caseCompany} src={bbcSVG} />
+        <InlineSVG className={styles.caseCompany} src={bmwSVG} />
+        <InlineSVG className={styles.caseCompany} src={lloydsSVG} />
+      </div>
+      {/* <a className={styles.button}>See more of our work</a> */}
   </div>
 );
 
