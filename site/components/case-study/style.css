@@ -1,5 +1,6 @@
 @value black, white, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_breakpoints.css";
+
 .heading {
   composes: fontL from "../../css/typography/_fonts.css";
   max-width: 1000px;
@@ -8,17 +9,9 @@
   text-align: center;
   padding: 20px;
 }
-.buttonContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px;
-}
 .caseStudyContainer {
   background-color: black;
-  padding-bottom: 12px;
-  padding-right: 5%;
-  padding-left: 5%;
+  padding: 0px 5% 12px 5%;
   composes: dividerBlack from "../../css/_divider.css";
 }
 .figuresContainer {
@@ -38,7 +31,7 @@
 .figuresContainer .caseFigure svg {
   height: 80px;
 }
-.figuresContainer .caseLogo {
+.figuresContainer img {
   height: 50px;
 }
 .caseText {
@@ -48,11 +41,6 @@
   padding: 30px;
   composes: fontXL from "../../css/typography/_fonts.css";
   font-weight: bold;
-}
-.button {
-  composes: primaryButton from "../../css/_links.css";
-  font-size: 24px;
-  padding: 15px 31px;
 }
 .caseCompany {
   height: 50px;
@@ -74,6 +62,17 @@
   height: 40px;
   margin-bottom: 10px;
 }
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.button {
+  composes: primaryButton from "../../css/_links.css";
+  font-size: 24px;
+  padding: 15px 31px;
+}
+
 @media mediumScreen  {
   .heading {
     font-size: 40px;
@@ -81,7 +80,7 @@
   }
   .figuresContainer div {
     width: 49%;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px;
   }
   .figuresContainer div:nth-child(odd){
     border-right: 1px solid linesOnBlack;
@@ -104,6 +103,12 @@
     padding: 60px;
     padding-top: 50px;
   }
+  .figuresContainer .caseFigure svg {
+    height: 150px;
+  }
+  .figuresContainer img {
+    height: 80px;
+  }
   .caseText {
     font-size: 40px;
   }
@@ -111,17 +116,11 @@
     display: flex;
     flex-direction: row;
   }
-  .figuresContainer .caseFigure svg {
-    height: 150px;
-  }
-  .figuresContainer .caseLogo {
-    height: 80px;
-  }
   .caseCompanies img {
     margin: 0px 15px;
     height: 80px;
   }
   .buttonContainer {
-    padding: 60px 0px 70px 0px;
+    padding: 60px 0px;
   }
 }

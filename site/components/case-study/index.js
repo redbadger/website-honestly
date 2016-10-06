@@ -2,7 +2,7 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
-/* SVG logo imports */
+/* PNG logo imports */
 import bbcPNG from './PNG/bbc.png';
 import bmwPNG from './PNG/bmw.png';
 import camdenPNG from './PNG/camden.png';
@@ -27,35 +27,35 @@ const CaseStudy = () => (
       <div>
         <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
         <span className={styles.caseText}>Number of awards for the new online store</span>
-        <img alt="Example Alt Here" src={fortnumPNG} className={styles.caseLogo} />
+        <img alt="The logo of Fortnum & Masons" src={fortnumPNG} />
       </div>
       <div>
         <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
         <span className={styles.caseText}>Weeks to deliver a new online platform</span>
-        <img alt="Example Alt Here" src={camdenPNG} className={styles.caseLogo} />
+        <img alt="The logo of Camden Market" src={camdenPNG} />
       </div>
       <div>
         <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
         <span className={styles.caseText}>
           Drop in customers pushing the 'need more help' button
         </span>
-        <img alt="Example Alt Here" src={skyPNG} className={styles.caseLogo} />
+        <img alt="The logo of Sky" src={skyPNG} />
       </div>
       <div>
         <InlineSVG src={tescoFigureSVG} className={styles.caseFigure} />
         <span className={styles.caseText}>
           Increase in number of online orders across 7 countries
         </span>
-        <img alt="Example Alt Here" src={tescoPNG} className={styles.caseLogo} />
+        <img alt="The logo of tesco" src={tescoPNG} />
       </div>
     </div>
     <div className={styles.caseCompanies}>
-      <img alt="Example Alt Here" className={styles.selfridges} src={selfridgesPNG} />
-      <img alt="Example Alt Here" className={styles.financialTimes} src={financialTimesPNG} />
-      <img alt="Example Alt Here" className={styles.bbc} src={bbcPNG} />
-      <img alt="Example Alt Here" className={styles.bmw} src={bmwPNG} />
-      <img alt="Example Alt Here" className={styles.lloyds} src={lloydsPNG} />
-      <img alt="Example Alt Here" className={styles.cartrawler} src={cartrawlerPNG} />
+      <img alt="The logo of Selfridges" src={selfridgesPNG} />
+      <img alt="The logo of the Financial Times" src={financialTimesPNG} />
+      <img alt="The logo of the BBC" src={bbcPNG} />
+      <img alt="The logo of BMW" src={bmwPNG} />
+      <img alt="The logo of Lloyds Bank" src={lloydsPNG} />
+      <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
     </div>
     <div className={styles.buttonContainer}>
       <a className={styles.button}>See more of our work</a>
