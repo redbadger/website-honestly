@@ -1,0 +1,48 @@
+@value white, red, black from "../../css/_colors.css";
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  composes: fontL from "../../css/typography/_fonts.css";
+  padding: 30px 0px;
+  background-color: white;
+}
+
+.caseStudyContainer {
+  padding: 0px 20px 30px 20px;
+  background-color: white;
+}
+
+
+.caseStudyContainer img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.caseStudyCompany {
+  color: red;
+  composes: fontXS from "../../css/typography/_fonts.css";
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.caseStudyTitle {
+  color: black;
+  composes: fontL from "../../css/typography/_fonts.css";
+  margin-bottom: 15px;
+}
+
+.caseStudyDescription {
+  color: black;
+  composes: fontXS from "../../css/typography/_fonts.css";
+}
+
+.inverse {
+  background-color: black;
+  color: yellow;
+}
+.inverse .caseStudyTitle, .inverse .caseStudyDescription {
+  color: white;
+}
