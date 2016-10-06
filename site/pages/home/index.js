@@ -7,8 +7,8 @@ export default function HomePage() {
   return (
     <div>
       <HomepageTopSlice />
-      <Brie />
       <CaseStudy />
+      <Brie />
     </div>
   );
 }

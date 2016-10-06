@@ -22,7 +22,7 @@ import skyFigureSVG from './SVG/sky-figure.svg';
 
 const CaseStudy = () => (
   <div className={styles.caseStudyContainer}>
-    <h2 className={styles.test}>We solve complex problems and deliver real impact.</h2>
+    <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.figuresContainer}>
       <div>
         <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />

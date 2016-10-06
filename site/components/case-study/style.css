@@ -1,12 +1,12 @@
 @value black, white, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_breakpoints.css";
-.test {
+.heading {
+  composes: fontL from "../../css/typography/_fonts.css";
+  max-width: 1000px;
+  margin: 0px auto;
   color: white;
   text-align: center;
-  font-size: 24px;
-  padding: 30px;
-  composes: fontXL from "../../css/typography/_fonts.css";
-  font-weight: bold;
+  padding: 20px;
 }
 .buttonContainer {
   display: flex;
@@ -16,9 +16,10 @@
 }
 .caseStudyContainer {
   background-color: black;
-  padding-bottom: 74px;
+  padding-bottom: 12px;
   padding-right: 5%;
   padding-left: 5%;
+  composes: dividerBlack from "../../css/_divider.css";
 }
 .figuresContainer {
   display: flex;
@@ -71,9 +72,10 @@
 .caseCompanies img {
   margin: 0px 15px;
   height: 40px;
+  margin-bottom: 10px;
 }
 @media mediumScreen  {
-  .test {
+  .heading {
     font-size: 40px;
     padding: 40px;
   }
@@ -85,7 +87,7 @@
     border-right: 1px solid linesOnBlack;
   }
   .caseCompanies {
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -97,9 +99,10 @@
   }
 }
 @media largeScreen {
-  .test {
+  .heading {
     font-size: 60px;
     padding: 60px;
+    padding-top: 50px;
   }
   .caseText {
     font-size: 40px;
@@ -119,6 +122,6 @@
     height: 80px;
   }
   .buttonContainer {
-    padding: 30px;
+    padding: 60px 0px 70px 0px;
   }
 }
