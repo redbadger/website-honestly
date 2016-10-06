@@ -54,6 +54,7 @@
 }
 
 .techName {
+  composes: fontSerif from "../../../css/typography/_fonts.css";
   composes: fontBold from "../../../css/typography/_fonts.css";
   margin: 20px 0px 40px 0px;
 }

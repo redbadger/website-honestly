@@ -47,7 +47,7 @@ export default function TechSlice() {
         <TechListItem name="Elasticsearch" imgSrc={elasticsearchImg} />
       </ul>
 
-      <a className={styles.moreBtn} href="#TODO">
+      <a className={styles.moreBtn} href="/services/technology/">
         More about the tech
       </a>
     </section>
