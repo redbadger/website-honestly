@@ -4,9 +4,8 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
   const defaultEmail = {
     emailTo: ['hello@red-badger.com'],
     emailFrom: 'hello@red-badger.com',
-    htmlBody: '<p>Html Body</p>',
-    textBody: 'Text body \n',
-    subject: 'Just a string',
+    message: 'Hello, I want to work with you',
+    contact: 'test@test.com',
   };
 
   it('rejects if email missing', () => {
@@ -25,22 +24,16 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing emailFrom');
   });
 
-  it('rejects if htmlBody missing', () => {
+  it('rejects if message missing', () => {
     const email = Object.assign({}, defaultEmail);
-    delete email.htmlBody;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing htmlBody');
+    delete email.message;
+    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing message');
   });
 
-  it('rejects if textBody missing', () => {
+  it('rejects if contact missing', () => {
     const email = Object.assign({}, defaultEmail);
-    delete email.textBody;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing textBody');
-  });
-
-  it('rejects if subject missing', () => {
-    const email = Object.assign({}, defaultEmail);
-    delete email.subject;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing subject');
+    delete email.contact;
+    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing contact');
   });
 
   it('rejects if email sending fails', () => {
@@ -59,16 +52,16 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
       Message: {
         Body: {
           Html: {
-            Data: defaultEmail.htmlBody,
+            Data: `<p><strong>This email was sent through the contact us form on red-badger.com:</strong></p><p>${defaultEmail.message}</p><p><strong>Contact details:</strong></p><p>${defaultEmail.contact}</p>`,
             Charset: 'UTF-8',
           },
           Text: {
-            Data: defaultEmail.textBody,
+            Data: 'This email was sent through the contact us form on red-badger.com:\n\n Hello, I want to work with you\n\n Contact details:\n\n test@test.com',
             Charset: 'UTF-8',
           },
         },
         Subject: {
-          Data: defaultEmail.subject,
+          Data: 'Message submitted through the contact us form on red-badger.com',
           Charset: 'UTF-8',
         },
       },
