@@ -1,5 +1,5 @@
 @value red, white, black from "../../../css/_colors.css";
-@value mediumScreen from "../../../css/_breakpoints.css";
+@value mediumScreen, maxWidth from "../../../css/_breakpoints.css";
 
 .brieContainer {
   padding: 30px 20px 40px 20px;
@@ -10,7 +10,7 @@
 
 .heading {
   composes: fontL from "../../../css/typography/_fonts.css";
-  max-width: 1000px;
+  max-width: maxWidth;
   margin: 0px auto;
   color: black;
 }

@@ -1,24 +1,27 @@
 @value black, white, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../css/_breakpoints.css";
+@value mediumScreen, largeScreen, maxWidth from "../../css/_breakpoints.css";
 
 .heading {
   composes: fontL from "../../css/typography/_fonts.css";
-  max-width: 1000px;
+  max-width: maxWidth;
   margin: 0px auto;
   color: white;
   text-align: center;
   padding: 20px;
 }
+
 .caseStudyContainer {
+  composes: dividerBlack from "../../css/_divider.css";
   background-color: black;
   padding: 0px 5% 12px 5%;
-  composes: dividerBlack from "../../css/_divider.css";
 }
+
 .figuresContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .figuresContainer div {
   padding: 30px;
   width: 100%;
@@ -28,23 +31,22 @@
   justify-content: center;
   border-top: 1px solid linesOnBlack;
 }
+
 .figuresContainer .caseFigure svg {
   height: 80px;
 }
+
 .figuresContainer img {
   height: 50px;
 }
+
 .caseText {
+  composes: fontM from "../../css/typography/_fonts.css";
   color: white;
   text-align: center;
-  font-size: 24px;
   padding: 30px;
-  composes: fontXL from "../../css/typography/_fonts.css";
-  font-weight: bold;
 }
-.caseCompany {
-  height: 50px;
-}
+
 .caseCompanies {
   display: flex;
   flex-direction: row;
@@ -62,64 +64,75 @@
   height: 40px;
   margin-bottom: 10px;
 }
+
 .buttonContainer {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
+
 .button {
   composes: primaryButton from "../../css/_links.css";
-  font-size: 24px;
-  padding: 15px 31px;
 }
 
 @media mediumScreen  {
   .heading {
-    font-size: 40px;
+    composes: fontL from "../../css/typography/_fonts.css";
     padding: 40px;
   }
+
   .figuresContainer div {
     width: 49%;
     padding: 60px 0px;
   }
+
   .figuresContainer div:nth-child(odd){
     border-right: 1px solid linesOnBlack;
   }
+
   .caseCompanies {
     justify-content: space-between;
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .caseCompanies img:first-child {
     margin-left: 0px;
   }
+
   .caseCompanies img:last-child {
     margin-right: 0px;
   }
+
 }
 @media largeScreen {
   .heading {
-    font-size: 60px;
-    padding: 60px;
-    padding-top: 50px;
+    composes: fontXXL from "../../css/typography/_fonts.css";
+    padding: 50px 60px 60px 60px;
   }
+
   .figuresContainer .caseFigure svg {
     height: 150px;
   }
+
   .figuresContainer img {
     height: 80px;
   }
+
   .caseText {
-    font-size: 40px;
+    composes: fontL from "../../css/typography/_fonts.css";
   }
+
   .caseCompanies {
     display: flex;
     flex-direction: row;
   }
+
   .caseCompanies img {
     margin: 0px 15px;
     height: 80px;
   }
+
   .buttonContainer {
     padding: 60px 0px;
   }

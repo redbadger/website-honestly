@@ -21,28 +21,28 @@ import camdenFigureSVG from './SVG/camden-figure.svg';
 import skyFigureSVG from './SVG/sky-figure.svg';
 
 const CaseStudy = () => (
-  <div className={styles.caseStudyContainer}>
+  <section className={styles.caseStudyContainer}>
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.figuresContainer}>
       <div>
-        <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
+        <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} alt="Three" />
         <span className={styles.caseText}>Number of awards for the new online store</span>
         <img alt="The logo of Fortnum & Masons" src={fortnumPNG} />
       </div>
       <div>
-        <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
+        <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} alt="Ten" />
         <span className={styles.caseText}>Weeks to deliver a new online platform</span>
         <img alt="The logo of Camden Market" src={camdenPNG} />
       </div>
       <div>
-        <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
+        <InlineSVG src={skyFigureSVG} className={styles.caseFigure} alt="50%" />
         <span className={styles.caseText}>
           Drop in customers pushing the 'need more help' button
         </span>
         <img alt="The logo of Sky" src={skyPNG} />
       </div>
       <div>
-        <InlineSVG src={tescoFigureSVG} className={styles.caseFigure} />
+        <InlineSVG src={tescoFigureSVG} className={styles.caseFigure} alt="54%" />
         <span className={styles.caseText}>
           Increase in number of online orders across 7 countries
         </span>
@@ -60,7 +60,7 @@ const CaseStudy = () => (
     <div className={styles.buttonContainer}>
       <a className={styles.button} href="https://red-badger.com/our-work/">See more of our work</a>
     </div>
-  </div>
+  </section>
 );
 
 export default CaseStudy;
