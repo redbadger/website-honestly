@@ -2,10 +2,11 @@ import cssHook from 'css-modules-require-hook';
 import { hook as requireHook } from 'node-hook';
 import { jsdom } from 'jsdom';
 import { DOMParser } from 'xmldom';
-
-const chai = require('chai'); // eslint-disable-line import/no-extraneous-dependencies
+import chaiAsPromised from 'chai-as-promised';
+import chai from 'chai'; // eslint-disable-line import/no-extraneous-dependencies
 
 global.expect = chai.expect; // Register test tools globally
+chai.use(chaiAsPromised);
 
 // Polyfill CSS Modules
 cssHook({
