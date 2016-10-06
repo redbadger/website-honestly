@@ -151,5 +151,5 @@
   animation-duration: 0.7s;
   animation-delay: 1.1s;
   opacity: 0;
-  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
