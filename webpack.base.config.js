@@ -30,7 +30,6 @@ const baseConfig = {
         exclude: [/dist\//, /node_modules/],
         loader: 'file-loader',
         query: {
-          publicPath: '../',
           name: 'assets/[name]-[hash:base64:5].[ext]',
         },
       },
