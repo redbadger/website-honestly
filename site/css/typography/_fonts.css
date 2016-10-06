@@ -58,6 +58,14 @@
 
 @value mediumScreen, largeScreen from "../_breakpoints.css";
 
+.fontXXL {
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-size: 60px;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 800;
+}
+
 .fontXL {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-size: 40px;
