@@ -1,0 +1,59 @@
+@value white, black, red, linesOnWhite from "../../../../css/_colors.css";
+
+@value mediumScreen from "../../../../css/_breakpoints.css";
+
+.link {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  text-decoration: none;
+  color: black;
+  padding: 20px 0;
+  border-top: 1px solid linesOnWhite;
+  display: block;
+}
+
+.linkTitle {
+  display: inline;
+}
+
+.linkTitle p {
+  display: inline;
+}
+
+.linkTitle p:hover {
+  border-bottom: 2px solid red;
+}
+
+.linkEntry {
+  display: flex;
+}
+
+.linkAuthor {
+  composes: serifFontXS from "../../../../css/typography/_fonts.css";
+}
+
+.linkAuthorTitle {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  text-transform: uppercase;
+}
+
+.category {
+  composes: boldXS from "../../../../css/typography/_fonts.css";
+  text-transform: uppercase;
+  color: red;
+}
+
+@media mediumScreen {
+  .link {
+    padding: 20px 0 40px 0;
+  }
+
+  .linkTitle {
+    flex-basis: 600px;
+  }
+
+  .authorTitle {
+    align-self: flex-end;
+    margin-left: 200px;
+    width: 150px
+  }
+}
