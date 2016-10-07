@@ -32,7 +32,7 @@ export function publish(event, context, cb) {
   }
 }
 
-module.exports.contactUs = (event, context, cb) => {
+export function contactUs(event, context, cb) {
   const aws = require('aws-sdk'); // eslint-disable-line import/no-unresolved, global-require, import/no-extraneous-dependencies
   const validateAndSendEmail = require('./ses').validateAndSendEmail; // eslint-disable-line global-require
 
@@ -49,4 +49,4 @@ module.exports.contactUs = (event, context, cb) => {
   validateAndSendEmail(data, emailSender)
     .then(() => cb(null, 'success'))
     .catch(err => cb(err));
-};
+}
