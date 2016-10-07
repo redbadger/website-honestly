@@ -32,6 +32,7 @@
 }
 
 .linkAuthorTitle {
+  composes: fontSansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
   text-transform: uppercase;
 }
