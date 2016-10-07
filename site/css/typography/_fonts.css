@@ -94,14 +94,13 @@
 }
 
 .fontS {
-  font-size: 24px;
-  line-height: 1.1em;
+  font-size: 16px;
+  line-height: 1.2em;
   font-style: normal;
   font-weight: 800;
 }
 
 .fontXS {
-  font-family: 'ProximaNova-Light', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
 }
@@ -119,23 +118,29 @@
 }
 
 @media mediumScreen {
+  .fontS {
+    font-size: 24px;
+  }
+
   .fontL {
     font-size: 40px;
   }
+
   .fontXL {
     font-size: 60px;
   }
 }
 
 @media largeScreen {
+  .fontM {
+    font-size: 40px;
+  }
+
   .fontL {
     font-size: 60px;
   }
+
   .fontXL {
     font-size: 90px;
-  }
-
-  .fontM {
-    font-size: 40px;
   }
 }
