@@ -45,11 +45,14 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
       Message: {
         Body: {
           Html: {
-            Data: `<p><strong>This email was sent through the contact us form on red-badger.com:</strong></p><p>${defaultEmail.message}</p><p><strong>Contact details:</strong></p><p>${defaultEmail.contact}</p>`,
+            Data: '<p><strong>This email was sent through the contact us form on red-badger.com:'
+            + `</strong></p><p>${defaultEmail.message}</p><p><strong>Contact details:</strong></p>`
+            + `<p>${defaultEmail.contact}</p>`,
             Charset: 'UTF-8',
           },
           Text: {
-            Data: 'This email was sent through the contact us form on red-badger.com:\n\nHello, I want to work with you\n\nContact details:\n\ntest@test.com',
+            Data: 'This email was sent through the contact us form on red-badger.com:\n\n'
+            + 'Hello, I want to work with you\n\nContact details:\n\ntest@test.com',
             Charset: 'UTF-8',
           },
         },
