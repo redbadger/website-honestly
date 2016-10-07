@@ -1,17 +1,18 @@
 @value white, red, black from "../../css/_colors.css";
+@value mediumScreen, maxWidth from "../../css/_breakpoints.css";
 
 .headerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  composes: fontL from "../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
   padding: 30px 0px;
   background-color: white;
 }
 
 .caseStudyContainer {
-  padding: 0px 20px 30px 20px;
+  padding: 30px 20px 30px 20px;
   background-color: white;
 }
 
@@ -26,11 +27,16 @@
   composes: fontXS from "../../css/typography/_fonts.css";
   text-transform: uppercase;
   margin-bottom: 5px;
+  width: 100%;
 }
+.imageContainer {
+  font-size: 0;
+}
+
 
 .caseStudyTitle {
   color: black;
-  composes: fontL from "../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
   margin-bottom: 15px;
 }
 
@@ -42,7 +48,37 @@
 .inverse {
   background-color: black;
   color: yellow;
+  flex-direction: row-reverse;
 }
 .inverse .caseStudyTitle, .inverse .caseStudyDescription {
   color: white;
 }
+
+
+@media mediumScreen {
+  .caseStudyContainer {
+    display: flex;
+    padding: 70px 20px 80px 20px;
+  }
+  .camden {
+    margin-bottom: -80px;
+  }
+
+  .caseStudyTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10%;
+  }
+  .caseStudyContainer img {
+    margin-bottom: 0px;
+  }
+}
+/*
+@media largeScreen {
+.brie {
+max-width: 800px;
+}
+}
+ */
