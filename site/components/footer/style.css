@@ -13,7 +13,8 @@
 
 .nav {
   list-style: none;
-  composes: serifFontS from "../../css/typography/_fonts.css";
+  composes: fontSerif from "../../css/typography/_fonts.css";
+  composes: fontS from "../../css/typography/_fonts.css";
 }
 
 .nav li {
@@ -40,7 +41,8 @@
 }
 
 .social {
-  composes: serifFontS from "../../css/typography/_fonts.css";
+  composes: fontSerif from "../../css/typography/_fonts.css";
+  composes: fontS from "../../css/typography/_fonts.css";
 }
 
 .mailtoLink,
@@ -70,7 +72,8 @@
 }
 
 .address {
-  composes: boldXS from "../../css/typography/_fonts.css";
+  composes: fontBold from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
   display: flex;
 }
 
@@ -89,7 +92,8 @@
 }
 
 .disclaimer {
-  composes: boldXS from "../../css/typography/_fonts.css";
+  composes: fontBold from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
   padding-bottom: 0px;
 }
 
