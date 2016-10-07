@@ -3,7 +3,6 @@ import { validateAndSendEmail } from '.';
 describe('contact-us-service/email.validateAndSendEmail', () => {
   const defaultEmail = {
     emailTo: ['hello@red-badger.com'],
-    emailFrom: 'hello@red-badger.com',
     message: 'Hello, I want to work with you',
     contact: 'test@test.com',
   };
@@ -16,12 +15,6 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     const email = Object.assign({}, defaultEmail);
     delete email.emailTo;
     return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing emailTo');
-  });
-
-  it('rejects if emailFrom missing', () => {
-    const email = Object.assign({}, defaultEmail);
-    delete email.emailFrom;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing emailFrom');
   });
 
   it('rejects if message missing', () => {
@@ -47,7 +40,7 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
   it('constructs the correct email structure', done => {
     const emailConstruct = {
       Destination: {
-        ToAddresses: defaultEmail.emailTo,
+        ToAddresses: [defaultEmail.emailTo],
       },
       Message: {
         Body: {
@@ -65,7 +58,7 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
           Charset: 'UTF-8',
         },
       },
-      Source: defaultEmail.emailFrom,
+      Source: 'hello@red-badger.com',
     };
 
     const sendFunction = (emailData, cb) => {

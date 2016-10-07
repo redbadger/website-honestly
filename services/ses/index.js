@@ -5,7 +5,7 @@ function assertPresent(thing, message) {
 }
 
 function assertEmail(email) {
-  ['emailTo', 'emailFrom', 'message', 'contact']
+  ['emailTo', 'message', 'contact']
     .forEach(field => {
       assertPresent(email[field], `Missing ${field}`);
     });
@@ -16,13 +16,13 @@ function constructEmail(emailData) {
   const messageLabel = 'This email was sent through the contact us form on red-badger.com:';
   const contactLabel = 'Contact details:';
 
-  const formattedTxtMessage = `${messageLabel}\n\n ${emailData.message}\n\n ${contactLabel}\n\n ${emailData.contact}`;
-
   const formattedHTMLMessage = `<p><strong>${messageLabel}</strong></p><p>${emailData.message}</p><p><strong>${contactLabel}</strong></p><p>${emailData.contact}</p>`;
+
+  const formattedTxtMessage = `${messageLabel}\n\n ${emailData.message}\n\n ${contactLabel}\n\n ${emailData.contact}`;
 
   return {
     Destination: {
-      ToAddresses: emailData.emailTo,
+      ToAddresses: [emailData.emailTo],
     },
     Message: {
       Body: {
@@ -40,7 +40,7 @@ function constructEmail(emailData) {
         Charset: 'UTF-8',
       },
     },
-    Source: emailData.emailFrom,
+    Source: 'hello@red-badger.com',
   };
 }
 
