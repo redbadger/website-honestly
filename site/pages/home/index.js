@@ -12,8 +12,8 @@ export default function HomePage() {
       <TopSlice />
       <CaseStudy />
       <Brie />
-      <BlogSlice />
       <TechSlice />
+      <BlogSlice />
     </div>
   );
 }

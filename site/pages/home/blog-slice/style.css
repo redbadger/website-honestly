@@ -7,6 +7,7 @@
   text-align: center;
   background-color: white;
   color: black;
+  composes: dividerWhite from "../../../css/_divider.css";
 }
 
 .blogSliceTitle {
