@@ -49,7 +49,7 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
             Charset: 'UTF-8',
           },
           Text: {
-            Data: 'This email was sent through the contact us form on red-badger.com:\n\n Hello, I want to work with you\n\n Contact details:\n\n test@test.com',
+            Data: 'This email was sent through the contact us form on red-badger.com:\n\nHello, I want to work with you\n\nContact details:\n\ntest@test.com',
             Charset: 'UTF-8',
           },
         },

@@ -1,4 +1,3 @@
-
 function assertPresent(thing, message) {
   if (!thing) { throw new Error(message); }
   return thing;
@@ -16,9 +15,15 @@ function constructEmail(emailData) {
   const messageLabel = 'This email was sent through the contact us form on red-badger.com:';
   const contactLabel = 'Contact details:';
 
-  const formattedHTMLMessage = `<p><strong>${messageLabel}</strong></p><p>${emailData.message}</p><p><strong>${contactLabel}</strong></p><p>${emailData.contact}</p>`;
+  const formattedHTMLMessage = `<p><strong>${messageLabel}</strong></p><p>${emailData.message}</p>`
+    + `<p><strong>${contactLabel}</strong></p><p>${emailData.contact}</p>`;
 
-  const formattedTxtMessage = `${messageLabel}\n\n ${emailData.message}\n\n ${contactLabel}\n\n ${emailData.contact}`;
+  const formattedTxtMessage = [
+    messageLabel,
+    emailData.message,
+    contactLabel,
+    emailData.contact,
+  ].join('\n\n');
 
   return {
     Destination: {
@@ -44,7 +49,7 @@ function constructEmail(emailData) {
   };
 }
 
-function validateAndSendEmail(email, emailSender) {
+export function validateAndSendEmail(email, emailSender) {
   return new Promise(resolve => resolve())
     .then(() => assertPresent(email, 'Missing email'))
     .then(assertEmail)
@@ -54,7 +59,3 @@ function validateAndSendEmail(email, emailSender) {
       return true;
     }));
 }
-
-module.exports = {
-  validateAndSendEmail,
-};
