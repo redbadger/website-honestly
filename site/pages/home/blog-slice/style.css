@@ -1,6 +1,6 @@
 @value white, black, red, linesOnWhite from "../../../css/_colors.css";
 
-@value mediumScreen from "../../../css/_breakpoints.css";
+@value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
 
 .homepageBlogSlice {
   padding: 50px 20px 100px 20px;
@@ -27,8 +27,19 @@
   border-bottom: 1px solid linesOnWhite;
 }
 
+.sliceContainer {
+  max-width: 950px;
+  display: inline-block;
+}
+
 @media mediumScreen {
   .blogSliceTitle {
     text-align: left;
+  }
+}
+
+@media largeScreen {
+  .homepageBlogSlice {
+    padding: 50px 140px 100px;
   }
 }
