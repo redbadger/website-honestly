@@ -3,8 +3,31 @@
 a {
   text-decoration: none;
 }
+
+.redText {
+  color: red;
+}
+
+.header {
+  composes: fontXL from "../../css/typography/_fonts.css";
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.headingContainer {
+  display: flex;
+  composes: dividerWhite from "../../css/_divider.css";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 65px;
+}
+
 .headerContainer {
   display: flex;
+  composes: dividerWhite from "../../css/_divider.css";
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -129,5 +152,9 @@ a {
 
   .caseStudyTitleContainer {
     margin-bottom: 30px;
+  }
+  .headingContainer {
+    padding-top: 120px;
+    padding-bottom: 200px;
   }
 }

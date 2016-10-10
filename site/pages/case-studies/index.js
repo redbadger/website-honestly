@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
-
+import TechSlice from '../../slices/tech-slice';
 /* PNG and JPG  imports */
 import camdenJPG from './JPG/camden.jpg';
 import financialTimesJPG from './JPG/financialtimes.jpg';
@@ -12,6 +12,15 @@ const cx = classnames.bind(styles);
 export default function caseStudies() {
   return (
     <div>
+      <div className={styles.headingContainer}>
+        <h1 className={styles.header}>
+          Do the <span className={styles.redText}>right</span> thing.
+        </h1>
+        <h1 className={styles.header}>
+          Do the thing <span className={styles.redText}>right.</span>
+        </h1>
+      </div>
+      <TechSlice />
       <div className={styles.headerContainer}>
         <h1 className={styles.mainHeader}>The proof is in the pudding.</h1>
         <h2 className={styles.subHeader}>Read some of our case studies.</h2>
