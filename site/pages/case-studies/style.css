@@ -96,6 +96,7 @@ a {
 .caseStudyDescription {
   color: black;
   composes: fontXS from "../../css/typography/_fonts.css";
+  composes: fontSansSerif from "../../css/typography/_fonts.css";
 }
 
 .inverse {
@@ -112,11 +113,11 @@ a {
 @media mediumScreen {
   .caseStudyContainer {
     display: flex;
-    padding: 70px 20px 80px 20px;
+    padding: 60px 20px 60px 20px;
   }
 
   .camden {
-    margin-bottom: -80px;
+    margin-bottom: -60px;
   }
 
   .caseStudyTextContainer {
@@ -132,7 +133,7 @@ a {
   }
 
   .buttonContainer {
-    padding: 20px 0px 60px 0px;
+    padding: 20px 0px 70px 0px;
   }
 
   .subHeader {
@@ -154,7 +155,11 @@ a {
     margin-bottom: 30px;
   }
   .headingContainer {
-    padding-top: 120px;
-    padding-bottom: 200px;
+    padding-top: 140px;
+    padding-bottom: 210px;
+  }
+  .headerContainer {
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 }

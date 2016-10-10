@@ -17,7 +17,7 @@ export default function caseStudies() {
           Do the <span className={styles.redText}>right</span> thing.
         </h1>
         <h1 className={styles.header}>
-          Do the thing <span className={styles.redText}>right.</span>
+          Do the thing <span className={styles.redText}>right</span>.
         </h1>
       </div>
       <TechSlice />
@@ -31,9 +31,9 @@ export default function caseStudies() {
         </a>
         <div className={styles.caseStudyTextContainer}>
           <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Fortnum & Mason</a>
-          <span className={styles.caseStudyTitleContainer}>
+          <div className={styles.caseStudyTitleContainer}>
             <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Elegant e-commerce in eight months</a>
-          </span>
+          </div>
           <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
             Improving online and mobile conversion rates on the new fortnumandmason.com
             site with great customer experience and innovative tech.
@@ -46,9 +46,9 @@ export default function caseStudies() {
         </a>
         <div className={styles.caseStudyTextContainer}>
           <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/camden-market/">Camden Market</a>
-          <span className={styles.caseStudyTitleContainer}>
+          <div className={styles.caseStudyTitleContainer}>
             <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/camden-market/">Taking steps towards a digital future</a>
-          </span>
+          </div>
           <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/camden-market/">
             Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive
             more footfall from Londoners to the physical market by
@@ -62,9 +62,9 @@ export default function caseStudies() {
         </a>
         <div className={styles.caseStudyTextContainer}>
           <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/financial-times/">Financial Times</a>
-          <span className={styles.caseStudyTitleContainer}>
+          <div className={styles.caseStudyTitleContainer}>
             <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/financial-times/">Lasting change for a media giant</a>
-          </span>
+          </div>
           <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/financial-times/">
             Improving online and mobile conversion rates on the new fortnumandmason.com
             site with great customer experience and innovative tech.
