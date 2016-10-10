@@ -4,6 +4,7 @@
 
 .link {
   composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
   text-decoration: none;
   color: black;
   padding: 20px 0;
@@ -28,18 +29,19 @@
 }
 
 .linkAuthor {
-  composes: serifFontXS from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
 }
 
 .linkAuthorTitle {
-  composes: fontSansSerif from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
   text-transform: uppercase;
 }
 
 .category {
   composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: fontBold from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   text-transform: uppercase;
   color: red;
 }
