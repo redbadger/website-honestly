@@ -1,18 +1,12 @@
-@value white, red from "./_colors.css";
+@value white from "./_colors.css";
 /*
 ### Example
 
   .link {
-    composes: redUnderlineLink from "../../css/_links.css";
+    composes: .primaryButton from "../../css/_links.css";
   }
 
  */
-
-.redUnderlineLink {
-  border-bottom: 2px solid red;
-  color: white;
-  text-decoration: none;
-}
 
 .primaryButton {
   composes: boldSansSerif from "./typography/_fonts.css";

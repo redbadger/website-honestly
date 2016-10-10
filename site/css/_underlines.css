@@ -1,0 +1,57 @@
+@value red, black, white from "./_colors.css";
+/*
+### Example
+
+  .link {
+    composes: redUnderlineOnBlack from "../../css/_underlines.css";
+  }
+
+ */
+
+.redUnderlineOnBlack,
+.redUnderlineOnWhite {
+  line-height: 1;
+  text-decoration: none;
+  background-image: linear-gradient( to right, red 0%, red 100% );
+  background-repeat: repeat-x;
+  background-position: 0 96%;
+  background-size: 100% 2px;
+}
+
+.redUnderlineOnWhite {
+  color: black;
+  text-shadow:
+     0.09em   0       0 white,
+    -0.09em   0       0 white,
+     0        0.09em  0 white,
+     0       -0.09em  0 white,
+
+     0.06em   0.06em  0 white,
+    -0.06em   0.06em  0 white,
+     0.06em  -0.06em  0 white,
+    -0.06em  -0.06em  0 white,
+
+     0.13em   0.09em  0 white,
+    -0.13em   0.09em  0 white,
+     0.17em   0.09em  0 white,
+    -0.17em   0.09em  0 white;
+}
+
+.redUnderlineOnBlack {
+  color: white;
+  text-shadow:
+     0.09em   0       0 black,
+    -0.09em   0       0 black,
+     0        0.09em  0 black,
+     0       -0.09em  0 black,
+
+     0.06em   0.06em  0 black,
+    -0.06em   0.06em  0 black,
+     0.06em  -0.06em  0 black,
+    -0.06em  -0.06em  0 black,
+
+     0.13em   0.09em  0 black,
+    -0.13em   0.09em  0 black,
+     0.17em   0.09em  0 black,
+    -0.17em   0.09em  0 black;
+}

@@ -25,8 +25,8 @@
   margin: 0;
 }
 
-.nav li a {
-  border-bottom: 2px solid red;
+.navLink {
+  composes: redUnderlineOnBlack from "../../css/_underlines.css";
   color: white;
   text-decoration: none;
 }
@@ -87,7 +87,7 @@
 }
 
 .mapLink {
-  composes: redUnderlineLink from "../../css/_links.css";
+  composes: redUnderlineOnBlack from "../../css/_underlines.css";
   margin-top: 20px;
   display: inline-block;
 }

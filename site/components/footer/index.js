@@ -26,22 +26,22 @@ const Footer = () => (
         <nav role="navigation" className={cx('section', 'footerLinks')}>
           <ul className={styles.nav}>
             <li>
-              <a href="/">Home</a>
+              <a className={styles.navLink} href="/">Home</a>
             </li>
             <li>
-              <a href="/about-us/">About us</a>
+              <a className={styles.navLink} href="/about-us/">About us</a>
             </li>
             <li>
-              <a href="/about-us/join-us/">What we do</a>
+              <a className={styles.navLink} href="/about-us/join-us/">What we do</a>
             </li>
             <li>
-              <a href="/blog/">Blog</a>
+              <a className={styles.navLink} href="/blog/">Blog</a>
             </li>
             <li>
-              <a href="/about-us/events/">Events</a>
+              <a className={styles.navLink} href="/about-us/events/">Events</a>
             </li>
             <li>
-              <a href="/about-us/join-us/">Jobs</a>
+              <a className={styles.navLink} href="/about-us/join-us/">Jobs</a>
             </li>
           </ul>
         </nav>
