@@ -1,10 +1,11 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_breakpoints.css";
+
 .footer {
+  composes: dividerBlack from "../../css/_divider.css";
   color: white;
   padding: 0px 20px;
   background-color: black;
-  composes: dividerBlack from "../../css/_divider.css";
 }
 .footerContainer {
   max-width: 1440px;
@@ -12,9 +13,9 @@
 }
 
 .nav {
-  list-style: none;
-  composes: fontSerif from "../../css/typography/_fonts.css";
   composes: fontS from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  list-style: none;
 }
 
 .nav li {
@@ -41,8 +42,8 @@
 }
 
 .social {
-  composes: fontSerif from "../../css/typography/_fonts.css";
   composes: fontS from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
 }
 
 .mailtoLink,
@@ -72,7 +73,7 @@
 }
 
 .address {
-  composes: fontBold from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
   display: flex;
 }
@@ -92,7 +93,7 @@
 }
 
 .disclaimer {
-  composes: fontBold from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
   padding-bottom: 0px;
 }
