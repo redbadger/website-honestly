@@ -1,20 +1,11 @@
 @value white, red, black from "../../css/_colors.css";
 @value mediumScreen, largeScreen, maxWidth from "../../css/_breakpoints.css";
-a {
-  text-decoration: none;
-}
 
 .redText {
   color: red;
 }
 
-.header {
-  composes: fontXL from "../../css/typography/_fonts.css";
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-.headingContainer {
+.pageHeaderContainer {
   display: flex;
   composes: dividerWhite from "../../css/_divider.css";
   align-items: center;
@@ -23,6 +14,12 @@ a {
   background-color: white;
   padding-top: 30px;
   padding-bottom: 65px;
+}
+
+.pageHeader {
+  composes: fontXL from "../../css/typography/_fonts.css";
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 .headerContainer {
@@ -34,6 +31,7 @@ a {
   padding: 30px 0px;
   background-color: white;
 }
+
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
   text-align: center;
@@ -48,6 +46,10 @@ a {
 .caseStudyContainer {
   padding: 30px 20px 30px 20px;
   background-color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 .caseStudyContainer img {
@@ -66,17 +68,6 @@ a {
 
 .imageLink {
   font-size: 0;
-}
-
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0px 60px 0px;
-  background-color: white;
-}
-
-.button {
-  composes: primaryButton from "../../css/_links.css";
 }
 
 .caseStudyTitle {
@@ -109,15 +100,21 @@ a {
   color: white;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 60px 0px;
+  background-color: white;
+}
+
+.button {
+  composes: primaryButton from "../../css/_links.css";
+}
 
 @media mediumScreen {
   .caseStudyContainer {
     display: flex;
     padding: 60px 20px 60px 20px;
-  }
-
-  .camden {
-    margin-bottom: -60px;
   }
 
   .caseStudyTextContainer {
@@ -132,8 +129,8 @@ a {
     margin-bottom: 0px;
   }
 
-  .buttonContainer {
-    padding: 20px 0px 70px 0px;
+  .camden {
+    margin-bottom: -60px;
   }
 
   .subHeader {
@@ -145,6 +142,10 @@ a {
     display: flex;
     align-items: flex-end;
   }
+
+  .buttonContainer {
+    padding: 20px 0px 70px 0px;
+  }
 }
 @media largeScreen {
   .mainHeader {
@@ -154,7 +155,7 @@ a {
   .caseStudyTitleContainer {
     margin-bottom: 30px;
   }
-  .headingContainer {
+  .pageHeaderContainer {
     padding-top: 140px;
     padding-bottom: 210px;
   }
