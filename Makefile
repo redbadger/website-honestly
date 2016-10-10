@@ -1,6 +1,5 @@
 BIN=./bin
-PUBLISH_SERVICE=$(BIN)/publish-service.sh
-
+SERVICES=$(BIN)/services.sh
 NBIN=./node_modules/.bin
 WEBPACK=$(BIN)/webpack.sh
 MOCHA=$(NBIN)/mocha
@@ -46,26 +45,26 @@ test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
 
-build: dist/publish-service.zip dist/dev-static/index.js ## Compile project
+build: dist/services.zip dist/dev-static/index.js ## Compile project
 
 
 lint: ## Lint Javascript files
 	$(ESLINT) . --ext .js --ext .jsx --ignore-path .gitignore --cache
 
 
-publish-service-deploy: dist/publish-service.zip ## Upload the publish service to AWS Lambda
-	$(PUBLISH_SERVICE) deploy
+services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
+	$(SERVICES) deploy
 
 
 publish-service-invoke: ## Invoke the publish service
-	$(PUBLISH_SERVICE) invoke
+	$(SERVICES) invoke
 
 
-dist/publish-service.zip: dist/publish-service
-	cd dist/publish-service && zip -r ../publish-service.zip *
+dist/services.zip: dist/services
+	cd dist/services && zip -r ../services.zip *
 
 
-dist/publish-service:
+dist/services:
 	$(WEBPACK) webpack.lambda.config.js
 
 
@@ -86,7 +85,7 @@ dist/static-site:
 	clear \
 	build \
 	badger \
-	publish-service-deploy \
-	publish-service-invoke \
+	services-deploy \
+	services-invoke \
 	test \
 	test-watch

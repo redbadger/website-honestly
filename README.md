@@ -18,10 +18,10 @@ make dev               # Run the dev server
 make clean dev-compile # Compile the site locally
 
 # Deploy to dev lambda environment
-make clean publish-service-deploy
+make clean services-deploy
 
-# Invoke dev lambda
-make publish-service-invoke
+# Invoke dev lambdas
+make services-invoke-publish
 ```
 
 
@@ -38,7 +38,7 @@ vi .env
 # Deploy a AWS stack and lambda (if you want one!)
 # Provisioning from scratch takes quite a while.
 # Go make a cup of tea.
-make publish-service-deploy
+make services-deploy
 ```
 
 

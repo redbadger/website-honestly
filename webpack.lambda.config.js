@@ -5,7 +5,7 @@ const AssetsPlugin = require('assets-webpack-plugin');
 
 const lambdaConfig = webpackMerge(baseConfig, {
   entry: {
-    'publish-service': './publish-service/index.js',
+    services: './services/index.js',
   },
   output: {
     libraryTarget: 'commonjs',
@@ -26,8 +26,8 @@ const lambdaConfig = webpackMerge(baseConfig, {
     }),
     new AssetsPlugin({
       filename: 'assets-digest.json',
-      path: './dist/publish-service',
-      metadata: { bundleName: 'publish-service' },
+      path: './dist/services',
+      metadata: { bundleName: 'services' },
     }),
   ],
 });

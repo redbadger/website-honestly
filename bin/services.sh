@@ -7,12 +7,12 @@ fullpath() {
 
 source $(fullpath bin/load-env.sh)
 
-SERVICE_DIR=$(fullpath ./publish-service)
+SERVICE_DIR=$(fullpath ./services)
 NODE_BIN=$(fullpath ./node_modules/.bin)
 SERVERLESS=$NODE_BIN/serverless
 
 doDeploy() {
-  echo Deploying publish-service.
+  echo Deploying services.
   $SERVERLESS deploy
 }
 
