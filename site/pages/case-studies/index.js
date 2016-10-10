@@ -3,9 +3,9 @@ import classnames from 'classnames/bind';
 import styles from './style.css';
 
 /* PNG and JPG  imports */
-import camdenJPG from './PNG/camden.jpg';
-import financialTimesJPG from './PNG/financialtimes.jpg';
-import fortnumJPG from './PNG/fortnum.jpg';
+import camdenJPG from './JPG/camden.jpg';
+import financialTimesJPG from './JPG/financialtimes.jpg';
+import fortnumJPG from './JPG/fortnum.jpg';
 
 const cx = classnames.bind(styles);
 
