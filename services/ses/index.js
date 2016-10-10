@@ -6,7 +6,7 @@ function assertPresent(thing, message) {
 function assertEmail(email) {
   ['emailTo', 'message', 'contact']
     .forEach(field => {
-      assertPresent(email[field], `Missing ${field}`);
+      assertPresent(email[field], `[400] Missing ${field}`);
     });
   return email;
 }
@@ -51,7 +51,7 @@ function constructEmail(emailData) {
 
 export function validateAndSendEmail(email, emailSender) {
   return new Promise(resolve => resolve())
-    .then(() => assertPresent(email, 'Missing email'))
+    .then(() => assertPresent(email, '[400] Missing email'))
     .then(assertEmail)
     .then(constructEmail)
     .then(emailData => emailSender(emailData, error => {

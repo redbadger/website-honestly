@@ -8,25 +8,25 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
   };
 
   it('rejects if email missing', () => {
-    return expect(validateAndSendEmail()).to.be.rejectedWith(Error, 'Missing email');
+    return expect(validateAndSendEmail()).to.be.rejectedWith(Error, '[400] Missing email');
   });
 
   it('rejects if emailTo missing', () => {
     const email = Object.assign({}, defaultEmail);
     delete email.emailTo;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing emailTo');
+    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, '[400] Missing emailTo');
   });
 
   it('rejects if message missing', () => {
     const email = Object.assign({}, defaultEmail);
     delete email.message;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing message');
+    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, '[400] Missing message');
   });
 
   it('rejects if contact missing', () => {
     const email = Object.assign({}, defaultEmail);
     delete email.contact;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, 'Missing contact');
+    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, '[400] Missing contact');
   });
 
   it('rejects if email sending fails', () => {
