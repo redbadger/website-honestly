@@ -5,6 +5,7 @@ import CaseStudy from '../../components/case-study';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
+import NewsletterSlice from './newsletter-slice';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Brie />
       <TechSlice />
       <BlogSlice />
+      <NewsletterSlice />
     </div>
   );
 }

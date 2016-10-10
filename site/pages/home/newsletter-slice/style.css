@@ -1,4 +1,4 @@
-@value black, white from "../../../css/_colors.css";
+@value black, white, daveGreen from "../../../css/_colors.css";
 
 .newsletter {
   composes: dividerBlack from "../../../css/_divider.css";
@@ -8,13 +8,35 @@
   padding: 30px 20px;
 }
 
+.submitted {
+  composes: dividerGreen from "../../../css/_divider.css";
+  background-color: daveGreen;
+}
+
 .title {
   composes: fontM from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
   max-width: 400px;
+  margin: 0 auto;
 }
 
 .subTitle {
   composes: fontXS from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
+}
+
+.formLabel {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+}
+
+.formInput {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  padding: 12px 17px 16px;
+  border: none;
+}
+
+.submitButton {
+  composes: primaryButton from '../../../css/_links.css';
 }

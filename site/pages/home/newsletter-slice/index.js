@@ -1,24 +1,27 @@
-// import classnames from 'classnames/bind';
-import React from 'react';
-import styles from './style.css';
+import React, { Component } from 'react';
+import AfterSignUp from './afterSignUp';
+import BeforeSignUp from './beforeSignUp';
 
-// const cx = classnames.bind(styles);
+const NewsletterSlice = class extends Component {
+  constructor() {
+    super();
+    this.state = {
+      submitted: false,
+    };
+  }
 
-const NewsletterSlice = () => {
-  return (
-    <section className={styles.newsletter}>
-      <h1 className={styles.title}>
-        Sign up to BadgerNews to hear more from us
-      </h1>
-      <h2 className={styles.subTitle}>
-        (every 6 weeks or so)
-      </h2>
-      <p>
-        We work with you to deliver digital products that
-        make a difference to people.
-      </p>
-    </section>
-  );
+  onSubmit = e => {
+    e.preventDefault();
+    this.setState({
+      submitted: !this.state.submitted,
+    });
+  }
+
+  render() {
+    return !this.state.submitted
+      ? <AfterSignUp onSubmit={this.onSubmit} />
+      : <BeforeSignUp onSubmit={this.onSubmit} />;
+  }
 };
 
 export default NewsletterSlice;
