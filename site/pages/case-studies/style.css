@@ -1,21 +1,30 @@
 @value white, red, black from "../../css/_colors.css";
-@value mediumScreen, maxWidth from "../../css/_breakpoints.css";
-
+@value mediumScreen, largeScreen, maxWidth from "../../css/_breakpoints.css";
+a {
+  text-decoration: none;
+}
 .headerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  composes: fontM from "../../css/typography/_fonts.css";
   padding: 30px 0px;
   background-color: white;
+}
+.mainHeader {
+  composes: fontL from "../../css/typography/_fonts.css";
+  text-align: center;
+}
+
+.subHeader {
+  composes: fontS from "../../css/typography/_fonts.css";
+  composes: fontSerif from "../../css/typography/_fonts.css";
 }
 
 .caseStudyContainer {
   padding: 30px 20px 30px 20px;
   background-color: white;
 }
-
 
 .caseStudyContainer img {
   width: 100%;
@@ -25,19 +34,39 @@
 .caseStudyCompany {
   color: red;
   composes: fontXS from "../../css/typography/_fonts.css";
+  composes: fontBold from "../../css/typography/_fonts.css";
   text-transform: uppercase;
   margin-bottom: 5px;
   width: 100%;
 }
-.imageContainer {
+
+.imageLink {
   font-size: 0;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 60px 0px;
+  background-color: white;
+}
+
+.button {
+  composes: primaryButton from "../../css/_links.css";
+}
 
 .caseStudyTitle {
   color: black;
   composes: fontM from "../../css/typography/_fonts.css";
+  display: inline;
+}
+
+.caseStudyTitleContainer {
   margin-bottom: 15px;
+}
+
+.caseStudyTitle:hover {
+  border-bottom: 2px solid red;
 }
 
 .caseStudyDescription {
@@ -50,6 +79,7 @@
   color: yellow;
   flex-direction: row-reverse;
 }
+
 .inverse .caseStudyTitle, .inverse .caseStudyDescription {
   color: white;
 }
@@ -60,6 +90,7 @@
     display: flex;
     padding: 70px 20px 80px 20px;
   }
+
   .camden {
     margin-bottom: -80px;
   }
@@ -71,14 +102,21 @@
     flex-direction: column;
     padding: 0px 10%;
   }
+
   .caseStudyContainer img {
     margin-bottom: 0px;
   }
+
+  .buttonContainer {
+    padding: 20px 0px 60px 0px;
+  }
 }
-/*
 @media largeScreen {
-.brie {
-max-width: 800px;
+  .mainHeader {
+    margin-bottom: 30px;
+  }
+
+  .caseStudyTitleContainer {
+    margin-bottom: 30px;
+  }
 }
-}
- */

@@ -13,48 +13,57 @@ export default function caseStudies() {
   return (
     <div>
       <div className={styles.headerContainer}>
-        <h2>The proof is in the pudding.</h2>
-        <h2>Read some of our case studies.</h2>
+        <h1 className={styles.mainHeader}>The proof is in the pudding.</h1>
+        <h2 className={styles.subHeader}>Read some of our case studies.</h2>
       </div>
       <div className={styles.caseStudyContainer}>
-        <div className={styles.imageContainer}>
+        <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
           <img alt="The logo of Fortnum & Masons" src={fortnumJPG} />
-        </div>
+        </a>
         <div className={styles.caseStudyTextContainer}>
-          <h2 className={styles.caseStudyCompany}>Fortnum & Mason</h2>
-          <h2 className={styles.caseStudyTitle}>Elegant e-commerce in eight months</h2>
-          <h2 className={styles.caseStudyDescription}>
+          <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Fortnum & Mason</a>
+          <span className={styles.caseStudyTitleContainer}>
+            <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Elegant e-commerce in eight months</a>
+          </span>
+          <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
             Improving online and mobile conversion rates on the new fortnumandmason.com
             site with great customer experience and innovative tech.
-          </h2>
+          </a>
         </div>
       </div>
       <div className={cx('caseStudyContainer', 'inverse')}>
-        <div className={cx('imageContainer', 'camden')}>
+        <a className={cx('imageLink', 'camden')} href="https://red-badger.com/our-work/case-study/camden-market/">
           <img alt="The Camden Market App" src={camdenJPG} />
-        </div>
+        </a>
         <div className={styles.caseStudyTextContainer}>
-          <h2 className={styles.caseStudyCompany}>Camden Market</h2>
-          <h2 className={styles.caseStudyTitle}>Taking steps towards a digital future</h2>
-          <h2 className={styles.caseStudyDescription}>
+          <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/camden-market/">Camden Market</a>
+          <span className={styles.caseStudyTitleContainer}>
+            <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/camden-market/">Taking steps towards a digital future</a>
+          </span>
+          <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/camden-market/">
             Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive
             more footfall from Londoners to the physical market by
             showcasing the eclectic range of goods, food and events.
-          </h2>
+          </a>
         </div>
       </div>
       <div className={styles.caseStudyContainer}>
-        <div className={styles.imageContainer}>
+        <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/financial-times/">
           <img alt="Financial Times website on a tablet" src={financialTimesJPG} />
-        </div>
+        </a>
         <div className={styles.caseStudyTextContainer}>
-          <h2 className={styles.caseStudyCompany}>Financial Times</h2>
-          <h2 className={styles.caseStudyTitle}>Lasting change for a media giant</h2>
-          <h2 className={styles.caseStudyDescription}>
+          <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/financial-times/">Financial Times</a>
+          <span className={styles.caseStudyTitleContainer}>
+            <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/financial-times/">Lasting change for a media giant</a>
+          </span>
+          <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/financial-times/">
             Improving online and mobile conversion rates on the new fortnumandmason.com
             site with great customer experience and innovative tech.
-          </h2>
+          </a>
         </div>
+      </div>
+      <div className={styles.buttonContainer}>
+        <a className={styles.button} href="https://red-badger.com/our-work/">See more of our work</a>
       </div>
     </div>
   );
