@@ -1,10 +1,10 @@
-service: "website-honestly-${env:ENVIRONMENT_NAME}-publish-service"
+service: "website-honestly-${env:ENVIRONMENT_NAME}"
 
 custom:
   bucket_name: "${env:BUCKET_NAME}"
 
 package:
-  artifact: ../dist/publish-service.zip
+  artifact: ../dist/services.zip
 
 provider:
   name: aws
@@ -19,15 +19,27 @@ provider:
       Resource:
         - "arn:aws:s3:::${self:custom.bucket_name}"
         - "arn:aws:s3:::${self:custom.bucket_name}/*"
+    - Effect: 'Allow'
+      Action:
+        - 'SES:SendEmail'
+        - 'SES:SendRawEmail'
+      Resource: 'arn:aws:ses:eu-west-1:578418881509:identity/hello@red-badger.com'
 
 
 functions:
   publish:
     handler: index.publish
-#   events:
-#     - http:
-#         path: users/create
-#         method: get
+  contactUs:
+    handler: index.contactUs
+    events:
+      - http:
+          path: contact-us
+          method: post
+          cors: true
+          request:
+            template:
+              application/json: "{\"message\" : \"$input.path('$.message')\",\"contact\" : \"$input.path('$.contact')\"}"
+
 
 resources:
   Resources:
@@ -58,8 +70,6 @@ resources:
       Type: "AWS::CloudFront::Distribution"
       Properties:
         DistributionConfig:
-          # Aliases:
-          #   - "mysite.example.com"
           Origins:
             - DomainName: "${self:custom.bucket_name}.s3.amazonaws.com"
               Id: "S3Origin"
@@ -88,3 +98,30 @@ resources:
               QueryString: "false"
               Cookies:
                 Forward: "none"
+
+    ErrorSNSTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        Subscription:
+          - Endpoint: "${env:CONTACT_US_SUPPORT_EMAIL}"
+            Protocol: email
+
+    LambdaErrorAlarm:
+      Type: AWS::CloudWatch::Alarm
+      Properties:
+        AlarmActions:
+          - Ref: "ErrorSNSTopic"
+        AlarmDescription: "An error has been thrown by the lambda function responsible for sending contact form information to hello@red-badger.com."
+        AlarmName: ContactUsLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
+        ComparisonOperator: GreaterThanOrEqualToThreshold
+        Dimensions:
+          - Name: FunctionName
+            Value:
+              Ref: ContactUsLambdaFunction
+        EvaluationPeriods: 1
+        MetricName: Errors
+        Namespace: AWS/Lambda
+        Period: 60
+        Statistic: Sum
+        Threshold: 1
+        Unit: Count
