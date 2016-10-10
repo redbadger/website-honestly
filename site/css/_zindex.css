@@ -1,0 +1,12 @@
+/*
+  ## Example
+
+  @value zindexOverlay from "../../css/_zindex.css";
+
+  a {
+    z-index: zindexOverlay;
+  }
+
+*/
+
+@value zindexOverlay: 100;

@@ -2,6 +2,9 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
+const publicPath = `/${process.env.URL_BASENAME || ''}`;
+
+
 const baseConfig = {
   output: {
     path: 'dist',
@@ -30,8 +33,8 @@ const baseConfig = {
         exclude: [/dist\//, /node_modules/],
         loader: 'file-loader',
         query: {
-          publicPath: '../',
           name: 'assets/[name]-[hash:base64:5].[ext]',
+          publicPath,
         },
       },
       {

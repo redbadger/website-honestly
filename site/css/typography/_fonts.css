@@ -58,6 +58,14 @@
 
 @value mediumScreen, largeScreen from "../_breakpoints.css";
 
+.fontXXL {
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-size: 60px;
+  line-height: 1em;
+  font-style: normal;
+  font-weight: 800;
+}
+
 .fontXL {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-size: 40px;
@@ -74,51 +82,57 @@
   font-weight: 800;
 }
 
-.sansSerifFontS {
+.fontSansSerif {
   font-family: 'ProximaNova-Bold', sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 1.5em;
 }
 
-.serifFontS {
+.fontSerif {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
-  font-size: 24px;
-  line-height: 1.1em;
+}
+
+.fontS {
+  font-size: 16px;
+  line-height: 1.2em;
   font-style: normal;
   font-weight: 800;
 }
 
 .fontXS {
-  font-family: 'ProximaNova-Light', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
 }
 
-.boldXS {
+.fontBold {
   font-family: 'ProximaNova-Bold', sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
 }
 
 @media mediumScreen {
+  .fontS {
+    font-size: 24px;
+  }
+
   .fontL {
     font-size: 40px;
   }
+
   .fontXL {
     font-size: 60px;
   }
 }
 
 @media largeScreen {
+  .fontM {
+    font-size: 40px;
+  }
+
   .fontL {
     font-size: 60px;
   }
+
   .fontXL {
     font-size: 90px;
-  }
-
-  .fontM {
-    font-size: 40px;
   }
 }
