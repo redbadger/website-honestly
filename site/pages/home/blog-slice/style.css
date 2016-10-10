@@ -29,7 +29,7 @@
 }
 
 .sliceContainer {
-  max-width: 950px;
+  max-width: 1162px;
   display: inline-block;
 }
 
@@ -37,10 +37,14 @@
   .blogSliceTitle {
     text-align: left;
   }
+
+  .blogLinkList {
+    margin: 60px 0 60px 0;
+  }
 }
 
 @media largeScreen {
   .homepageBlogSlice {
-    padding: 50px 140px 100px;
+    padding: 50px 140px 70px;
   }
 }
