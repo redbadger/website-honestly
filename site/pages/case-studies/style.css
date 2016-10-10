@@ -19,6 +19,7 @@ a {
 .subHeader {
   composes: fontS from "../../css/typography/_fonts.css";
   composes: fontSerif from "../../css/typography/_fonts.css";
+  font-size: 16px;
 }
 
 .caseStudyContainer {
@@ -109,6 +110,16 @@ a {
 
   .buttonContainer {
     padding: 20px 0px 60px 0px;
+  }
+
+  .subHeader {
+    font-size: 24px;
+  }
+
+  .imageLink {
+    font-size: 0;
+    display: flex;
+    align-items: flex-end;
   }
 }
 @media largeScreen {
