@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import doPublish from './publish';
 import doContactUs from './contact_us';
 

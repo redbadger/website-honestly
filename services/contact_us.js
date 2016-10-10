@@ -1,13 +1,13 @@
+import aws from 'aws-sdk'; // eslint-disable-line import/no-unresolved, import/no-extraneous-dependencies
+import { validateAndSendEmail } from './ses';
+
 const contactUsEmailTo = process.env.CONTACT_US_EMAIL_TO;
 
 if (!contactUsEmailTo) {
   throw new Error('CONTACT_US_EMAIL_TO environment variable not set!');
 }
 
-export function doContactUs(event, cb) {
-  const aws = require('aws-sdk'); // eslint-disable-line import/no-unresolved, global-require, import/no-extraneous-dependencies
-  const validateAndSendEmail = require('./ses').validateAndSendEmail; // eslint-disable-line global-require
-
+export default function doContactUs(event, cb) {
   const data = {
     emailTo: contactUsEmailTo,
     message: event.message,
@@ -19,6 +19,6 @@ export function doContactUs(event, cb) {
   const emailSender = simpleEmail.sendEmail.bind(simpleEmail);
 
   validateAndSendEmail(data, emailSender)
-    .then(() => cb(null, 'success'))
+    .then(() => cb(null, { sent: true }))
     .catch(err => cb(err));
 }
