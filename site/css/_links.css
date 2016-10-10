@@ -15,12 +15,12 @@
 }
 
 .primaryButton {
+  composes: boldSansSerif from "./typography/_fonts.css";
+  composes: fontS from "./typography/_fonts.css";
   background-color: red;
   color: white;
   text-align: center;
   padding: 16px 20px 16px 20px;
-  composes: fontS from "./typography/_fonts.css";
-  composes: fontSansSerif from "./typography/_fonts.css";
   text-decoration: none;
   display: inline-block;
   line-height: 1;

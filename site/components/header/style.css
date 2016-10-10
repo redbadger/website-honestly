@@ -20,9 +20,9 @@
 }
 
 .mediumScreenNav {
-  list-style: none;
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
-  composes: fontBold from "../../css/typography/_fonts.css";
+  list-style: none;
   align-self: center;
   justify-content: flex-end;
   display: flex;
@@ -52,6 +52,7 @@
   left: 100%;
   z-index: zindexOverlay;
 
+  composes: serif from "../../css/typography/_fonts.css";
   composes: fontL from "../../css/typography/_fonts.css";
   font-weight: bold;
 
@@ -85,6 +86,7 @@
 
 .menuCloseButton {
   composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
   position: absolute;
   top: 10px;
   left: 10px;
@@ -101,8 +103,8 @@
 
 .triggerLabel {
   align-self: center;
-  composes: fontBold from "../../css/typography/_fonts.css";
-  composes: foldXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
   border-bottom: 2px solid red;
   line-height: 1em;
   cursor: pointer;
