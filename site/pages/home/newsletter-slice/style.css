@@ -1,0 +1,20 @@
+@value black, white from "../../../css/_colors.css";
+
+.newsletter {
+  composes: dividerBlack from "../../../css/_divider.css";
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.title {
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  max-width: 400px;
+}
+
+.subTitle {
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+}
