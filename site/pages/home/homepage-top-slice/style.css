@@ -10,11 +10,13 @@
 
 .badgerSlogan {
   composes: fontXL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
 .sloganDescription {
   composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
 }
 
 @keyframes fadeInUp {
