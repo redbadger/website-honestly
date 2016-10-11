@@ -19,10 +19,6 @@ clean: ## Remove compiled files
 	rm -rf dist
 
 
-install: ## Install deps
-	npm install
-
-
 check-deps: ## Check deps for updates
 	$(NPM_CHECK_UPDATES)
 

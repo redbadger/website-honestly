@@ -28,8 +28,10 @@ make services-invoke-publish
 ## Dev setup
 
 ```sh
+# Install the package manager
+npm install --global yarnpkg
 # Install the deps
-make install
+yarn
 
 # Set up the environment variables
 cp .env.example .env
