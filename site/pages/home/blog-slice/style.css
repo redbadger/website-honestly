@@ -31,6 +31,7 @@
 .sliceContainer {
   max-width: 1162px;
   display: inline-block;
+  width: 100%;
 }
 
 @media mediumScreen {
