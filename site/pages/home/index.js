@@ -5,6 +5,7 @@ import CaseStudy from '../../components/case-study';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
+import ContactUs from './contact-us-slice';
 import NewsletterAfterSignUp from './newsletter-slice/after-sign-up';
 import NewsletterBeforeSignUp from './newsletter-slice/before-sign-up';
 
@@ -32,6 +33,7 @@ export default class HomePage extends Component {
         <TechSlice />
         <h1>{ this.props.data.contactUsURL }</h1>
         <BlogSlice />
+        <ContactUs />
         {
           this.state.newsletterSubmitted
             ? <NewsletterAfterSignUp onSubmit={this.onSubmit} />

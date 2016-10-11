@@ -14,9 +14,10 @@
 @value black: #212121;
 
 /* Secondary Colour Palette */
-@value daveGreen: #22D69B; /* green */
-@value stuBlue: #00D5EC; /* blue */
-@value cainYellow: #FFD811; /* yellow */
+@value daveGreen: #22D69B;
+@value stuBlue: #00D5EC;
+@value cainYellow: #FFD811;
+@value cainYellowFaded: #fede3f;
 
 /* Lines and shades */
 @value linesOnBlack: #565656;
