@@ -11,10 +11,12 @@ const ContactUs = () => (
 
     <form className={styles.contactUsForm} action="/hello" method="post">
       <label className={styles.formLabel} htmlFor="message">Message:</label>
-      <textarea rows="6" className={styles.inputBox} name="message">
-        Hi Cain,
-        I was wondering…
-      </textarea>
+      <textarea
+        rows="6"
+        className={styles.inputBox}
+        name="message"
+        defaultValue={ 'Hi Cain,\nI was wondering…' }
+      />
       <label className={styles.formLabel} htmlFor="contact">Your email or phone:</label>
       <input className={styles.inputBox} name="contact" type="text" />
       <button type="submit" className={styles.submitBtn}>Submit</button>
