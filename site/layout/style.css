@@ -1,4 +1,5 @@
 @import "reset-css/reset.css";
+@value white from "../css/_colors.css";
 
 * {
   box-sizing: border-box;
@@ -6,4 +7,5 @@
 
 body {
   overflow-x: hidden;
+  background-color: white;
 }

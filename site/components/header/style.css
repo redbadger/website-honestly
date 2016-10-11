@@ -14,9 +14,8 @@
   justify-content: flex-end;
 }
 
-.logo {
-  min-width: 150px;
-  height: 29px;
+.logo svg {
+  height: 23px;
 }
 
 .mediumScreenNav {
@@ -88,7 +87,7 @@
   composes: fontXS from "../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 10px;
   color: white;
   text-decoration: none;
@@ -117,8 +116,30 @@
 }
 
 .trigger:checked + .overlay {
-  left: 40px;
+  left: 44px;
   right: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -160px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.010, 0.830, 0.560, 1.010);
+  animation-duration: 0.7s;
+  animation-delay: 1.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 @media mediumScreen {
@@ -130,7 +151,7 @@
     display: flex;
   }
 
-  .logo {
-    min-width: 187px;
+  .logo svg {
+    height: 30px;
   }
 }
