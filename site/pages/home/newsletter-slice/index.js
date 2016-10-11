@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AfterSignUp from './afterSignUp';
-import BeforeSignUp from './beforeSignUp';
+import AfterSignUp from './after-sign-up';
+import BeforeSignUp from './before-sign-up';
 
 const NewsletterSlice = class extends Component {
   constructor() {
@@ -18,7 +18,7 @@ const NewsletterSlice = class extends Component {
   }
 
   render() {
-    return !this.state.submitted
+    return this.state.submitted
       ? <AfterSignUp onSubmit={this.onSubmit} />
       : <BeforeSignUp onSubmit={this.onSubmit} />;
   }
