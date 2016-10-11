@@ -153,7 +153,6 @@
 @media largeScreen {
   .footer {
     display: flex;
-    justify-content: center;
   }
   .footerLinks {
     flex-grow: 2;
@@ -170,7 +169,7 @@
 
   .footerSections {
     display: flex;
-    width: 60%;
+    width: 85%;
   }
 
   .disclaimer {
