@@ -96,6 +96,6 @@
 
 @media largeScreen {
   .techListItem {
-    width: calc(100% / 6);
+    width: calc(98% / 6);
   }
 }

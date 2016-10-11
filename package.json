@@ -51,7 +51,8 @@
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.2",
     "webpack-merge": "^0.14.1",
-    "xmldom": "^0.1.22"
+    "xmldom": "^0.1.22",
+    "babel-plugin-transform-object-assign": "^6.8.0"
   },
   "repository": {
     "type": "git",
