@@ -1,10 +1,27 @@
 ### Motivation
-[Related story links?](ticket, design)
+
+- [Related story](http://...)
+
+TODO: write a motivation.
 
 ### Test plan
-- Click x in all supported browsers and y should happen
 
-### Pre-flight checklist
+- TODO: Write a test plan.
+
+### Pre-merge checklist
+
 - [ ] Unit tests
-- [ ] Has been design reviewed
-- [ ] Add a gif - `![gif](gif.gif)`
+- [ ] Reviews
+  - [ ] Code review
+  - [ ] Design review
+- [ ] Manual testing
+  - [ ] Latest Chrome
+  - [ ] Latest Firefox
+  - [ ] IE11
+  - [ ] Edge
+  - [ ] Latest Safari
+  - [ ] iPhone 6
+  - [ ] Google Nexus 5
+  - [ ] Samsung S6
+  - [ ] iPad (5th gen)
+- [ ] Tester approved
