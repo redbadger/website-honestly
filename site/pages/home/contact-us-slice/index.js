@@ -15,7 +15,7 @@ const ContactUs = () => (
         rows="6"
         className={styles.inputBox}
         name="message"
-        defaultValue={ 'Hi Cain,\nI was wondering…' }
+        defaultValue={'Hi Cain,\nI was wondering…'}
       />
       <label className={styles.formLabel} htmlFor="contact">Your email or phone:</label>
       <input className={styles.inputBox} name="contact" type="text" />
