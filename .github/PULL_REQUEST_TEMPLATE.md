@@ -15,13 +15,11 @@ TODO: write a motivation.
   - [ ] Code review
   - [ ] Design review
 - [ ] Manual testing
-  - [ ] Latest Chrome
-  - [ ] Latest Firefox
-  - [ ] IE11
-  - [ ] Edge
-  - [ ] Latest Safari
-  - [ ] iPhone 6
-  - [ ] Google Nexus 5
-  - [ ] Samsung S6
-  - [ ] iPad (5th gen)
+  - [ ] Windows 7 IE 11
+  - [ ] Windows 10 Edge
+  - [ ] Mac OS El Capitan Safari
+  - [ ] Mac OS El Capitan Chrome
+  - [ ] Mac OS El Capitan Firefox
+  - [ ] iOS 9 Safari
+  - [ ] Android 6 Chrome
 - [ ] Tester approved
