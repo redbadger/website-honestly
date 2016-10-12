@@ -13,7 +13,7 @@
   flex-direction: column;
   background-color: white;
   padding-top: 30px;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
 }
 
 .pageHeader {
@@ -96,7 +96,6 @@ a {
 
 .inverse {
   background-color: black;
-  color: yellow;
   flex-direction: row-reverse;
 }
 
@@ -118,7 +117,7 @@ a {
 @media mediumScreen {
   .caseStudyContainer {
     display: flex;
-    padding: 60px 20px 60px 20px;
+    padding: 60px;
   }
 
   .caseStudyTextContainer {
@@ -126,7 +125,7 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 0px 10%;
-    flex:1 ;
+    flex:1;
   }
 
   .caseStudyContainer img {
@@ -142,7 +141,6 @@ a {
   }
 
   .imageLink {
-    font-size: 0;
     display: flex;
     flex:1;
     align-items: flex-end;

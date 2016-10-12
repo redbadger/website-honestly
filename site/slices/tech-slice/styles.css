@@ -18,7 +18,8 @@
 .heading {
   composes: widthContainer;
   composes: serif from "../../css/typography/_fonts.css";
-  composes: fontL from "../../css/typography/_fonts.css";  text-align: center;
+  composes: fontL from "../../css/typography/_fonts.css";
+  text-align: center;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -74,7 +75,7 @@
   }
 
   .projectsBlerb {
-    composes: fontSerif from "../../css/typography/_fonts.css";
+    composes: serif from "../../css/typography/_fonts.css";
     composes: fontS from "../../css/typography/_fonts.css";
     margin-bottom: 90px;
   }

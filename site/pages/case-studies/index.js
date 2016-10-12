@@ -3,10 +3,10 @@ import classnames from 'classnames/bind';
 import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
 
-/* PNG and JPG  imports */
-import camdenJPG from './JPG/camden.jpg';
-import financialTimesJPG from './JPG/financialtimes.jpg';
-import fortnumJPG from './JPG/fortnum.jpg';
+/* PNG and Jpg  imports */
+import camdenJpg from './JPG/camden.jpg';
+import financialTimesJpg from './JPG/financialtimes.jpg';
+import fortnumJpg from './JPG/fortnum.jpg';
 
 const cx = classnames.bind(styles);
 
@@ -28,7 +28,7 @@ export default function caseStudies() {
       </div>
       <div className={styles.caseStudyContainer}>
         <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
-          <img alt="The logo of Fortnum & Masons" src={fortnumJPG} />
+          <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
         </a>
         <div className={styles.caseStudyTextContainer}>
           <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Fortnum & Mason</a>
@@ -43,7 +43,7 @@ export default function caseStudies() {
       </div>
       <div className={cx('caseStudyContainer', 'inverse')}>
         <a className={cx('imageLink', 'camden')} href="https://red-badger.com/our-work/case-study/camden-market/">
-          <img alt="The Camden Market App" src={camdenJPG} />
+          <img alt="The Camden Market App" src={camdenJpg} />
         </a>
         <div className={styles.caseStudyTextContainer}>
           <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/camden-market/">Camden Market</a>
@@ -59,7 +59,7 @@ export default function caseStudies() {
       </div>
       <div className={styles.caseStudyContainer}>
         <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/financial-times/">
-          <img alt="Financial Times website on a tablet" src={financialTimesJPG} />
+          <img alt="Financial Times website on a tablet" src={financialTimesJpg} />
         </a>
         <div className={styles.caseStudyTextContainer}>
           <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/financial-times/">Financial Times</a>
