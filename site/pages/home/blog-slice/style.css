@@ -1,7 +1,7 @@
 @value white, black, red, linesOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
 
-.homepageBlogSlice {
+.blogSlice {
   padding: 30px 20px 40px 20px;
   text-align: center;
   background-color: white;
@@ -44,7 +44,7 @@
 }
 
 @media largeScreen {
-  .homepageBlogSlice {
+  .blogSlice {
     padding: 50px 140px 70px;
   }
 }
