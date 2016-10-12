@@ -18,7 +18,3 @@ deployment:
     branch: /.*/
     commands:
       - ./bin/ci-deploy.sh create-commit-site
-  staging:
-    branch: master
-    commands:
-      - ./bin/ci-deploy.sh master-to-staging
