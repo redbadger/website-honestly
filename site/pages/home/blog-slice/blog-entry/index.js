@@ -34,11 +34,11 @@ const BlogEntry = ({
 };
 
 BlogEntry.propTypes = {
-  category: PropTypes.string,
-  title: PropTypes.string,
-  url: PropTypes.string,
-  authorName: PropTypes.string,
-  authorTitle: PropTypes.string,
+  category: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  authorName: PropTypes.string.isRequired,
+  authorTitle: PropTypes.string.isRequired,
 };
 
 export default BlogEntry;
