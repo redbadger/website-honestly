@@ -1,14 +1,11 @@
 import React from 'react';
-import classnames from 'classnames/bind';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 import logoSVG from './rb-logo-placeholder.svg';
 
-const cx = classnames.bind(styles);
-
 const Header = () => {
   return (
-    <header className={cx('header', 'fadeInDown')} role="banner">
+    <header className={styles.header} role="banner">
       <a href="/" title="Home" className={styles.logo}>
         <InlineSVG src={logoSVG} />
       </a>

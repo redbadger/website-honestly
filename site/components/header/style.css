@@ -120,28 +120,6 @@
   right: 0;
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -160px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInDown {
-  animation-name: fadeInDown;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(0.010, 0.830, 0.560, 1.010);
-  animation-duration: 0.7s;
-  animation-delay: 1.1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
 @media mediumScreen {
   .triggerContainer {
     display: none;
