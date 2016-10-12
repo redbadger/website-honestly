@@ -18,8 +18,9 @@
 
 .pageHeader {
   composes: fontXL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
   text-align: center;
-  margin-bottom: 0px;
+  margin: 0px 30px;
 }
 
 .headerContainer {
@@ -34,12 +35,13 @@
 
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
   text-align: center;
 }
 
 .subHeader {
   composes: fontS from "../../css/typography/_fonts.css";
-  composes: fontSerif from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
   font-size: 16px;
 }
 
@@ -60,7 +62,8 @@ a {
 .caseStudyCompany {
   color: red;
   composes: fontXS from "../../css/typography/_fonts.css";
-  composes: fontBold from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 5px;
   width: 100%;
@@ -73,6 +76,7 @@ a {
 .caseStudyTitle {
   color: black;
   composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
   display: inline;
 }
 
@@ -87,7 +91,7 @@ a {
 .caseStudyDescription {
   color: black;
   composes: fontXS from "../../css/typography/_fonts.css";
-  composes: fontSansSerif from "../../css/typography/_fonts.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
 }
 
 .inverse {
@@ -119,10 +123,10 @@ a {
 
   .caseStudyTextContainer {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 0px 10%;
+    flex:1 ;
   }
 
   .caseStudyContainer img {
@@ -140,6 +144,7 @@ a {
   .imageLink {
     font-size: 0;
     display: flex;
+    flex:1;
     align-items: flex-end;
   }
 
