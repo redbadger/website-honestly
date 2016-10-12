@@ -15,7 +15,7 @@
   background-color: red;
 }
 
-.dividerBlack, .dividerWhite, .dividerGreen, .dividerYellow {
+.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen {
   composes: divider;
 }
 
@@ -27,10 +27,10 @@
   background-color: white;
 }
 
-.dividerGreen:before {
-  background-color: daveGreen;
-}
-
 .dividerYellow:before {
   background-color: cainYellow;
+}
+
+.dividerGreen:before {
+  background-color: daveGreen;
 }

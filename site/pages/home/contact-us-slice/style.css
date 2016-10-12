@@ -8,8 +8,14 @@
   text-align: center;
 }
 
+.successContainer {
+  /*composes: dividerYellow from "../../../css/_divider.css";*/
+  /*background-color: cainYellow;*/
+}
+
 .heading {
   composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
   max-width: maxWidth;
   margin: 0px auto 40px auto;
   color: black;
@@ -19,7 +25,7 @@
   display: block;
   text-align: left;
   composes: fontS from "../../../css/typography/_fonts.css";
-  composes: fontSansSerif from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
   margin: 0px 12px 5px 12px;
 }
 
@@ -29,7 +35,7 @@
   max-width: 100%;
   margin-bottom: 20px;
   composes: fontS from "../../../css/typography/_fonts.css";
-  composes: fontSansSerif from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
 
   padding: 12px;
   background: cainYellowFaded;
@@ -39,7 +45,7 @@
 
 .submitBtn {
   composes: fontS from "../../../css/typography/_fonts.css";
-  composes: fontSansSerif from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
   color: white;
   text-align: center;
   padding: 16px 20px 16px 20px;
