@@ -24,9 +24,24 @@ createCommitSite() {
   echo Done!
 }
 
+masterToStaging() {
+  echo Deploying current master to staging
+  source bin/load-env.sh
+  make clean
+  make build
+  echo Copying assets to S3
+  aws s3 sync ./dist/assets s3://$BUCKET_NAME/assets
+  make services-deploy
+  make publish-service-invoke
+  echo Done!
+}
+
 case "$1" in
   create-commit-site)
     createCommitSite
+    ;;
+  master-to-staging)
+    masterToStaging
     ;;
   *)
     echo "Eh? Unknown command '$1'"
