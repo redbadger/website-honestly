@@ -2,9 +2,9 @@ import React from 'react';
 
 import TopSlice from './homepage-top-slice';
 import Brie from './brie-slice';
+import BlogSlice from './blog-slice';
 import CaseStudy from '../../components/case-study';
 import TechSlice from './tech-slice';
-import Link from '../../components/link';
 
 export default function HomePage() {
   return (
@@ -13,9 +13,7 @@ export default function HomePage() {
       <CaseStudy />
       <Brie />
       <TechSlice />
-
-      <h1>Thing!</h1>
-      <Link to="notFoundPage">Go somewhere?</Link>
+      <BlogSlice />
     </div>
   );
 }

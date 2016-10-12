@@ -1,0 +1,50 @@
+@value white, black, red, linesOnWhite from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
+
+.blogSlice {
+  padding: 30px 20px 40px 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  composes: dividerWhite from "../../../css/_divider.css";
+}
+
+.blogSliceTitle {
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+}
+
+.blogLink {
+  composes: primaryButton from "../../../css/_links.css";
+}
+
+.blogLinkList {
+  margin: 30px 0;
+  text-align: left;
+}
+
+.blogLinkList li:last-child {
+  border-bottom: 1px solid linesOnWhite;
+}
+
+.sliceContainer {
+  max-width: 1162px;
+  display: inline-block;
+  width: 100%;
+}
+
+@media mediumScreen {
+  .blogSliceTitle {
+    text-align: left;
+  }
+
+  .blogLinkList {
+    margin: 60px 0;
+  }
+}
+
+@media largeScreen {
+  .blogSlice {
+    padding: 50px 140px 70px;
+  }
+}
