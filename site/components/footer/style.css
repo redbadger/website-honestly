@@ -8,7 +8,7 @@
   background-color: black;
 }
 .footerContainer {
-  max-width: 1440px;
+  max-width: maxWidth;
 }
 
 .nav {
