@@ -1,4 +1,5 @@
 @value black, white, daveGreen from "../../../css/_colors.css";
+@value mediumScreen from "../../../css/_breakpoints.css";
 
 .newsletter {
   composes: dividerBlack from "../../../css/_divider.css";
@@ -11,23 +12,31 @@
 .submitted {
   composes: dividerGreen from "../../../css/_divider.css";
   background-color: daveGreen;
+  color: black;
 }
 
 .title {
   composes: fontM from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .subTitle {
   composes: fontXS from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
+  margin-bottom: 40px;
+}
+
+.form {
+  text-align: left;
 }
 
 .formLabel {
   composes: fontS from '../../../css/typography/_fonts.css';
   composes: sansSerif from '../../../css/typography/_fonts.css';
+  display: block;
+  margin-bottom: 5px;
 }
 
 .formInput {
@@ -35,8 +44,34 @@
   composes: sansSerif from '../../../css/typography/_fonts.css';
   padding: 12px 17px 16px;
   border: none;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .submitButton {
   composes: primaryButton from '../../../css/_links.css';
+  margin: 0 auto 10px;
+  display: block;
+}
+
+@media mediumScreen {
+  .form {
+    text-align: center;
+  }
+
+  .formLabel {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .formInput {
+    width: 400px;
+  }
+
+  .submitButton {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    padding-bottom: 1px;
+  }
 }

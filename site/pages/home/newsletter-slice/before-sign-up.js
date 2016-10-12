@@ -6,13 +6,13 @@ const BeforeSignUp = props => (
     <h1 className={styles.title}>
       Sign up to BadgerNews to hear more from us
     </h1>
-    <h2 className={styles.subTitle}>
+    <p className={styles.subTitle}>
       (every 6 weeks or so)
-    </h2>
-    <form>
+    </p>
+    <form className={styles.form}>
       <label htmlFor="email" className={styles.formLabel}>Email</label>
       <input id="email" type="text" placeholder="example@email.com" className={styles.formInput} />
-      <button className={styles.submitButton} onClick={props.onSubmit}>Submit</button>
+      <button className={styles.submitButton} onClick={props.onSubmit}>Sign up</button>
     </form>
   </section>
 );

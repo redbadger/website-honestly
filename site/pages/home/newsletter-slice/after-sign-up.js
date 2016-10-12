@@ -12,7 +12,7 @@ const AfterSignUp = props => (
     <h2 className={styles.subTitle}>
       Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
     </h2>
-    <form>
+    <form className={styles.form}>
       <div>
         <label htmlFor="name" className={styles.formLabel}>Full name</label>
         <input id="name" type="text" placeholder="John Smith" className={styles.formInput} />
