@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './style.css';
 import BlogEntry from './blog-entry';
 
-const homepageBlogSlice = () => {
+const blogSlice = () => {
   return (
-    <section className={styles.homepageBlogSlice}>
+    <section className={styles.blogSlice}>
       <div className={styles.sliceContainer}>
         <h2 className={styles.blogSliceTitle} >We’re opinionated and curious.</h2>
         <ul className={styles.blogLinkList} >
@@ -41,4 +41,4 @@ const homepageBlogSlice = () => {
   );
 };
 
-export default homepageBlogSlice;
+export default blogSlice;

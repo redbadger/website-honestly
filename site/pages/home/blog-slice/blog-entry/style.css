@@ -1,5 +1,4 @@
 @value white, black, red, linesOnWhite from "../../../../css/_colors.css";
-
 @value mediumScreen from "../../../../css/_breakpoints.css";
 
 .link {
