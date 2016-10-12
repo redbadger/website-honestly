@@ -8,8 +8,7 @@
   background-color: black;
 }
 .footerContainer {
-  max-width: 1440px;
-  position: relative;
+  max-width: maxWidth;
 }
 
 .nav {
@@ -66,6 +65,7 @@
 .socialLinks li {
   margin-right: 23px;
   margin-bottom: 5px;
+  width: 22px;
 }
 
 .socialIcon svg {
@@ -95,6 +95,9 @@
 .disclaimer {
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
+}
+
+.disclaimerParagraph {
   padding-bottom: 0px;
 }
 
@@ -121,8 +124,10 @@
   .footerMap {
     position: absolute;
     width: 824px;
+    height: 400px;
     right: 0;
     display: block;
+    overflow: hidden;
   }
   .badgerIcon {
     margin-bottom: 16px;
@@ -148,7 +153,6 @@
 @media largeScreen {
   .footer {
     display: flex;
-    justify-content: center;
   }
   .footerLinks {
     flex-grow: 2;
@@ -165,7 +169,7 @@
 
   .footerSections {
     display: flex;
-    width: 60%;
+    width: 85%;
   }
 
   .disclaimer {
@@ -173,16 +177,17 @@
     padding-bottom: 20px;
   }
 
-  .disclaimer p {
+  .disclaimerParagraph {
     padding: 0 20px;
     display: inline-block;
     position: relative;
   }
-  .disclaimer p:first-child {
+  .disclaimerParagraph:first-child {
     padding: 0px 20px 0px 0px;
   }
-  .disclaimer p:last-child {
+  .cookieWarning {
     padding: 0px;
+    display: block;
   }
   .afterDivider:after {
     content: ' ';
