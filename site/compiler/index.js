@@ -1,12 +1,12 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import Navigation from 'navigation';
-import makeRoutes from '../routes';
+import makeRoutes, { fullPath } from '../routes';
 import { registerStateNavigator } from '../../site/components/link';
 import layoutTemplate from '../index.ejs';
 import assetsDigest from './assets-digest'; // eslint-disable-line import/no-unresolved
 
-const cssPath = assetsDigest[assetsDigest.metadata.bundleName].css;
+const cssPath = '/' + fullPath(assetsDigest[assetsDigest.metadata.bundleName].css);
 
 export function compileRoutes(siteRoutes) {
   const stateNavigator = new Navigation.StateNavigator(
