@@ -24,8 +24,9 @@ createCommitSite() {
   echo Done!
 }
 
-masterToStaging() {
-  echo Deploying current master to staging
+deployMaster() {
+  export ENVIRONMENT_NAME=$1
+  echo Deploying current master to $1
   source bin/load-env.sh
   make clean
   make build
@@ -41,7 +42,10 @@ case "$1" in
     createCommitSite
     ;;
   master-to-staging)
-    masterToStaging
+    deployMaster staging
+    ;;
+  master-to-production)
+    deployMaster live
     ;;
   *)
     echo "Eh? Unknown command '$1'"
