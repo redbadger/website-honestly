@@ -4,21 +4,25 @@ import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 
-const routePrefix = process.env.URL_BASENAME || '';
+
+export function fullPath(route) {
+  const routePrefix = process.env.URL_BASENAME || '';
+  return `${routePrefix}${route}`;
+}
 
 function routeFilePath(path) {
   switch (path) {
     case '':
-      return `${routePrefix}index.html`;
+      return `${fullPath(path)}index.html`;
 
     default:
-      return `${routePrefix}${path}/index.html`;
+      return `${fullPath(path)}/index.html`;
   }
 }
 
 function prefixRoutes(rs) {
   return rs.map(route => {
-    const fullRoute = `${routePrefix}${route.route}`;
+    const fullRoute = fullPath(route.route);
     return Object.assign({}, route, {
       route: fullRoute,
       filePath: routeFilePath(route.route),
