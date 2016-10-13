@@ -1,6 +1,12 @@
-import assetsDigest from './assets-digest';
+import assetsDigest from './client-digest';
 import { fullPath } from '../routes';
 
-const cssName = assetsDigest.metadata.bundleName;
+function filePath(path) {
+  return '/' + fullPath(path);
+}
 
-export const cssPath = '/' + fullPath(assetsDigest[cssName].css);
+const bundleName = assetsDigest.metadata.bundleName;
+const assets = assetsDigest[bundleName];
+
+export const cssPath = filePath(assets.css);
+export const jsPath = filePath(assets.js);

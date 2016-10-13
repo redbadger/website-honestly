@@ -4,7 +4,7 @@ import Navigation from 'navigation';
 import makeRoutes from '../routes';
 import { registerStateNavigator } from '../../site/components/link';
 import layoutTemplate from '../index.ejs';
-import { cssPath } from './asset-paths';
+import { cssPath, jsPath } from './asset-paths';
 
 export function compileRoutes(siteRoutes) {
   const stateNavigator = new Navigation.StateNavigator(
@@ -16,7 +16,7 @@ export function compileRoutes(siteRoutes) {
     const Component = route.component;
     const path = route.filePath;
     const bodyContent = renderToString(<Component />);
-    const body = layoutTemplate({ bodyContent, cssPath });
+    const body = layoutTemplate({ bodyContent, cssPath, jsPath });
     return { body, path };
   });
 }
