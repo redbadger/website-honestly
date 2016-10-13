@@ -9,8 +9,7 @@ const element = document.querySelector('.js-app');
 const data = {};
 const routes = makeRoutes(data);
 const stateNavigator = new Navigation.StateNavigator(
-  routes,
-  new Navigation.HTML5HistoryManager()
+  routes
 );
 registerStateNavigator(stateNavigator);
 

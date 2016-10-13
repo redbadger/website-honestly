@@ -2,8 +2,8 @@ import React from 'react';
 
 import TopSlice from './homepage-top-slice';
 import CaseStudy from '../../components/case-study';
-import TechSlice from './tech-slice';
 import Brie from './brie-slice';
+import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
 
 export default function HomePage() {

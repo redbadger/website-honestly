@@ -3,6 +3,7 @@ import React from 'react';
 import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
+import CaseStudies from '../pages/case-studies';
 
 
 export function fullPath(route) {
@@ -41,6 +42,11 @@ export default function routes() {
       key: 'notFoundPage',
       route: '404',
       component: () => <L><NotFoundPage /></L>,
+    },
+    {
+      key: 'caseStudiesPage',
+      route: 'case-studies',
+      component: () => <L><CaseStudies /></L>,
     },
   ]);
 }
