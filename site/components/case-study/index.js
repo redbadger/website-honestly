@@ -25,21 +25,39 @@ const CaseStudy = () => (
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.figuresContainer}>
       <div>
-        <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} alt="Three" />
-        <span className={styles.caseText}>Number of awards for the new online store</span>
-        <img alt="The logo of Fortnum & Masons" src={fortnumPNG} />
+        <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
+          <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} alt="Three" />
+        </a>
+        <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" className={styles.caseText}>
+          <span>Number of awards for the new online store</span>
+        </a>
+        <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
+          <img alt="The logo of Fortnum & Masons" src={fortnumPNG} />
+        </a>
       </div>
       <div>
-        <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} alt="Ten" />
-        <span className={styles.caseText}>Weeks to deliver a new online platform</span>
-        <img alt="The logo of Camden Market" src={camdenPNG} />
+        <a href="https://red-badger.com/our-work/case-study/camden-market/">
+          <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} alt="Ten" />
+        </a>
+        <a href="https://red-badger.com/our-work/case-study/camden-market/" className={styles.caseText}>
+          <span>Weeks to deliver a new online platform</span>
+        </a>
+        <a href="https://red-badger.com/our-work/case-study/camden-market/">
+          <img alt="The logo of Camden Market" src={camdenPNG} />
+        </a>
       </div>
       <div>
-        <InlineSVG src={skyFigureSVG} className={styles.caseFigure} alt="50%" />
-        <span className={styles.caseText}>
-          Drop in customers pushing the 'need more help' button
-        </span>
-        <img alt="The logo of Sky" src={skyPNG} />
+        <a href="https://red-badger.com/our-work/case-study/sky-cms/">
+          <InlineSVG src={skyFigureSVG} className={styles.caseFigure} alt="50%" />
+        </a>
+        <a href="https://red-badger.com/our-work/case-study/sky-cms/" className={styles.caseText}>
+          <span>
+            Drop in customers pushing the 'need more help' button
+          </span>
+        </a>
+        <a href="https://red-badger.com/our-work/case-study/sky-cms/">
+          <img alt="The logo of Sky" src={skyPNG} />
+        </a>
       </div>
       <div>
         <InlineSVG src={tescoFigureSVG} className={styles.caseFigure} alt="54%" />
