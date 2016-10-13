@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 
@@ -62,6 +63,9 @@ const baseConfig = {
       'assets/styles-[contenthash:base64:5].css',
       { allChunks: true }
     ),
+    new CopyWebpackPlugin([
+      { from: 'assets/favicons', to: 'assets/favicons' },
+    ]),
   ],
 };
 

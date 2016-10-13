@@ -6,7 +6,7 @@ machine:
 
 dependencies:
   override:
-    - npm i -g yarnpkg
+    - npm i -g yarn
     - yarn
 
 test:
