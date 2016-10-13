@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import aws from 'aws-sdk'; // eslint-disable-line import/no-unresolved, import/no-extraneous-dependencies
 import { validateAndSendEmail } from './ses';
 
@@ -19,6 +20,9 @@ export default function doContactUs(event, cb) {
   const emailSender = simpleEmail.sendEmail.bind(simpleEmail);
 
   validateAndSendEmail(data, emailSender)
-    .then(() => cb(null, { sent: true }))
-    .catch(err => cb(err));
+    .then(result => cb(null, result))
+    .catch(err => {
+      console.error(err);
+      cb(err);
+    });
 }
