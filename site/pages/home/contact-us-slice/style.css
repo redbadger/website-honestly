@@ -13,10 +13,17 @@
   /*background-color: cainYellow;*/
 }
 
+.contactUsForm, .heading {
+  max-width: maxWidth;
+}
+
+.contactUsForm {
+  margin: 0px auto;
+}
+
 .heading {
   composes: fontL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
-  max-width: maxWidth;
   margin: 0px auto 40px auto;
   color: black;
 }
@@ -44,14 +51,6 @@
 }
 
 .submitBtn {
-  composes: fontS from "../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../css/typography/_fonts.css";
-  color: white;
-  text-align: center;
-  padding: 16px 20px 16px 20px;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1;
+  composes: primaryButton from "../../../css/_links.css";
   background-color: black;
-  border: 0px;
 }

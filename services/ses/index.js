@@ -1,10 +1,13 @@
 function filterInternalErrors(error) {
+  console.log('filterInternalErrors error>', error);
   if (error.isValidationError) {
+    console.log('filterInternalErrors isValidationError');
     return {
       success: false,
       error: error.message,
     };
   }
+  console.log('filterInternalErrors is not a ValidationError');
   throw error;
 }
 
@@ -64,16 +67,25 @@ function constructEmail(emailData) {
 }
 
 function makePromiseEmailSender(emailSender) {
+  console.log('in makePromiseEmailSender');
   return emailData => emailSender(emailData, error => {
-    if (error) { throw error; }
+    if (error) {
+      console.log('makePromiseEmailSender> error', error);
+      throw error;
+    }
+    console.log('makePromiseEmailSender no error');
     return {
       success: true,
     };
   });
 }
 
+function newPromise() {
+  return new Promise(resolve => resolve());
+}
+
 export function validateAndSendEmail(email, emailSender) {
-  return new Promise(resolve => resolve())
+  return newPromise()
     .then(() => assertPresent(email, 'Missing email'))
     .then(assertEmail)
     .then(constructEmail)
