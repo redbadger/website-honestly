@@ -1,5 +1,5 @@
-import classnames from 'classnames/bind';
 import InlineSVG from 'svg-inline-react';
+import classnames from 'classnames/bind';
 import React from 'react';
 import styles from './style.css';
 
@@ -35,7 +35,7 @@ const Footer = () => (
               <a href="https://red-badger.com/about-us/join-us/">What we do</a>
             </li>
             <li>
-              <a href="https://red-badger.com/blog/">Blog</a>
+              <a href="http://red-badger.com/blog/">Blog</a>
             </li>
             <li>
               <a href="https://red-badger.com/about-us/events/">Events</a>

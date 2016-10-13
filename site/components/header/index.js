@@ -33,7 +33,7 @@ const Header = () => {
               <li><a href="/">Home</a></li>
               <li><a href="https://red-badger.com/about-us/">About us</a></li>
               <li><a href="https://red-badger.com/services/">Services</a></li>
-              <li><a href="https://red-badger.com/blog/">Blog</a></li>
+              <li><a href="http://red-badger.com/blog/">Blog</a></li>
               <li><a href="https://red-badger.com/about-us/events/">Events</a></li>
               <li><a href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
               <li><a href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
