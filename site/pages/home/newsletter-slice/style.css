@@ -59,6 +59,10 @@
   background-color: black;
 }
 
+.link {
+  composes: primaryButton from '../../../css/_links.css';
+}
+
 @media mediumScreen {
   .title {
     margin: 20px auto;
