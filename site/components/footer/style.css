@@ -21,6 +21,7 @@
   composes: serif from "../../css/typography/_fonts.css";
   font-size: linkSize;
   list-style: none;
+  line-height: 1.2em;
 }
 
 .nav li {

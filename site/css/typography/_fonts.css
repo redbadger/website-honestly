@@ -117,6 +117,10 @@
     font-size: 60px;
   }
 
+  .fontS {
+    font-size: 24px;
+  }
+
   .fontM {
     font-size: 40px;
     line-height: 1.1em;
