@@ -89,8 +89,7 @@
   }
 
   .moreBtn {
-    composes: primaryButton from "../../../css/_links.css";
-    margin: 60px 0 0 0;
+    margin: 60px;
     composes: primaryButton from "../../css/_links.css";
   }
 }
