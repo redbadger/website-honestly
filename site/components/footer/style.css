@@ -13,7 +13,8 @@
 }
 
 .footerContainer {
-  max-width: maxWidth;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .nav {
@@ -175,7 +176,7 @@
 
   .footerSections {
     display: flex;
-    width: 85%;
+    width: 55%;
   }
 
   .disclaimer {
@@ -207,5 +208,6 @@
   }
   .footerEndContainer {
     display: flex;
+    justify-content: space-between;
   }
 }

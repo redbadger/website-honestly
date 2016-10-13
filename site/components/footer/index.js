@@ -29,19 +29,19 @@ const Footer = () => (
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about-us/">About us</a>
+              <a href="https://red-badger.com/about-us/">About us</a>
             </li>
             <li>
-              <a href="/about-us/join-us/">What we do</a>
+              <a href="https://red-badger.com/about-us/join-us/">What we do</a>
             </li>
             <li>
-              <a href="/blog/">Blog</a>
+              <a href="https://red-badger.com/blog/">Blog</a>
             </li>
             <li>
-              <a href="/about-us/events/">Events</a>
+              <a href="https://red-badger.com/about-us/events/">Events</a>
             </li>
             <li>
-              <a href="/about-us/join-us/">Jobs</a>
+              <a href="https://red-badger.com/about-us/join-us/">Jobs</a>
             </li>
           </ul>
         </nav>
@@ -149,8 +149,12 @@ const Footer = () => (
       </div>
       <div className={styles.footerEndContainer}>
         <div className={cx('section', 'disclaimer', 'noBorder')}>
-          <p className={cx('afterDivider', 'disclaimerParagraph')}>&copy; Red Badger Consultancy Ltd 2016</p>
-          <p className={cx('afterDivider', 'disclaimerParagraph')}>Registered number 345 678 912 UK</p>
+          <p className={cx('afterDivider', 'disclaimerParagraph')}>
+            &copy; Red Badger Consultancy Ltd 2016
+          </p>
+          <p className={cx('afterDivider', 'disclaimerParagraph')}>
+            Registered number 345 678 912 UK
+          </p>
           <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
           <p className={styles.cookieWarning}>
             We use cookies on our website. For more information, view our privacy policy.
