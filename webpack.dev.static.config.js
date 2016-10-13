@@ -12,7 +12,30 @@ const devStaticConfig = webpackMerge(baseConfig, {
   },
   target: 'node',
   externals: [
-    './assets-digest',
+    './client-digest',
+  ],
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        unused: true,
+        dead_code: true,
+        warnings: false,
+        drop_debugger: true,
+      },
+    }),
+  ],
+});
+
+const clientConfig = webpackMerge(baseConfig, {
+  entry: {
+    client: './client/index.js',
+  },
+  output: {
+    filename: 'assets/index-[hash:5].js',
+  },
+  target: 'web',
+  externals: [
+    './client-digest',
   ],
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
@@ -24,11 +47,11 @@ const devStaticConfig = webpackMerge(baseConfig, {
       },
     }),
     new AssetsPlugin({
-      filename: 'assets-digest.json',
+      filename: 'client-digest.json',
       path: './dist/dev-static',
-      metadata: { bundleName: 'dev-static' },
+      metadata: { bundleName: 'client' },
     }),
   ],
 });
 
-module.exports = devStaticConfig;
+module.exports = [devStaticConfig, clientConfig];

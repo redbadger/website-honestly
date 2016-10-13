@@ -12,5 +12,6 @@
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
     </div>
+    <% if (typeof jsPath !== 'undefined') { %><script type="text/javascript" src="<%= jsPath %>"></script><% } %>
   </body>
 </html>
