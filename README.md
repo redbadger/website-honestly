@@ -8,6 +8,7 @@ Red Badger Website Episode 6: Return of the Jedi.
 * [Usage](#usage)
 * [Dev setup](#dev-setup)
 * [Technical Overview](#technical-overview)
+* [Environment Variables](https://github.com/redbadger/website-honestly/blob/master/docs/environment-variables.md)
 
 
 ## Usage
