@@ -1,12 +1,26 @@
+function filterInternalErrors(error) {
+  if (error.isValidationError) {
+    return {
+      success: false,
+      error: error.message,
+    };
+  }
+  throw error;
+}
+
 function assertPresent(thing, message) {
-  if (!thing) { throw new Error(message); }
+  if (!thing) {
+    const error = new Error(message);
+    error.isValidationError = true;
+    throw error;
+  }
   return thing;
 }
 
 function assertEmail(email) {
   ['emailTo', 'message', 'contact']
     .forEach(field => {
-      assertPresent(email[field], `[400] Missing ${field}`);
+      assertPresent(email[field], `Missing ${field}`);
     });
   return email;
 }
@@ -49,13 +63,20 @@ function constructEmail(emailData) {
   };
 }
 
+function makePromiseEmailSender(emailSender) {
+  return emailData => emailSender(emailData, error => {
+    if (error) { throw error; }
+    return {
+      success: true,
+    };
+  });
+}
+
 export function validateAndSendEmail(email, emailSender) {
   return new Promise(resolve => resolve())
-    .then(() => assertPresent(email, '[400] Missing email'))
+    .then(() => assertPresent(email, 'Missing email'))
     .then(assertEmail)
     .then(constructEmail)
-    .then(emailData => emailSender(emailData, error => {
-      if (error) { throw error; }
-      return true;
-    }));
+    .then(makePromiseEmailSender(emailSender))
+    .catch(filterInternalErrors);
 }

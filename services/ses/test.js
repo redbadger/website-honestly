@@ -7,26 +7,42 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     contact: 'test@test.com',
   };
 
-  it('rejects if email missing', () => {
-    return expect(validateAndSendEmail()).to.be.rejectedWith(Error, '[400] Missing email');
+  it('resolves with error if email missing', () => {
+    const promise = validateAndSendEmail();
+    return expect(promise).to.eventually.deep.equal({
+      success: false,
+      error: 'Missing email',
+    });
   });
 
-  it('rejects if emailTo missing', () => {
+  it('resolves with error if emailTo missing', () => {
     const email = Object.assign({}, defaultEmail);
     delete email.emailTo;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, '[400] Missing emailTo');
+    const promise = validateAndSendEmail(email);
+    return expect(promise).to.eventually.deep.equal({
+      success: false,
+      error: 'Missing emailTo',
+    });
   });
 
-  it('rejects if message missing', () => {
+  it('resolves with error if message missing', () => {
     const email = Object.assign({}, defaultEmail);
     delete email.message;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, '[400] Missing message');
+    const promise = validateAndSendEmail(email);
+    return expect(promise).to.eventually.deep.equal({
+      success: false,
+      error: 'Missing message',
+    });
   });
 
-  it('rejects if contact missing', () => {
+  it('resolves with error if contact missing', () => {
     const email = Object.assign({}, defaultEmail);
     delete email.contact;
-    return expect(validateAndSendEmail(email)).to.be.rejectedWith(Error, '[400] Missing contact');
+    const promise = validateAndSendEmail(email);
+    return expect(promise).to.eventually.deep.equal({
+      success: false,
+      error: 'Missing contact',
+    });
   });
 
   it('rejects if email sending fails', () => {
@@ -77,6 +93,8 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     const sendFunction = (emailData, cb) => cb(null, emailData);
 
     const promise = validateAndSendEmail(defaultEmail, sendFunction);
-    return expect(promise).to.eventually.equal(true);
+    return expect(promise).to.eventually.deep.equal({
+      success: true,
+    });
   });
 });
