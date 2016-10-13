@@ -51,6 +51,27 @@ resources:
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: 404/index.html
+          RoutingRules:
+            - RoutingRuleCondition:
+                KeyPrefixEquals: "services"
+              RedirectRule:
+                HttpRedirectCode: "301"
+                ReplaceKeyWith: "what-we-do"
+            - RoutingRuleCondition:
+                KeyPrefixEquals: "services/technology"
+              RedirectRule:
+                HttpRedirectCode: "301"
+                ReplaceKeyWith: "what-we-do/technology"
+            - RoutingRuleCondition:
+                KeyPrefixEquals: "our-work"
+              RedirectRule:
+                HttpRedirectCode: "301"
+                ReplaceKeyWith: "what-we-do/our-work"
+            - RoutingRuleCondition:
+                KeyPrefixEquals: "about-us/contact-us"
+              RedirectRule:
+                HttpRedirectCode: "301"
+                ReplaceKeyWith: ""
 
     SiteContentBucketPolicy:
       Type: "AWS::S3::BucketPolicy"
