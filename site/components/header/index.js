@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 import logoSVG from './rb-logo-placeholder.svg';
 
-const Header = () => {
+function NavLink({ children, href, smallScreen }) {
+  const className = smallScreen ? styles.smallScreenNavLink : styles.navLink;
+  return (
+    <li>
+      <a className={className} href={href}>{children}</a>
+    </li>
+  );
+}
+
+NavLink.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
+  smallScreen: PropTypes.bool,
+};
+
+
+export default function Header() {
   return (
     <header className={styles.header} role="banner">
       <a href="/" title="Home" className={styles.logo}>
@@ -12,10 +28,10 @@ const Header = () => {
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul className={styles.mediumScreenNav}>
-          <li><a href="/services/">Services</a></li>
-          <li><a href="/about-us/">About us</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/about-us/events/">Events</a></li>
+          <NavLink href="/services/">Services</NavLink>
+          <NavLink href="/about-us/">About us</NavLink>
+          <NavLink href="/blog/">Blog</NavLink>
+          <NavLink href="/about-us/events/">Events</NavLink>
         </ul>
       </nav>
 
@@ -30,20 +46,17 @@ const Header = () => {
 
           <nav className={styles.smallScreenNavContainer} role="navigation">
             <ul className={styles.smallScreenNav}>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about-us/">About us</a></li>
-              <li><a href="/services/">Services</a></li>
-              <li><a href="/blog/">Blog</a></li>
-              <li><a href="/about-us/events/">Events</a></li>
-              <li><a href="/about-us/join-us/">Jobs</a></li>
-              <li><a href="/about-us/contact-us/">Contact us</a></li>
+              <NavLink smallScreen href="/">Home</NavLink>
+              <NavLink smallScreen href="/about-us/">About us</NavLink>
+              <NavLink smallScreen href="/services/">Services</NavLink>
+              <NavLink smallScreen href="/blog/">Blog</NavLink>
+              <NavLink smallScreen href="/about-us/events/">Events</NavLink>
+              <NavLink smallScreen href="/about-us/join-us/">Jobs</NavLink>
+              <NavLink smallScreen href="/about-us/contact-us/">Contact us</NavLink>
             </ul>
           </nav>
         </div>
       </div>
-
     </header>
   );
-};
-
-export default Header;
+}
