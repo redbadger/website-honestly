@@ -6,6 +6,7 @@ import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
 import NewsletterSlice from './newsletter-slice';
+import NewsletterNoScriptSlice from './newsletter-slice/noscript';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <TechSlice />
       <BlogSlice />
       <NewsletterSlice />
+      <NewsletterNoScriptSlice />
     </div>
   );
 }

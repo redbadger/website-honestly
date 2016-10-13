@@ -1,14 +1,11 @@
 import React from 'react';
 import styles from './style.css';
 
+import BeforeSignUpTitles from './before-sign-up-titles';
+
 const BeforeSignUp = props => (
   <section className={styles.newsletter}>
-    <h1 className={styles.title}>
-      Sign up to BadgerNews to hear more from us
-    </h1>
-    <p className={styles.subTitle}>
-      (every 6 weeks or so)
-    </p>
+    <BeforeSignUpTitles />
     <form className={styles.form}>
       <label htmlFor="email" className={styles.formLabel}>Email</label>
       <input id="email" type="text" placeholder="example@email.com" className={styles.formInput} />
