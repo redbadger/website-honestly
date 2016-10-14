@@ -29,7 +29,7 @@ make services-invoke-publish
 
 ```sh
 # Install the package manager
-npm install --global yarnpkg
+npm install --global yarn
 # Install the deps
 yarn
 
