@@ -48,6 +48,7 @@
 .social {
   composes: serif from "../../css/typography/_fonts.css";
   line-height: 1.2em;
+  font-size: linkSize;
 }
 
 .mailtoLink,

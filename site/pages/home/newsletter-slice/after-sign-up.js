@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 
@@ -6,7 +6,7 @@ const cx = classnames.bind(styles);
 
 const { func } = React.PropTypes;
 
-export default class AfterSignup extends React.Component {
+export default class AfterSignup extends Component {
   static propTypes = {
     onSubmit: func.isRequired,
   };
@@ -37,12 +37,12 @@ export default class AfterSignup extends React.Component {
             <input id="name" type="text" placeholder="John Smith" className={styles.formInput} />
           </div>
           <div>
-            <label htmlFor="name" className={styles.formLabel}>Company</label>
-            <input id="name" type="text" placeholder="Peter Pan Ltd." className={styles.formInput} />
+            <label htmlFor="company" className={styles.formLabel}>Company</label>
+            <input id="company" type="text" placeholder="Peter Pan Ltd." className={styles.formInput} />
           </div>
           <div>
-            <label htmlFor="name" className={styles.formLabel}>Job role</label>
-            <input id="name" type="text" placeholder="Engineer" className={styles.formInput} />
+            <label htmlFor="job" className={styles.formLabel}>Job role</label>
+            <input id="job" type="text" placeholder="Engineer" className={styles.formInput} />
           </div>
           <button className={styles.submitButton} onClick={this.props.onSubmit}>
             Update info

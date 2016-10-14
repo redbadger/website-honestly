@@ -7,9 +7,8 @@ import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
 import NewsletterAfterSignUp from './newsletter-slice/after-sign-up';
 import NewsletterBeforeSignUp from './newsletter-slice/before-sign-up';
-import NewsletterNoScript from './newsletter-slice/noscript';
 
-const HomePage = class extends Component {
+export default class HomePage extends Component {
   constructor() {
     super();
     this.state = {
@@ -37,10 +36,7 @@ const HomePage = class extends Component {
             ? <NewsletterAfterSignUp onSubmit={this.onSubmit} />
             : <NewsletterBeforeSignUp onSubmit={this.onSubmit} />
         }
-        <NewsletterNoScript />
       </div>
     );
   }
-};
-
-export default HomePage;
+}

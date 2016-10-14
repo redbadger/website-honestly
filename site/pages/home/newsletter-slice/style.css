@@ -60,8 +60,16 @@
   background-color: black;
 }
 
+.jsDisabled {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  width: 580px;
+  margin: 10px auto 30px;
+}
+
 .link {
   composes: primaryButton from '../../../css/_links.css';
+  margin-bottom: 30px;
 }
 
 @media mediumScreen {
@@ -80,8 +88,10 @@
   }
 
   .formLabel {
+    line-height: inputHeight;
     display: inline-block;
     margin-right: 30px;
+    vertical-align: top;
   }
 
   .submitted .formLabel {
@@ -91,38 +101,25 @@
 
   .formInput {
     width: 400px;
+    vertical-align: text-bottom;
   }
 
   .submitButton {
     display: inline-block;
-    position: relative;
-    top: 1px;
-    padding-bottom: 1px;
-    margin: 10px auto 40px;
+    margin: 0 auto 40px;
+    vertical-align: top;
   }
 }
 
 @media largeScreen {
-  .formLabel {
-    line-height: inputHeight;
-    vertical-align: top;
-  }
-
   .submitted .formLabel {
     width: 105px;
     margin-left: -130px;
     text-align: left;
   }
 
-  .formInput {
-    vertical-align: text-bottom;
-  }
-
   .submitButton {
     margin-top: 0;
-    height: inputHeight;
-    vertical-align: top;
-    position: static;
   }
 
   .submitted .submitButton {
