@@ -1,5 +1,5 @@
 @value white, red, black from "../../css/_colors.css";
-@value mediumScreen, largeScreen, maxWidth from "../../css/_breakpoints.css";
+@value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
 
 .redText {
   color: red;
