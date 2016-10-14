@@ -1,11 +1,12 @@
+/* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
 import styles from './style.css';
 
-const ContactUs = class extends Component {
+class ContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: 'Hi Cain,I was wondering…',
+      message: 'Hi Cain,\nI was wondering…',
       contact: '',
     };
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -24,15 +25,13 @@ const ContactUs = class extends Component {
     this.setState(newState);
   }
 
-  submitForm(event) {
-    const formDataJSON = JSON.stringify(this.state);
-    console.log('formDataJSON', formDataJSON);
+  submitForm() {
     fetch('https://xmy0g2tvu0.execute-api.eu-west-1.amazonaws.com/dev/contact-us',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         mode: 'cors',
-        body: formDataJSON,
+        body: JSON.stringify(this.state),
       })
       .then(response => {
         console.log(Array.from(response.headers.entries()));
@@ -70,16 +69,16 @@ const ContactUs = class extends Component {
             onChange={this.handleInputChange}
           />
 
-          <a
+          <button
             className={styles.submitBtn}
             onClick={this.submitForm}
           >
             Submit
-          </a>
+          </button>
         </form>
       </section>
     );
   }
-};
+}
 
 export default ContactUs;
