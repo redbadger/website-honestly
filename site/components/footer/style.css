@@ -1,5 +1,5 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../css/_sizes.css";
+@value mediumScreen, largeScreen, linkSize from "../../css/_sizes.css";
 
 .footer {
   composes: dividerBlack from "../../css/_divider.css";
@@ -17,8 +17,8 @@
 }
 
 .nav {
-  composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
+  font-size: linkSize;
   list-style: none;
 }
 
@@ -46,8 +46,8 @@
 }
 
 .social {
-  composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
+  line-height: 1.2em;
 }
 
 .mailtoLink,

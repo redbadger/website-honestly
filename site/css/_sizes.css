@@ -11,3 +11,4 @@
 @value largeScreen: screen and (min-width: 980px);
 @value maxWidth: 1000px;
 @value inputHeight: 55px;
+@value linkSize: 24px;

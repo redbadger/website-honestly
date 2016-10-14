@@ -1,5 +1,5 @@
 @value white, red from "./_colors.css";
-@value inputHeight from "./_sizes.css";
+@value inputHeight, linkSize from "./_sizes.css";
 
 /*
 ### Example
@@ -18,7 +18,7 @@
 
 .primaryButton {
   composes: boldSansSerif from "./typography/_fonts.css";
-  font-size: 24px;
+  font-size: linkSize;
   background-color: red;
   color: white;
   text-align: center;
