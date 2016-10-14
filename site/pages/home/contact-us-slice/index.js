@@ -25,13 +25,15 @@ class ContactUs extends Component {
     this.setState(newState);
   }
 
-  submitForm() {
+  submitForm(e) {
+    e.preventDefault();
+    const formData = JSON.stringify(this.state);
     fetch('https://xmy0g2tvu0.execute-api.eu-west-1.amazonaws.com/dev/contact-us',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         mode: 'cors',
-        body: JSON.stringify(this.state),
+        body: formData,
       })
       .then(response => {
         console.log(Array.from(response.headers.entries()));
