@@ -53,7 +53,7 @@ const CaseStudy = () => (
         </a>
         <a href="https://red-badger.com/our-work/case-study/sky-cms/" className={styles.caseText}>
           <span>
-            Drop in customers pushing the 'need more help' button
+            Drop in customers pushing the &lsquo;need more help&rsquo; button
           </span>
         </a>
         <a href="https://red-badger.com/our-work/case-study/sky-cms/">
