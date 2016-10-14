@@ -3,7 +3,7 @@ import { validateAndSendEmail } from '.';
 describe('contact-us-service/email.validateAndSendEmail', () => {
   const defaultEmail = {
     emailTo: ['hello@red-badger.com'],
-    message: 'Hello, I want to work with you',
+    message: 'Hello,\n<b>I want to work with you</b>',
     contact: 'test@test.com',
   };
 
@@ -68,13 +68,13 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
         Body: {
           Html: {
             Data: '<p><strong>This email was sent through the contact us form on red-badger.com:'
-            + `</strong></p><p>${defaultEmail.message}</p><p><strong>Contact details:</strong></p>`
+            + '</strong></p><p>Hello,<br>&lt;b&gt;I want to work with you&lt;/b&gt;</p><p><strong>Contact details:</strong></p>'
             + `<p>${defaultEmail.contact}</p>`,
             Charset: 'UTF-8',
           },
           Text: {
             Data: 'This email was sent through the contact us form on red-badger.com:\n\n'
-            + 'Hello, I want to work with you\n\nContact details:\n\ntest@test.com',
+            + 'Hello,\n&lt;b&gt;I want to work with you&lt;/b&gt;\n\nContact details:\n\ntest@test.com',
             Charset: 'UTF-8',
           },
         },

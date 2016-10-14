@@ -25,18 +25,29 @@ function assertEmail(email) {
   return email;
 }
 
+function sanitizeContent(content) {
+  return content
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
 function constructEmail(emailData) {
   const messageLabel = 'This email was sent through the contact us form on red-badger.com:';
   const contactLabel = 'Contact details:';
 
-  const formattedHTMLMessage = `<p><strong>${messageLabel}</strong></p><p>${emailData.message}</p>`
-    + `<p><strong>${contactLabel}</strong></p><p>${emailData.contact}</p>`;
+  const message = sanitizeContent(emailData.message);
+  const contact = sanitizeContent(emailData.contact);
+
+  const formattedHTMLMessage =
+    (`<p><strong>${messageLabel}</strong></p><p>${message}</p>`
+      + `<p><strong>${contactLabel}</strong></p><p>${contact}</p>`)
+    .replace(/\n/g, '<br>');
 
   const formattedTxtMessage = [
     messageLabel,
-    emailData.message,
+    message,
     contactLabel,
-    emailData.contact,
+    contact,
   ].join('\n\n');
 
   return {
