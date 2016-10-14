@@ -16,7 +16,7 @@ test:
 
 deployment:
   staging-prod:
-    branch: prod-deploy
+    branch: master
     commands:
       - >
         if [ -z "${PRODUCTION}" ]; then
