@@ -13,7 +13,8 @@
 }
 
 .footerContainer {
-  max-width: maxWidth;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .nav {
@@ -135,8 +136,14 @@
     display: block;
     overflow: hidden;
   }
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
   .badgerIcon {
-    margin-bottom: 16px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
   }
 
   .address {
@@ -175,7 +182,7 @@
 
   .footerSections {
     display: flex;
-    width: 85%;
+    width: 55%;
   }
 
   .disclaimer {
@@ -207,5 +214,9 @@
   }
   .footerEndContainer {
     display: flex;
+    justify-content: space-between;
+  }
+  .footerContainer {
+    position: relative;
   }
 }

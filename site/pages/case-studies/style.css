@@ -37,17 +37,22 @@
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   text-align: center;
+  color: black;
 }
 
 .subHeader {
   composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   font-size: 16px;
+  color: black;
 }
 
 .caseStudyContainer {
   padding: 30px 20px 30px 20px;
   background-color: white;
+}
+.caseStudyContainer {
+  display: flex;
 }
 
 a {
@@ -96,7 +101,6 @@ a {
 
 .inverse {
   background-color: black;
-  flex-direction: row-reverse;
 }
 
 .inverse .caseStudyTitle, .inverse .caseStudyDescription {
@@ -118,6 +122,15 @@ a {
   .caseStudyContainer {
     display: flex;
     padding: 60px;
+    justify-content: center;
+  }
+  .caseStudyContent {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+  }
+  .inverse .caseStudyContent {
+    flex-direction: row-reverse;
   }
 
   .caseStudyTextContainer {
