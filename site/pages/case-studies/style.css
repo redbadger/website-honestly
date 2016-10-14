@@ -99,7 +99,6 @@ a {
 
 .inverse {
   background-color: black;
-  flex-direction: row-reverse;
 }
 
 .inverse .caseStudyTitle, .inverse .caseStudyDescription {
@@ -126,6 +125,10 @@ a {
   .caseStudyContent {
     display: flex;
     max-width: 1440px;
+    width: 100%;
+  }
+  .inverse .caseStudyContent {
+    flex-direction: row-reverse;
   }
 
   .caseStudyTextContainer {
