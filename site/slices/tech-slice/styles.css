@@ -1,5 +1,5 @@
 @value black, white from "../../css/_colors.css";
-@value maxWidth, largeScreen, mediumScreen from "../../css/_breakpoints.css";
+@value maxWidth, largeScreen, mediumScreen from "../../css/_sizes.css";
 
 .widthContainer {
   max-width: maxWidth;

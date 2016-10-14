@@ -1,4 +1,6 @@
 @value white, red from "./_colors.css";
+@value inputHeight from "./_sizes.css";
+
 /*
 ### Example
 
@@ -23,6 +25,7 @@
   padding: 0 20px;
   text-decoration: none;
   display: inline-block;
-  line-height: 56px;
+  line-height: inputHeight;
+  height: inputHeight;
   border: none;
 }

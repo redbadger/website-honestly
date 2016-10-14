@@ -1,23 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import TopSlice from './homepage-top-slice';
 import CaseStudy from '../../components/case-study';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
-import NewsletterSlice from './newsletter-slice';
-import NewsletterNoScriptSlice from './newsletter-slice/noscript';
+import NewsletterAfterSignUp from './newsletter-slice/after-sign-up';
+import NewsletterBeforeSignUp from './newsletter-slice/before-sign-up';
+import NewsletterNoScript from './newsletter-slice/noscript';
 
-export default function HomePage() {
-  return (
-    <div>
-      <TopSlice />
-      <CaseStudy />
-      <Brie />
-      <TechSlice />
-      <BlogSlice />
-      <NewsletterSlice />
-      <NewsletterNoScriptSlice />
-    </div>
-  );
-}
+const HomePage = class extends Component {
+  constructor() {
+    super();
+    this.state = {
+      newsletterSubmitted: false,
+    };
+  }
+
+  onSubmit = e => {
+    e.preventDefault();
+    this.setState({
+      newsletterSubmitted: !this.state.newsletterSubmitted,
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <TopSlice />
+        <CaseStudy />
+        <Brie />
+        <TechSlice />
+        <BlogSlice />
+        {
+          this.state.newsletterSubmitted
+            ? <NewsletterAfterSignUp onSubmit={this.onSubmit} />
+            : <NewsletterBeforeSignUp onSubmit={this.onSubmit} />
+        }
+        <NewsletterNoScript />
+      </div>
+    );
+  }
+};
+
+export default HomePage;

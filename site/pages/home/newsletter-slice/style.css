@@ -1,5 +1,5 @@
 @value black, white, daveGreen from "../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
+@value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
 
 .newsletter {
   composes: dividerBlack from "../../../css/_divider.css";
@@ -42,7 +42,8 @@
 .formInput {
   composes: fontS from '../../../css/typography/_fonts.css';
   composes: sansSerif from '../../../css/typography/_fonts.css';
-  line-height: 56px;
+  line-height: inputHeight;
+  height: inputHeight;
   padding: 0 17px;
   border: none;
   width: 100%;
@@ -102,13 +103,29 @@
 }
 
 @media largeScreen {
+  .formLabel {
+    line-height: inputHeight;
+    vertical-align: top;
+  }
+
   .submitted .formLabel {
     width: 105px;
     margin-left: -130px;
     text-align: left;
   }
 
+  .formInput {
+    vertical-align: text-bottom;
+  }
+
   .submitButton {
-    top: -1px;
+    margin-top: 0;
+    height: inputHeight;
+    vertical-align: top;
+    position: static;
+  }
+
+  .submitted .submitButton {
+    margin-top: 10px;
   }
 }

@@ -1,5 +1,5 @@
 @value red, white, black from "../../css/_colors.css";
-@value mediumScreen from "../../css/_breakpoints.css";
+@value mediumScreen from "../../css/_sizes.css";
 @value zindexOverlay from "../../css/_zindex.css";
 
 .header {

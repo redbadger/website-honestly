@@ -1,5 +1,5 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../css/_breakpoints.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .footer {
   composes: dividerBlack from "../../css/_divider.css";

@@ -1,5 +1,5 @@
 @value red, white, black from "../../../css/_colors.css";
-@value mediumScreen, maxWidth from "../../../css/_breakpoints.css";
+@value mediumScreen, maxWidth from "../../../css/_sizes.css";
 
 .brieContainer {
   padding: 30px 20px 40px 20px;
@@ -23,7 +23,6 @@
 
 .featureBtn {
   composes: primaryButton from "../../../css/_links.css";
-  line-height: 1;
 }
 
 @media mediumScreen {
