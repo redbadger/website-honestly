@@ -121,6 +121,11 @@ a {
   .caseStudyContainer {
     display: flex;
     padding: 60px;
+    justify-content: center;
+  }
+  .caseStudyContainer div {
+    display: flex;
+    max-width: 1440px;
   }
 
   .caseStudyTextContainer {

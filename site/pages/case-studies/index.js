@@ -44,34 +44,38 @@ export default function caseStudies() {
         </div>
       </div>
       <div className={cx('caseStudyContainer', 'inverse')}>
-        <a className={cx('imageLink', 'camden')} href="https://red-badger.com/our-work/case-study/camden-market/">
-          <img alt="The Camden Market App" src={camdenJpg} />
-        </a>
-        <div className={styles.caseStudyTextContainer}>
-          <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/camden-market/">Camden Market</a>
-          <div className={styles.caseStudyTitleContainer}>
-            <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/camden-market/">Taking steps towards a digital future</a>
-          </div>
-          <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/camden-market/">
-            Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive
-            more footfall from Londoners to the physical market by
-            showcasing the eclectic range of goods, food and events.
+        <div>
+          <a className={cx('imageLink', 'camden')} href="https://red-badger.com/our-work/case-study/camden-market/">
+            <img alt="The Camden Market App" src={camdenJpg} />
           </a>
+          <div className={styles.caseStudyTextContainer}>
+            <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/camden-market/">Camden Market</a>
+            <div className={styles.caseStudyTitleContainer}>
+              <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/camden-market/">Taking steps towards a digital future</a>
+            </div>
+            <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/camden-market/">
+              Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive
+              more footfall from Londoners to the physical market by
+              showcasing the eclectic range of goods, food and events.
+            </a>
+          </div>
         </div>
       </div>
       <div className={styles.caseStudyContainer}>
-        <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/financial-times/">
-          <img alt="Financial Times website on a tablet" src={financialTimesJpg} />
-        </a>
-        <div className={styles.caseStudyTextContainer}>
-          <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/financial-times/">Financial Times</a>
-          <div className={styles.caseStudyTitleContainer}>
-            <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/financial-times/">Lasting change for a media giant</a>
-          </div>
-          <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/financial-times/">
-            Improving online and mobile conversion rates on the new fortnumandmason.com
-            site with great customer experience and innovative tech.
+        <div>
+          <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/financial-times/">
+            <img alt="Financial Times website on a tablet" src={financialTimesJpg} />
           </a>
+          <div className={styles.caseStudyTextContainer}>
+            <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/financial-times/">Financial Times</a>
+            <div className={styles.caseStudyTitleContainer}>
+              <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/financial-times/">Lasting change for a media giant</a>
+            </div>
+            <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/financial-times/">
+              Improving online and mobile conversion rates on the new fortnumandmason.com
+              site with great customer experience and innovative tech.
+            </a>
+          </div>
         </div>
       </div>
       <div className={styles.buttonContainer}>

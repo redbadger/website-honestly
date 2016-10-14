@@ -76,7 +76,7 @@ const CaseStudy = () => (
       <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
     </div>
     <div className={styles.buttonContainer}>
-      <a className={styles.button} href="https://red-badger.com/our-work/">See more of our work</a>
+      <a className={styles.button} href="/case-studies">See more of our work</a>
     </div>
   </section>
 );
