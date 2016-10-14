@@ -16,7 +16,7 @@
 }
 
 .title {
-  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: fontL from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
   max-width: 280px;
   margin: 0 auto 10px;
@@ -75,7 +75,7 @@
 @media mediumScreen {
   .title {
     margin: 20px auto;
-    max-width: 480px;
+    max-width: 680px;
   }
 
   .subTitle {
@@ -87,6 +87,12 @@
     text-align: center;
   }
 
+  .submitted .form {
+    width: 400px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
   .formLabel {
     line-height: inputHeight;
     display: inline-block;
@@ -95,8 +101,11 @@
   }
 
   .submitted .formLabel {
-    width: 85px;
-    margin-left: -115px;
+    width: auto;
+    line-height: inherit;
+    margin-left: 0;
+    margin-bottom: 5px;
+    display: block;
   }
 
   .formInput {
@@ -109,13 +118,19 @@
     margin: 0 auto 40px;
     vertical-align: top;
   }
+
+  .submitted .submitButton {
+    display: block;
+  }
 }
 
 @media largeScreen {
   .submitted .formLabel {
-    width: 105px;
-    margin-left: -130px;
+    width: 101px;
+    margin-left: -131px;
+    line-height: inputHeight;
     text-align: left;
+    display: inline-block;
   }
 
   .submitButton {
@@ -124,5 +139,9 @@
 
   .submitted .submitButton {
     margin-top: 10px;
+  }
+
+  .submitted .form {
+    margin: 0 auto;
   }
 }

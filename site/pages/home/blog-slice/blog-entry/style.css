@@ -1,5 +1,5 @@
 @value white, black, red, linesOnWhite from "../../../../css/_colors.css";
-@value mediumScreen from "../../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .link {
   composes: fontM from "../../../../css/typography/_fonts.css";
@@ -57,13 +57,20 @@
   }
 
   .linkTitle {
-    flex-basis: 650px;
+    flex-basis: 800px;
   }
 
   .authorTitle {
     align-self: flex-end;
+    margin-left: 100px;
+    width: 250px;
+    display: block;
+  }
+}
+
+@media largeScreen {
+  .authorTitle {
     margin-left: 200px;
     width: 150px;
-    display: block;
   }
 }
