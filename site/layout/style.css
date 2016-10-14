@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 html, body {
   overflow-x: hidden;
   position: relative;
