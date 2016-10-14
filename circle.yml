@@ -15,11 +15,16 @@ test:
     - make test
 
 deployment:
-  preview:
-    branch: /.*/
-    commands:
-      - ./bin/ci-deploy.sh create-commit-site
-  staging:
+  staging-prod:
     branch: master
     commands:
-      - ./bin/ci-deploy.sh master-to-staging
+      - >
+        if [ -z "${PRODUCTION}" ]; then
+          ./bin/ci-deploy.sh master-to-staging
+        else
+          ./bin/ci-deploy.sh master-to-production
+        fi
+  preview:
+    branch: /^(?!.*master).*$/ # all branches except master
+    commands:
+      - ./bin/ci-deploy.sh create-commit-site
