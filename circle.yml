@@ -20,7 +20,7 @@ deployment:
     commands:
       - >
         if [ -z "${PRODUCTION}" ]; then
-          ./bin/ci-deploy.sh master-to-staging;
+          ./bin/ci-deploy.sh master-to-staging
         else
           ./bin/ci-deploy.sh master-to-production
         fi
