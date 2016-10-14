@@ -7,11 +7,15 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     contact: 'test@test.com',
   };
 
-  it('resolves with error if email missing', () => {
+  it('resolves with errors if all fields missing', () => {
     const promise = validateAndSendEmail();
     return expect(promise).to.eventually.deep.equal({
       success: false,
-      error: 'Missing email',
+      errors: {
+        emailTo: 'Must be present',
+        message: 'Please write something',
+        contact: 'Please provide a way of contacting you',
+      },
     });
   });
 
@@ -21,7 +25,9 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     const promise = validateAndSendEmail(email);
     return expect(promise).to.eventually.deep.equal({
       success: false,
-      error: 'Missing emailTo',
+      errors: {
+        emailTo: 'Must be present',
+      },
     });
   });
 
@@ -31,7 +37,9 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     const promise = validateAndSendEmail(email);
     return expect(promise).to.eventually.deep.equal({
       success: false,
-      error: 'Missing message',
+      errors: {
+        message: 'Please write something',
+      },
     });
   });
 
@@ -41,7 +49,9 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     const promise = validateAndSendEmail(email);
     return expect(promise).to.eventually.deep.equal({
       success: false,
-      error: 'Missing contact',
+      errors: {
+        contact: 'Please provide a way of contacting you',
+      },
     });
   });
 

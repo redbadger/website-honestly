@@ -1,27 +1,49 @@
+const messageLabel = 'This email was sent through the contact us form on red-badger.com:';
+const contactLabel = 'Contact details:';
+
+const fieldMessages = {
+  emailTo: 'Must be present',
+  message: 'Please write something',
+  contact: 'Please provide a way of contacting you',
+};
+
 function filterInternalErrors(error) {
   if (error.isValidationError) {
     return {
       success: false,
-      error: error.message,
+      errors: error.errors,
     };
   }
   throw error;
 }
 
-function assertPresent(thing, message) {
-  if (!thing) {
-    const error = new Error(message);
-    error.isValidationError = true;
-    throw error;
-  }
-  return thing;
+function throwValidationError(errors) {
+  const error = new Error('Validation errors');
+  error.errors = errors;
+  error.isValidationError = true;
+  throw error;
 }
 
-function assertEmail(email) {
-  ['emailTo', 'message', 'contact']
-    .forEach(field => {
-      assertPresent(email[field], `Missing ${field}`);
-    });
+function validateEmail(email) {
+  const validateField = (errors, field) => {
+    if (!email[field]) {
+      return Object.assign(errors, {
+        [field]: fieldMessages[field],
+      });
+    }
+    return errors;
+  };
+
+  if (!email) {
+    throwValidationError(fieldMessages);
+  }
+
+  const errors = Object.keys(fieldMessages).reduce(validateField, {});
+
+  if (Object.keys(errors).length > 0) {
+    throwValidationError(errors);
+  }
+
   return email;
 }
 
@@ -32,9 +54,6 @@ function sanitizeContent(content) {
 }
 
 function constructEmail(emailData) {
-  const messageLabel = 'This email was sent through the contact us form on red-badger.com:';
-  const contactLabel = 'Contact details:';
-
   const message = sanitizeContent(emailData.message);
   const contact = sanitizeContent(emailData.contact);
 
@@ -81,9 +100,8 @@ function makePromiseEmailSender(emailSender) {
 }
 
 export function validateAndSendEmail(email, emailSender) {
-  return new Promise(resolve => resolve())
-    .then(() => assertPresent(email, 'Missing email'))
-    .then(assertEmail)
+  return new Promise(resolve => resolve(email))
+    .then(validateEmail)
     .then(constructEmail)
     .then(makePromiseEmailSender(emailSender))
     .catch(filterInternalErrors);
