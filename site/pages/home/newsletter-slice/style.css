@@ -1,0 +1,147 @@
+@value black, white, daveGreen from "../../../css/_colors.css";
+@value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
+
+.newsletter {
+  composes: dividerBlack from "../../../css/_divider.css";
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.submitted {
+  composes: dividerGreen from "../../../css/_divider.css";
+  background-color: daveGreen;
+  color: black;
+}
+
+.title {
+  composes: fontL from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  max-width: 280px;
+  margin: 0 auto 10px;
+}
+
+.subTitle {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  margin-bottom: 40px;
+}
+
+.form {
+  text-align: left;
+}
+
+.formLabel {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formInput {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  line-height: inputHeight;
+  height: inputHeight;
+  padding: 0 17px;
+  border: none;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.submitButton {
+  composes: primaryButton from '../../../css/_links.css';
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.submitted .submitButton {
+  background-color: black;
+}
+
+.jsDisabled {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  width: 580px;
+  margin: 10px auto 30px;
+}
+
+.link {
+  composes: primaryButton from '../../../css/_links.css';
+  margin-bottom: 30px;
+}
+
+@media mediumScreen {
+  .title {
+    margin: 20px auto;
+    max-width: 680px;
+  }
+
+  .subTitle {
+    max-width: 585px;
+    margin: 0 auto 60px;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  .submitted .form {
+    width: 400px;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .formLabel {
+    line-height: inputHeight;
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+  }
+
+  .submitted .formLabel {
+    width: auto;
+    line-height: inherit;
+    margin-left: 0;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .formInput {
+    width: 400px;
+    vertical-align: text-bottom;
+  }
+
+  .submitButton {
+    display: inline-block;
+    margin: 0 auto 40px;
+    vertical-align: top;
+  }
+
+  .submitted .submitButton {
+    display: block;
+  }
+}
+
+@media largeScreen {
+  .submitted .formLabel {
+    width: 101px;
+    margin-left: -131px;
+    line-height: inputHeight;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .submitButton {
+    margin-top: 0;
+  }
+
+  .submitted .submitButton {
+    margin-top: 10px;
+  }
+
+  .submitted .form {
+    margin: 0 auto;
+  }
+}

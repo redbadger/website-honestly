@@ -72,8 +72,13 @@
   font-size: 40px;
 }
 
-.fontL, .fontM, .fontS {
+.fontL, .fontM {
   font-size: 24px;
+  line-height: 1.2em;
+}
+
+.fontS {
+  font-size: 16px;
   line-height: 1.2em;
 }
 
@@ -91,6 +96,16 @@
     font-size: 40px;
     line-height: 1.1em;
   }
+
+  .fontM {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+
+  .fontS {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
 }
 
 @media screen and (min-width: 980px) {
@@ -105,5 +120,9 @@
   .fontM {
     font-size: 40px;
     line-height: 1.1em;
+  }
+
+  .fontS {
+    font-size: 24px;
   }
 }

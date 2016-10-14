@@ -1,5 +1,5 @@
 @value white, black from "../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../css/_breakpoints.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .homepageTopSlice {
   padding: 50px 20px 100px 20px;

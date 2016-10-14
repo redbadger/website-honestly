@@ -1,5 +1,5 @@
 @value black, white from "../../css/_colors.css";
-@value maxWidth, largeScreen, mediumScreen from "../../css/_breakpoints.css";
+@value maxWidth, largeScreen, mediumScreen from "../../css/_sizes.css";
 
 .widthContainer {
   max-width: maxWidth;
@@ -82,14 +82,15 @@
 
   .techListItem {
     width: calc(100% / 3);
+    margin-bottom: 40px;
   }
 
   .techName {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
   }
 
   .moreBtn {
-    margin: 60px;
+    margin: 20px 60px 60px;
     composes: primaryButton from "../../css/_links.css";
   }
 }
@@ -97,5 +98,14 @@
 @media largeScreen {
   .techListItem {
     width: calc(98% / 6);
+    margin-bottom: 0;
+  }
+
+  .techName {
+    margin-top: 40px;
+  }
+
+  .moreBtn {
+    margin: 60px 0 70px;
   }
 }

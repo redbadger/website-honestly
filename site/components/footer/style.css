@@ -1,5 +1,5 @@
 @value red, white, black, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../css/_breakpoints.css";
+@value mediumScreen, largeScreen, linkSize from "../../css/_sizes.css";
 
 .footer {
   composes: dividerBlack from "../../css/_divider.css";
@@ -7,13 +7,18 @@
   padding: 0px 20px;
   background-color: black;
 }
+
+.footer, .footer:before {
+  box-shadow: -1px -1px linesOnBlack;
+}
+
 .footerContainer {
   max-width: maxWidth;
 }
 
 .nav {
-  composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
+  font-size: linkSize;
   list-style: none;
 }
 
@@ -41,8 +46,9 @@
 }
 
 .social {
-  composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
+  line-height: 1.2em;
+  font-size: linkSize;
 }
 
 .mailtoLink,

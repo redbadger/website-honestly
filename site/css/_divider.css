@@ -1,4 +1,4 @@
-@value red, white, black from "./_colors.css";
+@value red, white, black, daveGreen from "./_colors.css";
 
 .divider {
   position: relative;
@@ -15,7 +15,7 @@
   background-color: red;
 }
 
-.dividerBlack, .dividerWhite {
+.dividerBlack, .dividerWhite, .dividerGreen {
   composes: divider;
 }
 
@@ -25,4 +25,8 @@
 
 .dividerWhite:before {
   background-color: white;
+}
+
+.dividerGreen:before {
+  background-color: daveGreen;
 }
