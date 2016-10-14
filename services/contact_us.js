@@ -11,8 +11,8 @@ if (!contactUsEmailTo) {
 export default function doContactUs(event, cb) {
   const data = {
     emailTo: contactUsEmailTo,
-    message: event.message,
-    contact: event.contact,
+    message: event.body.message,
+    contact: event.body.contact,
   };
 
   console.log('data >', data);

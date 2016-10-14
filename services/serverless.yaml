@@ -36,9 +36,6 @@ functions:
           path: contact-us
           method: post
           cors: true
-          request:
-            template:
-              application/json: "{\"message\" : \"$input.path('$.message')\",\"contact\" : \"$input.path('$.contact')\"}"
 
 
 resources:
