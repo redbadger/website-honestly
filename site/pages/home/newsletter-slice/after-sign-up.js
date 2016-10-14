@@ -11,15 +11,15 @@ export default class AfterSignup extends React.Component {
     onSubmit: func.isRequired,
   };
 
+  componentDidMount() {
+    this.triggerReflow();
+  }
+
   // fixes bug in safari where the component height wouldn't update
   triggerReflow() {
     this.element.style.display = 'none';
     this.element.offsetHeight; // eslint-disable-line no-unused-expressions
     this.element.style.display = '';
-  }
-
-  componentDidMount() {
-    this.triggerReflow();
   }
 
   render() {
