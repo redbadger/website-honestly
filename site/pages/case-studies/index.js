@@ -2,7 +2,6 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
-
 /* PNG and Jpg  imports */
 import camdenJpg from './JPG/camden.jpg';
 import financialTimesJpg from './JPG/financialtimes.jpg';
@@ -27,7 +26,7 @@ export default function caseStudies() {
         <h2 className={styles.subHeader}>Read some of our case studies.</h2>
       </div>
       <div className={styles.caseStudyContainer}>
-        <div>
+        <div className={styles.caseStudyContent}>
           <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
             <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
           </a>
@@ -44,7 +43,7 @@ export default function caseStudies() {
         </div>
       </div>
       <div className={cx('caseStudyContainer', 'inverse')}>
-        <div>
+        <div className={styles.caseStudyContent}>
           <a className={cx('imageLink', 'camden')} href="https://red-badger.com/our-work/case-study/camden-market/">
             <img alt="The Camden Market App" src={camdenJpg} />
           </a>
@@ -62,7 +61,7 @@ export default function caseStudies() {
         </div>
       </div>
       <div className={styles.caseStudyContainer}>
-        <div>
+        <div className={styles.caseStudyContent}>
           <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/financial-times/">
             <img alt="Financial Times website on a tablet" src={financialTimesJpg} />
           </a>

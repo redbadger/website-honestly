@@ -1,6 +1,7 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
+import Link from '../link';
 
 /* PNG logo imports */
 import bbcPNG from './PNG/bbc.png';
@@ -76,7 +77,7 @@ const CaseStudy = () => (
       <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
     </div>
     <div className={styles.buttonContainer}>
-      <a className={styles.button} href="/case-studies">See more of our work</a>
+      <Link className={styles.button} to="caseStudiesPage">See more of our work</Link>
     </div>
   </section>
 );

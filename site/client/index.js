@@ -15,6 +15,7 @@ export function makeApp({ element, data, history }) {
 
   routes.forEach(route => {
     const render = () => {
+      window.scrollTo(0, 0);
       const Component = route.component;
       ReactDOM.render(<Component />, element);
     };
