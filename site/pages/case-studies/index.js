@@ -27,18 +27,20 @@ export default function caseStudies() {
         <h2 className={styles.subHeader}>Read some of our case studies.</h2>
       </div>
       <div className={styles.caseStudyContainer}>
-        <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
-          <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
-        </a>
-        <div className={styles.caseStudyTextContainer}>
-          <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Fortnum & Mason</a>
-          <div className={styles.caseStudyTitleContainer}>
-            <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Elegant e-commerce in eight months</a>
-          </div>
-          <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
-            Improving online and mobile conversion rates on the new fortnumandmason.com
-            site with great customer experience and innovative tech.
+        <div>
+          <a className={styles.imageLink} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
+            <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
           </a>
+          <div className={styles.caseStudyTextContainer}>
+            <a className={styles.caseStudyCompany} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Fortnum & Mason</a>
+            <div className={styles.caseStudyTitleContainer}>
+              <a className={styles.caseStudyTitle} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">Elegant e-commerce in eight months</a>
+            </div>
+            <a className={styles.caseStudyDescription} href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
+              Improving online and mobile conversion rates on the new fortnumandmason.com
+              site with great customer experience and innovative tech.
+            </a>
+          </div>
         </div>
       </div>
       <div className={cx('caseStudyContainer', 'inverse')}>

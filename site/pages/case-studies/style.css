@@ -49,6 +49,9 @@
   padding: 30px 20px 30px 20px;
   background-color: white;
 }
+.caseStudyContainer {
+  display: flex;
+}
 
 a {
   text-decoration: none;
