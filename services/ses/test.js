@@ -46,10 +46,16 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
   });
 
   it('rejects if email sending fails', () => {
-    const failingSendingFn = (email, cb) => {
-      cb(new Error('Sending failed'));
+    const sendFunction = () => {
+      const blankPromise = new Promise((resolve, reject) => {
+        reject(new Error('Sending failed'));
+      });
+      return {
+        promise: () => blankPromise,
+      };
     };
-    const promise = validateAndSendEmail(defaultEmail, failingSendingFn);
+
+    const promise = validateAndSendEmail(defaultEmail, sendFunction);
     return expect(promise).to.be.rejectedWith(Error, 'Sending failed');
   });
 
@@ -80,17 +86,30 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
       Source: 'hello@red-badger.com',
     };
 
-    const sendFunction = (emailData, cb) => {
+    const sendFunction = emailData => {
+      const blankPromise = new Promise(resolve => {
+        resolve();
+        done();
+      });
+
       expect(emailData).to.deep.equal(emailConstruct);
-      cb(null, emailConstruct);
-      done();
+      return {
+        promise: () => blankPromise,
+      };
     };
     validateAndSendEmail(defaultEmail, sendFunction)
       .catch(done);
   });
 
   it('resolves if email sending succeeds', () => {
-    const sendFunction = (emailData, cb) => cb(null, emailData);
+    const sendFunction = () => {
+      const blankPromise = new Promise(resolve => {
+        resolve();
+      });
+      return {
+        promise: () => blankPromise,
+      };
+    };
 
     const promise = validateAndSendEmail(defaultEmail, sendFunction);
     return expect(promise).to.eventually.deep.equal({

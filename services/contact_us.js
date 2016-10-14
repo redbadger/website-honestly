@@ -15,17 +15,14 @@ export default function doContactUs(event, cb) {
     contact: event.contact,
   };
 
+  console.log('data >', data);
+
   aws.config.update('eu-west-1');
   const simpleEmail = new aws.SES({ apiVersion: '2010-12-01' });
   const emailSender = simpleEmail.sendEmail.bind(simpleEmail);
 
-  const promise = validateAndSendEmail(data, emailSender);
-  console.log(promise);
-
-  promise.then(result => {
-      console.log('hi>', result);
-      cb(null, result);
-    })
+  validateAndSendEmail(data, emailSender)
+    .then(result => cb(null, result))
     .catch(err => {
       console.error(err);
       cb(err);
