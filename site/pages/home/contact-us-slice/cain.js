@@ -10,10 +10,11 @@ const cx = classnames.bind(styles);
 
 const Cain = ({ goodNews, says }) => (
   <figure
-  className={cx({
+    className={cx({
       cain: true,
-      goodNews: goodNews,
-    })}>
+      goodNews,
+    })}
+  >
     <figcaption className={styles.speechBubble}>
       <span className={styles.speechBubbleText}>
         {says}

@@ -1,5 +1,4 @@
 /* eslint-disable react/no-set-state */
-import InlineSVG from 'svg-inline-react';
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
@@ -24,13 +23,8 @@ class Form extends Component {
   }
 
   render() {
-    const neutralCain = <Cain
-      says="Hello,  I’m Cain, I’m a founder and a record collector."
-      goodNews
-    />
-    const errorCain = <Cain
-      says="I need a bit more info please."
-    />
+    const neutralCain = (<Cain says="Hello, I’m Cain, I’m a founder and a record collector." goodNews />);
+    const errorCain = (<Cain says="I need a bit more info please." />);
 
     const { message, contact } = this.state;
     const { onSubmit, errors } = this.props;
