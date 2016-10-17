@@ -4,7 +4,7 @@ import styles from './style.css';
 const Success = () => (
   <section className={styles.successContainer}>
     <h2 className={styles.heading}>
-      Success
+      Got it! Thanks
     </h2>
   </section>
 );
