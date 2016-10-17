@@ -1,9 +1,9 @@
+/* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 
 const cx = classnames.bind(styles);
-
 const { func } = React.PropTypes;
 
 export default class AfterSignup extends Component {
@@ -11,8 +11,24 @@ export default class AfterSignup extends Component {
     onSubmit: func.isRequired,
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      company: '',
+      job: '',
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
   componentDidMount() {
     this.triggerReflow();
+  }
+
+  handleInputChange(event) {
+    const newState = {};
+    newState[event.target.name] = event.target.value;
+    this.setState(newState);
   }
 
   // fixes bug in safari where the component height wouldn't update
@@ -34,18 +50,45 @@ export default class AfterSignup extends Component {
         <form className={styles.form}>
           <div>
             <label htmlFor="name" className={styles.formLabel}>Full name</label>
-            <input id="name" type="text" placeholder="John Smith" className={styles.formInput} />
+            <input
+              id="name"
+              name="name"
+              type="text" placeholder="John Smith"
+              className={styles.formInput}
+              onChange={this.handleInputChange}
+            />
           </div>
           <div>
             <label htmlFor="company" className={styles.formLabel}>Company</label>
-            <input id="company" type="text" placeholder="Peter Pan Ltd." className={styles.formInput} />
+            <input
+              id="company"
+              name="company"
+              type="text"
+              placeholder="Peter Pan Ltd."
+              className={styles.formInput}
+              onChange={this.handleInputChange}
+
+            />
           </div>
           <div>
             <label htmlFor="job" className={styles.formLabel}>Job role</label>
-            <input id="job" type="text" placeholder="Engineer" className={styles.formInput} />
+            <input
+              id="job"
+              name="job"
+              type="text"
+              placeholder="Engineer"
+              className={styles.formInput}
+              onChange={this.handleInputChange}
+            />
           </div>
-          <button className={styles.submitButton} onClick={this.props.onSubmit}>
-            Update info
+          <button
+            className={styles.submitButton}
+            onClick={e => {
+              e.preventDefault();
+              this.props.onSubmit(this.state);
+            }}
+          >
+            Update Info
           </button>
         </form>
       </section>

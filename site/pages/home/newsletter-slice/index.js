@@ -9,6 +9,7 @@ class NewsLetter extends Component {
     this.state = {
       newsletterSubmitted: false,
     };
+    this.submitForm = this.submitForm.bind(this);
   }
 
   onSubmit = e => {
@@ -18,14 +19,33 @@ class NewsLetter extends Component {
     });
   }
 
+  submitForm(data) {
+    const formDataJSON = JSON.stringify(data);
+    fetch('https:/wwww.google.com',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        mode: 'cors',
+        body: formDataJSON,
+      })
+      .then(response => response.json())
+      .then(json => {
+        return this.setState(json);
+      })
+      .catch(() => {
+        return this.setState({
+          newsletterSubmitted: true,
+        });
+      });
+  }
 
   render() {
     return (
       <div>
         {
           this.state.newsletterSubmitted
-          ? <NewsletterAfterSignUp onSubmit={this.onSubmit} />
-          : <NewsletterBeforeSignUp onSubmit={this.onSubmit} />
+          ? <NewsletterAfterSignUp onSubmit={this.submitForm} />
+          : <NewsletterBeforeSignUp onSubmit={this.submitForm} />
         }
       </div>
     );
