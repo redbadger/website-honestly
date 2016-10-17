@@ -45,6 +45,7 @@ case "$1" in
     deployMaster staging
     ;;
   master-to-production)
+    export INSERT_TRACKING=true
     deployMaster live
     ;;
   *)
