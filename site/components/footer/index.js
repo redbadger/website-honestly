@@ -32,7 +32,7 @@ const Footer = () => (
               <a href="https://red-badger.com/about-us/">About us</a>
             </li>
             <li>
-              <a href="https://red-badger.com/about-us/join-us/">What we do</a>
+              <a href="https://red-badger.com/services/">What we do</a>
             </li>
             <li>
               <a href="http://red-badger.com/blog/">Blog</a>
