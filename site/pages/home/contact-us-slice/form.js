@@ -1,7 +1,9 @@
 /* eslint-disable react/no-set-state */
+import InlineSVG from 'svg-inline-react';
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
+import Cain from './cain';
 
 const cx = classnames.bind(styles);
 
@@ -22,8 +24,17 @@ class Form extends Component {
   }
 
   render() {
+    const neutralCain = <Cain
+      says="Hello,  I’m Cain, I’m a founder and a record collector."
+      goodNews
+    />
+    const errorCain = <Cain
+      says="I need a bit more info please."
+    />
+
     const { message, contact } = this.state;
     const { onSubmit, errors } = this.props;
+    const showCain = (errors.message || errors.contact) ? errorCain : neutralCain;
     return (
       <section className={styles.formContainer}>
         <h2 className={styles.heading}>
@@ -31,6 +42,8 @@ class Form extends Component {
           <br />
           Speak to one of our founders.
         </h2>
+
+        {showCain}
 
         <form className={styles.contactUsForm}>
           <label className={styles.formLabel} htmlFor="message">
@@ -78,12 +91,12 @@ class Form extends Component {
   }
 }
 
-const { func, string } = React.PropTypes;
+const { shape, func, string } = React.PropTypes;
 Form.propTypes = {
-  errors: {
+  errors: shape({
     message: string,
     contact: string,
-  }.isRequired,
+  }).isRequired,
   onSubmit: func.isRequired,
 };
 

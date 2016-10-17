@@ -1,5 +1,53 @@
 @value white, black, cainYellow, cainYellowFaded, daveGreen from "../../../css/_colors.css";
 @value mediumScreen, maxWidth from "../../../css/_sizes.css";
+@value zindexOverlay from "../../../css/_zindex.css";
+
+.speechBubble {
+  width: 280px;
+  position: absolute;
+  composes: fontS from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  text-align: left;
+}
+
+.speechBubbleText {
+  margin: 40px;
+  position: absolute;
+  display: block;
+  z-index: zindexOverlay;
+  color: white;
+}
+
+.speechBubbleSVG {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.speechBubbleSVG path {
+  fill: black;
+  stroke: black;
+}
+
+.goodNews .speechBubbleSVG path {
+  fill: white;
+  stroke: white;
+}
+.goodNews .speechBubbleText {
+  color: black;
+}
+
+.cain {
+  position: relative;
+  display: inline-block;
+}
+
+.cainPNG {
+  margin-top: 170px;
+  margin-left: 70px;
+  height: 320px;
+}
 
 .formContainer, .successContainer, .fatalErrorContainer {
   padding: 30px 20px 40px 20px;

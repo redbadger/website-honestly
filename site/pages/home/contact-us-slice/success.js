@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './style.css';
+import Cain from './cain';
 
 const Success = () => (
   <section className={styles.successContainer}>
-    <h2 className={styles.heading}>
-      Got it! Thanks
-    </h2>
+    <Cain
+      says="Got it! Thanks"
+      goodNews
+    />
   </section>
 );
 
