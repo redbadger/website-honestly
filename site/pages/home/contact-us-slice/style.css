@@ -1,16 +1,19 @@
-@value white, black, cainYellow, cainYellowFaded from "../../../css/_colors.css";
+@value white, black, cainYellow, cainYellowFaded, daveGreen from "../../../css/_colors.css";
 @value mediumScreen, maxWidth from "../../../css/_sizes.css";
 
-.contactUsContainer {
+.formContainer, .successContainer, .fatalErrorContainer {
   padding: 30px 20px 40px 20px;
-  composes: dividerYellow from "../../../css/_divider.css";
-  background-color: cainYellow;
   text-align: center;
 }
 
+.formContainer, .fatalErrorContainer {
+  composes: dividerYellow from "../../../css/_divider.css";
+  background-color: cainYellow;
+}
+
 .successContainer {
-  /*composes: dividerYellow from "../../../css/_divider.css";*/
-  /*background-color: cainYellow;*/
+  composes: dividerGreen from "../../../css/_divider.css";
+  background-color: daveGreen;
 }
 
 .contactUsForm, .heading {
@@ -36,6 +39,12 @@
   margin: 0px 12px 5px 12px;
 }
 
+.errorMessage {
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .inputBox {
   display: block;
   width: 100%;
@@ -48,6 +57,10 @@
   background: cainYellowFaded;
   border: 0px;
   border-bottom: dotted 2px black;
+}
+
+.hasErrors {
+  border: 2px solid black;
 }
 
 .submitBtn {

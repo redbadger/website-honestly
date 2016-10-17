@@ -31,8 +31,8 @@ export default class HomePage extends Component {
         <CaseStudy />
         <Brie />
         <TechSlice />
-        <BlogSlice />
         <ContactUs />
+        <BlogSlice />
         {
           this.state.newsletterSubmitted
             ? <NewsletterAfterSignUp onSubmit={this.onSubmit} />
