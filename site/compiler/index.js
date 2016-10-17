@@ -6,6 +6,8 @@ import { registerStateNavigator } from '../../site/components/link';
 import layoutTemplate from '../index.ejs';
 import { cssPath, jsPath } from './asset-paths';
 
+const tracking = !!process.env.INSERT_TRACKING;
+
 export function compileRoutes(siteRoutes) {
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
@@ -16,7 +18,7 @@ export function compileRoutes(siteRoutes) {
     const Component = route.component;
     const path = route.filePath;
     const bodyContent = renderToString(<Component />);
-    const body = layoutTemplate({ bodyContent, cssPath, jsPath });
+    const body = layoutTemplate({ tracking, bodyContent, cssPath, jsPath });
     return { body, path };
   });
 }
