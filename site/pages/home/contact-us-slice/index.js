@@ -41,10 +41,6 @@ class ContactUs extends Component {
       return (
         <Success />
       );
-    } else if (fatalError) {
-      return (
-        <FatalError />
-      );
     }
     return (
       <Form
