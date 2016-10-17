@@ -24,4 +24,4 @@ The email address that AWS Lambda error notifications will be sent to.
 
 ## `INSERT_TRACKING`
 
-If set Google Analytics tracking scripts will be inserted into the page.
+If set Google Analytics/leadforensics tracking scripts will be inserted into the page.
