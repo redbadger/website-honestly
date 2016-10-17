@@ -15,6 +15,7 @@ createCommitSite() {
   make build
   echo Copying assets to S3
   aws s3 sync ./dist/assets s3://$BUCKET_NAME/$COMMIT_REF/assets
+  aws s3 sync ./dist/txt s3://$BUCKET_NAME/$COMMIT_REF
   make services-deploy
   make publish-service-invoke
   echo Done!
@@ -32,6 +33,7 @@ deployMaster() {
   make build
   echo Copying assets to S3
   aws s3 sync ./dist/assets s3://$BUCKET_NAME/assets
+  aws s3 sync ./dist/txt s3://$BUCKET_NAME
   make services-deploy
   make publish-service-invoke
   echo Done!
