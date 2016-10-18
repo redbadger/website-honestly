@@ -9,7 +9,7 @@ class ContactUs extends Component {
     super(props);
     this.state = {
       errors: {},
-      success: true,
+      success: false,
       fatalError: false,
     };
     this.submitForm = this.submitForm.bind(this);

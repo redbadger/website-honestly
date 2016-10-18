@@ -7,7 +7,7 @@
   position: relative;
   composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  /*text-align: left;*/
+  text-align: left;
 
   display: flex;
   align-items: center;
