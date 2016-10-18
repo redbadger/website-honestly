@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
-import Cain from './cain';
+import Cain from '../../../components/cain';
 
 const cx = classnames.bind(styles);
 
@@ -71,7 +71,7 @@ class Form extends Component {
           />
 
           <button
-            className={styles.submitBtn}
+            className={styles.button}
             onClick={e => {
               e.preventDefault();
               onSubmit(this.state);
