@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
-import Cain from '../../../components/cain';
 
 const cx = classnames.bind(styles);
 
@@ -23,12 +22,8 @@ class Form extends Component {
   }
 
   render() {
-    const neutralCain = (<Cain says="Hello, I’m Cain, I’m a founder and a record collector." goodNews />);
-    const errorCain = (<Cain says="I need a bit more info please." />);
-
     const { message, contact } = this.state;
     const { onSubmit, errors } = this.props;
-    const showCain = (errors.message || errors.contact) ? errorCain : neutralCain;
     return (
       <section className={styles.formContainer}>
         <h2 className={styles.heading}>
@@ -37,15 +32,13 @@ class Form extends Component {
           Speak to one of our founders.
         </h2>
 
-        {showCain}
-
         <form className={styles.contactUsForm}>
           <label className={styles.formLabel} htmlFor="message">
             Message:
             <span className={styles.errorMessage}>{errors.message}</span>
           </label>
           <textarea
-            rows="6"
+            rows="5"
             className={cx({
               inputBox: true,
               hasErrors: errors.message,
