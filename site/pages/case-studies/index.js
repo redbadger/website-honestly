@@ -2,6 +2,8 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
+import TriangleSlice from './triangle-slice';
+
 /* PNG and Jpg  imports */
 import camdenJpg from './JPG/camden.jpg';
 import financialTimesJpg from './JPG/financialtimes.jpg';
@@ -20,6 +22,7 @@ export default function caseStudies() {
           Do the thing <span className={styles.redText}>right</span>.
         </h1>
       </div>
+      <TriangleSlice />
       <TechSlice />
       <div className={styles.headerContainer}>
         <h1 className={styles.mainHeader}>The proof is in the pudding.</h1>

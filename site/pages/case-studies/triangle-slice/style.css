@@ -1,0 +1,33 @@
+@value white, black, red, linesOnBlack from "../../../css/_colors.css";
+
+.triangleSlice {
+  color: white;
+  background-color: black;
+  padding: 35px 25px 50px 25px;
+}
+
+.triangleHeader {
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+}
+
+.rightThingsList {
+  margin-top: 30px;
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+}
+
+.rightThingDescription {
+  composes: fontS from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+}
+
+.listNumber {
+  border: 1px solid linesOnBlack;
+  display: block;
+  width: 35px;
+  height: 35px;
+  padding-left: 10px;
+  padding-top: 2px;
+  border-radius: 30px;
+}
