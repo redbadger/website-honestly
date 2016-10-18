@@ -34,7 +34,7 @@ class Form extends Component {
 
         <form className={styles.contactUsForm}>
           <label className={styles.formLabel} htmlFor="message">
-            Message:
+            Message:&nbsp;
             <span className={styles.errorMessage}>{errors.message}</span>
           </label>
           <textarea
