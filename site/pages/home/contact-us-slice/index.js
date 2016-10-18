@@ -32,6 +32,9 @@ class ContactUs extends Component {
       })
       .then(response => response.json())
       .then(json => {
+        if (json.errorMessage) {
+          throw new Error(json.errorMessage);
+        }
         return this.setState(json);
       })
       .catch(() => {

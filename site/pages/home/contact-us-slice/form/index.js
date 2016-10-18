@@ -23,7 +23,7 @@ class Form extends Component {
 
   render() {
     const { message, contact } = this.state;
-    const { onSubmit, errors } = this.props;
+    const { onSubmit, errors, fatalError } = this.props;
     return (
       <section className={styles.formContainer}>
         <h2 className={styles.heading}>
@@ -63,27 +63,62 @@ class Form extends Component {
             onChange={this.handleInputChange}
           />
 
-          <button
-            className={styles.button}
-            onClick={e => {
-              e.preventDefault();
-              onSubmit(this.state);
-            }}
-          >
-            Submit
-          </button>
+          {
+            fatalError &&
+            <div>
+              <p className={styles.fatalError}>
+                Oops! Looks like something went wrong.
+              </p>
+              <button
+                className={cx('button', 'fatalErrorButton')}
+                onClick={e => {
+                  e.preventDefault();
+                  onSubmit(this.state);
+                }}
+              >
+                Try Again
+              </button>
+              <p className={styles.fatalError}>
+                or to get in touch email us on<br />hello@red-badger.com
+              </p>
+            </div>
+          }
+
+
+          {
+            !fatalError &&
+              <button
+                className={styles.button}
+                onClick={e => {
+                  e.preventDefault();
+                  onSubmit(this.state);
+                }}
+              >
+                Submit
+              </button>
+          }
+
+          <noscript>
+            <p className={styles.fatalError}>
+              It seems like your JavaScript is disabled.<br />
+            </p>
+            <p className={styles.fatalError}>
+              To get in touch email us on <br />hello@red-badger.com
+            </p>
+          </noscript>
         </form>
       </section>
     );
   }
 }
 
-const { shape, func, string } = React.PropTypes;
+const { shape, func, string, bool } = React.PropTypes;
 Form.propTypes = {
   errors: shape({
     message: string,
     contact: string,
   }).isRequired,
+  fatalError: bool.isRequired,
   onSubmit: func.isRequired,
 };
 
