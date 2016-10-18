@@ -1,0 +1,15 @@
+@value black, daveGreen from "../../../../css/_colors.css";
+
+.successContainer {
+  padding: 30px 20px 40px 20px;
+  text-align: center;
+  composes: dividerGreen from "../../../../css/_divider.css";
+  background-color: daveGreen;
+}
+
+.closeButton {
+  composes: primaryButton from "../../../../css/_links.css";
+  background-color: black;
+  display: block;
+  margin: 40px auto 30px auto;
+}

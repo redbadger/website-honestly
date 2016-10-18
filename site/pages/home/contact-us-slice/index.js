@@ -1,8 +1,7 @@
 /* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
-import Form from './form';
-import Success from './success';
-import FatalError from './fatal-error';
+import Form from './form/';
+import Success from './success/';
 
 class ContactUs extends Component {
   constructor(props) {
@@ -54,6 +53,7 @@ class ContactUs extends Component {
     return (
       <Form
         onSubmit={this.submitForm}
+        fatalError={fatalError}
         errors={errors}
       />
     );

@@ -1,9 +1,6 @@
 import React from 'react';
-import classnames from 'classnames/bind';
 import styles from './style.css';
-import Cain from '../../../components/cain';
-
-const cx = classnames.bind(styles);
+import Cain from '../../../../components/cain';
 
 const Success = ({ onClose }) => (
   <section className={styles.successContainer}>
@@ -12,7 +9,7 @@ const Success = ({ onClose }) => (
       goodNews
     />
     <button
-      className={cx(['button', 'closeButton'])}
+      className={styles.closeButton}
       onClick={e => {
         e.preventDefault();
         onClose();
