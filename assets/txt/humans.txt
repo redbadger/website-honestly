@@ -1,0 +1,40 @@
+/* TEAM */
+
+Name
+Twitter
+
+Alexander Savin
+@alexsavinme
+
+Zoë Bryant
+@zoeabryant
+
+Andrew Bestbier
+@andrew_bestbier
+
+Louis Pilfold
+@louispilfold
+
+Roisi Proven
+@roisiproven
+
+Monika Koziol
+@MonikaKoziol
+
+Clementine Brown
+@clmntnbrn
+
+Elif Gürbüz
+@anurbanromantic
+
+Karima Saad
+
+Andrei Ionescu
+
+Sari Griffiths
+@sarigriffiths
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Software: React, Webpack, BabelJS
