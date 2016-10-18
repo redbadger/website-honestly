@@ -9,10 +9,17 @@ class ContactUs extends Component {
     super(props);
     this.state = {
       errors: {},
-      success: false,
+      success: true,
       fatalError: false,
     };
     this.submitForm = this.submitForm.bind(this);
+    this.onClose = this.onClose.bind(this);
+  }
+
+  onClose() {
+    this.setState({
+      success: false,
+    });
   }
 
   submitForm(formData) {
@@ -39,7 +46,9 @@ class ContactUs extends Component {
     const { errors, success, fatalError } = this.state;
     if (success) {
       return (
-        <Success />
+        <Success
+          onClose={this.onClose}
+        />
       );
     }
     return (

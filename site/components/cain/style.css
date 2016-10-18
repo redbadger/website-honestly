@@ -1,0 +1,52 @@
+@value white, black from "../../css/_colors.css";
+@value zindexOverlay from "../../css/_zindex.css";
+
+.speechBubble {
+  width: 280px;
+  height: 210px;
+  position: relative;
+  composes: fontS from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  /*text-align: left;*/
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speechBubbleText {
+  display: block;
+  z-index: zindexOverlay;
+  color: white;
+  margin-top: -20px;
+  padding: 0px 40px;
+}
+
+.speechBubbleSVG {
+  width: 100%;
+  position: absolute;
+}
+
+.speechBubbleSVG path {
+  fill: black;
+  stroke: black;
+}
+
+.goodNews .speechBubbleSVG path {
+  fill: white;
+  stroke: white;
+}
+.goodNews .speechBubbleText {
+  color: black;
+}
+
+.cain {
+  position: relative;
+  display: inline-block;
+}
+
+.cainPNG {
+  margin-top: -20px;
+  margin-left: 70px;
+  height: 320px;
+}

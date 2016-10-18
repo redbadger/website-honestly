@@ -13,8 +13,8 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
       success: false,
       errors: {
         emailTo: 'Must be present',
-        message: 'Please write something',
-        contact: 'Please provide a way of contacting you',
+        message: 'How can we help? Let us know in the box below.',
+        contact: 'Please let us know the best way of contacting you.',
       },
     });
   });
@@ -38,7 +38,7 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     return expect(promise).to.eventually.deep.equal({
       success: false,
       errors: {
-        message: 'Please write something',
+        message: 'How can we help? Let us know in the box below.',
       },
     });
   });
@@ -50,7 +50,7 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     return expect(promise).to.eventually.deep.equal({
       success: false,
       errors: {
-        contact: 'Please provide a way of contacting you',
+        contact: 'Please let us know the best way of contacting you.',
       },
     });
   });

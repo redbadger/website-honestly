@@ -3,8 +3,8 @@ const contactLabel = 'Contact details:';
 
 const fieldMessages = {
   emailTo: 'Must be present',
-  message: 'Please write something',
-  contact: 'Please provide a way of contacting you',
+  message: 'How can we help? Let us know in the box below.',
+  contact: 'Please let us know the best way of contacting you.',
 };
 
 function filterInternalErrors(error) {
