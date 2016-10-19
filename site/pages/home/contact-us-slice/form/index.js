@@ -49,7 +49,7 @@ class Form extends Component {
           />
 
           <label className={styles.formLabel} htmlFor="contact">
-            Your email or phone:
+            Your email or phone:&nbsp;
             <span className={styles.errorMessage}>{errors.contact}</span>
           </label>
           <input
