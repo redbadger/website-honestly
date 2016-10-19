@@ -1,6 +1,7 @@
 const baseConfig = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const DotenvPlugin = require('webpack-dotenv-plugin');
 
 const devAppConfig = webpackMerge(baseConfig, {
   entry: {
@@ -10,6 +11,10 @@ const devAppConfig = webpackMerge(baseConfig, {
   plugins: [
     new HtmlWebpackPlugin({
       template: './site/index.ejs',
+    }),
+    new DotenvPlugin({
+      sample: './.env.example',
+      path: './.env',
     }),
   ],
 });
