@@ -17,10 +17,4 @@ describe('Contact Us Slice', () => {
     });
     expect(wrapper.find(Success)).to.have.length(1);
   });
-
-  describe('submitForm', () => {
-    it('catches fatal errors, and changes the state to fatalError = true');
-    it('POSTs to our contact us endpoint with JSONified formData with the right headers');
-    it('changes the state after a successful post');
-  });
 });
