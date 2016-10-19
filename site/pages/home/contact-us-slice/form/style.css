@@ -60,6 +60,11 @@
   border: 2px solid black;
 }
 
+.fatalErrorLink {
+  color: black;
+  text-decoration: underline;
+}
+
 .button {
   margin-top: 30px;
   composes: primaryButton from "../../../../css/_links.css";

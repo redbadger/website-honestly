@@ -79,7 +79,10 @@ class Form extends Component {
                 Try Again
               </button>
               <p className={styles.fatalError}>
-                or to get in touch email us on<br />hello@red-badger.com
+                or to get in touch email us on<br />
+                <a href="mailto:hello@red-badger.com" className={styles.fatalErrorLink}>
+                  hello@red-badger.com
+                </a>
               </p>
             </div>
           }
@@ -103,7 +106,10 @@ class Form extends Component {
               It seems like your JavaScript is disabled.<br />
             </p>
             <p className={styles.fatalError}>
-              To get in touch email us on <br />hello@red-badger.com
+              To get in touch email us on <br />
+              <a href="mailto:hello@red-badger.com" className={styles.fatalErrorLink}>
+                hello@red-badger.com
+              </a>
             </p>
           </noscript>
         </form>
