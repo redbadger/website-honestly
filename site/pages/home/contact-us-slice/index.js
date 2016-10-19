@@ -3,6 +3,15 @@ import React, { Component } from 'react';
 import Form from './form/';
 import Success from './success/';
 
+const sendEmail = ({ url, body }) => (
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    mode: 'cors',
+    body,
+  })
+);
+
 class ContactUs extends Component {
   constructor(props) {
     super(props);
@@ -21,35 +30,26 @@ class ContactUs extends Component {
     });
   }
 
-  submitForm(formData) {
-    const formDataJSON = JSON.stringify(formData);
-    const { CONTACT_US_URL } = process.env;
-
-    if (this.state.fatalError) {
-      this.setState({
-        fatalError: false,
-      });
-    }
-
-    fetch(CONTACT_US_URL,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        mode: 'cors',
-        body: formDataJSON,
-      })
+  submitForm(givenFormData) {
+    new Promise(resolve => resolve(givenFormData))
+      .then(formData => (
+        {
+          url: process.env.CONTACT_US_URL,
+          body: JSON.stringify(formData),
+        }
+      ))
+      .then(sendEmail)
       .then(response => response.json())
       .then(json => {
         if (json.errorMessage) {
           throw new Error(json.errorMessage);
         }
-        return this.setState(json);
+        return Object.assign({
+          fatalError: false,
+        }, json);
       })
-      .catch(() => {
-        return this.setState({
-          fatalError: true,
-        });
-      });
+      .catch(() => ({ fatalError: true }))
+      .then(newState => this.setState(newState));
   }
 
   render() {
