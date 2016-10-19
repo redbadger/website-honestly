@@ -23,6 +23,7 @@ class ContactUs extends Component {
 
   submitForm(formData) {
     const formDataJSON = JSON.stringify(formData);
+    const { CONTACT_US_URL } = process.env;
 
     if (this.state.fatalError) {
       this.setState({
@@ -30,7 +31,7 @@ class ContactUs extends Component {
       });
     }
 
-    fetch('https://xmy0g2tvu0.execute-api.eu-west-1.amazonaws.com/dev/contact-us',
+    fetch(CONTACT_US_URL,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const DotenvPlugin = require('webpack-dotenv-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 
@@ -67,6 +68,10 @@ const baseConfig = {
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: 'assets/txt', to: 'txt/' },
     ]),
+    new DotenvPlugin({
+      sample: './.env.example',
+      path: './.env',
+    }),
   ],
 };
 
