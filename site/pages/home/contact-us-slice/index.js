@@ -30,6 +30,7 @@ class ContactUs extends Component {
     });
   }
 
+<<<<<<< baae1170bda0e437bfc3b65d6876220052394f58
   submitForm(givenFormData, sendEmailFn = sendEmail) {
     return Promise.resolve(givenFormData)
       .then(formData => ({
@@ -37,6 +38,25 @@ class ContactUs extends Component {
         body: JSON.stringify(formData),
       }))
       .then(sendEmailFn)
+=======
+  submitForm(formData) {
+    const formDataJSON = JSON.stringify(formData);
+    const { CONTACT_US_URL } = process.env;
+
+    if (this.state.fatalError) {
+      this.setState({
+        fatalError: false,
+      });
+    }
+
+    fetch(CONTACT_US_URL,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        mode: 'cors',
+        body: formDataJSON,
+      })
+>>>>>>> Adding .env var for CONTACT_US_URL
       .then(response => response.json())
       .then(json => {
         if (json.errorMessage) {
