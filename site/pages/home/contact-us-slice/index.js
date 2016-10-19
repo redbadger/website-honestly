@@ -23,6 +23,13 @@ class ContactUs extends Component {
 
   submitForm(formData) {
     const formDataJSON = JSON.stringify(formData);
+
+    if (this.state.fatalError) {
+      this.setState({
+        fatalError: false,
+      });
+    }
+
     fetch('https://xmy0g2tvu0.execute-api.eu-west-1.amazonaws.com/dev/contact-us',
       {
         method: 'POST',
