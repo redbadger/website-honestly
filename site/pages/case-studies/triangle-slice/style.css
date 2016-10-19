@@ -4,6 +4,7 @@
   color: white;
   background-color: black;
   padding: 35px 25px 50px 25px;
+  text-align: center;
 }
 
 .triangleHeader {
@@ -11,10 +12,19 @@
   composes: serif from "../../../css/typography/_fonts.css";
 }
 
-.rightThingsList {
-  margin-top: 30px;
+.triangleThingHeader {
   composes: fontL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
+  text-align: left;
+}
+
+.rightThingsList {
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  margin-top: 30px;
+  max-width: 300px;
+  counter-reset: listCounter;
+  display: inline-block;
 }
 
 .rightThingDescription {
@@ -22,12 +32,20 @@
   composes: sansSerif from "../../../css/typography/_fonts.css";
 }
 
-.listNumber {
-  border: 1px solid linesOnBlack;
-  display: block;
-  width: 35px;
-  height: 35px;
-  padding-left: 10px;
-  padding-top: 2px;
-  border-radius: 30px;
+.rightThingsList li:before {
+  content: counter(listCounter);
+  counter-increment: listCounter;
+  float: left;
+}
+
+.rightThingsList li {
+  margin-bottom: 30px;
+}
+
+.rightThingText {
+  margin: 0 0 20px 40px;
+}
+
+.rightThingText p {
+  text-align: left;
 }
