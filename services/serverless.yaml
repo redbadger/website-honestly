@@ -36,6 +36,13 @@ functions:
           path: contact-us
           method: post
           cors: true
+  signUp:
+    handler: index.signUp
+    events:
+      - http:
+          path: sign-up
+          method: post
+          cors: true
 
 
 resources:

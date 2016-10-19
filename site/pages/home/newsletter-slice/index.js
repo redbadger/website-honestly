@@ -21,20 +21,23 @@ class NewsLetter extends Component {
 
   submitForm(data) {
     const formDataJSON = JSON.stringify(data);
-    fetch('https:/wwww.google.com',
+    fetch('https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/sign-up',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        mode: 'cors',
         body: formDataJSON,
       })
-      .then(response => response.json())
-      .then(json => {
-        return this.setState(json);
+      .then(response => {
+        return response.json();
+      })
+      .then(() => {
+        return this.setState({
+          newsletterSubmitted: true,
+        });
       })
       .catch(() => {
         return this.setState({
-          newsletterSubmitted: true,
+          newsletterSubmitted: false,
         });
       });
   }

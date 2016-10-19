@@ -6,7 +6,8 @@ class BeforeSignUp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: '',
+      email_address: '',
+      status: 'subscribed',
     };
     this.handleInputChange = this.handleInputChange.bind(this);
   }
@@ -28,11 +29,11 @@ class BeforeSignUp extends Component {
         </p>
 
         <form className={styles.form}>
-          <label htmlFor="email" className={styles.formLabel}>Email</label>
+          <label htmlFor="email_address" className={styles.formLabel}>Email</label>
           <input
             onChange={this.handleInputChange}
-            id="email"
-            name="email"
+            id="email_address"
+            name="email_address"
             type="text"
             placeholder="example@email.com"
             className={styles.formInput}
