@@ -31,7 +31,7 @@ class ContactUs extends Component {
   }
 
   submitForm(givenFormData, sendEmailFn = sendEmail) {
-    Promise.resolve(givenFormData)
+    return Promise.resolve(givenFormData)
       .then(formData => ({
         url: process.env.CONTACT_US_URL,
         body: JSON.stringify(formData),
@@ -39,6 +39,7 @@ class ContactUs extends Component {
       .then(sendEmailFn)
       .then(response => response.json())
       .then(json => {
+        console.log('json', json);
         if (json.errorMessage) {
           console.log('json.errorMessage', json.errorMessage);
           throw new Error(json.errorMessage);
@@ -48,11 +49,11 @@ class ContactUs extends Component {
           fatalError: false,
         }, json);
       })
-      .catch(() => ({ fatalError: true }))
-      .then(newState => {
-        console.log('newState', newState);
-        return this.setState(newState)
-      });
+      .catch(() => ({ fatalError: true }));
+      // .then(newState => {
+      //   console.log('newState', newState);
+      //   return this.setState(newState)
+      // });
   }
 
   render() {
