@@ -25,16 +25,6 @@ describe('Contact Us Slice - Form state', () => {
     expect(wrapper.text()).to.contain('please fill in contact details');
   });
 
-  it('contains content for users without js', () => {
-    const wrapper = shallow(<Form
-      errors={{}}
-      fatalError={false}
-      onSubmit={() => {}}
-    />);
-    expect(wrapper.find('noscript')).to.have.length(1);
-    expect(wrapper.find('noscript').text()).to.contain('It seems like your JavaScript is disabled.');
-  });
-
   it('displays an fatalError occured message', () => {
     const wrapper = shallow(<Form
       errors={{}}
