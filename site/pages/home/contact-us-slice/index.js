@@ -30,17 +30,13 @@ class ContactUs extends Component {
     });
   }
 
-  submitForm(givenFormData) {
-    Promise.resolve(givenFormData)
-      .then(formData => {
-        console.log('process.env', process.env);
-        console.log('process.env.CONTACT_US_URL', process.env.CONTACT_US_URL);
-        return {
-          url: process.env.CONTACT_US_URL,
-          body: JSON.stringify(formData),
-        }
-      })
-      .then(sendEmail)
+  submitForm(givenFormData, sendEmailFn = sendEmail) {
+    return Promise.resolve(givenFormData)
+      .then(formData => ({
+        url: process.env.CONTACT_US_URL,
+        body: JSON.stringify(formData),
+      }))
+      .then(sendEmailFn)
       .then(response => response.json())
       .then(json => {
         if (json.errorMessage) {
