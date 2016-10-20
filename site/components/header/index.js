@@ -12,10 +12,10 @@ const Header = () => {
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul className={styles.mediumScreenNav}>
-          <li><a href="https://red-badger.com/services/">What we do</a></li>
-          <li><a href="https://red-badger.com/about-us/">About us</a></li>
+          <li><a href="/what-we-do/">What we do</a></li>
+          <li><a href="/about-us/">About us</a></li>
           <li><a href="http://red-badger.com/blog/">Blog</a></li>
-          <li><a href="https://red-badger.com/about-us/events/">Events</a></li>
+          <li><a href="/about-us/events/">Events</a></li>
         </ul>
       </nav>
 
@@ -31,12 +31,12 @@ const Header = () => {
           <nav className={styles.smallScreenNavContainer} role="navigation">
             <ul className={styles.smallScreenNav}>
               <li><a href="/">Home</a></li>
-              <li><a href="https://red-badger.com/about-us/">About us</a></li>
-              <li><a href="https://red-badger.com/services/">What we do</a></li>
+              <li><a href="/about-us/">About us</a></li>
+              <li><a href="/what-we-do/">What we do</a></li>
               <li><a href="http://red-badger.com/blog/">Blog</a></li>
-              <li><a href="https://red-badger.com/about-us/events/">Events</a></li>
-              <li><a href="https://red-badger.com/about-us/join-us/">Jobs</a></li>
-              <li><a href="https://red-badger.com/about-us/contact-us/">Contact us</a></li>
+              <li><a href="/about-us/events/">Events</a></li>
+              <li><a href="/about-us/join-us/">Jobs</a></li>
+              <li><a href="/about-us/contact-us/">Contact us</a></li>
             </ul>
           </nav>
         </div>
