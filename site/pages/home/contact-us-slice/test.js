@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import ContactUs from '.';
 import Form from './form/';
 import Success from './success/';
@@ -10,92 +10,81 @@ describe('Contact Us Slice', () => {
     expect(wrapper.find(Form)).to.have.length(1);
   });
 
-  it('shows success content if the form has been submitted successfully', () => {
-    const wrapper = shallow(<ContactUs />);
-    wrapper.setState({
-      success: true,
-    });
-    expect(wrapper.find(Success)).to.have.length(1);
-  });
-
-
   describe('submitForm', () => {
-
-    it('changes the state after a resolved successful post', done => {
-      const sendEmailFn = (url, body) => {
-        const blankPromise = new Promise(resolve => {
-          resolve({
-            json: () => '{"success": true,"errors": {}}',
-          });
-          done();
-        });
-
-        return {
-          promise: () => blankPromise,
-        };
-      };
-
-      const wrapper = shallow(<ContactUs />);
-      // TODO: make this work with JS's async/promise stuff
-
-      // start with success component
-      expect(wrapper.find(Success)).to.have.length(0);
-
-      // trigger submit function
-      // it's rigged to send a successful result
-      wrapper.instance().submitForm({}, sendEmailFn);
-
-      // should see success component when ^ is done
-      expect(wrapper.find(Success)).to.have.length(1);
-    });
-
-    it.only('changes the state after a resolved post with errors', done => {
+    it('shows the success content after a resolved successful post', done => {
       const sendEmailFn = () => new Promise(resolve => {
         resolve({
-          json: () => ({
-            "success": false,
-            "errors": {
-              "message": "How can we help? Let us know in the box below.",
-              "contact": "Please let us know the best way of contacting you."
-            }
-          })
+          json: () => new Promise(resolveLv2 => {
+            resolveLv2({
+              success: true,
+              errors: {},
+            });
+          }),
         });
       });
 
-      const wrapper = shallow(<ContactUs />);
+      const wrapper = mount(<ContactUs />);
       const promise = wrapper.instance().submitForm({}, sendEmailFn);
 
-      promise.then(function(result) {
-        expect(result).to.deep.equal('cow');
-      }).catch(err => {
-        console.error(err);
-      }).then(() => {
+      promise.then(() => {
+        expect(wrapper.find(Form)).to.have.length(0);
+        expect(wrapper.find(Success)).to.have.length(1);
         done();
-      })
-      // TODO: make this work with JS's async/promise stuff
-
-      // start with no errors passed to Form component
-      // trigger submit function
-      // it's rigged to send a fail result
-      // form component has errors now
-      // note: error content is purposefully wrong - it's caught a lot of false positives...
-      // should be:
-      // expect(wrapper.find(Form).props().errors).to.deep.equal({
-      // {
-      //   "success": false,
-      //   "errors": {
-      //     "message": "How can we help? Let us know in the box below.",
-      //     "contact": "Please let us know the best way of contacting you."
-      //   }
-      // }
-
-
-      // expect(wrapper.find(Form).props().errors).to.deep.equal({});
-      // expect(promise) .to.eventually.deep.equal('cow');
-
+      }).catch(err => {
+        done(err);
+      });
     });
 
-    it('catches fatal errors, and changes the state to fatalError = true');
-    it('POSTs to our contact us endpoint with JSONified formData with the right headers');
+    it('shows the form still after a resolved post with errors', done => {
+      const sendEmailFn = () => new Promise(resolve => {
+        resolve({
+          json: () => new Promise(resolveLv2 => {
+            resolveLv2({
+              success: false,
+              errors: {
+                message: 'How can we help? Let us know in the box below.',
+                contact: 'Please let us know the best way of contacting you.',
+              },
+            });
+          }),
+        });
+      });
+
+      const wrapper = mount(<ContactUs />);
+      const promise = wrapper.instance().submitForm({}, sendEmailFn);
+
+      promise.then(() => {
+        const formElement = wrapper.find(Form);
+        expect(formElement).to.have.length(1);
+        expect(wrapper.find(Success)).to.have.length(0);
+        expect(formElement.props().errors).to.deep.equal({
+          message: 'How can we help? Let us know in the box below.',
+          contact: 'Please let us know the best way of contacting you.',
+        });
+
+        done();
+      }).catch(err => {
+        done(err);
+      });
+    });
+
+    it('shows the form still after a fatal error', done => {
+      const sendEmailFn = () => new Promise((resolve, reject) => {
+        reject('whoops');
+      });
+
+      const wrapper = mount(<ContactUs />);
+      const promise = wrapper.instance().submitForm({}, sendEmailFn);
+
+      promise.then(() => {
+        const formElement = wrapper.find(Form);
+        expect(formElement).to.have.length(1);
+        expect(wrapper.find(Success)).to.have.length(0);
+        expect(formElement.props().fatalError).to.equal(true);
+        done();
+      }).catch(err => {
+        done(err);
+      });
+    });
   });
 });
