@@ -32,7 +32,7 @@ const clientConfig = webpackMerge(baseConfig, {
     client: './client/index.js',
   },
   output: {
-    filename: 'assets/index-[hash:5].js',
+    filename: 'assets-honestly/index-[hash:5].js',
   },
   target: 'web',
   externals: [
