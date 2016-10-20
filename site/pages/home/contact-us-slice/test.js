@@ -52,30 +52,33 @@ describe('Contact Us Slice', () => {
     it.only('changes the state after a resolved post with errors', done => {
       const sendEmailFn = () => new Promise(resolve => {
         resolve({
-          json: () => '{"success": false,"errors": {"message": "How can we help? Let us know in the box below.","contact": "Please let us know the best way of contacting you."}}',
+          json: () => ({
+            "success": false,
+            "errors": {
+              "message": "How can we help? Let us know in the box below.",
+              "contact": "Please let us know the best way of contacting you."
+            }
+          })
         });
-        done();
       });
 
       const wrapper = shallow(<ContactUs />);
+      const promise = wrapper.instance().submitForm({}, sendEmailFn);
+
+      promise.then(function(result) {
+        expect(result).to.deep.equal('cow');
+      }).catch(err => {
+        console.error(err);
+      }).then(() => {
+        done();
+      })
       // TODO: make this work with JS's async/promise stuff
 
       // start with no errors passed to Form component
-      // expect(wrapper.find(Form).props().errors).to.deep.equal({});
-
       // trigger submit function
       // it's rigged to send a fail result
-      const promise = wrapper.instance().submitForm({}, sendEmailFn);
-
       // form component has errors now
       // note: error content is purposefully wrong - it's caught a lot of false positives...
-
-      // promise.then(function(result) {
-      //   expect(result).to.deep.equal('cow');
-      // })
-
-      expect(promise).to.eventually.deep.equal('cow');
-
       // should be:
       // expect(wrapper.find(Form).props().errors).to.deep.equal({
       // {
@@ -85,6 +88,11 @@ describe('Contact Us Slice', () => {
       //     "contact": "Please let us know the best way of contacting you."
       //   }
       // }
+
+
+      // expect(wrapper.find(Form).props().errors).to.deep.equal({});
+      // expect(promise) .to.eventually.deep.equal('cow');
+
     });
 
     it('catches fatal errors, and changes the state to fatalError = true');

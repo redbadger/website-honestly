@@ -39,7 +39,7 @@ class ContactUs extends Component {
       .then(sendEmailFn)
       .then(response => response.json())
       .then(json => {
-        console.log('json', json);
+        // console.log('json', json);
         if (json.errorMessage) {
           console.log('json.errorMessage', json.errorMessage);
           throw new Error(json.errorMessage);
