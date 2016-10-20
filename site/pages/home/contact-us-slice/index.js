@@ -31,7 +31,7 @@ class ContactUs extends Component {
   }
 
   submitForm(givenFormData) {
-    new Promise(resolve => resolve(givenFormData))
+    Promise.resolve(givenFormData)
       .then(formData => (
         {
           url: process.env.CONTACT_US_URL,
