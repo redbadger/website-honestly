@@ -30,26 +30,29 @@ class ContactUs extends Component {
     });
   }
 
-  submitForm(givenFormData) {
+  submitForm(givenFormData, sendEmailFn = sendEmail) {
     Promise.resolve(givenFormData)
-      .then(formData => (
-        {
-          url: process.env.CONTACT_US_URL,
-          body: JSON.stringify(formData),
-        }
-      ))
-      .then(sendEmail)
+      .then(formData => ({
+        url: process.env.CONTACT_US_URL,
+        body: JSON.stringify(formData),
+      }))
+      .then(sendEmailFn)
       .then(response => response.json())
       .then(json => {
         if (json.errorMessage) {
+          console.log('json.errorMessage', json.errorMessage);
           throw new Error(json.errorMessage);
-        }
+        };
+
         return Object.assign({
           fatalError: false,
         }, json);
       })
       .catch(() => ({ fatalError: true }))
-      .then(newState => this.setState(newState));
+      .then(newState => {
+        console.log('newState', newState);
+        return this.setState(newState)
+      });
   }
 
   render() {
