@@ -2,7 +2,9 @@
 set -euo pipefail
 
 ENV_FILE=".env"
-
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "looks like we're chillin in load-env.sh"
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 if [ -f $ENV_FILE ];
 then
   VAR_NAMES=$(cat $ENV_FILE | grep -Ev '^#' | grep = | cut -d= -f1)

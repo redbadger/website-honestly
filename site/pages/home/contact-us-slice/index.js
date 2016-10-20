@@ -32,12 +32,14 @@ class ContactUs extends Component {
 
   submitForm(givenFormData) {
     Promise.resolve(givenFormData)
-      .then(formData => (
-        {
+      .then(formData => {
+        console.log('process.env', process.env);
+        console.log('process.env.CONTACT_US_URL', process.env.CONTACT_US_URL);
+        return {
           url: process.env.CONTACT_US_URL,
           body: JSON.stringify(formData),
         }
-      ))
+      })
       .then(sendEmail)
       .then(response => response.json())
       .then(json => {

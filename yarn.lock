@@ -1765,16 +1765,6 @@ dot-prop@^3.0.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv-safe@^2.3.1:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/dotenv-safe/-/dotenv-safe-2.3.2.tgz#26bde2a2704b66d5de56c4f41c2075db7090bad5"
-  dependencies:
-    dotenv "^2.0.0"
-
-dotenv@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-2.0.0.tgz#bd759c357aaa70365e01c96b7b0bec08a6e0d949"
-
 duplexer2@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer2/-/duplexer2-0.1.4.tgz#8b12dab878c0d69e3e7891051662a32fc6bddcc1"
@@ -5999,13 +5989,6 @@ webpack-dev-server@^1.15.2:
     supports-color "^3.1.1"
     webpack-dev-middleware "^1.4.0"
 
-webpack-dotenv-plugin:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/webpack-dotenv-plugin/-/webpack-dotenv-plugin-1.4.0.tgz#80001672371ccf8d73f6155a8fe05fb1aa9a929d"
-  dependencies:
-    dotenv-safe "^2.3.1"
-    webpack "^1.13.0"
-
 webpack-merge@^0.14.1:
   version "0.14.1"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-0.14.1.tgz#d6bfe6d9360a024e1e7f8e6383ae735f1737cd23"
@@ -6022,7 +6005,7 @@ webpack-sources@^0.1.0:
     source-list-map "~0.1.0"
     source-map "~0.5.3"
 
-webpack@^1.13.0, webpack@^1.13.2:
+webpack@^1.13.2:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-1.13.2.tgz#f11a96f458eb752970a86abe746c0704fabafaf3"
   dependencies:
