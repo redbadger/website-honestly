@@ -16,7 +16,7 @@ export default class AfterSignup extends Component {
     this.state = {
       name: '',
       company: '',
-      job: '',
+      role: '',
     };
     this.handleInputChange = this.handleInputChange.bind(this);
   }
@@ -73,8 +73,8 @@ export default class AfterSignup extends Component {
           <div>
             <label htmlFor="job" className={styles.formLabel}>Job role</label>
             <input
-              id="job"
-              name="job"
+              id="role"
+              name="role"
               type="text"
               placeholder="Engineer"
               className={styles.formInput}

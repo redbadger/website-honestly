@@ -7,7 +7,6 @@ class BeforeSignUp extends Component {
     super(props);
     this.state = {
       email_address: '',
-      status: 'subscribed',
     };
     this.handleInputChange = this.handleInputChange.bind(this);
   }
@@ -30,6 +29,7 @@ class BeforeSignUp extends Component {
 
         <form className={styles.form}>
           <label htmlFor="email_address" className={styles.formLabel}>Email</label>
+          <div>{this.props.errorMessage}</div>
           <input
             onChange={this.handleInputChange}
             id="email_address"
@@ -63,9 +63,10 @@ class BeforeSignUp extends Component {
   }
 }
 
-const { func } = React.PropTypes;
+const { func, string } = React.PropTypes;
 BeforeSignUp.propTypes = {
   onSubmit: func.isRequired,
+  errorMessage: string.isRequired,
 };
 
 export default BeforeSignUp;

@@ -9,6 +9,11 @@
   padding: 30px 20px;
 }
 
+.errorText: {
+  position: relative;
+  left: -225px;
+}
+
 .submitted {
   composes: dividerGreen from "../../../css/_divider.css";
   background-color: daveGreen;
