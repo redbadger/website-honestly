@@ -100,7 +100,7 @@ function makePromiseEmailSender(emailSender) {
 }
 
 export function validateAndSendEmail(email, emailSender) {
-  return new Promise(resolve => resolve(email))
+  return Promise.resolve(email)
     .then(validateEmail)
     .then(constructEmail)
     .then(makePromiseEmailSender(emailSender))
