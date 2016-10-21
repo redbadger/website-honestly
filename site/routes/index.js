@@ -3,8 +3,7 @@ import React from 'react';
 import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
-import CaseStudies from '../pages/case-studies';
-
+import WhatWeDoPage from '../pages/what-we-do';
 
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
@@ -44,9 +43,9 @@ export default function routes() {
       component: () => <L><NotFoundPage /></L>,
     },
     {
-      key: 'caseStudiesPage',
-      route: 'case-studies',
-      component: () => <L><CaseStudies /></L>,
+      key: 'whatWeDoPage',
+      route: 'what-we-do',
+      component: () => <L><WhatWeDoPage /></L>,
     },
   ]);
 }
