@@ -69,4 +69,9 @@ class ContactUs extends Component {
   }
 }
 
+const { string } = React.PropTypes;
+ContactUs.propTypes = {
+  postURL: string,
+};
+
 export default ContactUs;
