@@ -4,9 +4,7 @@ import { compileSite, compileRoutes } from '.';
 describe('site/compiler', () => {
   describe('compileSite', () => {
     it('renders all the pages of the site', () => {
-      const pages = compileSite({
-        foo: 'bar',
-      });
+      const pages = compileSite({});
       expect(pages.length).to.be.above(0);
     });
   });
