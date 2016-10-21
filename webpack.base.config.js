@@ -34,7 +34,7 @@ const baseConfig = {
         exclude: [/dist\//, /node_modules/],
         loader: 'file-loader',
         query: {
-          name: 'assets/[name]-[hash:base64:5].[ext]',
+          name: 'assets-honestly/[name]-[hash:base64:5].[ext]',
           publicPath,
         },
       },
@@ -60,11 +60,11 @@ const baseConfig = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new ExtractTextPlugin(
-      'assets/styles-[contenthash:base64:5].css',
+      'assets-honestly/styles-[contenthash:base64:5].css',
       { allChunks: true }
     ),
     new CopyWebpackPlugin([
-      { from: 'assets/favicons', to: 'assets/favicons' },
+      { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: 'assets/txt', to: 'txt/' },
     ]),
   ],
