@@ -31,9 +31,8 @@ export default class HomePage extends Component {
         <CaseStudy />
         <Brie />
         <TechSlice />
-        <h1>{ this.props.data.contactUsURL }</h1>
         <BlogSlice />
-        <ContactUs />
+        <ContactUs postURL={this.props.data.contactUsURL} />
         {
           this.state.newsletterSubmitted
             ? <NewsletterAfterSignUp onSubmit={this.onSubmit} />

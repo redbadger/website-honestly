@@ -58,6 +58,7 @@ const baseConfig = {
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new ExtractTextPlugin(
       'assets-honestly/styles-[contenthash:base64:5].css',
       { allChunks: true }
