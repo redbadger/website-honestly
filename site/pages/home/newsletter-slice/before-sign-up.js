@@ -7,6 +7,7 @@ class BeforeSignUp extends Component {
     super(props);
     this.state = {
       email_address: '',
+      method: 'POST',
     };
     this.handleInputChange = this.handleInputChange.bind(this);
   }

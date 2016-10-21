@@ -10,6 +10,7 @@ class NewsLetter extends Component {
       newsletterSubmitted: false,
       email_address: '',
       errorMessage: '',
+      updatedFormSubmitted: false,
     };
     this.submitForm = this.submitForm.bind(this);
   }
@@ -24,7 +25,15 @@ class NewsLetter extends Component {
   submitForm(data) {
     const object = Object.assign({}, data);
     if (!data.email_address) {
+      // If we are on the second part of the for, this gets the email saved in our state
       object.email_address = this.state.email_address;
+    }
+    if (this.state.email_address && !data.name) {
+      return this.setState({
+        newsletterSubmitted: true,
+        email_address: this.state.email_address,
+        errorMessage: 'A name is required from you!',
+      });
     }
     const formDataJSON = JSON.stringify(object);
     fetch('https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/sign-up',
@@ -51,7 +60,11 @@ class NewsLetter extends Component {
       <div>
         {
           this.state.newsletterSubmitted
-          ? <NewsletterAfterSignUp onSubmit={this.submitForm} />
+          ? <NewsletterAfterSignUp
+            onSubmit={this.submitForm}
+            updatedFormSubmitted={this.state.updatedFormSubmitted}
+            errorMessage={this.state.errorMessage}
+          />
           : <NewsletterBeforeSignUp
             onSubmit={this.submitForm}
             errorMessage={this.state.errorMessage}

@@ -16,6 +16,7 @@ describe('formatResponse', () => {
       newsletterSubmitted: false,
       errorMessage: test.detail,
       email_address: 'test@gmail.com',
+      updatedFormSubmitted: false,
     });
   });
   it('returns the correct error message response if the account already exists', () => {
@@ -28,12 +29,18 @@ describe('formatResponse', () => {
         FNAME: '',
       },
     };
+    const data = {
+      merge_fields: {
+        FNAME: '',
+      },
+    };
 
-    const result = formatResponse(test);
+    const result = formatResponse(test, data);
     expect(result).to.deep.equal({
-      newsletterSubmitted: false,
-      errorMessage: 'This email address has already signed up to this mailing list',
+      newsletterSubmitted: true,
+      errorMessage: '',
       email_address: 'test@gmail.com',
+      updatedFormSubmitted: false,
     });
   });
   it('returns the correct values if there are no erros and a new account has been created', () => {
@@ -52,6 +59,7 @@ describe('formatResponse', () => {
       newsletterSubmitted: true,
       errorMessage: '',
       email_address: 'test@gmail.com',
+      updatedFormSubmitted: false,
     });
   });
 });
