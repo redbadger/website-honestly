@@ -5,6 +5,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 
+const contactUsUrl = process.env.CONTACT_US_URL;
+
+console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+console.log('baseConfig');
+console.log(contactUsUrl);
 
 const baseConfig = {
   output: {

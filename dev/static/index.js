@@ -41,6 +41,11 @@ function writePages(pages) {
   );
 }
 
+
+console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+console.log('in dev/static');
+console.log('process.env.CONTACT_US_URL', process.env.CONTACT_US_URL);
+
 getSiteState()
   .then(compileSite)
   .then(writePages)
