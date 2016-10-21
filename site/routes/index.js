@@ -8,6 +8,9 @@ import CaseStudies from '../pages/case-studies';
 
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
+  console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+  console.log('in site/routes');
+  console.log('process.env.CONTACT_US_URL', process.env.CONTACT_US_URL);
   return `${routePrefix}${route}`;
 }
 

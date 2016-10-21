@@ -6,6 +6,10 @@ import { registerStateNavigator } from '../../site/components/link';
 import makeRoutes from '../../site/routes';
 
 export function makeApp({ element, data, history }) {
+  console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+  console.log('makeApp');
+  console.log('process.env.CONTACT_US_URL', process.env.CONTACT_US_URL);
+
   const routes = makeRoutes(data);
   const stateNavigator = new Navigation.StateNavigator(
     routes,

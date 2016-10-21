@@ -5,6 +5,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 
+const contactUsUrl = process.env.CONTACT_US_URL;
+
+console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+console.log('baseConfig');
+console.log(contactUsUrl);
 
 const baseConfig = {
   output: {
@@ -58,7 +63,6 @@ const baseConfig = {
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new ExtractTextPlugin(
       'assets/styles-[contenthash:base64:5].css',
       { allChunks: true }

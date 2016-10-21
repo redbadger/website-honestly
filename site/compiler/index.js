@@ -24,5 +24,8 @@ export function compileRoutes(siteRoutes) {
 }
 
 export function compileSite(data) {
+  console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
+  console.log('compileSite');
+  console.log('process.env.CONTACT_US_URL', process.env.CONTACT_US_URL);
   return compileRoutes(makeRoutes(data));
 }
