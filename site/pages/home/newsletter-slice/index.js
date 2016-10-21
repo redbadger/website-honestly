@@ -36,9 +36,9 @@ class NewsLetter extends Component {
       });
     }
     const formDataJSON = JSON.stringify(object);
-    fetch('https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/sign-up',
+    fetch('https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/mailing-list',
       {
-        method: 'POST',
+        method: data.method,
         headers: { 'Content-Type': 'application/json' },
         body: formDataJSON,
       })
