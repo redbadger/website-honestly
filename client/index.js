@@ -1,8 +1,13 @@
 import Navigation from 'navigation';
 import { makeApp } from '../site/client';
+import getSiteState from '../state';
 
-const element = document.querySelector('.js-app');
-const data = {};
-const history = new Navigation.HTML5HistoryManager();
-const app = makeApp({ element, data, history });
-app.start();
+getSiteState()
+  .then(data => {
+    const element = document.querySelector('.js-app');
+    const history = new Navigation.HTML5HistoryManager();
+    return makeApp({ element, data, history });
+  })
+  .then(app => {
+    app.start();
+  });

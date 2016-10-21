@@ -31,12 +31,12 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes() {
+export default function routes(data) {
   return prefixRoutes([
     {
       key: 'homePage',
       route: '',
-      component: () => <L><HomePage /></L>,
+      component: () => <L><HomePage data={data} /></L>,
     },
     {
       key: 'notFoundPage',

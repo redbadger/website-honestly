@@ -7,12 +7,12 @@ import BeforeSignUp from './newsletter-slice/before-sign-up';
 describe('HomePage', () => {
   describe('Newsletter slice', () => {
     it('shows pre-signup content if the form has not been submitted yet - default state', () => {
-      const wrapper = shallow(<Home />);
+      const wrapper = shallow(<Home data={{}} />);
       expect(wrapper.find(BeforeSignUp)).to.have.length(1);
     });
 
     it('changes "submitted" state when submitted', () => {
-      const wrapper = shallow(<Home />);
+      const wrapper = shallow(<Home data={{}} />);
       wrapper.instance().onSubmit({
         preventDefault: () => {},
       });
@@ -20,7 +20,7 @@ describe('HomePage', () => {
     });
 
     it('shows post-signup content if the form has been submitted', () => {
-      const wrapper = shallow(<Home />);
+      const wrapper = shallow(<Home data={{}} />);
       wrapper.setState({
         newsletterSubmitted: true,
       });
