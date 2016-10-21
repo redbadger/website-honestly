@@ -16,7 +16,9 @@ Red Badger Website Episode 6: Return of the Jedi.
 ```sh
 make                   # Print the help
 make dev               # Run the dev server
-make clean dev-compile # Compile the site locally
+# NOTE: if your development relys on environment variables,
+# use dev-static to compile the site first
+make clean dev-static  # Compile the site locally
 
 # Deploy to dev lambda environment
 make clean services-deploy
