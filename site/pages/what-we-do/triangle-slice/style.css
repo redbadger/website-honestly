@@ -1,4 +1,5 @@
 @value white, black, red, linesOnBlack from "../../../css/_colors.css";
+@value mediumScreen from "../../../css/_sizes.css";
 
 .triangleSlice {
   composes: dividerBlack from "../../../css/_divider.css";
@@ -45,7 +46,7 @@
   margin-bottom: 30px;
 }
 
-.rightThingsList img {
+.mobileTriangleImage {
   width: 50%;
   height: 50%;
 }
@@ -56,4 +57,10 @@
 
 .rightThingText p {
   text-align: left;
+}
+
+@media mediumScreen {
+  .mobileTriangleImage {
+    display: none;
+  }
 }

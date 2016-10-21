@@ -20,7 +20,7 @@ const triangleSlice = () => {
               continuously getting closer to this end goal.
             </p>
           </div>
-          <img alt="Triangle Vision section" src={triangleTopPNG} />
+          <img className={styles.mobileTriangleImage} alt="Triangle Vision section" src={triangleTopPNG} />
         </li>
         <li>
           <div className={styles.rightThingText}>
@@ -32,7 +32,7 @@ const triangleSlice = () => {
               customer value are built first.
             </p>
           </div>
-          <img alt="Triangle Validation section" src={triangleMidPNG} />
+          <img className={styles.mobileTriangleImage} alt="Triangle Validation section" src={triangleMidPNG} />
         </li>
         <li>
           <div className={styles.rightThingText}>
@@ -43,7 +43,7 @@ const triangleSlice = () => {
               on feature delivery.
             </p>
           </div>
-          <img alt="Triangle Delivery section" src={triangleEndPNG} />
+          <img className={styles.mobileTriangleImage} alt="Triangle Delivery section" src={triangleEndPNG} />
         </li>
       </ol>
     </section>
