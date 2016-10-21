@@ -1,6 +1,7 @@
 @value white, black, red, linesOnBlack from "../../../css/_colors.css";
 
 .triangleSlice {
+  composes: dividerBlack from "../../../css/_divider.css";
   color: white;
   background-color: black;
   padding: 35px 25px 50px 25px;
@@ -10,6 +11,8 @@
 .triangleHeader {
   composes: fontL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .triangleThingHeader {
@@ -40,6 +43,11 @@
 
 .rightThingsList li {
   margin-bottom: 30px;
+}
+
+.rightThingsList img {
+  width: 50%;
+  height: 50%;
 }
 
 .rightThingText {

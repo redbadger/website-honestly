@@ -1,15 +1,14 @@
-import InlineSVG from 'svg-inline-react';
 import React from 'react';
 import styles from './style.css';
 
-/* SVGs */
-import triangleTopSVG from './SVG/triangleTop.svg';
-import triangleMidSVG from './SVG/triangleMid.svg';
-import triangleEndSVG from './SVG/triangleEnd.svg';
+/* PNGs */
+import triangleTopPNG from './PNG/triangleTop.png';
+import triangleMidPNG from './PNG/triangleMid.png';
+import triangleEndPNG from './PNG/triangleEnd.png';
 
 const triangleSlice = () => {
   return (
-    <div className={styles.triangleSlice}>
+    <section className={styles.triangleSlice}>
       <h2 className={styles.triangleHeader}>How do we get to the right thing?</h2>
       <ol className={styles.rightThingsList}>
         <li>
@@ -21,7 +20,7 @@ const triangleSlice = () => {
               continuously getting closer to this end goal.
             </p>
           </div>
-          <InlineSVG src={triangleTopSVG} />
+          <img alt="Triangle Vision section" src={triangleTopPNG} />
         </li>
         <li>
           <div className={styles.rightThingText}>
@@ -33,7 +32,7 @@ const triangleSlice = () => {
               customer value are built first.
             </p>
           </div>
-          <InlineSVG src={triangleMidSVG} />
+          <img alt="Triangle Validation section" src={triangleMidPNG} />
         </li>
         <li>
           <div className={styles.rightThingText}>
@@ -44,10 +43,10 @@ const triangleSlice = () => {
               on feature delivery.
             </p>
           </div>
-          <InlineSVG src={triangleEndSVG} />
+          <img alt="Triangle Delivery section" src={triangleEndPNG} />
         </li>
       </ol>
-    </div>
+    </section>
   );
 };
 
