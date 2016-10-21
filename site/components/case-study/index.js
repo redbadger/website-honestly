@@ -1,7 +1,6 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
-import Link from '../link';
 
 /* PNG logo imports */
 import bbcPNG from './PNG/bbc.png';
@@ -26,37 +25,37 @@ const CaseStudy = () => (
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.figuresContainer}>
       <div>
-        <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
+        <a href="/our-work/case-study/fortnum-and-mason/">
           <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} alt="Three" />
         </a>
-        <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/" className={styles.caseText}>
+        <a href="/our-work/case-study/fortnum-and-mason/" className={styles.caseText}>
           <span>Number of awards for the new online store</span>
         </a>
-        <a href="https://red-badger.com/our-work/case-study/fortnum-and-mason/">
+        <a href="/our-work/case-study/fortnum-and-mason/">
           <img alt="The logo of Fortnum & Masons" src={fortnumPNG} />
         </a>
       </div>
       <div>
-        <a href="https://red-badger.com/our-work/case-study/camden-market/">
+        <a href="/our-work/case-study/camden-market/">
           <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} alt="Ten" />
         </a>
-        <a href="https://red-badger.com/our-work/case-study/camden-market/" className={styles.caseText}>
+        <a href="/our-work/case-study/camden-market/" className={styles.caseText}>
           <span>Weeks to deliver a new online platform</span>
         </a>
-        <a href="https://red-badger.com/our-work/case-study/camden-market/">
+        <a href="/our-work/case-study/camden-market/">
           <img alt="The logo of Camden Market" src={camdenPNG} />
         </a>
       </div>
       <div>
-        <a href="https://red-badger.com/our-work/case-study/sky-cms/">
+        <a href="/our-work/case-study/sky-cms/">
           <InlineSVG src={skyFigureSVG} className={styles.caseFigure} alt="50%" />
         </a>
-        <a href="https://red-badger.com/our-work/case-study/sky-cms/" className={styles.caseText}>
+        <a href="/our-work/case-study/sky-cms/" className={styles.caseText}>
           <span>
             Drop in customers pushing the &lsquo;need more help&rsquo; button
           </span>
         </a>
-        <a href="https://red-badger.com/our-work/case-study/sky-cms/">
+        <a href="/our-work/case-study/sky-cms/">
           <img alt="The logo of Sky" src={skyPNG} />
         </a>
       </div>
@@ -77,7 +76,7 @@ const CaseStudy = () => (
       <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
     </div>
     <div className={styles.buttonContainer}>
-      <Link className={styles.button} to="caseStudiesPage">See more of our work</Link>
+      <a className={styles.button} href="/our-work/">See more of our work</a>
     </div>
   </section>
 );

@@ -8,7 +8,7 @@ const Brie = () => (
       We dig deeper to deliver the right solution by first understanding and validating the problem.
     </h2>
     <img src={BriePNG} alt="Illustration" className={styles.brie} />
-    <a href="https://red-badger.com/services/" className={styles.featureBtn}>How we work</a>
+    <a href="/what-we-do/" className={styles.featureBtn}>What we do</a>
   </section>
 );
 
