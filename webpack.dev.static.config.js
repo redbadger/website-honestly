@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const baseConfig = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
-const DotenvPlugin = require('webpack-dotenv-plugin');
 
 const devStaticConfig = webpackMerge(baseConfig, {
   entry: {
@@ -51,10 +50,6 @@ const clientConfig = webpackMerge(baseConfig, {
       filename: 'client-digest.json',
       path: './dist/dev-static',
       metadata: { bundleName: 'client' },
-    }),
-    new DotenvPlugin({
-      sample: './.env.example',
-      path: './.env',
     }),
   ],
 });
