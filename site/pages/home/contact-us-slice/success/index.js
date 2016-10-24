@@ -1,13 +1,11 @@
 import React from 'react';
 import styles from './style.css';
-import Cain from '../../../../components/cain';
 
 const Success = ({ onClose }) => (
   <section className={styles.successContainer}>
-    <Cain
-      says="Got it! Thanks"
-      goodNews
-    />
+    <h2 className={styles.heading}>
+      Got it! Thanks
+    </h2>
     <button
       className={styles.closeButton}
       onClick={e => {

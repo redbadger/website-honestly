@@ -7,6 +7,14 @@
   background-color: daveGreen;
 }
 
+.heading {
+  max-width: maxWidth;
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin: 0px auto 40px auto;
+  color: black;
+}
+
 .closeButton {
   composes: primaryButton from "../../../../css/_links.css";
   background-color: black;
