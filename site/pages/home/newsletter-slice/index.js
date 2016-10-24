@@ -3,6 +3,15 @@ import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up';
 import NewsletterBeforeSignUp from './before-sign-up';
 
+const fetchFunction = ({ url, body, method }) => (
+  fetch(url, {
+    method,
+    headers: { 'Content-Type': 'application/json' },
+    mode: 'cors',
+    body,
+  })
+);
+
 class NewsLetter extends Component {
   constructor() {
     super();
@@ -15,19 +24,15 @@ class NewsLetter extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
 
-  onSubmit = e => {
-    e.preventDefault();
-    this.setState({
-      newsletterSubmitted: !this.state.newsletterSubmitted,
-    });
-  }
 
-  submitForm(data) {
+  submitForm(data, method, submitFormFunction = fetchFunction) {
     const object = Object.assign({}, data);
-    if (!data.email_address) {
-      // If we are on the second part of the for, this gets the email saved in our state
+    // If we are on the second part of the form, this gets the email saved in our state
+    if (!data || !data.email_address) {
       object.email_address = this.state.email_address;
     }
+    // If we are in the second part of the form
+    // and the user does not provide a full name, we return an error
     if (this.state.email_address && !data.name) {
       return this.setState({
         newsletterSubmitted: true,
@@ -36,12 +41,11 @@ class NewsLetter extends Component {
       });
     }
     const formDataJSON = JSON.stringify(object);
-    fetch('https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/mailing-list',
-      {
-        method: data.method,
-        headers: { 'Content-Type': 'application/json' },
-        body: formDataJSON,
-      })
+    return submitFormFunction({
+      url: 'https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/mailing-list',
+      method,
+      body: formDataJSON,
+    })
       .then(response => {
         return response.json();
       })

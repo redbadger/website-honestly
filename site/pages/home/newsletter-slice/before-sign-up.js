@@ -10,7 +10,6 @@ class BeforeSignUp extends Component {
     super(props);
     this.state = {
       email_address: '',
-      method: 'POST',
       submitting: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -33,7 +32,7 @@ class BeforeSignUp extends Component {
     const newState = {};
     newState.submitting = true;
     this.setState(newState);
-    this.props.onSubmit(this.state);
+    this.props.onSubmit(this.state, 'POST');
   }
 
   render() {

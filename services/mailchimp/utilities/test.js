@@ -3,7 +3,7 @@ import { formatResponse, encryptText, decryptText, formatFormInput } from './ind
 describe('formatResponse', () => {
   it('returns the correct error message if the status code is 400', () => {
     const test = {
-      detail: 'An email address must contain a single @',
+      detail: 'There was an error signing you up',
       status: 400,
       email_address: 'test@gmail.com',
       merge_fields: {
@@ -21,7 +21,7 @@ describe('formatResponse', () => {
   });
   it('returns the correct error message response if the account already exists', () => {
     const test = {
-      detail: 'An email address must contain a single @',
+      detail: 'There was an error signing you up',
       last_changed: 'exampleDate',
       timestamp_opt: 'differntDate',
       email_address: 'test@gmail.com',
@@ -45,7 +45,7 @@ describe('formatResponse', () => {
   });
   it('returns the correct values if there are no erros and a new account has been created', () => {
     const test = {
-      detail: 'An email address must contain a single @',
+      detail: 'There was an error signing you up',
       last_changed: 'exampleDate',
       timestamp_opt: 'exampleDate',
       email_address: 'test@gmail.com',

@@ -19,7 +19,6 @@ export default class AfterSignup extends Component {
       name: '',
       company: '',
       role: '',
-      method: 'PATCH',
       submitting: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -40,7 +39,7 @@ export default class AfterSignup extends Component {
     const newState = {};
     newState.submitting = true;
     this.setState(newState);
-    this.props.onSubmit(this.state);
+    this.props.onSubmit(this.state, 'PATCH');
   }
 
 

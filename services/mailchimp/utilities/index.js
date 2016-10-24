@@ -32,7 +32,11 @@ export function mailchimpApi(link, method, body) {
 }
 
 export function formatResponse(res, data) {
-  const encryptedEmail = encryptText(res.email_address);
+  let encryptedEmail = '';
+  // No email_address is returned from mailchimp if there is an error on their side
+  if (res.email_address) {
+    encryptedEmail = encryptText(res.email_address);
+  }
   const response = {
     newsletterSubmitted: false,
     updatedFormSubmitted: false,
@@ -41,7 +45,7 @@ export function formatResponse(res, data) {
   };
   // There was an error signing up the user
   if (res.status === 400) {
-    response.errorMessage = res.detail;
+    response.errorMessage = 'There was an error signing you up';
     return response;
   }
   // The user has signed up previously and is now updating their details
