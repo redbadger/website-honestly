@@ -46,7 +46,10 @@ class ContactUs extends Component {
           fatalError: false,
         }, json);
       })
-      .catch(() => ({ fatalError: true }))
+      .catch(error => {
+        console.error('fatalError-', error);
+        return { fatalError: true };
+      })
       .then(newState => this.setState(newState));
   }
 
