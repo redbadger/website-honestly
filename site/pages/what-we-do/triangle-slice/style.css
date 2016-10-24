@@ -72,6 +72,18 @@
   margin: 45px auto 0 auto;
 }
 
+.triangleTop {
+  width: 300px;
+}
+
+.triangleMiddle {
+  width: 220px;
+}
+
+.triangleEnd {
+  width: 100px;
+}
+
 @media mediumScreen {
   .triangleContainer {
     max-width: 500px;

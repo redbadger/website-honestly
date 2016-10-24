@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames/bind';
 import styles from './style.css';
 
 /* PNGs */
@@ -6,6 +7,8 @@ import triangleTopPNG from './PNG/triangleTop.png';
 import triangleMidPNG from './PNG/triangleMid.png';
 import triangleEndPNG from './PNG/triangleEnd.png';
 import triangleFullPNG from './PNG/triangleFull.png';
+
+const cx = classnames.bind(styles);
 
 const triangleSlice = () => {
   return (
@@ -23,7 +26,7 @@ const triangleSlice = () => {
                 continuously getting closer to this end goal.
               </p>
             </div>
-            <img className={styles.mobileTriangleImage} alt="Triangle Vision section" src={triangleTopPNG} />
+            <img className={cx('mobileTriangleImage', 'triangleTop')} alt="Triangle Vision section" src={triangleTopPNG} />
           </li>
           <li>
             <div className={styles.rightThingText}>
@@ -35,7 +38,7 @@ const triangleSlice = () => {
                 customer value are built first.
               </p>
             </div>
-            <img className={styles.mobileTriangleImage} alt="Triangle Validation section" src={triangleMidPNG} />
+            <img className={cx('mobileTriangleImage', 'triangleMiddle')} alt="Triangle Validation section" src={triangleMidPNG} />
           </li>
           <li>
             <div className={styles.rightThingText}>
@@ -46,7 +49,7 @@ const triangleSlice = () => {
                 on feature delivery.
               </p>
             </div>
-            <img className={styles.mobileTriangleImage} alt="Triangle Delivery section" src={triangleEndPNG} />
+            <img className={cx('mobileTriangleImage', 'triangleEnd')} alt="Triangle Delivery section" src={triangleEndPNG} />
           </li>
         </ol>
       </div>
