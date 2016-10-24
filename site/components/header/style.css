@@ -43,7 +43,6 @@
 }
 
 .overlay {
-  background: black;
   position: fixed;
   top: 0;
   right: -100%;
@@ -56,6 +55,23 @@
   font-weight: bold;
 
   transition: left 0.3s;
+}
+
+.smallScreenNavMargin {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 44px;
+}
+
+.smallScreenNavWrapper {
+  background: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 44px;
 }
 
 .overlay .mediumScreenNav {
@@ -94,6 +110,10 @@
   cursor: pointer;
 }
 
+.smallScreenNavComponent {
+  width: 100%;
+}
+
 .triggerContainer {
   width: 100%;
   display: flex;
@@ -116,7 +136,7 @@
 }
 
 .trigger:checked + .overlay {
-  left: 44px;
+  left: 0;
   right: 0;
 }
 
