@@ -22,7 +22,7 @@ const triangleSlice = () => {
               <h3 className={styles.triangleThingHeader}>Vision</h3>
               <p className={styles.rightThingDescription}>
                 A strong, aspirational vision is needed to keep
-                the8 project on track; ensuring all features are
+                the project on track; ensuring all features are
                 continuously getting closer to this end goal.
               </p>
             </div>

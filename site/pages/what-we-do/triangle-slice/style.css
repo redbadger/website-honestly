@@ -52,7 +52,7 @@
 }
 
 .rightThingText {
-  margin: 0 0 20px 40px;
+  margin: 0 0 40px 40px;
 }
 
 .rightThingText p {
@@ -69,7 +69,7 @@
 .triangleContainer {
   display: flex;
   max-width: 300px;
-  margin: 45px auto 0 auto;
+  margin: 0 auto;
 }
 
 .triangleTop {
@@ -92,10 +92,15 @@
   .rightThingsList {
     max-width: 500px;
   }
+
+  .triangleHeader {
+    max-width: 500px;
+  }
 }
 
 @media largeScreen {
   .triangleContainer {
+    margin: 45px auto 0 auto;
     max-width: 800px;
   }
 
