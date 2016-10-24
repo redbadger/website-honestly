@@ -1,3 +1,5 @@
+import 'es6-promise/auto';
+
 import Navigation from 'navigation';
 import { makeApp } from '../site/client';
 import getSiteState from '../state';
