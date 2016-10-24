@@ -1,6 +1,9 @@
 /* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
+import classnames from 'classnames/bind';
 import styles from './style.css';
+
+const cx = classnames.bind(styles);
 
 class BeforeSignUp extends Component {
   constructor(props) {
@@ -29,16 +32,18 @@ class BeforeSignUp extends Component {
         </p>
 
         <form className={styles.form}>
-          <label htmlFor="email_address" className={styles.formLabel}>Email</label>
-          <div className={styles.errorMessage}>{this.props.errorMessage}</div>
-          <input
-            onChange={this.handleInputChange}
-            id="email_address"
-            name="email_address"
-            type="text"
-            placeholder="example@email.com"
-            className={styles.formInput}
-          />
+          <div className={styles.formBlock}>
+            <label htmlFor="email_address" className={styles.formLabel}>Email</label>
+            <input
+              onChange={this.handleInputChange}
+              id="email_address"
+              name="email_address"
+              type="text"
+              placeholder="example@email.com"
+              className={!this.props.errorMessage ? styles.formInput : cx('formInput', 'formError')}
+            />
+            <div className={styles.errorMessage}>{this.props.errorMessage}</div>
+          </div>
           <button
             className={styles.submitButton}
             onClick={e => {

@@ -1,6 +1,6 @@
 @value red, white, black from "../../css/_colors.css";
-@value mediumScreen from "../../css/_sizes.css";
 @value zindexOverlay from "../../css/_zindex.css";
+@value mediumScreen from "../../css/_sizes.css";
 
 .header {
   display: flex;

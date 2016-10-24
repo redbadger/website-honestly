@@ -53,9 +53,8 @@ export default class AfterSignup extends Component {
             <h2 className={styles.subTitle}>
               Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
             </h2>
-            <div>{this.props.errorMessage}</div>
             <form className={styles.form}>
-              <div>
+              <div className={styles.formBlock}>
                 <label htmlFor="name" className={styles.formLabel}>Full name</label>
                 <input
                   id="name"
@@ -64,6 +63,11 @@ export default class AfterSignup extends Component {
                   className={styles.formInput}
                   onChange={this.handleInputChange}
                 />
+                {
+                  this.props.errorMessage ?
+                    <div className={styles.errorText}>{this.props.errorMessage}</div>
+                    : null
+                }
               </div>
               <div>
                 <label htmlFor="company" className={styles.formLabel}>Company</label>
