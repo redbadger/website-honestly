@@ -20,8 +20,10 @@ export default class AfterSignup extends Component {
       company: '',
       role: '',
       method: 'PATCH',
+      submitting: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -31,6 +33,20 @@ export default class AfterSignup extends Component {
   handleInputChange(event) {
     const newState = {};
     newState[event.target.name] = event.target.value;
+    this.setState(newState);
+  }
+
+  handleSubmit() {
+    const newState = {};
+    newState.submitting = true;
+    this.setState(newState);
+    this.props.onSubmit(this.state);
+  }
+
+
+  componentWillReceiveProps() {
+    const newState = {};
+    newState.submitting = false;
     this.setState(newState);
   }
 
@@ -64,10 +80,13 @@ export default class AfterSignup extends Component {
                   onChange={this.handleInputChange}
                 />
                 {
-                  this.props.errorMessage ?
-                    <div className={styles.errorText}>{this.props.errorMessage}</div>
-                    : null
+                  this.props.errorMessage && !this.state.submitting ?
+                    <div className={styles.errorText}>
+                      {this.props.errorMessage}
+                    </div>
+                : null
                 }
+
               </div>
               <div>
                 <label htmlFor="company" className={styles.formLabel}>Company</label>
@@ -93,10 +112,12 @@ export default class AfterSignup extends Component {
                 />
               </div>
               <button
-                className={styles.submitButton}
+                className={!this.state.submitting ?
+                  styles.submitButton : cx('submitButton', 'buttonSubmitting')
+                }
                 onClick={e => {
                   e.preventDefault();
-                  this.props.onSubmit(this.state);
+                  this.handleSubmit();
                 }}
               >
                 Update Info

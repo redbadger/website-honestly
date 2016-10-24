@@ -1,4 +1,4 @@
-@value black, white, daveGreen, red from "../../../css/_colors.css";
+@value black, white, daveGreen, red, dark-red from "../../../css/_colors.css";
 @value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
 
 .newsletter {
@@ -14,7 +14,7 @@
 }
 
 .errorMessage {
-  composes: sansSerif from '../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
   color: red;
   text-align: left;
@@ -24,11 +24,15 @@
 }
 
 .errorText {
-  composes: sansSerif from '../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
-  color: red;
+  color: black;
   position: relative;
   padding: 5px 0px 30px 0px;
+}
+
+.buttonSubmitting {
+  background-color: dark-red;
 }
 
 .formError {

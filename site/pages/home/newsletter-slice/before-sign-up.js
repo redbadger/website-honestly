@@ -11,14 +11,29 @@ class BeforeSignUp extends Component {
     this.state = {
       email_address: '',
       method: 'POST',
+      submitting: false,
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleInputChange(event) {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);
+  }
+
+  componentWillReceiveProps() {
+    const newState = {};
+    newState.submitting = false;
+    this.setState(newState);
+  }
+
+  handleSubmit() {
+    const newState = {};
+    newState.submitting = true;
+    this.setState(newState);
+    this.props.onSubmit(this.state);
   }
 
   render() {
@@ -42,16 +57,20 @@ class BeforeSignUp extends Component {
               placeholder="example@email.com"
               className={!this.props.errorMessage ? styles.formInput : cx('formInput', 'formError')}
             />
-            <div className={styles.errorMessage}>{this.props.errorMessage}</div>
+            <div className={styles.errorMessage}>
+              {!this.state.submitting ? this.props.errorMessage : ''}
+            </div>
           </div>
           <button
-            className={styles.submitButton}
+            className={!this.state.submitting ?
+              styles.submitButton : cx('submitButton', 'buttonSubmitting')
+            }
             onClick={e => {
               e.preventDefault();
-              this.props.onSubmit(this.state);
+              this.handleSubmit();
             }}
           >
-            Sign Up
+            {this.state.submitting ? 'Signing up....' : 'Sign Up'}
           </button>
         </form>
 
