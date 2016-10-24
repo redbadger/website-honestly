@@ -17,13 +17,13 @@
 }
 
 .triangleThingHeader {
-  composes: fontAlwaysM from "../../../css/typography/_fonts.css";
+  composes: fontStaticM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   text-align: left;
 }
 
 .rightThingsList {
-  composes: fontAlwaysM from "../../../css/typography/_fonts.css";
+  composes: fontStaticM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   margin-top: 30px;
   max-width: 300px;
@@ -85,15 +85,7 @@
 }
 
 @media mediumScreen {
-  .triangleContainer {
-    max-width: 500px;
-  }
-
-  .rightThingsList {
-    max-width: 500px;
-  }
-
-  .triangleHeader {
+  .triangleContainer, .rightThingsList, .triangleHeader {
     max-width: 500px;
   }
 }
