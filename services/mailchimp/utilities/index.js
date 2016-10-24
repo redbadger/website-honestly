@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 import crypto from 'crypto';
 
 const algorithm = 'aes256';
-const key = process.env.SECRET_ENCRYPTION_KEY;
+const key = process.env.SECRET_ENCRYPTION_KEY || 'secret';
 
 export function encryptText(text) {
   const cipher = crypto.createCipher(algorithm, key);
