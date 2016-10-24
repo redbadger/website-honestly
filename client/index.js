@@ -1,4 +1,5 @@
 import 'es6-promise/auto';
+import 'whatwg-fetch';
 
 import Navigation from 'navigation';
 import { makeApp } from '../site/client';
