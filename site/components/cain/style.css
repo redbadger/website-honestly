@@ -18,8 +18,11 @@
   display: block;
   z-index: zindexOverlay;
   color: white;
-  margin-top: -20px;
-  padding: 0px 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  bottom: 40px;
+  right: 40px;
 }
 
 .speechBubbleSVG {
