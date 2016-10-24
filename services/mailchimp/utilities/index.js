@@ -1,5 +1,19 @@
 /* eslint-disable no-console */
 import fetch from 'node-fetch';
+import crypto from 'crypto';
+
+const algorithm = 'aes256';
+const key = process.env.SECRET_ENCRYPTION_KEY;
+
+export function encryptText(text) {
+  const cipher = crypto.createCipher(algorithm, key);
+  return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');
+}
+
+export function decryptText(text) {
+  const decipher = crypto.createDecipher(algorithm, key);
+  return decipher.update(text, 'hex', 'utf8') + decipher.final('utf8');
+}
 
 export function mailchimpApi(link, method, body) {
   const username = '';
@@ -18,11 +32,12 @@ export function mailchimpApi(link, method, body) {
 }
 
 export function formatResponse(res, data) {
+  const encryptedEmail = encryptText(res.email_address);
   const response = {
     newsletterSubmitted: false,
     updatedFormSubmitted: false,
     errorMessage: '',
-    email_address: res.email_address,
+    email_address: encryptedEmail,
   };
   // There was an error signing up the user
   if (res.status === 400) {
@@ -40,17 +55,22 @@ export function formatResponse(res, data) {
     newsletterSubmitted: true,
     updatedFormSubmitted: false,
     errorMessage: '',
-    email_address: res.email_address,
+    email_address: encryptedEmail,
   };
 }
 
-export function formatFormInput(event) {
+
+export function formatFormInput(event, isEmailEncrypted) {
   let fullName = [];
+  let emailAddress = event.body.email_address;
   if (event.body.name) {
     fullName = event.body.name.split(' ');
   }
+  if (isEmailEncrypted) {
+    emailAddress = decryptText(event.body.email_address);
+  }
   return {
-    email_address: event.body.email_address,
+    email_address: emailAddress,
     status: 'subscribed',
     merge_fields: {
       FNAME: fullName[0] || '',

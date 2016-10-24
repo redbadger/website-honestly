@@ -30,7 +30,7 @@ class BeforeSignUp extends Component {
 
         <form className={styles.form}>
           <label htmlFor="email_address" className={styles.formLabel}>Email</label>
-          <div>{this.props.errorMessage}</div>
+          <div className={styles.errorMessage}>{this.props.errorMessage}</div>
           <input
             onChange={this.handleInputChange}
             id="email_address"
