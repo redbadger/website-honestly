@@ -1,7 +1,7 @@
 /* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
-import styles from './style.css';
+import styles from '../style.css';
 
 const cx = classnames.bind(styles);
 
@@ -16,15 +16,15 @@ class BeforeSignUp extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleInputChange(event) {
-    const newState = {};
-    newState[event.target.name] = event.target.value;
-    this.setState(newState);
-  }
-
   componentWillReceiveProps() {
     const newState = {};
     newState.submitting = false;
+    this.setState(newState);
+  }
+
+  handleInputChange(event) {
+    const newState = {};
+    newState[event.target.name] = event.target.value;
     this.setState(newState);
   }
 

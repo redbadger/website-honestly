@@ -1,7 +1,7 @@
 /* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
-import styles from './style.css';
+import styles from '../style.css';
 
 const cx = classnames.bind(styles);
 const { func, string, bool } = React.PropTypes;
@@ -29,6 +29,12 @@ export default class AfterSignup extends Component {
     this.triggerReflow();
   }
 
+  componentWillReceiveProps() {
+    const newState = {};
+    newState.submitting = false;
+    this.setState(newState);
+  }
+
   handleInputChange(event) {
     const newState = {};
     newState[event.target.name] = event.target.value;
@@ -40,13 +46,6 @@ export default class AfterSignup extends Component {
     newState.submitting = true;
     this.setState(newState);
     this.props.onSubmit(this.state, 'PATCH');
-  }
-
-
-  componentWillReceiveProps() {
-    const newState = {};
-    newState.submitting = false;
-    this.setState(newState);
   }
 
   // fixes bug in safari where the component height wouldn't update
