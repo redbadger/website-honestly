@@ -27,7 +27,11 @@ check-deps: ## Check deps for updates
 
 
 dev: badger ## Run the frontend dev server
-	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js
+	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js --content-base dist/
+
+
+sw: ## Compile swrvie worker
+	$(WEBPACK) webpack.sw.config.js
 
 
 dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
