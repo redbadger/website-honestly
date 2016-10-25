@@ -74,15 +74,18 @@ export default class AfterSignup extends Component {
                   id="name"
                   name="name"
                   type="text" placeholder="John Smith"
-                  className={styles.formInput}
+                  className={!this.props.errorMessage ?
+                    styles.formInput :
+                    cx('formInput', 'afterFormError')
+                  }
                   onChange={this.handleInputChange}
                 />
                 {
                   this.props.errorMessage && !this.state.submitting ?
-                    <div className={styles.errorText}>
+                    <div className={styles.afterErrorText}>
                       {this.props.errorMessage}
                     </div>
-                : null
+                  : null
                 }
 
               </div>
@@ -95,7 +98,6 @@ export default class AfterSignup extends Component {
                   placeholder="Peter Pan Ltd."
                   className={styles.formInput}
                   onChange={this.handleInputChange}
-
                 />
               </div>
               <div>

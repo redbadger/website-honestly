@@ -1,7 +1,7 @@
 /* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
-import NewsletterAfterSignUp from './after-sign-up';
-import NewsletterBeforeSignUp from './before-sign-up';
+import NewsletterAfterSignUp from './after-sign-up/';
+import NewsletterBeforeSignUp from './before-sign-up/';
 
 const fetchFunction = ({ url, body, method }) => (
   fetch(url, {
@@ -37,7 +37,7 @@ class NewsLetter extends Component {
       return this.setState({
         newsletterSubmitted: true,
         email_address: this.state.email_address,
-        errorMessage: 'A name is required from you!',
+        errorMessage: 'Please tell us who you are',
       });
     }
     const formDataJSON = JSON.stringify(object);

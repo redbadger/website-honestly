@@ -14,7 +14,7 @@
   display: inline-block;
 }
 
-.errorMessage {
+.beforeErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
   color: red;
@@ -24,7 +24,7 @@
   padding: 5px 0px 30px 0px;
 }
 
-.errorText {
+.afterErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
   color: black;
@@ -33,11 +33,17 @@
 }
 
 .buttonSubmitting {
-  background-color: dark-red;
+  opacity: 0.7;
 }
 
-.formError {
+.beforeFormError {
   outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+
+.afterFormError {
+  outline: 2px solid black;
   outline-offset: -2px;
 }
 

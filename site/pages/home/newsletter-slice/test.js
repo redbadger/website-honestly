@@ -41,7 +41,7 @@ describe('Newsletter slice', () => {
       expect(wrapper.state()).to.deep.equal({
         newsletterSubmitted: true,
         email_address: 'test@gmail.com',
-        errorMessage: 'A name is required from you!',
+        errorMessage: 'Please tell us who you are',
         updatedFormSubmitted: false,
       });
     });

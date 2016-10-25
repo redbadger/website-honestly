@@ -54,9 +54,12 @@ class BeforeSignUp extends Component {
               name="email_address"
               type="text"
               placeholder="example@email.com"
-              className={!this.props.errorMessage ? styles.formInput : cx('formInput', 'formError')}
+              className={!this.props.errorMessage ?
+                styles.formInput :
+                cx('formInput', 'beforeFormError')
+              }
             />
-            <div className={styles.errorMessage}>
+            <div className={styles.beforeErrorText}>
               {!this.state.submitting ? this.props.errorMessage : ''}
             </div>
           </div>
