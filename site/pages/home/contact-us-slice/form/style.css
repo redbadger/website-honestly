@@ -1,0 +1,72 @@
+@value black, cainYellow, cainYellowFaded from "../../../../css/_colors.css";
+@value maxWidth from "../../../../css/_sizes.css";
+
+.formContainer {
+  padding: 60px 20px 70px 20px;
+  text-align: center;
+  composes: dividerYellow from "../../../../css/_divider.css";
+  background-color: cainYellow;
+}
+
+.contactUsForm {
+  margin: 0px auto;
+  max-width: 500px;
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+}
+
+.heading {
+  max-width: maxWidth;
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin: 0px auto 40px auto;
+  color: black;
+}
+
+.formLabel {
+  display: block;
+  text-align: left;
+  margin: 0px 0px 5px 0px;
+}
+
+.errorMessage {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  display: inline-block;
+}
+
+.fatalError {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+}
+.fatalErrorButton {
+  margin: 30px 0px;
+}
+
+.inputBox {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+
+  padding: 12px;
+  background: cainYellowFaded;
+  border: 0px;
+  border-bottom: dotted 2px black;
+}
+
+.hasErrors {
+  border: 2px solid black;
+}
+
+.fatalErrorLink {
+  color: black;
+  text-decoration: underline;
+}
+
+.button {
+  margin-top: 30px;
+  composes: primaryButton from "../../../../css/_links.css";
+  background-color: black;
+}

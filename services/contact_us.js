@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import aws from 'aws-sdk'; // eslint-disable-line import/no-unresolved, import/no-extraneous-dependencies
 import { validateAndSendEmail } from './ses';
 
@@ -10,15 +11,20 @@ if (!contactUsEmailTo) {
 export default function doContactUs(event, cb) {
   const data = {
     emailTo: contactUsEmailTo,
-    message: event.message,
-    contact: event.contact,
+    message: event.body.message,
+    contact: event.body.contact,
   };
+
+  console.log('data >', data);
 
   aws.config.update('eu-west-1');
   const simpleEmail = new aws.SES({ apiVersion: '2010-12-01' });
   const emailSender = simpleEmail.sendEmail.bind(simpleEmail);
 
   validateAndSendEmail(data, emailSender)
-    .then(() => cb(null, { sent: true }))
-    .catch(err => cb(err));
+    .then(result => cb(null, result))
+    .catch(err => {
+      console.error(err);
+      cb(err);
+    });
 }

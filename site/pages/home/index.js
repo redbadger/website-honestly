@@ -5,12 +5,13 @@ import CaseStudy from '../../components/case-study';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
+import ContactUs from './contact-us-slice';
 import NewsletterAfterSignUp from './newsletter-slice/after-sign-up';
 import NewsletterBeforeSignUp from './newsletter-slice/before-sign-up';
 
 export default class HomePage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       newsletterSubmitted: false,
     };
@@ -30,6 +31,7 @@ export default class HomePage extends Component {
         <CaseStudy />
         <Brie />
         <TechSlice />
+        <ContactUs postURL={this.props.data.contactUsURL} />
         <BlogSlice />
         {
           this.state.newsletterSubmitted
@@ -40,3 +42,10 @@ export default class HomePage extends Component {
     );
   }
 }
+
+const { shape, string } = React.PropTypes;
+HomePage.propTypes = {
+  data: shape({
+    contactUsURL: string,
+  }).isRequired,
+};

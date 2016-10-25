@@ -16,7 +16,11 @@ Red Badger Website Episode 6: Return of the Jedi.
 ```sh
 make                   # Print the help
 make dev               # Run the dev server
-make clean dev-compile # Compile the site locally
+# NOTE: if you need to use the environment variables specified in 'state/index.js' on the client side: e.g. 'CONTACT_US_URL',
+# do not use 'make dev'
+# The site needs to be compiled first to pull the variables from the .env
+# use 'make dev-static'
+make clean dev-static  # Compile the site locally
 
 # Deploy to dev lambda environment
 make clean services-deploy
