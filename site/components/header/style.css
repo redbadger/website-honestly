@@ -154,4 +154,8 @@
   .logo svg {
     height: 30px;
   }
+
+  .smallScreenNavComponent {
+    width: auto;
+  }
 }
