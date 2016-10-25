@@ -26,7 +26,7 @@ self.addEventListener('fetch', event => {
         // and because we want the browser to consume the response
         // as well as the cache consuming the response, we need
         // to clone it so we have two streams.
-        if (url.endsWith('.css') || url.endsWith('.png')) {
+        if (/\.(css|js|png)$/i.test(url)) {
           const responseToCache = res.clone();
 
           caches.open(CACHE_NAME)
