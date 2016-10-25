@@ -3,8 +3,8 @@ import classnames from 'classnames/bind';
 import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
 import TriangleSlice from './triangle-slice';
+import LeanSlice from './lean-slice';
 
-/* PNG and Jpg  imports */
 import camdenJpg from './JPG/camden.jpg';
 import financialTimesJpg from './JPG/financialtimes.jpg';
 import fortnumJpg from './JPG/fortnum.jpg';
@@ -24,6 +24,7 @@ export default function whatWeDo() {
       </div>
       <TriangleSlice />
       <TechSlice />
+      <LeanSlice />
       <div className={styles.headerContainer}>
         <h1 className={styles.mainHeader}>The proof is in the pudding.</h1>
         <h2 className={styles.subHeader}>Read some of our case studies.</h2>

@@ -1,0 +1,33 @@
+@value white from "../../../css/_colors.css";
+
+.slice {
+  composes: dividerWhite from "../../../css/_divider.css";
+  padding: 40px 22px 30px 22px;
+  background-color: white;
+}
+
+.heading {
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.leanImageWrapper {
+  text-align: center;
+}
+
+.leanImage {
+  max-width: 80%;
+  width: 300px;
+}
+
+.point {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+  margin-top: 20px;
+}
+
+.bold {
+  composes: serif from "../../../css/typography/_fonts.css";
+}
