@@ -26,16 +26,16 @@ check-deps: ## Check deps for updates
 	$(NPM_CHECK_UPDATES)
 
 
-dev: badger ## Run the frontend dev server
+dev: badger dist/sw.js ## Run the frontend dev server
 	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js --content-base dist/
 
 
-sw: ## Compile swrvie worker
-	$(WEBPACK) webpack.sw.config.js
+sw: dist/sw.js  ## Compile service worker
 
 
-dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
+dev-static: dist/static-site dist/dev-static/index.js dist/sw.js ## Compile the site to HTML locally and serve
 	ln -fs ../assets-honestly dist/static-site/assets-honestly
+	cp dist/sw.js dist/static-site/sw.js
 	node dist/dev-static/index.js
 	ruby -run -ehttpd ./dist/static-site -p8000
 
@@ -48,7 +48,7 @@ test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
 
-build: dist/services.zip dist/dev-static/index.js ## Compile project
+build: dist/services.zip dist/dev-static/index.js dist/sw.js ## Compile project
 
 
 lint: ## Lint Javascript files
@@ -61,6 +61,10 @@ services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 
 publish-service-invoke: ## Invoke the publish service
 	$(SERVICES) invoke
+
+
+dist/sw.js:
+	$(WEBPACK) webpack.sw.config.js
 
 
 dist/services.zip: dist/services
@@ -91,4 +95,5 @@ dist/static-site:
 	services-deploy \
 	services-invoke \
 	test \
-	test-watch
+	test-watch \
+	sw
