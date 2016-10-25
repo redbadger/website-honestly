@@ -1,4 +1,4 @@
-import { mailchimpApi, formatResponse, formatFormInput } from '../utilities';
+import { mailchimpApi, formatFormInput, formatSignUpResponse } from '../utilities';
 
 export default function signUp(event, cb) {
   const body = formatFormInput(event);
@@ -8,7 +8,7 @@ export default function signUp(event, cb) {
     JSON.stringify(body)
   )
     .then(json => {
-      const result = formatResponse(json, body);
+      const result = formatSignUpResponse(json, body);
       cb(null, result);
     })
     .catch(err => {

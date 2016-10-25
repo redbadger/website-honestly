@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 import crypto from 'crypto';
 
 const algorithm = 'aes256';
-const key = process.env.SECRET_ENCRYPTION_KEY || 'secret';
+const key = process.env.SECRET_ENCRYPTION_KEY;
 
 export function encryptText(text) {
   const cipher = crypto.createCipher(algorithm, key);
@@ -31,13 +31,13 @@ export function mailchimpApi(link, method, body) {
     .then(response => response.json());
 }
 
-export function formatResponse(res, data) {
+export function formatSignUpResponse(res) {
   let encryptedEmail = '';
   // No email_address is returned from mailchimp if there is an error on their side
   if (res.email_address) {
     encryptedEmail = encryptText(res.email_address);
   }
-  const response = {
+  const defaultResponse = {
     newsletterSubmitted: false,
     updatedFormSubmitted: false,
     errorMessage: '',
@@ -45,16 +45,9 @@ export function formatResponse(res, data) {
   };
   // There was an error signing up the user
   if (res.status === 400) {
-    response.errorMessage = 'There was an error signing you up';
-    return response;
+    defaultResponse.errorMessage = 'There was an error signing you up';
+    return defaultResponse;
   }
-  // The user has signed up previously and is now updating their details
-  if (res.last_changed !== res.timestamp_opt && data.merge_fields.FNAME !== '') {
-    response.updatedFormSubmitted = true;
-    response.newsletterSubmitted = true;
-    return response;
-  }
-  // There were no errors and a new user has been subscribed to the list
   return {
     newsletterSubmitted: true,
     updatedFormSubmitted: false,
@@ -63,6 +56,21 @@ export function formatResponse(res, data) {
   };
 }
 
+export function formatUpdateResponse(res, data) {
+  const defaultResponse = {
+    newsletterSubmitted: false,
+    updatedFormSubmitted: false,
+    errorMessage: '',
+    email_address: res.email_address,
+  };
+  // The user has signed up previously and is now updating their details
+  if (res.last_changed !== res.timestamp_opt && data.merge_fields.FNAME !== '') {
+    defaultResponse.updatedFormSubmitted = true;
+    defaultResponse.newsletterSubmitted = true;
+    return defaultResponse;
+  }
+  return defaultResponse;
+}
 
 export function formatFormInput(event, isEmailEncrypted) {
   let fullName = [];

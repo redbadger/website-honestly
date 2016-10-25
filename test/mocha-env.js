@@ -5,6 +5,8 @@ import { DOMParser } from 'xmldom';
 import chaiAsPromised from 'chai-as-promised';
 import chai from 'chai'; // eslint-disable-line import/no-extraneous-dependencies
 
+process.env.SECRET_ENCRYPTION_KEY = 'secret';
+
 global.expect = chai.expect; // Register test tools globally
 chai.use(chaiAsPromised);
 

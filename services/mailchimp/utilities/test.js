@@ -1,6 +1,6 @@
-import { formatResponse, encryptText, decryptText, formatFormInput } from './index';
+import { formatSignUpResponse, formatUpdateResponse, encryptText, decryptText, formatFormInput } from './index';
 
-describe('formatResponse', () => {
+describe('formatSignUpResponse', () => {
   it('returns the correct error message if the status code is 400', () => {
     const test = {
       detail: 'There was an error signing you up',
@@ -11,34 +11,10 @@ describe('formatResponse', () => {
       },
     };
 
-    const result = formatResponse(test);
+    const result = formatSignUpResponse(test);
     expect(result).to.deep.equal({
       newsletterSubmitted: false,
       errorMessage: test.detail,
-      email_address: encryptText('test@gmail.com'),
-      updatedFormSubmitted: false,
-    });
-  });
-  it('returns the correct error message response if the account already exists', () => {
-    const test = {
-      detail: 'There was an error signing you up',
-      last_changed: 'exampleDate',
-      timestamp_opt: 'differntDate',
-      email_address: 'test@gmail.com',
-      merge_fields: {
-        FNAME: '',
-      },
-    };
-    const data = {
-      merge_fields: {
-        FNAME: '',
-      },
-    };
-
-    const result = formatResponse(test, data);
-    expect(result).to.deep.equal({
-      newsletterSubmitted: true,
-      errorMessage: '',
       email_address: encryptText('test@gmail.com'),
       updatedFormSubmitted: false,
     });
@@ -54,11 +30,34 @@ describe('formatResponse', () => {
       },
     };
 
-    const result = formatResponse(test);
+    const result = formatSignUpResponse(test);
     expect(result).to.deep.equal({
       newsletterSubmitted: true,
       errorMessage: '',
       email_address: encryptText('test@gmail.com'),
+      updatedFormSubmitted: false,
+    });
+  });
+});
+
+describe('formatUpdateResponse', () => {
+  // if (res.last_changed !== res.timestamp_opt && data.merge_fields.FNAME !== '') {
+  it('returns the correct values if there are no erros and a new account has been created', () => {
+    const test = {
+      detail: 'There was an error signing you up',
+      last_changed: 'exampleDate',
+      timestamp_opt: 'exampleDate',
+      email_address: 'test@gmail.com',
+      merge_fields: {
+        FNAME: 'Andrew',
+      },
+    };
+
+    const result = formatUpdateResponse(test);
+    expect(result).to.deep.equal({
+      newsletterSubmitted: false,
+      errorMessage: '',
+      email_address: 'test@gmail.com',
       updatedFormSubmitted: false,
     });
   });

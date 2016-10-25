@@ -1,5 +1,5 @@
 import md5 from 'md5';
-import { mailchimpApi, formatResponse, formatFormInput } from '../utilities';
+import { mailchimpApi, formatUpdateResponse, formatFormInput } from '../utilities';
 
 export default function doUpdateUser(event, cb) {
   const body = formatFormInput(event, true);
@@ -10,7 +10,7 @@ export default function doUpdateUser(event, cb) {
     JSON.stringify(body)
   )
     .then(json => {
-      const result = formatResponse(json, body);
+      const result = formatUpdateResponse(json, body);
       cb(null, result);
     })
     .catch(err => {
