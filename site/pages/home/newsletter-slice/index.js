@@ -1,5 +1,5 @@
-/* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
+/* eslint-disable react/no-set-state */
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';
 
@@ -26,10 +26,9 @@ class NewsLetter extends Component {
       errorMessage: '',
       updatedFormSubmitted: false,
     };
-    this.submitForm = this.submitForm.bind(this);
   }
 
-  submitForm(data, method, submitFormFunction = fetchFunction) {
+  submitForm = (data, method, submitFormFunction = fetchFunction) => {
     let inBeforeSignUp = true;
     if (this.state.email_address) {
       inBeforeSignUp = false;

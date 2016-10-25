@@ -12,10 +12,9 @@ class Form extends Component {
       message: 'Hi Cain,\nI was wondering…',
       contact: '',
     };
-    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
-  handleInputChange(event) {
+  handleInputChange = event => {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);

@@ -12,26 +12,24 @@ class BeforeSignUp extends Component {
       email_address: '',
       submitting: false,
     };
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentWillReceiveProps() {
-    const newState = {};
-    newState.submitting = false;
-    this.setState(newState);
+    this.setState({
+      submitting: false,
+    });
   }
 
-  handleInputChange(event) {
+  handleInputChange = event => {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);
   }
 
-  handleSubmit() {
-    const newState = {};
-    newState.submitting = true;
-    this.setState(newState);
+  handleSubmit = () => {
+    this.setState({
+      submitting: true,
+    });
     this.props.onSubmit(this.state, 'POST');
   }
 
