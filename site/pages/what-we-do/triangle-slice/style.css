@@ -1,0 +1,114 @@
+@value white, black, red, linesOnBlack from "../../../css/_colors.css";
+@value largeScreen, mediumScreen from "../../../css/_sizes.css";
+
+.triangleSlice {
+  composes: dividerBlack from "../../../css/_divider.css";
+  color: white;
+  background-color: black;
+  padding: 35px 25px 50px 25px;
+  text-align: center;
+}
+
+.triangleHeader {
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.triangleThingHeader {
+  composes: fontStaticM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  text-align: left;
+}
+
+.rightThingsList {
+  composes: fontStaticM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  margin-top: 30px;
+  max-width: 300px;
+  counter-reset: listCounter;
+  display: inline-block;
+}
+
+.rightThingDescription {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+}
+
+.rightThingsList li:before {
+  content: counter(listCounter);
+  counter-increment: listCounter;
+  float: left;
+}
+
+.rightThingsList li {
+  margin-bottom: 30px;
+}
+
+.mobileTriangleImage {
+  width: 50%;
+  height: 50%;
+}
+
+.rightThingText {
+  margin: 0 0 40px 40px;
+}
+
+.rightThingText p {
+  text-align: left;
+}
+
+.fullTriangleImage {
+  display: none;
+  width: 309px;
+  height: 447px;
+  padding-right: 50px;
+}
+
+.triangleContainer {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.triangleTop {
+  width: 300px;
+}
+
+.triangleMiddle {
+  width: 220px;
+}
+
+.triangleEnd {
+  width: 100px;
+}
+
+@media mediumScreen {
+  .triangleContainer, .rightThingsList, .triangleHeader {
+    max-width: 500px;
+  }
+}
+
+@media largeScreen {
+  .triangleContainer {
+    margin: 45px auto 0 auto;
+    max-width: 800px;
+  }
+
+  .mobileTriangleImage {
+    display: none;
+  }
+
+  .fullTriangleImage {
+    display: block;
+  }
+
+  .triangleHeader {
+    max-width: none;
+  }
+
+  .rightThingsList {
+    max-width: 500px;
+  }
+}
