@@ -1,4 +1,7 @@
+SHELL:=/bin/bash
+
 BIN=./bin
+LOAD_ENV=source bin/load-env.sh
 SERVICES=$(BIN)/services.sh
 NBIN=./node_modules/.bin
 WEBPACK=$(BIN)/webpack.sh
@@ -24,7 +27,7 @@ check-deps: ## Check deps for updates
 
 
 dev: badger ## Run the frontend dev server
-	$(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js
+	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js
 
 
 dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
