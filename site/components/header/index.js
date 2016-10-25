@@ -1,5 +1,8 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
+
+import SmallScreenNav from './small-screen-nav';
+
 import styles from './style.css';
 import logoSVG from './rb-logo-placeholder.svg';
 
@@ -19,28 +22,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className={styles.triggerContainer}>
-        <label htmlFor="burger" className={styles.triggerLabel}>MENU</label>
-      </div>
-      <input type="checkbox" className={styles.trigger} id="burger" />
-
-      <div className={styles.overlay}>
-        <div>
-          <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
-
-          <nav className={styles.smallScreenNavContainer} role="navigation">
-            <ul className={styles.smallScreenNav}>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about-us/">About us</a></li>
-              <li><a href="/what-we-do/">What we do</a></li>
-              <li><a href="http://red-badger.com/blog/">Blog</a></li>
-              <li><a href="/about-us/events/">Events</a></li>
-              <li><a href="/about-us/join-us/">Jobs</a></li>
-              <li><a href="/about-us/contact-us/">Contact us</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      <SmallScreenNav />
 
     </header>
   );
