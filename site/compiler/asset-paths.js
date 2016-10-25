@@ -10,5 +10,3 @@ const assets = assetsDigest[bundleName];
 
 export const cssPath = filePath(assets.css);
 export const jsPath = filePath(assets.js);
-
-export const HI = 'HI';
