@@ -27,7 +27,7 @@ check-deps: ## Check deps for updates
 
 
 dev: badger ## Run the frontend dev server
-	$(LOAD_ENV) && echo ENVIRONMENT_NAME && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js
+	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js
 
 
 dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
