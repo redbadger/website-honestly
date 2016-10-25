@@ -85,7 +85,7 @@ export default class AfterSignup extends Component {
                     <div className={styles.afterErrorText}>
                       {this.props.errorMessage}
                     </div>
-                  : null
+                    : null
                 }
 
               </div>
@@ -120,7 +120,7 @@ export default class AfterSignup extends Component {
                   this.handleSubmit();
                 }}
               >
-                Update Info
+                {this.state.submitting ? 'Updating info....' : 'Update info'}
               </button>
             </form>
           </div>

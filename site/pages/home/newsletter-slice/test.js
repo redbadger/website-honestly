@@ -51,8 +51,8 @@ describe('Newsletter slice', () => {
       resolve({
         json: () => {
           return {
-            newsletterSubmitted: true,
-            email_address: 'jkdjksdhedw239e8h238u',
+            newsletterSubmitted: false,
+            email_address: 'jkdjksdhedw239e8h238u@gmail.com',
             errorMessage: 'Example error message',
             updatedFormSubmitted: false,
           };
@@ -61,11 +61,15 @@ describe('Newsletter slice', () => {
     });
 
     const wrapper = shallow(<NewsLetter />);
-    const promise = wrapper.instance().submitForm({}, 'POST', submitFormFunction);
+    const promise = wrapper.instance().submitForm(
+      { email_address: 'jkdjksdhedw239e8h238u@gmail.com' },
+      'POST',
+      submitFormFunction
+    );
     promise.then(() => {
       expect(wrapper.state()).to.deep.equal({
-        newsletterSubmitted: true,
-        email_address: 'jkdjksdhedw239e8h238u',
+        newsletterSubmitted: false,
+        email_address: 'jkdjksdhedw239e8h238u@gmail.com',
         errorMessage: 'Example error message',
         updatedFormSubmitted: false,
       });

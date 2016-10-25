@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';
 
+export function isValidEmail(email) {
+  const regex = /.+@.+\..+/;
+  return regex.test(email);
+}
+
 const fetchFunction = ({ url, body, method }) => (
   fetch(url, {
     method,
@@ -24,8 +29,11 @@ class NewsLetter extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
 
-
   submitForm(data, method, submitFormFunction = fetchFunction) {
+    let inBeforeSignUp = true;
+    if (this.state.email_address) {
+      inBeforeSignUp = false;
+    }
     const object = Object.assign({}, data);
     // If we are on the second part of the form, this gets the email saved in our state
     if (!data || !data.email_address) {
@@ -33,11 +41,23 @@ class NewsLetter extends Component {
     }
     // If we are in the second part of the form
     // and the user does not provide a full name, we return an error
-    if (this.state.email_address && !data.name) {
+    if (!inBeforeSignUp && !data.name) {
       return this.setState({
         newsletterSubmitted: true,
         email_address: this.state.email_address,
         errorMessage: 'Please tell us who you are',
+      });
+    }
+    // !this.state.email_address is a check that we are in before sign up
+    if (inBeforeSignUp && data.email_address === '') {
+      return this.setState({
+        errorMessage: 'Please enter an email address',
+      });
+    }
+    // !this.state.email_address is a check that we are in before sign up
+    if (inBeforeSignUp && !isValidEmail(data.email_address)) {
+      return this.setState({
+        errorMessage: 'Please enter a valid email address',
       });
     }
     const formDataJSON = JSON.stringify(object);
