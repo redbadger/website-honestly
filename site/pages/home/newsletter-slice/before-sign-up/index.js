@@ -52,19 +52,20 @@ class BeforeSignUp extends Component {
               name="email_address"
               type="text"
               placeholder="example@email.com"
-              className={!this.props.errorMessage ?
-                styles.formInput :
-                cx('formInput', 'beforeFormError')
-              }
+              className={cx({
+                formInput: true,
+                beforeFormError: this.props.errorMessage,
+              })}
             />
             <div className={styles.beforeErrorText}>
               {!this.state.submitting ? this.props.errorMessage : ''}
             </div>
           </div>
           <button
-            className={!this.state.submitting ?
-              styles.submitButton : cx('submitButton', 'buttonSubmitting')
-            }
+            className={cx({
+              submitButton: true,
+              buttonSubmitting: this.state.submitting,
+            })}
             onClick={e => {
               e.preventDefault();
               this.handleSubmit();

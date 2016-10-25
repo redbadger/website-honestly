@@ -6,6 +6,79 @@ import styles from '../style.css';
 const cx = classnames.bind(styles);
 const { func, string, bool } = React.PropTypes;
 
+
+const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }) => (
+  <div>
+    <h2 className={styles.subTitle}>
+      Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
+    </h2>
+    <form className={styles.form}>
+      <div className={styles.formBlock}>
+        <label htmlFor="name" className={styles.formLabel}>Full name</label>
+        <input
+          id="name"
+          name="name"
+          type="text" placeholder="John Smith"
+          className={cx({
+            formInput: true,
+            afterFormError: errorMessage,
+          })}
+          onChange={handleInputChange}
+        />
+        {
+          errorMessage && !submitting ?
+            <div className={styles.afterErrorText}>
+              {errorMessage}
+            </div>
+          : null
+        }
+
+      </div>
+      <div>
+        <label htmlFor="company" className={styles.formLabel}>Company</label>
+        <input
+          id="company"
+          name="company"
+          type="text"
+          placeholder="Peter Pan Ltd."
+          className={styles.formInput}
+          onChange={handleInputChange}
+        />
+      </div>
+      <div>
+        <label htmlFor="job" className={styles.formLabel}>Job role</label>
+        <input
+          id="role"
+          name="role"
+          type="text"
+          placeholder="Engineer"
+          className={styles.formInput}
+          onChange={handleInputChange}
+        />
+      </div>
+      <button
+        className={cx({
+          submitButton: true,
+          buttonSubmitting: submitting,
+        })}
+        onClick={e => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+      >
+        {submitting ? 'Updating info....' : 'Update info'}
+      </button>
+    </form>
+  </div>
+);
+
+AfterSignUpForm.propTypes = {
+  errorMessage: string.isRequired,
+  handleInputChange: func.isRequired,
+  submitting: bool.isRequired,
+  handleSubmit: func.isRequired,
+};
+
 export default class AfterSignup extends Component {
   static propTypes = {
     onSubmit: func.isRequired,
@@ -61,67 +134,12 @@ export default class AfterSignup extends Component {
         </h1>
         {
           !this.props.updatedFormSubmitted
-          ? <div>
-            <h2 className={styles.subTitle}>
-              Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
-            </h2>
-            <form className={styles.form}>
-              <div className={styles.formBlock}>
-                <label htmlFor="name" className={styles.formLabel}>Full name</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text" placeholder="John Smith"
-                  className={!this.props.errorMessage ?
-                    styles.formInput :
-                    cx('formInput', 'afterFormError')
-                  }
-                  onChange={this.handleInputChange}
-                />
-                {
-                  this.props.errorMessage && !this.state.submitting ?
-                    <div className={styles.afterErrorText}>
-                      {this.props.errorMessage}
-                    </div>
-                    : null
-                }
-
-              </div>
-              <div>
-                <label htmlFor="company" className={styles.formLabel}>Company</label>
-                <input
-                  id="company"
-                  name="company"
-                  type="text"
-                  placeholder="Peter Pan Ltd."
-                  className={styles.formInput}
-                  onChange={this.handleInputChange}
-                />
-              </div>
-              <div>
-                <label htmlFor="job" className={styles.formLabel}>Job role</label>
-                <input
-                  id="role"
-                  name="role"
-                  type="text"
-                  placeholder="Engineer"
-                  className={styles.formInput}
-                  onChange={this.handleInputChange}
-                />
-              </div>
-              <button
-                className={!this.state.submitting ?
-                  styles.submitButton : cx('submitButton', 'buttonSubmitting')
-                }
-                onClick={e => {
-                  e.preventDefault();
-                  this.handleSubmit();
-                }}
-              >
-                {this.state.submitting ? 'Updating info....' : 'Update info'}
-              </button>
-            </form>
-          </div>
+          ? <AfterSignUpForm
+            errorMessage={this.props.errorMessage}
+            handleInputChange={this.handleInputChange}
+            submitting={this.state.submitting}
+            handleSubmit={this.handleSubmit}
+          />
           : null
         }
       </section>
