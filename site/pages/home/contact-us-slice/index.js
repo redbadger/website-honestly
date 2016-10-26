@@ -20,17 +20,15 @@ class ContactUs extends Component {
       success: false,
       fatalError: false,
     };
-    this.submitForm = this.submitForm.bind(this);
-    this.onClose = this.onClose.bind(this);
   }
 
-  onClose() {
+  onClose = () => {
     this.setState({
       success: false,
     });
   }
 
-  submitForm(givenFormData, sendEmailFn = sendEmail) {
+  submitForm = (givenFormData, sendEmailFn = sendEmail) => {
     return Promise.resolve(givenFormData)
       .then(formData => ({
         url: this.props.postURL,
