@@ -15,9 +15,7 @@
   font-size: 16px;
   color: red;
   text-align: left;
-  position: relative;
-  left: 85px;
-  padding: 5px 0px 30px 0px;
+  padding-top: 5px;
 }
 
 .afterErrorText {
@@ -25,7 +23,7 @@
   font-size: 16px;
   color: black;
   position: relative;
-  padding: 5px 0px 30px 0px;
+  padding-top: 5px;
 }
 
 .buttonSubmitting {
@@ -54,6 +52,10 @@
 
 .form {
   text-align: left;
+}
+
+.form > div {
+  padding-bottom: 30px;
 }
 
 .formLabel {
@@ -155,6 +157,10 @@
   }
   .formBlock {
     display: inline-block;
+  }
+  .beforeErrorText {
+    left: 85px;
+    position: relative;
   }
 }
 
