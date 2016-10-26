@@ -3,8 +3,6 @@ import classnames from 'classnames/bind';
 import React from 'react';
 import styles from './style.css';
 
-import Link from '../link';
-
 /* SVGs */
 import githubSVG from './SVG/github.svg';
 import facebookSVG from './SVG/facebook.svg';
@@ -25,24 +23,24 @@ const Footer = () => (
     <div className={styles.footerContainer}>
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks')}>
-          <ul className={styles.nav}>
-            <li>
-              <Link to="homePage">Home</Link>
+          <ul role="listbox" className={styles.nav}>
+            <li role="listitem">
+              <a role="link" href="/">Home</a>
             </li>
-            <li>
-              <a href="/about-us/">About us</a>
+            <li role="listitem">
+              <a role="link" href="/about-us/">About us</a>
             </li>
-            <li>
-              <Link to="whatWeDoPage">What we do</Link>
+            <li role="listitem">
+              <a role="link" href="/services/">What we do</a>
             </li>
-            <li>
-              <a href="http://red-badger.com/blog/">Blog</a>
+            <li role="listitem">
+              <a role="link" href="http://red-badger.com/blog/">Blog</a>
             </li>
-            <li>
-              <a href="/about-us/events/">Events</a>
+            <li role="listitem">
+              <a role="link" href="/about-us/events/">Events</a>
             </li>
-            <li>
-              <a href="/about-us/join-us/">Jobs</a>
+            <li role="listitem">
+              <a role="link" href="/about-us/join-us/">Jobs</a>
             </li>
           </ul>
         </nav>
@@ -130,9 +128,9 @@ const Footer = () => (
         </div>
 
       </div>
-      <InlineSVG src={mapSVG} className={styles.footerMap} />
+      <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
       <div className={cx('section', 'address')}>
-        <InlineSVG src={mapPinSVG} className={styles.mapPin} />
+        <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
         <div className={styles.mapContainer}>
           <address>
             <p>12 Mallow St</p>
