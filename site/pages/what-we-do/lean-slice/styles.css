@@ -41,6 +41,10 @@
 }
 
 @media largeScreen {
+  .slice {
+    padding-bottom: 60px;
+  }
+
   .heading,
   .content {
     max-width: 1160px;
