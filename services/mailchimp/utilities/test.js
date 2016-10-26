@@ -6,6 +6,7 @@ describe('formatSignUpResponse', () => {
       detail: 'This email address has already signed up',
       status: 400,
       email_address: 'test@gmail.com',
+      title: 'Member Exists',
       merge_fields: {
         FNAME: 'Andrew',
       },
