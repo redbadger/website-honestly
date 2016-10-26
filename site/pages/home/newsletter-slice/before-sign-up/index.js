@@ -30,7 +30,7 @@ class BeforeSignUp extends Component {
     this.setState({
       submitting: true,
     });
-    this.props.onSubmit(this.state, 'POST');
+    this.props.onSubmit(this.state);
   }
 
   render() {

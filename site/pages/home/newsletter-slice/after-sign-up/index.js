@@ -14,11 +14,11 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
     </h2>
     <form className={styles.form}>
       <div className={styles.formBlock}>
-        <label htmlFor="name" className={styles.formLabel}>Full name</label>
+        <label htmlFor="name" className={styles.formLabel}>Name</label>
         <input
           id="name"
           name="name"
-          type="text" placeholder="John Smith"
+          type="text" placeholder="John"
           className={cx({
             formInput: true,
             afterFormError: errorMessage,
@@ -32,7 +32,16 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
             </div>
           : null
         }
-
+      </div>
+      <div className={styles.formBlock}>
+        <label htmlFor="surname" className={styles.formLabel}>Surname</label>
+        <input
+          id="surname"
+          name="surname"
+          type="text" placeholder="Smith"
+          className={styles.formInput}
+          onChange={handleInputChange}
+        />
       </div>
       <div>
         <label htmlFor="company" className={styles.formLabel}>Company</label>
@@ -116,7 +125,7 @@ export default class AfterSignup extends Component {
     this.setState({
       submitting: true,
     });
-    this.props.onSubmit(this.state, 'PATCH');
+    this.props.onSubmit(this.state);
   }
 
   // fixes bug in safari where the component height wouldn't update

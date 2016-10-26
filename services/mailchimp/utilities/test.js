@@ -85,7 +85,8 @@ describe('formatFormInput', () => {
     const event = {
       body: {
         email_address: 'test@gmail.com',
-        name: 'Testa Fiesta',
+        name: 'Testa',
+        surname: 'Fiesta',
         company: 'Red Badger',
         role: 'Developer',
       },
@@ -106,7 +107,8 @@ describe('formatFormInput', () => {
     const event = {
       body: {
         email_address: encryptText('test@gmail.com'),
-        name: 'Testa Fiesta',
+        name: 'Testa',
+        surname: 'Fiesta',
         company: 'Red Badger',
         role: 'Developer',
       },

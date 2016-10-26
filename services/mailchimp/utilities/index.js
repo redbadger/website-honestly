@@ -73,11 +73,7 @@ export function formatUpdateResponse(res, data) {
 }
 
 export function formatFormInput(event, isEmailEncrypted) {
-  let fullName = [];
   let emailAddress = event.body.email_address;
-  if (event.body.name) {
-    fullName = event.body.name.split(' ');
-  }
   if (isEmailEncrypted) {
     emailAddress = decryptText(event.body.email_address);
   }
@@ -85,8 +81,8 @@ export function formatFormInput(event, isEmailEncrypted) {
     email_address: emailAddress,
     status: 'subscribed',
     merge_fields: {
-      FNAME: fullName[0] || '',
-      LNAME: fullName[fullName.length - 1] || '',
+      FNAME: event.body.name || '',
+      LNAME: event.body.surname || '',
       COMPANY: event.body.company || '',
       ROLE: event.body.role || '',
     },

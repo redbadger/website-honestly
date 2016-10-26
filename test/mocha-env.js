@@ -1,4 +1,5 @@
 import cssHook from 'css-modules-require-hook';
+import 'isomorphic-fetch';
 import { hook as requireHook } from 'node-hook';
 import { jsdom } from 'jsdom';
 import { DOMParser } from 'xmldom';

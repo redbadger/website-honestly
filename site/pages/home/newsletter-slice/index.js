@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 /* eslint-disable react/no-set-state */
+import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';
 
@@ -28,39 +28,8 @@ class NewsLetter extends Component {
     };
   }
 
-  submitForm = (data, method, submitFormFunction = fetchFunction) => {
-    let inBeforeSignUp = true;
-    if (this.state.email_address) {
-      inBeforeSignUp = false;
-    }
-    const object = Object.assign({}, data);
-    // If we are on the second part of the form, this gets the email saved in our state
-    if (!data || !data.email_address) {
-      object.email_address = this.state.email_address;
-    }
-    // If we are in the second part of the form
-    // and the user does not provide a full name, we return an error
-    if (!inBeforeSignUp && !data.name) {
-      return this.setState({
-        newsletterSubmitted: true,
-        email_address: this.state.email_address,
-        errorMessage: 'Please tell us who you are',
-      });
-    }
-    // !this.state.email_address is a check that we are in before sign up
-    if (inBeforeSignUp && data.email_address === '') {
-      return this.setState({
-        errorMessage: 'Please enter an email address',
-      });
-    }
-    // !this.state.email_address is a check that we are in before sign up
-    if (inBeforeSignUp && !isValidEmail(data.email_address)) {
-      return this.setState({
-        errorMessage: 'Please enter a valid email address',
-      });
-    }
-    const formDataJSON = JSON.stringify(object);
-    return submitFormFunction({
+  submitForm = (formDataJSON, method, fetchFn = fetchFunction) => {
+    return fetchFn({
       url: 'https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/mailing-list',
       method,
       body: formDataJSON,
@@ -78,18 +47,45 @@ class NewsLetter extends Component {
       });
   }
 
+  signUpUser = data => {
+    if (data.email_address === '') {
+      return this.setState({
+        errorMessage: 'Please enter an email address',
+      });
+    }
+    if (!isValidEmail(data.email_address)) {
+      return this.setState({
+        errorMessage: 'Please enter a valid email address',
+      });
+    }
+    return this.submitForm(JSON.stringify(data), 'POST');
+  }
+
+  updateUser = data => {
+    const object = Object.assign({}, data);
+    object.email_address = this.state.email_address;
+    if (!data.name) {
+      return this.setState({
+        newsletterSubmitted: true,
+        email_address: this.state.email_address,
+        errorMessage: 'Please tell us your name',
+      });
+    }
+    return this.submitForm(JSON.stringify(object), 'PATCH');
+  }
+
   render() {
     return (
       <div>
         {
           this.state.newsletterSubmitted
           ? <NewsletterAfterSignUp
-            onSubmit={this.submitForm}
+            onSubmit={this.updateUser}
             updatedFormSubmitted={this.state.updatedFormSubmitted}
             errorMessage={this.state.errorMessage}
           />
           : <NewsletterBeforeSignUp
-            onSubmit={this.submitForm}
+            onSubmit={this.signUpUser}
             errorMessage={this.state.errorMessage}
           />
         }

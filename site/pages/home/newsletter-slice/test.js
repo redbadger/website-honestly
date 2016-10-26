@@ -37,11 +37,11 @@ describe('Newsletter slice', () => {
       const data = {
         name: '',
       };
-      wrapper.instance().submitForm(data);
+      wrapper.instance().updateUser(data);
       expect(wrapper.state()).to.deep.equal({
         newsletterSubmitted: true,
         email_address: 'test@gmail.com',
-        errorMessage: 'Please tell us who you are',
+        errorMessage: 'Please tell us your name',
         updatedFormSubmitted: false,
       });
     });
