@@ -49,9 +49,11 @@ const Footer = () => (
           <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>
             hello@red-badger.com
           </a>
-          <a href="tel:+442035670555" className={styles.telLink}>+44 (0) 20 3567 0555</a>
+          <a href="tel:+442035670555" className={styles.telLink}>
+            +44 (0) 20 3567 0555
+          </a>
           <ul className={styles.socialLinks}>
-            <li>
+            <li role="listitem">
               <a
                 href="https://github.com/redbadger"
                 title="Red Badger Github"
@@ -60,8 +62,9 @@ const Footer = () => (
                 <InlineSVG src={githubSVG} />
               </a>
             </li>
-            <li>
+            <li role="listitem">
               <a
+                role="link"
                 href="https://twitter.com/redbadgerteam"
                 title="Red Badger Twitter"
                 className={styles.socialIcon}
@@ -69,8 +72,9 @@ const Footer = () => (
                 <InlineSVG src={twitterSVG} />
               </a>
             </li>
-            <li>
+            <li role="listitem">
               <a
+                role="link"
                 href="https://redbadger.typeform.com/to/cBuJUl"
                 title="Red Badger Slack"
                 className={styles.socialIcon}
@@ -78,8 +82,9 @@ const Footer = () => (
                 <InlineSVG src={slackSVG} />
               </a>
             </li>
-            <li>
+            <li role="listitem">
               <a
+                role="link"
                 href="https://www.linkedin.com/company/red-badger"
                 title="Red Badger Linkedin"
                 className={styles.socialIcon}
@@ -88,8 +93,9 @@ const Footer = () => (
               </a>
             </li>
 
-            <li>
+            <li role="listitem">
               <a
+                role="link"
                 href="https://www.instagram.com/redbadgerteam/"
                 title="Red Badger Instagram"
                 className={styles.socialIcon}
@@ -97,8 +103,9 @@ const Footer = () => (
                 <InlineSVG src={instagramSVG} />
               </a>
             </li>
-            <li>
+            <li role="listitem">
               <a
+                role="link"
                 href="https://www.facebook.com/RedBadger"
                 title="Red Badger Facebook"
                 className={styles.socialIcon}
@@ -106,8 +113,9 @@ const Footer = () => (
                 <InlineSVG src={facebookSVG} />
               </a>
             </li>
-            <li>
+            <li role="listitem">
               <a
+                role="link"
                 href="https://www.youtube.com/redbadgerteam"
                 title="Red Badger Youtube"
                 className={styles.socialIcon}
@@ -115,7 +123,7 @@ const Footer = () => (
                 <InlineSVG src={youtubeSVG} />
               </a>
             </li>
-            <li>
+            <li role="listitem">
               <a
                 href="https://plus.google.com/+Redbadgerteam"
                 title="Red Badger Google Plus"
