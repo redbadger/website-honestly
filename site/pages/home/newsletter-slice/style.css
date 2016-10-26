@@ -6,13 +6,9 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding: 30px 20px 40px 20px;
 }
 
-.formBlock {
-  display: inline-block;
-}
 
 .beforeErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
@@ -156,6 +152,9 @@
 
   .submitted .submitButton {
     display: block;
+  }
+  .formBlock {
+    display: inline-block;
   }
 }
 

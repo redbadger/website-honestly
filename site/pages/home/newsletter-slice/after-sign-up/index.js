@@ -13,7 +13,7 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
       Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
     </h2>
     <form className={styles.form}>
-      <div className={styles.formBlock}>
+      <div>
         <label htmlFor="name" className={styles.formLabel}>Name</label>
         <input
           id="name"
@@ -33,7 +33,7 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
           : null
         }
       </div>
-      <div className={styles.formBlock}>
+      <div>
         <label htmlFor="surname" className={styles.formLabel}>Surname</label>
         <input
           id="surname"
