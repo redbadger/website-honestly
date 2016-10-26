@@ -38,7 +38,7 @@ export function formatSignUpResponse(res) {
     encryptedEmail = encryptText(res.email_address);
   }
   const defaultResponse = {
-    newsletterSubmitted: false,
+    newsletterSubmitted: true,
     updatedFormSubmitted: false,
     errorMessage: '',
     email_address: encryptedEmail,
@@ -46,14 +46,10 @@ export function formatSignUpResponse(res) {
   // There was an error signing up the user
   if (res.status === 400) {
     defaultResponse.errorMessage = 'This email address has already signed up';
+    defaultResponse.newsletterSubmitted = false;
     return defaultResponse;
   }
-  return {
-    newsletterSubmitted: true,
-    updatedFormSubmitted: false,
-    errorMessage: '',
-    email_address: encryptedEmail,
-  };
+  return defaultResponse;
 }
 
 export function formatUpdateResponse(res, data) {
