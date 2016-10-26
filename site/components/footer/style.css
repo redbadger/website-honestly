@@ -53,13 +53,6 @@
   font-size: linkSize;
 }
 
-@media speech {
-  .telLink {
-    speak-numeral: digits;
-    speak-as: digits;
-  }
-}
-
 .mailtoLink,
 .telLink {
   color: badgerWhite;
