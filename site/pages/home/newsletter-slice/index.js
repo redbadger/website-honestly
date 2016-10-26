@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';
 
+const { string } = React.PropTypes;
+
 export function isValidEmail(email) {
   const regex = /.+@.+\..+/;
   return regex.test(email);
@@ -18,8 +20,8 @@ const fetchFunction = ({ url, body, method }) => (
 );
 
 class NewsLetter extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       newsletterSubmitted: false,
       email_address: '',
@@ -30,7 +32,7 @@ class NewsLetter extends Component {
 
   submitForm = (formDataJSON, method, fetchFn = fetchFunction) => {
     return fetchFn({
-      url: 'https://v8pxyg84jj.execute-api.eu-west-1.amazonaws.com/dev/mailing-list',
+      url: this.props.mailingListURL,
       method,
       body: formDataJSON,
     })
@@ -43,6 +45,7 @@ class NewsLetter extends Component {
       .catch(() => {
         return this.setState({
           newsletterSubmitted: false,
+          errorMessage: 'Unfortunately there was an error, please try again later',
         });
       });
   }
@@ -93,5 +96,9 @@ class NewsLetter extends Component {
     );
   }
 }
+
+NewsLetter.propTypes = {
+  mailingListURL: string,
+};
 
 export default NewsLetter;

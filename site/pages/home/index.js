@@ -16,7 +16,7 @@ const HomePage = ({ data }) => (
     <TechSlice />
     <ContactUs postURL={data.contactUsURL} />
     <BlogSlice />
-    <NewsLetter />
+    <NewsLetter mailingListURL={data.mailingListURL} />
   </div>
 );
 
@@ -24,6 +24,7 @@ const { shape, string } = React.PropTypes;
 HomePage.propTypes = {
   data: shape({
     contactUsURL: string,
+    mailingListURL: string,
   }).isRequired,
 };
 

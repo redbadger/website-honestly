@@ -45,7 +45,7 @@ export function formatSignUpResponse(res) {
   };
   // There was an error signing up the user
   if (res.status === 400) {
-    defaultResponse.errorMessage = 'There was an error signing you up';
+    defaultResponse.errorMessage = 'This email address has already signed up';
     return defaultResponse;
   }
   return {
