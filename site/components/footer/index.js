@@ -50,7 +50,22 @@ const Footer = () => (
             hello@red-badger.com
           </a>
           <a href="tel:+442035670555" className={styles.telLink}>
-            +44 (0) 20 3567 0555
+            <span>+</span>
+            <span>4</span>
+            <span>4 </span>
+            <span>(</span>
+            <span>0</span>
+            <span>) </span>
+            <span>2</span>
+            <span>0 </span>
+            <span>3</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7 </span>
+            <span>0</span>
+            <span>5</span>
+            <span>5</span>
+            <span>5</span>
           </a>
           <ul className={styles.socialLinks}>
             <li role="listitem">
