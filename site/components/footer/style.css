@@ -133,6 +133,7 @@
     position: absolute;
     width: 824px;
     height: 400px;
+    top: 0;
     right: 0;
     display: block;
     overflow: hidden;

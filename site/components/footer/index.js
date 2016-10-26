@@ -23,7 +23,6 @@ const cx = classnames.bind(styles);
 const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
-      <InlineSVG src={mapSVG} className={styles.footerMap} />
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks')}>
           <ul className={styles.nav}>
@@ -131,6 +130,7 @@ const Footer = () => (
         </div>
 
       </div>
+      <InlineSVG src={mapSVG} className={styles.footerMap} />
       <div className={cx('section', 'address')}>
         <InlineSVG src={mapPinSVG} className={styles.mapPin} />
         <div className={styles.mapContainer}>
