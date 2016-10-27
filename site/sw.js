@@ -5,9 +5,8 @@ const CACHE_NAME = 'v1';
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      console.log('caching html');
       return cache.addAll([
-        'index.html',
+        '/',
       ]);
     })
   );
@@ -28,7 +27,6 @@ self.addEventListener('fetch', event => {
         // as well as the cache consuming the response, we need
         // to clone it so we have two streams.
         if (/\.(css|js|png)$/i.test(url)) {
-          console.log('caching url', url);
           const responseToCache = res.clone();
 
           caches.open(CACHE_NAME)
