@@ -15,7 +15,8 @@ export function makeApp({ element, data, history }) {
   registerStateNavigator(stateNavigator);
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
+    console.log('registering service worker');
+    navigator.serviceWorker.register('sw.js').then(e => console.log(e));
   }
 
   routes.forEach(route => {
