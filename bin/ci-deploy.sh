@@ -16,7 +16,7 @@ createCommitSite() {
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
   aws s3 sync ./dist/txt s3://$BUCKET_NAME/$COMMIT_REF
-  aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF
+  aws s3 sync ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF
   make services-deploy
   make publish-service-invoke
   echo Done!
