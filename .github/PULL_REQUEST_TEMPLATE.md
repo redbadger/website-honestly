@@ -22,4 +22,6 @@ TODO: write a motivation.
   - [ ] Mac OS El Capitan Firefox
   - [ ] iOS 9 Safari
   - [ ] Android 6 Chrome
+  - [ ] Listen to the site on screen readers
+  - [ ] Navigate the site using the keyboard only
 - [ ] Tester approved
