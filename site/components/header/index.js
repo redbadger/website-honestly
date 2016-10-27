@@ -1,6 +1,7 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
 
+import Link from '../link';
 import SmallScreenNav from './small-screen-nav';
 
 import styles from './style.css';
@@ -9,13 +10,13 @@ import logoSVG from './rb-logo-placeholder.svg';
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
-      <a href="/" title="Home" className={styles.logo}>
+      <Link to="homePage" title="Home" className={styles.logo}>
         <InlineSVG src={logoSVG} />
-      </a>
+      </Link>
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul className={styles.mediumScreenNav}>
-          <li><a href="/what-we-do/">What we do</a></li>
+          <li><Link to="whatWeDoPage">What we do</Link></li>
           <li><a href="/about-us/">About us</a></li>
           <li><a href="http://red-badger.com/blog/">Blog</a></li>
           <li><a href="/about-us/events/">Events</a></li>
