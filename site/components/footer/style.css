@@ -1,6 +1,12 @@
 @value badgerRed, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize from "../../css/_sizes.css";
 
+.visuallyHidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .footer {
   composes: dividerBlack from "../../css/_divider.css";
   color: badgerWhite;
