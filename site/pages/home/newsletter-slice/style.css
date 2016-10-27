@@ -6,7 +6,7 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding: 30px 20px 40px 20px;
+  padding: 30px 20px 25px 20px;
 }
 
 
@@ -161,6 +161,10 @@
   .beforeErrorText {
     left: 85px;
     position: relative;
+  }
+
+  .newsletter {
+    padding: 30px 20px 40px 20px;
   }
 }
 
