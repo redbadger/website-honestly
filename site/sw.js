@@ -7,7 +7,7 @@ self.addEventListener('install', event => {
     caches.open(CACHE_NAME).then(cache => {
       console.log('caching html');
       return cache.addAll([
-        '/',
+        'index.html',
       ]);
     })
   );
