@@ -1,10 +1,8 @@
 @value badgerRed, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize from "../../css/_sizes.css";
 
-.visuallyHidden {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
+.screenReaderText {
+  composes: visuallyHidden from "../../css/_accessibility.css";
 }
 
 .footer {
