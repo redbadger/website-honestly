@@ -35,7 +35,7 @@ deployMaster() {
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
   aws s3 sync ./dist/txt s3://$BUCKET_NAME
-  aws s3 cp ./dist/sw.js s3://$BUCKET_NAME
+  aws s3 sync ./dist/sw.js s3://$BUCKET_NAME
   make services-deploy
   make publish-service-invoke
   echo Done!
