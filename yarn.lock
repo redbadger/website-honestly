@@ -375,6 +375,16 @@ babel-helper-define-map@^6.8.0, babel-helper-define-map@^6.9.0:
     babel-types "^6.9.0"
     lodash "^4.2.0"
 
+babel-helper-function-name@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-helper-function-name/-/babel-helper-function-name-6.18.0.tgz#68ec71aeba1f3e28b2a6f0730190b754a9bf30e6"
+  dependencies:
+    babel-helper-get-function-arity "^6.18.0"
+    babel-runtime "^6.0.0"
+    babel-template "^6.8.0"
+    babel-traverse "^6.18.0"
+    babel-types "^6.18.0"
+
 babel-helper-function-name@^6.8.0:
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/babel-helper-function-name/-/babel-helper-function-name-6.8.0.tgz#a0336ba14526a075cdf502fc52d3fe84b12f7a34"
@@ -384,6 +394,13 @@ babel-helper-function-name@^6.8.0:
     babel-template "^6.8.0"
     babel-traverse "^6.8.0"
     babel-types "^6.8.0"
+
+babel-helper-get-function-arity@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-helper-get-function-arity/-/babel-helper-get-function-arity-6.18.0.tgz#a5b19695fd3f9cdfc328398b47dafcd7094f9f24"
+  dependencies:
+    babel-runtime "^6.0.0"
+    babel-types "^6.18.0"
 
 babel-helper-get-function-arity@^6.8.0:
   version "6.8.0"
@@ -465,10 +482,10 @@ babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.13.0.tgz#e741ff3992c578310be45c571bcd90a2f9c5586e"
 
 babel-plugin-transform-class-properties@^6.16.0:
-  version "6.16.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-class-properties/-/babel-plugin-transform-class-properties-6.16.0.tgz#969bca24d34e401d214f36b8af5c1346859bc904"
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-class-properties/-/babel-plugin-transform-class-properties-6.18.0.tgz#bc1266a39d4c8726e0bd7b15c56235177e6ede57"
   dependencies:
-    babel-helper-function-name "^6.8.0"
+    babel-helper-function-name "^6.18.0"
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-runtime "^6.9.1"
 
@@ -2543,7 +2560,7 @@ globals@^8.3.0:
   version "8.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-8.18.0.tgz#93d4a62bdcac38cfafafc47d6b034768cb0ffcb4"
 
-globals@^9.2.0:
+globals@^9.0.0, globals@^9.2.0:
   version "9.12.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.12.0.tgz#992ce90828c3a55fa8f16fada177adb64664cf9d"
 
@@ -6192,4 +6209,3 @@ zip-stream@^1.1.0:
     compress-commons "^1.1.0"
     lodash "^4.8.0"
     readable-stream "^2.0.0"
-
