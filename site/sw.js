@@ -5,6 +5,8 @@ const CACHE_NAME = 'v1';
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
+      console.log(process.env.URL_BASENAME);
+      console.log(process.env.URL_BASENAME.toString());
       return cache.addAll([
         '/',
         process.env.URL_BASENAME,
