@@ -17,10 +17,9 @@ const env = key => {
   process.exit(1);
 };
 
-const environment = env('ENVIRONMENT_NAME');
 const gitHubUsername = env('GITHUB_USERNAME');
 const gitHubToken = env('GITHUB_TOKEN');
-const targetUrl = `http://rb-website-honestly--${environment}.s3-website-eu-west-1.amazonaws.com/${ref}/`;
+const targetUrl = `https://www-staging.red-badger.com/${ref}/`;
 const environmentUrl = targetUrl;
 
 const creds = `${gitHubUsername}:${gitHubToken}`;
