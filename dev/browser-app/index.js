@@ -1,3 +1,4 @@
+import 'whatwg-fetch';
 import { makeApp } from '../../site/client';
 
 const element = document.querySelector('.js-app');

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import TopSlice from './homepage-top-slice';
 import CaseStudy from '../../components/case-study';
@@ -6,46 +6,26 @@ import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
 import ContactUs from './contact-us-slice';
-import NewsletterAfterSignUp from './newsletter-slice/after-sign-up';
-import NewsletterBeforeSignUp from './newsletter-slice/before-sign-up';
+import NewsLetter from './newsletter-slice';
 
-export default class HomePage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      newsletterSubmitted: false,
-    };
-  }
-
-  onSubmit = e => {
-    e.preventDefault();
-    this.setState({
-      newsletterSubmitted: !this.state.newsletterSubmitted,
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <TopSlice />
-        <CaseStudy />
-        <Brie />
-        <TechSlice />
-        <ContactUs postURL={this.props.data.contactUsURL} />
-        <BlogSlice />
-        {
-          this.state.newsletterSubmitted
-            ? <NewsletterAfterSignUp onSubmit={this.onSubmit} />
-            : <NewsletterBeforeSignUp onSubmit={this.onSubmit} />
-        }
-      </div>
-    );
-  }
-}
+const HomePage = ({ data }) => (
+  <div>
+    <TopSlice />
+    <CaseStudy />
+    <Brie />
+    <TechSlice />
+    <ContactUs postURL={data.contactUsURL} />
+    <BlogSlice />
+    <NewsLetter mailingListURL={data.mailingListURL} />
+  </div>
+);
 
 const { shape, string } = React.PropTypes;
 HomePage.propTypes = {
   data: shape({
     contactUsURL: string,
+    mailingListURL: string,
   }).isRequired,
 };
+
+export default HomePage;
