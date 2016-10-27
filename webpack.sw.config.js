@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const swConfig = {
   entry: './site/sw.js',
   output: {
@@ -14,6 +16,15 @@ const swConfig = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      process: {
+        env: {
+          URL_BASENAME: process.env.URL_BASENAME,
+        },
+      },
+    }),
+  ],
 };
 
 module.exports = swConfig;
