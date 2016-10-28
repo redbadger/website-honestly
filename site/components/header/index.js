@@ -15,19 +15,11 @@ const Header = () => {
       </a>
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
-        <ul role="listbox" className={styles.mediumScreenNav}>
-          <li role="listitem">
-            <a role="link" href="/what-we-do/">What we do</a>
-          </li>
-          <li role="listitem">
-            <a role="link" href="/about-us/">About us</a>
-          </li>
-          <li role="listitem">
-            <a role="link" href="http://red-badger.com/blog/">Blog</a>
-          </li>
-          <li role="listitem">
-            <a role="link" href="/about-us/events/">Events</a>
-          </li>
+        <ul className={styles.mediumScreenNav}>
+          <li><a href="/what-we-do/">What we do</a></li>
+          <li><a href="/about-us/">About us</a></li>
+          <li><a href="http://red-badger.com/blog/">Blog</a></li>
+          <li><a href="/about-us/events/">Events</a></li>
         </ul>
       </nav>
 

@@ -5,11 +5,7 @@ import React from 'react';
 import styles from './style.css';
 
 const NavItem = ({ href, tabIndex, text }) => (
-  <li role="listitem">
-    <a role="link" href={href} tabIndex={tabIndex}>
-      {text}
-    </a>
-  </li>
+  <li><a href={href} tabIndex={tabIndex}>{text}</a></li>
 );
 
 const { number, string } = React.PropTypes;
