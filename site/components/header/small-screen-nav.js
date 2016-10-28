@@ -4,22 +4,94 @@ import React from 'react';
 
 import styles from './style.css';
 
+const NavItem = ({ href, tabIndex, text }) => (
+  <li>
+    <a
+      href={href}
+      tabIndex={tabIndex}
+    >
+      {text}
+    </a>
+  </li>
+);
+
+const { number, string } = React.PropTypes;
+NavItem.propTypes = {
+  href: string.isRequired,
+  tabIndex: number.isRequired,
+  text: string.isRequired,
+};
+
 export default class SmallScreenNav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navOpen: false,
+    };
+  }
+
+  componentWillUpdate = (oldState, newState) => {
+    console.log('newState', newState);
+    return newState;
+  }
+
+  handleInputChange = event => {
+    this.setState({
+      navOpen: event.target.checked,
+    });
+  }
+
   closeMenu = () => {
     this.input.checked = false;
   }
 
   render() {
+    const { navOpen } = this.state;
+    const navItems = [
+      {
+        href: '/about-us/',
+        text: 'About us',
+      },
+      {
+        href: '/what-we-do/',
+        text: 'What we do',
+      },
+      {
+        href: 'http://red-badger.com/blog/',
+        text: 'Blog',
+      },
+      {
+        href: '/about-us/events/',
+        text: 'Events',
+      },
+      {
+        href: '/about-us/join-us/',
+        text: 'Jobs',
+      },
+      {
+        href: '/about-us/contact-us/',
+        text: 'Contact us',
+      },
+    ];
+
     return (
       <div className={styles.smallScreenNavComponent}>
         <div className={styles.triggerContainer}>
-          <label htmlFor="burger" className={styles.triggerLabel}>MENU</label>
+          <label
+            htmlFor="burger"
+            className={styles.triggerLabel}
+            hidden={navOpen}
+          >
+            MENU
+          </label>
         </div>
         <input
           type="checkbox"
           className={styles.trigger}
           id="burger"
           ref={c => { this.input = c; }}
+          onChange={this.handleInputChange}
+          hidden
         />
 
         <div className={styles.overlay}>
@@ -27,18 +99,27 @@ export default class SmallScreenNav extends React.Component {
             className={styles.smallScreenNavMargin}
             onClick={this.closeMenu}
           />
-          <div className={styles.smallScreenNavWrapper}>
+          <div
+            className={styles.smallScreenNavWrapper}
+            hidden={!navOpen}
+          >
             <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
 
             <nav className={styles.smallScreenNavContainer} role="navigation">
               <ul className={styles.smallScreenNav}>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about-us/">About us</a></li>
-                <li><a href="/what-we-do/">What we do</a></li>
-                <li><a href="http://red-badger.com/blog/">Blog</a></li>
-                <li><a href="/about-us/events/">Events</a></li>
-                <li><a href="/about-us/join-us/">Jobs</a></li>
-                <li><a href="/about-us/contact-us/">Contact us</a></li>
+                {
+                  navItems.map((item, index) => {
+                    const tabIndex = navOpen ? 0 : -1;
+                    return (
+                      <NavItem
+                        href={item.href}
+                        key={index}
+                        tabIndex={tabIndex}
+                        text={item.text}
+                      />
+                    );
+                  })
+                }
               </ul>
             </nav>
           </div>
