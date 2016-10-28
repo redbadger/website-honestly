@@ -82,7 +82,7 @@ resources:
       Properties:
         DistributionConfig:
           Origins:
-            - DomainName: "${self:custom.bucket_name}.s3.amazonaws.com"
+            - DomainName: "${self:custom.bucket_name}.s3-website-eu-west-1.amazonaws.com"
               Id: "S3Origin"
               CustomOriginConfig:
                 HTTPPort: "80"
