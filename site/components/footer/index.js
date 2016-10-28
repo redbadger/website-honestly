@@ -24,24 +24,24 @@ const Footer = () => (
       <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks')}>
-          <ul role="listbox" className={styles.nav}>
-            <li role="listitem">
-              <a role="link" href="/">Home</a>
+          <ul className={styles.nav}>
+            <li>
+              <a href="/">Home</a>
             </li>
-            <li role="listitem">
-              <a role="link" href="/about-us/">About us</a>
+            <li>
+              <a href="/about-us/">About us</a>
             </li>
-            <li role="listitem">
-              <a role="link" href="/services/">What we do</a>
+            <li>
+              <a href="/services/">What we do</a>
             </li>
-            <li role="listitem">
-              <a role="link" href="http://red-badger.com/blog/">Blog</a>
+            <li>
+              <a href="http://red-badger.com/blog/">Blog</a>
             </li>
-            <li role="listitem">
-              <a role="link" href="/about-us/events/">Events</a>
+            <li>
+              <a href="/about-us/events/">Events</a>
             </li>
-            <li role="listitem">
-              <a role="link" href="/about-us/join-us/">Jobs</a>
+            <li>
+              <a href="/about-us/join-us/">Jobs</a>
             </li>
           </ul>
         </nav>
@@ -72,7 +72,7 @@ const Footer = () => (
           </a>
           <span className={styles.screenReaderText}>Find us on social media</span>
           <ul className={styles.socialLinks}>
-            <li role="listitem">
+            <li>
               <a
                 href="https://github.com/redbadger"
                 title="Red Badger Github"
@@ -82,9 +82,9 @@ const Footer = () => (
                 <InlineSVG src={githubSVG} />
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a
-                role="link"
+
                 href="https://twitter.com/redbadgerteam"
                 title="Red Badger Twitter"
                 className={styles.socialIcon}
@@ -93,9 +93,9 @@ const Footer = () => (
                 <InlineSVG src={twitterSVG} />
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a
-                role="link"
+
                 href="https://redbadger.typeform.com/to/cBuJUl"
                 title="Red Badger Slack"
                 className={styles.socialIcon}
@@ -104,9 +104,9 @@ const Footer = () => (
                 <InlineSVG src={slackSVG} />
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a
-                role="link"
+
                 href="https://www.linkedin.com/company/red-badger"
                 title="Red Badger Linkedin"
                 className={styles.socialIcon}
@@ -116,9 +116,9 @@ const Footer = () => (
               </a>
             </li>
 
-            <li role="listitem">
+            <li>
               <a
-                role="link"
+
                 href="https://www.instagram.com/redbadgerteam/"
                 title="Red Badger Instagram"
                 className={styles.socialIcon}
@@ -127,9 +127,9 @@ const Footer = () => (
                 <InlineSVG src={instagramSVG} />
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a
-                role="link"
+
                 href="https://www.facebook.com/RedBadger"
                 title="Red Badger Facebook"
                 className={styles.socialIcon}
@@ -138,9 +138,9 @@ const Footer = () => (
                 <InlineSVG src={facebookSVG} />
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a
-                role="link"
+
                 href="https://www.youtube.com/redbadgerteam"
                 title="Red Badger Youtube"
                 className={styles.socialIcon}
@@ -149,7 +149,7 @@ const Footer = () => (
                 <InlineSVG src={youtubeSVG} />
               </a>
             </li>
-            <li role="listitem">
+            <li>
               <a
                 href="https://plus.google.com/+Redbadgerteam"
                 title="Red Badger Google Plus"
