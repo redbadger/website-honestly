@@ -3,6 +3,8 @@ import classnames from 'classnames/bind';
 import React from 'react';
 import styles from './style.css';
 
+import Link from '../link';
+
 /* SVGs */
 import githubSVG from './SVG/github.svg';
 import facebookSVG from './SVG/facebook.svg';
@@ -26,13 +28,13 @@ const Footer = () => (
         <nav role="navigation" className={cx('section', 'footerLinks')}>
           <ul className={styles.nav}>
             <li>
-              <a href="/">Home</a>
+              <Link to="homePage">Home</Link>
             </li>
             <li>
               <a href="/about-us/">About us</a>
             </li>
             <li>
-              <a href="/services/">What we do</a>
+              <Link to="whatWeDoPage">What we do</Link>
             </li>
             <li>
               <a href="http://red-badger.com/blog/">Blog</a>
