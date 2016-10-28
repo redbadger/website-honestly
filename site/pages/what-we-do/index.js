@@ -3,27 +3,17 @@ import classnames from 'classnames/bind';
 import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
 import TriangleSlice from './triangle-slice';
+import LeanSlice from './lean-slice';
 
-/* PNG and Jpg  imports */
 import camdenJpg from './JPG/camden.jpg';
 import financialTimesJpg from './JPG/financialtimes.jpg';
 import fortnumJpg from './JPG/fortnum.jpg';
 
 const cx = classnames.bind(styles);
 
-export default function whatWeDo() {
+function CaseStudies() {
   return (
     <div>
-      <div className={styles.pageHeaderContainer}>
-        <h1 className={styles.pageHeader}>
-          Do the <span className={styles.redText}>right</span> thing.
-        </h1>
-        <h1 className={styles.pageHeader}>
-          Do the thing <span className={styles.redText}>right</span>.
-        </h1>
-      </div>
-      <TriangleSlice />
-      <TechSlice />
       <div className={styles.headerContainer}>
         <h1 className={styles.mainHeader}>The proof is in the pudding.</h1>
         <h2 className={styles.subHeader}>Read some of our case studies.</h2>
@@ -83,6 +73,25 @@ export default function whatWeDo() {
       <div className={styles.buttonContainer}>
         <a className={styles.button} href="/our-work/">See more of our work</a>
       </div>
+    </div>
+  );
+}
+
+export default function whatWeDo() {
+  return (
+    <div>
+      <div className={styles.pageHeaderContainer}>
+        <h1 className={styles.pageHeader}>
+          Do the <span className={styles.redText}>right</span> thing.
+        </h1>
+        <h1 className={styles.pageHeader}>
+          Do the thing <span className={styles.redText}>right</span>.
+        </h1>
+      </div>
+      <TriangleSlice />
+      <LeanSlice />
+      <TechSlice />
+      <CaseStudies />
     </div>
   );
 }
