@@ -10,6 +10,7 @@ const Header = () => {
   return (
     <header className={styles.header} role="banner">
       <a href="/" title="Home" className={styles.logo}>
+        <span className={styles.screenReaderText}>Red Badger</span>
         <InlineSVG src={logoSVG} />
       </a>
 
