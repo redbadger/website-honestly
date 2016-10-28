@@ -20,7 +20,7 @@ const swConfig = {
     new webpack.DefinePlugin({
       process: {
         env: {
-          URL_BASENAME: process.env.URL_BASENAME,
+          URL_BASENAME: process.env.URL_BASENAME.toString(),
         },
       },
     }),
