@@ -5,6 +5,7 @@ import Navigation from 'navigation';
 import { registerStateNavigator } from '../../site/components/link';
 import makeRoutes from '../../site/routes';
 
+
 export function makeApp({ element, data, history }) {
   const routes = makeRoutes(data);
   const stateNavigator = new Navigation.StateNavigator(
@@ -12,6 +13,10 @@ export function makeApp({ element, data, history }) {
     history
   );
   registerStateNavigator(stateNavigator);
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
 
   routes.forEach(route => {
     const render = () => {
