@@ -1,5 +1,4 @@
 @value red, white, black from "../../css/_colors.css";
-@value zindexOverlay from "../../css/_zindex.css";
 @value mediumScreen from "../../css/_sizes.css";
 
 .screenReaderText {
@@ -41,125 +40,16 @@
   color: black;
 }
 
-.mediumScreenNav a:hover,
-.smallScreenNavContainer a {
+.mediumScreenNav a:hover {
   border-bottom: 2px solid red;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  bottom: 0;
-  left: 100%;
-  z-index: zindexOverlay;
-
-  composes: serif from "../../css/typography/_fonts.css";
-  composes: fontL from "../../css/typography/_fonts.css";
-  font-weight: bold;
-
-  transition: left 0.3s;
-}
-
-.smallScreenNavMargin {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 44px;
-}
-
-.smallScreenNavWrapper {
-  background: black;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 44px;
-}
-
-.overlay .mediumScreenNav {
-  display: block;
-}
-
-.smallScreenNavContainer {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.smallScreenNav {
-  width: 150px;
-  display: inline-block;
-  text-align: left;
-  margin: 10px 0 0 20px;
-}
-
-.smallScreenNav li {
-  margin: 0 0 20px 0;
-}
-
-.smallScreenNav li a {
-  color: white;
-  text-decoration: none;
-}
-
-.menuCloseButton {
-  composes: fontXS from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  position: absolute;
-  top: 15px;
-  left: 10px;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.smallScreenNavComponent {
-  width: 100%;
-}
-
-.triggerContainer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.triggerLabel {
-  align-self: center;
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  composes: fontXS from "../../css/typography/_fonts.css";
-  border-bottom: 2px solid red;
-  line-height: 1em;
-  cursor: pointer;
-}
-
-.trigger {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-.trigger:checked + .overlay {
-  left: 0;
-  right: 0;
 }
 
 @media mediumScreen {
-  .triggerContainer {
-    display: none;
-  }
-
   .mediumScreenNavContainer {
     display: flex;
   }
 
   .logo svg {
     height: 30px;
-  }
-
-  .smallScreenNavComponent {
-    width: auto;
   }
 }
