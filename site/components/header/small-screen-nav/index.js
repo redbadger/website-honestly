@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 
 import React from 'react';
-
+import Link from '../../link';
 import styles from './style.css';
 
 export default class SmallScreenNav extends React.Component {
@@ -58,9 +58,9 @@ export default class SmallScreenNav extends React.Component {
 
             <nav className={styles.smallScreenNavContainer} role="navigation">
               <ul role="listbox" className={styles.smallScreenNav}>
-                <li><a tabIndex={navTabIndex} href="/">Home</a></li>
+                <li><Link tabIndex={navTabIndex} to="homePage">Home</Link></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/">About us</a></li>
-                <li><a tabIndex={navTabIndex} href="/what-we-do/">What we do</a></li>
+                <li><Link tabIndex={navTabIndex} to="whatWeDoPage">What we do</Link></li>
                 <li><a tabIndex={navTabIndex} href="http://red-badger.com/blog/">Blog</a></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/events/">Events</a></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/join-us/">Jobs</a></li>
