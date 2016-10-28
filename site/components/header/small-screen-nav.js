@@ -5,11 +5,8 @@ import React from 'react';
 import styles from './style.css';
 
 const NavItem = ({ href, tabIndex, text }) => (
-  <li>
-    <a
-      href={href}
-      tabIndex={tabIndex}
-    >
+  <li role="listitem">
+    <a role="link" href={href} tabIndex={tabIndex}>
       {text}
     </a>
   </li>
@@ -28,11 +25,6 @@ export default class SmallScreenNav extends React.Component {
     this.state = {
       navOpen: false,
     };
-  }
-
-  componentWillUpdate = (oldState, newState) => {
-    console.log('newState', newState);
-    return newState;
   }
 
   handleInputChange = event => {
@@ -106,7 +98,7 @@ export default class SmallScreenNav extends React.Component {
             <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
 
             <nav className={styles.smallScreenNavContainer} role="navigation">
-              <ul className={styles.smallScreenNav}>
+              <ul role="listbox" className={styles.smallScreenNav}>
                 {
                   navItems.map((item, index) => {
                     const tabIndex = navOpen ? 0 : -1;

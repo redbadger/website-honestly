@@ -2,6 +2,10 @@
 @value zindexOverlay from "../../css/_zindex.css";
 @value mediumScreen from "../../css/_sizes.css";
 
+.screenReaderText {
+  composes: visuallyHidden from "../../css/_accessibility.css";
+}
+
 .header {
   display: flex;
   padding: 15px 20px;
