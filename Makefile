@@ -46,6 +46,10 @@ test: ## Run the tests
 	$(MOCHA)
 
 
+flow: ## Run the type checker
+	$(NBIN)/flow
+
+
 test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
