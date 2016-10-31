@@ -75,7 +75,7 @@ const CaseStudy = () => (
     </div>
     <div className={styles.caseCompanies}>
       <img alt="The logo of Selfridges" src={selfridgesPNG} />
-      <img alt="The logo of tesco" src={tescoPNG} />
+      <img alt="The logo of Tesco" src={tescoPNG} />
       <img alt="The logo of the BBC" src={bbcPNG} />
       <img alt="The logo of BMW" src={bmwPNG} />
       <img alt="The logo of Lloyds Bank" src={lloydsPNG} />
