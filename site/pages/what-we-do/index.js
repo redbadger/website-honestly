@@ -82,10 +82,10 @@ export default function whatWeDo() {
     <div>
       <div className={styles.pageHeaderContainer}>
         <h1 className={styles.pageHeader}>
-          Do the <span className={styles.redText}>right</span> thing.
+          Do the right thing.
         </h1>
         <h1 className={styles.pageHeader}>
-          Do the thing <span className={styles.redText}>right</span>.
+          Do the thing right.
         </h1>
       </div>
       <TriangleSlice />
