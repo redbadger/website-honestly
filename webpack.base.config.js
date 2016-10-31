@@ -4,7 +4,7 @@ const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
-
+const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.txt';
 
 const baseConfig = {
   output: {
@@ -65,7 +65,7 @@ const baseConfig = {
     ),
     new CopyWebpackPlugin([
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
-      { from: 'assets/txt', to: 'txt/' },
+      { from: `assets/${robots}`, to: 'robots.txt' },
     ]),
   ],
 };
