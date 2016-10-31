@@ -5,13 +5,13 @@ import Link from '../link';
 import SmallScreenNav from './small-screen-nav';
 
 import styles from './style.css';
-import logoSVG from './rb-logo-placeholder.svg';
+import logo from './logo.svg';
 
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
       <Link to="homePage" title="Home" className={styles.logo}>
-        <InlineSVG src={logoSVG} />
+        <InlineSVG src={logo} />
       </Link>
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
