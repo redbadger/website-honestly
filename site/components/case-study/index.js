@@ -69,7 +69,7 @@ const CaseStudy = () => (
           </span>
         </a>
         <a href="/our-work/case-study/financial-times/">
-          <img alt="The logo of the Financial Times" src={financialTimesPNG}financialTimesPNG />
+          <img alt="The logo of the Financial Times" src={financialTimesPNG} />
         </a>
       </div>
     </div>
