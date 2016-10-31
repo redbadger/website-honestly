@@ -15,7 +15,7 @@ import skyPNG from './PNG/sky.png';
 import tescoPNG from './PNG/tesco.png';
 
 /* SVG figure imports */
-import tescoFigureSVG from './SVG/tesco-figure.svg';
+import ftFigureSVG from './SVG/ft-figure.svg';
 import fortnumFigureSVG from './SVG/fortnum-figure.svg';
 import camdenFigureSVG from './SVG/camden-figure.svg';
 import skyFigureSVG from './SVG/sky-figure.svg';
@@ -40,7 +40,7 @@ const CaseStudy = () => (
           <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} alt="Ten" />
         </a>
         <a href="/our-work/case-study/camden-market/" className={styles.caseText}>
-          <span>Weeks to deliver a new online platform</span>
+          <span>Drop in bounce rate within 4 days</span>
         </a>
         <a href="/our-work/case-study/camden-market/">
           <img alt="The logo of Camden Market" src={camdenPNG} />
@@ -60,16 +60,22 @@ const CaseStudy = () => (
         </a>
       </div>
       <div>
-        <InlineSVG src={tescoFigureSVG} className={styles.caseFigure} alt="54%" />
-        <span className={styles.caseText}>
-          Increase in number of online orders across 7 countries
-        </span>
-        <img alt="The logo of tesco" src={tescoPNG} />
+        <a href="/our-work/case-study/financial-times/">
+          <InlineSVG src={ftFigureSVG} className={styles.caseFigure} alt="Seven" />
+        </a>
+        <a href="/our-work/case-study/financial-times/" className={styles.caseText}>
+          <span>
+            7 weeks to redesign and deliver MVP homepage
+          </span>
+        </a>
+        <a href="/our-work/case-study/financial-times/">
+          <img alt="The logo of the Financial Times" src={financialTimesPNG}financialTimesPNG />
+        </a>
       </div>
     </div>
     <div className={styles.caseCompanies}>
       <img alt="The logo of Selfridges" src={selfridgesPNG} />
-      <img alt="The logo of the Financial Times" src={financialTimesPNG} />
+      <img alt="The logo of tesco" src={tescoPNG} />
       <img alt="The logo of the BBC" src={bbcPNG} />
       <img alt="The logo of BMW" src={bmwPNG} />
       <img alt="The logo of Lloyds Bank" src={lloydsPNG} />
