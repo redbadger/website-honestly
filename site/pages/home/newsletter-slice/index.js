@@ -32,7 +32,7 @@ class NewsLetter extends Component {
 
   submitForm = (formDataJSON, method, fetchFn = fetchFunction) => {
     return fetchFn({
-      url: this.props.mailingListURL,
+      url: process.env.MAILING_LIST_SERVICE_URL,
       method,
       body: formDataJSON,
     })
