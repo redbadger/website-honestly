@@ -27,7 +27,7 @@
   composes: serif from "../../../css/typography/_fonts.css";
   margin-top: 30px;
   max-width: 300px;
-  counter-reset: listCounter;
+  counter-reset: listCounter 4;
   display: inline-block;
 }
 
@@ -38,7 +38,7 @@
 
 .rightThingsList li:before {
   content: counter(listCounter);
-  counter-increment: listCounter;
+  counter-increment: listCounter -1;
   float: left;
 }
 
@@ -73,15 +73,15 @@
 }
 
 .triangleTop {
-  width: 300px;
+  width: 100px;
 }
 
 .triangleMiddle {
   width: 220px;
 }
 
-.triangleEnd {
-  width: 100px;
+.triangleBottom {
+  width: 300px;
 }
 
 @media mediumScreen {
