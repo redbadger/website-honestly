@@ -15,8 +15,6 @@ export function makeApp({ element, data, history }) {
   registerStateNavigator(stateNavigator);
 
   if ('serviceWorker' in navigator) {
-    console.log('hey there');
-    console.log(location.origin);
     navigator.serviceWorker.register(location.origin + '/sw.js');
   }
 
