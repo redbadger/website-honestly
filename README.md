@@ -51,3 +51,8 @@ This site is a static site hosted on AWS S3 behind a proxy that provides HTTPS. 
 
 The React template system is used to compile the pages, and it is run on AWS
 Lambda.
+
+## Assets
+
+Any static assets committed to the repo should be compressed first. There is a
+`make compress-assets` command that will do this for common image formats.

@@ -63,6 +63,24 @@ publish-service-invoke: ## Invoke the publish service
 	$(SERVICES) invoke
 
 
+compress-assets: ## Compress assets. What did you expect? :)
+	find site -type f \
+			\( \
+				-name '*.png' \
+				-o -name '*.jpg' \
+				-o -name '*.jpeg' \
+			\) \
+			-exec sh -c '\
+				echo {} \
+				&& cat {} | $(NBIN)/imagemin > {}.min \
+				&& mv {}.min {}' \;
+	find site -type f \
+		-name '*.svg' \
+		-exec sh -c '\
+			echo {} \
+			&& $(NBIN)/svgo {} -q --enable=removeTitle' \;
+
+
 dist/sw.js:
 	$(WEBPACK) webpack.sw.config.js
 
