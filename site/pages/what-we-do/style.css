@@ -1,10 +1,6 @@
 @value white, red, black from "../../css/_colors.css";
 @value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
 
-.redText {
-  color: red;
-}
-
 .pageHeaderContainer {
   display: flex;
   composes: dividerWhite from "../../css/_divider.css";
