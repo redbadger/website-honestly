@@ -1,10 +1,10 @@
-@value black, white, daveGreen, red from "../../../css/_colors.css";
+@value badgerBlack, badgerWhite, daveGreen, badgerRed from "../../../css/_colors.css";
 @value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
 
 .newsletter {
   composes: dividerBlack from "../../../css/_divider.css";
-  background-color: black;
-  color: white;
+  background-color: badgerBlack;
+  color: badgerWhite;
   text-align: center;
   padding: 30px 20px 25px 20px;
 }
@@ -13,7 +13,7 @@
 .beforeErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
-  color: red;
+  color: badgerRed;
   text-align: left;
   padding-top: 5px;
 }
@@ -21,7 +21,7 @@
 .afterErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
-  color: black;
+  color: badgerBlack;
   position: relative;
   padding-top: 5px;
 }
@@ -34,7 +34,7 @@
 .submitted {
   composes: dividerGreen from "../../../css/_divider.css";
   background-color: daveGreen;
-  color: black;
+  color: badgerBlack;
 }
 
 .title {
@@ -76,11 +76,11 @@
 }
 
 .beforeFormError {
-  border: 2px solid red;
+  border: 2px solid badgerRed;
 }
 
 .afterFormError {
-  border: 2px solid black;
+  border: 2px solid badgerBlack;
 }
 
 .submitButton {
@@ -90,7 +90,7 @@
 }
 
 .submitted .submitButton {
-  background-color: black;
+  background-color: badgerBlack;
 }
 
 .jsDisabled {

@@ -1,4 +1,4 @@
-@value black, white from "../../css/_colors.css";
+@value badgerBlack, badgerWhite from "../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen from "../../css/_sizes.css";
 
 .widthContainer {
@@ -9,8 +9,8 @@
 
 .techSlice {
   composes: dividerBlack from "../../css/_divider.css";
-  color: white;
-  background-color: black;
+  color: badgerWhite;
+  background-color: badgerBlack;
   padding: 30px 20px 40px 20px;
   text-align: center;
 }

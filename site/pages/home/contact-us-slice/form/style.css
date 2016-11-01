@@ -1,4 +1,4 @@
-@value black, cainYellow, cainYellowFaded from "../../../../css/_colors.css";
+@value badgerBlack, cainYellow, cainYellowFaded from "../../../../css/_colors.css";
 @value maxWidth from "../../../../css/_sizes.css";
 
 .formContainer {
@@ -20,7 +20,7 @@
   composes: fontL from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   margin: 0px auto 40px auto;
-  color: black;
+  color: badgerBlack;
 }
 
 .formLabel {
@@ -53,20 +53,20 @@
   padding: 12px;
   background: cainYellowFaded;
   border: 0px;
-  border-bottom: dotted 2px black;
+  border-bottom: dotted 2px badgerBlack;
 }
 
 .hasErrors {
-  border: 2px solid black;
+  border: 2px solid badgerBlack;
 }
 
 .fatalErrorLink {
-  color: black;
+  color: badgerBlack;
   text-decoration: underline;
 }
 
 .button {
   margin-top: 30px;
   composes: primaryButton from "../../../../css/_links.css";
-  background-color: black;
+  background-color: badgerBlack;
 }
