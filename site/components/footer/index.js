@@ -78,75 +78,83 @@ const Footer = () => (
                 title="Red Badger Github"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Github</span>
-                <InlineSVG src={githubSVG} />
+                <InlineSVG
+                  src={githubSVG}
+                  title="Github"
+                />
               </a>
             </li>
             <li>
               <a
-
                 href="https://twitter.com/redbadgerteam"
                 title="Red Badger Twitter"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Twitter</span>
-                <InlineSVG src={twitterSVG} />
+                <InlineSVG
+                  src={twitterSVG}
+                  title="Twitter"
+                />
               </a>
             </li>
             <li>
               <a
-
                 href="https://redbadger.typeform.com/to/cBuJUl"
                 title="Red Badger Slack"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Slack</span>
-                <InlineSVG src={slackSVG} />
+                <InlineSVG
+                  src={slackSVG}
+                  title="Slack"
+                />
               </a>
             </li>
             <li>
               <a
-
                 href="https://www.linkedin.com/company/red-badger"
                 title="Red Badger Linkedin"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Linkedin</span>
-                <InlineSVG src={linkedinSVG} />
+                <InlineSVG
+                  src={linkedinSVG}
+                  title="Linkedin"
+                />
               </a>
             </li>
 
             <li>
               <a
-
                 href="https://www.instagram.com/redbadgerteam/"
                 title="Red Badger Instagram"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Instagram</span>
-                <InlineSVG src={instagramSVG} />
+                <InlineSVG
+                  src={instagramSVG}
+                  title="Instagram"
+                />
               </a>
             </li>
             <li>
               <a
-
                 href="https://www.facebook.com/RedBadger"
                 title="Red Badger Facebook"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Facebook</span>
-                <InlineSVG src={facebookSVG} />
+                <InlineSVG
+                  src={facebookSVG}
+                  title="Facebook"
+                />
               </a>
             </li>
             <li>
               <a
-
                 href="https://www.youtube.com/redbadgerteam"
                 title="Red Badger Youtube"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Youtube</span>
-                <InlineSVG src={youtubeSVG} />
+                <InlineSVG
+                  src={youtubeSVG}
+                  title="Youtube"
+                />
               </a>
             </li>
             <li>
@@ -155,8 +163,10 @@ const Footer = () => (
                 title="Red Badger Google Plus"
                 className={styles.socialIcon}
               >
-                <span className={styles.screenReaderText}>Google Plus</span>
-                <InlineSVG src={gplusSVG} />
+                <InlineSVG
+                  src={gplusSVG}
+                  title="Google Plus"
+                />
               </a>
             </li>
           </ul>
