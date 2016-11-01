@@ -16,7 +16,11 @@ const Header = () => {
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul className={styles.mediumScreenNav}>
-          <li><Link to="whatWeDoPage">What we do</Link></li>
+          <li>
+            <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
+              What we do
+            </Link>
+          </li>
           <li><a href="/about-us/">About us</a></li>
           <li><a href="http://red-badger.com/blog/">Blog</a></li>
           <li><a href="/about-us/events/">Events</a></li>

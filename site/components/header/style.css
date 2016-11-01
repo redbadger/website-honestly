@@ -38,7 +38,8 @@
 }
 
 .mediumScreenNav a:hover,
-.smallScreenNavContainer a {
+.smallScreenNavContainer a,
+.activeNavLink {
   border-bottom: 2px solid badgerRed;
 }
 
