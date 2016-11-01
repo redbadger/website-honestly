@@ -50,7 +50,7 @@ class BeforeSignUp extends Component {
               onChange={this.handleInputChange}
               id="email_address"
               name="email_address"
-              type="text"
+              type="email"
               placeholder="example@email.com"
               className={cx({
                 formInput: true,
