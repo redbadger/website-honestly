@@ -31,9 +31,9 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes(data) {
+export default function routes({ contactUsURL }) {
   const componentMap = {
-    homePage: () => <L><HomePage data={data} /></L>,
+    homePage: () => <L><HomePage contactUsURL={contactUsURL} /></L>,
     notFoundPage: () => <L><NotFoundPage /></L>,
     whatWeDoPage: () => <L><WhatWeDoPage /></L>,
   };
