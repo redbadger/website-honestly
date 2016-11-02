@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { routeDefinitions } from './definitions';
 import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
@@ -31,21 +32,13 @@ function prefixRoutes(rs) {
 }
 
 export default function routes(data) {
-  return prefixRoutes([
-    {
-      key: 'homePage',
-      route: '',
-      component: () => <L><HomePage data={data} /></L>,
-    },
-    {
-      key: 'notFoundPage',
-      route: '404',
-      component: () => <L><NotFoundPage /></L>,
-    },
-    {
-      key: 'whatWeDoPage',
-      route: 'what-we-do',
-      component: () => <L><WhatWeDoPage /></L>,
-    },
-  ]);
+  const componentMap = {
+    homePage: () => <L><HomePage data={data} /></L>,
+    notFoundPage: () => <L><NotFoundPage /></L>,
+    whatWeDoPage: () => <L><WhatWeDoPage /></L>,
+  };
+  return prefixRoutes(routeDefinitions.map(route => ({
+    ...route,
+    component: componentMap[route.key],
+  })));
 }

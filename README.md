@@ -47,7 +47,12 @@ make services-deploy
 
 ## Technical Overview
 
-This site is a static site hosted on AWS S3 behind AWS Cloudfront.
+This site is a static site hosted on AWS S3 behind a proxy that provides HTTPS. You can find the proxy here https://github.com/redbadger/website-next-proxy
 
 The React template system is used to compile the pages, and it is run on AWS
 Lambda.
+
+## Assets
+
+Any static assets committed to the repo should be compressed first. There is a
+`make compress-assets` command that will do this for common image formats.

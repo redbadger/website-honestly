@@ -37,7 +37,7 @@ class BeforeSignUp extends Component {
     return (
       <section className={styles.newsletter}>
         <h1 className={styles.title}>
-          Sign up to BadgerNews to hear more from us
+          Sign up to Badger News to hear more from us
         </h1>
         <p className={styles.subTitle}>
           (every 6 weeks or so)

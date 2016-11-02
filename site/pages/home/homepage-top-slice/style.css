@@ -1,11 +1,11 @@
-@value white, black from "../../../css/_colors.css";
+@value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .homepageTopSlice {
   padding: 50px 20px 100px 20px;
   text-align: center;
-  background-color: white;
-  color: black;
+  background-color: badgerWhite;
+  color: badgerBlack;
 }
 
 .badgerSlogan {
@@ -17,25 +17,6 @@
 .sloganDescription {
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 60px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  animation-name: fadeInUp;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(0.010, 0.830, 0.560, 1.010);
-  animation-duration: 1.2s;
 }
 
 @media mediumScreen {

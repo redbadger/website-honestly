@@ -1,4 +1,4 @@
-@value white, red from "./_colors.css";
+@value badgerWhite, badgerRed from "./_colors.css";
 @value inputHeight, linkSize from "./_sizes.css";
 
 /*
@@ -11,16 +11,16 @@
  */
 
 .redUnderlineLink {
-  border-bottom: 2px solid red;
-  color: white;
+  border-bottom: 2px solid badgerRed;
+  color: badgerWhite;
   text-decoration: none;
 }
 
 .primaryButton {
   composes: boldSansSerif from "./typography/_fonts.css";
   font-size: linkSize;
-  background-color: red;
-  color: white;
+  background-color: badgerRed;
+  color: badgerWhite;
   text-align: center;
   padding: 0 20px;
   text-decoration: none;

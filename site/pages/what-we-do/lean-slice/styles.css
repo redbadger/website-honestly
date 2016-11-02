@@ -1,11 +1,12 @@
 @value colWidth: calc(100% / 12);
-@value white from "../../../css/_colors.css";
+@value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value largeScreen from "../../../css/_sizes.css";
 
 .slice {
   composes: dividerWhite from "../../../css/_divider.css";
   padding: 40px 22px 30px 22px;
-  background-color: white;
+  background-color: badgerWhite;
+  color: badgerBlack;
 }
 
 .heading {

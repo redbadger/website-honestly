@@ -1,7 +1,7 @@
 /*
   ### Example
 
-  @value daveGreen, red from "../../css/_colors.css";
+  @value daveGreen, badgerRed from "../../css/_colors.css";
 
   a {
     color: daveGreen;
@@ -9,9 +9,9 @@
 */
 
 /* Main Colour Palette */
-@value red: #FC1D42;
-@value white: #F8F8F8;
-@value black: #212121;
+@value badgerRed: #FC1D42;
+@value badgerWhite: #F8F8F8;
+@value badgerBlack: #212121;
 
 /* Secondary Colour Palette */
 @value daveGreen: #22D69B;
