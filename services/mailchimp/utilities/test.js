@@ -42,7 +42,6 @@ describe('formatSignUpResponse', () => {
 });
 
 describe('formatUpdateResponse', () => {
-  // if (res.last_changed !== res.timestamp_opt && data.merge_fields.FIRSTNAME !== '') {
   it('returns the correct values if there are no erros and a new account has been created', () => {
     const test = {
       detail: 'There was an error signing you up',
