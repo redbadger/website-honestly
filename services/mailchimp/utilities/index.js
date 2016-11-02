@@ -47,9 +47,8 @@ export function formatSignUpResponse(res) {
   if (res.status === 400) {
     if (res.title === 'Member Exists') {
       defaultResponse.errorMessage = 'This email address has already signed up';
-    }
-    if (res.title === 'Invalid Resource') {
-      defaultResponse.errorMessage = 'Please enter a valid email address';
+    } else {
+      defaultResponse.errorMessage = 'Oops! There was a problem with signing you up';
     }
     defaultResponse.newsletterSubmitted = false;
     return defaultResponse;

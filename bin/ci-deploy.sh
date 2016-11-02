@@ -8,9 +8,8 @@ createCommitSite() {
   COMMIT_REF=$(git rev-parse --short HEAD)
   export ENVIRONMENT_NAME="staging"
   export URL_BASENAME="$COMMIT_REF/"
-  source bin/load-env.sh
 
-  echo Deploying site to $URL_BASENAME
+  echo Deploying commit preview site to $URL_BASENAME
   make clean
   make build
   echo Copying assets to S3
@@ -29,7 +28,6 @@ createCommitSite() {
 deployMaster() {
   export ENVIRONMENT_NAME=$1
   echo Deploying current master to $1
-  source bin/load-env.sh
   make clean
   make build
   echo Copying assets to S3
@@ -43,13 +41,21 @@ deployMaster() {
 
 case "$1" in
   create-commit-site)
+    source bin/load-ci-env.sh STAGING
+    source bin/construct-additional-env.sh
     createCommitSite
     ;;
+
   master-to-staging)
+    source bin/load-ci-env.sh STAGING
+    source bin/construct-additional-env.sh
     deployMaster staging
     ;;
+
   master-to-production)
     export INSERT_TRACKING=true
+    source bin/load-ci-env.sh PROD
+    source bin/construct-additional-env.sh
     deployMaster live
     ;;
   *)
