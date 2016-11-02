@@ -1,12 +1,12 @@
 SHELL:=/bin/bash
 
 BIN=./bin
-LOAD_ENV=source bin/load-env.sh
-SERVICES=$(BIN)/services.sh
+LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
 NBIN=./node_modules/.bin
-WEBPACK=$(BIN)/webpack.sh
+WEBPACK=$(NBIN)/webpack --bail
 MOCHA=$(NBIN)/mocha
 ESLINT=$(NBIN)/eslint
+SERVERLESS=cd services && .$(NBIN)/sls
 WEBPACK_DEV_SERVER=$(NBIN)/webpack-dev-server
 NPM_CHECK_UPDATES=$(NBIN)/ncu
 
@@ -56,11 +56,11 @@ lint: ## Lint Javascript files
 
 
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
-	$(SERVICES) deploy
+	$(LOAD_ENV) && $(SERVERLESS) deploy
 
 
 publish-service-invoke: ## Invoke the publish service
-	$(SERVICES) invoke
+	$(LOAD_ENV) && $(SERVERLESS) invoke --function publish
 
 
 compress-assets: ## Compress assets. What did you expect? :)
@@ -82,7 +82,7 @@ compress-assets: ## Compress assets. What did you expect? :)
 
 
 dist/sw.js:
-	$(WEBPACK) webpack.sw.config.js
+	NODE_ENV=production $(LOAD_ENV) && $(WEBPACK) --config webpack.sw.config.js
 
 
 dist/services.zip: dist/services
@@ -90,11 +90,11 @@ dist/services.zip: dist/services
 
 
 dist/services:
-	$(WEBPACK) webpack.lambda.config.js
+	NODE_ENV=production $(LOAD_ENV) && $(WEBPACK) --config webpack.lambda.config.js
 
 
 dist/dev-static/index.js:
-	$(WEBPACK) webpack.dev.static.config.js
+	NODE_ENV=production $(LOAD_ENV) && $(WEBPACK) --config webpack.dev.static.config.js
 
 
 dist/static-site:
