@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';
 
-const { string } = React.PropTypes;
-
 export function isValidEmail(email) {
   const regex = /.+@.+\..+/;
   return regex.test(email);
@@ -52,16 +50,16 @@ class NewsLetter extends Component {
 
   signUpUser = data => {
     if (data.email_address === '') {
-      return this.setState({
+      this.setState({
         errorMessage: 'Please enter an email address',
       });
-    }
-    if (!isValidEmail(data.email_address)) {
-      return this.setState({
+    } else if (!isValidEmail(data.email_address)) {
+      this.setState({
         errorMessage: 'Please enter a valid email address',
       });
+    } else {
+      return this.submitForm(JSON.stringify(data), 'POST');
     }
-    return this.submitForm(JSON.stringify(data), 'POST');
   }
 
   updateUser = data => {
@@ -96,9 +94,5 @@ class NewsLetter extends Component {
     );
   }
 }
-
-NewsLetter.propTypes = {
-  mailingListURL: string,
-};
 
 export default NewsLetter;

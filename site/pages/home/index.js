@@ -8,24 +8,21 @@ import BlogSlice from './blog-slice';
 import ContactUs from './contact-us-slice';
 import NewsLetter from './newsletter-slice';
 
-const HomePage = ({ data }) => (
+const HomePage = ({ contactUsURL }) => (
   <div>
     <TopSlice />
     <CaseStudy />
     <Brie />
     <TechSlice />
-    <ContactUs postURL={data.contactUsURL} />
+    <ContactUs postURL={contactUsURL} />
     <BlogSlice />
-    <NewsLetter mailingListURL={data.mailingListURL} />
+    <NewsLetter />
   </div>
 );
 
-const { shape, string } = React.PropTypes;
+const { string } = React.PropTypes;
 HomePage.propTypes = {
-  data: shape({
-    contactUsURL: string,
-    mailingListURL: string,
-  }).isRequired,
+  contactUsURL: string,
 };
 
 export default HomePage;

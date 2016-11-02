@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import { mailchimpApi, formatFormInput, formatSignUpResponse } from '../utilities';
 
 export default function signUp(event, cb) {
