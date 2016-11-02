@@ -56,11 +56,13 @@ lint: ## Lint Javascript files
 
 
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
-	$(LOAD_ENV) && $(SERVERLESS) deploy
+	$(LOAD_ENV) \
+	&& $(SERVERLESS) deploy
 
 
 publish-service-invoke: ## Invoke the publish service
-	$(LOAD_ENV) && $(SERVERLESS) invoke --function publish
+	$(LOAD_ENV) \
+	&& $(SERVERLESS) invoke --function publish
 
 
 compress-assets: ## Compress assets. What did you expect? :)
@@ -82,19 +84,26 @@ compress-assets: ## Compress assets. What did you expect? :)
 
 
 dist/sw.js:
-	NODE_ENV=production $(LOAD_ENV) && $(WEBPACK) --config webpack.sw.config.js
+	export NODE_ENV=production \
+	&& $(LOAD_ENV) \
+	&& $(WEBPACK) --config webpack.sw.config.js
 
 
 dist/services.zip: dist/services
-	cd dist/services && zip -r ../services.zip *
+	cd dist/services \
+	&& zip -r ../services.zip *
 
 
 dist/services:
-	NODE_ENV=production $(LOAD_ENV) && $(WEBPACK) --config webpack.lambda.config.js
+	export NODE_ENV=production \
+	&& $(LOAD_ENV) \
+	&& $(WEBPACK) --config webpack.lambda.config.js
 
 
 dist/dev-static/index.js:
-	NODE_ENV=production $(LOAD_ENV) && $(WEBPACK) --config webpack.dev.static.config.js
+	export NODE_ENV=production \
+	&& $(LOAD_ENV) \
+	&& $(WEBPACK) --config webpack.dev.static.config.js
 
 
 dist/static-site:
