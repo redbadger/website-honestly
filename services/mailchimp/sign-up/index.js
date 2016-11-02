@@ -6,7 +6,7 @@ export default function signUp(event, cb) {
   console.log('sign up service event:', event);
   const body = formatFormInput(event);
   return mailchimpApi(
-    'https://us6.api.mailchimp.com/3.0/lists/2affe6fb11/members/',
+    'https://us6.api.mailchimp.com/3.0/lists/81bbec7450/members/',
     'POST',
     JSON.stringify(body)
   )
