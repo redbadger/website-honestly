@@ -24,54 +24,30 @@ const CaseStudy = () => (
   <section className={styles.caseStudyContainer}>
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.figuresContainer}>
-      <div>
-        <a href="/our-work/case-study/fortnum-and-mason/">
-          <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} alt="Three" />
-        </a>
-        <a href="/our-work/case-study/fortnum-and-mason/" className={styles.caseText}>
-          <span>Number of awards for the new online store</span>
-        </a>
-        <a href="/our-work/case-study/fortnum-and-mason/">
-          <img alt="The logo of Fortnum & Masons" src={fortnumPNG} />
-        </a>
-      </div>
-      <div>
-        <a href="/our-work/case-study/camden-market/">
-          <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} alt="Ten" />
-        </a>
-        <a href="/our-work/case-study/camden-market/" className={styles.caseText}>
-          <span>Drop in bounce rate within 4 days</span>
-        </a>
-        <a href="/our-work/case-study/camden-market/">
-          <img alt="The logo of Camden Market" src={camdenPNG} />
-        </a>
-      </div>
-      <div>
-        <a href="/our-work/case-study/sky-cms/">
-          <InlineSVG src={skyFigureSVG} className={styles.caseFigure} alt="50%" />
-        </a>
-        <a href="/our-work/case-study/sky-cms/" className={styles.caseText}>
-          <span>
-            Drop in customers pushing the &lsquo;need more help&rsquo; button
-          </span>
-        </a>
-        <a href="/our-work/case-study/sky-cms/">
-          <img alt="The logo of Sky" src={skyPNG} />
-        </a>
-      </div>
-      <div>
-        <a href="/our-work/case-study/financial-times/">
-          <InlineSVG src={ftFigureSVG} className={styles.caseFigure} alt="Seven" />
-        </a>
-        <a href="/our-work/case-study/financial-times/" className={styles.caseText}>
-          <span>
-            7 weeks to redesign and deliver MVP homepage
-          </span>
-        </a>
-        <a href="/our-work/case-study/financial-times/">
-          <img alt="The logo of the Financial Times" src={financialTimesPNG} />
-        </a>
-      </div>
+      <a href="/our-work/case-study/fortnum-and-mason/" className={styles.figureLink}>
+        <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} title="Three" />
+        <span className={styles.caseText}>Number of awards for the new online store</span>
+        <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
+      </a>
+      <a href="/our-work/case-study/camden-market/" className={styles.figureLink}>
+        <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} title="Ten" />
+        <span className={styles.caseText}>Drop in bounce rate within 4 days</span>
+        <img alt="The logo of Camden Market" src={camdenPNG} className={styles.logo} />
+      </a>
+      <a href="/our-work/case-study/sky-cms/" className={styles.figureLink}>
+        <InlineSVG src={skyFigureSVG} className={styles.caseFigure} title="50%" />
+        <span className={styles.caseText}>
+          Drop in customers pushing the &lsquo;need more help&rsquo; button
+        </span>
+        <img alt="The logo of Sky" src={skyPNG} className={styles.logo} />
+      </a>
+      <a href="/our-work/case-study/financial-times/" className={styles.figureLink}>
+        <InlineSVG src={ftFigureSVG} className={styles.caseFigure} title="Seven" />
+        <span className={styles.caseText}>
+          7 weeks to redesign and deliver MVP homepage
+        </span>
+        <img alt="The logo of the Financial Times" src={financialTimesPNG} className={styles.logo} />
+      </a>
     </div>
     <div className={styles.caseCompanies}>
       <img alt="The logo of Selfridges" src={selfridgesPNG} />

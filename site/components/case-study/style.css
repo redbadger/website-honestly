@@ -1,10 +1,6 @@
 @value badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
 
-.screenReaderText {
-  composes: visuallyHidden from "../../css/_accessibility.css";
-}
-
 .heading {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
@@ -29,9 +25,6 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1440px;
-}
-
-.figure {
 }
 
 .figureLink {
