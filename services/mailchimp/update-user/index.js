@@ -1,10 +1,12 @@
 import md5 from 'md5';
 import { mailchimpApi, formatUpdateResponse, formatFormInput } from '../utilities';
 
+const mailingListId = process.env.MAILING_LIST_ID;
+
 export default function doUpdateUser(event, cb) {
   const body = formatFormInput(event, true);
   const emailAddress = body.email_address.toLowerCase();
-  const link = 'https://us6.api.mailchimp.com/3.0/lists/81bbec7450/members/' + md5(emailAddress);
+  const link = `https://us6.api.mailchimp.com/3.0/lists/${mailingListId}/members/` + md5(emailAddress);
   return mailchimpApi(
     link,
     'PATCH',

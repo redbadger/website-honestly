@@ -2,11 +2,13 @@
 
 import { mailchimpApi, formatFormInput, formatSignUpResponse } from '../utilities';
 
+const mailingListId = process.env.MAILING_LIST_ID;
+
 export default function signUp(event, cb) {
   console.log('sign up service event:', event);
   const body = formatFormInput(event);
   return mailchimpApi(
-    'https://us6.api.mailchimp.com/3.0/lists/81bbec7450/members/',
+    `https://us6.api.mailchimp.com/3.0/lists/${mailingListId}/members/`,
     'POST',
     JSON.stringify(body)
   )
