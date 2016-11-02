@@ -26,7 +26,6 @@ createCommitSite() {
 }
 
 deployMaster() {
-  export ENVIRONMENT_NAME=$1
   echo Deploying current master to $1
   make clean
   make build
@@ -47,12 +46,14 @@ case "$1" in
     ;;
 
   master-to-staging)
+    export ENVIRONMENT_NAME=staging
     source bin/load-ci-env.sh STAGING
     source bin/construct-additional-env.sh
     deployMaster staging
     ;;
 
   master-to-production)
+    export ENVIRONMENT_NAME=live
     export INSERT_TRACKING=true
     source bin/load-ci-env.sh PROD
     source bin/construct-additional-env.sh
