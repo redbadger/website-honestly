@@ -81,21 +81,41 @@ resources:
       Type: AWS::SNS::Topic
       Properties:
         Subscription:
-          - Endpoint: "${env:CONTACT_US_SUPPORT_EMAIL}"
+          - Endpoint: "${env:LAMBDA_ERROR_REPORT_EMAIL}"
             Protocol: email
 
-    LambdaErrorAlarm:
+    ContactUsLambdaErrorAlarm:
       Type: AWS::CloudWatch::Alarm
       Properties:
         AlarmActions:
           - Ref: "ErrorSNSTopic"
         AlarmDescription: "An error has been thrown by the lambda function responsible for sending contact form information to hello@red-badger.com."
-        AlarmName: ContactUsLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
+        AlarmName: WebsiteHonestlyContactUsLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
         ComparisonOperator: GreaterThanOrEqualToThreshold
         Dimensions:
           - Name: FunctionName
             Value:
               Ref: ContactUsLambdaFunction
+        EvaluationPeriods: 1
+        MetricName: Errors
+        Namespace: AWS/Lambda
+        Period: 60
+        Statistic: Sum
+        Threshold: 1
+        Unit: Count
+
+    SignUpLambdaErrorAlarm:
+      Type: AWS::CloudWatch::Alarm
+      Properties:
+        AlarmActions:
+          - Ref: "ErrorSNSTopic"
+        AlarmDescription: "An error has been thrown by the lambda function responsible for signing people up to our mailing list"
+        AlarmName: WebsiteHonestlySignUpLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
+        ComparisonOperator: GreaterThanOrEqualToThreshold
+        Dimensions:
+          - Name: FunctionName
+            Value:
+              Ref: SignUpLambdaFunction
         EvaluationPeriods: 1
         MetricName: Errors
         Namespace: AWS/Lambda
