@@ -66,6 +66,7 @@ const baseConfig = {
     new CopyWebpackPlugin([
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: 'assets/txt', to: 'txt/' },
+      { from: 'assets/fonts', to: 'assets-honestly/' },
     ]),
   ],
 };
