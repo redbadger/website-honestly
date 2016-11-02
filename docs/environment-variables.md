@@ -22,7 +22,7 @@ If set Google Analytics/leadforensics tracking scripts will be inserted into the
 The email address that contact requests will be sent to.
 
 
-## `CONTACT_US_SUPPORT_EMAIL`
+## `LAMBDA_ERROR_REPORT_EMAIL`
 
 The email address that AWS Lambda error notifications will be sent to.
 
