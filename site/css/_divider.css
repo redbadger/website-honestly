@@ -1,4 +1,4 @@
-@value red, white, black, daveGreen, cainYellow from "./_colors.css";
+@value badgerRed, badgerWhite, badgerBlack, daveGreen, cainYellow from "./_colors.css";
 
 .divider {
   position: relative;
@@ -12,7 +12,7 @@
   height: 10px;
   top: -9px;
   transform: skew(-40deg);
-  background-color: red;
+  background-color: badgerRed;
 }
 
 .dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen {
@@ -20,11 +20,11 @@
 }
 
 .dividerBlack:before {
-  background-color: black;
+  background-color: badgerBlack;
 }
 
 .dividerWhite:before {
-  background-color: white;
+  background-color: badgerWhite;
 }
 
 .dividerYellow:before {

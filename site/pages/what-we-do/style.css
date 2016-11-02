@@ -1,4 +1,4 @@
-@value white, red, black from "../../css/_colors.css";
+@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
 
 .pageHeaderContainer {
@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: white;
+  background-color: badgerWhite;
   padding-top: 30px;
   padding-bottom: 60px;
 }
@@ -17,6 +17,7 @@
   composes: serif from "../../css/typography/_fonts.css";
   text-align: center;
   margin: 0px 30px;
+  color: badgerBlack;
 }
 
 .headerContainer {
@@ -26,26 +27,26 @@
   justify-content: center;
   flex-direction: column;
   padding: 30px 0px;
-  background-color: white;
+  background-color: badgerWhite;
 }
 
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   text-align: center;
-  color: black;
+  color: badgerBlack;
 }
 
 .subHeader {
   composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   font-size: 16px;
-  color: black;
+  color: badgerBlack;
 }
 
 .caseStudyContainer {
   padding: 30px 20px 30px 20px;
-  background-color: white;
+  background-color: badgerWhite;
 }
 .caseStudyContainer {
   display: flex;
@@ -61,7 +62,7 @@ a {
 }
 
 .caseStudyCompany {
-  color: red;
+  color: badgerRed;
   composes: fontXS from "../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   font-weight: bold;
@@ -75,7 +76,7 @@ a {
 }
 
 .caseStudyTitle {
-  color: black;
+  color: badgerBlack;
   composes: fontM from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   display: inline;
@@ -86,28 +87,28 @@ a {
 }
 
 .caseStudyTitle:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid badgerRed;
 }
 
 .caseStudyDescription {
-  color: black;
+  color: badgerBlack;
   composes: fontXS from "../../css/typography/_fonts.css";
   composes: sansSerif from "../../css/typography/_fonts.css";
 }
 
 .inverse {
-  background-color: black;
+  background-color: badgerBlack;
 }
 
 .inverse .caseStudyTitle, .inverse .caseStudyDescription {
-  color: white;
+  color: badgerWhite;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: center;
   padding: 20px 0px 60px 0px;
-  background-color: white;
+  background-color: badgerWhite;
 }
 
 .button {

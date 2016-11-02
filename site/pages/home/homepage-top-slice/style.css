@@ -1,11 +1,11 @@
-@value white, black from "../../../css/_colors.css";
+@value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .homepageTopSlice {
   padding: 50px 20px 100px 20px;
   text-align: center;
-  background-color: white;
-  color: black;
+  background-color: badgerWhite;
+  color: badgerBlack;
 }
 
 .badgerSlogan {

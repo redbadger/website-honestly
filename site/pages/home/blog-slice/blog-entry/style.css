@@ -1,11 +1,11 @@
-@value white, black, red, linesOnWhite from "../../../../css/_colors.css";
+@value badgerBlack, badgerRed, linesOnWhite from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .link {
   composes: fontM from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   text-decoration: none;
-  color: black;
+  color: badgerBlack;
   padding: 20px 0;
   border-top: 1px solid linesOnWhite;
   display: block;
@@ -38,7 +38,7 @@
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   text-transform: uppercase;
-  color: red;
+  color: badgerRed;
 }
 
 .authorTitle {
@@ -46,7 +46,7 @@
 }
 
 .linkTitle p:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid badgerRed;
 }
 
 @media mediumScreen {

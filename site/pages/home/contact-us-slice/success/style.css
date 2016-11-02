@@ -1,4 +1,4 @@
-@value black, daveGreen from "../../../../css/_colors.css";
+@value badgerBlack, daveGreen from "../../../../css/_colors.css";
 
 .successContainer {
   padding: 60px 20px 70px 20px;
@@ -12,12 +12,12 @@
   composes: fontL from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   margin: 0px auto 40px auto;
-  color: black;
+  color: badgerBlack;
 }
 
 .closeButton {
   composes: primaryButton from "../../../../css/_links.css";
-  background-color: black;
+  background-color: badgerBlack;
   display: block;
   margin: 40px auto 0px auto;
 }
