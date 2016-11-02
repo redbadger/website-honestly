@@ -14,7 +14,7 @@ createCommitSite() {
   make build
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
-  aws s3 sync ./dist/txt s3://$BUCKET_NAME/$COMMIT_REF
+  aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF/sw.js
   make services-deploy
   make publish-service-invoke
@@ -32,7 +32,7 @@ deployMaster() {
   make build
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
-  aws s3 sync ./dist/txt s3://$BUCKET_NAME
+  aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/sw.js
   make services-deploy
   make publish-service-invoke
