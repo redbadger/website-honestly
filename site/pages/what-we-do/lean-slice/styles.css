@@ -32,13 +32,13 @@
 }
 
 .point {
-  composes: fontStaticM from "../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../css/typography/_fonts.css";
   margin-top: 20px;
 }
 
 .bold {
-  composes: serif from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
 }
 
 @media largeScreen {
@@ -65,7 +65,7 @@
 
   .pointsWrapper,
   .leanImageWrapper {
-    width: 49%;
+    width: 45%;
   }
 
   .point {
