@@ -27,7 +27,7 @@ const blogSlice = () => {
             url="http://red-badger.com/blog/2016/10/17/whats-coming-next/"
             title="Tech Predictions 2017 - What's Coming up Next?"
             authorName="Marcel Cutts"
-            authorTitle="CEO & Founder"
+            authorTitle="Software Engineer"
           />
         </ul>
         <a
