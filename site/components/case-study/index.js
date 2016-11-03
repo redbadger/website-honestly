@@ -40,7 +40,7 @@ const CaseStudy = () => (
           <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} alt="Ten" />
         </a>
         <a href="/our-work/case-study/camden-market/" className={styles.caseText}>
-          <span>Drop in bounce rate within 4 days</span>
+          <span>Drop in bounce rate within 4 days of launch</span>
         </a>
         <a href="/our-work/case-study/camden-market/">
           <img alt="The logo of Camden Market" src={camdenPNG} />
@@ -65,7 +65,7 @@ const CaseStudy = () => (
         </a>
         <a href="/our-work/case-study/financial-times/" className={styles.caseText}>
           <span>
-            7 weeks to redesign and deliver MVP homepage
+            Weeks to redesign and deliver MVP homepage
           </span>
         </a>
         <a href="/our-work/case-study/financial-times/">
