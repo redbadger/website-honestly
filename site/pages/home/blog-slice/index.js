@@ -10,23 +10,23 @@ const blogSlice = () => {
         <ul className={styles.blogLinkList} >
           <BlogEntry
             category="Technology"
-            url="http://red-badger.com/blog/2016/06/22/docker-and-assets-and-rails-oh-my/"
-            title="Docker and assets and Rails, OH MY!"
-            authorName="Jon Yardley"
-            authorTitle="Tech Lead"
+            url="http://red-badger.com/blog/2016/11/01/serverless-evil-queen-tooth-fairy/"
+            title="Serverless - Evil Queen or Tooth Fairy?"
+            authorName="Anna Doubkova"
+            authorTitle="Software Engineer"
           />
           <BlogEntry
-            category="UX"
-            url="https://red-badger.com/ideas/service-blueprint-for-validating-ideas/"
-            title="Are your products and services actually adding value?"
-            authorName="Sinem Erdemli"
-            authorTitle="User experience designer"
+            category="Agile"
+            url="http://red-badger.com/blog/2016/10/27/really-stand-agile-glossary/"
+            title="Do I Really Have to Stand? – An Agile Glossary"
+            authorName="Roisi Proven"
+            authorTitle="Project Manager"
           />
           <BlogEntry
-            category="Ideas"
-            url="https://red-badger.com/ideas/to-drive-value-to-your-customers-faster-you-need-to-re-shape-your-digital-business/"
-            title="The world is changing. Can you adapt fast enough?"
-            authorName="Cain Ullah"
+            category="Technology"
+            url="http://red-badger.com/blog/2016/10/17/whats-coming-next/"
+            title="Tech Predictions 2017 - What's Coming up Next?"
+            authorName="Marcel Cutts"
             authorTitle="CEO & Founder"
           />
         </ul>
