@@ -7,7 +7,7 @@ export default function LeanSlice() {
   return (
     <section className={styles.slice}>
       <h2 className={styles.heading}>
-        How do we get to the right thing?
+        How do we do the thing right?
       </h2>
 
       <div className={styles.content}>
