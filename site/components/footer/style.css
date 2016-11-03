@@ -128,6 +128,7 @@
 .footerMap {
   display: none;
 }
+
 @media screen and (min-width: 820px) {
   .footerMap {
     position: absolute;
@@ -156,9 +157,6 @@
     border-bottom: none;
   }
 
-  .mapPin {
-    display: none;
-  }
   .footerSections {
     position: relative;
   }
