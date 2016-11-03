@@ -154,10 +154,10 @@ const Footer = () => (
       <div className={styles.footerEndContainer}>
         <div className={cx('section', 'disclaimer', 'noBorder')}>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
-            &copy; Red Badger Consultancy Ltd 2016
+            &copy; Red Badger Consulting Limited 2016
           </p>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
-            Registered number 345 678 912 UK
+            Registered in England No. 7242017
           </p>
           <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
           <p className={styles.cookieWarning}>
