@@ -143,6 +143,8 @@ const Footer = () => (
 
           <a
             className={styles.mapLink}
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16"
           >
             Open in Google maps
