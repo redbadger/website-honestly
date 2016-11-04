@@ -8,7 +8,7 @@ describe('formatSignUpResponse', () => {
       email_address: 'test@gmail.com',
       title: 'Member Exists',
       merge_fields: {
-        FNAME: 'Andrew',
+        FIRSTNAME: 'Andrew',
       },
     };
 
@@ -27,7 +27,7 @@ describe('formatSignUpResponse', () => {
       timestamp_opt: 'exampleDate',
       email_address: 'test@gmail.com',
       merge_fields: {
-        FNAME: 'Andrew',
+        FIRSTNAME: 'Andrew',
       },
     };
 
@@ -42,7 +42,6 @@ describe('formatSignUpResponse', () => {
 });
 
 describe('formatUpdateResponse', () => {
-  // if (res.last_changed !== res.timestamp_opt && data.merge_fields.FNAME !== '') {
   it('returns the correct values if there are no erros and a new account has been created', () => {
     const test = {
       detail: 'There was an error signing you up',
@@ -50,7 +49,7 @@ describe('formatUpdateResponse', () => {
       timestamp_opt: 'exampleDate',
       email_address: 'test@gmail.com',
       merge_fields: {
-        FNAME: 'Andrew',
+        FIRSTNAME: 'Andrew',
       },
     };
 
@@ -97,8 +96,8 @@ describe('formatFormInput', () => {
       email_address: 'test@gmail.com',
       status: 'subscribed',
       merge_fields: {
-        FNAME: 'Testa',
-        LNAME: 'Fiesta',
+        FIRSTNAME: 'Testa',
+        LASTNAME: 'Fiesta',
         COMPANY: 'Red Badger',
         ROLE: 'Developer',
       },
@@ -119,8 +118,8 @@ describe('formatFormInput', () => {
       email_address: 'test@gmail.com',
       status: 'subscribed',
       merge_fields: {
-        FNAME: 'Testa',
-        LNAME: 'Fiesta',
+        FIRSTNAME: 'Testa',
+        LASTNAME: 'Fiesta',
         COMPANY: 'Red Badger',
         ROLE: 'Developer',
       },

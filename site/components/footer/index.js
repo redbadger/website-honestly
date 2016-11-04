@@ -186,6 +186,8 @@ const Footer = () => (
 
           <a
             className={styles.mapLink}
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16"
           >
             Open in Google maps
@@ -195,10 +197,10 @@ const Footer = () => (
       <div className={styles.footerEndContainer}>
         <div className={cx('section', 'disclaimer', 'noBorder')}>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
-            &copy; Red Badger Consultancy Ltd 2016
+            &copy; Red Badger Consulting Limited 2016
           </p>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
-            Registered number 345 678 912 UK
+            Registered in England No. 7242017
           </p>
           <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
           <p className={styles.cookieWarning}>
