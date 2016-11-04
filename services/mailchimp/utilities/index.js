@@ -79,7 +79,7 @@ export function formatFormInput(event, isEmailEncrypted) {
   }
   return {
     email_address: emailAddress,
-    status: 'subscribed',
+    status: 'pending',
     merge_fields: {
       FIRSTNAME: event.body.name || '',
       LASTNAME: event.body.surname || '',

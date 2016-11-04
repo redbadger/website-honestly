@@ -10,6 +10,7 @@ TODO: write a motivation.
 
 ### Pre-merge checklist
 
+- [ ] Documentation
 - [ ] Unit tests
 - [ ] Reviews
   - [ ] Code review
