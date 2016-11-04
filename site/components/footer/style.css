@@ -1,6 +1,10 @@
 @value badgerRed, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize from "../../css/_sizes.css";
 
+.screenReaderText {
+  composes: visuallyHidden from "../../css/_accessibility.css";
+}
+
 .footer {
   composes: dividerBlack from "../../css/_divider.css";
   color: badgerWhite;
@@ -134,6 +138,7 @@
     position: absolute;
     width: 824px;
     height: 400px;
+    top: 0;
     right: 0;
     display: block;
     overflow: hidden;
