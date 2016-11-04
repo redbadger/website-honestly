@@ -6,6 +6,8 @@ import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 import WhatWeDoPage from '../pages/what-we-do';
 
+const TITLE_SUFFIX = 'Red Badger';
+
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
   return `${routePrefix}${route}`;
@@ -37,8 +39,13 @@ export default function routes({ contactUsURL }) {
     notFoundPage: () => <L><NotFoundPage /></L>,
     whatWeDoPage: () => <L><WhatWeDoPage /></L>,
   };
-  return prefixRoutes(routeDefinitions.map(route => ({
-    ...route,
-    component: componentMap[route.key],
-  })));
+
+  return prefixRoutes(routeDefinitions.map(
+    ({ title, key, route }) => ({
+      title: `${title} | ${TITLE_SUFFIX}`,
+      key,
+      route,
+      component: componentMap[key],
+    }))
+  );
 }

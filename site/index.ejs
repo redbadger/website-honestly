@@ -30,7 +30,7 @@
     <link rel="icon" href="/assets-honestly/favicons/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="icon" href="/assets-honestly/favicons/favicon-192x192.png" type="image/png" sizes="192x192">
     <link rel="icon" href="/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
-    <title>Red Badger</title>
+    <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
   </head>
   <body>
