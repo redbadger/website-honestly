@@ -48,7 +48,7 @@ class Form extends Component {
           />
 
           <label className={styles.formLabel} htmlFor="contact">
-            Your email or phone:&nbsp;
+            Your email:&nbsp;
             <span className={styles.errorMessage}>{errors.contact}</span>
           </label>
           <input
