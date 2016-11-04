@@ -15,18 +15,21 @@ describe('site/compiler', () => {
     const C = () => <div>C</div>;
     const routes = [
       {
+        title: 'Home',
         key: 'home',
         route: '',
         filePath: 'index.html',
         component: () => <A />,
       },
       {
+        title: 'Not Found',
         key: 'notFound',
         route: '404',
         filePath: '404/index.html',
         component: () => <B />,
       },
       {
+        title: 'About',
         key: 'about',
         route: 'site/about',
         filePath: 'site/about/index.html',
