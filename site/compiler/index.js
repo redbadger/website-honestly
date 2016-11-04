@@ -15,10 +15,18 @@ export function compileRoutes(siteRoutes) {
   );
   registerStateNavigator(stateNavigator);
   return siteRoutes.map(route => {
+    const title = route.title;
     const Component = route.component;
     const path = route.filePath;
     const bodyContent = renderToString(<Component />);
-    const body = layoutTemplate({ tracking, bodyContent, cssPath, jsPath });
+    const body = layoutTemplate({
+      title,
+      tracking,
+      bodyContent,
+      cssPath,
+      jsPath,
+    });
+
     return { body, path };
   });
 }
