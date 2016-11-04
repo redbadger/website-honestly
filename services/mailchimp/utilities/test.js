@@ -94,7 +94,7 @@ describe('formatFormInput', () => {
     const result = formatFormInput(event, false);
     expect(result).to.deep.equal({
       email_address: 'test@gmail.com',
-      status: 'subscribed',
+      status: 'pending',
       merge_fields: {
         FIRSTNAME: 'Testa',
         LASTNAME: 'Fiesta',
@@ -116,7 +116,7 @@ describe('formatFormInput', () => {
     const result = formatFormInput(event, true);
     expect(result).to.deep.equal({
       email_address: 'test@gmail.com',
-      status: 'subscribed',
+      status: 'pending',
       merge_fields: {
         FIRSTNAME: 'Testa',
         LASTNAME: 'Fiesta',
