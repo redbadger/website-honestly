@@ -32,13 +32,19 @@ function prefixRoutes(rs) {
 }
 
 export default function routes({ contactUsURL }) {
+  const titleSuffix = process.env.COMPANY || 'Red Badger';
   const componentMap = {
     homePage: () => <L><HomePage contactUsURL={contactUsURL} /></L>,
     notFoundPage: () => <L><NotFoundPage /></L>,
     whatWeDoPage: () => <L><WhatWeDoPage /></L>,
   };
-  return prefixRoutes(routeDefinitions.map(route => ({
-    ...route,
-    component: componentMap[route.key],
-  })));
+
+  return prefixRoutes(routeDefinitions.map(
+    ({ title, key, route }) => ({
+      title: [title, titleSuffix].join(' | '),
+      key,
+      route,
+      component: componentMap[key],
+    }))
+  );
 }
