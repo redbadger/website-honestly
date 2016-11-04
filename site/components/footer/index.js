@@ -2,7 +2,6 @@ import InlineSVG from 'svg-inline-react';
 import classnames from 'classnames/bind';
 import React from 'react';
 import styles from './style.css';
-
 import Link from '../link';
 
 /* SVGs */
@@ -23,7 +22,7 @@ const cx = classnames.bind(styles);
 const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
-      <InlineSVG src={mapSVG} className={styles.footerMap} />
+      <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks')}>
           <ul className={styles.nav}>
@@ -49,10 +48,30 @@ const Footer = () => (
         </nav>
 
         <div className={cx('section', 'social')}>
+          <span className={styles.screenReaderText}>Email us at</span>
           <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>
             hello@red-badger.com
           </a>
-          <a href="tel:+442035670555" className={styles.telLink}>+44 (0) 20 3567 0555</a>
+          <span className={styles.screenReaderText}>Call us on</span>
+          <a href="tel:+442035670555" className={styles.telLink}>
+            <span>+</span>
+            <span>4</span>
+            <span>4 </span>
+            <span>(</span>
+            <span>0</span>
+            <span>) </span>
+            <span>2</span>
+            <span>0 </span>
+            <span>3</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7 </span>
+            <span>0</span>
+            <span>5</span>
+            <span>5</span>
+            <span>5</span>
+          </a>
+          <span className={styles.screenReaderText}>Find us on social media</span>
           <ul className={styles.socialLinks}>
             <li>
               <a
@@ -60,7 +79,10 @@ const Footer = () => (
                 title="Red Badger Github"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={githubSVG} />
+                <InlineSVG
+                  src={githubSVG}
+                  title="Github"
+                />
               </a>
             </li>
             <li>
@@ -69,7 +91,10 @@ const Footer = () => (
                 title="Red Badger Twitter"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={twitterSVG} />
+                <InlineSVG
+                  src={twitterSVG}
+                  title="Twitter"
+                />
               </a>
             </li>
             <li>
@@ -78,7 +103,10 @@ const Footer = () => (
                 title="Red Badger Slack"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={slackSVG} />
+                <InlineSVG
+                  src={slackSVG}
+                  title="Slack"
+                />
               </a>
             </li>
             <li>
@@ -87,7 +115,10 @@ const Footer = () => (
                 title="Red Badger Linkedin"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={linkedinSVG} />
+                <InlineSVG
+                  src={linkedinSVG}
+                  title="Linkedin"
+                />
               </a>
             </li>
 
@@ -97,7 +128,10 @@ const Footer = () => (
                 title="Red Badger Instagram"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={instagramSVG} />
+                <InlineSVG
+                  src={instagramSVG}
+                  title="Instagram"
+                />
               </a>
             </li>
             <li>
@@ -106,7 +140,10 @@ const Footer = () => (
                 title="Red Badger Facebook"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={facebookSVG} />
+                <InlineSVG
+                  src={facebookSVG}
+                  title="Facebook"
+                />
               </a>
             </li>
             <li>
@@ -115,7 +152,10 @@ const Footer = () => (
                 title="Red Badger Youtube"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={youtubeSVG} />
+                <InlineSVG
+                  src={youtubeSVG}
+                  title="Youtube"
+                />
               </a>
             </li>
             <li>
@@ -124,7 +164,10 @@ const Footer = () => (
                 title="Red Badger Google Plus"
                 className={styles.socialIcon}
               >
-                <InlineSVG src={gplusSVG} />
+                <InlineSVG
+                  src={gplusSVG}
+                  title="Google Plus"
+                />
               </a>
             </li>
           </ul>
@@ -132,7 +175,7 @@ const Footer = () => (
 
       </div>
       <div className={cx('section', 'address')}>
-        <InlineSVG src={mapPinSVG} className={styles.mapPin} />
+        <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
         <div className={styles.mapContainer}>
           <address>
             <p>12 Mallow St</p>
@@ -164,7 +207,11 @@ const Footer = () => (
             We use cookies on our website. For more information, view our privacy policy.
           </p>
         </div>
-        <InlineSVG src={badgerSVG} className={styles.badgerIcon} />
+        <InlineSVG
+          src={badgerSVG}
+          className={styles.badgerIcon}
+          title="Sally the Red Badger Badger"
+        />
       </div>
     </div>
   </footer>
