@@ -47,9 +47,8 @@ export function formatSignUpResponse(res) {
   if (res.status === 400) {
     if (res.title === 'Member Exists') {
       defaultResponse.errorMessage = 'This email address has already signed up';
-    }
-    if (res.title === 'Invalid Resource') {
-      defaultResponse.errorMessage = 'Please enter a valid email address';
+    } else {
+      defaultResponse.errorMessage = 'Oops! There was a problem with signing you up';
     }
     defaultResponse.newsletterSubmitted = false;
     return defaultResponse;
@@ -65,7 +64,7 @@ export function formatUpdateResponse(res, data) {
     email_address: res.email_address,
   };
   // The user has signed up previously and is now updating their details
-  if (res.last_changed !== res.timestamp_opt && data.merge_fields.FNAME !== '') {
+  if (res.last_changed !== res.timestamp_opt && data.merge_fields.FIRSTNAME !== '') {
     defaultResponse.updatedFormSubmitted = true;
     defaultResponse.newsletterSubmitted = true;
     return defaultResponse;
@@ -80,10 +79,10 @@ export function formatFormInput(event, isEmailEncrypted) {
   }
   return {
     email_address: emailAddress,
-    status: 'subscribed',
+    status: 'pending',
     merge_fields: {
-      FNAME: event.body.name || '',
-      LNAME: event.body.surname || '',
+      FIRSTNAME: event.body.name || '',
+      LASTNAME: event.body.surname || '',
       COMPANY: event.body.company || '',
       ROLE: event.body.role || '',
     },

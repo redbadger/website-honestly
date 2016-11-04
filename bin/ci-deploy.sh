@@ -8,14 +8,13 @@ createCommitSite() {
   COMMIT_REF=$(git rev-parse --short HEAD)
   export ENVIRONMENT_NAME="staging"
   export URL_BASENAME="$COMMIT_REF/"
-  source bin/load-env.sh
 
-  echo Deploying site to $URL_BASENAME
+  echo Deploying commit preview site to $URL_BASENAME
   make clean
   make build
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
-  aws s3 sync ./dist/txt s3://$BUCKET_NAME/$COMMIT_REF
+  aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF/sw.js
   make services-deploy
   make publish-service-invoke
@@ -27,14 +26,12 @@ createCommitSite() {
 }
 
 deployMaster() {
-  export ENVIRONMENT_NAME=$1
   echo Deploying current master to $1
-  source bin/load-env.sh
   make clean
   make build
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
-  aws s3 sync ./dist/txt s3://$BUCKET_NAME
+  aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/sw.js
   make services-deploy
   make publish-service-invoke
@@ -43,13 +40,23 @@ deployMaster() {
 
 case "$1" in
   create-commit-site)
+    source bin/load-ci-env.sh STAGING
+    source bin/construct-additional-env.sh
     createCommitSite
     ;;
+
   master-to-staging)
+    export ENVIRONMENT_NAME=staging
+    source bin/load-ci-env.sh STAGING
+    source bin/construct-additional-env.sh
     deployMaster staging
     ;;
+
   master-to-production)
+    export ENVIRONMENT_NAME=live
     export INSERT_TRACKING=true
+    source bin/load-ci-env.sh PROD
+    source bin/construct-additional-env.sh
     deployMaster live
     ;;
   *)
