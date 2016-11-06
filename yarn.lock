@@ -3020,6 +3020,10 @@ growl@1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.9.2.tgz#0ea7743715db8d8de2c5ede1775e1b45ac85c02f"
 
+gsap:
+  version "1.19.0"
+  resolved "https://registry.npmjs.org/gsap/-/gsap-1.19.0.tgz#f36b78c6b1a449028d89efbb4c161db29f5991dd"
+
 gulp-decompress@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/gulp-decompress/-/gulp-decompress-1.2.0.tgz#8eeb65a5e015f8ed8532cafe28454960626f0dc7"
@@ -5677,6 +5681,10 @@ react-addons-test-utils@^15.3.2:
 react-dom@^15.3.1:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.3.2.tgz#c46b0aa5380d7b838e7a59c4a7beff2ed315531f"
+
+react-gsap-enhancer:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/react-gsap-enhancer/-/react-gsap-enhancer-0.3.0.tgz#b9f9fd19315875768c433e0943c2a41eea43b7d2"
 
 react@^15.3.2:
   version "15.3.2"
