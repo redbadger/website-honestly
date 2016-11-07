@@ -4,7 +4,7 @@ const contactLabel = 'Contact details:';
 const fieldMessages = {
   emailTo: 'Must be present',
   message: 'How can we help? Let us know in the box below.',
-  contact: 'Please let us know the best way of contacting you.',
+  contact: 'Please let us know your email address.',
 };
 
 function filterInternalErrors(error) {
@@ -15,6 +15,11 @@ function filterInternalErrors(error) {
     };
   }
   throw error;
+}
+
+export function validateContact(contact) {
+  const regex = /.+@.+\..+/;
+  return regex.test(contact);
 }
 
 function throwValidationError(errors) {
@@ -30,6 +35,11 @@ function validateEmail(email) {
       return Object.assign(errors, {
         [field]: fieldMessages[field],
       });
+    }
+    if (field === 'contact' && !validateContact(email.contact)) {
+      return {
+        contact: fieldMessages.contact,
+      };
     }
     return errors;
   };

@@ -14,7 +14,7 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
       errors: {
         emailTo: 'Must be present',
         message: 'How can we help? Let us know in the box below.',
-        contact: 'Please let us know the best way of contacting you.',
+        contact: 'Please let us know your email address.',
       },
     });
   });
@@ -50,7 +50,19 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
     return expect(promise).to.eventually.deep.equal({
       success: false,
       errors: {
-        contact: 'Please let us know the best way of contacting you.',
+        contact: 'Please let us know your email address.',
+      },
+    });
+  });
+
+  it('resolves with error if contact is not an email address', () => {
+    const email = Object.assign({}, defaultEmail);
+    email.contact = '07546575829';
+    const promise = validateAndSendEmail(email);
+    return expect(promise).to.eventually.deep.equal({
+      success: false,
+      errors: {
+        contact: 'Please let us know your email address.',
       },
     });
   });

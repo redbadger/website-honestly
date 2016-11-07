@@ -2,13 +2,14 @@
 import aws from 'aws-sdk'; // eslint-disable-line import/no-unresolved, import/no-extraneous-dependencies
 import { validateAndSendEmail } from './ses';
 
-const contactUsEmailTo = process.env.CONTACT_US_EMAIL_TO;
-
-if (!contactUsEmailTo) {
-  throw new Error('CONTACT_US_EMAIL_TO environment variable not set!');
-}
 
 export default function doContactUs(event, cb) {
+  const contactUsEmailTo = process.env.CONTACT_US_EMAIL_TO;
+
+  if (!contactUsEmailTo) {
+    throw new Error('CONTACT_US_EMAIL_TO environment variable not set!');
+  }
+
   const data = {
     emailTo: contactUsEmailTo,
     message: event.body.message,
