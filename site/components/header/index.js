@@ -11,11 +11,11 @@ const Header = () => {
   return (
     <header className={styles.header} role="banner">
       <Link to="homePage" title="Home" className={styles.logo}>
-        <InlineSVG src={logo} />
+        <InlineSVG src={logo} title="Red Badger logo" />
       </Link>
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
-        <ul className={styles.mediumScreenNav}>
+        <ul role="listbox" className={styles.mediumScreenNav}>
           <li>
             <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
               What we do
