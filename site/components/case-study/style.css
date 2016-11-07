@@ -1,6 +1,10 @@
 @value badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
 
+.screenReaderText {
+  composes: visuallyHidden from "../../css/_accessibility.css";
+}
+
 .heading {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
@@ -27,21 +31,21 @@
   max-width: 1440px;
 }
 
-.figuresContainer div {
+.figureLink {
+  border-top: 1px solid linesOnBlack;
   padding: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid linesOnBlack;
 }
 
-.figuresContainer .caseFigure svg {
+.caseFigure svg {
   height: 80px;
 }
 
-.figuresContainer img {
+.logo {
   height: 50px;
 }
 
@@ -91,12 +95,12 @@
   .caseText {
     padding: 30px;
   }
-  .figuresContainer div {
+  .figureLink {
     width: 49%;
     padding: 60px 0px;
   }
 
-  .figuresContainer div:nth-child(odd){
+  .figureLink:nth-child(odd){
     border-right: 1px solid linesOnBlack;
   }
 
