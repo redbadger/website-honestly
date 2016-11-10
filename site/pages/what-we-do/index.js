@@ -32,8 +32,8 @@ function CaseStudies() {
                 Elegant e-commerce in eight months
               </a>
             </div>
-            className={styles.caseStudyDescription}
             <a
+              className={styles.caseStudyDescription}
               href="/our-work/case-study/fortnum-and-mason/"
             >
               Improving online and mobile conversion rates on the new fortnumandmason.com
