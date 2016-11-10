@@ -24,11 +24,18 @@ function CaseStudies() {
             <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
           </a>
           <div className={styles.caseStudyTextContainer}>
-            <a className={styles.caseStudyCompany} href="/our-work/case-study/fortnum-and-mason/">Fortnum & Mason</a>
+            <a className={styles.caseStudyCompany} href="/our-work/case-study/fortnum-and-mason/">
+              Fortnum & Mason
+            </a>
             <div className={styles.caseStudyTitleContainer}>
-              <a className={styles.caseStudyTitle} href="/our-work/case-study/fortnum-and-mason/">Elegant e-commerce in eight months</a>
+              <a className={styles.caseStudyTitle} href="/our-work/case-study/fortnum-and-mason/">
+                Elegant e-commerce in eight months
+              </a>
             </div>
-            <a className={styles.caseStudyDescription} href="/our-work/case-study/fortnum-and-mason/">
+            className={styles.caseStudyDescription}
+            <a
+              href="/our-work/case-study/fortnum-and-mason/"
+            >
               Improving online and mobile conversion rates on the new fortnumandmason.com
               site with great customer experience and innovative tech.
             </a>
@@ -41,9 +48,13 @@ function CaseStudies() {
             <img alt="The Camden Market App" src={camdenJpg} />
           </a>
           <div className={styles.caseStudyTextContainer}>
-            <a className={styles.caseStudyCompany} href="/our-work/case-study/camden-market/">Camden Market</a>
+            <a className={styles.caseStudyCompany} href="/our-work/case-study/camden-market/">
+              Camden Market
+            </a>
             <div className={styles.caseStudyTitleContainer}>
-              <a className={styles.caseStudyTitle} href="/our-work/case-study/camden-market/">Taking steps towards a digital future</a>
+              <a className={styles.caseStudyTitle} href="/our-work/case-study/camden-market/">
+                Taking steps towards a digital future
+              </a>
             </div>
             <a className={styles.caseStudyDescription} href="/our-work/case-study/camden-market/">
               Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive
@@ -59,13 +70,17 @@ function CaseStudies() {
             <img alt="Financial Times website on a tablet" src={financialTimesJpg} />
           </a>
           <div className={styles.caseStudyTextContainer}>
-            <a className={styles.caseStudyCompany} href="/our-work/case-study/financial-times/">Financial Times</a>
+            <a className={styles.caseStudyCompany} href="/our-work/case-study/financial-times/">
+              Financial Times
+            </a>
             <div className={styles.caseStudyTitleContainer}>
-              <a className={styles.caseStudyTitle} href="/our-work/case-study/financial-times/">Lasting change for a media giant</a>
+              <a className={styles.caseStudyTitle} href="/our-work/case-study/financial-times/">
+                Lasting change for a media giant
+              </a>
             </div>
             <a className={styles.caseStudyDescription} href="/our-work/case-study/financial-times/">
-              Improving online and mobile conversion rates on the new fortnumandmason.com
-              site with great customer experience and innovative tech.
+              We helped integrate Lean UX and Agile Design processes across the organisation,
+              enabling them to operate at the cutting edge of product delivery.
             </a>
           </div>
         </div>
