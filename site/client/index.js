@@ -14,6 +14,10 @@ export function makeApp({ element, data, history }) {
   );
   registerStateNavigator(stateNavigator);
 
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register(location.origin + '/sw.js');
+  }
+
   routes.forEach(route => {
     const render = () => {
       window.scrollTo(0, 0);
