@@ -62,7 +62,7 @@ export default class SmallScreenNav extends React.Component {
                 <li><Link tabIndex={navTabIndex} to="homePage">Home</Link></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/">About us</a></li>
                 <li><Link tabIndex={navTabIndex} to="whatWeDoPage">What we do</Link></li>
-                <li><a tabIndex={navTabIndex} href="http://red-badger.com/blog/">Blog</a></li>
+                <li><a tabIndex={navTabIndex} href="/blog/">Blog</a></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/events/">Events</a></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/join-us/">Jobs</a></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/contact-us/">Contact us</a></li>

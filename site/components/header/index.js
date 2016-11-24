@@ -22,7 +22,7 @@ const Header = () => {
             </Link>
           </li>
           <li><a href="/about-us/">About us</a></li>
-          <li><a href="http://red-badger.com/blog/">Blog</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/about-us/events/">Events</a></li>
         </ul>
       </nav>
