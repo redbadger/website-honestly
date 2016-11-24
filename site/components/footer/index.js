@@ -36,7 +36,7 @@ const Footer = () => (
               <Link to="whatWeDoPage">What we do</Link>
             </li>
             <li>
-              <a href="http://red-badger.com/blog/">Blog</a>
+              <a href="/blog/">Blog</a>
             </li>
             <li>
               <a href="/about-us/events/">Events</a>
