@@ -22,6 +22,6 @@ export const routeDefinitions = [
   {
     title: 'Join us',
     key: 'joinUs',
-    route: 'about-us/join-us',
+    route: 'about-us/join-us-static',
   },
 ];
