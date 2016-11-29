@@ -6,6 +6,7 @@ import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
+import JoinUsPage from '../pages/join-us';
 
 const TITLE_SUFFIX = 'Red Badger';
 
@@ -34,12 +35,13 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes({ contactUsURL }) {
+export default function routes(content) {
   const componentMap = {
-    homePage: () => <L><HomePage contactUsURL={contactUsURL} /></L>,
+    homePage: () => <L><HomePage contactUsURL={content.contactUsURL} /></L>,
     notFoundPage: () => <L><NotFoundPage /></L>,
     whatWeDoPage: () => <L><WhatWeDoPage /></L>,
     serverErrorPage: () => <L><ServerErrorPage /></L>,
+    joinUs: () => <L><JoinUsPage jobs={content.jobs} /></L>,
   };
 
   return prefixRoutes(routeDefinitions.map(
