@@ -14,4 +14,9 @@ export const routeDefinitions = [
     key: 'whatWeDoPage',
     route: 'what-we-do',
   },
+  {
+    title: 'Join us',
+    key: 'joinUs',
+    route: 'about-us/join-us',
+  },
 ];
