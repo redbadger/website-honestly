@@ -10,6 +10,11 @@ export const routeDefinitions = [
     route: '404',
   },
   {
+    title: 'Internal error',
+    key: 'internalErrorPage',
+    route: '500',
+  },
+  {
     title: 'What we do',
     key: 'whatWeDoPage',
     route: 'what-we-do',
