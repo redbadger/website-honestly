@@ -1,0 +1,11 @@
+{
+  "exceptions": [
+    "https://nodesecurity.io/advisories/55",
+
+    // Related to `nano` package used by
+    // utils/import-events-to-couch script
+    "https://nodesecurity.io/advisories/77",
+
+    "https://nodesecurity.io/advisories/101"
+  ]
+}

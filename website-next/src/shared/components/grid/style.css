@@ -1,0 +1,229 @@
+@value mobile from "../variables/breakpoints.css";
+@value mobileS from "../variables/breakpoints.css";
+@value mobileSM from "../variables/breakpoints.css";
+@value tablet from "../variables/breakpoints.css";
+@value gutterSize: 40px;
+
+/**
+ * Core grid component
+ *
+ * Taken from https://github.com/suitcss/components-grid
+ *
+ * DO NOT apply dimension or offset utilities to the `Grid` element. All cell
+ * widths and offsets should be applied to child grid cells.
+ */
+
+/* Grid container
+   ========================================================================== */
+
+/**
+ * All content must be contained within child `cell` elements.
+ *
+ * 1. Account for browser defaults of elements that might be the root node of
+ *    the component.
+ */
+
+.grid {
+  box-sizing: border-box;
+  display: flex; /* 1 */
+  flex-flow: row wrap;
+  margin: 0; /* 1 */
+  padding: 0; /* 1 */
+}
+
+/**
+ * Modifier: center align all grid cells
+ */
+
+.alignCenter {
+  justify-content: center;
+}
+
+/**
+ * Modifier: right align all grid cells
+ */
+
+.alignRight {
+  justify-content: flex-end;
+}
+
+/**
+ * Modifier: middle-align grid cells
+ */
+
+.alignMiddle {
+  align-items: center;
+}
+
+/**
+ * Modifier: bottom-align grid cells
+ */
+
+.alignBottom {
+  align-items: flex-end;
+}
+
+/**
+ * Modifier: allow cells to equal distribute width
+ *
+ * 1. Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7
+ *    Use `0%` to avoid bug in IE10/11 with unitless flex basis - http://git.io/vllWx
+ */
+
+.fit > .cell {
+  flex: 1 1 0%; /* 1 */
+}
+
+/**
+ * Modifier: all cells match height of tallest cell in a row
+ */
+
+.equalHeight > .cell {
+  display: flex;
+}
+
+/**
+ * Modifier: gutters
+ */
+
+.withGutter {
+  margin: 0 calc(-0.5 * gutterSize);
+}
+
+.withGutter > .cell {
+  padding: 0 calc(0.5 * gutterSize);
+}
+
+/* Grid cell
+   ========================================================================== */
+
+/**
+ * No explicit width by default. Rely on combining `cell` with a dimension
+ * utility or a component class that extends 'grid'.
+ *
+ * 1. Set flex items to full width by default
+ */
+
+.cell {
+  box-sizing: inherit;
+  flex: 0 0 100%; /* 1 */
+}
+
+/**
+ * Modifier: horizontally center one unit
+ * Set a specific unit to be horizontally centered. Doesn't affect
+ * any other units. Can still contain a child `grid` component.
+ */
+
+.cellCenter {
+  margin: 0 auto;
+}
+
+/**
+ * Specify the proportional width of an object.
+ * Intentional redundancy build into each set of unit classes.
+ * Supports: 12 part
+ *
+ * 1. Use `flex-basis: auto` with a width to avoid box-sizing bug in IE10/11
+ *    http://git.io/vllMD
+ */
+
+.size1of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 1 / 12);
+}
+
+.size2of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 1 / 6);
+}
+
+.size3of12 {
+  flex-basis: auto; /* 1 */
+  width: 25%;
+}
+
+.size4of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 1 / 3);
+}
+
+.size5of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 5 / 12);
+}
+
+.size6of12 {
+  flex-basis: auto; /* 1 */
+  width: 50%;
+}
+
+.size7of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 7 / 12);
+}
+
+.size8of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 2 / 3);
+}
+
+.size9of12 {
+  flex-basis: auto; /* 1 */
+  width: 75%;
+}
+
+.size10of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 5 / 6);
+}
+
+.size11of12 {
+  flex-basis: auto; /* 1 */
+  width: calc(100% * 11 / 12);
+}
+
+.size12of12 {
+  flex-basis: auto; /* 1 */
+  width: 100%;
+}
+
+@media mobile {
+  .responsive-cell-mobile {
+    width: 100%;
+  }
+
+  .fit > .cell.mobile {
+    flex-basis: 100%;
+  }
+
+  .hideOnmobile {
+    display: none;
+  }
+}
+
+@media mobileS {
+  .responsive-cell-mobileS {
+    width: 100%;
+  }
+
+  .cell.mobileS {
+    flex-basis: 100%;
+  }
+
+  .hideOnmobileS {
+    display: none;
+  }
+}
+
+@media mobileSM {
+  .hideOnmobileSM {
+    display: none;
+  }
+}
+
+@media tablet {
+  .hideOntablet {
+    display: none;
+  }
+}

@@ -1,0 +1,78 @@
+@value mobile from "../variables/breakpoints.css";
+@value red from "../variables/colors.css";
+
+.eventsListTimelineSection {
+  margin-bottom: 50px;
+}
+
+.eventsListTimelineSection:last-child {
+  margin-bottom: 0;
+}
+
+.eventsListTimelineSection h2 {
+  margin-bottom: 0;
+  font-family: "Sentinel A", "Sentinel B", serif;
+}
+
+.eventsListTimelineSection h2.eventTitle {
+  text-align: left;
+}
+
+.eventsList {
+  font-size: 1em;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.eventItem {
+  position: relative;
+  list-style-type: none;
+}
+
+.eventTitleLink {
+  text-decoration: none;
+}
+
+.eventTitle {
+  composes: h2 from "../../components/typography/style.css";
+  font-size: 1.6em;
+  text-decoration: none;
+  display: inline;
+  float: left;
+  margin-bottom: 0;
+}
+
+.eventTitle span {
+  display: inline;
+}
+
+.eventTitle:hover, .eventTitle:active, .eventTitle:focus {
+  color: red;
+}
+
+.arrow {
+  color: red;
+  padding-left: 5px;
+}
+
+.eventDescription {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.eventLinks {
+  composes: cf from "../../components/utils/layout.css";
+  margin-bottom: 1em;
+}
+
+.mobileHorizontalLine {
+  display: block;
+  margin: 1.5em 0 0 0;
+}
+
+@media mobile {
+  .eventsList {
+    padding: 0;
+  }
+}

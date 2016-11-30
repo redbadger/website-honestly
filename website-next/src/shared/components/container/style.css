@@ -1,0 +1,18 @@
+@value desktop, desktopMinWidth from "../variables/breakpoints.css";
+
+.wrapper {
+  composes: nbfcAlt from "../utils/layout.css";
+}
+
+.container {
+  width: 100%;
+  max-width: large;
+  padding: 0px 20px;
+}
+
+@media desktop {
+  .container {
+    width: desktopMinWidth;
+    margin: 0 auto;
+  }
+}

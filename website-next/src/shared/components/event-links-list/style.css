@@ -1,0 +1,27 @@
+.eventLinkList {
+  width: 100%;
+  float: left;
+}
+
+.fullDetailsLink {
+  composes: aBold from "../typography/style.css";
+  clear: both;
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin-top: 0.8em;
+  position: relative;
+  text-decoration: none;
+  float: left;
+}
+
+.fullDetailsLink span {
+  display: inline;
+}
+
+.externalLinkIcon {
+  font-size: 1em;
+  color: #fc1d42;
+  margin-bottom: 3px;
+  padding-left: 5px;
+}
