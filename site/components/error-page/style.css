@@ -94,6 +94,11 @@
    white-space: pre;
   }
 
+  .copy span:first-child:before {
+    content: '';
+    white-space: inherit;
+  }
+
   .header {
     margin-bottom: 60px;
   }

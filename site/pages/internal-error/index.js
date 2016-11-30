@@ -3,7 +3,7 @@ import ErrorPage from '../../components/error-page';
 
 export default function InternalErrorPage() {
   const content = ([
-    'Something went wrong, we’re scratching our heads as well. ',
+    <span>Something went wrong, we’re scratching our heads as well.&nbsp;</span>,
     <span>Try refreshing the page or come back later.</span>,
   ]);
 
