@@ -6,6 +6,7 @@ import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 import WhatWeDoPage from '../pages/what-we-do';
 import JoinUsPage from '../pages/join-us';
+import EventsPage from '../../website-next/src/shared/containers/events';
 
 const TITLE_SUFFIX = 'Red Badger';
 
@@ -41,6 +42,7 @@ export default function routes(content) {
     whatWeDoPage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
     joinUs: ({stateNavigator}) => <L stateNavigator={stateNavigator}><JoinUsPage jobs={content.jobs} /></L>,
     job: ({stateNavigator}) => <L stateNavigator={stateNavigator}>Not Implemented</L>,
+    events: ({stateNavigator}) => <L stateNavigator={stateNavigator}><EventsPage events={content.events}/></L>
   };
 
   return prefixRoutes(routeDefinitions.map(

@@ -24,4 +24,9 @@ export const routeDefinitions = [
     key: 'job',
     route: 'about-us/join-us/{slug}',
   },
+  {
+    title: 'Events',
+    key: 'events',
+    route: 'about-us/events',
+  },
 ];

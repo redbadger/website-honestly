@@ -9,8 +9,6 @@ import EventsList from '../../components/events-list';
 import BannerReactConf from '../../components/banner-react-conf';
 
 export class Events extends Component {
-  static fetchData = fetchEvents(fetch());
-
   render() {
     return (
       <div>
@@ -28,12 +26,4 @@ export class Events extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    events: state.events,
-  };
-}
-
-export default connect(
-  mapStateToProps
-)(Events);
+export default Events;
