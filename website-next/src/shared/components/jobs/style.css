@@ -1,0 +1,33 @@
+@value red from "../variables/colors.css";
+
+.title {
+  composes: heroFont from "../fonts/style.css";
+  display: block;
+  font-size: 1.55em;
+  text-decoration: none;
+  color: #000;
+  line-height: 1.2;
+}
+
+.title:hover {
+  color: red;
+}
+
+.icon {
+  width: 20px;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.icon img {
+  width: 100%;
+  display: inline-block;
+}
+
+.jobs p {
+  line-height: 1.35;
+}
+
+.jobs p:first-of-type {
+  font-weight: bold;
+}

@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'RedBadgerIcons';
+  src: url('./icons.eot');
+  src: url('./icons.eot?#iefix') format('embedded-Opentype'),
+       url('./icons.woff') format('woff'),
+       url('./icons.ttf') format('truetype'),
+       url('./icons.svg#icons') format('svg');
+}
+
+.designBranding,
+.designLook,
+.designUX,
+.pmAgile,
+.pmCoaching,
+.pmKanban,
+.pmScrum,
+.quotationClose,
+.quotationOpen,
+.quoteLinkedin,
+.quoteTwitter,
+.sketchArrowLeft,
+.sketchArrowRight,
+.sketchComment,
+.sketchEmail,
+.sketchExternalLink,
+.sketchGuillemotLeft,
+.sketchGuillemotRight,
+.sketchRss,
+.sketchStar,
+.sketchTag,
+.socialFacebook,
+.socialFlickr,
+.socialGithub,
+.socialInstagram,
+.socialLinkedin,
+.socialPinterest,
+.socialTwitter,
+.stampContact,
+.stampDesign,
+.stampEvent,
+.stampJoin,
+.stampNews,
+.stampPM,
+.stampTeam,
+.stampTest,
+.stampTech,
+.stampUX,
+.tagOpen,
+.tagClose,
+.testAutomation,
+.testCompatibility,
+.testFunctional,
+.testIntegration,
+.testMigration,
+.testPerformance,
+.testUAT,
+.uxEA,
+.uxIA,
+.uxJourney,
+.uxPersona,
+.uxResearch,
+.uxTesting,
+.uxWireframe {
+  font-family: 'RedBadgerIcons';
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /*line-height: 1;*/
+  font-size: 1.5em;
+  width: 1.8em;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+.inlineBegin {
+  padding-right: 0.5em
+}
+
+.inlineEnd {
+  padding-left: 0.5em
+}
+*/
+
+.sketchArrowLeft,
+.sketchArrowRight {
+  font-size: 0.7em;
+}
+
+.designBranding:before       { content: "\25f4" }
+.designLook:before           { content: "\25f5" }
+.designUX:before             { content: "\25f6" }
+.pmAgile:before              { content: "\25d0" }
+.pmCoaching:before           { content: "\25d3" }
+.pmKanban:before             { content: "\25d1" }
+.pmScrum:before              { content: "\25d2" }
+.quotationClose:before       { content: "\201d" }
+.quotationOpen:before        { content: "\201c" }
+.quoteTwitter:before         { content: "\21" }
+.quoteLinkedin:before        { content: "\3f" }
+.stampContact:before         { content: "\39" }
+.stampDesign:before          { content: "\31" }
+.stampEvent:before           { content: "\35" }
+.stampJoin:before            { content: "\38" }
+.stampNews:before            { content: "\36" }
+.stampPM:before              { content: "\32" }
+.stampTeam:before            { content: "\37" }
+.stampTech:before            { content: "\33"; }
+.stampTest:before            { content: "\34" }
+.stampUX:before              { content: "\30"; }
+.sketchArrowLeft:before      { content: "\3c" }
+.sketchArrowRight:before     { content: "\3e" }
+.sketchComment:before        { content: "\43" }
+.sketchEmail:before          { content: "\40" }
+.sketchExternalLink:before   { content: "\45" }
+.sketchGuillemotLeft:before  { content: "\ab" }
+.sketchGuillemotRight:before { content: "\bb" }
+.sketchRss:before            { content: "\52" }
+.sketchStar:before           { content: "\2a" }
+.sketchTag:before            { content: "\54" }
+.socialFacebook:before       { content: "\66" }
+.socialFlickr:before         { content: "\6b" }
+.socialInstagram:before      { content: "\69" }
+.socialGithub:before         { content: "\67" }
+.socialLinkedin:before       { content: "\6c" }
+.socialPinterest:before      { content: "\70" }
+.socialTwitter:before        { content: "\74" }
+.tagOpen:before              { content: "\5b" }
+.tagClose:before             { content: "\5d" }
+.testAutomation:before       { content: "\25e8" }
+.testCompatibility:before    { content: "\25eb" }
+.testFunctional:before       { content: "\25e7" }
+.testIntegration:before      { content: "\25ea" }
+.testMigration:before        { content: "\25ed" }
+.testPerformance:before      { content: "\25e9" }
+.testUAT:before              { content: "\25ec" }
+.uxEA:before                 { content: "\25a5" }
+.uxIA:before                 { content: "\25a6" }
+.uxJourney:before            { content: "\25a4" }
+.uxPersona:before            { content: "\25a3" }
+.uxResearch:before           { content: "\25a2" }
+.uxTesting:before            { content: "\25a8" }
+.uxWireframe:before          { content: "\25a7" }

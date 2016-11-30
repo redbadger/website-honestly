@@ -1,0 +1,9 @@
+.h1 {
+  composes: h1 from "../../components/typography/style.css";
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pastEventsTitle {
+  margin-top: 50px;
+}

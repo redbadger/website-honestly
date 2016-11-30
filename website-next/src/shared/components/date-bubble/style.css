@@ -1,0 +1,27 @@
+@value red from "../variables/colors.css";
+
+.dateBubble {
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 3em;
+  margin-bottom: 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1.25em;
+  margin-top: 2em;
+}
+
+.date {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.date, .month, .year {
+  display: inline-block;
+  margin: 0 2px;
+}

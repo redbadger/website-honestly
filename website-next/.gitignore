@@ -1,0 +1,18 @@
+/node_modules
+spec/coverage/
+build/
+.eslintcache
+npm-debug.log
+.env
+.DS_Store
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+newrelic_agent.log
+
+docs/.sass-cache
+docs/Gemfile.lock
+docs/_site

@@ -1,0 +1,49 @@
+@value grey from "../variables/colors.css";
+
+.icon {
+  composes: sketchTag from "../icons/style.css";
+  color: grey;
+  float: left;
+}
+
+.tagsList {
+  /*
+  Note: For some really weird and unknown reason, the following rule breaks
+  karma-webpack. It only happens with this rule and results in an obscure
+  error during build when running client tests.
+
+  composes: cf from "../utils/layout.css";
+  */
+  clear: both;
+  margin-left: -0.7em;
+}
+
+.tagsList ul {
+  display: inline;
+  list-style: none;
+  padding-left: 0;
+}
+
+.tagsList li {
+  display: inline;
+}
+
+.tagsList li:after {
+  content: ", ";
+}
+
+.tagsList li:last-child:after {
+  content: "";
+}
+
+.tagsListLink {
+  composes: a defaultFont from "../typography/style.css";
+  cursor: pointer;
+  font-size: .875em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tagsListLink:hover {
+  text-decoration: underline;
+}

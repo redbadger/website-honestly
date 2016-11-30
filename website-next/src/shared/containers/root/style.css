@@ -1,0 +1,20 @@
+/**
+ * Global styles for base elements
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8f8f8;
+}
+
+.root {
+  composes: defaultFontSize defaultFont from "../../components/fonts/style.css";
+}
+
+.error-background {
+  background: url('./error_doodle.png') repeat center top;
+}

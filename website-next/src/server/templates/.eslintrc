@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "react/jsx-sort-props": 0,
+    "react/forbid-prop-types": 0,
+    "react/no-danger": 0
+  }
+}

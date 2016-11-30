@@ -1,0 +1,23 @@
+.a {
+  composes: a from "../typography/style.css";
+  white-space: nowrap;
+}
+
+.p {
+  composes: p from "../typography/style.css";
+}
+
+.h1 {
+  composes: h1 from "../typography/style.css";
+  text-align: center;
+}
+
+.h2 {
+  composes: h2 from "../typography/style.css";
+  text-align: center;
+}
+
+.h3 {
+  composes: h3 from "../typography/style.css";
+  text-align: center;
+}
