@@ -37,11 +37,12 @@ function prefixRoutes(rs) {
 
 export default function routes(content) {
   const componentMap = {
-    homePage: () => <L><HomePage contactUsURL={content.contactUsURL} /></L>,
-    notFoundPage: () => <L><NotFoundPage /></L>,
-    whatWeDoPage: () => <L><WhatWeDoPage /></L>,
-    serverErrorPage: () => <L><ServerErrorPage /></L>,
-    joinUs: () => <L><JoinUsPage jobs={content.jobs} /></L>,
+    homePage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
+    notFoundPage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
+    whatWeDoPage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
+    joinUs: ({stateNavigator}) => <L stateNavigator={stateNavigator}><JoinUsPage jobs={content.jobs} /></L>,
+    job: ({stateNavigator}) => <L stateNavigator={stateNavigator}>Not Implemented</L>,
+    serverErrorPage: ({stateNavigator}) => <L><ServerErrorPage /></L>,
   };
 
   return prefixRoutes(routeDefinitions.map(

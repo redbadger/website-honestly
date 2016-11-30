@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Navigation from 'navigation';
 
-import { registerStateNavigator } from '../../site/components/link';
 import makeRoutes from '../../site/routes';
-
 
 export function makeApp({ element, data, history }) {
   const routes = makeRoutes(data);
@@ -12,7 +10,6 @@ export function makeApp({ element, data, history }) {
     routes,
     history
   );
-  registerStateNavigator(stateNavigator);
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(location.origin + '/sw.js');
@@ -22,7 +19,7 @@ export function makeApp({ element, data, history }) {
     const render = () => {
       window.scrollTo(0, 0);
       const Component = route.component;
-      ReactDOM.render(<Component />, element);
+      ReactDOM.render(<Component stateNavigator={stateNavigator} />, element);
     };
     stateNavigator.states[route.key].navigated = render;
   });

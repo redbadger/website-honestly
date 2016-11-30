@@ -14,16 +14,6 @@ const devStaticConfig = webpackMerge(baseConfig, {
   externals: [
     './client-digest',
   ],
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        unused: true,
-        dead_code: true,
-        warnings: false,
-        drop_debugger: true,
-      },
-    }),
-  ],
 });
 
 const clientConfig = webpackMerge(baseConfig, {
@@ -38,14 +28,6 @@ const clientConfig = webpackMerge(baseConfig, {
     './client-digest',
   ],
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        unused: true,
-        dead_code: true,
-        warnings: false,
-        drop_debugger: true,
-      },
-    }),
     new AssetsPlugin({
       filename: 'client-digest.json',
       path: './dist/dev-static',
