@@ -3,16 +3,26 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import styles from './style.css';
 
-export default function Layout({ children }) {
-  return (
-    <div className={styles.application}>
-      <Header />
-      <div>{children}</div>
-      <Footer />
-    </div>
-  );
-}
+export default class Layout extends React.Component {
+  static childContextTypes = {
+    stateNavigator: PropTypes.object
+  }
 
-Layout.propTypes = {
-  children: PropTypes.element.isRequired,
-};
+  static propTypes = {
+    children: PropTypes.element.isRequired,
+  };
+
+  render() {
+    return (
+      <div className={styles.application}>
+        <Header />
+        <div>{this.props.children}</div>
+        <Footer />
+      </div>
+    );
+  }
+
+  getChildContext() {
+    return { stateNavigator: this.props.stateNavigator };
+  }
+}

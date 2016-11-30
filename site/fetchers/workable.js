@@ -1,5 +1,12 @@
 import paramCase from 'param-case';
 
+const handleErrors = (response) => {
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+  return response;
+}
+
 export default class Workable {
   constructor(fetch, key) {
     this.fetch = fetch;
@@ -15,6 +22,7 @@ export default class Workable {
         'Content-Type': 'application/json',
       },
     })
+    .then(handleErrors)
     .then(response => response.json())
     .then(response => response.jobs.map(job => ({
       title: job.title,

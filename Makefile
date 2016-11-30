@@ -32,6 +32,8 @@ dev: badger dist/sw.js ## Run the frontend dev server
 
 sw: dist/sw.js  ## Compile service worker
 
+fetch:
+	$(LOAD_ENV) && node dev/content-fetcher
 
 dev-static: dist/static-site dist/dev-static/index.js dist/sw.js ## Compile the site to HTML locally and serve
 	ln -fs ../assets-honestly dist/static-site/assets-honestly
@@ -52,7 +54,7 @@ build: dist/services.zip dist/dev-static/index.js dist/sw.js ## Compile project
 
 
 lint: ## Lint Javascript files
-	$(ESLINT) . --ext .js --ext .jsx --ignore-path .gitignore --cache
+	$(ESLINT) . --ext .js --ext .jsx --ignore-path .gitignore --ignore-path .eslintignore --cache
 
 
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
