@@ -13,12 +13,11 @@ export function compileRoutes(siteRoutes) {
     siteRoutes,
     new Navigation.HTML5HistoryManager()
   );
-  registerStateNavigator(stateNavigator);
   return siteRoutes.map(route => {
     const title = route.title;
     const Component = route.component;
     const path = route.filePath;
-    const bodyContent = renderToString(<Component />);
+    const bodyContent = renderToString(<Component stateNavigator={stateNavigator} />);
     const body = layoutTemplate({
       title,
       tracking,
