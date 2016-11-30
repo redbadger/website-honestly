@@ -21,7 +21,7 @@
 .header {
   composes: serif from "../../css/typography/_fonts.css";
   composes: fontL from "../../css/typography/_fonts.css";
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .content {
@@ -69,10 +69,11 @@
     margin-top: -50px;
     max-height: inherit;
     max-width: 40%;
+    padding-left: 10%;
   }
 
   .header {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .sectionContent {
@@ -100,10 +101,11 @@
   }
 
   .header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .badger {
-    max-width: 42%;
+    max-width: 35%;
+    padding-left: 0;
   }
 }
