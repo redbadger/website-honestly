@@ -6,7 +6,7 @@ import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
-import JoinUsPage from '../pages/join-us';
+import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 
 const TITLE_SUFFIX = 'Red Badger';
 
