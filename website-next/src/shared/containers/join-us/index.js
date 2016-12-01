@@ -7,8 +7,6 @@ import styles from './style.css';
 import Video from '../../components/video';
 import HR from '../../components/hr';
 import { Grid, Cell } from '../../components/grid';
-import { fetchJobs } from '../../actions/jobs';
-import fetch from '../../util/fetch-proxy';
 
 const titles = {
   type: 'Content',
@@ -24,7 +22,7 @@ const titles = {
         type: 'Title3',
         props: {
           // eslint-disable-next-line max-len, comma-dangle
-          children: <span>Are we what you're looking <span className={styles.noWrap}>for?*</span></span>
+          children: <span>Are we what you&#39;re looking <span className={styles.noWrap}>for?*</span></span>
         },
       },
     ],
@@ -103,8 +101,6 @@ const vacancies = {
 };
 
 export default class JoinUs extends Component {
-  static fetchData = fetchJobs(fetch());
-
   render() {
     return (
       <div>
@@ -112,16 +108,16 @@ export default class JoinUs extends Component {
           <Container>
             <ComponentRenderer data={titles} />
             <Grid>
-              <Cell size='6'>
+              <Cell size={6}>
                 <ComponentRenderer data={join} />
               </Cell>
-              <Cell size='6'>
+              <Cell size={6}>
                 <Video id="110925126" type="vimeo" />
               </Cell>
             </Grid>
             <HR color="red" />
             <ComponentRenderer data={vacancies} />
-            <Jobs />
+            <Jobs jobs={this.props.jobs} />
           </Container>
         </Section>
         <HR color="red" />
