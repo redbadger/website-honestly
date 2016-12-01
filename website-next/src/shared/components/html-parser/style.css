@@ -1,0 +1,20 @@
+@value font from "../variables/colors.css";
+
+.rawHtml {
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+}
+
+.rawHtml strong {
+  font-family: 'ProximaNova-Bold';
+}
+
+.rawHtml ul {
+  list-style: disc;
+  color: font;
+  margin-left: 1em;
+  padding-left: 40px;
+}
+
+.rawHtml ul li {
+  line-height: 1.4em;
+}

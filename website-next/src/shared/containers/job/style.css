@@ -1,24 +1,18 @@
 @value tablet from "../../components/variables/breakpoints.css";
-@value black, red from "../../components/variables/colors.css";
+@value badgerWhite, badgerBlack from "../../../../../site/css/_colors.css";
+
+.background {
+  background-color: badgerWhite;
+}
 
 .noteTitle {
   composes: h2 from "../../components/typography/style.css";
   font-size: 1.333em !important;
 }
 
-.linkBackArrow {
-  composes: sketchArrowLeft from "../../components/icons/style.css";
-  color: red;
-}
-
-.externalIcon {
-  composes: sketchExternalLink from "../../components/icons/style.css";
-  color: red;
-  font-size: 14px;
-}
-
 .applyLink {
-  composes: aBold from '../../components/typography/style.css';
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+
   float: right;
   display: none;
 
@@ -27,9 +21,15 @@
   }
 }
 
+.sidebarApplyLink {
+  composes: smallButton from "../../../../../site/css/_links.css";
+}
+
 .linkBack {
+  composes: bodyLink from "../../../../../site/css/_links.css";
   display: block;
   margin-bottom: 25px;
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
 
   @media tablet {
     display: inline;
