@@ -6,7 +6,6 @@ import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
-import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 
 const TITLE_SUFFIX = 'Red Badger';
 
@@ -40,8 +39,6 @@ export default function routes(content) {
     homePage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
     notFoundPage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
     whatWeDoPage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
-    joinUs: ({stateNavigator}) => <L stateNavigator={stateNavigator}><JoinUsPage jobs={content.jobs} /></L>,
-    job: ({stateNavigator}) => <L stateNavigator={stateNavigator}>Not Implemented</L>,
     serverErrorPage: ({stateNavigator}) => <L><ServerErrorPage /></L>,
   };
 
