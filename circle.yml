@@ -8,11 +8,11 @@ dependencies:
   override:
     - npm i -g yarn
     - yarn
-    - cd website-next; yarn
 
 test:
   override:
-    - echo 1
+    - make lint
+    - make test
 
 deployment:
   staging-prod:
