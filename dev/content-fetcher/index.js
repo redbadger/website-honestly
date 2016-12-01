@@ -1,2 +1,2 @@
-require("babel-register");
-require("./fetcher");
+require('babel-register');
+require('./fetcher');

@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 const state = {
   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
 };
