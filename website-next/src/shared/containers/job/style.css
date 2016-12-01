@@ -1,0 +1,38 @@
+@value tablet from "../../components/variables/breakpoints.css";
+@value black, red from "../../components/variables/colors.css";
+
+.noteTitle {
+  composes: h2 from "../../components/typography/style.css";
+  font-size: 1.333em !important;
+}
+
+.linkBackArrow {
+  composes: sketchArrowLeft from "../../components/icons/style.css";
+  color: red;
+}
+
+.externalIcon {
+  composes: sketchExternalLink from "../../components/icons/style.css";
+  color: red;
+  font-size: 14px;
+}
+
+.applyLink {
+  composes: aBold from '../../components/typography/style.css';
+  float: right;
+  display: none;
+
+  @media tablet {
+    display: inline;
+  }
+}
+
+.linkBack {
+  display: block;
+  margin-bottom: 25px;
+
+  @media tablet {
+    display: inline;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,38 @@
+@value font from "../variables/colors.css";
+
+/*
+ * Note: These currently do not work 100% with post-css module values. It looks
+ * like it is in the pipeline but for now these values will be parsed to their
+ * first declared value. i.e. "CenturyGothic"
+ * (https://github.com/css-modules/postcss-modules-values/pull/23)
+ */
+
+@import url("//hello.myfonts.net/count/322627");
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('./322627_0_0.woff') format('woff'), url('./322627_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('./322627_1_0.woff') format('woff'), url('./322627_1_0.ttf') format('truetype');
+}
+
+@value default: "ProximaNova-Light", Helvetica, Arial, sans-serif;
+@value hero: "Sentinel A", "Sentinel B", Georgia, serif;
+
+.defaultFontSize {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.defaultFont {
+  font-family: default;
+  color: font;
+}
+
+.heroFont {
+  font-family: hero;
+  color: font;
+}

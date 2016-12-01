@@ -1,0 +1,7 @@
+.apply {
+  composes: craft paperTear from "../../components/utils/background.css";
+}
+
+.noWrap {
+  white-space: nowrap;
+}

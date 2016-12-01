@@ -1,0 +1,140 @@
+@value tablet from "../variables/breakpoints.css";
+@value mobile from "../variables/breakpoints.css";
+@value desktopM from "../variables/breakpoints.css";
+@value white, grey, midGrey, lightGrey, cyan, lightCyan, green, lightGreen from "../variables/colors.css";
+
+form {
+  margin-bottom: 0;
+}
+
+.footer {
+  composes: blackPaper from "../utils/background.css";
+  color: lightGrey;
+  padding: 1em 0 1.5em 0;
+
+  @media tablet {
+    padding: 1em 0 2.5em 0;
+  }
+}
+
+.address {
+  font-style: normal;
+  margin-top: 4px;
+  margin-bottom: 15px;
+
+  @media tablet {
+    margin-bottom: 0;
+  }
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.contactUsLink {
+  color: cyan;
+}
+
+.contactUsLink:hover {
+  color: lightCyan;
+}
+
+.contactUsIcon {
+  composes: sketchArrowRight from "../icons/style.css";
+  color: cyan;
+}
+
+.links {
+  margin: 0 0 15px -10px;
+  padding: 0;
+  list-style: none;
+
+  @media tablet {
+    margin: 0;
+  }
+}
+
+.links a {
+  white-space: nowrap;
+}
+
+.contactLink,
+.socialLink {
+  color: white;
+}
+
+.contactLink:hover {
+  color: lightCyan;
+}
+
+.socialLink:hover {
+  color: lightGreen;
+}
+
+.icon {
+  color: lightGreen;
+}
+
+.iconCyan {
+  color: cyan;
+}
+
+.newsletterHeading {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.inputContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.inputText,
+.inputSubmit {
+  margin: 0.5em 0;
+  padding: 0;
+  border: none;
+  float: left;
+  -webkit-appearance: none;
+  height: 30px;
+}
+
+.inputText {
+  width: 65%;
+  margin-right: 1%;
+  padding-left: 6px;
+}
+
+.inputSubmit {
+  max-width: 120px;
+  min-width: 80px;
+  width: 34%;
+  background-color: lightGreen;
+  color: white;
+}
+
+.inputSubmit:hover {
+  background-color: green;
+}
+
+@media desktopM {
+  .inputSubmit {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .inputText {
+    width: 100%;
+  }
+}
+
+@media mobile {
+  .inputText {
+    width: 65%;
+  }
+
+  .inputSubmit {
+    max-width: 120px;
+  }
+}

@@ -1,0 +1,21 @@
+@value mobileSMaxWidth: 570px;
+@value mobileS: (max-width: mobileSMaxWidth);
+
+@value mobileSMinWidth: 571px;
+@value mobileSM: (min-width: mobileSMinWidth);
+
+@value mobileMaxWidth: 767px;
+@value mobile: (max-width: mobileMaxWidth);
+
+@value mobileLandscape: (min-width: 400px);
+
+@value tabletMinWidth: 768px;
+@value tablet: (min-width: tabletMinWidth);
+
+@value desktopMaxWidth: 959px;
+@value desktopM: (max-width: desktopMaxWidth);
+
+@value desktopMinWidth: 960px;
+@value desktop: (min-width: desktopMinWidth);
+
+@value tablet-only: (min-width: tabletMinWidth) and (max-width: desktopMaxWidth)

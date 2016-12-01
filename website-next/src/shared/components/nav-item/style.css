@@ -1,0 +1,28 @@
+@value primary, white from "../variables/colors.css";
+
+.navItem {
+  display: inline-block;
+  position: relative;
+  padding: 0 2em;
+  line-height: 2.5;
+}
+
+.navItemLink {
+  text-decoration: none;
+  color: white;
+}
+
+.navItemLink:hover,
+.navItemLink:active,
+.navItemLink:focus {
+  color: primary;
+}
+
+.active {
+  position: absolute;
+  bottom: -6px;
+  height: 12px;
+  left: 15%;
+  right: 15%;
+  background-color: primary;
+}

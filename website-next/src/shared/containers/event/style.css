@@ -1,0 +1,96 @@
+@value mobile from "../../components/variables/breakpoints.css";
+@value red from "../../components/variables/colors.css";
+
+.eventBody a {
+  color: red;
+}
+
+.h1 {
+  composes: h1 from "../../components/typography/style.css";
+  text-align: center;
+}
+
+.eventsList {
+  font-size: 1em;
+}
+
+.eventItem {
+  position: relative;
+  list-style-type: none;
+}
+
+.eventTitleLink {
+  text-decoration: none;
+}
+
+.eventTitle {
+  composes: h2 from "../../components/typography/style.css";
+  font-size: 1.6em;
+  text-decoration: none;
+  display: inline;
+  margin: 0 0 20px 0;
+  color: red;
+}
+
+.arrow {
+  font-size: 1.2em;
+  color: black;
+}
+
+.fullDetailsLink {
+  composes: aBold from "../../components/typography/style.css";
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin-top: 0.8em;
+  position: relative;
+}
+
+.eventDescription {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.eventLinks {
+  composes: cf from "../../components/utils/layout.css";
+}
+
+.externalLinkIcon {
+  font-size: 1em;
+  color: red;
+  position: absolute;
+}
+
+.eventTags {
+  margin-top: 1.5em;
+}
+
+.mobileHorizontalLine {
+  display: none;
+  margin: 1.5em 0 0 0;
+}
+
+.moreEvents a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.moreEvents a:hover, .moreEvents a:focus {
+  color: red;
+}
+
+.arrowBack {
+  composes: sketchArrowLeft from "../../components/icons/style.css";
+  color: red;
+}
+
+@media mobile {
+  .wideHorizontalLine {
+    display: none;
+  }
+
+  .mobileHorizontalLine {
+    display: block;
+  }
+}

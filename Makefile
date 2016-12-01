@@ -52,7 +52,7 @@ build: dist/services.zip dist/dev-static/index.js dist/sw.js ## Compile project
 
 
 lint: ## Lint Javascript files
-	$(ESLINT) . --ext .js --ext .jsx --ignore-path .gitignore --cache
+	$(ESLINT) . --ext .js --ext .jsx --ignore-path .eslintignore --cache
 
 
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda

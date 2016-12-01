@@ -1,0 +1,15 @@
+app:
+  image: redbadger/website-next
+  ports:
+    - "8000:8000"
+  environment:
+    - WORKABLE_KEY
+    - NEWRELIC_LICENSE
+    - BADGER_BRAIN_HOST
+proxy:
+  image: redbadger/website-next-proxy
+  ports:
+    - "80:80"
+  environment:
+    - APP_HOST
+    - APP_PORT=8000

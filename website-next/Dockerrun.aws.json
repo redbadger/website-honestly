@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "redbadger/website-next:latest",
+    "Update": "true"
+  },
+  "Authentication": {
+    "Bucket": "website-next-staging",
+    "Key": "docker/.dockercfg"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8000"
+    }
+  ],
+  "Logging": "/var/log/"
+}
