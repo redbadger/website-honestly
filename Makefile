@@ -61,7 +61,7 @@ services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 
 publish-service-invoke: ## Invoke the publish service
 	$(LOAD_ENV) \
-	&& curl --fail $$PUBLISH_ENDPOINT
+	&& curl -XPOST --fail $$PUBLISH_ENDPOINT
 
 compress-assets: ## Compress assets. What did you expect? :)
 	find site -type f \
