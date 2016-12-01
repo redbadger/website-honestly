@@ -8,7 +8,8 @@ import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 
-const TITLE_SUFFIX = 'Red Badger';
+import JoinUsPage from '../../website-next/src/shared/containers/join-us';
+import JobPage from '../../website-next/src/shared/containers/job';
 
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
@@ -35,21 +36,27 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes(content) {
-  const componentMap = {
-    homePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
-    notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
-    whatWeDoPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
-    serverErrorPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><ServerErrorPage /></L>,
-    offlinePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><OfflinePage /></L>,
-  };
+const componentMap = {
+  homePage: HomePage,
+  whatWeDoPage: WhatWeDoPage,
+  joinUs: JoinUsPage,
+  job: JobPage,
+  notFoundPage: NotFoundPage,
+  serverErrorPage: ServerErrorPage,
+  offlinePage: OfflinePage,
+};
 
+export default function routes() {
   return prefixRoutes(routeDefinitions.map(
-    ({ title, key, route }) => ({
-      title: `${title} | ${TITLE_SUFFIX}`,
+    ({ title, key, route, stateToProps, gen }) => ({
+      title,
       key,
       route,
-      component: componentMap[key],
-    }))
-  );
+      stateToProps,
+      gen,
+      component: (routerProps, props) => {
+        const Component = componentMap[key];
+        return (<L {...routerProps}><Component {...props} /></L>);
+      },
+    })));
 }

@@ -1,3 +1,9 @@
+@value badgerWhite from "../../../../../site/css/_colors.css";
+
+.background {
+  background-color: badgerWhite;
+}
+
 .apply {
   composes: craft paperTear from "../../components/utils/background.css";
 }

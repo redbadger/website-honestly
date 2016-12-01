@@ -4,7 +4,7 @@ import { compileSite, compileRoutes } from '.';
 describe('site/compiler', () => {
   describe('compileSite', () => {
     it('renders all the pages of the site', () => {
-      const pages = compileSite({});
+      const pages = compileSite({ jobs: [], job: {} });
       expect(pages.length).to.be.above(0);
     });
   });
@@ -29,7 +29,7 @@ describe('site/compiler', () => {
         component: () => <B />,
       },
       {
-        title: 'About',
+        title: () => 'About',
         key: 'about',
         route: 'site/about',
         filePath: 'site/about/index.html',
