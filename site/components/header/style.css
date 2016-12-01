@@ -53,6 +53,7 @@
 
   composes: serif from "../../css/typography/_fonts.css";
   composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
   font-weight: bold;
 
   transition: left 0.3s;

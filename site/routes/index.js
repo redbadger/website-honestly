@@ -4,6 +4,7 @@ import { routeDefinitions } from './definitions';
 import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
+import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 
 const TITLE_SUFFIX = 'Red Badger';
@@ -38,6 +39,7 @@ export default function routes({ contactUsURL }) {
     homePage: () => <L><HomePage contactUsURL={contactUsURL} /></L>,
     notFoundPage: () => <L><NotFoundPage /></L>,
     whatWeDoPage: () => <L><WhatWeDoPage /></L>,
+    serverErrorPage: () => <L><ServerErrorPage /></L>,
   };
 
   return prefixRoutes(routeDefinitions.map(
