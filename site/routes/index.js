@@ -9,8 +9,6 @@ import WhatWeDoPage from '../pages/what-we-do';
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
 
-const TITLE_SUFFIX = 'Red Badger';
-
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
   return `${routePrefix}${route}`;
@@ -36,32 +34,6 @@ function prefixRoutes(rs) {
   });
 }
 
-const expand = (routeDefs, state) => {
-  const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
-    ...def,
-    routingKey: def.key,
-    title: def.title(def.stateToProps && def.stateToProps(state)),
-    props: def.stateToProps && def.stateToProps(state),
-  }));
-
-  const dynamicRoutes = routeDefs.filter(def => !!def.gen);
-
-  let i = 0;
-  const expanded = dynamicRoutes.map(def => {
-    return def.gen(state).map(slug => ({
-      ...def,
-      routingKey: (i += 1),
-      title: def.title(def.stateToProps(state, slug)),
-      route: def.route.replace('{slug}', slug),
-      props: def.stateToProps(state, slug),
-    }));
-  });
-
-  const flattened = expanded.reduce((flat, arr) => flat.concat(arr), []);
-
-  return staticRoutes.concat(flattened);
-};
-
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
@@ -71,17 +43,16 @@ const componentMap = {
   serverErrorPage: ServerErrorPage,
 };
 
-export default function routes(content) {
-  const expanded = expand(routeDefinitions, content);
-  return prefixRoutes(expanded.map(
-    ({ title, key, route, props, routingKey }) => ({
-      title: `${title} | ${TITLE_SUFFIX}`,
-      key: routingKey,
+export default function routes() {
+  return prefixRoutes(routeDefinitions.map(
+    ({ title, key, route, stateToProps }) => ({
+      title,
+      key,
       route,
-      component: routerProps => {
+      stateToProps,
+      component: (routerProps, props) => {
         const Component = componentMap[key];
         return (<L {...routerProps}><Component {...props} /></L>);
       },
-      props,
     })));
 }

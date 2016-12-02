@@ -7,16 +7,16 @@ import { cssPath, jsPath } from './asset-paths';
 
 const tracking = !!process.env.INSERT_TRACKING;
 
-export function compileRoutes(siteRoutes) {
+export function compileRoutes(siteRoutes, state) {
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
     new Navigation.HTML5HistoryManager()
   );
   return siteRoutes.map(route => {
-    const title = route.title;
-    const Component = route.component;
+    const props = route.stateToProps && route.stateToProps(state);
+    const title = route.title(props);
     const path = route.filePath;
-    const bodyContent = renderToString(<Component stateNavigator={stateNavigator} />);
+    const bodyContent = renderToString(route.component({ stateNavigator }, props));
     const body = layoutTemplate({
       title,
       tracking,
@@ -29,6 +29,6 @@ export function compileRoutes(siteRoutes) {
   });
 }
 
-export function compileSite(data) {
-  return compileRoutes(makeRoutes(data));
+export function compileSite(state) {
+  return compileRoutes(makeRoutes(), state);
 }

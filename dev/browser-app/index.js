@@ -13,7 +13,7 @@ const handleErrors = response => {
   return response;
 };
 
-fetch('/state.json').then(handleErrors).then(r => r.json()).then(data => {
-  const app = makeApp({ element, data });
+fetch('/state.json').then(handleErrors).then(r => r.json()).then(state => {
+  const app = makeApp({ element, state });
   app.start();
 });
