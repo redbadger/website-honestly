@@ -6,6 +6,7 @@ import styles from './style.css';
 export default class Layout extends React.Component {
   static propTypes = {
     children: PropTypes.element.isRequired,
+    stateNavigator: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   };
 
   static childContextTypes = {

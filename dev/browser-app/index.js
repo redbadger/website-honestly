@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 import { makeApp } from '../../site/client';
 
 // Hot reloading when state changes
-import _ from '../../assets/state.json'; // eslint-disable-line no-unused-vars, import/extensions
+import _ from '../../assets/state.json'; // eslint-disable-line no-unused-vars, import/extensions, import/no-unresolved
 
 const element = document.querySelector('.js-app');
 
