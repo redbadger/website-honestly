@@ -7,6 +7,7 @@ import NotFoundPage from '../pages/not-found';
 import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
+import JobPage from '../../website-next/src/shared/containers/job';
 
 const TITLE_SUFFIX = 'Red Badger';
 
@@ -38,11 +39,11 @@ function prefixRoutes(rs) {
 export default function routes(content) {
   const componentMap = {
     homePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
-    notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
     whatWeDoPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
+    joinUs: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><JoinUsPage jobs={content.jobs} /></L>,
+    job: ({ stateNavigator, slug }) => <L stateNavigator={stateNavigator}><JobPage job={content.job[slug]} /></L>,
+    notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
     serverErrorPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><ServerErrorPage /></L>,
-    joinUs: ({stateNavigator}) => <L stateNavigator={stateNavigator}><JoinUsPage jobs={content.jobs} /></L>,
-    job: ({stateNavigator}) => <L stateNavigator={stateNavigator}>Not Implemented</L>,
   };
 
   return prefixRoutes(routeDefinitions.map(

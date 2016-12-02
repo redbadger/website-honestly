@@ -16,10 +16,10 @@ export function makeApp({ element, data, history }) {
   }
 
   routes.forEach(route => {
-    const render = () => {
+    const render = params => {
       window.scrollTo(0, 0);
       const Component = route.component;
-      ReactDOM.render(<Component stateNavigator={stateNavigator} />, element);
+      ReactDOM.render(<Component stateNavigator={stateNavigator} {...params} />, element);
     };
     stateNavigator.states[route.key].navigated = render;
   });

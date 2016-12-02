@@ -1,24 +1,20 @@
 /* eslint-disable max-len */
-
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import HtmlParser from '../../components/html-parser';
 import { Grid, Cell } from '../../components/grid';
 import Container from '../../components/container';
 import Section from '../../components/section';
 import Note from '../../components/note';
-import HR from '../../components/hr';
+import Hr from '../../components/hr';
 import styles from './style.css';
 import typography from '../../components/typography/style.css';
-import { Link } from 'react-router';
-import { filter, flow, head, property } from 'lodash/fp';
-import isEqual from 'lodash/isEqual'; // lodash fp isEqual is broken in 4.0.0
+import Link from '../../../../../site/components/link';
 import fetch from '../../util/fetch-proxy';
 import { fetchJob } from '../../actions/jobs/job';
 import classnames from 'classnames';
 import Helmet from 'react-helmet';
 
-export class Job extends Component {
+export default class Job extends Component {
   static propTypes = {
     job: React.PropTypes.shape({
       title: React.PropTypes.string,
@@ -38,7 +34,7 @@ export class Job extends Component {
             <Cell size={8}>
               <h2 className={typography.h2}>{this.props.job.title}</h2>
               <HtmlParser>{this.props.job.fullDescription}</HtmlParser>
-              <HR color="grey" />
+              <Hr color="grey" />
               <Link className={classnames(typography.aBold, styles.linkBack)} to="/about-us/join-us"><span className={styles.linkBackArrow}></span>See all vacancies</Link>
               <a className={styles.applyLink} href={this.props.job.applicationUrl} id="e2eApply" target="_blank">Apply here<span className={styles.externalIcon}></span></a>
             </Cell>
@@ -59,24 +55,3 @@ export class Job extends Component {
     );
   }
 }
-
-// This can be made much nicer when lodash 4.0.1 is released
-function firstWithSlug(slug) {
-  return flow(
-    filter(job => isEqual(slug, property('slug')(job))),
-    head,
-  );
-}
-
-// I think connect should be moved to make this component just care about
-// getting a job. React router should be doing a level of this so that
-// we can send a 404 when the job does not exist.
-function mapStateToProps(state, { routeParams }) {
-  return {
-    job: firstWithSlug(routeParams.id)(state.jobs),
-  };
-}
-
-export default connect(
-  mapStateToProps
-)(Job);
