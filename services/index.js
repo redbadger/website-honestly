@@ -4,6 +4,10 @@ import doSignUp from './mailchimp/sign-up/index';
 import doUpdateUser from './mailchimp/update-user/index';
 
 export function publish(event, context, cb) {
+  if (event.query && event.query.auth_token !== process.env.PRIVATE_LAMBDA_API_KEY) {
+    return cb(new Error('[403] Forbidden'));
+  }
+
   try {
     doPublish(cb);
   } catch (e) {
