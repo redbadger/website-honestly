@@ -36,22 +36,52 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes(content) {
-  const componentMap = {
-    homePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
-    whatWeDoPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
-    joinUs: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><JoinUsPage jobs={content.jobs} /></L>,
-    job: ({ stateNavigator, slug }) => <L stateNavigator={stateNavigator}><JobPage job={content.job[slug]} /></L>,
-    notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
-    serverErrorPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><ServerErrorPage /></L>,
-  };
+const expand = (routeDefs, state) => {
+  const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
+    ...def,
+    routingKey: def.key,
+    title: def.title(def.stateToProps && def.stateToProps(state)),
+    props: def.stateToProps && def.stateToProps(state),
+  }));
 
-  return prefixRoutes(routeDefinitions.map(
-    ({ title, key, route }) => ({
+  const dynamicRoutes = routeDefs.filter(def => !!def.gen);
+
+  let i = 0;
+  const expanded = dynamicRoutes.map(def => {
+    return def.gen(state).map(slug => ({
+      ...def,
+      routingKey: (i += 1),
+      title: def.title(def.stateToProps(state, slug)),
+      route: def.route.replace('{slug}', slug),
+      props: def.stateToProps(state, slug),
+    }));
+  });
+
+  const flattened = expanded.reduce((flat, arr) => flat.concat(arr), []);
+
+  return staticRoutes.concat(flattened);
+};
+
+const componentMap = {
+  homePage: HomePage,
+  whatWeDoPage: WhatWeDoPage,
+  joinUs: JoinUsPage,
+  job: JobPage,
+  notFoundPage: NotFoundPage,
+  serverErrorPage: ServerErrorPage,
+};
+
+export default function routes(content) {
+  const expanded = expand(routeDefinitions, content);
+  return prefixRoutes(expanded.map(
+    ({ title, key, route, props, routingKey }) => ({
       title: `${title} | ${TITLE_SUFFIX}`,
-      key,
+      key: routingKey,
       route,
-      component: componentMap[key],
-    }))
-  );
+      component: routerProps => {
+        const Component = componentMap[key];
+        return (<L {...routerProps}><Component {...props} /></L>);
+      },
+      props,
+    })));
 }
