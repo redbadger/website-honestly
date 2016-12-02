@@ -34,12 +34,12 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes({ contactUsURL }) {
+export default function routes(content) {
   const componentMap = {
-    homePage: () => <L><HomePage contactUsURL={contactUsURL} /></L>,
-    notFoundPage: () => <L><NotFoundPage /></L>,
-    whatWeDoPage: () => <L><WhatWeDoPage /></L>,
-    serverErrorPage: () => <L><ServerErrorPage /></L>,
+    homePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
+    notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
+    whatWeDoPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
+    serverErrorPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><ServerErrorPage /></L>,
   };
 
   return prefixRoutes(routeDefinitions.map(

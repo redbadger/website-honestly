@@ -2,6 +2,8 @@ const state = {
   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
 };
 
-module.exports = function getSiteState() {
+const getSiteState = () => {
   return new Promise(resolve => resolve(state));
 };
+
+export default getSiteState;

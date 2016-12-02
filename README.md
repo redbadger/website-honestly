@@ -16,6 +16,7 @@ Red Badger Website Episode 6: Return of the Jedi.
 
 ```sh
 make                   # Print the help
+make fetch             # Fetch and stash dynamic data for development
 make dev               # Run the dev server
 make clean dev-static  # Compile the site locally
 
@@ -75,6 +76,10 @@ infrastructure.
 
 The `dev/` directory contains two entrypoints to the application. The first is
 `browser-app/`, which is the site mounted as a regular React app in the browser.
+
+Test data is loaded from `assets/state.json` during development, and can be
+re-fetched by running `make fetch`.
+
 When `make dev` is run this app will be served with `webpack-dev-server`,
 allowing for a fast feedback loop development. This is likely to be where you
 will spend most your time while working on this application.

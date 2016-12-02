@@ -2,7 +2,6 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import Navigation from 'navigation';
 import makeRoutes from '../routes';
-import { registerStateNavigator } from '../../site/components/link';
 import layoutTemplate from '../index.ejs';
 import { cssPath, jsPath } from './asset-paths';
 
@@ -13,12 +12,11 @@ export function compileRoutes(siteRoutes) {
     siteRoutes,
     new Navigation.HTML5HistoryManager()
   );
-  registerStateNavigator(stateNavigator);
   return siteRoutes.map(route => {
     const title = route.title;
     const Component = route.component;
     const path = route.filePath;
-    const bodyContent = renderToString(<Component />);
+    const bodyContent = renderToString(<Component stateNavigator={stateNavigator} />);
     const body = layoutTemplate({
       title,
       tracking,
