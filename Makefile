@@ -98,6 +98,7 @@ dist/services.zip: dist/services
 
 dist/services:
 	export NODE_ENV=production \
+	export BABEL_ENV=node && \
 	&& $(LOAD_ENV) \
 	&& $(WEBPACK) --config webpack.lambda.config.js
 

@@ -8,7 +8,7 @@ export default class BlogFetcher {
   }
 
   async getPosts(params = {}) {
-    const url = this.getUrl(params);
+    const url = BlogFetcher.getUrl(params);
     const response = await this.fetch(url);
     const json = await response.json();
     const posts = json.items;
@@ -22,8 +22,8 @@ export default class BlogFetcher {
     return posts;
   }
 
-  static getUrl(params) {
-    return 'https://blog.red-badger.com/blog/?&format=json&' + BlogFetcher.getQueryString(params);
+  getUrl(params) {
+    return `https://blog.red-badger.com/blog/?&format=json&${this.getQueryString(params)}`;
   }
 
   static getQueryString(params) {

@@ -5,7 +5,8 @@
   ],
   "plugins": [
     "transform-object-assign",
-    "transform-class-properties"
+    "transform-class-properties",
+    "babel-plugin-transform-object-rest-spread"
   ],
   "env": {
     "node": {
@@ -14,8 +15,7 @@
           "polyfill": true,
           "regenerator": true
         }],
-        "transform-async-to-generator",
-        "babel-plugin-transform-object-rest-spread"
+        "transform-async-to-generator"
       ]
     }
   }
