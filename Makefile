@@ -33,7 +33,9 @@ dev: badger dist/sw.js ## Run the frontend dev server
 sw: dist/sw.js  ## Compile service worker
 
 fetch:
-	$(LOAD_ENV) && node dev/content-fetcher
+	export BABEL_ENV=node && \
+	$(LOAD_ENV) && \
+	node dev/content-fetcher
 
 dev-static: dist/static-site dist/dev-static/index.js dist/sw.js ## Compile the site to HTML locally and serve
 	ln -fs ../assets-honestly dist/static-site/assets-honestly
