@@ -6,7 +6,7 @@ const state = {
 
 const getSiteState = async () => ({
   featured_blog_posts: await getFeaturedPosts(),
-  ...state
+  ...state,
 });
 
 export default getSiteState;

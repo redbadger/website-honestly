@@ -1,5 +1,15 @@
 import fetch from 'node-fetch';
 
+const getQueryString = params => {
+  return Object.keys(params).map(
+    k => `${encodeURIComponent(k)}=${encodeURIComponent(params[k])}`
+  ).join('&');
+};
+
+const getUrl = params => {
+  return `https://blog.red-badger.com/blog/?&format=json&${getQueryString(params)}`;
+};
+
 const getPosts = async (params = {}) => {
   const url = getUrl(params);
   const response = await fetch(url);
@@ -13,16 +23,6 @@ const getPosts = async (params = {}) => {
     return posts.concat(await getPosts(newParams));
   }
   return posts;
-}
-
-const getUrl = params => {
-  return `https://blog.red-badger.com/blog/?&format=json&${getQueryString(params)}`;
-}
-
-const getQueryString = params => {
-  return Object.keys(params).map(
-    k => `${encodeURIComponent(k)}=${encodeURIComponent(params[k])}`
-  ).join('&');
-}
+};
 
 export const getFeaturedPosts = () => getPosts({ tag: 'featured' });
