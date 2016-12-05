@@ -41,7 +41,7 @@ export default function routes(content) {
     notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
     whatWeDoPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
     serverErrorPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><ServerErrorPage /></L>,
-    offlinePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><OfflinePage /></L>
+    offlinePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><OfflinePage /></L>,
   };
 
   return prefixRoutes(routeDefinitions.map(

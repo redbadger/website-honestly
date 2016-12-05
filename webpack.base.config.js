@@ -40,7 +40,7 @@ const baseConfig = {
       },
       {
         test: /\.svg$/,
-        loader: 'svg-inline'
+        loader: 'svg-inline',
       },
       {
         test: /\.ejs/,
