@@ -1,34 +1,28 @@
-export default class BlogFetcher {
-  constructor(fetch) {
-    this.fetch = fetch;
-  }
+import fetch from 'node-fetch';
 
-  getFeaturedPosts() {
-    return this.getPosts({ tag: 'featured' });
-  }
+const getQueryString = params => {
+  return Object.keys(params).map(
+    k => `${encodeURIComponent(k)}=${encodeURIComponent(params[k])}`
+  ).join('&');
+};
 
-  async getPosts(params = {}) {
-    const url = BlogFetcher.getUrl(params);
-    const response = await this.fetch(url);
-    const json = await response.json();
-    const posts = json.items;
-    if (json.pagination && json.pagination.nextPage) {
-      const newParams = {
-        ...params,
-        offset: json.pagination.nextPageOffset,
-      };
-      return posts.concat(await this.getPosts(newParams));
-    }
-    return posts;
-  }
+const getUrl = params => {
+  return `https://blog.red-badger.com/blog/?&format=json&${getQueryString(params)}`;
+};
 
-  getUrl(params) {
-    return `https://blog.red-badger.com/blog/?&format=json&${this.getQueryString(params)}`;
+const getPosts = async (params = {}) => {
+  const url = getUrl(params);
+  const response = await fetch(url);
+  const json = await response.json();
+  const posts = json.items;
+  if (json.pagination && json.pagination.nextPage) {
+    const newParams = {
+      ...params,
+      offset: json.pagination.nextPageOffset,
+    };
+    return posts.concat(await getPosts(newParams));
   }
+  return posts;
+};
 
-  static getQueryString(params) {
-    return Object.keys(params).map(
-      k => `${encodeURIComponent(k)}=${encodeURIComponent(params[k])}`
-    ).join('&');
-  }
-}
+export const getFeaturedPosts = () => getPosts({ tag: 'featured' });
