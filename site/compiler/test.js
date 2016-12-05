@@ -4,7 +4,7 @@ import { compileSite, compileRoutes } from '.';
 describe('site/compiler', () => {
   describe('compileSite', () => {
     it('renders all the pages of the site', () => {
-      const pages = compileSite({});
+      const pages = compileSite({}, { jobs: [], job: {} });
       expect(pages.length).to.be.above(0);
     });
   });
@@ -15,21 +15,21 @@ describe('site/compiler', () => {
     const C = () => <div>C</div>;
     const routes = [
       {
-        title: 'Home',
+        title: () => 'Home',
         key: 'home',
         route: '',
         filePath: 'index.html',
         component: () => <A />,
       },
       {
-        title: 'Not Found',
+        title: () => 'Not Found',
         key: 'notFound',
         route: '404',
         filePath: '404/index.html',
         component: () => <B />,
       },
       {
-        title: 'About',
+        title: () => 'About',
         key: 'about',
         route: 'site/about',
         filePath: 'site/about/index.html',

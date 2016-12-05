@@ -1,4 +1,3 @@
-import React from 'react';
 import { renderToString } from 'react-dom/server';
 import Navigation from 'navigation';
 import makeRoutes from '../routes';
@@ -7,16 +6,43 @@ import { cssPath, jsPath } from './asset-paths';
 
 const tracking = !!process.env.INSERT_TRACKING;
 
+const TITLE_SUFFIX = 'Red Badger';
+
+const expand = (routeDefs, state) => {
+  const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
+    ...def,
+    title: def.title(def.stateToProps && def.stateToProps(state)),
+    props: def.stateToProps && def.stateToProps(state),
+  }));
+
+  const dynamicRoutes = routeDefs.filter(def => !!def.gen).map(def => {
+    return def.gen(state).map(slug => ({
+      ...def,
+      slug,
+      title: def.title(def.stateToProps(state, slug)),
+      route: def.route.replace('{slug}', slug),
+      filePath: def.filePath.replace('{slug}', slug),
+      props: def.stateToProps(state, slug),
+    }));
+  });
+
+  const flattened = dynamicRoutes.reduce((flat, arr) => flat.concat(arr), []);
+
+  return staticRoutes.concat(flattened);
+};
+
 export function compileRoutes(siteRoutes, state) {
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
     new Navigation.HTML5HistoryManager()
   );
-  return siteRoutes.map(route => {
-    const props = route.stateToProps && route.stateToProps(state);
-    const title = route.title(props);
+
+  const compile = route => {
     const path = route.filePath;
-    const bodyContent = renderToString(route.component({ stateNavigator }, props));
+    const props = route.stateToProps && route.stateToProps(state, route.slug);
+
+    const title = `${route.title} | ${TITLE_SUFFIX}`;
+    const bodyContent = renderToString(route.component({ stateNavigator, title }, props));
     const body = layoutTemplate({
       title,
       tracking,
@@ -26,7 +52,9 @@ export function compileRoutes(siteRoutes, state) {
     });
 
     return { body, path };
-  });
+  };
+
+  return expand(siteRoutes, state).map(compile);
 }
 
 export function compileSite(state) {

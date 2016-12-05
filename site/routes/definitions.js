@@ -30,6 +30,6 @@ export const routeDefinitions = [
     key: 'job',
     route: 'about-us/join-us/{slug}',
     stateToProps: (state, slug) => ({ job: state.job[slug] }),
-    gen: state => Object.keys(state.job),
+    gen: state => Object.keys(state.job || {}),
   },
 ];

@@ -45,11 +45,12 @@ const componentMap = {
 
 export default function routes() {
   return prefixRoutes(routeDefinitions.map(
-    ({ title, key, route, stateToProps }) => ({
+    ({ title, key, route, stateToProps, gen }) => ({
       title,
       key,
       route,
       stateToProps,
+      gen,
       component: (routerProps, props) => {
         const Component = componentMap[key];
         return (<L {...routerProps}><Component {...props} /></L>);
