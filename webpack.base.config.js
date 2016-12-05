@@ -30,13 +30,17 @@ const baseConfig = {
         loader: 'json-loader',
       },
       {
-        test: /\.(png|jpe?g|eot|ttf|woff|woff2|svg)$/,
+        test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/,
         exclude: [/dist\//, /node_modules/],
         loader: 'file-loader',
         query: {
           name: 'assets-honestly/[name]-[hash:base64:5].[ext]',
           publicPath,
         },
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline'
       },
       {
         test: /\.ejs/,

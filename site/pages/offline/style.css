@@ -1,5 +1,11 @@
 @value badgerBlack, badgerWhite from "../../css/_colors.css";
 @value fontM, fontM2, fontXS, serif, sansSerif from "../../css/typography/_fonts.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.container {
+  margin: 0 auto 40px auto;
+  max-width: 710px;
+}
 
 .notification {
   background-color: badgerBlack;
@@ -18,13 +24,15 @@
 }
 
 .title {
+  color: badgerBlack;
   composes: fontM;
   composes: serif;
   margin: 40px 20px 30px 20px;
 }
 
 .subtitle {
-  composes: fontM2;
+  color: badgerBlack;
+  font-size: 24px;
   composes: serif;
   margin: 30px 20px 10px 20px;
 }
@@ -35,6 +43,7 @@
 }
 
 .highlightParagraph {
+  color: badgerBlack;
   composes: fontXS;
   composes: serif;
   font-weight: bold;
@@ -42,6 +51,7 @@
 }
 
 .paragraph {
+  color: badgerBlack;
   composes: fontXS;
   composes: sansSerif;
   margin: 10px 20px;
@@ -52,7 +62,30 @@
 }
 
 .list {
+  color: badgerBlack;
+  composes: fontXS;
+  composes: sansSerif;
+  margin: 20px;
+  padding-left: 20px;
   list-style-type: disc;
   list-style-position: outside;
-  margin-left: 20px;
+}
+
+.image {
+  display: block;
+  margin: 20px auto 30px auto;
+  max-width: 267px;
+  width: 80%;
+}
+
+.clear {
+  clear: both;
+}
+
+@media mediumScreen {
+  .image {
+    display: inline-block;
+    float: right;
+    margin: -.9em 0 20px 20px;
+  }
 }

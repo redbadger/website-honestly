@@ -22,6 +22,6 @@ export const routeDefinitions = [
   {
     title: 'Lost connection',
     key: 'offlinePage',
-    route: 'offline'
-  }
+    route: 'offline',
+  },
 ];
