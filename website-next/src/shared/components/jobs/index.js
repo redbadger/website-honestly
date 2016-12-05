@@ -17,7 +17,7 @@ export default class Jobs extends Component {
   render() {
     const listings = this.props.jobs.map((job, index) => (
       <Note key={index}>
-        <Link className={styles.title} to='job' navigationData={{slug: job.slug}}>
+        <Link className={styles.title} to='job' navigationData={{ slug: job.slug }}>
           {job.title}
         </Link>
         <HtmlParser>{job.description}</HtmlParser>

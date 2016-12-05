@@ -28,7 +28,7 @@ export const routeDefinitions = [
   {
     title: job => job.title,
     key: 'job',
-    route: 'about-us/join-us/{slug}',
+    route: 'about-us/join-use/{slug}',
     stateToProps: (state, slug) => ({ job: state.job[slug] }),
     gen: state => Object.keys(state.job || {}),
   },
