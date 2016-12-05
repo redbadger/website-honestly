@@ -10,8 +10,8 @@ const blogFetcher = new BlogFetcher(fetch);
 
 const getSiteState = () => {
   return Promise.props({
-        featured_blog_posts: blogFetcher.getFeaturedPosts()
-      }).then((fetched) => ({ ...fetched, ...state }));
+    featured_blog_posts: blogFetcher.getFeaturedPosts(),
+  }).then(fetched => ({ ...fetched, ...state }));
 };
 
 export default getSiteState;
