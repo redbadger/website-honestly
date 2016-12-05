@@ -10,7 +10,7 @@ const getPosts = async (params = {}) => {
       ...params,
       offset: json.pagination.nextPageOffset,
     };
-    return posts.concat(await this.getPosts(newParams));
+    return posts.concat(await getPosts(newParams));
   }
   return posts;
 }
