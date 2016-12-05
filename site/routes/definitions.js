@@ -1,26 +1,26 @@
 export const routeDefinitions = [
   {
-    title: () => 'Home',
+    title: 'Home',
     key: 'homePage',
     route: '',
   },
   {
-    title: () => 'Not found',
+    title: 'Not found',
     key: 'notFoundPage',
     route: '404',
   },
   {
-    title: () => 'Server error',
+    title: 'Server error',
     key: 'serverErrorPage',
     route: '50x',
   },
   {
-    title: () => 'What we do',
+    title: 'What we do',
     key: 'whatWeDoPage',
     route: 'what-we-do',
   },
   {
-    title: () => 'Join us',
+    title: 'Join us',
     key: 'joinUs',
     route: 'about-us/join-us',
     stateToProps: ({ jobs }) => ({ jobs }),

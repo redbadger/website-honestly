@@ -8,10 +8,18 @@ const tracking = !!process.env.INSERT_TRACKING;
 
 const TITLE_SUFFIX = 'Red Badger';
 
+const titleFor = (def, props) => {
+  if (typeof def.title === 'function') {
+    return def.title(props);
+  }
+
+  return def.title;
+};
+
 const expand = (routeDefs, state) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
-    title: def.title(def.stateToProps && def.stateToProps(state)),
+    title: titleFor(def, def.stateToProps && def.stateToProps(state)),
     props: def.stateToProps && def.stateToProps(state),
   }));
 
@@ -19,7 +27,7 @@ const expand = (routeDefs, state) => {
     return def.gen(state).map(slug => ({
       ...def,
       slug,
-      title: def.title(def.stateToProps(state, slug)),
+      title: titleFor(def, def.stateToProps && def.stateToProps(state, slug)),
       route: def.route.replace('{slug}', slug),
       filePath: def.filePath.replace('{slug}', slug),
       props: def.stateToProps(state, slug),
