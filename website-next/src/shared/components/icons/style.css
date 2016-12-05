@@ -3,8 +3,7 @@
   src: url('./icons.eot');
   src: url('./icons.eot?#iefix') format('embedded-Opentype'),
        url('./icons.woff') format('woff'),
-       url('./icons.ttf') format('truetype'),
-       url('./icons.svg#icons') format('svg');
+       url('./icons.ttf') format('truetype');
 }
 
 .designBranding,

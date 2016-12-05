@@ -9,10 +9,7 @@ import Hr from '../../components/hr';
 import styles from './style.css';
 import typography from '../../components/typography/style.css';
 import Link from '../../../../../site/components/link';
-import fetch from '../../util/fetch-proxy';
-import { fetchJob } from '../../actions/jobs/job';
 import classnames from 'classnames';
-import Helmet from 'react-helmet';
 
 export default class Job extends Component {
   static propTypes = {
@@ -23,12 +20,9 @@ export default class Job extends Component {
     }),
   };
 
-  static fetchData = fetchJob(fetch());
-
   render() {
     return (
       <Section>
-        <Helmet title={`${this.props.job.title} | Red Badger`} />
         <Container>
           <Grid>
             <Cell size={8}>
@@ -45,7 +39,7 @@ export default class Job extends Component {
                   {"If you'd like to know more or you want to apply please get in touch with your CV, Stackoverflow profile, Github, code, portfolio and anything else you think we might be interested in."}
                 </p>
                 <p>
-                  <a className={typography.aBold} href={this.props.job.applicationUrl} target="_blank">Apply here <span className={styles.externalIcon}></span></a>
+                  <a className={classnames(typography.aBold, styles.sidebarApplyLink)} href={this.props.job.applicationUrl} target="_blank">Apply here <span className={styles.externalIcon}></span></a>
                 </p>
               </Note>
             </Cell>

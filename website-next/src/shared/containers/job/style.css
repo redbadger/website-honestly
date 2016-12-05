@@ -18,7 +18,8 @@
 }
 
 .applyLink {
-  composes: aBold from '../../components/typography/style.css';
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+
   float: right;
   display: none;
 
@@ -27,12 +28,26 @@
   }
 }
 
+.sidebarApplyLink {
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  color: black;
+}
+
 .linkBack {
   display: block;
   margin-bottom: 25px;
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
 
   @media tablet {
     display: inline;
     margin-bottom: 0;
   }
+}
+
+ul {
+  list-style: disc;
+}
+
+strong {
+  font-family: 'ProximaNova-Bold', sans-serif;
 }

@@ -34,7 +34,7 @@ const baseConfig = {
         exclude: [/dist\//, /node_modules/],
         loader: 'file-loader',
         query: {
-          name: 'assets-honestly/[name]-[hash:base64:5].[ext]',
+          name: '[name].[ext]',
           publicPath,
         },
       },
@@ -69,6 +69,7 @@ const baseConfig = {
       { from: 'assets/state.json', to: 'state.json' },
       { from: 'assets/txt', to: 'txt/' },
       { from: 'assets/fonts', to: 'assets-honestly/' },
+      { from: 'website-next/src/shared/components/icons', to: 'assets-honestly/' },
     ]),
   ],
 };
