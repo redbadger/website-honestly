@@ -1,15 +1,19 @@
 /* disable eslint */
 
 import { routeDefinitions } from './routes/definitions';
-
+import manifest from '../dist/manifest';
 
 const CACHE_NAME = 'v1';
+const OFFLINE_URL = 'offline';
+const OFFLINE_ASSETS = [
+  manifest['assets-honestly/server-worker-diagram@3x.png'],
+]; // Cache some assets
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       const routesToCache = routeDefinitions.map(def => def.route);
-      return cache.addAll(routesToCache);
+      return cache.addAll(routesToCache.concat(OFFLINE_ASSETS));
     })
   );
 });
@@ -39,12 +43,17 @@ self.addEventListener('fetch', event => {
 
         return res;
       }).catch(() => {
+        // This ONLY happens when fetch() throws an exception, so it will NOT
+        // BE TRIGGERED by 4xx/5xx errors, only by things like disconnects.
         return caches.match(event.request)
           .then(response => {
             // Cache hit - return response
             if (response) {
               return response;
             }
+
+            // No cache available, return offline page
+            return caches.match(OFFLINE_URL);
           });
       })
   );
