@@ -19,4 +19,9 @@ export const routeDefinitions = [
     key: 'whatWeDoPage',
     route: 'what-we-do',
   },
+  {
+    title: 'Lost connection',
+    key: 'offlinePage',
+    route: 'offline'
+  }
 ];

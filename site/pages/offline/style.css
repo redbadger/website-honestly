@@ -1,0 +1,58 @@
+@value badgerBlack, badgerWhite from "../../css/_colors.css";
+@value fontM, fontM2, fontXS, serif, sansSerif from "../../css/typography/_fonts.css";
+
+.notification {
+  background-color: badgerBlack;
+  color: badgerWhite;
+  padding: 20px;
+}
+
+.notifyHeader {
+  composes: fontM2;
+  composes: serif;
+}
+
+.notifyBody {
+  composes: fontXS;
+  composes: sansSerif;
+}
+
+.title {
+  composes: fontM;
+  composes: serif;
+  margin: 40px 20px 30px 20px;
+}
+
+.subtitle {
+  composes: fontM2;
+  composes: serif;
+  margin: 30px 20px 10px 20px;
+}
+
+.link {
+  composes: redUnderlineLink from "../../css/_links.css";
+  color: badgerBlack;
+}
+
+.highlightParagraph {
+  composes: fontXS;
+  composes: serif;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.paragraph {
+  composes: fontXS;
+  composes: sansSerif;
+  margin: 10px 20px;
+}
+
+.paragraph + .paragraph {
+  margin-top: 20px;
+}
+
+.list {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 20px;
+}
