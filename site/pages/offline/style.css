@@ -1,5 +1,5 @@
 @value badgerBlack, badgerWhite from "../../css/_colors.css";
-@value fontM, fontM2, fontXS, serif, sansSerif from "../../css/typography/_fonts.css";
+@value fontS2, fontM, fontM2, fontXS, serif, sansSerif from "../../css/typography/_fonts.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .container {
@@ -14,7 +14,7 @@
 }
 
 .notifyHeader {
-  composes: fontM2;
+  composes: fontS2;
   composes: serif;
 }
 
@@ -61,6 +61,11 @@
   margin-top: 20px;
 }
 
+.author {
+  composes: paragraph;
+  font-weight: bolder;
+}
+
 .list {
   color: badgerBlack;
   composes: fontXS;
@@ -76,6 +81,12 @@
   margin: 20px auto 30px auto;
   max-width: 267px;
   width: 80%;
+}
+
+.smiley svg {
+  display: inline;
+  height: 1em;
+  width: 1em;
 }
 
 .clear {

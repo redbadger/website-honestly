@@ -5,12 +5,13 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 import Diagram from './server-worker-diagram.svg';
+import Smiley from './smiley-crying.svg';
 
 export default function OfflinePage() {
   return (
     <div>
       <div className={styles.notification}>
-        <h3 className={styles.notifyHeader}>No internet connection</h3>
+        <h3 className={styles.notifyHeader}>No internet connection <InlineSVG src={Smiley} className={styles.smiley} /></h3>
         <p className={styles.notifyBody}>
           This page isn’t available offline. But here’s something to read in the meantime – it happens to be about offline technology.
         </p>
@@ -91,6 +92,9 @@ export default function OfflinePage() {
         </p>
         <p className={styles.paragraph}>
           2016 is definitely bringing a lot of exciting new features to web development and we’ll get our toolkit buffed up quite a lot – by streams, Houdini, HTTP2, and many more technologies. It’s definitely bad news to those who already find JavaScript development too complex – but it’s really exciting for us who love to learn and explore new possibilities.
+        </p>
+        <p className={styles.author}>
+          Written by Anna Doubkova
         </p>
       </div>
     </div>
