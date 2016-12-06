@@ -3,7 +3,7 @@
 
 import React from 'react';
 import styles from './style.css';
-import image from './png/server-worker-diagram@3x.png';
+import Diagram from './server-worker-diagram';
 
 export default function OfflinePage() {
   return (
@@ -50,7 +50,7 @@ export default function OfflinePage() {
         </p>
         <h2 className={styles.subtitle}>Total recall – or the new caching</h2>
         <p className={styles.paragraph}>
-          <img src={image} className={styles.image} alt="A diagram depicting how a service worker serves offline content when the user loses connection" />
+          <Diagram />
           Let me focus on the point that will make the biggest difference - using web applications offline.
           As much as every point in the list above is important, using our apps whenever and wherever means a huge difference in the way we perceive the web.
         </p>

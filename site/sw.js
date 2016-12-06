@@ -1,19 +1,15 @@
 /* disable eslint */
 
 import { routeDefinitions } from './routes/definitions';
-import manifest from '../dist/manifest';
 
 const CACHE_NAME = 'v1';
 const OFFLINE_URL = 'offline';
-const OFFLINE_ASSETS = [
-  manifest['assets-honestly/server-worker-diagram@3x.png'],
-]; // Cache some assets
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       const routesToCache = routeDefinitions.map(def => def.route);
-      return cache.addAll(routesToCache.concat(OFFLINE_ASSETS));
+      return cache.addAll(routesToCache);
     })
   );
 });

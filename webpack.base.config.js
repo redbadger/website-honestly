@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.txt';
@@ -56,7 +55,6 @@ const baseConfig = {
   },
   devtool: 'source-map',
   plugins: [
-    new ManifestPlugin(),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),

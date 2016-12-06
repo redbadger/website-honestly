@@ -71,7 +71,7 @@
   list-style-position: outside;
 }
 
-.image {
+.diagram {
   display: block;
   margin: 20px auto 30px auto;
   max-width: 267px;
@@ -83,7 +83,7 @@
 }
 
 @media mediumScreen {
-  .image {
+  .diagram {
     display: inline-block;
     float: right;
     margin: -.9em 0 20px 20px;
