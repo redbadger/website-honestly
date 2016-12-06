@@ -21,7 +21,7 @@ const titleFor = (def, props) => {
   Expanded: /, /about-us/join-us/software-engineer etc.
 */
 
-const expand = (routeDefs, state) => {
+export const expandRoutes = (routeDefs, state) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
     title: titleFor(def, def.stateToProps && def.stateToProps(state)),
@@ -35,7 +35,7 @@ const expand = (routeDefs, state) => {
       title: titleFor(def, def.stateToProps && def.stateToProps(state, slug)),
       route: def.route.replace('{slug}', slug),
       filePath: def.filePath.replace('{slug}', slug),
-      props: def.stateToProps(state, slug),
+      props: def.stateToProps && def.stateToProps(state, slug),
     }));
   });
 
@@ -71,7 +71,7 @@ export function compileRoutes(siteRoutes, state) {
     return { body, path };
   };
 
-  return expand(siteRoutes, state).map(compile);
+  return expandRoutes(siteRoutes, state).map(compile);
 }
 
 export function compileSite(state) {
