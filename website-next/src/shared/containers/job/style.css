@@ -1,5 +1,9 @@
 @value tablet from "../../components/variables/breakpoints.css";
-@value black, red from "../../components/variables/colors.css";
+@value badgerWhite, badgerBlack, red from "../../../../../site/css/_colors.css";
+
+.background {
+  background-color: badgerWhite;
+}
 
 .noteTitle {
   composes: h2 from "../../components/typography/style.css";
@@ -30,7 +34,7 @@
 
 .sidebarApplyLink {
   composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
-  color: black;
+  color: badgerBlack;
 }
 
 .linkBack {
@@ -44,10 +48,15 @@
   }
 }
 
-ul {
-  list-style: disc;
-}
 
-strong {
-  font-family: 'ProximaNova-Bold', sans-serif;
+.htmlParser {
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+
+  ul {
+    list-style: disc;
+  }
+
+  strong {
+    font-family: 'ProximaNova-Bold', sans-serif;
+  }
 }

@@ -103,7 +103,7 @@ const vacancies = {
 export default class JoinUs extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.background}>
         <Section>
           <Container>
             <ComponentRenderer data={titles} />

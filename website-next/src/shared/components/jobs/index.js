@@ -25,7 +25,7 @@ export default class Jobs extends Component {
     ));
 
     return (
-      <div className="jobs">
+      <div className="jobs ${styles.jobs}">
         <Wall cols={3}>
           {listings}
         </Wall>
