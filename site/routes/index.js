@@ -43,14 +43,10 @@ const componentMap = {
 
 export default function routes() {
   return prefixRoutes(routeDefinitions.map(
-    ({ title, key, route, stateToProps, gen }) => ({
-      title,
-      key,
-      route,
-      stateToProps,
-      gen,
+    route => ({
+      ...route,
       component: (routerProps, props) => {
-        const Component = componentMap[key];
+        const Component = componentMap[route.key];
         return (<L {...routerProps}><Component {...props} /></L>);
       },
     })));

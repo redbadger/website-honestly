@@ -16,6 +16,11 @@ const titleFor = (def, props) => {
   return def.title;
 };
 
+/*
+  Routes: /, /about-us/join-us/{slug}
+  Expanded: /, /about-us/join-us/software-engineer etc.
+*/
+
 const expand = (routeDefs, state) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
@@ -40,6 +45,10 @@ const expand = (routeDefs, state) => {
 };
 
 export function compileRoutes(siteRoutes, state) {
+  /*
+    We only register unexpanded routes with stateNavigator, so we can
+    continue to use named routes.
+  */
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
     new Navigation.HTML5HistoryManager()
