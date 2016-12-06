@@ -1,0 +1,11 @@
+.rawHtml {
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+}
+
+.rawHtml strong {
+  font-family: 'ProximaNova-Bold';
+}
+
+.rawHtml ul {
+  list-style: disc;
+}
