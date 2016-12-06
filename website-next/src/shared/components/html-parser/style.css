@@ -8,4 +8,7 @@
 
 .rawHtml ul {
   list-style: disc;
+  color: font;
+  margin-left: 1em;
+  padding-left: 40px;
 }

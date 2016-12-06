@@ -71,12 +71,3 @@
 .aBold:hover {
   color: red;
 }
-
-ul {
-  color: font;
-  font-family: default;
-  font-size: 1em;
-  line-height: 1.4;
-  margin-left: 1em;
-  padding-left: 40px;
-}
