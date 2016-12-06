@@ -10,17 +10,6 @@
   font-size: 1.333em !important;
 }
 
-.linkBackArrow {
-  composes: sketchArrowLeft from "../../components/icons/style.css";
-  color: red;
-}
-
-.externalIcon {
-  composes: sketchExternalLink from "../../components/icons/style.css";
-  color: red;
-  font-size: 14px;
-}
-
 .applyLink {
   composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
 
@@ -33,11 +22,11 @@
 }
 
 .sidebarApplyLink {
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
-  color: badgerBlack;
+  composes: smallButton from "../../../../../site/css/_links.css";
 }
 
 .linkBack {
+  composes: bodyLink from "../../../../../site/css/_links.css";
   display: block;
   margin-bottom: 25px;
   composes: sansSerif from "../../../../../site/css/typography/_fonts.css";

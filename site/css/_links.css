@@ -10,6 +10,14 @@
 
  */
 
+.bodyLink {
+  color: badgerRed;
+}
+
+.bodyLink:hover {
+  color: badgerBlack;
+}
+
 .redUnderlineLink {
   border-bottom: 2px solid badgerRed;
   color: badgerWhite;
@@ -27,5 +35,19 @@
   display: inline-block;
   line-height: inputHeight;
   height: inputHeight;
+  border: none;
+}
+
+.smallButton {
+  composes: boldSansSerif from "./typography/_fonts.css";
+  font-size: 18px;
+  background-color: badgerRed;
+  color: badgerWhite;
+  text-align: center;
+  padding: 0 14px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
   border: none;
 }

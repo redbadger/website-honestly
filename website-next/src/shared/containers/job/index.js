@@ -30,8 +30,7 @@ export default class Job extends Component {
                 <h2 className={typography.h2}>{this.props.job.title}</h2>
                 <HtmlParser>{this.props.job.fullDescription}</HtmlParser>
                 <Hr color="grey" />
-                <Link className={classnames(typography.aBold, styles.linkBack)} to="joinUs"><span className={styles.linkBackArrow}></span>See all vacancies</Link>
-                <a className={styles.applyLink} href={this.props.job.applicationUrl} id="e2eApply" target="_blank">Apply here<span className={styles.externalIcon}></span></a>
+                <Link className={styles.linkBack} to="joinUs">&lt; See all vacancies</Link>
               </Cell>
               <Cell size={4}>
                 <Note>
@@ -39,8 +38,8 @@ export default class Job extends Component {
                   <p className={typography.p}>
                     {"If you'd like to know more or you want to apply please get in touch with your CV, Stackoverflow profile, Github, code, portfolio and anything else you think we might be interested in."}
                   </p>
-                  <p>
-                    <a className={classnames(typography.aBold, styles.sidebarApplyLink)} href={this.props.job.applicationUrl} target="_blank">Apply here <span className={styles.externalIcon}></span></a>
+                  <p className={typography.p}>
+                    <a className={styles.sidebarApplyLink} href={this.props.job.applicationUrl} target="_blank">Apply here</a>
                   </p>
                 </Note>
               </Cell>
