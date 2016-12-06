@@ -2,8 +2,9 @@
 /* rules disabled as this is essentially a template - makes no sense to move the long lines elsewhere */
 
 import React from 'react';
+import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
-import Diagram from './server-worker-diagram';
+import Diagram from './server-worker-diagram.svg';
 
 export default function OfflinePage() {
   return (
@@ -50,7 +51,7 @@ export default function OfflinePage() {
         </p>
         <h2 className={styles.subtitle}>Total recall – or the new caching</h2>
         <p className={styles.paragraph}>
-          <Diagram />
+          <InlineSVG src={Diagram} className={styles.diagram} />
           Let me focus on the point that will make the biggest difference - using web applications offline.
           As much as every point in the list above is important, using our apps whenever and wherever means a huge difference in the way we perceive the web.
         </p>

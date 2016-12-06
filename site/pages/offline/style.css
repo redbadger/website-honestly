@@ -71,7 +71,7 @@
   list-style-position: outside;
 }
 
-.diagram {
+.diagram svg {
   display: block;
   margin: 20px auto 30px auto;
   max-width: 267px;
@@ -83,7 +83,7 @@
 }
 
 @media mediumScreen {
-  .diagram {
+  .diagram svg {
     display: inline-block;
     float: right;
     margin: -.9em 0 20px 20px;
