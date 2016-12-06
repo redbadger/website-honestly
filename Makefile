@@ -121,6 +121,7 @@ dist/static-site:
 	badger \
 	services-deploy \
 	services-invoke \
+	fetch \
 	test \
 	test-watch \
 	sw
