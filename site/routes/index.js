@@ -8,8 +8,6 @@ import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 
-const TITLE_SUFFIX = 'Red Badger';
-
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
   return `${routePrefix}${route}`;
@@ -35,21 +33,21 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes(content) {
-  const componentMap = {
-    homePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
-    notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
-    whatWeDoPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
-    serverErrorPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><ServerErrorPage /></L>,
-    offlinePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><OfflinePage /></L>,
-  };
+const componentMap = {
+  homePage: HomePage,
+  whatWeDoPage: WhatWeDoPage,
+  notFoundPage: NotFoundPage,
+  serverErrorPage: ServerErrorPage,
+  offlinePage: OfflinePage,
+};
 
+export default function routes() {
   return prefixRoutes(routeDefinitions.map(
-    ({ title, key, route }) => ({
-      title: `${title} | ${TITLE_SUFFIX}`,
-      key,
-      route,
-      component: componentMap[key],
-    }))
-  );
+    route => ({
+      ...route,
+      component: (routerProps, props) => {
+        const Component = componentMap[route.key];
+        return (<L {...routerProps}><Component {...props} /></L>);
+      },
+    })));
 }
