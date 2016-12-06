@@ -12,6 +12,11 @@ const swConfig = {
         exclude: /node_modules/,
         loaders: ['babel'],
       },
+      {
+        test: /\.json$/,
+        exclude: /node_modules/,
+        loaders: ['json'],
+      },
     ],
   },
 };

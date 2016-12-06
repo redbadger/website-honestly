@@ -6,6 +6,7 @@ import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
 import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
+import OfflinePage from '../pages/offline';
 
 const TITLE_SUFFIX = 'Red Badger';
 
@@ -40,6 +41,7 @@ export default function routes(content) {
     notFoundPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
     whatWeDoPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
     serverErrorPage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><ServerErrorPage /></L>,
+    offlinePage: ({ stateNavigator }) => <L stateNavigator={stateNavigator}><OfflinePage /></L>,
   };
 
   return prefixRoutes(routeDefinitions.map(
