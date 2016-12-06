@@ -1,5 +1,5 @@
 @value tablet from "../../components/variables/breakpoints.css";
-@value badgerWhite, badgerBlack, red from "../../../../../site/css/_colors.css";
+@value badgerWhite, badgerBlack from "../../../../../site/css/_colors.css";
 
 .background {
   background-color: badgerWhite;

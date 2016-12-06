@@ -1,16 +1,16 @@
-@value red from "../variables/colors.css";
+@value badgerRed, badgerBlack from "../../../../../site/css/_colors.css";
 
 .title {
   composes: heroFont from "../fonts/style.css";
   display: block;
   font-size: 1.55em;
   text-decoration: none;
-  color: #000;
+  color: badgerBlack;
   line-height: 1.2;
 }
 
 .title:hover {
-  color: red;
+  color: badgerRed;
 }
 
 .icon {
