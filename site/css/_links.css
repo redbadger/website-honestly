@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed from "./_colors.css";
+@value badgerWhite, badgerRed, badgerBlack from "./_colors.css";
 @value inputHeight, linkSize from "./_sizes.css";
 
 /*
