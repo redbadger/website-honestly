@@ -1,3 +1,5 @@
+@value font from "../variables/colors.css";
+
 .rawHtml {
   composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
 }

@@ -10,18 +10,19 @@
  */
 
 @value font, red, turquoise from "../variables/colors.css";
+@value badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
 @value default, hero from "../fonts/style.css";
 
 .typography {}
 
 .a,
 .typography a {
-  color: red;
+  color: badgerRed;
 }
 
 .a:hover,
 .typography a:hover {
-  color: turquoise;
+  color: badgerBlack;
 }
 
 .p,
