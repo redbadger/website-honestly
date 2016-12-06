@@ -26,7 +26,7 @@ export const routeDefinitions = [
     stateToProps: ({ jobs }) => ({ jobs }),
   },
   {
-    title: job => job.title,
+    title: ({ job }) => job.title,
     key: 'job',
     route: 'test-about-us/join-us/{slug}',
     stateToProps: (state, slug) => ({ job: state.job[slug] }),
