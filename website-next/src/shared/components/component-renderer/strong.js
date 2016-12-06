@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from '../../../../../site/css/typography/_fonts.css';
 
 export default class Paragraph extends Component {
   static propTypes = {
@@ -6,6 +7,10 @@ export default class Paragraph extends Component {
   };
 
   render() {
-    return <strong>{this.props.children}</strong>;
+    return (
+      <strong className={styles.boldSansSerif}>
+        {this.props.children}
+      </strong>
+    );
   }
 }
