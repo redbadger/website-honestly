@@ -14,3 +14,7 @@
   margin-left: 1em;
   padding-left: 40px;
 }
+
+.rawHtml ul li {
+  line-height: 1.4em;
+}
