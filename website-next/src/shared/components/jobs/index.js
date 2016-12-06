@@ -3,10 +3,10 @@ import Note from '../note';
 import HtmlParser from '../html-parser';
 import styles from './style.css';
 import { connect } from 'react-redux';
-import Link from '../../../../../site/components/link';
+import { Link } from 'react-router';
 import Wall from '../wall';
 
-export default class Jobs extends Component {
+export class Jobs extends Component {
   static propTypes = {
     jobs: React.PropTypes.arrayOf(React.PropTypes.shape({
       description: React.PropTypes.string,
@@ -17,7 +17,7 @@ export default class Jobs extends Component {
   render() {
     const listings = this.props.jobs.map((job, index) => (
       <Note key={index}>
-        <Link className={styles.title} to='job' navigationData={{ slug: job.slug }}>
+        <Link className={styles.title} to={`/about-us/join-us/${job.slug}`}>
           {job.title}
         </Link>
         <HtmlParser>{job.description}</HtmlParser>
@@ -25,7 +25,7 @@ export default class Jobs extends Component {
     ));
 
     return (
-      <div className="jobs ${styles.jobs}">
+      <div className="jobs">
         <Wall cols={3}>
           {listings}
         </Wall>
@@ -33,3 +33,7 @@ export default class Jobs extends Component {
     );
   }
 }
+
+export default connect(state => ({
+  jobs: state.jobs,
+}))(Jobs);

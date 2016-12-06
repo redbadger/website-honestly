@@ -8,9 +8,6 @@ import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 
-import JoinUsPage from '../../website-next/src/shared/containers/join-us';
-import JobPage from '../../website-next/src/shared/containers/job';
-
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
   return `${routePrefix}${route}`;
@@ -39,8 +36,6 @@ function prefixRoutes(rs) {
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
-  joinUs: JoinUsPage,
-  job: JobPage,
   notFoundPage: NotFoundPage,
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
