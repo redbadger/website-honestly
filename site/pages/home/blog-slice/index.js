@@ -4,8 +4,8 @@ import BlogEntry from './blog-entry';
 
 const matchAuthorTitle = title => {
   const match = title.match(/<.+>(.*)<.+>/);
-  return match && match[1] || title;
-}
+  return (match && match[1]) || title;
+};
 
 const renderFeaturedBlogPosts = featuredBlogPosts => (
   featuredBlogPosts.map((featuredBlogPost, ind) => (
