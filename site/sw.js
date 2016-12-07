@@ -2,8 +2,8 @@
 
 import { routeDefinitions } from './routes/definitions';
 
-
 const CACHE_NAME = 'v1';
+const OFFLINE_URL = 'offline';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -39,12 +39,17 @@ self.addEventListener('fetch', event => {
 
         return res;
       }).catch(() => {
+        // This ONLY happens when fetch() throws an exception, so it will NOT
+        // BE TRIGGERED by 4xx/5xx errors, only by things like disconnects.
         return caches.match(event.request)
           .then(response => {
             // Cache hit - return response
             if (response) {
               return response;
             }
+
+            // No cache available, return offline page
+            return caches.match(OFFLINE_URL);
           });
       })
   );

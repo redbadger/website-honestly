@@ -8,6 +8,7 @@ dependencies:
   override:
     - npm i -g yarn
     - yarn
+    - cd website-next && yarn
 
 test:
   override:

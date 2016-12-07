@@ -5,6 +5,11 @@ export const routeDefinitions = [
     route: '',
   },
   {
+    title: 'What we do',
+    key: 'whatWeDoPage',
+    route: 'what-we-do',
+  },
+  {
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',
@@ -15,8 +20,8 @@ export const routeDefinitions = [
     route: '50x',
   },
   {
-    title: 'What we do',
-    key: 'whatWeDoPage',
-    route: 'what-we-do',
+    title: 'Lost connection',
+    key: 'offlinePage',
+    route: 'offline',
   },
 ];
