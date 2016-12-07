@@ -23,7 +23,7 @@ const titleFor = (def, props) => {
   Expanded: /, /about-us/join-us/software-engineer etc.
 */
 
-export const expandRoutes = (routeDefs, state) => {
+export const expandRoutes = (routeDefs, state, stateNavigator) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
     title: titleFor(def, def.stateToProps && def.stateToProps(state)),
@@ -31,13 +31,12 @@ export const expandRoutes = (routeDefs, state) => {
   }));
 
   const dynamicRoutes = routeDefs.filter(def => !!def.gen).map(def => {
-    return def.gen(state).map(slug => ({
+    return def.gen(state).map(params => ({
       ...def,
-      slug,
-      title: titleFor(def, def.stateToProps && def.stateToProps(state, slug)),
-      route: def.route.replace('{slug}', slug),
-      filePath: def.filePath.replace('{slug}', slug),
-      props: def.stateToProps && def.stateToProps(state, slug),
+      title: titleFor(def, def.stateToProps && def.stateToProps(state, params)),
+      route: stateNavigator.getNavigationLink(def.key, params),
+      filePath: def.filePath.replace('{slug}', params.slug),
+      props: def.stateToProps && def.stateToProps(state, params),
     }));
   });
 
@@ -74,7 +73,7 @@ export function compileRoutes(siteRoutes, state) {
     return { body, path };
   };
 
-  return expandRoutes(siteRoutes, state).map(compile);
+  return expandRoutes(siteRoutes, state, stateNavigator).map(compile);
 }
 
 export function compileSite(state) {
