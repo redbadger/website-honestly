@@ -3,6 +3,7 @@ export const routeDefinitions = [
     title: 'Home',
     key: 'homePage',
     route: '',
+    stateToProps: state => ({ featuredBlogPosts: state.featured_blog_posts }),
   },
   {
     title: 'What we do',

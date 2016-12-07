@@ -2,33 +2,26 @@ import React from 'react';
 import styles from './style.css';
 import BlogEntry from './blog-entry';
 
-const blogSlice = () => {
+const renderFeaturedBlogPosts = featuredBlogPosts => (
+  featuredBlogPosts.map((featuredBlogPost, ind) => (
+    <BlogEntry
+      key={ind}
+      category={featuredBlogPost.categories[0]}
+      url={'http://red-badger.com/blog/' + featuredBlogPost.urlId}
+      title={featuredBlogPost.title}
+      authorName={featuredBlogPost.author.displayName}
+      authorTitle={featuredBlogPost.author.bio}
+    />
+  ))
+);
+
+const blogSlice = ({ featuredBlogPosts }) => {
   return (
     <section className={styles.blogSlice}>
       <div className={styles.sliceContainer}>
         <h2 className={styles.blogSliceTitle} >We’re opinionated and curious.</h2>
         <ul className={styles.blogLinkList} >
-          <BlogEntry
-            category="Technology"
-            url="http://red-badger.com/blog/2016/11/01/serverless-evil-queen-tooth-fairy/"
-            title="Serverless - Evil Queen or Tooth Fairy?"
-            authorName="Anna Doubkova"
-            authorTitle="Software Engineer"
-          />
-          <BlogEntry
-            category="Agile"
-            url="http://red-badger.com/blog/2016/10/27/really-stand-agile-glossary/"
-            title="Do I Really Have to Stand? – An Agile Glossary"
-            authorName="Roisi Proven"
-            authorTitle="Project Manager"
-          />
-          <BlogEntry
-            category="Technology"
-            url="http://red-badger.com/blog/2016/10/17/whats-coming-next/"
-            title="Tech Predictions 2017 - What's Coming up Next?"
-            authorName="Marcel Cutts"
-            authorTitle="Software Engineer"
-          />
+          {renderFeaturedBlogPosts(featuredBlogPosts)}
         </ul>
         <a
           href="http://red-badger.com/blog"
@@ -39,6 +32,10 @@ const blogSlice = () => {
       </div>
     </section>
   );
+};
+
+blogSlice.propTypes = {
+  featuredBlogPosts: React.PropTypes.array,
 };
 
 export default blogSlice;
