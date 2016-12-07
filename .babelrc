@@ -6,6 +6,7 @@
   "plugins": [
     "transform-object-assign",
     "transform-class-properties",
+    "transform-flow-strip-types",
     "babel-plugin-transform-object-rest-spread"
   ],
   "env": {
