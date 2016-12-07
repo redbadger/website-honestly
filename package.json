@@ -74,7 +74,8 @@
     "webpack-dev-server": "^1.15.2",
     "webpack-merge": "^0.14.1",
     "whatwg-fetch": "^1.0.0",
-    "xmldom": "^0.1.22"
+    "xmldom": "^0.1.22",
+    "xss-filters": "^1.2.7"
   },
   "repository": {
     "type": "git",

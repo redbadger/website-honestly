@@ -1,5 +1,7 @@
 import { renderToString } from 'react-dom/server';
 import Navigation from 'navigation';
+import xssFilters from 'xss-filters';
+
 import makeRoutes from '../routes';
 import layoutTemplate from '../index.ejs';
 import { cssPath, jsPath } from './asset-paths';
@@ -66,7 +68,7 @@ export function compileRoutes(siteRoutes, state) {
       bodyContent,
       cssPath,
       jsPath,
-      state,
+      state: xssFilters.inDoubleQuotedAttr(JSON.stringify(state)),
     });
 
     return { body, path };
