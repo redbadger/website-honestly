@@ -4,7 +4,7 @@ import { compileSite, compileRoutes, expandRoutes } from '.';
 describe('site/compiler', () => {
   describe('compileSite', () => {
     it('renders all the pages of the site', () => {
-      const pages = compileSite({ jobs: [], job: {}, featured_blog_posts: [] });
+      const pages = compileSite({ jobs: [], job: {}, featuredBlogPosts: [] });
       expect(pages.length).to.be.above(0);
     });
   });
