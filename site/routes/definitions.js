@@ -22,13 +22,13 @@ export const routeDefinitions : Array<RouteDefinition> = [
   {
     title: 'Join us',
     key: 'joinUs',
-    route: 'test-about-us/join-us',
+    route: 'about-us/join-us',
     stateToProps: ({ jobs }) => ({ jobs }),
   },
   {
     title: ({ job }) => job.title,
     key: 'job',
-    route: 'test-about-us/join-us/{slug}',
+    route: 'about-us/join-us/{slug}',
     stateToProps: (state, slug) => ({ job: state.job[slug] }),
     gen: state => Object.keys(state.job || {}),
   },
