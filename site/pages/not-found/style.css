@@ -1,0 +1,6 @@
+@value badgerBlack from "../../css/_colors.css";
+
+.link {
+  composes: redUnderlineLink from "../../css/_links.css";
+  color: badgerBlack;
+}

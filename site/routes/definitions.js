@@ -5,24 +5,24 @@ export const routeDefinitions = [
     route: '',
   },
   {
-    title: 'Not found',
-    key: 'notFoundPage',
-    route: '404',
-  },
-  {
     title: 'What we do',
     key: 'whatWeDoPage',
     route: 'what-we-do',
   },
   {
-    title: 'Join us',
-    key: 'joinUs',
-    route: 'about-us/join-us',
+    title: 'Not found',
+    key: 'notFoundPage',
+    route: '404',
   },
   {
-    title: 'Join us',
-    key: 'job',
-    route: 'about-us/join-us/{slug}',
+    title: 'Server error',
+    key: 'serverErrorPage',
+    route: '50x',
+  },
+  {
+    title: 'Lost connection',
+    key: 'offlinePage',
+    route: 'offline',
   },
   {
     title: 'Events',

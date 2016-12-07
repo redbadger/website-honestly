@@ -4,13 +4,18 @@ import Footer from '../components/footer';
 import styles from './style.css';
 
 export default class Layout extends React.Component {
-  static childContextTypes = {
-    stateNavigator: PropTypes.object
-  }
-
   static propTypes = {
     children: PropTypes.element.isRequired,
+    stateNavigator: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   };
+
+  static childContextTypes = {
+    stateNavigator: PropTypes.object,
+  }
+
+  getChildContext() {
+    return { stateNavigator: this.props.stateNavigator };
+  }
 
   render() {
     return (
@@ -20,9 +25,5 @@ export default class Layout extends React.Component {
         <Footer />
       </div>
     );
-  }
-
-  getChildContext() {
-    return { stateNavigator: this.props.stateNavigator };
   }
 }

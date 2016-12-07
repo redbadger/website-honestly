@@ -1,0 +1,111 @@
+@value badgerWhite, badgerBlack from "../../css/_colors.css";
+@value largeScreen, mediumScreen from "../../css/_sizes.css";
+
+.button {
+  composes: primaryButton from "../../css/_links.css";
+  font-size: 20px;
+}
+
+.buttonContainer {
+  clear: right;
+  display: block;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+  display: block;
+}
+
+.header {
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontL from "../../css/typography/_fonts.css";
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+.copy {
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontS from "../../css/typography/_fonts.css";
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.link {
+  composes: redUnderlineLink from "../../css/_links.css";
+  color: badgerBlack;
+}
+
+.badger {
+  display: inline;
+  float: right;
+  max-height: 120px;
+  margin-bottom: 30px;
+}
+
+.section {
+  background-color: badgerWhite;
+  padding: 20px;
+}
+
+.sectionContent {
+  margin: 0 auto;
+  max-width: 370px;
+}
+
+@media mediumScreen {
+  .buttonContainer {
+    clear: none;
+    display: block;
+    text-align: left;
+    width: auto;
+  }
+
+  .badger {
+    margin-top: -50px;
+    max-height: inherit;
+    max-width: 40%;
+    padding-left: 10%;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .sectionContent {
+    max-width: 800px;
+  }
+}
+
+@media largeScreen {
+  .badger {
+    margin-top: -50px;
+  }
+
+  .buttonContainer {
+    margin-top: 60px;
+  }
+
+  .copy span:before {
+   content: '\a';
+   white-space: pre;
+  }
+
+  .copy span:first-child:before {
+    content: '';
+    white-space: inherit;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .badger {
+    max-width: 35%;
+    padding-left: 0;
+  }
+}

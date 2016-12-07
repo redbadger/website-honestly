@@ -54,18 +54,16 @@ build: dist/services.zip dist/dev-static/index.js dist/sw.js ## Compile project
 
 
 lint: ## Lint Javascript files
-	$(ESLINT) . --ext .js --ext .jsx --ignore-path .gitignore --ignore-path .eslintignore --cache
+	$(ESLINT) . --ext .js --ext .jsx --ignore-path .eslintignore --cache
 
 
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 	$(LOAD_ENV) \
 	&& $(SERVERLESS) deploy
 
-
 publish-service-invoke: ## Invoke the publish service
 	$(LOAD_ENV) \
-	&& $(SERVERLESS) invoke --function publish
-
+	&& curl -XPOST --fail $$PUBLISH_ENDPOINT
 
 compress-assets: ## Compress assets. What did you expect? :)
 	find site -type f \
@@ -123,6 +121,7 @@ dist/static-site:
 	badger \
 	services-deploy \
 	services-invoke \
+	fetch \
 	test \
 	test-watch \
 	sw

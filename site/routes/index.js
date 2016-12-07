@@ -4,11 +4,9 @@ import { routeDefinitions } from './definitions';
 import L from '../layout';
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/not-found';
+import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
-import JoinUsPage from '../pages/join-us';
-import EventsPage from '../../website-next/src/shared/containers/events';
-
-const TITLE_SUFFIX = 'Red Badger';
+import OfflinePage from '../pages/offline';
 
 export function fullPath(route) {
   const routePrefix = process.env.URL_BASENAME || '';
@@ -35,22 +33,21 @@ function prefixRoutes(rs) {
   });
 }
 
-export default function routes(content) {
-  const componentMap = {
-    homePage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><HomePage contactUsURL={content.contactUsURL} /></L>,
-    notFoundPage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><NotFoundPage /></L>,
-    whatWeDoPage: ({stateNavigator}) => <L stateNavigator={stateNavigator}><WhatWeDoPage /></L>,
-    joinUs: ({stateNavigator}) => <L stateNavigator={stateNavigator}><JoinUsPage jobs={content.jobs} /></L>,
-    job: ({stateNavigator}) => <L stateNavigator={stateNavigator}>Not Implemented</L>,
-    events: ({stateNavigator}) => <L stateNavigator={stateNavigator}><EventsPage events={content.events}/></L>
-  };
+const componentMap = {
+  homePage: HomePage,
+  whatWeDoPage: WhatWeDoPage,
+  notFoundPage: NotFoundPage,
+  serverErrorPage: ServerErrorPage,
+  offlinePage: OfflinePage,
+};
 
+export default function routes() {
   return prefixRoutes(routeDefinitions.map(
-    ({ title, key, route }) => ({
-      title: `${title} | ${TITLE_SUFFIX}`,
-      key,
-      route,
-      component: componentMap[key],
-    }))
-  );
+    route => ({
+      ...route,
+      component: (routerProps, props) => {
+        const Component = componentMap[route.key];
+        return (<L {...routerProps}><Component {...props} /></L>);
+      },
+    })));
 }

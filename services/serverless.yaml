@@ -29,6 +29,11 @@ provider:
 functions:
   publish:
     handler: index.publish
+    events:
+      - http:
+          path: publish
+          method: post
+          cors: true
   contactUs:
     handler: index.contactUs
     events:
