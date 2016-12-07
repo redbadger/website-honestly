@@ -2,5 +2,9 @@
 .*/node_modules/.*/test/.*\.json$
 .*/node_modules/fbjs/.*
 
+[options]
+module.name_mapper.extension='ejs' -> 'empty/function'
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
+
 [libs]
 flow-typed/
