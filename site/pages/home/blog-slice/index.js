@@ -2,6 +2,11 @@ import React from 'react';
 import styles from './style.css';
 import BlogEntry from './blog-entry';
 
+const matchAuthorTitle = title => {
+  const match = title.match(/<.+>(.*)<.+>/);
+  return match && match[1] || title;
+}
+
 const renderFeaturedBlogPosts = featuredBlogPosts => (
   featuredBlogPosts.map((featuredBlogPost, ind) => (
     <BlogEntry
@@ -10,7 +15,7 @@ const renderFeaturedBlogPosts = featuredBlogPosts => (
       url={'http://red-badger.com/blog/' + featuredBlogPost.urlId}
       title={featuredBlogPost.title}
       authorName={featuredBlogPost.author.displayName}
-      authorTitle={featuredBlogPost.author.bio}
+      authorTitle={matchAuthorTitle(featuredBlogPost.author.bio)}
     />
   ))
 );
