@@ -1,12 +1,12 @@
 // @flow
 
-type RouteDefinition = {
+type RouteDefinition = {|
   title: string | (props: Object) => string,
   key: string,
   route: string,
   stateToProps?: (state: Object, slug?: string) => any,
   gen?: (state: Object) => Array<String>
-}
+|}
 
 export const routeDefinitions : Array<RouteDefinition> = [
   {

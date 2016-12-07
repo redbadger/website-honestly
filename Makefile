@@ -118,6 +118,7 @@ dist/static-site:
 	dev-static \
 	install \
 	check-deps \
+	flow \
 	lint \
 	help \
 	clear \
