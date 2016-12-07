@@ -47,6 +47,11 @@ ga('send', 'pageview');
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
     </div>
+    <% if (typeof state !== 'undefined') { %>
+      <script type="text/javascript">
+        var state = <%= JSON.stringify(state) %>;
+      </script>
+    <% } %>
     <% if (typeof jsPath !== 'undefined') { %><script type="text/javascript" src="<%= jsPath %>"></script><% } %>
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7848772/css/fonts.css">
   </body>

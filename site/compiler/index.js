@@ -66,6 +66,7 @@ export function compileRoutes(siteRoutes, state) {
       bodyContent,
       cssPath,
       jsPath,
+      state,
     });
 
     return { body, path };
