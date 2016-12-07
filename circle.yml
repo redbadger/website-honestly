@@ -14,6 +14,7 @@ test:
   override:
     - make lint
     - make test
+    - make flow
 
 deployment:
   staging-prod:

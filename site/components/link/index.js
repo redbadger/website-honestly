@@ -1,7 +1,9 @@
+// @flow
 import React, { PropTypes } from 'react';
 import { NavigationLink } from 'navigation-react';
 
-export default function Link(props) {
+type LinkProps = {[id: string]: any}
+export default function Link(props: LinkProps) {
   const linkProps = Object.assign({}, props, {
     stateKey: props.to,
   });
