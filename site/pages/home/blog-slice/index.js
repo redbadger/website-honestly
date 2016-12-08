@@ -15,7 +15,7 @@ const renderFeaturedBlogPosts = featuredBlogPosts => (
       url={'http://red-badger.com/blog/' + featuredBlogPost.urlId}
       title={featuredBlogPost.title}
       authorName={featuredBlogPost.author.displayName}
-      authorTitle={matchAuthorTitle(featuredBlogPost.author.bio)}
+      authorTitle={matchAuthorTitle(featuredBlogPost.author.bio || '')}
     />
   ))
 );

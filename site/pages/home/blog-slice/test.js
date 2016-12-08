@@ -36,6 +36,20 @@ describe('site/blog-slice', () => {
     expect(blogSlice.find(className).text()).to.equal('');
   });
 
+  it('should render OK with undefined bio', () => {
+    const posts = [{
+      title: 'A post',
+      author: {
+        displayName: 'Milo',
+        bio: undefined,
+      },
+      categories: ['Technology'],
+    }];
+    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
+    const className = cheerioSelector(styles.linkAuthorTitle);
+    expect(blogSlice.find(className).text()).to.equal('');
+  });
+
   it('should render OK with plain text bio', () => {
     const posts = [{
       title: 'A post',
