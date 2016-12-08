@@ -1,12 +1,26 @@
-import React, { PropTypes } from 'react';
+// @flow
+
+import React from 'react';
 import styles from './style.css';
+
+type Author = {|
+  bio: string,
+  displayName: string,
+|}
+
+export type BlogPost = {|
+  urlId: string,
+  categories: Array<string>,
+  title: string,
+  author: Author,
+|}
 
 const matchAuthorTitle = title => {
   const match = title.match(/<.+>(.*)<.+>/);
   return (match && match[1]) || title;
 };
 
-const BlogEntry = ({ featuredBlogPost }) => {
+const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
   return (
     <li>
       <a
@@ -30,10 +44,6 @@ const BlogEntry = ({ featuredBlogPost }) => {
       </a>
     </li>
   );
-};
-
-BlogEntry.propTypes = {
-  featuredBlogPost: PropTypes.Object,
 };
 
 export default BlogEntry;
