@@ -1,8 +1,11 @@
+// @flow
+
 import React from 'react';
 import styles from './style.css';
 import BlogEntry from './blog-entry';
+import type { BlogPost } from './blog-entry';
 
-const blogSlice = ({ featuredBlogPosts }) => {
+const blogSlice = ({ featuredBlogPosts }: { featuredBlogPosts: Array<BlogPost> }) => {
   return (
     <section className={styles.blogSlice}>
       <div className={styles.sliceContainer}>
@@ -21,10 +24,6 @@ const blogSlice = ({ featuredBlogPosts }) => {
       </div>
     </section>
   );
-};
-
-blogSlice.propTypes = {
-  featuredBlogPosts: React.PropTypes.array,
 };
 
 export default blogSlice;
