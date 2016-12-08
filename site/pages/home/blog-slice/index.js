@@ -2,31 +2,15 @@ import React from 'react';
 import styles from './style.css';
 import BlogEntry from './blog-entry';
 
-const matchAuthorTitle = title => {
-  const match = title.match(/<.+>(.*)<.+>/);
-  return (match && match[1]) || title;
-};
-
-const renderFeaturedBlogPosts = featuredBlogPosts => (
-  featuredBlogPosts.map((featuredBlogPost, ind) => (
-    <BlogEntry
-      key={ind}
-      category={featuredBlogPost.categories[0]}
-      url={'http://red-badger.com/blog/' + featuredBlogPost.urlId}
-      title={featuredBlogPost.title}
-      authorName={featuredBlogPost.author.displayName}
-      authorTitle={matchAuthorTitle(featuredBlogPost.author.bio || '')}
-    />
-  ))
-);
-
 const blogSlice = ({ featuredBlogPosts }) => {
   return (
     <section className={styles.blogSlice}>
       <div className={styles.sliceContainer}>
         <h2 className={styles.blogSliceTitle} >We’re opinionated and curious.</h2>
         <ul className={styles.blogLinkList} >
-          {renderFeaturedBlogPosts(featuredBlogPosts)}
+          {featuredBlogPosts.map((featuredBlogPost, ind) => (
+            <BlogEntry key={ind} featuredBlogPost={featuredBlogPost} />
+          ))}
         </ul>
         <a
           href="http://red-badger.com/blog"
