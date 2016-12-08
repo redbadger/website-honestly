@@ -1,6 +1,6 @@
 import { renderToString } from 'react-dom/server';
 import Navigation from 'navigation';
-import xssFilters from 'xss-filters';
+import encode from 'ent/encode';
 
 import makeRoutes from '../routes';
 import layoutTemplate from '../index.ejs';
@@ -68,7 +68,7 @@ export function compileRoutes(siteRoutes, state) {
       bodyContent,
       cssPath,
       jsPath,
-      state: xssFilters.inDoubleQuotedAttr(JSON.stringify(state)),
+      state: (state && encode(JSON.stringify(state))),
     });
 
     return { body, path };

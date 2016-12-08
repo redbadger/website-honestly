@@ -22,6 +22,7 @@
     "css-loader": "^0.25.0",
     "css-modules-require-hook": "^4.0.3",
     "empty": "^0.10.1",
+    "ent": "^2.2.0",
     "enzyme": "^2.4.1",
     "es6-promise": "^4.0.5",
     "es6-promisify": "^5.0.0",
@@ -74,8 +75,7 @@
     "webpack-dev-server": "^1.15.2",
     "webpack-merge": "^0.14.1",
     "whatwg-fetch": "^1.0.0",
-    "xmldom": "^0.1.22",
-    "xss-filters": "^1.2.7"
+    "xmldom": "^0.1.22"
   },
   "repository": {
     "type": "git",
