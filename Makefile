@@ -8,7 +8,7 @@ WEBPACK=$(NBIN)/webpack --bail
 MOCHA=$(NBIN)/mocha
 ESLINT=$(NBIN)/eslint
 SERVERLESS=cd services && .$(NBIN)/sls
-WEBPACK_DEV_SERVERa=$(NBIN)/webpack-dev-server
+WEBPACK_DEV_SERVER=$(NBIN)/webpack-dev-server
 NPM_CHECK_UPDATES=$(NBIN)/ncu
 
 help:
