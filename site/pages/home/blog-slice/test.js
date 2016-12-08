@@ -8,12 +8,26 @@ const cheerioSelector = className => (
 );
 
 describe('site/blog-slice', () => {
-  it('should render OK with bio between tags', () => {
+  it('should render OK with bio between p tags', () => {
     const posts = [{
       title: 'A post',
       author: {
         displayName: 'Milo',
         bio: '<p>Software Engineer</p>',
+      },
+      categories: ['Technology'],
+    }];
+    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
+    const className = cheerioSelector(styles.linkAuthorTitle);
+    expect(blogSlice.find(className).text()).to.equal('Software Engineer');
+  });
+
+  it('should render OK with bio between span tags', () => {
+    const posts = [{
+      title: 'A post',
+      author: {
+        displayName: 'Milo',
+        bio: '<span>Software Engineer</span>',
       },
       categories: ['Technology'],
     }];
