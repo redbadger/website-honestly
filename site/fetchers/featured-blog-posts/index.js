@@ -2,6 +2,7 @@
 
 import fetch from 'node-fetch';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
+import handleErrors from '../handle-errors';
 
 const getQueryString = params => {
   return Object.keys(params).map(
@@ -11,14 +12,6 @@ const getQueryString = params => {
 
 const getUrl = params => {
   return `https://blog.red-badger.com/blog/?&format=json&${getQueryString(params)}`;
-};
-
-const handleErrors = response => {
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-
-  return response;
 };
 
 export const sanitiseAuthorBio = (bio: string = ''): string => {

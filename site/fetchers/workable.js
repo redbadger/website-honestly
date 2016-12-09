@@ -1,13 +1,7 @@
 import paramCase from 'param-case';
+import handleErrors from './handle-errors';
 
 const jobsUrl = 'https://www.workable.com/spi/v3/accounts/redbadger/jobs?include_fields=description,benefits,requirements&state=published';
-
-const handleErrors = response => {
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-  return response;
-};
 
 export const getJobs = (fetch, key) => (
   fetch(jobsUrl, {
