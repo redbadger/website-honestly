@@ -9,8 +9,8 @@ const handleErrors = response => {
   return response;
 };
 
-export const getJobs = (fetch, key) => {
-  return fetch(jobsUrl, {
+export const getJobs = (fetch, key) => (
+  fetch(jobsUrl, {
     headers: {
       authorization: `Bearer ${key}`,
       'Content-Type': 'application/json',
@@ -24,5 +24,5 @@ export const getJobs = (fetch, key) => {
     fullDescription: job.description + job.requirements + job.benefits,
     applicationUrl: job.application_url,
     slug: paramCase(job.title),
-  })));
-};
+  })))
+);
