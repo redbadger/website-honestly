@@ -1,44 +1,49 @@
-import React, { PropTypes } from 'react';
+// @flow
+
+import React from 'react';
 import styles from './style.css';
 
-const BlogEntry = ({
-  category,
-  title,
-  url,
-  authorName,
-  authorTitle,
-}) => {
+type Author = {|
+  bio: string,
+  displayName: string,
+|}
+
+export type BlogPost = {|
+  urlId: string,
+  categories: Array<string>,
+  title: string,
+  author: Author,
+|}
+
+const matchAuthorTitle = title => {
+  const match = title.match(/<.+>(.*)<.+>/);
+  return (match && match[1]) || title;
+};
+
+const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
   return (
     <li>
       <a
-        href={url}
+        href={'http://red-badger.com/blog/' + featuredBlogPost.urlId}
         className={styles.link}
       >
-        <h3 className={styles.category}>{category}</h3>
+        <h3 className={styles.category}>{featuredBlogPost.categories[0]}</h3>
         <div className={styles.linkEntry}>
           <div className={styles.linkTitle}>
-            <p>{title}</p>
+            <p>{featuredBlogPost.title}</p>
           </div>
           <div className={styles.authorTitle}>
             <p className={styles.linkAuthor}>
-              {authorName}
+              {featuredBlogPost.author.displayName}
             </p>
             <p className={styles.linkAuthorTitle}>
-              {authorTitle}
+              {matchAuthorTitle(featuredBlogPost.author.bio || '')}
             </p>
           </div>
         </div>
       </a>
     </li>
   );
-};
-
-BlogEntry.propTypes = {
-  category: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  authorName: PropTypes.string.isRequired,
-  authorTitle: PropTypes.string.isRequired,
 };
 
 export default BlogEntry;
