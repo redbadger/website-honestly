@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 
 import TopSlice from './homepage-top-slice';
@@ -7,22 +9,23 @@ import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
 import ContactUs from './contact-us-slice';
 import NewsLetter from './newsletter-slice';
+import type { BlogPost } from './blog-slice/blog-entry';
 
-const HomePage = ({ contactUsURL }) => (
+type Props = {|
+  contactUsURL: string,
+  featuredBlogPosts: Array<BlogPost>,
+|}
+
+const HomePage = ({ contactUsURL, featuredBlogPosts }: Props) => (
   <div>
     <TopSlice />
     <CaseStudy />
     <Brie />
     <TechSlice />
     <ContactUs postURL={contactUsURL} />
-    <BlogSlice />
+    <BlogSlice featuredBlogPosts={featuredBlogPosts} />
     <NewsLetter />
   </div>
 );
-
-const { string } = React.PropTypes;
-HomePage.propTypes = {
-  contactUsURL: string,
-};
 
 export default HomePage;

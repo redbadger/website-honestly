@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import { getFeaturedPosts } from '../dev/content-fetcher/squarespace-blog';
 import { getJobs } from '../site/fetchers/workable';
 
 const state = {
@@ -10,10 +11,15 @@ const toDict = (array, keyFn) => array.reduce((obj, item) => ({
   [keyFn(item)]: item,
 }), {});
 
-const getSiteState = () => {
-  return getJobs(fetch, process.env.WORKABLE_API_KEY).then(jobs =>
-    ({ jobs, job: toDict(jobs, j => j.slug), ...state })
-  );
+const getSiteState = async () => {
+  const jobs = await getJobs(fetch, process.env.WORKABLE_API_KEY);
+
+  return {
+    jobs,
+    job: toDict(jobs, j => j.slug),
+    featuredBlogPosts: await getFeaturedPosts(),
+    ...state,
+  };
 };
 
 export default getSiteState;

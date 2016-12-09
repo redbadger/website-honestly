@@ -6,7 +6,18 @@
   "plugins": [
     "transform-object-assign",
     "transform-class-properties",
-    "babel-plugin-transform-object-rest-spread",
-    "transform-flow-strip-types"
-  ]
+    "transform-flow-strip-types",
+    "babel-plugin-transform-object-rest-spread"
+  ],
+  "env": {
+    "node": {
+      "plugins": [
+        ["transform-runtime", {
+          "polyfill": true,
+          "regenerator": true
+        }],
+        "transform-async-to-generator"
+      ]
+    }
+  }
 }
