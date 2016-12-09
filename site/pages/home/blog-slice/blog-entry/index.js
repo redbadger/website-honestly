@@ -8,12 +8,12 @@ type Author = {
   name: string,
 }
 
-export type BlogPost = {|
+export type BlogPost = {
   slug: string,
   category: string,
   title: string,
   author: Author,
-|}
+}
 
 const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
   return (

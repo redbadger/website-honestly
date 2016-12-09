@@ -21,13 +21,13 @@ const handleErrors = response => {
   return response;
 };
 
-export const sanitiseAuthorBio = (bio: string = ''): string => { // eslint-disable-line arrow-parens,max-len
+export const sanitiseAuthorBio = (bio: string = ''): string => {
   const role = bio.match(/<.+>(.*)<.+>/);
   return (role && role[1]) || bio;
 };
 
-export const mapDataToState = (data: Object): Array<BlogPost> => ( // eslint-disable-line arrow-parens,max-len
-  data.map((post: Object): BlogPost => ({ // eslint-disable-line arrow-parens
+export const mapDataToState = (data: Object): Array<BlogPost> => (
+  data.map((post: Object): BlogPost => ({
     slug: post.urlId,
     category: post.categories[0],
     title: post.title,
