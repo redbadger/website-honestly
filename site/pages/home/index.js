@@ -8,21 +8,21 @@ import BlogSlice from './blog-slice';
 import ContactUs from './contact-us-slice';
 import NewsLetter from './newsletter-slice';
 
-const HomePage = ({ contactUsURL }) => (
+const HomePage = ({ contactUsURL, featuredBlogPosts }) => (
   <div>
     <TopSlice />
     <CaseStudy />
     <Brie />
     <TechSlice />
     <ContactUs postURL={contactUsURL} />
-    <BlogSlice />
+    <BlogSlice featuredBlogPosts={featuredBlogPosts} />
     <NewsLetter />
   </div>
 );
 
-const { string } = React.PropTypes;
 HomePage.propTypes = {
-  contactUsURL: string,
+  contactUsURL: React.PropTypes.string,
+  featuredBlogPosts: React.PropTypes.array,
 };
 
 export default HomePage;
