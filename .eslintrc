@@ -1,5 +1,8 @@
 {
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
   "env": {
     "browser": true,
     "mocha": true
@@ -8,6 +11,9 @@
     "expect": true
   },
   "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true
@@ -51,5 +57,6 @@
     "react/sort-comp": 1,
     "react/jsx-wrap-multilines": 1,
     "react/jsx-filename-extension": 0,
+    "no-duplicate-imports": 0
   }
 }

@@ -29,6 +29,7 @@ provider:
 functions:
   publish:
     handler: index.publish
+    timeout: 60
     events:
       - http:
           path: publish

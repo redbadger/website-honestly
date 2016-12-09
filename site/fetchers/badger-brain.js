@@ -12,12 +12,12 @@ const getRequestOptions = (body, token) => ({
   body,
 });
 
-const sortEvents = (list) =>
+const sortEvents = list =>
   list.sort((a, b) =>
     new Date(b.startDateTime.iso) - new Date(a.startDateTime.iso));
 
-export const selectValidEvents = (list) =>
-  list.filter((listItem) => !!listItem.startDateTime &&
+export const selectValidEvents = list =>
+  list.filter(listItem => !!listItem.startDateTime &&
     !!listItem.startDateTime.iso);
 
 const basicFields = `
@@ -73,6 +73,6 @@ export function getEvents() {
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
-          .then((response) => response.json())
-          .then((events) => sortEvents(selectValidEvents(events.data.allEvents)));
+          .then(response => response.json())
+          .then(events => sortEvents(selectValidEvents(events.data.allEvents)));
 }

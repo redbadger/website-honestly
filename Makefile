@@ -46,6 +46,10 @@ test: ## Run the tests
 	$(MOCHA)
 
 
+flow: ## Run the type checker
+	$(NBIN)/flow
+
+
 test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
@@ -114,6 +118,7 @@ dist/static-site:
 	dev-static \
 	install \
 	check-deps \
+	flow \
 	lint \
 	help \
 	clear \

@@ -1,3 +1,4 @@
+// @flow
 import InlineSVG from 'svg-inline-react';
 import classnames from 'classnames/bind';
 import React from 'react';

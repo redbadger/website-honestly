@@ -15,16 +15,6 @@ const lambdaConfig = webpackMerge(baseConfig, {
     'aws-sdk',
     './client-digest',
   ],
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        unused: true,
-        dead_code: true,
-        warnings: false,
-        drop_debugger: true,
-      },
-    }),
-  ],
 });
 
 const clientConfig = webpackMerge(baseConfig, {
