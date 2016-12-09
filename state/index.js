@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import Promise from 'bluebird';
 import { getFeaturedPosts } from '../site/fetchers/featured-blog-posts';
 import { getJobs } from '../site/fetchers/workable';
 
@@ -11,20 +12,14 @@ const toDict = (array, keyFn) => array.reduce((obj, item) => ({
   [keyFn(item)]: item,
 }), {});
 
-const getSiteState = () => (new Promise(res => {
-  const state = {
+const getSiteState = () => (
+  getJobs(fetch, process.env.WORKABLE_API_KEY)
+  .then(jobs => Promise.props({
+    jobs,
+    job: toDict(jobs, j => j.slug),
+    featuredBlogPosts: getFeaturedPosts(),
     ...initialState,
-  };
-
-  Promise.all([
-    getJobs(fetch, process.env.WORKABLE_API_KEY).then(jobs => {
-      state.jobs = jobs;
-      state.job = toDict(jobs, j => j.slug);
-    }),
-    getFeaturedPosts().then(posts => {
-      state.featuredBlogPosts = posts;
-    }),
-  ]).then(() => res(state));
-}));
+  }))
+);
 
 export default getSiteState;

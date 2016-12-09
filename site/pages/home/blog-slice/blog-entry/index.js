@@ -4,40 +4,35 @@ import React from 'react';
 import styles from './style.css';
 
 type Author = {
-  bio: string,
-  displayName: string,
+  role: string,
+  name: string,
 }
 
 export type BlogPost = {|
-  urlId: string,
-  categories: Array<string>,
+  slug: string,
+  category: string,
   title: string,
   author: Author,
 |}
-
-const matchAuthorTitle = title => {
-  const match = title.match(/<.+>(.*)<.+>/);
-  return (match && match[1]) || title;
-};
 
 const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
   return (
     <li>
       <a
-        href={'http://red-badger.com/blog/' + featuredBlogPost.urlId}
+        href={'http://red-badger.com/blog/' + featuredBlogPost.slug}
         className={styles.link}
       >
-        <h3 className={styles.category}>{featuredBlogPost.categories[0]}</h3>
+        <h3 className={styles.category}>{featuredBlogPost.category}</h3>
         <div className={styles.linkEntry}>
           <div className={styles.linkTitle}>
             <p>{featuredBlogPost.title}</p>
           </div>
           <div className={styles.authorTitle}>
             <p className={styles.linkAuthor}>
-              {featuredBlogPost.author.displayName}
+              {featuredBlogPost.author.name}
             </p>
             <p className={styles.linkAuthorTitle}>
-              {matchAuthorTitle(featuredBlogPost.author.bio || '')}
+              {featuredBlogPost.author.role}
             </p>
           </div>
         </div>

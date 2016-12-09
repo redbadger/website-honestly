@@ -8,40 +8,13 @@ const cheerioSelector = className => (
 );
 
 describe('site/blog-slice', () => {
-  it('should render OK with bio between p tags', () => {
+  it('should render OK with empty role', () => {
     const posts = [{
+      slug: 'hello',
       title: 'A post',
       author: {
-        displayName: 'Milo',
-        bio: '<p>Software Engineer</p>',
-      },
-      categories: ['Technology'],
-    }];
-    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
-    const className = cheerioSelector(styles.linkAuthorTitle);
-    expect(blogSlice.find(className).text()).to.equal('Software Engineer');
-  });
-
-  it('should render OK with bio between span tags', () => {
-    const posts = [{
-      title: 'A post',
-      author: {
-        displayName: 'Milo',
-        bio: '<span>Software Engineer</span>',
-      },
-      categories: ['Technology'],
-    }];
-    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
-    const className = cheerioSelector(styles.linkAuthorTitle);
-    expect(blogSlice.find(className).text()).to.equal('Software Engineer');
-  });
-
-  it('should render OK with empty bio', () => {
-    const posts = [{
-      title: 'A post',
-      author: {
-        displayName: 'Milo',
-        bio: '',
+        name: 'Milo',
+        role: '',
       },
       categories: ['Technology'],
     }];
@@ -50,12 +23,13 @@ describe('site/blog-slice', () => {
     expect(blogSlice.find(className).text()).to.equal('');
   });
 
-  it('should render OK with undefined bio', () => {
+  it('should render OK with undefined role', () => {
     const posts = [{
+      slug: 'hello',
       title: 'A post',
       author: {
-        displayName: 'Milo',
-        bio: undefined,
+        name: 'Milo',
+        role: undefined,
       },
       categories: ['Technology'],
     }];
@@ -64,12 +38,13 @@ describe('site/blog-slice', () => {
     expect(blogSlice.find(className).text()).to.equal('');
   });
 
-  it('should render OK with plain text bio', () => {
+  it('should render OK with plain text role', () => {
     const posts = [{
+      slug: 'hello',
       title: 'A post',
       author: {
-        displayName: 'Milo',
-        bio: 'Software Engineer',
+        name: 'Milo',
+        role: 'Software Engineer',
       },
       categories: ['Technology'],
     }];
@@ -81,10 +56,10 @@ describe('site/blog-slice', () => {
   it('should prepend domain name to url id', () => {
     const posts = [{
       title: 'A post',
-      urlId: '2016/this-is-a-blog-post',
+      slug: '2016/this-is-a-blog-post',
       author: {
-        displayName: 'Milo',
-        bio: 'Software Engineer',
+        name: 'Milo',
+        role: 'Software Engineer',
       },
       categories: ['Technology'],
     }];

@@ -1,4 +1,7 @@
+/* @flow */
+
 import fetch from 'node-fetch';
+import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 
 const getQueryString = params => {
   return Object.keys(params).map(
@@ -18,6 +21,23 @@ const handleErrors = response => {
   return response;
 };
 
+export const sanitiseAuthorBio = (bio: string = ''): string => { // eslint-disable-line arrow-parens,max-len
+  const role = bio.match(/<.+>(.*)<.+>/);
+  return (role && role[1]) || bio;
+};
+
+export const mapDataToState = (data: Object): Array<BlogPost> => ( // eslint-disable-line arrow-parens,max-len
+  data.map((post: Object): BlogPost => ({ // eslint-disable-line arrow-parens
+    slug: post.urlId,
+    category: post.categories[0],
+    title: post.title,
+    author: {
+      role: sanitiseAuthorBio(post.author.bio),
+      name: post.author.displayName,
+    },
+  }))
+);
+
 const getPosts = params => (new Promise(res => (
   fetch(getUrl(params))
   .then(handleErrors)
@@ -31,10 +51,10 @@ const getPosts = params => (new Promise(res => (
         offset: json.pagination.nextPageOffset,
       };
 
-      return getPosts(newParams).then(newPosts => res(posts.concat(newPosts)));
+      return getPosts(newParams).then(newPosts => res(mapDataToState(posts.concat(newPosts))));
     }
 
-    return res(posts);
+    return res(mapDataToState(posts));
   })
 )));
 
