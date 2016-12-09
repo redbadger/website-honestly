@@ -35,6 +35,9 @@ make services-invoke-publish
 npm install --global yarn
 # Install the deps
 yarn
+# Install the deps for website-next
+cd website-next
+yarn
 
 # Set up the environment variables
 cp .env.example .env
