@@ -16,7 +16,7 @@ const blogSlice = ({ featuredBlogPosts }: { featuredBlogPosts: Array<BlogPost> }
           ))}
         </ul>
         <a
-          href="http://red-badger.com/blog"
+          href="//red-badger.com/blog"
           className={styles.blogLink}
         >
           Read our blog

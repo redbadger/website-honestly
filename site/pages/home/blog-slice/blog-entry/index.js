@@ -19,7 +19,7 @@ const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
   return (
     <li>
       <a
-        href={'http://red-badger.com/blog/' + featuredBlogPost.slug}
+        href={'//red-badger.com/blog/' + featuredBlogPost.slug}
         className={styles.link}
       >
         <h3 className={styles.category}>{featuredBlogPost.category}</h3>

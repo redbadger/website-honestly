@@ -65,6 +65,6 @@ describe('site/blog-slice', () => {
     }];
     const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
     const className = cheerioSelector(styles.link);
-    expect(blogSlice.find(className).attr('href')).to.equal('http://red-badger.com/blog/2016/this-is-a-blog-post');
+    expect(blogSlice.find(className).attr('href')).to.equal('//red-badger.com/blog/2016/this-is-a-blog-post');
   });
 });
