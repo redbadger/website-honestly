@@ -1,12 +1,21 @@
 machine:
   node:
-    version: 4.3.1
+    version: 4.3.0
   environment:
+    YARN_VERSION: 0.17.8
+    PATH: "${PATH}:${HOME}/.yarn/bin"
     ENVIRONMENT_NAME: staging
 
 dependencies:
+  pre:
+    - |
+      if [[ ! -e ~/.yarn/bin/yarn || $(yarn --version) != "${YARN_VERSION}" ]]; then
+        curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
+      fi
+  cache_directories:
+    - ~/.yarn
+    - ~/.yarn-cache
   override:
-    - npm i -g yarn
     - yarn
     - cd website-next && yarn
 
