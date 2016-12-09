@@ -1,4 +1,5 @@
 import 'whatwg-fetch';
+import Navigation from 'navigation';
 import { makeApp } from '../../site/client';
 
 // Hot reloading when state changes
@@ -14,6 +15,7 @@ const handleErrors = response => {
 };
 
 fetch('/state.json').then(handleErrors).then(r => r.json()).then(state => {
-  const app = makeApp({ element, state });
+  const history = new Navigation.HTML5HistoryManager();
+  const app = makeApp({ element, state, history });
   app.start();
 });
