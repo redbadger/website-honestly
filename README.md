@@ -31,7 +31,6 @@ make services-invoke-publish
 ## Dev setup
 
 ```sh
-# Make sure Ruby is installed
 # Install the package manager
 npm install --global yarn
 # Install the deps

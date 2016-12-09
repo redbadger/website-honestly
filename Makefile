@@ -39,7 +39,7 @@ dev-static: dist/static-site dist/dev-static/index.js dist/sw.js ## Compile the 
 	ln -fs ../assets-honestly dist/static-site/assets-honestly
 	cp dist/sw.js dist/static-site/sw.js
 	node dist/dev-static/index.js
-	ruby -run -ehttpd ./dist/static-site -p8000
+	./node_modules/http-server/bin/http-server ./dist/static-site -p 8000
 
 
 test: ## Run the tests
