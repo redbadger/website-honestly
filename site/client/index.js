@@ -1,13 +1,14 @@
 import ReactDOM from 'react-dom';
-import Navigation from 'navigation';
+import { HTML5HistoryManager, StateNavigator } from 'navigation';
 
 import makeRoutes from '../../site/routes';
 
 const TITLE_SUFFIX = 'Red Badger';
 
-export function makeApp({ element, state, history }) {
+export function makeApp({ element, state }) {
   const routes = makeRoutes();
-  const stateNavigator = new Navigation.StateNavigator(
+  const history = new HTML5HistoryManager();
+  const stateNavigator = new StateNavigator(
     routes,
     history
   );
