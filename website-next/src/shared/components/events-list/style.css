@@ -18,6 +18,10 @@
   text-align: left;
 }
 
+.eventsTimelineTitle {
+  font-size: 1.5em;
+}
+
 .eventsList {
   font-size: 1em;
   margin-top: 0;
