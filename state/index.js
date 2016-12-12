@@ -19,9 +19,9 @@ const getSiteState = () => (
       jobs,
       job: toDict(jobs, j => j.slug),
       featuredBlogPosts: getFeaturedPosts(),
+      events: getEvents(),
       ...initialState,
-    }))
-    .then(jobState => getEvents().then(events => ({ ...jobState, events }))
+    })
   )
 );
 
