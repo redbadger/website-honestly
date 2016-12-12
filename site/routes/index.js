@@ -7,6 +7,7 @@ import NotFoundPage from '../pages/not-found';
 import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
+import AboutUsPage from '../pages/about-us';
 
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
@@ -44,6 +45,7 @@ const componentMap = {
   notFoundPage: NotFoundPage,
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
+  aboutUs: AboutUsPage,
 };
 
 export default function routes() {
