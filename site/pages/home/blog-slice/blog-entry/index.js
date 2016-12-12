@@ -1,44 +1,44 @@
-import React, { PropTypes } from 'react';
+// @flow
+
+import React from 'react';
 import styles from './style.css';
 
-const BlogEntry = ({
-  category,
-  title,
-  url,
-  authorName,
-  authorTitle,
-}) => {
+type Author = {
+  role: string,
+  name: string,
+}
+
+export type BlogPost = {
+  slug: string,
+  category: string,
+  title: string,
+  author: Author,
+}
+
+const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
   return (
     <li>
       <a
-        href={url}
+        href={'//red-badger.com/blog/' + featuredBlogPost.slug}
         className={styles.link}
       >
-        <h3 className={styles.category}>{category}</h3>
+        <h3 className={styles.category}>{featuredBlogPost.category}</h3>
         <div className={styles.linkEntry}>
           <div className={styles.linkTitle}>
-            <p>{title}</p>
+            <p>{featuredBlogPost.title}</p>
           </div>
           <div className={styles.authorTitle}>
             <p className={styles.linkAuthor}>
-              {authorName}
+              {featuredBlogPost.author.name}
             </p>
             <p className={styles.linkAuthorTitle}>
-              {authorTitle}
+              {featuredBlogPost.author.role}
             </p>
           </div>
         </div>
       </a>
     </li>
   );
-};
-
-BlogEntry.propTypes = {
-  category: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  authorName: PropTypes.string.isRequired,
-  authorTitle: PropTypes.string.isRequired,
 };
 
 export default BlogEntry;
