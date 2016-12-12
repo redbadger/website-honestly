@@ -31,8 +31,6 @@
 
 .eventTitleLink {
   text-decoration: none;
-  display: inline-block;
-  height: 25px;
 }
 
 .eventTitle {
@@ -42,6 +40,8 @@
   display: inline;
   float: left;
   margin-bottom: 0;
+  line-height: 29px;
+  border-bottom: 2px solid #fff;
 }
 
 .eventTitle span {
