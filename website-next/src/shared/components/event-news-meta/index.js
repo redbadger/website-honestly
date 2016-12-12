@@ -36,7 +36,6 @@ const EventNewsMeta = ({
         internalLinks,
       })
     }
-    {tagsSection}
     </div>);
 };
 
