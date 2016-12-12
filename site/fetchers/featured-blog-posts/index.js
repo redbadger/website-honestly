@@ -1,6 +1,7 @@
 /* @flow */
 
 import fetch from 'node-fetch';
+import take from 'lodash.take';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 import handleErrors from '../handle-errors';
 
@@ -25,7 +26,7 @@ export const mapDataToState = (data: Object): Array<BlogPost> => (
     category: post.categories[0],
     title: post.title,
     author: {
-      role: sanitiseAuthorBio(post.author.bio),
+      role: sanitiseAuthorBio(post.author.bio) || 'Badger blogger',
       name: post.author.displayName,
     },
   }))
@@ -51,4 +52,4 @@ const getPosts = params => (new Promise(res => (
   })
 )));
 
-export const getFeaturedPosts = () => getPosts({ tag: 'featured' });
+export const getFeaturedPosts = () => getPosts({ tag: 'featured' }).then(posts => take(posts, 3));

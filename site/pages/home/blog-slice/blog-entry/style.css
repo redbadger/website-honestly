@@ -59,7 +59,6 @@
   }
 
   .authorTitle {
-    align-self: flex-end;
     margin-left: 100px;
     width: 250px;
     display: block;
