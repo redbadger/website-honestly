@@ -4,10 +4,10 @@ import style from './style.css';
 
 const Principle = ({ number, title, description }) => (
   <div className={style.container}>
-    <div>
+    <div className={style.leftCol}>
       <div className={style.number}>{number}</div>
     </div>
-    <div style={{ paddingLeft: 24 }}>
+    <div className={style.rightCol}>
       <div className={style.title}>{title}</div>
       <div className={style.description}>{description}</div>
     </div>

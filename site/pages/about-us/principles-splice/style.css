@@ -1,42 +1,46 @@
 @value mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+@value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
 
 .principles {
-	background: #212121;
-	color: #f8f8f8;
+	background:badgerBlack;
 	color: badgerWhite;
-	font-weight: 900;
-	font-style: normal;
-	font-stretch: normal;
-	font-family: Sentinel;
 	padding-top: 30px;
 }
 
+.container{
+	margin: auto;
+	max-width: 350px;
+}
+
 .header {
-	font-size: 60px;
-	font-weight: 900;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.1;
-	padding-left: 20px;
+  composes: serif from "../../../css/typography/_fonts.css";
+	composes: fontL from "../../../css/typography/_fonts.css";
+	padding-bottom: 10px;
+	margin-left: -40px;
 }
 
 .thisIsWhatWeBelieveIn {
-	padding-left: 20px;
-	font-size: 20px;
-	font-stretch: normal;
-	font-family: Sentinel;
-	font-weight: 900;
-	line-height: 1.35;
-	padding-bottom: 40px;
+  composes: serif from "../../../css/typography/_fonts.css";
+	composes: fontS2 from "../../../css/typography/_fonts.css";
+	padding-bottom: 10px;
+	max-width: 650px;
+	margin-left: -40px;
 }
 
 
 @media mediumScreen {
+	.container{
+		max-width: 700px;
+	}
+
 	.header {
-		padding-left: 120px;
+		padding-left: 10px;
+		margin-left: 0;
 	}
 
 	.thisIsWhatWeBelieveIn {
-		padding-left: 120px;
+		max-width: 650px;
+		padding-left: 10px;
+		margin-left: 0;
 	}
 }
