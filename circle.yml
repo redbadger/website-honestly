@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 4.3.0
+    version: 4.3.2
   environment:
     YARN_VERSION: 0.18.0
     PATH: "${PATH}:${HOME}/.yarn/bin"
@@ -15,6 +15,7 @@ dependencies:
   cache_directories:
     - ~/.yarn
     - ~/.yarn-cache
+    - website-next/node_modules
   override:
     - yarn
     - cd website-next && yarn
