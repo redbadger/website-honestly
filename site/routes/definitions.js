@@ -22,7 +22,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
   },
   {
     title: 'About Us',
-    key: 'aboutUs',
+    key: 'aboutUsPage',
     route: 'about-us',
   },
   {
