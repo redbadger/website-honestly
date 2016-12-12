@@ -31,8 +31,8 @@
 
 .eventTitleLink {
   text-decoration: none;
-  display:inline-block;;
-  border-bottom: 2px solid badgerRed;
+  display: inline-block;
+  height: 25px;
 }
 
 .eventTitle {
@@ -46,6 +46,10 @@
 
 .eventTitle span {
   display: inline;
+}
+
+.eventTitle:hover, .eventTitle:active, .eventTitle:focus {
+  border-bottom: 2px solid badgerRed;
 }
 
 .arrow {
