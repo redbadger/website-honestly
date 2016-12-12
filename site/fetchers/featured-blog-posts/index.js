@@ -26,7 +26,7 @@ export const mapDataToState = (data: Object): Array<BlogPost> => (
     category: post.categories[0],
     title: post.title,
     author: {
-      role: sanitiseAuthorBio(post.author.bio),
+      role: sanitiseAuthorBio(post.author.bio) || 'Badger blogger',
       name: post.author.displayName,
     },
   }))
