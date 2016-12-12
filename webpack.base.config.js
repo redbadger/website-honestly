@@ -60,7 +60,7 @@ const baseConfig = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new ExtractTextPlugin(
-      'assets-honestly/styles-[contenthash:base64:5].css',
+      '/assets-honestly/styles-[contenthash:base64:5].css',
       { allChunks: true }
     ),
     new CopyWebpackPlugin([

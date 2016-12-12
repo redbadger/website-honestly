@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const devAppConfig = webpackMerge(baseConfig, {
   entry: {
-    'dev-app': './dev/browser-app/index.js',
+    '/dev-app': './dev/browser-app/index.js',
   },
   target: 'web',
   plugins: [

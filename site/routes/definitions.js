@@ -34,6 +34,12 @@ export const routeDefinitions : Array<RouteDefinition> = [
     gen: state => Object.keys(state.job || {}),
   },
   {
+    title: 'Events',
+    key: 'events',
+    route: 'about-us/events',
+    stateToProps: ({ events }) => ({ events }),
+  },
+  {
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',
@@ -47,11 +53,5 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'Lost connection',
     key: 'offlinePage',
     route: 'offline',
-  },
-  {
-    title: 'Events',
-    key: 'events',
-    route: 'about-us/events',
-    stateToProps: ({ events }) => ({ events }),
   },
 ];
