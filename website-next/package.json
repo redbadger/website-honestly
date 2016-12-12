@@ -108,8 +108,6 @@
     "sinon": "^2.0.0-pre",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "wdio": "^0.3.1",
-    "webdriverio": "^3.4.0",
     "webpack": "^1.12.12",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.6.4"
