@@ -1,5 +1,5 @@
 @value mobile from "../variables/breakpoints.css";
-@value red from "../variables/colors.css";
+@value badgerRed from "../../../../../site/css/_colors.css";
 
 .eventsListTimelineSection {
   margin-bottom: 50px;
@@ -31,6 +31,8 @@
 
 .eventTitleLink {
   text-decoration: none;
+  display:inline-block;;
+  border-bottom: 2px solid badgerRed;
 }
 
 .eventTitle {
@@ -46,22 +48,20 @@
   display: inline;
 }
 
-.eventTitle:hover, .eventTitle:active, .eventTitle:focus {
-  color: red;
-}
-
 .arrow {
-  color: red;
+  color: badgerRed;
   padding-left: 5px;
 }
 
 .eventDescription {
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
   float: left;
   width: 100%;
   margin-top: 10px;
 }
 
 .eventLinks {
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
   composes: cf from "../../components/utils/layout.css";
   margin-bottom: 1em;
 }

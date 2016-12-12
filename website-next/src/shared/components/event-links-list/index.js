@@ -26,12 +26,6 @@ const EventLinksList = ({
             target={listType === 'external' ? '_blank' : null}
           >
             <span>{eventLink.title}</span>
-            <span className={classNames({
-              [icons.sketchExternalLink]: listType === 'external',
-              [icons.sketchArrowRight]: listType === 'internal',
-              [styles.externalLinkIcon]: true,
-            })}
-            />
           </a>
         ))
       }

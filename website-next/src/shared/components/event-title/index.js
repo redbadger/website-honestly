@@ -17,12 +17,6 @@ const EventTitle = ({
       <span>
         {eventTitle}
       </span>
-      <span className={classNames(
-        {
-          [styles.arrow]: true,
-          [icons.sketchArrowRight]: true,
-        })}
-      />
     </h2>
   </a>
 );
