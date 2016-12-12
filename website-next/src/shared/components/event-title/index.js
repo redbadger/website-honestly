@@ -8,17 +8,17 @@ const EventTitle = ({
   eventTitle,
   eventHref,
 }) => (
-  <a className={styles.eventTitleLink}
-    href={eventHref}>
     <h2 className={classNames({
       [styles.eventTitle]: true,
       [h2]: true,
     })}>
-      <span>
-        {eventTitle}
-      </span>
+      <a className={styles.eventTitleLink}
+        href={eventHref}>
+        <span>
+          {eventTitle}
+        </span>
+      </a>
     </h2>
-  </a>
 );
 
 EventTitle.propTypes = {

@@ -30,7 +30,9 @@
 }
 
 .eventTitleLink {
+  color: badgerBlack;
   text-decoration: none;
+  line-height: 30px;
 }
 
 .eventTitle {
@@ -40,15 +42,13 @@
   display: inline;
   float: left;
   margin-bottom: 0;
-  line-height: 29px;
-  border-bottom: 2px solid #fff;
 }
 
 .eventTitle span {
   display: inline;
 }
 
-.eventTitle:hover, .eventTitle:active, .eventTitle:focus {
+.eventTitleLink:hover, .eventTitleLink:active, .eventTitleLink:focus {
   border-bottom: 2px solid badgerRed;
 }
 
