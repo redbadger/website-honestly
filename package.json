@@ -46,7 +46,6 @@
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
     "isomorphic-fetch": "^2.2.1",
-    "js-dom": "0.0.1",
     "jsdom": "^9.5.0",
     "json-loader": "^0.5.4",
     "lodash": "^4.16.2",
