@@ -1,6 +1,7 @@
 /* @flow */
 
 import fetch from 'node-fetch';
+import take from 'lodash.take';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 import handleErrors from '../handle-errors';
 
@@ -51,4 +52,4 @@ const getPosts = params => (new Promise(res => (
   })
 )));
 
-export const getFeaturedPosts = () => getPosts({ tag: 'featured' });
+export const getFeaturedPosts = () => getPosts({ tag: 'featured' }).then(posts => take(posts, 3));
