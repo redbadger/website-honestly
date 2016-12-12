@@ -8,7 +8,7 @@ const Principle = ({ number, title, description }) => (
       <div className={style.number}>{number}</div>
     </div>
     <div className={style.rightCol}>
-      <div className={style.title}>{title}</div>
+      <h3 className={style.title}>{title}</h3>
       <div className={style.description}>{description}</div>
     </div>
   </div>

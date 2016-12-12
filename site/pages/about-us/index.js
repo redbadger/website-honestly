@@ -1,10 +1,10 @@
 import React from 'react';
-import PrinciplesSplice from './principles-splice';
+import PrinciplesSlice from './principles-slice';
 
 export default function AboutUs() {
   return (
     <div>
-      <PrinciplesSplice />
+      <PrinciplesSlice />
     </div>
   );
 }
