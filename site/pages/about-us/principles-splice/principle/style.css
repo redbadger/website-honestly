@@ -1,0 +1,45 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+
+.container{
+	display: flex; 
+	padding-left: 20px; 
+	padding-bottom: 20px;
+}
+
+.number {
+	padding-top: 5px;
+	font-family: ProximaNova;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	border-bottom: 5px solid #fc1d42; 
+}
+
+.title {
+	font-family: Sentinel;
+	font-size: 30px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.1;
+	padding-bottom: 10px
+}
+
+.description{
+	font-family: ProximaNova;
+	font-size: 16px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+}
+
+
+
+@media mediumScreen {
+	.container {
+		padding-left: 80px; 
+	}
+}

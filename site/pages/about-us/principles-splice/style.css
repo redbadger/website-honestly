@@ -1,0 +1,42 @@
+@value mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+
+.principles {
+	background: #212121;
+	color: #f8f8f8;
+	color: badgerWhite;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	font-family: Sentinel;
+	padding-top: 30px;
+}
+
+.header {
+	font-size: 60px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.1;
+	padding-left: 20px;
+}
+
+.thisIsWhatWeBelieveIn {
+	padding-left: 20px;
+	font-size: 20px;
+	font-stretch: normal;
+	font-family: Sentinel;
+	font-weight: 900;
+	line-height: 1.35;
+	padding-bottom: 40px;
+}
+
+
+@media mediumScreen {
+	.header {
+		padding-left: 120px;
+	}
+
+	.thisIsWhatWeBelieveIn {
+		padding-left: 120px;
+	}
+}
