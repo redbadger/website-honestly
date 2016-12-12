@@ -45,7 +45,7 @@ const componentMap = {
   notFoundPage: NotFoundPage,
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
-  aboutUs: AboutUsPage,
+  aboutUsPage: AboutUsPage,
 };
 
 export default function routes() {
