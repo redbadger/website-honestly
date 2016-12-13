@@ -23,10 +23,13 @@ const titleFor = (def, props) => {
   Expanded: /, /about-us/join-us/software-engineer etc.
 */
 
+const routeFilePath = path => (path === '' ? `${path}index.html` : `${path}/index.html`);
+
 export const expandRoutes = (routeDefs, state, stateNavigator) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
     title: titleFor(def, def.stateToProps && def.stateToProps(state)),
+    filePath: routeFilePath(stateNavigator.getNavigationLink(def.key).substring(1)),
     props: def.stateToProps && def.stateToProps(state),
   }));
 
@@ -34,8 +37,7 @@ export const expandRoutes = (routeDefs, state, stateNavigator) => {
     return def.gen(state).map(params => ({
       ...def,
       title: titleFor(def, def.stateToProps && def.stateToProps(state, params)),
-      route: stateNavigator.getNavigationLink(def.key, params),
-      filePath: def.filePath.replace('{slug}', params.slug),
+      filePath: routeFilePath(stateNavigator.getNavigationLink(def.key, params).substring(1)),
       props: def.stateToProps && def.stateToProps(state, params),
     }));
   });
@@ -52,7 +54,7 @@ export function compileRoutes(siteRoutes, state) {
   */
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
-    new Navigation.HTML5HistoryManager()
+    new Navigation.HTML5HistoryManager(process.env.URL_BASENAME)
   );
 
   const compile = route => {
