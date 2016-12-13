@@ -1,7 +1,7 @@
 import assetsDigest from './client-digest';
 
 function filePath(path) {
-  return `${process.env.URL_BASENAME || ''}/${path}`;
+  return `/${process.env.URL_BASENAME || ''}${path}`;
 }
 
 const bundleName = assetsDigest.metadata.bundleName;

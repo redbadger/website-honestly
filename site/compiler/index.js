@@ -58,7 +58,7 @@ export function compileRoutes(siteRoutes, state) {
   );
 
   const compile = route => {
-    const path = route.filePath;
+    const path = (process.env.URL_BASENAME || '') + route.filePath;
     const props = route.stateToProps && route.stateToProps(state, route.slug);
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
