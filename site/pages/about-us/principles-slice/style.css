@@ -28,14 +28,12 @@
 .buttons{
 	text-align: center;
 	padding-top: 30px;
-	padding-bottom: 30px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	padding-bottom: 50px;
 }
 
-.buttons a {
+.buttons a button{
 	margin-bottom: 20px;
+	margin-right: 20px;
 }
 
 
