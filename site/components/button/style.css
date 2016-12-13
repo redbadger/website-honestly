@@ -10,6 +10,12 @@
   border: none;
 }
 
+
+.yellow{
+  background: badgerBlack !important;
+  color: badgerWhite !important;
+}
+
 .light:hover,
 .dark:hover,
 .yellow:hover{
@@ -19,17 +25,17 @@
 .light:focus,
 .dark:focus,
 .yellow:focus{
-  cursor: pointer;
+  outline: none;
 }
 
 .light:hover{
-  background: #212121;
+  background: #212121 !important;
 }
 
 .dark:hover{
-  background: #606060;
+  background: #606060 !important;
 }
 
 .yellow:hover{
-  background: #212121;
+  background: #606060 !important;
 }

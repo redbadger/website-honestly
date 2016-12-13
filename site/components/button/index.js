@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './style.css';
 
 
-const Button = ({ label, background }) => {
+const Button = ({ label, background, onClick }) => {
   let className;
   switch (background) {
     case 'black':
@@ -16,12 +16,13 @@ const Button = ({ label, background }) => {
       break;
   }
 
-  return <button className={className}>{label}</button>;
+  return <button className={className} onClick={onClick}>{label}</button>;
 };
 
 Button.propTypes = {
   label: React.PropTypes.string,
   background: React.PropTypes.string,
+  onClick: React.PropTypes.func,
 };
 
 export default Button;
