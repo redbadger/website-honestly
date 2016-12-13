@@ -1,0 +1,24 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
+@value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
+
+.button{
+  background: badgerRed;
+  color: badgerWhite;
+  border: none;
+  composes: sansSerif from "../../css/typography/_fonts.css";
+	composes: fontM from "../../css/typography/_fonts.css";
+  width: 230px;
+  height: 60px;
+  font-weight: 900;
+}
+
+.button:hover{
+  background: #b3001e;
+  cursor: pointer;
+}
+
+.button:focus{
+  outline: none;
+}
+
+
