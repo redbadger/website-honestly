@@ -11,7 +11,7 @@ const cbWithErrorHandling = cb => (e, body) => {
   return cb(null, body);
 };
 
-const errorHandlerWrapper = (f, event, context, cb) => {
+const errorHandlerWrapper = f => (event, context, cb) => {
   try {
     f(event, context, cbWithErrorHandling(cb));
   } catch (e) {
@@ -24,17 +24,11 @@ export function publish(event, context, cb) {
     return cb(new Error('[403] Forbidden'));
   }
 
-  errorHandlerWrapper(doPublish, event, context, cb);
+  errorHandlerWrapper(doPublish)(event, context, cb);
 }
 
-export function contactUs(event, context, cb) {
-  errorHandlerWrapper(doContactUs, event, context, cb);
-}
+export const contactUs = errorHandlerWrapper(doContactUs);
 
-export function signUp(event, context, cb) {
-  errorHandlerWrapper(doSignUp, event, context, cb);
-}
+export const signUp = errorHandlerWrapper(doSignUp);
 
-export function updateUser(event, context, cb) {
-  errorHandlerWrapper(doUpdateUser, event, context, cb);
-}
+export const updateUser = errorHandlerWrapper(doUpdateUser);
