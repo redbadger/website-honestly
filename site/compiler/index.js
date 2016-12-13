@@ -54,7 +54,7 @@ export function compileRoutes(siteRoutes, state) {
   */
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
-    new Navigation.HTML5HistoryManager(process.env.URL_BASENAME)
+    new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').substring(1))
   );
 
   const compile = route => {
