@@ -3,7 +3,7 @@
 import { mailchimpApi, formatFormInput, formatSignUpResponse } from '../utilities';
 
 
-export default function signUp(event, cb) {
+export default function signUp(event, context, cb) {
   const mailingListId = process.env.MAILING_LIST_ID;
   const body = formatFormInput(event);
   return mailchimpApi(

@@ -11,38 +11,30 @@ const cbWithErrorHandling = cb => (e, body) => {
   return cb(null, body);
 };
 
+const errorHandlerWrapper = (f, event, context, cb) => {
+  try {
+    f(event, context, cbWithErrorHandling(cb));
+  } catch (e) {
+    cbWithErrorHandling(cb)(e);
+  }
+};
+
 export function publish(event, context, cb) {
   if (event.query && event.query.auth_token !== process.env.PRIVATE_LAMBDA_API_KEY) {
     return cb(new Error('[403] Forbidden'));
   }
 
-  try {
-    doPublish(cbWithErrorHandling(cb));
-  } catch (e) {
-    cbWithErrorHandling(cb)(e);
-  }
+  errorHandlerWrapper(doPublish, event, context, cb);
 }
 
 export function contactUs(event, context, cb) {
-  try {
-    doContactUs(event, cbWithErrorHandling(cb));
-  } catch (e) {
-    cbWithErrorHandling(cb)(e);
-  }
+  errorHandlerWrapper(doContactUs, event, context, cb);
 }
 
 export function signUp(event, context, cb) {
-  try {
-    doSignUp(event, cbWithErrorHandling(cb));
-  } catch (e) {
-    cbWithErrorHandling(cb)(e);
-  }
+  errorHandlerWrapper(doSignUp, event, context, cb);
 }
 
 export function updateUser(event, context, cb) {
-  try {
-    doUpdateUser(event, cbWithErrorHandling(cb));
-  } catch (e) {
-    cbWithErrorHandling(cb)(e);
-  }
+  errorHandlerWrapper(doUpdateUser, event, context, cb);
 }
