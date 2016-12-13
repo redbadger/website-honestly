@@ -22,3 +22,10 @@
 }
 
 
+
+
+@media largeScreen {
+	.button {
+     width: 290px;
+	}
+}
