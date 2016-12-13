@@ -3,7 +3,7 @@ import aws from 'aws-sdk'; // eslint-disable-line import/no-unresolved, import/n
 import { validateAndSendEmail } from './ses';
 
 
-export default function doContactUs(event, context, cb) {
+export default function doContactUs(event, _, cb) {
   const contactUsEmailTo = process.env.CONTACT_US_EMAIL_TO;
 
   if (!contactUsEmailTo) {

@@ -10,7 +10,7 @@ if (!bucketName) {
   throw new Error('bucketName environment variable not set!');
 }
 
-export default function doPublish(event, context, cb) {
+export default function doPublish(_, __, cb) {
   console.log(`Publishing to S3 bucket ${bucketName}`);
   getSiteState()
     .then(compileSite)

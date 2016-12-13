@@ -1,7 +1,7 @@
 import md5 from 'md5';
 import { mailchimpApi, formatUpdateResponse, formatFormInput } from '../utilities';
 
-export default function doUpdateUser(event, context, cb) {
+export default function doUpdateUser(event, _, cb) {
   const mailingListId = process.env.MAILING_LIST_ID;
   const body = formatFormInput(event, true);
   const emailAddress = body.email_address.toLowerCase();
