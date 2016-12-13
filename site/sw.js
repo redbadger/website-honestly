@@ -8,7 +8,10 @@ const OFFLINE_URL = 'offline';
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      const routesToCache = routeDefinitions.map(def => def.route);
+      const routesToCache = routeDefinitions
+      .filter(def => {
+        return {}.hasOwnProperty.call(def, 'cacheable') && def.cacheable;
+      }).map(def => def.route);
       return cache.addAll(routesToCache);
     })
   );
