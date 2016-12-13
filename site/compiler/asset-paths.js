@@ -1,8 +1,7 @@
 import assetsDigest from './client-digest';
-import { fullPath } from '../routes';
 
 function filePath(path) {
-  return '/' + fullPath(path);
+  return `/${process.env.URL_BASENAME || ''}${path}`;
 }
 
 const bundleName = assetsDigest.metadata.bundleName;
