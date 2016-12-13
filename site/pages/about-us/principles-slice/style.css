@@ -27,6 +27,16 @@
 	margin-left: -40px;
 }
 
+.buttons{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.buttons:first {
+	margin-right: 40px;
+}
+
 
 @media mediumScreen {
 	.container{
