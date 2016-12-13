@@ -25,11 +25,15 @@ const titleFor = (def, props) => {
 
 const routeFilePath = path => (path === '' ? `${path}index.html` : `${path}/index.html`);
 
+const filePathFor = (stateNavigator, key, params) => (
+  routeFilePath(stateNavigator.getNavigationLink(key, params).substring(1))
+);
+
 export const expandRoutes = (routeDefs, state, stateNavigator) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
     title: titleFor(def, def.stateToProps && def.stateToProps(state)),
-    filePath: routeFilePath(stateNavigator.getNavigationLink(def.key).substring(1)),
+    filePath: filePathFor(stateNavigator, def.key),
     props: def.stateToProps && def.stateToProps(state),
   }));
 
@@ -37,7 +41,7 @@ export const expandRoutes = (routeDefs, state, stateNavigator) => {
     return def.gen(state).map(params => ({
       ...def,
       title: titleFor(def, def.stateToProps && def.stateToProps(state, params)),
-      filePath: routeFilePath(stateNavigator.getNavigationLink(def.key, params).substring(1)),
+      filePath: filePathFor(stateNavigator, def.key, params),
       props: def.stateToProps && def.stateToProps(state, params),
     }));
   });
