@@ -4,8 +4,8 @@ type RouteDefinition = {|
   title: string | (props: Object) => string,
   key: string,
   route: string,
-  stateToProps?: (state: Object, slug?: string) => any,
-  gen?: (state: Object) => Array<string>
+  stateToProps?: (state: Object, params?: Object) => any,
+  gen?: (state: Object) => Array<Object>
 |}
 
 export const routeDefinitions : Array<RouteDefinition> = [
@@ -30,8 +30,8 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: ({ job }) => job.title,
     key: 'job',
     route: 'about-us/join-us/{slug}',
-    stateToProps: (state, slug) => ({ job: state.job[slug] }),
-    gen: state => Object.keys(state.job || {}),
+    stateToProps: (state, params = {}) => ({ job: state.job[params.slug] }),
+    gen: state => state.jobs.map(({ slug }) => ({ slug })),
   },
   {
     title: 'Events',

@@ -18,9 +18,9 @@ export function makeApp({ element, state }) {
   }
 
   routes.forEach(route => {
-    const render = ({ slug }) => {
+    const render = params => {
       window.scrollTo(0, 0);
-      const props = route.stateToProps && route.stateToProps(state, slug);
+      const props = route.stateToProps && route.stateToProps(state, params);
       const pageTitle = typeof route.title === 'function' ? route.title(props) : route.title;
       const title = `${pageTitle} | ${TITLE_SUFFIX}`;
       stateNavigator.stateContext.title = title;
