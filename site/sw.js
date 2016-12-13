@@ -1,18 +1,7 @@
 /* disable eslint */
 
-import { routeDefinitions } from './routes/definitions';
-
 const CACHE_NAME = 'v1';
 const OFFLINE_URL = 'offline';
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      const routesToCache = routeDefinitions.map(def => def.route);
-      return cache.addAll(routesToCache);
-    })
-  );
-});
 
 self.addEventListener('fetch', event => {
   const { url } = event.request;
