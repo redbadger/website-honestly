@@ -33,11 +33,3 @@
 .yellow:hover{
   background: #212121;
 }
-
-@media largeScreen {
-  .light,
-  .dark,
-  .yellow{
-    width: 290px;
-  }
-}
