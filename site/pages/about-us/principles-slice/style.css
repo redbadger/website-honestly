@@ -8,23 +8,21 @@
 }
 
 .container{
+	padding-left: 20px;
+	padding-right: 20px;
 	margin: auto;
-	max-width: 350px;
 }
 
 .header {
   composes: serif from "../../../css/typography/_fonts.css";
 	composes: fontL from "../../../css/typography/_fonts.css";
 	padding-bottom: 10px;
-	margin-left: -40px;
 }
 
 .thisIsWhatWeBelieveIn {
   composes: serif from "../../../css/typography/_fonts.css";
 	composes: fontS2 from "../../../css/typography/_fonts.css";
 	padding-bottom: 10px;
-	max-width: 650px;
-	margin-left: -40px;
 }
 
 .buttons{
@@ -44,13 +42,12 @@
 	}
 
 	.header {
-		padding-left: 10px;
+		padding-left: 50px;
 		margin-left: 0;
 	}
 
 	.thisIsWhatWeBelieveIn {
-		max-width: 650px;
-		padding-left: 10px;
+		padding-left: 50px;
 		margin-left: 0;
 	}
 }
