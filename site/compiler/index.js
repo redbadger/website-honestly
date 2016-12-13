@@ -25,9 +25,13 @@ const titleFor = (def, props) => {
 
 const routeFilePath = path => (path === '' ? `${path}index.html` : `${path}/index.html`);
 
-const filePathFor = (stateNavigator, key, params) => (
-  routeFilePath(stateNavigator.getNavigationLink(key, params).substring(1))
-);
+const filePathFor = (stateNavigator, key, params) => {
+  const route = stateNavigator.getNavigationLink(key, params);
+  if (!route) {
+    throw new Error(`The route could not be matched for key: ${key}, params: ${JSON.stringify(params)}`);
+  }
+  return routeFilePath(route.substring(1));
+};
 
 export const expandRoutes = (routeDefs, state, stateNavigator) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
@@ -58,15 +62,14 @@ export function compileRoutes(siteRoutes, state) {
   */
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
-    new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').substring(1))
+    new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
   );
 
   const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
-    const props = route.stateToProps && route.stateToProps(state, route.slug);
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
-    const bodyContent = renderToString(route.component({ stateNavigator, title }, props));
+    const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
     const body = layoutTemplate({
       title,
       tracking,
