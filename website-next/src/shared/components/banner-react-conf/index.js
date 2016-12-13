@@ -9,14 +9,17 @@ export default class BannerReactConf extends Component {
         <a href="https://react.london/" target="_blank">
           <img
             src={`${imageAssetsEndpoint}react-conf-desktop-banner.png`}
+            alt="React London 2017"
             className={styles.reactConfDesktopBanner}
           />
           <img
             src={`${imageAssetsEndpoint}react-conf-tablet-banner.png`}
+            alt="React London 2017"
             className={styles.reactConfTabletBanner}
           />
           <img
             src={`${imageAssetsEndpoint}react-conf-mobile-banner.png`}
+            alt="React London 2017"
             className={styles.reactConfMobileBanner}
           />
         </a>
