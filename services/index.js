@@ -5,9 +5,13 @@ import doUpdateUser from './mailchimp/update-user/index';
 
 const cbWithErrorHandling = cb => (e, body) => {
   if (e) {
-    e.message = `[500] ${e.message}`; // eslint-disable-line no-param-reassign
-    return cb(e);
+    console.error(e); // eslint-disable-line no-console
+    return cb(null, {
+      body: JSON.stringify({ error: e.message }),
+      statusCode: 500,
+    });
   }
+
   return cb(null, body);
 };
 
@@ -28,7 +32,5 @@ export function publish(event, context, cb) {
 }
 
 export const contactUs = errorHandlerWrapper(doContactUs);
-
 export const signUp = errorHandlerWrapper(doSignUp);
-
 export const updateUser = errorHandlerWrapper(doUpdateUser);
