@@ -20,7 +20,10 @@ export default class SmallScreenNav extends React.Component {
   }
 
   closeMenu = () => {
-    this.input.checked = false;
+    this.setState({
+      navOpen: false,
+    });
+    return true;
   }
 
   render() {
@@ -41,7 +44,7 @@ export default class SmallScreenNav extends React.Component {
           type="checkbox"
           className={styles.trigger}
           id="burger"
-          ref={c => { this.input = c; }}
+          checked={navOpen}
           onChange={this.handleInputChange}
           hidden
         />
@@ -53,17 +56,16 @@ export default class SmallScreenNav extends React.Component {
           />
           <div
             className={styles.smallScreenNavWrapper}
-            hidden={!navOpen}
           >
             <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
 
             <nav className={styles.smallScreenNavContainer} role="navigation">
               <ul role="listbox" className={styles.smallScreenNav}>
-                <li><Link tabIndex={navTabIndex} to="homePage">Home</Link></li>
+                <li><Link tabIndex={navTabIndex} to="homePage" navigating={this.closeMenu}>Home</Link></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/">About us</a></li>
-                <li><Link tabIndex={navTabIndex} to="whatWeDoPage">What we do</Link></li>
+                <li><Link tabIndex={navTabIndex} to="whatWeDoPage" navigating={this.closeMenu}>What we do</Link></li>
                 <li><a tabIndex={navTabIndex} href="/blog/">Blog</a></li>
-                <li><Link tabIndex={navTabIndex} to="events">Events</Link></li>
+                <li><Link tabIndex={navTabIndex} to="events" navigating={this.closeMenu}>Events</Link></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/join-us/">Jobs</a></li>
                 <li><a tabIndex={navTabIndex} href="/about-us/contact-us/">Contact us</a></li>
               </ul>
