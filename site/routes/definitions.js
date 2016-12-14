@@ -13,7 +13,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'Home',
     key: 'homePage',
     route: '',
-    stateToProps: state => ({ featuredBlogPosts: state.featuredBlogPosts }),
+    stateToProps: ({ featuredBlogPosts, contactUsURL }) => ({ featuredBlogPosts, contactUsURL }),
   },
   {
     title: 'What we do',
