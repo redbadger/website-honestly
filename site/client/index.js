@@ -7,7 +7,7 @@ const TITLE_SUFFIX = 'Red Badger';
 
 export function makeApp({ element, state }) {
   const routes = makeRoutes();
-  const history = new HTML5HistoryManager();
+  const history = new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1));
   const stateNavigator = new StateNavigator(
     routes,
     history
