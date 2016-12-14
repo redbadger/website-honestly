@@ -46,6 +46,13 @@ export const routeDefinitions : Array<RouteDefinition> = [
     stateToProps: ({ events }) => ({ events }),
   },
   {
+    title: event => event.title,
+    key: 'event',
+    route: 'about-us/events/{day}/{month}/{year}/{slug}',
+    stateToProps: (state, params = {}) => ({ event: state.event[params.slug] }),
+    gen: state => state.events.map(({ startDateTime: { date, month, year }, slug }) => ({ date, month, year, slug })),
+  },
+  {
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',

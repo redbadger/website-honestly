@@ -1,6 +1,5 @@
-@value black from '../variables/colors.css';
+@value badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
 @value lightGrey2 from '../variables/colors.css';
-@value grey from '../variables/colors.css';
 
 .eventsSideList {
   font-size: 0.875em;
@@ -8,6 +7,7 @@
   background: lightGrey2;
   border-radius: 5px;
   margin-top: 1.5em;
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
 }
 
 .eventsSideListTitle {
@@ -20,14 +20,15 @@
 
 .eventsSideList li {
   list-style: none;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .eventsSideList a {
   text-decoration: none;
-  color: black;
+  color: badgerBlack;
 }
 
 .eventsSideList a:hover {
-  color: grey;
+  color: badgerRed;
 }

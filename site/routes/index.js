@@ -12,12 +12,14 @@ import AboutUsPage from '../pages/about-us';
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
 import Events from '../../website-next/src/shared/containers/events';
+import EventPage from '../../website-next/src/shared/containers/event';
 
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
   joinUs: JoinUsPage,
   job: JobPage,
+  event: EventPage,
   events: Events,
   notFoundPage: NotFoundPage,
   serverErrorPage: ServerErrorPage,
