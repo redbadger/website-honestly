@@ -1,0 +1,47 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
+
+.navigator{
+  margin-bottom: 30px;
+}
+
+.wrapper{
+  position: absolute;
+  height: 2px;
+}
+
+.list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.old,
+.active,
+.future{
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #CCC;
+}
+
+.old:after,
+.active:after,
+.future:after{
+  border: 2px solid #CCC;
+  position: absolute;
+
+}
+
+.old:hover:after,
+.active:hover:after,
+.future:hover:after{
+  border-color: badgerRed;
+  color: badgerRed
+}
+
+.fillingLine {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: badgerRed;
+}

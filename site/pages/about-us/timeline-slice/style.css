@@ -1,0 +1,16 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
+
+.timeline{
+  height: 500px;
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+	composes: fontXS from "../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  top: 60px;
+}
