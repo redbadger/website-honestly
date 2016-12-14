@@ -48,6 +48,7 @@ const EventsNewsListEntry = ({
       <Cell size={1} key="event_picture_mobile" hideOn="mobileSM">
         <EventImage
           imgPath={eventImagePath(featureImageFilename)}
+          imgAlt={title}
           href={eventRenderLink} />
       </Cell>
       <Cell size={12} breakOn="mobile">
@@ -69,6 +70,7 @@ const EventsNewsListEntry = ({
             hideOn="mobileS">
             <EventImage
               imgPath={eventImagePath(featureImageFilename)}
+              imgAlt={title}
               href={eventRenderLink} />
           </Cell>
         </Grid>

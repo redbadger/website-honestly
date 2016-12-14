@@ -1,3 +1,5 @@
+@value badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
+
 .eventLinkList {
   width: 100%;
   float: left;
@@ -6,13 +8,14 @@
 .fullDetailsLink {
   composes: aBold from "../typography/style.css";
   clear: both;
-  color: black;
+  color: badgerBlack;
   display: block;
   text-decoration: none;
   margin-top: 0.8em;
   position: relative;
   text-decoration: none;
   float: left;
+  border-bottom: 1px solid badgerRed;
 }
 
 .fullDetailsLink span {

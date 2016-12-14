@@ -5,7 +5,8 @@ type RouteDefinition = {|
   key: string,
   route: string,
   stateToProps?: (state: Object, params?: Object) => any,
-  gen?: (state: Object) => Array<Object>
+  gen?: (state: Object) => Array<Object>,
+  render?: (state: Object) => any,
 |}
 
 export const routeDefinitions : Array<RouteDefinition> = [
@@ -13,7 +14,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'Home',
     key: 'homePage',
     route: '',
-    stateToProps: state => ({ featuredBlogPosts: state.featuredBlogPosts }),
+    stateToProps: ({ featuredBlogPosts, contactUsURL }) => ({ featuredBlogPosts, contactUsURL }),
   },
   {
     title: 'What we do',
@@ -32,6 +33,12 @@ export const routeDefinitions : Array<RouteDefinition> = [
     route: 'about-us/join-us/{slug}',
     stateToProps: (state, params = {}) => ({ job: state.job[params.slug] }),
     gen: state => state.jobs.map(({ slug }) => ({ slug })),
+  },
+  {
+    title: 'Events',
+    key: 'events',
+    route: 'about-us/events',
+    stateToProps: ({ events }) => ({ events }),
   },
   {
     title: 'Not found',

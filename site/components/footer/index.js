@@ -40,7 +40,7 @@ const Footer = () => (
               <a href="/blog/">Blog</a>
             </li>
             <li>
-              <a href="/about-us/events/">Events</a>
+              <Link to="events">Events</Link>
             </li>
             <li>
               <a href="/about-us/join-us/">Jobs</a>
