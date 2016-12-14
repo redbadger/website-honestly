@@ -23,21 +23,30 @@ const titleFor = (def, props) => {
   Expanded: /, /about-us/join-us/software-engineer etc.
 */
 
-export const expandRoutes = (routeDefs, state) => {
+const routeFilePath = path => (path === '' ? `${path}index.html` : `${path}/index.html`);
+
+const filePathFor = (stateNavigator, key, params) => {
+  const route = stateNavigator.getNavigationLink(key, params);
+  if (!route) {
+    throw new Error(`The route could not be matched for key: ${key}, params: ${JSON.stringify(params)}`);
+  }
+  return routeFilePath(route.substring(1));
+};
+
+export const expandRoutes = (routeDefs, state, stateNavigator) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
     title: titleFor(def, def.stateToProps && def.stateToProps(state)),
+    filePath: filePathFor(stateNavigator, def.key),
     props: def.stateToProps && def.stateToProps(state),
   }));
 
   const dynamicRoutes = routeDefs.filter(def => !!def.gen).map(def => {
-    return def.gen(state).map(slug => ({
+    return def.gen(state).map(params => ({
       ...def,
-      slug,
-      title: titleFor(def, def.stateToProps && def.stateToProps(state, slug)),
-      route: def.route.replace('{slug}', slug),
-      filePath: def.filePath.replace('{slug}', slug),
-      props: def.stateToProps && def.stateToProps(state, slug),
+      title: titleFor(def, def.stateToProps && def.stateToProps(state, params)),
+      filePath: filePathFor(stateNavigator, def.key, params),
+      props: def.stateToProps && def.stateToProps(state, params),
     }));
   });
 
@@ -53,15 +62,14 @@ export function compileRoutes(siteRoutes, state) {
   */
   const stateNavigator = new Navigation.StateNavigator(
     siteRoutes,
-    new Navigation.HTML5HistoryManager()
+    new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
   );
 
   const compile = route => {
-    const path = route.filePath;
-    const props = route.stateToProps && route.stateToProps(state, route.slug);
+    const path = (process.env.URL_BASENAME || '') + route.filePath;
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
-    const bodyContent = renderToString(route.component({ stateNavigator, title }, props));
+    const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
     const body = layoutTemplate({
       title,
       tracking,
@@ -74,7 +82,7 @@ export function compileRoutes(siteRoutes, state) {
     return { body, path };
   };
 
-  return expandRoutes(siteRoutes, state).map(compile);
+  return expandRoutes(siteRoutes, state, stateNavigator).map(compile);
 }
 
 export function compileSite(state) {
