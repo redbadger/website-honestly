@@ -35,6 +35,7 @@ functions:
           path: publish
           method: post
           cors: true
+      - schedule: cron(0 1 * * ? *)
   contactUs:
     handler: index.contactUs
     events:
