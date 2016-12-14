@@ -27,7 +27,11 @@ const Header = () => {
             </Link>
           </li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/about-us/events/">Events</a></li>
+          <li>
+            <Link to="events" activeCssClass={styles.activeNavLink}>
+              Events
+            </Link>
+          </li>
         </ul>
       </nav>
 

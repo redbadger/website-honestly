@@ -1,10 +1,11 @@
 import React from 'react';
+import { StateNavigator } from 'navigation';
 import { compileSite, compileRoutes, expandRoutes } from '.';
 
 describe('site/compiler', () => {
   describe('compileSite', () => {
     it('renders all the pages of the site', () => {
-      const pages = compileSite({ jobs: [], job: {}, featuredBlogPosts: [] });
+      const pages = compileSite({ jobs: [], job: {}, featuredBlogPosts: [], events: [] });
       expect(pages.length).to.be.above(0);
     });
   });
@@ -16,35 +17,32 @@ describe('site/compiler', () => {
         title: 'Home',
         key: 'home',
         route: '',
-        filePath: 'index.html',
         component: () => <A />,
       },
       {
         title: props => `Dynamic Page ${props}`,
         key: 'dynamic',
         route: 'dynamic/{slug}',
-        filePath: 'dynamic/{slug}/index.html',
         component: () => <A />,
-        gen: ({ dynamic }) => Object.keys(dynamic),
-        stateToProps: ({ dynamic }, slug) => dynamic[slug],
+        gen: ({ dynamic }) => Object.keys(dynamic).map(slug => ({ slug })),
+        stateToProps: ({ dynamic }, { slug }) => dynamic[slug],
       },
     ];
 
-    const expanded = expandRoutes(routes, { dynamic: { A: 'A!', B: 'B!' } });
+    const expanded = expandRoutes(routes, { dynamic: { A: 'A!', B: 'B!' } }, new StateNavigator(routes));
 
     it('leaves static routes as-is', () => {
       expect(expanded[0].title).to.equal(routes[0].title);
       expect(expanded[0].key).to.equal(routes[0].key);
       expect(expanded[0].component).to.equal(routes[0].component);
+      expect(expanded[0].filePath).to.equal('index.html');
     });
 
     it('expands dynamic routes', () => {
       expect(expanded[1].title).to.equal('Dynamic Page A!');
-      expect(expanded[1].route).to.equal('dynamic/A');
       expect(expanded[1].filePath).to.equal('dynamic/A/index.html');
 
       expect(expanded[2].title).to.equal('Dynamic Page B!');
-      expect(expanded[2].route).to.equal('dynamic/B');
       expect(expanded[2].filePath).to.equal('dynamic/B/index.html');
     });
 

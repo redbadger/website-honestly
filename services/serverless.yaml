@@ -35,6 +35,9 @@ functions:
           path: publish
           method: post
           cors: true
+      # Invoke publish function every day at 1am so we keep
+      # events page and the whole site up to date
+      - schedule: cron(0 1 * * ? *)
   contactUs:
     handler: index.contactUs
     events:

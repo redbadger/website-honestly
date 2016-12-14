@@ -11,37 +11,14 @@ import AboutUsPage from '../pages/about-us';
 
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
-
-export function fullPath(route) {
-  const routePrefix = process.env.URL_BASENAME || '';
-  return `${routePrefix}${route}`;
-}
-
-function routeFilePath(path) {
-  switch (path) {
-    case '':
-      return `${fullPath(path)}index.html`;
-
-    default:
-      return `${fullPath(path)}/index.html`;
-  }
-}
-
-function prefixRoutes(rs) {
-  return rs.map(route => {
-    const fullRoute = fullPath(route.route);
-    return Object.assign({}, route, {
-      route: fullRoute,
-      filePath: routeFilePath(route.route),
-    });
-  });
-}
+import Events from '../../website-next/src/shared/containers/events';
 
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
   joinUs: JoinUsPage,
   job: JobPage,
+  events: Events,
   notFoundPage: NotFoundPage,
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
@@ -49,12 +26,12 @@ const componentMap = {
 };
 
 export default function routes() {
-  return prefixRoutes(routeDefinitions.map(
+  return routeDefinitions.map(
     route => ({
       ...route,
       component: (routerProps, props) => {
         const Component = componentMap[route.key];
         return (<L {...routerProps}><Component {...props} /></L>);
       },
-    })));
+    }));
 }
