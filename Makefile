@@ -101,8 +101,8 @@ dist/services.zip: dist/services
 dist/services:
 	export NODE_ENV=production \
 	&& $(LOAD_ENV) \
-	&& $(WEBPACK) --config webpack.lambda.config.js
-
+	&& $(WEBPACK) --config webpack.lambda.config.js \
+	&& $(WEBPACK) --config webpack.browser.config.js
 
 dist/dev-static/index.js:
 	export NODE_ENV=production \
