@@ -6,7 +6,7 @@ import EventsList from '../../components/events-list';
 import BannerReactConf from '../../components/banner-react-conf';
 
 export default ({ events }) => (
-  <div>
+  <div className={styles.events}>
     <h1 className={styles.h1}>Events</h1>
     <BannerReactConf />
     <Section>
