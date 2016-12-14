@@ -1,0 +1,41 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
+@value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
+
+
+.light,
+.dark,
+.yellow{
+  composes: primaryButton from "../../css/_links.css";
+  outline: none;
+  border: none;
+}
+
+
+.yellow{
+  background: badgerBlack !important;
+  color: badgerWhite !important;
+}
+
+.light:hover,
+.dark:hover,
+.yellow:hover{
+  cursor: pointer;
+}
+
+.light:focus,
+.dark:focus,
+.yellow:focus{
+  outline: none;
+}
+
+.light:hover{
+  background: #212121 !important;
+}
+
+.dark:hover{
+  background: #606060 !important;
+}
+
+.yellow:hover{
+  background: #606060 !important;
+}

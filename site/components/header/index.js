@@ -21,7 +21,11 @@ const Header = () => {
               What we do
             </Link>
           </li>
-          <li><a href="/about-us/">About us</a></li>
+          <li>
+            <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
+              About Us
+            </Link>
+          </li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/about-us/events/">Events</a></li>
         </ul>
