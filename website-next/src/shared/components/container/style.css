@@ -1,7 +1,6 @@
 @value desktop, desktopMinWidth from "../variables/breakpoints.css";
 
 .wrapper {
-  composes: nbfcAlt from "../utils/layout.css";
 }
 
 .container {
