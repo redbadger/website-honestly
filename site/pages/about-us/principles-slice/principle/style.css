@@ -2,40 +2,40 @@
 @value mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 
 .container{
-	display: flex; 
-	padding-top: 20px;
+  display: flex; 
+  padding-top: 20px;
 }
 
 .leftCol{
 }
 .rightCol{
-	padding-left: 30px;
-	max-width: 670px;
+  padding-left: 30px;
+  max-width: 670px;
 }
 .number {
-	padding-top: 5px;
+  padding-top: 5px;
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-	composes: fontXS from "../../../../css/typography/_fonts.css";
-	border-bottom: 5px solid #fc1d42; 
-	width: 20px;
-	text-align: center;
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  border-bottom: 5px solid #fc1d42; 
+  width: 20px;
+  text-align: center;
 }
 
 .title {
-	composes: serif from "../../../../css/typography/_fonts.css";
-	composes: fontM2 from "../../../../css/typography/_fonts.css";
-	padding-bottom: 10px;
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  padding-bottom: 10px;
 }
 
 .description{
   composes: sansSerif from "../../../../css/typography/_fonts.css";
-	composes: fontXS from "../../../../css/typography/_fonts.css";
-	color: badgerWhite;
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  color: badgerWhite;
 }
 
 
 
 @media mediumScreen {
-	.container {
-	}
+  .container {
+  }
 }
