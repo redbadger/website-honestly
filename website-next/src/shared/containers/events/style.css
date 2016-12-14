@@ -1,7 +1,14 @@
+@value badgerWhite from "../../../../../site/css/_colors.css";
+
 .h1 {
   composes: h1 from "../../components/typography/style.css";
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
+  background-color: badgerWhite;
+}
+
+.events {
+  background-color: badgerWhite;
 }
 
 .pastEventsTitle {

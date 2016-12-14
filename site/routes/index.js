@@ -10,12 +10,14 @@ import OfflinePage from '../pages/offline';
 
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
+import Events from '../../website-next/src/shared/containers/events';
 
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
   joinUs: JoinUsPage,
   job: JobPage,
+  events: Events,
   notFoundPage: NotFoundPage,
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,

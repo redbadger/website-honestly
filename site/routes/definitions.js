@@ -34,6 +34,12 @@ export const routeDefinitions : Array<RouteDefinition> = [
     gen: state => state.jobs.map(({ slug }) => ({ slug })),
   },
   {
+    title: 'Events',
+    key: 'events',
+    route: 'about-us/events',
+    stateToProps: ({ events }) => ({ events }),
+  },
+  {
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',
