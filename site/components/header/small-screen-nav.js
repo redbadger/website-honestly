@@ -62,7 +62,7 @@ export default class SmallScreenNav extends React.Component {
             <nav className={styles.smallScreenNavContainer} role="navigation">
               <ul role="listbox" className={styles.smallScreenNav}>
                 <li><Link tabIndex={navTabIndex} to="homePage" navigating={this.closeMenu}>Home</Link></li>
-                <li><a tabIndex={navTabIndex} href="/about-us/">About us</a></li>
+                <li><Link tabIndex={navTabIndex} to="aboutUsPage" >About us</Link></li>
                 <li><Link tabIndex={navTabIndex} to="whatWeDoPage" navigating={this.closeMenu}>What we do</Link></li>
                 <li><a tabIndex={navTabIndex} href="/blog/">Blog</a></li>
                 <li><Link tabIndex={navTabIndex} to="events" navigating={this.closeMenu}>Events</Link></li>
