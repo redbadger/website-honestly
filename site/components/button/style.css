@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerRed, badgerBlack, scorpian from "../../css/_colors.css";
 @value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
 
 
@@ -29,13 +29,13 @@
 }
 
 .light:hover{
-  background: #212121 !important;
+  background: badgerBlack !important;
 }
 
 .dark:hover{
-  background: #606060 !important;
+  background: scorpian !important;
 }
 
 .yellow:hover{
-  background: #606060 !important;
+  background: scorpian !important;
 }
