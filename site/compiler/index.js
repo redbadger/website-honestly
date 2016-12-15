@@ -23,7 +23,15 @@ const titleFor = (def, props) => {
   Expanded: /, /about-us/join-us/software-engineer etc.
 */
 
-const routeFilePath = path => (path === '' ? `${path}index.html` : `${path}/index.html`);
+const routeFilePath = path => {
+  if (path === '') {
+    return 'index.html';
+  }
+  if (path === '404') {
+    return '404.html';
+  }
+  return `${path}/index.html`;
+};
 
 const filePathFor = (stateNavigator, key, params) => {
   const route = stateNavigator.getNavigationLink(key, params);
