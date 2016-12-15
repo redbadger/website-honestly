@@ -9,6 +9,7 @@ import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventNewsMeta from '../../components/event-news-meta';
 import { setEndDate } from '../../util/events';
+import { imageAssetsEndpoint } from '../../config';
 
 import marked from 'marked';
 
@@ -60,7 +61,7 @@ export default class Event extends Component {
                       {event.featureImageFilename && <img
                         role="presentation"
                         className={styles.eventImg}
-                        src={`https://res.cloudinary.com/red-badger-assets/image/upload/events/${event.featureImageFilename}`}
+                        src={`${imageAssetsEndpoint}${event.featureImageFilename}`}
                       />}
                     </div>
                   </div>
