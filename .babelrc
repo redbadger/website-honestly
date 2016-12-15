@@ -7,6 +7,13 @@
     "transform-object-assign",
     "transform-class-properties",
     "babel-plugin-transform-object-rest-spread",
-    "transform-flow-strip-types"
-  ]
+    "transform-flow-strip-types",
+  ],
+  "env": {
+    "typecheck": {
+      "plugins": [
+        "babel-plugin-typecheck"
+      ]
+    }
+  }
 }

@@ -3,21 +3,6 @@ const baseConfig = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 
-process.env.BABEL_ENV = 'typecheck';
-
-const devStaticConfig = webpackMerge(baseConfig, {
-  entry: {
-    'dev-static': './dev/static/index.js',
-  },
-  output: {
-    libraryTarget: 'commonjs',
-  },
-  target: 'node',
-  externals: [
-    './client-digest',
-  ],
-}, baseConfig.typeCheckConfig);
-
 const clientConfig = webpackMerge(baseConfig, {
   entry: {
     client: './client/index.js',
@@ -40,10 +25,10 @@ const clientConfig = webpackMerge(baseConfig, {
     }),
     new AssetsPlugin({
       filename: 'client-digest.json',
-      path: './dist/dev-static',
+      path: './dist/services',
       metadata: { bundleName: 'client' },
     }),
   ],
 });
 
-module.exports = [devStaticConfig, clientConfig];
+module.exports = clientConfig;
