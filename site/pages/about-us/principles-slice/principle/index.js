@@ -3,7 +3,7 @@ import style from './style.css';
 
 
 const Principle = ({ number, title, description }) => (
-  <div className={style.container}>
+  <li className={style.container}>
     <div className={style.leftCol}>
       <div className={style.number}>{number}</div>
     </div>
@@ -11,7 +11,7 @@ const Principle = ({ number, title, description }) => (
       <h3 className={style.title}>{title}</h3>
       <div className={style.description}>{description}</div>
     </div>
-  </div>
+  </li>
 );
 
 Principle.propTypes = {

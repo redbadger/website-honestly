@@ -51,7 +51,7 @@ class Form extends Component {
             name="message"
             defaultValue={message}
             onChange={this.handleInputChange}
-            />
+          />
 
           <label className={styles.formLabel} htmlFor="contact">
             Your email:&nbsp;
@@ -66,7 +66,7 @@ class Form extends Component {
             type="text"
             value={contact}
             onChange={this.handleInputChange}
-            />
+          />
 
           {
             fatalError &&
@@ -75,11 +75,11 @@ class Form extends Component {
                 Oops! Looks like something went wrong.
               </p>
               <Button
-                label='Try Again'
+                label="Try Again"
                 className={'fatalErrorButton'}
                 onClick={this.handleSubmit}
                 background="yellow"
-                />
+              />
               <p className={styles.fatalError}>
                 or to get in touch email us on<br />
                 <a href="mailto:hello@red-badger.com" className={styles.fatalErrorLink}>
@@ -95,7 +95,7 @@ class Form extends Component {
               label="Submit"
               onClick={this.handleSubmit}
               background="yellow"
-              />
+            />
           }
 
           <noscript>
