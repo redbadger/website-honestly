@@ -2,6 +2,7 @@ import React from 'react';
 import style from './style.css';
 import Principle from './principle';
 import Button from '../../../components/button';
+import Link from '../../../components/link';
 
 export default function Principles() {
   return (
@@ -23,7 +24,7 @@ export default function Principles() {
         </ul>
         <div className={style.buttons}>
           <a href="/about-us/people/"><Button label="Meet our team" background="black" /></a>
-          <a href="/about-us/join-us/"><Button label="Join us" background="black" /></a>
+          <Link to="joinUs"><Button label="Join us" background="black" /></Link>
         </div>
       </div>
     </div>
