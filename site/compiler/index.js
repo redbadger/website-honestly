@@ -56,7 +56,6 @@ export const expandRoutes = (routeDefs, state, stateNavigator) => {
 };
 
 export function compileRoutes(siteRoutes, state) {
-  console.log('Compiling routes');
   /*
     We only register unexpanded routes with stateNavigator, so we can
     continue to use named routes.
@@ -66,20 +65,28 @@ export function compileRoutes(siteRoutes, state) {
     new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
   );
 
+  const encodedState = (state && encode(JSON.stringify(state)));
+
   const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
-    console.log(`Compiling ${route.filePath}`);
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
+
+    const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
+    const renderMs = Date.now() - renderStart;
+
+    const ejsStart = Date.now();
     const body = layoutTemplate({
       title,
       tracking,
       bodyContent,
       cssPath,
       jsPath,
-      state: (state && encode(JSON.stringify(state))),
+      state: encodedState,
     });
+    const ejsMs = Date.now() - ejsStart;
+    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`);
 
     return { body, path };
   };
