@@ -9,6 +9,7 @@ const getRequestOptions = (body, token) => ({
   }, token && {
     'X-Preview': token,
   }),
+  timeout: 10000,
   body,
 });
 
