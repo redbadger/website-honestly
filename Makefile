@@ -63,6 +63,7 @@ lint: ## Lint Javascript files
 
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 	$(LOAD_ENV) \
+        && export ENVIRONMENT_NAME="sane-lambda-errors" \
 	&& $(SERVERLESS) deploy
 
 publish-service-invoke: ## Invoke the publish service
