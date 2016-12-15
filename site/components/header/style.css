@@ -74,6 +74,7 @@
   bottom: 0;
   right: 0;
   left: 54px;
+  display: none;
 }
 
 .overlay .mediumScreenNav {
@@ -142,6 +143,11 @@
 .trigger:checked + .overlay {
   left: 0;
   right: 0;
+}
+
+.trigger:checked + .overlay .smallScreenNavWrapper
+{
+  display: block;
 }
 
 @media mediumScreen {
