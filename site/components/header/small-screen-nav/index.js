@@ -20,11 +20,11 @@ export default class SmallScreenNav extends React.Component {
   }
 
   menu = (
-    <div className={styles.overlay} key="SmallScreenNav" onClick={this.toggleMenu}>
+    <div className={styles.overlay} key="SmallScreenNav">
       <div className={styles.overlayWrapper} >
         <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
         <nav className={styles.navigation} role="navigation">
-          <ul role="listbox" className={styles.list}>
+          <ul role="listbox" className={styles.list} onClick={this.toggleMenu} onTouchEnd={this.toggleMenu}>
             <li><Link tabIndex={0} to="homePage">Home</Link></li>
             <li><Link tabIndex={0} to="whatWeDoPage">What we do</Link></li>
             <li><Link tabIndex={0} to="aboutUsPage">About Us</Link></li>
@@ -44,6 +44,7 @@ export default class SmallScreenNav extends React.Component {
         htmlFor="burger"
         className={styles.triggerLabel}
         onClick={this.toggleMenu}
+        onTouchEnd={this.toggleMenu}
         >
         MENU
       </label>

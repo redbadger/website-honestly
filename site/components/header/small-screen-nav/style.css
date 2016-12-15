@@ -20,7 +20,6 @@
   bottom: 0;
   right: 0;
   opacity: 1;
-  padding: 10px 60px
 }
 
 .overlayEnter{
@@ -85,6 +84,16 @@
   margin-bottom: 6px;
 }
 
+.trigger {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.trigger:checked + .overlay {
+  left: 0;
+  right: 0;
+}
 
 @media mediumScreen {
   .smallScreen {
