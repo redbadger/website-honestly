@@ -5,7 +5,7 @@ import doUpdateUser from './mailchimp/update-user/index';
 
 const cbWithErrorHandling = cb => (e, body) => {
   if (e) {
-    e.message = `[500] ${e.message}`; // eslint-disable-line no-param-reassign
+    e.message = `[500] ${e.message}`.replace(/\n/g, ''); // eslint-disable-line no-param-reassign
     return cb(e);
   }
   return cb(null, body);

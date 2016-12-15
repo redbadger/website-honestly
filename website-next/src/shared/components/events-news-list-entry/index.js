@@ -5,15 +5,15 @@ import EventImage from '../event-image';
 import DateBubble from '../date-bubble';
 import EventTitle from '../event-title';
 import React, { PropTypes } from 'react';
-import { eventNewsHref } from '../../util/eventNewsUrl';
 import styles from '../events-list/style.css';
 import { setEndDate, eventImagePath } from '../../util/events';
+
+import Link from '../../../../../site/components/link';
 
 const EventsNewsListEntry = ({
   id,
   tags,
   slug,
-  type,
   title,
   timeline,
   strapline,
@@ -23,61 +23,69 @@ const EventsNewsListEntry = ({
   startDateTime,
   featureImageFilename,
 }) => {
-  const eventRenderLink = eventNewsHref({
+  const eventLink = ({
     year: startDateTime.year,
     month: startDateTime.month,
     date: startDateTime.date,
-    type,
     slug,
   });
 
   return (
-  <li key={`entry_${id}`} className={styles.eventItem}>
-    <Grid fit={false}>
-      <Cell size={12}>
-        <HR color="grey" customClassName=
-          {styles.mobileHorizontalLine} />
-        <DateBubble
-            startDateTime={startDateTime}
-            endDateTime={setEndDate(
-              timeline,
-              startDateTime,
-              endDateTime)}
-        />
-      </Cell>
-      <Cell size={1} key="event_picture_mobile" hideOn="mobileSM">
-        <EventImage
-          imgPath={eventImagePath(featureImageFilename)}
-          imgAlt={title}
-          href={eventRenderLink} />
-      </Cell>
-      <Cell size={12} breakOn="mobile">
-        <Grid fit={false}>
-          <Cell size={8} key='event_description'
-            breakOn="mobileS">
-            <EventTitle eventTitle={title}
-              eventHref={eventRenderLink} />
-            <div className={styles.eventDescription}>
-              {strapline}
-            </div>
-            <EventNewsMeta
-              internalLinks={internalLinks}
-              externalLinks={externalLinks}
-              tags={tags}
-             />
-          </Cell>
-          <Cell size={4} key='event_picture' breakOn="mobileS"
-            hideOn="mobileS">
+    <li key={`entry_${id}`} className={styles.eventItem}>
+      <Grid fit={false}>
+        <Cell size={12}>
+          <HR color="grey" customClassName=
+            {styles.mobileHorizontalLine} />
+          <DateBubble
+              startDateTime={startDateTime}
+              endDateTime={setEndDate(
+                timeline,
+                startDateTime,
+                endDateTime)}
+          />
+        </Cell>
+        <Cell size={1} key="event_picture_mobile" hideOn="mobileSM">
+          <Link to="event" navigationData={eventLink}>
             <EventImage
               imgPath={eventImagePath(featureImageFilename)}
               imgAlt={title}
-              href={eventRenderLink} />
-          </Cell>
-        </Grid>
-      </Cell>
-    </Grid>
-  </li>
-);
+            />
+          </Link>
+        </Cell>
+        <Cell size={12} breakOn="mobile">
+          <Grid fit={false}>
+              <Cell size={8} key='event_description'
+                breakOn="mobileS"
+              >
+              <Link to="event" navigationData={eventLink}>
+                <EventTitle
+                  eventTitle={title}
+                />
+              </Link>
+              <div className={styles.eventDescription}>
+                {strapline}
+              </div>
+              <EventNewsMeta
+                internalLinks={internalLinks}
+                externalLinks={externalLinks}
+                tags={tags}
+               />
+            </Cell>
+            <Cell size={4} key='event_picture' breakOn="mobileS"
+              hideOn="mobileS">
+              <Link to="event" navigationData={eventLink}>
+                <EventImage
+                  imgPath={eventImagePath(featureImageFilename)}
+                  imgAlt={title}
+                  href={eventLink}
+                />
+              </Link>
+            </Cell>
+          </Grid>
+        </Cell>
+      </Grid>
+    </li>
+  );
 };
 
 EventsNewsListEntry.propTypes = {
