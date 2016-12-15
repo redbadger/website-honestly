@@ -16,6 +16,7 @@ export type HomePageProps = {
 
 const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => (
   <div>
+    <h1>Help!</h1>
     <TopSlice />
     <CaseStudy />
     <Brie />
