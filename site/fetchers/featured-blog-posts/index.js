@@ -33,7 +33,7 @@ export const mapDataToState = (data: Object): Array<BlogPost> => (
 );
 
 const getPosts = params => (new Promise(res => (
-  fetch(getUrl(params))
+  fetch(getUrl(params), { timeout: 10000 })
   .then(handleErrors)
   .then(response => response.json())
   .then(json => {
