@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
+import Button from '../../../components/button';
 
 const cx = classnames.bind(styles);
 
@@ -20,9 +21,14 @@ class Form extends Component {
     this.setState(newState);
   }
 
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.onSubmit(this.state);
+  }
+
   render() {
     const { message, contact } = this.state;
-    const { onSubmit, errors, fatalError } = this.props;
+    const { errors, fatalError } = this.props;
     return (
       <section className={styles.formContainer}>
         <h2 className={styles.heading}>
@@ -68,15 +74,12 @@ class Form extends Component {
               <p className={styles.fatalError}>
                 Oops! Looks like something went wrong.
               </p>
-              <button
-                className={cx('button', 'fatalErrorButton')}
-                onClick={e => {
-                  e.preventDefault();
-                  onSubmit(this.state);
-                }}
-              >
-                Try Again
-              </button>
+              <Button
+                label="Try Again"
+                className={'fatalErrorButton'}
+                onClick={this.handleSubmit}
+                background="yellow"
+              />
               <p className={styles.fatalError}>
                 or to get in touch email us on<br />
                 <a href="mailto:hello@red-badger.com" className={styles.fatalErrorLink}>
@@ -86,18 +89,13 @@ class Form extends Component {
             </div>
           }
 
-
           {
             !fatalError &&
-              <button
-                className={styles.button}
-                onClick={e => {
-                  e.preventDefault();
-                  onSubmit(this.state);
-                }}
-              >
-                Submit
-              </button>
+            <Button
+              label="Submit"
+              onClick={this.handleSubmit}
+              background="yellow"
+            />
           }
 
           <noscript>

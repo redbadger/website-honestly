@@ -22,6 +22,11 @@ export const routeDefinitions : Array<RouteDefinition> = [
     route: 'what-we-do',
   },
   {
+    title: 'About Us',
+    key: 'aboutUsPage',
+    route: 'about-us',
+  },
+  {
     title: 'Join us',
     key: 'joinUs',
     route: 'about-us/join-us',
