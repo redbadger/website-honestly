@@ -2,7 +2,6 @@ import React from 'react';
 import style from './style.css';
 import Principle from './principle';
 import Button from '../../../components/button';
-import Link from '../../../components/link';
 
 export default function Principles() {
   return (
@@ -23,8 +22,8 @@ export default function Principles() {
           <Principle number="08" title="Give a monkey’s. Don’t be a jackass." description="We care about what we do and we care about each other. We’re humble. No egos." />
         </ul>
         <div className={style.buttons}>
-          <Link to="meetOurTeam" ><Button label="Meet our team" background="black" /></Link>
-          <Link to="joinUs"><Button label="Join us" background="black" /></Link>
+          <a href="/about-us/people/"><Button label="Meet our team" background="black" /></a>
+          <a href="/about-us/join-us/"><Button label="Join us" background="black" /></a>
         </div>
       </div>
     </div>
