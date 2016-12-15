@@ -6,14 +6,13 @@
 }
 
 .fullDetailsLink {
-  composes: aBold from "../typography/style.css";
+  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  composes: bodyUnderlineLink from "../../../../../site/css/_links.css";
   clear: both;
   color: badgerBlack;
   display: block;
-  text-decoration: none;
   margin-top: 0.8em;
   position: relative;
-  text-decoration: none;
   float: left;
   border-bottom: 1px solid badgerRed;
 }

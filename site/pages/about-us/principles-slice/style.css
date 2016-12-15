@@ -1,0 +1,58 @@
+@value mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+@value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
+
+.principles {
+  background:badgerBlack;
+  color: badgerWhite;
+  padding-top: 30px;
+}
+
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+.header {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontL from "../../../css/typography/_fonts.css";
+  padding-bottom: 10px;
+}
+
+.thisIsWhatWeBelieveIn {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../css/typography/_fonts.css";
+  padding-bottom: 10px;
+}
+
+.buttons{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.buttons a button{
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.principleList {
+  list-style: none;
+}
+
+@media mediumScreen {
+
+  .container{
+    max-width: 700px;
+  }
+
+  .header {
+    padding-left: 50px;
+    margin-left: 0;
+  }
+
+  .thisIsWhatWeBelieveIn {
+    padding-left: 50px;
+    margin-left: 0;
+  }
+}
