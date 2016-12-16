@@ -35,8 +35,10 @@ const CaseStudy = () => (
         <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
         <span className={styles.screenReaderText}>Three</span>
         <span className={styles.caseText}>
-          Number of awards for the new online store
-          <InlineSVG src={arrowSVG} className={styles.arrow} />
+          Number of awards for the new online
+          <span className={styles.lastWord}> store
+            <InlineSVG src={arrowSVG} className={styles.arrow} />
+          </span>
         </span>
         <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
       </a>
@@ -48,8 +50,10 @@ const CaseStudy = () => (
         <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
         <span className={styles.screenReaderText}>18%</span>
         <span className={styles.caseText}>
-          Drop in bounce rate within 4 days of launch
-          <InlineSVG src={arrowSVG} className={styles.arrow} />
+          Drop in bounce rate within 4 days of
+          <span className={styles.lastWord}> launch
+            <InlineSVG src={arrowSVG} className={styles.arrow} />
+          </span>
         </span>
         <img alt="The logo of Camden Market" src={camdenPNG} className={styles.logo} />
       </a>
@@ -61,8 +65,10 @@ const CaseStudy = () => (
         <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
         <span className={styles.screenReaderText}>50%</span>
         <span className={styles.caseText}>
-          Drop in customers pushing the &lsquo;need more help&rsquo; button
-          <InlineSVG src={arrowSVG} className={styles.arrow} />
+          Drop in customers pushing the &lsquo;need more help&rsquo;
+          <span className={styles.lastWord}> button
+            <InlineSVG src={arrowSVG} className={styles.arrow} />
+          </span>
         </span>
         <img alt="The logo of Sky" src={skyPNG} className={styles.logo} />
       </a>
@@ -74,8 +80,10 @@ const CaseStudy = () => (
         <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
         <span className={styles.screenReaderText}>Seven</span>
         <span className={styles.caseText}>
-          Weeks to redesign and deliver MVP homepage
-          <InlineSVG src={arrowSVG} className={styles.arrow} />
+          Weeks to redesign and deliver MVP
+          <span className={styles.lastWord}> homepage
+            <InlineSVG src={arrowSVG} className={styles.arrow} />
+          </span>
         </span>
         <img alt="The logo of the Financial Times" src={financialTimesPNG} className={styles.logo} />
       </a>

@@ -63,6 +63,10 @@
   max-width: 100%;
 }
 
+.lastWord {
+  display: inline-block;
+}
+
 .caseCompanies {
   display: flex;
   flex-direction: row;
