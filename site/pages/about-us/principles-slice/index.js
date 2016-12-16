@@ -23,7 +23,7 @@ export default function Principles() {
           <Principle number="08" title="Give a monkey’s. Don’t be a jackass." description="We care about what we do and we care about each other. We’re humble. No egos." />
         </ul>
         <div className={style.buttons}>
-          <Link to="meetOurTeam" ><Button label="Meet our team" background="black" /></Link>
+          <a href="/about-us/people/"><Button label="Meet our team" background="black" /></a>
           <Link to="joinUs"><Button label="Join us" background="black" /></Link>
         </div>
       </div>
