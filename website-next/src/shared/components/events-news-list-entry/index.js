@@ -57,11 +57,10 @@ const EventsNewsListEntry = ({
               <Cell size={8} key='event_description'
                 breakOn="mobileS"
               >
-              <Link to="event" navigationData={eventLink}>
-                <EventTitle
-                  eventTitle={title}
-                />
-              </Link>
+              <EventTitle
+                eventLink={eventLink}
+                eventTitle={title}
+              />
               <div className={styles.eventDescription}>
                 {strapline}
               </div>
