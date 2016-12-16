@@ -1,6 +1,7 @@
-@value badgerBlack from "../../css/_colors.css";
+@value badgerBlack, badgerRed from "../../css/_colors.css";
 
 .link {
-  composes: redUnderlineLink from "../../css/_links.css";
+  border-bottom: 2px solid badgerRed;
   color: badgerBlack;
+  text-decoration: none;
 }
