@@ -2,6 +2,7 @@
 
 .eventPicture {
   width: 100%;
+  display: block;
 }
 
 .imgBorder {
