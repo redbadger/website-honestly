@@ -30,7 +30,7 @@ class Form extends Component {
     const { message, contact } = this.state;
     const { errors, fatalError } = this.props;
     return (
-      <section className={styles.formContainer}>
+      <section className={styles.formContainer} id="ContactUs">
         <h2 className={styles.heading}>
           We don’t have a sales team.
           <br />
