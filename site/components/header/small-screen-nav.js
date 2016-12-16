@@ -30,7 +30,7 @@ export default class SmallScreenNav extends React.Component {
     const { navOpen } = this.state;
     const navTabIndex = navOpen ? 0 : -1;
     const { stateNavigator } = this.context;
-    const contactUsLink = `${stateNavigator.getNavigationLink('homePage')}#ContactUs`;
+    const contactUsLink = `${stateNavigator.historyManager.getHref(stateNavigator.getNavigationLink('homePage'))}#ContactUs`;
 
     return (
       <div className={styles.smallScreenNavComponent}>
