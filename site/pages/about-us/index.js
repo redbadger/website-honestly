@@ -13,7 +13,7 @@ const AboutUs = ({ contactUsURL }) => {
 };
 
 AboutUs.propTypes = {
-  contactUsURL: React.PropTypes.string,
+  contactUsURL: React.PropTypes.string.isRequired,
 };
 
 export default AboutUs;
