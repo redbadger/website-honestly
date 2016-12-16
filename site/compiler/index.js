@@ -23,7 +23,15 @@ const titleFor = (def, props) => {
   Expanded: /, /about-us/join-us/software-engineer etc.
 */
 
-const routeFilePath = path => (path === '' ? `${path}index.html` : `${path}/index.html`);
+const routeFilePath = path => {
+  if (path === '') {
+    return 'index.html';
+  }
+  if (path === '404') {
+    return '404.html';
+  }
+  return `${path}/index.html`;
+};
 
 const filePathFor = (stateNavigator, key, params) => {
   const route = stateNavigator.getNavigationLink(key, params);
@@ -65,19 +73,28 @@ export function compileRoutes(siteRoutes, state) {
     new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
   );
 
+  const encodedState = (state && encode(JSON.stringify(state)));
+
   const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
+
+    const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
+    const renderMs = Date.now() - renderStart;
+
+    const ejsStart = Date.now();
     const body = layoutTemplate({
       title,
       tracking,
       bodyContent,
       cssPath,
       jsPath,
-      state: (state && encode(JSON.stringify(state))),
+      state: encodedState,
     });
+    const ejsMs = Date.now() - ejsStart;
+    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`);
 
     return { body, path };
   };

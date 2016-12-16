@@ -9,6 +9,7 @@ export const getJobs = (fetch, key) => (
       authorization: `Bearer ${key}`,
       'Content-Type': 'application/json',
     },
+    timeout: 10000,
   })
   .then(handleErrors)
   .then(response => response.json())

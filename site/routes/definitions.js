@@ -22,6 +22,11 @@ export const routeDefinitions : Array<RouteDefinition> = [
     route: 'what-we-do',
   },
   {
+    title: 'About Us',
+    key: 'aboutUsPage',
+    route: 'about-us',
+  },
+  {
     title: 'Join us',
     key: 'joinUs',
     route: 'about-us/join-us',
@@ -39,6 +44,13 @@ export const routeDefinitions : Array<RouteDefinition> = [
     key: 'events',
     route: 'about-us/events',
     stateToProps: ({ events }) => ({ events }),
+  },
+  {
+    title: ({ event }) => event.title,
+    key: 'event',
+    route: 'about-us/events/{year}/{month}/{date}/{slug}',
+    stateToProps: (state, params = {}) => ({ event: state.event[params.slug] }),
+    gen: state => state.events.map(({ startDateTime: { date, month, year }, slug }) => ({ date, month, year, slug })),
   },
   {
     title: 'Not found',

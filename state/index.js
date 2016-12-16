@@ -14,15 +14,16 @@ const toDict = (array, keyFn) => array.reduce((obj, item) => ({
 }), {});
 
 const getSiteState = () => (
-  getJobs(fetch, process.env.WORKABLE_API_KEY)
-    .then(jobs => Promise.props({
-      jobs,
-      job: toDict(jobs, j => j.slug),
-      featuredBlogPosts: getFeaturedPosts(),
-      events: getEvents(),
-      ...initialState,
-    })
-  )
+  Promise.props({
+    jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
+    featuredBlogPosts: getFeaturedPosts(),
+    events: getEvents(),
+    ...initialState,
+  }).then(state => ({
+    ...state,
+    job: toDict(state.jobs, j => j.slug),
+    event: toDict(state.events, j => j.slug),
+  }))
 );
 
 export default getSiteState;

@@ -18,6 +18,16 @@
   color: badgerBlack;
 }
 
+.bodyUnderlineLink {
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRed;
+  transition: all 0.2s ease;
+}
+
+.bodyUnderlineLink:hover {
+  color: badgerRed;
+}
+
 .redUnderlineLink {
   border-bottom: 2px solid badgerRed;
   color: badgerWhite;
