@@ -1,7 +1,9 @@
 // @flow
 
 import React from 'react';
+import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
+import arrowSVG from '../../../../../assets/images/SVG/arrow.svg';
 
 type Author = {
   role: string,
@@ -25,7 +27,10 @@ const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
         <h3 className={styles.category}>{featuredBlogPost.category}</h3>
         <div className={styles.linkEntry}>
           <div className={styles.linkTitle}>
-            <p>{featuredBlogPost.title}</p>
+            <p>
+              {featuredBlogPost.title}
+              <InlineSVG src={arrowSVG} className={styles.arrow} />
+            </p>
           </div>
           <div className={styles.authorTitle}>
             <p className={styles.linkAuthor}>

@@ -1,6 +1,11 @@
 @value badgerBlack, badgerRed, linesOnWhite from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
+.arrow svg {
+  height: 15px;
+  margin: 0 10px;
+}
+
 .link {
   composes: fontM from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
@@ -63,11 +68,19 @@
     width: 250px;
     display: block;
   }
+
+  .arrow svg {
+    display: none;
+  }
 }
 
 @media largeScreen {
   .authorTitle {
     margin-left: 200px;
     width: 150px;
+  }
+
+  .arrow svg {
+    display: none;
   }
 }
