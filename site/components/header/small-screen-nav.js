@@ -29,8 +29,6 @@ export default class SmallScreenNav extends React.Component {
   render() {
     const { navOpen } = this.state;
     const navTabIndex = navOpen ? 0 : -1;
-    const { stateNavigator } = this.context;
-    const contactUsLink = `${stateNavigator.historyManager.getHref(stateNavigator.getNavigationLink('homePage'))}#ContactUs`;
 
     return (
       <div className={styles.smallScreenNavComponent}>
@@ -70,7 +68,7 @@ export default class SmallScreenNav extends React.Component {
                 <li><a tabIndex={navTabIndex} href="/blog/">Blog</a></li>
                 <li><Link tabIndex={navTabIndex} to="events" navigating={this.closeMenu}>Events</Link></li>
                 <li><Link tabIndex={navTabIndex} to="joinUs" navigating={this.closeMenu}>Jobs</Link></li>
-                <li><a href={contactUsLink} onClick={this.closeMenu}>Contact us</a></li>
+                <li><Link tabIndex={navTabIndex} to="homePage" navigationData={{ contactUs: 'true' }} navigating={this.closeMenu}>Contact us</Link></li>
               </ul>
             </nav>
           </div>
@@ -79,8 +77,3 @@ export default class SmallScreenNav extends React.Component {
     );
   }
 }
-
-
-SmallScreenNav.contextTypes = {
-  stateNavigator: React.PropTypes.object,
-};

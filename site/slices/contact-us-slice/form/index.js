@@ -15,6 +15,23 @@ class Form extends Component {
     };
   }
 
+  componentDidMount = () => {
+    const { stateNavigator } = this.context;
+    stateNavigator.onNavigate(this.focusText);
+  }
+
+  componentWillUnmount = () => {
+    const { stateNavigator } = this.context;
+    stateNavigator.offNavigate(this.focusText);
+  }
+
+  focusText = () => {
+    const { stateNavigator } = this.context;
+    if (this.textEl && stateNavigator.stateContext.data.contactUs) {
+      this.textEl.focus();
+    }
+  }
+
   handleInputChange = event => {
     const newState = {};
     newState[event.target.name] = event.target.value;
@@ -29,6 +46,7 @@ class Form extends Component {
   render() {
     const { message, contact } = this.state;
     const { errors, fatalError } = this.props;
+    const { stateNavigator } = this.context;
     return (
       <section className={styles.formContainer} id="ContactUs">
         <h2 className={styles.heading}>
@@ -50,6 +68,8 @@ class Form extends Component {
             })}
             name="message"
             defaultValue={message}
+            ref={el => { this.textEl = el; }}
+            autoFocus={stateNavigator.stateContext.data.contactUs}
             onChange={this.handleInputChange}
           />
 
@@ -114,6 +134,10 @@ class Form extends Component {
     );
   }
 }
+
+Form.contextTypes = {
+  stateNavigator: React.PropTypes.object,
+};
 
 const { shape, func, string, bool } = React.PropTypes;
 Form.propTypes = {

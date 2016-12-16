@@ -22,6 +22,16 @@ class ContactUs extends Component {
     };
   }
 
+  componentDidMount = () => {
+    const { stateNavigator } = this.context;
+    stateNavigator.onNavigate(this.onClose);
+  }
+
+  componentWillUnmount = () => {
+    const { stateNavigator } = this.context;
+    stateNavigator.offNavigate(this.onClose);
+  }
+
   onClose = () => {
     this.setState({
       success: false,
@@ -66,6 +76,10 @@ class ContactUs extends Component {
     );
   }
 }
+
+ContactUs.contextTypes = {
+  stateNavigator: React.PropTypes.object,
+};
 
 const { string } = React.PropTypes;
 ContactUs.propTypes = {
