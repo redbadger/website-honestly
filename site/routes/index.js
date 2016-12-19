@@ -1,4 +1,5 @@
 import React from 'react';
+import { HTML5HistoryManager, StateNavigator } from 'navigation';
 
 import { routeDefinitions } from './definitions';
 import L from '../layout';
@@ -27,7 +28,7 @@ const componentMap = {
   aboutUsPage: AboutUsPage,
 };
 
-export default function routes() {
+function routes() {
   return routeDefinitions.map(
     route => ({
       ...route,
@@ -38,7 +39,7 @@ export default function routes() {
     }));
 }
 
-export const handleContactUsHash = stateNavigator => {
+const handleContactUsHash = stateNavigator => {
   const { historyManager } = stateNavigator;
   const getUrl = historyManager.getUrl.bind(historyManager);
   historyManager.getUrl = hrefElement => {
@@ -64,4 +65,13 @@ export const handleContactUsHash = stateNavigator => {
     }
   };
   return historyManager;
+};
+
+export default () => {
+  const stateNavigator = new StateNavigator(
+    routes(),
+    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
+  );
+  handleContactUsHash(stateNavigator);
+  return stateNavigator;
 };

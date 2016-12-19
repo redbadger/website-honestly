@@ -1,98 +1,73 @@
-import React from 'react';
-import { StateNavigator } from 'navigation';
-import { compileSite, compileRoutes, expandRoutes } from '.';
+import { compileSite } from '.';
 
 describe('site/compiler', () => {
   describe('compileSite', () => {
-    it('renders all the pages of the site', () => {
-      const pages = compileSite({ jobs: [], job: {}, featuredBlogPosts: [], events: [] });
-      expect(pages.length).to.be.above(0);
-    });
-  });
+    it('renders all the static pages of the site', () => {
+      const pages = compileSite({ jobs: [], job: {}, contactUsURL: '', featuredBlogPosts: [], events: [] });
 
-  describe('expandRoutes', () => {
-    const A = () => <div>A</div>;
-    const routes = [
-      {
-        title: 'Home',
-        key: 'home',
-        route: '',
-        component: () => <A />,
-      },
-      {
-        title: props => `Dynamic Page ${props}`,
-        key: 'dynamic',
-        route: 'dynamic/{slug}',
-        component: () => <A />,
-        gen: ({ dynamic }) => Object.keys(dynamic).map(slug => ({ slug })),
-        stateToProps: ({ dynamic }, { slug }) => dynamic[slug],
-      },
-    ];
-
-    const expanded = expandRoutes(routes, { dynamic: { A: 'A!', B: 'B!' } }, new StateNavigator(routes));
-
-    it('leaves static routes as-is', () => {
-      expect(expanded[0].title).to.equal(routes[0].title);
-      expect(expanded[0].key).to.equal(routes[0].key);
-      expect(expanded[0].component).to.equal(routes[0].component);
-      expect(expanded[0].filePath).to.equal('index.html');
-    });
-
-    it('expands dynamic routes', () => {
-      expect(expanded[1].title).to.equal('Dynamic Page A!');
-      expect(expanded[1].filePath).to.equal('dynamic/A/index.html');
-
-      expect(expanded[2].title).to.equal('Dynamic Page B!');
-      expect(expanded[2].filePath).to.equal('dynamic/B/index.html');
-    });
-
-    it('computes props from stateToProps', () => {
-      expect(expanded[0].props).to.equal(undefined);
-      expect(expanded[1].props).to.equal('A!');
-      expect(expanded[2].props).to.equal('B!');
-    });
-  });
-
-  describe('compileRoutes', () => {
-    const A = () => <div>A</div>;
-    const B = () => <div>B</div>;
-    const C = () => <div>C</div>;
-    const routes = [
-      {
-        title: 'Home',
-        key: 'home',
-        route: '',
-        filePath: 'index.html',
-        component: () => <A />,
-      },
-      {
-        title: 'Not Found',
-        key: 'notFound',
-        route: '404',
-        filePath: '404.html',
-        component: () => <B />,
-      },
-      {
-        title: () => 'About',
-        key: 'about',
-        route: 'site/about',
-        filePath: 'site/about/index.html',
-        component: () => <C />,
-      },
-    ];
-
-    it('renders a routers pages', () => {
-      const pages = compileRoutes(routes);
-      expect(pages.length).to.equal(3);
-
+      expect(pages.length).to.equal(8);
       expect(pages[0].path).to.equal('index.html');
-      expect(pages[0].body).to.match(/<div[^>]+>A<\/div>/);
+      expect(pages[0].body).to.match(/We work with you to deliver digital products/);
+      expect(pages[1].path).to.equal('what-we-do/index.html');
+      expect(pages[1].body).to.match(/How do we do the thing right\?/);
+      expect(pages[2].path).to.equal('about-us/index.html');
+      expect(pages[2].body).to.match(/This is what we believe/);
+      expect(pages[3].path).to.equal('about-us/join-us/index.html');
+      expect(pages[3].body).to.match(/Join us/);
+      expect(pages[4].path).to.equal('about-us/events/index.html');
+      expect(pages[4].body).to.match(/React London 2017/);
+      expect(pages[5].path).to.equal('404.html');
+      expect(pages[5].body).to.match(/Whaaaaaat!\?/);
+      expect(pages[6].path).to.equal('50x/index.html');
+      expect(pages[6].body).to.match(/Oops!/);
+      expect(pages[7].path).to.equal('offline/index.html');
+      expect(pages[7].body).to.match(/No internet connection/);
+    });
 
-      expect(pages[1].path).to.equal('404.html');
-      expect(pages[1].body).to.match(/<div[^>]+>B<\/div>/);
+    it('renders the dynamic jobs pages of the site', () => {
+      const softwareEngineer = {
+        slug: 'software-engineer',
+        title: 'Software Engineer',
+      };
+      const uxDesinger = {
+        slug: 'ux-designer',
+        title: 'UX Designer',
+      };
+      const pages = compileSite({
+        jobs: [
+          softwareEngineer,
+          uxDesinger,
+        ],
+        job: {
+          'software-engineer': softwareEngineer,
+          'ux-designer': uxDesinger,
+        },
+        contactUsURL: '',
+        featuredBlogPosts: [],
+        events: [],
+      });
 
-      expect(pages[2].path).to.equal('site/about/index.html');
-      expect(pages[2].body).to.match(/<div[^>]+>C<\/div>/);
+      expect(pages.length).to.equal(10);
+      expect(pages[0].path).to.equal('index.html');
+      expect(pages[0].body).to.match(/We work with you to deliver digital products/);
+      expect(pages[1].path).to.equal('what-we-do/index.html');
+      expect(pages[1].body).to.match(/How do we do the thing right\?/);
+      expect(pages[2].path).to.equal('about-us/index.html');
+      expect(pages[2].body).to.match(/This is what we believe/);
+      expect(pages[3].path).to.equal('about-us/join-us/index.html');
+      expect(pages[3].body).to.match(/Join us/);
+      expect(pages[4].path).to.equal('about-us/events/index.html');
+      expect(pages[4].body).to.match(/React London 2017/);
+      expect(pages[5].path).to.equal('404.html');
+      expect(pages[5].body).to.match(/Whaaaaaat!\?/);
+      expect(pages[6].path).to.equal('50x/index.html');
+      expect(pages[6].body).to.match(/Oops!/);
+      expect(pages[7].path).to.equal('offline/index.html');
+      expect(pages[7].body).to.match(/No internet connection/);
+      expect(pages[8].path).to.equal('about-us/join-us/software-engineer/index.html');
+      expect(pages[8].body).to.match(/Software Engineer/);
+      expect(pages[9].path).to.equal('about-us/join-us/ux-designer/index.html');
+      expect(pages[9].body).to.match(/UX Designer/);
     });
   });
 });
