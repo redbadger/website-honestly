@@ -44,14 +44,15 @@ function routes() {
   the window should scroll to the contacts us section of the home page (see
   https://github.com/redbadger/website-honestly/issues/274).
 
-  Use a contactUs hash in the URL so that the scrolling works without
+  There's a contactUs hash in the URL so that the scrolling works without
   JavaScript. The problem is that the state navigator doesn't cater for hashes
-  in the URL. This is a workaround for using hashes with the state navigator.
+  in the URL. What follows is a workaround for using hashes with the state
+  navigator.
 
-  The HistoryManager handles converting Urls to Hrefs and Hrefs to Urls. that
+  The HistoryManager handles converting Urls to Hrefs and Hrefs to Urls. That
   means we can pass the contactUs indicator in the query string internally, to
-  keep the state navigator happy, and only convert it to a hash when it appears
-  in an href (anchor tag or browser location).
+  keep the state navigator happy, and only convert it to and from a hash when
+  it appears in an href (anchor tag or browser location).
 
   Also need a custom addHistory to include the hash in the check to see if the
   url's changed. Otherwise clicking on contact us and then the home page won't
