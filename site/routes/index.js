@@ -39,6 +39,24 @@ function routes() {
     }));
 }
 
+/*
+  When the contact us menu item (only appears in the mobile menu) is clicked
+  the window should scroll to the contacts us section of the home page (see
+  https://github.com/redbadger/website-honestly/issues/274).
+
+  Use a contactUs hash in the URL so that the scrolling works without
+  JavaScript. The problem is that the state navigator doesn't cater for hashes
+  in the URL. This is a workaround for using hashes with the state navigator.
+
+  The HistoryManager handles converting Urls to Hrefs and Hrefs to Urls. that
+  means we can pass the contactUs indicator in the query string internally, to
+  keep the state navigator happy, and only convert it to a hash when it appears
+  in an href (anchor tag or browser location).
+
+  Also need a custom addHistory to include the hash in the check to see if the
+  url's changed. Otherwise clicking on contact us and then the home page won't
+  change the url because they only differ on the hash.
+*/
 const handleContactUsHash = stateNavigator => {
   const { historyManager } = stateNavigator;
   const getUrl = historyManager.getUrl.bind(historyManager);
