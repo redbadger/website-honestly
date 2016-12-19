@@ -1,7 +1,0 @@
-global:
-  application_name: website-next
-  default_ec2_keyname: null
-  default_platform: Docker 1.7.1
-  default_region: eu-west-1
-  profile: null
-  sc: git
