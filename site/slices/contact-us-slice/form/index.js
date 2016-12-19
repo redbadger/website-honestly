@@ -15,23 +15,6 @@ class Form extends Component {
     };
   }
 
-  componentDidMount = () => {
-    const { stateNavigator } = this.context;
-    stateNavigator.onNavigate(this.focusText);
-  }
-
-  componentWillUnmount = () => {
-    const { stateNavigator } = this.context;
-    stateNavigator.offNavigate(this.focusText);
-  }
-
-  focusText = () => {
-    const { stateNavigator } = this.context;
-    if (this.textEl && stateNavigator.stateContext.data.contactUs) {
-      this.textEl.focus();
-    }
-  }
-
   handleInputChange = event => {
     const newState = {};
     newState[event.target.name] = event.target.value;
@@ -67,8 +50,8 @@ class Form extends Component {
               hasErrors: errors.message,
             })}
             name="message"
+            id="contactUsMessage"
             defaultValue={message}
-            ref={el => { this.textEl = el; }}
             autoFocus={contactUs}
             onChange={this.handleInputChange}
           />
