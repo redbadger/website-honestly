@@ -1,8 +1,8 @@
 import { renderToString } from 'react-dom/server';
-import Navigation from 'navigation';
+import { HTML5HistoryManager, StateNavigator } from 'navigation';
 import encode from 'ent/encode';
 
-import makeRoutes from '../routes';
+import makeRoutes, { handleContactUsHash } from '../routes';
 import layoutTemplate from '../index.ejs';
 import { cssPath, jsPath } from './asset-paths';
 
@@ -64,14 +64,12 @@ export const expandRoutes = (routeDefs, state, stateNavigator) => {
 };
 
 export function compileRoutes(siteRoutes, state) {
-  /*
-    We only register unexpanded routes with stateNavigator, so we can
-    continue to use named routes.
-  */
-  const stateNavigator = new Navigation.StateNavigator(
+  const history = new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1));
+  const stateNavigator = new StateNavigator(
     siteRoutes,
-    new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
+    history
   );
+  handleContactUsHash(stateNavigator);
 
   const encodedState = (state && encode(JSON.stringify(state)));
 

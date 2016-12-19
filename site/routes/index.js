@@ -37,3 +37,31 @@ export default function routes() {
       },
     }));
 }
+
+export const handleContactUsHash = stateNavigator => {
+  const { historyManager } = stateNavigator;
+  const getUrl = historyManager.getUrl.bind(historyManager);
+  historyManager.getUrl = hrefElement => {
+    const url = getUrl(hrefElement);
+    if (hrefElement.hash === '#contactUs') {
+      return url + '?contactUs=true';
+    }
+    return url;
+  };
+  const getHref = historyManager.getHref.bind(historyManager);
+  historyManager.getHref = url => {
+    const href = getHref(url);
+    const { state, data } = stateNavigator.parseLink(url);
+    if (state.key === 'homePage' && data.contactUs === true) {
+      return '/#contactUs';
+    }
+    return href;
+  };
+  historyManager.addHistory = url => {
+    const href = historyManager.getHref(url);
+    if (location.pathname + location.search + location.hash !== href) {
+      window.history.pushState(null, null, href);
+    }
+  };
+  return historyManager;
+};

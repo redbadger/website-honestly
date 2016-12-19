@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import { HTML5HistoryManager, StateNavigator } from 'navigation';
 
-import makeRoutes from '../../site/routes';
+import makeRoutes, { handleContactUsHash } from '../../site/routes';
 
 const TITLE_SUFFIX = 'Red Badger';
 
@@ -12,6 +12,7 @@ export function makeApp({ element, state }) {
     routes,
     history
   );
+  handleContactUsHash(stateNavigator);
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(location.origin + '/sw.js');

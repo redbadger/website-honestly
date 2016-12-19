@@ -14,6 +14,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'Home',
     key: 'homePage',
     route: '',
+    defaults: { contactUs: false },
     stateToProps: ({ featuredBlogPosts, contactUsURL }) => ({ featuredBlogPosts, contactUsURL }),
   },
   {

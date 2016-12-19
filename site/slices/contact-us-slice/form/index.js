@@ -46,9 +46,9 @@ class Form extends Component {
   render() {
     const { message, contact } = this.state;
     const { errors, fatalError } = this.props;
-    const { stateNavigator } = this.context;
+    const { contactUs } = this.context.stateNavigator.stateContext.data;
     return (
-      <section className={styles.formContainer} id="ContactUs">
+      <section className={styles.formContainer} id="contactUs">
         <h2 className={styles.heading}>
           We don’t have a sales team.
           <br />
@@ -69,7 +69,7 @@ class Form extends Component {
             name="message"
             defaultValue={message}
             ref={el => { this.textEl = el; }}
-            autoFocus={stateNavigator.stateContext.data.contactUs}
+            autoFocus={contactUs}
             onChange={this.handleInputChange}
           />
 
