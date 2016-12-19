@@ -5,7 +5,6 @@ import styles from './style.css';
 
 export default class EventImage extends Component {
   static propTypes = {
-    href: React.PropTypes.string.isRequired,
     imgPath: React.PropTypes.string.isRequired,
     imgAlt: React.PropTypes.string.isRequired,
   };
@@ -14,9 +13,7 @@ export default class EventImage extends Component {
     return (
       <div className={styles.imgBorder}>
         <div className={styles.imgWrapper}>
-          <a href={this.props.href}>
-            <img className={styles.eventPicture} src={this.props.imgPath} alt={this.props.imgAlt} />
-          </a>
+          <img className={styles.eventPicture} src={this.props.imgPath} alt={this.props.imgAlt} />
         </div>
       </div>
     );
