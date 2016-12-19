@@ -61,20 +61,23 @@ const handleContactUsHash = stateNavigator => {
   const { historyManager } = stateNavigator;
   const getUrl = historyManager.getUrl.bind(historyManager);
   historyManager.getUrl = hrefElement => {
-    const url = getUrl(hrefElement);
+    let url = getUrl(hrefElement);
     if (hrefElement.hash === '#contactUs') {
-      return url + '?contactUs=true';
+      const { state, data } = stateNavigator.parseLink(url);
+      url = stateNavigator.getNavigationLink(state.key, { ...data, contactUs: true });
     }
     return url;
   };
   const getHref = historyManager.getHref.bind(historyManager);
   historyManager.getHref = url => {
-    const href = getHref(url);
-    const { state, data } = stateNavigator.parseLink(url);
-    if (state.key === 'homePage' && data.contactUs === true) {
-      return '/#contactUs';
+    let newUrl = url;
+    let hash = '';
+    const { state, data: { contactUs, ...rest } } = stateNavigator.parseLink(url);
+    if (contactUs) {
+      newUrl = stateNavigator.getNavigationLink(state.key, rest);
+      hash = '#contactUs';
     }
-    return href;
+    return getHref(newUrl) + hash;
   };
   historyManager.addHistory = url => {
     const href = historyManager.getHref(url);
