@@ -31,7 +31,7 @@ const Footer = () => (
               <Link to="homePage">Home</Link>
             </li>
             <li>
-              <a href="/about-us/">About us</a>
+              <Link to="aboutUsPage">About us</Link>
             </li>
             <li>
               <Link to="whatWeDoPage">What we do</Link>
@@ -43,7 +43,7 @@ const Footer = () => (
               <Link to="events">Events</Link>
             </li>
             <li>
-              <a href="/about-us/join-us/">Jobs</a>
+              <Link to="joinUs">Jobs</Link>
             </li>
           </ul>
         </nav>
