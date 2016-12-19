@@ -20,6 +20,5 @@ export function makeApp({ element, state }) {
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element);
   });
-
   return stateNavigator;
 }
