@@ -1,0 +1,60 @@
+
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+
+.title {
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.body{
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  margin-bottom: 10px;
+}
+
+.largeScreen {
+  display: none;
+}
+.smallScreen {
+  display: block;
+}
+.topRow {
+  display: block;
+}
+.copy{
+  margin: 0;
+}
+
+.counterRow{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+@media mediumScreen {
+  .largeScreen {
+    display: block;
+  }
+  .smallScreen {
+    display: none;
+  }
+  .copy{
+    margin-right: 120px;
+    margin-left: 120px;
+    width: 450px;
+    align-self: flex-end;
+  }
+  .topRow {
+    display: flex;
+    justify-content: center;
+  }
+  .topRowFlipped{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+}

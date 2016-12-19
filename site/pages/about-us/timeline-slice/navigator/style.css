@@ -1,47 +1,72 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .navigator{
-  margin-bottom: 30px;
+  width: 50%;
 }
 
-.wrapper{
-  position: absolute;
-  height: 2px;
-}
-
-.list{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.old,
-.active,
-.future{
-  margin-left: 15px;
-  margin-right: 15px;
+.timeline{
+  background-color: #CCC;
   color: #CCC;
+  margin-top: 100px;
+  height: 2px;
+  width: 100%;
+  position: relative;
+  list-style: none;
 }
 
-.old:after,
-.active:after,
-.future:after{
-  border: 2px solid #CCC;
+
+.timeline button {
+  z-index: 99;
+  transition : 0.3s ease-in-out;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   position: absolute;
-
+  top: -5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #CCC;
 }
 
-.old:hover:after,
-.active:hover:after,
-.future:hover:after{
-  border-color: badgerRed;
-  color: badgerRed
+.timeline button:hover {
+  background-color: badgerRed;
+  color: badgerRed;
+}
+
+.timeline button:nth-child(1){
+  left: 0%;
+}
+.timeline button:nth-child(2){
+  left: 16%;
+}
+.timeline button:nth-child(3){
+  left: 33%;
+}
+.timeline button:nth-child(4){
+  left: 49%;
+}
+.timeline button:nth-child(5){
+  left: 66%;
+}
+.timeline button:nth-child(6){
+  left: 82%;
+}
+.timeline button:nth-child(7){
+  left: 100%;
 }
 
 .fillingLine {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  height: 2px;
   background-color: badgerRed;
+  width: 100%;
+  top: -2px;
+  left: 0;
+  transform-origin: left center;
+  transition: width 0.3s ease-in-out;
 }

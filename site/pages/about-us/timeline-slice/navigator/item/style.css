@@ -1,0 +1,57 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
+
+.text{
+  display: block;
+  position: relative;
+  top: -40px;
+  left: -15px;
+  text-align: center;
+  color: #CCC;
+  composes: sansSerif from "../../../../../css/typography/_fonts.css";
+	composes: fontXS from "../../../../../css/typography/_fonts.css";
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.old,
+.active a, 
+.text:hover{
+  color: badgerRed;
+}
+
+.old,
+.active,
+.future{
+  border: none;
+  background: transparent;
+}
+
+.old,
+button.active{
+  background-color: badgerRed;
+}
+
+
+.old:focus,
+.active:focus,
+.future:focus{
+  outline: none;
+}
+
+.old span,
+.active span,
+.future span{
+  display: inline-block;
+  margin-top: 5px;
+  width: 5px;
+  height: 10px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #CCC;
+ }
+
+.old span,
+.active span{
+  background-color: badgerRed;
+ }
+
