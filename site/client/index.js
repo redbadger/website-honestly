@@ -21,6 +21,9 @@ export function makeApp({ element, state }) {
       if (params.contactUs) {
         const el = document.getElementById('contactUsMessage');
         if (el) {
+          if (el.scrollIntoView) {
+            el.scrollIntoView();
+          }
           el.focus();
         }
       } else {
