@@ -4,6 +4,7 @@ type RouteDefinition = {|
   title: string | (props: Object) => string,
   key: string,
   route: string,
+  defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
   render?: (state: Object) => any,
