@@ -19,11 +19,12 @@ export function makeApp({ element, state }) {
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, () => {
       if (params.contactUs) {
-        const el = document.getElementById('contactUsMessage');
+        let el = document.getElementById('contactUs');
+        if (el && el.scrollIntoView) {
+          el.scrollIntoView();
+        }
+        el = document.getElementById('contactUsMessage');
         if (el) {
-          if (el.scrollIntoView) {
-            el.scrollIntoView();
-          }
           el.focus();
         }
       } else {
