@@ -12,7 +12,6 @@ export function makeApp({ element, state }) {
   }
 
   stateNavigator.onNavigate((oldRoute, route, params) => {
-    window.scrollTo(0, 0);
     const props = route.stateToProps && route.stateToProps(state, params);
     const pageTitle = typeof route.title === 'function' ? route.title(props) : route.title;
     const title = `${pageTitle} | ${TITLE_SUFFIX}`;
@@ -24,6 +23,8 @@ export function makeApp({ element, state }) {
         if (el) {
           el.focus();
         }
+      } else {
+        window.scrollTo(0, 0);
       }
     });
   });
