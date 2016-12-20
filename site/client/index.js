@@ -20,12 +20,11 @@ const scrollTo = params => () => {
 };
 
 export function makeApp({ element, state }) {
-  const stateNavigator = createStateNavigator();
-
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(location.origin + '/sw.js');
   }
 
+  const stateNavigator = createStateNavigator();
   stateNavigator.onNavigate((oldRoute, route, params) => {
     const props = route.stateToProps && route.stateToProps(state, params);
     const pageTitle = typeof route.title === 'function' ? route.title(props) : route.title;
