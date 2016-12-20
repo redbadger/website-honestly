@@ -4,6 +4,21 @@ import createStateNavigator from '../../site/routes';
 
 const TITLE_SUFFIX = 'Red Badger';
 
+const scrollTo = params => () => {
+  if (params.contactUs) {
+    let el = document.getElementById('contactUs');
+    if (el && el.scrollIntoView) {
+      el.scrollIntoView();
+    }
+    el = document.getElementById('contactUsMessage');
+    if (el) {
+      el.focus();
+    }
+  } else {
+    window.scrollTo(0, 0);
+  }
+};
+
 export function makeApp({ element, state }) {
   const stateNavigator = createStateNavigator();
 
@@ -17,20 +32,7 @@ export function makeApp({ element, state }) {
     const title = `${pageTitle} | ${TITLE_SUFFIX}`;
     stateNavigator.stateContext.title = title;
     const component = route.component({ stateNavigator, title }, props);
-    ReactDOM.render(component, element, () => {
-      if (params.contactUs) {
-        let el = document.getElementById('contactUs');
-        if (el && el.scrollIntoView) {
-          el.scrollIntoView();
-        }
-        el = document.getElementById('contactUsMessage');
-        if (el) {
-          el.focus();
-        }
-      } else {
-        window.scrollTo(0, 0);
-      }
-    });
+    ReactDOM.render(component, element, scrollTo(params));
   });
   return stateNavigator;
 }
