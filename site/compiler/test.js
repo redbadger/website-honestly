@@ -93,11 +93,13 @@ describe('site/compiler', () => {
           date: '31',
           month: '01',
           year: '2017',
+          monthSym: 'January',
         },
         endDateTime: {
           date: '01',
           month: '02',
           year: '2017',
+          monthSym: 'February',
         },
       };
       const designingEvent = {
@@ -108,11 +110,13 @@ describe('site/compiler', () => {
           date: '03',
           month: '08',
           year: '2016',
+          monthSym: 'August',
         },
         endDateTime: {
           date: '04',
           month: '08',
           year: '2016',
+          monthSym: 'August',
         },
       };
 
