@@ -1,5 +1,4 @@
 import React from 'react';
-import desktop from './2013-desktop.png';
 import mobile from './2013-mobile.jpg';
 import Content from '../content';
 
@@ -16,7 +15,7 @@ const Three = () => {
     <Content
       title={title}
       text={text}
-      image={desktop}
+      image={mobile}
       mobileImage={mobile}
       counters={counters}
       flip

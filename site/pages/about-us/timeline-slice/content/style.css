@@ -6,7 +6,7 @@
 }
   
 .imageWrapper{
-  width: 30%;
+  width: 50%;
 }
 .title {
   composes: serif from "../../../../css/typography/_fonts.css";
@@ -55,7 +55,7 @@
   }
   .copy{
     margin-right: 60px;
-    margin-left: 60px;
+    margin-left: 0px;
     width: 340px;
     align-self: flex-end;
   }

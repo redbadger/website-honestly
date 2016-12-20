@@ -10,14 +10,14 @@
 .title {
   composes: sansSerifBold from "../../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../../css/typography/_fonts.css";
-  margin: 15px 0px;
+  margin: 10px 0px;
   color: badgerBlack;
 }
 
 .count{
   composes: serif from "../../../../../css/typography/_fonts.css";
   composes: fontS from "../../../../../css/typography/_fonts.css";
-  margin: 15px 0px;
+  margin: 10px 0px;
   color: badgerBlack;
 }
 
@@ -27,5 +27,12 @@
     border-bottom: 1px solid #CCC;
     width: 220px;
     text-align: center;
+    margin: 0px 10px;
+  }
+  .title{
+    margin-bottom: 5px;
+  }
+  .count{
+    margin-top:0px; 
   }
 }

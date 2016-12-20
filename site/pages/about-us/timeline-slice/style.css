@@ -24,7 +24,7 @@
 
 @media mediumScreen {
   .content {
-    padding: 60px 40px;
+    padding: 100px 40px 60px 40px
   }
   .mobileNavigatorBackground{
     display: none;

@@ -12,9 +12,12 @@
 
 .navigator{
   width: 80%;
+  height: 50px;
   position: absolute;
 }
+.vericalOffset{
 
+}
 .timeline{
   background-color: #CCC;
   color: #CCC;
@@ -72,5 +75,11 @@
   .timeline{
     margin-top: 100px;
     
+  }
+}
+
+@media largeScreen{
+  .navigator{
+    width: 40%;
   }
 }
