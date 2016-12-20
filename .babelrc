@@ -8,6 +8,7 @@
     "transform-class-properties",
     "babel-plugin-transform-object-rest-spread",
     "transform-flow-strip-types",
+    "transform-export-extensions",
   ],
   "env": {
     "typecheck": {
