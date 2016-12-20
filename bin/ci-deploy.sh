@@ -22,8 +22,6 @@ createCommitSite() {
 
   echo Registering deployment with GitHub
   ./bin/register-github-deployment.js $COMMIT_REF
-  ./bin/register-github-release.js staging
-  ./bin/register-github-release.js live
   echo Done!
 }
 
