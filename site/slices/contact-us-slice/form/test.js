@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { StateNavigator } from 'navigation';
 import Form from '.';
 
 describe('Contact Us Slice - Form state', () => {
@@ -9,7 +8,7 @@ describe('Contact Us Slice - Form state', () => {
       errors={{}}
       fatalError={false}
       onSubmit={() => {}}
-    />, { context: { stateNavigator: new StateNavigator() } });
+    />);
     expect(wrapper.text()).not.to.contain('Oops! Looks like something went wrong.');
   });
 
@@ -21,7 +20,7 @@ describe('Contact Us Slice - Form state', () => {
       }}
       fatalError={false}
       onSubmit={() => {}}
-    />, { context: { stateNavigator: new StateNavigator() } });
+    />);
     expect(wrapper.text()).to.contain('please write something');
     expect(wrapper.text()).to.contain('please fill in contact details');
   });
@@ -31,7 +30,7 @@ describe('Contact Us Slice - Form state', () => {
       errors={{}}
       fatalError
       onSubmit={() => {}}
-    />, { context: { stateNavigator: new StateNavigator() } });
+    />);
     expect(wrapper.text()).to.contain('Oops! Looks like something went wrong.');
   });
 });

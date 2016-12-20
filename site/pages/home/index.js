@@ -11,16 +11,17 @@ import NewsLetter from './newsletter-slice';
 
 export type HomePageProps = {
   contactUsURL: string,
-  featuredBlogPosts: Array<Object>
+  featuredBlogPosts: Array<Object>,
+  contactUs?: boolean,
 };
 
-const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => (
+const HomePage = ({ contactUsURL, featuredBlogPosts, contactUs }: HomePageProps) => (
   <div>
     <TopSlice />
     <CaseStudy />
     <Brie />
     <TechSlice />
-    <ContactUs postURL={contactUsURL} />
+    <ContactUs postURL={contactUsURL} contactUs={contactUs} />
     <BlogSlice featuredBlogPosts={featuredBlogPosts} />
     <NewsLetter />
   </div>

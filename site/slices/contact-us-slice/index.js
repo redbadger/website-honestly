@@ -22,16 +22,6 @@ class ContactUs extends Component {
     };
   }
 
-  componentDidMount = () => {
-    const { stateNavigator } = this.context;
-    stateNavigator.onNavigate(this.onClose);
-  }
-
-  componentWillUnmount = () => {
-    const { stateNavigator } = this.context;
-    stateNavigator.offNavigate(this.onClose);
-  }
-
   onClose = () => {
     this.setState({
       success: false,
@@ -72,18 +62,16 @@ class ContactUs extends Component {
         onSubmit={this.submitForm}
         fatalError={fatalError}
         errors={errors}
+        contactUs={this.props.contactUs}
       />
     );
   }
 }
 
-ContactUs.contextTypes = {
-  stateNavigator: React.PropTypes.object,
-};
-
-const { string } = React.PropTypes;
+const { string, bool } = React.PropTypes;
 ContactUs.propTypes = {
   postURL: string,
+  contactUs: bool,
 };
 
 export default ContactUs;

@@ -28,8 +28,7 @@ class Form extends Component {
 
   render() {
     const { message, contact } = this.state;
-    const { errors, fatalError } = this.props;
-    const { contactUs } = this.context.stateNavigator.stateContext.data;
+    const { errors, fatalError, contactUs } = this.props;
     return (
       <section className={styles.formContainer} id="contactUs">
         <h2 className={styles.heading}>
@@ -118,10 +117,6 @@ class Form extends Component {
   }
 }
 
-Form.contextTypes = {
-  stateNavigator: React.PropTypes.object,
-};
-
 const { shape, func, string, bool } = React.PropTypes;
 Form.propTypes = {
   errors: shape({
@@ -130,6 +125,7 @@ Form.propTypes = {
   }).isRequired,
   fatalError: bool.isRequired,
   onSubmit: func.isRequired,
+  contactUs: bool,
 };
 
 export default Form;

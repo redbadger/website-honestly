@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { StateNavigator } from 'navigation';
 import ContactUs from '.';
 import Form from './form/';
 import Success from './success/';
@@ -24,7 +23,7 @@ describe('Contact Us Slice', () => {
         });
       });
 
-      const wrapper = mount(<ContactUs />, { context: { stateNavigator: new StateNavigator() } });
+      const wrapper = mount(<ContactUs />);
       const promise = wrapper.instance().submitForm({}, sendEmailFn);
 
       promise.then(() => {
@@ -51,7 +50,7 @@ describe('Contact Us Slice', () => {
         });
       });
 
-      const wrapper = mount(<ContactUs />, { context: { stateNavigator: new StateNavigator() } });
+      const wrapper = mount(<ContactUs />);
       const promise = wrapper.instance().submitForm({}, sendEmailFn);
 
       promise.then(() => {
@@ -74,7 +73,7 @@ describe('Contact Us Slice', () => {
         reject('whoops');
       });
 
-      const wrapper = mount(<ContactUs />, { context: { stateNavigator: new StateNavigator() } });
+      const wrapper = mount(<ContactUs />);
       const promise = wrapper.instance().submitForm({}, sendEmailFn);
 
       promise.then(() => {
