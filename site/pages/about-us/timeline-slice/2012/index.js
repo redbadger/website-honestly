@@ -1,5 +1,6 @@
 import React from 'react';
-import image from './image.png';
+import desktop from './2012-desktop.png';
+import mobile from './2012-mobile.jpg';
 import Content from '../content';
 
 const Two = () => {
@@ -11,7 +12,17 @@ const Two = () => {
     { title: 'Favourite tech', value: 'JS transpilers' },
   ];
 
-  return <Content title={title} text={text} image={image} counters={counters} />;
+  return (
+    <Content
+      title={title}
+      text={text}
+      image={desktop}
+      mobileImage={mobile}
+      counters={counters}
+      flip
+    />
+  );
 };
 
 export default Two;
+

@@ -1,5 +1,6 @@
 import React from 'react';
-import image from './image.png';
+import desktop from './2015-desktop.png';
+import mobile from './2015-mobile.jpg';
 import Content from '../content';
 
 const Five = () => {
@@ -11,7 +12,16 @@ const Five = () => {
     { title: 'Favourite tech', value: 'Docker' },
   ];
 
-  return <Content title={title} text={text} image={image} counters={counters} />;
+  return (
+    <Content
+      title={title}
+      text={text}
+      image={desktop}
+      mobileImage={mobile}
+      counters={counters}
+      flip
+    />
+  );
 };
 
 export default Five;

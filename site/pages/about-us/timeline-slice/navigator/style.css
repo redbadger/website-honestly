@@ -1,18 +1,23 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+@value timelineContainer from "../../../../css/_zindex.css";
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 420px;
+  z-index: timelineContainer;
 }
 
 .navigator{
-  width: 50%;
+  width: 80%;
+  position: absolute;
 }
 
 .timeline{
   background-color: #CCC;
   color: #CCC;
-  margin-top: 100px;
   height: 2px;
   width: 100%;
   position: relative;
@@ -20,23 +25,6 @@
 }
 
 
-.timeline button {
-  z-index: 99;
-  transition : 0.3s ease-in-out;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: -5px;
-  text-align: center;
-  cursor: pointer;
-  background-color: #CCC;
-}
-
-.timeline button:hover {
-  background-color: badgerRed;
-  color: badgerRed;
-}
 
 .timeline button:nth-child(1){
   left: 0%;
@@ -69,4 +57,20 @@
   left: 0;
   transform-origin: left center;
   transition: width 0.3s ease-in-out;
+}
+
+@media mediumScreen{
+  .container{
+    top: 0px;
+  }
+
+  .navigator{
+    width: 50%;
+    position: relative;
+  }
+
+  .timeline{
+    margin-top: 100px;
+    
+  }
 }

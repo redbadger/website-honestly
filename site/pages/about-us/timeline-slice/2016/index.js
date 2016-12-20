@@ -1,5 +1,6 @@
 import React from 'react';
-import image from './image.png';
+import desktop from './2016-desktop.png';
+import mobile from './2016-mobile.jpg';
 import Content from '../content';
 
 const Six = () => {
@@ -11,7 +12,16 @@ const Six = () => {
     { title: 'Favourite tech', value: 'GraphQL' },
   ];
 
-  return <Content title={title} text={text} image={image} counters={counters} flip />;
+  return (
+    <Content
+      title={title}
+      text={text}
+      image={desktop}
+      mobileImage={mobile}
+      counters={counters}
+      flip
+    />
+  );
 };
 
 export default Six;

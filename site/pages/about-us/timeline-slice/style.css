@@ -1,11 +1,32 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
 
 .timeline{
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
 	composes: fontXS from "../../../css/typography/_fonts.css";
   background-color: badgerWhite;
-  composes: dividerWhite from "../../../css/_divider.css";
+  composes: dividerBlackOnTransparent from "../../../css/_divider.css";
 }
+
 .content {
-  padding: 60px 40px;
+  padding: 0px;
+}
+
+.mobileNavigatorBackground{
+  height: 20px;
+  width: 90%;
+  margin: 0px 5%;
+  background-color: badgerWhite;
+  position: absolute;
+  top: 380px;
+  z-index: 5;
+}
+
+@media mediumScreen {
+  .content {
+    padding: 60px 40px;
+  }
+  .mobileNavigatorBackground{
+    display: none;
+  }
 }

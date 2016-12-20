@@ -28,6 +28,7 @@ class TimelineSlice extends React.Component {
     return (
       <div className={styles.timeline}>
         <Navigator currentIndex={currentIndex} onClick={this.setPage} />
+        <div className={styles.mobileNavigatorBackground} />
         <div className={styles.content}>
           <SwipeableViews index={currentIndex} onChangeIndex={this.setPage}>
             <Zero />

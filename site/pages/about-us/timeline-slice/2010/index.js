@@ -1,5 +1,6 @@
 import React from 'react';
-import image from './image.png';
+import desktop from './2010-desktop.png';
+import mobile from './2010-mobile.jpg';
 import Content from '../content';
 
 const Zero = () => {
@@ -11,7 +12,16 @@ const Zero = () => {
     { title: 'Favourite tech', value: 'Github' },
   ];
 
-  return <Content title={title} text={text} image={image} counters={counters} />;
+  return (
+    <Content
+      title={title}
+      text={text}
+      image={desktop}
+      mobileImage={mobile}
+      counters={counters}
+      flip
+    />
+  );
 };
 
 export default Zero;

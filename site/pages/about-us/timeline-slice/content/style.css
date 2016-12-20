@@ -1,17 +1,26 @@
-
+@value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 
+.image {
+    width: 100%;
+}
+  
+.imageWrapper{
+  width: 30%;
+}
 .title {
   composes: serif from "../../../../css/typography/_fonts.css";
-  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  color: badgerBlack;
 }
 
 .body{
   composes: sansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
   margin-bottom: 10px;
+  color: badgerBlack;
 }
 
 .largeScreen {
@@ -24,15 +33,18 @@
   display: block;
 }
 .copy{
-  margin: 0;
+  margin: 20px 0px 0px 0px;
+  padding: 20px 20px 0px 20px;
 }
 
 .counterRow{
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-  }
+  border-bottom: 1px solid #CCC;
+  margin: 60px 20px 70px 20px;
+}
 
+@media smallScreen{
+ 
+}
 
 @media mediumScreen {
   .largeScreen {
@@ -42,9 +54,9 @@
     display: none;
   }
   .copy{
-    margin-right: 120px;
-    margin-left: 120px;
-    width: 450px;
+    margin-right: 60px;
+    margin-left: 60px;
+    width: 340px;
     align-self: flex-end;
   }
   .topRow {
@@ -56,5 +68,19 @@
     justify-content: center;
     flex-direction: row-reverse;
   }
+  .counterRow{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+  }
+}
 
+
+@media largeScreen{
+  .copy{
+    margin-right: 120px;
+    margin-left: 120px;
+    width: 450px;
+  }
 }

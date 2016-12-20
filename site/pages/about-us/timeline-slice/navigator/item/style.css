@@ -1,19 +1,18 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
+@value timelineNavigationButton from "../../../../../css/_zindex.css";
 
 .text{
-  display: block;
+  display: none;
   position: relative;
-  top: -40px;
-  left: -15px;
-  text-align: center;
   color: #CCC;
-  composes: sansSerif from "../../../../../css/typography/_fonts.css";
+  composes: sansSerifBold from "../../../../../css/typography/_fonts.css";
 	composes: fontXS from "../../../../../css/typography/_fonts.css";
-  outline: none;
   transition: 0.3s ease-in-out;
+  left: -15px;
+  cursor: pointer;
 }
 
-.old,
 .active a, 
 .text:hover{
   color: badgerRed;
@@ -22,12 +21,16 @@
 .old,
 .active,
 .future{
+  position: absolute;
   border: none;
   background: transparent;
+  top: -5px;
+  text-align: left;
+  padding: 0;
 }
 
-.old,
-button.active{
+.old span,
+.active span{
   background-color: badgerRed;
 }
 
@@ -38,15 +41,22 @@ button.active{
   outline: none;
 }
 
+.old,
+.active,
+.future{
+  
+}
+
 .old span,
 .active span,
 .future span{
-  display: inline-block;
-  margin-top: 5px;
-  width: 5px;
+  z-index: timelineNavigationButton;
+  transition : 0.3s ease-in-out;
+  width: 10px;
   height: 10px;
-  position: relative;
   border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
   background-color: #CCC;
  }
 
@@ -55,3 +65,10 @@ button.active{
   background-color: badgerRed;
  }
 
+
+@media mediumScreen {
+  .text{
+     display: block;
+     top: -40px;
+  }
+}

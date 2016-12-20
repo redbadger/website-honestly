@@ -13,7 +13,12 @@ const TimelineNav = ({ value, onClick, currentIndex, children }) => {
 
   const click = () => onClick(value);
 
-  return <button tabIndex={0} className={className} onClick={click}><a className={styles.text}>{children}</a></button>;
+  return (
+    <button tabIndex={0} className={className} onClick={click}>
+      <span />
+      <a className={styles.text}>{children}</a>
+    </button>
+  );
 };
 
 
