@@ -1,0 +1,20 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+@value timelineContainer from "../../../../css/_zindex.css";
+
+.mobileImage {
+  margin-bottom: 20px;  
+}
+.image {
+  width: 100%;
+}
+
+@media mediumScreen{
+  .image {
+    display: none;
+  }
+
+  .container{
+    display: none;
+  }
+}

@@ -5,8 +5,6 @@
 .container {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 420px;
   z-index: timelineContainer;
 }
 
@@ -48,7 +46,7 @@
   left: 82%;
 }
 .timeline button:nth-child(7){
-  left: 100%;
+  left: 97%;
 }
 
 .fillingLine {
@@ -65,6 +63,7 @@
 @media mediumScreen{
   .container{
     top: 0px;
+    position: relative;
   }
 
   .navigator{

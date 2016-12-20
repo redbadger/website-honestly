@@ -2,11 +2,11 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 
 .image {
-    width: 100%;
+    display: none;
 }
   
 .imageWrapper{
-  width: 50%;
+  display: none;
 }
 .title {
   composes: serif from "../../../../css/typography/_fonts.css";
@@ -47,6 +47,14 @@
 }
 
 @media mediumScreen {
+  .image {
+    display: block;
+    width: 100%;
+  }
+  .imageWrapper{
+    display: block;
+    width: 50%;
+  }
   .largeScreen {
     display: block;
   }

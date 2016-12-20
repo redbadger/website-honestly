@@ -10,6 +10,7 @@ import Three from './2013';
 import Four from './2014';
 import Five from './2015';
 import Six from './2016';
+import ImageMobile from './mobileImage';
 
 class TimelineSlice extends React.Component {
 
@@ -27,8 +28,8 @@ class TimelineSlice extends React.Component {
     const { currentIndex } = this.state;
     return (
       <div className={styles.timeline}>
+        <ImageMobile index={currentIndex} onChangeIndex={this.setPage} />
         <Navigator currentIndex={currentIndex} onClick={this.setPage} />
-        <div className={styles.mobileNavigatorBackground} />
         <div className={styles.content}>
           <SwipeableViews index={currentIndex} onChangeIndex={this.setPage}>
             <Zero />
