@@ -11,8 +11,14 @@ export function makeApp({ element, state }) {
     navigator.serviceWorker.register(location.origin + '/sw.js');
   }
 
-  stateNavigator.onNavigate((_, route, params) => {
+  stateNavigator.onNavigate((oldRoute, route, params) => {
     window.scrollTo(0, 0);
+    if (oldRoute === route && params.contactUs) {
+      const el = document.getElementById('contactUsMessage');
+      if (el) {
+        setTimeout(() => el.focus(), 0);
+      }
+    }
     const props = route.stateToProps && route.stateToProps(state, params);
     const pageTitle = typeof route.title === 'function' ? route.title(props) : route.title;
     const title = `${pageTitle} | ${TITLE_SUFFIX}`;
