@@ -3,7 +3,7 @@
 
 const fetch = require('node-fetch');
 
-if (process.env.argv[2] !== 'live') {
+if (process.argv[2] !== 'live') {
   console.log('Skipping release tracking for non-production environment.');
 }
 
