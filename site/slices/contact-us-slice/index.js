@@ -62,16 +62,14 @@ class ContactUs extends Component {
         onSubmit={this.submitForm}
         fatalError={fatalError}
         errors={errors}
-        contactUs={this.props.contactUs}
       />
     );
   }
 }
 
-const { string, bool } = React.PropTypes;
+const { string } = React.PropTypes;
 ContactUs.propTypes = {
   postURL: string,
-  contactUs: bool,
 };
 
 export default ContactUs;

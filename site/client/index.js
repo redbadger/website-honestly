@@ -16,9 +16,9 @@ export function makeApp({ element, state }) {
     const pageTitle = typeof route.title === 'function' ? route.title(props) : route.title;
     const title = `${pageTitle} | ${TITLE_SUFFIX}`;
     stateNavigator.stateContext.title = title;
-    const component = route.component({ stateNavigator, title }, { ...props, ...params });
+    const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, () => {
-      if (oldRoute === route && params.contactUs) {
+      if (params.contactUs) {
         const el = document.getElementById('contactUsMessage');
         if (el) {
           el.focus();

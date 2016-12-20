@@ -28,7 +28,7 @@ class Form extends Component {
 
   render() {
     const { message, contact } = this.state;
-    const { errors, fatalError, contactUs } = this.props;
+    const { errors, fatalError } = this.props;
     return (
       <section className={styles.formContainer} id="contactUs">
         <h2 className={styles.heading}>
@@ -51,7 +51,6 @@ class Form extends Component {
             name="message"
             id="contactUsMessage"
             defaultValue={message}
-            autoFocus={contactUs}
             onChange={this.handleInputChange}
           />
 
@@ -125,7 +124,6 @@ Form.propTypes = {
   }).isRequired,
   fatalError: bool.isRequired,
   onSubmit: func.isRequired,
-  contactUs: bool,
 };
 
 export default Form;

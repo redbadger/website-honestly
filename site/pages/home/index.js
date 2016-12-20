@@ -12,24 +12,18 @@ import NewsLetter from './newsletter-slice';
 export type HomePageProps = {
   contactUsURL: string,
   featuredBlogPosts: Array<Object>,
-  contactUs?: boolean,
 };
 
-const HomePage = ({ contactUsURL, featuredBlogPosts, contactUs }: HomePageProps) => (
+const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => (
   <div>
     <TopSlice />
     <CaseStudy />
     <Brie />
     <TechSlice />
-    <ContactUs postURL={contactUsURL} contactUs={contactUs} />
+    <ContactUs postURL={contactUsURL} />
     <BlogSlice featuredBlogPosts={featuredBlogPosts} />
     <NewsLetter />
   </div>
 );
-
-HomePage.propTypes = {
-  contactUsURL: React.PropTypes.string,
-  featuredBlogPosts: React.PropTypes.array,
-};
 
 export default HomePage;
