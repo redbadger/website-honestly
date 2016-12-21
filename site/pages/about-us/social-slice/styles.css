@@ -11,7 +11,20 @@
   margin-right: auto;
 }
 
+.scrollRegion {
+  display: inline-block;
+  width: 690px;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrollWindow {
+  transition: all 0.3s;
+}
+
 .card {
+  white-space: normal;
   width: 345px;
   height: 500px;
   background: badgerBlack;
