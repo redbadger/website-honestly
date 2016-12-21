@@ -2,20 +2,19 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 @value timelineContainer from "../../../../css/_zindex.css";
 
-.container {
+.navigator {
+  z-index: timelineContainer;
+  background: badgerWhite;
   display: flex;
   justify-content: center;
-  z-index: timelineContainer;
 }
 
-.navigator{
+.container{
+  position: relative;
   width: 80%;
-  height: 50px;
-  position: absolute;
+  top: -10px;
 }
-.vericalOffset{
 
-}
 .timeline{
   background-color: #CCC;
   color: #CCC;
@@ -24,8 +23,6 @@
   position: relative;
   list-style: none;
 }
-
-
 
 .timeline button:nth-child(1){
   left: 0%;
@@ -46,7 +43,7 @@
   left: 82%;
 }
 .timeline button:nth-child(7){
-  left: 97%;
+  left: 100%;
 }
 
 .fillingLine {
@@ -61,24 +58,23 @@
 }
 
 @media mediumScreen{
-  .container{
-    top: 0px;
-    position: relative;
+  .navigator{
+   
   }
 
-  .navigator{
+  .container{
+    position: absolute;
     width: 50%;
-    position: relative;
+    top: 0px;
   }
 
   .timeline{
     margin-top: 100px;
-    
   }
 }
 
 @media largeScreen{
-  .navigator{
+  .container{
     width: 40%;
   }
 }

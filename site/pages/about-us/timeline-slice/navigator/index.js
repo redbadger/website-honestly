@@ -31,20 +31,18 @@ const TimelineNav = ({ currentIndex, onClick }) => {
 
 
   return (
-    <div className={styles.container}>
-      <div className={styles.navigator}>
-        <div className={styles.vericalOffset}>
-          <div className={styles.timeline}>
-            <Item value={0} onClick={onClick} currentIndex={currentIndex}>2010</Item>
-            <Item value={1} onClick={onClick} currentIndex={currentIndex}>2011</Item>
-            <Item value={2} onClick={onClick} currentIndex={currentIndex}>2012</Item>
-            <Item value={3} onClick={onClick} currentIndex={currentIndex}>2013</Item>
-            <Item value={4} onClick={onClick} currentIndex={currentIndex}>2014</Item>
-            <Item value={5} onClick={onClick} currentIndex={currentIndex}>2015</Item>
-            <Item value={6} onClick={onClick} currentIndex={currentIndex}>2016</Item>
-          </div>
-          <div className={styles.fillingLine} style={{ width: `${scale}` }} />
+    <div className={styles.navigator}>
+      <div className={styles.container}>
+        <div className={styles.timeline}>
+          <Item value={0} onClick={onClick} currentIndex={currentIndex}>2010</Item>
+          <Item value={1} onClick={onClick} currentIndex={currentIndex}>2011</Item>
+          <Item value={2} onClick={onClick} currentIndex={currentIndex}>2012</Item>
+          <Item value={3} onClick={onClick} currentIndex={currentIndex}>2013</Item>
+          <Item value={4} onClick={onClick} currentIndex={currentIndex}>2014</Item>
+          <Item value={5} onClick={onClick} currentIndex={currentIndex}>2015</Item>
+          <Item value={6} onClick={onClick} currentIndex={currentIndex}>2016</Item>
         </div>
+        <div className={styles.fillingLine} style={{ width: `${scale}` }} />
       </div>
     </div>
   );

@@ -12,19 +12,9 @@
   padding: 0px;
 }
 
-.mobileNavigatorBackground{
-  height: 20px;
-  width: 90%;
-  margin: 0px 5%;
-  background-color: badgerWhite;
-  position: absolute;
-  top: 380px;
-  z-index: 5;
-}
-
 @media mediumScreen {
   .content {
-    padding: 100px 40px 60px 40px
+    padding: 140px 40px 60px 40px
   }
   .mobileNavigatorBackground{
     display: none;
