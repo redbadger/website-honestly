@@ -7,12 +7,18 @@
   background-color: badgerWhite;
   composes: dividerBlackOnTransparent from "../../../css/_divider.css";
 }
+.image{
+  width: 100%;
+}
 
 .content {
   padding: 0px;
 }
 
 @media mediumScreen {
+  .image{
+    display: none;
+  }
   .content {
     padding: 140px 40px 60px 40px
   }
