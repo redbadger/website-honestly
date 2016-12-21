@@ -68,3 +68,18 @@
   composes: fontS2 from "../../../css/typography/_fonts.css";
   margin: 10px 20px;
 }
+
+.icon svg {
+  width: 17px;
+  height: 16px;
+}
+
+.twitterIcon svg {
+  width: 19px;
+  height: 15px;
+}
+
+.instagramIcon svg {
+  width: 20px;
+  height: 20px;
+}
