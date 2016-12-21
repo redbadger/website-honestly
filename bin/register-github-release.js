@@ -29,8 +29,7 @@ const headers = {
   Authorization: `Basic ${auth}`,
 };
 
-const deploymentsUrl =
-  'https://api.github.com/repos/redbadger/website-honestly/releases';
+const baseUrl = 'https://api.github.com/repos/redbadger/website-honestly';
 
 const assertStatusOK = response => {
   if (response.status >= 200 && response.status < 300) {
@@ -43,22 +42,48 @@ const assertStatusOK = response => {
   });
 };
 
-const registerRelease = () =>
-  fetch(deploymentsUrl, {
+const parseJson = blob => blob.json();
+
+const getLatestRelease = () => (
+  fetch(baseUrl + '/releases/latest', {
+    method: 'GET',
+    headers,
+  })
+  .then(assertStatusOK)
+  .then(parseJson)
+  .then(release => release.tag_name)
+);
+
+const formatCommit = commit => '* ' + commit.split('\n')[0];
+
+const getCommits = (from, to) => (
+  fetch(baseUrl + `/compare/${from}...${to}`, {
+    method: 'GET',
+    headers,
+  })
+  .then(assertStatusOK)
+  .then(parseJson)
+  .then(response => response.commits.map(c => formatCommit(c.commit.message)))
+);
+
+const registerRelease = commits => (
+  fetch(baseUrl + '/releases', {
     method: 'POST',
     headers,
     body: JSON.stringify({
       name: 'Deployment @ ' + new Date().toString().split(' GMT')[0],
       tag_name: Date.now().toString(),
+      body: commits.join('\n'),
     }),
-  });
-
-const parseJson = blob => blob.json();
-
-registerRelease()
+  })
   .then(assertStatusOK)
   .then(parseJson)
-  .catch(err => {
-    console.error(err);
+);
+
+getLatestRelease()
+  .then(rel => getCommits(rel, 'master'))
+  .then(commits => registerRelease(commits))
+  .catch(e => {
+    console.error('ERROR', e);
     process.exit(1);
   });
