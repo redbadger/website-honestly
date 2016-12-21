@@ -100,6 +100,13 @@ class SocialSlice extends React.Component {
                 likeCount={88}
                 index={0}
               />
+              <Instagram
+                handle="@redbadgerteam"
+                image="https://cdn.zeplin.io/57c8297fc3cf63795b6a4520/assets/908871A3-1D9D-4D96-85AA-A9B4D27804D3.png"
+                alt="Hemingway"
+                likeCount={88}
+                commentCount={88}
+              />
               <Twitter
                 handle="@redbadgerteam"
                 tweet="What on earth is #git?! @nicollecastrog explains all in plain english here – http://bit.ly/2gWDcyk #versioncontrol #techexplained #github"
