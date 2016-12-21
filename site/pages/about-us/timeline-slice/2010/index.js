@@ -18,7 +18,6 @@ const Zero = () => {
       image={mobile}
       mobileImage={mobile}
       counters={counters}
-      flip
     />
   );
 };

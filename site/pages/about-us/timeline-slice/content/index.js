@@ -6,7 +6,7 @@ const Content = ({ title, text, image, mobileImage, counters, flip }) => {
   const topRowClassName = flip ? styles.topRowFlipped : styles.topRow;
 
   return (
-    <div className={styles.content}>
+    <div>
       <div className={styles.largeScreen}>
         <div className={topRowClassName}>
           <div className={styles.imageWrapper}>

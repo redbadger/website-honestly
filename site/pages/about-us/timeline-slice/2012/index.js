@@ -18,7 +18,6 @@ const Two = () => {
       image={mobile}
       mobileImage={mobile}
       counters={counters}
-      flip
     />
   );
 };

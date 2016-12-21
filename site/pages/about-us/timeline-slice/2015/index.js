@@ -19,7 +19,6 @@ const Five = () => {
       image={desktop}
       mobileImage={mobile}
       counters={counters}
-      flip
     />
   );
 };

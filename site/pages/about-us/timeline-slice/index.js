@@ -26,6 +26,7 @@ class TimelineSlice extends React.Component {
   componentWillMount() {
     this.state = {
       currentIndex: 6,
+      animateHeight: false,
     };
   }
 
@@ -36,7 +37,9 @@ class TimelineSlice extends React.Component {
   }
 
   setPage = idx => {
-    this.setState({ currentIndex: idx });
+    this.setState({
+      currentIndex: idx,
+    });
   }
 
   render() {
@@ -48,7 +51,7 @@ class TimelineSlice extends React.Component {
           <ImageMobile index={currentIndex} onChangeIndex={this.setPage} />
           <Navigator currentIndex={currentIndex} onClick={this.setPage} />
           <div className={styles.content}>
-            <SwipeableViews index={currentIndex} onChangeIndex={this.setPage}>
+            <SwipeableViews index={currentIndex} onChangeIndex={this.setPage} animateHeight>
               <Zero />
               <One />
               <Two />

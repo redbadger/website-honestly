@@ -13,6 +13,7 @@
 
 .content {
   padding: 0px;
+  background: badgerWhite;
 }
 
 @media mediumScreen {
@@ -20,9 +21,6 @@
     display: none;
   }
   .content {
-    padding: 140px 40px 60px 40px
-  }
-  .mobileNavigatorBackground{
-    display: none;
+    padding: 160px 40px 60px 40px;
   }
 }
