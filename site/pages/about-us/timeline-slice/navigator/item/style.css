@@ -25,6 +25,7 @@
   border: none;
   background: transparent;
   top: -5px;
+  left: -5px;
   text-align: left;
   padding: 0;
 }
@@ -58,7 +59,7 @@
   position: absolute;
   cursor: pointer;
   background-color: #CCC;
-  left: -5px;
+  margin-left: -5px;
  }
 
 .old span,
