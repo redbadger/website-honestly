@@ -68,10 +68,15 @@ const Instagram = ({handle, image, alt, likeCount, commentCount}) => (
 );
 
 class SocialSlice extends React.Component {
-  state = { tile: 0 }
+  maxTiles = 3;
+  visibleTiles = 2;
+
+  state = { tile: 0 };
 
   nextCard() {
-    this.setState({ tile: this.state.tile + 1 });
+    if (this.state.tile < (this.maxTiles - this.visibleTiles)) {
+      this.setState({ tile: this.state.tile + 1 });
+    }
   }
 
   render() {
