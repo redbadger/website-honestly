@@ -7,8 +7,6 @@
  * (https://github.com/css-modules/postcss-modules-values/pull/23)
  */
 
-@import url("//hello.myfonts.net/count/322627");
-
 @value default: "ProximaNova-Light", Helvetica, Arial, sans-serif;
 @value hero: "Sentinel A", "Sentinel B", Georgia, serif;
 

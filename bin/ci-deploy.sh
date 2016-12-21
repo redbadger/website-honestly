@@ -35,6 +35,7 @@ deployMaster() {
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/sw.js
   make services-deploy
   make publish-service-invoke
+  ./bin/register-github-release.js $1
   echo Done!
 }
 

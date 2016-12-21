@@ -29,6 +29,7 @@ export default class SmallScreenNav extends React.Component {
   render() {
     const { navOpen } = this.state;
     const navTabIndex = navOpen ? 0 : -1;
+
     return (
       <div className={styles.smallScreenNavComponent}>
         <div className={styles.triggerContainer}>
@@ -67,7 +68,7 @@ export default class SmallScreenNav extends React.Component {
                 <li><a tabIndex={navTabIndex} href="/blog/">Blog</a></li>
                 <li><Link tabIndex={navTabIndex} to="events" navigating={this.closeMenu}>Events</Link></li>
                 <li><Link tabIndex={navTabIndex} to="joinUs" navigating={this.closeMenu}>Jobs</Link></li>
-                <li><a tabIndex={navTabIndex} href="/about-us/contact-us/">Contact us</a></li>
+                <li><Link tabIndex={navTabIndex} to="homePage" navigationData={{ contactUs: true }} navigating={this.closeMenu}>Contact us</Link></li>
               </ul>
             </nav>
           </div>

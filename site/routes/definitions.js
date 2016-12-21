@@ -4,6 +4,7 @@ type RouteDefinition = {|
   title: string | (props: Object) => string,
   key: string,
   route: string,
+  defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
   render?: (state: Object) => any,
@@ -14,6 +15,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'Home',
     key: 'homePage',
     route: '',
+    defaults: { contactUs: false },
     stateToProps: ({ featuredBlogPosts, contactUsURL }) => ({ featuredBlogPosts, contactUsURL }),
   },
   {
