@@ -1,0 +1,70 @@
+@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
+
+.socialSlice {
+  background-color: badgerWhite;
+}
+
+.cards {
+  max-width: 1035px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  width: 345px;
+  height: 500px;
+  background: badgerBlack;
+  color: badgerWhite;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.intro {
+  composes: card;
+  padding: 20px 20px;
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontL from "../../../css/typography/_fonts.css";
+}
+
+.twitter {
+  composes: card;
+  color: badgerBlack;
+}
+
+.green { background: daveGreen; }
+.blue { background: stuBlue; }
+.purple { background: yoloPurple; }
+
+.tweet {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../css/typography/_fonts.css";
+  margin: 0px 20px;
+}
+
+.meta {
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../css/typography/_fonts.css";
+  margin: 10px 20px;
+}
+
+.meta span {
+  margin-right: 15px;
+}
+
+.instagram {
+  composes: card;
+  background: badgerWhite;
+  color: badgerBlack;
+}
+
+.image {
+  width: 345px;
+  height: 345px;
+}
+
+.handle {
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../css/typography/_fonts.css";
+  margin: 10px 20px;
+}

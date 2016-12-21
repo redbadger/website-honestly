@@ -2,7 +2,7 @@ import React from 'react';
 
 import TimelineSlice from './timeline-slice';
 import PrinciplesSlice from './principles-slice';
-import SocialSlice from '../../slices/social-slice';
+import SocialSlice from './social-slice';
 import ContactUs from '../../slices/contact-us-slice';
 
 const AboutUs = ({ contactUsURL }) => {
