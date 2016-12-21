@@ -5,13 +5,14 @@
 .navigator {
   z-index: timelineContainer;
   background: badgerWhite;
-  display: flex;
-  justify-content: center;
+  
 }
 
 .container{
   position: relative;
   width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   top: -10px;
 }
 
@@ -65,6 +66,9 @@
   .container{
     position: absolute;
     width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  
     top: 0px;
   }
 
@@ -76,5 +80,7 @@
 @media largeScreen{
   .container{
     width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
