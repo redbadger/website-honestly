@@ -5,6 +5,16 @@
 .mobileImage {
   margin-bottom: 20px;  
 }
+.mobileImage:after{
+  content: '';
+  background-color: badgerWhite;
+  width: 80%;
+  position: relative;
+  bottom: 35px;
+  height: 30px;
+  display: block;
+  margin: auto;
+}
 .image {
   width: 100%;
 }
@@ -14,7 +24,10 @@
     display: none;
   }
 
-  .container{
+  .mobileImage{
+    display: none;
+  }
+  .mobileImage:after{
     display: none;
   }
 }
