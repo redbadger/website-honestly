@@ -1,8 +1,8 @@
 @value badgerBlack, badgerWhite from "../../css/_colors.css";
-@value maxWidth, largeScreen, mediumScreen from "../../css/_sizes.css";
+@value contentMaxWidth, largeScreen, mediumScreen from "../../css/_sizes.css";
 
 .widthContainer {
-  max-width: maxWidth;
+  max-width: contentMaxWidth;
   margin-left: auto;
   margin-right: auto;
 }
