@@ -1,4 +1,0 @@
-build/**
-spec/coverage/**
-static/**
-node_modules
