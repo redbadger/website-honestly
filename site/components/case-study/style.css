@@ -1,5 +1,5 @@
 @value badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
+@value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
 .screenReaderText {
   composes: visuallyHidden from "../../css/_accessibility.css";
@@ -8,7 +8,7 @@
 .heading {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  max-width: maxWidth;
+  max-width: contentMaxWidth;
   margin: 0px auto;
   color: badgerWhite;
   text-align: center;
@@ -22,7 +22,7 @@
 }
 
 .limitWidth {
-  max-width: 1440px;
+  max-width: containerMaxWidth;
   margin: auto;
 }
 
