@@ -1,14 +1,12 @@
 // @flow
 
-type RouteDefinition = {|
+type RouteDefinition = {
   title: string | (props: Object) => string,
   key: string,
   route: string,
-  defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
-  render?: (state: Object) => any,
-|}
+}
 
 const genBadgers = state => {
   const allTags = state.badgers
@@ -71,6 +69,8 @@ export const routeDefinitions : Array<RouteDefinition> = [
     key: 'badgers',
     route: 'about-us/people/{tag?}',
     defaults: { tag: 'everyone' },
+    urlEncode: (_, key, val) => (key === 'tag' && val === 'qa & design' ? 'qa-design' : encodeURIComponent(val)),
+    urlDecode: (_, key, val) => (key === 'tag' && val === 'qa-design' ? 'qa & design' : decodeURIComponent(val)),
     stateToProps: ({ badgers }, params = {}) => ({ badgers, tag: params.tag }),
     gen: state => genBadgers(state),
   },

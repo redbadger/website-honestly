@@ -222,5 +222,31 @@ describe('site/compiler', () => {
       expect(pages[11].path).to.equal('about-us/people/pm/index.html');
       expect(pages[11].body).to.match(/pm/);
     });
+
+    it('renders the dynamic badger pages of the site and escapes QA & Design tag', () => {
+      const pages = compileSite({
+        jobs: [],
+        job: {},
+        contactUsURL: '',
+        featuredBlogPosts: [],
+        events: [],
+        event: {},
+        badgers: [
+          {
+            firstName: 'Sari',
+            lastName: 'Griffiths',
+            tags: [
+              'QA & Design',
+            ],
+          },
+        ],
+      });
+
+      expect(pages.length).to.equal(10);
+      expect(pages[8].path).to.equal('about-us/people/index.html');
+      expect(pages[8].body).to.match(/everyone/);
+      expect(pages[9].path).to.equal('about-us/people/qa-design/index.html');
+      expect(pages[9].body).to.match(/qa &amp; design/);
+    });
   });
 });
