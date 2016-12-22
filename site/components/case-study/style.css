@@ -21,6 +21,11 @@
   padding: 0px 5% 12px 5%;
 }
 
+.limitWidth {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .figuresContainer {
   display: flex;
   flex-wrap: wrap;
