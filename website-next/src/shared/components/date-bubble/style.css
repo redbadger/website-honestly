@@ -2,11 +2,7 @@
 
 .dateBubble {
   composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
-  display: inline-block;
-  font-size: 0.9em;
-  font-weight: bold;
   color: badgerRed;
-  text-align: center;
   text-transform: uppercase;
   min-width: 3em;
   margin-bottom: 1em;
@@ -14,7 +10,6 @@
   -webkit-border-radius: 5px;
   border-radius: 5px;
   line-height: 1.25em;
-  margin-top: 2em;
 }
 
 .date {
