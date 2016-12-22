@@ -51,6 +51,12 @@
   cursor: pointer;
 }
 
+.old:hover .text,
+.active:hover .text,
+.future:hover .text{
+  color: badgerRed;
+}
+
 .old span,
 .active span,
 .future span{
