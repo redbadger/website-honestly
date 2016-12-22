@@ -236,7 +236,7 @@ describe('site/compiler', () => {
             firstName: 'Sari',
             lastName: 'Griffiths',
             tags: [
-              'QA & Design',
+              'UX & Design',
             ],
           },
         ],
@@ -245,8 +245,8 @@ describe('site/compiler', () => {
       expect(pages.length).to.equal(10);
       expect(pages[8].path).to.equal('about-us/people/index.html');
       expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/qa-design/index.html');
-      expect(pages[9].body).to.match(/qa &amp; design/);
+      expect(pages[9].path).to.equal('about-us/people/ux-design/index.html');
+      expect(pages[9].body).to.match(/ux &amp; design/);
     });
   });
 });
