@@ -40,6 +40,6 @@
   background-color: badgerBlack;
   right: auto;
   left: -6px;
-  top:0px;
+  top:-1px;
   z-index: timelineDivider;
 }
