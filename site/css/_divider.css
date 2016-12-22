@@ -40,6 +40,9 @@
   background-color: badgerBlack;
   right: auto;
   left: -6px;
+  /** IE 11 fix*/
   top:-1px;
+  /** Compensate for the IE11 fix */
+  height: 11px;
   z-index: timelineDivider;
 }
