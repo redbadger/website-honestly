@@ -9,7 +9,7 @@
   composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
 	composes: fontXS from "../../../../../css/typography/_fonts.css";
   transition: 0.3s ease-in-out;
-  left: -20px;
+  left: -15px;
   cursor: pointer;
 }
 
@@ -24,10 +24,12 @@
   position: absolute;
   border: none;
   background: transparent;
-  top: -5px;
+  top: -35px;
   margin-left: -5px;
   text-align: left;
   padding: 0;
+  height: 40px;
+  width: 20px;
 }
 
 .old span,
@@ -35,17 +37,17 @@
   background-color: badgerRed;
 }
 
-
 .old:focus,
 .active:focus,
 .future:focus{
   outline: none;
 }
 
-.old,
-.active,
-.future{
-  
+
+.old:hover,
+.active:hover,
+.future:hover{
+  cursor: pointer;
 }
 
 .old span,
@@ -57,6 +59,7 @@
   height: 10px;
   border-radius: 50%;
   position: absolute;
+  bottom: 0px;
   cursor: pointer;
   background-color: #CCC;
  }
@@ -70,6 +73,6 @@
 @media mediumScreen {
   .text{
      display: block;
-     top: -40px;
+     top: -10px;
   }
 }
