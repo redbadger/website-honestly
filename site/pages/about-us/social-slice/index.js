@@ -1,3 +1,5 @@
+// @flow
+
 import React, { PropTypes } from 'react';
 import cx from 'classnames';
 
@@ -12,13 +14,17 @@ import likeIconSVG from './icons/like/like.svg';
 import retweetIconSVG from './icons/retweet/retweet.svg';
 import commentIconSVG from './icons/comment/comment.svg';
 
-const IntroCard = ({ name, nextCard }) => (
+const IntroCard = ({ nextCard }) => (
   <li className={styles.intro} onClick={nextCard}>
     <span>
       From our social feed
     </span>
   </li>
 );
+
+IntroCard.propTypes = {
+  nextCard: PropTypes.func.isRequired,
+};
 
 const colours = [styles.blue, styles.purple, styles.green];
 const Twitter = ({ handle, tweet, retweetCount, likeCount, index = 1 }) => (
