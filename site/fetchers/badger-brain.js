@@ -64,16 +64,24 @@ const fullEventsQuery = `
   ${dateTimeFieldsEvents}
 `;
 
-export function getEvents() {
+export function getData() {
   const body = `
     query {
       allEvents {
         ${fullEventsQuery}
+      }
+      allBadgers {
+        firstName
+        lastName
+        tags
       }
     }
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
           .then(response => response.json())
-          .then(events => sortEvents(selectValidEvents(events.data.allEvents)));
+          .then(({ data }) => ({
+            events: sortEvents(selectValidEvents(data.allEvents)),
+            badgers: data.allBadgers,
+          }));
 }

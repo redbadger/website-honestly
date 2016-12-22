@@ -10,6 +10,17 @@ type RouteDefinition = {|
   render?: (state: Object) => any,
 |}
 
+const genBadgers = state => {
+  const allTags = state.badgers
+    .reduce((uniqueTags, badger) => (
+      badger.tags
+        .reduce((tags, tag) => (
+          !tags[tag] ? { ...tags, [tag]: 1 } : tags
+        ), uniqueTags)
+    ), { everyone: 1 });
+  return Object.keys(allTags).map(tag => ({ tag: tag.toLowerCase() }));
+};
+
 export const routeDefinitions : Array<RouteDefinition> = [
   {
     title: 'Home',
@@ -54,6 +65,14 @@ export const routeDefinitions : Array<RouteDefinition> = [
     route: 'about-us/events/{year}/{month}/{date}/{slug}',
     stateToProps: (state, params = {}) => ({ event: state.event[params.slug] }),
     gen: state => state.events.map(({ startDateTime: { date, month, year }, slug }) => ({ date, month, year, slug })),
+  },
+  {
+    title: ({ tag }) => 'Meet our team' + (tag !== 'everyone' ? ` (${tag})` : ''),
+    key: 'badgers',
+    route: 'about-us/people/{tag?}',
+    defaults: { tag: 'everyone' },
+    stateToProps: ({ badgers }, params = {}) => ({ badgers, tag: params.tag }),
+    gen: state => genBadgers(state),
   },
   {
     title: 'Not found',
