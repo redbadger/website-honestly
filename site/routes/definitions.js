@@ -8,6 +8,13 @@ type RouteDefinition = {
   gen?: (state: Object) => Array<Object>,
 }
 
+const countBadgers = (badgers, tag) => {
+  if (tag === 'everyone') {
+    return badgers.length || 1;
+  }
+  return badgers.filter(b => b.tags.filter(t => t === tag).length > 0).length;
+};
+
 const genBadgers = state => {
   const allTags = state.badgers
     .reduce((uniqueTags, badger) => (
@@ -16,7 +23,15 @@ const genBadgers = state => {
           !tags[tag] ? { ...tags, [tag]: 1 } : tags
         ), uniqueTags)
     ), { everyone: 1 });
-  return Object.keys(allTags).map(tag => ({ tag: tag.toLowerCase() }));
+  return Object.keys(allTags)
+    .reduce((params, tag) => {
+      const count = countBadgers(state.badgers, tag);
+      const tagParams = [];
+      for (let page = 1; page <= Math.ceil(count / 3); page += 1) {
+        tagParams.push({ tag: tag.toLowerCase(), page });
+      }
+      return params.concat(tagParams);
+    }, []);
 };
 
 export const routeDefinitions : Array<RouteDefinition> = [
@@ -67,8 +82,8 @@ export const routeDefinitions : Array<RouteDefinition> = [
   {
     title: ({ tag }) => 'Meet our team' + (tag !== 'everyone' ? ` (${tag})` : ''),
     key: 'badgers',
-    route: 'about-us/people/{tag?}',
-    defaults: { tag: 'everyone' },
+    route: 'about-us/people/{tag?}/{page?}',
+    defaults: { tag: 'everyone', page: 1 },
     urlEncode: (_, key, val) => (val === 'ux & design' ? 'ux-design' : encodeURIComponent(val)),
     urlDecode: (_, key, val) => (val === 'ux-design' ? 'ux & design' : decodeURIComponent(val)),
     stateToProps: ({ badgers }, params = {}) => ({ badgers, tag: params.tag }),
