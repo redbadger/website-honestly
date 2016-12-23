@@ -1,5 +1,5 @@
 @value badgerWhite, badgerRed, badgerBlack, scorpian from "../../css/_colors.css";
-@value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
+@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 
 .light,

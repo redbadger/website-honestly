@@ -1,5 +1,10 @@
 @value badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
+@value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
+
+.arrow svg {
+  height: 15px;
+  margin: 0 10px;
+}
 
 .screenReaderText {
   composes: visuallyHidden from "../../css/_accessibility.css";
@@ -8,7 +13,7 @@
 .heading {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  max-width: maxWidth;
+  max-width: contentMaxWidth;
   margin: 0px auto;
   color: badgerWhite;
   text-align: center;
@@ -18,17 +23,18 @@
 .caseStudyContainer {
   composes: dividerBlack from "../../css/_divider.css";
   background-color: badgerBlack;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding: 0px 5% 12px 5%;
+}
+
+.limitWidth {
+  max-width: containerMaxWidth;
+  margin: auto;
 }
 
 .figuresContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1440px;
 }
 
 .figureLink {
@@ -58,6 +64,16 @@
   max-width: 100%;
 }
 
+.lastWord {
+  display: inline;
+  white-space: nowrap;
+}
+
+.lastWord i {
+  width: 22px;
+  display: inline-block;
+}
+
 .caseCompanies {
   display: flex;
   flex-direction: row;
@@ -68,8 +84,6 @@
   border-top: 1px solid linesOnBlack;
   border-bottom: 1px solid linesOnBlack;
   padding: 30px;
-  max-width: 1440px;
-  width: 100%;
 }
 
 .caseCompanies img {
@@ -116,6 +130,9 @@
     margin-right: 0px;
   }
 
+  .arrow svg {
+    display: none;
+  }
 }
 @media largeScreen {
   .heading {
@@ -142,5 +159,9 @@
 
   .buttonContainer {
     padding: 60px 0px;
+  }
+
+  .arrow svg {
+    display: none;
   }
 }
