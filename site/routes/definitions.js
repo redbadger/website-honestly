@@ -8,6 +8,10 @@ type RouteDefinition = {
   gen?: (state: Object) => Array<Object>,
 }
 
+const getBadgersByCategory = (badgers, category) => (
+  badgers.filter(badger => badger.tags.filter(tag => tag === category).length > 0)
+);
+
 const getPageParams = (tag, count) => {
   const params = [];
   for (let page = 1; page <= Math.ceil(count / 20); page += 1) {
@@ -18,9 +22,7 @@ const getPageParams = (tag, count) => {
 
 const genBadgersParams = state => (
   state.categories.reduce((params, category) => {
-    const count = state.badgers
-      .filter(badger => badger.tags.filter(tag => tag === category).length > 0)
-      .length;
+    const count = getBadgersByCategory(state.badgers, category).length;
     return params.concat(getPageParams(category.toLowerCase(), count));
   }, getPageParams('everyone', state.badgers.length || 1))
 );
@@ -77,7 +79,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     defaults: { tag: 'everyone', page: 1 },
     urlEncode: (_, key, val) => (val === 'ux & design' ? 'ux-design' : encodeURIComponent(val)),
     urlDecode: (_, key, val) => (val === 'ux-design' ? 'ux & design' : decodeURIComponent(val)),
-    stateToProps: ({ badgers }, params = {}) => ({ badgers, tag: params.tag }),
+    stateToProps: ({ badgers }, { tag } = {}) => ({ badgers: getBadgersByCategory(badgers, tag), tag }),
     gen: genBadgersParams,
   },
   {
