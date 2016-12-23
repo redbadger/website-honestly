@@ -10,3 +10,8 @@
 */
 
 @value zindexOverlay: 100;
+
+/* About us -> Timeline slice */
+@value timelineContainer: 10;
+@value timelineNavigationButton: 11;
+@value timelineDivider: 12;

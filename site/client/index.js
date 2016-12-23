@@ -1,33 +1,37 @@
 import ReactDOM from 'react-dom';
-import { HTML5HistoryManager, StateNavigator } from 'navigation';
 
-import makeRoutes from '../../site/routes';
+import createStateNavigator from '../../site/routes';
 
 const TITLE_SUFFIX = 'Red Badger';
 
-export function makeApp({ element, state }) {
-  const routes = makeRoutes();
-  const history = new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1));
-  const stateNavigator = new StateNavigator(
-    routes,
-    history
-  );
+const scrollTo = params => () => {
+  if (params.contactUs) {
+    let el = document.getElementById('contactUs');
+    if (el && el.scrollIntoView) {
+      el.scrollIntoView();
+    }
+    el = document.getElementById('contactUsMessage');
+    if (el) {
+      el.focus();
+    }
+  } else {
+    window.scrollTo(0, 0);
+  }
+};
 
+export function makeApp({ element, state }) {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(location.origin + '/sw.js');
   }
 
-  routes.forEach(route => {
-    const render = params => {
-      window.scrollTo(0, 0);
-      const props = route.stateToProps && route.stateToProps(state, params);
-      const pageTitle = typeof route.title === 'function' ? route.title(props) : route.title;
-      const title = `${pageTitle} | ${TITLE_SUFFIX}`;
-      stateNavigator.stateContext.title = title;
-      const component = route.component({ stateNavigator, title }, props);
-      ReactDOM.render(component, element);
-    };
-    stateNavigator.states[route.key].navigated = render;
+  const stateNavigator = createStateNavigator();
+  stateNavigator.onNavigate((oldRoute, route, params) => {
+    const props = route.stateToProps && route.stateToProps(state, params);
+    const pageTitle = typeof route.title === 'function' ? route.title(props) : route.title;
+    const title = `${pageTitle} | ${TITLE_SUFFIX}`;
+    stateNavigator.stateContext.title = title;
+    const component = route.component({ stateNavigator, title }, props);
+    ReactDOM.render(component, element, scrollTo(params));
   });
   return stateNavigator;
 }

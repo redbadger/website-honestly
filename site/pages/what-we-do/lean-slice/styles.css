@@ -14,11 +14,11 @@
   composes: serif from "../../../css/typography/_fonts.css";
   text-align: center;
   margin: 0 auto 24px auto;
-  max-width: maxWidth;
+  max-width: contentMaxWidth;
 }
 
 .content {
-  max-width: maxWidth;
+  max-width: contentMaxWidth;
   margin: 0 auto 0 auto;
 }
 

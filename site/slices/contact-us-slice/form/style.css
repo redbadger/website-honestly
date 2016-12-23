@@ -1,5 +1,5 @@
 @value badgerBlack, cainYellow, cainYellowFaded from "../../../css/_colors.css";
-@value maxWidth from "../../../css/_sizes.css";
+@value contentMaxWidth from "../../../css/_sizes.css";
 
 .formContainer {
   padding: 60px 20px 70px 20px;
@@ -16,7 +16,7 @@
 }
 
 .heading {
-  max-width: maxWidth;
+  max-width: contentMaxWidth;
   composes: fontL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   margin: 0px auto 40px auto;

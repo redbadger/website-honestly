@@ -1,8 +1,7 @@
 import { renderToString } from 'react-dom/server';
-import Navigation from 'navigation';
 import encode from 'ent/encode';
 
-import makeRoutes from '../routes';
+import createStateNavigator from '../routes';
 import layoutTemplate from '../index.ejs';
 import { cssPath, jsPath } from './asset-paths';
 
@@ -41,7 +40,8 @@ const filePathFor = (stateNavigator, key, params) => {
   return routeFilePath(route.substring(1));
 };
 
-export const expandRoutes = (routeDefs, state, stateNavigator) => {
+export const expandRoutes = (state, stateNavigator) => {
+  const routeDefs = Object.keys(stateNavigator.states).map(key => stateNavigator.states[key]);
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
     title: titleFor(def, def.stateToProps && def.stateToProps(state)),
@@ -63,15 +63,8 @@ export const expandRoutes = (routeDefs, state, stateNavigator) => {
   return staticRoutes.concat(flattened);
 };
 
-export function compileRoutes(siteRoutes, state) {
-  /*
-    We only register unexpanded routes with stateNavigator, so we can
-    continue to use named routes.
-  */
-  const stateNavigator = new Navigation.StateNavigator(
-    siteRoutes,
-    new Navigation.HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
-  );
+export function compileRoutes(state) {
+  const stateNavigator = createStateNavigator();
 
   const encodedState = (state && encode(JSON.stringify(state)));
 
@@ -99,9 +92,9 @@ export function compileRoutes(siteRoutes, state) {
     return { body, path };
   };
 
-  return expandRoutes(siteRoutes, state, stateNavigator).map(compile);
+  return expandRoutes(state, stateNavigator).map(compile);
 }
 
 export function compileSite(state) {
-  return compileRoutes(makeRoutes(), state);
+  return compileRoutes(state);
 }

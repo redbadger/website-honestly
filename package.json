@@ -64,6 +64,8 @@
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.1",
+    "react-motion": "^0.4.7",
+    "react-swipeable-views": "^0.8.3",
     "reset-css": "^2.2.0",
     "serverless": "1.0.0-rc.1",
     "style-loader": "^0.13.1",
