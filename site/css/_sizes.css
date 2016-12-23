@@ -9,6 +9,7 @@
 
 @value mediumScreen: screen and (min-width: 690px);
 @value largeScreen: screen and (min-width: 980px);
-@value maxWidth: 1000px;
+@value contentMaxWidth: 1000px;
+@value containerMaxWidth: 1440px;
 @value inputHeight: 56px;
 @value linkSize: 24px;
