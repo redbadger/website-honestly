@@ -340,6 +340,37 @@ describe('site/compiler', () => {
     });
   });
 
+  describe('with 19 Engineers', () => {
+    it('should render one everyone pages, even including advert, and one for engineering', () => {
+      const badgers = [];
+      for (let i = 0; i < 19; i += 1) {
+        badgers.push({
+          firstName: 'Alex ' + i,
+          lastName: 'Savin',
+          tags: [
+            'Engineering',
+          ],
+        });
+      }
+      const pages = compileSite({
+        jobs: [],
+        job: {},
+        contactUsURL: '',
+        featuredBlogPosts: [],
+        events: [],
+        event: {},
+        badgers,
+        categories: ['Engineering'],
+      });
+
+      expect(pages.length).to.equal(10);
+      expect(pages[8].path).to.equal('about-us/people/index.html');
+      expect(pages[8].body).to.match(/everyone/);
+      expect(pages[9].path).to.equal('about-us/people/engineering/index.html');
+      expect(pages[9].body).to.match(/engineering/);
+    });
+  });
+
   describe('with 41 Engineers and Leaderships', () => {
     it('should render three everyone pages and three for engineering and three for leadership', () => {
       const badgers = [];
