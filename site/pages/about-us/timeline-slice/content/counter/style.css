@@ -1,0 +1,38 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
+
+.counter {
+  border-top: 1px solid #CCC;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  composes: sansSerifBold from "../../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../../css/typography/_fonts.css";
+  margin: 10px 0px;
+  color: badgerBlack;
+}
+
+.count{
+  composes: serif from "../../../../../css/typography/_fonts.css";
+  composes: fontS from "../../../../../css/typography/_fonts.css";
+  margin: 10px 0px;
+  color: badgerBlack;
+}
+
+@media mediumScreen {
+  .counter {
+    display: block;
+    border-bottom: 1px solid #CCC;
+    width: 220px;
+    text-align: center;
+    margin: 0px 10px;
+  }
+  .title{
+    margin-bottom: 5px;
+  }
+  .count{
+    margin-top:0px; 
+  }
+}
