@@ -12,6 +12,7 @@ describe('site/compiler', () => {
           events: [],
           event: {},
           badgers: [],
+          categories: [],
         });
 
       expect(pages.length).to.equal(9);
@@ -58,6 +59,7 @@ describe('site/compiler', () => {
         events: [],
         event: {},
         badgers: [],
+        categories: [],
       });
 
       expect(pages.length).to.equal(11);
@@ -89,6 +91,7 @@ describe('site/compiler', () => {
         events: [],
         event: {},
         badgers: [],
+        categories: [],
       });
 
       expect(pages.length).to.equal(9);
@@ -147,6 +150,7 @@ describe('site/compiler', () => {
           'designing-in-cross-functional-teams': designingEvent,
         },
         badgers: [],
+        categories: [],
       });
 
       expect(pages.length).to.equal(11);
@@ -173,6 +177,7 @@ describe('site/compiler', () => {
             'Leadership',
           ],
         }],
+        categories: ['Engineering', 'Leadership'],
       });
 
       expect(pages.length).to.equal(11);
@@ -210,6 +215,7 @@ describe('site/compiler', () => {
             ],
           },
         ],
+        categories: ['Engineering', 'Leadership', 'PM'],
       });
 
       expect(pages.length).to.equal(12);
@@ -240,6 +246,7 @@ describe('site/compiler', () => {
             ],
           },
         ],
+        categories: ['UX & Design'],
       });
 
       expect(pages.length).to.equal(10);
@@ -290,6 +297,7 @@ describe('site/compiler', () => {
             ],
           },
         ],
+        categories: ['Engineering', 'Leadership', 'PM'],
       });
 
       expect(pages.length).to.equal(13);

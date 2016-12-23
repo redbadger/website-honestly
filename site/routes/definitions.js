@@ -8,25 +8,22 @@ type RouteDefinition = {
   gen?: (state: Object) => Array<Object>,
 }
 
-const getTags = badgers => (
-  badgers
-    .reduce((uniqueTags, badger) => (
-      badger.tags
-        .reduce((tags, tag) => ({ ...tags, [tag]: (tags[tag] || 0) + 1 }), uniqueTags)
-    ), { everyone: badgers.length || 1 })
-);
-
-const genBadgersParams = state => {
-  const tags = getTags(state.badgers);
-  return Object.keys(tags)
-    .reduce((params, tag) => {
-      const tagParams = [];
-      for (let page = 1; page <= Math.ceil(tags[tag] / 3); page += 1) {
-        tagParams.push({ tag: tag.toLowerCase(), page });
-      }
-      return params.concat(tagParams);
-    }, []);
+const getPageParams = (tag, count) => {
+  const params = [];
+  for (let page = 1; page <= Math.ceil(count / 3); page += 1) {
+    params.push({ tag, page });
+  }
+  return params;
 };
+
+const genBadgersParams = state => (
+  state.categories.reduce((params, category) => {
+    const count = state.badgers
+      .filter(badger => badger.tags.filter(tag => tag === category).length > 0)
+      .length > 0;
+    return params.concat(getPageParams(category.toLowerCase(), count));
+  }, getPageParams('everyone', state.badgers.length || 1))
+);
 
 export const routeDefinitions : Array<RouteDefinition> = [
   {
