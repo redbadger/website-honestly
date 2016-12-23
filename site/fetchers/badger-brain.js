@@ -73,6 +73,8 @@ export function getData() {
       allBadgers {
         firstName
         lastName
+        startDate
+        imageUrl
         tags
       }
     }
