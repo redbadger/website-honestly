@@ -12,13 +12,9 @@ const getBadgersByCategory = (badgers, category) => (
   badgers.filter(badger => badger.tags.filter(tag => tag === category).length > 0)
 );
 
-const getPageParams = (tag, count) => {
-  const params = [];
-  for (let page = 1; page <= Math.ceil(count / 20); page += 1) {
-    params.push({ tag, page });
-  }
-  return params;
-};
+const getPageParams = (tag, count) => (
+  [...Array(Math.ceil(count / 20)).keys()].map(page => ({ tag, page: page + 1 }))
+);
 
 const genBadgersParams = state => (
   state.categories.reduce((params, category) => {
