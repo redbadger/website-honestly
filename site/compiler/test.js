@@ -300,48 +300,83 @@ describe('site/compiler', () => {
       expect(pages[12].body).to.match(/pm/);
     });
 
-    it('renders the dynamic badger pages of the site for everyone and engineering categories', () => {
-      const badgers = [];
-      for (let i = 0; i < 20; i += 1) {
-        badgers.push({
-          firstName: 'Alex ' + i,
-          lastName: 'Savin',
-          tags: [
-            'Engineering',
-            'Leadership',
-          ],
+    describe('with 21 Engineers and 1 Leadership', () => {
+      it('should render two everyone pages, two engineering and one leadership', () => {
+        const badgers = [];
+        for (let i = 0; i < 20; i += 1) {
+          badgers.push({
+            firstName: 'Alex ' + i,
+            lastName: 'Savin',
+            tags: [
+              'Engineering',
+              'Leadership',
+            ],
+          });
+        }
+        const pages = compileSite({
+          jobs: [],
+          job: {},
+          contactUsURL: '',
+          featuredBlogPosts: [],
+          events: [],
+          event: {},
+          badgers: badgers.concat([
+            {
+              firstName: 'Etiene',
+              lastName: 'Dalcol',
+              tags: [
+                'Engineering',
+              ],
+            },
+          ]),
+          categories: ['Engineering', 'Leadership'],
         });
-      }
-      const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
-        badgers: badgers.concat([
-          {
-            firstName: 'Etiene',
-            lastName: 'Dalcol',
+
+        expect(pages.length).to.equal(13);
+        expect(pages[8].path).to.equal('about-us/people/index.html');
+        expect(pages[8].body).to.match(/everyone/);
+        expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
+        expect(pages[9].body).to.match(/everyone/);
+        expect(pages[10].path).to.equal('about-us/people/engineering/index.html');
+        expect(pages[10].body).to.match(/engineering/);
+        expect(pages[11].path).to.equal('about-us/people/engineering/2/index.html');
+        expect(pages[11].body).to.match(/engineering/);
+        expect(pages[12].path).to.equal('about-us/people/leadership/index.html');
+        expect(pages[12].body).to.match(/leadership/);
+      });
+    });
+
+    describe('with 20 Engineers', () => {
+      it('should render two everyone pages, including advert, and one for engineering', () => {
+        const badgers = [];
+        for (let i = 0; i < 20; i += 1) {
+          badgers.push({
+            firstName: 'Alex ' + i,
+            lastName: 'Savin',
             tags: [
               'Engineering',
             ],
-          },
-        ]),
-        categories: ['Engineering', 'Leadership'],
-      });
+          });
+        }
+        const pages = compileSite({
+          jobs: [],
+          job: {},
+          contactUsURL: '',
+          featuredBlogPosts: [],
+          events: [],
+          event: {},
+          badgers,
+          categories: ['Engineering'],
+        });
 
-      expect(pages.length).to.equal(13);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
-      expect(pages[9].body).to.match(/everyone/);
-      expect(pages[10].path).to.equal('about-us/people/engineering/index.html');
-      expect(pages[10].body).to.match(/engineering/);
-      expect(pages[11].path).to.equal('about-us/people/engineering/2/index.html');
-      expect(pages[11].body).to.match(/engineering/);
-      expect(pages[12].path).to.equal('about-us/people/leadership/index.html');
-      expect(pages[12].body).to.match(/leadership/);
+        expect(pages.length).to.equal(11);
+        expect(pages[8].path).to.equal('about-us/people/index.html');
+        expect(pages[8].body).to.match(/everyone/);
+        expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
+        expect(pages[9].body).to.match(/everyone/);
+        expect(pages[10].path).to.equal('about-us/people/engineering/index.html');
+        expect(pages[10].body).to.match(/engineering/);
+      });
     });
   });
 });

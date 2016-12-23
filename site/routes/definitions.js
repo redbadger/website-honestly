@@ -24,7 +24,7 @@ const genBadgersParams = state => (
   state.categories.reduce((params, category) => {
     const count = getBadgersByCategory(state.badgers, category).length;
     return params.concat(getPageParams(category.toLowerCase(), count));
-  }, getPageParams('everyone', state.badgers.length || 1))
+  }, getPageParams('everyone', state.badgers.length + 1))
 );
 
 export const routeDefinitions : Array<RouteDefinition> = [
