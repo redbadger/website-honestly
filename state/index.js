@@ -17,7 +17,7 @@ const getCategories = badgers => (
   Object.keys(badgers
     .reduce((uniqueTags, badger) => (
       badger.tags
-        .reduce((tags, tag) => ({ ...tags, [tag]: 1 }), uniqueTags)
+        .reduce((tags, tag) => (tags[tag] ? tags : { ...tags, [tag]: 1 }), uniqueTags)
     ), {}))
 );
 
