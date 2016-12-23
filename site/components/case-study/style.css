@@ -1,6 +1,11 @@
 @value badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
+.arrow svg {
+  height: 15px;
+  margin: 0 10px;
+}
+
 .screenReaderText {
   composes: visuallyHidden from "../../css/_accessibility.css";
 }
@@ -59,6 +64,16 @@
   max-width: 100%;
 }
 
+.lastWord {
+  display: inline;
+  white-space: nowrap;
+}
+
+.lastWord i {
+  width: 22px;
+  display: inline-block;
+}
+
 .caseCompanies {
   display: flex;
   flex-direction: row;
@@ -115,6 +130,9 @@
     margin-right: 0px;
   }
 
+  .arrow svg {
+    display: none;
+  }
 }
 @media largeScreen {
   .heading {
@@ -141,5 +159,9 @@
 
   .buttonContainer {
     padding: 60px 0px;
+  }
+
+  .arrow svg {
+    display: none;
   }
 }

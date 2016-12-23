@@ -2,6 +2,7 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
+
 /* PNG logo imports */
 import bbcPNG from './PNG/bbc.png';
 import bmwPNG from './PNG/bmw.png';
@@ -19,11 +20,13 @@ import ftFigureSVG from './SVG/ft-figure.svg';
 import fortnumFigureSVG from './SVG/fortnum-figure.svg';
 import camdenFigureSVG from './SVG/camden-figure.svg';
 import skyFigureSVG from './SVG/sky-figure.svg';
+import arrowSVG from '../../../assets/images/SVG/arrow.svg';
+
 
 const CaseStudy = () => (
   <section className={styles.caseStudyContainer}>
+    <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.limitWidth}>
-      <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
       <div className={styles.figuresContainer}>
         <a
           href="/our-work/case-study/fortnum-and-mason/"
@@ -32,7 +35,11 @@ const CaseStudy = () => (
         >
           <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>Three</span>
-          <span className={styles.caseText}>Number of awards for the new online store</span>
+          <span className={styles.caseText}>
+            Number of awards for the new online <span className={styles.lastWord}>store
+              <InlineSVG src={arrowSVG} className={styles.arrow} />
+            </span>
+          </span>
           <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
         </a>
         <a
@@ -42,7 +49,11 @@ const CaseStudy = () => (
         >
           <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>18%</span>
-          <span className={styles.caseText}>Drop in bounce rate within 4 days of launch</span>
+          <span className={styles.caseText}>
+            Drop in bounce rate within 4 days of <span className={styles.lastWord}>launch
+              <InlineSVG src={arrowSVG} className={styles.arrow} />
+            </span>
+          </span>
           <img alt="The logo of Camden Market" src={camdenPNG} className={styles.logo} />
         </a>
         <a
@@ -53,7 +64,10 @@ const CaseStudy = () => (
           <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>50%</span>
           <span className={styles.caseText}>
-            Drop in customers pushing the &lsquo;need more help&rsquo; button
+            Drop in customers pushing the
+            &lsquo;need more help&rsquo; <span className={styles.lastWord}> button
+              <InlineSVG src={arrowSVG} className={styles.arrow} />
+            </span>
           </span>
           <img alt="The logo of Sky" src={skyPNG} className={styles.logo} />
         </a>
@@ -65,7 +79,9 @@ const CaseStudy = () => (
           <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>Seven</span>
           <span className={styles.caseText}>
-            Weeks to redesign and deliver MVP homepage
+            Weeks to redesign and deliver MVP <span className={styles.lastWord}>homepage
+              <InlineSVG src={arrowSVG} className={styles.arrow} />
+            </span>
           </span>
           <img alt="The logo of the Financial Times" src={financialTimesPNG} className={styles.logo} />
         </a>
