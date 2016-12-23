@@ -20,7 +20,7 @@ const genBadgersParams = state => (
   state.categories.reduce((params, category) => {
     const count = state.badgers
       .filter(badger => badger.tags.filter(tag => tag === category).length > 0)
-      .length > 0;
+      .length;
     return params.concat(getPageParams(category.toLowerCase(), count));
   }, getPageParams('everyone', state.badgers.length || 1))
 );
