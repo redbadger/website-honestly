@@ -189,115 +189,75 @@ describe('site/compiler', () => {
       expect(pages[10].body).to.match(/leadership/);
     });
 
-    it('renders the dynamic badger pages of the site for repeated tags', () => {
-      const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
-        badgers: [
-          {
-            firstName: 'Alex',
-            lastName: 'Savin',
-            tags: [
-              'Engineering',
-              'Leadership',
-            ],
-          },
-          {
-            firstName: 'Sari',
-            lastName: 'Griffiths',
-            tags: [
-              'PM',
-              'Leadership',
-            ],
-          },
-        ],
-        categories: ['Engineering', 'Leadership', 'PM'],
-      });
-
-      expect(pages.length).to.equal(12);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/engineering/index.html');
-      expect(pages[9].body).to.match(/engineering/);
-      expect(pages[10].path).to.equal('about-us/people/leadership/index.html');
-      expect(pages[10].body).to.match(/leadership/);
-      expect(pages[11].path).to.equal('about-us/people/pm/index.html');
-      expect(pages[11].body).to.match(/pm/);
-    });
-
-    it('renders the dynamic badger pages of the site and escapes QA & Design tag', () => {
-      const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
-        badgers: [
-          {
-            firstName: 'Sari',
-            lastName: 'Griffiths',
-            tags: [
-              'UX & Design',
-            ],
-          },
-        ],
-        categories: ['UX & Design'],
-      });
-
-      expect(pages.length).to.equal(10);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/ux-design/index.html');
-      expect(pages[9].body).to.match(/ux &amp; design/);
-    });
-
-    it('renders the dynamic badger pages of the site for everyone category', () => {
-      const badgers = [];
-      for (let i = 0; i < 20; i += 1) {
-        badgers.push({
-          firstName: 'Alex ' + i,
-          lastName: 'Savin',
-          tags: [
-            'Engineering',
-            'Leadership',
+    describe('with engineer, leadership and pm', () => {
+      it('should render one page of each and everyone', () => {
+        const pages = compileSite({
+          jobs: [],
+          job: {},
+          contactUsURL: '',
+          featuredBlogPosts: [],
+          events: [],
+          event: {},
+          badgers: [
+            {
+              firstName: 'Alex',
+              lastName: 'Savin',
+              tags: [
+                'Engineering',
+                'Leadership',
+              ],
+            },
+            {
+              firstName: 'Sari',
+              lastName: 'Griffiths',
+              tags: [
+                'PM',
+                'Leadership',
+              ],
+            },
           ],
+          categories: ['Engineering', 'Leadership', 'PM'],
         });
-      }
-      const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
-        badgers: badgers.concat([
-          {
-            firstName: 'Sari',
-            lastName: 'Griffiths',
-            tags: [
-              'PM',
-            ],
-          },
-        ]),
-        categories: ['Engineering', 'Leadership', 'PM'],
-      });
 
-      expect(pages.length).to.equal(13);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
-      expect(pages[9].body).to.match(/everyone/);
-      expect(pages[10].path).to.equal('about-us/people/engineering/index.html');
-      expect(pages[10].body).to.match(/engineering/);
-      expect(pages[11].path).to.equal('about-us/people/leadership/index.html');
-      expect(pages[11].body).to.match(/leadership/);
-      expect(pages[12].path).to.equal('about-us/people/pm/index.html');
-      expect(pages[12].body).to.match(/pm/);
+        expect(pages.length).to.equal(12);
+        expect(pages[8].path).to.equal('about-us/people/index.html');
+        expect(pages[8].body).to.match(/everyone/);
+        expect(pages[9].path).to.equal('about-us/people/engineering/index.html');
+        expect(pages[9].body).to.match(/engineering/);
+        expect(pages[10].path).to.equal('about-us/people/leadership/index.html');
+        expect(pages[10].body).to.match(/leadership/);
+        expect(pages[11].path).to.equal('about-us/people/pm/index.html');
+        expect(pages[11].body).to.match(/pm/);
+      });
+    });
+
+    describe('with one UX & Designer', () => {
+      it('should render one everyone and one ux-design', () => {
+        const pages = compileSite({
+          jobs: [],
+          job: {},
+          contactUsURL: '',
+          featuredBlogPosts: [],
+          events: [],
+          event: {},
+          badgers: [
+            {
+              firstName: 'Sari',
+              lastName: 'Griffiths',
+              tags: [
+                'UX & Design',
+              ],
+            },
+          ],
+          categories: ['UX & Design'],
+        });
+
+        expect(pages.length).to.equal(10);
+        expect(pages[8].path).to.equal('about-us/people/index.html');
+        expect(pages[8].body).to.match(/everyone/);
+        expect(pages[9].path).to.equal('about-us/people/ux-design/index.html');
+        expect(pages[9].body).to.match(/ux &amp; design/);
+      });
     });
 
     describe('with 21 Engineers and 1 Leadership', () => {
