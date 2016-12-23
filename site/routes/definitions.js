@@ -10,7 +10,7 @@ type RouteDefinition = {
 
 const getPageParams = (tag, count) => {
   const params = [];
-  for (let page = 1; page <= Math.ceil(count / 3); page += 1) {
+  for (let page = 1; page <= Math.ceil(count / 20); page += 1) {
     params.push({ tag, page });
   }
   return params;

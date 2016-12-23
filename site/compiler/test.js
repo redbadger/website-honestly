@@ -256,7 +256,18 @@ describe('site/compiler', () => {
       expect(pages[9].body).to.match(/ux &amp; design/);
     });
 
-    it('renders the dynamic badger pages of the site for repeated tags', () => {
+    it('renders the dynamic badger pages of the site for everyone category', () => {
+      const badgers = [];
+      for (let i = 0; i < 20; i += 1) {
+        badgers.push({
+          firstName: 'Alex ' + i,
+          lastName: 'Savin',
+          tags: [
+            'Engineering',
+            'Leadership',
+          ],
+        });
+      }
       const pages = compileSite({
         jobs: [],
         job: {},
@@ -264,39 +275,15 @@ describe('site/compiler', () => {
         featuredBlogPosts: [],
         events: [],
         event: {},
-        badgers: [
-          {
-            firstName: 'Alex',
-            lastName: 'Savin',
-            tags: [
-              'Engineering',
-              'Leadership',
-            ],
-          },
+        badgers: badgers.concat([
           {
             firstName: 'Sari',
             lastName: 'Griffiths',
             tags: [
               'PM',
-              'Leadership',
             ],
           },
-          {
-            firstName: 'Joe',
-            lastName: 'Stanton',
-            tags: [
-              'Engineering',
-              'Leadership',
-            ],
-          },
-          {
-            firstName: 'Etiene',
-            lastName: 'Dalcol',
-            tags: [
-              'Engineering',
-            ],
-          },
-        ],
+        ]),
         categories: ['Engineering', 'Leadership', 'PM'],
       });
 
