@@ -12,15 +12,15 @@ const getBadgersByCategory = (badgers, category) => (
   badgers.filter(badger => badger.tags.filter(tag => tag === category).length > 0)
 );
 
-const getPageParams = (tag, count) => (
+const createPages = (tag, count) => (
   [...Array(Math.ceil(count / 20)).keys()].map(page => ({ tag, page: page + 1 }))
 );
 
 const genBadgersParams = state => (
   state.categories.reduce((params, category) => {
     const count = getBadgersByCategory(state.badgers, category).length;
-    return params.concat(getPageParams(category.toLowerCase(), count));
-  }, getPageParams('everyone', state.badgers.length + 1))
+    return params.concat(createPages(category.toLowerCase(), count));
+  }, createPages('everyone', state.badgers.length + 1))
 );
 
 export const routeDefinitions : Array<RouteDefinition> = [
