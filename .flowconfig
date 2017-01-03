@@ -2,7 +2,7 @@
 .*/node_modules/.*/test/.*\.json$
 .*/node_modules/fbjs/.*
 .*/node_modules/react-native/.*
-.*/node_modules/react-swipeable-views/.*
+.*/node_modules/react-swipeable-views/src/index.native.*
 
 [options]
 module.name_mapper.extension='ejs' -> 'empty/function'
