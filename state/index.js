@@ -27,13 +27,13 @@ const getSiteState = () => (
     featuredBlogPosts: getFeaturedPosts(),
     data: getData(),
     ...initialState,
-  }).then(({ data, ...state }) => ({
+  }).then(({ data: { events, badgers }, ...state }) => ({
     ...state,
     job: toDict(state.jobs, j => j.slug),
-    events: data.events,
-    event: toDict(data.events, j => j.slug),
-    badgers: data.badgers,
-    categories: getCategories(data.badgers),
+    events,
+    event: toDict(events, j => j.slug),
+    badgers,
+    categories: getCategories(badgers),
   }))
 );
 
