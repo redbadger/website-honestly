@@ -5,10 +5,16 @@ import PrinciplesSlice from './principles-slice';
 import SocialSlice from './social-slice';
 import ContactUs from '../../slices/contact-us-slice';
 
-const AboutUs = ({ contactUsURL }) => {
+type Tweet = Object;
+
+type AboutUsProps = {
+  tweets: Array<Tweet>
+};
+
+const AboutUs = ({ contactUsURL, tweets }: AboutUsProps) => {
   return (
     <div>
-      <SocialSlice />
+      <SocialSlice tweets={tweets} />
       <PrinciplesSlice />
       <TimelineSlice />
       <ContactUs postURL={contactUsURL} />
