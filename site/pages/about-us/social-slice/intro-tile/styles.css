@@ -1,5 +1,5 @@
-@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../css/_colors.css";
-@value maxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
+@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
 
 .socialSlice {
   background-color: badgerWhite;
@@ -25,8 +25,8 @@
 .intro {
   composes: card;
   padding: 20px 20px;
-  composes: serif from "../../../css/typography/_fonts.css";
-  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontL from "../../../../css/typography/_fonts.css";
   display: none;
 }
 
