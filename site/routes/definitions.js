@@ -13,7 +13,7 @@ const getBadgersByCategory = (badgers, category) => (
 );
 
 const createPages = (tag, count) => (
-  [...Array(Math.ceil(count / 20)).keys()].map(page => ({ tag, page: page + 1 }))
+  Array.from(Array(Math.ceil(count / 20)).keys()).map(page => ({ tag, page: page + 1 }))
 );
 
 const genBadgersParams = state => (
