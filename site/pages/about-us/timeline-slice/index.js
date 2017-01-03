@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
@@ -23,20 +24,12 @@ import ClientOnly from '../../../components/clientOnly';
 
 class TimelineSlice extends React.Component {
 
-  componentWillMount() {
-    this.state = {
-      currentIndex: 6,
-      animateHeight: false,
-    };
-  }
+  state = {
+    currentIndex: 6,
+  };
 
-  componentDidMount() {
-    this.state = {
-      currentIndex: 6,
-    };
-  }
 
-  setPage = idx => {
+  setPage = (idx: number) => {
     this.setState({
       currentIndex: idx,
     });
