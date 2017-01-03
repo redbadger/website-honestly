@@ -1,6 +1,7 @@
 // @flow
 
 import React, { PropTypes } from 'react';
+import SwipeableViews from 'react-swipeable-views';
 import cx from 'classnames';
 
 import InlineSVG from 'svg-inline-react';
@@ -74,24 +75,18 @@ const Instagram = ({handle, image, alt, likeCount, commentCount}) => (
 );
 
 class SocialSlice extends React.Component {
-  maxTiles = 3;
-  visibleTiles = 2;
-
   state = { tile: 0 };
 
-  nextCard() {
-    if (this.state.tile < (this.maxTiles - this.visibleTiles)) {
-      this.setState({ tile: this.state.tile + 1 });
-    }
-  }
+  setTile = (tile : number) => this.setState({ tile })
 
   render() {
     return(
       <section className={styles.socialSlice}>
         <ul className={styles.cards}>
-          <IntroCard nextCard={this.nextCard.bind(this)} />
+          {this.state.tile}
           <div className={styles.scrollRegion}>
-            <div className={styles.scrollWindow} style={{ marginLeft: -345 * this.state.tile }}>
+            <SwipeableViews index={this.state.tile} onChangeIndex={this.setTile} slideStyle={{ transform: 'translate(-40px, 0)' }}>
+              <IntroCard nextCard={this.setTile} />
               <Instagram
                 handle="@redbadgerteam"
                 image="https://cdn.zeplin.io/57c8297fc3cf63795b6a4520/assets/90B70B12-B358-48D5-BA5E-DCA61BEE2A03.png"
@@ -120,7 +115,7 @@ class SocialSlice extends React.Component {
                 likeCount={88}
                 index={1}
               />
-            </div>
+            </SwipeableViews>
           </div>
         </ul>
       </section>

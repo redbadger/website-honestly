@@ -11,26 +11,15 @@
   margin-right: auto;
 }
 
-.scrollRegion {
-  display: inline-block;
-  width: 690px;
-  height: 500px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.scrollWindow {
-  transition: all 0.3s;
-}
-
 .card {
   white-space: normal;
-  width: 345px;
+  width: 375px;
   height: 500px;
   background: badgerBlack;
   color: badgerWhite;
   display: inline-block;
   vertical-align: top;
+  text-align: right;
 }
 
 .intro {
@@ -72,7 +61,7 @@
 }
 
 .image {
-  width: 345px;
+  width: 375px;
   height: 345px;
 }
 
