@@ -75,7 +75,7 @@ export function getData() {
         lastName
         startDate
         imageUrl
-        tags
+        categories
       }
     }
   `;

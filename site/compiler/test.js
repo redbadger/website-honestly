@@ -172,7 +172,7 @@ describe('site/compiler', () => {
         badgers: [{
           firstName: 'Alex',
           lastName: 'Savin',
-          tags: [
+          categories: [
             'Engineering',
             'Leadership',
           ],
@@ -202,7 +202,7 @@ describe('site/compiler', () => {
             {
               firstName: 'Alex',
               lastName: 'Savin',
-              tags: [
+              categories: [
                 'Engineering',
                 'Leadership',
               ],
@@ -210,7 +210,7 @@ describe('site/compiler', () => {
             {
               firstName: 'Sari',
               lastName: 'Griffiths',
-              tags: [
+              categories: [
                 'PM',
                 'Leadership',
               ],
@@ -244,7 +244,7 @@ describe('site/compiler', () => {
             {
               firstName: 'Sari',
               lastName: 'Griffiths',
-              tags: [
+              categories: [
                 'UX & Design',
               ],
             },
@@ -267,7 +267,7 @@ describe('site/compiler', () => {
           badgers.push({
             firstName: 'Alex ' + i,
             lastName: 'Savin',
-            tags: [
+            categories: [
               'Engineering',
               'Leadership',
             ],
@@ -284,7 +284,7 @@ describe('site/compiler', () => {
             {
               firstName: 'Etiene',
               lastName: 'Dalcol',
-              tags: [
+              categories: [
                 'Engineering',
               ],
             },
@@ -313,7 +313,7 @@ describe('site/compiler', () => {
           badgers.push({
             firstName: 'Alex ' + i,
             lastName: 'Savin',
-            tags: [
+            categories: [
               'Engineering',
             ],
           });
@@ -347,7 +347,7 @@ describe('site/compiler', () => {
         badgers.push({
           firstName: 'Alex ' + i,
           lastName: 'Savin',
-          tags: [
+          categories: [
             'Engineering',
           ],
         });
@@ -378,7 +378,7 @@ describe('site/compiler', () => {
         badgers.push({
           firstName: 'Alex ' + i,
           lastName: 'Savin',
-          tags: [
+          categories: [
             'Engineering',
             'Leadership',
           ],
@@ -424,7 +424,7 @@ describe('site/compiler', () => {
         badgers.push({
           firstName: 'Alex ' + i,
           lastName: 'Savin',
-          tags: [
+          categories: [
             'Engineering',
             'Leadership',
           ],
@@ -434,7 +434,7 @@ describe('site/compiler', () => {
         badgers.push({
           firstName: 'Alex ' + i,
           lastName: 'Savin',
-          tags: [
+          categories: [
             'Engineering',
           ],
         });

@@ -16,7 +16,7 @@ const toDict = (array, keyFn) => array.reduce((obj, item) => ({
 const getCategories = badgers => (
   Object.keys(badgers
     .reduce((uniqueTags, badger) => (
-      badger.tags
+      badger.categories
         .reduce((tags, tag) => (tags[tag] ? tags : { ...tags, [tag]: 1 }), uniqueTags)
     ), {}))
 );
