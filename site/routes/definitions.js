@@ -69,7 +69,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     gen: state => state.events.map(({ startDateTime: { date, month, year }, slug }) => ({ date, month, year, slug })),
   },
   {
-    title: ({ tag }) => 'Meet our team' + (tag !== 'everyone' ? ` (${tag})` : ''),
+    title: ({ category }) => 'Meet our team' + (category !== 'everyone' ? ` (${category})` : ''),
     key: 'badgers',
     route: 'about-us/people/{category?}/{page?}',
     defaults: { category: 'everyone', page: 1 },
