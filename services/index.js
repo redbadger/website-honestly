@@ -1,7 +1,11 @@
+import bugsnag from 'bugsnag';
+
 import doPublish from './publish';
 import doContactUs from './contact_us';
 import doSignUp from './mailchimp/sign-up/index';
 import doUpdateUser from './mailchimp/update-user/index';
+
+bugsnag.register(process.env.BUGSNAG_KEY);
 
 const cbWithErrorHandling = cb => (e, body) => {
   if (e) {
