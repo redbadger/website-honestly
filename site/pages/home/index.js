@@ -14,7 +14,7 @@ export type HomePageProps = {
   featuredBlogPosts: Array<Object>,
 };
 
-const HomePage = ({ contactUsURL, featuredBlogPosts }) => (
+const HomePage = ({ contactUsURL, featuredBlogPosts }: any) => (
   <div>
     <TopSlice />
     <CaseStudy />
