@@ -21,6 +21,16 @@ export const selectValidEvents = list =>
   list.filter(listItem => !!listItem.startDateTime &&
     !!listItem.startDateTime.iso);
 
+const getCategories = badgers => (
+  Object.keys(badgers
+    .reduce((uniqueCategories, badger) => (
+      badger.categories
+        .reduce((categories, category) => (
+          categories[category] ? categories : { ...categories, [category]: 1 }
+        ), uniqueCategories)
+    ), {}))
+);
+
 const basicFields = `
   id
   slug
@@ -83,8 +93,9 @@ export function getData() {
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
           .then(response => response.json())
-          .then(({ data }) => ({
-            events: sortEvents(selectValidEvents(data.allEvents)),
-            badgers: data.allBadgers,
+          .then(({ data: { allEvents, allBadgers } }) => ({
+            events: sortEvents(selectValidEvents(allEvents)),
+            badgers: allBadgers,
+            categories: getCategories(allBadgers),
           }));
 }

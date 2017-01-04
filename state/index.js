@@ -13,29 +13,19 @@ const toDict = (array, keyFn) => array.reduce((obj, item) => ({
   [keyFn(item)]: item,
 }), {});
 
-const getCategories = badgers => (
-  Object.keys(badgers
-    .reduce((uniqueCategories, badger) => (
-      badger.categories
-        .reduce((categories, category) => (
-          categories[category] ? categories : { ...categories, [category]: 1 }
-        ), uniqueCategories)
-    ), {}))
-);
-
 const getSiteState = () => (
   Promise.props({
     jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
     featuredBlogPosts: getFeaturedPosts(),
     data: getData(),
     ...initialState,
-  }).then(({ data: { events, badgers }, ...state }) => ({
+  }).then(({ data: { events, badgers, categories }, ...state }) => ({
     ...state,
     job: toDict(state.jobs, j => j.slug),
     events,
     event: toDict(events, j => j.slug),
     badgers,
-    categories: getCategories(badgers),
+    categories,
   }))
 );
 
