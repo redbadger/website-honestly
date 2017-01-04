@@ -86,7 +86,10 @@ export function getData() {
         jobTitle
         startDate
         imageUrl
-        categories
+        categories {
+          name
+          slug
+        }
       }
     }
   `;
