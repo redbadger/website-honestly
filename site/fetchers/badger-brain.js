@@ -21,15 +21,16 @@ export const selectValidEvents = list =>
   list.filter(listItem => !!listItem.startDateTime &&
     !!listItem.startDateTime.iso);
 
-const getCategories = badgers => (
-  Object.keys(badgers
+const getCategories = badgers => {
+  const categoriesObj = badgers
     .reduce((uniqueCategories, badger) => (
       badger.categories
         .reduce((categories, category) => (
-          categories[category] ? categories : { ...categories, [category]: 1 }
+          categories[category.name] ? categories : { ...categories, [category.name]: category.slug }
         ), uniqueCategories)
-    ), {}))
-);
+    ), {});
+  return Object.keys(categoriesObj).map(name => ({ name, slug: categoriesObj[name] }));
+};
 
 const basicFields = `
   id
