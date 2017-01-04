@@ -10,11 +10,11 @@ import ContactUs from '../../slices/contact-us-slice';
 import NewsLetter from './newsletter-slice';
 
 export type HomePageProps = {
-  contactUsURL: string,
+  contactUsURL: void,
   featuredBlogPosts: Array<Object>,
 };
 
-const HomePage = ({ contactUsURL, featuredBlogPosts }: any) => (
+const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => (
   <div>
     <TopSlice />
     <CaseStudy />
