@@ -6,6 +6,7 @@ import doSignUp from './mailchimp/sign-up/index';
 import doUpdateUser from './mailchimp/update-user/index';
 
 bugsnag.register(process.env.BUGSNAG_KEY);
+bugsnag.notify(new Error('Non-fatal'));
 
 const cbWithErrorHandling = cb => (e, body) => {
   if (e) {
