@@ -14,11 +14,14 @@ describe('site/compiler', () => {
           firstName: 'Alex',
           lastName: 'Savin',
           categories: [
-            'Engineering',
-            'Leadership',
+            { name: 'Engineering', slug: 'engineering' },
+            { name: 'Leadership', slug: 'leadership' },
           ],
         }],
-        categories: ['Engineering', 'Leadership'],
+        categories: [
+          { name: 'Engineering', slug: 'engineering' },
+          { name: 'Leadership', slug: 'leadership' },
+        ],
       });
 
       expect(pages.length).to.equal(11);
@@ -44,20 +47,24 @@ describe('site/compiler', () => {
               firstName: 'Alex',
               lastName: 'Savin',
               categories: [
-                'Engineering',
-                'Leadership',
+                { name: 'Engineering', slug: 'engineering' },
+                { name: 'Leadership', slug: 'leadership' },
               ],
             },
             {
               firstName: 'Sari',
               lastName: 'Griffiths',
               categories: [
-                'PM',
-                'Leadership',
+                { name: 'PM', slug: 'pm' },
+                { name: 'Leadership', slug: 'leadership' },
               ],
             },
           ],
-          categories: ['Engineering', 'Leadership', 'PM'],
+          categories: [
+            { name: 'Engineering', slug: 'engineering' },
+            { name: 'Leadership', slug: 'leadership' },
+            { name: 'PM', slug: 'pm' },
+          ],
         });
 
         expect(pages.length).to.equal(12);
@@ -86,18 +93,20 @@ describe('site/compiler', () => {
               firstName: 'Sari',
               lastName: 'Griffiths',
               categories: [
-                'UX & Design',
+                { name: 'UX & Design', slug: 'ux-design' },
               ],
             },
           ],
-          categories: ['UX & Design'],
+          categories: [
+            { name: 'UX & Design', slug: 'ux-design' },
+          ],
         });
 
         expect(pages.length).to.equal(10);
         expect(pages[8].path).to.equal('about-us/people/index.html');
         expect(pages[8].body).to.match(/everyone/);
         expect(pages[9].path).to.equal('about-us/people/ux-design/index.html');
-        expect(pages[9].body).to.match(/ux &amp; design/);
+        expect(pages[9].body).to.match(/ux-design/);
       });
     });
 
@@ -109,8 +118,8 @@ describe('site/compiler', () => {
             firstName: 'Alex ' + i,
             lastName: 'Savin',
             categories: [
-              'Engineering',
-              'Leadership',
+              { name: 'Engineering', slug: 'engineering' },
+              { name: 'Leadership', slug: 'leadership' },
             ],
           });
         }
@@ -126,11 +135,14 @@ describe('site/compiler', () => {
               firstName: 'Etiene',
               lastName: 'Dalcol',
               categories: [
-                'Engineering',
+                { name: 'Engineering', slug: 'engineering' },
               ],
             },
           ]),
-          categories: ['Engineering', 'Leadership'],
+          categories: [
+            { name: 'Engineering', slug: 'engineering' },
+            { name: 'Leadership', slug: 'leadership' },
+          ],
         });
 
         expect(pages.length).to.equal(13);
@@ -155,7 +167,7 @@ describe('site/compiler', () => {
             firstName: 'Alex ' + i,
             lastName: 'Savin',
             categories: [
-              'Engineering',
+              { name: 'Engineering', slug: 'engineering' },
             ],
           });
         }
@@ -167,7 +179,9 @@ describe('site/compiler', () => {
           events: [],
           event: {},
           badgers,
-          categories: ['Engineering'],
+          categories: [
+            { name: 'Engineering', slug: 'engineering' },
+          ],
         });
 
         expect(pages.length).to.equal(11);
@@ -189,7 +203,7 @@ describe('site/compiler', () => {
           firstName: 'Alex ' + i,
           lastName: 'Savin',
           categories: [
-            'Engineering',
+            { name: 'Engineering', slug: 'engineering' },
           ],
         });
       }
@@ -201,7 +215,9 @@ describe('site/compiler', () => {
         events: [],
         event: {},
         badgers,
-        categories: ['Engineering'],
+        categories: [
+          { name: 'Engineering', slug: 'engineering' },
+        ],
       });
 
       expect(pages.length).to.equal(10);
@@ -220,8 +236,8 @@ describe('site/compiler', () => {
           firstName: 'Alex ' + i,
           lastName: 'Savin',
           categories: [
-            'Engineering',
-            'Leadership',
+            { name: 'Engineering', slug: 'engineering' },
+            { name: 'Leadership', slug: 'leadership' },
           ],
         });
       }
@@ -233,7 +249,10 @@ describe('site/compiler', () => {
         events: [],
         event: {},
         badgers,
-        categories: ['Engineering', 'Leadership'],
+        categories: [
+          { name: 'Engineering', slug: 'engineering' },
+          { name: 'Leadership', slug: 'leadership' },
+        ],
       });
 
       expect(pages.length).to.equal(17);
@@ -266,8 +285,8 @@ describe('site/compiler', () => {
           firstName: 'Alex ' + i,
           lastName: 'Savin',
           categories: [
-            'Engineering',
-            'Leadership',
+            { name: 'Engineering', slug: 'engineering' },
+            { name: 'Leadership', slug: 'leadership' },
           ],
         });
       }
@@ -276,7 +295,7 @@ describe('site/compiler', () => {
           firstName: 'Alex ' + i,
           lastName: 'Savin',
           categories: [
-            'Engineering',
+            { name: 'Engineering', slug: 'engineering' },
           ],
         });
       }
@@ -288,7 +307,10 @@ describe('site/compiler', () => {
         events: [],
         event: {},
         badgers,
-        categories: ['Engineering', 'Leadership'],
+        categories: [
+          { name: 'Engineering', slug: 'engineering' },
+          { name: 'Leadership', slug: 'leadership' },
+        ],
       });
 
       expect(pages.length).to.equal(16);

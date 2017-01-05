@@ -9,7 +9,7 @@ type RouteDefinition = {
 }
 
 const getBadgersByCategory = (badgers, category) => (
-  badgers.filter(badger => badger.categories.filter(cat => cat === category).length > 0)
+  badgers.filter(badger => badger.categories.filter(cat => cat.name === category.name).length > 0)
 );
 
 const createPages = (category, count) => (
@@ -19,7 +19,7 @@ const createPages = (category, count) => (
 const genBadgersParams = state => (
   state.categories.reduce((params, category) => {
     const count = getBadgersByCategory(state.badgers, category).length;
-    return params.concat(createPages(category.toLowerCase(), count));
+    return params.concat(createPages(category.slug, count));
   }, createPages('everyone', state.badgers.length + 1))
 );
 
@@ -73,9 +73,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     key: 'badgers',
     route: 'about-us/people/{category?}/{page?}',
     defaults: { category: 'everyone', page: 1 },
-    urlEncode: (_, key, val) => (val === 'ux & design' ? 'ux-design' : encodeURIComponent(val)),
-    urlDecode: (_, key, val) => (val === 'ux-design' ? 'ux & design' : decodeURIComponent(val)),
-    stateToProps: ({ badgers }, { category } = {}) => ({ badgers: getBadgersByCategory(badgers, category), category }),
+    stateToProps: ({ badgers, categories }, { category } = {}) => ({ badgers: getBadgersByCategory(badgers, category), categories, category }),
     gen: genBadgersParams,
   },
   {
