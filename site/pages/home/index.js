@@ -10,7 +10,7 @@ import ContactUs from '../../slices/contact-us-slice';
 import NewsLetter from './newsletter-slice';
 
 export type HomePageProps = {
-  contactUsURL: void,
+  contactUsURL: string,
   featuredBlogPosts: Array<Object>,
 };
 
