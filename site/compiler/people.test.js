@@ -1,15 +1,19 @@
 import { compileSite } from '.';
 
 describe('site/compiler', () => {
+  const baseState = {
+    jobs: [],
+    job: {},
+    contactUsURL: '',
+    featuredBlogPosts: [],
+    events: [],
+    event: {},
+  };
+
   describe('compileSite', () => {
     it('renders the dynamic badger pages of the site', () => {
       const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
+        ...baseState,
         badgers: [{
           firstName: 'Alex',
           lastName: 'Savin',
@@ -36,12 +40,7 @@ describe('site/compiler', () => {
     describe('with engineer, leadership and pm', () => {
       it('should render one page of each and everyone', () => {
         const pages = compileSite({
-          jobs: [],
-          job: {},
-          contactUsURL: '',
-          featuredBlogPosts: [],
-          events: [],
-          event: {},
+          ...baseState,
           badgers: [
             {
               firstName: 'Alex',
@@ -82,12 +81,7 @@ describe('site/compiler', () => {
     describe('with one UX & Designer', () => {
       it('should render one everyone and one ux-design', () => {
         const pages = compileSite({
-          jobs: [],
-          job: {},
-          contactUsURL: '',
-          featuredBlogPosts: [],
-          events: [],
-          event: {},
+          ...baseState,
           badgers: [
             {
               firstName: 'Sari',
@@ -124,12 +118,7 @@ describe('site/compiler', () => {
           });
         }
         const pages = compileSite({
-          jobs: [],
-          job: {},
-          contactUsURL: '',
-          featuredBlogPosts: [],
-          events: [],
-          event: {},
+          ...baseState,
           badgers: badgers.concat([
             {
               firstName: 'Etiene',
@@ -172,12 +161,7 @@ describe('site/compiler', () => {
           });
         }
         const pages = compileSite({
-          jobs: [],
-          job: {},
-          contactUsURL: '',
-          featuredBlogPosts: [],
-          events: [],
-          event: {},
+          ...baseState,
           badgers,
           categories: [
             { name: 'Engineering', slug: 'engineering' },
@@ -208,12 +192,7 @@ describe('site/compiler', () => {
         });
       }
       const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
+        ...baseState,
         badgers,
         categories: [
           { name: 'Engineering', slug: 'engineering' },
@@ -242,12 +221,7 @@ describe('site/compiler', () => {
         });
       }
       const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
+        ...baseState,
         badgers,
         categories: [
           { name: 'Engineering', slug: 'engineering' },
@@ -300,12 +274,7 @@ describe('site/compiler', () => {
         });
       }
       const pages = compileSite({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
+        ...baseState,
         badgers,
         categories: [
           { name: 'Engineering', slug: 'engineering' },
