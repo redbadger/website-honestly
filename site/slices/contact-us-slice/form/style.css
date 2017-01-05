@@ -15,6 +15,10 @@
   composes: sansSerif from "../../../css/typography/_fonts.css";
 }
 
+.contactUsForm textarea {
+  overflow: hidden;
+}
+
 .heading {
   max-width: contentMaxWidth;
   composes: fontL from "../../../css/typography/_fonts.css";
