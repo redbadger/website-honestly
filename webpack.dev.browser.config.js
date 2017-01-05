@@ -14,10 +14,10 @@ const devAppConfig = webpackMerge(baseConfig, {
     new HtmlWebpackPlugin({
       template: './site/index.ejs',
     }),
-    new ExtractTextPlugin(
-      '/assets-honestly/styles-[contenthash:base64:5].css',
-      { allChunks: true }
-    ),
+    new ExtractTextPlugin({
+      filename: '/assets-honestly/styles-[contenthash:base64:5].css',
+      allChunks: true
+    }),
   ],
 });
 

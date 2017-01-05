@@ -1,7 +1,9 @@
+const path = require('path');
+
 const swConfig = {
   entry: './site/sw.js',
   output: {
-    path: 'dist',
+    path: path.resolve(__dirname, 'dist'),
     filename: 'sw.js',
   },
   target: 'web',
@@ -10,7 +12,7 @@ const swConfig = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel'],
+        loaders: ['babel-loader'],
       },
       {
         test: /\.json$/,

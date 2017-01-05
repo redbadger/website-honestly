@@ -1,3 +1,4 @@
+const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
@@ -8,22 +9,24 @@ const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.
 
 const baseConfig = {
   output: {
-    path: 'dist',
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name]/index.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract(
-          'style-loader',
-          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'
+          {
+            fallbackLoader: 'style-loader',
+            loader: 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader',
+          }
         ),
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel'],
+        loader: 'babel-loader',
       },
       {
         test: /\.json$/,
@@ -40,7 +43,7 @@ const baseConfig = {
       },
       {
         test: /\.svg$/,
-        loader: 'svg-inline',
+        loader: 'svg-inline-loader',
       },
       {
         test: /\.ejs/,
@@ -48,21 +51,14 @@ const baseConfig = {
       },
     ],
   },
-  postcss() {
-    return [
-      autoprefixer,
-    ];
-  },
   devtool: 'source-map',
   plugins: [
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
-    new ExtractTextPlugin(
-      'assets-honestly/styles-[contenthash:base64:5].css',
-      { allChunks: true }
-    ),
+    new ExtractTextPlugin({
+      filename: 'assets-honestly/styles-[contenthash:base64:5].css',
+      allChunks: true,
+    }),
     new CopyWebpackPlugin([
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: `assets/${robots}`, to: 'robots.txt' },
