@@ -1,12 +1,13 @@
 // @flow
 
-type RouteDefinition = {
+type RouteDefinition = {|
   title: string | (props: Object) => string,
   key: string,
   route: string,
+  defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
-}
+|}
 
 const getBadgersByCategory = (badgers, category) => (
   badgers.filter(badger => badger.categories.filter(cat => cat.name === category.name).length > 0)
