@@ -1,4 +1,5 @@
 // @flow
+import { stateToBadgerProps, genBadgersParams } from './selectors';
 
 type RouteDefinition = {|
   title: string | (props: Object) => string,
@@ -8,21 +9,6 @@ type RouteDefinition = {|
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
 |}
-
-const getBadgersByCategory = (badgers, category) => (
-  badgers.filter(badger => badger.categories.filter(cat => cat.name === category.name).length > 0)
-);
-
-const createPages = (category, count) => (
-  Array.from(Array(Math.ceil(count / 20)).keys()).map(page => ({ category, page: page + 1 }))
-);
-
-const genBadgersParams = state => (
-  state.categories.reduce((params, category) => {
-    const count = getBadgersByCategory(state.badgers, category).length;
-    return params.concat(createPages(category.slug, count));
-  }, createPages('everyone', state.badgers.length + 1))
-);
 
 export const routeDefinitions : Array<RouteDefinition> = [
   {
@@ -74,7 +60,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     key: 'badgers',
     route: 'about-us/people/{category?}/{page?}',
     defaults: { category: 'everyone', page: 1 },
-    stateToProps: ({ badgers, categories }, { category } = {}) => ({ badgers: getBadgersByCategory(badgers, category), categories, category }),
+    stateToProps: stateToBadgerProps,
     gen: genBadgersParams,
   },
   {
