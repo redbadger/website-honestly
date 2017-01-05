@@ -354,7 +354,7 @@ babel-eslint@^6.1.2:
     lodash.assign "^4.0.0"
     lodash.pickby "^4.0.0"
 
-babel-generator@^6.19.0, babel-generator@^6.20.0, babel-generator@^6.7.7:
+babel-generator@^6.19.0, babel-generator@^6.20.0:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.20.0.tgz#fee63614e0449390103b3097f3f6a118016c6766"
   dependencies:
@@ -768,12 +768,6 @@ babel-plugin-transform-strict-mode@^6.18.0:
   dependencies:
     babel-runtime "^6.0.0"
     babel-types "^6.18.0"
-
-babel-plugin-typecheck@^3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-typecheck/-/babel-plugin-typecheck-3.9.0.tgz#0edac7573ae24ee58c6f91319f574bc5124b0f0f"
-  dependencies:
-    babel-generator "^6.7.7"
 
 babel-polyfill@^6.16.0, babel-polyfill@^6.6.1:
   version "6.20.0"
@@ -6345,7 +6339,7 @@ replaceall@^0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/replaceall/-/replaceall-0.1.6.tgz#81d81ac7aeb72d7f5c4942adf2697a3220688d8e"
 
-request@^2.55.0, request@^2.69.0, request@^2.79.0:
+request@^2.55.0, request@^2.69.0, request@^2.72.0, request@^2.79.0:
   version "2.79.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.79.0.tgz#4dfe5bf6be8b8cdc37fcf93e04b65577722710de"
   dependencies:
@@ -7206,6 +7200,13 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.4"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.4.tgz#8c9dbfb52795686f166cd2023794bcf103d13c2b"
 
+twitter@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/twitter/-/twitter-1.7.0.tgz#2882e208e0ad83bb226528613561f1dd233ac94b"
+  dependencies:
+    deep-extend "^0.4.1"
+    request "^2.72.0"
+
 type-check@~0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
@@ -7748,13 +7749,13 @@ xml2js@0.4.15:
     sax ">=0.6.0"
     xmlbuilder ">=2.4.6"
 
-xmlbuilder@2.6.2, xmlbuilder@>=2.4.6:
+xmlbuilder@2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-2.6.2.tgz#f916f6d10d45dc171b1be2e6e673fb6e0cc35d0a"
   dependencies:
     lodash "~3.5.0"
 
-xmlbuilder@4.0.0:
+xmlbuilder@4.0.0, xmlbuilder@>=2.4.6:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-4.0.0.tgz#98b8f651ca30aa624036f127d11cc66dc7b907a3"
   dependencies:
