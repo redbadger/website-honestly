@@ -191,6 +191,7 @@
 @media mobile {
   .responsive-cell-mobile {
     width: 100%;
+    display: inline-block;
   }
 
   .fit > .cell.mobile {
@@ -205,6 +206,7 @@
 @media mobileS {
   .responsive-cell-mobileS {
     width: 100%;
+    display: inline-block;
   }
 
   .cell.mobileS {
