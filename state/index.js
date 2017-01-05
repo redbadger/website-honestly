@@ -4,6 +4,7 @@ import { getFeaturedPosts } from '../site/fetchers/featured-blog-posts';
 import { getJobs } from '../site/fetchers/workable';
 import { getEvents } from '../site/fetchers/badger-brain';
 import { getTweets } from '../site/fetchers/twitter';
+import { getPosts } from '../site/fetchers/instagram';
 
 const initialState = {
   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
@@ -20,6 +21,7 @@ const getSiteState = () => (
     featuredBlogPosts: getFeaturedPosts(),
     events: getEvents(),
     tweets: getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
+    instagramPosts: getPosts(fetch),
     ...initialState,
   }).then(state => ({
     ...state,

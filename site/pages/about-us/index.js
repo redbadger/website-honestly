@@ -4,17 +4,18 @@ import TimelineSlice from './timeline-slice';
 import PrinciplesSlice from './principles-slice';
 import SocialSlice from './social-slice';
 import ContactUs from '../../slices/contact-us-slice';
-
-type Tweet = Object;
+import type { Tweet, InstagramPost } from '../../types/';
 
 type AboutUsProps = {
-  tweets: Array<Tweet>
+  contactUsURL: string;
+  tweets: Array<Tweet>;
+  instagramPosts: Array<InstagramPost>;
 };
 
-const AboutUs = ({ contactUsURL, tweets }: AboutUsProps) => {
+const AboutUs = ({ contactUsURL, tweets, instagramPosts }: AboutUsProps) => {
   return (
     <div>
-      <SocialSlice tweets={tweets} />
+      <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
       <PrinciplesSlice />
       <TimelineSlice />
       <ContactUs postURL={contactUsURL} />
@@ -22,8 +23,5 @@ const AboutUs = ({ contactUsURL, tweets }: AboutUsProps) => {
   );
 };
 
-AboutUs.propTypes = {
-  contactUsURL: React.PropTypes.string.isRequired,
-};
 
 export default AboutUs;
