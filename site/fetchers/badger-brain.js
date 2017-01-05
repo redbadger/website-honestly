@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import handleErrors from './handle-errors';
 
 const badgerBrainEndpoint = process.env.BADGER_BRAIN_HOST;
 
@@ -96,6 +97,7 @@ export function getData() {
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
+          .then(handleErrors)
           .then(response => response.json())
           .then(({ data: { allEvents, allBadgers } }) => ({
             events: sortEvents(selectValidEvents(allEvents)),
