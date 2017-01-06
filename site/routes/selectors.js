@@ -15,6 +15,6 @@ export const genBadgersParams = state => (
   }, createPages('everyone', state.badgers.length + 1))
 );
 
-export const stateToBadgerProps = ({ badgers, categories }, { category } = {}) => {
-  return { badgers: getBadgersByCategory(badgers, category), categories, category };
+export const stateToBadgerProps = ({ badgers, categories }, { category, page } = {}) => {
+  return { badgers: getBadgersByCategory(badgers, category), categories, category, page };
 };

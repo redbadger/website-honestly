@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from '../../components/link';
+import TeamSlice from './team-slice';
 
-const MeetOurTeam = ({ categories, badgers }) => {
+const MeetOurTeam = ({ categories, badgers, page }) => {
   return (
     <div>
       <h1>Meet out team</h1>
@@ -24,17 +25,7 @@ const MeetOurTeam = ({ categories, badgers }) => {
           </Link>
         )}
       </div>
-      <ul>
-        {badgers.map(b =>
-          <li>
-            <Link to='badger' navigationData={{ name: 'slug-badger' }}>
-              <img src={b.imageUrl} alt="team member" />
-              <span>{b.firstName} {b.lastName}</span>
-              <span>{b.jobTitle}</span>
-            </Link>
-          </li>
-        )}
-      </ul>
+      <TeamSlice badgers={badgers} page={page} />
     </div>
   );
 };
