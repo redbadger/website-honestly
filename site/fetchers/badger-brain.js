@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import handleErrors from './handle-errors';
 
 const badgerBrainEndpoint = process.env.BADGER_BRAIN_HOST;
 
@@ -20,6 +21,17 @@ const sortEvents = list =>
 export const selectValidEvents = list =>
   list.filter(listItem => !!listItem.startDateTime &&
     !!listItem.startDateTime.iso);
+
+const getCategories = badgers => {
+  const categoriesObj = badgers
+    .reduce((uniqueCategories, badger) => (
+      badger.categories
+        .reduce((categories, category) => (
+          categories[category.name] ? categories : { ...categories, [category.name]: category.slug }
+        ), uniqueCategories)
+    ), {});
+  return Object.keys(categoriesObj).map(name => ({ name, slug: categoriesObj[name] }));
+};
 
 const basicFields = `
   id
@@ -64,16 +76,32 @@ const fullEventsQuery = `
   ${dateTimeFieldsEvents}
 `;
 
-export function getEvents() {
+export function getData() {
   const body = `
     query {
       allEvents {
         ${fullEventsQuery}
       }
+      allBadgers {
+        firstName
+        lastName
+        jobTitle
+        startDate
+        imageUrl
+        categories {
+          name
+          slug
+        }
+      }
     }
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
+          .then(handleErrors)
           .then(response => response.json())
-          .then(events => sortEvents(selectValidEvents(events.data.allEvents)));
+          .then(({ data: { allEvents, allBadgers } }) => ({
+            events: sortEvents(selectValidEvents(allEvents)),
+            badgers: allBadgers,
+            categories: getCategories(allBadgers),
+          }));
 }
