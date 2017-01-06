@@ -3,8 +3,6 @@ const webpackMerge = require('webpack-merge').smart;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-process.env.BABEL_ENV = 'typecheck';
-
 const devAppConfig = webpackMerge(baseConfig, {
   entry: ['babel-polyfill', './dev/browser-app/index.js'],
   target: 'web',

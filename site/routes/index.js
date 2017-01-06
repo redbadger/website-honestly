@@ -26,6 +26,7 @@ const componentMap = {
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
   aboutUsPage: AboutUsPage,
+  badgers: ({ category }) => <div>{category}</div>,
 };
 
 function routes() {
