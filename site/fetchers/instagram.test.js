@@ -14,7 +14,7 @@ const generatePost = () => {
       count: 0,
     },
     images: {
-      thumbnail: {
+      standard_resolution: {
         url: 'asd',
         width: 100,
         height: 100,
@@ -58,28 +58,28 @@ describe('instagram fetcher post validation', () => {
 
   it('fails with no thumbnail image', () => {
     const post = generatePost();
-    post.images.thumbnail.url = undefined;
+    post.images.standard_resolution.url = undefined;
     const result = isValidPost(post);
     expect(result).to.equal(false);
   });
 
   it('fails with no image url', () => {
     const post = generatePost();
-    post.images.thumbnail.url = '';
+    post.images.standard_resolution.url = '';
     const result = isValidPost(post);
     expect(result).to.equal(false);
   });
 
   it('fails with invalid image width', () => {
     const post = generatePost();
-    post.images.thumbnail.width = '-1';
+    post.images.standard_resolution.width = '-1';
     const result = isValidPost(post);
     expect(result).to.equal(false);
   });
 
   it('fails with invalid image height', () => {
     const post = generatePost();
-    post.images.thumbnail.height = '-1';
+    post.images.standard_resolution.height = '-1';
     const result = isValidPost(post);
     expect(result).to.equal(false);
   });

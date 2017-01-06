@@ -14,7 +14,7 @@ type InstagramResponsePost = {
     count: number
   },
   images: {
-    thumbnail: {
+    standard_resolution: {
       url: string,
       width: number;
       height: number;
@@ -45,20 +45,21 @@ export const isValidPost = (post: InstagramResponsePost) => {
       throw new Error('Missing images');
     }
 
-    if (!post.images.thumbnail.url) {
-      throw new Error('Missing images thumbnail url');
+    if (!post.images.standard_resolution) {
+      throw new Error('Missing images standard_resolution');
     }
 
-    if (!post.images.thumbnail) {
-      throw new Error('Missing images thumbnail');
+    if (!post.images.standard_resolution.url) {
+      throw new Error('Missing image url');
     }
 
-    if (parseInt(post.images.thumbnail.width, 10) < 0) {
-      throw new Error('Missing images thumbnail width');
+
+    if (parseInt(post.images.standard_resolution.width, 10) < 0) {
+      throw new Error('Missing image width');
     }
 
-    if (parseInt(post.images.thumbnail.height, 10) < 0) {
-      throw new Error('Missing images thumbnail height');
+    if (parseInt(post.images.standard_resolution.height, 10) < 0) {
+      throw new Error('Missing images height');
     }
   } catch (e) {
     return false;
@@ -71,9 +72,9 @@ export const normalisePost = (post: InstagramResponsePost) => {
   return {
     text: post.caption.text,
     image: {
-      url: post.images.thumbnail.url,
-      width: post.images.thumbnail.width,
-      height: post.images.thumbnail.height,
+      url: post.images.standard_resolution.url,
+      width: post.images.standard_resolution.width,
+      height: post.images.standard_resolution.height,
     },
     likes: post.likes.count,
     created: post.created_time,
@@ -98,7 +99,6 @@ export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => (
         .map(normalisePost)
         .sort(post => new Date(post.created));
 
-      console.log(normalised);
       // Take the top 5 posts
       return normalised.slice(0, 5);
     })
