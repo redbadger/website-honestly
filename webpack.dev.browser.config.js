@@ -4,9 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const devAppConfig = webpackMerge(baseConfig, {
-  entry: {
-    '/dev-app': './dev/browser-app/index.js',
-  },
+  entry: ['babel-polyfill', './dev/browser-app/index.js'],
   target: 'web',
   plugins: [
     new HtmlWebpackPlugin({
