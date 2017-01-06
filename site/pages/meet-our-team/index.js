@@ -1,10 +1,15 @@
 import React from 'react';
+import Link from '../../components/link';
 
-const MeetOurTeam = ({ category, badgers }) => {
+const MeetOurTeam = ({ category, categories, badgers }) => {
   return (
     <div>
       <h1>Meet out team</h1>
-      <div>Everyone Leadership Strategy PM UX & Design</div>
+      <div>
+        {categories.map(b =>
+          <Link to="badgers" navigationData={{ category: b.slug }}>{b.name}</Link>
+        )}
+      </div>
       {badgers.map(b => b.firstName)}
       <ul>
         <li></li>
