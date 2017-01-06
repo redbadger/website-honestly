@@ -8,36 +8,33 @@ import styles from './styles.css';
 import likeIconSVG from '../icons/like/like.svg';
 import twitterIconSVG from '../icons/twitter/twitter.svg';
 import retweetIconSVG from '../icons/retweet/retweet.svg';
+import type { Tweet } from '../../../../types/';
 
-type TwitterProps = {
-  handle: string,
-  tweet: string,
-  index: number,
-  retweetCount: number,
-  likeCount: number,
+type TweetProps = {
+  tweet: Tweet;
+  index: number;
 }
-
 const colours = [styles.blue, styles.purple, styles.green];
-const Twitter = ({ handle, tweet, retweetCount, likeCount, index }: TwitterProps) => (
-  <li className={cx(styles.twitter, colours[index ? index % 3 : 1 % 3])}>
+const Twitter = ({ tweet, index }: TweetProps) => (
+  <div className={cx(styles.twitter, colours[index % 3])}>
     <div className={styles.handle}>
       <InlineSVG src={twitterIconSVG} className={styles.twitterIcon} />
-      {handle}
+      @RedBadger
     </div>
     <div className={styles.tweet}>
-      {tweet}
+      {tweet.text}
     </div>
     <div className={styles.meta}>
       <span className={styles.retweets}>
         <InlineSVG src={retweetIconSVG} className={styles.icon} />
-        {retweetCount}
+        {tweet.retweetCount}
       </span>
       <span className={styles.likes}>
         <InlineSVG src={likeIconSVG} className={styles.icon} />
-        {likeCount}
+        {tweet.favouriteCount}
       </span>
     </div>
-  </li>
+  </div>
 );
 
 export default Twitter;

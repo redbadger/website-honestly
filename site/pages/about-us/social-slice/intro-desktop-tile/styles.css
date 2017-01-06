@@ -1,33 +1,14 @@
 @value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
 
-.socialSlice {
-  background-color: badgerWhite;
-}
-
-.cards {
-  max-width: 1035px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card {
-  white-space: normal;
-  width: 375px;
-  height: 500px;
-  background: badgerBlack;
-  color: badgerWhite;
-  display: inline-block;
-  vertical-align: top;
-  text-align: right;
-}
-
 .intro {
-  composes: card;
-  padding: 20px 20px;
+  composes: card from "../styles.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   composes: fontL from "../../../../css/typography/_fonts.css";
+  padding: 20px 20px;
   display: none;
+  background: badgerBlack;
+  color: badgerWhite;
 }
 
 .prevButton, .nextButton{

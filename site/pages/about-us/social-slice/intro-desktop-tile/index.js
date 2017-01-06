@@ -10,14 +10,14 @@ type IntroProps = {
   nextCard: Function,
 }
 
-const IntroCard = ({ prevCard, nextCard }: IntroProps) => (
-  <li className={styles.intro}>
+const IntroDesktopCard = ({ prevCard, nextCard }: IntroProps) => (
+  <div className={styles.intro}>
     <span>
       From our social feed
       <button onClick={prevCard} className={styles.prevButton}><InlineSVG src={arrowIconSVG} className={styles.prevArrow} /></button>
       <button onClick={nextCard} className={styles.nextButton}><InlineSVG src={arrowIconSVG} className={styles.nextArrow} /></button>
     </span>
-  </li>
+  </div>
 );
 
-export default IntroCard;
+export default IntroDesktopCard;

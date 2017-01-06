@@ -9,43 +9,16 @@
   max-width: 1035px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 }
 
 .card {
   white-space: normal;
-  width: 375px;
+  width: 80%;
+  max-width: 350px;
   height: 500px;
-  background: badgerBlack;
-  color: badgerWhite;
+  background: badgerWhite;
+  color: badgerBlack;
   display: inline-block;
   vertical-align: top;
-  text-align: right;
-}
-
-.intro {
-  composes: card;
-  padding: 20px 20px;
-  composes: serif from "../../../css/typography/_fonts.css";
-  composes: fontL from "../../../css/typography/_fonts.css";
-  display: none;
-}
-
-.prevButton, .nextButton{
-  background: transparent;
-  border: none;
-}
-
-.prevArrow svg{
-  transform: rotateX('180');
-  width: 50px;
-}
-
-.nextArrow svg{
-  width: 50px;
-}
-
-@media mediumScreen{
-  .intro{
-    display: block;
-  }
 }

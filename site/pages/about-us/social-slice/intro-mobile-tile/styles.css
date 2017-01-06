@@ -1,0 +1,26 @@
+@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
+
+.intro {
+  composes: card from "../styles.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  font-size: 60px;
+  line-height: 1.1em;
+  padding: 20px 20px;
+  display: block;
+  background: badgerBlack;
+  color: badgerWhite;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.text{
+   width: 250px;
+   padding-left: 20px;
+}
+
+@media mediumScreen{
+  .intro{
+    display: none;
+  }
+}
