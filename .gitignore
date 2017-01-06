@@ -18,6 +18,8 @@ pids
 .env
 .DS_Store
 assets/state.json
-/.env.staging
 keyrings/live/secring.gpg
 keyrings/live/pubring.gpg~
+/keyrings/files/.env.staging
+/keyrings/files/.env.dev
+/keyrings/files/.env.production
