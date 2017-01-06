@@ -15,8 +15,9 @@
   composes: sansSerif from "../../../css/typography/_fonts.css";
 }
 
-.contactUsForm textarea {
-  overflow: hidden;
+/* for ie11 */
+_:-ms-fullscreen, :root .contactUsForm textarea {
+  overflow: auto;
 }
 
 .heading {
