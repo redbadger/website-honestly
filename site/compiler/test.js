@@ -35,7 +35,7 @@ describe('site/compiler', () => {
       expect(pages[7].path).to.equal('offline/index.html');
       expect(pages[7].body).to.match(/No internet connection/);
       expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
+      expect(pages[8].body).to.match(/everyone/i);
     });
 
     it('renders the dynamic jobs pages of the site', () => {

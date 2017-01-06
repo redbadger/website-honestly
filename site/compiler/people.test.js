@@ -32,11 +32,11 @@ describe('site/compiler', () => {
 
       expect(pages.length).to.equal(11);
       expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/engineering/index.html');
-      expect(pages[9].body).to.match(/engineering/);
-      expect(pages[10].path).to.equal('about-us/people/leadership/index.html');
-      expect(pages[10].body).to.match(/leadership/);
+      expect(pages[8].body).to.match(/everyone/i);
+      expect(pages[9].path).to.equal('about-us/people/1/engineering/index.html');
+      expect(pages[9].body).to.match(/engineering/i);
+      expect(pages[10].path).to.equal('about-us/people/1/leadership/index.html');
+      expect(pages[10].body).to.match(/leadership/i);
     });
 
     describe('with engineer, leadership and pm', () => {
@@ -70,13 +70,13 @@ describe('site/compiler', () => {
 
         expect(pages.length).to.equal(12);
         expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/everyone/);
-        expect(pages[9].path).to.equal('about-us/people/engineering/index.html');
-        expect(pages[9].body).to.match(/engineering/);
-        expect(pages[10].path).to.equal('about-us/people/leadership/index.html');
-        expect(pages[10].body).to.match(/leadership/);
-        expect(pages[11].path).to.equal('about-us/people/pm/index.html');
-        expect(pages[11].body).to.match(/pm/);
+        expect(pages[8].body).to.match(/everyone/i);
+        expect(pages[9].path).to.equal('about-us/people/1/engineering/index.html');
+        expect(pages[9].body).to.match(/engineering/i);
+        expect(pages[10].path).to.equal('about-us/people/1/leadership/index.html');
+        expect(pages[10].body).to.match(/leadership/i);
+        expect(pages[11].path).to.equal('about-us/people/1/pm/index.html');
+        expect(pages[11].body).to.match(/pm/i);
       });
     });
 
@@ -100,9 +100,9 @@ describe('site/compiler', () => {
 
         expect(pages.length).to.equal(10);
         expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/everyone/);
-        expect(pages[9].path).to.equal('about-us/people/ux-design/index.html');
-        expect(pages[9].body).to.match(/ux-design/);
+        expect(pages[8].body).to.match(/everyone/i);
+        expect(pages[9].path).to.equal('about-us/people/1/ux-design/index.html');
+        expect(pages[9].body).to.match(/ux-design/i);
       });
     });
 
@@ -138,15 +138,15 @@ describe('site/compiler', () => {
 
         expect(pages.length).to.equal(13);
         expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/everyone/);
-        expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
-        expect(pages[9].body).to.match(/everyone/);
-        expect(pages[10].path).to.equal('about-us/people/engineering/index.html');
-        expect(pages[10].body).to.match(/engineering/);
-        expect(pages[11].path).to.equal('about-us/people/engineering/2/index.html');
-        expect(pages[11].body).to.match(/engineering/);
-        expect(pages[12].path).to.equal('about-us/people/leadership/index.html');
-        expect(pages[12].body).to.match(/leadership/);
+        expect(pages[8].body).to.match(/everyone/i);
+        expect(pages[9].path).to.equal('about-us/people/2/index.html');
+        expect(pages[9].body).to.match(/everyone/i);
+        expect(pages[10].path).to.equal('about-us/people/1/engineering/index.html');
+        expect(pages[10].body).to.match(/engineering/i);
+        expect(pages[11].path).to.equal('about-us/people/2/engineering/index.html');
+        expect(pages[11].body).to.match(/engineering/i);
+        expect(pages[12].path).to.equal('about-us/people/1/leadership/index.html');
+        expect(pages[12].body).to.match(/leadership/i);
       });
     });
 
@@ -172,11 +172,11 @@ describe('site/compiler', () => {
 
         expect(pages.length).to.equal(11);
         expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/everyone/);
-        expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
-        expect(pages[9].body).to.match(/everyone/);
-        expect(pages[10].path).to.equal('about-us/people/engineering/index.html');
-        expect(pages[10].body).to.match(/engineering/);
+        expect(pages[8].body).to.match(/everyone/i);
+        expect(pages[9].path).to.equal('about-us/people/2/index.html');
+        expect(pages[9].body).to.match(/everyone/i);
+        expect(pages[10].path).to.equal('about-us/people/1/engineering/index.html');
+        expect(pages[10].body).to.match(/engineering/i);
       });
     });
   });
@@ -203,9 +203,9 @@ describe('site/compiler', () => {
 
       expect(pages.length).to.equal(10);
       expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/engineering/index.html');
-      expect(pages[9].body).to.match(/engineering/);
+      expect(pages[8].body).to.match(/everyone/i);
+      expect(pages[9].path).to.equal('about-us/people/1/engineering/index.html');
+      expect(pages[9].body).to.match(/engineering/i);
     });
   });
 
@@ -233,23 +233,23 @@ describe('site/compiler', () => {
 
       expect(pages.length).to.equal(17);
       expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
-      expect(pages[9].body).to.match(/everyone/);
-      expect(pages[10].path).to.equal('about-us/people/everyone/3/index.html');
-      expect(pages[10].body).to.match(/everyone/);
-      expect(pages[11].path).to.equal('about-us/people/engineering/index.html');
-      expect(pages[11].body).to.match(/engineering/);
-      expect(pages[12].path).to.equal('about-us/people/engineering/2/index.html');
-      expect(pages[12].body).to.match(/engineering/);
-      expect(pages[13].path).to.equal('about-us/people/engineering/3/index.html');
-      expect(pages[13].body).to.match(/engineering/);
-      expect(pages[14].path).to.equal('about-us/people/leadership/index.html');
-      expect(pages[14].body).to.match(/leadership/);
-      expect(pages[15].path).to.equal('about-us/people/leadership/2/index.html');
-      expect(pages[15].body).to.match(/leadership/);
-      expect(pages[16].path).to.equal('about-us/people/leadership/3/index.html');
-      expect(pages[16].body).to.match(/leadership/);
+      expect(pages[8].body).to.match(/everyone/i);
+      expect(pages[9].path).to.equal('about-us/people/2/index.html');
+      expect(pages[9].body).to.match(/everyone/i);
+      expect(pages[10].path).to.equal('about-us/people/3/index.html');
+      expect(pages[10].body).to.match(/everyone/i);
+      expect(pages[11].path).to.equal('about-us/people/1/engineering/index.html');
+      expect(pages[11].body).to.match(/engineering/i);
+      expect(pages[12].path).to.equal('about-us/people/2/engineering/index.html');
+      expect(pages[12].body).to.match(/engineering/i);
+      expect(pages[13].path).to.equal('about-us/people/3/engineering/index.html');
+      expect(pages[13].body).to.match(/engineering/i);
+      expect(pages[14].path).to.equal('about-us/people/1/leadership/index.html');
+      expect(pages[14].body).to.match(/leadership/i);
+      expect(pages[15].path).to.equal('about-us/people/2/leadership/index.html');
+      expect(pages[15].body).to.match(/leadership/i);
+      expect(pages[16].path).to.equal('about-us/people/3/leadership/index.html');
+      expect(pages[16].body).to.match(/leadership/i);
     });
   });
 
@@ -286,21 +286,21 @@ describe('site/compiler', () => {
 
       expect(pages.length).to.equal(16);
       expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/everyone/);
-      expect(pages[9].path).to.equal('about-us/people/everyone/2/index.html');
-      expect(pages[9].body).to.match(/everyone/);
-      expect(pages[10].path).to.equal('about-us/people/everyone/3/index.html');
-      expect(pages[10].body).to.match(/everyone/);
-      expect(pages[11].path).to.equal('about-us/people/engineering/index.html');
-      expect(pages[11].body).to.match(/engineering/);
-      expect(pages[12].path).to.equal('about-us/people/engineering/2/index.html');
-      expect(pages[12].body).to.match(/engineering/);
-      expect(pages[13].path).to.equal('about-us/people/engineering/3/index.html');
-      expect(pages[13].body).to.match(/engineering/);
-      expect(pages[14].path).to.equal('about-us/people/leadership/index.html');
-      expect(pages[14].body).to.match(/leadership/);
-      expect(pages[15].path).to.equal('about-us/people/leadership/2/index.html');
-      expect(pages[15].body).to.match(/leadership/);
+      expect(pages[8].body).to.match(/everyone/i);
+      expect(pages[9].path).to.equal('about-us/people/2/index.html');
+      expect(pages[9].body).to.match(/everyone/i);
+      expect(pages[10].path).to.equal('about-us/people/3/index.html');
+      expect(pages[10].body).to.match(/everyone/i);
+      expect(pages[11].path).to.equal('about-us/people/1/engineering/index.html');
+      expect(pages[11].body).to.match(/engineering/i);
+      expect(pages[12].path).to.equal('about-us/people/2/engineering/index.html');
+      expect(pages[12].body).to.match(/engineering/i);
+      expect(pages[13].path).to.equal('about-us/people/3/engineering/index.html');
+      expect(pages[13].body).to.match(/engineering/i);
+      expect(pages[14].path).to.equal('about-us/people/1/leadership/index.html');
+      expect(pages[14].body).to.match(/leadership/i);
+      expect(pages[15].path).to.equal('about-us/people/2/leadership/index.html');
+      expect(pages[15].body).to.match(/leadership/i);
     });
   });
 });
