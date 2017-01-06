@@ -28,6 +28,7 @@ const componentMap = {
   offlinePage: OfflinePage,
   aboutUsPage: AboutUsPage,
   badgers: MeetOurTeam,
+  badger: () => <div>Test badger page</div>,
 };
 
 function routes() {

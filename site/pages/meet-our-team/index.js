@@ -7,12 +7,19 @@ const MeetOurTeam = ({ category, categories, badgers }) => {
       <h1>Meet out team</h1>
       <div>
         {categories.map(b =>
-          <Link to="badgers" navigationData={{ category: b.slug }}>{b.name}</Link>
+          <Link key={b.slug} to="badgers" navigationData={{ category: b.slug }}>{b.name}</Link>
         )}
       </div>
-      {badgers.map(b => b.firstName)}
       <ul>
-        <li></li>
+        {badgers.map(b =>
+          <li>
+            <Link to='badger' navigationData={{ name: 'slug-badger' }}>
+              <img src={b.imageUrl} alt="team member" />
+              <span>{b.firstName} {b.lastName}</span>
+              <span>{b.jobTitle}</span>
+            </Link>
+          </li>
+        )}
       </ul>
     </div>
   );

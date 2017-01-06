@@ -58,10 +58,16 @@ export const routeDefinitions : Array<RouteDefinition> = [
   {
     title: ({ category }) => 'Meet our team' + (category !== 'everyone' ? ` (${category})` : ''),
     key: 'badgers',
-    route: 'about-us/people/{category?}/{page?}',
+    route: 'about-us/people/{page?}/{category?}',
+    validate: ({ page }) => !isNaN(+page),
     defaults: { category: 'everyone', page: 1 },
     stateToProps: stateToBadgerProps,
     gen: genBadgersParams,
+  },
+  {
+    title: 'Badger',
+    key: 'badger',
+    route: 'about-us/people/{name}',
   },
   {
     title: 'Not found',
