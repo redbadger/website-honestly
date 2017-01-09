@@ -8,6 +8,7 @@
 .cards {
   max-width: 1035px;
   margin-left: 0px;
+  display: flex;
 }
 
 .card {
