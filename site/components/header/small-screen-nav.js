@@ -14,16 +14,37 @@ export default class SmallScreenNav extends React.Component {
   }
 
   handleInputChange = event => {
+    this.scrollLock();
     this.setState({
       navOpen: event.target.checked,
     });
   }
 
   closeMenu = () => {
+    this.scrollRelease();
     this.setState({
       navOpen: false,
     });
     return true;
+  }
+
+  scrollLock = () => {
+    this.smallScreenNav.addEventListener('wheel', this.onScrollHandler, false);
+    this.smallScreenNav.addEventListener('touchmove', this.onScrollHandler, false);
+  }
+
+  scrollRelease = () => {
+    this.smallScreenNav.removeEventListener('wheel', this.onScrollHandler, false);
+    this.smallScreenNav.removeEventListener('touchmove', this.onScrollHandler, false);
+  }
+
+  onScrollHandler = e => {
+    e.stopImmediatePropagation();
+    e.preventDefault();
+  }
+
+  componentWillUnmount = () => {
+    this.scrollRelease();
   }
 
   render() {
@@ -31,7 +52,7 @@ export default class SmallScreenNav extends React.Component {
     const navTabIndex = navOpen ? 0 : -1;
 
     return (
-      <div className={styles.smallScreenNavComponent}>
+      <div ref={c => { this.smallScreenNav = c; }} className={styles.smallScreenNavComponent}>
         <div className={styles.triggerContainer}>
           <label
             htmlFor="burger"
