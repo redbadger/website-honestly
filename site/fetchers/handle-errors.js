@@ -1,6 +1,6 @@
 export default function HandleErrors(response) {
   if (!response.ok) {
-    throw Error(`${response.statusText} - ${response.url}`);
+    throw Error(`${response.statusText} for request: ${response.url}`);
   }
 
   return response;

@@ -4,9 +4,7 @@ const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 
 const devStaticConfig = webpackMerge(baseConfig, {
-  entry: {
-    'dev-static': './dev/static/index.js',
-  },
+  entry: ['babel-polyfill', './dev/static/index.js'],
   output: {
     libraryTarget: 'commonjs',
   },

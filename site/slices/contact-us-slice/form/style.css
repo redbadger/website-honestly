@@ -15,6 +15,11 @@
   composes: sansSerif from "../../../css/typography/_fonts.css";
 }
 
+/* for ie11 */
+_:-ms-fullscreen, :root .contactUsForm textarea {
+  overflow: auto;
+}
+
 .heading {
   max-width: contentMaxWidth;
   composes: fontL from "../../../css/typography/_fonts.css";

@@ -5,6 +5,8 @@ import { getJobs } from '../site/fetchers/workable';
 import { getEvents } from '../site/fetchers/badger-brain';
 import { getTweets } from '../site/fetchers/twitter';
 import { getPosts } from '../site/fetchers/instagram';
+import { getData } from '../site/fetchers/badger-brain';
+
 
 const initialState = {
   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
@@ -22,11 +24,15 @@ const getSiteState = () => (
     events: getEvents(),
     tweets: getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     instagramPosts: getPosts(fetch),
+    data: getData(),
     ...initialState,
-  }).then(state => ({
+  }).then(({ data: { events, badgers, categories }, ...state }) => ({
     ...state,
     job: toDict(state.jobs, j => j.slug),
-    event: toDict(state.events, j => j.slug),
+    events,
+    event: toDict(events, j => j.slug),
+    badgers,
+    categories,
   }))
 );
 
