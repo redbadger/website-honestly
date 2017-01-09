@@ -56,13 +56,16 @@ class SocialSlice extends React.Component {
     });
   }
 
-
   render() {
     return (
       <section className={styles.socialSlice}>
         <div className={styles.cards}>
           <IntroDesktopTile prevCard={this.prevTile} nextCard={this.nextTile} />
-          <SwipeableViews index={this.state.tile} onChangeIndex={this.setTile} slideStyle={{ transform: 'translate(0px, 0)', width: 350 }}>
+          <SwipeableViews
+            index={this.state.tile}
+            onChangeIndex={this.setTile}
+            style={{ paddingRight: '15%' }}
+          >
             <IntroMobileTile />
             {this.renderTiles()}
           </SwipeableViews>

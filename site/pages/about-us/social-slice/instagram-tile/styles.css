@@ -8,7 +8,6 @@
 
 .instagram {
   composes: card from "../styles.css";
-  padding-left: 0px;
 }
 
 .meta {
@@ -24,7 +23,6 @@
 
 .image {
   width: 100%;
-  max-width: 350px;
 }
 
 .handle {

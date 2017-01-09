@@ -2,23 +2,20 @@
 @value maxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .socialSlice {
-  background-color: badgerWhite;
+  background-color: badgerBlack;
 }
 
 .cards {
   max-width: 1035px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  margin-left: 0px;
 }
 
 .card {
   white-space: normal;
-  width: 80%;
-  max-width: 350px;
   height: 500px;
   background: badgerWhite;
   color: badgerBlack;
   display: inline-block;
   vertical-align: top;
+  width: 100%;
 }
