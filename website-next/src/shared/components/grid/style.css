@@ -188,6 +188,14 @@
   width: 100%;
 }
 
+.responsive-cell-mobile {
+  display: inline-block;
+}
+
+.responsive-cell-mobileS {
+  display: inline-block;
+}
+
 @media mobile {
   .responsive-cell-mobile {
     width: 100%;
