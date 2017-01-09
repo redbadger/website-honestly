@@ -26,6 +26,8 @@ const MeetOurTeam = ({ categories, badgers, page }) => {
         )}
       </div>
       <TeamSlice badgers={badgers} page={page} />
+      <Link to='badgers' includeCurrentData navigationData={{ page: page - 1 }}>Prev</Link>
+      <Link to='badgers' includeCurrentData navigationData={{ page: page + 1 }}>Next</Link>
     </div>
   );
 };
