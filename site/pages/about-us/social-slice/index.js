@@ -92,8 +92,12 @@ class SocialSlice extends React.Component {
    */
   calculateSwipePadding() {
     const { viewWidth } = this.state;
-    const swipePadding = (viewWidth - (this.tileSize * 2)) + 60;
-    return swipePadding;
+    return (viewWidth - (this.tileSize * 2)) + 60;
+  }
+  /** As above but for small screen */
+  calculateMobileSwipePadding() {
+    const { viewWidth } = this.state;
+    return viewWidth - this.tileSize;
   }
 
   renderTiles = () => {
@@ -120,6 +124,7 @@ class SocialSlice extends React.Component {
 
   render() {
     const swipePadding = this.calculateSwipePadding();
+    const mobileSwipePadding = this.calculateMobileSwipePadding();
     return (
       <section className={styles.socialSlice}>
         <div className={styles.desktopView}>
@@ -137,7 +142,7 @@ class SocialSlice extends React.Component {
           <SwipeableViews
             index={this.state.tile}
             onChangeIndex={this.setTile}
-            style={{ paddingRight: '15%' }}
+            style={{ paddingRight: mobileSwipePadding }}
             slideStyle={{ maxWidth: 415 }}
           >
             <IntroMobileTile />
