@@ -27,17 +27,19 @@ class SocialSlice extends React.Component {
     this.state = {
       tile: 0,
       totalTiles: (this.props.instagramPosts.length + this.props.tweets.length) - 1,
-      viewWidth: window ? window.innerWidth : 0,
+      viewWidth: 0,
     };
+  }
+
+  componentDidMount() {
+    this.setState({ viewWidth: window.innerWidth });
     if (window) {
       window.addEventListener('resize', this.updateViewWidth);
     }
   }
 
   componentWillUnmount() {
-    if (window) {
-      window.removeEventListener('resize', this.updateViewWidth);
-    }
+    window.removeEventListener('resize', this.updateViewWidth);
   }
 
   setTile = (tile: number) => this.setState({ tile });
@@ -47,10 +49,8 @@ class SocialSlice extends React.Component {
    * the swipableTileTotal tile total
    */
   updateViewWidth = () => {
-    if (window) {
-      const newWidth = window.innerWidth;
-      this.setState({ viewWidth: newWidth });
-    }
+    const newWidth = window.innerWidth;
+    this.setState({ viewWidth: newWidth });
   };
 
   /**
