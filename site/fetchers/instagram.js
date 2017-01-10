@@ -81,11 +81,14 @@ export const normalisePost = (post: InstagramResponsePost) => {
   };
 };
 
-const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN || '';
-const apiQuery = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${accessToken}`;
+export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
+  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+  if (!accessToken) {
+    throw new Error('Missing env varible INSTAGRAM_ACCESS_TOKEN');
+  }
+  const apiQuery = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${accessToken}`;
 
-export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => (
-  fetch(apiQuery, {
+  return fetch(apiQuery, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -101,5 +104,5 @@ export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => (
 
       // Take the top 5 posts
       return normalised.slice(0, 5);
-    })
-);
+    });
+};
