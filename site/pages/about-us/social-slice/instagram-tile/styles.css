@@ -49,7 +49,7 @@
 .icon svg {
   width: 17px;
   height: 16px;
-  margin-right: 5px; 
+  margin-right: 5px;
 }
 
 .instagramIcon svg {
@@ -60,4 +60,8 @@
 
 .instagramIcon{
   margin-right: 10px;
+}
+
+.likes{
+  margin-right: 20px;
 }

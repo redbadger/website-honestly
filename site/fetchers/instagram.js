@@ -76,6 +76,7 @@ export const normalisePost = (post: InstagramResponsePost) => {
       width: post.images.standard_resolution.width,
       height: post.images.standard_resolution.height,
     },
+    comments: post.comments.count,
     likes: post.likes.count,
     created: post.created_time,
   };

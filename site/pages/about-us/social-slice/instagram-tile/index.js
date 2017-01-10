@@ -7,6 +7,7 @@ import cx from 'classnames';
 import styles from './styles.css';
 import instagramIconSVG from '../icons/instagram/instagram.svg';
 import likeIconSVG from '../icons/like/like.svg';
+import commentIconSVG from '../icons/comment/comment.svg';
 import type { InstagramPost } from '../../../../types/';
 
 type InstagramProps = {
@@ -34,6 +35,11 @@ const Instagram = ({ post, index }: InstagramProps) => (
           <InlineSVG src={likeIconSVG} className={styles.icon} />
           {post.likes}
         </span>
+        <span className={styles.comments}>
+          <InlineSVG src={commentIconSVG} className={styles.icon} />
+          {post.comments}
+        </span>
+
       </div>
     </div>
   </button>
