@@ -2,7 +2,7 @@
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .meetOurTeam {
-  padding-top: 100px;
+  padding-top: 25px;
   text-align: center;
   background-color: badgerWhite;
   color: badgerBlack;
@@ -11,19 +11,21 @@
 .title {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .subtitle {
-  composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: fontS from "../../css/typography/_fonts.css";
   composes: sansSerif from "../../css/typography/_fonts.css";
-  margin-bottom: 40px;
+  padding: 0 25px;
+  margin-bottom: 30px;
 }
 
 .categories {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .categoryItem {
@@ -36,6 +38,8 @@
   text-transform: uppercase;
   padding: 10px 20px;
   border: 2px solid daveGreen;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .category.active {
