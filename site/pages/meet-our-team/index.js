@@ -20,23 +20,25 @@ const MeetOurTeam = ({ categories, category, badgers, page }) => {
         <br />
         We inspire and bring out the best in one another.
       </h2>
-      <ul>
-        <li>
+      <ul className={styles.categories}>
+        <li className={styles.categoryItem}>
           <Link
-            disableActive
             to="badgers"
             navigationData={{ category: 'everyone' }}
+            className={styles.category}
+            activeCssClass={styles.active}
           >
             Everyone
           </Link>
         </li>
         {categories.map(b =>
-          <li>
+          <li className={styles.categoryItem}>
             <Link
               key={b.slug}
-              disableActive
               to="badgers"
               navigationData={{ category: b.slug }}
+              activeCssClass={styles.active}
+              className={styles.category}
             >
               {b.name}
             </Link>

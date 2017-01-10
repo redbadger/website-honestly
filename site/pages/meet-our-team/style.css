@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .meetOurTeam {
@@ -20,3 +20,32 @@
   margin-bottom: 40px;
 }
 
+.categories {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.categoryItem {
+  margin-right: 20px;
+}
+
+.category {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid daveGreen;
+}
+
+.category.active {
+  background-color: daveGreen;
+}
+
+.category:last-child {
+  margin-right: 0;
+}
+
+a.category, a.category:hover, a.category:visited {
+  color: badgerBlack;
+}
