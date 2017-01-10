@@ -80,7 +80,6 @@ class SocialSlice extends React.Component {
   nextTile = () => {
     const nextTile = this.state.tile + 1;
     const swipableTotal = this.calculateSwipableTotal();
-    console.log(swipableTotal);
     if (nextTile > swipableTotal) {
       return;
     }
