@@ -2,8 +2,8 @@ import React from 'react';
 import Link from '../../../components/link';
 
 const paginate = (badgers, page) => {
-  const start = (page - 1) * 5;
-  return badgers.slice(start, start + 5);
+  const start = (page - 1) * 20;
+  return badgers.slice(start, start + 20);
 };
 
 const TeamSlice = ({ badgers, page }) => {
