@@ -73,10 +73,8 @@ export function compileRoutes(state) {
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
 
-    const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
 
-    const ejsStart = Date.now();
     const body = layoutTemplate({
       title,
       tracking,
