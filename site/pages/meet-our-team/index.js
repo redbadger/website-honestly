@@ -7,7 +7,7 @@ const getTeam = (badgers, category) => {
     return badgers;
   }
 
-  return [...badgers.slice(0, 7), { isAd: true }, ...badgers.slice(7)];
+  return [...badgers.slice(0, 7), { jobAdvert: true }, ...badgers.slice(7)];
 };
 
 const MeetOurTeam = ({ categories, category, badgers, page }) => {

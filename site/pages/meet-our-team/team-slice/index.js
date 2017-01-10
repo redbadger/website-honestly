@@ -6,16 +6,24 @@ const paginate = (badgers, page) => {
   return badgers.slice(start, start + 20);
 };
 
+const BadgerProfile = ({ badger }) => (
+  <Link to='badger' navigationData={{ name: 'slug-badger' }}>
+    <img src={badger.imageUrl} alt="team member" />
+    <span>{badger.firstName} {badger.lastName}</span>
+    <span>{badger.jobTitle}</span>
+  </Link>
+);
+
+const JobAdvert = () => (
+  <div>Are you a potential Badger?</div>
+);
+
 const TeamSlice = ({ badgers, page }) => {
   return (
     <ul>
-      {paginate(badgers, page).map((b, i) =>
+      {paginate(badgers, page).map((badger, i) =>
         <li key={i}>
-          <Link to='badger' navigationData={{ name: 'slug-badger' }}>
-            <img src={b.imageUrl} alt="team member" />
-            <span>{b.firstName} {b.lastName}</span>
-            <span>{b.jobTitle}</span>
-          </Link>
+          {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
         </li>
       )}
     </ul>
