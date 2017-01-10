@@ -77,7 +77,7 @@ class SocialSlice extends React.Component {
             onChangeIndex={this.setTile}
             style={{ paddingRight: '15%' }}
             slideStyle={{ width: 350 }}
-            >
+          >
             {this.renderTiles()}
           </SwipeableViews>
         </div>
@@ -87,7 +87,7 @@ class SocialSlice extends React.Component {
             onChangeIndex={this.setTile}
             style={{ paddingRight: '15%' }}
             slideStyle={{ maxWidth: 415 }}
-            >
+          >
             <IntroMobileTile />
             {this.renderTiles()}
           </SwipeableViews>
