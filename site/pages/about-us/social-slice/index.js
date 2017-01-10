@@ -14,23 +14,34 @@ type SocialSliceProps = {
   instagramPosts: Array<InstagramPost>,
 }
 
+type SocialSliceState = {
+  tile: number;
+  totalTiles: number;
+}
+
 class SocialSlice extends React.Component {
-  state = { tile: 0 };
+  state: SocialSliceState;
+  componentWillMount() {
+    this.state = {
+      tile: 0,
+      totalTiles: (this.props.instagramPosts.length + this.props.tweets.length) - 1,
+    };
+  }
 
   setTile = (tile: number) => this.setState({ tile });
   prevTile = () => {
-    const prevTileIndex = this.state.tile - 1;
-    if (prevTileIndex < 0) {
+    const prevTile = this.state.tile - 1;
+    if (prevTile < 0) {
       return;
     }
-    this.setState({ tile: prevTileIndex });
+    this.setState({ tile: prevTile });
   }
   nextTile = () => {
-    const nextTileIndex = this.state.tile - 1;
-    if (nextTileIndex > 9) {
+    const nextTile = this.state.tile + 1;
+    if (nextTile > this.state.totalTiles) {
       return;
     }
-    this.setState({ tile: this.state.tile + 1 });
+    this.setState({ tile: nextTile });
   }
   props: SocialSliceProps;
 
@@ -59,13 +70,24 @@ class SocialSlice extends React.Component {
   render() {
     return (
       <section className={styles.socialSlice}>
-        <div className={styles.cards}>
-          <IntroDesktopTile prevCard={this.prevTile} nextCard={this.nextTile} />
+        <div className={styles.desktopView}>
+          <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} />
           <SwipeableViews
             index={this.state.tile}
             onChangeIndex={this.setTile}
             style={{ paddingRight: '15%' }}
-          >
+            slideStyle={{ width: 350 }}
+            >
+            {this.renderTiles()}
+          </SwipeableViews>
+        </div>
+        <div className={styles.mobileView}>
+          <SwipeableViews
+            index={this.state.tile}
+            onChangeIndex={this.setTile}
+            style={{ paddingRight: '15%' }}
+            slideStyle={{ maxWidth: 415 }}
+            >
             <IntroMobileTile />
             {this.renderTiles()}
           </SwipeableViews>

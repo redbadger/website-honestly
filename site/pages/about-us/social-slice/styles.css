@@ -3,12 +3,15 @@
 
 .socialSlice {
   background-color: badgerBlack;
+  composes: dividerBlack from "../../../css/_divider.css";
 }
 
-.cards {
-  max-width: 1035px;
-  margin-left: 0px;
-  display: flex;
+.desktopView {
+  display: none;
+}
+
+.mobileView {
+  display: block;
 }
 
 .card {
@@ -19,4 +22,14 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
+}
+
+@media mediumScreen{
+  .desktopView{
+    display: flex;
+  }
+
+  .mobileView {
+    display: none;
+  }
 }

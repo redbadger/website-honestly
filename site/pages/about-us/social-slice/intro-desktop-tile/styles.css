@@ -6,12 +6,22 @@
   composes: serif from "../../../../css/typography/_fonts.css";
   composes: fontL from "../../../../css/typography/_fonts.css";
   padding: 20px 20px;
-  display: none;
   background: badgerBlack;
   color: badgerWhite;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
+
+.text{
+  width: 250px;
+}
+
 .buttons{
   display: flex;
+  justify-content: flex-end;
 }
 .prevButton, .nextButton{
   background: transparent;
@@ -22,10 +32,4 @@
 .nextArrow svg{
   width: 25px;
   height: 25px
-}
-
-@media mediumScreen{
-  .intro{
-    display: block;
-  }
 }

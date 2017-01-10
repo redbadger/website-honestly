@@ -13,13 +13,14 @@ type IntroProps = {
 
 const IntroDesktopCard = ({ prevCard, nextCard }: IntroProps) => (
   <div className={styles.intro}>
-    <span>
+    <div className={styles.text}>
       From our social feed
-      <div className={styles.buttons}>
-        <button onClick={prevCard} className={styles.prevButton}><InlineSVG src={previousArrowIcon} className={styles.prevArrow} /></button>
-        <button onClick={nextCard} className={styles.nextButton}><InlineSVG src={nextArrowIcon} className={styles.nextArrow} /></button>
       </div>
-    </span>
+    <div className={styles.buttons}>
+      <button onClick={prevCard} className={styles.prevButton}><InlineSVG src={previousArrowIcon} className={styles.prevArrow} /></button>
+      <button onClick={nextCard} className={styles.nextButton}><InlineSVG src={nextArrowIcon} className={styles.nextArrow} /></button>
+    </div>
+
   </div>
 );
 
