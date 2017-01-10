@@ -62,7 +62,7 @@ export const isValidTweet = (tweet: TwitterResponse) => {
 };
 
 const baseUrl = 'https://api.twitter.com';
-const base64 = str => Buffer.from(str).toString('base64');
+const base64 = str => new Buffer(str).toString('base64');
 
 const getBearerToken = (fetch, key, secret) =>
   fetch(baseUrl + '/oauth2/token', {
