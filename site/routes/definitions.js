@@ -6,6 +6,7 @@ type RouteDefinition = {|
   key: string,
   route: string,
   defaults?: any,
+  validate?: (data: any) => boolean,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
 |}
