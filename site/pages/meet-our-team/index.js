@@ -12,31 +12,42 @@ const getTeam = (badgers, category) => {
 
 const MeetOurTeam = ({ categories, category, badgers, page }) => {
   return (
-    <div>
+    <section>
       <h1>Meet out team</h1>
-      <div>
-        <Link
-          disableActive
-          to="badgers"
-          navigationData={{ category: 'everyone' }}
-        >
-          Everyone
-        </Link>
-        {categories.map(b =>
+      <h2>
+        Red Badger is all about the people. We work brilliantly as a team.
+        <br />
+        We inspire and bring out the best in one another.
+      </h2>
+      <ul>
+        <li>
           <Link
-            key={b.slug}
             disableActive
             to="badgers"
-            navigationData={{ category: b.slug }}
+            navigationData={{ category: 'everyone' }}
           >
-            {b.name}
+            Everyone
           </Link>
+        </li>
+        {categories.map(b =>
+          <li>
+            <Link
+              key={b.slug}
+              disableActive
+              to="badgers"
+              navigationData={{ category: b.slug }}
+            >
+              {b.name}
+            </Link>
+          </li>
         )}
-      </div>
+      </ul>
       <TeamSlice badgers={getTeam(badgers, category)} page={page} />
-      <Link to="badgers" includeCurrentData navigationData={{ page: page - 1 }}>Prev</Link>
-      <Link to="badgers" includeCurrentData navigationData={{ page: page + 1 }}>Next</Link>
-    </div>
+      <div>
+        <Link to="badgers" includeCurrentData navigationData={{ page: page - 1 }}>Prev</Link>
+        <Link to="badgers" includeCurrentData navigationData={{ page: page + 1 }}>Next</Link>
+      </div>
+    </section>
   );
 };
 
