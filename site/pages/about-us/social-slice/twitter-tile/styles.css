@@ -7,6 +7,17 @@
   padding-left: 0px;
   width: 100%;
 }
+.link{
+  background: transparent;
+  outline: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.link:hover{
+  cursor: pointer;
+}
 
 .green { background: daveGreen; }
 .blue { background: stuBlue; }

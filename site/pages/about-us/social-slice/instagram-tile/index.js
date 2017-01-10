@@ -17,23 +17,26 @@ const colours = [styles.blue, styles.purple, styles.green];
 
 /** Renders the instagram tile on the social slice */
 const Instagram = ({ post, index }: InstagramProps) => (
-  <div className={cx(styles.instagram, colours[index % 3])}>
-    <div className={styles.handle}>
-      <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
-      @redbadgerteam
+  <button className={styles.link} onClick={() => window.open(post.url)}>
+    <div className={cx(styles.instagram, colours[index % 3])}>
+
+      <div className={styles.handle}>
+        <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
+        @redbadgerteam
       </div>
-    <img
-      className={styles.image}
-      alt={post.text}
-      src={post.image.url}
-    />
-    <div className={styles.meta}>
-      <span className={styles.likes}>
-        <InlineSVG src={likeIconSVG} className={styles.icon} />
-        {post.likes}
-      </span>
+      <img
+        className={styles.image}
+        alt={post.text}
+        src={post.image.url}
+      />
+      <div className={styles.meta}>
+        <span className={styles.likes}>
+          <InlineSVG src={likeIconSVG} className={styles.icon} />
+          {post.likes}
+        </span>
+      </div>
     </div>
-  </div>
+  </button>
 );
 
 export default Instagram;
