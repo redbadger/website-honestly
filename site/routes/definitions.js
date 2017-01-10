@@ -69,7 +69,6 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'Badger',
     key: 'badger',
     route: 'about-us/people/{name}',
-    defaults: { name: 'all' },
     gen: () => [],
   },
   {
