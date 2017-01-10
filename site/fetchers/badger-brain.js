@@ -85,8 +85,9 @@ export function getData() {
       allBadgers {
         name
         jobTitle
-        startDate
         imageUrl
+        slug
+        skills
         categories {
           name
           slug

@@ -7,10 +7,11 @@ const paginate = (badgers, page) => {
 };
 
 const BadgerProfile = ({ badger }) => (
-  <Link to='badger' navigationData={{ name: 'slug-badger' }}>
+  <Link to='badger' navigationData={{ name: badger.slug }}>
     <img src={badger.imageUrl} alt="team member" />
-    <span>{badger.firstName} {badger.lastName}</span>
+    <span>{badger.name}</span>
     <span>{badger.jobTitle}</span>
+    <span>{badger.skills}</span>
   </Link>
 );
 
