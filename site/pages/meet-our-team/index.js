@@ -13,9 +13,9 @@ const getTeam = (badgers, category) => {
 
 const MeetOurTeam = ({ categories, category, badgers, page }) => {
   return (
-    <section>
-      <h1>Meet out team</h1>
-      <h2>
+    <section className={styles.meetOurTeam}>
+      <h1 className={styles.title}>Meet our team</h1>
+      <h2 className={styles.subtitle}>
         Red Badger is all about the people. We work brilliantly as a team.
         <br />
         We inspire and bring out the best in one another.
