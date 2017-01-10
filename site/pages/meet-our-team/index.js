@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '../../components/link';
 import TeamSlice from './team-slice';
+import styles from './style.css';
 
 const getTeam = (badgers, category) => {
   if (category !== 'everyone') {
