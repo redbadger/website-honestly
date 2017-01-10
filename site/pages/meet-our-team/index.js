@@ -2,7 +2,15 @@ import React from 'react';
 import Link from '../../components/link';
 import TeamSlice from './team-slice';
 
-const MeetOurTeam = ({ categories, badgers, page }) => {
+const getTeam = (badgers, category) => {
+  if (category !== 'everyone') {
+    return badgers;
+  }
+
+  return [...badgers.slice(0, 7), { isAd: true }, ...badgers.slice(7)];
+};
+
+const MeetOurTeam = ({ categories, category, badgers, page }) => {
   return (
     <div>
       <h1>Meet out team</h1>
@@ -25,7 +33,7 @@ const MeetOurTeam = ({ categories, badgers, page }) => {
           </Link>
         )}
       </div>
-      <TeamSlice badgers={badgers} page={page} />
+      <TeamSlice badgers={getTeam(badgers, category)} page={page} />
       <Link to="badgers" includeCurrentData navigationData={{ page: page - 1 }}>Prev</Link>
       <Link to="badgers" includeCurrentData navigationData={{ page: page + 1 }}>Next</Link>
     </div>

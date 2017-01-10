@@ -9,8 +9,8 @@ const paginate = (badgers, page) => {
 const TeamSlice = ({ badgers, page }) => {
   return (
     <ul>
-      {paginate(badgers, page).map(b =>
-        <li>
+      {paginate(badgers, page).map((b, i) =>
+        <li key={i}>
           <Link to='badger' navigationData={{ name: 'slug-badger' }}>
             <img src={b.imageUrl} alt="team member" />
             <span>{b.firstName} {b.lastName}</span>
