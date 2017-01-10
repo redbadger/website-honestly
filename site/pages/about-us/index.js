@@ -15,11 +15,10 @@ type AboutUsProps = {
 const AboutUs = ({ contactUsURL, tweets, instagramPosts }: AboutUsProps) => {
   return (
     <div>
-      <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
       <PrinciplesSlice />
       <TimelineSlice />
       <ContactUs postURL={contactUsURL} />
-
+      <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
     </div>
   );
 };
