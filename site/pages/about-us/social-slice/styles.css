@@ -3,7 +3,8 @@
 
 .socialSlice {
   background-color: badgerBlack;
-  composes: dividerBlack from "../../../css/_divider.css";
+  composes: dividerBlackSocialSlice from "../../../css/_divider.css";
+  height: 555px;
 }
 
 .desktopView {
@@ -16,12 +17,15 @@
 
 .card {
   white-space: normal;
-  height: 480px;
+  height: 545px;
   background: badgerWhite;
   color: badgerBlack;
   display: inline-block;
   vertical-align: top;
   width: 100%;
+}
+.noscript{
+  display: flex;
 }
 
 @media mediumScreen{
