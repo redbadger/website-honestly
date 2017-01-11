@@ -26,8 +26,8 @@ const Instagram = ({ post, index }: InstagramProps) => {
 
         <div className={styles.handle}>
           <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
-          @redbadgerteam
-      </div>
+          <span className={styles.handleText}>@redbadgerteam</span>
+        </div>
         <img
           className={styles.image}
           alt={post.text}

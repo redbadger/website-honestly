@@ -41,17 +41,14 @@
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
   padding: 10px 20px;
+  display: flex;
 }
 
-.icon {
-  
+.handleText{
+  margin-top: 1px;
 }
-
-.icon svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  vertical-align: middle;
+.instagramIcon{
+  margin-right: 10px;
 }
 
 .instagramIcon svg {
@@ -60,8 +57,11 @@
   vertical-align: middle;
 }
 
-.instagramIcon{
-  margin-right: 10px;
+.icon svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .likes{
