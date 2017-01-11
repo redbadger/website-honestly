@@ -6,6 +6,7 @@
   text-align: center;
   background-color: badgerWhite;
   color: badgerBlack;
+  padding: 0 20px;
 }
 
 .title {
@@ -48,4 +49,18 @@
 
 a.category, a.category:hover, a.category:visited {
   color: badgerBlack;
+}
+
+.paging {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pagingButton {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  padding: 10px 20px;
+  background: badgerBlack;
+  color: badgerWhite;
 }

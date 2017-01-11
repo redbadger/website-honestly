@@ -44,9 +44,23 @@ const MeetOurTeam = ({ categories, category, badgers, page }) => {
         )}
       </ul>
       <TeamSlice badgers={getTeam(badgers, category)} page={page} />
-      <div>
-        <Link to="badgers" includeCurrentData navigationData={{ page: page - 1 }}>Prev</Link>
-        <Link to="badgers" includeCurrentData navigationData={{ page: page + 1 }}>Next</Link>
+      <div className={styles.paging}>
+        <Link
+          to="badgers"
+          includeCurrentData
+          className={styles.pagingButton}
+          navigationData={{ page: page - 1 }}
+        >
+          Previous page
+        </Link>
+        <Link
+          to="badgers"
+          includeCurrentData
+          className={styles.pagingButton}
+          navigationData={{ page: page + 1 }}
+        >
+          Next page
+        </Link>
       </div>
     </section>
   );
