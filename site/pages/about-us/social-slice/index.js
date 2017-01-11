@@ -129,17 +129,18 @@ class SocialSlice extends React.Component {
   render() {
     const swipePadding = this.calculateSwipePadding();
     const mobileSwipePadding = this.calculateMobileSwipePadding();
+
     return (
       <section className={styles.socialSlice}>
         <ClientOnly>
           {/** Desktop View */}
           <div className={styles.desktopView}>
-            <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} />
+            <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} currentTile={this.state.tile} />
             <SwipeableViews
               index={this.state.tile}
               onChangeIndex={this.setTile}
               style={{ paddingRight: swipePadding }}
-              slideStyle={{ width: 350, height: 550 }}
+              slideStyle={{ width: 350, height: 525 }}
             >
               {this.renderTiles()}
             </SwipeableViews>

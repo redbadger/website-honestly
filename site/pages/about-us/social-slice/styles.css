@@ -4,7 +4,7 @@
 .socialSlice {
   background-color: badgerBlack;
   composes: dividerBlackSocialSlice from "../../../css/_divider.css";
-  height: 555px;
+  height: 530px;
 }
 
 .desktopView {
@@ -17,7 +17,7 @@
 
 .card {
   white-space: normal;
-  height: 545px;
+  height: 520px;
   background: badgerWhite;
   color: badgerBlack;
   display: inline-block;

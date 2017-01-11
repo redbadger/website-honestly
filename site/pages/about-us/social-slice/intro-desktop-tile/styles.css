@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../../css/_colors.css";
+@value badgerBlack, badgerWhite, daveGreen, linesOnBlack from "../../../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen, smallScreen from "../../../../css/_sizes.css";
 
 .intro {
@@ -23,15 +23,18 @@
 .buttons{
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 .prevButton, .nextButton{
   background: transparent;
   border: none;
+  color: linesOnBlack;
 }
 
 .prevArrow svg,
 .nextArrow svg{
+  
   width: 25px;
   height: 25px
 }

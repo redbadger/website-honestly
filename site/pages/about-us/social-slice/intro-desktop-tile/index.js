@@ -11,17 +11,19 @@ type IntroProps = {
   nextCard: Function,
 }
 
-const IntroDesktopCard = ({ prevCard, nextCard }: IntroProps) => (
-  <div className={styles.intro}>
-    <div className={styles.text}>
-      From our social feed
+const IntroDesktopCard = ({ prevCard, nextCard, currentTile, totalSwipableTiles }: IntroProps) => {
+  return (
+    <div className={styles.intro}>
+      <div className={styles.text}>
+        From our social feed
       </div>
-    <div className={styles.buttons}>
-      <button onClick={prevCard} className={styles.prevButton}><InlineSVG src={previousArrowIcon} className={styles.prevArrow} /></button>
-      <button onClick={nextCard} className={styles.nextButton}><InlineSVG src={nextArrowIcon} className={styles.nextArrow} /></button>
-    </div>
+      <div className={styles.buttons}>
+        <button onClick={prevCard} className={styles.prevButton}><InlineSVG src={previousArrowIcon} className={styles.prevArrow} /></button>
+        <button onClick={nextCard} className={styles.nextButton}><InlineSVG src={nextArrowIcon} className={styles.nextArrow} /></button>
+      </div>
 
-  </div>
-);
+    </div>
+  );
+};
 
 export default IntroDesktopCard;
