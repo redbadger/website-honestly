@@ -1,9 +1,7 @@
 @value badgerWhite, badgerBlack, daveGreen from "../../../css/_colors.css";
-@value smallScreen from "../../../css/_sizes.css";
+@value smallScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .tile {
-  width: 335px;
-  height: 335px;
   text-align: left;
   position: relative;
   display: block;
@@ -24,6 +22,31 @@
 
 .badger {
   margin-bottom: 20px;
+  flex-basis: 335px;
+  max-width: 335px;
+  min-width: 240px;
+  background-color: badgerBlack;
+  margin-right: 20px;
+}
+
+@media smallScreen {
+  .badger {
+    flex-basis: 240px;
+    flex-grow: 1;
+  }
+}
+
+@media mediumScreen {
+  .badger {
+    flex-basis: 203.33px;
+    flex-grow: 1;
+  }
+}
+
+@media largeScreen {
+  .badger {
+    width: 335px;
+  }
 }
 
 .badgerProfile {
@@ -31,8 +54,7 @@
 }
 
 .badgerContainer {
-  background-color: badgerBlack;
-  margin-right: 20px;
+  height: 100%;
 }
 
 .badgerImage {
@@ -64,6 +86,7 @@
   composes: tile;
   background-color: daveGreen;
   padding: 10px 0 0 20px;
+  height: 100%;
 }
 
 .question {
