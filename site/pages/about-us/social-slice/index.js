@@ -96,7 +96,7 @@ class SocialSlice extends React.Component {
    */
   calculateSwipePadding() {
     const { viewWidth } = this.state;
-    return (viewWidth - (this.tileSize * 2)) + 60;
+    return viewWidth - (this.tileSize * 2);
   }
   /** As above but for small screen */
   calculateMobileSwipePadding() {
@@ -159,7 +159,9 @@ class SocialSlice extends React.Component {
         </ClientOnly>
         {/** No Script View */}
         <noscript>
-          {this.renderTiles()}
+          <div className={styles.noscript} >
+            {this.renderTiles()}
+          </div>
         </noscript>
       </section>
     );
