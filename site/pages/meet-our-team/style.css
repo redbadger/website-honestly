@@ -29,7 +29,7 @@
 }
 
 .categoryItem {
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 .category {
@@ -44,10 +44,6 @@
 
 .category.active {
   background-color: daveGreen;
-}
-
-.category:last-child {
-  margin-right: 0;
 }
 
 a.category, a.category:hover, a.category:visited {

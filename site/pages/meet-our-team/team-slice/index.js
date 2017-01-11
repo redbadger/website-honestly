@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from '../../../components/link';
+import styles from './style.css';
 
 const paginate = (badgers, page) => {
   const start = (page - 1) * 20;
@@ -7,11 +8,11 @@ const paginate = (badgers, page) => {
 };
 
 const BadgerProfile = ({ badger }) => (
-  <Link to='badger' navigationData={{ name: badger.slug }}>
+  <Link to='badger' navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
     <img src={badger.imageUrl} alt="team member" />
-    <div>
-      <div>{badger.name}</div>
-      <div>{badger.jobTitle}</div>
+    <div className={styles.description}>
+      <div className={styles.name}>{badger.name}</div>
+      <div className={styles.jobDescription}>{badger.jobTitle}</div>
     </div>
   </Link>
 );

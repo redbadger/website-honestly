@@ -1,0 +1,25 @@
+@value badgerWhite from "../../../css/_colors.css";
+
+.badgerProfile {
+  position: relative;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  padding: 0 0 10px 10px;
+  color: badgerWhite;
+}
+
+.name {
+  composes: fontS2 from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  padding-bottom: 5px;
+}
+
+.jobDescription {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+}
