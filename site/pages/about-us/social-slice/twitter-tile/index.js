@@ -16,7 +16,7 @@ type TweetProps = {
 }
 const colours = [styles.blue, styles.purple, styles.green];
 const Twitter = ({ tweet, index }: TweetProps) => (
-  <button className={styles.link} onClick={() => window.open(tweet.url)}>
+  <a className={styles.link} href={tweet.url} rel="noopener noreferrer" target="_blank" >
     <div className={cx(styles.twitter, colours[index % 3])}>
       <div className={styles.handle}>
         <InlineSVG src={twitterIconSVG} className={styles.twitterIcon} />
@@ -37,7 +37,7 @@ const Twitter = ({ tweet, index }: TweetProps) => (
       </div>
 
     </div>
-  </button>
+  </a>
 );
 
 export default Twitter;
