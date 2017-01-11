@@ -64,3 +64,8 @@ a.category, a.category:hover, a.category:visited {
   background: badgerBlack;
   color: badgerWhite;
 }
+
+.pagingButton:not([href]) {
+  background-color: badgerBlack;
+  opacity: 0.15;
+}

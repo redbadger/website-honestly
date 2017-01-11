@@ -49,7 +49,8 @@ const MeetOurTeam = ({ categories, category, badgers, page }) => {
           to="badgers"
           includeCurrentData
           className={styles.pagingButton}
-          navigationData={{ page: page - 1 }}
+          navigationData={{ page: Math.max(page - 1, 1) }}
+          disableActive
         >
           Previous page
         </Link>
