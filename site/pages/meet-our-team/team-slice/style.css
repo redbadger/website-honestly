@@ -3,6 +3,14 @@
 .tile {
   width: 335px;
   height: 335px;
+  text-align: left;
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .badgers {
@@ -17,14 +25,10 @@
 
 .badgerProfile {
   composes: tile;
-  position: relative;
 }
 
 .description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: left;
+  composes: info;
   padding: 0 0 10px 10px;
   color: badgerWhite;
 }
@@ -44,12 +48,22 @@
   composes: tile;
   display: block;
   background-color: daveGreen;
-  text-align: left;
+  padding: 10px 0 0 20px;
 }
 
 .question {
-  composes: fontXL from "../../../css/typography/_fonts.css";
+  composes: fontM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
-  padding: 10px 0 0 20px;
+  width: 260px;
+}
+
+.hiring {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  composes: info;
+  margin: 0 0 20px 20px;
+  padding: 10px 20px;
+  background-color: badgerBlack;
+  color: badgerWhite;
 }

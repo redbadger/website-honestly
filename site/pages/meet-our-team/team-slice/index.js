@@ -20,7 +20,7 @@ const BadgerProfile = ({ badger }) => (
 const JobAdvert = () => (
   <Link to="joinUs" className={styles.jobAdvert}>
     <div className={styles.question}>Are you a potential Badger?</div>
-    <div>We're hiring</div>
+    <div className={styles.hiring}>We're hiring</div>
   </Link>
 );
 
