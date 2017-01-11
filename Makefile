@@ -72,6 +72,9 @@ publish-service-invoke: ## Invoke the publish service
 decrypt-env:
 	source bin/decrypt-dev-env.sh
 
+get-secrets:
+	git submodules update --init --remote
+
 update-secrets:
 	git submodules update --remote
 

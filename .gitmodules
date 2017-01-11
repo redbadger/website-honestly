@@ -1,4 +1,4 @@
 [submodule "keyrings"]
 	path = keyrings
-	url = git@github.com:redbadger/blackbox-secrets.git
+	url = https://github.com/redbadger/blackbox-secrets
 	branch = website-honestly
