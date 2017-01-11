@@ -71,8 +71,8 @@ export const isValidPost = (post: InstagramResponsePost) => {
 export const normalisePost = (post: InstagramResponsePost) => {
   return {
     text: post.caption.text,
+    url: post.images.standard_resolution.url,
     image: {
-      url: post.images.standard_resolution.url,
       width: post.images.standard_resolution.width,
       height: post.images.standard_resolution.height,
     },
