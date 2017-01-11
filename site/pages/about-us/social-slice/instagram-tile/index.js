@@ -17,32 +17,38 @@ type InstagramProps = {
 const colours = [styles.blue, styles.purple, styles.green];
 
 /** Renders the instagram tile on the social slice */
-const Instagram = ({ post, index }: InstagramProps) => (
-  <a className={styles.link} href={post.link} rel="noopener noreferrer" target="_blank" >
-    <div className={cx(styles.instagram, colours[index % 3])}>
+const Instagram = ({ post, index }: InstagramProps) => {
+  const text = post.text.length > 70 ? post.text.substr(0, 70) + '...' : post.text;
 
-      <div className={styles.handle}>
-        <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
-        @redbadgerteam
-      </div>
-      <img
-        className={styles.image}
-        alt={post.text}
-        src={post.image.url}
-      />
-      <div className={styles.meta}>
-        <span className={styles.likes}>
-          <InlineSVG src={likeIconSVG} className={styles.icon} />
-          {post.likes}
-        </span>
-        <span className={styles.comments}>
-          <InlineSVG src={commentIconSVG} className={styles.icon} />
-          {post.comments}
-        </span>
+  return (
+    <a className={styles.link} href={post.link} rel="noopener noreferrer" target="_blank" tabIndex={0}>
+      <div className={cx(styles.instagram, colours[index % 3])}>
 
+        <div className={styles.handle}>
+          <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
+          @redbadgerteam
       </div>
-    </div>
-  </a>
-);
+        <img
+          className={styles.image}
+          alt={post.text}
+          src={post.image.url}
+        />
+        <div className={styles.meta}>
+          <div className={styles.text}>{text}</div>
+          <div>
+            <span className={styles.likes}>
+              <InlineSVG src={likeIconSVG} className={styles.icon} />
+              {post.likes}
+            </span>
+            <span className={styles.comments}>
+              <InlineSVG src={commentIconSVG} className={styles.icon} />
+              {post.comments}
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
+  );
+};
 
 export default Instagram;

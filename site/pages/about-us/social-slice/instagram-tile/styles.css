@@ -67,3 +67,9 @@
 .likes{
   margin-right: 20px;
 }
+
+.text{
+  margin-bottom: 20px; 
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css"; 
+}
