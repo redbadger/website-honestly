@@ -6,7 +6,9 @@ const AssetsPlugin = require('assets-webpack-plugin');
 process.env.BABEL_ENV = 'typecheck';
 
 const devStaticConfig = webpackMerge(baseConfig, {
-  entry: ['babel-polyfill', './dev/static/index.js'],
+  entry: {
+    'dev-static': ['babel-polyfill', './dev/static/index.js'],
+  },
   output: {
     libraryTarget: 'commonjs',
   },
