@@ -1,6 +1,22 @@
-@value badgerWhite from "../../../css/_colors.css";
+@value badgerWhite, badgerBlack, daveGreen from "../../../css/_colors.css";
+
+.tile {
+  width: 335px;
+  height: 335px;
+}
+
+.badgers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badger {
+  margin-bottom: 20px;
+}
 
 .badgerProfile {
+  composes: tile;
   position: relative;
 }
 
@@ -22,4 +38,18 @@
 .jobDescription {
   composes: fontXS from "../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
+}
+
+.jobAdvert {
+  composes: tile;
+  display: block;
+  background-color: daveGreen;
+  text-align: left;
+}
+
+.question {
+  composes: fontXL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  padding: 10px 0 0 20px;
 }

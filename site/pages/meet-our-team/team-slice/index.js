@@ -18,16 +18,16 @@ const BadgerProfile = ({ badger }) => (
 );
 
 const JobAdvert = () => (
-  <Link to="joinUs">
-    <div>Are you a potential Badger?</div>
+  <Link to="joinUs" className={styles.jobAdvert}>
+    <div className={styles.question}>Are you a potential Badger?</div>
     <div>We're hiring</div>
   </Link>
 );
 
 const TeamSlice = ({ badgers, page }) => (
-  <ul>
+  <ul className={styles.badgers}>
     {paginate(badgers, page).map((badger, i) =>
-      <li key={i}>
+      <li key={i} className={styles.badger}>
         {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
       </li>
     )}
