@@ -12,8 +12,8 @@
 
 .meta {
   composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontS from "../../../../css/typography/_fonts.css";
-  margin: 15px 20px;
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  padding: 20px;
 }
 
 .meta span {
@@ -38,29 +38,27 @@
 }
 
 .handle {
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontS from "../../../../css/typography/_fonts.css";
-  margin: 10px 20px;
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  padding: 10px 20px;
 }
 
 .icon {
-  vertical-align: middle;
+  vertical-align: text-top;
 }
 
 .icon svg {
-  width: 17px;
-  height: 16px;
+  width: 20px;
   margin-right: 5px;
 }
 
 .instagramIcon svg {
   width: 20px;
-  height: 20px;
-  vertical-align: text-top;
 }
 
 .instagramIcon{
   margin-right: 10px;
+  vertical-align: text-top;
 }
 
 .likes{

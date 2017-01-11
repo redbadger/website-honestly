@@ -26,11 +26,11 @@ const Twitter = ({ tweet, index }: TweetProps) => (
         {tweet.text}
       </div>
       <div className={styles.meta}>
-        <span className={styles.retweets}>
-          <InlineSVG src={retweetIconSVG} className={styles.icon} />
+        <span>
+          <InlineSVG src={retweetIconSVG} className={cx(styles.icon, styles.retweets)} />
           {tweet.retweetCount}
         </span>
-        <span className={styles.likes}>
+        <span>
           <InlineSVG src={likeIconSVG} className={styles.icon} />
           {tweet.favouriteCount}
         </span>
