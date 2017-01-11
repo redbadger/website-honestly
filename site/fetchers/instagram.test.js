@@ -4,6 +4,7 @@ import { isValidPost } from './instagram';
 const generatePost = () => {
   return {
     created_time: '2017-01-01',
+    link: 'asd',
     comments: {
       count: 0,
     },
@@ -44,6 +45,13 @@ describe('instagram fetcher post validation', () => {
   it('rfails with no text', () => {
     const post = generatePost();
     post.caption.text = '';
+    const result = isValidPost(post);
+    expect(result).to.equal(false);
+  });
+
+  it('fails with no link', () => {
+    const post = generatePost();
+    post.link = null;
     const result = isValidPost(post);
     expect(result).to.equal(false);
   });

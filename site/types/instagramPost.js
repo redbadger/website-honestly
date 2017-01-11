@@ -4,8 +4,9 @@
 /** Shape of returned data from the Instagram API */
 declare type InstagramPost = {
   text: string,
-  url: string;
+  link: string;
   image: {
+    url: string;
     width: string;
     height: string;
   },

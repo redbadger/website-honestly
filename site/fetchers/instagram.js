@@ -4,6 +4,7 @@ import type { InstagramPost } from '../types/';
 
 type InstagramResponsePost = {
   created_time: string,
+  link: string,
   comments: {
     count: number;
   },
@@ -35,6 +36,10 @@ export const isValidPost = (post: InstagramResponsePost) => {
 
     if (!post.caption) {
       throw new Error('Missing caption');
+    }
+
+    if (!post.link) {
+      throw new Error('Missing link');
     }
 
     if (!post.caption.text) {
@@ -71,8 +76,9 @@ export const isValidPost = (post: InstagramResponsePost) => {
 export const normalisePost = (post: InstagramResponsePost) => {
   return {
     text: post.caption.text,
-    url: post.images.standard_resolution.url,
+    link: post.link,
     image: {
+      url: post.images.standard_resolution.url,
       width: post.images.standard_resolution.width,
       height: post.images.standard_resolution.height,
     },
