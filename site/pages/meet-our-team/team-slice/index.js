@@ -11,16 +11,18 @@ const paginate = (badgers, page) => {
 };
 
 const BadgerProfile = ({ badger }) => (
-  <Link to='badger' navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
-    <img src={badger.imageUrl} alt={badger.name} className={styles.badgerImage} />
-    <div className={styles.description}>
-      <div className={styles.name}>
-        {badger.name}
-        <InlineSVG src={arrowSVG} className={styles.arrow} />
+  <div className={styles.badgerContainer} >
+    <Link to='badger' navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
+      <img src={badger.imageUrl} alt={badger.name} className={styles.badgerImage} />
+      <div className={styles.description}>
+        <div className={styles.name}>
+          {badger.name}
+          <InlineSVG src={arrowSVG} className={styles.arrow} />
+        </div>
+        <div className={styles.jobDescription}>{badger.jobTitle}</div>
       </div>
-      <div className={styles.jobDescription}>{badger.jobTitle}</div>
-    </div>
-  </Link>
+    </Link>
+  </div>
 );
 
 const JobAdvert = () => (

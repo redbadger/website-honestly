@@ -1,4 +1,5 @@
 @value badgerWhite, badgerBlack, daveGreen from "../../../css/_colors.css";
+@value smallScreen from "../../../css/_sizes.css";
 
 .tile {
   width: 335px;
@@ -18,20 +19,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: -20px;
 }
 
 .badger {
   margin-bottom: 20px;
-  background-color: badgerBlack;
 }
 
 .badgerProfile {
   composes: tile;
 }
 
+.badgerContainer {
+  background-color: badgerBlack;
+  margin-right: 20px;
+}
+
 .badgerImage {
-  width: 335px;
-  height: 335px;
+  width: 100%;
 }
 
 .badgerProfile:hover .badgerImage {
