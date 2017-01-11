@@ -47,24 +47,25 @@
 }
 
 .icon {
-  vertical-align: text-top;
+  
 }
 
 .icon svg {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+  vertical-align: middle;
 }
-
+.twitterIcon{
+  
+}
 .twitterIcon svg {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-}
-
-.retweets{
   vertical-align: middle;
 }
+
 .retweets svg{
   width: 25px;
 }
