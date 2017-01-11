@@ -8,6 +8,7 @@ import IntroDesktopTile from './intro-desktop-tile';
 import InstagramTile from './instagram-tile';
 import TwitterTile from './twitter-tile';
 import type { Tweet, InstagramPost } from '../../../types/';
+import ClientOnly from '../../../components/clientOnly';
 
 type SocialSliceProps = {
   tweets: Array<Tweet>,
@@ -33,9 +34,7 @@ class SocialSlice extends React.Component {
 
   componentDidMount() {
     this.setState({ viewWidth: window.innerWidth });
-    if (window) {
-      window.addEventListener('resize', this.updateViewWidth);
-    }
+    window.addEventListener('resize', this.updateViewWidth);
   }
 
   componentWillUnmount() {
@@ -132,28 +131,36 @@ class SocialSlice extends React.Component {
     const mobileSwipePadding = this.calculateMobileSwipePadding();
     return (
       <section className={styles.socialSlice}>
-        <div className={styles.desktopView}>
-          <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} />
-          <SwipeableViews
-            index={this.state.tile}
-            onChangeIndex={this.setTile}
-            style={{ paddingRight: swipePadding }}
-            slideStyle={{ width: 350 }}
-          >
-            {this.renderTiles()}
-          </SwipeableViews>
-        </div>
-        <div className={styles.mobileView}>
-          <SwipeableViews
-            index={this.state.tile}
-            onChangeIndex={this.setTile}
-            style={{ paddingRight: mobileSwipePadding }}
-            slideStyle={{ maxWidth: 415 }}
-          >
-            <IntroMobileTile />
-            {this.renderTiles()}
-          </SwipeableViews>
-        </div>
+        <ClientOnly>
+          {/** Desktop View */}
+          <div className={styles.desktopView}>
+            <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} />
+            <SwipeableViews
+              index={this.state.tile}
+              onChangeIndex={this.setTile}
+              style={{ paddingRight: swipePadding }}
+              slideStyle={{ width: 350 }}
+              >
+              {this.renderTiles()}
+            </SwipeableViews>
+          </div>
+          {/** Mobile View */}
+          <div className={styles.mobileView}>
+            <SwipeableViews
+              index={this.state.tile}
+              onChangeIndex={this.setTile}
+              style={{ paddingRight: mobileSwipePadding }}
+              slideStyle={{ maxWidth: 415 }}
+              >
+              <IntroMobileTile />
+              {this.renderTiles()}
+            </SwipeableViews>
+          </div>
+        </ClientOnly>
+        {/** No Script View */}
+        <noscript>
+          {this.renderTiles()}
+        </noscript>
       </section>
     );
   }
