@@ -29,16 +29,16 @@ const MeetOurTeam = ({ categories, category, badgers, page }) => {
             Everyone
           </Link>
         </li>
-        {categories.map(b =>
-          <li className={styles.categoryItem}>
+        {categories.map(c =>
+          <li key={c.slug} className={styles.categoryItem}>
             <Link
-              key={b.slug}
+              key={c.slug}
               to="badgers"
-              navigationData={{ category: b.slug }}
+              navigationData={{ category: c.slug }}
               activeCssClass={styles.active}
               className={styles.category}
             >
-              {b.name}
+              {c.name}
             </Link>
           </li>
         )}

@@ -5,6 +5,7 @@
   height: 335px;
   text-align: left;
   position: relative;
+  display: block;
 }
 
 .info {
@@ -21,10 +22,20 @@
 
 .badger {
   margin-bottom: 20px;
+  background-color: badgerBlack;
 }
 
 .badgerProfile {
   composes: tile;
+}
+
+.badgerImage {
+  width: 335px;
+  height: 335px;
+}
+
+.badgerProfile:hover .badgerImage {
+  opacity: 0.5;
 }
 
 .description {
@@ -46,7 +57,6 @@
 
 .jobAdvert {
   composes: tile;
-  display: block;
   background-color: daveGreen;
   padding: 10px 0 0 20px;
 }
