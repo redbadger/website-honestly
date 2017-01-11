@@ -32,9 +32,14 @@
   color: linesOnBlack;
 }
 
+.prevButton:disabled,
+.nextButton:disabled{ 
+  opacity: 0.5;
+}
+
 .prevArrow svg,
-.nextArrow svg{
-  
+.nextArrow svg{ 
   width: 25px;
   height: 25px
 }
+

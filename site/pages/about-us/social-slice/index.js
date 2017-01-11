@@ -135,13 +135,13 @@ class SocialSlice extends React.Component {
         <ClientOnly>
           {/** Desktop View */}
           <div className={styles.desktopView}>
-            <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} currentTile={this.state.tile} />
+            <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} currentTile={this.state.tile} totalSwipableTiles={this.calculateSwipableTotal()} />
             <SwipeableViews
               index={this.state.tile}
               onChangeIndex={this.setTile}
               style={{ paddingRight: swipePadding }}
               slideStyle={{ width: 350, height: 525 }}
-            >
+              >
               {this.renderTiles()}
             </SwipeableViews>
           </div>
@@ -152,7 +152,7 @@ class SocialSlice extends React.Component {
               onChangeIndex={this.setTile}
               style={{ paddingRight: mobileSwipePadding }}
               slideStyle={{ maxWidth: 415 }}
-            >
+              >
               <IntroMobileTile />
               {this.renderTiles()}
             </SwipeableViews>
