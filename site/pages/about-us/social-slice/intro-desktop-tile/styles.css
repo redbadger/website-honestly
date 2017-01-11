@@ -23,6 +23,7 @@
 .buttons{
   display: flex;
   justify-content: flex-end;
+  margin-right: 10px;
 }
 .prevButton, .nextButton{
   background: transparent;
