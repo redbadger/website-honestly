@@ -58,6 +58,9 @@
   .badger {
     width: calc(25% - 20px);
   }
+  .question {
+    width: 260px;
+  }
 }
 
 .badgerProfile {
@@ -104,7 +107,7 @@
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
-  width: 260px;
+  width: 240px;
 }
 
 .hiring {
