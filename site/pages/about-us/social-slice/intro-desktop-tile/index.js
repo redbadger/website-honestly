@@ -25,8 +25,8 @@ const IntroDesktopCard = ({ prevCard, nextCard, currentTile, totalSwipableTiles 
       </div>
       <ClientOnly>
         <div className={styles.buttons}>
-          <button disabled={preButtonEnabled} onClick={prevCard} className={styles.prevButton}><InlineSVG src={previousArrowIcon} className={styles.prevArrow} /></button>
-          <button disabled={nextButtonEnabled} onClick={nextCard} className={styles.nextButton}><InlineSVG src={nextArrowIcon} className={styles.nextArrow} /></button>
+          <button title="Previous" disabled={preButtonEnabled} onClick={prevCard} className={styles.prevButton}><InlineSVG src={previousArrowIcon} className={styles.prevArrow} /></button>
+          <button title="Next" disabled={nextButtonEnabled} onClick={nextCard} className={styles.nextButton}><InlineSVG src={nextArrowIcon} className={styles.nextArrow} /></button>
         </div>
       </ClientOnly>
     </div>
