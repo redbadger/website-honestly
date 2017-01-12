@@ -13,6 +13,7 @@
   .teamContainer {
     max-width: 1400px;
     margin: 0 auto;
+    padding-bottom: 30px;
   }
 }
 
@@ -56,23 +57,4 @@
 
 a.category, a.category:hover, a.category:visited {
   color: badgerBlack;
-}
-
-.paging {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-}
-
-.pagingButton {
-  composes: fontXS from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  padding: 10px 20px;
-  background: badgerBlack;
-  color: badgerWhite;
-}
-
-.pagingButton:not([href]) {
-  background-color: badgerBlack;
-  opacity: 0.15;
 }

@@ -155,3 +155,21 @@
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerWhite;
 }
+
+.paging {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagingButton {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  padding: 10px 20px;
+  background: badgerBlack;
+  color: badgerWhite;
+}
+
+.pagingButton:not([href]) {
+  background-color: badgerBlack;
+  opacity: 0.15;
+}

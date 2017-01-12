@@ -46,26 +46,6 @@ const MeetOurTeam = ({ categories, category, badgers, page }) => {
           )}
         </ul>
         <TeamSlice badgers={getTeam(badgers, category)} page={page} />
-        <div className={styles.paging}>
-          <Link
-            to="badgers"
-            includeCurrentData
-            className={styles.pagingButton}
-            navigationData={{ page: Math.max(page - 1, 1) }}
-            disableActive
-          >
-            Previous page
-          </Link>
-          <Link
-            to="badgers"
-            includeCurrentData
-            className={styles.pagingButton}
-            navigationData={{ page: Math.min(Math.ceil(badgers.length / 20), page + 1) }}
-            disableActive
-          >
-            Next page
-          </Link>
-        </div>
       </div>
     </div>
   );

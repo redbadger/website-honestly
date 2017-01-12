@@ -40,6 +40,29 @@ const JobAdvert = () => (
   </Link>
 );
 
+const Paging = ({ page, badgers }) => (
+  <div className={styles.paging}>
+    <Link
+      to="badgers"
+      includeCurrentData
+      className={styles.pagingButton}
+      navigationData={{ page: Math.max(page - 1, 1) }}
+      disableActive
+    >
+      Previous page
+    </Link>
+    <Link
+      to="badgers"
+      includeCurrentData
+      className={styles.pagingButton}
+      navigationData={{ page: Math.min(Math.ceil(badgers.length / 20), page + 1) }}
+      disableActive
+    >
+      Next page
+    </Link>
+  </div>
+);
+
 class TeamSlice extends React.Component {
   constructor(props) {
     super(props);
@@ -54,15 +77,18 @@ class TeamSlice extends React.Component {
     const { badgers, page } = this.props;
     const { loadAll } = this.state;
     return (
-      <ul className={styles.badgers}>
-        {paginate(badgers, page, loadAll).map((badger, i) =>
-          <li key={i} className={styles.badger}>
-            <div className={styles.badgerWrapper} >
-              {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
-            </div>
-          </li>
-        )}
-      </ul>
+      <div>
+        <ul className={styles.badgers}>
+          {paginate(badgers, page, loadAll).map((badger, i) =>
+            <li key={i} className={styles.badger}>
+              <div className={styles.badgerWrapper} >
+                {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
+              </div>
+            </li>
+          )}
+        </ul>
+        {!loadAll && <Paging page={page} badgers={badgers} />}
+      </div>
     );
   }
 }
