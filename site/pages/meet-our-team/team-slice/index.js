@@ -9,12 +9,16 @@ const paginate = (badgers, page, loadAll) => {
   const pageSize = loadAll ? badgers.length : 20;
   const start = (page - 1) * pageSize;
 
-  return badgers.slice(start, start + pageSize).map(b => ({ ...b, loaded: true }));
+  return badgers.slice(start, start + pageSize).map((b, i) => ({ ...b, loaded: i < 20 }));
 };
 
 const BadgerProfile = ({ badger }) => (
   <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
-    <img src={badger.imageUrl} alt={badger.name} className={styles.badgerImage} />
+    <img
+      src={ badger.loaded ? badger.imageUrl : 'https://placekitten.com/335/335' }
+      alt={badger.name}
+      className={styles.badgerImage}
+    />
     <div className={styles.skillsWrapper}>
       <h3 className={styles.skillsHeading}>
         Signature skills
