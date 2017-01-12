@@ -56,6 +56,11 @@
 @media largeScreen {
   .badger {
     width: calc(25% - 20px);
+    max-width: 335px;
+  }
+  .team {
+    max-width: 1400px;
+    margin: 0 auto;
   }
   .question {
     width: 260px;
