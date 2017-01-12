@@ -2,31 +2,35 @@
 @value maxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .socialSlice {
-  background-color: badgerBlack;
+  background: badgerBlack;
   composes: dividerBlackSocialSlice from "../../../css/_divider.css";
   height: 530px;
 }
 
 .desktopView {
   display: none;
+  background: url(./SocialBackground.png) no-repeat right;
 }
 
 .mobileView {
   display: block;
+  background: url(./SocialBackground.png) no-repeat right;
+}
+
+.noscript{
+  display: flex;
+  overflow-x: scroll;
+  background: url(./SocialBackground.png) no-repeat right;
 }
 
 .card {
   white-space: normal;
   height: 520px;
-  background: badgerWhite;
+  background: transparent;
   color: badgerBlack;
   display: inline-block;
   vertical-align: top;
   width: 350px;
-}
-.noscript{
-  display: flex;
-  overflow-x: scroll
 }
 
 @media mediumScreen{
