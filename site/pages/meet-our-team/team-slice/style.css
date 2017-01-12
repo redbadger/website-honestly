@@ -123,5 +123,6 @@
 .arrow svg {
   position: relative;
   top: 5px;
+  left: 10px;
   height: 20px;
 }
