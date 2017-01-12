@@ -79,6 +79,10 @@
   opacity: 0.5;
 }
 
+.badgerProfile:hover .skillsWrapper {
+  display: block;
+}
+
 .description {
   composes: info;
   padding: 0 0 10px 10px;
@@ -125,4 +129,24 @@
   top: 5px;
   left: 10px;
   height: 20px;
+}
+
+.skillsWrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.skillsHeading {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  color: daveGreen;
+}
+
+.skills {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  color: badgerWhite;
 }

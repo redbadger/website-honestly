@@ -13,6 +13,16 @@ const paginate = (badgers, page) => {
 const BadgerProfile = ({ badger }) => (
   <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
     <img src={badger.imageUrl} alt={badger.name} className={styles.badgerImage} />
+    <div className={styles.skillsWrapper}>
+      <h3 className={styles.skillsHeading}>
+        Signature skills
+      </h3>
+      <ul className={styles.skills}>
+        <li>Marketing</li>
+        <li>eCommerce</li>
+        <li>Strategy</li>
+      </ul>
+    </div>
     <div className={styles.description}>
       <div className={styles.name}>
         {badger.name}
