@@ -28,13 +28,11 @@
 
 .badger {
   margin-bottom: 20px;
-  max-width: 335px;
-  min-width: 203.3333px;
   background-color: badgerBlack;
   margin-right: 20px;
   position: relative;
   display: inline-block;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
 }
 
 .badger:before {
