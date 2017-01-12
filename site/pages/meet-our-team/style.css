@@ -1,5 +1,5 @@
 @value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../css/_sizes.css";
+@value largeScreen from "../../css/_sizes.css";
 
 .meetOurTeam {
   padding-top: 25px;
@@ -7,6 +7,13 @@
   background-color: badgerWhite;
   color: badgerBlack;
   padding: 0 20px;
+}
+
+@media largeScreen {
+  .teamContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 .title {
@@ -54,7 +61,7 @@ a.category, a.category:hover, a.category:visited {
 .paging {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .pagingButton {
