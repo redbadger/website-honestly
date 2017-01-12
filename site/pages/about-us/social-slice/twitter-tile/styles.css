@@ -5,7 +5,6 @@
   composes: card from "../styles.css";
   color: badgerBlack;
   padding-left: 0px;
-  width: 100%;
   overflow: hidden;
 }
 .link{

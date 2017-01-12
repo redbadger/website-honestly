@@ -22,10 +22,11 @@
   color: badgerBlack;
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  width: 350px;
 }
 .noscript{
   display: flex;
+  overflow-x: scroll
 }
 
 @media mediumScreen{
