@@ -14,7 +14,7 @@ type InstagramProps = {
   post: InstagramPost;
   index: number;
 }
-const colours = [styles.blue, styles.purple, styles.green];
+const colours = [styles.blue, styles.mauve, styles.green];
 
 /** Renders the instagram tile on the social slice */
 const Instagram = ({ post, index }: InstagramProps) => {

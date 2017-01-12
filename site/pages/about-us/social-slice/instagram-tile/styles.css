@@ -1,10 +1,10 @@
-@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../../css/_colors.css";
+@value badgerBlack, badgerWhite, daveGreen, stuBlue, mauve from "../../../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
 
 
 .green { background: daveGreen; }
 .blue { background: stuBlue; }
-.purple { background: yoloPurple; }
+.mauve { background: mauve; }
 
 .instagram {
   composes: card from "../styles.css";

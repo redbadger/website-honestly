@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../../css/_colors.css";
+@value badgerBlack, badgerWhite, daveGreen, stuBlue, mauve from "../../../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
 
 .twitter {
@@ -22,7 +22,7 @@
 
 .green { background: daveGreen; }
 .blue { background: stuBlue; }
-.purple { background: yoloPurple; }
+.mauve { background: mauve; }
 .handle {
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";

@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../../css/_colors.css";
+@value badgerBlack, badgerWhite from "../../../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen, smallScreen from "../../../../css/_sizes.css";
 
 .intro {

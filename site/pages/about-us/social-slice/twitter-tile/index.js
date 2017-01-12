@@ -14,7 +14,7 @@ type TweetProps = {
   tweet: Tweet;
   index: number;
 }
-const colours = [styles.blue, styles.purple, styles.green];
+const colours = [styles.blue, styles.mauve, styles.green];
 const Twitter = ({ tweet, index }: TweetProps) => (
   <a className={styles.link} href={tweet.url} rel="noopener noreferrer" target="_blank" tabIndex={0} >
     <div className={cx(styles.twitter, colours[index % 3])}>

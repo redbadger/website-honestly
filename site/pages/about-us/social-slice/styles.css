@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite, daveGreen, stuBlue, yoloPurple from "../../../css/_colors.css";
+@value badgerBlack from "../../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .socialSlice {
