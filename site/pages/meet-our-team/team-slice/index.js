@@ -5,9 +5,11 @@ import styles from './style.css';
 
 import arrowSVG from './arrow.svg';
 
-const paginate = (badgers, page) => {
-  const start = (page - 1) * 20;
-  return badgers.slice(start, start + 20);
+const paginate = (badgers, page, loadAll) => {
+  const pageSize = loadAll ? badgers.length : 20;
+  const start = (page - 1) * pageSize;
+
+  return badgers.slice(start, start + pageSize).map(b => ({ ...b, loaded: true }));
 };
 
 const BadgerProfile = ({ badger }) => (
@@ -38,16 +40,31 @@ const JobAdvert = () => (
   </Link>
 );
 
-const TeamSlice = ({ badgers, page }) => (
-  <ul className={styles.badgers}>
-    {paginate(badgers, page).map((badger, i) =>
-      <li key={i} className={styles.badger}>
-        <div className={styles.badgerWrapper} >
-          {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
-        </div>
-      </li>
-    )}
-  </ul>
-);
+class TeamSlice extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { loadAll: false };
+  }
+
+  componentDidMount() {
+    this.setState({ loadAll: true });
+  }
+
+  render() {
+    const { badgers, page } = this.props;
+    const { loadAll } = this.state;
+    return (
+      <ul className={styles.badgers}>
+        {paginate(badgers, page, loadAll).map((badger, i) =>
+          <li key={i} className={styles.badger}>
+            <div className={styles.badgerWrapper} >
+              {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
+            </div>
+          </li>
+        )}
+      </ul>
+    )
+  }
+}
 
 export default TeamSlice;
