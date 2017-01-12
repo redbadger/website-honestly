@@ -22,20 +22,18 @@
 }
 
 .badgers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-right: -20px;
 }
 
 .badger {
   margin-bottom: 20px;
-  flex-basis: 335px;
   max-width: 335px;
-  min-width: 240px;
+  min-width: 203.3333px;
   background-color: badgerBlack;
   margin-right: 20px;
   position: relative;
+  display: inline-block;
+  width: calc(100% - 40px);
 }
 
 .badger:before {
@@ -46,21 +44,19 @@
 
 @media smallScreen {
   .badger {
-    flex-basis: 240px;
-    flex-grow: 1;
+    width: calc(50% - 20px);
   }
 }
 
 @media mediumScreen {
   .badger {
-    flex-basis: 203.33px;
-    flex-grow: 1;
+    width: calc(33.333% - 20px);
   }
 }
 
 @media largeScreen {
   .badger {
-    width: 335px;
+    width: calc(25% - 20px);
   }
 }
 
