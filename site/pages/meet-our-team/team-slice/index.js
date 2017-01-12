@@ -4,6 +4,8 @@ import Link from '../../../components/link';
 import styles from './style.css';
 
 import arrowSVG from './arrow.svg';
+import placeholderBlack from './placeholder-black.jpg';
+import placeholderWhite from './placeholder-white.jpg';
 
 const paginate = (badgers, page, loadAll) => {
   const pageSize = loadAll ? badgers.length : 20;
@@ -12,10 +14,12 @@ const paginate = (badgers, page, loadAll) => {
   return badgers.slice(start, start + pageSize).map((b, i) => ({ ...b, loaded: i < 20 }));
 };
 
+const getPlaceholderImage = () => (Math.random() >= 0.5 ? placeholderBlack : placeholderWhite);
+
 const BadgerProfile = ({ badger }) => (
   <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
     <img
-      src={ badger.loaded ? badger.imageUrl : 'https://placekitten.com/335/335' }
+      src={ badger.loaded ? badger.imageUrl : getPlaceholderImage() }
       alt={badger.name}
       className={styles.badgerImage}
     />
