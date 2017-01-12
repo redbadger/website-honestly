@@ -21,10 +21,10 @@ const Instagram = ({ post, index }: InstagramProps) => {
   const text = post.text.length > 70 ? post.text.substr(0, 70) + '...' : post.text;
 
   return (
-    <a className={styles.link} href={post.link} rel="noopener noreferrer" target="_blank" tabIndex={0}>
+    <a className={styles.link} href={post.link} rel="noopener noreferrer" target="_blank">
       <div className={cx(styles.instagram, colours[index % 3])}>
 
-        <div className={styles.handle}>
+        <div className={styles.handle} tabIndex={0}>
           <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
           <span className={styles.handleText}>@redbadgerteam</span>
         </div>
@@ -32,15 +32,15 @@ const Instagram = ({ post, index }: InstagramProps) => {
           className={styles.image}
           alt={post.text}
           src={post.image.url}
-        />
+          />
         <div className={styles.meta}>
-          <div className={styles.text}>{text}</div>
+          <div className={styles.text} tabIndex={0}>{text}</div>
           <div>
-            <span className={styles.likes}>
+            <span className={styles.likes} tabIndex={0}>
               <InlineSVG src={likeIconSVG} className={styles.icon} />
               {post.likes}
             </span>
-            <span className={styles.comments}>
+            <span className={styles.comments} tabIndex={0}>
               <InlineSVG src={commentIconSVG} className={styles.icon} />
               {post.comments}
             </span>

@@ -16,8 +16,8 @@ type TweetProps = {
 }
 const colours = [styles.blue, styles.mauve, styles.green];
 const Twitter = ({ tweet, index }: TweetProps) => (
-  <a className={styles.link} href={tweet.url} rel="noopener noreferrer" target="_blank" tabIndex={0} >
-    <div className={cx(styles.twitter, colours[index % 3])}>
+  <a className={styles.link} href={tweet.url} rel="noopener noreferrer" target="_blank" tabIndex={-1} >
+    <div className={cx(styles.twitter, colours[index % 3])} tabIndex={0} >
       <div className={styles.handle}>
         <InlineSVG src={twitterIconSVG} className={styles.twitterIcon} />
         <span className={styles.handleText}>@RedBadger</span>
