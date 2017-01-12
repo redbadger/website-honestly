@@ -65,6 +65,7 @@
 
 .badgerProfile {
   composes: tile;
+  height: 100%;
 }
 
 .badgerContainer {
@@ -75,9 +76,12 @@
   width: 100%;
 }
 
+.badgerProfile:hover {
+  box-shadow: 7px 7px daveGreen;
+}
+
 .badgerProfile:hover .badgerImage {
   opacity: 0.5;
-  box-shadow: 7px 7px daveGreen;
 }
 
 .badgerProfile:hover .skillsWrapper {
