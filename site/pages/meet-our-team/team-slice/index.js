@@ -18,9 +18,7 @@ const BadgerProfile = ({ badger }) => (
         Signature skills
       </h3>
       <ul className={styles.skills}>
-        <li>Marketing</li>
-        <li>eCommerce</li>
-        <li>Strategy</li>
+        {(badger.skills || []).map(skill => <li>{skill}</li>)}
       </ul>
     </div>
     <div className={styles.description}>
