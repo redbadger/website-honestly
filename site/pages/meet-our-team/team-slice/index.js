@@ -63,7 +63,7 @@ class TeamSlice extends React.Component {
           </li>
         )}
       </ul>
-    )
+    );
   }
 }
 
