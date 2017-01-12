@@ -28,6 +28,11 @@
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
   margin: 10px 20px 10px 20px;
+  display: flex;
+}
+
+.handleText{
+  margin-top: 1px;
 }
 
 .tweet {

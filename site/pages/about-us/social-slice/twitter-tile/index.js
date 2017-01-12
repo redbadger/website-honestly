@@ -20,8 +20,8 @@ const Twitter = ({ tweet, index }: TweetProps) => (
     <div className={cx(styles.twitter, colours[index % 3])}>
       <div className={styles.handle}>
         <InlineSVG src={twitterIconSVG} className={styles.twitterIcon} />
-        @RedBadger
-    </div>
+        <span className={styles.handleText}>@RedBadger</span>
+      </div>
       <div className={styles.tweet}>
         {tweet.text}
       </div>
