@@ -81,6 +81,7 @@ const getBearerToken = (fetch, key, secret) =>
 /**
  * The URL of the Tweet is usually the property tweet.entities.url[0].url
  * However if it's a re-tweet then the entities.url is an empty array and the URL is contained in
+ * the retweeted_status property
  */
 const getTweetUrl = (tweet: TwitterResponse) => {
   if (tweet.entities.urls && tweet.entities.urls.length > 0) {
