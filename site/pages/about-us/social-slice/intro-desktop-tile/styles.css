@@ -32,6 +32,10 @@
   color: linesOnBlack;
 }
 
+.prevButton:hover, .nextButton:hover{
+ cursor: pointer;
+}
+
 .prevButton:disabled,
 .nextButton:disabled{ 
   opacity: 0.5;
