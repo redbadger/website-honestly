@@ -7,6 +7,14 @@
   display: block;
 }
 
+.badgerWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .info {
   position: absolute;
   bottom: 0;
@@ -27,6 +35,13 @@
   min-width: 240px;
   background-color: badgerBlack;
   margin-right: 20px;
+  position: relative;
+}
+
+.badger:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
 @media smallScreen {

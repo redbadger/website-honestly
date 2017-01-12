@@ -34,7 +34,9 @@ const TeamSlice = ({ badgers, page }) => (
   <ul className={styles.badgers}>
     {paginate(badgers, page).map((badger, i) =>
       <li key={i} className={styles.badger}>
-        {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
+        <div className={styles.badgerWrapper} >
+          {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
+        </div>
       </li>
     )}
   </ul>
