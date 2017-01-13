@@ -79,25 +79,11 @@ const getBearerToken = (fetch, key, secret) =>
     .then(response => response.json())
     .then(response => response.access_token);
 
-/**
- * The URL of the Tweet is usually the property tweet.entities.url[0].url
- * However if it does not exist (such as in a re-tweet) build the URL up from
- * the ID of the re-tweet using a hard coded URL.
- */
-const getTweetUrl = (tweet: TwitterResponse) => {
-  if (tweet.entities.urls && tweet.entities.urls.length > 0) {
-    return tweet.entities.urls[0].url;
-  }
-
-  // This is subject to change by twitter and only used as a last resort
-  return `https://twitter.com/i/web/status/${tweet.id_str}`;
-};
-
 /** Flattern the response */
 const normaliseTweet = (tweet: TwitterResponse) => {
   return {
     text: tweet.text,
-    url: getTweetUrl(tweet),
+    url: `https://twitter.com/i/web/status/${tweet.id_str}`,
     created: tweet.created_at,
     retweetCount: tweet.retweet_count,
     favouriteCount: tweet.favorite_count,
