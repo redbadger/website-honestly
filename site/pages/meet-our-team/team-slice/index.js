@@ -28,7 +28,7 @@ const inView = el => {
 const BadgerProfile = ({ badger }) => (
   <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
     <img
-      src={badger.loaded ? badger.imageUrl : getPlaceholderImage()}
+      src={badger.loaded ? badger.imageUrl : badger.placeholderImage}
       alt={badger.name}
       className={styles.badgerImage}
     />
@@ -85,7 +85,11 @@ class TeamSlice extends React.Component {
     super(props);
     this.state = {
       loadAll: false,
-      badgers: props.badgers.map((badger, i) => ({ ...badger, loaded: i < props.page * 20 })),
+      badgers: props.badgers.map((badger, i) => ({
+        ...badger,
+        placeholderImage: getPlaceholderImage(),
+        loaded: i < props.page * 20,
+      })),
     };
     this.calculateLoaded = this.calculateLoaded.bind(this);
     this.els = {};
