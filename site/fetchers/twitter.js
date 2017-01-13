@@ -3,6 +3,7 @@ import handleErrors from './handle-errors';
 import type { Tweet } from '../types/';
 
 type TwitterResponse = {
+  id_str: stirng;
   text: string;
   created_at: string;
   retweet_count: number,
@@ -80,19 +81,16 @@ const getBearerToken = (fetch, key, secret) =>
 
 /**
  * The URL of the Tweet is usually the property tweet.entities.url[0].url
- * However if it's a re-tweet then the entities.url is an empty array and the URL is contained in
- * the retweeted_status property
+ * However if it does not exist (such as in a re-tweet) build the URL up from
+ * the ID of the re-tweet using a hard coded URL.
  */
 const getTweetUrl = (tweet: TwitterResponse) => {
   if (tweet.entities.urls && tweet.entities.urls.length > 0) {
     return tweet.entities.urls[0].url;
   }
 
-  if (tweet.retweeted_status && tweet.retweeted_status.entities.urls.length > 0) {
-    return tweet.retweeted_status.entities.urls[0].url;
-  }
-
-  return '';
+  // This is subject to change by twitter and only used as a last resort
+  return `https://twitter.com/i/web/status/${tweet.id_str}`;
 };
 
 /** Flattern the response */
