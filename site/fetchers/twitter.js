@@ -3,7 +3,7 @@ import handleErrors from './handle-errors';
 import type { Tweet } from '../types/';
 
 type TwitterResponse = {
-  id_str: stirng;
+  id_str: string;
   text: string;
   created_at: string;
   retweet_count: number,
