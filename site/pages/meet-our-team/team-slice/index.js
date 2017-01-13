@@ -1,10 +1,9 @@
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import Link from '../../../components/link';
 import styles from './style.css';
+import BadgerProfile from './badger-profile';
 import Paging from './paging';
 
-import arrowSVG from './arrow.svg';
 import placeholderBlack from './placeholder-black.jpg';
 import placeholderWhite from './placeholder-white.jpg';
 
@@ -25,31 +24,6 @@ const inView = el => {
   }
   return (distance !== 0) && (distance < (scrollY + innerHeight + -50));
 };
-
-const BadgerProfile = ({ badger }) => (
-  <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
-    <img
-      src={badger.loaded ? badger.imageUrl : badger.placeholderImage}
-      alt={badger.name}
-      className={styles.badgerImage}
-    />
-    <div className={styles.skillsWrapper}>
-      <h3 className={styles.skillsHeading}>
-        Signature skills
-      </h3>
-      <ul className={styles.skills}>
-        {(badger.skills || []).map((skill, i) => <li key={i}>{skill}</li>)}
-      </ul>
-    </div>
-    <div className={styles.description}>
-      <div className={styles.name}>
-        {badger.name}
-        <InlineSVG src={arrowSVG} className={styles.arrow} />
-      </div>
-      <div className={styles.jobDescription}>{badger.jobTitle}</div>
-    </div>
-  </Link>
-);
 
 const JobAdvert = () => (
   <Link to="joinUs" className={styles.jobAdvert}>

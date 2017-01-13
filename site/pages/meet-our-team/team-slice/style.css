@@ -63,41 +63,8 @@
   }
 }
 
-.badgerProfile {
-  composes: tile;
-  height: 100%;
-}
-
 .badgerContainer {
   height: 100%;
-}
-
-.badgerImage {
-  width: 100%;
-}
-
-.badgerProfile:hover {
-  box-shadow: 7px 7px daveGreen;
-}
-
-.badgerProfile:hover .badgerImage {
-  opacity: 0.5;
-}
-
-.badgerProfile:hover .skillsWrapper {
-  display: block;
-}
-
-.description {
-  composes: info;
-  padding: 0 0 10px 10px;
-  color: badgerWhite;
-}
-
-.name {
-  composes: fontS2 from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
-  padding-bottom: 5px;
 }
 
 .jobDescription {
@@ -126,32 +93,5 @@
   margin: 0 0 20px 20px;
   padding: 10px 20px;
   background-color: badgerBlack;
-  color: badgerWhite;
-}
-
-.arrow svg {
-  position: relative;
-  top: 5px;
-  left: 10px;
-  height: 20px;
-}
-
-.skillsWrapper {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-}
-
-.skillsHeading {
-  composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  color: daveGreen;
-}
-
-.skills {
-  composes: fontM from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
   color: badgerWhite;
 }
