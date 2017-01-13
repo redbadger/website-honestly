@@ -13,8 +13,6 @@ const paginate = (badgers, page, loadAll) => {
   return badgers.slice(start, start + 20);
 };
 
-const getPlaceholderImage = () => (Math.random() >= 0.5 ? placeholderBlack : placeholderWhite);
-
 const inView = el => {
   let distance = 0;
   let element = el;
@@ -28,7 +26,7 @@ const inView = el => {
 const initBadgers = (badgers, page) => (
   badgers.map((badger, i) => ({
     ...badger,
-    placeholderImage: getPlaceholderImage(),
+    placeholderImage: (Math.random() >= 0.5 ? placeholderBlack : placeholderWhite),
     loaded: i < page * 20,
   }))
 );
