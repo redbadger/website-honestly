@@ -84,7 +84,8 @@ export const normalisePost = (post: InstagramResponsePost) => {
     },
     comments: post.comments.count,
     likes: post.likes.count,
-    created: post.created_time,
+    // Cnovert unix timestamp to date
+    created: new Date(parseInt(post.created_time, 10) * 1000),
   };
 };
 
@@ -103,13 +104,10 @@ export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
   })
     .then(handleErrors)
     .then(response => response.json())
-    .then((response: InstagramResponse) => {
-      const normalised = response.data
+    .then((response: InstagramResponse) =>
+      response.data
         .filter(isValidPost)
         .map(normalisePost)
-        .sort(post => new Date(post.created));
-
-      // Take the top 5 posts
-      return normalised.slice(0, 5);
-    });
+        .slice(0, 5)
+    );
 };

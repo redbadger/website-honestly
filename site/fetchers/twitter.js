@@ -133,6 +133,5 @@ export const getTweets = (fetch: any, key: string, secret: string, username: str
       data
         .filter(isValidTweet)
         .map(normaliseTweet)
-        .sort(o => new Date(o.created))
     );
 };

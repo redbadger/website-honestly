@@ -119,7 +119,10 @@ class SocialSlice extends React.Component {
       return null;
     }
 
-    return data.sort(o => new Date(o.created)).map((row, index) => {
+    // console.log(JSON.stringify(data.sort(o => new Date(o.created)).map(each => each.created)));
+
+    return data.sort((a, b) => new Date(b.created) - new Date(a.created)).map((row, index) => {
+      console.log(new Date(row.created));
       return row.image
         ? <InstagramTile post={row} index={index} key={index} />
         : <TwitterTile tweet={row} index={index} key={index} />;
