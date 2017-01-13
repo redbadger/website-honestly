@@ -10,16 +10,25 @@ import placeholderWhite from './placeholder-white.jpg';
 const paginate = (badgers, page, loadAll) => {
   const pageSize = loadAll ? badgers.length : 20;
   const start = (page - 1) * pageSize;
-
-  return badgers.slice(start, start + pageSize).map((b, i) => ({ ...b, loaded: i < 20 }));
+  return badgers.slice(start, start + pageSize);
 };
 
 const getPlaceholderImage = () => (Math.random() >= 0.5 ? placeholderBlack : placeholderWhite);
 
+const getDistance = el => {
+  let distance = 0;
+  let element = el;
+  while (element) {
+    distance += element.offsetTop;
+    element = element.offsetParent;
+  }
+  return distance;
+};
+
 const BadgerProfile = ({ badger }) => (
   <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
     <img
-      src={ badger.loaded ? badger.imageUrl : getPlaceholderImage() }
+      src={badger.loaded ? badger.imageUrl : getPlaceholderImage()}
       alt={badger.name}
       className={styles.badgerImage}
     />
@@ -44,7 +53,7 @@ const BadgerProfile = ({ badger }) => (
 const JobAdvert = () => (
   <Link to="joinUs" className={styles.jobAdvert}>
     <div className={styles.question}>Are you a potential Badger?</div>
-    <div className={styles.hiring}>We're hiring</div>
+    <div className={styles.hiring}>Were hiring</div>
   </Link>
 );
 
@@ -74,21 +83,46 @@ const Paging = ({ page, badgers }) => (
 class TeamSlice extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { loadAll: false };
+    this.state = {
+      loadAll: false,
+      badgers: props.badgers.map((badger, i) => ({ ...badger, loaded: i < props.page * 20 })),
+    };
+    this.calculateLoaded = this.calculateLoaded.bind(this);
+    this.els = {};
   }
 
   componentDidMount() {
-    this.setState({ loadAll: true });
+    this.raf = requestAnimationFrame(this.calculateLoaded);
+  }
+
+  componentWillUnmount() {
+    cancelAnimationFrame(this.raf);
+  }
+
+  calculateLoaded() {
+    const { badgers, loadAll } = this.state;
+    const { page } = this.props;
+    const isLoaded = (badger, i) => badger.loaded || getDistance(this.els[i]) < window.scrollY;
+    let loadedChanged = false;
+    const updatedBadgers = badgers.map((badger, i) => {
+      const loaded = isLoaded(badger, i);
+      loadedChanged = loadedChanged || badger.loaded !== loaded;
+      return { ...badger, loaded };
+    });
+    if (loadedChanged || !loadAll) {
+      this.setState({ badgers: updatedBadgers, loadAll: true });
+    }
+    this.raf = requestAnimationFrame(this.calculateLoaded);
   }
 
   render() {
-    const { badgers, page } = this.props;
-    const { loadAll } = this.state;
+    const { page } = this.props;
+    const { loadAll, badgers } = this.state;
     return (
       <div>
         <ul className={styles.badgers}>
           {paginate(badgers, page, loadAll).map((badger, i) =>
-            <li key={i} className={styles.badger}>
+            <li ref={el => { this.els[i] = el; }} key={i} className={styles.badger}>
               <div className={styles.badgerWrapper} >
                 {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
               </div>
