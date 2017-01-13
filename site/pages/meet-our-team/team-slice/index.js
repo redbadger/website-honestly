@@ -2,6 +2,7 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import Link from '../../../components/link';
 import styles from './style.css';
+import Paging from './paging';
 
 import arrowSVG from './arrow.svg';
 import placeholderBlack from './placeholder-black.jpg';
@@ -55,29 +56,6 @@ const JobAdvert = () => (
     <div className={styles.question}>Are you a potential Badger?</div>
     <div className={styles.hiring}>Were hiring</div>
   </Link>
-);
-
-const Paging = ({ page, badgers }) => (
-  <div className={styles.paging}>
-    <Link
-      to="badgers"
-      includeCurrentData
-      className={styles.pagingButton}
-      navigationData={{ page: Math.max(page - 1, 1) }}
-      disableActive
-    >
-      Previous page
-    </Link>
-    <Link
-      to="badgers"
-      includeCurrentData
-      className={styles.pagingButton}
-      navigationData={{ page: Math.min(Math.ceil(badgers.length / 20), page + 1) }}
-      disableActive
-    >
-      Next page
-    </Link>
-  </div>
 );
 
 const initBadgers = (badgers, page) => (
