@@ -1,8 +1,15 @@
+// @flow
 import React from 'react';
 import Link from '../../../../components/link';
 import styles from './style.css';
+import type { Badger } from '../../';
 
-const Paging = ({ page, badgers }) => (
+type PagingProps = {
+  page: number,
+  badgers: Array<Badger>,
+};
+
+const Paging = ({ page, badgers }: PagingProps) => (
   <div className={styles.paging}>
     <Link
       to="badgers"

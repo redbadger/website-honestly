@@ -1,8 +1,10 @@
+// @flow
 import React from 'react';
 import styles from './style.css';
 import BadgerProfile from './badger-profile';
 import JobAdvert from './job-advert';
 import Paging from './paging';
+import type { Badger } from '../';
 
 import placeholderBlack from './placeholder-black.jpg';
 import placeholderWhite from './placeholder-white.jpg';
@@ -20,7 +22,7 @@ const inView = el => {
     distance += element.offsetTop;
     element = element.offsetParent;
   }
-  return (distance !== 0) && (distance < (scrollY + innerHeight + -50));
+  return (distance !== 0) && (distance < (window.scrollY + window.innerHeight + -50));
 };
 
 const initBadgers = (badgers, page) => (
@@ -31,8 +33,13 @@ const initBadgers = (badgers, page) => (
   }))
 );
 
+type TeamSliceProps = {
+  page: number,
+  badgers: Array<Badger>,
+};
+
 class TeamSlice extends React.Component {
-  constructor(props) {
+  constructor(props: TeamSliceProps) {
     super(props);
     const { badgers, page } = props;
     this.state = { loadAll: false, badgers: initBadgers(badgers, page) };
@@ -40,11 +47,19 @@ class TeamSlice extends React.Component {
     this.calculateLoaded = this.calculateLoaded.bind(this);
   }
 
+  els: any;
+  calculateLoaded: () => void;
+  raf: number;
+  state: {
+    loadAll: boolean,
+    badgers: Array<Badger>,
+  };
+
   componentDidMount() {
     this.raf = requestAnimationFrame(this.calculateLoaded);
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps: TeamSliceProps) {
     const { badgers, page } = nextProps;
     this.setState({ badgers: initBadgers(badgers, page) });
     this.els = {};

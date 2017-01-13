@@ -1,10 +1,12 @@
+// @flow
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import Link from '../../../../components/link';
 import styles from './style.css';
 import arrowSVG from './arrow.svg';
+import type { Badger } from '../../';
 
-const BadgerProfile = ({ badger }) => (
+const BadgerProfile = ({ badger }: { badger: Badger }) => (
   <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
     <img
       src={badger.loaded ? badger.imageUrl : badger.placeholderImage}

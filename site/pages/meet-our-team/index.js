@@ -1,17 +1,50 @@
+// @flow
 import React from 'react';
 import Link from '../../components/link';
 import TeamSlice from './team-slice';
 import styles from './style.css';
 
+export type Badger = {
+  name: string,
+  slug: string,
+  imageUrl: string,
+  placeholderImage: string,
+  skills: Array<string>,
+  description: string,
+  jobAdvert: boolean,
+  jobDescription: string,
+  jobTitle: string,
+  loaded: boolean,
+};
+
 const getTeam = (badgers, category) => {
   if (category !== 'everyone') {
     return badgers;
   }
+  const jobAdvert = {
+    name: '',
+    slug: '',
+    imageUrl: '',
+    placeholderImage: '',
+    skills: [],
+    description: '',
+    jobAdvert: true,
+    jobDescription: '',
+    jobTitle: '',
+    loaded: true,
+  };
 
-  return [...badgers.slice(0, 7), { jobAdvert: true }, ...badgers.slice(7)];
+  return [...badgers.slice(0, 7), jobAdvert, ...badgers.slice(7)];
 };
 
-const MeetOurTeam = ({ categories, category, badgers, page }) => {
+type MeetOurTeamProps = {
+  categories: Array<{ slug: string, name: string }>,
+  category: string,
+  page: number,
+  badgers: Array<Badger>,
+};
+
+const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) => {
   return (
     <div className={styles.meetOurTeam}>
       <div className={styles.teamContainer}>
