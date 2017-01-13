@@ -15,14 +15,14 @@ const paginate = (badgers, page, loadAll) => {
 
 const getPlaceholderImage = () => (Math.random() >= 0.5 ? placeholderBlack : placeholderWhite);
 
-const getDistance = el => {
+const inView = el => {
   let distance = 0;
   let element = el;
   while (element) {
     distance += element.offsetTop;
     element = element.offsetParent;
   }
-  return distance;
+  return (distance !== 0) && (distance < (scrollY + innerHeight + -50));
 };
 
 const BadgerProfile = ({ badger }) => (
@@ -101,11 +101,9 @@ class TeamSlice extends React.Component {
 
   calculateLoaded() {
     const { badgers, loadAll } = this.state;
-    const { page } = this.props;
-    const isLoaded = (badger, i) => badger.loaded || getDistance(this.els[i]) < window.scrollY;
     let loadedChanged = false;
     const updatedBadgers = badgers.map((badger, i) => {
-      const loaded = isLoaded(badger, i);
+      const loaded = badger.loaded || inView(this.els[i]);
       loadedChanged = loadedChanged || badger.loaded !== loaded;
       return { ...badger, loaded };
     });
