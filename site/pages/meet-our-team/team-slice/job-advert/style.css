@@ -1,0 +1,25 @@
+@value badgerWhite, badgerBlack, daveGreen from "../../../../css/_colors.css";
+
+.jobAdvert {
+  composes: tile from '../style.css';
+  background-color: daveGreen;
+  padding: 10px 0 0 20px;
+  height: 100%;
+}
+
+.question {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  width: 240px;
+}
+
+.hiring {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: info from '../style.css';
+  margin: 0 0 20px 20px;
+  padding: 10px 20px;
+  background-color: badgerBlack;
+  color: badgerWhite;
+}

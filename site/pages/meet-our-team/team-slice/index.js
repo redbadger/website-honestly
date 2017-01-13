@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from '../../../components/link';
 import styles from './style.css';
 import BadgerProfile from './badger-profile';
+import JobAdvert from './job-advert';
 import Paging from './paging';
 
 import placeholderBlack from './placeholder-black.jpg';
@@ -24,13 +24,6 @@ const inView = el => {
   }
   return (distance !== 0) && (distance < (scrollY + innerHeight + -50));
 };
-
-const JobAdvert = () => (
-  <Link to="joinUs" className={styles.jobAdvert}>
-    <div className={styles.question}>Are you a potential Badger?</div>
-    <div className={styles.hiring}>Were hiring</div>
-  </Link>
-);
 
 const initBadgers = (badgers, page) => (
   badgers.map((badger, i) => ({

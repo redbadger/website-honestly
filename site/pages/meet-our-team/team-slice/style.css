@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, daveGreen from "../../../css/_colors.css";
+@value badgerBlack from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .tile {
@@ -65,33 +65,4 @@
 
 .badgerContainer {
   height: 100%;
-}
-
-.jobDescription {
-  composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
-}
-
-.jobAdvert {
-  composes: tile;
-  background-color: daveGreen;
-  padding: 10px 0 0 20px;
-  height: 100%;
-}
-
-.question {
-  composes: fontM from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
-  color: badgerBlack;
-  width: 240px;
-}
-
-.hiring {
-  composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  composes: info;
-  margin: 0 0 20px 20px;
-  padding: 10px 20px;
-  background-color: badgerBlack;
-  color: badgerWhite;
 }
