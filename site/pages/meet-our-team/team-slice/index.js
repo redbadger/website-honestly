@@ -8,9 +8,9 @@ import placeholderBlack from './placeholder-black.jpg';
 import placeholderWhite from './placeholder-white.jpg';
 
 const paginate = (badgers, page, loadAll) => {
-  const pageSize = loadAll ? badgers.length : 20;
-  const start = (page - 1) * pageSize;
-  return badgers.slice(start, start + pageSize);
+  if (loadAll) return badgers;
+  const start = (page - 1) * 20;
+  return badgers.slice(start, start + 20);
 };
 
 const getPlaceholderImage = () => (Math.random() >= 0.5 ? placeholderBlack : placeholderWhite);

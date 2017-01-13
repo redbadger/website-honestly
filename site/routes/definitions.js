@@ -6,7 +6,6 @@ type RouteDefinition = {|
   key: string,
   route: string,
   defaults?: any,
-  validate?: (data: any) => boolean,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
 |}
@@ -59,8 +58,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
   {
     title: ({ category }) => 'Meet our team' + (category !== 'everyone' ? ` (${category})` : ''),
     key: 'badgers',
-    route: 'about-us/people+/page-{page}/{category?}',
-    validate: ({ page }) => !isNaN(+page),
+    route: 'about-us/people+/category/{category}+/page-{page}',
     defaults: { category: 'everyone', page: 1 },
     stateToProps: stateToBadgerProps,
     gen: genBadgersParams,
