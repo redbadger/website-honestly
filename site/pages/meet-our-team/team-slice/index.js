@@ -37,7 +37,7 @@ const BadgerProfile = ({ badger }) => (
         Signature skills
       </h3>
       <ul className={styles.skills}>
-        {(badger.skills || []).map(skill => <li>{skill}</li>)}
+        {(badger.skills || []).map((skill, i) => <li key={i}>{skill}</li>)}
       </ul>
     </div>
     <div className={styles.description}>
