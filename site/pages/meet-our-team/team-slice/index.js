@@ -80,23 +80,31 @@ const Paging = ({ page, badgers }) => (
   </div>
 );
 
+const initBadgers = (badgers, page) => (
+  badgers.map((badger, i) => ({
+    ...badger,
+    placeholderImage: getPlaceholderImage(),
+    loaded: i < page * 20,
+  }))
+);
+
 class TeamSlice extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      loadAll: false,
-      badgers: props.badgers.map((badger, i) => ({
-        ...badger,
-        placeholderImage: getPlaceholderImage(),
-        loaded: i < props.page * 20,
-      })),
-    };
-    this.calculateLoaded = this.calculateLoaded.bind(this);
+    const { badgers, page } = props;
+    this.state = { loadAll: false, badgers: initBadgers(badgers, page) };
     this.els = {};
+    this.calculateLoaded = this.calculateLoaded.bind(this);
   }
 
   componentDidMount() {
     this.raf = requestAnimationFrame(this.calculateLoaded);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const { badgers, page } = nextProps;
+    this.setState({ badgers: initBadgers(badgers, page) });
+    this.els = {};
   }
 
   componentWillUnmount() {
