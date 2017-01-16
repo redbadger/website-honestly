@@ -4,7 +4,7 @@ import styles from './style.css';
 import BadgerProfile from './badger-profile';
 import JobAdvert from './job-advert';
 import Paging from './paging';
-import type { Badger } from '../';
+import type { Badger } from './badger-profile';
 
 import placeholderBlack from './placeholder-black.jpg';
 import placeholderWhite from './placeholder-white.jpg';

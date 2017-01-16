@@ -4,7 +4,19 @@ import InlineSVG from 'svg-inline-react';
 import Link from '../../../../components/link';
 import styles from './style.css';
 import arrowSVG from './arrow.svg';
-import type { Badger } from '../../';
+
+export type Badger = {
+  name: string,
+  slug: string,
+  imageUrl: string,
+  placeholderImage: string,
+  skills: Array<string>,
+  description: string,
+  jobAdvert: boolean,
+  jobDescription: string,
+  jobTitle: string,
+  loaded: boolean,
+};
 
 const BadgerProfile = ({ badger }: { badger: Badger }) => (
   <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>

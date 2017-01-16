@@ -3,19 +3,7 @@ import React from 'react';
 import Link from '../../components/link';
 import TeamSlice from './team-slice';
 import styles from './style.css';
-
-export type Badger = {
-  name: string,
-  slug: string,
-  imageUrl: string,
-  placeholderImage: string,
-  skills: Array<string>,
-  description: string,
-  jobAdvert: boolean,
-  jobDescription: string,
-  jobTitle: string,
-  loaded: boolean,
-};
+import type { Badger } from './team-slice/badger-profile';
 
 const getTeam = (badgers, category) => {
   if (category !== 'everyone') {
