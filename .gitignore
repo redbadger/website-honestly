@@ -18,4 +18,3 @@ pids
 .env
 .DS_Store
 assets/state.json
-keyrings
