@@ -37,7 +37,7 @@ const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) 
     <div className={styles.teamContainer}>
       <h1 className={styles.title}>Meet our team</h1>
       <h2 className={styles.subtitle}>
-        Red Badger is all about the people. We work brilliantly as a team.
+        <div>Red Badger is all about the people. We work brilliantly as a team. </div>
         We inspire and bring out the best in one another.
       </h2>
       <ul className={styles.categories}>

@@ -1,5 +1,5 @@
 @value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
-@value largeScreen from "../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .meetOurTeam {
   padding-top: 25px;
@@ -7,14 +7,6 @@
   background-color: badgerWhite;
   color: badgerBlack;
   padding: 0 20px;
-}
-
-@media largeScreen {
-  .teamContainer {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-  }
 }
 
 .title {
@@ -28,6 +20,10 @@
   composes: sansSerif from "../../css/typography/_fonts.css";
   padding: 0 25px;
   margin-bottom: 30px;
+}
+
+.subtitle div {
+  display: inline;
 }
 
 .categories {
@@ -57,4 +53,18 @@
 
 a.category, a.category:hover, a.category:visited {
   color: badgerBlack;
+}
+
+@media mediumScreen {
+  .subtitle div {
+    display: block;
+  }
+}
+
+@media largeScreen {
+  .teamContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
 }
