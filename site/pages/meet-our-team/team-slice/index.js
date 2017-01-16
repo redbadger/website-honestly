@@ -43,7 +43,7 @@ class TeamSlice extends React.Component {
     super(props);
     const { badgers, page } = props;
     this.state = { loadAll: false, badgers: initBadgers(badgers, page) };
-    this.els = {};
+    this.badgerElements = {};
     this.calculateLoaded = this.calculateLoaded.bind(this);
   }
 
@@ -53,35 +53,35 @@ class TeamSlice extends React.Component {
   };
 
   componentDidMount() {
-    this.raf = requestAnimationFrame(this.calculateLoaded);
+    this.requestedAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
   }
 
   componentWillReceiveProps(nextProps: TeamSliceProps) {
     const { badgers, page } = nextProps;
     this.setState({ badgers: initBadgers(badgers, page) });
-    this.els = {};
+    this.badgerElements = {};
   }
 
   componentWillUnmount() {
-    cancelAnimationFrame(this.raf);
+    cancelAnimationFrame(this.requestedAnimationFrameId);
   }
 
-  els: any;
+  badgerElements: any;
   calculateLoaded: () => void;
-  raf: number;
+  requestAnimationFrameId: number;
 
   calculateLoaded() {
     const { badgers, loadAll } = this.state;
     let loadedChanged = false;
     const updatedBadgers = badgers.map(badger => {
-      const loaded = badger.loaded || inView(this.els[badger.slug]);
+      const loaded = badger.loaded || inView(this.badgerElements[badger.slug]);
       loadedChanged = loadedChanged || badger.loaded !== loaded;
       return { ...badger, loaded };
     });
     if (loadedChanged || !loadAll) {
       this.setState({ badgers: updatedBadgers, loadAll: true });
     }
-    this.raf = requestAnimationFrame(this.calculateLoaded);
+    this.requestedAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
   }
 
   render() {
@@ -96,7 +96,7 @@ class TeamSlice extends React.Component {
               className={styles.badger}
               ref={el => {
                 if (el) {
-                  this.els[badger.slug] = el;
+                  this.badgerElements[badger.slug] = el;
                 }
               }}
             >
