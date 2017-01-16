@@ -27,6 +27,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
         src={badger.loaded ? badger.imageUrl : badger.placeholderImage}
         alt={fullName}
         className={styles.badgerImage}
+        aria-hidden
       />
       <div className={styles.skillsWrapper}>
         <h3 className={styles.skillsHeading}>
