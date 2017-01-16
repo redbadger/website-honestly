@@ -105,7 +105,7 @@ class TeamSlice extends React.Component {
             </li>
           )}
         </ul>
-        {!loadAll && <Paging page={page} badgers={badgers} />}
+        {!loadAll && <Paging page={page} count={badgers.length} />}
       </div>
     );
   }

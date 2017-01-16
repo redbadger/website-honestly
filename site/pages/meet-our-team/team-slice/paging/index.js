@@ -2,14 +2,13 @@
 import React from 'react';
 import Link from '../../../../components/link';
 import styles from './style.css';
-import type { Badger } from '../../';
 
 type PagingProps = {
   page: number,
-  badgers: Array<Badger>,
+  count: number,
 };
 
-const Paging = ({ page, badgers }: PagingProps) => (
+const Paging = ({ page, count }: PagingProps) => (
   <div className={styles.paging}>
     <Link
       to="badgers"
@@ -24,7 +23,7 @@ const Paging = ({ page, badgers }: PagingProps) => (
       to="badgers"
       includeCurrentData
       className={styles.pagingButton}
-      navigationData={{ page: Math.min(Math.ceil(badgers.length / 20), page + 1) }}
+      navigationData={{ page: Math.min(Math.ceil(count / 20), page + 1) }}
       disableActive
     >
       Next page
