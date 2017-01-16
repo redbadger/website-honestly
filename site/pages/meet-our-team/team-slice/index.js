@@ -1,4 +1,5 @@
 // @flow
+/* eslint-disable react/no-set-state */
 import React from 'react';
 import styles from './style.css';
 import BadgerProfile from './badger-profile';
@@ -47,9 +48,6 @@ class TeamSlice extends React.Component {
     this.calculateLoaded = this.calculateLoaded.bind(this);
   }
 
-  els: any;
-  calculateLoaded: () => void;
-  raf: number;
   state: {
     loadAll: boolean,
     badgers: Array<Badger>,
@@ -68,6 +66,10 @@ class TeamSlice extends React.Component {
   componentWillUnmount() {
     cancelAnimationFrame(this.raf);
   }
+
+  els: any;
+  calculateLoaded: () => void;
+  raf: number;
 
   calculateLoaded() {
     const { badgers, loadAll } = this.state;
