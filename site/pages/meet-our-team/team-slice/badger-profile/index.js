@@ -34,7 +34,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
           Signature skills
         </h3>
         <ul className={styles.skills}>
-          {(badger.skills || []).slice(0, 3).map((skill, i) => <li key={i}>{skill}</li>)}
+          {(badger.skills || []).slice(0, 3).map(skill => <li key={skill}>{skill}</li>)}
         </ul>
       </div>
       <div className={styles.description}>
