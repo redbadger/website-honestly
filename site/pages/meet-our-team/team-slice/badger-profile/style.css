@@ -68,11 +68,11 @@
   overflow: hidden;
   top: 5px;
   height: 20px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .lastName {
   position: relative;
   display: inline-block;
+  margin-right: 35px;
 }
-
