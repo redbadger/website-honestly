@@ -72,8 +72,8 @@ class TeamSlice extends React.Component {
   calculateLoaded() {
     const { badgers, loadAll } = this.state;
     let loadedChanged = false;
-    const updatedBadgers = badgers.map((badger, i) => {
-      const loaded = badger.loaded || inView(this.els[i]);
+    const updatedBadgers = badgers.map(badger => {
+      const loaded = badger.loaded || inView(this.els[badger.slug]);
       loadedChanged = loadedChanged || badger.loaded !== loaded;
       return { ...badger, loaded };
     });
@@ -90,7 +90,15 @@ class TeamSlice extends React.Component {
       <div>
         <ul className={styles.badgers}>
           {paginate(badgers, page, loadAll).map((badger, i) =>
-            <li ref={el => { this.els[i] = el; }} key={i} className={styles.badger}>
+            <li
+              key={i}
+              className={styles.badger}
+              ref={el => {
+                if (el) {
+                  this.els[badger.slug] = el;
+                }
+              }}
+            >
               <div className={styles.badgerWrapper} >
                 {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
               </div>
