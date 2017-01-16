@@ -1,7 +1,9 @@
 @value badgerWhite, daveGreen from "../../../../css/_colors.css";
 
 .badgerProfile {
-  composes: tile from '../style.css';
+  text-align: left;
+  position: relative;
+  display: block;
   height: 100%;
 }
 
@@ -43,7 +45,9 @@
 }
 
 .description {
-  composes: info from '../style.css';
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding: 0 0 10px 10px;
   color: badgerWhite;
 }

@@ -1,24 +1,12 @@
 @value badgerBlack from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
 
-.tile {
-  text-align: left;
-  position: relative;
-  display: block;
-}
-
 .badgerWrapper {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-.info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .badgers {
