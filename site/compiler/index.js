@@ -74,8 +74,11 @@ export function compileRoutes(state) {
     const title = `${route.title} | ${TITLE_SUFFIX}`;
 
     stateNavigator.navigateLink(route.link, 'none');
+    const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
+    const renderMs = Date.now() - renderStart;
 
+    const ejsStart = Date.now();
     const body = layoutTemplate({
       title,
       tracking,
@@ -84,6 +87,8 @@ export function compileRoutes(state) {
       jsPath,
       state: encodedState,
     });
+    const ejsMs = Date.now() - ejsStart;
+    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`);
 
     return { body, path };
   };
