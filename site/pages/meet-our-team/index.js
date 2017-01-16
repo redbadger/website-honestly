@@ -22,7 +22,9 @@ const getTeam = (badgers, category) => {
     loaded: true,
   };
 
-  return [...badgers.slice(0, 6), jobAdvert, ...badgers.slice(6)];
+  const advertIndex = 6;
+
+  return [...badgers.slice(0, advertIndex), jobAdvert, ...badgers.slice(advertIndex)];
 };
 
 type MeetOurTeamProps = {
