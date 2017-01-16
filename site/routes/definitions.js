@@ -64,9 +64,10 @@ export const routeDefinitions : Array<RouteDefinition> = [
     gen: genBadgersParams,
   },
   {
-    title: 'Badger',
+    title: ({ badger }) => badger.name,
     key: 'badger',
-    route: 'about-us/people/{name}',
+    route: 'about-us/people/{slug}',
+    stateToProps: (state, params = {}) => ({ badger: state.badger[params.slug] }),
     gen: () => [],
   },
   {

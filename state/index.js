@@ -30,6 +30,7 @@ const getSiteState = () => (
     events,
     event: toDict(events, j => j.slug),
     badgers,
+    badger: toDict(badgers, b => b.slug),
     categories,
   }))
 );
