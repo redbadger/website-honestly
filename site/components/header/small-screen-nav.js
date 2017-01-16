@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/no-set-state */
 
 import React from 'react';
 
