@@ -64,13 +64,15 @@
 }
 
 .arrow svg {
-  position: relative;
+  position: absolute;
+  overflow: hidden;
   top: 5px;
   height: 20px;
   padding-left: 10px;
 }
 
 .lastName {
+  position: relative;
   display: inline-block;
 }
 
