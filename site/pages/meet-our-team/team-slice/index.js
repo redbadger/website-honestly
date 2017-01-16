@@ -23,7 +23,7 @@ const inView = el => {
     distance += element.offsetTop;
     element = element.offsetParent;
   }
-  return (distance !== 0) && (distance < (window.scrollY + window.innerHeight + -50));
+  return (distance !== 0) && (distance < (window.pageYOffset + window.innerHeight + 50));
 };
 
 const initBadgers = (badgers, page) => (
