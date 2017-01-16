@@ -17,7 +17,7 @@ describe('site/compiler', () => {
       const pages = compileSite({
         ...baseState,
         badgers: [{
-          name: 'Alex',
+          firstName: 'Alex',
           categories: [
             { name: 'Engineering', slug: 'engineering' },
             { name: 'Leadership', slug: 'leadership' },
@@ -47,14 +47,14 @@ describe('site/compiler', () => {
           ...baseState,
           badgers: [
             {
-              name: 'Alex',
+              firstName: 'Alex',
               categories: [
                 { name: 'Engineering', slug: 'engineering' },
                 { name: 'Leadership', slug: 'leadership' },
               ],
             },
             {
-              name: 'Sari',
+              firstName: 'Sari',
               categories: [
                 { name: 'PM', slug: 'pm' },
                 { name: 'Leadership', slug: 'leadership' },
@@ -94,14 +94,14 @@ describe('site/compiler', () => {
           ...baseState,
           badgers: [
             {
-              name: 'Sari',
+              firstName: 'Sari',
               categories: [
                 { name: 'UX & Design', slug: 'ux-design' },
               ],
             },
           ],
           categories: [
-            { name: 'UX & Design', slug: 'ux-design' },
+            { firstName: 'UX & Design', slug: 'ux-design' },
           ],
         });
 
@@ -120,7 +120,7 @@ describe('site/compiler', () => {
         const badgers = [];
         for (let i = 0; i < 20; i += 1) {
           badgers.push({
-            name: 'Alex ' + i,
+            firstName: 'Alex ' + i,
             categories: [
               { name: 'Engineering', slug: 'engineering' },
               { name: 'Leadership', slug: 'leadership' },
@@ -131,7 +131,7 @@ describe('site/compiler', () => {
           ...baseState,
           badgers: badgers.concat([
             {
-              name: 'Etiene',
+              firstName: 'Etiene',
               categories: [
                 { name: 'Engineering', slug: 'engineering' },
               ],
@@ -176,7 +176,7 @@ describe('site/compiler', () => {
         const badgers = [];
         for (let i = 0; i < 20; i += 1) {
           badgers.push({
-            name: 'Alex ' + i,
+            firstName: 'Alex ' + i,
             categories: [
               { name: 'Engineering', slug: 'engineering' },
             ],
@@ -213,7 +213,7 @@ describe('site/compiler', () => {
       const badgers = [];
       for (let i = 0; i < 19; i += 1) {
         badgers.push({
-          name: 'Alex ' + i,
+          firstName: 'Alex ' + i,
           categories: [
             { name: 'Engineering', slug: 'engineering' },
           ],
@@ -244,7 +244,7 @@ describe('site/compiler', () => {
       const badgers = [];
       for (let i = 0; i < 41; i += 1) {
         badgers.push({
-          name: 'Alex ' + i,
+          firstName: 'Alex ' + i,
           categories: [
             { name: 'Engineering', slug: 'engineering' },
             { name: 'Leadership', slug: 'leadership' },
@@ -312,7 +312,7 @@ describe('site/compiler', () => {
       const badgers = [];
       for (let i = 0; i < 21; i += 1) {
         badgers.push({
-          name: 'Alex ' + i,
+          firstName: 'Alex ' + i,
           categories: [
             { name: 'Engineering', slug: 'engineering' },
             { name: 'Leadership', slug: 'leadership' },
@@ -321,7 +321,7 @@ describe('site/compiler', () => {
       }
       for (let i = 21; i < 41; i += 1) {
         badgers.push({
-          name: 'Alex ' + i,
+          firstName: 'Alex ' + i,
           categories: [
             { name: 'Engineering', slug: 'engineering' },
           ],
