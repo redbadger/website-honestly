@@ -83,7 +83,8 @@ export function getData() {
         ${fullEventsQuery}
       }
       allBadgers {
-        name
+        firstName
+        lastName
         jobTitle
         imageUrl
         slug
