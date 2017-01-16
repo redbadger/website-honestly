@@ -53,7 +53,7 @@ class TeamSlice extends React.Component {
   };
 
   componentDidMount() {
-    this.requestedAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
+    this.requestAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
   }
 
   componentWillReceiveProps(nextProps: TeamSliceProps) {
@@ -63,7 +63,7 @@ class TeamSlice extends React.Component {
   }
 
   componentWillUnmount() {
-    cancelAnimationFrame(this.requestedAnimationFrameId);
+    cancelAnimationFrame(this.requestAnimationFrameId);
   }
 
   badgerElements: any;
@@ -81,7 +81,7 @@ class TeamSlice extends React.Component {
     if (loadedChanged || !loadAll) {
       this.setState({ badgers: updatedBadgers, loadAll: true });
     }
-    this.requestedAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
+    this.requestAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
   }
 
   render() {
