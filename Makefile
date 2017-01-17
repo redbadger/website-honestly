@@ -69,6 +69,15 @@ publish-service-invoke: ## Invoke the publish service
 	$(LOAD_ENV) \
 	&& curl -XPOST --fail $$PUBLISH_ENDPOINT
 
+decrypt-env:
+	source bin/decrypt-dev-env.sh
+
+get-secrets:
+	git submodules update --init --remote
+
+update-secrets:
+	git submodules update --remote
+
 compress-assets: ## Compress assets. What did you expect? :)
 	find site -type f \
 			\( \

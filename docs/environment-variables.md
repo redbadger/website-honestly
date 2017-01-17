@@ -5,6 +5,10 @@ This site uses several environment variables. These are set in `.env` in dev.
 In prod they are set in `circle.yml`, deploy scripts, and in CircleCI's
 secrets vault.
 
+The environment variables are stored secretly by being encrypted in a private repository
+with the help of `blackbox`. For the moment this approach is being used only for the dev environment.
+You can read more documentation on the workflow [here](https://github.com/redbadger/blackbox-secrets).
+
 
 ## `ENVIRONMENT_NAME`
 
