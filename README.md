@@ -40,8 +40,8 @@ cd website-next
 yarn
 
 # Set up the environment variables
-cp .env.example .env
-vi .env
+make get-secrets
+make decrypt-env
 
 # Deploy a AWS stack and lambda (if you want one!)
 # Provisioning from scratch takes quite a while.
