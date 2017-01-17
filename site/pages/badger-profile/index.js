@@ -55,7 +55,18 @@ const BadgerProfile = ({ badger }) => {
           <ul className={styles.socialLinks}>
             {getSocialItems(badger)}
           </ul>
-          <p>hello, {badger.firstName}</p>
+          <div className={styles.about}>
+            {badger.about}
+          </div>
+          <h2 className={styles.subtitle}>Signature Skills</h2>
+          {badger.skills.join(', ')}.
+
+          <h2 className={styles.subtitle}>Achievements at Red Badger</h2>
+          {badger.achievements}
+
+          <h2 className={styles.subtitle}>The thing that changed me</h2>
+          {badger.influence}
+
         </div>
       </div>
     </div>
