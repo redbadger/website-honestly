@@ -7,7 +7,7 @@ process.env.BABEL_ENV = 'typecheck';
 
 const devStaticConfig = webpackMerge(baseConfig, {
   entry: {
-    'dev-static': './dev/static/index.js',
+    'dev-static': ['babel-polyfill', './dev/static/index.js'],
   },
   output: {
     libraryTarget: 'commonjs',
