@@ -4,22 +4,24 @@
 .socialSlice {
   background: badgerBlack;
   composes: dividerBlackSocialSlice from "../../../css/_divider.css";
-  height: 530px;
+  height: 545px;
 }
 
 .desktopView {
   display: none;
+  overflow: hidden;
   background: url(./SocialBackground.png) no-repeat right;
 }
 
 .mobileView {
   display: block;
+  overflow: hidden;
   background: url(./SocialBackground.png) no-repeat right;
 }
 
 .noscript{
   display: flex;
-  overflow-x: scroll;
+  overflow: hidden;
   background: url(./SocialBackground.png) no-repeat right;
 }
 
@@ -32,6 +34,7 @@
   vertical-align: top;
   width: 350px;
   min-width: 350px;
+  overflow: hidden;
 }
 
 @media mediumScreen{
@@ -42,4 +45,8 @@
   .mobileView {
     display: none;
   }
+
+  .noscript{
+    overflow-x: scroll;
+  }  
 }
