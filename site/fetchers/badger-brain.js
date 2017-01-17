@@ -116,6 +116,9 @@ export function getData() {
         imageUrl
         slug
         skills
+        linkedin
+        twitter
+        github
         categories {
           name
           slug
