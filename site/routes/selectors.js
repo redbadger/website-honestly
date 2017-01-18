@@ -8,6 +8,11 @@ const createPages = (category, count) => (
   Array.from(Array(Math.ceil(count / 20)).keys()).map(page => ({ category, page: page + 1 }))
 );
 
+export const getBadgersTitle = ({ categories, category }) => {
+  const categoryFound = categories.filter(cat => cat.slug === category);
+  return `Meet our${categoryFound.length > 0 ? ' ' + categoryFound[0].name : ''} team`;
+};
+
 export const genBadgersParams = state => (
   state.categories.reduce((params, category) => {
     const count = getBadgersByCategory(state.badgers, category.slug).length;
