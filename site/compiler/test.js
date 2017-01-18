@@ -13,6 +13,8 @@ describe('site/compiler', () => {
           event: {},
           badgers: [],
           categories: [],
+          instagramPosts: [],
+          tweets: [],
         });
 
       expect(pages.length).to.equal(9);
@@ -60,6 +62,8 @@ describe('site/compiler', () => {
         event: {},
         badgers: [],
         categories: [],
+        instagramPosts: [],
+        tweets: [],
       });
 
       expect(pages.length).to.equal(11);
@@ -92,6 +96,8 @@ describe('site/compiler', () => {
         event: {},
         badgers: [],
         categories: [],
+        instagramPosts: [],
+        tweets: [],
       });
 
       expect(pages.length).to.equal(9);
@@ -151,6 +157,8 @@ describe('site/compiler', () => {
         },
         badgers: [],
         categories: [],
+        instagramPosts: [],
+        tweets: [],
       });
 
       expect(pages.length).to.equal(11);

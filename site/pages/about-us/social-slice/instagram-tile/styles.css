@@ -1,0 +1,75 @@
+@value badgerBlack, badgerWhite, daveGreen, stuBlue, mauve from "../../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
+
+
+.green { background: daveGreen; }
+.blue { background: stuBlue; }
+.mauve { background: mauve; }
+
+.instagram {
+  composes: card from "../styles.css";
+}
+
+.meta {
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  padding: 15px 20px 20px 20px;
+}
+
+.meta span {
+  margin-right: 15px;
+}
+
+.link{
+  background: transparent;
+  outline: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  color: badgerBlack;
+}
+.link:hover{
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+}
+
+.handle {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  padding: 10px 20px;
+  display: flex;
+}
+
+.handleText{
+  margin-top: 1px;
+}
+.instagramIcon{
+  margin-right: 10px;
+}
+
+.instagramIcon svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.likes{
+  margin-right: 20px;
+}
+
+.text{
+  margin-bottom: 10px; 
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css"; 
+}

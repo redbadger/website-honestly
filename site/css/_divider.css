@@ -16,7 +16,7 @@
   background-color: badgerRed;
 }
 
-.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent {
+.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice {
   composes: divider;
 }
 
@@ -45,4 +45,11 @@
   /** Compensate for the IE11 fix */
   height: 11px;
   z-index: timelineDivider;
+}
+
+.dividerBlackSocialSlice:before {
+  background-color: badgerBlack;
+  right: 0;
+  left: 352px;
+  width: 100%;
 }

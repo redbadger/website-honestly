@@ -1,0 +1,52 @@
+@value badgerBlack from "../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
+
+.socialSlice {
+  background: badgerBlack;
+  composes: dividerBlackSocialSlice from "../../../css/_divider.css";
+  height: 545px;
+}
+
+.desktopView {
+  display: none;
+  overflow: hidden;
+  background: url(./SocialBackground.png) no-repeat right;
+}
+
+.mobileView {
+  display: block;
+  overflow: hidden;
+  background: url(./SocialBackground.png) no-repeat right;
+}
+
+.noscript{
+  display: flex;
+  overflow: hidden;
+  background: url(./SocialBackground.png) no-repeat right;
+}
+
+.card {
+  white-space: normal;
+  height: 520px;
+  background: transparent;
+  color: badgerBlack;
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  min-width: 350px;
+  overflow: hidden;
+}
+
+@media mediumScreen{
+  .desktopView{
+    display: flex;
+  }
+
+  .mobileView {
+    display: none;
+  }
+
+  .noscript{
+    overflow-x: scroll;
+  }  
+}
