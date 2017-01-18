@@ -1,5 +1,6 @@
 @value badgerWhite, badgerBlack from "../../css/_colors.css";
 @value largeScreen, mediumScreen from "../../css/_sizes.css";
+@value serif from "../../css/typography/_fonts.css";
 
 .button {
   composes: primaryButton from "../../css/_links.css";
@@ -19,8 +20,8 @@
 }
 
 .header {
-  composes: serif from "../../css/typography/_fonts.css";
   composes: fontL from "../../css/typography/_fonts.css";
+  font-family: serif;
   margin-bottom: 20px;
 }
 
@@ -29,8 +30,8 @@
 }
 
 .copy {
-  composes: serif from "../../css/typography/_fonts.css";
   composes: fontS from "../../css/typography/_fonts.css";
+  font-family: serif;
   line-height: 1.25;
   font-weight: 800;
 }

@@ -1,5 +1,6 @@
 @value badgerBlack, cainYellow, cainYellowFaded from "../../../css/_colors.css";
 @value contentMaxWidth from "../../../css/_sizes.css";
+@value boldSansSerif, sansSerif, serif from "../../../css/typography/_fonts.css";
 
 .formContainer {
   padding: 60px 20px 70px 20px;
@@ -12,7 +13,7 @@
   margin: 0px auto;
   max-width: 500px;
   composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../css/typography/_fonts.css";
+  font-family: sansSerif;
 }
 
 /* for ie11 */
@@ -21,9 +22,9 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
 }
 
 .heading {
-  max-width: contentMaxWidth;
   composes: fontL from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  max-width: contentMaxWidth;
+  font-family: serif;
   margin: 0px auto 40px auto;
   color: badgerBlack;
 }
@@ -35,25 +36,25 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
 }
 
 .errorMessage {
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
   display: inline-block;
 }
 
 .fatalError {
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
 }
 .fatalErrorButton {
   margin: 30px 0px;
 }
 
 .inputBox {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
+
   display: block;
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
-
-  composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
 
   padding: 12px;
   background: cainYellowFaded;

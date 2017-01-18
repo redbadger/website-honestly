@@ -1,5 +1,6 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
+@value boldSansSerif, sansSerif, serif from "../../css/typography/_fonts.css";
 
 .pageHeaderContainer {
   display: flex;
@@ -14,7 +15,7 @@
 
 .pageHeader {
   composes: fontXL from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  font-family: serif;
   text-align: center;
   margin: 0px 30px;
   color: badgerBlack;
@@ -32,14 +33,14 @@
 
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  font-family: serif;
   text-align: center;
   color: badgerBlack;
 }
 
 .subHeader {
   composes: fontS from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  font-family: serif;
   font-size: 16px;
   color: badgerBlack;
 }
@@ -59,9 +60,9 @@ a {
 }
 
 .caseStudyCompany {
-  color: badgerRed;
   composes: fontXS from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  color: badgerRed;
+  font-family: boldSansSerif;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -73,9 +74,9 @@ a {
 }
 
 .caseStudyTitle {
-  color: badgerBlack;
   composes: fontM from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerBlack;
+  font-family: serif;
   display: inline;
 }
 
@@ -90,7 +91,7 @@ a {
 .caseStudyDescription {
   color: badgerBlack;
   composes: fontXS from "../../css/typography/_fonts.css";
-  composes: sansSerif from "../../css/typography/_fonts.css";
+  font-family: sansSerif;
 }
 
 .inverse {

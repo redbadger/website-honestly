@@ -1,5 +1,6 @@
 @value badgerBlack, badgerWhite, daveGreen, badgerRed from "../../../css/_colors.css";
 @value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
+@value boldSansSerif, sansSerif, serif from '../../../css/typography/_fonts.css';
 
 .newsletter {
   composes: dividerBlack from "../../../css/_divider.css";
@@ -11,7 +12,7 @@
 
 
 .beforeErrorText {
-  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+  font-family: boldSansSerif;
   font-size: 16px;
   color: badgerRed;
   text-align: left;
@@ -19,7 +20,7 @@
 }
 
 .afterErrorText {
-  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+  font-family: boldSansSerif;
   font-size: 16px;
   color: badgerBlack;
   position: relative;
@@ -39,14 +40,14 @@
 
 .title {
   composes: fontL from '../../../css/typography/_fonts.css';
-  composes: serif from '../../../css/typography/_fonts.css';
+  font-family: serif;
   max-width: 280px;
   margin: 0 auto 10px;
 }
 
 .subTitle {
   composes: fontS from '../../../css/typography/_fonts.css';
-  composes: serif from '../../../css/typography/_fonts.css';
+  font-family: serif;
   margin-bottom: 40px;
 }
 
@@ -60,14 +61,14 @@
 
 .formLabel {
   composes: fontS from '../../../css/typography/_fonts.css';
-  composes: sansSerif from '../../../css/typography/_fonts.css';
+  font-family: sansSerif;
   display: block;
   margin-bottom: 5px;
 }
 
 .formInput {
   composes: fontS from '../../../css/typography/_fonts.css';
-  composes: sansSerif from '../../../css/typography/_fonts.css';
+  font-family: sansSerif;
   line-height: inputHeight;
   height: inputHeight;
   padding: 0 17px;
@@ -95,7 +96,7 @@
 
 .jsDisabled {
   composes: fontS from '../../../css/typography/_fonts.css';
-  composes: serif from '../../../css/typography/_fonts.css';
+  font-family: serif;
   width: 580px;
   margin: 10px auto 30px;
 }

@@ -1,6 +1,7 @@
 @value colWidth: calc(100% / 12);
 @value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value largeScreen from "../../../css/_sizes.css";
+@value boldSansSerif, sansSerif, serif from "../../../css/typography/_fonts.css";
 
 .slice {
   composes: dividerWhite from "../../../css/_divider.css";
@@ -11,7 +12,7 @@
 
 .heading {
   composes: fontL from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  font-family: serif;
   text-align: center;
   margin: 0 auto 24px auto;
   max-width: contentMaxWidth;
@@ -33,12 +34,12 @@
 
 .point {
   composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../css/typography/_fonts.css";
+  font-family: sansSerif;
   margin-top: 20px;
 }
 
 .bold {
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
 }
 
 @media largeScreen {

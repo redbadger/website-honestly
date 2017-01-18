@@ -1,5 +1,6 @@
 @value badgerRed, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize, containerMaxWidth from "../../css/_sizes.css";
+@value boldSansSerif, serif from "../../css/typography/_fonts.css";
 
 .screenReaderText {
   composes: visuallyHidden from "../../css/_accessibility.css";
@@ -22,7 +23,7 @@
 }
 
 .nav {
-  composes: serif from "../../css/typography/_fonts.css";
+  font-family: serif;
   font-size: linkSize;
   list-style: none;
   line-height: 1.2em;
@@ -52,7 +53,7 @@
 }
 
 .social {
-  composes: serif from "../../css/typography/_fonts.css";
+  font-family: serif;
   line-height: 1.2em;
   font-size: linkSize;
 }
@@ -85,7 +86,7 @@
 }
 
 .address {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
   composes: fontXS from "../../css/typography/_fonts.css";
   display: flex;
 }
@@ -105,8 +106,8 @@
 }
 
 .disclaimer {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
 }
 
 .disclaimerParagraph {

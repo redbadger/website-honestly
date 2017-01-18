@@ -1,11 +1,12 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+@value boldSansSerif from "../../../css/typography/_fonts.css";
 
 .timeline{
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
 	composes: fontXS from "../../../css/typography/_fonts.css";
-  background-color: badgerWhite;
   composes: dividerBlackOnTransparent from "../../../css/_divider.css";
+  font-family: boldSansSerif;
+  background-color: badgerWhite;
 }
 .image{
   width: 100%;

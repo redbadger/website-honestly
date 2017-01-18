@@ -1,4 +1,5 @@
 @value badgerBlack, daveGreen from "../../../css/_colors.css";
+@value serif from "../../../css/typography/_fonts.css";
 
 .successContainer {
   padding: 60px 20px 70px 20px;
@@ -8,9 +9,9 @@
 }
 
 .heading {
-  max-width: contentMaxWidth;
   composes: fontL from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  font-family: serif;
+  max-width: contentMaxWidth;
   margin: 0px auto 40px auto;
   color: badgerBlack;
 }

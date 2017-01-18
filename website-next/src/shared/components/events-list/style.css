@@ -1,5 +1,6 @@
 @value mobile from "../variables/breakpoints.css";
 @value badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
+@value sansSerif from "../../../../../site/css/typography/_fonts.css";
 
 .eventsListTimelineSection {
   margin-bottom: 50px;
@@ -62,7 +63,7 @@
 }
 
 .eventDescription {
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  font-family: sansSerif;
   color: badgerBlack;
   float: left;
   width: 100%;
@@ -71,8 +72,8 @@
 }
 
 .eventLinks {
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
   composes: cf from "../../components/utils/layout.css";
+  font-family: sansSerif;
   margin-bottom: 1em;
 }
 

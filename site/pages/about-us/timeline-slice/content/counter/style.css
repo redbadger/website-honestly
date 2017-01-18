@@ -1,5 +1,6 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
+@value sansSerifBold, serif from "../../../../../css/typography/_fonts.css";
 
 .counter {
   border-top: 1px solid #CCC;
@@ -8,15 +9,15 @@
 }
 
 .title {
-  composes: sansSerifBold from "../../../../../css/typography/_fonts.css";
+  font-family: sansSerifBold;
   composes: fontXS from "../../../../../css/typography/_fonts.css";
   margin: 10px 0px;
   color: badgerBlack;
 }
 
 .count{
-  composes: serif from "../../../../../css/typography/_fonts.css";
   composes: fontS from "../../../../../css/typography/_fonts.css";
+  font-family: serif;
   margin: 10px 0px;
   color: badgerBlack;
 }

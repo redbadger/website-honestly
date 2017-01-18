@@ -1,6 +1,7 @@
 @value badgerRed, badgerWhite, badgerBlack from "../../css/_colors.css";
 @value zindexOverlay from "../../css/_zindex.css";
 @value mediumScreen from "../../css/_sizes.css";
+@value boldSansSerif, serif from "../../css/typography/_fonts.css";
 
 .header {
   display: flex;
@@ -19,8 +20,8 @@
 }
 
 .mediumScreenNav {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
   list-style: none;
   align-self: center;
   justify-content: flex-end;
@@ -44,8 +45,8 @@
 }
 
 .overlay {
-  composes: serif from "../../css/typography/_fonts.css";
   composes: fontM2 from "../../css/typography/_fonts.css";
+  font-family: serif;
 
   position: fixed;
   top: 0;
@@ -100,7 +101,7 @@
 
 .menuCloseButton {
   composes: fontXS from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
   position: absolute;
   top: 5px;
   left: 10px;
@@ -122,8 +123,8 @@
 }
 
 .triggerLabel {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
   border-bottom: 2px solid badgerRed;
   line-height: 1em;
   cursor: pointer;

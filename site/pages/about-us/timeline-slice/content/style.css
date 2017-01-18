@@ -1,25 +1,26 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+@value sansSerif, serif from "../../../../css/typography/_fonts.css";
 
 .image {
     display: none;
 }
-  
+
 .imageWrapper{
   display: none;
 }
 
 .title {
-  composes: serif from "../../../../css/typography/_fonts.css";
   composes: fontM2 from "../../../../css/typography/_fonts.css";
+  font-family: serif;
   margin-top: 10px;
   margin-bottom: 20px;
   color: badgerBlack;
 }
 
 .body{
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
+  font-family: sansSerif;
   margin-bottom: 10px;
   color: badgerBlack;
 }

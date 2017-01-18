@@ -1,6 +1,7 @@
 @value badgerRed, badgerBlack, badgerWhite from "../../../../../site/css/_colors.css";
 @value largeScreen from "../../../../../site/css/_sizes.css";
 @value red from "../../components/variables/colors.css";
+@value sansSerif, serif from "../../../../../site/css/typography/_fonts.css";
 
 @value badgerWhite from "../../../../../site/css/_colors.css";
 
@@ -64,8 +65,8 @@
 }
 
 .eventTitle {
-  composes: serif from "../../../../../site/css/typography/_fonts.css";
   composes: fontM2 from "../../../../../site/css/typography/_fonts.css";
+  font-family: serif;
   text-decoration: none;
   display: inline;
   margin: 0 0 20px 0;
@@ -75,7 +76,7 @@
 .paragraph {
   color: badgerBlack;
   composes: fontXS from "../../../../../site/css/typography/_fonts.css";
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  font-family: sansSerif;
   margin: 10px 0px;
 }
 
@@ -94,7 +95,7 @@
 
 .eventDescription {
   composes: fontXS from "../../../../../site/css/typography/_fonts.css";
-  composes: serif from "../../../../../site/css/typography/_fonts.css";
+  font-family: serif;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -122,7 +123,7 @@
   composes: bodyLink from "../../../../../site/css/_links.css";
   display: block;
   margin-bottom: 25px;
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  font-family: sansSerif;
 }
 
 .moreEvents a {

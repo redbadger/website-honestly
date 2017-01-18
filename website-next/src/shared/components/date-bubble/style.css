@@ -1,7 +1,8 @@
 @value badgerRed from "../../../../../site/css/_colors.css";
+@value sansSerif from "../../../../../site/css/typography/_fonts.css";
 
 .dateBubble {
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  font-family: sansSerif;
   color: badgerRed;
   text-transform: uppercase;
   min-width: 3em;

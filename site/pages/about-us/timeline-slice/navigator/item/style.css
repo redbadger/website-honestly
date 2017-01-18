@@ -1,19 +1,20 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
 @value timelineNavigationButton from "../../../../../css/_zindex.css";
+@value boldSansSerif from "../../../../../css/typography/_fonts.css";
 
 .text{
+	composes: fontXS from "../../../../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
   display: none;
   position: relative;
   color: #CCC;
-  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
-	composes: fontXS from "../../../../../css/typography/_fonts.css";
   transition: 0.3s ease-in-out;
   left: -15px;
   cursor: pointer;
 }
 
-.active a, 
+.active a,
 .text:hover{
   color: badgerRed;
 }

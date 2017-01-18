@@ -1,5 +1,6 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../../../css/_sizes.css";
+@value boldSansSerif, sansSerif, serif from "../../../../css/typography/_fonts.css";
 
 .container{
   display: flex; 
@@ -13,23 +14,23 @@
   max-width: 670px;
 }
 .number {
-  padding-top: 5px;
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
+  font-family: boldSansSerif;
+  padding-top: 5px;
   border-bottom: 5px solid #fc1d42; 
   width: 20px;
   text-align: center;
 }
 
 .title {
-  composes: serif from "../../../../css/typography/_fonts.css";
   composes: fontM2 from "../../../../css/typography/_fonts.css";
+  font-family: serif;
   padding-bottom: 10px;
 }
 
 .description{
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
+  font-family: sansSerif from "../../../../css/typography/_fonts.css";
   color: badgerWhite;
 }
 

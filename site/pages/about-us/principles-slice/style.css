@@ -1,5 +1,6 @@
 @value mediumScreen, largeScreen, contentMaxWidth from "../../../css/_sizes.css";
 @value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
+@value serif from "../../../css/typography/_fonts.css";
 
 .principles {
   background:badgerBlack;
@@ -14,14 +15,14 @@
 }
 
 .header {
-  composes: serif from "../../../css/typography/_fonts.css";
   composes: fontL from "../../../css/typography/_fonts.css";
+  font-family: serif;
   padding-bottom: 10px;
 }
 
 .thisIsWhatWeBelieveIn {
-  composes: serif from "../../../css/typography/_fonts.css";
   composes: fontS2 from "../../../css/typography/_fonts.css";
+  font-family: serif;
   padding-bottom: 10px;
 }
 

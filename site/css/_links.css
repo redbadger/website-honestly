@@ -1,5 +1,6 @@
 @value badgerWhite, badgerRed, badgerBlack from "./_colors.css";
 @value inputHeight, linkSize from "./_sizes.css";
+@value boldSansSerif from "./typography/_fonts.css";
 
 /*
 ### Example
@@ -35,7 +36,7 @@
 }
 
 .primaryButton {
-  composes: boldSansSerif from "./typography/_fonts.css";
+  font-family: boldSansSerif;
   font-size: linkSize;
   background-color: badgerRed;
   color: badgerWhite;
@@ -49,7 +50,7 @@
 }
 
 .smallButton {
-  composes: boldSansSerif from "./typography/_fonts.css";
+  font-family: boldSansSerif;
   font-size: 18px;
   background-color: badgerRed;
   color: badgerWhite;

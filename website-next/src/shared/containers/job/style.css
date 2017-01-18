@@ -1,5 +1,6 @@
 @value tablet from "../../components/variables/breakpoints.css";
 @value badgerWhite, badgerBlack from "../../../../../site/css/_colors.css";
+@value sansSerif from "../../../../../site/css/typography/_fonts.css";
 
 .background {
   background-color: badgerWhite;
@@ -11,7 +12,7 @@
 }
 
 .applyLink {
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  font-family: sansSerif;
 
   float: right;
   display: none;
@@ -29,7 +30,7 @@
   composes: bodyLink from "../../../../../site/css/_links.css";
   display: block;
   margin-bottom: 25px;
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  font-family: sansSerif;
 
   @media tablet {
     display: inline;

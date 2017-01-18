@@ -1,4 +1,5 @@
 @value badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
+@value sansSerif from "../../../../../site/css/typography/_fonts.css";
 
 .eventLinkList {
   width: 100%;
@@ -6,8 +7,8 @@
 }
 
 .fullDetailsLink {
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
   composes: bodyUnderlineLink from "../../../../../site/css/_links.css";
+  font-family: sansSerif;
   clear: both;
   color: badgerBlack;
   display: block;

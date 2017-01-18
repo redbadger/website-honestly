@@ -59,17 +59,11 @@
   src: url('./fonts/322627_1_0.woff2') format('woff2'), url('./fonts/322627_1_0.woff') format('woff'), url('./fonts/322627_1_0.ttf') format('truetype');
 }
 
-.serif {
-  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
-}
+@value serif: "Sentinel A", "Sentinel B", Georgia, serif;
 
-.sansSerif {
-  font-family: 'ProximaNova-Light', sans-serif;
-}
+@value sansSerif: 'ProximaNova-Light', sans-serif;
 
-.boldSansSerif {
-  font-family: 'ProximaNova-Bold', sans-serif;
-}
+@value boldSansSerif: 'ProximaNova-Bold', sans-serif;
 
 .fontXL {
   font-size: 40px;
