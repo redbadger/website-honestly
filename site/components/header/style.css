@@ -53,7 +53,6 @@
 
   composes: serif from "../../css/typography/_fonts.css";
   composes: fontM2 from "../../css/typography/_fonts.css";
-  composes: fontM from "../../css/typography/_fonts.css";
   font-weight: bold;
 
   transition: left 0.3s;
@@ -75,10 +74,6 @@
   right: 0;
   left: 54px;
   display: none;
-}
-
-.overlay .mediumScreenNav {
-  display: block;
 }
 
 .smallScreenNavContainer {
