@@ -59,7 +59,7 @@
   left: 0;
   padding: 0 0 10px 10px;
   color: badgerWhite;
-  text-shadow: 1px 1px 4px badgerBlack;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.50);
 }
 
 .name {
