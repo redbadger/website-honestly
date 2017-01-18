@@ -27,7 +27,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'About Us',
     key: 'aboutUsPage',
     route: 'about-us',
-    stateToProps: ({ contactUsURL }) => ({ contactUsURL }),
+    stateToProps: ({ contactUsURL, tweets, instagramPosts }) => ({ contactUsURL, tweets, instagramPosts }),
   },
   {
     title: 'Join us',

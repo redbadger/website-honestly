@@ -3,8 +3,6 @@ const baseConfig = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 
-process.env.BABEL_ENV = 'typecheck';
-
 const devStaticConfig = webpackMerge(baseConfig, {
   entry: {
     'dev-static': ['babel-polyfill', './dev/static/index.js'],

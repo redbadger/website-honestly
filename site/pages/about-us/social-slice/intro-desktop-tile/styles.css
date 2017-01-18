@@ -1,0 +1,49 @@
+@value badgerBlack, badgerWhite, daveGreen, linesOnBlack from "../../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen, smallScreen from "../../../../css/_sizes.css";
+
+.intro {
+  composes: card from "../styles.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  background: badgerBlack;
+  color: badgerWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text{
+  width: 350px;
+  padding: 20px 100px 0px 20px;
+  /* Fix this to always be this value - do not be responsive */
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.prevButton, .nextButton{
+  background: transparent;
+  border: none;
+  color: linesOnBlack;
+}
+
+.prevButton:hover, .nextButton:hover{
+ cursor: pointer;
+}
+
+.prevButton:disabled,
+.nextButton:disabled{ 
+  opacity: 0.5;
+}
+
+.prevArrow svg,
+.nextArrow svg{ 
+  width: 25px;
+  height: 25px
+}
+

@@ -27,7 +27,7 @@ check-deps: ## Check deps for updates
 
 
 dev: badger dist/sw.js ## Run the frontend dev server
-	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js --content-base dist/ --history-api-fallback
+	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js --content-base dist/ --history-api-fallback --host 0.0.0.0
 
 
 sw: dist/sw.js  ## Compile service worker

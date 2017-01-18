@@ -8,6 +8,8 @@ describe('site/compiler', () => {
     featuredBlogPosts: [],
     events: [],
     event: {},
+    instagramPosts: [],
+    tweets: [],
   };
 
   describe('compileSite', () => {

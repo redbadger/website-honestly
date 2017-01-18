@@ -1,0 +1,75 @@
+@value badgerBlack, badgerWhite, daveGreen, stuBlue, mauve from "../../../../css/_colors.css";
+@value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
+
+.twitter {
+  composes: card from "../styles.css";
+  color: badgerBlack;
+  padding-left: 0px;
+  overflow: hidden;
+}
+.link{
+  background: transparent;
+  outline: none;
+  border: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  color: badgerBlack;
+}
+.link:hover{
+  cursor: pointer;
+}
+
+.green { background: daveGreen; }
+.blue { background: stuBlue; }
+.mauve { background: mauve; }
+.handle {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  margin: 10px 20px 10px 20px;
+  display: flex;
+}
+
+.handleText{
+  margin-top: 2px;
+}
+
+.tweet {
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontS from "../../../../css/typography/_fonts.css";
+  margin: 20px;
+}
+
+.meta {
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  padding: 0px 20px;
+}
+
+.meta span {
+  margin-right: 15px;
+}
+
+.icon {
+  
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.twitterIcon{
+  
+}
+.twitterIcon svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.retweets svg{
+  width: 25px;
+}
