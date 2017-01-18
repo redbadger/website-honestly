@@ -11,7 +11,6 @@ export type Badger = {
   slug: string,
   imageUrl: string,
   placeholderImage: string,
-  skills: Array<string>,
   description: string,
   jobAdvert: boolean,
   jobDescription: string,
@@ -29,14 +28,6 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
         className={styles.badgerImage}
         aria-hidden
       />
-      <div className={styles.skillsWrapper}>
-        <h3 className={styles.skillsHeading}>
-          Signature skills
-        </h3>
-        <ul className={styles.skills}>
-          {(badger.skills || []).slice(0, 3).map(skill => <li key={skill}>{skill}</li>)}
-        </ul>
-      </div>
       <div className={styles.description}>
         <div className={styles.name}>
           {`${badger.firstName} `}

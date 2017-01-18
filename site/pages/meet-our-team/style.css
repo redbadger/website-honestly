@@ -41,7 +41,7 @@
   composes: fontXS from "../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   text-transform: uppercase;
-  padding: 6px 20px;
+  padding: 6px 20px 4px 20px;
   border: 2px solid daveGreen;
   display: block;
   margin-bottom: 20px;
