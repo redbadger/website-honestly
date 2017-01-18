@@ -35,6 +35,16 @@ const getSocialItems = badger => {
   return socialItems;
 };
 
+const getBlogsLink = badger => {
+  if (badger.squarespaceId) {
+    return (<div className={styles.authorLink + ' ' + styles.subheader}>
+      <a href={'https://red-badger.com/blog/?author=' + badger.squarespaceId}>
+        Read {badger.firstName}&rsquo;s blog posts
+      </a>
+    </div>);
+  }
+};
+
 const BadgerProfile = ({ badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   const categories = badger.categories.map(c => c.name).join(', ');
@@ -48,9 +58,9 @@ const BadgerProfile = ({ badger }) => {
             className={styles.badgerImage}
           />
         </div>
-        <div className={styles.profileText}>
-          <h1 className={styles.title}>{fullName}</h1>
-          <h2 className={styles.subtitle}>{badger.jobTitle}</h2>
+        <div className={styles.profileDescriptionContainer}>
+          <h1 className={styles.header}>{fullName}</h1>
+          <h2 className={styles.subheader}>{badger.jobTitle}</h2>
           <h3 className={styles.categories}>{categories}</h3>
           <ul className={styles.socialLinks}>
             {getSocialItems(badger)}
@@ -58,15 +68,24 @@ const BadgerProfile = ({ badger }) => {
           <div className={styles.about}>
             {badger.about}
           </div>
-          <h2 className={styles.subtitle}>Signature Skills</h2>
-          {badger.skills.join(', ')}.
+          <div className={styles.descriptionSections}>
+            <h2 className={styles.subheader}>Signature Skills</h2>
+            <p>{badger.skills.join(', ')}.</p>
 
-          <h2 className={styles.subtitle}>Achievements at Red Badger</h2>
-          {badger.achievements}
+            <h2 className={styles.subheader}>Achievements at Red Badger</h2>
+            <p>{badger.achievements}</p>
 
-          <h2 className={styles.subtitle}>The thing that changed me</h2>
-          {badger.influence}
-
+            <h2 className={styles.subheader}>The thing that changed me</h2>
+            <p>{badger.influence}</p>
+          </div>
+          <div className={styles.authorLinks}>
+            {getBlogsLink(badger)}
+          </div>
+          <hr />
+          <a className={styles.greenBox} href="/about-us/people">See Everyone</a>
+          {badger.categories.map(c =>
+            <a className={styles.greenBox} href={'/about-us/people/category/' + c.slug}>See {c.name} team</a>
+          )}
         </div>
       </div>
     </div>

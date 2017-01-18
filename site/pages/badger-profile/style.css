@@ -1,43 +1,90 @@
 @value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
+.categories {
+  composes: fontS2 from "../../css/typography/_fonts.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
+  margin-bottom: 10px;
+}
+
+.header {
+  composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  margin-bottom: 5px;
+}
+
+.profileContainer {
+  composes: fontS2 from "../../css/typography/_fonts.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
+  padding-top: 20px;
+  display: flex;
+}
+
+.subheader {
+  composes: fontS2 from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  color: badgerBlack;
+}
+
+.about {
+  margin: 40px 0;
+}
+
+.authorLinks a{
+  color: badgerBlack;
+  border-bottom: solid 2px daveGreen;
+}
+
+.authorLinks{
+  margin-top: 40px;
+}
+
+.authorLink:first-child{
+  margin-bottom: 10px;
+}
+
+
+.badgerImage {
+  width: 454px;
+}
+
+
 .badgerProfile {
   background-color: badgerWhite;
   color: badgerBlack;
   padding: 0 20px;
 }
 
-.profileContainer{
-  padding-top: 20px;
+.badgerSocialIcon svg {
+  height: 20px;
 }
 
-.profilePictureContainer{
-
+.badgerSocialIcon path {
+  fill: badgerBlack;
 }
 
-.badgerImage{
-  width: 454px;
+.descriptionSections p {
+  margin-bottom: 20px;
 }
 
-.title {
-  composes: fontM from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+.greenBox {
+  composes: subheader;
+  border: solid 2px daveGreen;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
 }
 
-.subtitle {
-  composes: fontS from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  font-size: 20px !important;
+.profileDescriptionContainer hr {
+  margin: 30px 0;
 }
 
-.categories {
-  composes: fontS from "../../css/typography/_fonts.css";
-  composes: sansSerif from "../../css/typography/_fonts.css";
-  font-size: 20px !important;
+.profilePictureContainer {
+  margin-right: 50px;
 }
 
-
-.socialLinks{
+.socialLinks {
   display: flex;
   flex-wrap: wrap;
 }
@@ -46,25 +93,10 @@
   margin-right: 15px;
 }
 
-
-.badgerSocialIcon svg{
-  height: 20px;
-}
-
-.badgerSocialIcon path{
-  fill: badgerBlack;
-
-}
-
-
 @media largeScreen {
-  .badgerProfile {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-  }
   .profileContainer {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
+    padding-bottom: 50px;
   }
 }
