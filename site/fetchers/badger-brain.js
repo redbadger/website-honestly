@@ -27,10 +27,12 @@ const getCategories = badgers => {
     .reduce((uniqueCategories, badger) => (
       badger.categories
         .reduce((categories, category) => (
-          categories[category.name] ? categories : { ...categories, [category.name]: category.slug }
+          categories[category.name] ? categories : { ...categories, [category.name]: category }
         ), uniqueCategories)
     ), {});
-  return Object.keys(categoriesObj).map(name => ({ name, slug: categoriesObj[name] }));
+  return Object.keys(categoriesObj)
+    .map(name => ({ name, slug: categoriesObj[name].slug }))
+    .sort((catA, catB) => categoriesObj[catA.name].order - categoriesObj[catB.name].order);
 };
 
 // Randomize array, taken from http://stackoverflow.com/a/2450976/1310468
@@ -117,6 +119,7 @@ export function getData() {
         categories {
           name
           slug
+          order
         }
       }
     }
