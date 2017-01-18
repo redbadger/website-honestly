@@ -28,10 +28,6 @@
   box-shadow: 7px 7px daveGreen;
 }
 
-.badgerProfile:hover .badgerImage {
-  opacity: 0.5;
-}
-
 .badgerProfile:hover .skillsWrapper {
   display: block;
 }
