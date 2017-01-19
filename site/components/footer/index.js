@@ -189,7 +189,7 @@ const Footer = () => (
             className={styles.mapLink}
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.google.co.uk/maps?q=EC1Y+8RQ&hl=en&sll=51.528642,-0.101599&sspn=0.494671,1.20575&hnear=London+EC1Y+8RQ,+United+Kingdom&t=m&z=16"
+            href="https://www.google.com/maps/place/12+Mallow+St,+London+EC1Y+8RQ,+UK/@51.52477,-0.0908016,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca8a59bf3b3:0x4cdb7444be05c280!8m2!3d51.52477!4d-0.0886129?hl=en"
           >
             Open in Google maps
           </a>
