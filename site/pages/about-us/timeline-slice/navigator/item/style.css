@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 
-.active a, 
+.active a,
 .text:hover{
   color: badgerRed;
 }
@@ -37,13 +37,6 @@
 .active span{
   background-color: badgerRed;
 }
-
-.old:focus,
-.active:focus,
-.future:focus{
-  outline: none;
-}
-
 
 .old:hover,
 .active:hover,
