@@ -8,6 +8,23 @@ import twitterSVG from './SVG/twitter.svg';
 import githubSVG from './SVG/github.svg';
 import linkedinSVG from './SVG/linked-in.svg';
 
+type Badger = {
+  firstName: string,
+  lastName: string,
+  jobTitle: string,
+  slug: string,
+  imageUrl: string,
+  about: string,
+  skills: Array<string>,
+  achievements: string,
+  influence: string,
+  twitter: string,
+  github: string,
+  linkedIn: string,
+  squarespaceId: string,
+  categories: Array<{ slug: string, name: string }>,
+};
+
 const getSocialItems = badger => {
   const socialItems = [];
   const socialPages = [
@@ -45,7 +62,7 @@ const getBlogsLink = badger => {
   }
 };
 
-const BadgerProfile = ({ badger }) => {
+const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   const categories = badger.categories.map(c => c.name).join(', ');
   return (
