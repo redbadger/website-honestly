@@ -37,7 +37,7 @@ const getSocialItems = badger => {
 
 const getBlogsLink = badger => {
   if (badger.squarespaceId) {
-    return (<div className={styles.authorLink + ' ' + styles.subheader}>
+    return (<div className={styles.authorLink}>
       <a href={'https://red-badger.com/blog/?author=' + badger.squarespaceId}>
         Read {badger.firstName}&rsquo;s blog posts
       </a>
@@ -79,7 +79,7 @@ const BadgerProfile = ({ badger }) => {
 
             {badger.influence && [
               <h2 className={styles.subheader}>The thing that changed me</h2>,
-              <p>badger.influence</p>]}
+              <p>{badger.influence}</p>]}
           </div>
           <div className={styles.authorLinks}>
             {getBlogsLink(badger)}

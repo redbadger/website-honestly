@@ -15,27 +15,45 @@
 
 .profileContainer {
   composes: fontS2 from "../../css/typography/_fonts.css";
-  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: lightSerif from "../../css/typography/_fonts.css";
   padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 30px;
 }
 
 .subheader {
   composes: fontS2 from "../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../css/typography/_fonts.css";
+}
+
+.authorLinks {
+  composes: subheader;
+}
+
+.greenBox {
+  composes: authorLinks;
+  composes: fontXS from "../../css/typography/_fonts.css";
   color: badgerBlack;
+  border: solid 2px daveGreen;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .about {
   margin: 40px 0;
 }
 
-.authorLinks a{
+.authorLinks a {
   color: badgerBlack;
   border-bottom: solid 2px daveGreen;
 }
 
-.authorLinks{
+.authorLink {
   margin-top: 40px;
 }
 
@@ -43,11 +61,9 @@
   margin-bottom: 10px;
 }
 
-
 .badgerImage {
-  width: 454px;
+  width: 335px;
 }
-
 
 .badgerProfile {
   background-color: badgerWhite;
@@ -67,21 +83,15 @@
   margin-bottom: 20px;
 }
 
-.greenBox {
-  composes: subheader;
-  border: solid 2px daveGreen;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 20px;
+.profileDescriptionContainer {
+  max-width: 335px;
 }
-
 .profileDescriptionContainer hr {
   margin: 30px 0;
 }
 
 .profilePictureContainer {
-  margin-right: 50px;
+  margin-bottom: 30px;
 }
 
 .socialLinks {
@@ -93,10 +103,31 @@
   margin-right: 15px;
 }
 
+
 @media largeScreen {
+  .badgerImage {
+    width: 454px;
+  }
   .profileContainer {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+  }
+  .profileDescriptionContainer{
+    max-width: 660px;
+  }
+
+}
+
+@media mediumScreen {
+  .badgerImage {
+    width: 478px;
+  }
+  .profileDescriptionContainer{
+    max-width: 478px;
+  }
+  .profileContainer {
+    margin: 0 auto;
+    padding-bottom: 40px;
   }
 }
