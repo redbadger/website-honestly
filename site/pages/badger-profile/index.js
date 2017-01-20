@@ -22,7 +22,7 @@ type Badger = {
   github: string,
   linkedIn: string,
   squarespaceId: string,
-  categories: Array<{ slug: string, name: string }>,
+  categories: Array<{ slug: string, name: string, order: number }>,
 };
 
 const getSocialItems = badger => {
@@ -64,6 +64,7 @@ const getBlogsLink = badger => {
 
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
+  badger.categories.sort((a, b) => (a.order - b.order));
   const categories = badger.categories.map(c => c.name).join(', ');
   return (
     <div className={styles.badgerProfile}>
