@@ -68,7 +68,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     key: 'badger',
     route: 'about-us/people/{slug}',
     stateToProps: (state, params = {}) => ({ badger: state.badger[params.slug] }),
-    gen: () => [],
+    gen: state => state.badgers.map(({ slug }) => ({ slug })),
   },
   {
     title: 'Not found',
