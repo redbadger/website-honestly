@@ -21,7 +21,7 @@ export type Badger = {
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   return (
-    <Link to="badger" navigationData={{ name: badger.slug }} className={styles.badgerProfile}>
+    <Link to="badger" navigationData={{ slug: badger.slug }} className={styles.badgerProfile}>
       <img
         src={badger.loaded ? badger.imageUrl : badger.placeholderImage}
         alt={fullName}
