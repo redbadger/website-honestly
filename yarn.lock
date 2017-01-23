@@ -989,14 +989,6 @@ buffer@4.9.1, buffer@^4.9.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-bugsnag@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/bugsnag/-/bugsnag-1.9.0.tgz#28726902feb00a497c3c41ba9374b7972ae8048d"
-  dependencies:
-    promise "7.x"
-    request "2.x"
-    stack-trace "0.0.9"
-
 "bugsnag@https://github.com/redbadger/bugsnag-node#d877e32aab8b7d507ed3b66cd487e3d3b137dcd1":
   version "1.9.0"
   resolved "https://github.com/redbadger/bugsnag-node#d877e32aab8b7d507ed3b66cd487e3d3b137dcd1"
