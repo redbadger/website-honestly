@@ -1,11 +1,10 @@
 import bugsnag from 'bugsnag';
 
-// import doPublish from './publish';
+import doPublish from './publish';
 import doContactUs from './contact_us';
 import doSignUp from './mailchimp/sign-up/index';
 import doUpdateUser from './mailchimp/update-user/index';
 
-console.log('Registering bugsnag with ', process.env.BUGSNAG_KEY); // eslint-disable-line no-console
 bugsnag.register(process.env.BUGSNAG_KEY);
 bugsnag.configure({
   autoNotifyUncaught: true,
@@ -14,8 +13,7 @@ bugsnag.configure({
 
 const cbWithErrorHandling = cb => (e, body) => {
   if (e) {
-    bugsnag.notify(e, (bse, response) => {
-      console.error('Error tracking:', bse, response, process.env.ENV); // eslint-disable-line no-console
+    bugsnag.notify(e, () => {
       e.message = `[500] ${e.message}`.replace(/\n/g, ''); // eslint-disable-line no-param-reassign
       return cb(e);
     });
@@ -37,7 +35,7 @@ export function publish(event, context, cb) {
     return cb(new Error('[403] Forbidden'));
   }
 
-  errorHandlerWrapper(() => { throw new Error('Hi Becca'); })(event, context, cb);
+  errorHandlerWrapper(doPublish)(event, context, cb);
 }
 
 export const contactUs = errorHandlerWrapper(doContactUs);
