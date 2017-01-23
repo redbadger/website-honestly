@@ -28,7 +28,7 @@ const getSiteState = () => (
     ...state,
     job: toDict(state.jobs, j => j.slug),
     events,
-    event: toDict(events, j => j.slug),
+    event: toDict(events, e => e.slug),
     badgers,
     badger: toDict(badgers, b => b.slug),
     categories,

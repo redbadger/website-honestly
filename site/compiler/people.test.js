@@ -10,6 +10,7 @@ describe('site/compiler', () => {
     event: {},
     instagramPosts: [],
     tweets: [],
+    badger: {},
   };
 
   const baseBadger = {
@@ -51,8 +52,6 @@ describe('site/compiler', () => {
       expect(pages[10].path).to.equal('about-us/people/category/leadership/index.html');
       expect(pages[10].body).to.match(/Alex/);
       expect(pages[10].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[11].path).to.equal('about-us/people/alex/index.html');
-      expect(pages[11].body).to.match(/Alex/);
     });
 
     describe('with engineer, leadership and pm', () => {
@@ -104,10 +103,6 @@ describe('site/compiler', () => {
         expect(pages[11].body).to.match(/Sari/);
         expect(pages[11].body).to.not.match(/Alex/);
         expect(pages[11].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[12].path).to.equal('about-us/people/alex/index.html');
-        expect(pages[12].body).to.match(/Alex/);
-        expect(pages[13].path).to.equal('about-us/people/sari/index.html');
-        expect(pages[13].body).to.match(/Sari/);
       });
     });
 
@@ -134,8 +129,6 @@ describe('site/compiler', () => {
         expect(pages[9].path).to.equal('about-us/people/category/ux-design/index.html');
         expect(pages[9].body).to.match(/Sari/);
         expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[10].path).to.equal('about-us/people/sari/index.html');
-        expect(pages[10].body).to.match(/Sari/);
       });
     });
 
@@ -197,11 +190,6 @@ describe('site/compiler', () => {
         expect(pages[12].body).to.match(/Alex 19/);
         expect(pages[12].body).to.not.match(/Etiene/);
         expect(pages[12].body).to.not.match(/Are you a potential Badger/);
-        for (let i = 0; i < 20; i += 1) {
-          expect(pages[13 + i].path).to.equal('about-us/people/alex-' + i + '/index.html');
-        }
-        expect(pages[33].path).to.equal('about-us/people/etiene/index.html');
-        expect(pages[33].body).to.match(/Etiene/);
       });
     });
 
@@ -241,9 +229,6 @@ describe('site/compiler', () => {
         expect(pages[10].body).to.match(/Alex 0/);
         expect(pages[10].body).to.match(/Alex 19/);
         expect(pages[10].body).to.not.match(/Are you a potential Badger/);
-        for (let i = 0; i < 20; i += 1) {
-          expect(pages[11 + i].path).to.equal('about-us/people/alex-' + i + '/index.html');
-        }
       });
     });
   });
@@ -279,9 +264,6 @@ describe('site/compiler', () => {
       expect(pages[9].body).to.match(/Alex 0/);
       expect(pages[9].body).to.match(/Alex 18/);
       expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-      for (let i = 0; i < 19; i += 1) {
-        expect(pages[10 + i].path).to.equal('about-us/people/alex-' + i + '/index.html');
-      }
     });
   });
 
@@ -354,9 +336,6 @@ describe('site/compiler', () => {
       expect(pages[16].body).to.match(/Alex 40/);
       expect(pages[16].body).to.not.match(/Alex 39/);
       expect(pages[16].body).to.not.match(/Are you a potential Badger/);
-      for (let i = 0; i < 41; i += 1) {
-        expect(pages[17 + i].path).to.equal('about-us/people/alex-' + i + '/index.html');
-      }
     });
   });
 
@@ -434,9 +413,30 @@ describe('site/compiler', () => {
       expect(pages[15].body).to.match(/Alex 20/);
       expect(pages[15].body).to.not.match(/Alex 19/);
       expect(pages[15].body).to.not.match(/Are you a potential Badger/);
-      for (let i = 0; i < 41; i += 1) {
-        expect(pages[16 + i].path).to.equal('about-us/people/alex-' + i + '/index.html');
-      }
+    });
+  });
+  describe('with one badger', () => {
+    it('should render this badger\'s profile page', () => {
+      const categories = [{ name: 'Engineering', slug: 'engineering' }];
+
+      const a = {
+        ...baseBadger,
+        firstName: 'Alex',
+        skills: ['JavaScript', 'Photography'],
+        slug: 'alex',
+        categories,
+      };
+
+      const pages = compileSite({
+        ...baseState,
+        badgers: [a],
+        categories,
+        badger: { [a.slug]: a },
+      });
+      expect(pages.length).to.equal(11);
+      expect(pages[10].path).to.equal('about-us/people/alex/index.html');
+      expect(pages[10].body).to.match(/Alex/);
+      expect(pages[10].body).to.match(/JavaScript, Photography/);
     });
   });
 });
