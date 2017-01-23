@@ -16,6 +16,5 @@ export default function doPublish(_, __, cb) {
     .then(compileSite)
     .then(pages => Promise.all(pages.map(uploadPage)))
     .then(data => cb(null, data))
-    .then(() => testRef) //eslint-disable-line
     .catch(error => cb(error));
 }
