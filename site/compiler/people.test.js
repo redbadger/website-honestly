@@ -319,4 +319,39 @@ describe('site/compiler', () => {
       expect(routes[10].filePath).to.equal('about-us/people/alex/index.html');
     });
   });
+
+  describe('with multiple badger', () => {
+    it('should render each badger\'s profile page', () => {
+      const categories = [{ name: 'Engineering', slug: 'engineering' }];
+
+      const a = {
+        ...baseBadger,
+        firstName: 'Alex',
+        skills: ['JavaScript', 'Photography'],
+        slug: 'alex',
+        categories,
+      };
+
+      const s = {
+        ...baseBadger,
+        firstName: 'Sari',
+        slug: 'sari',
+        categories
+      };
+
+      const routes = expandRoutes({
+        ...baseState,
+        badgers: [a, s],
+        categories,
+        badger: {
+          [a.slug]: a,
+          [s.slug]: s,
+        },
+      }, createStateNavigator());
+
+      expect(routes.length).to.equal(12);
+      expect(routes[10].filePath).to.equal('about-us/people/alex/index.html');
+      expect(routes[11].filePath).to.equal('about-us/people/sari/index.html');
+    });
+  });
 });
