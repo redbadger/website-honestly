@@ -15,6 +15,7 @@ const BlogsLink = ({ badger }: { badger: Badger }) => {
       </a>
     </div>);
   }
+  return null;
 };
 
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
