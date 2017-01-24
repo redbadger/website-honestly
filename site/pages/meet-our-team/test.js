@@ -54,7 +54,7 @@ describe('site/team-slice', () => {
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
           <MeetOurTeam
-            categories={['everyone']}
+            categories={[]}
             category="everyone"
             badgers={badgers}
             page={1}
@@ -89,7 +89,7 @@ describe('site/team-slice', () => {
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
           <MeetOurTeam
-            categories={['everyone']}
+            categories={[]}
             category="everyone"
             badgers={badgers}
             page={2}
@@ -128,7 +128,7 @@ describe('site/team-slice', () => {
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
           <MeetOurTeam
-            categories={['everyone', 'engineering']}
+            categories={[{ name: 'Engineering', slug: 'engineering' }]}
             category="engineering"
             badgers={badgers}
             page={1}
