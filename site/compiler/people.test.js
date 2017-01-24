@@ -1,4 +1,5 @@
-import { compileSite } from '.';
+import createStateNavigator from '../routes';
+import { expandRoutes } from '.';
 
 describe('site/compiler', () => {
   const baseState = {
@@ -35,23 +36,17 @@ describe('site/compiler', () => {
         categories,
       };
 
-      const pages = compileSite({
+      const routes = expandRoutes({
         ...baseState,
         badgers: [a],
         categories,
         badger: { [a.slug]: a },
-      });
+      }, createStateNavigator());
 
-      expect(pages.length).to.equal(12);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/Alex/);
-      expect(pages[8].body).to.match(/Are you a potential Badger/);
-      expect(pages[9].path).to.equal('about-us/people/category/engineering/index.html');
-      expect(pages[9].body).to.match(/Alex/);
-      expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[10].path).to.equal('about-us/people/category/leadership/index.html');
-      expect(pages[10].body).to.match(/Alex/);
-      expect(pages[10].body).to.not.match(/Are you a potential Badger/);
+      expect(routes.length).to.equal(12);
+      expect(routes[8].filePath).to.equal('about-us/people/index.html');
+      expect(routes[9].filePath).to.equal('about-us/people/category/engineering/index.html');
+      expect(routes[10].filePath).to.equal('about-us/people/category/leadership/index.html');
     });
 
     describe('with engineer, leadership and pm', () => {
@@ -76,7 +71,7 @@ describe('site/compiler', () => {
           categories: [categories[2], categories[1]],
         };
 
-        const pages = compileSite({
+        const routes = expandRoutes({
           ...baseState,
           badgers: [a, s],
           badger: {
@@ -84,25 +79,13 @@ describe('site/compiler', () => {
             [s.slug]: s,
           },
           categories,
-        });
+        }, createStateNavigator());
 
-        expect(pages.length).to.equal(14);
-        expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/Alex/);
-        expect(pages[8].body).to.match(/Sari/);
-        expect(pages[8].body).to.match(/Are you a potential Badger/);
-        expect(pages[9].path).to.equal('about-us/people/category/engineering/index.html');
-        expect(pages[9].body).to.match(/Alex/);
-        expect(pages[9].body).to.not.match(/Sari/);
-        expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[10].path).to.equal('about-us/people/category/leadership/index.html');
-        expect(pages[10].body).to.match(/Sari/);
-        expect(pages[10].body).to.match(/Alex/);
-        expect(pages[10].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[11].path).to.equal('about-us/people/category/pm/index.html');
-        expect(pages[11].body).to.match(/Sari/);
-        expect(pages[11].body).to.not.match(/Alex/);
-        expect(pages[11].body).to.not.match(/Are you a potential Badger/);
+        expect(routes.length).to.equal(14);
+        expect(routes[8].filePath).to.equal('about-us/people/index.html');
+        expect(routes[9].filePath).to.equal('about-us/people/category/engineering/index.html');
+        expect(routes[10].filePath).to.equal('about-us/people/category/leadership/index.html');
+        expect(routes[11].filePath).to.equal('about-us/people/category/pm/index.html');
       });
     });
 
@@ -115,20 +98,16 @@ describe('site/compiler', () => {
           slug: 'sari',
           categories,
         };
-        const pages = compileSite({
+        const routes = expandRoutes({
           ...baseState,
           badgers: [s],
           badger: { [s.slug]: s },
           categories,
-        });
+        }, createStateNavigator());
 
-        expect(pages.length).to.equal(11);
-        expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/Sari/);
-        expect(pages[8].body).to.match(/Are you a potential Badger/);
-        expect(pages[9].path).to.equal('about-us/people/category/ux-design/index.html');
-        expect(pages[9].body).to.match(/Sari/);
-        expect(pages[9].body).to.not.match(/Are you a potential Badger/);
+        expect(routes.length).to.equal(11);
+        expect(routes[8].filePath).to.equal('about-us/people/index.html');
+        expect(routes[9].filePath).to.equal('about-us/people/category/ux-design/index.html');
       });
     });
 
@@ -158,38 +137,19 @@ describe('site/compiler', () => {
           slug: 'etiene',
           categories: [categories[0]],
         };
-        const pages = compileSite({
+        const routes = expandRoutes({
           ...baseState,
           badgers: badgers.push(e) && badgers,
           badger: { ...badger, [e.slug]: e },
           categories,
-        });
+        }, createStateNavigator());
 
-        expect(pages.length).to.equal(34);
-        expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/Alex 0/);
-        expect(pages[8].body).to.match(/Alex 18/);
-        expect(pages[8].body).to.match(/Are you a potential Badger/);
-        expect(pages[8].body).to.not.match(/Etiene/);
-        expect(pages[9].path).to.equal('about-us/people/category/everyone/page-2/index.html');
-        expect(pages[9].body).to.match(/Etiene/);
-        expect(pages[9].body).to.match(/Alex 19/);
-        expect(pages[9].body).to.not.match(/Alex 18/);
-        expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[10].path).to.equal('about-us/people/category/engineering/index.html');
-        expect(pages[10].body).to.match(/Alex 0/);
-        expect(pages[10].body).to.match(/Alex 19/);
-        expect(pages[10].body).to.not.match(/Etiene/);
-        expect(pages[10].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[11].path).to.equal('about-us/people/category/engineering/page-2/index.html');
-        expect(pages[11].body).to.match(/Etiene/);
-        expect(pages[11].body).to.not.match(/Alex 19/);
-        expect(pages[11].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[12].path).to.equal('about-us/people/category/leadership/index.html');
-        expect(pages[12].body).to.match(/Alex 0/);
-        expect(pages[12].body).to.match(/Alex 19/);
-        expect(pages[12].body).to.not.match(/Etiene/);
-        expect(pages[12].body).to.not.match(/Are you a potential Badger/);
+        expect(routes.length).to.equal(34);
+        expect(routes[8].filePath).to.equal('about-us/people/index.html');
+        expect(routes[9].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
+        expect(routes[10].filePath).to.equal('about-us/people/category/engineering/index.html');
+        expect(routes[11].filePath).to.equal('about-us/people/category/engineering/page-2/index.html');
+        expect(routes[12].filePath).to.equal('about-us/people/category/leadership/index.html');
       });
     });
 
@@ -208,27 +168,17 @@ describe('site/compiler', () => {
           badgers.push(a);
           badger[a.slug] = a;
         }
-        const pages = compileSite({
+        const routes = expandRoutes({
           ...baseState,
           badgers,
           badger,
           categories,
-        });
+        }, createStateNavigator());
 
-        expect(pages.length).to.equal(31);
-        expect(pages[8].path).to.equal('about-us/people/index.html');
-        expect(pages[8].body).to.match(/Alex 0/);
-        expect(pages[8].body).to.match(/Alex 18/);
-        expect(pages[8].body).to.match(/Are you a potential Badger/);
-        expect(pages[8].body).to.not.match(/Alex 19/);
-        expect(pages[9].path).to.equal('about-us/people/category/everyone/page-2/index.html');
-        expect(pages[9].body).to.match(/Alex 19/);
-        expect(pages[9].body).to.not.match(/Alex 18/);
-        expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-        expect(pages[10].path).to.equal('about-us/people/category/engineering/index.html');
-        expect(pages[10].body).to.match(/Alex 0/);
-        expect(pages[10].body).to.match(/Alex 19/);
-        expect(pages[10].body).to.not.match(/Are you a potential Badger/);
+        expect(routes.length).to.equal(31);
+        expect(routes[8].filePath).to.equal('about-us/people/index.html');
+        expect(routes[9].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
+        expect(routes[10].filePath).to.equal('about-us/people/category/engineering/index.html');
       });
     });
   });
@@ -248,22 +198,16 @@ describe('site/compiler', () => {
         badgers.push(a);
         badger[a.slug] = a;
       }
-      const pages = compileSite({
+      const routes = expandRoutes({
         ...baseState,
         badgers,
         badger,
         categories,
-      });
+      }, createStateNavigator());
 
-      expect(pages.length).to.equal(29);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/Alex 0/);
-      expect(pages[8].body).to.match(/Alex 18/);
-      expect(pages[8].body).to.match(/Are you a potential Badger/);
-      expect(pages[9].path).to.equal('about-us/people/category/engineering/index.html');
-      expect(pages[9].body).to.match(/Alex 0/);
-      expect(pages[9].body).to.match(/Alex 18/);
-      expect(pages[9].body).to.not.match(/Are you a potential Badger/);
+      expect(routes.length).to.equal(29);
+      expect(routes[8].filePath).to.equal('about-us/people/index.html');
+      expect(routes[9].filePath).to.equal('about-us/people/category/engineering/index.html');
     });
   });
 
@@ -285,57 +229,23 @@ describe('site/compiler', () => {
         badgers.push(a);
         badger[a.slug] = a;
       }
-      const pages = compileSite({
+      const routes = expandRoutes({
         ...baseState,
         badgers,
         badger,
         categories,
-      });
+      }, createStateNavigator());
 
-      expect(pages.length).to.equal(58);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/Alex 0/);
-      expect(pages[8].body).to.match(/Alex 18/);
-      expect(pages[8].body).to.match(/Are you a potential Badger/);
-      expect(pages[8].body).to.not.match(/Alex 19/);
-      expect(pages[9].path).to.equal('about-us/people/category/everyone/page-2/index.html');
-      expect(pages[9].body).to.match(/Alex 19/);
-      expect(pages[9].body).to.match(/Alex 38/);
-      expect(pages[9].body).to.not.match(/Alex 39/);
-      expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[10].path).to.equal('about-us/people/category/everyone/page-3/index.html');
-      expect(pages[10].body).to.match(/Alex 39/);
-      expect(pages[10].body).to.match(/Alex 40/);
-      expect(pages[10].body).to.not.match(/Alex 38/);
-      expect(pages[10].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[11].path).to.equal('about-us/people/category/engineering/index.html');
-      expect(pages[11].body).to.match(/Alex 0/);
-      expect(pages[11].body).to.match(/Alex 19/);
-      expect(pages[11].body).to.not.match(/Alex 20/);
-      expect(pages[11].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[12].path).to.equal('about-us/people/category/engineering/page-2/index.html');
-      expect(pages[12].body).to.match(/Alex 20/);
-      expect(pages[12].body).to.match(/Alex 39/);
-      expect(pages[12].body).to.not.match(/Alex 40/);
-      expect(pages[12].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[13].path).to.equal('about-us/people/category/engineering/page-3/index.html');
-      expect(pages[13].body).to.match(/Alex 40/);
-      expect(pages[13].body).to.not.match(/Alex 39/);
-      expect(pages[13].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[14].path).to.equal('about-us/people/category/leadership/index.html');
-      expect(pages[14].body).to.match(/Alex 0/);
-      expect(pages[14].body).to.match(/Alex 19/);
-      expect(pages[14].body).to.not.match(/Alex 20/);
-      expect(pages[14].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[15].path).to.equal('about-us/people/category/leadership/page-2/index.html');
-      expect(pages[15].body).to.match(/Alex 20/);
-      expect(pages[15].body).to.match(/Alex 39/);
-      expect(pages[15].body).to.not.match(/Alex 40/);
-      expect(pages[15].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[16].path).to.equal('about-us/people/category/leadership/page-3/index.html');
-      expect(pages[16].body).to.match(/Alex 40/);
-      expect(pages[16].body).to.not.match(/Alex 39/);
-      expect(pages[16].body).to.not.match(/Are you a potential Badger/);
+      expect(routes.length).to.equal(58);
+      expect(routes[8].filePath).to.equal('about-us/people/index.html');
+      expect(routes[9].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
+      expect(routes[10].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
+      expect(routes[11].filePath).to.equal('about-us/people/category/engineering/index.html');
+      expect(routes[12].filePath).to.equal('about-us/people/category/engineering/page-2/index.html');
+      expect(routes[13].filePath).to.equal('about-us/people/category/engineering/page-3/index.html');
+      expect(routes[14].filePath).to.equal('about-us/people/category/leadership/index.html');
+      expect(routes[15].filePath).to.equal('about-us/people/category/leadership/page-2/index.html');
+      expect(routes[16].filePath).to.equal('about-us/people/category/leadership/page-3/index.html');
     });
   });
 
@@ -367,54 +277,25 @@ describe('site/compiler', () => {
         badgers.push(a);
         badger[a.slug] = a;
       }
-      const pages = compileSite({
+      const routes = expandRoutes({
         ...baseState,
         badgers,
         badger,
         categories,
-      });
+      }, createStateNavigator());
 
-      expect(pages.length).to.equal(57);
-      expect(pages[8].path).to.equal('about-us/people/index.html');
-      expect(pages[8].body).to.match(/Alex 0/);
-      expect(pages[8].body).to.match(/Alex 18/);
-      expect(pages[8].body).to.match(/Are you a potential Badger/);
-      expect(pages[8].body).to.not.match(/Alex 19/);
-      expect(pages[9].path).to.equal('about-us/people/category/everyone/page-2/index.html');
-      expect(pages[9].body).to.match(/Alex 19/);
-      expect(pages[9].body).to.match(/Alex 38/);
-      expect(pages[9].body).to.not.match(/Alex 39/);
-      expect(pages[9].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[10].path).to.equal('about-us/people/category/everyone/page-3/index.html');
-      expect(pages[10].body).to.match(/Alex 39/);
-      expect(pages[10].body).to.match(/Alex 40/);
-      expect(pages[10].body).to.not.match(/Alex 38/);
-      expect(pages[10].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[11].path).to.equal('about-us/people/category/engineering/index.html');
-      expect(pages[11].body).to.match(/Alex 0/);
-      expect(pages[11].body).to.match(/Alex 19/);
-      expect(pages[11].body).to.not.match(/Alex 20/);
-      expect(pages[11].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[12].path).to.equal('about-us/people/category/engineering/page-2/index.html');
-      expect(pages[12].body).to.match(/Alex 20/);
-      expect(pages[12].body).to.match(/Alex 39/);
-      expect(pages[12].body).to.not.match(/Alex 40/);
-      expect(pages[12].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[13].path).to.equal('about-us/people/category/engineering/page-3/index.html');
-      expect(pages[13].body).to.match(/Alex 40/);
-      expect(pages[13].body).to.not.match(/Alex 39/);
-      expect(pages[13].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[14].path).to.equal('about-us/people/category/leadership/index.html');
-      expect(pages[14].body).to.match(/Alex 0/);
-      expect(pages[14].body).to.match(/Alex 19/);
-      expect(pages[14].body).to.not.match(/Alex 20/);
-      expect(pages[14].body).to.not.match(/Are you a potential Badger/);
-      expect(pages[15].path).to.equal('about-us/people/category/leadership/page-2/index.html');
-      expect(pages[15].body).to.match(/Alex 20/);
-      expect(pages[15].body).to.not.match(/Alex 19/);
-      expect(pages[15].body).to.not.match(/Are you a potential Badger/);
+      expect(routes.length).to.equal(57);
+      expect(routes[8].filePath).to.equal('about-us/people/index.html');
+      expect(routes[9].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
+      expect(routes[10].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
+      expect(routes[11].filePath).to.equal('about-us/people/category/engineering/index.html');
+      expect(routes[12].filePath).to.equal('about-us/people/category/engineering/page-2/index.html');
+      expect(routes[13].filePath).to.equal('about-us/people/category/engineering/page-3/index.html');
+      expect(routes[14].filePath).to.equal('about-us/people/category/leadership/index.html');
+      expect(routes[15].filePath).to.equal('about-us/people/category/leadership/page-2/index.html');
     });
   });
+
   describe('with one badger', () => {
     it('should render this badger\'s profile page', () => {
       const categories = [{ name: 'Engineering', slug: 'engineering' }];
@@ -427,16 +308,15 @@ describe('site/compiler', () => {
         categories,
       };
 
-      const pages = compileSite({
+      const routes = expandRoutes({
         ...baseState,
         badgers: [a],
         categories,
         badger: { [a.slug]: a },
-      });
-      expect(pages.length).to.equal(11);
-      expect(pages[10].path).to.equal('about-us/people/alex/index.html');
-      expect(pages[10].body).to.match(/Alex/);
-      expect(pages[10].body).to.match(/JavaScript, Photography/);
+      }, createStateNavigator());
+
+      expect(routes.length).to.equal(11);
+      expect(routes[10].filePath).to.equal('about-us/people/alex/index.html');
     });
   });
 });
