@@ -6,6 +6,7 @@ import MeetOurTeam from '.';
 describe('site/team-slice', () => {
   it('should render badgers list', () => {
     const stateNavigator = createStateNavigator();
+    stateNavigator.navigate('badgers', null, 'none');
     const context = {
       context: { stateNavigator },
       childContextTypes: { stateNavigator: React.PropTypes.object },
@@ -26,6 +27,7 @@ describe('site/team-slice', () => {
   describe('with 20 Badgers, first page of Everyone', () => {
     it('should render badgers list with link to page 2', () => {
       const stateNavigator = createStateNavigator();
+      stateNavigator.navigate('badgers', null, 'none');
       const context = {
         context: { stateNavigator },
         childContextTypes: { stateNavigator: React.PropTypes.object },
@@ -47,6 +49,7 @@ describe('site/team-slice', () => {
       expect(teamSlice.find('ul').last().text()).to.match(/Alex 18/);
       expect(teamSlice.find('ul').last().text()).to.match(/Are you a potential Badger/);
       expect(teamSlice.find('ul').last().text()).to.not.match(/Alex 19/);
+      expect(teamSlice.find('a').find({ children: 'Previous page' }).props().href).to.equal(null);
       expect(teamSlice.find('a').find({ children: 'Next page' }).props().href)
         .to.equal('/about-us/people/category/everyone/page-2');
     });
@@ -78,6 +81,7 @@ describe('site/team-slice', () => {
       expect(teamSlice.find('ul').last().text()).to.not.match(/Are you a potential Badger/);
       expect(teamSlice.find('a').find({ children: 'Previous page' }).props().href)
         .to.equal('/about-us/people');
+      expect(teamSlice.find('a').find({ children: 'Next page' }).props().href).to.equal(null);
     });
   });
 });
