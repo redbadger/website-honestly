@@ -9,7 +9,6 @@
   composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
 	composes: fontXS from "../../../../../css/typography/_fonts.css";
   transition: 0.3s ease-in-out;
-  left: -15px;
   cursor: pointer;
 }
 
@@ -25,11 +24,11 @@
   border: none;
   background: transparent;
   top: -35px;
-  margin-left: -5px;
+  margin-left: -18px;
   text-align: left;
   padding: 0;
   height: 40px;
-  width: 20px;
+  width: 36px;
   overflow: visible;
 }
 
@@ -62,6 +61,7 @@
   bottom: 0px;
   cursor: pointer;
   background-color: #CCC;
+  left: 12px;
  }
 
 .old span,
