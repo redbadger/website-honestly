@@ -8,6 +8,8 @@ import twitterSVG from './SVG/twitter.svg';
 import githubSVG from './SVG/github.svg';
 import linkedinSVG from './SVG/linked-in.svg';
 
+import Link from '../../components/link';
+
 type Badger = {
   firstName: string,
   lastName: string,
@@ -55,7 +57,7 @@ const getSocialItems = badger => {
 const getBlogsLink = badger => {
   if (badger.squarespaceId) {
     return (<div className={styles.authorLink}>
-      <a href={'https://red-badger.com/blog/?author=' + badger.squarespaceId}>
+      <a href={'/blog/?author=' + badger.squarespaceId}>
         Read {badger.firstName}&rsquo;s blog posts
       </a>
     </div>);
@@ -105,7 +107,13 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
           <hr />
           <a className={styles.greenBox} href="/about-us/people">See Everyone</a>
           {badger.categories.map(c =>
-            <a className={styles.greenBox} href={'/about-us/people/category/' + c.slug}>See {c.name} team</a>
+            <Link
+              to="badgers"
+              navigationData={{ category: c.slug }}
+              className={styles.greenBox}
+            >
+                See {c.name} team
+            </Link>
           )}
         </div>
       </div>
