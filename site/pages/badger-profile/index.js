@@ -1,58 +1,11 @@
 // @flow
-import InlineSVG from 'svg-inline-react';
 import React from 'react';
 
 import styles from './style.css';
-
-import twitterSVG from './SVG/twitter.svg';
-import githubSVG from './SVG/github.svg';
-import linkedinSVG from './SVG/linked-in.svg';
-
+import SocialContacts from './social-contacts';
 import Link from '../../components/link';
 
-type Badger = {
-  firstName: string,
-  lastName: string,
-  jobTitle: string,
-  slug: string,
-  imageUrl: string,
-  about: string,
-  skills: Array<string>,
-  achievements: string,
-  influence: string,
-  twitter: string,
-  github: string,
-  linkedIn: string,
-  squarespaceId: string,
-  categories: Array<{ slug: string, name: string, order: number }>,
-};
-
-const getSocialItems = badger => {
-  const socialItems = [];
-  const socialPages = [
-    { social: 'Twitter', img: twitterSVG },
-    { social: 'Github', img: githubSVG },
-    { social: 'LinkedIn', img: linkedinSVG },
-  ];
-
-  for (const s of socialPages) {
-    if (badger[s.social.toLowerCase()]) {
-      socialItems.push(<li>
-        <a
-          href={badger[s.social.toLowerCase()]}
-          title={s.social}
-          className={styles.badgerSocialIcon}
-        >
-          <InlineSVG
-            src={s.img}
-            title={s.social}
-          />
-        </a>
-      </li>);
-    }
-  }
-  return socialItems;
-};
+import type { Badger } from '../../types';
 
 const getBlogsLink = badger => {
   if (badger.squarespaceId) {
@@ -82,9 +35,9 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
           <h1 className={styles.header}>{fullName}</h1>
           <h2 className={styles.subheader}>{badger.jobTitle}</h2>
           <h3 className={styles.categories}>{categories}</h3>
-          <ul className={styles.socialLinks}>
-            {getSocialItems(badger)}
-          </ul>
+
+          <SocialContacts badger={badger} />
+
           <div className={styles.about}>
             {badger.about}
           </div>

@@ -71,14 +71,6 @@
   padding: 0 20px;
 }
 
-.badgerSocialIcon svg {
-  height: 20px;
-}
-
-.badgerSocialIcon path {
-  fill: badgerBlack;
-}
-
 .descriptionSections p {
   margin-bottom: 20px;
 }
@@ -94,16 +86,6 @@
   margin-bottom: 30px;
 }
 
-.socialLinks {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.socialLinks li {
-  margin-right: 15px;
-}
-
-
 @media largeScreen {
   .badgerImage {
     width: 454px;
@@ -116,7 +98,6 @@
   .profileDescriptionContainer{
     max-width: 660px;
   }
-
 }
 
 @media mediumScreen {

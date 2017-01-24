@@ -1,0 +1,18 @@
+@value badgerBlack from "../../../css/_colors.css";
+
+.badgerSocialIcon svg {
+  height: 20px;
+}
+
+.badgerSocialIcon path {
+  fill: badgerBlack;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socialLinks li {
+  margin-right: 15px;
+}
