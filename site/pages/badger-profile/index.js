@@ -7,7 +7,7 @@ import Link from '../../components/link';
 
 import type { Badger } from '../../types';
 
-const getBlogsLink = badger => {
+const BlogsLink = ({ badger }: { badger: Badger }) => {
   if (badger.squarespaceId) {
     return (<div className={styles.authorLink}>
       <a href={'/blog/?author=' + badger.squarespaceId}>
@@ -55,10 +55,10 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
               <p>{badger.influence}</p>]}
           </div>
           <div className={styles.authorLinks}>
-            {getBlogsLink(badger)}
+            <BlogsLink badger={badger} />
           </div>
           <hr />
-          <a className={styles.greenBox} href="/about-us/people">See Everyone</a>
+          <Link to="badgers" className={styles.greenBox}>See Everyone</Link>
           {badger.categories.map(c =>
             <Link
               to="badgers"
