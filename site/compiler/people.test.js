@@ -336,7 +336,7 @@ describe('site/compiler', () => {
         ...baseBadger,
         firstName: 'Sari',
         slug: 'sari',
-        categories
+        categories,
       };
 
       const routes = expandRoutes({
