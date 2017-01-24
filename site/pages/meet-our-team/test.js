@@ -1,28 +1,44 @@
-import React from 'react';
-import { mount } from 'enzyme';
+import React, { Component, PropTypes } from 'react';
+import { render } from 'enzyme';
 import createStateNavigator from '../../routes';
 import MeetOurTeam from '.';
 
 describe('site/team-slice', () => {
+  class Layout extends Component {
+    static propTypes = {
+      children: PropTypes.element.isRequired,
+      stateNavigator: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+    };
+
+    static childContextTypes = {
+      stateNavigator: PropTypes.object,
+    }
+
+    getChildContext() {
+      return { stateNavigator: this.props.stateNavigator };
+    }
+    render() {
+      return this.props.children;
+    }
+  }
+
   it('should render badgers list', () => {
     const stateNavigator = createStateNavigator();
     stateNavigator.navigate('badgers', null, 'none');
 
-    const context = {
-      context: { stateNavigator },
-      childContextTypes: { stateNavigator: React.PropTypes.object },
-    };
+    const teamSlice = render(
+      <Layout stateNavigator={stateNavigator}>
+        <MeetOurTeam
+          categories={[]}
+          category="everyone"
+          badgers={[{ firstName: 'Alex' }]}
+          page={1}
+        />
+      </Layout>);
 
-    const teamSlice = mount(
-      <MeetOurTeam
-        categories={['everyone']}
-        category="everyone"
-        badgers={[{ firstName: 'Alex' }]}
-        page={1}
-      />, context);
-
-    expect(teamSlice.find('ul').at(1).text()).to.match(/Alex/);
-    expect(teamSlice.find('ul').at(1).text()).to.match(/Are you a potential Badger/);
+    const badgersList = teamSlice.find('ul').last();
+    expect(badgersList.text()).to.match(/Alex/);
+    expect(badgersList.text()).to.match(/Are you a potential Badger/);
   });
 
   describe('with 20 Badgers, first page of Everyone', () => {
@@ -30,30 +46,33 @@ describe('site/team-slice', () => {
       const stateNavigator = createStateNavigator();
       stateNavigator.navigate('badgers', null, 'none');
 
-      const context = {
-        context: { stateNavigator },
-        childContextTypes: { stateNavigator: React.PropTypes.object },
-      };
       const badgers = [];
       for (let i = 0; i < 20; i += 1) {
         badgers.push({ firstName: 'Alex ' + i });
       }
 
-      const teamSlice = mount(
-        <MeetOurTeam
-          categories={['everyone']}
-          category="everyone"
-          badgers={badgers}
-          page={1}
-        />, context);
+      const teamSlice = render(
+        <Layout stateNavigator={stateNavigator}>
+          <MeetOurTeam
+            categories={['everyone']}
+            category="everyone"
+            badgers={badgers}
+            page={1}
+          />
+        </Layout>);
 
-      expect(teamSlice.find('ul').last().text()).to.match(/Alex 0/);
-      expect(teamSlice.find('ul').last().text()).to.match(/Alex 18/);
-      expect(teamSlice.find('ul').last().text()).to.match(/Are you a potential Badger/);
-      expect(teamSlice.find('ul').last().text()).to.not.match(/Alex 19/);
-      expect(teamSlice.find('a').find({ children: 'Previous page' }).props().href).to.equal(null);
-      expect(teamSlice.find('a').find({ children: 'Next page' }).props().href)
-        .to.equal('/about-us/people/category/everyone/page-2');
+      const badgersList = teamSlice.find('ul').last();
+      const links = teamSlice.find('a');
+      const previousLink = links.slice(-2, -1);
+      const nextLink = links.slice(-1);
+      expect(badgersList).to.match(/Alex 0/);
+      expect(badgersList).to.match(/Alex 18/);
+      expect(badgersList).to.match(/Are you a potential Badger/);
+      expect(badgersList).to.not.match(/Alex 19/);
+      expect(previousLink.attr('href')).to.equal(undefined);
+      expect(previousLink.text()).to.equal('Previous page');
+      expect(nextLink.attr('href')).to.equal('/about-us/people/category/everyone/page-2');
+      expect(nextLink.text()).to.equal('Next page');
     });
   });
 
@@ -62,29 +81,32 @@ describe('site/team-slice', () => {
       const stateNavigator = createStateNavigator();
       stateNavigator.navigate('badgers', { page: 2 }, 'none');
 
-      const context = {
-        context: { stateNavigator },
-        childContextTypes: { stateNavigator: React.PropTypes.object },
-      };
       const badgers = [];
       for (let i = 0; i < 20; i += 1) {
         badgers.push({ firstName: 'Alex ' + i });
       }
 
-      const teamSlice = mount(
-        <MeetOurTeam
-          categories={['everyone']}
-          category="everyone"
-          badgers={badgers}
-          page={2}
-        />, context);
+      const teamSlice = render(
+        <Layout stateNavigator={stateNavigator}>
+          <MeetOurTeam
+            categories={['everyone']}
+            category="everyone"
+            badgers={badgers}
+            page={2}
+          />
+        </Layout>);
 
-      expect(teamSlice.find('ul').last().text()).to.match(/Alex 19/);
-      expect(teamSlice.find('ul').last().text()).to.not.match(/Alex 18/);
-      expect(teamSlice.find('ul').last().text()).to.not.match(/Are you a potential Badger/);
-      expect(teamSlice.find('a').find({ children: 'Previous page' }).props().href)
-        .to.equal('/about-us/people');
-      expect(teamSlice.find('a').find({ children: 'Next page' }).props().href).to.equal(null);
+      const badgersList = teamSlice.find('ul').last();
+      const links = teamSlice.find('a');
+      const previousLink = links.slice(-2, -1);
+      const nextLink = links.slice(-1);
+      expect(badgersList).to.match(/Alex 19/);
+      expect(badgersList).to.not.match(/Alex 18/);
+      expect(badgersList).to.not.match(/Are you a potential Badger/);
+      expect(previousLink.attr('href')).to.equal('/about-us/people');
+      expect(previousLink.text()).to.equal('Previous page');
+      expect(nextLink.attr('href')).to.equal(undefined);
+      expect(nextLink.text()).to.equal('Next page');
     });
   });
 
@@ -93,10 +115,6 @@ describe('site/team-slice', () => {
       const stateNavigator = createStateNavigator();
       stateNavigator.navigate('badgers', { category: 'engineering' }, 'none');
 
-      const context = {
-        context: { stateNavigator },
-        childContextTypes: { stateNavigator: React.PropTypes.object },
-      };
       const badgers = [];
       for (let i = 0; i < 20; i += 1) {
         badgers.push({
@@ -107,20 +125,28 @@ describe('site/team-slice', () => {
         });
       }
 
-      const teamSlice = mount(
-        <MeetOurTeam
-          categories={['everyone', 'engineering']}
-          category="engineering"
-          badgers={badgers}
-          page={1}
-        />, context);
+      const teamSlice = render(
+        <Layout stateNavigator={stateNavigator}>
+          <MeetOurTeam
+            categories={['everyone', 'engineering']}
+            category="engineering"
+            badgers={badgers}
+            page={1}
+          />
+        </Layout>);
 
-      expect(teamSlice.find('ul').last().text()).to.match(/Alex 0/);
-      expect(teamSlice.find('ul').last().text()).to.match(/Alex 18/);
-      expect(teamSlice.find('ul').last().text()).to.match(/Alex 19/);
-      expect(teamSlice.find('ul').last().text()).to.not.match(/Are you a potential Badger/);
-      expect(teamSlice.find('a').find({ children: 'Previous page' }).props().href).to.equal(null);
-      expect(teamSlice.find('a').find({ children: 'Next page' }).props().href).to.equal(null);
+      const badgersList = teamSlice.find('ul').last();
+      const links = teamSlice.find('a');
+      const previousLink = links.slice(-2, -1);
+      const nextLink = links.slice(-1);
+      expect(badgersList).to.match(/Alex 0/);
+      expect(badgersList).to.match(/Alex 18/);
+      expect(badgersList).to.match(/Alex 19/);
+      expect(badgersList).to.not.match(/Are you a potential Badger/);
+      expect(previousLink.attr('href')).to.equal(undefined);
+      expect(previousLink.text()).to.equal('Previous page');
+      expect(nextLink.attr('href')).to.equal(undefined);
+      expect(nextLink.text()).to.equal('Next page');
     });
   });
 });
