@@ -53,9 +53,7 @@ class TeamSlice extends React.Component {
   };
 
   componentDidMount() {
-    if (typeof requestAnimationFrame !== 'undefined') {
-      this.requestAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
-    }
+    this.requestAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
   }
 
   componentWillReceiveProps(nextProps: TeamSliceProps) {
