@@ -19,7 +19,7 @@
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 30px;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .profileDescriptionContainer {
-  max-width: 335px;
+  width: 335px;
 }
 .profileDescriptionContainer hr {
   margin: 30px 0;
@@ -96,19 +96,35 @@
     padding-bottom: 30px;
   }
   .profileDescriptionContainer{
-    max-width: 660px;
+    width: 660px;
+  }
+  .profilePictureContainer {
+    margin-right: 50px;
   }
 }
 
 @media mediumScreen {
+  .profilePictureContainer {
+    margin-right: 50px;
+  }
   .badgerImage {
     width: 478px;
   }
   .profileDescriptionContainer{
-    max-width: 478px;
+    width: 478px;
   }
   .profileContainer {
     margin: 0 auto;
     padding-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 1045px) {
+  .profileContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .profilePictureContainer {
+    margin-right: 0px;
   }
 }
