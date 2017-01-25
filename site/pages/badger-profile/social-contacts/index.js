@@ -20,7 +20,7 @@ const SocialContacts = ({ badger }: { badger: Badger }) => {
 
   for (const s of socialPages) {
     if (badger[s.social.toLowerCase()]) {
-      socialItems.push(<li>
+      socialItems.push(<li key={s.social}>
         <a
           href={badger[s.social.toLowerCase()]}
           title={s.social}

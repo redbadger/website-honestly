@@ -62,6 +62,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
           <Link to="badgers" className={styles.greenBox}>See Everyone</Link>
           {badger.categories.map(c =>
             <Link
+              key={c.slug}
               to="badgers"
               navigationData={{ category: c.slug }}
               className={styles.greenBox}
