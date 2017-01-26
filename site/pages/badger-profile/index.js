@@ -54,7 +54,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             </div>}
 
             {badger.influence && <div>
-              <h2 className={styles.subheader}>The thing that changed me</h2>,
+              <h2 className={styles.subheader}>The thing that changed me</h2>
               <p>{badger.influence}</p>
             </div>}
           </div>

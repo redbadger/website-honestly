@@ -1,7 +1,7 @@
 /* eslint-disable */
 // @flow
 
-declare type Badger = {
+type Badger = {
   firstName: string,
   lastName: string,
   jobTitle: string,

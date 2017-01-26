@@ -64,7 +64,7 @@ export const routeDefinitions : Array<RouteDefinition> = [
     gen: genBadgersParams,
   },
   {
-    title: ({ badger }) => badger.firstName + ' ' + badger.lastName,
+    title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
     key: 'badger',
     route: 'about-us/people/{slug}',
     stateToProps: (state, params = {}) => ({ badger: state.badger[params.slug] }),
