@@ -1,5 +1,5 @@
 @value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../css/_sizes.css";
+@value mediumScreen from "../../css/_sizes.css";
 
 .categories {
   composes: fontS2 from "../../css/typography/_fonts.css";
@@ -86,7 +86,26 @@
   margin-bottom: 30px;
 }
 
-@media largeScreen {
+@media mediumScreen {
+  .badgerImage {
+    width: 478px;
+  }
+  .profileContainer {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profileDescriptionContainer{
+    width: 478px;
+  }
+  .profilePictureContainer {
+    margin-right: 0px;
+  }
+}
+
+/* L */
+@media screen and (min-width: 1050px) {
   .badgerImage {
     width: 454px;
   }
@@ -94,37 +113,14 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 30px;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .profileDescriptionContainer{
-    width: 660px;
+    width: 50%;
+    max-width: 660px;
   }
   .profilePictureContainer {
     margin-right: 50px;
-  }
-}
-
-@media mediumScreen {
-  .profilePictureContainer {
-    margin-right: 50px;
-  }
-  .badgerImage {
-    width: 478px;
-  }
-  .profileDescriptionContainer{
-    width: 478px;
-  }
-  .profileContainer {
-    margin: 0 auto;
-    padding-bottom: 40px;
-  }
-}
-
-@media all and (max-width: 1045px) {
-  .profileContainer{
-    flex-direction: column;
-    align-items: center;
-  }
-  .profilePictureContainer {
-    margin-right: 0px;
   }
 }
