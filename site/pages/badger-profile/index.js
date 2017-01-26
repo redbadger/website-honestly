@@ -43,17 +43,20 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             {badger.about}
           </div>
           <div className={styles.descriptionSections}>
-            {badger.skills.length && [
-              <h2 className={styles.subheader}>Signature Skills</h2>,
-              <p>{badger.skills.join(', ')}.</p>]}
+            {badger.skills.length && <div>
+              <h2 className={styles.subheader}>Signature Skills</h2>
+              <p>{badger.skills.join(', ')}.</p>
+            </div>}
 
-            {badger.achievements && [
-              <h2 className={styles.subheader}>Achievements at Red Badger</h2>,
-              <p>{badger.achievements}</p>]}
+            {badger.achievements && <div>
+              <h2 className={styles.subheader}>Achievements at Red Badger</h2>
+              <p>{badger.achievements}</p>
+            </div>}
 
-            {badger.influence && [
+            {badger.influence && <div>
               <h2 className={styles.subheader}>The thing that changed me</h2>,
-              <p>{badger.influence}</p>]}
+              <p>{badger.influence}</p>
+            </div>}
           </div>
           <div className={styles.authorLinks}>
             <BlogsLink badger={badger} />
