@@ -62,7 +62,7 @@
 }
 
 .badgerImage {
-  width: 335px;
+  width: 100%;
 }
 
 .badgerProfile {
@@ -83,13 +83,11 @@
 }
 
 .profilePictureContainer {
+  width: 335px;
   margin-bottom: 30px;
 }
 
 @media mediumScreen {
-  .badgerImage {
-    width: 478px;
-  }
   .profileContainer {
     margin: 0 auto;
     padding-bottom: 40px;
@@ -100,15 +98,13 @@
     width: 478px;
   }
   .profilePictureContainer {
+    width: 478px;
     margin-right: 0px;
   }
 }
 
 /* L */
 @media screen and (min-width: 1050px) {
-  .badgerImage {
-    width: 454px;
-  }
   .profileContainer {
     max-width: 1200px;
     margin: 0 auto;
@@ -121,6 +117,7 @@
     max-width: 660px;
   }
   .profilePictureContainer {
+    width: 454px;
     margin-right: 50px;
   }
 }
