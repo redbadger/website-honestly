@@ -33,8 +33,9 @@
 }
 
 .greenBox {
-  composes: authorLinks;
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-size: 16px;
+  line-height: 1.0;
   color: badgerBlack;
   border: solid 2px daveGreen;
   padding: 10px 20px;
