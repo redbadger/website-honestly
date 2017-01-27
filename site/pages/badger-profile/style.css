@@ -8,8 +8,9 @@
 }
 
 .header {
-  composes: fontM from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
+  font-size: 40px;
+  line-height: 1.1;
   margin-bottom: 5px;
 }
 
