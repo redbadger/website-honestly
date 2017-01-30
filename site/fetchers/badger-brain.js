@@ -115,7 +115,14 @@ export function getData() {
         jobTitle
         imageUrl
         slug
+        about
         skills
+        achievements
+        influence
+        linkedin
+        twitter
+        github
+        squarespaceId
         categories {
           name
           slug
