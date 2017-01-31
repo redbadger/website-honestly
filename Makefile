@@ -42,6 +42,7 @@ dev-static: dist/static-site dist/dev-static/index.js dist/sw.js ## Compile the 
 	./node_modules/.bin/http-server ./dist/static-site -p 8000
 
 dev-commit: dist/static-site dist/dev-static/index.js
+	node dist/dev-static/index.js
 
 
 test: ## Run the tests
