@@ -12,12 +12,12 @@ createCommitSite() {
   echo Deploying commit preview site to $URL_BASENAME
   make clean
   make build
+  make fetch
+  make dev-commit
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF/sw.js
-  make fetch
-  make dev-commit
   aws s3 sync ./dist/static-site/$COMMIT_REF/ s3://$BUCKET_NAME/$COMMIT_REF/
   echo Done!
 
