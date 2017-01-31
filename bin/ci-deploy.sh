@@ -11,7 +11,6 @@ createCommitSite() {
 
   echo Deploying commit preview site to $URL_BASENAME
   make clean
-  make build
   make fetch
   make dev-commit
   echo Copying assets to S3
