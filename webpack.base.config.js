@@ -58,7 +58,6 @@ const baseConfig = {
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: 'assets/social', to: 'assets-honestly/social' },
       { from: `assets/${robots}`, to: 'robots.txt' },
-      { from: 'assets/state.json', to: 'state.json' },
       { from: 'assets/txt', to: 'txt/' },
       { from: 'assets/fonts', to: 'assets-honestly/' },
     ]),
