@@ -17,7 +17,7 @@ createCommitSite() {
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF/sw.js
   make fetch
-  make dev-static
+  make dev-commit
   aws s3 cp ./dist/static-site s3://$BUCKET_NAME/$COMMIT_REF/
   echo Done!
 
