@@ -36,7 +36,7 @@
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.2.1",
-    "extract-text-webpack-plugin": "2.0.0-rc.2",
+    "extract-text-webpack-plugin": "grrowl/extract-text-webpack-plugin#order-undefined-error",
     "file-loader": "^0.10.0",
     "flow-bin": "^0.36.0",
     "flow-typed": "^2.0.0",

@@ -53,7 +53,7 @@ const baseConfig = {
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new webpack.LoaderOptionsPlugin({ options: { context: __dirname, postcss: [autoprefixer] } }),
-    new ExtractTextPlugin({ allChunks: true, filename: 'assets-honestly/styles-[contenthash:base64:5].css' }),
+    new ExtractTextPlugin({ allChunks: true, filename: 'assets-honestly/styles-[contenthash:base64:5].css', ignoreOrder: true }),
     new CopyWebpackPlugin([
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: 'assets/social', to: 'assets-honestly/social' },
