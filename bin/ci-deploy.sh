@@ -16,8 +16,9 @@ createCommitSite() {
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF/sw.js
-  make services-deploy
-  make publish-service-invoke
+  make fetch
+  make dev-static
+  aws s3 cp ./dist/static-site s3://$BUCKET_NAME/$COMMIT_REF/
   echo Done!
 
   echo Registering deployment with GitHub
