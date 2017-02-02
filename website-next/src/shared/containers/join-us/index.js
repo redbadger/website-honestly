@@ -112,7 +112,7 @@ export default class JoinUs extends Component {
                 <ComponentRenderer data={join} />
               </Cell>
               <Cell size={6}>
-                <Video id="110925126" type="vimeo" />
+                <Video id="9Ph7XJfWPys" type="youtube" />
               </Cell>
             </Grid>
             <HR color="red" />
