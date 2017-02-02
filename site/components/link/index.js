@@ -4,13 +4,12 @@ import { NavigationLink } from 'navigation-react';
 
 type LinkProps = {[id: string]: any}
 export default function Link(props: LinkProps) {
-  const linkProps = Object.assign({}, props, {
-    stateKey: props.to,
-  });
+  const { to, ...rest } = props;
 
   return (
     <NavigationLink
-      {...linkProps}
+      stateKey={to}
+      {...rest}
     >
       {props.children}
     </NavigationLink>
