@@ -8,7 +8,7 @@ type Badger = {
   slug: string,
   imageUrl: string,
   about: string,
-  skills: Array<string>,
+  skills: string,
   achievements: string,
   influence: string,
   twitter: string,

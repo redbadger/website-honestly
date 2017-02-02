@@ -43,9 +43,9 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             {badger.about}
           </div>
           <div className={styles.descriptionSections}>
-            {badger.skills.length && <div>
+            {badger.skills && <div>
               <h2 className={styles.subheader}>Signature skills</h2>
-              <p>{badger.skills.join(', ')}.</p>
+              <p>{badger.skills}</p>
             </div>}
 
             {badger.achievements && <div>

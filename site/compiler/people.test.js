@@ -14,14 +14,6 @@ describe('site/compiler', () => {
     badger: {},
   };
 
-  const baseBadger = {
-    firstName: '',
-    skills: [],
-    influence: '',
-    achievements: '',
-    categories: [],
-  };
-
   describe('compileSite', () => {
     it('renders the dynamic badger pages of the site', () => {
       const categories = [
@@ -30,7 +22,6 @@ describe('site/compiler', () => {
       ];
 
       const a = {
-        ...baseBadger,
         firstName: 'Alex',
         slug: 'alex',
         categories,
@@ -58,14 +49,12 @@ describe('site/compiler', () => {
         ];
 
         const a = {
-          ...baseBadger,
           firstName: 'Alex',
           slug: 'alex',
           categories: [categories[0], categories[1]],
         };
 
         const s = {
-          ...baseBadger,
           firstName: 'Sari',
           slug: 'sari',
           categories: [categories[2], categories[1]],
@@ -93,7 +82,6 @@ describe('site/compiler', () => {
       it('should render one everyone and one ux-design', () => {
         const categories = [{ name: 'UX & Design', slug: 'ux-design' }];
         const s = {
-          ...baseBadger,
           firstName: 'Sari',
           slug: 'sari',
           categories,
@@ -123,7 +111,6 @@ describe('site/compiler', () => {
 
         for (let i = 0; i < 20; i += 1) {
           const a = {
-            ...baseBadger,
             firstName: 'Alex ' + i,
             slug: 'alex-' + i,
             categories,
@@ -132,7 +119,6 @@ describe('site/compiler', () => {
           badger[a.slug] = a;
         }
         const e = {
-          ...baseBadger,
           firstName: 'Etiene',
           slug: 'etiene',
           categories: [categories[0]],
@@ -160,7 +146,6 @@ describe('site/compiler', () => {
         const categories = [{ name: 'Engineering', slug: 'engineering' }];
         for (let i = 0; i < 20; i += 1) {
           const a = {
-            ...baseBadger,
             firstName: 'Alex ' + i,
             slug: 'alex-' + i,
             categories,
@@ -190,7 +175,6 @@ describe('site/compiler', () => {
       const categories = [{ name: 'Engineering', slug: 'engineering' }];
       for (let i = 0; i < 19; i += 1) {
         const a = {
-          ...baseBadger,
           firstName: 'Alex ' + i,
           slug: 'alex-' + i,
           categories,
@@ -221,7 +205,6 @@ describe('site/compiler', () => {
       ];
       for (let i = 0; i < 41; i += 1) {
         const a = {
-          ...baseBadger,
           firstName: 'Alex ' + i,
           slug: 'alex-' + i,
           categories,
@@ -259,7 +242,6 @@ describe('site/compiler', () => {
       ];
       for (let i = 0; i < 21; i += 1) {
         const a = {
-          ...baseBadger,
           firstName: 'Alex ' + i,
           slug: 'alex-' + i,
           categories,
@@ -269,7 +251,6 @@ describe('site/compiler', () => {
       }
       for (let i = 21; i < 41; i += 1) {
         const a = {
-          ...baseBadger,
           firstName: 'Alex ' + i,
           slug: 'alex-' + i,
           categories: [categories[0]],
@@ -301,9 +282,7 @@ describe('site/compiler', () => {
       const categories = [{ name: 'Engineering', slug: 'engineering' }];
 
       const a = {
-        ...baseBadger,
         firstName: 'Alex',
-        skills: ['JavaScript', 'Photography'],
         slug: 'alex',
         categories,
       };
@@ -325,15 +304,12 @@ describe('site/compiler', () => {
       const categories = [{ name: 'Engineering', slug: 'engineering' }];
 
       const a = {
-        ...baseBadger,
         firstName: 'Alex',
-        skills: ['JavaScript', 'Photography'],
         slug: 'alex',
         categories,
       };
 
       const s = {
-        ...baseBadger,
         firstName: 'Sari',
         slug: 'sari',
         categories,

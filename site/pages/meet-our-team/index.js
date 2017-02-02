@@ -10,11 +10,11 @@ const getTeam = (badgers, category) => {
     return badgers;
   }
   const jobAdvert = {
-    name: '',
+    firstName: '',
+    lastName: '',
     slug: '',
     imageUrl: '',
     placeholderImage: '',
-    skills: [],
     description: '',
     jobAdvert: true,
     jobDescription: '',
