@@ -38,37 +38,41 @@ class Form extends Component {
         </h2>
 
         <form className={styles.contactUsForm}>
-          <label className={styles.formLabel} htmlFor="contactUsMessage">
-            Message:&nbsp;
-            <span className={styles.errorMessage}>{errors.message}</span>
-          </label>
-          <textarea
-            rows="5"
-            className={cx({
-              inputBox: true,
-              hasErrors: errors.message,
-            })}
-            name="message"
-            id="contactUsMessage"
-            defaultValue={message}
-            onChange={this.handleInputChange}
-          />
+          <div className={styles.inputContainer}>
+            <label className={styles.formLabel} htmlFor="contactUsMessage">
+              Message:&nbsp;
+              <span className={styles.errorMessage}>{errors.message}</span>
+            </label>
+            <textarea
+              rows="5"
+              className={cx({
+                inputBox: true,
+                hasErrors: errors.message,
+              })}
+              name="message"
+              id="contactUsMessage"
+              defaultValue={message}
+              onChange={this.handleInputChange}
+            />
+          </div>
 
-          <label className={styles.formLabel} htmlFor="contactEmail">
-            Your email:&nbsp;
-            <span className={styles.errorMessage}>{errors.contact}</span>
-          </label>
-          <input
-            className={cx({
-              inputBox: true,
-              hasErrors: errors.contact,
-            })}
-            id="contactEmail"
-            name="contact"
-            type="text"
-            value={contact}
-            onChange={this.handleInputChange}
-          />
+          <div className={styles.inputContainer}>
+            <label className={styles.formLabel} htmlFor="contactEmail">
+              Your email:&nbsp;
+              <span className={styles.errorMessage}>{errors.contact}</span>
+            </label>
+            <input
+              className={cx({
+                inputBox: true,
+                hasErrors: errors.contact,
+              })}
+              id="contactEmail"
+              name="contact"
+              type="text"
+              value={contact}
+              onChange={this.handleInputChange}
+            />
+          </div>
 
           {
             fatalError &&
