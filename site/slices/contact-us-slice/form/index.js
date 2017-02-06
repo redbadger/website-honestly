@@ -11,7 +11,7 @@ class Form extends Component {
     super(props);
     this.state = {
       message: 'Your problem in a nutshell',
-      contact: 'sam@company.com',
+      contact: '',
     };
   }
 
@@ -69,8 +69,9 @@ class Form extends Component {
               id="contactEmail"
               name="contact"
               type="text"
-              value={contact}
               onChange={this.handleInputChange}
+              value={contact}
+              placeholder="sam@company.com"
             />
           </div>
 
