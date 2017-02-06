@@ -72,7 +72,7 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
 }
 
 .inputBox::placeholder {
-  color: badgerBlack;
+  color: #88792F;
 }
 
 .hasErrors {
