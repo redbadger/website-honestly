@@ -10,8 +10,8 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: 'Hi Cain,\nI was wondering…',
-      contact: '',
+      message: 'Your problem in a nutshell',
+      contact: 'sam@company.com',
     };
   }
 
@@ -32,9 +32,9 @@ class Form extends Component {
     return (
       <section className={styles.formContainer} id="contactUs">
         <h2 className={styles.heading}>
-          We don’t have a sales team.
+          Project in mind?
           <br />
-          Speak to one of our founders.
+          Tell us more.
         </h2>
 
         <form className={styles.contactUsForm}>
