@@ -10,7 +10,7 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: 'Your problem in a nutshell',
+      message: '',
       contact: '',
     };
   }
@@ -51,7 +51,8 @@ class Form extends Component {
               })}
               name="message"
               id="contactUsMessage"
-              defaultValue={message}
+              value={message}
+              placeholder="Your problem in a nutshell"
               onChange={this.handleInputChange}
             />
           </div>
