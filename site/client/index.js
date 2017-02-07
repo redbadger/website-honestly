@@ -34,7 +34,6 @@ export function makeApp({ element, state }) {
     ReactDOM.render(component, element, scrollTo(params));
 
     if (ga) {
-      console.log('GA exists!', route);
       ga('set', {
         page: '/' + route.route,
         title: route.title + ' | Red Badger',
