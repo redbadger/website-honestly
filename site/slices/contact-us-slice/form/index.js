@@ -38,7 +38,7 @@ class Form extends Component {
         </h2>
 
         <form className={styles.contactUsForm}>
-          <div className={styles.inputContainer}>
+          <div className={styles.inputsContainer}>
             <label className={styles.formLabel} htmlFor="contactUsMessage">
               Message:&nbsp;
               <span className={styles.errorMessage}>{errors.message}</span>
@@ -55,9 +55,7 @@ class Form extends Component {
               placeholder="Your problem in a nutshell"
               onChange={this.handleInputChange}
             />
-          </div>
 
-          <div className={styles.inputContainer}>
             <label className={styles.formLabel} htmlFor="contactEmail">
               Your email:&nbsp;
               <span className={styles.errorMessage}>{errors.contact}</span>
