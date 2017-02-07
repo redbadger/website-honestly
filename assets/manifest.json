@@ -1,0 +1,35 @@
+{
+  "lang": "en-GB",
+  "background_color": "#f8f8f8",
+  "theme_color": "#212121",
+  "name": "Red Badger",
+  "short_name": "Red Badger",
+  "display": "browser",
+  "description":"Let’s make things better. We work with you to deliver digital products that make a difference to people.",
+  "icons": [
+    {
+      "src": "./assets-honestly/favicons/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets-honestly/favicons/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets-honestly/favicons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets-honestly/favicons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets-honestly/favicons/favicon-194x194.png",
+      "sizes": "194x194",
+      "type": "image/png"
+    }
+  ]
