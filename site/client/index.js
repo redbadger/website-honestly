@@ -32,6 +32,15 @@ export function makeApp({ element, state }) {
     stateNavigator.stateContext.title = title;
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
+
+    if (ga) {
+      console.log('GA exists!', route);
+      ga('set', {
+        page: '/' + route.route,
+        title: route.title + ' | Red Badger',
+      });
+      ga('send', 'pageview');
+    }
   });
   return stateNavigator;
 }
