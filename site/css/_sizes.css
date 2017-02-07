@@ -6,7 +6,7 @@
 
   }
 */
-@value smallScreen: screen and (min-width: 540px);
+
 @value mediumScreen: screen and (min-width: 690px);
 @value largeScreen: screen and (min-width: 980px);
 @value contentMaxWidth: 1000px;

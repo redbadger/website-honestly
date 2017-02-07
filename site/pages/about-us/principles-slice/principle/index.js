@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './style.css';
+import style from './style.css';
 
 
 const Principle = ({ number, title, description }) => (
-  <li className={styles.container}>
-    <div className={styles.leftCol}>
-      <div className={styles.number}>{number}</div>
+  <li className={style.container}>
+    <div className={style.leftCol}>
+      <div className={style.number}>{number}</div>
     </div>
-    <div className={styles.rightCol}>
-      <h3 className={styles.title}>{title}</h3>
-      <div className={styles.description}>{description}</div>
+    <div className={style.rightCol}>
+      <h3 className={style.title}>{title}</h3>
+      <div className={style.description}>{description}</div>
     </div>
   </li>
 );
