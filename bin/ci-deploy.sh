@@ -15,6 +15,7 @@ createCommitSite() {
   make dev-commit
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
+  aws s3 cp ./dist/manifest.json s3://$BUCKET_NAME/$COMMIT_REF/manifest.json
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 cp ./dist/sw.js s3://$BUCKET_NAME/$COMMIT_REF/sw.js
   aws s3 sync ./dist/static-site/$COMMIT_REF/ s3://$BUCKET_NAME/$COMMIT_REF/
