@@ -17,7 +17,7 @@
 
 .closeButton {
   composes: primaryButton from "../../../css/_links.css";
-  background-color: badgerBlack;
+  background-color: badgerBlack !important;
   display: block;
   margin: 40px auto 0px auto;
 }

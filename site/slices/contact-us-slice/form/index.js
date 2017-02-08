@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
-import Button from '../../../components/button';
 
 const cx = classnames.bind(styles);
 
@@ -10,7 +9,7 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      message: 'Hi Cain,\nI was wondering…',
+      message: '',
       contact: '',
     };
   }
@@ -32,43 +31,47 @@ class Form extends Component {
     return (
       <section className={styles.formContainer} id="contactUs">
         <h2 className={styles.heading}>
-          We don’t have a sales team.
+          Project in mind?
           <br />
-          Speak to one of our founders.
+          Tell us more.
         </h2>
 
         <form className={styles.contactUsForm}>
-          <label className={styles.formLabel} htmlFor="contactUsMessage">
-            Message:&nbsp;
-            <span className={styles.errorMessage}>{errors.message}</span>
-          </label>
-          <textarea
-            rows="5"
-            className={cx({
-              inputBox: true,
-              hasErrors: errors.message,
-            })}
-            name="message"
-            id="contactUsMessage"
-            defaultValue={message}
-            onChange={this.handleInputChange}
-          />
+          <div className={styles.inputsContainer}>
+            <label className={styles.formLabel} htmlFor="contactUsMessage">
+              Message:&nbsp;
+              <span className={styles.errorMessage}>{errors.message}</span>
+            </label>
+            <textarea
+              rows="5"
+              className={cx({
+                inputBox: true,
+                hasErrors: errors.message,
+              })}
+              name="message"
+              id="contactUsMessage"
+              value={message}
+              placeholder="Your problem in a nutshell"
+              onChange={this.handleInputChange}
+            />
 
-          <label className={styles.formLabel} htmlFor="contactEmail">
-            Your email:&nbsp;
-            <span className={styles.errorMessage}>{errors.contact}</span>
-          </label>
-          <input
-            className={cx({
-              inputBox: true,
-              hasErrors: errors.contact,
-            })}
-            id="contactEmail"
-            name="contact"
-            type="text"
-            value={contact}
-            onChange={this.handleInputChange}
-          />
+            <label className={styles.formLabel} htmlFor="contactEmail">
+              Your email:&nbsp;
+              <span className={styles.errorMessage}>{errors.contact}</span>
+            </label>
+            <input
+              className={cx({
+                inputBox: true,
+                hasErrors: errors.contact,
+              })}
+              id="contactEmail"
+              name="contact"
+              type="text"
+              onChange={this.handleInputChange}
+              value={contact}
+              placeholder="sam@company.com"
+            />
+          </div>
 
           {
             fatalError &&
@@ -76,12 +79,13 @@ class Form extends Component {
               <p className={styles.fatalError}>
                 Oops! Looks like something went wrong.
               </p>
-              <Button
+              <button
                 label="Try Again"
-                className={'fatalErrorButton'}
+                className={cx('button', 'fatalErrorButton')}
                 onClick={this.handleSubmit}
-                background="yellow"
-              />
+              >
+                Try Again
+              </button>
               <p className={styles.fatalError}>
                 or to get in touch email us on<br />
                 <a href="mailto:hello@red-badger.com" className={styles.fatalErrorLink}>
@@ -93,11 +97,13 @@ class Form extends Component {
 
           {
             !fatalError &&
-            <Button
+            <button
               label="Submit"
               onClick={this.handleSubmit}
-              background="yellow"
-            />
+              className={styles.button}
+            >
+              Submit
+            </button>
           }
 
           <noscript>

@@ -1,4 +1,4 @@
-@value badgerBlack, cainYellow, cainYellowFaded from "../../../css/_colors.css";
+@value badgerBlack, badgerWhite, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
 @value contentMaxWidth from "../../../css/_sizes.css";
 
 .formContainer {
@@ -24,7 +24,7 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
   max-width: contentMaxWidth;
   composes: fontL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
-  margin: 0px auto 40px auto;
+  margin: 0px auto 60px auto;
   color: badgerBlack;
 }
 
@@ -46,6 +46,10 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
   margin: 30px 0px;
 }
 
+.inputsContainer {
+  margin-bottom: 40px;
+}
+
 .inputBox {
   display: block;
   width: 100%;
@@ -58,11 +62,20 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
   padding: 12px;
   background: cainYellowFaded;
   border: 0px;
-  border-bottom: dotted 2px badgerBlack;
+
+  background-image: linear-gradient(to right, badgerBlack 20%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 11px 2px;
+  background-repeat: repeat-x;
+}
+
+.inputBox::placeholder {
+  color: #88792F;
 }
 
 .hasErrors {
   border: 2px solid badgerBlack;
+  background-image: none;
 }
 
 .fatalErrorLink {
@@ -71,7 +84,20 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
 }
 
 .button {
-  margin-top: 30px;
   composes: primaryButton from "../../../css/_links.css";
-  background-color: badgerBlack !important;
+  background: badgerBlack !important;
+  color: badgerWhite !important;
+  outline: none;
+  border: none;
 }
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media (hover:hover) {
+  .button:hover {
+    background: scorpian !important;
+  }
+}
+
