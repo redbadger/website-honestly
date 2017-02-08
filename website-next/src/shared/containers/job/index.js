@@ -39,7 +39,7 @@ export default class Job extends Component {
                     {"If you'd like to know more or you want to apply please get in touch with your CV, Stackoverflow profile, Github, code, portfolio and anything else you think we might be interested in."}
                   </p>
                   <p className={typography.p}>
-                    <a className={styles.sidebarApplyLink} href={this.props.job.applicationUrl} target="_blank">Apply here</a>
+                    <a className={styles.sidebarApplyLink} href={this.props.job.applicationUrl} target="_blank" rel="noopener">Apply here</a>
                   </p>
                 </Note>
               </Cell>

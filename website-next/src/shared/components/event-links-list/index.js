@@ -24,6 +24,7 @@ const EventLinksList = ({
             href={eventLink.url}
             key={eventLink.url}
             target={listType === 'external' ? '_blank' : null}
+            rel={listType === 'external' ? 'noopener' : null}
           >
             <span>{eventLink.title}</span>
           </a>
