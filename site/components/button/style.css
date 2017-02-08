@@ -10,7 +10,6 @@
   border: none;
 }
 
-
 .yellow{
   background: badgerBlack !important;
   color: badgerWhite !important;
@@ -24,18 +23,21 @@
 
 .light:focus,
 .dark:focus,
-.yellow:focus{
+.yellow:focus {
   outline: none;
 }
 
-.light:hover{
-  background: badgerBlack !important;
+@media (hover:hover) {
+  .light:hover {
+    background: badgerBlack !important;
+  }
+
+  .dark:hover {
+    background: scorpian !important;
+  }
+
+  .yellow:hover {
+    background: scorpian !important;
+  }
 }
 
-.dark:hover{
-  background: scorpian !important;
-}
-
-.yellow:hover{
-  background: scorpian !important;
-}
