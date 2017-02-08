@@ -38,7 +38,7 @@ class Form extends Component {
         </h2>
 
         <form className={styles.contactUsForm}>
-          <label className={styles.formLabel} htmlFor="message">
+          <label className={styles.formLabel} htmlFor="contactUsMessage">
             Message:&nbsp;
             <span className={styles.errorMessage}>{errors.message}</span>
           </label>
@@ -54,7 +54,7 @@ class Form extends Component {
             onChange={this.handleInputChange}
           />
 
-          <label className={styles.formLabel} htmlFor="contact">
+          <label className={styles.formLabel} htmlFor="contactEmail">
             Your email:&nbsp;
             <span className={styles.errorMessage}>{errors.contact}</span>
           </label>
@@ -63,6 +63,7 @@ class Form extends Component {
               inputBox: true,
               hasErrors: errors.contact,
             })}
+            id="contactEmail"
             name="contact"
             type="text"
             value={contact}
