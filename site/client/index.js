@@ -35,7 +35,7 @@ export function makeApp({ element, state }) {
 
     // Google Analytics is defined in the main ejs file
     // We need to update GA on user navigation event
-    if (ga) { // eslint-disable-line
+    if ('ga' in window) {
       ga('set', { // eslint-disable-line
         page: '/' + route.route,
         title: route.title + ' | Red Badger',
