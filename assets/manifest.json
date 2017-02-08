@@ -5,6 +5,7 @@
   "name": "Red Badger",
   "short_name": "Red Badger",
   "display": "browser",
+  "start_url": ".",
   "description":"Let’s make things better. We work with you to deliver digital products that make a difference to people.",
   "icons": [
     {
