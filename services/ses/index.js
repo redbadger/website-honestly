@@ -18,7 +18,7 @@ function filterInternalErrors(error) {
 }
 
 export function validateContact(contact) {
-  const regex = /\S+@\S+\.\S+/;
+  const regex = /^\S+@\S+\.\S+/;
   return regex.test(contact);
 }
 
