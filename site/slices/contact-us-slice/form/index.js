@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
-import Button from '../../../components/button';
 
 const cx = classnames.bind(styles);
 
@@ -80,12 +79,13 @@ class Form extends Component {
               <p className={styles.fatalError}>
                 Oops! Looks like something went wrong.
               </p>
-              <Button
+              <button
                 label="Try Again"
-                className={'fatalErrorButton'}
+                className={cx('button', 'fatalErrorButton')}
                 onClick={this.handleSubmit}
-                background="yellow"
-              />
+              >
+                Try Again
+              </button>
               <p className={styles.fatalError}>
                 or to get in touch email us on<br />
                 <a href="mailto:hello@red-badger.com" className={styles.fatalErrorLink}>
@@ -97,11 +97,13 @@ class Form extends Component {
 
           {
             !fatalError &&
-            <Button
+            <button
               label="Submit"
               onClick={this.handleSubmit}
-              background="yellow"
-            />
+              className={styles.button}
+            >
+              Submit
+            </button>
           }
 
           <noscript>
