@@ -32,6 +32,16 @@ export function makeApp({ element, state }) {
     stateNavigator.stateContext.title = title;
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
+
+    // Google Analytics is defined in the main ejs file
+    // We need to update GA on user navigation event
+    if (ga) { // eslint-disable-line
+      ga('set', { // eslint-disable-line
+        page: '/' + route.route,
+        title: route.title + ' | Red Badger',
+      });
+      ga('send', 'pageview'); // eslint-disable-line
+    }
   });
   return stateNavigator;
 }
