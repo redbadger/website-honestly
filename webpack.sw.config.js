@@ -10,7 +10,7 @@ const swConfig = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel'],
+        loader: 'babel-loader',
       },
       {
         test: /\.json$/,
