@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, daveGreen from "../../../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed, daveGreen from "../../../../css/_colors.css";
 
 .badgerProfile {
   text-align: left;
@@ -7,25 +7,12 @@
   height: 100%;
 }
 
-.badgerProfile:after {
-  content: '';
-  z-index: 1;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0  );
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 25%;
-  display: inline-block;
-}
-
 .badgerImage {
   width: 100%;
 }
 
 .badgerProfile:hover {
-  box-shadow: 7px 7px daveGreen;
+  box-shadow: 7px 7px badgerRed;
 }
 
 .badgerProfile:hover .skillsWrapper {
@@ -53,13 +40,7 @@
 }
 
 .description {
-  z-index: 2;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 0 0 10px 10px;
-  color: badgerWhite;
-  text-shadow: 1px 1px 0 rgba(0,0,0,0.50);
+  color: badgerBlack;
 }
 
 .name {
