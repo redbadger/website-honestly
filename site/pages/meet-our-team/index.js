@@ -14,6 +14,7 @@ const getTeam = (badgers, category) => {
     lastName: '',
     slug: '',
     imageUrl: '',
+    secondaryImageUrl: '',
     placeholderImage: '',
     description: '',
     jobAdvert: true,

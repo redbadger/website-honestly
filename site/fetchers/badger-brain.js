@@ -114,6 +114,7 @@ export function getData() {
         order
         jobTitle
         imageUrl
+        secondaryImageUrl
         slug
         about
         skills

@@ -27,7 +27,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
       <div className={styles.profileContainer}>
         <div className={styles.profilePictureContainer}>
           <img
-            src={badger.imageUrl}
+            src={badger.secondaryImageUrl || badger.imageUrl}
             alt={fullName}
             className={styles.badgerImage}
           />

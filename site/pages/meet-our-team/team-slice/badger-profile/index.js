@@ -10,6 +10,7 @@ export type Badger = {
   lastName: string,
   slug: string,
   imageUrl: string,
+  secondaryImageUrl: string,
   placeholderImage: string,
   description: string,
   jobAdvert: boolean,
