@@ -9,7 +9,7 @@ export type Badger = {
   firstName: string,
   lastName: string,
   slug: string,
-  imageUrl: string,
+  primaryImageUrl: string,
   secondaryImageUrl: string,
   placeholderImage: string,
   description: string,
@@ -24,7 +24,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
   return (
     <Link to="badger" navigationData={{ slug: badger.slug }} className={styles.badgerProfile}>
       <img
-        src={badger.loaded ? badger.imageUrl : badger.placeholderImage}
+        src={badger.loaded ? badger.primaryImageUrl : badger.placeholderImage}
         alt={fullName}
         className={styles.badgerImage}
         aria-hidden

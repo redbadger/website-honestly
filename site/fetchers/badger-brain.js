@@ -113,7 +113,7 @@ export function getData() {
         lastName
         order
         jobTitle
-        imageUrl
+        primaryImageUrl
         secondaryImageUrl
         slug
         about

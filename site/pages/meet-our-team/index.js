@@ -13,7 +13,7 @@ const getTeam = (badgers, category) => {
     firstName: '',
     lastName: '',
     slug: '',
-    imageUrl: '',
+    primaryImageUrl: '',
     secondaryImageUrl: '',
     placeholderImage: '',
     description: '',

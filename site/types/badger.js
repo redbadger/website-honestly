@@ -6,7 +6,7 @@ type Badger = {
   lastName: string,
   jobTitle: string,
   slug: string,
-  imageUrl: string,
+  primaryImageUrl: string,
   secondaryImageUrl: string,
   about: string,
   skills: string,
