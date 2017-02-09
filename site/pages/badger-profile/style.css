@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed from "../../css/_colors.css";
 @value mediumScreen from "../../css/_sizes.css";
 
 .categories {
@@ -33,12 +33,12 @@
   composes: subheader;
 }
 
-.greenBox {
+.categoryBox {
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   font-size: 16px;
   line-height: 1.0;
   color: badgerBlack;
-  border: solid 2px daveGreen;
+  border: solid 2px badgerRed;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
@@ -52,7 +52,7 @@
 
 .authorLinks a {
   color: badgerBlack;
-  border-bottom: solid 2px daveGreen;
+  border-bottom: solid 2px badgerRed;
 }
 
 .authorLink {

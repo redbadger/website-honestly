@@ -40,29 +40,27 @@
 }
 
 .description {
+  padding-top: 10px;
   color: badgerBlack;
 }
 
 .name {
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
-  padding-bottom: 8px;
-  line-height: 1.3em !important;
 }
 
 .jobDescription {
   composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  line-height: 1.1em !important;
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
 }
 
 .arrow svg {
   position: absolute;
   overflow: hidden;
-  top: 3px;
-  height: 20px;
-  width: 20px;
-  margin-left: 6px;
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  margin-left: 10px;
 }
 
 .lastName {
