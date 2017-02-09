@@ -92,9 +92,7 @@ class TeamSlice extends React.Component {
               className={styles.badger}
               ref={el => { this.badgerElements[badger.slug] = el; }}
             >
-              <div className={styles.badgerWrapper} >
-                {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
-              </div>
+              {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
             </li>
           )}
         </ul>

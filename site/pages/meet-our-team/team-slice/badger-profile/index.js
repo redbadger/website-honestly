@@ -21,15 +21,20 @@ export type Badger = {
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   return (
-    <Link to="badger" navigationData={{ slug: badger.slug }} className={styles.badgerProfile}>
-      {badger.loaded ?
-        <img
-          src={badger.imageUrl}
-          alt={fullName}
-          className={styles.badgerImage}
-          aria-hidden
-        /> : <div className={styles.placeholder} />
-      }
+    <div className={styles.test}>
+      <div className={styles.badgerWrapper} >
+        <Link to="badger" navigationData={{ slug: badger.slug }} className={styles.badgerProfile}>
+
+          {badger.loaded ?
+            <img
+              src={badger.imageUrl}
+              alt={fullName}
+              className={styles.badgerImage}
+              aria-hidden
+            /> : <div className={styles.placeholder} />
+          }
+        </Link>
+      </div>
       <div className={styles.description}>
         <div className={styles.name}>
           {`${badger.firstName} `}
@@ -40,7 +45,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
         </div>
         <div className={styles.jobDescription}>{badger.jobTitle}</div>
       </div>
-    </Link>
+    </div>
   );
 };
 
