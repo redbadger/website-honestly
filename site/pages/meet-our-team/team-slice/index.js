@@ -6,9 +6,6 @@ import JobAdvert from './job-advert';
 import Paging from './paging';
 import type { Badger } from './badger-profile';
 
-import placeholderBlack from './placeholder-black.jpg';
-import placeholderWhite from './placeholder-white.jpg';
-
 const paginate = (badgers, page, loadAll) => {
   if (loadAll) return badgers;
   const start = (page - 1) * 20;
@@ -28,7 +25,6 @@ const inView = el => {
 const initBadgers = (badgers, page) => (
   badgers.map((badger, i) => ({
     ...badger,
-    placeholderImage: (Math.random() >= 0.5 ? placeholderBlack : placeholderWhite),
     loaded: i < page * 20,
   }))
 );
