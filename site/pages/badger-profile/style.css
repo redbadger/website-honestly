@@ -18,9 +18,6 @@
   composes: fontS2 from "../../css/typography/_fonts.css";
   composes: lightSerif from "../../css/typography/_fonts.css";
   padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding-bottom: 30px;
 }
 
@@ -78,7 +75,7 @@
 }
 
 .profileDescriptionContainer {
-  width: 335px;
+  width: 100%;
 }
 .profileDescriptionContainer hr {
   border-top: 1px solid #ccc;
@@ -86,7 +83,7 @@
 }
 
 .profilePictureContainer {
-  width: 335px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -94,6 +91,9 @@
   .profileContainer {
     margin: 0 auto;
     padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
