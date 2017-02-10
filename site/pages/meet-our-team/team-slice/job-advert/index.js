@@ -4,10 +4,12 @@ import styles from './style.css';
 
 const JobAdvert = () => (
   <div className={styles.badgerWrapper} >
-    <Link to="joinUs" className={styles.jobAdvert}>
-      <div className={styles.question}>Are you a potential Badger?</div>
-      <div className={styles.hiring}>We&rsquo;re hiring</div>
-    </Link>
+    <div className={styles.advertWrapper} >
+      <Link to="joinUs" className={styles.jobAdvert}>
+        <div className={styles.question}>Are you a potential Badger?</div>
+        <div className={styles.hiring}>We&rsquo;re hiring</div>
+      </Link>
+    </div>
   </div>
 );
 

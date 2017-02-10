@@ -8,10 +8,24 @@
   right: 0;
 }
 
-.jobAdvert {
-  text-align: left;
+.advertWrapper {
   position: relative;
+}
+
+.advertWrapper:before {
+  content: "";
   display: block;
+  padding-top: 100%;
+}
+
+.jobAdvert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  text-align: left;
   background-color: badgerRed;
   padding: 10px 0 0 20px;
   height: 100%;
