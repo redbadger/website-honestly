@@ -1,4 +1,3 @@
-/* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
 import Form from './form/';
 import Success from './success/';

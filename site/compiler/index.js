@@ -37,7 +37,7 @@ const filePathFor = (stateNavigator, key, params) => {
   if (!route) {
     throw new Error(`The route could not be matched for key: ${key}, params: ${JSON.stringify(params)}`);
   }
-  return routeFilePath(route.substring(1));
+  return { link: route, filePath: routeFilePath(route.substring(1)) };
 };
 
 export const expandRoutes = (state, stateNavigator) => {
@@ -45,7 +45,7 @@ export const expandRoutes = (state, stateNavigator) => {
   const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
     ...def,
     title: titleFor(def, def.stateToProps && def.stateToProps(state)),
-    filePath: filePathFor(stateNavigator, def.key),
+    ...filePathFor(stateNavigator, def.key),
     props: def.stateToProps && def.stateToProps(state),
   }));
 
@@ -53,7 +53,7 @@ export const expandRoutes = (state, stateNavigator) => {
     return def.gen(state).map(params => ({
       ...def,
       title: titleFor(def, def.stateToProps && def.stateToProps(state, params)),
-      filePath: filePathFor(stateNavigator, def.key, params),
+      ...filePathFor(stateNavigator, def.key, params),
       props: def.stateToProps && def.stateToProps(state, params),
     }));
   });
@@ -73,6 +73,7 @@ export function compileRoutes(state) {
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
 
+    stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
     const renderMs = Date.now() - renderStart;

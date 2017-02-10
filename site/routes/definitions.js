@@ -1,5 +1,5 @@
 // @flow
-import { stateToBadgerProps, genBadgersParams } from './selectors';
+import { stateToBadgerProps, genBadgersParams, getBadgersTitle } from './selectors';
 
 type RouteDefinition = {|
   title: string | (props: Object) => string,
@@ -56,12 +56,19 @@ export const routeDefinitions : Array<RouteDefinition> = [
     gen: state => state.events.map(({ startDateTime: { date, month, year }, slug }) => ({ date, month, year, slug })),
   },
   {
-    title: ({ category }) => 'Meet our team' + (category !== 'everyone' ? ` (${category})` : ''),
+    title: getBadgersTitle,
     key: 'badgers',
-    route: 'about-us/people/{category?}/{page?}',
+    route: 'about-us/people+/category/{category}+/page-{page}',
     defaults: { category: 'everyone', page: 1 },
     stateToProps: stateToBadgerProps,
     gen: genBadgersParams,
+  },
+  {
+    title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
+    key: 'badger',
+    route: 'about-us/people/{slug}',
+    stateToProps: (state, params = {}) => ({ badger: state.badger[params.slug] }),
+    gen: state => state.badgers.map(({ slug }) => ({ slug })),
   },
   {
     title: 'Not found',

@@ -27,10 +27,36 @@ const getCategories = badgers => {
     .reduce((uniqueCategories, badger) => (
       badger.categories
         .reduce((categories, category) => (
-          categories[category.name] ? categories : { ...categories, [category.name]: category.slug }
+          categories[category.name] ? categories : { ...categories, [category.name]: category }
         ), uniqueCategories)
     ), {});
-  return Object.keys(categoriesObj).map(name => ({ name, slug: categoriesObj[name] }));
+  return Object.keys(categoriesObj)
+    .map(name => ({ name, slug: categoriesObj[name].slug }))
+    .sort((catA, catB) => categoriesObj[catA.name].order - categoriesObj[catB.name].order);
+};
+
+// Randomize array, taken from http://stackoverflow.com/a/2450976/1310468
+const shuffle = array => {
+  const arr = [...array];
+  let currentIndex = arr.length;
+  let randomIndex;
+  let temporaryValue;
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = arr[currentIndex];
+    arr[currentIndex] = arr[randomIndex];
+    arr[randomIndex] = temporaryValue;
+  }
+  return arr;
+};
+
+const sortBadgers = badgers => {
+  const orderableBadgers = badgers.filter(badger => badger.order !== null);
+  const randomBadgers = badgers.filter(badger => badger.order === null);
+  return orderableBadgers
+    .sort((badgerA, badgerB) => badgerA.order - badgerB.order)
+    .concat(shuffle(randomBadgers));
 };
 
 const basicFields = `
@@ -85,12 +111,22 @@ export function getData() {
       allBadgers {
         firstName
         lastName
+        order
         jobTitle
-        startDate
         imageUrl
+        slug
+        about
+        skills
+        achievements
+        influence
+        linkedin
+        twitter
+        github
+        squarespaceId
         categories {
           name
           slug
+          order
         }
       }
     }
@@ -101,7 +137,7 @@ export function getData() {
           .then(response => response.json())
           .then(({ data: { allEvents, allBadgers } }) => ({
             events: sortEvents(selectValidEvents(allEvents)),
-            badgers: allBadgers,
+            badgers: sortBadgers(allBadgers),
             categories: getCategories(allBadgers),
           }));
 }
