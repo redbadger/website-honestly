@@ -1,10 +1,32 @@
-@value badgerWhite, badgerBlack, daveGreen from "../../../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed from "../../../../css/_colors.css";
+
+.badgerWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.advertWrapper {
+  position: relative;
+}
+
+.advertWrapper:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
 
 .jobAdvert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
   text-align: left;
-  position: relative;
-  display: block;
-  background-color: daveGreen;
+  background-color: badgerRed;
   padding: 10px 0 0 20px;
   height: 100%;
 }
@@ -12,7 +34,7 @@
 .question {
   composes: fontM from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
-  color: badgerBlack;
+  color: badgerWhite;
   width: 240px;
 }
 
