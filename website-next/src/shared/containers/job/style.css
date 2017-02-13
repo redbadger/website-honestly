@@ -1,5 +1,5 @@
 @value tablet from "../../components/variables/breakpoints.css";
-@value badgerWhite, badgerBlack from "../../../../../site/css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
 
 .background {
   background-color: badgerWhite;
@@ -27,7 +27,8 @@
 
 .linkBack {
   composes: bodyLink from "../../../../../site/css/_links.css";
-  display: block;
+  border-bottom: 1px solid badgerRed;
+  display: inline-block;
   margin-bottom: 25px;
   composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
 
