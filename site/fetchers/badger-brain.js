@@ -87,7 +87,7 @@ export function getData() {
         lastName
         jobTitle
         startDate
-        imageUrl
+        primaryImageUrl
         categories {
           name
           slug
