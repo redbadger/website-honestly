@@ -22,7 +22,7 @@ export type Badger = {
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   return (
-    <div className={styles.test}>
+    <div>
       <div className={styles.badgerWrapper} >
         <Link to="badger" navigationData={{ slug: badger.slug }} className={styles.badgerProfile}>
 
