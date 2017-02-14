@@ -8,7 +8,7 @@ import styles from './style.css';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventNewsMeta from '../../components/event-news-meta';
-import { setEndDate } from '../../util/events';
+import { setEndDate } from '../../../../../site/fetchers/util/events';
 import { imageAssetsEndpoint } from '../../config';
 
 import marked from 'marked';

@@ -1,5 +1,5 @@
 import dateFns from 'date-fns';
-import { imageAssetsEndpoint } from '../config';
+import { imageAssetsEndpoint } from '../../../website-next/src/shared/config';
 
 export function parseDateAndResetTime(dateTimeIso) {
   const d = dateFns.parse(dateTimeIso);
@@ -62,5 +62,15 @@ export function setEndDate(timeline, startDateTime, endDateTime) {
 export function eventImagePath(
   featureImageFilename) {
   const f = featureImageFilename || 'red-badger-event.jpg';
+
+  // Check if we already have full URL for the featured image
+  const r = /\/\//;
+
+  // Check and convert http:// to https:// if needed
+
+  if (r.test(featureImageFilename)) {
+    return featureImageFilename.replace(/^http:\/\//, 'https://');
+  }
+
   return imageAssetsEndpoint + f;
 }

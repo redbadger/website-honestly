@@ -6,7 +6,7 @@ import DateBubble from '../date-bubble';
 import EventTitle from '../event-title';
 import React, { PropTypes } from 'react';
 import styles from '../events-list/style.css';
-import { setEndDate, eventImagePath } from '../../util/events';
+import { setEndDate, eventImagePath } from '../../../../../site/fetchers/util/events';
 
 import Link from '../../../../../site/components/link';
 
