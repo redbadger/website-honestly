@@ -15,10 +15,6 @@
   box-shadow: 7px 7px badgerRed;
 }
 
-.badgerProfile:hover .skillsWrapper {
-  display: block;
-}
-
 .badgerWrapper {
   position: absolute;
   top: 0;
