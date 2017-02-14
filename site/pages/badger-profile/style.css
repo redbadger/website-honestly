@@ -81,6 +81,7 @@
 
 .profileDescriptionContainer {
   width: 100%;
+  max-width: 335px;
 }
 .profileDescriptionContainer hr {
   border-top: 1px solid #ccc;
@@ -98,7 +99,7 @@
     padding-bottom: 40px;
   }
   .profileDescriptionContainer{
-    width: 478px;
+    max-width: 478px;
   }
   .profilePictureContainer {
     width: 478px;
