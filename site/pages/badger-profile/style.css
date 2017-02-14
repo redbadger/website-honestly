@@ -90,6 +90,7 @@
 
 .profilePictureContainer {
   max-width: 335px;
+  max-height: 335px;
   margin-bottom: 30px;
 }
 
@@ -104,6 +105,7 @@
   .profilePictureContainer {
     width: 478px;
     max-width: 478px;
+    max-height: 478px;
     margin-right: 0px;
   }
 }
@@ -124,6 +126,7 @@
   .profilePictureContainer {
     width: 454px;
     max-width: 454px;
+    max-height: 454px;
     margin-right: 50px;
   }
 }
