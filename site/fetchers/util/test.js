@@ -1,6 +1,6 @@
 import { eventImagePath } from './events';
 
-describe.only('eventImagePath', () => {
+describe('eventImagePath', () => {
   it('returns correct image URL when only filename is provided', () => {
     expect(eventImagePath('hello.jpg')).to.equal('//res.cloudinary.com/red-badger-assets/image/upload/events/hello.jpg');
   });

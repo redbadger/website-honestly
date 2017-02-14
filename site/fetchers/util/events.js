@@ -64,11 +64,8 @@ export function eventImagePath(
   const f = featureImageFilename || 'red-badger-event.jpg';
 
   // Check if we already have full URL for the featured image
-  const r = /\/\//;
-
-  // Check and convert http:// to https:// if needed
-
-  if (r.test(featureImageFilename)) {
+  if (/\/\//.test(featureImageFilename)) {
+    // Check and convert http:// to https://
     return featureImageFilename.replace(/^http:\/\//, 'https://');
   }
 
