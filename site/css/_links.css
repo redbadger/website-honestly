@@ -11,11 +11,12 @@
  */
 
 .bodyLink {
-  color: badgerRed;
+  color: badgerBlack;
+  transition: all 0.2s ease;
 }
 
 .bodyLink:hover {
-  color: badgerBlack;
+  color: badgerRed;
 }
 
 .bodyUnderlineLink {

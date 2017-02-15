@@ -2,7 +2,7 @@
 
 .title {
   composes: heroFont from "../fonts/style.css";
-  display: block;
+  display: inline;
   font-size: 1.55em;
   text-decoration: none;
   color: badgerBlack;
@@ -10,7 +10,7 @@
 }
 
 .title:hover {
-  color: badgerRed;
+  border-bottom: 1px solid badgerRed;
 }
 
 .icon {
