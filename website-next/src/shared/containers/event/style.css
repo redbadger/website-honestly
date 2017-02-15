@@ -129,6 +129,8 @@
   color: black;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid red;
 }
 
 .moreEvents a:hover, .moreEvents a:focus {

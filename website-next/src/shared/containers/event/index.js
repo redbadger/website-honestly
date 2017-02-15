@@ -54,7 +54,7 @@ export default class Event extends Component {
                         <HR color="grey" />
                         <div className={styles.moreEvents}>
                           <Link to="events">
-                            <span>&lt; More events</span>
+                            <span>More events</span>
                           </Link>
                         </div>
                     </div>
