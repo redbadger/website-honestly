@@ -10,7 +10,7 @@ import styles from './style.css';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventNewsMeta from '../../components/event-news-meta';
-import { setEndDate, eventImagePath } from '../../../../../site/fetchers/util/events';
+import { setEndDate } from '../../../../../site/fetchers/util/events';
 
 import marked from 'marked';
 
@@ -64,7 +64,7 @@ export default class Event extends Component {
                   {event.featureImageFilename && <img
                     role="presentation"
                     className={styles.eventImg}
-                    src={`${eventImagePath(event.featureImageFilename)}`}
+                    src={`${event.featureImageFilename}`}
                   />}
                 </div>
               </div>
