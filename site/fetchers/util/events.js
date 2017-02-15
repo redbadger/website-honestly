@@ -1,5 +1,4 @@
 import dateFns from 'date-fns';
-import { imageAssetsEndpoint } from '../../../website-next/src/shared/config';
 
 export function parseDateAndResetTime(dateTimeIso) {
   const d = dateFns.parse(dateTimeIso);
