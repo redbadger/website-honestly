@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .meetOurTeam {
@@ -42,18 +42,22 @@
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   text-transform: uppercase;
   padding: 6px 20px 4px 20px;
-  border: 2px solid daveGreen;
+  border: 2px solid badgerRed;
   display: block;
   margin-bottom: 20px;
   line-height: 0;
 }
 
 .category.active {
-  background-color: daveGreen;
+  background-color: badgerRed;
 }
 
 a.category, a.category:hover, a.category:visited {
   color: badgerBlack;
+}
+
+a.category.active {
+  color: badgerWhite;
 }
 
 @media mediumScreen {

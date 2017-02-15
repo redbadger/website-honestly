@@ -27,7 +27,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
       <div className={styles.profileContainer}>
         <div className={styles.profilePictureContainer}>
           <img
-            src={badger.imageUrl}
+            src={badger.secondaryImageUrl || badger.primaryImageUrl}
             alt={fullName}
             className={styles.badgerImage}
           />
@@ -62,13 +62,13 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             <BlogsLink badger={badger} />
           </div>
           <hr />
-          <Link to="badgers" className={styles.greenBox}>See Everyone</Link>
+          <Link to="badgers" className={styles.categoryBox}>See Everyone</Link>
           {badger.categories.map(c =>
             <Link
               key={c.slug}
               to="badgers"
               navigationData={{ category: c.slug }}
-              className={styles.greenBox}
+              className={styles.categoryBox}
             >
                 See {c.name} team
             </Link>

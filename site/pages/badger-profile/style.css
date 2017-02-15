@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, daveGreen from "../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed from "../../css/_colors.css";
 @value mediumScreen from "../../css/_sizes.css";
 
 .categories {
@@ -18,10 +18,12 @@
   composes: fontS2 from "../../css/typography/_fonts.css";
   composes: lightSerif from "../../css/typography/_fonts.css";
   padding-top: 20px;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subheader {
@@ -33,12 +35,12 @@
   composes: subheader;
 }
 
-.greenBox {
+.categoryBox {
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   font-size: 16px;
   line-height: 1.0;
   color: badgerBlack;
-  border: solid 2px daveGreen;
+  border: solid 2px badgerRed;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
@@ -52,7 +54,7 @@
 
 .authorLinks a {
   color: badgerBlack;
-  border-bottom: solid 2px daveGreen;
+  border-bottom: solid 2px badgerRed;
 }
 
 .authorLink {
@@ -78,7 +80,8 @@
 }
 
 .profileDescriptionContainer {
-  width: 335px;
+  width: 100%;
+  max-width: 335px;
 }
 .profileDescriptionContainer hr {
   border-top: 1px solid #ccc;
@@ -86,7 +89,8 @@
 }
 
 .profilePictureContainer {
-  width: 335px;
+  max-width: 335px;
+  max-height: 335px;
   margin-bottom: 30px;
 }
 
@@ -94,14 +98,14 @@
   .profileContainer {
     margin: 0 auto;
     padding-bottom: 40px;
-    flex-direction: column;
-    align-items: center;
   }
   .profileDescriptionContainer{
-    width: 478px;
+    max-width: 478px;
   }
   .profilePictureContainer {
     width: 478px;
+    max-width: 478px;
+    max-height: 478px;
     margin-right: 0px;
   }
 }
@@ -121,6 +125,8 @@
   }
   .profilePictureContainer {
     width: 454px;
+    max-width: 454px;
+    max-height: 454px;
     margin-right: 50px;
   }
 }
