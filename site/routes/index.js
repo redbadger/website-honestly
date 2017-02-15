@@ -9,7 +9,7 @@ import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 import AboutUsPage from '../pages/about-us';
-
+import OurWorkPage from '../pages/our-work';
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
 import Events from '../../website-next/src/shared/containers/events';
@@ -18,6 +18,7 @@ import EventPage from '../../website-next/src/shared/containers/event';
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
+  ourWorkPage: OurWorkPage,
   joinUs: JoinUsPage,
   job: JobPage,
   event: EventPage,
