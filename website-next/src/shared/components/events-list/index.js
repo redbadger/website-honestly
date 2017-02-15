@@ -6,7 +6,7 @@ import React, { PropTypes } from 'react';
 import styles from './style.css';
 import EventsTimelineTitle from '../events-timeline-title';
 import EventsNewsListEntry from '../events-news-list-entry';
-import { splitEvents } from '../../util/events';
+import { splitEvents } from '../../../../../site/fetchers/util/events';
 
 const EventsList = ({
   events,
