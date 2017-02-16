@@ -1,0 +1,25 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: badgerBlack;
+  color: badgerWhite;
+  padding: 145px 0 110px 0;
+}
+
+.mainHeader {
+  composes: fontL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  text-align: center;
+  color: badgerWhite;
+}
+
+.mainSlogan {
+  composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  text-align: left;
+  color: badgerWhite;
+}

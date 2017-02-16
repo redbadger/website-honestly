@@ -4,7 +4,16 @@ import styles from './style.css';
 export default function CaseStudies() {
   return (
     <div>
-      The proof is in the pudding.
+      <div className={styles.headerContainer} >
+        <div>
+          <h1 className={styles.mainHeader} >
+            The proof is in the pudding.
+          </h1>
+          <p className={styles.mainSlogan}>
+            Read some of our case studies.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
