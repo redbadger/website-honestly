@@ -1,5 +1,7 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
 
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
 .headerContainer {
   display: flex;
   align-items: center;
@@ -7,7 +9,7 @@
   flex-direction: column;
   background-color: badgerBlack;
   color: badgerWhite;
-  padding: 145px 0 110px 0;
+  padding: 50px 0 70px 0;
 }
 
 .mainHeader {
@@ -18,7 +20,7 @@
 }
 
 .mainSlogan {
-  composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   text-align: left;
   color: badgerWhite;
@@ -26,4 +28,11 @@
 
 .caseStudyTopSection {
   composes: dividerWhite from "../../css/_divider.css";
+  background-color: badgerWhite;
+}
+
+@media mediumScreen {
+  .headerContainer {
+    padding: 145px 0 110px 0;
+  }
 }

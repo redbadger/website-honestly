@@ -9,8 +9,8 @@ export default function CaseStudyCamdenSlice() {
     <div className={styles.caseStudyContainer} >
       <div className={styles.caseStudyContent}>
         <div className={styles.caseStudyTextContainer} >
-          <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
           <a href="/our-work/case-study/camden-market/">
+            <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
             <h2 className={styles.caseStudyTextContainerHeader}>Taking steps towards a digital future</h2>
             <p className={styles.description}>
               Built in just ten weeks, Camdenmarket.com relaunched in
