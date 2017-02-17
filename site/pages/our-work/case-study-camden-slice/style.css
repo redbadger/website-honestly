@@ -5,7 +5,7 @@
   max-width: 1100px;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 30px;
   border-bottom: 1px solid linesOnWhite;
 }
 
@@ -87,5 +87,9 @@
 
   .description {
     margin-top: 20px;
+  }
+
+  .caseStudyContainer {
+    padding-top: 70px;
   }
 }

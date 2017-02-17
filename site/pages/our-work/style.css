@@ -13,7 +13,7 @@
 }
 
 .mainHeader {
-  composes: fontL from "../../css/typography/_fonts.css";
+  composes: fontM2 from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   text-align: center;
   color: badgerWhite;
@@ -34,5 +34,9 @@
 @media mediumScreen {
   .headerContainer {
     padding: 145px 0 110px 0;
+  }
+
+  .mainHeader {
+    composes: fontL from "../../css/typography/_fonts.css";
   }
 }
