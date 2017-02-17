@@ -75,6 +75,7 @@
   right: 0;
   left: 54px;
   display: none;
+  overflow-y: scroll;
 }
 
 .overlay .mediumScreenNav {
