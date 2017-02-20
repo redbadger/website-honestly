@@ -69,6 +69,7 @@
 @media mediumScreen {
   .caseStudyTextContainer {
     margin-top: 0;
+    padding: 0 30px;
   }
 
   .caseStudyContent {

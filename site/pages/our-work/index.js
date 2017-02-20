@@ -18,8 +18,10 @@ export default function CaseStudies() {
         </div>
       </div>
       <div className={styles.caseStudyTopSection}>
-        <CaseStudyCamdenSlice />
-        <CaseStudyFtSlice />
+        <div className={styles.topSlicesContainer}>
+          <CaseStudyCamdenSlice />
+          <CaseStudyFtSlice />
+        </div>
       </div>
     </div>
   );
