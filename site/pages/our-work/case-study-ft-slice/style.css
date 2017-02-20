@@ -25,7 +25,8 @@
 }
 
 .imageLink img {
-  max-width: 260px;
+  min-width: 260px;
+  width: 60%;
 }
 
 .clientLogo {
@@ -68,9 +69,11 @@
 
 .projectLandscape {
   display: none;
+  padding: 30px;
 }
 
 .projectPortrait {
+  padding: 30px;
   display: block;
 }
 
@@ -88,7 +91,7 @@
   }
 
   .imageLink img {
-    max-width: 400px;
+    min-width: 400px;
   }
 
   .clientLogo {
@@ -104,7 +107,7 @@
   }
 
   .caseStudyContainer {
-    padding-top: 70px;
+    padding-top: 30px;
   }
 
   .links {
@@ -115,6 +118,10 @@
 }
 
 @media largeScreen {
+  .imageLink img {
+    min-width: 650px;
+  }
+
   .projectLandscape {
     display: block;
   }
