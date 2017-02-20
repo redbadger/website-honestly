@@ -6,7 +6,7 @@ import DateBubble from '../date-bubble';
 import EventTitle from '../event-title';
 import React, { PropTypes } from 'react';
 import styles from '../events-list/style.css';
-import { setEndDate, eventImagePath } from '../../util/events';
+import { setEndDate } from '../../../../../site/fetchers/util/events';
 
 import Link from '../../../../../site/components/link';
 
@@ -47,7 +47,7 @@ const EventsNewsListEntry = ({
         <Cell size={1} key="event_picture_mobile" hideOn="mobileSM">
           <Link to="event" navigationData={eventLink}>
             <EventImage
-              imgPath={eventImagePath(featureImageFilename)}
+              imgPath={featureImageFilename}
               imgAlt={title}
             />
           </Link>
@@ -74,7 +74,7 @@ const EventsNewsListEntry = ({
               hideOn="mobileS">
               <Link to="event" navigationData={eventLink}>
                 <EventImage
-                  imgPath={eventImagePath(featureImageFilename)}
+                  imgPath={featureImageFilename}
                   imgAlt={title}
                   href={eventLink}
                 />
