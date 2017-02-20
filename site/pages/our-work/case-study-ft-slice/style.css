@@ -21,15 +21,15 @@
   display: flex;
   flex:1;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .imageLink img {
   max-width: 260px;
 }
 
-.camdenLogo {
-  width: 76px;
+.clientLogo {
+  width: 170px;
 }
 
 .caseStudyTextContainer {
@@ -41,7 +41,7 @@
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .description {
@@ -66,13 +66,21 @@
   padding-bottom: 30px;
 }
 
+.projectLandscape {
+  display: none;
+}
+
+.projectPortrait {
+  display: block;
+}
+
 @media mediumScreen {
   .caseStudyTextContainer {
     margin-top: 0;
   }
 
   .caseStudyContent {
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 0;
     padding: 0;
     border-bottom: 1px solid linesOnWhite;
@@ -101,5 +109,13 @@
   .links {
     text-align: left;
     border: none;
+  }
+
+  .projectLandscape {
+    display: block;
+  }
+
+  .projectPortrait {
+    display: none;
   }
 }

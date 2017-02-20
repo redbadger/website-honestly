@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './style.css';
 
 import CaseStudyCamdenSlice from './case-study-camden-slice';
+import CaseStudyFtSlice from './case-study-ft-slice';
 
 export default function CaseStudies() {
   return (
@@ -18,6 +19,7 @@ export default function CaseStudies() {
       </div>
       <div className={styles.caseStudyTopSection}>
         <CaseStudyCamdenSlice />
+        <CaseStudyFtSlice />
       </div>
     </div>
   );
