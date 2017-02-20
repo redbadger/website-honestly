@@ -14,13 +14,13 @@ export default class SmallScreenNav extends React.Component {
   }
 
   documentBodyLock = () => {
-    document.getElementById('lockableElement').setAttribute('aria-hidden', true);
+    document.getElementById('mainContent').setAttribute('aria-hidden', true);
     document.body.style.position = 'fixed';
     this.smallScreenNav.scrollTop = 0;
   }
 
   documentBodyRelease = () => {
-    document.getElementById('lockableElement').removeAttribute('aria-hidden');
+    document.getElementById('mainContent').removeAttribute('aria-hidden');
     document.body.style.position = 'relative';
   }
 
