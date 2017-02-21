@@ -83,11 +83,77 @@
   .caseStudyContent {
     flex-direction: row;
     margin: 0;
-    padding: 0;
+    padding: 0 0 60px 0;
     border-bottom: 1px solid linesOnWhite;
   }
 
   .caseStudyContainer {
     padding-top: 70px;
+  }
+
+  .caseStudyContent img {
+    display: inline-block;
+    margin: 10px 40px;
+  }
+
+
+  .camdenLogo {
+    width: 100px;
+  }
+
+  .ftLogo {
+    width: 220px;
+  }
+
+  .fortnumLogo {
+    width: 220px;
+  }
+
+  .skyLogo {
+    width: 55px;
+  }
+
+  .cartrawlerLogo {
+    width: 120px;
+  }
+
+  .tescoLogo {
+    width: 90px;
+  }
+
+  .lloydsLogo {
+    width: 165px;
+  }
+
+  .asosLogo {
+    width: 65px;
+  }
+
+  .bbcLogo {
+    width: 80px;
+  }
+
+  .bmwLogo {
+    width: 45px;
+  }
+
+  .atkinsLogo {
+    width: 90px;
+  }
+
+  .wickesLogo {
+    width: 85px;
+  }
+
+  .selfridgesLogo {
+    width: 140px;
+  }
+
+  .hallerLogo {
+    width: 90px;
+  }
+
+  .fnfLogo {
+    width: 85px;
   }
 }
