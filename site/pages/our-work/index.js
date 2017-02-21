@@ -5,6 +5,7 @@ import CaseStudyCamdenSlice from './case-study-camden-slice';
 import CaseStudyFtSlice from './case-study-ft-slice';
 import CaseStudyFortnumSlice from './case-study-fortnum-and-mason-slice';
 import CaseStudySkySlice from './case-study-sky-slice';
+import ClientLogosSlice from './client-logos-slice';
 
 export default function CaseStudies() {
   return (
@@ -25,6 +26,7 @@ export default function CaseStudies() {
           <CaseStudyFtSlice />
           <CaseStudyFortnumSlice />
           <CaseStudySkySlice />
+          <ClientLogosSlice />
         </div>
       </div>
     </div>
