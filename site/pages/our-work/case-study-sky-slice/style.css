@@ -12,6 +12,7 @@
   max-width: containerMaxWidth;
   width: 100%;
   flex-direction: column-reverse;
+  margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
@@ -23,21 +24,19 @@
 }
 
 .imageLink img {
-  min-width: 260px;
-  width: 70%;
+  max-width: 260px;
 }
 
 .clientLogo {
-  width: 180px;
+  width: 40px;
 }
 
 .caseStudyTextContainer {
   padding: 0px 10%;
-  margin-top: 30px;
 }
 
 .caseStudyTextContainerHeader {
-  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: fontL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
   margin-top: 30px;
@@ -69,31 +68,22 @@
   .caseStudyTextContainer {
     margin-top: 0;
     padding: 0 30px;
-    width: 60%;
-    position: relative;
-    z-index: 1;
+    text-align: center;
   }
 
   .caseStudyContent {
-    display: block;
+    flex-direction: row;
     margin: 0;
     padding: 0;
     border-bottom: 1px solid linesOnWhite;
-    position: relative;
-  }
-
-  .imageLink {
-    position: absolute;
-    right: 0;
-    bottom: 40px;
   }
 
   .imageLink img {
-    width: 400px;
+    max-width: 400px;
   }
 
   .clientLogo {
-    width: 230px;
+    width: 70px;
   }
 
   .caseStudyTextContainerHeader {
@@ -102,7 +92,6 @@
 
   .description {
     margin-top: 20px;
-    max-width: 300px;
   }
 
   .caseStudyContainer {
@@ -110,23 +99,8 @@
   }
 
   .links {
-    text-align: left;
+    text-align: center;
     border: none;
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  .imageLink {
-    position: absolute;
-    right: 0;
-    top: 50px;
-  }
-
-  .imageLink img {
-    width: 800px;
-  }
-
-  .caseStudyTextContainer {
-    max-width: 500px;
+    padding-bottom: 60px;
   }
 }

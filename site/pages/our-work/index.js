@@ -4,6 +4,7 @@ import styles from './style.css';
 import CaseStudyCamdenSlice from './case-study-camden-slice';
 import CaseStudyFtSlice from './case-study-ft-slice';
 import CaseStudyFortnumSlice from './case-study-fortnum-and-mason-slice';
+import CaseStudySkySlice from './case-study-sky-slice';
 
 export default function CaseStudies() {
   return (
@@ -23,6 +24,7 @@ export default function CaseStudies() {
           <CaseStudyCamdenSlice />
           <CaseStudyFtSlice />
           <CaseStudyFortnumSlice />
+          <CaseStudySkySlice />
         </div>
       </div>
     </div>
