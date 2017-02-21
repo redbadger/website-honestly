@@ -13,12 +13,22 @@ export default class SmallScreenNav extends React.Component {
     };
   }
 
+  documentBodyLock = () => {
+    document.getElementById('mainContent').setAttribute('aria-hidden', true);
+    document.body.style.position = 'fixed';
+    this.smallScreenNav.scrollTop = 0;
+  }
+
+  documentBodyRelease = () => {
+    document.getElementById('mainContent').removeAttribute('aria-hidden');
+    document.body.style.position = 'relative';
+  }
+
   handleInputChange = event => {
     if (event.target.checked) {
-      document.body.style.position = 'fixed';
-      this.smallScreenNav.scrollTop = 0;
+      this.documentBodyLock();
     } else {
-      document.body.style.position = 'relative';
+      this.documentBodyRelease();
     }
     this.setState({
       navOpen: event.target.checked,
@@ -26,7 +36,7 @@ export default class SmallScreenNav extends React.Component {
   }
 
   closeMenu = () => {
-    document.body.style.position = 'relative';
+    this.documentBodyRelease();
     this.setState({
       navOpen: false,
     });
