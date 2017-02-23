@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
@@ -93,8 +94,25 @@ function CaseStudies() {
 }
 
 export default function whatWeDo() {
+  const title = 'What we do at Red Badger';
+  const description = 'Through vision, validation and delivery learn how we use Lean and Technology to make things better.';
+  const metaImage = 'https://red-badger.com/assets-honestly/social/what-we-do-OG.png';
   return (
     <div>
+      <Helmet
+        meta={[
+          { name: 'twitter:card', content: 'summary_large_image' },
+          { name: 'twitter:site', content: '@redbadgerteam' },
+          { name: 'twitter:title', content: title },
+          { name: 'twitter:description', content: description },
+          { name: 'twitter:image', content: metaImage },
+          { property: 'og:type', content: 'website' },
+          { property: 'og:url', content: 'https://red-badger.com/what-we-do' },
+          { property: 'og:title', content: title },
+          { property: 'og:image', content: metaImage },
+          { property: 'og:description', content: description },
+        ]}
+      />
       <div className={styles.pageHeaderContainer}>
         <h1 className={styles.pageHeader}>
           Do the right thing.
