@@ -11,7 +11,7 @@ import ClientLogosSlice from './client-logos-slice';
 
 export default function CaseStudies() {
   const title = 'Our work';
-  const description = 'TFind out how we’ve helped e-commerce, media, financial and technology companies deliver digital products that make a difference.';
+  const description = 'Find out how we’ve helped e-commerce, media, financial and technology companies deliver digital products that make a difference.';
   const metaImage = 'https://red-badger.com/assets-honestly/social/our-work-OG.png';
   return (
     <div>
