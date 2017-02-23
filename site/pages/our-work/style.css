@@ -1,6 +1,5 @@
 @value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
-
-@value mediumScreen, largeScreen from "../../css/_sizes.css";
+@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 .headerContainer {
   display: flex;
@@ -29,6 +28,13 @@
 .caseStudyTopSection {
   composes: dividerWhite from "../../css/_divider.css";
   background-color: badgerWhite;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: contentMaxWidth;
+  margin: 0 auto;
 }
 
 @media mediumScreen {

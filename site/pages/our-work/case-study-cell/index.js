@@ -12,9 +12,9 @@ type CaseStudyCellProps = {
 
 export default function CaseStudyCell(props: CaseStudyCellProps) {
   return (
-    <div className={styles.caseStudyContainer} >
-      <div className={styles.caseStudyContent}>
-        <div className={styles.caseStudyTextContainer} >
+    <div className={styles.cell} >
+      <div className={styles.caseStudyContentContainer}>
+        <div className={styles.caseStudyContent} >
           <a href={props.linkUrl}>
             {
               'image' in props && props.image ?

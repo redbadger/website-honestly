@@ -9,7 +9,7 @@ import ClientLogosSlice from './client-logos-slice';
 import CaseStudyCell from './case-study-cell';
 
 import HallerImage from './images/Hall.jpg';
-import HallerLogo from './client-logos-slice/images/haller.png';
+import HallerLogo from './images/haller.png';
 import BmwImage from './images/BM.jpg';
 import BmwLogo from './client-logos-slice/images/bmw.png';
 import BbcLogo from './client-logos-slice/images/bbc.png';
