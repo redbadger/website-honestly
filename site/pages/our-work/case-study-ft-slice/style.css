@@ -67,16 +67,6 @@
   padding-bottom: 30px;
 }
 
-.projectLandscape {
-  display: none;
-  padding: 30px;
-}
-
-.projectPortrait {
-  padding: 30px;
-  display: block;
-}
-
 @media mediumScreen {
   .caseStudyTextContainer {
     margin-top: 0;
@@ -120,13 +110,5 @@
 @media largeScreen {
   .imageLink img {
     min-width: 650px;
-  }
-
-  .projectLandscape {
-    display: block;
-  }
-
-  .projectPortrait {
-    display: none;
   }
 }

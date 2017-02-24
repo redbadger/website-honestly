@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './style.css';
 
 import ftLogo from './images/ft-logo.png';
-import ftProjectLandscape from './images/ft-landscape.png';
-import ftProjectPortrait from './images/ft-portrait.png';
+import ftProjectImage from './images/meeting.png';
 
 const caseStudyUrl = '/our-work/case-study/financial-times/';
 
@@ -30,8 +29,7 @@ export default function CaseStudyCamdenSlice() {
           </a>
         </div>
         <a className={styles.imageLink} href={caseStudyUrl}>
-          <img className={styles.projectPortrait} src={ftProjectPortrait} alt="Financial Times project snapshot in portrait" />
-          <img className={styles.projectLandscape} src={ftProjectLandscape} alt="Financial Times project snapshot in landscape" />
+          <img src={ftProjectImage} alt="Financial Times project snapshot" />
         </a>
       </div>
     </div>
