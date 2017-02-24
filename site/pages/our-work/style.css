@@ -30,11 +30,15 @@
   background-color: badgerWhite;
 }
 
+.topSlicesContainer {
+  margin: 0 5%;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
   max-width: 1100px;
-  margin: 0 5%;
+  margin: 0;
   padding-top: 30px;
   border-top: 1px solid linesOnWhite;
 }
