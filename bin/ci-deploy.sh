@@ -6,6 +6,7 @@ set -euo pipefail
 #
 createCommitSite() {
   COMMIT_REF=$(git rev-parse --short HEAD)
+  LAST_COMMIT_INFO=$(git log -1 --format='%h %cd')
   export ENVIRONMENT_NAME="staging"
   export URL_BASENAME="$COMMIT_REF/"
 
@@ -15,7 +16,7 @@ createCommitSite() {
   make fetch
   make dev-commit
 
-  echo $COMMIT_REF > ./dist/version.txt
+  echo $LAST_COMMIT_INFO > ./dist/version.txt
 
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
@@ -32,12 +33,12 @@ createCommitSite() {
 }
 
 deployMaster() {
-  COMMIT_REF=$(git rev-parse --short HEAD)
+  LAST_COMMIT_INFO=$(git log -1 --format='%h %cd')
   echo Deploying current master to $1
   make clean
   make build
 
-  echo $COMMIT_REF > ./dist/version.txt
+  echo $LAST_COMMIT_INFO > ./dist/version.txt
 
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
