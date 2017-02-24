@@ -21,7 +21,13 @@ export default function CaseStudyCell(props: CaseStudyCellProps) {
                 <img src={props.image} className={styles.clientImage} alt={`${props.clientName} project`} /> : null
             }
             <img src={props.clientLogo} className={styles[`logo${props.clientName}`]} alt={`${props.clientName} logo`} />
-            <h2 className={styles.caseStudyTextContainerHeader}>
+            <h2
+              className={
+              'image' in props && props.image ?
+                styles.normalHeader :
+                styles.largeHeader
+              }
+            >
               {props.headerText}
             </h2>
             <p className={styles.description}>

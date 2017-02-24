@@ -1,5 +1,5 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
+@value badgerWhite, badgerRed, badgerBlack, linesOnWhite from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .headerContainer {
   display: flex;
@@ -33,11 +33,21 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  max-width: contentMaxWidth;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
+.gridRow {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid linesOnWhite;
+}
+
 @media mediumScreen {
+  .gridRow {
+    flex-direction: row;
+  }
+
   .headerContainer {
     padding: 145px 0 110px 0;
   }

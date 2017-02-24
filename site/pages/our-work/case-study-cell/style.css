@@ -7,8 +7,13 @@
   flex-basis: 100%;
 }
 
+.cell:nth-child(odd) {
+  border-right: 1px solid linesOnWhite;
+}
+
 .clientImage {
-  width: 100%;
+  width: 100%;;
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -23,10 +28,12 @@
 
 .logoHaller {
   width: 115px;
+  height: 41px;
 }
 
 .logoBMW {
   width: 30px;
+  height: 41px;
 }
 
 .logoBBC {
@@ -41,8 +48,15 @@
   padding: 0px 10%;
 }
 
-.caseStudyTextContainerHeader {
+.normalHeader {
   composes: fontM from "../../../css/typography/_fonts.css";
+}
+
+.largeHeader {
+  composes: fontL from "../../../css/typography/_fonts.css";
+}
+
+.normalHeader, .largeHeader {
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
   margin-top: 20px;
@@ -66,7 +80,6 @@
 
 .links {
   text-align: right;
-  border-bottom: 1px solid linesOnWhite;
   padding-bottom: 30px;
 }
 
@@ -81,14 +94,17 @@
     flex-direction: row;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid linesOnWhite;
   }
 
   .clientLogo {
     width: 70px;
   }
 
-  .caseStudyTextContainerHeader {
+  .clientImage {
+    width: 100%;
+  }
+
+  .normalHeader, .largeHeader {
     margin-top: 40px;
   }
 
