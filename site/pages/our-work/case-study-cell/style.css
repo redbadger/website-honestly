@@ -3,12 +3,13 @@
 
 .cell {
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   flex-basis: 100%;
+  border-bottom: 1px solid linesOnWhite;
 }
 
 .cell:nth-child(odd) {
-  border-right: 1px solid linesOnWhite;
+  border-right: none;
 }
 
 .clientImage {
@@ -22,8 +23,6 @@
   max-width: containerMaxWidth;
   width: 100%;
   flex-direction: column-reverse;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 
 .logoHaller {
@@ -45,7 +44,7 @@
 }
 
 .caseStudyContent {
-  padding: 0px 10%;
+  padding: 0;
 }
 
 .normalHeader {
@@ -84,6 +83,10 @@
 }
 
 @media mediumScreen {
+  .cell:nth-child(odd) {
+    border-right: 1px solid linesOnWhite;
+  }
+
   .caseStudyContent {
     margin-top: 0;
     padding: 0 30px;
@@ -113,8 +116,10 @@
   }
 
   .cell {
+    margin: 0 auto;
     padding-top: 70px;
     flex-basis: 50%;
+    border-bottom: none;
   }
 
   .links {

@@ -34,18 +34,30 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 5%;
+  padding-top: 30px;
+  border-top: 1px solid linesOnWhite;
 }
 
 .gridRow {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid linesOnWhite;
+  border-bottom: none;
+}
+
+.gridRow:last-child > div:last-child {
+  border-bottom: none;
+  margin-bottom: 20px;
 }
 
 @media mediumScreen {
+  .grid {
+    margin: 0 auto;
+  }
+
   .gridRow {
     flex-direction: row;
+    border-bottom: 1px solid linesOnWhite;
   }
 
   .headerContainer {
@@ -58,6 +70,6 @@
 
   .topSlicesContainer {
     margin: 0 20px;
-    padding: 0 0 40px 0;
+    padding: 0;
   }
 }
