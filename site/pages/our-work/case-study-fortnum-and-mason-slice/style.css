@@ -124,15 +124,17 @@ _:-ms-fullscreen, :root .imageLink {
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media largeScreen {
+  .imageLink img {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
   .imageLink {
     position: absolute;
     right: 0;
     top: 50px;
-  }
-
-  _:-ms-fullscreen, :root .imageLink {
-    top: 100px;
   }
 
   .imageLink img {
