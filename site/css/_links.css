@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack from "./_colors.css";
+@value badgerWhite, badgerRed, badgerBlack, scorpian from "./_colors.css";
 @value inputHeight, linkSize from "./_sizes.css";
 
 /*
@@ -47,6 +47,10 @@
   line-height: inputHeight;
   height: inputHeight;
   border: none;
+}
+
+.primaryButton:hover {
+  background-color: scorpian;
 }
 
 .smallButton {
