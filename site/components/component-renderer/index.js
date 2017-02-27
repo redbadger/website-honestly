@@ -1,4 +1,12 @@
+/*
+* This component is ported from Website Next and is meant to be
+* used only by Jobs and Events components
+*/
+
+import isArray from 'lodash/isArray';
+import isString from 'lodash/isString';
 import React, { Component } from 'react';
+
 import Paragraph from './paragraph';
 import Link from './link';
 import Strong from './strong';
@@ -6,8 +14,6 @@ import Title1 from './title1';
 import Title2 from './title2';
 import Title3 from './title3';
 import Content from '../content';
-import isArray from 'lodash/isArray';
-import isString from 'lodash/isString';
 
 const componentIndex = {
   Paragraph,

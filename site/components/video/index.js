@@ -1,3 +1,8 @@
+/*
+* This component is ported from Website Next and is meant to be
+* used only by Jobs and Events components
+*/
+
 import React, { Component } from 'react';
 // The plan is to only use youtube in future so we declare the styles there.
 import styles from './style.css';

@@ -10,7 +10,7 @@ import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 import AboutUsPage from '../pages/about-us';
 
-import JoinUsPage from '../../website-next/src/shared/containers/join-us';
+import JoinUsPage from '../pages/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
 import Events from '../../website-next/src/shared/containers/events';
 import EventPage from '../../website-next/src/shared/containers/event';

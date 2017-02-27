@@ -1,7 +1,8 @@
+import React, { Component } from 'react';
+
 import ComponentRenderer from '../../components/component-renderer';
 import Container from '../../components/container';
-import React, { Component } from 'react';
-import Jobs from '../../components/jobs';
+import Jobs from './jobs';
 import Section from '../../components/section';
 import styles from './style.css';
 import Video from '../../components/video';

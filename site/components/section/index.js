@@ -1,3 +1,8 @@
+/*
+* This component is ported from Website Next and is meant to be
+* used only by Jobs and Events components
+*/
+
 import React, { Component } from 'react';
 import styles from './style.css';
 
