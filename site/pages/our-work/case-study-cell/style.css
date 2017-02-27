@@ -8,6 +8,10 @@
   border-bottom: 1px solid linesOnWhite;
 }
 
+_:-ms-fullscreen, :root .cell {
+  min-height: 90vh;
+}
+
 .cell:nth-child(odd) {
   border-right: none;
 }

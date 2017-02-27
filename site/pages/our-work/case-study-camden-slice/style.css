@@ -24,6 +24,10 @@
   align-items: flex-end;
 }
 
+_:-ms-fullscreen, :root .imageLink {
+  min-height: 45vh;
+}
+
 .imageLink img {
   max-width: 260px;
 }

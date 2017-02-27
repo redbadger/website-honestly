@@ -22,6 +22,10 @@
   align-items: flex-end;
 }
 
+_:-ms-fullscreen, :root .imageLink {
+  min-height: 20vh;
+}
+
 .imageLink img {
   min-width: 260px;
   width: 70%;
@@ -125,6 +129,10 @@
     position: absolute;
     right: 0;
     top: 50px;
+  }
+
+  _:-ms-fullscreen, :root .imageLink {
+    top: 100px;
   }
 
   .imageLink img {

@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+_:-ms-fullscreen, :root .imageLink {
+  min-height: 20vh;
+}
+
 .imageLink img {
   min-width: 260px;
   width: 60%;
