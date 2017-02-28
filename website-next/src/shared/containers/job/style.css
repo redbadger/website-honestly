@@ -1,5 +1,5 @@
 @value tablet from "../../components/variables/breakpoints.css";
-@value badgerWhite, badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed, scorpian from "../../../../../site/css/_colors.css";
 
 .background {
   background-color: badgerWhite;
@@ -23,6 +23,10 @@
 
 .sidebarApplyLink {
   composes: smallButton from "../../../../../site/css/_links.css";
+}
+
+.sidebarApplyLink:hover {
+  background-color: scorpian;
 }
 
 .linkBack {
