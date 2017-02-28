@@ -3,6 +3,7 @@ import styles from './style.css';
 
 import fmLogo from './images/fortnum-mason-logo.png';
 import fmProjectSnapshot from './images/fortnum.png';
+import fmProjectMediumSnapshot from './images/fortnum-medium.png';
 
 const caseStudyUrl = '/our-work/case-study/fortnum-and-mason/';
 
@@ -26,7 +27,8 @@ export default function CaseStudyFortnumSlice() {
           </a>
         </div>
         <a className={styles.imageLink} href={caseStudyUrl}>
-          <img src={fmProjectSnapshot} alt="Financial Times project snapshot in portrait" />
+          <img className={styles.projectBigSmallSnapshot} src={fmProjectSnapshot} alt="Fortnum and Mason project snapshot" />
+          <img className={styles.projectMediumSnapshot} src={fmProjectMediumSnapshot} alt="Fortnum and Mason project snapshot" />
         </a>
       </div>
     </div>

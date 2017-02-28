@@ -69,6 +69,14 @@ _:-ms-fullscreen, :root .imageLink {
   padding-bottom: 30px;
 }
 
+.projectBigSmallSnapshot {
+  display: block;
+}
+
+.projectMediumSnapshot {
+  display: none;
+}
+
 @media mediumScreen {
   .caseStudyContainer {
     padding-bottom: 60px;
@@ -97,7 +105,7 @@ _:-ms-fullscreen, :root .imageLink {
   }
 
   .imageLink img {
-    width: 400px;
+    width: 300px;
   }
 
   .clientLogo {
@@ -114,7 +122,7 @@ _:-ms-fullscreen, :root .imageLink {
   }
 
   .caseStudyContainer {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   .links {
@@ -122,15 +130,31 @@ _:-ms-fullscreen, :root .imageLink {
     border: none;
     padding-bottom: 0;
   }
+
+  .projectBigSmallSnapshot {
+    display: none;
+  }
+
+  .projectMediumSnapshot {
+    display: block;
+  }
 }
 
-@media largeScreen {
+@media screen and (min-width: 800px) {
   .imageLink img {
-    width: 600px;
+    width: 400px;
   }
 }
 
 @media screen and (min-width: 1150px) {
+  .projectBigSmallSnapshot {
+    display: block;
+  }
+
+  .projectMediumSnapshot {
+    display: none;
+  }
+
   .imageLink {
     position: absolute;
     right: 0;

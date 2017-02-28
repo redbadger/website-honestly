@@ -35,16 +35,27 @@ _:-ms-fullscreen, :root .cell {
 }
 
 .logoBMW {
-  width: 30px;
-  height: 41px;
+  height: 58px;
+}
+
+.logoBMW + .normalHeader {
+  margin-top: 26px;
 }
 
 .logoBBC {
-  width: 60px;
+  width: 80px;
+}
+
+.logoBBC + .largeHeader {
+  margin-top: 10px;
 }
 
 .logoSky {
-  width: 40px;
+  width: 56px;
+}
+
+.logoSky + .largeHeader {
+  margin-top: 10px;
 }
 
 .caseStudyContent {
@@ -124,6 +135,10 @@ _:-ms-fullscreen, :root .cell {
     padding-top: 70px;
     flex-basis: 50%;
     border-bottom: none;
+  }
+
+  .cell-BBC, .cell-Sky {
+    padding-top: 40px;
   }
 
   .links {

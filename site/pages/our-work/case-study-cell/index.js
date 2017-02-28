@@ -1,5 +1,9 @@
 import React, { PropTypes } from 'react';
+import classnames from 'classnames/bind';
+
 import styles from './style.css';
+
+const cx = classnames.bind(styles);
 
 type CaseStudyCellProps = {
   [clientName: string]: any,
@@ -12,7 +16,7 @@ type CaseStudyCellProps = {
 
 export default function CaseStudyCell(props: CaseStudyCellProps) {
   return (
-    <div className={styles.cell} >
+    <div className={cx('cell', `cell-${props.clientName}`)} >
       <div className={styles.caseStudyContentContainer}>
         <div className={styles.caseStudyContent} >
           <a href={props.linkUrl}>

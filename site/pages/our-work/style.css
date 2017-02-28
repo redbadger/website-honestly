@@ -68,11 +68,12 @@
   }
 
   .headerContainer {
-    padding: 145px 0 110px 0;
+    padding: 110px 0 110px 0;
   }
 
   .mainHeader {
     composes: fontL from "../../css/typography/_fonts.css";
+    margin-bottom: 10px;
   }
 
   .topSlicesContainer {
