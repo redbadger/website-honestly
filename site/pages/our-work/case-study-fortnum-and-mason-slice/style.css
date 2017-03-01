@@ -22,6 +22,10 @@
   align-items: flex-end;
 }
 
+_:-ms-fullscreen, :root .imageLink {
+  min-height: 20vh;
+}
+
 .imageLink img {
   min-width: 260px;
   width: 70%;
@@ -32,7 +36,7 @@
 }
 
 .caseStudyTextContainer {
-  padding: 0px 10%;
+  padding: 0;
   margin-top: 30px;
 }
 
@@ -65,7 +69,20 @@
   padding-bottom: 30px;
 }
 
+.projectBigSmallSnapshot {
+  display: block;
+}
+
+.projectMediumSnapshot {
+  display: none;
+}
+
 @media mediumScreen {
+  .caseStudyContainer {
+    padding-bottom: 60px;
+    border-bottom: 1px solid linesOnWhite;
+  }
+
   .caseStudyTextContainer {
     margin-top: 0;
     padding: 0 30px;
@@ -78,7 +95,6 @@
     display: block;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid linesOnWhite;
     position: relative;
   }
 
@@ -89,7 +105,7 @@
   }
 
   .imageLink img {
-    width: 400px;
+    width: 300px;
   }
 
   .clientLogo {
@@ -106,16 +122,39 @@
   }
 
   .caseStudyContainer {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   .links {
     text-align: left;
     border: none;
+    padding-bottom: 0;
+  }
+
+  .projectBigSmallSnapshot {
+    display: none;
+  }
+
+  .projectMediumSnapshot {
+    display: block;
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 800px) {
+  .imageLink img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .projectBigSmallSnapshot {
+    display: block;
+  }
+
+  .projectMediumSnapshot {
+    display: none;
+  }
+
   .imageLink {
     position: absolute;
     right: 0;

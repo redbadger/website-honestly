@@ -1,34 +1,79 @@
 @value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
-.caseStudyContainer {
-  max-width: 1100px;
+.cell {
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
+  flex-basis: 100%;
+  border-bottom: 1px solid linesOnWhite;
 }
 
-.caseStudyContent {
+_:-ms-fullscreen, :root .cell {
+  min-height: 90vh;
+}
+
+.cell:nth-child(odd) {
+  border-right: none;
+}
+
+.clientImage {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.caseStudyContentContainer {
   display: flex;
   max-width: containerMaxWidth;
   width: 100%;
   flex-direction: column-reverse;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
 }
 
-.clientLogo {
-  width: 40px;
+.logoHaller {
+  width: 115px;
+  height: 41px;
 }
 
-.caseStudyTextContainer {
+.logoBMW {
+  height: 58px;
+}
+
+.logoBMW + .normalHeader {
+  margin-top: 26px;
+}
+
+.logoBBC {
+  width: 80px;
+}
+
+.logoBBC + .largeHeader {
+  margin-top: 10px;
+}
+
+.logoSky {
+  width: 56px;
+}
+
+.logoSky + .largeHeader {
+  margin-top: 10px;
+}
+
+.caseStudyContent {
   padding: 0;
 }
 
-.caseStudyTextContainerHeader {
+.normalHeader {
+  composes: fontM from "../../../css/typography/_fonts.css";
+}
+
+.largeHeader {
   composes: fontL from "../../../css/typography/_fonts.css";
+}
+
+.normalHeader, .largeHeader {
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .description {
@@ -49,37 +94,50 @@
 
 .links {
   text-align: right;
-  border-bottom: 1px solid linesOnWhite;
   padding-bottom: 30px;
 }
 
 @media mediumScreen {
-  .caseStudyTextContainer {
+  .cell:nth-child(odd) {
+    border-right: 1px solid linesOnWhite;
+  }
+
+  .caseStudyContent {
     margin-top: 0;
     padding: 0 30px;
     text-align: center;
   }
 
-  .caseStudyContent {
+  .caseStudyContentContainer {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid linesOnWhite;
   }
 
   .clientLogo {
     width: 70px;
   }
 
-  .caseStudyTextContainerHeader {
-    margin-top: 20px;
+  .clientImage {
+    width: 100%;
+  }
+
+  .normalHeader, .largeHeader {
+    margin-top: 40px;
   }
 
   .description {
     margin-top: 20px;
   }
 
-  .caseStudyContainer {
+  .cell {
+    margin: 0 auto;
+    padding-top: 70px;
+    flex-basis: 50%;
+    border-bottom: none;
+  }
+
+  .cell-BBC, .cell-Sky {
     padding-top: 40px;
   }
 

@@ -10,7 +10,7 @@
 .caseStudyContent {
   width: 100%;
   margin-bottom: 20px;
-  padding: 0 20px 20px 20px;
+  padding: 0 0 20px 0;
   text-align: center;
 }
 
@@ -88,14 +88,13 @@
   }
 
   .caseStudyContainer {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 
   .caseStudyContent img {
     display: inline-block;
     margin: 10px 40px;
   }
-
 
   .camdenLogo {
     width: 100px;
@@ -154,6 +153,6 @@
   }
 
   .fnfLogo {
-    width: 85px;
+    height: 64px;
   }
 }

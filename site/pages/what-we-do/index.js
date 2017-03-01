@@ -5,6 +5,7 @@ import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
 import TriangleSlice from './triangle-slice';
 import LeanSlice from './lean-slice';
+import Link from '../../components/link';
 
 import camdenJpg from './JPG/camden.jpg';
 import financialTimesJpg from './JPG/financialtimes.jpg';
@@ -87,7 +88,7 @@ function CaseStudies() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <a className={styles.button} href="/our-work/">See more of our work</a>
+        <Link to="ourWorkPage" className={styles.button}>See more of our work</Link>
       </div>
     </div>
   );

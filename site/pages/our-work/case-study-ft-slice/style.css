@@ -1,5 +1,5 @@
 @value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+@value mediumScreen from "../../../css/_sizes.css";
 
 .caseStudyContainer {
   max-width: 1100px;
@@ -19,9 +19,13 @@
 
 .imageLink {
   display: flex;
-  flex:1;
+  flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+_:-ms-fullscreen, :root .imageLink {
+  min-height: 20vh;
 }
 
 .imageLink img {
@@ -34,7 +38,7 @@
 }
 
 .caseStudyTextContainer {
-  padding: 0px 10%;
+  padding: 0;
   margin-top: 30px;
 }
 
@@ -67,27 +71,21 @@
   padding-bottom: 30px;
 }
 
-.projectLandscape {
-  display: none;
-  padding: 30px;
-}
-
-.projectPortrait {
-  padding: 30px;
-  display: block;
-}
-
 @media mediumScreen {
   .caseStudyTextContainer {
     margin-top: 0;
     padding: 0 30px;
+    flex-basis: 50%;
   }
 
   .caseStudyContent {
     flex-direction: row-reverse;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid linesOnWhite;
+  }
+
+  .imageLink {
+    flex-basis: 50%;
   }
 
   .imageLink img {
@@ -107,26 +105,14 @@
   }
 
   .caseStudyContainer {
-    padding-top: 30px;
+    padding: 40px 0 60px;
+    border-bottom: 1px solid linesOnWhite;
   }
 
   .links {
     text-align: left;
     border: none;
+    padding-bottom: 0;
   }
 
-}
-
-@media largeScreen {
-  .imageLink img {
-    min-width: 650px;
-  }
-
-  .projectLandscape {
-    display: block;
-  }
-
-  .projectPortrait {
-    display: none;
-  }
 }
