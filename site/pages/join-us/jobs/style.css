@@ -1,7 +1,7 @@
 @value badgerRed, badgerBlack from "../../../../../site/css/_colors.css";
 
 .title {
-  composes: heroFont from "../fonts/style.css";
+  composes: heroFont from "../../components/fonts/style.css";
   display: inline;
   font-size: 1.55em;
   text-decoration: none;

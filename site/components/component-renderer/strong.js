@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '../../../../../site/css/typography/_fonts.css';
+import styles from '../../css/typography/_fonts.css';
 
 export default class Paragraph extends Component {
   static propTypes = {

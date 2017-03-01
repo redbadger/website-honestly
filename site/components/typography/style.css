@@ -1,4 +1,10 @@
 /*
+* This component is ported from Website Next and is meant to be
+* used only by Jobs and Events components
+*/
+
+
+/*
  * Typography
  *
  * Provide a set of base styles for styling content elements
@@ -10,7 +16,7 @@
  */
 
 @value font, red, turquoise from "../variables/colors.css";
-@value badgerBlack, badgerRed from "../../../../../site/css/_colors.css";
+@value badgerBlack, badgerRed from "../../css/_colors.css";
 @value default, hero from "../fonts/style.css";
 
 .typography {}

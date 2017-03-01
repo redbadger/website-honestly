@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Note from '../note';
-import HtmlParser from '../html-parser';
-import styles from './style.css';
 import { connect } from 'react-redux';
-import Link from '../../../../../site/components/link';
-import Wall from '../wall';
+
+import Note from '../../../components/note';
+import HtmlParser from '../../../components/html-parser';
+import styles from './style.css';
+import Link from '../../../components/link';
+import Wall from '../../../components/wall';
 
 export default class Jobs extends Component {
   static propTypes = {
