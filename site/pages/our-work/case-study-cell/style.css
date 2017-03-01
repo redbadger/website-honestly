@@ -1,5 +1,5 @@
 @value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+@value tinyScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .cell {
   justify-content: center;
@@ -145,5 +145,23 @@ _:-ms-fullscreen, :root .cell {
     text-align: center;
     border: none;
     padding-bottom: 60px;
+  }
+}
+
+@media tinyScreen {
+  .cell-Haller {
+    min-height: 520px;
+  }
+
+  .cell-BMW {
+    min-height: 550px;
+  }
+
+  .cell-BBC {
+    min-height: 350px;
+  }
+
+  .cell-Sky {
+    min-height: 300px;
   }
 }
