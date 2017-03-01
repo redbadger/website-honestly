@@ -1,4 +1,3 @@
-/* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';
