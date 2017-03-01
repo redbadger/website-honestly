@@ -1,5 +1,5 @@
 @value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
-@value tinyScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .cell {
   justify-content: center;
@@ -148,20 +148,36 @@ _:-ms-fullscreen, :root .cell {
   }
 }
 
-@media tinyScreen {
-  .cell-Haller {
-    min-height: 520px;
-  }
+/* iOS9 Safari flexbox fixes */
+@supports (overflow:-webkit-marquee)
+   and (justify-content:inherit)
+  {
+    @media screen and (min-width: 320px) {
+      .cell-Haller {
+        min-height: 520px;
+      }
 
-  .cell-BMW {
-    min-height: 550px;
-  }
+      .cell-BMW {
+        min-height: 550px;
+      }
 
-  .cell-BBC {
-    min-height: 350px;
-  }
+      .cell-BBC {
+        min-height: 350px;
+      }
 
-  .cell-Sky {
-    min-height: 300px;
-  }
+      .cell-Sky {
+        min-height: 300px;
+      }
+    }
+
+    @media screen and (min-width: 568px) {
+      .cell-Haller {
+        min-height: 650px;
+      }
+
+      .cell-BMW {
+        min-height: 680px;
+      }
+    }
+
 }
