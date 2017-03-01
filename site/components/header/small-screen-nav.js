@@ -13,38 +13,34 @@ export default class SmallScreenNav extends React.Component {
     };
   }
 
+  documentBodyLock = () => {
+    document.getElementById('mainContent').setAttribute('aria-hidden', true);
+    document.body.style.position = 'fixed';
+    this.smallScreenNav.scrollTop = 0;
+  }
+
+  documentBodyRelease = () => {
+    document.getElementById('mainContent').removeAttribute('aria-hidden');
+    document.body.style.position = 'relative';
+  }
+
   handleInputChange = event => {
-    this.scrollLock();
+    if (event.target.checked) {
+      this.documentBodyLock();
+    } else {
+      this.documentBodyRelease();
+    }
     this.setState({
       navOpen: event.target.checked,
     });
   }
 
   closeMenu = () => {
-    this.scrollRelease();
+    this.documentBodyRelease();
     this.setState({
       navOpen: false,
     });
     return true;
-  }
-
-  scrollLock = () => {
-    this.smallScreenNav.addEventListener('wheel', this.onScrollHandler, false);
-    this.smallScreenNav.addEventListener('touchmove', this.onScrollHandler, false);
-  }
-
-  scrollRelease = () => {
-    this.smallScreenNav.removeEventListener('wheel', this.onScrollHandler, false);
-    this.smallScreenNav.removeEventListener('touchmove', this.onScrollHandler, false);
-  }
-
-  onScrollHandler = e => {
-    e.stopImmediatePropagation();
-    e.preventDefault();
-  }
-
-  componentWillUnmount = () => {
-    this.scrollRelease();
   }
 
   render() {
@@ -52,7 +48,7 @@ export default class SmallScreenNav extends React.Component {
     const navTabIndex = navOpen ? 0 : -1;
 
     return (
-      <div ref={c => { this.smallScreenNav = c; }} className={styles.smallScreenNavComponent}>
+      <div className={styles.smallScreenNavComponent}>
         <div className={styles.triggerContainer}>
           <label
             htmlFor="burger"
@@ -77,6 +73,7 @@ export default class SmallScreenNav extends React.Component {
             onClick={this.closeMenu}
           />
           <div
+            ref={c => { this.smallScreenNav = c; }}
             className={styles.smallScreenNavWrapper}
           >
             <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>

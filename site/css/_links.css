@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack from "./_colors.css";
+@value badgerWhite, badgerRed, badgerBlack, scorpian from "./_colors.css";
 @value inputHeight, linkSize from "./_sizes.css";
 
 /*
@@ -11,11 +11,12 @@
  */
 
 .bodyLink {
-  color: badgerRed;
+  color: badgerBlack;
+  transition: all 0.2s ease;
 }
 
 .bodyLink:hover {
-  color: badgerBlack;
+  color: badgerRed;
 }
 
 .bodyUnderlineLink {
@@ -48,6 +49,10 @@
   border: none;
 }
 
+.primaryButton:hover {
+  background-color: scorpian;
+}
+
 .smallButton {
   composes: boldSansSerif from "./typography/_fonts.css";
   font-size: 18px;
@@ -60,4 +65,8 @@
   line-height: 40px;
   height: 40px;
   border: none;
+}
+
+.smallButton:hover {
+  background-color: scorpian;
 }

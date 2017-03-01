@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './style.css';
-import { imageAssetsEndpoint } from '../../config';
+
+const imageAssetsEndpoint = 'https://res.cloudinary.com/red-badger-assets/image/upload/events/';
 
 export default class BannerReactConf extends Component {
   render() {

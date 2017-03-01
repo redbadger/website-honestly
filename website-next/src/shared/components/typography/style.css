@@ -17,12 +17,14 @@
 
 .a,
 .typography a {
-  color: badgerRed;
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRed;
+  transition: all 0.2s ease;
 }
 
 .a:hover,
 .typography a:hover {
-  color: badgerBlack;
+  color: badgerRed;
 }
 
 .p,
