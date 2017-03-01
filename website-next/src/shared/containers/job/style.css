@@ -25,10 +25,6 @@
   composes: smallButton from "../../../../../site/css/_links.css";
 }
 
-.sidebarApplyLink:hover {
-  background-color: scorpian;
-}
-
 .linkBack {
   composes: bodyLink from "../../../../../site/css/_links.css";
   border-bottom: 1px solid badgerRed;
