@@ -186,3 +186,33 @@ _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
     }
 
 }
+
+@media screen and (max-width: 689px) {
+  /* IE11 fix for flexbox */
+  _:-ms-fullscreen, :root .cell {
+    min-height: 105vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BMW {
+    min-height: 115vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* IE11 fix for flexbox */
+  _:-ms-fullscreen, :root .cell {
+    min-height: 100vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BMW {
+    min-height: 100vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BBC {
+    min-height: 60vh;
+  }
+}
