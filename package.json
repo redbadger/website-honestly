@@ -65,6 +65,7 @@
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.1",
+    "react-helmet": "^4.0.0",
     "react-motion": "^0.4.7",
     "react-swipeable-views": "^0.10.1",
     "reset-css": "^2.2.0",

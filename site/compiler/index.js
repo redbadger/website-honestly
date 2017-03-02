@@ -1,3 +1,5 @@
+import Helmet from 'react-helmet';
+
 import { renderToString } from 'react-dom/server';
 import encode from 'ent/encode';
 
@@ -72,6 +74,7 @@ export function compileRoutes(state) {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
+    const meta = typeof (window) === 'undefined' ? (Helmet.rewind()).meta : null;
 
     stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
@@ -86,6 +89,7 @@ export function compileRoutes(state) {
       cssPath,
       jsPath,
       state: encodedState,
+      meta,
     });
     const ejsMs = Date.now() - ejsStart;
     console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`);
