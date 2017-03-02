@@ -1,0 +1,111 @@
+@value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.caseStudyContainer {
+  max-width: 1100px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.caseStudyContent {
+  display: flex;
+  max-width: containerMaxWidth;
+  width: 100%;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.imageLink {
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+_:-ms-fullscreen, :root .imageLink {
+  min-height: 45vh;
+}
+
+.imageLink img {
+  max-width: 260px;
+}
+
+.camdenLogo {
+  width: 76px;
+}
+
+.caseStudyTextContainer {
+  padding: 0;
+  margin-top: 30px;
+}
+
+.caseStudyTextContainerHeader {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  margin-top: 30px;
+}
+
+.description {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  margin-top: 10px;
+}
+
+.readmore {
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  border-bottom: 2px solid badgerRed;
+  text-decoration: none;
+  color: badgerBlack;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.links {
+  text-align: right;
+  border-bottom: 1px solid linesOnWhite;
+  padding-bottom: 30px;
+}
+
+@media mediumScreen {
+  .caseStudyTextContainer {
+    margin-top: 0;
+    padding: 0 30px;
+    flex-basis: 50%;
+  }
+
+  .caseStudyContent {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid linesOnWhite;
+  }
+
+  .imageLink img {
+    max-width: 400px;
+  }
+
+  .camdenLogo {
+    width: 123px;
+  }
+
+  .caseStudyTextContainerHeader {
+    margin-top: 40px;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .caseStudyContainer {
+    padding-top: 60px;
+  }
+
+  .links {
+    text-align: left;
+    border: none;
+  }
+}

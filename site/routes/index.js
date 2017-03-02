@@ -9,6 +9,8 @@ import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 import AboutUsPage from '../pages/about-us';
+
+import OurWorkPage from '../pages/our-work';
 import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
 
@@ -20,6 +22,7 @@ import EventPage from '../../website-next/src/shared/containers/event';
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
+  ourWorkPage: OurWorkPage,
   joinUs: JoinUsPage,
   job: JobPage,
   event: EventPage,

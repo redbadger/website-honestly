@@ -35,7 +35,7 @@ export default function TechSlice() {
       </h2>
 
       <p className={styles.projectsBlerb}>
-        Here is a selection of what we've used on recent projects.
+        {"Here is a selection of what we've used on recent projects."}
       </p>
 
       <ul className={styles.techList}>
