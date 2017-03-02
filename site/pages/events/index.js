@@ -1,8 +1,8 @@
-import Container from '../../components/container';
 import React from 'react';
+import Container from '../../components/container';
 import Section from '../../components/section';
 import styles from './style.css';
-import EventsList from '../../components/events-list';
+import EventsList from './events-list';
 import BannerReactConf from '../../components/banner-react-conf';
 
 export default ({ events }) => (

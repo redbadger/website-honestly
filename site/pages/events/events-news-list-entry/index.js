@@ -1,14 +1,15 @@
-import HR from '../hr';
-import { Grid, Cell } from '../grid';
-import EventNewsMeta from '../event-news-meta';
-import EventImage from '../event-image';
-import DateBubble from '../date-bubble';
-import EventTitle from '../event-title';
 import React, { PropTypes } from 'react';
-import styles from '../events-list/style.css';
-import { setEndDate } from '../../../../../site/fetchers/util/events';
 
-import Link from '../../../../../site/components/link';
+import HR from '../../../components/hr';
+import { Grid, Cell } from '../../../components/grid';
+import EventNewsMeta from '../../../components/event-news-meta';
+import EventImage from '../../../components/event-image';
+import DateBubble from '../../../components/date-bubble';
+import EventTitle from '../../../components/event-title';
+import styles from '../events-list/style.css';
+import { setEndDate } from '../../../fetchers/util/events';
+
+import Link from '../../../components/link';
 
 const EventsNewsListEntry = ({
   id,
@@ -34,8 +35,10 @@ const EventsNewsListEntry = ({
     <li key={`entry_${id}`} className={styles.eventItem}>
       <Grid fit={false}>
         <Cell size={12}>
-          <HR color="grey" customClassName=
-            {styles.mobileHorizontalLine} />
+          <HR
+            color="grey" 
+            customClassName={styles.mobileHorizontalLine}
+          />
           <DateBubble
               startDateTime={startDateTime}
               endDateTime={setEndDate(

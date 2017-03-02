@@ -6,7 +6,7 @@ import React, { PropTypes } from 'react';
 import styles from './style.css';
 import EventsTimelineTitle from '../events-timeline-title';
 import EventsNewsListEntry from '../events-news-list-entry';
-import { splitEvents } from '../../../../../site/fetchers/util/events';
+import { splitEvents } from '../../../fetchers/util/events';
 
 const EventsList = ({
   events,
@@ -24,10 +24,10 @@ const EventsList = ({
   if (relevantEvents.length > 0) {
     return (
       <div className={styles.eventsListTimelineSection}>
-          <EventsTimelineTitle timeline={timeline} />
+        <EventsTimelineTitle timeline={timeline} />
         <ul className={styles.eventsList}>
           {
-            relevantEvents.map((event) => (
+            relevantEvents.map(event => (
               <EventsNewsListEntry
                 {...event}
                 timeline={timeline}

@@ -8,7 +8,7 @@ import Note from '../../components/note';
 import Hr from '../../components/hr';
 import styles from './style.css';
 import typography from '../../components/typography/style.css';
-import Link from '../../../../../site/components/link';
+import Link from '../../components/link';
 import classnames from 'classnames';
 
 export default class Job extends Component {
