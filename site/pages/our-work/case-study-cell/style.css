@@ -8,8 +8,13 @@
   border-bottom: 1px solid linesOnWhite;
 }
 
+/* IE11 fix for flexbox */
 _:-ms-fullscreen, :root .cell {
   min-height: 90vh;
+}
+
+_:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+  min-height: 75vh;
 }
 
 .cell:nth-child(odd) {
