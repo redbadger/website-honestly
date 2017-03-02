@@ -1,4 +1,4 @@
-@value badgerWhite from "../../../../../site/css/_colors.css";
+@value badgerWhite from "../../css/_colors.css";
 
 .background {
   background-color: badgerWhite;
