@@ -9,7 +9,11 @@ import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 import AboutUsPage from '../pages/about-us';
+
 import OurWorkPage from '../pages/our-work';
+import MeetOurTeam from '../pages/meet-our-team';
+import BadgerProfile from '../pages/badger-profile';
+
 import JoinUsPage from '../../website-next/src/shared/containers/join-us';
 import JobPage from '../../website-next/src/shared/containers/job';
 import Events from '../../website-next/src/shared/containers/events';
@@ -27,7 +31,8 @@ const componentMap = {
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
   aboutUsPage: AboutUsPage,
-  badgers: ({ category }) => <div>{category}</div>,
+  badgers: MeetOurTeam,
+  badger: BadgerProfile,
 };
 
 function routes() {

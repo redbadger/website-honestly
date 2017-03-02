@@ -8,8 +8,13 @@
   border-bottom: 1px solid linesOnWhite;
 }
 
+/* IE11 fix for flexbox */
 _:-ms-fullscreen, :root .cell {
   min-height: 90vh;
+}
+
+_:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+  min-height: 75vh;
 }
 
 .cell:nth-child(odd) {
@@ -145,5 +150,69 @@ _:-ms-fullscreen, :root .cell {
     text-align: center;
     border: none;
     padding-bottom: 60px;
+  }
+}
+
+/* iOS9 Safari flexbox fixes */
+@supports (overflow:-webkit-marquee)
+   and (justify-content:inherit)
+  {
+    @media screen and (min-width: 320px) {
+      .cell-Haller {
+        min-height: 520px;
+      }
+
+      .cell-BMW {
+        min-height: 550px;
+      }
+
+      .cell-BBC {
+        min-height: 350px;
+      }
+
+      .cell-Sky {
+        min-height: 300px;
+      }
+    }
+
+    @media screen and (min-width: 568px) {
+      .cell-Haller {
+        min-height: 650px;
+      }
+
+      .cell-BMW {
+        min-height: 680px;
+      }
+    }
+
+}
+
+@media screen and (max-width: 689px) {
+  /* IE11 fix for flexbox */
+  _:-ms-fullscreen, :root .cell {
+    min-height: 105vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BMW {
+    min-height: 115vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* IE11 fix for flexbox */
+  _:-ms-fullscreen, :root .cell {
+    min-height: 100vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BMW {
+    min-height: 100vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BBC {
+    min-height: 60vh;
   }
 }
