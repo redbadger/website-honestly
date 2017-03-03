@@ -11,59 +11,47 @@ import { setEndDate } from '../../../fetchers/util/events';
 
 import Link from '../../../components/link';
 
-const EventsNewsListEntry = ({
-  id,
-  tags,
-  slug,
-  title,
-  timeline,
-  strapline,
-  endDateTime,
-  externalLinks,
-  internalLinks,
-  startDateTime,
-  featureImageFilename,
-}) => {
-  const eventLink = ({
+const EventsNewsListEntry = (
+  {
+    id,
+    tags,
+    slug,
+    title,
+    timeline,
+    strapline,
+    endDateTime,
+    externalLinks,
+    internalLinks,
+    startDateTime,
+    featureImageFilename,
+  },
+) => {
+  const eventLink = {
     year: startDateTime.year,
     month: startDateTime.month,
     date: startDateTime.date,
     slug,
-  });
+  };
 
   return (
     <li key={`entry_${id}`} className={styles.eventItem}>
       <Grid fit={false}>
         <Cell size={12}>
-          <HR
-            color="grey"
-            customClassName={styles.mobileHorizontalLine}
-          />
+          <HR color="grey" customClassName={styles.mobileHorizontalLine} />
           <DateBubble
-              startDateTime={startDateTime}
-              endDateTime={setEndDate(
-                timeline,
-                startDateTime,
-                endDateTime)}
+            startDateTime={startDateTime}
+            endDateTime={setEndDate(timeline, startDateTime, endDateTime)}
           />
         </Cell>
         <Cell size={1} key="event_picture_mobile" hideOn="mobileSM">
           <Link to="event" navigationData={eventLink}>
-            <EventImage
-              imgPath={featureImageFilename}
-              imgAlt={title}
-            />
+            <EventImage imgPath={featureImageFilename} imgAlt={title} />
           </Link>
         </Cell>
         <Cell size={12} breakOn="mobile">
           <Grid fit={false}>
-              <Cell size={8} key='event_description'
-                breakOn="mobileS"
-              >
-              <EventTitle
-                eventLink={eventLink}
-                eventTitle={title}
-              />
+            <Cell size={8} key="event_description" breakOn="mobileS">
+              <EventTitle eventLink={eventLink} eventTitle={title} />
               <div className={styles.eventDescription}>
                 {strapline}
               </div>
@@ -71,10 +59,14 @@ const EventsNewsListEntry = ({
                 internalLinks={internalLinks}
                 externalLinks={externalLinks}
                 tags={tags}
-               />
+              />
             </Cell>
-            <Cell size={4} key='event_picture' breakOn="mobileS"
-              hideOn="mobileS">
+            <Cell
+              size={4}
+              key="event_picture"
+              breakOn="mobileS"
+              hideOn="mobileS"
+            >
               <Link to="event" navigationData={eventLink}>
                 <EventImage
                   imgPath={featureImageFilename}

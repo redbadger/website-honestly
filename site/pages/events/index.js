@@ -11,9 +11,9 @@ export default ({ events }) => (
     <BannerReactConf />
     <Section>
       <Container>
-        <EventsList events={events} timeline='today' />
-        <EventsList events={events} timeline='future' />
-        <EventsList events={events} timeline='past' />
+        <EventsList events={events} timeline="today" />
+        <EventsList events={events} timeline="future" />
+        <EventsList events={events} timeline="past" />
       </Container>
     </Section>
   </div>
