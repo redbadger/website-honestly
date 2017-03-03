@@ -1,3 +1,7 @@
+/* Refactored from Website Next
+*  TODO: Stop using variables/breakpoints
+*/
+
 @value desktop from "../variables/breakpoints.css";
 @value desktopM from "../variables/breakpoints.css";
 @value mobile from "../variables/breakpoints.css";

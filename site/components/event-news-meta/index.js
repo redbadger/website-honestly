@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
-import styles from '../events-list/style.css';
+import styles from './style.css';
 
 import TagsList from '../tags-list';
-import EventLinksList from '../event-links-list';
+import EventLinksList from '../../pages/event/event-links-list';
 
 export const linksSection = ({ externalLinks, internalLinks }) => {
   if (externalLinks || internalLinks) {

@@ -3,8 +3,8 @@
 import React, { PropTypes } from 'react';
 
 import classNames from 'classnames';
-import layout from '../utils/layout.css';
-import icons from '../icons/style.css';
+import layout from '../../../components/utils/layout.css';
+import icons from '../../../components/icons/style.css';
 import styles from './style.css';
 
 const EventLinksList = ({

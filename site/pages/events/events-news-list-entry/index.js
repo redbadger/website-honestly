@@ -36,7 +36,7 @@ const EventsNewsListEntry = ({
       <Grid fit={false}>
         <Cell size={12}>
           <HR
-            color="grey" 
+            color="grey"
             customClassName={styles.mobileHorizontalLine}
           />
           <DateBubble

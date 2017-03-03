@@ -1,18 +1,17 @@
 /* eslint-disable react/jsx-pascal-case */
+import marked from 'marked';
+import React, { Component } from 'react';
 
 import Container from '../../components/container';
-import React, { Component } from 'react';
 import Section from '../../components/section';
-import Link from '../../../../../site/components/link';
-
-import styles from './style.css';
-
+import Link from '../../components/link';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventNewsMeta from '../../components/event-news-meta';
-import { setEndDate } from '../../../../../site/fetchers/util/events';
 
-import marked from 'marked';
+import styles from './style.css';
+
+import { setEndDate } from '../../fetchers/util/events';
 
 export default class Event extends Component {
   render() {

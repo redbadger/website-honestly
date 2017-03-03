@@ -1,4 +1,4 @@
-@value mobileS from "../../components/variables/breakpoints.css";
+@value mobileS from "../variables/breakpoints.css";
 
 .eventPicture {
   width: 100%;

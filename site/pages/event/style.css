@@ -1,8 +1,6 @@
-@value badgerRed, badgerBlack, badgerWhite from "../../../../../site/css/_colors.css";
-@value largeScreen from "../../../../../site/css/_sizes.css";
+@value badgerRed, badgerBlack, badgerWhite from "../../css/_colors.css";
+@value largeScreen from "../../css/_sizes.css";
 @value red from "../../components/variables/colors.css";
-
-@value badgerWhite from "../../../../../site/css/_colors.css";
 
 .background {
   background-color: badgerWhite;
