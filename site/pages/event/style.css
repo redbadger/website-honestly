@@ -62,8 +62,8 @@
 }
 
 .eventTitle {
-  composes: serif from "../../../../../site/css/typography/_fonts.css";
-  composes: fontM2 from "../../../../../site/css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontM2 from "../../css/typography/_fonts.css";
   text-decoration: none;
   display: inline;
   margin: 0 0 20px 0;
@@ -72,8 +72,8 @@
 
 .paragraph {
   color: badgerBlack;
-  composes: fontXS from "../../../../../site/css/typography/_fonts.css";
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
   margin: 10px 0px;
 }
 
@@ -91,8 +91,8 @@
 }
 
 .eventDescription {
-  composes: fontXS from "../../../../../site/css/typography/_fonts.css";
-  composes: serif from "../../../../../site/css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
   margin-top: 10px;
   font-weight: bold;
 }
@@ -117,10 +117,10 @@
 }
 
 .moreEvents {
-  composes: bodyLink from "../../../../../site/css/_links.css";
+  composes: bodyLink from "../../css/_links.css";
   display: block;
   margin-bottom: 25px;
-  composes: sansSerif from "../../../../../site/css/typography/_fonts.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
 }
 
 .moreEvents a {
