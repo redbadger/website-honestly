@@ -3,19 +3,17 @@
 * used only by Jobs and Events components
 */
 
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './style.css';
 
-export default class Section extends Component {
-  static propTypes = {
-    children: React.PropTypes.node,
-  };
-
-  render() {
-    return (
-      <section className={styles.section}>
-        {this.props.children}
-      </section>
-    );
-  }
+export default function Section({ children }) {
+  return (
+    <section className={styles.section}>
+      {children}
+    </section>
+  );
 }
+
+Section.propTypes = {
+  children: React.PropTypes.node,
+};

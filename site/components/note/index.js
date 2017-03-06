@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './style.css';
 
-export default class Note extends Component {
-  static propTypes = {
-    children: React.PropTypes.node.isRequired,
-  };
-
-  render() {
-    return (
-      <div className={styles.note}>
-        {this.props.children}
-      </div>
-    );
-  }
+export default function Note({ children }) {
+  return (
+    <div className={styles.note}>
+      {children}
+    </div>
+  );
 }
+
+Note.propTypes = {
+  children: React.PropTypes.node.isRequired,
+};

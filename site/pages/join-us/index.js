@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import ComponentRenderer from '../../components/component-renderer';
 import Container from '../../components/container';
@@ -23,7 +23,12 @@ const titles = {
         type: 'Title3',
         props: {
           // eslint-disable-next-line max-len, comma-dangle
-          children: <span>Are we what you&#39;re looking <span className={styles.noWrap}>for?*</span></span>
+          children: (
+            <span>
+              Are we what you’re looking{' '}
+              <span className={styles.noWrap}>for?*</span>
+            </span>
+          ),
         },
       },
     ],
@@ -101,35 +106,37 @@ const vacancies = {
   },
 };
 
-export default class JoinUs extends Component {
-  render() {
-    return (
-      <div className={styles.background}>
+export default function JoinUs({ jobs }) {
+  return (
+    <div className={styles.background}>
+      <Section>
+        <Container>
+          <ComponentRenderer data={titles} />
+          <Grid>
+            <Cell size={6}>
+              <ComponentRenderer data={join} />
+            </Cell>
+            <Cell size={6}>
+              <Video id="9Ph7XJfWPys" type="youtube" />
+            </Cell>
+          </Grid>
+          <HR color="red" />
+          <ComponentRenderer data={vacancies} />
+          <Jobs jobs={jobs} />
+        </Container>
+      </Section>
+      <HR color="red" />
+      <div className={styles.apply}>
         <Section>
           <Container>
-            <ComponentRenderer data={titles} />
-            <Grid>
-              <Cell size={6}>
-                <ComponentRenderer data={join} />
-              </Cell>
-              <Cell size={6}>
-                <Video id="9Ph7XJfWPys" type="youtube" />
-              </Cell>
-            </Grid>
-            <HR color="red" />
-            <ComponentRenderer data={vacancies} />
-            <Jobs jobs={this.props.jobs} />
+            <ComponentRenderer data={apply} />
           </Container>
         </Section>
-        <HR color="red" />
-        <div className={styles.apply}>
-          <Section>
-            <Container>
-              <ComponentRenderer data={apply} />
-            </Container>
-          </Section>
-        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+JoinUs.propTypes = {
+  jobs: React.PropTypes.object,
+};
