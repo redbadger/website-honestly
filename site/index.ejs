@@ -24,6 +24,7 @@
     <link rel="icon" href="/assets-honestly/favicons/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
     <% if (typeof tracking !== 'undefined' && tracking) { %>
@@ -38,7 +39,6 @@
         ga('send', 'pageview');
     </script><% } %>
     <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
   </head>
   <body>
     <div class="js-app">
