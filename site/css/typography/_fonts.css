@@ -47,7 +47,6 @@
 
 @value mediumScreen, largeScreen from "../_sizes.css";
 @import url("//hello.myfonts.net/count/322627");
-@import url("./_sentinel.css");
 
 @font-face {
   font-family: 'ProximaNova-Bold';
