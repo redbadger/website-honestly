@@ -1,4 +1,4 @@
-
+/* eslint-disable camelcase */
 import { isValidTweet } from './twitter';
 
 const generateTweet = () => {

@@ -1,4 +1,4 @@
-
+/* eslint-disable camelcase */
 import { isValidPost } from './instagram';
 
 const generatePost = () => {

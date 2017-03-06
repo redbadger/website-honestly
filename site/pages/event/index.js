@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable react/jsx-pascal-case, react/no-danger */
 import marked from 'marked';
 import React from 'react';
 
@@ -13,9 +13,7 @@ import styles from './style.css';
 
 import { setEndDate } from '../../fetchers/util/events';
 
-export default function Event(props) {
-  const { event } = props;
-
+export default function Event({ event }) {
   return (
     <div className={styles.background}>
       <Section>

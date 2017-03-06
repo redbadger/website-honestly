@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';

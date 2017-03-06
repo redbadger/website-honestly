@@ -92,7 +92,7 @@ export function compileRoutes(state) {
       meta,
     });
     const ejsMs = Date.now() - ejsStart;
-    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`);
+    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`); // eslint-disable-line no-console
 
     return { body, path };
   };

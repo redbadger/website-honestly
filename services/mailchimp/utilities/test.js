@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import { formatSignUpResponse, formatUpdateResponse, encryptText, decryptText, formatFormInput } from './index';
 
 describe('formatSignUpResponse', () => {

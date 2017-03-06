@@ -6,39 +6,56 @@ export function parseDateAndResetTime(dateTimeIso) {
   return dateFns.setMinutes(e, 0);
 }
 
-export function splitEvents({
-  events,              // array of events
-  timeline,            // one of 'past', 'today', 'future'
-  reverse = false,     // optionally reverse final list of events
-  todayDateTime = new Date(),  // iso string representing today date
-}) {
-  let relevantEvents = events.filter(event => {
-    const startDateTime = parseDateAndResetTime(event.startDateTime.iso);
-    const endDateTime = parseDateAndResetTime(event.endDateTime.iso);
+export function splitEvents(
+  {
+    events, // array of events
+    timeline, // one of 'past', 'today', 'future'
+    reverse = false, // optionally reverse final list of events
+    todayDateTime = new Date(), // iso string representing today date
+  },
+) {
+  let relevantEvents = events.filter(
+    event => {
+      const startDateTime = parseDateAndResetTime(event.startDateTime.iso);
+      const endDateTime = parseDateAndResetTime(event.endDateTime.iso);
 
-    // In a rare case of user error we omit this event from the output list
-    if ((!dateFns.isSameDay(startDateTime, endDateTime) &&
-      !dateFns.isBefore(startDateTime, endDateTime)) ||
-        dateFns.differenceInMinutes(endDateTime, startDateTime) < 0) {
-      return false;
-    }
-
-    switch (timeline) {
-      case 'today':
-        if (dateFns.isSameDay(startDateTime, endDateTime)) {
-          return dateFns.isSameDay(startDateTime, todayDateTime);
-        } else { // eslint-disable-line no-else-return
-          return dateFns.isWithinRange(todayDateTime, startDateTime, endDateTime);
-        }
-      case 'past':
-        return (!dateFns.isWithinRange(todayDateTime, startDateTime, endDateTime) && dateFns.isBefore(endDateTime, todayDateTime) && !dateFns.isSameDay(endDateTime, todayDateTime));
-      case 'future':
-        return (!dateFns.isSameDay(startDateTime, todayDateTime) &&
-          dateFns.isAfter(startDateTime, todayDateTime));
-      default:
+      // In a rare case of user error we omit this event from the output list
+      if (
+        (!dateFns.isSameDay(startDateTime, endDateTime) &&
+          !dateFns.isBefore(startDateTime, endDateTime)) ||
+        dateFns.differenceInMinutes(endDateTime, startDateTime) < 0
+      ) {
         return false;
-    }
-  }, this);
+      }
+
+      switch (timeline) {
+        case 'today':
+          if (dateFns.isSameDay(startDateTime, endDateTime)) {
+            return dateFns.isSameDay(startDateTime, todayDateTime);
+          } else { // eslint-disable-line no-else-return
+            return dateFns.isWithinRange(
+              todayDateTime,
+              startDateTime,
+              endDateTime,
+            );
+          }
+        case 'past':
+          return !dateFns.isWithinRange(
+            todayDateTime,
+            startDateTime,
+            endDateTime,
+          ) &&
+            dateFns.isBefore(endDateTime, todayDateTime) &&
+            !dateFns.isSameDay(endDateTime, todayDateTime);
+        case 'future':
+          return !dateFns.isSameDay(startDateTime, todayDateTime) &&
+            dateFns.isAfter(startDateTime, todayDateTime);
+        default:
+          return false;
+      }
+    },
+    this,
+  );
 
   if (relevantEvents.length > 1 && reverse === true) {
     relevantEvents = relevantEvents.reverse();
@@ -51,8 +68,7 @@ export function splitEvents({
 // Date range would only be displayed if end date is set on the
 // child component
 export function setEndDate(timeline, startDateTime, endDateTime) {
-  if (timeline === 'today' &&
-    startDateTime.date !== endDateTime.date) {
+  if (timeline === 'today' && startDateTime.date !== endDateTime.date) {
     return endDateTime;
   }
   return null;

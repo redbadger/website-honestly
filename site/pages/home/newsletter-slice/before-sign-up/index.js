@@ -8,7 +8,7 @@ class BeforeSignUp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      email_address: '',
+      email_address: '', // eslint-disable-line camelcase
       submitting: false,
     };
   }
