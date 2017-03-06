@@ -1,0 +1,78 @@
+@value badgerWhite, badgerBlack, badgerRed, daveGreen from "../../../../css/_colors.css";
+
+.badgerProfile {
+  text-align: left;
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.badgerImage {
+  width: 100%;
+}
+
+.badgerImage:hover {
+  box-shadow: 7px 7px badgerRed;
+}
+
+.badgerWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.placeholder {
+  background-color: #EFEFF1;
+  height: 100%;
+}
+
+.skillsWrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.skillsHeading {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  color: daveGreen;
+}
+
+.skills {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  color: badgerWhite;
+}
+
+.description {
+  padding-top: 10px;
+  color: badgerBlack;
+}
+
+.name {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+}
+
+.jobDescription {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+}
+
+.arrow svg {
+  position: absolute;
+  overflow: hidden;
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  margin-left: 10px;
+}
+
+.lastName {
+  position: relative;
+  display: inline-block;
+  margin-right: 35px;
+}

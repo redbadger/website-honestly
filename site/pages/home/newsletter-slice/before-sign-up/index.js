@@ -1,4 +1,3 @@
-/* eslint-disable react/no-set-state */
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from '../style.css';

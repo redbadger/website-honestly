@@ -14,10 +14,14 @@ import JoinUsPage from '../pages/join-us';
 import JobPage from '../pages/job';
 import Events from '../pages/events';
 import EventPage from '../pages/event';
+import OurWorkPage from '../pages/our-work';
+import MeetOurTeam from '../pages/meet-our-team';
+import BadgerProfile from '../pages/badger-profile';
 
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
+  ourWorkPage: OurWorkPage,
   joinUs: JoinUsPage,
   job: JobPage,
   event: EventPage,
@@ -26,7 +30,8 @@ const componentMap = {
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
   aboutUsPage: AboutUsPage,
-  badgers: ({ category }) => <div>{category}</div>,
+  badgers: MeetOurTeam,
+  badger: BadgerProfile,
 };
 
 function routes() {

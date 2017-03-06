@@ -1,0 +1,158 @@
+@value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.caseStudyContainer {
+  max-width: 1100px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.caseStudyContent {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+.caseStudyContent img {
+  display: inline-block;
+  margin: 15px;
+}
+
+.camdenLogo {
+  width: 85px;
+}
+
+.ftLogo {
+  width: 185px;
+}
+
+.fortnumLogo {
+  width: 200px;
+}
+
+.skyLogo {
+  width: 45px;
+}
+
+.cartrawlerLogo {
+  width: 100px;
+}
+
+.tescoLogo {
+  width: 75px;
+}
+
+.lloydsLogo {
+  width: 140px;
+}
+
+.asosLogo {
+  width: 55px;
+}
+
+.bbcLogo {
+  width: 65px;
+}
+
+.bmwLogo {
+  width: 35px;
+}
+
+.atkinsLogo {
+  width: 60px;
+}
+
+.wickesLogo {
+  width: 75px;
+}
+
+.selfridgesLogo {
+  width: 115px;
+}
+
+.hallerLogo {
+  width: 75px;
+}
+
+.fnfLogo {
+  width: 55px;
+}
+
+@media mediumScreen {
+  .caseStudyContent {
+    flex-direction: row;
+    margin: 0;
+    padding: 0 0 60px 0;
+    border-bottom: 1px solid linesOnWhite;
+  }
+
+  .caseStudyContainer {
+    padding-top: 60px;
+  }
+
+  .caseStudyContent img {
+    display: inline-block;
+    margin: 10px 40px;
+  }
+
+  .camdenLogo {
+    width: 100px;
+  }
+
+  .ftLogo {
+    width: 220px;
+  }
+
+  .fortnumLogo {
+    width: 220px;
+  }
+
+  .skyLogo {
+    width: 55px;
+  }
+
+  .cartrawlerLogo {
+    width: 120px;
+  }
+
+  .tescoLogo {
+    width: 90px;
+  }
+
+  .lloydsLogo {
+    width: 165px;
+  }
+
+  .asosLogo {
+    width: 65px;
+  }
+
+  .bbcLogo {
+    width: 80px;
+  }
+
+  .bmwLogo {
+    width: 45px;
+  }
+
+  .atkinsLogo {
+    width: 90px;
+  }
+
+  .wickesLogo {
+    width: 85px;
+  }
+
+  .selfridgesLogo {
+    width: 140px;
+  }
+
+  .hallerLogo {
+    width: 90px;
+  }
+
+  .fnfLogo {
+    height: 64px;
+  }
+}

@@ -1,0 +1,83 @@
+@value badgerWhite, badgerRed, badgerBlack, linesOnWhite from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: badgerBlack;
+  color: badgerWhite;
+  padding: 50px 0 70px 0;
+}
+
+.mainHeader {
+  composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  text-align: center;
+  color: badgerWhite;
+}
+
+.mainSlogan {
+  composes: fontS from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  text-align: left;
+  color: badgerWhite;
+}
+
+.caseStudyTopSection {
+  composes: dividerWhite from "../../css/_divider.css";
+  background-color: badgerWhite;
+}
+
+.topSlicesContainer {
+  margin: 0 5%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0;
+  padding-top: 30px;
+  border-top: 1px solid linesOnWhite;
+}
+
+.gridRow {
+  display: flex;
+  flex-direction: column;
+  border-bottom: none;
+  flex-basis: 100%;
+}
+
+.gridRow:last-child > div:last-child {
+  border-bottom: none;
+  margin-bottom: 20px;
+}
+
+@media mediumScreen {
+  .grid {
+    padding-top: 0;
+    margin: 0 auto;
+    border-top: none;
+  }
+
+  .gridRow {
+    flex-direction: row;
+    border-bottom: 1px solid linesOnWhite;
+  }
+
+  .headerContainer {
+    padding: 110px 0 110px 0;
+  }
+
+  .mainHeader {
+    composes: fontL from "../../css/typography/_fonts.css";
+    margin-bottom: 10px;
+  }
+
+  .topSlicesContainer {
+    margin: 0 20px;
+    padding: 0;
+  }
+}

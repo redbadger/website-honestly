@@ -9,12 +9,6 @@
     <meta name="theme-color" content="#212121">
     <meta name="apple-mobile-web-app-status-bar-style" content="#212121">
     <meta name="msapplication-TileImage" content="assetsfaviconsmstile-144x144.png">
-    <meta property="og:site_name" content="Red Badger">
-    <meta property="og:title" content="Red Badger" />
-    <meta property="og:description" content="Let’s make things better. We work with you to deliver digital products that make a difference to people." />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image" itemprop="image" content="https://red-badger.com/assets-honestly/social/rb_facebook.png">
     <link rel="apple-touch-icon" href="/assets-honestly/favicons/apple-touch-icon-57x57.png" type="image/png" sizes="57x57">
     <link rel="apple-touch-icon" href="/assets-honestly/favicons/apple-touch-icon-60x60.png" type="image/png" sizes="60x60">
     <link rel="apple-touch-icon" href="/assets-honestly/favicons/apple-touch-icon-72x72.png" type="image/png" sizes="72x72">
@@ -30,6 +24,7 @@
     <link rel="icon" href="/assets-honestly/favicons/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
     <% if (typeof tracking !== 'undefined' && tracking) { %>
@@ -43,7 +38,7 @@
         ga('create', 'UA-16654919-1', 'auto');
         ga('send', 'pageview');
     </script><% } %>
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7848772/css/fonts.css">
+    <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
   </head>
   <body>
     <div class="js-app">

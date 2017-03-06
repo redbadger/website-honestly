@@ -87,6 +87,7 @@
   composes: primaryButton from '../../../css/_links.css';
   margin: 0 auto 10px;
   display: block;
+  cursor: pointer;
 }
 
 .submitted .submitButton {

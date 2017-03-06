@@ -47,7 +47,6 @@
 
 @value mediumScreen, largeScreen from "../_sizes.css";
 @import url("//hello.myfonts.net/count/322627");
-@import url("./_sentinel.css");
 
 @font-face {
   font-family: 'ProximaNova-Bold';
@@ -61,6 +60,12 @@
 
 .serif {
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-weight: 800;
+}
+
+.lightSerif {
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-weight: 300;
 }
 
 .sansSerif {

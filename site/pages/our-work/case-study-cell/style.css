@@ -1,0 +1,218 @@
+@value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.cell {
+  justify-content: center;
+  margin: 0 auto 30px auto;
+  flex-basis: 100%;
+  border-bottom: 1px solid linesOnWhite;
+}
+
+/* IE11 fix for flexbox */
+_:-ms-fullscreen, :root .cell {
+  min-height: 90vh;
+}
+
+_:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+  min-height: 75vh;
+}
+
+.cell:nth-child(odd) {
+  border-right: none;
+}
+
+.clientImage {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.caseStudyContentContainer {
+  display: flex;
+  max-width: containerMaxWidth;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+
+.logoHaller {
+  width: 115px;
+  height: 41px;
+}
+
+.logoBMW {
+  height: 58px;
+}
+
+.logoBMW + .normalHeader {
+  margin-top: 26px;
+}
+
+.logoBBC {
+  width: 80px;
+}
+
+.logoBBC + .largeHeader {
+  margin-top: 10px;
+}
+
+.logoSky {
+  width: 56px;
+}
+
+.logoSky + .largeHeader {
+  margin-top: 10px;
+}
+
+.caseStudyContent {
+  padding: 0;
+}
+
+.normalHeader {
+  composes: fontM from "../../../css/typography/_fonts.css";
+}
+
+.largeHeader {
+  composes: fontL from "../../../css/typography/_fonts.css";
+}
+
+.normalHeader, .largeHeader {
+  composes: serif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  margin-top: 20px;
+}
+
+.description {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  margin-top: 10px;
+}
+
+.readmore {
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  border-bottom: 2px solid badgerRed;
+  text-decoration: none;
+  color: badgerBlack;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.links {
+  text-align: right;
+  padding-bottom: 30px;
+}
+
+@media mediumScreen {
+  .cell:nth-child(odd) {
+    border-right: 1px solid linesOnWhite;
+  }
+
+  .caseStudyContent {
+    margin-top: 0;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .caseStudyContentContainer {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .clientLogo {
+    width: 70px;
+  }
+
+  .clientImage {
+    width: 100%;
+  }
+
+  .normalHeader, .largeHeader {
+    margin-top: 40px;
+  }
+
+  .description {
+    margin-top: 20px;
+  }
+
+  .cell {
+    margin: 0 auto;
+    padding-top: 70px;
+    flex-basis: 50%;
+    border-bottom: none;
+  }
+
+  .cell-BBC, .cell-Sky {
+    padding-top: 40px;
+  }
+
+  .links {
+    text-align: center;
+    border: none;
+    padding-bottom: 60px;
+  }
+}
+
+/* iOS9 Safari flexbox fixes */
+@supports (overflow:-webkit-marquee)
+   and (justify-content:inherit)
+  {
+    @media screen and (min-width: 320px) {
+      .cell-Haller {
+        min-height: 520px;
+      }
+
+      .cell-BMW {
+        min-height: 550px;
+      }
+
+      .cell-BBC {
+        min-height: 350px;
+      }
+
+      .cell-Sky {
+        min-height: 300px;
+      }
+    }
+
+    @media screen and (min-width: 568px) {
+      .cell-Haller {
+        min-height: 650px;
+      }
+
+      .cell-BMW {
+        min-height: 680px;
+      }
+    }
+
+}
+
+@media screen and (max-width: 689px) {
+  /* IE11 fix for flexbox */
+  _:-ms-fullscreen, :root .cell {
+    min-height: 105vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BMW {
+    min-height: 115vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* IE11 fix for flexbox */
+  _:-ms-fullscreen, :root .cell {
+    min-height: 100vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BMW {
+    min-height: 100vh;
+  }
+
+  _:-ms-fullscreen, :root .cell.cell-BBC {
+    min-height: 60vh;
+  }
+}

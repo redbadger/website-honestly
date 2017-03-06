@@ -12,6 +12,7 @@
 .eventsListTimelineSection h2 {
   margin-bottom: 0;
   font-family: "Sentinel A", "Sentinel B", serif;
+  font-weight: 800;
 }
 
 .eventsListTimelineSection h2.eventTitle {

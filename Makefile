@@ -77,10 +77,10 @@ decrypt-env:
 	source bin/decrypt-dev-env.sh
 
 get-secrets:
-	git submodules update --init --remote
+	git submodule update --init --remote
 
 update-secrets:
-	git submodules update --remote
+	git submodule update --remote
 
 compress-assets: ## Compress assets. What did you expect? :)
 	find site -type f \
