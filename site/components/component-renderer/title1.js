@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './styles.css';
 
-export default class Title1 extends Component {
-  static propTypes = {
-    children: React.PropTypes.node,
-  };
-
-  render() {
-    return <h1 className={styles.h1}>{this.props.children}</h1>;
-  }
+export default function Title1({ children }) {
+  return <h1 className={styles.h1}>{children}</h1>;
 }
+
+Title1.propTypes = {
+  children: React.PropTypes.node,
+};

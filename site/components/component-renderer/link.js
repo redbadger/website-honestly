@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './styles.css';
 
-export default class Link extends Component {
-  static propTypes = {
-    children: React.PropTypes.node,
-    href: React.PropTypes.string.isRequired,
-  };
-
-  render() {
-    return (
-      <a className={styles.a} href={this.props.href}>{this.props.children}</a>
-    );
-  }
+export default function Link({ children, href }) {
+  return <a className={styles.a} href={href}>{children}</a>;
 }
+
+Link.propTypes = {
+  children: React.PropTypes.node,
+  href: React.PropTypes.string.isRequired,
+};
