@@ -14,6 +14,7 @@ import lloydsPNG from './PNG/lloyds.png';
 import selfridgesPNG from './PNG/selfridges.png';
 import skyPNG from './PNG/sky.png';
 import tescoPNG from './PNG/tesco.png';
+import Link from '../link';
 
 /* SVG figure imports */
 import ftFigureSVG from './SVG/ft-figure.svg';
@@ -95,7 +96,7 @@ const CaseStudy = () => (
         <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
       </div>
       <div className={styles.buttonContainer}>
-        <a className={styles.button} href="/our-work/">See more of our work</a>
+        <Link to="ourWorkPage" className={styles.button}>See more of our work</Link>
       </div>
     </div>
   </section>
