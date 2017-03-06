@@ -8,7 +8,7 @@ class ClientOnly extends Component {
   };
 
   componentDidMount() {
-    this.setState({
+    this.setState({ // eslint-disable-line react/no-did-mount-set-state
       javaScriptSupported: true,
     });
   }

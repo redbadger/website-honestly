@@ -36,4 +36,9 @@ EventNewsMeta.propTypes = {
   tags: PropTypes.arrayOf(PropTypes.string),
 };
 
+linksSection.propTypes = {
+  internalLinks: EventLinksList.propTypes.linkList,
+  externalLinks: EventLinksList.propTypes.linkList,
+};
+
 export default EventNewsMeta;

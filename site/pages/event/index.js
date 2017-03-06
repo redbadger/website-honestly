@@ -8,6 +8,7 @@ import Link from '../../components/link';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventNewsMeta from '../../components/event-news-meta';
+import EventLinksList from '../../pages/event/event-links-list';
 
 import styles from './style.css';
 
@@ -48,7 +49,6 @@ export default function Event({ event }) {
                 <EventNewsMeta
                   internalLinks={event.internalLinks}
                   externalLinks={event.externalLinks}
-                  tags={event.tags}
                 />
                 <HR color="grey" />
                 <div className={styles.moreEvents}>
@@ -72,3 +72,26 @@ export default function Event({ event }) {
     </div>
   );
 }
+
+const dateShape = {
+  date: React.PropTypes.string.isRequired,
+  monthSym: React.PropTypes.string.isRequired,
+  year: React.PropTypes.string.isRequired,
+};
+
+Event.propTypes = {
+  event: React.PropTypes.shape({
+    startDateTime: React.PropTypes.shape(dateShape).isRequired,
+    endDateTime: React.PropTypes.shape(dateShape),
+    title: React.PropTypes.string,
+    strapline: React.PropTypes.string,
+    body: React.PropTypes.arrayOf(
+      React.PropTypes.shape({
+        text: React.PropTypes.string,
+      }),
+    ),
+    internalLinks: EventLinksList.propTypes.linkList,
+    externalLinks: EventLinksList.propTypes.linkList,
+    featureImageFilename: React.PropTypes.string,
+  }),
+};

@@ -1,4 +1,5 @@
 // @flow
+/* eslint-disable react/no-did-mount-set-state */
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 

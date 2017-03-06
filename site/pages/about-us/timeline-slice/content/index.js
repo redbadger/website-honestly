@@ -41,7 +41,7 @@ Content.propTypes = {
   text: React.PropTypes.string.isRequired,
   image: React.PropTypes.string.isRequired,
   mobileImage: React.PropTypes.string.isRequired,
-  counters: React.PropTypes.array,
+  counters: React.PropTypes.array, // eslint-disable-line react/forbid-prop-types
   flip: React.PropTypes.bool,
 };
 

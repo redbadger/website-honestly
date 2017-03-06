@@ -138,5 +138,10 @@ export default function JoinUs({ jobs }) {
 }
 
 JoinUs.propTypes = {
-  jobs: React.PropTypes.object,
+  jobs: React.PropTypes.arrayOf(
+    React.PropTypes.shape({
+      description: React.PropTypes.string,
+      title: React.PropTypes.string,
+    }),
+  ),
 };

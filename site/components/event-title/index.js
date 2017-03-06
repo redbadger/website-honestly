@@ -24,7 +24,10 @@ const EventTitle = ({
 
 EventTitle.propTypes = {
   eventTitle: PropTypes.string.isRequired,
-  eventLink: PropTypes.object.isRequired,
+  eventLink: PropTypes.shape({
+    to: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
+  }),
 };
 
 export default EventTitle;
