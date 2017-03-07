@@ -25,8 +25,8 @@ const EventTitle = ({
 EventTitle.propTypes = {
   eventTitle: PropTypes.string.isRequired,
   eventLink: PropTypes.shape({
-    to: PropTypes.string.isRequired,
-    children: PropTypes.node.isRequired,
+    to: PropTypes.string,
+    children: PropTypes.node,
   }),
 };
 
