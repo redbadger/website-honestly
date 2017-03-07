@@ -15,10 +15,8 @@ dependencies:
   cache_directories:
     - ~/.yarn
     - ~/.yarn-cache
-    - website-next/node_modules
   override:
     - yarn
-    - cd website-next && yarn
 
 test:
   override:
