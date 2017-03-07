@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HtmlToReact from 'html-to-react';
-import textStyles from '../typography/style.css';
+import textStyles from '../component-renderer/styles.css';
 import styles from './style.css';
 
 const { parse } = new HtmlToReact.Parser(React);

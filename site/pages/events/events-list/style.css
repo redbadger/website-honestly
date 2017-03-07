@@ -41,9 +41,8 @@
 }
 
 .eventTitle {
-  composes: h2 from "../../../components/typography/style.css";
-  font-size: 1.6em;
-  text-decoration: none;
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontM from "../../../css/typography/_fonts.css";
   display: inline;
   float: left;
   margin-bottom: 0;

@@ -18,3 +18,8 @@
 .rawHtml ul li {
   line-height: 1.4em;
 }
+
+.rawHtml p {
+  line-height: 1.35em;
+  margin: 1em 0;
+}

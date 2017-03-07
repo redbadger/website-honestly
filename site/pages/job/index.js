@@ -7,7 +7,7 @@ import Section from '../../components/section';
 import Note from '../../components/note';
 import Hr from '../../components/hr';
 import styles from './style.css';
-import typography from '../../components/typography/style.css';
+import typography from '../../components/component-renderer/styles.css';
 import Link from '../../components/link';
 
 export default function Job({ job }) {
@@ -17,7 +17,7 @@ export default function Job({ job }) {
         <Container>
           <Grid>
             <Cell size={8}>
-              <h2 className={typography.h2}>{job.title}</h2>
+              <h2 className={styles.jobTitle}>{job.title}</h2>
               <HtmlParser>{job.fullDescription}</HtmlParser>
               <Hr color="grey" />
               <Link className={styles.linkBack} to="joinUs">

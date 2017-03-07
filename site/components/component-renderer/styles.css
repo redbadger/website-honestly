@@ -1,23 +1,41 @@
-.a {
-  composes: a from "../typography/style.css";
+@value badgerBlack, badgerRed from "../../css/_colors.css";
+
+.a,
+.typography a {
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRed;
+  transition: all 0.2s ease;
   white-space: nowrap;
 }
 
+.a:hover,
+.typography a:hover {
+  color: badgerRed;
+}
+
 .p {
-  composes: p from "../typography/style.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
+  margin: 1em 0;
 }
 
 .h1 {
-  composes: h1 from "../typography/style.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontL from "../../css/typography/_fonts.css";
   text-align: center;
+  margin: 0 0 0.6em;
 }
 
 .h2 {
-  composes: h2 from "../typography/style.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
+  margin: 0 0 0.6em;
   text-align: center;
 }
 
 .h3 {
-  composes: h3 from "../typography/style.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: fontS from "../../css/typography/_fonts.css";
   text-align: center;
+  margin: 0 0 0.8em;
 }
