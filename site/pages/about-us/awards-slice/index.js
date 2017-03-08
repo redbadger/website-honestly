@@ -1,5 +1,6 @@
 import React from 'react';
+import awardsImage from './awards.jpg';
 
 export default () => (
-  <div />
+  <img src={awardsImage} alt="Awards" />
 );
