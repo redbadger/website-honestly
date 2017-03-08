@@ -45,7 +45,6 @@
   border: 2px solid badgerRed;
   display: block;
   margin-bottom: 20px;
-  line-height: 0;
 }
 
 .category.active {
