@@ -14,7 +14,7 @@ export const linksSection = ({ externalLinks, internalLinks }) => {
   return <noscript />;
 };
 
-const EventNewsMeta = (
+const EventMeta = (
   {
     internalLinks,
     externalLinks,
@@ -30,7 +30,7 @@ const EventNewsMeta = (
   );
 };
 
-EventNewsMeta.propTypes = {
+EventMeta.propTypes = {
   internalLinks: EventLinksList.propTypes.linkList,
   externalLinks: EventLinksList.propTypes.linkList,
   tags: PropTypes.arrayOf(PropTypes.string),
@@ -41,4 +41,4 @@ linksSection.propTypes = {
   externalLinks: EventLinksList.propTypes.linkList,
 };
 
-export default EventNewsMeta;
+export default EventMeta;

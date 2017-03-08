@@ -5,7 +5,7 @@
 import React, { PropTypes } from 'react';
 import styles from './style.css';
 import EventsTimelineTitle from '../events-timeline-title';
-import EventsNewsListEntry from '../events-news-list-entry';
+import EventsListEntry from '../events-list-entry';
 import { splitEvents } from '../../../fetchers/util/events';
 
 const EventsList = ({
@@ -28,7 +28,7 @@ const EventsList = ({
         <ul className={styles.eventsList}>
           {
             relevantEvents.map(event => (
-              <EventsNewsListEntry
+              <EventsListEntry
                 {...event}
                 timeline={timeline}
                 type="event"

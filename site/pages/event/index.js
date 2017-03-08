@@ -7,7 +7,7 @@ import Section from '../../components/section';
 import Link from '../../components/link';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
-import EventNewsMeta from '../../components/event-news-meta';
+import EventMeta from '../../components/event-meta';
 import EventLinksList from '../../pages/event/event-links-list';
 
 import styles from './style.css';
@@ -46,7 +46,7 @@ export default function Event({ event }) {
                     />
                   ))}
                 </div>
-                <EventNewsMeta
+                <EventMeta
                   internalLinks={event.internalLinks}
                   externalLinks={event.externalLinks}
                 />

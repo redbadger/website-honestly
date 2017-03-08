@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 import HR from '../../../components/hr';
 import { Grid, Cell } from '../../../components/grid';
-import EventNewsMeta from '../../../components/event-news-meta';
+import EventMeta from '../../../components/event-meta';
 import EventImage from '../../../components/event-image';
 import DateBubble from '../../../components/date-bubble';
 import EventTitle from '../../../components/event-title';
@@ -11,7 +11,7 @@ import { setEndDate } from '../../../fetchers/util/events';
 
 import Link from '../../../components/link';
 
-const EventsNewsListEntry = (
+const EventsListEntry = (
   {
     id,
     tags,
@@ -55,7 +55,7 @@ const EventsNewsListEntry = (
               <div className={styles.eventDescription}>
                 {strapline}
               </div>
-              <EventNewsMeta
+              <EventMeta
                 internalLinks={internalLinks}
                 externalLinks={externalLinks}
                 tags={tags}
@@ -82,19 +82,19 @@ const EventsNewsListEntry = (
   );
 };
 
-EventsNewsListEntry.propTypes = {
+EventsListEntry.propTypes = {
   id: PropTypes.string.isRequired,
   strapline: PropTypes.string,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   featureImageFilename: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string),
-  externalLinks: EventNewsMeta.propTypes.externalLinks,
-  internalLinks: EventNewsMeta.propTypes.internalLinks,
+  externalLinks: EventMeta.propTypes.externalLinks,
+  internalLinks: EventMeta.propTypes.internalLinks,
   startDateTime: DateBubble.propTypes.startDateTime,
   endDateTime: DateBubble.propTypes.endDateTime,
   type: PropTypes.oneOf(['news', 'event']).isRequired,
   timeline: PropTypes.oneOf(['past', 'future', 'today']),
 };
 
-export default EventsNewsListEntry;
+export default EventsListEntry;
