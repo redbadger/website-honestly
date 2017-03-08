@@ -42,7 +42,7 @@
 
 .eventTitle {
   composes: serif from "../../../css/typography/_fonts.css";
-  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: fontS from "../../../css/typography/_fonts.css";
   display: inline;
   float: left;
   margin-bottom: 0;

@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames';
 import styles from '../../pages/events/events-list/style.css';
-import { h2 } from '../component-renderer/styles.css';
 import Link from '../link';
 
 const EventTitle = ({
@@ -9,10 +7,7 @@ const EventTitle = ({
   eventTitle,
 }) => (
   <h2
-    className={classNames({
-      [styles.eventTitle]: true,
-      [h2]: true,
-    })}
+    className={styles.eventTitle}
   >
     <Link to="event" navigationData={eventLink} className={styles.eventTitleLink}>
       <span>
