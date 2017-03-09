@@ -4,13 +4,13 @@
 .awardsLeft{
   background-image: url(./awardsLeft.jpg);
   background-repeat: repeat-x;
-  background-size: auto 100%;
+  background-size: 1px 100%;
   flex: 1 1 auto;
 }
 .awardsRight{
   background-image: url(./awardsRight.jpg);
   background-repeat: repeat-x;
-  background-size: auto 100%;
+  background-size: 1px 100%;
   flex: 1 1 auto;
 }
 .awards {
