@@ -1,0 +1,24 @@
+.awardsContainer {
+  display: flex;
+}
+.awardsBackground {
+  background-repeat: repeat-x;
+  background-size: 1px 100%;
+  flex: 1 1 auto;
+}
+.awardsLeft {
+  composes: awardsBackground;
+  background-image: url(./awardsLeft.jpg);
+}
+.awardsRight {
+  composes: awardsBackground;
+  background-image: url(./awardsRight.jpg);
+}
+.awards {
+  flex: 1 1 auto;
+  max-width: 1440px;
+}
+.awardsImage {
+  width: 100%;
+  display: block;
+}
