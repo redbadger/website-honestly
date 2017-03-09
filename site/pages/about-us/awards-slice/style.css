@@ -1,23 +1,24 @@
-.awardsContainer{
+.awardsContainer {
   display: flex;
 }
-.awardsLeft{
-  background-image: url(./awardsLeft.jpg);
+.awardsBackground {
   background-repeat: repeat-x;
   background-size: 1px 100%;
   flex: 1 1 auto;
 }
-.awardsRight{
+.awardsLeft {
+  composes: awardsBackground;
+  background-image: url(./awardsLeft.jpg);
+}
+.awardsRight {
+  composes: awardsBackground;
   background-image: url(./awardsRight.jpg);
-  background-repeat: repeat-x;
-  background-size: 1px 100%;
-  flex: 1 1 auto;
 }
 .awards {
   flex: 1 1 auto;
   max-width: 1440px;
 }
-.awardsImage{
+.awardsImage {
   width: 100%;
   display: block;
 }
