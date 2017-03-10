@@ -3,6 +3,7 @@ import React from 'react';
 import TimelineSlice from './timeline-slice';
 import PrinciplesSlice from './principles-slice';
 import SocialSlice from './social-slice';
+import AwardsSlice from './awards-slice';
 import ContactUs from '../../slices/contact-us-slice';
 import type { Tweet, InstagramPost } from '../../types/';
 
@@ -19,6 +20,7 @@ const AboutUs = ({ contactUsURL, tweets, instagramPosts }: AboutUsProps) => {
       <TimelineSlice />
       <ContactUs postURL={contactUsURL} />
       <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
+      <AwardsSlice />
     </div>
   );
 };
