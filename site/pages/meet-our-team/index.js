@@ -6,8 +6,8 @@ import TeamSlice from './team-slice';
 import styles from './style.css';
 import type { Badger } from './team-slice/badger-profile';
 
-const title = 'We\'re all about people';
-const description = 'Learn about who makes up Red Badger and what makes them tick.';
+const title = 'We’re people people.';
+const description = 'Find out more about the people behind (or who work at) Red Badger.';
 const metaImage = 'https://red-badger.com/assets-honestly/social/meet-our-team-OG.png';
 
 const getTeam = (badgers, category) => {
