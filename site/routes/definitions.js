@@ -1,22 +1,29 @@
 // @flow
-import { stateToBadgerProps, genBadgersParams, getBadgersTitle } from './selectors';
+import {
+  stateToBadgerProps,
+  genBadgersParams,
+  getBadgersTitle,
+} from './selectors';
 
 type RouteDefinition = {|
-  title: string | (props: Object) => string,
+  title: string | ((props: Object) => string),
   key: string,
   route: string,
   defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
-|}
+|};
 
-export const routeDefinitions : Array<RouteDefinition> = [
+export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: 'Home',
     key: 'homePage',
     route: '',
     defaults: { contactUs: false },
-    stateToProps: ({ featuredBlogPosts, contactUsURL }) => ({ featuredBlogPosts, contactUsURL }),
+    stateToProps: ({ featuredBlogPosts, contactUsURL }) => ({
+      featuredBlogPosts,
+      contactUsURL,
+    }),
   },
   {
     title: 'What we do',
@@ -32,7 +39,11 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: 'About Us',
     key: 'aboutUsPage',
     route: 'about-us',
-    stateToProps: ({ contactUsURL, tweets, instagramPosts }) => ({ contactUsURL, tweets, instagramPosts }),
+    stateToProps: ({ contactUsURL, tweets, instagramPosts }) => ({
+      contactUsURL,
+      tweets,
+      instagramPosts,
+    }),
   },
   {
     title: 'Join us',
@@ -58,7 +69,13 @@ export const routeDefinitions : Array<RouteDefinition> = [
     key: 'event',
     route: 'about-us/events/{year}/{month}/{date}/{slug}',
     stateToProps: (state, params = {}) => ({ event: state.event[params.slug] }),
-    gen: state => state.events.map(({ startDateTime: { date, month, year }, slug }) => ({ date, month, year, slug })),
+    gen: state =>
+      state.events.map(({ startDateTime: { date, month, year }, slug }) => ({
+        date,
+        month,
+        year,
+        slug,
+      })),
   },
   {
     title: getBadgersTitle,
@@ -72,7 +89,9 @@ export const routeDefinitions : Array<RouteDefinition> = [
     title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
     key: 'badger',
     route: 'about-us/people/{slug}',
-    stateToProps: (state, params = {}) => ({ badger: state.badger[params.slug] }),
+    stateToProps: (state, params = {}) => ({
+      badger: state.badger[params.slug],
+    }),
     gen: state => state.badgers.map(({ slug }) => ({ slug })),
   },
   {

@@ -1,0 +1,20 @@
+@value mobileS from "../variables/breakpoints.css";
+
+.eventPicture {
+  width: 100%;
+  display: block;
+}
+
+.imgBorder {
+  border: 1px solid #d0d0d0;
+}
+
+.imgWrapper {
+  border: 3px solid #fff;
+}
+
+@media mobileS {
+  .imgBorder {
+    margin-bottom: 20px;
+  }
+}

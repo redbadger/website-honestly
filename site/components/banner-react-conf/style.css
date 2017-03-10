@@ -1,0 +1,43 @@
+/* Refactored from Website Next
+*  TODO: Stop using variables/breakpoints
+*/
+
+@value desktop from "../variables/breakpoints.css";
+@value desktopM from "../variables/breakpoints.css";
+@value mobile from "../variables/breakpoints.css";
+@value tablet-only from "../variables/breakpoints.css";
+
+.bannerContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reactConfDesktopBanner {
+  width: 920px;
+}
+
+.reactConfTabletBanner {
+  width: 768px;
+}
+
+.reactConfMobileBanner {
+  width: 320px;
+}
+
+@media mobile {
+  .reactConfDesktopBanner, .reactConfTabletBanner {
+    display: none;
+  }
+}
+
+@media tablet-only {
+  .reactConfMobileBanner, .reactConfDesktopBanner {
+    display: none;
+  }
+}
+
+@media desktop {
+  .reactConfMobileBanner, .reactConfTabletBanner {
+    display: none;
+  }
+}

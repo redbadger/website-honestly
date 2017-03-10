@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const webpack = require('webpack');
 const baseConfig = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;

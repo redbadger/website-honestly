@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
+/* eslint-disable no-console, camelcase */
 
 const fetch = require('node-fetch');
 

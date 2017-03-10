@@ -1,0 +1,13 @@
+@value badgerWhite from "../../css/_colors.css";
+
+.background {
+  background-color: badgerWhite;
+}
+
+.apply {
+  composes: craft paperTear from "../../components/utils/background.css";
+}
+
+.noWrap {
+  white-space: nowrap;
+}

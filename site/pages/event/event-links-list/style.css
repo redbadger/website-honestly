@@ -1,0 +1,29 @@
+@value badgerBlack, badgerRed from "../../../css/_colors.css";
+
+.eventLinkList {
+  width: 100%;
+  float: left;
+}
+
+.fullDetailsLink {
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+  composes: bodyUnderlineLink from "../../../css/_links.css";
+  clear: both;
+  color: badgerBlack;
+  display: block;
+  margin-top: 0.8em;
+  position: relative;
+  float: left;
+  border-bottom: 1px solid badgerRed;
+}
+
+.fullDetailsLink span {
+  display: inline;
+}
+
+.externalLinkIcon {
+  font-size: 1em;
+  color: #fc1d42;
+  margin-bottom: 3px;
+  padding-left: 5px;
+}

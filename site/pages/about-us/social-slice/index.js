@@ -1,4 +1,5 @@
 // @flow
+/* eslint-disable react/no-did-mount-set-state */
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
@@ -135,7 +136,12 @@ class SocialSlice extends React.Component {
         <ClientOnly>
           {/** Desktop View */}
           <div className={styles.desktopView}>
-            <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} currentTile={this.state.tile} totalSwipableTiles={this.calculateSwipableTotal()} />
+            <IntroDesktopTile
+              nextCard={this.nextTile}
+              prevCard={this.prevTile}
+              currentTile={this.state.tile}
+              totalSwipableTiles={this.calculateSwipableTotal()}
+            />
             <SwipeableViews
               index={this.state.tile}
               onChangeIndex={this.setTile}
@@ -161,7 +167,12 @@ class SocialSlice extends React.Component {
         {/** No Script View */}
         <noscript>
           <div className={styles.noscript} >
-            <IntroDesktopTile nextCard={this.nextTile} prevCard={this.prevTile} currentTile={this.state.tile} totalSwipableTiles={this.calculateSwipableTotal()} />
+            <IntroDesktopTile
+              nextCard={this.nextTile}
+              prevCard={this.prevTile}
+              currentTile={this.state.tile}
+              totalSwipableTiles={this.calculateSwipableTotal()}
+            />
             {this.renderTiles()}
           </div>
         </noscript>

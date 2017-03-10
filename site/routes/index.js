@@ -10,14 +10,13 @@ import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 import AboutUsPage from '../pages/about-us';
 
+import JoinUsPage from '../pages/join-us';
+import JobPage from '../pages/job';
+import Events from '../pages/events';
+import EventPage from '../pages/event';
 import OurWorkPage from '../pages/our-work';
 import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
-
-import JoinUsPage from '../../website-next/src/shared/containers/join-us';
-import JobPage from '../../website-next/src/shared/containers/job';
-import Events from '../../website-next/src/shared/containers/events';
-import EventPage from '../../website-next/src/shared/containers/event';
 
 const componentMap = {
   homePage: HomePage,

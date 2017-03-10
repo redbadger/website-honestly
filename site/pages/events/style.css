@@ -1,0 +1,17 @@
+@value badgerWhite from "../../css/_colors.css";
+
+.h1 {
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
+  text-align: center;
+  padding-top: 10px;
+  background-color: badgerWhite;
+}
+
+.events {
+  background-color: badgerWhite;
+}
+
+.pastEventsTitle {
+  margin-top: 50px;
+}

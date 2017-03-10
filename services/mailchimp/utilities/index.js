@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console, camelcase */
 import fetch from 'node-fetch';
 import crypto from 'crypto';
 

@@ -48,7 +48,7 @@ describe('AfterSignUp', () => {
         json: () => {
           return {
             newsletterSubmitted: true,
-            email_address: 'jkdjksdhedw239e8h238u',
+            email_address: 'jkdjksdhedw239e8h238u', // eslint-disable-line camelcase
             errorMessage: 'Example error message',
             updatedFormSubmitted: false,
           };
@@ -65,4 +65,3 @@ describe('AfterSignUp', () => {
     });
   });
 });
-
