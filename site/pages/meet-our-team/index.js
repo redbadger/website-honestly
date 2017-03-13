@@ -1,9 +1,18 @@
 // @flow
 import React from 'react';
 import Link from '../../components/link';
+import Social from '../../components/social';
 import TeamSlice from './team-slice';
 import styles from './style.css';
 import type { Badger } from './team-slice/badger-profile';
+import metaImage from './meta-image.png';
+
+const social = {
+  title: 'We’re people people.',
+  description: 'Find out more about the people behind (or who work at) Red Badger.',
+  metaImage,
+  url: 'https://red-badger.com/about-us/people',
+};
 
 const getTeam = (badgers, category) => {
   if (category !== 'everyone') {
@@ -36,39 +45,42 @@ type MeetOurTeamProps = {
 };
 
 const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) => (
-  <div className={styles.meetOurTeam}>
-    <div className={styles.teamContainer}>
-      <h1 className={styles.title}>Meet our team</h1>
-      <h2 className={styles.subtitle}>
-        <div>Red Badger is all about the people. We work brilliantly as a team. </div>
-        We inspire and bring out the best in one another.
-      </h2>
-      <ul className={styles.categories}>
-        <li className={styles.categoryItem}>
-          <Link
-            to="badgers"
-            navigationData={{ category: 'everyone' }}
-            className={styles.category}
-            activeCssClass={styles.active}
-          >
-            Everyone
-          </Link>
-        </li>
-        {categories.map(c =>
-          <li key={c.slug} className={styles.categoryItem}>
+  <div>
+    <Social {...social} />
+    <div className={styles.meetOurTeam}>
+      <div className={styles.teamContainer}>
+        <h1 className={styles.title}>Meet our team</h1>
+        <h2 className={styles.subtitle}>
+          <div>Red Badger is all about the people. We work brilliantly as a team. </div>
+          We inspire and bring out the best in one another.
+        </h2>
+        <ul className={styles.categories}>
+          <li className={styles.categoryItem}>
             <Link
-              key={c.slug}
               to="badgers"
-              navigationData={{ category: c.slug }}
-              activeCssClass={styles.active}
+              navigationData={{ category: 'everyone' }}
               className={styles.category}
+              activeCssClass={styles.active}
             >
-              {c.name}
+              Everyone
             </Link>
           </li>
-        )}
-      </ul>
-      <TeamSlice badgers={getTeam(badgers, category)} page={page} />
+          {categories.map(c =>
+            <li key={c.slug} className={styles.categoryItem}>
+              <Link
+                key={c.slug}
+                to="badgers"
+                navigationData={{ category: c.slug }}
+                activeCssClass={styles.active}
+                className={styles.category}
+              >
+                {c.name}
+              </Link>
+            </li>
+          )}
+        </ul>
+        <TeamSlice badgers={getTeam(badgers, category)} page={page} />
+      </div>
     </div>
   </div>
 );
