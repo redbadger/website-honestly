@@ -74,11 +74,11 @@ export function compileRoutes(state) {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
-    const meta = typeof (window) === 'undefined' ? (Helmet.rewind()).meta : null;
 
     stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
+    const meta = typeof (window) === 'undefined' ? (Helmet.rewind()).meta : null;
     const renderMs = Date.now() - renderStart;
 
     const ejsStart = Date.now();
