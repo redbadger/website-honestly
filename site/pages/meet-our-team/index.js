@@ -1,14 +1,18 @@
 // @flow
 import React from 'react';
-import Helmet from 'react-helmet';
 import Link from '../../components/link';
+import Social from '../../components/social';
 import TeamSlice from './team-slice';
 import styles from './style.css';
 import type { Badger } from './team-slice/badger-profile';
+import metaImage from './meta-image.png';
 
-const title = 'We’re people people.';
-const description = 'Find out more about the people behind (or who work at) Red Badger.';
-const metaImage = 'https://red-badger.com/assets-honestly/social/meet-our-team-OG.png';
+const social = {
+  title: 'We’re people people.',
+  description: 'Find out more about the people behind (or who work at) Red Badger.',
+  metaImage,
+  url: 'https://red-badger.com/about-us/people',
+};
 
 const getTeam = (badgers, category) => {
   if (category !== 'everyone') {
@@ -42,20 +46,7 @@ type MeetOurTeamProps = {
 
 const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) => (
   <div>
-    <Helmet
-      meta={[
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:site', content: '@redbadgerteam' },
-        { name: 'twitter:title', content: title },
-        { name: 'twitter:description', content: description },
-        { name: 'twitter:image', content: metaImage },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://red-badger.com/about-us/people' },
-        { property: 'og:title', content: title },
-        { property: 'og:image', content: metaImage },
-        { property: 'og:description', content: description },
-      ]}
-    />
+    <Social {...social} />
     <div className={styles.meetOurTeam}>
       <div className={styles.teamContainer}>
         <h1 className={styles.title}>Meet our team</h1>
