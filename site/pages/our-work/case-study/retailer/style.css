@@ -1,23 +1,104 @@
-.headerContainer {
+@value badgerWhite, badgerBlack, badgerRed from '../../../../css/_colors.css';
 
+.caseStudyContainer {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  padding: 0 20px 20px;
+  background-color: badgerWhite;
+}
+
+.headerContainer {
+  width: 100%;
+  height: 311px;
+  position: relative;
 }
 
 .leftOutcome {
-
+  width: 120px;
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
 }
 
 .rightOutcome {
+  text-align: right;
+  width: 120px;
+  position: absolute;
+  top: 38px;
+  right: 20px;
+}
 
+.rightOutcome .percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left: 0;
+  bottom: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: badgerBlack;
+}
+
+.leftOutcome .percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: 0;
+  bottom: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: badgerBlack;
 }
 
 .percentage {
-
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  display: block;
+  border-bottom: 1px dashed badgerBlack;
 }
 
 .outcomeDescription {
-
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
 }
 
 .contentContainer {
+  padding-top: 30px;
+}
 
+.mainTitle {
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.title {
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.redTitle {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  display: block;
+  color: badgerRed;
+}
+
+.secondaryTitle {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
 }
