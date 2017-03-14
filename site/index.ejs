@@ -26,6 +26,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
+    <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
     <% if (typeof tracking !== 'undefined' && tracking) { %>
     <script async type="text/javascript" src="https://secure.leadforensics.com/js/77932.js"></script><noscript><img src="https://secure.leadforensics.com/77932.png" style="display: none;" /></noscript>
@@ -38,7 +39,6 @@
         ga('create', 'UA-16654919-1', 'auto');
         ga('send', 'pageview');
     </script><% } %>
-    <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
   </head>
   <body>
     <div class="js-app">
