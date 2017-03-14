@@ -26,23 +26,20 @@ check-deps: ## Check deps for updates
 	$(NPM_CHECK_UPDATES)
 
 
-dev: badger dist/sw.js ## Run the frontend dev server
+dev: badger ## Run the frontend dev server
 	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js --content-base dist/ --history-api-fallback --host 0.0.0.0
 
-
-sw: dist/sw.js  ## Compile service worker
 
 fetch:
 	$(LOAD_ENV) && node dev/content-fetcher
 
-dev-static: dist/static-site dist/dev-static/index.js dist/sw.js ## Compile the site to HTML locally and serve
+dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
 	ln -fs ../assets-honestly dist/static-site/assets-honestly
-	cp dist/sw.js dist/static-site/sw.js
 	node dist/dev-static/index.js
 	./node_modules/.bin/http-server ./dist/static-site -p 8000
 
 
-dev-commit: dist/static-site dist/dev-static/index.js dist/sw.js ## Compile the site to HTML locally
+dev-commit: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally
 	node dist/dev-static/index.js
 
 
@@ -58,7 +55,7 @@ test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
 
-build: dist/services.zip dist/dev-static/index.js dist/sw.js ## Compile project
+build: dist/services.zip dist/dev-static/index.js ## Compile project
 
 
 lint: ## Lint Javascript files
@@ -98,12 +95,6 @@ compress-assets: ## Compress assets. What did you expect? :)
 		-exec sh -c '\
 			echo {} \
 			&& $(NBIN)/svgo {} -q --enable=removeTitle' \;
-
-
-dist/sw.js:
-	export NODE_ENV=production \
-	&& $(LOAD_ENV) \
-	&& $(WEBPACK) --config webpack.sw.config.js
 
 
 dist/services.zip: dist/services
