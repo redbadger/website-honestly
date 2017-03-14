@@ -18,7 +18,6 @@ describe('site/compiler', () => {
           tweets: [],
         }, createStateNavigator());
 
-      console.log(routes);
       expect(routes.length).to.equal(11);
       expect(routes[0].filePath).to.equal('index.html');
       expect(routes[1].filePath).to.equal('what-we-do/index.html');
