@@ -18,6 +18,8 @@ import OurWorkPage from '../pages/our-work';
 import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
 
+import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
+
 const componentMap = {
   homePage: HomePage,
   whatWeDoPage: WhatWeDoPage,
@@ -32,6 +34,7 @@ const componentMap = {
   aboutUsPage: AboutUsPage,
   badgers: MeetOurTeam,
   badger: BadgerProfile,
+  retailerCaseStudy: RetailerCaseStudy,
 };
 
 function routes() {
