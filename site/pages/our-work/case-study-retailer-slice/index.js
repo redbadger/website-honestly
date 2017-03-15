@@ -24,7 +24,10 @@ export default () => (
       <Link to="ourWorkPage" className={styles.imageLink}>
         <div className={styles.imageContainer}>
           <img src={retailerImage} alt="Retail giant project snapshot" />
-          <div className={styles.orders}>+54%</div>
+          <div className={styles.orders}>
+            <div className={styles.imagePercentage}>+54%</div>
+            <div className={styles.imageText}>Increased orders</div>
+          </div>
         </div>
       </Link>
     </div>
