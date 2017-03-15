@@ -28,9 +28,23 @@ _:-ms-fullscreen, :root .imageLink {
   min-height: 20vh;
 }
 
-.imageLink img {
+.imageContainer {
   min-width: 260px;
   width: 60%;
+  position: relative;
+}
+
+.imageLink img{
+  width: 100%;
+}
+
+.orders {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }
 
 .caseStudyTextContainer {
@@ -84,7 +98,7 @@ _:-ms-fullscreen, :root .imageLink {
     flex-basis: 50%;
   }
 
-  .imageLink img {
+  .imageContainer {
     min-width: 400px;
   }
 

@@ -22,7 +22,10 @@ export default () => (
         </Link>
       </div>
       <Link to="ourWorkPage" className={styles.imageLink}>
-        <img src={retailerImage} alt="Retail giant project snapshot" />
+        <div className={styles.imageContainer}>
+          <img src={retailerImage} alt="Retail giant project snapshot" />
+          <div className={styles.orders}>+54%</div>
+        </div>
       </Link>
     </div>
   </div>
