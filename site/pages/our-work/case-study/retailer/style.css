@@ -1,12 +1,12 @@
 @value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../css/_colors.css';
 
-.caseStudyContainer {
+.caseStudy {
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../../css/typography/_fonts.css";
   background-color: badgerWhite;
 }
 
-.headerContainer {
+.header {
   width: 100%;
   height: 310px;
   position: relative;
@@ -14,7 +14,7 @@
   margin-bottom: 10px;
 }
 
-.headerImage {
+.header__image {
   position: absolute;
   top: 0;
   left: -30px;
@@ -23,27 +23,18 @@
   height: auto;
 }
 
-.techGraphImage {
-  max-width: 100%;
-  height: auto;
-}
-
-.leftOutcome {
+.header__outcome {
   width: 120px;
   position: absolute;
-  bottom: 13px;
-  left: 20px;
 }
 
-.rightOutcome {
+.header__outcome--right {
   text-align: right;
-  width: 120px;
-  position: absolute;
   top: 38px;
   right: 20px;
 }
 
-.rightOutcome .percentage:after {
+.header__outcome--right .percentage:after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -55,7 +46,12 @@
   background-color: badgerBlack;
 }
 
-.leftOutcome .percentage:after {
+.header__outcome--left {
+  bottom: 13px;
+  left: 20px;
+}
+
+.header__outcome--left .percentage:after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -67,7 +63,7 @@
   background-color: badgerBlack;
 }
 
-.percentage {
+.header__outcome__percentage {
   composes: fontM from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   display: block;
@@ -76,42 +72,48 @@
   margin-bottom: 3px;
 }
 
-.outcomeDescription {
+.header__outcome__description {
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../../css/typography/_fonts.css";
   font-size: 16px;
 }
 
-.contentContainer {
+.techGraphImage {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.content {
   padding: 20px 20px 20px;
 }
 
-.mainTitle {
+.content__mainTitle {
   composes: fontM2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
-.title {
+.content__title {
   composes: fontM2 from "../../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
-.redTitle {
+.content__redTitle {
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   display: block;
   color: badgerRed;
 }
 
-.secondaryTitle {
+.content__secondaryTitle {
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
-.paragraph {
+.content__paragraph {
   margin-bottom: 30px;
 }
 
@@ -139,19 +141,19 @@
   composes: smallButton from "../../../../css/_links.css";
 }
 
-.whatWeDid {
+.listBox {
   background-color: #fff;
   padding: 20px;
 }
 
-.whatWeDid__heading {
+.listBox__heading {
   composes: fontS from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   color: badgerRed;
   text-transform: uppercase;
 }
 
-.whatWeDid__heading:after {
+.listBox__heading:after {
   display: block;
   content: "";
   height: 2px;
@@ -160,37 +162,13 @@
   margin: 15px 0;
 }
 
-.whatWeDid__element {
+.listBox__element {
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 1px dashed linesOnWhite;
 }
 
-.results {
-  background-color: #fff;
-  padding: 20px;
-}
-
-.results__heading {
-  composes: fontS from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
-  color: badgerRed;
-  text-transform: uppercase;
-}
-
-.results__heading:after {
-  display: block;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: linesOnWhite;
-  margin: 15px 0;
-}
-
-.results__element {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px dashed linesOnWhite;
+.listBox__element--results {
   display: flex;
   justify-content: space-between;
   composes: fontS from "../../../../css/typography/_fonts.css";
