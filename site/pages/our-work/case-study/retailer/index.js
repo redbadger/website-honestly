@@ -10,7 +10,9 @@ const cx = classnames.bind(styles);
 const CaseStudyRetailer = () => (
   <div className={styles.caseStudy}>
     <div className={styles.header}>
-      <img src={headerImage} alt="shopping cart" className={styles.header__image} />
+      <div className={styles.header__imageContainer}>
+        <img src={headerImage} alt="shopping cart" className={styles.header__image} />
+      </div>
       <div className={cx('header__outcome', 'header__outcome--right')}>
         <span className={styles.header__outcome__percentage}>
           +54%
@@ -66,7 +68,7 @@ const CaseStudyRetailer = () => (
         <span className={styles.content__redTitle}>Do the right thing. Do the thing right.</span>
         Streamlining teams and implementing cutting-edge tech
       </h2>
-      <h3 className={styles.content__secondarytitle}>
+      <h3 className={styles.content__secondaryTitle}>
         Embracing organisational change
       </h3>
       <p className={styles.content__paragraph}>
@@ -82,7 +84,7 @@ const CaseStudyRetailer = () => (
         down department silos by keeping design, development and testing in one place. The
         benefits of this included:
       </p>
-      <ul className={styles.list}>
+      <ul className={styles.content__list}>
         <li>A shorter feedback loop</li>
         <li>Team-wide responsibility for each decision</li>
         <li>Elimination of waste</li>
@@ -94,7 +96,7 @@ const CaseStudyRetailer = () => (
       <img src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
     </div>
     <div className={styles.content}>
-      <h3>
+      <h3 className={styles.content__secondaryTitle}>
         Finding the right tech for the job
       </h3>
       <p className={styles.content__paragraph}>

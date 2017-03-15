@@ -1,4 +1,5 @@
 @value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen from "../../../../css/_sizes.css";
 
 .caseStudy {
   composes: fontXS from "../../../../css/typography/_fonts.css";
@@ -14,12 +15,14 @@
   margin-bottom: 10px;
 }
 
+.header__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__image {
-  position: absolute;
-  top: 0;
-  left: -30px;
-  overflow: hidden;
-  max-width: 100%;
+  max-width: 375px;
   height: auto;
 }
 
@@ -34,7 +37,7 @@
   right: 20px;
 }
 
-.header__outcome--right .percentage:after {
+.header__outcome--right .header__outcome__percentage:after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -51,7 +54,7 @@
   left: 20px;
 }
 
-.header__outcome--left .percentage:after {
+.header__outcome--left .header__outcome__percentage:after {
   position: absolute;
   content: "";
   display: inline-block;
@@ -117,7 +120,7 @@
   margin-bottom: 30px;
 }
 
-.list {
+.content__list {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 30px;
@@ -173,4 +176,34 @@
   justify-content: space-between;
   composes: fontS from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
+}
+
+@media mediumScreen {
+  .header__outcome {
+    width: 200px;
+  }
+
+  .header__outcome--left {
+    bottom: 78px;
+  }
+
+  .header__outcome--right {
+    top: 78px;
+  }
+
+  .content__paragraph {
+    padding-left: 114px;
+  }
+
+  .content__secondaryTitle {
+    padding-left: 114px;
+  }
+
+  .content__list {
+    padding-left: 134px;
+  }
+
+  .techGraphImage {
+    padding-left: 20px;
+  }
 }
