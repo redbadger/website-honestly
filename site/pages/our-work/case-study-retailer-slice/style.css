@@ -41,13 +41,19 @@ _:-ms-fullscreen, :root .imageLink {
   position: absolute;
   right: 30px;
   top: 30px;
+  text-align: right;
+}
+
+.visits {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
 
 .imagePercentage {
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
-  text-align: right;
 }
 
 .imageText {

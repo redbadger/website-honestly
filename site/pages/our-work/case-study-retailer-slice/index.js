@@ -28,6 +28,10 @@ export default () => (
             <div className={styles.imagePercentage}>+54%</div>
             <div className={styles.imageText}>Increased orders</div>
           </div>
+          <div className={styles.visits}>
+            <div className={styles.imagePercentage}>+29%</div>
+            <div className={styles.imageText}>Uplifts in visits</div>
+          </div>
         </div>
       </Link>
     </div>
