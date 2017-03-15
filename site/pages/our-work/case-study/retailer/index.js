@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './style.css';
 
+import headerImage from './images/header.jpg';
+import techGraphImage from './images/tech-graph.jpg';
+
 const CaseStudyRetailer = () => (
   <div className={styles.caseStudyContainer}>
     <div className={styles.headerContainer}>
-      <div className={styles.leftOutcome}>
+      <img src={headerImage} alt="shopping cart" className={styles.headerImage} />
+      <div className={styles.rightOutcome}>
         <span className={styles.percentage}>
           +54%
         </span>
@@ -12,7 +16,7 @@ const CaseStudyRetailer = () => (
           Increased orders
         </h3>
       </div>
-      <div className={styles.rightOutcome}>
+      <div className={styles.leftOutcome}>
         <span className={styles.percentage}>
           +29%
         </span>
@@ -82,9 +86,11 @@ const CaseStudyRetailer = () => (
         <li>Driven determination and focus in order to deliver value to customers, faster</li>
         <li>A sped-up delivery, over four years early</li>
       </ul>
-      <div>
-        *** TODO: image ***
-      </div>
+    </div>
+    <div>
+      <img src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
+    </div>
+    <div className={styles.contentContainer}>
       <h3>
         Finding the right tech for the job
       </h3>
@@ -99,8 +105,11 @@ const CaseStudyRetailer = () => (
         experience, making the new site adaptable, flexible and able to scale up to the ever
         -growing demand that the business was seeing.
       </p>
-      <div>
-        *** TODO: Contant component ***
+      <div className={styles.contactBox}>
+        <h2 className={styles.contactBox__heading}>
+          Project in mind?
+        </h2>
+        <button className={styles.contactBox__button}>Tell us more</button>
       </div>
       <p className={styles.paragraph}>
         By using a combination of Node.js and React.js, the team were able to develop an app that
@@ -138,12 +147,71 @@ const CaseStudyRetailer = () => (
         delivered a completed application across seven countries in just eight months, the
         results of which are staggering:
       </p>
-      <div>
-        *** TODO: What we did component ***
-      </div>
-      <div>
-        *** TODO: Results component ***
-      </div>
+    </div>
+    <div className={styles.whatWeDid}>
+      <h3 className={styles.whatWeDid__heading}>What we did</h3>
+      <ul>
+        <li className={styles.whatWeDid__element}>
+          Mobile first application across 7
+        </li>
+        <li className={styles.whatWeDid__element}>
+          Introduced Lean & Agile practices
+        </li>
+        <li className={styles.whatWeDid__element}>
+          Built Continuous Deployment Pipelines
+        </li>
+        <li className={styles.whatWeDid__element}>
+          Moved to the Cloud
+        </li>
+        <li className={styles.whatWeDid__element}>
+          Introduced automated testing & cutting edge tech
+        </li>
+      </ul>
+    </div>
+    <div className={styles.results}>
+      <h3 className={styles.results__heading}>Results</h3>
+      <ul>
+        <li className={styles.results__element}>
+          <div>
+            Uplift in visits
+          </div>
+          <div>
+            +29%
+          </div>
+        </li>
+        <li className={styles.results__element}>
+          <div>
+            Increased orders
+          </div>
+          <div>
+            +54%
+          </div>
+        </li>
+        <li className={styles.results__element}>
+          <div>
+            Customers amending orders
+          </div>
+          <div>
+            +443%
+          </div>
+        </li>
+        <li className={styles.results__element}>
+          <div>
+            Conversion rates including amendments
+          </div>
+          <div>
+            +83%
+          </div>
+        </li>
+        <li className={styles.results__element}>
+          <div>
+            Conversion rates excluding amendments
+          </div>
+          <div>
+            +18%
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 );

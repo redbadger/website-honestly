@@ -1,16 +1,31 @@
-@value badgerWhite, badgerBlack, badgerRed from '../../../../css/_colors.css';
+@value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../css/_colors.css';
 
 .caseStudyContainer {
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../../css/typography/_fonts.css";
-  padding: 0 20px 20px;
   background-color: badgerWhite;
 }
 
 .headerContainer {
   width: 100%;
-  height: 311px;
+  height: 310px;
   position: relative;
+  background-color: #abc9c1;
+  margin-bottom: 10px;
+}
+
+.headerImage {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.techGraphImage {
+  max-width: 100%;
+  height: auto;
 }
 
 .leftOutcome {
@@ -32,11 +47,11 @@
   position: absolute;
   content: "";
   display: inline-block;
-  left: 0;
-  bottom: 20px;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
+  left: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
   background-color: badgerBlack;
 }
 
@@ -44,11 +59,11 @@
   position: absolute;
   content: "";
   display: inline-block;
-  right: 0;
-  bottom: 20px;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
+  right: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
   background-color: badgerBlack;
 }
 
@@ -57,15 +72,18 @@
   composes: serif from "../../../../css/typography/_fonts.css";
   display: block;
   border-bottom: 1px dashed badgerBlack;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .outcomeDescription {
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../../css/typography/_fonts.css";
+  font-size: 16px;
 }
 
 .contentContainer {
-  padding-top: 30px;
+  padding: 20px 20px 20px;
 }
 
 .mainTitle {
@@ -101,4 +119,80 @@
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 30px;
+}
+
+.contactBox {
+  background-color: #ededed;
+  height: 162px;
+  padding: 33px 37px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactBox__heading {
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.contactBox__button {
+  composes: smallButton from "../../../../css/_links.css";
+}
+
+.whatWeDid {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.whatWeDid__heading {
+  composes: fontS from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  color: badgerRed;
+  text-transform: uppercase;
+}
+
+.whatWeDid__heading:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: linesOnWhite;
+  margin: 15px 0;
+}
+
+.whatWeDid__element {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed linesOnWhite;
+}
+
+.results {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.results__heading {
+  composes: fontS from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  color: badgerRed;
+  text-transform: uppercase;
+}
+
+.results__heading:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: linesOnWhite;
+  margin: 15px 0;
+}
+
+.results__element {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed linesOnWhite;
+  display: flex;
+  justify-content: space-between;
+  composes: fontS from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
 }
