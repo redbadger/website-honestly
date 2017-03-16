@@ -8,7 +8,7 @@ export default () => (
   <div className={styles.caseStudyContainer} >
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer} >
-        <Link to="ourWorkPage">
+        <Link to="retailerCaseStudy">
           <h2 className={styles.caseStudyTextContainerHeader}>
             Next generation platform for retail giant
           </h2>
@@ -21,7 +21,7 @@ export default () => (
           </div>
         </Link>
       </div>
-      <Link to="ourWorkPage" className={styles.imageLink}>
+      <Link to="retailerCaseStudy" className={styles.imageLink}>
         <div className={styles.imageContainer}>
           <img src={retailerImage} alt="Retail giant project snapshot" />
           <div className={styles.orders}>
