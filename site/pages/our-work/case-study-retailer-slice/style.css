@@ -39,15 +39,15 @@ _:-ms-fullscreen, :root .imageLink {
 
 .orders {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 10px;
+  top: 10px;
   text-align: right;
 }
 
 .visits {
   position: absolute;
-  left: 30px;
-  bottom: 30px;
+  left: 10px;
+  bottom: 10px;
 }
 
 .imagePercentage {
@@ -60,7 +60,7 @@ _:-ms-fullscreen, :root .imageLink {
   composes: fontS from "../../../css/typography/_fonts.css";
   composes: lightSerif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .caseStudyTextContainer {
@@ -118,14 +118,8 @@ _:-ms-fullscreen, :root .imageLink {
     min-width: 400px;
   }
 
-  .orders {
-    right: 10px;
-    top: 10px;
-  }
-
-  .visits {
-    left: 10px;
-    bottom: 10px;
+  .imageText {
+    font-size: 20px;
   }
 
   .caseStudyTextContainerHeader {
