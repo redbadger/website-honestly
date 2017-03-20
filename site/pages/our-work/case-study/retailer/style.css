@@ -183,6 +183,10 @@
   composes: serif from "../../../../css/typography/_fonts.css";
 }
 
+.overview {
+  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
+}
+
 @media mediumScreen {
   .header__outcome {
     width: 200px;
@@ -266,9 +270,5 @@
 
   .header {
     padding-bottom: 56px;
-  }
-
-  .overview {
-    box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
   }
 }
