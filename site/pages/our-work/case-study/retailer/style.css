@@ -1,5 +1,5 @@
 @value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../css/_colors.css';
-@value mediumScreen from "../../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .caseStudy {
   composes: fontXS from "../../../../css/typography/_fonts.css";
@@ -9,10 +9,16 @@
 
 .header {
   width: 100%;
-  height: 310px;
-  position: relative;
   background-color: #abc9c1;
   margin-bottom: 10px;
+}
+
+.header__container {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 310px;
 }
 
 .header__imageContainer {
@@ -86,13 +92,12 @@
   height: auto;
 }
 
-
-.content {
+.content__wrapper {
   padding: 20px 20px 20px;
 }
 
 .content__mainTitle {
-  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: fontL from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
@@ -226,5 +231,44 @@
 
   .listBox {
     width: 50%;
+  }
+}
+
+@media largeScreen {
+  .content {
+    padding: 0 120px 40px;
+  }
+
+  .content__paragraph,
+  .content__secondaryTitle {
+    padding-left: 376px;
+    padding-right: 136px;
+  }
+
+  .content__list {
+    padding-left: 396px;
+    padding-right: 136px;
+  }
+
+  .content__mainTitle {
+    position: relative;
+    top: -96px;
+    display: block;
+    padding: 20px;
+    height: 100%;
+    background-color: badgerWhite;
+    margin-bottom: -96px;
+  }
+
+  .content__title {
+    padding-left: 136px;
+  }
+
+  .header {
+    padding-bottom: 56px;
+  }
+
+  .overview {
+    box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
   }
 }
