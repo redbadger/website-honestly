@@ -174,7 +174,7 @@
 .listBox__element--results {
   display: flex;
   justify-content: space-between;
-  composes: fontS from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
 }
 
@@ -205,5 +205,26 @@
 
   .techGraphImage {
     padding-left: 20px;
+  }
+
+  .content__mainTitle {
+    margin-bottom: -20px;
+  }
+
+  .content__title {
+    margin-top: 50px;
+  }
+
+  .contactBox {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .overview {
+    display: flex;
+  }
+
+  .listBox {
+    width: 50%;
   }
 }

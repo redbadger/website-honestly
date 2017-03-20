@@ -153,70 +153,72 @@ const CaseStudyRetailer = () => (
         results of which are staggering:
       </p>
     </div>
-    <div className={styles.listBox}>
-      <h3 className={styles.listBox__heading}>What we did</h3>
-      <ul>
-        <li className={styles.listBox__element}>
-          Mobile first application across 7
-        </li>
-        <li className={styles.listBox__element}>
-          Introduced Lean & Agile practices
-        </li>
-        <li className={styles.listBox__element}>
-          Built Continuous Deployment Pipelines
-        </li>
-        <li className={styles.listBox__element}>
-          Moved to the Cloud
-        </li>
-        <li className={styles.listBox__element}>
-          Introduced automated testing & cutting edge tech
-        </li>
-      </ul>
-    </div>
-    <div className={styles.listBox}>
-      <h3 className={styles.listBox__heading}>Results</h3>
-      <ul>
-        <li className={cx('listBox__element', 'listBox__element--results')}>
-          <div>
-            Uplift in visits
-          </div>
-          <div>
-            +29%
-          </div>
-        </li>
-        <li className={cx('listBox__element', 'listBox__element--results')}>
-          <div>
-            Increased orders
-          </div>
-          <div>
-            +54%
-          </div>
-        </li>
-        <li className={cx('listBox__element', 'listBox__element--results')}>
-          <div>
-            Customers amending orders
-          </div>
-          <div>
-            +443%
-          </div>
-        </li>
-        <li className={cx('listBox__element', 'listBox__element--results')}>
-          <div>
-            Conversion rates including amendments
-          </div>
-          <div>
-            +83%
-          </div>
-        </li>
-        <li className={cx('listBox__element', 'listBox__element--results')}>
-          <div>
-            Conversion rates excluding amendments
-          </div>
-          <div>
-            +18%
-          </div>
-        </li>
-      </ul>
+    <div className={styles.overview}>
+      <div className={styles.listBox}>
+        <h3 className={styles.listBox__heading}>What we did</h3>
+        <ul>
+          <li className={styles.listBox__element}>
+            Mobile first application across 7
+          </li>
+          <li className={styles.listBox__element}>
+            Introduced Lean & Agile practices
+          </li>
+          <li className={styles.listBox__element}>
+            Built Continuous Deployment Pipelines
+          </li>
+          <li className={styles.listBox__element}>
+            Moved to the Cloud
+          </li>
+          <li className={styles.listBox__element}>
+            Introduced automated testing & cutting edge tech
+          </li>
+        </ul>
+      </div>
+      <div className={styles.listBox}>
+        <h3 className={styles.listBox__heading}>Results</h3>
+        <ul>
+          <li className={cx('listBox__element', 'listBox__element--results')}>
+            <div>
+              Uplift in visits
+            </div>
+            <div>
+              +29%
+            </div>
+          </li>
+          <li className={cx('listBox__element', 'listBox__element--results')}>
+            <div>
+              Increased orders
+            </div>
+            <div>
+              +54%
+            </div>
+          </li>
+          <li className={cx('listBox__element', 'listBox__element--results')}>
+            <div>
+              Customers amending orders
+            </div>
+            <div>
+              +443%
+            </div>
+          </li>
+          <li className={cx('listBox__element', 'listBox__element--results')}>
+            <div>
+              Conversion rates including amendments
+            </div>
+            <div>
+              +83%
+            </div>
+          </li>
+          <li className={cx('listBox__element', 'listBox__element--results')}>
+            <div>
+              Conversion rates excluding amendments
+            </div>
+            <div>
+              +18%
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 );
