@@ -112,7 +112,7 @@
 
 .content__redTitle {
   composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   display: block;
   color: badgerRed;
 }
@@ -129,9 +129,12 @@
 
 .content__list {
   list-style-type: disc;
-  line-height: 28px;
   padding-left: 20px;
   margin-bottom: 30px;
+}
+
+.content__list__element {
+  line-height: 28px;
 }
 
 .contactBox {
@@ -159,7 +162,7 @@
 
 .listBox__heading {
   composes: fontS2 from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   color: badgerRed;
   text-transform: uppercase;
 }

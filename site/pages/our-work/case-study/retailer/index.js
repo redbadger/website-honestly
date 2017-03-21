@@ -88,11 +88,11 @@ const CaseStudyRetailer = () => (
           benefits of this included:
         </p>
         <ul className={styles.content__list}>
-          <li>A shorter feedback loop</li>
-          <li>Team-wide responsibility for each decision</li>
-          <li>Elimination of waste</li>
-          <li>Driven determination and focus in order to deliver value to customers, faster</li>
-          <li>A sped-up delivery, over four years early</li>
+          <li className={styles.content__list__element}>A shorter feedback loop</li>
+          <li className={styles.content__list__element}>Team-wide responsibility for each decision</li>
+          <li className={styles.content__list__element}>Elimination of waste</li>
+          <li className={styles.content__list__element}>Driven determination and focus in order to deliver value to customers, faster</li>
+          <li className={styles.content__list__element}>A sped-up delivery, over four years early</li>
         </ul>
       </div>
       <div>
