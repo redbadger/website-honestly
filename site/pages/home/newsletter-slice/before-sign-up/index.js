@@ -50,7 +50,7 @@ class BeforeSignUp extends Component {
               id="email_address"
               name="email_address"
               type="email"
-              placeholder="example@email.com"
+              placeholder="name@example.com"
               className={cx({
                 formInput: true,
                 beforeFormError: this.props.errorMessage,
