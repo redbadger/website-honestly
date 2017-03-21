@@ -105,7 +105,7 @@
 }
 
 .content__title {
-  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: fontM from "../../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
