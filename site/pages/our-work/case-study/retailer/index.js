@@ -27,7 +27,7 @@ const CaseStudyRetailer = () => (
             +29%
           </span>
           <h3 className={styles.header__outcome__description}>
-            Uplifts in visits
+            Uplift in visits
           </h3>
         </div>
       </div>
@@ -57,9 +57,9 @@ const CaseStudyRetailer = () => (
         <p className={styles.content__paragraph}>
           As a retailer dedicated to providing value to customers and seeing its online business
           growing substantially - including a 100% year-on-year mobile traffic increase - there was
-          an urgent need for the site to work seamlessly.  The business needed to build a modern
+          an urgent need for the site to work seamlessly. The business needed to build a modern
           technology platform using cutting-edge, web-based tech to ensure all experiences for
-          customers were intuitive and easy to use, regardless of device.  This would  also have to
+          customers were intuitive and easy to use, regardless of device. This would also have to
           factor in processing a catalogue of hundreds-of-thousands of products, delving into complex
           user journeys, and building a well executed international shipping function.
         </p>
@@ -82,8 +82,8 @@ const CaseStudyRetailer = () => (
           seem staggering to large organisations.
         </p>
         <p className={styles.content__paragraph}>
-          Red Badger enabled this large retail client to work with the agility of a start-up: re
-          -engineering and revolutionising its workflow with Lean practices and helping it break
+          Red Badger enabled this large retail client to work with the agility of a start-up:
+          re-engineering and revolutionising its workflow with Lean practices and helping it break
           down department silos by keeping design, development and testing in one place. The
           benefits of this included:
         </p>
@@ -110,8 +110,8 @@ const CaseStudyRetailer = () => (
           Red Badger worked very closely with the retailer’s engineering team to recommend and
           introduce an incredibly progressive selection of cutting-edge technology. The new mobile
           site had to replace the existing screen-scraping solution and improve the customer
-          experience, making the new site adaptable, flexible and able to scale up to the ever
-          -growing demand that the business was seeing.
+          experience, making the new site adaptable, flexible and able to scale up to the
+          ever-growing demand that the business was seeing.
         </p>
         <div className={styles.contactBox}>
           <h2 className={styles.contactBox__heading}>
@@ -121,7 +121,7 @@ const CaseStudyRetailer = () => (
         </div>
         <p className={styles.content__paragraph}>
           By using a combination of Node.js and React.js, the team were able to develop an app that
-          delivers a  consistent experience across all devices.  It also means that the application
+          delivers a consistent experience across all devices. It also means that the application
           is fast and responsive, delivering far better usability for customers.
         </p>
         <p className={styles.content__paragraph}>
@@ -133,9 +133,9 @@ const CaseStudyRetailer = () => (
           Black Friday.
         </p>
         <p className={styles.content__paragraph}>
-          Finally, on the tech front, by building Automated Test and Continuous Deployment Pipeline
-          s, new features are enabled to be constantly trickled into production, continually
-          delivering new value to  customers and substantially reducing risk. Previously, the
+          Finally, on the tech front, by building Automated Test and Continuous Deployment
+          Pipelines, new features are enabled to be constantly trickled into production, continually
+          delivering new value to customers and substantially reducing risk. Previously, the
           retail giant released quarterly but can now release multiple times a day with deployments
           taking minutes, rather than days.
         </p>
@@ -161,7 +161,7 @@ const CaseStudyRetailer = () => (
           <h3 className={styles.listBox__heading}>What we did</h3>
           <ul>
             <li className={styles.listBox__element}>
-              Mobile first application across 7
+              Mobile first application across 7 countries
             </li>
             <li className={styles.listBox__element}>
               Introduced Lean & Agile practices
