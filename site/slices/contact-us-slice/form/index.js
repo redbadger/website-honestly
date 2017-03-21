@@ -68,7 +68,7 @@ class Form extends Component {
               type="text"
               onChange={this.handleInputChange}
               value={contact}
-              placeholder="sam@company.com"
+              placeholder="name@example.com"
             />
           </div>
 
