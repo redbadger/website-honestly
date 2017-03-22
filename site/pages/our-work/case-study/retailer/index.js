@@ -123,7 +123,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
           <h2 className={styles.contactBox__heading}>
             Project in mind?
           </h2>
-          <button className={styles.contactBox__button}>Tell us more</button>
+          <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
         </div>
         <p className={styles.content__paragraph}>
           By using a combination of Node.js and React.js, the team were able to develop an app that
