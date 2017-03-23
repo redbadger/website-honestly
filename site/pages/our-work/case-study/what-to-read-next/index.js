@@ -1,7 +1,9 @@
 import React from 'react';
+import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
 import fortnumImage from './images/fortnumImage.jpg';
+import arrowSVG from '../../../../../assets/images/SVG/arrow.svg';
 
 const WhatToReadNext = () => (
   <div className={styles.whatNext}>
@@ -11,7 +13,7 @@ const WhatToReadNext = () => (
     </figure>
     <h2 className={styles.whatNext__title}>
       Elegant e-commerce in eight months
-      <span className={styles.whatNext__arrow}></span>
+      <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
     </h2>
     <button className={styles.whatNext__button}>
       See more of our work
