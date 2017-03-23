@@ -101,7 +101,7 @@ class Form extends Component {
             <button
               label="Submit"
               onClick={this.handleSubmit}
-              className={styles.button}
+              className={yellow ? cx('button', 'button--yellow') : styles.button}
             >
               Submit
             </button>

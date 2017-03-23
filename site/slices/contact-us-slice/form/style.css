@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
+@value badgerBlack, badgerWhite, badgerRed, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
 @value contentMaxWidth from "../../../css/_sizes.css";
 
 .formContainer {
@@ -102,10 +102,17 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
 
 .button {
   composes: primaryButton from "../../../css/_links.css";
-  background: badgerBlack !important;
   color: badgerWhite !important;
   outline: none;
   border: none;
+}
+
+.button--red {
+  background: badgerRed !important;
+}
+
+.button--yellow {
+  background: badgerBlack !important;
 }
 
 .button:hover {
