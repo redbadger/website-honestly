@@ -5,6 +5,7 @@ import styles from './style.css';
 import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
 
+import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 
 const cx = classnames.bind(styles);
@@ -240,6 +241,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
         </div>
       </div>
     </div>
+    <WhatToReadNext />
     <ContactUs postURL={contactUsURL} />
   </div>
 );

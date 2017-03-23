@@ -1,0 +1,32 @@
+@value badgerRed from '../../../../css/_colors.css';
+
+.whatNext {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.whatNext__image {
+  background-color: #79b0a3;
+  width: 100%;
+}
+
+.whatNext__caption {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  color: badgerRed;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.whatNext__title {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.whatNext__button {
+  composes: primaryButton from "../../../../css/_links.css";
+}
