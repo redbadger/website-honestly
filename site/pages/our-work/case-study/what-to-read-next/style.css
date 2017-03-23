@@ -1,9 +1,10 @@
-@value badgerRed from '../../../../css/_colors.css';
+@value badgerRed, grey from '../../../../css/_colors.css';
 
 .whatNext {
+  composes: dividerGrey from "../../../../css/_divider.css";
   padding: 60px 20px;
   text-align: center;
-  background-color: #ededed;
+  background-color: grey;
 }
 
 .whatNext__image {
