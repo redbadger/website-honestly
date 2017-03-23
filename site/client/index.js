@@ -21,7 +21,11 @@ const scrollTo = params => () => {
 
 export function makeApp({ element, state }) {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register(location.origin + '/sw.js');
+    navigator.serviceWorker.getRegistration().then(r => {
+      if (r) {
+        r.unregister();
+      }
+    });
   }
 
   const stateNavigator = createStateNavigator();

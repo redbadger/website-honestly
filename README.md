@@ -89,9 +89,6 @@ generator on lambda, but it runs locally and writes the pages to the local
 filesystem instead of to AWS S3. This is useful for checking functionality that
 might not work with the front end `dev` app.
 
-A service worker is used to enable some offline functionality. This can be found
-in `site/sw.js`.
-
 
 ## Deployment
 
