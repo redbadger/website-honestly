@@ -92,6 +92,11 @@
 .techGraphImage {
   max-width: 100%;
   height: auto;
+  padding: 0;
+}
+
+.content {
+  padding-bottom: 40px;
 }
 
 .content__wrapper {
@@ -218,11 +223,6 @@
     padding-left: 134px;
   }
 
-  .techGraphImage {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .content__mainTitle {
     margin-bottom: -20px;
   }
@@ -243,13 +243,17 @@
   .listBox {
     width: 50%;
   }
+
+  .techGraphImage {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media largeScreen {
   .content {
     max-width: 1200px;
     margin: auto;
-    padding-bottom: 40px;
   }
 
   .content__wrapper {
@@ -258,8 +262,8 @@
 
   .content__paragraph,
   .content__secondaryTitle {
-    padding-left: 376px;
-    padding-right: 136px;
+    padding-left: 30%;
+    padding-right: 10%;
   }
 
   .content__list {
@@ -278,7 +282,11 @@
   }
 
   .content__title {
-    padding-left: 136px;
+    padding-left: 10%;
+  }
+
+  .techGraphImage {
+    padding: 0;
   }
 
   .header {
