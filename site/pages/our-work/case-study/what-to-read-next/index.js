@@ -2,6 +2,7 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
+import Link from '../../../../components/link';
 
 import fortnumImage from './images/fortnumImage.jpg';
 import financialTimesImage from './images/financialTimesImage.png';
@@ -14,38 +15,50 @@ const WhatToReadNext = () => (
     <div className={styles.whatNext__tilesContainer}>
       <div className={cx('whatNext__tile', 'whatNext__tile--fortnum')}>
         <figure>
-          <img src={fortnumImage} alt="Fortnum & Mason" className={styles.whatNext__image} />
+          <a href="/our-work/case-study/fortnum-and-mason/">
+            <img src={fortnumImage} alt="Fortnum & Mason" className={styles.whatNext__image} />
+          </a>
           <figcaption className={styles.whatNext__caption}>Fortnum &amp; Mason</figcaption>
         </figure>
-        <h2 className={styles.whatNext__title}>
-          Elegant e-commerce in eight months
-          <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
-        </h2>
+        <a href="/our-work/case-study/fortnum-and-mason/" className={styles.whatNext__link}>
+          <h2 className={styles.whatNext__title}>
+            Elegant e-commerce in eight months
+            <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
+          </h2>
+        </a>
       </div>
       <div className={cx('whatNext__tile', 'whatNext__tile--financialTimes')}>
         <figure>
-          <img src={financialTimesImage} alt="Financial Times" className={styles.whatNext__image} />
+          <a href="/our-work/case-study/financial-times/">
+            <img src={financialTimesImage} alt="Financial Times" className={styles.whatNext__image} />
+          </a>
           <figcaption className={styles.whatNext__caption}>Financial Times</figcaption>
         </figure>
-        <h2 className={styles.whatNext__title}>
-          Lasting change for a media giant
-          <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
-        </h2>
+        <a href="/our-work/case-study/financial-times/" className={styles.whatNext__link}>
+          <h2 className={styles.whatNext__title}>
+            Lasting change for a media giant
+            <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
+          </h2>
+        </a>
       </div>
       <div className={cx('whatNext__tile', 'whatNext__tile--camden')}>
         <figure>
-          <img src={camdenMarketImage} alt="Camden Market" className={styles.whatNext__image} />
+          <a href="/our-work/case-study/camden-market/">
+            <img src={camdenMarketImage} alt="Camden Market" className={styles.whatNext__image} />
+          </a>
           <figcaption className={styles.whatNext__caption}>Camden Market</figcaption>
         </figure>
-        <h2 className={styles.whatNext__title}>
-          Taking steps towards a digital future
-          <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
-        </h2>
+        <a href="/our-work/case-study/camden-market/" className={styles.whatNext__link}>
+          <h2 className={styles.whatNext__title}>
+            Taking steps towards a digital future
+            <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
+          </h2>
+        </a>
       </div>
     </div>
-    <button className={styles.whatNext__button}>
+    <Link to="ourWorkPage" className={styles.whatNext__button}>
       See more of our work
-    </button>
+    </Link>
   </div>
 );
 

@@ -1,4 +1,4 @@
-@value badgerRed, grey from '../../../../css/_colors.css';
+@value badgerRed, badgerBlack, grey from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .whatNext {
@@ -6,6 +6,11 @@
   padding: 60px 20px;
   text-align: center;
   background-color: grey;
+}
+
+.whatNext__tilesContainer {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .whatNext__image {
@@ -21,6 +26,17 @@
   text-align: left;
   margin: 0;
   padding: 10px 0;
+}
+
+.whatNext__link,
+.whatNext__link:hover,
+.whatNext__link:active,
+.whatNext__link:visited {
+  color: badgerBlack;
+}
+
+.whatNext__link:hover {
+  text-decoration: underline badgerRed;
 }
 
 .whatNext__title {
