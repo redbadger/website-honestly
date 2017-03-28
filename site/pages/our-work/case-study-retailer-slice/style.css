@@ -104,7 +104,7 @@ _:-ms-fullscreen, :root .imageLink {
 @media mediumScreen {
   .caseStudyTextContainer {
     margin-top: 0;
-    padding: 0 30px 0 90px;
+    padding: 0 30px;
     flex-basis: 50%;
   }
 
@@ -148,6 +148,10 @@ _:-ms-fullscreen, :root .imageLink {
 }
 
 @media largeScreen {
+  .caseStudyTextContainer {
+    padding-left: 90px;
+  }
+
   .orders {
     right: 30px;
     top: 30px;
