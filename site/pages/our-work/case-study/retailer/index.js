@@ -60,8 +60,8 @@ const CaseStudyRetailer = () => (
           an urgent need for the site to work seamlessly. The business needed to build a modern
           technology platform using cutting-edge, web-based tech to ensure all experiences for
           customers were intuitive and easy to use, regardless of device. This would also have to
-          factor in processing a catalogue of hundreds-of-thousands of products, delving into complex
-          user journeys, and building a well executed international shipping function.
+          factor in processing a catalogue of hundreds-of-thousands of products, delving into
+          complex user journeys, and building a well executed international shipping function.
         </p>
         <p className={styles.content__paragraph}>
           As a business that championed innovation this retailer decided that Red Badger was the
@@ -88,11 +88,21 @@ const CaseStudyRetailer = () => (
           benefits of this included:
         </p>
         <ul className={styles.content__list}>
-          <li className={styles.content__list__element}>A shorter feedback loop</li>
-          <li className={styles.content__list__element}>Team-wide responsibility for each decision</li>
-          <li className={styles.content__list__element}>Elimination of waste</li>
-          <li className={styles.content__list__element}>Driven determination and focus in order to deliver value to customers, faster</li>
-          <li className={styles.content__list__element}>A sped-up delivery, over four years early</li>
+          <li className={styles.content__list__element}>
+            A shorter feedback loop
+          </li>
+          <li className={styles.content__list__element}>
+            Team-wide responsibility for each decision
+          </li>
+          <li className={styles.content__list__element}>
+            Elimination of waste
+          </li>
+          <li className={styles.content__list__element}>
+            Driven determination and focus in order to deliver value to customers, faster
+          </li>
+          <li className={styles.content__list__element}>
+            A sped-up delivery, over four years early
+          </li>
         </ul>
       </div>
       <div>
