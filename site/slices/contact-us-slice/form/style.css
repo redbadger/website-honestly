@@ -2,7 +2,7 @@
 @value contentMaxWidth from "../../../css/_sizes.css";
 
 .formContainer {
-  padding: 60px 20px 70px 20px;
+  padding: 40px 20px 70px 20px;
   text-align: center;
   composes: dividerWhite from "../../../css/_divider.css";
   background-color: badgerWhite;
@@ -10,6 +10,7 @@
 
 .formContainer--yellow {
   composes: dividerYellow from "../../../css/_divider.css";
+  padding-top: 60px;
   background-color: cainYellow;
 }
 
