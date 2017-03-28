@@ -76,10 +76,14 @@
 }
 
 @media largeScreen {
+  .whatNext {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .whatNext__tilesContainer {
     max-width: 1400px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 8.5714286%;
+    padding-right: 8.5714286%;
   }
 
   .whatNext__tile {
