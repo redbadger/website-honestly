@@ -262,7 +262,7 @@
 @media largeScreen {
   .content {
     max-width: 1400px;
-    padding: 20px 8.5714286%;
+    padding: 20px 8.5714286% 60px;
     margin: auto;
   }
 
