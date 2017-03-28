@@ -97,6 +97,10 @@ _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
   margin-top: 30px;
 }
 
+.readmore:hover {
+  color: badgerRed;
+}
+
 .links {
   text-align: right;
   padding-bottom: 30px;

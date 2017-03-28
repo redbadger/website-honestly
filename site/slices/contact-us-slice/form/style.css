@@ -1,10 +1,16 @@
-@value badgerBlack, badgerWhite, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
+@value badgerBlack, badgerWhite, badgerRed, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
 @value contentMaxWidth from "../../../css/_sizes.css";
 
 .formContainer {
-  padding: 60px 20px 70px 20px;
+  padding: 40px 20px 70px 20px;
   text-align: center;
+  composes: dividerWhite from "../../../css/_divider.css";
+  background-color: badgerWhite;
+}
+
+.formContainer--yellow {
   composes: dividerYellow from "../../../css/_divider.css";
+  padding-top: 60px;
   background-color: cainYellow;
 }
 
@@ -60,9 +66,9 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
 
   padding: 12px;
-  background: cainYellowFaded;
   border: 0px;
 
+  background: #ededed;
   background-image: linear-gradient(to right, badgerBlack 20%, rgba(255, 255, 255, 0) 0%);
   background-position: bottom;
   background-size: 11px 2px;
@@ -70,6 +76,18 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
 }
 
 .inputBox::placeholder {
+  color: badgerBlack;
+}
+
+.inputBox--yellow {
+  background: cainYellowFaded;
+  background-image: linear-gradient(to right, badgerBlack 20%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 11px 2px;
+  background-repeat: repeat-x;
+}
+
+.inputBox--yellow::placeholder {
   color: #88792F;
 }
 
@@ -85,10 +103,17 @@ _:-ms-fullscreen, :root .contactUsForm textarea {
 
 .button {
   composes: primaryButton from "../../../css/_links.css";
-  background: badgerBlack !important;
   color: badgerWhite !important;
   outline: none;
   border: none;
+}
+
+.button--red {
+  background: badgerRed !important;
+}
+
+.button--yellow {
+  background: badgerBlack !important;
 }
 
 .button:hover {

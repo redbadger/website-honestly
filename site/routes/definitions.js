@@ -95,6 +95,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
     gen: state => state.badgers.map(({ slug }) => ({ slug })),
   },
   {
+    title: 'Retailer case study',
+    key: 'retailerCaseStudy',
+    route: 'our-work/case-study/retailer',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',

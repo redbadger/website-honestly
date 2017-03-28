@@ -18,17 +18,18 @@ describe('site/compiler', () => {
           tweets: [],
         }, createStateNavigator());
 
-      expect(routes.length).to.equal(10);
+      expect(routes.length).to.equal(11);
       expect(routes[0].filePath).to.equal('index.html');
       expect(routes[1].filePath).to.equal('what-we-do/index.html');
       expect(routes[2].filePath).to.equal('our-work/index.html');
       expect(routes[3].filePath).to.equal('about-us/index.html');
       expect(routes[4].filePath).to.equal('about-us/join-us/index.html');
       expect(routes[5].filePath).to.equal('about-us/events/index.html');
-      expect(routes[6].filePath).to.equal('404.html');
-      expect(routes[7].filePath).to.equal('50x/index.html');
-      expect(routes[8].filePath).to.equal('offline/index.html');
-      expect(routes[9].filePath).to.equal('about-us/people/index.html');
+      expect(routes[6].filePath).to.equal('our-work/case-study/retailer/index.html');
+      expect(routes[7].filePath).to.equal('404.html');
+      expect(routes[8].filePath).to.equal('50x/index.html');
+      expect(routes[9].filePath).to.equal('offline/index.html');
+      expect(routes[10].filePath).to.equal('about-us/people/index.html');
     });
 
     it('renders the dynamic jobs pages of the site', () => {
@@ -59,9 +60,9 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(12);
-      expect(routes[9].filePath).to.equal('about-us/join-us/software-engineer/index.html');
-      expect(routes[10].filePath).to.equal('about-us/join-us/ux-designer/index.html');
+      expect(routes.length).to.equal(13);
+      expect(routes[10].filePath).to.equal('about-us/join-us/software-engineer/index.html');
+      expect(routes[11].filePath).to.equal('about-us/join-us/ux-designer/index.html');
     });
 
     it('renders the featured blogs of the site on the home page', () => {
@@ -91,7 +92,7 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(10);
+      expect(routes.length).to.equal(11);
       expect(routes[0].filePath).to.equal('index.html');
     });
 
@@ -150,9 +151,9 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(12);
-      expect(routes[9].filePath).to.equal('about-us/events/2017/01/31/upcoming-event/index.html');
-      expect(routes[10].filePath).to.equal('about-us/events/2016/08/03/designing-in-cross-functional-teams/index.html');
+      expect(routes.length).to.equal(13);
+      expect(routes[10].filePath).to.equal('about-us/events/2017/01/31/upcoming-event/index.html');
+      expect(routes[11].filePath).to.equal('about-us/events/2016/08/03/designing-in-cross-functional-teams/index.html');
     });
   });
 });

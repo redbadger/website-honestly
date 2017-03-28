@@ -19,21 +19,52 @@
 
 .imageLink {
   display: flex;
-  flex:1;
+  flex: 1;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 _:-ms-fullscreen, :root .imageLink {
-  min-height: 45vh;
+  min-height: 20vh;
 }
 
-.imageLink img {
-  max-width: 260px;
+.imageContainer {
+  min-width: 260px;
+  min-height: 205px;
+  background-color: #abc9c1;
+  position: relative;
 }
 
-.camdenLogo {
-  width: 76px;
+.imageLink img{
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.orders {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  text-align: right;
+}
+
+.visits {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
+.imagePercentage {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+}
+
+.imageText {
+  composes: fontS from "../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  font-size: 16px;
 }
 
 .caseStudyTextContainer {
@@ -45,7 +76,7 @@ _:-ms-fullscreen, :root .imageLink {
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   color: badgerBlack;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .description {
@@ -82,22 +113,25 @@ _:-ms-fullscreen, :root .imageLink {
   }
 
   .caseStudyContent {
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid linesOnWhite;
   }
 
-  .imageLink img {
-    max-width: 400px;
+  .imageLink {
+    flex-basis: 50%;
   }
 
-  .camdenLogo {
-    width: 123px;
+  .imageContainer {
+    min-width: 400px;
+  }
+
+  .imageText {
+    font-size: 20px;
   }
 
   .caseStudyTextContainerHeader {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .description {
@@ -105,11 +139,39 @@ _:-ms-fullscreen, :root .imageLink {
   }
 
   .caseStudyContainer {
-    padding-top: 60px;
+    padding: 60px 0 60px;
+    border-bottom: 1px solid linesOnWhite;
   }
 
   .links {
     text-align: left;
     border: none;
+    padding-bottom: 0;
+  }
+
+  .orders {
+    right: 10px;
+    top: 10px;
+  }
+
+  .visits {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+@media largeScreen {
+  .caseStudyTextContainer {
+    padding-left: 90px;
+  }
+
+  .orders {
+    right: 30px;
+    top: 30px;
+  }
+
+  .visits {
+    left: 30px;
+    bottom: 30px;
   }
 }

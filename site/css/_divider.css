@@ -1,4 +1,4 @@
-@value badgerRed, badgerWhite, badgerBlack, daveGreen, cainYellow from "./_colors.css";
+@value badgerRed, badgerWhite, badgerBlack, daveGreen, cainYellow, grey from "./_colors.css";
 @value timelineDivider from "./_zindex.css";
 
 .divider {
@@ -16,7 +16,7 @@
   background-color: badgerRed;
 }
 
-.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice {
+.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey {
   composes: divider;
 }
 
@@ -34,6 +34,10 @@
 
 .dividerGreen:before {
   background-color: daveGreen;
+}
+
+.dividerGrey:before {
+  background-color: grey;
 }
 
 .dividerBlackOnTransparent:before {
