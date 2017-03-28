@@ -30,24 +30,27 @@ _:-ms-fullscreen, :root .imageLink {
 
 .imageContainer {
   min-width: 260px;
+  min-height: 205px;
+  background-color: #abc9c1;
   position: relative;
 }
 
 .imageLink img{
   width: 100%;
+  margin-top: 15px;
 }
 
 .orders {
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 5px;
   text-align: right;
 }
 
 .visits {
   position: absolute;
   left: 10px;
-  bottom: 10px;
+  bottom: 5px;
 }
 
 .imagePercentage {
@@ -145,6 +148,15 @@ _:-ms-fullscreen, :root .imageLink {
     padding-bottom: 0;
   }
 
+  .orders {
+    right: 10px;
+    top: 10px;
+  }
+
+  .visits {
+    left: 10px;
+    bottom: 10px;
+  }
 }
 
 @media largeScreen {
