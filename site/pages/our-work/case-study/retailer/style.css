@@ -199,6 +199,15 @@
 }
 
 @media mediumScreen {
+  .header__container {
+    height: 400px;
+  }
+
+  .header__image {
+    max-width: 500px;
+    height: auto;
+  }
+
   .header__outcome {
     width: 200px;
   }
