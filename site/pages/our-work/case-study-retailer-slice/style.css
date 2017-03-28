@@ -91,6 +91,10 @@ _:-ms-fullscreen, :root .imageLink {
   margin-top: 30px;
 }
 
+.readmore:hover {
+  color: badgerRed;
+}
+
 .links {
   text-align: right;
   border-bottom: 1px solid linesOnWhite;
