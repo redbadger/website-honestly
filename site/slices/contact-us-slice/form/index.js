@@ -26,9 +26,9 @@ class Form extends Component {
 
   render() {
     const { message, contact } = this.state;
-    const { errors, fatalError } = this.props;
+    const { errors, fatalError, yellow } = this.props;
     return (
-      <section className={styles.formContainer} id="contactUs">
+      <section className={yellow ? cx('formContainer', 'formContainer--yellow') : styles.formContainer} id="contactUs">
         <h2 className={styles.heading}>
           Project in mind?
           <br />
@@ -46,6 +46,7 @@ class Form extends Component {
               className={cx({
                 inputBox: true,
                 hasErrors: errors.message,
+                'inputBox--yellow': yellow,
               })}
               name="message"
               id="contactUsMessage"
@@ -62,6 +63,7 @@ class Form extends Component {
               className={cx({
                 inputBox: true,
                 hasErrors: errors.contact,
+                'inputBox--yellow': yellow,
               })}
               id="contactEmail"
               name="contact"
@@ -99,7 +101,7 @@ class Form extends Component {
             <button
               label="Submit"
               onClick={this.handleSubmit}
-              className={styles.button}
+              className={yellow ? cx('button', 'button--yellow') : styles.button}
             >
               Submit
             </button>
@@ -130,6 +132,7 @@ Form.propTypes = {
   }).isRequired,
   fatalError: bool.isRequired,
   onSubmit: func.isRequired,
+  yellow: bool,
 };
 
 export default Form;

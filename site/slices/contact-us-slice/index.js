@@ -61,6 +61,7 @@ class ContactUs extends Component {
         onSubmit={this.submitForm}
         fatalError={fatalError}
         errors={errors}
+        yellow={this.props.yellow}
       />
     );
   }

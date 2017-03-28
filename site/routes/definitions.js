@@ -98,6 +98,9 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Retailer case study',
     key: 'retailerCaseStudy',
     route: 'our-work/case-study/retailer',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
   },
   {
     title: 'Not found',
