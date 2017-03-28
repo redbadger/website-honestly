@@ -252,12 +252,14 @@
 
 @media largeScreen {
   .content {
-    max-width: 1200px;
+    max-width: 1400px;
+    padding: 20px 120px;
     margin: auto;
   }
 
   .content__wrapper {
-    padding: 20px 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .content__paragraph,
@@ -285,11 +287,12 @@
     padding-left: 10%;
   }
 
-  .techGraphImage {
-    padding: 0;
-  }
-
   .header {
     padding-bottom: 56px;
+  }
+
+  .techGraphImage {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
