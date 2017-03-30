@@ -95,14 +95,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
     gen: state => state.badgers.map(({ slug }) => ({ slug })),
   },
   {
-    title: 'Retailer case study',
+    title: ({ retailer }) => retailer.title,
     key: 'retailerCaseStudy',
     route: 'our-work/case-study/{retailer}',
     stateToProps: ({ caseStudies, contactUsURL }, params = {}) => ({
       contactUsURL,
-      retailer: caseStudies[params.retailer],
+      retailer: caseStudies.find(caseStudy => caseStudy.slug === params.retailer),
     }),
-    gen: state => state.caseStudies,
+    gen: state => state.caseStudies.map(({ slug }) => ({ retailer: slug })),
   },
   {
     title: 'Not found',
