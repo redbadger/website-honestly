@@ -143,9 +143,10 @@
 }
 
 .contactBox {
+  width: 27%;
   background-color: #ededed;
-  height: 162px;
-  padding: 33px 37px;
+  height: 100%;
+  padding: 33px 30px;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -256,6 +257,7 @@
   .techGraphImage {
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 20px;
   }
 }
 
