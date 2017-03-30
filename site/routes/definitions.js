@@ -97,10 +97,15 @@ export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: 'Retailer case study',
     key: 'retailerCaseStudy',
-    route: 'our-work/case-study/retailer',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
+    route: 'our-work/case-study/{retailer}',
+    stateToProps: ({ contactUsURL }, params = {}) => {
+      console.log(params);
+      return ({
+        contactUsURL,
+        retailer: state.caseStudies[params.retailer]
+      });
+    },
+    gen: state => state.caseStudies
   },
   {
     title: 'Not found',
