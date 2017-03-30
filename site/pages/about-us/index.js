@@ -18,7 +18,7 @@ const AboutUs = ({ contactUsURL, tweets, instagramPosts }: AboutUsProps) => {
     <div>
       <PrinciplesSlice />
       <TimelineSlice />
-      <ContactUs postURL={contactUsURL} yellow={true} />
+      <ContactUs postURL={contactUsURL} yellow />
       <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
       <AwardsSlice />
     </div>

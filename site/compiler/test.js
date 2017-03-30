@@ -16,7 +16,7 @@ describe('site/compiler', () => {
           categories: [],
           caseStudies: [],
           instagramPosts: [],
-          tweets: []
+          tweets: [],
         }, createStateNavigator());
 
       expect(routes.length).to.equal(10);
