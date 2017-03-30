@@ -10,14 +10,24 @@ const cx = classnames.bind(styles);
 
 type CaseStudyRetailerProps = {
   contactUsURL: string,
+  retailer: object,
 }
 
-const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
-  <div className={styles.caseStudy}>
-    <DefaultCaseStudyRetailer styles={styles} cx={cx} />
-    <WhatToReadNext />
-    <ContactUs postURL={contactUsURL} />
-  </div>
+const slugToComponent = slug => (
+  {
+    'fortnum-and-mason': DefaultCaseStudyRetailer,
+  }[slug]
 );
+
+const CaseStudyRetailer = ({ contactUsURL, retailer }: CaseStudyRetailerProps) => {
+  const RetailerPage = slugToComponent(retailer.slug);
+  return (
+    <div className={styles.caseStudy}>
+      <RetailerPage styles={styles} cx={cx} />
+      <WhatToReadNext />
+      <ContactUs postURL={contactUsURL} />
+    </div>
+  );
+};
 
 export default CaseStudyRetailer;
