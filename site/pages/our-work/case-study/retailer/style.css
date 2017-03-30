@@ -143,7 +143,6 @@
 }
 
 .contactBox {
-  width: 27%;
   background-color: #ededed;
   height: 100%;
   padding: 33px 30px;
@@ -242,6 +241,7 @@
   }
 
   .contactBox {
+    width: 26.1%;
     float: left;
     margin-right: 30px;
   }
@@ -280,7 +280,7 @@
   }
 
   .content__list {
-    padding-left: 396px;
+    padding-left: 33.457143%;
     padding-right: 136px;
   }
 
