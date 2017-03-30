@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 
-import FMCaseStudy from './fortnum';
+import FMCaseStudy from './fortnums';
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 
@@ -23,7 +23,7 @@ const CaseStudyRetailer = ({ contactUsURL, retailer }: CaseStudyRetailerProps) =
   const RetailerPage = slugToComponent(retailer.slug);
   return (
     <div className={styles.caseStudy}>
-      <RetailerPage styles={styles} cx={cx} />
+      <RetailerPage retailerStyles={styles} cx={cx} />
       <WhatToReadNext />
       <ContactUs postURL={contactUsURL} />
     </div>

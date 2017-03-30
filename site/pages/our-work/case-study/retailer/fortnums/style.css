@@ -1,0 +1,32 @@
+.tabletTeaSalonImage {
+  float: right;
+  max-width: 39%;
+  height: auto;
+  padding: 0;
+}
+
+.allScreensImage {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  padding-left: 16%;
+}
+
+.quote {
+  float: right;
+  max-width: 47%;
+  padding: 0;
+  padding-left: 4%;
+  padding-bottom: 3%;
+}
+
+.quote__content {
+  padding-bottom: 15px;
+  composes: serif from "../../../../../css/typography/_fonts.css";
+  composes: fontM from "../../../../../css/typography/_fonts.css";
+}
+
+.quote__attribution {
+  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../../css/typography/_fonts.css";
+}

@@ -10,8 +10,7 @@
 }
 
 .header {
-  width: 100%;
-  background-color: #abc9c1;
+  height: 100%;
   margin-bottom: 10px;
 }
 
@@ -27,11 +26,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .header__image {
-  max-width: 375px;
-  height: auto;
+  height: 100%;
 }
 
 .header__outcome {
@@ -201,11 +200,6 @@
 @media mediumScreen {
   .header__container {
     height: 400px;
-  }
-
-  .header__image {
-    max-width: 500px;
-    height: auto;
   }
 
   .header__outcome {
