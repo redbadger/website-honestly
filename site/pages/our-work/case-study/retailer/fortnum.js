@@ -3,12 +3,12 @@ import React from 'react';
 import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
 
-type DefaultCaseStudyRetailerProps = {
+type FMCaseStudyProps = {
   styles: string,
   cx: object
 }
 
-const DefaultCaseStudyRetailer = ({ styles, cx }: DefaultCaseStudyRetailerProps) => (
+const FMCaseStudy = ({ styles, cx }: FMCaseStudyProps) => (
   <div>
     <div className={styles.header}>
       <div className={styles.header__container}>
@@ -238,4 +238,4 @@ const DefaultCaseStudyRetailer = ({ styles, cx }: DefaultCaseStudyRetailerProps)
   </div>
 );
 
-export default DefaultCaseStudyRetailer;
+export default FMCaseStudy;

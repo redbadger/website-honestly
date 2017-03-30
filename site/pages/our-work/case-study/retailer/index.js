@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 
-import DefaultCaseStudyRetailer from './default';
+import FMCaseStudy from './fortnum';
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 
@@ -15,7 +15,7 @@ type CaseStudyRetailerProps = {
 
 const slugToComponent = slug => (
   {
-    'fortnum-and-mason': DefaultCaseStudyRetailer,
+    'fortnum-and-mason': FMCaseStudy,
   }[slug]
 );
 
