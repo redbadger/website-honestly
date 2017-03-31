@@ -279,6 +279,13 @@
     padding-right: 10%;
   }
 
+  .content__video_embed > iframe {
+    padding-left: 30%;
+    padding-right: 10%;
+    width: 100%;
+    height: 391.5px;
+  }
+
   .content__list {
     padding-left: 396px;
     padding-right: 136px;

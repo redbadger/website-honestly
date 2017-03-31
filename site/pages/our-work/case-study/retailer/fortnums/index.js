@@ -246,6 +246,9 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
           sector award and as ‘Best Use of Website to Build Your Brand’. It was also nominated at
           the Retail Week Tech and Ecommerce Awards in the ‘Best Customer Experience’ category.
         </p>
+        <p className={retailerStyles.content__video_embed}>
+          <iframe src="https://www.youtube.com/embed/eBE3J9XZO20" frameborder="0" allowfullscreen></iframe>
+        </p>
 
       </div>
     </div>
