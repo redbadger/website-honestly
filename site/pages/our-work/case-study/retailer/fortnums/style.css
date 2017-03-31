@@ -1,3 +1,5 @@
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+
 .imageRight {
   float: right;
   max-width: 39%;
@@ -38,4 +40,37 @@
 .quote__attribution {
   composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
   composes: fontS2 from "../../../../../css/typography/_fonts.css";
+}
+
+@media mediumScreen {
+  .imageRight {
+    max-width: 55%;
+  }
+
+  .imageLeft {
+    padding-left: 0;
+  }
+
+  .allScreensImage {
+    padding-left: 0;
+  }
+
+  .quote {
+    max-width: 55%;
+    padding-left: 8%;
+  }
+}
+
+@media largeScreen {
+  .imageRight {
+    max-width: 39%;
+  }
+
+  .allScreensImage {
+    padding-left: 21%;
+  }
+
+  .quote {
+    max-width: 47%;
+  }
 }
