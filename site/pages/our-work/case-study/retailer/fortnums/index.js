@@ -247,7 +247,7 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
           the Retail Week Tech and Ecommerce Awards in the ‘Best Customer Experience’ category.
         </p>
         <p className={retailerStyles.content__video_embed}>
-          <iframe src="https://www.youtube.com/embed/eBE3J9XZO20" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/eBE3J9XZO20" frameBorder="0" allowFullScreen />
         </p>
 
       </div>
