@@ -1,7 +1,8 @@
 import React from 'react';
 
 import headerImage from './images/header-large.jpg';
-import tabletTeaSalonImage from './images/tablet_tea_salon.jpg';
+import tabletImage from './images/tablet_tea_salon.jpg';
+import tabletImage2 from './images/tablet-2.jpg';
 import allScreensImage from './images/all-screens.jpg';
 import allScreens2Image from './images/all-screens-2.jpg';
 
@@ -12,7 +13,7 @@ type FMCaseStudyProps = {
   cx: object
 }
 
-const FMCaseStudy = ({ retailerStyles }: FMCaseStudyProps) => (
+const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
   <div>
     <div className={retailerStyles.header}>
       <div className={retailerStyles.header__container}>
@@ -40,7 +41,7 @@ const FMCaseStudy = ({ retailerStyles }: FMCaseStudyProps) => (
           130 different countries, Fortnum’s realised their digital experience didn’t match the
           service delivered by the physical stores, and something needed to change, quickly.
         </p>
-        <img src={tabletTeaSalonImage} className={styles.tabletTeaSalonImage} alt="Tablet" />
+        <img src={tabletImage} className={styles.imageRight} alt="Tablet" />
         <p className={retailerStyles.content__paragraph}>
           The old site had an inconsistent design, was inflexible, difficult to update and the
           underlying technology was nearing the end of its life. The out-dated technology meant
@@ -109,6 +110,143 @@ const FMCaseStudy = ({ retailerStyles }: FMCaseStudyProps) => (
           design from concept through to delivery, in just eight months and for under £1.3 milllion.
         </p>
         <img src={allScreens2Image} className={styles.allScreensImage} alt="All screens" />
+
+        <h2 className={retailerStyles.content__title}>
+          <span className={retailerStyles.content__redTitle}>
+            Creating lasting change.
+          </span>
+          Increasing conversion, sales and mobile visits and winning multiple awards
+        </h2>
+        <img src={tabletImage2} className={styles.imageLeft} alt="Tablet 2" />
+        <p className={retailerStyles.content__paragraph}>
+          The new Badger-created site was one of the only fully responsive retail sites that was
+          live at the time [JG1], which ensures that the customer experience is equally superlative
+          no matter what device is used. The site is also built to be scalable and flexible enough
+          to support the company’s future ambitions and peaks of online traffic, such as Christmas.
+        </p>
+        <p className={retailerStyles.content__paragraph}>
+          As well as being beautiful to look at with a  consistent design and the famous eau de nil
+          colour prominent throughout, the new site is fast, slick and easy to navigate - and truly
+          responsive, delivering optimal layouts across every view port.
+        </p>
+        <p className={retailerStyles.content__paragraph}>
+          The site reinforces the brand experience that Fortnum & Mason customers expect and since
+          it went fully live it has delivered incredible sales uplift (38% over the Christmas 2015
+          period) and dramatically increased conversion.
+        </p>
+        <p className={retailerStyles.content__paragraph}>
+          The results in the first few weeks were striking:
+        </p>
+
+        <div className={retailerStyles.overview}>
+          <div className={retailerStyles.listBox}>
+            <ul>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Improved conversion in the first week of release
+                </div>
+                <div>
+                  +14%
+                </div>
+              </li>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Increase in average order value in the first week of release
+                </div>
+                <div>
+                  +5%
+                </div>
+              </li>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Total sales achieving growth year on year
+                </div>
+                <div>
+                  +52%
+                </div>
+              </li>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Increase in mobile visits up year on year
+                </div>
+                <div>
+                  +77%
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p className={retailerStyles.content__paragraph}>
+          The drop-out rate at the delivery options stage was previously 18.8% and has now been
+          reduced to 12.9% (based figures from 17–25th February 2014 vs 2015).
+        </p>
+        <p className={retailerStyles.content__paragraph}>
+          Other key stats year on year*:
+        </p>
+
+        <div className={retailerStyles.overview}>
+          <div className={retailerStyles.listBox}>
+            <ul>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Mobile Conversion rate
+                </div>
+                <div>
+                  +57%
+                </div>
+              </li>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Tablet visits
+                </div>
+                <div>
+                  +30%
+                </div>
+              </li>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Tablet Conversion
+                </div>
+                <div>
+                  +28%
+                </div>
+              </li>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  New customers conversion
+                </div>
+                <div>
+                  +15%
+                </div>
+              </li>
+              <li className={cx('listBox__element', 'listBox__element--results')}>
+                <div>
+                  Reduction in calls to the Customer Service team
+                </div>
+                <div>
+                  -18%
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p className={retailerStyles.content__paragraph}>
+          * Statistics are based on launch week to 8th March and same date range last year.
+        </p>
+        <p className={retailerStyles.content__paragraph}>
+          With the site now being much easier to navigate there has been an increase in sales of
+          specific items, for example a 78% increase in grocery sales.
+        </p>
+        <p className={retailerStyles.content__paragraph}>
+          Further to the this, fortnumandmason.com won a BIMA Award for ‘Best Web Design & Build’
+          and an eCommerce Award for ‘Best eCommerce New Design or Re-Design (Under 1 Year)’ in
+          2015. The project was also nominated for the UK Digital Experience Awards in the Retail
+          sector award and as ‘Best Use of Website to Build Your Brand’. It was also nominated at
+          the Retail Week Tech and Ecommerce Awards in the ‘Best Customer Experience’ category.
+        </p>
+
       </div>
     </div>
   </div>

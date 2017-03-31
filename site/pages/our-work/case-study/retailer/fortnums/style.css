@@ -1,15 +1,24 @@
-.tabletTeaSalonImage {
+.imageRight {
   float: right;
   max-width: 39%;
   height: auto;
   padding: 0;
 }
 
+.imageLeft {
+  float: left;
+  max-width: 56%;
+  height: auto;
+  padding-left: 15%;
+  padding-bottom: 3%;
+  margin-right: 3%;
+}
+
 .allScreensImage {
   max-width: 100%;
   height: auto;
   padding: 0;
-  padding-left: 16%;
+  padding-left: 21%;
 }
 
 .quote {

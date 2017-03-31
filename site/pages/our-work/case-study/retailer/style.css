@@ -161,7 +161,7 @@
 
 .listBox {
   background-color: #fff;
-  padding: 20px;
+  padding: 40px 50px;
 }
 
 .listBox__heading {
@@ -186,6 +186,12 @@
   border-bottom: 1px dashed linesOnWhite;
 }
 
+.listBox__element:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .listBox__element--results {
   display: flex;
   justify-content: space-between;
@@ -195,6 +201,7 @@
 
 .overview {
   box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
+  margin-bottom: 30px;
 }
 
 @media mediumScreen {
@@ -241,10 +248,11 @@
 
   .overview {
     display: flex;
+    margin-left: 21%;
   }
 
   .listBox {
-    width: 50%;
+    width: 100%;
   }
 
   .techGraphImage {
@@ -287,7 +295,7 @@
   }
 
   .content__title {
-    padding-left: 10%;
+    padding-left: 15%;
   }
 
   .header {
