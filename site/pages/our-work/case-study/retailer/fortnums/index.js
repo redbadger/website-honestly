@@ -1,6 +1,8 @@
 import React from 'react';
 
-import headerImage from './images/header-large.jpg';
+import headerSmall from './images/header-small.jpg';
+import headerMedium from './images/header-medium.jpg';
+import headerLarge from './images/header-large.jpg';
 import tabletImage from './images/tablet_tea_salon.jpg';
 import tabletImage2 from './images/tablet-2.jpg';
 import allScreensImage from './images/all-screens.jpg';
@@ -18,7 +20,11 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
     <div className={retailerStyles.header}>
       <div className={retailerStyles.header__container}>
         <div className={retailerStyles.header__imageContainer}>
-          <img src={headerImage} alt="shopping cart" className={retailerStyles.header__image} />
+          <picture>
+            <source srcSet={headerMedium} media="(min-width: 690px)" />
+            <source srcSet={headerLarge} media="(min-width: 980px)" />
+            <img src={headerSmall} alt="Fortnum & Mason basket contents" className={retailerStyles.header__image} />
+          </picture>
         </div>
       </div>
     </div>
