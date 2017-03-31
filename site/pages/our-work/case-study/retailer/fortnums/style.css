@@ -1,40 +1,29 @@
 @value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
 
-.imageRight {
-  float: right;
-  max-width: 39%;
+.imageRight,
+.imageLeft {
+  width: 100%;
   height: auto;
   padding: 0;
-}
-
-.imageLeft {
-  float: left;
-  max-width: 56%;
-  height: auto;
-  padding-left: 15%;
-  padding-bottom: 3%;
-  margin-right: 3%;
+  padding-bottom: 30px;
 }
 
 .allScreensImage {
-  max-width: 100%;
+  margin-top: -20px;
+  width: 100%;
   height: auto;
-  padding: 0;
-  padding-left: 21%;
+  padding-bottom: 10px;
 }
 
 .quote {
-  float: right;
-  max-width: 47%;
   padding: 0;
-  padding-left: 4%;
-  padding-bottom: 3%;
+  margin-bottom: 30px;
 }
 
 .quote__content {
   padding-bottom: 15px;
   composes: serif from "../../../../../css/typography/_fonts.css";
-  composes: fontM from "../../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../../css/typography/_fonts.css";
 }
 
 .quote__attribution {
@@ -44,20 +33,26 @@
 
 @media mediumScreen {
   .imageRight {
+    float: right;
     max-width: 55%;
   }
 
   .imageLeft {
-    padding-left: 0;
+    float: left;
+    max-width: 56%;
+    padding-bottom: 3%;
+    margin-right: 3%;
   }
 
   .allScreensImage {
-    padding-left: 0;
+    padding: 0 20px;
   }
 
   .quote {
-    max-width: 55%;
-    padding-left: 8%;
+    float: right;
+    max-width: 42%;
+    padding-left: 67px;
+    margin-bottom: 42px;
   }
 }
 
@@ -66,7 +61,12 @@
     max-width: 39%;
   }
 
+  .imageLeft {
+    padding-left: 15%;
+  }
+
   .allScreensImage {
+    padding: 0;
     padding-left: 21%;
   }
 

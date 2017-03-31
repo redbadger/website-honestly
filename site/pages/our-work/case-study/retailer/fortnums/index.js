@@ -55,9 +55,9 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
           orders and delivery to more than 130 countries. A scalable, highly flexible new site was
            needed, and very quickly to avoid more lost revenue.
         </p>
-        <img src={allScreensImage} className={styles.allScreensImage} alt="All screens" />
-
-
+      </div>
+      <img src={allScreensImage} className={styles.allScreensImage} alt="All screens" />
+      <div className={retailerStyles.content__wrapper}>
         <h2 className={retailerStyles.content__title}>
           <span className={retailerStyles.content__redTitle}>
             Do the right thing. Do the thing right.
@@ -109,8 +109,9 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
           approach also meant that overall the project has achieved a complete re-platform and
           design from concept through to delivery, in just eight months and for under £1.3 milllion.
         </p>
-        <img src={allScreens2Image} className={styles.allScreensImage} alt="All screens" />
-
+      </div>
+      <img src={allScreens2Image} className={styles.allScreensImage} alt="All screens" />
+      <div className={retailerStyles.content__wrapper}>
         <h2 className={retailerStyles.content__title}>
           <span className={retailerStyles.content__redTitle}>
             Creating lasting change.
@@ -137,46 +138,46 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
         <p className={retailerStyles.content__paragraph}>
           The results in the first few weeks were striking:
         </p>
-
-        <div className={retailerStyles.overview}>
-          <div className={retailerStyles.listBox}>
-            <ul>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Improved conversion in the first week of release
-                </div>
-                <div>
-                  +14%
-                </div>
-              </li>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Increase in average order value in the first week of release
-                </div>
-                <div>
-                  +5%
-                </div>
-              </li>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Total sales achieving growth year on year
-                </div>
-                <div>
-                  +52%
-                </div>
-              </li>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Increase in mobile visits up year on year
-                </div>
-                <div>
-                  +77%
-                </div>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div className={retailerStyles.overview}>
+        <div className={retailerStyles.listBox}>
+          <ul>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Improved conversion in the first week of release
+              </div>
+              <div>
+                +14%
+              </div>
+            </li>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Increase in average order value in the first week of release
+              </div>
+              <div>
+                +5%
+              </div>
+            </li>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Total sales achieving growth year on year
+              </div>
+              <div>
+                +52%
+              </div>
+            </li>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Increase in mobile visits up year on year
+              </div>
+              <div>
+                +77%
+              </div>
+            </li>
+          </ul>
         </div>
-
+      </div>
+      <div className={retailerStyles.content__wrapper}>
         <p className={retailerStyles.content__paragraph}>
           The drop-out rate at the delivery options stage was previously 18.8% and has now been
           reduced to 12.9% (based figures from 17–25th February 2014 vs 2015).
@@ -184,54 +185,54 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
         <p className={retailerStyles.content__paragraph}>
           Other key stats year on year*:
         </p>
-
-        <div className={retailerStyles.overview}>
-          <div className={retailerStyles.listBox}>
-            <ul>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Mobile Conversion rate
-                </div>
-                <div>
-                  +57%
-                </div>
-              </li>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Tablet visits
-                </div>
-                <div>
-                  +30%
-                </div>
-              </li>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Tablet Conversion
-                </div>
-                <div>
-                  +28%
-                </div>
-              </li>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  New customers conversion
-                </div>
-                <div>
-                  +15%
-                </div>
-              </li>
-              <li className={cx('listBox__element', 'listBox__element--results')}>
-                <div>
-                  Reduction in calls to the Customer Service team
-                </div>
-                <div>
-                  -18%
-                </div>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div className={retailerStyles.overview}>
+        <div className={retailerStyles.listBox}>
+          <ul>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Mobile Conversion rate
+              </div>
+              <div>
+                +57%
+              </div>
+            </li>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Tablet visits
+              </div>
+              <div>
+                +30%
+              </div>
+            </li>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Tablet Conversion
+              </div>
+              <div>
+                +28%
+              </div>
+            </li>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                New customers conversion
+              </div>
+              <div>
+                +15%
+              </div>
+            </li>
+            <li className={cx('listBox__element', 'listBox__element--results')}>
+              <div>
+                Reduction in calls to the Customer Service team
+              </div>
+              <div>
+                -18%
+              </div>
+            </li>
+          </ul>
         </div>
-
+      </div>
+      <div className={retailerStyles.content__wrapper}>
         <p className={retailerStyles.content__paragraph}>
           * Statistics are based on launch week to 8th March and same date range last year.
         </p>
@@ -249,7 +250,7 @@ const FMCaseStudy = ({ retailerStyles, cx }: FMCaseStudyProps) => (
         <p className={retailerStyles.content__video_embed}>
           <iframe src="https://www.youtube.com/embed/eBE3J9XZO20" frameBorder="0" allowFullScreen />
         </p>
-
+        <div className={retailerStyles.content__video_spacer}></div>
       </div>
     </div>
   </div>
