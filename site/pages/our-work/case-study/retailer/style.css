@@ -241,7 +241,7 @@
   }
 
   .contactBox {
-    width: 26.1%;
+    width: auto;
     float: left;
     margin-right: 30px;
   }
@@ -296,6 +296,10 @@
 
   .content__title {
     padding-left: 10%;
+  }
+
+  .contactBox {
+    width: 26.1%;
   }
 
   .header {
