@@ -12,7 +12,6 @@ describe('CaseStudyRetailer', () => {
     };
     const caseStudyPage = shallow(<CaseStudyRetailer {...props} />);
     expect(caseStudyPage.find('WhatToReadNext').length).to.equal(1);
-    expect(caseStudyPage.find('ContactUs').length).to.equal(1);
     expect(caseStudyPage.find('FMCaseStudy').length).to.equal(1);
   });
 });
