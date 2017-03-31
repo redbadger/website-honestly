@@ -1,6 +1,6 @@
 import React from 'react';
 
-import headerImage from './images/header.jpg';
+import headerImage from './images/header-large.jpg';
 import tabletTeaSalonImage from './images/tablet_tea_salon.jpg';
 import allScreensImage from './images/all-screens.jpg';
 import allScreens2Image from './images/all-screens-2.jpg';
