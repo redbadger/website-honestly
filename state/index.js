@@ -35,6 +35,9 @@ const getSiteState = () => (
     caseStudies: [{
       slug: 'fortnum-and-mason',
       title: 'Fortnum & Mason',
+    }, {
+      slug: 'retailer',
+      title: 'Retailer case study',
     }],
   }))
 );
