@@ -1,4 +1,220 @@
+@value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../../css/_colors.css';
 @value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+
+.caseStudy {
+  composes: fontXS from "../../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../../css/typography/_fonts.css";
+  font-size: 20px;
+  line-height: 27px;
+  background-color: badgerWhite;
+}
+
+.header {
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.header__container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.header__outcome {
+  width: 120px;
+  position: absolute;
+}
+
+.header__outcome--right {
+  text-align: right;
+  top: 13px;
+  right: 20px;
+}
+
+.header__outcome--right .header__outcome__percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: badgerBlack;
+}
+
+.header__outcome--left {
+  bottom: 13px;
+  left: 20px;
+}
+
+.header__outcome--left .header__outcome__percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: badgerBlack;
+}
+
+.header__outcome__percentage {
+  composes: fontM from "../../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../../css/typography/_fonts.css";
+  display: block;
+  border-bottom: 1px dashed badgerBlack;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+.header__outcome__description {
+  composes: fontXS from "../../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../../css/typography/_fonts.css";
+  font-size: 16px;
+}
+
+.techGraphImage {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.content {
+  padding-bottom: 40px;
+}
+
+.content__wrapper {
+  padding: 20px 20px 20px;
+}
+
+.content__mainTitle {
+  composes: fontL from "../../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__title {
+  composes: fontM from "../../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__redTitle {
+  composes: fontXS from "../../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
+  display: block;
+  color: badgerRed;
+}
+
+.content__secondaryTitle {
+  composes: fontS2 from "../../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__paragraph {
+  margin-bottom: 30px;
+}
+
+.content__video_embed {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56%;
+}
+
+.content__video_embed > iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.content__list__element {
+  line-height: 28px;
+}
+
+.contactBox {
+  background-color: #ededed;
+  height: 162px;
+  padding: 33px 37px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactBox__heading {
+  composes: fontM2 from "../../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.contactBox__button {
+  composes: smallButton from "../../../../../css/_links.css";
+}
+
+.listBox {
+  background-color: #fff;
+  padding: 40px 50px;
+}
+
+.listBox__heading {
+  composes: fontS2 from "../../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
+  color: badgerRed;
+  text-transform: uppercase;
+}
+
+.listBox__heading:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: linesOnWhite;
+  margin: 15px 0;
+}
+
+.listBox__element {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed linesOnWhite;
+}
+
+.listBox__element:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.listBox__element--results {
+  display: flex;
+  justify-content: space-between;
+  composes: fontS2 from "../../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../../css/typography/_fonts.css";
+}
+
+.overview {
+  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
+  margin-bottom: 30px;
+}
 
 .imageRight,
 .imageLeft {
@@ -32,6 +248,67 @@
 }
 
 @media mediumScreen {
+  .header__container {
+    height: 100%;
+  }
+
+  .header__outcome {
+    width: 200px;
+  }
+
+  .header__outcome--left {
+    bottom: 78px;
+  }
+
+  .header__outcome--right {
+    top: 78px;
+  }
+
+  .content__paragraph {
+    padding-left: 30px;
+  }
+
+  .content__video_embed > iframe {
+    padding-left: 5%;
+  }
+
+  .content__secondaryTitle {
+    padding-left: 114px;
+  }
+
+  .content__list {
+    padding-left: 134px;
+  }
+
+  .content__mainTitle {
+    margin-bottom: -20px;
+    padding-bottom: 40px;
+  }
+
+  .content__title {
+    margin-top: 20px;
+  }
+
+  .contactBox {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .overview {
+    display: flex;
+    margin: 0 20px;
+    margin-top: -20px;
+  }
+
+  .listBox {
+    width: 100%;
+  }
+
+  .techGraphImage {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .imageRight {
     float: right;
     max-width: 55%;
@@ -57,6 +334,65 @@
 }
 
 @media largeScreen {
+  .content {
+    max-width: 1400px;
+    padding: 20px 120px 60px;
+    margin: auto;
+  }
+
+  .content__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content__paragraph,
+  .content__secondaryTitle {
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+
+  .content__video_embed > iframe {
+    padding: 0 10% 23% 30%;
+  }
+
+  .content__video_spacer {
+    width: 100%;
+    margin-top: -23%;
+  }
+
+  .content__list {
+    padding-left: 396px;
+    padding-right: 136px;
+  }
+
+  .content__mainTitle {
+    position: relative;
+    top: -125px;
+    display: block;
+    padding: 20px;
+    height: 100%;
+    background-color: badgerWhite;
+    margin-bottom: -96px;
+  }
+
+  .content__title {
+    padding-left: 15%;
+  }
+
+  .header {
+    height: 100%;
+  }
+
+  .overview {
+    margin: 0;
+    margin-left: 21%;
+  }
+
+  .techGraphImage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .imageRight {
     max-width: 39%;
   }
