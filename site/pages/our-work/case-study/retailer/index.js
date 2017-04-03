@@ -9,11 +9,11 @@ import ContactUs from '../../../../slices/contact-us-slice';
 
 const cx = classnames.bind(styles);
 
-type CaseStudyRetailerProps = {
+type RetailerCaseStudyProps = {
   contactUsURL: string,
 }
 
-const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
+const RetailerCaseStudy = ({ contactUsURL }: RetailerCaseStudyProps) => (
   <div className={styles.caseStudy}>
     <div className={styles.header}>
       <div className={styles.header__container}>
@@ -244,4 +244,4 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
   </div>
 );
 
-export default CaseStudyRetailer;
+export default RetailerCaseStudy;

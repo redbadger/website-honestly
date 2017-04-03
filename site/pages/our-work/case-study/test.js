@@ -14,4 +14,16 @@ describe('CaseStudyRetailer', () => {
     expect(caseStudyPage.find('WhatToReadNext').length).to.equal(1);
     expect(caseStudyPage.find('FMCaseStudy').length).to.equal(1);
   });
+
+  it('should display the Retailer case study page', () => {
+    const props = {
+      retailer: {
+        slug: 'retailer',
+        title: 'Retailer case study',
+      },
+    };
+    const caseStudyPage = shallow(<CaseStudyRetailer {...props} />);
+    expect(caseStudyPage.find('WhatToReadNext').length).to.equal(1);
+    expect(caseStudyPage.find('RetailerCaseStudy').length).to.equal(1);
+  });
 });
