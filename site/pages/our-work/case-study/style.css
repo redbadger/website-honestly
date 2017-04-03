@@ -1,0 +1,7 @@
+.caseStudy {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+  font-size: 20px;
+  line-height: 27px;
+  background-color: badgerWhite;
+}

@@ -1,13 +1,5 @@
-@value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../../css/_colors.css';
-@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
-
-.caseStudy {
-  composes: fontXS from "../../../../../css/typography/_fonts.css";
-  composes: lightSerif from "../../../../../css/typography/_fonts.css";
-  font-size: 20px;
-  line-height: 27px;
-  background-color: badgerWhite;
-}
+@value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .header {
   height: 100%;
@@ -74,8 +66,8 @@
 }
 
 .header__outcome__percentage {
-  composes: fontM from "../../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../../css/typography/_fonts.css";
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
   display: block;
   border-bottom: 1px dashed badgerBlack;
   padding-bottom: 5px;
@@ -83,8 +75,8 @@
 }
 
 .header__outcome__description {
-  composes: fontXS from "../../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
   font-size: 16px;
 }
 
@@ -103,32 +95,34 @@
 }
 
 .content__mainTitle {
-  composes: fontL from "../../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../../css/typography/_fonts.css";
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
 .content__title {
-  composes: fontM from "../../../../../css/typography/_fonts.css";
-  composes: lightSerif from "../../../../../css/typography/_fonts.css";
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
 .content__redTitle {
-  composes: fontXS from "../../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   display: block;
   color: badgerRed;
 }
 
 .content__secondaryTitle {
-  composes: fontS2 from "../../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
 .content__paragraph {
   margin-bottom: 30px;
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
 }
 
 .content__video_embed {
@@ -162,13 +156,13 @@
 }
 
 .contactBox__heading {
-  composes: fontM2 from "../../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
 .contactBox__button {
-  composes: smallButton from "../../../../../css/_links.css";
+  composes: smallButton from "../../../../css/_links.css";
 }
 
 .listBox {
@@ -177,8 +171,8 @@
 }
 
 .listBox__heading {
-  composes: fontS2 from "../../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   color: badgerRed;
   text-transform: uppercase;
 }
@@ -207,8 +201,8 @@
 .listBox__element--results {
   display: flex;
   justify-content: space-between;
-  composes: fontS2 from "../../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
 }
 
 .overview {
@@ -238,13 +232,13 @@
 
 .quote__content {
   padding-bottom: 15px;
-  composes: serif from "../../../../../css/typography/_fonts.css";
-  composes: fontM2 from "../../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
 }
 
 .quote__attribution {
-  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
-  composes: fontS2 from "../../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
 }
 
 @media mediumScreen {
