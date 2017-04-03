@@ -1,4 +1,5 @@
 import React from 'react';
+import classnames from 'classnames/bind';
 
 import headerSmall from './images/header-small.jpg';
 import headerMedium from './images/header-medium.jpg';
@@ -10,11 +11,9 @@ import allScreens2Image from './images/all-screens-2.jpg';
 
 import styles from './style.css';
 
-type FMCaseStudyProps = {
-  cx: object
-}
+const cx = classnames.bind(styles);
 
-const FMCaseStudy = ({ cx }: FMCaseStudyProps) => (
+const FMCaseStudy = () => (
   <div>
     <div className={styles.header}>
       <div className={styles.header__container}>
@@ -255,7 +254,7 @@ const FMCaseStudy = ({ cx }: FMCaseStudyProps) => (
         <p className={styles.content__video_embed}>
           <iframe src="https://www.youtube.com/embed/eBE3J9XZO20" frameBorder="0" allowFullScreen />
         </p>
-        <div className={styles.content__video_spacer}></div>
+        <div className={styles.content__video_spacer} />
       </div>
     </div>
   </div>
