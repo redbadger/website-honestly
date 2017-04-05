@@ -3,7 +3,7 @@
 
 .header {
   height: 100%;
-  margin-bottom: 10px;
+  background-color: #F8F8F8;
 }
 
 .header__container {
@@ -88,6 +88,7 @@
 
 .content {
   padding-bottom: 40px;
+  background-color: #F8F8F8;
 }
 
 .content__wrapper {
@@ -101,7 +102,7 @@
 }
 
 .content__title {
-  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
   composes: lightSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
@@ -228,6 +229,7 @@
 .quote {
   padding: 0;
   margin-bottom: 30px;
+  margin-left: 55px;
 }
 
 .quote__content {

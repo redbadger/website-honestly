@@ -72,6 +72,12 @@ const FMCaseStudy = () => (
           We began with a two-day hackathon to produce a minimum viable product (MVP) to demonstrate
           our thinking for the new website; a ‘show not tell’ approach.
         </p>
+        <div className={styles.contactBox}>
+          <h2 className={styles.contactBox__heading}>
+            Project in mind?
+          </h2>
+          <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
+        </div>
         <p className={styles.content__paragraph}>
           Working in a collaborative, Lean way with Fortnum & Mason, our talented design team and
           knowledgeable tech team, incorporated a progressive selection of open source technology
@@ -122,13 +128,13 @@ const FMCaseStudy = () => (
           </span>
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
-        <img src={tabletImage2} className={styles.imageLeft} alt="Tablet 2" />
         <p className={styles.content__paragraph}>
           The new Badger-created site was one of the only fully responsive retail sites that was
           live at the time [JG1], which ensures that the customer experience is equally superlative
           no matter what device is used. The site is also built to be scalable and flexible enough
           to support the company’s future ambitions and peaks of online traffic, such as Christmas.
         </p>
+        <img src={tabletImage2} className={styles.imageLeft} alt="Tablet 2" />
         <p className={styles.content__paragraph}>
           As well as being beautiful to look at with a  consistent design and the famous eau de nil
           colour prominent throughout, the new site is fast, slick and easy to navigate - and truly
