@@ -45,7 +45,7 @@ const FMCaseStudy = () => (
           130 different countries, Fortnum’s realised their digital experience didn’t match the
           service delivered by the physical stores, and something needed to change, quickly.
         </p>
-        <img src={tabletImage} className={styles.imageRight} alt="Tablet" />
+        <img src={tabletImage} className={cx('imageLeft', 'floatLeft')} alt="Tablet" />
         <p className={styles.content__paragraph}>
           The old site had an inconsistent design, was inflexible, difficult to update and the
           underlying technology was nearing the end of its life. The out-dated technology meant
@@ -68,11 +68,11 @@ const FMCaseStudy = () => (
           </span>
           Embracing organisational change and implementing cutting-edge technology
         </h2>
-        <p className={styles.content__paragraph}>
+        <p className={cx('content__paragraph', 'content__paragraph__right')}>
           We began with a two-day hackathon to produce a minimum viable product (MVP) to demonstrate
           our thinking for the new website; a ‘show not tell’ approach.
         </p>
-        <div className={styles.contactBox}>
+        <div className={cx('contactBox', 'floatUp')}>
           <h2 className={styles.contactBox__heading}>
             Project in mind?
           </h2>
@@ -128,13 +128,13 @@ const FMCaseStudy = () => (
           </span>
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
-        <p className={styles.content__paragraph}>
+        <p className={cx('content__paragraph', 'content__paragraph__right')}>
           The new Badger-created site was one of the only fully responsive retail sites that was
           live at the time [JG1], which ensures that the customer experience is equally superlative
           no matter what device is used. The site is also built to be scalable and flexible enough
           to support the company’s future ambitions and peaks of online traffic, such as Christmas.
         </p>
-        <img src={tabletImage2} className={styles.imageLeft} alt="Tablet 2" />
+        <img src={tabletImage2} className={cx('imageLeft', 'floatUp')} alt="Tablet 2" />
         <p className={styles.content__paragraph}>
           As well as being beautiful to look at with a  consistent design and the famous eau de nil
           colour prominent throughout, the new site is fast, slick and easy to navigate - and truly

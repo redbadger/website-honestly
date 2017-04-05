@@ -96,6 +96,11 @@
   line-height: 1.2em;
 }
 
+.fontM3 {
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
 .fontS2 {
   font-size: 20px;
   line-height: 1.35em;
@@ -123,6 +128,12 @@
 
   .fontM2 {
     font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  .fontM3 {
+    font-size: 24px;
+    line-height: 1.2em;
   }
 
   .fontS {
@@ -151,5 +162,15 @@
   .fontM {
     font-size: 40px;
     line-height: 1.1em;
+  }
+
+  .fontM2 {
+    font-size: 40px;
+    line-height: 1.1em;
+  }
+
+  .fontM3 {
+    font-size: 30px;
+    line-height: 1.2em;
   }
 }

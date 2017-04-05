@@ -3,7 +3,6 @@
 
 .header {
   height: 100%;
-  background-color: #F8F8F8;
 }
 
 .header__container {
@@ -157,7 +156,8 @@
 }
 
 .contactBox__heading {
-  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  font-size: 24px;
+  line-height: 1.2em;
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
@@ -235,7 +235,7 @@
 .quote__content {
   padding-bottom: 15px;
   composes: serif from "../../../../css/typography/_fonts.css";
-  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: fontM3 from "../../../../css/typography/_fonts.css";
 }
 
 .quote__attribution {
@@ -261,11 +261,15 @@
   }
 
   .content__paragraph {
-    padding-left: 30px;
+    padding-left: 124px;
   }
 
-  .content__video_embed > iframe {
-    padding-left: 5%;
+  .content__paragraph__right {
+    float: right;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    max-width: 48%;
   }
 
   .content__secondaryTitle {
@@ -286,14 +290,15 @@
   }
 
   .contactBox {
-    float: left;
-    margin-right: 30px;
+    max-width: 47%;
+  }
+
+  .floatUp {
   }
 
   .overview {
     display: flex;
-    margin: 0 20px;
-    margin-top: -20px;
+    margin: -20px 0 0 105px;
   }
 
   .listBox {
@@ -311,21 +316,23 @@
   }
 
   .imageLeft {
-    float: left;
-    max-width: 56%;
-    padding-bottom: 3%;
+    max-width: 49%;
+    padding-bottom: 7%;
     margin-right: 3%;
+  }
+
+  .floatLeft {
+    float: left;
+    padding-bottom: 3%;
   }
 
   .allScreensImage {
     padding: 0 20px;
+    margin-top: 7px;
   }
 
   .quote {
-    float: right;
-    max-width: 42%;
-    padding-left: 67px;
-    margin-bottom: 42px;
+    padding-left: 195px;
   }
 }
 
@@ -345,6 +352,12 @@
   .content__secondaryTitle {
     padding-left: 30%;
     padding-right: 10%;
+  }
+
+  .content__paragraph__right {
+    float: none;
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 
   .content__video_embed > iframe {
@@ -375,6 +388,12 @@
     padding-left: 15%;
   }
 
+  .contactBox {
+    float: left;
+    margin-left: 4%;
+    margin-top: -7%;
+  }
+
   .header {
     height: 100%;
   }
@@ -395,6 +414,7 @@
 
   .imageLeft {
     padding-left: 15%;
+    float: left;
   }
 
   .allScreensImage {
@@ -403,6 +423,8 @@
   }
 
   .quote {
-    max-width: 47%;
+    max-width: 36%;
+    float: right;
+    padding-left: 0;
   }
 }
