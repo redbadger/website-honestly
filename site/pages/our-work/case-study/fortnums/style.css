@@ -314,16 +314,15 @@
     margin-right: 50px;
   }
 
-  .floatUp {
-  }
-
   .overview {
     display: flex;
-    margin: -20px 0 0 105px;
+    margin: -20px 0 10px 105px;
   }
 
   .listBox {
     width: 100%;
+    padding: 40px;
+    padding-right: 18px;
   }
 
   .techGraphImage {
@@ -340,9 +339,6 @@
     max-width: 49%;
     padding-bottom: 7%;
     margin-right: 3%;
-  }
-
-  .floatLeft {
     float: left;
     padding-bottom: 3%;
   }
