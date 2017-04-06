@@ -148,11 +148,13 @@
 }
 
 .contactBox {
-  background-color: #ededed;
   height: 162px;
   padding: 33px 37px;
-  text-align: center;
+  max-width: 332px;
+  margin: auto;
   margin-bottom: 30px;
+  text-align: center;
+  background-color: #ededed;
 }
 
 .contactBox__heading {
@@ -168,7 +170,7 @@
 
 .listBox {
   background-color: #fff;
-  padding: 40px 50px;
+  padding: 30px 23px 30px 16px;
 }
 
 .listBox__heading {
@@ -190,13 +192,17 @@
 .listBox__element {
   margin-bottom: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px dashed linesOnWhite;
+
+  background-image: linear-gradient(to right, linesOnWhite 50%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 12px 1px;
+  background-repeat: repeat-x;
 }
 
 .listBox__element:last-child {
-  border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
+  background-image: none;
 }
 
 .listBox__element--results {
@@ -206,9 +212,14 @@
   composes: serif from "../../../../css/typography/_fonts.css";
 }
 
+.listBox__element__label {
+  max-width: 68%;
+}
+
 .overview {
   box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
-  margin-bottom: 30px;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 
 .imageRight,
@@ -241,6 +252,14 @@
 .quote__attribution {
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   composes: fontS2 from "../../../../css/typography/_fonts.css";
+}
+
+.showSmall {
+  display: block;
+}
+
+.showMedium {
+  display: none;
 }
 
 @media mediumScreen {
@@ -291,6 +310,8 @@
 
   .contactBox {
     max-width: 47%;
+    float: left;
+    margin-right: 50px;
   }
 
   .floatUp {
@@ -333,6 +354,14 @@
 
   .quote {
     padding-left: 195px;
+  }
+
+  .showSmall {
+    display: none;
+  }
+
+  .showMedium {
+    display: block;
   }
 }
 

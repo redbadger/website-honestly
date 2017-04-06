@@ -68,11 +68,17 @@ const FMCaseStudy = () => (
           </span>
           Embracing organisational change and implementing cutting-edge technology
         </h2>
-        <p className={cx('content__paragraph', 'content__paragraph__right')}>
+        <div className={cx('contactBox', 'showMedium')}>
+          <h2 className={styles.contactBox__heading}>
+            Project in mind?
+          </h2>
+          <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
+        </div>
+        <p className={styles.content__paragraph}>
           We began with a two-day hackathon to produce a minimum viable product (MVP) to demonstrate
           our thinking for the new website; a ‘show not tell’ approach.
         </p>
-        <div className={cx('contactBox', 'floatUp')}>
+        <div className={cx('contactBox', 'showSmall')}>
           <h2 className={styles.contactBox__heading}>
             Project in mind?
           </h2>
@@ -153,7 +159,7 @@ const FMCaseStudy = () => (
         <div className={styles.listBox}>
           <ul>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Improved conversion in the first week of release
               </div>
               <div>
@@ -161,15 +167,15 @@ const FMCaseStudy = () => (
               </div>
             </li>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Increase in average order value in the first week of release
               </div>
-              <div>
+              <div className={styles.listBox__element__label}>
                 +5%
               </div>
             </li>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Total sales achieving growth year on year
               </div>
               <div>
@@ -177,7 +183,7 @@ const FMCaseStudy = () => (
               </div>
             </li>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Increase in mobile visits up year on year
               </div>
               <div>
@@ -200,7 +206,7 @@ const FMCaseStudy = () => (
         <div className={styles.listBox}>
           <ul>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Mobile Conversion rate
               </div>
               <div>
@@ -208,7 +214,7 @@ const FMCaseStudy = () => (
               </div>
             </li>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Tablet visits
               </div>
               <div>
@@ -216,7 +222,7 @@ const FMCaseStudy = () => (
               </div>
             </li>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Tablet Conversion
               </div>
               <div>
@@ -224,7 +230,7 @@ const FMCaseStudy = () => (
               </div>
             </li>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 New customers conversion
               </div>
               <div>
@@ -232,7 +238,7 @@ const FMCaseStudy = () => (
               </div>
             </li>
             <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
+              <div className={styles.listBox__element__label}>
                 Reduction in calls to the Customer Service team
               </div>
               <div>
