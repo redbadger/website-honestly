@@ -19,6 +19,7 @@ const FMCaseStudy = () => (
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
           <picture>
+            <div className={styles.helper}></div>
             <source srcSet={headerMedium} media="(min-width: 690px)" />
             <source srcSet={headerLarge} media="(min-width: 980px)" />
             <img src={headerSmall} alt="Fortnum & Mason basket contents" className={styles.header__image} />

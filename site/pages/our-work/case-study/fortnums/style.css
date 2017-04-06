@@ -452,4 +452,15 @@
     float: right;
     padding-left: 0;
   }
+
+  .header__image {
+    width: 100%;
+    position: relative;
+    top: -68%;
+  }
+
+  .header__imageContainer > picture {
+    width: 100%;
+    max-height: 456px;
+  }
 }
