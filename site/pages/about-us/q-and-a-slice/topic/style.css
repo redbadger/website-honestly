@@ -1,0 +1,6 @@
+.topic__heading {
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,21 @@
+@value badgerBlack, badgerRed, linesOnWhite from "../../../../css/_colors.css";
+
+.category {
+  border-top: 2px solid badgerBlack;
+  padding-top: 20px;
+}
+
+.category__title {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  color: badgerRed;
+  text-transform: uppercase;
+}
+
+.category__element {
+  border-top: 2px solid linesOnWhite;
+}
+
+.category__element:first-child {
+  border-top: 0;
+}

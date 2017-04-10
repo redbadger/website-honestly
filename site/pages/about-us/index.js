@@ -4,6 +4,7 @@ import TimelineSlice from './timeline-slice';
 import PrinciplesSlice from './principles-slice';
 import SocialSlice from './social-slice';
 import AwardsSlice from './awards-slice';
+import QAndASlice from './q-and-a-slice';
 import ContactUs from '../../slices/contact-us-slice';
 import type { Tweet, InstagramPost } from '../../types/';
 
@@ -21,6 +22,7 @@ const AboutUs = ({ contactUsURL, tweets, instagramPosts }: AboutUsProps) => {
       <ContactUs postURL={contactUsURL} yellow={true} />
       <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
       <AwardsSlice />
+      <QAndASlice />
     </div>
   );
 };
