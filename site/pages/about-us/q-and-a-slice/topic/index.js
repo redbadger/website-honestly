@@ -1,12 +1,19 @@
+// @flow
 import React from 'react';
 
 import styles from './style.css';
 
-const Topic = () => (
+export type TopicProps = {
+  question: string,
+  answer: string,
+}
+
+const Topic = ({ topic: { question, answer } }: { topic: TopicProps }) => (
   <div>
     <h3 className={styles.topic__heading}>
-      What do Red Badger do?
+      {question}
     </h3>
+    <p>{answer}</p>
   </div>
 );
 
