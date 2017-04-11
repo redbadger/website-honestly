@@ -1,6 +1,46 @@
+@value badgerBlack from "../../../../css/_colors.css";
+
+.topic__question {
+  display: flex;
+  justify-content: space-between;
+}
+
 .topic__heading {
   composes: serif from "../../../../css/typography/_fonts.css";
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   padding-top: 20px;
   padding-bottom: 20px;
+  display: block;
+  width: 100%;
+}
+
+.topic__more {
+  display: block;
+  width: 40px;
+}
+
+.topic__plus:before {
+  content: '';
+  width: 25px;
+  height: 1px;
+  border-top: 5px solid badgerBlack;
+  display: block;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 3px;
+}
+
+.topic__plus:after {
+  content: '';
+  width: 1px;
+  height: 25px;
+  border-right: 5px solid badgerBlack;
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.topic__answer {
+  display: none;
 }
