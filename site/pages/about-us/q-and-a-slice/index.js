@@ -3,7 +3,7 @@ import Category from './category';
 
 import styles from './style.css';
 
-const categories = [
+const data = [
   {
     name: 'Company',
     topics: [
@@ -57,13 +57,10 @@ const categories = [
   },
 ];
 
-
 const QAndASlice = () => (
   <div className={styles.QAndA}>
     <h2 className={styles.QAndA__heading}>Answers to common questions</h2>
-    <Category />
-    <Category />
-    <Category />
+    {data.map(category => <Category category={category} />) }
   </div>
 );
 
