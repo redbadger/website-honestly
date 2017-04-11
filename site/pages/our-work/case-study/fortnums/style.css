@@ -369,6 +369,7 @@
   }
 
   .content__wrapper {
+    position: relative;
     padding-left: 0;
     padding-right: 0;
   }
@@ -414,8 +415,11 @@
   }
 
   .contactBox {
-    float: left;
-    margin-left: 4%;
+    float: none;
+    position: absolute;
+    right: 70%;
+    width: 36%;
+    max-width: 285px;
   }
 
   .header {
