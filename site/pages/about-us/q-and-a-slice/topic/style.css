@@ -24,7 +24,7 @@
 
 .topic__plus:before {
   content: '';
-  width: 25px;
+  width: 20px;
   height: 1px;
   border-top: 5px solid badgerBlack;
   display: block;
@@ -36,17 +36,17 @@
 .topic__plus:after {
   content: '';
   width: 1px;
-  height: 25px;
+  height: 20px;
   border-right: 5px solid badgerBlack;
   display: block;
   position: absolute;
-  top: 20px;
-  right: 10px;
+  top: 22px;
+  right: 8px;
 }
 
 .topic__minus:before {
   content: '';
-  width: 25px;
+  width: 20px;
   height: 1px;
   border-top: 5px solid badgerBlack;
   display: block;
