@@ -16,7 +16,10 @@
 
 .topic__more {
   display: block;
+  margin: 0;
+  padding: 0;
   width: 40px;
+  position: relative;
 }
 
 .topic__plus:before {
@@ -26,8 +29,8 @@
   border-top: 5px solid badgerBlack;
   display: block;
   position: absolute;
-  margin-top: 30px;
-  margin-left: 3px;
+  top: 30px;
+  right: 0;
 }
 
 .topic__plus:after {
@@ -37,10 +40,27 @@
   border-right: 5px solid badgerBlack;
   display: block;
   position: absolute;
-  margin-top: 20px;
-  margin-left: 12px;
+  top: 20px;
+  right: 10px;
 }
 
-.topic__answer {
+.topic__minus:before {
+  content: '';
+  width: 25px;
+  height: 1px;
+  border-top: 5px solid badgerBlack;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.topic__answer--visible {
+  padding-bottom: 20px;
+  display: block;
+}
+
+.topic__answer--hidden {
+  padding-bottom: 20px;
   display: none;
 }
