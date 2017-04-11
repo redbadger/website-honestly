@@ -1,14 +1,24 @@
 import React from 'react';
 import classnames from 'classnames/bind';
+import Social from '../../../../components/social';
 import styles from './style.css';
 
 import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
+import metaImage from './images/meta-image.png';
 
 const cx = classnames.bind(styles);
 
+const social = {
+  title: 'The proof is in the pudding',
+  description: 'Next generation platform for retail giant cleared five-year backlog in just eight months',
+  metaImage,
+  url: 'https://red-badger.com/our-work/case-study/retailer',
+};
+
 const RetailerCaseStudy = () => (
   <div className={styles.caseStudy}>
+    <Social {...social} />
     <div className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
