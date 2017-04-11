@@ -36,29 +36,27 @@ const FMCaseStudy = () => (
           <span className={styles.content__redTitle}>
             {"Let's make things better."}
           </span>
-          Scaling the site, decreasing drop-outs and bringing the in-store experience, online
+          Scaling the site, decreasing drop-outs and bringing the in-store experience online
         </h2>
         <p className={styles.content__paragraph}>
-          When you think of Fortnum & Mason, the iconic eau di nil colour, the beautiful store
-          layout, amazing customer service and the incredibly high quality of products, springs to
-          mind. This unrivalled reputation, held over 300 years, has always been led by the store
-          experience. But with more and more shoppers heading online to make purchases from over
-          130 different countries, Fortnum’s realised their digital experience didn’t match the
-          service delivered by the physical stores, and something needed to change, quickly.
+          Fortnum & Mason knew its digital offer didn’t match the premium experience or
+          service being executed by its stores. With more and more shoppers heading online
+          to make purchases from over 130 different countries, it realised something
+          needed to change quickly.
         </p>
         <img src={tabletImage} className={cx('imageLeft', 'floatLeft')} alt="Tablet" />
         <p className={styles.content__paragraph}>
-          The old site had an inconsistent design, was inflexible, difficult to update and the
-          underlying technology was nearing the end of its life. The out-dated technology meant
-          that high levels of customers were dropping out at certain stages in the buying process.
-          For example, the presentation of delivery options was confusing and if one element of a
-          customer’s order was unavailable, it could result in the entire order not going out for
-          delivery.
-        </p>
-        <p className={styles.content__paragraph}>
-          In addition, this site needed to solve the above problems as well as handle complex
-          orders and delivery to more than 130 countries. A scalable, highly flexible new site was
-           needed, and very quickly to avoid more lost revenue.
+          The in-store experience at Fortnum’s embodies elegance and creativity. It
+          displays its renowned, high quality products in beautifully curated layouts and
+          delivers consistent, amazing customer service.  In total contrast, the old
+          website had an inconsistent design, was inflexible, and difficult to update. The
+          old technology it used meant that revenue was being lost due to high levels of
+          customer drop-out at certain stages in the buying process. For example, the
+          presentation of delivery options was confusing and if one element of a
+          customer’s order was unavailable, it could result in the entire order not going
+          out for delivery. A scalable, highly flexible new build was needed, one that
+          could replicate the elegance of Fortnum’s in-store experience and handle complex
+          orders and global deliveries.
         </p>
       </div>
       <img src={allScreensImage} className={styles.allScreensImage} alt="All screens" />
@@ -76,7 +74,8 @@ const FMCaseStudy = () => (
           <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
         </div>
         <p className={styles.content__paragraph}>
-          We began with a two-day hackathon to produce a minimum viable product (MVP) to demonstrate
+          We began by throwing the RFP process out of the window and implementing a
+          two-day hackathon to produce a minimum viable product (MVP) that demonstrated
           our thinking for the new website; a ‘show not tell’ approach.
         </p>
         <div className={cx('contactBox', 'showSmall')}>
@@ -86,15 +85,16 @@ const FMCaseStudy = () => (
           <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
         </div>
         <p className={styles.content__paragraph}>
-          Working in a collaborative, Lean way with Fortnum & Mason, our talented design team and
-          knowledgeable tech team, incorporated a progressive selection of open source technology
-          including Spree Commerce, Wombat and Facebook’s React.
+          Working in a collaborative, Lean way with Fortnum & Mason, our talented design
+          team and knowledgeable tech team, incorporated a progressive selection of open
+          source technology including Spree Commerce, Wombat and Facebook’s React.
         </p>
         <p className={styles.content__paragraph}>
-          We also designed, implemented and managed the Cloud-based architecture upon which the new
-          platform runs. This design allows for a continuous delivery model, meaning that tiny
-          incremental changes are constantly tested and released to production multiple times a day
-          (instead of a few times a year), helping to bid farewell to the age of big bang releases.
+          We also designed, implemented and managed the Cloud-based architecture which
+          the new platform runs on. This design allows for a continuous delivery model,
+          meaning that tiny incremental changes are constantly tested and released to
+          production multiple times a day (instead of a few times a year), helping to bid
+          farewell to the age of big-bang releases.
         </p>
         <div className={styles.quote}>
           <p className={styles.quote__content}>
@@ -106,25 +106,26 @@ const FMCaseStudy = () => (
           </p>
         </div>
         <p className={styles.content__paragraph}>
-          The process and technology had the customer at the heart of the project but the key to the
-          success was engaging Fortnum’s customers to help drive the direction of the design and
-          development of the site by allowing them to provide feedback directly to the team.
-          Throughout the project, our design team ran guerrilla testing in the flagship store in
-          Piccadilly to get customer feedback on the look and feel of the site. The in-store
-          historian was also brought into the project to ensure the new design was as aligned to
-          the brand’s heritage as possible.
+          However, key to this project’s success was engaging Fortnum’s customers from the
+          start, to help drive the direction of the design and development of the site.
+          This was implemented by our design team who ran guerrilla testing in the
+          flagship store in Piccadilly, enabling them to get customer feedback in
+          real-time on the look and feel of the site  Fortnum’s in-store historian was
+          also brought into the project to ensure the new design was as aligned to the
+          brand’s heritage as possible.
         </p>
         <p className={styles.content__paragraph}>
-          Once launched, the beta site ran in parallel to the old site to avoid disruption and a
-          number of Fortnum’s customers were gradually switched over to the new site over a
-          two-month period. New site visitors were able to provide feedback to enable further
-          customer-centric amends and builds.
+          Once launched, the beta site ran in parallel with the old site to avoid
+          disruption and a number of Fortnum’s customers were gradually switched over to
+          the new site over a two-month period. New site visitors were able to provide
+          feedback to enable further customer-centric amends and builds.
         </p>
         <p className={styles.content__paragraph}>
-          These changes meant that when the full go-live launch took place the site already had
-          features and processes in place that made sense to the user, not just the business. This
-          approach also meant that overall the project has achieved a complete re-platform and
-          design from concept through to delivery, in just eight months and for under £1.3 milllion.
+          These changes meant that when the full go-live launch took place the site
+          already had features and processes in place that made sense to the user, not
+          just the business. This approach also meant that overall, the project achieved a
+          complete re-platform and design from concept through to delivery, in just eight
+          months and for under £1.3 million.
         </p>
       </div>
       <img src={allScreens2Image} className={styles.allScreensImage} alt="All screens" />
@@ -137,24 +138,23 @@ const FMCaseStudy = () => (
         </h2>
         <img src={tabletImage2} className={cx('imageLeft', 'showMedium')} alt="Tablet 2" />
         <p className={styles.content__paragraph}>
-          The new Badger-created site was one of the only fully responsive retail sites that was
-          live at the time [JG1], which ensures that the customer experience is equally superlative
-          no matter what device is used. The site is also built to be scalable and flexible enough
-          to support the company’s future ambitions and peaks of online traffic, such as Christmas.
+          The new Red Badger-created site for Fortnum’s is fully responsive and was one of
+          the only ones to be so at time of delivery. This has ensured that the customer
+          experience is equally superlative no matter what device is used. The site is
+          also built to be scalable and flexible enough to support the company’s future
+          ambitions and peaks in online traffic and sales including Christmas.
         </p>
         <img src={tabletImage2} className={cx('imageLeft', 'showSmall')} alt="Tablet 2" />
         <p className={styles.content__paragraph}>
-          As well as being beautiful to look at with a  consistent design and the famous eau de nil
-          colour prominent throughout, the new site is fast, slick and easy to navigate - and truly
-          responsive, delivering optimal layouts across every view port.
+          The new site re-enforces the brand experience that customers of Fortnum & Mason
+          expect, it is beautiful to look at, with a consistent design and Fortnum’s
+          famous eau de nil colour prominent throughout.  It is also fast, slick and easy
+          to navigate - and truly responsive, delivering optimal layouts across every view
+          port.
         </p>
         <p className={styles.content__paragraph}>
-          The site reinforces the brand experience that Fortnum & Mason customers expect and since
-          it went fully live it has delivered incredible sales uplift (38% over the Christmas 2015
-          period) and dramatically increased conversion.
-        </p>
-        <p className={styles.content__paragraph}>
-          The results in the first few weeks were striking:
+          The success of the site can be seen by results that were achieved in just the
+          first few weeks of launch:
         </p>
       </div>
       <div className={styles.overview}>
@@ -197,8 +197,10 @@ const FMCaseStudy = () => (
       </div>
       <div className={styles.content__wrapper}>
         <p className={styles.content__paragraph}>
-          The drop-out rate at the delivery options stage was previously 18.8% and has now been
-          reduced to 12.9% (based figures from 17–25th February 2014 vs 2015).
+          Since it went fully live it has delivered an incredible sales uplift (38% over
+          the Christmas 2015 period) and dramatically increased conversion with drop-out
+          rate at the delivery options stage reduced from 18.8% to 12.9% (based figures
+          from 17- 25th February 2014 vs 2015.)
         </p>
         <p className={styles.content__paragraph}>
           Other key stats year on year*:
@@ -259,11 +261,12 @@ const FMCaseStudy = () => (
           specific items, for example a 78% increase in grocery sales.
         </p>
         <p className={styles.content__paragraph}>
-          Further to the this, fortnumandmason.com won a BIMA Award for ‘Best Web Design & Build’
-          and an eCommerce Award for ‘Best eCommerce New Design or Re-Design (Under 1 Year)’ in
-          2015. The project was also nominated for the UK Digital Experience Awards in the Retail
-          sector award and as ‘Best Use of Website to Build Your Brand’. It was also nominated at
-          the Retail Week Tech and Ecommerce Awards in the ‘Best Customer Experience’ category.
+          Further to the this, fortnumandmason.com won a BIMA Award for ‘Best Web Design &
+          Build’ and an eCommerce Award for ‘Best eCommerce New Design or Re-Design (Under
+          1 Year)’ in 2015. The project was also nominated for the UK Digital Experience
+          Awards in the Retail sector award and as ‘Best Use of Website to Build Your
+          Brand’. It was also nominated at the Retail Week Tech and Ecommerce Awards in
+          the ‘Best Customer Experience’ category.
         </p>
         <p className={styles.content__video_embed}>
           <iframe src="https://www.youtube.com/embed/eBE3J9XZO20" frameBorder="0" allowFullScreen />
