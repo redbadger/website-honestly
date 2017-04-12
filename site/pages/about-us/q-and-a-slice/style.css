@@ -1,4 +1,5 @@
 @value badgerBlack, badgerWhite from "../../../css/_colors.css";
+@value largeScreen from "../../../css/_sizes.css";
 
 .QAndA {
   composes: fontXS from "../../../css/typography/_fonts.css";
@@ -14,4 +15,13 @@
   composes: serif from "../../../css/typography/_fonts.css";
   composes: fontL from "../../../css/typography/_fonts.css";
   padding-bottom: 20px;
+}
+
+@media largeScreen {
+  .QAndA__container {
+    padding-left: 140px;
+    padding-right: 140px;
+    max-width: 1200px;
+    margin: auto;
+  }
 }

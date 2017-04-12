@@ -59,8 +59,10 @@ const data = [
 
 const QAndASlice = () => (
   <div className={styles.QAndA}>
-    <h2 className={styles.QAndA__heading}>Answers to common questions</h2>
-    {data.map(category => <Category category={category} />) }
+    <div className={styles.QAndA__container}>
+      <h2 className={styles.QAndA__heading}>Answers to common questions</h2>
+      {data.map(category => <Category category={category} />) }
+    </div>
   </div>
 );
 

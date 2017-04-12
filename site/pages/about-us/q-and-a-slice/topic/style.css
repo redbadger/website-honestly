@@ -1,5 +1,5 @@
 @value badgerBlack from "../../../../css/_colors.css";
-@value mediumScreen from "../../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .topic__question {
   display: flex;
@@ -75,10 +75,20 @@
 
 @media mediumScreen {
   .topic__more {
-    margin-left: 125px;
+    margin-left: 105px;
   }
 
   .topic__answer {
     margin-right: 125px;
+  }
+}
+
+@media largeScreen {
+  .topic__more {
+    margin-left: 174px;
+  }
+
+  .topic__answer {
+    margin-right: 240px;
   }
 }

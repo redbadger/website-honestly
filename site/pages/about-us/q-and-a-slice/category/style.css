@@ -1,5 +1,5 @@
 @value badgerBlack, badgerRed, linesOnWhite from "../../../../css/_colors.css";
-@value mediumScreen from "../../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .category {
   display: flex;
@@ -37,5 +37,11 @@
   .category__title {
     padding-top: 20px;
     width: 120px;
+  }
+}
+
+@media largeScreen {
+  .category__title {
+    width: 235px;
   }
 }
