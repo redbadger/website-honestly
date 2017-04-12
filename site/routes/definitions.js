@@ -98,7 +98,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ retailer }) => retailer.title,
     key: 'retailerCaseStudy',
     route: 'our-work/case-study/{retailer}',
-    stateToProps: ({ caseStudies }, params = {}) => ({
+    stateToProps: ({ caseStudies, contactUsURL }, params = {}) => ({
+      contactUsURL,
       retailer: caseStudies.find(caseStudy => caseStudy.slug === params.retailer),
     }),
     gen: state => state.caseStudies.map(({ slug }) => ({ retailer: slug })),
