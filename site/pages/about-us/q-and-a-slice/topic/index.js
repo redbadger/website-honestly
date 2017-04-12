@@ -1,7 +1,9 @@
 // @flow
 import React, { Component } from 'react';
+import classnames from 'classnames/bind';
 import styles from './style.css';
 
+const cx = classnames.bind(styles);
 
 export type TopicProps = {
   question: string,
@@ -54,7 +56,7 @@ class Topic extends Component {
           </div>
         </a>
         <p
-          className={open ? styles['topic__answer--visible'] : styles['topic__answer--hidden']}
+          className={cx('topic__answer', open ? 'topic__answer--visible' : 'topic__answer--hidden')}
         >
           {answer}
         </p>

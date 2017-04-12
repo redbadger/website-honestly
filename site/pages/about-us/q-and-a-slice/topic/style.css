@@ -1,4 +1,5 @@
 @value badgerBlack from "../../../../css/_colors.css";
+@value mediumScreen from "../../../../css/_sizes.css";
 
 .topic__question {
   display: flex;
@@ -19,7 +20,7 @@
   margin: 0;
   padding: 0;
   width: 20px;
-  margin-left: 20px;
+  margin-left: 28px;
   position: relative;
   background: none;
   border: 0;
@@ -59,12 +60,25 @@
   right: 0;
 }
 
-.topic__answer--visible {
+.topic__answer {
+  margin-right: 48px;
   padding-bottom: 20px;
+}
+
+.topic__answer--visible {
   display: block;
 }
 
 .topic__answer--hidden {
-  padding-bottom: 20px;
   display: none;
+}
+
+@media mediumScreen {
+  .topic__more {
+    margin-left: 125px;
+  }
+
+  .topic__answer {
+    margin-right: 125px;
+  }
 }

@@ -9,7 +9,7 @@ const data = [
     topics: [
       {
         question: 'What do Red Badger do?',
-        answer: 'lorem ipsum',
+        answer: 'This is totally dependent on your requirements, but Red Badger’s value is in the total cost of ownership, i.e we have proven time and again that we always deliver and speed projects to market so total costs always end up being less than using a competitor whose day-rate might be cheaper, but would take longer.',
       },
       {
         question: 'What sets Red Badger apart from competitors',

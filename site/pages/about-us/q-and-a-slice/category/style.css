@@ -1,6 +1,9 @@
 @value badgerBlack, badgerRed, linesOnWhite from "../../../../css/_colors.css";
+@value mediumScreen from "../../../../css/_sizes.css";
 
 .category {
+  display: flex;
+  flex-wrap: wrap;
   border-top: 2px solid badgerBlack;
   padding-top: 20px;
 }
@@ -10,6 +13,11 @@
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   color: badgerRed;
   text-transform: uppercase;
+  width: 100%;
+}
+
+.category__questionList {
+  width: 100%;
 }
 
 .category__element {
@@ -18,4 +26,16 @@
 
 .category__element:first-child {
   border-top: 0;
+}
+
+@media mediumScreen {
+  .category {
+    flex-wrap: nowrap;
+    padding-top: 0;
+  }
+
+  .category__title {
+    padding-top: 20px;
+    width: 120px;
+  }
 }
