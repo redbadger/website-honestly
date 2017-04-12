@@ -254,11 +254,11 @@ const FMCaseStudy = () => (
       </div>
       <div className={styles.content__wrapper}>
         <p className={styles.content__paragraph}>
-          * Statistics are based on launch week to 8th March and same date range last year.
-        </p>
-        <p className={styles.content__paragraph}>
           With the site now being much easier to navigate there has been an increase in sales of
           specific items, for example a 78% increase in grocery sales.
+        </p>
+        <p className={styles.content__paragraph}>
+          * Statistics are based on launch week to 8th March and same date range last year.
         </p>
         <p className={styles.content__paragraph}>
           Further to the this, fortnumandmason.com won a BIMA Award for ‘Best Web Design &
