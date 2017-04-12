@@ -39,17 +39,20 @@ class Topic extends Component {
     const open = this.state.open;
     return (
       <div>
-        <div className={styles.topic__question}>
+        <a
+          className={styles.topic__question}
+          tabindex={0}
+          onClick={this.handleClick}
+        >
           <h3 className={styles.topic__heading}>
             {question}
           </h3>
-          <button
+          <div
             className={styles.topic__more}
-            onClick={this.handleClick}
           >
             {this.answerToggle()}
-          </button>
-        </div>
+          </div>
+        </a>
         <p
           className={open ? styles['topic__answer--visible'] : styles['topic__answer--hidden']}
         >

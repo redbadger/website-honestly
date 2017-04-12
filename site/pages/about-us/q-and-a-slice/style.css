@@ -1,9 +1,10 @@
-@value badgerBlack from "../../../css/_colors.css";
+@value badgerBlack, badgerWhite from "../../../css/_colors.css";
 
 .QAndA {
   composes: fontXS from "../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../css/typography/_fonts.css";
   padding: 20px;
+  background-color: badgerWhite;
   color: badgerBlack;
   font-size: 20px;
   line-height: 27px;
