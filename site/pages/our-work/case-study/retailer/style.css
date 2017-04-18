@@ -148,6 +148,7 @@
   margin-bottom: 30px;
 }
 
+
 .contactBox__button {
   composes: smallButton from "../../../../css/_links.css";
 }
@@ -292,6 +293,11 @@
 
   .contactBox {
     width: 26.1%;
+  }
+
+  .contactBox__heading {
+    font-size: 40px;
+    line-height: 1.1em;
   }
 
   .header {
