@@ -10,7 +10,7 @@ const QAndASlice = ({ qAndAs }: { qAndAs: Array<CategoryProps> }) => (
       <h2 className={styles.QAndA__heading}>Answers to common questions</h2>
       <ul>
         {qAndAs.map(category => (
-          <li>
+          <li key={category.name}>
             <Category category={category} />
           </li>
         ))}

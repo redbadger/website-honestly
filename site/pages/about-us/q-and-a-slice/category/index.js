@@ -17,7 +17,7 @@ const Category = ({ category }: { category: CategoryProps }) => (
     </h3>
     <ul className={styles.category__questionList}>
       {category.topics.map(topic => (
-        <li className={styles.category__element}>
+        <li key={topic.question} className={styles.category__element}>
           <Topic
             question={topic.question}
             answer={topic.answer}
