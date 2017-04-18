@@ -26,7 +26,7 @@ function CaseStudies() {
           <Link
             className={styles.imageLink}
             to="retailerCaseStudy"
-            navigationData={{ retailer: 'fortnum-and-mason' }}
+            navigationData={{ slug: 'fortnum-and-mason' }}
           >
             <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
           </Link>
@@ -34,7 +34,7 @@ function CaseStudies() {
             <Link
               className={styles.imageLink}
               to="retailerCaseStudy"
-              navigationData={{ retailer: 'fortnum-and-mason' }}
+              navigationData={{ slug: 'fortnum-and-mason' }}
             >
               Fortnum & Mason
             </Link>
@@ -42,7 +42,7 @@ function CaseStudies() {
               <Link
                 className={styles.caseStudyTitle}
                 to="retailerCaseStudy"
-                navigationData={{ retailer: 'fortnum-and-mason' }}
+                navigationData={{ slug: 'fortnum-and-mason' }}
               >
                 Elegant e-commerce in eight months
               </Link>
@@ -50,7 +50,7 @@ function CaseStudies() {
             <Link
               className={styles.caseStudyDescription}
               to="retailerCaseStudy"
-              navigationData={{ retailer: 'fortnum-and-mason' }}
+              navigationData={{ slug: 'fortnum-and-mason' }}
             >
               Improving online and mobile conversion rates on the new fortnumandmason.com
               site with great customer experience and innovative tech.

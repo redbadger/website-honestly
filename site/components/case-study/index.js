@@ -31,7 +31,7 @@ const CaseStudy = () => (
       <div className={styles.figuresContainer}>
         <Link
           to="retailerCaseStudy"
-          navigationData={{ retailer: 'fortnum-and-mason' }}
+          navigationData={{ slug: 'fortnum-and-mason' }}
           className={styles.figureLink}
           title="Fortnum and mason case study"
         >

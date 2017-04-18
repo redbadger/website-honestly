@@ -32,13 +32,6 @@ const getSiteState = () => (
     badgers,
     badger: toDict(badgers, b => b.slug),
     categories,
-    caseStudies: [{
-      slug: 'fortnum-and-mason',
-      title: 'Fortnum & Mason',
-    }, {
-      slug: 'retailer',
-      title: 'Retailer case study',
-    }],
   }))
 );
 

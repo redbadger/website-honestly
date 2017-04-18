@@ -14,6 +14,14 @@ type RouteDefinition = {|
   gen?: (state: Object) => Array<Object>,
 |};
 
+const caseStudies = [{
+  slug: 'fortnum-and-mason',
+  title: 'Fortnum & Mason',
+}, {
+  slug: 'retailer',
+  title: 'Retailer case study',
+}];
+
 export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: 'Home',
@@ -97,12 +105,12 @@ export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: ({ retailer }) => retailer.title,
     key: 'retailerCaseStudy',
-    route: 'our-work/case-study/{retailer}',
-    stateToProps: ({ caseStudies, contactUsURL }, params = {}) => ({
+    route: 'our-work/case-study/{slug}',
+    stateToProps: ({ contactUsURL }, params = {}) => ({
       contactUsURL,
-      retailer: caseStudies.find(caseStudy => caseStudy.slug === params.retailer),
+      retailer: caseStudies.find(caseStudy => caseStudy.slug === params.slug),
     }),
-    gen: state => state.caseStudies.map(({ slug }) => ({ retailer: slug })),
+    gen: () => caseStudies.map(({ slug }) => ({ slug })),
   },
   {
     title: 'Not found',

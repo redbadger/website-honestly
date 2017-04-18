@@ -5,7 +5,6 @@ describe('site/compiler', () => {
   const baseState = {
     jobs: [],
     job: {},
-    caseStudies: [],
     contactUsURL: '',
     featuredBlogPosts: [],
     events: [],
@@ -35,7 +34,7 @@ describe('site/compiler', () => {
         badger: { [a.slug]: a },
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(13);
+      expect(routes.length).to.equal(15);
       expect(routes[9].filePath).to.equal('about-us/people/index.html');
       expect(routes[10].filePath).to.equal('about-us/people/category/engineering/index.html');
       expect(routes[11].filePath).to.equal('about-us/people/category/leadership/index.html');
@@ -71,7 +70,7 @@ describe('site/compiler', () => {
           categories,
         }, createStateNavigator());
 
-        expect(routes.length).to.equal(15);
+        expect(routes.length).to.equal(17);
         expect(routes[9].filePath).to.equal('about-us/people/index.html');
         expect(routes[10].filePath).to.equal('about-us/people/category/engineering/index.html');
         expect(routes[11].filePath).to.equal('about-us/people/category/leadership/index.html');
@@ -94,7 +93,7 @@ describe('site/compiler', () => {
           categories,
         }, createStateNavigator());
 
-        expect(routes.length).to.equal(12);
+        expect(routes.length).to.equal(14);
         expect(routes[9].filePath).to.equal('about-us/people/index.html');
         expect(routes[10].filePath).to.equal('about-us/people/category/ux-design/index.html');
       });
@@ -131,7 +130,7 @@ describe('site/compiler', () => {
           categories,
         }, createStateNavigator());
 
-        expect(routes.length).to.equal(35);
+        expect(routes.length).to.equal(37);
         expect(routes[9].filePath).to.equal('about-us/people/index.html');
         expect(routes[10].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
         expect(routes[11].filePath).to.equal('about-us/people/category/engineering/index.html');
@@ -161,7 +160,7 @@ describe('site/compiler', () => {
           categories,
         }, createStateNavigator());
 
-        expect(routes.length).to.equal(32);
+        expect(routes.length).to.equal(34);
         expect(routes[9].filePath).to.equal('about-us/people/index.html');
         expect(routes[10].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
         expect(routes[11].filePath).to.equal('about-us/people/category/engineering/index.html');
@@ -190,7 +189,7 @@ describe('site/compiler', () => {
         categories,
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(30);
+      expect(routes.length).to.equal(32);
       expect(routes[9].filePath).to.equal('about-us/people/index.html');
       expect(routes[10].filePath).to.equal('about-us/people/category/engineering/index.html');
     });
@@ -220,7 +219,7 @@ describe('site/compiler', () => {
         categories,
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(59);
+      expect(routes.length).to.equal(61);
       expect(routes[9].filePath).to.equal('about-us/people/index.html');
       expect(routes[10].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
       expect(routes[11].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
@@ -266,7 +265,7 @@ describe('site/compiler', () => {
         categories,
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(58);
+      expect(routes.length).to.equal(60);
       expect(routes[9].filePath).to.equal('about-us/people/index.html');
       expect(routes[10].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
       expect(routes[11].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
@@ -295,7 +294,7 @@ describe('site/compiler', () => {
         badger: { [a.slug]: a },
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(12);
+      expect(routes.length).to.equal(14);
       expect(routes[11].filePath).to.equal('about-us/people/alex/index.html');
     });
   });
@@ -326,7 +325,7 @@ describe('site/compiler', () => {
         },
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(13);
+      expect(routes.length).to.equal(15);
       expect(routes[11].filePath).to.equal('about-us/people/alex/index.html');
       expect(routes[12].filePath).to.equal('about-us/people/sari/index.html');
     });

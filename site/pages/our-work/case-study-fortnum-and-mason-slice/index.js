@@ -10,7 +10,7 @@ export default () => (
   <div className={styles.caseStudyContainer} >
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer} >
-        <Link to="retailerCaseStudy" navigationData={{ retailer: 'fortnum-and-mason' }}>
+        <Link to="retailerCaseStudy" navigationData={{ slug: 'fortnum-and-mason' }}>
           <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
           <h2 className={styles.caseStudyTextContainerHeader}>
             Fortnum & Mason’s new, elegant website increases revenue and conversion rates
@@ -24,7 +24,7 @@ export default () => (
           </div>
         </Link>
       </div>
-      <Link to="retailerCaseStudy" navigationData={{ retailer: 'fortnum-and-mason' }} className={styles.imageLink}>
+      <Link to="retailerCaseStudy" navigationData={{ slug: 'fortnum-and-mason' }} className={styles.imageLink}>
         <img className={styles.projectBigSmallSnapshot} src={fmProjectSnapshot} alt="Fortnum and Mason project snapshot" />
         <img className={styles.projectMediumSnapshot} src={fmProjectMediumSnapshot} alt="Fortnum and Mason project snapshot" />
       </Link>
