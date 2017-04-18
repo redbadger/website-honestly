@@ -55,7 +55,7 @@ class Topic extends Component {
           </button>
         </div>
         <div
-          className={cx('topic__answer', open ? 'topic__answer--visible' : 'topic__answer--hidden')}
+          className={cx('topic__answer', `topic__answer${open ? '--visible' : '--hidden'}`)}
           dangerouslySetInnerHTML={{ __html: answer }} // eslint-disable-line react/no-danger
         />
       </div>
