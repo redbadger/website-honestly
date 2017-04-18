@@ -41,7 +41,7 @@ class Topic extends Component {
   render() {
     const { question, answer } = this.props;
     const { open } = this.state;
-    const strongAnswer = `<strong class="${cx('topic__answer--strong')}">`;
+    const strongAnswer = `<strong class="${styles.topic__answer__strong}">`;
     return (
       <div>
         <div
