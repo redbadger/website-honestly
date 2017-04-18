@@ -55,11 +55,10 @@ class Topic extends Component {
             {this.answerToggle()}
           </div>
         </a>
-        <p
+        <div
           className={cx('topic__answer', open ? 'topic__answer--visible' : 'topic__answer--hidden')}
-        >
-          {answer}
-        </p>
+          dangerouslySetInnerHTML={{ __html: answer }} // eslint-disable-line react/no-danger
+        />
       </div>
     );
   }
