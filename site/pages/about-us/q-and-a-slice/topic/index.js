@@ -49,11 +49,11 @@ class Topic extends Component {
           <h4 className={styles.topic__heading}>
             {question}
           </h4>
-          <div
+          <button
             className={styles.topic__more}
           >
             {this.answerToggle()}
-          </div>
+          </button>
         </a>
         <div
           className={cx('topic__answer', open ? 'topic__answer--visible' : 'topic__answer--hidden')}
