@@ -36,13 +36,15 @@ class Topic extends Component {
     );
   }
 
+  /* eslint-disable react/no-danger */
+  /* eslint-disable jsx-a11y/no-static-element-interactions */
   render() {
     const { question, answer } = this.props;
     const { open } = this.state;
-    const strong = cx('topic__answer--strong');
+    const strongAnswer = `<strong class="${cx('topic__answer--strong')}">`;
     return (
       <div>
-        <div // eslint-disable-line jsx-a11y/no-static-element-interactions
+        <div
           className={styles.topic__question}
           onClick={this.handleClick}
         >
@@ -57,7 +59,7 @@ class Topic extends Component {
         </div>
         <div
           className={cx('topic__answer', `topic__answer${open ? '--visible' : '--hidden'}`)}
-          dangerouslySetInnerHTML={{ __html: answer.replace(/<strong>/g, `<strong class="${strong}">`) }} // eslint-disable-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: answer.replace(/<strong>/g, strongAnswer) }}
         />
       </div>
     );
