@@ -57,11 +57,11 @@ const data = [
   },
 ];
 
-const QAndASlice = () => (
+const QAndASlice = ({ qAndAs }) => (
   <div className={styles.QAndA}>
     <div className={styles.QAndA__container}>
       <h2 className={styles.QAndA__heading}>Answers to common questions</h2>
-      {data.map(category => <Category category={category} />) }
+      {qAndAs.map(category => <Category category={category} />) }
     </div>
   </div>
 );

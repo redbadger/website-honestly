@@ -14,7 +14,7 @@ type AboutUsProps = {
   instagramPosts: Array<InstagramPost>;
 };
 
-const AboutUs = ({ contactUsURL, tweets, instagramPosts }: AboutUsProps) => {
+const AboutUs = ({ contactUsURL, tweets, instagramPosts, qAndAs }: AboutUsProps) => {
   return (
     <div>
       <PrinciplesSlice />
@@ -22,7 +22,7 @@ const AboutUs = ({ contactUsURL, tweets, instagramPosts }: AboutUsProps) => {
       <ContactUs postURL={contactUsURL} yellow />
       <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
       <AwardsSlice />
-      <QAndASlice />
+      <QAndASlice qAndAs={qAndAs} />
     </div>
   );
 };
