@@ -7,7 +7,7 @@
 }
 
 .topic__question:hover {
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .topic__heading {
@@ -73,6 +73,10 @@
 
 .topic__answer--hidden {
   display: none;
+}
+
+.topic__answer--strong {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
 }
 
 @media mediumScreen {

@@ -39,6 +39,7 @@ class Topic extends Component {
   render() {
     const { question, answer } = this.props;
     const { open } = this.state;
+    const strong = cx('topic__answer--strong');
     return (
       <div>
         <div // eslint-disable-line jsx-a11y/no-static-element-interactions
@@ -56,7 +57,7 @@ class Topic extends Component {
         </div>
         <div
           className={cx('topic__answer', `topic__answer${open ? '--visible' : '--hidden'}`)}
-          dangerouslySetInnerHTML={{ __html: answer }} // eslint-disable-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: answer.replace(/<strong>/g, `<strong class="${strong}">`) }} // eslint-disable-line react/no-danger
         />
       </div>
     );
