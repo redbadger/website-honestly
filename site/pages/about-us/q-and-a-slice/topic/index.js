@@ -11,7 +11,7 @@ export type TopicProps = {
 }
 
 class Topic extends Component {
-  constructor(props) {
+  constructor(props: TopicProps) {
     super(props);
     this.state = {
       open: false,

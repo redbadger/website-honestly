@@ -5,7 +5,7 @@ import Topic from '../topic';
 import type { TopicProps } from '../topic';
 import styles from './style.css';
 
-type CategoryProps = {
+export type CategoryProps = {
   name: string,
   topics: Array<TopicProps>
 }
