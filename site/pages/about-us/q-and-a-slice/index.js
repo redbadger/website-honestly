@@ -8,7 +8,13 @@ const QAndASlice = ({ qAndAs }: { qAndAs: Array<CategoryProps> }) => (
   <div className={styles.QAndA}>
     <div className={styles.QAndA__container}>
       <h2 className={styles.QAndA__heading}>Answers to common questions</h2>
-      {qAndAs.map(category => <Category category={category} />) }
+      <ul>
+        {qAndAs.map(category => (
+          <li>
+            <Category category={category} />
+          </li>
+        ))}
+      </ul>
     </div>
   </div>
 );
