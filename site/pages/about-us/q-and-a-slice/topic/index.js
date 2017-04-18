@@ -11,17 +11,17 @@ export type TopicProps = {
 }
 
 class Topic extends Component {
-  props: TopicProps;
-  state: {
-    open: boolean,
-  };
-
   constructor(props) {
     super(props);
     this.state = {
       open: false,
     };
   }
+
+  state: {
+    open: boolean,
+  };
+  props: TopicProps;
 
   handleClick = () => {
     this.setState({ open: !this.state.open });
