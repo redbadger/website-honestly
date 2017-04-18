@@ -38,7 +38,7 @@ class Topic extends Component {
 
   render() {
     const { question, answer } = this.props;
-    const open = this.state.open;
+    const { open } = this.state;
     return (
       <div>
         <div // eslint-disable-line jsx-a11y/no-static-element-interactions
