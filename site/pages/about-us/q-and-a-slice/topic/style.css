@@ -76,6 +76,7 @@
 }
 
 .topic__answer a {
+  color: badgerBlack;
   border-bottom: 1px solid badgerRed;
 }
 
