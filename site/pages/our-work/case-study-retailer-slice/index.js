@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from './style.css';
 
+import Link from '../../../../site/components/link';
 import retailerImage from './images/retailer.png';
-
-const caseStudyUrl = '/our-work/case-study/retailer';
 
 export default () => (
   <div className={styles.caseStudyContainer} >
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer} >
-        <a href={caseStudyUrl}>
+        <Link to='retailerCaseStudy' navigationData={{ retailer: 'retailer' }}>
           <h2 className={styles.caseStudyTextContainerHeader}>
             Next generation platform for retail giant
           </h2>
@@ -20,9 +19,9 @@ export default () => (
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
           </div>
-        </a>
+        </Link>
       </div>
-      <a href={caseStudyUrl} className={styles.imageLink}>
+      <Link to='retailerCaseStudy' navigationData={{ retailer: 'retailer' }} className={styles.imageLink}>
         <div className={styles.imageContainer}>
           <img src={retailerImage} alt="Retail giant project snapshot" />
           <div className={styles.orders}>
@@ -34,7 +33,7 @@ export default () => (
             <div className={styles.imageText}>Uplift in visits</div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   </div>
 );
