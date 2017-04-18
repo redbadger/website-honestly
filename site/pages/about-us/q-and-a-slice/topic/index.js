@@ -41,7 +41,7 @@ class Topic extends Component {
     const open = this.state.open;
     return (
       <div>
-        <a // eslint-disable-line jsx-a11y/no-static-element-interactions
+        <div // eslint-disable-line jsx-a11y/no-static-element-interactions
           className={styles.topic__question}
           onClick={this.handleClick}
         >
@@ -53,7 +53,7 @@ class Topic extends Component {
           >
             {this.answerToggle()}
           </button>
-        </a>
+        </div>
         <div
           className={cx('topic__answer', open ? 'topic__answer--visible' : 'topic__answer--hidden')}
           dangerouslySetInnerHTML={{ __html: answer }} // eslint-disable-line react/no-danger
