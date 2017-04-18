@@ -130,15 +130,23 @@ export function getData() {
           order
         }
       }
+      allQnA {
+        name
+        topics {
+          question
+          answer
+        }
+      }
     }
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
           .then(handleErrors)
           .then(response => response.json())
-          .then(({ data: { allEvents, allBadgers } }) => ({
+          .then(({ data: { allEvents, allBadgers, allQnA } }) => ({
             events: sortEvents(selectValidEvents(allEvents)),
             badgers: sortBadgers(allBadgers),
             categories: getCategories(allBadgers),
+            qAndAs: allQnA,
           }));
 }

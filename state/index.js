@@ -24,7 +24,7 @@ const getSiteState = () => (
     instagramPosts: getPosts(fetch),
     data: getData(),
     ...initialState,
-  }).then(({ data: { events, badgers, categories }, ...state }) => ({
+  }).then(({ data: { events, badgers, categories, qAndAs }, ...state }) => ({
     ...state,
     job: toDict(state.jobs, j => j.slug),
     events,
@@ -32,6 +32,7 @@ const getSiteState = () => (
     badgers,
     badger: toDict(badgers, b => b.slug),
     categories,
+    qAndAs,
   }))
 );
 
