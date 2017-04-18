@@ -1,4 +1,4 @@
-@value badgerBlack from "../../../../css/_colors.css";
+@value badgerBlack, badgerRed from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .topic__question {
@@ -73,6 +73,14 @@
 
 .topic__answer--hidden {
   display: none;
+}
+
+.topic__answer a {
+  border-bottom: 1px solid badgerRed;
+}
+
+.topic__answer a:hover {
+  color: badgerRed;
 }
 
 .topic__answer__strong {
