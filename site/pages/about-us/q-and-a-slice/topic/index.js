@@ -41,9 +41,8 @@ class Topic extends Component {
     const open = this.state.open;
     return (
       <div>
-        <a
+        <a // eslint-disable-line jsx-a11y/no-static-element-interactions
           className={styles.topic__question}
-          tabindex={0}
           onClick={this.handleClick}
         >
           <h4 className={styles.topic__heading}>

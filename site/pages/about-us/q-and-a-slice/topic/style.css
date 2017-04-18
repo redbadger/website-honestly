@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.topic__question:hover {
+  cursor: pointer;  
+}
+
 .topic__heading {
   composes: serif from "../../../../css/typography/_fonts.css";
   composes: fontS2 from "../../../../css/typography/_fonts.css";
