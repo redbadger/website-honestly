@@ -12,9 +12,9 @@ export type CategoryProps = {
 
 const Category = ({ category }: { category: CategoryProps }) => (
   <div className={styles.category}>
-    <div className={styles.category__title}>
+    <h3 className={styles.category__title}>
       {category.name}
-    </div>
+    </h3>
     <ul className={styles.category__questionList}>
       {category.topics.map(topic => (
         <li className={styles.category__element}>

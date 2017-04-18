@@ -46,9 +46,9 @@ class Topic extends Component {
           tabindex={0}
           onClick={this.handleClick}
         >
-          <h3 className={styles.topic__heading}>
+          <h4 className={styles.topic__heading}>
             {question}
-          </h3>
+          </h4>
           <div
             className={styles.topic__more}
           >
