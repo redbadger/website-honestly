@@ -23,25 +23,38 @@ function CaseStudies() {
       </div>
       <div className={styles.caseStudyContainer}>
         <div className={styles.caseStudyContent}>
-          <a className={styles.imageLink} href="/our-work/case-study/fortnum-and-mason/">
+          <Link
+            className={styles.imageLink}
+            to="retailerCaseStudy"
+            navigationData={{ retailer: 'fortnum-and-mason' }}
+          >
             <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
-          </a>
+          </Link>
           <div className={styles.caseStudyTextContainer}>
-            <a className={styles.caseStudyCompany} href="/our-work/case-study/fortnum-and-mason/">
+            <Link
+              className={styles.imageLink}
+              to="retailerCaseStudy"
+              navigationData={{ retailer: 'fortnum-and-mason' }}
+            >
               Fortnum & Mason
-            </a>
+            </Link>
             <div className={styles.caseStudyTitleContainer}>
-              <a className={styles.caseStudyTitle} href="/our-work/case-study/fortnum-and-mason/">
+              <Link
+                className={styles.caseStudyTitle}
+                to="retailerCaseStudy"
+                navigationData={{ retailer: 'fortnum-and-mason' }}
+              >
                 Elegant e-commerce in eight months
-              </a>
+              </Link>
             </div>
-            <a
+            <Link
               className={styles.caseStudyDescription}
-              href="/our-work/case-study/fortnum-and-mason/"
+              to="retailerCaseStudy"
+              navigationData={{ retailer: 'fortnum-and-mason' }}
             >
               Improving online and mobile conversion rates on the new fortnumandmason.com
               site with great customer experience and innovative tech.
-            </a>
+            </Link>
           </div>
         </div>
       </div>
