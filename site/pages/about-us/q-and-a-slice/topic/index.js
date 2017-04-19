@@ -48,6 +48,7 @@ class Topic extends Component {
           <button
             aria-controls={slug}
             aria-expanded={open}
+            aria-label={open ? 'Collapse' : 'Expand'}
             className={styles.topic__more}
           >
             <span className={open ? styles.topic__minus : styles.topic__plus} />
