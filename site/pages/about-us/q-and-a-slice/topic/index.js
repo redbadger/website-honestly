@@ -6,7 +6,7 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 export type TopicProps = {
-  slug: answer,
+  slug: string,
   question: string,
   answer: string,
 }
