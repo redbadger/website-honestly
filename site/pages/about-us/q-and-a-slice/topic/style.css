@@ -23,10 +23,14 @@
   display: block;
   margin: 0;
   padding: 0;
-  margin-left: 28px;
   position: relative;
   background: none;
   border: 0;
+}
+
+.topic__more span{
+  width: 21px;
+  display: block;
 }
 
 .topic__plus:before {
@@ -62,18 +66,11 @@
   right: 0;
 }
 
-.topic__answer {
-  margin-right: 48px;
-  padding-bottom: 20px;
-}
-
 .topic__answer__visible {
-  composes: topic__answer;
   display: block;
 }
 
 .topic__answer__hidden {
-  composes: topic__answer;
   display: none;
 }
 
@@ -88,24 +85,4 @@
 
 .topic__answer__strong {
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-}
-
-@media mediumScreen {
-  .topic__more {
-    margin-left: 105px;
-  }
-
-  .topic__answer {
-    margin-right: 125px;
-  }
-}
-
-@media largeScreen {
-  .topic__more {
-    margin-left: 174px;
-  }
-
-  .topic__answer {
-    margin-right: 240px;
-  }
 }
