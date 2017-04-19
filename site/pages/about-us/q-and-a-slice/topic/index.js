@@ -41,7 +41,9 @@ class Topic extends Component {
   render() {
     const { question, answer } = this.props;
     const { open } = this.state;
-    const strongAnswer = `<strong class="${styles.topic__answer__strong}">`;
+    const strongText = `<strong class="${styles.topic__answer__strong}"`;
+    const externalLink = '<a rel="noopener noreferrer" target="_blank"';
+    const formattedAnswer = answer.replace(/<strong/g, strongText).replace(/<a/g, externalLink);
     return (
       <div>
         <div
@@ -59,7 +61,7 @@ class Topic extends Component {
         </div>
         <div
           className={cx('topic__answer', `topic__answer${open ? '--visible' : '--hidden'}`)}
-          dangerouslySetInnerHTML={{ __html: answer.replace(/<strong>/g, strongAnswer) }}
+          dangerouslySetInnerHTML={{ __html: formattedAnswer }}
         />
       </div>
     );
