@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import Topic from '../topic';
-
 import type { TopicProps } from '../topic';
 import styles from './style.css';
 
