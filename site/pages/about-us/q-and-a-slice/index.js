@@ -5,9 +5,9 @@ import styles from './style.css';
 import type { CategoryProps } from './category';
 
 const QAndASlice = ({ qAndAs }: { qAndAs: Array<CategoryProps> }) => (
-  qAndAs.length ? <div className={styles.QAndA}>
-    <div className={styles.QAndA__container}>
-      <h2 className={styles.QAndA__heading}>Answers to common questions</h2>
+  qAndAs.length ? <div className={styles.qAndA}>
+    <div className={styles.qAndA__container}>
+      <h2 className={styles.qAndA__heading}>Answers to common questions</h2>
       <ul>
         {qAndAs.map(category => (
           <li key={category.name}>
