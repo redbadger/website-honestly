@@ -148,7 +148,6 @@
 }
 
 .contactBox {
-  height: 162px;
   padding: 33px 37px;
   max-width: 332px;
   margin: auto;
@@ -158,8 +157,7 @@
 }
 
 .contactBox__heading {
-  font-size: 24px;
-  line-height: 1.2em;
+  composes: fontM from '../../../../css/typography/_fonts.css';
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
@@ -311,7 +309,7 @@
   .contactBox {
     max-width: 47%;
     float: left;
-    margin-right: 50px;
+    margin-right: 30px;
   }
 
   .overview {
@@ -419,9 +417,8 @@
   .contactBox {
     float: none;
     position: absolute;
+    left: 0;
     right: 70%;
-    width: 36%;
-    max-width: 285px;
   }
 
   .header {
