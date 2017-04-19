@@ -60,9 +60,13 @@ const sortBadgers = badgers => {
 };
 
 const selectValidQandAs = qAndAs => (
-  qAndAs.filter(qAndA => qAndA.name && qAndA.topics.length)
+  qAndAs
+    .map(category => ({
+      ...category,
+      topics: category.topics.filter(topic => topic.answer && topic.question),
+    }))
+    .filter(qAndA => qAndA.name && qAndA.topics.length)
 );
-
 
 const basicFields = `
   id
