@@ -33,7 +33,7 @@ describe('site/about-us/q-and-a-slice', () => {
     expect(categories.children().length).to.equal(2);
   });
 
-  it('should render category heading', () => {
+  it('should render category heading 3', () => {
     const qAndAs = [
       {
         slug: 'company',
@@ -74,5 +74,24 @@ describe('site/about-us/q-and-a-slice', () => {
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
     const topics = qAndASlice.find('ul').first().find('ul');
     expect(topics.children().length).to.equal(2);
+  });
+
+  it('should render topic heading 4', () => {
+    const qAndAs = [
+      {
+        slug: 'company',
+        name: 'Company',
+        topics: [
+          {
+            slug: 'what-do-red-badger-do',
+            question: 'What do Red Badger do?',
+            answer: 'Everything',
+          },
+        ],
+      },
+    ];
+    const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
+    const topics = qAndASlice.find('ul').first().find('ul');
+    expect(topics.find('h4').text()).to.equal('What do Red Badger do?');
   });
 });
