@@ -6,6 +6,7 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 export type TopicProps = {
+  slug: answer,
   question: string,
   answer: string,
 }
@@ -39,7 +40,7 @@ class Topic extends Component {
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
   render() {
-    const { question, answer } = this.props;
+    const { slug, question, answer } = this.props;
     const { open } = this.state;
     const strongText = `<strong class="${styles.topic__answer__strong}"`;
     const externalLink = '<a rel="noopener noreferrer" target="_blank"';
@@ -54,12 +55,15 @@ class Topic extends Component {
             {question}
           </h4>
           <button
+            aria-controls={slug}
+            aria-expanded={open}
             className={styles.topic__more}
           >
             {this.answerToggle()}
           </button>
         </div>
         <div
+          id={slug}
           className={cx('topic__answer', `topic__answer${open ? '--visible' : '--hidden'}`)}
           dangerouslySetInnerHTML={{ __html: formattedAnswer }}
         />

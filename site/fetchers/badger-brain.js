@@ -131,8 +131,10 @@ export function getData() {
         }
       }
       allQnA {
+        slug
         name
         topics {
+          slug
           question
           answer
         }
