@@ -65,7 +65,7 @@ const selectValidQandAs = qAndAs => (
       ...category,
       topics: category.topics.filter(topic => topic.answer && topic.question),
     }))
-    .filter(qAndA => qAndA.name && qAndA.topics.length)
+    .filter(category => category.name && category.topics.length)
 );
 
 const basicFields = `
