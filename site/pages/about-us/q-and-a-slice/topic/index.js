@@ -28,15 +28,6 @@ class Topic extends Component {
     this.setState({ open: !this.state.open });
   }
 
-  answerToggle = () => {
-    const open = this.state.open;
-    return (
-      <span
-        className={open ? styles.topic__minus : styles.topic__plus}
-      />
-    );
-  }
-
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
   render() {
@@ -59,7 +50,7 @@ class Topic extends Component {
             aria-expanded={open}
             className={styles.topic__more}
           >
-            {this.answerToggle()}
+            <span className={open ? styles.topic__minus : styles.topic__plus} />
           </button>
         </div>
         <div
