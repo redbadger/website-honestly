@@ -74,7 +74,9 @@ const handleContactUsHash = stateNavigator => {
     let url = getUrl(hrefElement);
     if (hrefElement.hash === '#contactUs') {
       const { state, data } = stateNavigator.parseLink(url);
-      url = stateNavigator.getNavigationLink(state.key, { ...data, contactUs: true });
+      if (state.key === 'homePage') {
+        url = stateNavigator.getNavigationLink(state.key, { ...data, contactUs: true });
+      }
     }
     return url;
   };
