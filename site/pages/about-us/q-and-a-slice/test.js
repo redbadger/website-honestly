@@ -3,7 +3,37 @@ import { render } from 'enzyme';
 import QAndASlice from '.';
 
 describe('site/about-us/q-and-a-slice', () => {
-  it('should render category list with topic list', () => {
+  it('should render category list', () => {
+    const qAndAs = [
+      {
+        slug: 'company',
+        name: 'Company',
+        topics: [
+          {
+            slug: 'what-do-red-badger-do',
+            question: 'What do Red Badger do?',
+            answer: 'Everything',
+          },
+        ],
+      },
+      {
+        slug: 'projects',
+        name: 'Projects',
+        topics: [
+          {
+            slug: 'what-technology-can-you-use',
+            question: 'What technology can you use?',
+            answer: 'Anything',
+          },
+        ],
+      },
+    ];
+    const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
+    const categories = qAndASlice.find('ul').first();
+    expect(categories.children().length).to.equal(2);
+  });
+
+  it('should render topic list', () => {
     const qAndAs = [
       {
         slug: 'company',
@@ -23,9 +53,7 @@ describe('site/about-us/q-and-a-slice', () => {
       },
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
-    const categories = qAndASlice.find('ul').first();
     const topics = qAndASlice.find('ul').first().find('ul');
-    expect(categories.children().length).to.equal(1);
     expect(topics.children().length).to.equal(2);
   });
 });
