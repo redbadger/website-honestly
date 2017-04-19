@@ -3,6 +3,24 @@ import { render } from 'enzyme';
 import QAndASlice from '.';
 
 describe('site/about-us/q-and-a-slice', () => {
+  it('should render heading 2', () => {
+    const qAndAs = [
+      {
+        slug: 'company',
+        name: 'Company',
+        topics: [
+          {
+            slug: 'what-do-red-badger-do',
+            question: 'What do Red Badger do?',
+            answer: 'Everything',
+          },
+        ],
+      },
+    ];
+    const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
+    expect(qAndASlice.find('h2').text()).to.equal('Answers to common questions');
+  });
+
   it('should render category list', () => {
     const qAndAs = [
       {
