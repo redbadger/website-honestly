@@ -24,8 +24,8 @@ describe('site/about-us/q-and-a-slice', () => {
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
     const categories = qAndASlice.find('ul').first();
-    expect(categories.children().length).to.equal(1);
     const topics = qAndASlice.find('ul').first().find('ul');
+    expect(categories.children().length).to.equal(1);
     expect(topics.children().length).to.equal(2);
   });
 });
