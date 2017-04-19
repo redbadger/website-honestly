@@ -67,11 +67,13 @@
   padding-bottom: 20px;
 }
 
-.topic__answer--visible {
+.topic__answer__visible {
+  composes: topic__answer;
   display: block;
 }
 
-.topic__answer--hidden {
+.topic__answer__hidden {
+  composes: topic__answer;
   display: none;
 }
 

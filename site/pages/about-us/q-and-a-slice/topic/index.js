@@ -1,9 +1,6 @@
 // @flow
 import React, { Component } from 'react';
-import classnames from 'classnames/bind';
 import styles from './style.css';
-
-const cx = classnames.bind(styles);
 
 export type TopicProps = {
   slug: string,
@@ -56,7 +53,7 @@ class Topic extends Component {
         </div>
         <div
           id={slug}
-          className={cx('topic__answer', `topic__answer${open ? '--visible' : '--hidden'}`)}
+          className={open ? styles.topic__answer__visible : styles.topic__answer__hidden}
           dangerouslySetInnerHTML={{ __html: formattedAnswer }}
         />
       </div>
