@@ -33,6 +33,25 @@ describe('site/about-us/q-and-a-slice', () => {
     expect(categories.children().length).to.equal(2);
   });
 
+  it('should render category heading', () => {
+    const qAndAs = [
+      {
+        slug: 'company',
+        name: 'Company',
+        topics: [
+          {
+            slug: 'what-do-red-badger-do',
+            question: 'What do Red Badger do?',
+            answer: 'Everything',
+          },
+        ],
+      },
+    ];
+    const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
+    const categories = qAndASlice.find('ul').first();
+    expect(categories.find('h3').text()).to.equal('Company');
+  });
+
   it('should render topic list', () => {
     const qAndAs = [
       {
