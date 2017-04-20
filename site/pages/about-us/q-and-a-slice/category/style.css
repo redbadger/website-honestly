@@ -32,21 +32,21 @@
 
 @media mediumScreen {
   .category__title {
-    width: 16.666%;
+    width: calc((100% + 20px) / 6);
     padding-right: 20px;
   }
 
   .category__questionList {
-    width: 83.333%;
+    width: calc((100% + 20px) * 5 / 6 - 20px);
   }
 }
 
 @media largeScreen {
   .category__title {
-    width: 20%;
+    width: calc((100% + 20px) / 5);
   }
 
   .category__questionList {
-    width: 80%;
+    width: calc((100% + 20px) * 4 / 5 - 20px);
   }
 }
