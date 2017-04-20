@@ -117,4 +117,24 @@ describe('site/about-us/q-and-a-slice', () => {
     const topics = qAndASlice.find('ul').first().find('ul');
     expect(topics.find('h4').text()).to.equal('What do Red Badger do?');
   });
+
+  it('should make answer links external', () => {
+    const qAndAs = [
+      {
+        slug: 'company',
+        name: 'Company',
+        topics: [
+          {
+            slug: 'what-do-red-badger-do',
+            question: 'What do Red Badger do?',
+            answer: '<a href="http://google.co.uk">link</a>',
+          },
+        ],
+      },
+    ];
+    const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
+    const topics = qAndASlice.find('ul').first().find('ul');
+    expect(topics.find('a').attr('rel')).to.equal('noopener noreferrer');
+    expect(topics.find('a').attr('target')).to.equal('_blank');
+  });
 });
