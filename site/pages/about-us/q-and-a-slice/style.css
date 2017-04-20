@@ -2,7 +2,7 @@
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .qAndA__container {
-  padding: 20px 10px;
+  padding: 20px;
 }
 
 .qAndA {
@@ -21,13 +21,6 @@
 
 .qAndA_categoryList {
   border-bottom: 2px solid badgerBlack;
-}
-
-@media mediumScreen {
-  .qAndA__container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 @media largeScreen {
