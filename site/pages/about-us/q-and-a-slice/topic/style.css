@@ -98,12 +98,13 @@
   }
 
   .topic__answer {
-    width: 80%;
+    padding-right: 20px;
+    width: calc((100% + 20px) * 4 / 5);
   }
 }
 
 @media largeScreen {
   .topic__answer {
-    width: 75%;
+    width: calc((100% + 20px) * 3 / 4);
   }
 }
