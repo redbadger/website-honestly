@@ -32,7 +32,7 @@
   border: 0;
 }
 
-.topic__plus:before {
+.topic__minus:before, .topic__plus:before {
   content: '';
   width: 20px;
   height: 1px;
@@ -52,17 +52,6 @@
   position: absolute;
   top: 0;
   right: 8px;
-}
-
-.topic__minus:before {
-  content: '';
-  width: 20px;
-  height: 1px;
-  border-top: 5px solid badgerBlack;
-  display: block;
-  position: absolute;
-  top: 8px;
-  right: 0;
 }
 
 .topic__answer {
