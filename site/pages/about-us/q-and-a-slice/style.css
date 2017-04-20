@@ -1,11 +1,11 @@
 @value badgerBlack, badgerWhite from "../../../css/_colors.css";
-@value largeScreen from "../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .qAndA {
   composes: fontXS from "../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../css/typography/_fonts.css";
   composes: dividerWhite from "../../../css/_divider.css";
-  padding: 20px;
+  padding: 20px 10px;
   background-color: badgerWhite;
   color: badgerBlack;
 }
@@ -16,10 +16,18 @@
   padding-bottom: 20px;
 }
 
+@media mediumScreen {
+  .qAndA__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
 @media largeScreen {
   .qAndA__container {
-    padding-left: 8.3333%;
-    padding-right: 8.333%;
+    padding-left: calc(8.3333% + 20px);
+    padding-right: calc(8.333% + 20px);
     max-width: 1200px;
     margin: auto;
   }
