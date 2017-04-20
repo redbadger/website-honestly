@@ -16,6 +16,7 @@
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 10px;
   display: block;
   width: 100%;
 }
@@ -92,6 +93,10 @@
 }
 
 @media mediumScreen {
+  .topic__heading {
+    padding-right: 20px;
+  }
+
   .topic__answer {
     width: 80%;
   }
