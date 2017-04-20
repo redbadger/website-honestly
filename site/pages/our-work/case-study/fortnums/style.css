@@ -428,7 +428,7 @@
 
   .overview {
     margin: 0;
-    margin-left: 26%;
+    margin-left: calc(30% - 50px);
     margin-right: calc(10% - 50px);
   }
 
