@@ -4,6 +4,7 @@
 .topic__question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .topic__question:hover {
@@ -21,6 +22,7 @@
 
 .topic__more {
   display: block;
+  height: 21px;
   width: 21px;
   margin: 0;
   padding: 0;
@@ -36,7 +38,7 @@
   border-top: 5px solid badgerBlack;
   display: block;
   position: absolute;
-  top: 30px;
+  top: 8px;
   right: 0;
 }
 
@@ -47,7 +49,7 @@
   border-right: 5px solid badgerBlack;
   display: block;
   position: absolute;
-  top: 22px;
+  top: 0;
   right: 8px;
 }
 
@@ -58,7 +60,7 @@
   border-top: 5px solid badgerBlack;
   display: block;
   position: absolute;
-  top: 30px;
+  top: 8px;
   right: 0;
 }
 
