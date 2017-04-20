@@ -14,6 +14,11 @@
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   color: badgerRed;
   text-transform: uppercase;
+  width:100%;
+}
+
+.category__questionList {
+  width: 100%;
 }
 
 .category__element {
@@ -28,14 +33,17 @@
   .category__title {
     width: 16.666%;
   }
+
   .category__questionList {
     width: 83.333%;
-  }}
+  }
+}
 
 @media largeScreen {
   .category__title {
     width: 20%;
   }
+
   .category__questionList {
     width: 80%;
   }
