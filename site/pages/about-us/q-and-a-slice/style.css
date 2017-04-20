@@ -1,11 +1,14 @@
 @value badgerBlack, badgerWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
+.qAndA__container {
+  padding: 20px 10px;
+}
+
 .qAndA {
   composes: fontXS from "../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../css/typography/_fonts.css";
   composes: dividerWhite from "../../../css/_divider.css";
-  padding: 20px 10px;
   background-color: badgerWhite;
   color: badgerBlack;
 }
