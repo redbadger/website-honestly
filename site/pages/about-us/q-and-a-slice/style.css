@@ -16,6 +16,10 @@
   padding-bottom: 20px;
 }
 
+.qAndA_categoryList {
+  border-bottom: 2px solid badgerBlack;  
+}
+
 @media mediumScreen {
   .qAndA__container {
     padding-left: 20px;

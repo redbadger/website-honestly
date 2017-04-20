@@ -8,7 +8,7 @@ const QAndASlice = ({ qAndAs }: { qAndAs: Array<CategoryProps> }) => (
   qAndAs.length ? <div className={styles.qAndA}>
     <div className={styles.qAndA__container}>
       <h2 className={styles.qAndA__heading}>Answers to common questions</h2>
-      <ul>
+      <ul className={styles.qAndA_categoryList}>
         {qAndAs.map(category => (
           <li key={category.name}>
             <Category category={category} />
