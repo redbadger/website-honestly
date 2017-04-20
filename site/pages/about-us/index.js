@@ -23,9 +23,9 @@ const AboutUs = ({ contactUsURL, tweets, instagramPosts, qAndAs }: AboutUsProps)
       <PrinciplesSlice />
       <TimelineSlice />
       <ContactUs postURL={contactUsURL} yellow />
+      <QAndASlice qAndAs={qAndAs} />
       <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
       <AwardsSlice />
-      <QAndASlice qAndAs={qAndAs} />
     </div>
   );
 };
