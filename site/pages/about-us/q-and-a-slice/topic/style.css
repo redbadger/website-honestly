@@ -91,6 +91,12 @@
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
 }
 
+@media mediumScreen {
+  .topic__answer {
+    width: 80%;
+  }
+}
+
 @media largeScreen {
   .topic__answer {
     width: 75%;

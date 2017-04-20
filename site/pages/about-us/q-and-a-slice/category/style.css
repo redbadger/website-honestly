@@ -25,16 +25,12 @@
 }
 
 @media mediumScreen {
-  .category {
-    flex-wrap: nowrap;
-    padding-top: 0;
-  }
-
   .category__title {
-    padding-top: 20px;
-    width: 120px;
+    width: 16.666%;
   }
-}
+  .category__questionList {
+    width: 83.333%;
+  }}
 
 @media largeScreen {
   .category__title {
