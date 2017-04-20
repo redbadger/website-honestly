@@ -20,8 +20,8 @@
 
 @media largeScreen {
   .qAndA__container {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 8.3333%;
+    padding-right: 8.333%;
     max-width: 1200px;
     margin: auto;
   }

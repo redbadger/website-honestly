@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   border-top: 2px solid badgerBlack;
   padding-top: 20px;
+  width:100%;
 }
 
 .category__title {
@@ -13,11 +14,6 @@
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   color: badgerRed;
   text-transform: uppercase;
-  width: 100%;
-}
-
-.category__questionList {
-  width: 100%;
 }
 
 .category__element {
@@ -42,6 +38,9 @@
 
 @media largeScreen {
   .category__title {
-    width: 235px;
+    width: 20%;
+  }
+  .category__questionList {
+    width: 80%;
   }
 }

@@ -90,3 +90,9 @@
 .topic__answer__strong {
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
 }
+
+@media largeScreen {
+  .topic__answer {
+    width: 75%;
+  }
+}
