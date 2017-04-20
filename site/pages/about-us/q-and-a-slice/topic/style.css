@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.topic__question:hover {
+.topic__question:hover, .topic__more:hover {
   cursor: pointer;
 }
 
