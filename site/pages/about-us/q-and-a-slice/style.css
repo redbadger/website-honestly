@@ -1,5 +1,5 @@
 @value badgerBlack, badgerWhite from "../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+@value largeScreen from "../../../css/_sizes.css";
 
 .qAndA__container {
   padding: 20px;
