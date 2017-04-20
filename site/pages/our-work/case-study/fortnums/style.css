@@ -429,6 +429,11 @@
   .overview {
     margin: 0;
     margin-left: 21%;
+    margin-right: calc(10% - 50px);
+  }
+
+  .listBox {
+    padding: 40px 50px;
   }
 
   .techGraphImage {
@@ -448,6 +453,7 @@
   .allScreensImage {
     padding: 0;
     padding-left: 21%;
+    padding-right: 10%;
   }
 
   .quote {

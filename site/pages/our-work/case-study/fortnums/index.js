@@ -6,8 +6,8 @@ import headerMedium from './images/header-medium.jpg';
 import headerLarge from './images/header-large.jpg';
 import tabletImage from './images/tablet_tea_salon.jpg';
 import tabletImage2 from './images/tablet-2.jpg';
-import allScreensImage from './images/all-screens.jpg';
-import allScreens2Image from './images/all-screens-2.jpg';
+import allScreensImage from './images/all-screens.gif';
+import allScreens2Image from './images/all-screens-2.gif';
 
 import styles from './style.css';
 
