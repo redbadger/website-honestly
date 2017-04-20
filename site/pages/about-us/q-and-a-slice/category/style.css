@@ -5,7 +5,6 @@
   display: flex;
   flex-wrap: wrap;
   border-top: 2px solid badgerBlack;
-  width: 100%;
 }
 
 .category__title {
