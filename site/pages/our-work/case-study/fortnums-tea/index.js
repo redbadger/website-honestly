@@ -35,7 +35,7 @@ const FMTeaCaseStudy = () => (
           dedication to tea and its high-quality selection. To date, the primary focus of
           this experience has been focused in store.
         </p>
-        <p className={styles.content__paragraph}>
+        <p className={cx('content__paragraph', 'content__paragraph__left')}>
           Alongside tea, Fortnum’s is best-known for its hampers, which have been
           introduced to the website with great success. Although the option to buy tea
           blends online has been available since the website launched, the gifting and
@@ -69,7 +69,7 @@ const FMTeaCaseStudy = () => (
           completely different process, to ensure that this new type of product was easy
           to access and fundamentally interesting for the Fortnum’s customer.
         </p>
-        <div className={cx('contactBox')}>
+        <div className={styles.contactBox}>
           <h2 className={styles.contactBox__heading}>
             Project in mind?
           </h2>
