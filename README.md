@@ -150,7 +150,7 @@ And the css,
 }
 ```
 The questions div sits inside the same container as the category div. It is 8
-columns and 15 gutters wide.
+columns and 14 gutters wide.
 ```
 questions width = 8 x column + 14 x gutter
                 = 8 x column + 16 x gutter - 2 x gutter
