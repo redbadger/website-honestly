@@ -118,7 +118,7 @@ The left (and right) padding is 1 column and 3 gutters wide. Substituting the
 calculation above we get,
 ```
 container left padding = 1 x column + 3 x gutter
-                 	     = 1 x column + 2 x gutter + 1 x gutter
+                       = 1 x column + 2 x gutter + 1 x gutter
                        = 100% / 12 + 10px
 ```
 
