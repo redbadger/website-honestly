@@ -30,10 +30,13 @@
 }
 
 @media largeScreen {
-  .qAndA__container {
-    padding-left: calc((100% - 10px) / 12 + 10px);
-    padding-right: calc((100% - 10px) / 12 + 10px);
+  .qAndA__wrapper {
     max-width: 1400px;
     margin: auto;
+  }
+
+  .qAndA__container {
+    padding-left: calc(100% / 12 + 10px);
+    padding-right: calc(100% / 12 + 10px);
   }
 }
