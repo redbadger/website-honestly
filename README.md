@@ -122,7 +122,7 @@ container left padding = 1 x column + 3 x gutter
                        = 100% / 12 + 10px
 ```
 
-Which we can directly use this to set the css on the container
+Which we can use to set the css on the container
 ```
 .container {
     padding-left: calc(100% / 12 + 10px)
