@@ -93,7 +93,7 @@ might not work with the front end `dev` app.
 
 The Zeplin designs are based on a grid layout. The grid is made up of columns
 and gutters. You can turn this on in Zeplin by flicking the Grid switch in the
-right hand panel. Here’s an example of the large screen design for the `Q and A`
+right hand panel. Here’s an example of the large screen design for the "Q and A"
 slice with the Grid switched on. The grid is made up of 12 columns and 24
 gutters (each column has a gutter to its left and right). The width of a gutter
 is 10px. The width of a column is not fixed but changes as the screen resizes.
@@ -101,12 +101,12 @@ is 10px. The width of a column is not fixed but changes as the screen resizes.
 ![Zeplin Grid](https://cloud.githubusercontent.com/assets/1761227/25279187/92393d68-269d-11e7-8335-b40568a98e90.png)
 
 Each element in the design takes up a number of columns and gutters. The
-`Q and A` container takes up 10 columns and 18 gutters. The category title
+"Q and A" container takes up 10 columns and 18 gutters. The category title
 occupies 2 columns and 4 gutters. The questions are 8 columns and 14 gutters
 wide and the answer is 6 columns 10 gutters wide.
 
 We use these grid columns and gutters to create the css that’s a faithful
-representation of the Zeplin designs. The `Q and A` container div takes up the
+representation of the Zeplin designs. The "Q and A" container div takes up the
 whole screen but has padding on the left and right. We’ll calculate the width of
 this padding based on the width of the screen. The width of the screen is 12
 columns and 24 gutters. So,
@@ -194,7 +194,7 @@ gutters, with the gutters of size 5px for the small size. We must repeat the
 steps above for each screen size and wrap the resulting css in the relevant media
 query.
 
-The `Q and A` slice is the example to copy from because this is the first story
+The "Q and A" slice is the example to copy from because this is the first story
 where this technique was used.
 
 ## Deployment
