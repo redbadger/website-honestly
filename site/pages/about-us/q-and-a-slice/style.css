@@ -25,8 +25,8 @@
 
 @media largeScreen {
   .qAndA__container {
-    padding-left: calc(100% / 12 + 20px);
-    padding-right: calc(100% / 12 + 20px);
+    padding-left: calc((100% - 40px) / 12 + 20px);
+    padding-right: calc((100% - 40px) / 12 + 20px);
     max-width: 1400px;
     margin: auto;
   }
