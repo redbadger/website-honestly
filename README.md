@@ -106,16 +106,13 @@ columns and 4 gutters. The questions are 8 columns and 14 gutters wide and the
 answer is 6 columns 10 gutters wide.
 
 We use these grid columns and gutters to create the css that’s a faithful
-representation of the Zeplin designs. Imagine we’ve already created the HTML
-that splits the Q and A slice into separate divs relating to the different
-elements talked about above.
-
-The Q and A container div takes up the whole screen but has padding on the left
-and right. We’ll calculate the width of this padding based on the width of the
-screen. The width of the screen is 12 columns and 24 gutters. So,
+representation of the Zeplin designs. The Q and A container div takes up the
+whole screen but has padding on the left and right. We’ll calculate the width of
+this padding based on the width of the screen. The width of the screen is 12
+columns and 24 gutters. So,
 ```
 12 x column + 24 x gutter = 100%
-1 x column + 2 x gutter = 100% / 12
+ 1 x column +  2 x gutter = 100% / 12
 ```
 The left (and right) padding is 1 column and 3 gutters wide. Substituting the
 calculation above we get,
@@ -138,7 +135,7 @@ container is 10 columns and 18 gutters.
 ```
 10 x column + 18 x gutter = 100%
 10 x column + 20 x gutter = 100% + 2 x gutter
-1 x column + 2 x gutter = (100% + 2 x gutter) / 10 = (100% + 20px) / 10
+ 1 x column +  2 x gutter = (100% + 2 x gutter) / 10 = (100% + 20px) / 10
 ```
 The category div is 2 columns and 4 gutters wide,
 ```
@@ -171,7 +168,7 @@ questions div. The width of the questions div is 8 columns and 15 gutters.
 ```
 8 x column + 14 x gutter = 100%
 8 x column + 16 x gutter = 100% + 20px
-1 x column + 2 x gutter  = (100% + 20px) / 8
+1 x column +  2 x gutter = (100% + 20px) / 8
 ```
 The answer div is 6 columns and 10 gutters wide,
 ```
@@ -196,6 +193,9 @@ screen size breakpoints. The medium and small size grids have 6 columns and 12
 gutters, with the gutters of size 5px for the small size. We must repeat the
 steps above for each screen size and wrap the resulting css in the relevant media
 query.
+
+The Q and A slice is the example to copy from because this is the first story
+where this technique was used.
 
 ## Deployment
 
