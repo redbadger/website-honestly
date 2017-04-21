@@ -110,15 +110,7 @@
   }
 
   .content__paragraph {
-    padding-left: 124px;
-  }
-
-  .content__paragraph__right {
-    float: right;
-    clear: both;
-    padding: 0;
-    margin: 0;
-    max-width: 48%;
+    padding-left: 17%;
   }
 
   .content__secondaryTitle {
@@ -131,18 +123,25 @@
   }
 
   .content__title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .content__title:first-of-type {
     margin-top: 20px;
   }
 
   .contactBox {
-    max-width: 47%;
     float: left;
-    margin-right: 30px;
+    max-width: 47%;
+    margin-right: 39px;
+    margin-top: 3px;
   }
 
   .fullWidthImage {
-    padding: 0 20px;
-    margin-top: 7px;
+    padding-top: 10px;
+    padding-left: 34%;
+    padding-right: 16%;
   }
 
   .showSmall {
