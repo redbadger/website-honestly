@@ -164,7 +164,7 @@ And the css,
 }
 ```
 The answer div goes inside the questions div so 100% refers to the width of the
-questions div. The width of the questions div is 8 columns and 15 gutters.
+questions div. The width of the questions div is 8 columns and 14 gutters.
 ```
 8 x column + 14 x gutter = 100%
 8 x column + 16 x gutter = 100% + 20px
