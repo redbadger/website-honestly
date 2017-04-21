@@ -18,6 +18,9 @@ const caseStudies = [{
   slug: 'fortnum-and-mason',
   title: 'Fortnum & Mason',
 }, {
+  slug: 'fortnum-and-mason-tea',
+  title: 'Fortnum & Mason Tea',
+}, {
   slug: 'retailer',
   title: 'Retailer case study',
 }];

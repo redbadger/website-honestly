@@ -2,6 +2,7 @@ import React from 'react';
 
 import RetailerCaseStudy from './retailer';
 import FMCaseStudy from './fortnums';
+import FMTeaCaseStudy from './fortnums-tea';
 import WhatToReadNext from './what-to-read-next';
 import ContactUsSlice from '../../../slices/contact-us-slice';
 
@@ -15,6 +16,7 @@ type CaseStudyContainerProps = {
 const slugToComponent = slug => (
   {
     'fortnum-and-mason': FMCaseStudy,
+    'fortnum-and-mason-tea': FMTeaCaseStudy,
     retailer: RetailerCaseStudy,
   }[slug]
 );

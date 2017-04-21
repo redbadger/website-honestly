@@ -26,6 +26,17 @@ describe('CaseStudyRetailer', () => {
     expect(caseStudyPage.find('FMCaseStudy').length).to.equal(1);
   });
 
+  it('should display the Fortnum and Mason Tea case study page', () => {
+    const props = {
+      retailer: {
+        slug: 'fortnum-and-mason-tea',
+        title: 'Fortnum and Mason Tea',
+      },
+    };
+    const caseStudyPage = shallow(<CaseStudyRetailer {...props} />);
+    expect(caseStudyPage.find('FMTeaCaseStudy').length).to.equal(1);
+  });
+
   it('should display the Retailer case study page', () => {
     const props = {
       retailer: {

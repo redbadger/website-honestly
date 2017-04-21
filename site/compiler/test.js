@@ -18,7 +18,7 @@ describe('site/compiler', () => {
           tweets: [],
         }, createStateNavigator());
 
-      expect(routes.length).to.equal(12);
+      expect(routes.length).to.equal(13);
       expect(routes[0].filePath).to.equal('index.html');
       expect(routes[1].filePath).to.equal('what-we-do/index.html');
       expect(routes[2].filePath).to.equal('our-work/index.html');
@@ -59,7 +59,7 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(14);
+      expect(routes.length).to.equal(15);
       expect(routes[9].filePath).to.equal('about-us/join-us/software-engineer/index.html');
       expect(routes[10].filePath).to.equal('about-us/join-us/ux-designer/index.html');
     });
@@ -91,7 +91,7 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(12);
+      expect(routes.length).to.equal(13);
       expect(routes[0].filePath).to.equal('index.html');
     });
 
@@ -150,7 +150,7 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(14);
+      expect(routes.length).to.equal(15);
       expect(routes[9].filePath).to.equal('about-us/events/2017/01/31/upcoming-event/index.html');
       expect(routes[10].filePath).to.equal('about-us/events/2016/08/03/designing-in-cross-functional-teams/index.html');
     });
@@ -169,9 +169,10 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(12);
+      expect(routes.length).to.equal(13);
       expect(routes[10].filePath).to.equal('our-work/case-study/fortnum-and-mason/index.html');
-      expect(routes[11].filePath).to.equal('our-work/case-study/retailer/index.html');
+      expect(routes[11].filePath).to.equal('our-work/case-study/fortnum-and-mason-tea/index.html');
+      expect(routes[12].filePath).to.equal('our-work/case-study/retailer/index.html');
     });
   });
 });
