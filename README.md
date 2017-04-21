@@ -89,6 +89,113 @@ generator on lambda, but it runs locally and writes the pages to the local
 filesystem instead of to AWS S3. This is useful for checking functionality that
 might not work with the front end `dev` app.
 
+## Zeplin to Css
+
+The Zeplin designs are based on a grid layout. The grid is made up of columns
+and gutters. You can turn this on in Zeplin by flicking the Grid switch in the
+right hand panel. Here’s an example of the large screen design for the Q and A
+slice with the Grid switched on. The grid is made up of 12 columns and 24
+gutters (each column has a gutter to its left and right). The width of a gutter
+is 10px. The width of a column is not fixed but changes as the screen resizes.
+
+![Zeplin Grid](https://cloud.githubusercontent.com/assets/1761227/25279187/92393d68-269d-11e7-8335-b40568a98e90.png)
+
+Each element in the design takes up a number of columns and gutters. The Q and A
+container takes up 10 columns and 18 gutters. The category title occupies 2
+columns and 4 gutters. The questions are 8 columns and 14 gutters wide and the
+answer is 6 columns 10 gutters wide.
+
+We use these grid columns and gutters to create the css that’s a faithful
+representation of the Zeplin designs. Imagine we’ve already created the HTML
+that splits the Q and A slice into separate divs relating to the different
+elements talked about above.
+
+The Q and A container div takes up the whole screen but has padding on the left
+and right. We’ll calculate the width of this padding based on the width of the
+screen. The width of the screen is 12 columns and 24 gutters. So,
+```
+12 x column + 24 x gutter = 100%
+1 x column + 2 x gutter = 100% / 12
+```
+The left (and right) padding is 1 column and 3 gutters wide. Substituting the
+calculation above we get,
+```
+container left padding = 1 x column + 3 x gutter
+                 	     = 1 x column + 2 x gutter + 1 x gutter
+                       = 100% / 12 + 10px
+```
+
+Which we can directly use this to set the css on the container
+```
+.container {
+    padding-left: calc(100% / 12 + 10px)
+}
+```
+We can use the same technique to calculate the width of the category div. This
+div sits inside the container so 100% here refers to the width of the container
+(excluding padding) rather than the width of the screen. The width of the
+container is 10 columns and 18 gutters.
+```
+10 x column + 18 x gutter = 100%
+10 x column + 20 x gutter = 100% + 2 x gutter
+1 x column + 2 x gutter = (100% + 2 x gutter) / 10 = (100% + 20px) / 10
+```
+The category div is 2 columns and 4 gutters wide,
+```
+category width = 2 x column + 4 x gutter
+               = 2 x (1 x column + 2 x gutter)
+               = 2 x (100% + 20px) / 10 = (100% + 20px) / 5
+```
+And the css,
+```
+.category {
+  width: calc((100% + 20px) / 5)
+}
+```
+The questions div sits inside the same container as the category div. It is 8
+columns and 15 gutters wide.
+```
+questions width = 8 x column + 14 x gutter
+                = 8 x column + 16 x gutter - 2 x gutter
+                = 8 x (1 x column + 2 x gutter) - 2 x gutter
+                = 8 x (100% + 20px) / 10 - 20px = (100% + 20px) x 4 / 5 - 20px
+```
+And the css,
+```
+.category {
+  width: calc((100% + 20px) x 4 / 5 - 20px)
+}
+```
+The answer div goes inside the questions div so 100% refers to the width of the
+questions div. The width of the questions div is 8 columns and 15 gutters.
+```
+8 x column + 14 x gutter = 100%
+8 x column + 16 x gutter = 100% + 20px
+1 x column + 2 x gutter  = (100% + 20px) / 8
+```
+The answer div is 6 columns and 10 gutters wide,
+```
+answer width = 6 x column + 10 x gutter
+             = 6 x column + 12 x gutter - 2 x gutter
+             = 6 x (1 x column + 2 x gutter) - 2 x gutter
+             = 6 x (100% + 20px) / 8 - 20px = (100% + 20px) x 3 / 4 - 20px
+```
+Which gives,
+```
+.answer {
+  width: calc((100% + 20px) x 3 / 4 - 20px)
+}
+```
+With just these few lines of css we’ve replicated the Zeplin design. We can test
+that the css works using [Design Grid Overlay](https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi?hl=en)
+chrome plugin. It adds grid lines to the web page so we can check that the
+elements sit exactly in place.
+
+There are three different grid layouts in Zeplin, one for each of the three
+screen size breakpoints. The medium and small size grids have 6 columns and 12
+gutters, with the gutters of size 5px for the small size. We must repeat the
+steps above for each screen size and wrap the resulting css in the relevant media
+query.
 
 ## Deployment
 
