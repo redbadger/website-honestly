@@ -184,7 +184,7 @@ Which gives,
 }
 ```
 With just these few lines of css we’ve replicated the Zeplin design. We can test
-that the css works using [Design Grid Overlay](https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi?hl=en)
+that the css works using the [Design Grid Overlay](https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi?hl=en)
 chrome plugin. It adds grid lines to the web page so we can check that the
 elements sit exactly in place.
 
