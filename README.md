@@ -194,8 +194,8 @@ gutters, with the gutters of size 5px for the small size. We must repeat the
 steps above for each screen size and wrap the resulting css in the relevant media
 query.
 
-The "Q and A" slice is the example to copy from because this is the first story
-where this technique was used.
+The "Q and A" slice is the example to copy from because it's the first story
+where this technique is used.
 
 ## Deployment
 
