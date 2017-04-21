@@ -129,7 +129,7 @@ Which we can use to set the css on the container
 }
 ```
 We can use the same technique to calculate the width of the category div. This
-div sits inside the container so 100% here refers to the width of the container
+div sits inside the container so 100% now refers to the width of the container
 (excluding padding) rather than the width of the screen. The width of the
 container is 10 columns and 18 gutters.
 ```
