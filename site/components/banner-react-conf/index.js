@@ -8,17 +8,17 @@ export default function BannerReactConf() {
     <div className={styles.bannerContainer}>
       <a href="https://react.london/" target="_blank" rel="noopener noreferrer">
         <img
-          src={`${imageAssetsEndpoint}react-conf-desktop-banner.png`}
+          src={`${imageAssetsEndpoint}react-post-conf-desktop-banner.png`}
           alt="React London 2017"
           className={styles.reactConfDesktopBanner}
         />
         <img
-          src={`${imageAssetsEndpoint}react-conf-tablet-banner.png`}
+          src={`${imageAssetsEndpoint}react-post-conf-tablet-banner.png`}
           alt="React London 2017"
           className={styles.reactConfTabletBanner}
         />
         <img
-          src={`${imageAssetsEndpoint}react-conf-mobile-banner.png`}
+          src={`${imageAssetsEndpoint}react-post-conf-mobile-banner.png`}
           alt="React London 2017"
           className={styles.reactConfMobileBanner}
         />
