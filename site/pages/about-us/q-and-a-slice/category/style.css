@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   border-top: 2px solid badgerBlack;
+  margin-bottom: 20px;
 }
 
 .category__title {
@@ -19,6 +20,10 @@
 
 .category__questionList {
   width: 100%;
+}
+
+.category__questionList li:last-of-type h4 {
+  padding-bottom: 0;
 }
 
 .category__element {
