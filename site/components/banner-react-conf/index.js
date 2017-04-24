@@ -1,24 +1,26 @@
 import React from 'react';
 import styles from './style.css';
 
-const imageAssetsEndpoint = 'https://res.cloudinary.com/red-badger-assets/image/upload/events/';
+import desktopBanner from './images/react-post-conf-desktop-banner.png';
+import tabletBanner from './images/react-post-conf-tablet-banner.png';
+import mobileBanner from './images/react-post-conf-mobile-banner.png';
 
 export default function BannerReactConf() {
   return (
     <div className={styles.bannerContainer}>
       <a href="https://react.london/" target="_blank" rel="noopener noreferrer">
         <img
-          src={`${imageAssetsEndpoint}react-conf-desktop-banner.png`}
+          src={desktopBanner}
           alt="React London 2017"
           className={styles.reactConfDesktopBanner}
         />
         <img
-          src={`${imageAssetsEndpoint}react-conf-tablet-banner.png`}
+          src={tabletBanner}
           alt="React London 2017"
           className={styles.reactConfTabletBanner}
         />
         <img
-          src={`${imageAssetsEndpoint}react-conf-mobile-banner.png`}
+          src={mobileBanner}
           alt="React London 2017"
           className={styles.reactConfMobileBanner}
         />
