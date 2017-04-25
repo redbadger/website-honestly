@@ -17,6 +17,10 @@ class Topic extends Component {
     };
   }
 
+  componentDidMount = () => {
+    this.setState({ showButton: true });
+  }
+
   state: {
     open: boolean,
     showButton: boolean,
@@ -25,10 +29,6 @@ class Topic extends Component {
 
   handleClick = () => {
     this.setState({ open: !this.state.open });
-  }
-
-  componentDidMount = () => {
-    this.setState({ showButton: true });
   }
 
   /* eslint-disable react/no-danger */
