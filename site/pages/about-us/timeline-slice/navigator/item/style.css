@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
+@value badgerWhite, badgerRed, badgerBlack, linesOnWhite from "../../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
 @value timelineNavigationButton from "../../../../../css/_zindex.css";
 
@@ -32,11 +32,6 @@
   overflow: visible;
 }
 
-.old span,
-.active span{
-  background-color: badgerRed;
-}
-
 .old:hover,
 .active:hover,
 .future:hover{
@@ -64,9 +59,12 @@
   left: 12px;
  }
 
-.old span,
-.active span{
-  background-color: badgerRed;
+ .old span {
+     background-color: linesOnWhite;
+ }
+
+ .active span{
+   background-color: badgerRed;
  }
 
 

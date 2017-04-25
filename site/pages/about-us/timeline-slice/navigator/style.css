@@ -1,18 +1,56 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
+@value badgerWhite, badgerRed, badgerBlack, linesOnWhite from "../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 @value timelineContainer from "../../../../css/_zindex.css";
 
 .navigator {
   z-index: timelineContainer;
   background: badgerWhite;
-  
+}
+
+.arrowLeft {
+  position: absolute;
+  left: -36px;
+  top: -9px;
+}
+
+.arrowRight {
+  position: absolute;
+  right: -15px;
+  top: -9px;
+}
+
+.arrowLeft div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: linesOnWhite;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrowRight div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: linesOnWhite;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrowLeft .innerArrow {
+  left: 7px;
+  background-color: badgerWhite;
+}
+
+.arrowRight .innerArrow {
+  left: -7px;
+  background-color: badgerWhite;
 }
 
 .container{
   position: relative;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 60%;
+  margin: auto;
   top: -10px;
 }
 
@@ -50,7 +88,7 @@
 .fillingLine {
   position: relative;
   height: 2px;
-  background-color: badgerRed;
+  background-color: linesOnWhite;
   width: 100%;
   top: -2px;
   left: 0;
@@ -60,7 +98,7 @@
 
 @media mediumScreen{
   .navigator{
-   
+
   }
 
   .container{
@@ -68,7 +106,7 @@
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-  
+
     top: 0px;
   }
 
