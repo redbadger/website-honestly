@@ -22,7 +22,8 @@
   width: 100%;
 }
 
-.category__questionList li:last-of-type h4 {
+.category__questionList li:last-of-type h4,
+.category__questionList li:last-of-type p {
   padding-bottom: 0;
 }
 
