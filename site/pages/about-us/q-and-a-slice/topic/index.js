@@ -13,11 +13,13 @@ class Topic extends Component {
     super(props);
     this.state = {
       open: false,
+      showButton: false,
     };
   }
 
   state: {
     open: boolean,
+    showButton: boolean,
   };
   props: TopicProps;
 
@@ -25,11 +27,15 @@ class Topic extends Component {
     this.setState({ open: !this.state.open });
   }
 
+  componentDidMount = () => {
+    this.setState({ showButton: true });
+  }
+
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
   render() {
     const { slug, question, answer } = this.props;
-    const { open } = this.state;
+    const { open, showButton } = this.state;
     const strongText = `<strong class="${styles.topic__answer__strong}"`;
     const externalLink = '<a rel="noopener noreferrer" target="_blank"';
     const formattedAnswer = answer.replace(/<strong/g, strongText).replace(/<a/g, externalLink);
@@ -46,7 +52,7 @@ class Topic extends Component {
             aria-controls={slug}
             aria-expanded={open}
             aria-label={question}
-            className={styles.topic__more}
+            className={showButton ? styles.topic__more : styles.topic__more__hide}
           >
             <span className={open ? styles.topic__minus : styles.topic__plus} />
           </button>
@@ -56,6 +62,13 @@ class Topic extends Component {
           className={open ? styles.topic__answer__visible : styles.topic__answer__hidden}
           dangerouslySetInnerHTML={{ __html: formattedAnswer }}
         />
+        <noscript>
+          <div
+            id={slug}
+            className={styles.topic__answer__visible}
+            dangerouslySetInnerHTML={{ __html: formattedAnswer }}
+          />
+        </noscript>
       </div>
     );
   }

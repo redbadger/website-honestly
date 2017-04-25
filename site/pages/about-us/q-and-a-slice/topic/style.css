@@ -32,6 +32,10 @@
   border: 0;
 }
 
+.topic__more__hide {
+  display: none;
+}
+
 .topic__minus:before, .topic__plus:before {
   content: '';
   width: 20px;
