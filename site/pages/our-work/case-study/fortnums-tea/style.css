@@ -210,10 +210,7 @@
 
   .header__imageContainer {
     height: 470px;
+    background-color: #ACE1E6;
   }
 
-  .header__imageContainer > img {
-    width: 100%;
-    height: initial;
-  }
 }
