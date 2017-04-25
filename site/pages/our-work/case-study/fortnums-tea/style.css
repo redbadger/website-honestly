@@ -81,6 +81,7 @@
 
 .contactBox__button {
   composes: smallButton from "../../../../css/_links.css";
+  padding: 0 12px;
 }
 
 .imageRight,
