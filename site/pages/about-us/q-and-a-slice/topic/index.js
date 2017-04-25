@@ -17,14 +17,15 @@ class Topic extends Component {
     };
   }
 
-  componentDidMount = () => {
-    this.setState({ showButton: true });
-  }
-
   state: {
     open: boolean,
     showButton: boolean,
   };
+
+  componentDidMount = () => {
+    this.setState({ showButton: true });
+  }
+
   props: TopicProps;
 
   handleClick = () => {
