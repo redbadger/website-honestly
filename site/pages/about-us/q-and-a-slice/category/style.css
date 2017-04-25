@@ -5,7 +5,6 @@
   display: flex;
   flex-wrap: wrap;
   border-top: 2px solid badgerBlack;
-  margin-bottom: 20px;
 }
 
 .category__title {
@@ -14,17 +13,11 @@
   color: badgerRed;
   text-transform: uppercase;
   width: 100%;
-  padding-right: 10px;
-  padding-top: 20px;
+  padding: 20px 10px 20px 0;
 }
 
 .category__questionList {
   width: 100%;
-}
-
-.category__questionList li:last-of-type h4,
-.category__questionList li:last-of-type p {
-  padding-bottom: 0;
 }
 
 .category__element {
