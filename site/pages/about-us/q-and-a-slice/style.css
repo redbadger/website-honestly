@@ -2,7 +2,7 @@
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .qAndA__container {
-  padding: 5px;
+  padding: 60px 5px 5px 5px;
   margin-bottom: 10px;
 }
 
@@ -17,7 +17,6 @@
 .qAndA__heading {
   composes: serif from "../../../css/typography/_fonts.css";
   composes: fontL from "../../../css/typography/_fonts.css";
-  padding-top: 60px;
   padding-bottom: 40px;
 }
 
@@ -28,7 +27,7 @@
 
 @media mediumScreen {
   .qAndA__container {
-    padding: 10px;
+    padding: 60px 10px 10px 10px;
   }
 }
 
