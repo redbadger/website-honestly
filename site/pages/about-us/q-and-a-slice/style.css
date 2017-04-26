@@ -17,11 +17,13 @@
 .qAndA__heading {
   composes: serif from "../../../css/typography/_fonts.css";
   composes: fontL from "../../../css/typography/_fonts.css";
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .qAndA_categoryList {
   border-bottom: 2px solid badgerBlack;
+  margin-bottom: 70px;
 }
 
 @media mediumScreen {
