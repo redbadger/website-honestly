@@ -7,46 +7,6 @@
   background: badgerWhite;
 }
 
-.arrowLeft {
-  position: absolute;
-  left: -36px;
-  top: -9px;
-}
-
-.arrowRight {
-  position: absolute;
-  right: -15px;
-  top: -9px;
-}
-
-.arrowLeft div {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: linesOnWhite;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.arrowRight div {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: linesOnWhite;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.arrowLeft .innerArrow {
-  left: 7px;
-  background-color: badgerWhite;
-}
-
-.arrowRight .innerArrow {
-  left: -7px;
-  background-color: badgerWhite;
-}
-
 .container{
   position: relative;
   width: 60%;

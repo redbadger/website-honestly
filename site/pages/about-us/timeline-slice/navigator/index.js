@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './style.css';
 import Item from './item';
+import Arrow from './arrow';
 
 const TimelineNav = ({ currentIndex, onClick }) => {
   let scale = 0;
@@ -32,10 +33,7 @@ const TimelineNav = ({ currentIndex, onClick }) => {
   return (
     <div className={styles.navigator}>
       <div className={styles.container}>
-        <div className={styles.arrowLeft}>
-          <div className={styles.outerArrow} />
-          <div className={styles.innerArrow} />
-        </div>
+        <Arrow direction="left" />
         <div className={styles.timeline}>
           <Item value={0} onClick={onClick} currentIndex={currentIndex}>2010</Item>
           <Item value={1} onClick={onClick} currentIndex={currentIndex}>2011</Item>
@@ -46,10 +44,7 @@ const TimelineNav = ({ currentIndex, onClick }) => {
           <Item value={6} onClick={onClick} currentIndex={currentIndex}>2016</Item>
         </div>
         <div className={styles.fillingLine} style={{ width: `${scale}` }} />
-        <div className={styles.arrowRight}>
-          <div className={styles.outerArrow} />
-          <div className={styles.innerArrow} />
-        </div>
+        <Arrow direction="right" />
       </div>
     </div>
   );
