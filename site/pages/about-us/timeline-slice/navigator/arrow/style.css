@@ -1,4 +1,4 @@
-@value badgerWhite, linesOnWhite from "../../../../../css/_colors.css";
+@value badgerWhite, badgerRed, linesOnWhite from "../../../../../css/_colors.css";
 
 button {
   position: absolute;
@@ -20,7 +20,6 @@ button {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: linesOnWhite;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -29,9 +28,18 @@ button {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: linesOnWhite;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.arrowLeft .active,
+.arrowRight .active {
+  background-color: badgerRed;
+}
+
+.arrowLeft .inactive,
+.arrowRight .inactive {
+  background-color: linesOnWhite;
 }
 
 .arrowLeft .innerArrow {
