@@ -36,6 +36,8 @@
   .qAndA__wrapper {
     max-width: 1400px;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .qAndA__container {
