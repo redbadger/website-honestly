@@ -7,6 +7,7 @@
 
 .imageWrapper{
   display: none;
+  padding-top: 10px;
 }
 
 .year {
@@ -68,52 +69,52 @@
     display: block;
     width: 100%;
   }
+
   .imageWrapper{
     display: block;
-    max-width: 50%;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 39%;
   }
+
   .largeScreen {
     display: block;
     max-width: 1200px;
     margin: auto;
     margin-bottom: 60px;
   }
+
   .smallScreen {
     display: none;
   }
+
+  .year {
+    font-size: 15px;
+    line-height: 1.3em;
+  }
+
   .copy {
-    max-width: 50%;
-    align-self: flex-end;
+    align-self: flex-start;
+    max-width: 61%;
     padding: 10px 30px 0px 30px;
   }
+
   .topRow {
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
+
   .topRowFlipped {
     min-height: 400px;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
   }
+
   .counterRow {
     display: flex;
     justify-content: center;
     border-bottom: none;
     height: 85px;
     margin-top: 60px;
-  }
-}
-
-
-@media largeScreen{
-  .copy{
-
-  }
-  .imageWrapper{
-
   }
 }

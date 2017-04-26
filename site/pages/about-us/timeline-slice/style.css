@@ -21,6 +21,9 @@
     display: none;
   }
   .content {
-    padding: 160px 40px 60px 40px;
+    width: 65%;
+    margin: auto;
+    margin-top: 105px;
+    padding-bottom: 126px;
   }
 }

@@ -58,10 +58,13 @@
 
 @media mediumScreen{
   .container{
-    position: absolute;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 233px;
     top: 80px;
+  }
+}
+
+@media largeScreen {
+  .fillingLine {
+    top: -1px;
   }
 }
