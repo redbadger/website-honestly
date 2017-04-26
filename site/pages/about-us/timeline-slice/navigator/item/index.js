@@ -25,7 +25,6 @@ TimelineNav.propTypes = {
   value: React.PropTypes.number.isRequired,
   currentIndex: React.PropTypes.number.isRequired,
   onClick: React.PropTypes.func.isRequired,
-  children: React.PropTypes.string.isRequired,
 };
 
 export default TimelineNav;

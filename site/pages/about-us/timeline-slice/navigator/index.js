@@ -33,7 +33,7 @@ const TimelineNav = ({ currentIndex, onClick }) => {
   return (
     <div className={styles.navigator}>
       <div className={styles.container}>
-        <Arrow direction="left" />
+        <Arrow direction="left" onClick={onClick} currentIndex={currentIndex} />
         <div className={styles.timeline}>
           <Item value={0} onClick={onClick} currentIndex={currentIndex} />
           <Item value={1} onClick={onClick} currentIndex={currentIndex} />
@@ -44,7 +44,7 @@ const TimelineNav = ({ currentIndex, onClick }) => {
           <Item value={6} onClick={onClick} currentIndex={currentIndex} />
         </div>
         <div className={styles.fillingLine} style={{ width: `${scale}` }} />
-        <Arrow direction="right" />
+        <Arrow direction="right" onClick={onClick} currentIndex={currentIndex} />
       </div>
     </div>
   );
