@@ -64,7 +64,7 @@
   margin: 30px 20px 0px 20px;
 }
 
-@media mediumScreen {
+@media largeScreen {
   .image {
     display: block;
     width: 100%;
