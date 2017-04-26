@@ -8,4 +8,8 @@ const Arrow = ({ direction }) => (
   </div>
 );
 
+Arrow.propTypes = {
+  direction: React.PropTypes.bool.isRequired,
+};
+
 export default Arrow;

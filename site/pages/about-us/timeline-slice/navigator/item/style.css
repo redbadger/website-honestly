@@ -1,19 +1,7 @@
 @value badgerWhite, badgerRed, badgerBlack, linesOnWhite from "../../../../../css/_colors.css";
-@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
 @value timelineNavigationButton from "../../../../../css/_zindex.css";
 
-.text{
-  display: none;
-  position: relative;
-  color: #CCC;
-  composes: boldSansSerif from "../../../../../css/typography/_fonts.css";
-	composes: fontXS from "../../../../../css/typography/_fonts.css";
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.active a,
-.text:hover{
+.active a {
   color: badgerRed;
 }
 
@@ -66,11 +54,3 @@
  .active span{
    background-color: badgerRed;
  }
-
-
-@media mediumScreen {
-  .text{
-     display: block;
-     top: -10px;
-  }
-}
