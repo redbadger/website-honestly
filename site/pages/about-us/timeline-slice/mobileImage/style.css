@@ -3,20 +3,24 @@
 @value timelineContainer from "../../../../css/_zindex.css";
 
 .mobileImage {
-  
+
 }
+
 .mobileImage:after{
   content: '';
   background-color: badgerWhite;
   width: 90%;
   position: relative;
   bottom: 25px;
-  height: 20px;
+  height: 15px;
   display: block;
   margin: auto;
 }
+
 .image {
   width: 100%;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 @media mediumScreen{
@@ -27,6 +31,7 @@
   .mobileImage{
     display: none;
   }
+
   .mobileImage:after{
     display: none;
   }

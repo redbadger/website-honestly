@@ -9,7 +9,7 @@
 
 .container{
   position: relative;
-  width: 60%;
+  width: 52%;
   margin: auto;
   top: -10px;
 }
@@ -17,7 +17,7 @@
 .timeline{
   background-color: #CCC;
   color: #CCC;
-  height: 2px;
+  height: 1px;
   width: 100%;
   position: relative;
   list-style: none;

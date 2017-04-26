@@ -13,7 +13,7 @@ import Five from './2015';
 import Six from './2016';
 import ImageMobile from './mobileImage';
 
-import Mobile2010 from './2010/2010-mobile.jpg';
+import Image2010 from './2010/2010.jpg';
 import Mobile2011 from './2011/2011-mobile.jpg';
 import Mobile2012 from './2012/2012-mobile.jpg';
 import Mobile2013 from './2013/2013-mobile.jpg';
@@ -58,7 +58,7 @@ class TimelineSlice extends React.Component {
 
         <noscript>
           <div className={styles.content}>
-            <img src={Mobile2010} alt="2010" className={styles.image} />
+            <img src={Image2010} alt="2010" className={styles.image} />
             <Zero />
             <img src={Mobile2011} alt="2011" className={styles.image} />
             <One />
