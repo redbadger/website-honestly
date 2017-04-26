@@ -15,6 +15,7 @@ const Five = () => {
       text={text}
       fact={fact}
       image={image}
+      mobileImage={image}
     />
   );
 };
