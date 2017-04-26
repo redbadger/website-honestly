@@ -4,21 +4,19 @@ import mobile from './2014-mobile.jpg';
 import Content from '../content';
 
 const Four = () => {
-  const title = '2014';
-  const text = 'We more than doubled our staff numbers by the end of 2014. We picked up a new project from retailer Fortnum & Mason, eschewing the standard RFP process, instead doing a two-day hackathon to prove our worth. We had our first ever company day, asking all the badgers where they saw the company going. We made sure we staying active in the development community, starting the first React London meetup.';
-  const counters = [
-    { title: 'No of office dogs', value: '0' },
-    { title: 'Cups of tea drunk', value: '1462' },
-    { title: 'Favourite tech', value: 'ReactJS' },
-  ];
+  const year = '2014';
+  const title = 'Winning Tesco, pitching with hackathons & starting Europe’s largest React community';
+  const text = '2014 spelt lift-off for Red Badger in a big way. We won a big retained project for one of the UK’s largest grocers, Tesco. We pitched for and won the complete re-build of the Fortnum & Mason website, through a two day hackathon, ripping up the RFP process and demonstrating the skills and innovation we could bring to the project in real time.';
+  const fact = 'As a consequence of our work with Tesco we started to run small weekly gatherings to discuss working with, and innovations around, Facebook React J: this has now grown into Europe’s largest React community.';
 
   return (
     <Content
+      year={year}
       title={title}
       text={text}
+      fact={fact}
       image={desktop}
       mobileImage={mobile}
-      counters={counters}
       flip
     />
   );
