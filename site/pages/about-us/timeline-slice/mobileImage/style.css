@@ -2,10 +2,6 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 @value timelineContainer from "../../../../css/_zindex.css";
 
-.mobileImage {
-
-}
-
 .mobileImage:after{
   content: '';
   background-color: badgerWhite;
@@ -19,8 +15,7 @@
 
 .image {
   width: 100%;
-  padding: 10px;
-  padding-bottom: 0;
+  padding: 20px 10px 0 10px;
 }
 
 @media mediumScreen{
