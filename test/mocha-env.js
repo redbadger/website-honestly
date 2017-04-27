@@ -17,7 +17,7 @@ cssHook({
 });
 
 // Polyfill file loader
-const assetFileTypes = ['png', 'jpg', 'jpeg', 'eot', 'ttf', 'woff', 'svg'];
+const assetFileTypes = ['png', 'jpg', 'jpeg', 'eot', 'ttf', 'woff', 'svg', 'gif'];
 
 const loadAsset = (source, name) => {
   return `module.exports = ${JSON.stringify(name)}`;

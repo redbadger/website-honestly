@@ -31,7 +31,7 @@ const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => {
       <CaseStudy />
       <Brie />
       <TechSlice />
-      <ContactUs postURL={contactUsURL} yellow={true} />
+      <ContactUs postURL={contactUsURL} yellow />
       <BlogSlice featuredBlogPosts={featuredBlogPosts} />
       <NewsLetter />
     </div>

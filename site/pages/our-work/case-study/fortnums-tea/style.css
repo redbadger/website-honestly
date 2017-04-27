@@ -1,0 +1,216 @@
+@value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.header {
+  height: 100%;
+}
+
+.header__container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 314px;
+  overflow: hidden;
+}
+
+.header__image {
+  height: 100%;
+}
+
+.content {
+  padding-bottom: 40px;
+  background-color: #F8F8F8;
+}
+
+.content__wrapper {
+  padding: 20px 20px 20px;
+}
+
+.content__mainTitle {
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__title {
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__redTitle {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  display: block;
+  color: badgerRed;
+}
+
+.content__secondaryTitle {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__paragraph {
+  margin-bottom: 30px;
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+}
+
+.contactBox {
+  padding: 33px 37px;
+  max-width: 332px;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #ededed;
+}
+
+.contactBox__heading {
+  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.contactBox__button {
+  composes: smallButton from "../../../../css/_links.css";
+  padding: 0 12px;
+}
+
+.imageRight,
+.imageLeft {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.fullWidthImage {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.floatRightImage {
+  display: none;
+}
+
+@media mediumScreen {
+  .header__container {
+    height: 100%;
+  }
+
+  .content__paragraph {
+    padding-left: 17%;
+  }
+
+  .content__secondaryTitle {
+    padding-left: 114px;
+  }
+
+  .content__mainTitle {
+    margin-bottom: -20px;
+    padding-bottom: 40px;
+  }
+
+  .content__title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .content__title:first-of-type {
+    margin-top: 20px;
+  }
+
+  .contactBox {
+    float: left;
+    max-width: 47%;
+    margin-right: 30px;
+    margin-top: 3px;
+  }
+
+  .fullWidthImage {
+    padding-top: 10px;
+    padding-left: 34%;
+    padding-right: 16%;
+  }
+
+  .showSmall {
+    display: none;
+  }
+
+  .showMedium {
+    display: block;
+  }
+}
+
+@media largeScreen {
+  .content {
+    max-width: 1400px;
+    padding: 20px 120px 60px;
+    margin: auto;
+  }
+
+  .content__wrapper {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content__paragraph,
+  .content__secondaryTitle {
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+
+  .content__paragraph__left {
+    width: 71%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 28px;
+  }
+
+  .content__mainTitle {
+    position: relative;
+    top: -125px;
+    display: block;
+    padding: 20px;
+    height: 100%;
+    background-color: badgerWhite;
+    margin-bottom: -96px;
+  }
+
+  .content__title {
+    padding-left: 15%;
+    font-size: 40px;
+    line-height: 1.1em;
+  }
+
+  .contactBox {
+    float: none;
+    position: absolute;
+    left: 0;
+    right: 70%;
+    padding: 33px 29px;
+    margin-top: -30px;
+  }
+
+  .fullWidthImage {
+    width: 28%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  .header__imageContainer {
+    height: 470px;
+    background-color: #ACE3E6;
+  }
+
+}

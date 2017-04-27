@@ -30,7 +30,7 @@ const baseConfig = {
         loader: 'json-loader',
       },
       {
-        test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/,
+        test: /\.(png|jpe?g|eot|ttf|woff|woff2|gif)$/,
         exclude: [/dist\//, /node_modules/],
         loader: 'file-loader',
         query: {

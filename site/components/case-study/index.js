@@ -29,8 +29,9 @@ const CaseStudy = () => (
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.limitWidth}>
       <div className={styles.figuresContainer}>
-        <a
-          href="/our-work/case-study/fortnum-and-mason/"
+        <Link
+          to="retailerCaseStudy"
+          navigationData={{ slug: 'fortnum-and-mason' }}
           className={styles.figureLink}
           title="Fortnum and mason case study"
         >
@@ -42,7 +43,7 @@ const CaseStudy = () => (
             </span>
           </span>
           <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
-        </a>
+        </Link>
         <a
           href="/our-work/case-study/camden-market/"
           className={styles.figureLink}

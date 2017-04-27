@@ -18,7 +18,7 @@ import OurWorkPage from '../pages/our-work';
 import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
 
-import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
+import RetailerCaseStudy from '../pages/our-work/case-study';
 
 const componentMap = {
   homePage: HomePage,
@@ -74,7 +74,9 @@ const handleContactUsHash = stateNavigator => {
     let url = getUrl(hrefElement);
     if (hrefElement.hash === '#contactUs') {
       const { state, data } = stateNavigator.parseLink(url);
-      url = stateNavigator.getNavigationLink(state.key, { ...data, contactUs: true });
+      if (state.key === 'homePage') {
+        url = stateNavigator.getNavigationLink(state.key, { ...data, contactUs: true });
+      }
     }
     return url;
   };
