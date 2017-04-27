@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './style.css';
-import Link from '../../../components/link';
 
+import Link from '../../../../site/components/link';
 import retailerImage from './images/retailer.png';
 
 export default () => (
   <div className={styles.caseStudyContainer} >
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer} >
-        <Link to="retailerCaseStudy">
+        <Link to="retailerCaseStudy" navigationData={{ slug: 'retailer' }}>
           <h2 className={styles.caseStudyTextContainerHeader}>
             Next generation platform for retail giant
           </h2>
@@ -21,7 +21,7 @@ export default () => (
           </div>
         </Link>
       </div>
-      <Link to="retailerCaseStudy" className={styles.imageLink}>
+      <Link to="retailerCaseStudy" navigationData={{ slug: 'retailer' }} className={styles.imageLink}>
         <div className={styles.imageContainer}>
           <img src={retailerImage} alt="Retail giant project snapshot" />
           <div className={styles.orders}>

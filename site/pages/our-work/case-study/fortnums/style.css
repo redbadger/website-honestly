@@ -2,28 +2,26 @@
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .header {
-  width: 100%;
-  background-color: #abc9c1;
-  margin-bottom: 10px;
+  height: 100%;
 }
 
 .header__container {
-  max-width: 760px;
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 310px;
+  height: 100%;
 }
 
 .header__imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  overflow: hidden;
 }
 
 .header__image {
-  max-width: 375px;
-  height: auto;
+  width: 100%;
 }
 
 .header__outcome {
@@ -89,6 +87,7 @@
 
 .content {
   padding-bottom: 40px;
+  background-color: #F8F8F8;
 }
 
 .content__wrapper {
@@ -102,8 +101,8 @@
 }
 
 .content__title {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
@@ -122,6 +121,20 @@
 
 .content__paragraph {
   margin-bottom: 30px;
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+}
+
+.content__video_embed {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56%;
+}
+
+.content__video_embed > iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .content__list {
@@ -135,19 +148,19 @@
 }
 
 .contactBox {
-  background-color: #ededed;
-  height: 100%;
-  padding: 33px 30px;
-  text-align: center;
+  padding: 33px 37px;
+  max-width: 332px;
+  margin: auto;
   margin-bottom: 30px;
+  text-align: center;
+  background-color: #ededed;
 }
 
 .contactBox__heading {
-  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: fontM from '../../../../css/typography/_fonts.css';
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
-
 
 .contactBox__button {
   composes: smallButton from "../../../../css/_links.css";
@@ -155,7 +168,7 @@
 
 .listBox {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px 23px 30px 16px;
 }
 
 .listBox__heading {
@@ -177,7 +190,17 @@
 .listBox__element {
   margin-bottom: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px dashed linesOnWhite;
+
+  background-image: linear-gradient(to right, linesOnWhite 50%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 12px 1px;
+  background-repeat: repeat-x;
+}
+
+.listBox__element:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-image: none;
 }
 
 .listBox__element--results {
@@ -187,18 +210,59 @@
   composes: serif from "../../../../css/typography/_fonts.css";
 }
 
+.listBox__element__label {
+  max-width: 68%;
+}
+
 .overview {
   box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.imageRight,
+.imageLeft {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.allScreensImage {
+  margin-top: -20px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.quote {
+  padding: 0;
+  margin-bottom: 30px;
+  margin-left: 55px;
+}
+
+.quote__content {
+  padding-bottom: 15px;
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+}
+
+.quote__attribution {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+}
+
+.showSmall {
+  display: block;
+}
+
+.showMedium {
+  display: none;
 }
 
 @media mediumScreen {
   .header__container {
-    height: 400px;
-  }
-
-  .header__image {
-    max-width: 500px;
-    height: auto;
+    height: 100%;
   }
 
   .header__outcome {
@@ -214,7 +278,15 @@
   }
 
   .content__paragraph {
-    padding-left: 114px;
+    padding-left: 124px;
+  }
+
+  .content__paragraph__right {
+    float: right;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    max-width: 48%;
   }
 
   .content__secondaryTitle {
@@ -227,30 +299,68 @@
 
   .content__mainTitle {
     margin-bottom: -20px;
+    padding-bottom: 40px;
   }
 
   .content__title {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .contactBox {
-    width: auto;
+    max-width: 47%;
     float: left;
     margin-right: 30px;
   }
 
   .overview {
     display: flex;
+    margin: -20px 0 10px 105px;
   }
 
   .listBox {
-    width: 50%;
+    width: 100%;
+    padding: 40px;
+    padding-right: 18px;
   }
 
   .techGraphImage {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 20px;
+  }
+
+  .imageRight {
+    float: right;
+    max-width: 55%;
+  }
+
+  .imageLeft {
+    max-width: 49%;
+    padding-bottom: 7%;
+    margin-right: 3%;
+    float: left;
+    padding-bottom: 3%;
+  }
+
+  .allScreensImage {
+    padding: 0 20px;
+    margin-top: 7px;
+  }
+
+  .quote {
+    padding-left: 195px;
+  }
+
+  .quote__content {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+
+  .showSmall {
+    display: none;
+  }
+
+  .showMedium {
+    display: block;
   }
 }
 
@@ -262,6 +372,7 @@
   }
 
   .content__wrapper {
+    position: relative;
     padding-left: 0;
     padding-right: 0;
   }
@@ -272,14 +383,29 @@
     padding-right: 10%;
   }
 
+  .content__paragraph__right {
+    float: none;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .content__video_embed > iframe {
+    padding: 0 10% 23% 30%;
+  }
+
+  .content__video_spacer {
+    width: 100%;
+    margin-top: -23%;
+  }
+
   .content__list {
-    padding-left: 33.457143%;
-    padding-right: 18.2857143%;
+    padding-left: 396px;
+    padding-right: 136px;
   }
 
   .content__mainTitle {
     position: relative;
-    top: -96px;
+    top: -125px;
     display: block;
     padding: 20px;
     height: 100%;
@@ -288,24 +414,78 @@
   }
 
   .content__title {
-    padding-left: 10%;
-  }
-
-  .contactBox {
-    width: 26.1%;
-  }
-
-  .contactBox__heading {
+    padding-left: 15%;
     font-size: 40px;
     line-height: 1.1em;
   }
 
+  .contactBox {
+    float: none;
+    position: absolute;
+    left: 0;
+    right: 70%;
+    padding: 33px 29px;
+  }
+
   .header {
-    padding-bottom: 56px;
+    height: 100%;
+  }
+
+  .overview {
+    margin: 0;
+    margin-left: calc(30% - 50px);
+    margin-right: calc(10% - 50px);
+  }
+
+  .listBox {
+    padding: 40px 50px;
   }
 
   .techGraphImage {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .imageRight {
+    max-width: 39%;
+  }
+
+  .imageLeft {
+    padding-left: 15%;
+    float: left;
+  }
+
+  .allScreensImage {
+    padding: 0;
+    padding-left: 21%;
+    padding-right: 10%;
+  }
+
+  .quote {
+    max-width: 36%;
+    float: right;
+    padding-left: 0;
+  }
+
+  .quote__content {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+
+  .header__image {
+    width: 100%;
+    position: relative;
+    top: -68%;
+  }
+
+  .header__imageContainer {
+    height: 358px;
+  }
+
+  .header__imageContainer > picture {
+    width: 100%;
+    max-height: 456px;
+    margin-top: -18%;
+    padding-bottom: 18%;
   }
 }

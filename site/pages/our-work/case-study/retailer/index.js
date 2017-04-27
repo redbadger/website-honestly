@@ -7,15 +7,7 @@ import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
 import metaImage from './images/meta-image.png';
 
-import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
-
-
 const cx = classnames.bind(styles);
-
-type CaseStudyRetailerProps = {
-  contactUsURL: string,
-}
 
 const social = {
   title: 'The proof is in the pudding',
@@ -24,7 +16,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/retailer',
 };
 
-const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
+const RetailerCaseStudy = () => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -252,9 +244,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
         </div>
       </div>
     </div>
-    <WhatToReadNext />
-    <ContactUs postURL={contactUsURL} />
   </div>
 );
 
-export default CaseStudyRetailer;
+export default RetailerCaseStudy;
