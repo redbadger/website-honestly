@@ -244,7 +244,7 @@
 .quote__content {
   padding-bottom: 15px;
   composes: serif from "../../../../css/typography/_fonts.css";
-  composes: fontM3 from "../../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
 }
 
 .quote__attribution {
@@ -348,6 +348,11 @@
 
   .quote {
     padding-left: 195px;
+  }
+
+  .quote__content {
+    font-size: 24px;
+    line-height: 1.2em;
   }
 
   .showSmall {
@@ -460,6 +465,11 @@
     max-width: 36%;
     float: right;
     padding-left: 0;
+  }
+
+  .quote__content {
+    font-size: 30px;
+    line-height: 1.2em;
   }
 
   .header__image {
