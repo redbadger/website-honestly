@@ -88,7 +88,7 @@
 @media mediumScreen {
   .topic__heading {
     padding-right: 20px;
-    composes: fontS from "../../../../css/typography/_fonts.css";
+    /* composes: fontS from "../../../../css/typography/_fonts.css"; */
   }
 
   .topic__answer {
