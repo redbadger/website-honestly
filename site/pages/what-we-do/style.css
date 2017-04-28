@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerRed, badgerRedOnBlack, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
 .pageHeaderContainer {
@@ -66,6 +66,10 @@ a {
   text-transform: uppercase;
   margin-bottom: 5px;
   width: 100%;
+}
+
+.caseStudyCompany--onBlack {
+  color: badgerRedOnBlack;
 }
 
 .imageLink {
