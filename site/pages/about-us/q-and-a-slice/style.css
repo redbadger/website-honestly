@@ -24,6 +24,11 @@
   margin-bottom: 30px;
 }
 
+.qAndA__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @media mediumScreen {
   .qAndA__heading {
     padding-bottom: 20px;
@@ -35,11 +40,6 @@
 
   .qAndA__categoryList {
     margin-bottom: 40px;
-  }
-
-  .qAndA__wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
