@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite from "../../css/_colors.css";
+@value badgerRedOnBlack, badgerBlack, badgerWhite from "../../css/_colors.css";
 @value contentMaxWidth, largeScreen, mediumScreen from "../../css/_sizes.css";
 
 .widthContainer {
@@ -63,6 +63,7 @@
 
 .moreBtn {
   composes: primaryButton from "../../css/_links.css";
+  background-color: badgerRedOnBlack;
 }
 
 @media mediumScreen {
@@ -91,7 +92,6 @@
 
   .moreBtn {
     margin: 20px 60px 60px;
-    composes: primaryButton from "../../css/_links.css";
   }
 }
 

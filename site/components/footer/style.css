@@ -1,4 +1,4 @@
-@value badgerRed, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
+@value badgerRed, badgerRedOnBlack, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize, containerMaxWidth from "../../css/_sizes.css";
 
 .screenReaderText {
@@ -37,7 +37,7 @@
 }
 
 .nav li a {
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnBlack;
   color: badgerWhite;
   text-decoration: none;
 }
@@ -100,6 +100,7 @@
 
 .mapLink {
   composes: redUnderlineLink from "../../css/_links.css";
+  border-color: badgerRedOnBlack;
   margin-top: 20px;
   display: inline-block;
 }
