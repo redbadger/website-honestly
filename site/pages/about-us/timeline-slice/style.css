@@ -20,6 +20,7 @@
 .content {
   padding: 0px;
   background: badgerWhite;
+  padding-bottom: 160px;
 }
 
 @media mediumScreen {
@@ -28,9 +29,16 @@
   }
 
   .content {
+    width: 100%;
+    padding-top: 105px;
+    padding-bottom: 296px;
+  }
+}
+
+@media largeScreen {
+  .content {
     width: 65%;
     margin: auto;
-    padding-top: 105px;
     padding-bottom: 126px;
   }
 }
