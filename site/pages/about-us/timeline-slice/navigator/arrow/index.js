@@ -1,5 +1,8 @@
 import React from 'react';
+import classnames from 'classnames/bind';
 import styles from './style.css';
+
+const cx = classnames.bind(styles);
 
 const Arrow = ({ direction, onClick, currentIndex }) => {
   const click = () => {
@@ -19,7 +22,7 @@ const Arrow = ({ direction, onClick, currentIndex }) => {
 
   return (
     <button
-      className={direction === 'left' ? styles.arrowLeft : styles.arrowRight}
+      className={cx('arrow', direction === 'left' ? 'arrowLeft' : 'arrowRight')}
       onClick={click}
     >
       <div className={isClickable ? styles.active : styles.inactive} />

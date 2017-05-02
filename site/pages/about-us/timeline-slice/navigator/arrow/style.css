@@ -1,19 +1,23 @@
 @value badgerWhite, badgerRed, linesOnWhite from "../../../../../css/_colors.css";
 
-button {
+.arrow {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
   position: absolute;
   width: 20px;
-  height: 20px;
+  height: 0;
 }
 
 .arrowLeft {
   left: -44px;
-  top: -18px;
+  top: -9px;
 }
 
 .arrowRight {
-  right: -27px;
-  top: -18px;
+  right: -44px;
+  top: -9px;
 }
 
 .arrowLeft div {
@@ -43,11 +47,11 @@ button {
 }
 
 .arrowLeft .innerArrow {
-  left: 12px;
+  left: 7px;
   background-color: badgerWhite;
 }
 
 .arrowRight .innerArrow {
-  left: 0;
+  left: -6px;
   background-color: badgerWhite;
 }
