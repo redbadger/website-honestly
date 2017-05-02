@@ -39,42 +39,42 @@ class TimelineSlice extends React.Component {
     const { currentIndex } = this.state;
     return (
       <div className={styles.timeline}>
+        <div className={styles.container}>
+          <ClientOnly>
+            <ImageMobile index={currentIndex} onChangeIndex={this.setPage} />
+            <Navigator currentIndex={currentIndex} onClick={this.setPage} />
+            <div className={styles.content}>
+              <SwipeableViews index={currentIndex} onChangeIndex={this.setPage} animateHeight>
+                <Zero />
+                <One />
+                <Two />
+                <Three />
+                <Four />
+                <Five />
+                <Six />
+              </SwipeableViews>
+            </div>
+          </ClientOnly>
 
-        <ClientOnly>
-          <ImageMobile index={currentIndex} onChangeIndex={this.setPage} />
-          <Navigator currentIndex={currentIndex} onClick={this.setPage} />
-          <div className={styles.content}>
-            <SwipeableViews index={currentIndex} onChangeIndex={this.setPage} animateHeight>
+          <noscript>
+            <div className={styles.content}>
+              <img src={Image2010} alt="2010" className={styles.image} />
               <Zero />
+              <img src={Image2011} alt="2011" className={styles.image} />
               <One />
+              <img src={Mobile2012} alt="2012" className={styles.image} />
               <Two />
+              <img src={Mobile2013} alt="2013" className={styles.image} />
               <Three />
+              <img src={Mobile2014} alt="2014" className={styles.image} />
               <Four />
+              <img src={Image2015} alt="2015" className={styles.image} />
               <Five />
+              <img src={Image2016} alt="2016" className={styles.image} />
               <Six />
-            </SwipeableViews>
-          </div>
-        </ClientOnly>
-
-        <noscript>
-          <div className={styles.content}>
-            <img src={Image2010} alt="2010" className={styles.image} />
-            <Zero />
-            <img src={Image2011} alt="2011" className={styles.image} />
-            <One />
-            <img src={Mobile2012} alt="2012" className={styles.image} />
-            <Two />
-            <img src={Mobile2013} alt="2013" className={styles.image} />
-            <Three />
-            <img src={Mobile2014} alt="2014" className={styles.image} />
-            <Four />
-            <img src={Image2015} alt="2015" className={styles.image} />
-            <Five />
-            <img src={Image2016} alt="2016" className={styles.image} />
-            <Six />
-          </div>
-        </noscript>
-
+            </div>
+          </noscript>
+        </div>
       </div >
     );
   }

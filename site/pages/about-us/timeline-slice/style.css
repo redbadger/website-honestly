@@ -3,10 +3,16 @@
 
 .timeline{
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
-	composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../css/typography/_fonts.css";
   background-color: badgerWhite;
   composes: dividerBlackOnTransparent from "../../../css/_divider.css";
 }
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
 .image{
   width: 100%;
 }
