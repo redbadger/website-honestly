@@ -20,10 +20,11 @@
   .image{
     display: none;
   }
+
   .content {
     width: 65%;
     margin: auto;
-    margin-top: 105px;
+    padding-top: 105px;
     padding-bottom: 126px;
   }
 }
