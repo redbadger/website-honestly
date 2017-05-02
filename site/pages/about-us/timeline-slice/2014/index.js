@@ -1,6 +1,5 @@
 import React from 'react';
-import desktop from './2014-desktop.png';
-import mobile from './2014-mobile.jpg';
+import image from './2014.png';
 import Content from '../content';
 
 const Four = () => {
@@ -15,8 +14,8 @@ const Four = () => {
       title={title}
       text={text}
       fact={fact}
-      image={desktop}
-      mobileImage={mobile}
+      image={image}
+      mobileImage={image}
       flip
     />
   );

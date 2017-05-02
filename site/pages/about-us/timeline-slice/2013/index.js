@@ -1,5 +1,5 @@
 import React from 'react';
-import mobile from './2013-mobile.jpg';
+import image from './2013.png';
 import Content from '../content';
 
 const Three = () => {
@@ -14,8 +14,8 @@ const Three = () => {
       title={title}
       text={text}
       fact={fact}
-      image={mobile}
-      mobileImage={mobile}
+      image={image}
+      mobileImage={image}
       flip
     />
   );
