@@ -7,20 +7,23 @@
   padding: 0;
   position: absolute;
   width: 20px;
-  height: 0;
+  height: 28px;
+  overflow: hidden;
 }
 
 .arrowLeft {
   left: -44px;
-  top: -9px;
+  top: -13px;
 }
 
 .arrowRight {
   right: -44px;
-  top: -9px;
+  top: -13px;
 }
 
 .arrowLeft div {
+  top: 4px;
+  left: 4px;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -29,6 +32,8 @@
 }
 
 .arrowRight div {
+  top: 4px;
+  right: 6px;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -47,11 +52,11 @@
 }
 
 .arrowLeft .innerArrow {
-  left: 7px;
+  left: 11px;
   background-color: badgerWhite;
 }
 
 .arrowRight .innerArrow {
-  left: -6px;
+  left: -13px;
   background-color: badgerWhite;
 }
