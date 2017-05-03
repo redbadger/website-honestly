@@ -13,13 +13,13 @@ import Five from './2015';
 import Six from './2016';
 import ImageMobile from './mobileImage';
 
-import Image2010 from './2010/2010.jpg';
-import Image2011 from './2011/2011.jpg';
+import Image2010 from './2010/2010.png';
+import Image2011 from './2011/2011.png';
 import Image2012 from './2012/2012.png';
 import Image2013 from './2013/2013.png';
 import Image2014 from './2014/2014.png';
-import Image2015 from './2015/2015.jpg';
-import Image2016 from './2016/2016.jpg';
+import Image2015 from './2015/2015.png';
+import Image2016 from './2016/2016.png';
 import ClientOnly from '../../../components/clientOnly';
 
 class TimelineSlice extends React.Component {

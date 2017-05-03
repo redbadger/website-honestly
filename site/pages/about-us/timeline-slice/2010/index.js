@@ -1,5 +1,5 @@
 import React from 'react';
-import image from './2010.jpg';
+import image from './2010.png';
 import Content from '../content';
 
 const Zero = () => {

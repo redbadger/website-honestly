@@ -1,5 +1,5 @@
 import React from 'react';
-import image from './2011.jpg';
+import image from './2011.png';
 import Content from '../content';
 
 const One = () => {
