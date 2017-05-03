@@ -16,7 +16,6 @@ const Four = () => {
       fact={fact}
       image={image}
       mobileImage={image}
-      flip
     />
   );
 };
