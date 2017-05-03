@@ -3,9 +3,9 @@ import SwipeableViews from 'react-swipeable-views';
 import styles from './style.css';
 import Image2010 from '../2010/2010.jpg';
 import Image2011 from '../2011/2011.jpg';
-import Image2012 from '../2012/2012.png';
-import Image2013 from '../2013/2013.png';
-import Image2014 from '../2014/2014.png';
+import Image2012 from '../2012/2012-mobile.png';
+import Image2013 from '../2013/2013-mobile.png';
+import Image2014 from '../2014/2014-mobile.png';
 import Image2015 from '../2015/2015.jpg';
 import Image2016 from '../2016/2016.jpg';
 

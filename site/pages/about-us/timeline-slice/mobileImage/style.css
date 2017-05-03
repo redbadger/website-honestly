@@ -14,24 +14,24 @@
 }
 
 .image {
-  position: relative;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  max-height: 340px;
-  width: auto;
+  /* position: relative; */
+  /* margin-left: 50%; */
+  /* transform: translateX(-50%); */
+  /* max-height: 340px; */
+  width: 100%;
   padding: 20px 10px 0 10px;
 }
 
-@media mediumScreen {
-  .mobileImage {
-    margin-bottom: -70px;
-  }
+/* @media mediumScreen { */
+/*   .mobileImage { */
+/*     margin-bottom: -70px; */
+/*   } */
 
-  .mobileImageWrapper {
-    width: 460px;
-    margin: auto;
-  }
-}
+/*   .mobileImageWrapper { */
+/*     width: 460px; */
+/*     margin: auto; */
+/*   } */
+/* } */
 
 @media largeScreen{
   .image {

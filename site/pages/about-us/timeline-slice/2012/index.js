@@ -1,5 +1,6 @@
 import React from 'react';
 import image from './2012.png';
+import mobileImage from './2012-mobile.png';
 import Content from '../content';
 
 const Two = () => {
@@ -15,7 +16,7 @@ const Two = () => {
       text={text}
       fact={fact}
       image={image}
-      mobileImage={image}
+      mobileImage={mobileImage}
     />
   );
 };
