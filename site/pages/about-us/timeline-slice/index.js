@@ -44,7 +44,7 @@ class TimelineSlice extends React.Component {
             <ImageMobile index={currentIndex} onChangeIndex={this.setPage} />
             <Navigator currentIndex={currentIndex} onClick={this.setPage} />
             <div className={styles.content}>
-              <SwipeableViews index={currentIndex} onChangeIndex={this.setPage} animateHeight>
+              <SwipeableViews index={currentIndex} onChangeIndex={this.setPage}>
                 <Zero />
                 <One />
                 <Two />
