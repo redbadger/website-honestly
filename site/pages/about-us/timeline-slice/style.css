@@ -13,6 +13,10 @@
   margin: auto;
 }
 
+.content div div {
+  height: auto;
+}
+
 .image{
   width: 100%;
 }
