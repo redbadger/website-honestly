@@ -22,16 +22,16 @@
   padding: 20px 10px 0 10px;
 }
 
-/* @media mediumScreen { */
-/*   .mobileImage { */
-/*     margin-bottom: -70px; */
-/*   } */
+@media mediumScreen {
+  .mobileImage {
+    margin-bottom: -70px;
+  }
 
-/*   .mobileImageWrapper { */
-/*     width: 460px; */
-/*     margin: auto; */
-/*   } */
-/* } */
+  .mobileImageWrapper {
+    width: 460px;
+    margin: auto;
+  }
+}
 
 @media largeScreen{
   .image {
