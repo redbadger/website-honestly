@@ -1,5 +1,5 @@
 @value mediumScreen, largeScreen, contentMaxWidth from "../../../css/_sizes.css";
-@value badgerWhite, badgerRedOnBlack, badgerBlack, scorpian from "../../../css/_colors.css";
+@value badgerRed, badgerWhite, badgerRedOnBlack, badgerBlack, scorpian from "../../../css/_colors.css";
 
 .principles {
   background:badgerBlack;
@@ -25,15 +25,15 @@
   padding-bottom: 10px;
 }
 
-.buttons{
+.buttons {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
-.link{
+.link {
   composes: primaryButton from "../../../css/_links.css";
-  background-color: badgerRedOnBlack;
+  background-color: badgerRed;
   margin-right: 20px;
   margin-bottom: 20px;
 }

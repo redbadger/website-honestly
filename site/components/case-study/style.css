@@ -1,4 +1,4 @@
-@value badgerRedOnBlack, badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
+@value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
 .arrow svg {
@@ -101,7 +101,7 @@
 
 .button {
   composes: primaryButton from "../../css/_links.css";
-  background-color: badgerRedOnBlack;
+  background-color: badgerRed;
 }
 
 @media mediumScreen  {

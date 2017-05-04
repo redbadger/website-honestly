@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack, scorpian from "./_colors.css";
+@value badgerRed, badgerWhite, badgerRedOnWhite, badgerBlack, scorpian from "./_colors.css";
 @value inputHeight, linkSize from "./_sizes.css";
 
 /*
@@ -38,7 +38,7 @@
 .primaryButton {
   composes: boldSansSerif from "./typography/_fonts.css";
   font-size: linkSize;
-  background-color: badgerRedOnWhite;
+  background-color: badgerRed;
   color: badgerWhite;
   text-align: center;
   padding: 0 20px;
@@ -56,7 +56,7 @@
 .smallButton {
   composes: boldSansSerif from "./typography/_fonts.css";
   font-size: 18px;
-  background-color: badgerRedOnWhite;
+  background-color: badgerRed;
   color: badgerWhite;
   text-align: center;
   padding: 0 14px;

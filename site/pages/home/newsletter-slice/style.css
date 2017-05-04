@@ -1,4 +1,4 @@
-@value badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRedOnWhite from "../../../css/_colors.css";
+@value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRedOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
 
 .newsletter {
@@ -85,7 +85,7 @@
 
 .submitButton {
   composes: primaryButton from '../../../css/_links.css';
-  background-color: badgerRedOnBlack;
+  background-color: badgerRed !important;
   margin: 0 auto 10px;
   display: block;
   cursor: pointer;
