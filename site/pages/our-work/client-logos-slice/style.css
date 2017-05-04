@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
+@value badgerBlack, badgerWhite, linesOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .caseStudyContainer {

@@ -1,5 +1,5 @@
 @value mediumScreen, largeScreen, contentMaxWidth from "../../../css/_sizes.css";
-@value badgerWhite, badgerRed, badgerRedOnBlack, badgerBlack, scorpian from "../../../css/_colors.css";
+@value badgerWhite, badgerRedOnBlack, badgerBlack, scorpian from "../../../css/_colors.css";
 
 .principles {
   background:badgerBlack;

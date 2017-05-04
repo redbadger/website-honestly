@@ -1,4 +1,4 @@
-@value badgerRed, badgerBlack, badgerWhite from "../../css/_colors.css";
+@value badgerRedOnWhite, badgerBlack, badgerWhite from "../../css/_colors.css";
 @value largeScreen from "../../css/_sizes.css";
 @value red from "../../components/variables/colors.css";
 
@@ -35,12 +35,12 @@
 
 .eventBody a {
   color: badgerBlack;
-  border-bottom: 1px solid badgerRed;
+  border-bottom: 1px solid badgerRedOnWhite;
   transition: all 0.2s ease;
 }
 
 .eventBody a:hover {
-  color: badgerRed;
+  color: badgerRedOnWhite;
 }
 
 .h1 {

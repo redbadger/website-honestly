@@ -1,4 +1,4 @@
-@value badgerRed, badgerWhite, badgerBlack from "../../css/_colors.css";
+@value badgerRedOnWhite, badgerWhite, badgerBlack from "../../css/_colors.css";
 @value zindexOverlay from "../../css/_zindex.css";
 @value mediumScreen from "../../css/_sizes.css";
 
@@ -40,7 +40,7 @@
 .mediumScreenNav a:hover,
 .smallScreenNavContainer a,
 .activeNavLink {
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnWhite;
 }
 
 .overlay {
@@ -129,7 +129,7 @@
 .triggerLabel {
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnWhite;
   line-height: 1em;
   cursor: pointer;
   margin-bottom: 6px;

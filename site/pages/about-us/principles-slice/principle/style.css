@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerRedOnBlack, badgerBlack from "../../../../css/_colors.css";
+@value badgerWhite, badgerRedOnBlack, badgerBlack from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../../../css/_sizes.css";
 
 .container{

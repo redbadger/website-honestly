@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, badgerRed, linesOnWhite from '../../../../css/_colors.css';
+@value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .caseStudy {
@@ -119,7 +119,7 @@
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   display: block;
-  color: badgerRed;
+  color: badgerRedOnWhite;
 }
 
 .content__secondaryTitle {
@@ -168,7 +168,7 @@
 .listBox__heading {
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  color: badgerRed;
+  color: badgerRedOnWhite;
   text-transform: uppercase;
 }
 

@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
+@value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
 
 .timeline{

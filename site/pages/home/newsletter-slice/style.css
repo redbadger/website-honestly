@@ -1,4 +1,4 @@
-@value badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRed from "../../../css/_colors.css";
+@value badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRedOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
 
 .newsletter {
@@ -13,7 +13,7 @@
 .beforeErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
-  color: badgerRed;
+  color: badgerRedOnWhite;
   text-align: left;
   padding-top: 5px;
 }
@@ -76,7 +76,7 @@
 }
 
 .beforeFormError {
-  border: 2px solid badgerRed;
+  border: 2px solid badgerRedOnWhite;
 }
 
 .afterFormError {

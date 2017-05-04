@@ -1,4 +1,4 @@
-@value badgerRed, badgerRedOnBlack, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
+@value badgerRedOnBlack, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize, containerMaxWidth from "../../css/_sizes.css";
 
 .screenReaderText {

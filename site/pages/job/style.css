@@ -1,5 +1,5 @@
 @value tablet from "../../components/variables/breakpoints.css";
-@value badgerWhite, badgerBlack, badgerRed from "../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRedOnWhite from "../../css/_colors.css";
 
 .jobTitle {
   composes: serif from "../../css/typography/_fonts.css";
@@ -34,7 +34,7 @@
 
 .linkBack {
   composes: bodyLink from "../../css/_links.css";
-  border-bottom: 1px solid badgerRed;
+  border-bottom: 1px solid badgerRedOnWhite;
   display: inline-block;
   margin-bottom: 25px;
   composes: sansSerif from "../../css/typography/_fonts.css";

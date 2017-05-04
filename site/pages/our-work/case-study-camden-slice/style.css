@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
+@value badgerBlack, badgerWhite, badgerRedOnWhite, linesOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .caseStudyContainer {
@@ -57,7 +57,7 @@ _:-ms-fullscreen, :root .imageLink {
 
 .readmore {
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnWhite;
   text-decoration: none;
   color: badgerBlack;
   display: inline-block;
@@ -65,7 +65,7 @@ _:-ms-fullscreen, :root .imageLink {
 }
 
 .readmore:hover {
-  color: badgerRed;
+  color: badgerRedOnWhite;
 }
 
 .links {
