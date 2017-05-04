@@ -16,6 +16,7 @@ const Five = () => {
       fact={fact}
       image={image}
       mobileImage={image}
+      flip
     />
   );
 };

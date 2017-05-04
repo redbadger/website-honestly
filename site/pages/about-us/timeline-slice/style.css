@@ -22,27 +22,36 @@
 }
 
 .content {
-  padding: 0px;
   background: badgerWhite;
-  padding-bottom: 160px;
+  padding-bottom: 40px;
 }
 
 @media mediumScreen {
-  .image{
-    display: none;
-  }
-
   .content {
     width: 100%;
-    padding-top: 105px;
-    padding-bottom: 296px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .imageWrapper {
+    width: 460px;
+    margin: auto;
   }
 }
 
 @media largeScreen {
+  .image {
+    display: none;
+  }
+
+  .imageWrapper {
+    width: auto;
+  }
+
   .content {
     width: 65%;
     margin: auto;
+    padding-top: 120px;
     padding-bottom: 70px;
   }
 }
