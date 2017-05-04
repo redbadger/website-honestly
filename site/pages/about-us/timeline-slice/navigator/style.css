@@ -45,26 +45,9 @@
   left: 100%;
 }
 
-.fillingLine {
-  position: relative;
-  height: 2px;
-  background-color: linesOnWhite;
-  width: 100%;
-  top: -2px;
-  left: 0;
-  transform-origin: left center;
-  transition: width 0.3s ease-in-out;
-}
-
 @media mediumScreen{
   .container{
     width: 233px;
     top: 80px;
-  }
-}
-
-@media largeScreen {
-  .fillingLine {
-    top: -1px;
   }
 }

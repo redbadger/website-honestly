@@ -4,32 +4,6 @@ import Item from './item';
 import Arrow from './arrow';
 
 const TimelineNav = ({ currentIndex, onClick }) => {
-  let scale = 0;
-  switch (currentIndex) {
-    case 0:
-      scale = '0%';
-      break;
-    case 1:
-      scale = '16%';
-      break;
-    case 2:
-      scale = '33%';
-      break;
-    case 3:
-      scale = '49%';
-      break;
-    case 4:
-      scale = '66%';
-      break;
-    case 5:
-      scale = '82%';
-      break;
-    case 6:
-      scale = '100%';
-      break;
-    default:
-  }
-
   return (
     <div className={styles.navigator}>
       <div className={styles.container}>
@@ -43,7 +17,6 @@ const TimelineNav = ({ currentIndex, onClick }) => {
           <Item value={5} onClick={onClick} currentIndex={currentIndex} />
           <Item value={6} onClick={onClick} currentIndex={currentIndex} />
         </div>
-        <div className={styles.fillingLine} style={{ width: `${scale}` }} />
         <Arrow direction="right" onClick={onClick} currentIndex={currentIndex} />
       </div>
     </div>

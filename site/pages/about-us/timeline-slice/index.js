@@ -25,7 +25,7 @@ import ClientOnly from '../../../components/clientOnly';
 class TimelineSlice extends React.Component {
 
   state = {
-    currentIndex: 6,
+    currentIndex: 0,
   };
 
 
