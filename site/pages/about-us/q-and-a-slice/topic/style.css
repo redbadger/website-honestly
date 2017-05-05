@@ -1,0 +1,104 @@
+@value badgerBlack, badgerRed from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.topic__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic__question:hover, .topic__more:hover {
+  cursor: pointer;
+}
+
+.topic__heading {
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  display: block;
+  width: 100%;
+}
+
+.topic__more {
+  display: block;
+  height: 21px;
+  width: 21px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: 0;
+}
+
+.topic__more__hide {
+  display: none;
+}
+
+.topic__minus:before, .topic__plus:before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  border-top: 5px solid badgerBlack;
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.topic__plus:after {
+  content: '';
+  width: 1px;
+  height: 20px;
+  border-right: 5px solid badgerBlack;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+
+.topic__answer p {
+  padding-bottom: 20px;
+}
+
+.topic__answer__visible {
+  composes: topic__answer;
+  display: block;
+}
+
+.topic__answer__hidden {
+  composes: topic__answer;
+  display: none;
+}
+
+.topic__answer a {
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRed;
+}
+
+.topic__answer a:hover {
+  color: badgerRed;
+}
+
+.topic__answer__strong {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+}
+
+@media mediumScreen {
+  .topic__heading {
+    padding-right: 20px;
+    /* composes: fontS from "../../../../css/typography/_fonts.css"; */
+  }
+
+  .topic__answer {
+    padding-right: 20px;
+    width: calc((100% + 20px) * 4 / 5);
+  }
+}
+
+@media largeScreen {
+  .topic__answer {
+    width: calc((100% + 20px) * 3 / 4);
+  }
+}

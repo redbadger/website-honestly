@@ -1,0 +1,65 @@
+@value badgerBlack, badgerWhite from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.qAndA__container {
+  padding: 20px 10px 10px 10px;
+}
+
+.qAndA {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+  composes: dividerWhite from "../../../css/_divider.css";
+  background-color: badgerWhite;
+  color: badgerBlack;
+}
+
+.qAndA__heading {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontL from "../../../css/typography/_fonts.css";
+  padding-bottom: 10px;
+}
+
+.qAndA__categoryList {
+  border-bottom: 2px solid badgerBlack;
+  margin-bottom: 30px;
+}
+
+.qAndA__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media mediumScreen {
+  .qAndA__heading {
+    padding-bottom: 20px;
+  }
+
+  .qAndA__container {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .qAndA__categoryList {
+    margin-bottom: 40px;
+  }
+}
+
+@media largeScreen {
+  .qAndA__heading {
+    padding-bottom: 40px;
+  }
+
+  .qAndA__wrapper {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .qAndA__container {
+    padding-left: calc(100% / 12 + 10px);
+    padding-right: calc(100% / 12 + 10px);
+    padding-top: 60px;
+  }
+
+  .qAndA__categoryList {
+    margin-bottom: 70px;
+  }
+}

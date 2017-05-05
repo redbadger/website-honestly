@@ -18,7 +18,7 @@ const sortEvents = list =>
   list.sort((a, b) =>
     new Date(b.startDateTime.iso) - new Date(a.startDateTime.iso));
 
-export const selectValidEvents = list =>
+const selectValidEvents = list =>
   list.filter(listItem => !!listItem.startDateTime &&
     !!listItem.startDateTime.iso);
 
@@ -58,6 +58,15 @@ const sortBadgers = badgers => {
     .sort((badgerA, badgerB) => badgerA.order - badgerB.order)
     .concat(shuffle(randomBadgers));
 };
+
+const selectValidQandAs = qAndAs => (
+  qAndAs
+    .map(category => ({
+      ...category,
+      topics: category.topics.filter(topic => topic.answer && topic.question),
+    }))
+    .filter(category => category.name && category.topics.length)
+);
 
 const basicFields = `
   id
@@ -130,15 +139,25 @@ export function getData() {
           order
         }
       }
+      allQnA {
+        slug
+        name
+        topics {
+          slug
+          question
+          answer
+        }
+      }
     }
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
           .then(handleErrors)
           .then(response => response.json())
-          .then(({ data: { allEvents, allBadgers } }) => ({
+          .then(({ data: { allEvents, allBadgers, allQnA } }) => ({
             events: sortEvents(selectValidEvents(allEvents)),
             badgers: sortBadgers(allBadgers),
             categories: getCategories(allBadgers),
+            qAndAs: selectValidQandAs(allQnA),
           }));
 }
