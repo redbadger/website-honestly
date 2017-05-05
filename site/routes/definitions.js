@@ -39,10 +39,11 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'About us',
     key: 'aboutUsPage',
     route: 'about-us',
-    stateToProps: ({ contactUsURL, tweets, instagramPosts }) => ({
+    stateToProps: ({ contactUsURL, tweets, instagramPosts, qAndAs }) => ({
       contactUsURL,
       tweets,
       instagramPosts,
+      qAndAs,
     }),
   },
   {
