@@ -59,14 +59,17 @@ const sortBadgers = badgers => {
     .concat(shuffle(randomBadgers));
 };
 
-const selectValidQandAs = qAndAs => (
-  qAndAs
+const selectValidQandAs = qAndAs => {
+  return qAndAs
     .map(category => ({
       ...category,
-      topics: category.topics.filter(topic => topic.answer && topic.question),
+      topics: category.topics
+                .filter(topic => topic.answer && topic.question)
+                .sort((topA, topB) => topA.order - topB.order),
     }))
     .filter(category => category.name && category.topics.length)
-);
+    .sort((catA, catB) => catA.order - catB.order);
+};
 
 const basicFields = `
   id
@@ -146,7 +149,9 @@ export function getData() {
           slug
           question
           answer
+          order
         }
+        order
       }
     }
   `;
