@@ -40,12 +40,13 @@
 .category {
   composes: fontXS from "../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-weight: bold;
   text-transform: uppercase;
   padding: 6px 20px 4px 20px;
   border: 2px solid badgerRed;
   display: block;
   margin-bottom: 20px;
-  font-size: 18.66px;
+  font-size: 16px;
 }
 
 .category.active {
@@ -71,5 +72,9 @@ a.category.active {
     max-width: 1400px;
     margin: 0 auto;
     padding-bottom: 30px;
+  }
+
+  .category {
+    font-size: 18.66px;
   }
 }
