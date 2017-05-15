@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, badgerRed from "../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRedOnWhite from "../../css/_colors.css";
 @value mediumScreen from "../../css/_sizes.css";
 
 .categories {
@@ -40,7 +40,7 @@
   font-size: 16px;
   line-height: 1.0;
   color: badgerBlack;
-  border: solid 2px badgerRed;
+  border: solid 2px badgerRedOnWhite;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
@@ -54,7 +54,7 @@
 
 .authorLinks a {
   color: badgerBlack;
-  border-bottom: solid 2px badgerRed;
+  border-bottom: solid 2px badgerRedOnWhite;
 }
 
 .authorLink {

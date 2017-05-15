@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerRedOnBlack, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
 .pageHeaderContainer {
@@ -59,13 +59,17 @@ a {
 }
 
 .caseStudyCompany {
-  color: badgerRed;
+  color: badgerRedOnWhite;
   composes: fontXS from "../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 5px;
   width: 100%;
+}
+
+.caseStudyCompany--onBlack {
+  color: badgerRedOnBlack;
 }
 
 .imageLink {
@@ -84,7 +88,7 @@ a {
 }
 
 .caseStudyTitle:hover {
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnWhite;
 }
 
 .caseStudyDescription {

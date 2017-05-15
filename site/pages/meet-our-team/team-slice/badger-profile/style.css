@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, badgerRed, daveGreen from "../../../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRedOnWhite, daveGreen from "../../../../css/_colors.css";
 
 .badgerProfile {
   text-align: left;
@@ -12,7 +12,7 @@
 }
 
 .badgerImage:hover {
-  box-shadow: 7px 7px badgerRed;
+  box-shadow: 7px 7px badgerRedOnWhite;
 }
 
 .badgerWrapper {

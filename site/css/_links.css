@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, badgerBlack, scorpian from "./_colors.css";
+@value badgerRed, badgerWhite, badgerRedOnWhite, badgerBlack, scorpian from "./_colors.css";
 @value inputHeight, linkSize from "./_sizes.css";
 
 /*
@@ -16,21 +16,21 @@
 }
 
 .bodyLink:hover {
-  color: badgerRed;
+  color: badgerRedOnWhite;
 }
 
 .bodyUnderlineLink {
   color: badgerBlack;
-  border-bottom: 1px solid badgerRed;
+  border-bottom: 1px solid badgerRedOnWhite;
   transition: all 0.2s ease;
 }
 
 .bodyUnderlineLink:hover {
-  color: badgerRed;
+  color: badgerRedOnWhite;
 }
 
 .redUnderlineLink {
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnWhite;
   color: badgerWhite;
   text-decoration: none;
 }

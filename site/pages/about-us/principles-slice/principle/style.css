@@ -1,13 +1,11 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
+@value badgerWhite, badgerRedOnBlack, badgerBlack from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../../../css/_sizes.css";
 
 .container{
-  display: flex; 
+  display: flex;
   padding-top: 20px;
 }
 
-.leftCol{
-}
 .rightCol{
   padding-left: 30px;
   max-width: 670px;
@@ -16,7 +14,7 @@
   padding-top: 5px;
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
-  border-bottom: 5px solid #fc1d42; 
+  border-bottom: 5px solid badgerRedOnBlack;
   width: 20px;
   text-align: center;
 }
@@ -31,11 +29,4 @@
   composes: sansSerif from "../../../../css/typography/_fonts.css";
   composes: fontXS from "../../../../css/typography/_fonts.css";
   color: badgerWhite;
-}
-
-
-
-@media mediumScreen {
-  .container {
-  }
 }
