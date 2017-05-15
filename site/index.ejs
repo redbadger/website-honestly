@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="accessibilityDay">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
@@ -39,8 +39,51 @@
         ga('create', 'UA-16654919-1', 'auto');
         ga('send', 'pageview');
     </script><% } %>
+    <style>
+      .accessibilityDay {
+        filter: grayscale(100%);
+      }
+
+      .accessibilityBar {
+        padding: 20px;
+        height: 80px;
+        background-color: #22d59b;
+      }
+
+      .accessibilityBar button {
+        display: inline-block;
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-weight: 800px;
+        font-size: 16px;
+        padding: 0 10px;
+        height: 40px;
+        background-color: #212121;
+        color: #f8f8f8;
+        border: none;
+        margin-right: 20px;
+      }
+
+      .accessibilityBar button:hover {
+        background-color: #606060;
+      }
+
+      .accessibilityBar p {
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-weight: 800px;
+        display: inline-block;
+      }
+    </style>
+    <script>
+      function toggleGreyscale() {
+        document.documentElement.classList.toggle('accessibilityDay');
+      }
+    </script>
   </head>
   <body>
+    <div class="accessibilityBar">
+      <button onClick="toggleGreyscale()">Gimme back my colour</button>
+      <p>Some text about what this is, Global Accessibility Day etc<p>
+    </div>
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
     </div>
