@@ -2,24 +2,38 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 @value timelineContainer from "../../../../css/_zindex.css";
 
-.mobileImage {
-  
-}
 .mobileImage:after{
   content: '';
   background-color: badgerWhite;
   width: 90%;
   position: relative;
   bottom: 25px;
-  height: 20px;
+  height: 15px;
   display: block;
   margin: auto;
 }
+
 .image {
   width: 100%;
+  padding: 30px 20px 0 20px;
 }
 
-@media mediumScreen{
+@media mediumScreen {
+  .image {
+    padding-top: 40px;
+  }
+
+  .mobileImage {
+    margin-bottom: -70px;
+  }
+
+  .mobileImageWrapper {
+    width: 460px;
+    margin: auto;
+  }
+}
+
+@media largeScreen{
   .image {
     display: none;
   }
@@ -27,6 +41,7 @@
   .mobileImage{
     display: none;
   }
+
   .mobileImage:after{
     display: none;
   }

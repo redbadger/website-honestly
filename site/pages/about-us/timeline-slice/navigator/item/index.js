@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.css';
 
-const TimelineNav = ({ value, onClick, currentIndex, children }) => {
+const TimelineNav = ({ value, onClick, currentIndex }) => {
   let className = styles.old;
   if (value === currentIndex) {
     className = styles.active;
@@ -16,7 +16,6 @@ const TimelineNav = ({ value, onClick, currentIndex, children }) => {
   return (
     <button tabIndex={0} className={className} onClick={click}>
       <span />
-      <a className={styles.text}>{children}</a>
     </button>
   );
 };
@@ -26,7 +25,6 @@ TimelineNav.propTypes = {
   value: React.PropTypes.number.isRequired,
   currentIndex: React.PropTypes.number.isRequired,
   onClick: React.PropTypes.func.isRequired,
-  children: React.PropTypes.string.isRequired,
 };
 
 export default TimelineNav;
