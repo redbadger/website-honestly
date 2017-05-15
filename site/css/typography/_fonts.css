@@ -51,6 +51,7 @@
 @font-face {
   font-family: 'ProximaNova-Bold';
   src: url('./fonts/322627_0_0.woff2') format('woff2'), url('./fonts/322627_0_0.woff') format('woff'), url('./fonts/322627_0_0.ttf') format('truetype');
+  font-weight: bold;
 }
 
 @font-face {
@@ -74,7 +75,6 @@
 
 .boldSansSerif {
   font-family: 'ProximaNova-Bold', sans-serif;
-  font-weight: bold;
 }
 
 .fontXL {
