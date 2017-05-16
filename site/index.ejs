@@ -57,6 +57,7 @@
         font-weight: 800px;
         font-size: 16px;
         padding: 0 10px;
+        min-width: 200px;
         height: 40px;
         background-color: #212121;
         color: #f8f8f8;
@@ -81,7 +82,7 @@
           z-index: 9999;
           top: 0;
           display: flex;
-          align-items: baseline;
+          align-items: center;
         }
 
         .accessibilityBar button {
@@ -95,9 +96,8 @@
     </style>
     <script>
       var colourOnButtonText = 'Make my day accessible';
-      var colourOnDescription = 'Lorem ipsum dolor';
-      var colourOffButtonText = 'Gimme back my colour';
-      var colourOffDescription = 'Some text about what this is, Global Accessibility Day etc';
+      var colourOffButtonText = 'Switch back to colour';
+      var colourDescription = 'What’s black and white and read all over? Us. We’re grey scale to promote Global Accessibility Awareness Day.';
 
       function initialiseAccessibilityBar() {
         document.getElementById('accessibilityDayButton').style.display = 'block';
@@ -124,8 +124,8 @@
   </head>
   <body onload="initialiseAccessibilityBar()">
     <div class="accessibilityBar">
-      <button id="accessibilityDayButton" onClick="toggleGreyscale()">Gimme back my colour</button>
-      <p id="accessibilityDayDescription">Javascript off text</p>
+      <button id="accessibilityDayButton" onClick="toggleGreyscale()">Switch back to colour</button>
+      <p id="accessibilityDayDescription">What’s black and white and read all over? Us. We’re grey scale to promote Global Accessibility Awareness Day.</p>
     </div>
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
