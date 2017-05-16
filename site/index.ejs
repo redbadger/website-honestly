@@ -45,18 +45,14 @@
       }
 
       .accessibilityBar {
-        position: fixed;
-        top: 0;
         width: 100%;
         padding: 20px;
-        height: 80px;
-        z-index: 9999;
-        margin-bottom: 80px;
         background-color: #22d59b;
+        text-align: center;
       }
 
       .accessibilityBar button {
-        display: inline-block;
+        display: block;
         font-family: 'ProximaNova-Bold', sans-serif;
         font-weight: 800px;
         font-size: 16px;
@@ -65,7 +61,7 @@
         background-color: #212121;
         color: #f8f8f8;
         border: none;
-        margin-right: 20px;
+        margin: 0 auto 20px;
       }
 
       .accessibilityBar button:hover {
@@ -78,8 +74,22 @@
         display: inline-block;
       }
 
-      .js-app {
-        margin-top: 80px;
+      @media screen and (min-width: 690px) {
+        .accessibilityBar {
+          text-align: left;
+          position: fixed;
+          z-index: 9999;
+          top: 0;
+        }
+
+        .accessibilityBar button {
+          display: inline-block;
+          margin: 0 20px 0 0;
+        }
+
+        .js-app {
+          padding-top: 80px;
+        }
       }
     </style>
     <script>
