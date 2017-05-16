@@ -85,13 +85,30 @@
     <script>
       function toggleGreyscale() {
         document.documentElement.classList.toggle('accessibilityDay');
+
+        var colourOnButtonText = 'Make my day accessible';
+        var colourOnDescription = 'Lorem ipsum dolor';
+        var colourOffButtonText = 'Gimme back my colour';
+        var colourOffDescription = 'Some text about what this is, Global Accessibility Day etc';
+        var button = document.getElementById('accessibilityDayButton');
+        var description = document.getElementById('accessibilityDayDescription');
+        if (button.innerHTML == colourOffButtonText) {
+          button.innerHTML = colourOnButtonText;
+        } else {
+          button.innerHTML = colourOffButtonText;
+        }
+        if (description.innerHTML == colourOffDescription) {
+          description.innerHTML = colourOnDescription;
+        } else {
+          description.innerHTML = colourOffDescription;
+        }
       }
     </script>
   </head>
   <body>
     <div class="accessibilityBar">
-      <button onClick="toggleGreyscale()">Gimme back my colour</button>
-      <p>Some text about what this is, Global Accessibility Day etc</p>
+      <button id="accessibilityDayButton" onClick="toggleGreyscale()">Gimme back my colour</button>
+      <p id="accessibilityDayDescription">Some text about what this is, Global Accessibility Day etc</p>
     </div>
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
