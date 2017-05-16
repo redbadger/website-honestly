@@ -97,27 +97,19 @@
     <script>
       var colourOnButtonText = 'Make my day accessible';
       var colourOffButtonText = 'Switch back to colour';
-      var colourDescription = 'What’s black and white and read all over? Us. We’re grey scale to promote Global Accessibility Awareness Day.';
 
       function initialiseAccessibilityBar() {
         document.getElementById('accessibilityDayButton').style.display = 'block';
-        document.getElementById('accessibilityDayDescription').innerHTML = colourOnDescription;
       }
 
       function toggleGreyscale() {
         document.documentElement.classList.toggle('accessibilityDay');
 
         var button = document.getElementById('accessibilityDayButton');
-        var description = document.getElementById('accessibilityDayDescription');
         if (button.innerHTML == colourOffButtonText) {
           button.innerHTML = colourOnButtonText;
         } else {
           button.innerHTML = colourOffButtonText;
-        }
-        if (description.innerHTML == colourOffDescription) {
-          description.innerHTML = colourOnDescription;
-        } else {
-          description.innerHTML = colourOffDescription;
         }
       }
     </script>
