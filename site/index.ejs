@@ -45,8 +45,13 @@
       }
 
       .accessibilityBar {
+        position: fixed;
+        top: 0;
+        width: 100%;
         padding: 20px;
         height: 80px;
+        z-index: 9999;
+        margin-bottom: 80px;
         background-color: #22d59b;
       }
 
@@ -71,6 +76,10 @@
         font-family: 'ProximaNova-Bold', sans-serif;
         font-weight: 800px;
         display: inline-block;
+      }
+
+      .js-app {
+        margin-top: 80px;
       }
     </style>
     <script>
