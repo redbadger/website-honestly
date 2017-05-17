@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="accessibilityDay">
+<html lang="en">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
@@ -113,7 +113,7 @@
       }
 
       function toggleGreyscale() {
-        document.documentElement.classList.toggle('accessibilityDay');
+        document.body.classList.toggle('accessibilityDay');
 
         var button = document.getElementById('accessibilityDayButton');
         if (button.innerHTML == colourOffButtonText) {
@@ -124,7 +124,7 @@
       }
     </script>
   </head>
-  <body onload="initialiseAccessibilityBar()">
+  <body class="accessibilityDay" onload="initialiseAccessibilityBar()">
     <div class="accessibilityBar">
       <button id="accessibilityDayButton" onClick="toggleGreyscale()">Switch back to colour</button>
       <p id="accessibilityDayDescription">What’s black and white and read all over? Us. We’re greyscale to promote Global Accessibility Awareness Day.</p>
