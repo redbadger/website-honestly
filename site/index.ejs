@@ -123,10 +123,10 @@
         }
 
         if (getCookieValue('accessibilityDay') === 'off') {
-          document.documentElement.classList.remove('accessibilityDay');
+          document.body.classList.remove('accessibilityDay');
           button.innerHTML = colourOnButtonText;
         } else {
-          document.documentElement.classList.add('accessibilityDay');
+          document.body.classList.add('accessibilityDay');
           button.innerHTML = colourOffButtonText;
         }
       }
@@ -134,7 +134,7 @@
       function toggleGreyscale() {
         var button = document.getElementById('accessibilityDayButton');
 
-        document.documentElement.classList.toggle('accessibilityDay');
+        document.body.classList.toggle('accessibilityDay');
 
         if (getCookieValue('accessibilityDay') === 'off') {
           document.cookie = 'accessibilityDay=; path=/; expires=' + new Date(0).toUTCString();
