@@ -107,7 +107,13 @@
         return b ? b.pop() : '';
       }
 
+      function accessibilityDayOff() {
+        return getCookieValue('accessibilityDay') === 'off';
+      }
+
       function initialiseAccessibilityBar() {
+        var button = document.getElementById('accessibilityDayButton');
+
         document.getElementById('accessibilityDayButton').style.display = 'block';
 
         if (!!window.MSInputMethodContext && !!document.documentMode) {
@@ -118,23 +124,25 @@
 
         if (getCookieValue('accessibilityDay') === 'off') {
           document.documentElement.classList.remove('accessibilityDay');
+          button.innerHTML = colourOnButtonText;
         } else {
           document.documentElement.classList.add('accessibilityDay');
+          button.innerHTML = colourOffButtonText;
         }
-
       }
 
       function toggleGreyscale() {
-        document.body.classList.toggle('accessibilityDay');
+        var button = document.getElementById('accessibilityDayButton');
+
+        document.documentElement.classList.toggle('accessibilityDay');
 
         if (getCookieValue('accessibilityDay') === 'off') {
-          document.cookie = 'accessibilityDay=';
+          document.cookie = 'accessibilityDay=; path=/; expires=' + new Date(0).toUTCString();
         } else {
-          document.cookie = 'accessibilityDay=off';
+          document.cookie = 'accessibilityDay=off; path=/';
         }
 
 
-        var button = document.getElementById('accessibilityDayButton');
         if (button.innerHTML == colourOffButtonText) {
           button.innerHTML = colourOnButtonText;
         } else {
