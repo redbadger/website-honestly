@@ -118,7 +118,10 @@
 
         if (getCookieValue('accessibilityDay') === 'off') {
           document.documentElement.classList.remove('accessibilityDay');
+        } else {
+          document.documentElement.classList.add('accessibilityDay');
         }
+
       }
 
       function toggleGreyscale() {
