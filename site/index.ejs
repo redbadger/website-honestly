@@ -102,6 +102,11 @@
       var colourOnButtonText = 'Make my day accessible';
       var colourOffButtonText = 'Switch back to colour';
 
+      function getCookieValue(a) {
+        var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+      }
+
       function initialiseAccessibilityBar() {
         document.getElementById('accessibilityDayButton').style.display = 'block';
 
@@ -110,10 +115,21 @@
           var message = description.textContent;
           description.innerHTML = message.concat(' (We\'re sorry, but this feature is not supported in your browser)')
         }
+
+        if (getCookieValue('accessibilityDay') === 'off') {
+          document.documentElement.classList.remove('accessibilityDay');
+        }
       }
 
       function toggleGreyscale() {
         document.body.classList.toggle('accessibilityDay');
+
+        if (getCookieValue('accessibilityDay') === 'off') {
+          document.cookie = 'accessibilityDay=';
+        } else {
+          document.cookie = 'accessibilityDay=off';
+        }
+
 
         var button = document.getElementById('accessibilityDayButton');
         if (button.innerHTML == colourOffButtonText) {
