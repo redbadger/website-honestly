@@ -104,6 +104,12 @@
 
       function initialiseAccessibilityBar() {
         document.getElementById('accessibilityDayButton').style.display = 'block';
+
+        if (!!window.MSInputMethodContext && !!document.documentMode) {
+          var description = document.getElementById('accessibilityDayDescription');
+          var message = description.textContent;
+          description.innerHTML = message.concat(' (We\'re sorry, but this feature is not supported in your browser)')
+        }
       }
 
       function toggleGreyscale() {
