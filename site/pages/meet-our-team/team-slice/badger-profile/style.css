@@ -76,3 +76,11 @@
   display: inline-block;
   margin-right: 35px;
 }
+
+.name:hover {
+  text-decoration: underline badgerRedOnWhite;
+}
+
+.lastName:hover {
+  text-decoration: underline badgerRedOnWhite;
+}
