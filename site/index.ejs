@@ -26,58 +26,6 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
-    <script type="text/javascript">
-      var colourOnButtonText = 'Make my day accessible';
-      var colourOffButtonText = 'Switch back to colour';
-
-      function getCookieValue(a) {
-        var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
-        return b ? b.pop() : '';
-      }
-
-      function accessibilityDayOff() {
-        return getCookieValue('accessibilityDay') === 'off';
-      }
-
-      function initialiseAccessibilityBar() {
-        var button = document.getElementById('accessibilityDayButton');
-
-        document.getElementById('accessibilityDayButton').style.display = 'block';
-
-        if (!!window.MSInputMethodContext && !!document.documentMode) {
-          var description = document.getElementById('accessibilityDayDescription');
-          var message = description.textContent;
-          description.innerHTML = message.concat(' (We\'re sorry, but this feature is not supported in your browser)')
-        }
-
-        if (getCookieValue('accessibilityDay') === 'off') {
-          document.body.classList.remove('accessibilityDay');
-          button.innerHTML = colourOnButtonText;
-        } else {
-          document.body.classList.add('accessibilityDay');
-          button.innerHTML = colourOffButtonText;
-        }
-      }
-
-      function toggleGreyscale() {
-        var button = document.getElementById('accessibilityDayButton');
-
-        document.body.classList.toggle('accessibilityDay');
-
-        if (getCookieValue('accessibilityDay') === 'off') {
-          document.cookie = 'accessibilityDay=; path=/; expires=' + new Date(0).toUTCString();
-        } else {
-          document.cookie = 'accessibilityDay=off; path=/';
-        }
-
-
-        if (button.innerHTML == colourOffButtonText) {
-          button.innerHTML = colourOnButtonText;
-        } else {
-          button.innerHTML = colourOffButtonText;
-        }
-      }
-    </script>
     <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
     <% if (typeof tracking !== 'undefined' && tracking) { %>
@@ -91,71 +39,8 @@
         ga('create', 'UA-16654919-1', 'auto');
         ga('send', 'pageview');
     </script><% } %>
-    <style>
-      .accessibilityDay {
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-      }
-
-      .accessibilityBar {
-        width: 100%;
-        padding: 20px;
-        background-color: #22d59b;
-        text-align: center;
-      }
-
-      .accessibilityBar button {
-        display: none;
-        font-family: 'ProximaNova-Bold', sans-serif;
-        font-weight: 800px;
-        font-size: 16px;
-        padding: 0 10px;
-        min-width: 200px;
-        height: 40px;
-        background-color: #212121;
-        color: #f8f8f8;
-        border: none;
-        margin: 0 auto 20px;
-      }
-
-      .accessibilityBar button:hover {
-        background-color: #606060;
-      }
-
-      .accessibilityBar p {
-        font-family: 'ProximaNova-Bold', sans-serif;
-        font-weight: 800px;
-        display: block;
-      }
-
-      @media screen and (min-width: 690px) {
-        .accessibilityBar {
-          text-align: left;
-          position: fixed;
-          z-index: 9999;
-          top: 0;
-          display: flex;
-          align-items: center;
-        }
-
-        .accessibilityBar button {
-          margin: 0 20px 0 0;
-        }
-
-        .js-app {
-          padding-top: 80px;
-        }
-      }
-    </style>
   </head>
-  <body class="accessibilityDay" onload="initialiseAccessibilityBar()">
-    <div class="accessibilityBar">
-      <button id="accessibilityDayButton" onClick="toggleGreyscale()">Switch back to colour</button>
-      <p id="accessibilityDayDescription">What’s black and white and ‘read’ all over? Us! We’re greyscale to promote Global Accessibility Awareness Day.</p>
-    </div>
+  <body>
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
     </div>
