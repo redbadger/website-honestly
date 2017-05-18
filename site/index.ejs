@@ -26,6 +26,58 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
+    <script type="text/javascript">
+      var colourOnButtonText = 'Make my day accessible';
+      var colourOffButtonText = 'Switch back to colour';
+
+      function getCookieValue(a) {
+        var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+      }
+
+      function accessibilityDayOff() {
+        return getCookieValue('accessibilityDay') === 'off';
+      }
+
+      function initialiseAccessibilityBar() {
+        var button = document.getElementById('accessibilityDayButton');
+
+        document.getElementById('accessibilityDayButton').style.display = 'block';
+
+        if (!!window.MSInputMethodContext && !!document.documentMode) {
+          var description = document.getElementById('accessibilityDayDescription');
+          var message = description.textContent;
+          description.innerHTML = message.concat(' (We\'re sorry, but this feature is not supported in your browser)')
+        }
+
+        if (getCookieValue('accessibilityDay') === 'off') {
+          document.body.classList.remove('accessibilityDay');
+          button.innerHTML = colourOnButtonText;
+        } else {
+          document.body.classList.add('accessibilityDay');
+          button.innerHTML = colourOffButtonText;
+        }
+      }
+
+      function toggleGreyscale() {
+        var button = document.getElementById('accessibilityDayButton');
+
+        document.body.classList.toggle('accessibilityDay');
+
+        if (getCookieValue('accessibilityDay') === 'off') {
+          document.cookie = 'accessibilityDay=; path=/; expires=' + new Date(0).toUTCString();
+        } else {
+          document.cookie = 'accessibilityDay=off; path=/';
+        }
+
+
+        if (button.innerHTML == colourOffButtonText) {
+          button.innerHTML = colourOnButtonText;
+        } else {
+          button.innerHTML = colourOffButtonText;
+        }
+      }
+    </script>
     <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
     <% if (typeof tracking !== 'undefined' && tracking) { %>
@@ -98,58 +150,6 @@
         }
       }
     </style>
-    <script>
-      var colourOnButtonText = 'Make my day accessible';
-      var colourOffButtonText = 'Switch back to colour';
-
-      function getCookieValue(a) {
-        var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
-        return b ? b.pop() : '';
-      }
-
-      function accessibilityDayOff() {
-        return getCookieValue('accessibilityDay') === 'off';
-      }
-
-      function initialiseAccessibilityBar() {
-        var button = document.getElementById('accessibilityDayButton');
-
-        document.getElementById('accessibilityDayButton').style.display = 'block';
-
-        if (!!window.MSInputMethodContext && !!document.documentMode) {
-          var description = document.getElementById('accessibilityDayDescription');
-          var message = description.textContent;
-          description.innerHTML = message.concat(' (We\'re sorry, but this feature is not supported in your browser)')
-        }
-
-        if (getCookieValue('accessibilityDay') === 'off') {
-          document.body.classList.remove('accessibilityDay');
-          button.innerHTML = colourOnButtonText;
-        } else {
-          document.body.classList.add('accessibilityDay');
-          button.innerHTML = colourOffButtonText;
-        }
-      }
-
-      function toggleGreyscale() {
-        var button = document.getElementById('accessibilityDayButton');
-
-        document.body.classList.toggle('accessibilityDay');
-
-        if (getCookieValue('accessibilityDay') === 'off') {
-          document.cookie = 'accessibilityDay=; path=/; expires=' + new Date(0).toUTCString();
-        } else {
-          document.cookie = 'accessibilityDay=off; path=/';
-        }
-
-
-        if (button.innerHTML == colourOffButtonText) {
-          button.innerHTML = colourOnButtonText;
-        } else {
-          button.innerHTML = colourOffButtonText;
-        }
-      }
-    </script>
   </head>
   <body class="accessibilityDay" onload="initialiseAccessibilityBar()">
     <div class="accessibilityBar">
