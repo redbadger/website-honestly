@@ -52,9 +52,15 @@
   color: badgerBlack;
 }
 
-.name {
+.nameWrapper {
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
+}
+
+.name {
+  position: relative;
+  display: inline-block;
+  margin-right: 35px;
 }
 
 .jobDescription {
@@ -65,22 +71,12 @@
 .arrow svg {
   position: absolute;
   overflow: hidden;
-  top: 8px;
+  bottom: 8px;
   height: 12px;
   width: 12px;
   margin-left: 10px;
 }
 
-.lastName {
-  position: relative;
-  display: inline-block;
-  margin-right: 35px;
-}
-
 .name:hover {
-  text-decoration: underline badgerRedOnWhite;
-}
-
-.lastName:hover {
   text-decoration: underline badgerRedOnWhite;
 }
