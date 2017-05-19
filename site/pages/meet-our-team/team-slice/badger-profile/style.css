@@ -78,5 +78,10 @@
 }
 
 .name:hover {
-  text-decoration: underline badgerRedOnWhite;
+  border-bottom: 2px solid badgerRedOnWhite;
+  display: inline;
+}
+
+.name:hover .arrow svg {
+  bottom: 6px;
 }
