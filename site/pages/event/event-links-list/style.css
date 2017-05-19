@@ -1,4 +1,4 @@
-@value badgerBlack, badgerRed from "../../../css/_colors.css";
+@value badgerBlack, badgerRedOnWhite from "../../../css/_colors.css";
 
 .eventLinkList {
   width: 100%;
@@ -14,7 +14,7 @@
   margin-top: 0.8em;
   position: relative;
   float: left;
-  border-bottom: 1px solid badgerRed;
+  border-bottom: 1px solid badgerRedOnWhite;
 }
 
 .fullDetailsLink span {

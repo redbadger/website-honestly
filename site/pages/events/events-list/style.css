@@ -1,5 +1,5 @@
 @value mobile from "../../../components/variables/breakpoints.css";
-@value badgerBlack, badgerRed from "../../../css/_colors.css";
+@value badgerBlack, badgerRedOnWhite from "../../../css/_colors.css";
 
 .eventsListTimelineSection {
   margin-bottom: 50px;
@@ -53,11 +53,11 @@
 }
 
 .eventTitleLink:hover, .eventTitleLink:active, .eventTitleLink:focus {
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnWhite;
 }
 
 .arrow {
-  color: badgerRed;
+  color: badgerRedOnWhite;
   padding-left: 5px;
 }
 

@@ -1,25 +1,21 @@
 import React from 'react';
-import desktop from './2016-desktop.png';
-import mobile from './2016-mobile.jpg';
+import image from './2016.png';
 import Content from '../content';
 
 const Six = () => {
-  const title = '2016';
-  const text = '2016 has seen our fastest growth yet, as we take on new clients while growing the business sustainably. We also added an office dog, Milo, to the Badger family. It brought more awards, with us reaching number 44 on the Tech Track 100 list. Over summer we had a truly unforgettable party at a German castle, where we opened the floor up to our staff through Open Spaces, to help us plan for the next 12 months. Our website received a long-overdue refresh, and we finished out the year looking forward to our first ever conference, React London 2017.';
-  const counters = [
-    { title: 'No of office dogs', value: '1' },
-    { title: 'Cups of tea drunk', value: '3450' },
-    { title: 'Favourite tech', value: 'GraphQL' },
-  ];
+  const year = '2016';
+  const title = 'Our biggest client win, recognition in the Sunday Times and the arrival of Milo';
+  const text = '2016 saw our fastest growth yet as we reached number 44 on the Tech Track 100 list and featured in Sunday Times. We took on an array of new clients (but we can’t talk about the best one) brought in some incredible new members of staff and welcomed Milo, the office dog.';
+  const fact = 'To celebrate and reward staff for their hard work, Red Badger went to a castle near Leipzig in Germany. Before celebrations kicked off we held a workshop for all our staff to ensure they had a voice in helping us update our brand proposition and plan 2017.';
 
   return (
     <Content
+      year={year}
       title={title}
       text={text}
-      image={desktop}
-      mobileImage={mobile}
-      counters={counters}
-      flip
+      fact={fact}
+      image={image}
+      mobileImage={image}
     />
   );
 };

@@ -1,7 +1,7 @@
-@value badgerBlack, badgerRed from "../../css/_colors.css";
+@value badgerBlack, badgerRedOnWhite from "../../css/_colors.css";
 
 .link {
-  border-bottom: 2px solid badgerRed;
+  border-bottom: 2px solid badgerRedOnWhite;
   color: badgerBlack;
   text-decoration: none;
 }

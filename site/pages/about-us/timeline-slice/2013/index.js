@@ -1,23 +1,21 @@
 import React from 'react';
-import mobile from './2013-mobile.jpg';
+import image from './2013.png';
 import Content from '../content';
 
 const Three = () => {
-  const title = '2013';
-  const text = 'As we began to grow, we realised we were outgrowing our Clerkenwell office and moved to new digs at Mallow St, right by Old St Roundabout. We also took on our biggest client so far, Sky. Not ones to let work get in the way of fun, we held a couple of amazing parties at our new HQ, which may have caused some complaints from our neighbours early on.';
-  const counters = [
-    { title: 'No of office dogs', value: '0' },
-    { title: 'Cups of tea drunk', value: '473' },
-    { title: 'Favourite tech', value: 'ElasticSearch' },
-  ];
+  const year = '2013';
+  const title = 'Winning Sky, moving to Mallow Street and socialising beyond the pub';
+  const text = 'Our Clerkenwell office started to get a bit small, so we re-located to an amazing warehouse space just behind Old Street’s Silicon Roundabout.  We then took on Sky, our biggest client so far. During this year we also started to think about how Red Badger could operate for social good, and embarked on a pro-bono project to develop an app for Haller, a institution focused on sustainability through helping people in Africa learn essential farming skills.';
+  const fact = 'With the team growing, we diversified from pub nights and found our voice at karaoke nights, started monthly dinner dates and formed a sporty badgers group.';
 
   return (
     <Content
+      year={year}
       title={title}
       text={text}
-      image={mobile}
-      mobileImage={mobile}
-      counters={counters}
+      fact={fact}
+      image={image}
+      mobileImage={image}
       flip
     />
   );

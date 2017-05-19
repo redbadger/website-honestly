@@ -1,24 +1,22 @@
 import React from 'react';
-import desktop from './2015-desktop.png';
-import mobile from './2015-mobile.jpg';
+import image from './2015.png';
 import Content from '../content';
 
 const Five = () => {
-  const title = '2015';
-  const text = '2015 saw us move into the finance space, with a project at one of the country’s leading high-street banks. We stayed true to our promise of making our 5th birthday party something special, by hiring Osea island for a three-day company getaway. This was also an award-winning year, as we landed three awards for our work with Fortnum & Mason.';
-  const counters = [
-    { title: 'No of office dogs', value: '0' },
-    { title: 'Cups of tea drunk', value: '2279' },
-    { title: 'Favourite tech', value: 'Docker' },
-  ];
+  const year = '2015';
+  const title = 'Winning media clients and hiring an island';
+  const text = '2015 saw Red Badger spread its wings and move into both the media and finance space. We won a project working for FT.com to deliver its next generation online offering. We also landed three awards for our work with Fortnum & Mason and started consulting for one of the country’s leading high-street banks.';
+  const fact = 'This year was also Red Badger’s 5th birthday.  So we decided to make it something really special and hired Osea island for a three-day company getaway which featured a hog roast, a ball in a bomb factory, morning yoga and golf-cart racing.';
 
   return (
     <Content
+      year={year}
       title={title}
       text={text}
-      image={desktop}
-      mobileImage={mobile}
-      counters={counters}
+      fact={fact}
+      image={image}
+      mobileImage={image}
+      flip
     />
   );
 };

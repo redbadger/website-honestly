@@ -1,24 +1,21 @@
 import React from 'react';
-import desktop from './2011-desktop.png';
-import mobile from './2011-mobile.jpg';
+import image from './2011.png';
 import Content from '../content';
 
 const One = () => {
-  const title = '2011';
-  const text = 'We hired our first permanent employees in 2011, in the form of Chief Design Officer Sari Griffiths and Development intern Joe Stanton. We won some of our first client projects while developing our Windows Phone twitter app Birdsong, and our XNA layout framework XPF.';
-  const counters = [
-    { title: 'No of office dogs', value: '0' },
-    { title: 'Cups of tea drunk', value: '215' },
-    { title: 'Favourite tech', value: 'Node' },
-  ];
+  const year = '2011';
+  const title = 'Our first office, first employees and first client';
+  const text = 'We moved into our first office in Clerkenwell and hired Sari Griffiths and Joe Stanton, our first permanent employees; both of whom continue to work and thrive at Red Badger. We also won our first big client project: developing the online presence for the BMW Museum in Munich.';
+  const fact = 'This was the year that Sally, our Red Badger logo was born as a result of our first rebranding.';
 
   return (
     <Content
+      year={year}
       title={title}
       text={text}
-      image={desktop}
-      mobileImage={mobile}
-      counters={counters}
+      fact={fact}
+      image={image}
+      mobileImage={image}
       flip
     />
   );

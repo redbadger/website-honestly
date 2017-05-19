@@ -1,25 +1,23 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../../../css/_colors.css";
+@value badgerWhite, badgerBlack from "../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 @value timelineContainer from "../../../../css/_zindex.css";
 
 .navigator {
   z-index: timelineContainer;
   background: badgerWhite;
-  
 }
 
 .container{
   position: relative;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 52%;
+  margin: auto;
   top: -10px;
 }
 
 .timeline{
   background-color: #CCC;
   color: #CCC;
-  height: 2px;
+  height: 1px;
   width: 100%;
   position: relative;
   list-style: none;
@@ -47,37 +45,9 @@
   left: 100%;
 }
 
-.fillingLine {
-  position: relative;
-  height: 2px;
-  background-color: badgerRed;
-  width: 100%;
-  top: -2px;
-  left: 0;
-  transform-origin: left center;
-  transition: width 0.3s ease-in-out;
-}
-
 @media mediumScreen{
-  .navigator{
-   
-  }
-
   .container{
-    position: absolute;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-  
-    top: 0px;
-  }
-
-  .timeline{
-    margin-top: 100px;
-  }
-}
-
-@media largeScreen{
-  .container{
+    width: 233px;
+    top: 80px;
   }
 }

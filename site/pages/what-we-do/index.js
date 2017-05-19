@@ -51,7 +51,7 @@ function CaseStudies() {
             <img alt="The Camden Market App" src={camdenJpg} />
           </a>
           <div className={styles.caseStudyTextContainer}>
-            <a className={styles.caseStudyCompany} href="/our-work/case-study/camden-market/">
+            <a className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')} href="/our-work/case-study/camden-market/">
               Camden Market
             </a>
             <div className={styles.caseStudyTitleContainer}>

@@ -1,26 +1,57 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
+@value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
 
 .timeline{
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
-	composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../css/typography/_fonts.css";
   background-color: badgerWhite;
   composes: dividerBlackOnTransparent from "../../../css/_divider.css";
 }
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.content div div {
+  height: auto;
+}
+
 .image{
   width: 100%;
 }
 
 .content {
-  padding: 0px;
   background: badgerWhite;
+  padding-bottom: 40px;
 }
 
 @media mediumScreen {
-  .image{
+  .content {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .imageWrapper {
+    width: 460px;
+    margin: auto;
+  }
+}
+
+@media largeScreen {
+  .image {
     display: none;
   }
+
+  .imageWrapper {
+    width: auto;
+  }
+
   .content {
-    padding: 160px 40px 60px 40px;
+    width: 65%;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 0;
   }
 }

@@ -1,4 +1,4 @@
-@value badgerRed, badgerBlack from "../../../css/_colors.css";
+@value badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
 
 .title {
   composes: fontL from "../../../css/typography/_fonts.css";
@@ -11,7 +11,7 @@
 }
 
 .title:hover {
-  border-bottom: 1px solid badgerRed;
+  border-bottom: 1px solid badgerRedOnWhite;
 }
 
 .icon {
