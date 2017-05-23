@@ -50,17 +50,19 @@
 .description {
   padding-top: 10px;
   color: badgerBlack;
+  position: relative;
+  z-index: 1;
 }
 
 .nameWrapper {
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
+  margin-right: 35px;
 }
 
 .name {
   position: relative;
-  display: inline-block;
-  margin-right: 35px;
+  display: inline;
 }
 
 .jobDescription {
@@ -69,19 +71,16 @@
 }
 
 .arrow svg {
-  position: absolute;
   overflow: hidden;
-  bottom: 8px;
   height: 12px;
   width: 12px;
   margin-left: 10px;
 }
 
-.name:hover {
+.description:hover .name {
   border-bottom: 2px solid badgerRedOnWhite;
-  display: inline;
 }
 
-.name:hover .arrow svg {
-  bottom: 6px;
+.description:hover .arrow svg {
+  /*bottom: 6px;*/
 }
