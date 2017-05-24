@@ -35,12 +35,11 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
           }
         </div>
         <div className={styles.description}>
-          <div className={styles.name}>
-            {`${badger.firstName} `}
-            <div className={styles.lastName}>
-              {badger.lastName}
+          <div className={styles.nameWrapper}>
+            <span className={styles.name}>
+              {fullName}
               <InlineSVG src={arrowSVG} className={styles.arrow} aria-hidden />
-            </div>
+            </span>
           </div>
           <div className={styles.jobDescription}>{badger.jobTitle}</div>
         </div>
