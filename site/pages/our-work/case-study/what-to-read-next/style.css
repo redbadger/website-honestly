@@ -49,7 +49,6 @@
 .whatNext__title {
   composes: fontM2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
-  text-align: left;
 }
 
 .whatNext__button {
