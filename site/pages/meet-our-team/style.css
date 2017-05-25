@@ -48,15 +48,15 @@
   font-size: 16px;
 }
 
-.category.active {
+.category.active, .category:hover {
   background-color: badgerRed;
 }
 
-a.category, a.category:hover, a.category:visited {
+a.category, a.category:visited {
   color: badgerBlack;
 }
 
-a.category.active {
+a.category.active, a.category:hover {
   color: badgerWhite;
 }
 

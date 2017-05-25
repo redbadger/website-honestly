@@ -24,7 +24,8 @@
     <link rel="icon" href="/assets-honestly/favicons/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" />
+    <link rel="preload" href="https://cloud.typography.com/7838134/7069172/css/fonts.css" as="style" onload="this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cloud.typography.com/7838134/7069172/css/fonts.css"></noscript>
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
     <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
@@ -39,6 +40,12 @@
         ga('create', 'UA-16654919-1', 'auto');
         ga('send', 'pageview');
     </script><% } %>
+    <script>
+      /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+      !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+      /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+      !function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(t){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var o=t[n];"preload"===o.rel&&"style"===o.getAttribute("as")&&(e.loadCSS(o.href,o,o.getAttribute("media")),o.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);
+    </script>
   </head>
   <body>
     <div class="js-app">
