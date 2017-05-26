@@ -32,24 +32,35 @@
 .whatNext__link:active,
 .whatNext__link:visited {
   color: badgerBlack;
+  display: block;
+  text-align: left;
+  padding-bottom: 50px;
+  margin-right: 30px;
 }
 
-.whatNext__link:hover {
-  text-decoration: underline badgerRedOnWhite;
+.whatNext__link h2 {
+  display: inline;
+}
+
+.whatNext__link:hover h2 {
+  border-bottom: 2px solid badgerRedOnWhite;
 }
 
 .whatNext__title {
   composes: fontM2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
-  padding-bottom: 50px;
-  text-align: left;
 }
 
 .whatNext__button {
   composes: primaryButton from "../../../../css/_links.css";
 }
 
+.whatNext__arrow {
+  position: absolute;
+}
+
 .whatNext__arrow svg {
+  width: 18px;
   height: 18px;
   margin: 0 10px;
 }
