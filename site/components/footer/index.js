@@ -20,29 +20,36 @@ import mapSVG from './SVG/map.svg';
 
 const cx = classnames.bind(styles);
 
+const trackAnalytics = title => e =>
+  window.ga && window.ga('send', 'event', title, 'click');
+
 const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
-      <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
+      <InlineSVG
+        role="presentation"
+        src={mapSVG}
+        className={styles.footerMap}
+      />
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks')}>
           <ul className={styles.nav}>
-            <li>
+            <li onClick={trackAnalytics('Home')}>
               <Link to="homePage">Home</Link>
             </li>
-            <li>
+            <li onClick={trackAnalytics('About us')}>
               <Link to="aboutUsPage">About us</Link>
             </li>
-            <li>
+            <li onClick={trackAnalytics('What we do')}>
               <Link to="whatWeDoPage">What we do</Link>
             </li>
-            <li>
+            <li onClick={trackAnalytics('Blog')}>
               <a href="/blog/">Blog</a>
             </li>
-            <li>
+            <li onClick={trackAnalytics('Events')}>
               <Link to="events">Events</Link>
             </li>
-            <li>
+            <li onClick={trackAnalytics('Jobs')}>
               <Link to="joinUs">Jobs</Link>
             </li>
           </ul>
@@ -72,7 +79,9 @@ const Footer = () => (
             <span>5</span>
             <span>5</span>
           </a>
-          <span className={styles.screenReaderText}>Find us on social media</span>
+          <span className={styles.screenReaderText}>
+            Find us on social media
+          </span>
           <ul className={styles.socialLinks}>
             <li>
               <a
@@ -80,10 +89,7 @@ const Footer = () => (
                 title="Red Badger Github"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={githubSVG}
-                  title="Github"
-                />
+                <InlineSVG src={githubSVG} title="Github" />
               </a>
             </li>
             <li>
@@ -92,10 +98,7 @@ const Footer = () => (
                 title="Red Badger Twitter"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={twitterSVG}
-                  title="Twitter"
-                />
+                <InlineSVG src={twitterSVG} title="Twitter" />
               </a>
             </li>
             <li>
@@ -104,10 +107,7 @@ const Footer = () => (
                 title="Red Badger Slack"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={slackSVG}
-                  title="Slack"
-                />
+                <InlineSVG src={slackSVG} title="Slack" />
               </a>
             </li>
             <li>
@@ -116,10 +116,7 @@ const Footer = () => (
                 title="Red Badger Linkedin"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={linkedinSVG}
-                  title="Linkedin"
-                />
+                <InlineSVG src={linkedinSVG} title="Linkedin" />
               </a>
             </li>
 
@@ -129,10 +126,7 @@ const Footer = () => (
                 title="Red Badger Instagram"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={instagramSVG}
-                  title="Instagram"
-                />
+                <InlineSVG src={instagramSVG} title="Instagram" />
               </a>
             </li>
             <li>
@@ -141,10 +135,7 @@ const Footer = () => (
                 title="Red Badger Facebook"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={facebookSVG}
-                  title="Facebook"
-                />
+                <InlineSVG src={facebookSVG} title="Facebook" />
               </a>
             </li>
             <li>
@@ -153,10 +144,7 @@ const Footer = () => (
                 title="Red Badger Youtube"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={youtubeSVG}
-                  title="Youtube"
-                />
+                <InlineSVG src={youtubeSVG} title="Youtube" />
               </a>
             </li>
             <li>
@@ -165,10 +153,7 @@ const Footer = () => (
                 title="Red Badger Google Plus"
                 className={styles.socialIcon}
               >
-                <InlineSVG
-                  src={gplusSVG}
-                  title="Google Plus"
-                />
+                <InlineSVG src={gplusSVG} title="Google Plus" />
               </a>
             </li>
           </ul>
@@ -176,7 +161,11 @@ const Footer = () => (
 
       </div>
       <div className={cx('section', 'address')}>
-        <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
+        <InlineSVG
+          role="presentation"
+          src={mapPinSVG}
+          className={styles.mapPin}
+        />
         <div className={styles.mapContainer}>
           <address>
             <p>12 Mallow St</p>
@@ -198,12 +187,14 @@ const Footer = () => (
       <div className={styles.footerEndContainer}>
         <div className={cx('section', 'disclaimer', 'noBorder')}>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
-            &copy; Red Badger Consulting Limited 2016
+            © Red Badger Consulting Limited 2016
           </p>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
             Registered in England No. 7242017
           </p>
-          <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
+          <p className={styles.disclaimerParagraph}>
+            VAT Registration No. 990 8085 82
+          </p>
           <p className={styles.cookieWarning}>
             We use cookies on our website. For more information, view our privacy policy.
           </p>
