@@ -104,6 +104,11 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
   },
   {
+    title: 'Technology',
+    key: 'technology',
+    route: 'technology',
+  },
+  {
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',
