@@ -52,4 +52,4 @@ const getPosts = params => (new Promise(res => (
   })
 )));
 
-export const getFeaturedPosts = () => getPosts({ tag: 'featured' }).then(posts => take(posts, 3));
+export const getBlogPosts = (tag: string) => getPosts({ tag }).then(posts => take(posts, 3));
