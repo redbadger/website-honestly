@@ -15,24 +15,24 @@ export type BlogPost = {
   author: Author,
 }
 
-const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
+const BlogEntry = ({ blogPost }: { blogPost: BlogPost }) => {
   return (
     <li>
       <a
-        href={'//red-badger.com/blog/' + featuredBlogPost.slug}
+        href={'//red-badger.com/blog/' + blogPost.slug}
         className={styles.link}
       >
-        <h3 className={styles.category}>{featuredBlogPost.category}</h3>
+        <h3 className={styles.category}>{blogPost.category}</h3>
         <div className={styles.linkEntry}>
           <div className={styles.linkTitle}>
-            <p>{featuredBlogPost.title}</p>
+            <p>{blogPost.title}</p>
           </div>
           <div className={styles.authorTitle}>
             <p className={styles.linkAuthor}>
-              {featuredBlogPost.author.name}
+              {blogPost.author.name}
             </p>
             <p className={styles.linkAuthorTitle}>
-              {featuredBlogPost.author.role}
+              {blogPost.author.role}
             </p>
           </div>
         </div>

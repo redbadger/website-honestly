@@ -2,7 +2,7 @@
 
 import fetch from 'node-fetch';
 import take from 'lodash.take';
-import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
+import type { BlogPost } from '../../components/blog-entry';
 import handleErrors from '../handle-errors';
 
 const getQueryString = params => {

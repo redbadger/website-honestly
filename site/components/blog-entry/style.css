@@ -1,9 +1,9 @@
-@value badgerBlack, badgerRedOnWhite, linesOnWhite from "../../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+@value badgerBlack, badgerRedOnWhite, linesOnWhite from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .link {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
   text-decoration: none;
   color: badgerBlack;
   padding: 20px 0;
@@ -24,19 +24,19 @@
 }
 
 .linkAuthor {
-  composes: serif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
 }
 
 .linkAuthorTitle {
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
   text-transform: uppercase;
 }
 
 .category {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
   text-transform: uppercase;
   color: badgerRedOnWhite;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'enzyme';
 import BlogSlice from '.';
-import styles from './blog-entry/style.css';
+import styles from '../../../components/blog-entry/style.css';
 
 const cheerioSelector = className => (
   '.' + className.replace(/\s/g, '.')
