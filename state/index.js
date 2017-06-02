@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import Promise from 'bluebird';
-import { getBlogPosts } from '../site/fetchers/featured-blog-posts';
+import { getBlogPosts } from '../site/fetchers/blog-posts';
 import { getJobs } from '../site/fetchers/workable';
 import { getTweets } from '../site/fetchers/twitter';
 import { getPosts } from '../site/fetchers/instagram';
