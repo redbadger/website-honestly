@@ -1,0 +1,54 @@
+@value badgerWhite,
+badgerRedOnWhite,
+badgerRedOnBlack,
+badgerBlack from "../../css/_colors.css";
+
+.technologyPage {
+  margin: 4em 0;
+}
+
+.intro {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mainHeader {
+  composes: fontL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerBlack;
+  margin-top: 130px;
+  margin-bottom: 25px;
+}
+
+.description {
+  composes: fontS from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerBlack;
+  max-width: 20em;
+  line-height: 1.21;
+}
+
+.latestRoundTableLink {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  border-bottom: 2px solid #E5051A;
+  text-decoration: none;
+  color: #fc1d42;
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.arrow {
+  vertical-align: sub;
+  margin-left: 7px;
+}
+
+.arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+img.techRoundTable {
+  float: right;
+  margin-top: -46px;
+  padding-right: 40px;
+}
