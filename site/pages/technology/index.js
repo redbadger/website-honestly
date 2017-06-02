@@ -2,6 +2,8 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
+import BlogSlice from './blog-slice';
+
 import techRoundTableImage from './images/techroundtable.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
@@ -18,6 +20,10 @@ export default function Technology() {
         </p>
         <a className={styles.latestRoundTableLink}>Read our latest tech round table</a>
         <InlineSVG src={arrowSVG} className={styles.arrow} />
+      </section>
+      <section className={styles.pastAndFuture}>
+        <div className={styles.leftBlogs}><BlogSlice blogPosts={[]} title={'Tried and tested'} /></div>
+        <div className={styles.rightBlogs}><BlogSlice blogPosts={[]} title={'Growing Trends'} /></div>
       </section>
     </div>
   );

@@ -1,7 +1,4 @@
-@value badgerWhite,
-badgerRedOnWhite,
-badgerRedOnBlack,
-badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerRedOnBlack, badgerBlack, stuBlue from "../../css/_colors.css";
 
 .technologyPage {
   margin: 4em 0;
@@ -51,4 +48,23 @@ img.techRoundTable {
   float: right;
   margin-top: -46px;
   padding-right: 40px;
+}
+
+.pastAndFuture {
+  width: 100%;
+  display: flex;
+  composes: dividerBlack from "../../css/_divider.css";
+  composes: dividerAfterBlue from "../../css/_divider_after.css";
+}
+
+.leftBlogs {
+  width: 50%;
+  background-color: stuBlue;
+  color: badgerBlack;
+}
+
+.rightBlogs {
+  width: 50%;
+  background-color: badgerBlack;
+  color: badgerWhite;
 }

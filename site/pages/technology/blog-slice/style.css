@@ -1,0 +1,48 @@
+@value badgerWhite, badgerBlack, linesOnWhite from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.blogSlice {
+  padding: 30px 20px 40px 20px;
+  text-align: center;
+}
+
+.blogSliceTitle {
+  font-size: 40px;
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+}
+
+.blogLink {
+  composes: primaryButton from "../../../css/_links.css";
+}
+
+.blogLinkList {
+  margin: 30px 0;
+  text-align: left;
+}
+
+.blogLinkList li:last-child {
+  border-bottom: 1px solid linesOnWhite;
+}
+
+.sliceContainer {
+  max-width: 1162px;
+  display: inline-block;
+  width: 100%;
+}
+
+@media mediumScreen {
+  .blogSliceTitle {
+    text-align: left;
+  }
+
+  .blogLinkList {
+    margin: 60px 0;
+  }
+}
+
+@media largeScreen {
+  .blogSlice {
+    padding: 50px 140px 70px;
+  }
+}

@@ -6,6 +6,7 @@
 }
 
 .divider:before {
+  padding-left: 2px;
   content:"";
   position: absolute;
   right: -6px;
