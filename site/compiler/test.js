@@ -92,7 +92,7 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(11);
+      expect(routes.length).to.equal(12);
       expect(routes[0].filePath).to.equal('index.html');
     });
 
@@ -151,7 +151,7 @@ describe('site/compiler', () => {
         tweets: [],
       }, createStateNavigator());
 
-      expect(routes.length).to.equal(13);
+      expect(routes.length).to.equal(14);
       expect(routes[10].filePath).to.equal('about-us/events/2017/01/31/upcoming-event/index.html');
       expect(routes[11].filePath).to.equal('about-us/events/2016/08/03/designing-in-cross-functional-teams/index.html');
     });
