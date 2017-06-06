@@ -36,8 +36,7 @@ describe('instagram fetcher post validation', () => {
   });
 
   it('fails with empty post', () => {
-    const post = {
-    };
+    const post = {};
     const result = isValidPost(post);
     expect(result).to.equal(false);
   });

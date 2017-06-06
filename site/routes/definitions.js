@@ -1,9 +1,5 @@
 // @flow
-import {
-  stateToBadgerProps,
-  genBadgersParams,
-  getBadgersTitle,
-} from './selectors';
+import { stateToBadgerProps, genBadgersParams, getBadgersTitle } from './selectors';
 
 type RouteDefinition = {|
   title: string | ((props: Object) => string),

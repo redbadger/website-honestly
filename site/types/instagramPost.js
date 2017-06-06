@@ -4,11 +4,11 @@
 /** Shape of returned data from the Instagram API */
 type InstagramPost = {
   text: string,
-  link: string;
+  link: string,
   image: {
-    url: string;
-    width: string;
-    height: string;
+    url: string,
+    width: string,
+    height: string,
   },
   /** The comment count */
   comments: number,

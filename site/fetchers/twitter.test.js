@@ -8,15 +8,19 @@ const generateTweet = () => {
     retweet_count: 0,
     favorite_count: 0,
     entities: {
-      urls: [{
-        url: 'asd',
-      }],
+      urls: [
+        {
+          url: 'asd',
+        },
+      ],
     },
     retweeted_status: {
       entities: {
-        urls: [{
-          url: 'asd',
-        }],
+        urls: [
+          {
+            url: 'asd',
+          },
+        ],
       },
     },
   };
@@ -34,8 +38,7 @@ describe('twitter fetcher tweet validation', () => {
   });
 
   it('fails with empty tweet', () => {
-    const tweet = {
-    };
+    const tweet = {};
     const result = isValidTweet(tweet);
     expect(result).to.equal(false);
   });
