@@ -30,7 +30,8 @@ export function makeApp({ element, state }) {
   }
 
   // init Google Analytics tracker and publish a page view at '/'
-  ReactGA.initialize('UA-16654919-1');
+  const GOOGLE_ANALYTICS_TRACKER = process.env.GOOGLE_ANALYTICS_TRACKER;
+  ReactGA.initialize(GOOGLE_ANALYTICS_TRACKER);
   ReactGA.pageview('/');
 
   const stateNavigator = createStateNavigator();
