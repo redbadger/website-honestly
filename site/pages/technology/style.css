@@ -1,16 +1,60 @@
 @value badgerWhite, badgerRedOnWhite, badgerRedOnBlack, badgerBlack from "../../css/_colors.css";
+@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 .technologyPage {
-  padding: 100px 0;
+  padding: 0px 20px;
   background-color: badgerWhite;
 }
 
 .intro {
-  display: flex;
-  max-width: 1200px;
+  max-width: contentMaxWidth;
   margin: auto;
-  height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
 }
+
+.leftContent, .rightContent {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rightContent {
+  padding-top: 30px;
+}
+
+@media mediumScreen {
+  .intro {
+    flex-direction: row;
+    padding: 50px 0px 50px 0px;
+  }
+
+  .leftContent, .rightContent {
+    flex: 1 50%;
+    align-items: center;
+  }
+
+  .leftContent {
+    padding: 40px 10px 50px 0px;
+    justify-content: flex-start;
+  }
+
+  .rightContent {
+    justify-content: flex-end;
+  }
+
+  .innerContainer {
+    max-width: 25em;
+  }
+}
+
+@media largeScreen {
+  .rightContent > .innerContainer {
+    max-width: 500px;
+  }
+}
+
 
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
@@ -18,22 +62,10 @@
   color: badgerBlack;
 }
 
-.leftContent, .rightContent {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.rightContent {
-  align-items: flex-end;
-}
-
 .description {
   composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerBlack;
-  max-width: 20em;
   line-height: 1.21;
 }
 
@@ -57,8 +89,6 @@
 }
 
 img.techRoundTable {
-  float: right;
   max-width: 100%;
-  max-height: 100%;
-  width: 500px;
+  margin: auto;
 }

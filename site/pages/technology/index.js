@@ -9,7 +9,7 @@ export default () => (
   <div className={styles.technologyPage}>
     <section className={styles.intro}>
       <section className={styles.leftContent}>
-        <div>
+        <div className={styles.innerContainer}>
           <h1 className={styles.mainHeader}>Technology</h1>
           <p className={styles.description}>
             Technology does not stand still and neither do we. On a regular basis we get our whole
@@ -21,7 +21,9 @@ export default () => (
         </div>
       </section>
       <section className={styles.rightContent}>
-        <img className={styles.techRoundTable} src={techRoundTableImage} alt="tech roundtable" />
+        <div className={styles.innerContainer}>
+          <img className={styles.techRoundTable} src={techRoundTableImage} alt="tech roundtable" />
+        </div>
       </section>
     </section>
   </div>
