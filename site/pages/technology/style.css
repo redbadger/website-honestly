@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnWhite, badgerRedOnBlack, badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack, badgerRed from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 .technologyPage {
@@ -77,9 +77,9 @@
 
 .latestRoundTableLink {
   font-family: 'ProximaNova-Bold', sans-serif;
-  border-bottom: 2px solid #E5051A;
+  border-bottom: 2px solid badgerRedOnWhite;
   text-decoration: none;
-  color: #fc1d42;
+  color: badgerRed;
   display: inline-block;
   margin-top: 35px;
 }
