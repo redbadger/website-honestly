@@ -82,6 +82,11 @@
 
 .socialIcon svg {
   height: 20px;
+  fill: #fff;
+}
+
+.socialIcon svg:hover {
+  fill: #606060;
 }
 
 .address {
