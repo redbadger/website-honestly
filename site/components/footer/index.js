@@ -38,24 +38,26 @@ const Footer = () => (
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks')}>
           <ul className={styles.nav}>
-            <li onClick={trackAnalytics('Home')}>
-              <Link to="homePage">Home</Link>
+            {/* eslint-disable jsx-a11y/no-static-element-interactions */}
+            <li>
+              <Link to="homePage"><span onClick={trackAnalytics('Home')}>Home</span></Link>
             </li>
-            <li onClick={trackAnalytics('About us')}>
-              <Link to="aboutUsPage">About us</Link>
+            <li>
+              <Link to="aboutUsPage"><span onClick={trackAnalytics('About us')}>About us</span></Link>
             </li>
-            <li onClick={trackAnalytics('What we do')}>
-              <Link to="whatWeDoPage">What we do</Link>
+            <li>
+              <Link to="whatWeDoPage"><span onClick={trackAnalytics('What we do')}>What we do</span></Link>
             </li>
-            <li onClick={trackAnalytics('Blog')}>
-              <a href="/blog/">Blog</a>
+            <li>
+              <a href="/blog/"><span onClick={trackAnalytics('Blog')}>Blog</span></a>
             </li>
-            <li onClick={trackAnalytics('Events')}>
-              <Link to="events">Events</Link>
+            <li>
+              <Link to="events"><span onClick={trackAnalytics('Events')}>Events</span></Link>
             </li>
-            <li onClick={trackAnalytics('Jobs')}>
-              <Link to="joinUs">Jobs</Link>
+            <li>
+              <Link to="joinUs"><span onClick={trackAnalytics('Jobs')}>Jobs</span></Link>
             </li>
+            {/* eslint-enable jsx-a11y/no-static-element-interactions */}
           </ul>
         </nav>
 
