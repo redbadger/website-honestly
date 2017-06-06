@@ -11,23 +11,23 @@
   margin: auto;
   display: flex;
   flex-direction: column-reverse;
+  padding: 30px 0px 50px 0px;
 }
 
 .leftContent, .rightContent {
-  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .rightContent {
-  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 @media mediumScreen {
   .intro {
     flex-direction: row;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 55px 0px;
   }
 
   .leftContent, .rightContent {
@@ -36,12 +36,13 @@
   }
 
   .leftContent {
-    padding: 40px 10px 50px 0px;
+    padding-right: 10px;
     justify-content: flex-start;
   }
 
   .rightContent {
     justify-content: flex-end;
+    padding-bottom: 0px;
   }
 
   .innerContainer {
@@ -50,6 +51,10 @@
 }
 
 @media largeScreen {
+  .intro {
+    padding: 100px 0px 130px 0px;
+  }
+
   .rightContent > .innerContainer {
     max-width: 500px;
   }
@@ -67,6 +72,7 @@
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerBlack;
   line-height: 1.21;
+  padding-top: 25px;
 }
 
 .latestRoundTableLink {
