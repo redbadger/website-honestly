@@ -67,6 +67,7 @@
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.1",
+    "react-ga": "^2.2.0",
     "react-helmet": "^4.0.0",
     "react-motion": "^0.4.7",
     "react-redux": "^5.0.3",

@@ -1,5 +1,6 @@
 // @flow
 import InlineSVG from 'svg-inline-react';
+import ReactGA from 'react-ga';
 import classnames from 'classnames/bind';
 import React from 'react';
 import styles from './style.css';
@@ -20,8 +21,11 @@ import mapSVG from './SVG/map.svg';
 
 const cx = classnames.bind(styles);
 
-const trackAnalytics = title => e =>
-  window.ga && window.ga('send', 'event', title, 'click');
+const trackAnalytics = title => () => ReactGA.event({
+  category: 'FooterNavigation',
+  action: title,
+  label: 'click',
+});
 
 const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
