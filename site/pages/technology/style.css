@@ -94,6 +94,11 @@
   height: 20px;
 }
 
+.arrow svg g {
+  fill: badgerRedOnWhite;
+  stroke: badgerRedOnWhite;
+}
+
 img.techRoundTable {
   max-width: 100%;
   margin: auto;
