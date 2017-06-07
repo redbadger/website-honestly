@@ -22,8 +22,12 @@ export default function Technology() {
         <InlineSVG src={arrowSVG} className={styles.arrow} />
       </section>
       <section className={styles.pastAndFuture}>
-        <div className={styles.leftBlogs}><BlogSlice blogPosts={[]} title={'Tried and tested'} /></div>
-        <div className={styles.rightBlogs}><BlogSlice blogPosts={[]} title={'Growing Trends'} /></div>
+        <div className={styles.leftBlogs}>
+          <BlogSlice blogPosts={[]} title={'Tried and tested'} />
+        </div>
+        <div className={styles.rightBlogs}>
+          <BlogSlice blogPosts={[]} title={'Growing Trends'} />
+        </div>
       </section>
     </div>
   );
