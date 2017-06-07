@@ -1,37 +1,90 @@
-@value badgerWhite, badgerRedOnWhite, badgerRedOnBlack, badgerBlack, stuBlue from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack, stuBlue from "../../css/_colors.css";
+@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 .technologyPage {
-  margin: 4em 0;
+  padding: 0px 20px;
+  background-color: badgerWhite;
 }
 
 .intro {
-  max-width: 1200px;
+  max-width: contentMaxWidth;
   margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 30px 0px 50px 0px;
 }
+
+.leftContent, .rightContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rightContent {
+  padding-bottom: 50px;
+}
+
+@media mediumScreen {
+  .intro {
+    flex-direction: row;
+    padding: 50px 0px 55px 0px;
+  }
+
+  .leftContent, .rightContent {
+    flex: 1 50%;
+    align-items: center;
+  }
+
+  .leftContent {
+    padding-right: 10px;
+    justify-content: flex-start;
+  }
+
+  .rightContent {
+    justify-content: flex-end;
+    padding-bottom: 0px;
+  }
+
+  .innerContainer {
+    max-width: 470px;
+  }
+}
+
+@media largeScreen {
+  .intro {
+    padding: 100px 0px 130px 0px;
+  }
+
+  .rightContent > .innerContainer {
+    max-width: 500px;
+  }
+}
+
 
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerBlack;
-  margin-top: 130px;
-  margin-bottom: 25px;
 }
 
 .description {
   composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerBlack;
-  max-width: 20em;
   line-height: 1.21;
+  padding-top: 25px;
 }
 
 .latestRoundTableLink {
   font-family: 'ProximaNova-Bold', sans-serif;
-  border-bottom: 2px solid #E5051A;
   text-decoration: none;
-  color: #fc1d42;
+  color: badgerRedOnWhite;
   display: inline-block;
   margin-top: 35px;
+}
+
+.latestRoundTableLink:hover {
+  border-bottom: 2px solid badgerRedOnWhite;
 }
 
 .arrow {
@@ -44,10 +97,14 @@
   height: 20px;
 }
 
+.arrow svg g {
+  fill: badgerRedOnWhite;
+  stroke: badgerRedOnWhite;
+}
+
 img.techRoundTable {
-  float: right;
-  margin-top: -46px;
-  padding-right: 40px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .pastAndFuture {

@@ -18,7 +18,7 @@ describe('site/blog-slice', () => {
         categories: ['Technology'],
       },
     ];
-    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
+    const blogSlice = render(<BlogSlice blogPosts={posts} />);
     const className = cheerioSelector(styles.linkAuthorTitle);
     expect(blogSlice.find(className).text()).to.equal('');
   });
@@ -35,7 +35,7 @@ describe('site/blog-slice', () => {
         categories: ['Technology'],
       },
     ];
-    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
+    const blogSlice = render(<BlogSlice blogPosts={posts} />);
     const className = cheerioSelector(styles.linkAuthorTitle);
     expect(blogSlice.find(className).text()).to.equal('');
   });
@@ -52,7 +52,7 @@ describe('site/blog-slice', () => {
         categories: ['Technology'],
       },
     ];
-    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
+    const blogSlice = render(<BlogSlice blogPosts={posts} />);
     const className = cheerioSelector(styles.linkAuthorTitle);
     expect(blogSlice.find(className).text()).to.equal('Software Engineer');
   });
@@ -69,7 +69,7 @@ describe('site/blog-slice', () => {
         categories: ['Technology'],
       },
     ];
-    const blogSlice = render(<BlogSlice featuredBlogPosts={posts} />);
+    const blogSlice = render(<BlogSlice blogPosts={posts} />);
     const className = cheerioSelector(styles.link);
     expect(blogSlice.find(className).attr('href')).to.equal(
       '//red-badger.com/blog/2016/this-is-a-blog-post',
