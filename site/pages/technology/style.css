@@ -1,7 +1,9 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack, stuBlue from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
-.technologyPage {
+/* ============= Intro Stying ============= */
+
+.introContainer {
   padding: 0px 20px;
   background-color: badgerWhite;
 }
@@ -107,21 +109,21 @@ img.techRoundTable {
   margin: auto;
 }
 
+/* ============= Past and Future Stying ============= */
+
 .pastAndFuture {
   width: 100%;
   display: flex;
-  composes: dividerBlack from "../../css/_divider.css";
-  composes: dividerAfterBlue from "../../css/_divider_after.css";
-}
-
-.leftBlogs {
-  width: 50%;
-  background-color: stuBlue;
+  flex-direction: column;
   color: badgerBlack;
 }
 
+.leftBlogs {
+  background-color: badgerWhite;
+}
+
 .rightBlogs {
-  width: 50%;
+  composes: dividerBlack from "../../css/_divider.css";
   background-color: badgerBlack;
   color: badgerWhite;
 }

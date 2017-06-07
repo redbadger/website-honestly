@@ -2,8 +2,8 @@
 
 import React from 'react';
 import styles from './style.css';
-import BlogEntry from '../../../components/blog-entry';
-import type { BlogPost } from '../../../components/blog-entry';
+import BlogEntry from './blog-entry';
+import type { BlogPost } from './blog-entry';
 
 const blogSlice = ({ blogPosts, title }: { blogPosts: Array<BlogPost>, title: string }) => {
   return (

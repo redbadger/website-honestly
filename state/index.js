@@ -24,7 +24,7 @@ const getSiteState = () =>
     jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
     featuredBlogPosts: getBlogPosts('featured'),
     triedAndTestedBlogPosts: getBlogPosts('tried-and-tested'),
-    trendingBlogPosts: getBlogPosts('trending'),
+    growingTrendsBlogPosts: getBlogPosts('growing-trends'),
     tweets: getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     instagramPosts: getPosts(fetch),
     data: getData(),

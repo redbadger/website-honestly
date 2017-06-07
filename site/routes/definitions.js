@@ -103,8 +103,9 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Technology',
     key: 'technology',
     route: 'technology',
-    stateToProps: ({ triedAndTestedBlogPosts }) => ({
+    stateToProps: ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }) => ({
       triedAndTestedBlogPosts,
+      growingTrendsBlogPosts,
     }),
   },
   {

@@ -2,8 +2,8 @@
 
 import React from 'react';
 import styles from './style.css';
-import BlogEntry from '../../../components/blog-entry';
-import type { BlogPost } from '../../../components/blog-entry';
+import BlogEntry from './blog-entry';
+import type { BlogPost } from './blog-entry';
 
 const blogSlice = ({ featuredBlogPosts }: { featuredBlogPosts: Array<BlogPost> }) => {
   return (
@@ -12,7 +12,7 @@ const blogSlice = ({ featuredBlogPosts }: { featuredBlogPosts: Array<BlogPost> }
         <h2 className={styles.blogSliceTitle}>We’re opinionated and curious.</h2>
         <ul className={styles.blogLinkList}>
           {featuredBlogPosts.map((featuredBlogPost, ind) =>
-            <BlogEntry key={ind} blogPost={featuredBlogPost} />,
+            <BlogEntry key={ind} featuredBlogPost={featuredBlogPost} />,
           )}
         </ul>
         <a href="//red-badger.com/blog" className={styles.blogLink}>

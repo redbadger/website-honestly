@@ -1,0 +1,73 @@
+@value badgerBlack, badgerRedOnWhite, linesOnWhite from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.link {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  text-decoration: none;
+  color: badgerBlack;
+  padding: 20px 0;
+  border-top: 1px solid linesOnWhite;
+  display: block;
+}
+
+.linkTitle {
+  display: inline;
+}
+
+.linkTitle p {
+  display: inline;
+}
+
+.linkEntry {
+  display: flex;
+}
+
+.linkAuthor {
+  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+}
+
+.linkAuthorTitle {
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  text-transform: uppercase;
+}
+
+.category {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  text-transform: uppercase;
+  color: badgerRedOnWhite;
+}
+
+.authorTitle {
+  display: none;
+}
+
+.linkTitle p:hover {
+  border-bottom: 2px solid badgerRedOnWhite;
+}
+
+@media mediumScreen {
+  .link {
+    padding: 20px 0 40px 0;
+  }
+
+  .linkTitle {
+    flex-basis: 800px;
+  }
+
+  .authorTitle {
+    margin-left: 100px;
+    width: 250px;
+    display: block;
+  }
+}
+
+@media largeScreen {
+  .authorTitle {
+    margin-left: 200px;
+    width: 150px;
+  }
+}
