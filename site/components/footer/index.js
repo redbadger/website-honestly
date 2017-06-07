@@ -25,7 +25,7 @@ const trackAnalytics = title => () =>
   ReactGA.event({
     category: 'FooterNavigation',
     action: title,
-    label: 'click',
+    label: `From: ${window.location.pathname}`,
   });
 
 const Footer = () =>
