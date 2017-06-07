@@ -12,6 +12,8 @@ export default class HtmlParser extends Component {
 
   render() {
     // eslint-disable-next-line max-len
-    return parse(`<div class="${textStyles.typography} ${styles.rawHtml}">${this.props.children}</div>`);
+    return parse(
+      `<div class="${textStyles.typography} ${styles.rawHtml}">${this.props.children}</div>`,
+    );
   }
 }

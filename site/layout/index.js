@@ -11,7 +11,7 @@ export default class Layout extends React.Component {
 
   static childContextTypes = {
     stateNavigator: PropTypes.object,
-  }
+  };
 
   getChildContext() {
     return { stateNavigator: this.props.stateNavigator };

@@ -15,13 +15,11 @@ export default class HR extends Component {
   render() {
     const hrClass = classNames({
       [styles.hr]: true,
-      [styles.red]: (this.props.color === 'red'),
-      [styles.grey]: (this.props.color === 'grey'),
+      [styles.red]: this.props.color === 'red',
+      [styles.grey]: this.props.color === 'grey',
       [this.props.customClassName]: true,
     });
 
-    return (
-      <hr className={hrClass} />
-    );
+    return <hr className={hrClass} />;
   }
 }

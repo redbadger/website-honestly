@@ -9,18 +9,20 @@ import type { Badger } from '../../types';
 
 const BlogsLink = ({ badger }: { badger: Badger }) => {
   if (badger.squarespaceId) {
-    return (<div className={styles.authorLink}>
-      <a href={'/blog/?author=' + badger.squarespaceId}>
-        Read {badger.firstName}&rsquo;s blog posts
-      </a>
-    </div>);
+    return (
+      <div className={styles.authorLink}>
+        <a href={'/blog/?author=' + badger.squarespaceId}>
+          Read {badger.firstName}&rsquo;s blog posts
+        </a>
+      </div>
+    );
   }
   return null;
 };
 
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
-  badger.categories.sort((a, b) => (a.order - b.order));
+  badger.categories.sort((a, b) => a.order - b.order);
   const categories = badger.categories.map(c => c.name).join(', ');
   return (
     <div className={styles.badgerProfile}>
@@ -43,20 +45,23 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             {badger.about}
           </div>
           <div className={styles.descriptionSections}>
-            {badger.skills && <div>
-              <h2 className={styles.subheader}>Signature skills</h2>
-              <p>{badger.skills}</p>
-            </div>}
+            {badger.skills &&
+              <div>
+                <h2 className={styles.subheader}>Signature skills</h2>
+                <p>{badger.skills}</p>
+              </div>}
 
-            {badger.achievements && <div>
-              <h2 className={styles.subheader}>Achievements at Red Badger</h2>
-              <p>{badger.achievements}</p>
-            </div>}
+            {badger.achievements &&
+              <div>
+                <h2 className={styles.subheader}>Achievements at Red Badger</h2>
+                <p>{badger.achievements}</p>
+              </div>}
 
-            {badger.influence && <div>
-              <h2 className={styles.subheader}>The thing that changed me</h2>
-              <p>{badger.influence}</p>
-            </div>}
+            {badger.influence &&
+              <div>
+                <h2 className={styles.subheader}>The thing that changed me</h2>
+                <p>{badger.influence}</p>
+              </div>}
           </div>
           <div className={styles.authorLinks}>
             <BlogsLink badger={badger} />
@@ -70,8 +75,8 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
               navigationData={{ category: c.slug }}
               className={styles.categoryBox}
             >
-                See {c.name} team
-            </Link>
+              See {c.name} team
+            </Link>,
           )}
         </div>
       </div>

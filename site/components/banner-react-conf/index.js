@@ -14,16 +14,8 @@ export default function BannerReactConf() {
           alt="React London 2017"
           className={styles.reactConfDesktopBanner}
         />
-        <img
-          src={tabletBanner}
-          alt="React London 2017"
-          className={styles.reactConfTabletBanner}
-        />
-        <img
-          src={mobileBanner}
-          alt="React London 2017"
-          className={styles.reactConfMobileBanner}
-        />
+        <img src={tabletBanner} alt="React London 2017" className={styles.reactConfTabletBanner} />
+        <img src={mobileBanner} alt="React London 2017" className={styles.reactConfMobileBanner} />
       </a>
     </div>
   );

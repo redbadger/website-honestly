@@ -1,6 +1,12 @@
 /* eslint-disable camelcase */
 
-import { formatSignUpResponse, formatUpdateResponse, encryptText, decryptText, formatFormInput } from './index';
+import {
+  formatSignUpResponse,
+  formatUpdateResponse,
+  encryptText,
+  decryptText,
+  formatFormInput,
+} from './index';
 
 describe('formatSignUpResponse', () => {
   it('returns the correct error message if the status code is 400', () => {
@@ -65,7 +71,6 @@ describe('formatUpdateResponse', () => {
   });
 });
 
-
 describe('encryptText and decryptText', () => {
   it('does not return the same text that was passed in', () => {
     const plainText = 'example text';
@@ -80,7 +85,6 @@ describe('encryptText and decryptText', () => {
     expect(decryptedText).to.equal(plainText);
   });
 });
-
 
 describe('formatFormInput', () => {
   it('returns the correct output if the email address is not encrypted', () => {

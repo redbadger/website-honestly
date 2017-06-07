@@ -17,18 +17,21 @@ class Form extends Component {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);
-  }
+  };
 
   handleSubmit = event => {
     event.preventDefault();
     this.props.onSubmit(this.state);
-  }
+  };
 
   render() {
     const { message, contact } = this.state;
     const { errors, fatalError, yellow } = this.props;
     return (
-      <section className={yellow ? cx('formContainer', 'formContainer--yellow') : styles.formContainer} id="contactUs">
+      <section
+        className={yellow ? cx('formContainer', 'formContainer--yellow') : styles.formContainer}
+        id="contactUs"
+      >
         <h2 className={styles.heading}>
           Project in mind?
           <br />
@@ -74,8 +77,7 @@ class Form extends Component {
             />
           </div>
 
-          {
-            fatalError &&
+          {fatalError &&
             <div>
               <p className={styles.fatalError}>
                 Oops! Looks like something went wrong.
@@ -93,19 +95,16 @@ class Form extends Component {
                   hello@red-badger.com
                 </a>
               </p>
-            </div>
-          }
+            </div>}
 
-          {
-            !fatalError &&
+          {!fatalError &&
             <button
               label="Submit"
               onClick={this.handleSubmit}
               className={yellow ? cx('button', 'button--yellow') : styles.button}
             >
               Submit
-            </button>
-          }
+            </button>}
 
           <noscript>
             <p className={styles.fatalError}>

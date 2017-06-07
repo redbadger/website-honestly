@@ -19,15 +19,14 @@ const inView = el => {
     distance += element.offsetTop;
     element = element.offsetParent;
   }
-  return (distance !== 0) && (distance < (window.pageYOffset + window.innerHeight + 50));
+  return distance !== 0 && distance < window.pageYOffset + window.innerHeight + 50;
 };
 
-const initBadgers = (badgers, page) => (
+const initBadgers = (badgers, page) =>
   badgers.map((badger, i) => ({
     ...badger,
     loaded: i < page * 20,
-  }))
-);
+  }));
 
 type TeamSliceProps = {
   page: number,
@@ -90,10 +89,12 @@ class TeamSlice extends React.Component {
             <li
               key={i}
               className={styles.badger}
-              ref={el => { this.badgerElements[badger.slug] = el; }}
+              ref={el => {
+                this.badgerElements[badger.slug] = el;
+              }}
             >
               {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
-            </li>
+            </li>,
           )}
         </ul>
         {!loadAll && <Paging page={page} count={badgers.length} />}

@@ -2,20 +2,14 @@ import React, { PropTypes } from 'react';
 import styles from '../../pages/events/events-list/style.css';
 import Link from '../link';
 
-const EventTitle = ({
-  eventLink,
-  eventTitle,
-}) => (
-  <h2
-    className={styles.eventTitle}
-  >
+const EventTitle = ({ eventLink, eventTitle }) =>
+  <h2 className={styles.eventTitle}>
     <Link to="event" navigationData={eventLink} className={styles.eventTitleLink}>
       <span>
         {eventTitle}
       </span>
     </Link>
-  </h2>
-);
+  </h2>;
 
 EventTitle.propTypes = {
   eventTitle: PropTypes.string.isRequired,

@@ -20,7 +20,8 @@ export type HomePageProps = {
 const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => {
   const social = {
     title: 'Red Badger',
-    description: 'Let’s make things better. We work with you to deliver digital products that make a difference to people.',
+    description:
+      'Let’s make things better. We work with you to deliver digital products that make a difference to people.',
     metaImage,
     url: 'https://red-badger.com',
   };

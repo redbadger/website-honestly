@@ -51,7 +51,10 @@ function CaseStudies() {
             <img alt="The Camden Market App" src={camdenJpg} />
           </a>
           <div className={styles.caseStudyTextContainer}>
-            <a className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')} href="/our-work/case-study/camden-market/">
+            <a
+              className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}
+              href="/our-work/case-study/camden-market/"
+            >
               Camden Market
             </a>
             <div className={styles.caseStudyTitleContainer}>
@@ -98,7 +101,8 @@ function CaseStudies() {
 export default function whatWeDo() {
   const social = {
     title: 'What we do at Red Badger',
-    description: 'Through vision, validation and delivery learn how we use Lean and Technology to make things better.',
+    description:
+      'Through vision, validation and delivery learn how we use Lean and Technology to make things better.',
     metaImage,
     url: 'https://red-badger.com/what-we-do',
   };

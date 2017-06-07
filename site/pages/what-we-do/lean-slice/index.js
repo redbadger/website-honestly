@@ -11,7 +11,7 @@ export default function LeanSlice() {
       </h2>
 
       <div className={styles.content}>
-        <div className={styles.leanImageWrapper} >
+        <div className={styles.leanImageWrapper}>
           <img role="presentation" className={styles.leanImage} src={leanImg} />
         </div>
 
@@ -42,8 +42,11 @@ export default function LeanSlice() {
           </p>
 
           <p className={styles.point}>
-            <strong className={styles.bold}>Focus on what the users need
-            </strong> and deliver improvements incrementally whilst getting continual
+            <strong className={styles.bold}>
+              Focus on what the users need
+            </strong>
+            {' '}
+            and deliver improvements incrementally whilst getting continual
             feedback.
           </p>
         </div>

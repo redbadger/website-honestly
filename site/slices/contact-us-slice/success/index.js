@@ -7,7 +7,7 @@ const scrollIntoView = el => {
   }
 };
 
-const Success = ({ onClose }) => (
+const Success = ({ onClose }) =>
   <section ref={el => scrollIntoView(el)} className={styles.successContainer} id="contactUs">
     <h2 className={styles.heading}>
       Got it! Thanks
@@ -22,8 +22,7 @@ const Success = ({ onClose }) => (
     >
       Close
     </button>
-  </section>
-);
+  </section>;
 
 const { func } = React.PropTypes;
 Success.propTypes = {
