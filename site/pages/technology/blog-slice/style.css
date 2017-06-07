@@ -4,9 +4,6 @@
 .blogSlice {
   padding: 30px 20px 40px 20px;
   text-align: center;
-  background-color: badgerWhite;
-  color: badgerBlack;
-  composes: dividerWhite from "../../../css/_divider.css";
 }
 
 .blogSliceTitle {
@@ -23,8 +20,12 @@
   text-align: left;
 }
 
-.blogLinkList li:last-child {
+.blogLinkList li {
   border-bottom: 1px solid linesOnWhite;
+}
+
+.blogLinkList li:last-child {
+  border-bottom: 0;
 }
 
 .sliceContainer {
