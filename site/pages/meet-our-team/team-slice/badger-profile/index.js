@@ -24,15 +24,15 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
   return (
     <Link to="badger" navigationData={{ slug: badger.slug }}>
       <div className={styles.backerProfile}>
-        <div className={styles.badgerWrapper} >
-          {badger.loaded ?
-            <img
-              src={badger.primaryImageUrl}
-              alt={fullName}
-              className={styles.badgerImage}
-              aria-hidden
-            /> : <div className={styles.placeholder} />
-          }
+        <div className={styles.badgerWrapper}>
+          {badger.loaded
+            ? <img
+                src={badger.primaryImageUrl}
+                alt={fullName}
+                className={styles.badgerImage}
+                aria-hidden
+              />
+            : <div className={styles.placeholder} />}
         </div>
         <div className={styles.description}>
           <div className={styles.nameWrapper}>

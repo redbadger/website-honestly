@@ -18,17 +18,15 @@ export function decryptText(text) {
 export function mailchimpApi(link, method, body) {
   const username = '';
   const apiKey = process.env.MAILCHIMP_API_KEY;
-  return fetch(link,
-    {
-      method,
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: 'Basic ' + new Buffer(username + ':' + apiKey).toString('base64'),
-      },
-      mode: 'cors',
-      body,
-    })
-    .then(response => response.json());
+  return fetch(link, {
+    method,
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: 'Basic ' + new Buffer(username + ':' + apiKey).toString('base64'),
+    },
+    mode: 'cors',
+    body,
+  }).then(response => response.json());
 }
 
 export function formatSignUpResponse(res) {

@@ -10,21 +10,21 @@ import metaImage from './images/meta-image.png';
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 
-
 const cx = classnames.bind(styles);
 
 type CaseStudyRetailerProps = {
   contactUsURL: string,
-}
+};
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'Next generation platform for retail giant cleared five-year backlog in just eight months',
+  description:
+    'Next generation platform for retail giant cleared five-year backlog in just eight months',
   metaImage,
   url: 'https://red-badger.com/our-work/case-study/retailer',
 };
 
-const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
+const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -66,7 +66,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
           millions, due to higher than expected drop-out rates on its online platform.
         </p>
         <p className={styles.content__paragraph}>
-          This was because the online experience and functionality were inconsistent.  The business
+          This was because the online experience and functionality were inconsistent. The business
           was spending huge sums on a piece of software that scraped its website, and then created
           mobile optimised versions on the fly. This meant that some orders were easier to place
           than others - depending on what device was being used - and amendments to orders were
@@ -254,7 +254,6 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
     </div>
     <WhatToReadNext />
     <ContactUs postURL={contactUsURL} />
-  </div>
-);
+  </div>;
 
 export default CaseStudyRetailer;

@@ -18,17 +18,10 @@ const colours = [styles.blue, styles.mauve, styles.green];
 
 /** Renders the instagram tile on the social slice */
 const Instagram = ({ post, index }: InstagramProps) => {
-  const text = post.text.length > 70
-    ? post.text.substr(0, 70) + '...'
-    : post.text;
+  const text = post.text.length > 70 ? post.text.substr(0, 70) + '...' : post.text;
 
   return (
-    <a
-      className={styles.link}
-      href={post.link}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+    <a className={styles.link} href={post.link} rel="noopener noreferrer" target="_blank">
       <div className={cx(styles.instagram, colours[index % 3])}>
 
         <div className={styles.handle} tabIndex={0}>

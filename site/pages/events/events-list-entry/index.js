@@ -11,21 +11,19 @@ import { setEndDate } from '../../../fetchers/util/events';
 
 import Link from '../../../components/link';
 
-const EventsListEntry = (
-  {
-    id,
-    tags,
-    slug,
-    title,
-    timeline,
-    strapline,
-    endDateTime,
-    externalLinks,
-    internalLinks,
-    startDateTime,
-    featureImageFilename,
-  },
-) => {
+const EventsListEntry = ({
+  id,
+  tags,
+  slug,
+  title,
+  timeline,
+  strapline,
+  endDateTime,
+  externalLinks,
+  internalLinks,
+  startDateTime,
+  featureImageFilename,
+}) => {
   const eventLink = {
     year: startDateTime.year,
     month: startDateTime.month,
@@ -55,24 +53,11 @@ const EventsListEntry = (
               <div className={styles.eventDescription}>
                 {strapline}
               </div>
-              <EventMeta
-                internalLinks={internalLinks}
-                externalLinks={externalLinks}
-                tags={tags}
-              />
+              <EventMeta internalLinks={internalLinks} externalLinks={externalLinks} tags={tags} />
             </Cell>
-            <Cell
-              size={4}
-              key="event_picture"
-              breakOn="mobileS"
-              hideOn="mobileS"
-            >
+            <Cell size={4} key="event_picture" breakOn="mobileS" hideOn="mobileS">
               <Link to="event" navigationData={eventLink}>
-                <EventImage
-                  imgPath={featureImageFilename}
-                  imgAlt={title}
-                  href={eventLink}
-                />
+                <EventImage imgPath={featureImageFilename} imgAlt={title} href={eventLink} />
               </Link>
             </Cell>
           </Grid>

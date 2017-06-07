@@ -2196,6 +2196,12 @@ eslint-config-airbnb@^12.0.0:
   dependencies:
     eslint-config-airbnb-base "^8.0.0"
 
+eslint-config-prettier@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-2.1.1.tgz#ab3923fb704eebecab6960906b7d0d6e801cde58"
+  dependencies:
+    get-stdin "^5.0.1"
+
 eslint-import-resolver-node@^0.2.0:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.2.3.tgz#5add8106e8c928db2cba232bcd9efa846e3da16c"

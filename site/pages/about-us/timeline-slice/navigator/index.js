@@ -23,7 +23,6 @@ const TimelineNav = ({ currentIndex, onClick }) => {
   );
 };
 
-
 TimelineNav.propTypes = {
   currentIndex: React.PropTypes.number.isRequired,
   onClick: React.PropTypes.func.isRequired,

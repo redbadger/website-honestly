@@ -6,21 +6,17 @@ import styles from './style.css';
 function displayDateContent(startDateTime, endDateTime) {
   if (endDateTime) {
     return (
-      `${startDateTime.date} ${startDateTime.monthSym} ${startDateTime.year} - `
-    + `${endDateTime.date} ${endDateTime.monthSym} ${endDateTime.year}`);
+      `${startDateTime.date} ${startDateTime.monthSym} ${startDateTime.year} - ` +
+      `${endDateTime.date} ${endDateTime.monthSym} ${endDateTime.year}`
+    );
   }
-  return (
-    `${startDateTime.date} ${startDateTime.monthSym} ${startDateTime.year}`);
+  return `${startDateTime.date} ${startDateTime.monthSym} ${startDateTime.year}`;
 }
 
-const DateBubble = ({
-  startDateTime,
-  endDateTime,
-}) => (
+const DateBubble = ({ startDateTime, endDateTime }) =>
   <div className={styles.dateBubble}>
     {displayDateContent(startDateTime, endDateTime)}
-  </div>
-);
+  </div>;
 
 const dateShape = {
   date: PropTypes.string.isRequired,

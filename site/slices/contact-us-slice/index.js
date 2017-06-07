@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import Form from './form/';
 import Success from './success/';
 
-const sendEmail = ({ url, body }) => (
+const sendEmail = ({ url, body }) =>
   fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     mode: 'cors',
     body,
-  })
-);
+  });
 
 class ContactUs extends Component {
   constructor(props) {
@@ -25,7 +24,7 @@ class ContactUs extends Component {
     this.setState({
       success: false,
     });
-  }
+  };
 
   submitForm = (givenFormData, sendEmailFn = sendEmail) => {
     return Promise.resolve(givenFormData)
@@ -39,22 +38,21 @@ class ContactUs extends Component {
         if (json.errorMessage) {
           throw new Error(json.errorMessage);
         }
-        return Object.assign({
-          fatalError: false,
-        }, json);
+        return Object.assign(
+          {
+            fatalError: false,
+          },
+          json,
+        );
       })
       .catch(() => ({ fatalError: true }))
       .then(newState => this.setState(newState));
-  }
+  };
 
   render() {
     const { errors, success, fatalError } = this.state;
     if (success) {
-      return (
-        <Success
-          onClose={this.onClose}
-        />
-      );
+      return <Success onClose={this.onClose} />;
     }
     return (
       <Form

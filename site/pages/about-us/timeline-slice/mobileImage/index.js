@@ -39,7 +39,6 @@ const MobileImage = ({ index, onChangeIndex }) => {
   );
 };
 
-
 MobileImage.propTypes = {
   index: React.PropTypes.number.isRequired,
   onChangeIndex: React.PropTypes.func.isRequired,

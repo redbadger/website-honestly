@@ -11,10 +11,10 @@ import type { Tweet, InstagramPost } from '../../types/';
 import type { CategoryProps } from './q-and-a-slice/category';
 
 type AboutUsProps = {
-  contactUsURL: string;
-  tweets: Array<Tweet>;
-  instagramPosts: Array<InstagramPost>;
-  qAndAs: Array<CategoryProps>;
+  contactUsURL: string,
+  tweets: Array<Tweet>,
+  instagramPosts: Array<InstagramPost>,
+  qAndAs: Array<CategoryProps>,
 };
 
 const AboutUs = ({ contactUsURL, tweets, instagramPosts, qAndAs }: AboutUsProps) => {
@@ -29,6 +29,5 @@ const AboutUs = ({ contactUsURL, tweets, instagramPosts, qAndAs }: AboutUsProps)
     </div>
   );
 };
-
 
 export default AboutUs;

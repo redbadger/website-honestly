@@ -16,12 +16,7 @@ export default class Video extends Component {
     const source = Video.urlMap[this.props.type] + this.props.id;
     return (
       <div className={styles.container}>
-        <iframe
-          allowFullScreen
-          className={styles.embed}
-          frameBorder="0"
-          src={source}
-        />
+        <iframe allowFullScreen className={styles.embed} frameBorder="0" src={source} />
       </div>
     );
   }

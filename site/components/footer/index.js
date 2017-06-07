@@ -21,20 +21,17 @@ import mapSVG from './SVG/map.svg';
 
 const cx = classnames.bind(styles);
 
-const trackAnalytics = title => () => ReactGA.event({
-  category: 'FooterNavigation',
-  action: title,
-  label: 'click',
-});
+const trackAnalytics = title => () =>
+  ReactGA.event({
+    category: 'FooterNavigation',
+    action: title,
+    label: 'click',
+  });
 
-const Footer = () => (
+const Footer = () =>
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
-      <InlineSVG
-        role="presentation"
-        src={mapSVG}
-        className={styles.footerMap}
-      />
+      <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks')}>
           <ul className={styles.nav}>
@@ -43,10 +40,14 @@ const Footer = () => (
               <Link to="homePage"><span onClick={trackAnalytics('Home')}>Home</span></Link>
             </li>
             <li>
-              <Link to="aboutUsPage"><span onClick={trackAnalytics('About us')}>About us</span></Link>
+              <Link to="aboutUsPage">
+                <span onClick={trackAnalytics('About us')}>About us</span>
+              </Link>
             </li>
             <li>
-              <Link to="whatWeDoPage"><span onClick={trackAnalytics('What we do')}>What we do</span></Link>
+              <Link to="whatWeDoPage">
+                <span onClick={trackAnalytics('What we do')}>What we do</span>
+              </Link>
             </li>
             <li>
               <a href="/blog/"><span onClick={trackAnalytics('Blog')}>Blog</span></a>
@@ -167,11 +168,7 @@ const Footer = () => (
 
       </div>
       <div className={cx('section', 'address')}>
-        <InlineSVG
-          role="presentation"
-          src={mapPinSVG}
-          className={styles.mapPin}
-        />
+        <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
         <div className={styles.mapContainer}>
           <address>
             <p>12 Mallow St</p>
@@ -212,7 +209,6 @@ const Footer = () => (
         />
       </div>
     </div>
-  </footer>
-);
+  </footer>;
 
 export default Footer;

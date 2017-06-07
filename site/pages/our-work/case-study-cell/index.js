@@ -12,25 +12,28 @@ type CaseStudyCellProps = {
   [headerText: string]: any,
   [descriptionText: string]: any,
   [linkUrl: string]: any,
-}
+};
 
 export default function CaseStudyCell(props: CaseStudyCellProps) {
   return (
-    <div className={cx('cell', `cell-${props.clientName}`)} >
+    <div className={cx('cell', `cell-${props.clientName}`)}>
       <div className={styles.caseStudyContentContainer}>
-        <div className={styles.caseStudyContent} >
+        <div className={styles.caseStudyContent}>
           <a href={props.linkUrl}>
-            {
-              'image' in props && props.image ?
-                <img src={props.image} className={styles.clientImage} alt={`${props.clientName} project`} /> : null
-            }
-            <img src={props.clientLogo} className={styles[`logo${props.clientName}`]} alt={`${props.clientName} logo`} />
+            {'image' in props && props.image
+              ? <img
+                  src={props.image}
+                  className={styles.clientImage}
+                  alt={`${props.clientName} project`}
+                />
+              : null}
+            <img
+              src={props.clientLogo}
+              className={styles[`logo${props.clientName}`]}
+              alt={`${props.clientName} logo`}
+            />
             <h2
-              className={
-              'image' in props && props.image ?
-                styles.normalHeader :
-                styles.largeHeader
-              }
+              className={'image' in props && props.image ? styles.normalHeader : styles.largeHeader}
             >
               {props.headerText}
             </h2>

@@ -12,7 +12,7 @@ describe('site/team-slice', () => {
 
     static childContextTypes = {
       stateNavigator: PropTypes.object,
-    }
+    };
 
     getChildContext() {
       return { stateNavigator: this.props.stateNavigator };
@@ -34,7 +34,8 @@ describe('site/team-slice', () => {
           badgers={[{ firstName: 'Alex' }]}
           page={1}
         />
-      </Layout>);
+      </Layout>,
+    );
 
     const badgersList = teamSlice.find('ul').last();
     expect(badgersList.text()).to.match(/Alex/);
@@ -53,13 +54,9 @@ describe('site/team-slice', () => {
 
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
-          <MeetOurTeam
-            categories={[]}
-            category="everyone"
-            badgers={badgers}
-            page={1}
-          />
-        </Layout>);
+          <MeetOurTeam categories={[]} category="everyone" badgers={badgers} page={1} />
+        </Layout>,
+      );
 
       const badgersList = teamSlice.find('ul').last();
       const links = teamSlice.find('a');
@@ -88,13 +85,9 @@ describe('site/team-slice', () => {
 
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
-          <MeetOurTeam
-            categories={[]}
-            category="everyone"
-            badgers={badgers}
-            page={2}
-          />
-        </Layout>);
+          <MeetOurTeam categories={[]} category="everyone" badgers={badgers} page={2} />
+        </Layout>,
+      );
 
       const badgersList = teamSlice.find('ul').last();
       const links = teamSlice.find('a');
@@ -119,9 +112,7 @@ describe('site/team-slice', () => {
       for (let i = 0; i < 20; i += 1) {
         badgers.push({
           firstName: 'Alex ' + i,
-          categories: [
-            { name: 'Engineering', slug: 'engineering' },
-          ],
+          categories: [{ name: 'Engineering', slug: 'engineering' }],
         });
       }
 
@@ -133,7 +124,8 @@ describe('site/team-slice', () => {
             badgers={badgers}
             page={1}
           />
-        </Layout>);
+        </Layout>,
+      );
 
       const badgersList = teamSlice.find('ul').last();
       const links = teamSlice.find('a');
