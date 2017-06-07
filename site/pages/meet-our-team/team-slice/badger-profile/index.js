@@ -25,14 +25,23 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
     <Link to="badger" navigationData={{ slug: badger.slug }}>
       <div className={styles.backerProfile}>
         <div className={styles.badgerWrapper}>
-          {badger.loaded
+          {/* eslint-disable react/jsx-indent-props, react/jsx-closing-bracket-location */
+          /*
+            This needs to be disabled due to the way prettier integrates with ESLint at the moment.
+            ESLint isn't happy with prettiers formatting rules for jsx ternaries:
+            https://github.com/prettier/prettier/issues/737 and
+            https://github.com/prettier/prettier/issues/1271
+          */
+          badger.loaded
             ? <img
                 src={badger.primaryImageUrl}
                 alt={fullName}
                 className={styles.badgerImage}
                 aria-hidden
               />
-            : <div className={styles.placeholder} />}
+            : <div className={styles.placeholder} />
+          /* eslint-enable react/jsx-indent-props, react/jsx-closing-bracket-location */
+          }
         </div>
         <div className={styles.description}>
           <div className={styles.nameWrapper}>

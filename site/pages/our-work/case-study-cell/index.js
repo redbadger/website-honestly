@@ -20,13 +20,22 @@ export default function CaseStudyCell(props: CaseStudyCellProps) {
       <div className={styles.caseStudyContentContainer}>
         <div className={styles.caseStudyContent}>
           <a href={props.linkUrl}>
-            {'image' in props && props.image
+            {/* eslint-disable react/jsx-indent-props, react/jsx-closing-bracket-location */
+            /*
+              This needs to be disabled due to the way prettier integrates with ESLint at the moment
+              ESLint isn't happy with prettiers formatting rules for jsx ternaries:
+              https://github.com/prettier/prettier/issues/737 and
+              https://github.com/prettier/prettier/issues/1271
+            */
+            'image' in props && props.image
               ? <img
                   src={props.image}
                   className={styles.clientImage}
                   alt={`${props.clientName} project`}
                 />
-              : null}
+              : null
+            /* eslint-enable react/jsx-indent-props, react/jsx-closing-bracket-location */
+            }
             <img
               src={props.clientLogo}
               className={styles[`logo${props.clientName}`]}
