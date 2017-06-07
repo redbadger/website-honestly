@@ -5,7 +5,7 @@ import styles from './style.css';
 import techRoundTableImage from './images/techroundtable.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
-export default () => (
+export default () =>
   <div className={styles.technologyPage}>
     <section className={styles.intro}>
       <section className={styles.leftContent}>
@@ -26,5 +26,4 @@ export default () => (
         </div>
       </section>
     </section>
-  </div>
-);
+  </div>;
