@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 
 import createStateNavigator from '../../site/routes';
 
@@ -28,6 +29,11 @@ export function makeApp({ element, state }) {
     });
   }
 
+  // init Google Analytics tracker and publish a page view at '/'
+  const GOOGLE_ANALYTICS_TRACKER = process.env.GOOGLE_ANALYTICS_TRACKER;
+  ReactGA.initialize(GOOGLE_ANALYTICS_TRACKER);
+  ReactGA.pageview('/');
+
   const stateNavigator = createStateNavigator();
   stateNavigator.onNavigate((oldRoute, route, params) => {
     const props = route.stateToProps && route.stateToProps(state, params);
@@ -37,16 +43,10 @@ export function makeApp({ element, state }) {
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
 
-    // Google Analytics is defined in the main ejs file
-    // We need to update GA on user navigation event
-    if ('ga' in window) {
-      // eslint-disable-next-line
-      ga('set', {
-        page: '/' + route.route,
-        title: route.title + ' | Red Badger',
-      });
-      ga('send', 'pageview'); // eslint-disable-line
-    }
+    // Update GA on user navigation event
+    const page = `/${route.route}`;
+    ReactGA.set({ page, title });
+    ReactGA.pageview(page);
   });
   return stateNavigator;
 }
