@@ -1,6 +1,6 @@
 import { mapDataToState } from '.';
 
-const fixture = () => ([
+const fixture = () => [
   {
     urlId: 12,
     categories: ['hello'],
@@ -18,7 +18,7 @@ const fixture = () => ([
       displayName: 'Roisi',
     },
   },
-]);
+];
 
 describe('featured blog posts fetcher', () => {
   it('returns an array of blog posts', () => {

@@ -6,8 +6,9 @@ import { makeApp } from '../site/client';
 
 const element = document.querySelector('.js-app');
 
-const state = JSON.parse(document.getElementById('state').value, (key, value) => (
-  typeof value === 'string' ? decode(value) : value
-));
+const state = JSON.parse(
+  document.getElementById('state').value,
+  (key, value) => (typeof value === 'string' ? decode(value) : value),
+);
 
 makeApp({ element, state }).start();

@@ -23,17 +23,15 @@ import Image2016 from './2016/2016.png';
 import ClientOnly from '../../../components/clientOnly';
 
 class TimelineSlice extends React.Component {
-
   state = {
     currentIndex: 0,
   };
-
 
   setPage = (idx: number) => {
     this.setState({
       currentIndex: idx,
     });
-  }
+  };
 
   render() {
     const { currentIndex } = this.state;

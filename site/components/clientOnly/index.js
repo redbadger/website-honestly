@@ -2,13 +2,13 @@ import React, { PropTypes, Component } from 'react';
 
 /** Only render the children of this component if JavaScript is enabled and we are in the browser */
 class ClientOnly extends Component {
-
   state = {
     javaScriptSupported: false,
   };
 
   componentDidMount() {
-    this.setState({ // eslint-disable-line react/no-did-mount-set-state
+    // eslint-disable-next-line react/no-did-mount-set-state
+    this.setState({
       javaScriptSupported: true,
     });
   }

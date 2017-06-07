@@ -23,11 +23,7 @@ export default function Event({ event }) {
             <HR color="grey" customClassName={styles.mobileHorizontalLine} />
             <DateBubble
               startDateTime={event.startDateTime}
-              endDateTime={setEndDate(
-                'today',
-                event.startDateTime,
-                event.endDateTime,
-              )}
+              endDateTime={setEndDate('today', event.startDateTime, event.endDateTime)}
             />
             <h2 className={styles.eventTitle}>
               {event.title}
@@ -38,13 +34,13 @@ export default function Event({ event }) {
                   {event.strapline}
                 </div>
                 <div className={styles.eventBody}>
-                  {event.body.map((el, i) => (
+                  {event.body.map((el, i) =>
                     <p
                       className={styles.paragraph}
                       key={i}
                       dangerouslySetInnerHTML={{ __html: marked(el.text) }}
-                    />
-                  ))}
+                    />,
+                  )}
                 </div>
                 <EventMeta
                   internalLinks={event.internalLinks}

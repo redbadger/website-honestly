@@ -3,23 +3,27 @@ import handleErrors from './handle-errors';
 import type { Tweet } from '../types/';
 
 type TwitterResponse = {
-  id_str: string;
-  text: string;
-  created_at: string;
+  id_str: string,
+  text: string,
+  created_at: string,
   retweet_count: number,
   favorite_count: number,
   entities: {
-    urls: [{
-      url: string;
-    }]
+    urls: [
+      {
+        url: string,
+      },
+    ],
   },
   retweeted_status?: {
     entities: {
-      urls: [{
-        url: string;
-      }]
+      urls: [
+        {
+          url: string,
+        },
+      ],
     },
-  }
+  },
 };
 
 export const isValidTweet = (tweet: TwitterResponse) => {
@@ -90,8 +94,12 @@ const normaliseTweet = (tweet: TwitterResponse) => {
   };
 };
 
-
-export const getTweets = (fetch: any, key: string, secret: string, username: string = 'redbadgerteam'): Promise<Array<Tweet>> => {
+export const getTweets = (
+  fetch: any,
+  key: string,
+  secret: string,
+  username: string = 'redbadgerteam',
+): Promise<Array<Tweet>> => {
   if (!key) {
     throw new Error('Missing Twitter key');
   }
@@ -102,20 +110,16 @@ export const getTweets = (fetch: any, key: string, secret: string, username: str
   const count = 5;
   const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${username}&trim_user=true`;
   return getBearerToken(fetch, key, secret)
-    .then(token => (
+    .then(token =>
       fetch(apiQuery, {
         headers: {
           authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
         timeout: 10000,
-      })
-    ))
+      }),
+    )
     .then(handleErrors)
     .then(response => response.json())
-    .then((data: Array<TwitterResponse>) =>
-      data
-        .filter(isValidTweet)
-        .map(normaliseTweet)
-    );
+    .then((data: Array<TwitterResponse>) => data.filter(isValidTweet).map(normaliseTweet));
 };

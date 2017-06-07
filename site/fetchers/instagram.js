@@ -6,27 +6,26 @@ type InstagramResponsePost = {
   created_time: string,
   link: string,
   comments: {
-    count: number;
+    count: number,
   },
   caption: {
-    text: string
+    text: string,
   },
   likes: {
-    count: number
+    count: number,
   },
   images: {
     standard_resolution: {
       url: string,
-      width: number;
-      height: number;
-    }
-  }
+      width: number,
+      height: number,
+    },
+  },
 };
 
 type InstagramResponse = {
-  data: Array<InstagramResponsePost>
+  data: Array<InstagramResponsePost>,
 };
-
 
 export const isValidPost = (post: InstagramResponsePost) => {
   try {
@@ -57,7 +56,6 @@ export const isValidPost = (post: InstagramResponsePost) => {
     if (!post.images.standard_resolution.url) {
       throw new Error('Missing image url');
     }
-
 
     if (parseInt(post.images.standard_resolution.width, 10) < 0) {
       throw new Error('Missing image width');
@@ -105,9 +103,6 @@ export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
     .then(handleErrors)
     .then(response => response.json())
     .then((response: InstagramResponse) =>
-      response.data
-        .filter(isValidPost)
-        .map(normalisePost)
-        .slice(0, 5)
+      response.data.filter(isValidPost).map(normalisePost).slice(0, 5),
     );
 };

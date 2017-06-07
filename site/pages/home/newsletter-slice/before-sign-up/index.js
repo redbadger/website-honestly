@@ -23,14 +23,14 @@ class BeforeSignUp extends Component {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);
-  }
+  };
 
   handleSubmit = () => {
     this.setState({
       submitting: true,
     });
     this.props.onSubmit(this.state);
-  }
+  };
 
   render() {
     return (

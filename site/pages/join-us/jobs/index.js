@@ -7,18 +7,14 @@ import Link from '../../../components/link';
 import Wall from '../../../components/wall';
 
 export default function Jobs({ jobs }) {
-  const listings = jobs.map((job, index) => (
+  const listings = jobs.map((job, index) =>
     <Note key={index}>
-      <Link
-        className={styles.title}
-        to="job"
-        navigationData={{ slug: job.slug }}
-      >
+      <Link className={styles.title} to="job" navigationData={{ slug: job.slug }}>
         {job.title}
       </Link>
       <HtmlParser>{job.description}</HtmlParser>
-    </Note>
-  ));
+    </Note>,
+  );
 
   const jobsClasses = `jobs ${styles.jobs}`;
 

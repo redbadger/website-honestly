@@ -11,9 +11,9 @@ import elasticsearchImg from './img/elasticsearch.png';
 function TechListItem({ name, imgSrc }) {
   return (
     <li className={styles.techListItem}>
-      <figure className={styles.techItem} >
+      <figure className={styles.techItem}>
         <img alt={name + ' logo'} className={styles.techLogo} src={imgSrc} />
-        <figcaption className={styles.techName} >
+        <figcaption className={styles.techName}>
           {name}
         </figcaption>
       </figure>
@@ -25,7 +25,6 @@ TechListItem.propTypes = {
   name: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
 };
-
 
 export default function TechSlice() {
   return (

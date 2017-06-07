@@ -37,7 +37,9 @@ const routeFilePath = path => {
 const filePathFor = (stateNavigator, key, params) => {
   const route = stateNavigator.getNavigationLink(key, params);
   if (!route) {
-    throw new Error(`The route could not be matched for key: ${key}, params: ${JSON.stringify(params)}`);
+    throw new Error(
+      `The route could not be matched for key: ${key}, params: ${JSON.stringify(params)}`,
+    );
   }
   return { link: route, filePath: routeFilePath(route.substring(1)) };
 };
@@ -68,7 +70,7 @@ export const expandRoutes = (state, stateNavigator) => {
 export function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
-  const encodedState = (state && encode(JSON.stringify(state)));
+  const encodedState = state && encode(JSON.stringify(state));
 
   const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
@@ -78,7 +80,7 @@ export function compileRoutes(state) {
     stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
-    const meta = typeof (window) === 'undefined' ? (Helmet.rewind()).meta : null;
+    const meta = typeof window === 'undefined' ? Helmet.rewind().meta : null;
     const renderMs = Date.now() - renderStart;
 
     const ejsStart = Date.now();

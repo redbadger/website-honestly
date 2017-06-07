@@ -28,10 +28,12 @@ assetFileTypes.forEach(ext => {
 });
 
 // Polyfill EJS template loader
-requireHook('.ejs', () =>
-  `module.exports = function(data) {
+requireHook(
+  '.ejs',
+  () =>
+    `module.exports = function(data) {
     return data.bodyContent;
-  }`
+  }`,
 );
 
 // Polyfill DOM api

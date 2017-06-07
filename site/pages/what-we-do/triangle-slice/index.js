@@ -15,7 +15,11 @@ const triangleSlice = () => {
     <section className={styles.triangleSlice}>
       <h2 className={styles.triangleHeader}>How do we get to the right thing?</h2>
       <div className={styles.triangleContainer}>
-        <img className={styles.fullTriangleImage} alt="Triangle of vision, validation and delivery" src={triangleFullPNG} />
+        <img
+          className={styles.fullTriangleImage}
+          alt="Triangle of vision, validation and delivery"
+          src={triangleFullPNG}
+        />
         <ol className={styles.rightThingsList}>
 
           <li>
@@ -27,7 +31,11 @@ const triangleSlice = () => {
                 on feature delivery.
               </p>
             </div>
-            <img className={cx('mobileTriangleImage', 'triangleTop')} alt="Triangle Delivery section" src={triangleTopPNG} />
+            <img
+              className={cx('mobileTriangleImage', 'triangleTop')}
+              alt="Triangle Delivery section"
+              src={triangleTopPNG}
+            />
           </li>
 
           <li>
@@ -40,7 +48,11 @@ const triangleSlice = () => {
                 customer value are built first.
               </p>
             </div>
-            <img className={cx('mobileTriangleImage', 'triangleMiddle')} alt="Triangle Validation section" src={triangleMidPNG} />
+            <img
+              className={cx('mobileTriangleImage', 'triangleMiddle')}
+              alt="Triangle Validation section"
+              src={triangleMidPNG}
+            />
           </li>
 
           <li>
@@ -52,7 +64,11 @@ const triangleSlice = () => {
                 continuously getting closer to this end goal.
               </p>
             </div>
-            <img className={cx('mobileTriangleImage', 'triangleBottom')} alt="Triangle Vision section" src={triangleBottomPNG} />
+            <img
+              className={cx('mobileTriangleImage', 'triangleBottom')}
+              alt="Triangle Vision section"
+              src={triangleBottomPNG}
+            />
           </li>
 
         </ol>

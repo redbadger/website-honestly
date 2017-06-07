@@ -19,20 +19,17 @@ const SocialContacts = ({ badger }: { badger: Badger }) => {
 
   return (
     <ul className={styles.socialLinks}>
-      {socialPages.filter(s => (badger[s.social.toLowerCase()])).map(s =>
+      {socialPages.filter(s => badger[s.social.toLowerCase()]).map(s =>
         <li key={s.social}>
           <a
             href={badger[s.social.toLowerCase()]}
             title={s.social}
             className={styles.badgerSocialIcon}
           >
-            <InlineSVG
-              src={s.img}
-              title={s.social}
-            />
+            <InlineSVG src={s.img} title={s.social} />
           </a>
-        </li>
-        )}
+        </li>,
+      )}
     </ul>
   );
 };

@@ -6,17 +6,20 @@ import { getTweets } from '../site/fetchers/twitter';
 import { getPosts } from '../site/fetchers/instagram';
 import { getData } from '../site/fetchers/badger-brain';
 
-
 const initialState = {
   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
 };
 
-const toDict = (array, keyFn) => array.reduce((obj, item) => ({
-  ...obj,
-  [keyFn(item)]: item,
-}), {});
+const toDict = (array, keyFn) =>
+  array.reduce(
+    (obj, item) => ({
+      ...obj,
+      [keyFn(item)]: item,
+    }),
+    {},
+  );
 
-const getSiteState = () => (
+const getSiteState = () =>
   Promise.props({
     jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
     featuredBlogPosts: getBlogPosts('featured'),
@@ -35,7 +38,6 @@ const getSiteState = () => (
     badger: toDict(badgers, b => b.slug),
     categories,
     qAndAs,
-  }))
-);
+  }));
 
 export default getSiteState;

@@ -20,6 +20,7 @@ dependencies:
 
 test:
   override:
+    - make prettier
     - make lint
     - make test
     - make flow

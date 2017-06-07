@@ -12,7 +12,9 @@ if (!ref) {
 
 const env = key => {
   const value = process.env[key];
-  if (value) { return value; }
+  if (value) {
+    return value;
+  }
   console.error(`env var ${key} not set`);
   process.exit(1);
 };
@@ -30,8 +32,7 @@ const headers = {
   Authorization: `Basic ${auth}`,
 };
 
-const deploymentsUrl =
-  'https://api.github.com/repos/redbadger/website-honestly/deployments';
+const deploymentsUrl = 'https://api.github.com/repos/redbadger/website-honestly/deployments';
 
 const assertStatusOK = response => {
   if (response.status >= 200 && response.status < 300) {

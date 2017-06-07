@@ -27,12 +27,15 @@ describe('site/compiler', () => {
         categories,
       };
 
-      const routes = expandRoutes({
-        ...baseState,
-        badgers: [a],
-        categories,
-        badger: { [a.slug]: a },
-      }, createStateNavigator());
+      const routes = expandRoutes(
+        {
+          ...baseState,
+          badgers: [a],
+          categories,
+          badger: { [a.slug]: a },
+        },
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(15);
       expect(routes[10].filePath).to.equal('about-us/people/index.html');
@@ -60,15 +63,18 @@ describe('site/compiler', () => {
           categories: [categories[2], categories[1]],
         };
 
-        const routes = expandRoutes({
-          ...baseState,
-          badgers: [a, s],
-          badger: {
-            [a.slug]: a,
-            [s.slug]: s,
+        const routes = expandRoutes(
+          {
+            ...baseState,
+            badgers: [a, s],
+            badger: {
+              [a.slug]: a,
+              [s.slug]: s,
+            },
+            categories,
           },
-          categories,
-        }, createStateNavigator());
+          createStateNavigator(),
+        );
 
         expect(routes.length).to.equal(17);
         expect(routes[10].filePath).to.equal('about-us/people/index.html');
@@ -86,12 +92,15 @@ describe('site/compiler', () => {
           slug: 'sari',
           categories,
         };
-        const routes = expandRoutes({
-          ...baseState,
-          badgers: [s],
-          badger: { [s.slug]: s },
-          categories,
-        }, createStateNavigator());
+        const routes = expandRoutes(
+          {
+            ...baseState,
+            badgers: [s],
+            badger: { [s.slug]: s },
+            categories,
+          },
+          createStateNavigator(),
+        );
 
         expect(routes.length).to.equal(14);
         expect(routes[10].filePath).to.equal('about-us/people/index.html');
@@ -123,18 +132,23 @@ describe('site/compiler', () => {
           slug: 'etiene',
           categories: [categories[0]],
         };
-        const routes = expandRoutes({
-          ...baseState,
-          badgers: badgers.push(e) && badgers,
-          badger: { ...badger, [e.slug]: e },
-          categories,
-        }, createStateNavigator());
+        const routes = expandRoutes(
+          {
+            ...baseState,
+            badgers: badgers.push(e) && badgers,
+            badger: { ...badger, [e.slug]: e },
+            categories,
+          },
+          createStateNavigator(),
+        );
 
         expect(routes.length).to.equal(37);
         expect(routes[10].filePath).to.equal('about-us/people/index.html');
         expect(routes[11].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
         expect(routes[12].filePath).to.equal('about-us/people/category/engineering/index.html');
-        expect(routes[13].filePath).to.equal('about-us/people/category/engineering/page-2/index.html');
+        expect(routes[13].filePath).to.equal(
+          'about-us/people/category/engineering/page-2/index.html',
+        );
         expect(routes[14].filePath).to.equal('about-us/people/category/leadership/index.html');
       });
     });
@@ -153,12 +167,15 @@ describe('site/compiler', () => {
           badgers.push(a);
           badger[a.slug] = a;
         }
-        const routes = expandRoutes({
-          ...baseState,
-          badgers,
-          badger,
-          categories,
-        }, createStateNavigator());
+        const routes = expandRoutes(
+          {
+            ...baseState,
+            badgers,
+            badger,
+            categories,
+          },
+          createStateNavigator(),
+        );
 
         expect(routes.length).to.equal(34);
         expect(routes[10].filePath).to.equal('about-us/people/index.html');
@@ -182,12 +199,15 @@ describe('site/compiler', () => {
         badgers.push(a);
         badger[a.slug] = a;
       }
-      const routes = expandRoutes({
-        ...baseState,
-        badgers,
-        badger,
-        categories,
-      }, createStateNavigator());
+      const routes = expandRoutes(
+        {
+          ...baseState,
+          badgers,
+          badger,
+          categories,
+        },
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(32);
       expect(routes[10].filePath).to.equal('about-us/people/index.html');
@@ -212,20 +232,27 @@ describe('site/compiler', () => {
         badgers.push(a);
         badger[a.slug] = a;
       }
-      const routes = expandRoutes({
-        ...baseState,
-        badgers,
-        badger,
-        categories,
-      }, createStateNavigator());
+      const routes = expandRoutes(
+        {
+          ...baseState,
+          badgers,
+          badger,
+          categories,
+        },
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(61);
       expect(routes[10].filePath).to.equal('about-us/people/index.html');
       expect(routes[11].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
       expect(routes[12].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
       expect(routes[13].filePath).to.equal('about-us/people/category/engineering/index.html');
-      expect(routes[14].filePath).to.equal('about-us/people/category/engineering/page-2/index.html');
-      expect(routes[15].filePath).to.equal('about-us/people/category/engineering/page-3/index.html');
+      expect(routes[14].filePath).to.equal(
+        'about-us/people/category/engineering/page-2/index.html',
+      );
+      expect(routes[15].filePath).to.equal(
+        'about-us/people/category/engineering/page-3/index.html',
+      );
       expect(routes[16].filePath).to.equal('about-us/people/category/leadership/index.html');
       expect(routes[17].filePath).to.equal('about-us/people/category/leadership/page-2/index.html');
       expect(routes[18].filePath).to.equal('about-us/people/category/leadership/page-3/index.html');
@@ -258,27 +285,34 @@ describe('site/compiler', () => {
         badgers.push(a);
         badger[a.slug] = a;
       }
-      const routes = expandRoutes({
-        ...baseState,
-        badgers,
-        badger,
-        categories,
-      }, createStateNavigator());
+      const routes = expandRoutes(
+        {
+          ...baseState,
+          badgers,
+          badger,
+          categories,
+        },
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(60);
       expect(routes[10].filePath).to.equal('about-us/people/index.html');
       expect(routes[11].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
       expect(routes[12].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
       expect(routes[13].filePath).to.equal('about-us/people/category/engineering/index.html');
-      expect(routes[14].filePath).to.equal('about-us/people/category/engineering/page-2/index.html');
-      expect(routes[15].filePath).to.equal('about-us/people/category/engineering/page-3/index.html');
+      expect(routes[14].filePath).to.equal(
+        'about-us/people/category/engineering/page-2/index.html',
+      );
+      expect(routes[15].filePath).to.equal(
+        'about-us/people/category/engineering/page-3/index.html',
+      );
       expect(routes[16].filePath).to.equal('about-us/people/category/leadership/index.html');
       expect(routes[17].filePath).to.equal('about-us/people/category/leadership/page-2/index.html');
     });
   });
 
   describe('with one badger', () => {
-    it('should render this badger\'s profile page', () => {
+    it("should render this badger's profile page", () => {
       const categories = [{ name: 'Engineering', slug: 'engineering' }];
 
       const a = {
@@ -287,12 +321,15 @@ describe('site/compiler', () => {
         categories,
       };
 
-      const routes = expandRoutes({
-        ...baseState,
-        badgers: [a],
-        categories,
-        badger: { [a.slug]: a },
-      }, createStateNavigator());
+      const routes = expandRoutes(
+        {
+          ...baseState,
+          badgers: [a],
+          categories,
+          badger: { [a.slug]: a },
+        },
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(14);
       expect(routes[12].filePath).to.equal('about-us/people/alex/index.html');
@@ -300,7 +337,7 @@ describe('site/compiler', () => {
   });
 
   describe('with multiple badger', () => {
-    it('should render each badger\'s profile page', () => {
+    it("should render each badger's profile page", () => {
       const categories = [{ name: 'Engineering', slug: 'engineering' }];
 
       const a = {
@@ -315,15 +352,18 @@ describe('site/compiler', () => {
         categories,
       };
 
-      const routes = expandRoutes({
-        ...baseState,
-        badgers: [a, s],
-        categories,
-        badger: {
-          [a.slug]: a,
-          [s.slug]: s,
+      const routes = expandRoutes(
+        {
+          ...baseState,
+          badgers: [a, s],
+          categories,
+          badger: {
+            [a.slug]: a,
+            [s.slug]: s,
+          },
         },
-      }, createStateNavigator());
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(15);
       expect(routes[12].filePath).to.equal('about-us/people/alex/index.html');

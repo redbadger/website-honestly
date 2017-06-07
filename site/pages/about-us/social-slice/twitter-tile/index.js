@@ -11,13 +11,19 @@ import retweetIconSVG from '../icons/retweet/retweet.svg';
 import type { Tweet } from '../../../../types/';
 
 type TweetProps = {
-  tweet: Tweet;
-  index: number;
-}
+  tweet: Tweet,
+  index: number,
+};
 const colours = [styles.blue, styles.mauve, styles.green];
-const Twitter = ({ tweet, index }: TweetProps) => (
-  <a className={styles.link} href={tweet.url} rel="noopener noreferrer" target="_blank" tabIndex={-1} >
-    <div className={cx(styles.twitter, colours[index % 3])} tabIndex={0} >
+const Twitter = ({ tweet, index }: TweetProps) =>
+  <a
+    className={styles.link}
+    href={tweet.url}
+    rel="noopener noreferrer"
+    target="_blank"
+    tabIndex={-1}
+  >
+    <div className={cx(styles.twitter, colours[index % 3])} tabIndex={0}>
       <div className={styles.handle}>
         <InlineSVG src={twitterIconSVG} className={styles.twitterIcon} />
         <span className={styles.handleText}>@RedBadger</span>
@@ -37,7 +43,6 @@ const Twitter = ({ tweet, index }: TweetProps) => (
       </div>
 
     </div>
-  </a>
-);
+  </a>;
 
 export default Twitter;

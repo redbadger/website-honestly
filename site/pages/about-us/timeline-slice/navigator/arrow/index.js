@@ -15,10 +15,8 @@ const Arrow = ({ direction, onClick, currentIndex }) => {
     onClick(newIndex);
   };
 
-  const isClickable = (
-    (direction === 'left' && currentIndex > 0) ||
-    (direction === 'right' && currentIndex < 6)
-  );
+  const isClickable =
+    (direction === 'left' && currentIndex > 0) || (direction === 'right' && currentIndex < 6);
 
   return (
     <button

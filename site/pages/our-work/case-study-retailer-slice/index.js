@@ -4,10 +4,10 @@ import Link from '../../../components/link';
 
 import retailerImage from './images/retailer.png';
 
-export default () => (
-  <div className={styles.caseStudyContainer} >
+export default () =>
+  <div className={styles.caseStudyContainer}>
     <div className={styles.caseStudyContent}>
-      <div className={styles.caseStudyTextContainer} >
+      <div className={styles.caseStudyTextContainer}>
         <Link to="retailerCaseStudy">
           <h2 className={styles.caseStudyTextContainerHeader}>
             Next generation platform for retail giant
@@ -35,5 +35,4 @@ export default () => (
         </div>
       </Link>
     </div>
-  </div>
-);
+  </div>;

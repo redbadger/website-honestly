@@ -5,8 +5,7 @@ import styles from '../style.css';
 const cx = classnames.bind(styles);
 const { func, string, bool } = React.PropTypes;
 
-
-const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }) => (
+const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }) =>
   <div>
     <h2 className={styles.subTitle}>
       Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
@@ -17,27 +16,27 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
         <input
           id="name"
           name="name"
-          type="text" placeholder="John"
+          type="text"
+          placeholder="John"
           className={cx({
             formInput: true,
             afterFormError: errorMessage,
           })}
           onChange={handleInputChange}
         />
-        {
-          errorMessage && !submitting ?
-            <div className={styles.afterErrorText}>
-              {errorMessage}
-            </div>
-          : null
-        }
+        {errorMessage &&
+          !submitting &&
+          <div className={styles.afterErrorText}>
+            {errorMessage}
+          </div>}
       </div>
       <div>
         <label htmlFor="surname" className={styles.formLabel}>Surname</label>
         <input
           id="surname"
           name="surname"
-          type="text" placeholder="Smith"
+          type="text"
+          placeholder="Smith"
           className={styles.formInput}
           onChange={handleInputChange}
         />
@@ -77,8 +76,7 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
         {submitting ? 'Updating info....' : 'Update info'}
       </button>
     </form>
-  </div>
-);
+  </div>;
 
 AfterSignUpForm.propTypes = {
   errorMessage: string.isRequired,
@@ -118,14 +116,14 @@ export default class AfterSignup extends Component {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);
-  }
+  };
 
   handleSubmit = () => {
     this.setState({
       submitting: true,
     });
     this.props.onSubmit(this.state);
-  }
+  };
 
   // fixes bug in safari where the component height wouldn't update
   triggerReflow() {
@@ -136,20 +134,22 @@ export default class AfterSignup extends Component {
 
   render() {
     return (
-      <section className={cx('newsletter', 'submitted')} ref={c => { this.element = c; }}>
+      <section
+        className={cx('newsletter', 'submitted')}
+        ref={c => {
+          this.element = c;
+        }}
+      >
         <h1 className={styles.title}>
           Thanks for signing up!
         </h1>
-        {
-          !this.props.updatedFormSubmitted
-          ? <AfterSignUpForm
+        {!this.props.updatedFormSubmitted &&
+          <AfterSignUpForm
             errorMessage={this.props.errorMessage}
             handleInputChange={this.handleInputChange}
             submitting={this.state.submitting}
             handleSubmit={this.handleSubmit}
-          />
-          : null
-        }
+          />}
       </section>
     );
   }

@@ -12,13 +12,7 @@ export default class Cell extends Component {
 
     // Using breakpoint definitions from breakpoints.css
     // to allow this cell content to be hidden when needed
-    hideOn: React.PropTypes.oneOf([
-      'mobileS',
-      'mobileSM',
-      'mobile',
-      'tablet',
-      'dont',
-    ]),
+    hideOn: React.PropTypes.oneOf(['mobileS', 'mobileSM', 'mobile', 'tablet', 'dont']),
 
     size: React.PropTypes.number,
   };

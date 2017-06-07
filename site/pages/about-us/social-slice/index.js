@@ -14,21 +14,20 @@ import ClientOnly from '../../../components/clientOnly';
 type SocialSliceProps = {
   tweets: Array<Tweet>,
   instagramPosts: Array<InstagramPost>,
-}
+};
 
 type SocialSliceState = {
-  tile: number;
-  totalTiles: number;
-  viewWidth: number;
-}
+  tile: number,
+  totalTiles: number,
+  viewWidth: number,
+};
 
 class SocialSlice extends React.Component {
-
   state: SocialSliceState;
   componentWillMount() {
     this.state = {
       tile: 0,
-      totalTiles: (this.props.instagramPosts.length + this.props.tweets.length) - 1,
+      totalTiles: this.props.instagramPosts.length + (this.props.tweets.length - 1),
       viewWidth: 0,
     };
   }
@@ -63,20 +62,21 @@ class SocialSlice extends React.Component {
 
     if (viewWidth > this.tileSize * 2) {
       // Adjust for intro slide + 1 slide;
-      const adjustedWidth = viewWidth - (this.tileSize * 2);
+      const newTileSize = this.tileSize * 2;
+      const adjustedWidth = viewWidth - newTileSize;
       // Calculate the number of tiles that are in view and then remove that from the total tiles
       const tilesToRemove = Math.floor(adjustedWidth / this.tileSize);
       return totalTiles - tilesToRemove;
     }
     return totalTiles;
-  }
+  };
   prevTile = () => {
     const prevTile = this.state.tile - 1;
     if (prevTile < 0) {
       return;
     }
     this.setState({ tile: prevTile });
-  }
+  };
   nextTile = () => {
     const nextTile = this.state.tile + 1;
     const swipableTotal = this.calculateSwipableTotal();
@@ -84,7 +84,7 @@ class SocialSlice extends React.Component {
       return;
     }
     this.setState({ tile: nextTile });
-  }
+  };
   props: SocialSliceProps;
   /** This is the tile width used for calculations - also the value in the CSS styling */
   tileSize = 350;
@@ -97,7 +97,8 @@ class SocialSlice extends React.Component {
    */
   calculateSwipePadding() {
     const { viewWidth } = this.state;
-    return viewWidth - (this.tileSize * 2);
+    const newTileSize = this.tileSize * 2;
+    return viewWidth - newTileSize;
   }
   /** As above but for small screen */
   calculateMobileSwipePadding() {
@@ -125,7 +126,7 @@ class SocialSlice extends React.Component {
         ? <InstagramTile post={row} index={index} key={index} />
         : <TwitterTile tweet={row} index={index} key={index} />;
     });
-  }
+  };
 
   render() {
     const swipePadding = this.calculateSwipePadding();
@@ -166,7 +167,7 @@ class SocialSlice extends React.Component {
         </ClientOnly>
         {/** No Script View */}
         <noscript>
-          <div className={styles.noscript} >
+          <div className={styles.noscript}>
             <IntroDesktopTile
               nextCard={this.nextTile}
               prevCard={this.prevTile}
