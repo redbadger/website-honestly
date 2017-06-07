@@ -8,7 +8,7 @@ type PagingProps = {
   count: number,
 };
 
-const Paging = ({ page, count }: PagingProps) => (
+const Paging = ({ page, count }: PagingProps) =>
   <div className={styles.paging}>
     <Link
       to="badgers"
@@ -28,7 +28,6 @@ const Paging = ({ page, count }: PagingProps) => (
     >
       Next page
     </Link>
-  </div>
-);
+  </div>;
 
 export default Paging;

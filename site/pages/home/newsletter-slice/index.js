@@ -8,14 +8,13 @@ export function isValidEmail(email) {
   return regex.test(email);
 }
 
-const fetchFunction = ({ url, body, method }) => (
+const fetchFunction = ({ url, body, method }) =>
   fetch(url, {
     method,
     headers: { 'Content-Type': 'application/json' },
     mode: 'cors',
     body,
-  })
-);
+  });
 
 class NewsLetter extends Component {
   constructor(props) {
@@ -46,7 +45,7 @@ class NewsLetter extends Component {
           errorMessage: 'Unfortunately there was an error, please try again later',
         });
       });
-  }
+  };
 
   signUpUser = data => {
     if (data.email_address === '') {
@@ -60,7 +59,7 @@ class NewsLetter extends Component {
     } else {
       return this.submitForm(JSON.stringify(data), 'POST');
     }
-  }
+  };
 
   updateUser = data => {
     const object = Object.assign({}, data);
@@ -73,23 +72,22 @@ class NewsLetter extends Component {
       });
     }
     return this.submitForm(JSON.stringify(object), 'PATCH');
-  }
+  };
 
   render() {
+    const AfterSignup = (
+      <NewsletterAfterSignUp
+        onSubmit={this.updateUser}
+        updatedFormSubmitted={this.state.updatedFormSubmitted}
+        errorMessage={this.state.errorMessage}
+      />
+    );
+    const BeforeSignup = (
+      <NewsletterBeforeSignUp onSubmit={this.signUpUser} errorMessage={this.state.errorMessage} />
+    );
     return (
       <div>
-        {
-          this.state.newsletterSubmitted
-          ? <NewsletterAfterSignUp
-            onSubmit={this.updateUser}
-            updatedFormSubmitted={this.state.updatedFormSubmitted}
-            errorMessage={this.state.errorMessage}
-          />
-          : <NewsletterBeforeSignUp
-            onSubmit={this.signUpUser}
-            errorMessage={this.state.errorMessage}
-          />
-        }
+        {this.state.newsletterSubmitted ? AfterSignup : BeforeSignup}
       </div>
     );
   }

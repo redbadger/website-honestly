@@ -6,7 +6,7 @@ export type TopicProps = {
   slug: string,
   question: string,
   answer: string,
-}
+};
 
 class Topic extends Component {
   constructor(props: TopicProps) {
@@ -24,13 +24,13 @@ class Topic extends Component {
 
   componentDidMount = () => {
     this.setState({ showButton: true });
-  }
+  };
 
   props: TopicProps;
 
   handleClick = () => {
     this.setState({ open: !this.state.open });
-  }
+  };
 
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -42,10 +42,7 @@ class Topic extends Component {
     const formattedAnswer = answer.replace(/<strong/g, strongText).replace(/<a/g, externalLink);
     return (
       <div>
-        <div
-          className={styles.topic__question}
-          onClick={this.handleClick}
-        >
+        <div className={styles.topic__question} onClick={this.handleClick}>
           <h4 className={styles.topic__heading}>
             {question}
           </h4>

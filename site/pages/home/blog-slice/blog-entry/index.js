@@ -6,22 +6,19 @@ import styles from './style.css';
 type Author = {
   role: string,
   name: string,
-}
+};
 
 export type BlogPost = {
   slug: string,
   category: string,
   title: string,
   author: Author,
-}
+};
 
 const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
   return (
     <li>
-      <a
-        href={'//red-badger.com/blog/' + featuredBlogPost.slug}
-        className={styles.link}
-      >
+      <a href={'//red-badger.com/blog/' + featuredBlogPost.slug} className={styles.link}>
         <h3 className={styles.category}>{featuredBlogPost.category}</h3>
         <div className={styles.linkEntry}>
           <div className={styles.linkTitle}>

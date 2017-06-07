@@ -10,35 +10,33 @@ function makeWritePath(path) {
 
 function makeDirectory(obj) {
   const dir = dirname(makeWritePath(obj.path));
-  return new Promise((resolve, reject) => (
+  return new Promise((resolve, reject) =>
     mkdirp(dir, err => {
       if (err) {
         reject(err);
       } else {
         resolve(obj);
       }
-    })
-  ));
+    }),
+  );
 }
 
 function writePage({ path, body }) {
   const writePath = makeWritePath(path);
   console.log(`Writing ${writePath}`); // eslint-disable-line no-console
-  return new Promise((resolve, reject) => (
+  return new Promise((resolve, reject) =>
     fs.writeFile(writePath, body, err => {
       if (err) {
         reject(err);
       } else {
         resolve(true);
       }
-    })
-  ));
+    }),
+  );
 }
 
 function writePages(pages) {
-  return Promise.all(
-    pages.map(page => makeDirectory(page).then(writePage))
-  );
+  return Promise.all(pages.map(page => makeDirectory(page).then(writePage)));
 }
 
 getSiteState()

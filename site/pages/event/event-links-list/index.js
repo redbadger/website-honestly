@@ -6,12 +6,7 @@ import classNames from 'classnames';
 import layout from '../../../components/utils/layout.css';
 import styles from './style.css';
 
-const EventLinksList = (
-  {
-    linkList,
-    listType,
-  },
-) => {
+const EventLinksList = ({ linkList, listType }) => {
   if (!linkList || linkList.length === 0) return <noscript />;
   return (
     <div
@@ -20,7 +15,7 @@ const EventLinksList = (
         [layout.cf]: true,
       })}
     >
-      {linkList.map(eventLink => (
+      {linkList.map(eventLink =>
         <a
           className={styles.fullDetailsLink}
           href={eventLink.url}
@@ -29,8 +24,8 @@ const EventLinksList = (
           rel={listType === 'external' ? 'noopener' : null}
         >
           <span>{eventLink.title}</span>
-        </a>
-      ))}
+        </a>,
+      )}
     </div>
   );
 };

@@ -16,7 +16,9 @@ describe('site/compiler', () => {
           categories: [],
           instagramPosts: [],
           tweets: [],
-        }, createStateNavigator());
+        },
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(12);
       expect(routes[0].filePath).to.equal('index.html');
@@ -42,24 +44,24 @@ describe('site/compiler', () => {
         slug: 'ux-designer',
         title: 'UX Designer',
       };
-      const routes = expandRoutes({
-        jobs: [
-          softwareEngineer,
-          uxDesinger,
-        ],
-        job: {
-          'software-engineer': softwareEngineer,
-          'ux-designer': uxDesinger,
+      const routes = expandRoutes(
+        {
+          jobs: [softwareEngineer, uxDesinger],
+          job: {
+            'software-engineer': softwareEngineer,
+            'ux-designer': uxDesinger,
+          },
+          contactUsURL: '',
+          featuredBlogPosts: [],
+          events: [],
+          event: {},
+          badgers: [],
+          categories: [],
+          instagramPosts: [],
+          tweets: [],
         },
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [],
-        event: {},
-        badgers: [],
-        categories: [],
-        instagramPosts: [],
-        tweets: [],
-      }, createStateNavigator());
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(14);
       expect(routes[11].filePath).to.equal('about-us/join-us/software-engineer/index.html');
@@ -67,31 +69,32 @@ describe('site/compiler', () => {
     });
 
     it('renders the featured blogs of the site on the home page', () => {
-      const routes = expandRoutes({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [
-          {
-            slug: '2016/12/7/how-we-use-service-workers-on-red-badgers-new-website',
-            title: 'Service Worker support on Red Badgers new website',
-            author: {
+      const routes = expandRoutes(
+        {
+          jobs: [],
+          job: {},
+          contactUsURL: '',
+          featuredBlogPosts: [
+            {
+              slug: '2016/12/7/how-we-use-service-workers-on-red-badgers-new-website',
+              title: 'Service Worker support on Red Badgers new website',
+              author: {},
             },
-          },
-          {
-            slug: '016/11/29/gitgithub-in-plain-english',
-            title: 'Git and Github in Plain English',
-            author: {
+            {
+              slug: '016/11/29/gitgithub-in-plain-english',
+              title: 'Git and Github in Plain English',
+              author: {},
             },
-          },
-        ],
-        events: [],
-        event: {},
-        badgers: [],
-        categories: [],
-        instagramPosts: [],
-        tweets: [],
-      }, createStateNavigator());
+          ],
+          events: [],
+          event: {},
+          badgers: [],
+          categories: [],
+          instagramPosts: [],
+          tweets: [],
+        },
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(12);
       expect(routes[0].filePath).to.equal('index.html');
@@ -133,28 +136,30 @@ describe('site/compiler', () => {
         },
       };
 
-      const routes = expandRoutes({
-        jobs: [],
-        job: {},
-        contactUsURL: '',
-        featuredBlogPosts: [],
-        events: [
-          upcomingEvent,
-          designingEvent,
-        ],
-        event: {
-          'upcoming-event': upcomingEvent,
-          'designing-in-cross-functional-teams': designingEvent,
+      const routes = expandRoutes(
+        {
+          jobs: [],
+          job: {},
+          contactUsURL: '',
+          featuredBlogPosts: [],
+          events: [upcomingEvent, designingEvent],
+          event: {
+            'upcoming-event': upcomingEvent,
+            'designing-in-cross-functional-teams': designingEvent,
+          },
+          badgers: [],
+          categories: [],
+          instagramPosts: [],
+          tweets: [],
         },
-        badgers: [],
-        categories: [],
-        instagramPosts: [],
-        tweets: [],
-      }, createStateNavigator());
+        createStateNavigator(),
+      );
 
       expect(routes.length).to.equal(14);
       expect(routes[11].filePath).to.equal('about-us/events/2017/01/31/upcoming-event/index.html');
-      expect(routes[12].filePath).to.equal('about-us/events/2016/08/03/designing-in-cross-functional-teams/index.html');
+      expect(routes[12].filePath).to.equal(
+        'about-us/events/2016/08/03/designing-in-cross-functional-teams/index.html',
+      );
     });
   });
 });

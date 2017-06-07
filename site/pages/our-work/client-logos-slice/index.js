@@ -17,10 +17,9 @@ import skyLogo from './images/sky.png';
 import tescoLogo from './images/tesco.png';
 import wickesLogo from './images/wickes.png';
 
-
 export default function ClientLogosSlice() {
   return (
-    <div className={styles.caseStudyContainer} >
+    <div className={styles.caseStudyContainer}>
       <div className={styles.caseStudyContent}>
         <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
         <img src={ftLogo} className={styles.ftLogo} alt="Financial Times logo" />

@@ -5,6 +5,7 @@ LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
 NBIN=./node_modules/.bin
 WEBPACK=$(NBIN)/webpack --bail
 MOCHA=$(NBIN)/mocha
+PRETTIER=$(NBIN)/prettier --write --print-width 100 --single-quote --trailing-comma all --parser babylon '!(dist)/**/*.js'
 ESLINT=$(NBIN)/eslint
 SERVERLESS=cd services && .$(NBIN)/sls
 WEBPACK_DEV_SERVER=$(NBIN)/webpack-dev-server
@@ -50,6 +51,8 @@ test: ## Run the tests
 flow: ## Run the type checker
 	$(NBIN)/flow
 
+prettier: ## Run the prettifier
+	$(PRETTIER)
 
 test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
@@ -123,6 +126,7 @@ dist/static-site:
 	install \
 	check-deps \
 	flow \
+	prettier \
 	lint \
 	help \
 	clear \

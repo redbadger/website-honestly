@@ -2,7 +2,6 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
-
 /* PNG logo imports */
 import bbcPNG from './PNG/bbc.png';
 import bmwPNG from './PNG/bmw.png';
@@ -23,8 +22,7 @@ import camdenFigureSVG from './SVG/camden-figure.svg';
 import skyFigureSVG from './SVG/sky-figure.svg';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
-
-const CaseStudy = () => (
+const CaseStudy = () =>
   <section className={styles.caseStudyContainer}>
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.limitWidth}>
@@ -37,7 +35,10 @@ const CaseStudy = () => (
           <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>Three</span>
           <span className={styles.caseText}>
-            Number of awards for the new online <span className={styles.lastWord}>store
+            Number of awards for the new online
+            {' '}
+            <span className={styles.lastWord}>
+              store
               <InlineSVG src={arrowSVG} className={styles.arrow} />
             </span>
           </span>
@@ -51,7 +52,10 @@ const CaseStudy = () => (
           <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>18%</span>
           <span className={styles.caseText}>
-            Drop in bounce rate within 4 days of <span className={styles.lastWord}>launch
+            Drop in bounce rate within 4 days of
+            {' '}
+            <span className={styles.lastWord}>
+              launch
               <InlineSVG src={arrowSVG} className={styles.arrow} />
             </span>
           </span>
@@ -66,7 +70,10 @@ const CaseStudy = () => (
           <span className={styles.screenReaderText}>50%</span>
           <span className={styles.caseText}>
             Drop in customers pushing the
-            &lsquo;need more help&rsquo; <span className={styles.lastWord}> button
+            &lsquo;need more help&rsquo;
+            {' '}
+            <span className={styles.lastWord}>
+              {' '}button
               <InlineSVG src={arrowSVG} className={styles.arrow} />
             </span>
           </span>
@@ -80,11 +87,18 @@ const CaseStudy = () => (
           <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>Seven</span>
           <span className={styles.caseText}>
-            Weeks to redesign and deliver MVP <span className={styles.lastWord}>homepage
+            Weeks to redesign and deliver MVP
+            {' '}
+            <span className={styles.lastWord}>
+              homepage
               <InlineSVG src={arrowSVG} className={styles.arrow} />
             </span>
           </span>
-          <img alt="The logo of the Financial Times" src={financialTimesPNG} className={styles.logo} />
+          <img
+            alt="The logo of the Financial Times"
+            src={financialTimesPNG}
+            className={styles.logo}
+          />
         </a>
       </div>
       <div className={styles.caseCompanies}>
@@ -99,7 +113,6 @@ const CaseStudy = () => (
         <Link to="ourWorkPage" className={styles.button}>See more of our work</Link>
       </div>
     </div>
-  </section>
-);
+  </section>;
 
 export default CaseStudy;

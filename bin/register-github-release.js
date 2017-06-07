@@ -13,7 +13,9 @@ if (environment === 'live') {
 
 const env = key => {
   const value = process.env[key];
-  if (value) { return value; }
+  if (value) {
+    return value;
+  }
   console.error(`env var ${key} not set`);
   process.exit(1);
 };
@@ -44,29 +46,27 @@ const assertStatusOK = response => {
 
 const parseJson = blob => blob.json();
 
-const getLatestRelease = () => (
+const getLatestRelease = () =>
   fetch(baseUrl + '/releases/latest', {
     method: 'GET',
     headers,
   })
-  .then(assertStatusOK)
-  .then(parseJson)
-  .then(release => release.tag_name)
-);
+    .then(assertStatusOK)
+    .then(parseJson)
+    .then(release => release.tag_name);
 
 const formatCommit = commit => '* ' + commit.split('\n')[0];
 
-const getCommits = (from, to) => (
+const getCommits = (from, to) =>
   fetch(baseUrl + `/compare/${from}...${to}`, {
     method: 'GET',
     headers,
   })
-  .then(assertStatusOK)
-  .then(parseJson)
-  .then(response => response.commits.map(c => formatCommit(c.commit.message)))
-);
+    .then(assertStatusOK)
+    .then(parseJson)
+    .then(response => response.commits.map(c => formatCommit(c.commit.message)));
 
-const registerRelease = commits => (
+const registerRelease = commits =>
   fetch(baseUrl + '/releases', {
     method: 'POST',
     headers,
@@ -76,9 +76,8 @@ const registerRelease = commits => (
       body: commits.join('\n'),
     }),
   })
-  .then(assertStatusOK)
-  .then(parseJson)
-);
+    .then(assertStatusOK)
+    .then(parseJson);
 
 getLatestRelease()
   .then(rel => getCommits(rel, 'master'))

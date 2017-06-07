@@ -5,31 +5,35 @@ const badgerBrainEndpoint = process.env.BADGER_BRAIN_HOST;
 
 const getRequestOptions = (body, token) => ({
   method: 'POST',
-  headers: Object.assign({}, {
-    'Content-Type': 'application/graphql',
-  }, token && {
-    'X-Preview': token,
-  }),
+  headers: Object.assign(
+    {},
+    {
+      'Content-Type': 'application/graphql',
+    },
+    token && {
+      'X-Preview': token,
+    },
+  ),
   timeout: 10000,
   body,
 });
 
 const sortEvents = list =>
-  list.sort((a, b) =>
-    new Date(b.startDateTime.iso) - new Date(a.startDateTime.iso));
+  list.sort((a, b) => new Date(b.startDateTime.iso) - new Date(a.startDateTime.iso));
 
 const selectValidEvents = list =>
-  list.filter(listItem => !!listItem.startDateTime &&
-    !!listItem.startDateTime.iso);
+  list.filter(listItem => !!listItem.startDateTime && !!listItem.startDateTime.iso);
 
 const getCategories = badgers => {
-  const categoriesObj = badgers
-    .reduce((uniqueCategories, badger) => (
-      badger.categories
-        .reduce((categories, category) => (
-          categories[category.name] ? categories : { ...categories, [category.name]: category }
-        ), uniqueCategories)
-    ), {});
+  const categoriesObj = badgers.reduce(
+    (uniqueCategories, badger) =>
+      badger.categories.reduce((categories, category) => {
+        return categories[category.name]
+          ? categories
+          : { ...categories, [category.name]: category };
+      }, uniqueCategories),
+    {},
+  );
   return Object.keys(categoriesObj)
     .map(name => ({ name, slug: categoriesObj[name].slug }))
     .sort((catA, catB) => categoriesObj[catA.name].order - categoriesObj[catB.name].order);
@@ -64,8 +68,8 @@ const selectValidQandAs = qAndAs => {
     .map(category => ({
       ...category,
       topics: category.topics
-                .filter(topic => topic.answer && topic.question)
-                .sort((topA, topB) => topA.order - topB.order),
+        .filter(topic => topic.answer && topic.question)
+        .sort((topA, topB) => topA.order - topB.order),
     }))
     .filter(category => category.name && category.topics.length)
     .sort((catA, catB) => catA.order - catB.order);
@@ -157,12 +161,12 @@ export function getData() {
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
-          .then(handleErrors)
-          .then(response => response.json())
-          .then(({ data: { allEvents, allBadgers, allQnA } }) => ({
-            events: sortEvents(selectValidEvents(allEvents)),
-            badgers: sortBadgers(allBadgers),
-            categories: getCategories(allBadgers),
-            qAndAs: selectValidQandAs(allQnA),
-          }));
+    .then(handleErrors)
+    .then(response => response.json())
+    .then(({ data: { allEvents, allBadgers, allQnA } }) => ({
+      events: sortEvents(selectValidEvents(allEvents)),
+      badgers: sortBadgers(allBadgers),
+      categories: getCategories(allBadgers),
+      qAndAs: selectValidQandAs(allQnA),
+    }));
 }

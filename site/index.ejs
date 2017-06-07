@@ -31,15 +31,7 @@
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
     <% if (typeof tracking !== 'undefined' && tracking) { %>
     <script async type="text/javascript" src="https://secure.leadforensics.com/js/77932.js"></script><noscript><img src="https://secure.leadforensics.com/77932.png" style="display: none;" /></noscript>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-16654919-1', 'auto');
-        ga('send', 'pageview');
-    </script><% } %>
+    <% } %>
     <script>
       /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
       !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);

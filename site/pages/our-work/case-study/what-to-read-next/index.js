@@ -10,7 +10,7 @@ import camdenMarketImage from './images/camdenMarketImage.jpg';
 import arrowSVG from '../../../../../assets/images/SVG/arrow.svg';
 
 const cx = classnames.bind(styles);
-const WhatToReadNext = () => (
+const WhatToReadNext = () =>
   <div className={styles.whatNext}>
     <div className={styles.whatNext__tilesContainer}>
       <div className={cx('whatNext__tile', 'whatNext__tile--fortnum')}>
@@ -30,7 +30,11 @@ const WhatToReadNext = () => (
       <div className={cx('whatNext__tile', 'whatNext__tile--financialTimes')}>
         <figure>
           <a href="/our-work/case-study/financial-times/">
-            <img src={financialTimesImage} alt="Financial Times" className={styles.whatNext__image} />
+            <img
+              src={financialTimesImage}
+              alt="Financial Times"
+              className={styles.whatNext__image}
+            />
           </a>
           <figcaption className={styles.whatNext__caption}>Financial Times</figcaption>
         </figure>
@@ -59,7 +63,6 @@ const WhatToReadNext = () => (
     <Link to="ourWorkPage" className={styles.whatNext__button}>
       See more of our work
     </Link>
-  </div>
-);
+  </div>;
 
 export default WhatToReadNext;

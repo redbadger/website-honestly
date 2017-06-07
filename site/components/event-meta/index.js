@@ -14,12 +14,7 @@ export const linksSection = ({ externalLinks, internalLinks }) => {
   return <noscript />;
 };
 
-const EventMeta = (
-  {
-    internalLinks,
-    externalLinks,
-  },
-) => {
+const EventMeta = ({ internalLinks, externalLinks }) => {
   return (
     <div>
       {linksSection({

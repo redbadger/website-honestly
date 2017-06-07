@@ -9,16 +9,13 @@ const blogSlice = ({ featuredBlogPosts }: { featuredBlogPosts: Array<BlogPost> }
   return (
     <section className={styles.blogSlice}>
       <div className={styles.sliceContainer}>
-        <h2 className={styles.blogSliceTitle} >We’re opinionated and curious.</h2>
-        <ul className={styles.blogLinkList} >
-          {featuredBlogPosts.map((featuredBlogPost, ind) => (
-            <BlogEntry key={ind} featuredBlogPost={featuredBlogPost} />
-          ))}
+        <h2 className={styles.blogSliceTitle}>We’re opinionated and curious.</h2>
+        <ul className={styles.blogLinkList}>
+          {featuredBlogPosts.map((featuredBlogPost, ind) =>
+            <BlogEntry key={ind} featuredBlogPost={featuredBlogPost} />,
+          )}
         </ul>
-        <a
-          href="//red-badger.com/blog"
-          className={styles.blogLink}
-        >
+        <a href="//red-badger.com/blog" className={styles.blogLink}>
           Read our blog
         </a>
       </div>

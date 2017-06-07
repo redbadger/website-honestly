@@ -1,7 +1,10 @@
 {
   "extends": [
     "airbnb",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/flowtype"
   ],
   "env": {
     "browser": true,

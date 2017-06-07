@@ -43,18 +43,19 @@ describe('AfterSignUp', () => {
   });
 
   it('handles handleSubmit and sets the state correctly', () => {
-    const submitFormFunction = () => new Promise(resolve => {
-      resolve({
-        json: () => {
-          return {
-            newsletterSubmitted: true,
-            email_address: 'jkdjksdhedw239e8h238u', // eslint-disable-line camelcase
-            errorMessage: 'Example error message',
-            updatedFormSubmitted: false,
-          };
-        },
+    const submitFormFunction = () =>
+      new Promise(resolve => {
+        resolve({
+          json: () => {
+            return {
+              newsletterSubmitted: true,
+              email_address: 'jkdjksdhedw239e8h238u', // eslint-disable-line camelcase
+              errorMessage: 'Example error message',
+              updatedFormSubmitted: false,
+            };
+          },
+        });
       });
-    });
     const wrapper = shallow(<AfterSignUp onSubmit={submitFormFunction} />);
     wrapper.instance().handleSubmit();
     expect(wrapper.state()).to.deep.equal({

@@ -7,10 +7,10 @@ import fmProjectMediumSnapshot from './images/fortnum-medium.png';
 
 const caseStudyUrl = '/our-work/case-study/fortnum-and-mason/';
 
-export default () => (
-  <div className={styles.caseStudyContainer} >
+export default () =>
+  <div className={styles.caseStudyContainer}>
     <div className={styles.caseStudyContent}>
-      <div className={styles.caseStudyTextContainer} >
+      <div className={styles.caseStudyTextContainer}>
         <a href={caseStudyUrl}>
           <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
           <h2 className={styles.caseStudyTextContainerHeader}>
@@ -26,9 +26,16 @@ export default () => (
         </a>
       </div>
       <a className={styles.imageLink} href={caseStudyUrl}>
-        <img className={styles.projectBigSmallSnapshot} src={fmProjectSnapshot} alt="Fortnum and Mason project snapshot" />
-        <img className={styles.projectMediumSnapshot} src={fmProjectMediumSnapshot} alt="Fortnum and Mason project snapshot" />
+        <img
+          className={styles.projectBigSmallSnapshot}
+          src={fmProjectSnapshot}
+          alt="Fortnum and Mason project snapshot"
+        />
+        <img
+          className={styles.projectMediumSnapshot}
+          src={fmProjectMediumSnapshot}
+          alt="Fortnum and Mason project snapshot"
+        />
       </a>
     </div>
-  </div>
-);
+  </div>;

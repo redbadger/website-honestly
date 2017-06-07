@@ -40,14 +40,13 @@ const componentMap = {
 };
 
 function routes() {
-  return routeDefinitions.map(
-    route => ({
-      ...route,
-      component: (routerProps, props) => {
-        const Component = componentMap[route.key];
-        return (<L {...routerProps}><Component {...props} /></L>);
-      },
-    }));
+  return routeDefinitions.map(route => ({
+    ...route,
+    component: (routerProps, props) => {
+      const Component = componentMap[route.key];
+      return <L {...routerProps}><Component {...props} /></L>;
+    },
+  }));
 }
 
 /*
@@ -103,7 +102,7 @@ const handleContactUsHash = stateNavigator => {
 export default () => {
   const stateNavigator = new StateNavigator(
     routes(),
-    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
+    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1)),
   );
   handleContactUsHash(stateNavigator);
   return stateNavigator;
