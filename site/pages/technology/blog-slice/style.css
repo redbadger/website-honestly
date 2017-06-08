@@ -63,5 +63,6 @@
 
   .blogSliceTitle {
     composes: fontM from "../../../css/typography/_fonts.css";
+    text-align: left;
   }
 }
