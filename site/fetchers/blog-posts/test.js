@@ -30,7 +30,7 @@ describe('featured blog posts fetcher', () => {
   it('maps blog posts to expected data shape', () => {
     const data = mapDataToState(fixture());
     const post = data[0];
-    expect(post).to.have.all.keys('slug', 'category', 'title', 'author');
+    expect(post).to.have.all.keys('slug', 'category', 'title', 'author', 'date', 'excerpt');
     expect(post.author).to.have.all.keys('role', 'name');
   });
 
