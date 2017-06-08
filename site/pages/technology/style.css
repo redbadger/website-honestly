@@ -131,6 +131,7 @@ img.techRoundTable {
 
 @media largeScreen {
   .pastAndFuture {
+    composes: dividerBlack from "../../css/_divider.css";
     flex-direction: row;
   }
 

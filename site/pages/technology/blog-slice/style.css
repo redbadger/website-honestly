@@ -1,5 +1,5 @@
 @value badgerWhite, badgerBlack, linesOnWhite, linesOnBlack from "../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+@value mediumScreen, largeScreen, containerMaxWidth from "../../../css/_sizes.css";
 
 .blogSlice {
   padding: 40px 20px;
@@ -34,7 +34,6 @@
 }
 
 .sliceContainer {
-  max-width: 1162px;
   display: inline-block;
   width: 100%;
 }
@@ -55,6 +54,7 @@
   .blogSlice {
     padding: 40px 20px 50px 15px;
     margin-right: 0px;
+    max-width: calc(containerMaxWidth / 2);
   }
 
   .blogSliceRight {
