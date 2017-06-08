@@ -2,6 +2,7 @@
 
 import fetch from 'node-fetch';
 import take from 'lodash.take';
+import moment from 'moment';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 import handleErrors from '../handle-errors';
 
@@ -31,6 +32,7 @@ export const mapDataToState = (data: Object): Array<BlogPost> =>
     category: post.categories[0],
     title: post.title,
     excerpt: sanitiseExcerpt(post.excerpt) || 'Click to read more!',
+    date: moment(post.publishOn),
     author: {
       role: sanitiseAuthorBio(post.author.bio) || 'Badger blogger',
       name: post.author.displayName,

@@ -65,3 +65,9 @@
     composes: fontXS from "../../../../css/typography/_fonts.css";
   }
 }
+
+@media largeScreen {
+  .linkTitle {
+    composes: fontStaticM from "../../../../css/typography/_fonts.css";
+  }
+}
