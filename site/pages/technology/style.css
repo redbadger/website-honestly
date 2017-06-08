@@ -62,7 +62,6 @@
   }
 }
 
-
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
@@ -119,6 +118,7 @@ img.techRoundTable {
 }
 
 .leftBlogs {
+  composes: dividerWhite from "../../css/_divider.css";
   background-color: badgerWhite;
   color: badgerBlack;
 }
@@ -127,4 +127,18 @@ img.techRoundTable {
   composes: dividerBlack from "../../css/_divider.css";
   background-color: badgerBlack;
   color: badgerWhite;
+}
+
+@media largeScreen {
+  .pastAndFuture {
+    flex-direction: row;
+  }
+
+  .leftBlogs {
+    flex: 1 50%;
+  }
+
+  .rightBlogs {
+    flex: 1 50%;
+  }
 }

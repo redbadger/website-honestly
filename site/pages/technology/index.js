@@ -58,7 +58,7 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and tested'} />
       </div>
       <div className={styles.rightBlogs}>
-        <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing Trends'} />
+        <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing Trends'} altStyle />
       </div>
     </section>
   </div>;

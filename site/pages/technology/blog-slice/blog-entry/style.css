@@ -1,4 +1,4 @@
-@value badgerBlack, badgerRedOnWhite, linesOnWhite from "../../../../css/_colors.css";
+@value badgerBlack, badgerRedOnWhite from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .link {
@@ -6,12 +6,13 @@
   composes: serif from "../../../../css/typography/_fonts.css";
   text-decoration: none;
   color: inherit;
-  padding: 0px 0px 20px 0px;
+  padding: 10px 0px 30px 0px;
   display: block;
 }
 
 .linkTitle {
   display: inline;
+  padding-bottom: 20px;
 }
 
 .linkTitle p {
@@ -51,25 +52,16 @@
   composes: fontS2 from "../../../../css/typography/_fonts.css";
 }
 
-@media mediumScreen {
-  .link {
-    padding: 20px 0 40px 0;
-  }
-
-  .linkTitle {
-    flex-basis: 800px;
-  }
-
-  .authorTitle {
-    margin-left: 100px;
-    width: 250px;
-    display: block;
-  }
+.authorTitle {
+  padding-bottom: 10px;
 }
 
-@media largeScreen {
-  .authorTitle {
-    margin-left: 200px;
-    width: 150px;
+@media mediumScreen {
+  .linkAuthor {
+    composes: fontXS from "../../../../css/typography/_fonts.css";
+  }
+
+  .publishTime {
+    composes: fontXS from "../../../../css/typography/_fonts.css";
   }
 }
