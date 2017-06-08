@@ -18,18 +18,20 @@ export type BlogPost = {
   date: Date,
 };
 
-const BlogEntry = ({ blogPost }: { blogPost: BlogPost }) => {
+const BlogEntry = ({ blogPost, altStyle }: { blogPost: BlogPost, altStyle?: boolean }) => {
+  const linkAuthorStyle = [styles.linkAuthor, altStyle && styles.linkAuthorBlack];
+  const linkTitleStyle = [styles.linkTitle, altStyle && styles.linkTitleBlack];
   return (
     <li>
       <a href={'//red-badger.com/blog/' + blogPost.slug} className={styles.link}>
         <div className={styles.authorTitle}>
-          <span className={styles.linkAuthor}>{blogPost.author.name}</span>{' '}
+          <span className={linkAuthorStyle}>{blogPost.author.name}</span>{' '}
           <span className={styles.publishTime}>
             {blogPost.date && moment(blogPost.date).fromNow()}
           </span>
         </div>
         <div className={styles.linkEntry}>
-          <div className={styles.linkTitle}>
+          <div className={linkTitleStyle}>
             <p>{blogPost.title}</p>
           </div>
           {/* eslint-disable react/no-danger */}

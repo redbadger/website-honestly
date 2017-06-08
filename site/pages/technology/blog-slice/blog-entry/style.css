@@ -1,4 +1,4 @@
-@value badgerBlack, badgerRedOnWhite from "../../../../css/_colors.css";
+@value badgerBlack, badgerRedOnWhite, badgerRedOnBlack from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .link {
@@ -31,6 +31,11 @@
   border-bottom: 1px solid badgerRedOnWhite;
 }
 
+.linkAuthorBlack {
+  color: badgerRedOnBlack;
+  border-bottom: 1px solid badgerRedOnBlack;
+}
+
 .publishTime {
   composes: sansSerif from "../../../../css/typography/_fonts.css";
   composes: fontS from "../../../../css/typography/_fonts.css";
@@ -45,6 +50,10 @@
 
 .linkTitle p:hover {
   border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.linkTitleBlack p:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
 }
 
 .excerpt {
