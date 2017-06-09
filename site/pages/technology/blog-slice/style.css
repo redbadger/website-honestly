@@ -9,8 +9,9 @@
 }
 
 .blogSliceTitle {
-  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: fontM from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
+  margin-bottom: -15px;
 }
 
 .blogLink {
@@ -46,7 +47,8 @@
   }
 
   .blogSliceTitle {
-    padding-bottom: 20px;
+    font-size: 40px;
+    padding-bottom: 15px;
   }
 }
 
@@ -62,7 +64,7 @@
   }
 
   .blogSliceTitle {
-    composes: fontM from "../../../css/typography/_fonts.css";
     text-align: left;
+    padding-bottom: 20px;
   }
 }

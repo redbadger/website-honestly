@@ -5,7 +5,7 @@ import styles from './style.css';
 import BlogEntry from './blog-entry';
 import type { BlogPost } from './blog-entry';
 
-const blogSlice = ({
+const BlogSlice = ({
   blogPosts,
   title,
   altStyle,
@@ -30,4 +30,4 @@ const blogSlice = ({
   );
 };
 
-export default blogSlice;
+export default BlogSlice;
