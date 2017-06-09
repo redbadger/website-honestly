@@ -18,7 +18,7 @@
   background-color: badgerRedOnWhite;
 }
 
-.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey, .dividerBlackLarge {
+.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey, .dividerBlackLarge, .dividerWhiteSmall {
   composes: divider;
 }
 
@@ -65,8 +65,16 @@
   display: none;
 }
 
+.dividerWhiteSmall:before {
+  background-color: badgerWhite;
+}
+
 @media largeScreen {
   .dividerBlackLarge:before {
     display: block;
+  }
+
+  .dividerWhiteSmall:before {
+    display: none;
   }
 }

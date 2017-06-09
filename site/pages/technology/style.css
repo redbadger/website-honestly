@@ -112,17 +112,15 @@ img.techRoundTable {
 
 .webinar {
   background-color: daveGreen;
-  height: 45px;
-  padding: 50px 0px;
   color: badgerBlack;
-  composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
+  font-weight: 900;
   composes: dividerGreen from "../../css/_divider.css";
-  composes: dividerAfterGreen from "../../css/_divider_after.css";
+  padding-bottom: 8px;
 }
 
 .webinarInner {
-  height: 100%;
+  padding: 20px 0px 40px 0px;
   max-width: 210px;
   margin: auto;
   display: flex;
@@ -133,6 +131,8 @@ img.techRoundTable {
 }
 
 .webinarText {
+  font-size: 30px;
+  padding-bottom: 30px;
 }
 
 .webinarButton {
@@ -145,6 +145,34 @@ img.techRoundTable {
   composes: fontS2 from "../../css/typography/_fonts.css";
 }
 
+@media mediumScreen {
+  .webinarInner {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: none;
+    padding: 40px 20px;
+  }
+
+  .webinarText {
+    padding: 0;
+  }
+
+  .webinarButton {
+    margin-right: 30px;
+  }
+}
+
+@media largeScreen {
+  .webinarInner {
+    max-width: contentMaxWidth;
+    padding: 50px 0px;
+  }
+
+  .webinarButton {
+    margin: 0;
+  }
+}
 
 /* ============= Past and Future Stying ============= */
 
@@ -156,6 +184,7 @@ img.techRoundTable {
 }
 
 .leftBlogs {
+  composes: dividerWhiteSmall from "../../css/_divider.css";
   background-color: badgerWhite;
   color: badgerBlack;
 }
