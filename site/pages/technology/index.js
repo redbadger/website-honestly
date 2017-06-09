@@ -72,4 +72,15 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing trends'} altStyle />
       </div>
     </section>
+    <section className={styles.social}>
+      <div className={styles.socialInner}>
+        <h2 className={styles.webinarText}>{"We're hosting a webinar!"}</h2>
+        <a
+          className={styles.webinarButton}
+          href="https://www.eventbrite.com/e/lightning-tech-talks-10-in-10-tickets-35234824308"
+        >
+          Sign up to attend
+        </a>
+      </div>
+    </section>
   </div>;
