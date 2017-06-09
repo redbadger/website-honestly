@@ -1,32 +1,42 @@
 @value badgerBlack, badgerRedOnWhite, badgerRedOnBlack from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
+/* Main Styling */
+
 .link {
-  composes: fontM from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   text-decoration: none;
   color: inherit;
-  padding: 10px 0px 30px 0px;
+  padding: 30px 0px;
   display: block;
 }
 
-.linkTitle {
-  display: inline;
-  padding-bottom: 20px;
+@media mediumScreen {
+  .link {
+    padding: 20px 0px;
+  }
 }
 
-.linkTitle p {
-  display: inline;
+@media largeScreen {
+  .link {
+    padding: 25px 0px;
+  }
 }
 
-.linkEntry {
-  display: flex;
-  flex-direction: column;
+/* "Jack Hoy - a day ago..." */
+
+.authorTitle {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.publishTime {
+  padding-left: 2px;
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
 }
 
 .linkAuthor {
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontS from "../../../../css/typography/_fonts.css";
   color: badgerRedOnWhite;
   border-bottom: 1px solid badgerRedOnWhite;
 }
@@ -36,16 +46,21 @@
   border-bottom: 1px solid badgerRedOnBlack;
 }
 
-.publishTime {
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontS from "../../../../css/typography/_fonts.css";
+/* BlogEntry Body - Title and excerpt */
+
+.linkEntry {
+  display: flex;
+  flex-direction: column;
 }
 
-.category {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  text-transform: uppercase;
-  color: badgerRedOnWhite;
+.linkTitle {
+  composes: fontXL from "../../../../css/typography/_fonts.css";
+  display: inline;
+  padding-bottom: 20px;
+}
+
+.linkTitle p {
+  display: inline;
 }
 
 .linkTitle p:hover {
@@ -58,25 +73,12 @@
 
 .excerpt {
   composes: lightSerif from "../../../../css/typography/_fonts.css";
-  composes: fontS2 from "../../../../css/typography/_fonts.css";
-}
-
-.authorTitle {
-  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.35em;
 }
 
 @media mediumScreen {
-  .linkAuthor {
-    composes: fontXS from "../../../../css/typography/_fonts.css";
-  }
-
-  .publishTime {
-    composes: fontXS from "../../../../css/typography/_fonts.css";
-  }
-}
-
-@media largeScreen {
   .linkTitle {
-    composes: fontStaticM from "../../../../css/typography/_fonts.css";
+    padding-bottom: 10px;
   }
 }

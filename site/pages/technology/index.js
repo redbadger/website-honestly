@@ -55,10 +55,10 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
     </div>
     <section className={styles.pastAndFuture}>
       <div className={styles.leftBlogs}>
-        <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and Tested'} />
+        <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and tested'} />
       </div>
       <div className={styles.rightBlogs}>
-        <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing Trends'} altStyle />
+        <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing trends'} altStyle />
       </div>
     </section>
   </div>;
