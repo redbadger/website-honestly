@@ -148,7 +148,7 @@ img.techRoundTable {
 @media mediumScreen {
   .webinarInner {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: none;
     padding: 40px 20px;
@@ -159,7 +159,7 @@ img.techRoundTable {
   }
 
   .webinarButton {
-    margin-right: 30px;
+    margin-left: 20px;
   }
 }
 
@@ -167,10 +167,6 @@ img.techRoundTable {
   .webinarInner {
     max-width: contentMaxWidth;
     padding: 50px 0px;
-  }
-
-  .webinarButton {
-    margin: 0;
   }
 }
 
