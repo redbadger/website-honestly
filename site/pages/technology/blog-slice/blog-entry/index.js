@@ -19,8 +19,8 @@ export type BlogPost = {
 };
 
 const BlogEntry = ({ blogPost, altStyle }: { blogPost: BlogPost, altStyle?: boolean }) => {
-  const linkAuthorStyle = [styles.linkAuthor, altStyle && styles.linkAuthorBlack];
-  const linkTitleStyle = [styles.linkTitle, altStyle && styles.linkTitleBlack];
+  const linkAuthorStyle = [styles.linkAuthor, altStyle && styles.linkAuthorBlack].join(' ');
+  const linkTitleStyle = [styles.linkTitle, altStyle && styles.linkTitleBlack].join(' ');
   return (
     <li>
       <a href={'//red-badger.com/blog/' + blogPost.slug} className={styles.link}>

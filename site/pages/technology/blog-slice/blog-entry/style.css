@@ -23,7 +23,7 @@
   }
 }
 
-/* "Jack Hoy - a day ago..." */
+/* Author styling - "Jack Hoy - a day ago..." */
 
 .authorTitle {
   font-size: 16px;
@@ -54,9 +54,9 @@
 }
 
 .linkTitle {
-  composes: fontXL from "../../../../css/typography/_fonts.css";
   display: inline;
   padding-bottom: 20px;
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
 }
 
 .linkTitle p {
