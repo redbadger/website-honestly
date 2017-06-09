@@ -32,6 +32,7 @@
 
 .publishTime {
   padding-left: 2px;
+  font-weight: 300;
   composes: sansSerif from "../../../../css/typography/_fonts.css";
 }
 
