@@ -1,0 +1,26 @@
+@value badgerRedOnWhite, daveGreen from "./_colors.css";
+
+.dividerAfter {
+  position: relative;
+  z-index: 3;
+}
+
+.dividerAfter:after {
+  padding-right: 2px;
+  content:"";
+  position: absolute;
+  left: -4px;
+  width: 50%;
+  height: 10px;
+  bottom: -9px;
+  transform: skew(-40deg);
+  background-color: badgerRedOnWhite;
+}
+
+.dividerAfterGreen {
+  composes: dividerAfter;
+}
+
+.dividerAfterGreen:after {
+  background-color: daveGreen;
+}

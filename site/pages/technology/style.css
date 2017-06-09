@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 /* ============= Intro Stying ============= */
@@ -108,6 +108,44 @@ img.techRoundTable {
   margin: auto;
 }
 
+/* ============= Webinar signup styling ============= */
+
+.webinar {
+  background-color: daveGreen;
+  height: 45px;
+  padding: 50px 0px;
+  color: badgerBlack;
+  composes: fontL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  composes: dividerGreen from "../../css/_divider.css";
+  composes: dividerAfterGreen from "../../css/_divider_after.css";
+}
+
+.webinarInner {
+  height: 100%;
+  max-width: 210px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.webinarText {
+}
+
+.webinarButton {
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  background-color: badgerBlack;
+  color: badgerWhite;
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontS2 from "../../css/typography/_fonts.css";
+}
+
+
 /* ============= Past and Future Stying ============= */
 
 .pastAndFuture {
@@ -118,7 +156,6 @@ img.techRoundTable {
 }
 
 .leftBlogs {
-  composes: dividerWhite from "../../css/_divider.css";
   background-color: badgerWhite;
   color: badgerBlack;
 }
@@ -131,8 +168,8 @@ img.techRoundTable {
 
 @media largeScreen {
   .pastAndFuture {
-    composes: dividerBlack from "../../css/_divider.css";
     flex-direction: row;
+    composes: dividerBlackLarge from "../../css/_divider.css";
   }
 
   .leftBlogs {

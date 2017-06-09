@@ -53,6 +53,12 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         </section>
       </section>
     </div>
+    <section className={styles.webinar}>
+      <div className={styles.webinarInner}>
+        <h2 className={styles.webinarText}>{"We're hosting a webinar"}</h2>
+        <a className={styles.webinarButton}>Sign up to attend</a>
+      </div>
+    </section>
     <section className={styles.pastAndFuture}>
       <div className={styles.leftBlogs}>
         <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and Tested'} />
