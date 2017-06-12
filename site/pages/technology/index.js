@@ -30,9 +30,9 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
           <div className={styles.innerContainer}>
             <h1 className={styles.mainHeader}>Technology</h1>
             <p className={styles.description}>
-              Technology does not stand still and neither do we. On a regular basis we get our whole
-              tech team together and review all the tech we have used across all our projects to
-              derive what is hot and what is not in our world of tech.
+              Technology does not stand still and neither do we. On a regular basis we get our
+              engineering team together to discuss what’s been used on our projects and what
+              emerging technologies could be taken to enterprise scale.
             </p>
             <a className={styles.latestRoundTableLink}>
               {/* eslint-disable jsx-a11y/no-static-element-interactions */}
