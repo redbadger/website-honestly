@@ -6,6 +6,8 @@
 .introContainer {
   padding: 0px 20px;
   background-color: badgerWhite;
+  /* Dirty IE11 hack for weird double nested flex box issues */
+  min-width: 1px;
 }
 
 .intro {
