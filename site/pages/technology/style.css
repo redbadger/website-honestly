@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen, cainYellow from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen, cainYellow, scorpian from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 /* ============= Intro Stying ============= */
@@ -146,6 +146,10 @@ img.techRoundTable {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.webinarButton:hover {
+  background-color: scorpian;
 }
 
 @media mediumScreen {
