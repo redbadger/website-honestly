@@ -6,7 +6,7 @@ import Link from '../../../components/link';
 
 const trackAnalytics = title => () =>
   ReactGA.event({
-    category: 'About Us',
+    category: 'AboutUs-JoinUs',
     action: title,
     label: `From: ${window.location.pathname}`,
   });
