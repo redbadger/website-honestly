@@ -65,26 +65,28 @@ const Footer = () =>
         <div className={cx('section', 'social')}>
           <span className={styles.screenReaderText}>Email us at</span>
           <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>
-            hello@red-badger.com
+            <span className={styles.mailtoLinkText}>hello@red-badger.com</span>
           </a>
           <span className={styles.screenReaderText}>Call us on</span>
           <a href="tel:+442035670555" className={styles.telLink}>
-            <span>+</span>
-            <span>4</span>
-            <span>4 </span>
-            <span>(</span>
-            <span>0</span>
-            <span>) </span>
-            <span>2</span>
-            <span>0 </span>
-            <span>3</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7 </span>
-            <span>0</span>
-            <span>5</span>
-            <span>5</span>
-            <span>5</span>
+            <span className={styles.telLinkText}>
+              <span>+</span>
+              <span>4</span>
+              <span>4 </span>
+              <span>(</span>
+              <span>0</span>
+              <span>) </span>
+              <span>2</span>
+              <span>0 </span>
+              <span>3</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7 </span>
+              <span>0</span>
+              <span>5</span>
+              <span>5</span>
+              <span>5</span>
+            </span>
           </a>
           <span className={styles.screenReaderText}>
             Find us on social media

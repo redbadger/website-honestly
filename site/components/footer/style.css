@@ -37,9 +37,12 @@
 }
 
 .nav li a {
-  border-bottom: 2px solid badgerRedOnBlack;
   color: badgerWhite;
   text-decoration: none;
+}
+
+.nav li a:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
 }
 
 .section {
@@ -62,10 +65,15 @@
   color: badgerWhite;
   display: block;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
-.telLink {
-  margin-bottom: 30px;
+.mailtoLinkText:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.telLinkText:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
 }
 
 .socialLinks {

@@ -1,4 +1,4 @@
-@value badgerRedOnWhite, badgerWhite, badgerBlack from "../../css/_colors.css";
+@value badgerRedOnWhite, badgerWhite, badgerBlack, badgerRedOnBlack from "../../css/_colors.css";
 @value zindexOverlay from "../../css/_zindex.css";
 @value mediumScreen from "../../css/_sizes.css";
 
@@ -101,6 +101,11 @@
 .smallScreenNav li a {
   color: badgerWhite;
   text-decoration: none;
+  border: none;
+}
+
+.smallScreenNav li a:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
 }
 
 .menuCloseButton {
