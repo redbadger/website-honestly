@@ -34,7 +34,12 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               tech team together and review all the tech we have used across all our projects to
               derive what is hot and what is not in our world of tech.
             </p>
-            <a className={styles.latestRoundTableLink}>
+            <a
+              className={styles.latestRoundTableLink}
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {/* eslint-disable jsx-a11y/no-static-element-interactions */}
               <span onClick={trackAnalytics('RoundtablePDFLink')}>
                 Read our latest tech round table
@@ -61,6 +66,8 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         <a
           className={styles.webinarButton}
           href="https://www.eventbrite.com/e/lightning-tech-talks-10-in-10-tickets-35234824308"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Sign up to attend
         </a>
@@ -77,11 +84,21 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
     <section className={styles.social}>
       <div className={styles.webinarInner}>
         <h2 className={styles.webinarText}>{'Say hello:'}</h2>
-        <a className={styles.webinarButton} href="https://redbadger.typeform.com/to/cBuJUl">
+        <a
+          className={styles.webinarButton}
+          href="https://redbadger.typeform.com/to/cBuJUl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <InlineSVG src={slackSVG} className={styles.socialIcon} />
           Join us on Slack
         </a>
-        <a className={styles.webinarButton} href="https://meetup.react.london/">
+        <a
+          className={styles.webinarButton}
+          href="https://meetup.react.london/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <InlineSVG src={meetupSVG} className={styles.socialIcon} />
           Come to our Meetup
         </a>
