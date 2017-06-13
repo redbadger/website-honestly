@@ -56,6 +56,7 @@
     "md5": "^2.2.1",
     "mkdirp": "^0.5.1",
     "mocha": "^3.0.2",
+    "moment": "^2.18.1",
     "navigation": "^3.0.0",
     "navigation-react": "^2.0.3",
     "node-fetch": "^1.6.3",

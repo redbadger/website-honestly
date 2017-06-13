@@ -1,9 +1,13 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen, cainYellow, scorpian from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
-.technologyPage {
+/* ============= Intro Stying ============= */
+
+.introContainer {
   padding: 0px 20px;
   background-color: badgerWhite;
+  /* Dirty IE11 hack for weird double nested flex box issues */
+  min-width: 1px;
 }
 
 .intro {
@@ -60,7 +64,6 @@
   }
 }
 
-
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
@@ -105,4 +108,135 @@
 img.techRoundTable {
   max-width: 100%;
   margin: auto;
+}
+
+/* ============= Webinar signup styling ============= */
+
+.webinar {
+  background-color: daveGreen;
+  color: badgerBlack;
+  composes: serif from "../../css/typography/_fonts.css";
+  font-weight: 900;
+  composes: dividerGreen from "../../css/_divider.css";
+  padding-bottom: 8px;
+}
+
+.webinarInner {
+  padding: 30px 0px 35px 0px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.webinarText {
+  font-size: 30px;
+}
+
+.webinarButton {
+  min-width: 200px;
+  padding: 0 20px;
+  margin-top: 30px;
+  height: 55px;
+  background-color: badgerBlack;
+  color: badgerWhite;
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontS2 from "../../css/typography/_fonts.css";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.webinarButton:hover {
+  background-color: scorpian;
+}
+
+@media mediumScreen {
+  .webinarInner {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    padding: 40px 20px;
+  }
+
+  .webinarText {
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .webinarButton {
+    margin: 0 10px;
+  }
+}
+
+@media largeScreen {
+  .webinarInner {
+    max-width: contentMaxWidth;
+    padding: 50px 0px;
+  }
+}
+
+/* ============= Past and Future Stying ============= */
+
+.pastAndFuture {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: badgerBlack;
+}
+
+.leftBlogs {
+  composes: dividerWhiteSmall from "../../css/_divider.css";
+  background-color: badgerWhite;
+  color: badgerBlack;
+}
+
+.rightBlogs {
+  composes: dividerBlack from "../../css/_divider.css";
+  background-color: badgerBlack;
+  color: badgerWhite;
+}
+
+@media largeScreen {
+  .pastAndFuture {
+    flex-direction: row;
+    composes: dividerBlackLarge from "../../css/_divider.css";
+  }
+
+  .leftBlogs {
+    flex: 1 50%;
+  }
+
+  .rightBlogs {
+    flex: 1 50%;
+  }
+}
+
+/* ============= Social slice styling ============= */
+
+.social {
+  background-color: cainYellow;
+  color: badgerBlack;
+  composes: serif from "../../css/typography/_fonts.css";
+  font-weight: 900;
+  composes: dividerYellow from "../../css/_divider.css";
+  padding-bottom: 8px;
+}
+
+.socialIcon {
+  margin: -2px 15px 0 0;
+  height: 28px;
+}
+
+.socialIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.socialIcon svg g {
+  fill: badgerWhite;
 }

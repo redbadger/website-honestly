@@ -2,6 +2,7 @@
 
 import fetch from 'node-fetch';
 import take from 'lodash.take';
+import moment from 'moment';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 import handleErrors from '../handle-errors';
 
@@ -20,11 +21,18 @@ export const sanitiseAuthorBio = (bio: string = ''): string => {
   return (role && role[1]) || bio;
 };
 
+export const sanitiseExcerpt = (excerpt: string = ''): string => {
+  const text = excerpt.match(/<.+>(.*)<.+>/);
+  return (text && text[1]) || excerpt;
+};
+
 export const mapDataToState = (data: Object): Array<BlogPost> =>
   data.map((post: Object): BlogPost => ({
     slug: post.urlId,
     category: post.categories[0],
     title: post.title,
+    excerpt: sanitiseExcerpt(post.excerpt) || 'Click to read more!',
+    date: moment(post.publishOn),
     author: {
       role: sanitiseAuthorBio(post.author.bio) || 'Badger blogger',
       name: post.author.displayName,
@@ -52,4 +60,4 @@ const getPosts = params =>
       }),
   );
 
-export const getFeaturedPosts = () => getPosts({ tag: 'featured' }).then(posts => take(posts, 3));
+export const getBlogPosts = (tag: string) => getPosts({ tag }).then(posts => take(posts, 3));

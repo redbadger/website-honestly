@@ -1,11 +1,13 @@
 @value badgerRedOnWhite, badgerWhite, badgerBlack, daveGreen, cainYellow, grey from "./_colors.css";
 @value timelineDivider from "./_zindex.css";
+@value largeScreen from "./_sizes.css";
 
 .divider {
   position: relative;
 }
 
 .divider:before {
+  padding-left: 2px;
   content:"";
   position: absolute;
   right: -6px;
@@ -16,7 +18,7 @@
   background-color: badgerRedOnWhite;
 }
 
-.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey {
+.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey, .dividerBlackLarge, .dividerWhiteSmall {
   composes: divider;
 }
 
@@ -56,4 +58,23 @@
   right: 0;
   left: 352px;
   width: 100%;
+}
+
+.dividerBlackLarge:before {
+  background-color: badgerBlack;
+  display: none;
+}
+
+.dividerWhiteSmall:before {
+  background-color: badgerWhite;
+}
+
+@media largeScreen {
+  .dividerBlackLarge:before {
+    display: block;
+  }
+
+  .dividerWhiteSmall:before {
+    display: none;
+  }
 }

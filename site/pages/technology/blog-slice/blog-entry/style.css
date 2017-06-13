@@ -1,0 +1,85 @@
+@value badgerBlack, badgerRedOnWhite, badgerRedOnBlack from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+/* Main Styling */
+
+.link {
+  composes: serif from "../../../../css/typography/_fonts.css";
+  text-decoration: none;
+  color: inherit;
+  padding: 30px 0px;
+  display: block;
+}
+
+@media mediumScreen {
+  .link {
+    padding: 20px 0px;
+  }
+}
+
+@media largeScreen {
+  .link {
+    padding: 25px 0px;
+  }
+}
+
+/* Author styling => "Jack Hoy - a day ago..." */
+
+.authorTitle {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.publishTime {
+  padding-left: 2px;
+  font-weight: 300;
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+}
+
+.linkAuthor {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  color: badgerRedOnWhite;
+  border-bottom: 1px solid badgerRedOnWhite;
+}
+
+.linkAuthorBlack {
+  color: badgerRedOnBlack;
+  border-bottom: 1px solid badgerRedOnBlack;
+}
+
+/* BlogEntry Body - Title and excerpt */
+
+.linkEntry {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkTitle {
+  display: inline;
+  padding-bottom: 20px;
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+}
+
+.linkTitle p {
+  display: inline;
+}
+
+.linkTitle p:hover {
+  border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.linkTitleBlack p:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.excerpt {
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  font-size: 20px;
+  line-height: 1.35em;
+}
+
+@media mediumScreen {
+  .linkTitle {
+    padding-bottom: 10px;
+  }
+}
