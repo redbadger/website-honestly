@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen from "../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen, cainYellow, scorpian from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 /* ============= Intro Stying ============= */
@@ -6,6 +6,8 @@
 .introContainer {
   padding: 0px 20px;
   background-color: badgerWhite;
+  /* Dirty IE11 hack for weird double nested flex box issues */
+  min-width: 1px;
 }
 
 .intro {
@@ -120,8 +122,7 @@ img.techRoundTable {
 }
 
 .webinarInner {
-  padding: 20px 0px 40px 0px;
-  max-width: 210px;
+  padding: 30px 0px 35px 0px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -132,17 +133,25 @@ img.techRoundTable {
 
 .webinarText {
   font-size: 30px;
-  padding-bottom: 30px;
 }
 
 .webinarButton {
-  width: 200px;
-  height: 45px;
-  line-height: 45px;
+  min-width: 200px;
+  padding: 0 20px;
+  margin-top: 30px;
+  height: 55px;
   background-color: badgerBlack;
   color: badgerWhite;
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontS2 from "../../css/typography/_fonts.css";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.webinarButton:hover {
+  background-color: scorpian;
 }
 
 @media mediumScreen {
@@ -156,10 +165,11 @@ img.techRoundTable {
 
   .webinarText {
     padding: 0;
+    margin-right: 10px;
   }
 
   .webinarButton {
-    margin-left: 20px;
+    margin: 0 10px;
   }
 }
 
@@ -204,4 +214,29 @@ img.techRoundTable {
   .rightBlogs {
     flex: 1 50%;
   }
+}
+
+/* ============= Social slice styling ============= */
+
+.social {
+  background-color: cainYellow;
+  color: badgerBlack;
+  composes: serif from "../../css/typography/_fonts.css";
+  font-weight: 900;
+  composes: dividerYellow from "../../css/_divider.css";
+  padding-bottom: 8px;
+}
+
+.socialIcon {
+  margin: -2px 15px 0 0;
+  height: 28px;
+}
+
+.socialIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.socialIcon svg g {
+  fill: badgerWhite;
 }

@@ -7,6 +7,8 @@ import BlogSlice from './blog-slice';
 
 import techRoundTableImage from './images/techroundtable.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
+import slackSVG from './images/slack.svg';
+import meetupSVG from './images/react-meetup.svg';
 
 export type TechPageProps = {
   triedAndTestedBlogPosts: Array<Object>,
@@ -28,11 +30,16 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
           <div className={styles.innerContainer}>
             <h1 className={styles.mainHeader}>Technology</h1>
             <p className={styles.description}>
-              Technology does not stand still and neither do we. On a regular basis we get our whole
-              tech team together and review all the tech we have used across all our projects to
-              derive what is hot and what is not in our world of tech.
+              Technology does not stand still and neither do we. On a regular basis we get our
+              engineering team together to discuss what’s been used on our projects and what
+              emerging technologies could be taken to enterprise scale.
             </p>
-            <a className={styles.latestRoundTableLink}>
+            <a
+              className={styles.latestRoundTableLink}
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {/* eslint-disable jsx-a11y/no-static-element-interactions */}
               <span onClick={trackAnalytics('RoundtablePDFLink')}>
                 Read our latest tech round table
@@ -59,6 +66,8 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         <a
           className={styles.webinarButton}
           href="https://www.eventbrite.com/e/lightning-tech-talks-10-in-10-tickets-35234824308"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Sign up to attend
         </a>
@@ -70,6 +79,29 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
       </div>
       <div className={styles.rightBlogs}>
         <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing trends'} altStyle />
+      </div>
+    </section>
+    <section className={styles.social}>
+      <div className={styles.webinarInner}>
+        <h2 className={styles.webinarText}>{'Say hello:'}</h2>
+        <a
+          className={styles.webinarButton}
+          href="https://redbadger.typeform.com/to/cBuJUl"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InlineSVG src={slackSVG} className={styles.socialIcon} />
+          Join us on Slack
+        </a>
+        <a
+          className={styles.webinarButton}
+          href="https://meetup.react.london/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InlineSVG src={meetupSVG} className={styles.socialIcon} />
+          Come to our Meetup
+        </a>
       </div>
     </section>
   </div>;
