@@ -23,8 +23,8 @@ const getSiteState = () =>
   Promise.props({
     jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
     featuredBlogPosts: getBlogPosts('featured'),
-    triedAndTestedBlogPosts: getBlogPosts('tried-and-tested'),
-    growingTrendsBlogPosts: getBlogPosts('growing-trends'),
+    triedAndTestedBlogPosts: getBlogPosts('tried-and-tested', 5),
+    growingTrendsBlogPosts: getBlogPosts('growing-trends', 5),
     tweets: getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     instagramPosts: getPosts(fetch),
     data: getData(),

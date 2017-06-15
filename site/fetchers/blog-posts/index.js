@@ -60,4 +60,5 @@ const getPosts = params =>
       }),
   );
 
-export const getBlogPosts = (tag: string) => getPosts({ tag }).then(posts => take(posts, 3));
+export const getBlogPosts = (tag: string, cap: number = 3) =>
+  getPosts({ tag }).then(posts => take(posts, cap));
