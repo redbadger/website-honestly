@@ -75,9 +75,12 @@ const shuffle = array => {
 };
 
 const WhatToReadNext = () => {
-  const path = document.location.pathname.replace(/\/+$/g, '').split('/');
-  const currentStudyName = path[path.length - 1];
-  const displayedStudies = shuffle(caseStudies).filter(s => s.name !== currentStudyName);
+  let displayedStudies = caseStudies;
+  if (typeof window !== 'undefined') {
+    const path = window.location.pathname.replace(/\/+$/g, '').split('/');
+    const currentStudyName = path[path.length - 1];
+    displayedStudies = shuffle(caseStudies).filter(s => s.name !== currentStudyName);
+  }
 
   return (
     <div className={styles.whatNext}>
