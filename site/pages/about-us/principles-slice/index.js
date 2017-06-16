@@ -22,43 +22,28 @@ export default function Principles() {
         <ul className={styles.principleList}>
           <Principle
             number="01"
-            title="A team of leaders."
-            description="We trust our people, giving them the autonomy to make the right decisions."
+            title="People people."
+            description="Our work is built on the respect we have for each other and our clients. We’re also very focused on the needs of our clients’ customers."
           />
           <Principle
             number="02"
-            title="Strong opinions, weakly held."
-            description="This is about having a point of view, speaking up, being decisive and authoritative – without being dogmatic or belligerent."
+            title="Trusted to get on with it."
+            description="We’re self-starters working within autonomous teams – enabled to make the right calls at the right times."
           />
           <Principle
             number="03"
             title="Always learning."
-            description="We quickly get to something we can test and iterate on. We’re also all looking to learn and grow in what we do."
+            description="We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it."
           />
           <Principle
             number="04"
-            title="Do stuff that matters."
-            description="We’re focused. We prioritise. We work on things that will make a difference. We don’t do fluff. It’s also about doing work that is fulfilling."
+            title="No bull."
+            description="We’re relied upon to tell things as they are. We do so  in an approachable and down-to-earth manner."
           />
           <Principle
             number="05"
-            title="Work smarter."
-            description="We look for ways to be faster, smarter, more efficient and effective. But we don’t do long hours, we respect each other’s time."
-          />
-          <Principle
-            number="06"
-            title="Tell it like it is."
-            description="We’re honest, approachable and down-to-earth. We don’t sell, or spin. This is also about good communication, making sure we have a shared understanding."
-          />
-          <Principle
-            number="07"
-            title="It’s about people."
-            description="We’re empathetic. We put people at the centre. We’re driven by user value, user-centered design and accessibility. We encourage mutual respect, growth and development."
-          />
-          <Principle
-            number="08"
-            title="Give a monkey’s. Don’t be a jackass."
-            description="We care about what we do and we care about each other. We’re humble. No egos."
+            title="Strong opinions, weakly held."
+            description="Clear points-of-view help give our work direction and purpose – but we’re humble about these. We don’t let ego get in the way."
           />
         </ul>
         <div className={styles.buttons}>
