@@ -75,7 +75,7 @@ const shuffle = array => {
 };
 
 const WhatToReadNext = () => {
-  const path = window.location.pathname.replace(/\/+$/g, '').split('/');
+  const path = document.location.pathname.replace(/\/+$/g, '').split('/');
   const currentStudyName = path[path.length - 1];
   const displayedStudies = shuffle(caseStudies).filter(s => s.name !== currentStudyName);
 
