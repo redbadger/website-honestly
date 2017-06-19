@@ -9,6 +9,7 @@ import techRoundTableImage from './images/techroundtable.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 import slackSVG from './images/slack.svg';
 import meetupSVG from './images/react-meetup.svg';
+import techRoundtablePDF from '../../../assets/technology/Red_Badger_Tech_Round_Table_Jun_2017.pdf';
 
 export type TechPageProps = {
   triedAndTestedBlogPosts: Array<Object>,
