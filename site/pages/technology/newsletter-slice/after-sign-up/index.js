@@ -6,7 +6,10 @@ const cx = classnames.bind(styles);
 const { func, string, bool } = React.PropTypes;
 
 const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }) =>
-  <div>
+  <div className={styles.newsletterInnerAfter}>
+    <h1 className={styles.title}>
+      Thanks for signing up!
+    </h1>
     <h2 className={styles.subTitle}>
       Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
     </h2>
@@ -140,9 +143,6 @@ export default class AfterSignup extends Component {
           this.element = c;
         }}
       >
-        <h1 className={styles.title}>
-          Thanks for signing up!
-        </h1>
         {!this.props.updatedFormSubmitted &&
           <AfterSignUpForm
             errorMessage={this.props.errorMessage}
