@@ -1,4 +1,4 @@
-@value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRedOnWhite from "../../../css/_colors.css";
+@value badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRedOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen, inputHeight, contentMaxWidth from "../../../css/_sizes.css";
 
 .newsletter {
@@ -25,7 +25,7 @@
 .beforeErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
-  color: badgerRedOnWhite;
+  color: badgerBlack;
   text-align: left;
   padding-top: 5px;
 }
@@ -160,6 +160,7 @@
 
   .newsletterInner .subTitle {
     max-width: 400px;
+    margin: 0 auto 40px;
   }
 
   .newsletterInnerAfter .subTitle {
@@ -215,7 +216,7 @@
   }
 
   .newsletterInner .formInput {
-    width: 300px;
+    width: 350px;
   }
 
   .formLabel {

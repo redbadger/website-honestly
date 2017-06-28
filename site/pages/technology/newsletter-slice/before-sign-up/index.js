@@ -38,11 +38,8 @@ class BeforeSignUp extends Component {
         <div className={styles.newsletterInner}>
           <div className={styles.newsletterCopy}>
             <h1 className={styles.title}>Want regular tech updates?</h1>
-            <p className={cx(
-              styles.subTitle,
-              styles.signUpSubtitle
-            )}>
-              Signup to our tech newsletter
+            <p className={cx(styles.subTitle, styles.signUpSubtitle)}>
+              Sign up to our tech newsletter
             </p>
           </div>
 
