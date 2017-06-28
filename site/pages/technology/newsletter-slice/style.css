@@ -49,16 +49,24 @@
 }
 
 .title {
-  font-size: 30px;
+  composes: fontL from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
   text-align: center;
 }
 
 .subTitle {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  margin-bottom: 40px;
+}
+
+.signUpSubtitle {
   composes: fontXS from '../../../css/typography/_fonts.css';
   composes: sansSerif from '../../../css/typography/_fonts.css';
+}
+
+.newsletterInnerAfter .subTitle {
   text-align: center;
-  padding-bottom: 20px;
   margin: 0 auto;
 }
 
@@ -71,14 +79,14 @@
 }
 
 .formLabel {
-  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: fontS from '../../../css/typography/_fonts.css';
   composes: sansSerif from '../../../css/typography/_fonts.css';
   display: block;
   margin-bottom: 5px;
 }
 
 .formInput {
-  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: fontS from '../../../css/typography/_fonts.css';
   composes: sansSerif from '../../../css/typography/_fonts.css';
   line-height: inputHeight;
   height: inputHeight;
@@ -88,7 +96,7 @@
 }
 
 .beforeFormError {
-  border: 2px solid badgerRedOnWhite;
+  border: 2px solid badgerBlack;
 }
 
 .afterFormError {
@@ -97,7 +105,7 @@
 
 .submitButton {
   composes: primaryButton from '../../../css/_links.css';
-  background-color: badgerRed !important;
+  background-color: badgerBlack;
   margin: 0 auto 10px;
   display: block;
   cursor: pointer;
@@ -141,8 +149,22 @@
     vertical-align: top;
   }
 
-  .subTitle {
+  .title {
+    margin: 20px auto;
+  }
+
+  .newsletterInner .title {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .newsletterInner .subTitle {
     max-width: 400px;
+  }
+
+  .newsletterInnerAfter .subTitle {
+    margin: 0 auto 60px;
+    max-width: 585px;
   }
 
   .submitted .formLabel {
@@ -171,8 +193,9 @@
     display: inline-block;
   }
   .beforeErrorText {
-    left: 85px;
+    left: 0px;
     position: relative;
+    color: badgerBlack;
   }
 
   .newsletter {
@@ -203,7 +226,7 @@
     text-align: center;
   }
 
-  .title, .subTitle {
+  .newsletterInner .subTitle {
     text-align: left;
   }
 
