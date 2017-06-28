@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import Promise from 'bluebird';
-import { getFeaturedPosts } from '../site/fetchers/featured-blog-posts';
+import { getBlogPosts } from '../site/fetchers/blog-posts';
 import { getJobs } from '../site/fetchers/workable';
 import { getTweets } from '../site/fetchers/twitter';
 import { getPosts } from '../site/fetchers/instagram';
@@ -22,7 +22,9 @@ const toDict = (array, keyFn) =>
 const getSiteState = () =>
   Promise.props({
     jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
-    featuredBlogPosts: getFeaturedPosts(),
+    featuredBlogPosts: getBlogPosts('featured'),
+    triedAndTestedBlogPosts: getBlogPosts('tried-and-tested', 5),
+    growingTrendsBlogPosts: getBlogPosts('growing-trends', 5),
     tweets: getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     instagramPosts: getPosts(fetch),
     data: getData(),

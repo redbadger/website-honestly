@@ -1,0 +1,245 @@
+@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen, cainYellow, scorpian from "../../css/_colors.css";
+@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
+
+/* ============= Intro Stying ============= */
+
+.introContainer {
+  padding: 0px 20px;
+  background-color: badgerWhite;
+}
+
+.intro {
+  max-width: contentMaxWidth;
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 30px 0px 50px 0px;
+}
+
+.leftContent, .rightContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rightContent {
+  padding-bottom: 50px;
+}
+
+.innerContainer {
+  /* Dirty IE11 hack for weird double nested flex box issues */
+  min-width: 1px;
+}
+
+@media mediumScreen {
+  .intro {
+    flex-direction: row;
+    padding: 50px 0px 55px 0px;
+  }
+
+  .leftContent, .rightContent {
+    flex: 1 50%;
+    align-items: center;
+  }
+
+  .leftContent {
+    padding-right: 10px;
+    justify-content: flex-start;
+  }
+
+  .rightContent {
+    justify-content: flex-end;
+    padding-bottom: 0px;
+  }
+
+  .innerContainer {
+    max-width: 470px;
+  }
+}
+
+@media largeScreen {
+  .intro {
+    padding: 100px 0px 130px 0px;
+  }
+
+  .rightContent > .innerContainer {
+    max-width: 500px;
+  }
+}
+
+.mainHeader {
+  composes: fontL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerBlack;
+}
+
+.description {
+  composes: fontS from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerBlack;
+  line-height: 1.21;
+  padding-top: 25px;
+}
+
+.latestRoundTableLink {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-decoration: none;
+  color: badgerRedOnWhite;
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.latestRoundTableLink:hover {
+  border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.arrow {
+  vertical-align: sub;
+  margin-left: 7px;
+}
+
+.arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow svg g {
+  fill: badgerRedOnWhite;
+  stroke: badgerRedOnWhite;
+}
+
+img.techRoundTable {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* ============= Webinar signup styling ============= */
+
+.webinar {
+  background-color: daveGreen;
+  color: badgerBlack;
+  composes: serif from "../../css/typography/_fonts.css";
+  font-weight: 900;
+  composes: dividerGreen from "../../css/_divider.css";
+  padding-bottom: 8px;
+}
+
+.webinarInner {
+  padding: 30px 0px 35px 0px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.webinarText {
+  font-size: 30px;
+}
+
+.webinarButton {
+  min-width: 200px;
+  padding: 0 20px;
+  margin-top: 30px;
+  height: 55px;
+  background-color: badgerBlack;
+  color: badgerWhite;
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontS2 from "../../css/typography/_fonts.css";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.webinarButton:hover {
+  background-color: scorpian;
+}
+
+@media mediumScreen {
+  .webinarInner {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    padding: 40px 20px;
+  }
+
+  .webinarText {
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .webinarButton {
+    margin: 0 10px;
+  }
+}
+
+@media largeScreen {
+  .webinarInner {
+    max-width: contentMaxWidth;
+    padding: 50px 0px;
+  }
+}
+
+/* ============= Past and Future Stying ============= */
+
+.pastAndFuture {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: badgerBlack;
+}
+
+.leftBlogs {
+  composes: dividerWhiteSmall from "../../css/_divider.css";
+  background-color: badgerWhite;
+  color: badgerBlack;
+}
+
+.rightBlogs {
+  composes: dividerBlack from "../../css/_divider.css";
+  background-color: badgerBlack;
+  color: badgerWhite;
+}
+
+@media largeScreen {
+  .pastAndFuture {
+    flex-direction: row;
+    composes: dividerBlackLarge from "../../css/_divider.css";
+  }
+
+  .leftBlogs {
+    flex: 1 50%;
+  }
+
+  .rightBlogs {
+    flex: 1 50%;
+  }
+}
+
+/* ============= Social slice styling ============= */
+
+.social {
+  background-color: cainYellow;
+  color: badgerBlack;
+  composes: serif from "../../css/typography/_fonts.css";
+  font-weight: 900;
+  composes: dividerYellow from "../../css/_divider.css";
+  padding-bottom: 8px;
+}
+
+.socialIcon {
+  margin: -2px 15px 0 0;
+  height: 28px;
+}
+
+.socialIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.socialIcon svg g {
+  fill: badgerWhite;
+}

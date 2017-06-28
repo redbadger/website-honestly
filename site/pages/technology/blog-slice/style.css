@@ -1,0 +1,69 @@
+@value badgerWhite, badgerBlack, linesOnWhite, linesOnBlack from "../../../css/_colors.css";
+@value mediumScreen, largeScreen, containerMaxWidth from "../../../css/_sizes.css";
+
+.blogSlice {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+}
+
+.blogSliceTitle {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+}
+
+.blogLink {
+  composes: primaryButton from "../../../css/_links.css";
+}
+
+.blogLinkList {
+  text-align: left;
+}
+
+.blogLinkList li {
+  border-bottom: 1px solid linesOnWhite;
+}
+
+.blogLinkList li:last-child {
+  border-bottom: 0;
+}
+
+.blogLinkListRight li {
+  border-bottom: 1px solid linesOnBlack;
+}
+
+.sliceContainer {
+  display: inline-block;
+  width: 100%;
+}
+
+@media mediumScreen {
+  .blogSlice {
+    padding: 40px 0px;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .blogSliceTitle {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+}
+
+@media largeScreen {
+  .blogSlice {
+    padding: 40px 20px 50px 20px;
+    margin-right: 0px;
+    max-width: calc(containerMaxWidth / 2);
+  }
+
+  .blogSliceRight {
+    margin-left: 0px;
+  }
+
+  .blogSliceTitle {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+}

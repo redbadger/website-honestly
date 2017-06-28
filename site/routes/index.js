@@ -17,6 +17,7 @@ import EventPage from '../pages/event';
 import OurWorkPage from '../pages/our-work';
 import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
+import Technology from '../pages/technology';
 
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 
@@ -35,6 +36,7 @@ const componentMap = {
   badgers: MeetOurTeam,
   badger: BadgerProfile,
   retailerCaseStudy: RetailerCaseStudy,
+  technology: Technology,
 };
 
 function routes() {
