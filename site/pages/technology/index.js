@@ -4,6 +4,7 @@ import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
 import BlogSlice from './blog-slice';
+import NewsletterSlice from './newsletter-slice';
 
 import techRoundTableImage from './images/techroundtable.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
@@ -60,19 +61,7 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         </section>
       </section>
     </div>
-    <section className={styles.webinar}>
-      <div className={styles.webinarInner}>
-        <h2 className={styles.webinarText}>{"We're hosting a webinar!"}</h2>
-        <a
-          className={styles.webinarButton}
-          href="https://www.eventbrite.com/e/lightning-tech-talks-10-in-10-tickets-35234824308"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sign up to attend
-        </a>
-      </div>
-    </section>
+    <NewsletterSlice />
     <section className={styles.pastAndFuture}>
       <div className={styles.leftBlogs}>
         <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and tested'} />

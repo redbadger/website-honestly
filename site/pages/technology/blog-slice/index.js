@@ -6,7 +6,7 @@ import BlogEntry from './blog-entry';
 import type { BlogPost } from './blog-entry';
 
 const BlogSlice = ({
-  blogPosts,
+  blogPosts = [],
   title,
   altStyle,
 }: {
