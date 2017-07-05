@@ -4,7 +4,7 @@
 .newsletter {
   composes: dividerGreen from "../../../css/_divider.css";
   background-color: daveGreen;
-  padding: 20px;
+  padding: 20px 20px 30px;
 }
 
 .newsletterInner, .newsletterInnerAfter {
@@ -58,6 +58,7 @@
   composes: fontS from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
   margin-bottom: 40px;
+  padding-top: 10px;
 }
 
 .signUpSubtitle {
@@ -118,13 +119,14 @@
 .jsDisabled {
   composes: fontXS from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
-  width: 580px;
   margin: 10px auto 30px;
 }
 
 .link {
   composes: primaryButton from '../../../css/_links.css';
+  background-color: badgerBlack;
   margin-bottom: 30px;
+  height: auto;
 }
 
 @media mediumScreen {
