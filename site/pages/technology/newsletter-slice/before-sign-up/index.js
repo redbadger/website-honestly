@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from '../style.css';
+import ClientOnly from '../../../../components/clientOnly';
 
 const cx = classnames.bind(styles);
 
@@ -43,37 +44,39 @@ class BeforeSignUp extends Component {
             </p>
           </div>
 
-          <form className={styles.form}>
-            <div className={styles.formBlock}>
-              <label htmlFor="email_address" className={styles.formLabel}>Email</label>
-              <input
-                onChange={this.handleInputChange}
-                id="email_address"
-                name="email_address"
-                type="email"
-                placeholder="name@example.com"
-                className={cx({
-                  formInput: true,
-                  beforeFormError: this.props.errorMessage,
-                })}
-              />
-              <div className={styles.beforeErrorText}>
-                {!this.state.submitting ? this.props.errorMessage : ''}
+          <ClientOnly>
+            <form className={styles.form}>
+              <div className={styles.formBlock}>
+                <label htmlFor="email_address" className={styles.formLabel}>Email</label>
+                <input
+                  onChange={this.handleInputChange}
+                  id="email_address"
+                  name="email_address"
+                  type="email"
+                  placeholder="name@example.com"
+                  className={cx({
+                    formInput: true,
+                    beforeFormError: this.props.errorMessage,
+                  })}
+                />
+                <div className={styles.beforeErrorText}>
+                  {!this.state.submitting ? this.props.errorMessage : ''}
+                </div>
               </div>
-            </div>
-            <button
-              className={cx({
-                submitButton: true,
-                buttonSubmitting: this.state.submitting,
-              })}
-              onClick={e => {
-                e.preventDefault();
-                this.handleSubmit();
-              }}
-            >
-              {this.state.submitting ? 'Signing up....' : 'Sign Up'}
-            </button>
-          </form>
+              <button
+                className={cx({
+                  submitButton: true,
+                  buttonSubmitting: this.state.submitting,
+                })}
+                onClick={e => {
+                  e.preventDefault();
+                  this.handleSubmit();
+                }}
+              >
+                {this.state.submitting ? 'Signing up....' : 'Sign Up'}
+              </button>
+            </form>
+          </ClientOnly>
 
           <noscript>
             <p className={styles.jsDisabled}>
