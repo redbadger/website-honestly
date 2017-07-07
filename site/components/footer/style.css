@@ -150,13 +150,20 @@
 @media screen and (min-width: 820px) {
   .footerMap {
     position: absolute;
-    width: 824px;
-    height: 400px;
+    width: 787px;
+    height: 499px;
     top: 0;
     right: 0;
     display: block;
     overflow: hidden;
   }
+
+  .mapPin {
+    position: absolute;
+    bottom: 5px;
+    right: 55px;
+  }
+
   .footer {
     align-items: center;
     justify-content: center;
@@ -169,8 +176,8 @@
 
   .address {
     position: absolute;
-    right: 230px;
-    top: 280px;
+    right: 264px;
+    top: 200px;
   }
   .section {
     border-bottom: none;

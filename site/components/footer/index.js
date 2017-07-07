@@ -173,20 +173,12 @@ const Footer = () =>
         <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
         <div className={styles.mapContainer}>
           <address>
-            <p>12 Mallow St</p>
+            <p>4th Floor</p>
+            <p>2 Old Street Yard</p>
             <p>London</p>
-            <p>EC1Y 8RQ</p>
+            <p>EC1Y 8AF</p>
             <p>UK</p>
           </address>
-
-          <a
-            className={styles.mapLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.google.com/maps/place/12+Mallow+St,+London+EC1Y+8RQ,+UK/@51.52477,-0.0908016,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca8a59bf3b3:0x4cdb7444be05c280!8m2!3d51.52477!4d-0.0886129?hl=en"
-          >
-            Open in Google maps
-          </a>
         </div>
       </div>
       <div className={styles.footerEndContainer}>
