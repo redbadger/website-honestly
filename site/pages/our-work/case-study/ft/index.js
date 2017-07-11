@@ -32,22 +32,6 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         <div className={styles.header__imageContainer}>
           <img src={headerImage} alt="shopping cart" className={styles.header__image} />
         </div>
-        <div className={cx('header__outcome', 'header__outcome--right')}>
-          <span className={styles.header__outcome__percentage}>
-            +54%
-          </span>
-          <h3 className={styles.header__outcome__description}>
-            Increased orders
-          </h3>
-        </div>
-        <div className={cx('header__outcome', 'header__outcome--left')}>
-          <span className={styles.header__outcome__percentage}>
-            +29%
-          </span>
-          <h3 className={styles.header__outcome__description}>
-            Uplift in visits
-          </h3>
-        </div>
       </div>
     </div>
     <div className={styles.content}>

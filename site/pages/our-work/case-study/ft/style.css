@@ -11,7 +11,7 @@
 
 .header {
   width: 100%;
-  background-color: #abc9c1;
+  background-color: #fff1df;
   margin-bottom: 10px;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .header__image {
-  max-width: 375px;
-  height: auto;
+  max-height: 410px;
+  width: auto;
 }
 
 .header__outcome {
@@ -204,8 +204,8 @@
   }
 
   .header__image {
-    max-width: 500px;
-    height: auto;
+    max-height: 410px;
+    width: auto;
   }
 
   .header__outcome {
