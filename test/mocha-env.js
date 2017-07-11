@@ -40,6 +40,8 @@ requireHook(
 global.document = jsdom('');
 global.window = global.document.defaultView;
 global.window.DOMParser = DOMParser;
+global.window.SVGPathSeg = () => {};
+global.window.SVGPathSegList = () => {};
 global.navigator = {
   userAgent: 'node.js',
 };
