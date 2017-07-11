@@ -56,9 +56,13 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         </h3>
         <p className={styles.content__paragraph}>
           <ol className={styles.content__ordered__list}>
-            <li className={styles.content__ordered__list__element}>Delivery — To deliver the next generation ft.com homepage demonstrating the
-            successful integration of UX and design across all other streams</li>
-            <li className={styles.content__ordered__list__element}>Strategy — Creative team strategy across the entire online product portfolio</li>
+            <li className={styles.content__ordered__list__element}>
+              Delivery — To deliver the next generation ft.com homepage demonstrating the
+              successful integration of UX and design across all other streams
+            </li>
+            <li className={styles.content__ordered__list__element}>
+              Strategy — Creative team strategy across the entire online product portfolio
+            </li>
           </ol>
         </p>
         <h3 className={styles.content__secondaryTitle}>
@@ -76,7 +80,8 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
               Raise quality level of design across the product group
             </li>
             <li className={styles.content__list__element}>
-              Support an organisational shift towards taking an user-centred design (UCD) to product development
+              Support an organisational shift towards taking an user-centred design (UCD) to product
+              development
             </li>
             <li className={styles.content__list__element}>
               Place experts within the organisation who’ll continue to support these methods
