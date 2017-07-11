@@ -20,6 +20,7 @@ import BadgerProfile from '../pages/badger-profile';
 import Technology from '../pages/technology';
 
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
+import CandemCaseStudy from '../pages/our-work/case-study/candem';
 
 const componentMap = {
   homePage: HomePage,
@@ -36,6 +37,7 @@ const componentMap = {
   badgers: MeetOurTeam,
   badger: BadgerProfile,
   retailerCaseStudy: RetailerCaseStudy,
+  candemCaseStudy: CandemCaseStudy,
   technology: Technology,
 };
 

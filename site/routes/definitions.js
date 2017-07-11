@@ -123,4 +123,12 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'offlinePage',
     route: 'offline',
   },
+  {
+    title: 'Candem market case study',
+    key: 'candemCaseStudy',
+    route: 'our-work/case-study/candem',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
 ];
