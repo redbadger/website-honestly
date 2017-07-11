@@ -1,0 +1,5 @@
+.shapes {
+  position: absolute;
+  bottom: -8px;
+  z-index: 10;
+}
