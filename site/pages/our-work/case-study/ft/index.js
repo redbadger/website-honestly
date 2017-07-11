@@ -37,51 +37,62 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
         <h1 className={styles.content__mainTitle}>
-          Next generation platform for retail giant cleared five-year backlog in just eight months
+          Keeping up with the Financial Times
         </h1>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>
             {"Let's make things better."}
           </span>
-          Solving high drop-out rates
+          Adapting to a changing online news world
         </h2>
         <p className={styles.content__paragraph}>
-          Our client, one of the largest retailers in the UK was experiencing lost revenue in the
-          millions, due to higher than expected drop-out rates on its online platform.
+          The Financial Times knew that online news was changing fast, and their subscription
+          model meant they had to deliver something above and beyond the news and services
+          available for free. The next generation of ft.com was already underway, and now
+          they needed a partner who could help envisage it and bring it to life.
         </p>
+        <h3 className={styles.content__secondaryTitle}>
+          There were two overarching challenges to solve for the Financial Times:
+        </h3>
         <p className={styles.content__paragraph}>
-          This was because the online experience and functionality were inconsistent. The business
-          was spending huge sums on a piece of software that scraped its website, and then created
-          mobile optimised versions on the fly. This meant that some orders were easier to place
-          than others - depending on what device was being used - and amendments to orders were
-          down as they were incredibly complicated to change once booked.
+          <ol className={styles.content__ordered__list}>
+            <li className={styles.content__ordered__list__element}>Delivery — To deliver the next generation ft.com homepage demonstrating the
+            successful integration of UX and design across all other streams</li>
+            <li className={styles.content__ordered__list__element}>Strategy — Creative team strategy across the entire online product portfolio</li>
+          </ol>
         </p>
+        <h3 className={styles.content__secondaryTitle}>
+          And, core objectives included:
+        </h3>
         <p className={styles.content__paragraph}>
-          As a retailer dedicated to providing value to customers and seeing its online business
-          growing substantially - including a 100% year-on-year mobile traffic increase - there was
-          an urgent need for the site to work seamlessly. The business needed to build a modern
-          technology platform using cutting-edge, web-based tech to ensure all experiences for
-          customers were intuitive and easy to use, regardless of device. This would also have to
-          factor in processing a catalogue of hundreds-of-thousands of products, delving into
-          complex user journeys, and building a well executed international shipping function.
-        </p>
-        <p className={styles.content__paragraph}>
-          As a business that championed innovation this retailer decided that Red Badger was the
-          right partner to help it make things better.
+          <ul className={styles.content__list}>
+            <li className={styles.content__list__element}>
+              Introduce and embed Lean UX methodologies and Agile Design at an enterprise level
+            </li>
+            <li className={styles.content__list__element}>
+              Increase speed to market
+            </li>
+            <li className={styles.content__list__element}>
+              Raise quality level of design across the product group
+            </li>
+            <li className={styles.content__list__element}>
+              Support an organisational shift towards taking an user-centred design (UCD) to product development
+            </li>
+            <li className={styles.content__list__element}>
+              Place experts within the organisation who’ll continue to support these methods
+            </li>
+          </ul>
         </p>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>Do the right thing. Do the thing right.</span>
-          Streamlining teams and implementing cutting-edge tech
+          Collaboration both online and offline
         </h2>
         <h3 className={styles.content__secondaryTitle}>
-          Embracing organisational change
+          Learn
         </h3>
         <p className={styles.content__paragraph}>
-          Although change is happening, big companies are still watching the speed at which today’s
-          start-ups move in awe and envy. What start-ups do right is work in a way that puts the
-          customer at the very heart of projects, from technology choices to design and content.
-          They then work in a collaborative and Lean way to get new products out at speeds that
-          seem staggering to large organisations.
+          We approached the work through collaborative design, with representatives from across
+          the business, we built a complete understanding of the publication’s needs.
         </p>
         <p className={styles.content__paragraph}>
           Red Badger enabled this large retail client to work with the agility of a start-up:
@@ -89,23 +100,6 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           down department silos by keeping design, development and testing in one place. The
           benefits of this included:
         </p>
-        <ul className={styles.content__list}>
-          <li className={styles.content__list__element}>
-            A shorter feedback loop
-          </li>
-          <li className={styles.content__list__element}>
-            Team-wide responsibility for each decision
-          </li>
-          <li className={styles.content__list__element}>
-            Elimination of waste
-          </li>
-          <li className={styles.content__list__element}>
-            Driven determination and focus in order to deliver value to customers, faster
-          </li>
-          <li className={styles.content__list__element}>
-            A sped-up delivery, over four years early
-          </li>
-        </ul>
       </div>
       <div>
         <img src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
