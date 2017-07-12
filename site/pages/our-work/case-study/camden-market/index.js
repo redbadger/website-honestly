@@ -50,7 +50,9 @@ const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) =>
             </p>
           </blockquote>
         </div>
-        <ListBox items={[
+        <ListBox
+          title={'Results'}
+          items={[
             {
               label: 'New London Users',
               value: '+75%',
