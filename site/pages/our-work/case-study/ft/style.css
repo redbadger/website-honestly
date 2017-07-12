@@ -1,9 +1,9 @@
-@value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value badgerWhite, badgerBlack, badgerAccessibleRedOnWhite, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .caseStudy {
   composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
   font-size: 20px;
   line-height: 27px;
   background-color: badgerWhite;
@@ -20,7 +20,6 @@
   margin: 0 auto;
   position: relative;
   width: 100%;
-  height: 310px;
 }
 
 .header__imageContainer {
@@ -30,8 +29,7 @@
 }
 
 .header__image {
-  max-height: 410px;
-  width: auto;
+  width: 100%;
 }
 
 .header__outcome {
@@ -111,7 +109,7 @@
 
 .content__title {
   composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
 
@@ -119,7 +117,7 @@
   composes: fontXS from "../../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../../css/typography/_fonts.css";
   display: block;
-  color: badgerRedOnWhite;
+  color: badgerAccessibleRedOnWhite;
 }
 
 .content__secondaryTitle {
@@ -210,16 +208,33 @@
   box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
 }
 
+.screenDemo {
+  background: #DED3C3;
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.screenDemo__image {
+  height: auto;
+  width: 80%;
+  max-width: 733px;
+}
+
+.screenDemo__description {
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  padding: 0px 50px;
+}
+
+
 @media mediumScreen {
-  .header__container {
-    height: 400px;
-  }
-
-  .header__image {
-    max-height: 410px;
-    width: auto;
-  }
-
   .header__outcome {
     width: 200px;
   }
@@ -267,9 +282,23 @@
     padding-right: 20px;
     margin-bottom: 20px;
   }
+
+
+  .screenDemo {
+    padding-bottom: 0px;
+  }
 }
 
 @media largeScreen {
+  .header__container {
+    height: 400px;
+  }
+
+  .header__image {
+    max-height: 410px;
+    width: auto;
+  }
+
   .content {
     max-width: 1400px;
     padding: 20px 120px 60px;
@@ -312,5 +341,13 @@
   .techGraphImage {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .screenDemo__description {
+    width: 214px;
+    display: block;
+    left: calc(50% + 229.5px);
+    bottom: 30px;
+    padding: 0px;
   }
 }

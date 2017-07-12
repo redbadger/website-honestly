@@ -4,7 +4,7 @@ import Social from '../../../../components/social';
 import styles from './style.css';
 
 import headerImage from './images/header.jpg';
-import techGraphImage from './images/tech-graph.jpg';
+import screenImage from './images/screen.jpg';
 import metaImage from './images/meta-image.png';
 
 import WhatToReadNext from '../what-to-read-next';
@@ -100,29 +100,12 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           the business, we built a complete understanding of the publication’s needs.
         </p>
         <p className={styles.content__paragraph}>
-          Red Badger enabled this large retail client to work with the agility of a start-up:
-          re-engineering and revolutionising its workflow with Lean practices and helping it break
-          down department silos by keeping design, development and testing in one place. The
-          benefits of this included:
-        </p>
-      </div>
-      <div>
-        <img src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
-      </div>
-      <div className={styles.content__wrapper}>
-        <h3 className={styles.content__secondaryTitle}>
-          Finding the right tech for the job
-        </h3>
-        <p className={styles.content__paragraph}>
-          Now working in a collaborative and Lean way with Red Badger, it was time to find the
-          right tech for the job.
-        </p>
-        <p className={styles.content__paragraph}>
-          Red Badger worked very closely with the retailer’s engineering team to recommend and
-          introduce an incredibly progressive selection of cutting-edge technology. The new mobile
-          site had to replace the existing screen-scraping solution and improve the customer
-          experience, making the new site adaptable, flexible and able to scale up to the
-          ever-growing demand that the business was seeing.
+          In order to demonstrate how collaboration between different functions of a product team
+          can be optimised in a given environment, it is necessary to first learn about that
+          environment. This is why we started our engagement by placing a core multi-disciplined
+          product team central to the working group. Acting as a hub, we were physically,
+          geographically and functionally central to the core offering of the next generation
+          ft.com, the home page.
         </p>
         <div className={styles.contactBox}>
           <h2 className={styles.contactBox__heading}>
@@ -131,108 +114,86 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
         </div>
         <p className={styles.content__paragraph}>
-          By using a combination of Node.js and React.js, the team were able to develop an app that
-          delivers a consistent experience across all devices. It also means that the application
-          is fast and responsive, delivering far better usability for customers.
+          In the initial phase of our engagement we redesigned and deployed a new home page in just
+          seven weeks. This involved integrating React and GraphQL into the FT’s already cutting
+          edge tech stack. Demonstrating not only an improved approach to delivery but adding value
+          through introducing new technology.
+        </p>
+        <h3 className={styles.content__secondaryTitle}>
+          Understand
+        </h3>
+        <p className={styles.content__paragraph}>
+          After an initial period of delivering at speed into a live production environment we
+          started to mix with the internal teams. We were able to share and explain their working
+          processes and systems to new colleagues, creating the perfect environment to reassess the
+          effectiveness of each stage of their workflow. We learned how the Financial Times operated
+          in the first few weeks of the project. This put us in a position later in the project to
+          recommended some changes to the process in the internal design and development team.
+        </p>
+        <h3 className={styles.content__secondaryTitle}>
+          Coach
+        </h3>
+        <p className={styles.content__paragraph}>
+          Initially we found multiple product teams were using processes that were out of view and
+          this resulted in untraceable productivity. This made predicting delivery times and making
+          sound investment decisions difficult. Soon after our arrival we were helping the Financial
+          Times to build a legacy of implementing methodologies out in the open, with work on kanban
+          boards representing their own processes.
         </p>
         <p className={styles.content__paragraph}>
-          On top of this, by moving into the Cloud, using advanced technology such as Docker
-          Containers, AWS ECS and Terraform, the ecommerce store was able to incorporate auto cloud
-          scaling which expands and contracts resource allocation to match customer demand. This is
-          vital in helping to cope with the huge growth in revenue and transaction volumes
-          experienced by the retailer, especially around times of peak demand such as Christmas and
-          Black Friday.
+          We worked with each team one at a time and through an osmosis like process each team
+          adopted a more open and collaborative way of working together with UX and Design. Now the
+          Financial Times have core metrics measured against each of the backlogs and using Little’s
+          Law we can predict completion time, throughput, lead time and cycle time.
+        </p>
+        <h3 className={styles.content__secondaryTitle}>
+          Support
+        </h3>
+        <p className={styles.content__paragraph}>
+          Through a formal education program we taught fundamental User Experience methodologies,
+          Lean UX and Kanban, to a cross section of representatives across the business to support
+          and reinforce the change we have brought to the Financial Times at an enterprise level.
         </p>
         <p className={styles.content__paragraph}>
-          Finally, on the tech front, by building Automated Test and Continuous Deployment
-          Pipelines, new features are enabled to be constantly trickled into production, continually
-          delivering new value to customers and substantially reducing risk. Previously, the
-          retail giant released quarterly but can now release multiple times a day with deployments
-          taking minutes, rather than days.
-        </p>
-        <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>Creating lasting change.</span>
-          Improving conversion rates by 83%
-        </h2>
-        <p className={styles.content__paragraph}>
-          Successfully using the technologies above has solved long-standing issues and
-          fundamentally influenced the retailer’s next generation platform. Where legacy systems
-          previously ruled, cutting-edge innovation allows its online business to grow unencumbered
-          by technical limitations. The new platform now provides this retailer with the means to
-          scale for years to come.
-        </p>
-        <p className={styles.content__paragraph}>
-          And, by first focusing on delivering the application for mobile only, Red Badger has
-          delivered a completed application across seven countries in just eight months, the
-          results of which are staggering:
+          On going contact beyond our engagement is a given, to offer any level of support required
+          during the maturation of the businesses UCD approach to product development.
         </p>
       </div>
-      <div className={styles.overview}>
-        <div className={styles.listBox}>
-          <h3 className={styles.listBox__heading}>What we did</h3>
-          <ul>
-            <li className={styles.listBox__element}>
-              Mobile first application across 7 countries
-            </li>
-            <li className={styles.listBox__element}>
-              Introduced Lean & Agile practices
-            </li>
-            <li className={styles.listBox__element}>
-              Built Continuous Deployment Pipelines
-            </li>
-            <li className={styles.listBox__element}>
-              Moved to the Cloud
-            </li>
-            <li className={styles.listBox__element}>
-              Introduced automated testing & cutting edge tech
-            </li>
-          </ul>
-        </div>
-        <div className={styles.listBox}>
-          <h3 className={styles.listBox__heading}>Results</h3>
-          <ul>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Uplift in visits
-              </div>
-              <div>
-                +29%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Increased orders
-              </div>
-              <div>
-                +54%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Customers amending orders
-              </div>
-              <div>
-                +443%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Conversion rates including amendments
-              </div>
-              <div>
-                +83%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Conversion rates excluding amendments
-              </div>
-              <div>
-                +18%
-              </div>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <div className={styles.screenDemo}>
+      <div className={styles.screenDemo__description}>
+        The first iteration of the new
+        homepage design and built
+        in seven weeks
+      </div>
+      <img src={screenImage} alt="shopping cart" className={styles.screenDemo__image} />
+    </div>
+    <div className={styles.content}>
+      <div className={styles.content__wrapper}>
+        <h2 className={styles.content__title}>
+          <span className={styles.content__redTitle}>Creating lasting change.</span>
+          A new design increasing reader engagement by 30%
+        </h2>
+        <p className={styles.content__paragraph}>
+          Our work with the Financial Times was made to last. Through close collaboration with the
+          FT senior management in a controlled and considered way ensures that the gradual cultural
+          shift in working practices and approach to Lean UX and Agile Design is not short lived. On
+          the contrary, through careful coaching and support we have created an environment where
+          teams now make iterative changes to how UX and Design is considered and integrated with
+          other teams, including technology and customer research across the business.
+        </p>
+        <p className={styles.content__paragraph}>
+          The Financial Times is at the cutting edge of product development, which puts a Lean UCD
+          process at the heart of everything it does. We have been pivotal in implementing these
+          processes, integrating Lean UX and Agile Design into all areas of product delivery across
+          the organisation.
+        </p>
+        <p className={styles.content__paragraph}>
+          It remains one of the fastest news sites in the world, loading in 1.5 seconds on desktop
+          and 2.1 on mobile, reader engagement has increased by 30%, with visitors reading more and
+          returning more frequently. It has also won Website of the Year at the Press Awards and
+          Best Use of Technology at Digiday Publishing Awards.
+        </p>
       </div>
     </div>
     <WhatToReadNext />
