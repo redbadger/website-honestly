@@ -4,7 +4,10 @@ import styles from './style.css';
 
 import headerImage from './images/header.png';
 import techGraphImage from './images/tech-graph.jpg';
+import authorQuoteImage from './images/quote-author.png';
+
 import ListBox from '../../../../components/list-box';
+import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
@@ -38,18 +41,16 @@ const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) =>
         </h1>
       </div>
       <div className={styles.overview}>
-        <div className={styles.quotation}>
-          <blockquote>
-            <p>
-              <span className={styles.quotation__symbol}>{'“ '}</span>
-              We put Londoners at the heart of the project and the website. The results are
-              already speaking for themselves and within just four days of the launch, the bounce
-              rate has dropped by
-              18% and average session duration increased by 53%.
-              <span className={styles.quotation__symbol}>{' ”'}</span>
-            </p>
-          </blockquote>
-        </div>
+        <Quote
+          author={{
+            name: 'Lily Walsh',
+            title: 'Product Owner, Market Tech',
+            image: authorQuoteImage,
+          }}
+          text={
+            'We put Londoners at the heart of the project and the website. The results are already speaking for themselves and within just four days of the launch, the bounce rate has dropped by 18% and average session duration increased by 53%.'
+          }
+        />
         <ListBox
           title={'Results'}
           items={[
