@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
@@ -9,8 +8,6 @@ import metaImage from './images/meta-image.png';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
-
-const cx = classnames.bind(styles);
 
 type CaseStudyFinancialTimesProps = {
   contactUsURL: string,
