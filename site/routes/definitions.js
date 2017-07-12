@@ -124,9 +124,9 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'offline',
   },
   {
-    title: 'Candem market case study',
-    key: 'candemCaseStudy',
-    route: 'our-work/case-study/candem',
+    title: 'Camden market case study',
+    key: 'camdenMarketCaseStudy',
+    route: 'our-work/case-study/camden-market',
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),

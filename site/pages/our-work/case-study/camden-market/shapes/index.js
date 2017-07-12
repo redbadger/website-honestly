@@ -31,11 +31,12 @@ export default class Shapes extends Component {
   svg: Object;
   shapes: Object;
 
-  engageMusic(element: Object) {
-    const height = element.getBoundingClientRect().height;
+  engageMusic(container: Object) {
+    const containerRectangle = container.getBoundingClientRect();
+    const height = containerRectangle.bottom - containerRectangle.top;
     const engine = Engine.create({
       render: {
-        element,
+        container,
         options: {
           background: 'transparent',
           wireframes: false,
@@ -132,7 +133,7 @@ export default class Shapes extends Component {
   }
 
   componentDidMount() {
-    this.engageMusic(this.shapes);
+    this.engageMusic(document.getElementById('shapes'));
   }
 
   static throwShapes(engine) {

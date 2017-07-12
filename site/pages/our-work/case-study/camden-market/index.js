@@ -1,28 +1,26 @@
 import React from 'react';
-import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
 import headerImage from './images/header.png';
 import techGraphImage from './images/tech-graph.jpg';
+import ListBox from '../../../../components/list-box';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 import Shapes from './shapes/index';
 
-const cx = classnames.bind(styles);
-
-type CaseStudyCandemProps = {
+type CaseStudyCamdenMarketProps = {
   contactUsURL: string,
 };
 
 const social = {
   title: 'The proof is in the pudding.',
   description: 'Camden Market’s new digital platform designed and built in ten weeks',
-  url: 'https://red-badger.com/our-work/case-study/candem',
+  url: 'https://red-badger.com/our-work/case-study/camden-market',
 };
 
-const CaseStudyCandem = ({ contactUsURL }: CaseStudyCandemProps) =>
+const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) =>
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -52,35 +50,21 @@ const CaseStudyCandem = ({ contactUsURL }: CaseStudyCandemProps) =>
             </p>
           </blockquote>
         </div>
-        <div className={styles.listBox}>
-          <h3 className={styles.listBox__heading}>Results</h3>
-          <ul>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                New London Users
-              </div>
-              <div>
-                +75%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Mobile traffic
-              </div>
-              <div>
-                +42%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                User increase week on week
-              </div>
-              <div>
-                +30%
-              </div>
-            </li>
-          </ul>
-        </div>
+        <ListBox items={[
+            {
+              label: 'New London Users',
+              value: '+75%',
+            },
+            {
+              label: 'Mobile traffic',
+              value: '+42%',
+            },
+            {
+              label: 'User increase week on week',
+              value: '+30%',
+            },
+          ]}
+        />
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
@@ -232,4 +216,4 @@ const CaseStudyCandem = ({ contactUsURL }: CaseStudyCandemProps) =>
     <ContactUs postURL={contactUsURL} />
   </div>;
 
-export default CaseStudyCandem;
+export default CaseStudyCamdenMarket;

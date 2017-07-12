@@ -30,7 +30,7 @@ describe('site/compiler', () => {
         'about-us/join-us/index.html',
         'about-us/events/index.html',
         'our-work/case-study/retailer/index.html',
-        'our-work/case-study/candem/index.html',
+        'our-work/case-study/camden-market/index.html',
         'technology/index.html',
         '404.html',
         '50x/index.html',
