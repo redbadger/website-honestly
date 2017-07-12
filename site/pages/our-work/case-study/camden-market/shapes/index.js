@@ -36,7 +36,7 @@ export default class Shapes extends Component {
     const height = containerRectangle.bottom - containerRectangle.top;
     const engine = Engine.create({
       render: {
-        container,
+        element: container,
         options: {
           background: 'transparent',
           wireframes: false,
@@ -78,22 +78,22 @@ export default class Shapes extends Component {
       return bodies;
     };
 
-    const whiteOpts = {
-      fillStyle: 'white',
-      strokeStyle: 'white',
+    const transparentOpts = {
+      fillStyle: 'transparent',
+      strokeStyle: 'transparent',
       lineWidth: 0,
     };
     const ground = Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 10, {
       isStatic: true,
-      render: whiteOpts,
+      render: transparentOpts,
     });
     const leftSide = Bodies.rectangle(-10, height / 2, 10, height + 10, {
       isStatic: true,
-      render: whiteOpts,
+      render: transparentOpts,
     });
     const rightSide = Bodies.rectangle(window.innerWidth + 10, height / 2, 10, height + 10, {
       isStatic: true,
-      render: whiteOpts,
+      render: transparentOpts,
     });
 
     window.onresize = function() {
@@ -133,7 +133,7 @@ export default class Shapes extends Component {
   }
 
   componentDidMount() {
-    this.engageMusic(document.getElementById('shapes'));
+    this.engageMusic(this.shapes);
   }
 
   static throwShapes(engine) {
