@@ -1,16 +1,13 @@
 import React from 'react';
-import classnames from 'classnames/bind';
 
 import styles from './style.css';
-
-const cx = classnames.bind(styles);
 
 const QuoteProps = {
   author: Object,
   text: String,
 };
 
-const Quote = ({ author, text } : QuoteProps) => {
+const Quote = ({ author, text }: QuoteProps) => {
   return (
     <div className={styles.quotation}>
       <blockquote>
@@ -23,11 +20,11 @@ const Quote = ({ author, text } : QuoteProps) => {
         <img src={author.image} alt={author.name} />
         <div className={styles.quotation__author__wrapper}>
           <span className={styles.quotation__author__name}>— {author.name}</span>
-          <span  className={styles.quotation__author__title}>{author.title}</span>
+          <span className={styles.quotation__author__title}>{author.title}</span>
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default Quote;
