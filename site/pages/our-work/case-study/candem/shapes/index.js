@@ -28,8 +28,10 @@ type Props = {
 
 export default class Shapes extends Component {
   props: Props;
+  svg: Object;
+  shapes: Object;
 
-  engageMusic(element) {
+  engageMusic(element: Object) {
     const height = element.getBoundingClientRect().height;
     const engine = Engine.create({
       render: {
