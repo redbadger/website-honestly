@@ -13,7 +13,7 @@ type ListBoxProps = {
 const ListBox = ({ title, items }: ListBoxProps) => {
   return (
     <div className={styles.listBox}>
-      <h3 className={styles.listBox__heading}>{ title }</h3>
+      <h3 className={styles.listBox__heading}>{title}</h3>
       <ul>
         {items.map((item, index) => {
           return (

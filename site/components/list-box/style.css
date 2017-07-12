@@ -1,10 +1,13 @@
 @value badgerRedOnWhite, linesOnWhite from '../../css/_colors.css';
-@value mediumScreen from "../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .listBox {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
+  margin: 0 auto 52px;
+  width: 100%;
+
 }
 
 .listBox__heading {
@@ -38,6 +41,15 @@
 
 @media mediumScreen {
   .listBox {
+    width: 75%;
+    margin-bottom: 0;
+  }
+}
+
+
+@media largeScreen {
+  .listBox {
     width: 50%;
+    margin-bottom: 0;
   }
 }
