@@ -8,6 +8,7 @@ import metaImage from './images/meta-image.png';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
+import ContactBox from '../../../../components/contact-box';
 
 type CaseStudyFinancialTimesProps = {
   contactUsURL: string,
@@ -104,12 +105,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           geographically and functionally central to the core offering of the next generation
           ft.com, the home page.
         </p>
-        <div className={styles.contactBox}>
-          <h2 className={styles.contactBox__heading}>
-            Project in mind?
-          </h2>
-          <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
-        </div>
+        <ContactBox />
         <p className={styles.content__paragraph}>
           In the initial phase of our engagement we redesigned and deployed a new home page in just
           seven weeks. This involved integrating React and GraphQL into the FT’s already cutting
