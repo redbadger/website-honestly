@@ -9,6 +9,7 @@ import metaImage from './images/meta-image.png';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
+import ContactBox from '../../../../components/contact-box';
 
 const cx = classnames.bind(styles);
 
@@ -141,12 +142,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
           experience, making the new site adaptable, flexible and able to scale up to the
           ever-growing demand that the business was seeing.
         </p>
-        <div className={styles.contactBox}>
-          <h2 className={styles.contactBox__heading}>
-            Project in mind?
-          </h2>
-          <a href="#contactUs" className={styles.contactBox__button}>Tell us more</a>
-        </div>
+        <ContactBox />
         <p className={styles.content__paragraph}>
           By using a combination of Node.js and React.js, the team were able to develop an app that
           delivers a consistent experience across all devices. It also means that the application
