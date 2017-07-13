@@ -21,13 +21,7 @@ if (global.document) {
   global.decomp = require('poly-decomp/build/decomp.js');
 }
 
-type Props = {
-  content: Object,
-  container: Object,
-};
-
 export default class Shapes extends Component {
-  props: Props;
   svg: Object;
   shapes: Object;
 

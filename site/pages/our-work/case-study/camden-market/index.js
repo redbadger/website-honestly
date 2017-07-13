@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import Social from '../../../../components/social';
 import styles from './style.css';
@@ -20,6 +21,7 @@ type CaseStudyCamdenMarketProps = {
 const social = {
   title: 'The proof is in the pudding.',
   description: 'Camden Market’s new digital platform designed and built in ten weeks',
+  metaImage: headerImage,
   url: 'https://red-badger.com/our-work/case-study/camden-market',
 };
 
