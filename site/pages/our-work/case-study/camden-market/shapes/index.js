@@ -17,7 +17,6 @@ const {
   Render,
   Engine,
   MouseConstraint,
-  Events,
 } = require('matter-js');
 
 import styles from './index.css';
@@ -91,7 +90,7 @@ export default class Shapes extends Component {
       isStatic: true,
       render: transparentOpts,
     });
-    const rightSide = Bodies.rectangle(window.innerWidth + 10, height / 2, 10, height + 10, {
+    const rightSide = Bodies.rectangle(window.innerWidth - 10, height / 2, 10, height + 10, {
       isStatic: true,
       render: transparentOpts,
     });
@@ -109,14 +108,6 @@ export default class Shapes extends Component {
       constraint: {
         render: { visible: false },
       },
-    });
-
-    Events.on(mouseConstraint, 'mousedown', () => {
-      engine.render.element.style.zIndex = '1000';
-    });
-
-    Events.on(mouseConstraint, 'mouseup', () => {
-      engine.render.element.style.zIndex = '10';
     });
 
     mouseConstraint.mouse.element.removeEventListener(

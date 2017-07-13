@@ -36,6 +36,7 @@
   height: auto;
   z-index: 20;
   margin-top: 44px;
+  pointer-events: none;
 }
 
 .header__outcome {
