@@ -8,7 +8,12 @@ const ContactBox = ({ target = '#contactUs' }) =>
     <h2 className={styles.contactBox__heading}>
       Project in mind?
     </h2>
-    <button onClick={() => jump(target)} className={styles.contactBox__button}>Tell us more</button>
+    <button
+      onClick={() => jump(target, { a11y: true, duration: 800 })}
+      className={styles.contactBox__button}
+    >
+      Tell us more
+    </button>
   </div>;
 
 export default ContactBox;
