@@ -1,116 +1,61 @@
+// @flow
+import _ from 'lodash';
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
+
 import styles from './style.css';
 import Link from '../../../../components/link';
+import WhatToReadNextSlice from './slice';
 
 import fortnumImage from './images/fortnumImage.jpg';
 import financialTimesImage from './images/financialTimesImage.png';
 import camdenMarketImage from './images/camdenMarketImage.jpg';
-import arrowSVG from '../../../../../assets/images/SVG/arrow.svg';
+import retailerImage from './images/retailerImage.jpg';
 
-const caseStudies = [
-  {
-    name: 'fortnum-and-mason',
-    url: '/our-work/case-study/fortnum-and-mason/',
-    image: {
-      src: fortnumImage,
-      caption: 'Fortnum & Mason',
-    },
-    title: 'Elegant e-commerce in eight months',
+const slices = {
+  fortnumAndMason: {
+    name: 'Fortnum & Mason',
+    tagline: 'Elegant e-commerce in eight months',
+    image: fortnumImage,
+    link: '/our-work/case-study/fortnum-and-mason/',
   },
-  {
-    name: 'financial-times',
-    url: '/our-work/case-study/financial-times/',
-    image: {
-      src: financialTimesImage,
-      caption: 'Financial Times',
-    },
-    title: 'Lasting change for a media giant',
+  financialTimes: {
+    name: 'Financial Times',
+    tagline: 'Lasting change for a media giant',
+    image: financialTimesImage,
+    link: '/our-work/case-study/financial-times/',
   },
-  {
-    name: 'camden-market',
-    url: '/our-work/case-study/camden-market/',
-    image: {
-      src: camdenMarketImage,
-      caption: 'Camden Market',
-    },
-    title: 'Taking steps towards a digital future',
+  camdenMarket: {
+    name: 'Camden Market',
+    tagline: 'Taking steps towards a digital future',
+    image: camdenMarketImage,
+    link: 'our-work/case-study/camden-market/',
   },
-  {
-    name: 'camden-market',
-    url: '/our-work/case-study/camden-market/',
-    image: {
-      src: camdenMarketImage,
-      caption: 'Camden Market',
-    },
-    title: 'Taking steps towards a digital future',
+  retailer: {
+    name: 'Retailer',
+    tagline: 'Next generation platform for retail giant',
+    image: retailerImage,
+    link: 'our-work/case-study/retailer/',
   },
-  {
-    name: 'retailer',
-    url: '/our-work/case-study/retailer/',
-    image: {
-      src: camdenMarketImage,
-      caption: 'Retailer',
-    },
-    title: 'RANDOM RETAILER TITLE',
-  },
-];
-
-/**
- * Fisher-yates shuffle
- * https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
- */
-const shuffle = array => {
-  const res = array.slice();
-  let counter = res.length;
-  while (counter > 0) {
-    const index = Math.floor(Math.random() * counter);
-    counter -= 1;
-
-    const temp = res[counter];
-    res[counter] = res[index];
-    res[index] = temp;
-  }
-  return res;
 };
 
-const WhatToReadNext = () => {
-  let displayedStudies = caseStudies;
-  if (typeof window !== 'undefined') {
-    const path = window.location.pathname.replace(/\/+$/g, '').split('/');
-    const currentStudyName = path[path.length - 1];
-    displayedStudies = shuffle(caseStudies).filter(s => s.name !== currentStudyName);
-  }
+type WhatToReadNextProps = {
+  currentPage: string,
+  maxNumberSlices?: number,
+};
 
-  return (
-    <div className={styles.whatNext}>
-      <div className={styles.whatNext__tilesContainer}>
-        {displayedStudies.map((study, index) =>
-          <div key={`whatNext__tile__${index}`} className={styles.whatNext__tile}>
-            <figure>
-              <a href={study.url}>
-                <img
-                  src={study.image.src}
-                  alt={study.image.caption}
-                  className={styles.whatNext__image}
-                />
-              </a>
-              <figcaption className={styles.whatNext__caption}>{study.image.caption}</figcaption>
-            </figure>
-            <a href={study.url} className={styles.whatNext__link}>
-              <h2 className={styles.whatNext__title}>
-                {study.title}
-                <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
-              </h2>
-            </a>
-          </div>,
-        )}
-      </div>
-      <Link to="ourWorkPage" className={styles.whatNext__button}>
-        See more of our work
-      </Link>
+const WhatToReadNext = ({ currentPage = '', maxNumberSlices = 3 }: WhatToReadNextProps) =>
+  <div className={styles.whatNext}>
+    <div className={styles.whatNext__tilesContainer}>
+      {_(slices)
+        .reject((slice, key) => key === currentPage)
+        .shuffle()
+        .take(maxNumberSlices)
+        .map((details, key) => <WhatToReadNextSlice key={key} details={details} />)
+        .value()}
     </div>
-  );
-};
+    <Link to="ourWorkPage" className={styles.whatNext__button}>
+      See more of our work
+    </Link>
+  </div>;
 
 export default WhatToReadNext;
