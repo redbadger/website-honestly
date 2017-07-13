@@ -1,7 +1,14 @@
+/* eslint-disable import/imports-first,global-require */
 /* eslint max-len: 0 */
 /* @flow */
 import React, { Component } from 'react';
-import {
+
+if (global.document) {
+  require('pathseg');
+  global.decomp = require('poly-decomp/build/decomp.js');
+}
+
+const {
   World,
   Bodies,
   Body,
@@ -11,15 +18,9 @@ import {
   Engine,
   MouseConstraint,
   Events,
-} from 'matter-js';
-import styles from './index.css';
+} = require('matter-js');
 
-if (global.document) {
-  // eslint-disable-next-line global-require
-  require('pathseg');
-  // eslint-disable-next-line global-require
-  global.decomp = require('poly-decomp/build/decomp.js');
-}
+import styles from './index.css';
 
 export default class Shapes extends Component {
   svg: Object;
@@ -77,7 +78,12 @@ export default class Shapes extends Component {
       strokeStyle: 'transparent',
       lineWidth: 0,
     };
-    const ground = Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 10, {
+
+    const ground = Bodies.rectangle(window.innerWidth / 2, height, window.innerWidth, 1, {
+      isStatic: true,
+      render: transparentOpts,
+    });
+    const ceil = Bodies.rectangle(window.innerWidth / 2, -5, window.innerWidth, 1, {
       isStatic: true,
       render: transparentOpts,
     });
@@ -97,7 +103,7 @@ export default class Shapes extends Component {
       Body.set(ground, 'width', window.innerWidth);
     };
 
-    World.add(engine.world, [ground, leftSide, rightSide, ...loadSvgs(), ...loadSvgs()]);
+    World.add(engine.world, [ground, ceil, leftSide, rightSide, ...loadSvgs(), ...loadSvgs()]);
 
     const mouseConstraint = MouseConstraint.create(engine, {
       constraint: {
