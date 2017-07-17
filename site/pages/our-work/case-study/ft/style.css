@@ -186,10 +186,6 @@
   composes: serif from "../../../../css/typography/_fonts.css";
 }
 
-.overview {
-  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
-}
-
 .screenDemo {
   background: #DED3C3;
   text-align: center;
