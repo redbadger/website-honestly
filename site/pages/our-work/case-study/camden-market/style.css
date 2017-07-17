@@ -9,6 +9,72 @@
   background-color: badgerWhite;
 }
 
+.contactBox {
+  background-color: #ededed;
+  height: 100%;
+  padding: 33px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactBox__button {
+  composes: smallButton from "../../../../css/_links.css";
+}
+
+.contactBox__heading {
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content {
+  padding-bottom: 40px;
+}
+
+.content__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.content__list__element {
+  line-height: 28px;
+}
+
+.content__mainTitle {
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.content__paragraph {
+  margin-bottom: 30px;
+}
+
+.content__redTitle {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  display: block;
+  color: badgerRedOnWhite;
+}
+
+.content__secondaryTitle {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__title {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__wrapper {
+  padding: 20px 20px 20px;
+}
+
 .header {
   width: 100%;
   background-color: badgerWhite;
@@ -25,12 +91,6 @@
   height: 310px;
 }
 
-.header__imageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .header__image {
   max-width: 375px;
   height: auto;
@@ -39,9 +99,32 @@
   pointer-events: none;
 }
 
+.header__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__outcome {
   width: 120px;
   position: absolute;
+}
+
+.header__outcome--left {
+  bottom: 13px;
+  left: 20px;
+}
+
+.header__outcome--left .header__outcome__percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: badgerBlack;
 }
 
 .header__outcome--right {
@@ -55,23 +138,6 @@
   content: "";
   display: inline-block;
   left: -2px;
-  bottom: 24px;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: badgerBlack;
-}
-
-.header__outcome--left {
-  bottom: 13px;
-  left: 20px;
-}
-
-.header__outcome--left .header__outcome__percentage:after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  right: -2px;
   bottom: 24px;
   width: 6px;
   height: 6px;
@@ -100,73 +166,33 @@
   padding: 0;
 }
 
-.content {
-  padding-bottom: 40px;
-}
-
-.content__wrapper {
-  padding: 20px 20px 20px;
-}
-
-.content__mainTitle {
-  composes: fontL from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
-  padding: 20px;
-}
-
-.content__title {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
-}
-
-.content__redTitle {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  display: block;
-  color: badgerRedOnWhite;
-}
-
-.content__secondaryTitle {
-  composes: fontS2 from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
-}
-
-.content__paragraph {
-  margin-bottom: 30px;
-}
-
-.content__list {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 30px;
-}
-
-.content__list__element {
-  line-height: 28px;
-}
-
-.contactBox {
-  background-color: #ededed;
-  height: 100%;
-  padding: 33px 30px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.contactBox__heading {
-  composes: fontM2 from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
-}
-
-.contactBox__button {
-  composes: smallButton from "../../../../css/_links.css";
-}
-
 @media mediumScreen {
+  .contactBox {
+    width: auto;
+    float: left;
+    margin-right: 30px;
+  }
+
+  .content__list {
+    padding-left: 134px;
+  }
+
+  .content__mainTitle {
+    margin-bottom: -20px;
+  }
+
+  .content__paragraph {
+    padding-left: 114px;
+  }
+
+  .content__secondaryTitle {
+    padding-left: 114px;
+  }
+
+  .content__title {
+    margin-top: 50px;
+  }
+
   .header__container {
     height: 400px;
   }
@@ -188,30 +214,8 @@
     top: 78px;
   }
 
-  .content__paragraph {
-    padding-left: 114px;
-  }
-
-  .content__secondaryTitle {
-    padding-left: 114px;
-  }
-
-  .content__list {
-    padding-left: 134px;
-  }
-
-  .content__mainTitle {
-    margin-bottom: -20px;
-  }
-
-  .content__title {
-    margin-top: 50px;
-  }
-
-  .contactBox {
-    width: auto;
-    float: left;
-    margin-right: 30px;
+  .listBox {
+    width: 50%;
   }
 
   .overview {
@@ -219,8 +223,9 @@
     flex-wrap: wrap;
   }
 
-  .listBox {
-    width: 50%;
+  .quotation {
+    width: 45%;
+    margin-right: auto;
   }
 
   .techGraphImage {
@@ -228,29 +233,17 @@
     padding-right: 20px;
     margin-bottom: 20px;
   }
-
-  .quotation {
-    width: 45%;
-    margin-right: auto;
-  }
 }
 
 @media largeScreen {
+  .contactBox {
+    width: 26.1%;
+  }
+
   .content {
     max-width: 1400px;
     padding: 20px 120px 60px;
     margin: auto;
-  }
-
-  .content__wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content__paragraph,
-  .content__secondaryTitle {
-    padding-left: 30%;
-    padding-right: 10%;
   }
 
   .content__list {
@@ -267,12 +260,19 @@
     margin-bottom: -96px;
   }
 
+  .content__paragraph,
+  .content__secondaryTitle {
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+
   .content__title {
     padding-left: 10%;
   }
 
-  .contactBox {
-    width: 26.1%;
+  .content__wrapper {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .header {
