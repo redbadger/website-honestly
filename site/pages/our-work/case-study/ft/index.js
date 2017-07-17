@@ -5,6 +5,10 @@ import styles from './style.css';
 import headerImage from './images/header.jpg';
 import screenImage from './images/screen.jpg';
 import metaImage from './images/meta-image.png';
+import authorQuoteImage from '../camden-market/images/quote-author.png';
+
+import ListBox from '../../../../components/list-box';
+import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
@@ -37,6 +41,37 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         <h1 className={styles.content__mainTitle}>
           Keeping up with the Financial Times
         </h1>
+      </div>
+      <div className={styles.overview}>
+        <Quote
+          author={{
+            name: 'Lily Walsh',
+            title: 'Product Owner, Market Tech',
+            image: authorQuoteImage,
+          }}
+          text={
+            'We put Londoners at the heart of the project and the website. The results are already speaking for themselves and within just four days of the launch, the bounce rate has dropped by 18% and average session duration increased by 53%.'
+          }
+        />
+        <ListBox
+          title={'Results'}
+          items={[
+            {
+              label: 'New London Users',
+              value: '+75%',
+            },
+            {
+              label: 'Mobile traffic',
+              value: '+42%',
+            },
+            {
+              label: 'User increase week on week',
+              value: '+30%',
+            },
+          ]}
+        />
+      </div>
+      <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>
             {"Let's make things better."}

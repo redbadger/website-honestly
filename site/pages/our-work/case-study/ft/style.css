@@ -259,6 +259,10 @@
     margin-bottom: 20px;
   }
 
+  .overview {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .screenDemo {
     padding-bottom: 0px;
