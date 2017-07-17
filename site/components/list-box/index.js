@@ -7,7 +7,7 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 type ListBoxProps = {
-  title: String,
+  title: string,
   items: Array<Object>,
 };
 

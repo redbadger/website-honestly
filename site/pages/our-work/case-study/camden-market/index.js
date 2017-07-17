@@ -54,7 +54,7 @@ const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) =>
           }
         />
         <ListBox
-          title={'Results'}
+          title="Results"
           items={[
             {
               label: 'New London Users',
