@@ -4,8 +4,7 @@ import styles from './style.css';
 
 import headerImage from './images/header.jpg';
 import screenImage from './images/screen.jpg';
-import metaImage from './images/meta-image.png';
-import authorQuoteImage from '../camden-market/images/quote-author.png';
+import authorQuoteImage from './images/christina-scott.png';
 
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
@@ -20,9 +19,8 @@ type CaseStudyFinancialTimesProps = {
 
 const social = {
   title: 'The proof is in the pudding',
-  description:
-    'Next generation platform for retail giant cleared five-year backlog in just eight months',
-  metaImage,
+  description: 'Keeping up with the Financial Times',
+  metaImage: headerImage,
   url: 'https://red-badger.com/our-work/case-study/financial-times',
 };
 
@@ -45,30 +43,29 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
       <div className={styles.overview}>
         <Quote
           author={{
-            name: 'Lily Walsh',
-            title: 'Product Owner, Market Tech',
+            name: 'Christina Scott',
+            title: 'Chief Product & Information Officer, Financial Times',
             image: authorQuoteImage,
           }}
           text={
-            'We put Londoners at the heart of the project and the website. The results are already speaking for themselves and within just four days of the launch, the bounce rate has dropped by 18% and average session duration increased by 53%.'
+            'Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change.'
           }
         />
         <ListBox
-          title={'Results'}
+          title="Results"
           items={[
             {
-              label: 'New London Users',
-              value: '+75%',
+              label: 'Integration of Lean UX and Design into all areas of product delivery',
             },
             {
-              label: 'Mobile traffic',
-              value: '+42%',
+              label: 'New homepage designed and built in just 7 weeks',
             },
             {
-              label: 'User increase week on week',
-              value: '+30%',
+              label: 'Reader engagement increased by 30%',
             },
           ]}
+          itemClassName={styles.listBox__item}
+          labelClassName={styles.listBox__label}
         />
       </div>
       <div className={styles.content__wrapper}>
