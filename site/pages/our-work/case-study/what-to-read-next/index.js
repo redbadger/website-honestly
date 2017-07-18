@@ -28,13 +28,13 @@ const slices = {
     name: 'Camden Market',
     tagline: 'Taking steps towards a digital future',
     image: camdenMarketImage,
-    link: 'our-work/case-study/camden-market/',
+    link: '/our-work/case-study/camden-market/',
   },
   retailer: {
     name: 'Retailer',
     tagline: 'Next generation platform for retail giant',
     image: retailerImage,
-    link: 'our-work/case-study/retailer/',
+    link: '/our-work/case-study/retailer/',
   },
 };
 
