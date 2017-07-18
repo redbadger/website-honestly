@@ -261,8 +261,7 @@
     margin-bottom: -96px;
   }
 
-  .content__paragraph,
-  .content__secondaryTitle {
+  .content__paragraph, .content__secondaryTitle {
     padding-left: 30%;
     padding-right: 10%;
   }
