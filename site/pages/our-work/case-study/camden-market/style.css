@@ -84,11 +84,13 @@
 }
 
 .header__container {
-  max-width: 760px;
-  margin: 0 0 auto auto;
+  max-width: 1160px;
+  margin: auto;
   position: relative;
-  width: 100%;
+  width: calc(100% - 120px);
   height: 310px;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .header__image {
@@ -96,7 +98,6 @@
   height: auto;
   z-index: 20;
   margin-top: 44px;
-  pointer-events: none;
 }
 
 .header__imageContainer {
@@ -277,6 +278,11 @@
 
   .header {
     padding-bottom: 56px;
+  }
+
+  .header__imageContainer {
+    display: block;
+    float: right;
   }
 
   .techGraphImage {
