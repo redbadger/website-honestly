@@ -252,7 +252,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
         </div>
       </div>
     </div>
-    <WhatToReadNext currentSlice="retailer" />
+    <WhatToReadNext currentPage="retailer" />
     <ContactUs postURL={contactUsURL} />
   </div>;
 
