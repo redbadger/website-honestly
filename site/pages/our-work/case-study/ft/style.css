@@ -242,7 +242,7 @@
   }
 
   .header__image {
-    max-height: 456px;
+    height: 456px;
     width: auto;
   }
 
