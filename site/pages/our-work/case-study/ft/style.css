@@ -176,7 +176,6 @@
   padding: 0px 50px;
 }
 
-
 @media mediumScreen {
   .header__outcome {
     width: 200px;
@@ -229,7 +228,7 @@
   .overview {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;;
+    align-items: flex-start;
   }
 
   .screenDemo {
@@ -258,8 +257,7 @@
     padding-right: 0;
   }
 
-  .content__paragraph,
-  .content__secondaryTitle {
+  .content__paragraph, .content__secondaryTitle {
     padding-left: 30%;
     padding-right: 10%;
   }
