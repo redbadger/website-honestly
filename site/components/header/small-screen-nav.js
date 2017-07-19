@@ -90,8 +90,7 @@ export default class SmallScreenNav extends React.Component {
                     <span>What we do</span>
                   </Link>
                 </li>
-                {/* <li><a tabIndex={navTabIndex} href="/blog/"><span>Blog</span></a></li> */}
-                <li><a tabIndex={navTabIndex} href="/blog/">Blog</a></li>
+                <li><a tabIndex={navTabIndex} href="/blog/"><span>Blog</span></a></li>
                 <li>
                   <Link tabIndex={navTabIndex} to="events" navigating={this.closeMenu}>
                     <span>Events</span>
@@ -109,7 +108,7 @@ export default class SmallScreenNav extends React.Component {
                     navigationData={{ contactUs: true }}
                     navigating={this.closeMenu}
                   >
-                    Contact us
+                    <span>Contact us</span>
                   </Link>
                 </li>
               </ul>
