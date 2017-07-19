@@ -217,7 +217,7 @@ const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) =>
         </p>
       </div>
     </div>
-    <WhatToReadNext />
+    <WhatToReadNext currentPage="camdenMarket" />
     <ContactUs postURL={contactUsURL} />
   </div>;
 
