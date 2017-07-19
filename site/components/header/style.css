@@ -37,9 +37,7 @@
   color: badgerBlack;
 }
 
-.mediumScreenNav a:hover,
-.smallScreenNavContainer a,
-.activeNavLink {
+.mediumScreenNav a:hover, .smallScreenNavContainer a, .activeNavLink {
   border-bottom: 2px solid badgerRedOnWhite;
 }
 
@@ -109,7 +107,11 @@
   padding-bottom: 10px;
 }
 
-.smallScreenNav li a:hover {
+.smallScreenNav li a:focus {
+  outline: none;
+}
+
+.smallScreenNav li a span:hover {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
@@ -156,8 +158,7 @@
   right: 0;
 }
 
-.trigger:checked + .overlay .smallScreenNavWrapper
-{
+.trigger:checked + .overlay .smallScreenNavWrapper {
   display: block;
 }
 
