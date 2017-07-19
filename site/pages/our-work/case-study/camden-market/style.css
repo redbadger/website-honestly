@@ -87,15 +87,14 @@
   max-width: 1160px;
   margin: auto;
   position: relative;
-  width: calc(100% - 240px);
   height: 310px;
   z-index: 10;
   pointer-events: none;
 }
 
 .header__image {
-  max-width: 375px;
-  height: auto;
+  width: 375px;
+  height: 242px;
   z-index: 20;
   margin-top: 44px;
 }
@@ -199,8 +198,8 @@
   }
 
   .header__image {
-    max-width: 500px;
-    height: auto;
+    width: 500px;
+    height: 322px;
   }
 
   .header__outcome {
@@ -277,6 +276,10 @@
 
   .header {
     padding-bottom: 56px;
+  }
+
+  .header__container {
+    width: calc(100% - 240px);
   }
 
   .header__imageContainer {
