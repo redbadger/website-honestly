@@ -221,7 +221,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         </p>
       </div>
     </div>
-    <WhatToReadNext />
+    <WhatToReadNext currentPage="financialTimes" />
     <ContactUs postURL={contactUsURL} />
   </div>;
 
