@@ -10,6 +10,18 @@
 
 .whatNext__tilesContainer {
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.whatNext__tilesContainer > div {
+  display: none;
+  width: 100%;
+}
+
+.whatNext__tilesContainer > div:nth-child(-n+1) {
+  display: block;
 }
 
 .whatNext__image {
@@ -65,23 +77,13 @@
   margin: 0 10px;
 }
 
-.whatNext__tile--financialTimes,
-.whatNext__tile--camden {
-  display: none;
-}
-
 @media mediumScreen {
-  .whatNext__tilesContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .whatNext__tile {
+  .whatNext__tilesContainer > div {
+    display: none;
     width: calc(50% - 10px);
   }
 
-  .whatNext__tile--financialTimes {
+  .whatNext__tilesContainer > div:nth-child(-n+2) {
     display: block;
   }
 }
@@ -91,17 +93,19 @@
     padding-left: 0;
     padding-right: 0;
   }
+
   .whatNext__tilesContainer {
     max-width: 1400px;
     padding-left: 120px;
     padding-right: 120px;
   }
 
-  .whatNext__tile {
+  .whatNext__tilesContainer > div {
+    display: none;
     width: calc(33% - 10px);
   }
 
-  .whatNext__tile--camden {
+  .whatNext__tilesContainer > div:nth-child(-n+3) {
     display: block;
   }
 }
