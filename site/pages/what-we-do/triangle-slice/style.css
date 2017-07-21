@@ -73,14 +73,17 @@
 
 .triangleTop {
   width: 100px;
+  max-width: 100%;
 }
 
 .triangleMiddle {
   width: 220px;
+  max-width: 100%;
 }
 
 .triangleBottom {
   width: 300px;
+  max-width: 100%;
 }
 
 @media mediumScreen {
