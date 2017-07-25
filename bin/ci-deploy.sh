@@ -21,6 +21,7 @@ createCommitSite() {
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
   aws s3 cp ./dist/manifest.json s3://$BUCKET_NAME/$COMMIT_REF/manifest.json
+  aws s3 cp ./dist/googlef362fe4b545e4cfb.html s3://$BUCKET_NAME/$COMMIT_REF/googlef362fe4b545e4cfb.html
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 sync ./dist/static-site/$COMMIT_REF/ s3://$BUCKET_NAME/$COMMIT_REF/
   aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/$COMMIT_REF/version.txt
@@ -42,6 +43,7 @@ deployMaster() {
   echo Copying assets to S3
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
   aws s3 cp ./dist/manifest.json s3://$BUCKET_NAME/manifest.json
+  aws s3 cp ./dist/googlef362fe4b545e4cfb.html s3://$BUCKET_NAME/googlef362fe4b545e4cfb.html
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/robots.txt
   aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/version.txt
   make services-deploy
