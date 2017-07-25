@@ -52,11 +52,17 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         </section>
         <section className={styles.rightContent}>
           <div className={styles.innerContainer}>
-            <img
-              className={styles.techRoundTable}
-              src={techRoundTableImage}
-              alt="tech roundtable"
-            />
+            <a
+              href="http://roundtable.red-badger.com/Red_Badger_Tech_Round_Table_June_2017.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className={styles.techRoundTable}
+                src={techRoundTableImage}
+                alt="tech roundtable"
+              />
+            </a>
           </div>
         </section>
       </section>
