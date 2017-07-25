@@ -126,6 +126,10 @@
     font-size: 30px;
   }
 
+  .fontM, .fontStaticM {
+    font-size: 30px;
+  }
+
   .fontS {
     font-size: 24px;
 
