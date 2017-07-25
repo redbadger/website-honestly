@@ -38,8 +38,8 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               <a
                 className={styles.latestRoundTableLink}
                 href="http://roundtable.red-badger.com/Red_Badger_Tech_Round_Table_June_2017.pdf"
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 {/* eslint-disable jsx-a11y/no-static-element-interactions */}
                 <span onClick={trackAnalytics('RoundtablePDFLink')}>
