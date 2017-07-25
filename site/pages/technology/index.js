@@ -7,7 +7,6 @@ import BlogSlice from './blog-slice';
 import NewsletterSlice from './newsletter-slice';
 
 import techRoundTableImage from './images/techroundtable.png';
-import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 import slackSVG from './images/slack.svg';
 import meetupSVG from './images/react-meetup.svg';
 
@@ -35,19 +34,20 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               a regular basis to discuss which technologies we’re using to solve difficult
               problems on our projects, and which technologies are on our radar as ones to watch.
             </p>
-            <a
-              className={styles.latestRoundTableLink}
-              href="http://roundtable.red-badger.com/Red_Badger_Tech_Round_Table_June_2017.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {/* eslint-disable jsx-a11y/no-static-element-interactions */}
-              <span onClick={trackAnalytics('RoundtablePDFLink')}>
-                Read our latest tech round table
-              </span>
-              {/* eslint-enable jsx-a11y/no-static-element-interactions */}
-            </a>
-            <InlineSVG src={arrowSVG} className={styles.arrow} />
+            <div className={styles.latestRoundTableLinkContainer}>
+              <a
+                className={styles.latestRoundTableLink}
+                href="http://roundtable.red-badger.com/Red_Badger_Tech_Round_Table_June_2017.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* eslint-disable jsx-a11y/no-static-element-interactions */}
+                <span onClick={trackAnalytics('RoundtablePDFLink')}>
+                  Read PDF report
+                </span>
+                {/* eslint-enable jsx-a11y/no-static-element-interactions */}
+              </a>
+            </div>
           </div>
         </section>
         <section className={styles.rightContent}>
