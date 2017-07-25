@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 // @flow
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
@@ -19,37 +20,27 @@ const trackAnalytics = title => () =>
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
-      <Link to="homePage" title="Home" className={styles.logo} onClick={trackAnalytics('Home')}>
-        <InlineSVG src={logo} title="Red Badger logo" />
+      <Link to="homePage" title="Home" className={styles.logo}>
+        <InlineSVG src={logo} title="Red Badger logo" onClick={trackAnalytics('Home')} />
       </Link>
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul role="listbox" className={styles.mediumScreenNav}>
-          <li>
-            <Link
-              to="whatWeDoPage"
-              activeCssClass={styles.activeNavLink}
-              onClick={trackAnalytics('What we do')}
-            >
+          <li onClick={trackAnalytics('What we do')}>
+            <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
               What we do
             </Link>
           </li>
-          <li>
-            <Link
-              to="aboutUsPage"
-              activeCssClass={styles.activeNavLink}
-              onClick={trackAnalytics('About us')}
-            >
+          <li onClick={trackAnalytics('About us')}>
+            <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
               About us
             </Link>
           </li>
-          <li><a href="/blog/">Blog</a></li>
           <li>
-            <Link
-              to="events"
-              activeCssClass={styles.activeNavLink}
-              onClick={trackAnalytics('Events')}
-            >
+            <a onClick={trackAnalytics('Blog')} href="/blog/">Blog</a>
+          </li>
+          <li onClick={trackAnalytics('Events')}>
+            <Link to="events" activeCssClass={styles.activeNavLink}>
               Events
             </Link>
           </li>
