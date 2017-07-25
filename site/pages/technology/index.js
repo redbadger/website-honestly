@@ -12,7 +12,7 @@ import meetupSVG from './images/react-meetup.svg';
 
 export type TechPageProps = {
   triedAndTestedBlogPosts: Array<Object>,
-  growingTrendsBlogPosts: Array<Object>,
+  growingTrendsBlogPosts: Array<Object>
 };
 
 const trackAnalytics = title => () =>
@@ -62,7 +62,7 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
                 className={styles.techRoundTable}
                 src={techRoundTableImage}
                 alt="tech roundtable"
-                onClick={trackAnalytics('RoundtablePDFLink')}
+                onClick={trackAnalytics('RoundtablePDFLinkImage')}
               />
               {/* eslint-enable jsx-a11y/no-static-element-interactions */}
             </a>
