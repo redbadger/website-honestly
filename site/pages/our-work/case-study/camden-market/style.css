@@ -1,0 +1,294 @@
+@value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.caseStudy {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  font-size: 20px;
+  line-height: 27px;
+  background-color: badgerWhite;
+}
+
+.contactBox {
+  background-color: #ededed;
+  height: 100%;
+  padding: 33px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactBox__button {
+  composes: smallButton from "../../../../css/_links.css";
+}
+
+.contactBox__heading {
+  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content {
+  padding-bottom: 40px;
+}
+
+.content__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.content__list__element {
+  line-height: 28px;
+}
+
+.content__mainTitle {
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.content__paragraph {
+  margin-bottom: 30px;
+}
+
+.content__redTitle {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  display: block;
+  color: badgerRedOnWhite;
+}
+
+.content__secondaryTitle {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__title {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__wrapper {
+  padding: 20px 20px 20px;
+}
+
+.header {
+  width: 100%;
+  background-color: #E8E8E8;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.header__container {
+  max-width: 1160px;
+  margin: auto;
+  position: relative;
+  height: 310px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.header__image {
+  width: 375px;
+  height: 242px;
+  z-index: 20;
+  margin-top: 44px;
+}
+
+.header__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__outcome {
+  width: 120px;
+  position: absolute;
+}
+
+.header__outcome--left {
+  bottom: 13px;
+  left: 20px;
+}
+
+.header__outcome--left .header__outcome__percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: badgerBlack;
+}
+
+.header__outcome--right {
+  text-align: right;
+  top: 13px;
+  right: 20px;
+}
+
+.header__outcome--right .header__outcome__percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: badgerBlack;
+}
+
+.header__outcome__percentage {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  display: block;
+  border-bottom: 1px dashed badgerBlack;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+.header__outcome__description {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  font-size: 16px;
+}
+
+.techGraphImage {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+@media mediumScreen {
+  .contactBox {
+    width: auto;
+    float: left;
+    margin-right: 30px;
+  }
+
+  .content__list {
+    padding-left: 134px;
+  }
+
+  .content__mainTitle {
+    margin-bottom: -20px;
+  }
+
+  .content__paragraph {
+    padding-left: 114px;
+  }
+
+  .content__secondaryTitle {
+    padding-left: 114px;
+  }
+
+  .content__title {
+    margin-top: 50px;
+  }
+
+  .header__container {
+    height: 400px;
+  }
+
+  .header__image {
+    width: 500px;
+    height: 322px;
+  }
+
+  .header__outcome {
+    width: 200px;
+  }
+
+  .header__outcome--left {
+    bottom: 78px;
+  }
+
+  .header__outcome--right {
+    top: 78px;
+  }
+
+  .listBox {
+    width: 50%;
+  }
+
+  .overview {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .quotation {
+    width: 45%;
+    margin-right: auto;
+  }
+
+  .techGraphImage {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media largeScreen {
+  .contactBox {
+    width: 26.1%;
+  }
+
+  .content {
+    max-width: 1400px;
+    padding: 20px 120px 60px;
+    margin: auto;
+  }
+
+  .content__list {
+    padding-left: 33.457143%;
+    padding-right: 18.2857143%;
+  }
+
+  .content__mainTitle {
+    position: relative;
+    top: -96px;
+    display: block;
+    height: 100%;
+    background-color: badgerWhite;
+    margin-bottom: -96px;
+  }
+
+  .content__paragraph, .content__secondaryTitle {
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+
+  .content__title {
+    padding-left: 10%;
+  }
+
+  .content__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    padding-bottom: 56px;
+  }
+
+  .header__container {
+    width: calc(100% - 240px);
+  }
+
+  .header__imageContainer {
+    display: block;
+    float: right;
+  }
+
+  .techGraphImage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

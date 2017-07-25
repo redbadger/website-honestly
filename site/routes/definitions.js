@@ -123,4 +123,12 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'offlinePage',
     route: 'offline',
   },
+  {
+    title: 'Camden market case study',
+    key: 'camdenMarketCaseStudy',
+    route: 'our-work/case-study/camden-market',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
 ];

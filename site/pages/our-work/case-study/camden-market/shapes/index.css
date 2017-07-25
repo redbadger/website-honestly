@@ -1,0 +1,16 @@
+@value largeScreen from "../../../../../css/_sizes.css";
+
+.shapes {
+  position: absolute;
+  bottom: -8px;
+  z-index: 10;
+  height: 100%;
+  display: none;
+  background-color: #E8E8E8;
+}
+
+@media largeScreen {
+  .shapes {
+    display: block;
+  }
+}
