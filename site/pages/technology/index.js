@@ -57,11 +57,14 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               target="_blank"
               rel="noopener noreferrer"
             >
+              {/* eslint-disable jsx-a11y/no-static-element-interactions */}
               <img
                 className={styles.techRoundTable}
                 src={techRoundTableImage}
                 alt="tech roundtable"
+                onClick={trackAnalytics('RoundtablePDFLink')}
               />
+              {/* eslint-enable jsx-a11y/no-static-element-interactions */}
             </a>
           </div>
         </section>
