@@ -15,15 +15,20 @@ const trackAnalytics = title => () =>
   });
 
 export default class SmallScreenNav extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       navOpen: false,
     };
   }
 
+  state: {
+    navOpen: boolean
+  };
+  smallScreenNav: HTMLInputElement;
+
   documentBodyLock = () => {
-    document.getElementById('mainContent').setAttribute('aria-hidden', true);
+    document.getElementById('mainContent').setAttribute('aria-hidden', 'true');
     document.body.style.position = 'fixed';
     this.smallScreenNav.scrollTop = 0;
   };
@@ -33,7 +38,7 @@ export default class SmallScreenNav extends React.Component {
     document.body.style.position = 'relative';
   };
 
-  handleInputChange = event => {
+  handleInputChange = (event: SyntheticInputEvent) => {
     if (event.target.checked) {
       this.documentBodyLock();
     } else {
