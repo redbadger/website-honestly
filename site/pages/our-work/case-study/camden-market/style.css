@@ -49,7 +49,7 @@
 }
 
 .content__paragraph {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .content__redTitle {
@@ -62,13 +62,13 @@
 .content__secondaryTitle {
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .content__title {
   composes: fontM from "../../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .content__wrapper {
