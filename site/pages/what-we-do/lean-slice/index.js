@@ -12,7 +12,7 @@ export default function LeanSlice() {
 
       <div className={styles.content}>
         <div className={styles.leanImageWrapper}>
-          <img role="presentation" className={styles.leanImage} src={leanImg} />
+          <img alt="lean" role="presentation" className={styles.leanImage} src={leanImg} />
         </div>
 
         <div className={styles.pointsWrapper}>

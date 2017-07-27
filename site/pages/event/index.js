@@ -59,6 +59,7 @@ export default function Event({ event }) {
                     role="presentation"
                     className={styles.eventImg}
                     src={`${event.featureImageFilename}`}
+                    alt={event.title}
                   />}
               </div>
             </div>
