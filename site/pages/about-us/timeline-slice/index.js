@@ -57,31 +57,31 @@ class TimelineSlice extends React.Component {
           <noscript>
             <div className={styles.content}>
               <div className={styles.imageWrapper}>
-                <img src={Image2010} alt="2010" className={styles.image} />
+                <img src={Image2010} alt="year 2010" className={styles.image} />
               </div>
               <Zero />
               <div className={styles.imageWrapper}>
-                <img src={Image2011} alt="2011" className={styles.image} />
+                <img src={Image2011} alt="year 2011" className={styles.image} />
               </div>
               <One />
               <div className={styles.imageWrapper}>
-                <img src={Image2012} alt="2012" className={styles.image} />
+                <img src={Image2012} alt="year 2012" className={styles.image} />
               </div>
               <Two />
               <div className={styles.imageWrapper}>
-                <img src={Image2013} alt="2013" className={styles.image} />
+                <img src={Image2013} alt="year 2013" className={styles.image} />
               </div>
               <Three />
               <div className={styles.imageWrapper}>
-                <img src={Image2014} alt="2014" className={styles.image} />
+                <img src={Image2014} alt="year 2014" className={styles.image} />
               </div>
               <Four />
               <div className={styles.imageWrapper}>
-                <img src={Image2015} alt="2015" className={styles.image} />
+                <img src={Image2015} alt="year 2015" className={styles.image} />
               </div>
               <Five />
               <div className={styles.imageWrapper}>
-                <img src={Image2016} alt="2016" className={styles.image} />
+                <img src={Image2016} alt="year 2016" className={styles.image} />
               </div>
               <Six />
             </div>
