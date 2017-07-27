@@ -96,6 +96,7 @@ const Footer = () =>
               <a
                 href="https://github.com/redbadger"
                 title="Red Badger Github"
+                aria-label="Red Badger Github"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={githubSVG} title="Github" />
@@ -105,6 +106,7 @@ const Footer = () =>
               <a
                 href="https://twitter.com/redbadgerteam"
                 title="Red Badger Twitter"
+                aria-label="Red Badger Twitter"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={twitterSVG} title="Twitter" />
@@ -114,6 +116,7 @@ const Footer = () =>
               <a
                 href="https://redbadger.typeform.com/to/cBuJUl"
                 title="Red Badger Slack"
+                aria-label="Red Badger Slack"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={slackSVG} title="Slack" />
@@ -123,6 +126,7 @@ const Footer = () =>
               <a
                 href="https://www.linkedin.com/company/red-badger"
                 title="Red Badger Linkedin"
+                aria-label="Red Badger Linkedin"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={linkedinSVG} title="Linkedin" />
@@ -133,6 +137,7 @@ const Footer = () =>
               <a
                 href="https://www.instagram.com/redbadgerteam/"
                 title="Red Badger Instagram"
+                aria-label="Red Badger Instagram"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={instagramSVG} title="Instagram" />
@@ -142,6 +147,7 @@ const Footer = () =>
               <a
                 href="https://www.facebook.com/RedBadger"
                 title="Red Badger Facebook"
+                aria-label="Red Badger Facebook"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={facebookSVG} title="Facebook" />
@@ -151,6 +157,7 @@ const Footer = () =>
               <a
                 href="https://www.youtube.com/redbadgerteam"
                 title="Red Badger Youtube"
+                aria-label="Red Badger Youtube"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={youtubeSVG} title="Youtube" />
@@ -160,6 +167,7 @@ const Footer = () =>
               <a
                 href="https://plus.google.com/+Redbadgerteam"
                 title="Red Badger Google Plus"
+                aria-label="Red Badger Google Plus"
                 className={styles.socialIcon}
               >
                 <InlineSVG src={gplusSVG} title="Google Plus" />
