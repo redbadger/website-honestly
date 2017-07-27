@@ -82,7 +82,7 @@
 }
 
 .latestRoundTableLink {
-  composes: smallButton from "../../css/_links.css";
+  composes: primaryButton from "../../css/_links.css";
   margin-top: 40px;
 }
 
