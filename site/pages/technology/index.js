@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+
 import React from 'react';
 import ReactGA from 'react-ga';
 import InlineSVG from 'svg-inline-react';
@@ -41,11 +43,9 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                {/* eslint-disable jsx-a11y/no-static-element-interactions */}
                 <span onClick={trackAnalytics('RoundtablePDFLink')}>
                   Read PDF report
                 </span>
-                {/* eslint-enable jsx-a11y/no-static-element-interactions */}
               </a>
             </div>
           </div>
@@ -57,14 +57,12 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* eslint-disable jsx-a11y/no-static-element-interactions */}
               <img
                 className={styles.techRoundTable}
                 src={techRoundTableImage}
                 alt="tech roundtable"
                 onClick={trackAnalytics('RoundtablePDFLinkImage')}
               />
-              {/* eslint-enable jsx-a11y/no-static-element-interactions */}
             </a>
           </div>
         </section>
