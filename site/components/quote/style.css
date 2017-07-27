@@ -27,6 +27,7 @@ blockquote:after {
 }
 .quotation__author {
   display: flex;
+  display: -webkit-box;
   margin-top: 16px;
 }
 
