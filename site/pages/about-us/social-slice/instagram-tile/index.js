@@ -28,7 +28,11 @@ const Instagram = ({ post, index }: InstagramProps) => {
           <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
           <span className={styles.handleText}>@redbadgerteam</span>
         </div>
-        <img className={styles.image} alt={post.text} src={post.image.url} />
+        <img
+          className={styles.image}
+          alt={post.text.slice(0, post.text.indexOf(' #'))}
+          src={post.image.url}
+        />
         <div className={styles.meta}>
           <div className={styles.text} tabIndex={0}>{text}</div>
           <div>
