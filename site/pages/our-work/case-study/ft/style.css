@@ -123,6 +123,7 @@
   composes: fontS2 from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 0px;
+  margin-top: 40px;
 }
 
 .content__paragraph {
