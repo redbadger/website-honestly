@@ -14,7 +14,7 @@ import meetupSVG from './images/react-meetup.svg';
 
 export type TechPageProps = {
   triedAndTestedBlogPosts: Array<Object>,
-  growingTrendsBlogPosts: Array<Object>
+  growingTrendsBlogPosts: Array<Object>,
 };
 
 const trackAnalytics = title => () =>
