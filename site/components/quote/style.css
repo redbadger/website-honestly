@@ -40,7 +40,7 @@ blockquote:after {
   line-height: normal;
   display: flex;
   flex-direction: column;
-  margin-left: 26px;
+  margin-left: 13px;
   justify-content: center;
 }
 
@@ -56,6 +56,11 @@ blockquote:after {
   composes: fontS2 from "../../css/typography/_fonts.css";
   display: inline;
   text-align: left;
+}
+
+.quotation__imageContainer {
+  margin-right: 13px;
+  padding-right: 13px;
 }
 
 @media mediumScreen {
