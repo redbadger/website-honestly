@@ -17,7 +17,9 @@ const Quote = ({ author, text }: QuoteProps) => {
       </blockquote>
 
       <div className={styles.quotation__author}>
-        <img src={author.image} alt={author.name} />
+        <div className={styles.quotation__imageContainer}>
+          <img src={author.image} alt={author.name} />
+        </div>
         <div className={styles.quotation__author__wrapper}>
           <span className={styles.quotation__author__name}>— {author.name}</span>
           <span className={styles.quotation__author__title}>{author.title}</span>

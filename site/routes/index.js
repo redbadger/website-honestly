@@ -21,6 +21,7 @@ import Technology from '../pages/technology';
 
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
+import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
 
 const componentMap = {
   homePage: HomePage,
@@ -38,6 +39,7 @@ const componentMap = {
   badger: BadgerProfile,
   retailerCaseStudy: RetailerCaseStudy,
   camdenMarketCaseStudy: CamdenMarketCaseStudy,
+  financialTimesCaseStudy: FinancialTimesCaseStudy,
   technology: Technology,
 };
 
