@@ -103,7 +103,7 @@
 .content__mainTitle {
   composes: fontL from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .content__title {
@@ -178,6 +178,10 @@
 }
 
 @media mediumScreen {
+  .content__wrapper {
+    padding: 30px 20px 20px;
+  }
+
   .header__outcome {
     width: 200px;
   }
@@ -199,7 +203,7 @@
   }
 
   .content__mainTitle {
-    margin-bottom: -20px;
+    margin-bottom: 9px;
   }
 
   .content__title {
@@ -270,7 +274,7 @@
     padding: 20px;
     height: 100%;
     background-color: badgerWhite;
-    margin-bottom: -96px;
+    margin-bottom: -73px;
   }
 
   .content__title {
