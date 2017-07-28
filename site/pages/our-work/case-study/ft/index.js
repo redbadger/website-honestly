@@ -191,7 +191,11 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         homepage design and built
         in seven weeks
       </div>
-      <img src={screenImage} alt="Screenshot of Financial Times website" className={styles.screenDemo__image} />
+      <img
+        src={screenImage}
+        alt="Screenshot of Financial Times website"
+        className={styles.screenDemo__image}
+      />
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
