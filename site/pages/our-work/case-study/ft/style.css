@@ -152,6 +152,11 @@
   line-height: 28px;
 }
 
+.listBox__label {
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  font-size: 16px;
+}
+
 .screenDemo {
   background: #DED3C3;
   text-align: center;
@@ -212,11 +217,6 @@
 
   .overview {
     display: flex;
-  }
-
-  .listBox__label {
-    composes: sansSerif from "../../../../css/typography/_fonts.css";
-    font-size: 16px;
   }
 
   .listBox__item {
