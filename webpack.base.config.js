@@ -67,6 +67,7 @@ const baseConfig = {
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: `assets/${robots}`, to: 'robots.txt' },
       { from: 'assets/manifest.json', to: 'manifest.json' },
+      { from: 'assets/sitemap.xml', to: 'sitemap.xml' },
       { from: 'assets/state.json', to: 'state.json' },
       { from: 'assets/google-verification.html', to: 'googlef362fe4b545e4cfb.html' },
       { from: 'assets/txt', to: 'txt/' },
