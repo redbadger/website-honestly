@@ -27,22 +27,28 @@ const Header = () => {
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul role="listbox" className={styles.mediumScreenNav}>
-          <li onClick={trackAnalytics('What we do')}>
+          <li>
             <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
-              What we do
-            </Link>
-          </li>
-          <li onClick={trackAnalytics('About us')}>
-            <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
-              About us
+              <span onClick={trackAnalytics('What we do')}>
+                What we do
+              </span>
             </Link>
           </li>
           <li>
-            <a onClick={trackAnalytics('Blog')} href="/blog/">Blog</a>
+            <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
+              <span onClick={trackAnalytics('About us')}>
+                About us
+              </span>
+            </Link>
           </li>
-          <li onClick={trackAnalytics('Events')}>
+          <li>
+            <a href="/blog/">
+              <span onClick={trackAnalytics('Blog')}>Blog</span>
+            </a>
+          </li>
+          <li>
             <Link to="events" activeCssClass={styles.activeNavLink}>
-              Events
+              <span onClick={trackAnalytics('Events')}>Events</span>
             </Link>
           </li>
         </ul>
