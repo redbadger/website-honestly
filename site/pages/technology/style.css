@@ -82,30 +82,12 @@
 }
 
 .latestRoundTableLink {
-  font-family: 'ProximaNova-Bold', sans-serif;
-  text-decoration: none;
-  color: badgerRedOnWhite;
-  display: inline-block;
-  margin-top: 35px;
+  composes: primaryButton from "../../css/_links.css";
+  margin-top: 40px;
 }
 
-.latestRoundTableLink:hover {
-  border-bottom: 2px solid badgerRedOnWhite;
-}
-
-.arrow {
-  vertical-align: sub;
-  margin-left: 7px;
-}
-
-.arrow svg {
-  width: 20px;
-  height: 20px;
-}
-
-.arrow svg g {
-  fill: badgerRedOnWhite;
-  stroke: badgerRedOnWhite;
+.latestRoundTableLinkContainer {
+  text-align: center;
 }
 
 img.techRoundTable {
@@ -158,6 +140,10 @@ img.techRoundTable {
 }
 
 @media mediumScreen {
+  .latestRoundTableLinkContainer {
+    text-align: left;
+  }
+
   .webinarInner {
     flex-direction: row;
     justify-content: center;

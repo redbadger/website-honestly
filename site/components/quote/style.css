@@ -1,0 +1,77 @@
+@value badgerRedOnWhite from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+blockquote:before {
+  content: "“";
+  vertical-align: top;
+  padding-right: 10px;
+  margin-left: -0.8em;
+}
+
+blockquote:before, blockquote:after {
+  speak: none;
+  font-size: 36px;
+  color: badgerRedOnWhite;
+}
+
+blockquote:after {
+  content: "”";
+  vertical-align: bottom;
+  padding-left: 10px;
+}
+
+.quotation {
+  composes: serif from "../../css/typography/_fonts.css";
+  width: 75%;
+  margin: 22px auto 62px;
+}
+.quotation__author {
+  display: flex;
+  margin-top: 16px;
+}
+
+.quotation__author img {
+  width: 65px;
+  height: 65px;
+}
+
+.quotation__author__wrapper {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+  justify-content: center;
+}
+
+.quotation__author__name {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+}
+
+.quotation__author__title {
+  composes: sansSerif from "../../css/typography/_fonts.css";
+}
+
+.quotation__text {
+  composes: fontS2 from "../../css/typography/_fonts.css";
+  display: inline;
+  text-align: left;
+}
+
+.quotation__imageContainer {
+  margin-right: 13px;
+  padding-right: 13px;
+}
+
+@media mediumScreen {
+  .quotation {
+    width: 85%;
+  }
+}
+
+@media largeScreen {
+  .quotation {
+    width: 45%;
+    margin: 0 auto;
+  }
+}

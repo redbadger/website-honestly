@@ -1,0 +1,33 @@
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.contactBox {
+  background-color: #ededed;
+  height: 100%;
+  padding: 33px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactBox__heading {
+  composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.contactBox__button {
+  composes: smallButton from "../../css/_links.css";
+  cursor: pointer;
+}
+
+
+@media mediumScreen {
+  .contactBox {
+    width: auto;
+    float: left;
+    margin-right: 30px;
+  }
+
+  .contactBox {
+    width: 26.1%;
+  }
+}

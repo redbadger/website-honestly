@@ -37,10 +37,13 @@ describe('site/compiler', () => {
         createStateNavigator(),
       );
 
-      expect(routes.length).to.equal(15);
-      expect(routes[11].filePath).to.equal('about-us/people/index.html');
-      expect(routes[12].filePath).to.equal('about-us/people/category/engineering/index.html');
-      expect(routes[13].filePath).to.equal('about-us/people/category/leadership/index.html');
+      const filePaths = routes.map(r => r.filePath);
+
+      expect(filePaths).to.include.members([
+        'about-us/people/index.html',
+        'about-us/people/category/engineering/index.html',
+        'about-us/people/category/leadership/index.html',
+      ]);
     });
 
     describe('with engineer, leadership and pm', () => {
@@ -76,11 +79,14 @@ describe('site/compiler', () => {
           createStateNavigator(),
         );
 
-        expect(routes.length).to.equal(17);
-        expect(routes[11].filePath).to.equal('about-us/people/index.html');
-        expect(routes[12].filePath).to.equal('about-us/people/category/engineering/index.html');
-        expect(routes[13].filePath).to.equal('about-us/people/category/leadership/index.html');
-        expect(routes[14].filePath).to.equal('about-us/people/category/pm/index.html');
+        const filePaths = routes.map(r => r.filePath);
+
+        expect(filePaths).to.include.members([
+          'about-us/people/index.html',
+          'about-us/people/category/engineering/index.html',
+          'about-us/people/category/leadership/index.html',
+          'about-us/people/category/pm/index.html',
+        ]);
       });
     });
 
@@ -102,9 +108,12 @@ describe('site/compiler', () => {
           createStateNavigator(),
         );
 
-        expect(routes.length).to.equal(14);
-        expect(routes[11].filePath).to.equal('about-us/people/index.html');
-        expect(routes[12].filePath).to.equal('about-us/people/category/ux-design/index.html');
+        const filePaths = routes.map(r => r.filePath);
+
+        expect(filePaths).to.include.members([
+          'about-us/people/index.html',
+          'about-us/people/category/ux-design/index.html',
+        ]);
       });
     });
 
@@ -142,14 +151,15 @@ describe('site/compiler', () => {
           createStateNavigator(),
         );
 
-        expect(routes.length).to.equal(37);
-        expect(routes[11].filePath).to.equal('about-us/people/index.html');
-        expect(routes[12].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
-        expect(routes[13].filePath).to.equal('about-us/people/category/engineering/index.html');
-        expect(routes[14].filePath).to.equal(
+        const filePaths = routes.map(r => r.filePath);
+
+        expect(filePaths).to.include.members([
+          'about-us/people/index.html',
+          'about-us/people/category/everyone/page-2/index.html',
+          'about-us/people/category/engineering/index.html',
           'about-us/people/category/engineering/page-2/index.html',
-        );
-        expect(routes[15].filePath).to.equal('about-us/people/category/leadership/index.html');
+          'about-us/people/category/leadership/index.html',
+        ]);
       });
     });
 
@@ -177,10 +187,13 @@ describe('site/compiler', () => {
           createStateNavigator(),
         );
 
-        expect(routes.length).to.equal(34);
-        expect(routes[11].filePath).to.equal('about-us/people/index.html');
-        expect(routes[12].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
-        expect(routes[13].filePath).to.equal('about-us/people/category/engineering/index.html');
+        const filePaths = routes.map(r => r.filePath);
+
+        expect(filePaths).to.include.members([
+          'about-us/people/index.html',
+          'about-us/people/category/everyone/page-2/index.html',
+          'about-us/people/category/engineering/index.html',
+        ]);
       });
     });
   });
@@ -209,9 +222,12 @@ describe('site/compiler', () => {
         createStateNavigator(),
       );
 
-      expect(routes.length).to.equal(32);
-      expect(routes[11].filePath).to.equal('about-us/people/index.html');
-      expect(routes[12].filePath).to.equal('about-us/people/category/engineering/index.html');
+      const filePaths = routes.map(r => r.filePath);
+
+      expect(filePaths).to.include.members([
+        'about-us/people/index.html',
+        'about-us/people/category/engineering/index.html',
+      ]);
     });
   });
 
@@ -242,20 +258,18 @@ describe('site/compiler', () => {
         createStateNavigator(),
       );
 
-      expect(routes.length).to.equal(61);
-      expect(routes[11].filePath).to.equal('about-us/people/index.html');
-      expect(routes[12].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
-      expect(routes[13].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
-      expect(routes[14].filePath).to.equal('about-us/people/category/engineering/index.html');
-      expect(routes[15].filePath).to.equal(
+      const filePaths = routes.map(r => r.filePath);
+
+      expect(filePaths).to.include.members([
+        'about-us/people/index.html',
+        'about-us/people/category/everyone/page-2/index.html',
+        'about-us/people/category/everyone/page-3/index.html',
+        'about-us/people/category/engineering/index.html',
         'about-us/people/category/engineering/page-2/index.html',
-      );
-      expect(routes[16].filePath).to.equal(
         'about-us/people/category/engineering/page-3/index.html',
-      );
-      expect(routes[17].filePath).to.equal('about-us/people/category/leadership/index.html');
-      expect(routes[18].filePath).to.equal('about-us/people/category/leadership/page-2/index.html');
-      expect(routes[19].filePath).to.equal('about-us/people/category/leadership/page-3/index.html');
+        'about-us/people/category/leadership/index.html',
+        'about-us/people/category/leadership/page-2/index.html',
+      ]);
     });
   });
 
@@ -295,19 +309,18 @@ describe('site/compiler', () => {
         createStateNavigator(),
       );
 
-      expect(routes.length).to.equal(60);
-      expect(routes[11].filePath).to.equal('about-us/people/index.html');
-      expect(routes[12].filePath).to.equal('about-us/people/category/everyone/page-2/index.html');
-      expect(routes[13].filePath).to.equal('about-us/people/category/everyone/page-3/index.html');
-      expect(routes[14].filePath).to.equal('about-us/people/category/engineering/index.html');
-      expect(routes[15].filePath).to.equal(
+      const filePaths = routes.map(r => r.filePath);
+
+      expect(filePaths).to.include.members([
+        'about-us/people/index.html',
+        'about-us/people/category/everyone/page-2/index.html',
+        'about-us/people/category/everyone/page-3/index.html',
+        'about-us/people/category/engineering/index.html',
         'about-us/people/category/engineering/page-2/index.html',
-      );
-      expect(routes[16].filePath).to.equal(
         'about-us/people/category/engineering/page-3/index.html',
-      );
-      expect(routes[17].filePath).to.equal('about-us/people/category/leadership/index.html');
-      expect(routes[18].filePath).to.equal('about-us/people/category/leadership/page-2/index.html');
+        'about-us/people/category/leadership/index.html',
+        'about-us/people/category/leadership/page-2/index.html',
+      ]);
     });
   });
 
@@ -331,8 +344,9 @@ describe('site/compiler', () => {
         createStateNavigator(),
       );
 
-      expect(routes.length).to.equal(14);
-      expect(routes[13].filePath).to.equal('about-us/people/alex/index.html');
+      const filePaths = routes.map(r => r.filePath);
+
+      expect(filePaths).to.include.members(['about-us/people/alex/index.html']);
     });
   });
 
@@ -365,9 +379,12 @@ describe('site/compiler', () => {
         createStateNavigator(),
       );
 
-      expect(routes.length).to.equal(15);
-      expect(routes[13].filePath).to.equal('about-us/people/alex/index.html');
-      expect(routes[14].filePath).to.equal('about-us/people/sari/index.html');
+      const filePaths = routes.map(r => r.filePath);
+
+      expect(filePaths).to.include.members([
+        'about-us/people/alex/index.html',
+        'about-us/people/sari/index.html',
+      ]);
     });
   });
 });
