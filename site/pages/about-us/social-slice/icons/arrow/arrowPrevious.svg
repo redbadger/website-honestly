@@ -3,9 +3,9 @@
   <rect fill="none" height="25" width="25" y="-1" x="-1"/>
  </g>
  <g>
-  <g stroke="null" transform="rotate(-180 12,11.5) " fill-rule="evenodd" fill="none" id="Page-1-arrow-prev">
-   <g stroke="#F8F8F8" fill="#F8F8F8" id="Social_S_Slide1-prev">
-    <g stroke="null" id="ARROW_GRAY-prev">
+  <g stroke="null" transform="rotate(-180 12,11.5) " fill-rule="evenodd" fill="none">
+   <g stroke="#F8F8F8" fill="#F8F8F8">
+    <g stroke="null">
      <polygon stroke="null" points="12,1.04547119140625 22.909088134765625,11.5 12,21.95452880859375 10.08612060546875,20.12042236328125 17.677825927734375,12.78387451171875 1.090911865234375,12.78387451171875 1.090911865234375,10.21612548828125 17.677825927734375,10.21612548828125 10.08612060546875,2.87957763671875 " id="arrow"/>
     </g>
    </g>
