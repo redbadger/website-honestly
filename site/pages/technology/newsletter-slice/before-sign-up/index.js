@@ -11,6 +11,9 @@ class BeforeSignUp extends Component {
     this.state = {
       email_address: '', // eslint-disable-line camelcase
       submitting: false,
+      interests: {
+        '17dfd6ce16': true,
+      },
     };
   }
 
@@ -21,9 +24,9 @@ class BeforeSignUp extends Component {
   }
 
   handleInputChange = event => {
-    const newState = {};
-    newState[event.target.name] = event.target.value;
-    this.setState(newState);
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
   };
 
   handleSubmit = () => {

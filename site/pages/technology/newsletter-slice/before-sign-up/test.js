@@ -9,6 +9,9 @@ describe('BeforeSignUp', () => {
     expect(wrapper.state()).to.deep.equal({
       email_address: '',
       submitting: false,
+      interests: {
+        '17dfd6ce16': true,
+      },
     });
   });
 
@@ -25,6 +28,9 @@ describe('BeforeSignUp', () => {
       email_address: '',
       submitting: false,
       exampleName: 'exampleValue',
+      interests: {
+        '17dfd6ce16': true,
+      },
     });
   });
 
@@ -34,6 +40,9 @@ describe('BeforeSignUp', () => {
     expect(wrapper.state()).to.deep.equal({
       email_address: '',
       submitting: false,
+      interests: {
+        '17dfd6ce16': true,
+      },
     });
   });
 
@@ -56,6 +65,9 @@ describe('BeforeSignUp', () => {
     expect(wrapper.state()).to.deep.equal({
       email_address: '',
       submitting: true,
+      interests: {
+        '17dfd6ce16': true,
+      },
     });
   });
 });
