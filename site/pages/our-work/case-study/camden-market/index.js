@@ -76,7 +76,7 @@ const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) =>
           <span className={styles.content__redTitle}>
             {'Let’s make things better.'}
           </span>
-          Digitally engaging Londoners to entice them back to the city’s fifth biggest attraction
+          Digitally engaging Londoners to entice them back to the city’s fourth biggest attraction
         </h2>
         <p className={styles.content__paragraph}>
           As the fourth most-visited tourist attraction in London, with around 500,000 people
