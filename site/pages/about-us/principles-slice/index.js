@@ -37,7 +37,7 @@ export default function Principles() {
           />
           <Principle
             number="04"
-            title="Honest"
+            title="Honest."
             description="We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner."
           />
           <Principle
