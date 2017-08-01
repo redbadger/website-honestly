@@ -3,6 +3,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import BeforeSignUp from '.';
 
+import groups from '../../../../../services/mailchimp/config';
+
 describe('BeforeSignUp', () => {
   it('sets the initial state correctly', () => {
     const wrapper = shallow(<BeforeSignUp />);
@@ -10,7 +12,7 @@ describe('BeforeSignUp', () => {
       email_address: '',
       submitting: false,
       interests: {
-        '17dfd6ce16': true,
+        [groups.techPageSignup]: true,
       },
     });
   });
@@ -29,7 +31,7 @@ describe('BeforeSignUp', () => {
       submitting: false,
       exampleName: 'exampleValue',
       interests: {
-        '17dfd6ce16': true,
+        [groups.techPageSignup]: true,
       },
     });
   });
@@ -41,7 +43,7 @@ describe('BeforeSignUp', () => {
       email_address: '',
       submitting: false,
       interests: {
-        '17dfd6ce16': true,
+        [groups.techPageSignup]: true,
       },
     });
   });
@@ -66,7 +68,7 @@ describe('BeforeSignUp', () => {
       email_address: '',
       submitting: true,
       interests: {
-        '17dfd6ce16': true,
+        [groups.techPageSignup]: true,
       },
     });
   });

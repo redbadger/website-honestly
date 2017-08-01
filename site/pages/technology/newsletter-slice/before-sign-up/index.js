@@ -3,6 +3,8 @@ import classnames from 'classnames/bind';
 import styles from '../style.css';
 import ClientOnly from '../../../../components/clientOnly';
 
+import groups from '../../../../../services/mailchimp/config';
+
 const cx = classnames.bind(styles);
 
 class BeforeSignUp extends Component {
@@ -12,7 +14,7 @@ class BeforeSignUp extends Component {
       email_address: '', // eslint-disable-line camelcase
       submitting: false,
       interests: {
-        '17dfd6ce16': true,
+        [groups.techPageSignup]: true,
       },
     };
   }
