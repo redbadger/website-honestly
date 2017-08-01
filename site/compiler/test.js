@@ -31,6 +31,7 @@ describe('site/compiler', () => {
         'about-us/events/index.html',
         'our-work/case-study/retailer/index.html',
         'our-work/case-study/camden-market/index.html',
+        'our-work/case-study/financial-times/index.html',
         'technology/index.html',
         '404.html',
         '50x/index.html',

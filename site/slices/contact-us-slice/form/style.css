@@ -6,6 +6,7 @@
   text-align: center;
   composes: dividerWhite from "../../../css/_divider.css";
   background-color: badgerWhite;
+  outline: none;
 }
 
 .formContainer--yellow {

@@ -100,6 +100,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
   },
   {
+    title: 'Financial Times case study',
+    key: 'financialTimesCaseStudy',
+    route: 'our-work/case-study/financial-times',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
     title: 'Technology',
     key: 'technology',
     route: 'technology',
