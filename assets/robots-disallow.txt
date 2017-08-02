@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /
+
+Sitemap: https://red-badger.com/sitemap.xml

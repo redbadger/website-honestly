@@ -1,1 +1,3 @@
 User-agent: *
+
+Sitemap: https://red-badger.com/sitemap.xml
