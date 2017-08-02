@@ -4,6 +4,7 @@ import { mailchimpApi, formatFormInput, formatSignUpResponse } from '../utilitie
 
 export default function signUp(event, _, cb) {
   console.log(event);
+  console.log('a unique test message here');
   const mailingListId = process.env.MAILING_LIST_ID;
   const body = formatFormInput(event);
   return mailchimpApi(
