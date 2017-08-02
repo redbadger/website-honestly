@@ -14,25 +14,25 @@ const MobileImage = ({ index, onChangeIndex }) => {
     <div className={styles.mobileImage}>
       <SwipeableViews index={index} onChangeIndex={onChangeIndex}>
         <div className={styles.mobileImageWrapper}>
-          <img src={Image2010} alt="the year 2010" className={styles.image} />
+          <img src={Image2010} alt="the year 2010 toiwetoiejroweij" className={styles.image} />
         </div>
         <div className={styles.mobileImageWrapper}>
-          <img src={Image2011} alt="the year 2011" className={styles.image} />
+          <img src={Image2011} alt="the year 2011 toiwetoiejroweij" className={styles.image} />
         </div>
         <div className={styles.mobileImageWrapper}>
-          <img src={Image2012} alt="the year 2012" className={styles.image} />
+          <img src={Image2012} alt="the year 2012 toiwetoiejroweij" className={styles.image} />
         </div>
         <div className={styles.mobileImageWrapper}>
-          <img src={Image2013} alt="the year 2013" className={styles.image} />
+          <img src={Image2013} alt="the year 2013 toiwetoiejroweij" className={styles.image} />
         </div>
         <div className={styles.mobileImageWrapper}>
-          <img src={Image2014} alt="the year 2014" className={styles.image} />
+          <img src={Image2014} alt="the year 2014 toiwetoiejroweij" className={styles.image} />
         </div>
         <div className={styles.mobileImageWrapper}>
-          <img src={Image2015} alt="the year 2015" className={styles.image} />
+          <img src={Image2015} alt="the year 2015 toiwetoiejroweij" className={styles.image} />
         </div>
         <div className={styles.mobileImageWrapper}>
-          <img src={Image2016} alt="the year 2016" className={styles.image} />
+          <img src={Image2016} alt="the year 2016 toiwetoiejroweij" className={styles.image} />
         </div>
       </SwipeableViews>
     </div>
