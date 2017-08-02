@@ -1,5 +1,6 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
+import ReactGA from 'react-ga';
 
 import Link from '../link';
 import SmallScreenNav from './small-screen-nav';
@@ -7,6 +8,13 @@ import SmallScreenNav from './small-screen-nav';
 import styles from './style.css';
 import logo from './logo.svg';
 
+const trackAnalytics = title => () =>
+  ReactGA.event({
+    category: 'HeaderNavigation',
+    action: title,
+    label: `From: ${window.location.pathname}`,
+  });
+  
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
@@ -30,6 +38,11 @@ const Header = () => {
           <li>
             <Link to="events" activeCssClass={styles.activeNavLink}>
               Events
+            </Link>
+          </li>
+          <li>
+            <Link to="joinUs" activeCssClass={styles.activeNavLink} onClick={trackAnalytics('Jobs')}>
+              Jobs
             </Link>
           </li>
         </ul>
