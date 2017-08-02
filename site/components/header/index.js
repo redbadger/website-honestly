@@ -14,7 +14,7 @@ const trackAnalytics = title => () =>
     action: title,
     label: `From: ${window.location.pathname}`,
   });
-  
+
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
@@ -41,7 +41,11 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="joinUs" activeCssClass={styles.activeNavLink} onClick={trackAnalytics('Jobs')}>
+            <Link
+              to="joinUs"
+              activeCssClass={styles.activeNavLink}
+              onClick={trackAnalytics('Jobs')}
+            >
               Jobs
             </Link>
           </li>
