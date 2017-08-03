@@ -48,7 +48,16 @@ const Header = () => {
           </li>
           <li>
             <Link to="events" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('Events')}>Events</span>
+              <span onClick={trackAnalytics('Events')}>
+                Events
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link to="joinUs" activeCssClass={styles.activeNavLink}>
+              <span onClick={trackAnalytics('Jobs')}>
+                Jobs
+              </span>
             </Link>
           </li>
         </ul>

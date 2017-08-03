@@ -23,7 +23,7 @@ export default class SmallScreenNav extends React.Component {
   }
 
   state: {
-    navOpen: boolean
+    navOpen: boolean,
   };
   smallScreenNav: HTMLInputElement;
 
