@@ -8,7 +8,7 @@ export default function signUp(event, _, cb) {
   return mailchimpApi(
     `https://us6.api.mailchimp.com/3.0/lists/${mailingListId}/members/`,
     'POST',
-    JSON.stringify(body),
+    JSON.stringify(body)
   )
     .then(json => {
       console.log('sign up service post ok:', json);
