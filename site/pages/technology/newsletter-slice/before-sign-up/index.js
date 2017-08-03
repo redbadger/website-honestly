@@ -3,6 +3,8 @@ import classnames from 'classnames/bind';
 import styles from '../style.css';
 import ClientOnly from '../../../../components/clientOnly';
 
+import groups from '../../../../../services/mailchimp/config';
+
 const cx = classnames.bind(styles);
 
 class BeforeSignUp extends Component {
@@ -11,6 +13,9 @@ class BeforeSignUp extends Component {
     this.state = {
       email_address: '', // eslint-disable-line camelcase
       submitting: false,
+      interests: {
+        [groups.techPageSignup]: true,
+      },
     };
   }
 
@@ -21,9 +26,9 @@ class BeforeSignUp extends Component {
   }
 
   handleInputChange = event => {
-    const newState = {};
-    newState[event.target.name] = event.target.value;
-    this.setState(newState);
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
   };
 
   handleSubmit = () => {
