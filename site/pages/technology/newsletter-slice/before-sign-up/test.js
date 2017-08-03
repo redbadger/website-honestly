@@ -3,12 +3,17 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import BeforeSignUp from '.';
 
+import groups from '../../../../../services/mailchimp/config';
+
 describe('BeforeSignUp', () => {
   it('sets the initial state correctly', () => {
     const wrapper = shallow(<BeforeSignUp />);
     expect(wrapper.state()).to.deep.equal({
       email_address: '',
       submitting: false,
+      interests: {
+        [groups.techPageSignup]: true,
+      },
     });
   });
 
@@ -25,6 +30,9 @@ describe('BeforeSignUp', () => {
       email_address: '',
       submitting: false,
       exampleName: 'exampleValue',
+      interests: {
+        [groups.techPageSignup]: true,
+      },
     });
   });
 
@@ -34,6 +42,9 @@ describe('BeforeSignUp', () => {
     expect(wrapper.state()).to.deep.equal({
       email_address: '',
       submitting: false,
+      interests: {
+        [groups.techPageSignup]: true,
+      },
     });
   });
 
@@ -56,6 +67,9 @@ describe('BeforeSignUp', () => {
     expect(wrapper.state()).to.deep.equal({
       email_address: '',
       submitting: true,
+      interests: {
+        [groups.techPageSignup]: true,
+      },
     });
   });
 });
