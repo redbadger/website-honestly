@@ -98,7 +98,7 @@ describe('formatFormInput', () => {
         interests: {},
       },
     };
-    const result = formatFormInput(event, false);
+    const result = formatFormInput(event, false, 'pending');
     expect(result).to.deep.equal({
       email_address: 'test@gmail.com',
       status: 'pending',
@@ -122,7 +122,7 @@ describe('formatFormInput', () => {
         interests: {},
       },
     };
-    const result = formatFormInput(event, true);
+    const result = formatFormInput(event, true, 'pending');
     expect(result).to.deep.equal({
       email_address: 'test@gmail.com',
       status: 'pending',
