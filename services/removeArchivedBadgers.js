@@ -17,8 +17,7 @@ export default function removeArchivedBadgers() {
   Promise.all([
     getCurrentBadgers(),
     getLiveBadgers(bucketName),
-  ])
-  .then(([currentBadgers, liveBadgers]) => {
+  ]).then(([currentBadgers, liveBadgers]) => {
     console.log(currentBadgers, liveBadgers);
   });
 }
