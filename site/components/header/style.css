@@ -14,6 +14,11 @@
   justify-content: flex-end;
 }
 
+.logo {
+  width: 140px;
+  height: 35px;
+}
+
 .logo svg {
   height: 35px;
 }
@@ -23,13 +28,14 @@
   composes: fontXS from "../../css/typography/_fonts.css";
   list-style: none;
   align-self: center;
+  margin-top: 8px;
   justify-content: flex-end;
   display: flex;
 }
 
 .mediumScreenNav li {
   display: inline-block;
-  margin-left: 43px;
+  margin-left: 41px;
 }
 
 .mediumScreenNav a {
@@ -170,6 +176,11 @@
     display: flex;
   }
 
+  .logo {
+    width: 178px;
+    height: 44px;
+  }
+  
   .logo svg {
     height: 44px;
   }

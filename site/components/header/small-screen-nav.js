@@ -23,7 +23,7 @@ export default class SmallScreenNav extends React.Component {
   }
 
   state: {
-    navOpen: boolean
+    navOpen: boolean,
   };
   smallScreenNav: HTMLInputElement;
 
@@ -126,7 +126,7 @@ export default class SmallScreenNav extends React.Component {
                     navigationData={{ contactUs: true }}
                     navigating={this.closeMenu}
                   >
-                    <span onClick={trackAnalytics('Contact us')}>Contact us</span>
+                    <span onClick={trackAnalytics('Contact us - HomePage')}>Contact us</span>
                   </Link>
                 </li>
               </ul>

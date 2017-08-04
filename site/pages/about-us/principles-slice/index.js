@@ -27,8 +27,8 @@ export default function Principles() {
           />
           <Principle
             number="02"
-            title="Trusted to get on with it."
-            description="We’re self-starters working within autonomous teams – enabled to make the right calls at the right times."
+            title="Find a way."
+            description="As individuals we need to be proactive and to earn and build the trust of our clients."
           />
           <Principle
             number="03"
@@ -37,8 +37,8 @@ export default function Principles() {
           />
           <Principle
             number="04"
-            title="No bull."
-            description="We’re relied upon to tell things as they are. We do so  in an approachable and down-to-earth manner."
+            title="Honest."
+            description="We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner."
           />
           <Principle
             number="05"
