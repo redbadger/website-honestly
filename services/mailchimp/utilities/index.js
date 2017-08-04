@@ -75,9 +75,8 @@ export function formatFormInput(event, isEmailEncrypted, status) {
   if (isEmailEncrypted) {
     emailAddress = decryptText(event.body.email_address);
   }
-  return {
+  const formattedInput = {
     email_address: emailAddress,
-    status,
     interests: event.body.interests || {},
     merge_fields: {
       FIRSTNAME: event.body.name || '',
@@ -86,4 +85,8 @@ export function formatFormInput(event, isEmailEncrypted, status) {
       ROLE: event.body.role || '',
     },
   };
+
+  if (status) formattedInput.status = status;
+
+  return formattedInput;
 }
