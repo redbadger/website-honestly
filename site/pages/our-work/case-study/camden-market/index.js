@@ -32,7 +32,11 @@ const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) =>
       <Shapes />
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
-          <img src={headerImage} alt="Camden Market website on a mobile device" className={styles.header__image} />
+          <img
+            src={headerImage}
+            alt="Camden Market website on a mobile device"
+            className={styles.header__image}
+          />
         </div>
       </div>
     </div>
