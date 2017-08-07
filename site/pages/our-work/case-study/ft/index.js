@@ -32,7 +32,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         <div className={styles.header__imageContainer}>
           <img
             src={headerImage}
-            alt="Agile stand up in progress"
+            alt="An agile stand up in progress"
             className={styles.header__image}
           />
         </div>
