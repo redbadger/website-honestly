@@ -31,68 +31,6 @@
   width: 100%;
 }
 
-/*.header__outcome {
-  width: 120px;
-  position: absolute;
-}
-
-.header__outcome--right {
-  text-align: right;
-  top: 13px;
-  right: 20px;
-}
-
-.header__outcome--right .header__outcome__percentage:after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  left: -2px;
-  bottom: 24px;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: badgerBlack;
-}
-
-.header__outcome--left {
-  bottom: 13px;
-  left: 20px;
-}
-
-.header__outcome--left .header__outcome__percentage:after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  right: -2px;
-  bottom: 24px;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: badgerBlack;
-}
-
-.header__outcome__percentage {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
-  display: block;
-  border-bottom: 1px dashed badgerBlack;
-  padding-bottom: 5px;
-  margin-bottom: 3px;
-}
-
-.header__outcome__description {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  font-size: 16px;
-}
-*/
-
-/*.techGraphImage {
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-}*/
-
 .content {
   padding-bottom: 40px;
 }
@@ -186,18 +124,6 @@
     padding: 30px 20px 20px;
   }
 
-  /*.header__outcome {
-    width: 200px;
-  }
-
-  .header__outcome--left {
-    bottom: 78px;
-  }
-
-  .header__outcome--right {
-    top: 78px;
-  }*/
-
   .content__paragraph {
     padding-left: 114px;
   }
@@ -223,21 +149,12 @@
     padding-bottom: 10px;
   }
 
-  /*.techGraphImage {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-  }*/
-
   .overview {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
   }
 
-  /*.screenDemo {
-    padding-bottom: 0px;
-  }*/
 }
 
 @media largeScreen {
@@ -284,16 +201,4 @@
     padding-bottom: 56px;
   }
 
-  /*.techGraphImage {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .screenDemo__description {
-    width: 214px;
-    display: block;
-    left: calc(50% + 229.5px);
-    bottom: 30px;
-    padding: 0px;
-  }*/
 }

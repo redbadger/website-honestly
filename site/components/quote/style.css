@@ -53,11 +53,6 @@ blockquote:after {
   text-align: left;
 }
 
-/*.quotation__imageContainer {
-  margin-right: 13px;
-  padding-right: 13px;
-}*/
-
 @media mediumScreen {
   .quotation {
     width: 85%;
