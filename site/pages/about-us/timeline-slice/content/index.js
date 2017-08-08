@@ -9,7 +9,7 @@ const Content = ({ year, title, text, fact, image, mobileImage, flip }) => {
       <div className={styles.largeScreen}>
         <div className={topRowClassName}>
           <div className={styles.imageWrapper}>
-            <img src={image} alt={title} className={styles.image} />
+            <img src={image} alt={`year ${year}`} className={styles.image} />
           </div>
           <div className={styles.copy}>
             <div className={styles.year}>{year}</div>
