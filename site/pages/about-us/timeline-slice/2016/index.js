@@ -10,9 +10,7 @@ const Six = () => {
   const fact =
     'To celebrate and reward staff for their hard work, Red Badger went to a castle near Leipzig in Germany. Before celebrations kicked off we held a workshop for all our staff to ensure they had a voice in helping us update our brand proposition and plan 2017.';
 
-  return (
-    <Content year={year} title={title} text={text} fact={fact} image={image} />
-  );
+  return <Content year={year} title={title} text={text} fact={fact} image={image} />;
 };
 
 export default Six;

@@ -10,16 +10,7 @@ const Three = () => {
   const fact =
     'With the team growing, we diversified from pub nights and found our voice at karaoke nights, started monthly dinner dates and formed a sporty badgers group.';
 
-  return (
-    <Content
-      year={year}
-      title={title}
-      text={text}
-      fact={fact}
-      image={image}
-      flip
-    />
-  );
+  return <Content year={year} title={title} text={text} fact={fact} image={image} flip />;
 };
 
 export default Three;

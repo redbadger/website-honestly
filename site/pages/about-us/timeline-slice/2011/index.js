@@ -10,16 +10,7 @@ const One = () => {
   const fact =
     'This was the year that Sally, our Red Badger logo was born as a result of our first rebranding.';
 
-  return (
-    <Content
-      year={year}
-      title={title}
-      text={text}
-      fact={fact}
-      image={image}
-      flip
-    />
-  );
+  return <Content year={year} title={title} text={text} fact={fact} image={image} flip />;
 };
 
 export default One;
