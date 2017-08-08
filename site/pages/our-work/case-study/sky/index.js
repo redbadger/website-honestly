@@ -13,18 +13,18 @@ import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
-type CaseStudyFinancialTimesProps = {
+type CaseStudySkyCmsProps = {
   contactUsURL: string,
 };
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'Keeping up with the Financial Times',
+  description: 'Helping Sky customers help themselves, with a refreshed customer service website',
   metaImage: headerImage,
-  url: 'https://red-badger.com/our-work/case-study/financial-times',
+  url: 'https://red-badger.com/our-work/case-study/sky-cms',
 };
 
-const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps) =>
+const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -71,7 +71,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>
-            {"Let's make things better."}
+            Let’s make things better.
           </span>
           Delivering exceptional intuitive customer service
         </h2>
@@ -103,7 +103,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           Sky was already a leader in the use of agile methodologies and lean ways of working, and
           were determined to work with a partner that would help them to advance these skills. To
           complement their established structures, augmented by Sky’s UX/Design resources, we
-          brought in an n integrated team of UX, design, and technology to deliver rapidly. Bleeding
+          brought in an integrated team of UX, design, and technology to deliver rapidly. Bleeding
           edge software was utilised to revamp the site and give it the modernisation it needed.
         </p>
         <p className={styles.content__paragraph}>
@@ -117,7 +117,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         <p className={styles.content__paragraph}>
           <img
             src={cmsIllustrationImage}
-            alt="shopping cart"
+            alt="cms illustration"
             className={styles.cmsIllustration__image}
           />
         </p>
@@ -137,8 +137,8 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         </p>
       </div>
     </div>
-    <WhatToReadNext currentPage="financialTimes" />
+    <WhatToReadNext currentPage="skyCms" />
     <ContactUs postURL={contactUsURL} />
   </div>;
 
-export default FinancialTimesCaseStudy;
+export default SkyCmsCaseStudy;
