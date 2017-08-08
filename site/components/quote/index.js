@@ -6,12 +6,12 @@ import styles from './style.css';
 type Author = {
   name: string,
   title: string,
-  image: string
+  image: string,
 };
 
 type QuoteProps = {
   author: Author,
-  text: string
+  text: string,
 };
 
 const Quote = ({ author, text }: QuoteProps) => {
