@@ -24,7 +24,6 @@ const Content = ({ year, title, text, fact, image, mobileImage, flip }) => {
       </div>
 
       <div className={styles.smallScreen}>
-        <img src={mobileImage} alt={title} className={styles.image} />
         <div className={styles.copy}>
           <div className={styles.year}>{year}</div>
           <div className={styles.title}>{title}</div>
