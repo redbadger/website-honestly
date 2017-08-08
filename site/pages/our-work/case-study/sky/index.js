@@ -4,7 +4,7 @@ import styles from './style.css';
 
 import headerImage from './images/header.jpg';
 import cmsIllustrationImage from './images/cms-illustration.jpg';
-import authorQuoteImage from './images/david-crawford.jpg';
+import authorQuoteImage from './images/quote-author.jpg';
 
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
