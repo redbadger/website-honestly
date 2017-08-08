@@ -11,7 +11,7 @@ const Four = () => {
     'As a consequence of our work with Tesco we started to run small monthly gatherings to discuss working with, and innovations around, React: this has now grown into Europe’s largest React community.';
 
   return (
-    <Content year={year} title={title} text={text} fact={fact} image={image} mobileImage={image} />
+    <Content year={year} title={title} text={text} fact={fact} image={image} />
   );
 };
 

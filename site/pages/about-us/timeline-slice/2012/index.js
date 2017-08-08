@@ -10,7 +10,7 @@ const Two = () => {
   const fact = 'During the course of our work with JLT, Stu wrote over 1.2 million lines of code.';
 
   return (
-    <Content year={year} title={title} text={text} fact={fact} image={image} mobileImage={image} />
+    <Content year={year} title={title} text={text} fact={fact} image={image} />
   );
 };
 

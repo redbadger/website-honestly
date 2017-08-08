@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.css';
 
-const Content = ({ year, title, text, fact, image, mobileImage, flip }) => {
+const Content = ({ year, title, text, fact, image, flip }) => {
   const topRowClassName = flip ? styles.topRowFlipped : styles.topRow;
 
   return (

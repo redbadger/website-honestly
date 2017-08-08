@@ -11,7 +11,7 @@ const Zero = () => {
     'At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight.';
 
   return (
-    <Content year={year} title={title} text={text} fact={fact} image={image} mobileImage={image} />
+    <Content year={year} title={title} text={text} fact={fact} image={image} />
   );
 };
 
