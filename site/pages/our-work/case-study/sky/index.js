@@ -19,7 +19,7 @@ type CaseStudySkyCmsProps = {
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'Helping Sky customers help themselves, with a refreshed customer service website',
+  description: 'Bespoke and made from scratch: a new CMS just for Sky',
   metaImage: headerImage,
   url: 'https://red-badger.com/our-work/case-study/sky-cms',
 };
@@ -37,7 +37,7 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
         <h1 className={styles.content__mainTitle}>
-          Helping Sky customers help themselves, with a refreshed customer service website
+          Bespoke and made from scratch: a new CMS just for Sky
         </h1>
       </div>
       <div className={styles.overview}>
@@ -48,20 +48,18 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
             image: authorQuoteImage,
           }}
           text={
-            'Red Badger are recognised leaders in Agile/Lean methodologies so they could immediately start working and deliver results alongside our internal team'
+            'The new site and CMS have given us the flexibility we needed to effectively update and manage the Help site. It allows us to take an agile approach to the way we work and respond to consumer requirements faster and more efficiently.'
           }
         />
         <ListBox
           title="Results"
           items={[
             {
-              label: 'Tripled the number of issues resolved through online self help journey',
+              label:
+                'New intuitive CMS creating more efficient system, freeing up time to focus on the content ',
             },
             {
-              label: 'Doubled the customers serviced by the advanced diagnostics capability',
-            },
-            {
-              label: 'Serviced half a million customers to date',
+              label: 'Tripled the number of issues resolved through online self-help journey',
             },
           ]}
           itemClassName={styles.listBox__item}
@@ -73,30 +71,35 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
           <span className={styles.content__redTitle}>
             Let’s make things better.
           </span>
-          Delivering exceptional intuitive customer service
+          Enabling Sky to manage their content with an amazing customer experience
         </h2>
         <p className={styles.content__paragraph}>
-          Sky are continuously focused on providing customers the services they want and need. It’s
-          part of a simple, two-pronged attack: Sky seeks to improve what it has, and provide what
-          it doesn’t have already. As part of this, Sky found that there was a higher demand for
-          online self-help services as customers’ own digital skills grow.
+          A CMS is responsible for three things: storing content, editing content, and publishing
+          content. These are three distinct functions with their own challenges and should be built
+          as such. If you get this part right and built in a reusable way, specifics can be built on
+          top of them.
         </p>
         <p className={styles.content__paragraph}>
-          As such, Sky was determined to enhance the use of their online self-help tools for in-home
-          diagnostics, allowing issues to be resolved quicker. Taking this, Sky set out to enable
-          customers to troubleshoot problems for themselves, particularly during times of widespread
-          issues. This, in order to help prevent the helpline being overwhelmed with calls for the
-          same problem.
+          As part of its commitment to customer service excellence, Sky wanted to optimize their
+          online self-help service and make it easier for their customers to find solutions to their
+          problems. In a modern world where customer behavior is driving constantly changing
+          requirements and an expectation of brilliant customer experience, it is vital that both a
+          CMS and the website it drives are adaptable to these demands.
+        </p>
+        <p className={styles.content__paragraph}>
+          Taking off the shelf products such as Drupal and trying to bend them to your requirements
+          is simply not good enough anymore. They are far too rigid to cope with ever changing
+          demands and inhibit customer experience.
         </p>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>Do the right thing. Do the thing right.</span>
-          Empowering customers to help themselves
+          Bespoke customisation tools for a built-from-scratch CMS
         </h2>
         <p className={styles.content__paragraph}>
-          With a clear message of achieving customer empowerment, our onsite team at Red Badger got
-          to work. The team focused on improving the online help and support experience by enabling
-          customers to find content, resolve issues, navigate available services, and set up their
-          Sky equipment correctly.
+          Red Badger worked with Sky to conduct an objective build vs buy exercise. Analysis of the
+          available tools revealed that the customisation required to make an off-the-shelf tool fit
+          for purpose meant that greater efficiencies could be achieved by implementing a bespoke
+          solution tailored to their business requirements, leveraging an open-source foundation.
         </p>
         <ContactBox />
         <p className={styles.content__paragraph}>
@@ -107,12 +110,42 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
           edge software was utilised to revamp the site and give it the modernisation it needed.
         </p>
         <p className={styles.content__paragraph}>
-          Through the use of clustered articles, customers are now able to find what they need when
-          they need it. Additionally, the help section was bolstered to handle spikes in activity;
-          saving customers from having to reach for the phone. So, when the football match starts
-          glitching, the Sky team can make sure that the solution is up on the site, or if one is
-          still being found, can put a pop up on the page to reassure customers are that they are
-          working to find the solution needed.
+          The decision was made to build a new CMS from scratch with three main components to deal
+          with the individual concerns; storing, editing and publishing content. The result is a
+          modern CMS that fits Sky’s requirements exactly - one that would be the foundation of a
+          whole new Help site that could support both customers and the internal content team far
+          more effectively. As demand changes, new features can also be rolled out faster and
+          cheaper due to reduced interdependence and complexity.
+        </p>
+        <h3 className={styles.content__secondaryTitle}>
+          Innovative features of the CMS include:
+        </h3>
+        <p className={styles.content__paragraph}>
+          <ul className={styles.content__ordered__list}>
+            <li className={styles.content__ordered__list__element}>
+              An editor to build content out of blocks - pluggable components for different types of
+              content (text, image, video, tabs)
+            </li>
+            <li className={styles.content__ordered__list__element}>
+              A very rich editing experience tailored to Sky’s needs
+            </li>
+            <li className={styles.content__ordered__list__element}>
+              Full audit mechanism which makes it easy to revert to previous versions
+            </li>
+            <li className={styles.content__ordered__list__element}>
+              Continuous Deployment pipeline to publish new features into live in seconds
+            </li>
+            <li className={styles.content__ordered__list__element}>
+              Responsive Web Design support with preview on desktop, mobile and tablet
+            </li>
+            <li className={styles.content__ordered__list__element}>
+              ElasticSearch integration for fast and flexible search
+            </li>
+            <li className={styles.content__ordered__list__element}>
+              Image hub to allow content editors to add and store images to the site, reusable for
+              different purposes
+            </li>
+          </ul>
         </p>
         <p className={styles.content__paragraph}>
           <img
@@ -123,17 +156,24 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
         </p>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>Creating lasting change.</span>
-          Quick delivery with more to come
+          A system so good, it’s being adopted across the business
         </h2>
         <p className={styles.content__paragraph}>
-          In just five months, we delivered four major pieces of customer-facing functionality.
-          Focused initially on in-home advanced diagnostics, the first customer facing delivery was
-          made in less than three weeks, leaving room to implement further customer feedback.
+          The new CMS enables editors to provide users with the content they need, fast and
+          efficiently. It has created a greatly enhanced customer experience on the Sky Help site
+          and reduced the time (and skills) required to update and amend content. It is also future
+          proofed, being incredibly easy to scale as requirements change.
         </p>
         <p className={styles.content__paragraph}>
-          The new diagnostic platform has had a huge effect. It tripled the number of issues
-          resolved through the online self-help journey, it doubled the customers serviced by the
-          advanced diagnostics, and it’s serviced half a million customers to date.
+          User behavior is closely monitored so that any issues are made apparent and dealt with
+          straight away. In one example, Sky were able to diagnose an issue as it arose, publish
+          content to solve it, and drop the number of customers pushing the ‘need more help’ button
+          by 50%.
+        </p>
+        <p className={styles.content__paragraph}>
+          The components on which the CMS is built have proved to be so effectual that they are now
+          used to support other Sky sites and were made available to everyone as an open source
+          software.
         </p>
       </div>
     </div>
