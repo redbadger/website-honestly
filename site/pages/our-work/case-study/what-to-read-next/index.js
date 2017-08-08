@@ -10,6 +10,7 @@ import fortnumImage from './images/fortnumImage.jpg';
 import financialTimesImage from './images/financialTimesImage.png';
 import camdenMarketImage from './images/camdenMarketImage.jpg';
 import retailerImage from './images/retailerImage.jpg';
+import skyCmsImage from './images/skyCms.jpg';
 
 const slices = {
   fortnumAndMason: {
@@ -35,6 +36,12 @@ const slices = {
     tagline: 'Next generation platform for retail giant',
     image: retailerImage,
     link: '/our-work/case-study/retailer/',
+  },
+  skyCms: {
+    name: 'Sky CMS',
+    tagline: 'a new CMS just for Sky',
+    image: skyCmsImage,
+    link: '/our-work/case-study/sky-cms/',
   },
 };
 
