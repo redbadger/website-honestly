@@ -49,6 +49,11 @@
   composes: fontM from "../../../../css/typography/_fonts.css";
   composes: lightSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.content__title:first-child {
+  margin-top: 0;
 }
 
 .content__redTitle {
@@ -136,7 +141,8 @@
     margin-bottom: 9px;
   }
 
-  .content__title {
+  .content__title,
+  .content__title:first-child {
     margin-top: 50px;
   }
 
