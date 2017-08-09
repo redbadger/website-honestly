@@ -39,7 +39,7 @@ const slices = {
   },
   skyCms: {
     name: 'Sky CMS',
-    tagline: 'a new CMS just for Sky',
+    tagline: 'A new CMS just for Sky',
     image: skyCmsImage,
     link: '/our-work/case-study/sky-cms/',
   },
