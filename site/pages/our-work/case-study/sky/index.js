@@ -103,13 +103,6 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
         </p>
         <ContactBox />
         <p className={styles.content__paragraph}>
-          Sky was already a leader in the use of agile methodologies and lean ways of working, and
-          were determined to work with a partner that would help them to advance these skills. To
-          complement their established structures, augmented by Sky’s UX/Design resources, we
-          brought in an integrated team of UX, design, and technology to deliver rapidly. Bleeding
-          edge software was utilised to revamp the site and give it the modernisation it needed.
-        </p>
-        <p className={styles.content__paragraph}>
           The decision was made to build a new CMS from scratch with three main components to deal
           with the individual concerns; storing, editing and publishing content. The result is a
           modern CMS that fits Sky’s requirements exactly - one that would be the foundation of a
