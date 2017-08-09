@@ -5,6 +5,7 @@ export default class Video extends Component {
   static propTypes = {
     id: React.PropTypes.string.isRequired,
     type: React.PropTypes.oneOf(['vimeo', 'youtube']).isRequired,
+    title: React.PropTypes.string.isRequired,
   };
 
   static urlMap = {
@@ -16,7 +17,13 @@ export default class Video extends Component {
     const source = Video.urlMap[this.props.type] + this.props.id;
     return (
       <div className={styles.container}>
-        <iframe allowFullScreen className={styles.embed} frameBorder="0" src={source} />
+        <iframe
+          title={this.props.title}
+          allowFullScreen
+          className={styles.embed}
+          frameBorder="0"
+          src={source}
+        />
       </div>
     );
   }
