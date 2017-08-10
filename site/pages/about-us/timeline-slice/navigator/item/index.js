@@ -14,7 +14,7 @@ const TimelineNav = ({ value, onClick, currentIndex }) => {
   const click = () => onClick(value);
 
   return (
-    <button tabIndex={0} className={className} onClick={click}>
+    <button tabIndex={0} className={className} onClick={click} aria-label={`slide ${value + 1}`}>
       <span />
     </button>
   );

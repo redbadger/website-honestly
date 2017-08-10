@@ -16,6 +16,8 @@ type InstagramProps = {
 };
 const colours = [styles.blue, styles.mauve, styles.green];
 
+const shorten = text => text.slice(0, text.indexOf(' ', 30)) + '…';
+
 /** Renders the instagram tile on the social slice */
 const Instagram = ({ post, index }: InstagramProps) => {
   const text = post.text.length > 70 ? post.text.substr(0, 70) + '...' : post.text;
@@ -28,7 +30,7 @@ const Instagram = ({ post, index }: InstagramProps) => {
           <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
           <span className={styles.handleText}>@redbadgerteam</span>
         </div>
-        <img className={styles.image} alt={post.text} src={post.image.url} />
+        <img className={styles.image} alt={shorten(post.text)} src={post.image.url} />
         <div className={styles.meta}>
           <div className={styles.text} tabIndex={0}>{text}</div>
           <div>

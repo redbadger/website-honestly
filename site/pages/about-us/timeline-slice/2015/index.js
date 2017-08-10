@@ -10,17 +10,7 @@ const Five = () => {
   const fact =
     'This year was also Red Badger’s 5th birthday.  So we decided to make it something really special and hired Osea island for a three-day company getaway which featured a hog roast, a ball in a bomb factory, morning yoga and golf-cart racing.';
 
-  return (
-    <Content
-      year={year}
-      title={title}
-      text={text}
-      fact={fact}
-      image={image}
-      mobileImage={image}
-      flip
-    />
-  );
+  return <Content year={year} title={title} text={text} fact={fact} image={image} flip />;
 };
 
 export default Five;

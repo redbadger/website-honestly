@@ -62,7 +62,6 @@ class Topic extends Component {
         />
         <noscript>
           <div
-            id={slug}
             className={styles.topic__answer__visible}
             dangerouslySetInnerHTML={{ __html: formattedAnswer }}
           />

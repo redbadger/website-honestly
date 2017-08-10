@@ -30,7 +30,11 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
     <div className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
-          <img src={headerImage} alt="shopping cart" className={styles.header__image} />
+          <img
+            src={headerImage}
+            alt="An agile stand up in progress"
+            className={styles.header__image}
+          />
         </div>
       </div>
     </div>
@@ -191,7 +195,11 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         homepage design and built
         in seven weeks
       </div>
-      <img src={screenImage} alt="shopping cart" className={styles.screenDemo__image} />
+      <img
+        src={screenImage}
+        alt="Screenshot of Financial Times website"
+        className={styles.screenDemo__image}
+      />
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
