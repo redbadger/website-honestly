@@ -30,7 +30,7 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
     <div className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
-          <img src={headerImage} alt="shopping cart" className={styles.header__image} />
+          <img src={headerImage} alt="Sky CMS" className={styles.header__image} />
         </div>
       </div>
     </div>
