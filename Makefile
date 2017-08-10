@@ -28,7 +28,7 @@ check-deps: ## Check deps for updates
 
 
 dev: badger ## Run the frontend dev server
-	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js --content-base dist/ --history-api-fallback --host 0.0.0.0
+	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --color --hot --inline --config webpack.dev.browser.config.js --history-api-fallback --host 0.0.0.0
 
 
 fetch:
