@@ -49,20 +49,15 @@ const baseConfig = {
     ],
   },
   postcss() {
-    return [
-      autoprefixer,
-    ];
+    return [autoprefixer];
   },
   devtool: 'source-map',
   plugins: [
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
-    new ExtractTextPlugin(
-      'assets-honestly/styles-[contenthash:base64:5].css',
-      { allChunks: true }
-    ),
+    new ExtractTextPlugin('assets-honestly/styles-[contenthash:base64:5].css', { allChunks: true }),
     new CopyWebpackPlugin([
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: `assets/${robots}`, to: 'robots.txt' },
@@ -75,6 +70,5 @@ const baseConfig = {
     ]),
   ],
 };
-
 
 module.exports = baseConfig;
