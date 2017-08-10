@@ -53,22 +53,32 @@ export default function removeArchivedBadgers(bucketName) {
           ),
         );
 
+        if (!badgersToBeDeleted.length) return state;
+
+        // File inside folder needs to be deleted first before deleting the parent folder
         return s3
           .deleteObjects({
             Bucket: bucketName,
             Delete: {
-              Objects: flatMap(badgersToBeDeleted, slug => [
-                {
-                  Key: `${peoplePath}${slug}/index.html`,
-                },
-                {
-                  Key: `${peoplePath}${slug}`,
-                },
-              ]),
+              Objects: badgersToBeDeleted.map(slug => ({
+                Key: `${peoplePath}${slug}/index.html`,
+              })),
               Quiet: false,
             },
           })
           .promise()
+          .then(result => console.log(result))
+          .then(() =>
+            s3.deleteObjects({
+              Bucket: bucketName,
+              Delete: {
+                Objects: badgersToBeDeleted.map(slug => ({
+                  Key: `${peoplePath}${slug}/`,
+                })),
+                Quiet: false,
+              },
+            }).promise(),
+          )
           .then(result => console.log(result))
           .then(() => state);
         // return state;
