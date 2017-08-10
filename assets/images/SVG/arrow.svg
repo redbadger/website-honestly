@@ -4,8 +4,8 @@
     <title>arrow</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="arrow" fill="#FC1D42" stroke="#FC1D42">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#FC1D42" stroke="#FC1D42">
             <polygon points="11 1 21 11 11 21 9.24561404 19.245614 16.2046784 12.2280702 1 12.2280702 1 9.77192982 16.2046784 9.77192982 9.24561404 2.75438596"></polygon>
         </g>
     </g>

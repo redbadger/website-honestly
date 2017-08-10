@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.css';
 
-const Content = ({ year, title, text, fact, image, mobileImage, flip }) => {
+const Content = ({ year, title, text, fact, image, flip }) => {
   const topRowClassName = flip ? styles.topRowFlipped : styles.topRow;
 
   return (
@@ -9,7 +9,7 @@ const Content = ({ year, title, text, fact, image, mobileImage, flip }) => {
       <div className={styles.largeScreen}>
         <div className={topRowClassName}>
           <div className={styles.imageWrapper}>
-            <img src={image} alt={title} className={styles.image} />
+            <img src={image} alt={`year ${year}`} className={styles.image} />
           </div>
           <div className={styles.copy}>
             <div className={styles.year}>{year}</div>
@@ -24,7 +24,6 @@ const Content = ({ year, title, text, fact, image, mobileImage, flip }) => {
       </div>
 
       <div className={styles.smallScreen}>
-        <img src={mobileImage} alt={title} className={styles.image} />
         <div className={styles.copy}>
           <div className={styles.year}>{year}</div>
           <div className={styles.title}>{title}</div>
