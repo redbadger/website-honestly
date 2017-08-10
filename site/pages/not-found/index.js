@@ -13,7 +13,7 @@ export default function NotFoundPage() {
 
   return (
     <ErrorPage
-      title="Whaaaaaaat!?"
+      title="Whaaaaaat!?"
       content={content}
       linkText="Go to home page"
       linkHref="homePage"
