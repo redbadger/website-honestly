@@ -48,8 +48,8 @@
 .content__title {
   composes: fontM from "../../../../css/typography/_fonts.css";
   composes: lightSerif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .content__title:first-child {
@@ -144,6 +144,7 @@
   .content__title,
   .content__title:first-child {
     margin-top: 50px;
+    margin-bottom: 40px;
   }
 
   .overview {
