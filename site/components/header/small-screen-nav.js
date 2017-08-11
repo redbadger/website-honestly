@@ -105,7 +105,7 @@ export default class SmallScreenNav extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <a tabIndex={navTabIndex} href="/blog/">
+                  <a tabIndex={navTabIndex} href="/blog">
                     <span onClick={trackAnalytics('Blog')}>Blog</span>
                   </a>
                 </li>
