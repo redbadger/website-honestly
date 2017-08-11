@@ -2,6 +2,9 @@
   "name": "website-honestly",
   "version": "1.0.0",
   "description": "Red Badger Website. Honestly.",
+  "scripts": {
+    "badger": "node dev/badger.js"
+  },
   "dependencies": {
     "assets-webpack-plugin": "^3.4.0",
     "autoprefixer": "^7.1.2",
@@ -42,6 +45,7 @@
     "file-loader": "^0.11.2",
     "flow-bin": "^0.36.0",
     "flow-typed": "^2.0.0",
+    "gradient-string": "^0.1.2",
     "html-to-react": "^1.2.4",
     "html-webpack-plugin": "^2.30.1",
     "http-server": "^0.9.0",
