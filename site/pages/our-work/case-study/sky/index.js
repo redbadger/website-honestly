@@ -2,7 +2,7 @@ import React from 'react';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
-import headerImage from './images/header.jpg';
+import headerImage from './images/header.png';
 import cmsIllustrationImage from './images/cms-illustration.jpg';
 import authorQuoteImage from './images/quote-author.jpg';
 
