@@ -28,7 +28,7 @@ const CaseStudy = () =>
     <div className={styles.limitWidth}>
       <div className={styles.figuresContainer}>
         <a
-          href="/our-work/case-study/fortnum-and-mason/"
+          href="/our-work/case-study/fortnum-and-mason"
           className={styles.figureLink}
           title="Fortnum and mason case study"
         >
@@ -45,7 +45,7 @@ const CaseStudy = () =>
           <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
         </a>
         <a
-          href="/our-work/case-study/camden-market/"
+          href="/our-work/case-study/camden-market"
           className={styles.figureLink}
           title="Camden market case study"
         >
@@ -62,7 +62,7 @@ const CaseStudy = () =>
           <img alt="The logo of Camden Market" src={camdenPNG} className={styles.logo} />
         </a>
         <a
-          href="/our-work/case-study/sky-cms/"
+          href="/our-work/case-study/sky-cms"
           className={styles.figureLink}
           title="Sky content management system case study"
         >
@@ -80,7 +80,7 @@ const CaseStudy = () =>
           <img alt="The logo of Sky" src={skyPNG} className={styles.logo} />
         </a>
         <a
-          href="/our-work/case-study/financial-times/"
+          href="/our-work/case-study/financial-times"
           className={styles.figureLink}
           title="Financial times case study"
         >

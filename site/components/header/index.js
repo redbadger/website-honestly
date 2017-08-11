@@ -42,7 +42,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a href="/blog/">
+            <a href="/blog">
               <span onClick={trackAnalytics('Blog')}>Blog</span>
             </a>
           </li>
