@@ -109,7 +109,7 @@ dist/services.zip: dist/services
 	&& zip -r ../services.zip *
 
 
-dist/services:
+dist/services: clean
 	export NODE_ENV=production \
 	&& $(LOAD_ENV) \
 	&& $(WEBPACK) --config webpack.lambda.config.js \
