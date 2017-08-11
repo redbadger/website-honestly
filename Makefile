@@ -16,8 +16,7 @@ help:
 
 
 badger: ## Red Badger 4 lyfe!
-	@cat assets/badger.txt
-
+	FORCE_COLOR=1 npm run badger
 
 clean: ## Remove compiled files
 	rm -rf dist
