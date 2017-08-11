@@ -41,7 +41,7 @@ function removeArchivedInPath(bucketName, actualSlugs, s3Prefix) {
 
     console.log(`From ${s3Prefix} about to delete: ${toDelete}`);
 
-    const htmlFiles = toDelete.map(slug => ({
+    const indexFiles = toDelete.map(slug => ({
       Key: `${s3Prefix}${slug}/index.html`,
     }));
 
@@ -50,7 +50,7 @@ function removeArchivedInPath(bucketName, actualSlugs, s3Prefix) {
     }));
 
     // File inside folder needs to be deleted first before deleting the parent folder
-    return deleteObjects(bucketName, htmlFiles).then(() => deleteObjects(bucketName, directories));
+    return deleteObjects(bucketName, indexFiles).then(() => deleteObjects(bucketName, directories));
   });
 }
 
