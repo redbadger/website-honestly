@@ -6,7 +6,7 @@ type GenericCaseStudyProps = {
   title: string,
   headerImage: string,
   headerImageAlt: string,
-  children: node
+  children: node,
 };
 
 const GenericCaseStudy = ({
