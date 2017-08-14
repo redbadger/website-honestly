@@ -2,11 +2,12 @@
 import React from 'react';
 
 import GenericCaseStudy from '../../../../components/generic-case-study';
+import PullQuote from '../../../../components/pull-quote';
 import headerImage from './images/header.jpg';
 
 type BMWCaseStudyProps = {
   contactUsURL: string,
-}
+};
 
 const social = {
   title: 'The proof is in the pudding',
@@ -25,6 +26,13 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
     social={social}
   >
     <p>Hello!</p>
+    <PullQuote
+      author={{
+        name: 'Martin Hartt',
+        title: 'Badger Cub',
+      }}
+      text="I like coffee."
+    />
   </GenericCaseStudy>;
 
 export default BMWCaseStudy;

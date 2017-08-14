@@ -30,27 +30,25 @@ const GenericCaseStudy = ({
   contactUsURL,
   currentPage,
 }: GenericCaseStudyProps) =>
-<div className={styles.caseStudy}>
-  <Social {...social} />
-  <div className={styles.header} style={{ backgroundColor: headerColor }}>
-    <div className={styles.header__container}>
-      <div className={styles.header__imageContainer}>
-        <img
-          src={headerImage}
-          alt={headerImageAlt}
-          className={styles.header__image}
-        />
+  <div className={styles.caseStudy}>
+    <Social {...social} />
+    <div className={styles.header} style={{ backgroundColor: headerColor }}>
+      <div className={styles.header__container}>
+        <div className={styles.header__imageContainer}>
+          <img src={headerImage} alt={headerImageAlt} className={styles.header__image} />
+        </div>
       </div>
     </div>
-  </div>
-  <div className={styles.content}>
-    <div className={styles.content__wrapper}>
-      <h1 className={styles.content__mainTitle}>{title}</h1>
+    <div className={styles.content}>
+      <div className={styles.content__wrapper}>
+        <h1 className={styles.content__mainTitle}>
+          {title}
+        </h1>
+      </div>
+      {children}
     </div>
-    {children}
-  </div>
-  <WhatToReadNext currentPage={currentPage} />
-  <ContactUs postURL={contactUsURL} />
-</div>;
+    <WhatToReadNext currentPage={currentPage} />
+    <ContactUs postURL={contactUsURL} />
+  </div>;
 
 export default GenericCaseStudy;
