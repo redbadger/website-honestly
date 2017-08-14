@@ -31,7 +31,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
     <div className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
-          <img src={headerImage} alt="shopping cart" className={styles.header__image} />
+          <img src={headerImage} alt="Retailer shopping cart" className={styles.header__image} />
         </div>
         <div className={cx('header__outcome', 'header__outcome--right')}>
           <span className={styles.header__outcome__percentage}>

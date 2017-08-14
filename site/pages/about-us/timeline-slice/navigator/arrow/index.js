@@ -22,6 +22,7 @@ const Arrow = ({ direction, onClick, currentIndex }) => {
     <button
       className={cx('arrow', direction === 'left' ? 'arrowLeft' : 'arrowRight')}
       onClick={click}
+      aria-label={direction}
     >
       <div className={isClickable ? styles.active : styles.inactive} />
       <div className={styles.innerArrow} />
