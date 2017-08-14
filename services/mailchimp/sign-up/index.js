@@ -11,6 +11,7 @@ export default function signUp(event, _, cb) {
     JSON.stringify(body),
   )
     .then(json => {
+      console.log('signUp request:', JSON.stringify(body, true, '..'));
       console.log('NEW sign up service post ok:', json);
       const result = formatSignUpResponse(json, body);
       cb(null, result);
