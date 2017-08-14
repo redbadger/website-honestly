@@ -9,6 +9,13 @@ const devAppConfig = webpackMerge(baseConfig, {
     'dev-app': ['babel-polyfill', './dev/browser-app/index.js'],
   },
   target: 'web',
+  devServer: {
+    inline: true,
+    historyApiFallback: true,
+    host: '0.0.0.0',
+    port: 8080,
+    open: true,
+  },
   plugins: [
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
