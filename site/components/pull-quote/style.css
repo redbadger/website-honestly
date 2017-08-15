@@ -5,7 +5,8 @@ blockquote:before {
   content: "“";
   vertical-align: top;
   padding-right: 10px;
-  margin-left: -0.8em;
+  margin-left: 0px;
+  margin-bottom: 20px;
 }
 
 blockquote:before, blockquote:after {
@@ -24,29 +25,24 @@ blockquote:after {
 
 .quotation {
   composes: lightSerif from "../../css/typography/_fonts.css";
-  /*width: 75%;*/
   width: 100%;
   color: badgerRedOnWhite;
   text-align: center;
   background: #FFF;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
 .quotation__author {
-  display: flex;
-  margin-top: 16px;
-}
-
-.quotation__author img {
-  width: 65px;
-  height: 65px;
-}
-
-.quotation__author__wrapper {
   composes: fontXS from "../../css/typography/_fonts.css";
-  line-height: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+  margin-top: 22px;
+  margin: auto;
+  width: 100%;
+  color: #000;
+  padding-top: 15px;
 }
+
 
 .quotation__author__name {
   composes: boldSansSerif from "../../css/typography/_fonts.css";
@@ -60,7 +56,7 @@ blockquote:after {
   composes: fontS2 from "../../css/typography/_fonts.css";
   font-size: 30px;
   display: inline;
-  text-align: left;
+  text-align: center;
 }
 
 @media mediumScreen {
