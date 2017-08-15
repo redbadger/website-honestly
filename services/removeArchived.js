@@ -8,9 +8,10 @@ const s3 = new AWS.S3({
   region: 'eu-west-1',
 });
 
-const peoplePath = 'about-us/people/';
-const jobsPath = 'about-us/join-us/';
+const peoplePrefix = 'about-us/people/';
+const jobsPrefix = 'about-us/join-us/';
 
+// Takes in a S3 key/path and extracts the relevant slug
 function extractSlugFromKey(key) {
   const match = key.match(/about-us\/[\w-]+\/([\w-]+)\/index.html/);
   return match && match[1];
@@ -28,24 +29,24 @@ const deleteObjects = (bucketName, keysToDelete) =>
     })
     .promise();
 
-function removeArchivedInPath(bucketName, actualSlugs, s3Prefix) {
+function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
   return getLiveBadgers(bucketName, s3Prefix).then(objects => {
     const listed = objects.Contents
       .map(obj => obj.Key)
       .map(extractSlugFromKey)
       .filter(slug => slug != null);
 
-    const toDelete = difference(listed, actualSlugs).filter(obj => obj !== 'index.html'); // Ensure index file doesn't get deleted
+    const slugsToDelete = difference(listed, actualSlugs).filter(obj => obj !== 'index.html'); // Ensure directory index file doesn't get deleted
 
-    if (!toDelete.length) return;
+    if (!slugsToDelete.length) return;
 
-    console.log(`From ${s3Prefix} about to delete: ${toDelete}`);
+    console.log(`About to delete these slugs from "${s3Prefix}" :\n${slugsToDelete.join('\n')}`);
 
-    const indexFiles = toDelete.map(slug => ({
+    const indexFiles = slugsToDelete.map(slug => ({
       Key: `${s3Prefix}${slug}/index.html`,
     }));
 
-    const directories = toDelete.map(slug => ({
+    const directories = slugsToDelete.map(slug => ({
       Key: `${s3Prefix}${slug}/`,
     }));
 
@@ -57,8 +58,8 @@ function removeArchivedInPath(bucketName, actualSlugs, s3Prefix) {
 export default function removeArchived(bucketName) {
   return state => {
     return Promise.all([
-      removeArchivedInPath(bucketName, state.badgers.map(badger => badger.slug), peoplePath),
-      removeArchivedInPath(bucketName, state.jobs.map(job => job.slug), jobsPath),
+      removeArchivedWithPrefix(bucketName, state.badgers.map(badger => badger.slug), peoplePrefix),
+      removeArchivedWithPrefix(bucketName, state.jobs.map(job => job.slug), jobsPrefix),
     ])
       .catch(err => console.error('Error when deleting archived pages:', err))
       .then(() => state);

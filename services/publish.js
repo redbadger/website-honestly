@@ -12,7 +12,7 @@ if (!bucketName) {
 }
 
 export default function doPublish(_, __, cb) {
-  console.log(`OKOK Publishing to S3 bucket ${bucketName}`);
+  console.log(`Publishing to S3 bucket ${bucketName}`);
 
   getSiteState()
     .then(removeArchived(bucketName))
