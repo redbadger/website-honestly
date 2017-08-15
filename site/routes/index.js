@@ -22,6 +22,7 @@ import Technology from '../pages/technology';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
 import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
+import SkyCaseStudy from '../pages/our-work/case-study/sky';
 
 const componentMap = {
   homePage: HomePage,
@@ -40,6 +41,7 @@ const componentMap = {
   retailerCaseStudy: RetailerCaseStudy,
   camdenMarketCaseStudy: CamdenMarketCaseStudy,
   financialTimesCaseStudy: FinancialTimesCaseStudy,
+  skyCaseStudy: SkyCaseStudy,
   technology: Technology,
 };
 

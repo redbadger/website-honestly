@@ -108,6 +108,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
   },
   {
+    title: 'Sky case study',
+    key: 'skyCaseStudy',
+    route: 'our-work/case-study/sky-cms',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
     title: 'Technology',
     key: 'technology',
     route: 'technology',

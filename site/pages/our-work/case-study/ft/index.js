@@ -4,7 +4,7 @@ import styles from './style.css';
 
 import headerImage from './images/header.jpg';
 import screenImage from './images/screen.jpg';
-import authorQuoteImage from './images/christina-scott.png';
+import authorQuoteImage from './images/quote-author.jpg';
 
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';

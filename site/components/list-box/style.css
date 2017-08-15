@@ -11,7 +11,7 @@
 }
 
 .listBox__heading {
-  composes: fontS2 from "../../css/typography/_fonts.css";
+  composes: fontStaticM2 from "../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   color: badgerRedOnWhite;
   text-transform: uppercase;

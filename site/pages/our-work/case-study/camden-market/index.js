@@ -5,7 +5,7 @@ import styles from './style.css';
 
 import headerImage from './images/header.png';
 import techGraphImage from './images/tech-graph.jpg';
-import authorQuoteImage from './images/quote-author.png';
+import authorQuoteImage from './images/quote-author.jpg';
 
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
