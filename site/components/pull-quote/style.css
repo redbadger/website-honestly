@@ -10,20 +10,25 @@ blockquote:before {
 
 blockquote:before, blockquote:after {
   speak: none;
-  font-size: 36px;
-  color: badgerRedOnWhite;
+  font-size: 48px;
+  color: #000;
+  position: relative;
+  top: 10px;
 }
 
 blockquote:after {
   content: "”";
-  vertical-align: bottom;
+  vertical-align: top;
   padding-left: 10px;
 }
 
 .quotation {
-  composes: serif from "../../css/typography/_fonts.css";
-  width: 75%;
-  margin: 22px auto 62px;
+  composes: lightSerif from "../../css/typography/_fonts.css";
+  /*width: 75%;*/
+  width: 100%;
+  color: badgerRedOnWhite;
+  text-align: center;
+  background: #FFF;
 }
 .quotation__author {
   display: flex;
@@ -40,7 +45,6 @@ blockquote:after {
   line-height: normal;
   display: flex;
   flex-direction: column;
-  margin-left: 13px;
   justify-content: center;
 }
 
@@ -54,24 +58,20 @@ blockquote:after {
 
 .quotation__text {
   composes: fontS2 from "../../css/typography/_fonts.css";
+  font-size: 30px;
   display: inline;
   text-align: left;
 }
 
-.quotation__imageContainer {
-  margin-right: 13px;
-  padding-right: 13px;
-}
-
 @media mediumScreen {
   .quotation {
-    width: 85%;
+    /*width: 85%;*/
   }
 }
 
 @media largeScreen {
   .quotation {
-    width: 45%;
-    margin: 0 auto;
+    /*width: 45%;
+    margin: 0 auto;*/
   }
 }
