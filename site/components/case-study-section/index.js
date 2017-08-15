@@ -6,12 +6,9 @@ import styles from './style.css';
 type CaseStudySectionProps = {
   title: string,
   children: Node[],
-}
+};
 
-const CaseStudySection = ({
-  title,
-  children,
-}: CaseStudySectionProps) =>
+const CaseStudySection = ({ title, children }: CaseStudySectionProps) =>
   <div className={styles.content}>
     <div className={styles.content__wrapper}>
       <h2>{title}</h2>

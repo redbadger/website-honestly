@@ -29,8 +29,14 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
       social={social}
     />
     <CaseStudySection title="The challenge">
-      <p>The BMW Museum in Munich, Germany was opened in 1973 as one of the first brand museums. Displayed over 5,000 square metres of exhibition space are around 125 of the brand’s most precious and appealing cars, motorcycles and engines.
-The Museum is a living building, comprising many innovative and immersive exhibitions that exude BMW’s passion for technical innovation. BMW wanted to live that brand through the museum’s web presence, and turned to Red Badger to discover how.</p>
+      <p>
+        The BMW Museum in Munich, Germany was opened in 1973 as one of the first brand museums.
+        Displayed over 5,000 square metres of exhibition space are around 125 of the brand’s most
+        precious and appealing cars, motorcycles and engines.
+        The Museum is a living building, comprising many innovative and immersive exhibitions that
+        exude BMW’s passion for technical innovation. BMW wanted to live that brand through the
+        museum’s web presence, and turned to Red Badger to discover how.
+      </p>
     </CaseStudySection>
 
     <PullQuote
@@ -43,6 +49,6 @@ The Museum is a living building, comprising many innovative and immersive exhibi
     <CaseStudySection title="Okay">
       <p>Nope</p>
     </CaseStudySection>
-  </CaseStudyFrame>
+  </CaseStudyFrame>;
 
 export default BMWCaseStudy;

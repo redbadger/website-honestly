@@ -6,7 +6,7 @@ import styles from './style.css';
 type Author = {
   name: string,
   title: string,
-}
+};
 
 type PullQuoteProps = {
   author: Author,
