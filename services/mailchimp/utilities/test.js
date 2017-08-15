@@ -98,7 +98,7 @@ describe('formatFormInput', () => {
         interests: {},
       },
     };
-    const result = formatFormInput(event, false);
+    const result = formatFormInput(event, false, 'pending');
     expect(result).to.deep.equal({
       email_address: 'test@gmail.com',
       status: 'pending',
@@ -122,10 +122,33 @@ describe('formatFormInput', () => {
         interests: {},
       },
     };
-    const result = formatFormInput(event, true);
+    const result = formatFormInput(event, true, 'pending');
     expect(result).to.deep.equal({
       email_address: 'test@gmail.com',
       status: 'pending',
+      interests: {},
+      merge_fields: {
+        FIRSTNAME: 'Testa',
+        LASTNAME: 'Fiesta',
+        COMPANY: 'Red Badger',
+        ROLE: 'Developer',
+      },
+    });
+  });
+  it('returns the correct output if the status is not included', () => {
+    const event = {
+      body: {
+        email_address: 'test@gmail.com',
+        name: 'Testa',
+        surname: 'Fiesta',
+        company: 'Red Badger',
+        role: 'Developer',
+        interests: {},
+      },
+    };
+    const result = formatFormInput(event, false);
+    expect(result).to.deep.equal({
+      email_address: 'test@gmail.com',
       interests: {},
       merge_fields: {
         FIRSTNAME: 'Testa',
