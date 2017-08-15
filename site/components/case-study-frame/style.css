@@ -1,0 +1,10 @@
+@value badgerWhite, badgerBlack, badgerAccessibleRedOnWhite, badgerRedOnWhite, linesOnWhite from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.caseStudy {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: lightSerif from "../../css/typography/_fonts.css";
+  font-size: 20px;
+  line-height: 27px;
+  background-color: badgerWhite;
+}
