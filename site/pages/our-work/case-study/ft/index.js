@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import Social from '../../../../components/social';
 import styles from './style.css';

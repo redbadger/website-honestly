@@ -13,6 +13,11 @@
   margin-bottom: 20px;
 }
 
+.content p img {
+  width: 100%;
+  margin-top: 60px;
+}
+
 .content h2 {
   font-weight: 900;
   line-height: 1.1;
