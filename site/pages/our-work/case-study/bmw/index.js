@@ -51,14 +51,24 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
       text="The BMW Museum Virtual Tour is a great way for visitors to immerse themselves in what the museum has to  offer"
     />
     <CaseStudySection title="Solution">
-      <p>Focusing on the museum’s unique Karl Schwanzer architectural design, as much a spectacle as the exhibits it houses, our 3D artists recreated the building along with some of its most iconic content. Using the latest HTML5 technologies and custom sound design, we brought the 3D model alive, allowing users to explore and experience the exhibit space.
-Using the companion iPhone, iPad and Android apps we created, visitors are able to retrieve the itinerary they created on the website to enhance their experience as they navigate around the museum.
-      <img alt="BMW car" src={articleImage} />
+      <p>
+        Focusing on the museum’s unique Karl Schwanzer architectural design, as much a spectacle as
+        the exhibits it houses, our 3D artists recreated the building along with some of its most
+        iconic content. Using the latest HTML5 technologies and custom sound design, we brought the
+        3D model alive, allowing users to explore and experience the exhibit space.
+        Using the companion iPhone, iPad and Android apps we created, visitors are able to retrieve
+        the itinerary they created on the website to enhance their experience as they navigate
+        around the museum.
+        <img alt="BMW car" src={articleImage} />
       </p>
     </CaseStudySection>
     <CaseStudySection title="Business benefits">
-      <p>By providing a joined-up experience across web, mobile and the museum itself, a visitor’s journey is supported from start to finish, enhancing what is already a unique experience.
-Providing greater insight to the museum’s contents and experience than ever before, BMW believes more visitors will be encouraged to enjoy what has long been one of Munich’s most popular highlights.
+      <p>
+        By providing a joined-up experience across web, mobile and the museum itself, a visitor’s
+        journey is supported from start to finish, enhancing what is already a unique experience.
+        Providing greater insight to the museum’s contents and experience than ever before, BMW
+        believes more visitors will be encouraged to enjoy what has long been one of Munich’s most
+        popular highlights.
       </p>
     </CaseStudySection>
 
