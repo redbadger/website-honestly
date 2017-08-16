@@ -1,8 +1,8 @@
 machine:
   node:
-    version: 4.3.2
+    version: 6.11.2
   environment:
-    YARN_VERSION: 0.18.0
+    YARN_VERSION: 0.27.5
     PATH: "${PATH}:${HOME}/.yarn/bin"
     ENVIRONMENT_NAME: staging
 
