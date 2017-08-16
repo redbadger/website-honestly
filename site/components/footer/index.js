@@ -50,7 +50,7 @@ const Footer = () =>
               </Link>
             </li>
             <li>
-              <a href="/blog"><span onClick={trackAnalytics('Blog')}>Blog</span></a>
+              <a href="/blog/"><span onClick={trackAnalytics('Blog')}>Blog</span></a>
             </li>
             <li>
               <Link to="events"><span onClick={trackAnalytics('Events')}>Events</span></Link>
