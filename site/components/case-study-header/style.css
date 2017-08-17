@@ -36,7 +36,7 @@
 }
 
 .content__wrapper {
-  padding: 20px 20px 20px;
+  padding: 20px 20px 0px;
 }
 
 .content__mainTitle {
@@ -47,7 +47,7 @@
 
 @media mediumScreen {
   .content__wrapper {
-    padding: 30px 20px 20px;
+    padding: 30px 20px 0px;
   }
 
   .content__mainTitle {
@@ -64,10 +64,10 @@
     height: 456px;
     width: auto;
   }
-
+  
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 20px 120px 0px;
     margin: auto;
   }
 
@@ -83,7 +83,7 @@
     padding: 20px;
     height: 100%;
     background-color: badgerWhite;
-    margin-bottom: -73px;
+    margin-bottom: -98px;
   }
 
   .header {
