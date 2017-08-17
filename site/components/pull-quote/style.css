@@ -1,6 +1,11 @@
 @value badgerRedOnWhite from '../../css/_colors.css';
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
+blockquote {
+  max-width: 690px;
+  margin: auto;
+}
+
 blockquote:before {
   content: "“";
   vertical-align: top;
@@ -27,10 +32,12 @@ blockquote:after {
   composes: lightSerif from "../../css/typography/_fonts.css";
   width: 100%;
   color: badgerRedOnWhite;
-  text-align: center;
+  text-align: left;
+  padding: 0 22px;
   background: #FFF;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .quotation__author {
@@ -54,14 +61,18 @@ blockquote:after {
 
 .quotation__text {
   composes: fontS2 from "../../css/typography/_fonts.css";
-  font-size: 30px;
+  font-size: 24px;
   display: inline;
-  text-align: center;
+  max-width: 690px;
 }
 
 @media mediumScreen {
   .quotation {
-    /*width: 85%;*/
+    text-align: center;
+  }
+  .quotation__text {
+    font-size: 30px;
+    /*text-align: center;*/
   }
 }
 
@@ -69,5 +80,6 @@ blockquote:after {
   .quotation {
     /*width: 45%;
     margin: 0 auto;*/
+    margin-bottom: 60px;
   }
 }
