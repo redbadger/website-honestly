@@ -45,6 +45,10 @@
   margin-bottom: 0px;
 }
 
+.content__tagline {
+  font-size: 24px;
+}
+
 @media mediumScreen {
   .content__wrapper {
     padding: 30px 20px 0px;
@@ -53,6 +57,11 @@
   .content__mainTitle {
     margin-bottom: 9px;
   }
+
+  .content__tagline {
+    font-size: 30px;
+  }
+
 }
 
 @media largeScreen {
@@ -64,7 +73,7 @@
     height: 456px;
     width: auto;
   }
-  
+
   .content {
     max-width: 1400px;
     padding: 20px 120px 0px;
@@ -89,4 +98,10 @@
   .header {
     padding-bottom: 56px;
   }
+
+  .content__tagline {
+    font-size: 40px;
+    padding: 20px;
+  }
+
 }

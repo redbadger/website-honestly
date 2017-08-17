@@ -8,6 +8,7 @@ import styles from './style.css';
 
 type CaseStudyHeaderProps = {
   title: string,
+  tagline?: string,
   headerImage: string,
   headerImageAlt: string,
   headerColor: string,
@@ -17,10 +18,10 @@ type CaseStudyHeaderProps = {
 
 const CaseStudyHeader = ({
   title,
+  tagline,
   headerImage,
   headerImageAlt,
   headerColor,
-  headerImageAlign,
   children,
   social,
 }: CaseStudyHeaderProps) =>
@@ -38,6 +39,9 @@ const CaseStudyHeader = ({
         <h1 className={styles.content__mainTitle}>
           {title}
         </h1>
+        <h2 className={styles.content__tagline}>
+          {tagline}
+        </h2>
       </div>
       {children}
     </div>
