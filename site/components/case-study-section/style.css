@@ -2,11 +2,12 @@
 
 
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
 }
 
 .content__wrapper {
-  padding: 20px 20px 20px;
+  padding: 0px 20px 0px;
+  margin-bottom: 40px;
 }
 
 .content p {
@@ -15,7 +16,7 @@
 
 .content p img {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .content h2 {
@@ -28,7 +29,7 @@
 
 @media mediumScreen {
   .content__wrapper {
-    padding: 30px 20px 20px;
+    padding: 0px 20px 0px;
   }
 
   .content p {
@@ -44,13 +45,14 @@
 
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 0px 120px 0px;
     margin: auto;
   }
 
   .content__wrapper {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 60px;
   }
 
   .content p {
@@ -65,5 +67,9 @@
     top: 25px;
     margin-top: -25px;
     margin-bottom: 0px;
+  }
+
+  .content p img {
+    margin-top: 60px;
   }
 }
