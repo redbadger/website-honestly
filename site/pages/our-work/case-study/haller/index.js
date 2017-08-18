@@ -41,7 +41,8 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
       </p>
       <p>
         The Museum is a living building, comprising many innovative and immersive exhibitions that
-        exude Haller’s passion for technical innovation. Haller wanted to live that brand through the
+        exude Haller’s passion for technical innovation. Haller wanted to live that brand through
+        the
         museum’s web presence, and turned to Red Badger to discover how.
       </p>
     </CaseStudySection>
