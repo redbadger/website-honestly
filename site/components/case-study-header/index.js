@@ -11,6 +11,7 @@ type CaseStudyHeaderProps = {
   tagline?: string,
   headerImage: string,
   headerImageAlt: string,
+  headerImageAlign?: string,
   headerColor: string,
   children?: Node,
   social: SocialProps,
@@ -21,6 +22,7 @@ const CaseStudyHeader = ({
   tagline,
   headerImage,
   headerImageAlt,
+  headerImageAlign = 'center',
   headerColor,
   children,
   social,
@@ -29,7 +31,7 @@ const CaseStudyHeader = ({
     <Social {...social} />
     <div className={styles.header} style={{ backgroundColor: headerColor }}>
       <div className={styles.header__container}>
-        <div className={styles.header__imageContainer}>
+        <div className={styles.header__imageContainer} style={{justifyContent: headerImageAlign}}>
           <img src={headerImage} alt={headerImageAlt} className={styles.header__image} />
         </div>
       </div>
