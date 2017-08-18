@@ -1,6 +1,11 @@
 @value badgerRedOnBlack, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize, containerMaxWidth from "../../css/_sizes.css";
 
+.addressHint {
+  font-family: 'ProximaNova-Semibold', sans-serif;
+  font-size: 14px;
+}
+
 .screenReaderText {
   composes: visuallyHidden from "../../css/_accessibility.css";
 }
@@ -47,6 +52,9 @@
 
 .section {
   padding: 30px 0px;
+}
+
+.underline {
   border-bottom: 1px solid linesOnBlack;
 }
 
@@ -163,12 +171,6 @@
     top: -99px;
   }
 
-  .mapPin {
-    position: absolute;
-    bottom: 5px;
-    right: 55px;
-  }
-
   .footer {
     align-items: center;
     justify-content: center;
@@ -179,12 +181,7 @@
     bottom: 15px;
   }
 
-  .address {
-    position: absolute;
-    right: 264px;
-    top: 200px;
-  }
-  .section {
+  .underline {
     border-bottom: none;
   }
 

@@ -33,7 +33,7 @@ const Footer = () =>
     <div className={styles.footerContainer}>
       <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
       <div className={styles.footerSections}>
-        <nav role="navigation" className={cx('section', 'footerLinks')}>
+        <nav role="navigation" className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>
             {/* eslint-disable jsx-a11y/no-static-element-interactions */}
             <li>
@@ -62,7 +62,8 @@ const Footer = () =>
           </ul>
         </nav>
 
-        <div className={cx('section', 'social')}>
+        <div>
+          <div className={cx('section', 'social', 'underline')}>
           <span className={styles.screenReaderText}>Email us at</span>
           <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>
             <span className={styles.mailtoLinkText}>hello@red-badger.com</span>
@@ -174,20 +175,18 @@ const Footer = () =>
               </a>
             </li>
           </ul>
+          </div>
+          <div className={cx('section', 'address', 'underline')}>
+            <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
+            <div className={styles.mapContainer}>
+              <address>
+                <p>4th Floor, 2 Old Street Yard, London<br />EC1Y 8AF, UK</p>
+                <p className={styles.addressHint}>(The entrance is from Featherstone Street)</p>
+              </address>
+            </div>
+          </div>
         </div>
 
-      </div>
-      <div className={cx('section', 'address')}>
-        <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
-        <div className={styles.mapContainer}>
-          <address>
-            <p>4th Floor</p>
-            <p>2 Old Street Yard</p>
-            <p>London</p>
-            <p>EC1Y 8AF</p>
-            <p>UK</p>
-          </address>
-        </div>
       </div>
       <div className={styles.footerEndContainer}>
         <div className={cx('section', 'disclaimer', 'noBorder')}>
