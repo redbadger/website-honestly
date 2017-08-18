@@ -41,9 +41,9 @@ const CaseStudyHeader = ({
         <h1 className={styles.content__mainTitle}>
           {title}
         </h1>
-        <h2 className={styles.content__tagline}>
+        {tagline && (<h2 className={styles.content__tagline}>
           {tagline}
-        </h2>
+        </h2>)}
       </div>
       {children}
     </div>
