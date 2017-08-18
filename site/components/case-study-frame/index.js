@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './style.css';
 
 type CaseStudyFrameProps = {
-  children: Node,
+  children?: Node,
 };
 
 const CaseStudyFrame = ({ children }: CaseStudyFrameProps) =>

@@ -12,7 +12,7 @@ type CaseStudyHeaderProps = {
   headerImage: string,
   headerImageAlt: string,
   headerColor: string,
-  children: Node,
+  children?: Node,
   social: SocialProps,
 };
 
