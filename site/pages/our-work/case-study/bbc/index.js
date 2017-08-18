@@ -16,7 +16,7 @@ type BBCCaseStudyProps = {
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'Keeping up with the Financial Times',
+  description: 'BBC Now: Delivering a better customer experience, faster',
   metaImage: headerImage,
   url: 'https://red-badger.com/our-work/case-study/financial-times',
 };

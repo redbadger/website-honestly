@@ -17,9 +17,9 @@ type BMWCaseStudyProps = {
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'Keeping up with the Financial Times',
+  description: 'BMW Virtual Museum: The shortcut between you and the museum',
   metaImage: headerImage,
-  url: 'https://red-badger.com/our-work/case-study/financial-times',
+  url: 'https://red-badger.com/our-work/case-study/bmw',
 };
 
 const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>

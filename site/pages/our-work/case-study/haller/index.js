@@ -17,7 +17,7 @@ type HallerCaseStudyProps = {
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'Keeping up with the Financial Times',
+  description: 'Working with the Haller Foundation: Developing technology for good',
   metaImage: headerImage,
   url: 'https://red-badger.com/our-work/case-study/financial-times',
 };

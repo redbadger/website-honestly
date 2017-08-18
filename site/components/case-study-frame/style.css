@@ -1,5 +1,4 @@
-@value badgerWhite, badgerBlack, badgerAccessibleRedOnWhite, badgerRedOnWhite, linesOnWhite from '../../css/_colors.css';
-@value mediumScreen, largeScreen from "../../css/_sizes.css";
+@value badgerWhite from '../../css/_colors.css';
 
 .caseStudy {
   composes: fontXS from "../../css/typography/_fonts.css";

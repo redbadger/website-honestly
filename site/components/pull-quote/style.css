@@ -72,14 +72,11 @@ blockquote:after {
   }
   .quotation__text {
     font-size: 30px;
-    /*text-align: center;*/
   }
 }
 
 @media largeScreen {
   .quotation {
-    /*width: 45%;
-    margin: 0 auto;*/
     margin-bottom: 60px;
   }
 }
