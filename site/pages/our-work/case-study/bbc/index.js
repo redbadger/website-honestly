@@ -24,55 +24,59 @@ const social = {
 const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
   <CaseStudyFrame>
     <CaseStudyHeader
-      title="BBC Virtual Museum: The shortcut between you and the museum"
+      title="BBC Now: Delivering a better customer experience, faster"
+      tagline="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
       headerImage={headerImage}
       headerImageAlt="image"
-      headerColor="#f4f1f2"
+      headerColor="#F2F3ED"
+      headerImageAlign="left"
       contactUsURL={contactUsURL}
       social={social}
     />
+    <PullQuote
+      author={{
+        name: 'Eleni Sharp',
+        title: 'Senior product manager, BBC Connected Studios',
+      }}
+      text="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
+    />
     <CaseStudySection title="The challenge">
       <p>
-        The BBC Museum in Munich, Germany was opened in 1973 as one of the first brand museums.
-        Displayed over 5,000 square metres of exhibition space are around 125 of the brand’s most
-        precious and appealing cars, motorcycles and engines.
+        Nine million people visit the BBC Homepage each week but most use it as an access point to
+        specific information and miss lots of valuable and relevant content. And, although
+        personalisation tools are available, less than 10% of visitors use them.
       </p>
       <p>
-        The Museum is a living building, comprising many innovative and immersive exhibitions that
-        exude BBC’s passion for technical innovation. BBC wanted to live that brand through the
-        museum’s web presence, and turned to Red Badger to discover how.
+        Tasked with finding new ways to engage consumers, BBC Connected Studio was looking for
+        creative ideas that would make it easier for visitors to the site to find content relevant
+        to them.
       </p>
     </CaseStudySection>
 
-    <PullQuote
-      author={{
-        name: 'Dr. Rodepeter',
-        title: 'Director, BBC Museum',
-      }}
-      text="The BBC Museum Virtual Tour is a great way for visitors to immerse themselves in what the museum has to  offer"
-    />
     <CaseStudySection title="Solution">
       <p>
-        Focusing on the museum’s unique Karl Schwanzer architectural design, as much a spectacle as
-        the exhibits it houses, our 3D artists recreated the building along with some of its most
-        iconic content. Using the latest HTML5 technologies and custom sound design, we brought the
-        3D model alive, allowing users to explore and experience the exhibit space.
+        The concept Red Badger came up with was effectively a fast lane. A real-time stream of BBC
+        content delivered to the homepage, in bite-sized chunks, the instant it’s published.
       </p>
       <p>
-        Using the companion iPhone, iPad and Android apps we created, visitors are able to retrieve
-        the itinerary they created on the website to enhance their experience as they navigate
-        around the museum.
+        Combining this with the semantic web, allowing data to be shared across platforms and
+        communities, means the content is refined as the site ‘learns’ more about what a user
+        accesses and how they interact with it.
       </p>
     </CaseStudySection>
+    <PullQuote
+      author={{
+        name: 'Eleni Sharp',
+        title: 'Senior product manager, BBC Connected Studios',
+      }}
+      text="The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns."
+    />
     <CaseStudySection title="Business benefits">
       <p>
-        By providing a joined-up experience across web, mobile and the museum itself, a visitor’s
-        journey is supported from start to finish, enhancing what is already a unique experience.
-      </p>
-      <p>
-        Providing greater insight to the museum’s contents and experience than ever before, BBC
-        believes more visitors will be encouraged to enjoy what has long been one of Munich’s most
-        popular highlights.
+        For Connected Studio the key metric was the feedback from consumers and overall the reaction
+        was very positive. The concept was proven to be easy to understand, and more than 75% of
+        users agreed the concept was appealing; nearly 50% said they would be very likely to use BBC
+        Now if it went live.
       </p>
     </CaseStudySection>
 

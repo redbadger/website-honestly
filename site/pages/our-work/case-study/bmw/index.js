@@ -50,7 +50,7 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
         name: 'Dr. Rodepeter',
         title: 'Director, BMW Museum',
       }}
-      text="The BMW Museum Virtual Tour is a great way for visitors to immerse themselves in what the museum has to  offer"
+      text="The BMW Museum Virtual Tour is a great way for visitors to immerse themselves in what the museum has to offer"
     />
     <CaseStudySection title="Solution">
       <p>

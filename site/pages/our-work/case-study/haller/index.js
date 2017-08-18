@@ -29,54 +29,79 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
       tagline="Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers"
       headerImage={headerImage}
       headerImageAlt="image"
-      headerColor="#f4f1f2"
+      headerColor="#8B252A"
       contactUsURL={contactUsURL}
       social={social}
     />
     <CaseStudySection title="The challenge">
       <p>
-        The Haller Museum in Munich, Germany was opened in 1973 as one of the first brand museums.
-        Displayed over 5,000 square metres of exhibition space are around 125 of the brand’s most
-        precious and appealing cars, motorcycles and engines.
+        In December 2013 Red Badger teamed up with the Haller Foundation, a UK-based charity to
+        support its work in helping subsistence farmers in Kenya. The Haller Foundation works with
+        farmers in Kenya to help them rehabilitate their land and achieve sustainable
+        self-sufficiency. But with only 1 extension officer for every 1,000 farmers in Kenya, the
+        process of reaching them is slow, inefficient and expensive.
       </p>
       <p>
-        The Museum is a living building, comprising many innovative and immersive exhibitions that
-        exude Haller’s passion for technical innovation. Haller wanted to live that brand through
-        the
-        museum’s web presence, and turned to Red Badger to discover how.
+        Haller approached Red Badger wanting to explore the potential to use new technologies to
+        extend these initiatives to a much wider farming audience in Kenya.
+
+        <ul>
+          <li>
+            Mobile usage in Kenya is surprisingly high with around 50% of Kenyan’s owning a
+            smartphone and this number is growing rapidly thanks to the digital advancements which
+            have been made in recent years.
+          </li>
+          <li>
+            Utilising this greater communication power to launch an app specifically designed to
+            support the agricultural improvements of Kenyan farmers was the logical next step.
+          </li>
+        </ul>
+
       </p>
+
     </CaseStudySection>
 
     <PullQuote
       author={{
-        name: 'Dr. Rodepeter',
-        title: 'Director, Haller Museum',
+        name: 'Louise Piper',
+        title: 'Founding Trustee of Haller',
       }}
-      text="The Haller Museum Virtual Tour is a great way for visitors to immerse themselves in what the museum has to  offer"
+      text="This web app fits perfectly with our approach – it releases potential through practical ideas that are collaborative, self-sustainable and resourceful"
     />
     <CaseStudySection title="Solution">
       <p>
-        Focusing on the museum’s unique Karl Schwanzer architectural design, as much a spectacle as
-        the exhibits it houses, our 3D artists recreated the building along with some of its most
-        iconic content. Using the latest HTML5 technologies and custom sound design, we brought the
-        3D model alive, allowing users to explore and experience the exhibit space.
+        Red Badger staff worked together with design agency, Pearlfisher, to provide the user
+        experience, visual design and development of a new mobile website that will enable Haller to
+        deliver the training to the farmers that need it, across the entire country. A prototype was
+        delivered within 5 months and tested with different kinds of farmers in Kenya that would be
+        using the app. This gave Red Badger vital feedback in a number of areas:
       </p>
       <p>
-        Using the companion iPhone, iPad and Android apps we created, visitors are able to retrieve
-        the itinerary they created on the website to enhance their experience as they navigate
-        around the museum.
-        <img alt="Haller car" src={articleImage} />
+        <ul>
+          <li>Mobile data packages in Kenya are traditionally small but competitively priced</li>
+          <li>There were wide regional disparities in literacy rates</li>
+          <li>
+            Although English is the national language over half the small holder farmers surveyed
+            didn’t speak English
+          </li>
+        </ul>
+        <img alt="Screenshots of the Haller application" src={articleImage} />
       </p>
-    </CaseStudySection>
-    <CaseStudySection title="Business benefits">
       <p>
-        By providing a joined-up experience across web, mobile and the museum itself, a visitor’s
-        journey is supported from start to finish, enhancing what is already a unique experience.
+        The unique and innovative technical design of the app addresses all these issues. The total
+        size of the app is less than 1MB in total thanks to intelligent use of lightweight
+        iconography and other design considerations. The download is stored on the device itself and
+        only changes if any updates are required or when using the marketplace feature.
       </p>
       <p>
-        Providing greater insight to the museum’s contents and experience than ever before, Haller
-        believes more visitors will be encouraged to enjoy what has long been one of Munich’s most
-        popular highlights.
+        The app is multi-lingual with both Swahili and English versions, and literacy issues are
+        further addressed via an audio feature with Swahili translations. Strong use of visuals and
+        symbols also make the app as intuitive to use as possible.
+      </p>
+      <p>
+        The app was successfully launched in Nairobi in November 2014, and is already being used by
+        farmers – after taking less than a year to deliver. Red Badger and Haller both see huge
+        potential to extend this technology to other parts of Africa and even further afield.
       </p>
     </CaseStudySection>
 
