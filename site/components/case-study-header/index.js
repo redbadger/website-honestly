@@ -31,7 +31,7 @@ const CaseStudyHeader = ({
     <Social {...social} />
     <div className={styles.header} style={{ backgroundColor: headerColor }}>
       <div className={styles.header__container}>
-        <div className={styles.header__imageContainer} style={{justifyContent: headerImageAlign}}>
+        <div className={styles.header__imageContainer} style={{ justifyContent: headerImageAlign }}>
           <img src={headerImage} alt={headerImageAlt} className={styles.header__image} />
         </div>
       </div>
@@ -41,9 +41,10 @@ const CaseStudyHeader = ({
         <h1 className={styles.content__mainTitle}>
           {title}
         </h1>
-        {tagline && (<h2 className={styles.content__tagline}>
-          {tagline}
-        </h2>)}
+        {tagline &&
+          <h2 className={styles.content__tagline}>
+            {tagline}
+          </h2>}
       </div>
       {children}
     </div>
