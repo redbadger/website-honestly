@@ -5,7 +5,7 @@ import styles from './style.css';
 
 type CaseStudySectionProps = {
   title: string,
-  children: Node[],
+  children?: Node,
 };
 
 const CaseStudySection = ({ title, children }: CaseStudySectionProps) =>
