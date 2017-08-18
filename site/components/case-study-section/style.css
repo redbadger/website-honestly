@@ -19,7 +19,7 @@
   margin-top: 40px;
 }
 
-.content h2 {
+.content h3 {
   font-weight: 900;
   line-height: 1.1;
   color: #212121;
@@ -36,7 +36,7 @@
     padding-left: 114px;
   }
 
-  .content h2 {
+  .content h3 {
     font-size: 30px;
   }
 }
@@ -60,7 +60,7 @@
     padding-right: 10%;
   }
 
-  .content h2 {
+  .content h3 {
     text-align: right;
     padding-right: calc(70% + 20px);
     position: relative;
