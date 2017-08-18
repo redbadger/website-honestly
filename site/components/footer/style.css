@@ -158,6 +158,11 @@
     overflow: hidden;
   }
 
+  .footerMap svg {
+    position: absolute;
+    top: -99px;
+  }
+
   .mapPin {
     position: absolute;
     bottom: 5px;
