@@ -10,6 +10,7 @@ import CaseStudySection from '../../../../components/case-study-section';
 import PullQuote from '../../../../components/pull-quote';
 import headerImage from './images/header.jpg';
 import articleImage from './images/article.jpg';
+import styles from './style.css';
 
 type HallerCaseStudyProps = {
   contactUsURL: string,
@@ -27,8 +28,10 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
     <CaseStudyHeader
       title="Working with the Haller Foundation: Developing technology for good"
       tagline="Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers"
+      headerClassName={styles.header}
       headerImage={headerImage}
       headerImageAlt="image"
+      headerImageAlign="center"
       headerColor="#942c2d"
       contactUsURL={contactUsURL}
       social={social}

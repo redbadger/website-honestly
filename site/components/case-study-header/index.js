@@ -1,14 +1,18 @@
 // @flow
 import React from 'react';
+import classnames from 'classnames/bind';
 
 import Social from '../social';
 import type { SocialProps } from '../social';
 
 import styles from './style.css';
 
+const cx = classnames.bind(styles);
+
 type CaseStudyHeaderProps = {
   title: string,
   tagline?: string,
+  headerClassName?: string,
   headerImage: string,
   headerImageAlt: string,
   headerImageAlign?: string,
@@ -20,6 +24,7 @@ type CaseStudyHeaderProps = {
 const CaseStudyHeader = ({
   title,
   tagline,
+  headerClassName,
   headerImage,
   headerImageAlt,
   headerImageAlign = 'center',
@@ -31,7 +36,7 @@ const CaseStudyHeader = ({
     <Social {...social} />
     <div className={styles.header} style={{ backgroundColor: headerColor }}>
       <div className={styles.header__container}>
-        <div className={styles.header__imageContainer} style={{ justifyContent: headerImageAlign }}>
+        <div className={cx('header__imageContainer', headerClassName)} style={{ justifyContent: headerImageAlign }}>
           <img src={headerImage} alt={headerImageAlt} className={styles.header__image} />
         </div>
       </div>
