@@ -29,7 +29,6 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
       headerImage={headerImage}
       headerImageAlt="image"
       headerColor="#F2F3ED"
-      headerImageAlign="left"
       contactUsURL={contactUsURL}
       social={social}
     />
