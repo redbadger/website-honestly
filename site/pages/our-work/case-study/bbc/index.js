@@ -32,13 +32,19 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
       contactUsURL={contactUsURL}
       social={social}
     />
-    <PullQuote
-      author={{
-        name: 'Eleni Sharp',
-        title: 'Senior product manager, BBC Connected Studios',
-      }}
-      text="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
-    />
+    <CaseStudySection>
+      <p>
+        <PullQuote
+          author={{
+            name: 'Eleni Sharp',
+            title: 'Senior product manager, BBC Connected Studios',
+          }}
+          text="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
+        />
+      </p>
+
+    </CaseStudySection>
+
     <CaseStudySection title="The challenge">
       <p>
         Nine million people visit the BBC Homepage each week but most use it as an access point to
@@ -62,14 +68,16 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
         communities, means the content is refined as the site ‘learns’ more about what a user
         accesses and how they interact with it.
       </p>
+      <p>
+        <PullQuote
+          author={{
+            name: 'Eleni Sharp',
+            title: 'Senior product manager, BBC Connected Studios',
+          }}
+          text="The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns."
+        />
+      </p>
     </CaseStudySection>
-    <PullQuote
-      author={{
-        name: 'Eleni Sharp',
-        title: 'Senior product manager, BBC Connected Studios',
-      }}
-      text="The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns."
-    />
     <CaseStudySection title="Business benefits">
       <p>
         For Connected Studio the key metric was the feedback from consumers and overall the reaction

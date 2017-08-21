@@ -36,7 +36,10 @@ const CaseStudyHeader = ({
     <Social {...social} />
     <div className={styles.header} style={{ backgroundColor: headerColor }}>
       <div className={styles.header__container}>
-        <div className={cx('header__imageContainer', headerClassName)} style={{ justifyContent: headerImageAlign }}>
+        <div
+          className={cx('header__imageContainer', headerClassName)}
+          style={{ justifyContent: headerImageAlign }}
+        >
           <img src={headerImage} alt={headerImageAlt} className={styles.header__image} />
         </div>
       </div>

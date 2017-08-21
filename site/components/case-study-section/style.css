@@ -10,11 +10,11 @@
   margin-bottom: 40px;
 }
 
-.content p {
+.content__wrapper > p {
   margin-bottom: 20px;
 }
 
-.content p img {
+.content__wrapper > p img {
   width: 100%;
   margin-top: 40px;
 }
@@ -44,7 +44,7 @@
     padding: 0px 20px 0px;
   }
 
-  .content p {
+  .content__wrapper > p {
     padding-left: 114px;
   }
 
@@ -68,7 +68,7 @@
     margin-bottom: 60px;
   }
 
-  .content p {
+  .content__wrapper > p {
     padding-left: 30%;
     padding-right: 10%;
   }

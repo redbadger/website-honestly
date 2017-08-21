@@ -34,10 +34,11 @@ blockquote:after {
   color: badgerRedOnWhite;
   text-align: left;
   padding: 0 22px;
-  background: #FFF;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 40px;
+  border-top: 2px solid #cccccc;
+  border-bottom: 2px solid #cccccc;
 }
 
 .quotation__author {

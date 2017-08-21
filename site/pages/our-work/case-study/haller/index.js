@@ -61,16 +61,17 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
         </ul>
 
       </p>
-
+      <p>
+        <PullQuote
+          author={{
+            name: 'Louise Piper',
+            title: 'Founding Trustee of Haller',
+          }}
+          text="This web app fits perfectly with our approach – it releases potential through practical ideas that are collaborative, self-sustainable and resourceful"
+        />
+      </p>
     </CaseStudySection>
 
-    <PullQuote
-      author={{
-        name: 'Louise Piper',
-        title: 'Founding Trustee of Haller',
-      }}
-      text="This web app fits perfectly with our approach – it releases potential through practical ideas that are collaborative, self-sustainable and resourceful"
-    />
     <CaseStudySection title="Solution">
       <p>
         Red Badger staff worked together with design agency, Pearlfisher, to provide the user
