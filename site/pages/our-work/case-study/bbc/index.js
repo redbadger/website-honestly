@@ -39,7 +39,7 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
             name: 'Eleni Sharp',
             title: 'Senior product manager, BBC Connected Studios',
           }}
-          text="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
+          text="Red Badger is bursting with creativity... and makes the complicated straightforward."
         />
       </p>
 
