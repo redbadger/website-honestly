@@ -34,8 +34,8 @@ blockquote:after {
   color: badgerRedOnWhite;
   text-align: left;
   padding: 0 22px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 40px;
   background: #FFFFFF;
 }
@@ -72,6 +72,8 @@ blockquote:after {
     background: transparent;
     border-top: 2px solid #cccccc;
     border-bottom: 2px solid #cccccc;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .quotation__wrapper {
@@ -93,6 +95,8 @@ blockquote:after {
 @media largeScreen {
   .quotation {
     margin-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .quotation__wrapper {
