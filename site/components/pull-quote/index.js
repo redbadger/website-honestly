@@ -15,16 +15,20 @@ type PullQuoteProps = {
 
 const PullQuote = ({ author, text }: PullQuoteProps) => {
   return (
-    <div className={styles.quotation}>
-      <blockquote>
-        <p className={styles.quotation__text}>
-          {text}
-        </p>
-      </blockquote>
+    <div className={styles.quotation__wrapper}>
+      <div className={styles.quotation__innerWrapper}>
+        <div className={styles.quotation}>
+          <blockquote>
+            <p className={styles.quotation__text}>
+              {text}
+            </p>
+          </blockquote>
 
-      <div className={styles.quotation__author}>
-        <div className={styles.quotation__author__name}>— {author.name}</div>
-        <div className={styles.quotation__author__title}>{author.title}</div>
+          <div className={styles.quotation__author}>
+            <div className={styles.quotation__author__name}>— {author.name}</div>
+            <div className={styles.quotation__author__title}>{author.title}</div>
+          </div>
+        </div>
       </div>
     </div>
   );

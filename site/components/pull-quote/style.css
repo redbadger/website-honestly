@@ -37,8 +37,7 @@ blockquote:after {
   padding-top: 40px;
   padding-bottom: 40px;
   margin-bottom: 40px;
-  border-top: 2px solid #cccccc;
-  border-bottom: 2px solid #cccccc;
+  background: #FFFFFF;
 }
 
 .quotation__author {
@@ -70,7 +69,22 @@ blockquote:after {
 @media mediumScreen {
   .quotation {
     text-align: center;
+    background: transparent;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
   }
+
+  .quotation__wrapper {
+    max-width: 1440px;
+    padding: 0px 20px 0px;
+    margin: auto;
+  }
+
+  .quotation__innerWrapper {
+    padding-left: 114px;
+    padding-right: 0px;
+  }
+
   .quotation__text {
     font-size: 30px;
   }
@@ -79,5 +93,14 @@ blockquote:after {
 @media largeScreen {
   .quotation {
     margin-bottom: 60px;
+  }
+
+  .quotation__wrapper {
+    padding: 0px 120px 0px;
+  }
+
+  .quotation__innerWrapper {
+    padding-left: 30%;
+    padding-right: 10%;
   }
 }

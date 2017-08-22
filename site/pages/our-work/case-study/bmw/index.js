@@ -43,16 +43,14 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
         exude BMW’s passion for technical innovation. BMW wanted to live that brand through the
         museum’s web presence, and turned to Red Badger to discover how.
       </p>
-      <p>
-        <PullQuote
-          author={{
-            name: 'Dr. Rodepeter',
-            title: 'Director, BMW Museum',
-          }}
-          text="The BMW Museum Virtual Tour is a great way for visitors to immerse themselves in what the museum has to offer"
-        />
-      </p>
     </CaseStudySection>
+    <PullQuote
+      author={{
+        name: 'Dr. Rodepeter',
+        title: 'Director, BMW Museum',
+      }}
+      text="The BMW Museum Virtual Tour is a great way for visitors to immerse themselves in what the museum has to offer"
+    />
 
     <CaseStudySection title="Solution">
       <p>

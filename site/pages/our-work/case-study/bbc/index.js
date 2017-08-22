@@ -32,18 +32,13 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
       contactUsURL={contactUsURL}
       social={social}
     />
-    <CaseStudySection>
-      <p>
-        <PullQuote
-          author={{
-            name: 'Eleni Sharp',
-            title: 'Senior product manager, BBC Connected Studios',
-          }}
-          text="Red Badger is bursting with creativity... and makes the complicated straightforward."
-        />
-      </p>
-
-    </CaseStudySection>
+    <PullQuote
+      author={{
+        name: 'Eleni Sharp',
+        title: 'Senior product manager, BBC Connected Studios',
+      }}
+      text="Red Badger is bursting with creativity... and makes the complicated straightforward."
+    />
 
     <CaseStudySection title="The challenge">
       <p>
@@ -68,16 +63,14 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
         communities, means the content is refined as the site ‘learns’ more about what a user
         accesses and how they interact with it.
       </p>
-      <p>
-        <PullQuote
-          author={{
-            name: 'Eleni Sharp',
-            title: 'Senior product manager, BBC Connected Studios',
-          }}
-          text="The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns."
-        />
-      </p>
     </CaseStudySection>
+    <PullQuote
+      author={{
+        name: 'Eleni Sharp',
+        title: 'Senior product manager, BBC Connected Studios',
+      }}
+      text="The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns."
+    />
     <CaseStudySection title="Business benefits">
       <p>
         For Connected Studio the key metric was the feedback from consumers and overall the reaction
