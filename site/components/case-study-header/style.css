@@ -52,6 +52,11 @@
 }
 
 @media mediumScreen {
+  .header__image {
+    width: auto;
+    max-height: 330px;
+  }
+
   .content__wrapper {
     padding: 30px 20px 0px;
   }
@@ -74,6 +79,7 @@
 
   .header__image {
     height: 456px;
+    max-height: none;
     width: auto;
   }
 
