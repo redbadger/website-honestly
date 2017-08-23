@@ -15,11 +15,7 @@ export default function EventsBanner() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          src={desktopBanner}
-          alt={bannerAltText}
-          className={styles.eventsDesktopBanner}
-        />
+        <img src={desktopBanner} alt={bannerAltText} className={styles.eventsDesktopBanner} />
         <img src={tabletBanner} alt={bannerAltText} className={styles.eventsTabletBanner} />
         <img src={mobileBanner} alt={bannerAltText} className={styles.eventsMobileBanner} />
       </a>
