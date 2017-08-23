@@ -5,6 +5,8 @@ import desktopBanner from './images/events-desktop-banner.jpg';
 import tabletBanner from './images/events-tablet-banner.png';
 import mobileBanner from './images/events-mobile-banner.png';
 
+const bannerAltText = 'Are you bold with technology? Join our webinar';
+
 export default function EventsBanner() {
   return (
     <div className={styles.bannerContainer}>
@@ -15,11 +17,11 @@ export default function EventsBanner() {
       >
         <img
           src={desktopBanner}
-          alt="Are you bold with technology? Join our webinar"
+          alt={bannerAltText}
           className={styles.eventsDesktopBanner}
         />
-        <img src={tabletBanner} alt="React London 2017" className={styles.eventsTabletBanner} />
-        <img src={mobileBanner} alt="React London 2017" className={styles.eventsMobileBanner} />
+        <img src={tabletBanner} alt={bannerAltText} className={styles.eventsTabletBanner} />
+        <img src={mobileBanner} alt={bannerAltText} className={styles.eventsMobileBanner} />
       </a>
     </div>
   );
