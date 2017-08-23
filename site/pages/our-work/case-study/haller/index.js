@@ -30,7 +30,7 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
       tagline="Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers"
       headerClassName={styles.header}
       headerImage={headerImage}
-      headerImageAlt="image"
+      headerImageAlt="Sketching out ideas for the application"
       headerImageAlign="center"
       headerColor="#942c2d"
       contactUsURL={contactUsURL}

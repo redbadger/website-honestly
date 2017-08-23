@@ -27,7 +27,7 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
     <CaseStudyHeader
       title="BMW Virtual Museum: The shortcut between you and the museum"
       headerImage={headerImage}
-      headerImageAlt="image"
+      headerImageAlt="Range of devices showing BMW virtual museum"
       headerColor="#f4f1f2"
       contactUsURL={contactUsURL}
       social={social}

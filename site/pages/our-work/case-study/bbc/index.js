@@ -27,7 +27,7 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
       title="BBC Now: Delivering a better customer experience, faster"
       tagline="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
       headerImage={headerImage}
-      headerImageAlt="image"
+      headerImageAlt="Tablet device showing screenshot of BBC website"
       headerColor="#F2F3ED"
       contactUsURL={contactUsURL}
       social={social}
