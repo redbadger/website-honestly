@@ -12,32 +12,32 @@
   margin-top: 20px;
 }
 
-.reactConfDesktopBanner {
+.eventsDesktopBanner {
   width: 920px;
 }
 
-.reactConfTabletBanner {
+.eventsTabletBanner {
   width: 768px;
 }
 
-.reactConfMobileBanner {
+.eventsMobileBanner {
   width: 320px;
 }
 
 @media mobile {
-  .reactConfDesktopBanner, .reactConfTabletBanner {
+  .eventsDesktopBanner, .eventsTabletBanner {
     display: none;
   }
 }
 
 @media tablet-only {
-  .reactConfMobileBanner, .reactConfDesktopBanner {
+  .eventsMobileBanner, .eventsDesktopBanner {
     display: none;
   }
 }
 
 @media desktop {
-  .reactConfMobileBanner, .reactConfTabletBanner {
+  .eventsMobileBanner, .eventsTabletBanner {
     display: none;
   }
 }
