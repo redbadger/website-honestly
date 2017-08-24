@@ -1,0 +1,211 @@
+@value badgerWhite, badgerBlack, badgerAccessibleRedOnWhite, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.caseStudy {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  font-size: 20px;
+  line-height: 27px;
+  background-color: badgerWhite;
+}
+
+.header {
+  width: 100%;
+  background-color: #c3cfd7;
+  margin-bottom: 10px;
+}
+
+.header__container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.header__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.content {
+  padding-bottom: 40px;
+}
+
+.content__wrapper {
+  padding: 20px 20px 20px;
+}
+
+.content__mainTitle {
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 0px;
+}
+
+.content__title {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.content__title:first-child {
+  margin-top: 5px;
+}
+
+.content__redTitle {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  display: block;
+  color: badgerAccessibleRedOnWhite;
+}
+
+.content__secondaryTitle {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.content__paragraph {
+  margin-bottom: 20px;
+}
+
+.content__list {
+  list-style-type: disc;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.content__list__element {
+  padding-left: 8px;
+  line-height: 28px;
+}
+
+.content__ordered__list {
+  list-style-type: disc;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.content__ordered__list__element {
+  padding-left: 8px;
+  line-height: 28px;
+}
+
+.listBox__label {
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  font-size: 16px;
+}
+
+.cmsIllustration {
+  background: #DED3C3;
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.cmsIllustration__image {
+  height: auto;
+  width: 100%;
+  max-width: 691px;
+}
+
+@media mediumScreen {
+  
+  .header__container {
+    height: 400px;
+  }
+
+  .header__image {
+    height: 400px;
+    width: auto;
+  }
+  
+  .content__wrapper {
+    padding: 30px 20px 20px;
+  }
+
+  .content__paragraph {
+    padding-left: 114px;
+  }
+
+  .content__secondaryTitle {
+    padding-left: 114px;
+  }
+
+  .content__mainTitle {
+    margin-bottom: 9px;
+  }
+
+  .content__title,
+  .content__title:first-child {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .overview {
+    display: flex;
+  }
+
+  .listBox__item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .overview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+}
+
+@media largeScreen {
+  .header__container {
+    height: 400px;
+  }
+
+  .header__image {
+    height: 456px;
+    width: auto;
+  }
+
+  .content {
+    max-width: 1400px;
+    padding: 20px 120px 60px;
+    margin: auto;
+  }
+
+  .content__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content__paragraph, .content__secondaryTitle {
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+
+  .content__mainTitle {
+    position: relative;
+    top: -96px;
+    display: block;
+    padding: 20px;
+    height: 100%;
+    background-color: badgerWhite;
+    margin-bottom: -73px;
+  }
+
+  .content__title {
+    padding-left: 10%;
+  }
+
+  .header {
+    padding-bottom: 56px;
+  }
+
+}
