@@ -30,7 +30,11 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) =>
     <div className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
-          <img src={headerImage} alt="A Sky customer standing at cross-roads" className={styles.header__image} />
+          <img
+            src={headerImage}
+            alt="A Sky customer standing at cross-roads"
+            className={styles.header__image}
+          />
         </div>
       </div>
     </div>
