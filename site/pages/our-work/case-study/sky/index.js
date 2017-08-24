@@ -17,15 +17,15 @@ type SkyCaseStudyProps = {
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'BMW Virtual Museum: The shortcut between you and the museum',
+  description: 'Helping Sky customers help themselves, with a refreshed customer service website',
   metaImage: headerImage,
-  url: 'https://red-badger.com/our-work/case-study/bmw',
+  url: 'https://red-badger.com/our-work/case-study/sky',
 };
 
 const SkyCaseStudy = ({ contactUsURL }: SkyCaseStudyProps) =>
   <CaseStudyFrame>
     <CaseStudyHeader
-      title="BMW Virtual Museum: The shortcut between you and the museum"
+      title="Helping Sky customers help themselves, with a refreshed customer service website"
       headerImage={headerImage}
       headerImageAlt="Range of devices showing BMW virtual museum"
       headerColor="#8ee2ec"
