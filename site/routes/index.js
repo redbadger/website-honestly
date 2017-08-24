@@ -22,7 +22,7 @@ import Technology from '../pages/technology';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
 import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
-import SkyCaseStudy from '../pages/our-work/case-study/sky';
+import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
 import BMWCaseStudy from '../pages/our-work/case-study/bmw';
 import BBCCaseStudy from '../pages/our-work/case-study/bbc';
 import HallerCaseStudy from '../pages/our-work/case-study/haller';
@@ -44,7 +44,7 @@ const componentMap = {
   retailerCaseStudy: RetailerCaseStudy,
   camdenMarketCaseStudy: CamdenMarketCaseStudy,
   financialTimesCaseStudy: FinancialTimesCaseStudy,
-  skyCaseStudy: SkyCaseStudy,
+  skyCMSCaseStudy: SkyCMSCaseStudy,
   bmwCaseStudy: BMWCaseStudy,
   bbcCaseStudy: BBCCaseStudy,
   hallerCaseStudy: HallerCaseStudy,
