@@ -28,7 +28,7 @@ const SkyCaseStudy = ({ contactUsURL }: SkyCaseStudyProps) =>
       title="BMW Virtual Museum: The shortcut between you and the museum"
       headerImage={headerImage}
       headerImageAlt="Range of devices showing BMW virtual museum"
-      headerColor="#f4f1f2"
+      headerColor="#8ee2ec"
       contactUsURL={contactUsURL}
       social={social}
     />
