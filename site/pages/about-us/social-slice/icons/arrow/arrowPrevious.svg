@@ -1,14 +1,1 @@
-<svg width="23" height="23" xmlns="http://www.w3.org/2000/svg">
- <g>
-  <rect fill="none" height="25" width="25" y="-1" x="-1"/>
- </g>
- <g>
-  <g stroke="null" transform="rotate(-180 12,11.5) " fill-rule="evenodd" fill="none">
-   <g stroke="#F8F8F8" fill="#F8F8F8">
-    <g stroke="null">
-     <polygon stroke="null" points="12,1.04547119140625 22.909088134765625,11.5 12,21.95452880859375 10.08612060546875,20.12042236328125 17.677825927734375,12.78387451171875 1.090911865234375,12.78387451171875 1.090911865234375,10.21612548828125 17.677825927734375,10.21612548828125 10.08612060546875,2.87957763671875 "/>
-    </g>
-   </g>
-  </g>
- </g>
-</svg>
+<svg width="23" height="23" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M-1-1h25v25H-1z"/><path d="M12 21.955L1.09 11.5 12 1.045l1.914 1.835-7.592 7.336H22.91v2.568H6.322l7.592 7.336z" stroke="null" fill="#F8F8F8" fill-rule="evenodd"/></svg>
