@@ -118,7 +118,7 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) =>
           <img
             src={articleImage}
             alt="Screenshot of Sky Help and Support page"
-            className={styles.cmsIllustration__image}
+            className={styles.articleImage}
           />
         </p>
         <h2 className={styles.content__title}>

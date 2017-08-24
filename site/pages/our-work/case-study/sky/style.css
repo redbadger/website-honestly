@@ -101,14 +101,7 @@
   font-size: 16px;
 }
 
-.cmsIllustration {
-  background: #DED3C3;
-  text-align: center;
-  position: relative;
-  padding-bottom: 40px;
-}
-
-.cmsIllustration__image {
+.articleImage {
   height: auto;
   width: 100%;
   max-width: 691px;
