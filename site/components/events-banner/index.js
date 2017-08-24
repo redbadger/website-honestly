@@ -7,7 +7,7 @@ import mobileBanner from './images/events-mobile-banner.png';
 
 const trackAnalytics = title => () =>
   ReactGA.event({
-    category: 'DesktopHeaderNavigation',
+    category: 'EventsPageBanner',
     action: title,
     label: `From: ${window.location.pathname}`,
   });
