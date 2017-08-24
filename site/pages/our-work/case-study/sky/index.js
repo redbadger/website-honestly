@@ -2,8 +2,8 @@ import React from 'react';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
-import headerImage from './images/header.png';
-import cmsIllustrationImage from './images/cms-illustration.jpg';
+import headerImage from './images/header.jpg';
+import articleImage from './images/article.jpg';
 import authorQuoteImage from './images/quote-author.jpg';
 
 import ListBox from '../../../../components/list-box';
@@ -142,7 +142,7 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) =>
         </p>
         <p className={styles.content__paragraph}>
           <img
-            src={cmsIllustrationImage}
+            src={articleImage}
             alt="cms illustration"
             className={styles.cmsIllustration__image}
           />

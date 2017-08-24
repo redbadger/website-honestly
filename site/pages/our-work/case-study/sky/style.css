@@ -11,7 +11,7 @@
 
 .header {
   width: 100%;
-  background-color: #c3cfd7;
+  background-color: #8ee2ec;
   margin-bottom: 10px;
 }
 
@@ -115,7 +115,7 @@
 }
 
 @media mediumScreen {
-  
+
   .header__container {
     height: 400px;
   }
@@ -124,7 +124,7 @@
     height: 400px;
     width: auto;
   }
-  
+
   .content__wrapper {
     padding: 30px 20px 20px;
   }
