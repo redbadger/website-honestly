@@ -41,12 +41,12 @@
   margin: 0;
 }
 
-.nav li a {
+.nav li a, p a {
   color: badgerWhite;
   text-decoration: none;
 }
 
-.nav li a:hover {
+.nav li a:hover, p a:hover {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
