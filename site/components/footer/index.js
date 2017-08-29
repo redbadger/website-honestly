@@ -180,8 +180,19 @@ const Footer = () =>
             <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
             <div className={styles.mapContainer}>
               <address>
-                <p>4th Floor, 2 Old Street Yard, London<br />EC1Y 8AF, UK</p>
-                <p className={styles.addressHint}>(The entrance is from Featherstone Street)</p>
+                <p>4th Floor</p>
+                <p>2 Old Street Yard</p>
+                <p>Featherstone Street</p>
+                <p>London</p>
+                <p>
+                  <a
+                    title="Red Badger address on Google Maps"
+                    aria-label="Red Badger address on Google Maps"
+                    href="https://www.google.co.uk/maps/place/Red+Badger/@51.524652,-0.0903147,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca9aaaaaaab:0xf14bdb5cbedebef9!8m2!3d51.524652!4d-0.088126"
+                  >
+                    EC1Y 8AF
+                  </a>
+                </p>
               </address>
             </div>
           </div>
