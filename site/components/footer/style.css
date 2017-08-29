@@ -158,17 +158,12 @@
 @media screen and (min-width: 820px) {
   .footerMap {
     position: absolute;
-    width: 787px;
-    height: 499px;
+    width: 500px;
+    height: 446px;
     top: 0;
-    right: 0;
+    right: 35px;
     display: block;
     overflow: hidden;
-  }
-
-  .footerMap svg {
-    position: absolute;
-    top: -99px;
   }
 
   .footer {
@@ -191,6 +186,10 @@
 }
 
 @media largeScreen {
+  .footerMap {
+    right: -18px;
+  }
+
   .footer {
     display: flex;
   }
@@ -213,7 +212,7 @@
   }
 
   .disclaimer {
-    margin-top: 120px;
+    margin-top: 30px;
     padding-bottom: 20px;
   }
 
