@@ -16,8 +16,7 @@ help:
 
 
 badger: ## Red Badger 4 lyfe!
-	@cat assets/badger.txt
-
+	script -q /dev/null npm run badger
 
 clean: ## Remove compiled files
 	rm -rf dist
@@ -28,7 +27,7 @@ check-deps: ## Check deps for updates
 
 
 dev: badger ## Run the frontend dev server
-	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --hot --inline --config webpack.dev.browser.config.js --content-base dist/ --history-api-fallback --host 0.0.0.0
+	$(LOAD_ENV) && $(WEBPACK_DEV_SERVER) --color --hot --config webpack.dev.browser.config.js
 
 
 fetch:
