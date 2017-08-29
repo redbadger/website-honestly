@@ -11,6 +11,7 @@
   width: auto;
   position: absolute;
   left: calc(50% - 284px);
+  top: 0;
 }
 
 @media mediumScreen {
