@@ -6,7 +6,7 @@ import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
 import BlogSlice from './blog-slice';
-import NewsletterSlice from './newsletter-slice';
+import WebinarSignupSlice from './webinar-signup-slice';
 
 import techRoundTableImage from './images/techroundtable.png';
 import slackSVG from './images/slack.svg';
@@ -68,7 +68,7 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         </section>
       </section>
     </div>
-    <NewsletterSlice />
+    <WebinarSignupSlice />
     <section className={styles.pastAndFuture}>
       <div className={styles.leftBlogs}>
         <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and tested'} />
