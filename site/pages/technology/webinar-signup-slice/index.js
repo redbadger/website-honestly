@@ -1,5 +1,14 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import styles from '../style.css';
+
+
+const trackAnalytics = title => () =>
+   ReactGA.event({
+     category: 'TechnologyPage',
+     action: title,
+     label: `From: ${window.location.pathname}`,
+   });
 
 const webinarLink =
   'https://attendee.gotowebinar.com/register/4215309162791382274?source=RB-Tech-website';
@@ -13,6 +22,7 @@ export default () =>
         href={webinarLink}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={trackAnalytics('Webinar-technology page -button')}
       >
         Sign up to attend
       </a>
