@@ -182,7 +182,6 @@ const Footer = () =>
               <address>
                 <p>4th Floor</p>
                 <p>2 Old Street Yard</p>
-                <p>Featherstone Street</p>
                 <p>London</p>
                 <p>
                   <a
@@ -193,6 +192,7 @@ const Footer = () =>
                     EC1Y 8AF
                   </a>
                 </p>
+                <p className={styles.addressHint}>(Featherstone Street entrance)</p>
               </address>
             </div>
           </div>

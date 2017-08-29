@@ -2,8 +2,8 @@
 @value mediumScreen, largeScreen, linkSize, containerMaxWidth from "../../css/_sizes.css";
 
 .addressHint {
-  font-family: 'ProximaNova-Semibold', sans-serif;
-  font-size: 14px;
+  composes: sansSerif from "../../css/typography/_fonts.css";
+  margin-top: 14px;
 }
 
 .screenReaderText {
