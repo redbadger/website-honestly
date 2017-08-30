@@ -2,7 +2,6 @@
 @value mediumScreen, largeScreen, linkSize, containerMaxWidth from "../../css/_sizes.css";
 
 .addressHint {
-  composes: sansSerif from "../../css/typography/_fonts.css";
   margin-top: 14px;
 }
 
