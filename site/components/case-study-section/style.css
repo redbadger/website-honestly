@@ -1,0 +1,88 @@
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+
+.content {
+  padding-bottom: 0px;
+}
+
+.content__wrapper {
+  padding: 0px 20px 0px;
+  margin-bottom: 40px;
+}
+
+.content__wrapper > p {
+  margin-bottom: 20px;
+}
+
+.content__wrapper > p img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.content h3 {
+  font-weight: 900;
+  line-height: 1.1;
+  color: #212121;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.content ul li {
+  padding-left: 8px;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+@media mediumScreen {
+  .content__wrapper {
+    padding: 0px 20px 0px;
+  }
+
+  .content__wrapper > p {
+    padding-left: 114px;
+  }
+
+  .content h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media largeScreen {
+
+  .content {
+    max-width: 1400px;
+    padding: 0px 120px 0px;
+    margin: auto;
+  }
+
+  .content__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 60px;
+  }
+
+  .content__wrapper > p {
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+
+  .content h3 {
+    text-align: right;
+    padding-right: calc(70% + 20px);
+    position: relative;
+    top: 25px;
+    margin-top: -25px;
+    margin-bottom: 0px;
+  }
+
+  .content p img {
+    margin-top: 30px;
+  }
+}

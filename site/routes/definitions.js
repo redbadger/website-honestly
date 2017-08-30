@@ -108,6 +108,30 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
   },
   {
+    title: 'BMW Virtual Museum case study',
+    key: 'bmwCaseStudy',
+    route: 'our-work/case-study/bmw',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
+    title: 'BBC Now case study',
+    key: 'bbcCaseStudy',
+    route: 'our-work/case-study/bbc-now',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
+    title: 'Haller Foundation case study',
+    key: 'hallerCaseStudy',
+    route: 'our-work/case-study/haller',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
     title: 'Sky case study',
     key: 'skyCaseStudy',
     route: 'our-work/case-study/sky-cms',
