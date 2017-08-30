@@ -5,7 +5,7 @@ import jump from 'jump.js';
 import styles from './style.css';
 
 type ContactBoxProps = {
-  target: string,
+  target?: string,
 };
 
 const ContactBox = ({ target = '#contactUs' }: ContactBoxProps) =>

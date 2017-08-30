@@ -2,7 +2,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-type SocialProps = {
+export type SocialProps = {
   title: string,
   description: string,
   metaImage: string,

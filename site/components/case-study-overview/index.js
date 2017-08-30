@@ -22,7 +22,7 @@ import camdenFigureSVG from './SVG/camden-figure.svg';
 import skyFigureSVG from './SVG/sky-figure.svg';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
-const CaseStudy = () =>
+const CaseStudyOverview = () =>
   <section className={styles.caseStudyContainer}>
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.limitWidth}>
@@ -115,4 +115,4 @@ const CaseStudy = () =>
     </div>
   </section>;
 
-export default CaseStudy;
+export default CaseStudyOverview;

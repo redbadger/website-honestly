@@ -46,7 +46,7 @@ const slices = {
 };
 
 type WhatToReadNextProps = {
-  currentPage: string,
+  currentPage?: string,
   maxNumberSlices?: number,
 };
 
