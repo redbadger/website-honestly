@@ -106,7 +106,7 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) =>
           Sky was already a leader in the use of agile methodologies and lean ways of working, and
           were determined to work with a partner that would help them to advance these skills. To
           complement their established structures, augmented by Sky’s UX/Design resources, we
-          brought in an n integrated team of UX, design, and technology to deliver rapidly. Bleeding
+          brought in an integrated team of UX, design, and technology to deliver rapidly. Bleeding
           edge software was utilised to revamp the site and give it the modernisation it needed.
         </p>
         <ContactBox />
