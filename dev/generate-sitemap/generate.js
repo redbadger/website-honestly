@@ -12,13 +12,10 @@ const writeFile = promisify(fs.writeFile);
 const oldBadgerBrainHost = process.env.BADGER_BRAIN_HOST;
 process.env.BADGER_BRAIN_HOST = 'https://brain.red-badger.com/graphql';
 
-console.log('Generating sitemap...')
+console.log('Generating sitemap...');
 getSiteState()
   .then(state => {
-    return Promise.all([
-      formatRoutes(getSiteRoutes(state, routeDefinitions)),
-      getBlogXML(),
-    ]);
+    return Promise.all([formatRoutes(getSiteRoutes(state, routeDefinitions)), getBlogXML()]);
   })
   .then(([siteXML, blogXML]) => {
     const xml = `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">

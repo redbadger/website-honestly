@@ -2,10 +2,12 @@
 
 export default function formatRoutes(routes: string[]): string {
   return routes
-    .map(route => `    <url>
+    .map(
+      route => `    <url>
         <loc>
           https://red-badger.com/${route}
         </loc>
-    </url>`)
+    </url>`,
+    )
     .join('\n');
 }

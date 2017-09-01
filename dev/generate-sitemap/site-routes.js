@@ -12,7 +12,7 @@ export default function getSiteRoutes(state, routeDefinitions) {
 
         const fragments = route.split('+');
         if (fragments.length > 1) {
-          const routesFromFragments = fragments.map((_, i) => fragments.slice(0, i+1).join(''));
+          const routesFromFragments = fragments.map((_, i) => fragments.slice(0, i + 1).join(''));
           allRoutes.push(...routesFromFragments);
         } else {
           allRoutes.push(route);
@@ -23,10 +23,7 @@ export default function getSiteRoutes(state, routeDefinitions) {
     }
   }
 
-  const extraRoutes = [
-    'blog',
-    'search',
-  ];
+  const extraRoutes = ['blog', 'search'];
 
   const routesToIgnore = ['404', '50x'];
 
