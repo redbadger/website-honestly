@@ -46,6 +46,7 @@ deployMaster() {
   pretty_block "Deploying current master to $1"
   make clean
   make build
+  make generate-sitemap
   pretty_success "Build complete!"
 
   pretty_block "Setting Version"
