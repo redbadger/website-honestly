@@ -11,7 +11,7 @@
 
 .header {
   width: 100%;
-  background-color: #8ee2ec;
+  background-color: #c3cfd7;
   margin-bottom: 10px;
 }
 
@@ -101,14 +101,21 @@
   font-size: 16px;
 }
 
-.articleImage {
+.cmsIllustration {
+  background: #DED3C3;
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.cmsIllustration__image {
   height: auto;
   width: 100%;
   max-width: 691px;
 }
 
 @media mediumScreen {
-
+  
   .header__container {
     height: 400px;
   }
@@ -117,7 +124,7 @@
     height: 400px;
     width: auto;
   }
-
+  
   .content__wrapper {
     padding: 30px 20px 20px;
   }

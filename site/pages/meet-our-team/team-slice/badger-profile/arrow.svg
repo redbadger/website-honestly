@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
-    <title>FA206475-CD2E-4157-B3A6-D143BF6A02EF</title>
-    <desc>Created with sketchtool.</desc>
-    <defs></defs>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(1.000000, 0.000000)" stroke="#FC1D42" fill="#FC1D42">
-            <polygon points="6 8.8817842e-16 12 6 6 12 4.94736842 10.9473684 9.12280702 6.73684211 0 6.73684211 0 5.26315789 9.12280702 5.26315789 4.94736842 1.05263158"></polygon>
-        </g>
-    </g>
-</svg>
+<svg width="14" height="12" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l6 6-6 6-1.053-1.053 4.176-4.21H1V5.263h9.123l-4.176-4.21z" stroke="#FC1D42" fill="#FC1D42" fill-rule="evenodd"/></svg>
