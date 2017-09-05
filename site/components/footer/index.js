@@ -64,117 +64,117 @@ const Footer = () =>
 
         <div>
           <div className={cx('section', 'social', 'underline')}>
-          <span className={styles.screenReaderText}>Email us at</span>
-          <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>
-            <span className={styles.mailtoLinkText}>hello@red-badger.com</span>
-          </a>
-          <span className={styles.screenReaderText}>Call us on</span>
-          <a href="tel:+442035670555" className={styles.telLink}>
-            <span className={styles.telLinkText}>
-              <span>+</span>
-              <span>4</span>
-              <span>4 </span>
-              <span>(</span>
-              <span>0</span>
-              <span>) </span>
-              <span>2</span>
-              <span>0 </span>
-              <span>3</span>
-              <span>5</span>
-              <span>6</span>
-              <span>7 </span>
-              <span>0</span>
-              <span>5</span>
-              <span>5</span>
-              <span>5</span>
+            <span className={styles.screenReaderText}>Email us at</span>
+            <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>
+              <span className={styles.mailtoLinkText}>hello@red-badger.com</span>
+            </a>
+            <span className={styles.screenReaderText}>Call us on</span>
+            <a href="tel:+442035670555" className={styles.telLink}>
+              <span className={styles.telLinkText}>
+                <span>+</span>
+                <span>4</span>
+                <span>4 </span>
+                <span>(</span>
+                <span>0</span>
+                <span>) </span>
+                <span>2</span>
+                <span>0 </span>
+                <span>3</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7 </span>
+                <span>0</span>
+                <span>5</span>
+                <span>5</span>
+                <span>5</span>
+              </span>
+            </a>
+            <span className={styles.screenReaderText}>
+              Find us on social media
             </span>
-          </a>
-          <span className={styles.screenReaderText}>
-            Find us on social media
-          </span>
-          <ul className={styles.socialLinks}>
-            <li>
-              <a
-                href="https://github.com/redbadger"
-                title="Red Badger Github"
-                aria-label="Red Badger Github"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={githubSVG} title="Github" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/redbadgerteam"
-                title="Red Badger Twitter"
-                aria-label="Red Badger Twitter"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={twitterSVG} title="Twitter" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://redbadger.typeform.com/to/cBuJUl"
-                title="Red Badger Slack"
-                aria-label="Red Badger Slack"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={slackSVG} title="Slack" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/red-badger"
-                title="Red Badger Linkedin"
-                aria-label="Red Badger Linkedin"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={linkedinSVG} title="Linkedin" />
-              </a>
-            </li>
+            <ul className={styles.socialLinks}>
+              <li>
+                <a
+                  href="https://github.com/redbadger"
+                  title="Red Badger Github"
+                  aria-label="Red Badger Github"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={githubSVG} title="Github" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/redbadgerteam"
+                  title="Red Badger Twitter"
+                  aria-label="Red Badger Twitter"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={twitterSVG} title="Twitter" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://redbadger.typeform.com/to/cBuJUl"
+                  title="Red Badger Slack"
+                  aria-label="Red Badger Slack"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={slackSVG} title="Slack" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/red-badger"
+                  title="Red Badger Linkedin"
+                  aria-label="Red Badger Linkedin"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={linkedinSVG} title="Linkedin" />
+                </a>
+              </li>
 
-            <li>
-              <a
-                href="https://www.instagram.com/redbadgerteam/"
-                title="Red Badger Instagram"
-                aria-label="Red Badger Instagram"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={instagramSVG} title="Instagram" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/RedBadger"
-                title="Red Badger Facebook"
-                aria-label="Red Badger Facebook"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={facebookSVG} title="Facebook" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/redbadgerteam"
-                title="Red Badger Youtube"
-                aria-label="Red Badger Youtube"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={youtubeSVG} title="Youtube" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://plus.google.com/+Redbadgerteam"
-                title="Red Badger Google Plus"
-                aria-label="Red Badger Google Plus"
-                className={styles.socialIcon}
-              >
-                <InlineSVG src={gplusSVG} title="Google Plus" />
-              </a>
-            </li>
-          </ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/redbadgerteam/"
+                  title="Red Badger Instagram"
+                  aria-label="Red Badger Instagram"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={instagramSVG} title="Instagram" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/RedBadger"
+                  title="Red Badger Facebook"
+                  aria-label="Red Badger Facebook"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={facebookSVG} title="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/redbadgerteam"
+                  title="Red Badger Youtube"
+                  aria-label="Red Badger Youtube"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={youtubeSVG} title="Youtube" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://plus.google.com/+Redbadgerteam"
+                  title="Red Badger Google Plus"
+                  aria-label="Red Badger Google Plus"
+                  className={styles.socialIcon}
+                >
+                  <InlineSVG src={gplusSVG} title="Google Plus" />
+                </a>
+              </li>
+            </ul>
           </div>
           <div className={cx('section', 'address', 'underline')}>
             <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
