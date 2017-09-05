@@ -3,6 +3,7 @@ const baseConfig = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const devAppConfig = webpackMerge(baseConfig, {
   entry: {
@@ -24,6 +25,7 @@ const devAppConfig = webpackMerge(baseConfig, {
     new ExtractTextPlugin({
       disable: true,
     }),
+    new CopyWebpackPlugin([{ from: 'assets/state.json', to: 'state.json' }]),
   ],
 });
 
