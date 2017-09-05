@@ -30,11 +30,6 @@ blockquote:after {
   margin-top: 16px;
 }
 
-.quotation__author img {
-  width: 65px;
-  height: 65px;
-}
-
 .quotation__author__wrapper {
   composes: fontXS from "../../css/typography/_fonts.css";
   line-height: normal;
@@ -56,11 +51,6 @@ blockquote:after {
   composes: fontS2 from "../../css/typography/_fonts.css";
   display: inline;
   text-align: left;
-}
-
-.quotation__imageContainer {
-  margin-right: 13px;
-  padding-right: 13px;
 }
 
 @media mediumScreen {

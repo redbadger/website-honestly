@@ -1,5 +1,5 @@
 const groups = {
-  techPageSignup: '17dfd6ce16',
+  techPageSignup: process.env.MAILCHIMP_TECH_GROUP_ID,
 };
 
 export default groups;

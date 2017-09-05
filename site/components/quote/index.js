@@ -1,10 +1,17 @@
+// @flow
 import React from 'react';
-
+import Avatar from '../avatar';
 import styles from './style.css';
 
-const QuoteProps = {
-  author: Object,
-  text: String,
+type Author = {
+  name: string,
+  title: string,
+  image: string,
+};
+
+type QuoteProps = {
+  author: Author,
+  text: string,
 };
 
 const Quote = ({ author, text }: QuoteProps) => {
@@ -17,9 +24,7 @@ const Quote = ({ author, text }: QuoteProps) => {
       </blockquote>
 
       <div className={styles.quotation__author}>
-        <div className={styles.quotation__imageContainer}>
-          <img src={author.image} alt={author.name} />
-        </div>
+        <Avatar image={author.image} name={author.name} size={70} />
         <div className={styles.quotation__author__wrapper}>
           <span className={styles.quotation__author__name}>— {author.name}</span>
           <span className={styles.quotation__author__title}>{author.title}</span>

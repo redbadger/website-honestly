@@ -92,8 +92,8 @@
   line-height: 1.2em;
 }
 
-.fontM2 {
-  font-size: 24px;
+.fontM2, .fontStaticM2 {
+  font-size: 20px;
   line-height: 1.2em;
 }
 

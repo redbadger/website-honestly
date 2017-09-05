@@ -2,7 +2,7 @@
 import React from 'react';
 
 import TopSlice from './homepage-top-slice';
-import CaseStudy from '../../components/case-study';
+import CaseStudyOverview from '../../components/case-study-overview';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
@@ -29,7 +29,7 @@ const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => {
     <div>
       <Social {...social} />
       <TopSlice />
-      <CaseStudy />
+      <CaseStudyOverview />
       <Brie />
       <TechSlice />
       <ContactUs postURL={contactUsURL} yellow />

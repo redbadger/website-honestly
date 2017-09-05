@@ -70,14 +70,13 @@ export function formatUpdateResponse(res, data) {
   return defaultResponse;
 }
 
-export function formatFormInput(event, isEmailEncrypted) {
+export function formatFormInput(event, isEmailEncrypted, status) {
   let emailAddress = event.body.email_address;
   if (isEmailEncrypted) {
     emailAddress = decryptText(event.body.email_address);
   }
-  return {
+  const formattedInput = {
     email_address: emailAddress,
-    status: 'pending',
     interests: event.body.interests || {},
     merge_fields: {
       FIRSTNAME: event.body.name || '',
@@ -86,4 +85,8 @@ export function formatFormInput(event, isEmailEncrypted) {
       ROLE: event.body.role || '',
     },
   };
+
+  if (status) formattedInput.status = status;
+
+  return formattedInput;
 }

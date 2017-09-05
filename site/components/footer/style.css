@@ -1,6 +1,10 @@
 @value badgerRedOnBlack, badgerWhite, badgerBlack, linesOnBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, linkSize, containerMaxWidth from "../../css/_sizes.css";
 
+.addressHint {
+  margin-top: 14px;
+}
+
 .screenReaderText {
   composes: visuallyHidden from "../../css/_accessibility.css";
 }
@@ -36,17 +40,20 @@
   margin: 0;
 }
 
-.nav li a {
+.nav li a, p a {
   color: badgerWhite;
   text-decoration: none;
 }
 
-.nav li a:hover {
+.nav li a:hover, p a:hover {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
 .section {
   padding: 30px 0px;
+}
+
+.underline {
   border-bottom: 1px solid linesOnBlack;
 }
 
@@ -150,18 +157,16 @@
 @media screen and (min-width: 820px) {
   .footerMap {
     position: absolute;
-    width: 787px;
-    height: 499px;
+    width: 500px;
+    height: 446px;
     top: 0;
-    right: 0;
+    right: 35px;
     display: block;
     overflow: hidden;
   }
 
-  .mapPin {
-    position: absolute;
-    bottom: 5px;
-    right: 55px;
+  .footerMap svg {
+    padding-top: 1px;
   }
 
   .footer {
@@ -174,12 +179,7 @@
     bottom: 15px;
   }
 
-  .address {
-    position: absolute;
-    right: 264px;
-    top: 200px;
-  }
-  .section {
+  .underline {
     border-bottom: none;
   }
 
@@ -189,6 +189,11 @@
 }
 
 @media largeScreen {
+  .footerMap {
+    top: 10px;
+    right: -18px;
+  }
+
   .footer {
     display: flex;
   }
@@ -211,7 +216,7 @@
   }
 
   .disclaimer {
-    margin-top: 120px;
+    margin-top: 30px;
     padding-bottom: 20px;
   }
 

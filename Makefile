@@ -68,6 +68,10 @@ services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 	$(LOAD_ENV) \
 	&& $(SERVERLESS) deploy
 
+services-invoke-publish:
+	$(LOAD_ENV) \
+	&& $(SERVERLESS) invoke -f publish
+
 publish-service-invoke: ## Invoke the publish service
 	$(LOAD_ENV) \
 	&& curl -XPOST --fail $$PUBLISH_ENDPOINT
@@ -104,7 +108,7 @@ dist/services.zip: dist/services
 	&& zip -r ../services.zip *
 
 
-dist/services:
+dist/services: clean
 	export NODE_ENV=production \
 	&& $(LOAD_ENV) \
 	&& $(WEBPACK) --config webpack.lambda.config.js \
