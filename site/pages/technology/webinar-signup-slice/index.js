@@ -2,13 +2,12 @@ import React from 'react';
 import ReactGA from 'react-ga';
 import styles from '../style.css';
 
-
 const trackAnalytics = title => () =>
-   ReactGA.event({
-     category: 'TechnologyPage',
-     action: title,
-     label: `From: ${window.location.pathname}`,
-   });
+  ReactGA.event({
+    category: 'TechnologyPage',
+    action: title,
+    label: `From: ${window.location.pathname}`,
+  });
 
 const webinarLink =
   'https://attendee.gotowebinar.com/register/4215309162791382274?source=RB-Tech-website';
