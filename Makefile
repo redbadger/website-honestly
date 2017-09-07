@@ -76,9 +76,11 @@ prettier: ## Run the prettifier
 test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 
+build: dist/services.zip ## Compile project used in CI deploy
+	@$(PRINT_OK)
 
-build: dist/services.zip dist/dev-static/index.js ## Compile project
-
+build-all: dist/services.zip dist/dev-static/index.js ## Compile project
+	@$(PRINT_OK)
 
 lint: ## Lint Javascript files
 	$(ESLINT) . --ext .js --ext .jsx --ignore-path .eslintignore --cache
