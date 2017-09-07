@@ -8,7 +8,6 @@ source bin/pretty-output.sh
 createCommitSite() {
   COMMIT_REF=$(git rev-parse --short HEAD)
   LAST_COMMIT_INFO=$(git log -1 --format='%h %cd')
-  export ENVIRONMENT_NAME="staging"
   export URL_BASENAME="$COMMIT_REF/"
 
   print_block "Deploying commit preview site to $URL_BASENAME"
@@ -79,6 +78,7 @@ deployMaster() {
 
 case "$1" in
   create-commit-site)
+    export ENVIRONMENT_NAME="staging"
     source bin/load-ci-env.sh STAGING
     source bin/construct-additional-env.sh
     createCommitSite
