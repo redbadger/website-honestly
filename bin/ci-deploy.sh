@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-source bin/pretty-output.sh
 #
 # Create a new preview site namespaced under the current commit SHA
 #
@@ -81,6 +80,7 @@ case "$1" in
     export ENVIRONMENT_NAME="staging"
     source bin/load-ci-env.sh STAGING
     source bin/construct-additional-env.sh
+    source bin/pretty-output.sh
     createCommitSite
     ;;
 
@@ -88,6 +88,7 @@ case "$1" in
     export ENVIRONMENT_NAME=staging
     source bin/load-ci-env.sh STAGING
     source bin/construct-additional-env.sh
+    source bin/pretty-output.sh
     deployMaster staging
     ;;
 
@@ -96,6 +97,7 @@ case "$1" in
     export INSERT_TRACKING=true
     source bin/load-ci-env.sh PROD
     source bin/construct-additional-env.sh
+    source bin/pretty-output.sh
     deployMaster live
     ;;
   *)
