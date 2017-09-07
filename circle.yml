@@ -38,4 +38,13 @@ deployment:
   preview:
     branch: /^(?!.*master).*$/ # all branches except master
     commands:
-      - ./bin/ci-deploy.sh create-commit-site
+      - >
+        cNo=$(tput sgr0)
+        cRed=$(tput setaf 1)
+        cGreen=$(tput setaf 2)
+        cYellow=$(tput setaf 3)
+        cBlue=$(tput setaf 4)
+        cMagenta=$(tput setaf 5)
+        cCyan=$(tput setaf 6)
+        cWhite=$(tput setaf 7)
+        ./bin/ci-deploy.sh create-commit-site
