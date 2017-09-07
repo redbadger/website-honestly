@@ -19,8 +19,10 @@ print_block () {
   printf "\n $cBlue$1\n$cCyan"
   printf "%0.s*" $(seq 1 $size)
   printf "$cNo\n\n"
+  return 1
 }
 
 success () {
   printf "\n$cGreen  [ OK ] $1$cNo\n"
+  return 1
 }
