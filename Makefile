@@ -66,7 +66,7 @@ dev-commit: dist/static-site dist/dev-static/index.js ## Compile the site to HTM
 	@$(PRINT_OK)
 
 test: ## Run the tests
-	$(MOCHA)
+	FORCE_COLOR=1 $(MOCHA)
 	@$(PRINT_OK)
 
 flow: ## Run the type checker
@@ -88,7 +88,7 @@ build-all: dist/services.zip dist/dev-static/index.js ## Compile project
 	@$(PRINT_OK)
 
 lint: ## Lint Javascript files
-	$(ESLINT) . --ext .js --ext .jsx --ignore-path .eslintignore --cache
+	FORCE_COLOR=1 $(ESLINT) . --ext .js --ext .jsx --ignore-path .eslintignore --cache
 	@$(PRINT_OK)
 
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
