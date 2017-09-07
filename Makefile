@@ -11,16 +11,36 @@ SERVERLESS=cd services && .$(NBIN)/sls
 WEBPACK_DEV_SERVER=$(NBIN)/webpack-dev-server
 NPM_CHECK_UPDATES=$(NBIN)/ncu
 
+# color output
+NO_COLOR=\033[0m
+OK_COLOR=\033[32;01m
+ERROR_COLOR=\033[31;01m
+WARN_COLOR=\033[33;01m
+
+OK_STRING=$(OK_COLOR)[OK]$(NO_COLOR)
+ERROR_STRING=$(ERROR_COLOR)[ERRORS]$(NO_COLOR)
+WARN_STRING=$(WARN_COLOR)[WARNINGS]$(NO_COLOR)
+
+AWK_CMD = awk '{ printf "%-30s %-10s\n",$$1, $$2; }'
+PRINT_LINE = printf "%0.s*" {1..50} && printf "\n"
+PRINT_ERROR = printf "$(ERROR_COLOR)$@ $(ERROR_STRING)\n" | $(AWK_CMD) && printf "$(CMD)\n$$LOG\n" && false && $(PRINT_LINE)
+PRINT_WARNING = printf "$(WARN_COLOR)$@ $(WARN_STRING)\n" | $(AWK_CMD) && printf "$(CMD)\n$$LOG\n" && $(PRINT_LINE)
+PRINT_OK = printf "$(OK_COLOR)$@ $(OK_STRING)\n" | $(AWK_CMD) && $(PRINT_LINE)
+
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
-
 
 badger: ## Red Badger 4 lyfe!
 	script -q /dev/null npm run badger
 
 clean: ## Remove compiled files
 	rm -rf dist
+	@$(PRINT_OK)
 
+clean/services:
+	rm -rf dist/services
+	rm -f dist/services.zip
+	@$(PRINT_OK)
 
 check-deps: ## Check deps for updates
 	$(NPM_CHECK_UPDATES)
