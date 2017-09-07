@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-. ./bin/pretty-output.sh
+source bin/pretty-output.sh
 #
 # Create a new preview site namespaced under the current commit SHA
 #
