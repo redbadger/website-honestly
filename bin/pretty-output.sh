@@ -2,14 +2,14 @@
 set -euo pipefail
 
 # color output
-# cNo=`tput sgr0`
-# cRed=`tput setaf 1`
-# cGreen=`tput setaf 2`
-# cYellow=`tput setaf 3`
-# cBlue=`tput setaf 4`
-# cMagenta=`tput setaf 5`
-# cCyan=`tput setaf 6`
-# cWhite=`tput setaf 7`
+cNo=$(tput sgr0)
+cRed=$(tput setaf 1)
+cGreen=$(tput setaf 2)
+cYellow=$(tput setaf 3)
+cBlue=$(tput setaf 4)
+cMagenta=$(tput setaf 5)
+cCyan=$(tput setaf 6)
+cWhite=$(tput setaf 7)
 
 print_block () {
   local i="$1" ; size=${#i}
