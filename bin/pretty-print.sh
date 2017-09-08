@@ -11,7 +11,7 @@ cMagenta="\e[35m"
 cCyan="\e[36m"
 cWhite="\e[97m"
 
-print_block () {
+pretty_block () {
   local i="$1" ; size=${#i}
   ((size+=2))
   printf "\n$cCyan"
@@ -21,6 +21,6 @@ print_block () {
   printf "$cNo\n\n"
 }
 
-success () {
+pretty_success () {
   printf "\n$cGreen  [ OK ] $1$cNo\n"
 }
