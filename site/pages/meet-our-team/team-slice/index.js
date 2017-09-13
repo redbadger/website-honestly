@@ -85,9 +85,9 @@ class TeamSlice extends React.Component {
     return (
       <div>
         <ul className={styles.badgers}>
-          {paginate(badgers, page, loadAll).map((badger, i) =>
+          {paginate(badgers, page, loadAll).map(badger =>
             <li
-              key={i}
+              key={badger.slug}
               className={styles.badger}
               ref={el => {
                 this.badgerElements[badger.slug] = el;
