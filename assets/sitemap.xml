@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-    <url>
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+          <url>
         <loc>
             https://red-badger.com/
         </loc>
@@ -1110,7 +1110,7 @@
             https://red-badger.com/what-we-do
         </loc>
     </url>
-
+      
   <url>
     <loc>https://red-badger.com/blog</loc>
     <changefreq>daily</changefreq>
@@ -6089,6 +6089,12 @@
     <lastmod>2017-09-12</lastmod>
   </url>
   <url>
+    <loc>https://red-badger.com/blog/2017/8/30/essential-retail-talks-about-red-badgers-work-with-fortnum-mason</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-14</lastmod>
+  </url>
+  <url>
     <loc>https://red-badger.com/blog/2017/8/30/internet-retailing-shares-details-of-our-work-with-fortnum-mason</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -6100,5 +6106,27 @@
     <priority>0.5</priority>
     <lastmod>2017-09-13</lastmod>
   </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/9/13/dont-speculate-to-accumulate-validate-to-succeed</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-14</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92e91f6576eb21119b1f9/1505311523757/Blog4.jpg</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92e4de5dd5b8828472e5a/1505310399158/Blog3.jpg</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92e08d7bdce1043298ddb/1505310373544/Blog2.jpg</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92da82994cad67528df1e/1505311593398/Blog_Lean+%281%29.png</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+  </url>
 
-</urlset>
+      </urlset>
