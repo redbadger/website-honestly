@@ -29,7 +29,8 @@ export default function getSiteRoutes(state, routeDefinitions) {
 
   const finalRoutes = allRoutes
     .concat(extraRoutes)
-    .filter(route => !routesToIgnore.includes(route));
+    .filter(route => !routesToIgnore.includes(route))
+    .sort();
 
   // Remove duplicates
   return [...new Set(finalRoutes)];
