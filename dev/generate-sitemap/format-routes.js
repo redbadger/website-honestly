@@ -5,7 +5,7 @@ export default function formatRoutes(routes: string[]): string {
     .map(
       route => `    <url>
         <loc>
-          https://red-badger.com/${route}
+            https://red-badger.com/${route}
         </loc>
     </url>`,
     )
