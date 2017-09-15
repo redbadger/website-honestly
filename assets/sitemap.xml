@@ -1,622 +1,1121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://red-badger.com/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/blog/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/fortnum-and-mason/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/camden-market/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/sky-cms/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/retailer/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/financial-times/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/what-we-do/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/join-us/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/clementine-brown/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/joe-dollar-smirnov/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andreas-conradi/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/sasha-ward/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/monika-koziol/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/sari-griffiths/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/steve-cottle/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/david-wynne/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/stelios-kiayias/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/lani-shamash/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/sam-griffiths/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/joe-stanton/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/nico-castro/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/jack-hoy/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andrew-cumine/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/viktor-charypar/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/technology/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/haro-lee/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/09/23/two-day-user-experience-design-bootcamp/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/07/07/etiene-is-speaking-at-polyconf-in-paris/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/etiene-dalcol/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/06/20/june-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/05/24/ux-london/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/05/17/may-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/05/09/etiene-is-co-organising-lua-luajit--friends-event/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/05/03/may--user-experience-and-design-exchange/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/04/27/roisi-is-speaking-at-south-wales-agile/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/04/21/joe-is-speaking-at-ux-in-the-city-in-oxford/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/04/02/roisi-is-speaking-at-london-lean-kanban-days-2017/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/03/28/react-london-2017/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/03/16/agile-methodologies/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/03/13/design-thinking-workshop/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/03/07/march-ux--design-pub-quiz/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/23/enterprise-software--scaled-agile/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/22/lnug/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/21/february-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/18/world-ia-day-2017/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/15/careers-problem-solving-workshop/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/13/ux-design-101/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/09/february-user-experience-and-design-exchange/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/07/react-london-an-introduction-to-the-react-ecosystem/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/07/all-about-the-go-programming-language/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/04/fosdem-17/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/02/02/design-thinking-workshop/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/01/28/ux-design-bootcamp/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2017/01/24/january-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/11/26/hackkings/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/11/24/front-end-london/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/11/23/functional-programming-for-the-web-meetup-november-2016/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/11/17/service-experience-camp/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/11/14/sari-and-olga-will-be-leading-a-session-at-soda-academy-in-new-york/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/11/09/innovation-skills--creative-problem-solving/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/11/07/november-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/10/28/anna-is-speaking-at-serverless-conference/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/10/25/bleeding-edge-react/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/10/24/leading-design/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/10/21/badger-build-day-1-elixir/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/10/18/october-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/10/12/responsive-web-designers-hidden-manual/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/10/06/the-horrors-of-enterprise-software/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/09/28/our-ux-designer-tania-is-co-organising-another-digital-dumbo-event/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/09/22/build-your-own-elixir/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/09/21/september-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/09/20/the-innovation-leadership-summit/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/09/15/oh-ffs-can-we-please-stop-estimating/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/09/14/the-multiple-personality-conundrum/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/08/24/august-react-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/07/06/functional-programming-for-the-web-july-2016/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/06/30/designing-in-cross-functional-teams/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/06/28/basics-of-web-design/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/06/28/react-meetup---june/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/06/23/achieving-diversity-in-the-technology-industry/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/06/02/reacteurope-2016/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/06/01/reacteurope-bar-night/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/05/11/joe-talks-at-ux-alive/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/05/10/ux-and-design-pub-quiz/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/04/27/functional-programming-for-the-web-april-2016/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/04/21/put-design-at-the-heart-of-technology/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/04/20/april-london-react-user-group/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/04/08/clementine-joins-the-panel-at-design-ethics/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/03/29/cain-talks-at-soda-roundtable---the-value-driven-experience/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/cain-ullah/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/03/22/march-london-react-user-group/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/03/17/tania-co-organising-digital-dumbo-event/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/03/10/anna-speaks-at-front-endgineers-london/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/02/22/intro-to-wireframing--prototyping-a-free-class/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/02/20/break-into-ux-a-free-class/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/02/20/bulgaria-web-summit-2016/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2016/01/28/digital-agency-day/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/12/03/brighton--hove-react-practical-graphql-with-alexander-savin/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/11/12/ten-year-anniversary-for-world-usability-day/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/11/11/functional-programming-for-the-web--elm-with-evan-czaplicki/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/10/21/london-react-graphql-with-nick-schrock/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/10/21/ga-intro-to-wireframing--prototyping/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/09/20/web-expo-2015/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/09/02/red-badger-ux-pub-quiz/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/08/11/react.js-the-revolution-of-web-ui-technologies/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/07/01/reacteurope-drinkup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/06/30/chain-reaction-london-react-user-group-june-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/05/21/digital-shoreditch-web-accessibility---are-you-excluding-a-fifth-of-the-uk-population/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/05/12/virtual-hierarchy-introducing-hierarchy-at-the-right-time/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/04/22/chain-reaction-london-react-user-group-april-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/04/09/components--react-native-meet-up/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/03/24/time-to-react-london-react-user-group-march-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/03/03/ladies-who-code-public-speaking-clinic-novices/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/02/18/time-to-react-london-react-user-group-february-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2015/01/21/time-to-react-london-react-user-group-january-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2014/12/10/christmas-special-join-us-for-london-react-user-group-december-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2014/12/05/uxsw-a-day-of-ux-talks--workshops/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2014/11/19/time-to-react-join-us-for-london-react-user-group-november-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2014/10/15/time-to-react-join-us-for-london-react-user-group-october-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2014/09/17/time-to-react-join-us-for-london-react-user-group-september-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2013/11/12/november-elasticsearch-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2014/01/22/stephen-fulljames-talking-at-12-devs-of-winter/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2013/11/07/london-meteor-meetup/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2013/10/23/david-wynne-talking-at-london-node-user-group/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2013/05/11/silicon-milkroundabout/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/events/2012/06/07/microsoft-bizspark-european-summit/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/join-us/software-engineer/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/join-us/senior-software-engineer/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/join-us/delivery-lead/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/join-us/delivery-director/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/join-us/mid-weight-ux-designer/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/join-us/junior-digital-product-designer/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/shelley-quinn/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/natalie-lappage/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/martin-hartt/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/haller/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/bmw/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/bbc-now/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/our-work/case-study/sky/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/ux-design/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/leadership/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/operations/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/stuart-harris/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/engineering/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/pm/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/robbie-mccorkell/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/nathalie-goepel/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/strategy/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/qa/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/marketing/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/adorable/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/ideas/immutable-infrastructure-as-code/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/milo-castro/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andrew-bestbier/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/graham-mendick/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/jun-taoka/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/greg-stewart/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/tom-barwick/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/saadia-field/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andy-wicks/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/monika-ferencz-szabo/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/aleksandra-volkova/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/zoe-bryant/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/paul-roper/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/dominik-stodolny/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/everyone/page-2/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/samera-butt/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/claire-murray/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/froso-ellina/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/karmina-saad/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/chris-baron/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/rob-brathwaite/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andrea-moore/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/julian-osman/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/laura-brookes/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/valentina-soricaro/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/amy-crimmens/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/becca-evans/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/keith-philips/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/joe-paice/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/dominik-piatek/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/timothy-stott/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/cristian-wilgenhoff</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/sammy-isseyegh/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andrew-haines/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/engineering/page-2/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andy-craig/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/ranjith-kanag/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/sean-gabriel/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/harriet-adams/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/leila-firouz/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/andrei-daniel-ionescu/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/greg-dorward/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/chris-brookes/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/sam-smith/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/chris-gray/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/everyone/page-3/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/jon-yardley/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/fabio-volpe/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/toby-merlet/</loc>
-  </url>
-  <url>
-    <loc>https://red-badger.com/about-us/people/category/everyone/page-4/</loc>
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+          <url>
+        <loc>
+            https://red-badger.com/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2013/10/23/david-wynne-talking-at-london-node-user-group
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2014/09/17/time-to-react-join-us-for-london-react-user-group-september-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2014/10/15/time-to-react-join-us-for-london-react-user-group-october-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2014/11/19/time-to-react-join-us-for-london-react-user-group-november-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2014/12/05/uxsw-a-day-of-ux-talks--workshops
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2014/12/10/christmas-special-join-us-for-london-react-user-group-december-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/01/21/time-to-react-london-react-user-group-january-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/02/18/time-to-react-london-react-user-group-february-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/03/03/ladies-who-code-public-speaking-clinic-novices
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/03/24/time-to-react-london-react-user-group-march-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/04/09/components--react-native-meet-up
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/04/22/chain-reaction-london-react-user-group-april-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/05/12/virtual-hierarchy-introducing-hierarchy-at-the-right-time
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/06/30/chain-reaction-london-react-user-group-june-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/07/01/reacteurope-drinkup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/09/02/red-badger-ux-pub-quiz
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/09/20/web-expo-2015
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/10/21/ga-intro-to-wireframing--prototyping
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/10/21/london-react-graphql-with-nick-schrock
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2015/11/12/ten-year-anniversary-for-world-usability-day
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/01/28/digital-agency-day
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/02/20/break-into-ux-a-free-class
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/02/20/bulgaria-web-summit-2016
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/02/22/intro-to-wireframing--prototyping-a-free-class
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/03/10/anna-speaks-at-front-endgineers-london
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/03/17/tania-co-organising-digital-dumbo-event
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/03/22/march-london-react-user-group
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/04/20/april-london-react-user-group
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/04/21/put-design-at-the-heart-of-technology
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/04/27/functional-programming-for-the-web-april-2016
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/05/10/ux-and-design-pub-quiz
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/05/11/joe-talks-at-ux-alive
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/06/01/reacteurope-bar-night
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/06/02/reacteurope-2016
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/06/23/achieving-diversity-in-the-technology-industry
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/06/28/basics-of-web-design
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/06/28/react-meetup---june
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/06/30/designing-in-cross-functional-teams
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/07/06/functional-programming-for-the-web-july-2016
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/07/07/cain-speaks-at-the-take-off
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/08/24/august-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/09/14/the-multiple-personality-conundrum
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/09/15/oh-ffs-can-we-please-stop-estimating
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/09/20/the-innovation-leadership-summit
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/09/21/september
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/09/22/build-your-own-elixir
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/09/28/our-ux-designer-tania-is-co-organising-another-digital-dumbo-event
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/10/06/the-horrors-of-enterprise-software
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/10/18/october
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/10/21/badger-build-day-1-elixir
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/10/24/leading-design
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/10/25/bleeding-edge-react
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/10/28/anna-is-speaking-at-serverless-conference
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/11/07/november-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/11/09/innovation-skills--creative-problem-solving
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/11/14/sari-and-olga-will-be-leading-a-session-at-soda-academy-in-new-york
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/11/17/service-experience-camp
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/11/23/functional-programming-for-the-web-meetup-november-2016
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/11/24/front-end-london
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2016/11/26/hackkings
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/01/24/january-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/01/28/ux-design-bootcamp
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/02/design-thinking-workshop
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/04/fosdem-17
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/07/all-about-the-go-programming-language
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/07/react-london-an-introduction-to-the-react-ecosystem
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/09/february-user-experience-and-design-exchange
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/13/ux-design-101
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/15/careers-problem-solving-workshop
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/18/world-ia-day-2017
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/21/february-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/22/lnug
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/02/23/enterprise-software--scaled-agile
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/03/07/march-ux--design-pub-quiz
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/03/13/design-thinking-workshop
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/03/16/agile-methodologies
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/03/28/react-london-2017
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/04/02/roisi-is-speaking-at-london-lean-kanban-days-2017
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/04/21/joe-is-speaking-at-ux-in-the-city-in-oxford
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/04/27/roisi-is-speaking-at-south-wales-agile
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/05/03/may--user-experience-and-design-exchange
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/05/09/etiene-is-co-organising-lua-luajit--friends-event
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/05/17/may-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/05/24/ux-london
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/06/20/june-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/07/07/etiene-is-speaking-at-polyconf-in-paris
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/08/23/august-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/08/28/ux-the-good-the-bad--the-ugly
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/09/06/work-life-balance-can-we-achieve-it
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/09/12/agile-product-ownership-do-the-right-things-not-everything--ellen-gottesdiener
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/09/12/sketch-for-non-designers
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/09/20/september-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/09/23/two-day-user-experience-design-bootcamp
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/09/26/september-user-experience-and-design-exchange
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/09/28/be-bold-with-technology
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/10/06/user-experience-design-bootcamp
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/10/19/monster-confidence-london
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/10/24/october-react-meetup
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/11/28/sketch-for-non-designers
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/events/2017/12/16/two-day-user-experience-design-bootcamp
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/join-us
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/join-us/delivery-director
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/join-us/delivery-lead
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/join-us/junior-creative-marketing-designer
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/join-us/senior-software-engineer
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/join-us/software-engineer
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/join-us/tech-director
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/aleksandra-volkova
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/amy-crimmens
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andrea-moore
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andreas-conradi
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andrei-daniel-ionescu
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andrew-bestbier
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andrew-cumine
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andrew-haines
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andy-craig
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/andy-wicks
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/becca-evans
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/cain-ullah
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/adorable
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/adorable/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/delivery
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/delivery/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/engineering
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/engineering/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/engineering/page-2
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/everyone
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/everyone/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/everyone/page-2
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/everyone/page-3
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/everyone/page-4
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/leadership
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/leadership/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/marketing
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/marketing/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/operations
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/operations/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/qa
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/qa/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/strategy
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/strategy/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/ux-design
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/category/ux-design/page-1
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/chris-baron
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/chris-brookes
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/chris-caller
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/chris-gray
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/claire-murray
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/clementine-brown
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/cristian-wilgenhoff
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/david-wynne
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/dominik-piatek
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/dominik-stodolny
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/etiene-dalcol
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/fabio-volpe
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/froso-ellina
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/graham-mendick
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/greg-dorward
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/greg-stewart
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/haro-lee
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/harriet-adams
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/jen-spottiswoode
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/joe-dollar-smirnov
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/joe-paice
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/joe-stanton
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/jon-yardley
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/julian-osman
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/jun-taoka
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/karima-saad
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/lani-shamash
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/laura-brookes
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/laura-hasting
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/leila-firouz
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/martin-hartt
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/matt-paul
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/milo-castro
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/monika-ferencz-szabo
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/monika-koziol
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/natalie-lappage
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/nathalie-goepel
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/nico-castro
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/paul-roper
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/ranjith-kanag
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/rob-brathwaite
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/robbie-mccorkell
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/saadia-field
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/sam-griffiths
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/sam-smith
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/sam-taylor
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/samera-butt
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/sammy-isseyegh
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/sari-griffiths
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/sasha-ward
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/sean-gabriel
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/shelley-quinn
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/stelios-kiayias
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/steve-cottle
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/stuart-harris
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/timothy-stott
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/toby-merlet
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/tom-barwick
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/valentina-soricaro
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/viktor-charypar
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/about-us/people/zoe-bryant
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/blog
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/offline
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/bbc-now
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/bmw
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/camden-market
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/financial-times
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/haller
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/retailer
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/sky
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/our-work/case-study/sky-cms
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/search
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/technology
+        </loc>
+    </url>
+    <url>
+        <loc>
+            https://red-badger.com/what-we-do
+        </loc>
+    </url>
+      
+  <url>
+    <loc>https://red-badger.com/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2017-09-14</lastmod>
   </url>
   <url>
     <loc>https://red-badger.com/blog/2010/08/28/teamcity-github-and-ssh-keys</loc>
@@ -1393,10 +1892,11 @@
     <loc>https://red-badger.com/blog/2012/07/31/what-is-specification-by-example</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2016-11-24</lastmod>
+    <lastmod>2017-08-09</lastmod>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2ce09e1c46748737316/1478614175711/feedbackloop-in-TDD.png</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2ce09e1c46748737316/1502273636345/feedbackloop-in-TDD.png</image:loc>
       <image:title>Red Badger Blog - What is Specification by Example?</image:title>
+      <image:caption>Test-Driven Development cycle</image:caption>
     </image:image>
   </url>
   <url>
@@ -1828,18 +2328,21 @@
     <loc>https://red-badger.com/blog/2013/11/08/getting-started-with-elasticsearch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-03-06</lastmod>
+    <lastmod>2017-08-09</lastmod>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375ba/1478614212595/create_elasticsearch_index.png</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375db/1502272167966/software_search_results.png</image:loc>
       <image:title>Red Badger Blog - Getting Started With Elasticsearch</image:title>
+      <image:caption>Response output</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375d7/1478614212317/get_mapping_elasticsearch.png</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375d7/1502271992226/get_mapping_elasticsearch.png</image:loc>
       <image:title>Red Badger Blog - Getting Started With Elasticsearch</image:title>
+      <image:caption>GET request</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375d9/1478614212409/software_search.png</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375d9/1502272068951/software_search.png</image:loc>
       <image:title>Red Badger Blog - Getting Started With Elasticsearch</image:title>
+      <image:caption>Searching the bio field</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375bc/1478614213323/elastic_search_index.png</image:loc>
@@ -1847,17 +2350,19 @@
       <image:caption>Elastic Search Instance</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375d5/1478614212325/create_badger_mapping_json.png</image:loc>
-      <image:title>Red Badger Blog - Getting Started With Elasticsearch</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375cf/1478614213586/bulk-_upload.png</image:loc>
       <image:title>Red Badger Blog - Getting Started With Elasticsearch</image:title>
       <image:caption>Bulk Upload Elastic Search</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375db/1478614215486/software_search_results.png</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375d5/1502271924005/create_badger_mapping_json.png</image:loc>
       <image:title>Red Badger Blog - Getting Started With Elasticsearch</image:title>
+      <image:caption>Badger mapping</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2d509e1c467487375ba/1502271798634/create_elasticsearch_index.png</image:loc>
+      <image:title>Red Badger Blog - Getting Started With Elasticsearch</image:title>
+      <image:caption>Creating an index in Elasticsearch</image:caption>
     </image:image>
   </url>
   <url>
@@ -2372,10 +2877,11 @@
     <loc>https://red-badger.com/blog/2015/01/23/2015-native-app-development-is-dead-in-the-enterprise</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-06-26</lastmod>
+    <lastmod>2017-08-09</lastmod>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2dd09e1c46748737911/1478614236572/Mobile.jpg</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d2dd09e1c46748737911/1502274646580/Mobile.jpg</image:loc>
       <image:title>Red Badger Blog - 2015: Native App Development is Dead in the Enterprise</image:title>
+      <image:caption>Picture of a broken phone</image:caption>
     </image:image>
   </url>
   <url>
@@ -3339,10 +3845,11 @@
     <loc>https://red-badger.com/blog/2016/04/18/building-desktop-apps-with-electron-webpack-and-redux</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-07-03</lastmod>
+    <lastmod>2017-08-09</lastmod>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d56009e1c4674873b0ce/1478614150421/Screenshot-2016-04-12-15.25.26.png</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5821d56009e1c4674873b0ce/1502272514021/Screenshot-2016-04-12-15.25.26.png</image:loc>
       <image:title>Red Badger Blog - Building desktop apps with electron, webpack and redux</image:title>
+      <image:caption>Hacker News Electron app</image:caption>
     </image:image>
   </url>
   <url>
@@ -4229,55 +4736,66 @@
     <loc>https://red-badger.com/blog/2016/11/29/gitgithub-in-plain-english</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-06-15</lastmod>
+    <lastmod>2017-08-09</lastmod>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/583f0e65e6f2e1f1677d6848/1480527507173/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
       <image:caption>Image credit: weebletheringskite, Wordpress</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404c5c3e00befa6e8fb7ac/1480608875333/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404be1e6f2e1d8f80922df/1502272996258/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Sallys commit history example</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5840506020099e7a2a31c2db/1480609901346/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404d7ee6f2e1d8f8093bad/1502273083993/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Collaborating with git</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404f39d482e91062928a5c/1480609608518/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/584043ce8419c2cf0b013732/1502272969552/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Sallys system</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404f84f7e0abbb6e80b639/1480609683409/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404c5c3e00befa6e8fb7ac/1502273059620/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Pushing commits to github</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404d7ee6f2e1d8f8093bad/1480609158728/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404f39d482e91062928a5c/1502273139601/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Pushing branch pre pull request</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/584049d7e4fcb55d6d2c91a2/1480608222168/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/584049d7e4fcb55d6d2c91a2/1502272876384/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Git logo</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/584043ce8419c2cf0b013732/1480606679646/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/583f136fd1758ead02d0bd60/1502272935502/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Sallys two books</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/583f106ac534a5022cf3efa6/1480527985181/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404f84f7e0abbb6e80b639/1502273162587/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58404be1e6f2e1d8f80922df/1480608755613/</image:loc>
-      <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Pull request</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/583f1323ff7c50eaf37fd938/1480528687038/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Sallys book example</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/583f136fd1758ead02d0bd60/1480528766294/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5840506020099e7a2a31c2db/1502273207210/</image:loc>
       <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Merge Sallys branch with master branch</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/583f106ac534a5022cf3efa6/1480527985181/</image:loc>
+      <image:title>Red Badger Blog - Git and Github in Plain English</image:title>
+      <image:caption>Example directory without git version control</image:caption>
     </image:image>
   </url>
   <url>
@@ -4309,7 +4827,7 @@
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58456db29f7456bcf363640d/1480945083485/VR_HEADSETS</image:loc>
       <image:title>Red Badger Blog - What is Virtual Reality</image:title>
-      <image:caption>Oculus Rift, Gear VR, HTC Vive, PlayStation VR</image:caption>
+      <image:caption>Oculus Rift, Gear VR, HTC Vive, PlayStation VR  </image:caption>
     </image:image>
   </url>
   <url>
@@ -4346,7 +4864,7 @@
     <loc>https://red-badger.com/blog/2016/05/23/accessibility-blog-series-on-econsultancy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2016-12-19</lastmod>
+    <lastmod>2017-07-20</lastmod>
   </url>
   <url>
     <loc>https://red-badger.com/blog/2016/12/5/accessibility-blog-series-on-econsultancy</loc>
@@ -4547,7 +5065,7 @@
     <lastmod>2017-06-12</lastmod>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5859379715d5db15d38ae199/1496760890075/</image:loc>
-      <image:title>Red Badger Blog - Allow yourself to focus all your efforts on delivering value</image:title>
+      <image:title>Red Badger Blog - Allow yourself to  focus all your efforts  on delivering value</image:title>
     </image:image>
   </url>
   <url>
@@ -4779,7 +5297,7 @@
     <loc>https://red-badger.com/blog/2017/2/27/from-stick-man-to-star-man-a-sketching-guide-for-design-thinking</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-06-26</lastmod>
+    <lastmod>2017-08-22</lastmod>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/58b4434e725e252ebd7dbce5/1488208753085/containers.png</image:loc>
       <image:title>Red Badger Blog - From Stick Man to Star Man – a sketching guide for Design Thinking</image:title>
@@ -5055,31 +5573,36 @@
     <loc>https://red-badger.com/blog/2017/5/16/accessibility-five-steps-to-start-now</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-07-04</lastmod>
+    <lastmod>2017-08-09</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b153ed2b8575c09ac921c/1502273874870/</image:loc>
+      <image:title>Red Badger Blog - Accessibility: Five steps to start now</image:title>
+      <image:caption>Ensure sufficient colour contrast</image:caption>
+    </image:image>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595b4d49b11be1e8497a1219/1499155791664/</image:loc>
       <image:title>Red Badger Blog - Accessibility: Five steps to start now</image:title>
       <image:caption>A typical submit button in a standard, hover, and focus state, respectively</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b159320099e066d0d6887/1494947226542/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b1565f5e231fba5c7dffd/1502273901560/</image:loc>
       <image:title>Red Badger Blog - Accessibility: Five steps to start now</image:title>
+      <image:caption>Use alt text for your images</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b15c0b8a79b0a1be0c1c8/1494947271385/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b15c0b8a79b0a1be0c1c8/1502273963308/</image:loc>
       <image:title>Red Badger Blog - Accessibility: Five steps to start now</image:title>
+      <image:caption>Hover and focus states for all clickable elements</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b15f2e6f2e1e20d59d8dd/1494947319784/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b15f2e6f2e1e20d59d8dd/1502273989975/</image:loc>
       <image:title>Red Badger Blog - Accessibility: Five steps to start now</image:title>
+      <image:caption>Test from different perspectives</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b153ed2b8575c09ac921c/1494947146498/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b159320099e066d0d6887/1502273923436/</image:loc>
       <image:title>Red Badger Blog - Accessibility: Five steps to start now</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/591b1565f5e231fba5c7dffd/1494947177264/</image:loc>
-      <image:title>Red Badger Blog - Accessibility: Five steps to start now</image:title>
+      <image:caption>Go easy on graphics and transitions</image:caption>
     </image:image>
   </url>
   <url>
@@ -5098,7 +5621,7 @@
     <loc>https://red-badger.com/blog/2017/6/16/cypress-a-genuine-alternative-to-selenium-at-last</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-07-07</lastmod>
+    <lastmod>2017-08-03</lastmod>
   </url>
   <url>
     <loc>https://red-badger.com/blog/2017/6/19/lets-celebrate-refugees</loc>
@@ -5155,7 +5678,7 @@
     <loc>https://red-badger.com/blog/2017/6/28/pliss-2017-programming-languages-in-a-castle</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2017-07-24</lastmod>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59539a40ccf210594b00fafb/1498729723561/</image:loc>
       <image:title>Red Badger Blog - PLISS 2017, programming languages in a castle</image:title>
@@ -5174,7 +5697,7 @@
     <loc>https://red-badger.com/blog/2017/6/28/maximise-your-learning-potential</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2017-07-13</lastmod>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5953a65ecd0f68f5b65329ed/1498654316776/Annie+are+you+ok%3F</image:loc>
       <image:title>Red Badger Blog - Maximise your (l)earning potential</image:title>
@@ -5192,51 +5715,418 @@
     </image:image>
   </url>
   <url>
+    <loc>https://red-badger.com/blog/2017/7/4/enter-the-matrix-lean-prioritisation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-08</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595b731137c5812a4110a186/1502208742647/</image:loc>
+      <image:title>Red Badger Blog - Enter The Matrix - Lean Prioritisation</image:title>
+      <image:caption>Cartoon of decision makers discussing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595b762dcd0f68ef9f03d4a5/1502209020592/</image:loc>
+      <image:title>Red Badger Blog - Enter The Matrix - Lean Prioritisation</image:title>
+      <image:caption>Four distinct quadrents</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595b75bbb3db2b30634d1eae/1502208597059/</image:loc>
+      <image:title>Red Badger Blog - Enter The Matrix - Lean Prioritisation</image:title>
+      <image:caption>Two by two matrix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595b74faf7e0ab3985c19893/1499169661880/</image:loc>
+      <image:title>Red Badger Blog - Enter The Matrix - Lean Prioritisation</image:title>
+      <image:caption>Value: the value generated for your customers Effort: the effort required to deliver</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://red-badger.com/blog/2017/7/5/peek-inside-our-new-office-space</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-07-07</lastmod>
+    <lastmod>2017-08-09</lastmod>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595ce9f3ff7c50120be6447d/1499261440956/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59649f8ce4fcb58b9fb2a6bc/1502275701915/</image:loc>
       <image:title>Red Badger Blog - Peek inside our new office space</image:title>
+      <image:caption>Lounge area</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595cec12414fb51e286b5fc5/1499261986556/IMG_6372.JPG</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59649e1e15d5db350620be67/1502274920811/IMG_5684.JPG</image:loc>
       <image:title>Red Badger Blog - Peek inside our new office space</image:title>
+      <image:caption>Red Badger Library</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595ce8cd2e69cf0e4a95c18d/1499261142859/IMG_5684.JPG</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59649e6abe659459b41b7d22/1502274866171/</image:loc>
       <image:title>Red Badger Blog - Peek inside our new office space</image:title>
+      <image:caption>New Boardroom</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595cea7429687ff67d1dde92/1499261565700/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595ce9f3ff7c50120be6447d/1502275764632/</image:loc>
       <image:title>Red Badger Blog - Peek inside our new office space</image:title>
+      <image:caption>Looking down at the old office</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595ced092994ca89479406b6/1499262246662/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595ce09c37c5812a411cbde1/1502275798076/</image:loc>
       <image:title>Red Badger Blog - Peek inside our new office space</image:title>
+      <image:caption>Construction continues at Old Street Yard</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595cec8e36e5d3ffb4affe29/1499262187676/IMG_6356.JPG</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59649e3c9f7456b65640e61a/1502274886042/</image:loc>
       <image:title>Red Badger Blog - Peek inside our new office space</image:title>
+      <image:caption>Red Badger Kitchen</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595ce09c37c5812a411cbde1/1499259075774/</image:loc>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59649f49f7e0abb20a28fa73/1502275735265/</image:loc>
       <image:title>Red Badger Blog - Peek inside our new office space</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595ce8e3d1758e1dac3f017b/1499262155098/</image:loc>
-      <image:title>Red Badger Blog - Peek inside our new office space</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/595cea13db29d6f33aae4783/1499261470482/</image:loc>
-      <image:title>Red Badger Blog - Peek inside our new office space</image:title>
+      <image:caption>Working badgers</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://red-badger.com/blog/2017/7/6/putting-slack-under-the-microscope-a-heuristic-evaluation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2017-07-06</lastmod>
+    <lastmod>2017-07-31</lastmod>
   </url>
-</urlset>
+  <url>
+    <loc>https://red-badger.com/blog/2017/7/10/ooh-tiger-aah-tiger-oh-tiger</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-07-13</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5967326336e5d3eb435e132a/1499935388477/Innovation+Social+July+17</image:loc>
+      <image:title>Red Badger Blog - Ooh Tiger, Aah Tiger, OH TIGER.</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/7/18/circular-is-the-new-straight</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-08</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e0d846a4963dc067ca2d8/1502210326081/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Posting a letter</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e0dba20099ea7638c38cc/1502210366832/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Modular toaster</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e06c23a04110b1bb9968e/1502210185692/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Vintage lady in front of fridge</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e06dc29687ff504253312/1502210209124/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Giant silver fridge</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e0649cd0f68df1fe48a3b/1502210051944/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Circular example showing interactions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e0711d482e9c1c6b7e718/1502210259432/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Closed loop picture</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e0698f7e0abe97267616e/1502210138258/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Lifecycle thinking</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e06f715d5db847928420f/1502210235925/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Kettle in front of crashing wave</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e090b2994ca65c1bca804/1502210111855/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Environmental life cycle</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/596e0d6246c3c47ac18d2ec2/1502210300194/</image:loc>
+      <image:title>Red Badger Blog - Circular is the new straight</image:title>
+      <image:caption>Toaster with toast ready to eat</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/7/24/red-badger-shortlisted-for-retail-week-tech-awards-tech-retailer-of-the-year</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/7/24/red-badger-are-shortlisted-for-two-bima-awards</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-07-26</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/7/25/knowledge-is-beautiful-and-accessible-and-inspiring-and-influential</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-08</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/597728324402434deaa7b5d7/1502209865206/</image:loc>
+      <image:title>Red Badger Blog - Knowledge is beautiful (and accessible and inspiring and influential)</image:title>
+      <image:caption>Data visualisation example</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59773c39b8a79bc2cb1af419/1500986451409/Finding+the+right+question</image:loc>
+      <image:title>Red Badger Blog - Knowledge is beautiful (and accessible and inspiring and influential)</image:title>
+      <image:caption>Finding the right question</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/7/27/do-you-even-curry-on-chess-timers-the-halting-problem-dragons-and-tapas-a-conference-report</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/ux-london-2017-day-3-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-08</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5979e940725e255e16dc6cfd/1502209214337/</image:loc>
+      <image:title>Red Badger Blog - Ux London 2017 - Day 3, Design</image:title>
+      <image:caption>Workshop on practical jobs to be done</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5979e940725e255e16dc6cfb/1502209201483/</image:loc>
+      <image:title>Red Badger Blog - Ux London 2017 - Day 3, Design</image:title>
+      <image:caption>Beef taco and radish salsa recipe</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/uxlondon-2017-day-1-product</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-08</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5979ed37bf629a07f4d59f7f/1502209663233/</image:loc>
+      <image:title>Red Badger Blog - Ux London 2017 - Day 1, Product</image:title>
+      <image:caption>Scene outside the Laban building at UX London 2017</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5979ed37bf629a07f4d59f81/1502209716789/</image:loc>
+      <image:title>Red Badger Blog - Ux London 2017 - Day 1, Product</image:title>
+      <image:caption>Example of overcomplicated onboarding</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5979ed37bf629a07f4d59f83/1502209759079/</image:loc>
+      <image:title>Red Badger Blog - Ux London 2017 - Day 1, Product</image:title>
+      <image:caption>Customer journey map</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/uxlondon-2017-day-2-service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-08</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5979ed7f6a49635d6dbc9bf1/1502209381445/</image:loc>
+      <image:title>Red Badger Blog - Ux London 2017 - Day 2, Service</image:title>
+      <image:caption>Educating the next generation of designers talk at UX London</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5979ed7f6a49635d6dbc9bf3/1502209433942/</image:loc>
+      <image:title>Red Badger Blog - Ux London 2017 - Day 2, Service</image:title>
+      <image:caption>Rapid service prototyping at UX London 2017</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/1/product-service-innovation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-31</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5981b7d503596ea6964aaa2c/1501673445030/Refinement</image:loc>
+      <image:title>Red Badger Blog - Stop! Validate and listen: Digital Transformation without the risk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5981b188f7e0abed7b838a1b/1501671877707/Venn+Diagram+of+success</image:loc>
+      <image:title>Red Badger Blog - Stop! Validate and listen: Digital Transformation without the risk</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/4/why-i-asked-to-work-4-day-weeks</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-08</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59846adbd7bdcee0bc93a0f6/1501850634035/source%3A+https%3A%2F%2Fwww.womeninc.nl%2Fwerkzorgberekenaar%2Fover-de-werkzorgberekenaar%2F</image:loc>
+      <image:title>Red Badger Blog - Why I asked to work 4-day weeks</image:title>
+      <image:caption>source: https://www.womeninc.nl/werkzorgberekenaar/over-de-werkzorgberekenaar/</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/598457626b8f5ba166933d86/1502197137945/</image:loc>
+      <image:title>Red Badger Blog - Why I asked to work 4-day weeks</image:title>
+      <image:caption>Picture drawn on playground floor in chalk</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/598454b6f5e23143b01fbcc8/1502198334373/</image:loc>
+      <image:title>Red Badger Blog - Why I asked to work 4-day weeks</image:title>
+      <image:caption>Childs picnic items</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59843353be6594bb037650c4/1501836160483/</image:loc>
+      <image:title>Red Badger Blog - Why I asked to work 4-day weeks</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/3/a-week-at-red-badger</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-16</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992d0169f745648d67e299a/1502793762695/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992d0347131a54716567d28/1502793796730/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992cfe39f745648d67e27ef/1502793716086/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992d0b1be65946755a99b29/1502793919013/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992cf90d482e9e6d3db3f63/1502793626141/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+      <image:caption>Sorry Sari - your capitalisations have now been immortalised in this drawing!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992d060c534a5589c0af98d/1502793837416/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+      <image:caption>Image shows more Japanese cuisine from Abokado later on in the week.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992cfbc6a49634687ec8c53/1502793674845/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/5992cf4ca5790acfd0577aa4/1502793575061/</image:loc>
+      <image:title>Red Badger Blog - A week at Red Badger</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/18/when-age-isnt-just-a-number</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-08-23</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/599d4a01a803bbe20fee6a5b/1503480328564/AAA_blog%402.jpg</image:loc>
+      <image:title>Red Badger Blog - When age isn’t just a number</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/30/computer-weekly-outlines-how-the-badgers-built-fortnum-mason-site-in-eight-months</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/30/econsultancy-shares-how-red-badger-used-leading-tech-with-fortnum-mason</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/30/techworld-interviews-cain-ullah-on-the-impact-of-facebook-react</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/9/1/red-badger-summer-party-obonjan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-07</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59a97f0ccf81e09534b035f2/1504280405804/IMG_0770+%281%29.jpg</image:loc>
+      <image:title>Red Badger Blog - Boats, Beaches and Badgers - Obonjan 2017</image:title>
+      <image:caption>Amazing performance by Hercules &amp; Love Affair in the amphitheatre on Saturday night</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59a97d07d55b41693d503063/1504279832101/Obanjan_24+%281%29.jpg</image:loc>
+      <image:title>Red Badger Blog - Boats, Beaches and Badgers - Obonjan 2017</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59a97c5d37c5813849d0dd25/1504279690120/Obonjan_7+%281%29.jpg</image:loc>
+      <image:title>Red Badger Blog - Boats, Beaches and Badgers - Obonjan 2017</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59a97d6803596e26c0c89184/1504279932510/Copy+of+IMG_6962+%281%29.JPG</image:loc>
+      <image:title>Red Badger Blog - Boats, Beaches and Badgers - Obonjan 2017</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59a98031197aea0d4c970e48/1504280637722/Obanjan_30+%282%29.jpg</image:loc>
+      <image:title>Red Badger Blog - Boats, Beaches and Badgers - Obonjan 2017</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59a97eb5a9db09bcb15030b7/1504280275716/20170715_163502+%283%29.jpg</image:loc>
+      <image:title>Red Badger Blog - Boats, Beaches and Badgers - Obonjan 2017</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59a97bb4d55b41693d501a10/1504279505173/20170714_194719+%281%29.jpg</image:loc>
+      <image:title>Red Badger Blog - Boats, Beaches and Badgers - Obonjan 2017</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/9/7/react-london-meetup-august-2017</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/30/essential-retail-talks-about-red-badgers-work-with-fortnum-mason</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/8/30/internet-retailing-shares-details-of-our-work-with-fortnum-mason</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/9/5/number-31-in-tech-track-100-2017</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-13</lastmod>
+  </url>
+  <url>
+    <loc>https://red-badger.com/blog/2017/9/13/dont-speculate-to-accumulate-validate-to-succeed</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2017-09-14</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92e91f6576eb21119b1f9/1505311523757/Blog4.jpg</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92e4de5dd5b8828472e5a/1505310399158/Blog3.jpg</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92e08d7bdce1043298ddb/1505310373544/Blog2.jpg</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5783a7e19de4bb11478ae2d8/t/59b92da82994cad67528df1e/1505311593398/Blog_Lean+%281%29.png</image:loc>
+      <image:title>Red Badger Blog - Don't speculate to accumulate. Validate to succeed</image:title>
+    </image:image>
+  </url>
+
+      </urlset>

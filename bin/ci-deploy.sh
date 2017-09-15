@@ -15,6 +15,7 @@ createCommitSite() {
   pretty_block "Deploying commit preview site to $URL_BASENAME"
   make clean
   make fetch
+  make generate-sitemap
   make dev-commit
   pretty_success "Build complete!"
 
@@ -46,6 +47,7 @@ deployMaster() {
   pretty_block "Deploying current master to $1"
   make clean
   make build
+  make generate-sitemap
   pretty_success "Build complete!"
 
   pretty_block "Setting Version"

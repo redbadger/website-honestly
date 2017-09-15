@@ -40,25 +40,23 @@ export const mapDataToState = (data: Object): Array<BlogPost> =>
   }));
 
 const getPosts = params =>
-  new Promise(res =>
-    fetch(getUrl(params), { timeout: 10000 })
-      .then(handleErrors)
-      .then(response => response.json())
-      .then(json => {
-        const posts = json.items;
+  fetch(getUrl(params), { timeout: 10000 })
+    .then(handleErrors)
+    .then(response => response.json())
+    .then(json => {
+      const posts = json.items;
 
-        if (json.pagination && json.pagination.nextPage) {
-          const newParams = {
-            ...params,
-            offset: json.pagination.nextPageOffset,
-          };
+      if (json.pagination && json.pagination.nextPage) {
+        const newParams = {
+          ...params,
+          offset: json.pagination.nextPageOffset,
+        };
 
-          return getPosts(newParams).then(newPosts => res(mapDataToState(posts.concat(newPosts))));
-        }
+        return getPosts(newParams).then(newPosts => mapDataToState(posts.concat(newPosts)));
+      }
 
-        return res(mapDataToState(posts));
-      }),
-  );
+      return mapDataToState(posts);
+    });
 
 export const getBlogPosts = (tag: string, cap: number = 3) =>
   getPosts({ tag }).then(posts => take(posts, cap));

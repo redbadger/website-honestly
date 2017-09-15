@@ -55,6 +55,9 @@ dev: badger ## Run the frontend dev server
 fetch:
 	$(LOAD_ENV) && node dev/content-fetcher
 
+generate-sitemap:
+	$(LOAD_ENV) && node dev/generate-sitemap
+
 dev-static: dist/static-site dist/dev-static/index.js ## Compile the site to HTML locally and serve
 	ln -fs ../assets-honestly dist/static-site/assets-honestly
 	node dist/dev-static/index.js
