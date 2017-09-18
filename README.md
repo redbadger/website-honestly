@@ -1,4 +1,4 @@
-Website. Honestly.
+Website. Honestly. 💥
 ==================
 
 [![CircleCI](https://circleci.com/gh/redbadger/website-honestly.svg?style=shield)](https://circleci.com/gh/redbadger/website-honestly)
