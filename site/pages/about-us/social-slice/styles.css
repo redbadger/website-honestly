@@ -4,12 +4,13 @@
 .socialSlice {
   background: badgerBlack;
   composes: dividerBlackSocialSlice from "../../../css/_divider.css";
-  height: 545px;
+  height: 520px;
 }
 
 .desktopView {
   display: none;
   overflow: hidden;
+  height: 520px;
   background: url(./SocialBackground.png) no-repeat right;
 }
 
@@ -48,5 +49,5 @@
 
   .noscript{
     overflow-x: scroll;
-  }  
+  }
 }
