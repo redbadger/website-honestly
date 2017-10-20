@@ -28,7 +28,7 @@
 
 .card {
   white-space: normal;
-  height: 520px;
+  height: 100%;
   background: transparent;
   color: badgerBlack;
   display: inline-block;
