@@ -1,23 +1,13 @@
 .awardsContainer {
   display: flex;
+  background: linear-gradient(to bottom, #F8F8F8, #F8F8F8 34.2%, #ccc 34.4%, #ccc);
 }
-.awardsBackground {
-  background-repeat: repeat-x;
-  background-size: 1px 100%;
-  flex: 1 1 auto;
-}
-.awardsLeft {
-  composes: awardsBackground;
-  background-image: url(./awardsLeft.jpg);
-}
-.awardsRight {
-  composes: awardsBackground;
-  background-image: url(./awardsRight.jpg);
-}
+
 .awards {
-  flex: 1 1 auto;
+  margin: 0 auto;
   max-width: 1440px;
 }
+
 .awardsImage {
   width: 100%;
   display: block;
