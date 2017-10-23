@@ -10,7 +10,7 @@ const trackAnalytics = title => () =>
   });
 
 const webinarLink =
-  'https://attendee.gotowebinar.com/register/4215309162791382274?source=RB-Tech-website';
+  'https://register.gotowebinar.com/register/1013898540655278338?source=Tech+page';
 
 export default () =>
   <section className={styles.webinar}>
