@@ -22,6 +22,16 @@ const {
 import styles from './index.css';
 
 export default class Shapes extends Component {
+
+  static throwShapes(engine) {
+    Engine.run(engine);
+    Render.run(engine.render);
+  }
+
+  componentDidMount() {
+    this.engageMusic(this.shapes);
+  }
+
   svg: Object;
   shapes: Object;
 
@@ -40,7 +50,7 @@ export default class Shapes extends Component {
       },
     });
 
-    const nrand = function() {
+    const nrand = () => {
       let x1;
       let x2;
       let rad;
@@ -95,7 +105,7 @@ export default class Shapes extends Component {
       render: transparentOpts,
     });
 
-    window.onresize = function() {
+    window.onresize = () => {
       engine.render.canvas.width = window.innerWidth;
       Body.set(rightSide, 'position', { x: window.innerWidth, y: height });
       Body.set(ground, 'position', { x: window.innerWidth / 2, y: height + 10 });
@@ -121,15 +131,6 @@ export default class Shapes extends Component {
     World.add(engine.world, mouseConstraint);
 
     Shapes.throwShapes(engine);
-  }
-
-  componentDidMount() {
-    this.engageMusic(this.shapes);
-  }
-
-  static throwShapes(engine) {
-    Engine.run(engine);
-    Render.run(engine.render);
   }
 
   render() {

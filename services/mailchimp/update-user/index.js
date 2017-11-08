@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import md5 from 'md5';
 import { mailchimpApi, formatUpdateResponse, formatFormInput } from '../utilities';
 
