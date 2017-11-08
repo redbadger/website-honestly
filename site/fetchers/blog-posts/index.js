@@ -2,6 +2,7 @@
 
 import fetch from 'node-fetch';
 import take from 'lodash.take';
+import { flatten } from 'lodash';
 import moment from 'moment';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 import handleErrors from '../handle-errors';
@@ -39,12 +40,16 @@ export const mapDataToState = (data: Object): Array<BlogPost> =>
     },
   }));
 
-const getPosts = params =>
+const getPostsForTag = params =>
   fetch(getUrl(params), { timeout: 10000 })
     .then(handleErrors)
     .then(response => response.json())
     .then(json => {
       const posts = json.items;
+
+      if (!posts) {
+        return [];
+      }
 
       if (json.pagination && json.pagination.nextPage) {
         const newParams = {
@@ -52,11 +57,15 @@ const getPosts = params =>
           offset: json.pagination.nextPageOffset,
         };
 
-        return getPosts(newParams).then(newPosts => mapDataToState(posts.concat(newPosts)));
+        return getPostsForTag(newParams).then(newPosts => mapDataToState(posts.concat(newPosts)));
       }
 
       return mapDataToState(posts);
     });
 
-export const getBlogPosts = (tag: string, cap: number = 3) =>
-  getPosts({ tag }).then(posts => take(posts, cap));
+const getPosts = tags => Promise.all(tags.map(tag => getPostsForTag({ tag }))).then(flatten);
+
+export const getBlogPosts = (tags: Array<string>, cap: number = 3) =>
+  getPosts(tags)
+    .then(posts => posts.sort((a, b) => b.date - a.date))
+    .then(posts => take(posts, cap));
