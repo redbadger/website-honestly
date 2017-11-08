@@ -10,12 +10,12 @@ const trackAnalytics = title => () =>
   });
 
 const webinarLink =
-  'https://register.gotowebinar.com/register/1013898540655278338?source=Tech+page';
+  'http://bit.ly/2h7jvFN';
 
 export default () =>
   <section className={styles.webinar}>
     <div className={styles.webinarInner}>
-      <h2 className={styles.webinarText}>{"We're hosting a webinar!"}</h2>
+      <h2 className={styles.webinarText}>{"Missed our webinar on Serverless and GraphQL?"}</h2>
       <a
         className={styles.webinarButton}
         href={webinarLink}
@@ -23,7 +23,7 @@ export default () =>
         rel="noopener noreferrer"
         onClick={trackAnalytics('Webinar-technology page -button')}
       >
-        Sign up to attend
+        Watch it now
       </a>
     </div>
   </section>;

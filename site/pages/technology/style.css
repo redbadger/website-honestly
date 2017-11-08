@@ -107,7 +107,7 @@ img.techRoundTable {
 }
 
 .webinarInner {
-  padding: 30px 0px 35px 0px;
+  padding: 30px 20px 35px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -154,7 +154,7 @@ img.techRoundTable {
 
   .webinarText {
     padding: 0;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .webinarButton {
