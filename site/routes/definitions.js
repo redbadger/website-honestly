@@ -7,7 +7,7 @@ type RouteDefinition = {|
   route: string,
   defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
-  gen?: (state: Object) => Array<Object>,
+  gen?: (state: Object) => Array<Object>
 |};
 
 export const routeDefinitions: Array<RouteDefinition> = [
@@ -95,6 +95,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Retailer case study',
     key: 'retailerCaseStudy',
     route: 'our-work/case-study/retailer',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
+    title: 'Fortnum & Mason case study',
+    key: 'fortnumAndMasonCaseStudy',
+    route: 'our-work/case-study/fortnum-and-mason',
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),

@@ -19,6 +19,7 @@ import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
 import Technology from '../pages/technology';
 
+import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
 import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
@@ -42,6 +43,7 @@ const componentMap = {
   aboutUsPage: AboutUsPage,
   badgers: MeetOurTeam,
   badger: BadgerProfile,
+  fortnumAndMasonCaseStudy: FortnumAndMasonCaseStudy,
   retailerCaseStudy: RetailerCaseStudy,
   camdenMarketCaseStudy: CamdenMarketCaseStudy,
   financialTimesCaseStudy: FinancialTimesCaseStudy,
@@ -58,7 +60,11 @@ function routes() {
     ...route,
     component: (routerProps, props) => {
       const Component = componentMap[route.key];
-      return <L {...routerProps}><Component {...props} /></L>;
+      return (
+        <L {...routerProps}>
+          <Component {...props} />
+        </L>
+      );
     },
   }));
 }
@@ -116,7 +122,7 @@ const handleContactUsHash = stateNavigator => {
 export default () => {
   const stateNavigator = new StateNavigator(
     routes(),
-    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1)),
+    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
   );
   handleContactUsHash(stateNavigator);
   return stateNavigator;

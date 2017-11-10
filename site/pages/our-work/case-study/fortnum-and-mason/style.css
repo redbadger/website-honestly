@@ -1,0 +1,286 @@
+@value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.caseStudy {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  font-size: 20px;
+  line-height: 27px;
+  background-color: badgerWhite;
+}
+
+.header {
+  width: 100%;
+  background-color: #abc9c1;
+  margin-bottom: 10px;
+}
+
+.header__container {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 310px;
+}
+
+.header__imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__image {
+  max-width: 375px;
+  height: auto;
+}
+
+.header__outcome {
+  width: 120px;
+  position: absolute;
+}
+
+.header__outcome--right {
+  text-align: right;
+  top: 13px;
+  right: 20px;
+}
+
+.header__outcome--right .header__outcome__percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  left: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: badgerBlack;
+}
+
+.header__outcome--left {
+  bottom: 13px;
+  left: 20px;
+}
+
+.header__outcome--left .header__outcome__percentage:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -2px;
+  bottom: 24px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: badgerBlack;
+}
+
+.header__outcome__percentage {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  display: block;
+  border-bottom: 1px dashed badgerBlack;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+}
+
+.header__outcome__description {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  font-size: 16px;
+}
+
+.techGraphImage {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.content {
+  padding-bottom: 40px;
+}
+
+.content__wrapper {
+  padding: 20px 20px 20px;
+}
+
+.content__mainTitle {
+  composes: fontL from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 30px;
+}
+
+.content__title {
+  composes: fontM from "../../../../css/typography/_fonts.css";
+  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 40px;
+}
+
+.content__redTitle {
+  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  display: block;
+  color: badgerRedOnWhite;
+}
+
+.content__secondaryTitle {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.content__paragraph {
+  margin-bottom: 20px;
+}
+
+.content__list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.content__list__element {
+  line-height: 28px;
+}
+
+.listBox {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.listBox__heading {
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  color: badgerRedOnWhite;
+  text-transform: uppercase;
+}
+
+.listBox__heading:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: linesOnWhite;
+  margin: 15px 0;
+}
+
+.listBox__element {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed linesOnWhite;
+}
+
+.listBox__element--results {
+  display: flex;
+  justify-content: space-between;
+  composes: fontS2 from "../../../../css/typography/_fonts.css";
+  composes: serif from "../../../../css/typography/_fonts.css";
+}
+
+.overview {
+  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media mediumScreen {
+  .header__container {
+    height: 400px;
+  }
+
+  .header__image {
+    max-width: 500px;
+    height: auto;
+  }
+
+  .header__outcome {
+    width: 200px;
+  }
+
+  .header__outcome--left {
+    bottom: 78px;
+  }
+
+  .header__outcome--right {
+    top: 78px;
+  }
+
+  .content__paragraph {
+    padding-left: 114px;
+  }
+
+  .content__secondaryTitle {
+    padding-left: 114px;
+  }
+
+  .content__list {
+    padding-left: 134px;
+  }
+
+  .content__mainTitle {
+    margin-bottom: -20px;
+  }
+
+  .content__title {
+    margin-top: 50px;
+  }
+
+  .overview {
+    display: flex;
+  }
+
+  .listBox {
+    width: 50%;
+  }
+
+  .techGraphImage {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+@media largeScreen {
+  .content {
+    max-width: 1400px;
+    padding: 20px 120px 60px;
+    margin: auto;
+  }
+
+  .content__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content__paragraph,
+  .content__secondaryTitle {
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+
+  .content__list {
+    padding-left: 33.457143%;
+    padding-right: 18.2857143%;
+  }
+
+  .content__mainTitle {
+    position: relative;
+    top: -96px;
+    display: block;
+    padding: 20px;
+    height: 100%;
+    background-color: badgerWhite;
+    margin-bottom: -96px;
+  }
+
+  .content__title {
+    padding-left: 10%;
+  }
+
+  .header {
+    padding-bottom: 56px;
+  }
+
+  .techGraphImage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
