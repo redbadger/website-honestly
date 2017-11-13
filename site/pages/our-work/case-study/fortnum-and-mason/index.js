@@ -7,6 +7,8 @@ import metaImage from './images/meta-image.png';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
+import Card from '../../../../components/card';
+import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';
 
 const cx = classnames.bind(styles);
@@ -128,11 +130,61 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
         <p className={styles.content__paragraph}>
           The results in the first few weeks were striking:
         </p>
+        <Card className={styles.listBoxContainer}>
+          <ListBox
+            className={styles.listBox}
+            items={[
+              {
+                label: 'Improved conversion in the first week of release ',
+                value: '+14%',
+              },
+              {
+                label: ' Increase in average order value in the first week of release',
+                value: '+5%',
+              },
+              {
+                label: 'Total sales achieving growth year on year',
+                value: '+52%',
+              },
+              {
+                label: 'Increase in mobile visits up year on year',
+                value: '+77%',
+              },
+            ]}
+          />
+        </Card>
         <p className={styles.content__paragraph}>
           The drop-out rate at the delivery options stage was previously 18.8% and has now been
           reduced to 12.9% (based figures from 17–25th February 2014 vs 2015.)
         </p>
         <p className={styles.content__paragraph}>Other key stats year on year*:</p>
+        <Card className={styles.listBoxContainer}>
+          <ListBox
+            className={styles.listBox}
+            items={[
+              {
+                label: 'Mobile Conversion rate ',
+                value: '+57%',
+              },
+              {
+                label: 'Tablet visits',
+                value: '+30%',
+              },
+              {
+                label: 'Tablet Conversion',
+                value: '+28%',
+              },
+              {
+                label: 'New customers conversion',
+                value: '+15%',
+              },
+              {
+                label: 'Reduction in calls to the Customer Service team',
+                value: '-18%',
+              },
+            ]}
+          />
+        </Card>
         <p className={styles.content__paragraph}>
           * Statistics are based on launch week to 8th March and same date range last year.
         </p>

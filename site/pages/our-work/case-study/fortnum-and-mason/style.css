@@ -57,8 +57,18 @@
   margin-top: 40px;
 }
 
-.content__paragraph {
+.content__paragraph,
+.listBoxContainer {
   margin-bottom: 20px;
+}
+
+.listBoxContainer {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.listBox {
+  margin: 10px 0;
 }
 
 @media mediumScreen {
@@ -85,6 +95,15 @@
 
   .content__paragraph {
     padding-left: 114px;
+  }
+
+  .listBoxContainer {
+    margin-left: 64px;
+    margin-right: auto;
+  }
+
+  .listBox {
+    margin: 20px 30px;
   }
 
   .content__secondaryTitle {
@@ -120,6 +139,10 @@
   .content__secondaryTitle {
     padding-left: 30%;
     padding-right: 10%;
+  }
+
+  .listBoxContainer {
+    margin-left: calc(30% - 50px);
   }
 
   .content__list {

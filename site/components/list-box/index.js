@@ -7,7 +7,7 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 type ListBoxProps = {
-  title: string,
+  title?: string,
   items: Array<Object>,
   className?: string,
   itemClassName?: string,
@@ -25,7 +25,7 @@ const ListBox = ({
 }: ListBoxProps) => {
   return (
     <div className={cx(styles.listBox, className)}>
-      <h3 className={styles.listBox__heading}>{title}</h3>
+      {title && <h3 className={styles.listBox__heading}>{title}</h3>}
       <ul>
         {items.map((item, index) => {
           return (
