@@ -62,6 +62,14 @@
   margin-bottom: 20px;
 }
 
+.tabletImage {
+  width: 100%;
+}
+
+.devicesImage {
+  width: 100%;
+}
+
 .listBoxContainer {
   margin-left: -20px;
   margin-right: -20px;
@@ -107,7 +115,12 @@
   .content__float {
     width: 40%;
     float: right;
-    margin: 0 0 30px 40px;
+    margin: 5px 0 30px 40px;
+  }
+
+  .content__float--left {
+    float: left;
+    margin: 5px 40px 30px 12%;
   }
 
   .listBoxContainer {
@@ -156,6 +169,11 @@
 
   .listBoxContainer {
     margin-left: calc(30% - 50px);
+  }
+
+  .devicesImage {
+    padding-left: calc(30% - 50px);
+    padding-right: 3%;
   }
 
   .content__list {

@@ -49,6 +49,9 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           different countries, Fortnum’s realised their digital experience didn’t match the service
           delivered by the physical stores, and something needed to change, quickly.
         </p>
+        <div className={styles.content__float}>
+          <img src={metaImage} className={styles.tabletImage} alt="" />
+        </div>
         <p className={styles.content__paragraph}>
           The old site had an inconsistent design, was inflexible, difficult to update and the
           underlying technology was nearing the end of its life. The out-dated technology meant that
@@ -62,6 +65,9 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           and delivery to more than 130 countries. A scalable, highly flexible new site was needed,
           and very quickly to avoid more lost revenue.
         </p>
+      </div>
+      <div>
+        <img src={metaImage} className={styles.devicesImage} alt="" />
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
@@ -121,6 +127,9 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           <span className={styles.content__redTitle}>{'Creating lasting change.'}</span>
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
+        <div className={cx(styles.content__float, styles['content__float--left'])}>
+          <img src={metaImage} className={styles.tabletImage} alt="" />
+        </div>
         <p className={styles.content__paragraph}>
           The new Badger-created site was one of the only fully responsive retail sites that was
           live at the time, which ensures that the customer experience is equally superlative no
