@@ -46,6 +46,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
       </div>
       <div className={styles.overview}>
         <Quote
+          className={styles.quote}
           author={{
             name: 'Christina Scott',
             title: 'Chief Product & Information Officer, Financial Times',

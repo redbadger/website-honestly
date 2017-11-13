@@ -191,6 +191,11 @@
   padding: 0px 50px;
 }
 
+.quote {
+  width: 75%;
+  margin: 22px auto 62px;
+}
+
 @media mediumScreen {
   .content__wrapper {
     padding: 30px 20px 20px;
@@ -252,6 +257,10 @@
 
   .screenDemo {
     padding-bottom: 0px;
+  }
+
+  .quote {
+    width: 85%;
   }
 }
 
@@ -316,5 +325,10 @@
   .listBoxContainer {
     width: 50%;
     margin-bottom: 0;
+  }
+
+  .quote {
+    width: 45%;
+    margin: 0 auto;
   }
 }

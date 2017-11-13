@@ -47,6 +47,7 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) => (
       </div>
       <div className={styles.overview}>
         <Quote
+          className={styles.quote}
           author={{
             name: 'David Crawford',
             title: 'Head of Software Engineering, Sky',

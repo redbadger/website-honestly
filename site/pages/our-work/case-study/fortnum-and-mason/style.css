@@ -57,18 +57,24 @@
   margin-top: 40px;
 }
 
-.content__paragraph,
-.listBoxContainer {
+.content__paragraph {
   margin-bottom: 20px;
 }
 
 .listBoxContainer {
   margin-left: -20px;
   margin-right: -20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .listBox {
   margin: 10px 0;
+}
+
+.listBox__item:last-child {
+  border: none;
+  margin-bottom: 0;
 }
 
 @media mediumScreen {
@@ -97,13 +103,18 @@
     padding-left: 114px;
   }
 
+  .content__float {
+    float: right;
+    margin-bottom: 20px;
+  }
+
   .listBoxContainer {
     margin-left: 64px;
     margin-right: auto;
   }
 
   .listBox {
-    margin: 20px 30px;
+    margin: 20px 30px 10px;
   }
 
   .content__secondaryTitle {

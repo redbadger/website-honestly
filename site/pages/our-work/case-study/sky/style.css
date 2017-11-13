@@ -113,6 +113,11 @@
   max-width: 691px;
 }
 
+.quote {
+  width: 75%;
+  margin: 22px auto 62px;
+}
+
 @media mediumScreen {
   .header__container {
     height: 400px;
@@ -164,6 +169,10 @@
     flex-wrap: wrap;
     align-items: flex-start;
   }
+
+  .quote {
+    width: 85%;
+  }
 }
 
 @media largeScreen {
@@ -214,5 +223,10 @@
   .listBoxContainer {
     width: 50%;
     margin-bottom: 0;
+  }
+
+  .quote {
+    width: 45%;
+    margin: 0 auto;
   }
 }

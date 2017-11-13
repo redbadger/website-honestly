@@ -9,6 +9,7 @@ import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
+import Quote from '../../../../components/quote';
 import ContactBox from '../../../../components/contact-box';
 
 const cx = classnames.bind(styles);
@@ -84,6 +85,15 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           incremental changes are constantly tested and released to production multiple times a day
           (instead of a few times a year), helping to bid farewell to the age of big bang releases.
         </p>
+        <div className={styles.content__float}>
+          <Quote
+            text="Since the site went live it has had incredible results in increased revenues and conversion rates."
+            author={{
+              name: 'Zia Zareem-Slade',
+              title: 'Customer Experience Director, Fortnum & Mason',
+            }}
+          />
+        </div>
         <p className={styles.content__paragraph}>
           The process and technology had the customer at the heart of the project but the key to the
           success was engaging Fortnum’s customers to help drive the direction of the design and
@@ -151,6 +161,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
                 value: '+77%',
               },
             ]}
+            itemClassName={styles.listBox__item}
           />
         </Card>
         <p className={styles.content__paragraph}>
@@ -183,6 +194,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
                 value: '-18%',
               },
             ]}
+            itemClassName={styles.listBox__item}
           />
         </Card>
         <p className={styles.content__paragraph}>

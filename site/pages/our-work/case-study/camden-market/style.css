@@ -172,6 +172,11 @@
   margin: 0 auto 25px;
 }
 
+.quote {
+  width: 75%;
+  margin: 22px auto 62px;
+}
+
 @media mediumScreen {
   .contactBox {
     width: auto;
@@ -230,9 +235,8 @@
     flex-wrap: wrap;
   }
 
-  .quotation {
-    width: 45%;
-    margin-right: auto;
+  .quote {
+    width: 85%;
   }
 
   .techGraphImage {
@@ -303,5 +307,10 @@
   .listBoxContainer {
     width: 50%;
     margin-bottom: 0;
+  }
+
+  .quote {
+    width: 45%;
+    margin: 0 auto;
   }
 }

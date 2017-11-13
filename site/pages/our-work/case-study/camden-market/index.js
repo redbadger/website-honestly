@@ -49,6 +49,7 @@ const CaseStudyCamdenMarket = ({ contactUsURL }: CaseStudyCamdenMarketProps) => 
       </div>
       <div className={styles.overview}>
         <Quote
+          className={styles.quote}
           author={{
             name: 'Lily Walsh',
             title: 'Product Owner, Market Tech',
