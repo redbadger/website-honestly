@@ -6,6 +6,7 @@ import headerImage from './images/header.png';
 import cmsIllustrationImage from './images/cms-illustration.jpg';
 import authorQuoteImage from './images/quote-author.jpg';
 
+import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
@@ -14,7 +15,7 @@ import ContactUs from '../../../../slices/contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 type CaseStudySkyCmsProps = {
-  contactUsURL: string,
+  contactUsURL: string
 };
 
 const social = {
@@ -24,7 +25,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/sky-cms',
 };
 
-const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
+const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -51,26 +52,26 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
             'The new site and CMS have given us the flexibility we needed to effectively update and manage the Help site. It allows us to take an agile approach to the way we work and respond to consumer requirements faster and more efficiently.'
           }
         />
-        <ListBox
-          title="Results"
-          items={[
-            {
-              label:
-                'New intuitive CMS creating more efficient system, freeing up time to focus on the content ',
-            },
-            {
-              label: 'Tripled the number of issues resolved through online self-help journey',
-            },
-          ]}
-          itemClassName={styles.listBox__item}
-          labelClassName={styles.listBox__label}
-        />
+        <Card className={styles.listBoxContainer}>
+          <ListBox
+            title="Results"
+            items={[
+              {
+                label:
+                  'New intuitive CMS creating more efficient system, freeing up time to focus on the content ',
+              },
+              {
+                label: 'Tripled the number of issues resolved through online self-help journey',
+              },
+            ]}
+            itemClassName={styles.listBox__item}
+            labelClassName={styles.listBox__label}
+          />
+        </Card>
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>
-            Let’s make things better.
-          </span>
+          <span className={styles.content__redTitle}>Let’s make things better.</span>
           Enabling Sky to manage their content with an amazing customer experience
         </h2>
         <p className={styles.content__paragraph}>
@@ -110,9 +111,7 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
           more effectively. As demand changes, new features can also be rolled out faster and
           cheaper due to reduced interdependence and complexity.
         </p>
-        <h3 className={styles.content__secondaryTitle}>
-          Innovative features of the CMS include:
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>Innovative features of the CMS include:</h3>
         <p className={styles.content__paragraph}>
           <ul className={styles.content__ordered__list}>
             <li className={styles.content__ordered__list__element}>
@@ -172,6 +171,7 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) =>
     </div>
     <WhatToReadNext currentPage="skyCms" />
     <ContactUs postURL={contactUsURL} />
-  </div>;
+  </div>
+);
 
 export default SkyCmsCaseStudy;

@@ -1,9 +1,9 @@
 @value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
-@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+@value mediumScreen, largeScreen from '../../../../css/_sizes.css';
 
 .caseStudy {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
   font-size: 20px;
   line-height: 27px;
   background-color: badgerWhite;
@@ -47,7 +47,7 @@
 
 .header__outcome--right .header__outcome__percentage:after {
   position: absolute;
-  content: "";
+  content: '';
   display: inline-block;
   left: -2px;
   bottom: 24px;
@@ -64,7 +64,7 @@
 
 .header__outcome--left .header__outcome__percentage:after {
   position: absolute;
-  content: "";
+  content: '';
   display: inline-block;
   right: -2px;
   bottom: 24px;
@@ -75,8 +75,8 @@
 }
 
 .header__outcome__percentage {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
   display: block;
   border-bottom: 1px dashed badgerBlack;
   padding-bottom: 5px;
@@ -84,8 +84,8 @@
 }
 
 .header__outcome__description {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
   font-size: 16px;
 }
 
@@ -104,27 +104,27 @@
 }
 
 .content__mainTitle {
-  composes: fontL from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontL from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
   margin-bottom: 30px;
 }
 
 .content__title {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
   margin-bottom: 40px;
 }
 
 .content__redTitle {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
   display: block;
   color: badgerRedOnWhite;
 }
 
 .content__secondaryTitle {
-  composes: fontS2 from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
   margin-bottom: 0px;
   margin-top: 40px;
 }
@@ -144,41 +144,15 @@
 }
 
 .listBox {
-  background-color: #fff;
-  padding: 20px;
+  margin-bottom: 40px;
 }
 
-.listBox__heading {
-  composes: fontS2 from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  color: badgerRedOnWhite;
-  text-transform: uppercase;
+.listBox:last-child {
+  margin-bottom: 0;
 }
 
-.listBox__heading:after {
-  display: block;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: linesOnWhite;
-  margin: 15px 0;
-}
-
-.listBox__element {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px dashed linesOnWhite;
-}
-
-.listBox__element--results {
-  display: flex;
-  justify-content: space-between;
-  composes: fontS2 from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
-}
-
-.overview {
-  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
+.listBox__leftLabel {
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
 }
 
 @media mediumScreen {
@@ -225,10 +199,12 @@
 
   .overview {
     display: flex;
+    justify-content: space-between;
   }
 
   .listBox {
-    width: 50%;
+    width: calc(50% - 20px);
+    margin-bottom: 0;
   }
 
   .techGraphImage {

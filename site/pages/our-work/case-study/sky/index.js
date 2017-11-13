@@ -6,6 +6,7 @@ import headerImage from './images/header.jpg';
 import articleImage from './images/article.jpg';
 import authorQuoteImage from './images/quote-author.jpeg';
 
+import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
@@ -14,7 +15,7 @@ import ContactUs from '../../../../slices/contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 type CaseStudySkyProps = {
-  contactUsURL: string,
+  contactUsURL: string
 };
 
 const social = {
@@ -24,7 +25,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/sky-cms',
 };
 
-const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) =>
+const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -55,28 +56,28 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) =>
             'Red Badger are recognised leaders in Agile/Lean methodologies so they could immediately start working and deliver results alongside our internal team.'
           }
         />
-        <ListBox
-          title="Results"
-          items={[
-            {
-              label: 'Tripled the number of issues resolved through online self help journey',
-            },
-            {
-              label: 'Doubled the customers serviced by the advanced diagnostics capability',
-            },
-            {
-              label: 'Serviced half a million customers to date',
-            },
-          ]}
-          itemClassName={styles.listBox__item}
-          labelClassName={styles.listBox__label}
-        />
+        <Card className={styles.listBoxContainer}>
+          <ListBox
+            title="Results"
+            items={[
+              {
+                label: 'Tripled the number of issues resolved through online self help journey',
+              },
+              {
+                label: 'Doubled the customers serviced by the advanced diagnostics capability',
+              },
+              {
+                label: 'Serviced half a million customers to date',
+              },
+            ]}
+            itemClassName={styles.listBox__item}
+            labelClassName={styles.listBox__label}
+          />
+        </Card>
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>
-            Let’s make things better.
-          </span>
+          <span className={styles.content__redTitle}>Let’s make things better.</span>
           Delivering exceptional intuitive customer service
         </h2>
         <p className={styles.content__paragraph}>
@@ -137,13 +138,13 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) =>
         <p className={styles.content__paragraph}>
           The new diagnostic platform has had a huge effect. It tripled the number of issues
           resolved through the online self-help journey, it doubled the customers serviced by the
-          advanced diagnostics, and it’s serviced half a million customers to date.
-          {' '}
+          advanced diagnostics, and it’s serviced half a million customers to date.{' '}
         </p>
       </div>
     </div>
     <WhatToReadNext currentPage="sky" />
     <ContactUs postURL={contactUsURL} />
-  </div>;
+  </div>
+);
 
 export default SkyCaseStudy;

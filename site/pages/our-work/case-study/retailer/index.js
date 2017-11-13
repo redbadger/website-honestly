@@ -9,12 +9,14 @@ import metaImage from './images/meta-image.png';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
+import Card from '../../../../components/card';
+import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';
 
 const cx = classnames.bind(styles);
 
 type CaseStudyRetailerProps = {
-  contactUsURL: string,
+  contactUsURL: string
 };
 
 const social = {
@@ -25,7 +27,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/retailer',
 };
 
-const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
+const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -34,20 +36,12 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
           <img src={headerImage} alt="Retailer shopping cart" className={styles.header__image} />
         </div>
         <div className={cx('header__outcome', 'header__outcome--right')}>
-          <span className={styles.header__outcome__percentage}>
-            +54%
-          </span>
-          <h3 className={styles.header__outcome__description}>
-            Increased orders
-          </h3>
+          <span className={styles.header__outcome__percentage}>+54%</span>
+          <h3 className={styles.header__outcome__description}>Increased orders</h3>
         </div>
         <div className={cx('header__outcome', 'header__outcome--left')}>
-          <span className={styles.header__outcome__percentage}>
-            +29%
-          </span>
-          <h3 className={styles.header__outcome__description}>
-            Uplift in visits
-          </h3>
+          <span className={styles.header__outcome__percentage}>+29%</span>
+          <h3 className={styles.header__outcome__description}>Uplift in visits</h3>
         </div>
       </div>
     </div>
@@ -57,9 +51,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
           Next generation platform for retail giant cleared five-year backlog in just eight months
         </h1>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>
-            {"Let's make things better."}
-          </span>
+          <span className={styles.content__redTitle}>{"Let's make things better."}</span>
           Solving high drop-out rates
         </h2>
         <p className={styles.content__paragraph}>
@@ -70,8 +62,8 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
           This was because the online experience and functionality were inconsistent. The business
           was spending huge sums on a piece of software that scraped its website, and then created
           mobile optimised versions on the fly. This meant that some orders were easier to place
-          than others - depending on what device was being used - and amendments to orders were
-          down as they were incredibly complicated to change once booked.
+          than others - depending on what device was being used - and amendments to orders were down
+          as they were incredibly complicated to change once booked.
         </p>
         <p className={styles.content__paragraph}>
           As a retailer dedicated to providing value to customers and seeing its online business
@@ -90,15 +82,13 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
           <span className={styles.content__redTitle}>Do the right thing. Do the thing right.</span>
           Streamlining teams and implementing cutting-edge tech
         </h2>
-        <h3 className={styles.content__secondaryTitle}>
-          Embracing organisational change
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>Embracing organisational change</h3>
         <p className={styles.content__paragraph}>
           Although change is happening, big companies are still watching the speed at which today’s
           start-ups move in awe and envy. What start-ups do right is work in a way that puts the
           customer at the very heart of projects, from technology choices to design and content.
-          They then work in a collaborative and Lean way to get new products out at speeds that
-          seem staggering to large organisations.
+          They then work in a collaborative and Lean way to get new products out at speeds that seem
+          staggering to large organisations.
         </p>
         <p className={styles.content__paragraph}>
           Red Badger enabled this large retail client to work with the agility of a start-up:
@@ -107,15 +97,11 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
           benefits of this included:
         </p>
         <ul className={styles.content__list}>
-          <li className={styles.content__list__element}>
-            A shorter feedback loop
-          </li>
+          <li className={styles.content__list__element}>A shorter feedback loop</li>
           <li className={styles.content__list__element}>
             Team-wide responsibility for each decision
           </li>
-          <li className={styles.content__list__element}>
-            Elimination of waste
-          </li>
+          <li className={styles.content__list__element}>Elimination of waste</li>
           <li className={styles.content__list__element}>
             Driven determination and focus in order to deliver value to customers, faster
           </li>
@@ -128,12 +114,10 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
         <img src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
       </div>
       <div className={styles.content__wrapper}>
-        <h3 className={styles.content__secondaryTitle}>
-          Finding the right tech for the job
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>Finding the right tech for the job</h3>
         <p className={styles.content__paragraph}>
-          Now working in a collaborative and Lean way with Red Badger, it was time to find the
-          right tech for the job.
+          Now working in a collaborative and Lean way with Red Badger, it was time to find the right
+          tech for the job.
         </p>
         <p className={styles.content__paragraph}>
           Red Badger worked very closely with the retailer’s engineering team to recommend and
@@ -145,8 +129,8 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
         <ContactBox />
         <p className={styles.content__paragraph}>
           By using a combination of Node.js and React.js, the team were able to develop an app that
-          delivers a consistent experience across all devices. It also means that the application
-          is fast and responsive, delivering far better usability for customers.
+          delivers a consistent experience across all devices. It also means that the application is
+          fast and responsive, delivering far better usability for customers.
         </p>
         <p className={styles.content__paragraph}>
           On top of this, by moving into the Cloud, using advanced technology such as Docker
@@ -159,9 +143,9 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
         <p className={styles.content__paragraph}>
           Finally, on the tech front, by building Automated Test and Continuous Deployment
           Pipelines, new features are enabled to be constantly trickled into production, continually
-          delivering new value to customers and substantially reducing risk. Previously, the
-          retail giant released quarterly but can now release multiple times a day with deployments
-          taking minutes, rather than days.
+          delivering new value to customers and substantially reducing risk. Previously, the retail
+          giant released quarterly but can now release multiple times a day with deployments taking
+          minutes, rather than days.
         </p>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>Creating lasting change.</span>
@@ -176,80 +160,64 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) =>
         </p>
         <p className={styles.content__paragraph}>
           And, by first focusing on delivering the application for mobile only, Red Badger has
-          delivered a completed application across seven countries in just eight months, the
-          results of which are staggering:
+          delivered a completed application across seven countries in just eight months, the results
+          of which are staggering:
         </p>
       </div>
-      <div className={styles.overview}>
-        <div className={styles.listBox}>
-          <h3 className={styles.listBox__heading}>What we did</h3>
-          <ul>
-            <li className={styles.listBox__element}>
-              Mobile first application across 7 countries
-            </li>
-            <li className={styles.listBox__element}>
-              Introduced Lean & Agile practices
-            </li>
-            <li className={styles.listBox__element}>
-              Built Continuous Deployment Pipelines
-            </li>
-            <li className={styles.listBox__element}>
-              Moved to the Cloud
-            </li>
-            <li className={styles.listBox__element}>
-              Introduced automated testing & cutting edge tech
-            </li>
-          </ul>
-        </div>
-        <div className={styles.listBox}>
-          <h3 className={styles.listBox__heading}>Results</h3>
-          <ul>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Uplift in visits
-              </div>
-              <div>
-                +29%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Increased orders
-              </div>
-              <div>
-                +54%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Customers amending orders
-              </div>
-              <div>
-                +443%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Conversion rates including amendments
-              </div>
-              <div>
-                +83%
-              </div>
-            </li>
-            <li className={cx('listBox__element', 'listBox__element--results')}>
-              <div>
-                Conversion rates excluding amendments
-              </div>
-              <div>
-                +18%
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Card className={styles.overview}>
+        <ListBox
+          className={styles.listBox}
+          title="What we did"
+          items={[
+            {
+              label: 'Mobile first application across 7 countries',
+            },
+            {
+              label: 'Introduced Lean & Agile practices',
+            },
+            {
+              label: 'Built Continuous Deployment Pipelines',
+            },
+            {
+              label: 'Moved to the Cloud',
+            },
+            {
+              label: 'Introduced automated testing & cutting edge tech',
+            },
+          ]}
+          labelClassName={styles.listBox__leftLabel}
+        />
+        <ListBox
+          className={styles.listBox}
+          title="Results"
+          items={[
+            {
+              label: 'Uplift in visits',
+              value: '+29%',
+            },
+            {
+              label: 'Increased orders',
+              value: '+54%',
+            },
+            {
+              label: 'Customers amending orders',
+              value: '+443%',
+            },
+            {
+              label: 'Conversion rates including amendments',
+              value: '+83%',
+            },
+            {
+              label: 'Conversion rates excluding amendments',
+              value: '+18%',
+            },
+          ]}
+        />
+      </Card>
     </div>
     <WhatToReadNext currentPage="retailer" />
     <ContactUs postURL={contactUsURL} />
-  </div>;
+  </div>
+);
 
 export default CaseStudyRetailer;

@@ -1,9 +1,13 @@
-@value badgerWhite, badgerBlack, badgerAccessibleRedOnWhite, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
-@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+@value badgerWhite from '../../../../css/_colors.css';
+@value badgerBlack from '../../../../css/_colors.css';
+@value badgerAccessibleRedOnWhite from '../../../../css/_colors.css';
+@value badgerRedOnWhite from '../../../../css/_colors.css';
+@value linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from '../../../../css/_sizes.css';
 
 .caseStudy {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
   font-size: 20px;
   line-height: 27px;
   background-color: badgerWhite;
@@ -40,14 +44,14 @@
 }
 
 .content__mainTitle {
-  composes: fontL from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontL from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
   margin-bottom: 0px;
 }
 
 .content__title {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: lightSerif from "../../../../css/typography/_fonts.css";
+  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
   margin-bottom: 20px;
   margin-top: 50px;
 }
@@ -57,15 +61,15 @@
 }
 
 .content__redTitle {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
   display: block;
   color: badgerAccessibleRedOnWhite;
 }
 
 .content__secondaryTitle {
-  composes: fontS2 from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
   margin-bottom: 20px;
   margin-top: 40px;
 }
@@ -96,13 +100,18 @@
   line-height: 28px;
 }
 
+.listBoxContainer {
+  width: 100%;
+  margin: 0 auto 25px;
+}
+
 .listBox__label {
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
   font-size: 16px;
 }
 
 .cmsIllustration {
-  background: #DED3C3;
+  background: #ded3c3;
   text-align: center;
   position: relative;
   padding-bottom: 40px;
@@ -115,7 +124,6 @@
 }
 
 @media mediumScreen {
-  
   .header__container {
     height: 400px;
   }
@@ -124,7 +132,7 @@
     height: 400px;
     width: auto;
   }
-  
+
   .content__wrapper {
     padding: 30px 20px 20px;
   }
@@ -151,6 +159,11 @@
     display: flex;
   }
 
+  .listBoxContainer {
+    width: 75%;
+    margin-bottom: 0;
+  }
+
   .listBox__item {
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -161,7 +174,6 @@
     flex-wrap: wrap;
     align-items: flex-start;
   }
-
 }
 
 @media largeScreen {
@@ -185,7 +197,8 @@
     padding-right: 0;
   }
 
-  .content__paragraph, .content__secondaryTitle {
+  .content__paragraph,
+  .content__secondaryTitle {
     padding-left: 30%;
     padding-right: 10%;
   }
@@ -208,4 +221,8 @@
     padding-bottom: 56px;
   }
 
+  .listBoxContainer {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }

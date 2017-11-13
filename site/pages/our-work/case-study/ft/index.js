@@ -7,6 +7,7 @@ import headerImage from './images/header.jpg';
 import screenImage from './images/screen.jpg';
 import authorQuoteImage from './images/quote-author.jpg';
 
+import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
@@ -15,7 +16,7 @@ import ContactUs from '../../../../slices/contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 type CaseStudyFinancialTimesProps = {
-  contactUsURL: string,
+  contactUsURL: string
 };
 
 const social = {
@@ -25,7 +26,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/financial-times',
 };
 
-const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps) =>
+const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps) => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -41,9 +42,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
-        <h1 className={styles.content__mainTitle}>
-          Keeping up with the Financial Times
-        </h1>
+        <h1 className={styles.content__mainTitle}>Keeping up with the Financial Times</h1>
       </div>
       <div className={styles.overview}>
         <Quote
@@ -56,35 +55,35 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
             'Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change.'
           }
         />
-        <ListBox
-          title="Results"
-          items={[
-            {
-              label: 'Integration of Lean UX and Design into all areas of product delivery',
-            },
-            {
-              label: 'New homepage designed and built in just 7 weeks',
-            },
-            {
-              label: 'Reader engagement increased by 30%',
-            },
-          ]}
-          itemClassName={styles.listBox__item}
-          labelClassName={styles.listBox__label}
-        />
+        <Card className={styles.listBoxContainer}>
+          <ListBox
+            title="Results"
+            items={[
+              {
+                label: 'Integration of Lean UX and Design into all areas of product delivery',
+              },
+              {
+                label: 'New homepage designed and built in just 7 weeks',
+              },
+              {
+                label: 'Reader engagement increased by 30%',
+              },
+            ]}
+            itemClassName={styles.listBox__item}
+            labelClassName={styles.listBox__label}
+          />
+        </Card>
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>
-            {"Let's make things better."}
-          </span>
+          <span className={styles.content__redTitle}>{"Let's make things better."}</span>
           Adapting to a changing online news world
         </h2>
         <p className={styles.content__paragraph}>
-          The Financial Times knew that online news was changing fast, and their subscription
-          model meant they had to deliver something above and beyond the news and services
-          available for free. The next generation of ft.com was already underway, and now
-          they needed a partner who could help envisage it and bring it to life.
+          The Financial Times knew that online news was changing fast, and their subscription model
+          meant they had to deliver something above and beyond the news and services available for
+          free. The next generation of ft.com was already underway, and now they needed a partner
+          who could help envisage it and bring it to life.
         </p>
         <h3 className={styles.content__secondaryTitle}>
           There were two overarching challenges to solve for the Financial Times:
@@ -92,25 +91,21 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
         <p className={styles.content__paragraph}>
           <ol className={styles.content__ordered__list}>
             <li className={styles.content__ordered__list__element}>
-              Delivery — To deliver the next generation ft.com homepage demonstrating the
-              successful integration of UX and design across all other streams
+              Delivery — To deliver the next generation ft.com homepage demonstrating the successful
+              integration of UX and design across all other streams
             </li>
             <li className={styles.content__ordered__list__element}>
               Strategy — Creative team strategy across the entire online product portfolio
             </li>
           </ol>
         </p>
-        <h3 className={styles.content__secondaryTitle}>
-          And, core objectives included:
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>And, core objectives included:</h3>
         <p className={styles.content__paragraph}>
           <ul className={styles.content__list}>
             <li className={styles.content__list__element}>
               Introduce and embed Lean UX methodologies and Agile Design at an enterprise level
             </li>
-            <li className={styles.content__list__element}>
-              Increase speed to market
-            </li>
+            <li className={styles.content__list__element}>Increase speed to market</li>
             <li className={styles.content__list__element}>
               Raise quality level of design across the product group
             </li>
@@ -127,12 +122,10 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           <span className={styles.content__redTitle}>Do the right thing. Do the thing right.</span>
           Collaboration both online and offline
         </h2>
-        <h3 className={styles.content__secondaryTitle}>
-          Learn
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>Learn</h3>
         <p className={styles.content__paragraph}>
-          We approached the work through collaborative design, with representatives from across
-          the business, we built a complete understanding of the publication’s needs.
+          We approached the work through collaborative design, with representatives from across the
+          business, we built a complete understanding of the publication’s needs.
         </p>
         <p className={styles.content__paragraph}>
           In order to demonstrate how collaboration between different functions of a product team
@@ -149,9 +142,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           edge tech stack. Demonstrating not only an improved approach to delivery but adding value
           through introducing new technology.
         </p>
-        <h3 className={styles.content__secondaryTitle}>
-          Understand
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>Understand</h3>
         <p className={styles.content__paragraph}>
           After an initial period of delivering at speed into a live production environment we
           started to mix with the internal teams. We were able to share and explain their working
@@ -160,9 +151,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           in the first few weeks of the project. This put us in a position later in the project to
           recommended some changes to the process in the internal design and development team.
         </p>
-        <h3 className={styles.content__secondaryTitle}>
-          Coach
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>Coach</h3>
         <p className={styles.content__paragraph}>
           Initially we found multiple product teams were using processes that were out of view and
           this resulted in untraceable productivity. This made predicting delivery times and making
@@ -176,9 +165,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
           Financial Times have core metrics measured against each of the backlogs and using Little’s
           Law we can predict completion time, throughput, lead time and cycle time.
         </p>
-        <h3 className={styles.content__secondaryTitle}>
-          Support
-        </h3>
+        <h3 className={styles.content__secondaryTitle}>Support</h3>
         <p className={styles.content__paragraph}>
           Through a formal education program we taught fundamental User Experience methodologies,
           Lean UX and Kanban, to a cross section of representatives across the business to support
@@ -192,9 +179,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
     </div>
     <div className={styles.screenDemo}>
       <div className={styles.screenDemo__description}>
-        The first iteration of the new
-        homepage design and built
-        in seven weeks
+        The first iteration of the new homepage design and built in seven weeks
       </div>
       <img
         src={screenImage}
@@ -232,6 +217,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
     </div>
     <WhatToReadNext currentPage="financialTimes" />
     <ContactUs postURL={contactUsURL} />
-  </div>;
+  </div>
+);
 
 export default FinancialTimesCaseStudy;

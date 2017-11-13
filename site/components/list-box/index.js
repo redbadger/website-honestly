@@ -9,14 +9,22 @@ const cx = classnames.bind(styles);
 type ListBoxProps = {
   title: string,
   items: Array<Object>,
+  className?: string,
   itemClassName?: string,
   labelClassName?: string,
-  valueClassName?: string,
+  valueClassName?: string
 };
 
-const ListBox = ({ title, items, itemClassName, labelClassName, valueClassName }: ListBoxProps) => {
+const ListBox = ({
+  title,
+  items,
+  className,
+  itemClassName,
+  labelClassName,
+  valueClassName,
+}: ListBoxProps) => {
   return (
-    <div className={styles.listBox}>
+    <div className={cx(styles.listBox, className)}>
       <h3 className={styles.listBox__heading}>{title}</h3>
       <ul>
         {items.map((item, index) => {
@@ -25,12 +33,8 @@ const ListBox = ({ title, items, itemClassName, labelClassName, valueClassName }
               key={index}
               className={cx('listBox__element', 'listBox__element--results', itemClassName)}
             >
-              <div className={labelClassName}>
-                {item.label}
-              </div>
-              <div className={valueClassName}>
-                {item.value}
-              </div>
+              <div className={labelClassName}>{item.label}</div>
+              <div className={valueClassName}>{item.value}</div>
             </li>
           );
         })}
