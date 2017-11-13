@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames/bind';
+import YouTube from 'react-youtube';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
@@ -220,6 +221,9 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           sector award and as ‘Best Use of Website to Build Your Brand’. It was also nominated at
           the Retail Week Tech and Ecommerce Awards in the ‘Best Customer Experience’ category.
         </p>
+        <div className={styles.videoContainer}>
+          <YouTube className={styles.video} videoId="eBE3J9XZO20" />
+        </div>
       </div>
     </div>
     <WhatToReadNext currentPage="retailer" />
