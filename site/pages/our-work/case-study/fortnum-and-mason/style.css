@@ -57,7 +57,8 @@
   margin-top: 40px;
 }
 
-.content__paragraph {
+.content__paragraph,
+.content__float {
   margin-bottom: 20px;
 }
 
@@ -104,8 +105,9 @@
   }
 
   .content__float {
+    width: 40%;
     float: right;
-    margin-bottom: 20px;
+    margin: 0 0 30px 40px;
   }
 
   .listBoxContainer {
