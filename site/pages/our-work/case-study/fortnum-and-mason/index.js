@@ -54,7 +54,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           Scaling the site, decreasing drop-outs and bringing the in-store experience, online
         </h2>
         <p className={styles.content__paragraph}>
-          When you think of Fortnum & Mason, the iconic eau di nil colour, the beautiful store
+          When you think of Fortnum & Mason, the iconic eau de nil colour, the beautiful store
           layout, amazing customer service and the incredibly high quality of products, springs to
           mind. This unrivalled reputation, held over 300 years, has always been led by the store
           experience. But with more and more shoppers heading online to make purchases from over 130
