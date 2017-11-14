@@ -4,7 +4,12 @@ import YouTube from 'react-youtube';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
-import metaImage from './images/meta-image.png';
+import headerImageLarge from './images/header-large.png';
+import headerImageMedium from './images/header-medium.png';
+import headerImageSmall from './images/header-small.png';
+import devicesImage from './images/devices.png';
+import tabletRestaurantImage from './images/tablet-restaurant.png';
+import tabletCheckoutImage from './images/tablet-checkout.png';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
@@ -12,6 +17,7 @@ import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 import ContactBox from '../../../../components/contact-box';
+import Picture from '../../../../components/picture';
 
 const cx = classnames.bind(styles);
 
@@ -23,7 +29,7 @@ const social = {
   title: 'The proof is in the pudding',
   description:
     'Next generation platform for retail giant cleared five-year backlog in just eight months',
-  metaImage,
+  devicesImage,
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason',
 };
 
@@ -31,7 +37,12 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
-      <div className={styles.header__container} />
+      <Picture
+        className={styles.header__image}
+        largeSrc={headerImageLarge}
+        mediumSrc={headerImageMedium}
+        smallSrc={headerImageSmall}
+      />
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
@@ -51,7 +62,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           delivered by the physical stores, and something needed to change, quickly.
         </p>
         <div className={styles.content__float}>
-          <img src={metaImage} className={styles.tabletImage} alt="" />
+          <img src={tabletRestaurantImage} className={styles.tabletImage} alt="" />
         </div>
         <p className={styles.content__paragraph}>
           The old site had an inconsistent design, was inflexible, difficult to update and the
@@ -68,7 +79,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
         </p>
       </div>
       <div>
-        <img src={metaImage} className={styles.devicesImage} alt="" />
+        <img src={devicesImage} className={styles.devicesImage} alt="" />
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
@@ -81,6 +92,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           We began with a two-day hackathon to produce a minimum viable product (MVP) to demonstrate
           our thinking for the new website; a ‘show not tell’ approach.
         </p>
+        <ContactBox />
         <p className={styles.content__paragraph}>
           Working in a collaborative, Lean way with Fortnum & Mason, our talented design team and
           knowledgeable tech team, incorporated a progressive selection of open source technology
@@ -129,7 +141,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
         <div className={cx(styles.content__float, styles['content__float--left'])}>
-          <img src={metaImage} className={styles.tabletImage} alt="" />
+          <img src={tabletCheckoutImage} className={styles.tabletImage} alt="" />
         </div>
         <p className={styles.content__paragraph}>
           The new Badger-created site was one of the only fully responsive retail sites that was

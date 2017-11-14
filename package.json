@@ -70,6 +70,7 @@
     "node-hook": "^0.4.0",
     "param-case": "^2.1.0",
     "pathseg": "^1.0.2",
+    "picturefill": "^3.0.2",
     "poly-decomp": "^0.2.1",
     "postcss-loader": "^2.0.6",
     "pre-git": "^3.10.0",

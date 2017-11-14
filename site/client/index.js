@@ -1,3 +1,4 @@
+import 'picturefill';
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
 
