@@ -22,7 +22,7 @@ import Picture from '../../../../components/picture';
 const cx = classnames.bind(styles);
 
 type CaseStudyFortnumAndMasonProps = {
-  contactUsURL: string,
+  contactUsURL: string
 };
 
 const social = {
@@ -62,7 +62,11 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           delivered by the physical stores, and something needed to change, quickly.
         </p>
         <div className={styles.content__float}>
-          <img src={tabletRestaurantImage} className={styles.tabletImage} alt="" />
+          <img
+            src={tabletRestaurantImage}
+            className={styles.tabletImage}
+            alt="A tablet showing Fortnum & Mason tea website"
+          />
         </div>
         <p className={styles.content__paragraph}>
           The old site had an inconsistent design, was inflexible, difficult to update and the
@@ -79,7 +83,11 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
         </p>
       </div>
       <div>
-        <img src={devicesImage} className={styles.devicesImage} alt="" />
+        <img
+          src={devicesImage}
+          className={styles.devicesImage}
+          alt="Fortnum & Mason website on desktop, tablet and mobile devices"
+        />
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
@@ -141,7 +149,11 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
         <div className={cx(styles.content__float, styles['content__float--left'])}>
-          <img src={tabletCheckoutImage} className={styles.tabletImage} alt="" />
+          <img
+            src={tabletCheckoutImage}
+            className={styles.tabletImage}
+            alt="A tablet showing Fortnum & Mason delivery site"
+          />
         </div>
         <p className={styles.content__paragraph}>
           The new Badger-created site was one of the only fully responsive retail sites that was
