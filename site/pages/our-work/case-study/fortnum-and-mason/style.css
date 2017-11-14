@@ -18,6 +18,9 @@
 
 .header__image {
   max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .content {
