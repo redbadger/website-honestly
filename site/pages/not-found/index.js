@@ -6,8 +6,13 @@ export default function NotFoundPage() {
   const content = [
     <span>Sorry, the page you’re looking for isn’t here.&nbsp;</span>,
     <span>
-      Try our <a className={styles.link} href="/blog">blog</a>, or find out more
-      {' '}<a className={styles.link} href="/about-us">about us</a>.
+      Try our{' '}
+      <a className={styles.link} href="/blog">
+        blog
+      </a>, or find out more{' '}
+      <a className={styles.link} href="/about-us">
+        about us
+      </a>.
     </span>,
   ];
 

@@ -22,7 +22,6 @@ const {
 import styles from './index.css';
 
 export default class Shapes extends Component {
-
   static throwShapes(engine) {
     Engine.run(engine);
     Render.run(engine.render);

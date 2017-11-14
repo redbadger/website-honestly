@@ -10,13 +10,13 @@ const cx = classnames.bind(styles);
 type Author = {
   name: string,
   title: string,
-  image?: string
+  image?: string,
 };
 
 type QuoteProps = {
   author: Author,
   text: string,
-  className?: string
+  className?: string,
 };
 
 const Quote = ({ author, text, className }: QuoteProps) => {

@@ -6,11 +6,7 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 const Card = ({ className, children }) => {
-  return (
-    <div className={cx(styles.Card, className)}>
-      {children}
-    </div>
-  );
+  return <div className={cx(styles.Card, className)}>{children}</div>;
 };
 
 Card.propTypes = {

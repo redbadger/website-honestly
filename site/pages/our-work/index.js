@@ -32,12 +32,8 @@ export default function CaseStudies() {
       <Social {...social} />
       <div className={styles.headerContainer}>
         <div>
-          <h1 className={styles.mainHeader}>
-            The proof is in the pudding.
-          </h1>
-          <p className={styles.mainSlogan}>
-            Read some of our case studies.
-          </p>
+          <h1 className={styles.mainHeader}>The proof is in the pudding.</h1>
+          <p className={styles.mainSlogan}>Read some of our case studies.</p>
         </div>
       </div>
       <div className={styles.caseStudyTopSection}>

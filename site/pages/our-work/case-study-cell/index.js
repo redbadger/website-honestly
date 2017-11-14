@@ -27,13 +27,13 @@ export default function CaseStudyCell(props: CaseStudyCellProps) {
               https://github.com/prettier/prettier/issues/737 and
               https://github.com/prettier/prettier/issues/1271
             */
-            'image' in props && props.image
-              ? <img
-                  src={props.image}
-                  className={styles.clientImage}
-                  alt={`${props.clientName} project`}
-                />
-              : null
+            'image' in props && props.image ? (
+              <img
+                src={props.image}
+                className={styles.clientImage}
+                alt={`${props.clientName} project`}
+              />
+            ) : null
             /* eslint-enable react/jsx-indent-props, react/jsx-closing-bracket-location */
             }
             <img
@@ -46,9 +46,7 @@ export default function CaseStudyCell(props: CaseStudyCellProps) {
             >
               {props.headerText}
             </h2>
-            <p className={styles.description}>
-              {props.descriptionText}
-            </p>
+            <p className={styles.description}>{props.descriptionText}</p>
             <div className={styles.links}>
               <p className={styles.readmore}>Read more</p>
             </div>

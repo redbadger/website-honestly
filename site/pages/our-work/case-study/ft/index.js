@@ -16,7 +16,7 @@ import ContactUs from '../../../../slices/contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 type CaseStudyFinancialTimesProps = {
-  contactUsURL: string
+  contactUsURL: string,
 };
 
 const social = {

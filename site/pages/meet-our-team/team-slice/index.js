@@ -85,7 +85,7 @@ class TeamSlice extends React.Component {
     return (
       <div>
         <ul className={styles.badgers}>
-          {paginate(badgers, page, loadAll).map(badger =>
+          {paginate(badgers, page, loadAll).map(badger => (
             <li
               key={badger.slug}
               className={styles.badger}
@@ -94,8 +94,8 @@ class TeamSlice extends React.Component {
               }}
             >
               {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
-            </li>,
-          )}
+            </li>
+          ))}
         </ul>
         {!loadAll && <Paging page={page} count={badgers.length} />}
       </div>

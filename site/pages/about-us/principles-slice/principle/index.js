@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.css';
 
-const Principle = ({ number, title, description }) =>
+const Principle = ({ number, title, description }) => (
   <li className={styles.container}>
     <div className={styles.leftCol}>
       <div className={styles.number}>{number}</div>
@@ -10,7 +10,8 @@ const Principle = ({ number, title, description }) =>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.description}>{description}</div>
     </div>
-  </li>;
+  </li>
+);
 
 Principle.propTypes = {
   number: React.PropTypes.string,

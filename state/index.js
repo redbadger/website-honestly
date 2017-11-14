@@ -16,7 +16,7 @@ const toDict = (array, keyFn) =>
       ...obj,
       [keyFn(item)]: item,
     }),
-    {}
+    {},
   );
 
 const getSiteState = () =>

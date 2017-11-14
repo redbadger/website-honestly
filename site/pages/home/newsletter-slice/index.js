@@ -85,11 +85,7 @@ class NewsLetter extends Component {
     const BeforeSignup = (
       <NewsletterBeforeSignUp onSubmit={this.signUpUser} errorMessage={this.state.errorMessage} />
     );
-    return (
-      <div>
-        {this.state.newsletterSubmitted ? AfterSignup : BeforeSignup}
-      </div>
-    );
+    return <div>{this.state.newsletterSubmitted ? AfterSignup : BeforeSignup}</div>;
   }
 }
 

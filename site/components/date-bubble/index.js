@@ -13,10 +13,9 @@ function displayDateContent(startDateTime, endDateTime) {
   return `${startDateTime.date} ${startDateTime.monthSym} ${startDateTime.year}`;
 }
 
-const DateBubble = ({ startDateTime, endDateTime }) =>
-  <div className={styles.dateBubble}>
-    {displayDateContent(startDateTime, endDateTime)}
-  </div>;
+const DateBubble = ({ startDateTime, endDateTime }) => (
+  <div className={styles.dateBubble}>{displayDateContent(startDateTime, endDateTime)}</div>
+);
 
 const dateShape = {
   date: PropTypes.string.isRequired,

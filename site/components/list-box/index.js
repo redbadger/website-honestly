@@ -12,7 +12,7 @@ type ListBoxProps = {
   className?: string,
   itemClassName?: string,
   labelClassName?: string,
-  valueClassName?: string
+  valueClassName?: string,
 };
 
 const ListBox = ({

@@ -22,7 +22,7 @@ import Picture from '../../../../components/picture';
 const cx = classnames.bind(styles);
 
 type CaseStudyFortnumAndMasonProps = {
-  contactUsURL: string
+  contactUsURL: string,
 };
 
 const social = {

@@ -47,7 +47,9 @@ export default function Principles() {
           />
         </ul>
         <div className={styles.buttons}>
-          <Link to="badgers" className={styles.link}>Meet our team</Link>
+          <Link to="badgers" className={styles.link}>
+            Meet our team
+          </Link>
           <Link to="joinUs" className={styles.link}>
             {/* eslint-disable jsx-a11y/no-static-element-interactions */}
             <span onClick={trackAnalytics('Join Us')}>Join us</span>

@@ -7,7 +7,7 @@ type RouteDefinition = {|
   route: string,
   defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
-  gen?: (state: Object) => Array<Object>
+  gen?: (state: Object) => Array<Object>,
 |};
 
 export const routeDefinitions: Array<RouteDefinition> = [

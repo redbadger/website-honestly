@@ -2,7 +2,7 @@ import React from 'react';
 import Link from '../../../../components/link';
 import styles from './style.css';
 
-const JobAdvert = () =>
+const JobAdvert = () => (
   <div className={styles.badgerWrapper}>
     <div className={styles.advertWrapper}>
       <Link to="joinUs" className={styles.jobAdvert}>
@@ -10,6 +10,7 @@ const JobAdvert = () =>
         <div className={styles.hiring}>We&rsquo;re hiring</div>
       </Link>
     </div>
-  </div>;
+  </div>
+);
 
 export default JobAdvert;

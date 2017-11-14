@@ -53,10 +53,10 @@ class SocialSlice extends React.Component {
   };
 
   /**
-    * Calulate the number of total tiles that can be swiped
-    * If we have a view width larger thatn the intro tile + 1 we would get
-    * black space at the end. By returning a lower number than total tiles this is prevented
-    */
+   * Calulate the number of total tiles that can be swiped
+   * If we have a view width larger thatn the intro tile + 1 we would get
+   * black space at the end. By returning a lower number than total tiles this is prevented
+   */
   calculateSwipableTotal = () => {
     const { viewWidth, totalTiles } = this.state;
 
@@ -122,9 +122,11 @@ class SocialSlice extends React.Component {
     }
 
     return data.sort((a, b) => new Date(b.created) - new Date(a.created)).map((row, index) => {
-      return row.image
-        ? <InstagramTile post={row} index={index} key={index} />
-        : <TwitterTile tweet={row} index={index} key={index} />;
+      return row.image ? (
+        <InstagramTile post={row} index={index} key={index} />
+      ) : (
+        <TwitterTile tweet={row} index={index} key={index} />
+      );
     });
   };
 

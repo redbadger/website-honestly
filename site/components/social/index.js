@@ -9,7 +9,7 @@ export type SocialProps = {
   url: string,
 };
 
-const Social = ({ title, description, metaImage, url }: SocialProps) =>
+const Social = ({ title, description, metaImage, url }: SocialProps) => (
   <Helmet
     meta={[
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -23,6 +23,7 @@ const Social = ({ title, description, metaImage, url }: SocialProps) =>
       { property: 'og:image', content: `https://red-badger.com${metaImage}` },
       { property: 'og:description', content: description },
     ]}
-  />;
+  />
+);
 
 export default Social;

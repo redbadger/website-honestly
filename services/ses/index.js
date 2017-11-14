@@ -65,8 +65,10 @@ function constructEmail(emailData) {
   const message = sanitizeContent(emailData.message);
   const contact = sanitizeContent(emailData.contact);
 
-  const formattedHTMLMessage = (`<p><strong>${messageLabel}</strong></p><p>${message}</p>` +
-    `<p><strong>${contactLabel}</strong></p><p>${contact}</p>`).replace(/\n/g, '<br>');
+  const formattedHTMLMessage = (
+    `<p><strong>${messageLabel}</strong></p><p>${message}</p>` +
+    `<p><strong>${contactLabel}</strong></p><p>${contact}</p>`
+  ).replace(/\n/g, '<br>');
 
   const formattedTxtMessage = [messageLabel, message, contactLabel, contact].join('\n\n');
 
@@ -95,7 +97,10 @@ function constructEmail(emailData) {
 }
 
 function makePromiseEmailSender(emailSender) {
-  return emailData => emailSender(emailData).promise().then(() => ({ success: true }));
+  return emailData =>
+    emailSender(emailData)
+      .promise()
+      .then(() => ({ success: true }));
 }
 
 export function validateAndSendEmail(email, emailSender) {

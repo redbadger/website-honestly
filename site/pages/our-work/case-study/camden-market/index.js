@@ -16,7 +16,7 @@ import ContactUs from '../../../../slices/contact-us-slice';
 import Shapes from './shapes/index';
 
 type CaseStudyCamdenMarketProps = {
-  contactUsURL: string
+  contactUsURL: string,
 };
 
 const social = {

@@ -31,8 +31,7 @@ const deleteObjects = (bucketName, keysToDelete) =>
 
 function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
   return getLiveBadgers(bucketName, s3Prefix).then(objects => {
-    const listed = objects.Contents
-      .map(obj => obj.Key)
+    const listed = objects.Contents.map(obj => obj.Key)
       .map(extractSlugFromKey)
       .filter(slug => slug != null);
 

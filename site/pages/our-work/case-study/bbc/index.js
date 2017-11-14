@@ -21,7 +21,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/bbc-now',
 };
 
-const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
+const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) => (
   <CaseStudyFrame>
     <CaseStudyHeader
       title="BBC Now: Delivering a better customer experience, faster"
@@ -82,6 +82,7 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) =>
 
     <WhatToReadNext />
     <ContactUs postURL={contactUsURL} />
-  </CaseStudyFrame>;
+  </CaseStudyFrame>
+);
 
 export default BBCCaseStudy;

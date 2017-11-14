@@ -22,7 +22,7 @@ import camdenFigureSVG from './SVG/camden-figure.svg';
 import skyFigureSVG from './SVG/sky-figure.svg';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
-const CaseStudyOverview = () =>
+const CaseStudyOverview = () => (
   <section className={styles.caseStudyContainer}>
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.limitWidth}>
@@ -35,8 +35,7 @@ const CaseStudyOverview = () =>
           <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>Three</span>
           <span className={styles.caseText}>
-            Number of awards for the new online
-            {' '}
+            Number of awards for the new online{' '}
             <span className={styles.lastWord}>
               store
               <InlineSVG src={arrowSVG} className={styles.arrow} />
@@ -52,8 +51,7 @@ const CaseStudyOverview = () =>
           <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>18%</span>
           <span className={styles.caseText}>
-            Drop in bounce rate within 4 days of
-            {' '}
+            Drop in bounce rate within 4 days of{' '}
             <span className={styles.lastWord}>
               launch
               <InlineSVG src={arrowSVG} className={styles.arrow} />
@@ -69,11 +67,10 @@ const CaseStudyOverview = () =>
           <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>50%</span>
           <span className={styles.caseText}>
-            Drop in customers pushing the
-            &lsquo;need more help&rsquo;
-            {' '}
+            Drop in customers pushing the &lsquo;need more help&rsquo;{' '}
             <span className={styles.lastWord}>
-              {' '}button
+              {' '}
+              button
               <InlineSVG src={arrowSVG} className={styles.arrow} />
             </span>
           </span>
@@ -87,8 +84,7 @@ const CaseStudyOverview = () =>
           <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>Seven</span>
           <span className={styles.caseText}>
-            Weeks to redesign and deliver MVP
-            {' '}
+            Weeks to redesign and deliver MVP{' '}
             <span className={styles.lastWord}>
               homepage
               <InlineSVG src={arrowSVG} className={styles.arrow} />
@@ -110,9 +106,12 @@ const CaseStudyOverview = () =>
         <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
       </div>
       <div className={styles.buttonContainer}>
-        <Link to="ourWorkPage" className={styles.button}>See more of our work</Link>
+        <Link to="ourWorkPage" className={styles.button}>
+          See more of our work
+        </Link>
       </div>
     </div>
-  </section>;
+  </section>
+);
 
 export default CaseStudyOverview;

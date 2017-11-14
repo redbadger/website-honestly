@@ -16,7 +16,7 @@ import ContactBox from '../../../../components/contact-box';
 const cx = classnames.bind(styles);
 
 type CaseStudyRetailerProps = {
-  contactUsURL: string
+  contactUsURL: string,
 };
 
 const social = {

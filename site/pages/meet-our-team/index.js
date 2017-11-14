@@ -44,7 +44,7 @@ type MeetOurTeamProps = {
   badgers: Array<Badger>,
 };
 
-const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) =>
+const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) => (
   <div>
     <Social {...social} />
     <div className={styles.meetOurTeam}>
@@ -65,7 +65,7 @@ const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) 
               Everyone
             </Link>
           </li>
-          {categories.map(c =>
+          {categories.map(c => (
             <li key={c.slug} className={styles.categoryItem}>
               <Link
                 key={c.slug}
@@ -76,12 +76,13 @@ const MeetOurTeam = ({ categories, category, badgers, page }: MeetOurTeamProps) 
               >
                 {c.name}
               </Link>
-            </li>,
-          )}
+            </li>
+          ))}
         </ul>
         <TeamSlice badgers={getTeam(badgers, category)} page={page} />
       </div>
     </div>
-  </div>;
+  </div>
+);
 
 export default MeetOurTeam;

@@ -7,9 +7,8 @@ type CaseStudyFrameProps = {
   children?: Node,
 };
 
-const CaseStudyFrame = ({ children }: CaseStudyFrameProps) =>
-  <div className={styles.caseStudy}>
-    {children}
-  </div>;
+const CaseStudyFrame = ({ children }: CaseStudyFrameProps) => (
+  <div className={styles.caseStudy}>{children}</div>
+);
 
 export default CaseStudyFrame;

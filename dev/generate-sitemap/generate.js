@@ -32,14 +32,16 @@ function generate(triesLeft = 5) {
       console.log('Sitemap completed ✅');
     })
     .catch(err => {
-      console.error(`⚠️ Sitemap generation error: ${err.message}.\n\n Trying again (${triesLeft} tries left)`);
+      console.error(
+        `⚠️ Sitemap generation error: ${err.message}.\n\n Trying again (${triesLeft} tries left)`,
+      );
       if (triesLeft < 1) {
         console.error('Unable to generate sitemap!');
         process.exit(1);
       } else {
         return generate(triesLeft - 1);
       }
-    })
+    });
 }
 
 generate();

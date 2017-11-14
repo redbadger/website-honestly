@@ -22,7 +22,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/bmw',
 };
 
-const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
+const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) => (
   <CaseStudyFrame>
     <CaseStudyHeader
       title="BMW Virtual Museum: The shortcut between you and the museum"
@@ -80,6 +80,7 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) =>
 
     <WhatToReadNext />
     <ContactUs postURL={contactUsURL} />
-  </CaseStudyFrame>;
+  </CaseStudyFrame>
+);
 
 export default BMWCaseStudy;

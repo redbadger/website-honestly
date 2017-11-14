@@ -21,14 +21,12 @@ const triangleSlice = () => {
           src={triangleFullPNG}
         />
         <ol className={styles.rightThingsList}>
-
           <li>
             <div className={styles.rightThingText}>
               <h3 className={styles.triangleThingHeader}>Delivery</h3>
               <p className={styles.rightThingDescription}>
-                Setting up the project in the right way increases
-                efficiency and velocity, allowing the focus to be
-                on feature delivery.
+                Setting up the project in the right way increases efficiency and velocity, allowing
+                the focus to be on feature delivery.
               </p>
             </div>
             <img
@@ -42,10 +40,9 @@ const triangleSlice = () => {
             <div className={styles.rightThingText}>
               <h3 className={styles.triangleThingHeader}>Validation</h3>
               <p className={styles.rightThingDescription}>
-                Validating assumptions by collecting data and
-                customer research means we can prioritise work in
-                the right way; ensuring features with the most
-                customer value are built first.
+                Validating assumptions by collecting data and customer research means we can
+                prioritise work in the right way; ensuring features with the most customer value are
+                built first.
               </p>
             </div>
             <img
@@ -59,9 +56,8 @@ const triangleSlice = () => {
             <div className={styles.rightThingText}>
               <h3 className={styles.triangleThingHeader}>Vision</h3>
               <p className={styles.rightThingDescription}>
-                A strong, aspirational vision is needed to keep
-                the project on track; ensuring all features are
-                continuously getting closer to this end goal.
+                A strong, aspirational vision is needed to keep the project on track; ensuring all
+                features are continuously getting closer to this end goal.
               </p>
             </div>
             <img
@@ -70,7 +66,6 @@ const triangleSlice = () => {
               src={triangleBottomPNG}
             />
           </li>
-
         </ol>
       </div>
     </section>

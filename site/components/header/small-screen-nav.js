@@ -85,7 +85,9 @@ export default class SmallScreenNav extends React.Component {
             }}
             className={styles.smallScreenNavWrapper}
           >
-            <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>
+            <label htmlFor="burger" className={styles.menuCloseButton}>
+              Close
+            </label>
 
             <nav className={styles.smallScreenNavContainer} role="navigation">
               <ul role="listbox" className={styles.smallScreenNav}>
