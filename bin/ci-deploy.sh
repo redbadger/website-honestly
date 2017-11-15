@@ -46,8 +46,8 @@ deployMaster() {
   LAST_COMMIT_INFO=$(git log -1 --format='%h %cd')
   pretty_block "Deploying current master to $1"
   make clean
-  make build
   make generate-sitemap
+  make build
   pretty_success "Build complete!"
 
   pretty_block "Setting Version"

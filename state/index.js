@@ -16,15 +16,15 @@ const toDict = (array, keyFn) =>
       ...obj,
       [keyFn(item)]: item,
     }),
-    {},
+    {}
   );
 
 const getSiteState = () =>
   Promise.props({
     jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
-    featuredBlogPosts: getBlogPosts('featured'),
-    triedAndTestedBlogPosts: getBlogPosts('tried-and-tested', 5),
-    growingTrendsBlogPosts: getBlogPosts('growing-trends', 5),
+    featuredBlogPosts: getBlogPosts(['featured']),
+    triedAndTestedBlogPosts: getBlogPosts(['tried-and-tested', 'tried and tested'], 5),
+    growingTrendsBlogPosts: getBlogPosts(['growing-trends', 'growing trends'], 5),
     tweets: getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     instagramPosts: getPosts(fetch),
     data: getData(),

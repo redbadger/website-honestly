@@ -2,8 +2,8 @@ import React from 'react';
 import ReactGA from 'react-ga';
 import styles from './style.css';
 import desktopBanner from './images/events-desktop-banner.jpg';
-import tabletBanner from './images/events-tablet-banner.png';
-import mobileBanner from './images/events-mobile-banner.png';
+import tabletBanner from './images/events-tablet-banner.jpg';
+import mobileBanner from './images/events-mobile-banner.jpg';
 
 const trackAnalytics = title => () =>
   ReactGA.event({
@@ -18,7 +18,7 @@ export default function EventsBanner() {
   return (
     <div className={styles.bannerContainer}>
       <a
-        href="https://attendee.gotowebinar.com/register/4215309162791382274?source=Rb+event+site+banner"
+        href="http://bit.ly/2h7jvFN"
         target="_blank"
         rel="noopener noreferrer"
         onClick={trackAnalytics('Webinar-events page -banner')}
