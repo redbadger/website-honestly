@@ -238,7 +238,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           specific items, for example a 78% increase in grocery sales.
         </p>
         <p className={styles.content__paragraph}>
-          Further to the this, fortnumandmason.com won a BIMA Award for ‘Best Web Design & Build’
+          Further to this, fortnumandmason.com won a BIMA Award for ‘Best Web Design & Build’
           and an eCommerce Award for ‘Best eCommerce New Design or Re-Design (Under 1 Year)’ in
           2015. The project was also nominated for the UK Digital Experience Awards in the Retail
           sector award and as ‘Best Use of Website to Build Your Brand’. It was also nominated at
