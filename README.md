@@ -17,8 +17,8 @@ Red Badger Website Episode 6: Return of the Jedi.
 ```sh
 make                   # Print the help
 make fetch             # Fetch and stash dynamic data for development
-make dev               # Run the dev server
-make clean dev-static  # Compile the site locally
+make dev               # Run the dev server (url - localhost:8080)
+make clean dev-static  # Compile the site locally (url - localhost:8000)
 
 # Deploy to dev lambda environment
 make clean services-deploy
@@ -33,12 +33,16 @@ make services-invoke-publish
 ```sh
 # Install the package manager
 npm install --global yarn
+# Clone the repo 
+## Create a directory on disk
+## From this directory:
+git clone https://github.com/redbadger/website-honestly.git
 # Install the deps
 yarn
 
 # Set up the environment variables
+## Add keys to <repo-clone-dir>/website-honestly/.env
 make get-secrets
-make decrypt-env
 
 # Deploy a AWS stack and lambda (if you want one!)
 # Provisioning from scratch takes quite a while.
