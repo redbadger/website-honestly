@@ -9,6 +9,9 @@ const devAppConfig = webpackMerge(baseConfig, {
   entry: {
     'dev-app': ['babel-polyfill', './dev/browser-app/index.js'],
   },
+  output: {
+    publicPath: '/',
+  },
   target: 'web',
   devServer: {
     inline: true,
