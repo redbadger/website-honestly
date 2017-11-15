@@ -246,7 +246,12 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
         </p>
         <div className={styles.videoContainer}>
           <span>
-            <iframe className={styles.video} src="https://www.youtube.com/embed/eBE3J9XZO20" frameborder="0" allowfullscreen></iframe>
+            <iframe
+              className={styles.video}
+              src="https://www.youtube.com/embed/eBE3J9XZO20"
+              frameborder="0"
+              allowfullscreen
+            />
           </span>
         </div>
       </div>
