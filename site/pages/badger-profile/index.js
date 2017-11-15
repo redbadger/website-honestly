@@ -41,34 +41,37 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
 
           <SocialContacts badger={badger} />
 
-          <div className={styles.about}>
-            {badger.about}
-          </div>
+          <div className={styles.about}>{badger.about}</div>
           <div className={styles.descriptionSections}>
-            {badger.skills &&
+            {badger.skills && (
               <div>
                 <h2 className={styles.subheader}>Signature skills</h2>
                 <p>{badger.skills}</p>
-              </div>}
+              </div>
+            )}
 
-            {badger.achievements &&
+            {badger.achievements && (
               <div>
                 <h2 className={styles.subheader}>Achievements at Red Badger</h2>
                 <p>{badger.achievements}</p>
-              </div>}
+              </div>
+            )}
 
-            {badger.influence &&
+            {badger.influence && (
               <div>
                 <h2 className={styles.subheader}>The thing that changed me</h2>
                 <p>{badger.influence}</p>
-              </div>}
+              </div>
+            )}
           </div>
           <div className={styles.authorLinks}>
             <BlogsLink badger={badger} />
           </div>
           <hr />
-          <Link to="badgers" className={styles.categoryBox}>See Everyone</Link>
-          {badger.categories.map(c =>
+          <Link to="badgers" className={styles.categoryBox}>
+            See Everyone
+          </Link>
+          {badger.categories.map(c => (
             <Link
               key={c.slug}
               to="badgers"
@@ -76,8 +79,8 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
               className={styles.categoryBox}
             >
               See {c.name} team
-            </Link>,
-          )}
+            </Link>
+          ))}
         </div>
       </div>
     </div>

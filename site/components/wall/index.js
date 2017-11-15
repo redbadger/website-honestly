@@ -20,7 +20,11 @@ export default function Wall({ children, cols }) {
     <Grid>
       {elements.map((column, index) => {
         const size = Math.floor(12 / cols);
-        return <Cell key={index} size={size}>{column}</Cell>;
+        return (
+          <Cell key={index} size={size}>
+            {column}
+          </Cell>
+        );
       })}
     </Grid>
   );

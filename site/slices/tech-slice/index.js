@@ -13,9 +13,7 @@ function TechListItem({ name, imgSrc }) {
     <li className={styles.techListItem}>
       <figure className={styles.techItem}>
         <img alt={name + ' logo'} className={styles.techLogo} src={imgSrc} />
-        <figcaption className={styles.techName}>
-          {name}
-        </figcaption>
+        <figcaption className={styles.techName}>{name}</figcaption>
       </figure>
     </li>
   );
@@ -29,9 +27,7 @@ TechListItem.propTypes = {
 export default function TechSlice() {
   return (
     <section className={styles.techSlice}>
-      <h2 className={styles.heading}>
-        We love tech. But we only use what’s right for the job.
-      </h2>
+      <h2 className={styles.heading}>We love tech. But we only use what’s right for the job.</h2>
 
       <p className={styles.projectsBlerb}>
         Here is a selection of what we’ve used on recent projects.

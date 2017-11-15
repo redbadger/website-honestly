@@ -77,11 +77,9 @@ class Form extends Component {
             />
           </div>
 
-          {fatalError &&
+          {fatalError && (
             <div>
-              <p className={styles.fatalError}>
-                Oops! Looks like something went wrong.
-              </p>
+              <p className={styles.fatalError}>Oops! Looks like something went wrong.</p>
               <button
                 label="Try Again"
                 className={cx('button', 'fatalErrorButton')}
@@ -95,16 +93,18 @@ class Form extends Component {
                   hello@red-badger.com
                 </a>
               </p>
-            </div>}
+            </div>
+          )}
 
-          {!fatalError &&
+          {!fatalError && (
             <button
               label="Submit"
               onClick={this.handleSubmit}
               className={yellow ? cx('button', 'button--yellow') : styles.button}
             >
               Submit
-            </button>}
+            </button>
+          )}
 
           <noscript>
             <p className={styles.fatalError}>

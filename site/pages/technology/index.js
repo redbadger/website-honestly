@@ -24,7 +24,7 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPageProps) =>
+export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPageProps) => (
   <div>
     <div className={styles.introContainer}>
       <section className={styles.intro}>
@@ -32,9 +32,9 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
           <div className={styles.innerContainer}>
             <h1 className={styles.mainHeader}>Technology</h1>
             <p className={styles.description}>
-              Technology doesn’t stand still and neither do we. Our team gets together on
-              a regular basis to discuss which technologies we’re using to solve difficult
-              problems on our projects, and which technologies are on our radar as ones to watch.
+              Technology doesn’t stand still and neither do we. Our team gets together on a regular
+              basis to discuss which technologies we’re using to solve difficult problems on our
+              projects, and which technologies are on our radar as ones to watch.
             </p>
             <div className={styles.latestRoundTableLinkContainer}>
               <a
@@ -43,9 +43,7 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span onClick={trackAnalytics('RoundtablePDFLink')}>
-                  Read PDF report
-                </span>
+                <span onClick={trackAnalytics('RoundtablePDFLink')}>Read PDF report</span>
               </a>
             </div>
           </div>
@@ -100,4 +98,5 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         </a>
       </div>
     </section>
-  </div>;
+  </div>
+);

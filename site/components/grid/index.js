@@ -46,11 +46,7 @@ export class Grid extends Component {
       [`responsive-grid-${this.props.breakOn}`]: true,
     });
 
-    return (
-      <div className={gridClassNames}>
-        {this.props.children}
-      </div>
-    );
+    return <div className={gridClassNames}>{this.props.children}</div>;
   }
 }
 

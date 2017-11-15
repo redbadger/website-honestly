@@ -21,7 +21,9 @@ export default class Layout extends React.Component {
     return (
       <div className={styles.application}>
         <Header />
-        <div id="mainContent" className={styles.background}>{this.props.children}</div>
+        <div id="mainContent" className={styles.background}>
+          {this.props.children}
+        </div>
         <Footer />
       </div>
     );

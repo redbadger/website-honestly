@@ -11,9 +11,9 @@ const blogSlice = ({ featuredBlogPosts }: { featuredBlogPosts: Array<BlogPost> }
       <div className={styles.sliceContainer}>
         <h2 className={styles.blogSliceTitle}>We’re opinionated and curious.</h2>
         <ul className={styles.blogLinkList}>
-          {featuredBlogPosts.map((featuredBlogPost, ind) =>
-            <BlogEntry key={ind} featuredBlogPost={featuredBlogPost} />,
-          )}
+          {featuredBlogPosts.map((featuredBlogPost, ind) => (
+            <BlogEntry key={ind} featuredBlogPost={featuredBlogPost} />
+          ))}
         </ul>
         <a href="//red-badger.com/blog" className={styles.blogLink}>
           Read our blog

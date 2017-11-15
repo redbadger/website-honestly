@@ -6,7 +6,7 @@ import camdenProjectScreenshot from './images/camden.png';
 
 const caseStudyUrl = '/our-work/case-study/camden-market/';
 
-export default () =>
+export default () => (
   <div className={styles.caseStudyContainer}>
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
@@ -16,10 +16,9 @@ export default () =>
             Taking steps towards a digital future
           </h2>
           <p className={styles.description}>
-            Built in just ten weeks, Camdenmarket.com relaunched in
-            May 2016 to drive more footfall from Londoners to the
-            physical market by showcasing the eclectic range of
-            goods, food and events.
+            Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive more footfall
+            from Londoners to the physical market by showcasing the eclectic range of goods, food
+            and events.
           </p>
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
@@ -30,4 +29,5 @@ export default () =>
         <img src={camdenProjectScreenshot} alt="Camden project screenshot" />
       </a>
     </div>
-  </div>;
+  </div>
+);

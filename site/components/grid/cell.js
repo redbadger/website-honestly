@@ -30,10 +30,6 @@ export default class Cell extends Component {
       [styles[`hideOn${this.props.hideOn}`]]: true,
     });
 
-    return (
-      <div className={cellClassNames}>
-        {this.props.children}
-      </div>
-    );
+    return <div className={cellClassNames}>{this.props.children}</div>;
   }
 }

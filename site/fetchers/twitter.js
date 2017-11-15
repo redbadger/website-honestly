@@ -108,7 +108,9 @@ export const getTweets = (
     throw new Error('Missing Twitter secret');
   }
   const count = 5;
-  const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${username}&trim_user=true`;
+  const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${
+    username
+  }&trim_user=true`;
   return getBearerToken(fetch, key, secret)
     .then(token =>
       fetch(apiQuery, {

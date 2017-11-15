@@ -20,9 +20,7 @@ const IntroDesktopCard = ({ prevCard, nextCard, currentTile, totalSwipableTiles 
 
   return (
     <div className={styles.intro}>
-      <div className={styles.text}>
-        From our social feed
-      </div>
+      <div className={styles.text}>From our social feed</div>
       <ClientOnly>
         <div className={styles.buttons}>
           <button

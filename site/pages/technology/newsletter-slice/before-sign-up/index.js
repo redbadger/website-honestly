@@ -52,7 +52,9 @@ class BeforeSignUp extends Component {
           <ClientOnly>
             <form className={styles.form}>
               <div className={styles.formBlock}>
-                <label htmlFor="email_address" className={styles.formLabel}>Email</label>
+                <label htmlFor="email_address" className={styles.formLabel}>
+                  Email
+                </label>
                 <input
                   onChange={this.handleInputChange}
                   id="email_address"
@@ -85,8 +87,8 @@ class BeforeSignUp extends Component {
 
           <noscript>
             <p className={styles.jsDisabled}>
-              It seems like your javascript is disabled.
-              Please use the link here to sign up for our newsletter.
+              It seems like your javascript is disabled. Please use the link here to sign up for our
+              newsletter.
             </p>
             <a href="http://eepurl.com/bibY5P" className={styles.link}>
               Sign up through MailChimp

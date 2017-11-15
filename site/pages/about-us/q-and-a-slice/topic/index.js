@@ -43,9 +43,7 @@ class Topic extends Component {
     return (
       <div>
         <div className={styles.topic__question} onClick={this.handleClick}>
-          <h4 className={styles.topic__heading}>
-            {question}
-          </h4>
+          <h4 className={styles.topic__heading}>{question}</h4>
           <button
             aria-controls={slug}
             aria-expanded={open}

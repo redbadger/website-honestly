@@ -15,7 +15,7 @@ type TweetProps = {
   index: number,
 };
 const colours = [styles.blue, styles.mauve, styles.green];
-const Twitter = ({ tweet, index }: TweetProps) =>
+const Twitter = ({ tweet, index }: TweetProps) => (
   <a
     className={styles.link}
     href={tweet.url}
@@ -28,9 +28,7 @@ const Twitter = ({ tweet, index }: TweetProps) =>
         <InlineSVG src={twitterIconSVG} className={styles.twitterIcon} />
         <span className={styles.handleText}>@RedBadger</span>
       </div>
-      <div className={styles.tweet}>
-        {tweet.text}
-      </div>
+      <div className={styles.tweet}>{tweet.text}</div>
       <div className={styles.meta}>
         <span>
           <InlineSVG src={retweetIconSVG} className={cx(styles.icon, styles.retweets)} />
@@ -41,8 +39,8 @@ const Twitter = ({ tweet, index }: TweetProps) =>
           {tweet.favouriteCount}
         </span>
       </div>
-
     </div>
-  </a>;
+  </a>
+);
 
 export default Twitter;

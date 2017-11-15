@@ -19,9 +19,7 @@ const PullQuote = ({ author, text }: PullQuoteProps) => {
       <div className={styles.quotation__innerWrapper}>
         <div className={styles.quotation}>
           <blockquote>
-            <p className={styles.quotation__text}>
-              {text}
-            </p>
+            <p className={styles.quotation__text}>{text}</p>
           </blockquote>
 
           <div className={styles.quotation__author}>

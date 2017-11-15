@@ -4,7 +4,7 @@ import Link from '../../../components/link';
 
 import retailerImage from './images/retailer.png';
 
-export default () =>
+export default () => (
   <div className={styles.caseStudyContainer}>
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
@@ -13,8 +13,8 @@ export default () =>
             Next generation platform for retail giant
           </h2>
           <p className={styles.description}>
-            Find out how we helped clear a five year backlog in eight months
-            and delivered a mobile first application across seven countries.
+            Find out how we helped clear a five year backlog in eight months and delivered a mobile
+            first application across seven countries.
           </p>
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
@@ -35,4 +35,5 @@ export default () =>
         </div>
       </Link>
     </div>
-  </div>;
+  </div>
+);

@@ -5,14 +5,16 @@ import styles from '../style.css';
 const cx = classnames.bind(styles);
 const { func, string, bool } = React.PropTypes;
 
-const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }) =>
+const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }) => (
   <div>
     <h2 className={styles.subTitle}>
       Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
     </h2>
     <form className={styles.form}>
       <div>
-        <label htmlFor="name" className={styles.formLabel}>Name</label>
+        <label htmlFor="name" className={styles.formLabel}>
+          Name
+        </label>
         <input
           id="name"
           name="name"
@@ -24,14 +26,12 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
           })}
           onChange={handleInputChange}
         />
-        {errorMessage &&
-          !submitting &&
-          <div className={styles.afterErrorText}>
-            {errorMessage}
-          </div>}
+        {errorMessage && !submitting && <div className={styles.afterErrorText}>{errorMessage}</div>}
       </div>
       <div>
-        <label htmlFor="surname" className={styles.formLabel}>Surname</label>
+        <label htmlFor="surname" className={styles.formLabel}>
+          Surname
+        </label>
         <input
           id="surname"
           name="surname"
@@ -42,7 +42,9 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
         />
       </div>
       <div>
-        <label htmlFor="company" className={styles.formLabel}>Company</label>
+        <label htmlFor="company" className={styles.formLabel}>
+          Company
+        </label>
         <input
           id="company"
           name="company"
@@ -53,7 +55,9 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
         />
       </div>
       <div>
-        <label htmlFor="job" className={styles.formLabel}>Job role</label>
+        <label htmlFor="job" className={styles.formLabel}>
+          Job role
+        </label>
         <input
           id="role"
           name="role"
@@ -76,7 +80,8 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
         {submitting ? 'Updating info....' : 'Update info'}
       </button>
     </form>
-  </div>;
+  </div>
+);
 
 AfterSignUpForm.propTypes = {
   errorMessage: string.isRequired,
@@ -140,16 +145,15 @@ export default class AfterSignup extends Component {
           this.element = c;
         }}
       >
-        <h1 className={styles.title}>
-          Thanks for signing up!
-        </h1>
-        {!this.props.updatedFormSubmitted &&
+        <h1 className={styles.title}>Thanks for signing up!</h1>
+        {!this.props.updatedFormSubmitted && (
           <AfterSignUpForm
             errorMessage={this.props.errorMessage}
             handleInputChange={this.handleInputChange}
             submitting={this.state.submitting}
             handleSubmit={this.handleSubmit}
-          />}
+          />
+        )}
       </section>
     );
   }

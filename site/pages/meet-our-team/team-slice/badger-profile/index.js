@@ -32,14 +32,16 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             https://github.com/prettier/prettier/issues/737 and
             https://github.com/prettier/prettier/issues/1271
           */
-          badger.loaded
-            ? <img
-                src={badger.primaryImageUrl}
-                alt={fullName}
-                className={styles.badgerImage}
-                aria-hidden
-              />
-            : <div className={styles.placeholder} />
+          badger.loaded ? (
+            <img
+              src={badger.primaryImageUrl}
+              alt={fullName}
+              className={styles.badgerImage}
+              aria-hidden
+            />
+          ) : (
+            <div className={styles.placeholder} />
+          )
           /* eslint-enable react/jsx-indent-props, react/jsx-closing-bracket-location */
           }
         </div>

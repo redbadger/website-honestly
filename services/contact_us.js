@@ -21,8 +21,10 @@ export default function doContactUs(event, _, cb) {
   const simpleEmail = new aws.SES({ apiVersion: '2010-12-01' });
   const emailSender = simpleEmail.sendEmail.bind(simpleEmail);
 
-  validateAndSendEmail(data, emailSender).then(result => cb(null, result)).catch(err => {
-    console.error(err);
-    cb(err);
-  });
+  validateAndSendEmail(data, emailSender)
+    .then(result => cb(null, result))
+    .catch(err => {
+      console.error(err);
+      cb(err);
+    });
 }

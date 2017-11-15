@@ -15,7 +15,7 @@ const EventLinksList = ({ linkList, listType }) => {
         [layout.cf]: true,
       })}
     >
-      {linkList.map(eventLink =>
+      {linkList.map(eventLink => (
         <a
           className={styles.fullDetailsLink}
           href={eventLink.url}
@@ -24,8 +24,8 @@ const EventLinksList = ({ linkList, listType }) => {
           rel={listType === 'external' ? 'noopener' : null}
         >
           <span>{eventLink.title}</span>
-        </a>,
-      )}
+        </a>
+      ))}
     </div>
   );
 };

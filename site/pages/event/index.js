@@ -25,22 +25,18 @@ export default function Event({ event }) {
               startDateTime={event.startDateTime}
               endDateTime={setEndDate('today', event.startDateTime, event.endDateTime)}
             />
-            <h2 className={styles.eventTitle}>
-              {event.title}
-            </h2>
+            <h2 className={styles.eventTitle}>{event.title}</h2>
             <div className={styles.twoColumn}>
               <div className={styles.event}>
-                <div className={styles.eventDescription}>
-                  {event.strapline}
-                </div>
+                <div className={styles.eventDescription}>{event.strapline}</div>
                 <div className={styles.eventBody}>
-                  {event.body.map((el, i) =>
+                  {event.body.map((el, i) => (
                     <p
                       className={styles.paragraph}
                       key={i}
                       dangerouslySetInnerHTML={{ __html: marked(el.text) }}
-                    />,
-                  )}
+                    />
+                  ))}
                 </div>
                 <EventMeta
                   internalLinks={event.internalLinks}
@@ -54,13 +50,14 @@ export default function Event({ event }) {
                 </div>
               </div>
               <div>
-                {event.featureImageFilename &&
+                {event.featureImageFilename && (
                   <img
                     role="presentation"
                     className={styles.eventImg}
                     src={`${event.featureImageFilename}`}
                     alt={event.title}
-                  />}
+                  />
+                )}
               </div>
             </div>
           </div>

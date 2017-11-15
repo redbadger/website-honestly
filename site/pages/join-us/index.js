@@ -25,8 +25,7 @@ const titles = {
           // eslint-disable-next-line max-len, comma-dangle
           children: (
             <span>
-              Are we what you’re looking{' '}
-              <span className={styles.noWrap}>for?*</span>
+              Are we what you’re looking <span className={styles.noWrap}>for?*</span>
             </span>
           ),
         },

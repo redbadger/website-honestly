@@ -1,25 +1,16 @@
 @value badgerRedOnWhite, linesOnWhite from '../../css/_colors.css';
-@value mediumScreen, largeScreen from "../../css/_sizes.css";
-
-.listBox {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.09);
-  margin: 0 auto 25px;
-  width: 100%;
-
-}
+@value mediumScreen, largeScreen from '../../css/_sizes.css';
 
 .listBox__heading {
-  composes: fontStaticM2 from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontStaticM2 from '../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
   color: badgerRedOnWhite;
   text-transform: uppercase;
 }
 
 .listBox__heading:after {
   display: block;
-  content: "";
+  content: '';
   height: 2px;
   width: 100%;
   background-color: linesOnWhite;
@@ -35,21 +26,6 @@
 .listBox__element--results {
   display: flex;
   justify-content: space-between;
-  composes: fontS2 from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
-}
-
-@media mediumScreen {
-  .listBox {
-    width: 75%;
-    margin-bottom: 0;
-  }
-}
-
-
-@media largeScreen {
-  .listBox {
-    width: 50%;
-    margin-bottom: 0;
-  }
+  composes: fontS2 from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
 }

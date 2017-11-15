@@ -23,7 +23,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/haller',
 };
 
-const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
+const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) => (
   <CaseStudyFrame>
     <CaseStudyHeader
       title="Working with the Haller Foundation: Developing technology for good"
@@ -47,7 +47,6 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
       <p>
         Haller approached Red Badger wanting to explore the potential to use new technologies to
         extend these initiatives to a much wider farming audience in Kenya.
-
         <ul>
           <li>
             Mobile usage in Kenya is surprisingly high with around 50% of Kenyan’s owning a
@@ -59,7 +58,6 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
             support the agricultural improvements of Kenyan farmers was the logical next step.
           </li>
         </ul>
-
       </p>
     </CaseStudySection>
     <PullQuote
@@ -109,6 +107,7 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) =>
 
     <WhatToReadNext />
     <ContactUs postURL={contactUsURL} />
-  </CaseStudyFrame>;
+  </CaseStudyFrame>
+);
 
 export default HallerCaseStudy;

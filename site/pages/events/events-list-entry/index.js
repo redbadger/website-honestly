@@ -50,9 +50,7 @@ const EventsListEntry = ({
           <Grid fit={false}>
             <Cell size={8} key="event_description" breakOn="mobileS">
               <EventTitle eventLink={eventLink} eventTitle={title} />
-              <div className={styles.eventDescription}>
-                {strapline}
-              </div>
+              <div className={styles.eventDescription}>{strapline}</div>
               <EventMeta internalLinks={internalLinks} externalLinks={externalLinks} tags={tags} />
             </Cell>
             <Cell size={4} key="event_picture" breakOn="mobileS" hideOn="mobileS">

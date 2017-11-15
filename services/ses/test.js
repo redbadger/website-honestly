@@ -91,14 +91,14 @@ describe('contact-us-service/email.validateAndSendEmail', () => {
           Html: {
             Data:
               '<p><strong>This email was sent through the contact us form on red-badger.com:' +
-                '</strong></p><p>Hello,<br>&lt;b&gt;I want to work with you&lt;/b&gt;</p><p><strong>Contact details:</strong></p>' +
-                `<p>${defaultEmail.contact}</p>`,
+              '</strong></p><p>Hello,<br>&lt;b&gt;I want to work with you&lt;/b&gt;</p><p><strong>Contact details:</strong></p>' +
+              `<p>${defaultEmail.contact}</p>`,
             Charset: 'UTF-8',
           },
           Text: {
             Data:
               'This email was sent through the contact us form on red-badger.com:\n\n' +
-                'Hello,\n&lt;b&gt;I want to work with you&lt;/b&gt;\n\nContact details:\n\ntest@test.com',
+              'Hello,\n&lt;b&gt;I want to work with you&lt;/b&gt;\n\nContact details:\n\ntest@test.com',
             Charset: 'UTF-8',
           },
         },

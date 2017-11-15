@@ -6,9 +6,7 @@ import leanImg from './lean.png';
 export default function LeanSlice() {
   return (
     <section className={styles.slice}>
-      <h2 className={styles.heading}>
-        How do we do the thing right?
-      </h2>
+      <h2 className={styles.heading}>How do we do the thing right?</h2>
 
       <div className={styles.content}>
         <div className={styles.leanImageWrapper}>
@@ -17,37 +15,33 @@ export default function LeanSlice() {
 
         <div className={styles.pointsWrapper}>
           <p className={styles.point}>
-            <strong className={styles.bold}>Visualise the workflow</strong> on a
-            physical wall for complete transparency.
+            <strong className={styles.bold}>Visualise the workflow</strong> on a physical wall for
+            complete transparency.
           </p>
 
           <p className={styles.point}>
-            <strong className={styles.bold}>Build a shared understanding</strong> by
-            working in the same place as our clients.
+            <strong className={styles.bold}>Build a shared understanding</strong> by working in the
+            same place as our clients.
           </p>
 
           <p className={styles.point}>
-            <strong className={styles.bold}>Learn fast</strong> by getting to something
-            we can test quickly.
+            <strong className={styles.bold}>Learn fast</strong> by getting to something we can test
+            quickly.
           </p>
 
           <p className={styles.point}>
-            <strong className={styles.bold}>Minimise waste</strong> by using real data
-            to forecast and make decisions.
+            <strong className={styles.bold}>Minimise waste</strong> by using real data to forecast
+            and make decisions.
           </p>
 
           <p className={styles.point}>
-            <strong className={styles.bold}>Work in cross-functional teams</strong> who
-            have the autonomy to make the right decisions.
+            <strong className={styles.bold}>Work in cross-functional teams</strong> who have the
+            autonomy to make the right decisions.
           </p>
 
           <p className={styles.point}>
-            <strong className={styles.bold}>
-              Focus on what the users need
-            </strong>
-            {' '}
-            and deliver improvements incrementally whilst getting continual
-            feedback.
+            <strong className={styles.bold}>Focus on what the users need</strong> and deliver
+            improvements incrementally whilst getting continual feedback.
           </p>
         </div>
       </div>

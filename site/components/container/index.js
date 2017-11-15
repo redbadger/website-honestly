@@ -18,9 +18,7 @@ export default class Container extends Component {
   render() {
     return (
       <div className={styles.wrapper}>
-        <div className={styles.container}>
-          {this.props.children}
-        </div>
+        <div className={styles.container}>{this.props.children}</div>
       </div>
     );
   }

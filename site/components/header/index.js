@@ -29,16 +29,12 @@ const Header = () => {
         <ul role="listbox" className={styles.mediumScreenNav}>
           <li>
             <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('What we do')}>
-                What we do
-              </span>
+              <span onClick={trackAnalytics('What we do')}>What we do</span>
             </Link>
           </li>
           <li>
             <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('About us')}>
-                About us
-              </span>
+              <span onClick={trackAnalytics('About us')}>About us</span>
             </Link>
           </li>
           <li>
@@ -48,23 +44,18 @@ const Header = () => {
           </li>
           <li>
             <Link to="events" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('Events')}>
-                Events
-              </span>
+              <span onClick={trackAnalytics('Events')}>Events</span>
             </Link>
           </li>
           <li>
             <Link to="joinUs" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('Jobs')}>
-                Jobs
-              </span>
+              <span onClick={trackAnalytics('Jobs')}>Jobs</span>
             </Link>
           </li>
         </ul>
       </nav>
 
       <SmallScreenNav />
-
     </header>
   );
 };

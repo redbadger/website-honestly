@@ -28,7 +28,7 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-const Footer = () =>
+const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
       <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
@@ -37,7 +37,9 @@ const Footer = () =>
           <ul className={styles.nav}>
             {/* eslint-disable jsx-a11y/no-static-element-interactions */}
             <li>
-              <Link to="homePage"><span onClick={trackAnalytics('Home')}>Home</span></Link>
+              <Link to="homePage">
+                <span onClick={trackAnalytics('Home')}>Home</span>
+              </Link>
             </li>
             <li>
               <Link to="aboutUsPage">
@@ -50,13 +52,19 @@ const Footer = () =>
               </Link>
             </li>
             <li>
-              <a href="/blog"><span onClick={trackAnalytics('Blog')}>Blog</span></a>
+              <a href="/blog">
+                <span onClick={trackAnalytics('Blog')}>Blog</span>
+              </a>
             </li>
             <li>
-              <Link to="events"><span onClick={trackAnalytics('Events')}>Events</span></Link>
+              <Link to="events">
+                <span onClick={trackAnalytics('Events')}>Events</span>
+              </Link>
             </li>
             <li>
-              <Link to="joinUs"><span onClick={trackAnalytics('Jobs')}>Jobs</span></Link>
+              <Link to="joinUs">
+                <span onClick={trackAnalytics('Jobs')}>Jobs</span>
+              </Link>
             </li>
             {/* eslint-enable jsx-a11y/no-static-element-interactions */}
           </ul>
@@ -89,9 +97,7 @@ const Footer = () =>
                 <span>5</span>
               </span>
             </a>
-            <span className={styles.screenReaderText}>
-              Find us on social media
-            </span>
+            <span className={styles.screenReaderText}>Find us on social media</span>
             <ul className={styles.socialLinks}>
               <li>
                 <a
@@ -197,7 +203,6 @@ const Footer = () =>
             </div>
           </div>
         </div>
-
       </div>
       <div className={styles.footerEndContainer}>
         <div className={cx('section', 'disclaimer', 'noBorder')}>
@@ -207,9 +212,7 @@ const Footer = () =>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
             Registered in England No. 7242017
           </p>
-          <p className={styles.disclaimerParagraph}>
-            VAT Registration No. 990 8085 82
-          </p>
+          <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
           <p className={styles.cookieWarning}>
             We use cookies on our website. For more information, view our privacy policy.
           </p>
@@ -221,6 +224,7 @@ const Footer = () =>
         />
       </div>
     </div>
-  </footer>;
+  </footer>
+);
 
 export default Footer;

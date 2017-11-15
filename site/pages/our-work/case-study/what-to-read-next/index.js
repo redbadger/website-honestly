@@ -50,7 +50,7 @@ type WhatToReadNextProps = {
   maxNumberSlices?: number,
 };
 
-const WhatToReadNext = ({ currentPage = '', maxNumberSlices = 3 }: WhatToReadNextProps) =>
+const WhatToReadNext = ({ currentPage = '', maxNumberSlices = 3 }: WhatToReadNextProps) => (
   <div className={styles.whatNext}>
     <div className={styles.whatNext__tilesContainer}>
       {_(slices)
@@ -63,6 +63,7 @@ const WhatToReadNext = ({ currentPage = '', maxNumberSlices = 3 }: WhatToReadNex
     <Link to="ourWorkPage" className={styles.whatNext__button}>
       See more of our work
     </Link>
-  </div>;
+  </div>
+);
 
 export default WhatToReadNext;

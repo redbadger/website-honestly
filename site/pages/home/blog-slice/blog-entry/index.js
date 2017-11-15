@@ -25,12 +25,8 @@ const BlogEntry = ({ featuredBlogPost }: { featuredBlogPost: BlogPost }) => {
             <p>{featuredBlogPost.title}</p>
           </div>
           <div className={styles.authorTitle}>
-            <p className={styles.linkAuthor}>
-              {featuredBlogPost.author.name}
-            </p>
-            <p className={styles.linkAuthorTitle}>
-              {featuredBlogPost.author.role}
-            </p>
+            <p className={styles.linkAuthor}>{featuredBlogPost.author.name}</p>
+            <p className={styles.linkAuthorTitle}>{featuredBlogPost.author.role}</p>
           </div>
         </div>
       </a>

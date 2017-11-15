@@ -95,7 +95,10 @@ describe('site/about-us/q-and-a-slice', () => {
       },
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
-    const topics = qAndASlice.find('ul').first().find('ul');
+    const topics = qAndASlice
+      .find('ul')
+      .first()
+      .find('ul');
     expect(topics.children().length).to.equal(2);
   });
 
@@ -114,7 +117,10 @@ describe('site/about-us/q-and-a-slice', () => {
       },
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
-    const topics = qAndASlice.find('ul').first().find('ul');
+    const topics = qAndASlice
+      .find('ul')
+      .first()
+      .find('ul');
     expect(topics.find('h4').text()).to.equal('What do Red Badger do?');
   });
 
@@ -133,7 +139,10 @@ describe('site/about-us/q-and-a-slice', () => {
       },
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
-    const topics = qAndASlice.find('ul').first().find('ul');
+    const topics = qAndASlice
+      .find('ul')
+      .first()
+      .find('ul');
     expect(topics.find('a').attr('rel')).to.equal('noopener noreferrer');
     expect(topics.find('a').attr('target')).to.equal('_blank');
   });

@@ -39,8 +39,8 @@ function CaseStudies() {
               className={styles.caseStudyDescription}
               href="/our-work/case-study/fortnum-and-mason"
             >
-              Improving online and mobile conversion rates on the new fortnumandmason.com
-              site with great customer experience and innovative tech.
+              Improving online and mobile conversion rates on the new fortnumandmason.com site with
+              great customer experience and innovative tech.
             </a>
           </div>
         </div>
@@ -63,9 +63,9 @@ function CaseStudies() {
               </a>
             </div>
             <a className={styles.caseStudyDescription} href="/our-work/case-study/camden-market">
-              Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive
-              more footfall from Londoners to the physical market by
-              showcasing the eclectic range of goods, food and events.
+              Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive more
+              footfall from Londoners to the physical market by showcasing the eclectic range of
+              goods, food and events.
             </a>
           </div>
         </div>
@@ -92,7 +92,9 @@ function CaseStudies() {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <Link to="ourWorkPage" className={styles.button}>See more of our work</Link>
+        <Link to="ourWorkPage" className={styles.button}>
+          See more of our work
+        </Link>
       </div>
     </div>
   );
@@ -111,12 +113,8 @@ export default function whatWeDo() {
     <div>
       <Social {...social} />
       <div className={styles.pageHeaderContainer}>
-        <h1 className={styles.pageHeader}>
-          Do the right thing.
-        </h1>
-        <h1 className={styles.pageHeader}>
-          Do the thing right.
-        </h1>
+        <h1 className={styles.pageHeader}>Do the right thing.</h1>
+        <h1 className={styles.pageHeader}>Do the thing right.</h1>
       </div>
       <TriangleSlice />
       <LeanSlice />

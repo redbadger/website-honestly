@@ -92,7 +92,9 @@ export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
   if (!accessToken) {
     throw new Error('Missing env varible INSTAGRAM_ACCESS_TOKEN');
   }
-  const apiQuery = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${accessToken}`;
+  const apiQuery = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${
+    accessToken
+  }`;
 
   return fetch(apiQuery, {
     headers: {
@@ -103,6 +105,9 @@ export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
     .then(handleErrors)
     .then(response => response.json())
     .then((response: InstagramResponse) =>
-      response.data.filter(isValidPost).map(normalisePost).slice(0, 5),
+      response.data
+        .filter(isValidPost)
+        .map(normalisePost)
+        .slice(0, 5),
     );
 };

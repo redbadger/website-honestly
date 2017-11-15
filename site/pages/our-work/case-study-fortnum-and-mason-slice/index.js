@@ -7,7 +7,7 @@ import fmProjectMediumSnapshot from './images/fortnum-medium.png';
 
 const caseStudyUrl = '/our-work/case-study/fortnum-and-mason/';
 
-export default () =>
+export default () => (
   <div className={styles.caseStudyContainer}>
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
@@ -17,8 +17,8 @@ export default () =>
             Fortnum & Mason’s new, elegant website increases revenue and conversion rates
           </h2>
           <p className={styles.description}>
-            A scalable, highly flexible new site was needed,
-            and very quickly to avoid more lost revenue.
+            A scalable, highly flexible new site was needed, and very quickly to avoid more lost
+            revenue.
           </p>
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
@@ -38,4 +38,5 @@ export default () =>
         />
       </a>
     </div>
-  </div>;
+  </div>
+);

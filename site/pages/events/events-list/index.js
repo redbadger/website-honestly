@@ -21,9 +21,9 @@ const EventsList = ({ events, timeline }) => {
       <div className={styles.eventsListTimelineSection}>
         <EventsTimelineTitle timeline={timeline} />
         <ul className={styles.eventsList}>
-          {relevantEvents.map(event =>
-            <EventsListEntry {...event} timeline={timeline} type="event" key={`key_${event.id}`} />,
-          )}
+          {relevantEvents.map(event => (
+            <EventsListEntry {...event} timeline={timeline} type="event" key={`key_${event.id}`} />
+          ))}
         </ul>
       </div>
     );

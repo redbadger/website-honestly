@@ -31,7 +31,7 @@ const CaseStudyHeader = ({
   headerColor,
   children,
   social,
-}: CaseStudyHeaderProps) =>
+}: CaseStudyHeaderProps) => (
   <div>
     <Social {...social} />
     <div className={styles.header} style={{ backgroundColor: headerColor }}>
@@ -46,16 +46,12 @@ const CaseStudyHeader = ({
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
-        <h1 className={styles.content__mainTitle}>
-          {title}
-        </h1>
-        {tagline &&
-          <h2 className={styles.content__tagline}>
-            {tagline}
-          </h2>}
+        <h1 className={styles.content__mainTitle}>{title}</h1>
+        {tagline && <h2 className={styles.content__tagline}>{tagline}</h2>}
       </div>
       {children}
     </div>
-  </div>;
+  </div>
+);
 
 export default CaseStudyHeader;

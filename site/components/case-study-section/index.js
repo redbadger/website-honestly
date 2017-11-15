@@ -8,12 +8,13 @@ type CaseStudySectionProps = {
   children?: Node,
 };
 
-const CaseStudySection = ({ title, children }: CaseStudySectionProps) =>
+const CaseStudySection = ({ title, children }: CaseStudySectionProps) => (
   <div className={styles.content}>
     <div className={styles.content__wrapper}>
       {title && <h3>{title}</h3>}
       {children}
     </div>
-  </div>;
+  </div>
+);
 
 export default CaseStudySection;
