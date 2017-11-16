@@ -180,6 +180,11 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'offline',
   },
   {
+    title: 'Browser not supported',
+    key: 'browserNotSupported',
+    route: 'browser-not-supported',
+  },
+  {
     title: 'Camden market case study',
     key: 'camdenMarketCaseStudy',
     route: 'our-work/case-study/camden-market',

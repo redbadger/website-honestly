@@ -8,6 +8,7 @@ import NotFoundPage from '../pages/not-found';
 import ServerErrorPage from '../pages/server-error';
 import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
+import BrowserNotSupported from '../pages/browser-not-supported';
 import AboutUsPage from '../pages/about-us';
 
 import JoinUsPage from '../pages/join-us';
@@ -40,6 +41,7 @@ const componentMap = {
   notFoundPage: NotFoundPage,
   serverErrorPage: ServerErrorPage,
   offlinePage: OfflinePage,
+  browserNotSupported: BrowserNotSupported,
   aboutUsPage: AboutUsPage,
   badgers: MeetOurTeam,
   badger: BadgerProfile,

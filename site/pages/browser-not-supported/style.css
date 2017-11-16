@@ -1,0 +1,102 @@
+@value badgerBlack, badgerWhite from "../../css/_colors.css";
+@value fontS2, fontM, fontM2, fontXS, serif, sansSerif from "../../css/typography/_fonts.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.container {
+  margin: 0 auto 40px auto;
+  max-width: 710px;
+}
+
+.notification {
+  background-color: badgerBlack;
+  color: badgerWhite;
+  padding: 20px;
+}
+
+.notifyHeader {
+  composes: fontS2;
+  composes: serif;
+}
+
+.notifyBody {
+  composes: fontXS;
+  composes: sansSerif;
+}
+
+.title {
+  color: badgerBlack;
+  composes: fontM;
+  composes: serif;
+  margin: 40px 20px 30px 20px;
+}
+
+.subtitle {
+  color: badgerBlack;
+  font-size: 24px;
+  composes: serif;
+  margin: 30px 20px 10px 20px;
+}
+
+.link {
+  composes: redUnderlineLink from "../../css/_links.css";
+  color: badgerBlack;
+}
+
+.highlightParagraph {
+  color: badgerBlack;
+  composes: fontXS;
+  composes: serif;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.paragraph {
+  color: badgerBlack;
+  composes: fontXS;
+  composes: sansSerif;
+  margin: 10px 20px;
+}
+
+.paragraph + .paragraph {
+  margin-top: 20px;
+}
+
+.author {
+  composes: paragraph;
+  font-weight: bolder;
+}
+
+.list {
+  color: badgerBlack;
+  composes: fontXS;
+  composes: sansSerif;
+  margin: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.diagram svg {
+  display: block;
+  margin: 20px auto 30px auto;
+  max-width: 267px;
+  width: 80%;
+}
+
+.smiley svg {
+  display: inline;
+  height: 1em;
+  width: 1em;
+}
+
+.clear {
+  clear: both;
+}
+
+@media mediumScreen {
+  .diagram svg {
+    display: inline-block;
+    float: right;
+    margin: -.9em 0 20px 20px;
+  }
+}
