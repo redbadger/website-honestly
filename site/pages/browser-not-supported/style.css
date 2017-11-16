@@ -2,101 +2,147 @@
 @value fontS2, fontM, fontM2, fontXS, serif, sansSerif from "../../css/typography/_fonts.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
-.container {
-  margin: 0 auto 40px auto;
-  max-width: 710px;
+* {
+  box-sizing: border-box;
 }
 
-.notification {
-  background-color: badgerBlack;
-  color: badgerWhite;
-  padding: 20px;
+body {
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-.notifyHeader {
-  composes: fontS2;
-  composes: serif;
+h1 {
+  font-size: 3.75rem;
 }
 
-.notifyBody {
-  composes: fontXS;
-  composes: sansSerif;
+a {
+  color: black;
 }
 
-.title {
-  color: badgerBlack;
-  composes: fontM;
-  composes: serif;
-  margin: 40px 20px 30px 20px;
+header p {
+  font-weight: 600;
+  max-width: 33%;
+  font-size: 2.25rem;
 }
 
-.subtitle {
-  color: badgerBlack;
-  font-size: 24px;
-  composes: serif;
-  margin: 30px 20px 10px 20px;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.link {
-  composes: redUnderlineLink from "../../css/_links.css";
-  color: badgerBlack;
+li {
+  width: 25%;
 }
 
-.highlightParagraph {
-  color: badgerBlack;
-  composes: fontXS;
-  composes: serif;
-  font-weight: bold;
-  margin: 20px;
+li div  {
+   max-width: 195px;
+   margin: 0 auto;
 }
 
-.paragraph {
-  color: badgerBlack;
-  composes: fontXS;
-  composes: sansSerif;
-  margin: 10px 20px;
-}
 
-.paragraph + .paragraph {
-  margin-top: 20px;
-}
-
-.author {
-  composes: paragraph;
-  font-weight: bolder;
-}
-
-.list {
-  color: badgerBlack;
-  composes: fontXS;
-  composes: sansSerif;
-  margin: 20px;
-  padding-left: 20px;
-  list-style-type: disc;
-  list-style-position: outside;
-}
-
-.diagram svg {
+img {
   display: block;
-  margin: 20px auto 30px auto;
-  max-width: 267px;
-  width: 80%;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.smiley svg {
-  display: inline;
-  height: 1em;
-  width: 1em;
+
+li a {
+  text-align: center;
+  display: block;
+  margin-top: 1em;
 }
 
-.clear {
-  clear: both;
+footer h2 {
+  font-size: 3rem;  
 }
 
-@media mediumScreen {
-  .diagram svg {
-    display: inline-block;
-    float: right;
-    margin: -.9em 0 20px 20px;
+footer p {
+  margin: 0;
+  line-height: 1.25;
+  font-size: 2.25rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  header h1 {
+    max-width: 50%;
+  }
+  
+  header p {
+    font-weight: 600;
+    max-width: 75%;
+    font-size: 1.875rem;
+  }
+  
+  ul {
+    padding: 0 4em;
+  }
+  
+  li {
+    width: 50%;
+    margin-bottom: 5.6875em;
+  }
+  
+  li div {
+    max-width: 180px;
+  }
+  
+  footer h2 {
+    margin-top: .5em;
+  }
+  
+  footer p {
+    margin: 0;
+    line-height: 1.25;
+    font-size: 1.875rem;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+
+  header h1 {
+    font-size: 2.5rem
+  }
+  
+  header p {
+    font-size: 1.75rem;
+  }
+  
+ ul {
+    padding: 0 2em;
+  }
+  
+  li {
+    width: 50%;
+    max-width: 7.25em;
+    margin-bottom: 5.6875em;
+  }
+  
+ li div {
+    max-width: 116px;
+ }
+  
+  
+  footer h2 {
+    margin-top: .5em;
+    font-size: 2.5rem;
+  }
+  
+  footer p {
+    margin: 0;
+    line-height: 1.25;
+    font-size: 1.5rem;
   }
 }
