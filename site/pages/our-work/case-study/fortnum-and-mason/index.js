@@ -147,7 +147,13 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           <span className={styles.content__redTitle}>{'Creating lasting change.'}</span>
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
-        <div className={cx(styles.content__float, styles['content__float--left'])}>
+        <div
+          className={cx(
+            styles.content__float,
+            styles['content__float--left'],
+            styles['content__float--content-hack'],
+          )}
+        >
           <img
             src={tabletCheckoutImage}
             className={styles.tabletImage}
