@@ -123,6 +123,10 @@
     float: left;
     margin: 5px 40px 30px 12%;
   }
+  
+  .content__float--content-hack {
+    margin-bottom: 35px;
+  }
 
   .listBoxContainer {
     margin-left: 64px;
