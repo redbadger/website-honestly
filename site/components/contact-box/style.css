@@ -17,6 +17,7 @@
 .contactBox__button {
   composes: smallButton from "../../css/_links.css";
   cursor: pointer;
+  border-radius: 0;
 }
 
 
