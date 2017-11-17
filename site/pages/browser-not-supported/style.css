@@ -6,26 +6,21 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-}
-
-h1 {
+.bns__header h1 {
   font-size: 3.75rem;
 }
 
-a {
+.bns__header a {
   color: black;
 }
 
-header p {
+.bns__header p {
   font-weight: 600;
   max-width: 33%;
   font-size: 2.25rem;
 }
 
-ul {
+.bns__browsers ul {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -34,17 +29,17 @@ ul {
   flex-wrap: wrap;
 }
 
-li {
+.bns__browsers li {
   width: 25%;
 }
 
-li div  {
+.bns__browsers li div  {
    max-width: 195px;
    margin: 0 auto;
 }
 
 
-img {
+.bns__browsers img {
   display: block;
   border-radius: 50%;
   margin: 0 auto;
@@ -52,57 +47,57 @@ img {
 }
 
 
-li a {
+.bns__browsers li a {
   text-align: center;
   display: block;
   margin-top: 1em;
 }
 
-footer h2 {
+.bns__footer h2 {
   font-size: 3rem;  
 }
 
-footer p {
+.bns__footer p {
   margin: 0;
   line-height: 1.25;
   font-size: 2.25rem;
 }
 
-footer a {
+.bns__footer a {
   text-decoration: none;
 }
 
 
 @media screen and (max-width: 768px) {
   
-  header h1 {
+  .bns__header h1 {
     max-width: 50%;
   }
   
-  header p {
+  .bns__header p {
     font-weight: 600;
     max-width: 75%;
     font-size: 1.875rem;
   }
   
-  ul {
+  .bns__browsers ul {
     padding: 0 4em;
   }
   
-  li {
+  .bns__browsers li {
     width: 50%;
     margin-bottom: 5.6875em;
   }
   
-  li div {
+  .bns__browsers li div {
     max-width: 180px;
   }
   
-  footer h2 {
+  .bns__footer h2 {
     margin-top: .5em;
   }
   
-  footer p {
+  .bns__footer p {
     margin: 0;
     line-height: 1.25;
     font-size: 1.875rem;
@@ -112,35 +107,35 @@ footer a {
 
 @media screen and (max-width: 375px) {
 
-  header h1 {
+  .bns__header h1 {
     font-size: 2.5rem
   }
   
-  header p {
+  .bns__header p {
     font-size: 1.75rem;
   }
   
- ul {
+ .bns__browsers ul {
     padding: 0 2em;
   }
   
-  li {
+  .bns__browsers li {
     width: 50%;
     max-width: 7.25em;
     margin-bottom: 5.6875em;
   }
   
- li div {
+ .bns__browsers li div {
     max-width: 116px;
  }
   
   
-  footer h2 {
+  .bns__footer h2 {
     margin-top: .5em;
     font-size: 2.5rem;
   }
   
-  footer p {
+  .bns__footer p {
     margin: 0;
     line-height: 1.25;
     font-size: 1.5rem;

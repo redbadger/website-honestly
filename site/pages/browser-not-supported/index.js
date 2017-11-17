@@ -2,19 +2,19 @@
 /* rules disabled as this is essentially a template - makes no sense to move the long lines elsewhere */
 
 import React from 'react';
-// import styles from './style.css';
+import styles from './style.css';
 
 export default function BrowserNotSupported() {
   return (
     <div>
-      <header>
+      <header className={styles.bns__header}>
         <h1>Browser not supported</h1>
         <p>
           Thanks for visiting but we dont support your browser. Upgrade to one of these to see what
           we offer
         </p>
       </header>
-      <main>
+      <main className={styles.bns__browsers}>
         <ul>
           <li>
             <div>
@@ -42,7 +42,7 @@ export default function BrowserNotSupported() {
           </li>
         </ul>
       </main>
-      <footer>
+      <footer className={styles.bns__footer}>
         <h2>Need help with digital transformation?</h2>
         <p>Email us at</p>
         <p>
