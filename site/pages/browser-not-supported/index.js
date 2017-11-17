@@ -7,8 +7,8 @@ import styles from './style.css';
 export default function BrowserNotSupported() {
   return (
     <div>
-      <header className={styles.bns__header}>
-        <h1>Browser not supported</h1>
+      <header>
+        <h1 className={styles.bns__header}>Browser not supported</h1>
         <p>
           Thanks for visiting but we dont support your browser. Upgrade to one of these to see what
           we offer

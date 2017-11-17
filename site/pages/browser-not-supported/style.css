@@ -1,13 +1,14 @@
 @value badgerBlack, badgerWhite from "../../css/_colors.css";
-@value fontS2, fontM, fontM2, fontXS, serif, sansSerif from "../../css/typography/_fonts.css";
+@value fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif from "../../css/typography/_fonts.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 * {
   box-sizing: border-box;
 }
 
-.bns__header h1 {
-  font-size: 3.75rem;
+.bns__header {
+  composes: serif;
+  composes: fontL;
 }
 
 .bns__header a {
