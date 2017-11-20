@@ -4,8 +4,7 @@ import Social from '../../../../components/social';
 import styles from './style.css';
 
 import headerImageLarge from './images/header-large.png';
-import headerImageMedium from './images/header-medium-test.png';
-// import headerImageMedium from './images/header-medium.png';
+import headerImageMedium from './images/header-medium.png';
 import headerImageSmall from './images/header-small.png';
 import devicesImage from './images/devices.png';
 import tabletRestaurantImage from './images/tablet-restaurant.png';
