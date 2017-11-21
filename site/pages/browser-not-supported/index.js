@@ -9,7 +9,7 @@ export default function BrowserNotSupported() {
     <div>
       <header>
         <h1 className={styles.bns__header}>Browser not supported</h1>
-        <p>
+        <p className={styles.bns__headerContent}>
           Thanks for visiting but we dont support your browser. Upgrade to one of these to see what
           we offer
         </p>
@@ -20,30 +20,38 @@ export default function BrowserNotSupported() {
             <div>
               <img src={'http://fillmurray.com/200/200'} alt={''} />
             </div>
-            <a href="">Chrome</a>
+            <a className={styles.bns__browserLink} href="">
+              Chrome
+            </a>
           </li>
           <li>
             <div>
               <img src="http://fillmurray.com/200/200" alt="" />
             </div>
-            <a href="">Firefox</a>
+            <a className={styles.bns__browserLink} href="">
+              Firefox
+            </a>
           </li>
           <li>
             <div>
               <img src="http://fillmurray.com/200/200" alt="" />
             </div>
-            <a href="">Safari</a>
+            <a className={styles.bns__browserLink} href="">
+              Safari
+            </a>
           </li>
           <li>
             <div>
               <img src="http://fillmurray.com/200/200" alt="" />
             </div>
-            <a href="">Opera</a>
+            <a className={styles.bns__browserLink} href="">
+              Opera
+            </a>
           </li>
         </ul>
       </main>
       <footer className={styles.bns__footer}>
-        <h2>Need help with digital transformation?</h2>
+        <h2 className={styles.bns__footerHeadLine}>Need help with digital transformation?</h2>
         <p>Email us at</p>
         <p>
           <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>

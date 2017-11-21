@@ -1,6 +1,6 @@
 @value badgerBlack, badgerWhite from "../../css/_colors.css";
-@value fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif from "../../css/typography/_fonts.css";
-@value mediumScreen, largeScreen from "../../css/_sizes.css";
+@value fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif, boldSansSerif from "../../css/typography/_fonts.css";
+@value mediumScreen, containerMaxWidth, largeScreen from "../../css/_sizes.css";
 
 * {
   box-sizing: border-box;
@@ -9,6 +9,11 @@
 .bns__header {
   composes: serif;
   composes: fontL;
+}
+
+.bns__headerContent {
+  composes: boldSansSerif;
+  composes: fontM2;
 }
 
 .bns__header a {
@@ -28,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: containerMaxWidth;
 }
 
 .bns__browsers li {
@@ -48,14 +54,20 @@
 }
 
 
-.bns__browsers li a {
+.bns__browserLink {
   text-align: center;
   display: block;
+  margin: 0 auto;
   margin-top: 1em;
+  composes: boldSansSerif;
+  composes: fontM2;
+  text-decoration: underline;
+  color: badgerBlack;
 }
 
-.bns__footer h2 {
-  font-size: 3rem;  
+.bns__footerHeadLine {
+  composes: boldSansSerif;
+  composes: fontM2;  
 }
 
 .bns__footer p {
@@ -94,7 +106,7 @@
     max-width: 180px;
   }
   
-  .bns__footer h2 {
+  .bns__footerHeadLine {
     margin-top: .5em;
   }
   
@@ -131,7 +143,7 @@
  }
   
   
-  .bns__footer h2 {
+  .bns__footerHeadLine {
     margin-top: .5em;
     font-size: 2.5rem;
   }
