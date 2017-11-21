@@ -1,10 +1,10 @@
 # Fonts
 
 ## How it works?
-We use [typography.com](https://www.typography.com/) as fonts provider, but they we they serve assets depends on the environment.
+We use [typography.com](https://www.typography.com/) as fonts provider, but they we they serve assets depending on the environment.
 
-- **Development**: on this environment it works as all normal providers. Client request fonts from a CDN and CDN returns assets.
-- **Production**: on here client request assets to a CDN then CDN responds with a redirect ([302](https://http.cat/302)) to our own fonts folder which has  folder name and filenames as hash
+- **Development**: on this environment it works as a normal provider. Client request fonts from a CDN and CDN returns assets.
+- **Production**: on here client request assets to a CDN then CDN responds with a redirect ([302](https://http.cat/302)) to our own fonts folder which has folder name and filenames as hash
 
 ![Fonts request flow](https://docs.google.com/drawings/d/e/2PACX-1vQ485rcVaXuqdC3IxOjEjOUvzos5rr4dRjGTb_n5i4_iLE3AAUKQgKBvdH6iicQpDBiPjDnB0sNRi4a/pub?w=960&h=720)
 
