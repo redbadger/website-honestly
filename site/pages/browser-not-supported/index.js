@@ -6,7 +6,7 @@ import styles from './style.css';
 
 export default function BrowserNotSupported() {
   return (
-    <div>
+    <div className={styles.bns__container}>
       <header>
         <h1 className={styles.bns__header}>Browser not supported</h1>
         <p className={styles.bns__headerContent}>
@@ -52,13 +52,13 @@ export default function BrowserNotSupported() {
       </main>
       <footer className={styles.bns__footer}>
         <h2 className={styles.bns__footerHeadLine}>Need help with digital transformation?</h2>
-        <p>Email us at</p>
-        <p>
-          <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>
+        <p className={styles.bns__footerContent}>Email us at</p>
+        <p className={styles.bns__footerContent}>
+          <a className={styles.bns__footerLink} href="mailto:hello@red-badger.com">hello@red-badger.com</a>
         </p>
-        <p>Calls us on</p>
-        <p>
-          <a href="tel:+442035670555">+44 (0) 20 3567 0555</a>
+        <p className={styles.bns__footerContent}>Calls us on</p>
+        <p className={styles.bns__footerContent}>
+          <a className={styles.bns__footerLink} href="tel:+442035670555">+44 (0) 20 3567 0555</a>
         </p>
       </footer>
     </div>
