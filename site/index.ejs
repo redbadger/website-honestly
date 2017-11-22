@@ -25,6 +25,13 @@
     <link rel="icon" href="/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
     <link rel="manifest" href="/manifest.json">
     <link rel="preload" href="https://cloud.typography.com/7838134/6842972/css/fonts.css" as="style" onload="this.rel='stylesheet'" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.17/ua-parser.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var uaSniffer = new UAParser();
+        console.log(uaSniffer.getResult());
+        var browser = uaSniffer.getBrowser();
+        console.log('browser ==>', browser);
+    </script>
     <noscript><link rel="stylesheet" href="https://cloud.typography.com/7838134/6842972/css/fonts.css"></noscript>
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
     <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
