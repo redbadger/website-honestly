@@ -1,29 +1,40 @@
-@value badgerBlack, badgerWhite from "../../css/_colors.css";
+@value badgerBlack, badgerWhite, grey from "../../css/_colors.css";
 @value fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif, boldSansSerif from "../../css/typography/_fonts.css";
 @value mediumScreen, containerMaxWidth, largeScreen from "../../css/_sizes.css";
 @value bodyLink from "../../css/_links.css";
+@value divider, dividerGrey from "../../css/_divider.css";
 
 * {
   box-sizing: border-box;
 }
 
-.bns__container {
-  max-width: containerMaxWidth;
-  margin: 0 auto;
+body {
+  background-color: badgerWhite;
 }
 
-.bns__header {
+.bns__headerContainer {
+  max-width: containerMaxWidth;
+  margin: 0 auto;
+  margin-top: 11.25em;
+}
+
+.bns__headerHeadline {
   composes: serif;
   composes: fontL;
-  margin: 0.73em 0;
+  margin-bottom: 0.683em;
 }
 
 .bns__headerContent {
   composes: boldSansSerif;
   composes: fontM2;
-  max-width: 50%;
-  line-height: 1.5;
+  width: 75%;
+  line-height: 1.17;
   margin-bottom: 3.7em;
+  max-width: 927px;
+}
+
+.bns__browsers {
+  max-width: containerMaxWidth;
 }
 
 .bns__browsers ul {
@@ -33,7 +44,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: containerMaxWidth;
 }
 
 .bns__browsers li {
@@ -41,7 +51,7 @@
 }
 
 .bns__browsers li div  {
-   max-width: 195px;
+   max-width: 150px;
    margin: 0 auto;
 }
 
@@ -58,16 +68,26 @@
   text-align: center;
   display: block;
   margin: 0 auto;
-  margin-top: 1em;
+  margin-top: 0.66em;
   composes: boldSansSerif;
   composes: fontM2;
-  text-decoration: underline;
   color: badgerBlack;
 }
 
+.bns__footer {
+  composes: dividerGrey;
+  background-color: grey;
+}
+
+.bns__footerWraper {
+  max-width: containerMaxWidth;
+  margin: 0 auto;
+}
+
+
 .bns__footerHeadLine {
-  composes: boldSansSerif;
-  composes: fontM2;  
+  composes: serif;
+  composes: fontL;  
 }
 
 .bns__footerContent {
@@ -77,79 +97,4 @@
 
 .bns__footerLink{
   composes: bodyLink;
-}
-
-
-@media screen and (max-width: 768px) {
-  
-  .bns__header h1 {
-    max-width: 50%;
-  }
-  
-  .bns__header p {
-    font-weight: 600;
-    max-width: 75%;
-    font-size: 1.875rem;
-  }
-  
-  .bns__browsers ul {
-    padding: 0 4em;
-  }
-  
-  .bns__browsers li {
-    width: 50%;
-    margin-bottom: 5.6875em;
-  }
-  
-  .bns__browsers li div {
-    max-width: 180px;
-  }
-  
-  .bns__footerHeadLine {
-    margin-top: .5em;
-  }
-  
-  .bns__footerContent {
-    margin: 0;
-    line-height: 1.25;
-    font-size: 1.875rem;
-  }
-  
-}
-
-@media screen and (max-width: 375px) {
-
-  .bns__header h1 {
-    font-size: 2.5rem
-  }
-  
-  .bns__header p {
-    font-size: 1.75rem;
-  }
-  
- .bns__browsers ul {
-    padding: 0 2em;
-  }
-  
-  .bns__browsers li {
-    width: 50%;
-    max-width: 7.25em;
-    margin-bottom: 5.6875em;
-  }
-  
- .bns__browsers li div {
-    max-width: 116px;
- }
-  
-  
-  .bns__footerHeadLine {
-    margin-top: .5em;
-    font-size: 2.5rem;
-  }
-  
-  .bns__footerContent {
-    margin: 0;
-    line-height: 1.25;
-    font-size: 1.5rem;
-  }
 }

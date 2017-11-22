@@ -7,8 +7,8 @@ import styles from './style.css';
 export default function BrowserNotSupported() {
   return (
     <div className={styles.bns__container}>
-      <header>
-        <h1 className={styles.bns__header}>Browser not supported</h1>
+      <header className={styles.bns__headerContainer}>
+        <h1 className={styles.bns__headerHeadline}>Browser not supported</h1>
         <p className={styles.bns__headerContent}>
           Thanks for visiting but we dont support your browser. Upgrade to one of these to see what
           we offer
@@ -51,19 +51,20 @@ export default function BrowserNotSupported() {
         </ul>
       </main>
       <footer className={styles.bns__footer}>
-        <h2 className={styles.bns__footerHeadLine}>Need help with digital transformation?</h2>
-        <p className={styles.bns__footerContent}>Email us at</p>
-        <p className={styles.bns__footerContent}>
-          <a className={styles.bns__footerLink} href="mailto:hello@red-badger.com">
-            hello@red-badger.com
-          </a>
-        </p>
-        <p className={styles.bns__footerContent}>Calls us on</p>
-        <p className={styles.bns__footerContent}>
-          <a className={styles.bns__footerLink} href="tel:+442035670555">
-            +44 (0) 20 3567 0555
-          </a>
-        </p>
+        <div className={styles.bns__footerWraper}>
+          <h2 className={styles.bns__footerHeadLine}>Need help with digital transformation?</h2>
+          <h2 className={styles.bns__footerHeadLine}>Tell us more.</h2>
+          <p className={styles.bns__footerContent}>
+            <a className={styles.bns__footerLink} href="mailto:hello@red-badger.com">
+              hello@red-badger.com
+            </a>
+          </p>
+          <p className={styles.bns__footerContent}>
+            <a className={styles.bns__footerLink} href="tel:+442035670555">
+              +44 (0) 20 3567 0555
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
   );
