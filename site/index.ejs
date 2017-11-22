@@ -28,9 +28,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.17/ua-parser.min.js" charset="utf-8"></script>
     <script type="text/javascript">
         var uaSniffer = new UAParser();
-        console.log(uaSniffer.getResult());
         var browser = uaSniffer.getBrowser();
-        console.log('browser name==>', browser.name );
+        if ( browser.name === 'IE' && browser.major < 10 ) {
+            window.location.pathname = '/browser-not-supported';
+        }
     </script>
     <noscript><link rel="stylesheet" href="https://cloud.typography.com/7838134/6842972/css/fonts.css"></noscript>
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
