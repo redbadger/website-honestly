@@ -41,11 +41,13 @@ const join = {
       {
         type: 'Paragraph',
         props: {
-          children: `We love doing fantastic work for our clients. We do this
-          in integrated teams which are completely open with each other and our
-          customers. It's all about communication and collaboration. It's about
-          being innovative, being inspired, having fun and making magical
-          things happen.`,
+          children: `We are consultants - What does that mean? On top of our chosen discipline, we are great communicators, able to drop the jargon in favour of helping everyone understand a problem...and a solution whether they are technical or not.`,
+        },
+      },
+      {
+        type: 'Paragraph',
+        props: {
+          children: `Our consultants have conversations, workshop solutions and present back to multiple members of the team's. They take each other with them, and work hard to optimise their teams performance, not just their apps.`,
         },
       },
       {
