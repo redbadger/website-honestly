@@ -3,6 +3,10 @@
 
 import React from 'react';
 import styles from './style.css';
+import chromeImage from './images/chrome.png';
+import firefoxImage from './images/firefox.png';
+import safariImage from './images/safari.png';
+import operaImage from './images/opera.png';
 
 export default function BrowserNotSupported() {
   return (
@@ -25,7 +29,7 @@ export default function BrowserNotSupported() {
               rel="noreferrer noopener"
             >
               <div>
-                <img src={'http://fillmurray.com/200/200'} alt="Chrome" />
+                <img src={chromeImage} alt="Chrome" />
               </div>
               <span>Chrome</span>
             </a>
@@ -38,7 +42,7 @@ export default function BrowserNotSupported() {
               rel="noreferrer noopener"
             >
               <div>
-                <img src="http://fillmurray.com/200/200" alt="Firefox" />
+                <img src={firefoxImage} alt="Firefox" />
               </div>
               <span>Firefox</span>
             </a>
@@ -51,7 +55,7 @@ export default function BrowserNotSupported() {
               rel="noreferrer noopener"
             >
               <div>
-                <img src="http://fillmurray.com/200/200" alt="Safari" />
+                <img src={safariImage} alt="Safari" />
               </div>
               <span>Safari</span>
             </a>
@@ -64,7 +68,7 @@ export default function BrowserNotSupported() {
               rel="noreferrer noopener"
             >
               <div>
-                <img src="http://fillmurray.com/200/200" alt="Opera" />
+                <img src={operaImage} alt="Opera" />
               </div>
               <span>Opera</span>
             </a>
