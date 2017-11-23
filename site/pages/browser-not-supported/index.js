@@ -52,7 +52,9 @@ export default function BrowserNotSupported() {
       </main>
       <footer className={styles.bns__footer}>
         <div className={styles.bns__footerWraper}>
-          <h2 className={styles.bns__footerHeadLine}>Need help with digital transformation?<br/>Tell us more.</h2>
+          <h2 className={styles.bns__footerHeadLine}>
+            Need help with digital transformation?<br />Tell us more.
+          </h2>
           <p className={styles.bns__footerContent}>
             <a className={styles.bns__footerLink} href="mailto:hello@red-badger.com">
               hello@red-badger.com
