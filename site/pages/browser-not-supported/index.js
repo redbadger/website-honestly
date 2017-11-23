@@ -17,35 +17,55 @@ export default function BrowserNotSupported() {
       <main className={styles.bns__browsers}>
         <ul>
           <li>
-            <div>
-              <img src={'http://fillmurray.com/200/200'} alt={''} />
-            </div>
-            <a className={styles.bns__browserLink} href="">
-              Chrome
+            <a
+              className={styles.bns__browserLink}
+              href="https://www.google.co.uk/chrome/browser/desktop/index.html"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div>
+                <img src={'http://fillmurray.com/200/200'} alt="Chrome" />
+              </div>
+              <span>Chrome</span>
             </a>
           </li>
           <li>
-            <div>
-              <img src="http://fillmurray.com/200/200" alt="" />
-            </div>
-            <a className={styles.bns__browserLink} href="">
-              Firefox
+            <a
+              className={styles.bns__browserLink}
+              href="https://www.mozilla.org/firefox/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div>
+                <img src="http://fillmurray.com/200/200" alt="Firefox" />
+              </div>
+              <span>Firefox</span>
             </a>
           </li>
           <li>
-            <div>
-              <img src="http://fillmurray.com/200/200" alt="" />
-            </div>
-            <a className={styles.bns__browserLink} href="">
-              Safari
+            <a
+              className={styles.bns__browserLink}
+              href="https://support.apple.com/en_GB/downloads/safari"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div>
+                <img src="http://fillmurray.com/200/200" alt="Safari" />
+              </div>
+              <span>Safari</span>
             </a>
           </li>
           <li>
-            <div>
-              <img src="http://fillmurray.com/200/200" alt="" />
-            </div>
-            <a className={styles.bns__browserLink} href="">
-              Opera
+            <a
+              className={styles.bns__browserLink}
+              href="http://www.opera.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div>
+                <img src="http://fillmurray.com/200/200" alt="Opera" />
+              </div>
+              <span>Opera</span>
             </a>
           </li>
         </ul>
