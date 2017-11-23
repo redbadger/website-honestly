@@ -1,7 +1,7 @@
-@value badgerBlack, badgerWhite, grey from "../../css/_colors.css";
+@value badgerBlack, badgerWhite, grey, badgerRedOnBlack from "../../css/_colors.css";
 @value fontXS, fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif, boldSansSerif from "../../css/typography/_fonts.css";
 @value mediumScreen, containerMaxWidth, largeScreen from "../../css/_sizes.css";
-@value bodyLink from "../../css/_links.css";
+@value bodyLink, bodyUnderlineLink, redUnderlineLink from "../../css/_links.css";
 @value divider, dividerGrey from "../../css/_divider.css";
 
 * {
@@ -31,6 +31,7 @@ body {
 
 .bns__browsers {
   max-width: containerMaxWidth;
+  margin: 0 auto;
   padding: 2.5em 0;
 }
 
@@ -71,6 +72,10 @@ body {
   color: badgerBlack;
 }
 
+.bns__browserLink:hover span {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
 .bns__footer {
   composes: dividerGrey;
   background-color: grey;
@@ -95,7 +100,7 @@ body {
 }
 
 .bns__footerLink{
-  composes: bodyLink;
+  color: badgerBlack;
 }
 
 @media mediumScreen {
@@ -127,6 +132,31 @@ body {
   
   .bns__footer {
     padding: 3.75em 20px 4.375em;
+  }
+  
+}
+
+@media largeScreen {
+  .bns__headerContainer {
+    max-width: containerMaxWidth;
+    margin: 0 auto;
+    padding: 2.5em 0;
+  }
+  
+  .bns__headerContent {
+    max-width: 66%;
+  }
+  
+  .bns__browsers {
+    padding: 6.25em 0;
+  }
+  
+  .bns__browsers li div  {
+     max-width: 150px;
+  }
+  
+  .bns__footer {
+    padding: 5em 20px 4.375em;
   }
   
 }
