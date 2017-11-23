@@ -11,7 +11,7 @@ export default function BrowserNotSupported() {
         <h1 className={styles.bns__headerHeadline}>Browser not supported</h1>
         <p className={styles.bns__headerContent}>
           Thanks for visiting but we dont support your browser. Upgrade to one of these to see what
-          we offer
+          we offer.
         </p>
       </header>
       <main className={styles.bns__browsers}>
@@ -52,8 +52,7 @@ export default function BrowserNotSupported() {
       </main>
       <footer className={styles.bns__footer}>
         <div className={styles.bns__footerWraper}>
-          <h2 className={styles.bns__footerHeadLine}>Need help with digital transformation?</h2>
-          <h2 className={styles.bns__footerHeadLine}>Tell us more.</h2>
+          <h2 className={styles.bns__footerHeadLine}>Need help with digital transformation?<br/>Tell us more.</h2>
           <p className={styles.bns__footerContent}>
             <a className={styles.bns__footerLink} href="mailto:hello@red-badger.com">
               hello@red-badger.com

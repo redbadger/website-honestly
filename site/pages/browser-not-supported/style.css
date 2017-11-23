@@ -1,5 +1,5 @@
 @value badgerBlack, badgerWhite, grey from "../../css/_colors.css";
-@value fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif, boldSansSerif from "../../css/typography/_fonts.css";
+@value fontXS, fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif, boldSansSerif from "../../css/typography/_fonts.css";
 @value mediumScreen, containerMaxWidth, largeScreen from "../../css/_sizes.css";
 @value bodyLink from "../../css/_links.css";
 @value divider, dividerGrey from "../../css/_divider.css";
@@ -15,26 +15,23 @@ body {
 .bns__headerContainer {
   max-width: containerMaxWidth;
   margin: 0 auto;
-  margin-top: 11.25em;
+  padding: 2.5em 20px 0;
 }
 
 .bns__headerHeadline {
   composes: serif;
-  composes: fontL;
+  composes: fontM;
   margin-bottom: 0.683em;
 }
 
 .bns__headerContent {
   composes: boldSansSerif;
-  composes: fontM2;
-  width: 75%;
-  line-height: 1.17;
-  margin-bottom: 3.7em;
-  max-width: 927px;
+  composes: fontXS;
 }
 
 .bns__browsers {
   max-width: containerMaxWidth;
+  padding: 2.5em;
 }
 
 .bns__browsers ul {
@@ -47,11 +44,12 @@ body {
 }
 
 .bns__browsers li {
-  width: 25%;
+  width: 50%;
+  margin-bottom: 1.25em;
 }
 
 .bns__browsers li div  {
-   max-width: 150px;
+   max-width: 100px;
    margin: 0 auto;
 }
 
@@ -77,6 +75,7 @@ body {
 .bns__footer {
   composes: dividerGrey;
   background-color: grey;
+  padding: 2.5em 20px 3.125em;
 }
 
 .bns__footerWraper {
@@ -87,7 +86,8 @@ body {
 
 .bns__footerHeadLine {
   composes: serif;
-  composes: fontL;  
+  composes: fontM;  
+  margin-bottom: 0.833em;
 }
 
 .bns__footerContent {
