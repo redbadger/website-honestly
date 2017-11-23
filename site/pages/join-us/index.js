@@ -41,13 +41,13 @@ const join = {
       {
         type: 'Paragraph',
         props: {
-          children: `We are consultants - What does that mean? On top of our chosen discipline, we are great communicators, able to drop the jargon in favour of helping everyone understand a problem...and a solution whether they are technical or not.`,
+          children: `We are consultants - what does that mean? On top of our chosen discipline, we are great communicators, able to drop the jargon in favour of helping everyone understand a problem... and a solution, whether they are technical or not.`,
         },
       },
       {
         type: 'Paragraph',
         props: {
-          children: `Our consultants have conversations, workshop solutions and present back to multiple members of the team's. They take each other with them, and work hard to optimise their teams performance, not just their apps.`,
+          children: `Our consultants have conversations, workshop solutions and present back to multiple members of the teams. They collaborate and work hard to optimise their team's performance, not just their apps.`,
         },
       },
       {
