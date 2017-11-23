@@ -97,3 +97,36 @@ body {
 .bns__footerLink{
   composes: bodyLink;
 }
+
+@media mediumScreen {
+  
+  .bns__headerHeadline {
+    font-size: 60px;
+  }
+  
+  .bns__headerContent {
+    font-size: 30px;
+    line-height: 1.17;
+  }
+  
+  .bns__browsers li {
+    width: 25%;
+  }
+  
+  .bns__browsers li div  {
+     max-width: 130px;
+  }
+  
+  .bns__footerHeadLine {
+    font-size: 40px;
+  }
+  
+  .bns__footerContent {
+    font-size: 30px;
+  }
+  
+  .bns__footer {
+    padding: 3.75em 20px 4.375em;
+  }
+  
+}

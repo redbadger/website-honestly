@@ -10,62 +10,67 @@ export default function BrowserNotSupported() {
       <header className={styles.bns__headerContainer}>
         <h1 className={styles.bns__headerHeadline}>Browser not supported</h1>
         <p className={styles.bns__headerContent}>
-          Thanks for visiting but we dont support your browser. Upgrade to one of these to see what
-          we offer.
+          {
+            `Thanks for visiting but we don’t support your browser. Upgrade to one of these to see what we offer.`
+          }
         </p>
       </header>
       <main className={styles.bns__browsers}>
         <ul>
           <li>
-            <a
-              className={styles.bns__browserLink}
-              href="https://www.google.co.uk/chrome/browser/desktop/index.html"
-              target="_blank"
+            <a className={styles.bns__browserLink} 
+              href="https://www.google.co.uk/chrome/browser/desktop/index.html" 
+              target="_blank" 
               rel="noreferrer noopener"
             >
               <div>
                 <img src={'http://fillmurray.com/200/200'} alt="Chrome" />
               </div>
-              <span>Chrome</span>
+              <span>
+                Chrome
+              </span> 
             </a>
           </li>
           <li>
-            <a
-              className={styles.bns__browserLink}
+            <a className={styles.bns__browserLink} 
               href="https://www.mozilla.org/firefox/"
-              target="_blank"
+              target="_blank" 
               rel="noreferrer noopener"
             >
               <div>
                 <img src="http://fillmurray.com/200/200" alt="Firefox" />
               </div>
-              <span>Firefox</span>
+              <span>
+                Firefox
+              </span>
             </a>
           </li>
           <li>
-            <a
-              className={styles.bns__browserLink}
+            <a className={styles.bns__browserLink} 
               href="https://support.apple.com/en_GB/downloads/safari"
-              target="_blank"
+              target="_blank" 
               rel="noreferrer noopener"
             >
               <div>
                 <img src="http://fillmurray.com/200/200" alt="Safari" />
               </div>
-              <span>Safari</span>
+              <span>
+                Safari
+              </span>
             </a>
           </li>
           <li>
-            <a
-              className={styles.bns__browserLink}
-              href="http://www.opera.com/"
-              target="_blank"
+            <a className={styles.bns__browserLink} 
+              href="http://www.opera.com/" 
+              target="_blank" 
               rel="noreferrer noopener"
             >
               <div>
                 <img src="http://fillmurray.com/200/200" alt="Opera" />
               </div>
-              <span>Opera</span>
+              <span>
+                Opera
+              </span>
             </a>
           </li>
         </ul>
