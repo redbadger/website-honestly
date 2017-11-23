@@ -1,8 +1,7 @@
 @value badgerBlack, badgerWhite, grey, badgerRedOnBlack from "../../css/_colors.css";
-@value fontXS, fontS2, fontM, fontM2, fontXS, fontXL, fontL, serif, sansSerif, boldSansSerif from "../../css/typography/_fonts.css";
+@value fontXS, fontM, fontM2, serif, boldSansSerif from "../../css/typography/_fonts.css";
 @value mediumScreen, containerMaxWidth, largeScreen from "../../css/_sizes.css";
-@value bodyLink, bodyUnderlineLink, redUnderlineLink from "../../css/_links.css";
-@value divider, dividerGrey from "../../css/_divider.css";
+@value dividerGrey from "../../css/_divider.css";
 
 * {
   box-sizing: border-box;
@@ -13,9 +12,12 @@ body {
 }
 
 .bns__headerContainer {
+  padding: 2.5em 20px 0;
+}
+
+.bns__headerWraper {
   max-width: containerMaxWidth;
   margin: 0 auto;
-  padding: 2.5em 20px 0;
 }
 
 .bns__headerHeadline {
@@ -138,9 +140,7 @@ body {
 
 @media largeScreen {
   .bns__headerContainer {
-    max-width: containerMaxWidth;
-    margin: 0 auto;
-    padding: 2.5em 0;
+    padding: 2.5em 20px;
   }
   
   .bns__headerContent {
@@ -148,7 +148,7 @@ body {
   }
   
   .bns__browsers {
-    padding: 6.25em 0;
+    padding: 6.25em 20px;
   }
   
   .bns__browsers li div  {

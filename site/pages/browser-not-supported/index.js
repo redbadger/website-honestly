@@ -8,10 +8,12 @@ export default function BrowserNotSupported() {
   return (
     <div className={styles.bns__container}>
       <header className={styles.bns__headerContainer}>
-        <h1 className={styles.bns__headerHeadline}>Browser not supported</h1>
-        <p className={styles.bns__headerContent}>
-          {`Thanks for visiting but we don’t support your browser. Upgrade to one of these to see what we offer.`}
-        </p>
+        <div className={styles.bns__headerWraper}>
+          <h1 className={styles.bns__headerHeadline}>Browser not supported</h1>
+          <p className={styles.bns__headerContent}>
+            {`Thanks for visiting but we don’t support your browser. Upgrade to one of these to see what we offer.`}
+          </p>
+        </div>
       </header>
       <main className={styles.bns__browsers}>
         <ul>
