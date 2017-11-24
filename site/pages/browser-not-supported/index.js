@@ -11,15 +11,15 @@ import operaImage from './images/opera.png';
 export default function BrowserNotSupported() {
   return (
     <div className={styles.bns__container}>
-      <header className={styles.bns__headerContainer}>
+      <section className={styles.bns__headerContainer}>
         <div className={styles.bns__headerWraper}>
           <h1 className={styles.bns__headerHeadline}>Browser not supported</h1>
           <p className={styles.bns__headerContent}>
             {`Thanks for visiting but we don’t support your browser. Upgrade to one of these to see what we offer.`}
           </p>
         </div>
-      </header>
-      <main className={styles.bns__browsers}>
+      </section>
+      <section className={styles.bns__browsers}>
         <ul>
           <li>
             <a
@@ -74,8 +74,8 @@ export default function BrowserNotSupported() {
             </a>
           </li>
         </ul>
-      </main>
-      <footer className={styles.bns__footer}>
+      </section>
+      <section className={styles.bns__footer}>
         <div className={styles.bns__footerWraper}>
           <h2 className={styles.bns__footerHeadLine}>
             Need help with digital transformation?<br />Tell us more.
@@ -91,7 +91,7 @@ export default function BrowserNotSupported() {
             </a>
           </p>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
