@@ -94,7 +94,6 @@
     "svg-inline-react": "^1.0.3",
     "svgo": "^0.7.2",
     "twitter": "^1.7.0",
-    "ua-parser-js": "^0.7.17",
     "underscore-template-loader": "^0.7.3",
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.7.0",
