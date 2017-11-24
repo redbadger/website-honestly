@@ -29,7 +29,7 @@
     <script type="text/javascript">
         var uaSniffer = new UAParser();
         var browser = uaSniffer.getBrowser();
-        if ( browser.name === 'IE' && browser.major < 10 ) {
+        if ( browser.name === 'IE' && browser.major < 10 && window.location.pathname !== '/browser-not-supported') {
             window.location.pathname = '/browser-not-supported';
         }
     </script>
