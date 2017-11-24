@@ -41,11 +41,13 @@ const join = {
       {
         type: 'Paragraph',
         props: {
-          children: `We love doing fantastic work for our clients. We do this
-          in integrated teams which are completely open with each other and our
-          customers. It's all about communication and collaboration. It's about
-          being innovative, being inspired, having fun and making magical
-          things happen.`,
+          children: `We are consultants - what does that mean? On top of our chosen discipline, we are great communicators, able to drop the jargon in favour of helping everyone understand a problem... and a solution, whether they are technical or not.`,
+        },
+      },
+      {
+        type: 'Paragraph',
+        props: {
+          children: `Our consultants have conversations, workshop solutions and present back to multiple members of the teams. They collaborate and work hard to optimise their team's performance, not just their apps.`,
         },
       },
       {
@@ -116,7 +118,7 @@ export default function JoinUs({ jobs }) {
               <ComponentRenderer data={join} />
             </Cell>
             <Cell size={6}>
-              <Video title="Red Badger selfie video" id="9Ph7XJfWPys" type="youtube" />
+              <Video title="Red Badger selfie video" id="p-hchy70q-U" type="youtube" />
             </Cell>
           </Grid>
           <HR color="red" />

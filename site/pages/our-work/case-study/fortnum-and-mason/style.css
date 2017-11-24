@@ -18,9 +18,8 @@
 
 .header__image {
   max-width: 100%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  max-height: 456px;
+  margin: 0 auto;
 }
 
 .content {
@@ -123,6 +122,10 @@
   .content__float--left {
     float: left;
     margin: 5px 40px 30px 12%;
+  }
+  
+  .content__float--content-hack {
+    margin-bottom: 35px;
   }
 
   .listBoxContainer {

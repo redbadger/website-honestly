@@ -1,6 +1,5 @@
 import React from 'react';
 import classnames from 'classnames/bind';
-import YouTube from 'react-youtube';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
@@ -148,7 +147,13 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           <span className={styles.content__redTitle}>{'Creating lasting change.'}</span>
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
-        <div className={cx(styles.content__float, styles['content__float--left'])}>
+        <div
+          className={cx(
+            styles.content__float,
+            styles['content__float--left'],
+            styles['content__float--content-hack'],
+          )}
+        >
           <img
             src={tabletCheckoutImage}
             className={styles.tabletImage}
@@ -239,14 +244,20 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
           specific items, for example a 78% increase in grocery sales.
         </p>
         <p className={styles.content__paragraph}>
-          Further to the this, fortnumandmason.com won a BIMA Award for ‘Best Web Design & Build’
-          and an eCommerce Award for ‘Best eCommerce New Design or Re-Design (Under 1 Year)’ in
-          2015. The project was also nominated for the UK Digital Experience Awards in the Retail
-          sector award and as ‘Best Use of Website to Build Your Brand’. It was also nominated at
-          the Retail Week Tech and Ecommerce Awards in the ‘Best Customer Experience’ category.
+          Further to this, fortnumandmason.com won a BIMA Award for ‘Best Web Design & Build’ and an
+          eCommerce Award for ‘Best eCommerce New Design or Re-Design (Under 1 Year)’ in 2015. The
+          project was also nominated for the UK Digital Experience Awards in the Retail sector award
+          and as ‘Best Use of Website to Build Your Brand’. It was also nominated at the Retail Week
+          Tech and Ecommerce Awards in the ‘Best Customer Experience’ category.
         </p>
         <div className={styles.videoContainer}>
-          <YouTube className={styles.video} videoId="eBE3J9XZO20" />
+          <span>
+            <iframe
+              className={styles.video}
+              src="https://www.youtube.com/embed/eBE3J9XZO20"
+              allowFullScreen
+            />
+          </span>
         </div>
       </div>
     </div>
