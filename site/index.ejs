@@ -25,6 +25,14 @@
     <link rel="icon" href="/assets-honestly/favicons/favicon-194x194.png" type="image/png" sizes="194x194">
     <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7838134/6842972/css/fonts.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.17/ua-parser.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var uaSniffer = new UAParser();
+        var browser = uaSniffer.getBrowser();
+        if ( browser.name === 'IE' && browser.major < 10 ) {
+            window.location.pathname = '/browser-not-supported';
+        }
+    </script>
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
     <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
