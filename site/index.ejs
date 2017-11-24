@@ -29,8 +29,10 @@
     <script type="text/javascript">
         var uaSniffer = new UAParser();
         var browser = uaSniffer.getBrowser();
-        if ( browser.name === 'IE' && browser.major < 10 ) {
-            window.location.pathname = '/browser-not-supported';
+        if ( window.location.pathname !== '/browser-not-supported/' ) {
+            if ( browser.name === 'IE' && browser.major < 10 ) {
+                window.location.pathname = '/browser-not-supported';
+            }
         }
     </script>
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
