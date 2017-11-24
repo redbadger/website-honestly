@@ -142,17 +142,25 @@ body {
   .bns__headerContainer {
     padding: 2.5em 20px;
   }
+  .bns__headerWraper {
+    width: 83.333%
+  }
   
   .bns__headerContent {
-    max-width: 66%;
+    max-width: 80%;
   }
   
   .bns__browsers {
     padding: 6.25em 20px;
+    width: 80%;
   }
   
   .bns__browsers li div  {
      max-width: 150px;
+  }
+  
+  .bns__footerWraper {
+    width: 83.333%;
   }
   
   .bns__footer {
