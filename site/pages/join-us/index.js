@@ -118,7 +118,7 @@ export default function JoinUs({ jobs }) {
               <ComponentRenderer data={join} />
             </Cell>
             <Cell size={6}>
-              <Video title="Red Badger selfie video" id="p-hchy70q-U" type="youtube" />
+              <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
             </Cell>
           </Grid>
           <HR color="red" />
