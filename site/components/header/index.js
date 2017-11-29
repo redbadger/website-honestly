@@ -27,15 +27,34 @@ const Header = () => {
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul role="listbox" className={styles.mediumScreenNav}>
-          <li>
+          <li className={styles.navItemWithChild}>
             <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
               <span onClick={trackAnalytics('What we do')}>What we do</span>
             </Link>
+            <ul className={styles.mediumScreenChildList}>
+              <li className="navigation__child-item">
+                <Link to="technology" activeCssClass={styles.activeNavLink}>
+                  <span onClick={trackAnalytics('Technology')}>Technology</span>
+                </Link>
+              </li>
+              <li className="navigation__child-item">
+                <Link to="ourWorkPage" activeCssClass={styles.activeNavLink}>
+                  <span onClick={trackAnalytics('Our Work')}>Our Work</span>
+                </Link>
+              </li>
+            </ul>
           </li>
-          <li>
+          <li className={styles.navItemWithChild}>
             <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
               <span onClick={trackAnalytics('About us')}>About us</span>
             </Link>
+            <ul className={styles.mediumScreenChildList}>
+              <li className="navigation__child-item">
+                <Link to="badgers" activeCssClass={styles.activeNavLink}>
+                  <span onClick={trackAnalytics('Our Team')}>Our Team</span>
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="/blog">
@@ -52,9 +71,9 @@ const Header = () => {
               <span onClick={trackAnalytics('Jobs')}>Jobs</span>
             </Link>
           </li>
+          <section className={styles.navigationSubsection} />
         </ul>
       </nav>
-
       <SmallScreenNav />
     </header>
   );

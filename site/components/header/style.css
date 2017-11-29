@@ -48,6 +48,43 @@
   border-bottom: 2px solid badgerRedOnWhite;
 }
 
+.mediumScreenChildList {
+  position: absolute;
+  padding: calc(2em + 15px) 0;
+  background-color: transparent;
+  display: none;
+  z-index: 20;
+}
+
+.mediumScreenChildList li a span{
+  color: badgerWhite;
+}
+
+.mediumScreenChildList li:first-of-type {
+  margin-left: 0;
+}
+
+.mediumScreenNav li:hover > .mediumScreenChildList {
+  display: flex;
+}
+
+.navigationSubsection {
+  width: 100%;
+  background-color: badgerBlack;
+  padding: 1.6em 0;
+  position: absolute;
+  margin-top: calc(3em + 15px);
+  z-index: 10;
+  display: none;
+  right: 0;
+  left:0;
+}
+
+.navItemWithChild:hover ~ .navigationSubsection {
+  display: block;
+}
+
+
 .overlay {
   position: fixed;
   top: 0;
@@ -203,6 +240,7 @@
   .logo {
     width: 178px;
     height: 44px;
+    position: absolute;
   }
 
   .logo svg {
