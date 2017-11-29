@@ -6,6 +6,7 @@
   display: flex;
   padding: 15px 20px;
   background-color: badgerWhite;
+  position: relative;
 }
 
 .mediumScreenNavContainer {
@@ -116,7 +117,7 @@
   outline: none;
 }
 
-.smallScreenNav li a span:hover {
+.smallScreenNav li:hover > a span {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
@@ -167,6 +168,29 @@
   display: block;
 }
 
+/*new navigation*/
+
+.childList {
+  margin-left: 2em;
+  display: none;
+}
+
+.parentItemLabel::before {
+  content: '\025B8';
+  color: white;
+  position: absolute;
+  right: 200px;
+  padding: 0 1em;
+}
+
+.parentItemInput:checked ~ .childList {
+  display: block;
+}
+
+.parentItemInput:checked + .parentItemLabel::before {
+  content: '\025BE';
+}
+
 @media mediumScreen {
   .triggerContainer {
     display: none;
@@ -180,7 +204,7 @@
     width: 178px;
     height: 44px;
   }
-  
+
   .logo svg {
     height: 44px;
   }

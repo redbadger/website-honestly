@@ -100,11 +100,39 @@ export default class SmallScreenNav extends React.Component {
                   <Link tabIndex={navTabIndex} to="aboutUsPage" navigating={this.closeMenu}>
                     <span onClick={trackAnalytics('About us')}>About us</span>
                   </Link>
+                  <input type="checkbox" className={styles.parentItemInput} id="about-us" hidden />
+                  <label htmlFor="about-us" className={styles.parentItemLabel} />
+                  <ul className={styles.childList}>
+                    <li>
+                      <Link tabIndex={navTabIndex} to="badgers" navigating={this.closeMenu}>
+                        <span onClick={trackAnalytics('Our Team')}>Our Team</span>
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link tabIndex={navTabIndex} to="whatWeDoPage" navigating={this.closeMenu}>
                     <span onClick={trackAnalytics('What we do')}>What we do</span>
                   </Link>
+                  <input
+                    type="checkbox"
+                    className={styles.parentItemInput}
+                    id="what-we-do"
+                    hidden
+                  />
+                  <label htmlFor="what-we-do" className={styles.parentItemLabel} />
+                  <ul className={styles.childList}>
+                    <li>
+                      <Link tabIndex={navTabIndex} to="technology" navigating={this.closeMenu}>
+                        <span onClick={trackAnalytics('Technology')}>Technology</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link tabIndex={navTabIndex} to="ourWorkPage" navigating={this.closeMenu}>
+                        <span onClick={trackAnalytics('Our Work')}>Our Work</span>
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a tabIndex={navTabIndex} href="/blog">
