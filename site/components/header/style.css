@@ -44,7 +44,10 @@
   color: badgerBlack;
 }
 
-.mediumScreenNav a:hover, .smallScreenNavContainer a, .activeNavLink {
+.mediumScreenNav > li:hover > a,
+.smallScreenNavContainer a,
+.activeNavLink,
+.mediumScreenChildList li:hover a {
   border-bottom: 2px solid badgerRedOnWhite;
 }
 
