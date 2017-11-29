@@ -53,7 +53,7 @@
 
 .mediumScreenChildList {
   position: absolute;
-  padding: calc(2em + 15px) 0;
+  padding: 3.3em 0 0;
   background-color: transparent;
   display: none;
   z-index: 20;
@@ -232,6 +232,10 @@
 }
 
 @media mediumScreen {
+  .header {
+    margin-bottom: 3.3em;
+  }
+  
   .triggerContainer {
     display: none;
   }
