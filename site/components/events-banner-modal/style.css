@@ -1,0 +1,72 @@
+/* Refactored from Website Next
+*  TODO: Stop using variables/breakpoints
+*/
+
+@value desktop from "../variables/breakpoints.css";
+@value desktopM from "../variables/breakpoints.css";
+@value mobile from "../variables/breakpoints.css";
+@value tablet-only from "../variables/breakpoints.css";
+
+.bannerContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bannerContainer a {
+  outline: none;
+}
+
+.eventsDesktopBanner {
+  width: 920px;
+}
+
+.eventsTabletBanner {
+  width: 768px;
+}
+
+.eventsMobileBanner {
+  width: 320px;
+}
+
+.iframeContainer {
+  width: 100%;
+  position: relative;
+}
+
+.iframeContainer iframe {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 120px);
+}
+
+.iframeContainer button {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  border:none;
+  outline: none;
+  border-bottom: 2px solid red;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  line-height: 1;
+  background-color: transparent;
+}
+
+@media mobile {
+  .eventsDesktopBanner, .eventsTabletBanner {
+    display: none;
+  }
+}
+
+@media tablet-only {
+  .eventsMobileBanner, .eventsDesktopBanner {
+    display: none;
+  }
+}
+
+@media desktop {
+  .eventsMobileBanner, .eventsTabletBanner {
+    display: none;
+  }
+}
