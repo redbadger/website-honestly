@@ -25,6 +25,9 @@ const customStyles = {
     top: '50%',
     width: '80%',
     paddingTop: '40px',
+    borderRadius: '0',
+    border: '2px solid rgb(204, 204, 204)',
+    backgroundColor: 'rgb(248,248,248)',
   },
 };
 
@@ -72,7 +75,9 @@ export default class EventsBannerModal extends React.Component {
               src="https://register.gotowebinar.com/register/7636347235394678530?source=rb+event+banner"
               frameBorder={0}
             />
-            <button onClick={this.closeModal}>close</button>
+            <button onClick={this.closeModal} className={styles.iframeContainerCloseButton}>
+              Close
+            </button>
           </section>
         </Modal>
       </div>

@@ -6,6 +6,7 @@
 @value desktopM from "../variables/breakpoints.css";
 @value mobile from "../variables/breakpoints.css";
 @value tablet-only from "../variables/breakpoints.css";
+@value boldSansSerif from "../../css/typography/_fonts.css";
 
 .bannerContainer {
   text-align: center;
@@ -39,7 +40,7 @@
   height: calc(100vh - 120px);
 }
 
-.iframeContainer button {
+.iframeContainerCloseButton {
   position: absolute;
   top: -30px;
   right: 0;
@@ -51,6 +52,7 @@
   display: inline;
   line-height: 1;
   background-color: transparent;
+  composes: boldSansSerif;
 }
 
 @media mobile {
