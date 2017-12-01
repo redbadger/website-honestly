@@ -82,7 +82,15 @@
   }
 
   .iframeContainer {
-    overflow-y: scroll;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: calc(100vh - 120px);
+  }
+
+  .iframeContainer iframe  {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: auto
   }
 }
 

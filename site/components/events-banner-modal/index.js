@@ -54,16 +54,13 @@ export default class EventsBannerModal extends React.Component {
           onRequestClose={this.closeModal}
           contentLabel="Webinar registration form"
           ariaHideApp={false}
-          className={{
-            base: styles.modal,
-            afterOpen: styles.modalAfterOpen,
-            beforeClose: styles.modalBeforeClose,
-          }}
+          className={styles.modal}
         >
           <section className={styles.iframeContainer}>
             <iframe
               src="https://register.gotowebinar.com/register/7636347235394678530?source=rb+event+banner"
               frameBorder={0}
+              scrolling="yes"
             />
             <button onClick={this.closeModal} className={styles.iframeContainerCloseButton}>
               Close
