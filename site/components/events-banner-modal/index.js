@@ -15,22 +15,6 @@ const trackAnalytics = title => () =>
 
 const bannerAltText = 'Are you bold with technology? Join our webinar';
 
-const customStyles = {
-  content: {
-    right: 'auto',
-    bottom: 'auto',
-    overflow: 'unset',
-    transform: 'translate(-50%, -50%)',
-    left: '50%',
-    top: '50%',
-    width: '80%',
-    paddingTop: '40px',
-    borderRadius: '0',
-    border: '2px solid rgb(204, 204, 204)',
-    backgroundColor: 'rgb(248,248,248)',
-  },
-};
-
 export default class EventsBannerModal extends React.Component {
   constructor() {
     super();
@@ -68,9 +52,13 @@ export default class EventsBannerModal extends React.Component {
         <Modal
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
-          style={customStyles}
           contentLabel="Webinar registration form"
           ariaHideApp={false}
+          className={{
+            base: styles.modal,
+            afterOpen: styles.modalAfterOpen,
+            beforeClose: styles.modalBeforeClose,
+          }}
         >
           <section className={styles.iframeContainer}>
             <iframe

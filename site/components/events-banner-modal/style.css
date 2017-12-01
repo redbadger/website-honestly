@@ -29,6 +29,22 @@
   width: 320px;
 }
 
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 2px solid rgb(204, 204, 204);
+  background: rgb(248, 248, 248);
+  border-radius: 0px;
+  outline: none;
+  padding: 40px 20px 20px;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
 .iframeContainer {
   width: 100%;
   position: relative;
@@ -58,6 +74,15 @@
 @media mobile {
   .eventsDesktopBanner, .eventsTabletBanner {
     display: none;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 40px 10px 10px;
+  }
+
+  .iframeContainer {
+    overflow-y: scroll;
   }
 }
 
