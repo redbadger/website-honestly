@@ -46,10 +46,12 @@ export default class EventsBannerModal extends React.Component {
   openModal() {
     trackAnalytics('Webinar-events page -banner');
     this.setState({ modalIsOpen: true });
+    document.body.style.overflow = 'hidden';
   }
 
   closeModal() {
     this.setState({ modalIsOpen: false });
+    document.body.style.overflow = 'scroll';
   }
 
   render() {
