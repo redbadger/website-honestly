@@ -40,7 +40,6 @@
   background: rgb(248, 248, 248);
   border-radius: 0px;
   outline: none;
-  padding: 40px 20px 20px;
   transform: translate(-50%, -50%);
   width: 80%;
 }
@@ -48,6 +47,7 @@
 .iframeContainer {
   width: 100%;
   position: relative;
+  padding: 40px 20px 20px;
 }
 
 .iframeContainer iframe {
@@ -58,8 +58,8 @@
 
 .iframeContainerCloseButton {
   position: absolute;
-  top: -30px;
-  right: 0;
+  top: 20px;
+  right: 20px;
   border:none;
   outline: none;
   border-bottom: 2px solid red;
@@ -78,19 +78,25 @@
 
   .modal {
     width: 90%;
-    padding: 40px 10px 10px;
   }
 
   .iframeContainer {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-    height: calc(100vh - 120px);
+    padding: 40px 10px 10px;
+    /*height: calc(100vh - 120px);*/
   }
 
   .iframeContainer iframe  {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-    height: auto
+    /*height: auto*/
+  }
+
+  .iframeContainerCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }
 
