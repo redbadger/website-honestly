@@ -29,7 +29,6 @@
   width: 320px;
 }
 
-
 .modal {
   position: absolute;
   top: 50%;
@@ -84,13 +83,12 @@
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     padding: 40px 10px 10px;
-    /*height: calc(100vh - 120px);*/
+    height: 85vh;
   }
 
   .iframeContainer iframe  {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
-    /*height: auto*/
   }
 
   .iframeContainerCloseButton {
