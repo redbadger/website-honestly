@@ -95,12 +95,9 @@
   bottom: 0;
   left: 100%;
   z-index: zindexOverlay;
-
   composes: serif from "../../css/typography/_fonts.css";
-  composes: fontM2 from "../../css/typography/_fonts.css";
   composes: fontM from "../../css/typography/_fonts.css";
   font-weight: bold;
-
   transition: left 0.3s;
 }
 
@@ -211,31 +208,19 @@
 /*new navigation*/
 
 .childList {
-  margin-left: 2em;
-  display: none;
+  margin-left: 1em;
 }
 
-.parentItemLabel::before {
-  content: '\025B8';
-  color: white;
-  position: absolute;
-  right: 200px;
-  padding: 0 1em;
-}
-
-.parentItemInput:checked ~ .childList {
-  display: block;
-}
-
-.parentItemInput:checked + .parentItemLabel::before {
-  content: '\025BE';
+.childList {
+  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: fontM2 from "../../css/typography/_fonts.css";
 }
 
 @media mediumScreen {
   .header {
     margin-bottom: 3.3em;
   }
-  
+
   .triggerContainer {
     display: none;
   }
