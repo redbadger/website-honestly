@@ -8,6 +8,7 @@ type RouteDefinition = {|
   defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
+  parentKey?: string,
 |};
 
 export const routeDefinitions: Array<RouteDefinition> = [
@@ -30,6 +31,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Our work',
     key: 'ourWorkPage',
     route: 'our-work',
+    parentKey: 'whatWeDoPage',
   },
   {
     title: 'About us',
@@ -81,6 +83,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     defaults: { category: 'everyone', page: 1 },
     stateToProps: stateToBadgerProps,
     gen: genBadgersParams,
+    parentKey: 'aboutUsPage',
   },
   {
     title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
@@ -163,6 +166,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
       triedAndTestedBlogPosts,
       growingTrendsBlogPosts,
     }),
+    parentKey: 'whatWeDoPage',
   },
   {
     title: 'Not found',
