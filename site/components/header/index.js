@@ -82,7 +82,6 @@ const Header = () => {
               <span onClick={trackAnalytics('Jobs')}>Jobs</span>
             </Link>
           </li>
-          <div className={styles.navHiddenOverlay} />
         </ul>
       </nav>
       <SmallScreenNav />

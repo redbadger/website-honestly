@@ -51,12 +51,45 @@
   border-bottom: 2px solid badgerRedOnWhite;
 }
 
+.mediumScreenChildList li {
+  min-height: 1.56em;
+}
+
+.mediumScreenChildList li a {
+  /*
+    ProximaNova-Light glyph doesn't have the same height of ProximaNova-Bold.
+    We need to add padding, so the border doesn't touch the letters.
+  */
+  padding-bottom: .1em;
+}
+
 .mediumScreenChildList {
   position: absolute;
   padding: 1em 0 0;
   background-color: transparent;
   display: none;
+  background: badgerWhite;
   composes: sansSerif from "../../css/typography/_fonts.css";
+}
+
+.mediumScreenChildList::after,
+.mediumScreenChildList:before {
+  content: '';
+  display: block;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: badgerWhite;
+}
+
+.mediumScreenChildList::after {
+  left: 100%;
+  right: -100vw;
+}
+
+.mediumScreenChildList::before {
+  left: -100vw;
+  right: 100%;
 }
 
 .mediumScreenChildList li:first-of-type {
@@ -66,20 +99,6 @@
 .mediumScreenNav li a.activeNavParent + .mediumScreenChildList,
 .mediumScreenNav li:hover > .mediumScreenChildList {
   display: flex;
-}
-
-.navHiddenOverlay {
-  position: absolute;
-  background-color: badgerWhite;
-  top: 100%;
-  right: 0;
-  left: 0;
-  bottom: -100%;
-  display: none;
-}
-
-.navItemWithChild:hover ~ .navHiddenOverlay {
-  display: block;
 }
 
 .navItemWithChild:hover > .mediumScreenChildList {
@@ -227,6 +246,8 @@
   .logo {
     width: 178px;
     height: 44px;
+    position: relative;
+    z-index: 20;
   }
 
   .logo svg {
