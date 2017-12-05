@@ -6,7 +6,6 @@
   display: flex;
   padding: 15px 20px;
   background-color: badgerWhite;
-  position: relative;
 }
 
 .mediumScreenNavContainer {
@@ -53,14 +52,10 @@
 
 .mediumScreenChildList {
   position: absolute;
-  padding: 3.3em 0 0;
+  padding: 1em 0 0;
   background-color: transparent;
   display: none;
-  z-index: 20;
-}
-
-.mediumScreenChildList li a span{
-  color: badgerWhite;
+  composes: sansSerif from "../../css/typography/_fonts.css";
 }
 
 .mediumScreenChildList li:first-of-type {
@@ -70,23 +65,6 @@
 .mediumScreenNav li:hover > .mediumScreenChildList {
   display: flex;
 }
-
-.navigationSubsection {
-  width: 100%;
-  background-color: badgerBlack;
-  padding: 1.6em 0;
-  position: absolute;
-  margin-top: calc(3em + 15px);
-  z-index: 10;
-  display: none;
-  right: 0;
-  left:0;
-}
-
-.navItemWithChild:hover ~ .navigationSubsection {
-  display: block;
-}
-
 
 .overlay {
   position: fixed;
@@ -215,7 +193,7 @@
 
 @media mediumScreen {
   .header {
-    margin-bottom: 3.3em;
+    margin-bottom: 2.5em;
   }
 
   .triggerContainer {
@@ -229,7 +207,6 @@
   .logo {
     width: 178px;
     height: 44px;
-    position: absolute;
   }
 
   .logo svg {

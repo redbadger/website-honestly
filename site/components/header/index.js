@@ -71,7 +71,6 @@ const Header = () => {
               <span onClick={trackAnalytics('Jobs')}>Jobs</span>
             </Link>
           </li>
-          <section className={styles.navigationSubsection} />
         </ul>
       </nav>
       <SmallScreenNav />
