@@ -4,12 +4,15 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import ReactGA from 'react-ga';
+import classnames from 'classnames/bind';
 
 import Link from '../link';
 import SmallScreenNav from './small-screen-nav';
 
 import styles from './style.css';
 import logo from './logo.svg';
+
+const cx = classnames.bind(styles);
 
 const trackAnalytics = title => () =>
   ReactGA.event({
@@ -31,7 +34,7 @@ const Header = () => {
             <Link
               to="whatWeDoPage"
               activeCssClass={styles.activeNavLink}
-              childActiveCssClass={styles.activeNavLink}
+              childActiveCssClass={cx(styles.activeNavParent, styles.activeNavLink)}
             >
               <span onClick={trackAnalytics('What we do')}>What we do</span>
             </Link>
@@ -52,7 +55,7 @@ const Header = () => {
             <Link
               to="aboutUsPage"
               activeCssClass={styles.activeNavLink}
-              childActiveCssClass={styles.activeNavLink}
+              childActiveCssClass={cx(styles.activeNavParent, styles.activeNavLink)}
             >
               <span onClick={trackAnalytics('About us')}>About us</span>
             </Link>
@@ -79,6 +82,7 @@ const Header = () => {
               <span onClick={trackAnalytics('Jobs')}>Jobs</span>
             </Link>
           </li>
+          <div className={styles.navHiddenOverlay} />
         </ul>
       </nav>
       <SmallScreenNav />

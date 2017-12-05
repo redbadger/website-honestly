@@ -12,6 +12,7 @@
   display: none;
   width: 100%;
   justify-content: flex-end;
+  position: relative;
 }
 
 .logo {
@@ -62,8 +63,27 @@
   margin-left: 0;
 }
 
+.mediumScreenNav li a.activeNavParent + .mediumScreenChildList,
 .mediumScreenNav li:hover > .mediumScreenChildList {
   display: flex;
+}
+
+.navHiddenOverlay {
+  position: absolute;
+  background-color: badgerWhite;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: -100%;
+  display: none;
+}
+
+.navItemWithChild:hover ~ .navHiddenOverlay {
+  display: block;
+}
+
+.navItemWithChild:hover > .mediumScreenChildList {
+  z-index: 10;
 }
 
 .overlay {
