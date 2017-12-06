@@ -36,12 +36,12 @@ const Header = () => {
               <span onClick={trackAnalytics('What we do')}>What we do</span>
             </Link>
             <ul className={styles.mediumScreenChildList}>
-              <li className="navigation__child-item">
+              <li>
                 <Link to="technology" activeCssClass={styles.activeNavLink}>
                   <span onClick={trackAnalytics('Technology')}>Technology</span>
                 </Link>
               </li>
-              <li className="navigation__child-item">
+              <li>
                 <Link to="ourWorkPage" activeCssClass={styles.activeNavLink}>
                   <span onClick={trackAnalytics('Our work')}>Our work</span>
                 </Link>
@@ -57,7 +57,7 @@ const Header = () => {
               <span onClick={trackAnalytics('About us')}>About us</span>
             </Link>
             <ul className={styles.mediumScreenChildList}>
-              <li className="navigation__child-item">
+              <li>
                 <Link to="badgers" activeCssClass={styles.activeNavLink}>
                   <span onClick={trackAnalytics('Our team')}>Our team</span>
                 </Link>
