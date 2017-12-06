@@ -36,7 +36,11 @@
 
 .mediumScreenNav li {
   display: inline-block;
-  margin-left: 41px;
+  margin-left: 2.5em;
+}
+
+.mediumScreenNav .mediumScreenChildList li {
+  margin-left: 1.5em;
 }
 
 .mediumScreenNav a {
