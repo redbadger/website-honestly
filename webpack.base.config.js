@@ -42,7 +42,7 @@ const baseConfig = {
         ],
       },
       {
-        test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/,
+        test: /\.(png|jpe?g|eot|ttf|woff|woff2|gif)$/,
         exclude: [path.resolve(__dirname, 'dist'), path.resolve(__dirname, 'node_modules')],
         use: [
           {
