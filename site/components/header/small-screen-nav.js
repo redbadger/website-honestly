@@ -108,7 +108,7 @@ export default class SmallScreenNav extends React.Component {
                     </li>
                     <li>
                       <Link tabIndex={navTabIndex} to="ourWorkPage" navigating={this.closeMenu}>
-                        <span onClick={trackAnalytics('Our Work')}>Our Work</span>
+                        <span onClick={trackAnalytics('Our work')}>Our work</span>
                       </Link>
                     </li>
                   </ul>
@@ -120,7 +120,7 @@ export default class SmallScreenNav extends React.Component {
                   <ul className={styles.childList}>
                     <li>
                       <Link tabIndex={navTabIndex} to="badgers" navigating={this.closeMenu}>
-                        <span onClick={trackAnalytics('Our Team')}>Our Team</span>
+                        <span onClick={trackAnalytics('Our team')}>Our team</span>
                       </Link>
                     </li>
                   </ul>

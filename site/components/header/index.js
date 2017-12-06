@@ -46,7 +46,7 @@ const Header = () => {
               </li>
               <li className="navigation__child-item">
                 <Link to="ourWorkPage" activeCssClass={styles.activeNavLink}>
-                  <span onClick={trackAnalytics('Our Work')}>Our Work</span>
+                  <span onClick={trackAnalytics('Our work')}>Our work</span>
                 </Link>
               </li>
             </ul>
@@ -62,7 +62,7 @@ const Header = () => {
             <ul className={styles.mediumScreenChildList}>
               <li className="navigation__child-item">
                 <Link to="badgers" activeCssClass={styles.activeNavLink}>
-                  <span onClick={trackAnalytics('Our Team')}>Our Team</span>
+                  <span onClick={trackAnalytics('Our team')}>Our team</span>
                 </Link>
               </li>
             </ul>
