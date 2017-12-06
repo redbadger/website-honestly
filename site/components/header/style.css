@@ -55,10 +55,6 @@
   border-bottom: 2px solid badgerRedOnWhite;
 }
 
-.mediumScreenChildList li {
-  min-height: 1.56em;
-}
-
 .mediumScreenChildList li a {
   /*
     ProximaNova-Light glyph doesn't have the same height of ProximaNova-Bold.
@@ -69,7 +65,7 @@
 
 .mediumScreenChildList {
   position: absolute;
-  padding: 1em 0 0;
+  padding: 1em 0;
   background-color: transparent;
   display: none;
   background: badgerWhite;
