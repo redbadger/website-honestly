@@ -55,7 +55,8 @@
   border-bottom: 2px solid badgerRedOnWhite;
 }
 
-.mediumScreenChildList li a {
+.mediumScreenChildList li a,
+.childList li a span {
   /*
     ProximaNova-Light glyph doesn't have the same height of ProximaNova-Bold.
     We need to add padding, so the border doesn't touch the letters.
