@@ -100,7 +100,7 @@
   margin-left: 0;
 }
 
-.mediumScreenNav li a.activeNavParent + .mediumScreenChildList,
+.mediumScreenNav li a.activeNavLink + .mediumScreenChildList,
 .mediumScreenNav li:hover > .mediumScreenChildList {
   display: flex;
 }
