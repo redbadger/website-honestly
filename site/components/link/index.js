@@ -5,7 +5,9 @@ import { NavigationLink } from 'navigation-react';
 
 export default class Link extends React.Component {
   static contextTypes = {
-    stateNavigator: () => {},
+    // The stateNavigator is provided by navigation-react and provides
+    // access to the current route.
+    stateNavigator: PropTypes.instanceOf(StateNavigator),
   };
 
   static propTypes = {
