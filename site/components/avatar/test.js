@@ -7,7 +7,7 @@ import Avatar from '.';
 describe('<Avatar />', () => {
   it('renders image child', () => {
     const wrapper = shallow(<Avatar image={''} name={'Testa Fiesta'} />);
-    expect(wrapper.contains('<img>'));
+    expect(wrapper.find('img').html()).to.equal('<img src="" alt="Testa Fiesta"/>');
   });
 
   it('sets an img src', () => {
