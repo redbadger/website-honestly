@@ -4,8 +4,11 @@ import ListBox from '../../../../components/list-box';
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 import Social from '../../../../components/social';
+import Picture from '../../../../components/picture';
 
-import header from './images/header.jpg';
+import headerL from './images/header-l.jpg';
+import headerM from './images/header-m.jpg';
+import headerS from './images/header-s.jpg';
 
 import styles from './style.css';
 
@@ -16,7 +19,7 @@ type CaseStudyFMTeaProps = {
 const social = {
   title: 'The proof is in the pudding.',
   description: 'The ongoing digital transformation of a 310-year old retailer',
-  metaImage: header,
+  metaImage: headerL,
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason-tea',
 };
 
@@ -24,15 +27,13 @@ const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
   <div>
     <Social {...social} />
     <div className={styles.header}>
-      <div className={styles.header__container}>
-        <div className={styles.header__imageContainer}>
-          <img
-            src={header}
-            alt="Illustration of a box of Fortnum & Mason tea"
-            className={styles.header__image}
-          />
-        </div>
-      </div>
+      <Picture
+        className={styles.header__image}
+        largeSrc={headerL}
+        mediumSrc={headerM}
+        smallSrc={headerS}
+        alt="A box of Fortnum & Mason tea"
+      />
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
