@@ -1,15 +1,31 @@
 import React from 'react';
-import classnames from 'classnames/bind';
+// import classnames from 'classnames/bind';
+import Card from '../../../../components/card';
+import ListBox from '../../../../components/list-box';
+import WhatToReadNext from '../what-to-read-next';
+import ContactUs from '../../../../slices/contact-us-slice';
+import Social from '../../../../components/social';
 
 import header from './images/header.jpg';
-import teaPost from './images/fortnum_tea_post.jpg';
+// import teaPost from './images/fortnum_tea_post.jpg';
 
 import styles from './style.css';
 
-const cx = classnames.bind(styles);
+// const cx = classnames.bind(styles);
+type CaseStudyFMTeaProps = {
+  contactUsURL: string,
+};
 
-const FMTeaCaseStudy = () => (
+const social = {
+  title: 'The proof is in the pudding.',
+  description: 'The ongoing digital transformation of a 310-year old retailer',
+  // metaImage: headerImage,
+  url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason-tea',
+};
+
+const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
   <div>
+    <Social {...social} />
     <div className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__imageContainer}>
@@ -24,52 +40,39 @@ const FMTeaCaseStudy = () => (
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
         <h1 className={styles.content__mainTitle}>
-          Implementing Fortnum & Mason’s inaugural digital-first product, which aims to be
-          everyone’s cup of tea
+          The ongoing digital transformation of a 310-year old retailer
         </h1>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>{"Let's make things better."}</span>
-          Pushing the boundaries online
+          Make everyday special
         </h2>
         <p className={styles.content__paragraph}>
-          From creating the Royal Blend for King Edward VII in 1902, to a dedicated department
-          in-store, Fortnum & Mason is famous across the globe for its dedication to tea and its
-          high-quality selection. To date, the primary focus of this experience has been focused in
-          store.
+          Since 2014, we’ve been working with Fortnum & Mason to drive business growth through
+          digital transformation via an ongoing programme of tech initiatives across the website
+          that helps make everyday special for their customers across all touch points. You can read
+          about our award-winning work on the website here.
         </p>
-        <p className={cx('content__paragraph', 'content__paragraph__left')}>
-          Alongside tea, Fortnum’s is best-known for its hampers, which have been introduced to the
-          website with great success. Although the option to buy tea blends online has been
-          available since the website launched, the gifting and curated selection didn’t match the
-          online experience of purchasing and sending hampers. Fortnum’s wished to share the
-          impressive breadth of their tea offering with online customers in a new, innovative way.
-        </p>
-        <img
-          src={teaPost}
-          className={styles.fullWidthImage}
-          alt="Illustration of the Fortnum and Mason tea post"
-        />
-        <p className={styles.content__paragraph}>And so, The Tea Post was born.</p>
         <p className={styles.content__paragraph}>
-          Available for three, six or 12 months at a time, The Tea Post highlights the very best of
-          Fortnum’s tea selection. Two expertly-selected, seasonal teas are delivered each month and
-          are beautifully packaged with information about each product.
+          Since then, the focus has been on increasing the awareness and accessibility of a wide
+          array of Fortnum’s products; and the need to improve one particular category, tea.
+        </p>
+        <p className={styles.content__paragraph}>
+          Fortnum & Mason is famous across the globe for its dedication to supplying the finest
+          quality selection of tea however the online experience needed more visibility to drive
+          interest and revenue, as well as share the impressive breadth with online customers in a
+          new, innovative way. In essence, we needed to bring the gifting and curatorial elements
+          that exist with hampers, to the tea consumer journey.
         </p>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>
             {'Do the right thing. Do the thing right.'}
           </span>
-          Implementing a web-first approach in a bricks and mortar world
+          Giving tea a digital twist and improving online experience
         </h2>
         <p className={styles.content__paragraph}>
-          Although Fortnum & Mason’s online business has doubled in the past three years, growing by
-          close to a quarter since the previous year, The Tea Post was Fortnum & Mason’s inaugural
-          digital-first product. This means that since the website launched in the late 90s,
-          Fortnum’s had never, ever launched a product on the website first; products always
-          launched in store. As such, everything from the marketing to the packaging to the
-          execution had to be considered with a completely different process, to ensure that this
-          new type of product was easy to access and fundamentally interesting for the Fortnum’s
-          customer.
+          The solution was the Tea Experience - a design to help improve the browsing experience and
+          enable customers find products faster and with ease to enjoy the wide array of teas on
+          offer outside of the store’s walls.
         </p>
         <div className={styles.contactBox}>
           <h2 className={styles.contactBox__heading}>Project in mind?</h2>
@@ -78,38 +81,68 @@ const FMTeaCaseStudy = () => (
           </a>
         </div>
         <p className={styles.content__paragraph}>
-          A smooth and simplistic experience was needed for prospective new Tea Post customers. By
-          taking a web-first approach and providing a rich content experience, we were able to
-          ensure that web customers would get the same renowned, first-class experience that
-          customers in store receive.
+          We implemented advanced search capabilities so that the Tea Experience could be a fast,
+          intuitive online shopping platform that interacted with Fortnum’s online store in a slick,
+          interactive process.
         </p>
         <p className={styles.content__paragraph}>
-          We began the content-rich experience by adding moving images, which have been used to
-          wonderful effect on the Tea Post landing page. As the page develops further, we will be
-          implementing social media integrations, allowing people to tie their experience directly
-          with the brand.
+          In order to make this a reality, we integrated Fortnum’s online store with Elasticsearch,
+          a search engine that allows structured, unstructured, geo and metric search structures,
+          which deliver a quicker and smarter customer browsing experience. Whatever the customer
+          query or search intention, the intelligent platform now allows customers to get a genuine
+          answer to their questions, just as they would in store. On top of this, enhancements
+          including intuitive faceted filtering has improved customer experience further and helped
+          to drive conversation rates upwards.
         </p>
         <p className={styles.content__paragraph}>
-          By choosing a subscription method of purchase in the existing storefront, we were able to
-          use a lot of the existing functionality of Spree, the ecommerce and platform solution,
-          whilst avoiding some of the constraints that the Fortnum & Mason enterprise resource
-          planning (ERP) system had.
+          Alongside implementing the likes of the Tea Experience, we ensure the smooth running of
+          Fortnum’s website every day and the work has resulted in the website having its biggest
+          sales day, week and month in the last quarter of 2016.
+        </p>
+        <p className={styles.content__paragraph}>
+          The team deploy up to five releases per day, getting new features and enhancements in
+          front of customers quickly and enabling Fortnum &amp; Mason to realise revenue increases
+          instantly.
         </p>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>{'Creating lasting change.'}</span>
-          Helping to increase cross-channel revenues
+          Learning fast and scaling excellence
         </h2>
         <p className={styles.content__paragraph}>
-          In the post-Christmas period, we will enabling store staff to use content management
-          system, Ahoy! [link to case study], to take Tea Post orders in store and over the phone.
+          The results of all of this mean that with less time waiting and more time browsing, the
+          Fortnum’s Tea Experience has delivered an increase in converted sales and web traffic as
+          well as a huge decrease in server times from 3 to 0.6 seconds.
         </p>
-        <p className={styles.content__paragraph}>
-          The use of this technology, built by us, will allow Fortnum & Mason to increase their
-          cross-channel revenues and develop the connection between web and store even further; and
-          make Fortnum’s everyone’s cup of tea.
-        </p>
+        <Card className={styles.listBoxContainer}>
+          <ListBox
+            title="Since launch in March 2017, the Tea Experience has delivered"
+            className={styles.listBox}
+            items={[
+              {
+                label:
+                  'Increase in new customers and 33% increase in existing customers vs last year (LY) ',
+                value: '+11%',
+              },
+              {
+                label: 'Increase in conversion rate',
+                value: '+8%',
+              },
+              {
+                label: 'Increase in average order value (AOV)',
+                value: '+39%',
+              },
+              {
+                label: 'Improvement in average page load times',
+                value: '+21%',
+              },
+            ]}
+            itemClassName={styles.listBox__item}
+          />
+        </Card>
       </div>
     </div>
+    <WhatToReadNext currentPage="fMTeaCaseStudy" />
+    <ContactUs postURL={contactUsURL} />
   </div>
 );
 
