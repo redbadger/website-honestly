@@ -1,5 +1,4 @@
 import React from 'react';
-// import classnames from 'classnames/bind';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import WhatToReadNext from '../what-to-read-next';
@@ -7,11 +6,9 @@ import ContactUs from '../../../../slices/contact-us-slice';
 import Social from '../../../../components/social';
 
 import header from './images/header.jpg';
-// import teaPost from './images/fortnum_tea_post.jpg';
 
 import styles from './style.css';
 
-// const cx = classnames.bind(styles);
 type CaseStudyFMTeaProps = {
   contactUsURL: string,
 };
@@ -19,7 +16,7 @@ type CaseStudyFMTeaProps = {
 const social = {
   title: 'The proof is in the pudding.',
   description: 'The ongoing digital transformation of a 310-year old retailer',
-  // metaImage: headerImage,
+  metaImage: header,
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason-tea',
 };
 

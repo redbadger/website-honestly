@@ -74,7 +74,7 @@
 }
 
 .contactBox__heading {
-  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: fontM2 from '../../../../css/typography/_fonts.css';
   composes: serif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
 }
@@ -201,6 +201,10 @@
     margin-top: -30px;
   }
 
+  .contactBox__heading {
+    font-size: 1.5rem;
+  }
+
   .fullWidthImage {
     width: 28%;
     display: inline-block;
@@ -211,6 +215,16 @@
   .header__imageContainer {
     height: 470px;
     background-color: #ACE3E6;
+  }
+
+  .listBoxContainer {
+    padding: 2.5em 3.125em;
+    max-width: 790px;
+    margin: 0 auto 0 20%;
+  }
+
+  .listBoxContainer ul li div:first-of-type {
+    max-width: 500px;
   }
 
 }
