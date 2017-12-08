@@ -58,6 +58,13 @@ functions:
           path: mailing-list
           method: patch
           cors: true
+  registerForWebinar:
+    handler: index.registerForWebinar
+    events:
+      - http:
+          path: webinar-registration
+          method: post
+          cors: true
 
 
 resources:
