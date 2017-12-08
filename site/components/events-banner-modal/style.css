@@ -1,0 +1,111 @@
+/* Refactored from Website Next
+*  TODO: Stop using variables/breakpoints
+*/
+
+@value desktop from "../variables/breakpoints.css";
+@value desktopM from "../variables/breakpoints.css";
+@value mobile from "../variables/breakpoints.css";
+@value tablet-only from "../variables/breakpoints.css";
+@value boldSansSerif from "../../css/typography/_fonts.css";
+
+.bannerContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bannerContainer a {
+  outline: none;
+}
+
+.eventsDesktopBanner {
+  width: 920px;
+}
+
+.eventsTabletBanner {
+  width: 768px;
+}
+
+.eventsMobileBanner {
+  width: 320px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 2px solid rgb(204, 204, 204);
+  background: rgb(248, 248, 248);
+  border-radius: 0px;
+  outline: none;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.iframeContainer {
+  width: 100%;
+  position: relative;
+  padding: 40px 20px 20px;
+}
+
+.iframeContainer iframe {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 120px);
+}
+
+.iframeContainerCloseButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border:none;
+  outline: none;
+  border-bottom: 2px solid red;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  line-height: 1;
+  background-color: transparent;
+  composes: boldSansSerif;
+}
+
+@media mobile {
+  .eventsDesktopBanner, .eventsTabletBanner {
+    display: none;
+  }
+
+  .modal {
+    width: 90%;
+  }
+
+  .iframeContainer {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 40px 10px 10px;
+    height: 85vh;
+  }
+
+  .iframeContainer iframe  {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .iframeContainerCloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media tablet-only {
+  .eventsMobileBanner, .eventsDesktopBanner {
+    display: none;
+  }
+}
+
+@media desktop {
+  .eventsMobileBanner, .eventsTabletBanner {
+    display: none;
+  }
+}
