@@ -67,9 +67,7 @@
 .mediumScreenChildList {
   position: absolute;
   padding: 1em 0;
-  background-color: transparent;
   display: none;
-  background: badgerWhite;
   composes: sansSerif from "../../css/typography/_fonts.css";
   font-size: 15px;
 }
@@ -81,7 +79,6 @@
   top: 0;
   bottom: 0;
   position: absolute;
-  background: badgerWhite;
 
   /*
     Need to move these elements in the background, so they don't crop the
@@ -111,6 +108,12 @@
 
 .navItemWithChild:hover > .mediumScreenChildList {
   z-index: 10;
+  background: badgerWhite;
+}
+
+.navItemWithChild:hover > .mediumScreenChildList::before,
+.navItemWithChild:hover > .mediumScreenChildList::after {
+  background: badgerWhite;
 }
 
 .overlay {
