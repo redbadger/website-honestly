@@ -11,7 +11,7 @@
 }
 
 .heading {
-  composes: fontL from "../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   max-width: contentMaxWidth;
   margin: 0px auto;
