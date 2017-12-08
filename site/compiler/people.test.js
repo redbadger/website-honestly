@@ -40,9 +40,9 @@ describe('site/compiler', () => {
       const filePaths = routes.map(r => r.filePath);
 
       expect(filePaths).to.include.members([
-        'about-us/people/index.html',
-        'about-us/people/category/engineering/index.html',
-        'about-us/people/category/leadership/index.html',
+        'people/index.html',
+        'people/category/engineering/index.html',
+        'people/category/leadership/index.html',
       ]);
     });
 
@@ -82,10 +82,10 @@ describe('site/compiler', () => {
         const filePaths = routes.map(r => r.filePath);
 
         expect(filePaths).to.include.members([
-          'about-us/people/index.html',
-          'about-us/people/category/engineering/index.html',
-          'about-us/people/category/leadership/index.html',
-          'about-us/people/category/pm/index.html',
+          'people/index.html',
+          'people/category/engineering/index.html',
+          'people/category/leadership/index.html',
+          'people/category/pm/index.html',
         ]);
       });
     });
@@ -111,8 +111,8 @@ describe('site/compiler', () => {
         const filePaths = routes.map(r => r.filePath);
 
         expect(filePaths).to.include.members([
-          'about-us/people/index.html',
-          'about-us/people/category/ux-design/index.html',
+          'people/index.html',
+          'people/category/ux-design/index.html',
         ]);
       });
     });
@@ -154,11 +154,11 @@ describe('site/compiler', () => {
         const filePaths = routes.map(r => r.filePath);
 
         expect(filePaths).to.include.members([
-          'about-us/people/index.html',
-          'about-us/people/category/everyone/page-2/index.html',
-          'about-us/people/category/engineering/index.html',
-          'about-us/people/category/engineering/page-2/index.html',
-          'about-us/people/category/leadership/index.html',
+          'people/index.html',
+          'people/category/everyone/page-2/index.html',
+          'people/category/engineering/index.html',
+          'people/category/engineering/page-2/index.html',
+          'people/category/leadership/index.html',
         ]);
       });
     });
@@ -190,9 +190,9 @@ describe('site/compiler', () => {
         const filePaths = routes.map(r => r.filePath);
 
         expect(filePaths).to.include.members([
-          'about-us/people/index.html',
-          'about-us/people/category/everyone/page-2/index.html',
-          'about-us/people/category/engineering/index.html',
+          'people/index.html',
+          'people/category/everyone/page-2/index.html',
+          'people/category/engineering/index.html',
         ]);
       });
     });
@@ -225,8 +225,8 @@ describe('site/compiler', () => {
       const filePaths = routes.map(r => r.filePath);
 
       expect(filePaths).to.include.members([
-        'about-us/people/index.html',
-        'about-us/people/category/engineering/index.html',
+        'people/index.html',
+        'people/category/engineering/index.html',
       ]);
     });
   });
@@ -261,14 +261,14 @@ describe('site/compiler', () => {
       const filePaths = routes.map(r => r.filePath);
 
       expect(filePaths).to.include.members([
-        'about-us/people/index.html',
-        'about-us/people/category/everyone/page-2/index.html',
-        'about-us/people/category/everyone/page-3/index.html',
-        'about-us/people/category/engineering/index.html',
-        'about-us/people/category/engineering/page-2/index.html',
-        'about-us/people/category/engineering/page-3/index.html',
-        'about-us/people/category/leadership/index.html',
-        'about-us/people/category/leadership/page-2/index.html',
+        'people/index.html',
+        'people/category/everyone/page-2/index.html',
+        'people/category/everyone/page-3/index.html',
+        'people/category/engineering/index.html',
+        'people/category/engineering/page-2/index.html',
+        'people/category/engineering/page-3/index.html',
+        'people/category/leadership/index.html',
+        'people/category/leadership/page-2/index.html',
       ]);
     });
   });
@@ -312,14 +312,14 @@ describe('site/compiler', () => {
       const filePaths = routes.map(r => r.filePath);
 
       expect(filePaths).to.include.members([
-        'about-us/people/index.html',
-        'about-us/people/category/everyone/page-2/index.html',
-        'about-us/people/category/everyone/page-3/index.html',
-        'about-us/people/category/engineering/index.html',
-        'about-us/people/category/engineering/page-2/index.html',
-        'about-us/people/category/engineering/page-3/index.html',
-        'about-us/people/category/leadership/index.html',
-        'about-us/people/category/leadership/page-2/index.html',
+        'people/index.html',
+        'people/category/everyone/page-2/index.html',
+        'people/category/everyone/page-3/index.html',
+        'people/category/engineering/index.html',
+        'people/category/engineering/page-2/index.html',
+        'people/category/engineering/page-3/index.html',
+        'people/category/leadership/index.html',
+        'people/category/leadership/page-2/index.html',
       ]);
     });
   });
@@ -346,7 +346,7 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members(['about-us/people/alex/index.html']);
+      expect(filePaths).to.include.members(['people/alex/index.html']);
     });
   });
 
@@ -381,10 +381,7 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'about-us/people/alex/index.html',
-        'about-us/people/sari/index.html',
-      ]);
+      expect(filePaths).to.include.members(['people/alex/index.html', 'people/sari/index.html']);
     });
   });
 });
