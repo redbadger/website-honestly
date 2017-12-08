@@ -25,9 +25,8 @@ import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 const CaseStudyOverview = () => (
   <section className={styles.caseStudyContainer}>
     <h2 className={styles.heading}>
-      Our proven track record of being catalysts for change for our clients, positively
-      impacting their culture and leaving a lasting legacy of a process and great
-      internal capability.
+      Our proven track record of being catalysts for change for our clients, positively impacting
+      their culture and leaving a lasting legacy of a process and great internal capability.
     </h2>
     <div className={styles.limitWidth}>
       <div className={styles.figuresContainer}>

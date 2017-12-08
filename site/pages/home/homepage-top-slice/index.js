@@ -12,8 +12,8 @@ const HomepageTopSlice = () => {
           Let’s make<br />things better.
         </h1>
         <p className={cx('sloganDescription', 'fadeInUp')}>
-          We are a digital consultancy that focuses on the digital transformation
-          of large companies through innovation and delivery expertise.
+          We are a digital consultancy that focuses on the digital transformation of large companies
+          through innovation and delivery expertise.
         </p>
       </div>
     </section>
