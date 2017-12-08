@@ -82,6 +82,12 @@
   bottom: 0;
   position: absolute;
   background: badgerWhite;
+
+  /*
+    Need to move these elements in the background, so they don't crop the
+    outline of the actual content.
+  */
+  z-index: -1;
 }
 
 .mediumScreenChildList::after {
