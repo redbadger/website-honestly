@@ -98,7 +98,7 @@ const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
           sales day, week and month in the last quarter of 2016.
         </p>
         <p className={styles.content__paragraph}>
-          The team deploy up to five releases per day, getting new features and enhancements in
+          The team deploys up to five releases per day, getting new features and enhancements in
           front of customers quickly and enabling Fortnum &amp; Mason to realise revenue increases
           instantly.
         </p>
@@ -117,9 +117,12 @@ const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
             className={styles.listBox}
             items={[
               {
-                label:
-                  'Increase in new customers and 33% increase in existing customers vs last year (LY) ',
+                label: 'Increase in new customers vs last year',
                 value: '+11%',
+              },
+              {
+                label: 'Increase in existing customers vs last year',
+                value: '+33%',
               },
               {
                 label: 'Increase in conversion rate',
