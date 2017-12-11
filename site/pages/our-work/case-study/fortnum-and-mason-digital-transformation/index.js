@@ -20,7 +20,7 @@ const social = {
   title: 'The proof is in the pudding.',
   description: 'The ongoing digital transformation of a 310-year old retailer',
   metaImage: headerL,
-  url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason-tea',
+  url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason-digital-transformation',
 };
 
 const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
