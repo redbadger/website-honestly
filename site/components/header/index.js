@@ -27,15 +27,42 @@ const Header = () => {
 
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul role="listbox" className={styles.mediumScreenNav}>
-          <li>
-            <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
+          <li className={styles.navItemWithChild}>
+            <Link
+              to="whatWeDoPage"
+              activeCssClass={styles.activeNavLink}
+              childActiveCssClass={styles.activeNavLink}
+            >
               <span onClick={trackAnalytics('What we do')}>What we do</span>
             </Link>
+            <ul className={styles.mediumScreenChildList}>
+              <li>
+                <Link to="technology" activeCssClass={styles.activeNavLink}>
+                  <span onClick={trackAnalytics('Technology')}>Technology</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="ourWorkPage" activeCssClass={styles.activeNavLink}>
+                  <span onClick={trackAnalytics('Our work')}>Our work</span>
+                </Link>
+              </li>
+            </ul>
           </li>
-          <li>
-            <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
+          <li className={styles.navItemWithChild}>
+            <Link
+              to="aboutUsPage"
+              activeCssClass={styles.activeNavLink}
+              childActiveCssClass={styles.activeNavLink}
+            >
               <span onClick={trackAnalytics('About us')}>About us</span>
             </Link>
+            <ul className={styles.mediumScreenChildList}>
+              <li>
+                <Link to="badgers" activeCssClass={styles.activeNavLink}>
+                  <span onClick={trackAnalytics('Our team')}>Our team</span>
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="/blog">
@@ -54,7 +81,6 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-
       <SmallScreenNav />
     </header>
   );

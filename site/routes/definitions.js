@@ -8,6 +8,7 @@ type RouteDefinition = {|
   defaults?: any,
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
+  parentKey?: string,
 |};
 
 export const routeDefinitions: Array<RouteDefinition> = [
@@ -30,6 +31,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Our work',
     key: 'ourWorkPage',
     route: 'our-work',
+    parentKey: 'whatWeDoPage',
   },
   {
     title: 'About us',
@@ -45,26 +47,26 @@ export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: 'Join us',
     key: 'joinUs',
-    route: 'about-us/join-us',
+    route: 'jobs',
     stateToProps: ({ jobs }) => ({ jobs }),
   },
   {
     title: ({ job }) => job.title,
     key: 'job',
-    route: 'about-us/join-us/{slug}',
+    route: 'jobs/{slug}',
     stateToProps: (state, params = {}) => ({ job: state.job[params.slug] }),
     gen: state => state.jobs.map(({ slug }) => ({ slug })),
   },
   {
     title: 'Events',
     key: 'events',
-    route: 'about-us/events',
+    route: 'events',
     stateToProps: ({ events }) => ({ events }),
   },
   {
     title: ({ event }) => event.title,
     key: 'event',
-    route: 'about-us/events/{year}/{month}/{date}/{slug}',
+    route: 'events/{year}/{month}/{date}/{slug}',
     stateToProps: (state, params = {}) => ({ event: state.event[params.slug] }),
     gen: state =>
       state.events.map(({ startDateTime: { date, month, year }, slug }) => ({
@@ -77,15 +79,16 @@ export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: getBadgersTitle,
     key: 'badgers',
-    route: 'about-us/people+/category/{category}+/page-{page}',
+    route: 'people+/category/{category}+/page-{page}',
     defaults: { category: 'everyone', page: 1 },
     stateToProps: stateToBadgerProps,
     gen: genBadgersParams,
+    parentKey: 'aboutUsPage',
   },
   {
     title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
     key: 'badger',
-    route: 'about-us/people/{slug}',
+    route: 'people/{slug}',
     stateToProps: (state, params = {}) => ({
       badger: state.badger[params.slug],
     }),
@@ -171,6 +174,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
       triedAndTestedBlogPosts,
       growingTrendsBlogPosts,
     }),
+    parentKey: 'whatWeDoPage',
   },
   {
     title: 'Not found',
