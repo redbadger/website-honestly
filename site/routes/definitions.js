@@ -108,9 +108,9 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
   },
   {
-    title: 'Fortnum & Mason tea case study',
+    title: 'Fortnum & Mason digital transformation',
     key: 'fMTeaCaseStudy',
-    route: 'our-work/case-study/fortnum-and-mason-tea',
+    route: 'our-work/case-study/fortnum-and-mason-digital-transformation',
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
