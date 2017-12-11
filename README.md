@@ -128,3 +128,7 @@ We use AWS CloudWatch for monitoring our staging and prod lambdas, all alarms sh
 
 Any static assets committed to the repo should be compressed first. There is a
 `make compress-assets` command that will do this for common image formats.
+
+## Blog
+
+The blog `/blog` is it's own Squarespace site and needs to updated separately. The template can be found in [blog-squarespace-template](https://github.com/redbadger/blog-squarespace-template).

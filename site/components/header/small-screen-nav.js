@@ -97,14 +97,33 @@ export default class SmallScreenNav extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <Link tabIndex={navTabIndex} to="aboutUsPage" navigating={this.closeMenu}>
-                    <span onClick={trackAnalytics('About us')}>About us</span>
-                  </Link>
-                </li>
-                <li>
                   <Link tabIndex={navTabIndex} to="whatWeDoPage" navigating={this.closeMenu}>
                     <span onClick={trackAnalytics('What we do')}>What we do</span>
                   </Link>
+                  <ul className={styles.childList}>
+                    <li>
+                      <Link tabIndex={navTabIndex} to="technology" navigating={this.closeMenu}>
+                        <span onClick={trackAnalytics('Technology')}>Technology</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link tabIndex={navTabIndex} to="ourWorkPage" navigating={this.closeMenu}>
+                        <span onClick={trackAnalytics('Our work')}>Our work</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link tabIndex={navTabIndex} to="aboutUsPage" navigating={this.closeMenu}>
+                    <span onClick={trackAnalytics('About us')}>About us</span>
+                  </Link>
+                  <ul className={styles.childList}>
+                    <li>
+                      <Link tabIndex={navTabIndex} to="badgers" navigating={this.closeMenu}>
+                        <span onClick={trackAnalytics('Our team')}>Our team</span>
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a tabIndex={navTabIndex} href="/blog">

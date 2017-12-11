@@ -27,8 +27,8 @@ describe('site/compiler', () => {
         'what-we-do/index.html',
         'our-work/index.html',
         'about-us/index.html',
-        'about-us/join-us/index.html',
-        'about-us/events/index.html',
+        'jobs/index.html',
+        'events/index.html',
         'our-work/case-study/retailer/index.html',
         'our-work/case-study/camden-market/index.html',
         'our-work/case-study/financial-times/index.html',
@@ -36,7 +36,7 @@ describe('site/compiler', () => {
         '404.html',
         '50x/index.html',
         'offline/index.html',
-        'about-us/people/index.html',
+        'people/index.html',
       ]);
     });
 
@@ -71,8 +71,8 @@ describe('site/compiler', () => {
       const filePaths = routes.map(r => r.filePath);
 
       expect(filePaths).to.include.members([
-        'about-us/join-us/software-engineer/index.html',
-        'about-us/join-us/ux-designer/index.html',
+        'jobs/software-engineer/index.html',
+        'jobs/ux-designer/index.html',
       ]);
     });
 
@@ -167,8 +167,8 @@ describe('site/compiler', () => {
       const filePaths = routes.map(r => r.filePath);
 
       expect(filePaths).to.include.members([
-        'about-us/events/2017/01/31/upcoming-event/index.html',
-        'about-us/events/2016/08/03/designing-in-cross-functional-teams/index.html',
+        'events/2017/01/31/upcoming-event/index.html',
+        'events/2016/08/03/designing-in-cross-functional-teams/index.html',
       ]);
     });
   });

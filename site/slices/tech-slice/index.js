@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Link from '../../components/link';
 import styles from './styles.css';
 
 import serverlessImg from './img/serverless.png';
@@ -42,9 +43,9 @@ export default function TechSlice() {
         <TechListItem name="Elasticsearch" imgSrc={elasticsearchImg} />
       </ul>
 
-      <a className={styles.moreBtn} href="/technology">
+      <Link className={styles.moreBtn} to="technology">
         More about the tech
-      </a>
+      </Link>
     </section>
   );
 }
