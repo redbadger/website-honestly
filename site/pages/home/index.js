@@ -21,7 +21,7 @@ const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => {
   const social = {
     title: 'Red Badger',
     description:
-      'Let’s make things better. We are a digital consultancy that focuses on the digital transformation of large companies through innovation and delivery expertise.',
+      'Let’s make things better. We work with you to deliver digital products that make a difference to people.',
     metaImage,
     url: 'https://red-badger.com',
   };
