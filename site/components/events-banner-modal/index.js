@@ -15,6 +15,10 @@ const trackAnalytics = title => () =>
 
 const bannerAltText = 'Are you bold with technology? Join our webinar';
 
+// We need to bump the z-index to make the modal appear above the logo
+// in the header.
+const modalStyles = { overlay: { zIndex: 20 } };
+
 export default class EventsBannerModal extends React.Component {
   constructor() {
     super();
@@ -55,10 +59,11 @@ export default class EventsBannerModal extends React.Component {
           contentLabel="Webinar registration form"
           ariaHideApp={false}
           className={styles.modal}
+          style={modalStyles}
         >
           <section className={styles.iframeContainer}>
             <iframe
-              src="https://register.gotowebinar.com/register/7636347235394678530?source=rb+event+banner"
+              src="https://register.gotowebinar.com/register/7611336645035749890?source=rb+event+banner"
               frameBorder={0}
               scrolling="yes"
             />
