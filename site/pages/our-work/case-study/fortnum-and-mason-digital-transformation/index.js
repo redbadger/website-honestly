@@ -5,6 +5,7 @@ import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
 import Social from '../../../../components/social';
 import Picture from '../../../../components/picture';
+import Link from '../../../../components/link';
 
 import headerL from './images/header-l.jpg';
 import headerM from './images/header-m.jpg';
@@ -48,7 +49,10 @@ const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
           Since 2014, we’ve been working with Fortnum & Mason to drive business growth through
           digital transformation via an ongoing programme of tech initiatives across the website
           that helps make everyday special for their customers across all touch points. You can read
-          about our award-winning work on the website here.
+          about our award-winning work on the website{' '}
+          <Link to="fortnumAndMasonCaseStudy" className={styles.link}>
+            here
+          </Link>.
         </p>
         <p className={styles.content__paragraph}>
           Since then, the focus has been on increasing the awareness and accessibility of a wide
