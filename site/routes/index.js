@@ -20,6 +20,7 @@ import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
 import Technology from '../pages/technology';
 
+import FMTeaCaseStudy from '../pages/our-work/case-study/fortnum-and-mason-digital-transformation';
 import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
@@ -46,6 +47,7 @@ const componentMap = {
   badgers: MeetOurTeam,
   badger: BadgerProfile,
   fortnumAndMasonCaseStudy: FortnumAndMasonCaseStudy,
+  fMTeaCaseStudy: FMTeaCaseStudy,
   retailerCaseStudy: RetailerCaseStudy,
   camdenMarketCaseStudy: CamdenMarketCaseStudy,
   financialTimesCaseStudy: FinancialTimesCaseStudy,

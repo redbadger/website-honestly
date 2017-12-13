@@ -111,6 +111,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
   },
   {
+    title: 'Fortnum & Mason digital transformation',
+    key: 'fMTeaCaseStudy',
+    route: 'our-work/case-study/fortnum-and-mason-digital-transformation',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+  },
+  {
     title: 'Financial Times case study',
     key: 'financialTimesCaseStudy',
     route: 'our-work/case-study/financial-times',
