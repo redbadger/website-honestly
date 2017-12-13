@@ -42,7 +42,7 @@ describe('webinar-registration-service/authenticate', () => {
       });
     });
 
-    it('uses cashed creds', () => {
+    it('uses cached creds', () => {
       const credsManager = new ApiCredentialsManager();
       credsManager.storedAccessToken = 'token';
       credsManager.storedOrganizerKey = 'organizer';
