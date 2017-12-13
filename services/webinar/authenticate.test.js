@@ -58,8 +58,8 @@ describe('webinar-registration-service/authenticate', () => {
       expectHttpRequest(200);
 
       const credsManager = new ApiCredentialsManager();
-      credsManager.storedAccessToken = 'token';
-      credsManager.storedOrganizerKey = 'organizer';
+      credsManager.storedAccessToken = 'expired_token';
+      credsManager.storedOrganizerKey = 'expired_organizer';
       credsManager.storedCredsExpirationDate = Date.now() - 100;
 
       return expect(credsManager.getApiCredentials()).to.eventually.deep.equal({

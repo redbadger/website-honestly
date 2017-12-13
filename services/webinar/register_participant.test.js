@@ -4,7 +4,7 @@ import { expect } from 'chai';
 import nock from 'nock';
 
 import { apiBase } from './utils';
-import * as api from './api';
+import registerParticipant from './register_participant';
 
 function expectHttpRequest(status) {
   const reqheaders = {
@@ -31,13 +31,13 @@ function expectHttpRequest(status) {
     .reply(status, resbody);
 }
 
-describe('webinar-registration-service/api', () => {
+describe('webinar-registration-service/register_participant', () => {
   describe('registerParticipant', () => {
     it('registers participant', () => {
       expectHttpRequest(201);
 
       return expect(
-        api.registerParticipant({
+        registerParticipant({
           firstName: 'John',
           lastName: 'Doe',
           email: 'john.doe@example.com',
@@ -54,7 +54,7 @@ describe('webinar-registration-service/api', () => {
       expectHttpRequest(409);
 
       return expect(
-        api.registerParticipant({
+        registerParticipant({
           firstName: 'John',
           lastName: 'Doe',
           email: 'john.doe@example.com',
@@ -71,7 +71,7 @@ describe('webinar-registration-service/api', () => {
       expectHttpRequest(500);
 
       return expect(
-        api.registerParticipant({
+        registerParticipant({
           firstName: 'John',
           lastName: 'Doe',
           email: 'john.doe@example.com',

@@ -4,7 +4,12 @@ import { Headers } from 'node-fetch';
 
 import { fetchWithBody, apiBase } from './utils';
 
-export function registerParticipant({
+/**
+ * Registers the specified participant in the specified webinar.
+ *
+ * @see https://goto-developer.logmeininc.com/content/gotowebinar-api-reference#!/Registrants/createRegistrant
+ */
+export default function registerParticipant({
   firstName,
   lastName,
   email,

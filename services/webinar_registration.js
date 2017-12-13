@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import ApiCredentialsManager from './webinar/authenticate';
-import { registerParticipant } from './webinar/api';
+import registerParticipant from './webinar/register_participant';
 
 const credsManager = new ApiCredentialsManager();
 
