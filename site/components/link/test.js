@@ -66,4 +66,27 @@ describe('components/link', () => {
     );
     expect(wrapper.hasClass('active')).to.equal(false);
   });
+
+  describe('#shouldNavigate', () => {
+    it('returns true when target is not set', () => {
+      const wrapper = shallow(<Link to="foo">Hello</Link>, {
+        context: createMockContext('bar'),
+      });
+
+      expect(wrapper.instance().shouldNavigate()).to.equal(true);
+    });
+
+    it('returns false when target is set to _blank', () => {
+      const wrapper = shallow(
+        <Link to="foo" target="_blank">
+          Hello
+        </Link>,
+        {
+          context: createMockContext('bar'),
+        },
+      );
+
+      expect(wrapper.instance().shouldNavigate()).to.equal(false);
+    });
+  });
 });

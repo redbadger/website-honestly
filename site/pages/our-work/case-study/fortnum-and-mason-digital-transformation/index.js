@@ -50,7 +50,7 @@ const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
           digital transformation via an ongoing programme of tech initiatives across the website
           that helps make everyday special for their customers across all touch points. You can read
           about our award-winning work on the website{' '}
-          <Link to="fortnumAndMasonCaseStudy" className={styles.link}>
+          <Link to="fortnumAndMasonCaseStudy" className={styles.link} target="_blank">
             here
           </Link>.
         </p>
