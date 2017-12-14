@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from './style.css';
+import Link from '../../../components/link';
 
 import camdenLogo from './images/camden_market.png';
 import camdenProjectScreenshot from './images/camden.png';
-
-const caseStudyUrl = '/our-work/case-study/camden-market/';
 
 export default () => (
   <div className={styles.caseStudyContainer}>
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
-        <a href={caseStudyUrl}>
+        <Link to="camdenMarketCaseStudy">
           <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
           <h2 className={styles.caseStudyTextContainerHeader}>
             Taking steps towards a digital future
@@ -23,11 +22,11 @@ export default () => (
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
           </div>
-        </a>
+        </Link>
       </div>
-      <a className={styles.imageLink} href={caseStudyUrl}>
+      <Link to="camdenMarketCaseStudy" className={styles.imageLink}>
         <img src={camdenProjectScreenshot} alt="Camden project screenshot" />
-      </a>
+      </Link>
     </div>
   </div>
 );
