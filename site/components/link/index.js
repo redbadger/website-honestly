@@ -13,21 +13,35 @@ export default class Link extends React.Component {
   static propTypes = {
     to: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
-    childActiveCssClass: PropTypes.string,
+    activeCssClass: PropTypes.string,
   };
 
   getStateNavigator(): StateNavigator {
     return this.context.stateNavigator;
   }
 
+  /**
+   * Checks if the currently active state is a child (direct or nested) of
+   * the state specified in the `to` property. Returns true, if this is the
+   * case; otherwise false.
+   */
   hasActiveChild(): boolean {
-    const currentStateParent = this.getStateNavigator().stateContext.state.parentKey;
-    return currentStateParent === this.props.to;
+    const stateNavigator = this.getStateNavigator();
+    let state = stateNavigator.stateContext.state;
+    while (state.parentKey) {
+      if (state.parentKey === this.props.to) {
+        return true;
+      }
+
+      state = stateNavigator.states[state.parentKey];
+    }
+
+    return false;
   }
 
   render() {
-    const { to, childActiveCssClass, ...rest } = this.props;
-    const appliedCssClass = this.hasActiveChild() ? childActiveCssClass : '';
+    const { to, ...rest } = this.props;
+    const appliedCssClass = this.hasActiveChild() ? this.props.activeCssClass : '';
 
     return (
       <NavigationLink stateKey={to} className={appliedCssClass} {...rest}>

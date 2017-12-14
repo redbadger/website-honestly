@@ -12,6 +12,13 @@ function createMockContext(parentKey) {
           parentKey,
         },
       },
+      states: {
+        foo: {},
+        bar: {},
+        barChild: {
+          parentKey: 'bar',
+        },
+      },
     },
   };
 }
@@ -24,9 +31,9 @@ describe('components/link', () => {
     expect(wrapper.text()).to.equal('<NavigationLink />');
   });
 
-  it('applies childActiveCssClass when the specified `to` state is a parent of the current state', () => {
+  it('applies activeCssClass when the specified `to` state is a direct parent of the current state', () => {
     const wrapper = shallow(
-      <Link to="foo" childActiveCssClass="active">
+      <Link to="foo" activeCssClass="active">
         Hello
       </Link>,
       {
@@ -36,9 +43,21 @@ describe('components/link', () => {
     expect(wrapper.hasClass('active')).to.equal(true);
   });
 
-  it('does not apply childActiveCssClass when the specified `to` state is not a parent of the current state', () => {
+  it('applies activeCssClass when the specified `to` state is a parent of the current state', () => {
     const wrapper = shallow(
-      <Link to="foo" childActiveCssClass="active">
+      <Link to="bar" activeCssClass="active">
+        Hello
+      </Link>,
+      {
+        context: createMockContext('barChild'),
+      },
+    );
+    expect(wrapper.hasClass('active')).to.equal(true);
+  });
+
+  it('does not apply activeCssClass when the specified `to` state is not a parent of the current state', () => {
+    const wrapper = shallow(
+      <Link to="foo" activeCssClass="active">
         Hello
       </Link>,
       {

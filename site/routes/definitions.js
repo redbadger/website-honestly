@@ -56,6 +56,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'jobs/{slug}',
     stateToProps: (state, params = {}) => ({ job: state.job[params.slug] }),
     gen: state => state.jobs.map(({ slug }) => ({ slug })),
+    parentKey: 'joinUs',
   },
   {
     title: 'Events',
@@ -75,6 +76,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
         year,
         slug,
       })),
+    parentKey: 'events',
   },
   {
     title: getBadgersTitle,
@@ -93,6 +95,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
       badger: state.badger[params.slug],
     }),
     gen: state => state.badgers.map(({ slug }) => ({ slug })),
+    parentKey: 'badgers',
   },
   {
     title: 'Retailer case study',
@@ -101,6 +104,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'Fortnum & Mason case study',
@@ -109,6 +113,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'Fortnum & Mason digital transformation',
@@ -117,6 +122,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'Financial Times case study',
@@ -125,6 +131,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'BMW Virtual Museum case study',
@@ -133,6 +140,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'BBC Now case study',
@@ -141,6 +149,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'Haller Foundation case study',
@@ -149,6 +158,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'Sky CMS case study',
@@ -157,6 +167,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'Sky case study',
@@ -165,6 +176,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
   {
     title: 'Technology',
@@ -203,5 +215,6 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),
+    parentKey: 'ourWorkPage',
   },
 ];
