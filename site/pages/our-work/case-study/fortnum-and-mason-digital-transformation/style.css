@@ -92,6 +92,10 @@
   display: none;
 }
 
+.link {
+  composes: bodyUnderlineLink from "../../../../css/_links.css";
+}
+
 @media mediumScreen {
 
   .content__paragraph {
