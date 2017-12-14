@@ -20,6 +20,11 @@ export default class Link extends React.Component {
     return this.context.stateNavigator;
   }
 
+  /**
+   * Checks if the currently active state is a child (direct or nested) of
+   * the state specified in the `to` property. Returns true, if this is the
+   * case; otherwise false.
+   */
   hasActiveChild(): boolean {
     const stateNavigator = this.getStateNavigator();
     let state = stateNavigator.stateContext.state;
