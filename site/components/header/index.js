@@ -28,11 +28,7 @@ const Header = () => {
       <nav className={styles.mediumScreenNavContainer} role="navigation">
         <ul role="listbox" className={styles.mediumScreenNav}>
           <li className={styles.navItemWithChild}>
-            <Link
-              to="whatWeDoPage"
-              activeCssClass={styles.activeNavLink}
-              childActiveCssClass={styles.activeNavLink}
-            >
+            <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
               <span onClick={trackAnalytics('What we do')}>What we do</span>
             </Link>
             <ul className={styles.mediumScreenChildList}>
@@ -49,11 +45,7 @@ const Header = () => {
             </ul>
           </li>
           <li className={styles.navItemWithChild}>
-            <Link
-              to="aboutUsPage"
-              activeCssClass={styles.activeNavLink}
-              childActiveCssClass={styles.activeNavLink}
-            >
+            <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
               <span onClick={trackAnalytics('About us')}>About us</span>
             </Link>
             <ul className={styles.mediumScreenChildList}>
