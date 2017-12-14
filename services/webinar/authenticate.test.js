@@ -1,10 +1,15 @@
-// @flow
-
 import { expect } from 'chai';
 import nock from 'nock';
+import lolex from 'lolex';
 
-import { apiBase } from './utils';
-import ApiCredentialsManager from './authenticate';
+import { apiBase } from './http_client';
+import ApiCredentialsManager, { parseExpirationDate } from './authenticate';
+
+const authParams = {
+  userId: 'USER',
+  password: 'PASSWORD',
+  clientId: 'CLIENT',
+};
 
 function expectHttpRequest(status) {
   const reqheaders = {
@@ -17,7 +22,7 @@ function expectHttpRequest(status) {
   const resbody = {
     access_token: 'token', // eslint-disable-line camelcase
     organizer_key: 'organizer', // eslint-disable-line camelcase
-    expires_in: '100', // eslint-disable-line camelcase
+    expires_in: '10000', // eslint-disable-line camelcase
   };
 
   nock(apiBase, { reqheaders })
@@ -26,24 +31,37 @@ function expectHttpRequest(status) {
 }
 
 describe('webinar-registration-service/authenticate', () => {
-  process.env.GOTOWEBINAR_USER_ID = 'USER';
-  process.env.GOTOWEBINAR_PASSWORD = 'PASSWORD';
-  process.env.GOTOWEBINAR_CLIENT_ID = 'CLIENT';
+  let clock;
+
+  beforeEach(() => {
+    clock = lolex.install({
+      now: 0,
+    });
+  });
+
+  describe('parseExpirationDate', () => {
+    it('should parse the specified seconds from now', () => {
+      const result = parseExpirationDate('10000');
+      expect(result).to.equal(6400000);
+    });
+  });
 
   describe('getApiCredentials', () => {
-    it('invokes API when no creds are cached', () => {
+    it('invokes API when no creds are cached', async () => {
       expectHttpRequest(200);
 
-      const credsManager = new ApiCredentialsManager();
+      const credsManager = new ApiCredentialsManager(authParams);
 
-      return expect(credsManager.getApiCredentials()).to.eventually.deep.equal({
+      await expect(credsManager.getApiCredentials()).to.eventually.deep.equal({
         accessToken: 'token',
         organizerKey: 'organizer',
       });
+
+      expect(credsManager.storedCredsExpirationDate).to.equal(6400000);
     });
 
     it('uses cached creds', () => {
-      const credsManager = new ApiCredentialsManager();
+      const credsManager = new ApiCredentialsManager(authParams);
       credsManager.storedAccessToken = 'token';
       credsManager.storedOrganizerKey = 'organizer';
       credsManager.storedCredsExpirationDate = Date.now() + 100;
@@ -57,7 +75,7 @@ describe('webinar-registration-service/authenticate', () => {
     it('requests new creds when cached ones are expired', () => {
       expectHttpRequest(200);
 
-      const credsManager = new ApiCredentialsManager();
+      const credsManager = new ApiCredentialsManager(authParams);
       credsManager.storedAccessToken = 'expired_token';
       credsManager.storedOrganizerKey = 'expired_organizer';
       credsManager.storedCredsExpirationDate = Date.now() - 100;
@@ -71,9 +89,13 @@ describe('webinar-registration-service/authenticate', () => {
     it('rejects when API call fails', () => {
       expectHttpRequest(500);
 
-      const credsManager = new ApiCredentialsManager();
+      const credsManager = new ApiCredentialsManager(authParams);
 
       return expect(credsManager.getApiCredentials()).to.be.rejected;
     });
+  });
+
+  afterEach(() => {
+    clock.uninstall();
   });
 });

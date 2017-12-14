@@ -2,7 +2,7 @@
 
 import { Headers } from 'node-fetch';
 
-import { fetchWithBody, apiBase } from './utils';
+import { fetchWithBody, apiBase } from './http_client';
 
 /**
  * Registers the specified participant in the specified webinar.
@@ -45,6 +45,9 @@ export default function registerParticipant({
       return responseBody;
     }
 
-    throw new Error(JSON.stringify(responseBody));
+    throw new Error(
+      `Failed to register participant to GoToWebinar. Response was:
+      ${JSON.stringify(responseBody)}`,
+    );
   });
 }

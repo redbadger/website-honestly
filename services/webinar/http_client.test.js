@@ -3,7 +3,7 @@
 import { expect } from 'chai';
 import nock from 'nock';
 
-import * as utils from './utils';
+import * as utils from './http_client';
 
 describe('webinar-registration-service/utils', () => {
   describe('apiBase', () => {

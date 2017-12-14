@@ -62,6 +62,6 @@
     "react/jsx-filename-extension": 0,
     "react/no-unused-prop-types": ["off", { "skipShapeProps": true }],
     "no-duplicate-imports": 0,
-    "camelcase": ["warn", { "properties": "always" }],
+    "camelcase": ["warn", { "properties": "always" }]
   }
 }

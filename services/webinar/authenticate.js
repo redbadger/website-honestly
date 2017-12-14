@@ -3,9 +3,9 @@
 import { Headers } from 'node-fetch';
 import querystring from 'querystring';
 
-import { fetchWithBody, apiBase } from './utils';
+import { fetchWithBody, apiBase } from './http_client';
 
-function parseExpirationDate(expiresIn: string): number {
+export function parseExpirationDate(expiresIn: string): number {
   const secondsFromNow = parseInt(expiresIn, 10);
   const millisFromNow = secondsFromNow * 1000;
   const expirationDate = Date.now() + millisFromNow;
@@ -14,16 +14,34 @@ function parseExpirationDate(expiresIn: string): number {
   return expirationDate - 3600000;
 }
 
+interface AuthParams {
+  userId: string;
+  password: string;
+  clientId: string;
+}
+
 interface ApiCredentials {
   accessToken: string;
   organizerKey: string;
 }
 
 export default class ApiCredentialsManager {
+  params: AuthParams;
   storedAccessToken: string;
   storedOrganizerKey: string;
   storedCredsExpirationDate: number;
 
+  constructor(params: AuthParams) {
+    this.params = params;
+  }
+
+  /**
+   * Gets credentials to talk to the GoToWebinar API. Credentials are
+   * cached in memory until their expiration date, at which point
+   * new credentials will be requested.
+   *
+   * @see https://goto-developer.logmeininc.com/how-use-direct-login
+   */
   getApiCredentials(): Promise<ApiCredentials> {
     if (this.storedAccessToken === undefined || this.storedCredsExpirationDate < Date.now()) {
       const url = `${apiBase}/oauth/access_token`;
@@ -34,9 +52,9 @@ export default class ApiCredentialsManager {
 
       const body = querystring.stringify({
         grant_type: 'password', // eslint-disable-line camelcase
-        user_id: process.env.GOTOWEBINAR_USER_ID, // eslint-disable-line camelcase
-        password: process.env.GOTOWEBINAR_PASSWORD,
-        client_id: process.env.GOTOWEBINAR_CLIENT_ID, // eslint-disable-line camelcase
+        user_id: this.params.userId, // eslint-disable-line camelcase
+        password: this.params.password,
+        client_id: this.params.clientId, // eslint-disable-line camelcase
       });
 
       return fetchWithBody(url, {
@@ -55,7 +73,10 @@ export default class ApiCredentialsManager {
           };
         }
 
-        throw new Error(JSON.stringify(responseBody));
+        throw new Error(
+          `Authentication against GoToWebinar failed. Response was:
+          ${JSON.stringify(responseBody)}`,
+        );
       });
     }
 

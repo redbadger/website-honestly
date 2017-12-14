@@ -3,7 +3,7 @@
 import { expect } from 'chai';
 import nock from 'nock';
 
-import { apiBase } from './utils';
+import { apiBase } from './http_client';
 import registerParticipant from './register_participant';
 
 function expectHttpRequest(status) {

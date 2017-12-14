@@ -3,7 +3,11 @@
 import ApiCredentialsManager from './webinar/authenticate';
 import registerParticipant from './webinar/register_participant';
 
-const credsManager = new ApiCredentialsManager();
+const credsManager = new ApiCredentialsManager({
+  userId: process.env.GOTOWEBINAR_USER_ID,
+  password: process.env.GOTOWEBINAR_PASSWORD,
+  clientId: process.env.GOTOWEBINAR_CLIENT_ID,
+});
 
 export default function doRegisterForWebinar(event, _, cb) {
   credsManager
