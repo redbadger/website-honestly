@@ -3,9 +3,9 @@ import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
-import headerImageLarge from './images/header-large.png';
-import headerImageMedium from './images/header-medium.png';
-import headerImageSmall from './images/header-small.png';
+import headerImageLarge from './images/header-large.jpg';
+import headerImageMedium from './images/header-medium.jpg';
+import headerImageSmall from './images/header-small.jpg';
 import devicesImage from './images/devices.png';
 import tabletRestaurantImage from './images/tablet-restaurant.png';
 import tabletCheckoutImage from './images/tablet-checkout.png';
