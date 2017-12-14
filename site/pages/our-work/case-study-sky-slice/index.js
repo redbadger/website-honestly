@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from './style.css';
+import Link from '../../../components/link';
 
 import skyLogo from './images/sky.png';
-
-const caseStudyUrl = '/our-work/case-study/sky-cms/';
 
 export default function CaseStudySkySlice() {
   return (
     <div className={styles.caseStudyContainer}>
       <div className={styles.caseStudyContent}>
         <div className={styles.caseStudyTextContainer}>
-          <a href={caseStudyUrl}>
+          <Link to="skyCMSCaseStudy">
             <img src={skyLogo} className={styles.clientLogo} alt="Sky logo" />
             <h2 className={styles.caseStudyTextContainerHeader}>
               A modern CMS that is the foundation that supports both customers and the internal team
@@ -21,7 +20,7 @@ export default function CaseStudySkySlice() {
             <div className={styles.links}>
               <p className={styles.readmore}>Read more</p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

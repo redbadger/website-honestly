@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import classnames from 'classnames/bind';
-
+import Link from '../../../components/link';
 import styles from './style.css';
 
 const cx = classnames.bind(styles);
@@ -11,7 +11,7 @@ type CaseStudyCellProps = {
   [image: string]: any,
   [headerText: string]: any,
   [descriptionText: string]: any,
-  [linkUrl: string]: any,
+  [routeKey: string]: any,
 };
 
 export default function CaseStudyCell(props: CaseStudyCellProps) {
@@ -19,7 +19,7 @@ export default function CaseStudyCell(props: CaseStudyCellProps) {
     <div className={cx('cell', `cell-${props.clientName}`)}>
       <div className={styles.caseStudyContentContainer}>
         <div className={styles.caseStudyContent}>
-          <a href={props.linkUrl}>
+          <Link to={props.routeKey}>
             {/* eslint-disable react/jsx-indent-props, react/jsx-closing-bracket-location */
             /*
               This needs to be disabled due to the way prettier integrates with ESLint at the moment
@@ -50,7 +50,7 @@ export default function CaseStudyCell(props: CaseStudyCellProps) {
             <div className={styles.links}>
               <p className={styles.readmore}>Read more</p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -63,5 +63,5 @@ CaseStudyCell.propTypes = {
   image: PropTypes.string,
   headerText: PropTypes.string.isRequired,
   descriptionText: PropTypes.string.isRequired,
-  linkUrl: PropTypes.string.isRequired,
+  routeKey: PropTypes.string.isRequired,
 };
