@@ -47,17 +47,19 @@ describe('webinar-registration-service/authenticate', () => {
   });
 
   describe('getApiCredentials', () => {
-    it('invokes API when no creds are cached', async () => {
+    it('invokes API when no creds are cached', () => {
       expectHttpRequest(200);
 
       const credsManager = new ApiCredentialsManager(authParams);
 
-      await expect(credsManager.getApiCredentials()).to.eventually.deep.equal({
-        accessToken: 'token',
-        organizerKey: 'organizer',
-      });
-
-      expect(credsManager.storedCredsExpirationDate).to.equal(6400000);
+      return expect(credsManager.getApiCredentials())
+        .to.eventually.deep.equal({
+          accessToken: 'token',
+          organizerKey: 'organizer',
+        })
+        .then(() => {
+          expect(credsManager.storedCredsExpirationDate).to.equal(6400000);
+        });
     });
 
     it('uses cached creds', () => {
