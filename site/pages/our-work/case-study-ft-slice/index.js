@@ -1,16 +1,15 @@
 import React from 'react';
 import styles from './style.css';
+import Link from '../../../components/link';
 
 import ftLogo from './images/ft-logo.png';
 import ftProjectImage from './images/meeting.png';
-
-const caseStudyUrl = '/our-work/case-study/financial-times/';
 
 export default () => (
   <div className={styles.caseStudyContainer}>
     <div className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
-        <a href={caseStudyUrl}>
+        <Link to="financialTimesCaseStudy">
           <img src={ftLogo} className={styles.clientLogo} alt="Financial Times logo" />
           <h2 className={styles.caseStudyTextContainerHeader}>Lasting change for a media giant</h2>
           <p className={styles.description}>
@@ -21,11 +20,11 @@ export default () => (
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
           </div>
-        </a>
+        </Link>
       </div>
-      <a className={styles.imageLink} href={caseStudyUrl}>
+      <Link to="financialTimesCaseStudy" className={styles.imageLink}>
         <img src={ftProjectImage} alt="Financial Times project snapshot" />
-      </a>
+      </Link>
     </div>
   </div>
 );

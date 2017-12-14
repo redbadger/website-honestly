@@ -54,7 +54,7 @@ export default function CaseStudies() {
                 descriptionText={
                   'Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers.'
                 }
-                linkUrl={'/our-work/case-study/haller/'}
+                routeKey="hallerCaseStudy"
               />
               <CaseStudyCell
                 clientName={'BMW'}
@@ -64,7 +64,7 @@ export default function CaseStudies() {
                 descriptionText={
                   'Pushing the boundaries of HTML5 technology to deliver a multi-platform 3D tour of the BMW Museum.'
                 }
-                linkUrl={'/our-work/case-study/bmw/'}
+                routeKey="bmwCaseStudy"
               />
             </div>
             <div className={styles.gridRow}>
@@ -75,7 +75,7 @@ export default function CaseStudies() {
                 descriptionText={
                   'How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.'
                 }
-                linkUrl={'/our-work/case-study/bbc-now/'}
+                routeKey="bbcCaseStudy"
               />
               <CaseStudyCell
                 clientName={'Sky'}
@@ -84,7 +84,7 @@ export default function CaseStudies() {
                 descriptionText={
                   'Enabling Sky to deliver continual improvement across customer services'
                 }
-                linkUrl={'/our-work/case-study/sky/'}
+                routeKey="skyCaseStudy"
               />
             </div>
           </div>
