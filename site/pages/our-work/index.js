@@ -47,6 +47,26 @@ export default function CaseStudies() {
           <div className={styles.grid}>
             <div className={styles.gridRow}>
               <CaseStudyCell
+                clientName={'BBC'}
+                clientLogo={BbcLogo}
+                headerText={'Delivering a better customer experience, faster'}
+                descriptionText={
+                  'How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.'
+                }
+                routeKey="bbcCaseStudy"
+              />
+              <CaseStudyCell
+                clientName={'Sky'}
+                clientLogo={SkyLogo}
+                headerText={'Helping customers help themselves'}
+                descriptionText={
+                  'Enabling Sky to deliver continual improvement across customer services'
+                }
+                routeKey="skyCaseStudy"
+              />
+            </div>
+            <div className={styles.gridRow}>
+              <CaseStudyCell
                 clientName={'Haller'}
                 clientLogo={HallerLogo}
                 image={HallerImage}
@@ -65,26 +85,6 @@ export default function CaseStudies() {
                   'Pushing the boundaries of HTML5 technology to deliver a multi-platform 3D tour of the BMW Museum.'
                 }
                 routeKey="bmwCaseStudy"
-              />
-            </div>
-            <div className={styles.gridRow}>
-              <CaseStudyCell
-                clientName={'BBC'}
-                clientLogo={BbcLogo}
-                headerText={'Delivering a better customer experience, faster'}
-                descriptionText={
-                  'How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.'
-                }
-                routeKey="bbcCaseStudy"
-              />
-              <CaseStudyCell
-                clientName={'Sky'}
-                clientLogo={SkyLogo}
-                headerText={'Helping customers help themselves'}
-                descriptionText={
-                  'Enabling Sky to deliver continual improvement across customer services'
-                }
-                routeKey="skyCaseStudy"
               />
             </div>
           </div>
