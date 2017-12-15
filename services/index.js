@@ -4,6 +4,7 @@ import doPublish from './publish';
 import doContactUs from './contact_us';
 import doSignUp from './mailchimp/sign-up/index';
 import doUpdateUser from './mailchimp/update-user/index';
+import doRegisterForWebinar from './webinar_registration';
 
 bugsnag.register(process.env.BUGSNAG_KEY);
 bugsnag.configure({
@@ -43,3 +44,5 @@ export const contactUs = errorHandlerWrapper(doContactUs);
 export const signUp = errorHandlerWrapper(doSignUp);
 
 export const updateUser = errorHandlerWrapper(doUpdateUser);
+
+export const registerForWebinar = errorHandlerWrapper(doRegisterForWebinar);
