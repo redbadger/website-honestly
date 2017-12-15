@@ -79,6 +79,10 @@
   width: 55px;
 }
 
+.hsbcLogo {
+  width: 100px;
+}
+
 @media mediumScreen {
   .caseStudyContent {
     flex-direction: row;
@@ -154,5 +158,9 @@
 
   .fnfLogo {
     height: 64px;
+  }
+
+  .hsbcLogo {
+    width: 120px;
   }
 }

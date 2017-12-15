@@ -11,6 +11,7 @@ import fnfLogo from './images/f_f.png';
 import ftLogo from './images/ft.png';
 import fortnumLogo from './images/fortnum-mason-logo.png';
 import hallerLogo from './images/haller.png';
+import hsbcLogo from './images/hsbc.png';
 import lloydsLogo from './images/lloyds.png';
 import selfridgesLogo from './images/selfridges.png';
 import skyLogo from './images/sky.png';
@@ -21,6 +22,7 @@ export default function ClientLogosSlice() {
   return (
     <div className={styles.caseStudyContainer}>
       <div className={styles.caseStudyContent}>
+        <img src={hsbcLogo} className={styles.hsbcLogo} alt="HSBC logo" />
         <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
         <img src={ftLogo} className={styles.ftLogo} alt="Financial Times logo" />
         <img src={fortnumLogo} className={styles.fortnumLogo} alt="Fortnum and Mason logo" />
