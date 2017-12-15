@@ -6,6 +6,7 @@ import CaseStudyRetailerSlice from './case-study-retailer-slice';
 import CaseStudyCamdenSlice from './case-study-camden-slice';
 import CaseStudyFtSlice from './case-study-ft-slice';
 import CaseStudyFortnumSlice from './case-study-fortnum-and-mason-slice';
+import CaseStudyFortnumDigitalTransformationSlice from './case-study-fortnum-and-mason-digital-transformation-slice';
 import CaseStudySkySlice from './case-study-sky-slice';
 import ClientLogosSlice from './client-logos-slice';
 import CaseStudyCell from './case-study-cell';
@@ -42,6 +43,7 @@ export default function CaseStudies() {
           <CaseStudyCamdenSlice />
           <CaseStudyFtSlice />
           <CaseStudyFortnumSlice />
+          <CaseStudyFortnumDigitalTransformationSlice />
           <CaseStudySkySlice />
           <ClientLogosSlice />
           <div className={styles.grid}>
