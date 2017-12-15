@@ -59,11 +59,7 @@ const CaseStudyOverview = () => (
           </span>
           <img alt="The logo of Camden Market" src={camdenPNG} className={styles.logo} />
         </a>
-        <a
-          href="/our-work/case-study/sky-cms"
-          className={styles.figureLink}
-          title="Sky content management system case study"
-        >
+        <a href="/our-work/case-study/sky" className={styles.figureLink} title="Sky case study">
           <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
           <span className={styles.screenReaderText}>50%</span>
           <span className={styles.caseText}>

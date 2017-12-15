@@ -70,6 +70,9 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) => (
               {
                 label: 'Serviced half a million customers to date',
               },
+              {
+                label: "50% Drop in customers pushing the 'need more help' button",
+              },
             ]}
             itemClassName={styles.listBox__item}
             labelClassName={styles.listBox__label}
