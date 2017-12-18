@@ -19,3 +19,4 @@ pids
 .DS_Store
 assets/state.json
 .idea
+keyrings

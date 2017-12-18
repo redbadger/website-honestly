@@ -109,16 +109,27 @@ publish-service-invoke: ## Invoke the publish service
 	&& curl -XPOST --fail $$PUBLISH_ENDPOINT
 	@$(PRINT_OK)
 
-decrypt-env:
-	source bin/decrypt-dev-env.sh
-	@$(PRINT_OK)
-
-get-secrets:
-	git submodule update --init --remote
+init-secrets:
+	git clone git@github.com:redbadger/blackbox-secrets.git keyrings -b website-honestly2
+	echo "Please do the steps in https://dsifjdij/README.md"
 	@$(PRINT_OK)
 
 update-secrets:
-	git submodule update --remote
+	cd keyrings \
+	&& git pull \
+	&& cd .. \
+	&& blackbox_edit_start keyrings/files/.env \
+	&& mv keyrings/files/.env .env
+	@$(PRINT_OK)
+
+edit-secrets: update-secrets
+	blackbox_edit keyrings/files/.env \
+	&& cd keyrings \
+	&& git commit -m "files/.env.gpg updated" "files/.env.gpg" \
+	&& git push origin website-honestly2 \
+	&& cd ..
+	&& blackbox_edit_start keyrings/files/.env \
+	&& mv keyrings/files/.env .env
 	@$(PRINT_OK)
 
 compress-assets: ## Compress assets. What did you expect? :)
