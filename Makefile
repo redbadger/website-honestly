@@ -127,7 +127,7 @@ edit-secrets: update-secrets
 	&& cd keyrings \
 	&& git commit -m "files/.env.gpg updated" "files/.env.gpg" \
 	&& git push origin website-honestly2 \
-	&& cd ..
+	&& cd .. \
 	&& blackbox_edit_start keyrings/files/.env \
 	&& mv keyrings/files/.env .env
 	@$(PRINT_OK)
