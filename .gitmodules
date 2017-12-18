@@ -1,0 +1,5 @@
+[submodule "keyrings"]
+	path = keyrings
+	url = git@github.com:redbadger/blackbox-secrets.git
+	ignore = all
+	branch = website-honestly2
