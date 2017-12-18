@@ -110,8 +110,14 @@ publish-service-invoke: ## Invoke the publish service
 	@$(PRINT_OK)
 
 init-secrets:
-	git clone git@github.com:redbadger/blackbox-secrets.git keyrings -b website-honestly2
-	echo "Please do the steps in https://dsifjdij/README.md"
+	git clone git@github.com:redbadger/blackbox-secrets.git keyrings -b website-honestly
+	@echo ""
+	@echo "*************************************************************"
+	@echo "* Follow the instructions to get added to the blackbox admins:"
+	@echo "* https://github.com/redbadger/blackbox-secrets/blob/master/README.md#get-access-to-existing-blackbox-secrets"
+	@echo "*************************************************************"
+	@echo ""
+	@read -p "Press any key to continue."
 	@$(PRINT_OK)
 
 update-secrets:
@@ -126,7 +132,7 @@ edit-secrets: update-secrets
 	blackbox_edit keyrings/files/.env \
 	&& cd keyrings \
 	&& git commit -m "files/.env.gpg updated" "files/.env.gpg" \
-	&& git push origin website-honestly2 \
+	&& git push origin website-honestly \
 	&& cd .. \
 	&& blackbox_edit_start keyrings/files/.env \
 	&& mv keyrings/files/.env .env

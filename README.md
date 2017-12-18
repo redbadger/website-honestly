@@ -34,16 +34,15 @@ make services-invoke-publish
 ```sh
 # Install the package manager
 npm install --global yarn
-# Clone the repo 
-## Create a directory on disk
-## From this directory:
+
+# Clone the repo
 git clone https://github.com/redbadger/website-honestly.git
+
 # Install the deps
 yarn
 
-# Set up the environment variables
-## Add keys to <repo-clone-dir>/website-honestly/.env
-make get-secrets
+# Set up the environment variables. Follow the instructions of this command:
+make init-secrets
 
 # Deploy a AWS stack and lambda (if you want one!)
 # Provisioning from scratch takes quite a while.
