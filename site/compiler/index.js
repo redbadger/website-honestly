@@ -1,7 +1,6 @@
 import Helmet from 'react-helmet';
 
 import { renderToString } from 'react-dom/server';
-import encode from 'ent/encode';
 
 import createStateNavigator from '../routes';
 import layoutTemplate from '../index.ejs';
@@ -70,7 +69,8 @@ export const expandRoutes = (state, stateNavigator) => {
 export function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
-  const encodedState = state && encode(JSON.stringify(state));
+  const encodedState = state && JSON.stringify(state);
+  const stateHash = Date.now();
 
   const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
@@ -90,8 +90,8 @@ export function compileRoutes(state) {
       bodyContent,
       cssPath,
       jsPath,
-      state: encodedState,
       meta,
+      stateHash,
     });
     const ejsMs = Date.now() - ejsStart;
     console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`); // eslint-disable-line no-console
@@ -99,7 +99,12 @@ export function compileRoutes(state) {
     return { body, path };
   };
 
-  return expandRoutes(state, stateNavigator).map(compile);
+  const pages = expandRoutes(state, stateNavigator).map(compile);
+
+  return [
+    { body: encodedState, path: `state-${stateHash}.json` },
+    ...pages,
+  ];
 }
 
 export function compileSite(state) {
