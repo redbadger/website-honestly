@@ -48,17 +48,41 @@ const slices = {
 type WhatToReadNextProps = {
   currentPage?: string,
   maxNumberSlices?: number,
+  linkKeys?: Array<string>,
 };
 
-const WhatToReadNext = ({ currentPage = '', maxNumberSlices = 3 }: WhatToReadNextProps) => (
+function specificLinks(linkKeys) {
+  return _(slices)
+    .filter((slice, key) => linkKeys.includes(key))
+    .value();
+}
+
+function randomLinks(currentPage, linkKeys) {
+  return _(slices)
+    .reject((slice, key) => linkKeys.includes(key) || key === currentPage)
+    .shuffle()
+    .value();
+}
+
+function readNextSlices(currentPage, maxNumberSlices, linkKeys) {
+  const combinedSlices = specificLinks(linkKeys).concat(
+    randomLinks(currentPage, linkKeys),
+  );
+
+  return _(combinedSlices)
+    .take(maxNumberSlices)
+    .map((details, key) => <WhatToReadNextSlice key={key} details={details} />)
+    .value();
+}
+
+const WhatToReadNext = ({
+  currentPage = '',
+  maxNumberSlices = 3,
+  linkKeys = [],
+}: WhatToReadNextProps) => (
   <div className={styles.whatNext}>
     <div className={styles.whatNext__tilesContainer}>
-      {_(slices)
-        .reject((slice, key) => key === currentPage)
-        .shuffle()
-        .take(maxNumberSlices)
-        .map((details, key) => <WhatToReadNextSlice key={key} details={details} />)
-        .value()}
+      {readNextSlices(currentPage, maxNumberSlices, linkKeys)}
     </div>
     <Link to="ourWorkPage" className={styles.whatNext__button}>
       See more of our work
