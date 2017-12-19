@@ -69,8 +69,11 @@ export const expandRoutes = (state, stateNavigator) => {
 export function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
-  const encodedState = state && JSON.stringify(state);
   const stateHash = Date.now();
+  const stateFile = {
+    body: state ? JSON.stringify(state) : '{}',
+    path: `${process.env.URL_BASENAME || ''}state-${stateHash}.json`,
+  };
 
   const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
@@ -99,12 +102,9 @@ export function compileRoutes(state) {
     return { body, path };
   };
 
-  const pages = expandRoutes(state, stateNavigator).map(compile);
+  const routeFiles = expandRoutes(state, stateNavigator).map(compile);
 
-  return [
-    { body: encodedState, path: `state-${stateHash}.json` },
-    ...pages,
-  ];
+  return [stateFile, ...routeFiles];
 }
 
 export function compileSite(state) {

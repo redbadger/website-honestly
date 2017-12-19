@@ -6,7 +6,7 @@ import { makeApp } from '../site/client';
 const element = document.querySelector('.js-app');
 const stateHash = document.getElementById('state-hash').value;
 
-fetch(`/state-${stateHash}.json`)
+fetch(`/${process.env.URL_BASENAME || ''}state-${stateHash}.json`)
   .then(response => response.json())
   .then(state => {
     makeApp({ element, state }).start();
