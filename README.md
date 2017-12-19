@@ -6,7 +6,6 @@ Website. Honestly. 🦄
 Red Badger Website Episode 6: Return of the Jedi.
 
 * [Usage](#usage)
-* [Dev setup](#dev-setup)
 * [Technical Overview](#technical-overview)
 * [Deployment](#deployment)
 * [Monitoring](#monitoring)
@@ -15,21 +14,7 @@ Red Badger Website Episode 6: Return of the Jedi.
 
 ## Usage
 
-```sh
-make                   # Print the help
-make fetch             # Fetch and stash dynamic data for development
-make dev               # Run the dev server (url - localhost:8080)
-make clean dev-static  # Compile the site locally (url - localhost:8000)
-
-# Deploy to dev lambda environment
-make clean services-deploy
-
-# Invoke dev lambdas
-make services-invoke-publish
-```
-
-
-## Dev setup
+First setup your dev environment and install global dependencies:
 
 ```sh
 # Install the package manager
@@ -42,12 +27,25 @@ git clone https://github.com/redbadger/website-honestly.git
 yarn
 
 # Set up the environment variables. Follow the instructions of this command:
-make init-secrets
+make keyrings
 
-# Deploy a AWS stack and lambda (if you want one!)
-# Provisioning from scratch takes quite a while.
-# Go make a cup of tea.
-make services-deploy
+# Fetch and stash dynamic data for development. You might need to do this
+# every time you want to get updated data from staging for local development.
+make fetch
+```
+
+Now start the website:
+
+```sh
+make                   # Print the help
+make dev               # Run the dev server (url - localhost:8080)
+make clean dev-static  # Compile the site locally (url - localhost:8000)
+
+# Deploy to dev lambda environment
+make clean services-deploy
+
+# Invoke dev lambdas
+make services-invoke-publish
 ```
 
 
