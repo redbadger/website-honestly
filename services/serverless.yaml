@@ -30,6 +30,7 @@ functions:
   publish:
     handler: index.publish
     timeout: 60
+    memorySize: 2048
     events:
       - http:
           path: publish
