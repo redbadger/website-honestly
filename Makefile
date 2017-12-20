@@ -121,19 +121,17 @@ keyrings: ## Initialize blackbox secrets in the keyrings folder (required to get
 	@$(PRINT_OK)
 
 update-secrets: keyrings ## Update .env file to latest versionea
-	cd keyrings
-	git pull
-	cd ..
+	cd keyrings \
+	&& git pull
 	blackbox_edit_start keyrings/files/.env
 	mv keyrings/files/.env .env
 	@$(PRINT_OK)
 
 edit-secrets: keyrings update-secrets ## Edit .env file (get latest -> decrypt -> edit -> encrypt -> push)
 	blackbox_edit keyrings/files/.env
-	cd keyrings
-	git commit -m "files/.env.gpg updated" "files/.env.gpg"
-	git push origin website-honestly
-	cd ..
+	cd keyrings \
+	&& git commit -m "files/.env.gpg updated" "files/.env.gpg" \
+	&& git push origin website-honestly
 	blackbox_edit_start keyrings/files/.env
 	mv keyrings/files/.env .env
 	@$(PRINT_OK)

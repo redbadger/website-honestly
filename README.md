@@ -29,6 +29,11 @@ yarn
 # Set up the environment variables. Follow the instructions of this command:
 make keyrings
 
+# Go to https://github.com/redbadger/blackbox-secrets/blob/master/README.md
+# Follow instructions to
+# - "Getting Blackbox"
+# - "Get access to existing blackbox secrets"
+
 # Fetch and stash dynamic data for development. You might need to do this
 # every time you want to get updated data from staging for local development.
 make fetch
