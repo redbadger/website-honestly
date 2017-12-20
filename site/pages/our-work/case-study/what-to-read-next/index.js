@@ -65,21 +65,10 @@ function randomLinks(currentPage, linkKeys) {
 }
 
 function readNextSlices(currentPage, maxNumberSlices, linkKeys) {
-  const combinedSlices = specificLinks(linkKeys).concat(
-    randomLinks(currentPage, linkKeys),
-  );
+  const combinedSlices = specificLinks(linkKeys).concat(randomLinks(currentPage, linkKeys));
 
   return _(combinedSlices)
     .take(maxNumberSlices)
-    .map((slice, key) => 
-      <WhatToReadNextSlice 
-        key={key}
-        name={slice.name}
-        tagline={slice.tagline}
-        image={slice.image}
-        link={slice.link}
-      />
-    )
     .value();
 }
 
@@ -87,15 +76,26 @@ const WhatToReadNext = ({
   currentPage = '',
   maxNumberSlices = 3,
   linkKeys = [],
-}: WhatToReadNextProps) => (
-  <div className={styles.whatNext}>
-    <div className={styles.whatNext__tilesContainer}>
-      {readNextSlices(currentPage, maxNumberSlices, linkKeys)}
+}: WhatToReadNextProps) => {
+  const nextSlices = readNextSlices(currentPage, maxNumberSlices, linkKeys);
+  return (
+    <div className={styles.whatNext}>
+      <div className={styles.whatNext__tilesContainer}>
+        {nextSlices.map((slice, key) => (
+          <WhatToReadNextSlice
+            key={key}
+            name={slice.name}
+            tagline={slice.tagline}
+            image={slice.image}
+            link={slice.link}
+          />
+        ))}
+      </div>
+      <Link to="ourWorkPage" className={styles.whatNext__button}>
+        See more of our work
+      </Link>
     </div>
-    <Link to="ourWorkPage" className={styles.whatNext__button}>
-      See more of our work
-    </Link>
-  </div>
-);
+  );
+};
 
 export default WhatToReadNext;

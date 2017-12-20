@@ -12,12 +12,7 @@ type WhatToReadNextSliceProps = {
   link?: string,
 };
 
-const WhatToReadNextSlice = ({
-  name,
-  tagline,
-  image,
-  link = '',
-}: WhatToReadNextSliceProps) => {
+const WhatToReadNextSlice = ({ name, tagline, image, link = '' }: WhatToReadNextSliceProps) => {
   return (
     <div key={name} className={styles.whatNext__tile}>
       <figure>
