@@ -146,7 +146,7 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) => (
         </p>
       </div>
     </div>
-    <WhatToReadNext currentPage="sky" />
+    <WhatToReadNext currentPage="sky" linkKeys={['skyCms']} />
     <ContactUs postURL={contactUsURL} />
   </div>
 );

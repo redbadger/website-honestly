@@ -146,7 +146,7 @@ const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
         </Card>
       </div>
     </div>
-    <WhatToReadNext currentPage="fMTeaCaseStudy" />
+    <WhatToReadNext currentPage="fMTeaCaseStudy" linkKeys={['fortnumAndMason']} />
     <ContactUs postURL={contactUsURL} />
   </div>
 );
