@@ -1,7 +1,7 @@
+import crypto from 'crypto';
 import Helmet from 'react-helmet';
 
 import { renderToString } from 'react-dom/server';
-import encode from 'ent/encode';
 
 import createStateNavigator from '../routes';
 import layoutTemplate from '../index.ejs';
@@ -70,7 +70,18 @@ export const expandRoutes = (state, stateNavigator) => {
 export function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
-  const encodedState = state && encode(JSON.stringify(state));
+  const stateString = state ? JSON.stringify(state) : '{}';
+  const stateHash = crypto
+    .createHash('md5')
+    .update(stateString)
+    .digest('hex');
+  const stateFile = {
+    body: stateString,
+    path: `${process.env.URL_BASENAME || ''}state-${stateHash}.json`,
+    contentType: 'application/json',
+    cacheControl: 'public, max-age=31536000',
+  };
+  console.log(`Compiled ${stateFile.path}`); // eslint-disable-line no-console
 
   const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
@@ -90,16 +101,18 @@ export function compileRoutes(state) {
       bodyContent,
       cssPath,
       jsPath,
-      state: encodedState,
       meta,
+      stateHash,
     });
     const ejsMs = Date.now() - ejsStart;
     console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`); // eslint-disable-line no-console
 
-    return { body, path };
+    return { body, path, contentType: 'text/html' };
   };
 
-  return expandRoutes(state, stateNavigator).map(compile);
+  const routeFiles = expandRoutes(state, stateNavigator).map(compile);
+
+  return [stateFile, ...routeFiles];
 }
 
 export function compileSite(state) {

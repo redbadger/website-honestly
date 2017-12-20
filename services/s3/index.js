@@ -6,13 +6,14 @@ export function makeUploader({ bucketName }) {
     region: 'eu-west-1',
   });
 
-  return ({ path, body }) =>
+  return ({ path, body, contentType, cacheControl }) =>
     s3
       .putObject({
         Bucket: bucketName,
         Key: path,
         Body: body,
-        ContentType: 'text/html',
+        ContentType: contentType,
+        CacheControl: cacheControl,
       })
       .promise();
 }
