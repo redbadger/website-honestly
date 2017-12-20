@@ -31,7 +31,6 @@ const WhatToReadNext = proxyquire('./index', {
 }).default;
 
 describe.only('Case Study - What to read next', () => {
-
   it('component renders successfully', () => {
     const wrapper = shallow(<WhatToReadNext />);
     expect(wrapper.find(styles.whatNext));
@@ -58,11 +57,11 @@ describe.only('Case Study - What to read next', () => {
     expect(rendered.get(2).props).to.not.have.property('name', 'Slice One');
   });
 
-  it('component renders 3 chosen slices', () => {
-    const wrapper = shallow(<WhatToReadNext linkKeys={['slice1', 'slice2', 'slice3']} />);
+  it('component renders 3 chosen slices in given order', () => {
+    const wrapper = shallow(<WhatToReadNext linkKeys={['slice2', 'slice1', 'slice3']} />);
     const rendered = wrapper.find('WhatToReadNextSlice');
-    expect(rendered.get(0).props).to.have.property('name', 'Slice One');
-    expect(rendered.get(1).props).to.have.property('name', 'Slice Two');
+    expect(rendered.get(0).props).to.have.property('name', 'Slice Two');
+    expect(rendered.get(1).props).to.have.property('name', 'Slice One');
     expect(rendered.get(2).props).to.have.property('name', 'Slice Three');
   });
 

@@ -14,9 +14,7 @@ type WhatToReadNextProps = {
 };
 
 function specificLinks(linkKeys) {
-  return _(sliceData)
-    .filter((slice, key) => linkKeys.includes(key))
-    .value();
+  return linkKeys.map(key => sliceData[key]);
 }
 
 function randomLinks(currentPage, linkKeys) {
