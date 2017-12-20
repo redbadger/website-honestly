@@ -41,9 +41,9 @@ const WhatToReadNext = ({
   return (
     <div className={styles.whatNext}>
       <div className={styles.whatNext__tilesContainer}>
-        {nextSlices.map((slice, key) => (
+        {nextSlices.map((slice, index) => (
           <WhatToReadNextSlice
-            key={key}
+            key={index}
             name={slice.name}
             tagline={slice.tagline}
             image={slice.image}
