@@ -2,7 +2,7 @@ import createStateNavigator from '../routes';
 import { expandRoutes } from '.';
 
 describe('site/compiler', () => {
-  describe('compileSite', () => {
+  describe('expandRoutes', () => {
     it('renders all the static pages of the site', () => {
       const routes = expandRoutes(
         {
