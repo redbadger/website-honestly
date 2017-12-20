@@ -109,16 +109,31 @@ publish-service-invoke: ## Invoke the publish service
 	&& curl -XPOST --fail $$PUBLISH_ENDPOINT
 	@$(PRINT_OK)
 
-decrypt-env:
-	source bin/decrypt-dev-env.sh
+keyrings: ## Initialize blackbox secrets in the keyrings folder (required to get .env file)
+	git clone git@github.com:redbadger/blackbox-secrets.git keyrings -b website-honestly
+	@echo ""
+	@echo "*************************************************************"
+	@echo "* Follow the instructions to get added to the blackbox admins:"
+	@echo "* https://github.com/redbadger/blackbox-secrets/blob/master/README.md"
+	@echo "*************************************************************"
+	@echo ""
+	@read -p "Press any key to continue."
 	@$(PRINT_OK)
 
-get-secrets:
-	git submodule update --init --remote
+update-secrets: keyrings ## Update .env file to latest versionea
+	cd keyrings \
+	&& git pull
+	blackbox_edit_start keyrings/files/.env
+	mv keyrings/files/.env .env
 	@$(PRINT_OK)
 
-update-secrets:
-	git submodule update --remote
+edit-secrets: keyrings update-secrets ## Edit .env file (get latest -> decrypt -> edit -> encrypt -> push)
+	blackbox_edit keyrings/files/.env
+	cd keyrings \
+	&& git commit -m "files/.env.gpg updated" "files/.env.gpg" \
+	&& git push origin website-honestly
+	blackbox_edit_start keyrings/files/.env
+	mv keyrings/files/.env .env
 	@$(PRINT_OK)
 
 compress-assets: ## Compress assets. What did you expect? :)
@@ -179,4 +194,6 @@ dist/static-site:
 	fetch \
 	test \
 	test-watch \
-	sw
+	sw \
+	update-secrets \
+	edit-secrets
