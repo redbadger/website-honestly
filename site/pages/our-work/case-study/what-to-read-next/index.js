@@ -71,7 +71,15 @@ function readNextSlices(currentPage, maxNumberSlices, linkKeys) {
 
   return _(combinedSlices)
     .take(maxNumberSlices)
-    .map((details, key) => <WhatToReadNextSlice key={key} details={details} />)
+    .map((slice, key) => 
+      <WhatToReadNextSlice 
+        key={key}
+        name={slice.name}
+        tagline={slice.tagline}
+        image={slice.image}
+        link={slice.link}
+      />
+    )
     .value();
 }
 
