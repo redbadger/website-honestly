@@ -261,7 +261,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
         </div>
       </div>
     </div>
-    <WhatToReadNext currentPage="fortnumAndMason" />
+    <WhatToReadNext currentPage="fortnumAndMason" linkKeys={['fMTeaCaseStudy']} />
     <ContactUs postURL={contactUsURL} />
   </div>
 );

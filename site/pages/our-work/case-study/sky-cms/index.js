@@ -170,7 +170,7 @@ const SkyCmsCaseStudy = ({ contactUsURL }: CaseStudySkyCmsProps) => (
         </p>
       </div>
     </div>
-    <WhatToReadNext currentPage="skyCms" />
+    <WhatToReadNext currentPage="skyCms" linkKeys={['sky']} />
     <ContactUs postURL={contactUsURL} />
   </div>
 );
