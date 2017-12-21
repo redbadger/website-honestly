@@ -47,7 +47,7 @@ const WhatToReadNext = ({
             name={slice.name}
             tagline={slice.tagline}
             image={slice.image}
-            link={slice.link}
+            linkKey={slice.linkKey}
           />
         ))}
       </div>
