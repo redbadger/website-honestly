@@ -1,9 +1,10 @@
-import dateFns from 'date-fns';
+import moment from 'moment';
 
 export function parseDateAndResetTime(dateTimeIso) {
-  const d = dateFns.parse(dateTimeIso);
-  const e = dateFns.setHours(d, 0);
-  return dateFns.setMinutes(e, 0);
+  const date = moment(dateTimeIso);
+  date.hour(0);
+  date.minute(0);
+  return date;
 }
 
 export function splitEvents({
@@ -17,31 +18,24 @@ export function splitEvents({
     const endDateTime = parseDateAndResetTime(event.endDateTime.iso);
 
     // In a rare case of user error we omit this event from the output list
-    if (
-      (!dateFns.isSameDay(startDateTime, endDateTime) &&
-        !dateFns.isBefore(startDateTime, endDateTime)) ||
-      dateFns.differenceInMinutes(endDateTime, startDateTime) < 0
-    ) {
+    if (startDateTime.isAfter(endDateTime, 'minute')) {
       return false;
     }
 
     switch (timeline) {
       case 'today':
-        if (dateFns.isSameDay(startDateTime, endDateTime)) {
-          return dateFns.isSameDay(startDateTime, todayDateTime);
+        if (startDateTime.isSame(endDateTime, 'day')) {
+          return startDateTime.isSame(todayDateTime, 'day');
         }
-        return dateFns.isWithinRange(todayDateTime, startDateTime, endDateTime);
+        return moment(todayDateTime).isBetween(startDateTime, endDateTime);
       case 'past':
         return (
-          !dateFns.isWithinRange(todayDateTime, startDateTime, endDateTime) &&
-          dateFns.isBefore(endDateTime, todayDateTime) &&
-          !dateFns.isSameDay(endDateTime, todayDateTime)
+          !moment(todayDateTime).isBetween(startDateTime, endDateTime) &&
+          endDateTime.isBefore(todayDateTime) &&
+          !endDateTime.isSame(todayDateTime, 'day')
         );
       case 'future':
-        return (
-          !dateFns.isSameDay(startDateTime, todayDateTime) &&
-          dateFns.isAfter(startDateTime, todayDateTime)
-        );
+        return !startDateTime.isSame(todayDateTime, 'day') && startDateTime.isAfter(todayDateTime);
       default:
         return false;
     }
