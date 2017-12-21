@@ -1,4 +1,5 @@
 import paramCase from 'param-case';
+import sanitizeHtml from 'sanitize-html';
 import handleErrors from './handle-errors';
 
 const jobsUrl =
@@ -17,8 +18,8 @@ export const getJobs = (fetch, key) =>
     .then(response =>
       response.jobs.map(job => ({
         title: job.title,
-        description: job.description,
-        fullDescription: job.description + job.requirements + job.benefits,
+        description: sanitizeHtml(job.description),
+        fullDescription: sanitizeHtml(job.description + job.requirements + job.benefits),
         applicationUrl: job.application_url,
         slug: paramCase(job.title),
       })),

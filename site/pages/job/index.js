@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import HtmlParser from '../../components/html-parser';
+import RawHtml from '../../components/raw-html';
 import { Grid, Cell } from '../../components/grid';
 import Container from '../../components/container';
 import Section from '../../components/section';
@@ -18,7 +18,7 @@ export default function Job({ job }) {
           <Grid>
             <Cell size={8}>
               <h2 className={styles.jobTitle}>{job.title}</h2>
-              <HtmlParser>{job.fullDescription}</HtmlParser>
+              <RawHtml>{job.fullDescription}</RawHtml>
               <Hr color="grey" />
               <Link className={styles.linkBack} to="joinUs">
                 &lt; See all vacancies
