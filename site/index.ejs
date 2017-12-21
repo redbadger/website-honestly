@@ -81,7 +81,7 @@
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
     </div>
-    <input id="state-hash" type="hidden" value="<%= stateHash %>">
+    <input id="state-hash" type="hidden" value="<%= typeof stateHash !== 'undefined' ? stateHash : 'none' %>">
     <% if (typeof jsPath !== 'undefined') { %><script type="text/javascript" src="<%= jsPath %>"></script><% } %>
   </body>
 </html>
