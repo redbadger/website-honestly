@@ -1,5 +1,6 @@
 // @flow
-import _ from 'lodash';
+import shuffle from 'lodash.shuffle';
+import take from 'lodash.take';
 import React from 'react';
 
 import styles from './style.css';
@@ -18,18 +19,17 @@ function specificLinks(linkKeys) {
 }
 
 function randomLinks(currentPage, linkKeys) {
-  return _(sliceData)
-    .reject((slice, key) => linkKeys.includes(key) || key === currentPage)
-    .shuffle()
-    .value();
+  const validSlices = Object.keys(sliceData)
+    .filter(key => !linkKeys.includes(key) && key !== currentPage)
+    .map(key => sliceData[key]);
+
+  return shuffle(validSlices);
 }
 
 function readNextSlices(currentPage, maxNumberSlices, linkKeys) {
   const combinedSlices = specificLinks(linkKeys).concat(randomLinks(currentPage, linkKeys));
 
-  return _(combinedSlices)
-    .take(maxNumberSlices)
-    .value();
+  return take(combinedSlices, maxNumberSlices);
 }
 
 const WhatToReadNext = ({
