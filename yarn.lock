@@ -1063,7 +1063,7 @@ bluebird@3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.3.4.tgz#f780fe43e1a7a6510f67abd7d0d79533a40ddde6"
 
-bluebird@3.4.6, bluebird@^3.1.1, bluebird@^3.4.0, bluebird@^3.4.6:
+bluebird@3.4.6, bluebird@^3.1.1, bluebird@^3.4.0:
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
 
@@ -5204,7 +5204,7 @@ matter-js@^0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/matter-js/-/matter-js-0.13.0.tgz#c13025a76288fad813c747498dc445616253b3f5"
 
-md5@^2.1.0, md5@^2.2.1:
+md5@^2.1.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/md5/-/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
   dependencies:

@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-import Promise from 'bluebird';
 import { getBlogPosts } from '../site/fetchers/blog-posts';
 import { getJobs } from '../site/fetchers/workable';
 import { getTweets } from '../site/fetchers/twitter';
@@ -20,24 +19,41 @@ const toDict = (array, keyFn) =>
   );
 
 const getSiteState = () =>
-  Promise.props({
-    jobs: getJobs(fetch, process.env.WORKABLE_API_KEY),
-    featuredBlogPosts: getBlogPosts(['featured']),
-    triedAndTestedBlogPosts: getBlogPosts(['tried-and-tested', 'tried and tested'], 5),
-    growingTrendsBlogPosts: getBlogPosts(['growing-trends', 'growing trends'], 5),
-    tweets: getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
-    instagramPosts: getPosts(fetch),
-    data: getData(),
-    ...initialState,
-  }).then(({ data: { events, badgers, categories, qAndAs }, ...state }) => ({
-    ...state,
-    job: toDict(state.jobs, j => j.slug),
-    events,
-    event: toDict(events, e => e.slug),
-    badgers,
-    badger: toDict(badgers, b => b.slug),
-    categories,
-    qAndAs,
-  }));
+  Promise.all([
+    getJobs(fetch, process.env.WORKABLE_API_KEY),
+    getBlogPosts(['featured']),
+    getBlogPosts(['tried-and-tested', 'tried and tested'], 5),
+    getBlogPosts(['growing-trends', 'growing trends'], 5),
+    getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
+    getPosts(fetch),
+    getData(),
+  ]).then(
+    (
+      [
+        jobs,
+        featuredBlogPosts,
+        triedAndTestedBlogPosts,
+        growingTrendsBlogPosts,
+        tweets,
+        instagramPosts,
+        data,
+      ],
+    ) => ({
+      ...initialState,
+      jobs,
+      featuredBlogPosts,
+      triedAndTestedBlogPosts,
+      growingTrendsBlogPosts,
+      tweets,
+      instagramPosts,
+      job: toDict(jobs, j => j.slug),
+      events: data.events,
+      event: toDict(data.events, e => e.slug),
+      badgers: data.badgers,
+      badger: toDict(data.badgers, b => b.slug),
+      categories: data.categories,
+      qAndAs: data.qAndAs,
+    }),
+  );
 
 export default getSiteState;
