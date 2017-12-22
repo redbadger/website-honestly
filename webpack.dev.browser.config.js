@@ -1,16 +1,13 @@
 const webpack = require('webpack');
-const baseConfig = require('./webpack.base.config');
+const baseWebConfig = require('./webpack.base.config').baseWebConfig;
 const webpackMerge = require('webpack-merge').smart;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const devAppConfig = webpackMerge(baseConfig, {
+const devAppConfig = webpackMerge(baseWebConfig, {
   entry: {
     'dev-app': ['babel-polyfill', './dev/browser-app/index.js'],
-  },
-  output: {
-    publicPath: '/',
   },
   target: 'web',
   devServer: {
