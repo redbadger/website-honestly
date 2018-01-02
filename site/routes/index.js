@@ -30,6 +30,7 @@ import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import BMWCaseStudy from '../pages/our-work/case-study/bmw';
 import BBCCaseStudy from '../pages/our-work/case-study/bbc';
 import HallerCaseStudy from '../pages/our-work/case-study/haller';
+import BankCaseStudy from '../pages/our-work/case-study/bank';
 
 const componentMap = {
   homePage: HomePage,
@@ -56,6 +57,7 @@ const componentMap = {
   bmwCaseStudy: BMWCaseStudy,
   bbcCaseStudy: BBCCaseStudy,
   hallerCaseStudy: HallerCaseStudy,
+  bankCaseStudy: BankCaseStudy,
   technology: Technology,
 };
 

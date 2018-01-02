@@ -179,6 +179,15 @@ export const routeDefinitions: Array<RouteDefinition> = [
     parentKey: 'ourWorkPage',
   },
   {
+    title: 'Bank case study',
+    key: 'bankCaseStudy',
+    route: 'our-work/case-study/bank',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+    parentKey: 'ourWorkPage',
+  },
+  {
     title: 'Technology',
     key: 'technology',
     route: 'technology',

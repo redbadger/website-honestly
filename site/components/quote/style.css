@@ -1,29 +1,30 @@
 @value badgerRedOnWhite from '../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../css/_sizes.css';
 
-blockquote:before {
+.quotation {
+  composes: serif from '../../css/typography/_fonts.css';
+}
+
+.quotation__quote:before {
   content: '“';
   vertical-align: top;
   padding-right: 10px;
   margin-left: -0.8em;
 }
 
-blockquote:before,
-blockquote:after {
+.quotation__quote:before,
+.quotation__quote:after {
   speak: none;
   font-size: 36px;
   color: badgerRedOnWhite;
 }
 
-blockquote:after {
+.quotation__quote:after {
   content: '”';
   vertical-align: bottom;
   padding-left: 10px;
 }
 
-.quotation {
-  composes: serif from '../../css/typography/_fonts.css';
-}
 .quotation__author {
   display: flex;
   margin-top: 16px;

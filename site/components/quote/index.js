@@ -22,7 +22,7 @@ type QuoteProps = {
 const Quote = ({ author, text, className }: QuoteProps) => {
   return (
     <div className={cx(styles.quotation, className)}>
-      <blockquote>
+      <blockquote className={styles.quotation__quote}>
         <p className={styles.quotation__text}>{text}</p>
       </blockquote>
 
