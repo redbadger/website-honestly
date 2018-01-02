@@ -91,20 +91,16 @@ const CaseStudyBank = ({ contactUsURL }: CaseStudyBankProps) => (
           Our role was to lead the Origination and Utilities programme which had to:
         </p>
         <ul className={styles.content__list}>
-          <li className={styles.content__list__element}>
-            Deliver quality digital products to their customers quickly
-          </li>
-          <li className={styles.content__list__element}>
+          <li>Deliver quality digital products to their customers quickly</li>
+          <li>
             Vastly improve the customer experience of opening a new current account and applying for
             a loan or credit card
           </li>
-          <li className={styles.content__list__element}>
+          <li>
             Help them build internal capability and change the culture, leaving a legacy beyond our
             involvement
           </li>
-          <li className={styles.content__list__element}>
-            Reduce operational costs and increase business efficiency
-          </li>
+          <li>Reduce operational costs and increase business efficiency</li>
         </ul>
         <p className={styles.content__paragraph}>
           There was a need to change the way they worked. We implemented cross-functional teams,
