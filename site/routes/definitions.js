@@ -181,7 +181,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: 'Bank case study',
     key: 'bankCaseStudy',
-    route: 'our-work/case-study/bank',
+    route: 'our-work/case-study/financial-services-digital-transformation',
     stateToProps: ({ contactUsURL }) => ({
       contactUsURL,
     }),

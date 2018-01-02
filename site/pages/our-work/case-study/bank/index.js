@@ -28,7 +28,7 @@ const social = {
   title: 'The proof is in the pudding',
   description: 'Digital transformation at one of the world’s largest banks',
   metaImage: headerImage,
-  url: 'https://red-badger.com/our-work/case-study/bank',
+  url: 'https://red-badger.com/our-work/case-study/financial-services-digital-transformation',
 };
 
 const CaseStudyBank = ({ contactUsURL }: CaseStudyBankProps) => (
