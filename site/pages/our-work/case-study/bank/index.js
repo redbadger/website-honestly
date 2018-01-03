@@ -66,7 +66,7 @@ const CaseStudyBank = ({ contactUsURL }: CaseStudyBankProps) => (
           technology contributing to the limited functionality of their websites, their delivery
           pipeline and release process needed to change.
         </p>
-        <div className={styles.content__float}>
+        <div className={cx(styles.content__float, styles['content__float--noBottomMargin'])}>
           <img
             src={tickImage}
             className={styles.tickImage}

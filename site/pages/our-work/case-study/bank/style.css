@@ -18,7 +18,13 @@
 }
 
 .content__wrapper {
-  padding: 20px 20px 20px;
+  padding: 20px;
+}
+
+.content__wrapper::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .content__mainTitle {
@@ -47,9 +53,8 @@
   margin-top: 40px;
 }
 
-.content__paragraph,
-.content__float,
-.quote {
+.content__paragraph:not(:last-child),
+.content__float {
   margin-bottom: 20px;
 }
 
@@ -63,7 +68,12 @@
 .tickImage,
 .smileyImage,
 .pyramidImage {
+  display: block;
   max-width: 100%;
+}
+
+.quote {
+  margin: 35px 0;
 }
 
 .listBoxContainer {
@@ -91,6 +101,15 @@
 }
 
 @media mediumScreen {
+  .content {
+    padding: 20px 0 60px;
+  }
+
+  .content__wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .content__paragraph,
   .quote {
     padding-left: 114px;
@@ -99,12 +118,16 @@
   .content__float {
     float: right;
     max-width: 45%;
-    margin: 5px 0 30px 40px;
+    margin: 5px 0 20px 40px;
   }
 
   .content__float--left {
     float: left;
-    margin: 5px 40px 30px 10%;
+    margin: 5px 40px 20px 10%;
+  }
+
+  .content__float--noBottomMargin {
+    margin-bottom: 0;
   }
 
   .content__secondaryTitle {
@@ -120,7 +143,7 @@
   }
 
   .content__title {
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .listBoxContainer {
@@ -155,8 +178,7 @@
   }
 
   .content__wrapper {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
   .content__paragraph,
@@ -177,12 +199,12 @@
 
   .content__mainTitle {
     position: relative;
-    top: -114px;
+    top: -96px;
     display: block;
-    padding: 20px;
+    padding: 20px 20px 0;
     height: 100%;
     background-color: badgerWhite;
-    margin-bottom: -114px;
+    margin-bottom: -96px;
   }
 
   .content__title {
