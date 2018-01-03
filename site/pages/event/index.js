@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-pascal-case, react/no-danger */
-import marked from 'marked';
 import React from 'react';
 
 import Container from '../../components/container';
@@ -34,7 +33,7 @@ export default function Event({ event }) {
                     <p
                       className={styles.paragraph}
                       key={i}
-                      dangerouslySetInnerHTML={{ __html: marked(el.text) }}
+                      dangerouslySetInnerHTML={{ __html: el.text }}
                     />
                   ))}
                 </div>
