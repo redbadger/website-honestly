@@ -30,7 +30,7 @@ const WhatToReadNext = proxyquire('./index', {
   './data': mockSliceData,
 }).default;
 
-describe.only('Case Study - What to read next', () => {
+describe('Case Study - What to read next', () => {
   it('component renders successfully', () => {
     const wrapper = shallow(<WhatToReadNext />);
     expect(wrapper.find(styles.whatNext));
