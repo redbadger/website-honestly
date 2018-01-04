@@ -41,14 +41,12 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .bns__browsers li {
   width: 50%;
   margin-bottom: 1.25em;
+  display: inline-block;
 }
 
 .bns__browsers li div  {
@@ -56,14 +54,13 @@ body {
    margin: 0 auto .5em;
 }
 
-
 .bns__browsers img {
   display: block;
   border-radius: 50%;
   margin: 0 auto;
   width: 100%;
+  height: auto;
 }
-
 
 .bns__browserLink {
   text-align: center;
@@ -89,7 +86,6 @@ body {
   margin: 0 auto;
 }
 
-
 .bns__footerHeadLine {
   composes: serif;
   composes: fontM;  
@@ -106,7 +102,6 @@ body {
 }
 
 @media mediumScreen {
-  
   .bns__headerHeadline {
     font-size: 60px;
   }
@@ -135,7 +130,6 @@ body {
   .bns__footer {
     padding: 3.75em 20px 4.375em;
   }
-  
 }
 
 @media largeScreen {
@@ -166,5 +160,4 @@ body {
   .bns__footer {
     padding: 5em 20px 4.375em;
   }
-  
 }
