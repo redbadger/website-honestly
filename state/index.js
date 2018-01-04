@@ -9,11 +9,11 @@ const initialState = {
   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
 };
 
-const toDict = (array, keyFn) =>
+const toLookupDict = (array, keyFn) =>
   array.reduce(
-    (obj, item) => ({
+    (obj, item, index) => ({
       ...obj,
-      [keyFn(item)]: item,
+      [keyFn(item)]: index,
     }),
     {},
   );
@@ -46,11 +46,11 @@ const getSiteState = () =>
       growingTrendsBlogPosts,
       tweets,
       instagramPosts,
-      job: toDict(jobs, j => j.slug),
+      jobLookup: toLookupDict(jobs, j => j.slug),
       events: data.events,
-      event: toDict(data.events, e => e.slug),
+      eventLookup: toLookupDict(data.events, e => e.slug),
       badgers: data.badgers,
-      badger: toDict(data.badgers, b => b.slug),
+      badgerLookup: toLookupDict(data.badgers, b => b.slug),
       categories: data.categories,
       qAndAs: data.qAndAs,
     }),

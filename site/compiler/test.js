@@ -7,12 +7,13 @@ describe('site/compiler', () => {
       const routes = expandRoutes(
         {
           jobs: [],
-          job: {},
+          jobLookup: {},
           contactUsURL: '',
           featuredBlogPosts: [],
           events: [],
-          event: {},
+          eventLookup: {},
           badgers: [],
+          badgerLookup: {},
           categories: [],
           instagramPosts: [],
           tweets: [],
@@ -52,15 +53,16 @@ describe('site/compiler', () => {
       const routes = expandRoutes(
         {
           jobs: [softwareEngineer, uxDesinger],
-          job: {
-            'software-engineer': softwareEngineer,
-            'ux-designer': uxDesinger,
+          jobLookup: {
+            'software-engineer': 0,
+            'ux-designer': 1,
           },
           contactUsURL: '',
           featuredBlogPosts: [],
           events: [],
-          event: {},
+          eventLookup: {},
           badgers: [],
+          badgerLookup: {},
           categories: [],
           instagramPosts: [],
           tweets: [],
@@ -80,7 +82,7 @@ describe('site/compiler', () => {
       const routes = expandRoutes(
         {
           jobs: [],
-          job: {},
+          jobLookup: {},
           contactUsURL: '',
           featuredBlogPosts: [
             {
@@ -95,8 +97,9 @@ describe('site/compiler', () => {
             },
           ],
           events: [],
-          event: {},
+          eventLookup: {},
           badgers: [],
+          badgerLookup: {},
           categories: [],
           instagramPosts: [],
           tweets: [],
@@ -148,15 +151,16 @@ describe('site/compiler', () => {
       const routes = expandRoutes(
         {
           jobs: [],
-          job: {},
+          jobLookup: {},
           contactUsURL: '',
           featuredBlogPosts: [],
           events: [upcomingEvent, designingEvent],
-          event: {
-            'upcoming-event': upcomingEvent,
-            'designing-in-cross-functional-teams': designingEvent,
+          eventLookup: {
+            'upcoming-event': 0,
+            'designing-in-cross-functional-teams': 1,
           },
           badgers: [],
+          badgerLookup: {},
           categories: [],
           instagramPosts: [],
           tweets: [],

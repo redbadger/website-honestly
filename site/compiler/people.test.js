@@ -4,14 +4,15 @@ import { expandRoutes } from '.';
 describe('site/compiler', () => {
   const baseState = {
     jobs: [],
-    job: {},
+    jobLookup: {},
     contactUsURL: '',
     featuredBlogPosts: [],
     events: [],
-    event: {},
+    eventLookup: {},
     instagramPosts: [],
     tweets: [],
-    badger: {},
+    badgers: [],
+    badgerLookup: {},
   };
 
   describe('compileSite', () => {
@@ -32,7 +33,7 @@ describe('site/compiler', () => {
           ...baseState,
           badgers: [a],
           categories,
-          badger: { [a.slug]: a },
+          badgerLookup: { [a.slug]: 0 },
         },
         createStateNavigator(),
       );
@@ -70,9 +71,9 @@ describe('site/compiler', () => {
           {
             ...baseState,
             badgers: [a, s],
-            badger: {
-              [a.slug]: a,
-              [s.slug]: s,
+            badgerLookup: {
+              [a.slug]: 0,
+              [s.slug]: 1,
             },
             categories,
           },
@@ -102,7 +103,7 @@ describe('site/compiler', () => {
           {
             ...baseState,
             badgers: [s],
-            badger: { [s.slug]: s },
+            badgerLookup: { [s.slug]: 0 },
             categories,
           },
           createStateNavigator(),
@@ -125,7 +126,7 @@ describe('site/compiler', () => {
         ];
 
         const badgers = [];
-        const badger = {};
+        const badgerLookup = {};
 
         for (let i = 0; i < 20; i += 1) {
           const a = {
@@ -134,7 +135,7 @@ describe('site/compiler', () => {
             categories,
           };
           badgers.push(a);
-          badger[a.slug] = a;
+          badgerLookup[a.slug] = i;
         }
         const e = {
           firstName: 'Etiene',
@@ -145,7 +146,7 @@ describe('site/compiler', () => {
           {
             ...baseState,
             badgers: badgers.push(e) && badgers,
-            badger: { ...badger, [e.slug]: e },
+            badgerLookup: { ...badgerLookup, [e.slug]: badgers.indexOf(e) },
             categories,
           },
           createStateNavigator(),
@@ -166,7 +167,7 @@ describe('site/compiler', () => {
     describe('with 20 Engineers', () => {
       it('should render two everyone pages, including advert, and one for engineering', () => {
         const badgers = [];
-        const badger = {};
+        const badgerLookup = {};
         const categories = [{ name: 'Engineering', slug: 'engineering' }];
         for (let i = 0; i < 20; i += 1) {
           const a = {
@@ -175,13 +176,13 @@ describe('site/compiler', () => {
             categories,
           };
           badgers.push(a);
-          badger[a.slug] = a;
+          badgerLookup[a.slug] = i;
         }
         const routes = expandRoutes(
           {
             ...baseState,
             badgers,
-            badger,
+            badgerLookup,
             categories,
           },
           createStateNavigator(),
@@ -201,7 +202,7 @@ describe('site/compiler', () => {
   describe('with 19 Engineers', () => {
     it('should render one everyone pages, even including advert, and one for engineering', () => {
       const badgers = [];
-      const badger = {};
+      const badgerLookup = {};
       const categories = [{ name: 'Engineering', slug: 'engineering' }];
       for (let i = 0; i < 19; i += 1) {
         const a = {
@@ -210,13 +211,13 @@ describe('site/compiler', () => {
           categories,
         };
         badgers.push(a);
-        badger[a.slug] = a;
+        badgerLookup[a.slug] = i;
       }
       const routes = expandRoutes(
         {
           ...baseState,
           badgers,
-          badger,
+          badgerLookup,
           categories,
         },
         createStateNavigator(),
@@ -234,7 +235,7 @@ describe('site/compiler', () => {
   describe('with 41 Engineers and Leaderships', () => {
     it('should render three everyone pages and three for engineering and three for leadership', () => {
       const badgers = [];
-      const badger = {};
+      const badgerLookup = {};
       const categories = [
         { name: 'Engineering', slug: 'engineering' },
         { name: 'Leadership', slug: 'leadership' },
@@ -246,13 +247,13 @@ describe('site/compiler', () => {
           categories,
         };
         badgers.push(a);
-        badger[a.slug] = a;
+        badgerLookup[a.slug] = i;
       }
       const routes = expandRoutes(
         {
           ...baseState,
           badgers,
-          badger,
+          badgerLookup,
           categories,
         },
         createStateNavigator(),
@@ -276,7 +277,7 @@ describe('site/compiler', () => {
   describe('with 41 Engineers and 21 Leaderships', () => {
     it('should render three everyone pages and three for engineering and two for leadership', () => {
       const badgers = [];
-      const badger = {};
+      const badgerLookup = {};
       const categories = [
         { name: 'Engineering', slug: 'engineering' },
         { name: 'Leadership', slug: 'leadership' },
@@ -288,7 +289,7 @@ describe('site/compiler', () => {
           categories,
         };
         badgers.push(a);
-        badger[a.slug] = a;
+        badgerLookup[a.slug] = i;
       }
       for (let i = 21; i < 41; i += 1) {
         const a = {
@@ -297,13 +298,13 @@ describe('site/compiler', () => {
           categories: [categories[0]],
         };
         badgers.push(a);
-        badger[a.slug] = a;
+        badgerLookup[a.slug] = badgers.indexOf(a);
       }
       const routes = expandRoutes(
         {
           ...baseState,
           badgers,
-          badger,
+          badgerLookup,
           categories,
         },
         createStateNavigator(),
@@ -339,7 +340,7 @@ describe('site/compiler', () => {
           ...baseState,
           badgers: [a],
           categories,
-          badger: { [a.slug]: a },
+          badgerLookup: { [a.slug]: 0 },
         },
         createStateNavigator(),
       );
@@ -371,9 +372,9 @@ describe('site/compiler', () => {
           ...baseState,
           badgers: [a, s],
           categories,
-          badger: {
-            [a.slug]: a,
-            [s.slug]: s,
+          badgerLookup: {
+            [a.slug]: 0,
+            [s.slug]: 1,
           },
         },
         createStateNavigator(),
