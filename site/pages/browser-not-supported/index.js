@@ -8,74 +8,60 @@ import firefoxImage from './images/firefox.png';
 import safariImage from './images/safari.png';
 import operaImage from './images/opera.png';
 
+const browsers = [
+  {
+    name: 'Chrome',
+    link: 'https://www.google.co.uk/chrome/browser/desktop/index.html',
+    image: chromeImage,
+  },
+  {
+    name: 'Firefox',
+    link: 'https://www.mozilla.org/firefox/',
+    image: firefoxImage,
+  },
+  {
+    name: 'Safari',
+    link: 'https://support.apple.com/en_GB/downloads/safari',
+    image: safariImage,
+  },
+  {
+    name: 'Opera',
+    link: 'https://www.opera.com/',
+    image: operaImage,
+  },
+];
+
 export default function BrowserNotSupported() {
   return (
     <div className={styles.bns__container}>
-      <section className={styles.bns__headerContainer}>
+      <div className={styles.bns__headerContainer}>
         <div className={styles.bns__headerWraper}>
           <h1 className={styles.bns__headerHeadline}>Browser not supported</h1>
           <p className={styles.bns__headerContent}>
             {`Thanks for visiting but we don’t support your browser. Upgrade to one of these to see what we offer.`}
           </p>
         </div>
-      </section>
-      <section className={styles.bns__browsers}>
+      </div>
+      <div className={styles.bns__browsers}>
         <ul>
-          <li>
-            <a
-              className={styles.bns__browserLink}
-              href="https://www.google.co.uk/chrome/browser/desktop/index.html"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <div>
-                <img src={chromeImage} alt="Chrome" />
-              </div>
-              <span>Chrome</span>
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.bns__browserLink}
-              href="https://www.mozilla.org/firefox/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <div>
-                <img src={firefoxImage} alt="Firefox" />
-              </div>
-              <span>Firefox</span>
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.bns__browserLink}
-              href="https://support.apple.com/en_GB/downloads/safari"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <div>
-                <img src={safariImage} alt="Safari" />
-              </div>
-              <span>Safari</span>
-            </a>
-          </li>
-          <li>
-            <a
-              className={styles.bns__browserLink}
-              href="http://www.opera.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <div>
-                <img src={operaImage} alt="Opera" />
-              </div>
-              <span>Opera</span>
-            </a>
-          </li>
+          {browsers.map(browser => (
+            <li>
+              <a
+                className={styles.bns__browserLink}
+                href={browser.link}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div>
+                  <img src={browser.image} alt={browser.name} />
+                </div>
+                <span>{browser.name}</span>
+              </a>
+            </li>
+          ))}
         </ul>
-      </section>
-      <section className={styles.bns__footer}>
+      </div>
+      <div className={styles.bns__footer}>
         <div className={styles.bns__footerWraper}>
           <h2 className={styles.bns__footerHeadLine}>
             Need help with digital transformation?<br />Tell us more.
@@ -91,7 +77,7 @@ export default function BrowserNotSupported() {
             </a>
           </p>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

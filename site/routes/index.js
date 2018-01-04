@@ -64,6 +64,10 @@ function routes() {
     ...route,
     component: (routerProps, props) => {
       const Component = componentMap[route.key];
+      if (route.noLayout) {
+        return <Component {...props} />;
+      }
+
       return (
         <L {...routerProps}>
           <Component {...props} />
