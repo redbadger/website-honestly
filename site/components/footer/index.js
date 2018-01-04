@@ -207,7 +207,7 @@ const Footer = () => (
       <div className={styles.footerEndContainer}>
         <div className={cx('section', 'disclaimer', 'noBorder')}>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
-            © Red Badger Consulting Limited 2017
+            © Red Badger Consulting Limited {new Date().getFullYear()}
           </p>
           <p className={cx('afterDivider', 'disclaimerParagraph')}>
             Registered in England No. 7242017
