@@ -9,6 +9,7 @@ type RouteDefinition = {|
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
   parentKey?: string,
+  noLayout?: boolean,
 |};
 
 export const routeDefinitions: Array<RouteDefinition> = [
@@ -207,6 +208,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Browser not supported',
     key: 'browserNotSupported',
     route: 'browser-not-supported',
+    noLayout: true,
   },
   {
     title: 'Camden market case study',
