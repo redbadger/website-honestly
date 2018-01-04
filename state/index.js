@@ -10,11 +10,11 @@ const initialState = {
   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
 };
 
-const toDict = (array, keyFn) =>
+const toLookupDict = (array, keyFn) =>
   array.reduce(
-    (obj, item) => ({
+    (obj, item, index) => ({
       ...obj,
-      [keyFn(item)]: item,
+      [keyFn(item)]: index,
     }),
     {},
   );
@@ -31,11 +31,11 @@ const getSiteState = () =>
     ...initialState,
   }).then(({ data: { events, badgers, categories, qAndAs }, ...state }) => ({
     ...state,
-    job: toDict(state.jobs, j => j.slug),
+    jobLookup: toLookupDict(state.jobs, j => j.slug),
     events,
-    event: toDict(events, e => e.slug),
+    eventLookup: toLookupDict(events, e => e.slug),
     badgers,
-    badger: toDict(badgers, b => b.slug),
+    badgerLookup: toLookupDict(badgers, b => b.slug),
     categories,
     qAndAs,
   }));
