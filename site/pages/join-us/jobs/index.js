@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Note from '../../../components/note';
-import HtmlParser from '../../../components/html-parser';
+import RawHtml from '../../../components/raw-html';
 import styles from './style.css';
 import Link from '../../../components/link';
 import Wall from '../../../components/wall';
@@ -12,7 +12,7 @@ export default function Jobs({ jobs }) {
       <Link className={styles.title} to="job" navigationData={{ slug: job.slug }}>
         {job.title}
       </Link>
-      <HtmlParser>{job.description}</HtmlParser>
+      <RawHtml>{job.description}</RawHtml>
     </Note>
   ));
 

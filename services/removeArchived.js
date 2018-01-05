@@ -1,5 +1,5 @@
 import AWS from 'aws-sdk'; // eslint-disable-line import/no-extraneous-dependencies, import/no-unresolved
-import { difference } from 'lodash';
+import difference from 'lodash.difference';
 
 /* eslint-disable no-console */
 

@@ -3,8 +3,8 @@
 * used only by Jobs and Events components
 */
 
-import isArray from 'lodash/isArray';
-import isString from 'lodash/isString';
+import isArray from 'lodash.isarray';
+import isString from 'lodash.isstring';
 import React, { Component } from 'react';
 
 import Paragraph from './paragraph';

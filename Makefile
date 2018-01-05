@@ -163,7 +163,8 @@ dist/services:
 	export NODE_ENV=production \
 	&& $(LOAD_ENV) \
 	&& $(WEBPACK) --config webpack.lambda.config.js \
-	&& $(WEBPACK) --config webpack.browser.config.js
+	&& $(WEBPACK) --config webpack.browser.config.js \
+	&& rm -rf dist/services/assets-honestly
 	@$(PRINT_OK)
 
 dist/dev-static/index.js:
