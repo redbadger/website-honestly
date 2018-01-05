@@ -1,15 +1,16 @@
 /* eslint-disable camelcase */
 const webpack = require('webpack');
-const baseConfig = require('./webpack.base.config');
+const baseWebConfig = require('./webpack.base.config').baseWebConfig;
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 
-const clientConfig = webpackMerge(baseConfig, {
+const clientConfig = webpackMerge(baseWebConfig, {
   entry: {
-    client: './client/index.js',
+    index: './client/index.js',
   },
   output: {
-    filename: 'assets-honestly/index-[hash:5].js',
+    filename: 'assets-honestly/[name]-[hash:5].js',
+    chunkFilename: 'assets-honestly/[name]-[chunkhash:5].js',
   },
   target: 'web',
   externals: [
@@ -27,7 +28,7 @@ const clientConfig = webpackMerge(baseConfig, {
     new AssetsPlugin({
       filename: 'client-digest.json',
       path: './dist/services',
-      metadata: { bundleName: 'client' },
+      metadata: { bundleName: 'index' },
     }),
   ],
 });

@@ -2,7 +2,7 @@
 
 import fetch from 'node-fetch';
 import take from 'lodash.take';
-import { flatten } from 'lodash';
+import flatten from 'lodash.flatten';
 import moment from 'moment';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 import handleErrors from '../handle-errors';

@@ -1,8 +1,8 @@
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const autoprefixer = require('autoprefixer');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
+const webpackMerge = require('webpack-merge').smart;
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.txt';
@@ -10,7 +10,9 @@ const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.
 const baseConfig = {
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name]/index.js',
+    filename: '[name].js',
+    chunkFilename: '[name].js',
+    publicPath,
   },
   module: {
     rules: [
@@ -55,14 +57,6 @@ const baseConfig = {
         ],
       },
       {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'svg-inline-loader',
-          },
-        ],
-      },
-      {
         test: /\.ejs/,
         use: [
           {
@@ -70,15 +64,18 @@ const baseConfig = {
           },
         ],
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-inline-loader',
+          },
+        ],
+      },
     ],
   },
   devtool: 'source-map',
   plugins: [
-    // new webpack.LoaderOptionsPlugin({
-    //   options: {
-    //     context: __dirname,
-    //   },
-    // }),
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
     new ExtractTextPlugin({
@@ -86,6 +83,11 @@ const baseConfig = {
       allChunks: true,
       ignoreOrder: true,
     }),
+  ],
+};
+
+exports.baseWebConfig = webpackMerge(baseConfig, {
+  plugins: [
     new CopyWebpackPlugin([
       { from: 'assets/favicons', to: 'assets-honestly/favicons' },
       { from: `assets/${robots}`, to: 'robots.txt' },
@@ -96,6 +98,23 @@ const baseConfig = {
       { from: 'assets/fonts', to: 'assets-honestly/' },
     ]),
   ],
-};
+});
 
-module.exports = baseConfig;
+exports.baseServiceConfig = webpackMerge(baseConfig, {
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|eot|ttf|woff|woff2)$/,
+        exclude: [path.resolve(__dirname, 'dist'), path.resolve(__dirname, 'node_modules')],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              emitFile: false,
+            },
+          },
+        ],
+      },
+    ],
+  },
+});

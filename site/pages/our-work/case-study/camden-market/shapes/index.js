@@ -28,7 +28,9 @@ export default class Shapes extends Component {
   }
 
   componentDidMount() {
-    this.engageMusic(this.shapes);
+    setTimeout(() => {
+      this.engageMusic(this.shapes);
+    });
   }
 
   svg: Object;

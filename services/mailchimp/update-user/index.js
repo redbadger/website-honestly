@@ -1,6 +1,12 @@
 /* eslint-disable no-console */
-import md5 from 'md5';
 import { mailchimpApi, formatUpdateResponse, formatFormInput } from '../utilities';
+
+function md5(str) {
+  return crypto
+    .createHash('md5')
+    .update(str)
+    .digest('hex');
+}
 
 export default function doUpdateUser(event, _, cb) {
   const mailingListId = process.env.MAILING_LIST_ID;

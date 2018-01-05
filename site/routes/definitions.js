@@ -9,6 +9,7 @@ type RouteDefinition = {|
   stateToProps?: (state: Object, params?: Object) => any,
   gen?: (state: Object) => Array<Object>,
   parentKey?: string,
+  noLayout?: boolean,
 |};
 
 export const routeDefinitions: Array<RouteDefinition> = [
@@ -54,7 +55,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ job }) => job.title,
     key: 'job',
     route: 'jobs/{slug}',
-    stateToProps: (state, params = {}) => ({ job: state.job[params.slug] }),
+    stateToProps: (state, params = {}) => ({ job: state.jobs[state.jobLookup[params.slug]] }),
     gen: state => state.jobs.map(({ slug }) => ({ slug })),
     parentKey: 'joinUs',
   },
@@ -68,7 +69,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ event }) => event.title,
     key: 'event',
     route: 'events/{year}/{month}/{date}/{slug}',
-    stateToProps: (state, params = {}) => ({ event: state.event[params.slug] }),
+    stateToProps: (state, params = {}) => ({ event: state.events[state.eventLookup[params.slug]] }),
     gen: state =>
       state.events.map(({ startDateTime: { date, month, year }, slug }) => ({
         date,
@@ -92,7 +93,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'badger',
     route: 'people/{slug}',
     stateToProps: (state, params = {}) => ({
-      badger: state.badger[params.slug],
+      badger: state.badgers[state.badgerLookup[params.slug]],
     }),
     gen: state => state.badgers.map(({ slug }) => ({ slug })),
     parentKey: 'badgers',
@@ -216,6 +217,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Browser not supported',
     key: 'browserNotSupported',
     route: 'browser-not-supported',
+    noLayout: true,
   },
   {
     title: 'Camden market case study',
