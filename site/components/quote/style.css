@@ -1,8 +1,11 @@
 @value badgerRedOnWhite from '../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../css/_sizes.css';
 
-.quotation {
+.quotation__text {
   composes: serif from '../../css/typography/_fonts.css';
+  composes: fontS2 from '../../css/typography/_fonts.css';
+  display: inline;
+  text-align: left;
 }
 
 .quotation__quote:before {
@@ -27,16 +30,14 @@
 
 .quotation__author {
   display: flex;
+  align-items: center;
   margin-top: 16px;
 }
 
 .quotation__author__wrapper {
   composes: fontXS from '../../css/typography/_fonts.css';
-  line-height: normal;
-  display: flex;
-  flex-direction: column;
+  line-height: 1.2em;
   margin-left: 13px;
-  justify-content: center;
 }
 
 .quotation__author__name {
@@ -45,10 +46,4 @@
 
 .quotation__author__title {
   composes: sansSerif from '../../css/typography/_fonts.css';
-}
-
-.quotation__text {
-  composes: fontS2 from '../../css/typography/_fonts.css';
-  display: inline;
-  text-align: left;
 }

@@ -61,8 +61,8 @@
 .content__list {
   list-style-type: disc;
   padding-left: 20px;
-  margin: -10px 0 10px;
-  line-height: normal;
+  margin-bottom: 30px;
+  line-height: 28px;
 }
 
 .tickImage,
