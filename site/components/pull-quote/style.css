@@ -1,33 +1,6 @@
 @value badgerRedOnWhite from '../../css/_colors.css';
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
-blockquote {
-  max-width: 690px;
-  margin: auto;
-}
-
-blockquote:before {
-  content: "“";
-  vertical-align: top;
-  padding-right: 10px;
-  margin-left: 0px;
-  margin-bottom: 20px;
-}
-
-blockquote:before, blockquote:after {
-  speak: none;
-  font-size: 48px;
-  color: #000;
-  position: relative;
-  top: 10px;
-}
-
-blockquote:after {
-  content: "”";
-  vertical-align: top;
-  padding-left: 10px;
-}
-
 .quotation {
   composes: lightSerif from "../../css/typography/_fonts.css";
   width: 100%;
@@ -40,6 +13,33 @@ blockquote:after {
   background: #FFFFFF;
 }
 
+.quotation__quote {
+  max-width: 690px;
+  margin: auto;
+}
+
+.quotation__quote:before {
+  content: "“";
+  vertical-align: top;
+  padding-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.quotation__quote:before, .quotation__quote:after {
+  speak: none;
+  font-size: 48px;
+  color: #000;
+  position: relative;
+  top: 10px;
+}
+
+.quotation__quote:after {
+  content: "”";
+  vertical-align: top;
+  padding-left: 10px;
+}
+
 .quotation__author {
   composes: fontXS from "../../css/typography/_fonts.css";
 
@@ -49,7 +49,6 @@ blockquote:after {
   color: #000;
   padding-top: 15px;
 }
-
 
 .quotation__author__name {
   composes: boldSansSerif from "../../css/typography/_fonts.css";

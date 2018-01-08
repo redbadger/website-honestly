@@ -180,6 +180,15 @@ export const routeDefinitions: Array<RouteDefinition> = [
     parentKey: 'ourWorkPage',
   },
   {
+    title: 'Bank case study',
+    key: 'bankCaseStudy',
+    route: 'our-work/case-study/financial-services-digital-transformation',
+    stateToProps: ({ contactUsURL }) => ({
+      contactUsURL,
+    }),
+    parentKey: 'ourWorkPage',
+  },
+  {
     title: 'Technology',
     key: 'technology',
     route: 'technology',
