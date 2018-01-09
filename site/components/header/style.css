@@ -13,11 +13,13 @@
   width: 100%;
   justify-content: flex-end;
   position: relative;
+  flex: 0 1 auto;  /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
 }
 
 .logo {
   width: 140px;
   height: 35px;
+  flex: 0 1 auto;  /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
 }
 
 .logo svg {
