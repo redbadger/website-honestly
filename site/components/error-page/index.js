@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '../../components/link';
 import styles from './style.css';
-import confusedBadger from './png/confused-badger.png';
+import confusedBadger from './PNG/confusedBadger.png';
 
 function renderButton(href, text) {
   if (href && text) {
