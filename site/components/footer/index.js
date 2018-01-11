@@ -17,7 +17,7 @@ import twitterSVG from './SVG/twitter.svg';
 import youtubeSVG from './SVG/youtube.svg';
 import mapPinSVG from './SVG/map-pin.svg';
 import badgerSVG from './SVG/badger-on-black.svg';
-import mapSVG from './SVG/map.svg';
+import mapPNG from './PNG/map.png';
 
 const cx = classnames.bind(styles);
 
@@ -31,7 +31,12 @@ const trackAnalytics = title => () =>
 const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
-      <InlineSVG role="presentation" src={mapSVG} className={styles.footerMap} />
+      <img
+        role="presentation"
+        alt="Map of Red Badger office"
+        src={mapPNG}
+        className={styles.footerMap}
+      />
       <div className={styles.footerSections}>
         <nav role="navigation" className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>
