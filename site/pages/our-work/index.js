@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './style.css';
 
+import CaseStudyBankSlice from './case-study-bank-slice';
 import CaseStudyRetailerSlice from './case-study-retailer-slice';
 import CaseStudyCamdenSlice from './case-study-camden-slice';
 import CaseStudyFtSlice from './case-study-ft-slice';
@@ -39,6 +40,7 @@ export default function CaseStudies() {
       </div>
       <div className={styles.caseStudyTopSection}>
         <div className={styles.topSlicesContainer}>
+          <CaseStudyBankSlice />
           <CaseStudyRetailerSlice />
           <CaseStudyCamdenSlice />
           <CaseStudyFtSlice />
