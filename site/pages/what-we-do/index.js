@@ -8,7 +8,7 @@ import Link from '../../components/link';
 import Social from '../../components/social';
 
 import metaImage from './meta-image.png';
-import camdenJpg from './JPG/camden.jpg';
+import bankGif from './GIF/bank.gif';
 import financialTimesJpg from './JPG/financialtimes.jpg';
 import fortnumJpg from './JPG/fortnum.jpg';
 
@@ -23,71 +23,68 @@ function CaseStudies() {
       </div>
       <div className={styles.caseStudyContainer}>
         <div className={styles.caseStudyContent}>
-          <a className={styles.imageLink} href="/our-work/case-study/fortnum-and-mason">
+          <Link className={styles.imageLink} to="fortnumAndMasonCaseStudy">
             <img alt="The logo of Fortnum & Mason" src={fortnumJpg} />
-          </a>
+          </Link>
           <div className={styles.caseStudyTextContainer}>
-            <a className={styles.caseStudyCompany} href="/our-work/case-study/fortnum-and-mason">
+            <Link className={styles.caseStudyCompany} to="fortnumAndMasonCaseStudy">
               Fortnum & Mason
-            </a>
+            </Link>
             <div className={styles.caseStudyTitleContainer}>
-              <a className={styles.caseStudyTitle} href="/our-work/case-study/fortnum-and-mason">
+              <Link className={styles.caseStudyTitle} to="fortnumAndMasonCaseStudy">
                 Elegant e-commerce in eight months
-              </a>
+              </Link>
             </div>
-            <a
-              className={styles.caseStudyDescription}
-              href="/our-work/case-study/fortnum-and-mason"
-            >
+            <Link className={styles.caseStudyDescription} to="fortnumAndMasonCaseStudy">
               Improving online and mobile conversion rates on the new fortnumandmason.com site with
               great customer experience and innovative tech.
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className={cx('caseStudyContainer', 'inverse')}>
         <div className={styles.caseStudyContent}>
-          <a className={cx('imageLink', 'camden')} href="/our-work/case-study/camden-market">
-            <img alt="The Camden Market App" src={camdenJpg} />
-          </a>
+          <Link className={cx('imageLink', 'bank')} to="bankCaseStudy">
+            <img alt="Fincancial institution transformation" src={bankGif} />
+          </Link>
           <div className={styles.caseStudyTextContainer}>
-            <a
+            <Link
               className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}
-              href="/our-work/case-study/camden-market"
+              to="bankCaseStudy"
             >
-              Camden Market
-            </a>
+              Financial services
+            </Link>
             <div className={styles.caseStudyTitleContainer}>
-              <a className={styles.caseStudyTitle} href="/our-work/case-study/camden-market">
-                Taking steps towards a digital future
-              </a>
+              <Link to="bankCaseStudy" className={styles.caseStudyTitle}>
+                Digital transformation in retail banking
+              </Link>
             </div>
-            <a className={styles.caseStudyDescription} href="/our-work/case-study/camden-market">
-              Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive more
-              footfall from Londoners to the physical market by showcasing the eclectic range of
-              goods, food and events.
-            </a>
+            <Link className={styles.caseStudyDescription} to="bankCaseStudy">
+              Discover how we delivered quality digital products to customers quickly, built
+              capability and changed the culture to increase business efficiency in one of the
+              world’s largest banks.
+            </Link>
           </div>
         </div>
       </div>
       <div className={styles.caseStudyContainer}>
         <div className={styles.caseStudyContent}>
-          <a className={styles.imageLink} href="/our-work/case-study/financial-times">
+          <Link className={styles.imageLink} to="financialTimesCaseStudy">
             <img alt="Financial Times website on a tablet" src={financialTimesJpg} />
-          </a>
+          </Link>
           <div className={styles.caseStudyTextContainer}>
-            <a className={styles.caseStudyCompany} href="/our-work/case-study/financial-times">
+            <Link className={styles.caseStudyCompany} to="financialTimesCaseStudy">
               Financial Times
-            </a>
+            </Link>
             <div className={styles.caseStudyTitleContainer}>
-              <a className={styles.caseStudyTitle} href="/our-work/case-study/financial-times">
+              <Link className={styles.caseStudyTitle} to="financialTimesCaseStudy">
                 Lasting change for a media giant
-              </a>
+              </Link>
             </div>
-            <a className={styles.caseStudyDescription} href="/our-work/case-study/financial-times">
+            <Link className={styles.caseStudyDescription} to="financialTimesCaseStudy">
               We helped integrate Lean UX and Agile Design processes across the organisation,
               enabling them to operate at the cutting edge of product delivery.
-            </a>
+            </Link>
           </div>
         </div>
       </div>
