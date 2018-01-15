@@ -313,7 +313,7 @@ const CaseStudyBank = ({ contactUsURL }: CaseStudyBankProps) => (
         </Card>
       </div>
     </div>
-    <WhatToReadNext />
+    <WhatToReadNext currentPage="bank" />
     <ContactUs postURL={contactUsURL} />
   </CaseStudyFrame>
 );
