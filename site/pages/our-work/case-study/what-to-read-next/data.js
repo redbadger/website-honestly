@@ -1,3 +1,4 @@
+import bankImage from './images/bank.jpg';
 import fortnumImage from './images/fortnumReadMore.jpg';
 import fortnumDigitalTransformationImage from './images/fortnumDigitalTransformationReadMore.jpg';
 import financialTimesImage from './images/financialTimesReadMore.jpg';
@@ -7,6 +8,12 @@ import skyImage from './images/skyReadMore.jpg';
 import skyCmsImage from './images/skyCmsReadMore.jpg';
 
 const sliceData = {
+  bank: {
+    name: 'Financial services',
+    tagline: 'Digital transformation in retail banking',
+    image: bankImage,
+    linkKey: 'bankCaseStudy',
+  },
   fortnumAndMason: {
     name: 'Fortnum & Mason',
     tagline: 'Elegant e-commerce in eight months',
