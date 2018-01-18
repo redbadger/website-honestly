@@ -1,0 +1,86 @@
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
+
+.contactUsContainer {
+  composes: dividerYellow from "../../css/_divider.css";
+  padding: 60px 20px 70px 20px;
+  padding-top: 60px;
+  background-color: cainYellow;
+  text-align: center;
+}
+
+.header {
+  max-width: contentMaxWidth;
+  composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  margin: 0px auto 60px auto;
+  color: badgerBlack;
+}
+
+.list {
+  text-align: left;
+  max-width: 355px;
+  margin: 0 auto;
+}
+
+.item {
+    composes: boldSansSerif from "../../css/typography/_fonts.css";
+    composes: fontXS from "../../css/typography/_fonts.css";
+    line-height: 32px;
+    padding-left: 42px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-bottom: 20px;
+}
+
+.item:nth-of-type(1) {
+  background-image: url(./images/checkbox-1.png);
+}
+
+.item:nth-of-type(2) {
+  background-image: url(./images/checkbox-2.png);
+}
+
+.item:nth-of-type(3) {
+  background-image: url(./images/checkbox-3.png);
+}
+
+.item:nth-of-type(4) {
+  background-image: url(./images/checkbox-4.png);
+}
+
+.item:nth-of-type(5) {
+  background-image: url(./images/checkbox-5.png);
+}
+
+.item:nth-of-type(6) {
+  background-image: url(./images/checkbox-6.png);
+}
+
+.imgContainer {
+  max-width: 200px;
+  margin: 30px auto;
+}
+
+.imgContainer img {
+  display: block;
+  max-width: 100%;
+  height:auto;
+}
+
+.button {
+  composes: primaryButton from "../../css/_links.css";
+  color: badgerWhite !important;
+  background: badgerBlack !important;
+  outline: none;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media (hover:hover) {
+  .button:hover {
+    background: scorpian !important;
+  }
+}
