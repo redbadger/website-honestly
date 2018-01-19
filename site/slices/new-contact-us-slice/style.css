@@ -63,13 +63,36 @@
 
 .imgContainer {
   max-width: 200px;
+  min-height: 200px;
   margin: 30px auto;
+  background-image: url(./images/help.png);
+  background-image: image-set(url(./images/help.png) 1x, url(./images/help@2x.png) 2x, url(./images/help@3x.png) 3x);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.imgContainer img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.imgContainer.isHovered {
+  animation: blink 0.75s infinite;
+}
+
+
+@keyframes blink {
+  0% {
+    background-image: url(./images/help.png);
+    background-image: image-set(url(./images/help.png) 1x, url(./images/help@2x.png) 2x, url(./images/help@3x.png) 3x);
+  }
+
+  50% {
+    background-image: url(./images/help-hovered.png);
+    background-image: image-set(url(./images/help-hovered.png) 1x, url(./images/help-hovered@2x.png) 2x, url(./images/help-hovered@3x.png) 3x);
+  }
+
+  100% {
+    background-image: url(./images/help.png);
+    background-image: image-set(url(./images/help.png) 1x, url(./images/help@2x.png) 2x, url(./images/help@3x.png) 3x);
+  }
+
 }
 
 .button {
