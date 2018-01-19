@@ -1,5 +1,4 @@
 @value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
-
 .contactUsContainer {
   composes: dividerYellow from "../../css/_divider.css";
   padding: 60px 20px 70px 20px;
@@ -23,37 +22,43 @@
 }
 
 .item {
-    composes: boldSansSerif from "../../css/typography/_fonts.css";
-    composes: fontXS from "../../css/typography/_fonts.css";
-    line-height: 32px;
-    padding-left: 42px;
-    background-repeat: no-repeat;
-    background-position: top left;
-    margin-bottom: 20px;
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
+  line-height: 32px;
+  padding-left: 42px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-bottom: 20px;
 }
 
 .item:nth-of-type(1) {
   background-image: url(./images/checkbox-1.png);
+  background-image: image-set(url(./images/checkbox-1.png) 1x, url(./images/checkbox-1@2x.png) 2x, url(./images/checkbox-1@3x.png) 3x);
 }
 
 .item:nth-of-type(2) {
   background-image: url(./images/checkbox-2.png);
+  background-image: image-set(url(./images/checkbox-2.png) 1x, url(./images/checkbox-2@2x.png) 2x, url(./images/checkbox-2@3x.png) 3x);
 }
 
 .item:nth-of-type(3) {
   background-image: url(./images/checkbox-3.png);
+  background-image: image-set(url(./images/checkbox-3.png) 1x, url(./images/checkbox-3@2x.png) 2x, url(./images/checkbox-3@3x.png) 3x);
 }
 
 .item:nth-of-type(4) {
   background-image: url(./images/checkbox-4.png);
+  background-image: image-set(url(./images/checkbox-4.png) 1x, url(./images/checkbox-4@2x.png) 2x, url(./images/checkbox-4@3x.png) 3x);
 }
 
 .item:nth-of-type(5) {
   background-image: url(./images/checkbox-5.png);
+  background-image: image-set(url(./images/checkbox-5.png) 1x, url(./images/checkbox-5@2x.png) 2x, url(./images/checkbox-5@3x.png) 3x);
 }
 
 .item:nth-of-type(6) {
   background-image: url(./images/checkbox-6.png);
+  background-image: image-set(url(./images/checkbox-6.png) 1x, url(./images/checkbox-6@2x.png) 2x, url(./images/checkbox-6@3x.png) 3x);
 }
 
 .imgContainer {
@@ -64,7 +69,7 @@
 .imgContainer img {
   display: block;
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .button {

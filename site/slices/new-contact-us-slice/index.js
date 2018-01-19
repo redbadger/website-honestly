@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from './style.css';
 import Link from '../../components/link';
-import HelpImage from './images/help.png';
+import HelpImageS from './images/help.png';
+import HelpImageM from './images/help@2x.png';
+import HelpImageL from './images/help@3x.png';
+import Picture from '../../components/picture';
 
 const NewContactUs = () => (
   <section className={styles.contactUsContainer}>
@@ -16,7 +19,13 @@ const NewContactUs = () => (
         <li className={styles.item}>Build capability & confidence</li>
       </ul>
       <div className={styles.imgContainer}>
-        <img src={HelpImage} alt="Help button" />
+        <Picture
+          className={styles.img}
+          largeSrc={HelpImageL}
+          mediumSrc={HelpImageM}
+          smallSrc={HelpImageS}
+          alt="Help alarm"
+        />
       </div>
     </div>
     <Link to="ourWorkPage" className={styles.button}>
