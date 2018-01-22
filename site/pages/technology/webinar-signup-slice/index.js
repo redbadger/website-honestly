@@ -15,7 +15,7 @@ export default () => (
   <section className={styles.webinar}>
     <div className={styles.webinarInner}>
       <h2 className={styles.webinarText}>
-        {'Did you miss our tech webinars on serverless, graphql and more?'}
+        {'Did you miss our tech webinars on Serverless, GraphQL and more?'}
       </h2>
       <a
         className={styles.webinarButton}
