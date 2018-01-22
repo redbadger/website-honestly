@@ -9,6 +9,11 @@ html, body {
   position: relative;
 }
 
+html {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
 body {
     overflow-x: hidden;
 }
