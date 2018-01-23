@@ -28,7 +28,7 @@ class NewContactUs extends Component {
     return (
       <section className={styles.contactUsContainer}>
         <h2 className={styles.header}>Ways we can help you</h2>
-        <div>
+        <div className={styles.contentContainer}>
           <ul className={styles.list}>
             <li className={styles.item}>Create & validate new ideas</li>
             <li className={styles.item}>Deliver great quality products & services, fast</li>
@@ -40,7 +40,7 @@ class NewContactUs extends Component {
           <div className={cx(styles.imgContainer, this.state.isHovered ? 'isHovered' : '')} />
         </div>
         <a
-          href="mailto:pedro.martin@red-badger.com"
+          href="mailto:hello@red-badger.com"
           className={styles.button}
           onMouseEnter={this.onHover}
           onMouseLeave={this.onBlur}
