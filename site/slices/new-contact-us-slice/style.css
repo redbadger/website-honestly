@@ -76,6 +76,7 @@
 }
 
 .imgContainer.isHovered {
+  background-image: url(./images/help-hovered.png);
   background-image: image-set(url(./images/help-hovered.png) 1x, url(./images/help-hovered@2x.png) 2x, url(./images/help-hovered@3x.png) 3x);
 }
 
@@ -92,10 +93,8 @@
   cursor: pointer;
 }
 
-@media (hover:hover) {
-  .button:hover {
-    background: scorpian !important;
-  }
+.button:hover {
+  background: scorpian !important;
 }
 
 @media mediumScreen {
