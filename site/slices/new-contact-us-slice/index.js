@@ -4,7 +4,7 @@ import styles from './style.css';
 
 const cx = classnames.bind(styles);
 
-class NewContactUs extends Component {
+class ChecklistContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,4 +52,4 @@ class NewContactUs extends Component {
   }
 }
 
-export default NewContactUs;
+export default ChecklistContactUs;

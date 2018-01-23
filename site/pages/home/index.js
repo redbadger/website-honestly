@@ -6,7 +6,7 @@ import CaseStudyOverview from '../../components/case-study-overview';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
-import NewContactUs from '../../slices/new-contact-us-slice';
+import ChecklistContactUs from '../../slices/new-contact-us-slice';
 import NewsLetter from './newsletter-slice';
 import Social from '../../components/social';
 
@@ -32,7 +32,7 @@ const HomePage = ({ featuredBlogPosts }: HomePageProps) => {
       <CaseStudyOverview />
       <Brie />
       <TechSlice />
-      <NewContactUs />
+      <ChecklistContactUs />
       <BlogSlice featuredBlogPosts={featuredBlogPosts} />
       <NewsLetter />
     </div>
