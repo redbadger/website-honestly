@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
-import Link from '../../components/link';
 
 const cx = classnames.bind(styles);
 
@@ -40,14 +39,14 @@ class NewContactUs extends Component {
           </ul>
           <div className={cx(styles.imgContainer, this.state.isHovered ? 'isHovered' : '')} />
         </div>
-        <Link
-          to="ourWorkPage"
+        <a
+          href="mailto:pedro.martin@red-badger.com"
           className={styles.button}
           onMouseEnter={this.onHover}
           onMouseLeave={this.onBlur}
         >
           Talk to us
-        </Link>
+        </a>
       </section>
     );
   }

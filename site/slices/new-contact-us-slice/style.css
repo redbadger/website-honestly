@@ -1,7 +1,7 @@
 @value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
 .contactUsContainer {
   composes: dividerYellow from "../../css/_divider.css";
-  padding: 60px 20px 70px 20px;
+  padding: 40px 20px;
   padding-top: 60px;
   background-color: cainYellow;
   text-align: center;
@@ -11,7 +11,7 @@
   max-width: contentMaxWidth;
   composes: fontM from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  margin: 0px auto 60px auto;
+  margin: 0px auto 35px;
   color: badgerBlack;
 }
 
@@ -24,7 +24,7 @@
 .item {
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   composes: fontXS from "../../css/typography/_fonts.css";
-  line-height: 32px;
+  line-height: 2em;
   padding-left: 42px;
   background-repeat: no-repeat;
   background-position: top left;
@@ -64,7 +64,7 @@
 .imgContainer {
   max-width: 200px;
   min-height: 200px;
-  margin: 30px auto;
+  margin: 35px auto 30px;
   background-image: url(./images/help.png);
   background-image: image-set(url(./images/help.png) 1x, url(./images/help@2x.png) 2x, url(./images/help@3x.png) 3x);
   background-position: center;
@@ -73,7 +73,8 @@
 }
 
 .imgContainer.isHovered {
-  animation: blink 0.75s infinite;
+  /* animation: blink 0.75s infinite; */
+  background-image: image-set(url(./images/help-hovered.png) 1x, url(./images/help-hovered@2x.png) 2x, url(./images/help-hovered@3x.png) 3x);
 }
 
 
