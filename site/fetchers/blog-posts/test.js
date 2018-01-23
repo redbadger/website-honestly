@@ -1,4 +1,6 @@
-import { mapDataToState } from '.';
+import nock from 'nock';
+import { assert } from 'chai';
+import { mapDataToState, getBlogPosts } from '.';
 
 const fixture = () => [
   {
@@ -9,6 +11,7 @@ const fixture = () => [
       bio: '<p>Software Engineer</p>',
       displayName: 'Milo',
     },
+    date: new Date('1995-12-17T03:24:00'),
   },
   {
     urlId: 20,
@@ -17,6 +20,7 @@ const fixture = () => [
       bio: 'Project Manager',
       displayName: 'Roisi',
     },
+    date: new Date('2015-12-17T03:24:00'),
   },
 ];
 
@@ -44,5 +48,48 @@ describe('featured blog posts fetcher', () => {
     const data = mapDataToState(fixture());
     const author = data[1].author;
     expect(author.role).to.equal('Project Manager');
+  });
+});
+
+describe('getBlogPosts', () => {
+  describe('nominal', () => {
+    it('returns the right content', () => {
+      nock('https://blog.red-badger.com')
+        .get(/blog*/)
+        .reply(200, { items: fixture() });
+      return getBlogPosts(['tag']).then(data => {
+        expect(Array.isArray(data)).to.equal(true);
+        expect(data.length).to.equal(2);
+      });
+    });
+  });
+
+  describe('when the first call fails', () => {
+    it('returns the right content', () => {
+      nock('https://blog.red-badger.com')
+        .get(/blog*/)
+        .reply(500, 'ERROR');
+      nock('https://blog.red-badger.com')
+        .get(/blog*/)
+        .reply(200, { items: fixture() });
+      return getBlogPosts(['tag']).then(data => {
+        expect(Array.isArray(data)).to.equal(true);
+        expect(data.length).to.equal(2);
+      });
+    });
+  });
+  describe('when all call fails', () => {
+    it('throws an error', done => {
+      nock('https://blog.red-badger.com')
+        .get(/blog*/)
+        .reply(500, 'ERROR')
+        .persist();
+      getBlogPosts(['tag'])
+        .then(() => done(new Error('Expected method to reject.')))
+        .catch(error => {
+          assert.isDefined(error);
+          done();
+        });
+    });
   });
 });
