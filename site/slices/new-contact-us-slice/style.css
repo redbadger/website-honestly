@@ -19,7 +19,7 @@
 
 .list {
   text-align: left;
-  max-width: 355px;
+  max-width: 375px;
   margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@
   background-image: url(./images/help.png);
   background-image: image-set(url(./images/help.png) 1x, url(./images/help@2x.png) 2x, url(./images/help@3x.png) 3x);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -137,9 +137,6 @@
   .item {
     font-size: 24px;
     background-position: center left;
-    /* composes: fontS from "../../css/typography/_fonts.css"; */
-    /* line-height: 1.2; */
-    /* margin-bottom: 0; */
   }
 
   .imgContainer {
