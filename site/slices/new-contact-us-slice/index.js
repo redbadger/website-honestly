@@ -1,8 +1,16 @@
+import ReactGA from 'react-ga';
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 
 const cx = classnames.bind(styles);
+
+const trackAnalytics = title => () =>
+  ReactGA.event({
+    category: 'ContactUsForm',
+    action: title,
+    label: `From: ${window.location.pathname}`,
+  });
 
 class ChecklistContactUs extends Component {
   constructor(props) {
@@ -26,7 +34,7 @@ class ChecklistContactUs extends Component {
 
   render() {
     return (
-      <section className={styles.contactUsContainer}>
+      <section className={styles.contactUsContainer} id="contactUs">
         <h2 className={styles.header}>Ways we can help you</h2>
         <div className={styles.contentContainer}>
           <ul className={styles.list}>
@@ -44,6 +52,7 @@ class ChecklistContactUs extends Component {
           className={styles.button}
           onMouseEnter={this.onHover}
           onMouseLeave={this.onBlur}
+          onClick={trackAnalytics('ContactUsForm - ButtonClicked')}
         >
           Talk to us
         </a>
