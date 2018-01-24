@@ -6,7 +6,7 @@ import CaseStudyOverview from '../../components/case-study-overview';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
-import ContactUs from '../../slices/contact-us-slice';
+import ChecklistContactUs from '../../slices/new-contact-us-slice';
 import NewsLetter from './newsletter-slice';
 import Social from '../../components/social';
 
@@ -17,7 +17,7 @@ export type HomePageProps = {
   featuredBlogPosts: Array<Object>,
 };
 
-const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => {
+const HomePage = ({ featuredBlogPosts }: HomePageProps) => {
   const social = {
     title: 'Red Badger',
     description:
@@ -32,7 +32,7 @@ const HomePage = ({ contactUsURL, featuredBlogPosts }: HomePageProps) => {
       <CaseStudyOverview />
       <Brie />
       <TechSlice />
-      <ContactUs postURL={contactUsURL} yellow />
+      <ChecklistContactUs />
       <BlogSlice featuredBlogPosts={featuredBlogPosts} />
       <NewsLetter />
     </div>

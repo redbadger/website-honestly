@@ -1,0 +1,147 @@
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
+@value contentMaxWidth, largeScreen, mediumScreen from "../../css/_sizes.css";
+
+.contactUsContainer {
+  composes: dividerYellow from "../../css/_divider.css";
+  padding: 40px 20px;
+  padding-top: 60px;
+  background-color: cainYellow;
+  text-align: center;
+}
+
+.header {
+  max-width: contentMaxWidth;
+  composes: fontL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  margin: 0px auto 35px;
+  color: badgerBlack;
+}
+
+.list {
+  text-align: left;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.item {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontXS from "../../css/typography/_fonts.css";
+  line-height: 2em;
+  padding-left: 42px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-bottom: 20px;
+}
+
+.item:nth-of-type(1) {
+  background-image: url(./images/checkbox-1.png);
+  background-image: image-set(url(./images/checkbox-1.png) 1x, url(./images/checkbox-1@2x.png) 2x, url(./images/checkbox-1@3x.png) 3x);
+}
+
+.item:nth-of-type(2) {
+  background-image: url(./images/checkbox-2.png);
+  background-image: image-set(url(./images/checkbox-2.png) 1x, url(./images/checkbox-2@2x.png) 2x, url(./images/checkbox-2@3x.png) 3x);
+}
+
+.item:nth-of-type(3) {
+  background-image: url(./images/checkbox-3.png);
+  background-image: image-set(url(./images/checkbox-3.png) 1x, url(./images/checkbox-3@2x.png) 2x, url(./images/checkbox-3@3x.png) 3x);
+}
+
+.item:nth-of-type(4) {
+  background-image: url(./images/checkbox-4.png);
+  background-image: image-set(url(./images/checkbox-4.png) 1x, url(./images/checkbox-4@2x.png) 2x, url(./images/checkbox-4@3x.png) 3x);
+}
+
+.item:nth-of-type(5) {
+  background-image: url(./images/checkbox-5.png);
+  background-image: image-set(url(./images/checkbox-5.png) 1x, url(./images/checkbox-5@2x.png) 2x, url(./images/checkbox-5@3x.png) 3x);
+}
+
+.item:nth-of-type(6) {
+  background-image: url(./images/checkbox-6.png);
+  background-image: image-set(url(./images/checkbox-6.png) 1x, url(./images/checkbox-6@2x.png) 2x, url(./images/checkbox-6@3x.png) 3x);
+  margin-bottom: 0;
+}
+
+.imgContainer {
+  max-width: 200px;
+  min-height: 200px;
+  margin: 35px auto 30px;
+  background-image: url(./images/help.png);
+  background-image: image-set(url(./images/help.png) 1x, url(./images/help@2x.png) 2x, url(./images/help@3x.png) 3x);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.imgContainer.isHovered {
+  background-image: url(./images/help-hovered.png);
+  background-image: image-set(url(./images/help-hovered.png) 1x, url(./images/help-hovered@2x.png) 2x, url(./images/help-hovered@3x.png) 3x);
+}
+
+
+.button {
+  composes: primaryButton from "../../css/_links.css";
+  color: badgerWhite !important;
+  background: badgerBlack !important;
+  outline: none;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover {
+  background: scorpian !important;
+}
+
+@media mediumScreen {
+  .contactUsContainer {
+    padding: 60px 20px;
+  }
+
+  .contentContainer {
+    composes: cf from "../../components/utils/layout.css";
+    max-width: 620px;
+    margin: 0 auto 50px;
+  }
+
+  .list {
+    float: right;
+    max-width: unset;
+  }
+
+  .imgContainer {
+    float: left;
+    width: 200px;
+  }
+}
+
+@media largeScreen {
+  .contactUsContainer {
+    padding: 60px 20px 70px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .contentContainer {
+    max-width: 875px;
+    margin: 0 auto 60px;
+  }
+
+  .item {
+    font-size: 24px;
+    background-position: center left;
+  }
+
+  .imgContainer {
+    max-width: 300px;
+    min-height: 300px;
+    width: 300px;
+    height: 300px;
+  }
+}
