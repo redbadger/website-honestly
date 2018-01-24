@@ -63,9 +63,12 @@ export default class EventsBannerModal extends React.Component {
         >
           <section className={styles.iframeContainer}>
             <iframe
-              src="https://register.gotowebinar.com/register/7611336645035749890?source=rb+event+banner"
-              frameBorder={0}
-              scrolling="yes"
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/85WgmD2BguI?list=PLW6ORi0XZU0DF9rlBzgro6YGTTm5DfPjb"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
             />
             <button onClick={this.closeModal} className={styles.iframeContainerCloseButton}>
               Close
