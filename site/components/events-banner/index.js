@@ -18,7 +18,7 @@ export default function EventsBanner() {
   return (
     <div className={styles.bannerContainer}>
       <a
-        href="http://bit.ly/2jv2fyJ"
+        href="http://bit.ly/2Gb1Ata"
         target="_blank"
         rel="noopener noreferrer"
         onClick={trackAnalytics('Webinar-events page -banner')}
