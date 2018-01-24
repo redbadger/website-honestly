@@ -3,13 +3,13 @@ import Container from '../../components/container';
 import Section from '../../components/section';
 import styles from './style.css';
 import EventsList from './events-list';
-import EventsBannerModal from '../../components/events-banner-modal';
+import EventsBanner from '../../components/events-banner';
 
 export default function Events({ events }) {
   return (
     <div className={styles.events}>
       <h1 className={styles.h1}>Events</h1>
-      <EventsBannerModal />
+      <EventsBanner />
       <Section>
         <Container>
           <EventsList events={events} timeline="today" />
