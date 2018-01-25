@@ -9,7 +9,7 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-export default function EventsBanner({ url, altText, desktop, tablet, mobile }) {
+export default function EventsBanner({ url, altText, desktopURL, tabletURL, mobileURL }) {
   return (
     <div className={styles.bannerContainer}>
       <a
@@ -18,9 +18,9 @@ export default function EventsBanner({ url, altText, desktop, tablet, mobile }) 
         rel="noopener noreferrer"
         onClick={trackAnalytics('Webinar-events page -banner')}
       >
-        <img src={desktop} alt={altText} className={styles.eventsDesktopBanner} />
-        <img src={tablet} alt={altText} className={styles.eventsTabletBanner} />
-        <img src={mobile} alt={altText} className={styles.eventsMobileBanner} />
+        <img src={desktopURL} alt={altText} className={styles.eventsDesktopBanner} />
+        <img src={tabletURL} alt={altText} className={styles.eventsTabletBanner} />
+        <img src={mobileURL} alt={altText} className={styles.eventsMobileBanner} />
       </a>
     </div>
   );
@@ -29,7 +29,7 @@ export default function EventsBanner({ url, altText, desktop, tablet, mobile }) 
 EventsBanner.propTypes = {
   url: PropTypes.string,
   altText: PropTypes.string,
-  desktop: PropTypes.string,
-  tablet: PropTypes.string,
-  mobile: PropTypes.string,
+  desktopURL: PropTypes.string,
+  tabletURL: PropTypes.string,
+  mobileURL: PropTypes.string,
 };

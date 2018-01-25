@@ -170,9 +170,9 @@ export function getData() {
       eventsBanner {
         url
         altText
-        desktop
-        tablet
-        mobile
+        desktopURL
+        tabletURL
+        mobileURL
       }
     }
   `;

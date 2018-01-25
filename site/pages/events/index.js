@@ -6,11 +6,17 @@ import EventsList from './events-list';
 import EventsBanner from '../../components/events-banner';
 
 export default function Events({ events, eventsBanner }) {
-  const { url, altText, desktop, tablet, mobile } = eventsBanner;
+  const { url, altText, desktopURL, tabletURL, mobileURL } = eventsBanner;
   return (
     <div className={styles.events}>
       <h1 className={styles.h1}>Events</h1>
-      <EventsBanner url={url} altText={altText} desktop={desktop} tablet={tablet} mobile={mobile} />
+      <EventsBanner
+        url={url}
+        altText={altText}
+        desktopURL={desktopURL}
+        tabletURL={tabletURL}
+        mobileURL={mobileURL}
+      />
       <Section>
         <Container>
           <EventsList events={events} timeline="today" />
@@ -27,8 +33,8 @@ Events.propTypes = {
   eventsBanner: PropTypes.shape({
     url: PropTypes.string,
     altText: PropTypes.string,
-    desktop: PropTypes.string,
-    tablet: PropTypes.string,
-    mobile: PropTypes.string,
+    desktopURL: PropTypes.string,
+    tabletURL: PropTypes.string,
+    mobileURL: PropTypes.string,
   }),
 };
