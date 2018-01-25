@@ -2,7 +2,7 @@
 import React from 'react';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
 
 import CaseStudyFrame from '../../../../components/case-study-frame';
 import CaseStudyHeader from '../../../../components/case-study-header';
@@ -11,10 +11,6 @@ import PullQuote from '../../../../components/pull-quote';
 import headerImage from './images/header.jpg';
 import articleImage from './images/article.jpg';
 
-type BMWCaseStudyProps = {
-  contactUsURL: string,
-};
-
 const social = {
   title: 'The proof is in the pudding',
   description: 'BMW Virtual Museum: The shortcut between you and the museum',
@@ -22,14 +18,13 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/bmw',
 };
 
-const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) => (
+const BMWCaseStudy = () => (
   <CaseStudyFrame>
     <CaseStudyHeader
       title="BMW Virtual Museum: The shortcut between you and the museum"
       headerImage={headerImage}
       headerImageAlt="Range of devices showing BMW virtual museum"
       headerColor="#f4f1f2"
-      contactUsURL={contactUsURL}
       social={social}
     />
     <CaseStudySection title="The challenge">
@@ -79,7 +74,7 @@ const BMWCaseStudy = ({ contactUsURL }: BMWCaseStudyProps) => (
     </CaseStudySection>
 
     <WhatToReadNext />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </CaseStudyFrame>
 );
 

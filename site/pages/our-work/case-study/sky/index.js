@@ -11,12 +11,8 @@ import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
-
-type CaseStudySkyProps = {
-  contactUsURL: string,
-};
 
 const social = {
   title: 'The proof is in the pudding',
@@ -25,7 +21,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/sky-cms',
 };
 
-const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) => (
+const SkyCaseStudy = () => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -147,7 +143,7 @@ const SkyCaseStudy = ({ contactUsURL }: CaseStudySkyProps) => (
       </div>
     </div>
     <WhatToReadNext currentPage="sky" linkKeys={['skyCms']} />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </div>
 );
 

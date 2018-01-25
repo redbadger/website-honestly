@@ -2,7 +2,7 @@
 import React from 'react';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
 
 import CaseStudyFrame from '../../../../components/case-study-frame';
 import CaseStudyHeader from '../../../../components/case-study-header';
@@ -12,10 +12,6 @@ import headerImage from './images/header.jpg';
 import articleImage from './images/article.jpg';
 import styles from './style.css';
 
-type HallerCaseStudyProps = {
-  contactUsURL: string,
-};
-
 const social = {
   title: 'The proof is in the pudding',
   description: 'Working with the Haller Foundation: Developing technology for good',
@@ -23,7 +19,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/haller',
 };
 
-const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) => (
+const HallerCaseStudy = () => (
   <CaseStudyFrame>
     <CaseStudyHeader
       title="Working with the Haller Foundation: Developing technology for good"
@@ -33,7 +29,6 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) => (
       headerImageAlt="Sketching out ideas for the application"
       headerImageAlign="center"
       headerColor="#942c2d"
-      contactUsURL={contactUsURL}
       social={social}
     />
     <CaseStudySection title="The challenge">
@@ -106,7 +101,7 @@ const HallerCaseStudy = ({ contactUsURL }: HallerCaseStudyProps) => (
     </CaseStudySection>
 
     <WhatToReadNext />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </CaseStudyFrame>
 );
 

@@ -12,12 +12,8 @@ import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
-
-type CaseStudyFinancialTimesProps = {
-  contactUsURL: string,
-};
 
 const social = {
   title: 'The proof is in the pudding',
@@ -26,7 +22,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/financial-times',
 };
 
-const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps) => (
+const FinancialTimesCaseStudy = () => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -217,7 +213,7 @@ const FinancialTimesCaseStudy = ({ contactUsURL }: CaseStudyFinancialTimesProps)
       </div>
     </div>
     <WhatToReadNext currentPage="financialTimes" />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </div>
 );
 
