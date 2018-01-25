@@ -5,7 +5,7 @@ import styles from './style.css';
 
 import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
-import metaImage from './images/meta-image.png';
+import metaImage from './images/meta-image.jpg';
 
 import WhatToReadNext from '../what-to-read-next';
 import ContactUs from '../../../../slices/contact-us-slice';
