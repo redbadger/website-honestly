@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './style.css';
 import Link from '../../../components/link';
 
-import retailerImage from './images/retailer.png';
+import retailerImage from './images/retailer.jpg';
 
 export default () => (
   <div className={styles.caseStudyContainer}>
