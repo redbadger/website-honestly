@@ -6,7 +6,7 @@ import { getPosts } from '../site/fetchers/instagram';
 import { getData } from '../site/fetchers/badger-brain';
 
 const initialState = {
-   contactUsURL: process.env.CONTACT_US_SERVICE_URL,
+  contactUsURL: process.env.CONTACT_US_SERVICE_URL,
 };
 
 const toLookupDict = (array, keyFn) =>
