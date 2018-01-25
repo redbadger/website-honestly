@@ -35,7 +35,7 @@ class ChecklistContactUs extends Component {
   render() {
     return (
       <section className={styles.contactUsContainer} id="contactUs">
-        <h2 className={styles.header}>Ways we can help you</h2>
+        <h2 className={styles.header}>We can help you</h2>
         <div className={styles.contentContainer}>
           <ul className={styles.list}>
             <li className={styles.item}>Create & validate new ideas</li>
