@@ -58,7 +58,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Events',
     key: 'events',
     route: 'events',
-    stateToProps: ({ events }) => ({ events }),
+    stateToProps: ({ events, eventsBanner }) => ({ events, eventsBanner }),
   },
   {
     title: ({ event }) => event.title,

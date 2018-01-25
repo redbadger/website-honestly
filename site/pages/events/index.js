@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Container from '../../components/container';
 import Section from '../../components/section';
 import styles from './style.css';
 import EventsList from './events-list';
 import EventsBanner from '../../components/events-banner';
 
-export default function Events({ events }) {
+export default function Events({ events, eventsBanner }) {
+  const { url, altText, desktop, tablet, mobile } = eventsBanner;
   return (
     <div className={styles.events}>
       <h1 className={styles.h1}>Events</h1>
-      <EventsBanner />
+      <EventsBanner url={url} altText={altText} desktop={desktop} tablet={tablet} mobile={mobile} />
       <Section>
         <Container>
           <EventsList events={events} timeline="today" />
@@ -22,5 +23,12 @@ export default function Events({ events }) {
 }
 
 Events.propTypes = {
-  events: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  events: PropTypes.arrayOf(PropTypes.object).isRequired,
+  eventsBanner: PropTypes.shape({
+    url: PropTypes.string,
+    altText: PropTypes.string,
+    desktop: PropTypes.string,
+    tablet: PropTypes.string,
+    mobile: PropTypes.string,
+  }),
 };

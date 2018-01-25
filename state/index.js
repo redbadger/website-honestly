@@ -31,6 +31,7 @@ const getSiteState = () =>
       instagramPosts,
       jobLookup: toLookupDict(jobs, j => j.slug),
       events: data.events,
+      eventsBanner: data.eventsBanner,
       eventLookup: toLookupDict(data.events, e => e.slug),
       badgers: data.badgers,
       badgerLookup: toLookupDict(data.badgers, b => b.slug),

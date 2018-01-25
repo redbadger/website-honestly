@@ -1,9 +1,6 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import ReactGA from 'react-ga';
 import styles from './style.css';
-import desktopBanner from './images/events-desktop-banner.jpg';
-import tabletBanner from './images/events-tablet-banner.jpg';
-import mobileBanner from './images/events-mobile-banner.jpg';
 
 const trackAnalytics = title => () =>
   ReactGA.event({
@@ -12,21 +9,27 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-const bannerAltText = 'Are you bold with technology? Join our webinar';
-
-export default function EventsBanner() {
+export default function EventsBanner({ url, altText, desktop, tablet, mobile }) {
   return (
     <div className={styles.bannerContainer}>
       <a
-        href="http://bit.ly/2Gb1Ata"
+        href={url}
         target="_blank"
         rel="noopener noreferrer"
         onClick={trackAnalytics('Webinar-events page -banner')}
       >
-        <img src={desktopBanner} alt={bannerAltText} className={styles.eventsDesktopBanner} />
-        <img src={tabletBanner} alt={bannerAltText} className={styles.eventsTabletBanner} />
-        <img src={mobileBanner} alt={bannerAltText} className={styles.eventsMobileBanner} />
+        <img src={desktop} alt={altText} className={styles.eventsDesktopBanner} />
+        <img src={tablet} alt={altText} className={styles.eventsTabletBanner} />
+        <img src={mobile} alt={altText} className={styles.eventsMobileBanner} />
       </a>
     </div>
   );
 }
+
+EventsBanner.propTypes = {
+  url: PropTypes.string,
+  altText: PropTypes.string,
+  desktop: PropTypes.string,
+  tablet: PropTypes.string,
+  mobile: PropTypes.string,
+};
