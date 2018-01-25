@@ -9,12 +9,14 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-const webinarLink = 'http://bit.ly/2h7jvFN';
+const webinarLink = 'https://www.youtube.com/playlist?list=PLW6ORi0XZU0DF9rlBzgro6YGTTm5DfPjb';
 
 export default () => (
   <section className={styles.webinar}>
     <div className={styles.webinarInner}>
-      <h2 className={styles.webinarText}>{'Missed our webinar on Serverless and GraphQL?'}</h2>
+      <h2 className={styles.webinarText}>
+        {'Did you miss our tech webinars on Serverless, GraphQL and more?'}
+      </h2>
       <a
         className={styles.webinarButton}
         href={webinarLink}
@@ -22,7 +24,7 @@ export default () => (
         rel="noopener noreferrer"
         onClick={trackAnalytics('Webinar-technology page -button')}
       >
-        Watch it now
+        Watch them now
       </a>
     </div>
   </section>

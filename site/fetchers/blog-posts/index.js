@@ -1,11 +1,10 @@
 /* @flow */
 
-import fetch from 'node-fetch';
 import take from 'lodash.take';
 import flatten from 'lodash.flatten';
 import moment from 'moment';
 import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
-import handleErrors from '../handle-errors';
+import fetchRetry from '../util/fetch-retry';
 
 const getQueryString = params => {
   return Object.keys(params)
@@ -41,16 +40,13 @@ export const mapDataToState = (data: Object): Array<BlogPost> =>
   }));
 
 const getPostsForTag = params =>
-  fetch(getUrl(params), { timeout: 10000 })
-    .then(handleErrors)
+  fetchRetry(getUrl(params), { timeout: 10000, retryDelay: 200 })
     .then(response => response.json())
     .then(json => {
       const posts = json.items;
-
       if (!posts) {
         return [];
       }
-
       if (json.pagination && json.pagination.nextPage) {
         const newParams = {
           ...params,
@@ -59,7 +55,6 @@ const getPostsForTag = params =>
 
         return getPostsForTag(newParams).then(newPosts => mapDataToState(posts.concat(newPosts)));
       }
-
       return mapDataToState(posts);
     });
 
