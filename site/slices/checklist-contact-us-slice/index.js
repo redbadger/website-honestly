@@ -5,6 +5,8 @@ import styles from './style.css';
 
 const cx = classnames.bind(styles);
 
+const mailToURL = 'mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20...';
+
 const trackAnalytics = title => () =>
   ReactGA.event({
     category: 'ContactUsForm',
@@ -35,7 +37,7 @@ class ChecklistContactUs extends Component {
   render() {
     return (
       <section className={styles.contactUsContainer} id="contactUs">
-        <h2 className={styles.header}>Ways we can help you</h2>
+        <h2 className={styles.header}>We can help you</h2>
         <div className={styles.contentContainer}>
           <ul className={styles.list}>
             <li className={styles.item}>Create & validate new ideas</li>
@@ -48,7 +50,7 @@ class ChecklistContactUs extends Component {
           <div className={cx(styles.imgContainer, this.state.isHovered ? 'isHovered' : '')} />
         </div>
         <a
-          href="mailto:hello@red-badger.com"
+          href={mailToURL}
           className={styles.button}
           onMouseEnter={this.onHover}
           onMouseLeave={this.onBlur}

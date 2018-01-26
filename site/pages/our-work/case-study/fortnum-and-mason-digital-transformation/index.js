@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Social from '../../../../components/social';
 import Picture from '../../../../components/picture';
 import Link from '../../../../components/link';
@@ -13,10 +13,6 @@ import headerS from './images/header-s.jpg';
 
 import styles from './style.css';
 
-type CaseStudyFMTeaProps = {
-  contactUsURL: string,
-};
-
 const social = {
   title: 'The proof is in the pudding.',
   description: 'The ongoing digital transformation of a 310-year old retailer',
@@ -24,7 +20,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason-digital-transformation',
 };
 
-const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
+const FMTeaCaseStudy = () => (
   <div>
     <Social {...social} />
     <div className={styles.header}>
@@ -147,7 +143,7 @@ const FMTeaCaseStudy = ({ contactUsURL }: CaseStudyFMTeaProps) => (
       </div>
     </div>
     <WhatToReadNext currentPage="fMTeaCaseStudy" linkKeys={['fortnumAndMason']} />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </div>
 );
 

@@ -11,7 +11,7 @@ import tabletRestaurantImage from './images/tablet-restaurant.png';
 import tabletCheckoutImage from './images/tablet-checkout.png';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
@@ -19,10 +19,6 @@ import ContactBox from '../../../../components/contact-box';
 import Picture from '../../../../components/picture';
 
 const cx = classnames.bind(styles);
-
-type CaseStudyFortnumAndMasonProps = {
-  contactUsURL: string,
-};
 
 const social = {
   title: 'The proof is in the pudding',
@@ -32,7 +28,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason',
 };
 
-const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProps) => (
+const CaseStudyFortnumAndMason = () => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -262,7 +258,7 @@ const CaseStudyFortnumAndMason = ({ contactUsURL }: CaseStudyFortnumAndMasonProp
       </div>
     </div>
     <WhatToReadNext currentPage="fortnumAndMason" linkKeys={['fMTeaCaseStudy']} />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </div>
 );
 

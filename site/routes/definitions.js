@@ -18,9 +18,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'homePage',
     route: '',
     defaults: { contactUs: false },
-    stateToProps: ({ featuredBlogPosts, contactUsURL }) => ({
+    stateToProps: ({ featuredBlogPosts }) => ({
       featuredBlogPosts,
-      contactUsURL,
     }),
   },
   {
@@ -38,8 +37,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'About us',
     key: 'aboutUsPage',
     route: 'about-us',
-    stateToProps: ({ contactUsURL, tweets, instagramPosts, qAndAs }) => ({
-      contactUsURL,
+    stateToProps: ({ tweets, instagramPosts, qAndAs }) => ({
       tweets,
       instagramPosts,
       qAndAs,
@@ -102,90 +100,60 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Retailer case study',
     key: 'retailerCaseStudy',
     route: 'our-work/case-study/retailer',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Fortnum & Mason case study',
     key: 'fortnumAndMasonCaseStudy',
     route: 'our-work/case-study/fortnum-and-mason',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Fortnum & Mason digital transformation',
     key: 'fMTeaCaseStudy',
     route: 'our-work/case-study/fortnum-and-mason-digital-transformation',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Financial Times case study',
     key: 'financialTimesCaseStudy',
     route: 'our-work/case-study/financial-times',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'BMW Virtual Museum case study',
     key: 'bmwCaseStudy',
     route: 'our-work/case-study/bmw',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'BBC Now case study',
     key: 'bbcCaseStudy',
     route: 'our-work/case-study/bbc-now',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Haller Foundation case study',
     key: 'hallerCaseStudy',
     route: 'our-work/case-study/haller',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Sky CMS case study',
     key: 'skyCMSCaseStudy',
     route: 'our-work/case-study/sky-cms',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Sky case study',
     key: 'skyCaseStudy',
     route: 'our-work/case-study/sky',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Bank case study',
     key: 'bankCaseStudy',
     route: 'our-work/case-study/financial-services-digital-transformation',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
   {
@@ -223,9 +191,6 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Camden market case study',
     key: 'camdenMarketCaseStudy',
     route: 'our-work/case-study/camden-market',
-    stateToProps: ({ contactUsURL }) => ({
-      contactUsURL,
-    }),
     parentKey: 'ourWorkPage',
   },
 ];

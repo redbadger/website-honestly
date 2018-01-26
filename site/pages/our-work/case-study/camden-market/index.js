@@ -12,11 +12,7 @@ import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
-
-type CaseStudyCamdenMarketProps = {
-  contactUsURL: string,
-};
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 const social = {
   title: 'The proof is in the pudding.',
@@ -26,8 +22,8 @@ const social = {
 };
 
 class CaseStudyCamdenMarket extends React.Component {
-  constructor(props: CaseStudyCamdenMarketProps) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       Shapes: undefined,
@@ -222,7 +218,7 @@ class CaseStudyCamdenMarket extends React.Component {
           </div>
         </div>
         <WhatToReadNext currentPage="camdenMarket" />
-        <ContactUs postURL={this.props.contactUsURL} />
+        <ChecklistContactUs />
       </div>
     );
   }

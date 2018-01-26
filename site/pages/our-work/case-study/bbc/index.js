@@ -2,17 +2,13 @@
 import React from 'react';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 import CaseStudyFrame from '../../../../components/case-study-frame';
 import CaseStudyHeader from '../../../../components/case-study-header';
 import CaseStudySection from '../../../../components/case-study-section';
 import PullQuote from '../../../../components/pull-quote';
 import headerImage from './images/header.jpg';
-
-type BBCCaseStudyProps = {
-  contactUsURL: string,
-};
 
 const social = {
   title: 'The proof is in the pudding',
@@ -21,7 +17,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/bbc-now',
 };
 
-const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) => (
+const BBCCaseStudy = () => (
   <CaseStudyFrame>
     <CaseStudyHeader
       title="BBC Now: Delivering a better customer experience, faster"
@@ -29,7 +25,6 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) => (
       headerImage={headerImage}
       headerImageAlt="Tablet device showing screenshot of BBC website"
       headerColor="#F2F3ED"
-      contactUsURL={contactUsURL}
       social={social}
     />
     <PullQuote
@@ -81,7 +76,7 @@ const BBCCaseStudy = ({ contactUsURL }: BBCCaseStudyProps) => (
     </CaseStudySection>
 
     <WhatToReadNext />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </CaseStudyFrame>
 );
 

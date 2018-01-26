@@ -4,7 +4,7 @@
 .contactUsContainer {
   composes: dividerYellow from "../../css/_divider.css";
   padding: 40px 20px;
-  padding-top: 60px;
+  padding-top: 30px;
   background-color: cainYellow;
   text-align: center;
 }

@@ -8,16 +8,12 @@ import techGraphImage from './images/tech-graph.jpg';
 import metaImage from './images/meta-image.jpg';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';
 
 const cx = classnames.bind(styles);
-
-type CaseStudyRetailerProps = {
-  contactUsURL: string,
-};
 
 const social = {
   title: 'The proof is in the pudding',
@@ -27,7 +23,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/retailer',
 };
 
-const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
+const CaseStudyRetailer = () => (
   <div className={styles.caseStudy}>
     <Social {...social} />
     <div className={styles.header}>
@@ -216,7 +212,7 @@ const CaseStudyRetailer = ({ contactUsURL }: CaseStudyRetailerProps) => (
       </Card>
     </div>
     <WhatToReadNext currentPage="retailer" />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </div>
 );
 

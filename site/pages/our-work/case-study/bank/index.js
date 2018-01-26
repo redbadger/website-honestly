@@ -16,13 +16,9 @@ import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
-import ContactUs from '../../../../slices/contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 const cx = classnames.bind(styles);
-
-type CaseStudyBankProps = {
-  contactUsURL: string,
-};
 
 const social = {
   title: 'The proof is in the pudding',
@@ -31,7 +27,7 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/financial-services-digital-transformation',
 };
 
-const CaseStudyBank = ({ contactUsURL }: CaseStudyBankProps) => (
+const CaseStudyBank = () => (
   <CaseStudyFrame>
     <Social {...social} />
     <div className={styles.header}>
@@ -314,7 +310,7 @@ const CaseStudyBank = ({ contactUsURL }: CaseStudyBankProps) => (
       </div>
     </div>
     <WhatToReadNext currentPage="bank" />
-    <ContactUs postURL={contactUsURL} />
+    <ChecklistContactUs />
   </CaseStudyFrame>
 );
 
