@@ -6,7 +6,7 @@ import EventsList from './events-list';
 import EventsBanner from '../../components/events-banner';
 
 export default function Events({ events, eventsBanner }) {
-  const { url, altText, desktopURL, tabletURL, mobileURL } = eventsBanner[0];
+  const { url, altText, desktopURL, tabletURL, mobileURL } = eventsBanner;
   return (
     <div className={styles.events}>
       <h1 className={styles.h1}>Events</h1>
@@ -30,11 +30,11 @@ export default function Events({ events, eventsBanner }) {
 
 Events.propTypes = {
   events: PropTypes.arrayOf(PropTypes.object).isRequired,
-  eventsBanner: PropTypes.arrayOf(PropTypes.shape({
-    url: PropTypes.string,
-    altText: PropTypes.string,
-    desktopURL: PropTypes.string,
-    tabletURL: PropTypes.string,
-    mobileURL: PropTypes.string,
-  })),
+  eventsBanner: PropTypes.shape({
+      url: PropTypes.string,
+      altText: PropTypes.string,
+      desktopURL: PropTypes.string,
+      tabletURL: PropTypes.string,
+      mobileURL: PropTypes.string,
+  }),
 };
