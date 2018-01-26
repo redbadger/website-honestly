@@ -3,8 +3,19 @@
 import take from 'lodash.take';
 import flatten from 'lodash.flatten';
 import moment from 'moment';
-import type { BlogPost } from '../../pages/home/blog-slice/blog-entry';
 import fetchRetry from '../util/fetch-retry';
+
+type Author = {
+  role: string,
+  name: string,
+};
+
+type BlogPost = {
+  slug: string,
+  category: string,
+  title: string,
+  author: Author,
+};
 
 const getQueryString = params => {
   return Object.keys(params)
