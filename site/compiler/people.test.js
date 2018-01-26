@@ -5,7 +5,6 @@ describe('site/compiler', () => {
   const baseState = {
     jobs: [],
     jobLookup: {},
-    contactUsURL: '',
     featuredBlogPosts: [],
     events: [],
     eventLookup: {},

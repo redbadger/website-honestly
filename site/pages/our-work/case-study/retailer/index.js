@@ -8,7 +8,7 @@ import techGraphImage from './images/tech-graph.jpg';
 import metaImage from './images/meta-image.jpg';
 
 import WhatToReadNext from '../what-to-read-next';
-import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';

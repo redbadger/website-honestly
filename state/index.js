@@ -5,10 +5,6 @@ import { getTweets } from '../site/fetchers/twitter';
 import { getPosts } from '../site/fetchers/instagram';
 import { getData } from '../site/fetchers/badger-brain';
 
-const initialState = {
-  contactUsURL: process.env.CONTACT_US_SERVICE_URL,
-};
-
 const toLookupDict = (array, keyFn) =>
   array.reduce(
     (obj, item, index) => ({
@@ -39,7 +35,6 @@ const getSiteState = () =>
         data,
       ],
     ) => ({
-      ...initialState,
       jobs,
       featuredBlogPosts,
       triedAndTestedBlogPosts,

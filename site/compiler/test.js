@@ -8,7 +8,6 @@ describe('site/compiler', () => {
         {
           jobs: [],
           jobLookup: {},
-          contactUsURL: '',
           featuredBlogPosts: [],
           events: [],
           eventLookup: {},
@@ -57,7 +56,6 @@ describe('site/compiler', () => {
             'software-engineer': 0,
             'ux-designer': 1,
           },
-          contactUsURL: '',
           featuredBlogPosts: [],
           events: [],
           eventLookup: {},
@@ -83,7 +81,6 @@ describe('site/compiler', () => {
         {
           jobs: [],
           jobLookup: {},
-          contactUsURL: '',
           featuredBlogPosts: [
             {
               slug: '2016/12/7/how-we-use-service-workers-on-red-badgers-new-website',
@@ -152,7 +149,6 @@ describe('site/compiler', () => {
         {
           jobs: [],
           jobLookup: {},
-          contactUsURL: '',
           featuredBlogPosts: [],
           events: [upcomingEvent, designingEvent],
           eventLookup: {

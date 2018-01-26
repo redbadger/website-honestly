@@ -12,7 +12,7 @@ import ListBox from '../../../../components/list-box';
 import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
-import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 const social = {

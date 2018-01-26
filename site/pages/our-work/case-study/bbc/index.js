@@ -2,7 +2,7 @@
 import React from 'react';
 
 import WhatToReadNext from '../what-to-read-next';
-import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 import CaseStudyFrame from '../../../../components/case-study-frame';
 import CaseStudyHeader from '../../../../components/case-study-header';

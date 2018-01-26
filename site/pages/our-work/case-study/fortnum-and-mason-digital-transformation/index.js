@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 import WhatToReadNext from '../what-to-read-next';
-import ChecklistContactUs from '../../../../slices/new-contact-us-slice';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Social from '../../../../components/social';
 import Picture from '../../../../components/picture';
 import Link from '../../../../components/link';

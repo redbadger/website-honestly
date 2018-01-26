@@ -6,14 +6,13 @@ import CaseStudyOverview from '../../components/case-study-overview';
 import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
-import ChecklistContactUs from '../../slices/new-contact-us-slice';
+import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
 import NewsLetter from './newsletter-slice';
 import Social from '../../components/social';
 
 import metaImage from './meta-image.png';
 
 export type HomePageProps = {
-  contactUsURL: string,
   featuredBlogPosts: Array<Object>,
 };
 
