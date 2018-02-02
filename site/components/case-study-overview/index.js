@@ -9,7 +9,7 @@ import camdenPNG from './PNG/camden.png';
 import cartrawlerPNG from './PNG/cartrawler.png';
 import financialTimesPNG from './PNG/financialtimes.png';
 import fortnumPNG from './PNG/fortnum.png';
-import lloydsPNG from './PNG/lloyds.png';
+import hsbcPNG from './PNG/hsbc.png';
 import selfridgesPNG from './PNG/selfridges.png';
 import skyPNG from './PNG/sky.png';
 import tescoPNG from './PNG/tesco.png';
@@ -98,7 +98,7 @@ const CaseStudyOverview = () => (
         <img alt="The logo of Tesco" src={tescoPNG} />
         <img alt="The logo of the BBC" src={bbcPNG} />
         <img alt="The logo of BMW" src={bmwPNG} />
-        <img alt="The logo of Lloyds Bank" src={lloydsPNG} />
+        <img alt="The logo of HSBC" src={hsbcPNG} />
         <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
       </div>
       <div className={styles.buttonContainer}>
