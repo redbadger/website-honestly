@@ -21,10 +21,8 @@ export const sanitiseAuthorBio = (bio: string = ''): string => {
   return (role && role[1]) || bio;
 };
 
-export const sanitiseExcerpt = (excerpt: string = ''): string => {
-  const text = excerpt.match(/<.+>(.*)<.+>/);
-  return (text && text[1]) || excerpt;
-};
+export const sanitiseExcerpt = (excerpt: string = ''): string =>
+  excerpt.replace(/<(?:.|\n)*?>/gm, '');
 
 export const mapDataToState = (data: Object): Array<BlogPost> =>
   data.map((post: Object): BlogPost => ({

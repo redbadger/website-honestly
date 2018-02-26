@@ -1,6 +1,6 @@
 import nock from 'nock';
 import { assert } from 'chai';
-import { mapDataToState, getBlogPosts } from '.';
+import { mapDataToState, getBlogPosts, sanitiseExcerpt } from '.';
 
 const fixture = () => [
   {
@@ -48,6 +48,14 @@ describe('featured blog posts fetcher', () => {
     const data = mapDataToState(fixture());
     const author = data[1].author;
     expect(author.role).to.equal('Project Manager');
+  });
+});
+
+describe('sanitiseExcerpt', () => {
+  it('removes html tags from string', () => {
+    const string = '<p>Hello i am a <span>string</span></p>';
+    const result = 'Hello i am a string';
+    expect(sanitiseExcerpt(string)).to.equal(result);
   });
 });
 
