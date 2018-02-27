@@ -1,11 +1,24 @@
-import React, { PropTypes } from 'react';
+// @flow
+
+import React from 'react';
 import Container from '../../components/container';
 import Section from '../../components/section';
 import styles from './style.css';
 import EventsList from './events-list';
 import EventsBanner from '../../components/events-banner';
 
-export default function Events({ events, eventsBanner }) {
+type Props = {
+  events: Array<Object>, // TODO: Add correct event type
+  eventsBanner: {
+    url: string,
+    altText: string,
+    desktopURL: string,
+    tabletURL: string,
+    mobileURL: string,
+  },
+};
+
+export default function Events({ events, eventsBanner }: Props) {
   const { url, altText, desktopURL, tabletURL, mobileURL } = eventsBanner;
   return (
     <div className={styles.events}>
@@ -27,14 +40,3 @@ export default function Events({ events, eventsBanner }) {
     </div>
   );
 }
-
-Events.propTypes = {
-  events: PropTypes.arrayOf(PropTypes.object).isRequired,
-  eventsBanner: PropTypes.shape({
-      url: PropTypes.string,
-      altText: PropTypes.string,
-      desktopURL: PropTypes.string,
-      tabletURL: PropTypes.string,
-      mobileURL: PropTypes.string,
-  }),
-};

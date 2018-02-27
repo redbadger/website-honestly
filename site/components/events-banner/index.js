@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+// @flow
+
+import React from 'react';
 import ReactGA from 'react-ga';
 import styles from './style.css';
 
@@ -9,7 +11,15 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-export default function EventsBanner({ url, altText, desktopURL, tabletURL, mobileURL }) {
+type Props = {
+  url: string,
+  altText: string,
+  desktopURL: string,
+  tabletURL: string,
+  mobileURL: string,
+};
+
+export default function EventsBanner({ url, altText, desktopURL, tabletURL, mobileURL }: Props) {
   return (
     <div className={styles.bannerContainer}>
       <a
@@ -25,11 +35,3 @@ export default function EventsBanner({ url, altText, desktopURL, tabletURL, mobi
     </div>
   );
 }
-
-EventsBanner.propTypes = {
-  url: PropTypes.string,
-  altText: PropTypes.string,
-  desktopURL: PropTypes.string,
-  tabletURL: PropTypes.string,
-  mobileURL: PropTypes.string,
-};
