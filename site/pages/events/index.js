@@ -9,7 +9,7 @@ import EventsBanner from '../../components/events-banner';
 
 type Props = {
   events: Array<Object>, // TODO: Add correct event type
-  eventsBanner: {
+  eventsBanner?: {
     url: string,
     altText: string,
     desktopURL: string,
@@ -19,17 +19,10 @@ type Props = {
 };
 
 export default function Events({ events, eventsBanner }: Props) {
-  const { url, altText, desktopURL, tabletURL, mobileURL } = eventsBanner;
   return (
     <div className={styles.events}>
       <h1 className={styles.h1}>Events</h1>
-      <EventsBanner
-        url={url}
-        altText={altText}
-        desktopURL={desktopURL}
-        tabletURL={tabletURL}
-        mobileURL={mobileURL}
-      />
+      {eventsBanner && <EventsBanner {...eventsBanner} />}
       <Section>
         <Container>
           <EventsList events={events} timeline="today" />
