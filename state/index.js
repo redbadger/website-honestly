@@ -17,26 +17,14 @@ const toLookupDict = (array, keyFn) =>
 const getSiteState = () =>
   Promise.all([
     getJobs(fetch, process.env.WORKABLE_API_KEY),
-    getBlogPosts(['featured']),
     getBlogPosts(['tried-and-tested', 'tried and tested'], 5),
     getBlogPosts(['growing-trends', 'growing trends'], 5),
     getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     getPosts(fetch),
     getData(),
   ]).then(
-    (
-      [
-        jobs,
-        featuredBlogPosts,
-        triedAndTestedBlogPosts,
-        growingTrendsBlogPosts,
-        tweets,
-        instagramPosts,
-        data,
-      ],
-    ) => ({
+    ([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, instagramPosts, data]) => ({
       jobs,
-      featuredBlogPosts,
       triedAndTestedBlogPosts,
       growingTrendsBlogPosts,
       tweets,

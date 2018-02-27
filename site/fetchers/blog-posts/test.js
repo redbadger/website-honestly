@@ -24,7 +24,7 @@ const fixture = () => [
   },
 ];
 
-describe('featured blog posts fetcher', () => {
+describe('blog posts fetcher', () => {
   it('returns an array of blog posts', () => {
     const data = mapDataToState(fixture());
     expect(Array.isArray(data)).to.equal(true);

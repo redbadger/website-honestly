@@ -8,7 +8,6 @@ describe('site/compiler', () => {
         {
           jobs: [],
           jobLookup: {},
-          featuredBlogPosts: [],
           events: [],
           eventLookup: {},
           badgers: [],
@@ -56,7 +55,6 @@ describe('site/compiler', () => {
             'software-engineer': 0,
             'ux-designer': 1,
           },
-          featuredBlogPosts: [],
           events: [],
           eventLookup: {},
           badgers: [],
@@ -74,39 +72,6 @@ describe('site/compiler', () => {
         'jobs/software-engineer/index.html',
         'jobs/ux-designer/index.html',
       ]);
-    });
-
-    it('renders the featured blogs of the site on the home page', () => {
-      const routes = expandRoutes(
-        {
-          jobs: [],
-          jobLookup: {},
-          featuredBlogPosts: [
-            {
-              slug: '2016/12/7/how-we-use-service-workers-on-red-badgers-new-website',
-              title: 'Service Worker support on Red Badgers new website',
-              author: {},
-            },
-            {
-              slug: '016/11/29/gitgithub-in-plain-english',
-              title: 'Git and Github in Plain English',
-              author: {},
-            },
-          ],
-          events: [],
-          eventLookup: {},
-          badgers: [],
-          badgerLookup: {},
-          categories: [],
-          instagramPosts: [],
-          tweets: [],
-        },
-        createStateNavigator(),
-      );
-
-      const filePaths = routes.map(r => r.filePath);
-
-      expect(filePaths).to.include.members(['index.html']);
     });
 
     it('renders the dynamic events pages of the site', () => {
@@ -149,7 +114,6 @@ describe('site/compiler', () => {
         {
           jobs: [],
           jobLookup: {},
-          featuredBlogPosts: [],
           events: [upcomingEvent, designingEvent],
           eventLookup: {
             'upcoming-event': 0,

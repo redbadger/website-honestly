@@ -18,9 +18,6 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'homePage',
     route: '',
     defaults: { contactUs: false },
-    stateToProps: ({ featuredBlogPosts }) => ({
-      featuredBlogPosts,
-    }),
   },
   {
     title: 'What we do',
