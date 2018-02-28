@@ -167,16 +167,24 @@ export function getData() {
         }
         order
       }
+      eventsBanner {
+        url
+        altText
+        desktopURL
+        tabletURL
+        mobileURL
+      }
     }
   `;
 
   return fetch(badgerBrainEndpoint, getRequestOptions(body))
     .then(handleErrors)
     .then(response => response.json())
-    .then(({ data: { allEvents, allBadgers, allQnA } }) => ({
+    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner } }) => ({
       events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
       badgers: sortBadgers(allBadgers),
       categories: getCategories(allBadgers),
       qAndAs: selectValidQandAs(allQnA),
+      eventsBanner,
     }));
 }

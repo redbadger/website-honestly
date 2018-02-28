@@ -1,9 +1,8 @@
+// @flow
+
 import React from 'react';
 import ReactGA from 'react-ga';
 import styles from './style.css';
-import desktopBanner from './images/events-desktop-banner.jpg';
-import tabletBanner from './images/events-tablet-banner.jpg';
-import mobileBanner from './images/events-mobile-banner.jpg';
 
 const trackAnalytics = title => () =>
   ReactGA.event({
@@ -12,20 +11,26 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-const bannerAltText = 'Are you bold with technology? Join our webinar';
+type Props = {
+  url: string,
+  altText: string,
+  desktopURL: string,
+  tabletURL: string,
+  mobileURL: string,
+};
 
-export default function EventsBanner() {
+export default function EventsBanner({ url, altText, desktopURL, tabletURL, mobileURL }: Props) {
   return (
     <div className={styles.bannerContainer}>
       <a
-        href="http://bit.ly/2Gb1Ata"
+        href={url}
         target="_blank"
         rel="noopener noreferrer"
         onClick={trackAnalytics('Webinar-events page -banner')}
       >
-        <img src={desktopBanner} alt={bannerAltText} className={styles.eventsDesktopBanner} />
-        <img src={tabletBanner} alt={bannerAltText} className={styles.eventsTabletBanner} />
-        <img src={mobileBanner} alt={bannerAltText} className={styles.eventsMobileBanner} />
+        <img src={desktopURL} alt={altText} className={styles.eventsDesktopBanner} />
+        <img src={tabletURL} alt={altText} className={styles.eventsTabletBanner} />
+        <img src={mobileURL} alt={altText} className={styles.eventsMobileBanner} />
       </a>
     </div>
   );
