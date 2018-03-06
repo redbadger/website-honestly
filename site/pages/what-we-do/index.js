@@ -5,6 +5,8 @@ import HeaderSlice from './header-slice';
 import TechSlice from '../../slices/tech-slice';
 import TriangleSlice from './triangle-slice';
 import LeanAgileSlice from './lean-agile-slice';
+import LeanSlice from './lean-slice';
+import CrossFunctionalSlice from './cross-functional-slice';
 import Link from '../../components/link';
 import Social from '../../components/social';
 
@@ -113,6 +115,7 @@ export default function whatWeDo() {
       <HeaderSlice />
       <TriangleSlice />
       <LeanAgileSlice />
+      <CrossFunctionalSlice />
       <TechSlice />
       <CaseStudies />
     </div>

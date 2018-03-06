@@ -1,0 +1,55 @@
+@value badgerRed, badgerBlack, badgerWhite, cainYellow, daveGreen, stuBlue from "../../../css/_colors.css";
+
+.widthContainer {
+  max-width: contentMaxWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crossFunctionalSlice {
+  color: badgerWhite;
+  background-color: badgerBlack;
+  padding: 30px 20px 40px 20px;
+  text-align: left;
+}
+
+.heading {
+  composes: widthContainer;
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontL from "../../../css/typography/_fonts.css";
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subHeading {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontM from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 1px 15px;
+}
+
+.blueSubHeading {
+  composes: subHeading;
+  background-color: stuBlue;
+}
+.greenSubHeading {
+  composes: subHeading;
+  background-color: daveGreen;
+}
+
+.yellowSubHeading {
+  composes: subHeading;
+  background-color: cainYellow;
+}
+.redSubHeading {
+  composes: subHeading;
+  background-color:badgerRed;
+}
+
+.detail {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontM2 from "../../../css/typography/_fonts.css";
+}
