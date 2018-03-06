@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
-import LoopSlice from './loop-slice';
+import HeaderSlice from './header-slice';
 import TechSlice from '../../slices/tech-slice';
 import TriangleSlice from './triangle-slice';
 import LeanSlice from './lean-slice';
@@ -110,7 +110,7 @@ export default function whatWeDo() {
   return (
     <div>
       <Social {...social} />
-      <LoopSlice />
+      <HeaderSlice />
       <TriangleSlice />
       <LeanSlice />
       <TechSlice />

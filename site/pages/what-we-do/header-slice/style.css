@@ -1,0 +1,58 @@
+@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
+
+.pageHeaderContainer {
+  display: flex;
+  composes: dividerWhite from "../../../css/_divider.css";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: badgerWhite;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.pageHeaderContainer .left {
+  text-align: left;
+  margin-right: 80px;
+}
+
+.pageHeaderContainer .right {
+  text-align: right;
+  margin-left: 80px;
+}
+
+.flexible {
+  display: flex;
+}
+
+.pageHeader {
+  composes: fontXL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+}
+
+.pageSubHeader {
+  width: 100%;
+  color: badgerRedOnWhite;
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.arrowUp {
+  width: 183px;
+  height: 116px;
+  transform: rotate(-165deg);
+  margin-top: auto;
+  margin-right: 60px;
+}
+
+.arrowDown {
+  width: 183px;
+  height: 116px;
+  margin-top: auto;
+  margin-bottom: 5px;
+  margin-left: 40px;
+}
