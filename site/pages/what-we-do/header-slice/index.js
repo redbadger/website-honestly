@@ -25,6 +25,10 @@ const headerSlice = () => {
         </div>
         <h3 className={styles.pageSubHeader}>Delivery</h3>
       </div>
+      <div className={styles.subtitle}>
+        We help you bring innovative products and services to market through nimble and robust ways
+        of working.
+      </div>
     </div>
   );
 };

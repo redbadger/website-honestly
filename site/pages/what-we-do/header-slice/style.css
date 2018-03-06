@@ -1,6 +1,9 @@
 @value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
+@value mediumScreen from "../../../css/_sizes.css";
 
 .pageHeaderContainer {
+  width: 790px;
+  margin: 0 auto;
   display: flex;
   composes: dividerWhite from "../../../css/_divider.css";
   align-items: center;
@@ -13,12 +16,12 @@
 
 .pageHeaderContainer .left {
   text-align: left;
-  margin-right: 80px;
+  margin-right: auto;
 }
 
 .pageHeaderContainer .right {
   text-align: right;
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .flexible {
@@ -47,6 +50,7 @@
   transform: rotate(-165deg);
   margin-top: auto;
   margin-right: 60px;
+  margin-left: auto;
 }
 
 .arrowDown {
@@ -55,4 +59,40 @@
   margin-top: auto;
   margin-bottom: 5px;
   margin-left: 40px;
+}
+
+.subtitle {
+  width: 790px;
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.25;
+  margin-top: 30px;
+}
+
+@media mediumScreen {
+  .pageHeaderContainer {
+    width: 610px;
+  }
+
+  .pageSubHeader {
+    composes: fontS from "../../../css/typography/_fonts.css";
+  }
+
+  .arrowUp {
+    width: 140px;
+    height: 105px;
+    margin-right: 50px;
+  }
+
+  .arrowDown {
+    width: 140px;
+    height: 105px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    width: 610px;
+  }
 }
