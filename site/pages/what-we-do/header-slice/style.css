@@ -1,8 +1,8 @@
 @value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
-@value mediumScreen from "../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .pageHeaderContainer {
-  width: 790px;
+  width: 280px;
   margin: 0 auto;
   display: flex;
   composes: dividerWhite from "../../../css/_divider.css";
@@ -29,8 +29,8 @@
 }
 
 .pageHeader {
-  composes: fontXL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
+  font-size: 40px;
   color: badgerBlack;
 }
 
@@ -41,34 +41,36 @@
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
   font-weight: bold;
   margin-bottom: 5px;
-  margin-top: 15px;
+  margin-top: 10px;
+}
+
+.arrow {
+  width: 60px;
+  height: 40px;
 }
 
 .arrowUp {
-  width: 183px;
-  height: 116px;
-  transform: rotate(-165deg);
-  margin-top: auto;
-  margin-right: 60px;
+  composes: arrow;
+  transform: rotate(-170deg);
+  margin-top: 15px;
   margin-left: auto;
 }
 
 .arrowDown {
-  width: 183px;
-  height: 116px;
+  composes: arrow;
+  transform: rotate(15deg);
   margin-top: auto;
-  margin-bottom: 5px;
-  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 .subtitle {
-  width: 790px;
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
   font-weight: bold;
-  font-size: 32px;
   text-align: center;
   line-height: 1.25;
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 100%;
 }
 
 @media mediumScreen {
@@ -76,23 +78,64 @@
     width: 610px;
   }
 
+  .pageHeader {
+    font-size: 60px;
+  }
+
   .pageSubHeader {
     composes: fontS from "../../../css/typography/_fonts.css";
   }
 
-  .arrowUp {
+  .arrow {
     width: 140px;
     height: 105px;
-    margin-right: 50px;
+  }
+
+  .arrowUp {
+    margin-right: 30px;
+    margin-top: auto;
   }
 
   .arrowDown {
-    width: 140px;
-    height: 105px;
+    transform: rotate(-5deg);
+    margin-left: 40px;
+    margin-bottom: 0;
   }
 
   .subtitle {
     font-size: 24px;
-    width: 610px;
+  }
+}
+
+@media largeScreen {
+  .pageHeaderContainer {
+    width: 790px;
+  }
+
+  .pageHeader {
+    font-size: 90px;
+  }
+
+  .pageSubHeader {
+    composes: fontM from "../../../css/typography/_fonts.css";
+    margin-top: 15px;
+  }
+
+  .arrow {
+    width: 183px;
+    height: 116px;
+  }
+
+  .arrowUp {
+    margin-right: 60px;
+  }
+
+  .arrowDown {
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    margin-top: 30px;
   }
 }
