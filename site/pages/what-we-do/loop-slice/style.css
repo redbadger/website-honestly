@@ -1,0 +1,18 @@
+.pageHeaderContainer {
+  display: flex;
+  composes: dividerWhite from "../../../css/_divider.css";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: badgerWhite;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.pageHeader {
+  composes: fontXL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  text-align: center;
+  margin: 0px 30px;
+  color: badgerBlack;
+}
