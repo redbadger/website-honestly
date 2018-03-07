@@ -4,7 +4,7 @@ import arrowImg from './arrow.png';
 
 const headerSlice = () => {
   return (
-    <div className={styles.pageHeaderContainer}>
+    <section className={styles.pageHeaderContainer}>
       <div className={styles.left}>
         <div className={styles.flexible}>
           <h1 className={styles.pageHeader}>
@@ -29,7 +29,7 @@ const headerSlice = () => {
         We help you bring innovative products and services to market through nimble and robust ways
         of working.
       </div>
-    </div>
+    </section>
   );
 };
 export default headerSlice;
