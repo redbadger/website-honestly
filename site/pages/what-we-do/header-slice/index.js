@@ -8,27 +8,25 @@ const headerSlice = () => {
       <div className={styles.left}>
         <div className={styles.flexible}>
           <h1 className={styles.pageHeader}>
-            <p>Do the</p>
-            <p>right thing</p>
+            Do the<br />right thing
           </h1>
-          <img role="presentation" className={styles.arrowDown} src={arrowImg} />
+          <img alt="" className={styles.arrowDown} src={arrowImg} />
         </div>
         <h3 className={styles.pageSubHeader}>Innovation</h3>
       </div>
       <div className={styles.right}>
         <div className={styles.flexible}>
-          <img role="presentation" className={styles.arrowUp} src={arrowImg} />
+          <img alt="" className={styles.arrowUp} src={arrowImg} />
           <h1 className={styles.pageHeader}>
-            <p>Do the</p>
-            <p>thing right</p>
+            Do the<br />thing right
           </h1>
         </div>
         <h3 className={styles.pageSubHeader}>Delivery</h3>
       </div>
-      <div className={styles.subtitle}>
+      <p className={styles.subtitle}>
         We help you bring innovative products and services to market through nimble and robust ways
         of working.
-      </div>
+      </p>
     </section>
   );
 };
