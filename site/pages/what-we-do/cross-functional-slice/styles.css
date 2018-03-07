@@ -1,4 +1,5 @@
 @value badgerRed, badgerBlack, badgerWhite, cainYellow, daveGreen, stuBlue from "../../../css/_colors.css";
+@value contentMaxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .widthContainer {
   max-width: contentMaxWidth;
@@ -9,8 +10,24 @@
 .crossFunctionalSlice {
   color: badgerWhite;
   background-color: badgerBlack;
-  /* padding: 30px 20px 40px 20px; */
   text-align: left;
+}
+
+.photoContainer {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.sliceBody {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.headingContainer {
+  width: 70%;
+  margin: 0 auto;
+  background-color: badgerBlack;
 }
 
 .heading {
@@ -29,18 +46,23 @@
 .imageContainer {
   margin: 0 auto;
   padding: 0 30px;
+  width: 260px;
 }
 
-.textContainer {
+.list {
   padding-left: 20px;
   padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .subHeading {
   composes: serif from "../../../css/typography/_fonts.css";
-  composes: fontM from "../../../css/typography/_fonts.css";
+  font-size: 24px;
+  line-height: 1.2em;
   color: badgerBlack;
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px 0 4px;
   padding: 1px 15px;
 }
 
@@ -60,9 +82,94 @@
 .redSubHeading {
   composes: subHeading;
   background-color:badgerRed;
+  color: badgerWhite;
 }
 
 .detail {
   composes: lightSerif from "../../../css/typography/_fonts.css";
-  composes: fontM2 from "../../../css/typography/_fonts.css";
+  /* composes: fontM2 from "../../../css/typography/_fonts.css"; */
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #F8F8F8;
+}
+
+a {
+  position: relative;
+}
+
+a .detail:hover {
+  border-bottom: 2px solid badgerRed;
+}
+
+.arrowLink {
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+}
+
+
+@media mediumScreen {
+  .headingContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .heading {
+    margin: 42px 0 30px;
+  }
+
+  .imageContainer {
+    padding: 0;
+  }
+  
+  .list {
+    padding: 40px 0 0 60px;
+  }
+
+  .listItem {
+    width: 50%;
+    padding: 0 20px 30px;
+  }
+
+  .subHeading {
+    margin-top: 0;
+  }
+}
+
+@media largeScreen {
+  .arrowContainer {
+    position: absolute;
+    margin-top: 4px;
+  }
+  .arrowLink {
+    height: 20px;
+    width: 20px;
+  }
+  .outerHeadingContainer {
+    position: absolute;
+    top: -250px;
+  }
+
+  .mainContainer {
+    margin-top: 170px;
+  }
+
+  .headingContainer {
+    width: 90%;
+  }
+  .heading {
+    padding: 20px 60px 0;
+  }
+
+  .listItem {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .subHeading {
+    display: block;
+    text-align: center;
+    padding: 1px 0;
+  }
 }
