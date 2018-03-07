@@ -114,22 +114,135 @@
 .stepDescription {
   composes: fontXS from "../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
 }
 
 @media mediumScreen {
+  .leanAgileHeader {
+    font-size: 40px;
+    max-width: 340px;
+  }
+
   .smallLoopImage, .stepHeader, .stepPaddingBottom {
     display: none;
   }
 
+  .loopContainer {
+    height: 700px;
+    margin: 0;
+  }
+
+  .word {
+    font-size: 30px;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .wordLeft {
+    top: 20%;
+    left: 50%;
+  }
+
+  .wordRight {
+    left: 50%;
+    top: auto;
+    bottom: 18%;
+  }
+
+  .steps {
+    margin-top: 130px;
+    margin-bottom: 110px;
+  }
+
   .largeLoopImage {
     display: block;
-    height: 750px;
+    height: 700px;
   }
 
   .step {
-    position: static;
+    position: absolute;
     padding-left: 0;
     padding-bottom: 0;
     border-left: none;
+  }
+
+  .marker {
+    left: 0;
+  }
+
+  .stepContent {
+    position: absolute;
+  }
+
+  .stepSubHeader {
+    font-size: 16px;
+  }
+
+  .steps .step:nth-of-type(1) {
+    top: 8px;
+    left: 191px;
+  }
+
+  .steps .step:nth-of-type(1) .stepContent {
+    width: 160px;
+    top: -100px;
+    left: 5px;
+  }
+
+  .steps .step:nth-of-type(2) {
+    top: 137px;
+    left: 280px;
+  }
+
+  .steps .step:nth-of-type(2) .stepContent {
+    left: 30px;
+    width: 200px;
+  }
+
+  .steps .step:nth-of-type(3) {
+    top: 285px;
+    left: 191px;
+  }
+
+  .steps .step:nth-of-type(3) .stepContent {
+    left: 30px;
+    width: 160px;
+  }
+
+  .steps .step:nth-of-type(4) {
+    top: 396px;
+    left: 80px;
+  }
+
+  .steps .step:nth-of-type(4) .stepContent {
+    text-align: right;
+    top: -77px;
+    left: -190px;
+    width: 170px;
+  }
+
+  .steps .step:nth-of-type(5) {
+    top: 533px;
+    left: -3px;
+  }
+
+  .steps .step:nth-of-type(5) .stepContent {
+    text-align: right;
+    top: 0;
+    left: -155px;
+    width: 140px;
+  }
+
+  .steps .step:nth-of-type(6) {
+    top: 669px;
+    left: 80px;
+  }
+
+  .steps .step:nth-of-type(6) .stepContent {
+    text-align: right;
+    top: 25px;
+    left: -243px;
+    width: 250px;
   }
 }
