@@ -5,8 +5,8 @@ import loopImgSVG from './smallLoop.svg';
 
 const leanAgileSlice = () => {
   return (
-    <section>
-      <h2 className={styles.processJourneyHeader}>Our flexible lean and agile process</h2>
+    <section className={styles.leanAgileSlice}>
+      <h2 className={styles.leanAgileHeader}>Our flexible lean and agile process</h2>
       <div className={styles.loopContainer}>
         <InlineSVG src={loopImgSVG} className={styles.loopImage} />
         <span className={styles.wordLeft}>Innovation</span>
