@@ -37,6 +37,7 @@ const CaseStudyFortnumAndMason = () => (
         largeSrc={headerImageLarge}
         mediumSrc={headerImageMedium}
         smallSrc={headerImageSmall}
+        alt="Fortnum and Mason logo embellished by gold scrolls"
       />
     </div>
     <div className={styles.content}>
