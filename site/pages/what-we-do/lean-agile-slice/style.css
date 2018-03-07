@@ -1,4 +1,5 @@
-@value badgerRed, badgerBlack from "../../../css/_colors.css";
+@value badgerRed, badgerBlack, badgerWhite from "../../../css/_colors.css";
+@value largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .leanAgileSlice {
   padding: 30px 0;
@@ -32,20 +33,24 @@
 
 .wordLeft {
   composes: word;
-  left: 20px;
+  left: 0;
 }
 
 .wordRight {
   composes: word;
-  right: 20px;
+  right: 0;
 }
 
-.loopImage {
+.largeLoopImage {
+  display: none;
+}
+
+.smallLoopImage {
   display: inline-block;
   width: 100%;
 }
 
-.loopImage svg {
+.smallLoopImage svg {
   width: 100%;
   height: 127px;
 }
@@ -53,26 +58,25 @@
 .steps {
   max-width: 290px;
   margin: 0 auto;
+  position: relative;
+}
+
+.stepHeader {
+  composes: fontM2 from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .stepInnovationHeader {
-  composes: fontM2 from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
-  text-transform: uppercase;
+  composes: stepHeader;
   border-left: 5px dashed badgerBlack;
-  padding-left: 18px;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 .stepDeliveryHeader {
-  composes: fontM2 from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
-  text-transform: uppercase;
+  composes: stepHeader;
   border-left: 5px solid badgerBlack;
-  padding-left: 18px;
-  padding-top: 10px;
-  padding-bottom: 20px;
 }
 
 .step {
@@ -89,13 +93,14 @@
 }
 
 .marker {
-  width: 18px;
-  height: 18px;
-  background: badgerRed;
-  border-radius: 9px;
   position: absolute;
-  left: -12px;
+  left: -9px;
   top: 0;
+  width: 13px;
+  height: 13px;
+  background: badgerBlack;
+  border-radius: 9px;
+  box-shadow: 0 0 0 5px badgerWhite;
 }
 
 .stepSubHeader {
@@ -109,4 +114,22 @@
 .stepDescription {
   composes: fontXS from "../../../css/typography/_fonts.css";
   composes: sansSerif from "../../../css/typography/_fonts.css";
+}
+
+@media mediumScreen {
+  .smallLoopImage, .stepHeader, .stepPaddingBottom {
+    display: none;
+  }
+
+  .largeLoopImage {
+    display: block;
+    height: 750px;
+  }
+
+  .step {
+    position: static;
+    padding-left: 0;
+    padding-bottom: 0;
+    border-left: none;
+  }
 }

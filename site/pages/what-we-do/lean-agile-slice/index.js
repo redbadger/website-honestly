@@ -1,18 +1,20 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
-import loopImgSVG from './smallLoop.svg';
+import smallLoopImg from './smallLoop.svg';
+import largeLoopImg from './loop.svg';
 
 const leanAgileSlice = () => {
   return (
     <section className={styles.leanAgileSlice}>
       <h2 className={styles.leanAgileHeader}>Our flexible lean and agile process</h2>
-      <div className={styles.loopContainer}>
-        <InlineSVG src={loopImgSVG} className={styles.loopImage} />
-        <span className={styles.wordLeft}>Innovation</span>
-        <span className={styles.wordRight}>Delivery</span>
-      </div>
       <div className={styles.steps}>
+        <div className={styles.loopContainer}>
+          <InlineSVG src={smallLoopImg} className={styles.smallLoopImage} />
+          <InlineSVG src={largeLoopImg} className={styles.largeLoopImage} />
+          <span className={styles.wordLeft}>Innovation</span>
+          <span className={styles.wordRight}>Delivery</span>
+        </div>
         <h3 className={styles.stepInnovationHeader}>Innovation</h3>
         <div className={styles.step}>
           <div className={styles.marker} />
