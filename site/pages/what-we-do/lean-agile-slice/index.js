@@ -2,7 +2,56 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 import smallLoopImg from './smallLoop.svg';
-import largeLoopImg from './loop.svg';
+import largeLoopImg from './largeLoop.svg';
+
+const innovationSteps = [
+  {
+    subHeader: 'Research',
+    description: 'We’ll understand your business and your target audience',
+  },
+  {
+    subHeader: 'Ideate',
+    description:
+      'Together we’ll define the problem to be solved and develop a range of possible solutions',
+  },
+  {
+    subHeader: 'Test',
+    description: 'Let’s learn fast and cheaply discard unfeasible solutions',
+  },
+];
+
+const deliverySteps = [
+  {
+    subHeader: 'Backlog',
+    description: 'Together we’ll prioritise and validate solutions as concrete initiatives',
+  },
+  {
+    subHeader: 'Execute',
+    description: 'We’ll deliver great quality products and services with speed',
+  },
+  {
+    subHeader: 'Optimise',
+    description:
+      'Together we’ll constantly measure and learn to look out for new opportunities and improvements',
+  },
+];
+
+type StepProps = {
+  subHeader: string,
+  description: string,
+};
+
+const renderStep = ({ subHeader, description }: StepProps) => {
+  return (
+    <div key={subHeader} className={styles.step}>
+      <div className={styles.marker} />
+      <div className={styles.stepContent}>
+        <h4 className={styles.stepSubHeader}>{subHeader}</h4>
+        <p className={styles.stepDescription}>{description}</p>
+      </div>
+    </div>
+  );
+};
 
 const leanAgileSlice = () => {
   return (
@@ -12,68 +61,14 @@ const leanAgileSlice = () => {
         <div className={styles.loopContainer}>
           <InlineSVG src={smallLoopImg} className={styles.smallLoopImage} />
           <InlineSVG src={largeLoopImg} className={styles.largeLoopImage} />
-          <span className={styles.wordLeft}>Innovation</span>
-          <span className={styles.wordRight}>Delivery</span>
+          <div className={styles.wordLeft}>Innovation</div>
+          <div className={styles.wordRight}>Delivery</div>
         </div>
-        <h3 className={styles.stepInnovationHeader}>Innovation</h3>
         <div>
-          <div className={styles.step}>
-            <div className={styles.marker} />
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepSubHeader}>Research</h4>
-              <p className={styles.stepDescription}>
-                We’ll understand your business and your target audience
-              </p>
-            </div>
-          </div>
-          <div className={styles.step}>
-            <div className={styles.marker} />
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepSubHeader}>Ideate</h4>
-              <p className={styles.stepDescription}>
-                Together we’ll define the problem to be solved and develop a range of possible
-                solutions
-              </p>
-            </div>
-          </div>
-          <div className={styles.step}>
-            <div className={styles.marker} />
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepSubHeader}>Test</h4>
-              <p className={styles.stepDescription}>
-                Let’s learn fast and cheaply discard unfeasible solutions
-              </p>
-            </div>
-          </div>
+          <h3 className={styles.stepInnovationHeader}>Innovation</h3>
+          {innovationSteps.map(renderStep)}
           <h3 className={styles.stepDeliveryHeader}>Delivery</h3>
-          <div className={styles.step}>
-            <div className={styles.marker} />
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepSubHeader}>Backlog</h4>
-              <p className={styles.stepDescription}>
-                Together we’ll prioritise and validate solutions as concrete initiatives
-              </p>
-            </div>
-          </div>
-          <div className={styles.step}>
-            <div className={styles.marker} />
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepSubHeader}>Execute</h4>
-              <p className={styles.stepDescription}>
-                We’ll deliver great quality products and services with speed
-              </p>
-            </div>
-          </div>
-          <div className={styles.step}>
-            <div className={styles.marker} />
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepSubHeader}>Optimise</h4>
-              <p className={styles.stepDescription}>
-                Together we’ll constantly measure and learn to look out for new opportunities and
-                improvements
-              </p>
-            </div>
-          </div>
+          {deliverySteps.map(renderStep)}
           <div className={styles.stepPaddingBottom} />
         </div>
       </div>
