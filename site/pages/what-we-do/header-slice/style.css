@@ -14,12 +14,12 @@
   padding-bottom: 60px;
 }
 
-.pageHeaderContainer .left {
+.left {
   text-align: left;
   margin-right: auto;
 }
 
-.pageHeaderContainer .right {
+.right {
   text-align: right;
   margin-left: auto;
 }
