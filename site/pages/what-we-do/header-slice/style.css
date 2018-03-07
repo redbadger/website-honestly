@@ -30,7 +30,7 @@
 
 .pageHeader {
   composes: serif from "../../../css/typography/_fonts.css";
-  font-size: 40px;
+  composes: fontXL from "../../../css/typography/_fonts.css";
   color: badgerBlack;
 }
 
@@ -39,7 +39,6 @@
   color: badgerRedOnWhite;
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  font-weight: bold;
   margin-bottom: 5px;
   margin-top: 10px;
 }
@@ -64,12 +63,10 @@
 }
 
 .subtitle {
+  composes: fontXS from "../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  font-weight: bold;
   text-align: center;
-  line-height: 1.25;
   margin-top: 20px;
-  font-size: 16px;
   width: 100%;
 }
 
@@ -78,22 +75,14 @@
     width: 610px;
   }
 
-  .pageHeader {
-    font-size: 60px;
-  }
-
-  .pageSubHeader {
-    composes: fontS from "../../../css/typography/_fonts.css";
-  }
-
   .arrow {
     width: 140px;
     height: 105px;
   }
 
   .arrowUp {
-    margin-right: 30px;
     margin-top: auto;
+    margin-right: 30px;
   }
 
   .arrowDown {
@@ -103,7 +92,7 @@
   }
 
   .subtitle {
-    font-size: 24px;
+    composes: fontS from "../../../css/typography/_fonts.css";
   }
 }
 
@@ -112,12 +101,7 @@
     width: 790px;
   }
 
-  .pageHeader {
-    font-size: 90px;
-  }
-
   .pageSubHeader {
-    composes: fontM from "../../../css/typography/_fonts.css";
     margin-top: 15px;
   }
 
@@ -130,12 +114,7 @@
     margin-right: 60px;
   }
 
-  .arrowDown {
-    margin-bottom: 0;
-  }
-
   .subtitle {
-    font-size: 32px;
     margin-top: 30px;
   }
 }
