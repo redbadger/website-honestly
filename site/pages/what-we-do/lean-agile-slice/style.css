@@ -1,4 +1,4 @@
-@value badgerRed, badgerBlack, badgerWhite from "../../../css/_colors.css";
+@value badgerRed, badgerBlack, mauve, badgerWhite from "../../../css/_colors.css";
 @value largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .leanAgileSlice {
@@ -15,8 +15,7 @@
 
 .loopContainer {
   position: relative;
-  max-width: 335px;
-  height: 127px;
+  height: 124px;
   margin: 30px auto;
   text-align: center;
 }
@@ -51,8 +50,8 @@
 }
 
 .smallLoopImage svg {
-  width: 100%;
-  height: 127px;
+  width: 290px;
+  height: 124px;
 }
 
 .steps {
@@ -71,24 +70,24 @@
 
 .stepInnovationHeader {
   composes: stepHeader;
-  border-left: 5px dashed badgerBlack;
+  border-left: 5px dashed mauve;
 }
 
 .stepDeliveryHeader {
   composes: stepHeader;
-  border-left: 5px solid badgerBlack;
+  border-left: 5px solid mauve;
 }
 
 .step {
   position: relative;
   padding-left: 18px;
   padding-bottom: 20px;
-  border-left: 5px solid badgerBlack;
+  border-left: 5px solid mauve;
 }
 
 .stepPaddingBottom {
   height: 38px;
-  border-left: 5px dashed badgerBlack;
+  border-left: 5px dashed mauve;
   margin-top: 4px;
 }
 
@@ -157,6 +156,7 @@
 
   .largeLoopImage {
     display: block;
+    width: 290px;
     height: 700px;
   }
 
@@ -179,70 +179,182 @@
     font-size: 16px;
   }
 
-  .steps .step:nth-of-type(1) {
+  .step:nth-of-type(1) {
     top: 8px;
     left: 191px;
   }
 
-  .steps .step:nth-of-type(1) .stepContent {
+  .step:nth-of-type(1) .stepContent {
     width: 160px;
     top: -100px;
     left: 5px;
   }
 
-  .steps .step:nth-of-type(2) {
+  .step:nth-of-type(2) {
     top: 137px;
     left: 280px;
   }
 
-  .steps .step:nth-of-type(2) .stepContent {
+  .step:nth-of-type(2) .stepContent {
     left: 30px;
     width: 200px;
   }
 
-  .steps .step:nth-of-type(3) {
+  .step:nth-of-type(3) {
     top: 285px;
     left: 191px;
   }
 
-  .steps .step:nth-of-type(3) .stepContent {
+  .step:nth-of-type(3) .stepContent {
     left: 30px;
     width: 160px;
   }
 
-  .steps .step:nth-of-type(4) {
+  .step:nth-of-type(4) {
     top: 396px;
     left: 80px;
   }
 
-  .steps .step:nth-of-type(4) .stepContent {
+  .step:nth-of-type(4) .stepContent {
     text-align: right;
     top: -77px;
     left: -190px;
     width: 170px;
   }
 
-  .steps .step:nth-of-type(5) {
+  .step:nth-of-type(5) {
     top: 533px;
     left: -3px;
   }
 
-  .steps .step:nth-of-type(5) .stepContent {
+  .step:nth-of-type(5) .stepContent {
     text-align: right;
     top: 0;
     left: -155px;
     width: 140px;
   }
 
-  .steps .step:nth-of-type(6) {
+  .step:nth-of-type(6) {
     top: 669px;
     left: 80px;
   }
 
-  .steps .step:nth-of-type(6) .stepContent {
+  .step:nth-of-type(6) .stepContent {
     text-align: right;
     top: 25px;
     left: -243px;
     width: 250px;
+  }
+}
+
+@media largeScreen {
+  .leanAgileSlice {
+    padding: 50px 0;
+  }
+
+  .leanAgileHeader {
+    font-size: 60px;
+    max-width: 550px;
+  }
+
+  .steps {
+    max-width: 410px;
+  }
+
+  .marker {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    background: badgerBlack;
+    border-radius: 11px;
+    box-shadow: 0 0 0 5px badgerWhite;
+  }
+
+  .loopContainer {
+    height: 1000px;
+  }
+
+  .word {
+    font-size: 40px;
+  }
+
+  .largeLoopImage {
+    display: block;
+    width: 410px;
+    height: 1000px;
+  }
+
+  .stepSubHeader {
+    font-size: 24px;
+  }
+
+  .stepDescription {
+    font-size: 24px;
+  }
+
+  .step:nth-of-type(1) {
+    top: 8px;
+    left: 274px;
+  }
+
+  .step:nth-of-type(1) .stepContent {
+    width: 340px;
+    top: -110px;
+    left: 0;
+    font-size: 24px;
+  }
+
+  .step:nth-of-type(2) {
+    top: 190px;
+    left: 403px;
+  }
+
+  .step:nth-of-type(2) .stepContent {
+    width: 370px;
+  }
+
+  .step:nth-of-type(3) {
+    top: 404px;
+    left: 274px;
+  }
+
+  .step:nth-of-type(3) .stepContent {
+    left: 0;
+    top: 35px;
+    width: 310px;
+  }
+
+  .step:nth-of-type(4) {
+    top: 565px;
+    left: 112px;
+  }
+
+  .step:nth-of-type(4) .stepContent {
+    left: -330px;
+    top: -115px;
+    width: 300px;
+  }
+
+  .step:nth-of-type(5) {
+    top: 761px;
+    left: 3px;
+  }
+
+  .step:nth-of-type(5) .stepContent {
+    width: 265px;
+    left: -290px;
+  }
+
+  .step:nth-of-type(6) {
+    top: 937px;
+    left: 112px;
+  }
+
+  .step:nth-of-type(6) .stepContent {
+    width: 410px;
+    left: -410px;
+    top: 40px;
   }
 }
