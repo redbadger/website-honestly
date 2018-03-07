@@ -1,0 +1,51 @@
+.processJourneyHeader {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  max-width: 210px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loopContainer {
+  position: relative;
+  max-width: 335px;
+  text-align: center;
+  margin: 0 auto;
+  height: 190px;
+}
+
+.word {
+  composes: fontS from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+.wordLeft {
+  composes: word;
+  left: 20px;
+}
+
+.wordRight {
+  composes: word;
+  right: 20px;
+}
+
+.loopImage {
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loopImage svg {
+  width: 100%;
+  height: 300px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
