@@ -10,13 +10,21 @@ const headerSlice = () => {
           <h1 className={styles.pageHeader}>
             Do the<br />right thing
           </h1>
-          <img alt="" className={styles.arrowDown} src={arrowImg} />
+          <img
+            alt="Arrow down from innovation phrase to delivery phrase."
+            className={styles.arrowDown}
+            src={arrowImg}
+          />
         </div>
         <h3 className={styles.pageSubHeader}>Innovation</h3>
       </div>
       <div className={styles.right}>
         <div className={styles.flexible}>
-          <img alt="" className={styles.arrowUp} src={arrowImg} />
+          <img
+            alt="Arrow back up from delivery phrase to innovation phrase."
+            className={styles.arrowUp}
+            src={arrowImg}
+          />
           <h1 className={styles.pageHeader}>
             Do the<br />thing right
           </h1>
