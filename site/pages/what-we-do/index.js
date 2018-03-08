@@ -2,9 +2,8 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 import TechSlice from '../../slices/tech-slice';
-import LeanAgileSlice from './lean-agile-slice';
 import TriangleSlice from './triangle-slice';
-import LeanSlice from './lean-slice';
+import LeanAgileSlice from './lean-agile-slice';
 import Link from '../../components/link';
 import Social from '../../components/social';
 
@@ -114,9 +113,8 @@ export default function whatWeDo() {
         <h1 className={styles.pageHeader}>Do the right thing.</h1>
         <h1 className={styles.pageHeader}>Do the thing right.</h1>
       </div>
-      <LeanAgileSlice />
       <TriangleSlice />
-      <LeanSlice />
+      <LeanAgileSlice />
       <TechSlice />
       <CaseStudies />
     </div>
