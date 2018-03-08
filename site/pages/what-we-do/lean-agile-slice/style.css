@@ -2,7 +2,8 @@
 @value largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .leanAgileSlice {
-  padding: 30px 0;
+  padding: 40px 0;
+  background: white;
 }
 
 .leanAgileHeader {
@@ -117,6 +118,10 @@
 }
 
 @media mediumScreen {
+  .leanAgileSlice {
+    padding: 50px 0;
+  }
+
   .leanAgileHeader {
     font-size: 40px;
     max-width: 340px;
@@ -272,7 +277,6 @@
   }
 
   .largeLoopImage {
-    display: block;
     width: 410px;
     height: 1000px;
   }
