@@ -1,25 +1,6 @@
 @value badgerWhite, badgerRedOnWhite, badgerRedOnBlack, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
-.pageHeaderContainer {
-  display: flex;
-  composes: dividerWhite from "../../css/_divider.css";
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: badgerWhite;
-  padding-top: 30px;
-  padding-bottom: 60px;
-}
-
-.pageHeader {
-  composes: fontXL from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
-  text-align: center;
-  margin: 0px 30px;
-  color: badgerBlack;
-}
-
 .headerContainer {
   display: flex;
   composes: dividerWhite from "../../css/_divider.css";
@@ -165,10 +146,7 @@ a {
   .caseStudyTitleContainer {
     margin-bottom: 30px;
   }
-  .pageHeaderContainer {
-    padding-top: 140px;
-    padding-bottom: 210px;
-  }
+
   .headerContainer {
     padding-top: 60px;
     padding-bottom: 30px;

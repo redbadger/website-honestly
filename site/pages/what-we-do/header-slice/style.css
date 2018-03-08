@@ -10,8 +10,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: badgerWhite;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding: 40px 0px;
 }
 
 .left {
@@ -51,8 +50,7 @@
 .arrowUp {
   composes: arrow;
   transform: rotate(-170deg);
-  margin-top: 15px;
-  margin-left: auto;
+  margin: 15px 5px 0 0;
 }
 
 .arrowDown {
@@ -75,19 +73,23 @@
     width: 610px;
   }
 
+  .pageSubHeader {
+    composes: fontS from "../../../css/typography/_fonts.css";
+  }
+
   .arrow {
     width: 140px;
-    height: 105px;
+    height: 85px;
   }
 
   .arrowUp {
     margin-top: auto;
-    margin-right: 30px;
+    margin-right: 45px;
   }
 
   .arrowDown {
     transform: rotate(-5deg);
-    margin-left: 40px;
+    margin-left: 42px;
     margin-bottom: 0;
   }
 
@@ -99,9 +101,11 @@
 @media largeScreen {
   .pageHeaderContainer {
     width: 790px;
+    padding: 80px 0;
   }
 
   .pageSubHeader {
+    font-size: 40px;
     margin-top: 15px;
   }
 
@@ -112,9 +116,15 @@
 
   .arrowUp {
     margin-right: 60px;
+    transform: rotate(-165deg)
+  }
+
+  .arrowDown {
+    transform: rotate(2deg);
   }
 
   .subtitle {
+    font-size: 32px;
     margin-top: 30px;
   }
 }
