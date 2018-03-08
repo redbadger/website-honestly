@@ -177,14 +177,14 @@
   }
 
   .step:nth-of-type(1) {
-    top: 8px;
-    left: 200px;
+    top: 9px;
+    left: 204px;
   }
 
   .step:nth-of-type(1) .stepContent {
     width: 160px;
     top: -100px;
-    left: -4px;
+    left: 0;
   }
 
   .step:nth-of-type(2) {
@@ -193,13 +193,13 @@
   }
 
   .step:nth-of-type(2) .stepContent {
-    left: 21px;
+    left: 26px;
     width: 200px;
   }
 
   .step:nth-of-type(3) {
-    top: 285px;
-    left: 200px;
+    top: 282px;
+    left: 204px;
   }
 
   .step:nth-of-type(3) .stepContent {
@@ -209,7 +209,7 @@
 
   .step:nth-of-type(4) {
     top: 396px;
-    left: 89px;
+    left: 91px;
   }
 
   .step:nth-of-type(4) .stepContent {
@@ -227,19 +227,19 @@
   .step:nth-of-type(5) .stepContent {
     text-align: right;
     top: 0;
-    left: -164px;
+    left: -169px;
     width: 140px;
   }
 
   .step:nth-of-type(6) {
     top: 669px;
-    left: 89px;
+    left: 91px;
   }
 
   .step:nth-of-type(6) .stepContent {
     text-align: right;
     top: 25px;
-    left: -250px;
+    left: -252px;
     width: 250px;
   }
 }
@@ -318,8 +318,8 @@
   }
 
   .step:nth-of-type(4) {
-    top: 565px;
-    left: 112px;
+    top: 551px;
+    left: 128px;
   }
 
   .step:nth-of-type(4) .stepContent {
@@ -339,8 +339,8 @@
   }
 
   .step:nth-of-type(6) {
-    top: 937px;
-    left: 112px;
+    top: 945px;
+    left: 128px;
   }
 
   .step:nth-of-type(6) .stepContent {
