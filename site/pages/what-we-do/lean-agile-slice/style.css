@@ -63,9 +63,7 @@
 .stepHeader {
   composes: fontM2 from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
-  padding-left: 18px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 10px 0 20px 18px;
 }
 
 .stepInnovationHeader {
