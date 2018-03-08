@@ -167,10 +167,6 @@
     border-left: none;
   }
 
-  .marker {
-    left: 0;
-  }
-
   .stepContent {
     position: absolute;
   }
@@ -181,68 +177,68 @@
 
   .step:nth-of-type(1) {
     top: 8px;
-    left: 191px;
+    left: 200px;
   }
 
   .step:nth-of-type(1) .stepContent {
     width: 160px;
     top: -100px;
-    left: 5px;
+    left: -4px;
   }
 
   .step:nth-of-type(2) {
     top: 137px;
-    left: 280px;
+    left: 289px;
   }
 
   .step:nth-of-type(2) .stepContent {
-    left: 30px;
+    left: 21px;
     width: 200px;
   }
 
   .step:nth-of-type(3) {
     top: 285px;
-    left: 191px;
+    left: 200px;
   }
 
   .step:nth-of-type(3) .stepContent {
-    left: 30px;
+    left: 21px;
     width: 160px;
   }
 
   .step:nth-of-type(4) {
     top: 396px;
-    left: 80px;
+    left: 89px;
   }
 
   .step:nth-of-type(4) .stepContent {
     text-align: right;
     top: -77px;
-    left: -190px;
+    left: -199px;
     width: 170px;
   }
 
   .step:nth-of-type(5) {
     top: 533px;
-    left: -3px;
+    left: 6px;
   }
 
   .step:nth-of-type(5) .stepContent {
     text-align: right;
     top: 0;
-    left: -155px;
+    left: -164px;
     width: 140px;
   }
 
   .step:nth-of-type(6) {
     top: 669px;
-    left: 80px;
+    left: 89px;
   }
 
   .step:nth-of-type(6) .stepContent {
     text-align: right;
     top: 25px;
-    left: -243px;
+    left: -250px;
     width: 250px;
   }
 }
@@ -262,14 +258,9 @@
   }
 
   .marker {
-    position: absolute;
-    left: -9px;
-    top: 0;
     width: 22px;
     height: 22px;
-    background: badgerBlack;
     border-radius: 11px;
-    box-shadow: 0 0 0 5px badgerWhite;
   }
 
   .loopContainer {
