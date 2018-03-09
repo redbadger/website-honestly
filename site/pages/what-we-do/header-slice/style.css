@@ -88,7 +88,7 @@
   }
 
   .arrowDown {
-    transform: rotate(-5deg);
+    transform: rotate(2deg);
     margin-left: 42px;
     margin-bottom: 0;
   }
@@ -116,11 +116,6 @@
 
   .arrowUp {
     margin-right: 60px;
-    transform: rotate(-165deg)
-  }
-
-  .arrowDown {
-    transform: rotate(2deg);
   }
 
   .subtitle {
