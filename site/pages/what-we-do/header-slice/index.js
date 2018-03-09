@@ -5,31 +5,26 @@ import arrowImg from './arrow.png';
 const headerSlice = () => {
   return (
     <section className={styles.pageHeaderContainer}>
-      <div className={styles.left}>
+      <h1 className={styles.screenReaderText}>
+        Cyclic diagram of doing the right thing through innovation and delivery
+      </h1>
+      <div className={styles.alignLeft} role="presentation">
         <div className={styles.flexible}>
-          <h1 className={styles.pageHeader}>
+          <div className={styles.pageHeader}>
             Do the<br />right thing
-          </h1>
-          <img
-            alt="Arrow down from innovation phrase to delivery phrase."
-            className={styles.arrowDown}
-            src={arrowImg}
-          />
+          </div>
+          <img alt="" role="presentation" className={styles.arrowDown} src={arrowImg} />
         </div>
-        <h3 className={styles.pageSubHeader}>Innovation</h3>
+        <div className={styles.pageSubHeader}>Innovation</div>
       </div>
-      <div className={styles.right}>
+      <div className={styles.alignRight} role="presentation">
         <div className={styles.flexible}>
-          <img
-            alt="Arrow back up from delivery phrase to innovation phrase."
-            className={styles.arrowUp}
-            src={arrowImg}
-          />
-          <h1 className={styles.pageHeader}>
+          <img alt="" role="presentation" className={styles.arrowUp} src={arrowImg} />
+          <div className={styles.pageHeader}>
             Do the<br />thing right
-          </h1>
+          </div>
         </div>
-        <h3 className={styles.pageSubHeader}>Delivery</h3>
+        <div className={styles.pageSubHeader}>Delivery</div>
       </div>
       <p className={styles.subtitle}>
         We help you bring innovative products and services to market through nimble and robust ways

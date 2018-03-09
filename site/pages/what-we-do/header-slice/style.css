@@ -1,6 +1,10 @@
 @value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
+.screenReaderText {
+  composes: visuallyHidden from "../../../css/_accessibility.css";
+}
+
 .pageHeaderContainer {
   width: 280px;
   margin: 0 auto;
@@ -13,12 +17,12 @@
   padding: 40px 0px;
 }
 
-.left {
+.alignLeft {
   text-align: left;
   margin-right: auto;
 }
 
-.right {
+.alignRight {
   text-align: right;
   margin-left: auto;
 }
