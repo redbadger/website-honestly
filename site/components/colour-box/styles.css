@@ -1,0 +1,58 @@
+@value badgerRed, badgerBlack, badgerWhite, cainYellow, daveGreen, stuBlue from "../../css/_colors.css";
+@value largeScreen, mediumScreen from "../../css/_sizes.css";
+
+.subHeading {
+  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerBlack;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin: 20px 0 4px;
+  padding: 1px 15px;
+}
+
+.blueSubHeading {
+  composes: subHeading;
+  background-color: stuBlue;
+}
+
+.greenSubHeading {
+  composes: subHeading;
+  background-color: daveGreen;
+}
+
+.yellowSubHeading {
+  composes: subHeading;
+  background-color: cainYellow;
+}
+
+.redSubHeading {
+  composes: subHeading;
+  background-color:badgerRed;
+  color: badgerWhite;
+}
+
+@media mediumScreen {
+  .listItem {
+    padding: 0 20px 30px;
+    width: 50%;
+  }
+
+  .subHeading {
+    margin-top: 0;
+  }
+}
+
+@media largeScreen {
+  .listItem {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+  }
+
+  .subHeading {
+    display: block;
+    padding: 1px 0;
+    text-align: center;
+  }
+}

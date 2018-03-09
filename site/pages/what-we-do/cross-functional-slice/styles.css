@@ -1,15 +1,15 @@
-@value badgerRed, badgerBlack, badgerWhite, cainYellow, daveGreen, stuBlue from "../../../css/_colors.css";
+@value badgerRed, badgerBlack, badgerWhite from "../../../css/_colors.css";
 @value contentMaxWidth, largeScreen, mediumScreen from "../../../css/_sizes.css";
 
 .widthContainer {
-  max-width: contentMaxWidth;
   margin-left: auto;
   margin-right: auto;
+  max-width: contentMaxWidth;
 }
 
 .crossFunctionalSlice {
-  color: badgerWhite;
   background-color: badgerBlack;
+  color: badgerWhite;
   text-align: left;
 }
 
@@ -19,15 +19,15 @@
 }
 
 .sliceBody {
-  max-width: 1000px;
   margin: 0 auto;
+  max-width: 1000px;
   position: relative;
 }
 
 .headingContainer {
-  width: 70%;
-  margin: 0 auto;
   background-color: badgerBlack;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .heading {
@@ -50,47 +50,17 @@
 }
 
 .list {
-  padding-left: 20px;
-  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.subHeading {
-  composes: serif from "../../../css/typography/_fonts.css";
-  font-size: 24px;
-  line-height: 1.2em;
-  color: badgerBlack;
-  display: inline-block;
-  margin: 20px 0 4px;
-  padding: 1px 15px;
-}
-
-.blueSubHeading {
-  composes: subHeading;
-  background-color: stuBlue;
-}
-.greenSubHeading {
-  composes: subHeading;
-  background-color: daveGreen;
-}
-
-.yellowSubHeading {
-  composes: subHeading;
-  background-color: cainYellow;
-}
-.redSubHeading {
-  composes: subHeading;
-  background-color:badgerRed;
-  color: badgerWhite;
+  padding-left: 20px;
+  padding-bottom: 30px;
 }
 
 .detail {
   composes: lightSerif from "../../../css/typography/_fonts.css";
-  /* composes: fontM2 from "../../../css/typography/_fonts.css"; */
+  color: #F8F8F8;
   font-size: 20px;
   line-height: 1.2em;
-  color: #F8F8F8;
 }
 
 a {
@@ -102,16 +72,16 @@ a .detail:hover {
 }
 
 .arrowLink {
-  width: 12px;
   height: 12px;
   margin-left: 6px;
+  width: 12px;
 }
 
 
 @media mediumScreen {
   .headingContainer {
-    width: 70%;
     margin: 0 auto;
+    width: 70%;
   }
 
   .heading {
@@ -126,20 +96,12 @@ a .detail:hover {
     padding: 40px 0 0 60px;
   }
 
-  .listItem {
-    width: 50%;
-    padding: 0 20px 30px;
-  }
-
-  .subHeading {
-    margin-top: 0;
-  }
 }
 
 @media largeScreen {
   .arrowContainer {
-    position: absolute;
     margin-top: 4px;
+    position: absolute;
   }
   .arrowLink {
     height: 20px;
@@ -161,15 +123,4 @@ a .detail:hover {
     padding: 20px 60px 0;
   }
 
-  .listItem {
-    width: 25%;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .subHeading {
-    display: block;
-    text-align: center;
-    padding: 1px 0;
-  }
 }

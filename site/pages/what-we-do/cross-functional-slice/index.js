@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './styles.css';
 import Link from '../../../components/link';
+import ColourBox from '../../../components/colour-box';
 
 import bigParty1x from './png/big-party.png';
 import bigParty2x from './png/big-party@2x.png';
@@ -61,16 +62,14 @@ const CrossFunctionalSlice = () => (
           />
         </div>
         <div className={styles.list}>
-          <div className={styles.listItem}>
-            <h3 className={styles.blueSubHeading}>Lean Agile</h3>
+          <ColourBox className="blueSubHeading" title="Lean Agile">
             <p>
               <span className={styles.detail}>
                 Drive efficiency and reduce risk through our lean methods.
               </span>
             </p>
-          </div>
-          <div className={styles.listItem}>
-            <h3 className={styles.greenSubHeading}>Tech</h3>
+          </ColourBox>
+          <ColourBox className="greenSubHeading" title="Tech">
             <Link to="technology">
               <p>
                 <span className={styles.detail}>
@@ -92,23 +91,21 @@ const CrossFunctionalSlice = () => (
                 </span>
               </p>
             </Link>
-          </div>
-          <div className={styles.listItem}>
-            <h3 className={styles.yellowSubHeading}>Design</h3>
+          </ColourBox>
+          <ColourBox className="yellowSubHeading" title="Design">
             <p>
               <span className={styles.detail}>
                 Improve customer experience, create delightful products and services.
               </span>
             </p>
-          </div>
-          <div className={styles.listItem}>
-            <h3 className={styles.redSubHeading}>You (the client)</h3>
+          </ColourBox>
+          <ColourBox className="redSubHeading" title="You (the client)">
             <p>
               <span className={styles.detail}>
                 Together we build a capability and lasting change.
               </span>
             </p>
-          </div>
+          </ColourBox>
         </div>
       </section>
     </div>
