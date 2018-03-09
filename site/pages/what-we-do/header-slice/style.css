@@ -1,0 +1,129 @@
+@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.screenReaderText {
+  composes: visuallyHidden from "../../../css/_accessibility.css";
+}
+
+.pageHeaderContainer {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  composes: dividerWhite from "../../../css/_divider.css";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: badgerWhite;
+  padding: 40px 0px;
+}
+
+.alignLeft {
+  text-align: left;
+  margin-right: auto;
+}
+
+.alignRight {
+  text-align: right;
+  margin-left: auto;
+}
+
+.flexible {
+  display: flex;
+}
+
+.pageHeader {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontXL from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+}
+
+.pageSubHeader {
+  width: 100%;
+  color: badgerRedOnWhite;
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.arrow {
+  width: 60px;
+  height: 40px;
+}
+
+.arrowUp {
+  composes: arrow;
+  transform: rotate(-170deg);
+  margin: 15px 5px 0 0;
+}
+
+.arrowDown {
+  composes: arrow;
+  transform: rotate(15deg);
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media mediumScreen {
+  .pageHeaderContainer {
+    width: 610px;
+  }
+
+  .pageSubHeader {
+    composes: fontS from "../../../css/typography/_fonts.css";
+  }
+
+  .arrow {
+    width: 140px;
+    height: 85px;
+  }
+
+  .arrowUp {
+    margin-top: auto;
+    margin-right: 45px;
+  }
+
+  .arrowDown {
+    transform: rotate(2deg);
+    margin-left: 42px;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    composes: fontS from "../../../css/typography/_fonts.css";
+  }
+}
+
+@media largeScreen {
+  .pageHeaderContainer {
+    width: 790px;
+    padding: 80px 0;
+  }
+
+  .pageSubHeader {
+    font-size: 40px;
+    margin-top: 15px;
+  }
+
+  .arrow {
+    width: 183px;
+    height: 116px;
+  }
+
+  .arrowUp {
+    margin-right: 60px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+}
