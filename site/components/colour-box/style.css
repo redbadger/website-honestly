@@ -66,14 +66,4 @@ a .description:hover {
     padding: 1px 0;
     text-align: center;
   }
-
-  .arrowContainer {
-    margin-top: 4px;
-    position: absolute;
-  }
-
-  .arrowLink {
-    height: 20px;
-    width: 20px;
-  }
 }
