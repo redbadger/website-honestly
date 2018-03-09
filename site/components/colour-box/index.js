@@ -5,16 +5,17 @@ import styles from './styles.css';
 
 type Props = {
   children?: Node,
-  className: 'blueSubHeading' | 'greenSubHeading' | 'redSubHeading' | 'yellowSubHeading',
   title: string,
+  labelColour: 'blue' | 'green' | 'red' | 'yellow',
 };
 
-const cx = classNames.bind(styles);
-
-const ColourBox = ({ children, className, title }: Props) => {
+const ColourBox = ({ children, labelColour, title }: Props) => {
+  const styled = classNames({
+    [styles[`${labelColour}SubHeading`]]: labelColour,
+  });
   return (
     <div className={styles.listItem}>
-      <h3 className={cx(className)}>{title}</h3>
+      <h3 className={styled}>{title}</h3>
       {children}
     </div>
   );

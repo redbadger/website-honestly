@@ -3,38 +3,12 @@ import React from 'react';
 import styles from './styles.css';
 import Link from '../../../components/link';
 import ColourBox from '../../../components/colour-box';
+import Image from '../../../components/image';
 
 import bigParty1x from './png/big-party.png';
 import bigParty2x from './png/big-party@2x.png';
 import bigParty3x from './png/big-party@3x.png';
 import crossFunctionalBadgers from './jpg/cross-functional-badgers.jpg';
-
-type Props = {
-  alt?: string,
-  className?: string,
-  role?: string,
-  src: string,
-  src2x?: string,
-  src3x?: string,
-};
-
-const Image = ({ alt, className, role, src, src2x, src3x }: Props) => {
-  const src2xTemplate = src2x ? `, ${src2x} 2x` : '';
-  const src3xTemplate = src3x ? `, ${src3x} 3x` : '';
-  return (
-    <picture>
-      {src && <source srcSet={`${src}${src2xTemplate}${src3xTemplate}`} className={className} />}
-      <img src={src} alt={alt || ''} role={role} className={className} />
-    </picture>
-  );
-};
-
-Image.defaultProps = {
-  alt: '',
-  className: undefined,
-  role: undefined,
-  src: undefined,
-};
 
 const CrossFunctionalSlice = () => (
   <section className={styles.crossFunctionalSlice}>
@@ -61,15 +35,15 @@ const CrossFunctionalSlice = () => (
             className={styles.image}
           />
         </div>
-        <div className={styles.list}>
-          <ColourBox className="blueSubHeading" title="Lean Agile">
+        <div className={styles.colourBoxContainer}>
+          <ColourBox title="Lean Agile" labelColour="blue">
             <p>
               <span className={styles.detail}>
                 Drive efficiency and reduce risk through our lean methods.
               </span>
             </p>
           </ColourBox>
-          <ColourBox className="greenSubHeading" title="Tech">
+          <ColourBox title="Tech" labelColour="green">
             <Link to="technology">
               <p>
                 <span className={styles.detail}>
@@ -92,14 +66,14 @@ const CrossFunctionalSlice = () => (
               </p>
             </Link>
           </ColourBox>
-          <ColourBox className="yellowSubHeading" title="Design">
+          <ColourBox title="Design" labelColour="yellow">
             <p>
               <span className={styles.detail}>
                 Improve customer experience, create delightful products and services.
               </span>
             </p>
           </ColourBox>
-          <ColourBox className="redSubHeading" title="You (the client)">
+          <ColourBox title="You (the client)" labelColour="red">
             <p>
               <span className={styles.detail}>
                 Together we build a capability and lasting change.
