@@ -14,7 +14,7 @@ export default function HomePage() {
   const social = {
     title: 'Red Badger',
     description:
-      'Let’s make things better. We are digital transformation experts that innovate and deliver.',
+      'Let’s make things better. We are digital transformation experts who innovate and deliver.',
     metaImage,
     url: 'https://red-badger.com',
   };
