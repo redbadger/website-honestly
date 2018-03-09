@@ -56,28 +56,6 @@
   padding-bottom: 30px;
 }
 
-.detail {
-  composes: lightSerif from "../../../css/typography/_fonts.css";
-  color: #F8F8F8;
-  font-size: 20px;
-  line-height: 1.2em;
-}
-
-a {
-  position: relative;
-}
-
-a .detail:hover {
-  border-bottom: 2px solid badgerRed;
-}
-
-.arrowLink {
-  height: 12px;
-  margin-left: 6px;
-  width: 12px;
-}
-
-
 @media mediumScreen {
   .headingContainer {
     margin: 0 auto;
@@ -96,17 +74,15 @@ a .detail:hover {
     padding: 40px 0 0 60px;
   }
 
+  .boxWrapper {
+    padding: 0 20px 30px;
+    width: 50%;
+  }
+
+
 }
 
 @media largeScreen {
-  .arrowContainer {
-    margin-top: 4px;
-    position: absolute;
-  }
-  .arrowLink {
-    height: 20px;
-    width: 20px;
-  }
   .outerHeadingContainer {
     position: absolute;
     top: -250px;
@@ -119,8 +95,15 @@ a .detail:hover {
   .headingContainer {
     width: 90%;
   }
+
   .heading {
     padding: 20px 60px 0;
+  }
+
+  .boxWrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
   }
 
 }

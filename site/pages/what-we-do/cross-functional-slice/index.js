@@ -1,7 +1,6 @@
 // @flow
 import React from 'react';
 import styles from './styles.css';
-import Link from '../../../components/link';
 import ColourBox from '../../../components/colour-box';
 import Image from '../../../components/image';
 
@@ -9,6 +8,30 @@ import bigParty1x from './png/big-party.png';
 import bigParty2x from './png/big-party@2x.png';
 import bigParty3x from './png/big-party@3x.png';
 import crossFunctionalBadgers from './jpg/cross-functional-badgers.jpg';
+
+const content = [
+  {
+    title: 'Lean Agile',
+    labelColour: 'blue',
+    description: 'Drive efficiency and reduce risk through our lean methods.',
+  },
+  {
+    title: 'Tech',
+    labelColour: 'green',
+    link: 'technology',
+    description: 'Transform your business by being bold with tech.',
+  },
+  {
+    title: 'Design',
+    labelColour: 'yellow',
+    description: 'Improve customer experience, create delightful products and services.',
+  },
+  {
+    title: 'You (the client)',
+    labelColour: 'red',
+    description: 'Together we build a capability and lasting change.',
+  },
+];
 
 const CrossFunctionalSlice = () => (
   <section className={styles.crossFunctionalSlice}>
@@ -36,50 +59,11 @@ const CrossFunctionalSlice = () => (
           />
         </div>
         <div className={styles.colourBoxContainer}>
-          <ColourBox title="Lean Agile" labelColour="blue">
-            <p>
-              <span className={styles.detail}>
-                Drive efficiency and reduce risk through our lean methods.
-              </span>
-            </p>
-          </ColourBox>
-          <ColourBox title="Tech" labelColour="green">
-            <Link to="technology">
-              <p>
-                <span className={styles.detail}>
-                  Transform your business by being bold with tech.
-                </span>
-                <span className={styles.arrowContainer}>
-                  <svg
-                    className={styles.arrowLink}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 22 20"
-                  >
-                    <path
-                      fill="#22D69B"
-                      fillRule="nonzero"
-                      stroke="#22D69B"
-                      d="M11 0l10 10-10 10-1.754-1.754 6.959-7.018H1V8.772h15.205l-6.96-7.018z"
-                    />
-                  </svg>
-                </span>
-              </p>
-            </Link>
-          </ColourBox>
-          <ColourBox title="Design" labelColour="yellow">
-            <p>
-              <span className={styles.detail}>
-                Improve customer experience, create delightful products and services.
-              </span>
-            </p>
-          </ColourBox>
-          <ColourBox title="You (the client)" labelColour="red">
-            <p>
-              <span className={styles.detail}>
-                Together we build a capability and lasting change.
-              </span>
-            </p>
-          </ColourBox>
+          {content.map(item => (
+            <div className={styles.boxWrapper}>
+              <ColourBox {...item} />
+            </div>
+          ))}
         </div>
       </section>
     </div>
