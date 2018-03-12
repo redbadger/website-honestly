@@ -32,14 +32,15 @@
   color: badgerWhite;
 }
 
-.description {
+.description, 
+.descriptionLink {
   composes: lightSerif from "../../css/typography/_fonts.css";
   color: #F8F8F8;
   font-size: 20px;
   line-height: 1.2em;
 }
 
-a .description:hover {
+.descriptionLink:hover {
   border-bottom: 2px solid badgerRed;
 }
 

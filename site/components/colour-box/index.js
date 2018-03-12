@@ -25,7 +25,7 @@ const ColourBox = ({ labelColour, title, description, link }: Props) => {
       {link ? (
         <Link to={link}>
           <p>
-            <span className={styles.description}>{description}</span>
+            <span className={styles.descriptionLink}>{description}</span>
             <LinkArrow labelColour={labelColour} />
           </p>
         </Link>
