@@ -60,7 +60,7 @@ const CrossFunctionalSlice = () => (
         </div>
         <div className={styles.colourBoxContainer}>
           {content.map(item => (
-            <div className={styles.boxWrapper}>
+            <div key={item.title} className={styles.boxWrapper}>
               <ColourBox {...item} />
             </div>
           ))}

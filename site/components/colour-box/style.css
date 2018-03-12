@@ -47,13 +47,6 @@ a .description:hover {
   border-bottom: 2px solid badgerRed;
 }
 
-.arrowLink {
-  height: 12px;
-  margin-left: 6px;
-  width: 12px;
-}
-
-
 @media mediumScreen {
   .subHeading {
     margin-top: 0;
