@@ -96,12 +96,16 @@ const CaseStudyOverview = () => (
         </a>
       </div>
       <div className={styles.caseCompanies}>
-        <img alt="The logo of Selfridges" src={selfridgesPNG} />
-        <img alt="The logo of Tesco" src={tescoPNG} />
-        <img alt="The logo of the BBC" src={bbcPNG} />
-        <img alt="The logo of BMW" src={bmwPNG} />
-        <img alt="The logo of HSBC" src={hsbcPNG} />
-        <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
+        <div className={styles.companiesGroup}>
+          <img alt="The logo of Selfridges" src={selfridgesPNG} />
+          <img alt="The logo of Tesco" src={tescoPNG} />
+          <img alt="The logo of BMW" src={bmwPNG} />
+        </div>
+        <div className={styles.companiesGroup}>
+          <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
+          <img alt="The logo of the BBC" src={bbcPNG} />
+          <img alt="The logo of HSBC" src={hsbcPNG} />
+        </div>
       </div>
       <div className={styles.buttonContainer}>
         <Link to="ourWorkPage" className={styles.button}>

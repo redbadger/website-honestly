@@ -118,7 +118,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0px 74px;
   align-items: center;
   justify-content: center;
   border-top: 1px solid linesOnBlack;
@@ -126,10 +125,15 @@
   padding: 30px;
 }
 
-.caseCompanies img {
-  margin: 0px 15px;
+.companiesGroup {
+  flex: 1;
+  text-align: center;
+}
+
+.companiesGroup img {
+  display: block;
+  margin: 10px auto;
   height: 40px;
-  margin-bottom: 10px;
 }
 
 .buttonContainer {
