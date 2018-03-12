@@ -49,6 +49,16 @@
   flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
 }
 
+.statsContainer {
+  display: block;
+  margin: auto 0;
+}
+
+.logoContainer {
+  display: flex;
+  height: 50px;
+}
+
 .caseFigure svg {
   height: 80px;
   width: 100%;
@@ -148,15 +158,44 @@
 }
 
 @media mediumScreen  {
+  .caseStudyContainer {
+    padding: 0;
+  }
+
   .heading {
+    font-size: 40px;
     padding: 40px;
   }
-  .caseText {
-    padding: 30px;
+
+  .figuresContainer {
+    min-width: 690px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
+
+  .centerText {
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  .companyText {
+    margin: 15px 0 10px 0;
+  }
+
+  .countdownText {
+    font-size: 110px;
+    padding: 0 15px;
+    margin-top: -40px;
+  }
+
+  .countdownCaseText {
+    margin-bottom: 0;
+  }
+
   .figureLink {
-    width: 49%;
-    padding: 60px 0px;
+    min-height: 410px;
+    width: 50%;
+    padding: 60px 10px;
   }
 
   .figureLink:nth-child(odd){

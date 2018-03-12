@@ -36,63 +36,79 @@ const CaseStudyOverview = () => (
           className={styles.figureLink}
           title="Fortnum and mason case study"
         >
-          <span className={styles.countdownText}>{daysSinceFortumStarted()}</span>
-          <span className={styles.countdownCaseText}>
-            days of innovation and continuous{' '}
-            <span className={styles.lastWord}>
-              deployment
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+          <span className={styles.statsContainer}>
+            <span className={styles.countdownText}>{daysSinceFortumStarted()}</span>
+            <span className={styles.countdownCaseText}>
+              days of innovation and continuous{' '}
+              <span className={styles.lastWord}>
+                deployment
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
+          <span className={styles.logoContainer}>
+            <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
+          </span>
         </a>
         <a
           href="our-work/case-study/retailer"
           className={styles.figureLink}
           title="Retailer case study"
         >
-          <span className={styles.centerText}>
-            Five months to clear an eight year{' '}
-            <span className={styles.lastWord}>
-              backlog
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+          <span className={styles.statsContainer}>
+            <span className={styles.centerText}>
+              Five months to clear an eight year{' '}
+              <span className={styles.lastWord}>
+                backlog
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <span className={styles.companyText}>Britain’s Biggest Retailer</span>
+          <span className={styles.logoContainer}>
+            <span className={styles.companyText}>Britain’s Biggest Retailer</span>
+          </span>
         </a>
         <a
           href="/our-work/case-study/financial-times"
           className={styles.figureLink}
           title="Financial times case study"
         >
-          <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
-          <span className={styles.screenReaderText}>30%</span>
-          <span className={styles.caseText}>
-            uplift in reader{' '}
-            <span className={styles.lastWord}>
-              engagement
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+          <span className={styles.statsContainer}>
+            <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
+            <span className={styles.screenReaderText}>30%</span>
+            <span className={styles.caseText}>
+              uplift in reader{' '}
+              <span className={styles.lastWord}>
+                engagement
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <img
-            alt="The logo of the Financial Times"
-            src={financialTimesPNG}
-            className={styles.logo}
-          />
+          <span className={styles.logoContainer}>
+            <img
+              alt="The logo of the Financial Times"
+              src={financialTimesPNG}
+              className={styles.logo}
+            />
+          </span>
         </a>
         <a
           href="/our-work/case-study/financial-services-digital-transformation"
           className={styles.figureLink}
           title="Bank case study"
         >
-          <span className={styles.centerText}>
-            Catalysts for change, delivery deployment and{' '}
-            <span className={styles.lastWord}>
-              culture
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+          <span className={styles.statsContainer}>
+            <span className={styles.centerText}>
+              Catalysts for change, delivery deployment and{' '}
+              <span className={styles.lastWord}>
+                culture
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <span className={styles.companyText}>Giant Global Bank</span>
+          <span className={styles.logoContainer}>
+            <span className={styles.companyText}>Giant Global Bank</span>
+          </span>
         </a>
       </div>
       <div className={styles.caseCompanies}>
