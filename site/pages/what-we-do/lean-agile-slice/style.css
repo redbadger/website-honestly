@@ -1,0 +1,356 @@
+@value badgerRed, badgerBlack, mauve, badgerWhite from "../../../css/_colors.css";
+@value largeScreen, mediumScreen from "../../../css/_sizes.css";
+
+.leanAgileSlice {
+  padding: 40px 0;
+  background: white;
+}
+
+.leanAgileHeader {
+  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  max-width: 210px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loopContainer {
+  position: relative;
+  height: 124px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.word {
+  composes: fontS from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.wordLeft {
+  composes: word;
+  left: 0;
+}
+
+.wordRight {
+  composes: word;
+  right: 0;
+}
+
+.largeLoopImage {
+  display: none;
+}
+
+.smallLoopImage {
+  display: inline-block;
+  width: 100%;
+}
+
+.smallLoopImage svg {
+  width: 290px;
+  height: 124px;
+}
+
+.steps {
+  max-width: 290px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.stepHeader {
+  composes: fontM2 from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  padding: 10px 0 20px 18px;
+}
+
+.stepInnovationHeader {
+  composes: stepHeader;
+  border-left: 5px dashed mauve;
+}
+
+.stepDeliveryHeader {
+  composes: stepHeader;
+  border-left: 5px solid mauve;
+}
+
+.step {
+  position: relative;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  border-left: 5px solid mauve;
+}
+
+.stepPaddingBottom {
+  height: 38px;
+  border-left: 5px dashed mauve;
+  margin-top: 4px;
+}
+
+.marker {
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  background: badgerBlack;
+  border-radius: 9px;
+  box-shadow: 0 0 0 5px white;
+}
+
+.stepSubHeader {
+  composes: fontS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  color: badgerRed;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.stepDescription {
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+  color: badgerBlack;
+}
+
+@media mediumScreen {
+  .leanAgileSlice {
+    padding: 50px 0;
+  }
+
+  .leanAgileHeader {
+    font-size: 40px;
+    max-width: 340px;
+  }
+
+  .smallLoopImage, .stepHeader, .stepPaddingBottom {
+    display: none;
+  }
+
+  .loopContainer {
+    height: 700px;
+    margin: 0;
+  }
+
+  .word {
+    font-size: 30px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  .wordLeft {
+    top: 20%;
+    left: 50%;
+  }
+
+  .wordRight {
+    left: 50%;
+    top: auto;
+    bottom: 18%;
+  }
+
+  .steps {
+    margin-top: 145px;
+    margin-bottom: 110px;
+  }
+
+  .largeLoopImage {
+    display: block;
+    width: 290px;
+    height: 700px;
+  }
+
+  .step {
+    position: absolute;
+    padding-left: 0;
+    padding-bottom: 0;
+    border-left: none;
+  }
+
+  .stepContent {
+    position: absolute;
+  }
+
+  .stepSubHeader {
+    font-size: 16px;
+  }
+
+  .step:nth-of-type(1) {
+    top: 9px;
+    left: 204px;
+  }
+
+  .step:nth-of-type(1) .stepContent {
+    width: 160px;
+    top: -100px;
+    left: 0;
+  }
+
+  .step:nth-of-type(2) {
+    top: 137px;
+    left: 289px;
+  }
+
+  .step:nth-of-type(2) .stepContent {
+    left: 26px;
+    width: 140px;
+  }
+
+  .step:nth-of-type(3) {
+    top: 282px;
+    left: 204px;
+  }
+
+  .step:nth-of-type(3) .stepContent {
+    top: 10px;
+    left: 21px;
+    width: 160px;
+  }
+
+  .step:nth-of-type(4) {
+    top: 396px;
+    left: 91px;
+  }
+
+  .step:nth-of-type(4) .stepContent {
+    text-align: right;
+    top: -77px;
+    left: -199px;
+    width: 170px;
+  }
+
+  .step:nth-of-type(5) {
+    top: 533px;
+    left: 6px;
+  }
+
+  .step:nth-of-type(5) .stepContent {
+    text-align: right;
+    top: 0;
+    left: -169px;
+    width: 140px;
+  }
+
+  .step:nth-of-type(6) {
+    top: 669px;
+    left: 91px;
+  }
+
+  .step:nth-of-type(6) .stepContent {
+    text-align: right;
+    top: 25px;
+    left: -252px;
+    width: 250px;
+  }
+}
+
+@media largeScreen {
+  .leanAgileSlice {
+    padding: 70px 0;
+  }
+
+  .leanAgileHeader {
+    font-size: 60px;
+    max-width: 550px;
+  }
+
+  .steps {
+    max-width: 410px;
+  }
+
+  .marker {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+  }
+
+  .loopContainer {
+    height: 1000px;
+  }
+
+  .word {
+    font-size: 40px;
+  }
+
+  .largeLoopImage {
+    width: 410px;
+    height: 1000px;
+  }
+
+  .stepSubHeader {
+    font-size: 24px;
+  }
+
+  .stepDescription {
+    font-size: 24px;
+  }
+
+  .steps {
+    margin-top: 165px;
+  }
+
+  .step:nth-of-type(1) {
+    top: 8px;
+    left: 274px;
+  }
+
+  .step:nth-of-type(1) .stepContent {
+    width: 340px;
+    top: -110px;
+    left: 0;
+    font-size: 24px;
+  }
+
+  .step:nth-of-type(2) {
+    top: 190px;
+    left: 403px;
+  }
+
+  .step:nth-of-type(2) .stepContent {
+    width: 200px;
+  }
+
+  .step:nth-of-type(3) {
+    top: 404px;
+    left: 274px;
+  }
+
+  .step:nth-of-type(3) .stepContent {
+    left: 20px;
+    top: 35px;
+    width: 310px;
+  }
+
+  .step:nth-of-type(4) {
+    top: 551px;
+    left: 128px;
+  }
+
+  .step:nth-of-type(4) .stepContent {
+    left: -330px;
+    top: -115px;
+    width: 300px;
+  }
+
+  .step:nth-of-type(5) {
+    top: 761px;
+    left: 3px;
+  }
+
+  .step:nth-of-type(5) .stepContent {
+    width: 260px;
+    left: -285px;
+  }
+
+  .step:nth-of-type(6) {
+    top: 945px;
+    left: 128px;
+  }
+
+  .step:nth-of-type(6) .stepContent {
+    width: 370px;
+    left: -380px;
+    top: 40px;
+  }
+}
