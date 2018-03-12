@@ -286,6 +286,10 @@
     font-size: 24px;
   }
 
+  .steps {
+    margin-top: 165px;
+  }
+
   .step:nth-of-type(1) {
     top: 8px;
     left: 274px;
