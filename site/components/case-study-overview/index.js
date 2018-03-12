@@ -114,12 +114,12 @@ const CaseStudyOverview = () => (
       <div className={styles.caseCompanies}>
         <div className={styles.companiesGroup}>
           <img alt="The logo of Selfridges" src={selfridgesPNG} />
+          <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
           <img alt="The logo of Tesco" src={tescoPNG} />
-          <img alt="The logo of BMW" src={bmwPNG} />
         </div>
         <div className={styles.companiesGroup}>
-          <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
           <img alt="The logo of the BBC" src={bbcPNG} />
+          <img alt="The logo of BMW" src={bmwPNG} />
           <img alt="The logo of HSBC" src={hsbcPNG} />
         </div>
       </div>

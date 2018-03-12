@@ -183,7 +183,7 @@
   }
 
   .countdownText {
-    font-size: 110px;
+    font-size: 113px;
     padding: 0 15px;
     margin-top: -40px;
   }
@@ -202,16 +202,15 @@
     border-right: 1px solid linesOnBlack;
   }
 
+  .companiesGroup {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
   .caseCompanies {
     justify-content: space-between;
-  }
-
-  .caseCompanies img:first-child {
-    margin-left: 0px;
-  }
-
-  .caseCompanies img:last-child {
-    margin-right: 0px;
   }
 }
 @media largeScreen {
@@ -219,21 +218,49 @@
     padding: 50px 60px 60px 60px;
   }
 
-  .figuresContainer .caseFigure svg {
-    height: 150px;
+  .caseFigure svg {
+    height: 122px;
+  }
+
+  .figuresContainer {
+    max-width: 1160px;
   }
 
   .figuresContainer img {
     height: 80px;
   }
 
+  .countdownText {
+    font-size: 150px;
+  }
+
+  .countdownCaseText {
+    font-size: 35px;
+  }
+
+  .centerText {
+    font-size: 60px;
+  }
+
+  .logoContainer {
+    height: 80px;
+  }
+
+  .figureLink {
+    padding: 30px 10px;
+    max-height: 535px;
+  }
+
+  .companyText {
+    font-size: 28px;
+  }
+
   .caseCompanies {
-    display: flex;
-    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1160px;
   }
 
   .caseCompanies img {
-    margin: 0px 15px;
     height: 80px;
   }
 
