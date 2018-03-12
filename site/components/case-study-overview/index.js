@@ -27,9 +27,9 @@ const CaseStudyOverview = () => (
           className={styles.figureLink}
           title="Fortnum and mason case study"
         >
-          <span className={styles.caseText}>1393</span>
+          <span className={styles.countdownText}>1,393</span>
           <span className={styles.screenReaderText}>Three</span>
-          <span className={styles.caseText}>
+          <span className={styles.countdownCaseText}>
             days of innovation and continuous{' '}
             <span className={styles.lastWord}>
               deployment
@@ -46,14 +46,14 @@ const CaseStudyOverview = () => (
           <span className={styles.screenReaderText}>
             Five months to clear an eight year backlog
           </span>
-          <span className={styles.caseText}>
+          <span className={styles.centerText}>
             Five months to clear an eight year{' '}
             <span className={styles.lastWord}>
               backlog
               <InlineSVG src={arrowSVG} className={styles.arrow} />
             </span>
           </span>
-          <span>Britain’s Biggest Retailer</span>
+          <span className={styles.companyText}>Britain’s Biggest Retailer</span>
         </a>
         <a
           href="/our-work/case-study/financial-times"
@@ -83,14 +83,14 @@ const CaseStudyOverview = () => (
           <span className={styles.screenReaderText}>
             Catalysts for change, delivery deployment and culture
           </span>
-          <span className={styles.caseText}>
+          <span className={styles.centerText}>
             Catalysts for change, delivery deployment and{' '}
             <span className={styles.lastWord}>
               culture
               <InlineSVG src={arrowSVG} className={styles.arrow} />
             </span>
           </span>
-          <span>Giant Global Bank</span>
+          <span className={styles.companyText}>Giant Global Bank</span>
         </a>
       </div>
       <div className={styles.caseCompanies}>
