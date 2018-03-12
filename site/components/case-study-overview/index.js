@@ -1,5 +1,6 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
+import moment from 'moment';
 import styles from './style.css';
 
 /* PNG logo imports */
@@ -17,6 +18,14 @@ import Link from '../link';
 import ftFigureSVG from './SVG/ft-figure.svg';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
+const daysSinceFortumStarted = () => {
+  const startDate = moment([2014, 5, 14]);
+  const today = moment();
+  const diffInDays = today.diff(startDate, 'days');
+
+  return diffInDays.toLocaleString();
+};
+
 const CaseStudyOverview = () => (
   <section className={styles.caseStudyContainer}>
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
@@ -27,8 +36,7 @@ const CaseStudyOverview = () => (
           className={styles.figureLink}
           title="Fortnum and mason case study"
         >
-          <span className={styles.countdownText}>1,393</span>
-          {/* TODO: <span className={styles.screenReaderText}>Three</span> */}
+          <span className={styles.countdownText}>{daysSinceFortumStarted()}</span>
           <span className={styles.countdownCaseText}>
             days of innovation and continuous{' '}
             <span className={styles.lastWord}>
