@@ -28,6 +28,7 @@
   background-color: badgerBlack;
   margin: 0 auto;
   width: 70%;
+  max-width: 400px;
 }
 
 .heading {
@@ -45,23 +46,17 @@
 
 .imageContainer {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 10px;
   width: 260px;
 }
 
 .colourBoxContainer {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px;
-  padding-bottom: 30px;
+  padding: 0 20px 40px;
 }
 
 @media mediumScreen {
-  .headingContainer {
-    margin: 0 auto;
-    width: 70%;
-  }
-
   .heading {
     margin: 42px 0 30px;
   }
@@ -72,8 +67,7 @@
   
   .colourBoxContainer {
     justify-content: center;
-    /* padding: 40px 0 0 60px; */
-    padding: 40px 0 0;
+    padding: 40px 0 10px;
     margin: 0 auto;
     max-width: 820px;
   }
@@ -99,14 +93,16 @@
 
   .headingContainer {
     width: 90%;
+    max-width: 800px;
   }
 
   .heading {
-    padding: 20px 60px 0;
+    padding: 30px 60px 0;
   }
 
   .colourBoxContainer {
     max-width: contentMaxWidth;
+    padding-top: 55px;
   }
 
   .boxWrapper {

@@ -7,7 +7,7 @@
   display: inline-block;
   font-size: 24px;
   line-height: 1.2em;
-  margin: 20px 0 4px;
+  margin: 20px 0 8px;
   padding: 1px 15px;
 }
 
@@ -58,5 +58,6 @@ a .description:hover {
     display: block;
     padding: 1px 0;
     text-align: center;
+
   }
 }
