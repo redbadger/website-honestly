@@ -28,7 +28,7 @@ const CaseStudyOverview = () => (
           title="Fortnum and mason case study"
         >
           <span className={styles.countdownText}>1,393</span>
-          <span className={styles.screenReaderText}>Three</span>
+          {/* TODO: <span className={styles.screenReaderText}>Three</span> */}
           <span className={styles.countdownCaseText}>
             days of innovation and continuous{' '}
             <span className={styles.lastWord}>
@@ -43,9 +43,6 @@ const CaseStudyOverview = () => (
           className={styles.figureLink}
           title="Retailer case study"
         >
-          <span className={styles.screenReaderText}>
-            Five months to clear an eight year backlog
-          </span>
           <span className={styles.centerText}>
             Five months to clear an eight year{' '}
             <span className={styles.lastWord}>
@@ -80,9 +77,6 @@ const CaseStudyOverview = () => (
           className={styles.figureLink}
           title="Bank case study"
         >
-          <span className={styles.screenReaderText}>
-            Catalysts for change, delivery deployment and culture
-          </span>
           <span className={styles.centerText}>
             Catalysts for change, delivery deployment and{' '}
             <span className={styles.lastWord}>
