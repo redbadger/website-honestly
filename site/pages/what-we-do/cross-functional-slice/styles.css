@@ -78,16 +78,6 @@
     max-width: calc(280px + 40px);
   }
 
-  /* .photoContainer {
-    max-height: 500px;
-    overflow: hidden;
-  }
-
-  .photoContainer picture {
-    position: relative;
-    top: -150px;
-  } */
-
   .photoContainer {
     max-height: 500px;
     overflow: hidden;

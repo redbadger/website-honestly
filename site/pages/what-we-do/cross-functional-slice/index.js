@@ -38,7 +38,7 @@ const CrossFunctionalSlice = () => (
     <div className={styles.photoContainer}>
       <Image
         src={crossFunctionalBadgers}
-        alt="working in a cross functional team"
+        alt="a photo showing Red Badger employees working in a cross functional team"
         className={styles.image}
       />
     </div>

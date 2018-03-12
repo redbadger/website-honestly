@@ -21,11 +21,4 @@ const Image = ({ alt, className, role, src, src2x, src3x }: Props) => {
   );
 };
 
-Image.defaultProps = {
-  alt: '',
-  className: undefined,
-  role: undefined,
-  src: undefined,
-};
-
 export default Image;

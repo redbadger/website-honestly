@@ -39,10 +39,6 @@
   line-height: 1.2em;
 }
 
-a {
-  position: relative;
-}
-
 a .description:hover {
   border-bottom: 2px solid badgerRed;
 }
