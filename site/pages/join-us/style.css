@@ -1,4 +1,5 @@
 @value badgerWhite from "../../css/_colors.css";
+@value mediumScreen from "../../css/_sizes.css";
 
 .background {
   background-color: badgerWhite;
@@ -10,4 +11,49 @@
 
 .noWrap {
   white-space: nowrap;
+}
+
+.headerContainer > div {
+  padding-top: 24px;
+}
+
+.bestCompanyLogo {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.subHeading {
+  font-size: 20px;
+  line-height: 1.35em;
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-weight: 800;
+}
+
+.headerContainer > div > h1{
+  margin-bottom: 10px;
+}
+
+@media mediumScreen {
+  .headerContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .headerContainer > picture {
+    width: auto;
+  }
+
+  .headerContainer > div {
+    padding-top: 0;
+  }
+
+  .headerContainer > div > h1{
+    text-align: left;
+  }
+
 }

@@ -7,7 +7,9 @@ import Section from '../../components/section';
 import styles from './style.css';
 import Video from '../../components/video';
 import HR from '../../components/hr';
+import Picture from '../../components/picture';
 import { Grid, Cell } from '../../components/grid';
+import bestCompanyLogo from './2018-best-small-companies-logo.jpg';
 
 const titles = {
   type: 'Content',
@@ -16,7 +18,7 @@ const titles = {
       {
         type: 'Title1',
         props: {
-          children: 'Join us',
+          children: <span className={styles.heading}>Join us</span>,
         },
       },
       {
@@ -24,7 +26,7 @@ const titles = {
         props: {
           // eslint-disable-next-line max-len, comma-dangle
           children: (
-            <span>
+            <span className={styles.subHeading}>
               Are we what you’re looking <span className={styles.noWrap}>for?*</span>
             </span>
           ),
@@ -112,7 +114,10 @@ export default function JoinUs({ jobs }) {
     <div className={styles.background}>
       <Section>
         <Container>
-          <ComponentRenderer data={titles} />
+          <div className={styles.headerContainer}>
+            <Picture className={styles.bestCompanyLogo} smallSrc={bestCompanyLogo} />
+            <ComponentRenderer data={titles} />
+          </div>
           <Grid>
             <Cell size={6}>
               <ComponentRenderer data={join} />
@@ -143,6 +148,6 @@ JoinUs.propTypes = {
     React.PropTypes.shape({
       description: React.PropTypes.string,
       title: React.PropTypes.string,
-    }),
+    })
   ),
 };
