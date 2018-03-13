@@ -18,42 +18,46 @@
 }
 
 .bestCompanyLogo {
-  width: 120px;
   margin: 0 auto;
-}
-
-.heading {
-  margin-bottom: 10px;
+  width: 120px;
 }
 
 .subHeading {
-  font-size: 20px;
-  line-height: 1.35em;
-  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
-  font-weight: 800;
+  composes: fontS2 from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
 }
 
 .headerContainer > div > h1{
   margin-bottom: 10px;
 }
 
+.bodyPictureContainer {
+  display: none;
+}
+
 @media mediumScreen {
-  .headerContainer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  .bodyPictureContainer {
+    display: block;
+    padding-left: 70px;
+    padding-top: 1em;
   }
   
   .headerContainer > picture {
-    width: auto;
+    display: none;
   }
 
   .headerContainer > div {
     padding-top: 0;
   }
 
-  .headerContainer > div > h1{
-    text-align: left;
+  .upperBodyContainer {
+    display: flex;
+    justify-content: center;
   }
+}
 
+@media largeScreen {
+  .bodyPictureContainer {
+    display: block;
+  }
 }

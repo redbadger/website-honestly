@@ -8,7 +8,7 @@ import styles from './style.css';
 import Video from '../../components/video';
 import HR from '../../components/hr';
 import Picture from '../../components/picture';
-import { Grid, Cell } from '../../components/grid';
+// import { Grid, Cell } from '../../components/grid';
 import bestCompanyLogo from './2018-best-small-companies-logo.jpg';
 
 const titles = {
@@ -18,7 +18,7 @@ const titles = {
       {
         type: 'Title1',
         props: {
-          children: <span className={styles.heading}>Join us</span>,
+          children: 'Join us',
         },
       },
       {
@@ -118,14 +118,13 @@ export default function JoinUs({ jobs }) {
             <Picture className={styles.bestCompanyLogo} smallSrc={bestCompanyLogo} />
             <ComponentRenderer data={titles} />
           </div>
-          <Grid>
-            <Cell size={6}>
-              <ComponentRenderer data={join} />
-            </Cell>
-            <Cell size={6}>
-              <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
-            </Cell>
-          </Grid>
+          <div className={styles.upperBodyContainer}>
+            <ComponentRenderer data={join} />
+            <div className={styles.bodyPictureContainer}>
+              <Picture className={styles.bestCompanyLogo} smallSrc={bestCompanyLogo} />
+            </div>
+          </div>
+          <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
           <HR color="red" />
           <ComponentRenderer data={vacancies} />
           <Jobs jobs={jobs} />
