@@ -112,9 +112,8 @@ export default function whatWeDo() {
     <div>
       <Social {...social} />
       <HeaderSlice />
-      <TriangleSlice />
-      <LeanAgileSlice />
       <CrossFunctionalSlice />
+      <LeanAgileSlice />
       <TechSlice />
       <CaseStudies />
     </div>
