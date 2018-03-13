@@ -1,5 +1,5 @@
 @value badgerWhite from "../../css/_colors.css";
-@value mediumScreen from "../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .background {
   background-color: badgerWhite;
@@ -53,11 +53,17 @@
   .upperBodyContainer {
     display: flex;
     justify-content: center;
+    padding: 0 60px;
+  }
+
+  .videoContainer {
+    padding: 60px;
   }
 }
 
 @media largeScreen {
-  .bodyPictureContainer {
+  .vacancyHeader {
     display: block;
+    padding-top: 24px;
   }
 }

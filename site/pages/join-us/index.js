@@ -8,7 +8,6 @@ import styles from './style.css';
 import Video from '../../components/video';
 import HR from '../../components/hr';
 import Picture from '../../components/picture';
-// import { Grid, Cell } from '../../components/grid';
 import bestCompanyLogo from './2018-best-small-companies-logo.jpg';
 
 const titles = {
@@ -105,7 +104,7 @@ const apply = {
 const vacancies = {
   type: 'Title2',
   props: {
-    children: 'Current Vacancies',
+    children: <span className={styles.vacancyHeader}>Current Vacancies</span>,
   },
 };
 
@@ -124,7 +123,9 @@ export default function JoinUs({ jobs }) {
               <Picture className={styles.bestCompanyLogo} smallSrc={bestCompanyLogo} />
             </div>
           </div>
-          <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
+          <div className={styles.videoContainer}>
+            <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
+          </div>
           <HR color="red" />
           <ComponentRenderer data={vacancies} />
           <Jobs jobs={jobs} />
