@@ -1,0 +1,35 @@
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.headings {
+  padding-top: 24px;
+}
+
+.h1 {
+  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontL from "../../../css/typography/_fonts.css";
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.h3 {
+  composes: fontS2 from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  margin: 0 0 0.8em;
+  text-align: center;
+}
+
+.bestCompanyLogo {
+  margin: 0 auto;
+  width: 120px;
+}
+
+@media mediumScreen {
+  .headings {
+    padding-top: 0;
+  }
+
+}

@@ -9,6 +9,7 @@ import styles from './style.css';
 import Video from '../../components/video';
 import HR from '../../components/hr';
 import Picture from '../../components/picture';
+import HeaderContainer from './header-container';
 import bestCompanyLogo from './2018-best-small-companies-logo.jpg';
 
 const join = {
@@ -83,43 +84,6 @@ const vacancies = {
     children: <span className={styles.vacancyHeader}>Current Vacancies</span>,
   },
 };
-
-class HeaderContainer extends React.Component {
-  static showPicture() {
-    const MEDIUM_BREAKPOINT = '(min-width: 690px)';
-    return !window.matchMedia(MEDIUM_BREAKPOINT).matches;
-  }
-
-  state = {
-    show: HeaderContainer.showPicture(),
-  };
-
-  componentDidMount() {
-    window.addEventListener('resize', this.onResize);
-  }
-
-  onResize = () => {
-    this.setState({ show: HeaderContainer.showPicture() });
-  };
-
-  render() {
-    return (
-      <div className={styles.headerContainer}>
-        {this.state.show && (
-          <Picture className={styles.bestCompanyLogo} smallSrc={bestCompanyLogo} />
-        )}
-        <div className={styles.headings}>
-          <h1 className={styles.h1}>Join Us</h1>
-          <h3 className={styles.h3}>
-            <span>
-              Are we what you’re looking <span className={styles.noWrap}>for?*</span>
-            </span>
-          </h3>
-        </div>
-      </div>
-    );
-  }
-}
 
 type Job = {
   title: string,

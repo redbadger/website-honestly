@@ -33,7 +33,7 @@ requireHook(
   () =>
     `module.exports = function(data) {
     return data.bodyContent;
-  }`,
+  }`
 );
 
 // Polyfill DOM api
@@ -42,6 +42,11 @@ global.window = global.document.defaultView;
 global.window.DOMParser = DOMParser;
 global.window.SVGPathSeg = () => {};
 global.window.SVGPathSegList = () => {};
+global.window.matchMedia = () => {
+  return {
+    matches: false,
+  };
+};
 global.navigator = {
   userAgent: 'node.js',
 };
