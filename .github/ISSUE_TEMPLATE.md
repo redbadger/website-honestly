@@ -1,16 +1,9 @@
-**Description of the issue:**
+_(add screenshots if applicable)_
 
-**Browser used:**
-**OS used:**
-**Device used:**
+### Expected Behaviour
 
-**Steps to reproduce:**
+### Actual Behaviour
 
-1.
-2.
-3.
-...etc
+### Steps to Reproduce
 
-**Actual result:**
-
-**Expected result:**
+### OS/Browsers Affected
