@@ -1,6 +1,12 @@
+// @flow
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/no-danger */
+
 import React from 'react';
 import ReactGA from 'react-ga';
 import styles from '../style.css';
+
+import hubspotButtons from '../hubspot-buttons';
 
 const trackAnalytics = title => () =>
   ReactGA.event({
@@ -26,6 +32,10 @@ export default () => (
       >
         Watch them now
       </a>
+      <div
+        onClick={trackAnalytics('Webinar-technology page -button')}
+        dangerouslySetInnerHTML={hubspotButtons.webinar}
+      />
     </div>
   </section>
 );

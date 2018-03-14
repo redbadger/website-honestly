@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/no-danger */
+// @flow
 
 import React from 'react';
 import ReactGA from 'react-ga';
-import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
 
 import BlogSlice from './blog-slice';
 import WebinarSignupSlice from './webinar-signup-slice';
+import HubspotButtons from './hubspot-buttons';
 
 import techRoundTableImage from './images/techroundtable.png';
-import slackSVG from './images/slack.svg';
-import meetupSVG from './images/react-meetup.svg';
 
 export type TechPageProps = {
   triedAndTestedBlogPosts: Array<Object>,
@@ -36,32 +36,21 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               basis to discuss which technologies we’re using to solve difficult problems on our
               projects, and which technologies are on our radar as ones to watch.
             </p>
-            <div className={styles.latestRoundTableLinkContainer}>
-              <a
-                className={styles.latestRoundTableLink}
-                href="http://roundtable.red-badger.com/Red_Badger_Tech_Round_Table_June_2017.pdf"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span onClick={trackAnalytics('RoundtablePDFLink')}>Read PDF report</span>
-              </a>
+            <div
+              className={styles.latestRoundTableLinkContainer}
+              onClick={trackAnalytics('RoundtablePDFLink')}
+            >
+              <div dangerouslySetInnerHTML={HubspotButtons.roundtable} />
             </div>
           </div>
         </section>
         <section className={styles.rightContent}>
           <div className={styles.innerContainer}>
-            <a
-              href="http://roundtable.red-badger.com/Red_Badger_Tech_Round_Table_June_2017.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className={styles.techRoundTable}
-                src={techRoundTableImage}
-                alt="tech roundtable"
-                onClick={trackAnalytics('RoundtablePDFLinkImage')}
-              />
-            </a>
+            <img
+              className={styles.techRoundTable}
+              src={techRoundTableImage}
+              alt="tech roundtable"
+            />
           </div>
         </section>
       </section>
@@ -78,24 +67,8 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
     <section className={styles.social}>
       <div className={styles.webinarInner}>
         <h2 className={styles.webinarText}>{'Say hello:'}</h2>
-        <a
-          className={styles.webinarButton}
-          href="https://redbadger.typeform.com/to/cBuJUl"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <InlineSVG src={slackSVG} className={styles.socialIcon} />
-          Join us on Slack
-        </a>
-        <a
-          className={styles.webinarButton}
-          href="https://meetup.react.london/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <InlineSVG src={meetupSVG} className={styles.socialIcon} />
-          Come to our Meetup
-        </a>
+        <div className={styles.hubspotBtnWrapper} dangerouslySetInnerHTML={HubspotButtons.slack} />
+        <div className={styles.hubspotBtnWrapper} dangerouslySetInnerHTML={HubspotButtons.meetup} />
       </div>
     </section>
   </div>

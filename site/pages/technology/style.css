@@ -229,3 +229,15 @@ img.techRoundTable {
 .socialIcon svg g {
   fill: badgerWhite;
 }
+
+/* ============= Hubspot button styling ============= */
+
+.hubspotBtnWrapper {
+  margin-top: 9px;
+}
+
+@media mediumScreen {
+  .hubspotBtnWrapper {
+    margin-right: 20px;
+  }
+}
