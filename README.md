@@ -14,7 +14,7 @@ Red Badger Website Episode 6: Return of the Jedi.
 
 ## Usage
 
-First setup your dev environment and install global dependencies:
+First set up your dev environment and install global dependencies:
 
 ```sh
 # Install the package manager
@@ -59,7 +59,7 @@ make services-invoke-publish
 This site is a static site hosted on AWS S3 behind a proxy that provides HTTPS.
 You can find the proxy here: https://github.com/redbadger/website-next-proxy
 
-The code used to build the HTML and CSS used to build the site can be found in
+The code used to build the site's HTML and CSS can be found in
 the `site/` directory. It's mostly React components and CSS modules.
 
 The same React app in the `site/` directory is used on the front end for
@@ -72,7 +72,7 @@ can be found in the `state/` directory.
 
 [bb]: https://github.com/redbadger/badger-brain
 
-Generation of the site is done on AWS Lambda so there are no production servers
+Generation of the site is done on AWS Lambda, so there are no production servers
 to look after. This lambda function is to be called any time there is a content
 update on the Prismic CMS. This and other lambda functions can be found in the
 `services/` directory.
@@ -81,17 +81,17 @@ The lambda functions are managed and deployed using Serverless framework, and
 AWS CloudFormation is used with Serverless to provision the rest of the new site
 infrastructure.
 
-The `dev/` directory contains two entrypoints to the application. The first is
+The `dev/` directory contains two entry points to the application. The first is
 `browser-app/`, which is the site mounted as a regular React app in the browser.
 
-Test data is loaded from `assets/state.json` during development, and can be
+Test data is loaded from `assets/state.json` during development and can be
 re-fetched by running `make fetch`.
 
 When `make dev` is run this app will be served with `webpack-dev-server`,
 allowing for a fast feedback loop development. This is likely to be where you
 will spend most your time while working on this application.
 
-The other entrypoint in `dev/` is `static/` which is similar to the site
+The other entry point in `dev/` is `static/` which is similar to the site
 generator on lambda, but it runs locally and writes the pages to the local
 filesystem instead of to AWS S3. This is useful for checking functionality that
 might not work with the front end `dev` app.
@@ -102,13 +102,13 @@ might not work with the front end `dev` app.
 We use CircleCI for running tests, building the app, and deploying the app.
 
 When a branch is pushed to CircleCI will compile the app, copy the CSS and
-client side JS to a folder in the staging S3 bucket and deploy the lambda to a
+client-side JS to a folder in the staging S3 bucket and deploy the lambda to a
 staging environment. The staging lambda is invoked, writing the HTML pages to
 the same folder in the staging bucket. Lastly a "View deployment" link is added
 to any pull request open on GitHub for that branch so it can be tested and
 reviewed.
 
-When the master branch is updated CircleCI will do the same deploy + invoke
+When the master branch is updated, CircleCI will do the same deploy + invoke
 process, writing to the root of the staging bucket. The staging site always
 reflects the current state of master.
 
@@ -124,7 +124,7 @@ See `bin/ci-deploy.sh` for more detail on deployment.
 
 ## Monitoring
 
-We use AWS CloudWatch for monitoring our staging and prod lambdas, all alarms should be picked up by bugsnag and sent to the slack channel #internal-projects.
+We use AWS CloudWatch for monitoring our staging and prod lambdas; all alarms should be picked up by bugsnag and sent to the slack channel #internal-projects.
 
 ## Assets
 
