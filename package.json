@@ -20,7 +20,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
-    "bugsnag": "https://github.com/redbadger/bugsnag-node#d877e32aab8b7d507ed3b66cd487e3d3b137dcd1",
+    "bugsnag": "^2.3.0",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "classnames": "^2.2.5",
