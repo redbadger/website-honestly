@@ -69,6 +69,24 @@ const CaseStudyOverview = () => (
           </span>
         </a>
         <a
+          href="/our-work/case-study/financial-services-digital-transformation"
+          className={styles.figureLink}
+          title="Bank case study"
+        >
+          <span className={styles.statsContainer}>
+            <span className={styles.centerText}>
+              Catalysts for change, delivery deployment and{' '}
+              <span className={styles.lastWord}>
+                culture
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
+            </span>
+          </span>
+          <span className={styles.logoContainer}>
+            <span className={styles.companyText}>Giant Global Bank</span>
+          </span>
+        </a>
+        <a
           href="/our-work/case-study/financial-times"
           className={styles.figureLink}
           title="Financial times case study"
@@ -92,34 +110,24 @@ const CaseStudyOverview = () => (
             />
           </span>
         </a>
-        <a
-          href="/our-work/case-study/financial-services-digital-transformation"
-          className={styles.figureLink}
-          title="Bank case study"
-        >
-          <span className={styles.statsContainer}>
-            <span className={styles.centerText}>
-              Catalysts for change, delivery deployment and{' '}
-              <span className={styles.lastWord}>
-                culture
-                <InlineSVG src={arrowSVG} className={styles.arrow} />
-              </span>
-            </span>
-          </span>
-          <span className={styles.logoContainer}>
-            <span className={styles.companyText}>Giant Global Bank</span>
-          </span>
-        </a>
       </div>
       <div className={styles.caseCompanies}>
-        <div className={styles.companiesGroup}>
+        <div className={styles.caseCompaniesLogo}>
           <img alt="The logo of Selfridges" src={selfridgesPNG} />
+        </div>
+        <div className={styles.caseCompaniesLogo}>
           <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
+        </div>
+        <div className={styles.caseCompaniesLogo}>
           <img alt="The logo of Tesco" src={tescoPNG} />
         </div>
-        <div className={styles.companiesGroup}>
+        <div className={styles.caseCompaniesLogo}>
           <img alt="The logo of the BBC" src={bbcPNG} />
+        </div>
+        <div className={styles.caseCompaniesLogo}>
           <img alt="The logo of BMW" src={bmwPNG} />
+        </div>
+        <div className={styles.caseCompaniesLogo}>
           <img alt="The logo of HSBC" src={hsbcPNG} />
         </div>
       </div>

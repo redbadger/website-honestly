@@ -1,5 +1,5 @@
 @value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
+@value smallScreen, mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
 .arrow svg {
   height: 15px;
@@ -13,7 +13,7 @@
 .heading {
   composes: fontM from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  max-width: contentMaxWidth;
+  max-width: 690px;
   margin: 0px auto;
   color: badgerWhite;
   text-align: center;
@@ -49,6 +49,12 @@
   flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
 }
 
+/* Rearrange stats comoponents */
+.figureLink:nth-child(1) { order: 0; }
+.figureLink:nth-child(2) { order: 1; }
+.figureLink:nth-child(3) { order: 3; }
+.figureLink:nth-child(4) { order: 2; }
+
 .statsContainer {
   display: block;
   margin: auto 0;
@@ -74,7 +80,7 @@
   color: badgerWhite;
   text-align: center;
   padding: 20px 30px;
-  max-width: 100%;
+  max-width: 400px;
   display: block; /*Set to avoid IE10 bug with non-wrapping text*/
   flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
 }
@@ -89,6 +95,7 @@
   composes: caseText;
   margin-bottom: 10px;
   padding: 0;
+  max-width: 390px;
 }
 
 .lastWord {
@@ -98,20 +105,16 @@
 }
 
 .lastWord i {
-  position: absolute;
-  top: 0;
-  right: -22px;
   width: 22px;
   display: inline-block;
 }
 
-/* TODO: try compose with caseText */
 .centerText {
   composes: fontXL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerWhite;
   text-align: center;
-  max-width: 100%;
+  max-width: 350px;
   display: block; /*Set to avoid IE10 bug with non-wrapping text*/
   flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
   margin: auto;
@@ -126,7 +129,6 @@
 
 .caseCompanies {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -135,15 +137,14 @@
   padding: 30px;
 }
 
-.companiesGroup {
-  flex: 1;
+.caseCompaniesLogo {
+  width: 50%;
   text-align: center;
 }
 
-.companiesGroup img {
-  display: block;
-  margin: 10px auto;
-  height: 40px;
+.caseCompaniesLogo img {
+  max-height: 40px;
+  max-width: 100%;
 }
 
 .buttonContainer {
@@ -155,6 +156,12 @@
 .button {
   composes: primaryButton from "../../css/_links.css";
   background-color: badgerRed;
+}
+
+@media smallScreen {
+  .caseCompaniesLogo {
+    width: 110px;
+  }
 }
 
 @media mediumScreen  {
@@ -179,7 +186,7 @@
   }
 
   .companyText {
-    margin: 15px 0 10px 0;
+    margin: 21px 0 10px;
   }
 
   .countdownText {
@@ -190,6 +197,7 @@
 
   .countdownCaseText {
     margin-bottom: 0;
+    max-width: 320px;
   }
 
   .figureLink {
@@ -202,17 +210,22 @@
     border-right: 1px solid linesOnBlack;
   }
 
-  .companiesGroup {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    width: 50%;
+  /* Rearrange stats comoponents */
+  .figureLink:nth-child(1) { order: 0; }
+  .figureLink:nth-child(2) { order: 1; }
+  .figureLink:nth-child(3) { order: 2; }
+  .figureLink:nth-child(4) { order: 3; }
+
+  .caseCompaniesLogo {
+    width: 120px;
+    margin: 0 10px;
   }
 
-  .caseCompanies {
-    justify-content: space-between;
+  .caseCompaniesLogo img {
+    max-height: 60px;
   }
 }
+
 @media largeScreen {
   .heading {
     padding: 50px 60px 60px 60px;
@@ -236,10 +249,12 @@
 
   .countdownCaseText {
     font-size: 35px;
+    max-width: 440px;
   }
 
   .centerText {
     font-size: 60px;
+    max-width: 480px;
   }
 
   .logoContainer {
@@ -253,6 +268,7 @@
 
   .companyText {
     font-size: 28px;
+    margin-top: 34px;
   }
 
   .caseCompanies {
@@ -260,8 +276,13 @@
     max-width: 1160px;
   }
 
-  .caseCompanies img {
-    height: 80px;
+  .caseCompaniesLogo {
+    width: auto;
+    margin: 10px auto;
+  }
+
+  .caseCompaniesLogo img {
+    max-height: 80px;
   }
 
   .buttonContainer {
