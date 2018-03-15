@@ -1,4 +1,6 @@
 /* eslint-disable no-console */
+
+import crypto from 'crypto';
 import { mailchimpApi, formatUpdateResponse, formatFormInput } from '../utilities';
 
 function md5(str) {
