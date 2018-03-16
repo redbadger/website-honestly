@@ -27,7 +27,8 @@ const daysSinceFortumStarted = () => {
 };
 
 const CaseStudyOverview = () => (
-  <section className={styles.caseStudyContainer}>
+  // The id here is to allow us to link directly to the page stats
+  <section className={styles.caseStudyContainer} id="stats">
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.limitWidth}>
       <div className={styles.figuresContainer}>
