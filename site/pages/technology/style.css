@@ -236,8 +236,20 @@ img.techRoundTable {
   margin-top: 9px;
 }
 
+.readPdfReportWrapper {
+  margin-top: 30px;
+}
+
+.webinarBtnWrapper {
+  margin-top: 35px;
+}
+
 @media mediumScreen {
-  .hubspotBtnWrapper {
+  .hubspotBtnWrapper, .readPdfReportWrapper {
     margin-right: 20px;
+  }
+
+  .webinarBtnWrapper {
+    margin-top: 5px;
   }
 }

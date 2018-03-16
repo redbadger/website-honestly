@@ -40,7 +40,10 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               className={styles.latestRoundTableLinkContainer}
               onClick={trackAnalytics('RoundtablePDFLink')}
             >
-              <div dangerouslySetInnerHTML={HubspotButtons.roundtable} />
+              <div
+                className={styles.readPdfReportWrapper}
+                dangerouslySetInnerHTML={HubspotButtons.roundtable}
+              />
             </div>
           </div>
         </section>
