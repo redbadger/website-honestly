@@ -6,19 +6,21 @@ import bestCompanyLogo from '../2018-best-small-companies-logo.jpg';
 class HeaderContainer extends React.Component {
   static showPicture() {
     const MEDIUM_BREAKPOINT = '(min-width: 690px)';
-    return !global.window.matchMedia(MEDIUM_BREAKPOINT).matches;
+    return !window.matchMedia(MEDIUM_BREAKPOINT).matches;
   }
 
   state = {
-    show: HeaderContainer.showPicture(),
+    show: false,
   };
 
   componentDidMount() {
-    global.window.addEventListener('resize', this.onResize);
+    /* eslint-disable react/no-did-mount-set-state */
+    this.setState({ show: HeaderContainer.showPicture() });
+    window.addEventListener('resize', this.onResize);
   }
 
   componentWillUnmount() {
-    global.window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('resize', this.onResize);
   }
 
   onResize = () => {

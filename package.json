@@ -93,6 +93,7 @@
     "reset-css": "^2.2.0",
     "sanitize-html": "^1.16.3",
     "serverless": "1.0.0-rc.1",
+    "sinon": "^4.4.6",
     "style-loader": "^0.19.1",
     "svg-inline-loader": "^0.8.0",
     "svg-inline-react": "^3.0.0",
