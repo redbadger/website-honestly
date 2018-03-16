@@ -127,26 +127,6 @@
   margin: 30px 0 10px 0;
 }
 
-.caseCompanies {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid linesOnBlack;
-  border-bottom: 1px solid linesOnBlack;
-  padding: 30px;
-}
-
-.caseCompaniesLogo {
-  width: 50%;
-  text-align: center;
-}
-
-.caseCompaniesLogo img {
-  max-height: 40px;
-  max-width: 100%;
-}
-
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -158,11 +138,6 @@
   background-color: badgerRed;
 }
 
-@media smallScreen {
-  .caseCompaniesLogo {
-    width: 110px;
-  }
-}
 
 @media mediumScreen  {
   .caseStudyContainer {
@@ -215,15 +190,6 @@
   .figureLink:nth-child(2) { order: 1; }
   .figureLink:nth-child(3) { order: 2; }
   .figureLink:nth-child(4) { order: 3; }
-
-  .caseCompaniesLogo {
-    width: 120px;
-    margin: 0 10px;
-  }
-
-  .caseCompaniesLogo img {
-    max-height: 60px;
-  }
 }
 
 @media largeScreen {

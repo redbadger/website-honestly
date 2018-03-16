@@ -1,0 +1,55 @@
+@value linesOnBlack from "../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.caseCompanies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid linesOnBlack;
+  border-bottom: 1px solid linesOnBlack;
+  padding: 30px;
+}
+
+.caseCompaniesLogo {
+  width: 50%;
+  text-align: center;
+}
+
+.caseCompaniesLogo img {
+  max-height: 40px;
+  max-width: 100%;
+}
+
+@media smallScreen {
+  .caseCompaniesLogo {
+    width: 110px;
+  }
+}
+
+@media mediumScreen  {
+  .caseCompaniesLogo {
+    width: 120px;
+    margin: 0 10px;
+  }
+
+  .caseCompaniesLogo img {
+    max-height: 60px;
+  }
+}
+
+@media largeScreen {
+  .caseCompanies {
+    margin: 0 auto;
+    max-width: 1160px;
+  }
+
+  .caseCompaniesLogo {
+    width: auto;
+    margin: 10px auto;
+  }
+
+  .caseCompaniesLogo img {
+    max-height: 80px;
+  }
+}

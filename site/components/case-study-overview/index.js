@@ -3,20 +3,13 @@ import InlineSVG from 'svg-inline-react';
 import moment from 'moment';
 import styles from './style.css';
 
-/* PNG logo imports */
-import bbcPNG from './PNG/bbc.png';
-import bmwPNG from './PNG/bmw.png';
-import cartrawlerPNG from './PNG/cartrawler.png';
-import financialTimesPNG from './PNG/financialtimes.png';
 import fortnumPNG from './PNG/fortnum.png';
-import hsbcPNG from './PNG/hsbc.png';
-import selfridgesPNG from './PNG/selfridges.png';
-import tescoPNG from './PNG/tesco.png';
-import Link from '../link';
-
-/* SVG figure imports */
-import ftFigureSVG from './SVG/ft-figure.svg';
+import financialTimesPNG from './PNG/financialtimes.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
+import ftFigureSVG from './SVG/ft-figure.svg';
+
+import Link from '../link';
+import CaseStudyCompanyLogos from '../case-study-company-logos';
 
 const daysSinceFortumStarted = () => {
   const startDate = moment([2014, 5, 14]);
@@ -112,26 +105,7 @@ const CaseStudyOverview = () => (
           </span>
         </a>
       </div>
-      <div className={styles.caseCompanies}>
-        <div className={styles.caseCompaniesLogo}>
-          <img alt="The logo of Selfridges" src={selfridgesPNG} />
-        </div>
-        <div className={styles.caseCompaniesLogo}>
-          <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
-        </div>
-        <div className={styles.caseCompaniesLogo}>
-          <img alt="The logo of Tesco" src={tescoPNG} />
-        </div>
-        <div className={styles.caseCompaniesLogo}>
-          <img alt="The logo of the BBC" src={bbcPNG} />
-        </div>
-        <div className={styles.caseCompaniesLogo}>
-          <img alt="The logo of BMW" src={bmwPNG} />
-        </div>
-        <div className={styles.caseCompaniesLogo}>
-          <img alt="The logo of HSBC" src={hsbcPNG} />
-        </div>
-      </div>
+      <CaseStudyCompanyLogos />
       <div className={styles.buttonContainer}>
         <Link to="ourWorkPage" className={styles.button}>
           See more of our work
