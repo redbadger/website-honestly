@@ -245,7 +245,7 @@ img.techRoundTable {
 }
 
 @media mediumScreen {
-  .hubspotBtnWrapper, .readPdfReportWrapper {
+  .hubspotBtnWrapper, .readPdfReportWrapper, .webinarBtnWrapper {
     margin-right: 20px;
   }
 
