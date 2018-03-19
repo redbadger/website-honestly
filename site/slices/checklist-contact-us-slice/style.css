@@ -81,20 +81,19 @@
 }
 
 
-.button {
-  composes: primaryButton from "../../css/_links.css";
-  color: badgerWhite !important;
-  background: badgerBlack !important;
-  outline: none;
-  border: none;
+.talkToUs {
+  composes: lightSerif from "../../css/typography/_fonts.css";
+  font-size: 28px;
 }
 
-.button:hover {
+.mailToLink {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-size: 32px;
+  color: #212121;
+}
+
+.mailToLink:hover {
   cursor: pointer;
-}
-
-.button:hover {
-  background: scorpian !important;
 }
 
 @media mediumScreen {
