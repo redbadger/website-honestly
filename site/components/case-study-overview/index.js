@@ -12,7 +12,7 @@ import Link from '../link';
 import CaseStudyCompanyLogos from '../case-study-company-logos';
 
 const daysSinceFortumStarted = () => {
-  const startDate = moment([2014, 5, 14]);
+  const startDate = moment([2014, 4, 14]);
   const today = moment();
   const diffInDays = today.diff(startDate, 'days');
 
