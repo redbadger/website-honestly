@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
+@value badgerWhite, badgerRedOnWhite, badgerBlack, badgerRed from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .screenReaderText {
@@ -39,7 +39,7 @@
 
 .pageSubHeader {
   width: 100%;
-  color: badgerRedOnWhite;
+  color: badgerRed;
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
   margin-bottom: 5px;
