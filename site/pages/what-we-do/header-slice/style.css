@@ -41,14 +41,45 @@
   margin-left: auto;
 }
 
-.flexible {
+.flexibleUpper,
+.flexibleLower {
   display: flex;
+  position: relative;
+}
+
+.flexibleUpper::after,
+.flexibleLower::after {
+  color: badgerRed;
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.1em;
+  position: absolute;
+  bottom: 0;
+    margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+
+.pageHeader {
+  margin-bottom: 28px;
+}
+
+.flexibleUpper::after {
+  content: "Innovation";
+  left: 0;
+}
+
+.flexibleLower::after {
+  content: "Delivery";
+  right: 0;
 }
 
 .pageHeader {
   composes: serif from "../../../css/typography/_fonts.css";
   composes: fontXL from "../../../css/typography/_fonts.css";
   color: badgerBlack;
+  /* margin-bottom: 54px; */
 }
 
 .pageSubHeader {
@@ -69,6 +100,7 @@
   composes: arrow;
   transform: rotate(-170deg);
   margin: 15px 5px 0 0;
+  margin-bottom: 20px;
 }
 
 .arrowDown {
@@ -113,7 +145,7 @@
   .arrowDown {
     transform: rotate(2deg);
     margin-left: 42px;
-    margin-bottom: 0;
+    margin-bottom: 54px;
   }
 
   .subtitle {
@@ -132,6 +164,17 @@
     max-width: 640px;
   }
 
+.flexibleUpper::after,
+.flexibleLower::after {
+  font-size: 40px;
+  line-height: 1.1em;
+  position: absolute;
+  bottom: 0;
+}
+
+  .pageHeader {
+    margin-bottom: 54px;
+  }
   .pageSubHeader {
     font-size: 40px;
     margin-top: 15px;
