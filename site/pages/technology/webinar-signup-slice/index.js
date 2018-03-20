@@ -22,7 +22,7 @@ export default () => (
         {'Did you miss our tech webinars on Serverless, GraphQL and more?'}
       </h2>
       <div
-        className={styles.webinarBtnWrapper}
+        className={`${styles.hubspotBtn} ${styles.webinarBtnWrapper}`}
         onClick={trackAnalytics('Webinar-technology page -button')}
         dangerouslySetInnerHTML={hubspotButtons.webinar}
       />

@@ -41,7 +41,7 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
               onClick={trackAnalytics('RoundtablePDFLink')}
             >
               <div
-                className={styles.readPdfReportWrapper}
+                className={`${styles.hubspotBtn} ${styles.readPdfReportWrapper}`}
                 dangerouslySetInnerHTML={HubspotButtons.roundtable}
               />
             </div>
@@ -70,8 +70,8 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
     <section className={styles.social}>
       <div className={styles.webinarInner}>
         <h2 className={styles.webinarText}>{'Say hello:'}</h2>
-        <div className={styles.hubspotBtnWrapper} dangerouslySetInnerHTML={HubspotButtons.slack} />
-        <div className={styles.hubspotBtnWrapper} dangerouslySetInnerHTML={HubspotButtons.meetup} />
+        <div className={`${styles.hubspotBtn} ${styles.slackBtnWrapper}`} dangerouslySetInnerHTML={HubspotButtons.slack} />
+        <div className={`${styles.hubspotBtn} ${styles.meetupBtnWrapper}`} dangerouslySetInnerHTML={HubspotButtons.meetup} />
       </div>
     </section>
   </div>
