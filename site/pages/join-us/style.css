@@ -1,4 +1,5 @@
 @value badgerWhite from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .background {
   background-color: badgerWhite;
@@ -8,6 +9,49 @@
   composes: craft paperTear from "../../components/utils/background.css";
 }
 
-.noWrap {
-  white-space: nowrap;
+.bestCompanyLogo {
+  margin: 0 auto;
+  width: 160px;
+}
+
+@media (min-width: 550px) {
+  .bodyPictureContainer {
+    display: block;
+    padding-right: 40px;
+    padding-top: 23px;
+  }
+
+  .upperBodyContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+@media mediumScreen {
+  .bestCompanyLogo {
+    margin: 0 auto;
+    width: 196px;
+  }
+
+  .bodyPictureContainer {
+    display: block;
+    padding-right: 50px;
+    padding-top: 23px;
+  }
+
+  .videoContainer {
+    padding: 60px;
+  }
+
+  .upperBodyContainer {
+    padding: 0 60px;
+  }
+}
+
+@media largeScreen {
+  .vacancyHeader {
+    display: block;
+    padding-top: 24px;
+  }
 }

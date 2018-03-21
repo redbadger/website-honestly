@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 
 import ComponentRenderer from '../../components/component-renderer';
@@ -7,32 +8,9 @@ import Section from '../../components/section';
 import styles from './style.css';
 import Video from '../../components/video';
 import HR from '../../components/hr';
-import { Grid, Cell } from '../../components/grid';
-
-const titles = {
-  type: 'Content',
-  props: {
-    children: [
-      {
-        type: 'Title1',
-        props: {
-          children: 'Join us',
-        },
-      },
-      {
-        type: 'Title3',
-        props: {
-          // eslint-disable-next-line max-len, comma-dangle
-          children: (
-            <span>
-              Are we what you’re looking <span className={styles.noWrap}>for?*</span>
-            </span>
-          ),
-        },
-      },
-    ],
-  },
-};
+import Picture from '../../components/picture';
+import HeaderContainer from './header-container';
+import bestCompanyLogo from './2018-best-small-companies-logo.jpg';
 
 const join = {
   type: 'Content',
@@ -103,46 +81,47 @@ const apply = {
 const vacancies = {
   type: 'Title2',
   props: {
-    children: 'Current Vacancies',
+    children: <span className={styles.vacancyHeader}>Current Vacancies</span>,
   },
 };
 
-export default function JoinUs({ jobs }) {
-  return (
-    <div className={styles.background}>
+type Job = {
+  title: string,
+  description: string,
+};
+
+type Props = {
+  jobs: Array<Job>,
+};
+
+const JoinUs = ({ jobs }: Props) => (
+  <div className={styles.background}>
+    <Section>
+      <Container>
+        <HeaderContainer />
+        <div className={styles.upperBodyContainer}>
+          <div className={styles.bodyPictureContainer}>
+            <Picture className={styles.bestCompanyLogo} smallSrc={bestCompanyLogo} />
+          </div>
+          <ComponentRenderer data={join} />
+        </div>
+        <div className={styles.videoContainer}>
+          <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
+        </div>
+        <HR color="red" />
+        <ComponentRenderer data={vacancies} />
+        <Jobs jobs={jobs} />
+      </Container>
+    </Section>
+    <HR color="red" />
+    <div className={styles.apply}>
       <Section>
         <Container>
-          <ComponentRenderer data={titles} />
-          <Grid>
-            <Cell size={6}>
-              <ComponentRenderer data={join} />
-            </Cell>
-            <Cell size={6}>
-              <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
-            </Cell>
-          </Grid>
-          <HR color="red" />
-          <ComponentRenderer data={vacancies} />
-          <Jobs jobs={jobs} />
+          <ComponentRenderer data={apply} />
         </Container>
       </Section>
-      <HR color="red" />
-      <div className={styles.apply}>
-        <Section>
-          <Container>
-            <ComponentRenderer data={apply} />
-          </Container>
-        </Section>
-      </div>
     </div>
-  );
-}
+  </div>
+);
 
-JoinUs.propTypes = {
-  jobs: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      description: React.PropTypes.string,
-      title: React.PropTypes.string,
-    }),
-  ),
-};
+export default JoinUs;
