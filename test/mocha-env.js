@@ -33,7 +33,7 @@ requireHook(
   () =>
     `module.exports = function(data) {
     return data.bodyContent;
-  }`
+  }`,
 );
 
 // Polyfill DOM api

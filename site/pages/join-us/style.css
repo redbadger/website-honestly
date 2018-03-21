@@ -11,28 +11,41 @@
 
 .bestCompanyLogo {
   margin: 0 auto;
-  width: 120px;
+  width: 160px;
 }
 
-.bodyPictureContainer {
-  display: none;
+@media (min-width: 550px) {
+  .bodyPictureContainer {
+    display: block;
+    padding-right: 40px;
+    padding-top: 23px;
+  }
+
+  .upperBodyContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 @media mediumScreen {
+  .bestCompanyLogo {
+    margin: 0 auto;
+    width: 196px;
+  }
+
   .bodyPictureContainer {
     display: block;
-    padding-left: 70px;
-    padding-top: 1em;
-  }
-  
-  .upperBodyContainer {
-    display: flex;
-    justify-content: center;
-    padding: 0 60px;
+    padding-right: 50px;
+    padding-top: 23px;
   }
 
   .videoContainer {
     padding: 60px;
+  }
+
+  .upperBodyContainer {
+    padding: 0 60px;
   }
 }
 

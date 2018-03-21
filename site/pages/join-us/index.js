@@ -100,10 +100,10 @@ const JoinUs = ({ jobs }: Props) => (
       <Container>
         <HeaderContainer />
         <div className={styles.upperBodyContainer}>
-          <ComponentRenderer data={join} />
           <div className={styles.bodyPictureContainer}>
             <Picture className={styles.bestCompanyLogo} smallSrc={bestCompanyLogo} />
           </div>
+          <ComponentRenderer data={join} />
         </div>
         <div className={styles.videoContainer}>
           <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />
