@@ -6,7 +6,6 @@ import styles from './style.css';
 import fortnumPNG from './PNG/fortnum.png';
 import financialTimesPNG from './PNG/financialtimes.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
-import ftFigureSVG from './SVG/ft-figure.svg';
 
 import Link from '../link';
 import CaseStudyCompanyLogos from '../case-study-company-logos';
@@ -86,8 +85,7 @@ const CaseStudyOverview = () => (
           title="Financial times case study"
         >
           <span className={styles.statsContainer}>
-            <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
-            <span className={styles.screenReaderText}>30%</span>
+            <span className={styles.countdownText}>30%</span>
             <span className={styles.caseText}>
               uplift in reader{' '}
               <span className={styles.lastWord}>

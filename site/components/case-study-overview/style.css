@@ -79,7 +79,7 @@
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerWhite;
   text-align: center;
-  padding: 20px 30px;
+  padding: 0 30px 20px;
   max-width: 400px;
   display: block; /*Set to avoid IE10 bug with non-wrapping text*/
   flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
