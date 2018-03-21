@@ -13,7 +13,10 @@ const headerSlice = () => {
           <div className={styles.alignLeft} role="presentation">
             <div className={styles.flexibleUpper}>
               <div className={styles.pageHeaderUpper}>
-                Do the <br />right thing
+                {/* Space added so that h1 can be crawled correctly */}
+                Do the{` `}
+                {/* Space added so that h1 can be crawled correctly */}
+                <br />right thing{' '}
               </div>
               <img alt="" role="presentation" className={styles.arrowDown} src={arrowImg} />
             </div>
@@ -22,7 +25,9 @@ const headerSlice = () => {
             <div className={styles.flexibleLower}>
               <img alt="" role="presentation" className={styles.arrowUp} src={arrowImg} />
               <div className={styles.pageHeaderLower}>
-                Do the<br />thing right
+                {/* Space added so that h1 can be crawled correctly */}
+                Do the{` `}
+                <br />thing right
               </div>
             </div>
           </div>
