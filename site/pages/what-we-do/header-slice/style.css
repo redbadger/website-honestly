@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRed from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .screenReaderText {
@@ -6,70 +6,122 @@
 }
 
 .pageHeaderContainer {
-  width: 280px;
-  margin: 0 auto;
-  display: flex;
   composes: dividerWhite from "../../../css/_divider.css";
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background-color: badgerWhite;
+  margin: 0 auto;
   padding: 40px 0px;
 }
 
+.upperContainer,
+.lowerContainer {
+  margin: 0 auto;
+}
+
+.upperContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+}
+
+.lowerContainer {
+  max-width: 440px;
+  min-width: 280px;
+  width: 80%;
+}
+
+.headingWrapper {
+  width: 100%;
+}
+
 .alignLeft {
-  text-align: left;
   margin-right: auto;
+  text-align: left;
 }
 
 .alignRight {
-  text-align: right;
   margin-left: auto;
+  text-align: right;
 }
 
-.flexible {
+.flexibleUpper,
+.flexibleLower {
   display: flex;
+  position: relative;
 }
 
-.pageHeader {
+.flexibleUpper::after,
+.flexibleLower::after {
+  bottom: 0;
+  color: badgerRed;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.1em;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.flexibleUpper::after {
+  content: "Innovation";
+  left: 0;
+}
+
+.flexibleLower {
+  justify-content: flex-end;
+}
+.flexibleLower::after {
+  content: "Delivery";
+  right: 0;
+}
+
+.pageHeaderUpper, 
+.pageHeaderLower {
   composes: serif from "../../../css/typography/_fonts.css";
   composes: fontXL from "../../../css/typography/_fonts.css";
   color: badgerBlack;
+  margin-bottom: 32px;
+}
+
+.pageHeaderLower {
+  margin-left: auto;
 }
 
 .pageSubHeader {
-  width: 100%;
-  color: badgerRedOnWhite;
   composes: fontM from "../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  color: badgerRed;
   margin-bottom: 5px;
   margin-top: 10px;
+  width: 100%;
 }
 
 .arrow {
-  width: 60px;
   height: 40px;
+  width: 60px;
 }
 
 .arrowUp {
   composes: arrow;
-  transform: rotate(-170deg);
   margin: 15px 5px 0 0;
+  margin-bottom: 52px;
+  transform: rotate(-170deg);
 }
 
 .arrowDown {
   composes: arrow;
-  transform: rotate(15deg);
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: 52px;
+  transform: rotate(15deg);
 }
 
 .subtitle {
   composes: fontXS from "../../../css/typography/_fonts.css";
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  text-align: center;
   margin-top: 20px;
-  width: 100%;
+  text-align: center;
 }
 
 @media mediumScreen {
@@ -77,36 +129,78 @@
     width: 610px;
   }
 
+  .upperContainer,
+  .lowerContainer {
+    max-width: none;
+    width: 100%;
+  }
+
+  .pageHeaderUpper, 
+  .pageHeaderLower {
+    margin-bottom: 40px;
+  }
+
+  .pageHeaderLower {
+    margin-left: unset;
+  }
+
   .pageSubHeader {
     composes: fontS from "../../../css/typography/_fonts.css";
   }
 
+.flexibleUpper::after,
+.flexibleLower::after {
+  font-size: 24px;
+}
+
+.flexibleLower::after {
+  margin-bottom: 5px;
+}
+
   .arrow {
-    width: 140px;
     height: 85px;
+    width: 140px;
   }
 
   .arrowUp {
-    margin-top: auto;
+    margin-top: 46px;
     margin-right: 45px;
   }
 
   .arrowDown {
-    transform: rotate(2deg);
     margin-left: 42px;
-    margin-bottom: 0;
+    margin-bottom: 36px;
+    transform: rotate(2deg);
   }
 
   .subtitle {
     composes: fontS from "../../../css/typography/_fonts.css";
+    width: 100%;
   }
 }
 
 @media largeScreen {
   .pageHeaderContainer {
-    width: 790px;
     padding: 80px 0;
+    width: 790px;
   }
+
+  .lowerContainer {
+    max-width: 640px;
+  }
+
+.flexibleUpper::after,
+.flexibleLower::after {
+  bottom: 0;
+  font-size: 40px;
+  line-height: 1.1em;
+  position: absolute;
+}
+
+.pageHeaderUpper, 
+.pageHeaderLower {
+  margin-bottom: 68px;
+}
 
   .pageSubHeader {
     font-size: 40px;
@@ -114,16 +208,21 @@
   }
 
   .arrow {
-    width: 183px;
     height: 116px;
+    width: 183px;
   }
 
   .arrowUp {
     margin-right: 60px;
+    margin-top: 62px;
+  }
+
+  .arrowDown {
+    margin-bottom: 68px;
   }
 
   .subtitle {
-    font-size: 32px;
+    font-size: 24px;
     margin-top: 30px;
   }
 }
