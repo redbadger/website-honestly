@@ -1,6 +1,12 @@
+// @flow
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/no-danger */
+
 import React from 'react';
 import ReactGA from 'react-ga';
 import styles from '../style.css';
+
+import hubspotButtons from '../hubspot-buttons';
 
 const trackAnalytics = title => () =>
   ReactGA.event({
@@ -9,23 +15,17 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-const webinarLink = 'https://www.youtube.com/playlist?list=PLW6ORi0XZU0DF9rlBzgro6YGTTm5DfPjb';
-
 export default () => (
   <section className={styles.webinar}>
     <div className={styles.webinarInner}>
       <h2 className={styles.webinarText}>
         {'Did you miss our tech webinars on Serverless, GraphQL and more?'}
       </h2>
-      <a
-        className={styles.webinarButton}
-        href={webinarLink}
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
+        className={`${styles.hubspotBtn} ${styles.webinarBtnWrapper}`}
         onClick={trackAnalytics('Webinar-technology page -button')}
-      >
-        Watch them now
-      </a>
+        dangerouslySetInnerHTML={hubspotButtons.webinar}
+      />
     </div>
   </section>
 );

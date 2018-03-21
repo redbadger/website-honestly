@@ -3,8 +3,8 @@ import classnames from 'classnames/bind';
 import styles from './style.css';
 import HeaderSlice from './header-slice';
 import TechSlice from '../../slices/tech-slice';
-import TriangleSlice from './triangle-slice';
 import LeanAgileSlice from './lean-agile-slice';
+import CrossFunctionalSlice from './cross-functional-slice';
 import Link from '../../components/link';
 import Social from '../../components/social';
 
@@ -111,7 +111,7 @@ export default function whatWeDo() {
     <div>
       <Social {...social} />
       <HeaderSlice />
-      <TriangleSlice />
+      <CrossFunctionalSlice />
       <LeanAgileSlice />
       <TechSlice />
       <CaseStudies />
