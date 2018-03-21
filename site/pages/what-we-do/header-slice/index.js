@@ -9,11 +9,11 @@ const headerSlice = () => {
         <div className={styles.screenReaderText}>
           Cyclic diagram of doing the right thing through innovation and delivery
         </div>
-        <h1>
+        <h1 className={styles.headingWrapper}>
           <div className={styles.alignLeft} role="presentation">
             <div className={styles.flexibleUpper}>
-              <div className={styles.pageHeader}>
-                Do the<br />right thing
+              <div className={styles.pageHeaderUpper}>
+                Do the <br />right thing
               </div>
               <img alt="" role="presentation" className={styles.arrowDown} src={arrowImg} />
             </div>
@@ -21,7 +21,7 @@ const headerSlice = () => {
           <div className={styles.alignRight} role="presentation">
             <div className={styles.flexibleLower}>
               <img alt="" role="presentation" className={styles.arrowUp} src={arrowImg} />
-              <div className={styles.pageHeader}>
+              <div className={styles.pageHeaderLower}>
                 Do the<br />thing right
               </div>
             </div>
