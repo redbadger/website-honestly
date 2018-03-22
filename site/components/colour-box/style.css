@@ -1,5 +1,6 @@
 @value badgerRed, badgerBlack, badgerWhite, cainYellow, daveGreen, stuBlue from "../../css/_colors.css";
 @value largeScreen, mediumScreen from "../../css/_sizes.css";
+@value fontXS, sansSerif from "../../css/typography/_fonts.css";
 
 .subHeading {
   composes: serif from "../../css/typography/_fonts.css";
@@ -32,12 +33,13 @@
   color: badgerWhite;
 }
 
-.description, 
+.description,
 .descriptionLink {
-  composes: lightSerif from "../../css/typography/_fonts.css";
+  composes: fontXS;
+  composes: sansSerif;
   color: #F8F8F8;
-  font-size: 20px;
-  line-height: 1.2em;
+  /* font-size: 20px;
+  line-height: 1.2em; */
 }
 
 .descriptionLink:hover {

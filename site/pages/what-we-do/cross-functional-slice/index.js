@@ -27,9 +27,9 @@ const content = [
     description: 'Improve customer experience, create delightful products and services.',
   },
   {
-    title: 'You (the client)',
+    title: 'You',
     labelColour: 'red',
-    description: 'Together we build a capability and lasting change.',
+    description: 'Together we build a capability for lasting change.',
   },
 ];
 
