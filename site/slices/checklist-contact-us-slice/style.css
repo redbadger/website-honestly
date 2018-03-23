@@ -82,14 +82,19 @@
 
 
 .talkToUs {
-  composes: lightSerif from "../../css/typography/_fonts.css";
-  font-size: 28px;
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 .mailToLink {
   composes: boldSansSerif from "../../css/typography/_fonts.css";
-  font-size: 32px;
-  color: #212121;
+  color: badgerWhite;
+  display: inline-block;
+  font-size: 24px;
+  background-color: badgerBlack;
+  padding: 14px 10px;
 }
 
 .mailToLink:hover {
@@ -116,7 +121,14 @@
     float: left;
     width: 200px;
   }
+
+  .mailToLink {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 24px;
+  }
 }
+
 
 @media largeScreen {
   .contactUsContainer {
@@ -142,5 +154,9 @@
     min-height: 300px;
     width: 300px;
     height: 300px;
+  }
+
+  .talkToUs {
+    font-size: 24px;
   }
 }

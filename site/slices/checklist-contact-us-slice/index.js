@@ -50,7 +50,7 @@ class ChecklistContactUs extends Component {
           <div className={cx(styles.imgContainer, this.state.isHovered ? 'isHovered' : '')} />
         </div>
         <div>
-          <h3 className={styles.talkToUs}>Talk to us at</h3>
+          <h3 className={styles.talkToUs}>Send an email to:</h3>
           <a
             href={mailToURL}
             className={styles.mailToLink}
