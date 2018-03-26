@@ -1,13 +1,12 @@
 @value badgerRed, badgerBlack, badgerWhite, cainYellow, daveGreen, stuBlue from "../../css/_colors.css";
 @value largeScreen, mediumScreen from "../../css/_sizes.css";
-@value fontXS, sansSerif from "../../css/typography/_fonts.css";
+@value serif, fontM2, sansSerif, fontS from "../../css/typography/_fonts.css";
 
 .subHeading {
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: serif;
+  composes: fontM2;
   color: badgerBlack;
   display: inline-block;
-  font-size: 24px;
-  line-height: 1.2em;
   margin: 20px 0 8px;
   padding: 1px 15px;
 }
@@ -35,11 +34,9 @@
 
 .description,
 .descriptionLink {
-  composes: fontXS;
   composes: sansSerif;
+  composes: fontS;
   color: #F8F8F8;
-  /* font-size: 20px;
-  line-height: 1.2em; */
 }
 
 .descriptionLink:hover {
@@ -47,6 +44,12 @@
 }
 
 @media mediumScreen {
+  .description,
+  .descriptionLink {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
   .subHeading {
     margin-top: 0;
   }

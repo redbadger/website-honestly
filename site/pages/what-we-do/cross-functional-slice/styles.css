@@ -54,6 +54,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px 40px;
+  max-width: 460px;
+  margin: 0 auto;
 }
 
 @media mediumScreen {
@@ -64,7 +66,7 @@
   .imageContainer {
     padding: 0;
   }
-  
+
   .colourBoxContainer {
     justify-content: center;
     padding: 40px 0 10px;
