@@ -85,7 +85,7 @@
   composes: boldSansSerif from "../../css/typography/_fonts.css";
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .mailToLink {
@@ -94,11 +94,11 @@
   display: inline-block;
   font-size: 24px;
   background-color: badgerBlack;
-  padding: 14px 10px;
+  padding: 14px 20px;
 }
 
 .mailToLink:hover {
-  cursor: pointer;
+  background-color: scorpian;
 }
 
 @media mediumScreen {
@@ -120,12 +120,6 @@
   .imgContainer {
     float: left;
     width: 200px;
-  }
-
-  .mailToLink {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 24px;
   }
 }
 

@@ -50,7 +50,6 @@ class ChecklistContactUs extends Component {
           <div className={cx(styles.imgContainer, this.state.isHovered ? 'isHovered' : '')} />
         </div>
         <div>
-          <h3 className={styles.talkToUs}>Send an email to:</h3>
           <a
             href={mailToURL}
             className={styles.mailToLink}
@@ -58,8 +57,9 @@ class ChecklistContactUs extends Component {
             onMouseLeave={this.onBlur}
             onClick={trackAnalytics('ContactUsForm - ButtonClicked')}
           >
-            hello@red-badger.com
+            Send an email
           </a>
+          <h3 className={styles.talkToUs}>hello@red-badger.com</h3>
         </div>
       </section>
     );
