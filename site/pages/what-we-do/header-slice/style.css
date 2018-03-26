@@ -53,15 +53,15 @@
 
 .flexibleUpper::after,
 .flexibleLower::after {
-  bottom: 0;
   color: badgerRed;
   font-family: 'ProximaNova-Bold', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   line-height: 1.1em;
   margin-bottom: 5px;
   margin-top: 10px;
   position: absolute;
+  bottom: 0;
 }
 
 .flexibleUpper::after {
@@ -77,7 +77,7 @@
   right: 0;
 }
 
-.pageHeaderUpper, 
+.pageHeaderUpper,
 .pageHeaderLower {
   composes: serif from "../../../css/typography/_fonts.css";
   composes: fontXL from "../../../css/typography/_fonts.css";
@@ -135,7 +135,7 @@
     width: 100%;
   }
 
-  .pageHeaderUpper, 
+  .pageHeaderUpper,
   .pageHeaderLower {
     margin-bottom: 40px;
   }
@@ -148,14 +148,14 @@
     composes: fontS from "../../../css/typography/_fonts.css";
   }
 
-.flexibleUpper::after,
-.flexibleLower::after {
-  font-size: 24px;
-}
+  .flexibleUpper::after,
+  .flexibleLower::after {
+    font-size: 24px;
+  }
 
-.flexibleLower::after {
-  margin-bottom: 5px;
-}
+  .flexibleLower::after {
+    margin-bottom: 5px;
+  }
 
   .arrow {
     height: 85px;
@@ -189,18 +189,19 @@
     max-width: 640px;
   }
 
-.flexibleUpper::after,
-.flexibleLower::after {
-  bottom: 0;
-  font-size: 40px;
-  line-height: 1.1em;
-  position: absolute;
-}
+  .flexibleUpper::after,
+  .flexibleLower::after {
+    font-size: 32px;
+  }
 
-.pageHeaderUpper, 
-.pageHeaderLower {
-  margin-bottom: 68px;
-}
+  .flexibleLower:after {
+    right: 5px;
+  }
+
+  .pageHeaderUpper,
+  .pageHeaderLower {
+    margin-bottom: 68px;
+  }
 
   .pageSubHeader {
     font-size: 40px;
