@@ -59,7 +59,7 @@ class ChecklistContactUs extends Component {
           >
             Send an email
           </a>
-          <h3 className={styles.talkToUs}>hello@red-badger.com</h3>
+          <span className={styles.talkToUs}>hello@red-badger.com</span>
         </div>
       </section>
     );
