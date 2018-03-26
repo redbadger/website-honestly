@@ -81,20 +81,25 @@
 }
 
 
-.button {
-  composes: primaryButton from "../../css/_links.css";
-  color: badgerWhite !important;
-  background: badgerBlack !important;
-  outline: none;
-  border: none;
+.talkToUs {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 8px;
 }
 
-.button:hover {
-  cursor: pointer;
+.mailToLink {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  color: badgerWhite;
+  display: inline-block;
+  font-size: 24px;
+  background-color: badgerBlack;
+  padding: 14px 20px;
 }
 
-.button:hover {
-  background: scorpian !important;
+.mailToLink:hover {
+  background-color: scorpian;
 }
 
 @media mediumScreen {
@@ -118,6 +123,7 @@
     width: 200px;
   }
 }
+
 
 @media largeScreen {
   .contactUsContainer {
@@ -143,5 +149,9 @@
     min-height: 300px;
     width: 300px;
     height: 300px;
+  }
+
+  .talkToUs {
+    font-size: 24px;
   }
 }
