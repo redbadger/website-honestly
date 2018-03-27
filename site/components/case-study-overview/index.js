@@ -1,29 +1,26 @@
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
+import moment from 'moment';
 import styles from './style.css';
 
-/* PNG logo imports */
-import bbcPNG from './PNG/bbc.png';
-import bmwPNG from './PNG/bmw.png';
-import camdenPNG from './PNG/camden.png';
-import cartrawlerPNG from './PNG/cartrawler.png';
-import financialTimesPNG from './PNG/financialtimes.png';
 import fortnumPNG from './PNG/fortnum.png';
-import hsbcPNG from './PNG/hsbc.png';
-import selfridgesPNG from './PNG/selfridges.png';
-import skyPNG from './PNG/sky.png';
-import tescoPNG from './PNG/tesco.png';
-import Link from '../link';
-
-/* SVG figure imports */
-import ftFigureSVG from './SVG/ft-figure.svg';
-import fortnumFigureSVG from './SVG/fortnum-figure.svg';
-import camdenFigureSVG from './SVG/camden-figure.svg';
-import skyFigureSVG from './SVG/sky-figure.svg';
+import financialTimesPNG from './PNG/financialtimes.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
+import Link from '../link';
+import CaseStudyCompanyLogos from '../case-study-company-logos';
+
+const daysSinceFortumStarted = () => {
+  const startDate = moment([2014, 4, 14]);
+  const today = moment();
+  const diffInDays = today.diff(startDate, 'days');
+
+  return diffInDays.toLocaleString();
+};
+
 const CaseStudyOverview = () => (
-  <section className={styles.caseStudyContainer}>
+  // The id here is to allow us to link directly to the page stats
+  <section className={styles.caseStudyContainer} id="stats">
     <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
     <div className={styles.limitWidth}>
       <div className={styles.figuresContainer}>
@@ -32,75 +29,81 @@ const CaseStudyOverview = () => (
           className={styles.figureLink}
           title="Fortnum and mason case study"
         >
-          <InlineSVG src={fortnumFigureSVG} className={styles.caseFigure} />
-          <span className={styles.screenReaderText}>Three</span>
-          <span className={styles.caseText}>
-            Number of awards for the new online{' '}
-            <span className={styles.lastWord}>
-              store
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+          <span className={styles.statsContainer}>
+            <span className={styles.countdownText}>{daysSinceFortumStarted()}</span>
+            <span className={styles.countdownCaseText}>
+              days of innovation and continuous{' '}
+              <span className={styles.lastWord}>
+                deployment
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
+          <span className={styles.logoContainer}>
+            <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
+          </span>
         </a>
         <a
-          href="/our-work/case-study/camden-market"
+          href="our-work/case-study/retailer"
           className={styles.figureLink}
-          title="Camden market case study"
+          title="Retailer case study"
         >
-          <InlineSVG src={camdenFigureSVG} className={styles.caseFigure} />
-          <span className={styles.screenReaderText}>18%</span>
-          <span className={styles.caseText}>
-            Drop in bounce rate within 4 days of{' '}
-            <span className={styles.lastWord}>
-              launch
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+          <span className={styles.statsContainer}>
+            <span className={styles.centerText}>
+              Five months to clear an eight year{' '}
+              <span className={styles.lastWord}>
+                backlog
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <img alt="The logo of Camden Market" src={camdenPNG} className={styles.logo} />
+          <span className={styles.logoContainer}>
+            <span className={styles.companyText}>Britain’s Biggest Retailer</span>
+          </span>
         </a>
-        <a href="/our-work/case-study/sky" className={styles.figureLink} title="Sky case study">
-          <InlineSVG src={skyFigureSVG} className={styles.caseFigure} />
-          <span className={styles.screenReaderText}>50%</span>
-          <span className={styles.caseText}>
-            Drop in customers pushing the &lsquo;need more help&rsquo;{' '}
-            <span className={styles.lastWord}>
-              {' '}
-              button
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+        <a
+          href="/our-work/case-study/financial-services-digital-transformation"
+          className={styles.figureLink}
+          title="Bank case study"
+        >
+          <span className={styles.statsContainer}>
+            <span className={styles.centerText}>
+              Catalysts for change, delivery deployment and{' '}
+              <span className={styles.lastWord}>
+                culture
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <img alt="The logo of Sky" src={skyPNG} className={styles.logo} />
+          <span className={styles.logoContainer}>
+            <span className={styles.companyText}>Giant Global Bank</span>
+          </span>
         </a>
         <a
           href="/our-work/case-study/financial-times"
           className={styles.figureLink}
           title="Financial times case study"
         >
-          <InlineSVG src={ftFigureSVG} className={styles.caseFigure} />
-          <span className={styles.screenReaderText}>Seven</span>
-          <span className={styles.caseText}>
-            Weeks to redesign and deliver MVP{' '}
-            <span className={styles.lastWord}>
-              homepage
-              <InlineSVG src={arrowSVG} className={styles.arrow} />
+          <span className={styles.statsContainer}>
+            <span className={styles.countdownText}>30%</span>
+            <span className={styles.caseText}>
+              uplift in reader{' '}
+              <span className={styles.lastWord}>
+                engagement
+                <InlineSVG src={arrowSVG} className={styles.arrow} />
+              </span>
             </span>
           </span>
-          <img
-            alt="The logo of the Financial Times"
-            src={financialTimesPNG}
-            className={styles.logo}
-          />
+          <span className={styles.logoContainer}>
+            <img
+              alt="The logo of the Financial Times"
+              src={financialTimesPNG}
+              className={styles.logo}
+            />
+          </span>
         </a>
       </div>
-      <div className={styles.caseCompanies}>
-        <img alt="The logo of Selfridges" src={selfridgesPNG} />
-        <img alt="The logo of Tesco" src={tescoPNG} />
-        <img alt="The logo of the BBC" src={bbcPNG} />
-        <img alt="The logo of BMW" src={bmwPNG} />
-        <img alt="The logo of HSBC" src={hsbcPNG} />
-        <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
-      </div>
+      <CaseStudyCompanyLogos />
       <div className={styles.buttonContainer}>
         <Link to="ourWorkPage" className={styles.button}>
           See more of our work

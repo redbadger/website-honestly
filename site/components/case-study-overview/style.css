@@ -1,5 +1,5 @@
 @value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
-@value mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
+@value smallScreen, mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
 .arrow svg {
   height: 15px;
@@ -11,13 +11,13 @@
 }
 
 .heading {
-  composes: fontL from "../../css/typography/_fonts.css";
+  composes: fontM from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  max-width: contentMaxWidth;
+  max-width: 690px;
   margin: 0px auto;
   color: badgerWhite;
   text-align: center;
-  padding: 20px;
+  padding: 30px 0;
 }
 
 .caseStudyContainer {
@@ -39,13 +39,30 @@
 
 .figureLink {
   border-top: 1px solid linesOnBlack;
-  padding: 30px;
+  padding: 30px 0;
+  min-height: 290px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
+}
+
+/* Rearrange stats comoponents */
+.figureLink:nth-child(1) { order: 0; }
+.figureLink:nth-child(2) { order: 1; }
+.figureLink:nth-child(3) { order: 3; }
+.figureLink:nth-child(4) { order: 2; }
+
+.statsContainer {
+  display: block;
+  margin: auto 0;
+}
+
+.logoContainer {
+  display: flex;
+  height: 50px;
 }
 
 .caseFigure svg {
@@ -62,15 +79,29 @@
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerWhite;
   text-align: center;
-  padding: 30px 0px;
-  max-width: 100%;
+  padding: 0 30px 20px;
+  max-width: 400px;
   display: block; /*Set to avoid IE10 bug with non-wrapping text*/
   flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
+}
+
+.countdownText {
+  composes: caseText;
+  padding: 0;
+  font-size: 99px;
+}
+
+.countdownCaseText {
+  composes: caseText;
+  margin-bottom: 10px;
+  padding: 0;
+  max-width: 390px;
 }
 
 .lastWord {
   display: inline;
   white-space: nowrap;
+  position: relative;
 }
 
 .lastWord i {
@@ -78,22 +109,22 @@
   display: inline-block;
 }
 
-.caseCompanies {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0px 74px;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid linesOnBlack;
-  border-bottom: 1px solid linesOnBlack;
-  padding: 30px;
+.centerText {
+  composes: fontXL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerWhite;
+  text-align: center;
+  max-width: 350px;
+  display: block; /*Set to avoid IE10 bug with non-wrapping text*/
+  flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
+  margin: auto;
 }
 
-.caseCompanies img {
-  margin: 0px 15px;
-  height: 40px;
-  margin-bottom: 10px;
+.companyText {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  color: badgerWhite;
+  font-size: 18px;
+  margin: 30px 0 10px 0;
 }
 
 .buttonContainer {
@@ -107,66 +138,120 @@
   background-color: badgerRed;
 }
 
+
 @media mediumScreen  {
+  .caseStudyContainer {
+    padding: 0;
+  }
+
   .heading {
+    font-size: 40px;
     padding: 40px;
   }
-  .caseText {
-    padding: 30px;
+
+  .figuresContainer {
+    min-width: 690px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
+
+  .centerText {
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  .companyText {
+    margin: 21px 0 10px;
+  }
+
+  .countdownText {
+    font-size: 113px;
+    padding: 0 15px;
+    margin-top: -40px;
+  }
+
+  .countdownCaseText {
+    margin-bottom: 0;
+    max-width: 320px;
+  }
+
   .figureLink {
-    width: 49%;
-    padding: 60px 0px;
+    min-height: 410px;
+    width: 50%;
+    padding: 60px 10px;
   }
 
   .figureLink:nth-child(odd){
     border-right: 1px solid linesOnBlack;
   }
 
-  .caseCompanies {
-    justify-content: space-between;
-  }
-
-  .caseCompanies img:first-child {
-    margin-left: 0px;
-  }
-
-  .caseCompanies img:last-child {
-    margin-right: 0px;
-  }
-
-  .arrow svg {
-    display: none;
-  }
+  /* Rearrange stats comoponents */
+  .figureLink:nth-child(1) { order: 0; }
+  .figureLink:nth-child(2) { order: 1; }
+  .figureLink:nth-child(3) { order: 2; }
+  .figureLink:nth-child(4) { order: 3; }
 }
+
 @media largeScreen {
   .heading {
     padding: 50px 60px 60px 60px;
   }
 
-  .figuresContainer .caseFigure svg {
-    height: 150px;
+  .caseFigure svg {
+    height: 122px;
+  }
+
+  .figuresContainer {
+    max-width: 1160px;
   }
 
   .figuresContainer img {
     height: 80px;
   }
 
-  .caseCompanies {
-    display: flex;
-    flex-direction: row;
+  .countdownText {
+    font-size: 150px;
   }
 
-  .caseCompanies img {
-    margin: 0px 15px;
+  .countdownCaseText {
+    font-size: 35px;
+    max-width: 440px;
+  }
+
+  .centerText {
+    font-size: 60px;
+    max-width: 480px;
+  }
+
+  .logoContainer {
     height: 80px;
+  }
+
+  .figureLink {
+    padding: 30px 10px;
+    max-height: 535px;
+  }
+
+  .companyText {
+    font-size: 28px;
+    margin-top: 34px;
+  }
+
+  .caseCompanies {
+    margin: 0 auto;
+    max-width: 1160px;
+  }
+
+  .caseCompaniesLogo {
+    width: auto;
+    margin: 10px auto;
+  }
+
+  .caseCompaniesLogo img {
+    max-height: 80px;
   }
 
   .buttonContainer {
     padding: 60px 0px;
-  }
-
-  .arrow svg {
-    display: none;
   }
 }
