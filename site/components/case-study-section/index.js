@@ -1,11 +1,11 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 
 import styles from './style.css';
 
 type CaseStudySectionProps = {
   title?: string,
-  children?: Node,
+  children?: React.Node,
 };
 
 const CaseStudySection = ({ title, children }: CaseStudySectionProps) => (

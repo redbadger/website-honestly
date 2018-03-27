@@ -1,7 +1,16 @@
-import React, { PropTypes, Component } from 'react';
+// @flow
+import * as React from 'react';
+
+type ClientOnlyProps = {
+  children: React.Node
+};
+
+type ClientOnlyState = {
+  javaScriptSupported: boolean
+}
 
 /** Only render the children of this component if JavaScript is enabled and we are in the browser */
-class ClientOnly extends Component {
+class ClientOnly extends React.Component<ClientOnlyProps, ClientOnlyState> {
   state = {
     javaScriptSupported: false,
   };
@@ -19,9 +28,5 @@ class ClientOnly extends Component {
     return javaScriptSupported ? <span>{children}</span> : null;
   }
 }
-
-ClientOnly.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default ClientOnly;

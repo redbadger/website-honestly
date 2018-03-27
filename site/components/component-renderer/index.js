@@ -25,13 +25,14 @@ const componentIndex = {
   Title3,
 };
 
-export default class ComponentRenderer extends Component {
-  static propTypes = {
-    data: React.PropTypes.shape({
-      type: React.PropTypes.string,
-    }).isRequired,
-  };
+type ComponentRendererProps = {
+  data: {
+    type?: string
+  }
+}
 
+export default class ComponentRenderer extends Component<*, ComponentRendererProps, *> {
+ 
   build(data) {
     const componentName = data.type;
     const CustomComponent = componentIndex[componentName];

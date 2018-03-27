@@ -1,10 +1,11 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import styles from './style.css';
 
-export default function Section({ children }) {
+type SectionProps = {
+  children: React.Node
+};
+
+export default function Section({ children }: SectionProps) {
   return <section className={styles.section}>{children}</section>;
 }
-
-Section.propTypes = {
-  children: React.PropTypes.node,
-};

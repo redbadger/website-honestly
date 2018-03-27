@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+// @flow
 import React from 'react';
 import RawHtml from '../../components/raw-html';
 import { Grid, Cell } from '../../components/grid';
@@ -10,7 +11,15 @@ import styles from './style.css';
 import typography from '../../components/component-renderer/styles.css';
 import Link from '../../components/link';
 
-export default function Job({ job }) {
+type JobProps = {
+  job: {
+    title?: string,
+    fullDescription: string,
+    applicationUrl?: string,
+  }
+};
+
+export default function Job({ job }: JobProps) {
   return (
     <div className={styles.background}>
       <Section>

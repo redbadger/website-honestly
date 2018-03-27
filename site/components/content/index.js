@@ -1,9 +1,15 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 
-export default function Content({ children }) {
+type ContentProps = {
+  children?: React.Node
+};
+
+export default function Content({ children }: ContentProps) {
   return <div>{children}</div>;
 }
-
+/*
 Content.propTypes = {
   children: React.PropTypes.node,
 };
+*/

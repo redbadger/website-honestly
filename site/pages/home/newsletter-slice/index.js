@@ -1,9 +1,17 @@
+// @flow
 /* eslint-disable camelcase */
 import React, { Component } from 'react';
 import NewsletterAfterSignUp from './after-sign-up/';
 import NewsletterBeforeSignUp from './before-sign-up/';
 
-export function isValidEmail(email) {
+type NewsLetterState = {
+  newsletterSubmitted: boolean,
+  email_address: string,
+  errorMessage: string,
+  updatedFormSubmitted: boolean
+};
+
+export function isValidEmail(email: string) {
   const regex = /.+@.+\..+/;
   return regex.test(email);
 }
@@ -16,8 +24,8 @@ const fetchFunction = ({ url, body, method }) =>
     body,
   });
 
-class NewsLetter extends Component {
-  constructor(props) {
+class NewsLetter extends Component<*, NewsLetterState> {
+  constructor(props: any) {
     super(props);
     this.state = {
       newsletterSubmitted: false,
@@ -27,7 +35,7 @@ class NewsLetter extends Component {
     };
   }
 
-  submitForm = (formDataJSON, method, fetchFn = fetchFunction) => {
+  submitForm = (formDataJSON: any, method: any, fetchFn: Function = fetchFunction) => {
     return fetchFn({
       url: process.env.MAILING_LIST_SERVICE_URL,
       method,
@@ -47,7 +55,7 @@ class NewsLetter extends Component {
       });
   };
 
-  signUpUser = data => {
+  signUpUser = (data: any) => {
     if (data.email_address === '') {
       this.setState({
         errorMessage: 'Please enter an email address',
@@ -61,7 +69,7 @@ class NewsLetter extends Component {
     }
   };
 
-  updateUser = data => {
+  updateUser = (data: any) => {
     const object = Object.assign({}, data);
     object.email_address = this.state.email_address;
     if (!data.name) {

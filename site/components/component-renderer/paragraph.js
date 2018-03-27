@@ -1,14 +1,15 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import classNames from 'classnames';
 import * as textStyles from '../utils/text.css';
 import styles from './styles.css';
 
-export default function Paragraph({ align, children }) {
+type ParagraphProps = {
+  align: 'center' | 'left' | 'right',
+  children?: React.Node
+};
+
+export default function Paragraph({ align, children }: ParagraphProps) {
   const pClass = classNames(textStyles[align], styles.p);
   return <p className={pClass}>{children}</p>;
 }
-
-Paragraph.propTypes = {
-  align: React.PropTypes.oneOf(['center', 'left', 'right']),
-  children: React.PropTypes.node,
-};

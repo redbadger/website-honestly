@@ -1,20 +1,20 @@
 // @flow
-import React, { PropTypes } from 'react';
+import * as React from 'react';
 import { StateNavigator } from 'navigation';
 import { NavigationLink } from 'navigation-react';
 
 export type LinkProps = {
   to: string,
-  children?: Node,
+  children?: React.Node,
   activeCssClass?: string,
   target?: string,
 };
 
-export default class Link extends React.Component {
+export default class Link extends React.Component<LinkProps> {
   static contextTypes = {
     // The stateNavigator is provided by navigation-react and provides
     // access to the current route.
-    stateNavigator: PropTypes.instanceOf(StateNavigator),
+    stateNavigator: React.PropTypes.instanceOf(StateNavigator),
   };
 
   constructor(props: LinkProps) {
