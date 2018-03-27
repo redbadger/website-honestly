@@ -1,7 +1,20 @@
+// @flow
 // Displays date bubble
 
 import React, { PropTypes } from 'react';
 import styles from './style.css';
+
+export type DateShape = {
+  date: string,
+  monthSym: string,
+  year: string,
+  month?: string
+};
+
+type DateBubbleProps = {
+  startDateTime: DateShape,
+  endDateTime?: DateShape
+};
 
 function displayDateContent(startDateTime, endDateTime) {
   if (endDateTime) {
@@ -13,19 +26,8 @@ function displayDateContent(startDateTime, endDateTime) {
   return `${startDateTime.date} ${startDateTime.monthSym} ${startDateTime.year}`;
 }
 
-const DateBubble = ({ startDateTime, endDateTime }) => (
+const DateBubble = ({ startDateTime, endDateTime }: DateBubbleProps) => (
   <div className={styles.dateBubble}>{displayDateContent(startDateTime, endDateTime)}</div>
 );
-
-const dateShape = {
-  date: PropTypes.string.isRequired,
-  monthSym: PropTypes.string.isRequired,
-  year: PropTypes.string.isRequired,
-};
-
-DateBubble.propTypes = {
-  startDateTime: PropTypes.shape(dateShape).isRequired,
-  endDateTime: PropTypes.shape(dateShape),
-};
 
 export default DateBubble;

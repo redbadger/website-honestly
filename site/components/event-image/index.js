@@ -1,9 +1,15 @@
+// @flow
 // Displays event related image with link
 
 import React from 'react';
 import styles from './style.css';
 
-export default function EventImage({ imgPath, imgAlt }) {
+type EventImageProps = {
+  imgPath: string,
+  imgAlt: string
+};
+
+export default function EventImage({ imgPath, imgAlt }: EventImageProps) {
   return (
     <div className={styles.imgBorder}>
       <div className={styles.imgWrapper}>
@@ -12,8 +18,9 @@ export default function EventImage({ imgPath, imgAlt }) {
     </div>
   );
 }
-
+/*
 EventImage.propTypes = {
   imgPath: React.PropTypes.string.isRequired,
   imgAlt: React.PropTypes.string.isRequired,
 };
+*/

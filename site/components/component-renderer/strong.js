@@ -1,10 +1,11 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import styles from '../../css/typography/_fonts.css';
 
-export default function Paragraph({ children }) {
+type ParagraphProps = {
+  children: React.Node
+};
+
+export default function Paragraph({ children }: Paragraph) {
   return <strong className={styles.boldSansSerif}>{children}</strong>;
 }
-
-Paragraph.propTypes = {
-  children: React.PropTypes.node.isRequired,
-};

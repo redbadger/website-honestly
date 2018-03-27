@@ -1,12 +1,21 @@
-import React, { Component, PropTypes } from 'react';
+// @flow
+import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import { mediumScreen, largeScreen } from '../../css/_sizes.css';
 
 import styles from './style.css';
 
+type PictureProps = {
+  className?: string,
+  largeSrc?: string,
+  mediumSrc?: string,
+  smallSrc: string,
+  alt?: string,
+};
+
 const cx = classnames.bind(styles);
 
-class Picture extends Component {
+class Picture extends Component<PictureProps> {
   componentDidMount() {
     if (window && window.picturefill) window.picturefill();
   }
@@ -23,13 +32,5 @@ class Picture extends Component {
     );
   }
 }
-
-Picture.propTypes = {
-  className: PropTypes.string,
-  largeSrc: PropTypes.string,
-  mediumSrc: PropTypes.string,
-  smallSrc: PropTypes.string.isRequired,
-  alt: PropTypes.string,
-};
 
 export default Picture;

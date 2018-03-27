@@ -1,8 +1,20 @@
-import React, { PropTypes } from 'react';
+// @flow
+import React from 'react';
 import styles from './style.css';
+import type {LinkList} from '../../pages/event/event-links-list';
 import EventLinksList from '../../pages/event/event-links-list';
 
-export const linksSection = ({ externalLinks, internalLinks }) => {
+type linksSectionProps = {
+  externalLinks: LinkList,
+  internalLinks: LinkList
+};
+type EventMetaProps = {
+  externalLinks: LinkList,
+  internalLinks: LinkList,
+  tags?: Array<string>
+};
+
+export const linksSection = ({ externalLinks, internalLinks }: linksSectionProps) => {
   if (externalLinks || internalLinks) {
     return (
       <div className={styles.eventLinks}>
@@ -14,7 +26,7 @@ export const linksSection = ({ externalLinks, internalLinks }) => {
   return <noscript />;
 };
 
-const EventMeta = ({ internalLinks, externalLinks }) => {
+const EventMeta = ({ internalLinks, externalLinks }: EventMetaProps) => {
   return (
     <div>
       {linksSection({
@@ -23,17 +35,6 @@ const EventMeta = ({ internalLinks, externalLinks }) => {
       })}
     </div>
   );
-};
-
-EventMeta.propTypes = {
-  internalLinks: EventLinksList.propTypes.linkList,
-  externalLinks: EventLinksList.propTypes.linkList,
-  tags: PropTypes.arrayOf(PropTypes.string),
-};
-
-linksSection.propTypes = {
-  internalLinks: EventLinksList.propTypes.linkList,
-  externalLinks: EventLinksList.propTypes.linkList,
 };
 
 export default EventMeta;

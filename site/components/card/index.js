@@ -1,17 +1,18 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import classnames from 'classnames/bind';
 
 import styles from './style.css';
 
+type CardProps = {
+  className?: string,
+  children?: React.Node
+}
+
 const cx = classnames.bind(styles);
 
-const Card = ({ className, children }) => {
+const Card = ({ className, children }: CardProps) => {
   return <div className={cx(styles.Card, className)}>{children}</div>;
-};
-
-Card.propTypes = {
-  className: React.PropTypes.string,
-  children: React.PropTypes.node,
 };
 
 export default Card;

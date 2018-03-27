@@ -1,10 +1,11 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import styles from './style.css';
 
-export default function Note({ children }) {
+type NoteProps = {
+  children: React.Node
+};
+
+export default function Note({ children }: NoteProps) {
   return <div className={styles.note}>{children}</div>;
 }
-
-Note.propTypes = {
-  children: React.PropTypes.node.isRequired,
-};

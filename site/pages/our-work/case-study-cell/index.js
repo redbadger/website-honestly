@@ -1,3 +1,4 @@
+// @flow
 import React, { PropTypes } from 'react';
 import classnames from 'classnames/bind';
 import Link from '../../../components/link';
@@ -6,12 +7,12 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 type CaseStudyCellProps = {
-  [clientName: string]: any,
-  [clientLogo: string]: any,
-  [image: string]: any,
-  [headerText: string]: any,
-  [descriptionText: string]: any,
-  [routeKey: string]: any,
+  clientName: string,
+  clientLogo: string,
+  image: string,
+  headerText: string,
+  descriptionText: string,
+  routeKey: string,
 };
 
 export default function CaseStudyCell(props: CaseStudyCellProps) {
@@ -56,12 +57,3 @@ export default function CaseStudyCell(props: CaseStudyCellProps) {
     </div>
   );
 }
-
-CaseStudyCell.propTypes = {
-  clientName: PropTypes.string.isRequired,
-  clientLogo: PropTypes.string.isRequired,
-  image: PropTypes.string,
-  headerText: PropTypes.string.isRequired,
-  descriptionText: PropTypes.string.isRequired,
-  routeKey: PropTypes.string.isRequired,
-};

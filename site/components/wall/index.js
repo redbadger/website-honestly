@@ -1,9 +1,15 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import { Grid, Cell } from '../grid';
 
 const { node, number } = React.PropTypes;
 
-export default function Wall({ children, cols }) {
+type WallProps = {
+  children: React.ChildrenArray<any>,
+  cols: number
+};
+
+export default function Wall({ children, cols }: WallProps) {
   const elements = [];
 
   children.forEach((item, index) => {

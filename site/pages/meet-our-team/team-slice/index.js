@@ -33,7 +33,12 @@ type TeamSliceProps = {
   badgers: Array<Badger>,
 };
 
-class TeamSlice extends React.Component {
+type TeamSliceState = {
+  loadAll: boolean,
+  badgers: Array<Badger>
+};
+
+class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
   constructor(props: TeamSliceProps) {
     super(props);
     const { badgers, page } = props;
@@ -41,11 +46,6 @@ class TeamSlice extends React.Component {
     this.badgerElements = {};
     this.calculateLoaded = this.calculateLoaded.bind(this);
   }
-
-  state: {
-    loadAll: boolean,
-    badgers: Array<Badger>,
-  };
 
   componentDidMount() {
     this.requestAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
@@ -63,7 +63,7 @@ class TeamSlice extends React.Component {
 
   badgerElements: any;
   calculateLoaded: () => void;
-  requestAnimationFrameId: number;
+  requestAnimationFrameId: AnimationFrameID;
 
   calculateLoaded() {
     const { badgers, loadAll } = this.state;

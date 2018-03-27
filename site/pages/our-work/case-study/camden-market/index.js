@@ -21,7 +21,11 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/camden-market',
 };
 
-class CaseStudyCamdenMarket extends React.Component {
+type CamdenState = {
+  Shapes?: any
+}
+
+class CaseStudyCamdenMarket extends React.Component<*, CamdenState> {
   constructor() {
     super();
 
@@ -29,10 +33,6 @@ class CaseStudyCamdenMarket extends React.Component {
       Shapes: undefined,
     };
   }
-
-  state: {
-    Shapes?: any,
-  };
 
   componentDidMount() {
     if (!this.state.Shapes) {

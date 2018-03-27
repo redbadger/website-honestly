@@ -1,5 +1,5 @@
 /* eslint-disable react/no-danger */
-
+// @flow
 import React from 'react';
 import classnames from 'classnames/bind';
 import textStyles from '../component-renderer/styles.css';

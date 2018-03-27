@@ -14,7 +14,11 @@ const trackAnalytics = title => () =>
     label: `From: ${window.location.pathname}`,
   });
 
-export default class SmallScreenNav extends React.Component {
+type State = {
+  navOpen: boolean,
+};
+
+export default class SmallScreenNav extends React.Component<any, State> {
   constructor() {
     super();
     this.state = {
@@ -22,23 +26,25 @@ export default class SmallScreenNav extends React.Component {
     };
   }
 
-  state: {
-    navOpen: boolean,
-  };
-  smallScreenNav: HTMLInputElement;
+  
+  smallScreenNav: HTMLInputElement | HTMLDivElement;
 
   documentBodyLock = () => {
+    // $FlowIgnore
     document.getElementById('mainContent').setAttribute('aria-hidden', 'true');
+    // $FlowIgnore
     document.body.style.position = 'fixed';
     this.smallScreenNav.scrollTop = 0;
   };
 
   documentBodyRelease = () => {
+    // $FlowIgnore
     document.getElementById('mainContent').removeAttribute('aria-hidden');
+    // $FlowIgnore
     document.body.style.position = 'relative';
   };
 
-  handleInputChange = (event: SyntheticInputEvent) => {
+  handleInputChange = (event: SyntheticInputEvent<any>) => {
     if (event.target.checked) {
       this.documentBodyLock();
     } else {
@@ -81,6 +87,7 @@ export default class SmallScreenNav extends React.Component {
           <div className={styles.smallScreenNavMargin} onClick={this.closeMenu} />
           <div
             ref={c => {
+              // $FlowIgnore
               this.smallScreenNav = c;
             }}
             className={styles.smallScreenNavWrapper}
