@@ -63,7 +63,7 @@ The code used to build the site's HTML and CSS can be found in
 the `site/` directory. It's mostly React components and CSS modules.
 
 The same React app in the `site/` directory is used on the front end for
-interactive features such as the "Contact Us" form. The entry point for the
+interactive features such as the "Sign Up" form. The entry point for the
 front end Javascript can be found in the `client/` directory.
 
 The content for the site is (will be) pulled from the [Badger Brain][bb] GraphQL
@@ -114,7 +114,7 @@ reflects the current state of master.
 
 There is only one staging lambda function instance, so there is no guarantee
 that the correct version will be currently deployed when viewing a branch
-preview. This matters if you are testing the "contact us" form, for example.
+preview. This matters if you are testing the "sign up" form, for example.
 
 Deploys to the live prod environment are done by starting a parameterised build
 on CircleCI that does the deploy + invoke process for the production lambda
