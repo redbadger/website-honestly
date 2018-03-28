@@ -2,12 +2,12 @@
 import * as React from 'react';
 
 type ClientOnlyProps = {
-  children: React.Node
+  children: React.Node,
 };
 
 type ClientOnlyState = {
-  javaScriptSupported: boolean
-}
+  javaScriptSupported: boolean,
+};
 
 /** Only render the children of this component if JavaScript is enabled and we are in the browser */
 class ClientOnly extends React.Component<ClientOnlyProps, ClientOnlyState> {

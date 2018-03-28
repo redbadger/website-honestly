@@ -8,7 +8,6 @@ import Link from '../../components/link';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventMeta from '../../components/event-meta';
-import EventLinksList from '../../pages/event/event-links-list';
 import type { LinkList } from '../../pages/event/event-links-list';
 
 import styles from './style.css';
@@ -19,7 +18,7 @@ type DateShape = {
   date: string,
   monthSym: string,
   year: string,
-  month?: string
+  month?: string,
 };
 
 type EventProps = {
@@ -28,11 +27,11 @@ type EventProps = {
     endDateTime?: DateShape,
     title: string,
     strapline: string,
-    body: Array<{text: string}>,
+    body: Array<{ text: string }>,
     internalLinks: LinkList,
     externalLinks: LinkList,
     featureImageFilename: string,
-  }
+  },
 };
 
 export default function Event({ event }: EventProps) {

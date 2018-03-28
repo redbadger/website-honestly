@@ -8,11 +8,10 @@ import * as React from 'react';
 import styles from './style.css';
 
 type ContainerProps = {
-  children?: React.Node
+  children?: React.Node,
 };
 
 export default class Container extends React.Component<ContainerProps> {
-
   static defaultProps = {
     children: [],
   };

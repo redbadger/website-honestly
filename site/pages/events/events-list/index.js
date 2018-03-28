@@ -3,7 +3,7 @@
 // You can request only displaying events of past or future
 // with the `timeline` prop
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 import styles from './style.css';
 import EventsTimelineTitle from '../events-timeline-title';
 import type { Timeline } from '../events-timeline-title';
@@ -12,7 +12,7 @@ import { splitEvents } from '../../../fetchers/util/events';
 
 type EventsListProps = {
   events: Array<any>,
-  timeline: Timeline
+  timeline: Timeline,
 };
 
 const EventsList = ({ events, timeline }: EventsListProps) => {

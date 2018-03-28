@@ -9,14 +9,14 @@ import styles from './style.css';
 
 type Link = {
   url?: string,
-  title?: string
+  title?: string,
 };
 
 export type LinkList = Array<Link>;
 
 type EventLinksListProps = {
   linkList: LinkList,
-  listType: 'external' | 'internal'
+  listType: 'external' | 'internal',
 };
 
 const EventLinksList = ({ linkList, listType }: EventLinksListProps) => {

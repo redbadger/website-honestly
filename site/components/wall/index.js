@@ -6,7 +6,7 @@ const { node, number } = React.PropTypes;
 
 type WallProps = {
   children: React.ChildrenArray<any>,
-  cols: number
+  cols: number,
 };
 
 export default function Wall({ children, cols }: WallProps) {

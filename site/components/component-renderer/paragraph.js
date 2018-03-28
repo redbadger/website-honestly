@@ -6,7 +6,7 @@ import styles from './styles.css';
 
 type ParagraphProps = {
   align: 'center' | 'left' | 'right',
-  children?: React.Node
+  children?: React.Node,
 };
 
 export default function Paragraph({ align, children }: ParagraphProps) {

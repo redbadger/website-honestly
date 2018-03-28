@@ -4,11 +4,10 @@ import styles from './style.css';
 
 type HRProps = {
   color: 'red' | 'grey',
-  customClassName: string
-}
+  customClassName: string,
+};
 
 export default class HR extends Component<HRProps> {
-
   defaultProps = {
     customClassName: 'horizontal-line',
   };

@@ -6,8 +6,8 @@ import styles from './style.css';
 
 type CardProps = {
   className?: string,
-  children?: React.Node
-}
+  children?: React.Node,
+};
 
 const cx = classnames.bind(styles);
 

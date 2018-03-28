@@ -5,8 +5,8 @@ import styles from '../events-list/style.css';
 export type Timeline = 'past' | 'future' | 'today';
 
 type EventsTimelineTitleProps = {
-  timeline: Timeline
-}
+  timeline: Timeline,
+};
 
 const EventsTimelineTitle = ({ timeline }: EventsTimelineTitleProps) => {
   switch (timeline) {

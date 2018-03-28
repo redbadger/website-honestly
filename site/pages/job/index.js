@@ -16,7 +16,7 @@ type JobProps = {
     title?: string,
     fullDescription: string,
     applicationUrl?: string,
-  }
+  },
 };
 
 export default function Job({ job }: JobProps) {

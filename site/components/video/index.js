@@ -5,11 +5,10 @@ import styles from './style.css';
 type VideoProps = {
   id: string,
   type: 'vimeo' | 'youtube',
-  title: string
+  title: string,
 };
 
 export default class Video extends Component<VideoProps> {
-
   static urlMap = {
     vimeo: 'https://player.vimeo.com/video/',
     youtube: 'https://www.youtube.com/embed/',

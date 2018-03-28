@@ -27,12 +27,11 @@ const componentIndex = {
 
 type ComponentRendererProps = {
   data: {
-    type?: string
-  }
-}
+    type?: string,
+  },
+};
 
 export default class ComponentRenderer extends Component<*, ComponentRendererProps, *> {
- 
   build(data) {
     const componentName = data.type;
     const CustomComponent = componentIndex[componentName];

@@ -4,8 +4,8 @@ import styles from './styles.css';
 
 type LinkProps = {
   children?: React.Node,
-  href: string
-}
+  href: string,
+};
 
 export default function Link({ children, href }: LinkProps) {
   return (

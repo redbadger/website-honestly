@@ -3,7 +3,7 @@ import * as React from 'react';
 import styles from './style.css';
 
 type NoteProps = {
-  children: React.Node
+  children: React.Node,
 };
 
 export default function Note({ children }: NoteProps) {
