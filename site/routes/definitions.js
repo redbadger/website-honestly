@@ -67,6 +67,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: 'Events',
+    description:
+      'Upcoming events including WeLove_Tech, React London Community, UXD exchange and more.',
     key: 'events',
     route: 'events',
     stateToProps: ({ events, eventsBanner }) => ({ events, eventsBanner }),
@@ -168,6 +170,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: 'Technology',
+    description:
+      'We choose the right tech for the job and with meticulous engineering practices we enable continuous delivery, speed to market and create value for customers quickly.',
     key: 'technology',
     route: 'technology',
     stateToProps: ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }) => ({
