@@ -11,8 +11,8 @@ type JobsProps = {
   jobs: Array<{
     description: string,
     title: string,
-    slug?: string
-  }>
+    slug?: string,
+  }>,
 };
 
 export default function Jobs({ jobs }: JobsProps) {

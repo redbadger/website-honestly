@@ -7,11 +7,10 @@ type CellProps = {
   breakOn: string,
   children?: React.Node,
   hideOn: 'mobileS' | 'mobileSM' | 'mobile' | 'tablet' | 'dont',
-  size:number
-}
+  size: number,
+};
 
 export default class Cell extends React.Component<CellProps> {
-
   static defaultProps = {
     breakOn: 'mobile',
     hideOn: 'dont',

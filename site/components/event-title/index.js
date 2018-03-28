@@ -6,10 +6,10 @@ import Link from '../link';
 type EventTitleProps = {
   eventLink: {
     to?: string,
-    children?: React.Node
+    children?: React.Node,
   },
-  eventTitle:string
-}
+  eventTitle: string,
+};
 
 const EventTitle = ({ eventLink, eventTitle }: EventTitleProps) => (
   <h2 className={styles.eventTitle}>

@@ -8,7 +8,7 @@ type NewsLetterState = {
   newsletterSubmitted: boolean,
   email_address: string,
   errorMessage: string,
-  updatedFormSubmitted: boolean
+  updatedFormSubmitted: boolean,
 };
 
 export function isValidEmail(email: string) {

@@ -1,19 +1,19 @@
 // @flow
 // Displays date bubble
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 import styles from './style.css';
 
 export type DateShape = {
   date: string,
   monthSym: string,
   year: string,
-  month?: string
+  month?: string,
 };
 
 type DateBubbleProps = {
   startDateTime: DateShape,
-  endDateTime?: DateShape
+  endDateTime?: DateShape,
 };
 
 function displayDateContent(startDateTime, endDateTime) {

@@ -26,7 +26,6 @@ export default class SmallScreenNav extends React.Component<any, State> {
     };
   }
 
-  
   smallScreenNav: HTMLInputElement | HTMLDivElement;
 
   documentBodyLock = () => {

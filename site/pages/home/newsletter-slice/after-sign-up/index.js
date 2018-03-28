@@ -6,26 +6,31 @@ import styles from '../style.css';
 const cx = classnames.bind(styles);
 
 type AfterSignUpFormProps = {
-  errorMessage: string,
+  errorMessage?: string,
   handleInputChange: Function,
   submitting: boolean,
-  handleSubmit: Function
+  handleSubmit: Function,
 };
 
 type AfterSignupProps = {
   onSubmit: Function,
-  updatedFormSubmitted: boolean,
-  errorMessage: string,
+  updatedFormSubmitted?: boolean,
+  errorMessage?: string,
 };
 
 type AfterSignupState = {
   name: string,
-  company:string,
+  company: string,
   role: string,
   submitting: boolean,
 };
 
-const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }: AfterSignUpFormProps) => (
+const AfterSignUpForm = ({
+  errorMessage,
+  handleInputChange,
+  submitting,
+  handleSubmit,
+}: AfterSignUpFormProps) => (
   <div>
     <h2 className={styles.subTitle}>
       Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
@@ -114,8 +119,6 @@ export default class AfterSignup extends Component<AfterSignupProps, AfterSignup
     };
   }
 
-  element:HTMLElement;
-
   componentDidMount() {
     this.triggerReflow();
   }
@@ -125,6 +128,8 @@ export default class AfterSignup extends Component<AfterSignupProps, AfterSignup
       submitting: false,
     });
   }
+
+  element: HTMLElement;
 
   handleInputChange = (event: SyntheticInputEvent<HTMLInputElement>) => {
     const newState = {};

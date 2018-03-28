@@ -107,7 +107,7 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
 
   renderTiles = () => {
     const { tweets, instagramPosts } = this.props;
-    const data: Array<Tweet|InstagramPost> = [];
+    const data: Array<Tweet | InstagramPost> = [];
     if (tweets) {
       data.push(...tweets);
     }

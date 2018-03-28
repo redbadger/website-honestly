@@ -3,7 +3,7 @@ import * as React from 'react';
 import styles from './styles.css';
 
 type Title3Props = {
-  children?: React.Node
+  children?: React.Node,
 };
 
 export default function Title3({ children }: Title3Props) {

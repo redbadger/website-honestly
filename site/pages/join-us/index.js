@@ -88,7 +88,7 @@ const vacancies = {
 type Job = {
   title: string,
   description: string,
-  slug?: string
+  slug?: string,
 };
 
 type Props = {

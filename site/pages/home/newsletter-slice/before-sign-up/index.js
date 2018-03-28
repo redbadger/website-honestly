@@ -7,12 +7,12 @@ const cx = classnames.bind(styles);
 
 type BeforeSignUpProps = {
   onSubmit: Function,
-  errorMessage: string
+  errorMessage?: string,
 };
 
 type BeforeSignUpState = {
   email_address: string,
-  submitting: boolean
+  submitting: boolean,
 };
 
 class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {

@@ -1,17 +1,17 @@
 // @flow
 import React from 'react';
 import styles from './style.css';
-import type {LinkList} from '../../pages/event/event-links-list';
+import type { LinkList } from '../../pages/event/event-links-list';
 import EventLinksList from '../../pages/event/event-links-list';
 
 type linksSectionProps = {
   externalLinks: LinkList,
-  internalLinks: LinkList
+  internalLinks: LinkList,
 };
 type EventMetaProps = {
   externalLinks: LinkList,
   internalLinks: LinkList,
-  tags?: Array<string>
+  tags?: Array<string>,
 };
 
 export const linksSection = ({ externalLinks, internalLinks }: linksSectionProps) => {

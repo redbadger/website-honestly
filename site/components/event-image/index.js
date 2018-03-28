@@ -6,7 +6,7 @@ import styles from './style.css';
 
 type EventImageProps = {
   imgPath: string,
-  imgAlt: string
+  imgAlt: string,
 };
 
 export default function EventImage({ imgPath, imgAlt }: EventImageProps) {

@@ -22,8 +22,8 @@ const social = {
 };
 
 type CamdenState = {
-  Shapes?: any
-}
+  Shapes?: any,
+};
 
 class CaseStudyCamdenMarket extends React.Component<*, CamdenState> {
   constructor() {

@@ -8,7 +8,7 @@ type ErrorPageProps = {
   title: string,
   content: React.Node,
   linkText?: string,
-  linkHref?: string
+  linkHref?: string,
 };
 
 function renderButton(href, text) {

@@ -1,5 +1,5 @@
 // @flow
-import React, { PropTypes } from 'react';
+import React from 'react';
 import classnames from 'classnames/bind';
 import Link from '../../../components/link';
 import styles from './style.css';

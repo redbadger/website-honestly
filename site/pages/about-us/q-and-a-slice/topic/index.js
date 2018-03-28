@@ -11,7 +11,7 @@ export type TopicProps = {
 type TopicState = {
   open: boolean,
   showButton: boolean,
-}
+};
 
 class Topic extends Component<TopicProps, TopicState> {
   constructor(props: TopicProps) {

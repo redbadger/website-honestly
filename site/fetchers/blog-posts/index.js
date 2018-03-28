@@ -67,7 +67,8 @@ const getPostsForTag = params =>
       return mapDataToState(posts);
     });
 
-const getPosts = (tags: Array<string>) => (Promise.all(tags.map(tag => getPostsForTag({ tag }))).then(flatten): Promise<any>)
+const getPosts = (tags: Array<string>) =>
+  (Promise.all(tags.map(tag => getPostsForTag({ tag }))).then(flatten): Promise<any>);
 
 export const getBlogPosts = (tags: Array<string>, cap: number = 3) =>
   (getPosts(tags)

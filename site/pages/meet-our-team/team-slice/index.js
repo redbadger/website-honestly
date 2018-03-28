@@ -35,7 +35,7 @@ type TeamSliceProps = {
 
 type TeamSliceState = {
   loadAll: boolean,
-  badgers: Array<Badger>
+  badgers: Array<Badger>,
 };
 
 class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
