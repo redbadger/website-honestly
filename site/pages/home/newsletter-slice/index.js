@@ -12,14 +12,14 @@ type NewsLetterState = {
 };
 
 type SignUpUser = {
-  email_address: string
+  email_address: string,
 };
 
 type UpdateUser = {
   email_address: string,
   name: string,
   company: string,
-  role: string
+  role: string,
 };
 
 export function isValidEmail(email: string) {
