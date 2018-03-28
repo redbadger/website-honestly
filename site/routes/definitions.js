@@ -3,6 +3,7 @@ import { stateToBadgerProps, genBadgersParams, getBadgersTitle } from './selecto
 
 type RouteDefinition = {|
   title: string | ((props: Object) => string),
+  description?: string,
   key: string,
   route: string,
   defaults?: any,
@@ -15,23 +16,31 @@ type RouteDefinition = {|
 export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: 'Home',
+    description:
+      'Let’s make things better. We’re digital transformation experts who innovate and deliver. We solve complex problems and deliver real impact.',
     key: 'homePage',
     route: '',
     defaults: { contactUs: false },
   },
   {
     title: 'What we do',
+    description:
+      'We help you bring innovative products and services to market through flexible lean agile processes.',
     key: 'whatWeDoPage',
     route: 'what-we-do',
   },
   {
     title: 'Our work',
+    description:
+      'We thrive on complex business problems and are experts in retail, media and financial services.',
     key: 'ourWorkPage',
     route: 'our-work',
     parentKey: 'whatWeDoPage',
   },
   {
     title: 'About us',
+    description:
+      'Founded by Cain, Dave and Stu in 2010, we’re an award winning independently owned consultancy who believe in doing the right thing and doing the thing right.',
     key: 'aboutUsPage',
     route: 'about-us',
     stateToProps: ({ tweets, instagramPosts, qAndAs }) => ({
@@ -42,6 +51,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: 'Join us',
+    description:
+      'We’re a Sunday Times 100 Best Small Company to Work For 2018 and looking for the best talent to join our team. ',
     key: 'joinUs',
     route: 'jobs',
     stateToProps: ({ jobs }) => ({ jobs }),
@@ -76,6 +87,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: getBadgersTitle,
+    description:
+      'Our guiding principles help our culture thrive as we grow over 100 people. We’re people people, honest, we find a way, we’re always learning and we’ve strong opinions weakly held.',
     key: 'badgers',
     route: 'people+/category/{category}+/page-{page}',
     defaults: { category: 'everyone', page: 1 },
