@@ -1,0 +1,129 @@
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
+@value contentMaxWidth from "../../../css/_sizes.css";
+
+.formContainer {
+  padding: 40px 20px 70px 20px;
+  text-align: center;
+  composes: dividerWhite from "../../../css/_divider.css";
+  background-color: badgerWhite;
+  outline: none;
+}
+
+.formContainer--yellow {
+  composes: dividerYellow from "../../../css/_divider.css";
+  padding-top: 60px;
+  background-color: cainYellow;
+}
+
+.contactUsForm {
+  margin: 0px auto;
+  max-width: 500px;
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: sansSerif from "../../../css/typography/_fonts.css";
+}
+
+/* for ie11 */
+_:-ms-fullscreen, :root .contactUsForm textarea {
+  overflow: auto;
+}
+
+.heading {
+  max-width: contentMaxWidth;
+  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from "../../../css/typography/_fonts.css";
+  margin: 0px auto 60px auto;
+  color: badgerBlack;
+}
+
+.formLabel {
+  display: block;
+  text-align: left;
+  margin: 0px 0px 5px 0px;
+}
+
+.errorMessage {
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  display: inline-block;
+}
+
+.fatalError {
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+}
+.fatalErrorButton {
+  margin: 30px 0px;
+}
+
+.inputsContainer {
+  margin-bottom: 40px;
+}
+
+.inputBox {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+
+  padding: 12px;
+  border: 0px;
+
+  background: #ededed;
+  background-image: linear-gradient(to right, badgerBlack 20%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 11px 2px;
+  background-repeat: repeat-x;
+}
+
+.inputBox::placeholder {
+  color: badgerBlack;
+}
+
+.inputBox--yellow {
+  background: cainYellowFaded;
+  background-image: linear-gradient(to right, badgerBlack 20%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 11px 2px;
+  background-repeat: repeat-x;
+}
+
+.inputBox--yellow::placeholder {
+  color: #88792F;
+}
+
+.hasErrors {
+  border: 2px solid badgerBlack;
+  background-image: none;
+}
+
+.fatalErrorLink {
+  color: badgerBlack;
+  text-decoration: underline;
+}
+
+.button {
+  composes: primaryButton from "../../../css/_links.css";
+  color: badgerWhite !important;
+  outline: none;
+  border: none;
+}
+
+.button--red {
+  background: badgerRed !important;
+}
+
+.button--yellow {
+  background: badgerBlack !important;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media (hover:hover) {
+  .button:hover {
+    background: scorpian !important;
+  }
+}
+
