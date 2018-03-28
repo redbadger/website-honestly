@@ -31,7 +31,7 @@ type ComponentRendererProps = {
   },
 };
 
-export default class ComponentRenderer extends Component<*, ComponentRendererProps, *> {
+export default class ComponentRenderer extends Component<ComponentRendererProps> {
   build(data) {
     const componentName = data.type;
     const CustomComponent = componentIndex[componentName];
