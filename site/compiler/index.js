@@ -88,6 +88,8 @@ export function compileRoutes(state) {
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
 
+    const description = `${route.description} | ${TITLE_SUFFIX}`;
+
     stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
@@ -97,6 +99,7 @@ export function compileRoutes(state) {
     const ejsStart = Date.now();
     const body = layoutTemplate({
       title,
+      description,
       tracking,
       bodyContent,
       cssPath,
