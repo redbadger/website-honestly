@@ -5,7 +5,6 @@ import Link from '../link';
 
 type EventTitleProps = {
   eventLink: {
-    to?: string,
     children?: React.Node,
   },
   eventTitle: string,

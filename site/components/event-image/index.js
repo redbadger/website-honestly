@@ -18,9 +18,3 @@ export default function EventImage({ imgPath, imgAlt }: EventImageProps) {
     </div>
   );
 }
-/*
-EventImage.propTypes = {
-  imgPath: React.PropTypes.string.isRequired,
-  imgAlt: React.PropTypes.string.isRequired,
-};
-*/
