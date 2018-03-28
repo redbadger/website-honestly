@@ -11,6 +11,17 @@ type NewsLetterState = {
   updatedFormSubmitted: boolean,
 };
 
+type SignUpUser = {
+  email_address: string
+};
+
+type UpdateUser = {
+  email_address: string,
+  name: string,
+  company: string,
+  role: string
+};
+
 export function isValidEmail(email: string) {
   const regex = /.+@.+\..+/;
   return regex.test(email);
@@ -35,7 +46,7 @@ class NewsLetter extends Component<*, NewsLetterState> {
     };
   }
 
-  submitForm = (formDataJSON: any, method: any, fetchFn: Function = fetchFunction) => {
+  submitForm = (formDataJSON: string, method: string, fetchFn: Function = fetchFunction) => {
     return fetchFn({
       url: process.env.MAILING_LIST_SERVICE_URL,
       method,
@@ -55,7 +66,7 @@ class NewsLetter extends Component<*, NewsLetterState> {
       });
   };
 
-  signUpUser = (data: any) => {
+  signUpUser = (data: SignUpUser) => {
     if (data.email_address === '') {
       this.setState({
         errorMessage: 'Please enter an email address',
@@ -69,7 +80,7 @@ class NewsLetter extends Component<*, NewsLetterState> {
     }
   };
 
-  updateUser = (data: any) => {
+  updateUser = (data: UpdateUser) => {
     const object = Object.assign({}, data);
     object.email_address = this.state.email_address;
     if (!data.name) {

@@ -26,20 +26,22 @@ export default class SmallScreenNav extends React.Component<any, State> {
     };
   }
 
-  smallScreenNav: HTMLInputElement | HTMLDivElement;
+  smallScreenNav: HTMLElement;
 
   documentBodyLock = () => {
-    // $FlowIgnore
-    document.getElementById('mainContent').setAttribute('aria-hidden', 'true');
-    // $FlowIgnore
+    const mainContent = document.getElementById('mainContent');
+    if (!mainContent) return;
+    mainContent.setAttribute('aria-hidden', 'true');
+    if (!document.body) return;
     document.body.style.position = 'fixed';
     this.smallScreenNav.scrollTop = 0;
   };
 
   documentBodyRelease = () => {
-    // $FlowIgnore
-    document.getElementById('mainContent').removeAttribute('aria-hidden');
-    // $FlowIgnore
+    const mainContent = document.getElementById('mainContent');
+    if (!mainContent) return;
+    mainContent.removeAttribute('aria-hidden');
+    if (!document.body) return;
     document.body.style.position = 'relative';
   };
 
@@ -86,8 +88,7 @@ export default class SmallScreenNav extends React.Component<any, State> {
           <div className={styles.smallScreenNavMargin} onClick={this.closeMenu} />
           <div
             ref={c => {
-              // $FlowIgnore
-              this.smallScreenNav = c;
+              if (c) this.smallScreenNav = c;
             }}
             className={styles.smallScreenNavWrapper}
           >

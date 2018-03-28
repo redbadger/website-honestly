@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import styles from './style.css';
@@ -8,7 +9,7 @@ type HRProps = {
 };
 
 export default class HR extends Component<HRProps> {
-  defaultProps = {
+  static defaultProps = {
     customClassName: 'horizontal-line',
   };
 
