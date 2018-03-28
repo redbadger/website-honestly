@@ -20,10 +20,6 @@ provider:
         - "arn:aws:s3:::${self:custom.bucket_name}"
         - "arn:aws:s3:::${self:custom.bucket_name}/*"
     - Effect: 'Allow'
-      Action:
-        - 'SES:SendEmail'
-        - 'SES:SendRawEmail'
-      Resource: 'arn:aws:ses:eu-west-1:578418881509:identity/hello@red-badger.com'
 
 
 functions:
@@ -38,13 +34,6 @@ functions:
           cors: true
       # Invoke publish function every hour, on the hour, to keep content fresh
       - schedule: cron(0 * * * ? *)
-  contactUs:
-    handler: index.contactUs
-    events:
-      - http:
-          path: contact-us
-          method: post
-          cors: true
   signUp:
     handler: index.signUp
     events:
@@ -99,26 +88,6 @@ resources:
         Subscription:
           - Endpoint: "${env:LAMBDA_ERROR_REPORT_EMAIL}"
             Protocol: email
-
-    ContactUsLambdaErrorAlarm:
-      Type: AWS::CloudWatch::Alarm
-      Properties:
-        AlarmActions:
-          - Ref: "ErrorSNSTopic"
-        AlarmDescription: "An error has been thrown by the lambda function responsible for sending contact form information to hello@red-badger.com."
-        AlarmName: WebsiteHonestlyContactUsLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
-        ComparisonOperator: GreaterThanOrEqualToThreshold
-        Dimensions:
-          - Name: FunctionName
-            Value:
-              Ref: ContactUsLambdaFunction
-        EvaluationPeriods: 1
-        MetricName: Errors
-        Namespace: AWS/Lambda
-        Period: 60
-        Statistic: Sum
-        Threshold: 1
-        Unit: Count
 
     SignUpLambdaErrorAlarm:
       Type: AWS::CloudWatch::Alarm

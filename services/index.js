@@ -1,7 +1,6 @@
 import bugsnag from 'bugsnag';
 
 import doPublish from './publish';
-import doContactUs from './contact_us';
 import doSignUp from './mailchimp/sign-up/index';
 import doUpdateUser from './mailchimp/update-user/index';
 import doRegisterForWebinar from './webinar_registration';
@@ -38,8 +37,6 @@ export function publish(event, context, cb) {
 
   errorHandlerWrapper(doPublish)(event, context, cb);
 }
-
-export const contactUs = errorHandlerWrapper(doContactUs);
 
 export const signUp = errorHandlerWrapper(doSignUp);
 
