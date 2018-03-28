@@ -3,6 +3,8 @@
 .*/node_modules/fbjs/.*
 .*/node_modules/youtube-player/.*
 .*/node_modules/graphql/.*
+.*/node_modules/apollo-client/.*
+.*/node_modules/graphql-tag/.*
 
 [options]
 module.name_mapper.extension='ejs' -> 'empty/function'
