@@ -1,15 +1,14 @@
-SHELL:=/bin/bash
+#!/bin/sh
 
 BIN=./bin
 LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
-NBIN=./node_modules/.bin
-WEBPACK=$(NBIN)/webpack --bail
-MOCHA=$(NBIN)/mocha
-PRETTIER=$(NBIN)/prettier --write --print-width 100 --single-quote --trailing-comma all --parser babylon '{!(dist)/,!(dist)/**/}*.js'
-ESLINT=$(NBIN)/eslint
-SERVERLESS=cd services && .$(NBIN)/sls
-WEBPACK_DEV_SERVER=$(NBIN)/webpack-dev-server
-NPM_CHECK_UPDATES=$(NBIN)/ncu
+WEBPACK=yarn webpack --bail
+MOCHA=yarn mocha
+PRETTIER=yarn prettier --write --print-width 100 --single-quote --trailing-comma all --parser babylon '{!(dist)/,!(dist)/**/}*.js'
+ESLINT=yarn eslint
+SERVERLESS=cd services && yarn sls
+WEBPACK_DEV_SERVER=yarn webpack-dev-server
+NPM_CHECK_UPDATES=yarn ncu
 
 FORCE_COLOURS=script -q /dev/null
 
@@ -73,7 +72,7 @@ test: ## Run the tests
 	@$(PRINT_OK)
 
 flow: ## Run the type checker
-	$(NBIN)/flow
+	yarn flow
 	@$(PRINT_OK)
 
 prettier: ## Run the prettifier
@@ -145,13 +144,13 @@ compress-assets: ## Compress assets. What did you expect? :)
 			\) \
 			-exec sh -c '\
 				echo {} \
-				&& cat {} | $(NBIN)/imagemin > {}.min \
+				&& cat {} | yarn imagemin > {}.min \
 				&& mv {}.min {}' \;
 	find site -type f \
 		-name '*.svg' \
 		-exec sh -c '\
 			echo {} \
-			&& $(NBIN)/svgo {} -q --enable=removeTitle' \;
+			&& yarn svgo {} -q --enable=removeTitle' \;
 	@$(PRINT_OK)
 
 dist/services.zip: dist/services

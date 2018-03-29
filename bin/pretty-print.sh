@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh
+
 set -euo pipefail
 
 # color output
@@ -13,7 +14,6 @@ cWhite="\e[97m"
 
 pretty_block () {
   local i="$1" ; size=${#i}
-  ((size+=2))
   printf "\n$cCyan"
   printf "%0.s*" $(seq 1 $size)
   printf "\n $cBlue$1\n$cCyan"

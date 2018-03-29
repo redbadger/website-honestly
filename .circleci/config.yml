@@ -1,0 +1,96 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Install Node modules
+          command: yarn install --frozen-lockfile
+
+      - save_cache:
+          key: node_modules-v6-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+
+      - run:
+          name: Validate formatting
+          command: make prettier
+
+      - run:
+          name: Lint code
+          command: make lint
+
+      - run:
+          name: Run tests
+          command: make test
+
+      - run:
+          name: Validate types
+          command: make flow
+
+  preview:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Deploy branch
+          command: ./bin/ci-deploy.sh create-commit-site
+
+  deploy_staging:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Deploy to staging
+          command: ./bin/ci-deploy.sh master-to-staging
+
+  deploy_production:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Deploy to staging
+          command: ./bin/ci-deploy.sh master-to-production
+
+workflows:
+  version: 2
+
+  build_and_deploy:
+    jobs:
+      - build
+
+      - preview:
+          requires:
+            - build
+          filters:
+            branches:
+              only: /^(?!.*master).*$/ # all branches except master
+
+      - deploy_staging:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
