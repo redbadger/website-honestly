@@ -19,21 +19,57 @@ jobs:
           paths:
             - ./node_modules
 
+  validate_formatting:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
+
       - run:
           name: Validate formatting
           command: make prettier
+
+  lint:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
 
       - run:
           name: Lint code
           command: make lint
 
-      - run:
-          name: Run tests
-          command: make test
+  validate_types:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
 
       - run:
           name: Validate types
           command: make flow
+
+  test:
+    docker:
+      - image: redbadger/website-honestly-deploy:2
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - node_modules-v6-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Run tests
+          command: make test
 
   preview:
     docker:
@@ -81,9 +117,29 @@ workflows:
     jobs:
       - build
 
+      - validate_formatting:
+          requires:
+            - build
+
+      - lint:
+          requires:
+            - build
+
+      - validate_types:
+          requires:
+            - build
+
+      - test:
+          requires:
+            - build
+
       - preview:
           requires:
             - build
+            - validate_formatting
+            - lint
+            - validate_types
+            - test
           filters:
             branches:
               only: /^(?!.*master).*$/ # all branches except master
@@ -91,6 +147,10 @@ workflows:
       - deploy_staging:
           requires:
             - build
+            - validate_formatting
+            - lint
+            - validate_types
+            - test
           filters:
             branches:
               only: master
