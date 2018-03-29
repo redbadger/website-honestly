@@ -1,11 +1,22 @@
+// @flow
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from '../style.css';
 
 const cx = classnames.bind(styles);
 
-class BeforeSignUp extends Component {
-  constructor(props) {
+type BeforeSignUpProps = {
+  onSubmit: Function,
+  errorMessage?: string,
+};
+
+type BeforeSignUpState = {
+  email_address: string,
+  submitting: boolean,
+};
+
+class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
+  constructor(props: BeforeSignUpProps) {
     super(props);
     this.state = {
       email_address: '', // eslint-disable-line camelcase
@@ -19,7 +30,7 @@ class BeforeSignUp extends Component {
     });
   }
 
-  handleInputChange = event => {
+  handleInputChange = (event: SyntheticInputEvent<HTMLInputElement>) => {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);
@@ -85,11 +96,5 @@ class BeforeSignUp extends Component {
     );
   }
 }
-
-const { func, string } = React.PropTypes;
-BeforeSignUp.propTypes = {
-  onSubmit: func.isRequired,
-  errorMessage: string.isRequired,
-};
 
 export default BeforeSignUp;

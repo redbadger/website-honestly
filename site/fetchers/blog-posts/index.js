@@ -67,9 +67,10 @@ const getPostsForTag = params =>
       return mapDataToState(posts);
     });
 
-const getPosts = tags => Promise.all(tags.map(tag => getPostsForTag({ tag }))).then(flatten);
+const getPosts = (tags: Array<string>) =>
+  (Promise.all(tags.map(tag => getPostsForTag({ tag }))).then(flatten): Promise<any>);
 
 export const getBlogPosts = (tags: Array<string>, cap: number = 3) =>
-  getPosts(tags)
+  (getPosts(tags)
     .then(posts => posts.sort((a, b) => b.date - a.date))
-    .then(posts => take(posts, cap));
+    .then(posts => take(posts, cap)): Promise<any>);

@@ -1,16 +1,17 @@
+// @flow
 /*
 * This component is ported from Website Next and is meant to be
 * used only by Jobs and Events components
 */
 
-import React, { Component } from 'react';
+import * as React from 'react';
 import styles from './style.css';
 
-export default class Container extends Component {
-  static propTypes = {
-    children: React.PropTypes.node,
-  };
+type ContainerProps = {
+  children?: React.Node,
+};
 
+export default class Container extends React.Component<ContainerProps> {
   static defaultProps = {
     children: [],
   };

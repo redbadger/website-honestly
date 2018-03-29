@@ -1,3 +1,4 @@
+// @flow
 /**
  * Grid Component
  *
@@ -21,11 +22,18 @@
  */
 
 /* eslint react/no-multi-comp: 0 */
-import React, { Component } from 'react';
+import * as React from 'react';
 import classNames from 'classnames';
 import styles from './style.css';
 
-export class Grid extends Component {
+type GridProps = {
+  breakOn?: string,
+  children?: React.Node,
+  extraClassName?: string,
+  fit?: boolean,
+};
+
+export class Grid extends React.Component<GridProps> {
   static propTypes = {
     breakOn: React.PropTypes.string,
     children: React.PropTypes.node,
@@ -43,6 +51,7 @@ export class Grid extends Component {
       [styles.grid]: true,
       [styles.withGutter]: true,
       [styles.fit]: this.props.fit,
+      // $FlowIgnore
       [`responsive-grid-${this.props.breakOn}`]: true,
     });
 
@@ -50,4 +59,4 @@ export class Grid extends Component {
   }
 }
 
-export Cell from './cell.js';
+export { default as Cell } from './cell.js';

@@ -1,7 +1,15 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import Link from '../../components/link';
 import styles from './style.css';
 import confusedBadger from './png/confused-badger.png';
+
+type ErrorPageProps = {
+  title: string,
+  content: React.Node,
+  linkText?: string,
+  linkHref?: string,
+};
 
 function renderButton(href, text) {
   if (href && text) {
@@ -15,7 +23,7 @@ function renderButton(href, text) {
   }
 }
 
-export default function ErrorPage({ title, content, linkText, linkHref }) {
+export default function ErrorPage({ title, content, linkText, linkHref }: ErrorPageProps) {
   return (
     <div className={styles.section}>
       <div className={styles.sectionContent}>
@@ -30,10 +38,3 @@ export default function ErrorPage({ title, content, linkText, linkHref }) {
     </div>
   );
 }
-
-ErrorPage.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  content: React.PropTypes.node.isRequired,
-  linkText: React.PropTypes.string,
-  linkHref: React.PropTypes.string,
-};

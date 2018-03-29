@@ -1,11 +1,36 @@
+// @flow
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
 import styles from '../style.css';
 
 const cx = classnames.bind(styles);
-const { func, string, bool } = React.PropTypes;
 
-const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSubmit }) => (
+type AfterSignUpFormProps = {
+  errorMessage?: string,
+  handleInputChange: Function,
+  submitting: boolean,
+  handleSubmit: Function,
+};
+
+type AfterSignupProps = {
+  onSubmit: Function,
+  updatedFormSubmitted?: boolean,
+  errorMessage?: string,
+};
+
+type AfterSignupState = {
+  name: string,
+  company: string,
+  role: string,
+  submitting: boolean,
+};
+
+const AfterSignUpForm = ({
+  errorMessage,
+  handleInputChange,
+  submitting,
+  handleSubmit,
+}: AfterSignUpFormProps) => (
   <div>
     <h2 className={styles.subTitle}>
       Help us make sure your BadgerNews is relevant by telling us a bit more about yourself
@@ -83,21 +108,8 @@ const AfterSignUpForm = ({ errorMessage, handleInputChange, submitting, handleSu
   </div>
 );
 
-AfterSignUpForm.propTypes = {
-  errorMessage: string.isRequired,
-  handleInputChange: func.isRequired,
-  submitting: bool.isRequired,
-  handleSubmit: func.isRequired,
-};
-
-export default class AfterSignup extends Component {
-  static propTypes = {
-    onSubmit: func.isRequired,
-    updatedFormSubmitted: bool.isRequired,
-    errorMessage: string.isRequired,
-  };
-
-  constructor(props) {
+export default class AfterSignup extends Component<AfterSignupProps, AfterSignupState> {
+  constructor(props: AfterSignupProps) {
     super(props);
     this.state = {
       name: '',
@@ -117,7 +129,9 @@ export default class AfterSignup extends Component {
     });
   }
 
-  handleInputChange = event => {
+  element: HTMLElement;
+
+  handleInputChange = (event: SyntheticInputEvent<HTMLInputElement>) => {
     const newState = {};
     newState[event.target.name] = event.target.value;
     this.setState(newState);
@@ -142,6 +156,7 @@ export default class AfterSignup extends Component {
       <section
         className={cx('newsletter', 'submitted')}
         ref={c => {
+          // $FlowIgnore
           this.element = c;
         }}
       >

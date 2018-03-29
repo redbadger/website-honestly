@@ -1,3 +1,4 @@
+// @flow
 /* eslint-disable react/jsx-pascal-case, react/no-danger */
 import React from 'react';
 
@@ -7,13 +8,33 @@ import Link from '../../components/link';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventMeta from '../../components/event-meta';
-import EventLinksList from '../../pages/event/event-links-list';
+import type { LinkList } from '../../pages/event/event-links-list';
 
 import styles from './style.css';
 
 import { setEndDate } from '../../fetchers/util/events';
 
-export default function Event({ event }) {
+type DateShape = {
+  date: string,
+  monthSym: string,
+  year: string,
+  month?: string,
+};
+
+type EventProps = {
+  event: {
+    startDateTime: DateShape,
+    endDateTime?: DateShape,
+    title: string,
+    strapline: string,
+    body: Array<{ text: string }>,
+    internalLinks: LinkList,
+    externalLinks: LinkList,
+    featureImageFilename: string,
+  },
+};
+
+export default function Event({ event }: EventProps) {
   return (
     <div className={styles.background}>
       <Section>
@@ -65,26 +86,3 @@ export default function Event({ event }) {
     </div>
   );
 }
-
-const dateShape = {
-  date: React.PropTypes.string.isRequired,
-  monthSym: React.PropTypes.string.isRequired,
-  year: React.PropTypes.string.isRequired,
-};
-
-Event.propTypes = {
-  event: React.PropTypes.shape({
-    startDateTime: React.PropTypes.shape(dateShape).isRequired,
-    endDateTime: React.PropTypes.shape(dateShape),
-    title: React.PropTypes.string,
-    strapline: React.PropTypes.string,
-    body: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        text: React.PropTypes.string,
-      }),
-    ),
-    internalLinks: EventLinksList.propTypes.linkList,
-    externalLinks: EventLinksList.propTypes.linkList,
-    featureImageFilename: React.PropTypes.string,
-  }),
-};

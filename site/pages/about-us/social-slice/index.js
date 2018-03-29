@@ -22,8 +22,7 @@ type SocialSliceState = {
   viewWidth: number,
 };
 
-class SocialSlice extends React.Component {
-  state: SocialSliceState;
+class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
   componentWillMount() {
     this.state = {
       tile: 0,
@@ -108,7 +107,7 @@ class SocialSlice extends React.Component {
 
   renderTiles = () => {
     const { tweets, instagramPosts } = this.props;
-    const data: Array<Tweet> | Array<InstagramPost> = [];
+    const data: Array<Tweet | InstagramPost> = [];
     if (tweets) {
       data.push(...tweets);
     }

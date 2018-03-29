@@ -8,7 +8,12 @@ export type TopicProps = {
   answer: string,
 };
 
-class Topic extends Component {
+type TopicState = {
+  open: boolean,
+  showButton: boolean,
+};
+
+class Topic extends Component<TopicProps, TopicState> {
   constructor(props: TopicProps) {
     super(props);
     this.state = {
@@ -16,11 +21,6 @@ class Topic extends Component {
       showButton: false,
     };
   }
-
-  state: {
-    open: boolean,
-    showButton: boolean,
-  };
 
   componentDidMount = () => {
     this.setState({ showButton: true });

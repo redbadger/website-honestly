@@ -1,14 +1,15 @@
+// @flow
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import styles from './style.css';
 
-export default class HR extends Component {
-  static propTypes = {
-    color: React.PropTypes.oneOf(['red', 'grey']),
-    customClassName: React.PropTypes.string,
-  };
+type HRProps = {
+  color: 'red' | 'grey',
+  customClassName: string,
+};
 
-  defaultProps = {
+export default class HR extends Component<HRProps> {
+  static defaultProps = {
     customClassName: 'horizontal-line',
   };
 

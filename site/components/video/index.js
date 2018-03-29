@@ -1,13 +1,14 @@
+// @flow
 import React, { Component } from 'react';
 import styles from './style.css';
 
-export default class Video extends Component {
-  static propTypes = {
-    id: React.PropTypes.string.isRequired,
-    type: React.PropTypes.oneOf(['vimeo', 'youtube']).isRequired,
-    title: React.PropTypes.string.isRequired,
-  };
+type VideoProps = {
+  id: string,
+  type: 'vimeo' | 'youtube',
+  title: string,
+};
 
+export default class Video extends Component<VideoProps> {
   static urlMap = {
     vimeo: 'https://player.vimeo.com/video/',
     youtube: 'https://www.youtube.com/embed/',

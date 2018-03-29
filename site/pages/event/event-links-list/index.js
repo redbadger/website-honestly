@@ -1,12 +1,25 @@
+// @flow
 // Displays list of links related to the event
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 import classNames from 'classnames';
 import layout from '../../../components/utils/layout.css';
 import styles from './style.css';
 
-const EventLinksList = ({ linkList, listType }) => {
+type Link = {
+  url?: string,
+  title?: string,
+};
+
+export type LinkList = Array<Link>;
+
+type EventLinksListProps = {
+  linkList: LinkList,
+  listType: 'external' | 'internal',
+};
+
+const EventLinksList = ({ linkList, listType }: EventLinksListProps) => {
   if (!linkList || linkList.length === 0) return <noscript />;
   return (
     <div
@@ -28,16 +41,6 @@ const EventLinksList = ({ linkList, listType }) => {
       ))}
     </div>
   );
-};
-
-EventLinksList.propTypes = {
-  linkList: PropTypes.arrayOf(
-    PropTypes.shape({
-      url: PropTypes.string,
-      title: PropTypes.string,
-    }),
-  ),
-  listType: React.PropTypes.oneOf(['external', 'internal']).isRequired,
 };
 
 export default EventLinksList;

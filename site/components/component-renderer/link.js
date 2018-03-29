@@ -1,15 +1,16 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import styles from './styles.css';
 
-export default function Link({ children, href }) {
+type LinkProps = {
+  children?: React.Node,
+  href: string,
+};
+
+export default function Link({ children, href }: LinkProps) {
   return (
     <a className={styles.a} href={href}>
       {children}
     </a>
   );
 }
-
-Link.propTypes = {
-  children: React.PropTypes.node,
-  href: React.PropTypes.string.isRequired,
-};

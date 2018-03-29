@@ -1,10 +1,11 @@
-import React from 'react';
+// @flow
+import * as React from 'react';
 import styles from './styles.css';
 
-export default function Title1({ children }) {
+type Title1Props = {
+  children?: React.Node,
+};
+
+export default function Title1({ children }: Title1Props) {
   return <h1 className={styles.h1}>{children}</h1>;
 }
-
-Title1.propTypes = {
-  children: React.PropTypes.node,
-};

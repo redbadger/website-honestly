@@ -21,7 +21,7 @@ const {
 
 import styles from './index.css';
 
-export default class Shapes extends Component {
+export default class Shapes extends Component<any> {
   static throwShapes(engine) {
     Engine.run(engine);
     Render.run(engine.render);
@@ -29,14 +29,15 @@ export default class Shapes extends Component {
 
   componentDidMount() {
     setTimeout(() => {
+      // $FlowIgnore
       this.engageMusic(this.shapes);
     });
   }
 
-  svg: Object;
-  shapes: Object;
+  svg: ?Element;
+  shapes: ?HTMLDivElement;
 
-  engageMusic(container: Object) {
+  engageMusic(container: HTMLDivElement) {
     const containerRectangle = container.getBoundingClientRect();
     const height = containerRectangle.bottom - containerRectangle.top;
     const engine = Engine.create({
@@ -74,6 +75,7 @@ export default class Shapes extends Component {
       };
 
       const bodies = [];
+      // $FlowIgnore
       const paths = this.svg.childNodes;
       [...paths].forEach(path => {
         const points = Svg.pathToVertices(path, 30);

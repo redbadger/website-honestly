@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import * as React from 'react';
 import classnames from 'classnames/bind';
 
 import Social from '../social';
@@ -17,7 +17,7 @@ type CaseStudyHeaderProps = {
   headerImageAlt: string,
   headerImageAlign?: string,
   headerColor: string,
-  children?: Node,
+  children?: React.Node,
   social: SocialProps,
 };
 

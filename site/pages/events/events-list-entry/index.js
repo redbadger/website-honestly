@@ -1,15 +1,33 @@
-import React, { PropTypes } from 'react';
+// @flow
+import React from 'react';
 
 import HR from '../../../components/hr';
 import { Grid, Cell } from '../../../components/grid';
 import EventMeta from '../../../components/event-meta';
 import EventImage from '../../../components/event-image';
 import DateBubble from '../../../components/date-bubble';
+import type { DateShape } from '../../../components/date-bubble';
+import type { LinkList } from '../../../pages/event/event-links-list';
 import EventTitle from '../../../components/event-title';
 import styles from '../events-list/style.css';
 import { setEndDate } from '../../../fetchers/util/events';
 
 import Link from '../../../components/link';
+
+type EventsListEntryProps = {
+  id: string,
+  strapline?: string,
+  slug: string,
+  title: string,
+  featureImageFilename: string,
+  tags?: Array<string>,
+  externalLinks: LinkList,
+  internalLinks: LinkList,
+  startDateTime: DateShape,
+  endDateTime?: DateShape,
+  type: 'news' | 'event',
+  timeline?: 'past' | 'future' | 'today',
+};
 
 const EventsListEntry = ({
   id,
@@ -23,7 +41,7 @@ const EventsListEntry = ({
   internalLinks,
   startDateTime,
   featureImageFilename,
-}) => {
+}: EventsListEntryProps) => {
   const eventLink = {
     year: startDateTime.year,
     month: startDateTime.month,
@@ -64,7 +82,7 @@ const EventsListEntry = ({
     </li>
   );
 };
-
+/*
 EventsListEntry.propTypes = {
   id: PropTypes.string.isRequired,
   strapline: PropTypes.string,
@@ -79,5 +97,5 @@ EventsListEntry.propTypes = {
   type: PropTypes.oneOf(['news', 'event']).isRequired,
   timeline: PropTypes.oneOf(['past', 'future', 'today']),
 };
-
+*/
 export default EventsListEntry;

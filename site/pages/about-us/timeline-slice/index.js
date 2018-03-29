@@ -22,7 +22,11 @@ import Image2015 from './2015/2015.png';
 import Image2016 from './2016/2016.png';
 import ClientOnly from '../../../components/clientOnly';
 
-class TimelineSlice extends React.Component {
+type TimelineSliceState = {
+  currentIndex: number,
+};
+
+class TimelineSlice extends React.Component<*, TimelineSliceState> {
   state = {
     currentIndex: 0,
   };

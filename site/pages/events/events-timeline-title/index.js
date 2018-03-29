@@ -1,7 +1,14 @@
+// @flow
 import React, { PropTypes } from 'react';
 import styles from '../events-list/style.css';
 
-const EventsTimelineTitle = ({ timeline }) => {
+export type Timeline = 'past' | 'future' | 'today';
+
+type EventsTimelineTitleProps = {
+  timeline: Timeline,
+};
+
+const EventsTimelineTitle = ({ timeline }: EventsTimelineTitleProps) => {
   switch (timeline) {
     case 'past':
       return <h2 className={styles.eventsTimelineTitle}>Past events</h2>;
