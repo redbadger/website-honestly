@@ -107,7 +107,7 @@ jobs:
             - node_modules-v6-{{ checksum "yarn.lock" }}
 
       - run:
-          name: Deploy to staging
+          name: Deploy to production
           command: ./bin/ci-deploy.sh master-to-production
 
 workflows:
