@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-   docker:
+    docker:
       - image: redbadger/website-honestly-deploy:4
 
     steps:
