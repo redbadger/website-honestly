@@ -6,7 +6,7 @@ WEBPACK=yarn webpack --bail
 MOCHA=yarn mocha
 PRETTIER=yarn prettier --write --print-width 100 --single-quote --trailing-comma all --parser babylon '{!(dist)/,!(dist)/**/}*.js'
 ESLINT=yarn eslint
-SERVERLESS=yarn --cwd ./services sls
+SERVERLESS=cd services && ../node_modules/.bin/sls deploy
 WEBPACK_DEV_SERVER=yarn webpack-dev-server
 NPM_CHECK_UPDATES=yarn ncu
 
