@@ -88,7 +88,7 @@ export function compileRoutes(state) {
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
 
-    const description = `${route.description || ''} | ${TITLE_SUFFIX}`;
+    const description = `${route.description || ''}`;
 
     stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
