@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import sinon from 'sinon';
+import PropTypes from 'prop-types';
 import { render } from 'enzyme';
 import createStateNavigator from '../../routes';
 import MeetOurTeam from '.';
@@ -50,7 +51,7 @@ describe('site/team-slice', () => {
           badgers={[{ firstName: 'Alex' }]}
           page={1}
         />
-      </Layout>
+      </Layout>,
     );
 
     const badgersList = teamSlice.find('ul').last();
@@ -71,7 +72,7 @@ describe('site/team-slice', () => {
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
           <MeetOurTeam categories={[]} category="everyone" badgers={badgers} page={1} />
-        </Layout>
+        </Layout>,
       );
 
       const badgersList = teamSlice.find('ul').last();
@@ -102,7 +103,7 @@ describe('site/team-slice', () => {
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
           <MeetOurTeam categories={[]} category="everyone" badgers={badgers} page={2} />
-        </Layout>
+        </Layout>,
       );
 
       const badgersList = teamSlice.find('ul').last();
@@ -140,7 +141,7 @@ describe('site/team-slice', () => {
             badgers={badgers}
             page={1}
           />
-        </Layout>
+        </Layout>,
       );
 
       const badgersList = teamSlice.find('ul').last();

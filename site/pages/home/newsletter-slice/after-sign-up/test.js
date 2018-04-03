@@ -1,10 +1,10 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import AfterSignUp from '.';
 
 describe('AfterSignUp', () => {
   it('sets the initial state correctly', () => {
-    const wrapper = shallow(<AfterSignUp />);
+    const wrapper = mount(<AfterSignUp />);
     expect(wrapper.state()).to.deep.equal({
       name: '',
       company: '',
@@ -14,7 +14,7 @@ describe('AfterSignUp', () => {
   });
 
   it('handles handleInputChange and sets the state correctly', () => {
-    const wrapper = shallow(<AfterSignUp />);
+    const wrapper = mount(<AfterSignUp />);
     const event = {
       target: {
         name: 'exampleName',
@@ -32,7 +32,7 @@ describe('AfterSignUp', () => {
   });
 
   it('handles componentWillReceiveProps and sets the state correctly', () => {
-    const wrapper = shallow(<AfterSignUp />);
+    const wrapper = mount(<AfterSignUp />);
     wrapper.instance().componentWillReceiveProps();
     expect(wrapper.state()).to.deep.equal({
       name: '',
@@ -56,7 +56,7 @@ describe('AfterSignUp', () => {
           },
         });
       });
-    const wrapper = shallow(<AfterSignUp onSubmit={submitFormFunction} />);
+    const wrapper = mount(<AfterSignUp onSubmit={submitFormFunction} />);
     wrapper.instance().handleSubmit();
     expect(wrapper.state()).to.deep.equal({
       submitting: true,

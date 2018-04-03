@@ -1,5 +1,5 @@
 // @flow
-import React, { PropTypes } from 'react';
+import React from 'react';
 import styles from '../events-list/style.css';
 
 export type Timeline = 'past' | 'future' | 'today';
@@ -19,10 +19,6 @@ const EventsTimelineTitle = ({ timeline }: EventsTimelineTitleProps) => {
     default:
       return <noscript />;
   }
-};
-
-EventsTimelineTitle.propTypes = {
-  timeline: PropTypes.oneOf(['past', 'future', 'today']),
 };
 
 export default EventsTimelineTitle;

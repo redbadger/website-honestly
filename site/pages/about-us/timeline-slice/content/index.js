@@ -1,7 +1,18 @@
+// @flow
 import React from 'react';
 import styles from './style.css';
 
-const Content = ({ year, title, text, fact, image, flip }) => {
+type ContentProps = {
+  year: string,
+  title: string,
+  text: string,
+  fact: string,
+  image: string,
+  mobileImage: string,
+  flip: boolean,
+};
+
+const Content = ({ year, title, text, fact, image, flip }: ContentProps) => {
   const topRowClassName = flip ? styles.topRowFlipped : styles.topRow;
 
   return (
@@ -36,16 +47,6 @@ const Content = ({ year, title, text, fact, image, flip }) => {
       </div>
     </div>
   );
-};
-
-Content.propTypes = {
-  year: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  text: React.PropTypes.string.isRequired,
-  fact: React.PropTypes.string.isRequired,
-  image: React.PropTypes.string.isRequired,
-  mobileImage: React.PropTypes.string.isRequired,
-  flip: React.PropTypes.bool,
 };
 
 export default Content;

@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+// @flow
+import React from 'react';
 import Link from '../../components/link';
 import styles from './styles.css';
 
@@ -9,7 +10,12 @@ import nodejsImg from './img/nodejs.png';
 import reactImg from './img/react.png';
 import elasticsearchImg from './img/elasticsearch.png';
 
-function TechListItem({ name, imgSrc }) {
+type TechListItemProps = {
+  name: string,
+  imgSrc: string,
+};
+
+function TechListItem({ name, imgSrc }: TechListItemProps) {
   return (
     <li className={styles.techListItem}>
       <figure className={styles.techItem}>
@@ -19,11 +25,6 @@ function TechListItem({ name, imgSrc }) {
     </li>
   );
 }
-
-TechListItem.propTypes = {
-  name: PropTypes.string.isRequired,
-  imgSrc: PropTypes.string.isRequired,
-};
 
 export default function TechSlice() {
   return (

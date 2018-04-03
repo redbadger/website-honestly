@@ -34,13 +34,6 @@ type GridProps = {
 };
 
 export class Grid extends React.Component<GridProps> {
-  static propTypes = {
-    breakOn: React.PropTypes.string,
-    children: React.PropTypes.node,
-    extraClassName: React.PropTypes.string,
-    fit: React.PropTypes.bool,
-  };
-
   defaultProps = {
     extraClassName: 'grid',
     breakOn: 'mobile',

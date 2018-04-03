@@ -59,11 +59,3 @@ export default function Job({ job }: JobProps) {
     </div>
   );
 }
-
-Job.propTypes = {
-  job: React.PropTypes.shape({
-    title: React.PropTypes.string,
-    fullDescription: React.PropTypes.string,
-    applicationUrl: React.PropTypes.string,
-  }),
-};

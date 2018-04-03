@@ -82,20 +82,5 @@ const EventsListEntry = ({
     </li>
   );
 };
-/*
-EventsListEntry.propTypes = {
-  id: PropTypes.string.isRequired,
-  strapline: PropTypes.string,
-  slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  featureImageFilename: PropTypes.string,
-  tags: PropTypes.arrayOf(PropTypes.string),
-  externalLinks: EventMeta.propTypes.externalLinks,
-  internalLinks: EventMeta.propTypes.internalLinks,
-  startDateTime: DateBubble.propTypes.startDateTime,
-  endDateTime: DateBubble.propTypes.endDateTime,
-  type: PropTypes.oneOf(['news', 'event']).isRequired,
-  timeline: PropTypes.oneOf(['past', 'future', 'today']),
-};
-*/
+
 export default EventsListEntry;
