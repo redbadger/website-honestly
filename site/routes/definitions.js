@@ -77,6 +77,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ event }) => event.title,
     key: 'event',
     route: 'events/{year}/{month}/{date}/{slug}',
+    description:
+      'Upcoming events including WeLove_Tech, React London Community, UXD exchange and more.',
     stateToProps: (state, params = {}) => ({ event: state.events[state.eventLookup[params.slug]] }),
     gen: state =>
       state.events.map(({ startDateTime: { date, month, year }, slug }) => ({
@@ -100,6 +102,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
+    description: 'Signature skills and acheivements - a profile page for Red Badger team member',
     key: 'badger',
     route: 'people/{slug}',
     stateToProps: (state, params = {}) => ({

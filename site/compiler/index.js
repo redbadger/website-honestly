@@ -92,7 +92,9 @@ export function compileRoutes(state) {
 
     stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
-    const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
+    const bodyContent = renderToString(
+      route.component({ stateNavigator, title, description }, route.props)
+    );
     const meta = typeof window === 'undefined' ? Helmet.rewind().meta : null;
     const renderMs = Date.now() - renderStart;
 

@@ -1,9 +1,25 @@
 import React, { Component, PropTypes } from 'react';
+import sinon from 'sinon';
 import { render } from 'enzyme';
 import createStateNavigator from '../../routes';
 import MeetOurTeam from '.';
 
 describe('site/team-slice', () => {
+  let sandbox;
+  let getEls;
+  let fakeMetaDescription;
+
+  beforeEach(() => {
+    sandbox = sinon.sandbox.create();
+    getEls = sandbox.stub(document, 'getElementsByName');
+    fakeMetaDescription = { setAttribute: sinon.stub() };
+    getEls.withArgs('description').returns([fakeMetaDescription]);
+  });
+
+  afterEach(() => {
+    sandbox.restore();
+  });
+
   class Layout extends Component {
     static propTypes = {
       children: PropTypes.element.isRequired,
@@ -34,7 +50,7 @@ describe('site/team-slice', () => {
           badgers={[{ firstName: 'Alex' }]}
           page={1}
         />
-      </Layout>,
+      </Layout>
     );
 
     const badgersList = teamSlice.find('ul').last();
@@ -55,7 +71,7 @@ describe('site/team-slice', () => {
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
           <MeetOurTeam categories={[]} category="everyone" badgers={badgers} page={1} />
-        </Layout>,
+        </Layout>
       );
 
       const badgersList = teamSlice.find('ul').last();
@@ -86,7 +102,7 @@ describe('site/team-slice', () => {
       const teamSlice = render(
         <Layout stateNavigator={stateNavigator}>
           <MeetOurTeam categories={[]} category="everyone" badgers={badgers} page={2} />
-        </Layout>,
+        </Layout>
       );
 
       const badgersList = teamSlice.find('ul').last();
@@ -124,7 +140,7 @@ describe('site/team-slice', () => {
             badgers={badgers}
             page={1}
           />
-        </Layout>,
+        </Layout>
       );
 
       const badgersList = teamSlice.find('ul').last();
