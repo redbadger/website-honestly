@@ -137,7 +137,7 @@ export default () => {
   handleContactUsHash(stateNavigator);
   stateNavigator.onNavigate((oldState, state) => {
     const page = routeDefinitions.find(obj => obj.key === state.key);
-    if (typeof window !== 'undefined') {
+    if (typeof document !== 'undefined') {
       const metaDescription = page.description || '';
       document.getElementsByName('description')[0].setAttribute('content', metaDescription);
     }
