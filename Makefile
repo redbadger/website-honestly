@@ -180,7 +180,7 @@ scanner: ## Initialize git secrets in the scanner folder
 	git clone git@github.com:redbadger/secrets-scanner.git scanner
 	@echo ""
 	@echo "*************************************************************"
-	@echo "* Follow the instructions to get added to the setup the scanner:"
+	@echo "* Follow the instructions below to setup the scanner:"
 	@echo "* https://github.com/redbadger/secrets-scanner/blob/master/README.md"
 	@echo "*************************************************************"
 	@echo ""

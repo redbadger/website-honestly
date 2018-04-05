@@ -34,7 +34,7 @@ make keyrings
 # - "Getting Blackbox"
 # - "Get access to existing blackbox secrets"
 
-# Set up the git secrets to scan for secrets pre-commit. Follow the instructions of this command:
+# Set up git secrets to scan for secrets pre-commit. Follow the instructions of this command:
 make scanner
 
 # Go to https://github.com/redbadger/secrets-scanner/blob/master/README.md
