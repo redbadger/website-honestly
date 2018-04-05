@@ -34,6 +34,14 @@ make keyrings
 # - "Getting Blackbox"
 # - "Get access to existing blackbox secrets"
 
+# Set up the git secrets to scan for secrets pre-commit. Follow the instructions of this command:
+make scanner
+
+# Go to https://github.com/redbadger/secrets-scanner/blob/master/README.md
+# Follow instructions to
+# - "Getting Git Secrets"
+# - "Setting up to scan"
+
 # Fetch and stash dynamic data for development. You might need to do this
 # every time you want to get updated data from staging for local development.
 make fetch

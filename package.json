@@ -119,6 +119,7 @@
   "config": {
     "pre-git": {
       "pre-commit": [
+        "make scan-secrets",
         "make prettier",
         "make lint",
         "make test"
