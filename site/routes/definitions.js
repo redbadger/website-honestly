@@ -102,7 +102,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
-    description: 'Signature skills and acheivements - a profile page for Red Badger team member',
+    description: 'Signature skills and achievements - a profile page for Red Badger team member',
     key: 'badger',
     route: 'people/{slug}',
     stateToProps: (state, params = {}) => ({
