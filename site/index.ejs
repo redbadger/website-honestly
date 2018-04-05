@@ -29,13 +29,14 @@
     <script type="text/javascript">
         var uaSniffer = new UAParser();
         var browser = uaSniffer.getBrowser();
-        if ( window.location.pathname !== '/<%= process.env.URL_BASENAME || '' %>browser-not-supported/' ) {
-            if ( browser.name === 'IE' && browser.major < 10 ) {
+        if (window.location.pathname !== '/<%= process.env.URL_BASENAME || '' %>browser-not-supported/' ) {
+            if (browser.name === 'IE' && browser.major < 10 ) {
                 window.location.pathname = '/<%= process.env.URL_BASENAME || '' %>browser-not-supported/';
             }
         }
     </script>
     <title><% if (typeof title !== 'undefined') {%><%= title %><% } %></title>
+    <% if (typeof description !== 'undefined') { %><meta name="description" content="<%= description %>"><% } %>
     <% if (typeof meta !== 'undefined') { %><%= meta %><% } %>
     <% if (typeof cssPath !== 'undefined') { %><link rel="stylesheet" href="<%= cssPath %>" type="text/css" charset="utf-8"><% } %>
     <% if (typeof tracking !== 'undefined' && tracking) { %>

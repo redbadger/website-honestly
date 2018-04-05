@@ -38,7 +38,7 @@ const filePathFor = (stateNavigator, key, params) => {
   const route = stateNavigator.getNavigationLink(key, params);
   if (!route) {
     throw new Error(
-      `The route could not be matched for key: ${key}, params: ${JSON.stringify(params)}`,
+      `The route could not be matched for key: ${key}, params: ${JSON.stringify(params)}`
     );
   }
   return { link: route, filePath: routeFilePath(route.substring(1)) };
@@ -88,6 +88,8 @@ export function compileRoutes(state) {
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
 
+    const description = `${route.description || ''}`;
+
     stateNavigator.navigateLink(route.link, 'none');
     const renderStart = Date.now();
     const bodyContent = renderToString(route.component({ stateNavigator, title }, route.props));
@@ -97,6 +99,7 @@ export function compileRoutes(state) {
     const ejsStart = Date.now();
     const body = layoutTemplate({
       title,
+      description,
       tracking,
       bodyContent,
       cssPath,

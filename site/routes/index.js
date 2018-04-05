@@ -132,8 +132,16 @@ const handleContactUsHash = stateNavigator => {
 export default () => {
   const stateNavigator = new StateNavigator(
     routes(),
-    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1)),
+    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1))
   );
   handleContactUsHash(stateNavigator);
+  stateNavigator.onNavigate((oldState, state) => {
+    const page = routeDefinitions.find(obj => obj.key === state.key);
+    if (typeof document !== 'undefined') {
+      const metaDescription = page.description || '';
+      document.getElementsByName('description')[0].setAttribute('content', metaDescription);
+    }
+  });
+
   return stateNavigator;
 };
