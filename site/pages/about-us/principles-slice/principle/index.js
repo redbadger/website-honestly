@@ -1,7 +1,14 @@
+// @flow
 import React from 'react';
 import styles from './style.css';
 
-const Principle = ({ number, title, description }) => (
+type PrincipleProps = {
+  number: string,
+  title: string,
+  description: string,
+};
+
+const Principle = ({ number, title, description }: PrincipleProps) => (
   <li className={styles.container}>
     <div className={styles.leftCol}>
       <div className={styles.number}>{number}</div>
@@ -12,11 +19,5 @@ const Principle = ({ number, title, description }) => (
     </div>
   </li>
 );
-
-Principle.propTypes = {
-  number: React.PropTypes.string,
-  title: React.PropTypes.string,
-  description: React.PropTypes.string,
-};
 
 export default Principle;

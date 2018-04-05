@@ -1,10 +1,17 @@
+// @flow
 import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 
 const cx = classnames.bind(styles);
 
-const Arrow = ({ direction, onClick, currentIndex }) => {
+type ArrowProps = {
+  direction: string,
+  onClick: Function,
+  currentIndex: number,
+};
+
+const Arrow = ({ direction, onClick, currentIndex }: ArrowProps) => {
   const click = () => {
     let newIndex = currentIndex;
     if (direction === 'left' && currentIndex > 0) {
@@ -28,12 +35,6 @@ const Arrow = ({ direction, onClick, currentIndex }) => {
       <div className={styles.innerArrow} />
     </button>
   );
-};
-
-Arrow.propTypes = {
-  direction: React.PropTypes.string.isRequired,
-  onClick: React.PropTypes.func.isRequired,
-  currentIndex: React.PropTypes.number.isRequired,
 };
 
 export default Arrow;

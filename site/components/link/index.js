@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { StateNavigator } from 'navigation';
 import { NavigationLink } from 'navigation-react';
+import PropTypes from 'prop-types';
 
 export type LinkProps = {
   to: string,
@@ -14,7 +15,7 @@ export default class Link extends React.Component<LinkProps> {
   static contextTypes = {
     // The stateNavigator is provided by navigation-react and provides
     // access to the current route.
-    stateNavigator: React.PropTypes.instanceOf(StateNavigator),
+    stateNavigator: PropTypes.instanceOf(StateNavigator),
   };
 
   constructor(props: LinkProps) {

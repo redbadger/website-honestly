@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import styles from './style.css';
@@ -9,7 +10,12 @@ import Image2014 from '../2014/2014.png';
 import Image2015 from '../2015/2015.png';
 import Image2016 from '../2016/2016.png';
 
-const MobileImage = ({ index, onChangeIndex }) => {
+type MobileImageProps = {
+  index: number,
+  onChangeIndex: Function,
+};
+
+const MobileImage = ({ index, onChangeIndex }: MobileImageProps) => {
   return (
     <div className={styles.mobileImage}>
       <SwipeableViews index={index} onChangeIndex={onChangeIndex}>
@@ -37,11 +43,6 @@ const MobileImage = ({ index, onChangeIndex }) => {
       </SwipeableViews>
     </div>
   );
-};
-
-MobileImage.propTypes = {
-  index: React.PropTypes.number.isRequired,
-  onChangeIndex: React.PropTypes.func.isRequired,
 };
 
 export default MobileImage;

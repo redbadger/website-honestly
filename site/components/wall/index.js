@@ -2,8 +2,6 @@
 import * as React from 'react';
 import { Grid, Cell } from '../grid';
 
-const { node, number } = React.PropTypes;
-
 type WallProps = {
   children: React.ChildrenArray<any>,
   cols: number,
@@ -35,8 +33,3 @@ export default function Wall({ children, cols }: WallProps) {
     </Grid>
   );
 }
-
-Wall.propTypes = {
-  children: node.isRequired,
-  cols: number.isRequired,
-};

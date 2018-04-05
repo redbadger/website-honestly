@@ -5,8 +5,12 @@ import { jsdom } from 'jsdom';
 import { DOMParser } from 'xmldom';
 import chaiAsPromised from 'chai-as-promised';
 import chai from 'chai'; // eslint-disable-line import/no-extraneous-dependencies
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 process.env.SECRET_ENCRYPTION_KEY = 'secret';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 global.expect = chai.expect; // Register test tools globally
 chai.use(chaiAsPromised);

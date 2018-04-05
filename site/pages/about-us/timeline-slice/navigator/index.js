@@ -1,9 +1,15 @@
+// @flow
 import React from 'react';
 import styles from './style.css';
 import Item from './item';
 import Arrow from './arrow';
 
-const TimelineNav = ({ currentIndex, onClick }) => {
+type TimelineNavProps = {
+  currentIndex: number,
+  onClick: Function,
+};
+
+const TimelineNav = ({ currentIndex, onClick }: TimelineNavProps) => {
   return (
     <div className={styles.navigator}>
       <div className={styles.container}>
@@ -21,11 +27,6 @@ const TimelineNav = ({ currentIndex, onClick }) => {
       </div>
     </div>
   );
-};
-
-TimelineNav.propTypes = {
-  currentIndex: React.PropTypes.number.isRequired,
-  onClick: React.PropTypes.func.isRequired,
 };
 
 export default TimelineNav;

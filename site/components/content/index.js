@@ -8,8 +8,3 @@ type ContentProps = {
 export default function Content({ children }: ContentProps) {
   return <div>{children}</div>;
 }
-/*
-Content.propTypes = {
-  children: React.PropTypes.node,
-};
-*/
