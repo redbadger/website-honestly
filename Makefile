@@ -176,6 +176,24 @@ dist/static-site:
 	mkdir -p ./dist/static-site
 	@$(PRINT_OK)
 
+scanner: ## Initialize git secrets in the scanner folder
+	git clone git@github.com:redbadger/secrets-scanner.git scanner
+	@echo ""
+	@echo "*************************************************************"
+	@echo "* Follow the instructions below to setup the scanner:"
+	@echo "* https://github.com/redbadger/secrets-scanner/blob/master/README.md"
+	@echo "*************************************************************"
+	@echo ""
+	@read -p "Press any key to continue."
+
+setup-scanner: scanner ## Setup git secrets with stored configuration
+	@cd scanner && git pull
+	@cd scanner && $(MAKE) full-setup
+	@$(PRINT_OK)
+
+scan-secrets: scanner ## Scan for secrets
+	@git secrets --scan
+	@$(PRINT_OK)
 
 .PHONY: \
 	dev \
@@ -196,4 +214,6 @@ dist/static-site:
 	test-watch \
 	sw \
 	update-secrets \
-	edit-secrets
+	edit-secrets \
+	setup-scanner \
+	scan-secrets
