@@ -139,7 +139,8 @@ export default () => {
     const page = routeDefinitions.find(obj => obj.key === state.key);
     if (typeof document !== 'undefined') {
       const metaDescription = page.description || '';
-      document.getElementsByName('description')[0].setAttribute('content', metaDescription);
+      const tag = document.getElementsByName('description')[0];
+      if (tag) tag.setAttribute('content', metaDescription);
     }
   });
 
