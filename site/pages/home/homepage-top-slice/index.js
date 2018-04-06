@@ -17,8 +17,15 @@ const HomepageTopSlice = () => {
         <p className={cx('sloganDescription', 'fadeInUp')}>
           <Link to="whatWeDoPage" className={styles.sloganLink}>
             We are digital transformation experts who{' '}
-            <span className={styles.sloganUnderline}>innovate and deliver</span>
-            <InlineSVG src={arrowSVG} className={styles.arrow} />
+            <span className={styles.sloganUnderline}>
+              innovate and{' '}
+            </span>
+            <span className={styles.lastWord}>
+              <span className={styles.sloganUnderline}>
+                deliver
+              </span>
+              <InlineSVG src={arrowSVG} className={styles.arrow} />
+            </span> 
           </Link>
         </p>
       </div>

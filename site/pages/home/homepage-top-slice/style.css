@@ -19,6 +19,17 @@
   margin-bottom: 30px;
 }
 
+.lastWord {
+  display: inline;
+  white-space: nowrap;
+  position: relative;
+}
+
+.lastWord i {
+  width: 22px;
+  display: inline-block;
+}
+
 .sloganLink {
   color:badgerBlack;
   border-bottom: 0;
@@ -30,6 +41,10 @@
 
 .sloganLink:hover .sloganUnderline {
   border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.sloganLink:hover .sloganUnderline i {
+  border-bottom:0;
 }
 
 .sloganDescription {
