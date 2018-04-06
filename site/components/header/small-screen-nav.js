@@ -70,11 +70,11 @@ export default class SmallScreenNav extends React.Component<any, State> {
 
     return (
       <div className={styles.smallScreenNavComponent}>
-        <div className={styles.triggerContainer}>
-          <label htmlFor="burger" className={styles.triggerLabel} hidden={navOpen}>
+        {!navOpen && <div className={styles.triggerContainer}>
+          <label htmlFor="burger" className={styles.triggerLabel}>
             MENU
           </label>
-        </div>
+        </div>}
         <input
           type="checkbox"
           className={styles.trigger}
@@ -92,9 +92,7 @@ export default class SmallScreenNav extends React.Component<any, State> {
             }}
             className={styles.smallScreenNavWrapper}
           >
-            <label htmlFor="burger" className={styles.menuCloseButton}>
-              Close
-            </label>
+            {navOpen && <label htmlFor="burger" className={styles.menuCloseButton}>Close</label>}
 
             <nav className={styles.smallScreenNavContainer} role="navigation">
               <ul role="listbox" className={styles.smallScreenNav}>

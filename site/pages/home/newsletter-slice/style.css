@@ -47,7 +47,8 @@
 .subTitle {
   composes: fontS from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
-  margin-bottom: 40px;
+  display: block;
+  margin: 15px 0 40px;
 }
 
 .form {
@@ -115,7 +116,7 @@
 
   .subTitle {
     max-width: 585px;
-    margin: 0 auto 60px;
+    margin: 15px auto 60px;
   }
 
   .form {
