@@ -45,6 +45,10 @@
 }
 
 @media largeScreen {
+  .arrow svg {
+    height:20px;
+  }
+
   .homepageTopSlice {
     text-align: center;
     padding: 160px 0 230px 0;
