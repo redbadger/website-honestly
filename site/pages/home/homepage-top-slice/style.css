@@ -1,4 +1,4 @@
-@value badgerRedOnWhite, badgerWhite, badgerBlack from "../../../css/_colors.css";
+@value badgerRed, badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .arrow svg {
@@ -40,7 +40,7 @@
 }
 
 .sloganLink:hover .sloganUnderline {
-  border-bottom: 2px solid badgerRedOnWhite;
+  border-bottom: 2px solid badgerRed;
 }
 
 .sloganLink:hover .sloganUnderline i {
