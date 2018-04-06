@@ -1,5 +1,10 @@
-@value badgerWhite, badgerBlack from "../../../css/_colors.css";
+@value badgerRedOnWhite, badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.arrow svg {
+  height: 15px;
+  margin: 0 10px;
+}
 
 .homepageTopSlice {
   padding: 50px 20px 100px 20px;
@@ -12,6 +17,19 @@
   composes: fontXL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   margin-bottom: 30px;
+}
+
+.sloganLink {
+  color:badgerBlack;
+  border-bottom: 0;
+}
+
+.sloganLink:hover {
+  border-bottom:0;
+}
+
+.sloganLink:hover .sloganUnderline {
+  border-bottom: 2px solid badgerRedOnWhite;
 }
 
 .sloganDescription {
