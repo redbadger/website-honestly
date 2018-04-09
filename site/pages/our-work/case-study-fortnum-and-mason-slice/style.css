@@ -15,18 +15,18 @@
   padding-bottom: 20px;
 }
 
-.imageLink {
+.imageWrapper {
   display: flex;
   flex:1;
   justify-content: center;
   align-items: flex-end;
 }
 
-_:-ms-fullscreen, :root .imageLink {
+_:-ms-fullscreen, :root .imageWrapper {
   min-height: 20vh;
 }
 
-.imageLink img {
+.imageWrapper img {
   min-width: 260px;
   width: 70%;
 }
@@ -102,13 +102,13 @@ _:-ms-fullscreen, :root .imageLink {
     position: relative;
   }
 
-  .imageLink {
+  .imageWrapper {
     position: absolute;
     right: 0;
     bottom: 40px;
   }
 
-  .imageLink img {
+  .imageWrapper img {
     width: 300px;
   }
 
@@ -145,7 +145,7 @@ _:-ms-fullscreen, :root .imageLink {
 }
 
 @media screen and (min-width: 800px) {
-  .imageLink img {
+  .imageWrapper img {
     width: 400px;
   }
 }
@@ -159,13 +159,13 @@ _:-ms-fullscreen, :root .imageLink {
     display: none;
   }
 
-  .imageLink {
+  .imageWrapper {
     position: absolute;
     right: 0;
     top: 50px;
   }
 
-  .imageLink img {
+  .imageWrapper img {
     width: 800px;
   }
 

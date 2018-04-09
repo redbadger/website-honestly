@@ -7,9 +7,9 @@ import ftProjectImage from './images/meeting.png';
 
 export default () => (
   <div className={styles.caseStudyContainer}>
-    <div className={styles.caseStudyContent}>
+    <Link to="financialTimesCaseStudy" className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
-        <Link to="financialTimesCaseStudy">
+        <div>
           <img src={ftLogo} className={styles.clientLogo} alt="Financial Times logo" />
           <h2 className={styles.caseStudyTextContainerHeader}>Lasting change for a media giant</h2>
           <p className={styles.description}>
@@ -20,11 +20,11 @@ export default () => (
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
           </div>
-        </Link>
+        </div>
       </div>
-      <Link to="financialTimesCaseStudy" className={styles.imageLink}>
+      <div className={styles.imageWrapper}>
         <img src={ftProjectImage} alt="Financial Times project snapshot" />
-      </Link>
-    </div>
+      </div>
+    </Link>
   </div>
 );

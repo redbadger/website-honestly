@@ -8,9 +8,9 @@ import fmProjectMediumSnapshot from './images/fortnum-medium.png';
 
 export default () => (
   <div className={styles.caseStudyContainer}>
-    <div className={styles.caseStudyContent}>
+    <Link to="fortnumAndMasonCaseStudy" className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
-        <Link to="fortnumAndMasonCaseStudy">
+        <div>
           <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
           <h2 className={styles.caseStudyTextContainerHeader}>
             Fortnum & Mason’s new, elegant website increases revenue and conversion rates
@@ -22,20 +22,20 @@ export default () => (
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
           </div>
-        </Link>
+        </div>
       </div>
-      <Link to="fortnumAndMasonCaseStudy" className={styles.imageLink}>
+      <div className={styles.imageWrapper}>
         <img
           className={styles.projectBigSmallSnapshot}
           src={fmProjectSnapshot}
-          alt="Fortnum and Mason project snapshot"
+          alt=""
         />
         <img
           className={styles.projectMediumSnapshot}
           src={fmProjectMediumSnapshot}
-          alt="Fortnum and Mason project snapshot"
+          alt=""
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   </div>
 );
