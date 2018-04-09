@@ -15,7 +15,7 @@ export default function Principles() {
   return (
     <div className={styles.principles}>
       <div className={styles.container}>
-        <div className={styles.header}>Our principles.</div>
+        <h1 className={styles.header}>Our principles.</h1>
         <div className={styles.thisIsWhatWeBelieveIn}>
           This is what we believe – and what the founders say after a couple of pints
         </div>
