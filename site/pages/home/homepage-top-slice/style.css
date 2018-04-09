@@ -25,6 +25,7 @@
 
 .lastWord i {
   width: 22px;
+  display: inline-block;
 }
 
 .sloganLink {
