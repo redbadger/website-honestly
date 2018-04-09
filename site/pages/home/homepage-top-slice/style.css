@@ -20,23 +20,20 @@
 }
 
 .lastWord {
-  display: inline;
   white-space: nowrap;
-  position: relative;
 }
 
 .lastWord i {
   width: 22px;
-  display: inline-block;
 }
 
 .sloganLink {
-  color:badgerBlack;
+  color: badgerBlack;
   border-bottom: 0;
 }
 
 .sloganLink:hover {
-  border-bottom:0;
+  border-bottom: 0;
 }
 
 .sloganLink:hover .sloganUnderline {
@@ -44,7 +41,7 @@
 }
 
 .sloganLink:hover .sloganUnderline i {
-  border-bottom:0;
+  border-bottom: 0;
 }
 
 .sloganDescription {
@@ -61,7 +58,7 @@
 
 @media largeScreen {
   .arrow svg {
-    height:20px;
+    height: 20px;
   }
 
   .homepageTopSlice {
