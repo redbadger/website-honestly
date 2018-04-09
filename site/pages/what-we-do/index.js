@@ -28,13 +28,9 @@ function CaseStudies() {
             <img alt="" src={fortnumJpg} />
           </div>
           <div className={styles.caseStudyTextContainer}>
-            <div className={styles.caseStudyCompany}>
-              Fortnum & Mason
-            </div>
+            <div className={styles.caseStudyCompany}>Fortnum & Mason</div>
             <div className={styles.caseStudyTitleContainer}>
-              <h3 className={styles.caseStudyTitle}>
-                Elegant e-commerce in eight months
-              </h3>
+              <h3 className={styles.caseStudyTitle}>Elegant e-commerce in eight months</h3>
             </div>
             <p className={styles.caseStudyDescription}>
               Improving online and mobile conversion rates on the new fortnumandmason.com site with
@@ -49,15 +45,11 @@ function CaseStudies() {
             <img alt="" src={bankGif} />
           </div>
           <div className={styles.caseStudyTextContainer}>
-            <div
-              className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}
-            >
+            <div className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}>
               Financial services
             </div>
             <div className={styles.caseStudyTitleContainer}>
-              <h3 className={styles.caseStudyTitle}>
-                Digital transformation in retail banking
-              </h3>
+              <h3 className={styles.caseStudyTitle}>Digital transformation in retail banking</h3>
             </div>
             <div className={styles.caseStudyDescription}>
               Discover how we delivered quality digital products to customers quickly, built
@@ -69,17 +61,13 @@ function CaseStudies() {
       </div>
       <div className={styles.caseStudyContainer}>
         <Link className={styles.caseStudyContent} to="financialTimesCaseStudy">
-          <div className={styles.imageLink} >
+          <div className={styles.imageLink}>
             <img alt="" src={financialTimesJpg} />
           </div>
           <div className={styles.caseStudyTextContainer}>
-            <div className={styles.caseStudyCompany}>
-              Financial Times
-            </div>
+            <div className={styles.caseStudyCompany}>Financial Times</div>
             <div className={styles.caseStudyTitleContainer}>
-              <h3 className={styles.caseStudyTitle}>
-                Lasting change for a media giant
-              </h3>
+              <h3 className={styles.caseStudyTitle}>Lasting change for a media giant</h3>
             </div>
             <div className={styles.caseStudyDescription}>
               We helped integrate Lean UX and Agile Design processes across the organisation,
