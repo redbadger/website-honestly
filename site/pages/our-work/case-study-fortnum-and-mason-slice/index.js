@@ -25,16 +25,8 @@ export default () => (
         </div>
       </div>
       <div className={styles.imageWrapper}>
-        <img
-          className={styles.projectBigSmallSnapshot}
-          src={fmProjectSnapshot}
-          alt=""
-        />
-        <img
-          className={styles.projectMediumSnapshot}
-          src={fmProjectMediumSnapshot}
-          alt=""
-        />
+        <img className={styles.projectBigSmallSnapshot} src={fmProjectSnapshot} alt="" />
+        <img className={styles.projectMediumSnapshot} src={fmProjectMediumSnapshot} alt="" />
       </div>
     </Link>
   </div>
