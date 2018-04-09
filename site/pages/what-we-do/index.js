@@ -24,7 +24,7 @@ function CaseStudies() {
       </div>
       <div className={styles.caseStudyContainer}>
         <Link className={styles.caseStudyContent} to="fortnumAndMasonCaseStudy">
-          <div className={styles.imageLink}>
+          <div className={styles.imageWrapper}>
             <img alt="" src={fortnumJpg} />
           </div>
           <div className={styles.caseStudyTextContainer}>
@@ -41,7 +41,7 @@ function CaseStudies() {
       </div>
       <div className={cx('caseStudyContainer', 'inverse')}>
         <Link className={styles.caseStudyContent} to="bankCaseStudy">
-          <div className={cx('imageLink', 'bank')}>
+          <div className={cx('imageWrapper', 'bank')}>
             <img alt="" src={bankGif} />
           </div>
           <div className={styles.caseStudyTextContainer}>
@@ -61,7 +61,7 @@ function CaseStudies() {
       </div>
       <div className={styles.caseStudyContainer}>
         <Link className={styles.caseStudyContent} to="financialTimesCaseStudy">
-          <div className={styles.imageLink}>
+          <div className={styles.imageWrapper}>
             <img alt="" src={financialTimesJpg} />
           </div>
           <div className={styles.caseStudyTextContainer}>
