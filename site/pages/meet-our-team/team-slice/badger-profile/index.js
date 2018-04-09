@@ -35,7 +35,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
           badger.loaded ? (
             <img
               src={badger.primaryImageUrl}
-              alt={fullName}
+              alt=""
               className={styles.badgerImage}
               aria-hidden
             />
