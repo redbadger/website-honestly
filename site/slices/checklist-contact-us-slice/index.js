@@ -20,23 +20,23 @@ type State = {
 };
 
 type Props = {
-  listItems: Array<string>,
-  title: string,
   cta: string,
   contactEmailAddress: string,
   isHovered: boolean,
-  onHover: Function,
-  onBlur: Function,
+  listItems: Array<string>,
+  onHover: () => void,
+  onBlur: () => void,
+  title: string,
 };
 
-const Checklist = ({ 
-  cta, 
-  contactEmailAddress, 
-  isHovered, 
-  listItems, 
-  onHover, 
-  onBlur, 
-  title, 
+const Checklist = ({
+  cta,
+  contactEmailAddress,
+  isHovered,
+  listItems,
+  onHover,
+  onBlur,
+  title,
 }: Props) => (
   <section className={styles.contactUsContainer} id="contactUs">
     <h2 className={styles.header}>{title}</h2>
@@ -65,7 +65,7 @@ const Checklist = ({
   </section>
 );
 
-const genericChecklistText = {
+Checklist.defaultProps = {
   listItems: [
     'Create & validate new ideas',
     'Deliver great quality products & services, fast',
@@ -77,23 +77,11 @@ const genericChecklistText = {
   title: 'We can help you',
   cta: 'Send an email',
   contactEmailAddress: 'hello@red-badger.com',
-};
+}
 
-
-const techListItems = [
-  'Navigate the open source revolution',
-  'Choose the right tech for the job',
-  'Adopt meticulous engineering practices',
-  'Enable continuous deployment',
-  'Increase speed to market',
-  'Create value for your customers',
-];
-
-const techChecklistText = { ...genericChecklistText, listItems: techListItems}
-
-type TestProps = {};
-function withState(WrappedComponent, text = genericChecklistText) {
-  return class extends Component<TestProps, State> {
+type WithStateProps = {};
+function withState(WrappedComponent, text) {
+  return class extends Component<WithStateProps, State> {
     state = {
       isHovered: false,
     };
@@ -124,7 +112,16 @@ function withState(WrappedComponent, text = genericChecklistText) {
 }
 
 const GenericChecklist = withState(Checklist);
-const TechChecklist = withState(Checklist, techChecklistText);
+
+const techListItems = [
+  'Navigate the open source revolution',
+  'Choose the right tech for the job',
+  'Adopt meticulous engineering practices',
+  'Enable continuous deployment',
+  'Increase speed to market',
+  'Create value for your customers',
+];
+const TechChecklist = withState(Checklist, { listItems: techListItems });
 
 export default GenericChecklist;
 export { TechChecklist };
