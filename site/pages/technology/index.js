@@ -8,6 +8,7 @@ import styles from './style.css';
 
 import BlogSlice from './blog-slice';
 import WebinarSignupSlice from './webinar-signup-slice';
+import { TechChecklist } from '../../slices/checklist-contact-us-slice';
 import HubspotButtons from './hubspot-buttons';
 
 import techRoundTableImage from './images/techroundtable.png';
@@ -67,18 +68,6 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing trends'} altStyle />
       </div>
     </section>
-    <section className={styles.social}>
-      <div className={styles.webinarInner}>
-        <h2 className={styles.webinarText}>{'Say hello:'}</h2>
-        <div
-          className={`${styles.hubspotBtn} ${styles.slackBtnWrapper}`}
-          dangerouslySetInnerHTML={HubspotButtons.slack}
-        />
-        <div
-          className={`${styles.hubspotBtn} ${styles.meetupBtnWrapper}`}
-          dangerouslySetInnerHTML={HubspotButtons.meetup}
-        />
-      </div>
-    </section>
+    <TechChecklist />
   </div>
 );
