@@ -17,7 +17,7 @@ const EventsTimelineTitle = ({ timeline }: EventsTimelineTitleProps) => {
     case 'today':
       return <h2 className={styles.eventsTimelineTitle}>Today</h2>;
     default:
-      return <noscript />;
+      return null;
   }
 };
 
