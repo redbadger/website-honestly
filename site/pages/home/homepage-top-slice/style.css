@@ -1,5 +1,10 @@
-@value badgerWhite, badgerBlack from "../../../css/_colors.css";
+@value badgerRed, badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.arrow svg {
+  height: 15px;
+  margin: 0 10px;
+}
 
 .homepageTopSlice {
   padding: 50px 20px 100px 20px;
@@ -12,6 +17,32 @@
   composes: fontXL from "../../../css/typography/_fonts.css";
   composes: serif from "../../../css/typography/_fonts.css";
   margin-bottom: 30px;
+}
+
+.lastWord {
+  white-space: nowrap;
+}
+
+.lastWord i {
+  width: 22px;
+  display: inline-block;
+}
+
+.sloganLink {
+  color: badgerBlack;
+  border-bottom: 0;
+}
+
+.sloganLink:hover {
+  border-bottom: 0;
+}
+
+.sloganLink:hover .sloganUnderline {
+  border-bottom: 2px solid badgerRed;
+}
+
+.sloganLink:hover .sloganUnderline i {
+  border-bottom: 0;
 }
 
 .sloganDescription {
@@ -27,6 +58,10 @@
 }
 
 @media largeScreen {
+  .arrow svg {
+    height: 20px;
+  }
+
   .homepageTopSlice {
     text-align: center;
     padding: 160px 0 230px 0;

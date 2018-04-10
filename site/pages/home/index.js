@@ -3,8 +3,8 @@ import React from 'react';
 
 import TopSlice from './homepage-top-slice';
 import CaseStudyOverview from '../../components/case-study-overview';
-import Brie from './brie-slice';
 import TechSlice from '../../slices/tech-slice';
+import AwardsSlice from '../../slices/awards-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
 import NewsLetter from './newsletter-slice';
 import Social from '../../components/social';
@@ -23,9 +23,9 @@ export default function HomePage() {
       <Social {...social} />
       <TopSlice />
       <CaseStudyOverview />
-      <Brie />
-      <TechSlice />
       <ChecklistContactUs />
+      <TechSlice />
+      <AwardsSlice />
       <NewsLetter />
     </div>
   );

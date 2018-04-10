@@ -1,4 +1,5 @@
 .awardsContainer {
+  composes: dividerWhite from "../../css/_divider.css";
   display: flex;
   background: linear-gradient(to bottom, #F8F8F8, #F8F8F8 34.2%, #ccc 34.4%, #ccc);
 }
