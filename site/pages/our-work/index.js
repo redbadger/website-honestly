@@ -35,7 +35,7 @@ export default function CaseStudies() {
       <div className={styles.headerContainer}>
         <div>
           <h1 className={styles.mainHeader}>The proof is in the pudding.</h1>
-          <p className={styles.mainSlogan}>Read some of our case studies.</p>
+          <h2 className={styles.mainSlogan}>Read some of our case studies.</h2>
         </div>
       </div>
       <div className={styles.caseStudyTopSection}>

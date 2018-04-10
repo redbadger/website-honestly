@@ -36,7 +36,7 @@ const EventsList = ({ events, timeline }: EventsListProps) => {
     );
   }
 
-  return <noscript />;
+  return null;
 };
 
 export default EventsList;

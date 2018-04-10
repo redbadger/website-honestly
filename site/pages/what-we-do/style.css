@@ -53,7 +53,7 @@ a {
   color: badgerRedOnBlack;
 }
 
-.imageLink {
+.imageWrapper {
   font-size: 0;
 }
 
@@ -128,7 +128,7 @@ a {
     font-size: 24px;
   }
 
-  .imageLink {
+  .imageWrapper {
     display: flex;
     flex:1;
     align-items: flex-end;

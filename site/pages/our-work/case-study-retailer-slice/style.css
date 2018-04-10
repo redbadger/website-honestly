@@ -17,14 +17,14 @@
   padding-bottom: 20px;
 }
 
-.imageLink {
+.imageWrapper {
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
 }
 
-_:-ms-fullscreen, :root .imageLink {
+_:-ms-fullscreen, :root .imageWrapper {
   min-height: 20vh;
 }
 
@@ -35,7 +35,7 @@ _:-ms-fullscreen, :root .imageLink {
   position: relative;
 }
 
-.imageLink img{
+.imageWrapper img{
   display: block;
   width: 100%;
   margin-top: 15px;
@@ -118,7 +118,7 @@ _:-ms-fullscreen, :root .imageLink {
     padding: 0;
   }
 
-  .imageLink {
+  .imageWrapper {
     flex-basis: 50%;
   }
 

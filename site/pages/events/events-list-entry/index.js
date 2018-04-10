@@ -72,7 +72,8 @@ const EventsListEntry = ({
               <EventMeta internalLinks={internalLinks} externalLinks={externalLinks} tags={tags} />
             </Cell>
             <Cell size={4} key="event_picture" breakOn="mobileS" hideOn="mobileS">
-              <Link to="event" navigationData={eventLink}>
+              {/* using negative tabindex here as there is the exact same link on the heading, making screen-readers go thourgh both */}
+              <Link to="event" navigationData={eventLink} tabindex="-1">
                 <EventImage imgPath={featureImageFilename} imgAlt={title} href={eventLink} />
               </Link>
             </Cell>

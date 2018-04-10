@@ -5,11 +5,11 @@ const HeaderContainer = () => (
   <div className={styles.headerContainer}>
     <div className={styles.headings}>
       <h1 className={styles.h1}>Join Us</h1>
-      <h3 className={styles.h3}>
+      <h2 className={styles.h2}>
         <span>
           Are we what you’re looking <span className={styles.noWrap}>for?*</span>
         </span>
-      </h3>
+      </h2>
     </div>
   </div>
 );
