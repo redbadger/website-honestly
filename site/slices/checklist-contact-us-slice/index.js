@@ -1,7 +1,6 @@
 // @flow
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
-import type { ComponentType } from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 
@@ -17,33 +16,37 @@ const trackAnalytics = title => () =>
   });
 
 type State = {
- isHovered: boolean,
-}
-
-type ContainerProps = {
   isHovered: boolean,
-  onHover: Function,
-  onBlur: Function,
-}
+};
 
-type ChecklistType = ({
+type Props = {
   listItems: Array<string>,
   title: string,
   cta: string,
-  contactEmailAddress: string
-}) => ComponentType<ContainerProps>;
+  contactEmailAddress: string,
+  isHovered: boolean,
+  onHover: Function,
+  onBlur: Function,
+};
 
-const Checklist: ChecklistType = ({ 
-  listItems, 
-  title, 
+const Checklist = ({ 
   cta, 
-  contactEmailAddress,
-}) => ({isHovered, onHover, onBlur}: ContainerProps)=> (
+  contactEmailAddress, 
+  isHovered, 
+  listItems, 
+  onHover, 
+  onBlur, 
+  title, 
+}: Props) => (
   <section className={styles.contactUsContainer} id="contactUs">
     <h2 className={styles.header}>{title}</h2>
     <div className={styles.contentContainer}>
       <ul className={styles.list}>
-        {listItems.map((item, index) => <li key={index} className={styles.item}>{item}</li>)}
+        {listItems.map((item, index) => (
+          <li key={index} className={styles.item}>
+            {item}
+          </li>
+        ))}
       </ul>
       <div className={cx(styles.imgContainer, isHovered ? 'isHovered' : '')} />
     </div>
@@ -55,12 +58,12 @@ const Checklist: ChecklistType = ({
         onMouseLeave={onBlur}
         onClick={trackAnalytics('ContactUsForm - ButtonClicked')}
       >
-       {cta}
+        {cta}
       </a>
       <span className={styles.talkToUs}>{contactEmailAddress}</span>
     </div>
   </section>
-)
+);
 
 const genericChecklistText = {
   listItems: [
@@ -74,33 +77,54 @@ const genericChecklistText = {
   title: 'We can help you',
   cta: 'Send an email',
   contactEmailAddress: 'hello@red-badger.com',
-}
+};
 
-const GenericChecklist = Checklist({...genericChecklistText}) // eslint-disable-line new-cap
-// const TechPageChecklist = Checklist({...techPageChecklistText}) // eslint-disable-line new-cap
 
-type TestProps = {}
-class ChecklistContainer extends Component<TestProps, State> {
-  state = {
-    isHovered: false,
-  };
+const techListItems = [
+  'Navigate the open source revolution',
+  'Choose the right tech for the job',
+  'Adopt meticulous engineering practices',
+  'Enable continuous deployment',
+  'Increase speed to market',
+  'Create value for your customers',
+];
 
-  onHover = () => {
-    this.setState({
-      isHovered: true,
-    });
-  };
+const techChecklistText = { ...genericChecklistText, listItems: techListItems}
 
-  onBlur = () => {
-    this.setState({
+type TestProps = {};
+function withState(WrappedComponent, text = genericChecklistText) {
+  return class extends Component<TestProps, State> {
+    state = {
       isHovered: false,
-    });
-  };
+    };
 
-  render() {
-    return <GenericChecklist isHovered={this.state.isHovered} onHover={this.onHover} onBlur={this.onBlur} />
-  }
+    onHover = () => {
+      this.setState({
+        isHovered: true,
+      });
+    };
+
+    onBlur = () => {
+      this.setState({
+        isHovered: false,
+      });
+    };
+
+    render() {
+      return (
+        <WrappedComponent
+          isHovered={this.state.isHovered}
+          onHover={this.onHover}
+          onBlur={this.onBlur}
+          {...text}
+        />
+      );
+    }
+  };
 }
 
-export default ChecklistContainer;
+const GenericChecklist = withState(Checklist);
+const TechChecklist = withState(Checklist, techChecklistText);
 
+export default GenericChecklist;
+export { TechChecklist };

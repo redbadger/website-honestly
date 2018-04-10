@@ -18,6 +18,7 @@ export default function HomePage() {
     metaImage,
     url: 'https://red-badger.com',
   };
+
   return (
     <div>
       <Social {...social} />
