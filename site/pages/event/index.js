@@ -45,7 +45,7 @@ export default function Event({ event }: EventProps) {
               startDateTime={event.startDateTime}
               endDateTime={setEndDate('today', event.startDateTime, event.endDateTime)}
             />
-            <h2 className={styles.eventTitle}>{event.title}</h2>
+            <h1 className={styles.eventTitle}>{event.title}</h1>
             <div className={styles.twoColumn}>
               <div className={styles.event}>
                 <div className={styles.eventDescription}>{event.strapline}</div>
