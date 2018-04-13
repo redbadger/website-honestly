@@ -199,10 +199,17 @@
           margin: 0 20px 0 0;
         }
 
+        .js-app {	
+          padding-top: 80px;	
+        }
       }
     </style>
   </head>
-  <body>
+  <body class="accessibilityDay" onload="initialiseAccessibilityBar()">
+    <div class="accessibilityBar">	
+      <button id="accessibilityDayButton" onClick="toggleGreyscale()">Switch back to colour</button>	
+      <p id="accessibilityDayDescription">What’s black and white and ‘read’ all over? Us! We’re greyscale to promote Global Accessibility Awareness Day.</p>	
+    </div>
     <div class="js-app">
       <% if (typeof bodyContent !== 'undefined') { %><%= bodyContent %><% } %>
     </div>
