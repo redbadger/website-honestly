@@ -20,7 +20,7 @@ type EventLinksListProps = {
 };
 
 const EventLinksList = ({ linkList, listType }: EventLinksListProps) => {
-  if (!linkList || linkList.length === 0) return <noscript />;
+  if (!linkList || linkList.length === 0) return null;
   return (
     <div
       className={classNames({

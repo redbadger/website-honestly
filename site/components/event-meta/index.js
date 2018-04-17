@@ -23,7 +23,7 @@ export const linksSection = ({ externalLinks, internalLinks }: linksSectionProps
       </div>
     );
   }
-  return <noscript />;
+  return null;
 };
 
 const EventMeta = ({ internalLinks, externalLinks }: EventMetaProps) => {

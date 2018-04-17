@@ -6,9 +6,9 @@ import retailerImage from './images/retailer.jpg';
 
 export default () => (
   <div className={styles.caseStudyContainer}>
-    <div className={styles.caseStudyContent}>
+    <Link className={styles.caseStudyContent} to="retailerCaseStudy">
       <div className={styles.caseStudyTextContainer}>
-        <Link to="retailerCaseStudy">
+        <div>
           <h2 className={styles.caseStudyTextContainerHeader}>
             Next generation platform for retail giant
           </h2>
@@ -19,9 +19,9 @@ export default () => (
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
           </div>
-        </Link>
+        </div>
       </div>
-      <Link to="retailerCaseStudy" className={styles.imageLink}>
+      <div className={styles.imageWrapper}>
         <div className={styles.imageContainer}>
           <img src={retailerImage} alt="Retail giant project snapshot" />
           <div className={styles.orders}>
@@ -33,7 +33,7 @@ export default () => (
             <div className={styles.imageText}>Uplift in visits</div>
           </div>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   </div>
 );

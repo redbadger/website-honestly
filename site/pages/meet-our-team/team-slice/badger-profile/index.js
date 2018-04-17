@@ -33,12 +33,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             https://github.com/prettier/prettier/issues/1271
           */
           badger.loaded ? (
-            <img
-              src={badger.primaryImageUrl}
-              alt={fullName}
-              className={styles.badgerImage}
-              aria-hidden
-            />
+            <img src={badger.primaryImageUrl} alt="" className={styles.badgerImage} aria-hidden />
           ) : (
             <div className={styles.placeholder} />
           )

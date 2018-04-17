@@ -46,8 +46,10 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
   render() {
     return (
       <section className={styles.newsletter}>
-        <h1 className={styles.title}>Sign up to Badger News to hear more from us</h1>
-        <p className={styles.subTitle}>(every 6 weeks or so)</p>
+        <h2 className={styles.title}>
+          Sign up to Badger News to hear more from us{' '}
+          <span className={styles.subTitle}>(every 6 weeks or so)</span>
+        </h2>
 
         <form className={styles.form}>
           <div className={styles.formBlock}>

@@ -32,7 +32,7 @@ const BlogEntry = ({ blogPost, altStyle }: { blogPost: BlogPost, altStyle?: bool
         </div>
         <div className={styles.linkEntry}>
           <div className={linkTitleStyle}>
-            <p>{blogPost.title}</p>
+            <h3>{blogPost.title}</h3>
           </div>
           {/* eslint-disable react/no-danger */}
           <p className={styles.excerpt} dangerouslySetInnerHTML={{ __html: blogPost.excerpt }} />

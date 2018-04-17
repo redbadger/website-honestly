@@ -17,18 +17,18 @@
   padding-bottom: 20px;
 }
 
-.imageLink {
+.imageWrapper {
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
 }
 
-_:-ms-fullscreen, :root .imageLink {
+_:-ms-fullscreen, :root .imageWrapper {
   min-height: 20vh;
 }
 
-.imageLink img {
+.imageWrapper img {
   min-width: 260px;
   width: 60%;
 }
@@ -88,11 +88,11 @@ _:-ms-fullscreen, :root .imageLink {
     padding: 0;
   }
 
-  .imageLink {
+  .imageWrapper {
     flex-basis: 50%;
   }
 
-  .imageLink img {
+  .imageWrapper img {
     min-width: 400px;
   }
 

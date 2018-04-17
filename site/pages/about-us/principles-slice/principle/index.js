@@ -14,7 +14,7 @@ const Principle = ({ number, title, description }: PrincipleProps) => (
       <div className={styles.number}>{number}</div>
     </div>
     <div className={styles.rightCol}>
-      <h3 className={styles.title}>{title}</h3>
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.description}>{description}</div>
     </div>
   </li>

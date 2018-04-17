@@ -7,9 +7,9 @@ import camdenProjectScreenshot from './images/camden.png';
 
 export default () => (
   <div className={styles.caseStudyContainer}>
-    <div className={styles.caseStudyContent}>
+    <Link to="camdenMarketCaseStudy" className={styles.caseStudyContent}>
       <div className={styles.caseStudyTextContainer}>
-        <Link to="camdenMarketCaseStudy">
+        <div>
           <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
           <h2 className={styles.caseStudyTextContainerHeader}>
             Taking steps towards a digital future
@@ -22,11 +22,11 @@ export default () => (
           <div className={styles.links}>
             <p className={styles.readmore}>Read more</p>
           </div>
-        </Link>
+        </div>
       </div>
-      <Link to="camdenMarketCaseStudy" className={styles.imageLink}>
+      <div className={styles.imageWrapper}>
         <img src={camdenProjectScreenshot} alt="Camden project screenshot" />
-      </Link>
-    </div>
+      </div>
+    </Link>
   </div>
 );

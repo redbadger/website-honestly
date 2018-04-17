@@ -26,7 +26,7 @@ export default function Job({ job }: JobProps) {
         <Container>
           <Grid>
             <Cell size={8}>
-              <h2 className={styles.jobTitle}>{job.title}</h2>
+              <h1 className={styles.jobTitle}>{job.title}</h1>
               <RawHtml>{job.fullDescription}</RawHtml>
               <Hr color="grey" />
               <Link className={styles.linkBack} to="joinUs">
