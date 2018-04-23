@@ -12,18 +12,20 @@ type ArrowProps = {
 };
 
 const Arrow = ({ direction, onClick, currentIndex }: ArrowProps) => {
+  const LAST_INDEX = 7;
   const click = () => {
     let newIndex = currentIndex;
     if (direction === 'left' && currentIndex > 0) {
       newIndex = currentIndex - 1;
-    } else if (direction === 'right' && currentIndex < 6) {
+    } else if (direction === 'right' && currentIndex < LAST_INDEX) {
       newIndex = currentIndex + 1;
     }
     onClick(newIndex);
   };
 
   const isClickable =
-    (direction === 'left' && currentIndex > 0) || (direction === 'right' && currentIndex < 6);
+    (direction === 'left' && currentIndex > 0) ||
+    (direction === 'right' && currentIndex < LAST_INDEX);
 
   return (
     <button

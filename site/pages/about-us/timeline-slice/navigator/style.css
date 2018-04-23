@@ -27,24 +27,26 @@
   left: 0%;
 }
 .timeline button:nth-child(2){
-  left: 16%;
+  left: 14%;
 }
 .timeline button:nth-child(3){
-  left: 33%;
+  left: 29%;
 }
 .timeline button:nth-child(4){
-  left: 49%;
+  left: 43%;
 }
 .timeline button:nth-child(5){
-  left: 66%;
+  left: 57%;
 }
 .timeline button:nth-child(6){
-  left: 82%;
+  left: 71%;
 }
 .timeline button:nth-child(7){
+  left: 85%;
+}
+.timeline button:nth-child(8){
   left: 100%;
 }
-
 @media mediumScreen{
   .container{
     width: 233px;
