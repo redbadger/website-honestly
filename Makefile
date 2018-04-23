@@ -119,7 +119,7 @@ keyrings: ## Initialize blackbox secrets in the keyrings folder (required to get
 	@read -p "Press any key to continue."
 	@$(PRINT_OK)
 
-update-secrets: keyrings ## Update .env file to latest versionea
+update-secrets: keyrings ## Update .env file to latest version
 	cd keyrings \
 	&& git pull
 	blackbox_edit_start keyrings/files/.env

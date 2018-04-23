@@ -9,6 +9,7 @@ import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 process.env.SECRET_ENCRYPTION_KEY = 'secret';
+process.env.HUBSPOT_LIST_SERVICE_URL = 'https://example.com';
 
 Enzyme.configure({ adapter: new Adapter() });
 

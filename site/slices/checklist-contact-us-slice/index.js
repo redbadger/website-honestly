@@ -77,7 +77,7 @@ Checklist.defaultProps = {
   title: 'We can help you',
   cta: 'Send an email',
   contactEmailAddress: 'hello@red-badger.com',
-}
+};
 
 type WithStateProps = {};
 function withState(WrappedComponent, text) {
