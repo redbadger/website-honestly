@@ -80,7 +80,7 @@ const AfterSignUpForm = ({
         />
       </div>
       <div>
-        <label htmlFor="job" className={styles.formLabel}>
+        <label htmlFor="role" className={styles.formLabel}>
           Job role
         </label>
         <input
