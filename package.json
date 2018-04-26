@@ -119,7 +119,7 @@
     "pre-git": {
       "pre-commit": [
         "make scan-secrets",
-        "make prettier",
+        "make prettier-fail",
         "make lint",
         "make test"
       ]
