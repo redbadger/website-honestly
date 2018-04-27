@@ -5,6 +5,7 @@ LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
 WEBPACK=yarn webpack --bail
 MOCHA=yarn mocha
 PRETTIER=yarn prettier --write --print-width 100 --single-quote --trailing-comma all --parser babylon '{!(dist)/,!(dist)/**/}*.js'
+PRETTIER_FAIL=yarn prettier --print-width 100 --single-quote --trailing-comma all --list-different --parser babylon '{!(dist)/,!(dist)/**/}*.js'
 ESLINT=yarn eslint
 SERVERLESS=cd services && ../node_modules/.bin/sls
 WEBPACK_DEV_SERVER=yarn webpack-dev-server
@@ -79,6 +80,10 @@ prettier: ## Run the prettifier
 	$(PRETTIER)
 	@$(PRINT_OK)
 
+prettier-fail: ## Run the prettifier, but fail if changes need to be made
+	$(PRETTIER_FAIL)
+	@$(PRINT_OK)
+
 test-watch: ## Run the tests and watch for changes
 	$(MOCHA) --reporter min --watch
 	@$(PRINT_OK)
@@ -119,7 +124,7 @@ keyrings: ## Initialize blackbox secrets in the keyrings folder (required to get
 	@read -p "Press any key to continue."
 	@$(PRINT_OK)
 
-update-secrets: keyrings ## Update .env file to latest versionea
+update-secrets: keyrings ## Update .env file to latest version
 	cd keyrings \
 	&& git pull
 	blackbox_edit_start keyrings/files/.env
