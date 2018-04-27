@@ -21,6 +21,13 @@
   overflow: visible;
 }
 
+
+.old:focus,
+.active:focus,
+.future:focus {
+  outline: none;
+}
+
 .old span,
 .active span,
 .future span{
