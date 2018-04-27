@@ -1,9 +1,9 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack from "../../../../../css/_colors.css";
+@value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
 @value timelineNavigationButton from "../../../../../css/_zindex.css";
 
 .active a {
-  color: badgerRedOnWhite;
+  color: badgerRed;
 }
 
 .old,
@@ -31,7 +31,6 @@
   border-radius: 50%;
   position: absolute;
   bottom: 0px;
-  cursor: pointer;
   background-color: #CCC;
   left: 12px;
  }
@@ -41,5 +40,5 @@
 }
 
 .active span {
-  background-color: badgerRedOnWhite;
+  background-color: badgerRed;
 }
