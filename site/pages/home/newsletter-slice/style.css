@@ -1,4 +1,4 @@
-@value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRedOnWhite from "../../../css/_colors.css";
+@value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, daveGreen, badgerRedOnWhite, badgerAccessibleRedOnBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen, inputHeight from "../../../css/_sizes.css";
 
 .newsletter {
@@ -13,7 +13,7 @@
 .beforeErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
-  color: badgerRedOnWhite;
+  color: badgerAccessibleRedOnBlack;
   text-align: left;
   padding-top: 5px;
 }
@@ -162,7 +162,7 @@
     display: inline-block;
   }
   .beforeErrorText {
-    left: 85px;
+    left: 98px;
     position: relative;
   }
 
@@ -173,8 +173,7 @@
 
 @media largeScreen {
   .submitted .formLabel {
-    width: 101px;
-    margin-left: -131px;
+    width: 125px;
     line-height: inputHeight;
     text-align: left;
     display: inline-block;
@@ -190,5 +189,10 @@
 
   .submitted .form {
     margin: 0 auto;
+    width: 555px;
+  }
+
+  .afterErrorText {
+    left: 155px;
   }
 }
