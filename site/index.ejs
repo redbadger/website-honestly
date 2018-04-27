@@ -54,7 +54,7 @@
       }
 
       function accessibilityDayOff() {
-        return getCookieValue('accessibilityDay') === 'off';
+        return getCookieValue('a11yDay') === 'off';
       }
 
       function browserUnsupportedCheck() {
@@ -70,7 +70,7 @@
         button.style.display = 'block';
         browserUnsupportedCheck()
 
-        if (getCookieValue('accessibilityDay') === 'off') {
+        if (getCookieValue('a11yDay') === 'off') {
           document.body.classList.remove('accessibilityDay');
           button.innerHTML = colourOnButtonText;
         } else {
@@ -80,10 +80,11 @@
       }
 
       function toggleCookie() {
-        if (getCookieValue('accessibilityDay') === 'off') {
-          document.cookie = 'accessibilityDay=; path=/; expires=' + new Date(0).toUTCString();
+        var cookieVal = getCookieValue('a11yDay');
+        if (cookieVal === "" || cookieVal === "off") {
+          document.cookie = 'a11yDay=on; path=/';
         } else {
-          document.cookie = 'accessibilityDay=off; path=/';
+          document.cookie = 'a11yDay=off; path=/';
         }
       }
 
@@ -107,6 +108,15 @@
           toggleButtonText();
         };
       }
+
+      function initA11Y() {
+        var cookieVal = getCookieValue('a11yDay');
+        if (cookieVal === 'on') {
+          document.cookie = 'a11yDay=on; path=/';
+        }
+      }
+
+      initA11Y();
     </script> 
 
 
