@@ -90,10 +90,11 @@ class TimelineSlice extends React.Component<*, TimelineSliceState> {
               <div className={styles.imageWrapper}>
                 <img src={Image2016} alt="year 2016" className={styles.image} />
               </div>
+              <Six />
               <div className={styles.imageWrapper}>
                 <img src={Image2017} alt="year 2017" className={styles.image} />
               </div>
-              <Six />
+              <Seven />
             </div>
           </noscript>
         </div>
