@@ -5,10 +5,9 @@ import styles from './style.css';
 type TimelineNavProps = {
   value: number,
   currentIndex: number,
-  onClick: Function,
 };
 
-const TimelineNav = ({ value, onClick, currentIndex }: TimelineNavProps) => {
+const TimelineNav = ({ value, currentIndex }: TimelineNavProps) => {
   let className = styles.old;
   if (value === currentIndex) {
     className = styles.active;
@@ -18,12 +17,10 @@ const TimelineNav = ({ value, onClick, currentIndex }: TimelineNavProps) => {
     className = styles.future;
   }
 
-  const click = () => onClick(value);
-
   return (
-    <button tabIndex={0} className={className} onClick={click} aria-label={`slide ${value + 1}`}>
+    <div className={className} aria-label={`slide ${value + 1}`}>
       <span />
-    </button>
+    </div>
   );
 };
 
