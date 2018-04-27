@@ -36,8 +36,8 @@ const fetchFunction = ({ url, body, method }) =>
   });
 
 class NewsLetter extends Component<*, NewsLetterState> {
-  constructor(props: any) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       newsletterSubmitted: false,
       email_address: '',
