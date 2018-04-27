@@ -113,21 +113,24 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: 'Retailer case study',
-    description: 'Find out how we improved conversion rates by 83% with a mobile first application to the world’s 3rd largest retailer with speed to market.',
+    description:
+      'Find out how we improved conversion rates by 83% with a mobile first application to the world’s 3rd largest retailer with speed to market.',
     key: 'retailerCaseStudy',
     route: 'our-work/case-study/retailer',
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Fortnum & Mason case study',
-    description: 'Increasing conversion rates, sales and mobile visits for Fortnum & Mason’s new, award winning website.',
+    description:
+      'Increasing conversion rates, sales and mobile visits for Fortnum & Mason’s new, award winning website.',
     key: 'fortnumAndMasonCaseStudy',
     route: 'our-work/case-study/fortnum-and-mason',
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Fortnum & Mason digital transformation',
-    description: 'The ongoing digital transformation of a 310-year old retailer. Discover how we helped customers find products faster and drive sales of tea at Fortnum and Mason.',
+    description:
+      'The ongoing digital transformation of a 310-year old retailer. Discover how we helped customers find products faster and drive sales of tea at Fortnum and Mason.',
     key: 'fMTeaCaseStudy',
     route: 'our-work/case-study/fortnum-and-mason-digital-transformation',
     parentKey: 'ourWorkPage',
@@ -141,42 +144,48 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: 'BMW Virtual Museum case study',
-    description: 'Find out how we pushed the boundaries of HTML5 technology to deliver a multiplatform 3D tour of the BMW museum.',
+    description:
+      'Find out how we pushed the boundaries of HTML5 technology to deliver a multiplatform 3D tour of the BMW museum.',
     key: 'bmwCaseStudy',
     route: 'our-work/case-study/bmw',
     parentKey: 'ourWorkPage',
   },
   {
     title: 'BBC Now case study',
-    description: 'Discover how a rapid prototyping model helped the BBC uncover new ways to engage its audience.',
+    description:
+      'Discover how a rapid prototyping model helped the BBC uncover new ways to engage its audience.',
     key: 'bbcCaseStudy',
     route: 'our-work/case-study/bbc-now',
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Haller Foundation case study',
-    description: 'Discover how we’ve helped Haller develop a mobile application to help Kenyan farmers using technology for good',
+    description:
+      'Discover how we’ve helped Haller develop a mobile application to help Kenyan farmers using technology for good',
     key: 'hallerCaseStudy',
     route: 'our-work/case-study/haller',
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Sky CMS case study',
-    description: 'Find out how we helped Sky build a modern CMS as a foundation that supports both customers and the internal team',
+    description:
+      'Find out how we helped Sky build a modern CMS as a foundation that supports both customers and the internal team',
     key: 'skyCMSCaseStudy',
     route: 'our-work/case-study/sky-cms',
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Sky case study',
-    description: 'Discover how we enabled Sky to deliver continual improvement across customer services.',
+    description:
+      'Discover how we enabled Sky to deliver continual improvement across customer services.',
     key: 'skyCaseStudy',
     route: 'our-work/case-study/sky',
     parentKey: 'ourWorkPage',
   },
   {
     title: 'Bank case study',
-    description: 'Discover how we delivered quality digital products to customers quickly, built capability and changed the culture to increase business efficiency in one of the world’s largest banks.',
+    description:
+      'Discover how we delivered quality digital products to customers quickly, built capability and changed the culture to increase business efficiency in one of the world’s largest banks.',
     key: 'bankCaseStudy',
     route: 'our-work/case-study/financial-services-digital-transformation',
     parentKey: 'ourWorkPage',
@@ -216,7 +225,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: 'Camden market case study',
-    description: 'Built in 10 weeks, a new site for Camden Market to drive engagement with Londoners and Tourists.',
+    description:
+      'Built in 10 weeks, a new site for Camden Market to drive engagement with Londoners and Tourists.',
     key: 'camdenMarketCaseStudy',
     route: 'our-work/case-study/camden-market',
     parentKey: 'ourWorkPage',

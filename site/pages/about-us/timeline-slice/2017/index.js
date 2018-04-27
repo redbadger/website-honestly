@@ -10,7 +10,7 @@ const Seven = () => {
   const fact =
     'In July we moved again - this time across the road to a brand new office in Old Street Yard, and we filled all but one seat on a flight to Croatia for our summer party. Oh, and did we say we hosted a conference at QE2 conference centre Westminster for 700 React fans?';
 
-  return <Content year={year} title={title} text={text} fact={fact} image={image} />;
+  return <Content year={year} title={title} text={text} fact={fact} image={image} flip />;
 };
 
 export default Seven;
