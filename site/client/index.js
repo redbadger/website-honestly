@@ -4,14 +4,13 @@ import ReactGA from 'react-ga';
 
 import createStateNavigator from '../../site/routes';
 
-import { toggleGreyscale, bootstrapGreyscaleMode } from './greyscale';
+import { initGreyscaleModeBar } from './greyscale';
 
 const TITLE_SUFFIX = 'Red Badger';
 const A11Y_DAY_MODE_ENABLED = true;
 
 if (A11Y_DAY_MODE_ENABLED) {
-  window.toggleGreyscale = toggleGreyscale;
-  bootstrapGreyscaleMode();
+  initGreyscaleModeBar();
 }
 
 const scrollTo = params => () => {

@@ -17,21 +17,16 @@ function getCookieValue(a) {
 }
 
 function getA11yButton() {
-  return document.getElementById('accessibilityDayButton');
+  return document.querySelector('.accessibilityDayButton');
 }
 
 function browserUnsupportedCheck() {
-  if (!!window.MSInputMethodContext && !!document.documentMode) {
-    const description = document.getElementById('accessibilityDayDescription');
-    const message = description.textContent;
-    description.innerHTML = message.concat(
-      " (We're sorry, but this feature is not supported in your browser)",
-    );
-  }
+  return !!window.MSInputMethodContext && !!document.documentMode;
 }
 
 function toggleCookie() {
   const cookieVal = getCookieValue('a11yDay');
+
   if (cookieVal === '' || cookieVal === 'off') {
     document.cookie = 'a11yDay=on; path=/';
   } else {
@@ -45,40 +40,53 @@ function toggleCssClass() {
 
 function toggleButtonText() {
   const button = getA11yButton();
-  if (button.innerHTML === colourOffButtonText) {
-    button.innerHTML = colourOnButtonText;
+  if (button.textContent === colourOffButtonText) {
+    button.textContent = colourOnButtonText;
   } else {
-    button.innerHTML = colourOffButtonText;
+    button.textContent = colourOffButtonText;
   }
 }
 
 export function toggleGreyscale() {
   toggleCssClass();
   toggleCookie();
-  const button = document.getElementById('accessibilityDayButton');
-  if (button) {
+
+  if (getA11yButton()) {
     toggleButtonText();
   }
 }
 
-export function bootstrapGreyscaleMode() {
-  const cookieVal = getCookieValue('a11yDay');
+function renderGreyscaleModeBar(enabled) {
+  const bar = document.createElement('div');
+  bar.classList.add('accessibilityBar');
 
-  if (cookieVal === 'on') {
-    document.body.classList.add('accessibilityDay');
-  }
+  const button = document.createElement('button');
+  button.classList.add('accessibilityDayButton');
+  button.textContent = enabled ? colourOffButtonText : colourOnButtonText;
+  button.addEventListener('click', toggleGreyscale);
+
+  const description = document.createElement('p');
+  description.classList.add('accessibilityDayDescription');
+  description.textContent =
+    'What’s black and white and ‘read’ all over? Us! We’re greyscale to promote Global Accessibility Awareness Day.';
+
+  bar.appendChild(button);
+  bar.appendChild(description);
+
+  const app = document.querySelector('.js-app');
+  document.body.insertBefore(bar, app);
 }
 
-export function initialiseGreyscaleModeBar() {
-  const button = getA11yButton();
-  button.style.display = 'block';
-  browserUnsupportedCheck();
-
-  if (getCookieValue('a11yDay') === 'off') {
-    document.body.classList.remove('accessibilityDay');
-    button.innerHTML = colourOnButtonText;
-  } else {
-    document.body.classList.add('accessibilityDay');
-    button.innerHTML = colourOffButtonText;
+export function initGreyscaleModeBar() {
+  if (browserUnsupportedCheck()) {
+    return;
   }
+
+  const enabled = getCookieValue('a11yDay') === 'on';
+
+  if (enabled) {
+    document.body.classList.add('accessibilityDay');
+  }
+
+  renderGreyscaleModeBar(enabled);
 }

@@ -1,9 +1,5 @@
 :global(.accessibilityDay) {
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
 }
 
 :global(.accessibilityBar) {
@@ -13,9 +9,8 @@
 }
 
 :global(.accessibilityBar) button {
-  display: none;
   font-family: 'ProximaNova-Bold', sans-serif;
-  font-weight: 800px;
+  font-weight: 800;
   font-size: 16px;
   padding: 0 10px;
   min-width: 200px;
@@ -32,7 +27,7 @@
 
 :global(.accessibilityBar) p {
   font-family: 'ProximaNova-Bold', sans-serif;
-  font-weight: 800px;
+  font-weight: 800;
   display: block;
 }
 
@@ -49,6 +44,10 @@
 
   :global(.accessibilityBar) button {
     margin: 0 20px 0 0;
+  }
+
+  :global(.accessibilityBar) ~ :global(.js-app) {
+    padding-top: 90px;
   }
 }
 
