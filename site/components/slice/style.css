@@ -1,0 +1,23 @@
+
+@value badgerWhite, daveGreen from "../../css/_colors.css";
+@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
+
+.lightGreySlice {
+  background-color: badgerWhite;
+}
+
+.greenSlice {
+  background-color: daveGreen;
+}
+
+.container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media mediumScreen {
+  .container {
+    flex-direction: row;
+  }
+}
