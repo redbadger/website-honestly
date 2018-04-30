@@ -4,11 +4,17 @@ import ReactGA from 'react-ga';
 
 import createStateNavigator from '../../site/routes';
 
+import print from './greyscale';
+
 const TITLE_SUFFIX = 'Red Badger';
+
+
+print();
 
 const scrollTo = params => () => {
   if (params.contactUs) {
     let el = document.getElementById('contactUs');
+
     if (el && el.scrollIntoView) {
       el.scrollIntoView();
     }
