@@ -1,0 +1,5 @@
+
+.xSmallText {
+  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: sansSerif from "../../css/typography/_fonts.css";
+}
