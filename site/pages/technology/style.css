@@ -3,82 +3,31 @@
 
 /* ============= Intro Stying ============= */
 
-.introContainer {
-  padding: 0px 20px;
-  background-color: badgerWhite;
+.headingContainer {
+  margin: 40px auto;
+  max-width: 395px;
 }
 
-.intro {
-  max-width: contentMaxWidth;
-  margin: auto;
+.roundTableImageContainer {
   display: flex;
-  flex-direction: column-reverse;
-  padding: 30px 0px 50px 0px;
-}
-
-.leftContent, .rightContent {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
-.rightContent {
-  padding-bottom: 50px;
+.roundTableImageContainer img {
+  width: 300px;
+  height: 250px;
 }
 
-.innerContainer {
-  /* Dirty IE11 hack for weird double nested flex box issues */
-  min-width: 1px;
-}
-
-@media mediumScreen {
-  .intro {
-    flex-direction: row;
-    padding: 50px 0px 55px 0px;
-  }
-
-  .leftContent, .rightContent {
-    flex: 1 50%;
-    align-items: center;
-  }
-
-  .leftContent {
-    padding-right: 10px;
-    justify-content: flex-start;
-  }
-
-  .rightContent {
-    justify-content: flex-end;
-    padding-bottom: 0px;
-  }
-
-  .innerContainer {
-    max-width: 470px;
-  }
-}
-
-@media largeScreen {
-  .intro {
-    padding: 100px 0px 130px 0px;
-  }
-
-  .rightContent > .innerContainer {
-    max-width: 500px;
-  }
+.leftContainer, 
+.rightContainer {
+  flex: 1;
 }
 
 .mainHeader {
   composes: fontL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
   color: badgerBlack;
-}
-
-.description {
-  composes: fontS from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
-  color: badgerBlack;
-  line-height: 1.21;
-  padding-top: 25px;
 }
 
 .latestRoundTableLink {
@@ -90,11 +39,27 @@
   text-align: center;
 }
 
-img.techRoundTable {
-  max-width: 100%;
-  margin: auto;
+
+@media mediumScreen {
+  .headingContainer {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+  .rightContainer h2 {
+    text-align: left;
+  }
+
+  .headingContainer {
+    max-width: 870px;
+  }
 }
 
+@media largeScreen {
+  .headingContainer {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
 /* ============= Webinar signup styling ============= */
 
 .webinar {

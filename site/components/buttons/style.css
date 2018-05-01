@@ -1,0 +1,15 @@
+@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen, cainYellow, scorpian from "../../css/_colors.css";
+
+.link {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  color: badgerWhite;
+  display: inline-block;
+  font-size: 24px;
+  background-color: badgerBlack;
+  padding: 14px 20px;
+}
+
+.link:hover {
+  background-color: scorpian;
+  cursor: pointer;
+}
