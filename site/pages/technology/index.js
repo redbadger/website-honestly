@@ -26,30 +26,32 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
   <Fragment>
     <WhiteSlice>
       <div className={styles.heading}>
-        <H1>We love tech but we only choose what‘s right for the job.</H1>
+        <H1>We love tech, but we only choose what’s right for the job.</H1>
       </div>
     </WhiteSlice>
     <GreenSlice>
-      <div className={styles.left}>
-        <Image src={roundTableImage} src2x={roundTableImage2x} src3x={roundTableImage3x} />
-      </div>
-      <div className={styles.right}>
-        <div className={styles.roundtableHeading}>
-          <H2 type="fontM2">April 2018 Report</H2>
+      <div className={styles.green}>
+        <div className={styles.left}>
+          <Image src={roundTableImage} src2x={roundTableImage2x} src3x={roundTableImage3x} />
         </div>
-        <div className={styles.description}>
-          <XSmallText>
-            Technology doesn’t stand still and neither do we. Find out which new and fully adopted
-            technologies our team think are adding value.
-          </XSmallText>
-        </div>
-        <div className={styles.hubspotButtonWrapper}>
-          <RoundtableHubspotButton
-            analyticsTitle="RoundtablePDFLink"
-            analyticsCategory="TechnologyPage"
-            hubspotTitle="roundtableApril2018"
-            className={styles.readPdfReportWrapper}
-          />
+        <div className={styles.right}>
+          <div className={styles.roundtableHeading}>
+            <H2 type="fontM2">April 2018 Report</H2>
+          </div>
+          <div className={styles.description}>
+            <XSmallText>
+              Technology doesn’t stand still and neither do we. Find out which new and fully adopted
+              technologies our team think are adding value.
+            </XSmallText>
+          </div>
+          <div className={styles.hubspotButtonWrapper}>
+            <RoundtableHubspotButton
+              analyticsTitle="RoundtablePDFLink"
+              analyticsCategory="TechnologyPage"
+              hubspotTitle="roundtableApril2018"
+              className={styles.readPdfReportWrapper}
+            />
+          </div>
         </div>
       </div>
     </GreenSlice>

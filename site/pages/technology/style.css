@@ -9,6 +9,11 @@
   text-align: center;
 }
 
+.green {
+  display: flex;
+  flex-direction: column;
+}
+
 .left, 
 .right {
   flex: 1;
@@ -32,7 +37,9 @@
 }
 
 .description {
-  margin-bottom: 30px;
+  display: inline-block;
+  margin: 0 auto 30px;
+  max-width: 480px;
 }
 
 .readPdfReportWrapper img {
@@ -47,13 +54,26 @@
 }
 
 @media mediumScreen {
+  .green {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .description {
+    margin-left: unset;
+  }
+
   .heading {
     margin-top: 110px;
     margin-bottom: 110px;
   }
 
+  .left {
+    padding-right: 8px;
+  }
+
   .right {
-    text-align: left;
+    padding-left: 8px;
   }
 
   .heading {
@@ -71,9 +91,6 @@
     margin-bottom: 12px;
   }
 
-  .description {
-    max-width: 450px;
-  }
 }
 
 /* ============= Webinar signup styling ============= */
