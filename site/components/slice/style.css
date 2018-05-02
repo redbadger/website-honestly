@@ -2,11 +2,12 @@
 @value badgerWhite, daveGreen from "../../css/_colors.css";
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
-.lightGreySlice {
+.whiteSlice {
   background-color: badgerWhite;
 }
 
 .greenSlice {
+  composes: dividerGreen from "../../css/_divider.css";
   background-color: daveGreen;
 }
 

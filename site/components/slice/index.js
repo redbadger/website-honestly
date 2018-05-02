@@ -15,11 +15,11 @@ const Slice = (colour: string) => ({ children }: Props) => (
 );
 
 const colour = {
-  lightGrey: 'lightGrey',
+  white: 'white',
   green: 'green',
 };
 
-const LightGreySlice = Slice(`${colour.lightGrey}Slice`);
+const WhiteSlice = Slice(`${colour.white}Slice`);
 const GreenSlice = Slice(`${colour.green}Slice`);
 
-export { LightGreySlice, GreenSlice };
+export { WhiteSlice, GreenSlice };
