@@ -1,15 +1,19 @@
-@value badgerWhite, badgerRedOnWhite, badgerBlack, daveGreen, cainYellow, scorpian from "../../css/_colors.css";
-
-.link {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  color: badgerWhite;
+.hubspotBtn a {
   display: inline-block;
-  font-size: 24px;
-  background-color: badgerBlack;
-  padding: 14px 20px;
+  position: relative;
 }
 
-.link:hover {
-  background-color: scorpian;
-  cursor: pointer;
+.hubspotBtn a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.hubspotBtn:hover a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-size: 100% 100%;
 }

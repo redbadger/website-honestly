@@ -17,42 +17,23 @@ type Analytics = {
   analyticsTitle: string,
   analyticsCategory: string,
 };
-type Props = {
-  cta: string,
-  linkUrl?: string,
-  onHover?: () => any,
-  onBlur?: () => any,
-} & Analytics;
 
-const Button = ({ cta, linkUrl, onHover, onBlur, analyticsTitle, analyticsCategory }: Props) => {
-  return (
-    <a
-      href={linkUrl}
-      className={styles.link}
-      onMouseEnter={onHover}
-      onMouseLeave={onBlur}
-      onClick={trackAnalytics(analyticsTitle, analyticsCategory)}
-    >
-      {cta}
-    </a>
-  );
-};
-
-type HubspotProps = {
+type HubspotButtonProps = {
+  className?: string,
   hubspotTitle: string,
 } & Analytics;
 
-const HubspotButton = ({ analyticsTitle, analyticsCategory, hubspotTitle }: HubspotProps) => (
+const RoundtableHubspotButton = ({
+  analyticsTitle,
+  analyticsCategory,
+  className,
+  hubspotTitle,
+}: HubspotButtonProps) => (
   <div
-    className={styles.latestRoundTableLinkContainer}
-    // onClick={trackAnalytics('RoundtablePDFLink')}
+    className={`${styles.hubspotBtn} ${className || ''}`}
+    dangerouslySetInnerHTML={HubspotButtons[`${hubspotTitle}`]}
     onClick={trackAnalytics(analyticsTitle, analyticsCategory)}
-  >
-    <div
-      className={`${styles.hubspotBtn} ${styles.readPdfReportWrapper}`}
-      dangerouslySetInnerHTML={HubspotButtons[`${hubspotTitle}`]}
-    />
-  </div>
+  />
 );
 
-export { Button, HubspotButton };
+export { RoundtableHubspotButton };
