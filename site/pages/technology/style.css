@@ -3,63 +3,79 @@
 
 /* ============= Intro Stying ============= */
 
-.headingContainer {
+.heading {
   margin: 40px auto;
   max-width: 395px;
+  text-align: center;
 }
 
-.roundTableImageContainer {
+.left, 
+.right {
+  flex: 1;
+}
+
+.left {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.roundTableImageContainer img {
-  width: 300px;
-  height: 250px;
-}
-
-.leftContainer, 
-.rightContainer {
-  flex: 1;
-}
-
-.mainHeader {
-  composes: fontL from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
-  color: badgerBlack;
-}
-
-.latestRoundTableLink {
-  composes: primaryButton from "../../css/_links.css";
-  margin-top: 40px;
-}
-
-.latestRoundTableLinkContainer {
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
+.roundtableHeading {
+  margin-bottom: 4px;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.readPdfReportWrapper img {
+  height: 45px;
+  width: 200px;
+}
+
+.readPdfReportWrapper:hover a:after {
+  background-image: url(./hubspot-btns-images/read-pdf.png);
+  height: 45px;
+  width: 200px;
+}
 
 @media mediumScreen {
-  .headingContainer {
+  .heading {
     margin-top: 110px;
     margin-bottom: 110px;
   }
-  .rightContainer h2 {
+
+  .right {
     text-align: left;
   }
 
-  .headingContainer {
+  .heading {
     max-width: 870px;
   }
 }
 
 @media largeScreen {
-  .headingContainer {
+  .heading {
     margin-top: 150px;
     margin-bottom: 150px;
   }
+
+  .roundtableHeading {
+    margin-bottom: 12px;
+  }
+
+  .description {
+    max-width: 450px;
+  }
 }
+
 /* ============= Webinar signup styling ============= */
 
 .webinar {
@@ -105,10 +121,6 @@
 }
 
 @media mediumScreen {
-  .latestRoundTableLinkContainer {
-    text-align: left;
-  }
-
   .webinarInner {
     flex-direction: row;
     justify-content: center;
@@ -217,12 +229,6 @@
   background-size: 100% 100%;
 }
 
-.readPdfReportWrapper:hover a:after {
-  background-image: url(./hubspot-btns-images/read-pdf.png);
-  height: 56px;
-  width: 228px;
-}
-
 .meetupBtnWrapper:hover a:after {
   background-image: url(./hubspot-btns-images/meetup.png);
   height: 53px;
@@ -239,10 +245,6 @@
   background-image: url(./hubspot-btns-images/slack.png);
   height: 53px;
   width: 251px;
-}
-
-.readPdfReportWrapper {
-  margin-top: 30px;
 }
 
 .webinarBtnWrapper {
@@ -263,18 +265,13 @@
   width: 251px;
 }
 
-.readPdfReportWrapper img {
-  height: 56px;
-  width: 228px;
-}
-
 .webinarBtnWrapper img {
   height: 56px;
   width: 224px;
 }
 
 @media mediumScreen {
-  .slackBtnWrapper, .meetupBtnWrapper, .readPdfReportWrapper, .webinarBtnWrapper {
+  .slackBtnWrapper, .meetupBtnWrapper, .webinarBtnWrapper {
     margin-right: 20px;
   }
 
