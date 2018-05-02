@@ -1,11 +1,14 @@
-.h1 {
+.fontXL {
   composes: fontXL from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  text-align: center;
 }
 
-.h2 {
+.fontM {
+  composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+}
+
+.fontM2 {
   composes: fontM2 from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
-  text-align: center;
 }

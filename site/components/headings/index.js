@@ -2,12 +2,23 @@
 import React from 'react';
 import styles from './style.css';
 
+type Font = 'fontXL' | 'fontL' | 'fontM' | 'fontM2';
+
 type Props = {
   children: string,
+  type: Font,
 };
 
-const XLargeHeading = ({ children }: Props) => <h1 className={styles.h1}>{children}</h1>;
+const H1 = ({ children, type }: Props) => <h1 className={styles[`${type}`]}>{children}</h1>;
 
-const MediumHeading = ({ children }: Props) => <h3 className={styles.h2}>{children}</h3>;
+H1.defaultProps = {
+  type: 'fontXL',
+};
 
-export { XLargeHeading, MediumHeading };
+const H2 = ({ children, type }: Props) => <h2 className={styles[`${type}`]}>{children}</h2>;
+
+H2.defaultProps = {
+  type: 'fontM',
+};
+
+export { H1, H2 };
