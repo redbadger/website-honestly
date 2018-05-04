@@ -12,6 +12,7 @@
 .green {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .left, 
@@ -25,6 +26,11 @@
   margin-bottom: 30px;
 }
 
+.image img {
+  height: 250px;
+  width: 300px;
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -32,8 +38,15 @@
   text-align: center;
 }
 
-.roundtableHeading {
+.roundTableSubHeading {
   margin-bottom: 4px;
+}
+
+.roundTableHeading {
+  position: absolute;
+  width: 64px;
+  text-align: center;
+  top: 86px;
 }
 
 .description {
@@ -57,15 +70,15 @@
   .green {
     flex-direction: row;
     margin: 0 auto;
-  }
-
-  .description {
-    margin-left: unset;
+    max-width: 870px
   }
 
   .heading {
-    margin-top: 110px;
+    margin-top: 70px;
     margin-bottom: 110px;
+    max-width: 630px;
+    text-align: left;
+    padding-left: 40px;
   }
 
   .left {
@@ -74,23 +87,32 @@
 
   .right {
     padding-left: 8px;
+    text-align: left;
   }
 
-  .heading {
-    max-width: 870px;
-  }
 }
 
 @media largeScreen {
+  .image img {
+    height: auto;
+    width: auto;
+  }
+
   .heading {
     margin-top: 150px;
     margin-bottom: 150px;
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .roundtableHeading {
+  .roundTableHeading {
+    top: 100px;
+  }
+
+  .roundTableSubHeading {
     margin-bottom: 12px;
   }
-
 }
 
 /* ============= Webinar signup styling ============= */

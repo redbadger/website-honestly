@@ -8,7 +8,7 @@ import WebinarSignupSlice from './webinar-signup-slice';
 import { TechChecklist } from '../../slices/checklist-contact-us-slice';
 
 import { WhiteSlice, GreenSlice } from '../../components/slice';
-import { H1, H2 } from '../../components/headings';
+import { H1, H2, H3 } from '../../components/headings';
 import { RoundtableHubspotButton } from '../../components/buttons';
 import { XSmallText } from '../../components/text';
 import Image from '../../components/image';
@@ -32,11 +32,16 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
     <GreenSlice>
       <div className={styles.green}>
         <div className={styles.left}>
-          <Image src={roundTableImage} src2x={roundTableImage2x} src3x={roundTableImage3x} />
+          <div className={styles.roundTableHeading}>
+            <H2 type="fontS2">Tech Round Table</H2>
+          </div>
+          <div className={styles.image}>
+            <Image src={roundTableImage} src2x={roundTableImage2x} src3x={roundTableImage3x} />
+          </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.roundtableHeading}>
-            <H2 type="fontM2">April 2018 Report</H2>
+          <div className={styles.roundTableSubHeading}>
+            <H3 type="fontM2">April 2018 Report</H3>
           </div>
           <div className={styles.description}>
             <XSmallText>
