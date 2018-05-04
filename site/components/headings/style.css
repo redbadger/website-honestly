@@ -3,6 +3,11 @@
   composes: serif from "../../css/typography/_fonts.css";
 }
 
+.fontL {
+  composes: fontL from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+}
+
 .fontM {
   composes: fontM from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
@@ -10,5 +15,15 @@
 
 .fontM2 {
   composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+}
+
+.fontS2 {
+  composes: fontS2 from "../../css/typography/_fonts.css";
+  composes: serif from "../../css/typography/_fonts.css";
+}
+
+.fontS {
+  composes: fontS from "../../css/typography/_fonts.css";
   composes: serif from "../../css/typography/_fonts.css";
 }
