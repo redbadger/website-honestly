@@ -8,9 +8,9 @@ import WebinarSignupSlice from './webinar-signup-slice';
 import { TechChecklist } from '../../slices/checklist-contact-us-slice';
 
 import { WhiteSlice, GreenSlice } from '../../components/slice';
-import { H1, H2, H3 } from '../../components/headings';
+// import { H1, H2, H3 } from '../../components/headings';
 import { RoundtableHubspotButton } from '../../components/buttons';
-import { XSmallText } from '../../components/text';
+import { P, H1, H2, H3 } from '../../components/text';
 import Image from '../../components/image';
 
 import roundTableImage from './images/2018-april-roundtable.png';
@@ -32,9 +32,7 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
     <GreenSlice>
       <div className={styles.green}>
         <div className={styles.left}>
-          <div className={styles.roundTableHeading}>
-            <H2 type="fontS2">Tech Round Table</H2>
-          </div>
+          <H2 customClass={styles.roundTableHeading}>Tech Round Table</H2>
           <div className={styles.image}>
             <Image src={roundTableImage} src2x={roundTableImage2x} src3x={roundTableImage3x} />
           </div>
@@ -44,10 +42,10 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
             <H3 type="fontM2">April 2018 Report</H3>
           </div>
           <div className={styles.description}>
-            <XSmallText>
+            <P>
               Technology doesn’t stand still and neither do we. Find out which new and fully adopted
               technologies our team think are adding value.
-            </XSmallText>
+            </P>
           </div>
           <div className={styles.hubspotButtonWrapper}>
             <RoundtableHubspotButton

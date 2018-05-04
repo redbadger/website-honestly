@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/no-danger */
+
 // @flow
 import React from 'react';
 import ReactGA from 'react-ga';

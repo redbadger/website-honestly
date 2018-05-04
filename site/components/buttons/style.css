@@ -1,3 +1,7 @@
+.hubspotBtn {
+  display: inline-block;
+}
+
 .hubspotBtn a {
   display: inline-block;
   position: relative;

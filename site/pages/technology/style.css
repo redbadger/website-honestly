@@ -2,7 +2,6 @@
 @value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
 
 /* ============= Intro Stying ============= */
-
 .heading {
   margin: 40px auto;
   max-width: 395px;
@@ -38,15 +37,18 @@
   text-align: center;
 }
 
-.roundTableSubHeading {
-  margin-bottom: 4px;
-}
-
 .roundTableHeading {
+  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  font-size: 24px;
   position: absolute;
   width: 64px;
   text-align: center;
   top: 86px;
+  display: inline-block;
+}
+
+.roundTableSubHeading {
+  margin-bottom: 4px;
 }
 
 .description {
@@ -107,7 +109,7 @@
   }
 
   .roundTableHeading {
-    top: 100px;
+    top: 106px;
   }
 
   .roundTableSubHeading {

@@ -1,6 +1,6 @@
 
 @value badgerWhite, daveGreen from "../../css/_colors.css";
-@value mediumScreen, largeScreen, contentMaxWidth from "../../css/_sizes.css";
+@value mediumScreen from "../../css/_sizes.css";
 
 .whiteSlice {
   background-color: badgerWhite;
