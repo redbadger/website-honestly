@@ -7,7 +7,7 @@ import createStateNavigator from '../../site/routes';
 import { initGreyscaleModeBar } from './greyscale';
 
 const TITLE_SUFFIX = 'Red Badger';
-const A11Y_DAY_MODE_ENABLED = true;
+const A11Y_DAY_MODE_ENABLED = false;
 
 if (A11Y_DAY_MODE_ENABLED) {
   initGreyscaleModeBar();
