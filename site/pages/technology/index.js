@@ -31,8 +31,8 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
     <GreenSlice>
       <div className={styles.green}>
         <div className={styles.left}>
-          <H2 customClass={styles.roundTableHeading}>Tech Round Table</H2>
           <div className={styles.image}>
+            <H2 customClass={styles.roundTableHeading}>Tech Round Table</H2>
             <Image src={roundTableImage} src2x={roundTableImage2x} src3x={roundTableImage3x} />
           </div>
         </div>

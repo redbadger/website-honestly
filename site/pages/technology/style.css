@@ -25,6 +25,10 @@
   margin-bottom: 30px;
 }
 
+.image {
+  position: relative;
+}
+
 .image img {
   height: 250px;
   width: 300px;
@@ -44,7 +48,7 @@
   width: 64px;
   text-align: center;
   top: 86px;
-  display: inline-block;
+  left: 117px;
 }
 
 .roundTableSubHeading {
@@ -109,6 +113,7 @@
   }
 
   .roundTableHeading {
+    left: 139px;
     top: 106px;
   }
 
