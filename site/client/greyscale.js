@@ -21,7 +21,7 @@ function getA11yButton() {
 }
 
 function browserUnsupportedCheck() {
-  return !!window.MSInputMethodContext && !!document.documentMode;
+  return document.body.style.filter === undefined;
 }
 
 function toggleCookie() {
