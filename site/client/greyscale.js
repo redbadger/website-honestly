@@ -1,12 +1,7 @@
-/* This script adds the functionality required for accessability day to give
- * the website user an option to toggle greyscale.  
-It partners with PR #742
-(https://github.com/redbadger/website-honestly/pull/742), which holds the UI
-  changes and should be merged on Accessability day.  Also note that there is
-  the same functionality on the squarespace blog, with the UI changes available
-  within PR #98
-  (https://github.com/redbadger/blog-squarespace-template/pull/98)
-*/
+/*
+ * Script to show and enable "greyscale" mode on the site for global a11y day.
+ * See https://github.com/redbadger/website-honestly/pull/750 for screenshots.
+ */
 
 const colourOnButtonText = 'Make my day accessible';
 const colourOffButtonText = 'Switch back to colour';
