@@ -101,7 +101,7 @@
 @media largeScreen {
   .image img {
     height: auto;
-    width: auto;
+    width: 350px;
   }
 
   .heading {
