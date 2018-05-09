@@ -3,7 +3,7 @@
 
 .cell {
   justify-content: center;
-  margin: 0 auto 30px auto;
+  margin: 0 0 30px;
   flex-basis: 100%;
   border-bottom: 1px solid linesOnWhite;
 }
