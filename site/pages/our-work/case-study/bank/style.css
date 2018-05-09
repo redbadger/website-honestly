@@ -21,7 +21,23 @@
   padding: 20px;
 }
 
+.content__mainTitleWrapper {
+  padding: 30px 20px 40px;
+}
+
+.content__mainTitleWrapper + .content__wrapper h2,
+.content__mainTitleWrapper + .content__wrapper {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .content__wrapper::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.content__mainTitleWrapper:after {
   content: '';
   display: block;
   clear: both;
@@ -30,7 +46,7 @@
 .content__mainTitle {
   composes: fontL from '../../../../css/typography/_fonts.css';
   composes: serif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .content__title {
@@ -102,12 +118,16 @@
 
 @media mediumScreen {
   .content {
-    padding: 20px 0 60px;
+    padding: 0 0 60px;
   }
 
   .content__wrapper {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .content__mainTitleWrapper {
+    padding: 40px 20px 50px;
   }
 
   .content__paragraph,
@@ -136,10 +156,6 @@
 
   .content__list {
     padding-left: 134px;
-  }
-
-  .content__mainTitle {
-    margin-bottom: -20px;
   }
 
   .content__title {
@@ -181,6 +197,17 @@
     padding: 0;
   }
 
+  .content__mainTitleWrapper {
+    background-color: badgerWhite;
+    padding: 20px 20px 60px;
+    margin-top: -96px;
+    position: relative;
+  }
+
+  .content__title {
+    padding-left: 10%;
+  }
+
   .content__paragraph,
   .content__secondaryTitle,
   .quote {
@@ -195,20 +222,6 @@
   .content__list {
     padding-left: 33.457143%;
     padding-right: 18.2857143%;
-  }
-
-  .content__mainTitle {
-    position: relative;
-    top: -96px;
-    display: block;
-    padding: 20px 20px 0;
-    height: 100%;
-    background-color: badgerWhite;
-    margin-bottom: -96px;
-  }
-
-  .content__title {
-    padding-left: 10%;
   }
 
   .listBoxContainer {
