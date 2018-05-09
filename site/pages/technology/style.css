@@ -59,6 +59,10 @@
   max-width: 350px;
 }
 
+.roundTableDescription {
+  font-size: 20px;
+}
+
 .readPdfReportWrapper img {
   height: 56px;
   width: 228px;

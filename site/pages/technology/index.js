@@ -41,7 +41,7 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
             <H3 type="fontM2">April 2018 Report</H3>
           </div>
           <div className={styles.description}>
-            <P>
+            <P customClass={styles.roundTableDescription}>
               Technology doesn’t stand still and neither do we. Find out which new and fully adopted
               technologies our team think are adding value.
             </P>

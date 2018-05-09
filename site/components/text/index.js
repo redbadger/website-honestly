@@ -10,10 +10,13 @@ type Props = {
   customClass?: string,
 };
 
-const P = ({ children, type }: Props) => <p className={styles[`${type}`]}>{children}</p>;
+const P = ({ children, type = 'fontXS', customClass = '' }: Props) => (
+  <p className={`${styles[`${type}`]} ${customClass}`}>{children}</p>
+);
 
 P.defaultProps = {
   type: 'fontXS',
+  customClass: '',
 };
 
 const H1 = ({ children, type }: Props) => <h1 className={styles[`${type}`]}>{children}</h1>;
@@ -22,14 +25,9 @@ H1.defaultProps = {
   type: 'fontXL',
 };
 
-const H2 = ({ children, type, customClass }: Props) => (
-  <h2 className={(styles[`${type}`], customClass)}>{children}</h2>
+const H2 = ({ children, type = 'fontM', customClass = '' }: Props) => (
+  <h2 className={`${styles[`${type}`]} ${customClass}`}>{children}</h2>
 );
-
-H2.defaultProps = {
-  type: 'fontM',
-  customClass: '',
-};
 
 const H3 = ({ children, type }: Props) => <h3 className={styles[`${type}`]}>{children}</h3>;
 
