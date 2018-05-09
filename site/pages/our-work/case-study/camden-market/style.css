@@ -44,8 +44,15 @@
 .content__mainTitle {
   composes: fontL from '../../../../css/typography/_fonts.css';
   composes: serif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 30px;
-  padding: 20px;
+  margin: 0;
+}
+
+.content__mainTitleWrapper {
+  padding: 30px 20px 30px;
+}
+
+.content__mainTitleWrapper + .overview .quote {
+  margin-top: 0;
 }
 
 .content__paragraph {
@@ -188,8 +195,8 @@
     padding-left: 134px;
   }
 
-  .content__mainTitle {
-    margin-bottom: -20px;
+  .content__mainTitleWrapper {
+    padding: 40px 20px 30px;
   }
 
   .content__paragraph {
@@ -262,13 +269,11 @@
     padding-right: 18.2857143%;
   }
 
-  .content__mainTitle {
-    position: relative;
-    top: -96px;
-    display: block;
-    height: 100%;
+  .content__mainTitleWrapper {
     background-color: badgerWhite;
-    margin-bottom: -96px;
+    padding: 20px 20px 40px;
+    margin-top: -96px;
+    position: relative;
   }
 
   .content__paragraph,
@@ -282,8 +287,7 @@
   }
 
   .content__wrapper {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
   .header {

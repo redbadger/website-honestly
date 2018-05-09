@@ -61,7 +61,7 @@ class CaseStudyCamdenMarket extends React.Component<*, CamdenState> {
           </div>
         </div>
         <div className={styles.content}>
-          <div className={styles.content__wrapper}>
+          <div className={styles.content__mainTitleWrapper}>
             <h1 className={styles.content__mainTitle}>
               Camden Market’s new digital platform designed and built in ten weeks
             </h1>
