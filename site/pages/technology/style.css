@@ -60,14 +60,14 @@
 }
 
 .readPdfReportWrapper img {
-  height: 45px;
-  width: 200px;
+  height: 56px;
+  width: 228px;
 }
 
 .readPdfReportWrapper:hover a:after {
   background-image: url(./hubspot-btns-images/read-pdf.png);
-  height: 45px;
-  width: 200px;
+  height: 56px;
+  width: 228px;
 }
 
 @media mediumScreen {
