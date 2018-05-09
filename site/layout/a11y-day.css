@@ -1,0 +1,53 @@
+:global(.accessibilityDay) {
+  filter: grayscale(100%);
+}
+
+:global(.accessibilityBar) {
+  padding: 20px;
+  background-color: #22d59b;
+  text-align: center;
+}
+
+:global(.accessibilityBar) button {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 0 10px;
+  min-width: 200px;
+  height: 40px;
+  background-color: #212121;
+  color: #f8f8f8;
+  border: none;
+  margin: 0 auto 20px;
+}
+
+:global(.accessibilityBar) button:hover {
+  background-color: #606060;
+}
+
+:global(.accessibilityBar) p {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-weight: 800;
+  display: block;
+}
+
+@media screen and (min-width: 690px) {
+  :global(.accessibilityBar) {
+    width: 100%;
+    text-align: left;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  :global(.accessibilityBar) button {
+    margin: 0 20px 0 0;
+  }
+
+  :global(.accessibilityBar) ~ :global(.js-app) {
+    padding-top: 90px;
+  }
+}
+
