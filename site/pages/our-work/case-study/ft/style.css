@@ -16,7 +16,6 @@
 .header {
   width: 100%;
   background-color: #fff1df;
-  margin-bottom: 10px;
 }
 
 .header__container {
@@ -107,7 +106,15 @@
 .content__mainTitle {
   composes: fontL from '../../../../css/typography/_fonts.css';
   composes: serif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 0px;
+  margin: 0;
+}
+
+.content__mainTitleWrapper {
+  padding: 30px 20px 30px;
+}
+
+.content__mainTitleWrapper + .overview .quote {
+  margin-top: 0;
 }
 
 .content__title {
@@ -201,6 +208,10 @@
     padding: 30px 20px 20px;
   }
 
+  .content__mainTitleWrapper {
+    padding: 40px 20px 30px;
+  }
+
   .header__outcome {
     width: 200px;
   }
@@ -219,10 +230,6 @@
 
   .content__secondaryTitle {
     padding-left: 114px;
-  }
-
-  .content__mainTitle {
-    margin-bottom: 9px;
   }
 
   .content__title {
@@ -291,14 +298,11 @@
     padding-right: 10%;
   }
 
-  .content__mainTitle {
-    position: relative;
-    top: -96px;
-    display: block;
-    padding: 20px;
-    height: 100%;
+  .content__mainTitleWrapper {
     background-color: badgerWhite;
-    margin-bottom: -73px;
+    padding: 20px 20px 40px;
+    margin-top: -96px;
+    position: relative;
   }
 
   .content__title {

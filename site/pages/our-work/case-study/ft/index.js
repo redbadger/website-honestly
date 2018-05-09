@@ -37,7 +37,7 @@ const FinancialTimesCaseStudy = () => (
       </div>
     </div>
     <div className={styles.content}>
-      <div className={styles.content__wrapper}>
+      <div className={styles.content__mainTitleWrapper}>
         <h1 className={styles.content__mainTitle}>Keeping up with the Financial Times</h1>
       </div>
       <div className={styles.overview}>
