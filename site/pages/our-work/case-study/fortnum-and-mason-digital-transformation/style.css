@@ -21,19 +21,32 @@
 }
 
 .content__wrapper {
-  padding: 20px 20px 20px;
+  padding: 0 20px 20px;
+}
+
+.content__mainTitleWrapper {
+  padding: 30px 0 40px;
+}
+
+.content__mainTitleWrapper + h2 {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .content__mainTitle {
   composes: fontL from "../../../../css/typography/_fonts.css";
   composes: serif from "../../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .content__title {
   composes: fontM2 from "../../../../css/typography/_fonts.css";
   composes: lightSerif from "../../../../css/typography/_fonts.css";
   margin-bottom: 30px;
+}
+
+.content__title:first-of-type {
+  margin-top: 0;
 }
 
 .content__redTitle {
@@ -97,7 +110,6 @@
 }
 
 @media mediumScreen {
-
   .content__paragraph {
     padding-left: 17%;
   }
@@ -106,18 +118,13 @@
     padding-left: 114px;
   }
 
-  .content__mainTitle {
-    margin-bottom: -20px;
-    padding-bottom: 40px;
+  .content__mainTitleWrapper {
+    padding: 40px 0 50px;
   }
 
   .content__title {
     margin-top: 60px;
     margin-bottom: 40px;
-  }
-
-  .content__title:first-of-type {
-    margin-top: 20px;
   }
 
   .contactBox {
@@ -155,6 +162,13 @@
     padding-right: 0;
   }
 
+  .content__mainTitleWrapper {
+    background-color: badgerWhite;
+    padding: 20px 20px 60px;
+    margin-top: -96px;
+    position: relative;
+  }
+
   .content__paragraph,
   .content__secondaryTitle {
     padding-left: 30%;
@@ -166,16 +180,6 @@
     display: inline-block;
     vertical-align: middle;
     padding-right: 28px;
-  }
-
-  .content__mainTitle {
-    position: relative;
-    top: -125px;
-    display: block;
-    padding: 20px;
-    height: 100%;
-    background-color: badgerWhite;
-    margin-bottom: -96px;
   }
 
   .content__title {
