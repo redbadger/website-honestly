@@ -100,7 +100,7 @@
 }
 
 .content__wrapper {
-  padding: 20px 20px 20px;
+  padding: 0 20px 20px;
 }
 
 .content__mainTitle {
@@ -120,7 +120,7 @@
 .content__title {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 40px;
+  margin: 40px 0 30px;
 }
 
 .content__redTitle {
@@ -165,7 +165,7 @@
 
 .listBoxContainer {
   width: 100%;
-  margin: 0 auto 25px;
+  margin: 0 auto;
 }
 
 .listBox__label {
@@ -205,7 +205,7 @@
 
 @media mediumScreen {
   .content__wrapper {
-    padding: 30px 20px 20px;
+    padding: 0 20px 20px;
   }
 
   .content__mainTitleWrapper {
@@ -233,7 +233,7 @@
   }
 
   .content__title {
-    margin-top: 50px;
+    margin: 50px 0 40px;
   }
 
   .overview {
@@ -283,7 +283,7 @@
 
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 0 120px 60px;
     margin: auto;
   }
 
@@ -306,6 +306,7 @@
   }
 
   .content__title {
+    margin: 60px 0 40px;
     padding-left: 10%;
   }
 

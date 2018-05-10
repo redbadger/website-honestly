@@ -76,11 +76,11 @@
 .content__title {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 40px;
+  margin: 40px 0 30px;
 }
 
 .content__wrapper {
-  padding: 20px 20px 20px;
+  padding: 0 20px 20px;
 }
 
 .header {
@@ -176,7 +176,7 @@
 
 .listBoxContainer {
   width: 100%;
-  margin: 0 auto 25px;
+  margin: 0 auto;
 }
 
 .quote {
@@ -208,7 +208,7 @@
   }
 
   .content__title {
-    margin-top: 50px;
+    margin: 50px 0 40px;
   }
 
   .header__container {
@@ -284,6 +284,7 @@
 
   .content__title {
     padding-left: 10%;
+    margin: 60px 0 40px;
   }
 
   .content__wrapper {

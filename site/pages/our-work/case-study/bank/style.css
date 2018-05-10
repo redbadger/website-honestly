@@ -18,7 +18,7 @@
 }
 
 .content__wrapper {
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
 .content__mainTitleWrapper {
@@ -46,7 +46,7 @@
 .content__title {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 40px;
+  margin: 40px 0 30px;
 }
 
 .content__redTitle {
@@ -153,7 +153,7 @@
   }
 
   .content__title {
-    margin-top: 60px;
+    margin: 50px 0 40px;
   }
 
   .listBoxContainer {
@@ -166,18 +166,18 @@
   }
 
   /*
-    The images need to occupy additional vertical space,
-    so the text won't flow around.
-  */
-  .smileyImage {
-    margin-top: 55px;
-    margin-bottom: 55px;
-  }
+  The images need to occupy additional vertical space,
+  so the text won't flow around.
+   */
+.smileyImage {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
 
-  .pyramidImage {
-    margin-top: 65px;
-    margin-bottom: 75px;
-  }
+.pyramidImage {
+  margin-top: 65px;
+  margin-bottom: 75px;
+}
 }
 
 @media largeScreen {
@@ -200,6 +200,7 @@
 
   .content__title {
     padding-left: 10%;
+    margin: 60px 0 40px;
   }
 
   .content__paragraph,
