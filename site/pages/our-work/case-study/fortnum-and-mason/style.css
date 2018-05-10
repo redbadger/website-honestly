@@ -48,7 +48,7 @@
 .content__title {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 40px;
+  margin: 40px 0 30px;
 }
 
 .content__redTitle {
@@ -75,7 +75,10 @@
 }
 
 .devicesImage {
-  width: 100%;
+  width: 100vw;
+  margin-left: -20px;
+  margin-top: 40px;
+  display: block;
 }
 
 .listBoxContainer {
@@ -159,7 +162,7 @@
   }
 
   .content__title {
-    margin-top: 50px;
+    margin: 50px 0 40px;
   }
 }
 
@@ -194,6 +197,8 @@
   .devicesImage {
     padding-left: calc(30% - 50px);
     padding-right: 3%;
+    width: 100%;
+    margin-left: 0;
   }
 
   .videoContainer {
@@ -208,5 +213,6 @@
 
   .content__title {
     padding-left: 10%;
+    margin: 60px 0 40px;
   }
 }
