@@ -1,0 +1,24 @@
+.hubspotBtn {
+  display: inline-block;
+}
+
+.hubspotBtn a {
+  display: inline-block;
+  position: relative;
+}
+
+.hubspotBtn a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.hubspotBtn:hover a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-size: 100% 100%;
+}
+
