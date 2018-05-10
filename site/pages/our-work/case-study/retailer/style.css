@@ -95,7 +95,7 @@
 }
 
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .content__wrapper {
@@ -224,7 +224,7 @@
 @media largeScreen {
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 20px 120px 100px;
     margin: auto;
   }
 

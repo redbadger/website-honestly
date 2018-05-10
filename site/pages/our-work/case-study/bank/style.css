@@ -14,7 +14,7 @@
 }
 
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .content__wrapper {
@@ -112,7 +112,7 @@
 
 @media mediumScreen {
   .content {
-    padding: 0 0 60px;
+    padding: 0 0 80px;
   }
 
   .content__wrapper {
@@ -169,21 +169,21 @@
   The images need to occupy additional vertical space,
   so the text won't flow around.
    */
-.smileyImage {
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
+  .smileyImage {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
 
-.pyramidImage {
-  margin-top: 65px;
-  margin-bottom: 75px;
-}
+  .pyramidImage {
+    margin-top: 65px;
+    margin-bottom: 75px;
+  }
 }
 
 @media largeScreen {
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 20px 120px 100px;
     margin: auto;
   }
 

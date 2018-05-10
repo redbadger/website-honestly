@@ -28,7 +28,7 @@
 }
 
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .content__list {
@@ -81,6 +81,10 @@
 
 .content__wrapper {
   padding: 0 20px 20px;
+}
+
+.content__wrapper:last-child {
+  padding-bottom: 0;
 }
 
 .header {
@@ -260,7 +264,7 @@
 
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 20px 120px 100px;
     margin: auto;
   }
 

@@ -35,11 +35,11 @@
 }
 
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .content__wrapper {
-  padding: 0 20px 20px;
+  padding: 0 20px 0;
 }
 
 .content__mainTitleWrapper {
@@ -77,6 +77,10 @@
 
 .content__paragraph {
   margin-bottom: 20px;
+}
+
+.content__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .content__list {
@@ -140,7 +144,7 @@
   }
 
   .content__wrapper {
-    padding: 0 20px 20px;
+    padding: 0 20px 0;
   }
 
   .content__paragraph {
@@ -196,7 +200,7 @@
 
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 20px 120px 100px;
     margin: auto;
   }
 
