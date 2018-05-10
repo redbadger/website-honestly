@@ -1,65 +1,62 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable react/no-danger */
 // @flow
 
-import React from 'react';
-import ReactGA from 'react-ga';
+import React, { Fragment } from 'react';
 import styles from './style.css';
 
 import BlogSlice from './blog-slice';
 import WebinarSignupSlice from './webinar-signup-slice';
 import { TechChecklist } from '../../slices/checklist-contact-us-slice';
-import HubspotButtons from './hubspot-buttons';
 
-import techRoundTableImage from './images/techroundtable.png';
+import { WhiteSlice, GreenSlice } from '../../components/slice';
+import { RoundtableHubspotButton } from '../../components/buttons';
+import { P, H1, H2, H3 } from '../../components/text';
+import Image from '../../components/image';
 
-export type TechPageProps = {
+import roundTableImage from './images/2018-april-roundtable.png';
+import roundTableImage2x from './images/2018-april-roundtable@2x.png';
+import roundTableImage3x from './images/2018-april-roundtable@3x.png';
+
+type Props = {
   triedAndTestedBlogPosts: Array<Object>,
   growingTrendsBlogPosts: Array<Object>,
 };
 
-const trackAnalytics = title => () =>
-  ReactGA.event({
-    category: 'TechnologyPage',
-    action: title,
-    label: `From: ${window.location.pathname}`,
-  });
-
-export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPageProps) => (
-  <div>
-    <div className={styles.introContainer}>
-      <section className={styles.intro}>
-        <section className={styles.leftContent}>
-          <div className={styles.innerContainer}>
-            <h1 className={styles.mainHeader}>Technology</h1>
-            <p className={styles.description}>
-              Technology doesn’t stand still and neither do we. Our team gets together on a regular
-              basis to discuss which technologies we’re using to solve difficult problems on our
-              projects, and which technologies are on our radar as ones to watch.
-            </p>
-            <div
-              className={styles.latestRoundTableLinkContainer}
-              onClick={trackAnalytics('RoundtablePDFLink')}
-            >
-              <div
-                className={`${styles.hubspotBtn} ${styles.readPdfReportWrapper}`}
-                dangerouslySetInnerHTML={HubspotButtons.roundtable}
-              />
-            </div>
+const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Props) => (
+  <Fragment>
+    <WhiteSlice>
+      <div className={styles.heading}>
+        <H1>We love tech, but we only choose what’s right for the job.</H1>
+      </div>
+    </WhiteSlice>
+    <GreenSlice>
+      <div className={styles.green}>
+        <div className={styles.left}>
+          <div className={styles.image}>
+            <H2 customClass={styles.roundTableHeading}>Tech Round Table</H2>
+            <Image src={roundTableImage} src2x={roundTableImage2x} src3x={roundTableImage3x} />
           </div>
-        </section>
-        <section className={styles.rightContent}>
-          <div className={styles.innerContainer}>
-            <img
-              className={styles.techRoundTable}
-              src={techRoundTableImage}
-              alt="tech roundtable"
+        </div>
+        <div className={styles.right}>
+          <div className={styles.roundTableSubHeading}>
+            <H3 type="fontM2">April 2018 Report</H3>
+          </div>
+          <div className={styles.description}>
+            <P customClass={styles.roundTableDescription}>
+              Technology doesn’t stand still and neither do we. Find out which new and fully adopted
+              technologies our team think are adding value.
+            </P>
+          </div>
+          <div className={styles.hubspotButtonWrapper}>
+            <RoundtableHubspotButton
+              analyticsTitle="RoundtablePDFLink"
+              analyticsCategory="TechnologyPage"
+              hubspotTitle="roundtableApril2018"
+              className={styles.readPdfReportWrapper}
             />
           </div>
-        </section>
-      </section>
-    </div>
-    <WebinarSignupSlice />
+        </div>
+      </div>
+    </GreenSlice>
     <section className={styles.pastAndFuture}>
       <div className={styles.leftBlogs}>
         <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and tested'} />
@@ -68,6 +65,9 @@ export default ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: TechPagePro
         <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing trends'} altStyle />
       </div>
     </section>
+    <WebinarSignupSlice />
     <TechChecklist />
-  </div>
+  </Fragment>
 );
+
+export default TechnologyPage;
