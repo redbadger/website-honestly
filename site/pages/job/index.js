@@ -25,11 +25,18 @@ type JobProps = {
   },
 };
 
+// Move this to GraphQl at nearest op:
+// workable does not provide a description without html,
+// so we use a naive regex to strip it.
+const removeHtml = (str: string) => {
+  return str.replace(/<\/?[a-z]+ ?\/?>/g, '');
+};
+
 export default function Job({ job }: JobProps) {
   const social = {
     title: job.title ? `${job.title} | Red Badger` : `Join us | Red Badger`,
     url: `https://red-badger.com/jobs/${job.slug}`,
-    description: job.description ? job.description.replace(/<\/* *[a-z]+>/g, '') : '',
+    description: job.description ? removeHtml(job.description) : '',
     metaImage,
   };
 
