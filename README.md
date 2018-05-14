@@ -14,6 +14,9 @@ Red Badger Website Episode 6: Return of the Jedi.
 
 ## Usage
 
+You will require the correct version of [Node.js](https://nodejs.org/en/) installed - check it in the `.node-version` file.
+On OSX you can use [nvm](https://github.com/creationix/nvm) and [avn](https://github.com/wbyoung/avn) to install and manage versions (avn will read the `.node-version` file).
+
 First set up your dev environment and install global dependencies:
 
 ```sh
