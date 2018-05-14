@@ -10,7 +10,9 @@ export type SocialProps = {
 };
 
 const metaImageOrigin = () => {
-  return typeof window === 'undefined' ? 'https://red-badger.com' : window.location.origin;
+  return process.env && process.env.URL_BASENAME
+    ? process.env.URL_BASENAME
+    : 'https://red-badger.com';
 };
 
 const Social = ({ title, description, metaImage, url }: SocialProps) => (
