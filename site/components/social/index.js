@@ -10,7 +10,7 @@ export type SocialProps = {
 };
 
 const baseUrl = () => {
-  if (window === 'undefined' || !!window.location) {
+  if (typeof window === 'undefined' || !!window.location) {
     return 'https://red-badger.com';
   }
 
