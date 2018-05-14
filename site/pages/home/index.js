@@ -8,7 +8,7 @@ import AwardsSlice from '../../slices/awards-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
 import NewsLetter from './newsletter-slice';
 import Social from '../../components/social';
-import metaImage from './meta-image.png';
+import metaImage from './meta-image.jpg';
 
 export default function HomePage() {
   const social = {
