@@ -13,7 +13,7 @@ import ClientLogosSlice from './client-logos-slice';
 import CaseStudyCell from './case-study-cell';
 import Social from '../../components/social';
 
-import metaImage from './meta-image.png';
+import metaImage from './meta-image.jpg';
 import HallerImage from './images/Hall.jpg';
 import HallerLogo from './images/haller.png';
 import BmwImage from './images/BM.jpg';
