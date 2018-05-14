@@ -4,6 +4,8 @@ import doPublish from './publish';
 import doSignUp from './mailchimp/sign-up/index';
 import doUpdateUser from './mailchimp/update-user/index';
 import doRegisterForWebinar from './webinar_registration';
+import doHubspotSignUp from './hubspot/sign-up/index';
+import doHubspotUpdateUser from './hubspot/update-user/index';
 
 bugsnag.register(process.env.BUGSNAG_KEY);
 bugsnag.configure({
@@ -43,3 +45,7 @@ export const signUp = errorHandlerWrapper(doSignUp);
 export const updateUser = errorHandlerWrapper(doUpdateUser);
 
 export const registerForWebinar = errorHandlerWrapper(doRegisterForWebinar);
+
+export const hubspotSignUp = errorHandlerWrapper(doHubspotSignUp);
+
+export const hubspotUpdateUser = errorHandlerWrapper(doHubspotUpdateUser);

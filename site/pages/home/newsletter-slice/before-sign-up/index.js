@@ -11,7 +11,7 @@ type BeforeSignUpProps = {
 };
 
 type BeforeSignUpState = {
-  email_address: string,
+  email: string,
   submitting: boolean,
 };
 
@@ -19,7 +19,7 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
   constructor(props: BeforeSignUpProps) {
     super(props);
     this.state = {
-      email_address: '', // eslint-disable-line camelcase
+      email: '', // eslint-disable-line camelcase
       submitting: false,
     };
   }
@@ -53,13 +53,13 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
 
         <form className={styles.form}>
           <div className={styles.formBlock}>
-            <label htmlFor="email_address" className={styles.formLabel}>
+            <label htmlFor="email" className={styles.formLabel}>
               Email
             </label>
             <input
               onChange={this.handleInputChange}
-              id="email_address"
-              name="email_address"
+              id="email"
+              name="email"
               type="email"
               placeholder="name@example.com"
               className={cx({

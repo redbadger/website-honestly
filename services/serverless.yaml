@@ -53,6 +53,20 @@ functions:
           path: webinar-registration
           method: post
           cors: true
+  hubspotSignUp:
+    handler: index.hubspotSignUp
+    events:
+      - http:
+          path: hubspot-list
+          method: post
+          cors: true
+  hubspotUpdateUser:
+    handler: index.hubspotUpdateUser
+    events:
+      - http:
+          path: hubspot-list
+          method: patch
+          cors: true
 
 
 resources:

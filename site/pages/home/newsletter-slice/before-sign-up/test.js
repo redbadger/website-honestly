@@ -7,7 +7,7 @@ describe('BeforeSignUp', () => {
   it('sets the initial state correctly', () => {
     const wrapper = shallow(<BeforeSignUp />);
     expect(wrapper.state()).to.deep.equal({
-      email_address: '',
+      email: '',
       submitting: false,
     });
   });
@@ -22,7 +22,7 @@ describe('BeforeSignUp', () => {
     };
     wrapper.instance().handleInputChange(event);
     expect(wrapper.state()).to.deep.equal({
-      email_address: '',
+      email: '',
       submitting: false,
       exampleName: 'exampleValue',
     });
@@ -32,7 +32,7 @@ describe('BeforeSignUp', () => {
     const wrapper = shallow(<BeforeSignUp />);
     wrapper.instance().componentWillReceiveProps();
     expect(wrapper.state()).to.deep.equal({
-      email_address: '',
+      email: '',
       submitting: false,
     });
   });
@@ -44,7 +44,7 @@ describe('BeforeSignUp', () => {
           json: () => {
             return {
               newsletterSubmitted: true,
-              email_address: 'jkdjksdhedw239e8h238u',
+              email: 'jkdjksdhedw239e8h238u',
               errorMessage: 'Example error message',
               updatedFormSubmitted: false,
             };
@@ -54,7 +54,7 @@ describe('BeforeSignUp', () => {
     const wrapper = shallow(<BeforeSignUp onSubmit={submitFormFunction} />);
     wrapper.instance().handleSubmit();
     expect(wrapper.state()).to.deep.equal({
-      email_address: '',
+      email: '',
       submitting: true,
     });
   });

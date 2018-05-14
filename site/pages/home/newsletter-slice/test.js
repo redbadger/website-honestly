@@ -1,5 +1,6 @@
 /* eslint-disable camelcase */
 import React from 'react';
+import nock from 'nock';
 import { shallow } from 'enzyme';
 import NewsLetter from '.';
 import AfterSignUp from './after-sign-up';
@@ -10,7 +11,7 @@ describe('Newsletter slice', () => {
     const wrapper = shallow(<NewsLetter />);
     expect(wrapper.state()).to.deep.equal({
       newsletterSubmitted: false,
-      email_address: '',
+      email: '',
       errorMessage: '',
       updatedFormSubmitted: false,
     });
@@ -28,49 +29,48 @@ describe('Newsletter slice', () => {
     });
     expect(wrapper.find(AfterSignUp)).to.have.length(1);
   });
+
   it('handles the error correctly when the user does not provide a full name in the second form', () => {
     const wrapper = shallow(<NewsLetter />);
-    wrapper.setState({
-      email_address: 'test@gmail.com',
-    });
-    const data = {
-      name: '',
-    };
+    const expectedUrl = 'https://example.com/';
+    nock(expectedUrl)
+      .post(/.*/, {})
+      .reply(200, '"Hello World"');
+    wrapper.setState({ email: 'test@gmail.com' });
+    const data = { name: '' };
     wrapper.instance().updateUser(data);
     expect(wrapper.state()).to.deep.equal({
-      newsletterSubmitted: true,
-      email_address: 'test@gmail.com',
+      email: 'test@gmail.com',
       errorMessage: 'Please tell us your name',
       updatedFormSubmitted: false,
+      newsletterSubmitted: false,
     });
   });
 
-  it('sets the state to the api response', done => {
-    const submitFormFunction = () =>
-      new Promise(resolve => {
-        resolve({
-          json: () => {
-            return {
-              newsletterSubmitted: false,
-              email_address: 'jkdjksdhedw239e8h238u@gmail.com',
-              errorMessage: 'Example error message',
-              updatedFormSubmitted: false,
-            };
-          },
-        });
-      });
-
+  it('sends the correct data to the api', done => {
     const wrapper = shallow(<NewsLetter />);
-    const promise = wrapper
+    const expectedUrl = 'https://example.com/';
+
+    nock(expectedUrl)
+      .patch(/.*/, {
+        email: 'test@gmail.com',
+        name: 'Bob',
+        hutk: '',
+        pageUrl: 'about:blank',
+        pageName: '',
+      })
+      .reply(200, '"Hello World"');
+
+    wrapper.setState({ email: 'test@gmail.com' });
+    wrapper
       .instance()
-      .submitForm({ email_address: 'jkdjksdhedw239e8h238u@gmail.com' }, 'POST', submitFormFunction);
-    promise
+      .updateUser({ name: 'Bob' })
       .then(() => {
         expect(wrapper.state()).to.deep.equal({
           newsletterSubmitted: false,
-          email_address: 'jkdjksdhedw239e8h238u@gmail.com',
-          errorMessage: 'Example error message',
-          updatedFormSubmitted: false,
+          email: 'test@gmail.com',
+          errorMessage: '',
+          updatedFormSubmitted: true,
         });
         done();
       })
