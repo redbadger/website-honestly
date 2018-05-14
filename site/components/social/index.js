@@ -6,7 +6,7 @@ export type SocialProps = {
   title: string,
   description: string,
   metaImage: string,
-  url: string,
+  url?: string,
 };
 
 const Social = ({ title, description, metaImage, url }: SocialProps) => (
@@ -18,11 +18,10 @@ const Social = ({ title, description, metaImage, url }: SocialProps) => (
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: `https://red-badger.com${metaImage}` },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: url },
       { property: 'og:title', content: title },
       { property: 'og:image', content: `https://red-badger.com${metaImage}` },
       { property: 'og:description', content: description },
-    ]}
+    ].concat(url ? [{ property: 'og:url', content: url }] : [])}
   />
 );
 
