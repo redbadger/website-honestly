@@ -9,20 +9,8 @@ export type SocialProps = {
   url: string,
 };
 
-const baseUrl = () => {
-  if (typeof window === 'undefined' || !window.location) {
-    return 'https://red-badger.com';
-  }
-
-  const { host, pathname, origin } = window.location;
-  const staging = /^www-staging/.test(host);
-  const branch = pathname.match(/\/(\d+)\//);
-
-  if (staging && branch) {
-    return `${origin}/${branch}`;
-  }
-
-  return origin;
+const metaImageOrigin = () => {
+  return typeof window === 'undefined' ? 'https://red-badger.com' : window.location.origin;
 };
 
 const Social = ({ title, description, metaImage, url }: SocialProps) => (
@@ -32,11 +20,11 @@ const Social = ({ title, description, metaImage, url }: SocialProps) => (
       { name: 'twitter:site', content: '@redbadgerteam' },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: `${baseUrl()}${metaImage}` },
+      { name: 'twitter:image', content: `${metaImageOrigin()}${metaImage}` },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: url },
       { property: 'og:title', content: title },
-      { property: 'og:image', content: `${baseUrl()}${metaImage}` },
+      { property: 'og:image', content: `${metaImageOrigin()}${metaImage}` },
       { property: 'og:description', content: description },
     ]}
   />
