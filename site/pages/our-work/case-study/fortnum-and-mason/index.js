@@ -22,7 +22,7 @@ import Picture from '../../../../components/picture';
 const cx = classnames.bind(styles);
 
 const social = {
-  title: 'Fortnum & Mason’s website increases revenue and conversion rates',
+  title: 'Fortnum & Mason’s website increases revenue and conversion rates | Red Badger',
   description: 'Multiple award winning site increases conversion, sales and mobile visits.',
   metaImage,
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason',

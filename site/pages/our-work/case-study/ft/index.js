@@ -17,7 +17,7 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 const social = {
-  title: 'The proof is in the pudding',
+  title: 'Lasting change for a media giant | Red Badger',
   description:
     'Read how we delivered the next generation ft.com homepage and successfully integrated UX and design across all other streams.',
   metaImage,

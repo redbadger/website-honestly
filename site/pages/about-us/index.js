@@ -20,7 +20,7 @@ type AboutUsProps = {
 };
 
 const social = {
-  title: 'About Us',
+  title: 'About Us | Red Badger',
   description:
     'Founded by Dave, Stu and Cain in 2010 we are an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.',
   metaImage,

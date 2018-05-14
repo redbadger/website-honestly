@@ -38,7 +38,7 @@ type EventProps = {
 
 export default function Event({ event }: EventProps) {
   const social = {
-    title: event.title,
+    title: `${event.title} | Red Badger`,
     description: event.strapline,
     metaImage,
   };

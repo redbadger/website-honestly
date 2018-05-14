@@ -16,7 +16,7 @@ import ContactBox from '../../../../components/contact-box';
 const cx = classnames.bind(styles);
 
 const social = {
-  title: 'The proof is in the pudding',
+  title: 'Next generation platform for retail giant | Red Badger',
   description:
     'Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.',
   metaImage,

@@ -24,7 +24,7 @@ type Props = {
 const social = {
   title: 'Events | Red Badger',
   description:
-    'Upcoming events including WeLove_Tech, React London Community, UXD exchange and more.',
+    'Upcoming events including We Love _ Tech, React London Community, UXD exchange and more.',
   metaImage,
   url: 'https://red-badger.com/events',
 };

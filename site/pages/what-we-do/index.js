@@ -87,7 +87,7 @@ function CaseStudies() {
 
 export default function whatWeDo() {
   const social = {
-    title: 'What we do at Red Badger',
+    title: 'What we do | Red Badger',
     description:
       'We help you bring innovative products and services to market through nimble and robust ways of working.',
     metaImage,

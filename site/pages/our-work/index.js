@@ -23,12 +23,13 @@ import SkyLogo from './client-logos-slice/images/sky.png';
 
 export default function CaseStudies() {
   const social = {
-    title: 'Our work',
+    title: 'Our work | Red Badger',
     description:
       'Find out how we’ve helped e-commerce, media, financial and technology companies deliver digital products that make a difference.',
     metaImage,
     url: 'https://red-badger.com/our-work',
   };
+
   return (
     <div>
       <Social {...social} />

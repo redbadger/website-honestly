@@ -22,7 +22,7 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 const cx = classnames.bind(styles);
 
 const social = {
-  title: 'The proof is in the pudding',
+  title: 'Digital transformation in retail banking | Red Badger',
   description:
     'Discover how we delivered quality digital products to customers quickly, built capability and changed the culture to increase business efficiency in one of the world’s largest banks.',
   metaImage,
