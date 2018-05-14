@@ -8,7 +8,7 @@ import CrossFunctionalSlice from './cross-functional-slice';
 import Link from '../../components/link';
 import Social from '../../components/social';
 
-import metaImage from './meta-image.png';
+import metaImage from './meta-image.jpg';
 import bankGif from './GIF/bank.gif';
 import financialTimesJpg from './JPG/financialtimes.jpg';
 import fortnumJpg from './JPG/fortnum.jpg';
@@ -89,7 +89,7 @@ export default function whatWeDo() {
   const social = {
     title: 'What we do at Red Badger',
     description:
-      'Through vision, validation and delivery learn how we use Lean and Technology to make things better.',
+      'We help you bring innovative products and services to market through nimble and robust ways of working.',
     metaImage,
     url: 'https://red-badger.com/what-we-do',
   };
