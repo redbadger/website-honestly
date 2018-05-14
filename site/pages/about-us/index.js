@@ -6,6 +6,10 @@ import PrinciplesSlice from './principles-slice';
 import SocialSlice from './social-slice';
 import QAndASlice from './q-and-a-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
+import Social from '../../components/social';
+
+import metaImage from './meta-image.jpg';
+
 import type { Tweet, InstagramPost } from '../../types/';
 import type { CategoryProps } from './q-and-a-slice/category';
 
@@ -15,9 +19,18 @@ type AboutUsProps = {
   qAndAs: Array<CategoryProps>,
 };
 
+const social = {
+  title: 'About Us',
+  description:
+    'Founded by Dave, Stu and Cain in 2010 we are an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.',
+  metaImage,
+  url: 'https://red-badger.com/about-us',
+};
+
 const AboutUs = ({ tweets, instagramPosts, qAndAs }: AboutUsProps) => {
   return (
     <div>
+      <Social {...social} />
       <PrinciplesSlice />
       <TimelineSlice />
       <ChecklistContactUs />
