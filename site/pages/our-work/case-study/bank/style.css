@@ -14,11 +14,21 @@
 }
 
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .content__wrapper {
-  padding: 20px;
+  padding: 0 20px 20px;
+}
+
+.content__mainTitleWrapper {
+  padding: 30px 20px 40px;
+}
+
+.content__mainTitleWrapper + .content__wrapper h2,
+.content__mainTitleWrapper + .content__wrapper {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .content__wrapper::after {
@@ -30,13 +40,13 @@
 .content__mainTitle {
   composes: fontL from '../../../../css/typography/_fonts.css';
   composes: serif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 30px;
+  margin: 0;
 }
 
 .content__title {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 40px;
+  margin: 40px 0 30px;
 }
 
 .content__redTitle {
@@ -102,12 +112,16 @@
 
 @media mediumScreen {
   .content {
-    padding: 20px 0 60px;
+    padding: 0 0 80px;
   }
 
   .content__wrapper {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .content__mainTitleWrapper {
+    padding: 40px 20px 50px;
   }
 
   .content__paragraph,
@@ -138,12 +152,8 @@
     padding-left: 134px;
   }
 
-  .content__mainTitle {
-    margin-bottom: -20px;
-  }
-
   .content__title {
-    margin-top: 60px;
+    margin: 50px 0 40px;
   }
 
   .listBoxContainer {
@@ -156,9 +166,9 @@
   }
 
   /*
-    The images need to occupy additional vertical space,
-    so the text won't flow around.
-  */
+  The images need to occupy additional vertical space,
+  so the text won't flow around.
+   */
   .smileyImage {
     margin-top: 55px;
     margin-bottom: 55px;
@@ -173,12 +183,24 @@
 @media largeScreen {
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 20px 120px 100px;
     margin: auto;
   }
 
   .content__wrapper {
     padding: 0;
+  }
+
+  .content__mainTitleWrapper {
+    background-color: badgerWhite;
+    padding: 20px 20px 60px;
+    margin-top: -96px;
+    position: relative;
+  }
+
+  .content__title {
+    padding-left: 10%;
+    margin: 60px 0 40px;
   }
 
   .content__paragraph,
@@ -195,20 +217,6 @@
   .content__list {
     padding-left: 33.457143%;
     padding-right: 18.2857143%;
-  }
-
-  .content__mainTitle {
-    position: relative;
-    top: -96px;
-    display: block;
-    padding: 20px 20px 0;
-    height: 100%;
-    background-color: badgerWhite;
-    margin-bottom: -96px;
-  }
-
-  .content__title {
-    padding-left: 10%;
   }
 
   .listBoxContainer {

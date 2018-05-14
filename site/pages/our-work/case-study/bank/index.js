@@ -38,7 +38,7 @@ const CaseStudyBank = () => (
       />
     </div>
     <div className={styles.content}>
-      <div className={styles.content__wrapper}>
+      <div className={styles.content__mainTitleWrapper}>
         <h1 className={styles.content__mainTitle}>
           Digital transformation at one of the world’s largest banks
         </h1>

@@ -42,9 +42,11 @@ const CaseStudyFortnumAndMason = () => (
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
-        <h1 className={styles.content__mainTitle}>
-          Fortnum & Mason’s new, elegant website increases revenue and conversion rates
-        </h1>
+        <div className={styles.content__mainTitleWrapper}>
+          <h1 className={styles.content__mainTitle}>
+            Fortnum & Mason’s new, elegant website increases revenue and conversion rates
+          </h1>
+        </div>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>{"Let's make things better."}</span>
           Scaling the site, decreasing drop-outs and bringing the in-store experience, online
@@ -77,15 +79,11 @@ const CaseStudyFortnumAndMason = () => (
           and delivery to more than 130 countries. A scalable, highly flexible new site was needed,
           and very quickly to avoid more lost revenue.
         </p>
-      </div>
-      <div>
         <img
           src={devicesImage}
           className={styles.devicesImage}
           alt="Fortnum & Mason website on desktop, tablet and mobile devices"
         />
-      </div>
-      <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>
             {'Do the right thing. Do the thing right.'}
@@ -138,8 +136,6 @@ const CaseStudyFortnumAndMason = () => (
           approach also meant that overall the project has achieved a complete re-platform and
           design from concept through to delivery, in just eight months and for under £1.3 milllion.
         </p>
-      </div>
-      <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>{'Creating lasting change.'}</span>
           Increasing conversion, sales and mobile visits and winning multiple awards

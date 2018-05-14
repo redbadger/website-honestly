@@ -32,7 +32,7 @@ const SkyCmsCaseStudy = () => (
       </div>
     </div>
     <div className={styles.content}>
-      <div className={styles.content__wrapper}>
+      <div className={styles.content__mainTitleWrapper}>
         <h1 className={styles.content__mainTitle}>
           Bespoke and made from scratch: a new CMS just for Sky
         </h1>

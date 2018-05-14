@@ -5,6 +5,7 @@
 @value linesOnWhite from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../../../css/_sizes.css';
 
+
 .caseStudy {
   composes: fontXS from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
@@ -16,7 +17,6 @@
 .header {
   width: 100%;
   background-color: #c3cfd7;
-  margin-bottom: 10px;
 }
 
 .header__container {
@@ -36,28 +36,30 @@
 }
 
 .content {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .content__wrapper {
-  padding: 20px 20px 20px;
+  padding: 0 20px 0;
 }
 
+.content__mainTitleWrapper {
+  padding: 30px 20px 30px;
+}
+
+.content__mainTitleWrapper + .overview .quote {
+  margin-top: 0;
+}
 .content__mainTitle {
   composes: fontL from '../../../../css/typography/_fonts.css';
   composes: serif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 .content__title {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-.content__title:first-child {
-  margin-top: 5px;
+  margin: 40px 0 30px;
 }
 
 .content__redTitle {
@@ -76,6 +78,10 @@
 
 .content__paragraph {
   margin-bottom: 20px;
+}
+
+.content__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .content__list {
@@ -102,7 +108,7 @@
 
 .listBoxContainer {
   width: 100%;
-  margin: 0 auto 25px;
+  margin: 0 auto;
 }
 
 .listBox__label {
@@ -139,7 +145,7 @@
   }
 
   .content__wrapper {
-    padding: 30px 20px 20px;
+    padding: 0 20px 0;
   }
 
   .content__paragraph {
@@ -150,14 +156,12 @@
     padding-left: 114px;
   }
 
-  .content__mainTitle {
-    margin-bottom: 9px;
+  .content__mainTitleWrapper {
+    padding: 40px 20px 30px;
   }
 
-  .content__title,
-  .content__title:first-child {
-    margin-top: 50px;
-    margin-bottom: 40px;
+  .content__title {
+    margin: 50px 0 40px;
   }
 
   .overview {
@@ -197,7 +201,7 @@
 
   .content {
     max-width: 1400px;
-    padding: 20px 120px 60px;
+    padding: 20px 120px 100px;
     margin: auto;
   }
 
@@ -206,24 +210,22 @@
     padding-right: 0;
   }
 
+  .content__mainTitleWrapper {
+    background-color: badgerWhite;
+    padding: 20px 20px 40px;
+    margin-top: -96px;
+    position: relative;
+  }
+
   .content__paragraph,
   .content__secondaryTitle {
     padding-left: 30%;
     padding-right: 10%;
   }
 
-  .content__mainTitle {
-    position: relative;
-    top: -96px;
-    display: block;
-    padding: 20px;
-    height: 100%;
-    background-color: badgerWhite;
-    margin-bottom: -73px;
-  }
-
   .content__title {
     padding-left: 10%;
+    margin: 60px 0 40px;
   }
 
   .header {

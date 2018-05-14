@@ -43,9 +43,11 @@ const CaseStudyRetailer = () => (
     </div>
     <div className={styles.content}>
       <div className={styles.content__wrapper}>
-        <h1 className={styles.content__mainTitle}>
-          Next generation platform for retail giant cleared five-year backlog in just eight months
-        </h1>
+        <div className={styles.content__mainTitleWrapper}>
+          <h1 className={styles.content__mainTitle}>
+            Next generation platform for retail giant cleared five-year backlog in just eight months
+          </h1>
+        </div>
         <h2 className={styles.content__title}>
           <span className={styles.content__redTitle}>{"Let's make things better."}</span>
           Solving high drop-out rates
