@@ -7,21 +7,35 @@ import Container from '../../components/container';
 import Section from '../../components/section';
 import Note from '../../components/note';
 import Hr from '../../components/hr';
-import styles from './style.css';
-import typography from '../../components/component-renderer/styles.css';
 import Link from '../../components/link';
+import Social from '../../components/social';
+
+import metaImage from './meta-image.jpg';
+
+import typography from '../../components/component-renderer/styles.css';
+import styles from './style.css';
 
 type JobProps = {
   job: {
     title?: string,
+    description?: string,
     fullDescription: string,
     applicationUrl?: string,
+    slug: string,
   },
 };
 
 export default function Job({ job }: JobProps) {
+  const social = {
+    title: job.title ? `${job.title} | Red Badger` : `Join us | Red Badger`,
+    url: `https://red-badger.com/jobs/${job.slug}`,
+    description: job.description ? job.description.replace(/<\/* *[a-z]+>/g, '') : '',
+    metaImage,
+  };
+
   return (
     <div className={styles.background}>
+      <Social {...social} />
       <Section>
         <Container>
           <Grid>
