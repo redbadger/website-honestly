@@ -4,6 +4,7 @@ import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
+import metaImage from './meta-image.jpg';
 import headerImage from './images/header.gif';
 import authorQuoteImage from './images/quote-author.jpg';
 import pyramidImage from './images/pyramid.png';
@@ -22,8 +23,9 @@ const cx = classnames.bind(styles);
 
 const social = {
   title: 'The proof is in the pudding',
-  description: 'Digital transformation at one of the world’s largest banks',
-  metaImage: headerImage,
+  description:
+    'Discover how we delivered quality digital products to customers quickly, built capability and changed the culture to increase business efficiency in one of the world’s largest banks.',
+  metaImage,
   url: 'https://red-badger.com/our-work/case-study/financial-services-digital-transformation',
 };
 

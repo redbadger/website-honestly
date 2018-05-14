@@ -5,7 +5,7 @@ import styles from './style.css';
 
 import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
-import metaImage from './images/meta-image.jpg';
+import metaImage from './meta-image.jpg';
 
 import WhatToReadNext from '../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
@@ -18,7 +18,7 @@ const cx = classnames.bind(styles);
 const social = {
   title: 'The proof is in the pudding',
   description:
-    'Next generation platform for retail giant cleared five-year backlog in just eight months',
+    'Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.',
   metaImage,
   url: 'https://red-badger.com/our-work/case-study/retailer',
 };
