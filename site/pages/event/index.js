@@ -8,8 +8,10 @@ import Link from '../../components/link';
 import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventMeta from '../../components/event-meta';
+import Social from '../../components/social';
 import type { LinkList } from '../../pages/event/event-links-list';
 
+import metaImage from './meta-image.jpg';
 import styles from './style.css';
 
 import { setEndDate } from '../../fetchers/util/events';
@@ -35,8 +37,15 @@ type EventProps = {
 };
 
 export default function Event({ event }: EventProps) {
+  const social = {
+    title: event.title,
+    description: event.strapline,
+    metaImage,
+  };
+
   return (
     <div className={styles.background}>
+      <Social {...social} />
       <Section>
         <Container>
           <div className={styles.mainContainer}>
