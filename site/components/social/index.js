@@ -9,12 +9,6 @@ export type SocialProps = {
   url: string,
 };
 
-const metaImageOrigin = () => {
-  return process.env && process.env.URL_BASENAME
-    ? process.env.URL_BASENAME
-    : 'https://red-badger.com';
-};
-
 const Social = ({ title, description, metaImage, url }: SocialProps) => (
   <Helmet
     meta={[
@@ -22,11 +16,11 @@ const Social = ({ title, description, metaImage, url }: SocialProps) => (
       { name: 'twitter:site', content: '@redbadgerteam' },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: `${metaImageOrigin()}${metaImage}` },
+      { name: 'twitter:image', content: `https://red-badger.com${metaImage}` },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: url },
       { property: 'og:title', content: title },
-      { property: 'og:image', content: `${metaImageOrigin()}${metaImage}` },
+      { property: 'og:image', content: `https://red-badger.com${metaImage}` },
       { property: 'og:description', content: description },
     ]}
   />
