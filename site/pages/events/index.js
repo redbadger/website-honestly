@@ -6,6 +6,9 @@ import Section from '../../components/section';
 import styles from './style.css';
 import EventsList from './events-list';
 import EventsBanner from '../../components/events-banner';
+import Social from '../../components/social';
+
+import metaImage from './meta-image.jpg';
 
 type Props = {
   events: Array<Object>, // TODO: Add correct event type
@@ -18,9 +21,18 @@ type Props = {
   },
 };
 
+const social = {
+  title: 'Events | Red Badger',
+  description:
+    'Upcoming events including We Love _ Tech, React London Community, UXD exchange and more.',
+  metaImage,
+  url: 'https://red-badger.com/events',
+};
+
 export default function Events({ events, eventsBanner }: Props) {
   return (
     <div className={styles.events}>
+      <Social {...social} />
       <h1 className={styles.h1}>Events</h1>
       {eventsBanner && <EventsBanner {...eventsBanner} />}
       <Section>
