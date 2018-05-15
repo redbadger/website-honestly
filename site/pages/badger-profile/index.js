@@ -6,6 +6,8 @@ import SocialContacts from './social-contacts';
 import Link from '../../components/link';
 import Social from '../../components/social';
 
+import metaImage from './meta-image.jpg';
+
 import type { Badger } from '../../types';
 
 const BlogsLink = ({ badger }: { badger: Badger }) => {
@@ -28,7 +30,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const social = {
     title: `${fullName} | Red Badger`,
     description: badger.jobTitle,
-    metaImage: badger.secondaryImageUrl || badger.primaryImageUrl,
+    metaImage,
     url: `https://red-badger.com/people${[badger.firstName, badger.lastName]
       .join('-')
       .toLowerCase()}`,
