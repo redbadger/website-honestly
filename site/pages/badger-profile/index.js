@@ -4,6 +4,9 @@ import React from 'react';
 import styles from './style.css';
 import SocialContacts from './social-contacts';
 import Link from '../../components/link';
+import Social from '../../components/social';
+
+import metaImage from './meta-image.jpg';
 
 import type { Badger } from '../../types';
 
@@ -24,8 +27,18 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   badger.categories.sort((a, b) => a.order - b.order);
   const categories = badger.categories.map(c => c.name).join(', ');
+  const social = {
+    title: `${fullName} | Red Badger`,
+    description: badger.jobTitle,
+    metaImage,
+    url: `https://red-badger.com/people${[badger.firstName, badger.lastName]
+      .join('-')
+      .toLowerCase()}`,
+  };
+
   return (
     <div className={styles.badgerProfile}>
+      <Social {...social} />
       <div className={styles.profileContainer}>
         <div className={styles.profilePictureContainer}>
           <img

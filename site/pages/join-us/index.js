@@ -10,6 +10,9 @@ import Video from '../../components/video';
 import HR from '../../components/hr';
 import Picture from '../../components/picture';
 import HeaderContainer from './header-container';
+import Social from '../../components/social';
+
+import metaImage from './meta-image.jpg';
 import bestCompanyLogo from './2018-best-small-companies-logo.jpg';
 
 const join = {
@@ -95,8 +98,17 @@ type Props = {
   jobs: Array<Job>,
 };
 
+const social = {
+  title: 'Join us | Red Badger',
+  description:
+    'We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.',
+  metaImage,
+  url: 'https://red-badger/jobs',
+};
+
 const JoinUs = ({ jobs }: Props) => (
   <div className={styles.background}>
+    <Social {...social} />
     <Section>
       <Container>
         <HeaderContainer />

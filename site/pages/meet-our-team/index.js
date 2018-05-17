@@ -5,13 +5,13 @@ import Social from '../../components/social';
 import TeamSlice from './team-slice';
 import styles from './style.css';
 import type { Badger } from './team-slice/badger-profile';
-import metaImage from './meta-image.png';
+import metaImage from './meta-image.jpg';
 
 const social = {
-  title: 'We’re people people.',
-  description: 'Find out more about the people behind (or who work at) Red Badger.',
+  title: 'We’re people people | Red Badger',
+  description: 'Learn more about the team',
   metaImage,
-  url: 'https://red-badger.com/about-us/people',
+  url: 'https://red-badger.com/people',
 };
 
 const getTeam = (badgers, category) => {

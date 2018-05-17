@@ -3,6 +3,7 @@ import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
+import metaImage from './meta-image.jpg';
 import headerImageLarge from './images/header-large.jpg';
 import headerImageMedium from './images/header-medium.jpg';
 import headerImageSmall from './images/header-small.jpg';
@@ -21,10 +22,9 @@ import Picture from '../../../../components/picture';
 const cx = classnames.bind(styles);
 
 const social = {
-  title: 'The proof is in the pudding',
-  description:
-    'Next generation platform for retail giant cleared five-year backlog in just eight months',
-  devicesImage,
+  title: 'Fortnum & Mason’s website increases revenue and conversion rates | Red Badger',
+  description: 'Multiple award winning site increases conversion, sales and mobile visits.',
+  metaImage,
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason',
 };
 

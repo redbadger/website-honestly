@@ -13,7 +13,7 @@ import ClientLogosSlice from './client-logos-slice';
 import CaseStudyCell from './case-study-cell';
 import Social from '../../components/social';
 
-import metaImage from './meta-image.png';
+import metaImage from './meta-image.jpg';
 import HallerImage from './images/Hall.jpg';
 import HallerLogo from './images/haller.png';
 import BmwImage from './images/BM.jpg';
@@ -23,12 +23,13 @@ import SkyLogo from './client-logos-slice/images/sky.png';
 
 export default function CaseStudies() {
   const social = {
-    title: 'Our work',
+    title: 'Our work | Red Badger',
     description:
       'Find out how we’ve helped e-commerce, media, financial and technology companies deliver digital products that make a difference.',
     metaImage,
     url: 'https://red-badger.com/our-work',
   };
+
   return (
     <div>
       <Social {...social} />

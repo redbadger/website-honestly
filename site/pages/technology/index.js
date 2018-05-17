@@ -11,18 +11,30 @@ import { WhiteSlice, GreenSlice } from '../../components/slice';
 import { RoundtableHubspotButton } from '../../components/buttons';
 import { P, H1, H2, H3 } from '../../components/text';
 import Image from '../../components/image';
+import Social from '../../components/social';
 
 import roundTableImage from './images/2018-april-roundtable.png';
 import roundTableImage2x from './images/2018-april-roundtable@2x.png';
 import roundTableImage3x from './images/2018-april-roundtable@3x.png';
+
+import metaImage from './meta-image.jpg';
 
 type Props = {
   triedAndTestedBlogPosts: Array<Object>,
   growingTrendsBlogPosts: Array<Object>,
 };
 
+const social = {
+  title: 'Technology | Red Badger',
+  description:
+    'We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery to quickly create value for customers.',
+  metaImage,
+  url: 'https://red-badger.com/technology',
+};
+
 const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Props) => (
   <Fragment>
+    <Social {...social} />
     <WhiteSlice>
       <div className={styles.heading}>
         <H1>We love tech, but we only choose what’s right for the job.</H1>
