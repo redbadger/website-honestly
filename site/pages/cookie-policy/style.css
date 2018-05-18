@@ -1,0 +1,29 @@
+.pageHeading {
+  padding-bottom: 30px;
+}
+
+.box {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.numberContainer {
+  padding-right: 30px;
+}
+
+.number {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.underline {
+  background-color: red;
+  height: 5px;
+}
+
+.policyHeading {
+  padding-bottom: 10px;
+}
+.policyText {}

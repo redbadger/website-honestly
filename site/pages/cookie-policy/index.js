@@ -2,7 +2,9 @@
 import React, { Fragment } from 'react';
 import Social from '../../components/social';
 import { P, H1, H2 } from '../../components/text';
+import { WhiteSlice } from '../../components/slice';
 import metaImage from '../home/meta-image.jpg';
+import styles from './style.css';
 
 const social = {
   title: 'Red Badger',
@@ -34,10 +36,17 @@ type Policy = {
 };
 
 const PolicyBox = ({ number, heading, body }: Policy) => (
-  <div>
-    <span>{number}</span>
-    <H2 type="fontM2">{heading}</H2>
-    <P>{body}</P>
+  <div className={styles.box}>
+    <div className={styles.numberContainer}>
+      <span className={styles.number}>{number}</span>
+      <div className={styles.underline} />
+    </div>
+    <div className={styles.policyText}>
+      <H2 type="fontM2" customClass={styles.policyHeading}>
+        {heading}
+      </H2>
+      <P>{body}</P>
+    </div>
   </div>
 );
 
@@ -45,8 +54,12 @@ const CookiePolicyPage = () => {
   return (
     <Fragment>
       <Social {...social} />
-      <H1 type="fontL">Cookie Policy</H1>
-      {policies.map(policy => <PolicyBox {...policy} />)}
+      <WhiteSlice>
+        <div className={styles.pageHeading}>
+          <H1 type="fontL">Cookies Policy</H1>
+        </div>
+        {policies.map(policy => <PolicyBox {...policy} />)}
+      </WhiteSlice>
     </Fragment>
   );
 };
