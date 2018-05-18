@@ -1,14 +1,51 @@
-.pageHeading {
-  padding-bottom: 30px;
+@value badgerRed, badgerBlack, badgerRedOnWhite, badgerRedOnBlack from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.simpleHeading {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.container {
+  padding: 30px 20px 60px;
+}
+
+.container a {
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRedOnWhite;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.container a:hover,
+.container a:focus {
+  color: badgerRedOnWhite;
+  border-bottom: 1px solid badgerRedOnBlack;
 }
 
 .box {
   display: flex;
-  padding-bottom: 20px;
 }
 
 .numberContainer {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .number {
@@ -16,6 +53,8 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 5px solid badgerRed;
 }
 
 .underline {
@@ -26,4 +65,28 @@
 .policyHeading {
   padding-bottom: 10px;
 }
-.policyText {}
+
+.policyText {
+  max-width: 610px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media mediumScreen {
+  .container {
+    margin: 0 auto;
+    max-width: 690px;
+  }
+
+  .container a {
+    word-break: normal;
+  }
+
+  .pageHeading {
+    padding-left: 46px;
+  }
+
+  .numberContainer {
+    margin-top: 8px;
+  }
+}
