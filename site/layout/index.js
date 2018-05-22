@@ -20,9 +20,7 @@ export default class Layout extends React.Component {
     return { stateNavigator: this.props.stateNavigator };
   }
 
-  updateCallback = () => {
-    this.forceUpdate();
-  };
+  updateCallback = () => this.forceUpdate();
 
   render() {
     const cookiesAccepted = getCookieValue('_cookies') === 'true';
