@@ -15,7 +15,13 @@ const social = {
   url: 'cookie-policy',
 };
 
-const P = ({ children, customClass = styles.mb10 }: { children: React.Node, customClass?: string }) => {
+const P = ({
+  children,
+  customClass = styles.mb10,
+}: {
+  children: React.Node,
+  customClass?: string,
+}) => {
   return <BaseParagraph customClass={customClass}>{children}</BaseParagraph>;
 };
 
@@ -172,8 +178,8 @@ const policies = [
           <P>
             This cookie is used to identify trusted web traffic. It does not correspond to any user
             id in the web application, nor does the cookie store any personally identifiable
-            information. This cookie is set by Hubspot and their privacy policy can be found at
-            {' '}<a href="https://legal.hubspot.com/privacy-policy">
+            information. This cookie is set by Hubspot and their privacy policy can be found at{' '}
+            <a href="https://legal.hubspot.com/privacy-policy">
               https://legal.hubspot.com/privacy-policy
             </a>.
           </P>

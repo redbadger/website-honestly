@@ -15,10 +15,6 @@ html {
   overflow-y: auto;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 button {
   border-radius: 0;
 }
