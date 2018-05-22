@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable react/no-unescaped-entities */
 
-import React from 'react';
+import React, { Fragment } from 'react';
 import Social from '../../components/social';
 import { H1, H2 } from '../../components/text';
 import metaImage from '../home/meta-image.jpg';
@@ -39,7 +39,7 @@ const PolicyBox = ({ number, heading, body }: Policy) => (
 
 const CookiePolicyPage = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <Social {...social} />
       <div className={styles.container}>
         <H1 type="fontL" customClass={styles.mb30}>
@@ -47,7 +47,7 @@ const CookiePolicyPage = () => {
         </H1>
         <ol>{policies.map(policy => <PolicyBox key={policy.number} {...policy} />)}</ol>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 
