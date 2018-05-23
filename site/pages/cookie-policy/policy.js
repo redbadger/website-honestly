@@ -5,6 +5,7 @@ import * as React from 'react';
 
 import styles from './style.css';
 import { P as BaseParagraph } from '../../components/text';
+import Link from '../../components/link';
 
 const P = ({
   children,
@@ -31,7 +32,7 @@ const policies = [
             The reason we have a Cookies Policy is to explain to you what cookies and similar
             technologies we use, why we use them, and what you need to do if you want to restrict,
             block, disable or delete them. Our Cookies Policy is part of, and is subject to, our{' '}
-            <a href="">Privacy Statement</a>.
+            <Link to="privacyPolicy">Privacy Statement</Link>.
           </P>
           <P>
             By accessing and/or using our Website you confirm that you accept the terms of our
