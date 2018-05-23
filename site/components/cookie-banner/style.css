@@ -1,23 +1,26 @@
 @value cainYellow, badgerWhite, badgerBlack from "../../css/_colors.css";
 @value smallScreen, mediumScreen from "../../css/_sizes.css";
 
-.banner {
-  padding: 20px;
-  background-color: cainYellow;
+.bannerWrapper {
   width: 100%;
+  background-color: cainYellow;
+  position: fixed;
+  top: 0;
+  z-index: 21;
+}
+
+.banner {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  margin: 20px;
 }
 
 .banner p {
   font-family: 'ProximaNova-Bold', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   max-width: 600px;
 }
 
