@@ -18,31 +18,34 @@ const social = {
 };
 
 type StatementT = {
-  number: string,
+  statementIndex: number,
+  policyIndex: number,
   body: Function,
 };
 
 type Policy = {
-  number: string,
+  index: number,
   heading: string,
   body?: Function,
   statements: Array<StatementT>,
 };
 
-const Statement = ({ number, body }: StatementT) => (
+const Statement = ({ body, statementIndex, policyIndex }: StatementT) => (
   <li className={styles.box}>
     <div className={styles.numberContainer}>
-      <span className={styles.statementNumber}>{number}</span>
+      <span className={styles.statementNumber}>{`${policyIndex}.${statementIndex}`}</span>
     </div>
     <div className={styles.policyText}>{body()}</div>
   </li>
 );
 
-const PolicyBox = ({ number, heading, body, statements }: Policy) => (
+const padNumber = (n: number) => (n < 10 ? '0' + n : +n);
+
+const PolicyBox = ({ heading, body, statements, policyIndex }: Policy) => (
   <li>
     <div className={styles.box}>
       <div className={styles.numberContainer}>
-        <span className={styles.number}>{number}</span>
+        <span className={styles.number}>{padNumber(policyIndex)}</span>
       </div>
       <div>
         <H2 type="fontM2" customClass={styles.mb20}>
@@ -51,7 +54,16 @@ const PolicyBox = ({ number, heading, body, statements }: Policy) => (
         {body && body()}
       </div>
     </div>
-    <ol>{statements.map(statement => <Statement key={statement.number} {...statement} />)}</ol>
+    <ol>
+      {statements.map((statement, statementIndex) => (
+        <Statement
+          key={statement.number}
+          statementIndex={statementIndex + 1}
+          policyIndex={policyIndex}
+          {...statement}
+        />
+      ))}
+    </ol>
   </li>
 );
 
@@ -64,7 +76,11 @@ const PrivacyPolicyPage = () => {
           Red Badger Privacy Statement
         </H1>
         <p className={styles.effectiveDate}>Effective as from: 23 May 2018</p>
-        <ol>{policies.map(policy => <PolicyBox key={policy.number} {...policy} />)}</ol>
+        <ol>
+          {policies.map((policy, index) => (
+            <PolicyBox key={index} policyIndex={index + 1} {...policy} />
+          ))}
+        </ol>
       </div>
     </Fragment>
   );
