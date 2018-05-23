@@ -60,13 +60,15 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: bold;
-  padding-bottom: 5px;
+  padding: 6px 0 5px;
   border-bottom: 5px solid badgerRed;
+  display: block;
 }
 
 .statementNumber {
   composes: number;
   border-bottom: 0;
+  padding-top: 3px;
 }
 
 .underline {
@@ -96,10 +98,6 @@
 
   .pageHeading {
     padding-left: 46px;
-  }
-
-  .numberContainer {
-    margin-top: 8px;
   }
 }
 

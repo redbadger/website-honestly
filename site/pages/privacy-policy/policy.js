@@ -17,17 +17,15 @@ const P = ({
   return <BaseParagraph customClass={customClass}>{children}</BaseParagraph>;
 };
 
-const H3 = ({ children }) => {
-  return <h3 className={styles.simpleHeading}>{children}</h3>;
-};
+//  const H3 = ({ children }) => {
+//    return <h3 className={styles.simpleHeading}>{children}</h3>;
+//  };
 
 const policies = [
   {
-    number: '01',
     heading: 'Why do you have a Cookies Policy?',
     statements: [
       {
-        number: '1.1',
         body: () => {
           return (
             <P>
@@ -43,7 +41,6 @@ const policies = [
         },
       },
       {
-        number: '1.2',
         body: () => {
           return (
             <P>
@@ -59,11 +56,9 @@ const policies = [
     ],
   },
   {
-    number: '02',
     heading: 'About Red Badger',
     statements: [
       {
-        number: '2.1',
         body: () => {
           return (
             <P>
@@ -74,7 +69,6 @@ const policies = [
         },
       },
       {
-        number: '2.2',
         body: () => {
           return (
             <P>
@@ -86,7 +80,6 @@ const policies = [
         },
       },
       {
-        number: '2.3',
         body: () => {
           return (
             <P>
@@ -101,11 +94,9 @@ const policies = [
     ],
   },
   {
-    number: '03',
     heading: 'About Red Badger',
     statements: [
       {
-        number: '2.1',
         body: () => {
           return <P />;
         },
