@@ -23,6 +23,13 @@
   font-family: 'ProximaNova-Bold', sans-serif;
 }
 
+.effectiveDate {
+  composes: serif from '../../css/typography/_fonts.css';
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 30px;
+}
+
 .container {
   padding: 30px 20px 60px;
 }

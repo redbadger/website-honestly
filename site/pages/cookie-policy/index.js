@@ -42,9 +42,10 @@ const CookiePolicyPage = () => {
     <Fragment>
       <Social {...social} />
       <div className={styles.container}>
-        <H1 type="fontL" customClass={styles.mb30}>
+        <H1 type="fontL" customClass={styles.mb10}>
           Cookies Policy
         </H1>
+        <p className={styles.effectiveDate}>Effective as from: 23 May 2018</p>
         <ol>{policies.map(policy => <PolicyBox key={policy.number} {...policy} />)}</ol>
       </div>
     </Fragment>

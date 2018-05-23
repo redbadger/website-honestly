@@ -16,18 +16,28 @@ export default class Layout extends React.Component {
     stateNavigator: PropTypes.object,
   };
 
+  state = {
+    showCookiesBanner: false,
+  };
+
   getChildContext() {
     return { stateNavigator: this.props.stateNavigator };
   }
 
-  updateCallback = () => this.forceUpdate();
-
-  render() {
+  componentDidMount = () => {
     const cookiesAccepted = getCookieValue('_cookies') === 'true';
 
+    if (!cookiesAccepted) {
+      this.setState({ showCookiesBanner: true });
+    }
+  };
+
+  updateCallback = () => this.setState({ showCookiesBanner: false });
+
+  render() {
     return (
       <div className={styles.application}>
-        {!cookiesAccepted && <CookieBanner closeBanner={this.updateCallback} />}
+        {this.state.showCookiesBanner && <CookieBanner closeBanner={this.updateCallback} />}
         <Header />
         <div id="mainContent" className={styles.background}>
           {this.props.children}
