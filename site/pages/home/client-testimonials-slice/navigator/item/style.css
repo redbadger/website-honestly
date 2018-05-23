@@ -1,0 +1,43 @@
+@value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
+
+.active a {
+  color: badgerRed;
+}
+
+.old,
+.active,
+.future {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: -35px;
+  margin-left: -18px;
+  text-align: left;
+  padding: 0;
+  height: 41px;
+  width: 36px;
+  overflow: visible;
+}
+
+.old span,
+.active span,
+.future span{
+  z-index: 11;
+  transition : 0.3s ease-in-out;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  background-color: #CCC;
+  left: 12px;
+ }
+
+.old span {
+  background-color: linesOnWhite;
+}
+
+.active span {
+  background-color: badgerRed;
+}

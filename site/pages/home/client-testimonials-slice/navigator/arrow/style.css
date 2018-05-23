@@ -1,0 +1,64 @@
+@value badgerWhite, badgerRed, linesOnWhite from "../../../../../css/_colors.css";
+
+.arrow {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 20px;
+  height: 28px;
+  overflow: hidden;
+}
+
+.arrowLeft {
+  left: -44px;
+  top: -13px;
+  z-index: 10;
+}
+
+.arrowRight {
+  right: -44px;
+  top: -13px;
+  z-index: 10;
+}
+
+.arrowLeft div {
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrowRight div {
+  top: 4px;
+  right: 6px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrowLeft .active,
+.arrowRight .active {
+  background-color: badgerRed;
+}
+
+.arrowLeft .inactive,
+.arrowRight .inactive {
+  background-color: linesOnWhite;
+}
+
+.arrowLeft .innerArrow {
+  left: 11px;
+  background-color: badgerWhite;
+}
+
+.arrowRight .innerArrow {
+  left: -13px;
+  background-color: badgerWhite;
+}

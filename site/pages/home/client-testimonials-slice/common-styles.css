@@ -1,0 +1,89 @@
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+
+.main {
+  height: auto;
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 27px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #212121;
+}
+
+.mainWrapper {
+  width: 84%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main:before {
+  content: "“ ";
+  color: #ff0038;
+}
+
+.main:after {
+  content: " ”";
+  color: #ff0038;
+}
+
+.author {
+  width: 75%;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #212121;
+  margin: 30px auto 0;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.contentWrapper {
+  margin-top: 97px;
+  height: 475px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@media mediumScreen {
+  .main {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .author {
+    width: 530px;
+    font-size: 18px;
+  }
+
+  .contentWrapper {
+    margin-top: 0;
+  }
+}
+
+@media largeScreen {
+  .main {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .author {
+    width: 530px;
+    font-size: 24px;
+  }
+
+  .contentWrapper {
+    margin-top: 0;
+    height: 531px;
+  }
+}
+
