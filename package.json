@@ -77,7 +77,8 @@
     "poly-decomp": "^0.2.1",
     "postcss-loader": "^2.0.9",
     "pre-git": "^3.10.0",
-    "prettier": "^1.8.2",
+
+    "prettier": "^1.12.1",
     "prop-types": "^15.5.7",
     "proxyquire": "^1.8.0",
     "ramda": "^0.22.1",
