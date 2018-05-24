@@ -115,7 +115,10 @@ const handleContactUsHash = stateNavigator => {
   historyManager.getHref = url => {
     let newUrl = url;
     let hash = '';
-    const { state, data: { contactUs, ...rest } } = stateNavigator.parseLink(url);
+    const {
+      state,
+      data: { contactUs, ...rest },
+    } = stateNavigator.parseLink(url);
     if (contactUs) {
       newUrl = stateNavigator.getNavigationLink(state.key, rest);
       hash = '#contactUs';

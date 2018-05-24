@@ -29,7 +29,7 @@ const PolicyBox = ({ number, heading, body }: Policy) => (
       <span className={styles.number}>{number}</span>
     </div>
     <div className={styles.policyText}>
-      <H2 type="fontM2" customClass={styles.mb20}>
+      <H2 type="fontM2" customClass={styles.mb10}>
         {heading}
       </H2>
       {body()}
@@ -45,7 +45,7 @@ const CookiePolicyPage = () => {
         <H1 type="fontL" customClass={styles.mb10}>
           Cookies Policy
         </H1>
-        <p className={styles.effectiveDate}>Effective as from: 23 May 2018</p>
+        <p className={styles.effectiveDate}>Effective as from: 24 May 2018</p>
         <ol>{policies.map(policy => <PolicyBox key={policy.number} {...policy} />)}</ol>
       </div>
     </Fragment>
