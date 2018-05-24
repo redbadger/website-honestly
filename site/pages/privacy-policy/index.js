@@ -52,7 +52,7 @@ const PolicyBox = ({ heading, body, statements, policyIndex }: Policy) => (
         <span className={styles.number}>{padNumber(policyIndex)}</span>
       </div>
       <div>
-        <H2 type="fontM2" customClass={styles.mb20}>
+        <H2 type="fontM2" customClass={styles.mb10}>
           {heading}
         </H2>
         {body && body()}
