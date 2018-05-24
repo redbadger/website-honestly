@@ -18,19 +18,23 @@ const social = {
 };
 
 type StatementT = {
+  body: Function,
+};
+
+type StatementWithIndexes = {
   statementIndex: number,
   policyIndex: number,
   body: Function,
 };
 
 type Policy = {
-  index: number,
+  policyIndex: number,
   heading: string,
   body?: Function,
   statements: Array<StatementT>,
 };
 
-const Statement = ({ body, statementIndex, policyIndex }: StatementT) => (
+const Statement = ({ body, statementIndex, policyIndex }: StatementWithIndexes) => (
   <li className={styles.box}>
     <div className={styles.numberContainer}>
       <span className={styles.statementNumber}>{`${policyIndex}.${statementIndex}`}</span>
@@ -57,7 +61,7 @@ const PolicyBox = ({ heading, body, statements, policyIndex }: Policy) => (
     <ol>
       {statements.map((statement, statementIndex) => (
         <Statement
-          key={statement.number}
+          key={statementIndex}
           statementIndex={statementIndex + 1}
           policyIndex={policyIndex}
           {...statement}
@@ -75,7 +79,7 @@ const PrivacyPolicyPage = () => {
         <H1 type="fontL" customClass={styles.mb10}>
           Red Badger Privacy Statement
         </H1>
-        <p className={styles.effectiveDate}>Effective as from: 23 May 2018</p>
+        <p className={styles.effectiveDate}>Effective as from: 24 May 2018</p>
         <ol>
           {policies.map((policy, index) => (
             <PolicyBox key={index} policyIndex={index + 1} {...policy} />
