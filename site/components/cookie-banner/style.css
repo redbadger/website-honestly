@@ -1,0 +1,61 @@
+@value cainYellow, badgerWhite, badgerBlack from "../../css/_colors.css";
+@value smallScreen, mediumScreen from "../../css/_sizes.css";
+
+.bannerWrapper {
+  width: 100%;
+  background-color: cainYellow;
+  position: fixed;
+  top: 0;
+  z-index: 21;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.banner p {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0 0 20px;
+  max-width: 600px;
+}
+
+.banner a {
+  color: badgerBlack;
+  text-decoration: none;
+  border-bottom: 1px solid badgerBlack;
+}
+
+.banner button {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  color: badgerWhite;
+  background-color: badgerBlack;
+  padding: 14px 20px;
+  border: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  min-width: 240px;
+  max-height: 52px;
+}
+
+@media smallScreen {
+  .banner {
+    flex-direction: row;
+  }
+
+  .banner p {
+    margin-right: 20px; 
+    margin-bottom: 0;
+  }
+
+  .banner button {
+    margin: 0;
+  } 
+}
+

@@ -25,6 +25,11 @@
   width: 100%;
 }
 
+.footerContainer a {
+  color: badgerWhite;
+  text-decoration: none;
+}
+
 .nav {
   composes: serif from "../../css/typography/_fonts.css";
   font-size: linkSize;
@@ -40,12 +45,12 @@
   margin: 0;
 }
 
-.nav li a, p a {
+.nav li a, .nav p a {
   color: badgerWhite;
   text-decoration: none;
 }
 
-.nav li a:hover, p a:hover {
+.nav li a:hover, .nav p a:hover {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 

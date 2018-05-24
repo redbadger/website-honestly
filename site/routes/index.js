@@ -10,6 +10,7 @@ import WhatWeDoPage from '../pages/what-we-do';
 import OfflinePage from '../pages/offline';
 import BrowserNotSupported from '../pages/browser-not-supported';
 import AboutUsPage from '../pages/about-us';
+import CookiePolicyPage from '../pages/cookie-policy';
 
 import JoinUsPage from '../pages/join-us';
 import JobPage from '../pages/job';
@@ -33,32 +34,33 @@ import HallerCaseStudy from '../pages/our-work/case-study/haller';
 import BankCaseStudy from '../pages/our-work/case-study/bank';
 
 const componentMap = {
-  homePage: HomePage,
-  whatWeDoPage: WhatWeDoPage,
-  ourWorkPage: OurWorkPage,
-  joinUs: JoinUsPage,
-  job: JobPage,
+  aboutUsPage: AboutUsPage,
+  badger: BadgerProfile,
+  badgers: MeetOurTeam,
+  bankCaseStudy: BankCaseStudy,
+  bbcCaseStudy: BBCCaseStudy,
+  bmwCaseStudy: BMWCaseStudy,
+  browserNotSupported: BrowserNotSupported,
+  camdenMarketCaseStudy: CamdenMarketCaseStudy,
+  cookiePolicy: CookiePolicyPage,
   event: EventPage,
   events: Events,
-  notFoundPage: NotFoundPage,
-  serverErrorPage: ServerErrorPage,
-  offlinePage: OfflinePage,
-  browserNotSupported: BrowserNotSupported,
-  aboutUsPage: AboutUsPage,
-  badgers: MeetOurTeam,
-  badger: BadgerProfile,
-  fortnumAndMasonCaseStudy: FortnumAndMasonCaseStudy,
-  fMTeaCaseStudy: FMTeaCaseStudy,
-  retailerCaseStudy: RetailerCaseStudy,
-  camdenMarketCaseStudy: CamdenMarketCaseStudy,
   financialTimesCaseStudy: FinancialTimesCaseStudy,
-  skyCMSCaseStudy: SkyCMSCaseStudy,
-  skyCaseStudy: SkyCaseStudy,
-  bmwCaseStudy: BMWCaseStudy,
-  bbcCaseStudy: BBCCaseStudy,
+  fMTeaCaseStudy: FMTeaCaseStudy,
+  fortnumAndMasonCaseStudy: FortnumAndMasonCaseStudy,
   hallerCaseStudy: HallerCaseStudy,
-  bankCaseStudy: BankCaseStudy,
+  homePage: HomePage,
+  job: JobPage,
+  joinUs: JoinUsPage,
+  notFoundPage: NotFoundPage,
+  offlinePage: OfflinePage,
+  ourWorkPage: OurWorkPage,
+  retailerCaseStudy: RetailerCaseStudy,
+  serverErrorPage: ServerErrorPage,
+  skyCaseStudy: SkyCaseStudy,
+  skyCMSCaseStudy: SkyCMSCaseStudy,
   technology: Technology,
+  whatWeDoPage: WhatWeDoPage,
 };
 
 function routes() {
@@ -113,7 +115,10 @@ const handleContactUsHash = stateNavigator => {
   historyManager.getHref = url => {
     let newUrl = url;
     let hash = '';
-    const { state, data: { contactUs, ...rest } } = stateNavigator.parseLink(url);
+    const {
+      state,
+      data: { contactUs, ...rest },
+    } = stateNavigator.parseLink(url);
     if (contactUs) {
       newUrl = stateNavigator.getNavigationLink(state.key, rest);
       hash = '#contactUs';

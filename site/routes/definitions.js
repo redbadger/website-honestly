@@ -208,6 +208,11 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: '404',
   },
   {
+    title: 'Cookie Policy',
+    key: 'cookiePolicy',
+    route: 'cookie-policy',
+  },
+  {
     title: 'Server error',
     key: 'serverErrorPage',
     route: '50x',
