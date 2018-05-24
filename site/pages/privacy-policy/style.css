@@ -19,8 +19,15 @@
 
 .simpleHeading {
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.88em;
   font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.largeSimpleHeading {
+  composes: serif from '../../css/typography/_fonts.css';
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .effectiveDate {
@@ -60,7 +67,7 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: bold;
-  padding: 6px 0 5px;
+  padding: 6px 0 0;
   border-bottom: 5px solid badgerRed;
   display: block;
 }
@@ -103,5 +110,13 @@
 
 .policyText p b {
   font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.policyList {
+  list-style: disc;
+  padding-left: 17px;
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
