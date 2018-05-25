@@ -17,7 +17,7 @@ class CookieBanner extends React.Component<Props> {
 
     const parent = this.bannerNode.parentElement;
     const clone = this.bannerNode.cloneNode(true);
-    clone.style.cssText = 'position: static; z-index: 0';
+    clone.style.cssText = 'position: static; z-index: 0; visibility: hidden';
 
     if (parent) parent.appendChild(clone);
   }
