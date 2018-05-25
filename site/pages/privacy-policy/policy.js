@@ -16,9 +16,7 @@ const P = ({
 }) => <BaseParagraph customClass={customClass}>{children}</BaseParagraph>;
 
 const H3 = ({ children }) => <h3 className={styles.simpleHeading}>{children}</h3>;
-
 const H4 = ({ children }) => <h4 className={styles.simpleHeading}>{children}</h4>;
-
 const SerifH3 = ({ children }) => <h3 className={styles.largeSimpleHeading}>{children}</h3>;
 
 const policies = [
@@ -73,8 +71,7 @@ const policies = [
         body: () => (
           <P>
             You can contact us by (a) post, to 4th Floor, 2 Old Street Yard, London, England, EC1Y
-            8AF, (b) using our Website contact form, (c) telephone, on 0207 242 017, or (d) email,
-            using the following email address:{' '}
+            8AF, (b) telephone, on 0203 567 0555, or (c) email, using the following email address:{' '}
             <a href="mailto:hello@red-badger.com">hello@red-badger.com.</a>
           </P>
         ),
@@ -158,9 +155,7 @@ const policies = [
             purposes of the processing, the categories of personal data concerned and the recipients
             of the personal data. Providing the rights and freedoms of others are not affected, we
             will supply to you a copy of your personal data. The first copy will be provided free of
-            charge, but additional copies may be subject to a reasonable fee. If you receive our
-            newsletters, you can access your personal data and other details via our email software
-            provider at [insert URL], by signing in and going to ‘Change my preferences’.
+            charge, but additional copies may be subject to a reasonable fee.
           </P>
         ),
       },
@@ -333,56 +328,57 @@ const policies = [
       {
         body: () => (
           <React.Fragment>
-            <H3>Website data</H3>
+            <H3 className={styles.mb0}>Website data</H3>
             <P>
               This is data on how you use our Website and may include your IP address, geographical
               location, browser type and version, operating system, referral source, length of
               visit, page views and Website navigation paths, as well as information about the
               timing, frequency and pattern of your use of our Website.
             </P>
-            <H3>Service data</H3>
+            <H3 className={styles.mb0}>Service data</H3>
             <P>
               This may include billing data, your name and contact details such as your email
               address contained in/relating to services we provide (if you enquired to hire us or
               you decided to hire us).
             </P>
-            <H3>Correspondence data</H3>
+            <H3 className={styles.mb0}>Correspondence data</H3>
             <P>
               This may include personal data contained in or relating to any communication that you
               send to us or that we use to communicate with you.
             </P>
-            <H3>Marketing data</H3>
+            <H3 className={styles.mb0}>Marketing data</H3>
             <P>
               This may include personal data you provide to us if you sign up to receive our
               newsletters and choose whether you wish to receive promotional communications (e.g.
               offers, invitations to promotional activities such as events, webinars etc.) from us
               by email, post, telephone and social media.
             </P>
-            <H3>Cookies & similar technology data</H3>
+            <H3 className={styles.mb0}>Cookies & similar technology data</H3>
             <P>
               This includes personal data that we obtain about you through cookies and similar
               technologies. For more information, see our Cookies Policy [insert link].
             </P>
 
-            <H3>Profile data</H3>
+            <H3 className={styles.mb0}>Profile data</H3>
             <P>
               This may include your name and contact details and some of the other personal data set
               out in this table e.g. Third-Party data, registration data.
             </P>
-            <H3>Registration data</H3>
+            <H3 className={styles.mb0}>Registration data</H3>
             <P>
               This may include information you provide to register for events, webinars, surveys,
               etc. and may include your name and contact details e.g. an email address.
             </P>
 
-            <H3>Applicant data</H3>
+            <H3 className={styles.mb0}>Applicant data</H3>
             <P>
               This may include your name and contact details and any other additional personal
               information as well as a CV. Third-Party data This may include your name and contact
               details we obtain from third parties such as third-party services providers, lead
               generation companies, social media etc.
             </P>
-            <H3>Other data</H3>
+
+            <H3 className={styles.mb0}>Other data</H3>
             <P>This is personal data other than the ones set out in the table above.</P>
           </React.Fragment>
         ),
@@ -491,56 +487,56 @@ const policies = [
               reasons we rely on to do so.
             </P>
             <SerifH3>Website</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To analyse your use of our Website as well as to develop, operate, improve, protect,
               personalise, customise and optimise our Website.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this are our legitimate interest of the proper administration
               and operation of our business and/or to comply with a legal obligation.
             </P>
 
             <SerifH3>Services</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To provide you with information you requested about our services when you are
               considering whether to hire us or not (e.g. a quote) and, if you decide to hire us, to
               provide you our services.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this is to perform our contract with you and/or take steps, at
               your request, to enter into such a contract.
             </P>
 
             <SerifH3>Communications (Non-Marketing)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To communicate with you (e.g. by email, by post, by phone etc.) as well as to process
               the communications you send to us.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this is to perform our contract with you and/or our legitimate
               interest of the proper administration and operation of our business.
             </P>
 
             <SerifH3>Operations</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To perform general administrative and operational activities e.g. billing, debt
               recovery etc.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business.
             </P>
 
             <SerifH3>Marketing & Advertising</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To send you newsletters and promotional communications (e.g. offers, invitations to
               promotional activities such as events, webinars etc.) from us by email, post,
@@ -548,7 +544,7 @@ const policies = [
               preferences as well as to advertise our business and services to you through a variety
               of different channels which may include Twitter, Facebook or LinkedIn.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this is our legitimate interest of conducting marketing
               (including, for example, advertising) including any soft opt-in to undertake direct
@@ -558,7 +554,7 @@ const policies = [
             </P>
 
             <SerifH3>Profiling</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To create a profile of you by combining data you provided to us by you or we got from
               other sources such as social media, the internet and lead generation companies in
@@ -566,7 +562,7 @@ const policies = [
               tailored marketing (including, for example, advertising) and/or to personalise the
               services we provide to you.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this is our legitimate interest of (a) the proper administration
               and/or operation of our business, and/or (b) conducting marketing (including, for
@@ -575,13 +571,13 @@ const policies = [
             </P>
 
             <SerifH3>Security, Risk & Crime</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To protect our website and business, prevent fraud, spam, abuse, security incidents,
               harmful and/or illegal activity, conduct security investigations and risk assessments,
               and/or to verify or authenticate information.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this is our legitimate interest of protecting our website and
               business, to comply with a legal obligation, to perform our contract with you, and/or
@@ -590,22 +586,22 @@ const policies = [
             </P>
 
             <SerifH3>Research and Analysis</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To carry out research (e.g. market research), business and statistical analysis (e.g.
               develop statistical models, analyse the performance of our marketing (including, for
               example, advertising) campaigns etc.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this is our legitimate interest of the proper administration,
               monitoring and/or operation of our business and services.
             </P>
 
             <SerifH3>Business improvement</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>To develop or improve our services and business.</P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this processing is our legitimate interest of the proper
               administration and operation of our business and services as well as to monitor our
@@ -613,9 +609,9 @@ const policies = [
             </P>
 
             <SerifH3>Data Retention</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>To retain, store, archive and/or destroy the data.</P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this processing is the performance of a contract between you and
               us, our legitimate interest of the proper administration and operation of our
@@ -624,9 +620,9 @@ const policies = [
             </P>
 
             <SerifH3>Audits</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>To carry out audits.</P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this processing is our legitimate interest of the proper
               administration and operation of our business as well as to monitor and improve our
@@ -634,42 +630,42 @@ const policies = [
             </P>
 
             <SerifH3>Sharing (Service Providers)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To disclose your personal data such as your name and contact details to third party
               service providers we use.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this is our legitimate interest of administering, operate and/or
               managing our business, and/or performance of a contract between you and us.
             </P>
 
             <SerifH3>Sharing (Consent)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To share your data (including personal information) where you have provided consent,
               for the purpose(s) described at the time we ask you for your consent.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>The legal reason for this is consent.</P>
 
             <SerifH3>Sharing (Aggregated Data)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To share aggregated information (information about our individuals that we combine
               together so that it no longer identifies or references an individual) and
               non-personally identifiable information in order to conduct industry and market
               analysis, demographic profiling, marketing (including, for example, advertising).
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this is our legitimate interests of the proper administration and
               operation of our business.
             </P>
 
             <SerifH3>Sharing (Sale/Investment)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               If there is (a) a sale or an asset transfer to a third party of, and/or (b) an
               investment in Red Badger, part of that sale, asset transfer and/or investment may
@@ -677,33 +673,33 @@ const policies = [
               access to your personal data as part of the corporate due diligence they perform as
               part of the (a) sale or asset transfer, and/or (b) the investment.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business.
             </P>
 
             <SerifH3>Sharing (Internal re-organisation & Insolvency)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To pass on to a successor in interest as part of a corporate re-organisation or in the
               unlikely event of an insolvency event such as a liquidation, insolvency, bankruptcy or
               administration.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business.
             </P>
 
             <SerifH3>Sharing (Insurers & Professional Advisers)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To disclose your personal data to our insurers and/or professional advisers insofar as
               reasonably necessary for the purposes of obtaining and maintaining insurance coverage,
               managing risks, obtaining professional advice and/or managing legal disputes.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business, to comply with a legal obligation and/or the protection and
@@ -711,13 +707,13 @@ const policies = [
             </P>
 
             <SerifH3>Sharing (Legal Disclosures)</SerifH3>
-            <H4>Processing Purpose</H4>
+            <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
               To disclose your personal data where such disclosure is necessary for compliance with
               a legal obligation to which we are subject and/or the protection and assertion of our
               legal rights, your legal rights and the legal rights of others.
             </P>
-            <H4>Legal Basis</H4>
+            <H4 className={styles.mb0}>Legal Basis</H4>
             <P>
               The legal reasons for this is to comply with a legal obligation, and/or the protection
               and assertion of our legal rights, your legal rights and the legal rights of others.
