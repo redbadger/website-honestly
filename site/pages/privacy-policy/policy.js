@@ -38,10 +38,11 @@ const policies = [
         body: () => (
           <P>
             Our Privacy Statement is part of, and is subject to, our{' '}
-            <Link to="cookiesPolicy">Cookies Policy</Link> and our{' '}
-            <Link to="termsAndConditions">Website Terms</Link>. By accessing or using{' '}
-            <Link to="home">www.red-badger.com</Link> (“<b>Website</b>”), you confirm that you
-            accept the terms of our Privacy Statement.
+            <Link to="cookiePolicy">Cookies Policy</Link>
+            {/* and our{' '}
+            <Link to="termsAndConditions">Website Terms</Link> */}. By
+            accessing or using <Link to="homePage">www.red-badger.com</Link> (“<b>Website</b>”), you
+            confirm that you accept the terms of our Privacy Statement.
           </P>
         ),
       },
