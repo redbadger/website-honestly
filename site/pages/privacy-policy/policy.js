@@ -483,7 +483,7 @@ const policies = [
       {
         body: () => (
           <React.Fragment>
-            <P>
+            <P customClass={styles.mb20}>
               Below, you find a list of the ways that we may use your data and which of the legal
               reasons we rely on to do so.
             </P>
@@ -494,7 +494,7 @@ const policies = [
               personalise, customise and optimise our Website.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this are our legitimate interest of the proper administration
               and operation of our business and/or to comply with a legal obligation.
             </P>
@@ -507,7 +507,7 @@ const policies = [
               provide you our services.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this is to perform our contract with you and/or take steps, at
               your request, to enter into such a contract.
             </P>
@@ -519,7 +519,7 @@ const policies = [
               the communications you send to us.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this is to perform our contract with you and/or our legitimate
               interest of the proper administration and operation of our business.
             </P>
@@ -531,7 +531,7 @@ const policies = [
               recovery etc.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business.
             </P>
@@ -546,7 +546,7 @@ const policies = [
               of different channels which may include Twitter, Facebook or LinkedIn.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this is our legitimate interest of conducting marketing
               (including, for example, advertising) including any soft opt-in to undertake direct
               marketing to promote our business and services. To the extent that we are required to
@@ -564,7 +564,7 @@ const policies = [
               services we provide to you.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this is our legitimate interest of (a) the proper administration
               and/or operation of our business, and/or (b) conducting marketing (including, for
               example, advertising) to promote our business and services. To the extent necessary
@@ -579,7 +579,7 @@ const policies = [
               and/or to verify or authenticate information.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this is our legitimate interest of protecting our website and
               business, to comply with a legal obligation, to perform our contract with you, and/or
               the protection and assertion of our legal rights, your legal rights and the legal
@@ -594,7 +594,7 @@ const policies = [
               example, advertising) campaigns etc.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this is our legitimate interest of the proper administration,
               monitoring and/or operation of our business and services.
             </P>
@@ -603,7 +603,7 @@ const policies = [
             <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>To develop or improve our services and business.</P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this processing is our legitimate interest of the proper
               administration and operation of our business and services as well as to monitor our
               business and services.
@@ -613,7 +613,7 @@ const policies = [
             <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>To retain, store, archive and/or destroy the data.</P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this processing is the performance of a contract between you and
               us, our legitimate interest of the proper administration and operation of our
               business, to comply with a legal obligation, and/or the protection and assertion of
@@ -624,7 +624,7 @@ const policies = [
             <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>To carry out audits.</P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this processing is our legitimate interest of the proper
               administration and operation of our business as well as to monitor and improve our
               business and services.
@@ -637,7 +637,7 @@ const policies = [
               service providers we use.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this is our legitimate interest of administering, operate and/or
               managing our business, and/or performance of a contract between you and us.
             </P>
@@ -649,7 +649,7 @@ const policies = [
               for the purpose(s) described at the time we ask you for your consent.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>The legal reason for this is consent.</P>
+            <P customClass={styles.mb20}>The legal reason for this is consent.</P>
 
             <SerifH3>Sharing (Aggregated Data)</SerifH3>
             <H4 className={styles.mb0}>Processing Purpose</H4>
@@ -660,7 +660,7 @@ const policies = [
               analysis, demographic profiling, marketing (including, for example, advertising).
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this is our legitimate interests of the proper administration and
               operation of our business.
             </P>
@@ -675,7 +675,7 @@ const policies = [
               part of the (a) sale or asset transfer, and/or (b) the investment.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business.
             </P>
@@ -688,7 +688,7 @@ const policies = [
               administration.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business.
             </P>
@@ -701,7 +701,7 @@ const policies = [
               managing risks, obtaining professional advice and/or managing legal disputes.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reason for this is our legitimate interest of the proper administration and
               operation of our business, to comply with a legal obligation and/or the protection and
               assertion of our legal rights, your legal rights and the legal rights of others.
@@ -715,7 +715,7 @@ const policies = [
               legal rights, your legal rights and the legal rights of others.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
-            <P>
+            <P customClass={styles.mb20}>
               The legal reasons for this is to comply with a legal obligation, and/or the protection
               and assertion of our legal rights, your legal rights and the legal rights of others.
             </P>
