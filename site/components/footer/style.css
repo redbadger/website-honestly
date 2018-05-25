@@ -143,6 +143,10 @@
   margin-top: 16px;
 }
 
+.cookieWarning a {
+  text-decoration: underline;
+}
+
 .badgerIcon {
   display: flex;
   justify-content: flex-end;

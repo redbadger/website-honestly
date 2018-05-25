@@ -6657,9 +6657,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.8.2:
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.8.2.tgz#bff83e7fd573933c607875e5ba3abbdffb96aeb8"
+prettier@^1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.12.1.tgz#c1ad20e803e7749faf905a409d2367e06bbe7325"
 
 pretty-error@^2.0.2:
   version "2.0.2"
@@ -7017,9 +7017,9 @@ react-test-renderer@^16.0.0-0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@^16.3.1:
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.3.1.tgz#4a2da433d471251c69b6033ada30e2ed1202cfd8"
+react@^16.4.0:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.0.tgz#402c2db83335336fba1962c08b98c6272617d585"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"

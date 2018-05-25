@@ -11,6 +11,7 @@ import OfflinePage from '../pages/offline';
 import BrowserNotSupported from '../pages/browser-not-supported';
 import AboutUsPage from '../pages/about-us';
 import CookiePolicyPage from '../pages/cookie-policy';
+import PrivacyPolicyPage from '../pages/privacy-policy';
 
 import JoinUsPage from '../pages/join-us';
 import JobPage from '../pages/job';
@@ -55,6 +56,7 @@ const componentMap = {
   notFoundPage: NotFoundPage,
   offlinePage: OfflinePage,
   ourWorkPage: OurWorkPage,
+  privacyPolicy: PrivacyPolicyPage,
   retailerCaseStudy: RetailerCaseStudy,
   serverErrorPage: ServerErrorPage,
   skyCaseStudy: SkyCaseStudy,

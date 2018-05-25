@@ -213,6 +213,11 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'cookie-policy',
   },
   {
+    title: 'Privacy Policy',
+    key: 'privacyPolicy',
+    route: 'privacy-policy',
+  },
+  {
     title: 'Server error',
     key: 'serverErrorPage',
     route: '50x',
