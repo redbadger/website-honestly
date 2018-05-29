@@ -2,7 +2,6 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 
 .navigator {
-  z-index: 99;
   background: badgerWhite;
 }
 

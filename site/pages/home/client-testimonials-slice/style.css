@@ -1,7 +1,7 @@
 @value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
 
-.testimonials{
+.testimonials {
   composes: boldSansSerif from "../../../css/typography/_fonts.css";
   composes: fontXS from "../../../css/typography/_fonts.css";
   background-color: badgerWhite;
@@ -13,7 +13,7 @@
   margin: auto;
 }
 
-.image{
+.image {
   width: 100%;
 }
 

@@ -1,0 +1,51 @@
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+
+.main {
+  composes: main from './common-styles.css';
+  max-width: 400px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  margin: 0 20px 0 20px;
+}
+
+.mainWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.author {
+  composes: author from './common-styles.css'
+}
+
+.centered {
+  composes: centered from './common-styles.css'
+}
+
+.contentWrapper {
+  composes: contentWrapper from './common-styles.css';
+  height: 483px;
+}
+
+
+@media mediumScreen {
+  .main {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: normal;
+    max-width: 500px;
+  }
+}
+
+@media largeScreen {
+  .main {
+    font-size: 60px;
+    line-height: normal;
+    max-width: 650px;
+  }
+
+  .contentWrapper {
+    height: 470px;
+  }
+}
+

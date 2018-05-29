@@ -1,7 +1,6 @@
-@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 
 .main {
-  height: auto;
   font-family: "Sentinel A", "Sentinel B", Georgia, serif;
   font-size: 20px;
   font-weight: 900;

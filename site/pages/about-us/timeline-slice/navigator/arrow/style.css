@@ -14,11 +14,13 @@
 .arrowLeft {
   left: -44px;
   top: -13px;
+  z-index: 10;
 }
 
 .arrowRight {
   right: -44px;
   top: -13px;
+  z-index: 10;
 }
 
 .arrowLeft div {
