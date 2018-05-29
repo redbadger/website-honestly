@@ -2,7 +2,7 @@
 import React from 'react';
 
 type TestimonialProps = {
-  styles: string,
+  styles: Object,
   content: string,
   author: string,
 };
