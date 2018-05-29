@@ -1,6 +1,6 @@
 import 'picturefill';
 
-// React needs these polyfills for non-es6 compliant browsers
+// We need these polyfills for non-es6 compliant browsers
 // like IE11 and older Webkits on Android (eg. UC Browsers on Galaxy S7)
 import 'core-js/es6/array';
 import 'core-js/es6/symbol';
