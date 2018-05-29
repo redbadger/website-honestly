@@ -16,25 +16,76 @@ const social = {
   url: 'cookie-policy',
 };
 
-type Policy = {
-  number: string,
-  heading: string,
+type StatementT = {
   body: Function,
 };
 
-const PolicyBox = ({ number, heading, body }: Policy) => (
+type StatementWithIndexes = {
+  statementIndex: number,
+  policyIndex: number,
+  body: Function,
+};
+
+type Policy = {
+  policyIndex: number,
+  heading: string,
+  body?: Function,
+  statements?: Array<StatementT>,
+};
+
+const Statement = ({ body, statementIndex, policyIndex }: StatementWithIndexes) => (
   <li className={styles.box}>
     <div className={styles.numberContainer}>
-      <span className={styles.number}>{number}</span>
+      <span className={styles.statementNumber}>{`${policyIndex}.${statementIndex}`}</span>
     </div>
-    <div className={styles.policyText}>
-      <H2 type="fontM2" customClass={styles.mb10}>
-        {heading}
-      </H2>
-      {body()}
-    </div>
+    <div className={styles.policyText}>{body()}</div>
   </li>
 );
+
+const padNumber = (n: number) => (n < 10 ? '0' + n : +n);
+
+const Statements = ({
+  statements,
+  policyIndex,
+}: {
+  statements: Array<StatementT>,
+  policyIndex: number,
+}) => {
+  return (
+    <ol>
+      {statements.map((statement, statementIndex) => (
+        <Statement
+          key={statementIndex}
+          statementIndex={statementIndex + 1}
+          policyIndex={policyIndex}
+          {...statement}
+        />
+      ))}
+    </ol>
+  );
+};
+
+const PolicyBox = ({ heading, body, statements = [], policyIndex }: Policy) => {
+  const hasStatements = statements.length > 0;
+  const wrapperClass = hasStatements ? '' : styles.policyText;
+
+  return (
+    <li>
+      <div className={styles.box}>
+        <div className={styles.numberContainer}>
+          <span className={styles.number}>{padNumber(policyIndex)}</span>
+        </div>
+        <div className={wrapperClass}>
+          <H2 type="fontM2" customClass={styles.mb10}>
+            {heading}
+          </H2>
+          {body && body()}
+        </div>
+      </div>
+      {hasStatements && <Statements statements={statements} policyIndex={policyIndex} />}
+    </li>
+  );
+};
 
 const CookiePolicyPage = () => {
   return (
@@ -42,10 +93,14 @@ const CookiePolicyPage = () => {
       <Social {...social} />
       <div className={styles.container}>
         <H1 type="fontL" customClass={styles.mb10}>
-          Cookies Policy
+          Cookie Policy
         </H1>
         <p className={styles.effectiveDate}>Effective as from: 24 May 2018</p>
-        <ol>{policies.map(policy => <PolicyBox key={policy.number} {...policy} />)}</ol>
+        <ol>
+          {policies.map((policy, index) => (
+            <PolicyBox key={index} policyIndex={index + 1} {...policy} />
+          ))}
+        </ol>
       </div>
     </Fragment>
   );

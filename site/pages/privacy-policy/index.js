@@ -45,6 +45,27 @@ const Statement = ({ body, statementIndex, policyIndex }: StatementWithIndexes) 
 
 const padNumber = (n: number) => (n < 10 ? '0' + n : +n);
 
+const Statements = ({
+  statements,
+  policyIndex,
+}: {
+  statements: Array<StatementT>,
+  policyIndex: number,
+}) => {
+  return (
+    <ol>
+      {statements.map((statement, statementIndex) => (
+        <Statement
+          key={statementIndex}
+          statementIndex={statementIndex + 1}
+          policyIndex={policyIndex}
+          {...statement}
+        />
+      ))}
+    </ol>
+  );
+};
+
 const PolicyBox = ({ heading, body, statements, policyIndex }: Policy) => (
   <li>
     <div className={styles.box}>
@@ -58,16 +79,7 @@ const PolicyBox = ({ heading, body, statements, policyIndex }: Policy) => (
         {body && body()}
       </div>
     </div>
-    <ol>
-      {statements.map((statement, statementIndex) => (
-        <Statement
-          key={statementIndex}
-          statementIndex={statementIndex + 1}
-          policyIndex={policyIndex}
-          {...statement}
-        />
-      ))}
-    </ol>
+    {statements.length > 0 && <Statements statements={statements} policyIndex={policyIndex} />}
   </li>
 );
 
