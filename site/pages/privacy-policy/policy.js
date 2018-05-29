@@ -21,7 +21,7 @@ const SerifH3 = ({ children }) => <h3 className={styles.largeSimpleHeading}>{chi
 
 const policies = [
   {
-    heading: 'Why do you have a Cookies Policy?',
+    heading: 'Introduction',
     statements: [
       {
         body: () => (
