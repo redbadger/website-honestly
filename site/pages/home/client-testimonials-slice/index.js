@@ -6,7 +6,7 @@ import ClientOnly from '../../../components/clientOnly';
 import Navigator from './navigator';
 import Testimonial from './testimonial';
 
-import testimonials from './testimonials.js';
+import testimonials from './testimonials';
 
 type ClientTestimonialState = {
   currentIndex: number,
