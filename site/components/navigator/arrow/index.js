@@ -9,15 +9,15 @@ type ArrowProps = {
   direction: string,
   onClick: Function,
   currentIndex: number,
+  lastIndex: number,
 };
 
-const Arrow = ({ direction, onClick, currentIndex }: ArrowProps) => {
-  const LAST_INDEX = 7;
+const Arrow = ({ direction, onClick, currentIndex, lastIndex }: ArrowProps) => {
   const click = () => {
     let newIndex = currentIndex;
     if (direction === 'left' && currentIndex > 0) {
       newIndex = currentIndex - 1;
-    } else if (direction === 'right' && currentIndex < LAST_INDEX) {
+    } else if (direction === 'right' && currentIndex < lastIndex) {
       newIndex = currentIndex + 1;
     }
     onClick(newIndex);
@@ -25,7 +25,7 @@ const Arrow = ({ direction, onClick, currentIndex }: ArrowProps) => {
 
   const isClickable =
     (direction === 'left' && currentIndex > 0) ||
-    (direction === 'right' && currentIndex < LAST_INDEX);
+    (direction === 'right' && currentIndex < lastIndex);
 
   return (
     <button

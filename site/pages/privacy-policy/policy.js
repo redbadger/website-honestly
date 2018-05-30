@@ -1,5 +1,5 @@
 // @flow
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/no-unescaped-entities, max-len */
 
 import * as React from 'react';
 

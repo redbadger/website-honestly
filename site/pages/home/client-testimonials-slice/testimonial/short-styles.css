@@ -1,0 +1,42 @@
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+
+.main {
+  composes: main from './styles.css';
+  max-width: 400px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  margin: 5px;
+}
+
+.mainWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.author {
+  composes: author from './styles.css'
+}
+
+.contentWrapper {
+  composes: contentWrapper from './styles.css';
+}
+
+
+@media mediumScreen {
+  .main {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: normal;
+    max-width: 500px;
+  }
+}
+
+@media largeScreen {
+  .main {
+    font-size: 60px;
+    line-height: normal;
+    max-width: 650px;
+  }
+}
+

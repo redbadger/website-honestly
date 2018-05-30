@@ -9,6 +9,7 @@ import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
 import NewsLetter from './newsletter-slice';
 import Social from '../../components/social';
 import metaImage from './meta-image.jpg';
+import TestimonialsSlice from './client-testimonials-slice';
 
 export default function HomePage() {
   const social = {
@@ -24,6 +25,7 @@ export default function HomePage() {
       <Social {...social} />
       <TopSlice />
       <CaseStudyOverview />
+      <TestimonialsSlice />
       <ChecklistContactUs />
       <TechSlice />
       <AwardsSlice />
