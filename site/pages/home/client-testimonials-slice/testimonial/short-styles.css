@@ -1,7 +1,7 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
 
 .main {
-  composes: main from './common-styles.css';
+  composes: main from './styles.css';
   max-width: 400px;
   font-size: 30px;
   line-height: 1.2;
@@ -15,15 +15,15 @@
 }
 
 .author {
-  composes: author from './common-styles.css'
+  composes: author from './styles.css'
 }
 
 .centered {
-  composes: centered from './common-styles.css'
+  composes: centered from './styles.css'
 }
 
 .contentWrapper {
-  composes: contentWrapper from './common-styles.css';
+  composes: contentWrapper from './styles.css';
   height: 483px;
 }
 

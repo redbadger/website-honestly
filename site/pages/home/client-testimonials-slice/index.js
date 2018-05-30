@@ -4,11 +4,9 @@ import SwipeableViews from 'react-swipeable-views';
 import styles from './style.css';
 import ClientOnly from '../../../components/clientOnly';
 import Navigator from './navigator';
+import Testimonial from './testimonial';
 
-import testimonialData from './testimonials.json';
-import shortTestimonial from './testimonial-component/short-testimonial.css';
-import commonStyles from './testimonial-component/common-styles.css';
-import Testimonial from './testimonial-component';
+import testimonials from './testimonials.js';
 
 type ClientTestimonialState = {
   currentIndex: number,
@@ -34,31 +32,9 @@ class ClientTestimonialsSlice extends React.Component<*, ClientTestimonialState>
             <Navigator currentIndex={currentIndex} onClick={this.setPage} />
             <div className={styles.content}>
               <SwipeableViews index={currentIndex} onChangeIndex={this.setPage}>
-                <Testimonial
-                  styles={commonStyles}
-                  content={testimonialData.one.content}
-                  author={testimonialData.one.author}
-                />
-                <Testimonial
-                  styles={commonStyles}
-                  content={testimonialData.two.content}
-                  author={testimonialData.two.author}
-                />
-                <Testimonial
-                  styles={commonStyles}
-                  content={testimonialData.three.content}
-                  author={testimonialData.three.author}
-                />
-                <Testimonial
-                  styles={shortTestimonial}
-                  content={testimonialData.four.content}
-                  author={testimonialData.four.author}
-                />
-                <Testimonial
-                  styles={commonStyles}
-                  content={testimonialData.five.content}
-                  author={testimonialData.five.author}
-                />
+                {testimonials.map(t => (
+                  <Testimonial type={t.type} content={t.content} author={t.author} />
+                ))}
               </SwipeableViews>
             </div>
           </ClientOnly>

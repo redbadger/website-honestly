@@ -1,13 +1,18 @@
 // @flow
 import React from 'react';
 
+import shortTestimonialStyles from './short-styles.css';
+import testimonialStyles from './styles.css';
+
 type TestimonialProps = {
-  styles: Object,
+  type: string,
   content: string,
   author: string,
 };
 
-const Testimonial = ({ styles, content, author }: TestimonialProps) => {
+const Testimonial = ({ type, content, author }: TestimonialProps) => {
+  const styles = type === 'short' ? shortTestimonialStyles : testimonialStyles;
+
   return (
     <div className={styles.contentWrapper}>
       <div className={styles.centered}>
