@@ -1,8 +1,8 @@
 // @flow
 import React from 'react';
 import styles from './style.css';
-import Item from '../../../about-us/timeline-slice/navigator/item';
-import Arrow from '../../../about-us/timeline-slice/navigator/arrow';
+import Item from '../../../../components/navigator/item';
+import Arrow from '../../../../components/navigator/arrow';
 
 type TestimonialNavProps = {
   currentIndex: number,
