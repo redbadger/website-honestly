@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRed, linesOnWhite from "../../../../../css/_colors.css";
+@value badgerWhite, badgerRed, linesOnWhite from "../../../css/_colors.css";
 
 .arrow {
   background: none;

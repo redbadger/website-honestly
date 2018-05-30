@@ -1,6 +1,6 @@
-@value badgerWhite, badgerRed, badgerBlack from "../../../../../css/_colors.css";
-@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../../css/_sizes.css";
-@value timelineNavigationButton from "../../../../../css/_zindex.css";
+@value badgerWhite, badgerRed, badgerBlack from "../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+@value timelineNavigationButton from "../../../css/_zindex.css";
 
 .active a {
   color: badgerRed;
