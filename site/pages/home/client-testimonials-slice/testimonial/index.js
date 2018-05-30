@@ -15,7 +15,7 @@ const Testimonial = ({ type, content, author }: TestimonialProps) => {
 
   return (
     <div className={styles.contentWrapper}>
-      <div className={styles.centered}>
+      <div>
         <div className={styles.mainWrapper}>
           <div className={styles.main}>{content}</div>
         </div>

@@ -18,10 +18,6 @@
   composes: author from './styles.css'
 }
 
-.centered {
-  composes: centered from './styles.css'
-}
-
 .contentWrapper {
   composes: contentWrapper from './styles.css';
 }
