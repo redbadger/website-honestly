@@ -24,11 +24,9 @@ const TestimonialNav = ({ currentIndex, onClick }: TestimonialNavProps) => {
           lastIndex={lastIndex}
         />
         <div className={styles.testimonials}>
-          <Item value={0} onClick={onClick} currentIndex={currentIndex} />
-          <Item value={1} onClick={onClick} currentIndex={currentIndex} />
-          <Item value={2} onClick={onClick} currentIndex={currentIndex} />
-          <Item value={3} onClick={onClick} currentIndex={currentIndex} />
-          <Item value={4} onClick={onClick} currentIndex={currentIndex} />
+          {testimonials.map((_, i) => (
+            <Item key={i} value={i} onClick={onClick} currentIndex={currentIndex} />
+          ))}
         </div>
         <Arrow
           direction="right"
