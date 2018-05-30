@@ -47,11 +47,11 @@
 }
 
 .contentWrapper {
-  margin-top: 97px;
-  height: 475px;
-  justify-content: center;
+  margin: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 @media mediumScreen {
@@ -64,10 +64,6 @@
     width: 530px;
     font-size: 18px;
   }
-
-  .contentWrapper {
-    margin-top: 0;
-  }
 }
 
 @media largeScreen {
@@ -75,14 +71,10 @@
     font-size: 40px;
     line-height: normal;
   }
+
   .author {
     width: 530px;
     font-size: 24px;
-  }
-
-  .contentWrapper {
-    margin-top: 0;
-    height: 531px;
   }
 }
 

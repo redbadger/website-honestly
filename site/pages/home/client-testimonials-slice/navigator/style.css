@@ -5,9 +5,9 @@
   background: badgerWhite;
 }
 
-.container{
+.container {
   position: relative;
-  width: 52%;
+  width: 123px;
   margin: auto;
   top: 57px;
 }
@@ -16,31 +16,24 @@
   display: absolute;
 }
 
-.testimonials div:nth-child(1){
+.testimonials div:nth-child(1) {
   left: 0%;
 }
-.testimonials div:nth-child(2){
+.testimonials div:nth-child(2) {
   left: 25%;
 }
-.testimonials div:nth-child(3){
+.testimonials div:nth-child(3) {
   left: 50%;
 }
-.testimonials div:nth-child(4){
+.testimonials div:nth-child(4) {
   left: 75%;
 }
-.testimonials div:nth-child(5){
+.testimonials div:nth-child(5) {
   left: 100%;
 }
 
-@media mediumScreen{
-  .container{
-    width: 233px;
-  }
-}
-
-
 @media largeScreen {
-  .container{
+  .container {
     top: 95px;
   }
 }

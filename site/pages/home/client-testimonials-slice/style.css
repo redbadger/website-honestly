@@ -18,20 +18,17 @@
 }
 
 .content {
-  height: 580px;
+  padding: 97px 0 47px;
 }
 
 @media mediumScreen {
   .content {
     width: 100%;
-    height: 434px;
   }
 }
 
 @media largeScreen {
   .content {
-    padding-top: 120px;
-    padding-bottom: 0;
-    height: 660px;
+    padding: 137px 0 77px;
   }
 }

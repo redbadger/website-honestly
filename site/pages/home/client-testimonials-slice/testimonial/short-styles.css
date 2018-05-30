@@ -6,7 +6,7 @@
   font-size: 30px;
   line-height: 1.2;
   letter-spacing: -0.3px;
-  margin: 0 20px 0 20px;
+  margin: 5px;
 }
 
 .mainWrapper {
@@ -24,7 +24,6 @@
 
 .contentWrapper {
   composes: contentWrapper from './styles.css';
-  height: 483px;
 }
 
 
@@ -42,10 +41,6 @@
     font-size: 60px;
     line-height: normal;
     max-width: 650px;
-  }
-
-  .contentWrapper {
-    height: 470px;
   }
 }
 

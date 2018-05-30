@@ -25,6 +25,7 @@ class ClientTestimonialsSlice extends React.Component<*, ClientTestimonialState>
 
   render() {
     const { currentIndex } = this.state;
+
     return (
       <div className={styles.testimonials}>
         <div className={styles.container}>
@@ -32,8 +33,8 @@ class ClientTestimonialsSlice extends React.Component<*, ClientTestimonialState>
             <Navigator currentIndex={currentIndex} onClick={this.setPage} />
             <div className={styles.content}>
               <SwipeableViews index={currentIndex} onChangeIndex={this.setPage}>
-                {testimonials.map(t => (
-                  <Testimonial type={t.type} content={t.content} author={t.author} />
+                {testimonials.map((t, i) => (
+                  <Testimonial key={i} type={t.type} content={t.content} author={t.author} />
                 ))}
               </SwipeableViews>
             </div>
