@@ -71,7 +71,7 @@
   border-bottom: 5px solid #FC1D42;
   display: block;
   position: relative;
-  top: -9px;
+  top: -2px;
 }
 
 .statementNumber {
@@ -95,6 +95,18 @@
   margin-bottom: 10px;
 }
 
+.policyText p b {
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.policyList {
+  list-style: disc;
+  padding-left: 17px;
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 @media mediumScreen {
   .container {
     margin: 0 auto;
@@ -108,17 +120,13 @@
   .pageHeading {
     padding-left: 46px;
   }
-}
 
-.policyText p b {
-  font-family: 'ProximaNova-Bold', sans-serif;
-}
+  .number {
+    top: -9px;
+  }
 
-.policyList {
-  list-style: disc;
-  padding-left: 17px;
-  font-family: 'ProximaNova-Light', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  .statementNumber {
+    top: 0;
+  }
 }
 

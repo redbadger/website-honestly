@@ -1,5 +1,4 @@
 // @flow
-/* eslint-disable react/no-unescaped-entities */
 
 import React, { Fragment } from 'react';
 import Social from '../../components/social';
