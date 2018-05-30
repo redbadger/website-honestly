@@ -4,16 +4,25 @@ import styles from './style.css';
 import Item from '../../../../components/navigator/item';
 import Arrow from '../../../../components/navigator/arrow';
 
+import testimonials from '../testimonials';
+
 type TestimonialNavProps = {
   currentIndex: number,
   onClick: Function,
 };
 
+const lastIndex = testimonials.length - 1;
+
 const TestimonialNav = ({ currentIndex, onClick }: TestimonialNavProps) => {
   return (
     <div className={styles.navigator}>
       <div className={styles.container}>
-        <Arrow direction="left" onClick={onClick} currentIndex={currentIndex} lastIndex={5} />
+        <Arrow
+          direction="left"
+          onClick={onClick}
+          currentIndex={currentIndex}
+          lastIndex={lastIndex}
+        />
         <div className={styles.testimonials}>
           <Item value={0} onClick={onClick} currentIndex={currentIndex} />
           <Item value={1} onClick={onClick} currentIndex={currentIndex} />
@@ -21,7 +30,12 @@ const TestimonialNav = ({ currentIndex, onClick }: TestimonialNavProps) => {
           <Item value={3} onClick={onClick} currentIndex={currentIndex} />
           <Item value={4} onClick={onClick} currentIndex={currentIndex} />
         </div>
-        <Arrow direction="right" onClick={onClick} currentIndex={currentIndex} lastIndex={5} />
+        <Arrow
+          direction="right"
+          onClick={onClick}
+          currentIndex={currentIndex}
+          lastIndex={lastIndex}
+        />
       </div>
     </div>
   );
