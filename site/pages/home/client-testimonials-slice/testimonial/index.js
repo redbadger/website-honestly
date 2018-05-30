@@ -19,7 +19,7 @@ const Testimonial = ({ type, content, author }: TestimonialProps) => {
         <div className={styles.mainWrapper}>
           <div className={styles.main}>{content}</div>
         </div>
-        <div className={styles.author}>{author}</div>
+        <div className={styles.author}>– {author}</div>
       </div>
     </div>
   );
