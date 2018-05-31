@@ -27,7 +27,9 @@ function displayDateContent(startDateTime, endDateTime) {
 }
 
 const DateBubble = ({ startDateTime, endDateTime }: DateBubbleProps) => (
-  <div className={styles.dateBubble}>{displayDateContent(startDateTime, endDateTime)}</div>
+  <div itemProp="startDate" content={startDateTime.iso} className={styles.dateBubble}>
+    {displayDateContent(startDateTime, endDateTime)}
+  </div>
 );
 
 export default DateBubble;

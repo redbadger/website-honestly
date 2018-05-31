@@ -50,7 +50,12 @@ const EventsListEntry = ({
   };
 
   return (
-    <li key={`entry_${id}`} className={styles.eventItem}>
+    <li
+      key={`entry_${id}`}
+      className={styles.eventItem}
+      itemScope
+      itemType="http://schema.org/Event"
+    >
       <Grid fit={false}>
         <Cell size={12}>
           <HR color="grey" customClassName={styles.mobileHorizontalLine} />
