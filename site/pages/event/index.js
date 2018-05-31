@@ -44,7 +44,7 @@ export default function Event({ event }: EventProps) {
   };
 
   return (
-    <div className={styles.background}>
+    <div className={styles.background} itemScope itemType="http://schema.org/Event">
       <Social {...social} />
       <Section>
         <Container>
@@ -54,7 +54,9 @@ export default function Event({ event }: EventProps) {
               startDateTime={event.startDateTime}
               endDateTime={setEndDate('today', event.startDateTime, event.endDateTime)}
             />
-            <h1 className={styles.eventTitle}>{event.title}</h1>
+            <h1 className={styles.eventTitle} itemProp="name">
+              {event.title}
+            </h1>
             <div className={styles.twoColumn}>
               <div className={styles.event}>
                 <div className={styles.eventDescription}>{event.strapline}</div>
