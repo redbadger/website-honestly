@@ -11,7 +11,7 @@ type StatementT = {
   body: Function,
 };
 
-type Policy = {
+export type PolicyT = {
   policyIndex: number,
   heading: string,
   body?: Function,
@@ -20,7 +20,7 @@ type Policy = {
 
 const padNumber = (n: number) => (n < 10 ? '0' + n : +n);
 
-const PolicyBox = ({ heading, body, statements = [], policyIndex }: Policy) => {
+const PolicyBox = ({ heading, body, statements = [], policyIndex }: PolicyT) => {
   const hasStatements = statements.length > 0;
   const wrapperClass = hasStatements ? '' : styles.policyText;
 

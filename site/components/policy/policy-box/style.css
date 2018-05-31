@@ -13,7 +13,6 @@
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
   line-height: 1.1;
-  padding: 0;
   border-bottom: 5px solid #FC1D42;
   display: block;
   position: relative;
@@ -26,8 +25,8 @@
   margin-bottom: 10px;
 }
 
-.policyText p b {
-  font-family: 'ProximaNova-Bold', sans-serif;
+.policyTextBold {
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
 }
 
 @media mediumScreen {

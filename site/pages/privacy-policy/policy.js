@@ -3,21 +3,9 @@
 
 import * as React from 'react';
 
-import styles from './style.css';
-import { P as BaseParagraph } from '../../components/text';
+import styles from '../../components/policy/style.css';
+import { P, H3, SerifH3, H4, B, PolicyList } from '../../components/policy/shared';
 import Link from '../../components/link';
-
-const P = ({
-  children,
-  customClass = styles.mb10,
-}: {
-  children: React.Node,
-  customClass?: string,
-}) => <BaseParagraph customClass={customClass}>{children}</BaseParagraph>;
-
-const H3 = ({ children }) => <h3 className={styles.simpleHeading}>{children}</h3>;
-const H4 = ({ children }) => <h4 className={styles.simpleHeading}>{children}</h4>;
-const SerifH3 = ({ children }) => <h3 className={styles.largeSimpleHeading}>{children}</h3>;
 
 const policies = [
   {
@@ -26,7 +14,7 @@ const policies = [
       {
         body: () => (
           <P>
-            We are committed to safeguarding the privacy of individuals (“<b>you</b>”, “<b>your</b>”)
+            We are committed to safeguarding the privacy of individuals (“<B>you</B>”, “<B>your</B>”)
             whose personal data we collect and use. In this Privacy Statement, we explain how we
             handle your personal data. For example, what personal data we collect and how, what we
             do with it and who we share it with. It also describes your privacy rights and controls
@@ -41,7 +29,7 @@ const policies = [
             <Link to="cookiePolicy">Cookies Policy</Link>
             {/* and our{' '}
             <Link to="termsAndConditions">Website Terms</Link> */}. By
-            accessing or using <Link to="homePage">www.red-badger.com</Link> (“<b>Website</b>”), you
+            accessing or using <Link to="homePage">www.red-badger.com</Link> (“<B>Website</B>”), you
             confirm that you accept the terms of our Privacy Statement.
           </P>
         ),
@@ -54,8 +42,8 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Website is owned and operated by Red Badger Consulting Limited (“<b>Red Badger</b>”,
-            “<b>we</b>”, “<b>us</b>” or “<b>our</b>”)
+            Our Website is owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
+            “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
           </P>
         ),
       },
@@ -134,7 +122,7 @@ const policies = [
         body: () => (
           <React.Fragment>
             <P>Your principal rights under the applicable data protection laws are:</P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>the right to access;</li>
               <li>the right to rectification;</li>
               <li>the right to erasure;</li>
@@ -143,14 +131,14 @@ const policies = [
               <li>the right to data portability;</li>
               <li>the right to complain to the UK Information Commissioner; and</li>
               <li>the right to withdraw consent.</li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },
       {
         body: () => (
           <P>
-            <b>Right to access:</b> You have the right to confirmation as to whether or not we
+            <B>Right to access:</B> You have the right to confirmation as to whether or not we
             process your personal data and, where we do, access to the personal data, together with
             certain additional information. That additional information includes details of the
             purposes of the processing, the categories of personal data concerned and the recipients
@@ -163,7 +151,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to rectification:</b> You have the right to have any inaccurate personal data
+            <B>Right to rectification:</B> You have the right to have any inaccurate personal data
             about you rectified and, taking into account the purposes of the processing, to have any
             incomplete personal data about you completed. You can ask us to make any necessary
             changes to ensure that your personal data is accurate and kept up to date.
@@ -173,7 +161,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to erasure:</b> In some circumstances you have the right to the erasure of your
+            <B>Right to erasure:</B> In some circumstances you have the right to the erasure of your
             personal data without undue delay. Those circumstances include: the personal data is no
             longer necessary in relation to the purposes for which they were collected or otherwise
             processed; you withdraw consent to consent-based processing; the processing is for
@@ -191,7 +179,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to restrict processing:</b> In some circumstances you have the right to
+            <B>Right to restrict processing:</B> In some circumstances you have the right to
             restrict the processing of your personal data. Those circumstances are: you contest the
             accuracy of the personal data; processing is unlawful, but you oppose erasure; we no
             longer need the personal data for the purposes of our processing, but you require
@@ -207,7 +195,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to object to processing:</b> You have the right to object to our processing of
+            <B>Right to object to processing:</B> You have the right to object to our processing of
             your personal data on grounds relating to your particular situation, but only to the
             extent that the legal basis for the processing is that the processing is necessary for:
             the performance of a task carried out in the public interest or in the exercise of any
@@ -222,7 +210,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to object to processing (direct marketing):</b> You have the right to object to
+            <B>Right to object to processing (direct marketing):</B> You have the right to object to
             our processing of your personal data for direct marketing purposes (including, for
             example, profiling for direct marketing purposes). If you make such an objection, we
             will cease to process your personal data for this purpose. You may exercise this right
@@ -236,7 +224,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to object to processing (scientific, historical research or statistics):</b>{' '}
+            <B>Right to object to processing (scientific, historical research or statistics):</B>{' '}
             You have the right to object to our processing of your personal data for scientific or
             historical research purposes or statistical purposes on grounds relating to your
             particular situation, unless the processing is necessary for the performance of a task
@@ -247,7 +235,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to data portability:</b> To the extent that the legal basis for our processing
+            <B>Right to data portability:</B> To the extent that the legal basis for our processing
             of your personal data is consent, and such processing is carried out by automated means,
             you have the right to receive your personal data from us in a structured, commonly used
             and machine-readable format. However, this right does not apply where it would adversely
@@ -258,7 +246,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to complain to the UK Information Commissioner:</b> If you consider that our
+            <B>Right to complain to the UK Information Commissioner:</B> If you consider that our
             processing of your personal data infringes the applicable data protection laws, you have
             a legal right to lodge a complaint with the UK Information Commissioner (<a href="http://www.ico.org.uk">
               www.ico.org.uk
@@ -269,7 +257,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Right to withdraw consent:</b> To the extent that the legal basis for our processing
+            <B>Right to withdraw consent:</B> To the extent that the legal basis for our processing
             of your personal data is consent, you have the right to withdraw that consent at any
             time. Withdrawal will not affect the lawfulness of processing before the withdrawal.
           </P>
@@ -394,10 +382,10 @@ const policies = [
         body: () => (
           <React.Fragment>
             <P>
-              <b>Personal data you provide us about you:</b> We collect your personal data that you
+              <B>Personal data you provide us about you:</B> We collect your personal data that you
               provide us when you do the following:
             </P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>fill a contact webform on our Website;</li>
               <li>get in touch with us by email, telephone, letter, and/or some other means;</li>
               <li>
@@ -410,7 +398,7 @@ const policies = [
                 event or webinar we have organised and/or attended, and/or (b)pitching events;
               </li>
               <li>participate in a survey, market research etc.</li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },
@@ -418,12 +406,12 @@ const policies = [
         body: () => (
           <React.Fragment>
             <P>
-              <b>Data we collect about you automatically:</b> We collect your personal data when you
+              <B>Data we collect about you automatically:</B> We collect your personal data when you
               contact us or automatically when you access and/or use our Website and through the use
               of cookies (see our <Link to="cookiePolicy">Cookies Policy</Link>). The types of
               personal data we will collect include, for example:
             </P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>name and address;</li>
               <li>demographic data;</li>
               <li>the originating IP address;</li>
@@ -439,7 +427,7 @@ const policies = [
                 that you visit; and
               </li>
               <li>the time, frequency and duration of your visits to our Website.</li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },
@@ -447,10 +435,10 @@ const policies = [
         body: () => (
           <React.Fragment>
             <P>
-              <b>Data we collect about you from others:</b>
+              <B>Data we collect about you from others:</B>
               We also collect personal data about you from others such as (for example):
             </P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>name and address;</li>
               <li>online through social media we use and the internet in general;</li>
               <li>contact details sourcing software we use;</li>
@@ -471,7 +459,7 @@ const policies = [
                 clients) and/or individuals (e.g. your colleagues) that introduce you to us; or
               </li>
               <li>employers (if you apply for a job and we contact your employer).</li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },
@@ -730,7 +718,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Third-party service providers:</b> We may disclose your personal data such as your
+            <B>Third-party service providers:</B> We may disclose your personal data such as your
             name and contact details to our third-party service providers to help us administer,
             operate and manage our business provide services related to us and/or our Website.
             Service providers may be located inside or outside of the EEA. For example, service
@@ -743,7 +731,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Aggregated Data:</b> We may also share aggregated information (information about our
+            <B>Aggregated Data:</B> We may also share aggregated information (information about our
             individuals that we combine together so that it no longer identifies or references an
             individual) and non-personally identifiable information for industry and market
             analysis, demographic profiling, marketing (including, for example) advertising, and
@@ -754,7 +742,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Sale/Investment:</b> If there is (a) a sale or an asset transfer to a third party of,
+            <B>Sale/Investment:</B> If there is (a) a sale or an asset transfer to a third party of,
             and/or (b) an investment in Red Badger, part of that sale, asset transfer and/or
             investment may include your personal data. Purchasers, investors and/or their advisers
             may have access to your personal data as part of the corporate due diligence they
@@ -766,7 +754,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Insolvency:</b> Your personal data may be passed on to a successor in interest as
+            <B>Insolvency:</B> Your personal data may be passed on to a successor in interest as
             part of a corporate re-organisation or in the unlikely event of an insolvency event such
             as a liquidation, insolvency, bankruptcy or administration. In the case of an insolvency
             event, our customer database may be sold separately from the rest of the business, in
@@ -778,7 +766,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Our insurers & professional advisers:</b> We may disclose your personal data to our
+            <B>Our insurers & professional advisers:</B> We may disclose your personal data to our
             insurers and/or professional advisers insofar as reasonably necessary for the purposes
             of obtaining and maintaining insurance coverage, managing risks, obtaining professional
             advice and/or managing legal disputes.
@@ -788,7 +776,7 @@ const policies = [
       {
         body: () => (
           <P>
-            <b>Legal compliance:</b> In addition to the specific disclosures of personal data set
+            <B>Legal compliance:</B> In addition to the specific disclosures of personal data set
             out in this Section 8, we may also disclose your personal data where such disclosure is
             necessary for compliance with a legal obligation to which we are subject, or in order to
             protect your vital interests or the vital interests of another individual.
@@ -804,14 +792,14 @@ const policies = [
         body: () => (
           <React.Fragment>
             <P>We use social media accounts and pages in different ways. For example:</P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>
-                <b>to promote, market, advertise and communicate.</b> We use social media to
+                <B>to promote, market, advertise and communicate.</B> We use social media to
                 promote, market and advertise our brand and services. We also use social media to
                 communicate with each other.
               </li>
               <li>
-                <b>to generate leads for our business:</b> If you connect with us through your
+                <B>to generate leads for our business:</B> If you connect with us through your
                 social media account and/or communicate with us through that account, the
                 information you choose to share with us may include the basic personal data
                 available in your social media profile and also the information you provide to us
@@ -821,7 +809,7 @@ const policies = [
                 in our business and/or services.
               </li>
               <li>
-                <b>We have also integrated social media features and plugins on our Website.</b>{' '}
+                <B>We have also integrated social media features and plugins on our Website.</B>{' '}
                 These features and plugins may collect your IP address, which page you are visiting
                 on our Website, and may set a cookie to enable the feature to function properly.
                 Also, when you click on one of the social buttons, you will be re-directed to our
@@ -833,7 +821,7 @@ const policies = [
                 network. These social media features and plugins are governed by the privacy
                 policies of the social media providers and not our Privacy Statement.
               </li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },
@@ -849,14 +837,14 @@ const policies = [
               We may transfer your personal data to countries outside the EEA. This may happen as
               follows:
             </P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>Our Website is hosted in eu-west-1 (Dublin, Ireland)</li>
               <li>
                 The business software we use (e.g. Slack, HubSpot etc.) may be hosted outside the
                 EEA e.g. the US. If that is the case, we rely on the adequate safeguards they have
                 put in place to keep this personal data safe and secure.
               </li>
-            </ul>
+            </PolicyList>
             <P>
               These legal safeguards vary depending on which country the data is transferred to. For
               example, if the personal data is transferred outside the EEA, then they could, for
@@ -915,7 +903,7 @@ const policies = [
               than is necessary for that purpose or those purposes. We will retain and delete your
               personal data as follows:
             </P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>
                 sign-up for newsletters will be retained for 24 months following month of sign-up,
                 at the end of which period it will be deleted from our systems.
@@ -928,7 +916,7 @@ const policies = [
                 identified via legitimate interest will be retained for 24 months following month of
                 addition to CRM], at the end of which period it will be deleted from our systems.
               </li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },
@@ -940,7 +928,7 @@ const policies = [
               your personal data will be retained. In such cases, we will determine the period of
               retention based on the following criteria:
             </P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>Engagement statistics for social media data.</li>
               <li>
                 the amount, nature, and sensitivity of the personal data, the potential risk of harm
@@ -949,7 +937,7 @@ const policies = [
                 means, and the applicable legal requirements e.g. whether (and for how long) we are
                 required by law to retain your personal data.
               </li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },
@@ -957,7 +945,7 @@ const policies = [
         body: () => (
           <React.Fragment>
             <P>However, we may retain your personal data</P>
-            <ul className={styles.policyList}>
+            <PolicyList>
               <li>
                 where such retention is necessary for (a) the performance of a contract we have with
                 you, (b) the compliance with a legal obligation to which we are subject, and/or (c)
@@ -967,7 +955,7 @@ const policies = [
                 in order to protect your vital interests or the vital interests of another
                 individual.
               </li>
-            </ul>
+            </PolicyList>
           </React.Fragment>
         ),
       },

@@ -3,23 +3,9 @@
 
 import * as React from 'react';
 
-import styles from './style.css';
-import { P as BaseParagraph } from '../../components/text';
+import styles from '../../components/policy/style.css';
+import { P, H3 } from '../../components/policy/shared';
 import Link from '../../components/link';
-
-const P = ({
-  children,
-  customClass = styles.mb10,
-}: {
-  children: React.Node,
-  customClass?: string,
-}) => {
-  return <BaseParagraph customClass={customClass}>{children}</BaseParagraph>;
-};
-
-const H3 = ({ children }) => {
-  return <h3 className={styles.simpleHeading}>{children}</h3>;
-};
 
 const policies = [
   {
