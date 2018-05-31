@@ -2,7 +2,8 @@
 
 import React, { Fragment } from 'react';
 import Social from '../../components/social';
-import { H1, H2 } from '../../components/text';
+import { H1 } from '../../components/text';
+import PolicyBox from '../../components/policy/policy-box';
 import metaImage from '../home/meta-image.jpg';
 import styles from './style.css';
 
@@ -14,77 +15,6 @@ const social = {
     'Let’s make things better. We are digital transformation experts who innovate and deliver.',
   metaImage,
   url: 'cookie-policy',
-};
-
-type StatementT = {
-  body: Function,
-};
-
-type StatementWithIndexes = {
-  statementIndex: number,
-  policyIndex: number,
-  body: Function,
-};
-
-type Policy = {
-  policyIndex: number,
-  heading: string,
-  body?: Function,
-  statements?: Array<StatementT>,
-};
-
-const Statement = ({ body, statementIndex, policyIndex }: StatementWithIndexes) => (
-  <li className={styles.box}>
-    <div className={styles.numberContainer}>
-      <span className={styles.statementNumber}>{`${policyIndex}.${statementIndex}`}</span>
-    </div>
-    <div className={styles.policyText}>{body()}</div>
-  </li>
-);
-
-const padNumber = (n: number) => (n < 10 ? '0' + n : +n);
-
-const Statements = ({
-  statements,
-  policyIndex,
-}: {
-  statements: Array<StatementT>,
-  policyIndex: number,
-}) => {
-  return (
-    <ol>
-      {statements.map((statement, statementIndex) => (
-        <Statement
-          key={statementIndex}
-          statementIndex={statementIndex + 1}
-          policyIndex={policyIndex}
-          {...statement}
-        />
-      ))}
-    </ol>
-  );
-};
-
-const PolicyBox = ({ heading, body, statements = [], policyIndex }: Policy) => {
-  const hasStatements = statements.length > 0;
-  const wrapperClass = hasStatements ? '' : styles.policyText;
-
-  return (
-    <li>
-      <div className={styles.box}>
-        <div className={styles.numberContainer}>
-          <span className={styles.number}>{padNumber(policyIndex)}</span>
-        </div>
-        <div className={wrapperClass}>
-          <H2 type="fontM2" customClass={styles.mb10}>
-            {heading}
-          </H2>
-          {body && body()}
-        </div>
-      </div>
-      {hasStatements && <Statements statements={statements} policyIndex={policyIndex} />}
-    </li>
-  );
 };
 
 const CookiePolicyPage = () => {

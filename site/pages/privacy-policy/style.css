@@ -13,10 +13,6 @@
   margin-bottom: 20px;
 }
 
-.mb30 {
-  margin-bottom: 30px;
-}
-
 .simpleHeading {
   font-size: 16px;
   line-height: 1.2;
@@ -54,47 +50,6 @@
   border-bottom: 1px solid badgerRedOnBlack;
 }
 
-.box {
-  display: flex;
-  align-items: baseline;
-}
-
-.numberContainer {
-  margin-right: 30px;
-}
-
-.number {
-  composes: boldSansSerif from '../../css/typography/_fonts.css';
-  font-size: 16px;
-  line-height: 1.1;
-  padding: 0;
-  border-bottom: 5px solid #FC1D42;
-  display: block;
-  position: relative;
-  top: -2px;
-}
-
-.statementNumber {
-  composes: number;
-  border-bottom: 0;
-  top: 0;
-}
-
-.underline {
-  background-color: red;
-  height: 5px;
-}
-
-.policyHeading {
-  padding-bottom: 10px;
-}
-
-.policyText {
-  max-width: 610px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
 .policyText p b {
   font-family: 'ProximaNova-Bold', sans-serif;
 }
@@ -115,10 +70,6 @@
 
   .container a {
     word-break: normal;
-  }
-
-  .pageHeading {
-    padding-left: 46px;
   }
 
   .number {
