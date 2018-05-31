@@ -1,5 +1,9 @@
 @value mediumScreen from "../../../css/_sizes.css";
 
+.mb10 {
+  margin-bottom: 10px;
+}
+
 .box {
   display: flex;
   align-items: baseline;
