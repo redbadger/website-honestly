@@ -18,9 +18,10 @@ import { setEndDate } from '../../fetchers/util/events';
 
 type DateShape = {
   date: string,
+  iso?: string,
+  month?: string,
   monthSym: string,
   year: string,
-  month?: string,
 };
 
 type EventProps = {

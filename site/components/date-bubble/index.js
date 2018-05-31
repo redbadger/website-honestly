@@ -6,9 +6,10 @@ import styles from './style.css';
 
 export type DateShape = {
   date: string,
+  iso?: string,
+  month?: string,
   monthSym: string,
   year: string,
-  month?: string,
 };
 
 type DateBubbleProps = {
