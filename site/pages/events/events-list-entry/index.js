@@ -27,6 +27,9 @@ type EventsListEntryProps = {
   endDateTime?: DateShape,
   type: 'news' | 'event',
   timeline?: 'past' | 'future' | 'today',
+  location?: {
+    address: string,
+  },
 };
 
 const EventsListEntry = ({
@@ -41,6 +44,7 @@ const EventsListEntry = ({
   internalLinks,
   startDateTime,
   featureImageFilename,
+  location,
 }: EventsListEntryProps) => {
   const eventLink = {
     year: startDateTime.year,
@@ -56,6 +60,7 @@ const EventsListEntry = ({
       itemScope
       itemType="http://schema.org/Event"
     >
+      <span itemProp="location" content={location ? location.address : ''} />
       <Grid fit={false}>
         <Cell size={12}>
           <HR color="grey" customClassName={styles.mobileHorizontalLine} />

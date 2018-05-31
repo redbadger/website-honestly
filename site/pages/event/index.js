@@ -34,6 +34,9 @@ type EventProps = {
     internalLinks: LinkList,
     externalLinks: LinkList,
     featureImageFilename: string,
+    location?: {
+      address: string,
+    },
   },
 };
 
@@ -46,6 +49,7 @@ export default function Event({ event }: EventProps) {
 
   return (
     <div className={styles.background} itemScope itemType="http://schema.org/Event">
+      <span itemProp="location" content={event.location ? event.location.address : ''} />
       <Social {...social} />
       <Section>
         <Container>

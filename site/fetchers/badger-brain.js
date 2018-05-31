@@ -126,6 +126,9 @@ const dateTimeFieldsEvents = `
 const fullEventsQuery = `
   ${basicFields}
   ${dateTimeFieldsEvents}
+  location {
+    address
+  }
 `;
 
 export function getData() {
