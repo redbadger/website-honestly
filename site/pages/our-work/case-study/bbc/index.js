@@ -1,4 +1,5 @@
 // @flow
+
 import React from 'react';
 
 import WhatToReadNext from '../what-to-read-next';

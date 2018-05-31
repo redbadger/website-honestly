@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';

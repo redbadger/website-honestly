@@ -103,6 +103,7 @@ const social = {
   description:
     'We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.',
   metaImage,
+  altText: 'An illustration an award we won.',
   url: 'https://red-badger/jobs',
 };
 

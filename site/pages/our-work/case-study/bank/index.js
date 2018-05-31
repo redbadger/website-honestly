@@ -24,8 +24,9 @@ const cx = classnames.bind(styles);
 const social = {
   title: 'Digital transformation in retail banking | Red Badger',
   description:
-    'Discover how we delivered quality digital products to customers quickly, built capability and changed the culture to increase business efficiency in one of the world’s largest banks.',
+    "Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks.",
   metaImage,
+  altText: 'An arrow built out of colorful, square pieces, assembled by multiple people.',
   url: 'https://red-badger.com/our-work/case-study/financial-services-digital-transformation',
 };
 

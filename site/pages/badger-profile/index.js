@@ -31,6 +31,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
     title: `${fullName} | Red Badger`,
     description: badger.jobTitle,
     metaImage,
+    altText: 'An illustration of different people.',
     url: `https://red-badger.com/people${[badger.firstName, badger.lastName]
       .join('-')
       .toLowerCase()}`,

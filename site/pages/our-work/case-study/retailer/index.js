@@ -20,6 +20,7 @@ const social = {
   description:
     'Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.',
   metaImage,
+  altText: 'A retailer shopping cart.',
   url: 'https://red-badger.com/our-work/case-study/retailer',
 };
 
