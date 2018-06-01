@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Fragment } from 'react';
+import * as React from 'react';
 import Social from '../social';
 import { H1 } from '../text';
 import PolicyBox from './policy-box';
@@ -10,14 +10,14 @@ import type { SocialProps } from '../social';
 
 type Props = {
   social: SocialProps,
-  policies: Array<{ heading: string, body?: Function }>,
+  policies: Array<{ heading: string, body?: () => React.Node }>,
   effectiveDate: string,
   title: string,
 };
 
 const Policy = ({ title, effectiveDate, social, policies }: Props) => {
   return (
-    <Fragment>
+    <React.Fragment>
       <Social {...social} />
       <div className={styles.container}>
         <H1 type="fontL" customClass={styles.mb10}>
@@ -30,7 +30,7 @@ const Policy = ({ title, effectiveDate, social, policies }: Props) => {
           ))}
         </ol>
       </div>
-    </Fragment>
+    </React.Fragment>
   );
 };
 

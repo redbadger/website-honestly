@@ -1,17 +1,17 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import Statement from '../statement';
 
-type StatementT = {
-  body: Function,
+export type StatementType = {
+  body: () => React.Node,
 };
 
 const Statements = ({
   statements,
   policyIndex,
 }: {
-  statements: Array<StatementT>,
+  statements: Array<StatementType>,
   policyIndex: number,
 }) => {
   return (

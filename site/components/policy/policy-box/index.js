@@ -1,21 +1,18 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 
 import Statements from '../statements';
 import { H2 } from '../../text';
 
 import styles from './style.css';
-
-type StatementT = {
-  body: Function,
-};
+import type { StatementType } from '../statements';
 
 export type PolicyT = {
   policyIndex: number,
   heading: string,
-  body?: Function,
-  statements?: Array<StatementT>,
+  body?: () => React.Node,
+  statements?: Array<StatementType>,
 };
 
 const padNumber = (n: number) => (n < 10 ? '0' + n : +n);
