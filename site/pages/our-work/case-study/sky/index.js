@@ -6,7 +6,7 @@ import styles from './style.css';
 
 import headerImage from './images/header.jpg';
 import articleImage from './images/article.jpg';
-import authorQuoteImage from './images/quote-author.jpeg';
+import authorQuoteImage from './images/quote-author.jpg';
 
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
@@ -17,9 +17,10 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 const social = {
-  title: 'The proof is in the pudding',
-  description: 'Helping Sky customers help themselves, with a refreshed customer service website',
+  title: 'Helping customers help themselves | Red Badger',
+  description: 'Enabling Sky to deliver continual improvement across customer services.',
   metaImage: headerImage,
+  altText: 'A Sky customer standing at cross-roads.',
   url: 'https://red-badger.com/our-work/case-study/sky-cms',
 };
 

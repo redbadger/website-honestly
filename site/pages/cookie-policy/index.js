@@ -11,6 +11,7 @@ const social = {
   description:
     'Let’s make things better. We are digital transformation experts who innovate and deliver.',
   metaImage,
+  altText: 'Red Badger logo',
   url: 'cookie-policy',
 };
 

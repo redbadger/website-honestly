@@ -12,9 +12,10 @@ import headerImage from './images/header.jpg';
 import articleImage from './images/article.jpg';
 
 const social = {
-  title: 'The proof is in the pudding',
+  title: 'BMW Virtual Museum | Red Badger',
   description: 'BMW Virtual Museum: The shortcut between you and the museum',
   metaImage: headerImage,
+  altText: 'A 3D rendered illustration of car.',
   url: 'https://red-badger.com/our-work/case-study/bmw',
 };
 
