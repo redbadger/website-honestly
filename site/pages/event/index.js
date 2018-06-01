@@ -49,7 +49,12 @@ export default function Event({ event }: EventProps) {
 
   return (
     <div className={styles.background} itemScope itemType="http://schema.org/Event">
-      <span itemProp="location" content={event.location ? event.location.address : ''} />
+      <span itemProp="location" itemScope itemType="http://schema.org/Place">
+        {/* This is not exactly correct as Google reads it as the name of the location,
+            and we pass it the full address, in one line (potentially, as the field
+            in the CMS is just a text field). */}
+        <span itemProp="address" content={event.location ? event.location.address : ''} />
+      </span>
       <Social {...social} />
       <Section>
         <Container>
