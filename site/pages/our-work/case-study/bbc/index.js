@@ -12,9 +12,11 @@ import PullQuote from '../../../../components/pull-quote';
 import headerImage from './images/header.jpg';
 
 const social = {
-  title: 'The proof is in the pudding',
-  description: 'BBC Now: Delivering a better customer experience, faster',
+  title: 'Delivering a better customer experience, faster. | Red Badger',
+  description:
+    'How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.',
   metaImage: headerImage,
+  altText: 'A laptop showing the BBC website',
   url: 'https://red-badger.com/our-work/case-study/bbc-now',
 };
 
