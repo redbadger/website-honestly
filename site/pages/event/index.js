@@ -18,9 +18,10 @@ import { setEndDate } from '../../fetchers/util/events';
 
 type DateShape = {
   date: string,
+  iso?: string,
+  month?: string,
   monthSym: string,
   year: string,
-  month?: string,
 };
 
 type EventProps = {
@@ -33,6 +34,9 @@ type EventProps = {
     internalLinks: LinkList,
     externalLinks: LinkList,
     featureImageFilename: string,
+    location?: {
+      address: string,
+    },
   },
 };
 
@@ -44,7 +48,8 @@ export default function Event({ event }: EventProps) {
   };
 
   return (
-    <div className={styles.background}>
+    <div className={styles.background} itemScope itemType="http://schema.org/Event">
+      <span itemProp="location" content={event.location ? event.location.address : ''} />
       <Social {...social} />
       <Section>
         <Container>
@@ -54,7 +59,9 @@ export default function Event({ event }: EventProps) {
               startDateTime={event.startDateTime}
               endDateTime={setEndDate('today', event.startDateTime, event.endDateTime)}
             />
-            <h1 className={styles.eventTitle}>{event.title}</h1>
+            <h1 className={styles.eventTitle} itemProp="name">
+              {event.title}
+            </h1>
             <div className={styles.twoColumn}>
               <div className={styles.event}>
                 <div className={styles.eventDescription}>{event.strapline}</div>

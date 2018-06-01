@@ -11,7 +11,7 @@ type EventTitleProps = {
 };
 
 const EventTitle = ({ eventLink, eventTitle }: EventTitleProps) => (
-  <h2 className={styles.eventTitle}>
+  <h2 className={styles.eventTitle} itemProp="name">
     <Link to="event" navigationData={eventLink} className={styles.eventTitleLink}>
       <span>{eventTitle}</span>
     </Link>

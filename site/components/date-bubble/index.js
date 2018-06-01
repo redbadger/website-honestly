@@ -6,9 +6,10 @@ import styles from './style.css';
 
 export type DateShape = {
   date: string,
+  iso?: string,
+  month?: string,
   monthSym: string,
   year: string,
-  month?: string,
 };
 
 type DateBubbleProps = {
@@ -27,7 +28,9 @@ function displayDateContent(startDateTime, endDateTime) {
 }
 
 const DateBubble = ({ startDateTime, endDateTime }: DateBubbleProps) => (
-  <div className={styles.dateBubble}>{displayDateContent(startDateTime, endDateTime)}</div>
+  <div itemProp="startDate" content={startDateTime.iso} className={styles.dateBubble}>
+    {displayDateContent(startDateTime, endDateTime)}
+  </div>
 );
 
 export default DateBubble;
