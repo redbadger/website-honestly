@@ -285,7 +285,7 @@ const policies = [
             notice, such as via email. If you disagree with the changes to the Privacy Statement,
             you should contact our Data Compliance Manager (<a href="mailto:privacy@red-badger.com">
               privacy@red-badger.com
-            </a>) writing requesting the erasure of your personal and, if you receive our
+            </a>) writing requesting the erasure of your personal data and, if you receive our
             newsletter, unsubscribe from them.
           </P>
         ),
