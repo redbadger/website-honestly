@@ -13,14 +13,17 @@
   margin-bottom: 20px;
 }
 
-.mb30 {
-  margin-bottom: 30px;
-}
-
 .simpleHeading {
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 1.2;
   font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.largeSimpleHeading {
+  composes: serif from '../../css/typography/_fonts.css';
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .effectiveDate {
@@ -47,36 +50,16 @@
   border-bottom: 1px solid badgerRedOnBlack;
 }
 
-.box {
-  display: flex;
+.policyText p b {
+  font-family: 'ProximaNova-Bold', sans-serif;
 }
 
-.numberContainer {
-  margin-right: 30px;
-}
-
-.number {
-  composes: boldSansSerif from '../../css/typography/_fonts.css';
+.policyList {
+  list-style: disc;
+  padding-left: 17px;
+  font-family: 'ProximaNova-Light', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: bold;
-  padding-bottom: 5px;
-  border-bottom: 5px solid badgerRed;
-}
-
-.underline {
-  background-color: red;
-  height: 5px;
-}
-
-.policyHeading {
-  padding-bottom: 10px;
-}
-
-.policyText {
-  max-width: 610px;
-  width: 100%;
-  margin-bottom: 10px;
 }
 
 @media mediumScreen {
@@ -89,11 +72,12 @@
     word-break: normal;
   }
 
-  .pageHeading {
-    padding-left: 46px;
+  .number {
+    top: -9px;
   }
 
-  .numberContainer {
-    margin-top: 8px;
+  .statementNumber {
+    top: 0;
   }
 }
+

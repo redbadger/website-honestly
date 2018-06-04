@@ -1,0 +1,27 @@
+.box {
+  display: flex;
+  align-items: baseline;
+}
+
+.numberContainer {
+  margin-right: 30px;
+}
+
+.statementNumber {
+  composes: number from "../policy-box/style.css";
+  border-bottom: 0;
+  top: 0;
+}
+
+.policyText {
+  composes: policyText from "../policy-box/style.css";
+}
+
+.policyText p b {
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.policyList {
+  composes: policyList from "../policy-box/style.css";
+}
+
