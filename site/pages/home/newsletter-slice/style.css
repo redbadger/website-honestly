@@ -9,7 +9,6 @@
   padding: 30px 20px 25px 20px;
 }
 
-
 .beforeErrorText {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
   font-size: 16px;
@@ -29,7 +28,6 @@
 .buttonSubmitting {
   opacity: 0.7;
 }
-
 
 .submitted {
   composes: dividerGreen from "../../../css/_divider.css";
