@@ -9,8 +9,9 @@ import metaImage from './meta-image.jpg';
 
 const social = {
   title: 'We’re people people | Red Badger',
-  description: 'Learn more about the team',
+  description: 'Learn more about the team.',
   metaImage,
+  altText: 'Illustration of the Red Badger team.',
   url: 'https://red-badger.com/people',
 };
 

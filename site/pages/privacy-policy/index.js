@@ -12,6 +12,7 @@ const social = {
     'Let’s make things better. We are digital transformation experts who innovate and deliver.',
   metaImage,
   url: 'privacy-policy',
+  altText: 'Red Badger logo',
 };
 
 const PrivacyPolicyPage = () => {

@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
@@ -25,6 +27,7 @@ const social = {
   title: 'Fortnum & Mason’s website increases revenue and conversion rates | Red Badger',
   description: 'Multiple award winning site increases conversion, sales and mobile visits.',
   metaImage,
+  altText: 'Fortnum & Mason website on desktop, tablet and mobile devices',
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason',
 };
 

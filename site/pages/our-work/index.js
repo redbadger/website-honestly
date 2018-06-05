@@ -25,8 +25,9 @@ export default function CaseStudies() {
   const social = {
     title: 'Our work | Red Badger',
     description:
-      'Find out how we’ve helped e-commerce, media, financial and technology companies deliver digital products that make a difference.',
+      'Discover how we’ve helped our clients deliver digital products that make a difference.',
     metaImage,
+    altText: "A desktop, tablet and mobile version of some of Red Badger's projects.",
     url: 'https://red-badger.com/our-work',
   };
 

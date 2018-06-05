@@ -26,6 +26,7 @@ const social = {
   description:
     'Upcoming events including We Love _ Tech, React London Community, UXD exchange and more.',
   metaImage,
+  altText: 'An illustration for our event ‘An Introduction to React’',
   url: 'https://red-badger.com/events',
 };
 

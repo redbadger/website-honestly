@@ -16,9 +16,11 @@ import WhatToReadNext from '../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 const social = {
-  title: 'The proof is in the pudding.',
-  description: 'Camden Market’s new digital platform designed and built in ten weeks',
+  title: 'Taking steps towards a digital future | Red Badger',
+  description:
+    'Discover how we helped Camden Market build a new new digital platform within just 10 weeks.',
   metaImage: headerImage,
+  altText: 'A preview of the Camden Market mobile app',
   url: 'https://red-badger.com/our-work/case-study/camden-market',
 };
 
