@@ -11,7 +11,8 @@
     "mocha": true
   },
   "globals": {
-    "expect": true
+    "expect": true,
+    "System": true
   },
   "parser": "babel-eslint",
   "plugins": [
