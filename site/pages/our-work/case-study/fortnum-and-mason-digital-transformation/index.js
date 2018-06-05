@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
@@ -14,9 +16,10 @@ import headerS from './images/header-s.jpg';
 import styles from './style.css';
 
 const social = {
-  title: 'The proof is in the pudding.',
-  description: 'The ongoing digital transformation of a 310-year old retailer',
+  title: 'The ongoing digital transformation of a 310-year old retailer | Red Badger',
+  description: 'Discover how we helped customers find products faster and drive sales for F&M.',
   metaImage: headerL,
+  altText: 'A picture of a teacup, teapot and mobile phone.',
   url: 'https://red-badger.com/our-work/case-study/fortnum-and-mason-digital-transformation',
 };
 

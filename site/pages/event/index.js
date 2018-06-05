@@ -44,6 +44,7 @@ export default function Event({ event }: EventProps) {
   const social = {
     title: `${event.title} | Red Badger`,
     description: event.strapline,
+    altText: 'An illustration of a laptop with stickers.',
     metaImage,
   };
 

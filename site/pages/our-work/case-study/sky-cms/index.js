@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import Social from '../../../../components/social';
 import styles from './style.css';
@@ -15,9 +17,10 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ContactBox from '../../../../components/contact-box';
 
 const social = {
-  title: 'The proof is in the pudding',
-  description: 'Bespoke and made from scratch: a new CMS just for Sky',
+  title: 'Bespoke and made from scratch: a new CMS for Sky | Red Badger',
+  description: 'Enabling Sky to manage their content with an amazing customer experience.',
   metaImage: headerImage,
+  altText: 'An illustration of people assembling building-size letters C, M and S.',
   url: 'https://red-badger.com/our-work/case-study/sky-cms',
 };
 

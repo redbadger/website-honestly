@@ -19,8 +19,9 @@ import ContactBox from '../../../../components/contact-box';
 const social = {
   title: 'Lasting change for a media giant | Red Badger',
   description:
-    'Read how we delivered the next generation ft.com homepage and successfully integrated UX and design across all other streams.',
+    'Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams.',
   metaImage,
+  altText: 'A drawing of people collaborating on a project.',
   url: 'https://red-badger.com/our-work/case-study/financial-times',
 };
 

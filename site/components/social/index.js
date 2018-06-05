@@ -6,10 +6,11 @@ export type SocialProps = {
   title: string,
   description: string,
   metaImage: string,
+  altText: string,
   url?: string,
 };
 
-const Social = ({ title, description, metaImage, url }: SocialProps) => (
+const Social = ({ title, description, metaImage, altText, url }: SocialProps) => (
   <Helmet
     meta={[
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -20,6 +21,7 @@ const Social = ({ title, description, metaImage, url }: SocialProps) => (
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: title },
       { property: 'og:image', content: `https://red-badger.com${metaImage}` },
+      { property: 'og:image:alt', content: altText },
       { property: 'og:description', content: description },
     ].concat(url ? [{ property: 'og:url', content: url }] : [])}
   />

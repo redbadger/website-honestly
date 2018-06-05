@@ -27,8 +27,9 @@ type Props = {
 const social = {
   title: 'Technology | Red Badger',
   description:
-    'We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery to quickly create value for customers.',
+    'We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery.',
   metaImage,
+  altText: 'The sentence "We choose the right tech for the job".',
   url: 'https://red-badger.com/technology',
 };
 

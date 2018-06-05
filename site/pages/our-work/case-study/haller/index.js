@@ -13,9 +13,10 @@ import articleImage from './images/article.jpg';
 import styles from './style.css';
 
 const social = {
-  title: 'The proof is in the pudding',
-  description: 'Working with the Haller Foundation: Developing technology for good',
+  title: 'Developing technology for good | Red Badger',
+  description: 'Find out how we develop a mobile application for Haller to help Kenyan farmers.',
   metaImage: headerImage,
+  altText: 'Dr Rene Haller showing the mobile preview of the Haller app.',
   url: 'https://red-badger.com/our-work/case-study/haller',
 };
 
