@@ -53,43 +53,35 @@ export default function CaseStudies() {
           <div className={styles.grid}>
             <div className={styles.gridRow}>
               <CaseStudyCell
-                clientName={'BBC'}
+                clientName="BBC"
                 clientLogo={BbcLogo}
-                headerText={'Delivering a better customer experience, faster'}
-                descriptionText={
-                  'How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.'
-                }
+                headerText="Delivering a better customer experience, faster"
+                descriptionText="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience."
                 routeKey="bbcCaseStudy"
               />
               <CaseStudyCell
-                clientName={'Sky'}
+                clientName="Sky"
                 clientLogo={SkyLogo}
-                headerText={'Helping customers help themselves'}
-                descriptionText={
-                  'Enabling Sky to deliver continual improvement across customer services'
-                }
+                headerText="Helping customers help themselves"
+                descriptionText="Enabling Sky to deliver continual improvement across customer services"
                 routeKey="skyCaseStudy"
               />
             </div>
             <div className={styles.gridRow}>
               <CaseStudyCell
-                clientName={'Haller'}
+                clientName="Haller"
                 clientLogo={HallerLogo}
                 image={HallerImage}
-                headerText={'Developing technology for good'}
-                descriptionText={
-                  'Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers.'
-                }
+                headerText="Developing technology for good"
+                descriptionText="Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers."
                 routeKey="hallerCaseStudy"
               />
               <CaseStudyCell
-                clientName={'BMW'}
+                clientName="BMW"
                 clientLogo={BmwLogo}
                 image={BmwImage}
-                headerText={'The shortcut between you and the museum'}
-                descriptionText={
-                  'Pushing the boundaries of HTML5 technology to deliver a multi-platform 3D tour of the BMW Museum.'
-                }
+                headerText="The shortcut between you and the museum"
+                descriptionText="Pushing the boundaries of HTML5 technology to deliver a multi-platform 3D tour of the BMW Museum."
                 routeKey="bmwCaseStudy"
               />
             </div>

@@ -1,5 +1,5 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import styles from './style.css';
 
@@ -8,19 +8,15 @@ type HRProps = {
   customClassName: string,
 };
 
-export default class HR extends Component<HRProps> {
-  static defaultProps = {
-    customClassName: 'horizontal-line',
-  };
+const HR = ({ customClassName = 'horizontal-line', color }): HRProps => {
+  const hrClass = classNames({
+    [styles.hr]: true,
+    [styles.red]: color === 'red',
+    [styles.grey]: color === 'grey',
+    [customClassName]: true,
+  });
 
-  render() {
-    const hrClass = classNames({
-      [styles.hr]: true,
-      [styles.red]: this.props.color === 'red',
-      [styles.grey]: this.props.color === 'grey',
-      [this.props.customClassName]: true,
-    });
+  return <hr className={hrClass} />;
+};
 
-    return <hr className={hrClass} />;
-  }
-}
+export default HR;

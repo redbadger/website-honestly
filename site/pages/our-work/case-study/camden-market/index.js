@@ -77,9 +77,7 @@ class CaseStudyCamdenMarket extends React.Component<*, CamdenState> {
                 title: 'Product Owner, Market Tech',
                 image: authorQuoteImage,
               }}
-              text={
-                'We put Londoners at the heart of the project and the website. The results are already speaking for themselves and within just four days of the launch, the bounce rate has dropped by 18% and average session duration increased by 53%.'
-              }
+              text="We put Londoners at the heart of the project and the website. The results are already speaking for themselves and within just four days of the launch, the bounce rate has dropped by 18% and average session duration increased by 53%."
             />
             <Card className={styles.listBoxContainer}>
               <ListBox
@@ -103,7 +101,7 @@ class CaseStudyCamdenMarket extends React.Component<*, CamdenState> {
           </div>
           <div className={styles.content__wrapper}>
             <h2 className={styles.content__title}>
-              <span className={styles.content__redTitle}>{'Let’s make things better.'}</span>
+              <span className={styles.content__redTitle}>Let’s make things better.</span>
               Digitally engaging Londoners to entice them back to the city’s fourth biggest
               attraction
             </h2>

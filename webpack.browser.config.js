@@ -1,21 +1,19 @@
 /* eslint-disable camelcase */
-const webpack = require('webpack');
-const baseWebConfig = require('./webpack.base.config').baseWebConfig;
-const webpackMerge = require('webpack-merge').smart;
-const AssetsPlugin = require('assets-webpack-plugin');
+const webpack = require("webpack");
+const { baseWebConfig } = require("./webpack.base.config");
+const webpackMerge = require("webpack-merge").smart;
+const AssetsPlugin = require("assets-webpack-plugin");
 
 const clientConfig = webpackMerge(baseWebConfig, {
   entry: {
-    index: './client/index.js',
+    index: "./client/index.js",
   },
   output: {
-    filename: 'assets-honestly/[name]-[hash:5].js',
-    chunkFilename: 'assets-honestly/[name]-[chunkhash:5].js',
+    filename: "assets-honestly/[name]-[hash:5].js",
+    chunkFilename: "assets-honestly/[name]-[chunkhash:5].js",
   },
-  target: 'web',
-  externals: [
-    './client-digest',
-  ],
+  target: "web",
+  externals: ["./client-digest"],
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -26,9 +24,9 @@ const clientConfig = webpackMerge(baseWebConfig, {
       },
     }),
     new AssetsPlugin({
-      filename: 'client-digest.json',
-      path: './dist/services',
-      metadata: { bundleName: 'index' },
+      filename: "client-digest.json",
+      path: "./dist/services",
+      metadata: { bundleName: "index" },
     }),
   ],
 });

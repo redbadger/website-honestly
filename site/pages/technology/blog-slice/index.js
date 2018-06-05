@@ -21,8 +21,8 @@ const BlogSlice = ({
       <div className={styles.sliceContainer}>
         <h2 className={styles.blogSliceTitle}>{title}</h2>
         <ul className={listStyle}>
-          {blogPosts.map((blogPost, ind) => (
-            <BlogEntry key={ind} blogPost={blogPost} altStyle={altStyle} />
+          {blogPosts.map(blogPost => (
+            <BlogEntry key={blogPost.slug} blogPost={blogPost} altStyle={altStyle} />
           ))}
         </ul>
       </div>

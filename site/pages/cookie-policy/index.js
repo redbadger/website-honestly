@@ -18,8 +18,8 @@ const social = {
 const CookiePolicyPage = () => {
   return (
     <Policy
-      title={'Cookies Policy'}
-      effectiveDate={'24 of May 2018'}
+      title="Cookies Policy"
+      effectiveDate="24 of May 2018"
       policies={policies}
       social={social}
     />

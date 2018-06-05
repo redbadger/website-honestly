@@ -1,10 +1,13 @@
 export default function getSiteRoutes(state, routeDefinitions) {
   const allRoutes = [];
+
+  // eslint-disable-next-line
   for (const definition of routeDefinitions) {
     if (definition.gen) {
       const data = definition.gen(state);
       const originalRoute = definition.route;
 
+      // eslint-disable-next-line
       for (const params of data) {
         const route = Object.keys(params).reduce((prev, key) => {
           return prev.replace(`{${key}}`, params[key]);

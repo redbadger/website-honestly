@@ -22,7 +22,7 @@ export function mailchimpApi(link, method, body) {
     method,
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'Basic ' + new Buffer(username + ':' + apiKey).toString('base64'),
+      Authorization: 'Basic ' + Buffer.from(username + ':' + apiKey).toString('base64'),
     },
     mode: 'cors',
     body,

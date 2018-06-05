@@ -72,10 +72,10 @@ export default function Event({ event }: EventProps) {
               <div className={styles.event}>
                 <div className={styles.eventDescription}>{event.strapline}</div>
                 <div className={styles.eventBody}>
-                  {event.body.map((el, i) => (
+                  {event.body.map(el => (
                     <p
                       className={styles.paragraph}
-                      key={i}
+                      key={el.text}
                       dangerouslySetInnerHTML={{ __html: el.text }}
                     />
                   ))}

@@ -10,20 +10,15 @@ type CellProps = {
   size: number,
 };
 
-export default class Cell extends React.Component<CellProps> {
-  static defaultProps = {
-    breakOn: 'mobile',
-    hideOn: 'dont',
-  };
+const Cell = ({ breakOn = 'mobile', children, hideOn = 'dont', size }): CellProps => {
+  const cellClassNames = classNames({
+    [styles[`responsive-cell-${breakOn}`]]: true,
+    [styles.cell]: true,
+    [styles[`size${size}of12`]]: !!size,
+    [styles[`hideOn${hideOn}`]]: true,
+  });
 
-  render() {
-    const cellClassNames = classNames({
-      [styles[`responsive-cell-${this.props.breakOn}`]]: true,
-      [styles.cell]: true,
-      [styles[`size${this.props.size}of12`]]: !!this.props.size,
-      [styles[`hideOn${this.props.hideOn}`]]: true,
-    });
+  return <div className={cellClassNames}>{children}</div>;
+};
 
-    return <div className={cellClassNames}>{this.props.children}</div>;
-  }
-}
+export default Cell;

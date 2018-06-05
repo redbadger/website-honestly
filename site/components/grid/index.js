@@ -29,27 +29,19 @@ import styles from './style.css';
 type GridProps = {
   breakOn?: string,
   children?: React.Node,
-  extraClassName?: string,
   fit?: boolean,
 };
 
-export class Grid extends React.Component<GridProps> {
-  defaultProps = {
-    extraClassName: 'grid',
-    breakOn: 'mobile',
-  };
+export const Grid = ({ breakOn = 'mobile', children, fit }): GridProps => {
+  const gridClassNames = classNames({
+    [styles.grid]: true,
+    [styles.withGutter]: true,
+    [styles.fit]: fit,
+    // $FlowIgnore
+    [`responsive-grid-${breakOn}`]: true,
+  });
 
-  render() {
-    const gridClassNames = classNames({
-      [styles.grid]: true,
-      [styles.withGutter]: true,
-      [styles.fit]: this.props.fit,
-      // $FlowIgnore
-      [`responsive-grid-${this.props.breakOn}`]: true,
-    });
+  return <div className={gridClassNames}>{children}</div>;
+};
 
-    return <div className={gridClassNames}>{this.props.children}</div>;
-  }
-}
-
-export { default as Cell } from './cell.js';
+export { default as Cell } from './cell';

@@ -100,7 +100,7 @@ export default class SmallScreenNav extends React.Component<any, State> {
               </label>
             )}
 
-            <nav className={styles.smallScreenNavContainer} role="navigation">
+            <nav className={styles.smallScreenNavContainer}>
               <ul role="listbox" className={styles.smallScreenNav}>
                 <li>
                   <Link tabIndex={navTabIndex} to="homePage" navigating={this.closeMenu}>

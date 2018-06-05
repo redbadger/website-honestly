@@ -38,7 +38,7 @@ export default class Link extends React.Component<LinkProps> {
    */
   hasActiveChild(): boolean {
     const stateNavigator = this.getStateNavigator();
-    let state = stateNavigator.stateContext.state;
+    let { state } = stateNavigator.stateContext;
     while (state.parentKey) {
       if (state.parentKey === this.props.to) {
         return true;

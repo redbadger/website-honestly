@@ -72,10 +72,10 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
     </GreenSlice>
     <section className={styles.pastAndFuture}>
       <div className={styles.leftBlogs}>
-        <BlogSlice blogPosts={triedAndTestedBlogPosts} title={'Tried and tested'} />
+        <BlogSlice blogPosts={triedAndTestedBlogPosts} title="Tried and tested" />
       </div>
       <div className={styles.rightBlogs}>
-        <BlogSlice blogPosts={growingTrendsBlogPosts} title={'Growing trends'} altStyle />
+        <BlogSlice blogPosts={growingTrendsBlogPosts} title="Growing trends" altStyle />
       </div>
     </section>
     <WebinarSignupSlice />

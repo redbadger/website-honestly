@@ -6,7 +6,10 @@ const getBadgersByCategory = (badgers, category) => {
 };
 
 const createPages = (category, count) =>
-  Array.from(Array(Math.ceil(count / 20)).keys()).map(page => ({ category, page: page + 1 }));
+  Array.from(Array(Math.ceil(count / 20)).keys()).map(page => ({
+    category,
+    page: page + 1,
+  }));
 
 export const getBadgersTitle = ({ categories, category }) => {
   const categoryFound = categories.filter(cat => cat.slug === category);
@@ -20,5 +23,10 @@ export const genBadgersParams = state =>
   }, createPages('everyone', state.badgers.length + 1));
 
 export const stateToBadgerProps = ({ badgers, categories }, { category, page } = {}) => {
-  return { badgers: getBadgersByCategory(badgers, category), categories, category, page };
+  return {
+    badgers: getBadgersByCategory(badgers, category),
+    categories,
+    category,
+    page,
+  };
 };

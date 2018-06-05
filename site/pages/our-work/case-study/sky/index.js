@@ -52,9 +52,7 @@ const SkyCaseStudy = () => (
             title: 'Head of Software Engineering, Sky',
             image: authorQuoteImage,
           }}
-          text={
-            'Red Badger are recognised leaders in Agile/Lean methodologies so they could immediately start working and deliver results alongside our internal team.'
-          }
+          text="Red Badger are recognised leaders in Agile/Lean methodologies so they could immediately start working and deliver results alongside our internal team."
         />
         <Card className={styles.listBoxContainer}>
           <ListBox

@@ -48,9 +48,7 @@ const SkyCmsCaseStudy = () => (
             title: 'Head of Software Engineering, Sky',
             image: authorQuoteImage,
           }}
-          text={
-            'The new site and CMS have given us the flexibility we needed to effectively update and manage the Help site. It allows us to take an agile approach to the way we work and respond to consumer requirements faster and more efficiently.'
-          }
+          text="The new site and CMS have given us the flexibility we needed to effectively update and manage the Help site. It allows us to take an agile approach to the way we work and respond to consumer requirements faster and more efficiently."
         />
         <Card className={styles.listBoxContainer}>
           <ListBox
