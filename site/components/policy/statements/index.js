@@ -18,7 +18,7 @@ const Statements = ({
     <ol>
       {statements.map((statement, statementIndex) => (
         <Statement
-          key={statement.body}
+          key={'statement-' + statementIndex.toString()}
           statementIndex={statementIndex + 1}
           policyIndex={policyIndex}
           {...statement}

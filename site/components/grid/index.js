@@ -32,7 +32,7 @@ type GridProps = {
   fit?: boolean,
 };
 
-export const Grid = ({ breakOn = 'mobile', children, fit }): GridProps => {
+export const Grid = ({ breakOn = 'mobile', children, fit }: GridProps) => {
   const gridClassNames = classNames({
     [styles.grid]: true,
     [styles.withGutter]: true,

@@ -5,10 +5,10 @@ import styles from './style.css';
 
 type HRProps = {
   color: 'red' | 'grey',
-  customClassName: string,
+  customClassName?: string,
 };
 
-const HR = ({ customClassName = 'horizontal-line', color }): HRProps => {
+const HR = ({ customClassName = 'horizontal-line', color }: HRProps) => {
   const hrClass = classNames({
     [styles.hr]: true,
     [styles.red]: color === 'red',

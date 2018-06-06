@@ -17,7 +17,7 @@ type JobsProps = {
 
 export default function Jobs({ jobs }: JobsProps) {
   const listings = jobs.map((job, index) => (
-    <Note key={`${job.slug + '-' + index}`}>
+    <Note key={`${job.title + '-' + index}`}>
       <Link className={styles.title} to="job" navigationData={{ slug: job.slug }}>
         {job.title}
       </Link>

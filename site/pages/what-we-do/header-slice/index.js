@@ -14,8 +14,7 @@ const headerSlice = () => {
             <div className={styles.flexibleUpper}>
               <div className={styles.pageHeaderUpper}>
                 {/* Space added so that h1 can be crawled correctly */}
-                Do the{` `}
-                {/* Space added so that h1 can be crawled correctly */}
+                Do the {/* Space added so that h1 can be crawled correctly */}
                 <br />right thing{' '}
               </div>
               <img alt="" className={styles.arrowDown} src={arrowImg} />
@@ -26,8 +25,7 @@ const headerSlice = () => {
               <img alt="" className={styles.arrowUp} src={arrowImg} />
               <div className={styles.pageHeaderLower}>
                 {/* Space added so that h1 can be crawled correctly */}
-                Do the{` `}
-                <br />thing right
+                Do the <br />thing right
               </div>
             </div>
           </div>

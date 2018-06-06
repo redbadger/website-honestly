@@ -34,7 +34,7 @@ const removeHtml = (str: string) => {
 
 export default function Job({ job }: JobProps) {
   const social = {
-    title: job.title ? `${job.title} | Red Badger` : `Join us | Red Badger`,
+    title: job.title ? `${job.title} | Red Badger` : 'Join us | Red Badger',
     url: `https://red-badger.com/jobs/${job.slug}`,
     description: job.description ? removeHtml(job.description) : '',
     altText: 'Polaroids of our team.',

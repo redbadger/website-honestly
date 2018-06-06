@@ -20,13 +20,13 @@ type State = {
 };
 
 type Props = {
-  cta: string,
-  contactEmailAddress: string,
+  cta?: string,
+  contactEmailAddress?: string,
   isHovered: boolean,
   listItems: Array<string>,
   onHover: () => void,
   onBlur: () => void,
-  title: string,
+  title?: string,
 };
 
 const Checklist = ({
