@@ -1,0 +1,35 @@
+@value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from '../../../../css/_sizes.css';
+
+.carDayTime {
+  background: linear-gradient(to bottom, #599BB9 0%, #599BB9 55%,#599BB9 55%, #357A5F 50%, #357A5F 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.carSunset, 
+.carDayTime img {
+  width: 100%;
+}
+
+.quoteContainer {
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
+.picture {
+  padding-bottom: 30px;
+}
+
+@media mediumScreen {
+  .quoteContainer {
+    padding-left: 0;
+  }
+}
+
+@media largeScreen {
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

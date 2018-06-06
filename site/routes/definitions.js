@@ -246,4 +246,11 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'our-work/case-study/camden-market',
     parentKey: 'ourWorkPage',
   },
+  {
+    title: 'Car Trawler case study',
+    description: 'TBC',
+    key: 'carTrawlerCaseStudy',
+    route: 'our-work/case-study/car-trawler',
+    parentKey: 'ourWorkPage',
+  },
 ];
