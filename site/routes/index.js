@@ -12,6 +12,7 @@ import BrowserNotSupported from '../pages/browser-not-supported';
 import AboutUsPage from '../pages/about-us';
 import CookiePolicyPage from '../pages/cookie-policy';
 import PrivacyPolicyPage from '../pages/privacy-policy';
+import TermsAndConditions from '../pages/terms-and-conditions';
 
 import JoinUsPage from '../pages/join-us';
 import JobPage from '../pages/job';
@@ -62,6 +63,7 @@ const componentMap = {
   skyCaseStudy: SkyCaseStudy,
   skyCMSCaseStudy: SkyCMSCaseStudy,
   technology: Technology,
+  termsAndConditions: TermsAndConditions,
   whatWeDoPage: WhatWeDoPage,
 };
 

@@ -218,6 +218,11 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'privacy-policy',
   },
   {
+    title: 'Terms and Conditions',
+    key: 'termsAndConditions',
+    route: 'terms-and-conditions',
+  },
+  {
     title: 'Server error',
     key: 'serverErrorPage',
     route: '50x',
