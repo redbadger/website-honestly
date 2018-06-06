@@ -25,7 +25,7 @@ export default function Wall({ children, cols }: WallProps) {
       {elements.map((column, index) => {
         const size = Math.floor(12 / cols);
         return (
-          // eslint-disable-next-line
+          // eslint-disable-next-line react/no-array-index-key
           <Cell key={index} size={size}>
             {column}
           </Cell>
