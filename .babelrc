@@ -1,13 +1,3 @@
 {
-  "presets": [
-    "es2015",
-    "react"
-  ],
-  "plugins": [
-    "transform-object-assign",
-    "transform-class-properties",
-    "babel-plugin-transform-object-rest-spread",
-    "transform-flow-strip-types",
-    "transform-export-extensions"
-  ]
+  "presets": ["flow", "react", "env", "stage-1"]
 }
