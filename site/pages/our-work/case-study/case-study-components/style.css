@@ -30,10 +30,17 @@
   display: block;
 }
 
-.paragraph {
+.paragraph, 
+.list {
   font-size: 20px;
   line-height: 1.35;
   padding-bottom: 30px;
+}
+
+.list {
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  list-style-type: disc;
+  padding-left: 40px;
 }
 
 @media mediumScreen {
@@ -60,6 +67,11 @@
     margin: auto;
     max-width: 1400px;
     padding: 20px 120px 100px;
+  }
+
+  .section {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .sectionHeading {

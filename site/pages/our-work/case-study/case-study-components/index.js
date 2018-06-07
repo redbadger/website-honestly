@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import styles from './style.css';
-import { H1, P as Para } from '../../../../components/text';
+import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
 
 type SectionHeadingProps = {
   subHeading: string,
@@ -22,8 +22,6 @@ export const PageHeading = ({ children }: Props) => (
 
 export const Section = ({ children }: Props) => <div className={styles.section}>{children}</div>;
 
-export const P = ({ children }: Props) => <Para customClass={styles.paragraph}>{children}</Para>;
-
 export const SectionHeading = ({ subHeading, heading }: SectionHeadingProps) => (
   <h2 className={styles.sectionHeading}>
     <span className={styles.redTitle}>{subHeading}</span>
@@ -34,3 +32,9 @@ export const SectionHeading = ({ subHeading, heading }: SectionHeadingProps) => 
 export const SectionBody = ({ children }: Props) => (
   <div className={styles.sectionBody}>{children}</div>
 );
+
+export const P = ({ children }: Props) => <BaseP customClass={styles.paragraph}>{children}</BaseP>;
+
+export const H3 = ({ children }: Props) => <BaseH3 type="fontS2">{children}</BaseH3>;
+
+export const UL = ({ children }: Props) => <ul className={styles.list}>{children}</ul>;
