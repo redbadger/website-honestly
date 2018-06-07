@@ -14,15 +14,15 @@ const social = {
   url: 'terms-and-conditions',
 };
 
-const CookiePolicyPage = () => {
+const TermAndConditionsPage = () => {
   return (
     <Policy
       title="Website Terms"
-      effectiveDate="6 of June 2018"
+      effectiveDate="7 of June 2018"
       policies={policies}
       social={social}
     />
   );
 };
 
-export default CookiePolicyPage;
+export default TermAndConditionsPage;
