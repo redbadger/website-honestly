@@ -13,18 +13,18 @@ import tickImage from './images/tick.png';
 
 import {
   Body,
-  PageHeading,
-  Section,
-  SectionHeading,
-  SectionBody,
-  P,
   H3,
+  P,
+  PageHeading,
+  Quote,
+  Section,
+  SectionBody,
+  SectionHeading,
   UL,
 } from '../case-study-components';
 
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
-import Quote from '../../../../components/quote';
 
 import WhatToReadNext from '../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
@@ -72,6 +72,7 @@ const CaseStudyBank = () => (
             rigid processes and legacy technology contributing to the limited functionality of their
             websites, their delivery pipeline and release process needed to change.
           </P>
+
           <div className={cx(styles.content__float, styles['content__float--noBottomMargin'])}>
             <img
               src={tickImage}

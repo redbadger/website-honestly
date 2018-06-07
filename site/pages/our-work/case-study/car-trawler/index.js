@@ -1,11 +1,11 @@
 // @flow
 import React, { Fragment } from 'react';
-import Quote from '../../../../components/quote';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
 import {
   PageHeading,
   Body,
+  Quote,
   Section,
   SectionHeading,
   SectionBody,
@@ -33,7 +33,6 @@ const quoteProps = {
     title: 'Job Title, Car Trawler',
     image: davidKirby,
   },
-  className: `${styles.quoteContainer}`,
 };
 
 const CarTrawler = () => (

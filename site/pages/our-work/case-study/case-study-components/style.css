@@ -30,7 +30,7 @@
   display: block;
 }
 
-.paragraph, 
+.paragraph,
 .list {
   font-size: 20px;
   line-height: 1.35;
@@ -43,6 +43,11 @@
   padding-left: 40px;
 }
 
+.quote {
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
 @media mediumScreen {
   .section {
     padding-bottom: 48px;
@@ -52,11 +57,15 @@
     max-width: 630px;
     margin-left: auto;
   }
+
+  .quote {
+    padding-left: 0;
+  }
 }
 
 @media largeScreen {
   .heading {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     margin-top: -96px;
     max-width: 1200px;
     padding: 20px 20px 60px;
@@ -82,5 +91,4 @@
     max-width: 690px;
     margin: 0 auto;
   }
-
 }

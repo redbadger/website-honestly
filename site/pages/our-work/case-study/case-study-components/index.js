@@ -2,6 +2,8 @@
 import * as React from 'react';
 import styles from './style.css';
 import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
+import BaseQuote from '../../../../components/quote';
+import type { Author } from '../../../../components/quote';
 
 type SectionHeadingProps = {
   subHeading: string,
@@ -31,6 +33,13 @@ export const SectionHeading = ({ subHeading, heading }: SectionHeadingProps) => 
 
 export const SectionBody = ({ children }: Props) => (
   <div className={styles.sectionBody}>{children}</div>
+);
+
+type QuoteProps = { author: Author, text: string } & Props;
+export const Quote = ({ children, author, text }: QuoteProps) => (
+  <BaseQuote author={author} text={text} className={styles.quote}>
+    {children}
+  </BaseQuote>
 );
 
 export const P = ({ children }: Props) => <BaseP customClass={styles.paragraph}>{children}</BaseP>;
