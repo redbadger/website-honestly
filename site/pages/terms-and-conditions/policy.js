@@ -1,72 +1,61 @@
 // @flow
-import * as React from "react";
+import * as React from 'react';
 
-import styles from "../../components/policy/style.css";
-import {
-  P,
-  H3,
-  SerifH3,
-  H4,
-  B,
-  PolicyList,
-} from "../../components/policy/shared";
-import Link from "../../components/link";
+import styles from '../../components/policy/style.css';
+import { P, H3, SerifH3, B, PolicyList } from '../../components/policy/shared';
+import Link from '../../components/link';
 
 const policies = [
   {
-    heading: "Introduction",
+    heading: 'Introduction',
     statements: [
       {
         body: () => (
           <P>
-            These Website Terms tell individuals (“<B>you</B>”, “<B>your</B>”)
-            the rules that govern the access and/or use of www.red-badger.com (“<B >
-              Website
-            </B>”).
+            These Website Terms tell individuals (“<B>you</B>”, “<B>your</B>”) the rules that govern
+            the access and/or use of www.red-badger.com (“<B>Website</B>”).
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            These Website Terms are part of, and are subject to, our{" "}
-            <Link to="privacyPolicy">Privacy Statement</Link> and our{" "}
-            <Link to="cookiePolicy">Cookies Policy</Link>. By accessing or using
-            our (“<B>Website</B>”), you confirm that you accept these Website
-            Terms.
+            These Website Terms are part of, and are subject to, our{' '}
+            <Link to="privacyPolicy">Privacy Statement</Link> and our{' '}
+            <Link to="cookiePolicy">Cookies Policy</Link>. By accessing or using our (“<B>
+              Website
+            </B>”), you confirm that you accept these Website Terms.
           </P>
         ),
       },
     ],
   },
   {
-    heading: "About Red Badger",
+    heading: 'About Red Badger',
     statements: [
       {
         body: () => (
           <P>
-            Our Website is owned and operated by Red Badger Consulting Limited
-            (“<B>Red Badger</B>”, “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
+            Our Website is owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
+            “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            We are a company registered in England and Wales under registration
-            number 7242017. Our registered office and principal place of
-            business is at 4th Floor, 2 Old Street Yard, London, England, EC1Y
-            8AF.
+            We are a company registered in England and Wales under registration number 7242017. Our
+            registered office and principal place of business is at 4th Floor, 2 Old Street Yard,
+            London, England, EC1Y 8AF.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            You can contact us by (a) post, to 4th Floor, 2 Old Street Yard,
-            London, England, EC1Y 8AF, (b) using our Website contact form, (c)
-            telephone, on 0203 567 0555, or (d) email, using the following email
-            address:{" "}
+            You can contact us by (a) post, to 4th Floor, 2 Old Street Yard, London, England, EC1Y
+            8AF, (b) using our Website contact form, (c) telephone, on 0203 567 0555, or (d) email,
+            using the following email address:{' '}
             <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
           </P>
         ),
@@ -74,54 +63,50 @@ const policies = [
     ],
   },
   {
-    heading: "Changes to the Red Badger Website Terms",
+    heading: 'Changes to the Red Badger Website Terms',
     statements: [
       {
         body: () => (
           <P>
-            We may update the Red Badger Website Terms from time to time by
-            publishing a new version on our Website. If we make changes to these
-            Website Terms, we will post the revised Website Terms on our Website
-            and update the “Effective Date” date at the top of these Website
-            Terms.
+            We may update the Red Badger Website Terms from time to time by publishing a new version
+            on our Website. If we make changes to these Website Terms, we will post the revised
+            Website Terms on our Website and update the “Effective Date” date at the top of these
+            Website Terms.
           </P>
         ),
       },
       {
-        body: () => (
-          <P>Please check our Website regularly for any such changes.</P>
-        ),
+        body: () => <P>Please check our Website regularly for any such changes.</P>,
       },
     ],
   },
   {
-    heading: "Information use only",
+    heading: 'Information use only',
     statements: [
       {
         body: () => (
           <P>
-            The content on our Website is provided for general information only.
-            It is not intended to amount to advice on which you (and/or others)
-            should rely. You must obtain professional and/or specialist advice
-            before taking, and/or refraining from, any action on the basis of
-            the content on our Website.
+            The content on our Website is provided for general information only. It is not intended
+            to amount to advice on which you (and/or others) should rely. You must obtain
+            professional and/or specialist advice before taking, and/or refraining from, any action
+            on the basis of the content on our Website.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            Although we make reasonable efforts to update the information on our
-            Website, we make no representations, warranties and/or guarantees,
-            whether express or implied, that the content on our Website is
-            accurate, complete and/or up to date. Our content is provided as-is.
+            Although we make reasonable efforts to update the information on our Website, we make no
+            representations, warranties and/or guarantees, whether express or implied, that the
+            content on our Website is accurate, complete and/or up to date. Our content is provided
+            as-is.
           </P>
         ),
       },
     ],
   },
   {
-    heading: "We may suspend or withdraw our Website",
+    heading: 'We may suspend or withdraw our Website',
     statements: [
       {
         body: () => <P>Our Website is made available free of charge.</P>,
@@ -129,55 +114,51 @@ const policies = [
       {
         body: () => (
           <P>
-            We do not guarantee that our Website, and/or any content on it, will
-            always be available and/or be uninterrupted. We may suspend and/or
-            withdraw and/or restrict the availability of all and/or any part of
-            our Website for any reason whatsoever in our sole and absolute
-            discretion. We will try to give you reasonable notice of any
-            suspension and/or withdrawal.
+            We do not guarantee that our Website, and/or any content on it, will always be available
+            and/or be uninterrupted. We may suspend and/or withdraw and/or restrict the availability
+            of all and/or any part of our Website for any reason whatsoever in our sole and absolute
+            discretion. We will try to give you reasonable notice of any suspension and/or
+            withdrawal.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            You are also responsible for ensuring that all persons who access
-            our Website through your internet connection are aware of these
-            Website Terms and other applicable terms and conditions, and that
-            they comply with them.
+            You are also responsible for ensuring that all persons who access our Website through
+            your internet connection are aware of these Website Terms and other applicable terms and
+            conditions, and that they comply with them.
           </P>
         ),
       },
     ],
   },
   {
-    heading: "You must keep your account details",
+    heading: 'You must keep your account details',
     statements: [
       {
         body: () => (
           <P>
-            If you choose, or you are provided with, a user identification code,
-            password or any other piece of information as part of our security
-            procedures, you must treat such information as confidential. You
-            must not disclose it to any third party.
+            If you choose, or you are provided with, a user identification code, password or any
+            other piece of information as part of our security procedures, you must treat such
+            information as confidential. You must not disclose it to any third party.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            We have the right to disable any user identification code or
-            password, whether chosen by you or allocated by us, at any time, if
-            in our reasonable opinion you have failed to comply with any of the
-            provisions of these Website Terms and/or applicable laws.
+            We have the right to disable any user identification code or password, whether chosen by
+            you or allocated by us, at any time, if in our reasonable opinion you have failed to
+            comply with any of the provisions of these Website Terms and/or applicable laws.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            If you know or suspect that anyone other than you knows your user
-            identification code or password, you must promptly notify us at:{" "}
+            If you know or suspect that anyone other than you knows your user identification code or
+            password, you must promptly notify us at:{' '}
             <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
           </P>
         ),
@@ -185,598 +166,135 @@ const policies = [
     ],
   },
   {
-    heading: "How we collect your personal data",
-    body: () => (
-      <P>
-        We collect your personal data from various sources. These are as
-        follows:
-      </P>
-    ),
-    statements: [
-      {
-        body: () => (
-          <React.Fragment>
-            <P>
-              <B>Personal data you provide us about you:</B> We collect your
-              personal data that you provide us when you do the following:
-            </P>
-            <PolicyList>
-              <li>fill a contact webform on our Website;</li>
-              <li>
-                get in touch with us by email, telephone, letter, and/or some
-                other means;
-              </li>
-              <li>
-                subscribe to receive marketing communications from us such as
-                newsletters informing you of our news, events etc.;
-              </li>
-              <li>apply for a job through our Website; and</li>
-              <li>
-                provide us with your name and contact details (e.g. on a
-                business card) at (a) an event or webinar we have organised
-                and/or attended, and/or (b)pitching events;
-              </li>
-              <li>participate in a survey, market research etc.</li>
-            </PolicyList>
-          </React.Fragment>
-        ),
-      },
-      {
-        body: () => (
-          <React.Fragment>
-            <P>
-              <B>Data we collect about you automatically:</B> We collect your
-              personal data when you contact us or automatically when you access
-              and/or use our Website and through the use of cookies (see our{" "}
-              <Link to="cookiePolicy">Cookies Policy</Link>). The types of
-              personal data we will collect include, for example:
-            </P>
-            <PolicyList>
-              <li>name and address;</li>
-              <li>demographic data;</li>
-              <li>the originating IP address;</li>
-              <li>
-                the site that you visited immediately prior to visiting our
-                Website;
-              </li>
-              <li>
-                the type of browser and operating system used (if provided by
-                the browser);
-              </li>
-              <li>
-                the type of device model and version, device identifier (or
-                “UDID”), and your HubSpot Subscription service.
-              </li>
-              <li>URL of the referring page (if provided by the browser);</li>
-              <li>
-                the specific actions that you take on our Website, including,
-                for example, the pages that you visit; and
-              </li>
-              <li>
-                the time, frequency and duration of your visits to our Website.
-              </li>
-            </PolicyList>
-          </React.Fragment>
-        ),
-      },
-      {
-        body: () => (
-          <React.Fragment>
-            <P>
-              <B>Data we collect about you from others:</B>
-              We also collect personal data about you from others such as (for
-              example):
-            </P>
-            <PolicyList>
-              <li>name and address;</li>
-              <li>
-                online through social media we use and the internet in general;
-              </li>
-              <li>contact details sourcing software we use;</li>
-              <li>
-                event organisation software we use to organise events if you
-                signed up and attended one of our events e.g. meetups.
-              </li>
-              <li>
-                webinar software we use to organise webinars if you signed up
-                and watched one of our webinars;
-              </li>
-              <li>
-                third parties we use to source potential client leads for us
-                such as lead generation companies.
-              </li>
-              <li>
-                companies (e.g. companies that recommend us such because they
-                are current/previous clients) and/or individuals (e.g. your
-                colleagues) that introduce you to us; or
-              </li>
-              <li>
-                employers (if you apply for a job and we contact your employer).
-              </li>
-            </PolicyList>
-          </React.Fragment>
-        ),
-      },
-    ],
-  },
-  {
-    heading: "How we use your personal data",
-    statements: [
-      {
-        body: () => (
-          <React.Fragment>
-            <P customClass={styles.mb20}>
-              Below, you find a list of the ways that we may use your data and
-              which of the legal reasons we rely on to do so.
-            </P>
-            <SerifH3>Website</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To analyse your use of our Website as well as to develop, operate,
-              improve, protect, personalise, customise and optimise our Website.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this are our legitimate interest of the
-              proper administration and operation of our business and/or to
-              comply with a legal obligation.
-            </P>
-
-            <SerifH3>Services</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To provide you with information you requested about our services
-              when you are considering whether to hire us or not (e.g. a quote)
-              and, if you decide to hire us, to provide you our services.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is to perform our contract with you
-              and/or take steps, at your request, to enter into such a contract.
-            </P>
-
-            <SerifH3>Communications (Non-Marketing)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To communicate with you (e.g. by email, by post, by phone etc.) as
-              well as to process the communications you send to us.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this is to perform our contract with you
-              and/or our legitimate interest of the proper administration and
-              operation of our business.
-            </P>
-
-            <SerifH3>Operations</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To perform general administrative and operational activities e.g.
-              billing, debt recovery etc.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is our legitimate interest of the proper
-              administration and operation of our business.
-            </P>
-
-            <SerifH3>Marketing & Advertising</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To send you newsletters and promotional communications (e.g.
-              offers, invitations to promotional activities such as events,
-              webinars etc.) from us by email, post, telephone, SMS and/or
-              WhatsApp that may be of interest to you based on your preferences
-              as well as to advertise our business and services to you through a
-              variety of different channels which may include Twitter, Facebook
-              or LinkedIn.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this is our legitimate interest of
-              conducting marketing (including, for example, advertising)
-              including any soft opt-in to undertake direct marketing to promote
-              our business and services. To the extent that we are required to
-              obtain consent for electronic marketing and we are not relying on
-              your opt-in, our legal reason for this is consent.
-            </P>
-
-            <SerifH3>Profiling</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To create a profile of you by combining data you provided to us by
-              you or we got from other sources such as social media, the
-              internet and lead generation companies in order to update, expand
-              and analyse our data records, lead generation, and create more
-              tailored marketing (including, for example, advertising) and/or to
-              personalise the services we provide to you.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this is our legitimate interest of (a) the
-              proper administration and/or operation of our business, and/or (b)
-              conducting marketing (including, for example, advertising) to
-              promote our business and services. To the extent necessary for
-              providing services to you, the performance of the contract between
-              you and us.
-            </P>
-
-            <SerifH3>Security, Risk & Crime</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To protect our website and business, prevent fraud, spam, abuse,
-              security incidents, harmful and/or illegal activity, conduct
-              security investigations and risk assessments, and/or to verify or
-              authenticate information.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this is our legitimate interest of
-              protecting our website and business, to comply with a legal
-              obligation, to perform our contract with you, and/or the
-              protection and assertion of our legal rights, your legal rights
-              and the legal rights of others.
-            </P>
-
-            <SerifH3>Research and Analysis</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To carry out research (e.g. market research), business and
-              statistical analysis (e.g. develop statistical models, analyse the
-              performance of our marketing (including, for example, advertising)
-              campaigns etc.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is our legitimate interest of the proper
-              administration, monitoring and/or operation of our business and
-              services.
-            </P>
-
-            <SerifH3>Business improvement</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>To develop or improve our services and business.</P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this processing is our legitimate interest of
-              the proper administration and operation of our business and
-              services as well as to monitor our business and services.
-            </P>
-
-            <SerifH3>Data Retention</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>To retain, store, archive and/or destroy the data.</P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this processing is the performance of a
-              contract between you and us, our legitimate interest of the proper
-              administration and operation of our business, to comply with a
-              legal obligation, and/or the protection and assertion of our legal
-              rights, your legal rights and the legal rights of others.
-            </P>
-
-            <SerifH3>Audits</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>To carry out audits.</P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this processing is our legitimate interest of
-              the proper administration and operation of our business as well as
-              to monitor and improve our business and services.
-            </P>
-
-            <SerifH3>Sharing (Service Providers)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To disclose your personal data such as your name and contact
-              details to third party service providers we use.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this is our legitimate interest of
-              administering, operate and/or managing our business, and/or
-              performance of a contract between you and us.
-            </P>
-
-            <SerifH3>Sharing (Consent)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To share your data (including personal information) where you have
-              provided consent, for the purpose(s) described at the time we ask
-              you for your consent.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is consent.
-            </P>
-
-            <SerifH3>Sharing (Aggregated Data)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To share aggregated information (information about our individuals
-              that we combine together so that it no longer identifies or
-              references an individual) and non-personally identifiable
-              information in order to conduct industry and market analysis,
-              demographic profiling, marketing (including, for example,
-              advertising).
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is our legitimate interests of the
-              proper administration and operation of our business.
-            </P>
-
-            <SerifH3>Sharing (Sale/Investment)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              If there is (a) a sale or an asset transfer to a third party of,
-              and/or (b) an investment in Red Badger, part of that sale, asset
-              transfer and/or investment may include your personal data.
-              Purchasers, investors and/or their advisers may have access to
-              your personal data as part of the corporate due diligence they
-              perform as part of the (a) sale or asset transfer, and/or (b) the
-              investment.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is our legitimate interest of the proper
-              administration and operation of our business.
-            </P>
-
-            <SerifH3>Sharing (Internal re-organisation & Insolvency)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To pass on to a successor in interest as part of a corporate
-              re-organisation or in the unlikely event of an insolvency event
-              such as a liquidation, insolvency, bankruptcy or administration.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is our legitimate interest of the proper
-              administration and operation of our business.
-            </P>
-
-            <SerifH3>Sharing (Insurers & Professional Advisers)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To disclose your personal data to our insurers and/or professional
-              advisers insofar as reasonably necessary for the purposes of
-              obtaining and maintaining insurance coverage, managing risks,
-              obtaining professional advice and/or managing legal disputes.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reason for this is our legitimate interest of the proper
-              administration and operation of our business, to comply with a
-              legal obligation and/or the protection and assertion of our legal
-              rights, your legal rights and the legal rights of others.
-            </P>
-
-            <SerifH3>Sharing (Legal Disclosures)</SerifH3>
-            <H4 className={styles.mb0}>Processing Purpose</H4>
-            <P>
-              To disclose your personal data where such disclosure is necessary
-              for compliance with a legal obligation to which we are subject
-              and/or the protection and assertion of our legal rights, your
-              legal rights and the legal rights of others.
-            </P>
-            <H4 className={styles.mb0}>Legal Basis</H4>
-            <P customClass={styles.mb20}>
-              The legal reasons for this is to comply with a legal obligation,
-              and/or the protection and assertion of our legal rights, your
-              legal rights and the legal rights of others.
-            </P>
-          </React.Fragment>
-        ),
-      },
-    ],
-  },
-  {
-    heading: "Providing your personal data to others",
+    heading: 'How you may use material on our Website',
     statements: [
       {
         body: () => (
           <P>
-            <B>Third-party service providers:</B> We may disclose your personal
-            data such as your name and contact details to our third-party
-            service providers to help us administer, operate and manage our
-            business provide services related to us and/or our Website. Service
-            providers may be located inside or outside of the EEA. For example,
-            service providers may help us provide customer service, advertising,
-            or marketing. These service providers have limited access to your
-            personal data to perform these tasks on our behalf and are
-            contractually obligated to use it consistent with this Privacy
-            Statement.
+            We are the owner or the licensee of all intellectual property rights in our Website, and
+            in the material published on it. Those works are protected by copyright laws and
+            treaties around the world. All such rights are reserved.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            <B>Aggregated Data:</B> We may also share aggregated information
-            (information about our individuals that we combine together so that
-            it no longer identifies or references an individual) and
-            non-personally identifiable information for industry and market
-            analysis, demographic profiling, marketing (including, for example)
-            advertising, and other business purposes.
+            You may print off one copy, and may download extracts, of any page(s) from our Website
+            for your personal use and you may draw the attention of others within your organisation
+            to content posted on our Website.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            <B>Sale/Investment:</B> If there is (a) a sale or an asset transfer
-            to a third party of, and/or (b) an investment in Red Badger, part of
-            that sale, asset transfer and/or investment may include your
-            personal data. Purchasers, investors and/or their advisers may have
-            access to your personal data as part of the corporate due diligence
-            they perform as part of the (a) sale or asset transfer, and/or (b)
-            the investment. However, use of your personal data will remain
-            subject to this Privacy Statement.
+            You must not modify the paper and/or digital copies of any materials you have printed
+            off or downloaded in any way, and you must not use any illustrations, photographs, video
+            and/or audio sequences and/or any graphics separately from any accompanying text.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            <B>Insolvency:</B> Your personal data may be passed on to a
-            successor in interest as part of a corporate re-organisation or in
-            the unlikely event of an insolvency event such as a liquidation,
-            insolvency, bankruptcy or administration. In the case of an
-            insolvency event, our customer database may be sold separately from
-            the rest of the business, in whole or in a number of parts. It could
-            be that the purchaser’s business is different from ours too.
+            Our status (and that of any identified contributors) as the authors of content on our
+            Website must always be acknowledged.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            <B>Our insurers & professional advisers:</B> We may disclose your
-            personal data to our insurers and/or professional advisers insofar
-            as reasonably necessary for the purposes of obtaining and
-            maintaining insurance coverage, managing risks, obtaining
-            professional advice and/or managing legal disputes.
+            You must not use any part of the content on our Website for commercial purposes without
+            obtaining a licence to do so from us or our licensors.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            <B>Legal compliance:</B> In addition to the specific disclosures of
-            personal data set out in this Section 8, we may also disclose your
-            personal data where such disclosure is necessary for compliance with
-            a legal obligation to which we are subject, or in order to protect
-            your vital interests or the vital interests of another individual.
+            If you print off, copy and/or download any part of our Website in breach of these
+            Website Terms and/or applicable laws, your right to use our Website will cease
+            immediately and you must, at our option, return or destroy any copies of the materials
+            you have made.
           </P>
         ),
       },
     ],
   },
   {
-    heading: "How do you make use of social media?",
+    heading: 'We are not responsible for websites we link to',
     statements: [
       {
         body: () => (
-          <React.Fragment>
-            <P>
-              We use social media accounts and pages in different ways. For
-              example:
-            </P>
-            <PolicyList>
-              <li>
-                <B>to promote, market, advertise and communicate.</B> We use
-                social media to promote, market and advertise our brand and
-                services. We also use social media to communicate with each
-                other.
-              </li>
-              <li>
-                <B>to generate leads for our business:</B> If you connect with
-                us through your social media account and/or communicate with us
-                through that account, the information you choose to share with
-                us may include the basic personal data available in your social
-                media profile and also the information you provide to us when
-                you communicate with us e.g. name, your contact details (e.g.
-                email address, phone number) etc. We may also add your name and
-                contact details to the CRM, sales and marketing software we use
-                (e.g. HubSpot) to help us understand who is interested in our
-                business and/or services.
-              </li>
-              <li>
-                <B>
-                  We have also integrated social media features and plugins on
-                  our Website.
-                </B>{" "}
-                These features and plugins may collect your IP address, which
-                page you are visiting on our Website, and may set a cookie to
-                enable the feature to function properly. Also, when you click on
-                one of the social buttons, you will be re-directed to our social
-                media account page on the relevant social media. If at our
-                account page, you are logged and you click on one of the buttons
-                (such as Facebook’s ‘Like’ button) certain information is shared
-                with these social media providers. Your social media provider
-                may relate this information to your social media account and
-                possibly present your actions on your social media profile to be
-                shared with others in your network. These social media features
-                and plugins are governed by the privacy policies of the social
-                media providers and not our Privacy Statement.
-              </li>
-            </PolicyList>
-          </React.Fragment>
+          <P>
+            Where our Website contains links to other sites and resources provided by third parties,
+            these links are provided for your information only. Such links should not be interpreted
+            as approval by us of those linked websites or information you may obtain from them.
+          </P>
         ),
+      },
+      {
+        body: () => <P>We have no control over the contents of those sites or resources.</P>,
       },
     ],
   },
   {
-    heading: "International transfers of your personal data",
+    heading: 'User-generated content is not approved by us',
     statements: [
       {
         body: () => (
-          <React.Fragment>
-            <P>
-              We may transfer your personal data to countries outside the EEA.
-              This may happen as follows:
-            </P>
-            <PolicyList>
-              <li>Our Website is hosted in eu-west-1 (Dublin, Ireland)</li>
-              <li>
-                The business software we use (e.g. Slack, HubSpot etc.) may be
-                hosted outside the EEA e.g. the US. If that is the case, we rely
-                on the adequate safeguards they have put in place to keep this
-                personal data safe and secure.
-              </li>
-            </PolicyList>
-            <P>
-              These legal safeguards vary depending on which country the data is
-              transferred to. For example, if the personal data is transferred
-              outside the EEA, then they could, for example, be (a) part of the
-              E.U.-U.S. Privacy Shield (www.privacyshield.gov) for data
-              transfers to the US, or (b) using what is called ‘Standard
-              Contractual Clauses’ put in place by the EU, or (c) the EU has
-              decided that a particular non-EEA country provides the
-              same/equivalent level of data protection as in the EU.
-            </P>
-          </React.Fragment>
+          <P>
+            Our Website may include information and materials uploaded by other users of the
+            Website. This information and these materials have not been verified and/or approved by
+            us. The views expressed by other users on our Website do not represent Red Badger, our
+            views and/or values.
+          </P>
         ),
       },
       {
         body: () => (
           <P>
-            You acknowledge and agree that if you submit personal data for
-            publication through our Website or social media accounts, this data
-            may be available, via the internet, around the world. We cannot
-            prevent the use (or misuse) of such personal data by others.
+            If you wish to complain about information and materials uploaded by other users please
+            contact us at <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
           </P>
         ),
       },
     ],
   },
   {
-    heading: "Security of personal data",
+    heading: 'Our responsibility for loss or damage suffered by you',
+    body: () => <SerifH3>Whether you are a consumer or a business user</SerifH3>,
     statements: [
       {
         body: () => (
           <P>
-            We maintain administrative, technical and physical safeguards
-            designed to protect your personal data provided to us. While no
-            system or process is full-proof (e.g. hacking), we believe the
-            measures implemented reduce our vulnerability to security problems
-            to a level appropriate to the type of personal data involved and the
-            current state of technology.
+            We do not exclude and/or limit in any way our liability to you where it would be
+            unlawful to do so. This includes (for example) liability for death or personal injury
+            caused by our negligence or the negligence of our employees, agents or subcontractors
+            and for fraud or fraudulent misrepresentation.
           </P>
         ),
       },
-    ],
-  },
-  {
-    heading: "Retaining and deleting personal data",
-    statements: [
+      {
+        body: () => (
+          <React.Fragment>
+            <P customClass={styles.mb20}>
+              Different limitations and exclusions of liability will apply to liability arising as a
+              result of the supply by us of software, goods and/or services to you. These
+              limitations and exclusions of liability are set out in our terms and conditions of
+              supply.
+            </P>
+            <H3>If you are a business user</H3>
+          </React.Fragment>
+        ),
+      },
       {
         body: () => (
           <P>
-            We have data retention policies and procedures in place, which are
-            designed to help ensure that we comply with our legal obligations in
-            relation to the retention and deletion of personal data.
+            We exclude all implied conditions, warranties, undertaking, guaranties, representations
+            and/or other terms that may apply to our Website and/or any content on it.
           </P>
         ),
       },
@@ -784,26 +302,13 @@ const policies = [
         body: () => (
           <React.Fragment>
             <P>
-              Personal data that we process for any purpose or purposes shall
-              not be kept for longer than is necessary for that purpose or those
-              purposes. We will retain and delete your personal data as follows:
+              We will not be liable to you for any loss and/or damage, whether in contract, tort
+              (including negligence), breach of statutory duty, and/or otherwise, even if
+              foreseeable, arising under and/or in connection with your:
             </P>
             <PolicyList>
-              <li>
-                sign-up for newsletters will be retained for 24 months following
-                month of sign-up, at the end of which period it will be deleted
-                from our systems.
-              </li>
-              <li>
-                sign-up for webinar will be retained for 24 months following
-                month of sign-up, at the end of which period it will be deleted
-                from our systems.
-              </li>
-              <li>
-                identified via legitimate interest will be retained for 24
-                months following month of addition to CRM], at the end of which
-                period it will be deleted from our systems.
-              </li>
+              <li>use of, and/or inability to use, our Website; and/or</li>
+              <li>use of and/or reliance on any content displayed on our Website.</li>
             </PolicyList>
           </React.Fragment>
         ),
@@ -811,58 +316,226 @@ const policies = [
       {
         body: () => (
           <React.Fragment>
-            <P>
-              In some cases, it is not possible for us to specify in advance the
-              periods for which your personal data will be retained. In such
-              cases, we will determine the period of retention based on the
-              following criteria:
-            </P>
+            <P>We will not be liable for:</P>
             <PolicyList>
-              <li>Engagement statistics for social media data.</li>
-              <li>
-                the amount, nature, and sensitivity of the personal data, the
-                potential risk of harm from unauthorised use or disclosure of
-                your personal data, the purposes for which we process your
-                personal data and whether we can achieve those purposes through
-                other means, and the applicable legal requirements e.g. whether
-                (and for how long) we are required by law to retain your
-                personal data.
-              </li>
+              <li>loss of profits, sales, business, and/or revenue;</li>
+              <li>business interruption;</li>
+              <li>loss of anticipated savings;</li>
+              <li>loss of business opportunity, goodwill and/or reputation; and/or</li>
+              <li className={styles.mb20}>any indirect and/or consequential loss and/or damage.</li>
             </PolicyList>
+            <H3>If you are a consumer user</H3>
           </React.Fragment>
         ),
       },
       {
         body: () => (
-          <React.Fragment>
-            <P>However, we may retain your personal data</P>
-            <PolicyList>
-              <li>
-                where such retention is necessary for (a) the performance of a
-                contract we have with you, (b) the compliance with a legal
-                obligation to which we are subject, and/or (c) or the
-                establishment, exercise or defence of legal claims; and/ or
-              </li>
-              <li>
-                in order to protect your vital interests or the vital interests
-                of another individual.
-              </li>
-            </PolicyList>
-          </React.Fragment>
+          <P>
+            Please note that we only provide our Website for domestic and private use. You agree not
+            to use our Website for any commercial and/or business purposes, and we have no liability
+            to you for any loss of profit, loss of business, business interruption, and/or loss of
+            business opportunity.
+          </P>
         ),
       },
     ],
   },
   {
-    heading: "Third Party websites",
+    heading: 'How we may use your personal data',
     statements: [
       {
         body: () => (
           <P>
-            Our Website may contain links to third party websites. Please note
-            that if you follow a link to any such website, we do not accept any
-            liability and/or responsibility, because these websites have their
-            own terms & conditions and Privacy Policies.
+            We will only use your personal data as set out in our{' '}
+            <Link to="privacyPolicy">Privacy Statement</Link>.
+          </P>
+        ),
+      },
+    ],
+  },
+  {
+    heading: 'Uploading content to our Website',
+    statements: [
+      {
+        body: () => (
+          <P>
+            You warrant, represent and undertake that any content you upload and/or post to our
+            Website complies with these Website Terms and/or applicable laws, and you will be liable
+            to us and indemnify us for any and/or all breaches of that warranty. This means you will
+            be responsible for any loss and/or damage we suffer as a result of your breach of this
+            warranty.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            Any content you upload and/or post to our Website will be considered non-confidential
+            and non-proprietary. You retain all of your ownership rights in your content, but you
+            are required to grant us the licence described in section 13 below.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            We also have the right to disclose your identity to any third party who is claiming that
+            any content posted and/or uploaded by you to our Website constitutes a violation of
+            applicable laws and/or their rights including (but not limited to) intellectual property
+            and/or data protection rights.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            We have the right to remove any posting you make on our Website for any reason
+            whatsoever in our sole and absolute discretion.
+          </P>
+        ),
+      },
+      {
+        body: () => <P>You are solely responsible for securing and backing up your content.</P>,
+      },
+    ],
+  },
+  {
+    heading: 'Rights you are giving us to use material you upload',
+    statements: [
+      {
+        body: () => (
+          <P>
+            By uploading and/or posting content to our Website, you hereby grant us a non-exclusive,
+            worldwide, royalty-free, irrevocable, perpetual (or for the term of the protection),
+            sub-licensable, paid up, assignable and transferable license to such content to access,
+            use, store, copy, modify, prepare derivative works of, distribute, publish, transmit,
+            stream, broadcast, allow others to access and use, and otherwise exploit in any manner
+            such content to provide and/or promote our Website and/or Red Badger as we deem
+            necessary and/or desirable from time to time, in any media and/or platform.
+          </P>
+        ),
+      },
+    ],
+  },
+  {
+    heading: 'We are not responsible for viruses and you must not introduce them',
+    statements: [
+      {
+        body: () => (
+          <P>
+            We do not guarantee that our Website will be secure and/ or free from bugs and/or
+            viruses.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            You are responsible for configuring your information technology, computer programmes and
+            platform to access our Website. You should use your own virus protection software.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            You must not misuse our Website by knowingly introducing viruses, trojans, worms, logic
+            bombs and/or other material that is malicious or technologically harmful. You must not
+            attempt to gain unauthorised access to our Website, the server on which our Website is
+            stored and/or any server, computer and/or database connected to our Website. You must
+            not attack our Website via a denial-of-service attack or a distributed denial-of service
+            attack. By breaching this provision, you would commit a criminal offence under the
+            Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement
+            authorities and we will co-operate with those authorities by disclosing your identity to
+            them. In the event of such a breach, your right to use our Website will cease
+            immediately.
+          </P>
+        ),
+      },
+    ],
+  },
+  {
+    heading: 'Rules about linking to our Website',
+    statements: [
+      {
+        body: () => (
+          <P>
+            You may link to our home page, provided you do so in a way that is fair and legal and
+            does not damage our reputation and/or take advantage of it.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            You must not establish a link in such a way as to suggest any form of association,
+            approval and/or endorsement on our part where none exists.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            You must not establish a link to our Website in any website that is not owned by you.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            Our Website must not be framed on any other site, nor may you create a link to any part
+            of our Website other than the home page.
+          </P>
+        ),
+      },
+      {
+        body: () => <P>We reserve the right to withdraw linking permission without notice.</P>,
+      },
+      {
+        body: () => (
+          <P>
+            If you wish to link to or make any use of content on our Website other than that set out
+            above, please contact <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
+          </P>
+        ),
+      },
+    ],
+  },
+  {
+    heading: "Which country's laws apply to any disputes?",
+    statements: [
+      {
+        body: () => (
+          <P>
+            If you are a consumer, please note that these Website Terms, their subject matter and
+            their formation (and any non-contractual disputes or claims), are governed by English
+            law. You and we both agree that the courts of England will have exclusive jurisdiction
+            except that if you are a resident of Northern Ireland you may also bring proceedings in
+            Northern Ireland, and if you are resident of Scotland, you may also bring proceedings in
+            Scotland.
+          </P>
+        ),
+      },
+      {
+        body: () => (
+          <P>
+            If you are a business, these Website Terms, their subject matter and their formation
+            (and any non-contractual disputes or claims) are governed by English law. We both agree
+            to the exclusive jurisdiction of the courts of England.
+          </P>
+        ),
+      },
+    ],
+  },
+  {
+    heading: 'Our trade mark is registered',
+    statements: [
+      {
+        body: () => (
+          <P>
+            “<B>RED BADGER</B>” is a UK registered trade mark (UK UK00003056439) of Red Badger
+            Consulting Limited. You are not permitted to use this trade mark without our prior
+            written approval.
           </P>
         ),
       },

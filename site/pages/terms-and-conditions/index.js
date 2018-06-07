@@ -1,17 +1,17 @@
 // @flow
-import React from "react";
+import React from 'react';
 
-import Policy from "../../components/policy";
-import metaImage from "../home/meta-image.jpg";
-import policies from "./policy";
+import Policy from '../../components/policy';
+import metaImage from '../home/meta-image.jpg';
+import policies from './policy';
 
 const social = {
-  title: "Red Badger",
+  title: 'Red Badger',
   description:
-    "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+    'Let’s make things better. We are digital transformation experts who innovate and deliver.',
   metaImage,
-  altText: "Red Badger logo",
-  url: "terms-and-conditions",
+  altText: 'Red Badger logo',
+  url: 'terms-and-conditions',
 };
 
 const CookiePolicyPage = () => {
