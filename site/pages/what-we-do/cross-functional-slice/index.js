@@ -42,12 +42,12 @@ const CrossFunctionalSlice = () => (
         className={styles.image}
       />
     </div>
+    <section className={styles.outerHeadingContainer}>
+      <div className={styles.headingContainer}>
+        <h2 className={styles.heading}>Working in cross functional teams</h2>
+      </div>
+    </section>
     <div className={styles.sliceBody}>
-      <section className={styles.outerHeadingContainer}>
-        <div className={styles.headingContainer}>
-          <h2 className={styles.heading}>Working in cross functional teams</h2>
-        </div>
-      </section>
       <section className={styles.mainContainer}>
         <div className={styles.imageContainer}>
           <Image
