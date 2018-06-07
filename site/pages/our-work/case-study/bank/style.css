@@ -19,14 +19,14 @@
   max-width: 100%;
 }
 
-.listBoxContainer {
+/* .listBoxContainer {
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
 .listBoxContainer:last-child {
   margin-bottom: 0;
-}
+} */
 
 .listBox {
   margin: 10px 0;

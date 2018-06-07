@@ -22,8 +22,6 @@ export const PageHeading = ({ children }: Props) => (
   </div>
 );
 
-export const Section = ({ children }: Props) => <div className={styles.section}>{children}</div>;
-
 export const SectionHeading = ({ subHeading, heading }: SectionHeadingProps) => (
   <h2 className={styles.sectionHeading}>
     <span className={styles.redTitle}>{subHeading}</span>
@@ -33,6 +31,13 @@ export const SectionHeading = ({ subHeading, heading }: SectionHeadingProps) => 
 
 export const SectionBody = ({ children }: Props) => (
   <div className={styles.sectionBody}>{children}</div>
+);
+
+type SectionProps = {
+  children: React.ChildrenArray<React.Element<typeof SectionBody | typeof SectionHeading>>,
+};
+export const Section = ({ children }: SectionProps) => (
+  <div className={styles.section}>{children}</div>
 );
 
 type QuoteProps = { author: Author, text: string } & Props;
