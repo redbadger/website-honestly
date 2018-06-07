@@ -8,19 +8,13 @@ import * as React from 'react';
 import styles from './style.css';
 
 type ContainerProps = {
-  children?: React.Node,
+  children: React.Node,
 };
 
-export default class Container extends React.Component<ContainerProps> {
-  static defaultProps = {
-    children: [],
-  };
+const Container = ({ children }: ContainerProps) => (
+  <div className={styles.wrapper}>
+    <div className={styles.container}>{children}</div>
+  </div>
+);
 
-  render() {
-    return (
-      <div className={styles.wrapper}>
-        <div className={styles.container}>{this.props.children}</div>
-      </div>
-    );
-  }
-}
+export default Container;

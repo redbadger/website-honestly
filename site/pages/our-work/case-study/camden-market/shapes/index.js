@@ -3,6 +3,8 @@
 /* @flow */
 import React, { Component } from 'react';
 
+import styles from './index.css';
+
 if (global.document) {
   require('pathseg');
   global.decomp = require('poly-decomp/build/decomp.js');
@@ -18,8 +20,6 @@ const {
   Engine,
   MouseConstraint,
 } = require('matter-js');
-
-import styles from './index.css';
 
 export default class Shapes extends Component<any> {
   static throwShapes(engine) {

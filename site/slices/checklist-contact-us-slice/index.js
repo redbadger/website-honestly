@@ -20,30 +20,37 @@ type State = {
 };
 
 type Props = {
-  cta: string,
-  contactEmailAddress: string,
+  cta?: string,
+  contactEmailAddress?: string,
   isHovered: boolean,
   listItems: Array<string>,
   onHover: () => void,
   onBlur: () => void,
-  title: string,
+  title?: string,
 };
 
 const Checklist = ({
-  cta,
-  contactEmailAddress,
+  cta = 'Send an email',
+  contactEmailAddress = 'hello@red-badger.com',
   isHovered,
-  listItems,
+  listItems = [
+    'Create & validate new ideas',
+    'Deliver great quality products & services, fast',
+    'Be bold with technology',
+    'Be more customer centric',
+    'Improve efficiency with lean practices',
+    'Build capability & confidence',
+  ],
   onHover,
   onBlur,
-  title,
+  title = 'We can help you',
 }: Props) => (
   <section className={styles.contactUsContainer} id="contactUs">
     <h2 className={styles.header}>{title}</h2>
     <div className={styles.contentContainer}>
       <ul className={styles.list}>
-        {listItems.map((item, index) => (
-          <li key={index} className={styles.item}>
+        {listItems.map(item => (
+          <li key={item} className={styles.item}>
             {item}
           </li>
         ))}
@@ -64,20 +71,6 @@ const Checklist = ({
     </div>
   </section>
 );
-
-Checklist.defaultProps = {
-  listItems: [
-    'Create & validate new ideas',
-    'Deliver great quality products & services, fast',
-    'Be bold with technology',
-    'Be more customer centric',
-    'Improve efficiency with lean practices',
-    'Build capability & confidence',
-  ],
-  title: 'We can help you',
-  cta: 'Send an email',
-  contactEmailAddress: 'hello@red-badger.com',
-};
 
 type WithStateProps = {};
 function withState(WrappedComponent, text) {

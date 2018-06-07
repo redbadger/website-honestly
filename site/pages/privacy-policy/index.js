@@ -18,8 +18,8 @@ const social = {
 const PrivacyPolicyPage = () => {
   return (
     <Policy
-      title={'Red Badger Privacy Statement'}
-      effectiveDate={'23 May 2018'}
+      title="Red Badger Privacy Statement"
+      effectiveDate="23 May 2018"
       policies={policies}
       social={social}
     />

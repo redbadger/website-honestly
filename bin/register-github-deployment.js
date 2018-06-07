@@ -25,7 +25,7 @@ const targetUrl = `https://www-staging.red-badger.com/${ref}/`;
 const environmentUrl = targetUrl;
 
 const creds = `${gitHubUsername}:${gitHubToken}`;
-const auth = new Buffer(creds).toString('base64');
+const auth = Buffer.from(creds).toString('base64');
 const headers = {
   'Content-Type': 'application/json',
   Accept: 'application/json',

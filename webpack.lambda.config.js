@@ -1,5 +1,5 @@
 const path = require('path');
-const baseServiceConfig = require('./webpack.base.config').baseServiceConfig;
+const { baseServiceConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 
 const lambdaConfig = webpackMerge(baseServiceConfig, {
@@ -11,10 +11,7 @@ const lambdaConfig = webpackMerge(baseServiceConfig, {
     libraryTarget: 'commonjs',
   },
   target: 'node',
-  externals: [
-    'aws-sdk',
-    './client-digest',
-  ],
+  externals: ['aws-sdk', './client-digest'],
 });
 
 module.exports = lambdaConfig;

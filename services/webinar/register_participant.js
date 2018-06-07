@@ -45,9 +45,7 @@ export default function registerParticipant({
       return responseBody;
     }
 
-    throw new Error(
-      `Failed to register participant to GoToWebinar. Response was:
-      ${JSON.stringify(responseBody)}`,
-    );
+    throw new Error(`Failed to register participant to GoToWebinar. Response was:
+      ${JSON.stringify(responseBody)}`);
   });
 }

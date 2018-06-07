@@ -24,11 +24,11 @@ type SocialSliceState = {
 
 class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
   componentWillMount() {
-    this.state = {
+    this.setState({
       tile: 0,
       totalTiles: this.props.instagramPosts.length + (this.props.tweets.length - 1),
       viewWidth: 0,
-    };
+    });
   }
 
   componentDidMount() {
@@ -122,9 +122,9 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
 
     return data.sort((a, b) => new Date(b.created) - new Date(a.created)).map((row, index) => {
       return row.image ? (
-        <InstagramTile post={row} index={index} key={index} />
+        <InstagramTile key={row.created} post={row} index={index} />
       ) : (
-        <TwitterTile tweet={row} index={index} key={index} />
+        <TwitterTile key={row.created} tweet={row} index={index} />
       );
     });
   };

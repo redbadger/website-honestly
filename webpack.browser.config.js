@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 const webpack = require('webpack');
-const baseWebConfig = require('./webpack.base.config').baseWebConfig;
+const { baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 
@@ -13,9 +13,7 @@ const clientConfig = webpackMerge(baseWebConfig, {
     chunkFilename: 'assets-honestly/[name]-[chunkhash:5].js',
   },
   target: 'web',
-  externals: [
-    './client-digest',
-  ],
+  externals: ['./client-digest'],
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: {

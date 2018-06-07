@@ -7,10 +7,10 @@ export default function fetchRetry(url, options) {
   let retries = 3;
   let retryDelay = 1000;
   if (options && options.retries) {
-    retries = options.retries;
+    ({ retries } = options);
   }
   if (options && options.retryDelay) {
-    retryDelay = options.retryDelay;
+    ({ retryDelay } = options);
   }
   return new Promise((resolve, reject) => {
     const wrappedFetch = n => {

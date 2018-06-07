@@ -50,7 +50,7 @@ const CaseStudyRetailer = () => (
           </h1>
         </div>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>{"Let's make things better."}</span>
+          <span className={styles.content__redTitle}>Let&apos;s make things better.</span>
           Solving high drop-out rates
         </h2>
         <p className={styles.content__paragraph}>

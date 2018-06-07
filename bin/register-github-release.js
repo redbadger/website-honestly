@@ -24,7 +24,7 @@ const gitHubUsername = env('GITHUB_USERNAME');
 const gitHubToken = env('GITHUB_TOKEN');
 
 const creds = `${gitHubUsername}:${gitHubToken}`;
-const auth = new Buffer(creds).toString('base64');
+const auth = Buffer.from(creds).toString('base64');
 const headers = {
   'Content-Type': 'application/json',
   Accept: 'application/json',

@@ -25,7 +25,7 @@ const Header = () => {
         <InlineSVG src={logo} title="Red Badger logo" onClick={trackAnalytics('Home')} />
       </Link>
 
-      <nav className={styles.mediumScreenNavContainer} role="navigation">
+      <nav className={styles.mediumScreenNavContainer}>
         <ul role="listbox" className={styles.mediumScreenNav}>
           <li className={styles.navItemWithChild}>
             <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>

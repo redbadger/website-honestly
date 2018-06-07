@@ -37,7 +37,12 @@ class CookieBanner extends React.Component<Props> {
     return (
       // The outer div provides a parent for the cloning function - see componentDidMount
       <div>
-        <div ref={node => (this.bannerNode = node)} className={styles.bannerWrapper}>
+        <div
+          ref={node => {
+            this.bannerNode = node;
+          }}
+          className={styles.bannerWrapper}
+        >
           <div className={styles.banner}>
             <p>
               Welcome to Red Badger. Our website uses cookies to optimise your experience.{' '}

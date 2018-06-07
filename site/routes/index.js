@@ -129,7 +129,7 @@ const handleContactUsHash = stateNavigator => {
   };
   historyManager.addHistory = url => {
     const href = historyManager.getHref(url);
-    if (location.pathname + location.search + location.hash !== href) {
+    if (window.location.pathname + window.location.search + window.location.hash !== href) {
       window.history.pushState(null, null, href);
     }
   };

@@ -26,7 +26,7 @@ const Policy = ({ title, effectiveDate, social, policies }: Props) => {
         <p className={styles.effectiveDate}>Effective as from: {effectiveDate}</p>
         <ol>
           {policies.map((policy, index) => (
-            <PolicyBox key={index} policyIndex={index + 1} {...policy} />
+            <PolicyBox key={policy.heading} policyIndex={index + 1} {...policy} />
           ))}
         </ol>
       </div>

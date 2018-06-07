@@ -48,7 +48,7 @@ const CaseStudyBank = () => (
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>{'Let’s make things better.'}</span>
+          <span className={styles.content__redTitle}>Let’s make things better.</span>
           Increasing customer satisfaction &amp; conversion rates
         </h2>
         <p className={styles.content__paragraph}>
@@ -174,7 +174,7 @@ const CaseStudyBank = () => (
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>{'Creating lasting change.'}</span>
+          <span className={styles.content__redTitle}>Creating lasting change.</span>
           Scaling excellence and increasing speed to market
         </h2>
         <p className={styles.content__paragraph}>
@@ -235,9 +235,7 @@ const CaseStudyBank = () => (
             title: 'Red Badger CIO',
             image: authorQuoteImage,
           }}
-          text={
-            'Delivering value to customers at this speed and scale requires that each cross-functional team is as self-sufficient as possible, having maximum aligned autonomy. By embracing DevOps culture and using high levels of automation, we are enabling the teams to own every aspect of their domain, from idea conception, through design and build, to runtime management and support.'
-          }
+          text="Delivering value to customers at this speed and scale requires that each cross-functional team is as self-sufficient as possible, having maximum aligned autonomy. By embracing DevOps culture and using high levels of automation, we are enabling the teams to own every aspect of their domain, from idea conception, through design and build, to runtime management and support."
         />
         <Card className={styles.listBoxContainer}>
           <ListBox

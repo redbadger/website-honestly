@@ -11,41 +11,42 @@
     "mocha": true
   },
   "globals": {
-    "expect": true
+    "expect": true,
+    "System": true
   },
   "parser": "babel-eslint",
-  "plugins": [
-    "flowtype"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
-  },
+  "plugins": ["flowtype"],
   "rules": {
-    "max-len": 1,
-    "arrow-parens": ["error", "as-needed"],
-    "comma-dangle": ["error", "always-multiline"],
-    "import/prefer-default-export": 0,
-    "import/extensions": 1,
-    "no-underscore-dangle": 0,
-    "consistent-return": 0,
     "arrow-body-style": 0,
+    "arrow-parens": ["error", "as-needed"],
+    "camelcase": ["warn", { "properties": "always" }],
+    "comma-dangle": ["error", "always-multiline"],
+    "consistent-return": 0,
+    "import/extensions": 1,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-tabindex": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-quotes": 1,
+    "no-duplicate-imports": 0,
+    "no-underscore-dangle": 0,
     "prefer-template": 0,
     "react/display-name": 0,
     "react/forbid-prop-types": 1,
     "react/jsx-boolean-value": 1,
     "react/jsx-closing-bracket-location": 1,
     "react/jsx-curly-spacing": 1,
+    "react/jsx-filename-extension": 0,
     "react/jsx-indent-props": 1,
     "react/jsx-max-props-per-line": 0,
     "react/jsx-no-bind": 1,
     "react/jsx-no-duplicate-props": 1,
     "react/jsx-no-literals": 0,
     "react/jsx-no-undef": 1,
-    "jsx-quotes": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
+    "react/jsx-wrap-multilines": 1,
     "react/no-danger": 1,
     "react/no-did-mount-set-state": 1,
     "react/no-did-update-set-state": 1,
@@ -53,15 +54,12 @@
     "react/no-multi-comp": 1,
     "react/no-set-state": 0,
     "react/no-unknown-property": 1,
+    "react/no-unused-prop-types": ["off", { "skipShapeProps": true }],
     "react/prefer-es6-class": 1,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 1,
+    "react/require-default-props": 0,
     "react/self-closing-comp": 1,
-    "react/sort-comp": 1,
-    "react/jsx-wrap-multilines": 1,
-    "react/jsx-filename-extension": 0,
-    "react/no-unused-prop-types": ["off", { "skipShapeProps": true }],
-    "no-duplicate-imports": 0,
-    "camelcase": ["warn", { "properties": "always" }]
+    "react/sort-comp": 1
   }
 }

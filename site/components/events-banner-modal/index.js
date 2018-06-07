@@ -63,6 +63,7 @@ export default class EventsBannerModal extends React.Component {
         >
           <section className={styles.iframeContainer}>
             <iframe
+              title="webinars"
               width="1280"
               height="720"
               src="https://www.youtube.com/embed/85WgmD2BguI?list=PLW6ORi0XZU0DF9rlBzgro6YGTTm5DfPjb"

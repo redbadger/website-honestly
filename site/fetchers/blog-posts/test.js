@@ -40,13 +40,13 @@ describe('blog posts fetcher', () => {
 
   it('removes html tags around author bio', () => {
     const data = mapDataToState(fixture());
-    const author = data[0].author;
+    const { author } = data[0];
     expect(author.role).to.equal('Software Engineer');
   });
 
   it('persists bio if no html tags found', () => {
     const data = mapDataToState(fixture());
-    const author = data[1].author;
+    const { author } = data[1];
     expect(author.role).to.equal('Project Manager');
   });
 });

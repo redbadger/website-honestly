@@ -51,7 +51,7 @@ const CaseStudyFortnumAndMason = () => (
           </h1>
         </div>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>{"Let's make things better."}</span>
+          <span className={styles.content__redTitle}>Let&apos;s make things better.</span>
           Scaling the site, decreasing drop-outs and bringing the in-store experience, online
         </h2>
         <p className={styles.content__paragraph}>
@@ -140,7 +140,7 @@ const CaseStudyFortnumAndMason = () => (
           design from concept through to delivery, in just eight months and for under £1.3 milllion.
         </p>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>{'Creating lasting change.'}</span>
+          <span className={styles.content__redTitle}>Creating lasting change.</span>
           Increasing conversion, sales and mobile visits and winning multiple awards
         </h2>
         <div
@@ -249,6 +249,7 @@ const CaseStudyFortnumAndMason = () => (
         <div className={styles.videoContainer}>
           <span>
             <iframe
+              title="Red Badger for Fortnum & Mason: a case study"
               className={styles.video}
               src="https://www.youtube.com/embed/eBE3J9XZO20"
               allowFullScreen

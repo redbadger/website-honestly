@@ -27,10 +27,10 @@ const ListBox = ({
     <div className={cx(styles.listBox, className)}>
       {title && <h3 className={styles.listBox__heading}>{title}</h3>}
       <ul>
-        {items.map((item, index) => {
+        {items.map(item => {
           return (
             <li
-              key={index}
+              key={item.label}
               className={cx('listBox__element', 'listBox__element--results', itemClassName)}
             >
               <div className={labelClassName}>{item.label}</div>

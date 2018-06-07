@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const baseWebConfig = require('./webpack.base.config').baseWebConfig;
+const { baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');

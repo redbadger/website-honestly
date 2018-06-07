@@ -38,7 +38,7 @@ const Footer = () => (
         className={styles.footerMap}
       />
       <div className={styles.footerSections}>
-        <nav role="navigation" className={cx('section', 'footerLinks', 'underline')}>
+        <nav className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>
             {/* eslint-disable jsx-a11y/no-static-element-interactions */}
             <li>

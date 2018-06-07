@@ -51,9 +51,7 @@ const FinancialTimesCaseStudy = () => (
             title: 'Chief Product & Information Officer, Financial Times',
             image: authorQuoteImage,
           }}
-          text={
-            'Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change.'
-          }
+          text="Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change."
         />
         <Card className={styles.listBoxContainer}>
           <ListBox
@@ -76,7 +74,7 @@ const FinancialTimesCaseStudy = () => (
       </div>
       <div className={styles.content__wrapper}>
         <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>{"Let's make things better."}</span>
+          <span className={styles.content__redTitle}>Let&apos;s make things better.</span>
           Adapting to a changing online news world
         </h2>
         <p className={styles.content__paragraph}>
