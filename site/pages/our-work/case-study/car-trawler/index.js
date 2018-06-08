@@ -92,9 +92,7 @@ const CarTrawler = () => (
             iteration, we produced a working prototype that formed the basis of the solution, and
             demonstrated value as early as possible.
           </P>
-          <div className={styles.picture}>
-            <Image src={carSunset} className={styles.carSunset} />
-          </div>
+          <Image src={carSunset} className={styles.carSunset} />
           <P>
             Following the success of the concept lab, together with client’s team, we immediately
             set about building a backlog for the production content management system, focusing on

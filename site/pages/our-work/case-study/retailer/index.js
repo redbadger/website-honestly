@@ -11,6 +11,7 @@ import metaImage from './meta-image.jpg';
 import WhatToReadNext from '../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
+import Image from '../../../../components/image';
 import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';
 import {
@@ -147,13 +148,11 @@ const CaseStudyRetailer = () => (
         </SectionBody>
       </Section>
       <Section>
-        <div className={styles.wideImage}>
-          <img
-            src={techGraphImage}
-            className={styles.techGraphImage}
-            alt="Tech graph"
-          />
-        </div>
+        <Image
+          src={techGraphImage}
+          className={styles.techGraphImage}
+          alt="Tech graph"
+        />
       </Section>
       <Section>
         <SectionBody>

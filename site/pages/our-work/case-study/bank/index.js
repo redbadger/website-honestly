@@ -2,6 +2,7 @@
 import React, { Fragment } from 'react';
 import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
+import Image from '../../../../components/image';
 import styles from './style.css';
 
 import metaImage from './meta-image.jpg';
@@ -44,7 +45,7 @@ const CaseStudyBank = () => (
   <Fragment>
     <Social {...social} />
     <div className={styles.header}>
-      <img
+      <Image
         src={headerImage}
         alt="Stick figures building a large arrow from small square blocks"
         className={styles.header__image}
@@ -72,9 +73,8 @@ const CaseStudyBank = () => (
             rigid processes and legacy technology contributing to the limited functionality of their
             websites, their delivery pipeline and release process needed to change.
           </P>
-
           <div className={cx(styles.content__float, styles['content__float--noBottomMargin'])}>
-            <img
+            <Image
               src={tickImage}
               className={styles.tickImage}
               alt="Stick figures building a tick from small boxes"
@@ -131,7 +131,7 @@ const CaseStudyBank = () => (
             build trust, as this was a new approach.
           </P>
           <div className={cx(styles.content__float, styles['content__float--left'])}>
-            <img
+            <Image
               src={smileyImage}
               className={styles.smileyImage}
               alt="Stick figures building a smiley from small boxes"
@@ -200,7 +200,7 @@ const CaseStudyBank = () => (
             application to 43% since launch.
           </P>
           <div className={styles.content__float}>
-            <img
+            <Image
               src={pyramidImage}
               className={styles.pyramidImage}
               alt="Stick figures building a pyramid from small boxes"

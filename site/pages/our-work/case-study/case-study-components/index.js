@@ -2,6 +2,8 @@
 import * as React from 'react';
 import styles from './style.css';
 import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
+import Card from '../../../../components/card';
+import Image from '../../../../components/image';
 import BaseQuote from '../../../../components/quote';
 import type { Author } from '../../../../components/quote';
 
@@ -32,7 +34,9 @@ export const SectionBody = ({ children }: { children: any }): React.Element<'div
 export const Section = ({
   children,
 }: {|
-  children: React.ChildrenArray<React.Element<typeof SectionBody | typeof SectionHeading>>,
+  children: React.ChildrenArray<
+    React.Element<typeof SectionBody | typeof SectionHeading | typeof Card | typeof Image>,
+  >,
 |}) => <div className={styles.section}>{children}</div>;
 
 type QuoteType = ({ author: Author, text: string }) => React.Node;
