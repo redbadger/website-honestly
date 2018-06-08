@@ -5,50 +5,46 @@ import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
 import BaseQuote from '../../../../components/quote';
 import type { Author } from '../../../../components/quote';
 
-type SectionHeadingProps = {
-  subHeading: string,
-  heading: string,
-};
+type BodyType = ({ children: React.ChildrenArray<React.Element<any>> }) => React.Node;
+export const Body: BodyType = ({ children }) => <div className={styles.body}>{children}</div>;
 
-type Props = {
-  children?: React.Node,
-};
-
-export const Body = ({ children }: Props) => <div className={styles.body}>{children}</div>;
-
-export const PageHeading = ({ children }: Props) => (
+type PageHeadingType = ({ children: string }) => React.Element<'div'>;
+export const PageHeading: PageHeadingType = ({ children }) => (
   <div className={styles.heading}>
     <H1 type="fontL">{children}</H1>
   </div>
 );
 
-export const SectionHeading = ({ subHeading, heading }: SectionHeadingProps) => (
+type SectionHeadingType = ({ subHeading: string, heading: string }) => React.Element<'h2'>;
+export const SectionHeading: SectionHeadingType = ({ subHeading, heading }) => (
   <h2 className={styles.sectionHeading}>
     <span className={styles.redTitle}>{subHeading}</span>
     {heading}
   </h2>
 );
 
-export const SectionBody = ({ children }: Props) => (
+type SectionBodyType = ({ children: any }) => React.Element<'div'>;
+export const SectionBody: SectionBodyType = ({ children }) => (
   <div className={styles.sectionBody}>{children}</div>
 );
 
-type SectionProps = {
+type SectionType = ({
   children: React.ChildrenArray<React.Element<typeof SectionBody | typeof SectionHeading>>,
-};
-export const Section = ({ children }: SectionProps) => (
+}) => React.Element<'div'>;
+export const Section: SectionType = ({ children }) => (
   <div className={styles.section}>{children}</div>
 );
 
-type QuoteProps = { author: Author, text: string } & Props;
-export const Quote = ({ children, author, text }: QuoteProps) => (
-  <BaseQuote author={author} text={text} className={styles.quote}>
-    {children}
-  </BaseQuote>
+type QuoteType = ({ author: Author, text: string }) => React.Node;
+export const Quote: QuoteType = ({ author, text }) => (
+  <BaseQuote author={author} text={text} className={styles.quote} />
 );
 
-export const P = ({ children }: Props) => <BaseP customClass={styles.paragraph}>{children}</BaseP>;
+type PType = ({ children: string }) => React.Node;
+export const P: PType = ({ children }) => <BaseP customClass={styles.paragraph}>{children}</BaseP>;
 
-export const H3 = ({ children }: Props) => <BaseH3 type="fontS2">{children}</BaseH3>;
+type H3Type = ({ children: string }) => React.Node;
+export const H3: H3Type = ({ children }) => <BaseH3 type="fontS2">{children}</BaseH3>;
 
-export const UL = ({ children }: Props) => <ul className={styles.list}>{children}</ul>;
+type ULType = ({ children: React.ChildrenArray<React.Element<'li'>> }) => React.Element<'ul'>;
+export const UL: ULType = ({ children }) => <ul className={styles.list}>{children}</ul>;
