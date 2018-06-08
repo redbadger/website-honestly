@@ -55,12 +55,10 @@ const CarTrawler = () => (
         />
         <SectionBody>
           <P>
-            Red Badger were selected to assist Holiday Autos and Arguscarhire.com with their goal to
-            create a new way of providing content management across both websites in 36 languages,
-            given our proven approach to solving complex problems such as this (see our Sky case
-            study), and our mantra of only choosing the right technology for the job. We suggested
-            running a one week concept lab, in order to rapidly understand, validate and prototype a
-            solution to solve their problem.
+            When CarTrawler, a B2B partner to airlines, accommodation providers and online travel
+            retailers, provides a world-leading travel technology platform to connect customers with
+            tailored car rental. The company also operates its own business to consumer brands,
+            including Holiday Autos and Arguscarhire.com.
           </P>
           <P>
             Through organic growth and acquisitions, their own brands have grown significantly in

@@ -1,14 +1,6 @@
 @value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../../../css/_sizes.css';
 
-.caseStudy {
-  composes: fontXS from '../../../../css/typography/_fonts.css';
-  composes: lightSerif from '../../../../css/typography/_fonts.css';
-  font-size: 20px;
-  line-height: 27px;
-  background-color: badgerWhite;
-}
-
 .header {
   width: 100%;
   background-color: #8dcce0;
@@ -94,52 +86,6 @@
   padding: 0;
 }
 
-.content {
-  padding-bottom: 80px;
-}
-
-.content__wrapper {
-  padding: 0 20px 20px;
-}
-
-.content__mainTitleWrapper {
-  padding: 30px 0 40px;
-}
-
-.content__mainTitleWrapper + h2 {
-  margin-top: 0;
-}
-
-.content__mainTitle {
-  composes: fontL from '../../../../css/typography/_fonts.css';
-  composes: serif from '../../../../css/typography/_fonts.css';
-  margin: 0;
-}
-
-.content__title {
-  composes: fontM from '../../../../css/typography/_fonts.css';
-  composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin: 40px 0 30px;
-}
-
-.content__redTitle {
-  composes: fontXS from '../../../../css/typography/_fonts.css';
-  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  display: block;
-  color: badgerRedOnWhite;
-}
-
-.content__secondaryTitle {
-  composes: fontS2 from '../../../../css/typography/_fonts.css';
-  composes: serif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 0px;
-  margin-top: 40px;
-}
-
-.content__paragraph {
-  margin-bottom: 20px;
-}
-
 .content__list {
   list-style-type: disc;
   padding-left: 20px;
@@ -184,24 +130,8 @@
     top: 78px;
   }
 
-  .content__mainTitleWrapper {
-    padding: 40px 0 50px;
-  }
-
-  .content__paragraph {
-    padding-left: 114px;
-  }
-
-  .content__secondaryTitle {
-    padding-left: 114px;
-  }
-
   .content__list {
     padding-left: 134px;
-  }
-
-  .content__title {
-    margin: 50px 0 40px;
   }
 
   .overview {
@@ -222,37 +152,9 @@
 }
 
 @media largeScreen {
-  .content {
-    max-width: 1400px;
-    padding: 20px 120px 100px;
-    margin: auto;
-  }
-
-  .content__wrapper {
-    padding: 0;
-  }
-
-  .content__mainTitleWrapper {
-    background-color: badgerWhite;
-    padding: 20px 20px 60px;
-    margin-top: -96px;
-    position: relative;
-  }
-
-  .content__paragraph,
-  .content__secondaryTitle {
-    padding-left: 30%;
-    padding-right: 10%;
-  }
-
   .content__list {
     padding-left: 33.457143%;
     padding-right: 18.2857143%;
-  }
-
-  .content__title {
-    padding-left: 10%;
-    margin: 60px 0 40px;
   }
 
   .header {

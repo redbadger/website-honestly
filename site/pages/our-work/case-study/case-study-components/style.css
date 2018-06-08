@@ -54,7 +54,7 @@
   }
 
   .sectionBody {
-    max-width: 630px;
+    max-width: 730px;
     margin-left: auto;
   }
 
@@ -81,6 +81,7 @@
   .section {
     max-width: 1000px;
     margin: 0 auto;
+    padding-left: 60px;
   }
 
   .sectionHeading {
@@ -88,7 +89,7 @@
   }
 
   .sectionBody {
-    max-width: 690px;
+    max-width: 700px;
     margin: 0 auto;
   }
 }

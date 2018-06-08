@@ -5,9 +5,6 @@ import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
 import BaseQuote from '../../../../components/quote';
 import type { Author } from '../../../../components/quote';
 
-type BodyType = ({ children: React.ChildrenArray<React.Element<any>> }) => React.Node;
-export const Body: BodyType = ({ children }) => <div className={styles.body}>{children}</div>;
-
 type PageHeadingType = ({ children: string }) => React.Element<'div'>;
 export const PageHeading: PageHeadingType = ({ children }) => (
   <div className={styles.heading}>
@@ -15,25 +12,28 @@ export const PageHeading: PageHeadingType = ({ children }) => (
   </div>
 );
 
-type SectionHeadingType = ({ subHeading: string, heading: string }) => React.Element<'h2'>;
-export const SectionHeading: SectionHeadingType = ({ subHeading, heading }) => (
+export const SectionHeading = ({
+  subHeading,
+  heading,
+}: {|
+  subHeading: string,
+  heading: string,
+|}): React.Element<'h2'> => (
   <h2 className={styles.sectionHeading}>
     <span className={styles.redTitle}>{subHeading}</span>
     {heading}
   </h2>
 );
 
-type SectionBodyType = ({ children: any }) => React.Element<'div'>;
-export const SectionBody: SectionBodyType = ({ children }) => (
+export const SectionBody = ({ children }: { children: any }): React.Element<'div'> => (
   <div className={styles.sectionBody}>{children}</div>
 );
 
-type SectionType = ({
+export const Section = ({
+  children,
+}: {|
   children: React.ChildrenArray<React.Element<typeof SectionBody | typeof SectionHeading>>,
-}) => React.Element<'div'>;
-export const Section: SectionType = ({ children }) => (
-  <div className={styles.section}>{children}</div>
-);
+|}) => <div className={styles.section}>{children}</div>;
 
 type QuoteType = ({ author: Author, text: string }) => React.Node;
 export const Quote: QuoteType = ({ author, text }) => (
@@ -48,3 +48,8 @@ export const H3: H3Type = ({ children }) => <BaseH3 type="fontS2">{children}</Ba
 
 type ULType = ({ children: React.ChildrenArray<React.Element<'li'>> }) => React.Element<'ul'>;
 export const UL: ULType = ({ children }) => <ul className={styles.list}>{children}</ul>;
+
+type BodyType = ({
+  children: React.ChildrenArray<React.Element<typeof Section | typeof PageHeading>>,
+}) => React.Node;
+export const Body: BodyType = ({ children }) => <div className={styles.body}>{children}</div>;
