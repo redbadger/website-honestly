@@ -52,6 +52,7 @@
 
   .subHeading {
     margin-top: 0;
+    font-size: 24px; /* deviation from size */
   }
 }
 
