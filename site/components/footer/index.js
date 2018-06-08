@@ -220,7 +220,8 @@ const Footer = () => (
           <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
           <p className={styles.cookieWarning}>
             We use <Link to="cookiePolicy">cookies</Link> on our website. For more information, view
-            our <Link to="privacyPolicy">privacy policy</Link>.
+            our <Link to="privacyPolicy">privacy policy</Link> and website{' '}
+            <Link to="termsAndConditions">T&C&apos;s</Link>.
           </p>
         </div>
         <InlineSVG
