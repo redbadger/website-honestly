@@ -7,27 +7,45 @@
   max-width: contentMaxWidth;
 }
 
+.outerHeadingContainer {
+  position: relative;
+  background-color: badgerBlack;
+}
+
 .crossFunctionalSlice {
   background-color: badgerBlack;
   color: badgerWhite;
   text-align: left;
+  position: relative;
+  top: 1px; /* this fixes a thin white line appearing just above the cutout */ 
+  overflow: hidden;
+}
+
+.crossFunctionalSlice:before {
+  padding-left: 2px;
+  content: "";
+  position: absolute;
+  left: -6px;
+  width: 50%;
+  height: 10px;
+  top: 0;
+  transform: skew(-40deg);
+  background-color: badgerWhite;
+  z-index: 10;
 }
 
 .photoContainer {
-  margin: 0 auto;
   max-width: 1000px;
 }
 
 .sliceBody {
   margin: 0 auto;
   max-width: 1000px;
-  position: relative;
 }
 
 .headingContainer {
   background-color: badgerBlack;
   margin: 0 auto;
-  width: 70%;
   max-width: 400px;
 }
 
@@ -36,8 +54,13 @@
   composes: serif from "../../../css/typography/_fonts.css";
   composes: fontL from "../../../css/typography/_fonts.css";
   font-weight: bold;
-  margin: 30px 0 20px;
   text-align: center;
+  max-width: 800px;
+  position: relative;
+  top: 0;
+  margin: 0 auto 25px;
+  background: badgerBlack;
+  padding: 20px 30px 0;
 }
 
 .image {
@@ -59,8 +82,12 @@
 }
 
 @media mediumScreen {
-  .heading {
-    margin: 42px 0 30px;
+  .outerHeadingContainer {
+    margin-top: -120px;
+  }
+
+  .headingContainer {
+    width: 70%;
   }
 
   .imageContainer {
@@ -81,42 +108,19 @@
   }
 
   .photoContainer {
-    max-height: 500px;
-    overflow: hidden;
     max-width: 1200px;
+    margin: 10px auto 0;
   }
 
   .photoContainer picture {
     position: relative;
-    top: -150px;
-  }
-  .sliceBody {
-    top: -160px;
-  }
-
-}
-
-@media (min-width: 780px) {
-  .sliceBody {
-    top: -140px;
-  }
-}
-
-@media (min-width: 840px) {
-  .sliceBody {
-    top: -120px;
+    top: -130px;
   }
 }
 
 @media largeScreen {
   .outerHeadingContainer {
-    position: absolute;
-    top: -250px;
-    width: 100%;
-  }
-
-  .mainContainer {
-    margin-top: 170px;
+    margin-top: -138px;
   }
 
   .headingContainer {
@@ -126,11 +130,10 @@
 
   .heading {
     padding: 30px 60px 0;
+    top: -40px;
   }
 
   .photoContainer {
-    max-height: 500px;
-    overflow: hidden;
     max-width: 1200px;
   }
 
@@ -150,9 +153,4 @@
     width: 25%;
     max-width: 205px;
   }
-
-  .sliceBody {
-    top: 0;
-  }
-
 }
