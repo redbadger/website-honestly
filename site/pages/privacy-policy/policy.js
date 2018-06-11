@@ -26,11 +26,10 @@ const policies = [
         body: () => (
           <P>
             Our Privacy Statement is part of, and is subject to, our{' '}
-            <Link to="cookiePolicy">Cookies Policy</Link>
-            {/* and our{' '}
-            <Link to="termsAndConditions">Website Terms</Link> */}. By
-            accessing or using <Link to="homePage">www.red-badger.com</Link> (“<B>Website</B>”), you
-            confirm that you accept the terms of our Privacy Statement.
+            <Link to="cookiePolicy">Cookies Policy</Link> and our{' '}
+            <Link to="termsAndConditions">Website Terms</Link>. By accessing or using{' '}
+            <Link to="homePage">www.red-badger.com</Link> (“<B>Website</B>”), you confirm that you
+            accept the terms of our Privacy Statement.
           </P>
         ),
       },
@@ -61,7 +60,7 @@ const policies = [
           <P>
             You can contact us by (a) post, to 4th Floor, 2 Old Street Yard, London, England, EC1Y
             8AF, (b) telephone, on 0203 567 0555, or (c) email, using the following email address:{' '}
-            <a href="mailto:hello@red-badger.com">hello@red-badger.com.</a>
+            <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
           </P>
         ),
       },
