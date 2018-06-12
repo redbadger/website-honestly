@@ -64,14 +64,14 @@ type BodyProps = {
 };
 export const Body = ({ children }: BodyProps) => <div className={styles.body}>{children}</div>;
 
-// type Layout = 'row' | 'row-reverse';
+type Layout = 'row' | 'row-reverse';
 export const CaseStudySliceContainer = ({
   children,
-  // layout,
+  layout = 'row-reverse',
   to,
 }: {
   children: React.ChildrenArray<React.Element<'div'>>,
-  // layout: Layout,
+  layout: Layout,
   to: string,
 }) => (
   <div className={styles.caseStudyContainer}>
@@ -79,6 +79,7 @@ export const CaseStudySliceContainer = ({
       to={to}
       className={classNames({
         [styles.caseStudyContent]: true,
+        [styles[`${layout}`]]: true,
       })}
     >
       {children}

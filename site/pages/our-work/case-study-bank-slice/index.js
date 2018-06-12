@@ -5,7 +5,7 @@ import { CaseStudySliceContainer } from '../case-study/case-study-components';
 import bankGif from './images/bank.gif';
 
 const BankSlice = () => (
-  <CaseStudySliceContainer to="bankCaseStudy" layout="reverse">
+  <CaseStudySliceContainer to="bankCaseStudy" layout="row">
     <div className={styles.caseStudyTextContainer}>
       <div>
         <h2 className={styles.caseStudyTextContainerHeader}>

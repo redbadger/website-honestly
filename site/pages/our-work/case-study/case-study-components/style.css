@@ -53,6 +53,7 @@
   justify-content: center;
   margin: 0 auto;
   padding-top: 30px;
+  border-bottom: 1px solid #cccccc;
 }
 
 .caseStudyContent {
@@ -78,10 +79,17 @@
     padding-left: 0;
   }
   .caseStudyContent {
-    /* flex-direction: row; */
     display: flex;
     margin: 0;
     padding: 0;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
   }
 
   .caseStudyContainer {

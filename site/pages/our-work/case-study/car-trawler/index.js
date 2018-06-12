@@ -28,10 +28,10 @@ const social = {
 
 const quoteProps = {
   text:
-    ' Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. ',
+    'Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience.',
   author: {
     name: 'David Kirby',
-    title: 'Job Title, Car Trawler',
+    title: 'Brands Commercial Director, Car Trawler',
     image: davidKirby,
   },
 };
@@ -56,7 +56,7 @@ const CarTrawler = () => (
         />
         <SectionBody>
           <P>
-            When CarTrawler, a B2B partner to airlines, accommodation providers and online travel
+            CarTrawler, a B2B partner to airlines, accommodation providers and online travel
             retailers, provides a world-leading travel technology platform to connect customers with
             tailored car rental. The company also operates its own business to consumer brands,
             including Holiday Autos and Arguscarhire.com.
@@ -87,7 +87,7 @@ const CarTrawler = () => (
           </P>
           <P>
             In November 2015, a cross-functional Red Badger team arrived at the company’s HQ in
-            Dublin for a week. The concept lab allowed us to work without pre-defined solutions, and
+            Dublin for a week. The concept lab allowed us to work without predefined solutions, and
             to think objectively about what was needed from the content management system from both
             an end-user and business perspective. As the week progressed, through continuous
             iteration, we produced a working prototype that formed the basis of the solution, and
@@ -95,12 +95,13 @@ const CarTrawler = () => (
           </P>
           <Image src={carSunset} className={styles.carSunset} />
           <P>
-            Following the success of the concept lab, together with client’s team, we immediately
-            set about building a backlog for the production content management system, focusing on
-            user requirements rather than functionality. Without being tied to a technology choice
-            or a software service we were able to build a solution to solve the problem. We managed
-            this with minimal waste in terms of development effort, software licensing costs, and
-            unnecessary features, whilst maintaining a future-proof attitude to business needs.
+            Following the success of the concept lab, together with the client’s team, we
+            immediately set about building a backlog for the production content management system,
+            focusing on user requirements rather than functionality. Without being tied to a
+            technology choice or a software service we were able to build a solution to solve the
+            problem. We managed this with minimal waste in terms of development effort, software
+            licensing costs, and unnecessary features, whilst maintaining a future-proof attitude to
+            business needs.
           </P>
           <P>
             In five months, Red Badger built a customised system with features such as a bulk upload
@@ -123,7 +124,7 @@ const CarTrawler = () => (
           </P>
           <P>
             Holiday Autos and Arguscarhire.com were delighted with the new platform, and invited Red
-            Badger to assist with a second project, My Account, on the back of this success.
+            Badger to assist with a second project on the back of this success.
           </P>
         </SectionBody>
       </Section>
