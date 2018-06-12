@@ -22,6 +22,7 @@ const social = {
   description:
     'Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.',
   metaImage: carSunset,
+  altText: 'A toy car heading off into a picturesque sunset',
   url: 'https://red-badger.com/our-work/case-study/car-trawler',
 };
 
