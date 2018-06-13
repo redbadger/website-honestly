@@ -5,6 +5,7 @@ import CookieBanner from '../components/cookie-banner';
 import Footer from '../components/footer';
 import styles from './style.css';
 import { getCookieValue } from '../components/utils';
+import logAmplitudeEvent from '../tracking/amplitude';
 
 export default class Layout extends React.Component {
   static propTypes = {
@@ -27,10 +28,18 @@ export default class Layout extends React.Component {
   componentDidMount = () => {
     const cookiesAccepted = getCookieValue('_cookies') === 'true';
 
+    logAmplitudeEvent('PAGE LOADED', { url: window.location.href }, true);
+
     if (!cookiesAccepted) {
       this.setState({ showCookiesBanner: true });
     }
   };
+
+  componentDidUpdate(prevprops) {
+    if (prevprops.stateNavigator !== this.props.stateNavigator) {
+      logAmplitudeEvent('PAGE LOADED', { url: window.location.href }, true);
+    }
+  }
 
   updateCallback = () => this.setState({ showCookiesBanner: false });
 
