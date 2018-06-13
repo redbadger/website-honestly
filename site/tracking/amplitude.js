@@ -1,5 +1,3 @@
-// @flow
-
 const logAmplitudeEvent = (eventType, eventOptions) => {
   const eventProperties = {
     ...eventOptions,
