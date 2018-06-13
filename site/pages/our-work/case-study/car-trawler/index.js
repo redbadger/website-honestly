@@ -20,7 +20,7 @@ import davidKirby from './images/david-kirby.jpg';
 const social = {
   title: 'Next generation platform for retail giant | Red Badger',
   description:
-    'Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.',
+    'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
   metaImage: carSunset,
   altText: 'A toy car heading off into a picturesque sunset',
   url: 'https://red-badger.com/our-work/case-study/car-trawler',
@@ -31,7 +31,7 @@ const quoteProps = {
     'Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience.',
   author: {
     name: 'David Kirby',
-    title: 'Brands Commercial Director, Car Trawler',
+    title: 'Brands Commercial Director',
     image: davidKirby,
   },
 };
