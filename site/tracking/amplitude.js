@@ -7,6 +7,6 @@ const logAmplitudeEvent = (eventType, eventOptions) => {
   };
 
   amplitude.getInstance().logEvent(eventType, eventProperties);
-}
+};
 
 export default logAmplitudeEvent;

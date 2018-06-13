@@ -79,11 +79,23 @@ const Footer = () => (
         <div>
           <div className={cx('section', 'social', 'underline')}>
             <span className={styles.screenReaderText}>Email us at</span>
-            <a href="mailto:hello@red-badger.com" className={styles.mailtoLink}>
+            <a
+              href="mailto:hello@red-badger.com"
+              onClick={() =>
+                logAmplitudeEvent('CLICK CONTACT US', { type: 'email', subject: 'footer' })
+              }
+              className={styles.mailtoLink}
+            >
               <span className={styles.mailtoLinkText}>hello@red-badger.com</span>
             </a>
             <span className={styles.screenReaderText}>Call us on</span>
-            <a href="tel:+442035670555" onClick={() => logAmplitudeEvent('CLICK CONTACT US', {type: 'phone', subject: 'footer'})} className={styles.telLink}>
+            <a
+              href="tel:+442035670555"
+              onClick={() =>
+                logAmplitudeEvent('CLICK CONTACT US', { type: 'phone', subject: 'footer' })
+              }
+              className={styles.telLink}
+            >
               <span className={styles.telLinkText}>
                 <span>+</span>
                 <span>4</span>

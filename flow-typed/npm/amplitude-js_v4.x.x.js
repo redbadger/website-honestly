@@ -192,7 +192,12 @@ declare module 'amplitude-js' {
      * See [Readme]{@link https://github.com/amplitude/Amplitude-Javascript#configuration-options} for list of options and default values.
      * @param {function} callback (optional) Provide a callback function to run after initialization is complete.
      */
-    init(apiKey: string, userId?: string | null, config?: AmplitudeConfig | null, callback?: (client: AmplitudeClient) => mixed): void;
+    init(
+      apiKey: string,
+      userId?: string | null,
+      config?: AmplitudeConfig | null,
+      callback?: (client: AmplitudeClient) => mixed,
+    ): void;
 
     /**
      * Returns true if a new session was created during initialization, otherwise false.
@@ -297,7 +302,11 @@ declare module 'amplitude-js' {
      * @param {object} eventProperties (optional) An object with string keys and values for the event properties.
      * @param {function} callback (optional) A callback function to run after the event is logged.
      */
-    logEvent(eventType: string, eventProperties?: PropertyObject | null, callback?: EventCallback): void;
+    logEvent(
+      eventType: string,
+      eventProperties?: PropertyObject | null,
+      callback?: EventCallback,
+    ): void;
 
     /**
      * Log an event with eventType and eventProperties and a custom timestamp.
@@ -307,7 +316,12 @@ declare module 'amplitude-js' {
      * @param {number} timestamp (optional) The custom timestamp as milliseconds since epoch.
      * @param {function} callback (optional) A callback function to run after the event is logged.
      */
-    logEventWithTimestamp(eventType: string, eventProperties?: PropertyObject | null, timestamp?: number | null, callback?: EventCallback): void;
+    logEventWithTimestamp(
+      eventType: string,
+      eventProperties?: PropertyObject | null,
+      timestamp?: number | null,
+      callback?: EventCallback,
+    ): void;
 
     /**
      * Log an event with eventType, eventProperties, and groups. Use this to set event-level groups.
@@ -321,7 +335,12 @@ declare module 'amplitude-js' {
      * @param {object} groups (optional) An object with string groupType: groupName values for the event being logged.
      * @param {function} callback (optional) A callback function to run after the event is logged.
      */
-    logEventWithGroups(eventType: string, eventProperties?: PropertyObject | null, groups?: GroupsMap | null, callback?: EventCallback): void;
+    logEventWithGroups(
+      eventType: string,
+      eventProperties?: PropertyObject | null,
+      groups?: GroupsMap | null,
+      callback?: EventCallback,
+    ): void;
 
     /**
      * Log revenue with Revenue interface. The new revenue interface allows for more revenue fields like
