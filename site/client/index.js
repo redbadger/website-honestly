@@ -11,6 +11,7 @@ import ReactGA from 'react-ga';
 import createStateNavigator from '../../site/routes';
 
 import { initGreyscaleModeBar } from './greyscale';
+import logAmplitudeEvent from '../tracking/amplitude';
 
 const TITLE_SUFFIX = 'Red Badger';
 const A11Y_DAY_MODE_ENABLED = false;
@@ -60,6 +61,7 @@ export function makeApp({ element, state }) {
 
     // Update GA on user navigation event
     const page = `/${route.route}`;
+    logAmplitudeEvent('PAGE LOADED', { url: window.location.href }, true);
     ReactGA.set({ page, title });
     ReactGA.pageview(page);
   });
