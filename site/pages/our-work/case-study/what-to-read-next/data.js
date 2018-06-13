@@ -1,4 +1,5 @@
 import bankImage from './images/bank.jpg';
+import carTrawlerImage from './images/carTrawler.jpg';
 import fortnumImage from './images/fortnumReadMore.jpg';
 import fortnumDigitalTransformationImage from './images/fortnumDigitalTransformationReadMore.jpg';
 import financialTimesImage from './images/financialTimesReadMore.jpg';
@@ -13,6 +14,12 @@ const sliceData = {
     tagline: 'Digital transformation in retail banking',
     image: bankImage,
     linkKey: 'bankCaseStudy',
+  },
+  carTrawler: {
+    name: 'Car Trawler',
+    tagline: 'Creating complete CMS control for travel brands',
+    image: carTrawlerImage,
+    linkKey: 'carTrawlerCaseStudy',
   },
   fortnumAndMason: {
     name: 'Fortnum & Mason',

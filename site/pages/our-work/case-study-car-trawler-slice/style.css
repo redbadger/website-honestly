@@ -16,7 +16,7 @@ _:-ms-fullscreen,
 .imageContainer {
   min-width: 260px;
   min-height: 205px;
-  background-color: #8dcce0;
+  /* background-color: #8dcce0; */
   position: relative;
 }
 

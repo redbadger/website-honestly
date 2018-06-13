@@ -11,6 +11,8 @@ import {
   SectionBody,
   P,
 } from '../case-study-components';
+import WhatToReadNext from '../what-to-read-next';
+import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import styles from './style.css';
 
 import carDaytime from './images/car-daytime.png';
@@ -129,6 +131,8 @@ const CarTrawler = () => (
         </SectionBody>
       </Section>
     </Body>
+    <WhatToReadNext currentPage="carTrawler" />
+    <ChecklistContactUs />
   </Fragment>
 );
 

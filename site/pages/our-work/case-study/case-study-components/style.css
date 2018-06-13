@@ -45,7 +45,7 @@
 
 .quote {
   padding-left: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .caseStudyContainer {
@@ -76,7 +76,8 @@
   }
 
   .quote {
-    padding-left: 0;
+    padding-left: 30px;
+    padding-bottom: 0px;
   }
   .caseStudyContent {
     display: flex;

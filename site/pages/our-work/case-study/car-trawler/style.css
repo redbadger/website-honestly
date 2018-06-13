@@ -5,13 +5,17 @@
   background: linear-gradient(
     to bottom,
     #599bb9 0%,
-    #599bb9 55%,
-    #599bb9 55%,
-    #357a5f 50%,
+    #599bb9 57%,
+    #599bb9 57%,
+    #357a5f 58%,
     #357a5f 100%
   );
   display: flex;
   justify-content: center;
+}
+
+.carSunset {
+  padding-bottom: 30px;
 }
 
 .carSunset,
