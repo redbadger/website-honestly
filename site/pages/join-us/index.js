@@ -14,6 +14,7 @@ import Social from '../../components/social';
 
 import metaImage from './meta-image.jpg';
 import bestCompanyLogo from './2018-best-small-companies-logo.jpg';
+import logAmplitudeEvent from '../../tracking/amplitude';
 
 const join = {
   type: 'Content',
@@ -72,6 +73,9 @@ const apply = {
               type: 'Link',
               props: {
                 href: 'mailto:jobs@red-badger.com',
+                onClick: () => {
+                  logAmplitudeEvent('CLICK CONTACT US', { type: 'email', subject: 'jobs' });
+                },
                 children: 'jobs@red-badger.com.',
               },
             },
