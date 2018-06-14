@@ -58,10 +58,11 @@ export function makeApp({ element, state }) {
     stateNavigator.stateContext.title = title;
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
+    console.log('client/index.js', component, pageTitle, props, route);
+    logAmplitudeEvent('PAGE LOADED', { url: window.location.href, pageType: pageTitle }, true);
 
     // Update GA on user navigation event
     const page = `/${route.route}`;
-    logAmplitudeEvent('PAGE LOADED', { url: window.location.href }, true);
     ReactGA.set({ page, title });
     ReactGA.pageview(page);
   });
