@@ -4,11 +4,11 @@
 .carDayTime {
   background: linear-gradient(
     to bottom,
-    #599bb9 0%,
+    #27a1cb 0%,
+    #27a1cb 57%,
     #599bb9 57%,
-    #599bb9 57%,
-    #357a5f 58%,
-    #357a5f 100%
+    #00805c 58%,
+    #00805c 100%
   );
   display: flex;
   justify-content: center;
