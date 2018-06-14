@@ -9,7 +9,7 @@ const CarTrawlerSlice = () => (
     <div className={styles.caseStudyTextContainer}>
       <div>
         <h2 className={styles.caseStudyTextContainerHeader}>
-          Creating complete CMS control for a Travel technology platform
+          Complete CMS control for travel brands
         </h2>
         <p className={styles.description}>
           Find out how we demonstrated value with a working prototype in one week and delivered a
