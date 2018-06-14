@@ -5,11 +5,13 @@ import CookieBanner from '../components/cookie-banner';
 import Footer from '../components/footer';
 import styles from './style.css';
 import { getCookieValue } from '../components/utils';
+import logAmplitudeEvent from '../tracking/amplitude';
 
 export default class Layout extends React.Component {
   static propTypes = {
     children: PropTypes.element.isRequired,
     stateNavigator: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+    title: PropTypes.string.isRequired,
   };
 
   static childContextTypes = {
@@ -30,6 +32,25 @@ export default class Layout extends React.Component {
     if (!cookiesAccepted) {
       this.setState({ showCookiesBanner: true });
     }
+
+    logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() }, true);
+  };
+
+  componentDidUpdate = prevProps => {
+    if (prevProps.title !== this.props.title) {
+      logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() }, true);
+    }
+  };
+
+  getPageType = () => {
+    const pathnameArray = window.location.pathname.split('/');
+
+    if (pathnameArray[1] === 'events') {
+      return 'events';
+    } else if (pathnameArray.length > 2) {
+      return pathnameArray[2];
+    }
+    return pathnameArray[1];
   };
 
   updateCallback = () => this.setState({ showCookiesBanner: false });

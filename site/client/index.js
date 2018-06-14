@@ -12,7 +12,6 @@ import amplitude from 'amplitude-js';
 import createStateNavigator from '../../site/routes';
 
 import { initGreyscaleModeBar } from './greyscale';
-import logAmplitudeEvent from '../tracking/amplitude';
 
 const TITLE_SUFFIX = 'Red Badger';
 const A11Y_DAY_MODE_ENABLED = false;
@@ -60,8 +59,6 @@ export function makeApp({ element, state }) {
     stateNavigator.stateContext.title = title;
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
-    console.log('client/index.js', component, pageTitle, props, route);
-    logAmplitudeEvent('PAGE LOADED', { url: window.location.href, pageType: pageTitle }, true);
 
     // Update GA on user navigation event
     const page = `/${route.route}`;

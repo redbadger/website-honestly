@@ -3,7 +3,7 @@ import amplitude from 'amplitude-js';
 const logAmplitudeEvent = (eventType, eventOptions, test = false) => {
   const eventProperties = {
     ...eventOptions,
-    url: window.location.pathname,
+    url: window.location.href,
   };
 
   if (test) {
