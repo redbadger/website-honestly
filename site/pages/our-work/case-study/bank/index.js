@@ -1,5 +1,5 @@
 // @flow
-import React, { Fragment } from 'react';
+import React from 'react';
 import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
@@ -30,6 +30,8 @@ import ListBox from '../../../../components/list-box';
 import WhatToReadNext from '../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
+import ScrollTracker from '../../../../components/scroll-tracker';
+
 const cx = classnames.bind(styles);
 
 const social = {
@@ -42,7 +44,7 @@ const social = {
 };
 
 const CaseStudyBank = () => (
-  <Fragment>
+  <ScrollTracker>
     <Social {...social} />
     <div className={styles.header}>
       <Image
@@ -327,7 +329,7 @@ const CaseStudyBank = () => (
     </Body>
     <WhatToReadNext currentPage="bank" />
     <ChecklistContactUs />
-  </Fragment>
+  </ScrollTracker>
 );
 
 export default CaseStudyBank;

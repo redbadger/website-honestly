@@ -8,6 +8,7 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Social from '../../../../components/social';
 import Picture from '../../../../components/picture';
 import Link from '../../../../components/link';
+import ScrollTracker from '../../../../components/scroll-tracker';
 
 import headerL from './images/header-l.jpg';
 import headerM from './images/header-m.jpg';
@@ -24,7 +25,7 @@ const social = {
 };
 
 const FMTeaCaseStudy = () => (
-  <div>
+  <ScrollTracker>
     <Social {...social} />
     <div className={styles.header}>
       <Picture
@@ -149,7 +150,7 @@ const FMTeaCaseStudy = () => (
     </div>
     <WhatToReadNext currentPage="fMTeaCaseStudy" linkKeys={['fortnumAndMason']} />
     <ChecklistContactUs />
-  </div>
+  </ScrollTracker>
 );
 
 export default FMTeaCaseStudy;
