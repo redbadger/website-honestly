@@ -1,3 +1,5 @@
+import amplitude from 'amplitude-js';
+
 const logAmplitudeEvent = (eventType, eventOptions, test = false) => {
   const eventProperties = {
     ...eventOptions,

@@ -7,6 +7,7 @@ import 'core-js/es6/symbol';
 
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
+import amplitude from 'amplitude-js';
 
 import createStateNavigator from '../../site/routes';
 
@@ -49,6 +50,7 @@ export function makeApp({ element, state }) {
   const { GOOGLE_ANALYTICS_TRACKER } = process.env;
   ReactGA.initialize(GOOGLE_ANALYTICS_TRACKER);
   ReactGA.pageview('/');
+  amplitude.getInstance().init('d246f18b3c6f5dd21660ba24e1af2919');
 
   const stateNavigator = createStateNavigator();
   stateNavigator.onNavigate((oldRoute, route, params) => {
