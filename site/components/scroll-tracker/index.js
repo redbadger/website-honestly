@@ -3,9 +3,13 @@ import logAmplitudeEvent from '../../tracking/amplitude';
 
 class ScrollTracker extends React.Component {
   static logScrollDepth(scrollDepth) {
-    logAmplitudeEvent('SCROLL', {
-      scrollPercentage: scrollDepth,
-    });
+    logAmplitudeEvent(
+      'SCROLL',
+      {
+        scrollPercentage: scrollDepth,
+      },
+      true,
+    );
   }
 
   componentDidMount() {
