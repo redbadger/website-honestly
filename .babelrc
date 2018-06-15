@@ -1,3 +1,6 @@
 {
-  "presets": ["flow", "react", "env", "stage-1"]
+  "presets": ["flow", "react", "env", "stage-1"],
+  "plugins": [
+    "array-includes"
+  ]
 }
