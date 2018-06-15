@@ -33,12 +33,12 @@ export default class Layout extends React.Component {
       this.setState({ showCookiesBanner: true });
     }
 
-    logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() }, true);
+    logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() });
   };
 
   componentDidUpdate = prevProps => {
     if (prevProps.title !== this.props.title) {
-      logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() }, true);
+      logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() });
     }
   };
 
