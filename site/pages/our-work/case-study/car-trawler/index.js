@@ -20,7 +20,7 @@ import carSunset from './images/car-sunset.jpg';
 import davidKirby from './images/david-kirby.jpg';
 
 const social = {
-  title: 'Next generation platform for retail giant | Red Badger',
+  title: 'Creating complete CMS control for travel brands | Red Badger',
   description:
     'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
   metaImage: carSunset,
