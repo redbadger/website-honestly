@@ -7,13 +7,16 @@ import ReactGA from 'react-ga';
 import styles from '../style.css';
 
 import hubspotButtons from '../hubspot-buttons';
+import logAmplitudeEvent from '../../../tracking/amplitude';
 
-const trackAnalytics = title => () =>
+const trackAnalytics = title => () => {
+  logAmplitudeEvent('CLICK WATCH WEBINAR');
   ReactGA.event({
     category: 'TechnologyPage',
     action: title,
     label: `From: ${window.location.pathname}`,
   });
+};
 
 export default () => (
   <section className={styles.webinar}>

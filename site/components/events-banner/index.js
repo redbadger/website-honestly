@@ -2,14 +2,17 @@
 
 import React from 'react';
 import ReactGA from 'react-ga';
+import logAmplitudeEvent from '../../tracking/amplitude';
 import styles from './style.css';
 
-const trackAnalytics = title => () =>
+const trackAnalytics = title => () => {
+  logAmplitudeEvent('CLICK WATCH WEBINAR');
   ReactGA.event({
     category: 'EventsPageBanner',
     action: title,
     label: `From: ${window.location.pathname}`,
   });
+};
 
 type Props = {
   url: string,
