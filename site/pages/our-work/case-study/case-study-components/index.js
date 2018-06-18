@@ -45,7 +45,7 @@ export const Quote = ({ author, text }: { author: Author, text: string }) => (
   <BaseQuote author={author} text={text} className={styles.quote} />
 );
 
-export const P = ({ children }: { children: string }) => (
+export const P = ({ children }: { children: React.Node }) => (
   <BaseP customClass={styles.paragraph}>{children}</BaseP>
 );
 

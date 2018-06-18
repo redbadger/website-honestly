@@ -1,5 +1,6 @@
 // @flow
 import React, { Fragment } from 'react';
+import Link from '../../../../components/link';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
 import {
@@ -33,7 +34,7 @@ const quoteProps = {
     'Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience.',
   author: {
     name: 'David Kirby',
-    title: 'Brands Commercial Director',
+    title: 'Brands Commercial Director, CarTrawler',
     image: davidKirby,
   },
 };
@@ -82,8 +83,10 @@ const CarTrawler = () => (
           <P>
             Red Badger were selected to assist Holiday Autos and Arguscarhire.com with their goal to
             create a new way of providing content management across both websites in 36 languages,
-            given our proven approach to solving complex problems such as this (see our Sky case
-            study), and our mantra of only choosing the right technology for the job. We suggested
+            given our proven approach to solving complex problems such as this (see our{' '}
+            <Link className={styles.link} to="skyCaseStudy">
+              Sky case study
+            </Link>), and our mantra of only choosing the right technology for the job. We suggested
             running a one week concept lab, in order to rapidly understand, validate and prototype a
             solution to solve their problem.
           </P>

@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value badgerWhite, badgerBlack, badgerRedOnWhite, badgerAccessibleRedOnBlack, linesOnWhite from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../../../css/_sizes.css';
 
 .carDayTime {
@@ -25,4 +25,14 @@
 
 .picture {
   padding-bottom: 30px;
+}
+
+.link {
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRedOnWhite;
+}
+
+.link:hover {
+  color: badgerRedOnWhite;
+  border-bottom: 2px solid badgerAccessibleRedOnBlack;
 }
