@@ -13,6 +13,7 @@ const logAmplitudeEvent = (
     // eslint-disable-next-line no-console
     console.log(eventType, eventProperties);
   } else {
+    // $FlowIgnore
     amplitude.getInstance().logEvent(eventType, eventProperties);
   }
 };
