@@ -46,10 +46,10 @@ export function makeApp({ element, state }) {
   }
 
   // init Google Analytics tracker and publish a page view at '/'
-  const { GOOGLE_ANALYTICS_TRACKER } = process.env;
+  const { AMPLITUDE_API_KEY, GOOGLE_ANALYTICS_TRACKER } = process.env;
   ReactGA.initialize(GOOGLE_ANALYTICS_TRACKER);
   ReactGA.pageview('/');
-  amplitude.getInstance().init('d246f18b3c6f5dd21660ba24e1af2919');
+  amplitude.getInstance().init(AMPLITUDE_API_KEY);
 
   const stateNavigator = createStateNavigator();
   stateNavigator.onNavigate((oldRoute, route, params) => {
