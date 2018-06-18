@@ -1,6 +1,12 @@
+// @flow
+
 import amplitude from 'amplitude-js';
 
-const logAmplitudeEvent = (eventType, eventOptions = {}, test = false) => {
+const logAmplitudeEvent = (
+  eventType: string,
+  eventOptions?: { [string]: string | number | Array<string | number> } = {},
+  test?: boolean = false,
+): void => {
   const eventProperties = {
     ...eventOptions,
     url: window.location.href,
@@ -14,7 +20,7 @@ const logAmplitudeEvent = (eventType, eventOptions = {}, test = false) => {
   }
 };
 
-export const logScrollDepth = scrollDepth => {
+export const logScrollDepth = (scrollDepth: number): void => {
   const title = document.title.split(' | ')[0];
 
   const query = window.location.search.substr(1);
