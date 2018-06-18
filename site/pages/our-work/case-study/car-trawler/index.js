@@ -1,6 +1,5 @@
 // @flow
 import React, { Fragment } from 'react';
-import Link from '../../../../components/link';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
 import {
@@ -84,9 +83,14 @@ const CarTrawler = () => (
             Red Badger were selected to assist Holiday Autos and Arguscarhire.com with their goal to
             create a new way of providing content management across both websites in 36 languages,
             given our proven approach to solving complex problems such as this (see our{' '}
-            <Link className={styles.link} to="skyCaseStudy">
+            <a
+              className={styles.link}
+              href="/our-work/case-study/sky"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Sky case study
-            </Link>), and our mantra of only choosing the right technology for the job. We suggested
+            </a>), and our mantra of only choosing the right technology for the job. We suggested
             running a one week concept lab, in order to rapidly understand, validate and prototype a
             solution to solve their problem.
           </P>
