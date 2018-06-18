@@ -1,5 +1,4 @@
-Environment Variables
-=====================
+# Environment Variables
 
 This site uses several environment variables. These are set in `.env` in dev.
 In prod they are set in `circle.yml`, deploy scripts, and in Circle CI's secrets
@@ -10,6 +9,11 @@ repository with the help of `blackbox`. For the moment this approach is being
 used only for the dev environment. You can read more documentation on the
 workflow [here](https://github.com/redbadger/blackbox-secrets).
 
+In order to update the `.env` file to the latest version use the command
+`make update-secrets`. If you make your own changes to the `.env` that need to be
+added to the project blackbox then use the command `make edit-secrets`. This will
+open the decrypted `.env` in your terminal `EDITOR` for you to mage changes to
+before encrypting it and pushing the the project blackbox for distribution.
 
 * `ENVIRONMENT_NAME`
 
@@ -69,8 +73,7 @@ workflow [here](https://github.com/redbadger/blackbox-secrets).
 
   Part of the authentication for the Twitter API, which we call to get recent
   tweets. Tweets are shown on the "About us" page currently. The Twitter API
-  is called when we collect all the state for the website, e.g. with `make
-  fetch`.
+  is called when we collect all the state for the website, e.g. with `make fetch`.
 
 * `TWITTER_SECRET`
 
@@ -81,6 +84,14 @@ workflow [here](https://github.com/redbadger/blackbox-secrets).
   Authentication for the Instagram API. We show the latest Instagram posts on
   our "About us" page currently. The Instagram API is called when we collect
   all the state for the website, e.g. with `make fetch`.
+  The Instagram access token may expire at any time according to
+  [their API documentation](https://www.instagram.com/developer/authentication/).
+  If this happens the static build will fail to any environment. In order to fix
+  this a new access token will need to be generated, and both the project `.env`
+  and the environment variables in Circle CI will need to be updated. New access
+  token generation will require access to the `redbadgerteam` Instagram account
+  and can be manually generated from the client-side authentication
+  documentation [here](https://www.instagram.com/developer/authentication/).
 
 * `AWS_ACCESS_KEY_ID`
 
