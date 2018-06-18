@@ -1,7 +1,4 @@
 // @flow
-
-import amplitude from 'amplitude-js';
-
 const logAmplitudeEvent = (
   eventType: string,
   eventOptions?: { [string]: string | number | Array<string | number> } = {},
