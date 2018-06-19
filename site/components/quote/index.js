@@ -7,7 +7,7 @@ import styles from './style.css';
 
 const cx = classnames.bind(styles);
 
-type Author = {
+export type Author = {
   name: string,
   title: string,
   image?: string,

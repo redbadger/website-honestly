@@ -1,9 +1,8 @@
-@value badgerWhite, badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../../../css/_sizes.css';
 
 .header {
   width: 100%;
-  background-color: #FFD811;
+  background-color: #ffd811;
 }
 
 .header__image {
@@ -13,88 +12,11 @@
   margin: 0 auto;
 }
 
-.content {
-  padding-bottom: 80px;
-}
-
-.content__wrapper {
-  padding: 0 20px 20px;
-}
-
-.content__mainTitleWrapper {
-  padding: 30px 20px 40px;
-}
-
-.content__mainTitleWrapper + .content__wrapper h2,
-.content__mainTitleWrapper + .content__wrapper {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.content__wrapper::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.content__mainTitle {
-  composes: fontL from '../../../../css/typography/_fonts.css';
-  composes: serif from '../../../../css/typography/_fonts.css';
-  margin: 0;
-}
-
-.content__title {
-  composes: fontM from '../../../../css/typography/_fonts.css';
-  composes: lightSerif from '../../../../css/typography/_fonts.css';
-  margin: 40px 0 30px;
-}
-
-.content__redTitle {
-  composes: fontXS from '../../../../css/typography/_fonts.css';
-  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  display: block;
-  color: badgerRedOnWhite;
-}
-
-.content__secondaryTitle {
-  composes: fontS2 from '../../../../css/typography/_fonts.css';
-  composes: serif from '../../../../css/typography/_fonts.css';
-  margin-bottom: 0px;
-  margin-top: 40px;
-}
-
-.content__paragraph:not(:last-child),
-.content__float {
-  margin-bottom: 20px;
-}
-
-.content__list {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 30px;
-  line-height: 28px;
-}
-
 .tickImage,
 .smileyImage,
 .pyramidImage {
   display: block;
   max-width: 100%;
-}
-
-.quote {
-  margin: 35px 0;
-}
-
-.listBoxContainer {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.listBoxContainer:last-child {
-  margin-bottom: 0;
 }
 
 .listBox {
@@ -111,24 +33,6 @@
 }
 
 @media mediumScreen {
-  .content {
-    padding: 0 0 80px;
-  }
-
-  .content__wrapper {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .content__mainTitleWrapper {
-    padding: 40px 20px 50px;
-  }
-
-  .content__paragraph,
-  .quote {
-    padding-left: 114px;
-  }
-
   .content__float {
     float: right;
     max-width: 45%;
@@ -142,23 +46,6 @@
 
   .content__float--noBottomMargin {
     margin-bottom: 0;
-  }
-
-  .content__secondaryTitle {
-    padding-left: 114px;
-  }
-
-  .content__list {
-    padding-left: 134px;
-  }
-
-  .content__title {
-    margin: 50px 0 40px;
-  }
-
-  .listBoxContainer {
-    margin-left: 64px;
-    margin-right: auto;
   }
 
   .listBox {
@@ -181,47 +68,8 @@
 }
 
 @media largeScreen {
-  .content {
-    max-width: 1400px;
-    padding: 20px 120px 100px;
-    margin: auto;
-  }
-
-  .content__wrapper {
-    padding: 0;
-  }
-
-  .content__mainTitleWrapper {
-    background-color: badgerWhite;
-    padding: 20px 20px 60px;
-    margin-top: -96px;
-    position: relative;
-  }
-
-  .content__title {
-    padding-left: 10%;
-    margin: 60px 0 40px;
-  }
-
-  .content__paragraph,
-  .content__secondaryTitle,
-  .quote {
-    padding-left: 30%;
-    padding-right: 10%;
-  }
-
   .content__float--left {
     margin-left: 20%;
-  }
-
-  .content__list {
-    padding-left: 33.457143%;
-    padding-right: 18.2857143%;
-  }
-
-  .listBoxContainer {
-    margin-left: calc(30% - 50px);
-    margin-right: calc(10% - 50px);
   }
 
   .tickImage {

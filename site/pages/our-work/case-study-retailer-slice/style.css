@@ -1,22 +1,6 @@
 @value badgerBlack, badgerWhite, badgerRedOnWhite, linesOnWhite from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
-.caseStudyContainer {
-  max-width: 1100px;
-  justify-content: center;
-  margin: 0 auto;
-  padding-top: 30px;
-}
-
-.caseStudyContent {
-  display: flex;
-  max-width: containerMaxWidth;
-  width: 100%;
-  flex-direction: column-reverse;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
 .imageWrapper {
   display: flex;
   flex: 1;
@@ -24,7 +8,8 @@
   align-items: center;
 }
 
-_:-ms-fullscreen, :root .imageWrapper {
+_:-ms-fullscreen,
+:root .imageWrapper {
   min-height: 20vh;
 }
 
@@ -35,36 +20,10 @@ _:-ms-fullscreen, :root .imageWrapper {
   position: relative;
 }
 
-.imageWrapper img{
+.imageWrapper img {
   display: block;
   width: 100%;
   margin-top: 15px;
-}
-
-.orders {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  text-align: right;
-}
-
-.visits {
-  position: absolute;
-  left: 10px;
-  bottom: 5px;
-}
-
-.imagePercentage {
-  composes: fontM from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
-  color: badgerBlack;
-}
-
-.imageText {
-  composes: fontS from "../../../css/typography/_fonts.css";
-  composes: lightSerif from "../../../css/typography/_fonts.css";
-  color: badgerBlack;
-  font-size: 16px;
 }
 
 .caseStudyTextContainer {
@@ -73,21 +32,21 @@ _:-ms-fullscreen, :root .imageWrapper {
 }
 
 .caseStudyTextContainerHeader {
-  composes: fontM from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
   color: badgerBlack;
   margin-top: 20px;
 }
 
 .description {
-  composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
   color: badgerBlack;
   margin-top: 10px;
 }
 
 .readmore {
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
   border-bottom: 2px solid badgerRedOnWhite;
   text-decoration: none;
   color: badgerBlack;
@@ -105,17 +64,37 @@ _:-ms-fullscreen, :root .imageWrapper {
   padding-bottom: 30px;
 }
 
+.orders {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  text-align: right;
+}
+
+.visits {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
+.imagePercentage {
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  color: badgerBlack;
+}
+
+.imageText {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  font-size: 16px;
+}
+
 @media mediumScreen {
   .caseStudyTextContainer {
     margin-top: 0;
     padding: 0 30px;
     flex-basis: 50%;
-  }
-
-  .caseStudyContent {
-    flex-direction: row-reverse;
-    margin: 0;
-    padding: 0;
   }
 
   .imageWrapper {
@@ -138,17 +117,11 @@ _:-ms-fullscreen, :root .imageWrapper {
     margin-top: 20px;
   }
 
-  .caseStudyContainer {
-    padding: 60px 0 60px;
-    border-bottom: 1px solid linesOnWhite;
-  }
-
   .links {
     text-align: left;
     border: none;
     padding-bottom: 0;
   }
-
   .orders {
     right: 10px;
     top: 10px;
@@ -164,7 +137,6 @@ _:-ms-fullscreen, :root .imageWrapper {
   .caseStudyTextContainer {
     padding-left: 90px;
   }
-
   .orders {
     right: 30px;
     top: 30px;

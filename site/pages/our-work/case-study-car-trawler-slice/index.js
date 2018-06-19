@@ -2,19 +2,18 @@ import React from 'react';
 import styles from './style.css';
 import { CaseStudySliceContainer } from '../case-study/case-study-components';
 
-import bankGif from './images/bank.gif';
+import carTrawlerImage from './images/carTrawler.jpg';
 
-const BankSlice = () => (
-  <CaseStudySliceContainer to="bankCaseStudy" layout="row">
+const CarTrawlerSlice = () => (
+  <CaseStudySliceContainer to="carTrawlerCaseStudy">
     <div className={styles.caseStudyTextContainer}>
       <div>
         <h2 className={styles.caseStudyTextContainerHeader}>
-          Digital transformation in retail banking
+          Complete CMS control for travel brands
         </h2>
         <p className={styles.description}>
-          Discover how we delivered quality digital products to customers quickly, built capability
-          and changed the culture to increase business efficiency in one of the world’s largest
-          banks.
+          Find out how we demonstrated value with a working prototype in one week and delivered a
+          complete CMS control for travel brands within only 5 months.
         </p>
         <div className={styles.links}>
           <p className={styles.readmore}>Read more</p>
@@ -22,9 +21,11 @@ const BankSlice = () => (
       </div>
     </div>
     <div className={styles.imageWrapper}>
-      <img className={styles.projectBigSmallSnapshot} src={bankGif} alt="Bank project snapshot" />
+      <div className={styles.imageContainer}>
+        <img src={carTrawlerImage} alt="Retail giant project snapshot" />
+      </div>
     </div>
   </CaseStudySliceContainer>
 );
 
-export default BankSlice;
+export default CarTrawlerSlice;

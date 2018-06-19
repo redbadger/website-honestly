@@ -1,4 +1,5 @@
-import React from 'react';
+// @flow
+import React, { Fragment } from 'react';
 import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import styles from './style.css';
@@ -10,8 +11,19 @@ import metaImage from './meta-image.jpg';
 import WhatToReadNext from '../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
+import Image from '../../../../components/image';
 import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';
+import {
+  Body,
+  H3,
+  P,
+  PageHeading,
+  Section,
+  SectionBody,
+  SectionHeading,
+  UL,
+} from '../case-study-components';
 
 const cx = classnames.bind(styles);
 
@@ -25,7 +37,7 @@ const social = {
 };
 
 const CaseStudyRetailer = () => (
-  <div className={styles.caseStudy}>
+  <Fragment>
     <Social {...social} />
     <div className={styles.header}>
       <div className={styles.header__container}>
@@ -42,181 +54,197 @@ const CaseStudyRetailer = () => (
         </div>
       </div>
     </div>
-    <div className={styles.content}>
-      <div className={styles.content__wrapper}>
-        <div className={styles.content__mainTitleWrapper}>
-          <h1 className={styles.content__mainTitle}>
-            Next generation platform for retail giant cleared five-year backlog in just eight months
-          </h1>
-        </div>
-        <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>Let&apos;s make things better.</span>
-          Solving high drop-out rates
-        </h2>
-        <p className={styles.content__paragraph}>
-          Our client, one of the largest retailers in the UK was experiencing lost revenue in the
-          millions, due to higher than expected drop-out rates on its online platform.
-        </p>
-        <p className={styles.content__paragraph}>
-          This was because the online experience and functionality were inconsistent. The business
-          was spending huge sums on a piece of software that scraped its website, and then created
-          mobile optimised versions on the fly. This meant that some orders were easier to place
-          than others - depending on what device was being used - and amendments to orders were down
-          as they were incredibly complicated to change once booked.
-        </p>
-        <p className={styles.content__paragraph}>
-          As a retailer dedicated to providing value to customers and seeing its online business
-          growing substantially - including a 100% year-on-year mobile traffic increase - there was
-          an urgent need for the site to work seamlessly. The business needed to build a modern
-          technology platform using cutting-edge, web-based tech to ensure all experiences for
-          customers were intuitive and easy to use, regardless of device. This would also have to
-          factor in processing a catalogue of hundreds-of-thousands of products, delving into
-          complex user journeys, and building a well executed international shipping function.
-        </p>
-        <p className={styles.content__paragraph}>
-          As a business that championed innovation this retailer decided that Red Badger was the
-          right partner to help it make things better.
-        </p>
-        <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>Do the right thing. Do the thing right.</span>
-          Streamlining teams and implementing cutting-edge tech
-        </h2>
-        <h3 className={styles.content__secondaryTitle}>Embracing organisational change</h3>
-        <p className={styles.content__paragraph}>
-          Although change is happening, big companies are still watching the speed at which today’s
-          start-ups move in awe and envy. What start-ups do right is work in a way that puts the
-          customer at the very heart of projects, from technology choices to design and content.
-          They then work in a collaborative and Lean way to get new products out at speeds that seem
-          staggering to large organisations.
-        </p>
-        <p className={styles.content__paragraph}>
-          Red Badger enabled this large retail client to work with the agility of a start-up:
-          re-engineering and revolutionising its workflow with Lean practices and helping it break
-          down department silos by keeping design, development and testing in one place. The
-          benefits of this included:
-        </p>
-        <ul className={styles.content__list}>
-          <li className={styles.content__list__element}>A shorter feedback loop</li>
-          <li className={styles.content__list__element}>
-            Team-wide responsibility for each decision
-          </li>
-          <li className={styles.content__list__element}>Elimination of waste</li>
-          <li className={styles.content__list__element}>
-            Driven determination and focus in order to deliver value to customers, faster
-          </li>
-          <li className={styles.content__list__element}>
-            A sped-up delivery, over four years early
-          </li>
-        </ul>
-      </div>
-      <div>
-        <img src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
-      </div>
-      <div className={styles.content__wrapper}>
-        <h3 className={styles.content__secondaryTitle}>Finding the right tech for the job</h3>
-        <p className={styles.content__paragraph}>
-          Now working in a collaborative and Lean way with Red Badger, it was time to find the right
-          tech for the job.
-        </p>
-        <p className={styles.content__paragraph}>
-          Red Badger worked very closely with the retailer’s engineering team to recommend and
-          introduce an incredibly progressive selection of cutting-edge technology. The new mobile
-          site had to replace the existing screen-scraping solution and improve the customer
-          experience, making the new site adaptable, flexible and able to scale up to the
-          ever-growing demand that the business was seeing.
-        </p>
-        <ContactBox />
-        <p className={styles.content__paragraph}>
-          By using a combination of Node.js and React.js, the team were able to develop an app that
-          delivers a consistent experience across all devices. It also means that the application is
-          fast and responsive, delivering far better usability for customers.
-        </p>
-        <p className={styles.content__paragraph}>
-          On top of this, by moving into the Cloud, using advanced technology such as Docker
-          Containers, AWS ECS and Terraform, the ecommerce store was able to incorporate auto cloud
-          scaling which expands and contracts resource allocation to match customer demand. This is
-          vital in helping to cope with the huge growth in revenue and transaction volumes
-          experienced by the retailer, especially around times of peak demand such as Christmas and
-          Black Friday.
-        </p>
-        <p className={styles.content__paragraph}>
-          Finally, on the tech front, by building Automated Test and Continuous Deployment
-          Pipelines, new features are enabled to be constantly trickled into production, continually
-          delivering new value to customers and substantially reducing risk. Previously, the retail
-          giant released quarterly but can now release multiple times a day with deployments taking
-          minutes, rather than days.
-        </p>
-        <h2 className={styles.content__title}>
-          <span className={styles.content__redTitle}>Creating lasting change.</span>
-          Improving conversion rates by 83%
-        </h2>
-        <p className={styles.content__paragraph}>
-          Successfully using the technologies above has solved long-standing issues and
-          fundamentally influenced the retailer’s next generation platform. Where legacy systems
-          previously ruled, cutting-edge innovation allows its online business to grow unencumbered
-          by technical limitations. The new platform now provides this retailer with the means to
-          scale for years to come.
-        </p>
-        <p className={styles.content__paragraph}>
-          And, by first focusing on delivering the application for mobile only, Red Badger has
-          delivered a completed application across seven countries in just eight months, the results
-          of which are staggering:
-        </p>
-      </div>
-      <Card className={styles.overview}>
-        <ListBox
-          className={styles.listBox}
-          title="What we did"
-          items={[
-            {
-              label: 'Mobile first application across 7 countries',
-            },
-            {
-              label: 'Introduced Lean & Agile practices',
-            },
-            {
-              label: 'Built Continuous Deployment Pipelines',
-            },
-            {
-              label: 'Moved to the Cloud',
-            },
-            {
-              label: 'Introduced automated testing & cutting edge tech',
-            },
-          ]}
-          labelClassName={styles.listBox__leftLabel}
+    <Body>
+      <PageHeading>
+        Next generation platform for retail giant cleared five-year backlog in just eight months
+      </PageHeading>
+      <Section>
+        <SectionHeading
+          subHeading="Let's make things better"
+          heading="Solving high drop-out rates"
         />
-        <ListBox
-          className={styles.listBox}
-          title="Results"
-          items={[
-            {
-              label: 'Uplift in visits',
-              value: '+29%',
-            },
-            {
-              label: 'Increased orders',
-              value: '+54%',
-            },
-            {
-              label: 'Customers amending orders',
-              value: '+443%',
-            },
-            {
-              label: 'Conversion rates including amendments',
-              value: '+83%',
-            },
-            {
-              label: 'Conversion rates excluding amendments',
-              value: '+18%',
-            },
-          ]}
+        <SectionBody>
+          <P>
+            Our client, one of the largest retailers in the UK was experiencing lost revenue in the
+            millions, due to higher than expected drop-out rates on its online platform.
+          </P>
+          <P>
+            This was because the online experience and functionality were inconsistent. The business
+            was spending huge sums on a piece of software that scraped its website, and then created
+            mobile optimised versions on the fly. This meant that some orders were easier to place
+            than others - depending on what device was being used - and amendments to orders were
+            down as they were incredibly complicated to change once booked.
+          </P>
+          <P>
+            As a retailer dedicated to providing value to customers and seeing its online business
+            growing substantially - including a 100% year-on-year mobile traffic increase - there
+            was an urgent need for the site to work seamlessly. The business needed to build a
+            modern technology platform using cutting-edge, web-based tech to ensure all experiences
+            for customers were intuitive and easy to use, regardless of device. This would also have
+            to factor in processing a catalogue of hundreds-of-thousands of products, delving into
+            complex user journeys, and building a well executed international shipping function.
+          </P>
+          <P>
+            As a business that championed innovation this retailer decided that Red Badger was the
+            right partner to help it make things better.
+          </P>
+        </SectionBody>
+      </Section>
+      <Section>
+        <SectionHeading
+          subHeading="Do the right thing. Do the thing right."
+          heading="Streamlining teams and implementing cutting-edge tech"
         />
-      </Card>
-    </div>
+        <SectionBody>
+          <H3>Embracing organisational change</H3>
+          <P>
+            Although change is happening, big companies are still watching the speed at which
+            today’s start-ups move in awe and envy. What start-ups do right is work in a way that
+            puts the customer at the very heart of projects, from technology choices to design and
+            content. They then work in a collaborative and Lean way to get new products out at
+            speeds that seem staggering to large organisations.
+          </P>
+          <P>
+            Red Badger enabled this large retail client to work with the agility of a start-up:
+            re-engineering and revolutionising its workflow with Lean practices and helping it break
+            down department silos by keeping design, development and testing in one place. The
+            benefits of this included:
+          </P>
+          <UL>
+            <li className={styles.content__list__element}>A shorter feedback loop</li>
+            <li className={styles.content__list__element}>
+              Team-wide responsibility for each decision
+            </li>
+            <li className={styles.content__list__element}>Elimination of waste</li>
+            <li className={styles.content__list__element}>
+              Driven determination and focus in order to deliver value to customers, faster
+            </li>
+            <li className={styles.content__list__element}>
+              A sped-up delivery, over four years early
+            </li>
+          </UL>
+        </SectionBody>
+      </Section>
+      <Section>
+        <Image src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
+      </Section>
+      <Section>
+        <SectionBody>
+          <H3>Finding the right tech for the job</H3>
+          <P>
+            Now working in a collaborative and Lean way with Red Badger, it was time to find the
+            right tech for the job.
+          </P>
+          <P>
+            Red Badger worked very closely with the retailer’s engineering team to recommend and
+            introduce an incredibly progressive selection of cutting-edge technology. The new mobile
+            site had to replace the existing screen-scraping solution and improve the customer
+            experience, making the new site adaptable, flexible and able to scale up to the
+            ever-growing demand that the business was seeing.
+          </P>
+        </SectionBody>
+      </Section>
+      <ContactBox />
+      <Section>
+        <SectionBody>
+          <P>
+            By using a combination of Node.js and React.js, the team were able to develop an app
+            that delivers a consistent experience across all devices. It also means that the
+            application is fast and responsive, delivering far better usability for customers.
+          </P>
+          <P>
+            On top of this, by moving into the Cloud, using advanced technology such as Docker
+            Containers, AWS ECS and Terraform, the ecommerce store was able to incorporate auto
+            cloud scaling which expands and contracts resource allocation to match customer demand.
+            This is vital in helping to cope with the huge growth in revenue and transaction volumes
+            experienced by the retailer, especially around times of peak demand such as Christmas
+            and Black Friday.
+          </P>
+          <P>
+            Finally, on the tech front, by building Automated Test and Continuous Deployment
+            Pipelines, new features are enabled to be constantly trickled into production,
+            continually delivering new value to customers and substantially reducing risk.
+            Previously, the retail giant released quarterly but can now release multiple times a day
+            with deployments taking minutes, rather than days.
+          </P>
+        </SectionBody>
+      </Section>
+      <Section>
+        <SectionHeading
+          subHeading="Creating lasting change."
+          heading="Improving conversion rates by 83%"
+        />
+        <SectionBody>
+          <P>
+            Successfully using the technologies above has solved long-standing issues and
+            fundamentally influenced the retailer’s next generation platform. Where legacy systems
+            previously ruled, cutting-edge innovation allows its online business to grow
+            unencumbered by technical limitations. The new platform now provides this retailer with
+            the means to scale for years to come.
+          </P>
+          <P>
+            And, by first focusing on delivering the application for mobile only, Red Badger has
+            delivered a completed application across seven countries in just eight months, the
+            results of which are staggering:
+          </P>
+        </SectionBody>
+      </Section>
+      <Section>
+        <Card className={styles.overview}>
+          <ListBox
+            className={styles.listBox}
+            title="What we did"
+            items={[
+              {
+                label: 'Mobile first application across 7 countries',
+              },
+              {
+                label: 'Introduced Lean & Agile practices',
+              },
+              {
+                label: 'Built Continuous Deployment Pipelines',
+              },
+              {
+                label: 'Moved to the Cloud',
+              },
+              {
+                label: 'Introduced automated testing & cutting edge tech',
+              },
+            ]}
+            labelClassName={styles.listBox__leftLabel}
+          />
+          <ListBox
+            className={styles.listBox}
+            title="Results"
+            items={[
+              {
+                label: 'Uplift in visits',
+                value: '+29%',
+              },
+              {
+                label: 'Increased orders',
+                value: '+54%',
+              },
+              {
+                label: 'Customers amending orders',
+                value: '+443%',
+              },
+              {
+                label: 'Conversion rates including amendments',
+                value: '+83%',
+              },
+              {
+                label: 'Conversion rates excluding amendments',
+                value: '+18%',
+              },
+            ]}
+          />
+        </Card>
+      </Section>
+    </Body>
     <WhatToReadNext currentPage="retailer" />
     <ChecklistContactUs />
-  </div>
+  </Fragment>
 );
 
 export default CaseStudyRetailer;

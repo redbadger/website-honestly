@@ -61,7 +61,9 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ job }) => job.title,
     key: 'job',
     route: 'jobs/{slug}',
-    stateToProps: (state, params = {}) => ({ job: state.jobs[state.jobLookup[params.slug]] }),
+    stateToProps: (state, params = {}) => ({
+      job: state.jobs[state.jobLookup[params.slug]],
+    }),
     gen: state => state.jobs.map(({ slug }) => ({ slug })),
     parentKey: 'joinUs',
   },
@@ -79,7 +81,9 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'events/{year}/{month}/{date}/{slug}',
     description:
       'Upcoming events including WeLove_Tech, React London Community, UXD exchange and more.',
-    stateToProps: (state, params = {}) => ({ event: state.events[state.eventLookup[params.slug]] }),
+    stateToProps: (state, params = {}) => ({
+      event: state.events[state.eventLookup[params.slug]],
+    }),
     gen: state =>
       state.events.map(({ startDateTime: { date, month, year }, slug }) => ({
         date,
@@ -244,6 +248,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
       'Built in 10 weeks, a new site for Camden Market to drive engagement with Londoners and Tourists.',
     key: 'camdenMarketCaseStudy',
     route: 'our-work/case-study/camden-market',
+    parentKey: 'ourWorkPage',
+  },
+  {
+    title: 'Creating complete CMS control',
+    description:
+      'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
+    key: 'carTrawlerCaseStudy',
+    route: 'our-work/case-study/car-trawler',
     parentKey: 'ourWorkPage',
   },
 ];

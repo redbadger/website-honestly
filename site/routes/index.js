@@ -23,17 +23,18 @@ import MeetOurTeam from '../pages/meet-our-team';
 import BadgerProfile from '../pages/badger-profile';
 import Technology from '../pages/technology';
 
-import FMTeaCaseStudy from '../pages/our-work/case-study/fortnum-and-mason-digital-transformation';
-import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
-import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
-import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
-import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
-import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
-import SkyCaseStudy from '../pages/our-work/case-study/sky';
+import BankCaseStudy from '../pages/our-work/case-study/bank';
 import BMWCaseStudy from '../pages/our-work/case-study/bmw';
 import BBCCaseStudy from '../pages/our-work/case-study/bbc';
+import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
+import CarTrawlerCaseStudy from '../pages/our-work/case-study/car-trawler';
+import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
+import FMTeaCaseStudy from '../pages/our-work/case-study/fortnum-and-mason-digital-transformation';
+import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
 import HallerCaseStudy from '../pages/our-work/case-study/haller';
-import BankCaseStudy from '../pages/our-work/case-study/bank';
+import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
+import SkyCaseStudy from '../pages/our-work/case-study/sky';
+import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
 
 const componentMap = {
   aboutUsPage: AboutUsPage,
@@ -44,6 +45,7 @@ const componentMap = {
   bmwCaseStudy: BMWCaseStudy,
   browserNotSupported: BrowserNotSupported,
   camdenMarketCaseStudy: CamdenMarketCaseStudy,
+  carTrawlerCaseStudy: CarTrawlerCaseStudy,
   cookiePolicy: CookiePolicyPage,
   event: EventPage,
   events: Events,
