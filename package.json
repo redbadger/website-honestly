@@ -19,8 +19,6 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.26.0",
     "bugsnag": "^2.3.0",
-    "chai": "^4.1.2",
-    "chai-as-promised": "^7.1.1",
     "classnames": "^2.2.5",
     "copy-webpack-plugin": "^4.3.0",
     "core-js": "^2.5.7",
@@ -63,7 +61,6 @@
     "marked": "^0.3.6",
     "matter-js": "^0.13.0",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.0.2",
     "moment": "^2.18.1",
     "navigation": "^4.0.1",
     "navigation-react": "^2.0.5",
@@ -91,7 +88,6 @@
     "reset-css": "^2.2.0",
     "sanitize-html": "^1.16.3",
     "serverless": "1.0.0-rc.1",
-    "sinon": "^4.5.0",
     "style-loader": "^0.19.1",
     "svg-inline-loader": "^0.8.0",
     "svg-inline-react": "^3.1.0",
@@ -128,7 +124,18 @@
     "analyzeCommits": "simple-commit-message"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "jest": "^23.1.0",
     "prettier": "^1.13.5"
+=======
+    "babel-jest": "^23.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "identity-obj-proxy"
+    }
+>>>>>>> basic jest setup
   }
 }
