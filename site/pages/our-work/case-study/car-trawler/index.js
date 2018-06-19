@@ -1,7 +1,8 @@
 // @flow
-import React, { Fragment } from 'react';
+import React from 'react';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
+import ScrollTracker from '../../../../components/scroll-tracker';
 import {
   PageHeading,
   Body,
@@ -39,7 +40,7 @@ const quoteProps = {
 };
 
 const CarTrawler = () => (
-  <Fragment>
+  <ScrollTracker>
     <Social {...social} />
     <div className={styles.carDayTime}>
       <Image src={carDaytime} />
@@ -140,7 +141,7 @@ const CarTrawler = () => (
     </Body>
     <WhatToReadNext currentPage="carTrawler" />
     <ChecklistContactUs />
-  </Fragment>
+  </ScrollTracker>
 );
 
 export default CarTrawler;

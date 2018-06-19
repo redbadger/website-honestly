@@ -123,3 +123,8 @@ before encrypting it and pushing the the project blackbox for distribution.
 * `GOTOWEBINAR_PASSWORD`
 
   Password used to authenticate to the GoToWebinar API.
+
+* `AMPLITUDE_API_KEY`
+
+  Used to define which project to send Amplitude events to. This is different for
+  dev, staging, and production.

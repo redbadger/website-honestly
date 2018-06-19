@@ -14,6 +14,7 @@ import metaImage from './meta-image.jpg';
 
 import typography from '../../components/component-renderer/styles.css';
 import styles from './style.css';
+import logAmplitudeEvent from '../../tracking/amplitude';
 
 type JobProps = {
   job: {
@@ -67,6 +68,9 @@ export default function Job({ job }: JobProps) {
                   <a
                     className={styles.sidebarApplyLink}
                     href={job.applicationUrl}
+                    onClick={() =>
+                      logAmplitudeEvent('CLICK JOB APPLY', job.title ? { title: job.title } : {})
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                   >
