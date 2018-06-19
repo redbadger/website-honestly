@@ -124,18 +124,14 @@
     "analyzeCommits": "simple-commit-message"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "jest": "^23.1.0",
-    "prettier": "^1.13.5"
-=======
     "babel-jest": "^23.0.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "prettier": "^1.13.5"
   },
   "jest": {
     "moduleNameMapper": {
       "\\.(css)$": "identity-obj-proxy"
     }
->>>>>>> basic jest setup
   }
 }
