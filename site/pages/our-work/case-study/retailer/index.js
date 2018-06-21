@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import classnames from 'classnames/bind';
 import Social from '../../../../components/social';
 import styles from './style.css';
 
@@ -25,6 +26,8 @@ import {
   UL,
 } from '../case-study-components';
 
+const cx = classnames.bind(styles);
+
 const social = {
   title: 'Next generation platform for retail giant | Red Badger',
   description:
@@ -42,79 +45,13 @@ const CaseStudyRetailer = () => (
         <div className={styles.header__imageContainer}>
           <img src={headerImage} alt="Retailer shopping cart" className={styles.header__image} />
         </div>
-      </div>
-      <div className={styles.content}>
-        <div className={styles.content__wrapper}>
-          <div className={styles.content__mainTitleWrapper}>
-            <h1 className={styles.content__mainTitle}>
-              Next generation platform for retail giant cleared five-year backlog in just eight
-              months
-            </h1>
-          </div>
-          <h2 className={styles.content__title}>
-            <span className={styles.content__redTitle}>Let&apos;s make things better.</span>
-            Solving high drop-out rates
-          </h2>
-          <p className={styles.content__paragraph}>
-            Our client, one of the largest retailers in the UK was experiencing lost revenue in the
-            millions, due to higher than expected drop-out rates on its online platform.
-          </p>
-          <p className={styles.content__paragraph}>
-            This was because the online experience and functionality were inconsistent. The business
-            was spending huge sums on a piece of software that scraped its website, and then created
-            mobile optimised versions on the fly. This meant that some orders were easier to place
-            than others - depending on what device was being used - and amendments to orders were
-            down as they were incredibly complicated to change once booked.
-          </p>
-          <p className={styles.content__paragraph}>
-            As a retailer dedicated to providing value to customers and seeing its online business
-            growing substantially - including a 100% year-on-year mobile traffic increase - there
-            was an urgent need for the site to work seamlessly. The business needed to build a
-            modern technology platform using cutting-edge, web-based tech to ensure all experiences
-            for customers were intuitive and easy to use, regardless of device. This would also have
-            to factor in processing a catalogue of hundreds-of-thousands of products, delving into
-            complex user journeys, and building a well executed international shipping function.
-          </p>
-          <p className={styles.content__paragraph}>
-            As a business that championed innovation this retailer decided that Red Badger was the
-            right partner to help it make things better.
-          </p>
-          <h2 className={styles.content__title}>
-            <span className={styles.content__redTitle}>
-              Do the right thing. Do the thing right.
-            </span>
-            Streamlining teams and implementing cutting-edge tech
-          </h2>
-          <h3 className={styles.content__secondaryTitle}>Embracing organisational change</h3>
-          <p className={styles.content__paragraph}>
-            Although change is happening, big companies are still watching the speed at which
-            today’s start-ups move in awe and envy. What start-ups do right is work in a way that
-            puts the customer at the very heart of projects, from technology choices to design and
-            content. They then work in a collaborative and Lean way to get new products out at
-            speeds that seem staggering to large organisations.
-          </p>
-          <p className={styles.content__paragraph}>
-            Red Badger enabled this large retail client to work with the agility of a start-up:
-            re-engineering and revolutionising its workflow with Lean practices and helping it break
-            down department silos by keeping design, development and testing in one place. The
-            benefits of this included:
-          </p>
-          <ul className={styles.content__list}>
-            <li className={styles.content__list__element}>A shorter feedback loop</li>
-            <li className={styles.content__list__element}>
-              Team-wide responsibility for each decision
-            </li>
-            <li className={styles.content__list__element}>Elimination of waste</li>
-            <li className={styles.content__list__element}>
-              Driven determination and focus in order to deliver value to customers, faster
-            </li>
-            <li className={styles.content__list__element}>
-              A sped-up delivery, over four years early
-            </li>
-          </ul>
+        <div className={cx('header__outcome', 'header__outcome--right')}>
+          <span className={styles.header__outcome__percentage}>+54%</span>
+          <h3 className={styles.header__outcome__description}>Increased orders</h3>
         </div>
-        <div>
-          <img src={techGraphImage} className={styles.techGraphImage} alt="Tech graph" />
+        <div className={cx('header__outcome', 'header__outcome--left')}>
+          <span className={styles.header__outcome__percentage}>+29%</span>
+          <h3 className={styles.header__outcome__description}>Uplift in visits</h3>
         </div>
       </div>
     </div>
