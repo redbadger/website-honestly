@@ -8,8 +8,8 @@ class ScrollTracker extends React.Component {
 
   log100ScrollDepth = () => {
     const scrollPercentage = Math.round(
-      (window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight) *
+      ((window.scrollY ? window.scrollY : window.pageYOffset) /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
         100,
     );
 
@@ -21,8 +21,8 @@ class ScrollTracker extends React.Component {
 
   log75ScrollDepth = () => {
     const scrollPercentage = Math.round(
-      (window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight) *
+      ((window.scrollY ? window.scrollY : window.pageYOffset) /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
         100,
     );
 
@@ -35,8 +35,8 @@ class ScrollTracker extends React.Component {
 
   log50ScrollDepth = () => {
     const scrollPercentage = Math.round(
-      (window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight) *
+      ((window.scrollY ? window.scrollY : window.pageYOffset) /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
         100,
     );
 
@@ -49,8 +49,8 @@ class ScrollTracker extends React.Component {
 
   log25ScrollDepth = () => {
     const scrollPercentage = Math.round(
-      (window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight) *
+      ((window.scrollY ? window.scrollY : window.pageYOffset) /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
         100,
     );
 
@@ -63,8 +63,8 @@ class ScrollTracker extends React.Component {
 
   log0ScrollDepth = () => {
     const scrollPercentage = Math.round(
-      (window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight) *
+      ((window.scrollY ? window.scrollY : window.pageYOffset) /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
         100,
     );
 
