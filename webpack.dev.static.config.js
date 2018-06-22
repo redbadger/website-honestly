@@ -14,9 +14,7 @@ const devStaticConfig = webpackMerge(baseServiceConfig, {
     libraryTarget: 'commonjs',
   },
   target: 'node',
-  externals: [
-    './client-digest',
-  ],
+  externals: ['./client-digest'],
 });
 
 const clientConfig = webpackMerge(baseWebConfig, {
@@ -28,9 +26,7 @@ const clientConfig = webpackMerge(baseWebConfig, {
     chunkFilename: 'assets-honestly/[name]-[chunkhash:5].js',
   },
   target: 'web',
-  externals: [
-    './client-digest',
-  ],
+  externals: ['./client-digest'],
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: {

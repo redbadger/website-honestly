@@ -61,7 +61,7 @@ export default class Shapes extends Component<any> {
         x2 = 2 * Math.random() - 1;
         rad = x1 * x1 + x2 * x2;
       } while (rad >= 1 || rad === 0);
-      const c = Math.sqrt(-2 * Math.log(rad) / rad);
+      const c = Math.sqrt((-2 * Math.log(rad)) / rad);
       return x1 * c * 3;
     };
 
