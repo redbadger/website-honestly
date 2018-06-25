@@ -1,3 +1,5 @@
+// @flow
+
 import nock from 'nock';
 
 import * as utils from './http_client';

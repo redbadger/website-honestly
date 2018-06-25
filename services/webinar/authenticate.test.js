@@ -1,3 +1,5 @@
+// @flow
+
 import nock from 'nock';
 import lolex from 'lolex';
 
@@ -53,14 +55,13 @@ describe('webinar-registration-service/authenticate', () => {
 
       expect.assertions(2);
 
-      return expect(credsManager.getApiCredentials())
-        .resolves.toEqual({
+      return credsManager.getApiCredentials().then(data => {
+        expect(data).toEqual({
           accessToken: 'token',
           organizerKey: 'organizer',
-        })
-        .then(() => {
-          expect(credsManager.storedCredsExpirationDate).toEqual(6400000);
         });
+        expect(credsManager.storedCredsExpirationDate).toEqual(6400000);
+      });
     });
 
     it('uses cached creds', () => {
