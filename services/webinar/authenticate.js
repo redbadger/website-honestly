@@ -73,8 +73,11 @@ export default class ApiCredentialsManager {
           };
         }
 
-        throw new Error(`Authentication against GoToWebinar failed. Response was:
-          ${JSON.stringify(responseBody)}`);
+        throw new Error(
+          `Authentication against GoToWebinar failed. Response was: ${JSON.stringify(
+            responseBody,
+          )}`,
+        );
       });
     }
 

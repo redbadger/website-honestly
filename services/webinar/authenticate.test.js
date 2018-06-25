@@ -1,4 +1,3 @@
-import { expect } from 'chai';
 import nock from 'nock';
 import lolex from 'lolex';
 
@@ -42,7 +41,7 @@ describe('webinar-registration-service/authenticate', () => {
   describe('parseExpirationDate', () => {
     it('should parse the specified seconds from now', () => {
       const result = parseExpirationDate('10000');
-      expect(result).to.equal(6400000);
+      expect(result).toEqual(6400000);
     });
   });
 
@@ -52,13 +51,15 @@ describe('webinar-registration-service/authenticate', () => {
 
       const credsManager = new ApiCredentialsManager(authParams);
 
+      expect.assertions(2);
+
       return expect(credsManager.getApiCredentials())
-        .to.eventually.deep.equal({
+        .resolves.toEqual({
           accessToken: 'token',
           organizerKey: 'organizer',
         })
         .then(() => {
-          expect(credsManager.storedCredsExpirationDate).to.equal(6400000);
+          expect(credsManager.storedCredsExpirationDate).toEqual(6400000);
         });
     });
 
@@ -68,7 +69,9 @@ describe('webinar-registration-service/authenticate', () => {
       credsManager.storedOrganizerKey = 'organizer';
       credsManager.storedCredsExpirationDate = Date.now() + 100;
 
-      return expect(credsManager.getApiCredentials()).to.eventually.deep.equal({
+      expect.assertions(1);
+
+      return expect(credsManager.getApiCredentials()).resolves.toEqual({
         accessToken: 'token',
         organizerKey: 'organizer',
       });
@@ -82,7 +85,9 @@ describe('webinar-registration-service/authenticate', () => {
       credsManager.storedOrganizerKey = 'expired_organizer';
       credsManager.storedCredsExpirationDate = Date.now() - 100;
 
-      return expect(credsManager.getApiCredentials()).to.eventually.deep.equal({
+      expect.assertions(1);
+
+      return expect(credsManager.getApiCredentials()).resolves.toEqual({
         accessToken: 'token',
         organizerKey: 'organizer',
       });
@@ -92,8 +97,17 @@ describe('webinar-registration-service/authenticate', () => {
       expectHttpRequest(500);
 
       const credsManager = new ApiCredentialsManager(authParams);
+      const expectedError = new Error(
+        `Authentication against GoToWebinar failed. Response was: ${JSON.stringify({
+          access_token: 'token',
+          organizer_key: 'organizer',
+          expires_in: '10000',
+        })}`,
+      );
 
-      return expect(credsManager.getApiCredentials()).to.be.rejected;
+      expect.assertions(1);
+
+      return expect(credsManager.getApiCredentials()).rejects.toEqual(expectedError);
     });
   });
 
