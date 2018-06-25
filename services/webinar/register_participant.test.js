@@ -1,6 +1,5 @@
 // @flow
 
-import { expect } from 'chai';
 import nock from 'nock';
 
 import { apiBase } from './http_client';
@@ -36,6 +35,8 @@ describe('webinar-registration-service/register_participant', () => {
     it('registers participant', () => {
       expectHttpRequest(201);
 
+      expect.assertions(1);
+
       return expect(
         registerParticipant({
           firstName: 'John',
@@ -45,7 +46,7 @@ describe('webinar-registration-service/register_participant', () => {
           accessToken: 'token',
           organizerKey: '55555',
         }),
-      ).to.eventually.deep.equal({
+      ).resolves.toEqual({
         status: 'APPROVED',
       });
     });
@@ -53,6 +54,8 @@ describe('webinar-registration-service/register_participant', () => {
     it('succeeds even if participant is already registered', () => {
       expectHttpRequest(409);
 
+      expect.assertions(1);
+
       return expect(
         registerParticipant({
           firstName: 'John',
@@ -62,7 +65,7 @@ describe('webinar-registration-service/register_participant', () => {
           accessToken: 'token',
           organizerKey: '55555',
         }),
-      ).to.eventually.deep.equal({
+      ).resolves.toEqual({
         status: 'APPROVED',
       });
     });
@@ -70,6 +73,8 @@ describe('webinar-registration-service/register_participant', () => {
     it('fails for other API error codes', () => {
       expectHttpRequest(500);
 
+      expect.assertions(1);
+
       return expect(
         registerParticipant({
           firstName: 'John',
@@ -79,7 +84,7 @@ describe('webinar-registration-service/register_participant', () => {
           accessToken: 'token',
           organizerKey: '55555',
         }),
-      ).to.eventually.be.rejected;
+      ).rejects.toThrowError();
     });
   });
 });
