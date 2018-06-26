@@ -21,22 +21,24 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'index.html',
-        'what-we-do/index.html',
-        'our-work/index.html',
-        'about-us/index.html',
-        'jobs/index.html',
-        'events/index.html',
-        'our-work/case-study/retailer/index.html',
-        'our-work/case-study/camden-market/index.html',
-        'our-work/case-study/financial-times/index.html',
-        'technology/index.html',
-        '404.html',
-        '50x/index.html',
-        'offline/index.html',
-        'people/index.html',
-      ]);
+      expect(filePaths).toEqual(
+        expect.arrayContaining([
+          'index.html',
+          'what-we-do/index.html',
+          'our-work/index.html',
+          'about-us/index.html',
+          'jobs/index.html',
+          'events/index.html',
+          'our-work/case-study/retailer/index.html',
+          'our-work/case-study/camden-market/index.html',
+          'our-work/case-study/financial-times/index.html',
+          'technology/index.html',
+          '404.html',
+          '50x/index.html',
+          'offline/index.html',
+          'people/index.html',
+        ]),
+      );
     });
 
     it('renders the dynamic jobs pages of the site', () => {
@@ -68,10 +70,12 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'jobs/software-engineer/index.html',
-        'jobs/ux-designer/index.html',
-      ]);
+      expect(filePaths).toEqual(
+        expect.arrayContaining([
+          'jobs/software-engineer/index.html',
+          'jobs/ux-designer/index.html',
+        ]),
+      );
     });
 
     it('renders the dynamic events pages of the site', () => {
@@ -130,10 +134,12 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'events/2017/01/31/upcoming-event/index.html',
-        'events/2016/08/03/designing-in-cross-functional-teams/index.html',
-      ]);
+      expect(filePaths).toEqual(
+        expect.arrayContaining([
+          'events/2017/01/31/upcoming-event/index.html',
+          'events/2016/08/03/designing-in-cross-functional-teams/index.html',
+        ]),
+      );
     });
   });
 });
