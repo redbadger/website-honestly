@@ -2,7 +2,7 @@
 import React from 'react';
 
 import bbcPNG from './PNG/bbc.png';
-import bmwPNG from './PNG/bmw.png';
+import pridePNG from './PNG/pride.png';
 import cartrawlerPNG from './PNG/cartrawler.png';
 import hsbcPNG from './PNG/hsbc.png';
 import selfridgesPNG from './PNG/selfridges.png';
@@ -25,7 +25,7 @@ const CaseStudyCompanyLogos = () => (
       <img alt="The logo of the BBC" src={bbcPNG} />
     </div>
     <div className={styles.caseCompaniesLogo}>
-      <img alt="The logo of BMW" src={bmwPNG} />
+      <img alt="The logo of Pride" src={pridePNG} />
     </div>
     <div className={styles.caseCompaniesLogo}>
       <img alt="The logo of HSBC" src={hsbcPNG} />
