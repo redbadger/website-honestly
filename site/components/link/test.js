@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import Link from '.';
 
@@ -28,7 +27,7 @@ describe('components/link', () => {
     const wrapper = shallow(<Link to="foo">Hello</Link>, {
       context: createMockContext(),
     });
-    expect(wrapper.text()).to.equal('<NavigationLink />');
+    expect(wrapper.text()).toEqual('<NavigationLink />');
   });
 
   it('applies activeCssClass when the specified `to` state is a direct parent of the current state', () => {
@@ -40,7 +39,7 @@ describe('components/link', () => {
         context: createMockContext('foo'),
       },
     );
-    expect(wrapper.hasClass('active')).to.equal(true);
+    expect(wrapper.hasClass('active')).toEqual(true);
   });
 
   it('applies activeCssClass when the specified `to` state is a parent of the current state', () => {
@@ -52,7 +51,7 @@ describe('components/link', () => {
         context: createMockContext('barChild'),
       },
     );
-    expect(wrapper.hasClass('active')).to.equal(true);
+    expect(wrapper.hasClass('active')).toEqual(true);
   });
 
   it('does not apply activeCssClass when the specified `to` state is not a parent of the current state', () => {
@@ -64,7 +63,7 @@ describe('components/link', () => {
         context: createMockContext('bar'),
       },
     );
-    expect(wrapper.hasClass('active')).to.equal(false);
+    expect(wrapper.hasClass('active')).toEqual(false);
   });
 
   describe('#shouldNavigate', () => {
@@ -73,7 +72,7 @@ describe('components/link', () => {
         context: createMockContext('bar'),
       });
 
-      expect(wrapper.instance().shouldNavigate()).to.equal(true);
+      expect(wrapper.instance().shouldNavigate()).toEqual(true);
     });
 
     it('returns false when target is set to _blank', () => {
@@ -86,7 +85,7 @@ describe('components/link', () => {
         },
       );
 
-      expect(wrapper.instance().shouldNavigate()).to.equal(false);
+      expect(wrapper.instance().shouldNavigate()).toEqual(false);
     });
   });
 });
