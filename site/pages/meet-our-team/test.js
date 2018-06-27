@@ -1,26 +1,10 @@
 import React, { Component } from 'react';
-import sinon from 'sinon';
 import PropTypes from 'prop-types';
 import { render } from 'enzyme';
 import createStateNavigator from '../../routes';
 import MeetOurTeam from '.';
 
 describe('site/team-slice', () => {
-  let sandbox;
-  let getEls;
-  let fakeMetaDescription;
-
-  beforeEach(() => {
-    sandbox = sinon.sandbox.create();
-    getEls = sandbox.stub(document, 'getElementsByName');
-    fakeMetaDescription = { setAttribute: sinon.stub() };
-    getEls.withArgs('description').returns([fakeMetaDescription]);
-  });
-
-  afterEach(() => {
-    sandbox.restore();
-  });
-
   class Layout extends Component {
     static propTypes = {
       children: PropTypes.element.isRequired,
@@ -55,8 +39,8 @@ describe('site/team-slice', () => {
     );
 
     const badgersList = teamSlice.find('ul').last();
-    expect(badgersList.text()).to.match(/Alex/);
-    expect(badgersList.text()).to.match(/Are you a potential Badger/);
+    expect(badgersList.text()).toMatch(/Alex/);
+    expect(badgersList.text()).toMatch(/Are you a potential Badger/);
   });
 
   describe('with 20 Badgers, first page of Everyone', () => {
@@ -75,18 +59,21 @@ describe('site/team-slice', () => {
         </Layout>,
       );
 
-      const badgersList = teamSlice.find('ul').last();
+      const badgersList = teamSlice
+        .find('ul')
+        .last()
+        .toString();
       const links = teamSlice.find('a');
       const previousLink = links.slice(-2, -1);
       const nextLink = links.slice(-1);
-      expect(badgersList).to.match(/Alex 0/);
-      expect(badgersList).to.match(/Alex 18/);
-      expect(badgersList).to.match(/Are you a potential Badger/);
-      expect(badgersList).to.not.match(/Alex 19/);
-      expect(previousLink.attr('href')).to.equal(undefined);
-      expect(previousLink.text()).to.equal('Previous page');
-      expect(nextLink.attr('href')).to.equal('/people/category/everyone/page-2');
-      expect(nextLink.text()).to.equal('Next page');
+      expect(badgersList).toMatch(/Alex 0/);
+      expect(badgersList).toMatch(/Alex 18/);
+      expect(badgersList).toMatch(/Are you a potential Badger/);
+      expect(badgersList).not.toMatch(/Alex 19/);
+      expect(previousLink.attr('href')).toEqual(undefined);
+      expect(previousLink.text()).toEqual('Previous page');
+      expect(nextLink.attr('href')).toEqual('/people/category/everyone/page-2');
+      expect(nextLink.text()).toEqual('Next page');
     });
   });
 
@@ -106,17 +93,20 @@ describe('site/team-slice', () => {
         </Layout>,
       );
 
-      const badgersList = teamSlice.find('ul').last();
+      const badgersList = teamSlice
+        .find('ul')
+        .last()
+        .toString();
       const links = teamSlice.find('a');
       const previousLink = links.slice(-2, -1);
       const nextLink = links.slice(-1);
-      expect(badgersList).to.match(/Alex 19/);
-      expect(badgersList).to.not.match(/Alex 18/);
-      expect(badgersList).to.not.match(/Are you a potential Badger/);
-      expect(previousLink.attr('href')).to.equal('/people');
-      expect(previousLink.text()).to.equal('Previous page');
-      expect(nextLink.attr('href')).to.equal(undefined);
-      expect(nextLink.text()).to.equal('Next page');
+      expect(badgersList).toMatch(/Alex 19/);
+      expect(badgersList).not.toMatch(/Alex 18/);
+      expect(badgersList).not.toMatch(/Are you a potential Badger/);
+      expect(previousLink.attr('href')).toEqual('/people');
+      expect(previousLink.text()).toEqual('Previous page');
+      expect(nextLink.attr('href')).toEqual(undefined);
+      expect(nextLink.text()).toEqual('Next page');
     });
   });
 
@@ -144,18 +134,21 @@ describe('site/team-slice', () => {
         </Layout>,
       );
 
-      const badgersList = teamSlice.find('ul').last();
+      const badgersList = teamSlice
+        .find('ul')
+        .last()
+        .toString();
       const links = teamSlice.find('a');
       const previousLink = links.slice(-2, -1);
       const nextLink = links.slice(-1);
-      expect(badgersList).to.match(/Alex 0/);
-      expect(badgersList).to.match(/Alex 18/);
-      expect(badgersList).to.match(/Alex 19/);
-      expect(badgersList).to.not.match(/Are you a potential Badger/);
-      expect(previousLink.attr('href')).to.equal(undefined);
-      expect(previousLink.text()).to.equal('Previous page');
-      expect(nextLink.attr('href')).to.equal(undefined);
-      expect(nextLink.text()).to.equal('Next page');
+      expect(badgersList).toMatch(/Alex 0/);
+      expect(badgersList).toMatch(/Alex 18/);
+      expect(badgersList).toMatch(/Alex 19/);
+      expect(badgersList).not.toMatch(/Are you a potential Badger/);
+      expect(previousLink.attr('href')).toEqual(undefined);
+      expect(previousLink.text()).toEqual('Previous page');
+      expect(nextLink.attr('href')).toEqual(undefined);
+      expect(nextLink.text()).toEqual('Next page');
     });
   });
 });
