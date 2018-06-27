@@ -6,7 +6,7 @@ import BeforeSignUp from '.';
 describe('BeforeSignUp', () => {
   it('sets the initial state correctly', () => {
     const wrapper = shallow(<BeforeSignUp />);
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       email_address: '',
       submitting: false,
     });
@@ -21,7 +21,7 @@ describe('BeforeSignUp', () => {
       },
     };
     wrapper.instance().handleInputChange(event);
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       email_address: '',
       submitting: false,
       exampleName: 'exampleValue',
@@ -31,7 +31,7 @@ describe('BeforeSignUp', () => {
   it('handles componentWillReceiveProps and sets the state correctly', () => {
     const wrapper = shallow(<BeforeSignUp />);
     wrapper.instance().componentWillReceiveProps();
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       email_address: '',
       submitting: false,
     });
@@ -53,7 +53,7 @@ describe('BeforeSignUp', () => {
       });
     const wrapper = shallow(<BeforeSignUp onSubmit={submitFormFunction} />);
     wrapper.instance().handleSubmit();
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       email_address: '',
       submitting: true,
     });
