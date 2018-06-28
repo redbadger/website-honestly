@@ -13,10 +13,14 @@
   color: badgerBlack;
 }
 
+.sloganWrapper {
+  position: relative;
+}
+
 .badgerSlogan {
-  composes: fontXL from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
-  margin-bottom: 30px;
+  composes: fontXL from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  margin-bottom: 85px;
 }
 
 .lastWord {
@@ -46,8 +50,8 @@
 }
 
 .sloganDescription {
-  composes: fontM from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
 }
 
 @media mediumScreen {
@@ -55,9 +59,18 @@
     text-align: left;
     padding: 50px 100px 100px 120px;
   }
+
+  .badgerSlogan {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
 }
 
 @media largeScreen {
+  .sloganWrapper {
+    position: static;
+  }
+
   .arrow svg {
     height: 20px;
   }
