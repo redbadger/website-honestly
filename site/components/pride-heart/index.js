@@ -22,11 +22,11 @@ export default class PrideHeart extends React.Component<Props> {
 
   componentDidUpdate(prevProps: Props) {
     const { direction, play } = this.props;
-    if (direction !== prevProps.direction) {
+    if (direction !== prevProps.direction && play === true) {
       lottie.setDirection(direction === 'forward' ? 1 : -1);
       lottie.play();
     }
-    if (play === true) {
+    if (play !== prevProps.play && play === true) {
       lottie.play();
     }
   }
