@@ -29,6 +29,7 @@ class HomepageTopSlice extends React.Component<{}> {
             onFocus={() => this.animatePrideHeart('forward')}
             onMouseOut={() => this.animatePrideHeart('reverse')}
             onBlur={() => this.animatePrideHeart('reverse')}
+            onTouchStart={() => this.animatePrideHeart('forward')}
           >
             <h1 className={styles.badgerSlogan}>
               Let’s make<br />things better
