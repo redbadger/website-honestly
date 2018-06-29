@@ -12,13 +12,8 @@ beforeEach(() => {
   process.env.SECRET_ENCRYPTION_KEY = 'secretKey';
 });
 
-afterEach(() => {
-  process.env.SECRET_ENCRYPTION_KEY = undefined;
-});
-
 describe('formatSignUpResponse', () => {
   it('returns the correct error message if the status code is 400', () => {
-    process.env.SECRET_ENCRYPTION_KEY = 'key';
     const test = {
       detail: 'This email address has already signed up',
       status: 400,

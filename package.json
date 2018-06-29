@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Red Badger Website. Honestly.",
   "scripts": {
+    "test": "jest",
     "start": "make dev",
     "badger": "node dev/badger.js"
   },

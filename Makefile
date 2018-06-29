@@ -3,9 +3,8 @@
 BIN=./bin
 LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
 WEBPACK=yarn webpack --bail
-MOCHA=yarn mocha
 PRETTIER=yarn prettier --write --parser babylon '{!(dist)/,!(dist)/**/}*.js'
-PRETTIER_FAIL=yarn prettier --list-different --parser babylon '{!(dist)/,!(dist)/**/}*.js'
+PRETTIER_FAIL=yarn prettier --list-different --parser babylon './**/*.js'
 ESLINT=yarn eslint
 SERVERLESS=cd services && ../node_modules/.bin/sls
 WEBPACK_DEV_SERVER=yarn webpack-dev-server
@@ -69,7 +68,7 @@ dev-commit: dist/static-site dist/dev-static/index.js ## Compile the site to HTM
 	@$(PRINT_OK)
 
 test: ## Run the tests
-	FORCE_COLOR=1 $(MOCHA)
+	yarn jest
 	@$(PRINT_OK)
 
 flow: ## Run the type checker
