@@ -83,6 +83,14 @@
   width: 100px;
 }
 
+.prideLogo {
+  width: 88px;
+}
+
+.anLogo {
+  width: 150px;
+}
+
 @media mediumScreen {
   .caseStudyContent {
     flex-direction: row;
@@ -157,10 +165,18 @@
   }
 
   .fnfLogo {
-    height: 64px;
+    width: 64px;
   }
 
   .hsbcLogo {
     width: 120px;
+  }
+
+  .prideLogo {
+    width: 108px;
+  }
+
+  .anLogo {
+    width: 150px;
   }
 }
