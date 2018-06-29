@@ -4,6 +4,7 @@
   "description": "Red Badger Website. Honestly.",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watch",
     "start": "make dev",
     "badger": "node dev/badger.js"
   },

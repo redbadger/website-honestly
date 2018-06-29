@@ -3,6 +3,7 @@
 BIN=./bin
 LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
 WEBPACK=yarn webpack --bail
+JEST=yarn jest
 PRETTIER=yarn prettier --write --parser babylon '{!(dist)/,!(dist)/**/}*.js'
 PRETTIER_FAIL=yarn prettier --list-different --parser babylon './**/*.js'
 ESLINT=yarn eslint
@@ -68,7 +69,7 @@ dev-commit: dist/static-site dist/dev-static/index.js ## Compile the site to HTM
 	@$(PRINT_OK)
 
 test: ## Run the tests
-	yarn jest
+	FORCE_COLOR=1 $(JEST)
 	@$(PRINT_OK)
 
 flow: ## Run the type checker
@@ -84,7 +85,7 @@ prettier-fail: ## Run the prettifier, but fail if changes need to be made
 	@$(PRINT_OK)
 
 test-watch: ## Run the tests and watch for changes
-	$(MOCHA) --reporter min --watch
+	$(JEST) --watch
 	@$(PRINT_OK)
 
 build: dist/services.zip ## Compile project used in CI deploy
