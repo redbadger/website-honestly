@@ -88,6 +88,10 @@ test-watch: ## Run the tests and watch for changes
 	$(JEST) --watch
 	@$(PRINT_OK)
 
+test-coverage: ## Run the tests and coverage for changes
+	$(JEST) --coverage
+	@$(PRINT_OK)
+
 build: dist/services.zip ## Compile project used in CI deploy
 	@$(PRINT_OK)
 
