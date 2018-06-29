@@ -20,7 +20,7 @@ describe('site/blog-slice', () => {
     ];
     const blogSlice = render(<BlogSlice blogPosts={posts} />);
     const className = cheerioSelector(styles.link);
-    expect(blogSlice.find(className).attr('href')).to.equal(
+    expect(blogSlice.find(className).attr('href')).toEqual(
       '//red-badger.com/blog/2016/this-is-a-blog-post',
     );
   });
