@@ -5,7 +5,7 @@ import QAndASlice from '.';
 describe('site/about-us/q-and-a-slice', () => {
   it('should render nothing for empty array', () => {
     const qAndASlice = render(<QAndASlice qAndAs={[]} />);
-    expect(qAndASlice.html()).to.equal(null);
+    expect(qAndASlice.html()).toEqual(null);
   });
 
   it('should render heading 2', () => {
@@ -23,7 +23,7 @@ describe('site/about-us/q-and-a-slice', () => {
       },
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
-    expect(qAndASlice.find('h2').text()).to.equal('Answers to common questions');
+    expect(qAndASlice.find('h2').text()).toEqual('Answers to common questions');
   });
 
   it('should render category list', () => {
@@ -53,7 +53,7 @@ describe('site/about-us/q-and-a-slice', () => {
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
     const categories = qAndASlice.find('ul').first();
-    expect(categories.children().length).to.equal(2);
+    expect(categories.children().length).toEqual(2);
   });
 
   it('should render category heading 3', () => {
@@ -72,7 +72,7 @@ describe('site/about-us/q-and-a-slice', () => {
     ];
     const qAndASlice = render(<QAndASlice qAndAs={qAndAs} />);
     const categories = qAndASlice.find('ul').first();
-    expect(categories.find('h3').text()).to.equal('Company');
+    expect(categories.find('h3').text()).toEqual('Company');
   });
 
   it('should render topic list', () => {
@@ -99,7 +99,7 @@ describe('site/about-us/q-and-a-slice', () => {
       .find('ul')
       .first()
       .find('ul');
-    expect(topics.children().length).to.equal(2);
+    expect(topics.children().length).toEqual(2);
   });
 
   it('should render topic heading 4', () => {
@@ -121,7 +121,7 @@ describe('site/about-us/q-and-a-slice', () => {
       .find('ul')
       .first()
       .find('ul');
-    expect(topics.find('h4').text()).to.equal('What do Red Badger do?');
+    expect(topics.find('h4').text()).toEqual('What do Red Badger do?');
   });
 
   it('should make answer links external', () => {
@@ -143,7 +143,7 @@ describe('site/about-us/q-and-a-slice', () => {
       .find('ul')
       .first()
       .find('ul');
-    expect(topics.find('a').attr('rel')).to.equal('noopener noreferrer');
-    expect(topics.find('a').attr('target')).to.equal('_blank');
+    expect(topics.find('a').attr('rel')).toEqual('noopener noreferrer');
+    expect(topics.find('a').attr('target')).toEqual('_blank');
   });
 });

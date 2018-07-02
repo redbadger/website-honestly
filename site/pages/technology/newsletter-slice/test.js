@@ -8,7 +8,7 @@ import BeforeSignUp from './before-sign-up';
 describe('Newsletter slice', () => {
   it('sets the initial state correctly', () => {
     const wrapper = shallow(<NewsLetter />);
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       newsletterSubmitted: false,
       email_address: '',
       errorMessage: '',
@@ -18,7 +18,7 @@ describe('Newsletter slice', () => {
 
   it('shows pre-signup content if the form has not been submitted yet - default state', () => {
     const wrapper = shallow(<NewsLetter />);
-    expect(wrapper.find(BeforeSignUp)).to.have.length(1);
+    expect(wrapper.find(BeforeSignUp).length).toEqual(1);
   });
 
   it('shows post-signup content if the form has been submitted', () => {
@@ -26,7 +26,7 @@ describe('Newsletter slice', () => {
     wrapper.setState({
       newsletterSubmitted: true,
     });
-    expect(wrapper.find(AfterSignUp)).to.have.length(1);
+    expect(wrapper.find(AfterSignUp).length).toEqual(1);
   });
   it('handles the error correctly when the user does not provide a full name in the second form', () => {
     const wrapper = shallow(<NewsLetter />);
@@ -37,7 +37,7 @@ describe('Newsletter slice', () => {
       name: '',
     };
     wrapper.instance().updateUser(data);
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       newsletterSubmitted: true,
       email_address: 'test@gmail.com',
       errorMessage: 'Please tell us your name',
@@ -64,9 +64,11 @@ describe('Newsletter slice', () => {
     const promise = wrapper
       .instance()
       .submitForm({ email_address: 'jkdjksdhedw239e8h238u@gmail.com' }, 'POST', submitFormFunction);
+
+    expect.assertions(1);
     promise
       .then(() => {
-        expect(wrapper.state()).to.deep.equal({
+        expect(wrapper.state()).toEqual({
           newsletterSubmitted: false,
           email_address: 'jkdjksdhedw239e8h238u@gmail.com',
           errorMessage: 'Example error message',

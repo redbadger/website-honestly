@@ -1,34 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import proxyquire from 'proxyquire';
+import WhatToReadNext from './';
 import styles from './style.css';
-
-proxyquire.noCallThru();
-
-const mockSliceData = {
-  slice1: {
-    name: 'Slice One',
-    tagline: 'Tagline 1',
-    image: 'image.png',
-    link: '/url',
-  },
-  slice2: {
-    name: 'Slice Two',
-    tagline: 'Tagline 2',
-    image: 'image.png',
-    link: '/url',
-  },
-  slice3: {
-    name: 'Slice Three',
-    tagline: 'Tagline 3',
-    image: 'image.png',
-    link: '/url',
-  },
-};
-
-const WhatToReadNext = proxyquire('./index', {
-  './data': mockSliceData,
-}).default;
 
 describe('Case Study - What to read next', () => {
   it('component renders successfully', () => {
@@ -49,25 +22,25 @@ describe('Case Study - What to read next', () => {
     expect(rendered.length === maxNumberSlices);
   });
 
-  it('component renders 1 chosen slice', () => {
-    const wrapper = shallow(<WhatToReadNext linkKeys={['slice1']} />);
+  it('component renders 1 chosen slice first', () => {
+    const wrapper = shallow(<WhatToReadNext linkKeys={['retailer']} />);
     const rendered = wrapper.find('WhatToReadNextSlice');
-    expect(rendered.get(0).props).to.have.property('name', 'Slice One');
-    expect(rendered.get(1).props).to.not.have.property('name', 'Slice One');
-    expect(rendered.get(2).props).to.not.have.property('name', 'Slice One');
+    expect(rendered.get(0).props.name).toEqual('Retailer');
+    expect(rendered.get(1).props.name).not.toEqual('Retailer');
+    expect(rendered.get(2).props.name).not.toEqual('Retailer');
   });
 
   it('component renders 3 chosen slices in given order', () => {
-    const wrapper = shallow(<WhatToReadNext linkKeys={['slice2', 'slice1', 'slice3']} />);
+    const wrapper = shallow(<WhatToReadNext linkKeys={['sky', 'retailer', 'bank']} />);
     const rendered = wrapper.find('WhatToReadNextSlice');
-    expect(rendered.get(0).props).to.have.property('name', 'Slice Two');
-    expect(rendered.get(1).props).to.have.property('name', 'Slice One');
-    expect(rendered.get(2).props).to.have.property('name', 'Slice Three');
+    expect(rendered.get(0).props.name).toEqual('Sky');
+    expect(rendered.get(1).props.name).toEqual('Retailer');
+    expect(rendered.get(2).props.name).toEqual('Financial services');
   });
 
   it('component renders Link to our work page', () => {
     const wrapper = shallow(<WhatToReadNext />);
     const rendered = wrapper.find('Link');
-    expect(rendered.first().props()).to.have.property('to', 'ourWorkPage');
+    expect(rendered.first().props().to).toEqual('ourWorkPage');
   });
 });

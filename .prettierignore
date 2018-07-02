@@ -1,1 +1,4 @@
 *.ejs
+dist/*
+flow-typed/npm/*.js
+coverage/

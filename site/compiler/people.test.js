@@ -38,11 +38,13 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'people/index.html',
-        'people/category/engineering/index.html',
-        'people/category/leadership/index.html',
-      ]);
+      expect(filePaths).toEqual(
+        expect.arrayContaining([
+          'people/index.html',
+          'people/category/engineering/index.html',
+          'people/category/leadership/index.html',
+        ]),
+      );
     });
 
     describe('with engineer, leadership and pm', () => {
@@ -80,12 +82,14 @@ describe('site/compiler', () => {
 
         const filePaths = routes.map(r => r.filePath);
 
-        expect(filePaths).to.include.members([
-          'people/index.html',
-          'people/category/engineering/index.html',
-          'people/category/leadership/index.html',
-          'people/category/pm/index.html',
-        ]);
+        expect(filePaths).toEqual(
+          expect.arrayContaining([
+            'people/index.html',
+            'people/category/engineering/index.html',
+            'people/category/leadership/index.html',
+            'people/category/pm/index.html',
+          ]),
+        );
       });
     });
 
@@ -109,10 +113,9 @@ describe('site/compiler', () => {
 
         const filePaths = routes.map(r => r.filePath);
 
-        expect(filePaths).to.include.members([
-          'people/index.html',
-          'people/category/ux-design/index.html',
-        ]);
+        expect(filePaths).toEqual(
+          expect.arrayContaining(['people/index.html', 'people/category/ux-design/index.html']),
+        );
       });
     });
 
@@ -152,13 +155,15 @@ describe('site/compiler', () => {
 
         const filePaths = routes.map(r => r.filePath);
 
-        expect(filePaths).to.include.members([
-          'people/index.html',
-          'people/category/everyone/page-2/index.html',
-          'people/category/engineering/index.html',
-          'people/category/engineering/page-2/index.html',
-          'people/category/leadership/index.html',
-        ]);
+        expect(filePaths).toEqual(
+          expect.arrayContaining([
+            'people/index.html',
+            'people/category/everyone/page-2/index.html',
+            'people/category/engineering/index.html',
+            'people/category/engineering/page-2/index.html',
+            'people/category/leadership/index.html',
+          ]),
+        );
       });
     });
 
@@ -188,11 +193,13 @@ describe('site/compiler', () => {
 
         const filePaths = routes.map(r => r.filePath);
 
-        expect(filePaths).to.include.members([
-          'people/index.html',
-          'people/category/everyone/page-2/index.html',
-          'people/category/engineering/index.html',
-        ]);
+        expect(filePaths).toEqual(
+          expect.arrayContaining([
+            'people/index.html',
+            'people/category/everyone/page-2/index.html',
+            'people/category/engineering/index.html',
+          ]),
+        );
       });
     });
   });
@@ -223,10 +230,9 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'people/index.html',
-        'people/category/engineering/index.html',
-      ]);
+      expect(filePaths).toEqual(
+        expect.arrayContaining(['people/index.html', 'people/category/engineering/index.html']),
+      );
     });
   });
 
@@ -259,16 +265,18 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'people/index.html',
-        'people/category/everyone/page-2/index.html',
-        'people/category/everyone/page-3/index.html',
-        'people/category/engineering/index.html',
-        'people/category/engineering/page-2/index.html',
-        'people/category/engineering/page-3/index.html',
-        'people/category/leadership/index.html',
-        'people/category/leadership/page-2/index.html',
-      ]);
+      expect(filePaths).toEqual(
+        expect.arrayContaining([
+          'people/index.html',
+          'people/category/everyone/page-2/index.html',
+          'people/category/everyone/page-3/index.html',
+          'people/category/engineering/index.html',
+          'people/category/engineering/page-2/index.html',
+          'people/category/engineering/page-3/index.html',
+          'people/category/leadership/index.html',
+          'people/category/leadership/page-2/index.html',
+        ]),
+      );
     });
   });
 
@@ -310,16 +318,18 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members([
-        'people/index.html',
-        'people/category/everyone/page-2/index.html',
-        'people/category/everyone/page-3/index.html',
-        'people/category/engineering/index.html',
-        'people/category/engineering/page-2/index.html',
-        'people/category/engineering/page-3/index.html',
-        'people/category/leadership/index.html',
-        'people/category/leadership/page-2/index.html',
-      ]);
+      expect(filePaths).toEqual(
+        expect.arrayContaining([
+          'people/index.html',
+          'people/category/everyone/page-2/index.html',
+          'people/category/everyone/page-3/index.html',
+          'people/category/engineering/index.html',
+          'people/category/engineering/page-2/index.html',
+          'people/category/engineering/page-3/index.html',
+          'people/category/leadership/index.html',
+          'people/category/leadership/page-2/index.html',
+        ]),
+      );
     });
   });
 
@@ -345,7 +355,7 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members(['people/alex/index.html']);
+      expect(filePaths).toEqual(expect.arrayContaining(['people/alex/index.html']));
     });
   });
 
@@ -380,7 +390,9 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).to.include.members(['people/alex/index.html', 'people/sari/index.html']);
+      expect(filePaths).toEqual(
+        expect.arrayContaining(['people/alex/index.html', 'people/sari/index.html']),
+      );
     });
   });
 });

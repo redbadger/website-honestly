@@ -5,7 +5,7 @@ import AfterSignUp from '.';
 describe('AfterSignUp', () => {
   it('sets the initial state correctly', () => {
     const wrapper = mount(<AfterSignUp />);
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       name: '',
       company: '',
       role: '',
@@ -22,7 +22,7 @@ describe('AfterSignUp', () => {
       },
     };
     wrapper.instance().handleInputChange(event);
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       submitting: false,
       exampleName: 'exampleValue',
       name: '',
@@ -34,7 +34,7 @@ describe('AfterSignUp', () => {
   it('handles componentWillReceiveProps and sets the state correctly', () => {
     const wrapper = mount(<AfterSignUp />);
     wrapper.instance().componentWillReceiveProps();
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       name: '',
       company: '',
       role: '',
@@ -58,7 +58,7 @@ describe('AfterSignUp', () => {
       });
     const wrapper = mount(<AfterSignUp onSubmit={submitFormFunction} />);
     wrapper.instance().handleSubmit();
-    expect(wrapper.state()).to.deep.equal({
+    expect(wrapper.state()).toEqual({
       submitting: true,
       name: '',
       company: '',

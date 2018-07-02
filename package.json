@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Red Badger Website. Honestly.",
   "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "start": "make dev",
     "badger": "node dev/badger.js"
   },
@@ -19,8 +22,6 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.26.0",
     "bugsnag": "^2.3.0",
-    "chai": "^4.1.2",
-    "chai-as-promised": "^7.1.1",
     "classnames": "^2.2.5",
     "copy-webpack-plugin": "^4.3.0",
     "core-js": "^2.5.7",
@@ -63,7 +64,6 @@
     "marked": "^0.3.6",
     "matter-js": "^0.13.0",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.0.2",
     "moment": "^2.18.1",
     "navigation": "^4.0.1",
     "navigation-react": "^2.0.5",
@@ -91,7 +91,6 @@
     "reset-css": "^2.2.0",
     "sanitize-html": "^1.16.3",
     "serverless": "1.0.0-rc.1",
-    "sinon": "^4.5.0",
     "style-loader": "^0.19.1",
     "svg-inline-loader": "^0.8.0",
     "svg-inline-react": "^3.1.0",
@@ -128,6 +127,24 @@
     "analyzeCommits": "simple-commit-message"
   },
   "devDependencies": {
+    "babel-jest": "^23.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0",
     "prettier": "^1.13.5"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/services/**/*.{js,jsx}",
+      "<rootDir>/site/**/*.{js,jsx}",
+      "<rootDir>/state/**/*.{js,jsx}"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "identity-obj-proxy"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/dev/jest/enzyme-config.js",
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|ejs)$": "<rootDir>/dev/jest/file-transform.js"
+    }
   }
 }

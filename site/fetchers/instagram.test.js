@@ -27,32 +27,32 @@ const generatePost = () => {
 describe('instagram fetcher post validation', () => {
   it('passes with valid post', () => {
     const result = isValidPost(generatePost());
-    expect(result).to.equal(true);
+    expect(result).toEqual(true);
   });
 
   it('fails with null value', () => {
     const result = isValidPost(null);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('fails with empty post', () => {
     const post = {};
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('rfails with no text', () => {
     const post = generatePost();
     post.caption.text = '';
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('fails with no link', () => {
     const post = generatePost();
     post.link = null;
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('fails with no images', () => {
@@ -60,34 +60,34 @@ describe('instagram fetcher post validation', () => {
     post.images = null;
 
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('fails with no thumbnail image', () => {
     const post = generatePost();
     post.images.standard_resolution.url = undefined;
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('fails with no image url', () => {
     const post = generatePost();
     post.images.standard_resolution.url = '';
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('fails with invalid image width', () => {
     const post = generatePost();
     post.images.standard_resolution.width = '-1';
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 
   it('fails with invalid image height', () => {
     const post = generatePost();
     post.images.standard_resolution.height = '-1';
     const result = isValidPost(post);
-    expect(result).to.equal(false);
+    expect(result).toEqual(false);
   });
 });

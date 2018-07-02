@@ -1,6 +1,5 @@
 // @flow
 
-import { expect } from 'chai';
 import nock from 'nock';
 
 import * as utils from './http_client';
@@ -8,7 +7,7 @@ import * as utils from './http_client';
 describe('webinar-registration-service/utils', () => {
   describe('apiBase', () => {
     it('is set to GoToWebinar base API URL', () => {
-      expect(utils.apiBase).to.equal('https://api.getgo.com');
+      expect(utils.apiBase).toEqual('https://api.getgo.com');
     });
   });
 
@@ -23,18 +22,17 @@ describe('webinar-registration-service/utils', () => {
           uid: 123,
         });
 
-      return expect(
-        utils.fetchWithBody('https://example.com/users', {
-          method: 'POST',
-          body: JSON.stringify({
-            username: 'pgte',
-            email: 'pedro.teixeira@gmail.com',
-          }),
+      const request = utils.fetchWithBody('https://example.com/users', {
+        method: 'POST',
+        body: JSON.stringify({
+          username: 'pgte',
+          email: 'pedro.teixeira@gmail.com',
         }),
-      ).to.eventually.nested.include({
-        'response.status': 201,
-        'responseBody.uid': 123,
       });
+
+      expect.assertions(1);
+
+      return request.then(data => expect(data.response.status).toEqual(201));
     });
   });
 });

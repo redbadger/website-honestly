@@ -1,3 +1,0 @@
---require babel-register
---require ./test/mocha-env.js
-./{,!(node_modules)/**/}*test.js

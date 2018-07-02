@@ -1,5 +1,4 @@
 import nock from 'nock';
-import { assert } from 'chai';
 
 import fetchRetry from './fetch-retry';
 
@@ -11,10 +10,11 @@ describe('fetch-retry', () => {
       nock(expectedUrl)
         .get(/.*/)
         .reply(200, '"Hello World"');
+      expect.assertions(1);
       fetchRetry(expectedUrl)
         .then(response => response.json())
         .then(data => {
-          expect(data).to.equal('Hello World');
+          expect(data).toEqual('Hello World');
           done();
         });
     });
@@ -31,10 +31,11 @@ describe('fetch-retry', () => {
           .reply(200, '"Hello World"');
       });
       it('returns the right value', done => {
+        expect.assertions(1);
         fetchRetry(expectedUrl)
           .then(response => response.json())
           .then(data => {
-            expect(data).to.equal('Hello World');
+            expect(data).toEqual('Hello World');
             done();
           });
       });
@@ -47,10 +48,11 @@ describe('fetch-retry', () => {
           .reply(500, '"Oh noooo"');
       });
       it('returns the right value', done => {
+        expect.assertions(1);
         fetchRetry(expectedUrl, { retryDelay: 1 })
           .then(response => response.json())
           .catch(error => {
-            assert.isDefined(error);
+            expect(error).toBeDefined();
             done();
           });
       });

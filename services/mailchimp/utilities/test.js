@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+// @flow
 
 import {
   formatSignUpResponse,
@@ -7,6 +7,10 @@ import {
   decryptText,
   formatFormInput,
 } from './index';
+
+beforeEach(() => {
+  process.env.SECRET_ENCRYPTION_KEY = 'secretKey';
+});
 
 describe('formatSignUpResponse', () => {
   it('returns the correct error message if the status code is 400', () => {
@@ -21,13 +25,14 @@ describe('formatSignUpResponse', () => {
     };
 
     const result = formatSignUpResponse(test);
-    expect(result).to.deep.equal({
+    expect(result).toEqual({
       newsletterSubmitted: false,
       errorMessage: test.detail,
       email_address: encryptText('test@gmail.com'),
       updatedFormSubmitted: false,
     });
   });
+
   it('returns the correct values if there are no erros and a new account has been created', () => {
     const test = {
       detail: 'This email address has already signed up',
@@ -40,7 +45,7 @@ describe('formatSignUpResponse', () => {
     };
 
     const result = formatSignUpResponse(test);
-    expect(result).to.deep.equal({
+    expect(result).toEqual({
       newsletterSubmitted: true,
       errorMessage: '',
       email_address: encryptText('test@gmail.com'),
@@ -62,7 +67,7 @@ describe('formatUpdateResponse', () => {
     };
 
     const result = formatUpdateResponse(test);
-    expect(result).to.deep.equal({
+    expect(result).toEqual({
       newsletterSubmitted: false,
       errorMessage: '',
       email_address: 'test@gmail.com',
@@ -75,14 +80,14 @@ describe('encryptText and decryptText', () => {
   it('does not return the same text that was passed in', () => {
     const plainText = 'example text';
     const result = encryptText(plainText);
-    expect(result).to.not.equal(plainText);
+    expect(result).not.toEqual(plainText);
   });
 
   it('returned the original plain text when decrypted', () => {
     const plainText = 'example text';
     const encryptedText = encryptText(plainText);
     const decryptedText = decryptText(encryptedText);
-    expect(decryptedText).to.equal(plainText);
+    expect(decryptedText).toEqual(plainText);
   });
 });
 
@@ -99,7 +104,7 @@ describe('formatFormInput', () => {
       },
     };
     const result = formatFormInput(event, false, 'pending');
-    expect(result).to.deep.equal({
+    expect(result).toEqual({
       email_address: 'test@gmail.com',
       status: 'pending',
       interests: {},
@@ -123,7 +128,7 @@ describe('formatFormInput', () => {
       },
     };
     const result = formatFormInput(event, true, 'pending');
-    expect(result).to.deep.equal({
+    expect(result).toEqual({
       email_address: 'test@gmail.com',
       status: 'pending',
       interests: {},
@@ -147,7 +152,7 @@ describe('formatFormInput', () => {
       },
     };
     const result = formatFormInput(event, false);
-    expect(result).to.deep.equal({
+    expect(result).toEqual({
       email_address: 'test@gmail.com',
       interests: {},
       merge_fields: {
