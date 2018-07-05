@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HR renders a red HR 1`] = `
+<hr
+  className="hr red horizontal-line"
+/>
+`;
