@@ -30,10 +30,16 @@ class HomepageTopSlice extends React.Component<{}> {
             onMouseOut={() => this.animatePrideHeart('reverse')}
             onBlur={() => this.animatePrideHeart('reverse')}
             onTouchStart={() => this.animatePrideHeart('forward')}
+            onClick={() => {
+              window.location =
+                'https://lp.red-badger.com/why-react-native-was-the-solution-for-pride-in-londons-2018-app';
+            }}
+            role="link"
+            tabIndex="0"
           >
-            <h1 className={styles.badgerSlogan}>
-              Let’s make<br />things better
-            </h1>
+            <h1 className={styles.badgerSlogan}>Let’s make</h1>
+            <br />
+            <h1 className={styles.badgerSlogan}>things better</h1>
             <PrideHeart play={animatePrideHeart} direction={animationDirection} />
           </div>
           <p className={cx('sloganDescription', 'fadeInUp')}>
