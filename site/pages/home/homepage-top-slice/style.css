@@ -15,12 +15,19 @@
 
 .sloganWrapper {
   position: relative;
+  margin-bottom: 83px;
+  cursor: pointer;
 }
 
 .badgerSlogan {
   composes: fontXL from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
-  margin-bottom: 85px;
+  display: inline-block;
+  border-bottom: 2px solid badgerWhite;
+}
+
+.sloganWrapper:hover h1 {
+  border-bottom: 2px solid badgerRed;
 }
 
 .lastWord {
@@ -60,17 +67,16 @@
     padding: 50px 100px 100px 120px;
   }
 
-  .badgerSlogan {
+  .sloganWrapper {
     margin-bottom: 30px;
+  }
+
+  .badgerSlogan {
     display: inline-block;
   }
 }
 
 @media largeScreen {
-  .sloganWrapper {
-    position: static;
-  }
-
   .arrow svg {
     height: 20px;
   }
