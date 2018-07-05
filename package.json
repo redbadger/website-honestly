@@ -128,6 +128,7 @@
   },
   "devDependencies": {
     "babel-jest": "^23.0.1",
+    "enzyme-to-json": "^3.3.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.1.0",
     "prettier": "^1.13.5"
@@ -142,6 +143,9 @@
       "\\.(css)$": "identity-obj-proxy"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/dev/jest/enzyme-config.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "transform": {
       "^.+\\.(js|jsx)$": "babel-jest",
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|ejs)$": "<rootDir>/dev/jest/file-transform.js"
