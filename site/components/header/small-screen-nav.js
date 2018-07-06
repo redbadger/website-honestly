@@ -1,5 +1,4 @@
 // @flow
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 
 import React from 'react';
 
@@ -79,6 +78,7 @@ export default class SmallScreenNav extends React.Component<any, State> {
         />
 
         <div className={styles.overlay}>
+          {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
           <div className={styles.smallScreenNavMargin} onClick={this.closeMenu} />
           <div
             ref={c => {

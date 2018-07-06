@@ -33,7 +33,6 @@ const Footer = () => (
       <div className={styles.footerSections}>
         <nav className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>
-            {/* eslint-disable jsx-a11y/no-static-element-interactions */}
             <li>
               <Link to="homePage">Home</Link>
             </li>
@@ -52,7 +51,6 @@ const Footer = () => (
             <li>
               <Link to="joinUs">Jobs</Link>
             </li>
-            {/* eslint-enable jsx-a11y/no-static-element-interactions */}
           </ul>
         </nav>
 

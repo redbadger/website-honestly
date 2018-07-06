@@ -1,5 +1,4 @@
 // @flow
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
