@@ -3,7 +3,6 @@
 
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
-import ReactGA from 'react-ga';
 
 import Link from '../link';
 import SmallScreenNav from './small-screen-nav';
@@ -11,64 +10,55 @@ import SmallScreenNav from './small-screen-nav';
 import styles from './style.css';
 import logo from './logo.svg';
 
-const trackAnalytics = title => () =>
-  ReactGA.event({
-    category: 'DesktopHeaderNavigation',
-    action: title,
-    label: `From: ${window.location.pathname}`,
-  });
-
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
       <Link to="homePage" title="Home" className={styles.logo}>
-        <InlineSVG src={logo} title="Red Badger logo" onClick={trackAnalytics('Home')} />
+        <InlineSVG src={logo} title="Red Badger logo" />
       </Link>
 
       <nav className={styles.mediumScreenNavContainer}>
         <ul role="listbox" className={styles.mediumScreenNav}>
           <li className={styles.navItemWithChild}>
             <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('What we do')}>What we do</span>
+              What we do
             </Link>
             <ul className={styles.mediumScreenChildList}>
               <li>
                 <Link to="technology" activeCssClass={styles.activeNavLink}>
-                  <span onClick={trackAnalytics('Technology')}>Technology</span>
+                  Technology
                 </Link>
               </li>
               <li>
                 <Link to="ourWorkPage" activeCssClass={styles.activeNavLink}>
-                  <span onClick={trackAnalytics('Our work')}>Our work</span>
+                  Our work
                 </Link>
               </li>
             </ul>
           </li>
           <li className={styles.navItemWithChild}>
             <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('About us')}>About us</span>
+              About us
             </Link>
             <ul className={styles.mediumScreenChildList}>
               <li>
                 <Link to="badgers" activeCssClass={styles.activeNavLink}>
-                  <span onClick={trackAnalytics('Our team')}>Our team</span>
+                  Our team
                 </Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/blog">
-              <span onClick={trackAnalytics('Blog')}>Blog</span>
-            </a>
+            <a href="/blog">Blog</a>
           </li>
           <li>
             <Link to="events" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('Events')}>Events</span>
+              Events
             </Link>
           </li>
           <li>
             <Link to="joinUs" activeCssClass={styles.activeNavLink}>
-              <span onClick={trackAnalytics('Jobs')}>Jobs</span>
+              Jobs
             </Link>
           </li>
         </ul>

@@ -1,15 +1,7 @@
 import React from 'react';
-import ReactGA from 'react-ga';
 import styles from './style.css';
 import Principle from './principle';
 import Link from '../../../components/link';
-
-const trackAnalytics = title => () =>
-  ReactGA.event({
-    category: 'AboutUs-JoinUs',
-    action: title,
-    label: `From: ${window.location.pathname}`,
-  });
 
 export default function Principles() {
   return (
@@ -51,9 +43,7 @@ export default function Principles() {
             Meet our team
           </Link>
           <Link to="joinUs" className={styles.link}>
-            {/* eslint-disable jsx-a11y/no-static-element-interactions */}
-            <span onClick={trackAnalytics('Join Us')}>Join us</span>
-            {/* eslint-enable jsx-a11y/no-static-element-interactions */}
+            Join us
           </Link>
         </div>
       </div>

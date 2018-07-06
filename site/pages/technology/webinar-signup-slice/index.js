@@ -3,19 +3,13 @@
 /* eslint-disable react/no-danger */
 
 import React from 'react';
-import ReactGA from 'react-ga';
 import styles from '../style.css';
 
 import hubspotButtons from '../hubspot-buttons';
 import logAmplitudeEvent from '../../../tracking/amplitude';
 
-const trackAnalytics = title => () => {
+const trackAnalytics = () => () => {
   logAmplitudeEvent('CLICK WATCH WEBINAR');
-  ReactGA.event({
-    category: 'TechnologyPage',
-    action: title,
-    label: `From: ${window.location.pathname}`,
-  });
 };
 
 export default () => (
@@ -26,7 +20,7 @@ export default () => (
       </h2>
       <div
         className={`${styles.hubspotBtn} ${styles.webinarBtnWrapper}`}
-        onClick={trackAnalytics('Webinar-technology page -button')}
+        onClick={trackAnalytics()}
         dangerouslySetInnerHTML={hubspotButtons.webinar}
       />
     </div>
