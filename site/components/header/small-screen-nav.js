@@ -1,18 +1,9 @@
 // @flow
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 
 import React from 'react';
-import ReactGA from 'react-ga';
 
 import styles from './style.css';
 import Link from '../link';
-
-const trackAnalytics = title => () =>
-  ReactGA.event({
-    category: 'MobileSideNavigation',
-    action: title,
-    label: `From: ${window.location.pathname}`,
-  });
 
 type State = {
   navOpen: boolean,
@@ -87,6 +78,7 @@ export default class SmallScreenNav extends React.Component<any, State> {
         />
 
         <div className={styles.overlay}>
+          {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
           <div className={styles.smallScreenNavMargin} onClick={this.closeMenu} />
           <div
             ref={c => {
@@ -104,51 +96,51 @@ export default class SmallScreenNav extends React.Component<any, State> {
               <ul role="listbox" className={styles.smallScreenNav}>
                 <li>
                   <Link tabIndex={navTabIndex} to="homePage" navigating={this.closeMenu}>
-                    <span onClick={trackAnalytics('Home')}>Home</span>
+                    Home
                   </Link>
                 </li>
                 <li>
                   <Link tabIndex={navTabIndex} to="whatWeDoPage" navigating={this.closeMenu}>
-                    <span onClick={trackAnalytics('What we do')}>What we do</span>
+                    What we do
                   </Link>
                   <ul className={styles.childList}>
                     <li>
                       <Link tabIndex={navTabIndex} to="technology" navigating={this.closeMenu}>
-                        <span onClick={trackAnalytics('Technology')}>Technology</span>
+                        Technology
                       </Link>
                     </li>
                     <li>
                       <Link tabIndex={navTabIndex} to="ourWorkPage" navigating={this.closeMenu}>
-                        <span onClick={trackAnalytics('Our work')}>Our work</span>
+                        Our work
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
                   <Link tabIndex={navTabIndex} to="aboutUsPage" navigating={this.closeMenu}>
-                    <span onClick={trackAnalytics('About us')}>About us</span>
+                    About us
                   </Link>
                   <ul className={styles.childList}>
                     <li>
                       <Link tabIndex={navTabIndex} to="badgers" navigating={this.closeMenu}>
-                        <span onClick={trackAnalytics('Our team')}>Our team</span>
+                        Our team
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
                   <a tabIndex={navTabIndex} href="/blog">
-                    <span onClick={trackAnalytics('Blog')}>Blog</span>
+                    Blog
                   </a>
                 </li>
                 <li>
                   <Link tabIndex={navTabIndex} to="events" navigating={this.closeMenu}>
-                    <span onClick={trackAnalytics('Events')}>Events</span>
+                    Events
                   </Link>
                 </li>
                 <li>
                   <Link tabIndex={navTabIndex} to="joinUs" navigating={this.closeMenu}>
-                    <span onClick={trackAnalytics('Jobs')}>Jobs</span>
+                    Jobs
                   </Link>
                 </li>
                 <li>
@@ -158,7 +150,7 @@ export default class SmallScreenNav extends React.Component<any, State> {
                     navigationData={{ contactUs: true }}
                     navigating={this.closeMenu}
                   >
-                    <span onClick={trackAnalytics('Contact us - HomePage')}>Contact us</span>
+                    Contact us
                   </Link>
                 </li>
               </ul>

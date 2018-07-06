@@ -1,17 +1,9 @@
 import React from 'react';
-import ReactGA from 'react-ga';
 import Modal from 'react-modal';
 import styles from './style.css';
 import desktopBanner from './images/events-desktop-banner.jpg';
 import tabletBanner from './images/events-tablet-banner.jpg';
 import mobileBanner from './images/events-mobile-banner.jpg';
-
-const trackAnalytics = title => () =>
-  ReactGA.event({
-    category: 'EventsPageBanner',
-    action: title,
-    label: `From: ${window.location.pathname}`,
-  });
 
 const bannerAltText = 'Are you bold with technology? Join our webinar';
 
@@ -32,7 +24,6 @@ export default class EventsBannerModal extends React.Component {
   }
 
   openModal() {
-    trackAnalytics('Webinar-events page -banner');
     this.setState({ modalIsOpen: true });
     document.body.style.overflow = 'hidden';
   }

@@ -1,6 +1,5 @@
 // @flow
 import InlineSVG from 'svg-inline-react';
-import ReactGA from 'react-ga';
 import classnames from 'classnames/bind';
 import React from 'react';
 import styles from './style.css';
@@ -22,13 +21,6 @@ import mapPNG from './PNG/map.png';
 
 const cx = classnames.bind(styles);
 
-const trackAnalytics = title => () =>
-  ReactGA.event({
-    category: 'FooterNavigation',
-    action: title,
-    label: `From: ${window.location.pathname}`,
-  });
-
 const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
@@ -41,38 +33,24 @@ const Footer = () => (
       <div className={styles.footerSections}>
         <nav className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>
-            {/* eslint-disable jsx-a11y/no-static-element-interactions */}
             <li>
-              <Link to="homePage">
-                <span onClick={trackAnalytics('Home')}>Home</span>
-              </Link>
+              <Link to="homePage">Home</Link>
             </li>
             <li>
-              <Link to="aboutUsPage">
-                <span onClick={trackAnalytics('About us')}>About us</span>
-              </Link>
+              <Link to="aboutUsPage">About us</Link>
             </li>
             <li>
-              <Link to="whatWeDoPage">
-                <span onClick={trackAnalytics('What we do')}>What we do</span>
-              </Link>
+              <Link to="whatWeDoPage">What we do</Link>
             </li>
             <li>
-              <a href="/blog">
-                <span onClick={trackAnalytics('Blog')}>Blog</span>
-              </a>
+              <a href="/blog">Blog</a>
             </li>
             <li>
-              <Link to="events">
-                <span onClick={trackAnalytics('Events')}>Events</span>
-              </Link>
+              <Link to="events">Events</Link>
             </li>
             <li>
-              <Link to="joinUs">
-                <span onClick={trackAnalytics('Jobs')}>Jobs</span>
-              </Link>
+              <Link to="joinUs">Jobs</Link>
             </li>
-            {/* eslint-enable jsx-a11y/no-static-element-interactions */}
           </ul>
         </nav>
 

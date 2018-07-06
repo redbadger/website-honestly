@@ -6,7 +6,6 @@ import 'core-js/es6/array';
 import 'core-js/es6/symbol';
 
 import ReactDOM from 'react-dom';
-import ReactGA from 'react-ga';
 
 import createStateNavigator from '../../site/routes';
 
@@ -44,11 +43,6 @@ export function makeApp({ element, state }) {
     });
   }
 
-  // init Google Analytics tracker and publish a page view at '/'
-  const { GOOGLE_ANALYTICS_TRACKER } = process.env;
-  ReactGA.initialize(GOOGLE_ANALYTICS_TRACKER);
-  ReactGA.pageview('/');
-
   const stateNavigator = createStateNavigator();
   stateNavigator.onNavigate((oldRoute, route, params) => {
     const props = route.stateToProps && route.stateToProps(state, params);
@@ -57,11 +51,7 @@ export function makeApp({ element, state }) {
     stateNavigator.stateContext.title = title;
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
-
-    // Update GA on user navigation event
-    const page = `/${route.route}`;
-    ReactGA.set({ page, title });
-    ReactGA.pageview(page);
   });
+
   return stateNavigator;
 }
