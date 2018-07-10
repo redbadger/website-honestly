@@ -1,25 +1,35 @@
 // @flow
+
 import React from 'react';
 import { shallow } from 'enzyme';
+import { StateNavigator } from 'navigation';
+
 import Link from '.';
 
-function createMockContext(parentKey) {
-  return {
-    stateNavigator: {
-      stateContext: {
-        state: {
-          parentKey,
-        },
-      },
-      states: {
-        foo: {},
-        bar: {},
-        barChild: {
-          parentKey: 'bar',
-        },
-      },
+function MockNavigator(parentKey) {
+  // The constructor is checked in prop-types,
+  // so we use it as base and then mutate
+  const child = new StateNavigator();
+
+  child.stateContext = {
+    state: {
+      parentKey,
     },
   };
+
+  child.states = {
+    foo: {},
+    bar: {},
+    barChild: {
+      parentKey: 'bar',
+    },
+  };
+
+  return child;
+}
+
+function createMockContext(parentKey) {
+  return { stateNavigator: MockNavigator(parentKey) };
 }
 
 describe('components/link', () => {
