@@ -1,6 +1,8 @@
 // @flow
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
+import ReactGA from 'react-ga';
+
 import styles from './style.css';
 import logAmplitudeEvent from '../../tracking/amplitude';
 
@@ -10,6 +12,11 @@ const mailToURL = 'mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20w
 
 const trackAnalytics = () => () => {
   logAmplitudeEvent('CLICK CONTACT US', { type: 'email', subject: 'help' });
+  ReactGA.event({
+    category: 'Send an email button',
+    action: 'click',
+    label: 'Help/Support',
+  });
 };
 
 type State = {
