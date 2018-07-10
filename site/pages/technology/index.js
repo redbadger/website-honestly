@@ -9,7 +9,7 @@ import WebinarSignupSlice from './webinar-signup-slice';
 import { TechChecklist } from '../../slices/checklist-contact-us-slice';
 
 import { WhiteSlice, GreenSlice } from '../../components/slice';
-import { RoundtableHubspotButton } from '../../components/buttons';
+import { HubspotButton } from '../../components/buttons';
 import { P, H1, H2, H3 } from '../../components/text';
 import Image from '../../components/image';
 import Social from '../../components/social';
@@ -68,7 +68,7 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
             </P>
           </div>
           <div className={styles.hubspotButtonWrapper}>
-            <RoundtableHubspotButton
+            <HubspotButton
               analyticsTitle="RoundtablePDFLink"
               analyticsCategory="TechnologyPage"
               hubspotTitle="roundtableApril2018"

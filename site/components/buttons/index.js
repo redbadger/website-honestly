@@ -8,10 +8,10 @@ import HubspotButtons from './hubspot-buttons';
 type HubspotButtonProps = {
   className?: string,
   hubspotTitle: string,
-  gaTracking: () => {},
+  gaTracking: Function,
 };
 
-const RoundtableHubspotButton = ({ className, hubspotTitle, gaTracking }: HubspotButtonProps) => (
+const HubspotButton = ({ className, hubspotTitle, gaTracking }: HubspotButtonProps) => (
   <div
     className={`${styles.hubspotBtn} ${className || ''}`}
     onClick={gaTracking}
@@ -19,4 +19,4 @@ const RoundtableHubspotButton = ({ className, hubspotTitle, gaTracking }: Hubspo
   />
 );
 
-export { RoundtableHubspotButton };
+export { HubspotButton };
