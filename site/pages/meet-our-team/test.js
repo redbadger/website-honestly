@@ -32,7 +32,7 @@ describe('site/team-slice', () => {
         <MeetOurTeam
           categories={[]}
           category="everyone"
-          badgers={[{ firstName: 'Alex' }]}
+          badgers={[{ firstName: 'Alex', slug: 'alex' }]}
           page={1}
         />
       </Layout>,
@@ -50,7 +50,7 @@ describe('site/team-slice', () => {
 
       const badgers = [];
       for (let i = 0; i < 20; i += 1) {
-        badgers.push({ firstName: 'Alex ' + i });
+        badgers.push({ firstName: 'Alex ' + i, slug: i });
       }
 
       const teamSlice = render(
@@ -84,7 +84,7 @@ describe('site/team-slice', () => {
 
       const badgers = [];
       for (let i = 0; i < 20; i += 1) {
-        badgers.push({ firstName: 'Alex ' + i });
+        badgers.push({ firstName: 'Alex ' + i, slug: i });
       }
 
       const teamSlice = render(
@@ -119,6 +119,7 @@ describe('site/team-slice', () => {
       for (let i = 0; i < 20; i += 1) {
         badgers.push({
           firstName: 'Alex ' + i,
+          slug: i,
           categories: [{ name: 'Engineering', slug: 'engineering' }],
         });
       }
