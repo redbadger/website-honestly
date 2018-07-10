@@ -46,7 +46,6 @@ export function makeApp({ element, state }) {
 
   const { GOOGLE_ANALYTICS_TRACKER } = process.env;
   ReactGA.initialize(GOOGLE_ANALYTICS_TRACKER);
-  ReactGA.pageview('/');
 
   const stateNavigator = createStateNavigator();
   stateNavigator.onNavigate((oldRoute, route, params) => {
