@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Fragment } from 'react';
+import ReactGA from 'react-ga';
 import styles from './style.css';
 
 import BlogSlice from './blog-slice';
@@ -23,6 +24,13 @@ type Props = {
   triedAndTestedBlogPosts: Array<Object>,
   growingTrendsBlogPosts: Array<Object>,
 };
+
+const trackPDFReportClicks = () =>
+  ReactGA.event({
+    category: 'Read PDF Report button',
+    action: 'click',
+    label: 'Technology',
+  });
 
 const social = {
   title: 'Technology | Red Badger',
@@ -65,6 +73,7 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
               analyticsCategory="TechnologyPage"
               hubspotTitle="roundtableApril2018"
               className={styles.readPdfReportWrapper}
+              gaTracking={trackPDFReportClicks}
             />
           </div>
         </div>
