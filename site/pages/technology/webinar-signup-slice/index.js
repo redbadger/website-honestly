@@ -8,7 +8,7 @@ import styles from '../style.css';
 import hubspotButtons from '../hubspot-buttons';
 import logAmplitudeEvent from '../../../tracking/amplitude';
 
-const trackAnalytics = () => () => {
+const trackAnalytics = () => {
   logAmplitudeEvent('CLICK WATCH WEBINAR');
 };
 
@@ -20,7 +20,7 @@ export default () => (
       </h2>
       <div
         className={`${styles.hubspotBtn} ${styles.webinarBtnWrapper}`}
-        onClick={trackAnalytics()}
+        onClick={trackAnalytics}
         dangerouslySetInnerHTML={hubspotButtons.webinar}
       />
     </div>

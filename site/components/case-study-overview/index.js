@@ -20,7 +20,7 @@ const trackStatClicks = company => () =>
     label: 'Case Study',
   });
 
-const trackSeeMoreWorkClicks = () => () =>
+const trackSeeMoreWorkClicks = () =>
   ReactGA.event({
     category: `See more of our work`,
     action: 'click',

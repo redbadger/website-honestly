@@ -19,7 +19,7 @@ type TechListItemProps = {
   imgSrc: string,
 };
 
-const trackTechLogosClicks = () => () =>
+const trackTechLogosClicks = () =>
   ReactGA.event({
     category: 'Tech Icons',
     action: 'click',

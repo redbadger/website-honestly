@@ -13,7 +13,7 @@ import tescoPNG from './PNG/tesco.png';
 
 import styles from './style.css';
 
-const trackLogoClicks = () => () =>
+const trackLogoClicks = () =>
   ReactGA.event({
     category: 'Homepage logos',
     action: 'click',
