@@ -144,7 +144,9 @@
     "moduleNameMapper": {
       "\\.(css)$": "identity-obj-proxy"
     },
-    "setupFiles": ["jest-canvas-mock"],
+    "setupFiles": [
+      "jest-canvas-mock"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/dev/jest/enzyme-config.js",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
