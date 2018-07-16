@@ -56,8 +56,9 @@ export function makeApp({ element, state }) {
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
 
-    const page = `/${route.route}`;
-    ReactGA.set({ page, title });
+    const page = stateNavigator.getNavigationLink(route.key, params);
+    const location = window.location.origin;
+    ReactGA.set({ location, page, title });
     ReactGA.pageview(page);
   });
 
