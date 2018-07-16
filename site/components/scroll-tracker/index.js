@@ -1,77 +1,89 @@
-import React from 'react';
+// @flow
+
+import * as React from 'react';
+import throttle from 'lodash.throttle';
+import ReactGA from 'react-ga';
+
 import { logScrollDepth } from '../../tracking/amplitude';
 
-class ScrollTracker extends React.Component {
+class ScrollTracker extends React.Component<{ children: React.Node, logLabel: string }> {
+  static THROTTLE_MS = 100;
+
+  static scrollPercentage() {
+    const scrollHeight = document.documentElement ? document.documentElement.scrollHeight : 0;
+
+    return Math.round(
+      ((window.scrollY ? window.scrollY : window.pageYOffset) /
+        (scrollHeight - window.innerHeight)) *
+        100,
+    );
+  }
+
   componentDidMount() {
-    window.addEventListener('scroll', this.log0ScrollDepth);
+    this.listener = throttle(this.log0ScrollDepth, ScrollTracker.THROTTLE_MS);
+    window.addEventListener('scroll', this.listener);
+  }
+
+  listener = null;
+
+  logScroll(scrollPercentage: number) {
+    ReactGA.event({
+      category: 'Scroll homepage',
+      action: 'scroll',
+      label: this.props.logLabel || document.title,
+      value: scrollPercentage,
+    });
+    logScrollDepth(scrollPercentage);
+  }
+
+  swapListeners(newListener: Function) {
+    window.removeEventListener('scroll', this.listener);
+    this.listener = throttle(newListener, ScrollTracker.THROTTLE_MS);
+    window.addEventListener('scroll', this.listener);
   }
 
   log100ScrollDepth = () => {
-    const scrollPercentage = Math.round(
-      ((window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight)) *
-        100,
-    );
+    const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 100) {
-      logScrollDepth(100);
-      window.removeEventListener('scroll', this.log100ScrollDepth);
+      this.logScroll(100);
+      window.removeEventListener('scroll', this.listener);
     }
   };
 
   log75ScrollDepth = () => {
-    const scrollPercentage = Math.round(
-      ((window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight)) *
-        100,
-    );
+    const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 75 && scrollPercentage < 100) {
-      logScrollDepth(75);
-      window.removeEventListener('scroll', this.log75ScrollDepth);
-      window.addEventListener('scroll', this.log100ScrollDepth);
+      this.logScroll(75);
+      this.swapListeners(this.log100ScrollDepth);
     }
   };
 
   log50ScrollDepth = () => {
-    const scrollPercentage = Math.round(
-      ((window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight)) *
-        100,
-    );
+    const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 50 && scrollPercentage < 75) {
-      logScrollDepth(50);
-      window.removeEventListener('scroll', this.log50ScrollDepth);
-      window.addEventListener('scroll', this.log75ScrollDepth);
+      this.logScroll(50);
+      this.swapListeners(this.log75ScrollDepth);
     }
   };
 
   log25ScrollDepth = () => {
-    const scrollPercentage = Math.round(
-      ((window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight)) *
-        100,
-    );
+    const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 25 && scrollPercentage < 50) {
-      logScrollDepth(25);
-      window.removeEventListener('scroll', this.log25ScrollDepth);
-      window.addEventListener('scroll', this.log50ScrollDepth);
+      this.logScroll(25);
+      this.swapListeners(this.log50ScrollDepth);
     }
   };
 
   log0ScrollDepth = () => {
-    const scrollPercentage = Math.round(
-      ((window.scrollY ? window.scrollY : window.pageYOffset) /
-        (document.documentElement.scrollHeight - window.innerHeight)) *
-        100,
-    );
+    const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage < 25) {
-      logScrollDepth(0);
-      window.removeEventListener('scroll', this.log0ScrollDepth);
-      window.addEventListener('scroll', this.log25ScrollDepth);
+      this.logScroll(0);
+      this.swapListeners(this.log25ScrollDepth);
     }
   };
 
