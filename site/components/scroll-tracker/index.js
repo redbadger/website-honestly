@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 
 import { logScrollDepth } from '../../tracking/amplitude';
 
-class ScrollTracker extends React.Component<{ children: React.Node, logLabel: string }> {
+class ScrollTracker extends React.Component<{ children: React.Node }> {
   static THROTTLE_MS = 100;
 
   static scrollPercentage() {
@@ -19,22 +19,21 @@ class ScrollTracker extends React.Component<{ children: React.Node, logLabel: st
     );
   }
 
+  static logScroll(scrollPercentage: number) {
+    ReactGA.event({
+      category: `Page scroll depth`,
+      action: 'scroll',
+      value: scrollPercentage,
+    });
+    logScrollDepth(scrollPercentage);
+  }
+
   componentDidMount() {
     this.listener = throttle(this.log0ScrollDepth, ScrollTracker.THROTTLE_MS);
     window.addEventListener('scroll', this.listener);
   }
 
   listener = null;
-
-  logScroll(scrollPercentage: number) {
-    ReactGA.event({
-      category: 'Scroll homepage',
-      action: 'scroll',
-      label: this.props.logLabel || document.title,
-      value: scrollPercentage,
-    });
-    logScrollDepth(scrollPercentage);
-  }
 
   swapListeners(newListener: Function) {
     window.removeEventListener('scroll', this.listener);
@@ -46,7 +45,7 @@ class ScrollTracker extends React.Component<{ children: React.Node, logLabel: st
     const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 100) {
-      this.logScroll(100);
+      ScrollTracker.logScroll(100);
       window.removeEventListener('scroll', this.listener);
     }
   };
@@ -55,7 +54,7 @@ class ScrollTracker extends React.Component<{ children: React.Node, logLabel: st
     const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 75 && scrollPercentage < 100) {
-      this.logScroll(75);
+      ScrollTracker.logScroll(75);
       this.swapListeners(this.log100ScrollDepth);
     }
   };
@@ -64,7 +63,7 @@ class ScrollTracker extends React.Component<{ children: React.Node, logLabel: st
     const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 50 && scrollPercentage < 75) {
-      this.logScroll(50);
+      ScrollTracker.logScroll(50);
       this.swapListeners(this.log75ScrollDepth);
     }
   };
@@ -73,7 +72,7 @@ class ScrollTracker extends React.Component<{ children: React.Node, logLabel: st
     const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage >= 25 && scrollPercentage < 50) {
-      this.logScroll(25);
+      ScrollTracker.logScroll(25);
       this.swapListeners(this.log50ScrollDepth);
     }
   };
@@ -82,7 +81,7 @@ class ScrollTracker extends React.Component<{ children: React.Node, logLabel: st
     const scrollPercentage = ScrollTracker.scrollPercentage();
 
     if (scrollPercentage < 25) {
-      this.logScroll(0);
+      ScrollTracker.logScroll(0);
       this.swapListeners(this.log25ScrollDepth);
     }
   };

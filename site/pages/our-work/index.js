@@ -13,6 +13,7 @@ import CaseStudySkySlice from './case-study-sky-slice';
 import ClientLogosSlice from './client-logos-slice';
 import CaseStudyCell from './case-study-cell';
 import Social from '../../components/social';
+import ScrollTracker from '../../components/scroll-tracker';
 
 import metaImage from './meta-image.jpg';
 import HallerImage from './images/Hall.jpg';
@@ -33,7 +34,7 @@ export default function CaseStudies() {
   };
 
   return (
-    <div>
+    <ScrollTracker>
       <Social {...social} />
       <div className={styles.headerContainer}>
         <div>
@@ -90,6 +91,6 @@ export default function CaseStudies() {
           </div>
         </div>
       </div>
-    </div>
+    </ScrollTracker>
   );
 }

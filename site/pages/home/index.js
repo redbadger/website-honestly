@@ -10,6 +10,7 @@ import NewsLetter from './newsletter-slice';
 import Social from '../../components/social';
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
+import ScrollTracker from '../../components/scroll-tracker';
 
 export default function HomePage() {
   const social = {
@@ -22,7 +23,7 @@ export default function HomePage() {
   };
 
   return (
-    <div>
+    <ScrollTracker>
       <Social {...social} />
       <TopSlice />
       <CaseStudyOverview />
@@ -31,6 +32,6 @@ export default function HomePage() {
       <TechSlice />
       <AwardsSlice />
       <NewsLetter />
-    </div>
+    </ScrollTracker>
   );
 }

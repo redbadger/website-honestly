@@ -1,6 +1,6 @@
 // @flow
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactGA from 'react-ga';
 import styles from './style.css';
 
@@ -13,6 +13,7 @@ import { HubspotButton } from '../../components/buttons';
 import { P, H1, H2, H3 } from '../../components/text';
 import Image from '../../components/image';
 import Social from '../../components/social';
+import ScrollTracker from '../../components/scroll-tracker';
 
 import roundTableImage from './images/2018-april-roundtable.png';
 import roundTableImage2x from './images/2018-april-roundtable@2x.png';
@@ -42,7 +43,7 @@ const social = {
 };
 
 const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Props) => (
-  <Fragment>
+  <ScrollTracker>
     <Social {...social} />
     <WhiteSlice>
       <div className={styles.heading}>
@@ -89,7 +90,7 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
     </section>
     <WebinarSignupSlice />
     <TechChecklist />
-  </Fragment>
+  </ScrollTracker>
 );
 
 export default TechnologyPage;
