@@ -13,7 +13,7 @@ import logAmplitudeEvent from '../../../tracking/amplitude';
 const trackWebinarClicks = () => {
   logAmplitudeEvent('CLICK WATCH WEBINAR');
   ReactGA.event({
-    category: 'Watch them now button on tech page',
+    category: 'Watch them now button',
     action: 'click',
     label: 'Webinar',
   });

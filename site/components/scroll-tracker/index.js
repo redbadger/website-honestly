@@ -11,12 +11,9 @@ class ScrollTracker extends React.Component<{ children: React.Node }> {
 
   static scrollPercentage() {
     const scrollHeight = document.documentElement ? document.documentElement.scrollHeight : 0;
+    const scrollY = window.scrollY ? window.scrollY : window.pageYOffset;
 
-    return Math.round(
-      ((window.scrollY ? window.scrollY : window.pageYOffset) /
-        (scrollHeight - window.innerHeight)) *
-        100,
-    );
+    return Math.round((scrollY / (scrollHeight - window.innerHeight)) * 100);
   }
 
   static logScroll(scrollPercentage: number) {
