@@ -1,6 +1,8 @@
 # Website. Honestly. 🦄
 
 [![CircleCI](https://circleci.com/gh/redbadger/website-honestly.svg?style=shield)](https://circleci.com/gh/redbadger/website-honestly)
+[![Maintainability](https://api.codeclimate.com/v1/badges/74beed04911a64dcba4c/maintainability)](https://codeclimate.com/github/redbadger/website-honestly/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/74beed04911a64dcba4c/test_coverage)](https://codeclimate.com/github/redbadger/website-honestly/test_coverage)
 
 Red Badger Website Episode 6: Return of the Jedi.
 
