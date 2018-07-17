@@ -10,6 +10,11 @@ RUN apk add --no-cache \
         less \
         mailcap \
         && \
-    pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
-    apk -v --purge del py-pip
+    pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic
+
+# Install code climate reporter
+RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+RUN chmod +x ./cc-test-reporter
+
+RUN apk -v --purge del py-pip
 
