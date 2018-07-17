@@ -173,6 +173,7 @@ export function getData() {
       eventsBanner {
         url
         altText
+        campaignName
         desktopURL
         tabletURL
         mobileURL

@@ -1,14 +1,31 @@
+// @flow
+
 import React from 'react';
 import InlineSVG from 'svg-inline-react';
 import moment from 'moment';
-import styles from './style.css';
+import ReactGA from 'react-ga';
 
+import styles from './style.css';
 import fortnumPNG from './PNG/fortnum.png';
 import financialTimesPNG from './PNG/financialtimes.png';
 import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
 import Link from '../link';
 import CaseStudyCompanyLogos from '../case-study-company-logos';
+
+const trackStatClicks = company => () =>
+  ReactGA.event({
+    category: `Key stats ${company}`,
+    action: 'click',
+    label: 'Case Study',
+  });
+
+const trackSeeMoreWorkClicks = () =>
+  ReactGA.event({
+    category: `See more of our work`,
+    action: 'click',
+    label: 'Case Study',
+  });
 
 const daysSinceFortumStarted = () => {
   const startDate = moment([2014, 4, 14]);
@@ -28,6 +45,7 @@ const CaseStudyOverview = () => (
           href="/our-work/case-study/fortnum-and-mason"
           className={styles.figureLink}
           title="Fortnum and mason case study"
+          onClick={trackStatClicks('F&M')}
         >
           <span className={styles.statsContainer}>
             <span className={styles.countdownText}>{daysSinceFortumStarted()}</span>
@@ -47,6 +65,7 @@ const CaseStudyOverview = () => (
           href="our-work/case-study/retailer"
           className={styles.figureLink}
           title="Retailer case study"
+          onClick={trackStatClicks('Tesco')}
         >
           <span className={styles.statsContainer}>
             <span className={styles.centerText}>
@@ -65,6 +84,7 @@ const CaseStudyOverview = () => (
           href="/our-work/case-study/financial-services-digital-transformation"
           className={styles.figureLink}
           title="Bank case study"
+          onClick={trackStatClicks('Giant Global Bank')}
         >
           <span className={styles.statsContainer}>
             <span className={styles.centerText}>
@@ -83,6 +103,7 @@ const CaseStudyOverview = () => (
           href="/our-work/case-study/financial-times"
           className={styles.figureLink}
           title="Financial times case study"
+          onClick={trackStatClicks('Financial Times')}
         >
           <span className={styles.statsContainer}>
             <span className={styles.countdownText}>30%</span>
@@ -105,7 +126,7 @@ const CaseStudyOverview = () => (
       </div>
       <CaseStudyCompanyLogos />
       <div className={styles.buttonContainer}>
-        <Link to="ourWorkPage" className={styles.button}>
+        <Link to="ourWorkPage" className={styles.button} onClick={trackSeeMoreWorkClicks}>
           See more of our work
         </Link>
       </div>

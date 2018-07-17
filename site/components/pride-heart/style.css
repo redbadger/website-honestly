@@ -2,19 +2,18 @@
 
 .prideHeart {
   width: 120px;
+  margin: 0 auto;
   position: absolute;
-  top: 73px;
-  left: 0px;
-  right: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 68px;
 }
 
 @media mediumScreen {
   .prideHeart {
     width: 96px;
     margin: 0;
-    top: 57px;
+    top: 58px;
     left: 372px;
   }
 }
@@ -23,7 +22,7 @@
   .prideHeart {
     width: 150px;
     vertical-align: bottom;
-    top: 68px;
+    top: 63px;
     left: 550px;
   }
 }

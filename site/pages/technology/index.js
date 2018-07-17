@@ -1,6 +1,7 @@
 // @flow
 
-import React, { Fragment } from 'react';
+import React from 'react';
+import ReactGA from 'react-ga';
 import styles from './style.css';
 
 import BlogSlice from './blog-slice';
@@ -8,10 +9,11 @@ import WebinarSignupSlice from './webinar-signup-slice';
 import { TechChecklist } from '../../slices/checklist-contact-us-slice';
 
 import { WhiteSlice, GreenSlice } from '../../components/slice';
-import { RoundtableHubspotButton } from '../../components/buttons';
+import { HubspotButton } from '../../components/buttons';
 import { P, H1, H2, H3 } from '../../components/text';
 import Image from '../../components/image';
 import Social from '../../components/social';
+import ScrollTracker from '../../components/scroll-tracker';
 
 import roundTableImage from './images/2018-april-roundtable.png';
 import roundTableImage2x from './images/2018-april-roundtable@2x.png';
@@ -24,6 +26,13 @@ type Props = {
   growingTrendsBlogPosts: Array<Object>,
 };
 
+const trackPDFReportClicks = () =>
+  ReactGA.event({
+    category: 'Read PDF Report button',
+    action: 'click',
+    label: 'Technology',
+  });
+
 const social = {
   title: 'Technology | Red Badger',
   description:
@@ -34,7 +43,7 @@ const social = {
 };
 
 const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Props) => (
-  <Fragment>
+  <ScrollTracker>
     <Social {...social} />
     <WhiteSlice>
       <div className={styles.heading}>
@@ -60,11 +69,12 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
             </P>
           </div>
           <div className={styles.hubspotButtonWrapper}>
-            <RoundtableHubspotButton
+            <HubspotButton
               analyticsTitle="RoundtablePDFLink"
               analyticsCategory="TechnologyPage"
               hubspotTitle="roundtableApril2018"
               className={styles.readPdfReportWrapper}
+              gaTracking={trackPDFReportClicks}
             />
           </div>
         </div>
@@ -80,7 +90,7 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
     </section>
     <WebinarSignupSlice />
     <TechChecklist />
-  </Fragment>
+  </ScrollTracker>
 );
 
 export default TechnologyPage;

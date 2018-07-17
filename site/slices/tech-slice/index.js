@@ -1,5 +1,9 @@
 // @flow
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+
 import React from 'react';
+import ReactGA from 'react-ga';
+
 import Link from '../../components/link';
 import styles from './styles.css';
 
@@ -14,6 +18,13 @@ type TechListItemProps = {
   name: string,
   imgSrc: string,
 };
+
+const trackTechLogosClicks = () =>
+  ReactGA.event({
+    category: 'Tech Icons',
+    action: 'click',
+    label: 'Technology',
+  });
 
 function TechListItem({ name, imgSrc }: TechListItemProps) {
   return (
@@ -35,7 +46,7 @@ export default function TechSlice() {
         Here is a selection of what we’ve used on recent projects.
       </p>
 
-      <ul className={styles.techList}>
+      <ul className={styles.techList} onClick={trackTechLogosClicks}>
         <TechListItem name="Serverless" imgSrc={serverlessImg} />
         <TechListItem name="GraphQL" imgSrc={graphqlImg} />
         <TechListItem name="Docker" imgSrc={dockerImg} />

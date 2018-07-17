@@ -15,8 +15,10 @@
 
 .sloganWrapper {
   position: relative;
-  margin-bottom: 83px;
   cursor: pointer;
+  margin-bottom: 80px;
+  display: block;
+  color: #212121;
 }
 
 .badgerSlogan {
