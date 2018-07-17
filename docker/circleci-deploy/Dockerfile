@@ -15,7 +15,6 @@ RUN apk add --no-cache \
 # Install code climate reporter
 RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
 RUN chmod +x ./cc-test-reporter
-RUN ln -s ./cc-test-reporter ./usr/local/bin/cc-test-reporter
 
 RUN apk -v --purge del py-pip
 
