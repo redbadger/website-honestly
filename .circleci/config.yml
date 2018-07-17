@@ -77,7 +77,13 @@ jobs:
 
       - run:
           name: Send test coverage
-          command: /cc-test-reporter after-build --exit-code $EXIT_CODE
+          command: /cc-test-reporter after-build --exit-code 1
+          when: on_fail
+
+      - run:
+          name: Send test coverage
+          command: /cc-test-reporter after-build --exit-code 0
+          when: on_success
 
   preview:
     docker:
