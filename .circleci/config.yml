@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
 
     steps:
       - checkout
@@ -21,7 +21,7 @@ jobs:
 
   validate_formatting:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
       - restore_cache:
@@ -34,7 +34,7 @@ jobs:
 
   lint:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
       - restore_cache:
@@ -47,7 +47,7 @@ jobs:
 
   validate_types:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
       - restore_cache:
@@ -60,7 +60,7 @@ jobs:
 
   test:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
       - restore_cache:
@@ -81,7 +81,7 @@ jobs:
 
   preview:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
       - restore_cache:
@@ -94,7 +94,7 @@ jobs:
 
   deploy_staging:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
       - restore_cache:
@@ -107,7 +107,7 @@ jobs:
 
   deploy_production:
     docker:
-      - image: redbadger/website-honestly-deploy:5
+      - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
       - restore_cache:
