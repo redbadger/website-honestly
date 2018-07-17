@@ -105,6 +105,9 @@
     "whatwg-fetch": "^1.0.0",
     "xmldom": "^0.1.22"
   },
+  "resolutions": {
+    "eslint-scope": "3.7.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/redbadger/website-honestly.git"
