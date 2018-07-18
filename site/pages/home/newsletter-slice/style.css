@@ -56,7 +56,15 @@
 }
 
 .form > div {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.gdpr {
+  max-width: 610px;
+  margin: 0 auto 10px;
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  text-align: left;
 }
 
 .formLabel {
@@ -151,7 +159,7 @@
 
   .submitButton {
     display: inline-block;
-    margin: 0 auto 40px;
+    margin: 0 auto;
     vertical-align: top;
   }
 
