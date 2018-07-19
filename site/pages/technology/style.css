@@ -63,17 +63,6 @@
   font-size: 20px;
 }
 
-.readPdfReportWrapper img {
-  height: 56px;
-  width: 228px;
-}
-
-.readPdfReportWrapper:hover a:after {
-  background-image: url(./hubspot-btns-images/read-pdf.png);
-  height: 56px;
-  width: 228px;
-}
-
 @media mediumScreen {
   .green {
     flex-direction: row;
@@ -259,75 +248,3 @@
   fill: badgerWhite;
 }
 
-/* ============= Hubspot button styling ============= */
-
-.hubspotBtn a {
-  display: inline-block;
-  position: relative;
-}
-
-.hubspotBtn a:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-}
-
-.hubspotBtn:hover a:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  background-size: 100% 100%;
-}
-
-.meetupBtnWrapper:hover a:after {
-  background-image: url(./hubspot-btns-images/meetup.png);
-  height: 53px;
-  width: 302px;
-}
-
-.webinarBtnWrapper:hover a:after {
-  background-image: url(./hubspot-btns-images/webinar.png);
-  height: 56px;
-  width: 224px;
-}
-
-.slackBtnWrapper:hover a:after {
-  background-image: url(./hubspot-btns-images/slack.png);
-  height: 53px;
-  width: 251px;
-}
-
-.webinarBtnWrapper {
-  margin-top: 35px;
-}
-
-.slackBtnWrapper, .meetupBtnWrapper {
-  margin-top: 9px;
-}
-
-.meetupBtnWrapper img {
-  height: 53px;
-  width: 302px;
-}
-
-.slackBtnWrapper img {
-  height: 53px;
-  width: 251px;
-}
-
-.webinarBtnWrapper img {
-  height: 56px;
-  width: 224px;
-}
-
-@media mediumScreen {
-  .slackBtnWrapper, .meetupBtnWrapper, .webinarBtnWrapper {
-    margin-right: 20px;
-  }
-
-  .webinarBtnWrapper {
-    margin-top: 5px;
-  }
-}

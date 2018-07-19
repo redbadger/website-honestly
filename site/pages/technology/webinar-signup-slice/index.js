@@ -25,11 +25,7 @@ export default () => (
       <h2 className={styles.webinarText}>
         {'Did you miss our tech webinars on Serverless, GraphQL and more?'}
       </h2>
-      <HubspotButton
-        gaTracking={trackWebinarClicks}
-        className={styles.webinarBtnWrapper}
-        hubspotTitle="webinar"
-      />
+      <HubspotButton gaTracking={trackWebinarClicks} hubspotName="webinar" />
     </div>
   </section>
 );
