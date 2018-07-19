@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/buttons hubspot-buttons adds the correct class for given cta 1`] = `
+<div
+  className="hubspotBtn webinarBtnWrapper"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<!--HubSpot Call-to-Action Code --><span class=\\"hs-cta-wrapper\\" id=\\"hs-cta-wrapper-c87452af-5599-4904-a20c-7d9d48886193\\"><span class=\\"hs-cta-node hs-cta-c87452af-5599-4904-a20c-7d9d48886193\\" id=\\"hs-cta-c87452af-5599-4904-a20c-7d9d48886193\\"><!--[if lte IE 8]><div id=\\"hs-cta-ie-element\\"></div><![endif]--><a href=\\"https://cta-redirect.hubspot.com/cta/redirect/4210858/c87452af-5599-4904-a20c-7d9d48886193\\"  target=\\"_blank\\" ><img class=\\"hs-cta-img\\" id=\\"hs-cta-img-c87452af-5599-4904-a20c-7d9d48886193\\" style=\\"border-width:0px;\\" height=\\"112\\" width=\\"448\\" src=\\"https://no-cache.hubspot.com/cta/default/4210858/c87452af-5599-4904-a20c-7d9d48886193.png\\"  alt=\\"Watch them now\\"/></a></span><script charset=\\"utf-8\\" src=\\"https://js.hscta.net/cta/current.js\\"></script><script type=\\"text/javascript\\"> hbspt.cta.load(4210858, 'c87452af-5599-4904-a20c-7d9d48886193', {}); </script></span><!-- end HubSpot Call-to-Action Code -->",
+    }
+  }
+/>
+`;
+
+exports[`components/buttons hubspot-buttons displays nothing if correct cta does not exits 1`] = `""`;
