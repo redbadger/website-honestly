@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import classnames from 'classnames/bind';
+
 import styles from '../style.css';
 
 const cx = classnames.bind(styles);
@@ -84,6 +85,13 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
             {this.state.submitting ? 'Signing up....' : 'Sign Up'}
           </button>
         </form>
+
+        <p className={styles.gdpr}>
+          Once you are signed up to our newsletter, you can unsubscribe and update your preferences
+          at any time. We’ll share our news, blogs, and invitations to our events and webinars. View
+          our <a href="https://red-badger.com/privacy-policy">Privacy policy</a> to find out more
+          about how we take care of your personal data.
+        </p>
 
         <noscript>
           <p className={styles.jsDisabled}>
