@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/cells/cell renders a cell with a client image 1`] = `
+<div
+  className="cell cell-Haller"
+>
+  <div
+    className="caseStudyContentContainer"
+  >
+    <div
+      className="caseStudyContent"
+    >
+      <Link
+        to="hallerCaseStudy"
+      >
+        <img
+          alt="Haller project"
+          className="clientImage"
+          src="/assets-honestly/Hall-3uKBy.jpg"
+        />
+        <img
+          alt="Haller logo"
+          className="logoHaller"
+          src="/assets-honestly/haller-38WYH.png"
+        />
+        <h2
+          className="normalHeader"
+        >
+          Developing technology for good
+        </h2>
+        <p
+          className="description"
+        >
+          Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers.
+        </p>
+        <div
+          className="links"
+        >
+          <p
+            className="readmore"
+          >
+            Read more
+          </p>
+        </div>
+      </Link>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`pages/our-work/cells/cell renders a cell without a client image and large header 1`] = `
+<div
+  className="cell cell-Haller"
+>
+  <div
+    className="caseStudyContentContainer"
+  >
+    <div
+      className="caseStudyContent"
+    >
+      <Link
+        to="hallerCaseStudy"
+      >
+        <img
+          alt="Haller logo"
+          className="logoHaller"
+          src="/assets-honestly/haller-38WYH.png"
+        />
+        <h2
+          className="largeHeader"
+        >
+          Developing technology for good
+        </h2>
+        <p
+          className="description"
+        >
+          Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers.
+        </p>
+        <div
+          className="links"
+        >
+          <p
+            className="readmore"
+          >
+            Read more
+          </p>
+        </div>
+      </Link>
+    </div>
+  </div>
+</div>
+`;
