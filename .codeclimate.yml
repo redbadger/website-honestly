@@ -1,0 +1,11 @@
+plugins:
+  eslint:
+    enabled: true
+    channel: "eslint-4"
+
+exclude_patterns:
+  - "**/node_modules/"
+  - "flow-typed/"
+  - "**/__snapshots__/"
+  - ".storybook/"
+  - "**/*.stories.js"
