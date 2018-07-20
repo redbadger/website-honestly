@@ -8,7 +8,7 @@ import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
 import metaImage from './meta-image.jpg';
 
-import WhatToReadNext from '../what-to-read-next';
+import WhatToReadNext from '../../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
 import Image from '../../../../components/image';

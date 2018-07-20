@@ -12,7 +12,7 @@ import {
   SectionBody,
   P,
 } from '../case-study-components';
-import WhatToReadNext from '../what-to-read-next';
+import WhatToReadNext from '../../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import styles from './style.css';
 

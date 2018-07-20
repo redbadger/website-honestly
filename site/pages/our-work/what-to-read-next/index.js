@@ -4,7 +4,7 @@ import take from 'lodash.take';
 import React from 'react';
 
 import styles from './style.css';
-import Link from '../../../../components/link';
+import Link from '../../../components/link';
 import WhatToReadNextSlice from './slice';
 import sliceData from './data';
 

@@ -3,8 +3,8 @@ import React from 'react';
 import InlineSVG from 'svg-inline-react';
 
 import styles from './style.css';
-import arrowSVG from '../../../../../assets/images/SVG/arrow.svg';
-import Link from '../../../../components/link';
+import arrowSVG from '../../../../assets/images/SVG/arrow.svg';
+import Link from '../../../components/link';
 
 type WhatToReadNextSliceProps = {
   name: string,

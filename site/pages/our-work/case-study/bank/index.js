@@ -27,7 +27,7 @@ import {
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
 
-import WhatToReadNext from '../what-to-read-next';
+import WhatToReadNext from '../../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 import ScrollTracker from '../../../../components/scroll-tracker';

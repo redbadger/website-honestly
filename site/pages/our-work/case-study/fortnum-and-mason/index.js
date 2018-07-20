@@ -15,7 +15,7 @@ import devicesImage from './images/devices.png';
 import tabletRestaurantImage from './images/tablet-restaurant.png';
 import tabletCheckoutImage from './images/tablet-checkout.png';
 
-import WhatToReadNext from '../what-to-read-next';
+import WhatToReadNext from '../../what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
 import ListBox from '../../../../components/list-box';
