@@ -1,26 +1,27 @@
 import React from 'react';
-import styles from './style.css';
-import { CaseStudySliceContainer } from '../../case-study/case-study-components';
+import styles from './styles.css';
+import sharedStyles from '../shared/styles.css';
+import { SliceContainer } from '../shared';
 
 import retailerImage from './images/retailer.jpg';
 
 const RetailerSlice = () => (
-  <CaseStudySliceContainer to="retailerCaseStudy">
-    <div className={styles.caseStudyTextContainer}>
+  <SliceContainer to="retailerCaseStudy" layout="row-reverse">
+    <div className={sharedStyles.caseStudyTextContainerReverse}>
       <div>
-        <h2 className={styles.caseStudyTextContainerHeader}>
+        <h2 className={sharedStyles.caseStudyTextContainerHeader}>
           Next generation platform for retail giant
         </h2>
-        <p className={styles.description}>
+        <p className={sharedStyles.description}>
           Find out how we helped clear a five year backlog in eight months and delivered a mobile
           first application across seven countries.
         </p>
-        <div className={styles.links}>
-          <p className={styles.readmore}>Read more</p>
+        <div className={sharedStyles.links}>
+          <p className={sharedStyles.readmore}>Read more</p>
         </div>
       </div>
     </div>
-    <div className={styles.imageWrapper}>
+    <div className={sharedStyles.imageWrapper}>
       <div className={styles.imageContainer}>
         <img src={retailerImage} alt="Retail giant project snapshot" />
         <div className={styles.orders}>
@@ -33,7 +34,7 @@ const RetailerSlice = () => (
         </div>
       </div>
     </div>
-  </CaseStudySliceContainer>
+  </SliceContainer>
 );
 
 export default RetailerSlice;

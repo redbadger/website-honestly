@@ -1,11 +1,9 @@
 // @flow
 import * as React from 'react';
-import classNames from 'classnames/bind';
 import styles from './style.css';
 import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
 import Card from '../../../../components/card';
 import Image from '../../../../components/image';
-import Link from '../../../../components/link';
 import ContactBox from '../../../../components/contact-box';
 import BaseQuote from '../../../../components/quote';
 import type { Author } from '../../../../components/quote';
@@ -63,26 +61,3 @@ type BodyProps = {
   >,
 };
 export const Body = ({ children }: BodyProps) => <div className={styles.body}>{children}</div>;
-
-type Layout = 'row' | 'row-reverse';
-export const CaseStudySliceContainer = ({
-  children,
-  layout = 'row-reverse',
-  to,
-}: {
-  children: React.ChildrenArray<React.Element<'div'>>,
-  layout: Layout,
-  to: string,
-}) => (
-  <div className={styles.caseStudyContainer}>
-    <Link
-      to={to}
-      className={classNames({
-        [styles.caseStudyContent]: true,
-        [styles[`${layout}`]]: true,
-      })}
-    >
-      {children}
-    </Link>
-  </div>
-);

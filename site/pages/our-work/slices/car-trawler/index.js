@@ -1,23 +1,22 @@
 import React from 'react';
-import styles from './style.css';
-import { CaseStudySliceContainer } from '../../case-study/case-study-components';
+
+import styles from '../shared/styles.css';
+import { SliceContainer } from '../shared';
 
 import carTrawlerImage from './images/carTrawler.jpg';
 
 const CarTrawlerSlice = () => (
-  <CaseStudySliceContainer to="carTrawlerCaseStudy">
-    <div className={styles.caseStudyTextContainer}>
-      <div>
-        <h2 className={styles.caseStudyTextContainerHeader}>
-          Complete CMS control for travel brands
-        </h2>
-        <p className={styles.description}>
-          Find out how we demonstrated value with a working prototype in one week and delivered a
-          complete CMS control for travel brands within only 5 months.
-        </p>
-        <div className={styles.links}>
-          <p className={styles.readmore}>Read more</p>
-        </div>
+  <SliceContainer to="carTrawlerCaseStudy" layout="row-reverse">
+    <div className={styles.caseStudyTextContainerReverse}>
+      <h2 className={styles.caseStudyTextContainerHeader}>
+        Complete CMS control for travel brands
+      </h2>
+      <p className={styles.description}>
+        Find out how we demonstrated value with a working prototype in one week and delivered a
+        complete CMS control for travel brands within only 5 months.
+      </p>
+      <div className={styles.links}>
+        <p className={styles.readmore}>Read more</p>
       </div>
     </div>
     <div className={styles.imageWrapper}>
@@ -25,7 +24,7 @@ const CarTrawlerSlice = () => (
         <img src={carTrawlerImage} alt="Retail giant project snapshot" />
       </div>
     </div>
-  </CaseStudySliceContainer>
+  </SliceContainer>
 );
 
 export default CarTrawlerSlice;

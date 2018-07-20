@@ -1,14 +1,15 @@
 // @flow
 
 import React from 'react';
-import styles from './style.css';
-import { CaseStudySliceContainer } from '../../case-study/case-study-components';
+
+import styles from '../shared/styles.css';
+import { SliceContainer } from '../shared';
 
 import bankGif from './images/bank.gif';
 
 export default function Bank() {
   return (
-    <CaseStudySliceContainer to="bankCaseStudy" layout="row">
+    <SliceContainer to="bankCaseStudy">
       <div className={styles.caseStudyTextContainer}>
         <div>
           <h2 className={styles.caseStudyTextContainerHeader}>
@@ -27,6 +28,6 @@ export default function Bank() {
       <div className={styles.imageWrapper}>
         <img className={styles.projectBigSmallSnapshot} src={bankGif} alt="Bank project snapshot" />
       </div>
-    </CaseStudySliceContainer>
+    </SliceContainer>
   );
 }
