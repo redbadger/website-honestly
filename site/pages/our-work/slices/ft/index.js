@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.css';
-import Link from '../../../components/link';
+import Link from '../../../../components/link';
 
 import ftLogo from './images/ft-logo.png';
 import ftProjectImage from './images/meeting.png';

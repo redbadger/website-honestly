@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.css';
-import { CaseStudySliceContainer } from '../case-study/case-study-components';
+import { CaseStudySliceContainer } from '../../case-study/case-study-components';
 
 import carTrawlerImage from './images/carTrawler.jpg';
 

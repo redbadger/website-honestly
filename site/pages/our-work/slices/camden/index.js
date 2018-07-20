@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.css';
-import Link from '../../../components/link';
+import Link from '../../../../components/link';
 
 import camdenLogo from './images/camden_market.png';
 import camdenProjectScreenshot from './images/camden.png';

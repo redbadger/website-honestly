@@ -20,7 +20,7 @@ import skyLogo from './images/sky.png';
 import tescoLogo from './images/tesco.png';
 import wickesLogo from './images/wickes.png';
 
-export default function ClientLogosSlice() {
+export default function Logos() {
   return (
     <div className={styles.caseStudyContainer}>
       <div className={styles.caseStudyContent}>

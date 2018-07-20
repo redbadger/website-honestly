@@ -1,21 +1,21 @@
 import React from 'react';
 import styles from './style.css';
-import Link from '../../../components/link';
+import Link from '../../../../components/link';
 
-import fmLogo from './images/fortnum-mason-logo.png';
+import skyLogo from './images/sky.png';
 
-export default function CaseStudyFortnumDigitalTransformationSlice() {
+export default function CaseStudySkySlice() {
   return (
     <div className={styles.caseStudyContainer}>
       <div className={styles.caseStudyContent}>
         <div className={styles.caseStudyTextContainer}>
-          <Link to="fMTeaCaseStudy">
-            <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
+          <Link to="skyCMSCaseStudy">
+            <img src={skyLogo} className={styles.clientLogo} alt="Sky logo" />
             <h2 className={styles.caseStudyTextContainerHeader}>
-              The ongoing digital transformation of a 310-year old retailer
+              A modern CMS that is the foundation that supports both customers and the internal team
             </h2>
             <p className={styles.description}>
-              Discover how we helped customers find products faster and drive sales of tea.
+              Enabling Sky to manage their content with an amazing customer experience
             </p>
             <div className={styles.links}>
               <p className={styles.readmore}>Read more</p>

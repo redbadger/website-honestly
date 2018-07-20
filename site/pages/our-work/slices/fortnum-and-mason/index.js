@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.css';
-import Link from '../../../components/link';
+import Link from '../../../../components/link';
 
 import fmLogo from './images/fortnum-mason-logo.png';
 import fmProjectSnapshot from './images/fortnum.png';
