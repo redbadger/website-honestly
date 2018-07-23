@@ -1,11 +1,11 @@
 @value badgerBlack, badgerWhite, badgerRedOnWhite, linesOnWhite from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
+.caseStudyContainerFlushBottom,
 .caseStudyContainer {
   max-width: 1100px;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 30px;
 }
 
 .caseStudyContent {
@@ -15,6 +15,7 @@
   flex-direction: column-reverse;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .imageWrapper {
@@ -22,11 +23,6 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-}
-
-_:-ms-fullscreen,
-:root .imageWrapper {
-  min-height: 20vh;
 }
 
 .imageContainer {
@@ -93,6 +89,11 @@ _:-ms-fullscreen,
     border-bottom: 1px solid linesOnWhite;
   }
 
+  .caseStudyContainerFlushBottom {
+    padding: 60px 0 0;
+    border-bottom: 1px solid linesOnWhite;
+  }
+
   .caseStudyContent {
     display: flex;
     margin: 0;
@@ -130,8 +131,7 @@ _:-ms-fullscreen,
 }
 
 @media largeScreen {
-  .caseStudyTextContainerReverse,
-  .caseStudyTextContainer {
+  .caseStudyTextContainerReverse {
     padding-left: 90px;
   }
 }

@@ -1,0 +1,48 @@
+@value badgerBlack, badgerWhite, badgerRedOnWhite, linesOnWhite from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen, containerMaxWidth from "../../../../css/_sizes.css";
+
+.clientLogo {
+  width: 40px;
+}
+
+.caseStudyContent {
+  composes: caseStudyContent from '../shared/styles.css';
+}
+
+.caseStudyTextContainer {
+  composes: caseStudyTextContainer from '../shared/styles.css';
+  padding: 0;
+  margin: 0;
+}
+
+.caseStudyTextContainerHeader {
+  composes: fontL from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  margin-top: 30px;
+}
+
+.links {
+  composes: links from '../shared/styles.css';
+}
+
+@media mediumScreen {
+  .links {
+    text-align: center;
+  }
+
+  .caseStudyTextContainer {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .caseStudyContent {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .clientLogo {
+    width: 70px;
+  }
+}

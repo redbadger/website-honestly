@@ -1,0 +1,28 @@
+@value mediumScreen from "../../../../css/_sizes.css";
+
+.imageWrapper {
+  composes: imageWrapper from '../shared/styles.css';
+}
+
+.imageWrapper img {
+  min-width: 260px;
+  width: 60%;
+}
+
+.clientLogo {
+  width: 170px;
+}
+
+@media mediumScreen {
+  .imageWrapper {
+    flex-basis: 50%;
+  }
+
+  .imageWrapper img {
+    min-width: 400px;
+  }
+
+  .clientLogo {
+    width: 220px;
+  }
+}

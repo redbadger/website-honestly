@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 
 import styles from './style.css';
@@ -10,10 +12,13 @@ import FtSlice from './slices/ft';
 import FortnumSlice from './slices/fortnum-and-mason';
 import FortnumDigitalTransformationSlice from './slices/fortnum-and-mason-digital-transformation';
 import SkySlice from './slices/sky';
+
 import { BBCCell, SkyCell, HallerCell, BMWCell } from './cells';
 import Logos from './logos';
+
 import Social from '../../components/social';
 import ScrollTracker from '../../components/scroll-tracker';
+
 import metaImage from './meta-image.jpg';
 
 export default function CaseStudies() {

@@ -1,0 +1,106 @@
+@value badgerBlack from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.clientLogo {
+  width: 180px;
+}
+
+.imageWrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.imageWrapper img {
+  min-width: 260px;
+  width: 70%;
+}
+
+.description {
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  margin-top: 10px;
+}
+
+.projectBigSmallSnapshot {
+  display: block;
+}
+
+.projectMediumSnapshot {
+  display: none;
+}
+
+.caseStudyTextContainer {
+  padding: 0;
+  margin-top: 30px;
+}
+
+@media mediumScreen {
+  .clientLogo {
+    width: 230px;
+  }
+
+  .projectBigSmallSnapshot {
+    display: none;
+  }
+
+  .projectMediumSnapshot {
+    display: block;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+  }
+
+  .description {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+
+  .imageWrapper img {
+    width: 300px;
+  }
+
+  .caseStudyTextContainer {
+    margin-top: 0;
+    padding: 0 30px;
+    width: 60%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .imageWrapper img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .projectBigSmallSnapshot {
+    display: block;
+  }
+
+  .projectMediumSnapshot {
+    display: none;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    bottom: auto;
+  }
+
+  .imageWrapper img {
+    width: 800px;
+  }
+
+  .caseStudyTextContainer {
+    max-width: 500px;
+  }
+}

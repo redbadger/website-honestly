@@ -1,0 +1,33 @@
+@value mediumScreen from "../../../../css/_sizes.css";
+
+.camdenLogo {
+  width: 76px;
+}
+
+.imageWrapper {
+  composes: imageWrapper from '../shared/styles.css';
+  align-items: flex-end;
+}
+
+.imageWrapper img {
+  max-width: 260px;
+}
+
+.caseStudyTextContainerHeader {
+  composes: caseStudyTextContainerHeader from '../shared/styles.css';
+  margin-top: 30px;
+}
+
+@media mediumScreen {
+  .camdenLogo {
+    width: 123px;
+  }
+
+  .imageWrapper img {
+    max-width: 400px;
+  }
+
+  .caseStudyTextContainerHeader {
+    margin-top: 40px;
+  }
+}
