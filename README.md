@@ -6,11 +6,11 @@
 
 Red Badger Website Episode 6: Return of the Jedi.
 
-* [Usage](#usage)
-* [Technical Overview](#technical-overview)
-* [Deployment](#deployment)
-* [Monitoring](#monitoring)
-* [Environment Variables](https://github.com/redbadger/website-honestly/blob/master/docs/environment-variables.md)
+- [Usage](#usage)
+- [Technical Overview](#technical-overview)
+- [Deployment](#deployment)
+- [Monitoring](#monitoring)
+- [Environment Variables](https://github.com/redbadger/website-honestly/blob/master/docs/environment-variables.md)
 
 ## Usage
 
@@ -139,6 +139,10 @@ We use AWS CloudWatch for monitoring our staging and prod lambdas; all alarms sh
 
 Any static assets committed to the repo should be compressed first. There is a
 `make compress-assets` command that will do this for common image formats.
+
+## Storybook
+
+We use [storybook](https://storybook.js.org/) to develop new components. To run it locally, use `yarn storybook`. This will start a live-reloading server. Checkout [writing stories](https://storybook.js.org/basics/writing-stories/) on how to get started. Added stories will get deployed to a public site ([storybook.red-badger.com](https://storybook.red-badger.com)) on merge to master. This is hosted on github pages.
 
 ## Blog
 
