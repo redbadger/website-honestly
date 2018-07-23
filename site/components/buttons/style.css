@@ -22,3 +22,39 @@
   background-size: 100% 100%;
 }
 
+/* Roundtable specific */
+
+.roundtableBtnWrapper img {
+  height: 56px;
+  width: 228px;
+}
+
+.roundtableBtnWrapper:hover a:after {
+  background-image: url(./hubspot-btns-images/read-pdf.png);
+  height: 56px;
+  width: 228px;
+}
+
+/* Webinar specific */
+
+.webinarBtWrapper {
+  margin-top: 35px;
+}
+
+.webinarBtnWrapper img {
+  height: 56px;
+  width: 224px;
+}
+
+.webinarBtnWrapper:hover a:after {
+  background-image: url(./hubspot-btns-images/webinar.png);
+  height: 56px;
+  width: 224px;
+}
+
+@media mediumScreen {
+  .webinarBtnWrapper {
+    margin: 5px 20px 0 0;
+  }
+}
+

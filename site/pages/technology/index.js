@@ -68,15 +68,7 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
               technologies our team think are adding value.
             </P>
           </div>
-          <div className={styles.hubspotButtonWrapper}>
-            <HubspotButton
-              analyticsTitle="RoundtablePDFLink"
-              analyticsCategory="TechnologyPage"
-              hubspotTitle="roundtableApril2018"
-              className={styles.readPdfReportWrapper}
-              gaTracking={trackPDFReportClicks}
-            />
-          </div>
+          <HubspotButton hubspotName="roundtable" gaTracking={trackPDFReportClicks} />
         </div>
       </div>
     </GreenSlice>

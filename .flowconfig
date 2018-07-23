@@ -5,6 +5,7 @@
 
 [options]
 module.name_mapper.extension='ejs' -> 'empty/function'
+module.name_mapper.extension='md' -> 'empty/function'
 suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
 
 [libs]

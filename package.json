@@ -7,9 +7,17 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "start": "make dev",
-    "badger": "node dev/badger.js"
+    "badger": "node dev/badger.js",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-knobs": "^3.4.8",
+    "@storybook/addon-notes": "^3.4.8",
+    "@storybook/addons": "^3.4.8",
+    "@storybook/react": "^3.4.8",
+    "@storybook/storybook-deployer": "^2.3.0",
     "assets-webpack-plugin": "^3.5.1",
     "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.3",
@@ -140,9 +148,10 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "<rootDir>/services/**/*.{js,jsx}",
-      "<rootDir>/site/**/*.{js,jsx}",
-      "<rootDir>/state/**/*.{js,jsx}"
+      "services/**/*.{js,jsx}",
+      "site/**/*.{js,jsx}",
+      "state/**/*.{js,jsx}",
+      "!**/*.stories.{js,jsx}"
     ],
     "moduleNameMapper": {
       "\\.(css)$": "identity-obj-proxy"

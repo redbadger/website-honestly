@@ -6,17 +6,17 @@ import styles from './style.css';
 import HubspotButtons from './hubspot-buttons';
 
 type HubspotButtonProps = {
-  className?: string,
-  hubspotTitle: string,
-  gaTracking: Function,
+  hubspotName: string,
+  gaTracking?: Function,
 };
 
-const HubspotButton = ({ className, hubspotTitle, gaTracking }: HubspotButtonProps) => (
-  <div
-    className={`${styles.hubspotBtn} ${className || ''}`}
-    onClick={gaTracking}
-    dangerouslySetInnerHTML={HubspotButtons[`${hubspotTitle}`]}
-  />
-);
+const HubspotButton = ({ hubspotName, gaTracking }: HubspotButtonProps) =>
+  HubspotButtons[hubspotName] && (
+    <div
+      className={`${styles.hubspotBtn} ${styles[`${hubspotName}BtnWrapper`] || ''}`}
+      onClick={gaTracking}
+      dangerouslySetInnerHTML={HubspotButtons[hubspotName]}
+    />
+  );
 
 export { HubspotButton };
