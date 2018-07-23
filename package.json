@@ -148,9 +148,10 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "<rootDir>/services/**/*.{js,jsx}",
-      "<rootDir>/site/**/*.{js,jsx}",
-      "<rootDir>/state/**/*.{js,jsx}"
+      "services/**/*.{js,jsx}",
+      "site/**/*.{js,jsx}",
+      "state/**/*.{js,jsx}",
+      "!**/*.stories.{js,jsx}"
     ],
     "moduleNameMapper": {
       "\\.(css)$": "identity-obj-proxy"
