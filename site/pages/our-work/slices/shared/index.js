@@ -14,8 +14,8 @@ type Props = {
 };
 
 export const SliceContainer = ({ children, layout = 'row', flushBottom = false, to }: Props) => (
-  <div className={flushBottom ? styles.caseStudyContainerFlushBottom : styles.caseStudyContainer}>
-    <Link to={to} className={classNames(styles.caseStudyContent, styles[layout])}>
+  <div className={flushBottom ? styles.containerFlushBottom : styles.container}>
+    <Link to={to} className={classNames(styles.content, styles[layout])}>
       {children}
     </Link>
   </div>

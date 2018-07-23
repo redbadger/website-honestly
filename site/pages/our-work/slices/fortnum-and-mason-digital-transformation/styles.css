@@ -5,17 +5,17 @@
   width: 180px;
 }
 
-.caseStudyContent {
-  composes: caseStudyContent from '../shared/styles.css';
+.content {
+  composes: content from '../shared/styles.css';
 }
 
-.caseStudyTextContainer {
-  composes: caseStudyTextContainer from '../shared/styles.css';
+.textContainer {
+  composes: textContainer from '../shared/styles.css';
   padding: 0;
   margin: 0;
 }
 
-.caseStudyTextContainerHeader {
+.textContainerHeader {
   composes: fontL from '../../../../css/typography/_fonts.css';
   composes: serif from '../../../../css/typography/_fonts.css';
   color: badgerBlack;
@@ -31,12 +31,12 @@
     text-align: center;
   }
 
-  .caseStudyTextContainer {
+  .textContainer {
     flex-basis: 100%;
     text-align: center;
   }
 
-  .caseStudyContent {
+  .content {
     flex-direction: row;
     margin: 0;
     padding: 0;

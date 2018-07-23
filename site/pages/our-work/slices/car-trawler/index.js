@@ -9,10 +9,8 @@ import carTrawlerImage from './images/carTrawler.jpg';
 
 const CarTrawlerSlice = () => (
   <SliceContainer to="carTrawlerCaseStudy" layout="row-reverse">
-    <div className={styles.caseStudyTextContainerReverse}>
-      <h2 className={styles.caseStudyTextContainerHeader}>
-        Complete CMS control for travel brands
-      </h2>
+    <div className={styles.textContainerReverse}>
+      <h2 className={styles.textContainerHeader}>Complete CMS control for travel brands</h2>
       <p className={styles.description}>
         Find out how we demonstrated value with a working prototype in one week and delivered a
         complete CMS control for travel brands within only 5 months.

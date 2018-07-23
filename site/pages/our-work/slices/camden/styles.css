@@ -13,8 +13,8 @@
   max-width: 260px;
 }
 
-.caseStudyTextContainerHeader {
-  composes: caseStudyTextContainerHeader from '../shared/styles.css';
+.textContainerHeader {
+  composes: textContainerHeader from '../shared/styles.css';
   margin-top: 30px;
 }
 
@@ -27,7 +27,7 @@
     max-width: 400px;
   }
 
-  .caseStudyTextContainerHeader {
+  .textContainerHeader {
     margin-top: 40px;
   }
 }

@@ -10,11 +10,9 @@ import bankGif from './images/bank.gif';
 export default function Bank() {
   return (
     <SliceContainer to="bankCaseStudy">
-      <div className={styles.caseStudyTextContainer}>
+      <div className={styles.textContainer}>
         <div>
-          <h2 className={styles.caseStudyTextContainerHeader}>
-            Digital transformation in retail banking
-          </h2>
+          <h2 className={styles.textContainerHeader}>Digital transformation in retail banking</h2>
           <p className={styles.description}>
             Discover how we delivered quality digital products to customers quickly, built
             capability and changed the culture to increase business efficiency in one of the world’s

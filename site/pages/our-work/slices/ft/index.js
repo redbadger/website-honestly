@@ -10,12 +10,10 @@ import ftProjectImage from './images/meeting.png';
 
 export default () => (
   <SliceContainer to="financialTimesCaseStudy" layout="row-reverse">
-    <div className={sharedStyles.caseStudyTextContainer}>
+    <div className={sharedStyles.textContainer}>
       <div>
         <img src={ftLogo} className={styles.clientLogo} alt="Financial Times logo" />
-        <h2 className={sharedStyles.caseStudyTextContainerHeader}>
-          Lasting change for a media giant
-        </h2>
+        <h2 className={sharedStyles.textContainerHeader}>Lasting change for a media giant</h2>
         <p className={sharedStyles.description}>
           The Financial Times (FT) is one of the world’s best known and most respected news
           publications. The ‘pink paper’ has a good existing online offering with total circulation

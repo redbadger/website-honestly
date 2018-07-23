@@ -9,12 +9,12 @@ import skyLogo from './images/sky.png';
 
 export default function CaseStudySkySlice() {
   return (
-    <div className={sharedStyles.caseStudyContainer}>
-      <div className={styles.caseStudyContent}>
-        <div className={styles.caseStudyTextContainer}>
+    <div className={sharedStyles.container}>
+      <div className={styles.content}>
+        <div className={styles.textContainer}>
           <Link to="skyCMSCaseStudy">
             <img src={skyLogo} className={styles.clientLogo} alt="Sky logo" />
-            <h2 className={styles.caseStudyTextContainerHeader}>
+            <h2 className={styles.textContainerHeader}>
               A modern CMS that is the foundation that supports both customers and the internal team
             </h2>
             <p className={sharedStyles.description}>

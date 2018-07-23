@@ -1,14 +1,14 @@
 @value badgerBlack, badgerWhite, badgerRedOnWhite, linesOnWhite from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
-.caseStudyContainerFlushBottom,
-.caseStudyContainer {
+.containerFlushBottom,
+.container {
   max-width: 1100px;
   justify-content: center;
   margin: 0 auto;
 }
 
-.caseStudyContent {
+.content {
   display: flex;
   max-width: containerMaxWidth;
   width: 100%;
@@ -36,13 +36,13 @@
   margin-top: 15px;
 }
 
-.caseStudyTextContainerReverse,
-.caseStudyTextContainer {
+.textContainerReverse,
+.textContainer {
   padding: 0;
   margin-top: 30px;
 }
 
-.caseStudyTextContainerHeader {
+.textContainerHeader {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: serif from '../../../../css/typography/_fonts.css';
   color: badgerBlack;
@@ -84,24 +84,24 @@
     flex-direction: row-reverse;
   }
 
-  .caseStudyContainer {
+  .container {
     padding: 60px 0 60px;
     border-bottom: 1px solid linesOnWhite;
   }
 
-  .caseStudyContainerFlushBottom {
+  .containerFlushBottom {
     padding: 60px 0 0;
     border-bottom: 1px solid linesOnWhite;
   }
 
-  .caseStudyContent {
+  .content {
     display: flex;
     margin: 0;
     padding: 0;
   }
 
-  .caseStudyTextContainerReverse,
-  .caseStudyTextContainer {
+  .textContainerReverse,
+  .textContainer {
     margin-top: 0;
     padding: 0 30px;
     flex-basis: 50%;
@@ -115,7 +115,7 @@
     min-width: 400px;
   }
 
-  .caseStudyTextContainerHeader {
+  .textContainerHeader {
     margin-top: 20px;
   }
 
@@ -131,7 +131,7 @@
 }
 
 @media largeScreen {
-  .caseStudyTextContainerReverse {
+  .textContainerReverse {
     padding-left: 90px;
   }
 }

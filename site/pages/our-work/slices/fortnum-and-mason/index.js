@@ -11,10 +11,10 @@ import { SliceContainer } from '../shared';
 
 export default () => (
   <SliceContainer to="fortnumAndMasonCaseStudy">
-    <div className={styles.caseStudyTextContainer}>
+    <div className={styles.textContainer}>
       <div>
         <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
-        <h2 className={sharedStyles.caseStudyTextContainerHeader}>
+        <h2 className={sharedStyles.textContainerHeader}>
           Fortnum & Mason’s new, elegant website increases revenue and conversion rates
         </h2>
         <p className={styles.description}>

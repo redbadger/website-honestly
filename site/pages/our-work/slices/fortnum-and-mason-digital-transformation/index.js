@@ -9,12 +9,12 @@ import fmLogo from './images/fortnum-mason-logo.png';
 
 export default function CaseStudyFortnumDigitalTransformationSlice() {
   return (
-    <div className={sharedStyles.caseStudyContainer}>
-      <div className={styles.caseStudyContent}>
-        <div className={styles.caseStudyTextContainer}>
+    <div className={sharedStyles.container}>
+      <div className={styles.content}>
+        <div className={styles.textContainer}>
           <Link to="fMTeaCaseStudy">
             <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
-            <h2 className={styles.caseStudyTextContainerHeader}>
+            <h2 className={styles.textContainerHeader}>
               The ongoing digital transformation of a 310-year old retailer
             </h2>
             <p className={sharedStyles.description}>

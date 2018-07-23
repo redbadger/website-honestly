@@ -7,9 +7,9 @@ import retailerImage from './images/retailer.jpg';
 
 const RetailerSlice = () => (
   <SliceContainer to="retailerCaseStudy" layout="row-reverse">
-    <div className={sharedStyles.caseStudyTextContainerReverse}>
+    <div className={sharedStyles.textContainerReverse}>
       <div>
-        <h2 className={sharedStyles.caseStudyTextContainerHeader}>
+        <h2 className={sharedStyles.textContainerHeader}>
           Next generation platform for retail giant
         </h2>
         <p className={sharedStyles.description}>

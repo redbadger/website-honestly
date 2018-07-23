@@ -32,7 +32,7 @@
   display: none;
 }
 
-.caseStudyTextContainer {
+.textContainer {
   padding: 0;
   margin-top: 30px;
 }
@@ -65,7 +65,7 @@
     width: 300px;
   }
 
-  .caseStudyTextContainer {
+  .textContainer {
     margin-top: 0;
     padding: 0 30px;
     width: 60%;
@@ -100,7 +100,7 @@
     width: 800px;
   }
 
-  .caseStudyTextContainer {
+  .textContainer {
     max-width: 500px;
   }
 }
