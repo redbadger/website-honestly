@@ -172,6 +172,11 @@ workflows:
             branches:
               only: /^(?!.*master).*$/ # all branches except master
 
+      - publish_storybook:
+          filters:
+            branches:
+              only: master
+
       - deploy_staging:
           requires:
             - build
@@ -179,7 +184,6 @@ workflows:
             - lint
             - validate_types
             - test
-            - publish_storybook
           filters:
             branches:
               only: master
