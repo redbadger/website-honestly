@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles.css';
 import sharedStyles from '../shared/styles.css';
-import { SliceContainer } from '../shared';
+import Container from '../shared/container';
 
 import retailerImage from './images/retailer.jpg';
 
 const RetailerSlice = () => (
-  <SliceContainer to="retailerCaseStudy" layout="row-reverse">
+  <Container to="retailerCaseStudy" layout="row-reverse">
     <div className={sharedStyles.textContainerReverse}>
       <div>
         <h2 className={sharedStyles.textContainerHeader}>
@@ -34,7 +34,7 @@ const RetailerSlice = () => (
         </div>
       </div>
     </div>
-  </SliceContainer>
+  </Container>
 );
 
 export default RetailerSlice;

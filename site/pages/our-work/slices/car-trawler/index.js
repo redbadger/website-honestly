@@ -3,12 +3,12 @@
 import React from 'react';
 
 import styles from '../shared/styles.css';
-import { SliceContainer } from '../shared';
+import Container from '../shared/container';
 
 import carTrawlerImage from './images/carTrawler.jpg';
 
 const CarTrawlerSlice = () => (
-  <SliceContainer to="carTrawlerCaseStudy" layout="row-reverse">
+  <Container to="carTrawlerCaseStudy" layout="row-reverse">
     <div className={styles.textContainerReverse}>
       <h2 className={styles.textContainerHeader}>Complete CMS control for travel brands</h2>
       <p className={styles.description}>
@@ -24,7 +24,7 @@ const CarTrawlerSlice = () => (
         <img src={carTrawlerImage} alt="Retail giant project snapshot" />
       </div>
     </div>
-  </SliceContainer>
+  </Container>
 );
 
 export default CarTrawlerSlice;

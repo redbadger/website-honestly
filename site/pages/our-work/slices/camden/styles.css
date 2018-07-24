@@ -6,7 +6,6 @@
 
 .imageWrapper {
   composes: imageWrapper from '../shared/styles.css';
-  align-items: flex-end;
 }
 
 .imageWrapper img {

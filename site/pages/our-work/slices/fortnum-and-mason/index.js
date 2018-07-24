@@ -7,10 +7,10 @@ import sharedStyles from '../shared/styles.css';
 import fmLogo from './images/fortnum-mason-logo.png';
 import fmProjectSnapshot from './images/fortnum.png';
 import fmProjectMediumSnapshot from './images/fortnum-medium.png';
-import { SliceContainer } from '../shared';
+import Container from '../shared/container';
 
 export default () => (
-  <SliceContainer to="fortnumAndMasonCaseStudy">
+  <Container to="fortnumAndMasonCaseStudy">
     <div className={styles.textContainer}>
       <div>
         <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
@@ -30,5 +30,5 @@ export default () => (
       <img className={styles.projectBigSmallSnapshot} src={fmProjectSnapshot} alt="" />
       <img className={styles.projectMediumSnapshot} src={fmProjectMediumSnapshot} alt="" />
     </div>
-  </SliceContainer>
+  </Container>
 );

@@ -1,23 +1,6 @@
 @value badgerBlack, badgerWhite, badgerRedOnWhite, linesOnWhite from "../../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
-.containerFlushBottom,
-.container {
-  max-width: 1100px;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.content {
-  display: flex;
-  max-width: containerMaxWidth;
-  width: 100%;
-  flex-direction: column-reverse;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
 .imageWrapper {
   display: flex;
   flex: 1;
@@ -25,15 +8,15 @@
   align-items: center;
 }
 
-.imageContainer {
-  min-width: 260px;
-  position: relative;
-}
-
 .imageWrapper img {
   display: block;
   width: 100%;
   margin-top: 15px;
+}
+
+.imageContainer {
+  min-width: 260px;
+  position: relative;
 }
 
 .textContainerReverse,
@@ -76,30 +59,6 @@
 }
 
 @media mediumScreen {
-  .row {
-    flex-direction: row;
-  }
-
-  .row-reverse {
-    flex-direction: row-reverse;
-  }
-
-  .container {
-    padding: 60px 0 60px;
-    border-bottom: 1px solid linesOnWhite;
-  }
-
-  .containerFlushBottom {
-    padding: 60px 0 0;
-    border-bottom: 1px solid linesOnWhite;
-  }
-
-  .content {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-
   .textContainerReverse,
   .textContainer {
     margin-top: 0;

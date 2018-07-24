@@ -3,13 +3,13 @@
 import React from 'react';
 
 import styles from '../shared/styles.css';
-import { SliceContainer } from '../shared';
+import Container from '../shared/container';
 
 import bankGif from './images/bank.gif';
 
 export default function Bank() {
   return (
-    <SliceContainer to="bankCaseStudy">
+    <Container to="bankCaseStudy">
       <div className={styles.textContainer}>
         <div>
           <h2 className={styles.textContainerHeader}>Digital transformation in retail banking</h2>
@@ -26,6 +26,6 @@ export default function Bank() {
       <div className={styles.imageWrapper}>
         <img className={styles.projectBigSmallSnapshot} src={bankGif} alt="Bank project snapshot" />
       </div>
-    </SliceContainer>
+    </Container>
   );
 }

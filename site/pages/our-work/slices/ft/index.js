@@ -4,12 +4,12 @@ import React from 'react';
 
 import sharedStyles from '../shared/styles.css';
 import styles from './styles.css';
-import { SliceContainer } from '../shared';
+import Container from '../shared/container';
 import ftLogo from './images/ft-logo.png';
 import ftProjectImage from './images/meeting.png';
 
 export default () => (
-  <SliceContainer to="financialTimesCaseStudy" layout="row-reverse">
+  <Container to="financialTimesCaseStudy" layout="row-reverse">
     <div className={sharedStyles.textContainer}>
       <div>
         <img src={ftLogo} className={styles.clientLogo} alt="Financial Times logo" />
@@ -27,5 +27,5 @@ export default () => (
     <div className={styles.imageWrapper}>
       <img src={ftProjectImage} alt="Financial Times project snapshot" />
     </div>
-  </SliceContainer>
+  </Container>
 );

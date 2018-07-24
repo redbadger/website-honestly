@@ -4,13 +4,13 @@ import React from 'react';
 
 import sharedStyles from '../shared/styles.css';
 import styles from './styles.css';
-import { SliceContainer } from '../shared';
+import Container from '../shared/container';
 
 import camdenLogo from './images/camden_market.png';
 import camdenProjectScreenshot from './images/camden.png';
 
 export default () => (
-  <SliceContainer to="camdenMarketCaseStudy" layout="row" flushBottom>
+  <Container to="camdenMarketCaseStudy" layout="row" paddingBottom={false}>
     <div className={sharedStyles.textContainer}>
       <div>
         <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
@@ -28,5 +28,5 @@ export default () => (
     <div className={styles.imageWrapper}>
       <img src={camdenProjectScreenshot} alt="Camden project screenshot" />
     </div>
-  </SliceContainer>
+  </Container>
 );
