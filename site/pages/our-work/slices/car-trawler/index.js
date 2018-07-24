@@ -3,7 +3,7 @@
 import React from 'react';
 
 import styles from '../shared/styles.css';
-import Container from '../shared/container';
+import { Container, Description } from '../shared';
 
 import carTrawlerImage from './images/carTrawler.jpg';
 
@@ -11,10 +11,10 @@ const CarTrawlerSlice = () => (
   <Container to="carTrawlerCaseStudy" layout="row-reverse">
     <div className={styles.textContainerReverse}>
       <h2 className={styles.textContainerHeader}>Complete CMS control for travel brands</h2>
-      <p className={styles.description}>
+      <Description>
         Find out how we demonstrated value with a working prototype in one week and delivered a
         complete CMS control for travel brands within only 5 months.
-      </p>
+      </Description>
       <div className={styles.links}>
         <p className={styles.readmore}>Read more</p>
       </div>

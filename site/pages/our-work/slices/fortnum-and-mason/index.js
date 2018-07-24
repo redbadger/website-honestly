@@ -7,7 +7,7 @@ import sharedStyles from '../shared/styles.css';
 import fmLogo from './images/fortnum-mason-logo.png';
 import fmProjectSnapshot from './images/fortnum.png';
 import fmProjectMediumSnapshot from './images/fortnum-medium.png';
-import Container from '../shared/container';
+import { Container, Description } from '../shared';
 
 export default () => (
   <Container to="fortnumAndMasonCaseStudy">
@@ -17,10 +17,10 @@ export default () => (
         <h2 className={sharedStyles.textContainerHeader}>
           Fortnum & Mason’s new, elegant website increases revenue and conversion rates
         </h2>
-        <p className={styles.description}>
+        <Description>
           A scalable, highly flexible new site was needed, and very quickly to avoid more lost
           revenue.
-        </p>
+        </Description>
         <div className={sharedStyles.links}>
           <p className={sharedStyles.readmore}>Read more</p>
         </div>

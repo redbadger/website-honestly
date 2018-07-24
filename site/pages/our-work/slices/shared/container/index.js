@@ -7,7 +7,7 @@ import Link from '../../../../../components/link';
 import styles from './styles.css';
 
 type Props = {
-  children: React.ChildrenArray<React.Element<'*'>>,
+  children: React.Node,
   layout?: 'row' | 'row-reverse',
   to: string,
   paddingBottom?: boolean,

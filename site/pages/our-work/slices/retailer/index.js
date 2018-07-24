@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 import sharedStyles from '../shared/styles.css';
-import Container from '../shared/container';
+import { Container, Description } from '../shared';
 
 import retailerImage from './images/retailer.jpg';
 
@@ -12,10 +12,10 @@ const RetailerSlice = () => (
         <h2 className={sharedStyles.textContainerHeader}>
           Next generation platform for retail giant
         </h2>
-        <p className={sharedStyles.description}>
+        <Description>
           Find out how we helped clear a five year backlog in eight months and delivered a mobile
           first application across seven countries.
-        </p>
+        </Description>
         <div className={sharedStyles.links}>
           <p className={sharedStyles.readmore}>Read more</p>
         </div>

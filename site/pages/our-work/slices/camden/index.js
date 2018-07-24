@@ -4,7 +4,7 @@ import React from 'react';
 
 import sharedStyles from '../shared/styles.css';
 import styles from './styles.css';
-import Container from '../shared/container';
+import { Container, Description } from '../shared';
 
 import camdenLogo from './images/camden_market.png';
 import camdenProjectScreenshot from './images/camden.png';
@@ -15,11 +15,11 @@ export default () => (
       <div>
         <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
         <h2 className={styles.textContainerHeader}>Taking steps towards a digital future</h2>
-        <p className={sharedStyles.description}>
+        <Description>
           Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive more footfall
           from Londoners to the physical market by showcasing the eclectic range of goods, food and
           events.
-        </p>
+        </Description>
         <div className={sharedStyles.links}>
           <p className={sharedStyles.readmore}>Read more</p>
         </div>

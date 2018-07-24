@@ -1,0 +1,23 @@
+@value badgerBlack from "../../../../../css/_colors.css";
+@value mediumScreen from "../../../../../css/_sizes.css";
+
+.description {
+  composes: fontXS from '../../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  margin-top: 10px;
+}
+
+.descriptionMaxWidth {
+  composes: description;
+}
+
+@media mediumScreen {
+  .description {
+    margin-top: 20px;
+  }
+
+  .descriptionMaxWidth {
+    max-width: 300px;
+  }
+}
