@@ -6,11 +6,11 @@ import styles from './styles.css';
 import fmLogo from './images/fortnum-mason-logo.png';
 import fmProjectSnapshot from './images/fortnum.png';
 import fmProjectMediumSnapshot from './images/fortnum-medium.png';
-import { Container, Description, ReadMore, Header } from '../shared';
+import { Container, Description, ReadMore, Header, Text } from '../shared';
 
 export default () => (
   <Container to="fortnumAndMasonCaseStudy">
-    <div className={styles.textContainer}>
+    <Text>
       <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
       <Header>Fortnum & Mason’s new, elegant website increases revenue and conversion rates</Header>
       <Description>
@@ -18,7 +18,7 @@ export default () => (
         revenue.
       </Description>
       <ReadMore />
-    </div>
+    </Text>
     <div className={styles.imageWrapper}>
       <img className={styles.projectBigSmallSnapshot} src={fmProjectSnapshot} alt="" />
       <img className={styles.projectMediumSnapshot} src={fmProjectMediumSnapshot} alt="" />

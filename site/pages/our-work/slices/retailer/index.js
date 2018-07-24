@@ -1,20 +1,20 @@
 import React from 'react';
 import styles from './styles.css';
 import sharedStyles from '../shared/styles.css';
-import { Container, Description, ReadMore, Header } from '../shared';
+import { Container, Description, ReadMore, Header, Text } from '../shared';
 
 import retailerImage from './images/retailer.jpg';
 
 const RetailerSlice = () => (
   <Container to="retailerCaseStudy" layout="row-reverse">
-    <div className={sharedStyles.textContainerReverse}>
+    <Text layout="rightCol">
       <Header>Next generation platform for retail giant</Header>
       <Description>
         Find out how we helped clear a five year backlog in eight months and delivered a mobile
         first application across seven countries.
       </Description>
       <ReadMore />
-    </div>
+    </Text>
     <div className={sharedStyles.imageWrapper}>
       <div className={styles.imageContainer}>
         <img src={retailerImage} alt="Retail giant project snapshot" />
