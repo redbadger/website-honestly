@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 import sharedStyles from '../shared/styles.css';
-import { Container, Description } from '../shared';
+import { Container, Description, ReadMore } from '../shared';
 
 import retailerImage from './images/retailer.jpg';
 
@@ -16,9 +16,7 @@ const RetailerSlice = () => (
           Find out how we helped clear a five year backlog in eight months and delivered a mobile
           first application across seven countries.
         </Description>
-        <div className={sharedStyles.links}>
-          <p className={sharedStyles.readmore}>Read more</p>
-        </div>
+        <ReadMore />
       </div>
     </div>
     <div className={sharedStyles.imageWrapper}>

@@ -4,7 +4,7 @@ import React from 'react';
 
 import sharedStyles from '../shared/styles.css';
 import styles from './styles.css';
-import { Container, Description } from '../shared';
+import { Container, Description, ReadMore } from '../shared';
 import ftLogo from './images/ft-logo.png';
 import ftProjectImage from './images/meeting.png';
 
@@ -19,9 +19,7 @@ export default () => (
           publications. The ‘pink paper’ has a good existing online offering with total circulation
           of over 750k readers, including 550k corporate memberships.
         </Description>
-        <div className={sharedStyles.links}>
-          <p className={sharedStyles.readmore}>Read more</p>
-        </div>
+        <ReadMore />
       </div>
     </div>
     <div className={styles.imageWrapper}>

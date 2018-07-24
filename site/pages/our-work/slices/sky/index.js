@@ -1,9 +1,8 @@
 // @flow
 
 import React from 'react';
-import sharedStyles from '../shared/styles.css';
 import styles from './styles.css';
-import { Container, Description } from '../shared';
+import { Container, Description, ReadMore } from '../shared';
 
 import skyLogo from './images/sky.png';
 
@@ -18,9 +17,7 @@ export default function CaseStudySkySlice() {
         <Description>
           Enabling Sky to manage their content with an amazing customer experience
         </Description>
-        <div className={styles.links}>
-          <p className={sharedStyles.readmore}>Read more</p>
-        </div>
+        <ReadMore />
       </div>
     </Container>
   );

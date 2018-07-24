@@ -7,7 +7,7 @@ import sharedStyles from '../shared/styles.css';
 import fmLogo from './images/fortnum-mason-logo.png';
 import fmProjectSnapshot from './images/fortnum.png';
 import fmProjectMediumSnapshot from './images/fortnum-medium.png';
-import { Container, Description } from '../shared';
+import { Container, Description, ReadMore } from '../shared';
 
 export default () => (
   <Container to="fortnumAndMasonCaseStudy">
@@ -21,9 +21,7 @@ export default () => (
           A scalable, highly flexible new site was needed, and very quickly to avoid more lost
           revenue.
         </Description>
-        <div className={sharedStyles.links}>
-          <p className={sharedStyles.readmore}>Read more</p>
-        </div>
+        <ReadMore />
       </div>
     </div>
     <div className={styles.imageWrapper}>

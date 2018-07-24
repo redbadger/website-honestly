@@ -3,7 +3,7 @@
 import React from 'react';
 
 import styles from '../shared/styles.css';
-import { Container, Description } from '../shared';
+import { Container, Description, ReadMore } from '../shared';
 
 import bankGif from './images/bank.gif';
 
@@ -18,9 +18,7 @@ export default function Bank() {
             capability and changed the culture to increase business efficiency in one of the world’s
             largest banks.
           </Description>
-          <div className={styles.links}>
-            <p className={styles.readmore}>Read more</p>
-          </div>
+          <ReadMore />
         </div>
       </div>
       <div className={styles.imageWrapper}>

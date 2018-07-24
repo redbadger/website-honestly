@@ -4,7 +4,7 @@ import React from 'react';
 
 import sharedStyles from '../shared/styles.css';
 import styles from './styles.css';
-import { Container, Description } from '../shared';
+import { Container, Description, ReadMore } from '../shared';
 
 import camdenLogo from './images/camden_market.png';
 import camdenProjectScreenshot from './images/camden.png';
@@ -20,9 +20,7 @@ export default () => (
           from Londoners to the physical market by showcasing the eclectic range of goods, food and
           events.
         </Description>
-        <div className={sharedStyles.links}>
-          <p className={sharedStyles.readmore}>Read more</p>
-        </div>
+        <ReadMore />
       </div>
     </div>
     <div className={styles.imageWrapper}>
