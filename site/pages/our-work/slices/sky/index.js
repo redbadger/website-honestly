@@ -5,7 +5,7 @@ import React from 'react';
 import { Container, Description, ReadMore, Header, Text, Logo } from '../shared';
 import skyLogo from './images/sky.png';
 
-export default function CaseStudySkySlice() {
+export default function Sky() {
   return (
     <Container to="skyCMSCaseStudy">
       <Text layout="fullWidth">

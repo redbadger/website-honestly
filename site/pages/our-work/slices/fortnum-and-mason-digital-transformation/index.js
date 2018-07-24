@@ -4,7 +4,7 @@ import React from 'react';
 import { Container, Description, ReadMore, Header, Text, Logo } from '../shared';
 import fmLogo from './images/fortnum-mason-logo.png';
 
-export default function CaseStudyFortnumDigitalTransformationSlice() {
+export default function FortnumDigitalTransformation() {
   return (
     <Container to="fMTeaCaseStudy">
       <Text layout="fullWidth">
