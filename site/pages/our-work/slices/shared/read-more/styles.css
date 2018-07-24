@@ -20,10 +20,18 @@
   padding-bottom: 30px;
 }
 
+.linksCenter {
+  composes: links;
+}
+
 @media mediumScreen {
   .links {
     text-align: left;
     border: none;
     padding-bottom: 0;
+  }
+
+  .linksCenter {
+    text-align: center;
   }
 }

@@ -3,9 +3,13 @@
 import React from 'react';
 import styles from './styles.css';
 
-export default function ReadMore() {
+type Props = {
+  center: boolean,
+};
+
+export default function ReadMore({ center = false }: Props) {
   return (
-    <div className={styles.links}>
+    <div className={center ? styles.linksCenter : styles.links}>
       <p className={styles.readmore}>Read more</p>
     </div>
   );

@@ -17,7 +17,7 @@ export default function CaseStudySkySlice() {
         <Description>
           Enabling Sky to manage their content with an amazing customer experience
         </Description>
-        <ReadMore />
+        <ReadMore center />
       </div>
     </Container>
   );

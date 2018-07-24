@@ -16,7 +16,7 @@ export default function CaseStudyFortnumDigitalTransformationSlice() {
         <Description>
           Discover how we helped customers find products faster and drive sales of tea.
         </Description>
-        <ReadMore />
+        <ReadMore center />
       </div>
     </Container>
   );
