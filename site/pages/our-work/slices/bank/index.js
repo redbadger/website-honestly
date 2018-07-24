@@ -2,9 +2,7 @@
 
 import React from 'react';
 
-import styles from '../shared/styles.css';
-import { Container, Description, ReadMore, Header, Text } from '../shared';
-
+import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
 import bankGif from './images/bank.gif';
 
 export default function Bank() {
@@ -19,9 +17,7 @@ export default function Bank() {
         </Description>
         <ReadMore />
       </Text>
-      <div className={styles.imageWrapper}>
-        <img className={styles.projectBigSmallSnapshot} src={bankGif} alt="Bank project snapshot" />
-      </div>
+      <Image src={bankGif} alt="Bank project snapshot" />
     </Container>
   );
 }

@@ -4,9 +4,8 @@ import React from 'react';
 
 import styles from './styles.css';
 import fmLogo from './images/fortnum-mason-logo.png';
-import fmProjectSnapshot from './images/fortnum.png';
-import fmProjectMediumSnapshot from './images/fortnum-medium.png';
 import { Container, Description, ReadMore, Header, Text } from '../shared';
+import Image from './image';
 
 export default () => (
   <Container to="fortnumAndMasonCaseStudy">
@@ -19,9 +18,6 @@ export default () => (
       </Description>
       <ReadMore />
     </Text>
-    <div className={styles.imageWrapper}>
-      <img className={styles.projectBigSmallSnapshot} src={fmProjectSnapshot} alt="" />
-      <img className={styles.projectMediumSnapshot} src={fmProjectMediumSnapshot} alt="" />
-    </div>
+    <Image />
   </Container>
 );

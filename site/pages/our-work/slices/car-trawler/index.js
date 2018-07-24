@@ -2,9 +2,7 @@
 
 import React from 'react';
 
-import styles from '../shared/styles.css';
-import { Container, Description, ReadMore, Header, Text } from '../shared';
-
+import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
 import carTrawlerImage from './images/carTrawler.jpg';
 
 const CarTrawlerSlice = () => (
@@ -17,11 +15,7 @@ const CarTrawlerSlice = () => (
       </Description>
       <ReadMore />
     </Text>
-    <div className={styles.imageWrapper}>
-      <div className={styles.imageContainer}>
-        <img src={carTrawlerImage} alt="Retail giant project snapshot" />
-      </div>
-    </div>
+    <Image src={carTrawlerImage} alt="Retail giant project snapshot" />
   </Container>
 );
 

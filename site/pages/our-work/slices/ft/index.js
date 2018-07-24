@@ -3,13 +3,13 @@
 import React from 'react';
 
 import styles from './styles.css';
-import { Container, Description, ReadMore, Header, Text } from '../shared';
+import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
 import ftLogo from './images/ft-logo.png';
 import ftProjectImage from './images/meeting.png';
 
 export default () => (
   <Container to="financialTimesCaseStudy" layout="row-reverse">
-    <Text>
+    <Text layout="rightCol">
       <img src={ftLogo} className={styles.clientLogo} alt="Financial Times logo" />
       <Header>Lasting change for a media giant</Header>
       <Description>
@@ -19,8 +19,6 @@ export default () => (
       </Description>
       <ReadMore />
     </Text>
-    <div className={styles.imageWrapper}>
-      <img src={ftProjectImage} alt="Financial Times project snapshot" />
-    </div>
+    <Image src={ftProjectImage} alt="Financial Times project snapshot" />
   </Container>
 );

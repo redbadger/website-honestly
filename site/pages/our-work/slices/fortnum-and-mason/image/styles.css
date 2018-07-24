@@ -1,9 +1,5 @@
-@value badgerBlack from "../../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
-
-.clientLogo {
-  width: 180px;
-}
+@value badgerBlack from "../../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
 
 .imageWrapper {
   display: flex;
@@ -17,11 +13,11 @@
   width: 70%;
 }
 
-.projectBigSmallSnapshot {
+.fortnum {
   display: block;
 }
 
-.projectMediumSnapshot {
+.fortnumMedium {
   display: none;
 }
 
@@ -30,11 +26,11 @@
     width: 230px;
   }
 
-  .projectBigSmallSnapshot {
+  .fortnum {
     display: none;
   }
 
-  .projectMediumSnapshot {
+  .fortnumMedium {
     display: block;
   }
 
@@ -56,11 +52,11 @@
 }
 
 @media screen and (min-width: 1150px) {
-  .projectBigSmallSnapshot {
+  .fortnum {
     display: block;
   }
 
-  .projectMediumSnapshot {
+  .fortnumMedium {
     display: none;
   }
 
@@ -73,9 +69,5 @@
 
   .imageWrapper img {
     width: 800px;
-  }
-
-  .textContainer {
-    max-width: 500px;
   }
 }

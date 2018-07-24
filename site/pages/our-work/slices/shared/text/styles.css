@@ -16,7 +16,7 @@
 @media mediumScreen {
   .leftCol {
     margin-top: 0;
-    padding: 0 30px;
+    padding: 0 90px 0 0;
     flex-basis: 50%;
   }
 
@@ -24,10 +24,8 @@
     flex-basis: 100%;
     text-align: center;
   }
-}
 
-@media largeScreen {
   .rightCol {
-    padding-left: 90px;
+    padding: 0 0 0 90px;
   }
 }

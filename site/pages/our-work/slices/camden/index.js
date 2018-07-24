@@ -3,7 +3,7 @@
 import React from 'react';
 
 import styles from './styles.css';
-import { Container, Description, ReadMore, Header, Text } from '../shared';
+import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
 
 import camdenLogo from './images/camden_market.png';
 import camdenProjectScreenshot from './images/camden.png';
@@ -19,8 +19,6 @@ export default () => (
       </Description>
       <ReadMore />
     </Text>
-    <div className={styles.imageWrapper}>
-      <img src={camdenProjectScreenshot} alt="Camden project screenshot" />
-    </div>
+    <Image layout="restricted" src={camdenProjectScreenshot} alt="Camden project screenshot" />
   </Container>
 );

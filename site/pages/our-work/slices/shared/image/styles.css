@@ -1,0 +1,28 @@
+@value mediumScreen from "../../../../../css/_sizes.css";
+
+.base {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.restricted {
+  composes: base;
+  max-width: 260px;
+}
+
+.base img {
+  display: block;
+  width: 100%;
+}
+
+@media mediumScreen {
+  .base {
+    flex-basis: 50%;
+  }
+
+  .restricted {
+    max-width: 400px;
+  }
+}

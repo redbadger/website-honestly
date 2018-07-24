@@ -1,5 +1,5 @@
-@value badgerBlack from "../../../../css/_colors.css";
-@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+@value badgerBlack from "../../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
 
 _:-ms-fullscreen,
 :root .imageWrapper {
@@ -39,19 +39,23 @@ _:-ms-fullscreen,
 }
 
 .imagePercentage {
-  composes: fontM from '../../../../css/typography/_fonts.css';
-  composes: serif from '../../../../css/typography/_fonts.css';
+  composes: fontM from '../../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../../css/typography/_fonts.css';
   color: badgerBlack;
 }
 
 .imageText {
-  composes: fontS from '../../../../css/typography/_fonts.css';
-  composes: lightSerif from '../../../../css/typography/_fonts.css';
+  composes: fontS from '../../../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../../../css/typography/_fonts.css';
   color: badgerBlack;
   font-size: 16px;
 }
 
 @media mediumScreen {
+  .imageWrapper {
+    flex-basis: 50%;
+  }
+
   .imageContainer {
     min-width: 400px;
   }

@@ -1,9 +1,6 @@
 import React from 'react';
-import styles from './styles.css';
-import sharedStyles from '../shared/styles.css';
 import { Container, Description, ReadMore, Header, Text } from '../shared';
-
-import retailerImage from './images/retailer.jpg';
+import Image from './image';
 
 const RetailerSlice = () => (
   <Container to="retailerCaseStudy" layout="row-reverse">
@@ -15,19 +12,7 @@ const RetailerSlice = () => (
       </Description>
       <ReadMore />
     </Text>
-    <div className={sharedStyles.imageWrapper}>
-      <div className={styles.imageContainer}>
-        <img src={retailerImage} alt="Retail giant project snapshot" />
-        <div className={styles.orders}>
-          <div className={styles.imagePercentage}>+54%</div>
-          <div className={styles.imageText}>Increased orders</div>
-        </div>
-        <div className={styles.visits}>
-          <div className={styles.imagePercentage}>+29%</div>
-          <div className={styles.imageText}>Uplift in visits</div>
-        </div>
-      </div>
-    </div>
+    <Image />
   </Container>
 );
 
