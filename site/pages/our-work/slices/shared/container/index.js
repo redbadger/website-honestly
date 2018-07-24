@@ -10,12 +10,17 @@ type Props = {
   children: React.Node,
   layout?: 'row' | 'row-reverse',
   to: string,
-  paddingBottom?: boolean,
+  removeBottomPadding?: boolean,
 };
 
-export default function Container({ children, to, layout = 'row', paddingBottom = true }: Props) {
+export default function Container({
+  children,
+  to,
+  layout = 'row',
+  removeBottomPadding = false,
+}: Props) {
   return (
-    <div className={paddingBottom ? styles.container : styles.containerNoPaddingBottom}>
+    <div className={removeBottomPadding ? styles.containerNoPaddingBottom : styles.container}>
       <Link to={to} className={cx(styles.content, styles[layout])}>
         {children}
       </Link>

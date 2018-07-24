@@ -1,0 +1,43 @@
+@value mediumScreen from "../../../../../css/_sizes.css";
+
+.logo {
+  margin-bottom: 15px;
+}
+
+.camden {
+  composes: logo;
+  width: 76px;
+}
+
+.fm {
+  composes: logo;
+  width: 180px;
+}
+
+.ft {
+  composes: logo;
+  width: 170px;
+}
+
+.sky {
+  composes: logo;
+  width: 40px;
+}
+
+@media mediumScreen {
+  .camden {
+    width: 123px;
+  }
+
+  .fm {
+    width: 230px;
+  }
+
+  .ft {
+    width: 220px;
+  }
+
+  .sky {
+    width: 70px;
+  }
+}
