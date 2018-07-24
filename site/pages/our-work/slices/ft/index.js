@@ -4,11 +4,12 @@ import React from 'react';
 
 import { Container, Description, ReadMore, Header, Text, Image, Logo } from '../shared';
 import ftProjectImage from './images/meeting.png';
+import ftLogo from './images/ft-logo.png';
 
 export default () => (
   <Container to="financialTimesCaseStudy" layout="row-reverse">
     <Text layout="rightCol">
-      <Logo slice="ft" />
+      <Logo src={ftLogo} slice="ft" />
       <Header>Lasting change for a media giant</Header>
       <Description>
         The Financial Times (FT) is one of the world’s best known and most respected news
