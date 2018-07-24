@@ -17,13 +17,6 @@
   width: 70%;
 }
 
-.description {
-  composes: fontXS from '../../../../css/typography/_fonts.css';
-  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  color: badgerBlack;
-  margin-top: 10px;
-}
-
 .projectBigSmallSnapshot {
   display: block;
 }
@@ -54,11 +47,6 @@
     position: absolute;
     right: 0;
     bottom: 40px;
-  }
-
-  .description {
-    margin-top: 20px;
-    max-width: 300px;
   }
 
   .imageWrapper img {

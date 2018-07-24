@@ -2,7 +2,7 @@
 
 import React from 'react';
 import styles from './styles.css';
-import { Container, Description, ReadMore } from '../shared';
+import { Container, Description, ReadMore, Header } from '../shared';
 import fmLogo from './images/fortnum-mason-logo.png';
 
 export default function CaseStudyFortnumDigitalTransformationSlice() {
@@ -10,9 +10,7 @@ export default function CaseStudyFortnumDigitalTransformationSlice() {
     <Container to="fMTeaCaseStudy">
       <div className={styles.textContainer}>
         <img src={fmLogo} className={styles.clientLogo} alt="Fortnum and Mason logo" />
-        <h2 className={styles.textContainerHeader}>
-          The ongoing digital transformation of a 310-year old retailer
-        </h2>
+        <Header>The ongoing digital transformation of a 310-year old retailer</Header>
         <Description>
           Discover how we helped customers find products faster and drive sales of tea.
         </Description>

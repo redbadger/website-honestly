@@ -3,14 +3,14 @@
 import React from 'react';
 
 import styles from '../shared/styles.css';
-import { Container, Description, ReadMore } from '../shared';
+import { Container, Description, ReadMore, Header } from '../shared';
 
 import carTrawlerImage from './images/carTrawler.jpg';
 
 const CarTrawlerSlice = () => (
   <Container to="carTrawlerCaseStudy" layout="row-reverse">
     <div className={styles.textContainerReverse}>
-      <h2 className={styles.textContainerHeader}>Complete CMS control for travel brands</h2>
+      <Header>Complete CMS control for travel brands</Header>
       <Description>
         Find out how we demonstrated value with a working prototype in one week and delivered a
         complete CMS control for travel brands within only 5 months.

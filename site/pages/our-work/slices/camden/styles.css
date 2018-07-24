@@ -12,11 +12,6 @@
   max-width: 260px;
 }
 
-.textContainerHeader {
-  composes: textContainerHeader from '../shared/styles.css';
-  margin-top: 30px;
-}
-
 @media mediumScreen {
   .camdenLogo {
     width: 123px;
@@ -24,9 +19,5 @@
 
   .imageWrapper img {
     max-width: 400px;
-  }
-
-  .textContainerHeader {
-    margin-top: 40px;
   }
 }
