@@ -5,6 +5,7 @@ import React from 'react';
 import Social from '../../../../components/social';
 import Link from '../../../../components/link';
 import ScrollTracker from '../../../../components/scroll-tracker';
+
 import {
   PageHeading,
   Body,
@@ -18,8 +19,8 @@ import {
 } from '../shared';
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
-import HeaderImg from './header-img';
 
+import HeaderImg from './header-img';
 import davidKirby from './images/david-kirby.jpg';
 import browsingImg from './images/browsing.jpg';
 
