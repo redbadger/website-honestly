@@ -1,0 +1,15 @@
+.articleImage {
+  width: 100%;
+}
+
+.headerImg {
+  position: relative;
+}
+
+.headerImg img {
+  width: 100%;
+  max-width: 980px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}

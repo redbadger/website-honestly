@@ -258,4 +258,12 @@ export const routeDefinitions: Array<RouteDefinition> = [
     route: 'our-work/case-study/car-trawler',
     parentKey: 'ourWorkPage',
   },
+  {
+    title: 'Creating complete CMS control',
+    description:
+      'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
+    key: 'carTrawlerMyAccountCaseStudy',
+    route: 'our-work/case-study/car-trawler-my-account',
+    parentKey: 'ourWorkPage',
+  },
 ];

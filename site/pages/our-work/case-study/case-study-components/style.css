@@ -11,6 +11,7 @@
   max-width: 720px;
   padding-top: 30px;
   padding-bottom: 40px;
+  z-index: 1;
 }
 
 .section {

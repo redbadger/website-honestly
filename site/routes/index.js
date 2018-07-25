@@ -28,6 +28,7 @@ import BMWCaseStudy from '../pages/our-work/case-study/bmw';
 import BBCCaseStudy from '../pages/our-work/case-study/bbc';
 import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
 import CarTrawlerCaseStudy from '../pages/our-work/case-study/car-trawler';
+import CarTrawlerMyAccountCaseStudy from '../pages/our-work/case-study/car-trawler-my-account';
 import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
 import FMTeaCaseStudy from '../pages/our-work/case-study/fortnum-and-mason-digital-transformation';
 import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
@@ -46,6 +47,7 @@ const componentMap = {
   browserNotSupported: BrowserNotSupported,
   camdenMarketCaseStudy: CamdenMarketCaseStudy,
   carTrawlerCaseStudy: CarTrawlerCaseStudy,
+  carTrawlerMyAccountCaseStudy: CarTrawlerMyAccountCaseStudy,
   cookiePolicy: CookiePolicyPage,
   event: EventPage,
   events: Events,
