@@ -1,5 +1,6 @@
 import bankImage from './images/bank.jpg';
 import carTrawlerImage from './images/carTrawler.jpg';
+import carTrawlerMyAccountImage from './images/car-trawler-my-account.jpg';
 import fortnumImage from './images/fortnumReadMore.jpg';
 import fortnumDigitalTransformationImage from './images/fortnumDigitalTransformationReadMore.jpg';
 import financialTimesImage from './images/financialTimesReadMore.jpg';
@@ -19,6 +20,12 @@ const sliceData = {
     name: 'Car Trawler',
     tagline: 'Creating complete CMS control for travel brands',
     image: carTrawlerImage,
+    linkKey: 'carTrawlerCaseStudy',
+  },
+  carTrawlerMyAccount: {
+    name: 'Car Trawler',
+    tagline: 'Creating complete CMS control for travel brands',
+    image: carTrawlerMyAccountImage,
     linkKey: 'carTrawlerCaseStudy',
   },
   fortnumAndMason: {
