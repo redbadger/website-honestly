@@ -4,12 +4,32 @@
 
 .headerImg {
   position: relative;
+  display: flex;
 }
 
 .headerImg img {
-  width: 100%;
-  max-width: 980px;
   display: block;
   margin: 0 auto;
   position: relative;
+  max-height: 400px;
+}
+
+.leftHeaderImgFill {
+  background: url(./images/leftpanel.jpg);
+  background-size: 182px 400px;
+  background-position-x: right;
+  width: 100%;
+  background-repeat-x: repeat;
+  position: relative;
+  right: -1px;
+}
+
+.rightHeaderImgFill {
+  background: url(./images/rightpanel.jpg);
+  background-size: 183px 400px;
+  background-position-x: left;
+  width: 100%;
+  background-repeat-x: repeat;
+  position: relative;
+  left: -1px;
 }

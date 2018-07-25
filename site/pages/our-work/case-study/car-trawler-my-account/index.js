@@ -5,17 +5,8 @@ import React from 'react';
 import Social from '../../../../components/social';
 import Link from '../../../../components/link';
 import ScrollTracker from '../../../../components/scroll-tracker';
-import {
-  PageHeading,
-  Body,
-  Quote,
-  Section,
-  SectionHeading,
-  SectionBody,
-  P,
-  UL,
-} from '../case-study-components';
-import WhatToReadNext from '../../what-to-read-next';
+import { PageHeading, Body, Quote, Section, SectionHeading, SectionBody, P, UL } from '../shared';
+import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import styles from './styles.css';
 
@@ -47,8 +38,9 @@ const CarTrawler = () => (
   <ScrollTracker>
     <Social {...social} />
     <div className={styles.headerImg}>
+      <div className={styles.leftHeaderImgFill} />
       <img src={headerWide} alt="" />
-      <div className={styles.headerImgFill} />
+      <div className={styles.rightHeaderImgFill} />
     </div>
     <Body>
       <PageHeading>
