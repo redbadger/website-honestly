@@ -1,4 +1,5 @@
 // @flow
+
 import * as React from 'react';
 import styles from './style.css';
 import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';

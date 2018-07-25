@@ -1,8 +1,8 @@
-@value badgerRedOnWhite, badgerBlack, grey from '../../../css/_colors.css';
-@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+@value badgerRedOnWhite, badgerBlack, grey from '../../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
 
 .whatNext {
-  composes: dividerGrey from '../../../css/_divider.css';
+  composes: dividerGrey from '../../../../../css/_divider.css';
   padding: 60px 20px;
   text-align: center;
   background-color: grey;
@@ -30,8 +30,8 @@
 }
 
 .whatNext__caption {
-  composes: fontXS from '../../../css/typography/_fonts.css';
-  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../../css/typography/_fonts.css';
   color: badgerRedOnWhite;
   text-transform: uppercase;
   text-align: left;
@@ -59,12 +59,12 @@
 }
 
 .whatNext__title {
-  composes: fontM2 from '../../../css/typography/_fonts.css';
-  composes: serif from '../../../css/typography/_fonts.css';
+  composes: fontM2 from '../../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../../css/typography/_fonts.css';
 }
 
 .whatNext__button {
-  composes: primaryButton from '../../../css/_links.css';
+  composes: primaryButton from '../../../../../css/_links.css';
 }
 
 .whatNext__arrow {

@@ -46,26 +46,28 @@
 /* Impressions counter required by the license */
 
 @value mediumScreen, largeScreen from "../_sizes.css";
-@import url("//hello.myfonts.net/count/322627");
+@import url('//hello.myfonts.net/count/322627');
 
 @font-face {
   font-family: 'ProximaNova-Bold';
-  src: url('./fonts/322627_0_0.woff2') format('woff2'), url('./fonts/322627_0_0.woff') format('woff'), url('./fonts/322627_0_0.ttf') format('truetype');
+  src: url('./fonts/322627_0_0.woff2') format('woff2'),
+    url('./fonts/322627_0_0.woff') format('woff'), url('./fonts/322627_0_0.ttf') format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'ProximaNova-Light';
-  src: url('./fonts/322627_1_0.woff2') format('woff2'), url('./fonts/322627_1_0.woff') format('woff'), url('./fonts/322627_1_0.ttf') format('truetype');
+  src: url('./fonts/322627_1_0.woff2') format('woff2'),
+    url('./fonts/322627_1_0.woff') format('woff'), url('./fonts/322627_1_0.ttf') format('truetype');
 }
 
 .serif {
-  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
   font-weight: 800;
 }
 
 .lightSerif {
-  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
   font-weight: 300;
 }
 
@@ -87,12 +89,14 @@
   line-height: 1.2em;
 }
 
-.fontM, .fontStaticM {
+.fontM,
+.fontStaticM {
   font-size: 24px;
   line-height: 1.2em;
 }
 
-.fontM2, .fontStaticM2 {
+.fontM2,
+.fontStaticM2 {
   font-size: 20px;
   line-height: 1.2em;
 }
@@ -126,7 +130,8 @@
     font-size: 30px;
   }
 
-  .fontM, .fontStaticM {
+  .fontM,
+  .fontStaticM {
     font-size: 30px;
   }
 
