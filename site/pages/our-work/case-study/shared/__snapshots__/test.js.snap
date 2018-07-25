@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/case-study/shared renders ArticleImg correctly 1`] = `
+<img
+  alt="A sunset"
+  className="articleImg"
+  src="/path/to/image"
+/>
+`;
+
+exports[`pages/our-work/case-study/shared renders Body correctly 1`] = `
+<div
+  className="body"
+>
+  <PageHeading>
+    Heading
+  </PageHeading>
+</div>
+`;
+
+exports[`pages/our-work/case-study/shared renders H3 correctly 1`] = `
+<H3
+  type="fontS2"
+>
+  heading
+</H3>
+`;
+
+exports[`pages/our-work/case-study/shared renders P correctly 1`] = `
+<P
+  customClass="paragraph"
+>
+  Hey you
+</P>
+`;
+
+exports[`pages/our-work/case-study/shared renders PageHeading correctly 1`] = `
+<div
+  className="heading"
+>
+  <H1
+    type="fontL"
+  >
+    Heading
+  </H1>
+</div>
+`;
+
+exports[`pages/our-work/case-study/shared renders Quote correctly 1`] = `
+<Quote
+  author={
+    Object {
+      "name": "James",
+      "title": "Big Boss",
+    }
+  }
+  className="quote"
+  text="Great job"
+/>
+`;
+
+exports[`pages/our-work/case-study/shared renders Section correctly 1`] = `
+<div
+  className="section"
+>
+  <SectionBody>
+    Body
+  </SectionBody>
+</div>
+`;
+
+exports[`pages/our-work/case-study/shared renders SectionBody correctly 1`] = `
+<div
+  className="sectionBody"
+>
+  Body
+</div>
+`;
+
+exports[`pages/our-work/case-study/shared renders SectionHeading correctly 1`] = `
+<h2
+  className="sectionHeading"
+>
+  <span
+    className="redTitle"
+  >
+    I am subheading
+  </span>
+  I am heading
+</h2>
+`;
+
+exports[`pages/our-work/case-study/shared renders UL correctly 1`] = `
+<ul
+  className="list"
+>
+  <li>
+    List item
+  </li>
+</ul>
+`;

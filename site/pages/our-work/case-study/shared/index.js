@@ -9,7 +9,7 @@ import ContactBox from '../../../../components/contact-box';
 import BaseQuote from '../../../../components/quote';
 import type { Author } from '../../../../components/quote';
 
-export const PageHeading = ({ children }: { children: string }): React.Element<'div'> => (
+export const PageHeading = ({ children }: { children: string }) => (
   <div className={styles.heading}>
     <H1 type="fontL">{children}</H1>
   </div>
@@ -28,7 +28,7 @@ export const SectionHeading = ({
   </h2>
 );
 
-export const SectionBody = ({ children }: { children: any }): React.Element<'div'> => (
+export const SectionBody = ({ children }: { children: React.Node }) => (
   <div className={styles.sectionBody}>{children}</div>
 );
 
