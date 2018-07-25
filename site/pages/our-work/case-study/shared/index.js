@@ -62,3 +62,7 @@ type BodyProps = {
   >,
 };
 export const Body = ({ children }: BodyProps) => <div className={styles.body}>{children}</div>;
+
+export const ArticleImg = ({ src, alt }: { src: string, alt: string }) => (
+  <img className={styles.articleImg} src={src} alt={alt} />
+);

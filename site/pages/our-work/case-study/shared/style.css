@@ -7,6 +7,10 @@
   padding-right: 20px;
 }
 
+.articleImg {
+  width: 100%;
+}
+
 .heading {
   max-width: 720px;
   padding-top: 30px;

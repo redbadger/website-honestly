@@ -1,20 +1,25 @@
-.articleImage {
-  width: 100%;
-}
+@value mediumScreen from '../../../../../css/_sizes.css';
 
-.headerImg {
-  position: relative;
+.wrapper {
   display: flex;
 }
 
-.headerImg img {
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  max-height: 400px;
+.image {
+  align-self: flex-start;
+  max-width: 100%;
 }
 
-.leftHeaderImgFill {
+.wide {
+  composes: image;
+  display: none;
+}
+
+.narrow {
+  composes: image;
+  display: block;
+}
+
+.leftFill {
   background: url(./images/leftpanel.jpg);
   background-size: 182px 400px;
   background-position-x: right;
@@ -24,7 +29,7 @@
   right: -1px;
 }
 
-.rightHeaderImgFill {
+.rightFill {
   background: url(./images/rightpanel.jpg);
   background-size: 183px 400px;
   background-position-x: left;
@@ -32,4 +37,14 @@
   background-repeat-x: repeat;
   position: relative;
   left: -1px;
+}
+
+@media mediumScreen {
+  .wide {
+    display: block;
+  }
+
+  .narrow {
+    display: none;
+  }
 }

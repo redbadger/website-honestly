@@ -5,14 +5,23 @@ import React from 'react';
 import Social from '../../../../components/social';
 import Link from '../../../../components/link';
 import ScrollTracker from '../../../../components/scroll-tracker';
-import { PageHeading, Body, Quote, Section, SectionHeading, SectionBody, P, UL } from '../shared';
+import {
+  PageHeading,
+  Body,
+  Quote,
+  Section,
+  SectionHeading,
+  SectionBody,
+  P,
+  UL,
+  ArticleImg,
+} from '../shared';
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
-import styles from './styles.css';
+import HeaderImg from './header-img';
 
 import davidKirby from './images/david-kirby.jpg';
-import carTrawler from './images/cartrawler.jpg';
-import headerWide from './images/header-wide.jpg';
+import browsingImg from './images/browsing.jpg';
 
 // to update
 const social = {
@@ -37,11 +46,7 @@ const quoteProps = {
 const CarTrawler = () => (
   <ScrollTracker>
     <Social {...social} />
-    <div className={styles.headerImg}>
-      <div className={styles.leftHeaderImgFill} />
-      <img src={headerWide} alt="" />
-      <div className={styles.rightHeaderImgFill} />
-    </div>
+    <HeaderImg />
     <Body>
       <PageHeading>
         Building a loyalty portal for customers and reducing customer support queries
@@ -78,7 +83,10 @@ const CarTrawler = () => (
             The vision of this project was to build a newloyalty portal for customers to log-in,
             make bookings more efficiently, manage their bookings and to earn loyalty rewards.
           </P>
-          <img src={carTrawler} className={styles.articleImage} alt="" />
+          <ArticleImg
+            src={browsingImg}
+            alt="A person smiling while browsing a travel website on her computer"
+          />
         </SectionBody>
       </Section>
       <Section>
@@ -151,7 +159,7 @@ const CarTrawler = () => (
         </SectionBody>
       </Section>
     </Body>
-    <WhatToReadNext currentPage="carTrawler" />
+    <WhatToReadNext currentPage="carTrawlerMyAccount" />
     <ChecklistContactUs />
   </ScrollTracker>
 );
