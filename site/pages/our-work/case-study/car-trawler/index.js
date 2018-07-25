@@ -3,15 +3,7 @@ import React from 'react';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
 import ScrollTracker from '../../../../components/scroll-tracker';
-import {
-  PageHeading,
-  Body,
-  Quote,
-  Section,
-  SectionHeading,
-  SectionBody,
-  P,
-} from '../shared';
+import { PageHeading, Body, Quote, Section, SectionHeading, SectionBody, P } from '../shared';
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import styles from './style.css';

@@ -15,16 +15,7 @@ import Image from '../../../../components/image';
 import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';
 import ScrollTracker from '../../../../components/scroll-tracker';
-import {
-  Body,
-  H3,
-  P,
-  PageHeading,
-  Section,
-  SectionBody,
-  SectionHeading,
-  UL,
-} from '../shared';
+import { Body, H3, P, PageHeading, Section, SectionBody, SectionHeading, UL } from '../shared';
 
 const cx = classnames.bind(styles);
 
