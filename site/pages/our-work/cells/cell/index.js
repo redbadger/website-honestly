@@ -15,7 +15,7 @@ type Props = {
   routeKey: string,
 };
 
-const Cell = (props: Props) => {
+export default function Cell(props: Props) {
   const displayImg = props.image ? (
     <img src={props.image} className={styles.clientImage} alt={`${props.clientName} project`} />
   ) : null;
@@ -43,6 +43,4 @@ const Cell = (props: Props) => {
       </div>
     </div>
   );
-};
-
-export default Cell;
+}
