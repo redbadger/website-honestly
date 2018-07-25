@@ -42,6 +42,16 @@
   padding-bottom: 30px;
 }
 
+.paragraph a {
+  text-decoration: none;
+  color: badgerBlack;
+  border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.paragraph a:hover {
+  color: badgerRedOnWhite;
+}
+
 .list {
   composes: lightSerif from '../../../../css/typography/_fonts.css';
   list-style-type: disc;

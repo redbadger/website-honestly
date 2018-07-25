@@ -13,13 +13,13 @@
   width: 100%;
   justify-content: flex-end;
   position: relative;
-  flex: 0 1 auto;  /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
+  flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
 }
 
 .logo {
   width: 140px;
   height: 35px;
-  flex: 0 1 auto;  /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
+  flex: 0 1 auto; /*Provide all values to avoid IE10 bug with shorthand flex - http://git.io/vllC7*/
 }
 
 .logo svg {
@@ -27,8 +27,8 @@
 }
 
 .mediumScreenNav {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
   list-style: none;
   align-self: center;
   margin-top: 8px;
@@ -63,14 +63,14 @@
     ProximaNova-Light glyph doesn't have the same height of ProximaNova-Bold.
     We need to add padding, so the border doesn't touch the letters.
   */
-  padding-bottom: .1em;
+  padding-bottom: 0.1em;
 }
 
 .mediumScreenChildList {
   position: absolute;
   padding: 1em 0;
   display: none;
-  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: sansSerif from '../../css/typography/_fonts.css';
   font-size: 15px;
 }
 
@@ -125,8 +125,8 @@
   bottom: 0;
   left: 100%;
   z-index: zindexOverlay;
-  composes: serif from "../../css/typography/_fonts.css";
-  composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from '../../css/typography/_fonts.css';
+  composes: fontM from '../../css/typography/_fonts.css';
   font-weight: bold;
   transition: left 0.3s;
 }
@@ -189,8 +189,8 @@
 }
 
 .menuCloseButton {
-  composes: fontXS from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontXS from '../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
   position: absolute;
   top: 5px;
   left: 10px;
@@ -212,8 +212,8 @@
 }
 
 .triggerLabel {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
   border-bottom: 2px solid badgerRedOnWhite;
   line-height: 1em;
   cursor: pointer;
@@ -239,8 +239,8 @@
 
 .childList {
   margin-left: 1em;
-  composes: sansSerif from "../../css/typography/_fonts.css";
-  composes: fontM2 from "../../css/typography/_fonts.css";
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  composes: fontM2 from '../../css/typography/_fonts.css';
 }
 
 @media mediumScreen {
