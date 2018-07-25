@@ -24,7 +24,7 @@ const sliceData = {
   },
   carTrawlerMyAccount: {
     name: 'Car Trawler',
-    tagline: 'Creating complete CMS control for travel brands',
+    tagline: 'Building a self-servicing customer account',
     image: carTrawlerMyAccountImage,
     linkKey: 'carTrawlerCaseStudy',
   },

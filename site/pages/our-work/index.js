@@ -43,12 +43,12 @@ export default function CaseStudies() {
       </div>
       <div className={styles.caseStudyTopSection}>
         <div className={styles.topSlicesContainer}>
-          <CamdenSliceMyAccount />
           <CarTrawlerSlice />
           <BankSlice />
           <RetailerSlice />
           <CamdenSlice />
           <FtSlice />
+          <CamdenSliceMyAccount />
           <FortnumSlice />
           <FortnumDigitalTransformationSlice />
           <SkySlice />

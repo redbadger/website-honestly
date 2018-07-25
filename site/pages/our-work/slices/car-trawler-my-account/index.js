@@ -9,10 +9,11 @@ export default function CarTrawler() {
   return (
     <Container to="carTrawlerMyAccountCaseStudy">
       <Text>
-        <Header>Complete CMS control for travel brands</Header>
+        <Header>Building a self-servicing customer account</Header>
         <Description>
-          Find out how we demonstrated value with a working prototype in one week and delivered a
-          complete CMS control for travel brands within only 5 months.
+          Find out how we built a self-servicing customer account, enabling customers to make
+          bookings more efficiently, and reducing risks and costs for travel brands, all within 12
+          weeks.
         </Description>
         <ReadMore />
       </Text>

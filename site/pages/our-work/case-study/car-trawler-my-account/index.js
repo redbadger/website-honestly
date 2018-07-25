@@ -23,14 +23,15 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import HeaderImg from './header-img';
 import davidKirby from './images/david-kirby.jpg';
 import browsingImg from './images/browsing.jpg';
+import metaImage from './header-img/images/header-narrow.jpg';
 
-// to update
 const social = {
-  title: 'Creating complete CMS control for travel brands | Red Badger',
+  title: 'Building a self-servicing customer account | Red Badger',
   description:
-    'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
-  metaImage: '',
-  altText: 'A toy car heading off into a picturesque sunset',
+    'Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards.',
+  metaImage,
+  altText:
+    "A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'",
   url: 'https://red-badger.com/our-work/case-study/car-trawler',
 };
 
@@ -49,9 +50,7 @@ const CarTrawler = () => (
     <Social {...social} />
     <HeaderImg />
     <Body>
-      <PageHeading>
-        Building a loyalty portal for customers and reducing customer support queries
-      </PageHeading>
+      <PageHeading>Building a self-servicing customer account</PageHeading>
       <Section>
         <SectionBody>
           <Quote {...quoteProps} />
