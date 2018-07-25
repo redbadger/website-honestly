@@ -8,6 +8,7 @@ import BankSlice from './slices/bank';
 import CarTrawlerSlice from './slices/car-trawler';
 import RetailerSlice from './slices/retailer';
 import CamdenSlice from './slices/camden';
+import CamdenSliceMyAccount from './slices/car-trawler-my-account';
 import FtSlice from './slices/ft';
 import FortnumSlice from './slices/fortnum-and-mason';
 import FortnumDigitalTransformationSlice from './slices/fortnum-and-mason-digital-transformation';
@@ -42,6 +43,7 @@ export default function CaseStudies() {
       </div>
       <div className={styles.caseStudyTopSection}>
         <div className={styles.topSlicesContainer}>
+          <CamdenSliceMyAccount />
           <CarTrawlerSlice />
           <BankSlice />
           <RetailerSlice />
