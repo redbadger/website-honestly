@@ -3,5 +3,7 @@
 exports[`site/pages/our-work/slices/shared/header renders correctly 1`] = `
 <h2
   className="header"
-/>
+>
+  heading
+</h2>
 `;
