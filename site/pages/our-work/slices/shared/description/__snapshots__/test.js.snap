@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/slices/shared/description renders the correct class by default 1`] = `
+<p
+  className="description"
+>
+  Some text
+</p>
+`;
+
+exports[`site/pages/our-work/slices/shared/description renders the maxWidth class 1`] = `
+<p
+  className="descriptionMaxWidth"
+>
+  Some text that needs to wrap
+</p>
+`;

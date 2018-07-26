@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './styles.css';
 
 type Props = {
-  center: boolean,
+  center?: boolean,
 };
 
 export default function ReadMore({ center = false }: Props) {

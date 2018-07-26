@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/slices/shared/read-more renders the centered class 1`] = `
+<div
+  className="linksCenter"
+>
+  <p
+    className="readmore"
+  >
+    Read more
+  </p>
+</div>
+`;
+
+exports[`site/pages/our-work/slices/shared/read-more renders the correct class by default 1`] = `
+<div
+  className="links"
+>
+  <p
+    className="readmore"
+  >
+    Read more
+  </p>
+</div>
+`;

@@ -59,7 +59,7 @@ const CarTrawler = () => (
       <Section>
         <SectionHeading
           subHeading="Let's make things better"
-          heading="Increasing abilities across a customer portal "
+          heading="Increasing abilities across a customer portal"
         />
         <SectionBody>
           <P>

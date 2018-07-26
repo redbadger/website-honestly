@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/slices/shared/container renders correctly by default 1`] = `
+<div
+  className="container"
+>
+  <Link
+    className="content row"
+    to="destination"
+  >
+    Things
+  </Link>
+</div>
+`;
+
+exports[`site/pages/our-work/slices/shared/container renders the removePaddingBotttom class 1`] = `
+<div
+  className="containerNoPaddingBottom"
+>
+  <Link
+    className="content row"
+    to="destination"
+  >
+    Things
+  </Link>
+</div>
+`;
+
+exports[`site/pages/our-work/slices/shared/container renders the row-reverse class 1`] = `
+<div
+  className="container"
+>
+  <Link
+    className="content row-reverse"
+    to="destination"
+  >
+    Things
+  </Link>
+</div>
+`;
