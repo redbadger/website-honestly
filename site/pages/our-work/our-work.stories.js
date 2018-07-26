@@ -14,6 +14,8 @@ import fmLogo from './slices/fortnum-and-mason-digital-transformation/images/for
 import ftLogo from './slices/ft/images/ft-logo.png';
 import ft from './slices/ft/images/ft.png';
 
+import { BBCCell, HallerCell } from './cells';
+
 class Context extends React.Component<{ children: React.Node }> {
   static childContextTypes = {
     stateNavigator: PropTypes.instanceOf(StateNavigator),
@@ -90,3 +92,14 @@ storiesOf('Pages/Our-work/Slice', module)
       </Text>
     </Container>
   ));
+
+function CellWrapper(storyFn) {
+  const styles = { maxWidth: '550px', margin: '40px auto' };
+  return <div style={styles}>{storyFn()}</div>;
+}
+
+storiesOf('Pages/Our-work/Cell', module)
+  .addDecorator(ContextDecorator)
+  .addDecorator(CellWrapper)
+  .add('with large header', () => <BBCCell />)
+  .add('with image', () => <HallerCell />);
