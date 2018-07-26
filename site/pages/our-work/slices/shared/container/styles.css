@@ -13,6 +13,7 @@
 
 .content {
   display: flex;
+  align-items: flex-start;
   max-width: containerMaxWidth;
   width: 100%;
   flex-direction: column-reverse;
