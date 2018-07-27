@@ -18,10 +18,12 @@
     margin-top: 0;
     padding: 0 90px 0 0;
     flex-basis: 50%;
+    width: 50%;
   }
 
   .fullWidth {
     flex-basis: 100%;
+    width: 100%;
     text-align: center;
   }
 

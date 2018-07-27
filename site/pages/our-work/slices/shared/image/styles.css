@@ -20,6 +20,7 @@
 @media mediumScreen {
   .base {
     flex-basis: 50%;
+    width: 50%;
   }
 
   .restricted {
