@@ -1,4 +1,4 @@
-@value badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../../../css/_sizes.css';
 
 .body {
