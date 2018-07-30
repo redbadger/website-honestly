@@ -20,7 +20,7 @@ class ScrollTracker extends React.Component<{ children: React.Node }> {
     ReactGA.event({
       category: `Page scroll depth`,
       action: 'scroll',
-      value: scrollPercentage,
+      label: '' + scrollPercentage,
     });
     logScrollDepth(scrollPercentage);
   }
