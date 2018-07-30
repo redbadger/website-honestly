@@ -14,7 +14,7 @@ import hubspotButtonsNotes from './hubspot-buttons.md';
 
 const options = Object.keys(hubspotButtonsRaw);
 
-storiesOf('HubspotButtons', module)
+storiesOf('Components/HubspotButtons', module)
   .addDecorator(withKnobs)
   .add(
     "with selectable hubspot cta's",

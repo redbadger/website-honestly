@@ -1,0 +1,111 @@
+@value badgerBlack, badgerRedOnWhite, linesOnWhite from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from '../../../../css/_sizes.css';
+
+.body {
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.articleImg {
+  width: 100%;
+}
+
+.heading {
+  max-width: 720px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+.section {
+  padding-bottom: 30px;
+}
+
+.sectionHeading {
+  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
+  padding-bottom: 30px;
+}
+
+.redTitle {
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  color: badgerRedOnWhite;
+  display: block;
+}
+
+.paragraph,
+.list {
+  font-size: 20px;
+  line-height: 1.35;
+  padding-bottom: 30px;
+}
+
+.paragraph a {
+  text-decoration: none;
+  color: badgerBlack;
+  border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.paragraph a:hover {
+  color: badgerRedOnWhite;
+}
+
+.list {
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.quote {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+@media mediumScreen {
+  .section {
+    padding-bottom: 48px;
+  }
+
+  .sectionBody {
+    max-width: 730px;
+    margin-left: auto;
+  }
+
+  .quote {
+    padding-left: 30px;
+    padding-bottom: 0px;
+  }
+}
+
+@media largeScreen {
+  .heading {
+    background-color: #f8f8f8;
+    margin-top: -96px;
+    max-width: 1200px;
+    padding: 20px 20px 60px;
+    position: relative;
+  }
+
+  .body {
+    margin: auto;
+    max-width: 1400px;
+    padding: 20px 120px 100px;
+  }
+
+  .section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 60px;
+  }
+
+  .sectionHeading {
+    padding-bottom: 40px;
+  }
+
+  .sectionBody {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}

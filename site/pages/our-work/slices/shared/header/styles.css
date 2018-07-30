@@ -1,0 +1,8 @@
+@value badgerBlack from "../../../../../css/_colors.css";
+
+.header {
+  composes: fontM from '../../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  margin: 0;
+}

@@ -1,0 +1,33 @@
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+
+.leftCol {
+  margin-top: 30px;
+}
+
+.rightCol {
+  composes: leftCol;
+}
+
+.fullWidth {
+  composes: leftCol;
+  margin-top: 0;
+}
+
+@media mediumScreen {
+  .leftCol {
+    margin-top: 0;
+    padding: 0 90px 0 0;
+    flex-basis: 50%;
+    width: 50%;
+  }
+
+  .fullWidth {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .rightCol {
+    padding: 0 0 0 90px;
+  }
+}

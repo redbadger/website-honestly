@@ -1,0 +1,88 @@
+@value badgerBlack from "../../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+
+_:-ms-fullscreen,
+:root .imageWrapper {
+  min-height: 20vh;
+}
+
+.imageWrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper img {
+  display: block;
+  width: 100%;
+}
+
+.imageContainer {
+  min-width: 260px;
+  min-height: 205px;
+  background-color: #8dcce0;
+  position: relative;
+}
+
+.orders {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  text-align: right;
+}
+
+.visits {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+}
+
+.imagePercentage {
+  composes: fontM from '../../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../../css/typography/_fonts.css';
+  color: badgerBlack;
+}
+
+.imageText {
+  composes: fontS from '../../../../../css/typography/_fonts.css';
+  composes: lightSerif from '../../../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  font-size: 16px;
+}
+
+@media mediumScreen {
+  .imageWrapper {
+    flex-basis: 50%;
+  }
+
+  .imageContainer {
+    min-width: 400px;
+  }
+
+  .imageText {
+    font-size: 20px;
+  }
+
+  .orders {
+    right: 10px;
+    top: 10px;
+  }
+
+  .visits {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+@media largeScreen {
+  .orders {
+    right: 30px;
+    top: 30px;
+  }
+
+  .visits {
+    left: 30px;
+    bottom: 30px;
+  }
+}

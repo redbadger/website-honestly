@@ -1,0 +1,73 @@
+@value badgerBlack from "../../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+
+.imageWrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.imageWrapper img {
+  min-width: 260px;
+  width: 70%;
+}
+
+.fortnum {
+  display: block;
+}
+
+.fortnumMedium {
+  display: none;
+}
+
+@media mediumScreen {
+  .clientLogo {
+    width: 230px;
+  }
+
+  .fortnum {
+    display: none;
+  }
+
+  .fortnumMedium {
+    display: block;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+  }
+
+  .imageWrapper img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .imageWrapper img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .fortnum {
+    display: block;
+  }
+
+  .fortnumMedium {
+    display: none;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    bottom: auto;
+  }
+
+  .imageWrapper img {
+    width: 800px;
+  }
+}

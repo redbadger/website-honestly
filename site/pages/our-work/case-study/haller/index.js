@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 
-import WhatToReadNext from '../what-to-read-next';
+import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 import CaseStudyFrame from '../../../../components/case-study-frame';

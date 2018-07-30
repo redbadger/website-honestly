@@ -1,0 +1,37 @@
+@value badgerBlack, badgerRedOnWhite, linesOnWhite from "../../../../../css/_colors.css";
+@value mediumScreen from "../../../../../css/_sizes.css";
+
+.readmore {
+  composes: boldSansSerif from '../../../../../css/typography/_fonts.css';
+  border-bottom: 2px solid badgerRedOnWhite;
+  text-decoration: none;
+  color: badgerBlack;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.readmore:hover {
+  color: badgerRedOnWhite;
+}
+
+.links {
+  text-align: right;
+  border-bottom: 1px solid linesOnWhite;
+  padding-bottom: 30px;
+}
+
+.linksCenter {
+  composes: links;
+}
+
+@media mediumScreen {
+  .links {
+    text-align: left;
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .linksCenter {
+    text-align: center;
+  }
+}

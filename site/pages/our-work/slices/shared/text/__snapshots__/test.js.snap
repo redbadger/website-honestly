@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/slices/shared/text renders the correct layout class 1`] = `
+<div
+  className="fullWidth"
+>
+  hey joe
+</div>
+`;
+
+exports[`site/pages/our-work/slices/shared/text renders the correct layout class by default 1`] = `
+<div
+  className="leftCol"
+>
+  hey joe
+</div>
+`;

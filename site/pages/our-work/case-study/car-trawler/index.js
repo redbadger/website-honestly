@@ -3,16 +3,8 @@ import React from 'react';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
 import ScrollTracker from '../../../../components/scroll-tracker';
-import {
-  PageHeading,
-  Body,
-  Quote,
-  Section,
-  SectionHeading,
-  SectionBody,
-  P,
-} from '../case-study-components';
-import WhatToReadNext from '../what-to-read-next';
+import { PageHeading, Body, Quote, Section, SectionHeading, SectionBody, P } from '../shared';
+import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import styles from './style.css';
 
@@ -139,7 +131,7 @@ const CarTrawler = () => (
         </SectionBody>
       </Section>
     </Body>
-    <WhatToReadNext currentPage="carTrawler" />
+    <WhatToReadNext currentPage="carTrawler" linkKeys={['carTrawlerMyAccount']} />
     <ChecklistContactUs />
   </ScrollTracker>
 );

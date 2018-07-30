@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/slices/shared/image renders the correct class by default 1`] = `
+<div
+  className="base"
+>
+  <img
+    alt=""
+    src="path/to/image"
+  />
+</div>
+`;
+
+exports[`site/pages/our-work/slices/shared/image renders the restricted class 1`] = `
+<div
+  className="restricted"
+>
+  <img
+    alt=""
+    src="path/to/image"
+  />
+</div>
+`;

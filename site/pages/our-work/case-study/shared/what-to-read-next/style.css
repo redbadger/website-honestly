@@ -1,0 +1,111 @@
+@value badgerRedOnWhite, badgerBlack, grey from '../../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+
+.whatNext {
+  composes: dividerGrey from '../../../../../css/_divider.css';
+  padding: 60px 20px;
+  text-align: center;
+  background-color: grey;
+}
+
+.whatNext__tilesContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.whatNext__tilesContainer > div {
+  display: none;
+  width: 100%;
+}
+
+.whatNext__tilesContainer > div:nth-child(-n + 1) {
+  display: block;
+}
+
+.whatNext__image {
+  background-color: #79b0a3;
+  width: 100%;
+}
+
+.whatNext__caption {
+  composes: fontXS from '../../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../../css/typography/_fonts.css';
+  color: badgerRedOnWhite;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.whatNext__link,
+.whatNext__link:hover,
+.whatNext__link:active,
+.whatNext__link:visited {
+  color: badgerBlack;
+  display: block;
+  text-align: left;
+  padding-bottom: 50px;
+  margin-right: 30px;
+}
+
+.whatNext__link h2 {
+  display: inline;
+}
+
+.whatNext__link:hover h2 {
+  border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.whatNext__title {
+  composes: fontM2 from '../../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../../css/typography/_fonts.css';
+}
+
+.whatNext__button {
+  composes: primaryButton from '../../../../../css/_links.css';
+}
+
+.whatNext__arrow {
+  position: absolute;
+}
+
+.whatNext__arrow svg {
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+}
+
+@media mediumScreen {
+  .whatNext__tilesContainer > div {
+    display: none;
+    width: calc(50% - 10px);
+  }
+
+  .whatNext__tilesContainer > div:nth-child(-n + 2) {
+    display: block;
+  }
+}
+
+@media largeScreen {
+  .whatNext {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .whatNext__tilesContainer {
+    max-width: 1400px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .whatNext__tilesContainer > div {
+    display: none;
+    width: calc(33% - 10px);
+  }
+
+  .whatNext__tilesContainer > div:nth-child(-n + 3) {
+    display: block;
+  }
+}

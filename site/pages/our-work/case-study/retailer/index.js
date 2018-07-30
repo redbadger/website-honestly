@@ -8,23 +8,14 @@ import headerImage from './images/header.jpg';
 import techGraphImage from './images/tech-graph.jpg';
 import metaImage from './meta-image.jpg';
 
-import WhatToReadNext from '../what-to-read-next';
+import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import Card from '../../../../components/card';
 import Image from '../../../../components/image';
 import ListBox from '../../../../components/list-box';
 import ContactBox from '../../../../components/contact-box';
 import ScrollTracker from '../../../../components/scroll-tracker';
-import {
-  Body,
-  H3,
-  P,
-  PageHeading,
-  Section,
-  SectionBody,
-  SectionHeading,
-  UL,
-} from '../case-study-components';
+import { Body, H3, P, PageHeading, Section, SectionBody, SectionHeading, UL } from '../shared';
 
 const cx = classnames.bind(styles);
 

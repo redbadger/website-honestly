@@ -2,35 +2,9 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import { StateNavigator } from 'navigation';
 
 import Link from '.';
-
-function MockNavigator(parentKey) {
-  // The constructor is checked in prop-types,
-  // so we use it as base and then mutate
-  const child = new StateNavigator();
-
-  child.stateContext = {
-    state: {
-      parentKey,
-    },
-  };
-
-  child.states = {
-    foo: {},
-    bar: {},
-    barChild: {
-      parentKey: 'bar',
-    },
-  };
-
-  return child;
-}
-
-function createMockContext(parentKey) {
-  return { stateNavigator: MockNavigator(parentKey) };
-}
+import { createMockContext } from './test-helper';
 
 describe('components/link', () => {
   it('renders OK children', () => {

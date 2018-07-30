@@ -1,0 +1,51 @@
+@value mediumScreen from '../../../../../css/_sizes.css';
+
+.wrapper {
+  display: flex;
+}
+
+.image {
+  align-self: flex-start;
+  max-width: 100%;
+  flex: 0 0 auto;
+}
+
+.wide {
+  composes: image;
+  display: none;
+}
+
+.narrow {
+  composes: image;
+  display: block;
+}
+
+.leftFill {
+  background: url(./images/leftpanel.jpg);
+  background-size: 136px 100%;
+  background-position-x: right;
+  width: 100%;
+  background-repeat: repeat;
+  position: relative;
+  right: -1px;
+}
+
+.rightFill {
+  background: url(./images/rightpanel.jpg);
+  background-size: 136px 100%;
+  background-position-x: left;
+  width: 100%;
+  background-repeat: repeat;
+  position: relative;
+  left: -1px;
+}
+
+@media mediumScreen {
+  .wide {
+    display: block;
+  }
+
+  .narrow {
+    display: none;
+  }
+}
