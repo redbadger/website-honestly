@@ -50,7 +50,9 @@ const CarTrawler = () => (
     <Social {...social} />
     <HeaderImg />
     <Body>
-      <PageHeading>Building a self-servicing customer account</PageHeading>
+      <PageHeading>
+        Building a loyalty portal for customers and reducing customer support queries
+      </PageHeading>
       <Section>
         <SectionBody>
           <Quote {...quoteProps} />
@@ -110,14 +112,15 @@ const CarTrawler = () => (
             just four days, we had a backlog for the project and a working prototype.
           </P>
           <P>
-            Serverless architecture, a newcomer on the tech scene, was selected due to the speed at
-            which the solution could be built and deployed, whilst providing assurances in security,
-            stability and scalability. Serverless negates the need for a DevOps team, as providers
-            such as Amazon Web Services provide guaranteed uptime, load balancing, scale and
-            resilience. Any peaks in traffic are automatically accommodated by the service, and the
-            provider can be changed with ease, without expense or downtime. In addition, Serverless
-            significantly reduces the overheads associated with managing and maintaining a platform
-            such as this.
+            <a href="https://red-badger.com/blog/2017/10/13/the-end-of-the-cloud-a-truly-serverless-web">
+              Serverless architecture
+            </a>, a newcomer on the tech scene, was selected due to the speed at which the solution
+            could be built and deployed, whilst providing assurances in security, stability and
+            scalability. Serverless negates the need for a DevOps team, as providers such as Amazon
+            Web Services provide guaranteed uptime, load balancing, scale and resilience. Any peaks
+            in traffic are automatically accommodated by the service, and the provider can be
+            changed with ease, without expense or downtime. In addition, Serverless significantly
+            reduces the overheads associated with managing and maintaining a platform such as this.
           </P>
           <P>
             The solution was a microservices architecture, built with a combination of suitable
