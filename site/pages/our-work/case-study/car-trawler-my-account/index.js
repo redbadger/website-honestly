@@ -69,9 +69,13 @@ const CarTrawler = () => (
             and Arguscarhire.com.
           </P>
           <P>
-            Following the success of the <Link to="carTrawlerCaseStudy">CMS Project</Link> we were
-            asked to assist with implementing a new loyalty product, My Account. The existing
-            system, running on Arguscarhire.com, was no longer fit for purpose for several reasons:
+            Following the success of the{' '}
+            <Link to="carTrawlerCaseStudy" target="_blank">
+              CMS Project
+            </Link>{' '}
+            we were asked to assist with implementing a new loyalty product, My Account. The
+            existing system, running on Arguscarhire.com, was no longer fit for purpose for several
+            reasons:
           </P>
           <UL>
             <li>Inflexible and difficult to support</li>
@@ -97,12 +101,13 @@ const CarTrawler = () => (
         <SectionBody>
           <P>
             We decided to take a similar approach to the{' '}
-            <Link to="carTrawlerCaseStudy">CMS Project</Link>, and start with an initial week’s
-            discovery in order to understand the problem, carry out an initial user experience
-            analysis, and determine the appropriate technical approach. The decision was made to
-            ignore the existing platform, and instead to focus on the user requirements, in order to
-            provide maximum user value and speed to market. After just four days, we had a backlog
-            for the project and a working prototype.
+            <Link to="carTrawlerCaseStudy" target="_blank">
+              CMS Project
+            </Link>, and start with an initial week’s discovery in order to understand the problem,
+            carry out an initial user experience analysis, and determine the appropriate technical
+            approach. The decision was made to ignore the existing platform, and instead to focus on
+            the user requirements, in order to provide maximum user value and speed to market. After
+            just four days, we had a backlog for the project and a working prototype.
           </P>
           <P>
             Serverless architecture, a newcomer on the tech scene, was selected due to the speed at
