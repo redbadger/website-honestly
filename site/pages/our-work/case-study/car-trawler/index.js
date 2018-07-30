@@ -131,7 +131,7 @@ const CarTrawler = () => (
         </SectionBody>
       </Section>
     </Body>
-    <WhatToReadNext currentPage="carTrawler" />
+    <WhatToReadNext currentPage="carTrawler" linkKeys={['carTrawlerMyAccount']} />
     <ChecklistContactUs />
   </ScrollTracker>
 );
