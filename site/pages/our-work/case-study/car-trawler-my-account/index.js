@@ -37,7 +37,7 @@ const social = {
 
 const quoteProps = {
   text:
-    'Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience.',
+    'Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience.',
   author: {
     name: 'David Kirby',
     title: 'Brands Commercial Director, CarTrawler',
