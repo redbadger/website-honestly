@@ -45,10 +45,10 @@ export default function CaseStudies() {
         <div className={styles.topSlicesContainer}>
           <CarTrawlerSlice />
           <BankSlice />
+          <CarTrawlerSliceMyAccount />
           <RetailerSlice />
           <CamdenSlice />
           <FtSlice />
-          <CarTrawlerSliceMyAccount />
           <FortnumSlice />
           <FortnumDigitalTransformationSlice />
           <SkySlice />

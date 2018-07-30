@@ -7,8 +7,8 @@ import bankGif from './images/bank.gif';
 
 export default function Bank() {
   return (
-    <Container to="bankCaseStudy">
-      <Text>
+    <Container to="bankCaseStudy" layout="row-reverse">
+      <Text layout="rightCol">
         <Header>Digital transformation in retail banking</Header>
         <Description>
           Discover how we delivered quality digital products to customers quickly, built capability

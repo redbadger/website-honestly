@@ -7,8 +7,8 @@ import carTrawler from './images/car-trawler.jpg';
 
 export default function CarTrawler() {
   return (
-    <Container to="carTrawlerCaseStudy" layout="row-reverse">
-      <Text layout="rightCol">
+    <Container to="carTrawlerCaseStudy">
+      <Text>
         <Header>Complete CMS control for travel brands</Header>
         <Description>
           Find out how we demonstrated value with a working prototype in one week and delivered a
