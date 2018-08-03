@@ -1,12 +1,13 @@
-@import "normalize.css/normalize.css";
-@import "reset-css/reset.css";
-@import "./a11y-day.css";
+@import 'normalize.css/normalize.css';
+@import 'reset-css/reset.css';
+@import './a11y-day.css';
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   position: relative;
 }
 

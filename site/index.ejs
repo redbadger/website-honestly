@@ -111,5 +111,59 @@
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4210858.js"></script>
     <!-- End of HubSpot Embed Code -->
+    <style>
+      /* Start of HubSpot Cookie Banner CSS overrides */
+      /* The banner is injected by the HB script, so this needs to be as far as possible in the DOM.
+         Specificity matches/exceeds the one in HB. */
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button {
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-size: 24px !important;
+        line-height: 1;
+        padding: 14px 20px !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+      }
+
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-size: 16px !important;
+        line-height: 1.5em !important;
+        max-width: 600px;
+        margin: 0;
+        float: left;
+        color: #212121;
+      }
+
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p:nth-child(2) {
+        margin: 0 0 10px;
+      }
+
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
+        color: #212121;
+        border-bottom: 1px solid #212121 !important;
+        font-family: 'ProximaNova-Bold', sans-serif;
+        font-size: 16px !important;
+        line-height: 1.5em !important;
+      }
+
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
+        color: #212121 !important;
+      }
+
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area {
+        margin-top: 0 !important;
+      }
+
+      div#hs-eu-cookie-confirmation {
+        background-color: #FFD811;
+        box-shadow: none !important;
+        border: 0;
+      }
+
+      div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
+        background-color: #FFD811;
+      }
+      /* End of HubSpot Cookie Banner CSS overrides */
+    </style>
   </body>
 </html>
