@@ -19,7 +19,7 @@ export default function Camden() {
         </Description>
         <ReadMore />
       </Text>
-      <Image layout="restricted" src={camden} alt="Camden project screenshot" />
+      <Image src={camden} alt="Camden project screenshot" />
     </Container>
   );
 }

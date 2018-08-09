@@ -6,12 +6,11 @@ import styles from './styles.css';
 type Props = {
   src: string,
   alt: string,
-  layout?: 'base' | 'restricted',
 };
 
-export default function Image({ src, alt, layout = 'base' }: Props) {
+export default function Image({ src, alt }: Props) {
   return (
-    <div className={styles[layout]}>
+    <div className={styles.base}>
       <img src={src} alt={alt} />
     </div>
   );

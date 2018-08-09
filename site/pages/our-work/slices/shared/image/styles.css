@@ -7,11 +7,6 @@
   align-items: center;
 }
 
-.restricted {
-  composes: base;
-  max-width: 260px;
-}
-
 .base img {
   display: block;
   width: 100%;
@@ -21,9 +16,5 @@
   .base {
     flex-basis: 50%;
     width: 50%;
-  }
-
-  .restricted {
-    max-width: 400px;
   }
 }
