@@ -1,11 +1,15 @@
 plugins:
   eslint:
     enabled: true
-    channel: "eslint-4"
+    channel: 'eslint-4'
+
+checks:
+  similar-code:
+    enabled: false
 
 exclude_patterns:
-  - "**/node_modules/"
-  - "flow-typed/"
-  - "**/__snapshots__/"
-  - ".storybook/"
-  - "**/*.stories.js"
+  - '**/node_modules/'
+  - 'flow-typed/'
+  - '**/__snapshots__/'
+  - '.storybook/'
+  - '**/*.stories.js'
