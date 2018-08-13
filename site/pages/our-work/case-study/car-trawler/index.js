@@ -35,7 +35,10 @@ const CarTrawler = () => (
   <ScrollTracker>
     <Social {...social} />
     <div className={styles.carDayTime}>
-      <Image src={carDaytime} />
+      <Image
+        src={carDaytime}
+        altText="Toy blue car driving through paper-made scenery, surrounded by triangular paper trees."
+      />
     </div>
     <Body>
       <PageHeading>Creating complete CMS control for travel brands</PageHeading>

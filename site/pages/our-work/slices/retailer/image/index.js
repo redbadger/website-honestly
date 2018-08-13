@@ -9,7 +9,10 @@ export default function Image() {
   return (
     <div className={styles.imageWrapper}>
       <div className={styles.imageContainer}>
-        <img src={retailerImage} alt="Retail giant project snapshot" />
+        <img
+          src={retailerImage}
+          alt="Toy shopping cart filled with fruit & veg, surrounded by key statistics "
+        />
         <div className={styles.orders}>
           <div className={styles.imagePercentage}>+54%</div>
           <div className={styles.imageText}>Increased orders</div>

@@ -20,7 +20,10 @@ export default function FortnumAndMason() {
         </Description>
         <ReadMore />
       </Text>
-      <Image src={fortnum} alt="" />
+      <Image
+        src={fortnum}
+        alt="An iPad with the F&M site open, with a box of F&M branded tea to the left hand side"
+      />
     </Container>
   );
 }

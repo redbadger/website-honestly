@@ -17,7 +17,7 @@ export default function Bank() {
         </Description>
         <ReadMore />
       </Text>
-      <Image src={bankGif} alt="Bank project snapshot" />
+      <Image src={bankGif} alt="Stick figures building a large arrow from small square blocks" />
     </Container>
   );
 }

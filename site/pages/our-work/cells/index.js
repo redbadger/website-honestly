@@ -39,6 +39,7 @@ const HallerCell = () => (
     headerText="Developing technology for good"
     descriptionText="Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers."
     routeKey="hallerCaseStudy"
+    alt="A man holding up the Haller app on a mobile device)"
   />
 );
 
@@ -50,6 +51,7 @@ const BMWCell = () => (
     headerText="The shortcut between you and the museum"
     descriptionText="Pushing the boundaries of HTML5 technology to deliver a multi-platform 3D tour of the BMW Museum."
     routeKey="bmwCaseStudy"
+    alt="A wide-shot black and white CGI image of a car in a museum surrounded by ribbons of light"
   />
 );
 

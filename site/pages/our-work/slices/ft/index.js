@@ -19,7 +19,7 @@ export default function Ft() {
         </Description>
         <ReadMore />
       </Text>
-      <Image src={ft} alt="Financial Times project snapshot" />
+      <Image src={ft} alt="An agile stand up in progress" />
     </Container>
   );
 }

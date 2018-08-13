@@ -14,6 +14,7 @@ type Props = {
   headerText: string,
   descriptionText: string,
   routeKey: string,
+  alt?: string,
 };
 
 export default function Cell(props: Props) {
@@ -30,7 +31,7 @@ export default function Cell(props: Props) {
             <img
               src={props.clientLogo}
               className={styles[`logo${props.clientName}`]}
-              alt={`${props.clientName} logo`}
+              alt={props.alt}
             />
             <h2 className={props.image ? styles.normalHeader : styles.largeHeader}>
               {props.headerText}

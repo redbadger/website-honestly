@@ -16,7 +16,10 @@ export default function CarTrawler() {
         </Description>
         <ReadMore />
       </Text>
-      <Image src={carTrawler} alt="Retail giant project snapshot" />
+      <Image
+        src={carTrawler}
+        alt="Toy blue car driving through paper-made scenery, surrounded by triangular paper trees."
+      />
     </Container>
   );
 }
