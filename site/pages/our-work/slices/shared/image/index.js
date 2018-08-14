@@ -6,7 +6,7 @@ import styles from './styles.css';
 type Props = {
   src: string,
   alt: string,
-  layout?: 'base' | 'restricted',
+  layout?: 'base' | 'attachToBottom',
 };
 
 export default function Image({ src, alt, layout = 'base' }: Props) {

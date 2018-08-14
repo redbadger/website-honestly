@@ -10,9 +10,4 @@ describe('site/pages/our-work/slices/shared/image', () => {
     const component = shallow(<Image src="path/to/image" alt="" />);
     expect(component).toMatchSnapshot();
   });
-
-  it('renders the restricted class', () => {
-    const component = shallow(<Image src="path/to/image" alt="" layout="restricted" />);
-    expect(component).toMatchSnapshot();
-  });
 });

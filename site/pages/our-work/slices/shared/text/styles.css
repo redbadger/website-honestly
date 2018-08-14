@@ -2,6 +2,7 @@
 
 .leftCol {
   margin-top: 30px;
+  z-index: 1;
 }
 
 .rightCol {
@@ -16,7 +17,7 @@
 @media mediumScreen {
   .leftCol {
     margin-top: 0;
-    padding: 0 90px 0 0;
+    padding: 0 60px 0 0;
     flex-basis: 50%;
     width: 50%;
   }
@@ -25,9 +26,10 @@
     flex-basis: 100%;
     width: 100%;
     text-align: center;
+    padding: 0;
   }
 
   .rightCol {
-    padding: 0 0 0 90px;
+    padding: 0 0 0 60px;
   }
 }

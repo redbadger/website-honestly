@@ -8,7 +8,7 @@ import camdenLogo from './images/camden-logo.png';
 
 export default function Camden() {
   return (
-    <Container to="camdenMarketCaseStudy" layout="row" removeBottomPadding>
+    <Container to="camdenMarketCaseStudy" layout="row">
       <Text>
         <Logo src={camdenLogo} slice="camden" />
         <Header>Taking steps towards a digital future</Header>
@@ -19,7 +19,11 @@ export default function Camden() {
         </Description>
         <ReadMore />
       </Text>
-      <Image layout="restricted" src={camden} alt="Camden project screenshot" />
+      <Image
+        src={camden}
+        layout="attachToBottom"
+        alt="Hand holding a Samsung phone with the Camden site open"
+      />
     </Container>
   );
 }

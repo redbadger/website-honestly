@@ -2,9 +2,9 @@
 
 import React from 'react';
 
-import { Container, Description, ReadMore, Header, Text, Logo } from '../shared';
-import Image from './image';
+import { Container, Description, ReadMore, Header, Text, Logo, Image } from '../shared';
 import fmLogo from './images/fortnum-mason-logo.png';
+import fortnum from './images/fortnum-mason.png';
 
 export default function FortnumAndMason() {
   return (
@@ -20,7 +20,10 @@ export default function FortnumAndMason() {
         </Description>
         <ReadMore />
       </Text>
-      <Image />
+      <Image
+        src={fortnum}
+        alt="An iPad with the F&M site open, with a box of F&M branded tea to the left hand side"
+      />
     </Container>
   );
 }

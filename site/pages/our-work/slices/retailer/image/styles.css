@@ -27,28 +27,34 @@ _:-ms-fullscreen,
 
 .orders {
   position: absolute;
-  right: 10px;
-  top: 5px;
+  right: 4%;
+  top: 4%;
   text-align: right;
 }
 
 .visits {
   position: absolute;
-  left: 10px;
-  bottom: 5px;
+  left: 4%;
+  bottom: 4%;
 }
 
 .imagePercentage {
-  composes: fontM from '../../../../../css/typography/_fonts.css';
   composes: serif from '../../../../../css/typography/_fonts.css';
   color: badgerBlack;
+  /* fallback */
+  font-size: 18px;
+  /* minFontSize + ((100vw - minScreenSize) / ((maxScreenSize - minScreenSize) / (maxFontSize - minFontSize))) */
+  font-size: calc(18px + ((100vw - 320px) / ((690 - 320) / (40 - 18))));
 }
 
 .imageText {
   composes: fontS from '../../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../../css/typography/_fonts.css';
   color: badgerBlack;
-  font-size: 16px;
+  /* fallback */
+  font-size: 14px;
+  /* minFontSize + ((100vw - minScreenSize) / ((maxScreenSize - minScreenSize) / (maxFontSize - minFontSize))) */
+  font-size: calc(14px + ((100vw - 320px) / ((690 - 320) / (20 - 14))));
 }
 
 @media mediumScreen {
@@ -56,33 +62,37 @@ _:-ms-fullscreen,
     flex-basis: 50%;
   }
 
-  .imageContainer {
-    min-width: 400px;
+  .imagePercentage {
+    /* fallback */
+    font-size: 24px;
+    /* minFontSize + ((100vw - minScreenSize) / ((maxScreenSize - minScreenSize) / (maxFontSize - minFontSize))) */
+    font-size: calc(24px + ((100vw - 690px) / ((980 - 690) / (30 - 24))));
+  }
+
+  .imageText {
+    /* fallback */
+    font-size: 16px;
+    /* minFontSize + ((100vw - minScreenSize) / ((maxScreenSize - minScreenSize) / (maxFontSize - minFontSize))) */
+    font-size: calc(16px + ((100vw - 690px) / ((980 - 690) / (20 - 16))));
+  }
+}
+
+@media largeScreen {
+  .orders {
+    right: 20px;
+    top: 18px;
+  }
+
+  .imagePercentage {
+    font-size: 30px;
   }
 
   .imageText {
     font-size: 20px;
   }
 
-  .orders {
-    right: 10px;
-    top: 10px;
-  }
-
   .visits {
-    left: 10px;
-    bottom: 10px;
-  }
-}
-
-@media largeScreen {
-  .orders {
-    right: 30px;
-    top: 30px;
-  }
-
-  .visits {
-    left: 30px;
-    bottom: 30px;
+    left: 20px;
+    bottom: 20px;
   }
 }
