@@ -1,10 +1,14 @@
-@value mediumScreen from "../../../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
 
 .base {
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+.attachToBottom {
+  composes: base;
 }
 
 .base img {
@@ -16,5 +20,19 @@
   .base {
     flex-basis: 50%;
     width: 50%;
+  }
+
+  .attachToBottom img {
+    width: auto;
+    max-width: 581px;
+    position: relative;
+    bottom: -60px;
+  }
+}
+
+@media largeScreen {
+  .attachToBottom img {
+    max-width: none;
+    width: 100%;
   }
 }
