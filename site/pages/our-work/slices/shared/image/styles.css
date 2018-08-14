@@ -9,6 +9,7 @@
 
 .attachToBottom {
   composes: base;
+  align-self: flex-end;
 }
 
 .base img {
@@ -25,14 +26,13 @@
   .attachToBottom img {
     width: auto;
     max-width: 581px;
-    position: relative;
-    bottom: -60px;
+    max-height: 494px;
+    margin-bottom: -60px;
   }
 }
 
 @media largeScreen {
   .attachToBottom img {
     max-width: none;
-    width: 100%;
   }
 }
