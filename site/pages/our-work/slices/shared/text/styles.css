@@ -26,6 +26,7 @@
     flex-basis: 100%;
     width: 100%;
     text-align: center;
+    padding: 0;
   }
 
   .rightCol {
