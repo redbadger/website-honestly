@@ -16,6 +16,7 @@
 
 .caseStudyContent img {
   display: inline-block;
+  vertical-align: middle;
   margin: 15px;
 }
 

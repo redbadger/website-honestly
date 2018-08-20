@@ -8,6 +8,7 @@ import bbcLogo from './images/bbc.png';
 import bmwLogo from './images/bmw.png';
 import camdenLogo from './images/camden_market.png';
 import cartrawlerLogo from './images/cartrawler.png';
+import fidelityLogo from './images/fidelity.png';
 import fnfLogo from './images/f_f.png';
 import fortnumLogo from './images/fortnum-mason-logo.png';
 import ftLogo from './images/ft.png';
@@ -42,6 +43,7 @@ export default function Logos() {
         <img src={selfridgesLogo} className={styles.selfridgesLogo} alt="Selfridges logo" />
         <img src={hallerLogo} className={styles.hallerLogo} alt="Haller logo" />
         <img src={fnfLogo} className={styles.fnfLogo} alt="F&F logo" />
+        <img src={fidelityLogo} className={styles.fidelityLogo} alt="Fidelity logo" />
       </div>
     </div>
   );
