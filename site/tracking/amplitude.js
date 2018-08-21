@@ -32,20 +32,14 @@ export const fetchPageMetadata = (stateContext: {
 const logAmplitudeEvent = (
   eventType: string,
   eventOptions?: { [string]: string | number | Array<string | number> } = {},
-  test?: boolean = false,
 ): void => {
   const eventProperties = {
     ...eventOptions,
     url: removeTrailingSlash(window.location.href),
   };
 
-  if (test) {
-    // eslint-disable-next-line no-console
-    console.log(eventType, eventProperties);
-  } else {
-    // $FlowIgnore
-    amplitude.getInstance().logEvent(eventType, eventProperties);
-  }
+  // $FlowIgnore
+  amplitude.getInstance().logEvent(eventType, eventProperties);
 };
 
 export const logScrollDepth = (scrollDepth: number): void => {
