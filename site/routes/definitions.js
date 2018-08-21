@@ -11,6 +11,10 @@ type RouteDefinition = {|
   gen?: (state: Object) => Array<Object>,
   parentKey?: string,
   noLayout?: boolean,
+  ampPageType?: string,
+  ampPageProperties?: {
+    [string]: string,
+  },
 |};
 
 export const routeDefinitions: Array<RouteDefinition> = [
@@ -21,6 +25,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'homePage',
     route: '',
     defaults: { contactUs: false },
+    ampPageType: 'home',
   },
   {
     title: 'What we do',
@@ -66,6 +71,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
     gen: state => state.jobs.map(({ slug }) => ({ slug })),
     parentKey: 'joinUs',
+    ampPageType: 'job',
+    ampPageProperties: {
+      jobTitle: '{slug}',
+    },
   },
   {
     title: 'Events',
@@ -92,6 +101,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
         slug,
       })),
     parentKey: 'events',
+    ampPageType: 'event',
+    ampPageProperties: {
+      eventName: '{slug}',
+    },
   },
   {
     title: getBadgersTitle,
@@ -103,6 +116,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: stateToBadgerProps,
     gen: genBadgersParams,
     parentKey: 'aboutUsPage',
+    ampPageType: 'people',
+    ampPageProperties: {
+      peopleCategory: '{category}',
+    },
   },
   {
     title: ({ badger }) => [badger.firstName, badger.lastName].join(' '),
@@ -114,6 +131,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     }),
     gen: state => state.badgers.map(({ slug }) => ({ slug })),
     parentKey: 'badgers',
+    ampPageType: 'people',
+    ampPageProperties: {
+      badgerName: '{slug}',
+    },
   },
   {
     title: 'Retailer case study',
@@ -122,6 +143,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'retailerCaseStudy',
     route: 'our-work/case-study/retailer',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'retailer',
+    },
   },
   {
     title: 'Fortnum & Mason case study',
@@ -130,6 +155,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'fortnumAndMasonCaseStudy',
     route: 'our-work/case-study/fortnum-and-mason',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'fortnum-and-mason',
+    },
   },
   {
     title: 'Fortnum & Mason digital transformation',
@@ -138,6 +167,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'fMTeaCaseStudy',
     route: 'our-work/case-study/fortnum-and-mason-digital-transformation',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'fortnum-and-mason-digital-transformation',
+    },
   },
   {
     title: 'Financial Times case study',
@@ -145,6 +178,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'financialTimesCaseStudy',
     route: 'our-work/case-study/financial-times',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'financial-times',
+    },
   },
   {
     title: 'BMW Virtual Museum case study',
@@ -153,6 +190,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'bmwCaseStudy',
     route: 'our-work/case-study/bmw',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'bmw',
+    },
   },
   {
     title: 'BBC Now case study',
@@ -161,6 +202,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'bbcCaseStudy',
     route: 'our-work/case-study/bbc-now',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'bbc-now',
+    },
   },
   {
     title: 'Haller Foundation case study',
@@ -169,6 +214,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'hallerCaseStudy',
     route: 'our-work/case-study/haller',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'haller',
+    },
   },
   {
     title: 'Sky CMS case study',
@@ -177,6 +226,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'skyCMSCaseStudy',
     route: 'our-work/case-study/sky-cms',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'sky-cms',
+    },
   },
   {
     title: 'Sky case study',
@@ -193,6 +246,46 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'bankCaseStudy',
     route: 'our-work/case-study/financial-services-digital-transformation',
     parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'financial-services-digital-transformation',
+    },
+  },
+  {
+    title: 'Camden market case study',
+    description:
+      'Built in 10 weeks, a new site for Camden Market to drive engagement with Londoners and Tourists.',
+    key: 'camdenMarketCaseStudy',
+    route: 'our-work/case-study/camden-market',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'camden-market',
+    },
+  },
+  {
+    title: 'Creating complete CMS control',
+    description:
+      'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
+    key: 'carTrawlerCaseStudy',
+    route: 'our-work/case-study/car-trawler',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'car-trawler',
+    },
+  },
+  {
+    title: 'Creating complete CMS control',
+    description:
+      'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
+    key: 'carTrawlerMyAccountCaseStudy',
+    route: 'our-work/case-study/car-trawler-my-account',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'car-trawler-my-account',
+    },
   },
   {
     title: 'Technology',
@@ -210,6 +303,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',
+    ampPageType: 'error-page',
+    ampPageProperties: {
+      errorPageCode: '404',
+    },
   },
   {
     title: 'Cookie Policy',
@@ -230,6 +327,10 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: 'Server error',
     key: 'serverErrorPage',
     route: '50x',
+    ampPageType: 'error-page',
+    ampPageProperties: {
+      errorPageCode: '50x',
+    },
   },
   {
     title: 'Lost connection',
@@ -241,29 +342,5 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'browserNotSupported',
     route: 'browser-not-supported',
     noLayout: true,
-  },
-  {
-    title: 'Camden market case study',
-    description:
-      'Built in 10 weeks, a new site for Camden Market to drive engagement with Londoners and Tourists.',
-    key: 'camdenMarketCaseStudy',
-    route: 'our-work/case-study/camden-market',
-    parentKey: 'ourWorkPage',
-  },
-  {
-    title: 'Creating complete CMS control',
-    description:
-      'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
-    key: 'carTrawlerCaseStudy',
-    route: 'our-work/case-study/car-trawler',
-    parentKey: 'ourWorkPage',
-  },
-  {
-    title: 'Creating complete CMS control',
-    description:
-      'Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.',
-    key: 'carTrawlerMyAccountCaseStudy',
-    route: 'our-work/case-study/car-trawler-my-account',
-    parentKey: 'ourWorkPage',
   },
 ];

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import styles from './style.css';
-import logAmplitudeEvent from '../tracking/amplitude';
+import logAmplitudeEvent, { fetchPageMetadata } from '../tracking/amplitude';
 
 export default class Layout extends React.Component {
   static propTypes = {
@@ -21,24 +21,15 @@ export default class Layout extends React.Component {
   }
 
   componentDidMount = () => {
-    logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() });
+    const { stateContext } = this.props.stateNavigator;
+    logAmplitudeEvent('PAGE LOADED', fetchPageMetadata(stateContext));
   };
 
   componentDidUpdate = prevProps => {
     if (prevProps.title !== this.props.title) {
-      logAmplitudeEvent('PAGE LOADED', { pageType: this.getPageType() });
+      const { stateContext } = this.props.stateNavigator;
+      logAmplitudeEvent('PAGE LOADED', fetchPageMetadata(stateContext));
     }
-  };
-
-  getPageType = () => {
-    const pathnameArray = window.location.pathname.split('/');
-
-    if (pathnameArray[1] === 'events') {
-      return 'events';
-    } else if (pathnameArray.length > 2) {
-      return pathnameArray[2];
-    }
-    return pathnameArray[1];
   };
 
   render() {

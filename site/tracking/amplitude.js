@@ -1,4 +1,34 @@
 // @flow
+
+export const removeTrailingSlash = (str: string) => {
+  return typeof str === 'string' && str[str.length - 1] === '/'
+    ? str.slice(0, str.length - 1)
+    : str;
+};
+
+const dynamicPropRegExp = /^\{(.+)\}$/;
+
+const mapProperties = (properties = {}, data = {}) => {
+  return Object.keys(properties).reduce((acc, key) => {
+    const value = properties[key];
+    const isDynamic = dynamicPropRegExp.test(value);
+
+    return { ...acc, [key]: isDynamic ? data[dynamicPropRegExp.exec(properties[key])[1]] : value };
+  }, {});
+};
+
+export const fetchPageMetadata = (stateContext: {
+  data?: { [string]: string },
+  state: { route: string, ampPageType?: string, ampPageProperties?: { [string]: string } },
+}) => {
+  const { state, data } = stateContext;
+
+  const pageType = state.ampPageType ? state.ampPageType : state.route;
+  const properties = mapProperties(state.ampPageProperties, data);
+
+  return { pageType, ...properties };
+};
+
 const logAmplitudeEvent = (
   eventType: string,
   eventOptions?: { [string]: string | number | Array<string | number> } = {},
@@ -6,7 +36,7 @@ const logAmplitudeEvent = (
 ): void => {
   const eventProperties = {
     ...eventOptions,
-    url: window.location.href,
+    url: removeTrailingSlash(window.location.href),
   };
 
   if (test) {
