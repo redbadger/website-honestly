@@ -1,3 +1,5 @@
+import { getCookieValue } from '../components/utils';
+
 // @flow
 
 export const removeTrailingSlash = (str: string) => {
@@ -29,17 +31,36 @@ export const fetchPageMetadata = (stateContext: {
   return { pageType, ...properties };
 };
 
+const logEvent = (eventType, eventProperties) =>
+  // $FlowIgnore
+  amplitude.getInstance().logEvent(eventType, eventProperties);
+
+const logEventOnce = (eventType, eventProperties) => {
+  const event = eventType
+    .toLowerCase()
+    .split(' ')
+    .concat(['done'])
+    .join('-');
+
+  const doneCookie = getCookieValue(event);
+
+  if (doneCookie === '1') return;
+
+  document.cookie = `${event}=1; path=/`;
+  logEvent(eventType, eventProperties);
+};
+
 const logAmplitudeEvent = (
   eventType: string,
   eventOptions?: { [string]: string | number | Array<string | number> } = {},
+  once?: boolean = false,
 ): void => {
   const eventProperties = {
     ...eventOptions,
     url: removeTrailingSlash(window.location.href),
   };
 
-  // $FlowIgnore
-  amplitude.getInstance().logEvent(eventType, eventProperties);
+  return once ? logEventOnce(eventType, eventProperties) : logEvent(eventType, eventProperties);
 };
 
 export const logScrollDepth = (scrollDepth: number): void => {

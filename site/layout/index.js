@@ -23,6 +23,7 @@ export default class Layout extends React.Component {
   componentDidMount = () => {
     const { stateContext } = this.props.stateNavigator;
     logAmplitudeEvent('PAGE LOADED', fetchPageMetadata(stateContext));
+    logAmplitudeEvent('ENTRY PAGE', fetchPageMetadata(stateContext), true);
   };
 
   componentDidUpdate = prevProps => {
