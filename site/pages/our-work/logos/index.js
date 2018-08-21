@@ -25,25 +25,63 @@ export default function Logos() {
   return (
     <div className={styles.caseStudyContainer}>
       <div className={styles.caseStudyContent}>
-        <img src={hsbcLogo} className={styles.hsbcLogo} alt="HSBC logo" />
-        <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
-        <img src={ftLogo} className={styles.ftLogo} alt="Financial Times logo" />
-        <img src={fortnumLogo} className={styles.fortnumLogo} alt="Fortnum and Mason logo" />
-        <img src={anLogo} className={styles.anLogo} alt="Anthony Nolan logo" />
-        <img src={skyLogo} className={styles.skyLogo} alt="Sky logo" />
-        <img src={cartrawlerLogo} className={styles.cartrawlerLogo} alt="Cartrawler logo" />
-        <img src={tescoLogo} className={styles.tescoLogo} alt="Tesco logo" />
-        <img src={lloydsLogo} className={styles.lloydsLogo} alt="Lloyds bank logo" />
-        <img src={asosLogo} className={styles.asosLogo} alt="Asos logo" />
-        <img src={bbcLogo} className={styles.bbcLogo} alt="BBC logo" />
-        <img src={prideLogo} className={styles.prideLogo} alt="Pride in London logo" />
-        <img src={bmwLogo} className={styles.bmwLogo} alt="BMW logo" />
-        <img src={atkinsLogo} className={styles.atkinsLogo} alt="Atkins logo" />
-        <img src={wickesLogo} className={styles.wickesLogo} alt="Wickes logo" />
-        <img src={selfridgesLogo} className={styles.selfridgesLogo} alt="Selfridges logo" />
-        <img src={hallerLogo} className={styles.hallerLogo} alt="Haller logo" />
-        <img src={fnfLogo} className={styles.fnfLogo} alt="F&F logo" />
-        <img src={fidelityLogo} className={styles.fidelityLogo} alt="Fidelity logo" />
+        <div className={styles.logoWrapper}>
+          <img src={hsbcLogo} className={styles.hsbcLogo} alt="HSBC logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={ftLogo} className={styles.ftLogo} alt="Financial Times logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={fortnumLogo} className={styles.fortnumLogo} alt="Fortnum and Mason logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={anLogo} className={styles.anLogo} alt="Anthony Nolan logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={skyLogo} className={styles.skyLogo} alt="Sky logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={cartrawlerLogo} className={styles.cartrawlerLogo} alt="Cartrawler logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={tescoLogo} className={styles.tescoLogo} alt="Tesco logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={lloydsLogo} className={styles.lloydsLogo} alt="Lloyds bank logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={asosLogo} className={styles.asosLogo} alt="Asos logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={bbcLogo} className={styles.bbcLogo} alt="BBC logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={prideLogo} className={styles.prideLogo} alt="Pride in London logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={bmwLogo} className={styles.bmwLogo} alt="BMW logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={atkinsLogo} className={styles.atkinsLogo} alt="Atkins logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={wickesLogo} className={styles.wickesLogo} alt="Wickes logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={selfridgesLogo} className={styles.selfridgesLogo} alt="Selfridges logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={hallerLogo} className={styles.hallerLogo} alt="Haller logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={fnfLogo} className={styles.fnfLogo} alt="F&F logo" />
+        </div>
+        <div className={styles.logoWrapper}>
+          <img src={fidelityLogo} className={styles.fidelityLogo} alt="Fidelity logo" />
+        </div>
       </div>
     </div>
   );
