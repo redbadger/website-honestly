@@ -9,11 +9,14 @@
 }
 
 /* IE11 fix for flexbox */
-_:-ms-fullscreen, :root .cell {
+_:-ms-fullscreen,
+:root .cell {
   min-height: 90vh;
 }
 
-_:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+_:-ms-fullscreen,
+:root .cell.cell-Sky,
+:root .cell.cell-BBC {
   min-height: 75vh;
 }
 
@@ -34,33 +37,8 @@ _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
   flex-direction: column-reverse;
 }
 
-.logoHaller {
-  width: 115px;
-  height: 41px;
-}
-
-.logoBMW {
-  height: 58px;
-}
-
-.logoBMW + .normalHeader {
-  margin-top: 26px;
-}
-
-.logoBBC {
-  width: 80px;
-}
-
-.logoBBC + .largeHeader {
-  margin-top: 10px;
-}
-
-.logoSky {
-  width: 56px;
-}
-
-.logoSky + .largeHeader {
-  margin-top: 10px;
+.logo {
+  height: 75px;
 }
 
 .caseStudyContent {
@@ -68,28 +46,29 @@ _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
 }
 
 .normalHeader {
-  composes: fontM from "../../../css/typography/_fonts.css";
+  composes: fontM from '../../../css/typography/_fonts.css';
 }
 
 .largeHeader {
-  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: fontL from '../../../css/typography/_fonts.css';
 }
 
-.normalHeader, .largeHeader {
-  composes: serif from "../../../css/typography/_fonts.css";
+.normalHeader,
+.largeHeader {
+  composes: serif from '../../../css/typography/_fonts.css';
   color: badgerBlack;
   margin-top: 20px;
 }
 
 .description {
-  composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
   color: badgerBlack;
   margin-top: 10px;
 }
 
 .readmore {
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
   border-bottom: 2px solid badgerRedOnWhite;
   text-decoration: none;
   color: badgerBlack;
@@ -131,8 +110,9 @@ _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
     width: 100%;
   }
 
-  .normalHeader, .largeHeader {
-    margin-top: 40px;
+  .normalHeader,
+  .largeHeader {
+    margin-top: 20px;
   }
 
   .description {
@@ -146,7 +126,8 @@ _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
     border-bottom: none;
   }
 
-  .cell-BBC, .cell-Sky {
+  .cell-BBC,
+  .cell-Sky {
     padding-top: 40px;
   }
 
@@ -158,65 +139,69 @@ _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
 }
 
 /* iOS9 Safari flexbox fixes */
-@supports (overflow:-webkit-marquee)
-   and (justify-content:inherit)
-  {
-    @media screen and (min-width: 320px) {
-      .cell-Haller {
-        min-height: 520px;
-      }
-
-      .cell-BMW {
-        min-height: 550px;
-      }
-
-      .cell-BBC {
-        min-height: 350px;
-      }
-
-      .cell-Sky {
-        min-height: 300px;
-      }
+@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+  @media screen and (min-width: 320px) {
+    .cell-Haller {
+      min-height: 520px;
     }
 
-    @media screen and (min-width: 568px) {
-      .cell-Haller {
-        min-height: 650px;
-      }
-
-      .cell-BMW {
-        min-height: 680px;
-      }
+    .cell-BMW {
+      min-height: 550px;
     }
 
+    .cell-BBC {
+      min-height: 350px;
+    }
+
+    .cell-Sky {
+      min-height: 300px;
+    }
+  }
+
+  @media screen and (min-width: 568px) {
+    .cell-Haller {
+      min-height: 650px;
+    }
+
+    .cell-BMW {
+      min-height: 680px;
+    }
+  }
 }
 
 @media screen and (max-width: 689px) {
   /* IE11 fix for flexbox */
-  _:-ms-fullscreen, :root .cell {
+  _:-ms-fullscreen,
+  :root .cell {
     min-height: 105vh;
   }
 
-  _:-ms-fullscreen, :root .cell.cell-BMW {
+  _:-ms-fullscreen,
+  :root .cell.cell-BMW {
     min-height: 115vh;
   }
 
-  _:-ms-fullscreen, :root .cell.cell-Sky, :root .cell.cell-BBC {
+  _:-ms-fullscreen,
+  :root .cell.cell-Sky,
+  :root .cell.cell-BBC {
     min-height: 50vh;
   }
 }
 
 @media screen and (max-width: 500px) {
   /* IE11 fix for flexbox */
-  _:-ms-fullscreen, :root .cell {
+  _:-ms-fullscreen,
+  :root .cell {
     min-height: 100vh;
   }
 
-  _:-ms-fullscreen, :root .cell.cell-BMW {
+  _:-ms-fullscreen,
+  :root .cell.cell-BMW {
     min-height: 100vh;
   }
 
-  _:-ms-fullscreen, :root .cell.cell-BBC {
+  _:-ms-fullscreen,
+  :root .cell.cell-BBC {
     min-height: 60vh;
   }
 }

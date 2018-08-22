@@ -28,11 +28,7 @@ export default function Cell(props: Props) {
         <div className={styles.caseStudyContent}>
           <Link to={props.routeKey}>
             {displayImg}
-            <img
-              src={props.clientLogo}
-              className={styles[`logo${props.clientName}`]}
-              alt={props.alt}
-            />
+            <img src={props.clientLogo} className={styles.logo} alt={props.alt} />
             <h2 className={props.image ? styles.normalHeader : styles.largeHeader}>
               {props.headerText}
             </h2>
