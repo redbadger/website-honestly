@@ -1,4 +1,4 @@
-import { removeTrailingSlash, fetchPageMetadata } from './amplitude';
+import { removeTrailingSlash, fetchPageMetadata, logEvent, logEventOnce } from './amplitude';
 
 describe('site/tracking/amplitude', () => {
   describe('removeTrailingSlash', () => {
@@ -66,6 +66,48 @@ describe('site/tracking/amplitude', () => {
         pageType: 'event',
         eventName: 'react-meetup',
         otherData: 'data',
+      });
+    });
+  });
+
+  describe('logEvent', () => {
+    let spy;
+
+    beforeEach(() => {
+      spy = jest.fn();
+
+      global.amplitude = {
+        getInstance: () => ({ logEvent: spy }),
+      };
+    });
+
+    afterEach(() => {
+      spy.mockReset();
+      global.amplitude = null;
+    });
+
+    it('passes the correct arguments to the amplitude API', () => {
+      const eventType = 'EVENT';
+      const eventProperties = { prop: 1 };
+      logEvent(eventType, eventProperties);
+
+      expect(spy).toHaveBeenCalledWith(eventType, eventProperties);
+    });
+
+    describe('logEventOnce', () => {
+      it('calls logEvent if the cookie is not set', () => {
+        const eventType = 'EVENT';
+        const eventProperties = { prop: 1 };
+        logEventOnce(eventType, eventProperties);
+        expect(spy).toHaveBeenCalledWith(eventType, eventProperties);
+      });
+
+      it('does not call logEvent if the cookie is set', () => {
+        const eventType = 'EVENT';
+        const eventProperties = { prop: 1 };
+        document.cookie = 'EVENT-done=1; path=/';
+        logEventOnce(eventType, eventProperties);
+        expect(spy).not.toHaveBeenCalledWith(eventType, eventProperties);
       });
     });
   });

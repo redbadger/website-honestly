@@ -7,6 +7,15 @@
 
 import { getCookieValue } from '../components/utils';
 
+type EventType = string;
+type EventProperties = { [string]: string | number | string[] };
+
+declare var amplitude: {
+  getInstance: () => {
+    logEvent: (eventType: EventType, eventPropertiese: EventProperties) => void,
+  },
+};
+
 export const removeTrailingSlash = (str: string) => {
   return typeof str === 'string' && str[str.length - 1] === '/'
     ? str.slice(0, str.length - 1)
@@ -41,11 +50,10 @@ export const fetchPageMetadata = (stateContext: {
   return { pageType, pageTitle: state.title, ...properties };
 };
 
-const logEvent = (eventType, eventProperties) =>
-  // $FlowIgnore
+export const logEvent = (eventType: EventType, eventProperties: EventProperties) =>
   amplitude.getInstance().logEvent(eventType, eventProperties);
 
-const logEventOnce = (eventType, eventProperties) => {
+export const logEventOnce = (eventType: EventType, eventProperties: EventProperties) => {
   const event = eventType
     .toLowerCase()
     .split(' ')
