@@ -1,6 +1,11 @@
-import { getCookieValue } from '../components/utils';
-
 // @flow
+
+// Amplitude Tracking
+// Note parts of this code exist in the blog repo too. When updating,
+// make sure changes happen there as well, especially in relation to
+// events and properties we send.
+
+import { getCookieValue } from '../components/utils';
 
 export const removeTrailingSlash = (str: string) => {
   return typeof str === 'string' && str[str.length - 1] === '/'
@@ -21,14 +26,19 @@ const mapProperties = (properties = {}, data = {}) => {
 
 export const fetchPageMetadata = (stateContext: {
   data?: { [string]: string },
-  state: { route: string, ampPageType?: string, ampPageProperties?: { [string]: string } },
+  state: {
+    title: string,
+    route: string,
+    ampPageType?: string,
+    ampPageProperties?: { [string]: string },
+  },
 }) => {
   const { state, data } = stateContext;
 
   const pageType = state.ampPageType ? state.ampPageType : state.route;
   const properties = mapProperties(state.ampPageProperties, data);
 
-  return { pageType, ...properties };
+  return { pageType, pageTitle: state.title, ...properties };
 };
 
 const logEvent = (eventType, eventProperties) =>
@@ -63,29 +73,13 @@ const logAmplitudeEvent = (
   return once ? logEventOnce(eventType, eventProperties) : logEvent(eventType, eventProperties);
 };
 
-export const logScrollDepth = (scrollDepth: number): void => {
-  const title = document.title.split(' | ')[0];
-
-  const query = window.location.search.substr(1);
-  let referrerProperties = { referrer: 'internal' };
-  if (query.includes('utm_source')) {
-    const utmProperties = {};
-    query.split('&').forEach(part => {
-      const item = part.split('=');
-      utmProperties[item[0]] = decodeURIComponent(item[1]);
-    });
-
-    referrerProperties = {
-      referrer: utmProperties.utm_source,
-      utmContent: utmProperties.utm_content,
-      utmMedium: utmProperties.utm_medium,
-    };
-  }
+export const logScrollDepth = (scrollPercentage: number): void => {
+  const pageTitle = document.title.split(' | ')[0];
 
   logAmplitudeEvent('SCROLL', {
-    title,
-    ...referrerProperties,
-    scrollPercentage: scrollDepth,
+    url: removeTrailingSlash(window.location.href),
+    pageTitle,
+    scrollPercentage,
   });
 };
 
