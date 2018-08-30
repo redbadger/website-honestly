@@ -1,4 +1,10 @@
-import { removeTrailingSlash, fetchPageMetadata, logEvent, logEventOnce } from './amplitude';
+import logAmplitudeEvent, {
+  removeTrailingSlash,
+  fetchPageMetadata,
+  logEvent,
+  logEventOnce,
+  logScrollDepth,
+} from './amplitude';
 
 describe('site/tracking/amplitude', () => {
   describe('removeTrailingSlash', () => {
@@ -84,13 +90,15 @@ describe('site/tracking/amplitude', () => {
     afterEach(() => {
       spy.mockReset();
       global.amplitude = null;
+      document.cookie = 'event-done=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+      document.title = '';
+      window.history.replaceState({}, '', '/');
     });
 
     it('passes the correct arguments to the amplitude API', () => {
       const eventType = 'EVENT';
       const eventProperties = { prop: 1 };
       logEvent(eventType, eventProperties);
-
       expect(spy).toHaveBeenCalledWith(eventType, eventProperties);
     });
 
@@ -105,9 +113,59 @@ describe('site/tracking/amplitude', () => {
       it('does not call logEvent if the cookie is set', () => {
         const eventType = 'EVENT';
         const eventProperties = { prop: 1 };
-        document.cookie = 'EVENT-done=1; path=/';
+        document.cookie = 'event-done=1; path=/';
         logEventOnce(eventType, eventProperties);
         expect(spy).not.toHaveBeenCalledWith(eventType, eventProperties);
+      });
+    });
+
+    describe('logAmplitudeEvent', () => {
+      it('calls logEvent and sets the cookie', () => {
+        const eventType = 'EVENT';
+        const eventProperties = { prop: 1 };
+        logAmplitudeEvent(eventType, eventProperties, true);
+        expect(spy).toHaveBeenCalledWith(eventType, {
+          ...eventProperties,
+          url: 'https://red-badger.com',
+        });
+        expect(document.cookie).toBe('event-done=1');
+      });
+
+      it('calls logEvent', () => {
+        const eventType = 'EVENT';
+        const eventProperties = { prop: 1 };
+        logAmplitudeEvent(eventType, eventProperties);
+        expect(spy).toHaveBeenCalledWith(eventType, {
+          ...eventProperties,
+          url: 'https://red-badger.com',
+        });
+        expect(document.cookie).toBe('');
+      });
+
+      it('sets the right eventProperties,', () => {
+        window.history.pushState({}, '', 'blog/');
+        const eventType = 'EVENT';
+        const eventProperties = { prop: 1 };
+        logAmplitudeEvent(eventType, eventProperties);
+        expect(spy).toHaveBeenCalledWith(eventType, {
+          ...eventProperties,
+          url: 'https://red-badger.com/blog',
+        });
+      });
+    });
+
+    describe('logScrollDepth', () => {
+      it('sets the correct eventProperties', () => {
+        const eventType = 'SCROLL';
+        const scrollPercentage = 20;
+        const pageTitle = 'Red Badger';
+        document.title = pageTitle;
+        logScrollDepth(scrollPercentage);
+        expect(spy).toHaveBeenCalledWith(eventType, {
+          url: 'https://red-badger.com',
+          pageTitle,
+          scrollPercentage: 20,
+        });
       });
     });
   });
