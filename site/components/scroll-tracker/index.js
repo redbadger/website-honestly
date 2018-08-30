@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 import { logScrollDepth } from '../../tracking/amplitude';
 
 class ScrollTracker extends React.Component<{ children: React.Node }> {
-  static THROTTLE_MS = 100;
+  static THROTTLE_MS = 50;
 
   static scrollPercentage() {
     const scrollHeight = document.documentElement ? document.documentElement.scrollHeight : 0;
@@ -26,61 +26,36 @@ class ScrollTracker extends React.Component<{ children: React.Node }> {
   }
 
   componentDidMount() {
-    this.listener = throttle(this.log0ScrollDepth, ScrollTracker.THROTTLE_MS);
-    window.addEventListener('scroll', this.listener);
+    const handler = throttle(this.scrollHandler, ScrollTracker.THROTTLE_MS);
+    this.handler = handler;
+    window.addEventListener('scroll', handler);
   }
 
-  listener = null;
-
-  swapListeners(newListener: Function) {
-    window.removeEventListener('scroll', this.listener);
-    this.listener = throttle(newListener, ScrollTracker.THROTTLE_MS);
-    window.addEventListener('scroll', this.listener);
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handler);
+    this.handler = () => {};
   }
 
-  log100ScrollDepth = () => {
+  handler: Function;
+  thresholds = [[0, 25], [25, 50], [50, 75], [75, 100], [100, 100]];
+
+  scrollHandler = () => {
     const scrollPercentage = ScrollTracker.scrollPercentage();
+    const removeThreshold = i => {
+      this.thresholds = [...this.thresholds.slice(0, i), ...this.thresholds.slice(i + 1)];
+    };
 
-    if (scrollPercentage >= 100) {
-      ScrollTracker.logScroll(100);
-      window.removeEventListener('scroll', this.listener);
-    }
-  };
+    this.thresholds.forEach((threshold, i) => {
+      const [low, high] = threshold;
 
-  log75ScrollDepth = () => {
-    const scrollPercentage = ScrollTracker.scrollPercentage();
-
-    if (scrollPercentage >= 75 && scrollPercentage < 100) {
-      ScrollTracker.logScroll(75);
-      this.swapListeners(this.log100ScrollDepth);
-    }
-  };
-
-  log50ScrollDepth = () => {
-    const scrollPercentage = ScrollTracker.scrollPercentage();
-
-    if (scrollPercentage >= 50 && scrollPercentage < 75) {
-      ScrollTracker.logScroll(50);
-      this.swapListeners(this.log75ScrollDepth);
-    }
-  };
-
-  log25ScrollDepth = () => {
-    const scrollPercentage = ScrollTracker.scrollPercentage();
-
-    if (scrollPercentage >= 25 && scrollPercentage < 50) {
-      ScrollTracker.logScroll(25);
-      this.swapListeners(this.log50ScrollDepth);
-    }
-  };
-
-  log0ScrollDepth = () => {
-    const scrollPercentage = ScrollTracker.scrollPercentage();
-
-    if (scrollPercentage < 25) {
-      ScrollTracker.logScroll(0);
-      this.swapListeners(this.log25ScrollDepth);
-    }
+      if (
+        (low < scrollPercentage && high >= scrollPercentage) ||
+        (low === scrollPercentage && high === scrollPercentage)
+      ) {
+        ScrollTracker.logScroll(low);
+        removeThreshold(i);
+      }
+    });
   };
 
   render() {

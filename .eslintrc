@@ -13,7 +13,8 @@
   "globals": {
     "amplitude": true,
     "expect": true,
-    "System": true
+    "System": true,
+    "globals": true
   },
   "parser": "babel-eslint",
   "plugins": ["flowtype"],

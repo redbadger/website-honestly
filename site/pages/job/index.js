@@ -69,7 +69,7 @@ export default function Job({ job }: JobProps) {
                     className={styles.sidebarApplyLink}
                     href={job.applicationUrl}
                     onClick={() =>
-                      logAmplitudeEvent('CLICK JOB APPLY', job.title ? { title: job.title } : {})
+                      logAmplitudeEvent('CLICK JOB APPLY', job.title ? { jobTitle: job.title } : {})
                     }
                     target="_blank"
                     rel="noopener noreferrer"
