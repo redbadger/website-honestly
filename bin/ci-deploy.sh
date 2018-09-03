@@ -56,12 +56,12 @@ deployMaster() {
   pretty_success "Version Set: $cYellow $LAST_COMMIT_INFO $cNo"
 
   pretty_block "Copying assets to S3"
-  aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
-  aws s3 cp ./dist/manifest.json s3://$BUCKET_NAME/manifest.json
-  aws s3 cp ./dist/sitemap.xml s3://$BUCKET_NAME/sitemap.xml
-  aws s3 cp ./dist/googlef362fe4b545e4cfb.html s3://$BUCKET_NAME/googlef362fe4b545e4cfb.html
-  aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/robots.txt
-  aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/version.txt
+  # aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
+  # aws s3 cp ./dist/manifest.json s3://$BUCKET_NAME/manifest.json
+  # aws s3 cp ./dist/sitemap.xml s3://$BUCKET_NAME/sitemap.xml
+  # aws s3 cp ./dist/googlef362fe4b545e4cfb.html s3://$BUCKET_NAME/googlef362fe4b545e4cfb.html
+  # aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/robots.txt
+  # aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/version.txt
   pretty_success "Assets Deployed to S3!"
 
   pretty_block "Uploading services to AWS Lambda"
