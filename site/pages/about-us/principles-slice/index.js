@@ -20,7 +20,7 @@ export default function Principles() {
           <Principle
             number="02"
             title="Find a way."
-            description="As individuals we need to be proactive and to earn and build the trust of our clients."
+            description="As individuals we need to be proactive, to earn and build the trust of our clients."
           />
           <Principle
             number="03"
