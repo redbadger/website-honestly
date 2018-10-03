@@ -89,7 +89,6 @@
     "pre-git": "^3.10.0",
     "prop-types": "^15.5.7",
     "proxyquire": "^1.8.0",
-    "ramda": "^0.22.1",
     "raw-loader": "^0.5.1",
     "react": "^16.4.0",
     "react-dom": "^16.3.1",
