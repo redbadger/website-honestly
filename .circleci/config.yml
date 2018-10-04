@@ -111,7 +111,6 @@ jobs:
           name: Publish storybook
           command: make publish-storybook
 
-
   deploy_staging:
     docker:
       - image: redbadger/website-honestly-deploy:6
@@ -130,9 +129,10 @@ jobs:
       - image: redbadger/website-honestly-deploy:6
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Install Node modules
+          command: yarn install --frozen-lockfile
 
       - run:
           name: Deploy to production
