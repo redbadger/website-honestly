@@ -28,7 +28,7 @@ createCommitSite() {
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/$COMMIT_REF/assets-honestly
   aws s3 cp ./dist/manifest.json s3://$BUCKET_NAME/$COMMIT_REF/manifest.json
   aws s3 cp ./dist/sitemap.xml s3://$BUCKET_NAME/$COMMIT_REF/sitemap.xml
-  aws s3 cp ./dist/googlef362fe4b545e4cfb.html s3://$BUCKET_NAME/$COMMIT_REF/googlef362fe4b545e4cfb.html
+  aws s3 cp ./dist/google16329df1f462dd5e.html s3://$BUCKET_NAME/$COMMIT_REF/google16329df1f462dd5e.html
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/$COMMIT_REF/robots.txt
   aws s3 sync ./dist/static-site/$COMMIT_REF/ s3://$BUCKET_NAME/$COMMIT_REF/
   aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/$COMMIT_REF/version.txt
@@ -59,7 +59,7 @@ deployMaster() {
   aws s3 sync ./dist/assets-honestly s3://$BUCKET_NAME/assets-honestly
   aws s3 cp ./dist/manifest.json s3://$BUCKET_NAME/manifest.json
   aws s3 cp ./dist/sitemap.xml s3://$BUCKET_NAME/sitemap.xml
-  aws s3 cp ./dist/googlef362fe4b545e4cfb.html s3://$BUCKET_NAME/googlef362fe4b545e4cfb.html
+  aws s3 cp ./dist/google16329df1f462dd5e.html s3://$BUCKET_NAME/google16329df1f462dd5e.html
   aws s3 cp ./dist/robots.txt s3://$BUCKET_NAME/robots.txt
   aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/version.txt
   pretty_success "Assets Deployed to S3!"

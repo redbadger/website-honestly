@@ -93,7 +93,7 @@ exports.baseWebConfig = webpackMerge(baseConfig, {
       { from: `assets/${robots}`, to: 'robots.txt' },
       { from: 'assets/manifest.json', to: 'manifest.json' },
       { from: 'assets/sitemap.xml', to: 'sitemap.xml' },
-      { from: 'assets/google-verification.html', to: 'googlef362fe4b545e4cfb.html' },
+      { from: 'assets/google16329df1f462dd5e.html', to: 'google16329df1f462dd5e.html' },
       { from: 'assets/txt', to: 'txt/' },
       { from: 'assets/fonts', to: 'assets-honestly/' },
     ]),
