@@ -22,7 +22,7 @@ const BlogSlice = ({
         <h2 className={styles.blogSliceTitle}>{title}</h2>
         <ul className={listStyle}>
           {blogPosts.map(blogPost => (
-            <BlogEntry key={blogPost.slug} blogPost={blogPost} altStyle={altStyle} />
+            <BlogEntry key={blogPost.url} blogPost={blogPost} altStyle={altStyle} />
           ))}
         </ul>
       </div>
