@@ -53,10 +53,12 @@ const getPostsForTag = params =>
       return mapDataToState(posts);
     });
 
+/* eslint-disable camelcase */
 const getPosts = (tags: Array<string>) =>
   (Promise.all(tags.map(topicId => getPostsForTag({ topic_id: topicId }))).then(flatten): Promise<
     any,
   >);
+/* eslint-enable camelcase */
 
 export const getBlogPosts = (tags: Array<string>) =>
   (getPosts(tags).then(posts => posts.sort((a, b) => b.date - a.date)): Promise<any>);
