@@ -33,6 +33,7 @@ import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
 import FMTeaCaseStudy from '../pages/our-work/case-study/fortnum-and-mason-digital-transformation';
 import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
 import HallerCaseStudy from '../pages/our-work/case-study/haller';
+import PrideCaseStudy from '../pages/our-work/case-study/pride';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
@@ -61,6 +62,7 @@ const componentMap = {
   notFoundPage: NotFoundPage,
   offlinePage: OfflinePage,
   ourWorkPage: OurWorkPage,
+  prideCaseStudy: PrideCaseStudy,
   privacyPolicy: PrivacyPolicyPage,
   retailerCaseStudy: RetailerCaseStudy,
   serverErrorPage: ServerErrorPage,
