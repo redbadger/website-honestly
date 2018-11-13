@@ -209,6 +209,13 @@ const policies = [
               https://www.linkedin.com/legal/privacy-policy
             </a>
           </P>
+
+          <H3>amplitude_id_*</H3>
+          <P>
+            These cookies are set by Amplitude analytics, which helps in better understanding how
+            the Red Badger website is used.{' '}
+            <a href="https://amplitude.com/privacy">https://amplitude.com/privacy</a>
+          </P>
         </React.Fragment>
       );
     },
