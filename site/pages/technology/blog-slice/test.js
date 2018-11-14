@@ -10,18 +10,16 @@ describe('site/blog-slice', () => {
     const posts = [
       {
         title: 'A post',
-        slug: '2016/this-is-a-blog-post',
-        author: {
-          name: 'Milo',
-          role: 'Software Engineer',
-        },
-        categories: ['Technology'],
+        url: 'https://blog.red-badger.com/this-is-a-blog-post',
+        author: 'Milo',
+        excerpt: 'React is great',
+        date: '2017-10-02T13:07:00.000Z',
       },
     ];
     const blogSlice = render(<BlogSlice blogPosts={posts} />);
     const className = cheerioSelector(styles.link);
     expect(blogSlice.find(className).attr('href')).toEqual(
-      '//red-badger.com/blog/2016/this-is-a-blog-post',
+      'https://blog.red-badger.com/this-is-a-blog-post',
     );
   });
 });

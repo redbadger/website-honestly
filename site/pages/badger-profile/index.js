@@ -11,16 +11,11 @@ import metaImage from './meta-image.jpg';
 import type { Badger } from '../../types';
 
 const BlogsLink = ({ badger }: { badger: Badger }) => {
-  if (badger.squarespaceId) {
-    return (
-      <div className={styles.authorLink}>
-        <a href={'/blog/?author=' + badger.squarespaceId}>
-          Read {badger.firstName}&rsquo;s blog posts
-        </a>
-      </div>
-    );
-  }
-  return null;
+  return (
+    <div className={styles.authorLink}>
+      <a href={`/blog/author/${badger.slug}`}>Read {badger.firstName}&rsquo;s blog posts</a>
+    </div>
+  );
 };
 
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
