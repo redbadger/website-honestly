@@ -152,7 +152,6 @@ export function getData() {
         linkedin
         twitter
         github
-        squarespaceId
         categories {
           name
           slug
