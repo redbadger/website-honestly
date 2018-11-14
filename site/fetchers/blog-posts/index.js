@@ -1,20 +1,15 @@
 /* @flow */
 
-import take from 'lodash.take';
 import flatten from 'lodash.flatten';
 import moment from 'moment';
 import fetchRetry from '../util/fetch-retry';
 
-type Author = {
-  role: string,
-  name: string,
-};
-
 type BlogPost = {
-  slug: string,
-  category: string,
+  url: string,
   title: string,
-  author: Author,
+  author: string,
+  excerpt: string,
+  date: string,
 };
 
 const getQueryString = params => {
@@ -24,12 +19,13 @@ const getQueryString = params => {
 };
 
 const getUrl = params => {
-  return `https://blog.red-badger.com/blog/?&format=json&${getQueryString(params)}`;
-};
+  const { HUBSPOT_BLOG_ENDPOINT, HUBSPOT_API_KEY } = process.env;
 
-export const sanitiseAuthorBio = (bio: string = ''): string => {
-  const role = bio.match(/<.+>(.*)<.+>/);
-  return (role && role[1]) || bio;
+  if (!HUBSPOT_BLOG_ENDPOINT || !HUBSPOT_API_KEY) {
+    throw new Error(`Hubspot blog env variables are not defined`);
+  }
+
+  return `${HUBSPOT_BLOG_ENDPOINT}?hapikey=${HUBSPOT_API_KEY}&limit=5&${getQueryString(params)}`;
 };
 
 export const sanitiseExcerpt = (excerpt: string = ''): string =>
@@ -38,15 +34,11 @@ export const sanitiseExcerpt = (excerpt: string = ''): string =>
 export const mapDataToState = (data: Object): Array<BlogPost> =>
   data.map(
     (post: Object): BlogPost => ({
-      slug: post.urlId,
-      category: post.categories[0],
-      title: post.title,
-      excerpt: sanitiseExcerpt(post.excerpt) || 'Click to read more!',
-      date: moment(post.publishOn),
-      author: {
-        role: sanitiseAuthorBio(post.author.bio) || 'Badger blogger',
-        name: post.author.displayName,
-      },
+      url: post.absolute_url,
+      title: post.page_title,
+      excerpt: sanitiseExcerpt(post.post_summary) || 'Click to read more!',
+      date: moment(post.publish_date),
+      author: post.blog_author.display_name,
     }),
   );
 
@@ -54,25 +46,19 @@ const getPostsForTag = params =>
   fetchRetry(getUrl(params), { timeout: 10000, retryDelay: 200 })
     .then(response => response.json())
     .then(json => {
-      const posts = json.items;
+      const posts = json.objects;
       if (!posts) {
         return [];
-      }
-      if (json.pagination && json.pagination.nextPage) {
-        const newParams = {
-          ...params,
-          offset: json.pagination.nextPageOffset,
-        };
-
-        return getPostsForTag(newParams).then(newPosts => mapDataToState(posts.concat(newPosts)));
       }
       return mapDataToState(posts);
     });
 
+/* eslint-disable camelcase */
 const getPosts = (tags: Array<string>) =>
-  (Promise.all(tags.map(tag => getPostsForTag({ tag }))).then(flatten): Promise<any>);
+  (Promise.all(tags.map(topicId => getPostsForTag({ topic_id: topicId }))).then(flatten): Promise<
+    any,
+  >);
+/* eslint-enable camelcase */
 
-export const getBlogPosts = (tags: Array<string>, cap: number = 3) =>
-  (getPosts(tags)
-    .then(posts => posts.sort((a, b) => b.date - a.date))
-    .then(posts => take(posts, cap)): Promise<any>);
+export const getBlogPosts = (tags: Array<string>) =>
+  (getPosts(tags).then(posts => posts.sort((a, b) => b.date - a.date)): Promise<any>);
