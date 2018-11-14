@@ -73,8 +73,8 @@ const policies = [
             When you access and/or use our Website, we will ask you if you will accept cookies and
             similar technologies from us and/or our third parties. If you choose not to accept them,
             or if you accept them but subsequently restrict, block, disable or delete some or all of
-            them, you won't have access to many features that make your experience more efficient
-            and some of our Website may not function properly.
+            them, you won&#39;t have access to many features that make your experience more
+            efficient and some of our Website may not function properly.
           </P>
           <P>
             You can also opt out of being tracked by Google Analytics across all websites. To find
@@ -208,6 +208,13 @@ const policies = [
             <a href="https://www.linkedin.com/legal/privacy-policy">
               https://www.linkedin.com/legal/privacy-policy
             </a>
+          </P>
+
+          <H3>amplitude_id_*</H3>
+          <P>
+            These cookies are set by Amplitude analytics, which helps to better understand how the
+            Red Badger website is used.{' '}
+            <a href="https://amplitude.com/privacy">https://amplitude.com/privacy</a>
           </P>
         </React.Fragment>
       );
