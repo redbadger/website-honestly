@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 30px auto 40px;
+  margin: 0 auto 40px;
   display: flex;
   position: relative;
   left: calc((-740px + 100vw) / 2);
@@ -38,7 +38,7 @@
 
 @media (min-width: 881px) {
   .wrapper {
-    left: -89px;
+    left: -75px;
     width: 800px;
   }
 
@@ -50,7 +50,7 @@
 
 @media (min-width: 1200px) {
   .wrapper {
-    left: -240px;
-    width: 1140px;
+    left: -260px;
+    width: 1160px;
   }
 }

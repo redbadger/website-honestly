@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.articleImg:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .heading {
   max-width: 720px;
   padding-top: 30px;
