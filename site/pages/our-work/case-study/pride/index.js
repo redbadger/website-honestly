@@ -22,6 +22,8 @@ import styles from './style.css';
 import socialImg from './images/social.jpg';
 import collaborationImg from './images/collaboration.png';
 import header from './images/header_L.png';
+import Kristof from './images/kristof.png';
+import Lani from './images/lani.png';
 
 // Update
 const social = {
@@ -39,7 +41,7 @@ const quoteProps = {
   author: {
     name: 'Kristof Hamilton',
     title: 'Product Owner at Pride in London',
-    image: '',
+    image: Kristof,
   },
 };
 
@@ -49,7 +51,7 @@ const endQuoteProps = {
   author: {
     name: 'Lani Shamash',
     title: 'Delivery Director at Red Badger',
-    image: '',
+    image: Lani,
   },
 };
 
