@@ -10,22 +10,6 @@
   composes: lightSerif from '../../../../css/typography/_fonts.css';
 }
 
-/* Injected by Youtube API */
-:global(#pride-video) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.videoContainer > span {
-  display: block;
-  width: 100%;
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
 .carSunset {
   padding-bottom: 30px;
 }

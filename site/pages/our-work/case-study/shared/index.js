@@ -7,6 +7,8 @@ import Card from '../../../../components/card';
 import Image from '../../../../components/image';
 import ContactBox from '../../../../components/contact-box';
 import BaseQuote from '../../../../components/quote';
+import Video from './video';
+
 import type { Author } from '../../../../components/quote';
 
 export const PageHeading = ({ children }: { children: string }) => (
@@ -35,9 +37,13 @@ export const SectionBody = ({ children }: { children: React.Node }) => (
 export const Section = ({
   children,
 }: {|
-  children: React.ChildrenArray<
-    React.Element<typeof SectionBody | typeof SectionHeading | typeof Card | typeof Image>,
-  >,
+  children:
+    | React.Element<'div'>
+    | React.ChildrenArray<
+        React.Element<
+          typeof SectionBody | typeof SectionHeading | typeof Card | typeof Image | typeof Video,
+        >,
+      >,
 |}) => <div className={styles.section}>{children}</div>;
 
 export const Quote = ({ author, text }: { author: Author, text: string }) => (
