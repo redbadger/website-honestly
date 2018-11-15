@@ -19,6 +19,8 @@ import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import styles from './style.css';
 
+import Triptych from './triptych';
+
 import socialImg from './images/social.jpg';
 import collaborationImg from './images/collaboration.png';
 import header from './images/header_L.png';
@@ -96,6 +98,7 @@ const CarTrawler = () => (
             to reuse the code developed for the previous app thus the product had to be built from
             scratch.
           </P>
+          <Triptych />
           <H3>The right project for Red Badger</H3>
           <P>
             As a business we&#39;ve always been proud of the work we do and two years ago we decided
