@@ -63,6 +63,22 @@ class Triptych extends React.Component<{}, { activeImg: number }> {
     this.node.current.style.transform = null;
   };
 
+  renderRadioBtn(i: number, active: number) {
+    return (
+      <label>
+        <span className={Triptych.activeClass(i, active)} />
+        <span className={styles.controlsLabel}>First</span>
+        <input
+          className={styles.controlsInput}
+          type="radio"
+          name="image"
+          value={i}
+          onChange={this.handleRadioChange}
+        />
+      </label>
+    );
+  }
+
   render() {
     const { activeImg } = this.state;
     const wrapperClass = Triptych.wrapperClasses[activeImg];
@@ -77,40 +93,7 @@ class Triptych extends React.Component<{}, { activeImg: number }> {
 
         <div>
           <form action="" className={styles.controls}>
-            <label>
-              <span className={Triptych.activeClass(0, activeImg)} />
-              <span className={styles.controlsLabel}>First</span>
-              <input
-                className={styles.controlsInput}
-                type="radio"
-                name="image"
-                value="0"
-                onChange={this.handleRadioChange}
-              />
-            </label>
-            <label>
-              <span className={Triptych.activeClass(1, activeImg)} />
-              <span className={styles.controlsLabel}>Second</span>
-              <input
-                className={styles.controlsInput}
-                type="radio"
-                name="image"
-                value="1"
-                defaultChecked
-                onChange={this.handleRadioChange}
-              />
-            </label>
-            <label>
-              <span className={Triptych.activeClass(2, activeImg)} />
-              <span className={styles.controlsLabel}>Third</span>
-              <input
-                className={styles.controlsInput}
-                type="radio"
-                name="image"
-                value="2"
-                onChange={this.handleRadioChange}
-              />
-            </label>
+            {[0, 1, 2].map(i => this.renderRadioBtn(i, activeImg))}
           </form>
         </div>
       </div>
