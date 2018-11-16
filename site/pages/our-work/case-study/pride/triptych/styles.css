@@ -1,11 +1,49 @@
 .wrapper {
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   display: flex;
   position: relative;
-  left: calc((-740px + 100vw) / 2);
+  transform: translateX(calc((-740px + 100vw) / 2));
   width: 700px;
   justify-content: space-between;
   align-items: flex-start;
+  transition: transform 0.2s ease-in-out;
+}
+
+.wrapperLeft {
+  composes: wrapper;
+  transform: translateX(calc((-740px + 100vw) / 2 + 240px));
+}
+
+.wrapperRight {
+  composes: wrapper;
+  transform: translateX(calc((-740px + 100vw) / 2 - 240px));
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.controlsLabel {
+  composes: visuallyHidden from '../../../../../css/_accessibility.css';
+}
+
+.controlsInput {
+  visibility: hidden;
+  display: block;
+}
+
+.fakeControl {
+  border-radius: 50%;
+  background-color: lightgrey;
+  width: 10px;
+  height: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.fakeControlActive {
+  background-color: grey;
 }
 
 .img {
@@ -25,8 +63,12 @@
 }
 
 @media (min-width: 700px) {
+  .controls {
+    display: none;
+  }
+
   .wrapper {
-    left: 0;
+    transform: translateX(0);
     width: 100%;
   }
 
@@ -38,7 +80,7 @@
 
 @media (min-width: 881px) {
   .wrapper {
-    left: -75px;
+    transform: translateX(-75px);
     width: 800px;
   }
 
@@ -50,7 +92,7 @@
 
 @media (min-width: 1200px) {
   .wrapper {
-    left: -260px;
+    transform: translateX(-260px);
     width: 1160px;
   }
 }
