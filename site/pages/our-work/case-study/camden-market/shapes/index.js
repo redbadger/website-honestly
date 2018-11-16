@@ -22,7 +22,7 @@ const {
 } = require('matter-js');
 
 export default class Shapes extends Component<any> {
-  static throwShapes(engine) {
+  static throwShapes(engine: any) {
     Engine.run(engine);
     Render.run(engine.render);
   }

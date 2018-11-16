@@ -1,6 +1,7 @@
 // @flow
 /* eslint-disable react/no-did-mount-set-state */
-import React from 'react';
+
+import * as React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
 import styles from './styles.css';
@@ -105,7 +106,7 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
     return viewWidth - this.tileSize;
   }
 
-  renderTiles = () => {
+  renderTiles = (): React.Node => {
     const { tweets, instagramPosts } = this.props;
     const data: Array<Tweet | InstagramPost> = [];
     if (tweets) {
@@ -120,13 +121,17 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
       return null;
     }
 
-    return data.sort((a, b) => new Date(b.created) - new Date(a.created)).map((row, index) => {
+    const sorted = data.sort((a: any, b: any): any => new Date(b.created) - new Date(a.created));
+
+    const socialComp = (row, index) => {
       return row.image ? (
         <InstagramTile key={row.created} post={row} index={index} />
       ) : (
         <TwitterTile key={row.created} tweet={row} index={index} />
       );
-    });
+    };
+
+    return sorted.map(socialComp);
   };
 
   render() {

@@ -77,7 +77,7 @@ const Checklist = ({
 );
 
 type WithStateProps = {};
-function withState(WrappedComponent, text) {
+function withState(WrappedComponent, text?: { listItems: Array<string> }) {
   return class extends Component<WithStateProps, State> {
     state = {
       isHovered: false,

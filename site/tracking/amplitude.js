@@ -27,9 +27,9 @@ const dynamicPropRegExp = /^\{(.+)\}$/;
 const mapProperties = (properties = {}, data = {}) => {
   return Object.keys(properties).reduce((acc, key) => {
     const value = properties[key];
-    const isDynamic = dynamicPropRegExp.test(value);
+    const dynamicProp = dynamicPropRegExp.exec(value);
 
-    return { ...acc, [key]: isDynamic ? data[dynamicPropRegExp.exec(properties[key])[1]] : value };
+    return { ...acc, [key]: Array.isArray(dynamicProp) ? data[dynamicProp[1]] : value };
   }, {});
 };
 
