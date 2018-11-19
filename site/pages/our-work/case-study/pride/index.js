@@ -37,7 +37,7 @@ const social = {
   description:
     'Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.',
   metaImage: socialImg,
-  altText: '',
+  altText: 'People (Badgers) sticking post-its on a blue wall',
   url: 'https://red-badger.com/our-work/case-study/pride',
 };
 
@@ -61,12 +61,16 @@ const endQuoteProps = {
   },
 };
 
-const CarTrawler = () => {
+const Pride = () => {
   return (
     <ScrollTracker>
       <Social {...social} />
-      <div className={styles.carDayTime}>
-        <Image src={header} altText="" />
+      <div className={styles.headerImgWrapper}>
+        <Image
+          src={header}
+          className={styles.headerImg}
+          altText="People (Badgers) sticking post-its on a blue wall"
+        />
       </div>
       <Body>
         <PageHeading>
@@ -250,10 +254,10 @@ const CarTrawler = () => {
           </SectionBody>
         </Section>
       </Body>
-      <WhatToReadNext currentPage="carTrawler" linkKeys={['carTrawlerMyAccount']} />
+      <WhatToReadNext currentPage="pride" linkKeys={[]} />
       <ChecklistContactUs />
     </ScrollTracker>
   );
 };
 
-export default CarTrawler;
+export default Pride;

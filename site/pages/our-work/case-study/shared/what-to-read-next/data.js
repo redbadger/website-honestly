@@ -5,6 +5,7 @@ import fortnumImage from './images/fortnumReadMore.jpg';
 import fortnumDigitalTransformationImage from './images/fortnumDigitalTransformationReadMore.jpg';
 import financialTimesImage from './images/financialTimesReadMore.jpg';
 import camdenMarketImage from './images/camdenMarketReadMore.jpg';
+import pride from './images/pride.jpg';
 import retailerImage from './images/retailerReadMore.jpg';
 import skyImage from './images/skyReadMore.jpg';
 import skyCmsImage from './images/skyCmsReadMore.jpg';
@@ -51,6 +52,12 @@ const sliceData = {
     tagline: 'Taking steps towards a digital future',
     image: camdenMarketImage,
     linkKey: 'camdenMarketCaseStudy',
+  },
+  pride: {
+    name: 'Pride in London',
+    tagline: 'Delivering a best-in-class digital experience',
+    images: pride,
+    linkKey: 'prideCaseStudy',
   },
   retailer: {
     name: 'Retailer',
