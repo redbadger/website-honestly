@@ -65,7 +65,7 @@ class Triptych extends React.Component<{}, { activeImg: number }> {
 
   renderRadioBtn(i: number, active: number) {
     return (
-      <label>
+      <label key={i}>
         <span className={Triptych.activeClass(i, active)} />
         <span className={styles.controlsLabel}>First</span>
         <input

@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 
 import Video from './index';
 
-describe(require('path').relative(process.cwd(), __dirname), () => {
+describe('pages/our-work/case-study/shared/video', () => {
   it('mounts the yt lib before the first script', () => {
     const script = document.createElement('script');
     script.src = 'some.js';

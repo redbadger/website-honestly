@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/case-study/pride/triptych renders correctly 1`] = `
+<Triptych>
+  <div>
+    <div
+      className="wrapper"
+    >
+      <img
+        alt=""
+        className="leftImg"
+        src="left.png"
+      />
+      <img
+        alt=""
+        className="middleImg"
+        src="middle.png"
+      />
+      <img
+        alt=""
+        className="rightImg"
+        src="right.png"
+      />
+    </div>
+    <div>
+      <form
+        action=""
+        className="controls"
+      >
+        <label
+          key="0"
+        >
+          <span
+            className="fakeControl "
+          />
+          <span
+            className="controlsLabel"
+          >
+            First
+          </span>
+          <input
+            className="controlsInput"
+            name="image"
+            onChange={[Function]}
+            type="radio"
+            value={0}
+          />
+        </label>
+        <label
+          key="1"
+        >
+          <span
+            className="fakeControl fakeControlActive"
+          />
+          <span
+            className="controlsLabel"
+          >
+            First
+          </span>
+          <input
+            className="controlsInput"
+            name="image"
+            onChange={[Function]}
+            type="radio"
+            value={1}
+          />
+        </label>
+        <label
+          key="2"
+        >
+          <span
+            className="fakeControl "
+          />
+          <span
+            className="controlsLabel"
+          >
+            First
+          </span>
+          <input
+            className="controlsInput"
+            name="image"
+            onChange={[Function]}
+            type="radio"
+            value={2}
+          />
+        </label>
+      </form>
+    </div>
+  </div>
+</Triptych>
+`;
