@@ -4,14 +4,6 @@ import { mount } from 'enzyme';
 import Video from './index';
 
 describe('pages/our-work/case-study/shared/video', () => {
-  beforeEach(() => {
-    window.YT = {};
-  });
-
-  afterEach(() => {
-    delete window.YT;
-  });
-
   it('mounts the yt lib before the first script', () => {
     const script = document.createElement('script');
     script.src = 'some.js';
@@ -25,7 +17,6 @@ describe('pages/our-work/case-study/shared/video', () => {
   });
 
   it('calls the yt append script on mount', () => {
-    delete window.YT;
     const spyAdd = jest.spyOn(Video, 'addYTScript').mockImplementation(() => {});
     jest.spyOn(Video.prototype, 'addPlayerInitCallback').mockImplementation(() => {});
     mount(<Video />);
@@ -34,6 +25,11 @@ describe('pages/our-work/case-study/shared/video', () => {
   });
 
   it('binds the context to the init fn on mount', () => {
+    const rendered = mount(<Video />);
+    expect(rendered.instance().addPlayerInitCallback).toBeDefined();
+  });
+
+  it('tracks plays when video is played', () => {
     const rendered = mount(<Video />);
     expect(rendered.instance().addPlayerInitCallback).toBeDefined();
   });
