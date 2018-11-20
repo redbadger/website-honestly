@@ -27,7 +27,7 @@ import styles from './style.css';
 import Triptych from './triptych';
 
 import socialImg from './images/social.jpg';
-import collaborationImg from './images/collaboration.png';
+import collaborationImg from './images/collaboration.jpg';
 import header from './images/header_noheart.jpg';
 import Kristof from './images/Kristof_HS.jpg';
 import Lani from './images/Lani_HS.jpg';
