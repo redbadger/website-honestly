@@ -3,9 +3,9 @@
 import * as React from 'react';
 import styles from './styles.css';
 
-import left from './images/left.png';
-import middle from './images/middle.png';
-import right from './images/right.png';
+import left from './images/left.jpg';
+import middle from './images/middle.jpg';
+import right from './images/right.jpg';
 
 class Triptych extends React.Component<{}, { activeImg: number }> {
   static wrapperClasses = [styles.wrapperLeft, styles.wrapper, styles.wrapperRight];

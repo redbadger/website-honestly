@@ -28,9 +28,9 @@ import Triptych from './triptych';
 
 import socialImg from './images/social.jpg';
 import collaborationImg from './images/collaboration.png';
-import header from './images/header_L.png';
-import Kristof from './images/kristof.png';
-import Lani from './images/lani.png';
+import header from './images/header_noheart.jpg';
+import Kristof from './images/Kristof_HS.jpg';
+import Lani from './images/Lani_HS.jpg';
 
 // Update
 const social = {

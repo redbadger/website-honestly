@@ -9,17 +9,17 @@ exports[`pages/our-work/case-study/pride/triptych renders correctly 1`] = `
       <img
         alt=""
         className="leftImg"
-        src="left.png"
+        src="left.jpg"
       />
       <img
         alt=""
         className="middleImg"
-        src="middle.png"
+        src="middle.jpg"
       />
       <img
         alt=""
         className="rightImg"
-        src="right.png"
+        src="right.jpg"
       />
     </div>
     <div>
