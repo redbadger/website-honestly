@@ -1,4 +1,5 @@
 @value badgerRedOnWhite, badgerAccessibleRedOnBlack from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .listBox__item:last-child {
   border: none;
@@ -22,8 +23,37 @@
 .headerImgWrapper {
   background-color: #577492;
   text-align: center;
+  position: relative;
 }
 
 .headerImg {
-  max-height: 456px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.prideHeartWrapper {
+  width: calc(20px + 15vw);
+  margin: 0 auto;
+  position: absolute;
+  top: calc(50% - ((20px + 15vw) / 2));
+  left: calc(50% - ((20px + 15vw) / 2));
+}
+
+.prideHeart {
+  display: block;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+}
+
+.prideHeart path {
+  stroke: white;
+}
+
+@media largeScreen {
+  .prideHeartWrapper {
+    width: 270px;
+    top: calc(50% - 135px);
+    left: calc(50% - 135px);
+  }
 }
