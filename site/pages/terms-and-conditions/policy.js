@@ -13,7 +13,9 @@ const policies = [
         body: () => (
           <P>
             These Website Terms tell individuals (“<B>you</B>”, “<B>your</B>”) the rules that govern
-            the access and/or use of www.red-badger.com (“<B>Website</B>”).
+            the access and/or use of <a href="https://red-badger.com">red-badger.com</a>,{' '}
+            <a href="https://react.london">react.london</a>,{' '}
+            <a href="https://meetup.react.london">meetup.react.london</a> (“<B>Websites</B>”).
           </P>
         ),
       },
@@ -23,7 +25,7 @@ const policies = [
             These Website Terms are part of, and are subject to, our{' '}
             <Link to="privacyPolicy">Privacy Statement</Link> and our{' '}
             <Link to="cookiePolicy">Cookies Policy</Link>. By accessing or using our (“<B>
-              Website
+              Websites
             </B>”), you confirm that you accept these Website Terms.
           </P>
         ),
@@ -36,7 +38,7 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Website is owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
+            Our Websites are owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
             “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
           </P>
         ),
@@ -54,8 +56,7 @@ const policies = [
         body: () => (
           <P>
             You can contact us by (a) post, to 4th Floor, 2 Old Street Yard, London, England, EC1Y
-            8AF, (b) using our Website contact form, (c) telephone, on 0203 567 0555, or (d) email,
-            using the following email address:{' '}
+            8AF, (b) telephone, on 0203 567 0555, or (c) email, using the following email address:{' '}
             <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
           </P>
         ),
@@ -69,14 +70,28 @@ const policies = [
         body: () => (
           <P>
             We may update the Red Badger Website Terms from time to time by publishing a new version
-            on our Website. If we make changes to these Website Terms, we will post the revised
-            Website Terms on our Website and update the “Effective Date” date at the top of these
-            Website Terms.
+            here at{' '}
+            <a href="https://red-badger.com/terms-and-conditions">
+              red-badger.com/terms-and-conditions
+            </a>. If we make changes to this Website Terms, we will post the revised Website Terms
+            here at{' '}
+            <a href="https://red-badger.com/terms-and-conditions">
+              red-badger.com/terms-and-conditions
+            </a>{' '}
+            and update the “Effective Date” date at the top of this Website Terms.
           </P>
         ),
       },
       {
-        body: () => <P>Please check our Website regularly for any such changes.</P>,
+        body: () => (
+          <P>
+            Please check{' '}
+            <a href="https://red-badger.com/terms-and-conditions">
+              red-badger.com/terms-and-conditions
+            </a>{' '}
+            regularly for any such changes.
+          </P>
+        ),
       },
     ],
   },
@@ -86,8 +101,8 @@ const policies = [
       {
         body: () => (
           <P>
-            The content on our Website is provided for general information only. It is not intended
-            to amount to advice on which you (and/or others) should rely. You must obtain
+            The content on our Websites are provided for general information only. It is not
+            intended to amount to advice on which you (and/or others) should rely. You must obtain
             professional and/or specialist advice before taking, and/or refraining from, any action
             on the basis of the content on our Website.
           </P>
@@ -96,36 +111,36 @@ const policies = [
       {
         body: () => (
           <P>
-            Although we make reasonable efforts to update the information on our Website, we make no
-            representations, warranties and/or guarantees, whether express or implied, that the
-            content on our Website is accurate, complete and/or up to date. Our content is provided
-            as-is.
+            Although we make reasonable efforts to update the information on our Websites, we make
+            no representations, warranties and/or guarantees, whether express or implied, that the
+            content on our Websites are accurate, complete and/or up to date. Our content is
+            provided as-is.
           </P>
         ),
       },
     ],
   },
   {
-    heading: 'We may suspend or withdraw our Website',
+    heading: 'We may suspend or withdraw our Websites',
     statements: [
       {
-        body: () => <P>Our Website is made available free of charge.</P>,
+        body: () => <P>Our Websites are made available free of charge.</P>,
       },
       {
         body: () => (
           <P>
-            We do not guarantee that our Website, and/or any content on it, will always be available
-            and/or be uninterrupted. We may suspend and/or withdraw and/or restrict the availability
-            of all and/or any part of our Website for any reason whatsoever in our sole and absolute
-            discretion. We will try to give you reasonable notice of any suspension and/or
-            withdrawal.
+            We do not guarantee that our Websites, and/or any content on it, will always be
+            available and/or be uninterrupted. We may suspend and/or withdraw and/or restrict the
+            availability of all and/or any part of our Website for any reason whatsoever in our sole
+            and absolute discretion. We will try to give you reasonable notice of any suspension
+            and/or withdrawal.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            You are also responsible for ensuring that all persons who access our Website through
+            You are also responsible for ensuring that all persons who access our Websites through
             your internet connection are aware of these Website Terms and other applicable terms and
             conditions, and that they comply with them.
           </P>
@@ -166,7 +181,7 @@ const policies = [
     ],
   },
   {
-    heading: 'How you may use material on our Website',
+    heading: 'How you may use material on our Websites',
     statements: [
       {
         body: () => (
@@ -182,7 +197,7 @@ const policies = [
           <P>
             You may print off one copy, and may download extracts, of any page(s) from our Website
             for your personal use and you may draw the attention of others within your organisation
-            to content posted on our Website.
+            to content posted on our Websites.
           </P>
         ),
       },
@@ -199,14 +214,14 @@ const policies = [
         body: () => (
           <P>
             Our status (and that of any identified contributors) as the authors of content on our
-            Website must always be acknowledged.
+            Websites must always be acknowledged.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            You must not use any part of the content on our Website for commercial purposes without
+            You must not use any part of the content on our Websites for commercial purposes without
             obtaining a licence to do so from us or our licensors.
           </P>
         ),
@@ -214,7 +229,7 @@ const policies = [
       {
         body: () => (
           <P>
-            If you print off, copy and/or download any part of our Website in breach of these
+            If you print off, copy and/or download any part of our Websites in breach of these
             Website Terms and/or applicable laws, your right to use our Website will cease
             immediately and you must, at our option, return or destroy any copies of the materials
             you have made.
@@ -229,7 +244,7 @@ const policies = [
       {
         body: () => (
           <P>
-            Where our Website contains links to other sites and resources provided by third parties,
+            Where our Websites contain links to other sites and resources provided by third parties,
             these links are provided for your information only. Such links should not be interpreted
             as approval by us of those linked websites or information you may obtain from them.
           </P>
@@ -246,9 +261,9 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Website may include information and materials uploaded by other users of the
-            Website. This information and these materials have not been verified and/or approved by
-            us. The views expressed by other users on our Website do not represent Red Badger, our
+            Our Websites may include information and materials uploaded by other users of the
+            Websites. This information and these materials have not been verified and/or approved by
+            us. The views expressed by other users on our Websites do not represent Red Badger, our
             views and/or values.
           </P>
         ),
@@ -294,7 +309,7 @@ const policies = [
         body: () => (
           <P>
             We exclude all implied conditions, warranties, undertaking, guaranties, representations
-            and/or other terms that may apply to our Website and/or any content on it.
+            and/or other terms that may apply to our Websites and/or any content them.
           </P>
         ),
       },
@@ -307,8 +322,8 @@ const policies = [
               foreseeable, arising under and/or in connection with your:
             </P>
             <PolicyList>
-              <li>use of, and/or inability to use, our Website; and/or</li>
-              <li>use of and/or reliance on any content displayed on our Website.</li>
+              <li>use of, and/or inability to use, our Websites; and/or</li>
+              <li>use of and/or reliance on any content displayed on our Websites.</li>
             </PolicyList>
           </React.Fragment>
         ),
@@ -331,10 +346,10 @@ const policies = [
       {
         body: () => (
           <P>
-            Please note that we only provide our Website for domestic and private use. You agree not
-            to use our Website for any commercial and/or business purposes, and we have no liability
-            to you for any loss of profit, loss of business, business interruption, and/or loss of
-            business opportunity.
+            Please note that we only provide our Websites for domestic and private use. You agree
+            not to use our Websites for any commercial and/or business purposes, and we have no
+            liability to you for any loss of profit, loss of business, business interruption, and/or
+            loss of business opportunity.
           </P>
         ),
       },
@@ -354,23 +369,23 @@ const policies = [
     ],
   },
   {
-    heading: 'Uploading content to our Website',
+    heading: 'Uploading content to our Websites',
     statements: [
       {
         body: () => (
           <P>
             You warrant, represent and undertake that any content you upload and/or post to our
-            Website complies with these Website Terms and/or applicable laws, and you will be liable
-            to us and indemnify us for any and/or all breaches of that warranty. This means you will
-            be responsible for any loss and/or damage we suffer as a result of your breach of this
-            warranty.
+            Websites complies with these Website Terms and/or applicable laws, and you will be
+            liable to us and indemnify us for any and/or all breaches of that warranty. This means
+            you will be responsible for any loss and/or damage we suffer as a result of your breach
+            of this warranty.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            Any content you upload and/or post to our Website will be considered non-confidential
+            Any content you upload and/or post to our Websites will be considered non-confidential
             and non-proprietary. You retain all of your ownership rights in your content, but you
             are required to grant us the licence described in section 13 below.
           </P>
@@ -380,7 +395,7 @@ const policies = [
         body: () => (
           <P>
             We also have the right to disclose your identity to any third party who is claiming that
-            any content posted and/or uploaded by you to our Website constitutes a violation of
+            any content posted and/or uploaded by you to our Websites constitutes a violation of
             applicable laws and/or their rights including (but not limited to) intellectual property
             and/or data protection rights.
           </P>
@@ -389,7 +404,7 @@ const policies = [
       {
         body: () => (
           <P>
-            We have the right to remove any posting you make on our Website for any reason
+            We have the right to remove any posting you make on our Websites for any reason
             whatsoever in our sole and absolute discretion.
           </P>
         ),
@@ -405,13 +420,14 @@ const policies = [
       {
         body: () => (
           <P>
-            By uploading and/or posting content to our Website, you hereby grant us a non-exclusive,
-            worldwide, royalty-free, irrevocable, perpetual (or for the term of the protection),
-            sub-licensable, paid up, assignable and transferable license to such content to access,
-            use, store, copy, modify, prepare derivative works of, distribute, publish, transmit,
-            stream, broadcast, allow others to access and use, and otherwise exploit in any manner
-            such content to provide and/or promote our Website and/or Red Badger as we deem
-            necessary and/or desirable from time to time, in any media and/or platform.
+            By uploading and/or posting content to our Websites, you hereby grant us a
+            non-exclusive, worldwide, royalty-free, irrevocable, perpetual (or for the term of the
+            protection), sub-licensable, paid up, assignable and transferable license to such
+            content to access, use, store, copy, modify, prepare derivative works of, distribute,
+            publish, transmit, stream, broadcast, allow others to access and use, and otherwise
+            exploit in any manner such content to provide and/or promote our Websites and/or Red
+            Badger as we deem necessary and/or desirable from time to time, in any media and/or
+            platform.
           </P>
         ),
       },
@@ -423,7 +439,7 @@ const policies = [
       {
         body: () => (
           <P>
-            We do not guarantee that our Website will be secure and/ or free from bugs and/or
+            We do not guarantee that our Websites will be secure and/ or free from bugs and/or
             viruses.
           </P>
         ),
@@ -432,35 +448,35 @@ const policies = [
         body: () => (
           <P>
             You are responsible for configuring your information technology, computer programmes and
-            platform to access our Website. You should use your own virus protection software.
+            platform to access our Websites. You should use your own virus protection software.
           </P>
         ),
       },
       {
         body: () => (
           <P>
-            You must not misuse our Website by knowingly introducing viruses, trojans, worms, logic
+            You must not misuse our Websites by knowingly introducing viruses, trojans, worms, logic
             bombs and/or other material that is malicious or technologically harmful. You must not
-            attempt to gain unauthorised access to our Website, the server on which our Website is
-            stored and/or any server, computer and/or database connected to our Website. You must
-            not attack our Website via a denial-of-service attack or a distributed denial-of service
-            attack. By breaching this provision, you would commit a criminal offence under the
-            Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement
-            authorities and we will co-operate with those authorities by disclosing your identity to
-            them. In the event of such a breach, your right to use our Website will cease
-            immediately.
+            attempt to gain unauthorised access to our Website, the server on which our Websites are
+            stored and/or any server, computer and/or database connected to our Websites. You must
+            not attack our Websites via a denial-of-service attack or a distributed denial-of
+            service attack. By breaching this provision, you would commit a criminal offence under
+            the Computer Misuse Act 1990. We will report any such breach to the relevant law
+            enforcement authorities and we will co-operate with those authorities by disclosing your
+            identity to them. In the event of such a breach, your right to use our Websites will
+            cease immediately.
           </P>
         ),
       },
     ],
   },
   {
-    heading: 'Rules about linking to our Website',
+    heading: 'Rules about linking to our Websites',
     statements: [
       {
         body: () => (
           <P>
-            You may link to our home page, provided you do so in a way that is fair and legal and
+            You may link to our home pages, provided you do so in a way that is fair and legal and
             does not damage our reputation and/or take advantage of it.
           </P>
         ),
@@ -483,8 +499,8 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Website must not be framed on any other site, nor may you create a link to any part
-            of our Website other than the home page.
+            Our Websites must not be framed on any other site, nor may you create a link to any part
+            of our Websites other than the home page.
           </P>
         ),
       },
@@ -494,8 +510,8 @@ const policies = [
       {
         body: () => (
           <P>
-            If you wish to link to or make any use of content on our Website other than that set out
-            above, please contact <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
+            If you wish to link to or make any use of content on our Websites other than that set
+            out above, please contact <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
           </P>
         ),
       },
