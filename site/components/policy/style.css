@@ -55,9 +55,9 @@
 }
 
 .policyList {
+  composes: lightSerif from '../../css/typography/_fonts.css';
   list-style: disc;
   padding-left: 17px;
-  font-family: 'ProximaNova-Light', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -80,4 +80,3 @@
     top: 0;
   }
 }
-
