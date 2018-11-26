@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/terms-and-conditions renders correctly 1`] = `
+<Policy
+  effectiveDate="7 of June 2018"
+  policies={
+    Array [
+      Object {
+        "heading": "Introduction",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "About Red Badger",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Changes to the Red Badger Website Terms",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Information use only",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "We may suspend or withdraw our Websites",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "You must keep your account details",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "How you may use material on our Websites",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "We are not responsible for websites we link to",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "User-generated content is not approved by us",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "body": [Function],
+        "heading": "Our responsibility for loss or damage suffered by you",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "How we may use your personal data",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Uploading content to our Websites",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Rights you are giving us to use material you upload",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "We are not responsible for viruses and you must not introduce them",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Rules about linking to our Websites",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Which country's laws apply to any disputes?",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Our trade mark is registered",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+    ]
+  }
+  social={
+    Object {
+      "altText": "Red Badger logo",
+      "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+      "metaImage": "meta-image.jpg",
+      "title": "Red Badger",
+      "url": "terms-and-conditions",
+    }
+  }
+  title="Website Terms"
+/>
+`;

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/cookie-policy renders correctly 1`] = `
+<Policy
+  effectiveDate="24 of May 2018"
+  policies={
+    Array [
+      Object {
+        "body": [Function],
+        "heading": "Why do you have a Cookies Policy?",
+        "number": "01",
+      },
+      Object {
+        "body": [Function],
+        "heading": "What are cookies and similar technologies?",
+        "number": "02",
+      },
+      Object {
+        "body": [Function],
+        "heading": "What if I don’t want cookies and similar technologies?",
+        "number": "03",
+      },
+      Object {
+        "body": [Function],
+        "heading": "What cookies collect my data?",
+        "number": "04",
+      },
+      Object {
+        "body": [Function],
+        "heading": "What similar technologies collect my data?",
+        "number": "05",
+      },
+      Object {
+        "body": [Function],
+        "heading": "What happens if you update your Cookies Policy?",
+        "number": "06",
+      },
+      Object {
+        "body": [Function],
+        "heading": "What do I do if I have any questions?",
+        "number": "07",
+      },
+    ]
+  }
+  social={
+    Object {
+      "altText": "Red Badger logo",
+      "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+      "metaImage": "meta-image.jpg",
+      "title": "Red Badger",
+      "url": "cookie-policy",
+    }
+  }
+  title="Cookies Policy"
+/>
+`;

@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/privacy-policy renders correctly 1`] = `
+<Policy
+  effectiveDate="23 May 2018"
+  policies={
+    Array [
+      Object {
+        "heading": "Introduction",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "About Red Badger",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Our Data Compliance Manager",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Your privacy rights",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Changes to the Red Badger Privacy Statement",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "What personal data we collect",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "body": [Function],
+        "heading": "How we collect your personal data",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "How we use your personal data",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Providing your personal data to others",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "How do you make use of social media?",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "International transfers of your personal data",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Security of personal data",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Retaining and deleting personal data",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+      Object {
+        "heading": "Third Party websites",
+        "statements": Array [
+          Object {
+            "body": [Function],
+          },
+        ],
+      },
+    ]
+  }
+  social={
+    Object {
+      "altText": "Red Badger logo",
+      "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+      "metaImage": "meta-image.jpg",
+      "title": "Red Badger",
+      "url": "privacy-policy",
+    }
+  }
+  title="Red Badger Privacy Statement"
+/>
+`;
