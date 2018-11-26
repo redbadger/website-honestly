@@ -21,8 +21,11 @@ const policies = [
             <Link to="privacyPolicy">Privacy Statement</Link>.
           </P>
           <P>
-            By accessing and/or using our Website you confirm that you accept the terms of our
-            Cookies Policy.
+            By accessing and/or using our Websites (<a href="https://red-badger.com">
+              red-badger.com
+            </a>, <a href="https://react.london">react.london</a>,{' '}
+            <a href="https://meetup.react.london">meetup.react.london</a>) you confirm that you
+            accept the terms of our Cookies Policy.
           </P>
         </React.Fragment>
       );
@@ -70,11 +73,11 @@ const policies = [
             </a>.
           </P>
           <P>
-            When you access and/or use our Website, we will ask you if you will accept cookies and
+            When you access and/or use our Websites, we will ask you if you will accept cookies and
             similar technologies from us and/or our third parties. If you choose not to accept them,
             or if you accept them but subsequently restrict, block, disable or delete some or all of
             them, you won&#39;t have access to many features that make your experience more
-            efficient and some of our Website may not function properly.
+            efficient and some parts of our Websites may not function properly.
           </P>
           <P>
             You can also opt out of being tracked by Google Analytics across all websites. To find
@@ -94,7 +97,7 @@ const policies = [
       return (
         <React.Fragment>
           <P>
-            We use the following first-party cookies on our Website. They are placed on your device
+            We use the following first-party cookies on our Websites. They are placed on your device
             by us.
           </P>
 
@@ -257,8 +260,9 @@ const policies = [
           We may update our Cookies Policy from time to time and without prior notice to you to
           reflect changes in our processing of your data, privacy practices and changes in
           applicable data protections law and regulations. If we make changes to this Cookies
-          Policy, we will post the revised Cookies Policy on our Website and update the “Effective
-          Date” date at the top of this Cookies Policy.
+          Policy, we will post the revised Cookies Policy here at{' '}
+          <a href="https://red-badger.com/cookie-policy">red-badger.com/cookie-policy</a>and update
+          the “Effective Date” date at the top of this Cookies Policy.
         </P>
       );
     },

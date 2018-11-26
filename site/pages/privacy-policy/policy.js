@@ -28,8 +28,10 @@ const policies = [
             Our Privacy Statement is part of, and is subject to, our{' '}
             <Link to="cookiePolicy">Cookies Policy</Link> and our{' '}
             <Link to="termsAndConditions">Website Terms</Link>. By accessing or using{' '}
-            <Link to="homePage">www.red-badger.com</Link> (“<B>Website</B>”), you confirm that you
-            accept the terms of our Privacy Statement.
+            <a href="https://red-badger.com">red-badger.com</a>,{' '}
+            <a href="https://react.london">react.london</a>,{' '}
+            <a href="https://meetup.react.london">meetup.react.london</a> (“<B>Websites</B>”), you
+            confirm that you accept the terms of our Privacy Statement.
           </P>
         ),
       },
@@ -41,7 +43,7 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Website is owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
+            Our Websites are owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
             “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
           </P>
         ),
@@ -271,9 +273,11 @@ const policies = [
         body: () => (
           <P>
             We may update the Red Badger Privacy Statement from time to time by publishing a new
-            version on our Website. If we make changes to this Privacy Statement, we will post the
-            revised Privacy Statement on our Website and update the “Effective Date” date at the top
-            of this Privacy Statement.
+            version here at{' '}
+            <a href="https://red-badger.com/privacy-policy">red-badger.com/privacy-policy</a>. If we
+            make changes to this Privacy Statement, we will post the revised Privacy Statement here
+            at <a href="https://red-badger.com/privacy-policy">red-badger.com/privacy-policy</a> and
+            update the “Effective Date” date at the top of this Privacy Statement.
           </P>
         ),
       },
@@ -321,7 +325,7 @@ const policies = [
               This is data on how you use our Website and may include your IP address, geographical
               location, browser type and version, operating system, referral source, length of
               visit, page views and Website navigation paths, as well as information about the
-              timing, frequency and pattern of your use of our Website.
+              timing, frequency and pattern of your use of our Websites.
             </P>
             <H3 className={styles.mb0}>Service data</H3>
             <P>
@@ -344,7 +348,8 @@ const policies = [
             <H3 className={styles.mb0}>Cookies & similar technology data</H3>
             <P>
               This includes personal data that we obtain about you through cookies and similar
-              technologies. For more information, see our Cookies Policy [insert link].
+              technologies. For more information, see our{' '}
+              <a href="https://red-badger.com/cookie-policy">Cookies Policy</a>.
             </P>
 
             <H3 className={styles.mb0}>Profile data</H3>
@@ -385,13 +390,13 @@ const policies = [
               provide us when you do the following:
             </P>
             <PolicyList>
-              <li>fill a contact webform on our Website;</li>
+              <li>fill a contact webform on our Websites;</li>
               <li>get in touch with us by email, telephone, letter, and/or some other means;</li>
               <li>
                 subscribe to receive marketing communications from us such as newsletters informing
                 you of our news, events etc.;
               </li>
-              <li>apply for a job through our Website; and</li>
+              <li>apply for a job through our Websites; and</li>
               <li>
                 provide us with your name and contact details (e.g. on a business card) at (a) an
                 event or webinar we have organised and/or attended, and/or (b)pitching events;
@@ -406,15 +411,15 @@ const policies = [
           <React.Fragment>
             <P>
               <B>Data we collect about you automatically:</B> We collect your personal data when you
-              contact us or automatically when you access and/or use our Website and through the use
-              of cookies (see our <Link to="cookiePolicy">Cookies Policy</Link>). The types of
+              contact us or automatically when you access and/or use our Websites and through the
+              use of cookies (see our <Link to="cookiePolicy">Cookies Policy</Link>). The types of
               personal data we will collect include, for example:
             </P>
             <PolicyList>
               <li>name and address;</li>
               <li>demographic data;</li>
               <li>the originating IP address;</li>
-              <li>the site that you visited immediately prior to visiting our Website;</li>
+              <li>the site that you visited immediately prior to visiting our Websites;</li>
               <li>the type of browser and operating system used (if provided by the browser);</li>
               <li>
                 the type of device model and version, device identifier (or “UDID”), and your
@@ -422,8 +427,8 @@ const policies = [
               </li>
               <li>URL of the referring page (if provided by the browser);</li>
               <li>
-                the specific actions that you take on our Website, including, for example, the pages
-                that you visit; and
+                the specific actions that you take on our Websites, including, for example, the
+                pages that you visit; and
               </li>
               <li>the time, frequency and duration of your visits to our Website.</li>
             </PolicyList>
@@ -474,11 +479,11 @@ const policies = [
               Below, you find a list of the ways that we may use your data and which of the legal
               reasons we rely on to do so.
             </P>
-            <SerifH3>Website</SerifH3>
+            <SerifH3>Websites</SerifH3>
             <H4 className={styles.mb0}>Processing Purpose</H4>
             <P>
-              To analyse your use of our Website as well as to develop, operate, improve, protect,
-              personalise, customise and optimise our Website.
+              To analyse your use of our Websites as well as to develop, operate, improve, protect,
+              personalise, customise and optimise our Websites.
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
             <P customClass={styles.mb20}>
@@ -567,7 +572,7 @@ const policies = [
             </P>
             <H4 className={styles.mb0}>Legal Basis</H4>
             <P customClass={styles.mb20}>
-              The legal reasons for this is our legitimate interest of protecting our website and
+              The legal reasons for this is our legitimate interest of protecting our websites and
               business, to comply with a legal obligation, to perform our contract with you, and/or
               the protection and assertion of our legal rights, your legal rights and the legal
               rights of others.
@@ -859,7 +864,7 @@ const policies = [
         body: () => (
           <P>
             You acknowledge and agree that if you submit personal data for publication through our
-            Website or social media accounts, this data may be available, via the internet, around
+            Websites or social media accounts, this data may be available, via the internet, around
             the world. We cannot prevent the use (or misuse) of such personal data by others.
           </P>
         ),
@@ -966,7 +971,7 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Website may contain links to third party websites. Please note that if you follow a
+            Our Websites may contain links to third party websites. Please note that if you follow a
             link to any such website, we do not accept any liability and/or responsibility, because
             these websites have their own terms & conditions and Privacy Policies.
           </P>

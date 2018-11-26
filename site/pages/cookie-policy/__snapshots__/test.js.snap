@@ -1,0 +1,1161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/cookie-policy renders correctly 1`] = `
+<Context>
+  <CookiePolicyPage
+    effectiveDate="24 of May 2018"
+    policies={
+      Array [
+        Object {
+          "body": [Function],
+          "heading": "Why do you have a Cookies Policy?",
+          "number": "01",
+        },
+        Object {
+          "body": [Function],
+          "heading": "What are cookies and similar technologies?",
+          "number": "02",
+        },
+        Object {
+          "body": [Function],
+          "heading": "What if I don’t want cookies and similar technologies?",
+          "number": "03",
+        },
+        Object {
+          "body": [Function],
+          "heading": "What cookies collect my data?",
+          "number": "04",
+        },
+        Object {
+          "body": [Function],
+          "heading": "What similar technologies collect my data?",
+          "number": "05",
+        },
+        Object {
+          "body": [Function],
+          "heading": "What happens if you update your Cookies Policy?",
+          "number": "06",
+        },
+        Object {
+          "body": [Function],
+          "heading": "What do I do if I have any questions?",
+          "number": "07",
+        },
+      ]
+    }
+    social={
+      Object {
+        "altText": "Red Badger logo",
+        "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+        "metaImage": "",
+        "title": "Red Badger",
+        "url": "cookie-policy",
+      }
+    }
+    title="Cookies Policy"
+  >
+    <Policy
+      effectiveDate="24 of May 2018"
+      policies={
+        Array [
+          Object {
+            "body": [Function],
+            "heading": "Why do you have a Cookies Policy?",
+            "number": "01",
+          },
+          Object {
+            "body": [Function],
+            "heading": "What are cookies and similar technologies?",
+            "number": "02",
+          },
+          Object {
+            "body": [Function],
+            "heading": "What if I don’t want cookies and similar technologies?",
+            "number": "03",
+          },
+          Object {
+            "body": [Function],
+            "heading": "What cookies collect my data?",
+            "number": "04",
+          },
+          Object {
+            "body": [Function],
+            "heading": "What similar technologies collect my data?",
+            "number": "05",
+          },
+          Object {
+            "body": [Function],
+            "heading": "What happens if you update your Cookies Policy?",
+            "number": "06",
+          },
+          Object {
+            "body": [Function],
+            "heading": "What do I do if I have any questions?",
+            "number": "07",
+          },
+        ]
+      }
+      social={
+        Object {
+          "altText": "Red Badger logo",
+          "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+          "metaImage": "meta-image.jpg",
+          "title": "Red Badger",
+          "url": "cookie-policy",
+        }
+      }
+      title="Cookies Policy"
+    >
+      <Social
+        altText="Red Badger logo"
+        description="Let’s make things better. We are digital transformation experts who innovate and deliver."
+        metaImage="meta-image.jpg"
+        title="Red Badger"
+        url="cookie-policy"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "Red Badger logo",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "cookie-policy",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "Red Badger logo",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "cookie-policy",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "Red Badger logo",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "cookie-policy",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <div
+        className="container"
+      >
+        <H1
+          customClass="mb10"
+          type="fontL"
+        >
+          <h1
+            className="fontL mb10"
+          >
+            Cookies Policy
+          </h1>
+        </H1>
+        <p
+          className="effectiveDate"
+        >
+          Effective as from: 
+          24 of May 2018
+        </p>
+        <ol>
+          <PolicyBox
+            body={[Function]}
+            heading="Why do you have a Cookies Policy?"
+            key="Why do you have a Cookies Policy?"
+            number="01"
+            policyIndex={1}
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    01
+                  </span>
+                </div>
+                <div
+                  className="policyText"
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Why do you have a Cookies Policy?
+                    </h2>
+                  </H2>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        The reason we have a Cookies Policy is to explain to you what cookies and similar technologies we use, why we use them, and what you need to do if you want to restrict, block, disable or delete them. Our Cookies Policy is part of, and is subject to, our
+                         
+                        <Link
+                          to="privacyPolicy"
+                        >
+                          <NavigationLink
+                            className=""
+                            navigating={[Function]}
+                            stateKey="privacyPolicy"
+                          >
+                            <a
+                              className=""
+                              href={null}
+                              onClick={[Function]}
+                            >
+                              Privacy Statement
+                            </a>
+                          </NavigationLink>
+                        </Link>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        By accessing and/or using our Websites (
+                        <a
+                          href="https://red-badger.com"
+                        >
+                          red-badger.com
+                        </a>
+                        , 
+                        <a
+                          href="https://react.london"
+                        >
+                          react.london
+                        </a>
+                        ,
+                         
+                        <a
+                          href="https://meetup.react.london"
+                        >
+                          meetup.react.london
+                        </a>
+                        ) you confirm that you accept the terms of our Cookies Policy.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            body={[Function]}
+            heading="What are cookies and similar technologies?"
+            key="What are cookies and similar technologies?"
+            number="02"
+            policyIndex={2}
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    02
+                  </span>
+                </div>
+                <div
+                  className="policyText"
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      What are cookies and similar technologies?
+                    </h2>
+                  </H2>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        A cookie is a text file placed on your computer, tablet, mobile phone, or other device ("device") when a person access or uses a website. There are also technologies similar to cookies (e.g. clear gifs) that do the same. Data is collected because it can be necessary to a website’s operation, to assess and/or improve its performance, and/or to provide a personalised experience etc.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        To find out more about cookies, please visit:
+                         
+                        <a
+                          href="https://ico.org.uk/for-the-public/online/cookies/"
+                        >
+                          https://ico.org.uk/for-the-public/online/cookies/
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            body={[Function]}
+            heading="What if I don’t want cookies and similar technologies?"
+            key="What if I don’t want cookies and similar technologies?"
+            number="03"
+            policyIndex={3}
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    03
+                  </span>
+                </div>
+                <div
+                  className="policyText"
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      What if I don’t want cookies and similar technologies?
+                    </h2>
+                  </H2>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        You can restrict, block, disable or delete cookies and similar technologies. Most web browsers allow some control of most cookies through the browser settings. To find out more about how to do that, please visit
+                         
+                        <a
+                          href="http://cookies.insites.com/disable-cookies/"
+                        >
+                          http://cookies.insites.com/disable-cookies/
+                        </a>
+                         
+                        or
+                         
+                        <a
+                          href="http://www.allaboutcookies.org/manage-cookies/"
+                        >
+                          http://www.allaboutcookies.org/manage-cookies/
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        When you access and/or use our Websites, we will ask you if you will accept cookies and similar technologies from us and/or our third parties. If you choose not to accept them, or if you accept them but subsequently restrict, block, disable or delete some or all of them, you won't have access to many features that make your experience more efficient and some parts of our Websites may not function properly.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        You can also opt out of being tracked by Google Analytics across all websites. To find out how you can opt out, please visit
+                         
+                        <a
+                          href="http://tools.google.com/dlpage/gaoptout"
+                        >
+                          http://tools.google.com/dlpage/gaoptout
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            body={[Function]}
+            heading="What cookies collect my data?"
+            key="What cookies collect my data?"
+            number="04"
+            policyIndex={4}
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    04
+                  </span>
+                </div>
+                <div
+                  className="policyText"
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      What cookies collect my data?
+                    </h2>
+                  </H2>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        We use the following first-party cookies on our Websites. They are placed on your device by us.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      __hstc
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used to track visitors. It contains the domain, utk, initial timestamp, last timestamp, current timestamp, and session number for each subsequent session.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      __hssrc
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is to determine if the user has restarted their browser. This is a session cookie.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      __hssc
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie keeps track of sessions. They allow us to determine if we should increment the session number and timestamps in the _hstc cookie. It contains the domain, viewCount, and session start timestamp. This is a cookie that expires after 30 mins.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      hubspotutk
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used to keep track of a visitor’s identity. This cookie is passed to Hubspot on form submissions and used when de-duplicating contacts. Expires after 10 years.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      __ga
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used to distinguish users. Expires after 2 years.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      __gat
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used to throttle the request rate - limiting the collection of data on high traffic sites. It expires after 1 minute.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      __gid
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used to distinguish users. It expires after 24 hours.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      crumb, ss_cvisit, ss_cpvisit, ss_cid
+                    </h3>
+                  </H3>
+                  <P
+                    customClass="mb0"
+                  >
+                    <P
+                      customClass="mb0"
+                    >
+                      <p
+                        className="fontXS mb0"
+                      >
+                        These are cookies used by Squarespace, a web publishing company which we have built our site on, to track use of the website and allow some of the site’s features.
+                      </p>
+                    </P>
+                  </P>
+                  <P
+                    customClass="mb30"
+                  >
+                    <P
+                      customClass="mb30"
+                    >
+                      <p
+                        className="fontXS mb30"
+                      >
+                        crumb: session cookie; ss_cid expiration: 2 years; ss_cpvisit expires: 2 years; ss_cvisit: 30 mins; ss_cvr expires: 2 years;ss_cvt expires: 30 mins
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        We use the following third-party cookies on our Website. They are placed on your device by the third parties set out below. Please note that these cookies are subject to the privacy and cookie policies of the third party placing the relevant cookies
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      __cfduid
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used to identify trusted web traffic. It does not correspond to any user id in the web application, nor does the cookie store any personally identifiable information. This cookie is set by Hubspot and their privacy policy can be found at
+                         
+                        <a
+                          href="https://legal.hubspot.com/privacy-policy"
+                        >
+                          https://legal.hubspot.com/privacy-policy
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      UserMatchHistory
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used for Linkedin Ad and expires after 6 months.
+                         
+                        <a
+                          href="https://www.linkedin.com/legal/privacy-policy"
+                        >
+                          https://www.linkedin.com/legal/privacy-policy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      BizoID
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used for LinkedIn Ad analytics. This cookie is stored for 6 months.
+                         
+                        <a
+                          href="https://www.linkedin.com/legal/privacy-policy"
+                        >
+                          https://www.linkedin.com/legal/privacy-policy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      bcookie
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        Browser ID cookie/ Share button and ad tags. It expires after 1 year.
+                         
+                        <a
+                          href="https://www.linkedin.com/legal/cookie-table"
+                        >
+                          https://www.linkedin.com/legal/cookie-table
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      fr
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie contains encrypted Facebook ID and Browser ID. It expires after 3 months.
+                         
+                        <a
+                          href="https://www.facebook.com/about/privacy/update?ref=old_policy"
+                        >
+                          https://www.facebook.com/about/privacy/update?ref=old_policy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      lang
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie saves the language settings of the user.
+                         
+                        <a
+                          href="https://www.linkedin.com/legal/privacy-policy"
+                        >
+                          https://www.linkedin.com/legal/privacy-policy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      lidc
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This cookie is used for routing. It expires after 1 day.
+                         
+                        <a
+                          href="https://www.linkedin.com/legal/privacy-policy"
+                        >
+                          https://www.linkedin.com/legal/privacy-policy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      amplitude_id_*
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        These cookies are set by Amplitude analytics, which helps to better understand how the Red Badger website is used.
+                         
+                        <a
+                          href="https://amplitude.com/privacy"
+                        >
+                          https://amplitude.com/privacy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            body={[Function]}
+            heading="What similar technologies collect my data?"
+            key="What similar technologies collect my data?"
+            number="05"
+            policyIndex={5}
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    05
+                  </span>
+                </div>
+                <div
+                  className="policyText"
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      What similar technologies collect my data?
+                    </h2>
+                  </H2>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      Facebook Pixel
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This technology measures the effectiveness of advertising by understanding the actions people take on our website. They allow Facebook to provide better recommendations for targeting ads. Their privacy policy can be found
+                         
+                        <a
+                          href="https://www.facebook.com/about/privacy/update?ref=old_policy"
+                        >
+                          https://www.facebook.com/about/privacy/update?ref=old_policy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <h3
+                      className="simpleHeading"
+                    >
+                      LinkedIn Pixel
+                    </h3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        This technology measures the effectiveness of advertising by understanding the actions people take on our website. They allow LinkedIn to provide better recommendations for targeting ads. Their privacy policy can be found at
+                         
+                        <a
+                          href="https://www.linkedin.com/legal/privacy-policy"
+                        >
+                          https://www.linkedin.com/legal/privacy-policy
+                        </a>
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            body={[Function]}
+            heading="What happens if you update your Cookies Policy?"
+            key="What happens if you update your Cookies Policy?"
+            number="06"
+            policyIndex={6}
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    06
+                  </span>
+                </div>
+                <div
+                  className="policyText"
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      What happens if you update your Cookies Policy?
+                    </h2>
+                  </H2>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        We may update our Cookies Policy from time to time and without prior notice to you to reflect changes in our processing of your data, privacy practices and changes in applicable data protections law and regulations. If we make changes to this Cookies Policy, we will post the revised Cookies Policy here at
+                         
+                        <a
+                          href="https://red-badger.com/cookie-policy"
+                        >
+                          red-badger.com/cookie-policy
+                        </a>
+                        and update the “Effective Date” date at the top of this Cookies Policy.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            body={[Function]}
+            heading="What do I do if I have any questions?"
+            key="What do I do if I have any questions?"
+            number="07"
+            policyIndex={7}
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    07
+                  </span>
+                </div>
+                <div
+                  className="policyText"
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      What do I do if I have any questions?
+                    </h2>
+                  </H2>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        To contact us with any questions regarding our Cookies Policy, please contact us at
+                         
+                        <a
+                          href="mailto:privacy@red-badger.com"
+                        >
+                          privacy@red-badger.com
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+            </li>
+          </PolicyBox>
+        </ol>
+      </div>
+    </Policy>
+  </CookiePolicyPage>
+</Context>
+`;
