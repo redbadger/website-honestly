@@ -1,224 +1,4739 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/privacy-policy renders correctly 1`] = `
-<Policy
-  effectiveDate="23 May 2018"
-  policies={
-    Array [
-      Object {
-        "heading": "Introduction",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "About Red Badger",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "Our Data Compliance Manager",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "Your privacy rights",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "Changes to the Red Badger Privacy Statement",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "What personal data we collect",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "body": [Function],
-        "heading": "How we collect your personal data",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "How we use your personal data",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "Providing your personal data to others",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "How do you make use of social media?",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "International transfers of your personal data",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "Security of personal data",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "Retaining and deleting personal data",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-      Object {
-        "heading": "Third Party websites",
-        "statements": Array [
-          Object {
-            "body": [Function],
-          },
-        ],
-      },
-    ]
-  }
-  social={
-    Object {
-      "altText": "Red Badger logo",
-      "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-      "metaImage": "meta-image.jpg",
-      "title": "Red Badger",
-      "url": "privacy-policy",
+<Context>
+  <PrivacyPolicyPage
+    effectiveDate="23 May 2018"
+    policies={
+      Array [
+        Object {
+          "heading": "Introduction",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "About Red Badger",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "Our Data Compliance Manager",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "Your privacy rights",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "Changes to the Red Badger Privacy Statement",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "What personal data we collect",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "body": [Function],
+          "heading": "How we collect your personal data",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "How we use your personal data",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "Providing your personal data to others",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "How do you make use of social media?",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "International transfers of your personal data",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "Security of personal data",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "Retaining and deleting personal data",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+        Object {
+          "heading": "Third Party websites",
+          "statements": Array [
+            Object {
+              "body": [Function],
+            },
+          ],
+        },
+      ]
     }
-  }
-  title="Red Badger Privacy Statement"
-/>
+    social={
+      Object {
+        "altText": "Red Badger logo",
+        "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+        "metaImage": "",
+        "title": "Red Badger",
+        "url": "privacy-policy",
+      }
+    }
+    title="Red Badger Privacy Statement"
+  >
+    <Policy
+      effectiveDate="23 May 2018"
+      policies={
+        Array [
+          Object {
+            "heading": "Introduction",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "About Red Badger",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "Our Data Compliance Manager",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "Your privacy rights",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "Changes to the Red Badger Privacy Statement",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "What personal data we collect",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "body": [Function],
+            "heading": "How we collect your personal data",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "How we use your personal data",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "Providing your personal data to others",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "How do you make use of social media?",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "International transfers of your personal data",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "Security of personal data",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "Retaining and deleting personal data",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+          Object {
+            "heading": "Third Party websites",
+            "statements": Array [
+              Object {
+                "body": [Function],
+              },
+            ],
+          },
+        ]
+      }
+      social={
+        Object {
+          "altText": "Red Badger logo",
+          "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+          "metaImage": "meta-image.jpg",
+          "title": "Red Badger",
+          "url": "privacy-policy",
+        }
+      }
+      title="Red Badger Privacy Statement"
+    >
+      <Social
+        altText="Red Badger logo"
+        description="Let’s make things better. We are digital transformation experts who innovate and deliver."
+        metaImage="meta-image.jpg"
+        title="Red Badger"
+        url="privacy-policy"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "Red Badger logo",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "privacy-policy",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "Red Badger logo",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "privacy-policy",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "Red Badger logo",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "privacy-policy",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <div
+        className="container"
+      >
+        <H1
+          customClass="mb10"
+          type="fontL"
+        >
+          <h1
+            className="fontL mb10"
+          >
+            Red Badger Privacy Statement
+          </h1>
+        </H1>
+        <p
+          className="effectiveDate"
+        >
+          Effective as from: 
+          23 May 2018
+        </p>
+        <ol>
+          <PolicyBox
+            heading="Introduction"
+            key="Introduction"
+            policyIndex={1}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    01
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Introduction
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={1}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={1}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          1.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We are committed to safeguarding the privacy of individuals (“
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  you
+                                </b>
+                              </B>
+                              ”, “
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  your
+                                </b>
+                              </B>
+                              ”) whose personal data we collect and use. In this Privacy Statement, we explain how we handle your personal data. For example, what personal data we collect and how, what we do with it and who we share it with. It also describes your privacy rights and controls such as your choices regarding use, access and correction of your personal data.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={1}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          1.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              Our Privacy Statement is part of, and is subject to, our
+                               
+                              <Link
+                                to="cookiePolicy"
+                              >
+                                <NavigationLink
+                                  className=""
+                                  navigating={[Function]}
+                                  stateKey="cookiePolicy"
+                                >
+                                  <a
+                                    className=""
+                                    href={null}
+                                    onClick={[Function]}
+                                  >
+                                    Cookies Policy
+                                  </a>
+                                </NavigationLink>
+                              </Link>
+                               and our
+                               
+                              <Link
+                                to="termsAndConditions"
+                              >
+                                <NavigationLink
+                                  className=""
+                                  navigating={[Function]}
+                                  stateKey="termsAndConditions"
+                                >
+                                  <a
+                                    className=""
+                                    href={null}
+                                    onClick={[Function]}
+                                  >
+                                    Website Terms
+                                  </a>
+                                </NavigationLink>
+                              </Link>
+                              . By accessing or using
+                               
+                              <a
+                                href="https://red-badger.com"
+                              >
+                                red-badger.com
+                              </a>
+                              ,
+                               
+                              <a
+                                href="https://react.london"
+                              >
+                                react.london
+                              </a>
+                              ,
+                               
+                              <a
+                                href="https://meetup.react.london"
+                              >
+                                meetup.react.london
+                              </a>
+                               (“
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Websites
+                                </b>
+                              </B>
+                              ”), you confirm that you accept the terms of our Privacy Statement.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="About Red Badger"
+            key="About Red Badger"
+            policyIndex={2}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    02
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      About Red Badger
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={2}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={2}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          2.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              Our Websites are owned and operated by Red Badger Consulting Limited (“
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Red Badger
+                                </b>
+                              </B>
+                              ”, “
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  we
+                                </b>
+                              </B>
+                              ”, “
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  us
+                                </b>
+                              </B>
+                              ” or “
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  our
+                                </b>
+                              </B>
+                              ”)
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={2}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          2.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We are a company registered in England and Wales under registration number 7242017. Our registered office and principal place of business is at 4th Floor, 2 Old Street Yard, London, England, EC1Y 8AF.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-2"
+                    policyIndex={2}
+                    statementIndex={3}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          2.3
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              You can contact us by (a) post, to 4th Floor, 2 Old Street Yard, London, England, EC1Y 8AF, (b) telephone, on 0203 567 0555, or (c) email, using the following email address:
+                               
+                              <a
+                                href="mailto:hello@red-badger.com"
+                              >
+                                hello@red-badger.com
+                              </a>
+                              .
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="Our Data Compliance Manager"
+            key="Our Data Compliance Manager"
+            policyIndex={3}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    03
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Our Data Compliance Manager
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={3}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={3}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          3.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              Our Data Compliance Manager is Jen Speirs. You can contact our Data Compliance Manager in writing using the following contact details:
+                               
+                              <a
+                                href="mailto:privacy@red-badger.com"
+                              >
+                                privacy@red-badger.com
+                              </a>
+                              . The tasks of our Data Compliance Manager include (for example) monitoring our compliance with applicable data protection laws and acting as contact for individuals whose data is processed by us.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={3}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          3.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              If you have any questions about anything to do with this Privacy Statement, our data processes and practices or simply to exercise your privacy rights, please contact our Data Compliance Manager using the contact details above.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="Your privacy rights"
+            key="Your privacy rights"
+            policyIndex={4}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    04
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Your privacy rights
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={4}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={4}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We have summarised below your privacy rights. Some of these rights are complex, and not all of the details have been included in our summaries below. For this reason, you should read the applicable data protection laws and guidance from the UK Information Commissioner for a fuller explanation of these rights. You can do so by using this link
+                               
+                              <a
+                                href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/"
+                              >
+                                https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/
+                              </a>
+                              .
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={4}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              You may exercise any of your rights below in relation to your personal data by contacting our Data Compliance Manager in writing using the following contact details:
+                               
+                              <a
+                                href="mailto:privacy@red-badger.com."
+                              >
+                                privacy@red-badger.com.
+                              </a>
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-2"
+                    policyIndex={4}
+                    statementIndex={3}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.3
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              Your principal rights under the applicable data protection laws are:
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              the right to access;
+                            </li>
+                            <li>
+                              the right to rectification;
+                            </li>
+                            <li>
+                              the right to erasure;
+                            </li>
+                            <li>
+                              the right to restrict processing;
+                            </li>
+                            <li>
+                              the right to object to processing;
+                            </li>
+                            <li>
+                              the right to data portability;
+                            </li>
+                            <li>
+                              the right to complain to the UK Information Commissioner; and
+                            </li>
+                            <li>
+                              the right to withdraw consent.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-3"
+                    policyIndex={4}
+                    statementIndex={4}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.4
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to access:
+                                </b>
+                              </B>
+                               You have the right to confirmation as to whether or not we process your personal data and, where we do, access to the personal data, together with certain additional information. That additional information includes details of the purposes of the processing, the categories of personal data concerned and the recipients of the personal data. Providing the rights and freedoms of others are not affected, we will supply to you a copy of your personal data. The first copy will be provided free of charge, but additional copies may be subject to a reasonable fee.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-4"
+                    policyIndex={4}
+                    statementIndex={5}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.5
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to rectification:
+                                </b>
+                              </B>
+                               You have the right to have any inaccurate personal data about you rectified and, taking into account the purposes of the processing, to have any incomplete personal data about you completed. You can ask us to make any necessary changes to ensure that your personal data is accurate and kept up to date.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-5"
+                    policyIndex={4}
+                    statementIndex={6}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.6
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to erasure:
+                                </b>
+                              </B>
+                               In some circumstances you have the right to the erasure of your personal data without undue delay. Those circumstances include: the personal data is no longer necessary in relation to the purposes for which they were collected or otherwise processed; you withdraw consent to consent-based processing; the processing is for direct marketing purposes; and the personal data has been unlawfully processed. However, there are certain general exclusions of the right to erasure. Those general exclusions include where processing is necessary for: exercising the right of freedom of expression and information; compliance with a legal obligation; for the establishment, exercise or defence of legal claims. The consequences of erasing your personal data are, for example, that you will be unable to access some content on our Website and will be excluded from marketing communication communications including (for example) newsletters, event information, blogs etc.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-6"
+                    policyIndex={4}
+                    statementIndex={7}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.7
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to restrict processing:
+                                </b>
+                              </B>
+                               In some circumstances you have the right to restrict the processing of your personal data. Those circumstances are: you contest the accuracy of the personal data; processing is unlawful, but you oppose erasure; we no longer need the personal data for the purposes of our processing, but you require personal data for the establishment, exercise or defence of legal claims; and you have objected to processing, pending the verification of that objection. Where processing has been restricted on this basis, we may continue to store your personal data. However, we will only otherwise process it: with your consent; for the establishment, exercise or defence of legal claims; for the protection of the rights of another individual or legal person; or for reasons of important public interest.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-7"
+                    policyIndex={4}
+                    statementIndex={8}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.8
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to object to processing:
+                                </b>
+                              </B>
+                               You have the right to object to our processing of your personal data on grounds relating to your particular situation, but only to the extent that the legal basis for the processing is that the processing is necessary for: the performance of a task carried out in the public interest or in the exercise of any official authority vested in us; or the purposes of the legitimate interests pursued by us or by a third party. If you make such an objection, we will cease to process the personal data unless we can demonstrate compelling legitimate grounds for the processing which override your interests, rights and freedoms, or the processing is for the establishment, exercise or defence of legal claims.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-8"
+                    policyIndex={4}
+                    statementIndex={9}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.9
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to object to processing (direct marketing):
+                                </b>
+                              </B>
+                               You have the right to object to our processing of your personal data for direct marketing purposes (including, for example, profiling for direct marketing purposes). If you make such an objection, we will cease to process your personal data for this purpose. You may exercise this right at any time by (a) hitting the unsubscribe button in the email footer of the newsletter we send you, or (b) by contacting our Data Compliance Manager in writing using the following contact details
+                               
+                              <a
+                                href="mailto:privacy@red-badger.com."
+                              >
+                                privacy@red-badger.com.
+                              </a>
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-9"
+                    policyIndex={4}
+                    statementIndex={10}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.10
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to object to processing (scientific, historical research or statistics):
+                                </b>
+                              </B>
+                               
+                              You have the right to object to our processing of your personal data for scientific or historical research purposes or statistical purposes on grounds relating to your particular situation, unless the processing is necessary for the performance of a task carried out for reasons of public interest.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-10"
+                    policyIndex={4}
+                    statementIndex={11}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.11
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to data portability:
+                                </b>
+                              </B>
+                               To the extent that the legal basis for our processing of your personal data is consent, and such processing is carried out by automated means, you have the right to receive your personal data from us in a structured, commonly used and machine-readable format. However, this right does not apply where it would adversely affect the rights and freedoms of others.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-11"
+                    policyIndex={4}
+                    statementIndex={12}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.12
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to complain to the UK Information Commissioner:
+                                </b>
+                              </B>
+                               If you consider that our processing of your personal data infringes the applicable data protection laws, you have a legal right to lodge a complaint with the UK Information Commissioner (
+                              <a
+                                href="http://www.ico.org.uk"
+                              >
+                                www.ico.org.uk
+                              </a>
+                              ) which is the UK data protection regulatory body.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-12"
+                    policyIndex={4}
+                    statementIndex={13}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          4.13
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Right to withdraw consent:
+                                </b>
+                              </B>
+                               To the extent that the legal basis for our processing of your personal data is consent, you have the right to withdraw that consent at any time. Withdrawal will not affect the lawfulness of processing before the withdrawal.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="Changes to the Red Badger Privacy Statement"
+            key="Changes to the Red Badger Privacy Statement"
+            policyIndex={5}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    05
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Changes to the Red Badger Privacy Statement
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={5}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={5}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          5.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We may update the Red Badger Privacy Statement from time to time by publishing a new version here at
+                               
+                              <a
+                                href="https://red-badger.com/privacy-policy"
+                              >
+                                red-badger.com/privacy-policy
+                              </a>
+                              . If we make changes to this Privacy Statement, we will post the revised Privacy Statement here at 
+                              <a
+                                href="https://red-badger.com/privacy-policy"
+                              >
+                                red-badger.com/privacy-policy
+                              </a>
+                               and update the “Effective Date” date at the top of this Privacy Statement.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={5}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          5.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              If we make changes that materially alter your privacy rights, we will provide additional notice, such as via email. If you disagree with the changes to the Privacy Statement, you should contact our Data Compliance Manager (
+                              <a
+                                href="mailto:privacy@red-badger.com"
+                              >
+                                privacy@red-badger.com
+                              </a>
+                              ) writing requesting the erasure of your personal data and, if you receive our newsletter, unsubscribe from them.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-2"
+                    policyIndex={5}
+                    statementIndex={3}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          5.3
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              If you continue accessing and/or using of our Website, receiving our communications, contacting us, and/or signing up /attending our events and webinars etc. this will constitute acceptance of the revised Privacy Statement.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="What personal data we collect"
+            key="What personal data we collect"
+            policyIndex={6}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    06
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      What personal data we collect
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={6}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={6}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          6.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We use many different kinds of personal data. They are grouped together as in the table below. The groups are all listed here so that you can see what we may know about you. We don’t use all this personal data in the same way. Some of it is useful for marketing, or for providing services to you.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={6}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          6.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Website data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This is data on how you use our Website and may include your IP address, geographical location, browser type and version, operating system, referral source, length of visit, page views and Website navigation paths, as well as information about the timing, frequency and pattern of your use of our Websites.
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Service data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This may include billing data, your name and contact details such as your email address contained in/relating to services we provide (if you enquired to hire us or you decided to hire us).
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Correspondence data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This may include personal data contained in or relating to any communication that you send to us or that we use to communicate with you.
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Marketing data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This may include personal data you provide to us if you sign up to receive our newsletters and choose whether you wish to receive promotional communications (e.g. offers, invitations to promotional activities such as events, webinars etc.) from us by email, post, telephone and social media.
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Cookies & similar technology data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This includes personal data that we obtain about you through cookies and similar technologies. For more information, see our
+                               
+                              <a
+                                href="https://red-badger.com/cookie-policy"
+                              >
+                                Cookies Policy
+                              </a>
+                              .
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Profile data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This may include your name and contact details and some of the other personal data set out in this table e.g. Third-Party data, registration data.
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Registration data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This may include information you provide to register for events, webinars, surveys, etc. and may include your name and contact details e.g. an email address.
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Applicant data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This may include your name and contact details and any other additional personal information as well as a CV. Third-Party data This may include your name and contact details we obtain from third parties such as third-party services providers, lead generation companies, social media etc.
+                            </p>
+                          </P>
+                        </P>
+                        <H3
+                          className="mb0"
+                        >
+                          <h3
+                            className="simpleHeading"
+                          >
+                            Other data
+                          </h3>
+                        </H3>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              This is personal data other than the ones set out in the table above.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            body={[Function]}
+            heading="How we collect your personal data"
+            key="How we collect your personal data"
+            policyIndex={7}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    07
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      How we collect your personal data
+                    </h2>
+                  </H2>
+                  <P>
+                    <P
+                      customClass="mb10"
+                    >
+                      <p
+                        className="fontXS mb10"
+                      >
+                        We collect your personal data from various sources. These are as follows:
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </div>
+              <Statements
+                policyIndex={7}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={7}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          7.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Personal data you provide us about you:
+                                </b>
+                              </B>
+                               We collect your personal data that you provide us when you do the following:
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              fill a contact webform on our Websites;
+                            </li>
+                            <li>
+                              get in touch with us by email, telephone, letter, and/or some other means;
+                            </li>
+                            <li>
+                              subscribe to receive marketing communications from us such as newsletters informing you of our news, events etc.;
+                            </li>
+                            <li>
+                              apply for a job through our Websites; and
+                            </li>
+                            <li>
+                              provide us with your name and contact details (e.g. on a business card) at (a) an event or webinar we have organised and/or attended, and/or (b)pitching events;
+                            </li>
+                            <li>
+                              participate in a survey, market research etc.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={7}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          7.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Data we collect about you automatically:
+                                </b>
+                              </B>
+                               We collect your personal data when you contact us or automatically when you access and/or use our Websites and through the use of cookies (see our 
+                              <Link
+                                to="cookiePolicy"
+                              >
+                                <NavigationLink
+                                  className=""
+                                  navigating={[Function]}
+                                  stateKey="cookiePolicy"
+                                >
+                                  <a
+                                    className=""
+                                    href={null}
+                                    onClick={[Function]}
+                                  >
+                                    Cookies Policy
+                                  </a>
+                                </NavigationLink>
+                              </Link>
+                              ). The types of personal data we will collect include, for example:
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              name and address;
+                            </li>
+                            <li>
+                              demographic data;
+                            </li>
+                            <li>
+                              the originating IP address;
+                            </li>
+                            <li>
+                              the site that you visited immediately prior to visiting our Websites;
+                            </li>
+                            <li>
+                              the type of browser and operating system used (if provided by the browser);
+                            </li>
+                            <li>
+                              the type of device model and version, device identifier (or “UDID”), and your HubSpot Subscription service.
+                            </li>
+                            <li>
+                              URL of the referring page (if provided by the browser);
+                            </li>
+                            <li>
+                              the specific actions that you take on our Websites, including, for example, the pages that you visit; and
+                            </li>
+                            <li>
+                              the time, frequency and duration of your visits to our Website.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-2"
+                    policyIndex={7}
+                    statementIndex={3}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          7.3
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Data we collect about you from others:
+                                </b>
+                              </B>
+                              We also collect personal data about you from others such as (for example):
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              name and address;
+                            </li>
+                            <li>
+                              online through social media we use and the internet in general;
+                            </li>
+                            <li>
+                              contact details sourcing software we use;
+                            </li>
+                            <li>
+                              event organisation software we use to organise events if you signed up and attended one of our events e.g. meetups.
+                            </li>
+                            <li>
+                              webinar software we use to organise webinars if you signed up and watched one of our webinars;
+                            </li>
+                            <li>
+                              third parties we use to source potential client leads for us such as lead generation companies.
+                            </li>
+                            <li>
+                              companies (e.g. companies that recommend us such because they are current/previous clients) and/or individuals (e.g. your colleagues) that introduce you to us; or
+                            </li>
+                            <li>
+                              employers (if you apply for a job and we contact your employer).
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="How we use your personal data"
+            key="How we use your personal data"
+            policyIndex={8}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    08
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      How we use your personal data
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={8}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={8}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          8.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              Below, you find a list of the ways that we may use your data and which of the legal reasons we rely on to do so.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Websites
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To analyse your use of our Websites as well as to develop, operate, improve, protect, personalise, customise and optimise our Websites.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this are our legitimate interest of the proper administration and operation of our business and/or to comply with a legal obligation.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Services
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To provide you with information you requested about our services when you are considering whether to hire us or not (e.g. a quote) and, if you decide to hire us, to provide you our services.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is to perform our contract with you and/or take steps, at your request, to enter into such a contract.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Communications (Non-Marketing)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To communicate with you (e.g. by email, by post, by phone etc.) as well as to process the communications you send to us.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this is to perform our contract with you and/or our legitimate interest of the proper administration and operation of our business.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Operations
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To perform general administrative and operational activities e.g. billing, debt recovery etc.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is our legitimate interest of the proper administration and operation of our business.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Marketing & Advertising
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To send you newsletters and promotional communications (e.g. offers, invitations to promotional activities such as events, webinars etc.) from us by email, post, telephone, SMS and/or WhatsApp that may be of interest to you based on your preferences as well as to advertise our business and services to you through a variety of different channels which may include Twitter, Facebook or LinkedIn.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this is our legitimate interest of conducting marketing (including, for example, advertising) including any soft opt-in to undertake direct marketing to promote our business and services. To the extent that we are required to obtain consent for electronic marketing and we are not relying on your opt-in, our legal reason for this is consent.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Profiling
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To create a profile of you by combining data you provided to us by you or we got from other sources such as social media, the internet and lead generation companies in order to update, expand and analyse our data records, lead generation, and create more tailored marketing (including, for example, advertising) and/or to personalise the services we provide to you.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this is our legitimate interest of (a) the proper administration and/or operation of our business, and/or (b) conducting marketing (including, for example, advertising) to promote our business and services. To the extent necessary for providing services to you, the performance of the contract between you and us.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Security, Risk & Crime
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To protect our website and business, prevent fraud, spam, abuse, security incidents, harmful and/or illegal activity, conduct security investigations and risk assessments, and/or to verify or authenticate information.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this is our legitimate interest of protecting our websites and business, to comply with a legal obligation, to perform our contract with you, and/or the protection and assertion of our legal rights, your legal rights and the legal rights of others.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Research and Analysis
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To carry out research (e.g. market research), business and statistical analysis (e.g. develop statistical models, analyse the performance of our marketing (including, for example, advertising) campaigns etc.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is our legitimate interest of the proper administration, monitoring and/or operation of our business and services.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Business improvement
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To develop or improve our services and business.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this processing is our legitimate interest of the proper administration and operation of our business and services as well as to monitor our business and services.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Data Retention
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To retain, store, archive and/or destroy the data.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this processing is the performance of a contract between you and us, our legitimate interest of the proper administration and operation of our business, to comply with a legal obligation, and/or the protection and assertion of our legal rights, your legal rights and the legal rights of others.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Audits
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To carry out audits.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this processing is our legitimate interest of the proper administration and operation of our business as well as to monitor and improve our business and services.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Sharing (Service Providers)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To disclose your personal data such as your name and contact details to third party service providers we use.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this is our legitimate interest of administering, operate and/or managing our business, and/or performance of a contract between you and us.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Sharing (Consent)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To share your data (including personal information) where you have provided consent, for the purpose(s) described at the time we ask you for your consent.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is consent.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Sharing (Aggregated Data)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To share aggregated information (information about our individuals that we combine together so that it no longer identifies or references an individual) and non-personally identifiable information in order to conduct industry and market analysis, demographic profiling, marketing (including, for example, advertising).
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is our legitimate interests of the proper administration and operation of our business.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Sharing (Sale/Investment)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              If there is (a) a sale or an asset transfer to a third party of, and/or (b) an investment in Red Badger, part of that sale, asset transfer and/or investment may include your personal data. Purchasers, investors and/or their advisers may have access to your personal data as part of the corporate due diligence they perform as part of the (a) sale or asset transfer, and/or (b) the investment.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is our legitimate interest of the proper administration and operation of our business.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Sharing (Internal re-organisation & Insolvency)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To pass on to a successor in interest as part of a corporate re-organisation or in the unlikely event of an insolvency event such as a liquidation, insolvency, bankruptcy or administration.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is our legitimate interest of the proper administration and operation of our business.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Sharing (Insurers & Professional Advisers)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To disclose your personal data to our insurers and/or professional advisers insofar as reasonably necessary for the purposes of obtaining and maintaining insurance coverage, managing risks, obtaining professional advice and/or managing legal disputes.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reason for this is our legitimate interest of the proper administration and operation of our business, to comply with a legal obligation and/or the protection and assertion of our legal rights, your legal rights and the legal rights of others.
+                            </p>
+                          </P>
+                        </P>
+                        <SerifH3>
+                          <h3
+                            className="largeSimpleHeading"
+                          >
+                            Sharing (Legal Disclosures)
+                          </h3>
+                        </SerifH3>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Processing Purpose
+                          </h4>
+                        </H4>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              To disclose your personal data where such disclosure is necessary for compliance with a legal obligation to which we are subject and/or the protection and assertion of our legal rights, your legal rights and the legal rights of others.
+                            </p>
+                          </P>
+                        </P>
+                        <H4
+                          className="mb0"
+                        >
+                          <h4
+                            className="simpleHeading"
+                          >
+                            Legal Basis
+                          </h4>
+                        </H4>
+                        <P
+                          customClass="mb20"
+                        >
+                          <P
+                            customClass="mb20"
+                          >
+                            <p
+                              className="fontXS mb20"
+                            >
+                              The legal reasons for this is to comply with a legal obligation, and/or the protection and assertion of our legal rights, your legal rights and the legal rights of others.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="Providing your personal data to others"
+            key="Providing your personal data to others"
+            policyIndex={9}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    09
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Providing your personal data to others
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={9}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={9}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          9.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Third-party service providers:
+                                </b>
+                              </B>
+                               We may disclose your personal data such as your name and contact details to our third-party service providers to help us administer, operate and manage our business provide services related to us and/or our Website. Service providers may be located inside or outside of the EEA. For example, service providers may help us provide customer service, advertising, or marketing. These service providers have limited access to your personal data to perform these tasks on our behalf and are contractually obligated to use it consistent with this Privacy Statement.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={9}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          9.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Aggregated Data:
+                                </b>
+                              </B>
+                               We may also share aggregated information (information about our individuals that we combine together so that it no longer identifies or references an individual) and non-personally identifiable information for industry and market analysis, demographic profiling, marketing (including, for example) advertising, and other business purposes.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-2"
+                    policyIndex={9}
+                    statementIndex={3}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          9.3
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Sale/Investment:
+                                </b>
+                              </B>
+                               If there is (a) a sale or an asset transfer to a third party of, and/or (b) an investment in Red Badger, part of that sale, asset transfer and/or investment may include your personal data. Purchasers, investors and/or their advisers may have access to your personal data as part of the corporate due diligence they perform as part of the (a) sale or asset transfer, and/or (b) the investment. However, use of your personal data will remain subject to this Privacy Statement.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-3"
+                    policyIndex={9}
+                    statementIndex={4}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          9.4
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Insolvency:
+                                </b>
+                              </B>
+                               Your personal data may be passed on to a successor in interest as part of a corporate re-organisation or in the unlikely event of an insolvency event such as a liquidation, insolvency, bankruptcy or administration. In the case of an insolvency event, our customer database may be sold separately from the rest of the business, in whole or in a number of parts. It could be that the purchaser’s business is different from ours too.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-4"
+                    policyIndex={9}
+                    statementIndex={5}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          9.5
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Our insurers & professional advisers:
+                                </b>
+                              </B>
+                               We may disclose your personal data to our insurers and/or professional advisers insofar as reasonably necessary for the purposes of obtaining and maintaining insurance coverage, managing risks, obtaining professional advice and/or managing legal disputes.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-5"
+                    policyIndex={9}
+                    statementIndex={6}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          9.6
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  Legal compliance:
+                                </b>
+                              </B>
+                               In addition to the specific disclosures of personal data set out in this Section 8, we may also disclose your personal data where such disclosure is necessary for compliance with a legal obligation to which we are subject, or in order to protect your vital interests or the vital interests of another individual.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="How do you make use of social media?"
+            key="How do you make use of social media?"
+            policyIndex={10}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    10
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      How do you make use of social media?
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={10}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={10}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          10.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We use social media accounts and pages in different ways. For example:
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  to promote, market, advertise and communicate.
+                                </b>
+                              </B>
+                               We use social media to promote, market and advertise our brand and services. We also use social media to communicate with each other.
+                            </li>
+                            <li>
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  to generate leads for our business:
+                                </b>
+                              </B>
+                               If you connect with us through your social media account and/or communicate with us through that account, the information you choose to share with us may include the basic personal data available in your social media profile and also the information you provide to us when you communicate with us e.g. name, your contact details (e.g. email address, phone number) etc. We may also add your name and contact details to the CRM, sales and marketing software we use (e.g. HubSpot) to help us understand who is interested in our business and/or services.
+                            </li>
+                            <li>
+                              <B>
+                                <b
+                                  className="policyTextBold"
+                                >
+                                  We have also integrated social media features and plugins on our Website.
+                                </b>
+                              </B>
+                               
+                              These features and plugins may collect your IP address, which page you are visiting on our Website, and may set a cookie to enable the feature to function properly. Also, when you click on one of the social buttons, you will be re-directed to our social media account page on the relevant social media. If at our account page, you are logged and you click on one of the buttons (such as Facebook’s ‘Like’ button) certain information is shared with these social media providers. Your social media provider may relate this information to your social media account and possibly present your actions on your social media profile to be shared with others in your network. These social media features and plugins are governed by the privacy policies of the social media providers and not our Privacy Statement.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="International transfers of your personal data"
+            key="International transfers of your personal data"
+            policyIndex={11}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    11
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      International transfers of your personal data
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={11}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={11}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          11.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We may transfer your personal data to countries outside the EEA. This may happen as follows:
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              Our Website is hosted in eu-west-1 (Dublin, Ireland)
+                            </li>
+                            <li>
+                              The business software we use (e.g. Slack, HubSpot etc.) may be hosted outside the EEA e.g. the US. If that is the case, we rely on the adequate safeguards they have put in place to keep this personal data safe and secure.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              These legal safeguards vary depending on which country the data is transferred to. For example, if the personal data is transferred outside the EEA, then they could, for example, be (a) part of the E.U.-U.S. Privacy Shield (www.privacyshield.gov) for data transfers to the US, or (b) using what is called ‘Standard Contractual Clauses’ put in place by the EU, or (c) the EU has decided that a particular non-EEA country provides the same/equivalent level of data protection as in the EU.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={11}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          11.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              You acknowledge and agree that if you submit personal data for publication through our Websites or social media accounts, this data may be available, via the internet, around the world. We cannot prevent the use (or misuse) of such personal data by others.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="Security of personal data"
+            key="Security of personal data"
+            policyIndex={12}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    12
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Security of personal data
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={12}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={12}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          12.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We maintain administrative, technical and physical safeguards designed to protect your personal data provided to us. While no system or process is full-proof (e.g. hacking), we believe the measures implemented reduce our vulnerability to security problems to a level appropriate to the type of personal data involved and the current state of technology.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="Retaining and deleting personal data"
+            key="Retaining and deleting personal data"
+            policyIndex={13}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    13
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Retaining and deleting personal data
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={13}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={13}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          13.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              We have data retention policies and procedures in place, which are designed to help ensure that we comply with our legal obligations in relation to the retention and deletion of personal data.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-1"
+                    policyIndex={13}
+                    statementIndex={2}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          13.2
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              Personal data that we process for any purpose or purposes shall not be kept for longer than is necessary for that purpose or those purposes. We will retain and delete your personal data as follows:
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              sign-up for newsletters will be retained for 24 months following month of sign-up, at the end of which period it will be deleted from our systems.
+                            </li>
+                            <li>
+                              sign-up for webinar will be retained for 24 months following month of sign-up, at the end of which period it will be deleted from our systems.
+                            </li>
+                            <li>
+                              identified via legitimate interest will be retained for 24 months following month of addition to CRM], at the end of which period it will be deleted from our systems.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-2"
+                    policyIndex={13}
+                    statementIndex={3}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          13.3
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              In some cases, it is not possible for us to specify in advance the periods for which your personal data will be retained. In such cases, we will determine the period of retention based on the following criteria:
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              Engagement statistics for social media data.
+                            </li>
+                            <li>
+                              the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorised use or disclosure of your personal data, the purposes for which we process your personal data and whether we can achieve those purposes through other means, and the applicable legal requirements e.g. whether (and for how long) we are required by law to retain your personal data.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                  <Statement
+                    body={[Function]}
+                    key="statement-3"
+                    policyIndex={13}
+                    statementIndex={4}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          13.4
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              However, we may retain your personal data
+                            </p>
+                          </P>
+                        </P>
+                        <PolicyList>
+                          <ul
+                            className="policyList"
+                          >
+                            <li>
+                              where such retention is necessary for (a) the performance of a contract we have with you, (b) the compliance with a legal obligation to which we are subject, and/or (c) or the establishment, exercise or defence of legal claims; and/ or
+                            </li>
+                            <li>
+                              in order to protect your vital interests or the vital interests of another individual.
+                            </li>
+                          </ul>
+                        </PolicyList>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+          <PolicyBox
+            heading="Third Party websites"
+            key="Third Party websites"
+            policyIndex={14}
+            statements={
+              Array [
+                Object {
+                  "body": [Function],
+                },
+              ]
+            }
+          >
+            <li>
+              <div
+                className="box"
+              >
+                <div
+                  className="numberContainer"
+                >
+                  <span
+                    className="number"
+                  >
+                    14
+                  </span>
+                </div>
+                <div
+                  className=""
+                >
+                  <H2
+                    customClass="mb10"
+                    type="fontM2"
+                  >
+                    <h2
+                      className="fontM2 mb10"
+                    >
+                      Third Party websites
+                    </h2>
+                  </H2>
+                </div>
+              </div>
+              <Statements
+                policyIndex={14}
+                statements={
+                  Array [
+                    Object {
+                      "body": [Function],
+                    },
+                  ]
+                }
+              >
+                <ol>
+                  <Statement
+                    body={[Function]}
+                    key="statement-0"
+                    policyIndex={14}
+                    statementIndex={1}
+                  >
+                    <li
+                      className="box"
+                    >
+                      <div
+                        className="numberContainer"
+                      >
+                        <span
+                          className="statementNumber"
+                        >
+                          14.1
+                        </span>
+                      </div>
+                      <div
+                        className="policyText"
+                      >
+                        <P>
+                          <P
+                            customClass="mb10"
+                          >
+                            <p
+                              className="fontXS mb10"
+                            >
+                              Our Websites may contain links to third party websites. Please note that if you follow a link to any such website, we do not accept any liability and/or responsibility, because these websites have their own terms & conditions and Privacy Policies.
+                            </p>
+                          </P>
+                        </P>
+                      </div>
+                    </li>
+                  </Statement>
+                </ol>
+              </Statements>
+            </li>
+          </PolicyBox>
+        </ol>
+      </div>
+    </Policy>
+  </PrivacyPolicyPage>
+</Context>
 `;
