@@ -2,10 +2,7 @@
 *  TODO: Stop using variables/breakpoints
 */
 
-@value desktop from "../variables/breakpoints.css";
-@value desktopM from "../variables/breakpoints.css";
-@value mobile from "../variables/breakpoints.css";
-@value tablet-only from "../variables/breakpoints.css";
+@value smallScreenMax, mediumScreenOnly, largeScreen from "../../css/_sizes.css";
 
 .bannerContainer {
   text-align: center;
@@ -24,20 +21,23 @@
   width: 320px;
 }
 
-@media mobile {
-  .eventsDesktopBanner, .eventsTabletBanner {
+@media smallScreenMax {
+  .eventsDesktopBanner,
+  .eventsTabletBanner {
     display: none;
   }
 }
 
-@media tablet-only {
-  .eventsMobileBanner, .eventsDesktopBanner {
+@media mediumScreenOnly {
+  .eventsMobileBanner,
+  .eventsDesktopBanner {
     display: none;
   }
 }
 
-@media desktop {
-  .eventsMobileBanner, .eventsTabletBanner {
+@media largeScreen {
+  .eventsMobileBanner,
+  .eventsTabletBanner {
     display: none;
   }
 }

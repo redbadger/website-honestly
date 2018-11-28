@@ -2,10 +2,7 @@
 *  TODO: Stop using variables/breakpoints
 */
 
-@value desktop from "../variables/breakpoints.css";
-@value desktopM from "../variables/breakpoints.css";
-@value mobile from "../variables/breakpoints.css";
-@value tablet-only from "../variables/breakpoints.css";
+@value smallScreen, mediumScreenOnly, largeScreen from "../../css/_sizes.css";
 @value boldSansSerif from "../../css/typography/_fonts.css";
 
 .bannerContainer {
@@ -59,7 +56,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  border:none;
+  border: none;
   outline: none;
   border-bottom: 2px solid red;
   padding: 0;
@@ -70,8 +67,9 @@
   composes: boldSansSerif;
 }
 
-@media mobile {
-  .eventsDesktopBanner, .eventsTabletBanner {
+@media smallScreen {
+  .eventsDesktopBanner,
+  .eventsTabletBanner {
     display: none;
   }
 
@@ -86,7 +84,7 @@
     height: 85vh;
   }
 
-  .iframeContainer iframe  {
+  .iframeContainer iframe {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
@@ -98,14 +96,16 @@
   }
 }
 
-@media tablet-only {
-  .eventsMobileBanner, .eventsDesktopBanner {
+@media mediumScreenOnly {
+  .eventsMobileBanner,
+  .eventsDesktopBanner {
     display: none;
   }
 }
 
-@media desktop {
-  .eventsMobileBanner, .eventsTabletBanner {
+@media largeScreen {
+  .eventsMobileBanner,
+  .eventsTabletBanner {
     display: none;
   }
 }

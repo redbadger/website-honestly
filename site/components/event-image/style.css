@@ -1,4 +1,4 @@
-@value mobileS from "../variables/breakpoints.css";
+@value smallestScreen from "../../css/_sizes.css";
 
 .eventPicture {
   width: 100%;
@@ -13,7 +13,7 @@
   border: 3px solid #fff;
 }
 
-@media mobileS {
+@media smallestScreen {
   .imgBorder {
     margin-bottom: 20px;
   }

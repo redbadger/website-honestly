@@ -1,7 +1,4 @@
-@value mobile from "../variables/breakpoints.css";
-@value mobileS from "../variables/breakpoints.css";
-@value mobileSM from "../variables/breakpoints.css";
-@value tablet from "../variables/breakpoints.css";
+@value smallestScreen, smallScreen, smallScreenMax, mediumScreen from "../../css/_sizes.css";
 @value gutterSize: 40px;
 
 /**
@@ -129,7 +126,7 @@
  */
 
 .size1of12 {
-  flex-basis: auto; /* 1 */
+  /* flex-basis: auto; 1 */
   width: calc(100% * 1 / 12);
 }
 
@@ -188,50 +185,50 @@
   width: 100%;
 }
 
-.responsive-cell-mobile {
+.responsive-cell-smallestScreen {
   display: inline-block;
 }
 
-.responsive-cell-mobileS {
-  display: inline-block;
-}
-
-@media mobile {
-  .responsive-cell-mobile {
+@media smallestScreen {
+  .responsive-cell-smallestScreen {
     width: 100%;
   }
 
-  .fit > .cell.mobile {
+  .cell.smallestScreen {
     flex-basis: 100%;
   }
 
-  .hideOnmobile {
+  .hideOnsmallestScreen {
     display: none;
   }
 }
 
-@media mobileS {
-  .responsive-cell-mobileS {
+.responsive-cell-smallScreen {
+  display: inline-block;
+}
+
+@media smallScreen {
+  .responsive-cell-smallScreen {
     width: 100%;
   }
 
-  .cell.mobileS {
+  .fit > .cell.smallScreen {
     flex-basis: 100%;
   }
 
-  .hideOnmobileS {
+  .hideOnsmallScreen {
     display: none;
   }
 }
 
-@media mobileSM {
+@media smallScreenMax {
   .hideOnmobileSM {
     display: none;
   }
 }
 
-@media tablet {
-  .hideOntablet {
+@media mediumScreen {
+  .hideOnmediumScreen {
     display: none;
   }
 }

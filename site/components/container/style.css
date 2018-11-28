@@ -1,4 +1,4 @@
-@value desktop, desktopMinWidth from "../variables/breakpoints.css";
+@value largeScreen from "../../css/_sizes.css";
 
 .wrapper {
 }
@@ -9,9 +9,9 @@
   padding: 0px 20px;
 }
 
-@media desktop {
+@media largeScreen {
   .container {
-    width: desktopMinWidth;
+    width: 960px;
     margin: 0 auto;
   }
 }
