@@ -126,7 +126,6 @@
  */
 
 .size1of12 {
-  /* flex-basis: auto; 1 */
   width: calc(100% * 1 / 12);
 }
 
