@@ -21,12 +21,16 @@
 }
 
 .headerImgWrapper {
-  background-color: #577492;
   text-align: center;
-  position: relative;
+  max-height: 460px;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2f7f;
+  min-height: 255px;
 }
 
 .headerImg {
-  max-width: 1200px;
-  width: 100%;
+  display: inline-block;
 }
