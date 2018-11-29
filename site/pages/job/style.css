@@ -1,9 +1,9 @@
-@value tablet from "../../components/variables/breakpoints.css";
+@value mediumScreen from "../../css/_sizes.css";
 @value badgerWhite, badgerBlack, badgerRedOnWhite from "../../css/_colors.css";
 
 .jobTitle {
-  composes: serif from "../../css/typography/_fonts.css";
-  composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from '../../css/typography/_fonts.css';
+  composes: fontM from '../../css/typography/_fonts.css';
   text-align: left;
 }
 
@@ -12,34 +12,34 @@
 }
 
 .noteTitle {
-  composes: serif from "../../css/typography/_fonts.css";
-  composes: fontM from "../../css/typography/_fonts.css";
+  composes: serif from '../../css/typography/_fonts.css';
+  composes: fontM from '../../css/typography/_fonts.css';
   font-size: 1.333em !important;
 }
 
 .applyLink {
-  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: sansSerif from '../../css/typography/_fonts.css';
 
   float: right;
   display: none;
 
-  @media tablet {
+  @media mediumScreen {
     display: inline;
   }
 }
 
 .sidebarApplyLink {
-  composes: smallButton from "../../css/_links.css";
+  composes: smallButton from '../../css/_links.css';
 }
 
 .linkBack {
-  composes: bodyLink from "../../css/_links.css";
+  composes: bodyLink from '../../css/_links.css';
   border-bottom: 1px solid badgerRedOnWhite;
   display: inline-block;
   margin-bottom: 25px;
-  composes: sansSerif from "../../css/typography/_fonts.css";
+  composes: sansSerif from '../../css/typography/_fonts.css';
 
-  @media tablet {
+  @media mediumScreen {
     display: inline;
     margin-bottom: 0;
   }

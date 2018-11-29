@@ -11,7 +11,7 @@
  *   fit: {Boolean}, make all cells fit into a single row
  *   breakOn: {String}, responsive grid, will break when a given
  *            breakpoint is met. Check for breakpoint names in
- *            variables/breakpoints.css. Default value is `mobile`.
+ *            css/_sizes.css. Default value is `smallScreen`.
  * }
  *
  * Cell
@@ -32,7 +32,7 @@ type GridProps = {
   fit?: boolean,
 };
 
-export const Grid = ({ breakOn = 'mobile', children, fit }: GridProps) => {
+export const Grid = ({ breakOn = 'smallScreen', children, fit }: GridProps) => {
   const gridClassNames = classNames({
     [styles.grid]: true,
     [styles.withGutter]: true,

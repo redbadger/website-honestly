@@ -74,19 +74,19 @@ const EventsListEntry = ({
             endDateTime={setEndDate(timeline, startDateTime, endDateTime)}
           />
         </Cell>
-        <Cell size={1} key="event_picture_mobile" hideOn="mobileSM">
+        <Cell size={1} key="event_picture_mobile" hideOn="smallScreen">
           <Link to="event" navigationData={eventLink}>
             <EventImage imgPath={featureImageFilename} imgAlt={title} />
           </Link>
         </Cell>
-        <Cell size={12} breakOn="mobile">
+        <Cell size={12} breakOn="smallScreen">
           <Grid fit={false}>
-            <Cell size={8} key="event_description" breakOn="mobileS">
+            <Cell size={8} key="event_description" breakOn="smallestScreen">
               <EventTitle eventLink={eventLink} eventTitle={title} />
               <div className={styles.eventDescription}>{strapline}</div>
               <EventMeta internalLinks={internalLinks} externalLinks={externalLinks} tags={tags} />
             </Cell>
-            <Cell size={4} key="event_picture" breakOn="mobileS" hideOn="mobileS">
+            <Cell size={4} key="event_picture" breakOn="smallestScreen" hideOn="smallestScreen">
               {/* using negative tabindex here as there is the exact same link on the heading,
                   making screen-readers go thourgh both */}
               <Link to="event" navigationData={eventLink} tabIndex="-1">

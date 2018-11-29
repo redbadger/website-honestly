@@ -1,5 +1,5 @@
-@value mobile from "../../../components/variables/breakpoints.css";
 @value badgerBlack, badgerRedOnWhite from "../../../css/_colors.css";
+@value smallScreen from "../../../css/_sizes.css";
 
 .eventsListTimelineSection {
   margin-bottom: 50px;
@@ -11,7 +11,7 @@
 
 .eventsListTimelineSection h2 {
   margin-bottom: 0;
-  font-family: "Sentinel A", "Sentinel B", serif;
+  font-family: 'Sentinel A', 'Sentinel B', serif;
 }
 
 .eventsListTimelineSection h2.eventTitle {
@@ -41,8 +41,8 @@
 }
 
 .eventTitle {
-  composes: serif from "../../../css/typography/_fonts.css";
-  composes: fontS from "../../../css/typography/_fonts.css";
+  composes: serif from '../../../css/typography/_fonts.css';
+  composes: fontS from '../../../css/typography/_fonts.css';
   display: inline;
   float: left;
   margin-bottom: 0;
@@ -52,7 +52,9 @@
   display: inline;
 }
 
-.eventTitleLink:hover, .eventTitleLink:active, .eventTitleLink:focus {
+.eventTitleLink:hover,
+.eventTitleLink:active,
+.eventTitleLink:focus {
   border-bottom: 2px solid badgerRedOnWhite;
 }
 
@@ -62,7 +64,7 @@
 }
 
 .eventDescription {
-  composes: sansSerif from "../../../css/typography/_fonts.css";
+  composes: sansSerif from '../../../css/typography/_fonts.css';
   color: badgerBlack;
   float: left;
   width: 100%;
@@ -71,8 +73,8 @@
 }
 
 .eventLinks {
-  composes: sansSerif from "../../../css/typography/_fonts.css";
-  composes: cf from "../../../components/utils/layout.css";
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  composes: cf from '../../../components/utils/layout.css';
   margin-bottom: 1em;
 }
 
@@ -81,7 +83,7 @@
   margin: 1.5em 0 1.5em 0;
 }
 
-@media mobile {
+@media smallScreen {
   .eventsList {
     padding: 0;
   }
