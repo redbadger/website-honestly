@@ -17,8 +17,8 @@ exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
     <ReadMore />
   </Text>
   <Image
-    alt="People (Badgers) sticking post-its on a blue wall"
-    src="listing.jpg"
+    alt="Pride heart animation"
+    src="listing.gif"
   />
 </Container>
 `;

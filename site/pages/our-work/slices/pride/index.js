@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
-import prideImg from './images/listing.jpg';
+import prideImg from './images/listing.gif';
 
 export default function Pride() {
   return (
@@ -16,7 +16,7 @@ export default function Pride() {
         </Description>
         <ReadMore />
       </Text>
-      <Image src={prideImg} alt="People (Badgers) sticking post-its on a blue wall" />
+      <Image src={prideImg} alt="Pride heart animation" />
     </Container>
   );
 }
