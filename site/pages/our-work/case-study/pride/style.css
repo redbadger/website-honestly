@@ -1,0 +1,37 @@
+@value badgerRedOnWhite, badgerAccessibleRedOnBlack from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.listBox__item:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+.listBox__item--outcomes {
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
+}
+
+.link {
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRedOnWhite;
+}
+
+.link:hover {
+  color: badgerRedOnWhite;
+  border-bottom: 2px solid badgerAccessibleRedOnBlack;
+}
+
+.headerImgWrapper {
+  text-align: center;
+  max-height: 460px;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2f7f;
+  min-height: 255px;
+}
+
+.headerImg {
+  display: inline-block;
+  height: 210px;
+}

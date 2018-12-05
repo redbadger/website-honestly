@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint-disable camelcase */
+
 import {
   formatSignUpResponse,
   formatUpdateResponse,

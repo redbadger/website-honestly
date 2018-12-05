@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint-disable camelcase */
+
 import nock from 'nock';
 import lolex from 'lolex';
 
@@ -21,9 +23,9 @@ function expectHttpRequest(status) {
   const reqbody = 'grant_type=password&user_id=USER&password=PASSWORD&client_id=CLIENT';
 
   const resbody = {
-    access_token: 'token', // eslint-disable-line camelcase
-    organizer_key: 'organizer', // eslint-disable-line camelcase
-    expires_in: '10000', // eslint-disable-line camelcase
+    access_token: 'token',
+    organizer_key: 'organizer',
+    expires_in: '10000',
   };
 
   nock(apiBase, { reqheaders })

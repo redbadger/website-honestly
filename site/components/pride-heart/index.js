@@ -7,6 +7,7 @@ import styles from './style.css';
 type Props = {
   direction: string,
   play: boolean,
+  className?: string,
 };
 
 export default class PrideHeart extends React.Component<Props> {
@@ -32,6 +33,8 @@ export default class PrideHeart extends React.Component<Props> {
   }
 
   render() {
-    return <div className={styles.prideHeart} id="prideHeart" />;
+    const { className } = this.props;
+
+    return <div className={className || styles.prideHeart} id="prideHeart" />;
   }
 }

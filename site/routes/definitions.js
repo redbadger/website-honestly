@@ -288,6 +288,19 @@ export const routeDefinitions: Array<RouteDefinition> = [
     },
   },
   {
+    title:
+      'A labour of love – delivering a flagship, best-in-class digital experience for the Pride in London community',
+    description:
+      'Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.',
+    key: 'prideCaseStudy',
+    route: 'our-work/case-study/pride',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'pride',
+    },
+  },
+  {
     title: 'Technology',
     description:
       'We choose the right tech for the job and with meticulous engineering practices we enable continuous delivery, speed to market and create value for customers quickly.',

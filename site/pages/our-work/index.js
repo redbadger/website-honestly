@@ -13,6 +13,7 @@ import FtSlice from './slices/ft';
 import FortnumSlice from './slices/fortnum-and-mason';
 import FortnumDigitalTransformationSlice from './slices/fortnum-and-mason-digital-transformation';
 import SkySlice from './slices/sky';
+import Pride from './slices/pride';
 
 import { BBCCell, SkyCell, HallerCell, BMWCell } from './cells';
 import Logos from './logos';
@@ -43,6 +44,7 @@ export default function CaseStudies() {
       </div>
       <div className={styles.caseStudyTopSection}>
         <div className={styles.topSlicesContainer}>
+          <Pride />
           <CarTrawlerSlice />
           <BankSlice />
           <CarTrawlerSliceMyAccount />
