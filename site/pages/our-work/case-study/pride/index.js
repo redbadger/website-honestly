@@ -198,7 +198,23 @@ export default function Pride() {
               </li>
             </UL>
             <P>
-              You can read more in-depth about Branding, UX, React Native, Open Source and Delivery.
+              You can read more in-depth about{' '}
+              <a href="https://blog.red-badger.com/2018/6/27/branding-the-pride-in-london-app">
+                Branding
+              </a>,{' '}
+              <a href="https://blog.red-badger.com/2018/6/28/designing-pride-into-the-experience">
+                UX
+              </a>,{' '}
+              <a href="https://red-badger.com/blog/2018/6/28/pride-in-london-going-native">
+                React Native
+              </a>,{' '}
+              <a href="https://blog.red-badger.com/blog/2018/6/28/open-source-with-pride">
+                Open Source
+              </a>{' '}
+              and{' '}
+              <a href="https://blog.red-badger.com/2018/6/28/the-pride-in-london-2018-app-delivering-a-rainbow">
+                Delivery
+              </a>.
             </P>
             <P>
               Since completing this project we have been approached and engaged with some new
