@@ -2,6 +2,10 @@
   "name": "website-honestly",
   "version": "1.0.0",
   "description": "Red Badger Website. Honestly.",
+  "engines": {
+    "node": "6.10.3",
+    "npm": "3.10.10"
+  },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
