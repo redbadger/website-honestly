@@ -368,7 +368,8 @@ exports[`site/pages/cookie-policy renders correctly 1`] = `
                         >
                           red-badger.com
                         </a>
-                        , 
+                        ,
+                         
                         <a
                           href="https://react.london"
                         >

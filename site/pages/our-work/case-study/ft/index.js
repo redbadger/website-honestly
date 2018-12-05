@@ -193,8 +193,8 @@ const FinancialTimesCaseStudy = () => (
       <div className={styles.content}>
         <div className={styles.content__wrapper}>
           <h2 className={styles.content__title}>
-            <span className={styles.content__redTitle}>Creating lasting change.</span>
-            A new design increasing reader engagement by 30%
+            <span className={styles.content__redTitle}>Creating lasting change.</span>A new design
+            increasing reader engagement by 30%
           </h2>
           <p className={styles.content__paragraph}>
             Our work with the Financial Times was made to last. Through close collaboration with the

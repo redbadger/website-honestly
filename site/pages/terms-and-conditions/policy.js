@@ -24,9 +24,8 @@ const policies = [
           <P>
             These Website Terms are part of, and are subject to, our{' '}
             <Link to="privacyPolicy">Privacy Statement</Link> and our{' '}
-            <Link to="cookiePolicy">Cookies Policy</Link>. By accessing or using our (“<B>
-              Websites
-            </B>”), you confirm that you accept these Website Terms.
+            <Link to="cookiePolicy">Cookies Policy</Link>. By accessing or using our (“
+            <B>Websites</B>”), you confirm that you accept these Website Terms.
           </P>
         ),
       },
@@ -38,8 +37,8 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Websites are owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
-            “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
+            Our Websites are owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>
+            ”, “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
           </P>
         ),
       },
@@ -73,8 +72,9 @@ const policies = [
             here at{' '}
             <a href="https://red-badger.com/terms-and-conditions">
               red-badger.com/terms-and-conditions
-            </a>. If we make changes to this Website Terms, we will post the revised Website Terms
-            here at{' '}
+            </a>
+            . If we make changes to this Website Terms, we will post the revised Website Terms here
+            at{' '}
             <a href="https://red-badger.com/terms-and-conditions">
               red-badger.com/terms-and-conditions
             </a>{' '}
@@ -511,7 +511,8 @@ const policies = [
         body: () => (
           <P>
             If you wish to link to or make any use of content on our Websites other than that set
-            out above, please contact <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>.
+            out above, please contact <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>
+            .
           </P>
         ),
       },

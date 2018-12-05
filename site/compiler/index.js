@@ -46,21 +46,25 @@ const filePathFor = (stateNavigator, key, params) => {
 
 export const expandRoutes = (state, stateNavigator) => {
   const routeDefs = Object.keys(stateNavigator.states).map(key => stateNavigator.states[key]);
-  const staticRoutes = routeDefs.filter(def => !def.gen).map(def => ({
-    ...def,
-    title: titleFor(def, def.stateToProps && def.stateToProps(state)),
-    ...filePathFor(stateNavigator, def.key),
-    props: def.stateToProps && def.stateToProps(state),
-  }));
-
-  const dynamicRoutes = routeDefs.filter(def => !!def.gen).map(def => {
-    return def.gen(state).map(params => ({
+  const staticRoutes = routeDefs
+    .filter(def => !def.gen)
+    .map(def => ({
       ...def,
-      title: titleFor(def, def.stateToProps && def.stateToProps(state, params)),
-      ...filePathFor(stateNavigator, def.key, params),
-      props: def.stateToProps && def.stateToProps(state, params),
+      title: titleFor(def, def.stateToProps && def.stateToProps(state)),
+      ...filePathFor(stateNavigator, def.key),
+      props: def.stateToProps && def.stateToProps(state),
     }));
-  });
+
+  const dynamicRoutes = routeDefs
+    .filter(def => !!def.gen)
+    .map(def => {
+      return def.gen(state).map(params => ({
+        ...def,
+        title: titleFor(def, def.stateToProps && def.stateToProps(state, params)),
+        ...filePathFor(stateNavigator, def.key, params),
+        props: def.stateToProps && def.stateToProps(state, params),
+      }));
+    });
 
   const flattened = dynamicRoutes.reduce((flat, arr) => flat.concat(arr), []);
 

@@ -1,8 +1,8 @@
 // @flow
 /*
-* This component is ported from Website Next and is meant to be
-* used only by Jobs and Events components
-*/
+ * This component is ported from Website Next and is meant to be
+ * used only by Jobs and Events components
+ */
 
 import * as React from 'react';
 import styles from './style.css';

@@ -9,10 +9,12 @@ export default function NotFoundPage() {
       Try our{' '}
       <a className={styles.link} href="/blog">
         blog
-      </a>, or find out more{' '}
+      </a>
+      , or find out more{' '}
       <a className={styles.link} href="/about-us">
         about us
-      </a>.
+      </a>
+      .
     </span>,
   ];
 
