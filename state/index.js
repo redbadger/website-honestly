@@ -5,14 +5,17 @@ import { getPosts } from '../site/fetchers/instagram';
 import { getBlogPosts } from '../site/fetchers/blog-posts';
 import { getData } from '../site/fetchers/badger-brain';
 
-const toLookupDict = (array, keyFn) =>
-  array.reduce(
-    (obj, item, index) => ({
-      ...obj,
-      [keyFn(item)]: index,
-    }),
-    {},
-  );
+const toLookupDict = (array, keyFn) => {
+  if (array) {
+    array.reduce(
+      (obj, item, index) => ({
+        ...obj,
+        [keyFn(item)]: index,
+      }),
+      {},
+    );
+  }
+};
 
 const getSiteState = () =>
   Promise.all([

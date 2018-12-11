@@ -119,7 +119,14 @@ export const getTweets = (
         timeout: 10000,
       }),
     )
-    .then(handleErrors)
-    .then(response => response.json())
-    .then((data: Array<TwitterResponse>) => data.filter(isValidTweet).map(normaliseTweet));
+    .then(response => {
+      return response.json();
+    })
+    .then((data: Array<TwitterResponse>) => {
+      if (data && !data.errors) {
+        return data.filter(isValidTweet).map(normaliseTweet);
+      }
+      return [];
+      // log data.errors to badgerbot
+    });
 };
