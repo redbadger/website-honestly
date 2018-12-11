@@ -25,5 +25,6 @@ export const getJobs = (fetch, key) =>
           slug: paramCase(job.title),
         }));
       }
+      return [];
       // log errors to badgerbot
     });
