@@ -26,6 +26,15 @@ type TwitterResponse = {
   },
 };
 
+type TwitterResponseError = {
+  errors: [
+    {
+      code: number,
+      message: string,
+    },
+  ],
+};
+
 export const isValidTweet = (tweet: TwitterResponse) => {
   try {
     if (!tweet) {
@@ -122,11 +131,12 @@ export const getTweets = (
     .then(response => {
       return response.json();
     })
-    .then((data: Array<TwitterResponse>) => {
+    .then((data: Array<TwitterResponse> | TwitterResponseError) => {
       if (data && !data.errors) {
         return data.filter(isValidTweet).map(normaliseTweet);
       }
-      return [];
+      const emptyResponse: TwitterResponse[] = [];
+      return emptyResponse;
       // log data.errors to badgerbot
     });
 };

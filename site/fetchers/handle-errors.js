@@ -1,4 +1,4 @@
-// Errors from these urls should throw warnings but not halt the fetch process.
+// Errors from these sources should throw warnings but not halt the fetch process.
 const safeToFailSources = ['twitter', 'instagram', 'workable'];
 
 function safeToFail(url) {
