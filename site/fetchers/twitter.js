@@ -112,7 +112,6 @@ export const getTweets = (
   if (!key) {
     throw new Error('Missing Twitter key');
   }
-
   if (!secret) {
     throw new Error('Missing Twitter secret');
   }
@@ -128,15 +127,12 @@ export const getTweets = (
         timeout: 10000,
       }),
     )
-    .then(response => {
-      return response.json();
-    })
+    .then(response => response.json())
     .then((data: Array<TwitterResponse> | TwitterResponseError) => {
       if (data && !data.errors) {
         return data.filter(isValidTweet).map(normaliseTweet);
       }
       const emptyResponse: TwitterResponse[] = [];
       return emptyResponse;
-      // log data.errors to badgerbot
     });
 };
