@@ -87,8 +87,7 @@ export const normalisePost = (post: InstagramResponsePost) => {
   };
 };
 
-export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
-  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+export const getPosts = (fetch: any, accessToken: string): Promise<Array<InstagramPost>> => {
   if (!accessToken) {
     throw new Error('Missing env varible INSTAGRAM_ACCESS_TOKEN');
   }

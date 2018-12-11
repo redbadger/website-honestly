@@ -1,5 +1,6 @@
+import fetch from 'node-fetch';
 /* eslint-disable camelcase */
-import { isValidTweet } from './twitter';
+import { isValidTweet, getTweets } from './twitter';
 
 const generateTweet = () => {
   return {
@@ -84,5 +85,12 @@ describe('twitter fetcher tweet validation', () => {
     tweet.favorite_count = undefined;
     const result = isValidTweet(tweet);
     expect(result).toEqual(false);
+  });
+});
+
+describe('fetching tweets', () => {
+  it('Returns empty array if credentials are bad', async () => {
+    const tweets = await getTweets(fetch, 'bad key', 'bad secret');
+    expect(tweets.length).toBe(0);
   });
 });
