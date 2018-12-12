@@ -109,12 +109,8 @@ export const getTweets = (
   secret: string,
   username: string = 'redbadgerteam',
 ): Promise<Array<Tweet>> => {
-  if (!key) {
-    throw new Error('Missing Twitter key');
-  }
-  if (!secret) {
-    throw new Error('Missing Twitter secret');
-  }
+  if (!key) throw new Error('Missing Twitter key');
+  if (!secret) throw new Error('Missing Twitter secret');
   const count = 5;
   const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${username}&trim_user=true`;
   return getBearerToken(fetch, key, secret)
