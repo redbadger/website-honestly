@@ -1,0 +1,56 @@
+@value badgerBlack, badgerWhite from "../../../css/_colors.css";
+@value mediumScreen from "../../../css/_sizes.css";
+@value dividerBlack from "../../../css/_divider.css";
+@value fontL, fontS, serif from '../../../css/typography/_fonts.css';
+
+.btnWrapper:hover a:after {
+  background-image: url(./sign-up-hover.png);
+  height: 56px;
+  width: 124px;
+}
+
+.btnWrapper img {
+  height: 56px;
+  width: 124px;
+}
+
+.newsletter {
+  composes: dividerBlack;
+  background-color: badgerBlack;
+  color: badgerWhite;
+  text-align: center;
+  padding: 30px 20px 25px 20px;
+}
+
+.title {
+  composes: fontL;
+  composes: serif;
+  max-width: 280px;
+  margin: 0 auto 10px;
+}
+
+.subTitle {
+  composes: fontS;
+  composes: serif;
+  display: block;
+  margin: 15px 0 40px;
+}
+
+@media mediumScreen {
+  .title {
+    margin: 20px auto;
+    max-width: 680px;
+  }
+
+  .subTitle {
+    max-width: 585px;
+    margin: 15px auto 30px;
+  }
+
+  .newsletter {
+    padding: 30px 20px 40px 20px;
+  }
+}
+
+
+
