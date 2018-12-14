@@ -87,8 +87,7 @@ export const normalisePost = (post: InstagramResponsePost) => {
   };
 };
 
-export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
-  const accessToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+export const getPosts = (fetch: any, accessToken: string): Promise<Array<InstagramPost>> => {
   if (!accessToken) {
     throw new Error('Missing env varible INSTAGRAM_ACCESS_TOKEN');
   }
@@ -102,10 +101,14 @@ export const getPosts = (fetch: any): Promise<Array<InstagramPost>> => {
   })
     .then(handleErrors)
     .then(response => response.json())
-    .then((response: InstagramResponse) =>
-      response.data
-        .filter(isValidPost)
-        .map(normalisePost)
-        .slice(0, 5),
-    );
+    .then((response: InstagramResponse) => {
+      if (response.data) {
+        return response.data
+          .filter(isValidPost)
+          .map(normalisePost)
+          .slice(0, 5);
+      }
+      return [];
+      // log response.meta.error_type/error_message to badgerbot
+    });
 };

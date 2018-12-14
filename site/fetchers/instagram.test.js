@@ -1,5 +1,6 @@
+import fetch from 'node-fetch';
 /* eslint-disable camelcase */
-import { isValidPost } from './instagram';
+import { isValidPost, getPosts } from './instagram';
 
 const generatePost = () => {
   return {
@@ -89,5 +90,12 @@ describe('instagram fetcher post validation', () => {
     post.images.standard_resolution.height = '-1';
     const result = isValidPost(post);
     expect(result).toEqual(false);
+  });
+});
+
+describe('fetching posts', () => {
+  it('Returns empty array if credentials are bad', async () => {
+    const posts = await getPosts(fetch, 'bad token');
+    expect(posts.length).toBe(0);
   });
 });

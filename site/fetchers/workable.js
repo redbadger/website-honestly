@@ -15,12 +15,16 @@ export const getJobs = (fetch, key) =>
   })
     .then(handleErrors)
     .then(response => response.json())
-    .then(response =>
-      response.jobs.map(job => ({
-        title: job.title,
-        description: sanitizeHtml(job.description),
-        fullDescription: sanitizeHtml(job.description + job.requirements + job.benefits),
-        applicationUrl: job.application_url,
-        slug: paramCase(job.title),
-      })),
-    );
+    .then(response => {
+      if (response.jobs) {
+        return response.jobs.map(job => ({
+          title: job.title,
+          description: sanitizeHtml(job.description),
+          fullDescription: sanitizeHtml(job.description + job.requirements + job.benefits),
+          applicationUrl: job.application_url,
+          slug: paramCase(job.title),
+        }));
+      }
+      return [];
+      // log errors to badgerbot
+    });

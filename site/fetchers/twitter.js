@@ -26,6 +26,15 @@ type TwitterResponse = {
   },
 };
 
+type TwitterResponseError = {
+  errors: [
+    {
+      code: number,
+      message: string,
+    },
+  ],
+};
+
 export const isValidTweet = (tweet: TwitterResponse) => {
   try {
     if (!tweet) {
@@ -100,13 +109,8 @@ export const getTweets = (
   secret: string,
   username: string = 'redbadgerteam',
 ): Promise<Array<Tweet>> => {
-  if (!key) {
-    throw new Error('Missing Twitter key');
-  }
-
-  if (!secret) {
-    throw new Error('Missing Twitter secret');
-  }
+  if (!key) throw new Error('Missing Twitter key');
+  if (!secret) throw new Error('Missing Twitter secret');
   const count = 5;
   const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${username}&trim_user=true`;
   return getBearerToken(fetch, key, secret)
@@ -119,7 +123,12 @@ export const getTweets = (
         timeout: 10000,
       }),
     )
-    .then(handleErrors)
     .then(response => response.json())
-    .then((data: Array<TwitterResponse>) => data.filter(isValidTweet).map(normaliseTweet));
+    .then((data: Array<TwitterResponse> | TwitterResponseError) => {
+      if (data && !data.errors) {
+        return data.filter(isValidTweet).map(normaliseTweet);
+      }
+      const emptyResponse: TwitterResponse[] = [];
+      return emptyResponse;
+    });
 };
