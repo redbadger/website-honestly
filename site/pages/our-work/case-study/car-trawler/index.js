@@ -86,7 +86,8 @@ const CarTrawler = () => (
               rel="noopener noreferrer"
             >
               Sky case study
-            </a>), and our mantra of only choosing the right technology for the job. We suggested
+            </a>
+            ), and our mantra of only choosing the right technology for the job. We suggested
             running a one week concept lab, in order to rapidly understand, validate and prototype a
             solution to solve their problem.
           </P>

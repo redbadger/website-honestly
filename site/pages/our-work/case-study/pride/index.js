@@ -201,20 +201,24 @@ export default function Pride() {
               You can read more in-depth about{' '}
               <a href="https://blog.red-badger.com/2018/6/27/branding-the-pride-in-london-app">
                 Branding
-              </a>,{' '}
+              </a>
+              ,{' '}
               <a href="https://blog.red-badger.com/2018/6/28/designing-pride-into-the-experience">
                 UX
-              </a>,{' '}
+              </a>
+              ,{' '}
               <a href="https://red-badger.com/blog/2018/6/28/pride-in-london-going-native">
                 React Native
-              </a>,{' '}
+              </a>
+              ,{' '}
               <a href="https://blog.red-badger.com/blog/2018/6/28/open-source-with-pride">
                 Open Source
               </a>{' '}
               and{' '}
               <a href="https://blog.red-badger.com/2018/6/28/the-pride-in-london-2018-app-delivering-a-rainbow">
                 Delivery
-              </a>.
+              </a>
+              .
             </P>
             <P>
               Since completing this project we have been approached and engaged with some new
@@ -223,14 +227,16 @@ export default function Pride() {
               experiences for your customers. Please get in touch on{' '}
               <a href="email:hello@red-badger.com" className={styles.link}>
                 hello@red-badger.com
-              </a>.
+              </a>
+              .
             </P>
             <P>
               Are you a charity or NGO looking for help with your project? Our social value team
               offer pro bono or reduced rates. Please contact us at{' '}
               <a href="email:socialvalue@red-badger.com" className={styles.link}>
                 socialvalue@red-badger.com
-              </a>.
+              </a>
+              .
             </P>
           </SectionBody>
         </Section>

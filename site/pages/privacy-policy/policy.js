@@ -14,8 +14,8 @@ const policies = [
       {
         body: () => (
           <P>
-            We are committed to safeguarding the privacy of individuals (“<B>you</B>”, “<B>your</B>”)
-            whose personal data we collect and use. In this Privacy Statement, we explain how we
+            We are committed to safeguarding the privacy of individuals (“<B>you</B>”, “<B>your</B>
+            ”) whose personal data we collect and use. In this Privacy Statement, we explain how we
             handle your personal data. For example, what personal data we collect and how, what we
             do with it and who we share it with. It also describes your privacy rights and controls
             such as your choices regarding use, access and correction of your personal data.
@@ -43,8 +43,8 @@ const policies = [
       {
         body: () => (
           <P>
-            Our Websites are owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>”,
-            “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
+            Our Websites are owned and operated by Red Badger Consulting Limited (“<B>Red Badger</B>
+            ”, “<B>we</B>”, “<B>us</B>” or “<B>our</B>”)
           </P>
         ),
       },
@@ -106,7 +106,8 @@ const policies = [
             Commissioner for a fuller explanation of these rights. You can do so by using this link{' '}
             <a href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/">
               https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/individual-rights/
-            </a>.
+            </a>
+            .
           </P>
         ),
       },
@@ -249,9 +250,9 @@ const policies = [
           <P>
             <B>Right to complain to the UK Information Commissioner:</B> If you consider that our
             processing of your personal data infringes the applicable data protection laws, you have
-            a legal right to lodge a complaint with the UK Information Commissioner (<a href="http://www.ico.org.uk">
-              www.ico.org.uk
-            </a>) which is the UK data protection regulatory body.
+            a legal right to lodge a complaint with the UK Information Commissioner (
+            <a href="http://www.ico.org.uk">www.ico.org.uk</a>) which is the UK data protection
+            regulatory body.
           </P>
         ),
       },
@@ -286,10 +287,10 @@ const policies = [
           <P>
             If we make changes that materially alter your privacy rights, we will provide additional
             notice, such as via email. If you disagree with the changes to the Privacy Statement,
-            you should contact our Data Compliance Manager (<a href="mailto:privacy@red-badger.com">
-              privacy@red-badger.com
-            </a>) writing requesting the erasure of your personal data and, if you receive our
-            newsletter, unsubscribe from them.
+            you should contact our Data Compliance Manager (
+            <a href="mailto:privacy@red-badger.com">privacy@red-badger.com</a>) writing requesting
+            the erasure of your personal data and, if you receive our newsletter, unsubscribe from
+            them.
           </P>
         ),
       },

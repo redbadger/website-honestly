@@ -152,8 +152,8 @@ const SkyCmsCaseStudy = () => (
             />
           </p>
           <h2 className={styles.content__title}>
-            <span className={styles.content__redTitle}>Creating lasting change.</span>
-            A system so good, it’s being adopted across the business
+            <span className={styles.content__redTitle}>Creating lasting change.</span>A system so
+            good, it’s being adopted across the business
           </h2>
           <p className={styles.content__paragraph}>
             The new CMS enables editors to provide users with the content they need, fast and

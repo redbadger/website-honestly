@@ -105,8 +105,9 @@ const CarTrawler = () => (
             We decided to take a similar approach to the{' '}
             <Link to="carTrawlerCaseStudy" target="_blank">
               CMS Project
-            </Link>, and start with an initial week’s discovery in order to understand the problem,
-            carry out an initial user experience analysis, and determine the appropriate technical
+            </Link>
+            , and start with an initial week’s discovery in order to understand the problem, carry
+            out an initial user experience analysis, and determine the appropriate technical
             approach. The decision was made to ignore the existing platform, and instead to focus on
             the user requirements, in order to provide maximum user value and speed to market. After
             just four days, we had a backlog for the project and a working prototype.
@@ -114,7 +115,8 @@ const CarTrawler = () => (
           <P>
             <a href="https://red-badger.com/blog/2017/10/13/the-end-of-the-cloud-a-truly-serverless-web">
               Serverless architecture
-            </a>, a newcomer on the tech scene, was selected due to the speed at which the solution
+            </a>
+            , a newcomer on the tech scene, was selected due to the speed at which the solution
             could be built and deployed, whilst providing assurances in security, stability and
             scalability. Serverless negates the need for a DevOps team, as providers such as Amazon
             Web Services provide guaranteed uptime, load balancing, scale and resilience. Any peaks

@@ -54,7 +54,8 @@ const FMTeaCaseStudy = () => (
           about our award-winning work on the website{' '}
           <Link to="fortnumAndMasonCaseStudy" className={styles.link} target="_blank">
             here
-          </Link>.
+          </Link>
+          .
         </p>
         <p className={styles.content__paragraph}>
           Since then, the focus has been on increasing the awareness and accessibility of a wide

@@ -21,9 +21,9 @@ const policies = [
             <Link to="privacyPolicy">Privacy Statement</Link>.
           </P>
           <P>
-            By accessing and/or using our Websites (<a href="https://red-badger.com">
-              red-badger.com
-            </a>, <a href="https://react.london">react.london</a>,{' '}
+            By accessing and/or using our Websites (
+            <a href="https://red-badger.com">red-badger.com</a>,{' '}
+            <a href="https://react.london">react.london</a>,{' '}
             <a href="https://meetup.react.london">meetup.react.london</a>) you confirm that you
             accept the terms of our Cookies Policy.
           </P>
@@ -48,7 +48,8 @@ const policies = [
             To find out more about cookies, please visit:{' '}
             <a href="https://ico.org.uk/for-the-public/online/cookies/">
               https://ico.org.uk/for-the-public/online/cookies/
-            </a>.
+            </a>
+            .
           </P>
         </React.Fragment>
       );
@@ -70,7 +71,8 @@ const policies = [
             or{' '}
             <a href="http://www.allaboutcookies.org/manage-cookies/">
               http://www.allaboutcookies.org/manage-cookies/
-            </a>.
+            </a>
+            .
           </P>
           <P>
             When you access and/or use our Websites, we will ask you if you will accept cookies and
@@ -84,7 +86,8 @@ const policies = [
             out how you can opt out, please visit{' '}
             <a href="http://tools.google.com/dlpage/gaoptout">
               http://tools.google.com/dlpage/gaoptout
-            </a>.
+            </a>
+            .
           </P>
         </React.Fragment>
       );
@@ -162,7 +165,8 @@ const policies = [
             information. This cookie is set by Hubspot and their privacy policy can be found at{' '}
             <a href="https://legal.hubspot.com/privacy-policy">
               https://legal.hubspot.com/privacy-policy
-            </a>.
+            </a>
+            .
           </P>
 
           <H3>UserMatchHistory</H3>

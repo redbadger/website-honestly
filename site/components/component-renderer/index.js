@@ -1,7 +1,7 @@
 /*
-* This component is ported from Website Next and is meant to be
-* used only by Jobs and Events components
-*/
+ * This component is ported from Website Next and is meant to be
+ * used only by Jobs and Events components
+ */
 
 import isArray from 'lodash.isarray';
 import isString from 'lodash.isstring';
@@ -24,7 +24,7 @@ const componentIndex = {
   Title2,
   Title3,
 };
-
+// @noflow
 type ComponentRendererProps = {
   data: {
     type?: string,
