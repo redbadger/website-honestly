@@ -226,6 +226,7 @@ scan-secrets: scanner ## Scan for secrets
 	clear \
 	build \
 	badger \
+	services-info \
 	services-deploy \
 	services-invoke \
 	fetch \
