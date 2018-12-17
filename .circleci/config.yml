@@ -145,7 +145,8 @@ workflows:
     jobs:
       - build:
           branches:
-            ignore: gh-pages
+            ignore:
+              - gh-pages
 
       - validate_formatting:
           requires:
