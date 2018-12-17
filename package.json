@@ -21,7 +21,7 @@
     "@storybook/addon-notes": "^3.4.8",
     "@storybook/addons": "^3.4.8",
     "@storybook/react": "^3.4.8",
-    "@storybook/storybook-deployer": "^2.3.0",
+    "@storybook/storybook-deployer": "2.4.0",
     "assets-webpack-plugin": "^3.5.1",
     "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.3",
