@@ -13,7 +13,7 @@
     "start": "make dev",
     "badger": "node dev/badger.js",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "deploy-storybook": "storybook-to-ghpages -o storybook"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "@storybook/addon-actions": "^3.4.8",
