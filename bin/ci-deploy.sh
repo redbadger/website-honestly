@@ -34,6 +34,9 @@ createCommitSite() {
   aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/$COMMIT_REF/version.txt
   pretty_success "Assets Deployed to S3!"
 
+  make build
+  make services-deploy #Note : since services.zip has already been built (via make build) it will not be built again.
+
   pretty_block "Registering deployment with GitHub"
   ./bin/register-github-deployment.js $COMMIT_REF
   pretty_success "Deployment Registered!\n"
@@ -83,7 +86,7 @@ deployMaster() {
 
 case "$1" in
   create-commit-site)
-    export ENVIRONMENT_NAME="staging"
+    export ENVIRONMENT_NAME="staging-test"
     source bin/load-ci-env.sh STAGING
     source bin/construct-additional-env.sh
     createCommitSite
