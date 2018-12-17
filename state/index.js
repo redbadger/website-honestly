@@ -13,6 +13,9 @@ const toLookupDict = (array, keyFn) =>
     {},
   );
 
+const collectFetchErrors = sources =>
+  sources.filter(source => source instanceof Error)
+
 const getSiteState = () =>
   Promise.all([
     getJobs(process.env.WORKABLE_API_KEY),
@@ -22,21 +25,29 @@ const getSiteState = () =>
     getPosts(process.env.INSTAGRAM_ACCESS_TOKEN),
     getData(),
   ]).then(
-    ([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, instagramPosts, data]) => ({
-      jobs,
-      triedAndTestedBlogPosts,
-      growingTrendsBlogPosts,
-      tweets,
-      instagramPosts,
-      jobLookup: toLookupDict(jobs, j => j.slug),
-      events: data.events,
-      eventsBanner: data.eventsBanner[0],
-      eventLookup: toLookupDict(data.events, e => e.slug),
-      badgers: data.badgers,
-      badgerLookup: toLookupDict(data.badgers, b => b.slug),
-      categories: data.categories,
-      qAndAs: data.qAndAs,
-    }),
+    ([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, instagramPosts, data]) => {
+      const fetchErrors = collectFetchErrors([jobs, tweets, instagramPosts]);
+      return (
+        {
+          data: {
+            jobs,
+            triedAndTestedBlogPosts,
+            growingTrendsBlogPosts,
+            tweets,
+            instagramPosts,
+            jobLookup: toLookupDict(jobs, j => j.slug),
+            events: data.events,
+            eventsBanner: data.eventsBanner[0],
+            eventLookup: toLookupDict(data.events, e => e.slug),
+            badgers: data.badgers,
+            badgerLookup: toLookupDict(data.badgers, b => b.slug),
+            categories: data.categories,
+            qAndAs: data.qAndAs,
+          },
+          fetchErrors,
+        }  
+      )
+    }
   );
 
 export default getSiteState;

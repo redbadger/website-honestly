@@ -74,7 +74,7 @@ export const expandRoutes = (state, stateNavigator) => {
 export function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
-  const stateString = state ? JSON.stringify(state) : '{}';
+  const stateString = state.data ? JSON.stringify(state.data) : '{}';
   const stateHash = crypto
     .createHash('md5')
     .update(stateString)
@@ -117,9 +117,9 @@ export function compileRoutes(state) {
     return { body, path, contentType: 'text/html' };
   };
 
-  const routeFiles = expandRoutes(state, stateNavigator).map(compile);
+  const routeFiles = expandRoutes(state.data, stateNavigator).map(compile);
 
-  return [stateFile, ...routeFiles];
+  return { ...state, data: [stateFile, ...routeFiles]};
 }
 
 export function compileSite(state) {

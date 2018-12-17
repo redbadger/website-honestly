@@ -34,11 +34,6 @@ createCommitSite() {
   aws s3 cp ./dist/version.txt s3://$BUCKET_NAME/$COMMIT_REF/version.txt
   pretty_success "Assets Deployed to S3!"
 
-  # TEST CODE FOR SERVERLESS UPGRADE - WILL DEPLOY TO SEPARATE ENV
-  export ENVIRONMENT_NAME="staging-test"
-  make build
-  make services-deploy #Note : since services.zip has already been built (via make build) it will not be built again.
-
   pretty_block "Registering deployment with GitHub"
   ./bin/register-github-deployment.js $COMMIT_REF
   pretty_success "Deployment Registered!\n"
