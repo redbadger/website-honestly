@@ -143,38 +143,23 @@ workflows:
 
   build_and_deploy:
     jobs:
-      - build:
-          filters:
-            branches:
-              ignore: gh-pages
+      - build
 
       - validate_formatting:
           requires:
             - build
-          filters:
-            branches:
-              ignore: gh-pages
 
       - lint:
           requires:
             - build
-          filters:
-            branches:
-              ignore: gh-pages
 
       - validate_types:
           requires:
             - build
-          filters:
-            branches:
-              ignore: gh-pages
 
       - test:
           requires:
             - build
-          filters:
-            branches:
-              ignore: gh-pages
 
       - preview:
           requires:
@@ -186,7 +171,6 @@ workflows:
           filters:
             branches:
               only: /^(?!.*master).*$/ # all branches except master
-              ignore: gh-pages
 
       - publish_storybook:
           filters:
