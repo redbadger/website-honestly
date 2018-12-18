@@ -1,4 +1,6 @@
 // @flow
+import fetch from 'node-fetch';
+
 import handleErrors from './handle-errors';
 import type { InstagramPost } from '../types/';
 
@@ -87,9 +89,9 @@ export const normalisePost = (post: InstagramResponsePost) => {
   };
 };
 
-export const getPosts = (fetch: any, accessToken: string): Promise<Array<InstagramPost>> => {
+export const getPosts = (accessToken: string): Promise<Array<InstagramPost>> => {
   if (!accessToken) {
-    throw new Error('Missing env varible INSTAGRAM_ACCESS_TOKEN');
+    throw new Error('Missing Instragram access token');
   }
   const apiQuery = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${accessToken}`;
 

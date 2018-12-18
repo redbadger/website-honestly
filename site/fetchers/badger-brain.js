@@ -2,7 +2,7 @@ import marked from 'marked';
 import fetch from 'node-fetch';
 import handleErrors from './handle-errors';
 
-const badgerBrainEndpoint = process.env.BADGER_BRAIN_HOST;
+const badgerBrainEndpoint = () => process.env.BADGER_BRAIN_HOST;
 
 const getRequestOptions = (body, token) => ({
   method: 'POST',
@@ -180,7 +180,7 @@ export function getData() {
     }
   `;
 
-  return fetch(badgerBrainEndpoint, getRequestOptions(body))
+  return fetch(badgerBrainEndpoint(), getRequestOptions(body))
     .then(handleErrors)
     .then(response => response.json())
     .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner } }) => ({

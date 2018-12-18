@@ -19,7 +19,7 @@ const getSiteState = () =>
     getJobs(fetch, process.env.WORKABLE_API_KEY),
     getBlogPosts(['5834972778']), // tried-and-tested
     getBlogPosts(['5834972328']), // growing-trends
-    getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
+    getTweets(process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     getPosts(fetch, process.env.INSTAGRAM_ACCESS_TOKEN),
     getData(),
   ]).then(

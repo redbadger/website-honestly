@@ -1,10 +1,19 @@
-import fetch from 'node-fetch';
-/* eslint-disable camelcase */
+import nock from 'nock';
+
 import { getJobs } from './workable';
 
-describe('Fetching jobs', () => {
-  it('Returns empty array when fetch job fails', async () => {
-    const jobs = await getJobs(fetch, 'bad key');
-    expect(jobs.length).toBe(0);
+describe('site/fetchers/workable', () => {
+  it('throws if request has incorrect access credentials', async () => {
+    nock('https://www.workable.com')
+      .get(/.*jobs*/)
+      .reply(403, {});
+
+    expect.assertions(1);
+
+    try {
+      await getJobs('bad key');
+    } catch (e) {
+      expect(e.message).toContain('Forbidden for request');
+    }
   });
 });
