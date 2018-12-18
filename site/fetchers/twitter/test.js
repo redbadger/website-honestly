@@ -1,7 +1,7 @@
 import nock from 'nock';
 
 /* eslint-disable camelcase */
-import { isValidTweet, getTweets } from './twitter';
+import { isValidTweet, getTweets } from './index';
 
 const generateTweet = () => {
   return {

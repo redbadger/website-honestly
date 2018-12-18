@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 import paramCase from 'param-case';
 import sanitizeHtml from 'sanitize-html';
 
-import handleErrors from './handle-errors';
+import handleErrors from '../util/handle-errors';
 
 const jobsUrl =
   'https://www.workable.com/spi/v3/accounts/redbadger/jobs?include_fields=description,benefits,requirements&state=published';

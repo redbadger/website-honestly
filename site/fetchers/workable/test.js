@@ -1,6 +1,6 @@
 import nock from 'nock';
 
-import { getJobs } from './workable';
+import { getJobs } from './index';
 
 describe('site/fetchers/workable', () => {
   it('throws if request has incorrect access credentials', async () => {

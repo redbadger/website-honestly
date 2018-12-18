@@ -1,8 +1,8 @@
 // @flow
 import fetch from 'node-fetch';
 
-import handleErrors from './handle-errors';
-import type { InstagramPost } from '../types/';
+import handleErrors from '../util/handle-errors';
+import type { InstagramPost } from '../../types/';
 
 type InstagramResponsePost = {
   created_time: string,

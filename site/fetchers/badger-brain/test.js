@@ -1,6 +1,6 @@
 import nock from 'nock';
 
-import { getData } from './badger-brain';
+import { getData } from './index';
 
 describe('site/fetchers/badger-brain', () => {
   beforeAll(() => {

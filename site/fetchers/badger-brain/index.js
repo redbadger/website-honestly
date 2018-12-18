@@ -1,6 +1,6 @@
 import marked from 'marked';
 import fetch from 'node-fetch';
-import handleErrors from './handle-errors';
+import handleErrors from '../util/handle-errors';
 
 const badgerBrainEndpoint = () => process.env.BADGER_BRAIN_HOST;
 

@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import nock from 'nock';
 
-import { isValidPost, getPosts } from './instagram';
+import { isValidPost, getPosts } from './index';
 
 const generatePost = () => {
   return {

@@ -1,8 +1,8 @@
 // @flow
 import fetch from 'node-fetch';
 
-import handleErrors from './handle-errors';
-import type { Tweet } from '../types/';
+import handleErrors from '../util/handle-errors';
+import type { Tweet } from '../../types/';
 
 type TwitterResponse = {
   id_str: string,
