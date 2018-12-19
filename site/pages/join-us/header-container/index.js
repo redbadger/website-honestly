@@ -2,15 +2,12 @@ import React from 'react';
 import styles from './style.css';
 
 const HeaderContainer = () => (
-  <div className={styles.headerContainer}>
-    <div className={styles.headings}>
-      <h1 className={styles.h1}>Join Us</h1>
-      <h2 className={styles.h2}>
-        <span>
-          Are we what you’re looking <span className={styles.noWrap}>for?*</span>
-        </span>
-      </h2>
-    </div>
+  <div className={styles.headings}>
+    <h1 className={styles.h1}>Join us</h1>
+    <p>
+      Our people are the best thing about Red Badger. Do you love finding and solving difficult
+      problems with great people? Do you love making a real impact? Join us and become a badger.
+    </p>
   </div>
 );
 

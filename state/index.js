@@ -4,14 +4,15 @@ import { getPosts } from '../site/fetchers/instagram';
 import { getBlogPosts } from '../site/fetchers/blog-posts';
 import { getData } from '../site/fetchers/badger-brain';
 
-const toLookupDict = (array, keyFn) =>
-  array.reduce(
+const toLookupDict = (array, keyFn) => {
+  return array.reduce(
     (obj, item, index) => ({
       ...obj,
       [keyFn(item)]: index,
     }),
     {},
   );
+};
 
 const collect = (sources, reducer) => Object.keys(sources).reduce(reducer, {});
 

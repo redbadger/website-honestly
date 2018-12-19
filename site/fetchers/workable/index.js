@@ -9,6 +9,17 @@ import handleErrors from '../util/handle-errors';
 const jobsUrl =
   'https://www.workable.com/spi/v3/accounts/redbadger/jobs?include_fields=description,benefits,requirements&state=published';
 
+const normalizeJobs = jobs =>
+  jobs.map(job => ({
+    id: job.id,
+    title: job.title,
+    department: job.department,
+    description: sanitizeHtml(job.description),
+    fullDescription: sanitizeHtml(job.description + job.requirements + job.benefits),
+    applicationUrl: job.application_url,
+    slug: paramCase(job.title),
+  }));
+
 export const getJobs = (key: string) =>
   fetch(jobsUrl, {
     headers: {
@@ -19,13 +30,5 @@ export const getJobs = (key: string) =>
   })
     .then(handleErrors)
     .then(response => response.json())
-    .then(response =>
-      response.jobs.map(job => ({
-        title: job.title,
-        description: sanitizeHtml(job.description),
-        fullDescription: sanitizeHtml(job.description + job.requirements + job.benefits),
-        applicationUrl: job.application_url,
-        slug: paramCase(job.title),
-      })),
-    )
+    .then(response => normalizeJobs(response.jobs))
     .catch(error => error);

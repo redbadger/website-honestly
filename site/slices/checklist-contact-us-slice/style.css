@@ -34,33 +34,33 @@
 }
 
 .item:nth-of-type(1) {
-  background-image: url(./images/checkbox-1.png);
-  background-image: image-set(url(./images/checkbox-1.png) 1x, url(./images/checkbox-1@2x.png) 2x, url(./images/checkbox-1@3x.png) 3x);
+  background-image: url(../shared-images/checkbox-1.png);
+  background-image: image-set(url(../shared-images/checkbox-1.png) 1x, url(../shared-images/checkbox-1@2x.png) 2x, url(../shared-images/checkbox-1@3x.png) 3x);
 }
 
 .item:nth-of-type(2) {
-  background-image: url(./images/checkbox-2.png);
-  background-image: image-set(url(./images/checkbox-2.png) 1x, url(./images/checkbox-2@2x.png) 2x, url(./images/checkbox-2@3x.png) 3x);
+  background-image: url(../shared-images/checkbox-2.png);
+  background-image: image-set(url(../shared-images/checkbox-2.png) 1x, url(../shared-images/checkbox-2@2x.png) 2x, url(../shared-images/checkbox-2@3x.png) 3x);
 }
 
 .item:nth-of-type(3) {
-  background-image: url(./images/checkbox-3.png);
-  background-image: image-set(url(./images/checkbox-3.png) 1x, url(./images/checkbox-3@2x.png) 2x, url(./images/checkbox-3@3x.png) 3x);
+  background-image: url(../shared-images/checkbox-3.png);
+  background-image: image-set(url(../shared-images/checkbox-3.png) 1x, url(../shared-images/checkbox-3@2x.png) 2x, url(../shared-images/checkbox-3@3x.png) 3x);
 }
 
 .item:nth-of-type(4) {
-  background-image: url(./images/checkbox-4.png);
-  background-image: image-set(url(./images/checkbox-4.png) 1x, url(./images/checkbox-4@2x.png) 2x, url(./images/checkbox-4@3x.png) 3x);
+  background-image: url(../shared-images/checkbox-4.png);
+  background-image: image-set(url(../shared-images/checkbox-4.png) 1x, url(../shared-images/checkbox-4@2x.png) 2x, url(../shared-images/checkbox-4@3x.png) 3x);
 }
 
 .item:nth-of-type(5) {
-  background-image: url(./images/checkbox-5.png);
-  background-image: image-set(url(./images/checkbox-5.png) 1x, url(./images/checkbox-5@2x.png) 2x, url(./images/checkbox-5@3x.png) 3x);
+  background-image: url(../shared-images/checkbox-5.png);
+  background-image: image-set(url(../shared-images/checkbox-5.png) 1x, url(../shared-images/checkbox-5@2x.png) 2x, url(../shared-images/checkbox-5@3x.png) 3x);
 }
 
 .item:nth-of-type(6) {
-  background-image: url(./images/checkbox-6.png);
-  background-image: image-set(url(./images/checkbox-6.png) 1x, url(./images/checkbox-6@2x.png) 2x, url(./images/checkbox-6@3x.png) 3x);
+  background-image: url(../shared-images/checkbox-6.png);
+  background-image: image-set(url(../shared-images/checkbox-6.png) 1x, url(../shared-images/checkbox-6@2x.png) 2x, url(../shared-images/checkbox-6@3x.png) 3x);
   margin-bottom: 0;
 }
 

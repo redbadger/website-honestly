@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import styles from './style.css';
 
 type HRProps = {
-  color: 'red' | 'grey',
+  color: 'red' | 'grey' | 'black',
   customClassName?: string,
 };
 
@@ -13,6 +13,7 @@ const HR = ({ customClassName = 'horizontal-line', color }: HRProps) => {
     [styles.hr]: true,
     [styles.red]: color === 'red',
     [styles.grey]: color === 'grey',
+    [styles.black]: color === 'black',
     [customClassName]: true,
   });
 

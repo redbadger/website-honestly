@@ -1,0 +1,188 @@
+@value badgerBlack, badgerRedOnWhite from "../../../../css/_colors.css";
+@value smallScreen from "../../../../css/_sizes.css";
+
+.jobsListTimelineSection {
+  margin-bottom: 50px;
+  margin: auto;
+  padding: 25px;
+}
+
+.jobsListTimelineSection:last-child {
+  margin-bottom: 0;
+}
+
+.jobsListTimelineSection h3 {
+  margin-bottom: 0;
+}
+
+.jobsListTimelineSection h3.jobTitle {
+  text-align: left;
+}
+
+.jobsTimelineTitle {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  font-family: 'Sentinel A', 'Sentinel B', serif;
+}
+
+.jobsList {
+  font-size: 1em;
+  margin-top: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
+.jobItem {
+  position: relative;
+  list-style-type: none;
+}
+
+/* Disable the final small hr in each section */
+.jobItem:last-child hr {
+  display: none;
+}
+
+.jobTitleLink {
+  color: badgerBlack;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.jobTitle {
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  font-size: 30px;
+    line-height: 1.2em;
+  display: block;
+  margin-bottom: 0;
+  width: calc(100% - 90px);
+}
+
+.jobSectionHeader {
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  color: badgerRedOnWhite;
+  text-transform: uppercase;
+  flex: 0 0 120px;
+  margin-bottom: 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1.25em;
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.jobEntryHeader {
+  position: relative;
+}
+
+.jobSectionContainer {
+  display: block;
+}
+
+.jobSectionContainer:last-child {
+  margin-bottom: 60px;
+}
+
+.jobTitle span {
+  display: inline;
+}
+
+.jobTitleLink:hover,
+.jobTitleLink:active,
+.jobTitleLink:focus {
+  border-bottom: 2px solid badgerRedOnWhite;
+}
+
+.jobDescription {
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  width: 100%;
+  margin-top: 10px;
+  line-height: normal;
+}
+
+.mobileHorizontalLine {
+  padding-right: 20px;
+}
+
+.jobEntry__more {
+  cursor: pointer;
+  display: block;
+  height: 21px;
+  width: 21px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background: none;
+  border: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.jobEntry__more:focus {
+  outline: 0;
+}
+
+.jobEntry__arrow {
+  border: solid badgerBlack;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+}
+
+.jobEntry__arrowDown {
+  border: solid badgerBlack;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(225deg);
+}
+
+.jobDescription__visible {
+  display: block;
+}
+
+.jobDescription__hidden {
+  display: none;
+}
+
+.jobsTimelineIntro {
+  padding: 0;
+}
+
+@media smallScreen {
+
+  .jobsTimelineTitle {
+    font-size: 48px;
+  }
+
+  .jobsList {
+    padding: 0;
+  }
+
+  .jobSectionContainer {
+    display: flex;
+    position: relative;
+  }
+
+  .jobEntryHeaderContainer {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: calc(100% - 580px);
+  }
+
+  .mobileHorizontalLine {
+    /* !important used to overwrite default HR */
+    /* behaviour for sub-dividers */
+    margin: 1.5em 0 1.5em 25px !important;
+  }
+
+  .jobsTimelineIntro {
+    padding-left: 145px;
+    /* 725px value comes from 580 (desired with of text) + 145 (width of left hand padding) */
+    padding-right: calc(100% - 725px);
+  }
+}

@@ -26,10 +26,7 @@
 }
 
 .jobs p {
+  /* can't compose in this selector */
+  font-family: 'ProximaNova-Light', sans-serif;
   line-height: 1.35;
-}
-
-.jobs p:first-of-type {
-  /* Can't compose in this selector */
-  font-family: 'ProximaNova-Bold', sans-serif;
 }

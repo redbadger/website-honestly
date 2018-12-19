@@ -1,0 +1,117 @@
+@value badgerWhite, badgerBlack from '../../../../css/_colors.css';
+
+.lightBoxGallery {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+}
+
+.lightBoxGallery button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-color: badgerBlack;
+  z-index: 20;
+  opacity: 0.9;
+}
+
+.galleryContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 580px;
+  padding: 0 36px;
+}
+
+.closeButton {
+  position: absolute;
+  right: 38px;
+  top: -30px;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  z-index: 21;
+}
+
+.closeButton:hover {
+  opacity: 0.6;
+}
+
+.closeButton:before,
+.closeButton:after {
+  position: absolute;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: badgerWhite;
+}
+
+.closeButton:before {
+  transform: rotate(45deg);
+}
+
+.closeButton:after {
+  transform: rotate(-45deg);
+}
+
+.focusedImage {
+  width: 100%;
+}
+
+.previousImage {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  max-height: 300px;
+}
+
+.navigationButton {
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  position: absolute;
+  background: none;
+  border: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 1;
+}
+
+.navigationButton__back {
+  margin-left: 10px;
+  left: 0;
+}
+
+.navigationButton__next {
+  margin-right: 10px;
+  right: 0;
+}
+
+.navigationButton:focus {
+  outline: 0;
+}
+
+.navigationButton__arrow {
+  border: solid badgerWhite;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.navigationButton__arrow__back {
+  transform: rotate(135deg);
+}
+
+.navigationButton__arrow__next {
+  transform: rotate(-45deg);
+}

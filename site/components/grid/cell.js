@@ -8,14 +8,22 @@ type CellProps = {
   children?: React.Node,
   hideOn?: 'smallestScreen' | 'smallScreen' | 'mediumScreen' | 'dont',
   size: number,
+  cellCenter?: boolean,
 };
 
-const Cell = ({ breakOn = 'smallestScreen', children, hideOn = 'dont', size }: CellProps) => {
+const Cell = ({
+  breakOn = 'smallestScreen',
+  children,
+  hideOn = 'dont',
+  size,
+  cellCenter,
+}: CellProps) => {
   const cellClassNames = classNames({
     [styles[`responsive-cell-${breakOn}`]]: true,
     [styles.cell]: true,
     [styles[`size${size}of12`]]: !!size,
     [styles[`hideOn${hideOn}`]]: true,
+    [styles.cellCenter]: cellCenter,
   });
 
   return <div className={cellClassNames}>{children}</div>;
