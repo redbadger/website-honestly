@@ -3,7 +3,7 @@ const { baseServiceConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 
 const lambdaConfig = webpackMerge(baseServiceConfig, {
-  stats: "errors-only",
+  stats: 'errors-only',
   entry: {
     index: './services/index.js',
   },

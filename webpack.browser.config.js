@@ -5,7 +5,7 @@ const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 
 const clientConfig = webpackMerge(baseWebConfig, {
-  stats: "errors-only",
+  stats: 'errors-only',
   entry: {
     index: './client/index.js',
   },

@@ -8,7 +8,7 @@ const publicPath = `/${process.env.URL_BASENAME || ''}`;
 const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.txt';
 
 const baseConfig = {
-  stats: "minimal",
+  stats: 'minimal',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
