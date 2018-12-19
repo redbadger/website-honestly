@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import { getJobs } from '../site/fetchers/workable';
 import { getTweets } from '../site/fetchers/twitter';
 import { getPosts } from '../site/fetchers/instagram';
@@ -16,11 +15,11 @@ const toLookupDict = (array, keyFn) =>
 
 const getSiteState = () =>
   Promise.all([
-    getJobs(fetch, process.env.WORKABLE_API_KEY),
+    getJobs(process.env.WORKABLE_API_KEY),
     getBlogPosts(['5834972778']), // tried-and-tested
     getBlogPosts(['5834972328']), // growing-trends
-    getTweets(fetch, process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
-    getPosts(fetch, process.env.INSTAGRAM_ACCESS_TOKEN),
+    getTweets(process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
+    getPosts(process.env.INSTAGRAM_ACCESS_TOKEN),
     getData(),
   ]).then(
     ([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, instagramPosts, data]) => ({

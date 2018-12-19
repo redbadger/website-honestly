@@ -1,6 +1,8 @@
 // @flow
-import handleErrors from './handle-errors';
-import type { Tweet } from '../types/';
+import fetch from 'node-fetch';
+
+import handleErrors from '../util/handle-errors';
+import type { Tweet } from '../../types/';
 
 type TwitterResponse = {
   id_str: string,
@@ -78,7 +80,7 @@ export const isValidTweet = (tweet: TwitterResponse) => {
 const baseUrl = 'https://api.twitter.com';
 const base64 = str => Buffer.from(str).toString('base64');
 
-const getBearerToken = (fetch, key, secret) =>
+const getBearerToken = (key, secret) =>
   fetch(baseUrl + '/oauth2/token', {
     method: 'POST',
     headers: {
@@ -104,16 +106,17 @@ const normaliseTweet = (tweet: TwitterResponse) => {
 };
 
 export const getTweets = (
-  fetch: any,
   key: string,
   secret: string,
   username: string = 'redbadgerteam',
 ): Promise<Array<Tweet>> => {
   if (!key) throw new Error('Missing Twitter key');
   if (!secret) throw new Error('Missing Twitter secret');
+
   const count = 5;
   const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${username}&trim_user=true`;
-  return getBearerToken(fetch, key, secret)
+
+  return getBearerToken(key, secret)
     .then(token =>
       fetch(apiQuery, {
         headers: {
