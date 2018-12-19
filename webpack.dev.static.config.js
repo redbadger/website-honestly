@@ -18,6 +18,7 @@ const devStaticConfig = webpackMerge(baseServiceConfig, {
 });
 
 const clientConfig = webpackMerge(baseWebConfig, {
+  stats: 'errors-only',
   entry: {
     index: './client/index.js',
   },

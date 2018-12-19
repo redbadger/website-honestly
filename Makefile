@@ -103,6 +103,11 @@ lint: ## Lint Javascript files
 	FORCE_COLOR=1 $(ESLINT) . --ext .js --ext .jsx --ignore-path .eslintignore --cache
 	@$(PRINT_OK)
 
+services-info: ## Check serverless installed correctly and detects the correct service
+	$(LOAD_ENV) \
+	&& $(SERVERLESS) info
+	@$(PRINT_OK)
+
 services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 	$(LOAD_ENV) \
 	&& $(SERVERLESS) deploy
@@ -221,6 +226,7 @@ scan-secrets: scanner ## Scan for secrets
 	clear \
 	build \
 	badger \
+	services-info \
 	services-deploy \
 	services-invoke \
 	fetch \

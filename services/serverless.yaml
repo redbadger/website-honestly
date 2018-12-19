@@ -1,7 +1,7 @@
-service: "website-honestly-${env:ENVIRONMENT_NAME}"
+service: 'website-honestly-${env:ENVIRONMENT_NAME}'
 
 custom:
-  bucket_name: "${env:BUCKET_NAME}"
+  bucket_name: '${env:BUCKET_NAME}'
 
 package:
   artifact: ../dist/services.zip
@@ -12,13 +12,13 @@ provider:
   region: eu-west-1
   runtime: nodejs6.10
   iamRoleStatements:
-    - Effect: "Allow"
+    - Effect: 'Allow'
       Action:
-        - "s3:ListBucket"
-        - "s3:PutObject"
+        - 's3:ListBucket'
+        - 's3:PutObject'
       Resource:
-        - "arn:aws:s3:::${self:custom.bucket_name}"
-        - "arn:aws:s3:::${self:custom.bucket_name}/*"
+        - 'arn:aws:s3:::${self:custom.bucket_name}'
+        - 'arn:aws:s3:::${self:custom.bucket_name}/*'
 
 functions:
   publish:
@@ -54,45 +54,44 @@ functions:
           method: post
           cors: true
 
-
 resources:
   Resources:
     SiteContentBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: "${self:custom.bucket_name}"
+        BucketName: '${self:custom.bucket_name}'
         AccessControl: PublicRead
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: 404/index.html
 
     SiteContentBucketPolicy:
-      Type: "AWS::S3::BucketPolicy"
-      DependsOn: "SiteContentBucket"
+      Type: 'AWS::S3::BucketPolicy'
+      DependsOn: 'SiteContentBucket'
       Properties:
-        Bucket: "${self:custom.bucket_name}"
+        Bucket: '${self:custom.bucket_name}'
         PolicyDocument:
           Statement:
             - Effect: Allow
-              Principal: "*"
+              Principal: '*'
               Action:
-                - "s3:GetObject"
+                - 's3:GetObject'
               Resource:
-                - "arn:aws:s3:::${self:custom.bucket_name}/*"
+                - 'arn:aws:s3:::${self:custom.bucket_name}/*'
 
     ErrorSNSTopic:
       Type: AWS::SNS::Topic
       Properties:
         Subscription:
-          - Endpoint: "${env:LAMBDA_ERROR_REPORT_EMAIL}"
+          - Endpoint: '${env:LAMBDA_ERROR_REPORT_EMAIL}'
             Protocol: email
 
     SignUpLambdaErrorAlarm:
       Type: AWS::CloudWatch::Alarm
       Properties:
         AlarmActions:
-          - Ref: "ErrorSNSTopic"
-        AlarmDescription: "An error has been thrown by the lambda function responsible for signing people up to our mailing list"
+          - Ref: 'ErrorSNSTopic'
+        AlarmDescription: 'An error has been thrown by the lambda function responsible for signing people up to our mailing list'
         AlarmName: WebsiteHonestlySignUpLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
         ComparisonOperator: GreaterThanOrEqualToThreshold
         Dimensions:

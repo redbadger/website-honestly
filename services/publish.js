@@ -18,6 +18,11 @@ export default function doPublish(_, __, cb) {
     .then(removeArchived(bucketName))
     .then(compileSite)
     .then(pages => Promise.all(pages.map(uploadPage)))
-    .then(data => cb(null, data))
+    .then(() =>
+      cb(null, {
+        statusCode: 200,
+        body: JSON.stringify({ results: 'Publish successful' }),
+      }),
+    )
     .catch(error => cb(error));
 }

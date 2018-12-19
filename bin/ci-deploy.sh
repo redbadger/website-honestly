@@ -69,7 +69,7 @@ deployMaster() {
   pretty_success "Services Deployed!"
 
   pretty_block "Invoking Publish Service on AWS Lambda"
-  make publish-service-invoke
+  make services-invoke-publish
   pretty_success "Publish Invoked!"
 
   pretty_block "Registering release with GitHub"
