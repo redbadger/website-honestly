@@ -7,12 +7,12 @@
 }
 
 .screenReaderText {
-  composes: visuallyHidden from "../../css/_accessibility.css";
+  composes: visuallyHidden from '../../css/_accessibility.css';
 }
 
 .heading {
-  composes: fontM from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontM from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
   max-width: 690px;
   margin: 0px auto;
   color: badgerWhite;
@@ -21,7 +21,7 @@
 }
 
 .caseStudyContainer {
-  composes: dividerBlack from "../../css/_divider.css";
+  composes: dividerBlack from '../../css/_divider.css';
   background-color: badgerBlack;
   padding: 0px 5% 12px 5%;
 }
@@ -50,10 +50,18 @@
 }
 
 /* Rearrange stats comoponents */
-.figureLink:nth-child(1) { order: 0; }
-.figureLink:nth-child(2) { order: 1; }
-.figureLink:nth-child(3) { order: 3; }
-.figureLink:nth-child(4) { order: 2; }
+.figureLink:nth-child(1) {
+  order: 0;
+}
+.figureLink:nth-child(2) {
+  order: 1;
+}
+.figureLink:nth-child(3) {
+  order: 3;
+}
+.figureLink:nth-child(4) {
+  order: 2;
+}
 
 .statsContainer {
   display: block;
@@ -75,8 +83,8 @@
 }
 
 .caseText {
-  composes: fontM from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontM from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
   color: badgerWhite;
   text-align: center;
   padding: 0 30px 20px;
@@ -88,7 +96,7 @@
 .countdownText {
   composes: caseText;
   padding: 0;
-  font-size: 99px;
+  font-size: 99px !important;
 }
 
 .countdownCaseText {
@@ -110,8 +118,8 @@
 }
 
 .centerText {
-  composes: fontXL from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontXL from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
   color: badgerWhite;
   text-align: center;
   max-width: 350px;
@@ -121,7 +129,7 @@
 }
 
 .companyText {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
   color: badgerWhite;
   font-size: 18px;
   margin: 30px 0 10px 0;
@@ -134,12 +142,11 @@
 }
 
 .button {
-  composes: primaryButton from "../../css/_links.css";
+  composes: primaryButton from '../../css/_links.css';
   background-color: badgerRed;
 }
 
-
-@media mediumScreen  {
+@media mediumScreen {
   .caseStudyContainer {
     padding: 0;
   }
@@ -156,7 +163,7 @@
   }
 
   .centerText {
-    font-size: 40px;
+    font-size: 40px !important;
     margin: 20px;
   }
 
@@ -165,7 +172,7 @@
   }
 
   .countdownText {
-    font-size: 113px;
+    font-size: 113px !important;
     padding: 0 15px;
     margin-top: -40px;
   }
@@ -181,15 +188,23 @@
     padding: 60px 10px;
   }
 
-  .figureLink:nth-child(odd){
+  .figureLink:nth-child(odd) {
     border-right: 1px solid linesOnBlack;
   }
 
   /* Rearrange stats comoponents */
-  .figureLink:nth-child(1) { order: 0; }
-  .figureLink:nth-child(2) { order: 1; }
-  .figureLink:nth-child(3) { order: 2; }
-  .figureLink:nth-child(4) { order: 3; }
+  .figureLink:nth-child(1) {
+    order: 0;
+  }
+  .figureLink:nth-child(2) {
+    order: 1;
+  }
+  .figureLink:nth-child(3) {
+    order: 2;
+  }
+  .figureLink:nth-child(4) {
+    order: 3;
+  }
 }
 
 @media largeScreen {
@@ -210,16 +225,16 @@
   }
 
   .countdownText {
-    font-size: 150px;
+    font-size: 150px !important;
   }
 
   .countdownCaseText {
-    font-size: 35px;
+    font-size: 35px !important;
     max-width: 440px;
   }
 
   .centerText {
-    font-size: 60px;
+    font-size: 60px !important;
     max-width: 480px;
   }
 

@@ -1,6 +1,0 @@
-@value red from "../../css/_colors.css";
-
-.hello {
-  composes: fontXL from "../../css/typography/_fonts.css";
-  color: red;
-}
