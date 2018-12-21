@@ -77,6 +77,10 @@ flow: ## Run the type checker
 	yarn flow
 	@$(PRINT_OK)
 
+flow-ci: ## Run the type checker on CI: see https://github.com/facebook/flow/issues/3649
+	flow
+	@$(PRINT_OK)
+
 prettier: ## Run the prettifier
 	$(PRETTIER)
 	@$(PRINT_OK)
