@@ -56,7 +56,7 @@ jobs:
 
       - run:
           name: Validate types
-          command: make flow-ci
+          command: make flow
 
   test:
     docker:
