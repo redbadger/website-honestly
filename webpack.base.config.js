@@ -1,14 +1,19 @@
 const path = require('path');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge').smart;
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.txt';
 
+const devMode = process.env.NODE_ENV !== 'production';
+
 const baseConfig = {
   stats: 'minimal',
+
+  mode: 'development',
 
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -16,25 +21,24 @@ const baseConfig = {
     chunkFilename: '[name].js',
     publicPath,
   },
+
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                modules: true,
-                sourceMap: true,
-                importLoaders: 1,
-                localIdentName: '[name]__[local]___[hash:base64:5]',
-              },
+        use: [
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              sourceMap: true,
+              importLoaders: 1,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
             },
-            'postcss-loader',
-          ],
-        }),
+          },
+          'postcss-loader',
+        ],
       },
       {
         test: /\.js$/,
@@ -76,15 +80,16 @@ const baseConfig = {
       },
     ],
   },
+
   devtool: 'source-map',
+
   plugins: [
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.EnvironmentPlugin(Object.keys(process.env)),
-    new ExtractTextPlugin({
-      filename: 'assets-honestly/styles-[contenthash:base64:5].css',
-      allChunks: true,
-      ignoreOrder: true,
+    new MiniCssExtractPlugin({
+      filename: 'assets-honestly/styles-[contenthash].css',
     }),
+    new OptimizeCSSAssetsPlugin(),
   ],
 };
 
