@@ -98,19 +98,6 @@ jobs:
           name: Deploy branch
           command: ./bin/ci-deploy.sh create-commit-site
 
-  publish_storybook:
-    docker:
-      - image: redbadger/website-honestly-deploy:10
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
-
-      - run:
-          name: Publish storybook
-          command: make publish-storybook
-
   deploy_staging:
     docker:
       - image: redbadger/website-honestly-deploy:10
@@ -171,11 +158,6 @@ workflows:
           filters:
             branches:
               only: /^(?!.*master).*$/ # all branches except master
-
-      - publish_storybook:
-          filters:
-            branches:
-              only: master
 
       - deploy_staging:
           requires:
