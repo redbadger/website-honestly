@@ -10,7 +10,6 @@ ESLINT=yarn eslint
 SERVERLESS=cd services && ../node_modules/.bin/sls
 WEBPACK_DEV_SERVER=yarn webpack-dev-server
 NPM_CHECK_UPDATES=yarn ncu
-DEPLOY_STORYBOOK=yarn deploy-storybook
 
 FORCE_COLOURS=script -q /dev/null
 
@@ -116,10 +115,6 @@ services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 services-invoke-publish:
 	$(LOAD_ENV) \
 	&& $(SERVERLESS) invoke -f publish
-	@$(PRINT_OK)
-
-publish-storybook:
-	$(DEPLOY_STORYBOOK) --ci --host-token-env-variable=GITHUB_TOKEN
 	@$(PRINT_OK)
 
 publish-service-invoke: ## Invoke the publish service

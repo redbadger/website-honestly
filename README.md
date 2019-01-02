@@ -140,10 +140,6 @@ We use AWS CloudWatch for monitoring our staging and prod lambdas; all alarms sh
 Any static assets committed to the repo should be compressed first. There is a
 `make compress-assets` command that will do this for common image formats.
 
-## Storybook
-
-We use [storybook](https://storybook.js.org/) to develop new components. To run it locally, use `yarn storybook`. This will start a live-reloading server. Checkout [writing stories](https://storybook.js.org/basics/writing-stories/) on how to get started. Added stories will get deployed to a public site ([storybook.red-badger.com](https://storybook.red-badger.com)) on merge to master. This is hosted on github pages.
-
 ## Blog
 
 The blog `/blog` is it's own Squarespace site and needs to updated separately. The template can be found in [blog-squarespace-template](https://github.com/redbadger/blog-squarespace-template).
