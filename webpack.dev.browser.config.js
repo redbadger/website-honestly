@@ -1,3 +1,8 @@
+/*
+ * Dev-Browser
+ * Used for hot reloadin' server.
+ */
+
 const webpack = require('webpack');
 const { baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;

@@ -1,3 +1,8 @@
+/*
+ * Browser
+ * Outputs minified files with digests. Used for production build.
+ */
+
 /* eslint-disable camelcase */
 const { baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;

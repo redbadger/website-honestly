@@ -1,3 +1,9 @@
+/*
+ * Base
+ * Two base configs are exported here - one for the site and the other
+ * for services (lambdas).
+ */
+
 const path = require('path');
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge').smart;

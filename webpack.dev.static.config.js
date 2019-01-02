@@ -1,3 +1,8 @@
+/*
+ * Dev-Static
+ * Build the files needed to run the site locally (ie. without using the publish lambda).
+ */
+
 /* eslint-disable camelcase */
 const path = require('path');
 const { baseServiceConfig, baseWebConfig } = require('./webpack.base.config');
