@@ -40,7 +40,7 @@ class CaseStudyCamdenMarket extends React.Component<*, CamdenState> {
 
   componentDidMount() {
     if (!this.state.Shapes) {
-      System.import(/* webpackChunkName: "camden-market-shapes" */ './shapes/index').then(Shapes =>
+      import(/* webpackChunkName: "camden-market-shapes" */ './shapes/index').then(Shapes =>
         this.setState({ Shapes: Shapes.default }),
       );
     }

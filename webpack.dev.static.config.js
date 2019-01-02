@@ -1,9 +1,14 @@
+/*
+ * Dev-Static
+ * Build the files needed to run the site locally (ie. without using the publish lambda).
+ */
+
 /* eslint-disable camelcase */
 const path = require('path');
-const webpack = require('webpack');
 const { baseServiceConfig, baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const devStaticConfig = webpackMerge(baseServiceConfig, {
   entry: {
@@ -19,24 +24,40 @@ const devStaticConfig = webpackMerge(baseServiceConfig, {
 
 const clientConfig = webpackMerge(baseWebConfig, {
   stats: 'errors-only',
+
   entry: {
     index: './client/index.js',
   },
+
   output: {
     filename: 'assets-honestly/[name]-[hash:5].js',
     chunkFilename: 'assets-honestly/[name]-[chunkhash:5].js',
   },
+
   target: 'web',
+
   externals: ['./client-digest'],
+
+  optimization: {
+    minimizer: [
+      new UglifyJSPlugin({
+        uglifyOptions: {
+          ecma: 6,
+          output: {
+            comments: false,
+          },
+          compress: {
+            unused: true,
+            dead_code: true,
+            warnings: false,
+            drop_debugger: true,
+          },
+        },
+      }),
+    ],
+  },
+
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        unused: true,
-        dead_code: true,
-        warnings: false,
-        drop_debugger: true,
-      },
-    }),
     new AssetsPlugin({
       filename: 'client-digest.json',
       path: './dist/dev-static',

@@ -1,6 +1,9 @@
 {
   "presets": ["flow", "react", "env", "stage-1"],
-  "plugins": [
-    "array-includes"
-  ]
+  "plugins": ["array-includes"],
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"]
+    }
+  }
 }

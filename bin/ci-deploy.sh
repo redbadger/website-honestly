@@ -17,7 +17,7 @@ createCommitSite() {
   make clean
   make fetch
   make generate-sitemap
-  make dev-commit
+  make dev-commit #Note : we don't invoke lambdas for commitSites so we need to build the files "manually"
   pretty_success "Build complete!"
 
   pretty_block "Setting Version"
