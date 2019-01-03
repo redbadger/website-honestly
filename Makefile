@@ -114,7 +114,7 @@ services-deploy: dist/services.zip ## Upload the publish service to AWS Lambda
 
 services-invoke-publish:
 	$(LOAD_ENV) \
-	&& $(SERVERLESS) invoke -f publish --verbose
+	&& $(SERVERLESS) invoke -f publish
 	@$(PRINT_OK)
 
 publish-service-invoke: ## Invoke the publish service

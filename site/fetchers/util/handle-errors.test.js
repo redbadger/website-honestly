@@ -8,6 +8,6 @@ describe('site/fetchers/handle-errors', () => {
 
   it('throws when the response contains an error', () => {
     const badRequest = () => handleErrors({ ok: false });
-    expect(() => badRequest()).toThrowError(/for request/);
+    expect(() => badRequest()).toThrowError();
   });
 });

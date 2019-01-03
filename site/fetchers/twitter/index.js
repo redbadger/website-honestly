@@ -28,15 +28,6 @@ type TwitterResponse = {
   },
 };
 
-type TwitterResponseError = {
-  errors: [
-    {
-      code: number,
-      message: string,
-    },
-  ],
-};
-
 export const isValidTweet = (tweet: TwitterResponse) => {
   try {
     if (!tweet) {
@@ -93,7 +84,6 @@ const getBearerToken = (key, secret) =>
     .then(handleErrors)
     .then(response => response.json())
     .then(response => response.access_token);
-
 /** Flattern the response */
 const normaliseTweet = (tweet: TwitterResponse) => {
   return {
@@ -126,12 +116,8 @@ export const getTweets = (
         timeout: 10000,
       }),
     )
+    .then(handleErrors)
     .then(response => response.json())
-    .then((data: Array<TwitterResponse> | TwitterResponseError) => {
-      if (data && !data.errors) {
-        return data.filter(isValidTweet).map(normaliseTweet);
-      }
-      const emptyResponse: TwitterResponse[] = [];
-      return emptyResponse;
-    });
+    .then((data: Array<TwitterResponse>) => data.filter(isValidTweet).map(normaliseTweet))
+    .catch(error => error);
 };

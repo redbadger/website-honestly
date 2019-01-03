@@ -84,7 +84,7 @@ export const normalisePost = (post: InstagramResponsePost) => {
     },
     comments: post.comments.count,
     likes: post.likes.count,
-    // Cnovert unix timestamp to date
+    // Convert unix timestamp to date
     created: new Date(parseInt(post.created_time, 10) * 1000),
   };
 };
@@ -103,14 +103,11 @@ export const getPosts = (accessToken: string): Promise<Array<InstagramPost>> => 
   })
     .then(handleErrors)
     .then(response => response.json())
-    .then((response: InstagramResponse) => {
-      if (response.data) {
-        return response.data
-          .filter(isValidPost)
-          .map(normalisePost)
-          .slice(0, 5);
-      }
-      return [];
-      // log response.meta.error_type/error_message to badgerbot
-    });
+    .then((response: InstagramResponse) =>
+      response.data
+        .filter(isValidPost)
+        .map(normalisePost)
+        .slice(0, 5),
+    )
+    .catch(error => error);
 };

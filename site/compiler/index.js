@@ -119,7 +119,7 @@ export function compileRoutes(state) {
 
   const routeFiles = expandRoutes(state.data, stateNavigator).map(compile);
 
-  return { ...state, data: [stateFile, ...routeFiles]};
+  return { ...state, data: [stateFile, ...routeFiles] };
 }
 
 export function compileSite(state) {

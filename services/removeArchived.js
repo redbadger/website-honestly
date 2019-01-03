@@ -57,7 +57,11 @@ function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
 export default function removeArchived(bucketName) {
   return state => {
     return Promise.all([
-      removeArchivedWithPrefix(bucketName, state.data.badgers.map(badger => badger.slug), peoplePrefix),
+      removeArchivedWithPrefix(
+        bucketName,
+        state.data.badgers.map(badger => badger.slug),
+        peoplePrefix,
+      ),
       removeArchivedWithPrefix(bucketName, state.data.jobs.map(job => job.slug), jobsPrefix),
     ])
       .catch(err => console.error('Error when deleting archived pages:', err))
