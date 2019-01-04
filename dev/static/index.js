@@ -35,8 +35,11 @@ function writePage({ path, body }) {
   );
 }
 
-function writePages(pages) {
-  return Promise.all(pages.map(page => makeDirectory(page).then(writePage)));
+function writePages(state) {
+  return Promise.all(state.data.map(page => makeDirectory(page).then(writePage))).then(data => ({
+    ...state,
+    data,
+  }));
 }
 
 getSiteState()

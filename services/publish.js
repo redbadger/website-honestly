@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import 'source-map-support/register';
 import getSiteState from '../state';
 import { compileSite } from '../site/compiler';
 import { makeUploader } from './s3';
@@ -17,11 +18,11 @@ export default function doPublish(_, __, cb) {
   getSiteState()
     .then(removeArchived(bucketName))
     .then(compileSite)
-    .then(pages => Promise.all(pages.map(uploadPage)))
-    .then(() =>
+    .then(state => Promise.all(state.data.map(uploadPage)).then(data => ({ ...state, data })))
+    .then(state =>
       cb(null, {
         statusCode: 200,
-        body: JSON.stringify({ results: 'Publish successful' }),
+        body: JSON.stringify({ results: 'Publish successful', fetchErrors: state.fetchErrors }),
       }),
     )
     .catch(error => cb(error));

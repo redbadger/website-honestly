@@ -16,13 +16,14 @@ console.log('Fetching routes...');
 function generate(triesLeft = 5) {
   getSiteState()
     .then(state => {
-      return formatRoutes(getSiteRoutes(state, routeDefinitions));
+      const data = formatRoutes(getSiteRoutes(state.data, routeDefinitions));
+      return { ...state, data };
     })
-    .then(siteXML => {
+    .then(state => {
       console.log('Routes were fetched!');
       const xml = `<?xml version="1.0" encoding="UTF-8"?>
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      ${siteXML}
+      ${state.data}
       </urlset>`;
 
       console.log('Creating sitemap file...');

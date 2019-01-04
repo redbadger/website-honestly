@@ -96,18 +96,13 @@ describe('site/fetchers/instagram', () => {
   });
 
   describe('fetching posts', () => {
-    it('throws if request has incorrect access credentials', async () => {
+    it('returns error if request has incorrect access credentials', async () => {
       nock('https://api.instagram.com')
         .get(/.*media*/)
         .reply(403, {});
 
-      expect.assertions(1);
-
-      try {
-        await getPosts('bad token');
-      } catch (e) {
-        expect(e.message).toContain('Forbidden for request');
-      }
+      const error = await getPosts('bad token');
+      expect(error.message).toContain('Forbidden');
     });
 
     it('throws if token is missing', () => {

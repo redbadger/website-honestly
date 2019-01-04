@@ -91,18 +91,13 @@ describe('site/fetchers/twitter', () => {
   });
 
   describe('fetching tweets', () => {
-    it('throws if request has incorrect access credentials', async () => {
+    it('returns error if request has incorrect access credentials', async () => {
       nock('https://api.twitter.com')
         .post(/.*oauth*/)
         .reply(403, {});
 
-      expect.assertions(1);
-
-      try {
-        await getTweets('bad key', 'bad secret');
-      } catch (e) {
-        expect(e.message).toContain('Forbidden for request');
-      }
+      const error = await getTweets('bad key', 'bad secret');
+      expect(error.message).toContain('Forbidden');
     });
 
     it('throws if key is missing', () => {

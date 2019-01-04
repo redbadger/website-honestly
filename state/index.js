@@ -13,6 +13,19 @@ const toLookupDict = (array, keyFn) =>
     {},
   );
 
+const collect = (sources, reducer) => Object.keys(sources).reduce(reducer, {});
+
+const collectErrors = sources =>
+  collect(sources, (acc, key) =>
+    sources[key] instanceof Error ? { ...acc, [key]: sources[key].message } : acc,
+  );
+
+const collectSuccesses = sources =>
+  collect(sources, (acc, key) => ({
+    ...acc,
+    [key]: sources[key] instanceof Error ? [] : sources[key],
+  }));
+
 const getSiteState = () =>
   Promise.all([
     getJobs(process.env.WORKABLE_API_KEY),
@@ -22,21 +35,27 @@ const getSiteState = () =>
     getPosts(process.env.INSTAGRAM_ACCESS_TOKEN),
     getData(),
   ]).then(
-    ([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, instagramPosts, data]) => ({
-      jobs,
-      triedAndTestedBlogPosts,
-      growingTrendsBlogPosts,
-      tweets,
-      instagramPosts,
-      jobLookup: toLookupDict(jobs, j => j.slug),
-      events: data.events,
-      eventsBanner: data.eventsBanner[0],
-      eventLookup: toLookupDict(data.events, e => e.slug),
-      badgers: data.badgers,
-      badgerLookup: toLookupDict(data.badgers, b => b.slug),
-      categories: data.categories,
-      qAndAs: data.qAndAs,
-    }),
+    ([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, instagramPosts, data]) => {
+      const fetchErrors = collectErrors({ jobs, tweets, instagramPosts });
+      const fetchSuccess = collectSuccesses({ jobs, tweets, instagramPosts });
+
+      return {
+        data: {
+          ...fetchSuccess,
+          triedAndTestedBlogPosts,
+          growingTrendsBlogPosts,
+          jobLookup: toLookupDict(fetchSuccess.jobs, j => j.slug),
+          events: data.events,
+          eventsBanner: data.eventsBanner[0],
+          eventLookup: toLookupDict(data.events, e => e.slug),
+          badgers: data.badgers,
+          badgerLookup: toLookupDict(data.badgers, b => b.slug),
+          categories: data.categories,
+          qAndAs: data.qAndAs,
+        },
+        fetchErrors,
+      };
+    },
   );
 
 export default getSiteState;

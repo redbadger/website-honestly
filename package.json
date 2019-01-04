@@ -97,6 +97,7 @@
     "reset-css": "^2.2.0",
     "sanitize-html": "^1.16.3",
     "serverless": "^1.35.0",
+    "source-map-support": "^0.5.9",
     "style-loader": "^0.23.1",
     "svg-inline-loader": "^0.8.0",
     "svg-inline-react": "^3.1.0",

@@ -27,4 +27,5 @@ export const getJobs = (key: string) =>
         applicationUrl: job.application_url,
         slug: paramCase(job.title),
       })),
-    );
+    )
+    .catch(error => error);
