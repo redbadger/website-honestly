@@ -76,4 +76,48 @@ describe('state', () => {
       fetchErrors: {},
     });
   });
+
+  it('returns fetchErros', async () => {
+    nock('https://api.twitter.com')
+      .post(/.*oauth*/)
+      .reply(403, {});
+
+    nock('https://www.workable.com')
+      .get(/.*jobs*/)
+      .reply(500, { jobs: [] });
+
+    nock('https://api.instagram.com')
+      .get(/.*media*/)
+      .reply(500, { data: [] });
+
+    nock('https://api.hubapi.com/')
+      .get(/.*blog-posts*/)
+      .times(2)
+      .query(true)
+      .reply(200, {});
+
+    nock('https://brain-staging.red-badger.com')
+      .post(/.*graphql*/)
+      .reply(200, {
+        data: {
+          allEvents: [],
+          allBadgers: [],
+          allQnA: [],
+          eventsBanner: [],
+        },
+      });
+
+    const {
+      data: { jobs, tweets, instagramPosts },
+      fetchErrors,
+    } = await getSiteState();
+
+    expect(fetchErrors).toEqual({
+      instagramPosts: 'Internal Server Error',
+      jobs: 'Internal Server Error',
+      tweets: 'Forbidden',
+    });
+
+    expect({ jobs, tweets, instagramPosts }).toEqual({ jobs: [], tweets: [], instagramPosts: [] });
+  });
 });
