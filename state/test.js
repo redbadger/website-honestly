@@ -21,18 +21,22 @@ describe('state', () => {
     delete process.env.BADGER_BRAIN_HOST;
   });
 
-  it('returns site state', async () => {
+  it('returns data in the correct shape', async () => {
     nock('https://api.twitter.com')
       .post(/.*oauth*/)
       .reply(200, {});
 
+    nock('https://api.twitter.com')
+      .get(/.*statuses*/)
+      .reply(200, []);
+
     nock('https://www.workable.com')
       .get(/.*jobs*/)
-      .reply(200, {});
+      .reply(200, { jobs: [] });
 
     nock('https://api.instagram.com')
       .get(/.*media*/)
-      .reply(200, {});
+      .reply(200, { data: [] });
 
     nock('https://api.hubapi.com/')
       .get(/.*blog-posts*/)
@@ -53,6 +57,23 @@ describe('state', () => {
 
     const siteState = await getSiteState();
 
-    expect(siteState.data).toBeDefined();
+    expect(siteState).toEqual({
+      data: {
+        badgerLookup: {},
+        badgers: [],
+        categories: [],
+        eventLookup: {},
+        events: [],
+        eventsBanner: undefined,
+        growingTrendsBlogPosts: [],
+        instagramPosts: [],
+        jobLookup: {},
+        jobs: [],
+        qAndAs: [],
+        triedAndTestedBlogPosts: [],
+        tweets: [],
+      },
+      fetchErrors: {},
+    });
   });
 });
