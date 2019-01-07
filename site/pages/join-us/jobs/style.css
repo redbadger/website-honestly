@@ -1,8 +1,8 @@
 @value badgerRedOnWhite, badgerBlack from "../../../css/_colors.css";
 
 .title {
-  composes: fontL from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontL from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
   display: inline;
   font-size: 1.55em;
   text-decoration: none;
@@ -30,5 +30,6 @@
 }
 
 .jobs p:first-of-type {
-  font-weight: bold;
+  /* Can't compose in this selector */
+  font-family: 'ProximaNova-Bold', sans-serif;
 }
