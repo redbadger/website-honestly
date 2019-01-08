@@ -2,22 +2,22 @@
 
 exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
 <Container
-  to="prideCaseStudy"
+  to="fidelityCaseStudy"
 >
   <Text
     layout="leftCol"
   >
     <Header>
-      Delivering a best-in-class digital experience
+      Global design and build project for Fidelity International, delivered in four months
     </Header>
     <Description>
-      Building a 5 star digital experience for Pride in London’s mobile app using React Native, promoting inclusion and accessibility for an improved user experience.
+      A website which creates a new industry benchmark for design & usability, and empowers the client to grow the site and their audience, with tools and ways of working.
     </Description>
     <ReadMore />
   </Text>
   <Image
     alt="Pride heart animation"
-    src="listing.gif"
+    src="listing.jpg"
   />
 </Container>
 `;

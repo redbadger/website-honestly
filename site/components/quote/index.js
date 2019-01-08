@@ -14,7 +14,7 @@ export type Author = {
 };
 
 type QuoteProps = {
-  author: Author,
+  author?: Author,
   text: string,
   className?: string,
 };
@@ -25,14 +25,17 @@ const Quote = ({ author, text, className }: QuoteProps) => {
       <div className={styles.quotation__text}>
         <blockquote className={styles.quotation__quote}>{text}</blockquote>
       </div>
-
-      <div className={styles.quotation__author}>
-        {author.image && <Avatar image={author.image} name={author.name} size={70} />}
-        <div className={styles.quotation__author__wrapper}>
-          <div className={styles.quotation__author__name}>— {author.name}</div>
-          <div className={styles.quotation__author__title}>{author.title}</div>
+      {author && (
+        <div className={styles.quotation__author}>
+          {author.image && author.name && (
+            <Avatar image={author.image} name={author.name} size={70} />
+          )}
+          <div className={styles.quotation__author__wrapper}>
+            <div className={styles.quotation__author__name}>— {author.name}</div>
+            <div className={styles.quotation__author__title}>{author.title}</div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

@@ -8,7 +8,7 @@ import styles from './styles.css';
 
 type Props = {
   children: React.Node,
-  layout?: 'row' | 'row-reverse',
+  layoutRight?: boolean,
   to: string,
   removeBottomPadding?: boolean,
 };
@@ -16,9 +16,10 @@ type Props = {
 export default function Container({
   children,
   to,
-  layout = 'row',
+  layoutRight,
   removeBottomPadding = false,
 }: Props) {
+  const layout = layoutRight ? 'row-reverse' : 'row';
   return (
     <div className={removeBottomPadding ? styles.containerNoPaddingBottom : styles.container}>
       <Link to={to} className={cx(styles.content, styles[layout])}>

@@ -22,7 +22,6 @@ class Picture extends Component<PictureProps> {
 
   render() {
     const { className, largeSrc, mediumSrc, smallSrc, alt } = this.props;
-
     return (
       <picture className={styles.picture}>
         {largeSrc && <source srcSet={largeSrc} media={largeScreen} />}

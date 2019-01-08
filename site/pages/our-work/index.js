@@ -14,6 +14,7 @@ import FortnumSlice from './slices/fortnum-and-mason';
 import FortnumDigitalTransformationSlice from './slices/fortnum-and-mason-digital-transformation';
 import SkySlice from './slices/sky';
 import Pride from './slices/pride';
+import Fidelity from './slices/fidelity';
 
 import { BBCCell, SkyCell, HallerCell, BMWCell } from './cells';
 import Logos from './logos';
@@ -33,6 +34,21 @@ export default function CaseStudies() {
     url: 'https://red-badger.com/our-work',
   };
 
+  const slices = [
+    Pride,
+    CarTrawlerSlice,
+    Fidelity,
+    BankSlice,
+    CarTrawlerSliceMyAccount,
+    RetailerSlice,
+    CamdenSlice,
+    FtSlice,
+    FortnumSlice,
+    FortnumDigitalTransformationSlice,
+    SkySlice,
+    Logos,
+  ];
+
   return (
     <ScrollTracker>
       <Social {...social} />
@@ -44,17 +60,12 @@ export default function CaseStudies() {
       </div>
       <div className={styles.caseStudyTopSection}>
         <div className={styles.topSlicesContainer}>
-          <Pride />
-          <CarTrawlerSlice />
-          <BankSlice />
-          <CarTrawlerSliceMyAccount />
-          <RetailerSlice />
-          <CamdenSlice />
-          <FtSlice />
-          <FortnumSlice />
-          <FortnumDigitalTransformationSlice />
-          <SkySlice />
-          <Logos />
+          {slices.map((Slice, index) => {
+            /* disabled because list is static */
+            /* eslint-disable react/no-array-index-key */
+            return <Slice key={`caseStudy-${index}`} layoutRight={!(index % 2)} />;
+            /* eslint-enable react/no-array-index-key */
+          })}
 
           <div className={styles.grid}>
             <div className={styles.gridRow}>

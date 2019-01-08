@@ -5,7 +5,7 @@ import styles from './style.css';
 type Font = 'fontXL' | 'fontL' | 'fontM' | 'fontM2' | 'fontS2' | 'fontS' | 'fontXS';
 
 type Props = {
-  children: React.Node,
+  children?: React.Node,
   type?: Font,
   customClass?: string,
 };

@@ -25,7 +25,7 @@ import Card from '../../../../components/card';
 import styles from './style.css';
 import Triptych from './triptych';
 
-import socialImg from './images/social.jpg';
+import socialImg from './images/social.gif';
 import collaborationImg from './images/collaboration.jpg';
 import header from './images/header.gif';
 import Kristof from './images/Kristof_HS.jpg';

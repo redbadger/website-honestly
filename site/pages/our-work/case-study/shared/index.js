@@ -39,6 +39,8 @@ export const Section = ({
 }: {|
   children:
     | React.Element<'div'>
+    | React.Element<'iframe'>
+    | React.Element<'video'>
     | React.ChildrenArray<
         React.Element<
           typeof SectionBody | typeof SectionHeading | typeof Card | typeof Image | typeof Video,
@@ -46,11 +48,11 @@ export const Section = ({
       >,
 |}) => <div className={styles.section}>{children}</div>;
 
-export const Quote = ({ author, text }: { author: Author, text: string }) => (
+export const Quote = ({ author, text }: { author?: Author, text: string }) => (
   <BaseQuote author={author} text={text} className={styles.quote} />
 );
 
-export const P = ({ children }: { children: React.Node }) => (
+export const P = ({ children }: { children?: React.Node }) => (
   <BaseP customClass={styles.paragraph}>{children}</BaseP>
 );
 

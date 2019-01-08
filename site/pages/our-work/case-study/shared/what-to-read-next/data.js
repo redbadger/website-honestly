@@ -5,7 +5,7 @@ import fortnumImage from './images/fortnumReadMore.jpg';
 import fortnumDigitalTransformationImage from './images/fortnumDigitalTransformationReadMore.jpg';
 import financialTimesImage from './images/financialTimesReadMore.jpg';
 import camdenMarketImage from './images/camdenMarketReadMore.jpg';
-import pride from './images/pride.jpg';
+import pride from './images/pride.gif';
 import retailerImage from './images/retailerReadMore.jpg';
 import skyImage from './images/skyReadMore.jpg';
 import skyCmsImage from './images/skyCmsReadMore.jpg';

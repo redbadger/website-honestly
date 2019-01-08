@@ -5,10 +5,14 @@ import React from 'react';
 import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
 import bankGif from './images/bank.gif';
 
-export default function Bank() {
+type Props = {
+  layoutRight?: boolean,
+};
+
+export default function Bank({ layoutRight }: Props) {
   return (
-    <Container to="bankCaseStudy" layout="row-reverse">
-      <Text layout="rightCol">
+    <Container to="bankCaseStudy" layoutRight={layoutRight}>
+      <Text layout={layoutRight ? 'rightCol' : 'leftCol'}>
         <Header>Digital transformation in retail banking</Header>
         <Description>
           Discover how we delivered quality digital products to customers quickly, built capability

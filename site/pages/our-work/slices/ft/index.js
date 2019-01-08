@@ -6,10 +6,14 @@ import { Container, Description, ReadMore, Header, Text, Image, Logo } from '../
 import ft from './images/ft.png';
 import ftLogo from './images/ft-logo.png';
 
-export default function Ft() {
+type Props = {
+  layoutRight?: boolean,
+};
+
+export default function Ft({ layoutRight }: Props) {
   return (
-    <Container to="financialTimesCaseStudy" layout="row-reverse">
-      <Text layout="rightCol">
+    <Container to="financialTimesCaseStudy" layoutRight={layoutRight}>
+      <Text layout={layoutRight ? 'rightCol' : 'leftCol'}>
         <Logo src={ftLogo} slice="ft" />
         <Header>Lasting change for a media giant</Header>
         <Description>
