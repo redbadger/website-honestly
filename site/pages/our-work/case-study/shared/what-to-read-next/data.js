@@ -56,7 +56,7 @@ const sliceData = {
   pride: {
     name: 'Pride in London',
     tagline: 'Delivering a best-in-class digital experience',
-    images: pride,
+    image: pride,
     linkKey: 'prideCaseStudy',
   },
   retailer: {
