@@ -19,8 +19,8 @@ import {
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ListBox from '../../../../components/list-box';
-import Card from '../../../../components/card';
 import Picture from '../../../../components/picture';
+import Card from '../../../../components/card';
 
 import styles from './style.css';
 
@@ -168,7 +168,6 @@ export default function Fidelity() {
                 />
               </div>
             </div>
-            <P />
             <P>
               The design language we developed was informed by the ‘provocatively reassuring’
               duality: eye-catching elements of striking imagery, bold headlines and asymmetrical,

@@ -25,6 +25,7 @@
   position: relative;
   left: 50%;
   margin-left: -50vw;
+  margin-bottom: 30px;
 }
 
 .articleImgFlexContent {
