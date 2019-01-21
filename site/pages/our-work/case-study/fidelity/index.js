@@ -47,6 +47,10 @@ const social = {
   url: 'https://red-badger.com/our-work/case-study/fidelity',
 };
 
+const siteQuoteProps = {
+  text: 'This elegant site anticipates my needs and supplies the investment thinking I rely on.',
+};
+
 const endQuoteProps = {
   text:
     'We worked closely with Fidelity Institutional to define a project vision, creative strategy and implementation roadmap that we then delivered on to provide a site that is a new benchmark for them in terms of content and execution. The new site has helped them articulate their story with pride and distinctiveness – it also positions them as thought leaders in their industry.',
@@ -112,6 +116,11 @@ export default function Fidelity() {
               together to set out a clear project vision, articulated as a client statement:
             </P>
             <ArticleImg src={binocularsImg} alt="" />
+            <Section>
+              <SectionBody>
+                <Quote {...siteQuoteProps} />
+              </SectionBody>
+            </Section>
             <P>
               We used this vision as a platform to build the creative principles on, which then
               guided the design expression.
@@ -125,26 +134,6 @@ export default function Fidelity() {
             <P>
               The central creative principle for the project which the team referred to throughout
               was ‘Provocatively Reassuring’. In a crowded market, the site needed to catch clients’
-              attention but quickly hold their interest with reassuringly excellent and relevant
-              content.
-            </P>
-
-            <H3>
-              This elegant site anticipates my needs and supplies the investment thinking I rely on.
-            </H3>
-            <P>
-              We used this vision as a platform to build the creative principles on, which then
-              guided the design expression.
-            </P>
-            <P>
-              Together, we focused on what clients want by identifying their goals, motivations and
-              behaviours. This was a truly collaborative process from start to finish, making the
-              design something which Fidelity feels reflects the company’s expertise, ambition and
-              spirit.
-            </P>
-            <P>
-              The central creative principle for the project which the team referred to throughout
-              was ‘provocatively reassuring’. In a crowded market, the site needed to catch clients’
               attention but quickly hold their interest with reassuringly excellent and relevant
               content.
             </P>
