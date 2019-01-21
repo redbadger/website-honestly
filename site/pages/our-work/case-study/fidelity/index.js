@@ -232,14 +232,22 @@ export default function Fidelity() {
               <li>
                 <P>
                   Embedded{' '}
-                  <a href="https://www.fidelityinstitutional.com/en/in-depth-in-eight-minutes-end-of-the-cycle-explained-b306d2/">
+                  <a
+                    href="https://www.fidelityinstitutional.com/en/in-depth-in-eight-minutes-end-of-the-cycle-explained-b306d2/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                     video
                   </a>{' '}
                   and{' '}
-                  <a href="https://www.fidelityinstitutional.com/en/novembers-rich-pickings-bill-mcquakers-most-beautiful-index-0e4bbf/">
+                  <a
+                    href="https://www.fidelityinstitutional.com/en/novembers-rich-pickings-bill-mcquakers-most-beautiful-index-0e4bbf/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                     podcasts
                   </a>{' '}
-                  provide allow Fidelity to add richness to their storytelling
+                  allow Fidelity to add richness to their storytelling
                 </P>
               </li>
             </UL>
@@ -268,8 +276,14 @@ export default function Fidelity() {
             </P>
             <P>
               As the pages load, you see a fairly traditional set of{' '}
-              <a href="https://www.fidelityinstitutional.com/en/about-us/leadership/">portraits</a>,
-              but on hover they move. This simple but unexpected twist adds a surprising amount of
+              <a
+                href="https://www.fidelityinstitutional.com/en/about-us/leadership/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                portraits
+              </a>
+              , but on hover they move. This simple but unexpected twist adds a surprising amount of
               personality and the portraits become known affectionately as the ‘Harry Potters’.
             </P>
           </SectionBody>
