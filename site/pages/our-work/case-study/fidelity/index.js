@@ -19,7 +19,6 @@ import {
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ListBox from '../../../../components/list-box';
-import Picture from '../../../../components/picture';
 import Card from '../../../../components/card';
 
 import styles from './style.css';
@@ -27,8 +26,6 @@ import styles from './style.css';
 import socialImg from './images/social.jpg';
 import binocularsImg from './images/Binoculars.jpg';
 import headerL from './images/header_L.jpg';
-import headerM from './images/header_M.jpg';
-import headerS from './images/header_S.jpg';
 import Monika from './images/Monika_HS.jpg';
 import Screenshot01 from './images/Screenshots_1_M.png';
 import Screenshot02 from './images/Screenshots_2_M.png';
@@ -66,10 +63,8 @@ export default function Fidelity() {
     <ScrollTracker>
       <Social {...social} />
       <div className={styles.headerImgWrapper}>
-        <Picture
-          largeSrc={headerL}
-          mediumSrc={headerM}
-          smallSrc={headerS}
+        <img
+          src={headerL}
           className={styles.headerImg}
           alt="People (Badgers) sticking post-its on a blue wall"
         />

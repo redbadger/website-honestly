@@ -7,17 +7,15 @@
 }
 
 .headerImgWrapper {
-  text-align: center;
-  max-height: 460px;
-  height: 50vw;
-  display: flex;
-  justify-content: center;
   background-image: linear-gradient(to right, #08042b 50%, #f3b944 51%);
 }
 
 .headerImg {
-  display: inline-block;
-  height: 460px;
+  display: block;
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  min-height: 255px;
 }
 
 .articleImgFlexWrapper {
@@ -109,5 +107,9 @@
   }
   .articleImgRight {
     width: 320px;
+  }
+
+  .headerImg {
+    object-fit: contain;
   }
 }
