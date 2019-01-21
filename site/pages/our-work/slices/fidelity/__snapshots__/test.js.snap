@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
+exports[`pages/our-work/case-study/slices/fidelity renders correctly 1`] = `
 <Container
   to="fidelityCaseStudy"
 >

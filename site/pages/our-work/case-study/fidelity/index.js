@@ -90,7 +90,7 @@ export default function Fidelity() {
               funds and sovereign wealth funds. It has been innovating for 50 years in 25 countries.
             </P>
             <P>
-              Fidelity recognised that it had a fractured web strategy for institutional clients,
+              They recognised that it had a fractured web strategy for institutional clients,
               sometimes combining them with other client groups or, in some markets, not offering
               any web content at all.
             </P>
@@ -187,10 +187,9 @@ export default function Fidelity() {
               around the world, there’s a collection of over 3,000 artworks, often created by local
               artists. We worked with the company’s curator to choose a selection of digital,
               moving-image pieces to use in the headers - these catch the eye in a sophisticated way
-              and invite to the user to make connections with the business, while also highlighting
-              the modern, innovative side of the business. Furthermore, they subtly reinforce the
-              global nature of the company by using artists based in its many locations around the
-              world.
+              and invite the user to make connections with the business, while also highlighting the
+              modern, innovative side of the business. Furthermore, they subtly reinforce the global
+              nature of the company by using artists based in its many locations around the world.
             </P>
             <P>
               For the flagship ‘Fidelity Answers’ content, we wanted additional bold imagery to draw
