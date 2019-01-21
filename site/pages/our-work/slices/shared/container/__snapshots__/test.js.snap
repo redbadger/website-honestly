@@ -31,7 +31,7 @@ exports[`site/pages/our-work/slices/shared/container renders the row-reverse cla
   className="container"
 >
   <Link
-    className="content row-reverse"
+    className="content row"
     to="destination"
   >
     Things

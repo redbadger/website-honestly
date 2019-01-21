@@ -301,6 +301,17 @@ export const routeDefinitions: Array<RouteDefinition> = [
     },
   },
   {
+    title: 'Fidelity International case study',
+    description: 'This is the Fidelity case study',
+    key: 'fidelityCaseStudy',
+    route: 'our-work/case-study/fidelity',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'fidelity',
+    },
+  },
+  {
     title: 'Technology',
     description:
       'We choose the right tech for the job and with meticulous engineering practices we enable continuous delivery, speed to market and create value for customers quickly.',

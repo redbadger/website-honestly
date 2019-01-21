@@ -6,10 +6,14 @@ import { Container, Description, ReadMore, Header, Text, Image, Logo } from '../
 import camden from './images/camden.png';
 import camdenLogo from './images/camden-logo.png';
 
-export default function Camden() {
+type Props = {
+  layoutRight?: boolean,
+};
+
+export default function Camden({ layoutRight }: Props) {
   return (
-    <Container to="camdenMarketCaseStudy" layout="row">
-      <Text>
+    <Container to="camdenMarketCaseStudy" layoutRight={layoutRight}>
+      <Text layout={layoutRight ? 'rightCol' : 'leftCol'}>
         <Logo src={camdenLogo} slice="camden" />
         <Header>Taking steps towards a digital future</Header>
         <Description>

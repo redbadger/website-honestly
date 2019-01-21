@@ -6,10 +6,14 @@ import { Container, Description, ReadMore, Header, Text, Logo, Image } from '../
 import fmLogo from './images/fortnum-mason-logo.png';
 import fortnum from './images/fortnum-mason.png';
 
-export default function FortnumAndMason() {
+type Props = {
+  layoutRight?: boolean,
+};
+
+export default function FortnumAndMason({ layoutRight }: Props) {
   return (
-    <Container to="fortnumAndMasonCaseStudy">
-      <Text>
+    <Container to="fortnumAndMasonCaseStudy" layoutRight={layoutRight}>
+      <Text layout={layoutRight ? 'rightCol' : 'leftCol'}>
         <Logo src={fmLogo} slice="fm" />
         <Header>
           Fortnum & Mason’s new, elegant website increases revenue and conversion rates

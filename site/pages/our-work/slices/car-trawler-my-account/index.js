@@ -5,10 +5,14 @@ import React from 'react';
 import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
 import carTrawler from './images/car-trawler.jpg';
 
-export default function CarTrawler() {
+type Props = {
+  layoutRight?: boolean,
+};
+
+export default function CarTrawler({ layoutRight }: Props) {
   return (
-    <Container to="carTrawlerMyAccountCaseStudy">
-      <Text>
+    <Container to="carTrawlerMyAccountCaseStudy" layoutRight={layoutRight}>
+      <Text layout={layoutRight ? 'rightCol' : 'leftCol'}>
         <Header>Building a self-servicing customer account</Header>
         <Description>
           Find out how we built a self-servicing customer account, enabling customers to make

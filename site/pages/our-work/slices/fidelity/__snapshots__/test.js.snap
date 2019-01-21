@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/case-study/slices/fidelity renders correctly 1`] = `
+<Container
+  to="fidelityCaseStudy"
+>
+  <Text
+    layout="leftCol"
+  >
+    <Header>
+      Global design and build project for Fidelity International, delivered in four months
+    </Header>
+    <Description>
+      A website which creates a new industry benchmark for design & usability, and empowers the client to grow the site and their audience, with tools and ways of working.
+    </Description>
+    <ReadMore />
+  </Text>
+  <Image
+    alt="Pride heart animation"
+    src="listing.jpg"
+  />
+</Container>
+`;

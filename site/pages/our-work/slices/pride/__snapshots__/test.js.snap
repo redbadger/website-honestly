@@ -2,11 +2,10 @@
 
 exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
 <Container
-  layout="row-reverse"
   to="prideCaseStudy"
 >
   <Text
-    layout="rightCol"
+    layout="leftCol"
   >
     <Header>
       Delivering a best-in-class digital experience

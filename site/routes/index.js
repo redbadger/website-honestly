@@ -34,6 +34,7 @@ import FMTeaCaseStudy from '../pages/our-work/case-study/fortnum-and-mason-digit
 import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
 import HallerCaseStudy from '../pages/our-work/case-study/haller';
 import PrideCaseStudy from '../pages/our-work/case-study/pride';
+import FidelityCaseStudy from '../pages/our-work/case-study/fidelity';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
@@ -63,6 +64,7 @@ const componentMap = {
   offlinePage: OfflinePage,
   ourWorkPage: OurWorkPage,
   prideCaseStudy: PrideCaseStudy,
+  fidelityCaseStudy: FidelityCaseStudy,
   privacyPolicy: PrivacyPolicyPage,
   retailerCaseStudy: RetailerCaseStudy,
   serverErrorPage: ServerErrorPage,
