@@ -284,7 +284,14 @@ export default function Fidelity() {
           <Image src={WavesImage} className={styles.articleImgFullWidth} alt="Black Waves" />
         </Section>
         <Section>
-          <video autoPlay muted loop className={styles.articleVideoFullWidth} title="Black Waves">
+          <video
+            playsInline
+            autoPlay
+            muted
+            loop
+            className={styles.articleVideoFullWidth}
+            title="Black Waves"
+          >
             <source src={Waves} type="video/webm" />
             {/* safari support */}
             <source src={WavesMP4} type="video/mp4" />
