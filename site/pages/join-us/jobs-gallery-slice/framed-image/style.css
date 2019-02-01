@@ -242,19 +242,19 @@
 }
 
 .hoverHandler .photoWrapper {
-  display: block !important;
+  display: none !important;
 }
 
 .hoverHandler:hover .photoWrapper {
-  display: block !important;
+  display: none !important;
 }
 
 .hoverHandler .illustrationWrapper {
-  display: none !important;
+  display: block !important;
 }
 
 .hoverHandler:hover .illustrationWrapper {
-  display: none !important;
+  display: block !important;
 }
 
 @media smallScreen {
