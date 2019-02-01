@@ -20,6 +20,7 @@
   position: relative;
   height: 110px;
   width: 180px;
+  padding: 0;
 }
 
 .dodgeballFrame {
@@ -33,22 +34,29 @@
   display: none;
   grid-row-start: row-start 1;
   grid-row-end: row-end 1;
-  margin: 40px 25px 0 auto;
+  margin: 46px 30px 0 auto;
   position: relative;
 }
 
 .pridePhotoMask {
-  height: 110px;
-  width: 180px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
+}
+
+.prideButton {
+  height: 110px;
+  width: 180px;
+  position: relative;
+  padding: 0;
 }
 
 .prideFrame {
   position: absolute;
   height: 127px;
-  bottom: -39px;
-  left: 0;
+  bottom: -6px;
+  left: -7px;
 }
 
 .scientistPhotoWrapper {
@@ -56,7 +64,7 @@
   grid-column-end: col-end 2;
   grid-row-start: row-start 1;
   grid-row-end: row-end 1;
-  margin: 40px auto 0 28px;
+  margin: 46px auto 0 28px;
   position: relative;
 }
 
@@ -64,6 +72,7 @@
   height: 110px;
   width: 110px;
   position: relative;
+  padding: 0;
 }
 
 .scientistPhotoMask {
@@ -92,18 +101,25 @@
 
 .anthonyNolanPhotoMask {
   object-fit: cover;
-  height: 140px;
-  width: 140px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
 }
 
+.anthonyNolanButton {
+  height: 140px;
+  width: 140px;
+  position: relative;
+  padding: 0;
+}
+
 .anthonyNolanFrame {
   position: absolute;
   height: 160px;
-  top: -8px;
-  left: -3px;
+  top: -10px;
+  left: -10px;
 }
 
 .janPhotoWrapper {
@@ -111,15 +127,22 @@
   grid-column-end: col-end 3;
   grid-row-start: row-start 2;
   grid-row-end: row-end 4;
-  margin: 54px auto 0 14px;
+  margin: 54px auto 0 22px;
   position: relative;
 }
 
 .janPhotoMask {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.janButton {
+  padding: 0;
   height: 150px;
   width: 120px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -127,53 +150,67 @@
   position: absolute;
   height: 170px;
   top: -9px;
-  left: -3px;
+  left: -10px;
 }
 
 .sketchSessionPhotoWrapper {
   display: none;
   grid-row-start: row-start 2;
   grid-row-end: row-end 4;
-  margin: 50px auto 0 -42px;
+  margin: 56px auto 0 -40px;
   position: relative;
 }
 
 .sketchSessionPhotoMask {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sketchSessionButton {
+  padding: 0;
   height: 110px;
   width: 180px;
-  overflow: hidden;
   position: relative;
 }
 
 .sketchSessionFrame {
   position: absolute;
   height: 122px;
-  bottom: 82px;
-  left: 1px;
+  bottom: 0;
+  left: -2px;
 }
 
 .miloPhotoWrapper {
   display: none;
   grid-row-start: row-start 2;
   grid-row-end: row-end 4;
-  margin: 54px auto 0 10px;
+  margin: 62px auto 0 22px;
   position: relative;
 }
 
 .miloPhotoMask {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.miloButton {
+  padding: 0;
   height: 110px;
   width: 180px;
-  overflow: hidden;
   position: relative;
 }
 
 .miloFrame {
   position: absolute;
   height: 126px;
-  bottom: 76px;
-  left: 0;
+  bottom: 0;
+  left: -10px;
 }
 
 .photo {
