@@ -4,23 +4,29 @@
   display: none;
   grid-row-start: row-start 1;
   grid-row-end: row-end 1;
-  margin: 40px auto 0 50px;
+  margin: 40px auto 0 58px;
   position: relative;
 }
 
 .dodgeballPhotoMask {
   object-fit: cover;
-  height: 110px;
-  width: 180px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
+}
+
+.dodgeballButton {
+  position: relative;
+  height: 110px;
+  width: 180px;
 }
 
 .dodgeballFrame {
   position: absolute;
   height: 120px;
   top: -5px;
-  left: 0;
+  left: -8px;
 }
 
 .pridePhotoWrapper {
@@ -50,14 +56,20 @@
   grid-column-end: col-end 2;
   grid-row-start: row-start 1;
   grid-row-end: row-end 1;
-  margin: 40px auto 0 20px;
+  margin: 40px auto 0 28px;
+  position: relative;
+}
+
+.scientistButton {
+  height: 110px;
+  width: 110px;
   position: relative;
 }
 
 .scientistPhotoMask {
   object-fit: cover;
-  height: 110px;
-  width: 110px;
+  height:100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -65,8 +77,8 @@
 .scientistFrame {
   position: absolute;
   height: 144px;
-  bottom: -38px;
-  left: 0px;
+  bottom: -5px;
+  left: -10px;
 }
 
 .anthonyNolanPhotoWrapper {

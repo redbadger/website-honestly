@@ -24,7 +24,7 @@ const FramedImage = ({
   position,
 }: FramedImageProps) => (
   <div className={[styles[`${name}PhotoWrapper`], styles.hoverHandler].join(' ')}>
-    <button onClick={onClick(position)}>
+    <button className={[styles[`${name}Button`]]} onClick={onClick(position)}>
       <div className={styles[`${name}PhotoMask`]}>
         <div className={styles.illustrationWrapper}>
           <img

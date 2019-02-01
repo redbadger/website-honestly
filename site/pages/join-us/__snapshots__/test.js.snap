@@ -248,6 +248,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="dodgeballPhotoWrapper hoverHandler"
                     >
                       <button
+                        className={
+                          Array [
+                            "dodgeballButton",
+                          ]
+                        }
                         onClick={[Function]}
                       >
                         <div
@@ -295,6 +300,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="scientistPhotoWrapper hoverHandler"
                     >
                       <button
+                        className={
+                          Array [
+                            "scientistButton",
+                          ]
+                        }
                         onClick={[Function]}
                       >
                         <div
@@ -342,6 +352,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="anthonyNolanPhotoWrapper hoverHandler"
                     >
                       <button
+                        className={
+                          Array [
+                            "anthonyNolanButton",
+                          ]
+                        }
                         onClick={[Function]}
                       >
                         <div
@@ -389,6 +404,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="pridePhotoWrapper hoverHandler"
                     >
                       <button
+                        className={
+                          Array [
+                            "prideButton",
+                          ]
+                        }
                         onClick={[Function]}
                       >
                         <div
@@ -436,6 +456,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="sketchSessionPhotoWrapper hoverHandler"
                     >
                       <button
+                        className={
+                          Array [
+                            "sketchSessionButton",
+                          ]
+                        }
                         onClick={[Function]}
                       >
                         <div
@@ -483,6 +508,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="janPhotoWrapper hoverHandler"
                     >
                       <button
+                        className={
+                          Array [
+                            "janButton",
+                          ]
+                        }
                         onClick={[Function]}
                       >
                         <div
@@ -530,6 +560,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="miloPhotoWrapper hoverHandler"
                     >
                       <button
+                        className={
+                          Array [
+                            "miloButton",
+                          ]
+                        }
                         onClick={[Function]}
                       >
                         <div
