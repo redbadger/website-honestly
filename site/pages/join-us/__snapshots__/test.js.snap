@@ -212,7 +212,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                   Join us
                 </h1>
                 <p>
-                  Our people are the best thing about Red Badger. Do you love finding and solving difficult problems with great people? Do you love making a real impact? Join us and become a badger.
+                  Our people are the best thing about Red Badger. Do you love solving difficult problems? Do you enjoy working with great people? Do you want to have a real impact? Join us and become a Badger.
                 </p>
               </div>
             </HeaderContainer>
@@ -673,7 +673,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       className="jobsTimelineIntro"
                     >
                       <p>
-                        We believe in creating opportunity for all. We benefit from diversity. That said, we're far from perfect – we want to be more diverse and representative. Here are the roles we're currently looking to hire for.
+                        We believe in creating opportunity for all. We benefit from diversity. That said, we're far from perfect – we want to be more diverse and representative. Join us and help make that happen.
                       </p>
                     </div>
                     <JobsListSection
@@ -2307,7 +2307,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       >
                         <TimelineNav
                           currentIndex={0}
-                          key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                          key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer."
                           onClick={[Function]}
                           value={0}
                         >
@@ -2320,7 +2320,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                         </TimelineNav>
                         <TimelineNav
                           currentIndex={0}
-                          key="I moved to London 4 years ago just to work at Red Badger, and it was easily one of the best decisions of my life. I’ve never worked in such a supportive environment, both on a professional and personal level - which is probably because the company consists of amazing people, who truly care about each other and the work they do"
+                          key="I moved to London 4 years ago just to work at Red Badger, and it was easily one of the best decisions of my life. I’ve never worked in such a supportive environment, both on a professional and personal level - which is probably because the company consists of amazing people, who truly care about each other and the work they do."
                           onClick={[Function]}
                           value={1}
                         >
@@ -2333,7 +2333,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                         </TimelineNav>
                         <TimelineNav
                           currentIndex={0}
-                          key="I am extremely happy to be in my first week as a Badger after meeting them on a project working from client side. I very quickly learned what an incredibly passionate and people-centric company they are. Their unparalleled pride in the work they do is evident at every level of the company, and in each of the products they create"
+                          key="I am extremely happy to be in my first week as a Badger after meeting them on a project working from client side. I very quickly learned what an incredibly passionate and people-centric company they are. Their unparalleled pride in the work they do is evident at every level of the company, and in each of the products they create."
                           onClick={[Function]}
                           value={2}
                         >
@@ -2359,7 +2359,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                         </TimelineNav>
                         <TimelineNav
                           currentIndex={0}
-                          key="Red Badger has supported me in transitioning back to a Product facing role giving me the opportunity to work on a new project but with the guidance of a director and fellow delivery lead who’ve watch over what I’ve been doing"
+                          key="Red Badger has supported me in transitioning back to a Product facing role giving me the opportunity to work on a new project but with the guidance of a director and fellow delivery lead who’ve watched over what I’ve been doing."
                           onClick={[Function]}
                           value={4}
                         >
@@ -2445,7 +2445,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                         <div
                           aria-hidden={false}
                           data-swipeable="true"
-                          key=".$I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                          key=".$I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer."
                           style={
                             Object {
                               "WebkitFlexShrink": 0,
@@ -2457,9 +2457,9 @@ exports[`site/pages/join-us renders correctly 1`] = `
                         >
                           <Testimonial
                             author="Jimmy Muldoon"
-                            content="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                            content="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer."
                             icon="Jimmy_HS.jpg"
-                            key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                            key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer."
                             role="Director of Insights"
                           >
                             <div
@@ -2472,7 +2472,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                   <div
                                     className="main"
                                   >
-                                    I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer
+                                    I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer.
                                   </div>
                                 </div>
                                 <div

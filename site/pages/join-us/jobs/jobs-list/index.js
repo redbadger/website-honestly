@@ -28,8 +28,8 @@ const JobsList = ({ jobs }: JobsProps) => {
       <div className={styles.jobsTimelineIntro}>
         <p>
           We believe in creating opportunity for all. We benefit from diversity. That said,
-          we&apos;re far from perfect – we want to be more diverse and representative. Here are the
-          roles we&apos;re currently looking to hire for.
+          we&apos;re far from perfect – we want to be more diverse and representative. Join us and
+          help make that happen.
         </p>
       </div>
       {groupedJobs.map(jobGroup => (
