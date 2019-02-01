@@ -19,7 +19,6 @@ type _JobsProps = {
 };
 
 const Jobs = ({ jobs }: _JobsProps) => {
-  console.log(1, jobs);
   const jobsClasses = `jobs ${styles.jobs}`;
 
   return (
