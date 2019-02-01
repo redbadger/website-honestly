@@ -4,10 +4,7 @@
 import React from 'react';
 import styles from './style.css';
 import JobsListSection from '../jobs-list-section';
-
-type JobsListProps = {
-  jobs: Array<any>,
-};
+import type { JobsProps } from '../';
 
 const getDepartments = jobs => {
   return jobs
@@ -23,7 +20,7 @@ const groupByDepartment = jobs => {
   return grouped;
 };
 
-const JobsList = ({ jobs }: JobsListProps) => {
+const JobsList = ({ jobs }: JobsProps) => {
   const groupedJobs = groupByDepartment(jobs);
   return (
     <div className={styles.jobsListTimelineSection}>

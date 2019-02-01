@@ -3,13 +3,10 @@ import React from 'react';
 
 import styles from './style.css';
 import JobList from './jobs-list';
+import type { Job } from '../';
 
 type JobsProps = {
-  jobs: Array<{
-    description: string,
-    title: string,
-    slug?: string,
-  }>,
+  jobs: Array<Job>,
 };
 
 export default function Jobs({ jobs }: JobsProps) {

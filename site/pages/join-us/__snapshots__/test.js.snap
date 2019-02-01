@@ -1,0 +1,2522 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/join-us renders correctly 1`] = `
+<Context>
+  <JoinUs
+    jobs={
+      Array [
+        Object {
+          "department": "Awesome Squad",
+          "description": "awesomeness is a full-time job so we need you here being awesome",
+          "slug": "awesome",
+          "title": "chief awesome person",
+        },
+        Object {
+          "department": "four legged friends",
+          "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+          "slug": "woof",
+          "title": "Junior adorable dog",
+        },
+        Object {
+          "department": "Caffiends",
+          "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+          "slug": "slurp",
+          "title": "Mid 2 Tea drinker",
+        },
+      ]
+    }
+  >
+    <div
+      className="background"
+    >
+      <Social
+        altText="An illustration an award we won."
+        description="We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team."
+        metaImage="meta-image.jpg"
+        title="Join us | Red Badger"
+        url="https://red-badger/jobs"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Join us | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Join us | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "An illustration an award we won.",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger/jobs",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Join us | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Join us | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "An illustration an award we won.",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger/jobs",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Join us | Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Join us | Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "An illustration an award we won.",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "https://red-badger/jobs",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <JobsIntro>
+        <div
+          className="jobs"
+        >
+          <div
+            className="container"
+          >
+            <HeaderContainer>
+              <div
+                className="headings"
+              >
+                <h1
+                  className="h1"
+                >
+                  Join us
+                </h1>
+                <p>
+                  Our people are the best thing about Red Badger. Do you love finding and solving difficult problems with great people? Do you love making a real impact? Join us and become a badger.
+                </p>
+              </div>
+            </HeaderContainer>
+          </div>
+        </div>
+      </JobsIntro>
+      <JobsGallerySlice>
+        <Container>
+          <div
+            className="wrapper"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="galleryContainer"
+              >
+                <div
+                  className="galleryWrapper"
+                >
+                  <FramedImage
+                    altText="Our Red Badger Dodgeball team ready for the next game."
+                    frame="dodgeball_frame.png"
+                    illustration="dodgeball_illustrated.jpg"
+                    isWide={true}
+                    key="dodgeball"
+                    name="dodgeball"
+                    onClick={[Function]}
+                    photo="dodgeball_photo.jpg"
+                    position={0}
+                  >
+                    <div
+                      className="dodgeballPhotoWrapper hoverHandler"
+                    >
+                      <button
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="dodgeballPhotoMask"
+                        >
+                          <div
+                            className="illustrationWrapper"
+                          >
+                            <img
+                              alt="Our Red Badger Dodgeball team ready for the next game."
+                              className="illustrationWide"
+                              src="dodgeball_illustrated.jpg"
+                            />
+                          </div>
+                          <div
+                            className="photoWrapper"
+                          >
+                            <img
+                              alt="Our Red Badger Dodgeball team ready for the next game."
+                              className="photoWide"
+                              src="dodgeball_photo.jpg"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt=""
+                          className="dodgeballFrame"
+                          src="dodgeball_frame.png"
+                        />
+                      </button>
+                    </div>
+                  </FramedImage>
+                  <FramedImage
+                    altText="Stuart Harris, Red Badger co-founder and chief scientist in a lab coat reading a report."
+                    frame="scientist_frame.png"
+                    illustration="scientist_illustrated.jpg"
+                    isWide={false}
+                    key="scientist"
+                    name="scientist"
+                    onClick={[Function]}
+                    photo="scientist_photo.jpg"
+                    position={1}
+                  >
+                    <div
+                      className="scientistPhotoWrapper hoverHandler"
+                    >
+                      <button
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="scientistPhotoMask"
+                        >
+                          <div
+                            className="illustrationWrapper"
+                          >
+                            <img
+                              alt="Stuart Harris, Red Badger co-founder and chief scientist in a lab coat reading a report."
+                              className="illustration"
+                              src="scientist_illustrated.jpg"
+                            />
+                          </div>
+                          <div
+                            className="photoWrapper"
+                          >
+                            <img
+                              alt="Stuart Harris, Red Badger co-founder and chief scientist in a lab coat reading a report."
+                              className="photo"
+                              src="scientist_photo.jpg"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt=""
+                          className="scientistFrame"
+                          src="scientist_frame.png"
+                        />
+                      </button>
+                    </div>
+                  </FramedImage>
+                  <FramedImage
+                    altText="People testing a prototype of a new tool."
+                    frame="anthonynolan_frame.png"
+                    illustration="anthonynolan_illustrated.jpg"
+                    isWide={false}
+                    key="anthonyNolan"
+                    name="anthonyNolan"
+                    onClick={[Function]}
+                    photo="anthonynolan_photo.jpg"
+                    position={2}
+                  >
+                    <div
+                      className="anthonyNolanPhotoWrapper hoverHandler"
+                    >
+                      <button
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="anthonyNolanPhotoMask"
+                        >
+                          <div
+                            className="illustrationWrapper"
+                          >
+                            <img
+                              alt="People testing a prototype of a new tool."
+                              className="illustration"
+                              src="anthonynolan_illustrated.jpg"
+                            />
+                          </div>
+                          <div
+                            className="photoWrapper"
+                          >
+                            <img
+                              alt="People testing a prototype of a new tool."
+                              className="photo"
+                              src="anthonynolan_photo.jpg"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt=""
+                          className="anthonyNolanFrame"
+                          src="anthonynolan_frame.png"
+                        />
+                      </button>
+                    </div>
+                  </FramedImage>
+                  <FramedImage
+                    altText="A group of people brainstorming new ideas in a workshop."
+                    frame="pride_frame.png"
+                    illustration="pride_illustrated.jpg"
+                    isWide={true}
+                    key="pride"
+                    name="pride"
+                    onClick={[Function]}
+                    photo="pride_photo.jpg"
+                    position={3}
+                  >
+                    <div
+                      className="pridePhotoWrapper hoverHandler"
+                    >
+                      <button
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="pridePhotoMask"
+                        >
+                          <div
+                            className="illustrationWrapper"
+                          >
+                            <img
+                              alt="A group of people brainstorming new ideas in a workshop."
+                              className="illustrationWide"
+                              src="pride_illustrated.jpg"
+                            />
+                          </div>
+                          <div
+                            className="photoWrapper"
+                          >
+                            <img
+                              alt="A group of people brainstorming new ideas in a workshop."
+                              className="photoWide"
+                              src="pride_photo.jpg"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt=""
+                          className="prideFrame"
+                          src="pride_frame.png"
+                        />
+                      </button>
+                    </div>
+                  </FramedImage>
+                  <FramedImage
+                    altText="A team sitting at a meeting room table."
+                    frame="sketch_session_frame.png"
+                    illustration="sketch_session_illustrated.jpg"
+                    isWide={true}
+                    key="sketchSession"
+                    name="sketchSession"
+                    onClick={[Function]}
+                    photo="sketch_session_photo.jpg"
+                    position={4}
+                  >
+                    <div
+                      className="sketchSessionPhotoWrapper hoverHandler"
+                    >
+                      <button
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sketchSessionPhotoMask"
+                        >
+                          <div
+                            className="illustrationWrapper"
+                          >
+                            <img
+                              alt="A team sitting at a meeting room table."
+                              className="illustrationWide"
+                              src="sketch_session_illustrated.jpg"
+                            />
+                          </div>
+                          <div
+                            className="photoWrapper"
+                          >
+                            <img
+                              alt="A team sitting at a meeting room table."
+                              className="photoWide"
+                              src="sketch_session_photo.jpg"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt=""
+                          className="sketchSessionFrame"
+                          src="sketch_session_frame.png"
+                        />
+                      </button>
+                    </div>
+                  </FramedImage>
+                  <FramedImage
+                    altText="People celebrating at the Pride parade./ A young man holding up a big promotional poster at the Pride Parade."
+                    frame="jan_frame.png"
+                    illustration="jan_illustrated.jpg"
+                    isWide={false}
+                    key="jan"
+                    name="jan"
+                    onClick={[Function]}
+                    photo="jan_photo.jpg"
+                    position={5}
+                  >
+                    <div
+                      className="janPhotoWrapper hoverHandler"
+                    >
+                      <button
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="janPhotoMask"
+                        >
+                          <div
+                            className="illustrationWrapper"
+                          >
+                            <img
+                              alt="People celebrating at the Pride parade./ A young man holding up a big promotional poster at the Pride Parade."
+                              className="illustration"
+                              src="jan_illustrated.jpg"
+                            />
+                          </div>
+                          <div
+                            className="photoWrapper"
+                          >
+                            <img
+                              alt="People celebrating at the Pride parade./ A young man holding up a big promotional poster at the Pride Parade."
+                              className="photo"
+                              src="jan_photo.jpg"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt=""
+                          className="janFrame"
+                          src="jan_frame.png"
+                        />
+                      </button>
+                    </div>
+                  </FramedImage>
+                  <FramedImage
+                    altText="Our office dog and a Test Lead working on a laptop."
+                    frame="milo_frame.png"
+                    illustration="milo_illustrated.jpg"
+                    isWide={true}
+                    key="milo"
+                    name="milo"
+                    onClick={[Function]}
+                    photo="milo_photo.jpg"
+                    position={6}
+                  >
+                    <div
+                      className="miloPhotoWrapper hoverHandler"
+                    >
+                      <button
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="miloPhotoMask"
+                        >
+                          <div
+                            className="illustrationWrapper"
+                          >
+                            <img
+                              alt="Our office dog and a Test Lead working on a laptop."
+                              className="illustrationWide"
+                              src="milo_illustrated.jpg"
+                            />
+                          </div>
+                          <div
+                            className="photoWrapper"
+                          >
+                            <img
+                              alt="Our office dog and a Test Lead working on a laptop."
+                              className="photoWide"
+                              src="milo_photo.jpg"
+                            />
+                          </div>
+                        </div>
+                        <img
+                          alt=""
+                          className="miloFrame"
+                          src="milo_frame.png"
+                        />
+                      </button>
+                    </div>
+                  </FramedImage>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </JobsGallerySlice>
+      <Container>
+        <div
+          className="wrapper"
+        >
+          <div
+            className="container"
+          >
+            <Jobs
+              jobs={
+                Array [
+                  Object {
+                    "department": "Awesome Squad",
+                    "description": "awesomeness is a full-time job so we need you here being awesome",
+                    "slug": "awesome",
+                    "title": "chief awesome person",
+                  },
+                  Object {
+                    "department": "four legged friends",
+                    "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                    "slug": "woof",
+                    "title": "Junior adorable dog",
+                  },
+                  Object {
+                    "department": "Caffiends",
+                    "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                    "slug": "slurp",
+                    "title": "Mid 2 Tea drinker",
+                  },
+                ]
+              }
+            >
+              <div
+                className="jobs jobs"
+              >
+                <JobsList
+                  jobs={
+                    Array [
+                      Object {
+                        "department": "Awesome Squad",
+                        "description": "awesomeness is a full-time job so we need you here being awesome",
+                        "slug": "awesome",
+                        "title": "chief awesome person",
+                      },
+                      Object {
+                        "department": "four legged friends",
+                        "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                        "slug": "woof",
+                        "title": "Junior adorable dog",
+                      },
+                      Object {
+                        "department": "Caffiends",
+                        "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                        "slug": "slurp",
+                        "title": "Mid 2 Tea drinker",
+                      },
+                    ]
+                  }
+                >
+                  <div
+                    className="jobsListTimelineSection"
+                  >
+                    <h1
+                      className="jobsTimelineTitle"
+                    >
+                      We’re hiring
+                    </h1>
+                    <div
+                      className="jobsTimelineIntro"
+                    >
+                      <p>
+                        We believe in creating opportunity for all. We benefit from diversity. That said, we're far from perfect – we want to be more diverse and representative. Here are the roles we're currently looking to hire for.
+                      </p>
+                    </div>
+                    <JobsListSection
+                      jobs={
+                        Array [
+                          Object {
+                            "department": "Awesome Squad",
+                            "description": "awesomeness is a full-time job so we need you here being awesome",
+                            "slug": "awesome",
+                            "title": "chief awesome person",
+                          },
+                        ]
+                      }
+                      key="Awesome Squad"
+                      title="Awesome Squad"
+                    >
+                      <HR
+                        color="black"
+                      >
+                        <hr
+                          className="hr black horizontal-line"
+                        />
+                      </HR>
+                      <div
+                        className="jobSectionContainer"
+                      >
+                        <h2
+                          className="jobSectionHeader"
+                        >
+                          Awesome Squad
+                        </h2>
+                        <ul
+                          className="jobsList"
+                        >
+                          <JobsListEntry
+                            department="Awesome Squad"
+                            description="awesomeness is a full-time job so we need you here being awesome"
+                            key="key_chief awesome person"
+                            slug="awesome"
+                            title="chief awesome person"
+                            type="job"
+                          >
+                            <li
+                              className="jobItem"
+                              itemScope={true}
+                              itemType="http://schema.org/JobPosting"
+                              key="entry_undefined"
+                            >
+                              <Grid
+                                fit={false}
+                              >
+                                <div
+                                  className="grid withGutter responsive-grid-smallScreen"
+                                >
+                                  <Cell
+                                    breakOn="smallScreen"
+                                    size={12}
+                                  >
+                                    <div
+                                      className="responsive-cell-smallScreen cell size12of12 hideOndont"
+                                    >
+                                      <button
+                                        aria-expanded={false}
+                                        aria-label="expand chief awesome person job description"
+                                        className="jobEntry__more"
+                                        onClick={[Function]}
+                                      >
+                                        <span
+                                          className="jobEntry__arrow"
+                                        />
+                                      </button>
+                                      <div
+                                        className="jobEntryHeaderContainer"
+                                      >
+                                        <div
+                                          className="jobEntryHeader"
+                                        >
+                                          <JobTitle
+                                            jobLink={
+                                              Object {
+                                                "slug": "awesome",
+                                              }
+                                            }
+                                            jobTitle="chief awesome person"
+                                          >
+                                            <h3
+                                              className="jobTitle"
+                                              itemProp="name"
+                                            >
+                                              <Link
+                                                className="jobTitleLink"
+                                                navigationData={
+                                                  Object {
+                                                    "slug": "awesome",
+                                                  }
+                                                }
+                                                to="job"
+                                              >
+                                                <NavigationLink
+                                                  className="jobTitleLink"
+                                                  navigating={[Function]}
+                                                  navigationData={
+                                                    Object {
+                                                      "slug": "awesome",
+                                                    }
+                                                  }
+                                                  stateKey="job"
+                                                >
+                                                  <a
+                                                    className="jobTitleLink"
+                                                    href={null}
+                                                    onClick={[Function]}
+                                                  >
+                                                    <span>
+                                                      chief awesome person
+                                                    </span>
+                                                  </a>
+                                                </NavigationLink>
+                                              </Link>
+                                            </h3>
+                                          </JobTitle>
+                                        </div>
+                                        <div
+                                          className="jobDescription__hidden"
+                                        >
+                                          <div
+                                            className="jobDescription"
+                                          >
+                                            <RawHtml>
+                                              <div
+                                                className="typography rawHtml"
+                                                dangerouslySetInnerHTML={
+                                                  Object {
+                                                    "__html": "awesomeness is a full-time job so we need you here being awesome",
+                                                  }
+                                                }
+                                              />
+                                            </RawHtml>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <HR
+                                        color="black"
+                                        customClassName="mobileHorizontalLine"
+                                      >
+                                        <hr
+                                          className="hr black mobileHorizontalLine"
+                                        />
+                                      </HR>
+                                    </div>
+                                  </Cell>
+                                </div>
+                              </Grid>
+                            </li>
+                          </JobsListEntry>
+                        </ul>
+                      </div>
+                    </JobsListSection>
+                    <JobsListSection
+                      jobs={
+                        Array [
+                          Object {
+                            "department": "four legged friends",
+                            "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                            "slug": "woof",
+                            "title": "Junior adorable dog",
+                          },
+                        ]
+                      }
+                      key="four legged friends"
+                      title="four legged friends"
+                    >
+                      <HR
+                        color="black"
+                      >
+                        <hr
+                          className="hr black horizontal-line"
+                        />
+                      </HR>
+                      <div
+                        className="jobSectionContainer"
+                      >
+                        <h2
+                          className="jobSectionHeader"
+                        >
+                          four legged friends
+                        </h2>
+                        <ul
+                          className="jobsList"
+                        >
+                          <JobsListEntry
+                            department="four legged friends"
+                            description="Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack"
+                            key="key_Junior adorable dog"
+                            slug="woof"
+                            title="Junior adorable dog"
+                            type="job"
+                          >
+                            <li
+                              className="jobItem"
+                              itemScope={true}
+                              itemType="http://schema.org/JobPosting"
+                              key="entry_undefined"
+                            >
+                              <Grid
+                                fit={false}
+                              >
+                                <div
+                                  className="grid withGutter responsive-grid-smallScreen"
+                                >
+                                  <Cell
+                                    breakOn="smallScreen"
+                                    size={12}
+                                  >
+                                    <div
+                                      className="responsive-cell-smallScreen cell size12of12 hideOndont"
+                                    >
+                                      <button
+                                        aria-expanded={false}
+                                        aria-label="expand Junior adorable dog job description"
+                                        className="jobEntry__more"
+                                        onClick={[Function]}
+                                      >
+                                        <span
+                                          className="jobEntry__arrow"
+                                        />
+                                      </button>
+                                      <div
+                                        className="jobEntryHeaderContainer"
+                                      >
+                                        <div
+                                          className="jobEntryHeader"
+                                        >
+                                          <JobTitle
+                                            jobLink={
+                                              Object {
+                                                "slug": "woof",
+                                              }
+                                            }
+                                            jobTitle="Junior adorable dog"
+                                          >
+                                            <h3
+                                              className="jobTitle"
+                                              itemProp="name"
+                                            >
+                                              <Link
+                                                className="jobTitleLink"
+                                                navigationData={
+                                                  Object {
+                                                    "slug": "woof",
+                                                  }
+                                                }
+                                                to="job"
+                                              >
+                                                <NavigationLink
+                                                  className="jobTitleLink"
+                                                  navigating={[Function]}
+                                                  navigationData={
+                                                    Object {
+                                                      "slug": "woof",
+                                                    }
+                                                  }
+                                                  stateKey="job"
+                                                >
+                                                  <a
+                                                    className="jobTitleLink"
+                                                    href={null}
+                                                    onClick={[Function]}
+                                                  >
+                                                    <span>
+                                                      Junior adorable dog
+                                                    </span>
+                                                  </a>
+                                                </NavigationLink>
+                                              </Link>
+                                            </h3>
+                                          </JobTitle>
+                                        </div>
+                                        <div
+                                          className="jobDescription__hidden"
+                                        >
+                                          <div
+                                            className="jobDescription"
+                                          >
+                                            <RawHtml>
+                                              <div
+                                                className="typography rawHtml"
+                                                dangerouslySetInnerHTML={
+                                                  Object {
+                                                    "__html": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                                                  }
+                                                }
+                                              />
+                                            </RawHtml>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <HR
+                                        color="black"
+                                        customClassName="mobileHorizontalLine"
+                                      >
+                                        <hr
+                                          className="hr black mobileHorizontalLine"
+                                        />
+                                      </HR>
+                                    </div>
+                                  </Cell>
+                                </div>
+                              </Grid>
+                            </li>
+                          </JobsListEntry>
+                        </ul>
+                      </div>
+                    </JobsListSection>
+                    <JobsListSection
+                      jobs={
+                        Array [
+                          Object {
+                            "department": "Caffiends",
+                            "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                            "slug": "slurp",
+                            "title": "Mid 2 Tea drinker",
+                          },
+                        ]
+                      }
+                      key="Caffiends"
+                      title="Caffiends"
+                    >
+                      <HR
+                        color="black"
+                      >
+                        <hr
+                          className="hr black horizontal-line"
+                        />
+                      </HR>
+                      <div
+                        className="jobSectionContainer"
+                      >
+                        <h2
+                          className="jobSectionHeader"
+                        >
+                          Caffiends
+                        </h2>
+                        <ul
+                          className="jobsList"
+                        >
+                          <JobsListEntry
+                            department="Caffiends"
+                            description="Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required"
+                            key="key_Mid 2 Tea drinker"
+                            slug="slurp"
+                            title="Mid 2 Tea drinker"
+                            type="job"
+                          >
+                            <li
+                              className="jobItem"
+                              itemScope={true}
+                              itemType="http://schema.org/JobPosting"
+                              key="entry_undefined"
+                            >
+                              <Grid
+                                fit={false}
+                              >
+                                <div
+                                  className="grid withGutter responsive-grid-smallScreen"
+                                >
+                                  <Cell
+                                    breakOn="smallScreen"
+                                    size={12}
+                                  >
+                                    <div
+                                      className="responsive-cell-smallScreen cell size12of12 hideOndont"
+                                    >
+                                      <button
+                                        aria-expanded={false}
+                                        aria-label="expand Mid 2 Tea drinker job description"
+                                        className="jobEntry__more"
+                                        onClick={[Function]}
+                                      >
+                                        <span
+                                          className="jobEntry__arrow"
+                                        />
+                                      </button>
+                                      <div
+                                        className="jobEntryHeaderContainer"
+                                      >
+                                        <div
+                                          className="jobEntryHeader"
+                                        >
+                                          <JobTitle
+                                            jobLink={
+                                              Object {
+                                                "slug": "slurp",
+                                              }
+                                            }
+                                            jobTitle="Mid 2 Tea drinker"
+                                          >
+                                            <h3
+                                              className="jobTitle"
+                                              itemProp="name"
+                                            >
+                                              <Link
+                                                className="jobTitleLink"
+                                                navigationData={
+                                                  Object {
+                                                    "slug": "slurp",
+                                                  }
+                                                }
+                                                to="job"
+                                              >
+                                                <NavigationLink
+                                                  className="jobTitleLink"
+                                                  navigating={[Function]}
+                                                  navigationData={
+                                                    Object {
+                                                      "slug": "slurp",
+                                                    }
+                                                  }
+                                                  stateKey="job"
+                                                >
+                                                  <a
+                                                    className="jobTitleLink"
+                                                    href={null}
+                                                    onClick={[Function]}
+                                                  >
+                                                    <span>
+                                                      Mid 2 Tea drinker
+                                                    </span>
+                                                  </a>
+                                                </NavigationLink>
+                                              </Link>
+                                            </h3>
+                                          </JobTitle>
+                                        </div>
+                                        <div
+                                          className="jobDescription__hidden"
+                                        >
+                                          <div
+                                            className="jobDescription"
+                                          >
+                                            <RawHtml>
+                                              <div
+                                                className="typography rawHtml"
+                                                dangerouslySetInnerHTML={
+                                                  Object {
+                                                    "__html": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                                                  }
+                                                }
+                                              />
+                                            </RawHtml>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <HR
+                                        color="black"
+                                        customClassName="mobileHorizontalLine"
+                                      >
+                                        <hr
+                                          className="hr black mobileHorizontalLine"
+                                        />
+                                      </HR>
+                                    </div>
+                                  </Cell>
+                                </div>
+                              </Grid>
+                            </li>
+                          </JobsListEntry>
+                        </ul>
+                      </div>
+                    </JobsListSection>
+                  </div>
+                </JobsList>
+              </div>
+            </Jobs>
+          </div>
+        </div>
+      </Container>
+      <BenefitsSlice
+        benefitsCategories={
+          Array [
+            Object {
+              "benefits": Array [
+                Object {
+                  "answer": "As well as enhanced sick page, we also offer private medical cover provided by Vitality.",
+                  "mobileView": false,
+                  "question": "How does Red Badger support me if I’m unwell?",
+                },
+                Object {
+                  "answer": "We have a cycle to work scheme, which offers a loan of up to £1,000 to lease you a bike and accessories. Our HQ office also has great bike storage and shower facilities. We have ad-hoc yoga and other classes and there’s always a supply of free fruit in our kitchens.",
+                  "mobileView": false,
+                  "question": "What is covered to keep me healthy?",
+                },
+                Object {
+                  "answer": "We’ve got several benefits designed to help you through difficult times. These include confidential legal advice and counselling through our Employee Assistance Programme, our death in service cover, permanent health insurance and critical illness cover.",
+                  "mobileView": false,
+                  "question": "In the worst-case scenario, how do Red Badger support me and my family?",
+                },
+              ],
+              "icon": "Health_icon.png",
+              "name": "Health",
+            },
+            Object {
+              "benefits": Array [
+                Object {
+                  "answer": "From day one you’ll be auto-enrolled on our pension scheme and on passing probation you’ll be able to opt-in to our enhanced scheme, which offers an employer contribution of 5% of your salary.",
+                  "mobileView": false,
+                  "question": "What pension contributions will I receive?",
+                },
+                Object {
+                  "answer": "Yes, you can take out an interest-free loan to help with the cost of travel to and from work.",
+                  "mobileView": false,
+                  "question": "Do you offer assistance with the cost of commuting?",
+                },
+                Object {
+                  "answer": "While we don’t believe in performance-related bonuses, we do have a generous referral bonus scheme.",
+                  "mobileView": false,
+                  "question": "Is there a bonus scheme?",
+                },
+              ],
+              "icon": "Finance_icon.png",
+              "name": "Finance",
+            },
+            Object {
+              "benefits": Array [
+                Object {
+                  "answer": "In addition to bank holidays, we offer 24 holidays per year, which incrementally increases to 28 days after six years service.",
+                  "mobileView": false,
+                  "question": "How much holiday will I get?",
+                },
+                Object {
+                  "answer": "Starting at 26 weeks and depending on your length of service, you’ll be eligible for either our enhanced - 12 weeks full pay - or our enhanced plus - 16 weeks full pay - maternity or shared parental leave. New fathers can also take enhanced paternity leave in addition to shared parental leave.",
+                  "mobileView": false,
+                  "question": "What’s your parental leave policy?",
+                },
+                Object {
+                  "answer": "Once a month a masseuse comes into the office to give at-desk massages. We also have several wellbeing programmes and talks throughout the year.",
+                  "mobileView": false,
+                  "question": "Do you have any wellbeing programmes?",
+                },
+              ],
+              "icon": "Worklifebalance_icon.png",
+              "name": "Work-life balance",
+            },
+            Object {
+              "benefits": Array [
+                Object {
+                  "answer": "When you join, check out our social calendar to see what’s going on - from dodgeball to pub quizzes to ring making to diversity lunches, you are invited to take part in as much or as little as you would like. And don’t forget our two annual parties!",
+                  "mobileView": false,
+                  "question": "What socials can I get involved in?",
+                },
+                Object {
+                  "answer": "Yes, you can join our Give As You Earn scheme to make tax-free charity donations, Red Badger will also match your donation!",
+                  "mobileView": false,
+                  "question": "Can I donate to charity through the payroll?",
+                },
+                Object {
+                  "answer": "We’re proud of our culture and we want to consciously grow it as the business expands, join our monthly Culture Committee to help shape our culture conversations.",
+                  "mobileView": false,
+                  "question": "I’m interested in the Red Badger culture, can I get involved?",
+                },
+                Object {
+                  "answer": "We pride ourself on our charity partnerships and we encourage Badgers to get involved in our charity initiatives by joining our Social Value taskforce.",
+                  "mobileView": false,
+                  "question": "Does Red Badger work with any charities?",
+                },
+              ],
+              "icon": "Social_icon.png",
+              "name": "Community and culture",
+            },
+            Object {
+              "benefits": Array [
+                Object {
+                  "answer": "Each year you’ll receive a training budget of £2,000 to spend on your professional development. You’ll also be invited to attend various in-house training events and lunch n learns.",
+                  "mobileView": false,
+                  "question": "How can I develop at Red Badger?",
+                },
+                Object {
+                  "answer": "Our HQ office has a well-stocked library, which you are welcome to borrow from or add to. We’ll buy the books on the condition that you share them with everyone!",
+                  "mobileView": false,
+                  "question": "Do you have a library?",
+                },
+                Object {
+                  "answer": "You’ll be able to discuss your career development goals with your manager, who will help give you opportunities and support to achieve these.",
+                  "mobileView": false,
+                  "question": "How will I be supported to develop?",
+                },
+              ],
+              "icon": "Career_icon.png",
+              "name": "Career development",
+            },
+          ]
+        }
+      >
+        <section
+          className="benefitsTimelineSection"
+          id="contactUs"
+        >
+          <Container>
+            <div
+              className="wrapper"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="benefits__wrapper"
+                >
+                  <div
+                    className="benefits__container"
+                  >
+                    <h1
+                      className="benefits__heading"
+                    >
+                      Benefits
+                    </h1>
+                    <ul
+                      className="benefits__categoryList"
+                    >
+                      <li
+                        key="Health"
+                      >
+                        <Category
+                          benefits={
+                            Array [
+                              Object {
+                                "answer": "As well as enhanced sick page, we also offer private medical cover provided by Vitality.",
+                                "mobileView": false,
+                                "question": "How does Red Badger support me if I’m unwell?",
+                              },
+                              Object {
+                                "answer": "We have a cycle to work scheme, which offers a loan of up to £1,000 to lease you a bike and accessories. Our HQ office also has great bike storage and shower facilities. We have ad-hoc yoga and other classes and there’s always a supply of free fruit in our kitchens.",
+                                "mobileView": false,
+                                "question": "What is covered to keep me healthy?",
+                              },
+                              Object {
+                                "answer": "We’ve got several benefits designed to help you through difficult times. These include confidential legal advice and counselling through our Employee Assistance Programme, our death in service cover, permanent health insurance and critical illness cover.",
+                                "mobileView": false,
+                                "question": "In the worst-case scenario, how do Red Badger support me and my family?",
+                              },
+                            ]
+                          }
+                          icon="Health_icon.png"
+                          name="Health"
+                        >
+                          <div
+                            className="category"
+                          >
+                            <div
+                              className="category__content"
+                              onClick={[Function]}
+                            >
+                              <h3
+                                className="category__title"
+                              >
+                                Health
+                              </h3>
+                              <img
+                                alt="Health icon"
+                                className="category__icon"
+                                src="Health_icon.png"
+                              />
+                            </div>
+                            <ul
+                              className="category__questionList category__visible"
+                            >
+                              <li
+                                key="How does Red Badger support me if I’m unwell?"
+                              >
+                                <Benefit
+                                  answer="As well as enhanced sick page, we also offer private medical cover provided by Vitality."
+                                  mobileView={false}
+                                  question="How does Red Badger support me if I’m unwell?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        How does Red Badger support me if I’m unwell?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, How does Red Badger support me if I’m unwell? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, How does Red Badger support me if I’m unwell? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        As well as enhanced sick page, we also offer private medical cover provided by Vitality.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="What is covered to keep me healthy?"
+                              >
+                                <Benefit
+                                  answer="We have a cycle to work scheme, which offers a loan of up to £1,000 to lease you a bike and accessories. Our HQ office also has great bike storage and shower facilities. We have ad-hoc yoga and other classes and there’s always a supply of free fruit in our kitchens."
+                                  mobileView={false}
+                                  question="What is covered to keep me healthy?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        What is covered to keep me healthy?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, What is covered to keep me healthy? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, What is covered to keep me healthy? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        We have a cycle to work scheme, which offers a loan of up to £1,000 to lease you a bike and accessories. Our HQ office also has great bike storage and shower facilities. We have ad-hoc yoga and other classes and there’s always a supply of free fruit in our kitchens.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="In the worst-case scenario, how do Red Badger support me and my family?"
+                              >
+                                <Benefit
+                                  answer="We’ve got several benefits designed to help you through difficult times. These include confidential legal advice and counselling through our Employee Assistance Programme, our death in service cover, permanent health insurance and critical illness cover."
+                                  mobileView={false}
+                                  question="In the worst-case scenario, how do Red Badger support me and my family?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        In the worst-case scenario, how do Red Badger support me and my family?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, In the worst-case scenario, how do Red Badger support me and my family? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, In the worst-case scenario, how do Red Badger support me and my family? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        We’ve got several benefits designed to help you through difficult times. These include confidential legal advice and counselling through our Employee Assistance Programme, our death in service cover, permanent health insurance and critical illness cover.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                            </ul>
+                          </div>
+                        </Category>
+                      </li>
+                      <li
+                        key="Finance"
+                      >
+                        <Category
+                          benefits={
+                            Array [
+                              Object {
+                                "answer": "From day one you’ll be auto-enrolled on our pension scheme and on passing probation you’ll be able to opt-in to our enhanced scheme, which offers an employer contribution of 5% of your salary.",
+                                "mobileView": false,
+                                "question": "What pension contributions will I receive?",
+                              },
+                              Object {
+                                "answer": "Yes, you can take out an interest-free loan to help with the cost of travel to and from work.",
+                                "mobileView": false,
+                                "question": "Do you offer assistance with the cost of commuting?",
+                              },
+                              Object {
+                                "answer": "While we don’t believe in performance-related bonuses, we do have a generous referral bonus scheme.",
+                                "mobileView": false,
+                                "question": "Is there a bonus scheme?",
+                              },
+                            ]
+                          }
+                          icon="Finance_icon.png"
+                          name="Finance"
+                        >
+                          <div
+                            className="category"
+                          >
+                            <div
+                              className="category__content"
+                              onClick={[Function]}
+                            >
+                              <h3
+                                className="category__title"
+                              >
+                                Finance
+                              </h3>
+                              <img
+                                alt="Finance icon"
+                                className="category__icon"
+                                src="Finance_icon.png"
+                              />
+                            </div>
+                            <ul
+                              className="category__questionList category__visible"
+                            >
+                              <li
+                                key="What pension contributions will I receive?"
+                              >
+                                <Benefit
+                                  answer="From day one you’ll be auto-enrolled on our pension scheme and on passing probation you’ll be able to opt-in to our enhanced scheme, which offers an employer contribution of 5% of your salary."
+                                  mobileView={false}
+                                  question="What pension contributions will I receive?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        What pension contributions will I receive?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, What pension contributions will I receive? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, What pension contributions will I receive? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        From day one you’ll be auto-enrolled on our pension scheme and on passing probation you’ll be able to opt-in to our enhanced scheme, which offers an employer contribution of 5% of your salary.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="Do you offer assistance with the cost of commuting?"
+                              >
+                                <Benefit
+                                  answer="Yes, you can take out an interest-free loan to help with the cost of travel to and from work."
+                                  mobileView={false}
+                                  question="Do you offer assistance with the cost of commuting?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        Do you offer assistance with the cost of commuting?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, Do you offer assistance with the cost of commuting? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, Do you offer assistance with the cost of commuting? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        Yes, you can take out an interest-free loan to help with the cost of travel to and from work.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="Is there a bonus scheme?"
+                              >
+                                <Benefit
+                                  answer="While we don’t believe in performance-related bonuses, we do have a generous referral bonus scheme."
+                                  mobileView={false}
+                                  question="Is there a bonus scheme?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        Is there a bonus scheme?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, Is there a bonus scheme? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, Is there a bonus scheme? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        While we don’t believe in performance-related bonuses, we do have a generous referral bonus scheme.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                            </ul>
+                          </div>
+                        </Category>
+                      </li>
+                      <li
+                        key="Work-life balance"
+                      >
+                        <Category
+                          benefits={
+                            Array [
+                              Object {
+                                "answer": "In addition to bank holidays, we offer 24 holidays per year, which incrementally increases to 28 days after six years service.",
+                                "mobileView": false,
+                                "question": "How much holiday will I get?",
+                              },
+                              Object {
+                                "answer": "Starting at 26 weeks and depending on your length of service, you’ll be eligible for either our enhanced - 12 weeks full pay - or our enhanced plus - 16 weeks full pay - maternity or shared parental leave. New fathers can also take enhanced paternity leave in addition to shared parental leave.",
+                                "mobileView": false,
+                                "question": "What’s your parental leave policy?",
+                              },
+                              Object {
+                                "answer": "Once a month a masseuse comes into the office to give at-desk massages. We also have several wellbeing programmes and talks throughout the year.",
+                                "mobileView": false,
+                                "question": "Do you have any wellbeing programmes?",
+                              },
+                            ]
+                          }
+                          icon="Worklifebalance_icon.png"
+                          name="Work-life balance"
+                        >
+                          <div
+                            className="category"
+                          >
+                            <div
+                              className="category__content"
+                              onClick={[Function]}
+                            >
+                              <h3
+                                className="category__title"
+                              >
+                                Work-life balance
+                              </h3>
+                              <img
+                                alt="Work-life balance icon"
+                                className="category__icon"
+                                src="Worklifebalance_icon.png"
+                              />
+                            </div>
+                            <ul
+                              className="category__questionList category__visible"
+                            >
+                              <li
+                                key="How much holiday will I get?"
+                              >
+                                <Benefit
+                                  answer="In addition to bank holidays, we offer 24 holidays per year, which incrementally increases to 28 days after six years service."
+                                  mobileView={false}
+                                  question="How much holiday will I get?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        How much holiday will I get?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, How much holiday will I get? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, How much holiday will I get? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        In addition to bank holidays, we offer 24 holidays per year, which incrementally increases to 28 days after six years service.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="What’s your parental leave policy?"
+                              >
+                                <Benefit
+                                  answer="Starting at 26 weeks and depending on your length of service, you’ll be eligible for either our enhanced - 12 weeks full pay - or our enhanced plus - 16 weeks full pay - maternity or shared parental leave. New fathers can also take enhanced paternity leave in addition to shared parental leave."
+                                  mobileView={false}
+                                  question="What’s your parental leave policy?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        What’s your parental leave policy?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, What’s your parental leave policy? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, What’s your parental leave policy? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        Starting at 26 weeks and depending on your length of service, you’ll be eligible for either our enhanced - 12 weeks full pay - or our enhanced plus - 16 weeks full pay - maternity or shared parental leave. New fathers can also take enhanced paternity leave in addition to shared parental leave.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="Do you have any wellbeing programmes?"
+                              >
+                                <Benefit
+                                  answer="Once a month a masseuse comes into the office to give at-desk massages. We also have several wellbeing programmes and talks throughout the year."
+                                  mobileView={false}
+                                  question="Do you have any wellbeing programmes?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        Do you have any wellbeing programmes?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, Do you have any wellbeing programmes? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, Do you have any wellbeing programmes? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        Once a month a masseuse comes into the office to give at-desk massages. We also have several wellbeing programmes and talks throughout the year.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                            </ul>
+                          </div>
+                        </Category>
+                      </li>
+                      <li
+                        key="Community and culture"
+                      >
+                        <Category
+                          benefits={
+                            Array [
+                              Object {
+                                "answer": "When you join, check out our social calendar to see what’s going on - from dodgeball to pub quizzes to ring making to diversity lunches, you are invited to take part in as much or as little as you would like. And don’t forget our two annual parties!",
+                                "mobileView": false,
+                                "question": "What socials can I get involved in?",
+                              },
+                              Object {
+                                "answer": "Yes, you can join our Give As You Earn scheme to make tax-free charity donations, Red Badger will also match your donation!",
+                                "mobileView": false,
+                                "question": "Can I donate to charity through the payroll?",
+                              },
+                              Object {
+                                "answer": "We’re proud of our culture and we want to consciously grow it as the business expands, join our monthly Culture Committee to help shape our culture conversations.",
+                                "mobileView": false,
+                                "question": "I’m interested in the Red Badger culture, can I get involved?",
+                              },
+                              Object {
+                                "answer": "We pride ourself on our charity partnerships and we encourage Badgers to get involved in our charity initiatives by joining our Social Value taskforce.",
+                                "mobileView": false,
+                                "question": "Does Red Badger work with any charities?",
+                              },
+                            ]
+                          }
+                          icon="Social_icon.png"
+                          name="Community and culture"
+                        >
+                          <div
+                            className="category"
+                          >
+                            <div
+                              className="category__content"
+                              onClick={[Function]}
+                            >
+                              <h3
+                                className="category__title"
+                              >
+                                Community and culture
+                              </h3>
+                              <img
+                                alt="Community and culture icon"
+                                className="category__icon"
+                                src="Social_icon.png"
+                              />
+                            </div>
+                            <ul
+                              className="category__questionList category__visible"
+                            >
+                              <li
+                                key="What socials can I get involved in?"
+                              >
+                                <Benefit
+                                  answer="When you join, check out our social calendar to see what’s going on - from dodgeball to pub quizzes to ring making to diversity lunches, you are invited to take part in as much or as little as you would like. And don’t forget our two annual parties!"
+                                  mobileView={false}
+                                  question="What socials can I get involved in?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        What socials can I get involved in?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, What socials can I get involved in? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, What socials can I get involved in? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        When you join, check out our social calendar to see what’s going on - from dodgeball to pub quizzes to ring making to diversity lunches, you are invited to take part in as much or as little as you would like. And don’t forget our two annual parties!
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="Can I donate to charity through the payroll?"
+                              >
+                                <Benefit
+                                  answer="Yes, you can join our Give As You Earn scheme to make tax-free charity donations, Red Badger will also match your donation!"
+                                  mobileView={false}
+                                  question="Can I donate to charity through the payroll?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        Can I donate to charity through the payroll?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, Can I donate to charity through the payroll? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, Can I donate to charity through the payroll? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        Yes, you can join our Give As You Earn scheme to make tax-free charity donations, Red Badger will also match your donation!
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="I’m interested in the Red Badger culture, can I get involved?"
+                              >
+                                <Benefit
+                                  answer="We’re proud of our culture and we want to consciously grow it as the business expands, join our monthly Culture Committee to help shape our culture conversations."
+                                  mobileView={false}
+                                  question="I’m interested in the Red Badger culture, can I get involved?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        I’m interested in the Red Badger culture, can I get involved?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, I’m interested in the Red Badger culture, can I get involved? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, I’m interested in the Red Badger culture, can I get involved? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        We’re proud of our culture and we want to consciously grow it as the business expands, join our monthly Culture Committee to help shape our culture conversations.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="Does Red Badger work with any charities?"
+                              >
+                                <Benefit
+                                  answer="We pride ourself on our charity partnerships and we encourage Badgers to get involved in our charity initiatives by joining our Social Value taskforce."
+                                  mobileView={false}
+                                  question="Does Red Badger work with any charities?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        Does Red Badger work with any charities?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, Does Red Badger work with any charities? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, Does Red Badger work with any charities? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        We pride ourself on our charity partnerships and we encourage Badgers to get involved in our charity initiatives by joining our Social Value taskforce.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                            </ul>
+                          </div>
+                        </Category>
+                      </li>
+                      <li
+                        key="Career development"
+                      >
+                        <Category
+                          benefits={
+                            Array [
+                              Object {
+                                "answer": "Each year you’ll receive a training budget of £2,000 to spend on your professional development. You’ll also be invited to attend various in-house training events and lunch n learns.",
+                                "mobileView": false,
+                                "question": "How can I develop at Red Badger?",
+                              },
+                              Object {
+                                "answer": "Our HQ office has a well-stocked library, which you are welcome to borrow from or add to. We’ll buy the books on the condition that you share them with everyone!",
+                                "mobileView": false,
+                                "question": "Do you have a library?",
+                              },
+                              Object {
+                                "answer": "You’ll be able to discuss your career development goals with your manager, who will help give you opportunities and support to achieve these.",
+                                "mobileView": false,
+                                "question": "How will I be supported to develop?",
+                              },
+                            ]
+                          }
+                          icon="Career_icon.png"
+                          name="Career development"
+                        >
+                          <div
+                            className="category"
+                          >
+                            <div
+                              className="category__content"
+                              onClick={[Function]}
+                            >
+                              <h3
+                                className="category__title"
+                              >
+                                Career development
+                              </h3>
+                              <img
+                                alt="Career development icon"
+                                className="category__icon"
+                                src="Career_icon.png"
+                              />
+                            </div>
+                            <ul
+                              className="category__questionList category__visible"
+                            >
+                              <li
+                                key="How can I develop at Red Badger?"
+                              >
+                                <Benefit
+                                  answer="Each year you’ll receive a training budget of £2,000 to spend on your professional development. You’ll also be invited to attend various in-house training events and lunch n learns."
+                                  mobileView={false}
+                                  question="How can I develop at Red Badger?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        How can I develop at Red Badger?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, How can I develop at Red Badger? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, How can I develop at Red Badger? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        Each year you’ll receive a training budget of £2,000 to spend on your professional development. You’ll also be invited to attend various in-house training events and lunch n learns.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="Do you have a library?"
+                              >
+                                <Benefit
+                                  answer="Our HQ office has a well-stocked library, which you are welcome to borrow from or add to. We’ll buy the books on the condition that you share them with everyone!"
+                                  mobileView={false}
+                                  question="Do you have a library?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        Do you have a library?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, Do you have a library? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, Do you have a library? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        Our HQ office has a well-stocked library, which you are welcome to borrow from or add to. We’ll buy the books on the condition that you share them with everyone!
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                              <li
+                                key="How will I be supported to develop?"
+                              >
+                                <Benefit
+                                  answer="You’ll be able to discuss your career development goals with your manager, who will help give you opportunities and support to achieve these."
+                                  mobileView={false}
+                                  question="How will I be supported to develop?"
+                                >
+                                  <div>
+                                    <div
+                                      className="benefit__question"
+                                      onClick={[Function]}
+                                    >
+                                      <h4
+                                        className="benefit__heading"
+                                      >
+                                        How will I be supported to develop?
+                                      </h4>
+                                      <ShowMoreButton
+                                        ariaLabel="answer, How will I be supported to develop? "
+                                        open={false}
+                                        showButton={true}
+                                      >
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="answer, How will I be supported to develop? "
+                                          className="button__more"
+                                        >
+                                          <span
+                                            className="button__arrow"
+                                          />
+                                        </button>
+                                      </ShowMoreButton>
+                                    </div>
+                                    <div
+                                      className="benefit__answer__hidden"
+                                    >
+                                      <p>
+                                        You’ll be able to discuss your career development goals with your manager, who will help give you opportunities and support to achieve these.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </Benefit>
+                              </li>
+                            </ul>
+                          </div>
+                        </Category>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+      </BenefitsSlice>
+      <BadgerTestimonialsSlice>
+        <div
+          className="testimonials"
+        >
+          <div
+            className="container"
+          >
+            <ClientOnly>
+              <span>
+                <TestimonialNav
+                  currentIndex={0}
+                  onClick={[Function]}
+                >
+                  <div
+                    className="navigator"
+                  >
+                    <div
+                      className="container"
+                    >
+                      <Arrow
+                        currentIndex={0}
+                        direction="left"
+                        lastIndex={4}
+                        onClick={[Function]}
+                      >
+                        <button
+                          aria-label="left"
+                          className="arrow arrowLeft"
+                          onClick={[Function]}
+                        >
+                          <div
+                            className="inactive"
+                          />
+                          <div
+                            className="innerArrow"
+                          />
+                        </button>
+                      </Arrow>
+                      <div
+                        className="testimonials"
+                      >
+                        <TimelineNav
+                          currentIndex={0}
+                          key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                          onClick={[Function]}
+                          value={0}
+                        >
+                          <div
+                            aria-label="slide 1"
+                            className="active"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          key="I moved to London 4 years ago just to work at Red Badger, and it was easily one of the best decisions of my life. I’ve never worked in such a supportive environment, both on a professional and personal level - which is probably because the company consists of amazing people, who truly care about each other and the work they do"
+                          onClick={[Function]}
+                          value={1}
+                        >
+                          <div
+                            aria-label="slide 2"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          key="I am extremely happy to be in my first week as a Badger after meeting them on a project working from client side. I very quickly learned what an incredibly passionate and people-centric company they are. Their unparalleled pride in the work they do is evident at every level of the company, and in each of the products they create"
+                          onClick={[Function]}
+                          value={2}
+                        >
+                          <div
+                            aria-label="slide 3"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          key="I couldn’t wait to start at Red Badger. I heard of their good reputation but it was nothing compared to the support and opportunities I’ve received since working here. I’m really looking forward to what the year ahead brings!"
+                          onClick={[Function]}
+                          value={3}
+                        >
+                          <div
+                            aria-label="slide 4"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          key="Red Badger has supported me in transitioning back to a Product facing role giving me the opportunity to work on a new project but with the guidance of a director and fellow delivery lead who’ve watch over what I’ve been doing"
+                          onClick={[Function]}
+                          value={4}
+                        >
+                          <div
+                            aria-label="slide 5"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                      </div>
+                      <Arrow
+                        currentIndex={0}
+                        direction="right"
+                        lastIndex={4}
+                        onClick={[Function]}
+                      >
+                        <button
+                          aria-label="right"
+                          className="arrow arrowRight"
+                          onClick={[Function]}
+                        >
+                          <div
+                            className="active"
+                          />
+                          <div
+                            className="innerArrow"
+                          />
+                        </button>
+                      </Arrow>
+                    </div>
+                  </div>
+                </TestimonialNav>
+                <div
+                  className="content"
+                >
+                  <ReactSwipableView
+                    animateHeight={false}
+                    animateTransitions={true}
+                    axis="x"
+                    disableLazyLoading={false}
+                    disabled={false}
+                    enableMouseEvents={false}
+                    hysteresis={0.6}
+                    ignoreNativeScroll={false}
+                    index={0}
+                    onChangeIndex={[Function]}
+                    resistance={false}
+                    springConfig={
+                      Object {
+                        "delay": "0s",
+                        "duration": "0.35s",
+                        "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                      }
+                    }
+                    threshold={5}
+                  >
+                    <div
+                      onScroll={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      style={
+                        Object {
+                          "overflowX": "hidden",
+                        }
+                      }
+                    >
+                      <div
+                        className="react-swipeable-view-container"
+                        style={
+                          Object {
+                            "WebkitFlexDirection": "row",
+                            "WebkitTransition": "all 0s ease 0s",
+                            "direction": "ltr",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "height": null,
+                            "transition": "all 0s ease 0s",
+                            "willChange": "transform",
+                          }
+                        }
+                      >
+                        <div
+                          aria-hidden={false}
+                          data-swipeable="true"
+                          key=".$I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                          style={
+                            Object {
+                              "WebkitFlexShrink": 0,
+                              "flexShrink": 0,
+                              "overflow": "auto",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <Testimonial
+                            author="Jimmy Muldoon"
+                            content="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                            icon="Jimmy_HS.jpg"
+                            key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer"
+                            role="Director of Insights"
+                          >
+                            <div
+                              className="contentWrapper"
+                            >
+                              <div>
+                                <div
+                                  className="mainWrapper"
+                                >
+                                  <div
+                                    className="main"
+                                  >
+                                    I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer
+                                  </div>
+                                </div>
+                                <div
+                                  className="attribution"
+                                >
+                                  <img
+                                    alt="Jimmy Muldoon headshot"
+                                    className="icon"
+                                    src="Jimmy_HS.jpg"
+                                  />
+                                  <div>
+                                    <div
+                                      className="author"
+                                    >
+                                      – 
+                                      Jimmy Muldoon
+                                      ,
+                                    </div>
+                                    <div
+                                      className="role"
+                                    >
+                                      Director of Insights
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Testimonial>
+                        </div>
+                      </div>
+                    </div>
+                  </ReactSwipableView>
+                </div>
+              </span>
+            </ClientOnly>
+          </div>
+        </div>
+      </BadgerTestimonialsSlice>
+      <div
+        className="videoContainer"
+      >
+        <div
+          className="video"
+        >
+          <Video
+            id="dqJuBdCf-rA"
+            title="Red Badger selfie video"
+            type="youtube"
+          >
+            <div
+              className="container"
+            >
+              <iframe
+                allowFullScreen={true}
+                className="embed"
+                frameBorder="0"
+                src="https://www.youtube.com/embed/dqJuBdCf-rA"
+                title="Red Badger selfie video"
+              />
+            </div>
+          </Video>
+        </div>
+      </div>
+      <Component>
+        <div
+          className="awardsContainer"
+        >
+          <div
+            className="awards"
+          >
+            <img
+              alt="Awards"
+              className="awardsImage"
+              src="awards-april-2018.jpg"
+            />
+          </div>
+        </div>
+      </Component>
+    </div>
+  </JoinUs>
+</Context>
+`;

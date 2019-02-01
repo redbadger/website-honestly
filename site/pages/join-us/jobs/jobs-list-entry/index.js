@@ -7,12 +7,7 @@ import JobTitle from '../job-title';
 import RawHtml from '../../../../components/raw-html';
 import styles from '../jobs-list/style.css';
 
-type JobsListEntryProps = {
-  id: string,
-  title: string,
-  description: string,
-  slug: string,
-};
+import type { JobsListEntryProps } from '../jobs-list-section/';
 
 type JobsListEntryState = {
   open: boolean,

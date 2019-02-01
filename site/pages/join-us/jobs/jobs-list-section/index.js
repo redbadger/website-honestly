@@ -5,11 +5,18 @@ import styles from '../jobs-list/style.css';
 import HR from '../../../../components/hr';
 
 type JobsListEntryProps = {
+  id: string,
   title: string,
-  jobs: Array<any>,
+  description: string,
+  slug: string,
 };
 
-const JobsListSection = ({ title, jobs }: JobsListEntryProps) => {
+type JobsListSectionProps = {
+  title: string,
+  jobs: Array<JobsListEntryProps>,
+};
+
+const JobsListSection = ({ title, jobs }: JobsListSectionProps) => {
   return (
     <React.Fragment>
       <HR color="black" />
