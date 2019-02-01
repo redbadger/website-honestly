@@ -3,17 +3,11 @@ import React from 'react';
 import JobsListEntry from '../jobs-list-entry';
 import styles from '../jobs-list/style.css';
 import HR from '../../../../components/hr';
-
-type JobsListEntryProps = {
-  id: string,
-  title: string,
-  description: string,
-  slug: string,
-};
+import type { JobProps } from '../';
 
 type JobsListSectionProps = {
-  title: string,
-  jobs: Array<JobsListEntryProps>,
+  title?: ?string,
+  jobs: Array<JobProps>,
 };
 
 const JobsListSection = ({ title, jobs }: JobsListSectionProps) => {

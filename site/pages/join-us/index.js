@@ -15,18 +15,15 @@ import JobsGallerySlide from './jobs-gallery-slice';
 
 import metaImage from './meta-image.jpg';
 
+import type { CategoryProps } from './benefits-slice/category';
+
+import type { JobProps } from './jobs';
+
 import benefitsCategories from './benefits';
 
-type Job = {
-  title: string,
-  description: string,
-  department: string,
-  slug?: string,
-};
-
 type Props = {
-  jobs: Array<Job>,
-  benefitsCategories: Array<BenefitsCatergoryProps>,
+  jobs: Array<JobProps>,
+  benefitsCategories: Array<CategoryProps>,
 };
 
 const social = {

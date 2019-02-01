@@ -6,22 +6,21 @@ import { Grid, Cell } from '../../../../components/grid';
 import JobTitle from '../job-title';
 import RawHtml from '../../../../components/raw-html';
 import styles from '../jobs-list/style.css';
-
-import type { JobsListEntryProps } from '../jobs-list-section/';
+import type { JobProps } from '../';
 
 type JobsListEntryState = {
   open: boolean,
 };
 
-class JobsListEntry extends Component<JobsListEntryProps, JobsListEntryState> {
-  constructor(props: JobsListEntryProps) {
+class JobsListEntry extends Component<JobProps, JobsListEntryState> {
+  constructor(props: JobProps) {
     super(props);
     this.state = {
       open: false,
     };
   }
 
-  props: JobsListEntryProps;
+  props: JobProps;
 
   handleClick = () => {
     this.setState({ open: !this.state.open });

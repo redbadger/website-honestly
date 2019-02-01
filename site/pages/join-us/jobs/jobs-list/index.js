@@ -21,7 +21,9 @@ const groupByDepartment = jobs => {
 };
 
 const JobsList = ({ jobs }: JobsProps) => {
+  console.log(2, jobs);
   const groupedJobs = groupByDepartment(jobs);
+  console.log(3, groupedJobs);
   return (
     <div className={styles.jobsListTimelineSection}>
       <h1 className={styles.jobsTimelineTitle}>We’re hiring</h1>
