@@ -157,7 +157,7 @@
   display: none;
   grid-row-start: row-start 2;
   grid-row-end: row-end 4;
-  margin: 56px auto 0 -40px;
+  margin: 52px auto 0 -38px;
   position: relative;
 }
 
@@ -179,15 +179,15 @@
 .sketchSessionFrame {
   position: absolute;
   height: 122px;
-  bottom: 0;
-  left: -2px;
+  bottom: -4px;
+  left: -4px;
 }
 
 .miloPhotoWrapper {
   display: none;
   grid-row-start: row-start 2;
   grid-row-end: row-end 4;
-  margin: 62px auto 0 22px;
+  margin: 58px auto 0 22px;
   position: relative;
 }
 
@@ -209,7 +209,7 @@
 .miloFrame {
   position: absolute;
   height: 126px;
-  bottom: 0;
+  bottom: -5px;
   left: -10px;
 }
 
