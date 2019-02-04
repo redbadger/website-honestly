@@ -268,7 +268,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             />
                           </div>
                           <div
-                            className="photoWrapper"
+                            className="photoWrapper "
                           >
                             <img
                               alt="Our Red Badger Dodgeball team ready for the next game."
@@ -320,7 +320,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             />
                           </div>
                           <div
-                            className="photoWrapper"
+                            className="photoWrapper "
                           >
                             <img
                               alt="Stuart Harris, Red Badger co-founder and chief scientist in a lab coat reading a report."
@@ -372,7 +372,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             />
                           </div>
                           <div
-                            className="photoWrapper"
+                            className="photoWrapper photoWrapperAdjustment"
                           >
                             <img
                               alt="People testing a prototype of a new tool."
@@ -424,7 +424,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             />
                           </div>
                           <div
-                            className="photoWrapper"
+                            className="photoWrapper "
                           >
                             <img
                               alt="A group of people brainstorming new ideas in a workshop."
@@ -476,7 +476,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             />
                           </div>
                           <div
-                            className="photoWrapper"
+                            className="photoWrapper "
                           >
                             <img
                               alt="A team sitting at a meeting room table."
@@ -528,7 +528,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             />
                           </div>
                           <div
-                            className="photoWrapper"
+                            className="photoWrapper "
                           >
                             <img
                               alt="People celebrating at the Pride parade./ A young man holding up a big promotional poster at the Pride Parade."
@@ -580,7 +580,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             />
                           </div>
                           <div
-                            className="photoWrapper"
+                            className="photoWrapper "
                           >
                             <img
                               alt="Our office dog and a Test Lead working on a laptop."

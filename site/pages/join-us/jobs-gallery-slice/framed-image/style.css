@@ -122,6 +122,13 @@
   left: -10px;
 }
 
+.photoWrapperAdjustment {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 30px;
+}
+
 .janPhotoWrapper {
   grid-column-start: col-start 2;
   grid-column-end: col-end 3;

@@ -33,7 +33,13 @@ const FramedImage = ({
             alt={altText}
           />
         </div>
-        <div className={styles.photoWrapper}>
+        {/* Anthony Nolan photo needs to be manually positioned as there isn't enough photo to recrop */}
+        <div
+          className={[
+            styles.photoWrapper,
+            name === 'anthonyNolan' ? styles.photoWrapperAdjustment : '',
+          ].join(' ')}
+        >
           <img className={isWide ? styles.photoWide : styles.photo} src={photo} alt={altText} />
         </div>
       </div>
