@@ -51,8 +51,8 @@
 
 .jobTitle {
   composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  font-size: 30px;
-    line-height: 1.2em;
+  font-size: 25px;
+  line-height: 1.2em;
   display: block;
   margin-bottom: 0;
   width: calc(100% - 90px);

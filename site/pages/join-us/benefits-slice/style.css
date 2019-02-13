@@ -14,7 +14,7 @@
 }
 
 .benefits__container {
-  padding: 20px 0 10px;
+  padding: 20px 5px 10px 3px;
 }
 
 .benefits__heading {
@@ -40,11 +40,11 @@
 
 @media mediumScreen {
   .benefitsTimelineSection {
-    padding: 40px 20px;
+    padding: 40px 20px 40px;
   }
 
   .benefits__wrapper {
-    padding: 0 10px;
+    padding: 0 5px;
   }
 
   .benefits__heading {
@@ -52,7 +52,7 @@
   }
 
   .benefits__container {
-    padding: 40px 10px 10px 10px;
+    padding: 40px 0 10px;
   }
 
   .benefits__categoryList {
@@ -61,6 +61,10 @@
 }
 
 @media largeScreen {
+  .benefitsTimelineSection {
+    padding: 40px 20px 40px;
+  }
+
   .benefits__heading {
     padding-bottom: 40px;
   }
@@ -68,6 +72,7 @@
   .benefits__wrapper {
     max-width: 1400px;
     margin: auto;
+    padding: 0 25px;
   }
 
   .benefits__container {

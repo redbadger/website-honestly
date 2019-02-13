@@ -22,7 +22,7 @@
 
 .benefit__heading {
   composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  font-size: 16px;
+  font-size: 25px;
   text-align: left;
   padding-top: 20px;
   padding-bottom: 20px;
