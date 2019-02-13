@@ -21,7 +21,6 @@
 }
 
 .category__content {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -34,8 +33,6 @@
 
 .category__icon {
   display: none;
-  position: absolute;
-  left: 0;
   max-width: 90px;
 }
 
@@ -75,12 +72,13 @@
   }
 
   .category__questionList {
-    margin: -50px auto 5px 145px;
+    width: calc(100% - 145px);
   }
 
   .category__content {
     display: block;
-    width: 150px;
+    width: 145px;
     padding-right: 20px;
+    padding-top: 12px;
   }
 }
