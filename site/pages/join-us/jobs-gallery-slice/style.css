@@ -1,0 +1,56 @@
+@value smallScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.galleryContainer {
+  position: relative;
+  max-width: 310px;
+  min-height: 340px;
+  margin: 0 auto;
+}
+
+.galleryWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-grid;
+  min-width: 285px;
+  width: 100%;
+  /* achieve overlay effect */
+  margin-top: -10px;
+  min-height: 370px;
+  grid-template-columns: repeat(4, [col-start] 25% [col-end]);
+  grid-template-rows: repeat(2, [row-start] 33% [row-end]) [row-start] 34% [row-end];
+}
+
+.galleryContainer button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media smallScreen {
+  .galleryContainer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .galleryWrapper {
+    width: 100%;
+    min-width: 570px;
+    grid-template-columns: repeat(8, [col-start] 12.5% [col-end]);
+    grid-template-rows: repeat(2, [row-start] 33% [row-end]) [row-start] 34% [row-end];
+  }
+}
+
+@media mediumScreen {
+  .galleryContainer {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  
+  .galleryWrapper {
+    width: 100%;
+    min-width: 740px;
+    grid-template-columns: repeat(10, [col-start] 10% [col-end]);
+    grid-template-rows: repeat(2, [row-start] 33% [row-end]) [row-start] 34% [row-end];
+  }
+}

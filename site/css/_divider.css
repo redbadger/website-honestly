@@ -11,38 +11,49 @@
   content:"";
   position: absolute;
   right: -6px;
-  width: 50%;
+  width: 45%;
   height: 10px;
   top: -9px;
-  transform: skew(-40deg);
+  transform: translateX(-11%) skew(-40deg);
   background-color: badgerRedOnWhite;
+}
+
+.divider:after {
+  padding-left: 2px;
+  content:"";
+  position: absolute;
+  right: -0;
+  width: 10%;
+  height: 10px;
+  top: -9px;
+  /* background-color: badgerRedOnWhite; */
 }
 
 .dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey, .dividerBlackLarge, .dividerWhiteSmall {
   composes: divider;
 }
 
-.dividerBlack:before {
+.dividerBlack:before, .dividerBlack:after {
   background-color: badgerBlack;
 }
 
-.dividerWhite:before {
+.dividerWhite:before, .dividerWhite:after {
   background-color: badgerWhite;
 }
 
-.dividerYellow:before {
+.dividerYellow:before, .dividerYellow:after {
   background-color: cainYellow;
 }
 
-.dividerGreen:before {
+.dividerGreen:before, .dividerGreen:after {
   background-color: daveGreen;
 }
 
-.dividerGrey:before {
+.dividerGrey:before, .dividerGrey:after {
   background-color: grey;
 }
 
-.dividerBlackOnTransparent:before {
+.dividerBlackOnTransparent:before, .dividerBlackOnTransparent:after {
   background-color: badgerBlack;
   right: auto;
   left: -6px;
@@ -53,7 +64,7 @@
   z-index: timelineDivider;
 }
 
-.dividerBlackSocialSlice:before {
+.dividerBlackSocialSlice:before, .dividerBlackSocialSlice:after {
   background-color: badgerBlack;
   right: 0;
   left: 352px;

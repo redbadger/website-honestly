@@ -1,0 +1,351 @@
+@value smallScreen, mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.dodgeballPhotoWrapper {
+  display: none;
+  grid-row-start: row-start 1;
+  grid-row-end: row-end 1;
+  margin: 40px auto 0 58px;
+  position: relative;
+}
+
+.dodgeballPhotoMask {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.dodgeballButton {
+  position: relative;
+  height: 110px;
+  width: 180px;
+  padding: 0;
+}
+
+.dodgeballFrame {
+  position: absolute;
+  height: 120px;
+  top: -5px;
+  left: -8px;
+}
+
+.pridePhotoWrapper {
+  display: none;
+  grid-row-start: row-start 1;
+  grid-row-end: row-end 1;
+  margin: 46px 30px 0 auto;
+  position: relative;
+}
+
+.pridePhotoMask {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.prideButton {
+  height: 110px;
+  width: 180px;
+  position: relative;
+  padding: 0;
+}
+
+.prideFrame {
+  position: absolute;
+  height: 127px;
+  bottom: -6px;
+  left: -7px;
+}
+
+.scientistPhotoWrapper {
+  grid-column-start: col-start 1;
+  grid-column-end: col-end 2;
+  grid-row-start: row-start 1;
+  grid-row-end: row-end 1;
+  margin: 46px auto 0 28px;
+  position: relative;
+}
+
+.scientistButton {
+  height: 110px;
+  width: 110px;
+  position: relative;
+  padding: 0;
+}
+
+.scientistPhotoMask {
+  object-fit: cover;
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scientistFrame {
+  position: absolute;
+  height: 144px;
+  bottom: -5px;
+  left: -10px;
+}
+
+.anthonyNolanPhotoWrapper {
+  grid-column-start: col-start 3;
+  grid-column-end: col-end 4;
+  grid-row-start: row-start 1;
+  grid-row-end: row-start 1;
+  margin: 0 auto;
+  position: relative;
+}
+
+.anthonyNolanPhotoMask {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.anthonyNolanButton {
+  height: 140px;
+  width: 140px;
+  position: relative;
+  padding: 0;
+}
+
+.anthonyNolanFrame {
+  position: absolute;
+  height: 160px;
+  top: -10px;
+  left: -10px;
+}
+
+.photoWrapperAdjustment {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 30px;
+}
+
+.janPhotoWrapper {
+  grid-column-start: col-start 2;
+  grid-column-end: col-end 3;
+  grid-row-start: row-start 2;
+  grid-row-end: row-end 4;
+  margin: 54px auto 0 22px;
+  position: relative;
+}
+
+.janPhotoMask {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.janButton {
+  padding: 0;
+  height: 150px;
+  width: 120px;
+  position: relative;
+}
+
+.janFrame {
+  position: absolute;
+  height: 170px;
+  top: -9px;
+  left: -10px;
+}
+
+.sketchSessionPhotoWrapper {
+  display: none;
+  grid-row-start: row-start 2;
+  grid-row-end: row-end 4;
+  margin: 52px auto 0 -38px;
+  position: relative;
+}
+
+.sketchSessionPhotoMask {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sketchSessionButton {
+  padding: 0;
+  height: 110px;
+  width: 180px;
+  position: relative;
+}
+
+.sketchSessionFrame {
+  position: absolute;
+  height: 122px;
+  bottom: -4px;
+  left: -4px;
+}
+
+.miloPhotoWrapper {
+  display: none;
+  grid-row-start: row-start 2;
+  grid-row-end: row-end 4;
+  margin: 58px auto 0 22px;
+  position: relative;
+}
+
+.miloPhotoMask {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.miloButton {
+  padding: 0;
+  height: 110px;
+  width: 180px;
+  position: relative;
+}
+
+.miloFrame {
+  position: absolute;
+  height: 126px;
+  bottom: -5px;
+  left: -10px;
+}
+
+.photo {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photoWide {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.illustration {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.illustrationWide {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hoverHandler .photoWrapper {
+  display: none !important;
+}
+
+.hoverHandler:hover .photoWrapper {
+  display: none !important;
+}
+
+.hoverHandler .illustrationWrapper {
+  display: block !important;
+}
+
+.hoverHandler:hover .illustrationWrapper {
+  display: block !important;
+}
+
+@media smallScreen {
+  .sketchSessionPhotoWrapper {
+    display: inline-block;
+    grid-column-start: col-start 2;
+    grid-column-end: col-end 3;
+  }
+
+  .miloPhotoWrapper {
+    display: inline-block;
+    grid-column-start: col-start 6;
+    grid-column-end: col-end 7;
+  }
+
+  .scientistPhotoWrapper {
+    grid-column-start: col-start 3;
+    grid-column-end: col-end 4;
+  }
+
+  .anthonyNolanPhotoWrapper {
+    grid-column-start: col-start 5;
+    grid-column-end: col-end 6;
+  }
+
+  .janPhotoWrapper {
+    grid-column-start: col-start 4;
+    grid-column-end: col-end 5;
+  }
+}
+
+@media mediumScreen {
+  .dodgeballPhotoWrapper {
+    display: inline-block;
+    grid-column-start: col-start 1;
+    grid-column-end: col-end 2;
+  }
+
+  .pridePhotoWrapper {
+    display: inline-block;
+    grid-column-start: col-start 8;
+    grid-column-end: col-end 10;
+  }
+
+  .sketchSessionPhotoWrapper {
+    grid-column-start: col-start 3;
+    grid-column-end: col-end 4;
+  }
+
+  .miloPhotoWrapper {
+    grid-column-start: col-start 7;
+    grid-column-end: col-end 8;
+  }
+
+  .scientistPhotoWrapper {
+    grid-column-start: col-start 4;
+    grid-column-end: col-end 5;
+  }
+
+  .anthonyNolanPhotoWrapper {
+    grid-column-start: col-start 6;
+    grid-column-end: col-end 7;
+  }
+
+  .janPhotoWrapper {
+    grid-column-start: col-start 5;
+    grid-column-end: col-end 6;
+  }
+}
+
+@media largeScreen {
+  .hoverHandler .photoWrapper {
+    display: none !important;
+  }
+
+  .hoverHandler:hover .photoWrapper {
+    display: block !important;
+  }
+
+  .hoverHandler .illustrationWrapper {
+    display: block !important;
+  }
+
+  .hoverHandler:hover .illustrationWrapper {
+    display: none !important;
+  }
+}

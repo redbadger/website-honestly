@@ -1,0 +1,104 @@
+@value badgerBlack, badgerRed from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.benefit__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefit__question:hover,
+.benefit__more:hover {
+  cursor: pointer;
+}
+
+.benefit {
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  composes: dividerWhite from '../../../../css/_divider.css';
+  background-color: badgerWhite;
+  color: badgerBlack;
+}
+
+.benefit__heading {
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  font-size: 25px;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  display: block;
+  width: 100%;
+}
+
+.benefit__more {
+  display: block;
+  height: 21px;
+  width: 21px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: 0;
+}
+
+.benefit__more__hide {
+  display: none;
+}
+
+.benefit__more:focus {
+  outline: 0;
+}
+
+.benefit__arrow {
+  border: solid badgerBlack;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+}
+
+.benefit__arrowDown {
+  border: solid badgerBlack;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(225deg);
+}
+
+.benefit__answer p {
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.benefit__answer__visible {
+  composes: benefit__answer;
+  display: block;
+}
+
+.benefit__answer__hidden {
+  composes: benefit__answer;
+  display: none;
+}
+
+@media mediumScreen {
+  .benefit__heading {
+    padding-right: 20px;
+  }
+
+  .benefit__answer {
+    padding-right: 20px;
+    /* negative margin used to preserve question margin bottom when answer is hidden */
+    margin-top: -14px;
+    width: calc((100% + 20px) * 4 / 5);
+  }
+}
+
+@media largeScreen {
+  .benefit__answer {
+    width: calc((100% + 20px) * 3 / 4);
+  }
+}

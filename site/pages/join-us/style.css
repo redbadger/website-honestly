@@ -1,17 +1,25 @@
-@value badgerWhite from "../../css/_colors.css";
+@value badgerWhite, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .background {
   background-color: badgerWhite;
 }
 
-.apply {
-  composes: craft paperTear from "../../components/utils/background.css";
-}
-
 .bestCompanyLogo {
   margin: 0 auto;
   width: 160px;
+}
+
+.videoContainer {
+  background: badgerBlack;
+  color: badgerWhite;
+  padding: 40px 60px;
+  composes: dividerBlack from "../../css/_divider.css";
+}
+
+.video {
+  max-width: 960px;
+  margin: auto;
 }
 
 @media (min-width: 550px) {
@@ -20,15 +28,13 @@
     padding-right: 40px;
     padding-top: 23px;
   }
-
-  .upperBodyContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
 }
 
 @media mediumScreen {
+  .videoContainer {
+    padding: 110px 60px;
+  }
+
   .bestCompanyLogo {
     margin: 0 auto;
     width: 196px;
@@ -38,14 +44,6 @@
     display: block;
     padding-right: 50px;
     padding-top: 23px;
-  }
-
-  .videoContainer {
-    padding: 60px;
-  }
-
-  .upperBodyContainer {
-    padding: 0 60px;
   }
 }
 

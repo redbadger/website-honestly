@@ -1,35 +1,22 @@
-@value mediumScreen, largeScreen from "../../../css/_sizes.css";
-
-.noWrap {
-  white-space: nowrap;
-}
+@value mediumScreen from "../../../css/_sizes.css";
 
 .headings {
   padding-top: 24px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.headings p {
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.3em;
 }
 
 .h1 {
   composes: serif from "../../../css/typography/_fonts.css";
-  composes: fontL from "../../../css/typography/_fonts.css";
-  padding-bottom: 10px;
+  font-size: 40px;
+  line-height: 1.1em;
+  padding-bottom: 30px;
   text-align: center;
-}
-
-.h2 {
-  composes: fontS2 from '../../../css/typography/_fonts.css';
-  composes: serif from '../../../css/typography/_fonts.css';
-  margin: 0 0 0.8em;
-  text-align: center;
-}
-
-.bestCompanyLogo {
-  margin: 0 auto;
-  width: 120px;
-}
-
-@media mediumScreen {
-  .headings {
-    padding-top: 0;
-  }
-
 }
