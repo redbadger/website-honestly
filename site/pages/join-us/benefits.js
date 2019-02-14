@@ -13,7 +13,7 @@ const benefitsCategories = [
         mobileView: false,
         question: 'How does Red Badger support me if I’m unwell?',
         answer:
-          'As well as enhanced sick page, we also offer private medical cover provided by Vitality.',
+          'As well as enhanced sick pay, we also offer private medical cover provided by Vitality.',
       },
       {
         mobileView: false,

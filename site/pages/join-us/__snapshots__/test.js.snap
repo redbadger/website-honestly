@@ -1157,7 +1157,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
             Object {
               "benefits": Array [
                 Object {
-                  "answer": "As well as enhanced sick page, we also offer private medical cover provided by Vitality.",
+                  "answer": "As well as enhanced sick pay, we also offer private medical cover provided by Vitality.",
                   "mobileView": false,
                   "question": "How does Red Badger support me if I’m unwell?",
                 },
@@ -1299,7 +1299,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           benefits={
                             Array [
                               Object {
-                                "answer": "As well as enhanced sick page, we also offer private medical cover provided by Vitality.",
+                                "answer": "As well as enhanced sick pay, we also offer private medical cover provided by Vitality.",
                                 "mobileView": false,
                                 "question": "How does Red Badger support me if I’m unwell?",
                               },
@@ -1343,7 +1343,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                 key="How does Red Badger support me if I’m unwell?"
                               >
                                 <Benefit
-                                  answer="As well as enhanced sick page, we also offer private medical cover provided by Vitality."
+                                  answer="As well as enhanced sick pay, we also offer private medical cover provided by Vitality."
                                   mobileView={false}
                                   question="How does Red Badger support me if I’m unwell?"
                                 >
@@ -1377,7 +1377,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                       className="benefit__answer__hidden"
                                     >
                                       <p>
-                                        As well as enhanced sick page, we also offer private medical cover provided by Vitality.
+                                        As well as enhanced sick pay, we also offer private medical cover provided by Vitality.
                                       </p>
                                     </div>
                                   </div>
