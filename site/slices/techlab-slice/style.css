@@ -1,55 +1,67 @@
 @value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
-@value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
+@value contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
 
 .techLabSlice {
-  height: auto;
   min-height: 200px;
   width: 100%;
-  max-width: containerMaxWidth;
-  padding: 0 20px;
+  max-width: contentMaxWidth;
   margin: auto;
   position: relative;
 }
 
 .headingContainer {
-  height: 100%;
-  position: absolute;
-  top: 0;
+  text-align: center;
+  margin: auto;
+
+}
+
+.headingContainer p {
+  max-width: 260px;
+  font-family: ProximaNova, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
   width: 100%;
-  right: 0;
+  margin: auto;
 }
 
 .heading {
-  margin-top: 30px;
-  font-family: ProximaNova-Bold, sans-serif;
-  font-size: 25px;
-  font-weight: bold;
+  margin-top: 0;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
+  font-size: 30px;
+  font-weight: 900;
   line-height: 1.14;
-  color: #000000;
+  color: black;
   text-align: center;
 }
 
-.techLabImage {
+.heading__mobile {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.heading__desktop {
   display: none;
-  float: left;
-  width: calc(60% - 40px);
+}
+
+.techLabImage {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .exploreBtn {
   composes: primaryButton from "../../css/_links.css";
   background-color: badgerBlack;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: auto;
   width: 100%;
-  max-width: 220px;
-  font-size: 20px;
+  max-width: 240px;
+  font-size: 24px;
+  margin-top: 30px;
 }
 
 @media smallScreen {
   .heading {
-    margin-top: 0;
     font-size: 40px;
   }
 
@@ -57,23 +69,24 @@
     font-size: 30px;
   }
   
-  .exploreBtn {
-    bottom: 0;
-  }
 }
 
 @media largeScreen {
+  .techLabSlice {
+    max-height: 340px;
+  }
+
   .headingContainer {
     width: 42%;
     max-width: 500px;
+    float: right;
   }
   
   .heading {
     text-align: left;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 60px;
   }
   
   .heading sup {
@@ -82,5 +95,27 @@
   
   .techLabImage {
     display: block;
+    max-height: 370px;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .heading__mobile {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  .heading__desktop {
+    display: block;
+  }
+
+  .headingContainer p {
+    display: none;
+  }
+
+  .exploreBtn {
+    position: absolute;
+    top: 200px;
+    left: 58%;
   }
 }
