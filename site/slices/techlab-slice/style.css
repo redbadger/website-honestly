@@ -1,0 +1,86 @@
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
+@value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
+
+.techLabSlice {
+  height: auto;
+  min-height: 200px;
+  width: 100%;
+  max-width: containerMaxWidth;
+  padding: 0 20px;
+  margin: auto;
+  position: relative;
+}
+
+.headingContainer {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  right: 0;
+}
+
+.heading {
+  margin-top: 30px;
+  font-family: ProximaNova-Bold, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.14;
+  color: #000000;
+  text-align: center;
+}
+
+.techLabImage {
+  display: none;
+  float: left;
+  width: calc(60% - 40px);
+}
+
+.exploreBtn {
+  composes: primaryButton from "../../css/_links.css";
+  background-color: badgerBlack;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 220px;
+  font-size: 20px;
+}
+
+@media smallScreen {
+  .heading {
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .heading sup {
+    font-size: 30px;
+  }
+  
+  .exploreBtn {
+    bottom: 0;
+  }
+}
+
+@media largeScreen {
+  .headingContainer {
+    width: 42%;
+    max-width: 500px;
+  }
+  
+  .heading {
+    text-align: left;
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .heading sup {
+    font-size: 30px;
+  }
+  
+  .techLabImage {
+    display: block;
+  }
+}

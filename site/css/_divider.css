@@ -80,6 +80,10 @@
   background-color: badgerWhite;
 }
 
+.dividerWhiteSmall:after {
+  background-color: badgerWhite;
+}
+
 @media largeScreen {
   .dividerBlackLarge:before {
     display: block;
@@ -87,5 +91,9 @@
 
   .dividerWhiteSmall:before {
     display: none;
+  }
+
+  .dividerWhiteSmall:after {
+    display:none;
   }
 }
