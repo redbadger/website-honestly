@@ -83,8 +83,8 @@
   }
   
   .heading {
-    text-align: left;
     font-size: 40px;
+    text-align: left;
     position: absolute;
     top: 60px;
   }
