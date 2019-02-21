@@ -17,9 +17,11 @@ const Slice = (colour: string) => ({ children }: Props) => (
 const colour = {
   white: 'white',
   green: 'green',
+  yellow: 'yellow',
 };
 
 const WhiteSlice = Slice(`${colour.white}Slice`);
 const GreenSlice = Slice(`${colour.green}Slice`);
+const YellowSlice = Slice(`${colour.yellow}Slice`);
 
-export { WhiteSlice, GreenSlice };
+export { WhiteSlice, GreenSlice, YellowSlice };

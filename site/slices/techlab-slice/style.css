@@ -1,0 +1,158 @@
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
+@value contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
+
+.techLabSlice {
+  min-height: 200px;
+  width: 100%;
+  max-width: contentMaxWidth;
+  margin: auto;
+  position: relative;
+}
+
+.headingContainer {
+  text-align: center;
+  margin: auto;
+
+}
+
+.headingContainer p {
+  max-width: 260px;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: 100%;
+  margin: auto;
+}
+
+.heading {
+  margin-top: 0;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.14;
+  color: black;
+  text-align: center;
+}
+
+.heading__mobile {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.heading__desktop {
+  display: none;
+}
+
+.heading sup {
+  font-size: 20px;
+}
+
+.techLabImage {
+  display: none;
+  width: 100%;
+  max-width: 540px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.exploreBtn {
+  composes: primaryButton from "../../css/_links.css";
+  background-color: badgerBlack;
+  margin: auto;
+  width: 100%;
+  max-width: 240px;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+@media smallScreen {
+  .heading {
+    font-size: 40px;
+  }
+
+  .heading sup {
+    font-size: 30px;
+  }
+
+  .headingContainer p {
+    max-width: 340px;
+    font-size: 25px;
+  }
+}
+
+@media mediumScreen {
+  .techLabSlice {
+    height: 220px;
+    max-width: 740px;
+  }
+
+  .headingContainer {
+    width: 42%;
+    position: relative;
+    height: 100%;
+    float: right;
+  }
+  
+  .heading {
+    position: absolute;
+    font-size: 30px;
+    text-align: left;
+    top: 20px;
+  }
+  
+  .heading sup {
+    font-size: 30px;
+  }
+  
+  .techLabImage {
+    display: block;
+    float: left;
+    margin: 0;
+    display: block;
+    max-width: 380px;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .heading__mobile {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  .heading__desktop {
+    display: block;
+  }
+
+  .headingContainer p {
+    display: none;
+  }
+
+  .exploreBtn {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 150px;
+  }
+}
+
+@media largeScreen {
+  .techLabSlice {
+    height: 340px;
+    max-width: contentMaxWidth;
+  }
+
+  .heading {
+    font-size: 40px;
+    top: 60px;
+  }
+
+  .exploreBtn {
+    top: 230px;
+  }
+
+  .techLabImage {
+    max-width: none;
+    width: 50%;
+  }
+}
