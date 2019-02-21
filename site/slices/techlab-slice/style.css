@@ -47,6 +47,8 @@
 .techLabImage {
   display: block;
   width: 100%;
+  max-width: 540px;
+  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -68,25 +70,31 @@
   .heading sup {
     font-size: 30px;
   }
-  
+
+  .headingContainer p {
+    max-width: 340px;
+    font-size: 25px;
+  }
 }
 
-@media largeScreen {
+@media mediumScreen {
   .techLabSlice {
-    max-height: 340px;
+    height: 220px;
+    max-width: 740px;
   }
 
   .headingContainer {
     width: 42%;
-    max-width: 500px;
+    position: relative;
+    height: 100%;
     float: right;
   }
   
   .heading {
-    font-size: 40px;
-    text-align: left;
     position: absolute;
-    top: 60px;
+    font-size: 30px;
+    text-align: left;
+    top: 20px;
   }
   
   .heading sup {
@@ -94,10 +102,12 @@
   }
   
   .techLabImage {
+    float: left;
+    margin: 0;
     display: block;
-    max-height: 370px;
+    max-width: 380px;
     margin-bottom: 0;
-    width: auto;
+    width: 50%;
   }
 
   .heading__mobile {
@@ -114,8 +124,30 @@
   }
 
   .exploreBtn {
+    margin: 0;
     position: absolute;
-    top: 200px;
-    left: 58%;
+    left: 0;
+    top: 150px;
+  }
+}
+
+@media largeScreen {
+  .techLabSlice {
+    height: 340px;
+    max-width: contentMaxWidth;
+  }
+
+  .heading {
+    font-size: 40px;
+    top: 60px;
+  }
+
+  .exploreBtn {
+    top: 230px;
+  }
+
+  .techLabImage {
+    max-width: none;
+    width: 50%;
   }
 }
