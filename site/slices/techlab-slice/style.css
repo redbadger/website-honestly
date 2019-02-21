@@ -17,7 +17,7 @@
 
 .headingContainer p {
   max-width: 260px;
-  font-family: ProximaNova, sans-serif;
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
   font-size: 20px;
   font-weight: bold;
   color: black;
@@ -44,8 +44,12 @@
   display: none;
 }
 
+.heading sup {
+  font-size: 20px;
+}
+
 .techLabImage {
-  display: block;
+  display: none;
   width: 100%;
   max-width: 540px;
   margin: auto;
@@ -102,6 +106,7 @@
   }
   
   .techLabImage {
+    display: block;
     float: left;
     margin: 0;
     display: block;
