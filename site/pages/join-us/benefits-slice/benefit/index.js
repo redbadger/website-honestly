@@ -24,7 +24,7 @@ class Benefit extends Component<BenefitProps, BenefitState> {
   }
 
   componentWillReceiveProps = (props: BenefitProps) => {
-    this.setState({ showButton: !props.mobileView, open: props.mobileView });
+    this.setState({ showButton: !props.mobileView });
   };
 
   props: BenefitProps;
