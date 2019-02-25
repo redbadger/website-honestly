@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 import HR from '../../../../components/hr';
+import Link from '../../../../components/link';
 import { Grid, Cell } from '../../../../components/grid';
 import JobTitle from '../job-title';
 import RawHtml from '../../../../components/raw-html';
@@ -62,6 +63,9 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
                 <div className={styles.jobDescription}>
                   <RawHtml>{description}</RawHtml>
                 </div>
+                <Link to="job" navigationData={eventLink} className={styles.applyBtn}>
+                  Apply now
+                </Link>
               </div>
             </div>
             <HR color="black" customClassName={styles.mobileHorizontalLine} />

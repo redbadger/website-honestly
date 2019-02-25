@@ -95,7 +95,7 @@
   grid-column-end: col-end 4;
   grid-row-start: row-start 1;
   grid-row-end: row-start 1;
-  margin: 0 auto;
+  margin: 0 auto 0 10px;
   position: relative;
 }
 

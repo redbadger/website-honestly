@@ -813,6 +813,34 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                               />
                                             </RawHtml>
                                           </div>
+                                          <Link
+                                            className="applyBtn"
+                                            navigationData={
+                                              Object {
+                                                "slug": "awesome",
+                                              }
+                                            }
+                                            to="job"
+                                          >
+                                            <NavigationLink
+                                              className="applyBtn"
+                                              navigating={[Function]}
+                                              navigationData={
+                                                Object {
+                                                  "slug": "awesome",
+                                                }
+                                              }
+                                              stateKey="job"
+                                            >
+                                              <a
+                                                className="applyBtn"
+                                                href={null}
+                                                onClick={[Function]}
+                                              >
+                                                Apply now
+                                              </a>
+                                            </NavigationLink>
+                                          </Link>
                                         </div>
                                       </div>
                                       <HR
@@ -969,6 +997,34 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                               />
                                             </RawHtml>
                                           </div>
+                                          <Link
+                                            className="applyBtn"
+                                            navigationData={
+                                              Object {
+                                                "slug": "woof",
+                                              }
+                                            }
+                                            to="job"
+                                          >
+                                            <NavigationLink
+                                              className="applyBtn"
+                                              navigating={[Function]}
+                                              navigationData={
+                                                Object {
+                                                  "slug": "woof",
+                                                }
+                                              }
+                                              stateKey="job"
+                                            >
+                                              <a
+                                                className="applyBtn"
+                                                href={null}
+                                                onClick={[Function]}
+                                              >
+                                                Apply now
+                                              </a>
+                                            </NavigationLink>
+                                          </Link>
                                         </div>
                                       </div>
                                       <HR
@@ -1125,6 +1181,34 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                               />
                                             </RawHtml>
                                           </div>
+                                          <Link
+                                            className="applyBtn"
+                                            navigationData={
+                                              Object {
+                                                "slug": "slurp",
+                                              }
+                                            }
+                                            to="job"
+                                          >
+                                            <NavigationLink
+                                              className="applyBtn"
+                                              navigating={[Function]}
+                                              navigationData={
+                                                Object {
+                                                  "slug": "slurp",
+                                                }
+                                              }
+                                              stateKey="job"
+                                            >
+                                              <a
+                                                className="applyBtn"
+                                                href={null}
+                                                onClick={[Function]}
+                                              >
+                                                Apply now
+                                              </a>
+                                            </NavigationLink>
+                                          </Link>
                                         </div>
                                       </div>
                                       <HR

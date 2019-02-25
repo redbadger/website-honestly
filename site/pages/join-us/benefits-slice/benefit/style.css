@@ -22,7 +22,7 @@
 
 .benefit__heading {
   composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -92,7 +92,7 @@
   .benefit__answer {
     padding-right: 20px;
     /* negative margin used to preserve question margin bottom when answer is hidden */
-    margin-top: -14px;
+    margin-top: -4px;
     width: calc((100% + 20px) * 4 / 5);
   }
 }

@@ -43,14 +43,41 @@ class LightBoxGallery extends Component<LightBoxGalleryProps, LightBoxGallerySta
       position: props.position,
     };
 
-    (this: any).handleClick = this.handleClick.bind(this);
+    (this: any).rotateGallery = this.rotateGallery.bind(this);
+    (this: any).handleArrowNavigation = this.handleArrowNavigation.bind(this);
+  }
+
+  componentWillMount() {
+    document.addEventListener('keydown', this.handleArrowNavigation);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleArrowNavigation);
   }
 
   handleClick(direction: number) {
-    return () => {
-      const position = this.state.position + direction;
-      this.setState({ position });
-    };
+    return this.rotateGallery.bind(this, direction);
+  }
+
+  rotateGallery(direction: number) {
+    const position = this.state.position + direction;
+    this.setState({ position });
+  }
+
+  handleArrowNavigation(event: KeyboardEvent) {
+    if (this.isNextImage() && event.keyCode === 39) {
+      this.rotateGallery(1);
+    } else if (this.isPreviousImage() && event.keyCode === 37) {
+      this.rotateGallery(-1);
+    }
+  }
+
+  isPreviousImage() {
+    return this.state.position > 0;
+  }
+
+  isNextImage() {
+    return this.state.position < this.props.images.length - 1;
   }
 
   render() {
@@ -61,13 +88,15 @@ class LightBoxGallery extends Component<LightBoxGalleryProps, LightBoxGallerySta
         <div className={styles.background} />
         <div className={styles.galleryContainer}>
           <button className={styles.closeButton} onClick={onClose} />
-          {position > 0 && <NavigationButton onClick={this.handleClick(-1)} direction="back" />}
+          {this.isPreviousImage() && (
+            <NavigationButton onClick={this.handleClick(-1)} direction="back" />
+          )}
           <img
             src={images[position].image}
             className={styles.focusedImage}
             alt={images[position].altText}
           />
-          {position < images.length - 1 && (
+          {this.isNextImage() && (
             <NavigationButton onClick={this.handleClick(1)} direction="next" />
           )}
         </div>
