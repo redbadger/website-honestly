@@ -51,7 +51,7 @@
 
 .jobTitle {
   composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.2em;
   display: block;
   margin-bottom: 0;
@@ -151,6 +151,11 @@
 
 .jobsTimelineIntro {
   padding: 0;
+}
+
+.applyBtn {
+  composes: smallButton from "../../../../css/_links.css";
+  background-color: badgerRed;
 }
 
 @media smallScreen {

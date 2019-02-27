@@ -6,20 +6,32 @@ exports[`site/pages/join-us renders correctly 1`] = `
     jobs={
       Array [
         Object {
+          "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+          "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
           "department": "Awesome Squad",
           "description": "awesomeness is a full-time job so we need you here being awesome",
+          "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+          "id": "1",
           "slug": "awesome",
           "title": "chief awesome person",
         },
         Object {
+          "applicationUrl": "https://www.red-badger.com/jobs/woof",
+          "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
           "department": "four legged friends",
           "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+          "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+          "id": "2",
           "slug": "woof",
           "title": "Junior adorable dog",
         },
         Object {
+          "applicationUrl": "https://www.red-badger.com/jobs/tea",
+          "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
           "department": "Caffiends",
-          "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+          "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+          "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+          "id": "3",
           "slug": "slurp",
           "title": "Mid 2 Tea drinker",
         },
@@ -614,20 +626,32 @@ exports[`site/pages/join-us renders correctly 1`] = `
               jobs={
                 Array [
                   Object {
+                    "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+                    "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                     "department": "Awesome Squad",
                     "description": "awesomeness is a full-time job so we need you here being awesome",
+                    "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+                    "id": "1",
                     "slug": "awesome",
                     "title": "chief awesome person",
                   },
                   Object {
+                    "applicationUrl": "https://www.red-badger.com/jobs/woof",
+                    "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                     "department": "four legged friends",
                     "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                    "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+                    "id": "2",
                     "slug": "woof",
                     "title": "Junior adorable dog",
                   },
                   Object {
+                    "applicationUrl": "https://www.red-badger.com/jobs/tea",
+                    "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                     "department": "Caffiends",
-                    "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                    "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+                    "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+                    "id": "3",
                     "slug": "slurp",
                     "title": "Mid 2 Tea drinker",
                   },
@@ -641,20 +665,32 @@ exports[`site/pages/join-us renders correctly 1`] = `
                   jobs={
                     Array [
                       Object {
+                        "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+                        "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                         "department": "Awesome Squad",
                         "description": "awesomeness is a full-time job so we need you here being awesome",
+                        "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+                        "id": "1",
                         "slug": "awesome",
                         "title": "chief awesome person",
                       },
                       Object {
+                        "applicationUrl": "https://www.red-badger.com/jobs/woof",
+                        "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                         "department": "four legged friends",
                         "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                        "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+                        "id": "2",
                         "slug": "woof",
                         "title": "Junior adorable dog",
                       },
                       Object {
+                        "applicationUrl": "https://www.red-badger.com/jobs/tea",
+                        "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                         "department": "Caffiends",
-                        "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                        "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+                        "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+                        "id": "3",
                         "slug": "slurp",
                         "title": "Mid 2 Tea drinker",
                       },
@@ -680,8 +716,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       jobs={
                         Array [
                           Object {
+                            "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+                            "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                             "department": "Awesome Squad",
                             "description": "awesomeness is a full-time job so we need you here being awesome",
+                            "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+                            "id": "1",
                             "slug": "awesome",
                             "title": "chief awesome person",
                           },
@@ -709,8 +749,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           className="jobsList"
                         >
                           <JobsListEntry
+                            applicationUrl="https://www.red-badger.com/jobs/awesome"
+                            datePosted="Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)"
                             department="Awesome Squad"
                             description="awesomeness is a full-time job so we need you here being awesome"
+                            fullDescription="awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that"
+                            id="1"
                             key="key_chief awesome person"
                             slug="awesome"
                             title="chief awesome person"
@@ -720,8 +764,38 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               className="jobItem"
                               itemScope={true}
                               itemType="http://schema.org/JobPosting"
-                              key="entry_undefined"
+                              key="entry_1"
                             >
+                              <div
+                                itemProp="jobLocation"
+                                itemScope={true}
+                                itemType="http://schema.org/Place"
+                              >
+                                <meta
+                                  content="4th Floor, 2 Old Street Yard"
+                                  itemProp="streetAddress"
+                                />
+                                <meta
+                                  content="London"
+                                  itemProp="addressLocality"
+                                />
+                                <meta
+                                  content="Greater London"
+                                  itemProp="addressRegion"
+                                />
+                                <meta
+                                  content="EC1Y 8AF"
+                                  itemProp="postalCode"
+                                />
+                              </div>
+                              <meta
+                                content="Red Badger"
+                                itemProp="hiringOrganization"
+                              />
+                              <meta
+                                content={2018-02-08T16:42:31.000Z}
+                                itemProp="datePosted"
+                              />
                               <Grid
                                 fit={false}
                               >
@@ -750,6 +824,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                       >
                                         <div
                                           className="jobEntryHeader"
+                                          itemProp="title"
                                         >
                                           <JobTitle
                                             jobLink={
@@ -801,6 +876,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                         >
                                           <div
                                             className="jobDescription"
+                                            itemProp="description"
                                           >
                                             <RawHtml>
                                               <div
@@ -813,6 +889,34 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                               />
                                             </RawHtml>
                                           </div>
+                                          <Link
+                                            className="applyBtn"
+                                            navigationData={
+                                              Object {
+                                                "slug": "awesome",
+                                              }
+                                            }
+                                            to="job"
+                                          >
+                                            <NavigationLink
+                                              className="applyBtn"
+                                              navigating={[Function]}
+                                              navigationData={
+                                                Object {
+                                                  "slug": "awesome",
+                                                }
+                                              }
+                                              stateKey="job"
+                                            >
+                                              <a
+                                                className="applyBtn"
+                                                href={null}
+                                                onClick={[Function]}
+                                              >
+                                                Read more
+                                              </a>
+                                            </NavigationLink>
+                                          </Link>
                                         </div>
                                       </div>
                                       <HR
@@ -836,8 +940,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       jobs={
                         Array [
                           Object {
+                            "applicationUrl": "https://www.red-badger.com/jobs/woof",
+                            "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                             "department": "four legged friends",
                             "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                            "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+                            "id": "2",
                             "slug": "woof",
                             "title": "Junior adorable dog",
                           },
@@ -865,8 +973,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           className="jobsList"
                         >
                           <JobsListEntry
+                            applicationUrl="https://www.red-badger.com/jobs/woof"
+                            datePosted="Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)"
                             department="four legged friends"
                             description="Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack"
+                            fullDescription="Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that"
+                            id="2"
                             key="key_Junior adorable dog"
                             slug="woof"
                             title="Junior adorable dog"
@@ -876,8 +988,38 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               className="jobItem"
                               itemScope={true}
                               itemType="http://schema.org/JobPosting"
-                              key="entry_undefined"
+                              key="entry_2"
                             >
+                              <div
+                                itemProp="jobLocation"
+                                itemScope={true}
+                                itemType="http://schema.org/Place"
+                              >
+                                <meta
+                                  content="4th Floor, 2 Old Street Yard"
+                                  itemProp="streetAddress"
+                                />
+                                <meta
+                                  content="London"
+                                  itemProp="addressLocality"
+                                />
+                                <meta
+                                  content="Greater London"
+                                  itemProp="addressRegion"
+                                />
+                                <meta
+                                  content="EC1Y 8AF"
+                                  itemProp="postalCode"
+                                />
+                              </div>
+                              <meta
+                                content="Red Badger"
+                                itemProp="hiringOrganization"
+                              />
+                              <meta
+                                content={2018-02-08T16:42:31.000Z}
+                                itemProp="datePosted"
+                              />
                               <Grid
                                 fit={false}
                               >
@@ -906,6 +1048,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                       >
                                         <div
                                           className="jobEntryHeader"
+                                          itemProp="title"
                                         >
                                           <JobTitle
                                             jobLink={
@@ -957,6 +1100,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                         >
                                           <div
                                             className="jobDescription"
+                                            itemProp="description"
                                           >
                                             <RawHtml>
                                               <div
@@ -969,6 +1113,34 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                               />
                                             </RawHtml>
                                           </div>
+                                          <Link
+                                            className="applyBtn"
+                                            navigationData={
+                                              Object {
+                                                "slug": "woof",
+                                              }
+                                            }
+                                            to="job"
+                                          >
+                                            <NavigationLink
+                                              className="applyBtn"
+                                              navigating={[Function]}
+                                              navigationData={
+                                                Object {
+                                                  "slug": "woof",
+                                                }
+                                              }
+                                              stateKey="job"
+                                            >
+                                              <a
+                                                className="applyBtn"
+                                                href={null}
+                                                onClick={[Function]}
+                                              >
+                                                Read more
+                                              </a>
+                                            </NavigationLink>
+                                          </Link>
                                         </div>
                                       </div>
                                       <HR
@@ -992,8 +1164,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       jobs={
                         Array [
                           Object {
+                            "applicationUrl": "https://www.red-badger.com/jobs/tea",
+                            "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                             "department": "Caffiends",
-                            "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                            "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+                            "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+                            "id": "3",
                             "slug": "slurp",
                             "title": "Mid 2 Tea drinker",
                           },
@@ -1021,8 +1197,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           className="jobsList"
                         >
                           <JobsListEntry
+                            applicationUrl="https://www.red-badger.com/jobs/tea"
+                            datePosted="Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)"
                             department="Caffiends"
-                            description="Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required"
+                            description="Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required"
+                            fullDescription="Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that"
+                            id="3"
                             key="key_Mid 2 Tea drinker"
                             slug="slurp"
                             title="Mid 2 Tea drinker"
@@ -1032,8 +1212,38 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               className="jobItem"
                               itemScope={true}
                               itemType="http://schema.org/JobPosting"
-                              key="entry_undefined"
+                              key="entry_3"
                             >
+                              <div
+                                itemProp="jobLocation"
+                                itemScope={true}
+                                itemType="http://schema.org/Place"
+                              >
+                                <meta
+                                  content="4th Floor, 2 Old Street Yard"
+                                  itemProp="streetAddress"
+                                />
+                                <meta
+                                  content="London"
+                                  itemProp="addressLocality"
+                                />
+                                <meta
+                                  content="Greater London"
+                                  itemProp="addressRegion"
+                                />
+                                <meta
+                                  content="EC1Y 8AF"
+                                  itemProp="postalCode"
+                                />
+                              </div>
+                              <meta
+                                content="Red Badger"
+                                itemProp="hiringOrganization"
+                              />
+                              <meta
+                                content={2018-02-08T16:42:31.000Z}
+                                itemProp="datePosted"
+                              />
                               <Grid
                                 fit={false}
                               >
@@ -1062,6 +1272,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                       >
                                         <div
                                           className="jobEntryHeader"
+                                          itemProp="title"
                                         >
                                           <JobTitle
                                             jobLink={
@@ -1113,18 +1324,47 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                         >
                                           <div
                                             className="jobDescription"
+                                            itemProp="description"
                                           >
                                             <RawHtml>
                                               <div
                                                 className="typography rawHtml"
                                                 dangerouslySetInnerHTML={
                                                   Object {
-                                                    "__html": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                                                    "__html": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
                                                   }
                                                 }
                                               />
                                             </RawHtml>
                                           </div>
+                                          <Link
+                                            className="applyBtn"
+                                            navigationData={
+                                              Object {
+                                                "slug": "slurp",
+                                              }
+                                            }
+                                            to="job"
+                                          >
+                                            <NavigationLink
+                                              className="applyBtn"
+                                              navigating={[Function]}
+                                              navigationData={
+                                                Object {
+                                                  "slug": "slurp",
+                                                }
+                                              }
+                                              stateKey="job"
+                                            >
+                                              <a
+                                                className="applyBtn"
+                                                href={null}
+                                                onClick={[Function]}
+                                              >
+                                                Read more
+                                              </a>
+                                            </NavigationLink>
+                                          </Link>
                                         </div>
                                       </div>
                                       <HR
@@ -2264,7 +2504,9 @@ exports[`site/pages/join-us renders correctly 1`] = `
           </Container>
         </section>
       </BenefitsSlice>
-      <BadgerTestimonialsSlice>
+      <BadgerTestimonialsSlice
+        navPositionBottom={true}
+      >
         <div
           className="testimonials"
         >
@@ -2273,128 +2515,8 @@ exports[`site/pages/join-us renders correctly 1`] = `
           >
             <ClientOnly>
               <span>
-                <TestimonialNav
-                  currentIndex={0}
-                  onClick={[Function]}
-                >
-                  <div
-                    className="navigator"
-                  >
-                    <div
-                      className="container"
-                    >
-                      <Arrow
-                        currentIndex={0}
-                        direction="left"
-                        lastIndex={4}
-                        onClick={[Function]}
-                      >
-                        <button
-                          aria-label="left"
-                          className="arrow arrowLeft"
-                          onClick={[Function]}
-                        >
-                          <div
-                            className="inactive"
-                          />
-                          <div
-                            className="innerArrow"
-                          />
-                        </button>
-                      </Arrow>
-                      <div
-                        className="testimonials"
-                      >
-                        <TimelineNav
-                          currentIndex={0}
-                          key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer."
-                          onClick={[Function]}
-                          value={0}
-                        >
-                          <div
-                            aria-label="slide 1"
-                            className="active"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          key="I moved to London 4 years ago just to work at Red Badger, and it was easily one of the best decisions of my life. I’ve never worked in such a supportive environment, both on a professional and personal level - which is probably because the company consists of amazing people, who truly care about each other and the work they do."
-                          onClick={[Function]}
-                          value={1}
-                        >
-                          <div
-                            aria-label="slide 2"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          key="I am extremely happy to be in my first week as a Badger after meeting them on a project working from client side. I very quickly learned what an incredibly passionate and people-centric company they are. Their unparalleled pride in the work they do is evident at every level of the company, and in each of the products they create."
-                          onClick={[Function]}
-                          value={2}
-                        >
-                          <div
-                            aria-label="slide 3"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          key="I couldn’t wait to start at Red Badger. I heard of their good reputation but it was nothing compared to the support and opportunities I’ve received since working here. I’m really looking forward to what the year ahead brings!"
-                          onClick={[Function]}
-                          value={3}
-                        >
-                          <div
-                            aria-label="slide 4"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          key="Red Badger has supported me in transitioning back to a Product facing role giving me the opportunity to work on a new project but with the guidance of a director and fellow delivery lead who’ve watched over what I’ve been doing."
-                          onClick={[Function]}
-                          value={4}
-                        >
-                          <div
-                            aria-label="slide 5"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                      </div>
-                      <Arrow
-                        currentIndex={0}
-                        direction="right"
-                        lastIndex={4}
-                        onClick={[Function]}
-                      >
-                        <button
-                          aria-label="right"
-                          className="arrow arrowRight"
-                          onClick={[Function]}
-                        >
-                          <div
-                            className="active"
-                          />
-                          <div
-                            className="innerArrow"
-                          />
-                        </button>
-                      </Arrow>
-                    </div>
-                  </div>
-                </TestimonialNav>
                 <div
-                  className="content"
+                  className="content__bottomNav"
                 >
                   <ReactSwipableView
                     animateHeight={false}
@@ -2505,6 +2627,127 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       </div>
                     </div>
                   </ReactSwipableView>
+                  <TestimonialNav
+                    currentIndex={0}
+                    navPositionBottom={true}
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="navigator__bottom"
+                    >
+                      <div
+                        className="container"
+                      >
+                        <Arrow
+                          currentIndex={0}
+                          direction="left"
+                          lastIndex={4}
+                          onClick={[Function]}
+                        >
+                          <button
+                            aria-label="left"
+                            className="arrow arrowLeft"
+                            onClick={[Function]}
+                          >
+                            <div
+                              className="inactive"
+                            />
+                            <div
+                              className="innerArrow"
+                            />
+                          </button>
+                        </Arrow>
+                        <div
+                          className="testimonials"
+                        >
+                          <TimelineNav
+                            currentIndex={0}
+                            key="I had the pleasure of working with Red Badger in two previous roles. I was impressed with the impact the teams had in the wider business and the Red Badger culture. When I was asked to join and build out a new proposition it was a no brainer."
+                            onClick={[Function]}
+                            value={0}
+                          >
+                            <div
+                              aria-label="slide 1"
+                              className="active"
+                            >
+                              <span />
+                            </div>
+                          </TimelineNav>
+                          <TimelineNav
+                            currentIndex={0}
+                            key="I moved to London 4 years ago just to work at Red Badger, and it was easily one of the best decisions of my life. I’ve never worked in such a supportive environment, both on a professional and personal level - which is probably because the company consists of amazing people, who truly care about each other and the work they do."
+                            onClick={[Function]}
+                            value={1}
+                          >
+                            <div
+                              aria-label="slide 2"
+                              className="future"
+                            >
+                              <span />
+                            </div>
+                          </TimelineNav>
+                          <TimelineNav
+                            currentIndex={0}
+                            key="I am extremely happy to be in my first week as a Badger after meeting them on a project working from client side. I very quickly learned what an incredibly passionate and people-centric company they are. Their unparalleled pride in the work they do is evident at every level of the company, and in each of the products they create."
+                            onClick={[Function]}
+                            value={2}
+                          >
+                            <div
+                              aria-label="slide 3"
+                              className="future"
+                            >
+                              <span />
+                            </div>
+                          </TimelineNav>
+                          <TimelineNav
+                            currentIndex={0}
+                            key="I couldn’t wait to start at Red Badger. I heard of their good reputation but it was nothing compared to the support and opportunities I’ve received since working here. I’m really looking forward to what the year ahead brings!"
+                            onClick={[Function]}
+                            value={3}
+                          >
+                            <div
+                              aria-label="slide 4"
+                              className="future"
+                            >
+                              <span />
+                            </div>
+                          </TimelineNav>
+                          <TimelineNav
+                            currentIndex={0}
+                            key="Red Badger has supported me in transitioning back to a Product facing role giving me the opportunity to work on a new project but with the guidance of a director and fellow delivery lead who’ve watched over what I’ve been doing."
+                            onClick={[Function]}
+                            value={4}
+                          >
+                            <div
+                              aria-label="slide 5"
+                              className="future"
+                            >
+                              <span />
+                            </div>
+                          </TimelineNav>
+                        </div>
+                        <Arrow
+                          currentIndex={0}
+                          direction="right"
+                          lastIndex={4}
+                          onClick={[Function]}
+                        >
+                          <button
+                            aria-label="right"
+                            className="arrow arrowRight"
+                            onClick={[Function]}
+                          >
+                            <div
+                              className="active"
+                            />
+                            <div
+                              className="innerArrow"
+                            />
+                          </button>
+                        </Arrow>
+                      </div>
+                    </div>
+                  </TestimonialNav>
                 </div>
               </span>
             </ClientOnly>

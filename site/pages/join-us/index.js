@@ -46,7 +46,7 @@ const JoinUs = ({ jobs }: Props) => (
       <Jobs jobs={jobs} />
     </Container>
     <Benefits benefitsCategories={benefitsCategories} />
-    <BadgerTestimonialsSlice />
+    <BadgerTestimonialsSlice navPositionBottom />
     <div className={styles.videoContainer}>
       <div className={styles.video}>
         <Video title="Red Badger selfie video" id="dqJuBdCf-rA" type="youtube" />

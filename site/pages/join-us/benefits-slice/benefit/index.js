@@ -24,13 +24,20 @@ class Benefit extends Component<BenefitProps, BenefitState> {
   }
 
   componentWillReceiveProps = (props: BenefitProps) => {
-    this.setState({ showButton: !props.mobileView, open: props.mobileView });
+    this.setState({ showButton: !props.mobileView });
   };
 
   props: BenefitProps;
 
   handleClick = () => {
     this.setState({ open: !this.state.open });
+  };
+
+  toggleBenefitsVisibility = (open: boolean, showButton: boolean) => {
+    if (open || !showButton) {
+      return styles.benefit__answer__visible;
+    }
+    return styles.benefit__answer__hidden;
   };
 
   /* eslint-disable react/no-danger */
@@ -50,7 +57,7 @@ class Benefit extends Component<BenefitProps, BenefitState> {
             />
           )}
         </div>
-        <div className={open ? styles.benefit__answer__visible : styles.benefit__answer__hidden}>
+        <div className={this.toggleBenefitsVisibility(open, showButton)}>
           <p>{answer}</p>
         </div>
       </div>

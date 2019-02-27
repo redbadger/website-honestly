@@ -9,13 +9,14 @@ import testimonials from '../testimonials';
 type TestimonialNavProps = {
   currentIndex: number,
   onClick: Function,
+  navPositionBottom?: boolean,
 };
 
 const lastIndex = testimonials.length - 1;
 
-const TestimonialNav = ({ currentIndex, onClick }: TestimonialNavProps) => {
+const TestimonialNav = ({ currentIndex, onClick, navPositionBottom }: TestimonialNavProps) => {
   return (
-    <div className={styles.navigator}>
+    <div className={navPositionBottom ? styles.navigator__bottom : styles.navigator}>
       <div className={styles.container}>
         <Arrow
           direction="left"
