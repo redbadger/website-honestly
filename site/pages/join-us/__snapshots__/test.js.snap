@@ -6,20 +6,32 @@ exports[`site/pages/join-us renders correctly 1`] = `
     jobs={
       Array [
         Object {
+          "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+          "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
           "department": "Awesome Squad",
           "description": "awesomeness is a full-time job so we need you here being awesome",
+          "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+          "id": "1",
           "slug": "awesome",
           "title": "chief awesome person",
         },
         Object {
+          "applicationUrl": "https://www.red-badger.com/jobs/woof",
+          "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
           "department": "four legged friends",
           "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+          "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+          "id": "2",
           "slug": "woof",
           "title": "Junior adorable dog",
         },
         Object {
+          "applicationUrl": "https://www.red-badger.com/jobs/tea",
+          "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
           "department": "Caffiends",
-          "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+          "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+          "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+          "id": "3",
           "slug": "slurp",
           "title": "Mid 2 Tea drinker",
         },
@@ -614,20 +626,32 @@ exports[`site/pages/join-us renders correctly 1`] = `
               jobs={
                 Array [
                   Object {
+                    "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+                    "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                     "department": "Awesome Squad",
                     "description": "awesomeness is a full-time job so we need you here being awesome",
+                    "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+                    "id": "1",
                     "slug": "awesome",
                     "title": "chief awesome person",
                   },
                   Object {
+                    "applicationUrl": "https://www.red-badger.com/jobs/woof",
+                    "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                     "department": "four legged friends",
                     "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                    "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+                    "id": "2",
                     "slug": "woof",
                     "title": "Junior adorable dog",
                   },
                   Object {
+                    "applicationUrl": "https://www.red-badger.com/jobs/tea",
+                    "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                     "department": "Caffiends",
-                    "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                    "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+                    "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+                    "id": "3",
                     "slug": "slurp",
                     "title": "Mid 2 Tea drinker",
                   },
@@ -641,20 +665,32 @@ exports[`site/pages/join-us renders correctly 1`] = `
                   jobs={
                     Array [
                       Object {
+                        "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+                        "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                         "department": "Awesome Squad",
                         "description": "awesomeness is a full-time job so we need you here being awesome",
+                        "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+                        "id": "1",
                         "slug": "awesome",
                         "title": "chief awesome person",
                       },
                       Object {
+                        "applicationUrl": "https://www.red-badger.com/jobs/woof",
+                        "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                         "department": "four legged friends",
                         "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                        "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+                        "id": "2",
                         "slug": "woof",
                         "title": "Junior adorable dog",
                       },
                       Object {
+                        "applicationUrl": "https://www.red-badger.com/jobs/tea",
+                        "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                         "department": "Caffiends",
-                        "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                        "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+                        "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+                        "id": "3",
                         "slug": "slurp",
                         "title": "Mid 2 Tea drinker",
                       },
@@ -680,8 +716,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       jobs={
                         Array [
                           Object {
+                            "applicationUrl": "https://www.red-badger.com/jobs/awesome",
+                            "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                             "department": "Awesome Squad",
                             "description": "awesomeness is a full-time job so we need you here being awesome",
+                            "fullDescription": "awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that",
+                            "id": "1",
                             "slug": "awesome",
                             "title": "chief awesome person",
                           },
@@ -709,8 +749,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           className="jobsList"
                         >
                           <JobsListEntry
+                            applicationUrl="https://www.red-badger.com/jobs/awesome"
+                            datePosted="Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)"
                             department="Awesome Squad"
                             description="awesomeness is a full-time job so we need you here being awesome"
+                            fullDescription="awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that"
+                            id="1"
                             key="key_chief awesome person"
                             slug="awesome"
                             title="chief awesome person"
@@ -720,7 +764,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               className="jobItem"
                               itemScope={true}
                               itemType="http://schema.org/JobPosting"
-                              key="entry_undefined"
+                              key="entry_1"
                             >
                               <div
                                 itemProp="jobLocation"
@@ -749,7 +793,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                 itemProp="hiringOrganization"
                               />
                               <meta
-                                content={Date { NaN }}
+                                content={2018-02-08T16:42:31.000Z}
                                 itemProp="datePosted"
                               />
                               <Grid
@@ -896,8 +940,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       jobs={
                         Array [
                           Object {
+                            "applicationUrl": "https://www.red-badger.com/jobs/woof",
+                            "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                             "department": "four legged friends",
                             "description": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
+                            "fullDescription": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that",
+                            "id": "2",
                             "slug": "woof",
                             "title": "Junior adorable dog",
                           },
@@ -925,8 +973,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           className="jobsList"
                         >
                           <JobsListEntry
+                            applicationUrl="https://www.red-badger.com/jobs/woof"
+                            datePosted="Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)"
                             department="four legged friends"
                             description="Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack"
+                            fullDescription="Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that"
+                            id="2"
                             key="key_Junior adorable dog"
                             slug="woof"
                             title="Junior adorable dog"
@@ -936,7 +988,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               className="jobItem"
                               itemScope={true}
                               itemType="http://schema.org/JobPosting"
-                              key="entry_undefined"
+                              key="entry_2"
                             >
                               <div
                                 itemProp="jobLocation"
@@ -965,7 +1017,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                 itemProp="hiringOrganization"
                               />
                               <meta
-                                content={Date { NaN }}
+                                content={2018-02-08T16:42:31.000Z}
                                 itemProp="datePosted"
                               />
                               <Grid
@@ -1112,8 +1164,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       jobs={
                         Array [
                           Object {
+                            "applicationUrl": "https://www.red-badger.com/jobs/tea",
+                            "datePosted": "Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)",
                             "department": "Caffiends",
-                            "description": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                            "description": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
+                            "fullDescription": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that",
+                            "id": "3",
                             "slug": "slurp",
                             "title": "Mid 2 Tea drinker",
                           },
@@ -1141,8 +1197,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           className="jobsList"
                         >
                           <JobsListEntry
+                            applicationUrl="https://www.red-badger.com/jobs/tea"
+                            datePosted="Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)"
                             department="Caffiends"
-                            description="Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required"
+                            description="Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required"
+                            fullDescription="Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that"
+                            id="3"
                             key="key_Mid 2 Tea drinker"
                             slug="slurp"
                             title="Mid 2 Tea drinker"
@@ -1152,7 +1212,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               className="jobItem"
                               itemScope={true}
                               itemType="http://schema.org/JobPosting"
-                              key="entry_undefined"
+                              key="entry_3"
                             >
                               <div
                                 itemProp="jobLocation"
@@ -1181,7 +1241,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                 itemProp="hiringOrganization"
                               />
                               <meta
-                                content={Date { NaN }}
+                                content={2018-02-08T16:42:31.000Z}
                                 itemProp="datePosted"
                               />
                               <Grid
@@ -1271,7 +1331,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                                 className="typography rawHtml"
                                                 dangerouslySetInnerHTML={
                                                   Object {
-                                                    "__html": "Ideally you have 2-4 years experience drinking team, proficiency with green and white teas is ideal but not required",
+                                                    "__html": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
                                                   }
                                                 }
                                               />
