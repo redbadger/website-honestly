@@ -18,6 +18,7 @@ const normalizeJobs = jobs =>
     fullDescription: sanitizeHtml(job.description + job.requirements + job.benefits),
     applicationUrl: job.application_url,
     slug: paramCase(job.title),
+    datePosted: job.created_at,
   }));
 
 export const getJobs = (key: string) =>

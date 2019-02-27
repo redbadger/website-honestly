@@ -12,6 +12,7 @@ type _JobProps = {
   department?: ?string,
   applicationUrl: string,
   slug?: string,
+  datePosted: string,
 };
 
 type _JobsProps = {
@@ -20,7 +21,6 @@ type _JobsProps = {
 
 const Jobs = ({ jobs }: _JobsProps) => {
   const jobsClasses = `jobs ${styles.jobs}`;
-
   return (
     <div className={jobsClasses}>
       <JobList jobs={jobs} />

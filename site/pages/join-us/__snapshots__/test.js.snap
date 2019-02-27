@@ -722,6 +722,36 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               itemType="http://schema.org/JobPosting"
                               key="entry_undefined"
                             >
+                              <div
+                                itemProp="jobLocation"
+                                itemScope={true}
+                                itemType="http://schema.org/Place"
+                              >
+                                <meta
+                                  content="4th Floor, 2 Old Street Yard"
+                                  itemProp="streetAddress"
+                                />
+                                <meta
+                                  content="London"
+                                  itemProp="addressLocality"
+                                />
+                                <meta
+                                  content="Greater London"
+                                  itemProp="addressRegion"
+                                />
+                                <meta
+                                  content="EC1Y 8AF"
+                                  itemProp="postalCode"
+                                />
+                              </div>
+                              <meta
+                                content="Red Badger"
+                                itemProp="hiringOrganization"
+                              />
+                              <meta
+                                content={Date { NaN }}
+                                itemProp="datePosted"
+                              />
                               <Grid
                                 fit={false}
                               >
@@ -750,6 +780,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                       >
                                         <div
                                           className="jobEntryHeader"
+                                          itemProp="title"
                                         >
                                           <JobTitle
                                             jobLink={
@@ -801,6 +832,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                         >
                                           <div
                                             className="jobDescription"
+                                            itemProp="description"
                                           >
                                             <RawHtml>
                                               <div
@@ -906,6 +938,36 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               itemType="http://schema.org/JobPosting"
                               key="entry_undefined"
                             >
+                              <div
+                                itemProp="jobLocation"
+                                itemScope={true}
+                                itemType="http://schema.org/Place"
+                              >
+                                <meta
+                                  content="4th Floor, 2 Old Street Yard"
+                                  itemProp="streetAddress"
+                                />
+                                <meta
+                                  content="London"
+                                  itemProp="addressLocality"
+                                />
+                                <meta
+                                  content="Greater London"
+                                  itemProp="addressRegion"
+                                />
+                                <meta
+                                  content="EC1Y 8AF"
+                                  itemProp="postalCode"
+                                />
+                              </div>
+                              <meta
+                                content="Red Badger"
+                                itemProp="hiringOrganization"
+                              />
+                              <meta
+                                content={Date { NaN }}
+                                itemProp="datePosted"
+                              />
                               <Grid
                                 fit={false}
                               >
@@ -934,6 +996,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                       >
                                         <div
                                           className="jobEntryHeader"
+                                          itemProp="title"
                                         >
                                           <JobTitle
                                             jobLink={
@@ -985,6 +1048,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                         >
                                           <div
                                             className="jobDescription"
+                                            itemProp="description"
                                           >
                                             <RawHtml>
                                               <div
@@ -1090,6 +1154,36 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               itemType="http://schema.org/JobPosting"
                               key="entry_undefined"
                             >
+                              <div
+                                itemProp="jobLocation"
+                                itemScope={true}
+                                itemType="http://schema.org/Place"
+                              >
+                                <meta
+                                  content="4th Floor, 2 Old Street Yard"
+                                  itemProp="streetAddress"
+                                />
+                                <meta
+                                  content="London"
+                                  itemProp="addressLocality"
+                                />
+                                <meta
+                                  content="Greater London"
+                                  itemProp="addressRegion"
+                                />
+                                <meta
+                                  content="EC1Y 8AF"
+                                  itemProp="postalCode"
+                                />
+                              </div>
+                              <meta
+                                content="Red Badger"
+                                itemProp="hiringOrganization"
+                              />
+                              <meta
+                                content={Date { NaN }}
+                                itemProp="datePosted"
+                              />
                               <Grid
                                 fit={false}
                               >
@@ -1118,6 +1212,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                       >
                                         <div
                                           className="jobEntryHeader"
+                                          itemProp="title"
                                         >
                                           <JobTitle
                                             jobLink={
@@ -1169,6 +1264,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                         >
                                           <div
                                             className="jobDescription"
+                                            itemProp="description"
                                           >
                                             <RawHtml>
                                               <div
