@@ -72,7 +72,7 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
                   <RawHtml>{description}</RawHtml>
                 </div>
                 <Link to="job" navigationData={eventLink} className={styles.applyBtn}>
-                  Apply now
+                  Read more
                 </Link>
               </div>
             </div>

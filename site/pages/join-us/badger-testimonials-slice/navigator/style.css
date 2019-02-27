@@ -5,6 +5,12 @@
   background: badgerWhite;
 }
 
+.navigator__bottom {
+  margin-top: -30px;
+  margin-bottom: 80px;
+  background: badgerWhite;
+}
+
 .container {
   position: relative;
   width: 123px;
@@ -35,5 +41,9 @@
 @media largeScreen {
   .container {
     top: 95px;
+  }
+
+  .navigator__bottom {
+    margin-bottom: 100px;
   }
 }

@@ -21,6 +21,10 @@
   padding: 97px 0 47px;
 }
 
+.content__bottomNav {
+  padding: 30px 0 50px;
+}
+
 @media mediumScreen {
   .content {
     width: 100%;
@@ -30,5 +34,9 @@
 @media largeScreen {
   .content {
     padding: 137px 0 77px;
+  }
+
+  .content__bottomNav {
+    padding: 70px 0 100px;
   }
 }

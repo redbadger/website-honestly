@@ -12,7 +12,14 @@ type BadgerTestimonialState = {
   currentIndex: number,
 };
 
-class BadgerTestimonialsSlice extends React.Component<*, BadgerTestimonialState> {
+type BadgerTestimonialProps = {
+  navPositionBottom?: boolean,
+};
+
+class BadgerTestimonialsSlice extends React.Component<
+  BadgerTestimonialProps,
+  BadgerTestimonialState,
+> {
   state = {
     currentIndex: 0,
   };
@@ -25,13 +32,14 @@ class BadgerTestimonialsSlice extends React.Component<*, BadgerTestimonialState>
 
   render() {
     const { currentIndex } = this.state;
+    const { navPositionBottom } = this.props;
 
     return (
       <div className={styles.testimonials}>
         <div className={styles.container}>
           <ClientOnly>
-            <Navigator currentIndex={currentIndex} onClick={this.setPage} />
-            <div className={styles.content}>
+            {!navPositionBottom && <Navigator currentIndex={currentIndex} onClick={this.setPage} />}
+            <div className={navPositionBottom ? styles.content__bottomNav : styles.content}>
               <SwipeableViews index={currentIndex} onChangeIndex={this.setPage}>
                 {testimonials.map(t => (
                   <Testimonial
@@ -43,6 +51,9 @@ class BadgerTestimonialsSlice extends React.Component<*, BadgerTestimonialState>
                   />
                 ))}
               </SwipeableViews>
+              {navPositionBottom && (
+                <Navigator currentIndex={currentIndex} onClick={this.setPage} navPositionBottom />
+              )}
             </div>
           </ClientOnly>
         </div>
