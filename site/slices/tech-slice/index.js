@@ -17,6 +17,7 @@ import elasticsearchImg from './img/elasticsearch.png';
 type TechListItemProps = {
   name: string,
   imgSrc: string,
+  plusSymbol?: boolean,
 };
 
 const trackTechLogosClicks = () =>
@@ -26,13 +27,14 @@ const trackTechLogosClicks = () =>
     label: 'Technology',
   });
 
-function TechListItem({ name, imgSrc }: TechListItemProps) {
+function TechListItem({ name, imgSrc, plusSymbol }: TechListItemProps) {
   return (
     <li className={styles.techListItem}>
       <figure className={styles.techItem}>
         <img alt={name + ' logo'} className={styles.techLogo} src={imgSrc} />
         <figcaption className={styles.techName}>{name}</figcaption>
       </figure>
+      {plusSymbol && <img alt="" className={styles.techPlusSymbol} src={imgSrc} />}
     </li>
   );
 }
@@ -50,8 +52,17 @@ export default function TechSlice() {
         <TechListItem name="Serverless" imgSrc={serverlessImg} />
         <TechListItem name="GraphQL" imgSrc={graphqlImg} />
         <TechListItem name="Docker" imgSrc={dockerImg} />
-        <TechListItem name="NodeJS" imgSrc={nodejsImg} />
-        <TechListItem name="React" imgSrc={reactImg} />
+        <TechListItem name="NodeJS" imgSrc={nodejsImg} plusSymbol />
+        <TechListItem name="React" imgSrc={reactImg} plusSymbol />
+        <TechListItem name="Elasticsearch" imgSrc={elasticsearchImg} />
+      </ul>
+      <ul className={styles.techList} onClick={trackTechLogosClicks}>
+        {/* replace icons when ready */}
+        <TechListItem name="Serverless" imgSrc={serverlessImg} />
+        <TechListItem name="GraphQL" imgSrc={graphqlImg} />
+        <TechListItem name="Docker" imgSrc={dockerImg} />
+        <TechListItem name="NodeJS" imgSrc={nodejsImg} plusSymbol />
+        <TechListItem name="React" imgSrc={reactImg} plusSymbol />
         <TechListItem name="Elasticsearch" imgSrc={elasticsearchImg} />
       </ul>
 
