@@ -72,6 +72,10 @@
   font-weight: bold;
 }
 
+.jobEntryWrapper {
+  cursor: pointer;
+}
+
 .jobEntryHeader {
   position: relative;
 }
