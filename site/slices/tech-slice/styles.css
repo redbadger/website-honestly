@@ -13,7 +13,7 @@
   composes: dividerBlack from '../../css/_divider.css';
   color: badgerWhite;
   background-color: badgerBlack;
-  padding: 30px 20px 40px 20px;
+  padding: 30px 0 40px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 0px;
 }
 
 .techList:last-of-type {
@@ -62,6 +62,17 @@
 
 .techLogo {
   max-height: logoMaxWidth;
+}
+
+.techLogo--tall {
+  max-height: 70px;
+  margin-bottom: -10px;
+}
+
+.techLogo--wide {
+  max-height: 50px;
+  max-width: 80px;
+  margin-top: 11px;
 }
 
 .techName {
@@ -87,8 +98,18 @@
     max-height: logoMaxWidthLarge;
   }
 
+  .techLogo--tall {
+    max-height: 90px;
+  }
+  
+  .techLogo--wide {
+    max-height: 75px;
+    max-width: 130px;
+    margin-top: 5px;
+  }
+
   .techPlusSymbol {
-    max-height: 20px;
+    height: 22px;
     top: calc(logoMaxWidthLarge / 2);
   }
 }
@@ -126,8 +147,16 @@
 }
 
 @media largeScreen {
+  .techList {
+    margin-bottom: 70px;
+  }
+  
+  .techList:last-of-type {
+    margin-bottom: 0;
+  }
+
   .techPlusSymbol {
-    max-height: 27px;
+    height: 26px;
   }
 
   .techList {
