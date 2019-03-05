@@ -2,14 +2,10 @@
 @value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .benefit__question {
+  cursor: default;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.benefit__question:hover,
-.benefit__more:hover {
-  cursor: pointer;
 }
 
 .benefit {
@@ -85,6 +81,10 @@
 }
 
 @media mediumScreen {
+  .benefit__question {
+    cursor: pointer;
+  }
+
   .benefit__heading {
     padding-right: 20px;
   }
