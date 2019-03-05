@@ -21,6 +21,7 @@
 }
 
 .category__content {
+  cursor: pointer;
   align-items: center;
   justify-content: space-between;
   position: relative;

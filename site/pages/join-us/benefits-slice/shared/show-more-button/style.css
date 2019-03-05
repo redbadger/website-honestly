@@ -1,6 +1,7 @@
 @value badgerBlack, badgerRed from "../../../../../css/_colors.css";
 
 .button__more {
+  cursor: pointer;
   display: block;
   height: 21px;
   width: 21px;

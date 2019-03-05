@@ -767,170 +767,139 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               key="entry_1"
                             >
                               <div
-                                itemProp="jobLocation"
-                                itemScope={true}
-                                itemType="http://schema.org/Place"
-                              >
-                                <meta
-                                  content="4th Floor, 2 Old Street Yard"
-                                  itemProp="streetAddress"
-                                />
-                                <meta
-                                  content="London"
-                                  itemProp="addressLocality"
-                                />
-                                <meta
-                                  content="Greater London"
-                                  itemProp="addressRegion"
-                                />
-                                <meta
-                                  content="EC1Y 8AF"
-                                  itemProp="postalCode"
-                                />
-                              </div>
-                              <meta
-                                content="Red Badger"
-                                itemProp="hiringOrganization"
-                              />
-                              <meta
-                                content={2018-02-08T16:42:31.000Z}
-                                itemProp="datePosted"
-                              />
-                              <Grid
-                                fit={false}
+                                className="jobEntryWrapper"
+                                onClick={[Function]}
                               >
                                 <div
-                                  className="grid withGutter responsive-grid-smallScreen"
+                                  itemProp="jobLocation"
+                                  itemScope={true}
+                                  itemType="http://schema.org/Place"
                                 >
-                                  <Cell
-                                    breakOn="smallScreen"
-                                    size={12}
+                                  <meta
+                                    content="4th Floor, 2 Old Street Yard"
+                                    itemProp="streetAddress"
+                                  />
+                                  <meta
+                                    content="London"
+                                    itemProp="addressLocality"
+                                  />
+                                  <meta
+                                    content="Greater London"
+                                    itemProp="addressRegion"
+                                  />
+                                  <meta
+                                    content="EC1Y 8AF"
+                                    itemProp="postalCode"
+                                  />
+                                </div>
+                                <meta
+                                  content="Red Badger"
+                                  itemProp="hiringOrganization"
+                                />
+                                <meta
+                                  content={2018-02-08T16:42:31.000Z}
+                                  itemProp="datePosted"
+                                />
+                                <Grid
+                                  fit={false}
+                                >
+                                  <div
+                                    className="grid withGutter responsive-grid-smallScreen"
                                   >
-                                    <div
-                                      className="responsive-cell-smallScreen cell size12of12 hideOndont"
+                                    <Cell
+                                      breakOn="smallScreen"
+                                      size={12}
                                     >
-                                      <button
-                                        aria-expanded={false}
-                                        aria-label="expand chief awesome person job description"
-                                        className="jobEntry__more"
-                                        onClick={[Function]}
-                                      >
-                                        <span
-                                          className="jobEntry__arrow"
-                                        />
-                                      </button>
                                       <div
-                                        className="jobEntryHeaderContainer"
+                                        className="responsive-cell-smallScreen cell size12of12 hideOndont"
                                       >
-                                        <div
-                                          className="jobEntryHeader"
-                                          itemProp="title"
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="expand chief awesome person job description"
+                                          className="jobEntry__more"
+                                          onClick={[Function]}
                                         >
-                                          <JobTitle
-                                            jobLink={
-                                              Object {
-                                                "slug": "awesome",
-                                              }
-                                            }
-                                            jobTitle="chief awesome person"
+                                          <span
+                                            className="jobEntry__arrow"
+                                          />
+                                        </button>
+                                        <div
+                                          className="jobEntryHeaderContainer"
+                                        >
+                                          <div
+                                            className="jobEntryHeader"
+                                            itemProp="title"
                                           >
                                             <h3
                                               className="jobTitle"
                                               itemProp="name"
                                             >
-                                              <Link
-                                                className="jobTitleLink"
-                                                navigationData={
-                                                  Object {
-                                                    "slug": "awesome",
-                                                  }
-                                                }
-                                                to="job"
-                                              >
-                                                <NavigationLink
-                                                  className="jobTitleLink"
-                                                  navigating={[Function]}
-                                                  navigationData={
+                                              <span>
+                                                chief awesome person
+                                              </span>
+                                            </h3>
+                                          </div>
+                                          <div
+                                            className="jobDescription__hidden"
+                                          >
+                                            <div
+                                              className="jobDescription"
+                                              itemProp="description"
+                                            >
+                                              <RawHtml>
+                                                <div
+                                                  className="typography rawHtml"
+                                                  dangerouslySetInnerHTML={
                                                     Object {
-                                                      "slug": "awesome",
+                                                      "__html": "awesomeness is a full-time job so we need you here being awesome",
                                                     }
                                                   }
-                                                  stateKey="job"
-                                                >
-                                                  <a
-                                                    className="jobTitleLink"
-                                                    href={null}
-                                                    onClick={[Function]}
-                                                  >
-                                                    <span>
-                                                      chief awesome person
-                                                    </span>
-                                                  </a>
-                                                </NavigationLink>
-                                              </Link>
-                                            </h3>
-                                          </JobTitle>
-                                        </div>
-                                        <div
-                                          className="jobDescription__hidden"
-                                        >
-                                          <div
-                                            className="jobDescription"
-                                            itemProp="description"
-                                          >
-                                            <RawHtml>
-                                              <div
-                                                className="typography rawHtml"
-                                                dangerouslySetInnerHTML={
-                                                  Object {
-                                                    "__html": "awesomeness is a full-time job so we need you here being awesome",
-                                                  }
-                                                }
-                                              />
-                                            </RawHtml>
-                                          </div>
-                                          <Link
-                                            className="applyBtn"
-                                            navigationData={
-                                              Object {
-                                                "slug": "awesome",
-                                              }
-                                            }
-                                            to="job"
-                                          >
-                                            <NavigationLink
+                                                />
+                                              </RawHtml>
+                                            </div>
+                                            <Link
                                               className="applyBtn"
-                                              navigating={[Function]}
                                               navigationData={
                                                 Object {
                                                   "slug": "awesome",
                                                 }
                                               }
-                                              stateKey="job"
+                                              to="job"
                                             >
-                                              <a
+                                              <NavigationLink
                                                 className="applyBtn"
-                                                href={null}
-                                                onClick={[Function]}
+                                                navigating={[Function]}
+                                                navigationData={
+                                                  Object {
+                                                    "slug": "awesome",
+                                                  }
+                                                }
+                                                stateKey="job"
                                               >
-                                                Read more
-                                              </a>
-                                            </NavigationLink>
-                                          </Link>
+                                                <a
+                                                  className="applyBtn"
+                                                  href={null}
+                                                  onClick={[Function]}
+                                                >
+                                                  Read more
+                                                </a>
+                                              </NavigationLink>
+                                            </Link>
+                                          </div>
                                         </div>
+                                        <HR
+                                          color="black"
+                                          customClassName="mobileHorizontalLine"
+                                        >
+                                          <hr
+                                            className="hr black mobileHorizontalLine"
+                                          />
+                                        </HR>
                                       </div>
-                                      <HR
-                                        color="black"
-                                        customClassName="mobileHorizontalLine"
-                                      >
-                                        <hr
-                                          className="hr black mobileHorizontalLine"
-                                        />
-                                      </HR>
-                                    </div>
-                                  </Cell>
-                                </div>
-                              </Grid>
+                                    </Cell>
+                                  </div>
+                                </Grid>
+                              </div>
                             </li>
                           </JobsListEntry>
                         </ul>
@@ -991,170 +960,139 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               key="entry_2"
                             >
                               <div
-                                itemProp="jobLocation"
-                                itemScope={true}
-                                itemType="http://schema.org/Place"
-                              >
-                                <meta
-                                  content="4th Floor, 2 Old Street Yard"
-                                  itemProp="streetAddress"
-                                />
-                                <meta
-                                  content="London"
-                                  itemProp="addressLocality"
-                                />
-                                <meta
-                                  content="Greater London"
-                                  itemProp="addressRegion"
-                                />
-                                <meta
-                                  content="EC1Y 8AF"
-                                  itemProp="postalCode"
-                                />
-                              </div>
-                              <meta
-                                content="Red Badger"
-                                itemProp="hiringOrganization"
-                              />
-                              <meta
-                                content={2018-02-08T16:42:31.000Z}
-                                itemProp="datePosted"
-                              />
-                              <Grid
-                                fit={false}
+                                className="jobEntryWrapper"
+                                onClick={[Function]}
                               >
                                 <div
-                                  className="grid withGutter responsive-grid-smallScreen"
+                                  itemProp="jobLocation"
+                                  itemScope={true}
+                                  itemType="http://schema.org/Place"
                                 >
-                                  <Cell
-                                    breakOn="smallScreen"
-                                    size={12}
+                                  <meta
+                                    content="4th Floor, 2 Old Street Yard"
+                                    itemProp="streetAddress"
+                                  />
+                                  <meta
+                                    content="London"
+                                    itemProp="addressLocality"
+                                  />
+                                  <meta
+                                    content="Greater London"
+                                    itemProp="addressRegion"
+                                  />
+                                  <meta
+                                    content="EC1Y 8AF"
+                                    itemProp="postalCode"
+                                  />
+                                </div>
+                                <meta
+                                  content="Red Badger"
+                                  itemProp="hiringOrganization"
+                                />
+                                <meta
+                                  content={2018-02-08T16:42:31.000Z}
+                                  itemProp="datePosted"
+                                />
+                                <Grid
+                                  fit={false}
+                                >
+                                  <div
+                                    className="grid withGutter responsive-grid-smallScreen"
                                   >
-                                    <div
-                                      className="responsive-cell-smallScreen cell size12of12 hideOndont"
+                                    <Cell
+                                      breakOn="smallScreen"
+                                      size={12}
                                     >
-                                      <button
-                                        aria-expanded={false}
-                                        aria-label="expand Junior adorable dog job description"
-                                        className="jobEntry__more"
-                                        onClick={[Function]}
-                                      >
-                                        <span
-                                          className="jobEntry__arrow"
-                                        />
-                                      </button>
                                       <div
-                                        className="jobEntryHeaderContainer"
+                                        className="responsive-cell-smallScreen cell size12of12 hideOndont"
                                       >
-                                        <div
-                                          className="jobEntryHeader"
-                                          itemProp="title"
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="expand Junior adorable dog job description"
+                                          className="jobEntry__more"
+                                          onClick={[Function]}
                                         >
-                                          <JobTitle
-                                            jobLink={
-                                              Object {
-                                                "slug": "woof",
-                                              }
-                                            }
-                                            jobTitle="Junior adorable dog"
+                                          <span
+                                            className="jobEntry__arrow"
+                                          />
+                                        </button>
+                                        <div
+                                          className="jobEntryHeaderContainer"
+                                        >
+                                          <div
+                                            className="jobEntryHeader"
+                                            itemProp="title"
                                           >
                                             <h3
                                               className="jobTitle"
                                               itemProp="name"
                                             >
-                                              <Link
-                                                className="jobTitleLink"
-                                                navigationData={
-                                                  Object {
-                                                    "slug": "woof",
-                                                  }
-                                                }
-                                                to="job"
-                                              >
-                                                <NavigationLink
-                                                  className="jobTitleLink"
-                                                  navigating={[Function]}
-                                                  navigationData={
+                                              <span>
+                                                Junior adorable dog
+                                              </span>
+                                            </h3>
+                                          </div>
+                                          <div
+                                            className="jobDescription__hidden"
+                                          >
+                                            <div
+                                              className="jobDescription"
+                                              itemProp="description"
+                                            >
+                                              <RawHtml>
+                                                <div
+                                                  className="typography rawHtml"
+                                                  dangerouslySetInnerHTML={
                                                     Object {
-                                                      "slug": "woof",
+                                                      "__html": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
                                                     }
                                                   }
-                                                  stateKey="job"
-                                                >
-                                                  <a
-                                                    className="jobTitleLink"
-                                                    href={null}
-                                                    onClick={[Function]}
-                                                  >
-                                                    <span>
-                                                      Junior adorable dog
-                                                    </span>
-                                                  </a>
-                                                </NavigationLink>
-                                              </Link>
-                                            </h3>
-                                          </JobTitle>
-                                        </div>
-                                        <div
-                                          className="jobDescription__hidden"
-                                        >
-                                          <div
-                                            className="jobDescription"
-                                            itemProp="description"
-                                          >
-                                            <RawHtml>
-                                              <div
-                                                className="typography rawHtml"
-                                                dangerouslySetInnerHTML={
-                                                  Object {
-                                                    "__html": "Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack",
-                                                  }
-                                                }
-                                              />
-                                            </RawHtml>
-                                          </div>
-                                          <Link
-                                            className="applyBtn"
-                                            navigationData={
-                                              Object {
-                                                "slug": "woof",
-                                              }
-                                            }
-                                            to="job"
-                                          >
-                                            <NavigationLink
+                                                />
+                                              </RawHtml>
+                                            </div>
+                                            <Link
                                               className="applyBtn"
-                                              navigating={[Function]}
                                               navigationData={
                                                 Object {
                                                   "slug": "woof",
                                                 }
                                               }
-                                              stateKey="job"
+                                              to="job"
                                             >
-                                              <a
+                                              <NavigationLink
                                                 className="applyBtn"
-                                                href={null}
-                                                onClick={[Function]}
+                                                navigating={[Function]}
+                                                navigationData={
+                                                  Object {
+                                                    "slug": "woof",
+                                                  }
+                                                }
+                                                stateKey="job"
                                               >
-                                                Read more
-                                              </a>
-                                            </NavigationLink>
-                                          </Link>
+                                                <a
+                                                  className="applyBtn"
+                                                  href={null}
+                                                  onClick={[Function]}
+                                                >
+                                                  Read more
+                                                </a>
+                                              </NavigationLink>
+                                            </Link>
+                                          </div>
                                         </div>
+                                        <HR
+                                          color="black"
+                                          customClassName="mobileHorizontalLine"
+                                        >
+                                          <hr
+                                            className="hr black mobileHorizontalLine"
+                                          />
+                                        </HR>
                                       </div>
-                                      <HR
-                                        color="black"
-                                        customClassName="mobileHorizontalLine"
-                                      >
-                                        <hr
-                                          className="hr black mobileHorizontalLine"
-                                        />
-                                      </HR>
-                                    </div>
-                                  </Cell>
-                                </div>
-                              </Grid>
+                                    </Cell>
+                                  </div>
+                                </Grid>
+                              </div>
                             </li>
                           </JobsListEntry>
                         </ul>
@@ -1215,170 +1153,139 @@ exports[`site/pages/join-us renders correctly 1`] = `
                               key="entry_3"
                             >
                               <div
-                                itemProp="jobLocation"
-                                itemScope={true}
-                                itemType="http://schema.org/Place"
-                              >
-                                <meta
-                                  content="4th Floor, 2 Old Street Yard"
-                                  itemProp="streetAddress"
-                                />
-                                <meta
-                                  content="London"
-                                  itemProp="addressLocality"
-                                />
-                                <meta
-                                  content="Greater London"
-                                  itemProp="addressRegion"
-                                />
-                                <meta
-                                  content="EC1Y 8AF"
-                                  itemProp="postalCode"
-                                />
-                              </div>
-                              <meta
-                                content="Red Badger"
-                                itemProp="hiringOrganization"
-                              />
-                              <meta
-                                content={2018-02-08T16:42:31.000Z}
-                                itemProp="datePosted"
-                              />
-                              <Grid
-                                fit={false}
+                                className="jobEntryWrapper"
+                                onClick={[Function]}
                               >
                                 <div
-                                  className="grid withGutter responsive-grid-smallScreen"
+                                  itemProp="jobLocation"
+                                  itemScope={true}
+                                  itemType="http://schema.org/Place"
                                 >
-                                  <Cell
-                                    breakOn="smallScreen"
-                                    size={12}
+                                  <meta
+                                    content="4th Floor, 2 Old Street Yard"
+                                    itemProp="streetAddress"
+                                  />
+                                  <meta
+                                    content="London"
+                                    itemProp="addressLocality"
+                                  />
+                                  <meta
+                                    content="Greater London"
+                                    itemProp="addressRegion"
+                                  />
+                                  <meta
+                                    content="EC1Y 8AF"
+                                    itemProp="postalCode"
+                                  />
+                                </div>
+                                <meta
+                                  content="Red Badger"
+                                  itemProp="hiringOrganization"
+                                />
+                                <meta
+                                  content={2018-02-08T16:42:31.000Z}
+                                  itemProp="datePosted"
+                                />
+                                <Grid
+                                  fit={false}
+                                >
+                                  <div
+                                    className="grid withGutter responsive-grid-smallScreen"
                                   >
-                                    <div
-                                      className="responsive-cell-smallScreen cell size12of12 hideOndont"
+                                    <Cell
+                                      breakOn="smallScreen"
+                                      size={12}
                                     >
-                                      <button
-                                        aria-expanded={false}
-                                        aria-label="expand Mid 2 Tea drinker job description"
-                                        className="jobEntry__more"
-                                        onClick={[Function]}
-                                      >
-                                        <span
-                                          className="jobEntry__arrow"
-                                        />
-                                      </button>
                                       <div
-                                        className="jobEntryHeaderContainer"
+                                        className="responsive-cell-smallScreen cell size12of12 hideOndont"
                                       >
-                                        <div
-                                          className="jobEntryHeader"
-                                          itemProp="title"
+                                        <button
+                                          aria-expanded={false}
+                                          aria-label="expand Mid 2 Tea drinker job description"
+                                          className="jobEntry__more"
+                                          onClick={[Function]}
                                         >
-                                          <JobTitle
-                                            jobLink={
-                                              Object {
-                                                "slug": "slurp",
-                                              }
-                                            }
-                                            jobTitle="Mid 2 Tea drinker"
+                                          <span
+                                            className="jobEntry__arrow"
+                                          />
+                                        </button>
+                                        <div
+                                          className="jobEntryHeaderContainer"
+                                        >
+                                          <div
+                                            className="jobEntryHeader"
+                                            itemProp="title"
                                           >
                                             <h3
                                               className="jobTitle"
                                               itemProp="name"
                                             >
-                                              <Link
-                                                className="jobTitleLink"
-                                                navigationData={
-                                                  Object {
-                                                    "slug": "slurp",
-                                                  }
-                                                }
-                                                to="job"
-                                              >
-                                                <NavigationLink
-                                                  className="jobTitleLink"
-                                                  navigating={[Function]}
-                                                  navigationData={
+                                              <span>
+                                                Mid 2 Tea drinker
+                                              </span>
+                                            </h3>
+                                          </div>
+                                          <div
+                                            className="jobDescription__hidden"
+                                          >
+                                            <div
+                                              className="jobDescription"
+                                              itemProp="description"
+                                            >
+                                              <RawHtml>
+                                                <div
+                                                  className="typography rawHtml"
+                                                  dangerouslySetInnerHTML={
                                                     Object {
-                                                      "slug": "slurp",
+                                                      "__html": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
                                                     }
                                                   }
-                                                  stateKey="job"
-                                                >
-                                                  <a
-                                                    className="jobTitleLink"
-                                                    href={null}
-                                                    onClick={[Function]}
-                                                  >
-                                                    <span>
-                                                      Mid 2 Tea drinker
-                                                    </span>
-                                                  </a>
-                                                </NavigationLink>
-                                              </Link>
-                                            </h3>
-                                          </JobTitle>
-                                        </div>
-                                        <div
-                                          className="jobDescription__hidden"
-                                        >
-                                          <div
-                                            className="jobDescription"
-                                            itemProp="description"
-                                          >
-                                            <RawHtml>
-                                              <div
-                                                className="typography rawHtml"
-                                                dangerouslySetInnerHTML={
-                                                  Object {
-                                                    "__html": "Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required",
-                                                  }
-                                                }
-                                              />
-                                            </RawHtml>
-                                          </div>
-                                          <Link
-                                            className="applyBtn"
-                                            navigationData={
-                                              Object {
-                                                "slug": "slurp",
-                                              }
-                                            }
-                                            to="job"
-                                          >
-                                            <NavigationLink
+                                                />
+                                              </RawHtml>
+                                            </div>
+                                            <Link
                                               className="applyBtn"
-                                              navigating={[Function]}
                                               navigationData={
                                                 Object {
                                                   "slug": "slurp",
                                                 }
                                               }
-                                              stateKey="job"
+                                              to="job"
                                             >
-                                              <a
+                                              <NavigationLink
                                                 className="applyBtn"
-                                                href={null}
-                                                onClick={[Function]}
+                                                navigating={[Function]}
+                                                navigationData={
+                                                  Object {
+                                                    "slug": "slurp",
+                                                  }
+                                                }
+                                                stateKey="job"
                                               >
-                                                Read more
-                                              </a>
-                                            </NavigationLink>
-                                          </Link>
+                                                <a
+                                                  className="applyBtn"
+                                                  href={null}
+                                                  onClick={[Function]}
+                                                >
+                                                  Read more
+                                                </a>
+                                              </NavigationLink>
+                                            </Link>
+                                          </div>
                                         </div>
+                                        <HR
+                                          color="black"
+                                          customClassName="mobileHorizontalLine"
+                                        >
+                                          <hr
+                                            className="hr black mobileHorizontalLine"
+                                          />
+                                        </HR>
                                       </div>
-                                      <HR
-                                        color="black"
-                                        customClassName="mobileHorizontalLine"
-                                      >
-                                        <hr
-                                          className="hr black mobileHorizontalLine"
-                                        />
-                                      </HR>
-                                    </div>
-                                  </Cell>
-                                </div>
-                              </Grid>
+                                    </Cell>
+                                  </div>
+                                </Grid>
+                              </div>
                             </li>
                           </JobsListEntry>
                         </ul>
