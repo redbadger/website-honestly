@@ -77,7 +77,7 @@
 
 .techName {
   composes: boldSansSerif from '../../css/typography/_fonts.css';
-  margin: 20px 0px 40px 0px;
+  margin: 20px 0 40px;
 }
 
 .moreBtn {
@@ -91,6 +91,10 @@
   right: 0;
   transform: translate(50%, -30%);
   top: calc(logoMaxWidth / 2);
+}
+
+.techSliceIntro {
+  padding: 0 20px;
 }
 
 @media smallScreen {
@@ -120,7 +124,7 @@
   }
 
   .techSlice {
-    padding: 60px 20px 10px 20px;
+    padding: 60px 20px 10px;
   }
 
   .heading {
@@ -143,6 +147,10 @@
 
   .moreBtn {
     margin: 20px 60px 60px;
+  }
+
+  .techSliceIntro {
+    padding: 0;
   }
 }
 

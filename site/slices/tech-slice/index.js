@@ -72,11 +72,13 @@ function TechListItem({ name, imgSrc, imgSrcLarge, plusSymbol, modifier }: TechL
 export default function TechSlice() {
   return (
     <section className={styles.techSlice}>
-      <h2 className={styles.heading}>We love tech. But we only use what’s right for the job.</h2>
+      <div className={styles.techSliceIntro}>
+        <h2 className={styles.heading}>We love tech. But we only use what’s right for the job.</h2>
 
-      <p className={styles.projectsBlerb}>
-        Here is a selection of what we’ve used on recent projects.
-      </p>
+        <p className={styles.projectsBlerb}>
+          Here is a selection of what we’ve used on recent projects.
+        </p>
+      </div>
 
       <ul className={styles.techList} onClick={trackTechLogosClicks}>
         <TechListItem name="React + React Native" imgSrcLarge={reactImgLarge} imgSrc={reactImg} />
