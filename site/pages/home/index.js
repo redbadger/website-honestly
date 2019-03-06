@@ -37,8 +37,8 @@ export default function HomePage() {
         <TechLabSlice linkUrl="https://hubs.ly/H0gG3Wh0" />
       </YellowSlice>
       <TestimonialsSlice />
-      <ChecklistContactUs />
       <TechSlice />
+      <ChecklistContactUs />
       <AwardsSlice />
       {hubspotSignup ? <HubspotSignup /> : <NewsLetter />}
     </ScrollTracker>
