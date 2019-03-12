@@ -1,0 +1,1443 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/about-us renders correctly 1`] = `
+<Context>
+  <AboutUs
+    instagramPosts={
+      Array [
+        Object {
+          "comments": 1,
+          "created": "1988-02-11",
+          "image": Object {
+            "height": "640px",
+            "url": "https://www.somefakelink-redbadger.com/image.jpg",
+            "width": "640px",
+          },
+          "likes": 2,
+          "link": "https://www.somefakelink-redbadger.com",
+          "text": "I am an instagram posts",
+        },
+      ]
+    }
+    qAndAs={
+      Array [
+        Object {
+          "name": "I am a qanda",
+          "topics": Array [
+            Object {
+              "answer": "cuz they're delicious",
+              "question": "why do you slugs keep eating my cabbages",
+              "slug": "squelch-slime-slugstuff",
+            },
+          ],
+        },
+      ]
+    }
+    tweets={
+      Array [
+        Object {
+          "created": "1988-02-11",
+          "favouriteCount": 2,
+          "retweetCount": 1,
+          "text": "I am a tweet",
+          "url": "https://www.somefakelink-redbadger.com",
+        },
+      ]
+    }
+  >
+    <div>
+      <Social
+        altText="Our founders Dave, Stu and Cain."
+        description="We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right."
+        metaImage="meta-image.jpg"
+        title="About Us | Red Badger"
+        url="https://red-badger.com/about-us"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "About Us | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "About Us | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "Our founders Dave, Stu and Cain.",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger.com/about-us",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "About Us | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "About Us | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "Our founders Dave, Stu and Cain.",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger.com/about-us",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "About Us | Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "About Us | Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "Our founders Dave, Stu and Cain.",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.com/about-us",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <Principles>
+        <div
+          className="principles"
+        >
+          <div
+            className="container"
+          >
+            <h1
+              className="header"
+            >
+              Our principles.
+            </h1>
+            <div
+              className="thisIsWhatWeBelieveIn"
+            >
+              This is what we believe – and what the founders say after a couple of pints
+            </div>
+            <ul
+              className="principleList"
+            >
+              <Principle
+                description="Our work is built on the respect we have for each other and our clients. We’re also very focused on the needs of our clients’ customers."
+                number="01"
+                title="People people."
+              >
+                <li
+                  className="container"
+                >
+                  <div
+                    className="leftCol"
+                  >
+                    <div
+                      className="number"
+                    >
+                      01
+                    </div>
+                  </div>
+                  <div
+                    className="rightCol"
+                  >
+                    <h2
+                      className="title"
+                    >
+                      People people.
+                    </h2>
+                    <div
+                      className="description"
+                    >
+                      Our work is built on the respect we have for each other and our clients. We’re also very focused on the needs of our clients’ customers.
+                    </div>
+                  </div>
+                </li>
+              </Principle>
+              <Principle
+                description="As individuals we need to be proactive, to earn and build the trust of our clients."
+                number="02"
+                title="Find a way."
+              >
+                <li
+                  className="container"
+                >
+                  <div
+                    className="leftCol"
+                  >
+                    <div
+                      className="number"
+                    >
+                      02
+                    </div>
+                  </div>
+                  <div
+                    className="rightCol"
+                  >
+                    <h2
+                      className="title"
+                    >
+                      Find a way.
+                    </h2>
+                    <div
+                      className="description"
+                    >
+                      As individuals we need to be proactive, to earn and build the trust of our clients.
+                    </div>
+                  </div>
+                </li>
+              </Principle>
+              <Principle
+                description="We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it."
+                number="03"
+                title="Always learning."
+              >
+                <li
+                  className="container"
+                >
+                  <div
+                    className="leftCol"
+                  >
+                    <div
+                      className="number"
+                    >
+                      03
+                    </div>
+                  </div>
+                  <div
+                    className="rightCol"
+                  >
+                    <h2
+                      className="title"
+                    >
+                      Always learning.
+                    </h2>
+                    <div
+                      className="description"
+                    >
+                      We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it.
+                    </div>
+                  </div>
+                </li>
+              </Principle>
+              <Principle
+                description="We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner."
+                number="04"
+                title="Honest."
+              >
+                <li
+                  className="container"
+                >
+                  <div
+                    className="leftCol"
+                  >
+                    <div
+                      className="number"
+                    >
+                      04
+                    </div>
+                  </div>
+                  <div
+                    className="rightCol"
+                  >
+                    <h2
+                      className="title"
+                    >
+                      Honest.
+                    </h2>
+                    <div
+                      className="description"
+                    >
+                      We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner.
+                    </div>
+                  </div>
+                </li>
+              </Principle>
+              <Principle
+                description="Clear points-of-view help give our work direction and purpose – but we’re humble about these. We don’t let ego get in the way."
+                number="05"
+                title="Strong opinions, weakly held."
+              >
+                <li
+                  className="container"
+                >
+                  <div
+                    className="leftCol"
+                  >
+                    <div
+                      className="number"
+                    >
+                      05
+                    </div>
+                  </div>
+                  <div
+                    className="rightCol"
+                  >
+                    <h2
+                      className="title"
+                    >
+                      Strong opinions, weakly held.
+                    </h2>
+                    <div
+                      className="description"
+                    >
+                      Clear points-of-view help give our work direction and purpose – but we’re humble about these. We don’t let ego get in the way.
+                    </div>
+                  </div>
+                </li>
+              </Principle>
+            </ul>
+            <div
+              className="buttons"
+            >
+              <Link
+                className="link"
+                to="badgers"
+              >
+                <NavigationLink
+                  className="link"
+                  navigating={[Function]}
+                  stateKey="badgers"
+                >
+                  <a
+                    className="link"
+                    href={null}
+                    onClick={[Function]}
+                  >
+                    Meet our team
+                  </a>
+                </NavigationLink>
+              </Link>
+              <Link
+                className="link"
+                to="joinUs"
+              >
+                <NavigationLink
+                  className="link"
+                  navigating={[Function]}
+                  stateKey="joinUs"
+                >
+                  <a
+                    className="link"
+                    href={null}
+                    onClick={[Function]}
+                  >
+                    Join us
+                  </a>
+                </NavigationLink>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Principles>
+      <TimelineSlice>
+        <div
+          className="timeline"
+        >
+          <div
+            className="container"
+          >
+            <ClientOnly>
+              <span>
+                <MobileImage
+                  index={0}
+                  onChangeIndex={[Function]}
+                >
+                  <div
+                    className="mobileImage"
+                  >
+                    <ReactSwipableView
+                      animateHeight={false}
+                      animateTransitions={true}
+                      axis="x"
+                      disableLazyLoading={false}
+                      disabled={false}
+                      enableMouseEvents={false}
+                      hysteresis={0.6}
+                      ignoreNativeScroll={false}
+                      index={0}
+                      onChangeIndex={[Function]}
+                      resistance={false}
+                      springConfig={
+                        Object {
+                          "delay": "0s",
+                          "duration": "0.35s",
+                          "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                        }
+                      }
+                      threshold={5}
+                    >
+                      <div
+                        onScroll={[Function]}
+                        onTouchEnd={[Function]}
+                        onTouchStart={[Function]}
+                        style={
+                          Object {
+                            "overflowX": "hidden",
+                          }
+                        }
+                      >
+                        <div
+                          className="react-swipeable-view-container"
+                          style={
+                            Object {
+                              "WebkitFlexDirection": "row",
+                              "WebkitTransition": "all 0s ease 0s",
+                              "direction": "ltr",
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "height": null,
+                              "transition": "all 0s ease 0s",
+                              "willChange": "transform",
+                            }
+                          }
+                        >
+                          <div
+                            aria-hidden={false}
+                            data-swipeable="true"
+                            key=".0"
+                            style={
+                              Object {
+                                "WebkitFlexShrink": 0,
+                                "flexShrink": 0,
+                                "overflow": "auto",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <div
+                              className="mobileImageWrapper"
+                            >
+                              <img
+                                alt="year 2010"
+                                className="image"
+                                src="2010.png"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ReactSwipableView>
+                  </div>
+                </MobileImage>
+                <TimelineNav
+                  currentIndex={0}
+                  onClick={[Function]}
+                >
+                  <div
+                    className="navigator"
+                  >
+                    <div
+                      className="container"
+                    >
+                      <Arrow
+                        currentIndex={0}
+                        direction="left"
+                        lastIndex={7}
+                        onClick={[Function]}
+                      >
+                        <button
+                          aria-label="left"
+                          className="arrow arrowLeft"
+                          onClick={[Function]}
+                        >
+                          <div
+                            className="inactive"
+                          />
+                          <div
+                            className="innerArrow"
+                          />
+                        </button>
+                      </Arrow>
+                      <div
+                        className="timeline"
+                      >
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={0}
+                        >
+                          <div
+                            aria-label="slide 1"
+                            className="active"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={1}
+                        >
+                          <div
+                            aria-label="slide 2"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={2}
+                        >
+                          <div
+                            aria-label="slide 3"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={3}
+                        >
+                          <div
+                            aria-label="slide 4"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={4}
+                        >
+                          <div
+                            aria-label="slide 5"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={5}
+                        >
+                          <div
+                            aria-label="slide 6"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={6}
+                        >
+                          <div
+                            aria-label="slide 7"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                        <TimelineNav
+                          currentIndex={0}
+                          onClick={[Function]}
+                          value={7}
+                        >
+                          <div
+                            aria-label="slide 8"
+                            className="future"
+                          >
+                            <span />
+                          </div>
+                        </TimelineNav>
+                      </div>
+                      <Arrow
+                        currentIndex={0}
+                        direction="right"
+                        lastIndex={7}
+                        onClick={[Function]}
+                      >
+                        <button
+                          aria-label="right"
+                          className="arrow arrowRight"
+                          onClick={[Function]}
+                        >
+                          <div
+                            className="active"
+                          />
+                          <div
+                            className="innerArrow"
+                          />
+                        </button>
+                      </Arrow>
+                    </div>
+                  </div>
+                </TimelineNav>
+                <div
+                  className="content"
+                >
+                  <ReactSwipableView
+                    animateHeight={false}
+                    animateTransitions={true}
+                    axis="x"
+                    disableLazyLoading={false}
+                    disabled={false}
+                    enableMouseEvents={false}
+                    hysteresis={0.6}
+                    ignoreNativeScroll={false}
+                    index={0}
+                    onChangeIndex={[Function]}
+                    resistance={false}
+                    springConfig={
+                      Object {
+                        "delay": "0s",
+                        "duration": "0.35s",
+                        "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                      }
+                    }
+                    threshold={5}
+                  >
+                    <div
+                      onScroll={[Function]}
+                      onTouchEnd={[Function]}
+                      onTouchStart={[Function]}
+                      style={
+                        Object {
+                          "overflowX": "hidden",
+                        }
+                      }
+                    >
+                      <div
+                        className="react-swipeable-view-container"
+                        style={
+                          Object {
+                            "WebkitFlexDirection": "row",
+                            "WebkitTransition": "all 0s ease 0s",
+                            "direction": "ltr",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "height": null,
+                            "transition": "all 0s ease 0s",
+                            "willChange": "transform",
+                          }
+                        }
+                      >
+                        <div
+                          aria-hidden={false}
+                          data-swipeable="true"
+                          key=".0"
+                          style={
+                            Object {
+                              "WebkitFlexShrink": 0,
+                              "flexShrink": 0,
+                              "overflow": "auto",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <Zero>
+                            <Content
+                              fact="At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight."
+                              image="2010.png"
+                              text="Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom."
+                              title="Our vision and going for it"
+                              year="2010"
+                            >
+                              <div>
+                                <div
+                                  className="largeScreen"
+                                >
+                                  <div
+                                    className="topRow"
+                                  >
+                                    <div
+                                      className="imageWrapper"
+                                    >
+                                      <img
+                                        alt="year 2010"
+                                        className="image"
+                                        src="2010.png"
+                                      />
+                                    </div>
+                                    <div
+                                      className="copy"
+                                    >
+                                      <div
+                                        className="year"
+                                      >
+                                        2010
+                                      </div>
+                                      <div
+                                        className="title"
+                                      >
+                                        Our vision and going for it
+                                      </div>
+                                      <div
+                                        className="body"
+                                      >
+                                        Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom.
+                                      </div>
+                                      <div
+                                        className="fact"
+                                      >
+                                        <span
+                                          className="factTitle"
+                                        >
+                                          Random fact of the year: 
+                                        </span>
+                                        At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  className="smallScreen"
+                                >
+                                  <div
+                                    className="copy"
+                                  >
+                                    <div
+                                      className="year"
+                                    >
+                                      2010
+                                    </div>
+                                    <div
+                                      className="title"
+                                    >
+                                      Our vision and going for it
+                                    </div>
+                                    <div
+                                      className="body"
+                                    >
+                                      Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom.
+                                    </div>
+                                    <div
+                                      className="fact"
+                                    >
+                                      <span
+                                        className="factTitle"
+                                      >
+                                        Random fact of the year: 
+                                      </span>
+                                      At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </Content>
+                          </Zero>
+                        </div>
+                      </div>
+                    </div>
+                  </ReactSwipableView>
+                </div>
+              </span>
+            </ClientOnly>
+            <noscript>
+              <div
+                className="content"
+              />
+            </noscript>
+          </div>
+        </div>
+      </TimelineSlice>
+      <_class2>
+        <Checklist
+          isHovered={false}
+          onBlur={[Function]}
+          onHover={[Function]}
+        >
+          <section
+            className="contactUsContainer"
+            id="contactUs"
+          >
+            <h2
+              className="header"
+            >
+              We can help you
+            </h2>
+            <div
+              className="contentContainer"
+            >
+              <ul
+                className="list"
+              >
+                <li
+                  className="item"
+                  key="Create & validate new ideas"
+                >
+                  Create & validate new ideas
+                </li>
+                <li
+                  className="item"
+                  key="Deliver great quality products & services, fast"
+                >
+                  Deliver great quality products & services, fast
+                </li>
+                <li
+                  className="item"
+                  key="Be bold with technology"
+                >
+                  Be bold with technology
+                </li>
+                <li
+                  className="item"
+                  key="Be more customer centric"
+                >
+                  Be more customer centric
+                </li>
+                <li
+                  className="item"
+                  key="Improve efficiency with lean practices"
+                >
+                  Improve efficiency with lean practices
+                </li>
+                <li
+                  className="item"
+                  key="Build capability & confidence"
+                >
+                  Build capability & confidence
+                </li>
+              </ul>
+              <div
+                className="imgContainer"
+              />
+            </div>
+            <div>
+              <a
+                className="mailToLink"
+                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                Send an email
+              </a>
+              <span
+                className="talkToUs"
+              >
+                hello@red-badger.com
+              </span>
+            </div>
+          </section>
+        </Checklist>
+      </_class2>
+      <QAndASlice
+        qAndAs={
+          Array [
+            Object {
+              "name": "I am a qanda",
+              "topics": Array [
+                Object {
+                  "answer": "cuz they're delicious",
+                  "question": "why do you slugs keep eating my cabbages",
+                  "slug": "squelch-slime-slugstuff",
+                },
+              ],
+            },
+          ]
+        }
+      >
+        <div
+          className="qAndA"
+        >
+          <div
+            className="qAndA__wrapper"
+          >
+            <div
+              className="qAndA__container"
+            >
+              <h2
+                className="qAndA__heading"
+              >
+                Answers to common questions
+              </h2>
+              <ul
+                className="qAndA__categoryList"
+              >
+                <li
+                  key="I am a qanda"
+                >
+                  <Category
+                    category={
+                      Object {
+                        "name": "I am a qanda",
+                        "topics": Array [
+                          Object {
+                            "answer": "cuz they're delicious",
+                            "question": "why do you slugs keep eating my cabbages",
+                            "slug": "squelch-slime-slugstuff",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <div
+                      className="category"
+                    >
+                      <h3
+                        className="category__title"
+                      >
+                        I am a qanda
+                      </h3>
+                      <ul
+                        className="category__questionList"
+                      >
+                        <li
+                          className="category__element"
+                          key="why do you slugs keep eating my cabbages"
+                        >
+                          <Topic
+                            answer="cuz they're delicious"
+                            question="why do you slugs keep eating my cabbages"
+                            slug="squelch-slime-slugstuff"
+                          >
+                            <div>
+                              <div
+                                className="topic__question"
+                                onClick={[Function]}
+                              >
+                                <h4
+                                  className="topic__heading"
+                                >
+                                  why do you slugs keep eating my cabbages
+                                </h4>
+                                <button
+                                  aria-controls="squelch-slime-slugstuff"
+                                  aria-expanded={false}
+                                  aria-label="why do you slugs keep eating my cabbages"
+                                  className="topic__more"
+                                >
+                                  <span
+                                    className="topic__plus"
+                                  />
+                                </button>
+                              </div>
+                              <div
+                                className="topic__answer__hidden"
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "cuz they're delicious",
+                                  }
+                                }
+                                id="squelch-slime-slugstuff"
+                              />
+                              <noscript>
+                                <div
+                                  className="topic__answer__visible"
+                                  dangerouslySetInnerHTML={
+                                    Object {
+                                      "__html": "cuz they're delicious",
+                                    }
+                                  }
+                                />
+                              </noscript>
+                            </div>
+                          </Topic>
+                        </li>
+                      </ul>
+                    </div>
+                  </Category>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </QAndASlice>
+      <SocialSlice
+        instagramPosts={
+          Array [
+            Object {
+              "comments": 1,
+              "created": "1988-02-11",
+              "image": Object {
+                "height": "640px",
+                "url": "https://www.somefakelink-redbadger.com/image.jpg",
+                "width": "640px",
+              },
+              "likes": 2,
+              "link": "https://www.somefakelink-redbadger.com",
+              "text": "I am an instagram posts",
+            },
+          ]
+        }
+        tweets={
+          Array [
+            Object {
+              "created": "1988-02-11",
+              "favouriteCount": 2,
+              "retweetCount": 1,
+              "text": "I am a tweet",
+              "url": "https://www.somefakelink-redbadger.com",
+            },
+          ]
+        }
+      >
+        <section
+          className="socialSlice"
+        >
+          <ClientOnly>
+            <span>
+              <div
+                className="desktopView"
+              >
+                <IntroDesktopCard
+                  currentTile={0}
+                  nextCard={[Function]}
+                  prevCard={[Function]}
+                  totalSwipableTiles={1}
+                >
+                  <div
+                    className="intro"
+                  >
+                    <div
+                      className="text"
+                    >
+                      From our social feed
+                    </div>
+                    <ClientOnly>
+                      <span>
+                        <div
+                          className="buttons"
+                        >
+                          <button
+                            aria-label="Previous"
+                            className="prevButton"
+                            disabled={true}
+                            onClick={[Function]}
+                            title="Previous"
+                          >
+                            <InlineSVG
+                              className="prevArrow"
+                              element="i"
+                              raw={false}
+                              src="arrowPrevious.svg"
+                            >
+                              <i
+                                className="prevArrow"
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "arrowPrevious.svg",
+                                  }
+                                }
+                                src={null}
+                              />
+                            </InlineSVG>
+                          </button>
+                          <button
+                            aria-label="Next"
+                            className="nextButton"
+                            disabled={false}
+                            onClick={[Function]}
+                            title="Next"
+                          >
+                            <InlineSVG
+                              className="nextArrow"
+                              element="i"
+                              raw={false}
+                              src="arrow.svg"
+                            >
+                              <i
+                                className="nextArrow"
+                                dangerouslySetInnerHTML={
+                                  Object {
+                                    "__html": "arrow.svg",
+                                  }
+                                }
+                                src={null}
+                              />
+                            </InlineSVG>
+                          </button>
+                        </div>
+                      </span>
+                    </ClientOnly>
+                  </div>
+                </IntroDesktopCard>
+                <ReactSwipableView
+                  animateHeight={false}
+                  animateTransitions={true}
+                  axis="x"
+                  disableLazyLoading={false}
+                  disabled={false}
+                  enableMouseEvents={false}
+                  hysteresis={0.6}
+                  ignoreNativeScroll={false}
+                  index={0}
+                  onChangeIndex={[Function]}
+                  resistance={false}
+                  slideStyle={
+                    Object {
+                      "height": 525,
+                      "width": 350,
+                    }
+                  }
+                  springConfig={
+                    Object {
+                      "delay": "0s",
+                      "duration": "0.35s",
+                      "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                    }
+                  }
+                  style={
+                    Object {
+                      "paddingRight": 324,
+                    }
+                  }
+                  threshold={5}
+                >
+                  <div
+                    onScroll={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "overflowX": "hidden",
+                        "paddingRight": 324,
+                      }
+                    }
+                  >
+                    <div
+                      className="react-swipeable-view-container"
+                      style={
+                        Object {
+                          "WebkitFlexDirection": "row",
+                          "WebkitTransition": "all 0s ease 0s",
+                          "direction": "ltr",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "height": null,
+                          "transition": "all 0s ease 0s",
+                          "willChange": "transform",
+                        }
+                      }
+                    >
+                      <div
+                        aria-hidden={false}
+                        data-swipeable="true"
+                        key=".$1988-02-11"
+                        style={
+                          Object {
+                            "WebkitFlexShrink": 0,
+                            "flexShrink": 0,
+                            "height": 525,
+                            "overflow": "auto",
+                            "width": 350,
+                          }
+                        }
+                      >
+                        <Twitter
+                          index={0}
+                          key="1988-02-11"
+                          tweet={
+                            Object {
+                              "created": "1988-02-11",
+                              "favouriteCount": 2,
+                              "retweetCount": 1,
+                              "text": "I am a tweet",
+                              "url": "https://www.somefakelink-redbadger.com",
+                            }
+                          }
+                        >
+                          <a
+                            className="link"
+                            href="https://www.somefakelink-redbadger.com"
+                            rel="noopener noreferrer"
+                            tabIndex={-1}
+                            target="_blank"
+                          >
+                            <div
+                              className="twitter blue"
+                              tabIndex={0}
+                            >
+                              <div
+                                className="handle"
+                              >
+                                <InlineSVG
+                                  className="twitterIcon"
+                                  element="i"
+                                  raw={false}
+                                  src="twitter.svg"
+                                >
+                                  <i
+                                    className="twitterIcon"
+                                    dangerouslySetInnerHTML={
+                                      Object {
+                                        "__html": "twitter.svg",
+                                      }
+                                    }
+                                    src={null}
+                                  />
+                                </InlineSVG>
+                                <span
+                                  className="handleText"
+                                >
+                                  @RedBadger
+                                </span>
+                              </div>
+                              <div
+                                className="tweet"
+                              >
+                                I am a tweet
+                              </div>
+                              <div
+                                className="meta"
+                              >
+                                <span>
+                                  <InlineSVG
+                                    className="icon retweets"
+                                    element="i"
+                                    raw={false}
+                                    src="retweet.svg"
+                                  >
+                                    <i
+                                      className="icon retweets"
+                                      dangerouslySetInnerHTML={
+                                        Object {
+                                          "__html": "retweet.svg",
+                                        }
+                                      }
+                                      src={null}
+                                    />
+                                  </InlineSVG>
+                                  1
+                                </span>
+                                <span>
+                                  <InlineSVG
+                                    className="icon"
+                                    element="i"
+                                    raw={false}
+                                    src="like.svg"
+                                  >
+                                    <i
+                                      className="icon"
+                                      dangerouslySetInnerHTML={
+                                        Object {
+                                          "__html": "like.svg",
+                                        }
+                                      }
+                                      src={null}
+                                    />
+                                  </InlineSVG>
+                                  2
+                                </span>
+                              </div>
+                            </div>
+                          </a>
+                        </Twitter>
+                      </div>
+                    </div>
+                  </div>
+                </ReactSwipableView>
+              </div>
+              <div
+                className="mobileView"
+              >
+                <ReactSwipableView
+                  animateHeight={false}
+                  animateTransitions={true}
+                  axis="x"
+                  disableLazyLoading={false}
+                  disabled={false}
+                  enableMouseEvents={false}
+                  hysteresis={0.6}
+                  ignoreNativeScroll={false}
+                  index={0}
+                  onChangeIndex={[Function]}
+                  resistance={false}
+                  slideStyle={
+                    Object {
+                      "maxWidth": 415,
+                    }
+                  }
+                  springConfig={
+                    Object {
+                      "delay": "0s",
+                      "duration": "0.35s",
+                      "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                    }
+                  }
+                  style={
+                    Object {
+                      "paddingRight": 674,
+                    }
+                  }
+                  threshold={5}
+                >
+                  <div
+                    onScroll={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                    style={
+                      Object {
+                        "overflowX": "hidden",
+                        "paddingRight": 674,
+                      }
+                    }
+                  >
+                    <div
+                      className="react-swipeable-view-container"
+                      style={
+                        Object {
+                          "WebkitFlexDirection": "row",
+                          "WebkitTransition": "all 0s ease 0s",
+                          "direction": "ltr",
+                          "display": "flex",
+                          "flexDirection": "row",
+                          "height": null,
+                          "transition": "all 0s ease 0s",
+                          "willChange": "transform",
+                        }
+                      }
+                    >
+                      <div
+                        aria-hidden={false}
+                        data-swipeable="true"
+                        key=".0"
+                        style={
+                          Object {
+                            "WebkitFlexShrink": 0,
+                            "flexShrink": 0,
+                            "maxWidth": 415,
+                            "overflow": "auto",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <IntroMobileCard>
+                          <div
+                            className="intro"
+                          >
+                            <div
+                              className="text"
+                            >
+                              From our social feed
+                            </div>
+                          </div>
+                        </IntroMobileCard>
+                      </div>
+                    </div>
+                  </div>
+                </ReactSwipableView>
+              </div>
+            </span>
+          </ClientOnly>
+          <noscript>
+            <div
+              className="noscript"
+            />
+          </noscript>
+        </section>
+      </SocialSlice>
+    </div>
+  </AboutUs>
+</Context>
+`;
