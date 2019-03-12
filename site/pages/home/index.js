@@ -5,7 +5,6 @@ import TopSlice from './homepage-top-slice';
 import CaseStudyOverview from '../../components/case-study-overview';
 import AwardsSlice from '../../slices/awards-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
-import NewsLetter from './newsletter-slice';
 import TechLabSlice from '../../slices/techlab-slice';
 import Social from '../../components/social';
 import HubspotSignup from './hubspot-signup';
@@ -25,8 +24,6 @@ export default function HomePage() {
     url: 'https://red-badger.com',
   };
 
-  const hubspotSignup = true;
-
   return (
     <ScrollTracker>
       <Social {...social} />
@@ -36,7 +33,7 @@ export default function HomePage() {
         <TechLabSlice linkUrl="https://hubs.ly/H0gG3Wh0" />
       </YellowSlice>
       <TestimonialsSlice />
-      {hubspotSignup ? <HubspotSignup /> : <NewsLetter />}
+      <HubspotSignup />
       <ChecklistContactUs />
       <AwardsSlice />
     </ScrollTracker>
