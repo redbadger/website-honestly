@@ -3,52 +3,32 @@ import { mount } from 'enzyme';
 
 import { Context } from '../../components/link/test-helper';
 
-import AboutUs from './index';
+import BadgerProfile from './index';
 
-const tweets = [
-  {
-    text: 'I am a tweet',
-    url: 'https://www.somefakelink-redbadger.com',
-    retweetCount: 1,
-    favouriteCount: 2,
-    created: '1988-02-11',
-  },
-];
+const badger = {
+  firstName: 'Sally',
+  lastName: 'Badger',
+  jobTitle: 'Literally just a badger',
+  slug: 'no-not-a-slug-a-badger',
+  primaryImageUrl: 'https://www.somefakebadgersite.com/image.jpg',
+  secondaryImageUrl: 'https://www.somefakebadgersite.com/image2.jpg',
+  about: "I have no idea why a badger is in the office but it hasn't bitten anyone yet",
+  skills: 'Burrowing underground, eating grubs and stealing dog food.',
+  achievements: 'I mean it got into Badger HQ and nobody has managed to evict her yet.',
+  influence: "Probably looking to steal Milo's food",
+  twitter: '@literallyABadger',
+  github: 'beingABadgerIDoNotCode',
+  linkedIn: 'grrrrr',
+  squarespaceId: 'grrISaidGrrrr',
+  categories: [{ slug: 'squelch', name: 'woodland-mammals', order: 1 }],
+};
 
-const instagramPosts = [
-  {
-    text: 'I am an instagram posts',
-    link: 'https://www.somefakelink-redbadger.com',
-    image: {
-      url: 'https://www.somefakelink-redbadger.com/image.jpg',
-      width: '640px',
-      height: '640px',
-    },
-    comments: 1,
-    likes: 2,
-    created: '1988-02-11',
-  },
-];
-
-const qAndAs = [
-  {
-    name: 'I am a qanda',
-    topics: [
-      {
-        slug: 'squelch-slime-slugstuff',
-        question: 'why do you slugs keep eating my cabbages',
-        answer: "cuz they're delicious",
-      },
-    ],
-  },
-];
-
-describe('site/pages/about-us', () => {
+describe('site/pages/badger-profile', () => {
   it('renders correctly', () => {
     expect(
       mount(
         <Context>
-          <AboutUs tweets={tweets} instagramPosts={instagramPosts} qAndAs={qAndAs} />
+          <BadgerProfile badger={badger} />
         </Context>,
       ),
     ).toMatchSnapshot();
