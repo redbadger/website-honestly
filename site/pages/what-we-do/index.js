@@ -2,7 +2,6 @@ import React from 'react';
 import classnames from 'classnames/bind';
 import styles from './style.css';
 import HeaderSlice from './header-slice';
-import TechSlice from '../../slices/tech-slice';
 import LeanAgileSlice from './lean-agile-slice';
 import CrossFunctionalSlice from './cross-functional-slice';
 import Link from '../../components/link';
@@ -22,13 +21,16 @@ function CaseStudies() {
         <h2 className={styles.mainHeader}>The proof is in the pudding.</h2>
         <div className={styles.subHeader}>Read some of our case studies.</div>
       </div>
+
       <div className={styles.caseStudyContainer}>
         <Link className={styles.caseStudyContent} to="fortnumAndMasonCaseStudy">
           <div className={styles.imageWrapper}>
             <img alt="" src={fortnumJpg} />
           </div>
           <div className={styles.caseStudyTextContainer}>
-            <div className={styles.caseStudyCompany}>Fortnum & Mason</div>
+            <div className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}>
+              Fortnum & Mason
+            </div>
             <div className={styles.caseStudyTitleContainer}>
               <h3 className={styles.caseStudyTitle}>Elegant e-commerce in eight months</h3>
             </div>
@@ -39,15 +41,14 @@ function CaseStudies() {
           </div>
         </Link>
       </div>
+
       <div className={cx('caseStudyContainer', 'inverse')}>
         <Link className={styles.caseStudyContent} to="bankCaseStudy">
           <div className={cx('imageWrapper', 'bank')}>
             <img alt="" src={bankGif} />
           </div>
           <div className={styles.caseStudyTextContainer}>
-            <div className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}>
-              Financial services
-            </div>
+            <div className={styles.caseStudyCompany}>Financial services</div>
             <div className={styles.caseStudyTitleContainer}>
               <h3 className={styles.caseStudyTitle}>Digital transformation in retail banking</h3>
             </div>
@@ -59,13 +60,16 @@ function CaseStudies() {
           </div>
         </Link>
       </div>
+
       <div className={styles.caseStudyContainer}>
         <Link className={styles.caseStudyContent} to="financialTimesCaseStudy">
           <div className={styles.imageWrapper}>
             <img alt="" src={financialTimesJpg} />
           </div>
           <div className={styles.caseStudyTextContainer}>
-            <div className={styles.caseStudyCompany}>Financial Times</div>
+            <div className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}>
+              Financial Times
+            </div>
             <div className={styles.caseStudyTitleContainer}>
               <h3 className={styles.caseStudyTitle}>Lasting change for a media giant</h3>
             </div>
@@ -100,7 +104,6 @@ export default function whatWeDo() {
       <HeaderSlice />
       <CrossFunctionalSlice />
       <LeanAgileSlice />
-      <TechSlice />
       <CaseStudies />
     </div>
   );

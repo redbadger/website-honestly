@@ -127,7 +127,7 @@
   }
 
   .techSlice {
-    padding: 60px 20px 10px;
+    padding: 60px 20px 70px;
   }
 
   .heading {
@@ -149,7 +149,7 @@
   }
 
   .moreBtn {
-    margin: 20px 60px 60px;
+    margin: 20px 60px 0;
   }
 
   .techSliceIntro {
@@ -158,6 +158,10 @@
 }
 
 @media largeScreen {
+  .techSlice {
+    padding: 60px 20px 80px;
+  }
+
   .techList {
     margin-bottom: 70px;
   }
@@ -183,6 +187,6 @@
   }
 
   .moreBtn {
-    margin: 60px 0 70px;
+    margin: 60px 0 0;
   }
 }

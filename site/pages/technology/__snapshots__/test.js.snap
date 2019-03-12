@@ -551,24 +551,6 @@ exports[`site/pages/technology renders correctly 1`] = `
               </li>
             </TechListItem>
           </ul>
-          <Link
-            className="moreBtn"
-            to="technology"
-          >
-            <NavigationLink
-              className="moreBtn"
-              navigating={[Function]}
-              stateKey="technology"
-            >
-              <a
-                className="moreBtn"
-                href={null}
-                onClick={[Function]}
-              >
-                More about the tech
-              </a>
-            </NavigationLink>
-          </Link>
         </section>
       </TechSlice>
       <Component>

@@ -137,10 +137,11 @@ export default function TechSlice({ isHeading }: TechSliceProps) {
         />
         <TechListItem name="Istio" imgSrcLarge={istioImgLarge} imgSrc={istioImg} />
       </ul>
-
-      <Link className={styles.moreBtn} to="technology">
-        More about the tech
-      </Link>
+      {!isHeading && (
+        <Link className={styles.moreBtn} to="technology">
+          More about the tech
+        </Link>
+      )}
     </section>
   );
 }
