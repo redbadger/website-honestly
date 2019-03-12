@@ -3,7 +3,6 @@ import React from 'react';
 
 import TopSlice from './homepage-top-slice';
 import CaseStudyOverview from '../../components/case-study-overview';
-import TechSlice from '../../slices/tech-slice';
 import AwardsSlice from '../../slices/awards-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
 import NewsLetter from './newsletter-slice';
@@ -37,10 +36,9 @@ export default function HomePage() {
         <TechLabSlice linkUrl="https://hubs.ly/H0gG3Wh0" />
       </YellowSlice>
       <TestimonialsSlice />
-      <TechSlice />
+      {hubspotSignup ? <HubspotSignup /> : <NewsLetter />}
       <ChecklistContactUs />
       <AwardsSlice />
-      {hubspotSignup ? <HubspotSignup /> : <NewsLetter />}
     </ScrollTracker>
   );
 }

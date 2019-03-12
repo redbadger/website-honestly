@@ -37,6 +37,10 @@ import plusImg02 from './img/plus02_x2.png';
 import plusImg03 from './img/plus03_x2.png';
 import plusImg04 from './img/plus04_x2.png';
 
+type TechSliceProps = {
+  isHeading?: boolean,
+};
+
 type TechListItemProps = {
   name: string,
   imgSrc: string,
@@ -69,11 +73,20 @@ function TechListItem({ name, imgSrc, imgSrcLarge, plusSymbol, modifier }: TechL
   );
 }
 
-export default function TechSlice() {
+export default function TechSlice({ isHeading }: TechSliceProps) {
+  const techSliceClasses = `${styles.techSlice} ${isHeading ? '' : styles.withDivider}`;
   return (
-    <section className={styles.techSlice}>
+    <section className={techSliceClasses}>
       <div className={styles.techSliceIntro}>
-        <h2 className={styles.heading}>We love tech. But we only use what’s right for the job.</h2>
+        {isHeading ? (
+          <h1 className={styles.heading}>
+            We love tech. But we only use what’s right for the job.
+          </h1>
+        ) : (
+          <h2 className={styles.heading}>
+            We love tech. But we only use what’s right for the job.
+          </h2>
+        )}
 
         <p className={styles.projectsBlerb}>
           Here is a selection of what we’ve used on recent projects.

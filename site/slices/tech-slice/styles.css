@@ -10,11 +10,14 @@
 }
 
 .techSlice {
-  composes: dividerBlack from '../../css/_divider.css';
   color: badgerWhite;
   background-color: badgerBlack;
   padding: 30px 0 40px;
   text-align: center;
+}
+
+.withDivider {
+  composes: dividerBlack from '../../css/_divider.css';
 }
 
 .heading {
