@@ -3,31 +3,31 @@
 
 .headerContainer {
   display: flex;
-  composes: dividerWhite from "../../css/_divider.css";
+  composes: dividerBlack from '../../css/_divider.css';
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 30px 20px;
-  background-color: badgerWhite;
+  background-color: badgerBlack;
 }
 
 .mainHeader {
-  composes: fontL from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontL from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
   text-align: center;
-  color: badgerBlack;
+  color: badgerWhite;
 }
 
 .subHeader {
-  composes: fontS from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: fontS from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
   font-size: 16px;
-  color: badgerBlack;
+  color: badgerWhite;
 }
 
 .caseStudyContainer {
   padding: 30px 20px 30px 20px;
-  background-color: badgerWhite;
+  background-color: badgerBlack;
 }
 
 a {
@@ -41,8 +41,8 @@ a {
 
 .caseStudyCompany {
   color: badgerRedOnWhite;
-  composes: fontXS from "../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
+  composes: fontXS from '../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -58,9 +58,9 @@ a {
 }
 
 .caseStudyTitle {
-  color: badgerBlack;
-  composes: fontM from "../../css/typography/_fonts.css";
-  composes: serif from "../../css/typography/_fonts.css";
+  color: badgerWhite;
+  composes: fontM from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
   display: inline;
 }
 
@@ -73,28 +73,29 @@ a {
 }
 
 .caseStudyDescription {
-  color: badgerBlack;
-  composes: fontXS from "../../css/typography/_fonts.css";
-  composes: sansSerif from "../../css/typography/_fonts.css";
+  color: badgerWhite;
+  composes: fontXS from '../../css/typography/_fonts.css';
+  composes: sansSerif from '../../css/typography/_fonts.css';
 }
 
 .inverse {
-  background-color: badgerBlack;
+  background-color: badgerWhite;
 }
 
-.inverse .caseStudyTitle, .inverse .caseStudyDescription {
-  color: badgerWhite;
+.inverse .caseStudyTitle,
+.inverse .caseStudyDescription {
+  color: badgerBlack;
 }
 
 .buttonContainer {
   display: flex;
   justify-content: center;
   padding: 20px 0px 60px 0px;
-  background-color: badgerWhite;
+  background-color: badgerBlack;
 }
 
 .button {
-  composes: primaryButton from "../../css/_links.css";
+  composes: primaryButton from '../../css/_links.css';
 }
 
 @media mediumScreen {
@@ -117,7 +118,7 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 0px 10%;
-    flex:1;
+    flex: 1;
   }
 
   .caseStudyContainer img {
@@ -130,7 +131,7 @@ a {
 
   .imageWrapper {
     display: flex;
-    flex:1;
+    flex: 1;
     align-items: flex-end;
   }
 

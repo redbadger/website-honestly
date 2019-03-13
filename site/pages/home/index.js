@@ -8,6 +8,7 @@ import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
 import TechLabSlice from '../../slices/techlab-slice';
 import Social from '../../components/social';
 import HubspotSignup from './hubspot-signup';
+import TechSlice from '../../slices/tech-slice';
 import { YellowSlice } from '../../components/slice';
 
 import metaImage from './meta-image.jpg';
@@ -33,8 +34,9 @@ export default function HomePage() {
         <TechLabSlice linkUrl="https://hubs.ly/H0gG3Wh0" />
       </YellowSlice>
       <TestimonialsSlice />
-      <HubspotSignup />
+      <TechSlice />
       <ChecklistContactUs />
+      <HubspotSignup />
       <AwardsSlice />
     </ScrollTracker>
   );
