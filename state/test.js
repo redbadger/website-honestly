@@ -10,6 +10,7 @@ describe('state', () => {
     process.env.TWITTER_SECRET = 'SECRET_KEY';
     process.env.INSTAGRAM_ACCESS_TOKEN = 'SECRET_KEY';
     process.env.BADGER_BRAIN_HOST = 'https://brain-staging.red-badger.com/graphql';
+    process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT = 'https://api.hubapi.com/blogs/v3/blog-authors';
   });
 
   afterAll(() => {
@@ -19,6 +20,7 @@ describe('state', () => {
     delete process.env.TWITTER_SECRET;
     delete process.env.INSTAGRAM_ACCESS_TOKEN;
     delete process.env.BADGER_BRAIN_HOST;
+    delete process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT;
   });
 
   it('returns data in the correct shape', async () => {

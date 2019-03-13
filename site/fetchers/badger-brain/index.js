@@ -74,6 +74,11 @@ const sortBadgers = badgers => {
 };
 
 const checkForBlogPosts = badgers => {
+  // if we have the right endpoint and auth fetch all of our blogposts
+  // then create a map of all authors with published blogs
+  // then go through all the badgers and mark if they have blogs or not
+  // if the api call fails just return the badgers as is
+  // if we don't have an endpoint and api key do do as above
   if (process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT && process.env.HUBSPOT_API_KEY) {
     return fetch(
       `${process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT}?hapikey=${process.env.HUBSPOT_API_KEY}`,
@@ -86,7 +91,8 @@ const checkForBlogPosts = badgers => {
           ...badger,
           hasBlogPosts: slugs.indexOf(badger.slug) > -1,
         }));
-      });
+      })
+      .catch(() => badgers);
   }
   return new Promise(resolve => resolve(badgers));
 };
