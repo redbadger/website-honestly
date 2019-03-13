@@ -16,6 +16,24 @@ const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.
 
 const devMode = process.env.NODE_ENV !== 'production';
 
+function mediaFilesLoader(extraOptions) {
+  const defaultOptions = {
+    name: 'assets-honestly/[name]-[hash:base64:5].[ext]',
+    publicPath,
+  };
+
+  return {
+    test: /\.(png|jpe?g|gif|eot|ttf|woff|woff2|mp4|webm)$/,
+    exclude: [path.resolve(__dirname, 'dist'), path.resolve(__dirname, 'node_modules')],
+    use: [
+      {
+        loader: 'file-loader',
+        options: Object.assign(defaultOptions, extraOptions),
+      },
+    ],
+  };
+}
+
 const baseConfig = {
   stats: 'minimal',
 
@@ -55,19 +73,7 @@ const baseConfig = {
           },
         ],
       },
-      {
-        test: /\.(png|jpe?g|gif|eot|ttf|woff|woff2|mp4|webm)$/,
-        exclude: [path.resolve(__dirname, 'dist'), path.resolve(__dirname, 'node_modules')],
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'assets-honestly/[name]-[hash:base64:5].[ext]',
-              publicPath,
-            },
-          },
-        ],
-      },
+      mediaFilesLoader(),
       {
         test: /\.ejs/,
         use: [
@@ -115,19 +121,6 @@ exports.baseWebConfig = webpackMerge(baseConfig, {
 
 exports.baseServiceConfig = webpackMerge(baseConfig, {
   module: {
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif|eot|ttf|woff|woff2)$/,
-        exclude: [path.resolve(__dirname, 'dist'), path.resolve(__dirname, 'node_modules')],
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              emitFile: false,
-            },
-          },
-        ],
-      },
-    ],
+    rules: [mediaFilesLoader({ emitFile: false })],
   },
 });
