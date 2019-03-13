@@ -12,7 +12,7 @@ workflow [here](https://github.com/redbadger/blackbox-secrets).
 In order to update the `.env` file to the latest version use the command
 `make update-secrets`. If you make your own changes to the `.env` that need to be
 added to the project blackbox then use the command `make edit-secrets`. This will
-open the decrypted `.env` in your terminal `EDITOR` for you to mage changes to
+open the decrypted `.env` in your terminal `EDITOR` for you to make changes to
 before encrypting it and pushing the the project blackbox for distribution.
 
 * `ENVIRONMENT_NAME`
