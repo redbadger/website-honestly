@@ -3,12 +3,12 @@
 import React from 'react';
 import styles from './style.css';
 
+import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
 import WebinarSignupSlice from './webinar-signup-slice';
 import { TechChecklist } from '../../slices/checklist-contact-us-slice';
 
-import { WhiteSlice, YellowSlice } from '../../components/slice';
-import { H1 } from '../../components/text';
+import { YellowSlice } from '../../components/slice';
 import Social from '../../components/social';
 import ScrollTracker from '../../components/scroll-tracker';
 
@@ -33,11 +33,7 @@ const social = {
 const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Props) => (
   <ScrollTracker>
     <Social {...social} />
-    <WhiteSlice>
-      <div className={styles.heading}>
-        <H1>We love tech, but we only choose what’s right for the job.</H1>
-      </div>
-    </WhiteSlice>
+    <TechSlice isHeading />
     <YellowSlice>
       <TechLabSlice linkUrl="https://hubs.ly/H0gFmpQ0" />
     </YellowSlice>
