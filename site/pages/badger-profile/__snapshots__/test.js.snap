@@ -351,49 +351,6 @@ exports[`site/pages/badger-profile renders correctly 1`] = `
               </p>
             </div>
           </div>
-          <div
-            className="authorLinks"
-          >
-            <BlogsLink
-              badger={
-                Object {
-                  "about": "I have no idea why a badger is in the office but it hasn't bitten anyone yet",
-                  "achievements": "I mean it got into Badger HQ and nobody has managed to evict her yet.",
-                  "categories": Array [
-                    Object {
-                      "name": "woodland-mammals",
-                      "order": 1,
-                      "slug": "squelch",
-                    },
-                  ],
-                  "firstName": "Sally",
-                  "github": "beingABadgerIDoNotCode",
-                  "influence": "Probably looking to steal Milo's food",
-                  "jobTitle": "Literally just a badger",
-                  "lastName": "Badger",
-                  "linkedIn": "grrrrr",
-                  "primaryImageUrl": "https://www.somefakebadgersite.com/image.jpg",
-                  "secondaryImageUrl": "https://www.somefakebadgersite.com/image2.jpg",
-                  "skills": "Burrowing underground, eating grubs and stealing dog food.",
-                  "slug": "no-not-a-slug-a-badger",
-                  "squarespaceId": "grrISaidGrrrr",
-                  "twitter": "@literallyABadger",
-                }
-              }
-            >
-              <div
-                className="authorLink"
-              >
-                <a
-                  href="/blog/author/no-not-a-slug-a-badger"
-                >
-                  Read 
-                  Sally
-                  ’s blog posts
-                </a>
-              </div>
-            </BlogsLink>
-          </div>
           <hr />
           <Link
             className="categoryBox"

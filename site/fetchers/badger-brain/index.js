@@ -73,6 +73,34 @@ const sortBadgers = badgers => {
     .concat(shuffle(randomBadgers));
 };
 
+const checkForBlogPosts = badgers => {
+  // if we have the right endpoint and auth fetch all of our blogposts
+  // then create a map of all authors with published blogs
+  // then go through all the badgers and mark if they have blogs or not
+  // if the api call fails just return the badgers as is
+  // if we don't have an endpoint and api key do do as above
+  if (process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT && process.env.HUBSPOT_API_KEY) {
+    return fetch(
+      `${process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT}?hapikey=${process.env.HUBSPOT_API_KEY}`,
+    )
+      .then(response => response.json())
+      .then(response => {
+        const slugs = response.objects.map(author => author.slug);
+
+        return badgers.map(badger => ({
+          ...badger,
+          hasBlogPosts: slugs.indexOf(badger.slug) > -1,
+        }));
+      })
+      .catch(() => badgers);
+  }
+  return new Promise(resolve => resolve(badgers));
+};
+
+const processBadgers = badgers => {
+  return checkForBlogPosts(badgers).then(sortBadgers);
+};
+
 const selectValidQandAs = qAndAs => {
   return qAndAs
     .map(category => ({
@@ -183,11 +211,13 @@ export function getData() {
   return fetch(badgerBrainEndpoint(), getRequestOptions(body))
     .then(handleErrors)
     .then(response => response.json())
-    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner } }) => ({
-      events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
-      badgers: sortBadgers(allBadgers),
-      categories: getCategories(allBadgers),
-      qAndAs: selectValidQandAs(allQnA),
-      eventsBanner,
-    }));
+    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner } }) =>
+      processBadgers(allBadgers).then(badgers => ({
+        events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
+        badgers,
+        categories: getCategories(allBadgers),
+        qAndAs: selectValidQandAs(allQnA),
+        eventsBanner,
+      })),
+    );
 }
