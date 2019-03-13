@@ -73,9 +73,11 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
               </div>
             )}
           </div>
-          <div className={styles.authorLinks}>
-            <BlogsLink badger={badger} />
-          </div>
+          {badger.hasBlogPosts && (
+            <div className={styles.authorLinks}>
+              <BlogsLink badger={badger} />
+            </div>
+          )}
           <hr />
           <Link to="badgers" className={styles.categoryBox}>
             See Everyone
