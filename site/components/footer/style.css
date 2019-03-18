@@ -6,17 +6,18 @@
 }
 
 .screenReaderText {
-  composes: visuallyHidden from "../../css/_accessibility.css";
+  composes: visuallyHidden from '../../css/_accessibility.css';
 }
 
 .footer {
-  composes: dividerBlack from "../../css/_divider.css";
+  composes: dividerBlack from '../../css/_divider.css';
   color: badgerWhite;
   padding: 0px 20px;
   background-color: badgerBlack;
 }
 
-.footer, .footer:before {
+.footer,
+.footer:before {
   box-shadow: -1px -1px linesOnBlack;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .nav {
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: serif from '../../css/typography/_fonts.css';
   font-size: linkSize;
   list-style: none;
   line-height: 1.2em;
@@ -45,12 +46,14 @@
   margin: 0;
 }
 
-.nav li a, .nav p a {
+.nav li a,
+.nav p a {
   color: badgerWhite;
   text-decoration: none;
 }
 
-.nav li a:hover, .nav p a:hover {
+.nav li a:hover,
+.nav p a:hover {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
@@ -67,7 +70,7 @@
 }
 
 .social {
-  composes: serif from "../../css/typography/_fonts.css";
+  composes: serif from '../../css/typography/_fonts.css';
   line-height: 1.2em;
   font-size: linkSize;
 }
@@ -110,13 +113,9 @@
 }
 
 .address {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
   display: flex;
-}
-
-.mapPin svg {
-  width: 22px;
 }
 
 .mapContainer {
@@ -124,15 +123,15 @@
 }
 
 .mapLink {
-  composes: redUnderlineLink from "../../css/_links.css";
+  composes: redUnderlineLink from '../../css/_links.css';
   border-color: badgerRedOnBlack;
   margin-top: 20px;
   display: inline-block;
 }
 
 .disclaimer {
-  composes: boldSansSerif from "../../css/typography/_fonts.css";
-  composes: fontXS from "../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
 }
 
 .disclaimerParagraph {
@@ -155,8 +154,6 @@
 
 .badgerIcon svg {
   margin: 15px 20px;
-  width: 50px;
-  height: 50px;
 }
 
 .footerMap {

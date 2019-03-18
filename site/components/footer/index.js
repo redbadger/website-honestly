@@ -1,23 +1,21 @@
 // @flow
-import InlineSVG from 'svg-inline-react';
 import classnames from 'classnames/bind';
 import React from 'react';
 import styles from './style.css';
 import Link from '../link';
 import logAmplitudeEvent from '../../tracking/amplitude';
 
-/* SVGs */
-import githubSVG from './SVG/github.svg';
-import facebookSVG from './SVG/facebook.svg';
-import gplusSVG from './SVG/g-plus.svg';
-import instagramSVG from './SVG/instagram.svg';
-import linkedinSVG from './SVG/linked-in.svg';
-import slackSVG from './SVG/slack.svg';
-import twitterSVG from './SVG/twitter.svg';
-import youtubeSVG from './SVG/youtube.svg';
-import mapPinSVG from './SVG/map-pin.svg';
-import badgerSVG from './SVG/badger-on-black.svg';
+/* Icons */
 import mapPNG from './PNG/map.png';
+import GitHub from './icons/github';
+import Twitter from './icons/twitter';
+import Slack from './icons/slack';
+import LinkedIn from './icons/linkedin';
+import Instagram from './icons/instagram';
+import Facebook from './icons/facebook';
+import Youtube from './icons/youtube';
+import MapPin from './icons/map-pin';
+import Badger from './icons/badger';
 
 const cx = classnames.bind(styles);
 
@@ -102,7 +100,7 @@ const Footer = () => (
                   aria-label="Red Badger Github"
                   className={styles.socialIcon}
                 >
-                  <InlineSVG src={githubSVG} title="Github" />
+                  <GitHub />
                 </a>
               </li>
               <li>
@@ -112,7 +110,7 @@ const Footer = () => (
                   aria-label="Red Badger Twitter"
                   className={styles.socialIcon}
                 >
-                  <InlineSVG src={twitterSVG} title="Twitter" />
+                  <Twitter />
                 </a>
               </li>
               <li>
@@ -122,7 +120,7 @@ const Footer = () => (
                   aria-label="Red Badger Slack"
                   className={styles.socialIcon}
                 >
-                  <InlineSVG src={slackSVG} title="Slack" />
+                  <Slack />
                 </a>
               </li>
               <li>
@@ -132,7 +130,7 @@ const Footer = () => (
                   aria-label="Red Badger Linkedin"
                   className={styles.socialIcon}
                 >
-                  <InlineSVG src={linkedinSVG} title="Linkedin" />
+                  <LinkedIn />
                 </a>
               </li>
 
@@ -143,7 +141,7 @@ const Footer = () => (
                   aria-label="Red Badger Instagram"
                   className={styles.socialIcon}
                 >
-                  <InlineSVG src={instagramSVG} title="Instagram" />
+                  <Instagram />
                 </a>
               </li>
               <li>
@@ -153,7 +151,7 @@ const Footer = () => (
                   aria-label="Red Badger Facebook"
                   className={styles.socialIcon}
                 >
-                  <InlineSVG src={facebookSVG} title="Facebook" />
+                  <Facebook />
                 </a>
               </li>
               <li>
@@ -163,23 +161,13 @@ const Footer = () => (
                   aria-label="Red Badger Youtube"
                   className={styles.socialIcon}
                 >
-                  <InlineSVG src={youtubeSVG} title="Youtube" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://plus.google.com/+Redbadgerteam"
-                  title="Red Badger Google Plus"
-                  aria-label="Red Badger Google Plus"
-                  className={styles.socialIcon}
-                >
-                  <InlineSVG src={gplusSVG} title="Google Plus" />
+                  <Youtube />
                 </a>
               </li>
             </ul>
           </div>
           <div className={cx('section', 'address', 'underline')}>
-            <InlineSVG role="presentation" src={mapPinSVG} className={styles.mapPin} />
+            <MapPin role="presentation" />
             <div className={styles.mapContainer}>
               <address>
                 <p>4th Floor</p>
@@ -212,14 +200,12 @@ const Footer = () => (
           <p className={styles.cookieWarning}>
             We use <Link to="cookiePolicy">cookies</Link> on our website. For more information, view
             our <Link to="privacyPolicy">privacy policy</Link> and website{' '}
-            <Link to="termsAndConditions">T&C&apos;s</Link>.
+            <Link to="termsAndConditions">T&amp;C&apos;s</Link>.
           </p>
         </div>
-        <InlineSVG
-          src={badgerSVG}
-          className={styles.badgerIcon}
-          title="Sally the Red Badger Badger"
-        />
+        <div className={styles.badgerIcon}>
+          <Badger />
+        </div>
       </div>
     </div>
   </footer>
