@@ -1,19 +1,18 @@
 // @flow
 
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 
 import Link from '../link';
 import SmallScreenNav from './small-screen-nav';
 
 import styles from './style.css';
-import logo from './logo.svg';
+import Logo from './logo';
 
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
       <Link to="homePage" title="Home" className={styles.logo}>
-        <InlineSVG src={logo} title="Red Badger logo" />
+        <Logo />
       </Link>
 
       <nav className={styles.mediumScreenNavContainer}>
