@@ -1,7 +1,8 @@
 @value badgerRed, badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
-.arrow svg {
+.arrow {
+  width: 15px;
   height: 15px;
   margin: 0 10px;
 }
@@ -36,11 +37,6 @@
   white-space: nowrap;
 }
 
-.lastWord i {
-  width: 22px;
-  display: inline-block;
-}
-
 .sloganLink {
   color: badgerBlack;
   border-bottom: 0;
@@ -52,10 +48,6 @@
 
 .sloganLink:hover .sloganUnderline {
   border-bottom: 2px solid badgerRed;
-}
-
-.sloganLink:hover .sloganUnderline i {
-  border-bottom: 0;
 }
 
 .sloganDescription {
@@ -79,7 +71,8 @@
 }
 
 @media largeScreen {
-  .arrow svg {
+  .arrow {
+    width: 20px;
     height: 20px;
   }
 

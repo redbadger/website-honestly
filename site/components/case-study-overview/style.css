@@ -1,8 +1,12 @@
 @value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
+.arrow {
+  width: 22px;
+  display: inline-block;
+}
+
 .arrow svg {
-  height: 15px;
   margin: 0 10px;
 }
 
@@ -110,11 +114,6 @@
   display: inline;
   white-space: nowrap;
   position: relative;
-}
-
-.lastWord i {
-  width: 22px;
-  display: inline-block;
 }
 
 .centerText {

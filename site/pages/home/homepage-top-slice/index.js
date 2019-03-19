@@ -2,13 +2,12 @@
 
 import classnames from 'classnames/bind';
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import ReactGA from 'react-ga';
 
 import styles from './style.css';
-import arrowSVG from '../../../../assets/images/SVG/arrow.svg';
 import Link from '../../../components/link';
 import PrideHeart from '../../../components/pride-heart';
+import Arrow from '../../../icons/arrow';
 
 const cx = classnames.bind(styles);
 
@@ -63,7 +62,7 @@ class HomepageTopSlice extends React.Component<{}, State> {
               <span className={styles.sloganUnderline}>innovate and </span>
               <span className={styles.lastWord}>
                 <span className={styles.sloganUnderline}>deliver.</span>
-                <InlineSVG src={arrowSVG} className={styles.arrow} />
+                <Arrow className={styles.arrow} />
               </span>
             </Link>
           </p>
