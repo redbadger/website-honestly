@@ -10,7 +10,7 @@ import financialTimesPNG from './PNG/financialtimes.png';
 
 import Link from '../link';
 import CaseStudyCompanyLogos from '../case-study-company-logos';
-import Arrow from '../../icons/arrow';
+import Arrow from '../icons/arrow';
 
 const trackStatClicks = company => () =>
   ReactGA.event({
@@ -53,7 +53,7 @@ const CaseStudyOverview = () => (
               <span className={styles.lastWord}>
                 deployment
                 <div className={styles.arrow}>
-                  <Arrow size={15} />
+                  <Arrow />
                 </div>
               </span>
             </span>
@@ -74,7 +74,7 @@ const CaseStudyOverview = () => (
               <span className={styles.lastWord}>
                 backlog
                 <div className={styles.arrow}>
-                  <Arrow size={15} />
+                  <Arrow />
                 </div>
               </span>
             </span>
@@ -95,7 +95,7 @@ const CaseStudyOverview = () => (
               <span className={styles.lastWord}>
                 culture
                 <div className={styles.arrow}>
-                  <Arrow size={15} />
+                  <Arrow />
                 </div>
               </span>
             </span>
@@ -117,7 +117,7 @@ const CaseStudyOverview = () => (
               <span className={styles.lastWord}>
                 engagement
                 <div className={styles.arrow}>
-                  <Arrow size={15} />
+                  <Arrow />
                 </div>
               </span>
             </span>

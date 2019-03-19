@@ -7,6 +7,7 @@
 }
 
 .arrow svg {
+  width: 15px;
   margin: 0 10px;
 }
 
@@ -75,11 +76,6 @@
 .logoContainer {
   display: flex;
   height: 50px;
-}
-
-.caseFigure svg {
-  height: 80px;
-  width: 100%;
 }
 
 .logo {
@@ -209,10 +205,6 @@
 @media largeScreen {
   .heading {
     padding: 50px 60px 60px 60px;
-  }
-
-  .caseFigure svg {
-    height: 122px;
   }
 
   .figuresContainer {

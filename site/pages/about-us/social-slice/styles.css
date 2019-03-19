@@ -3,14 +3,14 @@
 
 .socialSlice {
   background: badgerBlack;
-  composes: dividerBlackSocialSlice from "../../../css/_divider.css";
-  height: 520px;
+  composes: dividerBlackSocialSlice from '../../../css/_divider.css';
+  height: 525px;
 }
 
 .desktopView {
   display: none;
   overflow: hidden;
-  height: 520px;
+  height: 525px;
   background: url(./SocialBackground.png) no-repeat right;
 }
 
@@ -20,7 +20,7 @@
   background: url(./SocialBackground.png) no-repeat right;
 }
 
-.noscript{
+.noscript {
   display: flex;
   overflow: hidden;
   background: url(./SocialBackground.png) no-repeat right;
@@ -38,8 +38,8 @@
   overflow: hidden;
 }
 
-@media mediumScreen{
-  .desktopView{
+@media mediumScreen {
+  .desktopView {
     display: flex;
   }
 
@@ -47,7 +47,7 @@
     display: none;
   }
 
-  .noscript{
+  .noscript {
     overflow-x: scroll;
   }
 }

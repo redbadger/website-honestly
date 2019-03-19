@@ -3,7 +3,7 @@ import React from 'react';
 
 import styles from './style.css';
 import Link from '../../../../../components/link';
-import Arrow from '../../../../../icons/arrow';
+import Arrow from '../../../../../components/icons/arrow';
 
 type WhatToReadNextSliceProps = {
   name: string,

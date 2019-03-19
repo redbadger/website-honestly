@@ -1,8 +1,10 @@
+// @flow
+
 import React from 'react';
 
-export default function Badger() {
+export default function BadgerInCircle() {
   return (
-    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
       <title>Sally the Red Badger Badger</title>
       <circle cx="200" cy="200" r="200" fill="#fc1d42" />
       <circle cx="200" cy="200" r="136.98" fill="#fff" />

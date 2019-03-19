@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 import styles from './style.css';
 import Link from '../../../components/link';
 import PrideHeart from '../../../components/pride-heart';
-import Arrow from '../../../icons/arrow';
+import Arrow from '../../../components/icons/arrow';
 
 const cx = classnames.bind(styles);
 

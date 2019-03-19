@@ -2,12 +2,12 @@
 @value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
 
 .twitter {
-  composes: card from "../styles.css";
+  composes: card from '../styles.css';
   color: badgerBlack;
   padding-left: 0px;
   overflow: hidden;
 }
-.link{
+.link {
   background: transparent;
   outline: none;
   border: none;
@@ -16,33 +16,40 @@
   margin: 0;
   color: badgerBlack;
 }
-.link:hover{
+.link:hover {
   cursor: pointer;
 }
 
-.green { background: daveGreen; }
-.blue { background: stuBlue; }
-.mauve { background: mauve; }
+.green {
+  background: daveGreen;
+}
+.blue {
+  background: stuBlue;
+}
+.mauve {
+  background: mauve;
+}
 .handle {
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
   margin: 10px 20px 10px 20px;
   display: flex;
+  align-items: center;
 }
 
-.handleText{
+.handleText {
   margin-top: 2px;
 }
 
 .tweet {
-  composes: serif from "../../../../css/typography/_fonts.css";
-  composes: fontS from "../../../../css/typography/_fonts.css";
+  composes: serif from '../../../../css/typography/_fonts.css';
+  composes: fontS from '../../../../css/typography/_fonts.css';
   margin: 20px;
 }
 
 .meta {
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
   padding: 0px 20px;
 }
 
@@ -51,25 +58,19 @@
 }
 
 .icon {
-  
-}
-
-.icon svg {
   width: 20px;
   height: 20px;
   margin-right: 5px;
   vertical-align: middle;
 }
-.twitterIcon{
-  
-}
-.twitterIcon svg {
+
+.twitterIcon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  vertical-align: middle;
+  fill: black;
 }
 
-.retweets svg{
+.retweets {
   width: 25px;
 }

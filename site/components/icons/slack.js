@@ -1,8 +1,10 @@
+// @flow
+
 import React from 'react';
 
 export default function Slack() {
   return (
-    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <title>Slack</title>
       <g fillRule="evenodd">
         <path d="M8.171 9.243l.855 2.553 2.652-.888-.855-2.553-2.652.888" />

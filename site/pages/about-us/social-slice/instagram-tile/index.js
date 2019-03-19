@@ -1,14 +1,13 @@
 // @flow
 
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import cx from 'classnames';
 
 import styles from './styles.css';
-import instagramIconSVG from '../icons/instagram/instagram.svg';
-import likeIconSVG from '../icons/like/like.svg';
-import commentIconSVG from '../icons/comment/comment.svg';
 import type { InstagramPost } from '../../../../types/';
+import Like from '../../../../components/icons/like';
+import Comment from '../../../../components/icons/comment';
+import InstagramLogo from '../../../../components/icons/instagram';
 
 type InstagramProps = {
   post: InstagramPost,
@@ -26,7 +25,7 @@ const Instagram = ({ post, index }: InstagramProps) => {
     <a className={styles.link} href={post.link} rel="noopener noreferrer" target="_blank">
       <div className={cx(styles.instagram, colours[index % 3])}>
         <div className={styles.handle} tabIndex={0}>
-          <InlineSVG src={instagramIconSVG} className={styles.instagramIcon} />
+          <InstagramLogo className={styles.instagramIcon} />
           <span className={styles.handleText}>@redbadgerteam</span>
         </div>
         <img className={styles.image} alt={shorten(post.text)} src={post.image.url} />
@@ -36,11 +35,11 @@ const Instagram = ({ post, index }: InstagramProps) => {
           </div>
           <div>
             <span className={styles.likes} tabIndex={0}>
-              <InlineSVG src={likeIconSVG} className={styles.icon} />
+              <Like className={styles.icon} />
               {post.likes}
             </span>
             <span className={styles.comments} tabIndex={0}>
-              <InlineSVG src={commentIconSVG} className={styles.icon} />
+              <Comment className={styles.icon} />
               {post.comments}
             </span>
           </div>

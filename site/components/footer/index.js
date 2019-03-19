@@ -7,15 +7,15 @@ import logAmplitudeEvent from '../../tracking/amplitude';
 
 /* Icons */
 import mapPNG from './PNG/map.png';
-import GitHub from './icons/github';
-import Twitter from './icons/twitter';
-import Slack from './icons/slack';
-import LinkedIn from './icons/linkedin';
-import Instagram from './icons/instagram';
-import Facebook from './icons/facebook';
-import Youtube from './icons/youtube';
-import MapPin from './icons/map-pin';
-import Badger from './icons/badger';
+import GitHub from '../icons/github';
+import Twitter from '../icons/twitter';
+import Slack from '../icons/slack';
+import LinkedIn from '../icons/linkedin';
+import Instagram from '../icons/instagram';
+import Facebook from '../icons/facebook';
+import Youtube from '../icons/youtube';
+import MapPin from '../icons/map-pin';
+import Badger from '../icons/badger-in-circle';
 
 const cx = classnames.bind(styles);
 
@@ -167,7 +167,7 @@ const Footer = () => (
             </ul>
           </div>
           <div className={cx('section', 'address', 'underline')}>
-            <MapPin role="presentation" />
+            <MapPin className={styles.mapPin} role="presentation" />
             <div className={styles.mapContainer}>
               <address>
                 <p>4th Floor</p>
