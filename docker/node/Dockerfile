@@ -7,16 +7,16 @@ RUN apk add --no-cache ca-certificates && \
     apk add --no-cache --virtual .build-deps-glibc \
         curl \
  && cd /etc/apk/keys \
- && curl -fsSLO --compressed https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub \
+ && curl -fsSLO https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \
  && cd /tmp \
  && curl -fsSLO https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC_VERSION/glibc-$GLIBC_VERSION.apk \
  && apk add --no-cache glibc-$GLIBC_VERSION.apk \
  && rm glibc-$GLIBC_VERSION.apk /etc/apk/keys/sgerrand.rsa.pub \
  && apk del --no-cache .build-deps-glibc
 
-ENV NODE_VERSION 6.10.3
+ENV NODE_VERSION 8.15.1
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NPM_GPG_KEY C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8
+ENV NPM_GPG_KEY DD8F2338BAE7501E3DD5AC78C273792F7D83545D
 RUN addgroup -g 1000 node \
  && adduser -u 1000 -G node -s /bin/sh -D node \
  && apk add --no-cache \
@@ -31,7 +31,7 @@ RUN addgroup -g 1000 node \
         linux-headers \
         make \
         python \
- && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$NPM_GPG_KEY" \
+ && gpg --keyserver pool.sks-keyservers.net --recv-keys "$NPM_GPG_KEY" \
         || gpg --keyserver pgp.mit.edu --recv-keys "$NPM_GPG_KEY" \
         || gpg --keyserver keyserver.pgp.com --recv-keys "$NPM_GPG_KEY" \
  && curl -fsSLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz" \

@@ -1,4 +1,4 @@
-FROM node:6.11.5-alpine
+FROM node:8.15.1-alpine
 
 # Alpine Linux includes musl libc, but Flow is linked against GNU libc, so we need to install it.
 # See https://github.com/sgerrand/alpine-pkg-glibc
@@ -31,5 +31,3 @@ RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest
 RUN chmod +x ./cc-test-reporter
 
 RUN apk -v --purge del py-pip
-
-
