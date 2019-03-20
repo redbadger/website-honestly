@@ -16,8 +16,7 @@
 
 .sloganWrapper {
   position: relative;
-  cursor: pointer;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   display: block;
   color: #212121;
 }
@@ -27,10 +26,6 @@
   composes: serif from '../../../css/typography/_fonts.css';
   display: inline-block;
   border-bottom: 2px solid badgerWhite;
-}
-
-.sloganWrapper:hover h1 {
-  border-bottom: 2px solid badgerRed;
 }
 
 .lastWord {
