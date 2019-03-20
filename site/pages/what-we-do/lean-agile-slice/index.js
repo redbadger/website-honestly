@@ -1,9 +1,8 @@
 // @flow
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
-import smallLoopImg from './smallLoop.svg';
-import largeLoopImg from './largeLoop.svg';
+import LargeLoop from './largeLoop';
+import SmallLoop from './smallLoop';
 
 const innovationSteps = [
   {
@@ -60,8 +59,8 @@ const leanAgileSlice = () => {
       <h2 className={styles.leanAgileHeader}>Our flexible lean and agile process</h2>
       <div className={styles.steps}>
         <div className={styles.loopContainer}>
-          <InlineSVG src={smallLoopImg} className={styles.smallLoopImage} />
-          <InlineSVG src={largeLoopImg} className={styles.largeLoopImage} />
+          <SmallLoop className={styles.smallLoopImage} />
+          <LargeLoop className={styles.largeLoopImage} />
           <div className={styles.wordLeft}>Innovation</div>
           <div className={styles.wordRight}>Delivery</div>
         </div>

@@ -7,8 +7,8 @@
 }
 
 .leanAgileHeader {
-  composes: fontM from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
   max-width: 210px;
   margin: 0 auto;
   text-align: center;
@@ -22,8 +22,8 @@
 }
 
 .word {
-  composes: fontS from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
   width: 130px;
   position: absolute;
   top: 50%;
@@ -45,11 +45,6 @@
 }
 
 .smallLoopImage {
-  display: inline-block;
-  width: 100%;
-}
-
-.smallLoopImage svg {
   width: 290px;
   height: 124px;
 }
@@ -61,8 +56,8 @@
 }
 
 .stepHeader {
-  composes: fontM2 from "../../../css/typography/_fonts.css";
-  composes: serif from "../../../css/typography/_fonts.css";
+  composes: fontM2 from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
   padding: 10px 0 20px 18px;
 }
 
@@ -101,16 +96,16 @@
 }
 
 .stepSubHeader {
-  composes: fontS from "../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
   color: badgerRed;
   text-transform: uppercase;
   display: inline-block;
 }
 
 .stepDescription {
-  composes: fontXS from "../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
   color: badgerBlack;
 }
 
@@ -124,7 +119,9 @@
     max-width: 340px;
   }
 
-  .smallLoopImage, .stepHeader, .stepPaddingBottom {
+  .smallLoopImage,
+  .stepHeader,
+  .stepPaddingBottom {
     display: none;
   }
 
@@ -158,7 +155,7 @@
   .largeLoopImage {
     display: block;
     width: 290px;
-    height: 700px;
+    height: 690px;
   }
 
   .step {
@@ -275,7 +272,7 @@
 
   .largeLoopImage {
     width: 410px;
-    height: 1000px;
+    height: 975px;
   }
 
   .stepSubHeader {
