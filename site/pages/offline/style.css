@@ -10,7 +10,12 @@
 .notification {
   background-color: badgerBlack;
   color: badgerWhite;
-  padding: 20px;
+}
+
+.notificationContainer {
+  margin: 0 auto;
+  max-width: 710px;
+  padding: 30px 20px;
 }
 
 .notifyHeader {
@@ -38,7 +43,7 @@
 }
 
 .link {
-  composes: redUnderlineLink from "../../css/_links.css";
+  composes: redUnderlineLink from '../../css/_links.css';
   color: badgerBlack;
 }
 
@@ -76,15 +81,14 @@
   list-style-position: outside;
 }
 
-.diagram svg {
+.diagram {
   display: block;
   margin: 20px auto 30px auto;
   max-width: 267px;
   width: 80%;
 }
 
-.smiley svg {
-  display: inline;
+.smiley {
   height: 1em;
   width: 1em;
 }
@@ -94,9 +98,8 @@
 }
 
 @media mediumScreen {
-  .diagram svg {
-    display: inline-block;
+  .diagram {
     float: right;
-    margin: -.9em 0 20px 20px;
+    margin: -0.9em 0 20px 20px;
   }
 }

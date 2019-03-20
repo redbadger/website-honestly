@@ -1,10 +1,9 @@
 // @flow
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 
 import styles from './style.css';
-import arrowSVG from '../../../../../../assets/images/SVG/arrow.svg';
 import Link from '../../../../../components/link';
+import Arrow from '../../../../../components/icons/arrow';
 
 type WhatToReadNextSliceProps = {
   name: string,
@@ -25,7 +24,9 @@ const WhatToReadNextSlice = ({ name, tagline, image, linkKey }: WhatToReadNextSl
       <Link to={linkKey} className={styles.whatNext__link}>
         <h2 className={styles.whatNext__title}>
           {tagline}
-          <InlineSVG src={arrowSVG} className={styles.whatNext__arrow} />
+          <span className={styles.whatNext__arrow_wrapper}>
+            <Arrow className={styles.whatNext__arrow} />
+          </span>
         </h2>
       </Link>
     </div>

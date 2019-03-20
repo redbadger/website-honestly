@@ -1,18 +1,23 @@
 @value badgerBlack, badgerWhite, daveGreen, stuBlue, mauve from "../../../../css/_colors.css";
 @value maxWidth, largeScreen, mediumScreen from "../../../../css/_sizes.css";
 
-
-.green { background: daveGreen; }
-.blue { background: stuBlue; }
-.mauve { background: mauve; }
+.green {
+  background: daveGreen;
+}
+.blue {
+  background: stuBlue;
+}
+.mauve {
+  background: mauve;
+}
 
 .instagram {
-  composes: card from "../styles.css";
+  composes: card from '../styles.css';
 }
 
 .meta {
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
   padding: 15px 20px 20px 20px;
 }
 
@@ -20,7 +25,7 @@
   margin-right: 15px;
 }
 
-.link{
+.link {
   background: transparent;
   outline: none;
   border: none;
@@ -29,7 +34,7 @@
   margin: 0;
   color: badgerBlack;
 }
-.link:hover{
+.link:hover {
   cursor: pointer;
 }
 
@@ -38,38 +43,36 @@
 }
 
 .handle {
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
   padding: 10px 20px;
   display: flex;
+  align-items: center;
 }
 
-.handleText{
-  margin-top: 1px;
+.handleText {
+  transform: translateY(1px);
 }
-.instagramIcon{
+
+.instagramIcon {
   margin-right: 10px;
-}
-
-.instagramIcon svg {
   width: 20px;
   height: 20px;
-  vertical-align: middle;
 }
 
-.icon svg {
+.icon {
   width: 20px;
   height: 20px;
   margin-right: 5px;
   vertical-align: middle;
 }
 
-.likes{
+.likes {
   margin-right: 20px;
 }
 
-.text{
-  margin-bottom: 10px; 
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css"; 
+.text {
+  margin-bottom: 10px;
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
 }

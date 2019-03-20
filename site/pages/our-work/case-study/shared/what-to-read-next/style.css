@@ -67,14 +67,14 @@
   composes: primaryButton from '../../../../../css/_links.css';
 }
 
-.whatNext__arrow {
+.whatNext__arrow_wrapper {
   position: absolute;
 }
 
-.whatNext__arrow svg {
-  width: 18px;
-  height: 18px;
+.whatNext__arrow {
   margin: 0 10px;
+  width: 16px;
+  height: 16px;
 }
 
 @media mediumScreen {
@@ -85,6 +85,11 @@
 
   .whatNext__tilesContainer > div:nth-child(-n + 2) {
     display: block;
+  }
+
+  .whatNext__arrow {
+    width: 18px;
+    height: 18px;
   }
 }
 

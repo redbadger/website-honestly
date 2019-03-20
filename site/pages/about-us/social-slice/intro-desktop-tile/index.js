@@ -1,11 +1,9 @@
 // @flow
 
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import styles from './styles.css';
-import previousArrowIcon from '../icons/arrow/arrowPrevious.svg';
-import nextArrowIcon from '../icons/arrow/arrow.svg';
 import ClientOnly from '../../../../components/clientOnly';
+import ArrowLight from '../../../../components/icons/arrow-light';
 
 type IntroProps = {
   prevCard: Function,
@@ -30,7 +28,7 @@ const IntroDesktopCard = ({ prevCard, nextCard, currentTile, totalSwipableTiles 
             onClick={prevCard}
             className={styles.prevButton}
           >
-            <InlineSVG src={previousArrowIcon} className={styles.prevArrow} />
+            <ArrowLight reverse className={styles.prevArrow} />
           </button>
           <button
             title="Next"
@@ -39,7 +37,7 @@ const IntroDesktopCard = ({ prevCard, nextCard, currentTile, totalSwipableTiles 
             onClick={nextCard}
             className={styles.nextButton}
           >
-            <InlineSVG src={nextArrowIcon} className={styles.nextArrow} />
+            <ArrowLight className={styles.nextArrow} />
           </button>
         </div>
       </ClientOnly>

@@ -1,34 +1,33 @@
 // @flow
-import InlineSVG from 'svg-inline-react';
 import React from 'react';
 
 import styles from './style.css';
 
-import twitterSVG from './SVG/twitter.svg';
-import githubSVG from './SVG/github.svg';
-import linkedinSVG from './SVG/linked-in.svg';
+import Twitter from '../../../components/icons/twitter';
+import GitHub from '../../../components/icons/github';
+import LinkedIn from '../../../components/icons/linkedin';
 
 import type { Badger } from '../../../types';
 
-const SocialContacts = ({ badger }: { badger: Badger }) => {
-  const socialPages = [
-    { social: 'Twitter', img: twitterSVG },
-    { social: 'Github', img: githubSVG },
-    { social: 'LinkedIn', img: linkedinSVG },
-  ];
+const socialPages = [
+  { social: 'Twitter', Icon: Twitter },
+  { social: 'Github', Icon: GitHub },
+  { social: 'LinkedIn', Icon: LinkedIn },
+];
 
+const SocialContacts = ({ badger }: { badger: Badger }) => {
   return (
     <ul className={styles.socialLinks}>
       {socialPages
-        .filter(s => badger[s.social.toLowerCase()])
-        .map(s => (
-          <li key={s.social}>
+        .filter(({ social }) => badger[social.toLowerCase()])
+        .map(({ social, Icon }) => (
+          <li key={social}>
             <a
-              href={badger[s.social.toLowerCase()]}
-              title={s.social}
+              href={badger[social.toLowerCase()]}
+              title={social}
               className={styles.badgerSocialIcon}
             >
-              <InlineSVG src={s.img} title={s.social} />
+              <Icon />
             </a>
           </li>
         ))}

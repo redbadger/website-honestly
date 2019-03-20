@@ -23,7 +23,7 @@
   right: 0;
 }
 .placeholder {
-  background-color: #EFEFF1;
+  background-color: #efeff1;
   height: 100%;
 }
 
@@ -36,14 +36,14 @@
 }
 
 .skillsHeading {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
   color: daveGreen;
 }
 
 .skills {
-  composes: fontM from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
   color: badgerWhite;
 }
 
@@ -55,8 +55,8 @@
 }
 
 .nameWrapper {
-  composes: fontS2 from "../../../../css/typography/_fonts.css";
-  composes: serif from "../../../../css/typography/_fonts.css";
+  composes: fontS2 from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
   margin-right: 35px;
 }
 
@@ -66,12 +66,15 @@
 }
 
 .jobDescription {
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+}
+
+.arrow {
+  position: absolute;
 }
 
 .arrow svg {
-  overflow: hidden;
   height: 12px;
   width: 12px;
   margin-left: 10px;
@@ -83,8 +86,4 @@
 
 .name i {
   position: absolute;
-}
-
-.description:hover .arrow svg {
-  /*bottom: 6px;*/
 }

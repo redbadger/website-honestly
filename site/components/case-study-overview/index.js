@@ -1,17 +1,16 @@
 // @flow
 
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import moment from 'moment';
 import ReactGA from 'react-ga';
 
 import styles from './style.css';
 import fortnumPNG from './PNG/fortnum.png';
 import financialTimesPNG from './PNG/financialtimes.png';
-import arrowSVG from '../../../assets/images/SVG/arrow.svg';
 
 import Link from '../link';
 import CaseStudyCompanyLogos from '../case-study-company-logos';
+import Arrow from '../icons/arrow';
 
 const trackStatClicks = company => () =>
   ReactGA.event({
@@ -53,7 +52,9 @@ const CaseStudyOverview = () => (
               days of innovation and continuous{' '}
               <span className={styles.lastWord}>
                 deployment
-                <InlineSVG src={arrowSVG} className={styles.arrow} />
+                <div className={styles.arrow}>
+                  <Arrow />
+                </div>
               </span>
             </span>
           </span>
@@ -72,7 +73,9 @@ const CaseStudyOverview = () => (
               Five months to clear an eight year{' '}
               <span className={styles.lastWord}>
                 backlog
-                <InlineSVG src={arrowSVG} className={styles.arrow} />
+                <div className={styles.arrow}>
+                  <Arrow />
+                </div>
               </span>
             </span>
           </span>
@@ -91,7 +94,9 @@ const CaseStudyOverview = () => (
               Catalysts for change, delivery deployment and{' '}
               <span className={styles.lastWord}>
                 culture
-                <InlineSVG src={arrowSVG} className={styles.arrow} />
+                <div className={styles.arrow}>
+                  <Arrow />
+                </div>
               </span>
             </span>
           </span>
@@ -111,7 +116,9 @@ const CaseStudyOverview = () => (
               uplift in reader{' '}
               <span className={styles.lastWord}>
                 engagement
-                <InlineSVG src={arrowSVG} className={styles.arrow} />
+                <div className={styles.arrow}>
+                  <Arrow />
+                </div>
               </span>
             </span>
           </span>

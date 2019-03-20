@@ -1,8 +1,13 @@
 @value badgerRed, badgerRedOnBlack, badgerBlack, badgerWhite, linesOnBlack from "../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
+.arrow {
+  width: 22px;
+  display: inline-block;
+}
+
 .arrow svg {
-  height: 15px;
+  width: 15px;
   margin: 0 10px;
 }
 
@@ -73,11 +78,6 @@
   height: 50px;
 }
 
-.caseFigure svg {
-  height: 80px;
-  width: 100%;
-}
-
 .logo {
   height: 50px;
 }
@@ -110,11 +110,6 @@
   display: inline;
   white-space: nowrap;
   position: relative;
-}
-
-.lastWord i {
-  width: 22px;
-  display: inline-block;
 }
 
 .centerText {
@@ -210,10 +205,6 @@
 @media largeScreen {
   .heading {
     padding: 50px 60px 60px 60px;
-  }
-
-  .caseFigure svg {
-    height: 122px;
   }
 
   .figuresContainer {
