@@ -2,22 +2,23 @@
 /* rules disabled as this is essentially a template - makes no sense to move the long lines elsewhere */
 
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import styles from './style.css';
-import Diagram from './server-worker-diagram.svg';
-import Smiley from './smiley-crying.svg';
+import CryingSmiley from '../../components/icons/crying-smiley';
+import ServiceWorkerDiagram from './service-worker-diagram';
 
 export default function OfflinePage() {
   return (
     <div>
       <div className={styles.notification}>
-        <h3 className={styles.notifyHeader}>
-          No internet connection <InlineSVG src={Smiley} className={styles.smiley} />
-        </h3>
-        <p className={styles.notifyBody}>
-          This page isn’t available offline. But here’s something to read in the meantime – it
-          happens to be about offline technology.
-        </p>
+        <div className={styles.notificationContainer}>
+          <h3 className={styles.notifyHeader}>
+            No internet connection <CryingSmiley className={styles.smiley} />
+          </h3>
+          <p className={styles.notifyBody}>
+            This page isn’t available offline. But here’s something to read in the meantime – it
+            happens to be about offline technology.
+          </p>
+        </div>
       </div>
       <div className={styles.container}>
         <h1 className={styles.title}>Stepping into the offline world</h1>
@@ -68,7 +69,7 @@ export default function OfflinePage() {
         </p>
         <h2 className={styles.subtitle}>Total recall – or the new caching</h2>
         <p className={styles.paragraph}>
-          <InlineSVG src={Diagram} className={styles.diagram} />
+          <ServiceWorkerDiagram className={styles.diagram} />
           Let me focus on the point that will make the biggest difference - using web applications
           offline. As much as every point in the list above is important, using our apps whenever
           and wherever means a huge difference in the way we perceive the web.
@@ -84,8 +85,8 @@ export default function OfflinePage() {
         <p className={styles.paragraph}>
           Or we can just always render the same page from service worker to decrease the load on our
           servers.
-          <div className={styles.clear} />
         </p>
+        <div className={styles.clear} />
         <h2 className={styles.subtitle}>Dark side</h2>
         <p className={styles.paragraph}>
           There are the glaring issues of pages running out of date but that’s something we have to

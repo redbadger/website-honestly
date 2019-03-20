@@ -1,9 +1,8 @@
 // @flow
 import React from 'react';
-import InlineSVG from 'svg-inline-react';
 import Link from '../../../../components/link';
 import styles from './style.css';
-import arrowSVG from './arrow.svg';
+import Arrow from '../../../../components/icons/arrow';
 
 export type Badger = {
   firstName: string,
@@ -44,7 +43,9 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
           <div className={styles.nameWrapper}>
             <span className={styles.name}>
               {fullName}
-              <InlineSVG src={arrowSVG} className={styles.arrow} aria-hidden />
+              <span className={styles.arrow}>
+                <Arrow />
+              </span>
             </span>
           </div>
           <div className={styles.jobDescription}>{badger.jobTitle}</div>
