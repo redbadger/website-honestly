@@ -7,6 +7,7 @@
   padding-left: 0px;
   overflow: hidden;
 }
+
 .link {
   background: transparent;
   outline: none;
@@ -43,8 +44,15 @@
 
 .tweet {
   composes: serif from '../../../../css/typography/_fonts.css';
-  composes: fontS from '../../../../css/typography/_fonts.css';
   margin: 20px;
+}
+
+.tweetWithNoImage {
+  composes: fontS from '../../../../css/typography/_fonts.css';
+}
+
+.tweetWithLargeImage {
+  composes: fontXS from '../../../../css/typography/_fonts.css';
 }
 
 .meta {

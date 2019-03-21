@@ -11,7 +11,21 @@ const tweets = [
     url: 'https://www.somefakelink-redbadger.com',
     retweetCount: 1,
     favouriteCount: 2,
-    created: '1988-02-11',
+    created: '1988-02-12',
+  },
+  {
+    text: 'I am a tweet with an image',
+    url: 'https://twitter.com/redbadgerteam/status/1108421453903523841',
+    retweetCount: 0,
+    favouriteCount: 5,
+    created: '2019-03-20',
+    image: {
+      url: 'https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg',
+      smallSize: {
+        width: 1200,
+        height: 600,
+      },
+    },
   },
 ];
 

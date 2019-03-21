@@ -118,7 +118,7 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
       return null;
     }
 
-    const sorted = data.sort((a, b) => new Date(b.created) - new Date(a.created));
+    data.sort((a, b) => new Date(b.created) - new Date(a.created));
 
     const socialComp = (row, index) => {
       return row.type === 'insta-post' ? (
@@ -128,7 +128,7 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
       );
     };
 
-    return sorted.map(socialComp);
+    return data.map(socialComp);
   };
 
   render() {

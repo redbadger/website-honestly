@@ -9,4 +9,11 @@ export type Tweet = {
   retweetCount: number,
   favouriteCount: number,
   created: string,
+  image: ?{
+    url: string,
+    smallSize: {
+      width: number,
+      height: number,
+    },
+  },
 };

@@ -5,7 +5,7 @@ import { isValidTweet, getTweets } from './index';
 
 const generateTweet = () => {
   return {
-    text: 'test tweet',
+    full_text: 'test tweet',
     created_at: '01/01/2016',
     retweet_count: 0,
     favorite_count: 0,
@@ -48,7 +48,7 @@ describe('site/fetchers/twitter', () => {
 
     it('fails with no text', () => {
       const tweet = generateTweet();
-      tweet.text = '';
+      tweet.full_text = '';
       const result = isValidTweet(tweet);
       expect(result).toEqual(false);
     });
