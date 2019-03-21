@@ -1,6 +1,5 @@
-// @noflow
-import type { Tweet } from './tweet';
-import type { InstagramPost } from './instagramPost';
-import type { Badger } from './badger';
+// @flow
 
-export { Tweet, InstagramPost, Badger };
+export type { Tweet } from './tweet';
+export type { InstagramPost } from './instagramPost';
+export type { Badger } from './badger';

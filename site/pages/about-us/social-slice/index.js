@@ -1,4 +1,5 @@
 // @flow
+
 /* eslint-disable react/no-did-mount-set-state */
 
 import * as React from 'react';
@@ -108,30 +109,26 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
 
   renderTiles = (): React.Node => {
     const { tweets, instagramPosts } = this.props;
-    const data: Array<Tweet | InstagramPost> = [];
-    if (tweets) {
-      data.push(...tweets);
-    }
-
-    if (instagramPosts) {
-      data.push(...instagramPosts);
-    }
+    const data = [
+      ...tweets.map(tweet => ({ type: 'tweet', tweet, created: tweet.created })),
+      ...instagramPosts.map(post => ({ type: 'insta-post', post, created: post.created })),
+    ];
 
     if (data.length === 0) {
       return null;
     }
 
-    const sorted = data.sort((a: any, b: any): any => new Date(b.created) - new Date(a.created));
+    data.sort((a, b) => new Date(b.created) - new Date(a.created));
 
     const socialComp = (row, index) => {
-      return row.image ? (
-        <InstagramTile key={row.created} post={row} index={index} />
+      return row.type === 'insta-post' ? (
+        <InstagramTile key={row.created} post={row.post} index={index} />
       ) : (
-        <TwitterTile key={row.created} tweet={row} index={index} />
+        <TwitterTile key={row.created} tweet={row.tweet} index={index} />
       );
     };
 
-    return sorted.map(socialComp);
+    return data.map(socialComp);
   };
 
   render() {

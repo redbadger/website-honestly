@@ -4,9 +4,15 @@ import fetch from 'node-fetch';
 import handleErrors from '../util/handle-errors';
 import type { Tweet } from '../../types/';
 
+type TwitterImageSize = {
+  w: number,
+  h: number,
+  resize: 'crop' | 'fit',
+};
+
 type TwitterResponse = {
   id_str: string,
-  text: string,
+  full_text: string,
   created_at: string,
   retweet_count: number,
   favorite_count: number,
@@ -16,6 +22,24 @@ type TwitterResponse = {
         url: string,
       },
     ],
+  },
+  extended_entities?: {
+    media?: Array<{
+      id_str: string,
+      indices: Array<number>,
+      media_url: string,
+      media_url_https: string,
+      url: string,
+      display_url: string,
+      expanded_url: string,
+      type: 'photo',
+      sizes: {
+        thumb: TwitterImageSize,
+        small: TwitterImageSize,
+        medium: TwitterImageSize,
+        large: TwitterImageSize,
+      },
+    }>,
   },
   retweeted_status?: {
     entities: {
@@ -34,8 +58,8 @@ export const isValidTweet = (tweet: TwitterResponse) => {
       throw new Error('Missing tweet');
     }
 
-    if (!tweet.text) {
-      throw new Error('Missing text');
+    if (!tweet.full_text) {
+      throw new Error('Missing full_text');
     }
 
     if (!tweet.created_at) {
@@ -84,14 +108,37 @@ const getBearerToken = (key, secret) =>
     .then(handleErrors)
     .then(response => response.json())
     .then(response => response.access_token);
+
+const firstImageInTweet = (tweet: TwitterResponse) => {
+  const entities = tweet.extended_entities || {};
+  const media = entities.media || [];
+
+  return media
+    .map(
+      ({ media_url_https: url, type, sizes }): ?$PropertyType<Tweet, 'image'> => {
+        if (type === 'photo' && url && sizes) {
+          const { w: width, h: height } = sizes.small || {};
+
+          if (typeof width === 'number' && typeof height === 'number') {
+            return { url, smallSize: { width, height } };
+          }
+        }
+
+        return null;
+      },
+    )
+    .filter(x => x)[0];
+};
+
 /** Flattern the response */
-const normaliseTweet = (tweet: TwitterResponse) => {
+const normaliseTweet = (tweet: TwitterResponse): Tweet => {
   return {
-    text: tweet.text,
+    text: tweet.full_text,
     url: `https://twitter.com/i/web/status/${tweet.id_str}`,
     created: tweet.created_at,
     retweetCount: tweet.retweet_count,
     favouriteCount: tweet.favorite_count,
+    image: firstImageInTweet(tweet),
   };
 };
 
@@ -104,7 +151,7 @@ export const getTweets = (
   if (!secret) throw new Error('Missing Twitter secret');
 
   const count = 5;
-  const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${username}&trim_user=true`;
+  const apiQuery = `${baseUrl}/1.1/statuses/user_timeline.json?count=${count}&screen_name=${username}&trim_user=true&tweet_mode=extended`;
 
   return getBearerToken(key, secret)
     .then(token =>

@@ -36,11 +36,25 @@ exports[`site/pages/about-us renders correctly 1`] = `
     tweets={
       Array [
         Object {
-          "created": "1988-02-11",
+          "created": "1988-02-12",
           "favouriteCount": 2,
           "retweetCount": 1,
           "text": "I am a tweet",
           "url": "https://www.somefakelink-redbadger.com",
+        },
+        Object {
+          "created": "2019-03-20",
+          "favouriteCount": 5,
+          "image": Object {
+            "smallSize": Object {
+              "height": 600,
+              "width": 1200,
+            },
+            "url": "https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg",
+          },
+          "retweetCount": 0,
+          "text": "I am a tweet with an image",
+          "url": "https://twitter.com/redbadgerteam/status/1108421453903523841",
         },
       ]
     }
@@ -1073,11 +1087,25 @@ exports[`site/pages/about-us renders correctly 1`] = `
         tweets={
           Array [
             Object {
-              "created": "1988-02-11",
+              "created": "1988-02-12",
               "favouriteCount": 2,
               "retweetCount": 1,
               "text": "I am a tweet",
               "url": "https://www.somefakelink-redbadger.com",
+            },
+            Object {
+              "created": "2019-03-20",
+              "favouriteCount": 5,
+              "image": Object {
+                "smallSize": Object {
+                  "height": 600,
+                  "width": 1200,
+                },
+                "url": "https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg",
+              },
+              "retweetCount": 0,
+              "text": "I am a tweet with an image",
+              "url": "https://twitter.com/redbadgerteam/status/1108421453903523841",
             },
           ]
         }
@@ -1094,7 +1122,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                   currentTile={0}
                   nextCard={[Function]}
                   prevCard={[Function]}
-                  totalSwipableTiles={1}
+                  totalSwipableTiles={2}
                 >
                   <div
                     className="intro"
@@ -1232,7 +1260,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                       <div
                         aria-hidden={false}
                         data-swipeable="true"
-                        key=".$1988-02-11"
+                        key=".$2019-03-20"
                         style={
                           Object {
                             "WebkitFlexShrink": 0,
@@ -1245,20 +1273,27 @@ exports[`site/pages/about-us renders correctly 1`] = `
                       >
                         <Twitter
                           index={0}
-                          key="1988-02-11"
+                          key="2019-03-20"
                           tweet={
                             Object {
-                              "created": "1988-02-11",
-                              "favouriteCount": 2,
-                              "retweetCount": 1,
-                              "text": "I am a tweet",
-                              "url": "https://www.somefakelink-redbadger.com",
+                              "created": "2019-03-20",
+                              "favouriteCount": 5,
+                              "image": Object {
+                                "smallSize": Object {
+                                  "height": 600,
+                                  "width": 1200,
+                                },
+                                "url": "https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg",
+                              },
+                              "retweetCount": 0,
+                              "text": "I am a tweet with an image",
+                              "url": "https://twitter.com/redbadgerteam/status/1108421453903523841",
                             }
                           }
                         >
                           <a
                             className="link"
-                            href="https://www.somefakelink-redbadger.com"
+                            href="https://twitter.com/redbadgerteam/status/1108421453903523841"
                             rel="noopener noreferrer"
                             tabIndex={-1}
                             target="_blank"
@@ -1293,10 +1328,16 @@ exports[`site/pages/about-us renders correctly 1`] = `
                                   @RedBadger
                                 </span>
                               </div>
+                              <img
+                                alt=""
+                                height={175}
+                                src="https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg"
+                                width={350}
+                              />
                               <div
-                                className="tweet"
+                                className="tweet tweetWithNoImage"
                               >
-                                I am a tweet
+                                I am a tweet with an image
                               </div>
                               <div
                                 className="meta"
@@ -1317,7 +1358,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                                       />
                                     </svg>
                                   </Retweet>
-                                  1
+                                  0
                                 </span>
                                 <span>
                                   <Like
@@ -1335,7 +1376,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                                       />
                                     </svg>
                                   </Like>
-                                  2
+                                  5
                                 </span>
                               </div>
                             </div>

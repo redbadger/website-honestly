@@ -2,7 +2,7 @@
 // @flow
 
 /** Shape of returned data from the Instagram API */
-type InstagramPost = {
+export type InstagramPost = {
   text: string,
   link: string,
   image: {
