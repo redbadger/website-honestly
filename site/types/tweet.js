@@ -2,7 +2,8 @@
 // @flow
 
 /** Shape of returned data from the Twitter API */
-type Tweet = {
+
+export type Tweet = {
   text: string,
   url: string,
   retweetCount: number,

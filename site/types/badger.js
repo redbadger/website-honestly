@@ -1,7 +1,7 @@
 /* eslint-disable */
 // @flow
 
-type Badger = {
+export type Badger = {
   firstName: string,
   lastName: string,
   jobTitle: string,
@@ -16,5 +16,6 @@ type Badger = {
   github: string,
   linkedIn: string,
   squarespaceId: string,
+  hasBlogPosts: boolean,
   categories: Array<{ slug: string, name: string, order: number }>,
 };
