@@ -2686,7 +2686,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
           </Video>
         </div>
       </div>
-      <Component>
+      <_default>
         <div
           className="awardsContainer"
         >
@@ -2700,7 +2700,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
             />
           </div>
         </div>
-      </Component>
+      </_default>
     </div>
   </JoinUs>
 </Context>

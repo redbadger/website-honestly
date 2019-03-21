@@ -807,7 +807,7 @@ exports[`site/pages/technology renders correctly 1`] = `
           </BlogSlice>
         </div>
       </section>
-      <Component>
+      <_default>
         <section
           className="webinar"
         >
@@ -835,8 +835,8 @@ exports[`site/pages/technology renders correctly 1`] = `
             </HubspotButton>
           </div>
         </section>
-      </Component>
-      <_class2>
+      </_default>
+      <_temp>
         <Checklist
           isHovered={false}
           listItems={
@@ -926,7 +926,7 @@ exports[`site/pages/technology renders correctly 1`] = `
             </div>
           </section>
         </Checklist>
-      </_class2>
+      </_temp>
     </ScrollTracker>
   </TechnologyPage>
 </Context>
