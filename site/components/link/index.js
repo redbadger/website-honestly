@@ -28,7 +28,7 @@ export default class Link extends React.Component<LinkProps> {
     return this.context.stateNavigator;
   }
 
-  shouldNavigate: () => boolean;
+  shouldNavigate: Function = this.shouldNavigate;
   props: LinkProps;
 
   /**
