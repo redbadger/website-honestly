@@ -1,4 +1,4 @@
-FROM alpine:3.9.2
+FROM alpine:3.6
 
 # Alpine Linux includes musl libc, but Flow is linked against GNU libc, so we need to install it.
 # See https://github.com/sgerrand/alpine-pkg-glibc
@@ -34,13 +34,9 @@ RUN addgroup -g 1000 node \
  && gpg --keyserver pool.sks-keyservers.net --recv-keys "$NPM_GPG_KEY" \
         || gpg --keyserver pgp.mit.edu --recv-keys "$NPM_GPG_KEY" \
         || gpg --keyserver keyserver.pgp.com --recv-keys "$NPM_GPG_KEY" \
- && echo "curl a" \
  && curl -fsSLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz" \
- && echo "curl b" \
  && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
- && echo "decrypt" \
  && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc \
- && echo "grep" \
  && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c - \
  && tar -xf "node-v$NODE_VERSION.tar.xz" \
  && cd "node-v$NODE_VERSION" \
