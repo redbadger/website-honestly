@@ -72,6 +72,10 @@ exports[`site/pages/technology renders correctly 1`] = `
                 "property": "og:image",
               },
               Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
                 "content": "The sentence \\"We choose the right tech for the job\\".",
                 "property": "og:image:alt",
               },
@@ -124,6 +128,10 @@ exports[`site/pages/technology renders correctly 1`] = `
                   "property": "og:image",
                 },
                 Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
                   "content": "The sentence \\"We choose the right tech for the job\\".",
                   "property": "og:image:alt",
                 },
@@ -174,6 +182,10 @@ exports[`site/pages/technology renders correctly 1`] = `
                   Object {
                     "content": "https://red-badger.commeta-image.jpg",
                     "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image:secure_url",
                   },
                   Object {
                     "content": "The sentence \\"We choose the right tech for the job\\".",

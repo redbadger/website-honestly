@@ -21,6 +21,7 @@ const Social = ({ title, description, metaImage, altText, url }: SocialProps) =>
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: title },
       { property: 'og:image', content: `https://red-badger.com${metaImage}` },
+      { property: 'og:image:secure_url', content: `https://red-badger.com${metaImage}` },
       { property: 'og:image:alt', content: altText },
       { property: 'og:description', content: description },
     ].concat(url ? [{ property: 'og:url', content: url }] : [])}
