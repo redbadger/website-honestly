@@ -151,6 +151,10 @@ exports[`site/pages/cookie-policy renders correctly 1`] = `
                 "property": "og:image",
               },
               Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
                 "content": "Red Badger logo",
                 "property": "og:image:alt",
               },
@@ -203,6 +207,10 @@ exports[`site/pages/cookie-policy renders correctly 1`] = `
                   "property": "og:image",
                 },
                 Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
                   "content": "Red Badger logo",
                   "property": "og:image:alt",
                 },
@@ -253,6 +261,10 @@ exports[`site/pages/cookie-policy renders correctly 1`] = `
                   Object {
                     "content": "https://red-badger.commeta-image.jpg",
                     "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image:secure_url",
                   },
                   Object {
                     "content": "Red Badger logo",

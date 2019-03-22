@@ -86,6 +86,10 @@ exports[`site/pages/join-us renders correctly 1`] = `
                 "property": "og:image",
               },
               Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
                 "content": "An illustration an award we won.",
                 "property": "og:image:alt",
               },
@@ -138,6 +142,10 @@ exports[`site/pages/join-us renders correctly 1`] = `
                   "property": "og:image",
                 },
                 Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
                   "content": "An illustration an award we won.",
                   "property": "og:image:alt",
                 },
@@ -188,6 +196,10 @@ exports[`site/pages/join-us renders correctly 1`] = `
                   Object {
                     "content": "https://red-badger.commeta-image.jpg",
                     "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image:secure_url",
                   },
                   Object {
                     "content": "An illustration an award we won.",
