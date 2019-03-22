@@ -30,7 +30,7 @@ jobs:
 
       - run:
           name: Validate formatting
-          command: make prettier
+          command: make prettier-fail
 
   lint:
     docker:

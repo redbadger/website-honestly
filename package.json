@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/plugin-transform-flow-strip-types": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-decorators": "^7.0.0",
     "@babel/plugin-proposal-do-expressions": "^7.0.0",
@@ -31,6 +30,7 @@
     "@babel/plugin-proposal-throw-expressions": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.4.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
@@ -159,7 +159,7 @@
     "enzyme-to-json": "^3.3.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.1.0",
-    "prettier": "^1.13.5"
+    "prettier": "^1.16.4"
   },
   "jest": {
     "collectCoverageFrom": [
