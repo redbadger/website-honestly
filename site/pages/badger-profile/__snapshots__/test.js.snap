@@ -77,6 +77,10 @@ exports[`site/pages/badger-profile renders correctly 1`] = `
                 "property": "og:image",
               },
               Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
                 "content": "An illustration of different people.",
                 "property": "og:image:alt",
               },
@@ -129,6 +133,10 @@ exports[`site/pages/badger-profile renders correctly 1`] = `
                   "property": "og:image",
                 },
                 Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
                   "content": "An illustration of different people.",
                   "property": "og:image:alt",
                 },
@@ -179,6 +187,10 @@ exports[`site/pages/badger-profile renders correctly 1`] = `
                   Object {
                     "content": "https://red-badger.commeta-image.jpg",
                     "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image:secure_url",
                   },
                   Object {
                     "content": "An illustration of different people.",
