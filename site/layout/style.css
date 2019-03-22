@@ -1,6 +1,7 @@
 @import '~normalize.css/normalize.css';
 @import '~reset-css/reset.css';
 @import './a11y-day.css';
+@value badgerWhite from "../css/_colors.css";
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,7 @@
 html,
 body {
   position: relative;
+  background-color: badgerWhite;
 }
 
 html {
@@ -22,4 +24,8 @@ body {
 
 button {
   border-radius: 0;
+}
+
+a {
+  text-decoration: none;
 }

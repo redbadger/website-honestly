@@ -35,6 +35,7 @@
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@loadable/component": "^5.7.0",
     "assets-webpack-plugin": "^3.5.1",
     "autoprefixer": "^9.4.3",
     "babel-eslint": "^9.0.0",
