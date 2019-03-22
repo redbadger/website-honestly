@@ -18,6 +18,7 @@ describe('site/team-slice', () => {
     getChildContext() {
       return { stateNavigator: this.props.stateNavigator };
     }
+
     render() {
       return this.props.children;
     }

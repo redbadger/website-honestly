@@ -4,11 +4,11 @@
  */
 
 const webpack = require('webpack');
-const { baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { baseWebConfig } = require('./webpack.base.config');
 
 const devAppConfig = webpackMerge(baseWebConfig, {
   entry: {

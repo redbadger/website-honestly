@@ -4,10 +4,10 @@
  */
 
 /* eslint-disable camelcase */
-const { baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const { baseWebConfig } = require('./webpack.base.config');
 
 const clientConfig = webpackMerge(baseWebConfig, {
   stats: 'errors-only',

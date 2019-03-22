@@ -48,10 +48,11 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
   };
 
   handleSubmit = () => {
+    const { onSubmit } = this.props;
     this.setState({
       submitting: true,
     });
-    this.props.onSubmit(this.state);
+    onSubmit(this.state);
   };
 
   render() {
@@ -87,6 +88,7 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
                 </div>
               </div>
               <button
+                type="submit"
                 className={cx({
                   submitButton: true,
                   buttonSubmitting: this.state.submitting,

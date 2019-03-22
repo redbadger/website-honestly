@@ -37,6 +37,7 @@ class ScrollTracker extends React.Component<{ children: React.Node }> {
   }
 
   handler: Function;
+
   thresholds = [[0, 25], [25, 50], [50, 75], [75, 100], [100, 100]];
 
   scrollHandler = () => {

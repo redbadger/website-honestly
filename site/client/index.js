@@ -8,7 +8,7 @@ import 'core-js/es6/symbol';
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';
 
-import createStateNavigator from '../../site/routes';
+import createStateNavigator from '../routes';
 
 import { initGreyscaleModeBar } from './greyscale';
 

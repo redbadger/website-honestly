@@ -62,6 +62,7 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
   }
 
   badgerElements: any;
+
   /*
     Upgrading Babel 7 has caused an issue with flow:
     https://github.com/babel/babel/issues/8417
@@ -78,6 +79,7 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
     of @babel/preset-flow will fix thi
   */
   calculateLoaded: Function = this.calculateLoaded;
+
   requestAnimationFrameId: AnimationFrameID;
 
   calculateLoaded() {

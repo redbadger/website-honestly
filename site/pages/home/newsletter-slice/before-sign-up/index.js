@@ -73,6 +73,7 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
             </div>
           </div>
           <button
+            type="submit"
             className={cx({
               submitButton: true,
               buttonSubmitting: this.state.submitting,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import WhatToReadNext from './';
+import WhatToReadNext from '.';
 import styles from './style.css';
 
 describe('Case Study - What to read next', () => {

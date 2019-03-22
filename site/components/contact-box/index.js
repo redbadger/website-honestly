@@ -12,6 +12,7 @@ const ContactBox = ({ target = '#contactUs' }: ContactBoxProps) => (
   <div className={styles.contactBox}>
     <h2 className={styles.contactBox__heading}>Project in mind?</h2>
     <button
+      type="button"
       onClick={() => jump(target, { a11y: true, duration: 800 })}
       className={styles.contactBox__button}
     >

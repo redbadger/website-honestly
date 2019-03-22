@@ -29,6 +29,7 @@ const Arrow = ({ direction, onClick, currentIndex, lastIndex }: ArrowProps) => {
 
   return (
     <button
+      type="button"
       className={cx('arrow', direction === 'left' ? 'arrowLeft' : 'arrowRight')}
       onClick={click}
       aria-label={direction}

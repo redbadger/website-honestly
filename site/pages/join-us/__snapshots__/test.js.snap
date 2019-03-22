@@ -266,6 +266,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           ]
                         }
                         onClick={[Function]}
+                        type="button"
                       >
                         <div
                           className="dodgeballPhotoMask"
@@ -318,6 +319,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           ]
                         }
                         onClick={[Function]}
+                        type="button"
                       >
                         <div
                           className="scientistPhotoMask"
@@ -370,6 +372,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           ]
                         }
                         onClick={[Function]}
+                        type="button"
                       >
                         <div
                           className="anthonyNolanPhotoMask"
@@ -422,6 +425,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           ]
                         }
                         onClick={[Function]}
+                        type="button"
                       >
                         <div
                           className="pridePhotoMask"
@@ -474,6 +478,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           ]
                         }
                         onClick={[Function]}
+                        type="button"
                       >
                         <div
                           className="sketchSessionPhotoMask"
@@ -526,6 +531,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           ]
                         }
                         onClick={[Function]}
+                        type="button"
                       >
                         <div
                           className="janPhotoMask"
@@ -578,6 +584,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           ]
                         }
                         onClick={[Function]}
+                        type="button"
                       >
                         <div
                           className="miloPhotoMask"
@@ -818,6 +825,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-label="expand chief awesome person job description"
                                           className="jobEntry__more"
                                           onClick={[Function]}
+                                          type="button"
                                         >
                                           <span
                                             className="jobEntry__arrow"
@@ -1011,6 +1019,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-label="expand Junior adorable dog job description"
                                           className="jobEntry__more"
                                           onClick={[Function]}
+                                          type="button"
                                         >
                                           <span
                                             className="jobEntry__arrow"
@@ -1204,6 +1213,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-label="expand Mid 2 Tea drinker job description"
                                           className="jobEntry__more"
                                           onClick={[Function]}
+                                          type="button"
                                         >
                                           <span
                                             className="jobEntry__arrow"
@@ -1513,6 +1523,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, How does Red Badger support me if I’m unwell? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1557,6 +1568,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, What is covered to keep me healthy? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1601,6 +1613,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, In the worst-case scenario, how do Red Badger support me and my family? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1696,6 +1709,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, What pension contributions will I receive? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1740,6 +1754,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, Do you offer assistance with the cost of commuting? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1784,6 +1799,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, Is there a bonus scheme? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1879,6 +1895,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, How much holiday will I get? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1923,6 +1940,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, What’s your parental leave policy? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -1967,6 +1985,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, Do you have any wellbeing programmes? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2067,6 +2086,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, What socials can I get involved in? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2111,6 +2131,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, Can I donate to charity through the payroll? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2155,6 +2176,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, I’m interested in the Red Badger culture, can I get involved? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2199,6 +2221,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, Does Red Badger work with any charities? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2294,6 +2317,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, How can I develop at Red Badger? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2338,6 +2362,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, Do you have a library? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2382,6 +2407,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                                           aria-expanded={false}
                                           aria-label="answer, How will I be supported to develop? "
                                           className="button__more"
+                                          type="button"
                                         >
                                           <span
                                             className="button__arrow"
@@ -2555,6 +2581,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             aria-label="left"
                             className="arrow arrowLeft"
                             onClick={[Function]}
+                            type="button"
                           >
                             <div
                               className="inactive"
@@ -2643,6 +2670,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             aria-label="right"
                             className="arrow arrowRight"
                             onClick={[Function]}
+                            type="button"
                           >
                             <div
                               className="active"

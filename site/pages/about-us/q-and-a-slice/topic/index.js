@@ -29,7 +29,7 @@ class Topic extends Component<TopicProps, TopicState> {
   props: TopicProps;
 
   handleClick = () => {
-    this.setState({ open: !this.state.open });
+    this.setState(({ open }) => ({ open: !open }));
   };
 
   /* eslint-disable react/no-danger */
@@ -45,6 +45,7 @@ class Topic extends Component<TopicProps, TopicState> {
         <div className={styles.topic__question} onClick={this.handleClick}>
           <h4 className={styles.topic__heading}>{question}</h4>
           <button
+            type="button"
             aria-controls={slug}
             aria-expanded={open}
             aria-label={question}

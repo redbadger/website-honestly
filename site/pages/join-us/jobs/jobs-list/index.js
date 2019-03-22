@@ -4,7 +4,7 @@
 import React from 'react';
 import styles from './style.css';
 import JobsListSection from '../jobs-list-section';
-import type { JobsProps } from '../';
+import type { JobsProps } from '..';
 
 const getDepartments = jobs => {
   return jobs

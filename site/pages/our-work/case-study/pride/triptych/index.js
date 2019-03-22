@@ -33,6 +33,7 @@ class Triptych extends React.Component<{}, { activeImg: number }> {
   }
 
   node: any;
+
   touchStartX: number;
 
   handleRadioChange = (event: SyntheticInputEvent<HTMLInputElement>) => {

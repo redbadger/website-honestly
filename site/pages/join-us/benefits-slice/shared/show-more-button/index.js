@@ -9,7 +9,12 @@ type ShowMoreButtonProps = {
 
 const ShowMoreButton = ({ open, ariaLabel }: ShowMoreButtonProps) => {
   return (
-    <button aria-expanded={open} aria-label={ariaLabel} className={styles.button__more}>
+    <button
+      type="button"
+      aria-expanded={open}
+      aria-label={ariaLabel}
+      className={styles.button__more}
+    >
       <span className={open ? styles.button__arrowDown : styles.button__arrow} />
     </button>
   );

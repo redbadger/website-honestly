@@ -60,15 +60,10 @@ class JobsGallerySlice extends Component<*, JobsGalleryState> {
     }
   }
 
-  constructor() {
-    super();
-    this.state = {
-      lightboxOpen: false,
-      lightboxPosition: 0,
-    };
-    (this: any).handleClick = this.handleClick.bind(this);
-    (this: any).handleClose = this.handleClose.bind(this);
-  }
+  state = {
+    lightboxOpen: false,
+    lightboxPosition: 0,
+  };
 
   componentDidUpdate() {
     const { lightboxOpen, lightboxPosition } = this.state;
@@ -82,18 +77,18 @@ class JobsGallerySlice extends Component<*, JobsGalleryState> {
     );
   }
 
-  handleClick(position: number) {
+  handleClick = (position: number) => {
     return () => {
       const lightboxOpen = true;
       const lightboxPosition = position;
       this.setState({ lightboxOpen, lightboxPosition });
     };
-  }
+  };
 
-  handleClose() {
+  handleClose = () => {
     const lightboxOpen = false;
     this.setState({ lightboxOpen });
-  }
+  };
 
   render() {
     return (

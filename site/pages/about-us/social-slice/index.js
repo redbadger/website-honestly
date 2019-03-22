@@ -10,7 +10,7 @@ import IntroMobileTile from './intro-mobile-tile';
 import IntroDesktopTile from './intro-desktop-tile';
 import InstagramTile from './instagram-tile';
 import TwitterTile from './twitter-tile';
-import type { Tweet, InstagramPost } from '../../../types/';
+import type { Tweet, InstagramPost } from '../../../types';
 import ClientOnly from '../../../components/clientOnly';
 
 type SocialSliceProps = {
@@ -71,22 +71,33 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
     }
     return totalTiles;
   };
+
   prevTile = () => {
-    const prevTile = this.state.tile - 1;
-    if (prevTile < 0) {
-      return;
-    }
-    this.setState({ tile: prevTile });
+    this.setState(({ tile }) => {
+      const prevTile = tile - 1;
+
+      if (prevTile < 0) {
+        return {};
+      }
+
+      return { tile: prevTile };
+    });
   };
+
   nextTile = () => {
-    const nextTile = this.state.tile + 1;
-    const swipableTotal = this.calculateSwipableTotal();
-    if (nextTile > swipableTotal) {
-      return;
-    }
-    this.setState({ tile: nextTile });
+    this.setState(({ tile }) => {
+      const nextTile = tile + 1;
+      const swipableTotal = this.calculateSwipableTotal();
+      if (nextTile > swipableTotal) {
+        return;
+      }
+
+      return { tile: nextTile };
+    });
   };
+
   props: SocialSliceProps;
+
   /** This is the tile width used for calculations - also the value in the CSS styling */
   tileSize = 350;
 
@@ -101,6 +112,7 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
     const newTileSize = this.tileSize * 2;
     return viewWidth - newTileSize;
   }
+
   /** As above but for small screen */
   calculateMobileSwipePadding() {
     const { viewWidth } = this.state;

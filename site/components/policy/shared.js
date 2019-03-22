@@ -3,8 +3,8 @@
 
 import * as React from 'react';
 
-import styles from '../../components/policy/style.css';
-import { P as BaseParagraph } from '../../components/text';
+import styles from './style.css';
+import { P as BaseParagraph } from '../text';
 
 type ParagraphProps = {
   children: React.Node,

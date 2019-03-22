@@ -42,11 +42,14 @@ class Category extends Component<CategoryProps, CategoryState> {
   };
 
   setLayoutOnLoad = () => {
-    const mobileViewOnLoad = this.screenIsMobileSize(this.state.mobileBreakPoint);
-    this.setState({
-      mobileView: mobileViewOnLoad,
-      open: !mobileViewOnLoad,
-      currentWindowSize: window.innerWidth,
+    this.setState(({ mobileBreakPoint }) => {
+      const mobileViewOnLoad = this.screenIsMobileSize(mobileBreakPoint);
+
+      return {
+        mobileView: mobileViewOnLoad,
+        open: !mobileViewOnLoad,
+        currentWindowSize: window.innerWidth,
+      };
     });
   };
 
@@ -69,7 +72,7 @@ class Category extends Component<CategoryProps, CategoryState> {
   handleClick = () => {
     // categories can only be opened/closed at mobile.
     if (this.state.mobileView) {
-      this.setState({ open: !this.state.open });
+      this.setState(({ open }) => ({ open: !open }));
     }
   };
 
@@ -92,11 +95,13 @@ class Category extends Component<CategoryProps, CategoryState> {
     // if it's above the breakpoint it should always be true.
     if (previousWindowSize > mobileBreakPoint && currentWindowSize <= mobileBreakPoint) {
       return false;
-    } else if (currentWindowSize <= mobileBreakPoint) {
+    }
+    if (currentWindowSize <= mobileBreakPoint) {
       return this.state.open;
     }
     return true;
   };
+
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
   render() {

@@ -6,7 +6,7 @@ import Link from '../../../../components/link';
 import { Grid, Cell } from '../../../../components/grid';
 import RawHtml from '../../../../components/raw-html';
 import styles from '../jobs-list/style.css';
-import type { JobProps } from '../';
+import type { JobProps } from '..';
 
 type JobsListEntryState = {
   open: boolean,
@@ -23,7 +23,7 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
   props: JobProps;
 
   handleClick = () => {
-    this.setState({ open: !this.state.open });
+    this.setState(({ open }) => ({ open: !open }));
   };
 
   /* eslint-disable react/no-danger */
@@ -54,6 +54,7 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
           <Grid fit={false}>
             <Cell size={12} breakOn="smallScreen">
               <button
+                type="button"
                 onClick={this.handleClick}
                 aria-expanded={open}
                 aria-label={`expand ${title} job description`}
