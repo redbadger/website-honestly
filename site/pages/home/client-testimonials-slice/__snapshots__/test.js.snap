@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/home/client-testimonal-slice renders correctly 1`] = `<ClientTestimonialsSlice />`;
