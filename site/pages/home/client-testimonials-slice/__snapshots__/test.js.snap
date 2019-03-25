@@ -1,3 +1,236 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`site/pages/home/client-testimonal-slice renders correctly 1`] = `<ClientTestimonialsSlice />`;
+exports[`site/pages/home/client-testimonal-slice renders correctly 1`] = `
+<Context>
+  <ClientTestimonialsSlice>
+    <div
+      className="testimonials"
+    >
+      <div
+        className="container"
+      >
+        <ClientOnly>
+          <span>
+            <TestimonialNav
+              currentIndex={0}
+              onClick={[Function]}
+            >
+              <div
+                className="navigator"
+              >
+                <div
+                  className="container"
+                >
+                  <Arrow
+                    currentIndex={0}
+                    direction="left"
+                    lastIndex={4}
+                    onClick={[Function]}
+                  >
+                    <button
+                      aria-label="left"
+                      className="arrow arrowLeft"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <div
+                        className="inactive"
+                      />
+                      <div
+                        className="innerArrow"
+                      />
+                    </button>
+                  </Arrow>
+                  <div
+                    className="testimonials"
+                  >
+                    <TimelineNav
+                      currentIndex={0}
+                      key="We have to get what Red Badger are providing. With highly skilled teams, they are doing what the big consultancies who have been in here for years just can't do or translate into meaningful outcomes. This is the first time in two decades of banking that I've seen a transformation actually look like it might succeed."
+                      onClick={[Function]}
+                      value={0}
+                    >
+                      <div
+                        aria-label="slide 1"
+                        className="active"
+                      >
+                        <span />
+                      </div>
+                    </TimelineNav>
+                    <TimelineNav
+                      currentIndex={0}
+                      key="Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change."
+                      onClick={[Function]}
+                      value={1}
+                    >
+                      <div
+                        aria-label="slide 2"
+                        className="future"
+                      >
+                        <span />
+                      </div>
+                    </TimelineNav>
+                    <TimelineNav
+                      currentIndex={0}
+                      key="It’s been great having Red Badger in the building. You guys have really fit in with our style. You have engineered a great product to a really high standard of quality that I am really proud of."
+                      onClick={[Function]}
+                      value={2}
+                    >
+                      <div
+                        aria-label="slide 3"
+                        className="future"
+                      >
+                        <span />
+                      </div>
+                    </TimelineNav>
+                    <TimelineNav
+                      currentIndex={0}
+                      key="Exciting, refreshing, positive & pacey."
+                      onClick={[Function]}
+                      value={3}
+                    >
+                      <div
+                        aria-label="slide 4"
+                        className="future"
+                      >
+                        <span />
+                      </div>
+                    </TimelineNav>
+                    <TimelineNav
+                      currentIndex={0}
+                      key="Working with RB is refreshing, productive and inspiring. RB makes you think differently, makes you believe the prosaic commonplace ways are behind you, enables you to challenge the norm and break the mould of convention."
+                      onClick={[Function]}
+                      value={4}
+                    >
+                      <div
+                        aria-label="slide 5"
+                        className="future"
+                      >
+                        <span />
+                      </div>
+                    </TimelineNav>
+                  </div>
+                  <Arrow
+                    currentIndex={0}
+                    direction="right"
+                    lastIndex={4}
+                    onClick={[Function]}
+                  >
+                    <button
+                      aria-label="right"
+                      className="arrow arrowRight"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      <div
+                        className="active"
+                      />
+                      <div
+                        className="innerArrow"
+                      />
+                    </button>
+                  </Arrow>
+                </div>
+              </div>
+            </TestimonialNav>
+            <div
+              className="content"
+            >
+              <ReactSwipableView
+                animateHeight={false}
+                animateTransitions={true}
+                axis="x"
+                disableLazyLoading={false}
+                disabled={false}
+                enableMouseEvents={false}
+                hysteresis={0.6}
+                ignoreNativeScroll={false}
+                index={0}
+                onChangeIndex={[Function]}
+                resistance={false}
+                springConfig={
+                  Object {
+                    "delay": "0s",
+                    "duration": "0.35s",
+                    "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
+                  }
+                }
+                threshold={5}
+              >
+                <div
+                  onScroll={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  style={
+                    Object {
+                      "overflowX": "hidden",
+                    }
+                  }
+                >
+                  <div
+                    className="react-swipeable-view-container"
+                    style={
+                      Object {
+                        "WebkitFlexDirection": "row",
+                        "WebkitTransition": "all 0s ease 0s",
+                        "direction": "ltr",
+                        "display": "flex",
+                        "flexDirection": "row",
+                        "height": null,
+                        "transition": "all 0s ease 0s",
+                        "willChange": "transform",
+                      }
+                    }
+                  >
+                    <div
+                      aria-hidden={false}
+                      data-swipeable="true"
+                      key=".$We have to get what Red Badger are providing. With highly skilled teams, they are doing what the big consultancies who have been in here for years just can't do or translate into meaningful outcomes. This is the first time in two decades of banking that I've seen a transformation actually look like it might succeed."
+                      style={
+                        Object {
+                          "WebkitFlexShrink": 0,
+                          "flexShrink": 0,
+                          "overflow": "auto",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Testimonial
+                        author="CIO, Financial Services"
+                        content="We have to get what Red Badger are providing. With highly skilled teams, they are doing what the big consultancies who have been in here for years just can't do or translate into meaningful outcomes. This is the first time in two decades of banking that I've seen a transformation actually look like it might succeed."
+                        key="We have to get what Red Badger are providing. With highly skilled teams, they are doing what the big consultancies who have been in here for years just can't do or translate into meaningful outcomes. This is the first time in two decades of banking that I've seen a transformation actually look like it might succeed."
+                      >
+                        <div
+                          className="contentWrapper"
+                        >
+                          <div>
+                            <div
+                              className="mainWrapper"
+                            >
+                              <div
+                                className="main"
+                              >
+                                We have to get what Red Badger are providing. With highly skilled teams, they are doing what the big consultancies who have been in here for years just can't do or translate into meaningful outcomes. This is the first time in two decades of banking that I've seen a transformation actually look like it might succeed.
+                              </div>
+                            </div>
+                            <div
+                              className="author"
+                            >
+                              – 
+                              CIO, Financial Services
+                            </div>
+                          </div>
+                        </div>
+                      </Testimonial>
+                    </div>
+                  </div>
+                </div>
+              </ReactSwipableView>
+            </div>
+          </span>
+        </ClientOnly>
+      </div>
+    </div>
+  </ClientTestimonialsSlice>
+</Context>
+`;
