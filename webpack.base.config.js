@@ -51,7 +51,9 @@ const baseConfig = {
       {
         test: /\.css$/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          devMode
+            ? { loader: 'style-loader', options: { singleton: true } }
+            : MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
