@@ -2,7 +2,7 @@
 import fetch from 'node-fetch';
 
 import handleErrors from '../util/handle-errors';
-import type { Tweet } from '../../types/';
+import type { Tweet } from '../../types';
 
 type TwitterImageSize = {
   w: number,

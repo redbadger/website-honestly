@@ -1,8 +1,8 @@
 // @flow
 /* eslint-disable camelcase */
 import React, { Component } from 'react';
-import NewsletterAfterSignUp from './after-sign-up/';
-import NewsletterBeforeSignUp from './before-sign-up/';
+import NewsletterAfterSignUp from './after-sign-up';
+import NewsletterBeforeSignUp from './before-sign-up';
 
 type NewsLetterState = {
   newsletterSubmitted: boolean,
@@ -86,7 +86,6 @@ class NewsLetter extends Component<*, NewsLetterState> {
     if (!data.name) {
       return this.setState({
         newsletterSubmitted: true,
-        email_address: this.state.email_address,
         errorMessage: 'Please tell us your name',
       });
     }

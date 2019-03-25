@@ -4,7 +4,7 @@ import React from 'react';
 import cx from 'classnames';
 
 import styles from './styles.css';
-import type { InstagramPost } from '../../../../types/';
+import type { InstagramPost } from '../../../../types';
 import Like from '../../../../components/icons/like';
 import Comment from '../../../../components/icons/comment';
 import InstagramLogo from '../../../../components/icons/instagram';

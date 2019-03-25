@@ -4,7 +4,7 @@ import React from 'react';
 import cx from 'classnames';
 
 import styles from './styles.css';
-import type { Tweet } from '../../../../types/';
+import type { Tweet } from '../../../../types';
 import TwitterLogo from '../../../../components/icons/twitter';
 import Retweet from '../../../../components/icons/retweet';
 import Like from '../../../../components/icons/like';

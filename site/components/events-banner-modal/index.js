@@ -62,7 +62,11 @@ export default class EventsBannerModal extends React.Component {
               allow="autoplay; encrypted-media"
               allowFullScreen
             />
-            <button onClick={this.closeModal} className={styles.iframeContainerCloseButton}>
+            <button
+              type="button"
+              onClick={this.closeModal}
+              className={styles.iframeContainerCloseButton}
+            >
               Close
             </button>
           </section>

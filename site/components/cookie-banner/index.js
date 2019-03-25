@@ -26,6 +26,7 @@ class CookieBanner extends React.Component<Props> {
   }
 
   acceptCookies: Function;
+
   bannerNode: ?HTMLDivElement;
 
   _acceptCookies = (closeBanner: Function) => {
@@ -48,7 +49,9 @@ class CookieBanner extends React.Component<Props> {
               Welcome to Red Badger. Our website uses cookies to optimise your experience.{' '}
               <Link to="cookiePolicy">View cookies policy here.</Link>
             </p>
-            <button onClick={this.acceptCookies}>Accept and Close</button>
+            <button type="button" onClick={this.acceptCookies}>
+              Accept and Close
+            </button>
           </div>
         </div>
       </div>

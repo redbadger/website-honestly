@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import HR from './';
+import HR from '.';
 
 describe('HR', () => {
   const defaultProps = {

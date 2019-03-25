@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import Link from '../../components/link';
+import Link from '../link';
 import styles from './style.css';
 import confusedBadger from './png/confused-badger.png';
 

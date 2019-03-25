@@ -9,7 +9,7 @@ import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventMeta from '../../components/event-meta';
 import Social from '../../components/social';
-import type { LinkList } from '../../pages/event/event-links-list';
+import type { LinkList } from './event-links-list';
 
 import metaImage from './meta-image.jpg';
 import styles from './style.css';

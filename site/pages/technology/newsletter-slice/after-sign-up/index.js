@@ -80,6 +80,7 @@ const AfterSignUpForm = ({
         />
       </div>
       <button
+        type="submit"
         className={cx({
           submitButton: true,
           buttonSubmitting: submitting,

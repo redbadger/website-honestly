@@ -35,6 +35,7 @@ export default class Shapes extends Component<any> {
   }
 
   svg: ?Element;
+
   shapes: ?HTMLDivElement;
 
   engageMusic(container: HTMLDivElement) {

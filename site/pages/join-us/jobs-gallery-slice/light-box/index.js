@@ -23,6 +23,7 @@ type NavigationButtonProps = {
 const NavigationButton = ({ onClick, direction }: NavigationButtonProps) => {
   return (
     <button
+      type="button"
       onClick={onClick}
       className={[styles.navigationButton, styles[`navigationButton__${direction}`]].join(' ')}
     >
@@ -60,8 +61,7 @@ class LightBoxGallery extends Component<LightBoxGalleryProps, LightBoxGallerySta
   }
 
   rotateGallery(direction: number) {
-    const position = this.state.position + direction;
-    this.setState({ position });
+    this.setState(({ position }) => ({ position: position + direction }));
   }
 
   handleArrowNavigation(event: KeyboardEvent) {
@@ -87,7 +87,7 @@ class LightBoxGallery extends Component<LightBoxGalleryProps, LightBoxGallerySta
       <div className={styles.lightBoxGallery}>
         <div className={styles.background} />
         <div className={styles.galleryContainer}>
-          <button className={styles.closeButton} onClick={onClose} />
+          <button type="button" className={styles.closeButton} onClick={onClose} />
           {this.isPreviousImage() && (
             <NavigationButton onClick={this.handleClick(-1)} direction="back" />
           )}
@@ -104,4 +104,5 @@ class LightBoxGallery extends Component<LightBoxGalleryProps, LightBoxGallerySta
     );
   }
 }
+
 export default LightBoxGallery;

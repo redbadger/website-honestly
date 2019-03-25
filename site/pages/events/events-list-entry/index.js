@@ -7,7 +7,7 @@ import EventMeta from '../../../components/event-meta';
 import EventImage from '../../../components/event-image';
 import DateBubble from '../../../components/date-bubble';
 import type { DateShape } from '../../../components/date-bubble';
-import type { LinkList } from '../../../pages/event/event-links-list';
+import type { LinkList } from '../../event/event-links-list';
 import EventTitle from '../../../components/event-title';
 import styles from '../events-list/style.css';
 import { setEndDate } from '../../../fetchers/util/events';

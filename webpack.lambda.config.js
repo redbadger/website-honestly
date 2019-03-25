@@ -4,8 +4,8 @@
  */
 
 const path = require('path');
-const { baseServiceConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
+const { baseServiceConfig } = require('./webpack.base.config');
 
 const lambdaConfig = webpackMerge(baseServiceConfig, {
   mode: 'production',

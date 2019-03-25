@@ -1,4 +1,4 @@
-import createStateNavigator from './';
+import createStateNavigator from '.';
 
 describe('Routes', () => {
   describe('Home Page', () => {

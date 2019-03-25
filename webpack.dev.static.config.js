@@ -5,10 +5,10 @@
 
 /* eslint-disable camelcase */
 const path = require('path');
-const { baseServiceConfig, baseWebConfig } = require('./webpack.base.config');
 const webpackMerge = require('webpack-merge').smart;
 const AssetsPlugin = require('assets-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const { baseServiceConfig, baseWebConfig } = require('./webpack.base.config');
 
 const devStaticConfig = webpackMerge(baseServiceConfig, {
   entry: {

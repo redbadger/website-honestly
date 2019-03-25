@@ -14,7 +14,7 @@ import {
   P,
   UL,
   ArticleImg,
-} from '../shared';
+} from '.';
 
 const render = component => shallow(component);
 

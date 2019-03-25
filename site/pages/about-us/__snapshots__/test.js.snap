@@ -577,6 +577,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                           aria-label="left"
                           className="arrow arrowLeft"
                           onClick={[Function]}
+                          type="button"
                         >
                           <div
                             className="inactive"
@@ -696,6 +697,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                           aria-label="right"
                           className="arrow arrowRight"
                           onClick={[Function]}
+                          type="button"
                         >
                           <div
                             className="active"
@@ -1042,6 +1044,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                                   aria-expanded={false}
                                   aria-label="why do you slugs keep eating my cabbages"
                                   className="topic__more"
+                                  type="button"
                                 >
                                   <span
                                     className="topic__plus"
@@ -1155,6 +1158,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                             disabled={true}
                             onClick={[Function]}
                             title="Previous"
+                            type="button"
                           >
                             <ArrowLight
                               className="prevArrow"
@@ -1184,6 +1188,7 @@ exports[`site/pages/about-us renders correctly 1`] = `
                             disabled={false}
                             onClick={[Function]}
                             title="Next"
+                            type="button"
                           >
                             <ArrowLight
                               className="nextArrow"

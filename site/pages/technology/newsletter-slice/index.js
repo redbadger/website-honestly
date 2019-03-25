@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import React, { Component } from 'react';
-import NewsletterAfterSignUp from './after-sign-up/';
-import NewsletterBeforeSignUp from './before-sign-up/';
+import NewsletterAfterSignUp from './after-sign-up';
+import NewsletterBeforeSignUp from './before-sign-up';
 
 export function isValidEmail(email) {
   const regex = /.+@.+\..+/;
@@ -67,7 +67,6 @@ class NewsLetter extends Component {
     if (!data.name) {
       return this.setState({
         newsletterSubmitted: true,
-        email_address: this.state.email_address,
         errorMessage: 'Please tell us your name',
       });
     }

@@ -2,7 +2,7 @@
 import fetch from 'node-fetch';
 
 import handleErrors from '../util/handle-errors';
-import type { InstagramPost } from '../../types/';
+import type { InstagramPost } from '../../types';
 
 type InstagramResponsePost = {
   created_time: string,

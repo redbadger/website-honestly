@@ -30,7 +30,7 @@ class Benefit extends Component<BenefitProps, BenefitState> {
   props: BenefitProps;
 
   handleClick = () => {
-    this.setState({ open: !this.state.open });
+    this.setState(({ open }) => ({ open: !open }));
   };
 
   toggleBenefitsVisibility = (open: boolean, showButton: boolean) => {

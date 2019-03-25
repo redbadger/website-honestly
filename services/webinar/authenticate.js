@@ -27,8 +27,11 @@ interface ApiCredentials {
 
 export default class ApiCredentialsManager {
   params: AuthParams;
+
   storedAccessToken: string;
+
   storedOrganizerKey: string;
+
   storedCredsExpirationDate: number;
 
   constructor(params: AuthParams) {

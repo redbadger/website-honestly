@@ -22,6 +22,7 @@ const IntroDesktopCard = ({ prevCard, nextCard, currentTile, totalSwipableTiles 
       <ClientOnly>
         <div className={styles.buttons}>
           <button
+            type="button"
             title="Previous"
             aria-label="Previous"
             disabled={preButtonEnabled}
@@ -31,6 +32,7 @@ const IntroDesktopCard = ({ prevCard, nextCard, currentTile, totalSwipableTiles 
             <ArrowLight reverse className={styles.prevArrow} />
           </button>
           <button
+            type="button"
             title="Next"
             aria-label="Next"
             disabled={nextButtonEnabled}

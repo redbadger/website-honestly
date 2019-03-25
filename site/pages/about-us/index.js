@@ -10,7 +10,7 @@ import Social from '../../components/social';
 
 import metaImage from './meta-image.jpg';
 
-import type { Tweet, InstagramPost } from '../../types/';
+import type { Tweet, InstagramPost } from '../../types';
 import type { CategoryProps } from './q-and-a-slice/category';
 
 type AboutUsProps = {

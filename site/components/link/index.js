@@ -29,6 +29,7 @@ export default class Link extends React.Component<LinkProps> {
   }
 
   shouldNavigate: Function = this.shouldNavigate;
+
   props: LinkProps;
 
   /**
