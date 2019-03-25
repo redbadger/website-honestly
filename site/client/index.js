@@ -2,8 +2,8 @@ import 'picturefill';
 
 // We need these polyfills for non-es6 compliant browsers
 // like IE11 and older Webkits on Android (eg. UC Browsers on Galaxy S7)
-import 'core-js/es6/array';
-import 'core-js/es6/symbol';
+import 'core-js/es/array';
+import 'core-js/es/symbol';
 
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga';

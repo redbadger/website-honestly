@@ -36,7 +36,7 @@
     "no-underscore-dangle": 0,
     "prefer-template": 0,
     "react/display-name": 0,
-    "react/forbid-prop-types": 1,
+    "react/forbid-prop-types": ["warn", { "checkChildContextTypes": false }],
     "react/jsx-boolean-value": 1,
     "react/jsx-closing-bracket-location": 1,
     "react/jsx-curly-spacing": 1,
@@ -64,7 +64,7 @@
     "react/require-default-props": 0,
     "react/destructuring-assignment": "off",
     "react/self-closing-comp": 1,
-    "react/sort-comp": 1,
+    "react/sort-comp": 0,
     "no-unused-expressions": ["error", { "allowTernary": true }]
   }
 }

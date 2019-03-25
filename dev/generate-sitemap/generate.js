@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import fs from 'fs';
-import promisify from 'es6-promisify';
+import { promisify } from 'es6-promisify';
 
 import getSiteState from '../../state';
 import { routeDefinitions } from '../../site/routes/definitions';
