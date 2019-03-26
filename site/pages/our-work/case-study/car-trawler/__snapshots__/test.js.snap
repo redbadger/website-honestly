@@ -1,0 +1,873 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/case-study/car-trawler/ renders correctly 1`] = `
+<Context>
+  <CarTrawler>
+    <ScrollTracker>
+      <Social
+        altText="A toy car heading off into a picturesque sunset"
+        description="Discover how we produced a working prototype within one week for a travel technology platform and went live within five months."
+        metaImage="car-sunset.jpg"
+        title="Creating complete CMS control for travel brands | Red Badger"
+        url="https://red-badger.com/our-work/case-study/car-trawler"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Creating complete CMS control for travel brands | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.comcar-sunset.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Creating complete CMS control for travel brands | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.comcar-sunset.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "https://red-badger.comcar-sunset.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
+                "content": "A toy car heading off into a picturesque sunset",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger.com/our-work/case-study/car-trawler",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Creating complete CMS control for travel brands | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.comcar-sunset.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Creating complete CMS control for travel brands | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.comcar-sunset.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "https://red-badger.comcar-sunset.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
+                  "content": "A toy car heading off into a picturesque sunset",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger.com/our-work/case-study/car-trawler",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Creating complete CMS control for travel brands | Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.comcar-sunset.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Creating complete CMS control for travel brands | Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.comcar-sunset.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.comcar-sunset.jpg",
+                    "property": "og:image:secure_url",
+                  },
+                  Object {
+                    "content": "A toy car heading off into a picturesque sunset",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "Discover how we produced a working prototype within one week for a travel technology platform and went live within five months.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.com/our-work/case-study/car-trawler",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <div
+        className="carDayTime"
+      >
+        <Image
+          altText="Toy blue car driving through paper-made scenery, surrounded by triangular paper trees."
+          src="car-daytime.png"
+        >
+          <picture>
+            <source
+              srcSet="car-daytime.png"
+            />
+            <img
+              alt=""
+              src="car-daytime.png"
+            />
+          </picture>
+        </Image>
+      </div>
+      <Body>
+        <div
+          className="body"
+        >
+          <PageHeading>
+            <div
+              className="heading"
+            >
+              <H1
+                type="fontL"
+              >
+                <h1
+                  className="fontL "
+                >
+                  Creating complete CMS control for travel brands
+                </h1>
+              </H1>
+            </div>
+          </PageHeading>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <Quote
+                    author={
+                      Object {
+                        "image": "david-kirby.jpg",
+                        "name": "David Kirby",
+                        "title": "Brands Commercial Director, CarTrawler",
+                      }
+                    }
+                    text="Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience."
+                  >
+                    <Quote
+                      author={
+                        Object {
+                          "image": "david-kirby.jpg",
+                          "name": "David Kirby",
+                          "title": "Brands Commercial Director, CarTrawler",
+                        }
+                      }
+                      className="quote"
+                      text="Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience."
+                    >
+                      <div
+                        className="quotation quote"
+                      >
+                        <div
+                          className="quotation__text"
+                        >
+                          <blockquote
+                            className="quotation__quote"
+                          >
+                            Red Badger have helped to give us control of our own websites, which as marketers is essential to our future growth. Their practical, pragmatic solutions helped to bring our in-house development team on-board. Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience.
+                          </blockquote>
+                        </div>
+                        <div
+                          className="quotation__author"
+                        >
+                          <Avatar
+                            image="david-kirby.jpg"
+                            name="David Kirby"
+                            size={70}
+                          >
+                            <div
+                              className="avatar__container"
+                              style={
+                                Object {
+                                  "height": 70,
+                                  "minHeight": 70,
+                                  "minWidth": 70,
+                                  "width": 70,
+                                }
+                              }
+                            >
+                              <img
+                                alt="David Kirby"
+                                src="david-kirby.jpg"
+                              />
+                            </div>
+                          </Avatar>
+                          <div
+                            className="quotation__author__wrapper"
+                          >
+                            <div
+                              className="quotation__author__name"
+                            >
+                              — 
+                              David Kirby
+                            </div>
+                            <div
+                              className="quotation__author__title"
+                            >
+                              Brands Commercial Director, CarTrawler
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Quote>
+                  </Quote>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Handling the impact of growth"
+                subHeading="Let's make things better"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Let's make things better
+                  </span>
+                  Handling the impact of growth
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        CarTrawler, a B2B partner to airlines, accommodation providers and online travel retailers, provides a world-leading travel technology platform to connect customers with tailored car rental. The company also operates its own business to consumer brands, including Holiday Autos and Arguscarhire.com.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Through organic growth and acquisitions, their own brands have grown significantly in the past few years. However, this fast-paced growth had resulted in a number of issues, including problems with the complexity of their content management systems and required integrations. Holiday Autos and Arguscarhire.com needed to simplify their estate, in order to provide their customers with a more efficient service and allow their content editors to better manage the sites.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Demonstrating value with a working prototype in one week"
+                subHeading="Do the right thing. Do the thing right"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Do the right thing. Do the thing right
+                  </span>
+                  Demonstrating value with a working prototype in one week
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Red Badger were selected to assist Holiday Autos and Arguscarhire.com with their goal to create a new way of providing content management across both websites in 36 languages, given our proven approach to solving complex problems such as this (see our
+                         
+                        <a
+                          className="link"
+                          href="/our-work/case-study/sky"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Sky case study
+                        </a>
+                        ), and our mantra of only choosing the right technology for the job. We suggested running a one week concept lab, in order to rapidly understand, validate and prototype a solution to solve their problem.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        In November 2015, a cross-functional Red Badger team arrived at the company’s HQ in Dublin for a week. The concept lab allowed us to work without predefined solutions, and to think objectively about what was needed from the content management system from both an end-user and business perspective. As the week progressed, through continuous iteration, we produced a working prototype that formed the basis of the solution, and demonstrated value as early as possible.
+                      </p>
+                    </P>
+                  </P>
+                  <Image
+                    className="carSunset"
+                    src="car-sunset.jpg"
+                  >
+                    <picture>
+                      <source
+                        className="carSunset"
+                        srcSet="car-sunset.jpg"
+                      />
+                      <img
+                        alt=""
+                        className="carSunset"
+                        src="car-sunset.jpg"
+                      />
+                    </picture>
+                  </Image>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Following the success of the concept lab, together with the client’s team, we immediately set about building a backlog for the production content management system, focusing on user requirements rather than functionality. Without being tied to a technology choice or a software service we were able to build a solution to solve the problem. We managed this with minimal waste in terms of development effort, software licensing costs, and unnecessary features, whilst maintaining a future-proof attitude to business needs.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        In five months, Red Badger built a customised system with features such as a bulk upload capability to handle updates across multiple languages and pages, scheduled publishing, summary pages, and preview capabilities.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Updating in a matter of seconds"
+                subHeading="Creating lasting change"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Creating lasting change
+                  </span>
+                  Updating in a matter of seconds
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Content editors are now able to change the content across three sites in a single place, without the need for assistance from developers. Tweaks and updates can be made to the website in a matter of seconds, allowing the focus to be on improving the overall customer experience and encouraging repeat bookings.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Holiday Autos and Arguscarhire.com were delighted with the new platform, and invited Red Badger to assist with a second project on the back of this success.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+        </div>
+      </Body>
+      <MockedWhatToReadNext
+        currentPage="carTrawler"
+        linkKeys={
+          Array [
+            "carTrawlerMyAccount",
+          ]
+        }
+      >
+        <div
+          className="whatNext"
+        >
+          <div
+            className="whatNext__tilesContainer"
+          >
+            <WhatToReadNextSlice
+              image="pride.gif"
+              key="Pride in London-0"
+              linkKey="prideCaseStudy"
+              name="Pride in London"
+              tagline="Delivering a best-in-class digital experience"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="prideCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="prideCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Pride in London"
+                          className="whatNext__image"
+                          src="pride.gif"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Pride in London
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="prideCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="prideCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Delivering a best-in-class digital experience
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="financialTimesReadMore.jpg"
+              key="Financial Times-1"
+              linkKey="financialTimesCaseStudy"
+              name="Financial Times"
+              tagline="Lasting change for a media giant"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="financialTimesCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="financialTimesCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Financial Times"
+                          className="whatNext__image"
+                          src="financialTimesReadMore.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Financial Times
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="financialTimesCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="financialTimesCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Lasting change for a media giant
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="carTrawler.jpg"
+              key="Car Trawler-2"
+              linkKey="carTrawlerCaseStudy"
+              name="Car Trawler"
+              tagline="Creating complete CMS control for travel brands"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="carTrawlerCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="carTrawlerCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Car Trawler"
+                          className="whatNext__image"
+                          src="carTrawler.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Car Trawler
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="carTrawlerCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="carTrawlerCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Creating complete CMS control for travel brands
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+          </div>
+          <Link
+            className="whatNext__button"
+            to="ourWorkPage"
+          >
+            <NavigationLink
+              className="whatNext__button"
+              navigating={[Function]}
+              stateKey="ourWorkPage"
+            >
+              <a
+                className="whatNext__button"
+                href={null}
+                onClick={[Function]}
+              >
+                See more of our work
+              </a>
+            </NavigationLink>
+          </Link>
+        </div>
+      </MockedWhatToReadNext>
+      <_temp>
+        <Checklist
+          isHovered={false}
+          onBlur={[Function]}
+          onHover={[Function]}
+        >
+          <section
+            className="contactUsContainer"
+            id="contactUs"
+          >
+            <h2
+              className="header"
+            >
+              We can help you
+            </h2>
+            <div
+              className="contentContainer"
+            >
+              <ul
+                className="list"
+              >
+                <li
+                  className="item"
+                  key="Create & validate new ideas"
+                >
+                  Create & validate new ideas
+                </li>
+                <li
+                  className="item"
+                  key="Deliver great quality products & services, fast"
+                >
+                  Deliver great quality products & services, fast
+                </li>
+                <li
+                  className="item"
+                  key="Be bold with technology"
+                >
+                  Be bold with technology
+                </li>
+                <li
+                  className="item"
+                  key="Be more customer centric"
+                >
+                  Be more customer centric
+                </li>
+                <li
+                  className="item"
+                  key="Improve efficiency with lean practices"
+                >
+                  Improve efficiency with lean practices
+                </li>
+                <li
+                  className="item"
+                  key="Build capability & confidence"
+                >
+                  Build capability & confidence
+                </li>
+              </ul>
+              <div
+                className="imgContainer"
+              />
+            </div>
+            <div>
+              <a
+                className="mailToLink"
+                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                Send an email
+              </a>
+              <span
+                className="talkToUs"
+              >
+                hello@red-badger.com
+              </span>
+            </div>
+          </section>
+        </Checklist>
+      </_temp>
+    </ScrollTracker>
+  </CarTrawler>
+</Context>
+`;
