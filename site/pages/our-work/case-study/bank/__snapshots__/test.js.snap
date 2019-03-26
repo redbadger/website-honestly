@@ -994,153 +994,276 @@ exports[`site/pages/home/homepage-top-slice/ renders correctly 1`] = `
         currentPage="bank"
       >
         <div
-          className="style__whatNext _divider__dividerGrey _divider__divider"
+          className="whatNext"
         >
           <div
-            className="style__whatNext__tilesContainer"
+            className="whatNext__tilesContainer"
           >
-            <div>
-              <figure>
-                <a
-                  className=""
-                  href="/our-work/case-study/financial-services-digital-transformation"
-                >
-                  <img
-                    alt="Financial services"
-                    className="style__whatNext__image"
-                    src="/assets-honestly/bank-1xM8X.jpg"
-                  />
-                </a>
-                <figcaption
-                  className="style__whatNext__caption _fonts__fontXS _fonts__boldSansSerif"
-                >
-                  Financial services
-                </figcaption>
-              </figure>
-              <a
-                className="style__whatNext__link"
-                href="/our-work/case-study/financial-services-digital-transformation"
+            <WhatToReadNextSlice
+              image="pride.gif"
+              key="Pride in London-0"
+              linkKey="prideCaseStudy"
+              name="Pride in London"
+              tagline="Delivering a best-in-class digital experience"
+            >
+              <div
+                className="whatNext__tile"
               >
-                <h2
-                  className="style__whatNext__title _fonts__fontM2 _fonts__serif"
-                >
-                  Digital transformation in retail banking
-                  <span
-                    className="style__whatNext__arrow_wrapper"
+                <figure>
+                  <Link
+                    to="prideCaseStudy"
                   >
-                    <svg
-                      className="style__whatNext__arrow"
-                      viewBox="0 0 22 22"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="prideCaseStudy"
                     >
-                      <path
-                        d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                        fill="#FC1D42"
-                        fillRule="evenodd"
-                        stroke="#FC1D42"
-                      />
-                    </svg>
-                  </span>
-                </h2>
-              </a>
-            </div>
-            <div>
-              <figure>
-                <a
-                  className=""
-                  href="/our-work/case-study/fortnum-and-mason"
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Pride in London"
+                          className="whatNext__image"
+                          src="pride.gif"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Pride in London
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="prideCaseStudy"
                 >
-                  <img
-                    alt="Fortnum & Mason"
-                    className="style__whatNext__image"
-                    src="/assets-honestly/fortnumReadMore-3LiWI.jpg"
-                  />
-                </a>
-                <figcaption
-                  className="style__whatNext__caption _fonts__fontXS _fonts__boldSansSerif"
-                >
-                  Fortnum & Mason
-                </figcaption>
-              </figure>
-              <a
-                className="style__whatNext__link"
-                href="/our-work/case-study/fortnum-and-mason"
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="prideCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Delivering a best-in-class digital experience
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="financialTimesReadMore.jpg"
+              key="Financial Times-1"
+              linkKey="financialTimesCaseStudy"
+              name="Financial Times"
+              tagline="Lasting change for a media giant"
+            >
+              <div
+                className="whatNext__tile"
               >
-                <h2
-                  className="style__whatNext__title _fonts__fontM2 _fonts__serif"
-                >
-                  Elegant e-commerce in eight months
-                  <span
-                    className="style__whatNext__arrow_wrapper"
+                <figure>
+                  <Link
+                    to="financialTimesCaseStudy"
                   >
-                    <svg
-                      className="style__whatNext__arrow"
-                      viewBox="0 0 22 22"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="financialTimesCaseStudy"
                     >
-                      <path
-                        d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                        fill="#FC1D42"
-                        fillRule="evenodd"
-                        stroke="#FC1D42"
-                      />
-                    </svg>
-                  </span>
-                </h2>
-              </a>
-            </div>
-            <div>
-              <figure>
-                <a
-                  className=""
-                  href="/our-work/case-study/car-trawler"
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Financial Times"
+                          className="whatNext__image"
+                          src="financialTimesReadMore.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Financial Times
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="financialTimesCaseStudy"
                 >
-                  <img
-                    alt="Car Trawler"
-                    className="style__whatNext__image"
-                    src="/assets-honestly/car-trawler-my-account-BSWfN.jpg"
-                  />
-                </a>
-                <figcaption
-                  className="style__whatNext__caption _fonts__fontXS _fonts__boldSansSerif"
-                >
-                  Car Trawler
-                </figcaption>
-              </figure>
-              <a
-                className="style__whatNext__link"
-                href="/our-work/case-study/car-trawler"
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="financialTimesCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Lasting change for a media giant
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="carTrawler.jpg"
+              key="Car Trawler-2"
+              linkKey="carTrawlerCaseStudy"
+              name="Car Trawler"
+              tagline="Creating complete CMS control for travel brands"
+            >
+              <div
+                className="whatNext__tile"
               >
-                <h2
-                  className="style__whatNext__title___1xI37 _fonts__fontM2___3sSED _fonts__serif___1u07k"
-                >
-                  Building a self-servicing customer account
-                  <span
-                    className="style__whatNext__arrow_wrapper"
+                <figure>
+                  <Link
+                    to="carTrawlerCaseStudy"
                   >
-                    <svg
-                      className="style__whatNext__arrow"
-                      viewBox="0 0 22 22"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="carTrawlerCaseStudy"
                     >
-                      <path
-                        d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                        fill="#FC1D42"
-                        fillRule="evenodd"
-                        stroke="#FC1D42"
-                      />
-                    </svg>
-                  </span>
-                </h2>
-              </a>
-            </div>
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Car Trawler"
+                          className="whatNext__image"
+                          src="carTrawler.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Car Trawler
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="carTrawlerCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="carTrawlerCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Creating complete CMS control for travel brands
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
           </div>
-          <a
-            className="style__whatNext__button _links__primaryButton _fonts__boldSansSerif"
-            href="/our-work"
+          <Link
+            className="whatNext__button"
+            to="ourWorkPage"
           >
-            See more of our work
-          </a>
+            <NavigationLink
+              className="whatNext__button"
+              navigating={[Function]}
+              stateKey="ourWorkPage"
+            >
+              <a
+                className="whatNext__button"
+                href={null}
+                onClick={[Function]}
+              >
+                See more of our work
+              </a>
+            </NavigationLink>
+          </Link>
         </div>
       </MockedWhatToReadNext>
       <_temp>
