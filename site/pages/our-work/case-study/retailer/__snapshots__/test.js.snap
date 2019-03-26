@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`site/pages/our-work/case-study/retailer/test.js renders correctly 1`] = `
+exports[`site/pages/our-work/case-study/retailer/ renders correctly 1`] = `
 <Context>
   <CaseStudyRetailer>
     <ScrollTracker>
