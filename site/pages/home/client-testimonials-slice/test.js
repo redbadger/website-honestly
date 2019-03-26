@@ -1,39 +1,23 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import { Context } from '../../../components/link/test-helper';
-
 import ClientTestimonialSlice from './index';
 import testimonials from './testimonials';
 
 describe('site/pages/home/client-testimonal-slice', () => {
   it('renders correctly', () => {
-    expect(
-      mount(
-        <Context>
-          <ClientTestimonialSlice />
-        </Context>,
-      ),
-    ).toMatchSnapshot();
+    expect(mount(<ClientTestimonialSlice />)).toMatchSnapshot();
   });
 
   it('shows the first testimonial by default', () => {
-    const testimonialSlice = mount(
-      <Context>
-        <ClientTestimonialSlice />
-      </Context>,
-    );
+    const testimonialSlice = mount(<ClientTestimonialSlice />);
 
     const testimonial = testimonialSlice.find('.main');
     expect(testimonial.text()).toMatch(testimonials[0].content);
   });
 
   it('only shows the next testimonial when arrow is clicked', () => {
-    const testimonialSlice = mount(
-      <Context>
-        <ClientTestimonialSlice />
-      </Context>,
-    );
+    const testimonialSlice = mount(<ClientTestimonialSlice />);
 
     const nextButton = testimonialSlice.find('.arrowRight');
     let testimonial = testimonialSlice.find('.main');
@@ -46,11 +30,7 @@ describe('site/pages/home/client-testimonal-slice', () => {
   });
 
   it('can traverse backwards and forwards', async () => {
-    const testimonialSlice = mount(
-      <Context>
-        <ClientTestimonialSlice />
-      </Context>,
-    );
+    const testimonialSlice = mount(<ClientTestimonialSlice />);
 
     const nextButton = testimonialSlice.find('.arrowRight');
     const prevButton = testimonialSlice.find('.arrowLeft');
@@ -65,11 +45,7 @@ describe('site/pages/home/client-testimonal-slice', () => {
   });
 
   it('will not go before the first testimonial', async () => {
-    const testimonialSlice = mount(
-      <Context>
-        <ClientTestimonialSlice />
-      </Context>,
-    );
+    const testimonialSlice = mount(<ClientTestimonialSlice />);
 
     const prevButton = testimonialSlice.find('.arrowLeft');
 
@@ -82,11 +58,7 @@ describe('site/pages/home/client-testimonal-slice', () => {
   });
 
   it('will not go beyond the last testimonial', async () => {
-    const testimonialSlice = mount(
-      <Context>
-        <ClientTestimonialSlice />
-      </Context>,
-    );
+    const testimonialSlice = mount(<ClientTestimonialSlice />);
 
     const nextButton = testimonialSlice.find('.arrowRight');
 
