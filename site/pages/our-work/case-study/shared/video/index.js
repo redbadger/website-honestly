@@ -20,7 +20,7 @@ class Video extends React.Component<Props> {
 
     const firstScriptTag = document.getElementsByTagName('script')[0];
 
-    if (firstScriptTag.parentNode) {
+    if (firstScriptTag && firstScriptTag.parentNode) {
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
   }
