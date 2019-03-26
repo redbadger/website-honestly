@@ -1,7 +1,7 @@
 @value badgerRed, badgerBlack, mauve, badgerWhite from "../../../css/_colors.css";
 @value largeScreen, mediumScreen from "../../../css/_sizes.css";
 
-.leanAgileSlice {
+.LeanAgileSlice {
   padding: 40px 0;
   background: white;
 }
@@ -110,7 +110,7 @@
 }
 
 @media mediumScreen {
-  .leanAgileSlice {
+  .LeanAgileSlice {
     padding: 50px 0;
   }
 
@@ -243,7 +243,7 @@
 }
 
 @media largeScreen {
-  .leanAgileSlice {
+  .LeanAgileSlice {
     padding: 70px 0;
   }
 
