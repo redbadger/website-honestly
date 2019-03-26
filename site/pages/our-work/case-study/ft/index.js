@@ -100,7 +100,7 @@ const FinancialTimesCaseStudy = () => (
             </ol>
           </div>
           <h3 className={styles.content__secondaryTitle}>And, core objectives included:</h3>
-          <p className={styles.content__paragraph}>
+          <div className={styles.content__paragraph}>
             <ul className={styles.content__list}>
               <li className={styles.content__list__element}>
                 Introduce and embed Lean UX methodologies and Agile Design at an enterprise level
@@ -117,7 +117,7 @@ const FinancialTimesCaseStudy = () => (
                 Place experts within the organisation who’ll continue to support these methods
               </li>
             </ul>
-          </p>
+          </div>
           <h2 className={styles.content__title}>
             <span className={styles.content__redTitle}>
               Do the right thing. Do the thing right.

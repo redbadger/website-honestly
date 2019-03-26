@@ -42,7 +42,7 @@ const HallerCaseStudy = () => (
           self-sufficiency. But with only 1 extension officer for every 1,000 farmers in Kenya, the
           process of reaching them is slow, inefficient and expensive.
         </p>
-        <p>
+        <div>
           Haller approached Red Badger wanting to explore the potential to use new technologies to
           extend these initiatives to a much wider farming audience in Kenya.
           <ul>
@@ -56,7 +56,7 @@ const HallerCaseStudy = () => (
               support the agricultural improvements of Kenyan farmers was the logical next step.
             </li>
           </ul>
-        </p>
+        </div>
       </CaseStudySection>
       <PullQuote
         author={{
@@ -75,7 +75,7 @@ const HallerCaseStudy = () => (
           Kenya that would be using the app. This gave Red Badger vital feedback in a number of
           areas:
         </p>
-        <p>
+        <div>
           <ul>
             <li>Mobile data packages in Kenya are traditionally small but competitively priced</li>
             <li>There were wide regional disparities in literacy rates</li>
@@ -85,7 +85,7 @@ const HallerCaseStudy = () => (
             </li>
           </ul>
           <img alt="Screenshots of the Haller application" src={articleImage} />
-        </p>
+        </div>
         <p>
           The unique and innovative technical design of the app addresses all these issues. The
           total size of the app is less than 1MB in total thanks to intelligent use of lightweight

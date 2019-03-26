@@ -401,7 +401,7 @@ exports[`site/pages/our-work/case-study/ft/ renders correctly 1`] = `
             >
               And, core objectives included:
             </h3>
-            <p
+            <div
               className="content__paragraph"
             >
               <ul
@@ -433,7 +433,7 @@ exports[`site/pages/our-work/case-study/ft/ renders correctly 1`] = `
                   Place experts within the organisation who’ll continue to support these methods
                 </li>
               </ul>
-            </p>
+            </div>
             <h2
               className="content__title"
             >
