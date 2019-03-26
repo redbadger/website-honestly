@@ -41,14 +41,17 @@ const WhatToReadNext = ({
   return (
     <div className={styles.whatNext}>
       <div className={styles.whatNext__tilesContainer}>
-        {nextSlices.map(slice => (
+        {nextSlices.map((slice, index) => (
+          /* disabled because list is static */
+          /* eslint-disable react/no-array-index-key */
           <WhatToReadNextSlice
-            key={slice.name}
+            key={`${slice.name}-${index}`}
             name={slice.name}
             tagline={slice.tagline}
             image={slice.image}
             linkKey={slice.linkKey}
           />
+          /* eslint-enable react/no-array-index-key */
         ))}
       </div>
       <Link to="ourWorkPage" className={styles.whatNext__button}>
