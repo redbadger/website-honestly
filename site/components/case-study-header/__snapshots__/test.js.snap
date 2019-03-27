@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/home/case-study-header renders correctly 1`] = `
+<CaseStudyHeader
+  headerColor="#F2F3ED"
+  headerImage="https://www.somefakeassetstore.com/image.jpg"
+  headerImageAlt="Tablet device showing screenshot of BBC website"
+  social={
+    Object {
+      "altText": "A laptop showing the BBC website",
+      "description": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
+      "metaImage": "https://www.somefakeassetstore.com/image.jpg",
+      "title": "Delivering a better customer experience, faster. | Red Badger",
+      "url": "https://red-badger.com/our-work/case-study/bbc-now",
+    }
+  }
+  tagline="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
+  title="BBC Now: Delivering a better customer experience, faster"
+>
+  <div>
+    <Social
+      altText="A laptop showing the BBC website"
+      description="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience."
+      metaImage="https://www.somefakeassetstore.com/image.jpg"
+      title="Delivering a better customer experience, faster. | Red Badger"
+      url="https://red-badger.com/our-work/case-study/bbc-now"
+    >
+      <HelmetWrapper
+        defer={true}
+        encodeSpecialCharacters={true}
+        meta={
+          Array [
+            Object {
+              "content": "summary_large_image",
+              "name": "twitter:card",
+            },
+            Object {
+              "content": "@redbadgerteam",
+              "name": "twitter:site",
+            },
+            Object {
+              "content": "Delivering a better customer experience, faster. | Red Badger",
+              "name": "twitter:title",
+            },
+            Object {
+              "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
+              "name": "twitter:description",
+            },
+            Object {
+              "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+              "name": "twitter:image",
+            },
+            Object {
+              "content": "website",
+              "property": "og:type",
+            },
+            Object {
+              "content": "Delivering a better customer experience, faster. | Red Badger",
+              "property": "og:title",
+            },
+            Object {
+              "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+              "property": "og:image",
+            },
+            Object {
+              "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+              "property": "og:image:secure_url",
+            },
+            Object {
+              "content": "A laptop showing the BBC website",
+              "property": "og:image:alt",
+            },
+            Object {
+              "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
+              "property": "og:description",
+            },
+            Object {
+              "content": "https://red-badger.com/our-work/case-study/bbc-now",
+              "property": "og:url",
+            },
+          ]
+        }
+      >
+        <SideEffect(NullComponent)
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Delivering a better customer experience, faster. | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Delivering a better customer experience, faster. | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
+                "content": "A laptop showing the BBC website",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger.com/our-work/case-study/bbc-now",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <NullComponent
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Delivering a better customer experience, faster. | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Delivering a better customer experience, faster. | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "https://red-badger.comhttps://www.somefakeassetstore.com/image.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
+                  "content": "A laptop showing the BBC website",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger.com/our-work/case-study/bbc-now",
+                  "property": "og:url",
+                },
+              ]
+            }
+          />
+        </SideEffect(NullComponent)>
+      </HelmetWrapper>
+    </Social>
+    <div
+      className="header"
+      style={
+        Object {
+          "backgroundColor": "#F2F3ED",
+        }
+      }
+    >
+      <div
+        className="header__container"
+      >
+        <div
+          className="header__imageContainer"
+          style={
+            Object {
+              "justifyContent": "center",
+            }
+          }
+        >
+          <img
+            alt="Tablet device showing screenshot of BBC website"
+            className="header__image"
+            src="https://www.somefakeassetstore.com/image.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="content"
+    >
+      <div
+        className="content__wrapper"
+      >
+        <h1
+          className="content__mainTitle"
+        >
+          BBC Now: Delivering a better customer experience, faster
+        </h1>
+        <h2
+          className="content__tagline"
+        >
+          How the rapid prototyping model helped the BBC to uncover new ways to engage its audience
+        </h2>
+      </div>
+    </div>
+  </div>
+</CaseStudyHeader>
+`;

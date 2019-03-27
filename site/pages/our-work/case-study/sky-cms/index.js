@@ -117,7 +117,7 @@ const SkyCmsCaseStudy = () => (
           <h3 className={styles.content__secondaryTitle}>
             Innovative features of the CMS include:
           </h3>
-          <p className={styles.content__paragraph}>
+          <div className={styles.content__paragraph}>
             <ul className={styles.content__ordered__list}>
               <li className={styles.content__ordered__list__element}>
                 An editor to build content out of blocks - pluggable components for different types
@@ -143,7 +143,7 @@ const SkyCmsCaseStudy = () => (
                 different purposes
               </li>
             </ul>
-          </p>
+          </div>
           <p className={styles.content__paragraph}>
             <img
               src={cmsIllustrationImage}

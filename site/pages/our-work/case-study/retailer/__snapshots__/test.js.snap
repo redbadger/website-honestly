@@ -1,0 +1,1153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/case-study/retailer/ renders correctly 1`] = `
+<Context>
+  <CaseStudyRetailer>
+    <ScrollTracker>
+      <Social
+        altText="A retailer shopping cart."
+        description="Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries."
+        metaImage="meta-image.jpg"
+        title="Next generation platform for retail giant | Red Badger"
+        url="https://red-badger.com/our-work/case-study/retailer"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Next generation platform for retail giant | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Next generation platform for retail giant | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
+                "content": "A retailer shopping cart.",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger.com/our-work/case-study/retailer",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Next generation platform for retail giant | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Next generation platform for retail giant | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
+                  "content": "A retailer shopping cart.",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger.com/our-work/case-study/retailer",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Next generation platform for retail giant | Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Next generation platform for retail giant | Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image:secure_url",
+                  },
+                  Object {
+                    "content": "A retailer shopping cart.",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.com/our-work/case-study/retailer",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <div
+        className="header"
+      >
+        <div
+          className="header__container"
+        >
+          <div
+            className="header__imageContainer"
+          >
+            <img
+              alt="Toy shopping cart filled with fruit & veg, surrounded by key statistics "
+              className="header__image"
+              src="header.jpg"
+            />
+          </div>
+          <div
+            className="header__outcome header__outcome--right"
+          >
+            <span
+              className="header__outcome__percentage"
+            >
+              +54%
+            </span>
+            <h3
+              className="header__outcome__description"
+            >
+              Increased orders
+            </h3>
+          </div>
+          <div
+            className="header__outcome header__outcome--left"
+          >
+            <span
+              className="header__outcome__percentage"
+            >
+              +29%
+            </span>
+            <h3
+              className="header__outcome__description"
+            >
+              Uplift in visits
+            </h3>
+          </div>
+        </div>
+      </div>
+      <Body>
+        <div
+          className="body"
+        >
+          <PageHeading>
+            <div
+              className="heading"
+            >
+              <H1
+                type="fontL"
+              >
+                <h1
+                  className="fontL "
+                >
+                  Next generation platform for retail giant cleared five-year backlog in just eight months
+                </h1>
+              </H1>
+            </div>
+          </PageHeading>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Solving high drop-out rates"
+                subHeading="Let's make things better"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Let's make things better
+                  </span>
+                  Solving high drop-out rates
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Our client, one of the largest retailers in the UK was experiencing lost revenue in the millions, due to higher than expected drop-out rates on its online platform.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        This was because the online experience and functionality were inconsistent. The business was spending huge sums on a piece of software that scraped its website, and then created mobile optimised versions on the fly. This meant that some orders were easier to place than others - depending on what device was being used - and amendments to orders were down as they were incredibly complicated to change once booked.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        As a retailer dedicated to providing value to customers and seeing its online business growing substantially - including a 100% year-on-year mobile traffic increase - there was an urgent need for the site to work seamlessly. The business needed to build a modern technology platform using cutting-edge, web-based tech to ensure all experiences for customers were intuitive and easy to use, regardless of device. This would also have to factor in processing a catalogue of hundreds-of-thousands of products, delving into complex user journeys, and building a well executed international shipping function.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        As a business that championed innovation this retailer decided that Red Badger was the right partner to help it make things better.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Streamlining teams and implementing cutting-edge tech"
+                subHeading="Do the right thing. Do the thing right."
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Do the right thing. Do the thing right.
+                  </span>
+                  Streamlining teams and implementing cutting-edge tech
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Embracing organisational change
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Although change is happening, big companies are still watching the speed at which today’s start-ups move in awe and envy. What start-ups do right is work in a way that puts the customer at the very heart of projects, from technology choices to design and content. They then work in a collaborative and Lean way to get new products out at speeds that seem staggering to large organisations.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Red Badger enabled this large retail client to work with the agility of a start-up: re-engineering and revolutionising its workflow with Lean practices and helping it break down department silos by keeping design, development and testing in one place. The benefits of this included:
+                      </p>
+                    </P>
+                  </P>
+                  <UL>
+                    <ul
+                      className="list"
+                    >
+                      <li
+                        className="content__list__element"
+                      >
+                        A shorter feedback loop
+                      </li>
+                      <li
+                        className="content__list__element"
+                      >
+                        Team-wide responsibility for each decision
+                      </li>
+                      <li
+                        className="content__list__element"
+                      >
+                        Elimination of waste
+                      </li>
+                      <li
+                        className="content__list__element"
+                      >
+                        Driven determination and focus in order to deliver value to customers, faster
+                      </li>
+                      <li
+                        className="content__list__element"
+                      >
+                        A sped-up delivery, over four years early
+                      </li>
+                    </ul>
+                  </UL>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <Image
+                alt="Tech graph"
+                className="techGraphImage"
+                src="tech-graph.jpg"
+              >
+                <picture>
+                  <source
+                    className="techGraphImage"
+                    srcSet="tech-graph.jpg"
+                  />
+                  <img
+                    alt="Tech graph"
+                    className="techGraphImage"
+                    src="tech-graph.jpg"
+                  />
+                </picture>
+              </Image>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Finding the right tech for the job
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Now working in a collaborative and Lean way with Red Badger, it was time to find the right tech for the job.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Red Badger worked very closely with the retailer’s engineering team to recommend and introduce an incredibly progressive selection of cutting-edge technology. The new mobile site had to replace the existing screen-scraping solution and improve the customer experience, making the new site adaptable, flexible and able to scale up to the ever-growing demand that the business was seeing.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <ContactBox>
+            <div
+              className="contactBox"
+            >
+              <h2
+                className="contactBox__heading"
+              >
+                Project in mind?
+              </h2>
+              <button
+                className="contactBox__button"
+                onClick={[Function]}
+                type="button"
+              >
+                Tell us more
+              </button>
+            </div>
+          </ContactBox>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        By using a combination of Node.js and React.js, the team were able to develop an app that delivers a consistent experience across all devices. It also means that the application is fast and responsive, delivering far better usability for customers.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        On top of this, by moving into the Cloud, using advanced technology such as Docker Containers, AWS ECS and Terraform, the ecommerce store was able to incorporate auto cloud scaling which expands and contracts resource allocation to match customer demand. This is vital in helping to cope with the huge growth in revenue and transaction volumes experienced by the retailer, especially around times of peak demand such as Christmas and Black Friday.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Finally, on the tech front, by building Automated Test and Continuous Deployment Pipelines, new features are enabled to be constantly trickled into production, continually delivering new value to customers and substantially reducing risk. Previously, the retail giant released quarterly but can now release multiple times a day with deployments taking minutes, rather than days.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Improving conversion rates by 83%"
+                subHeading="Creating lasting change."
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Creating lasting change.
+                  </span>
+                  Improving conversion rates by 83%
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Successfully using the technologies above has solved long-standing issues and fundamentally influenced the retailer’s next generation platform. Where legacy systems previously ruled, cutting-edge innovation allows its online business to grow unencumbered by technical limitations. The new platform now provides this retailer with the means to scale for years to come.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        And, by first focusing on delivering the application for mobile only, Red Badger has delivered a completed application across seven countries in just eight months, the results of which are staggering:
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <Card
+                className="overview"
+              >
+                <div
+                  className="Card overview"
+                >
+                  <ListBox
+                    className="listBox"
+                    items={
+                      Array [
+                        Object {
+                          "label": "Mobile first application across 7 countries",
+                        },
+                        Object {
+                          "label": "Introduced Lean & Agile practices",
+                        },
+                        Object {
+                          "label": "Built Continuous Deployment Pipelines",
+                        },
+                        Object {
+                          "label": "Moved to the Cloud",
+                        },
+                        Object {
+                          "label": "Introduced automated testing & cutting edge tech",
+                        },
+                      ]
+                    }
+                    labelClassName="listBox__leftLabel"
+                    title="What we did"
+                  >
+                    <div
+                      className="listBox listBox"
+                    >
+                      <h3
+                        className="listBox__heading"
+                      >
+                        What we did
+                      </h3>
+                      <ul>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Mobile first application across 7 countries"
+                        >
+                          <div
+                            className="listBox__leftLabel"
+                          >
+                            Mobile first application across 7 countries
+                          </div>
+                          <div />
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Introduced Lean & Agile practices"
+                        >
+                          <div
+                            className="listBox__leftLabel"
+                          >
+                            Introduced Lean & Agile practices
+                          </div>
+                          <div />
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Built Continuous Deployment Pipelines"
+                        >
+                          <div
+                            className="listBox__leftLabel"
+                          >
+                            Built Continuous Deployment Pipelines
+                          </div>
+                          <div />
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Moved to the Cloud"
+                        >
+                          <div
+                            className="listBox__leftLabel"
+                          >
+                            Moved to the Cloud
+                          </div>
+                          <div />
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Introduced automated testing & cutting edge tech"
+                        >
+                          <div
+                            className="listBox__leftLabel"
+                          >
+                            Introduced automated testing & cutting edge tech
+                          </div>
+                          <div />
+                        </li>
+                      </ul>
+                    </div>
+                  </ListBox>
+                  <ListBox
+                    className="listBox"
+                    items={
+                      Array [
+                        Object {
+                          "label": "Uplift in visits",
+                          "value": "+29%",
+                        },
+                        Object {
+                          "label": "Increased orders",
+                          "value": "+54%",
+                        },
+                        Object {
+                          "label": "Customers amending orders",
+                          "value": "+443%",
+                        },
+                        Object {
+                          "label": "Conversion rates including amendments",
+                          "value": "+83%",
+                        },
+                        Object {
+                          "label": "Conversion rates excluding amendments",
+                          "value": "+18%",
+                        },
+                      ]
+                    }
+                    title="Results"
+                  >
+                    <div
+                      className="listBox listBox"
+                    >
+                      <h3
+                        className="listBox__heading"
+                      >
+                        Results
+                      </h3>
+                      <ul>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Uplift in visits"
+                        >
+                          <div>
+                            Uplift in visits
+                          </div>
+                          <div>
+                            +29%
+                          </div>
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Increased orders"
+                        >
+                          <div>
+                            Increased orders
+                          </div>
+                          <div>
+                            +54%
+                          </div>
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Customers amending orders"
+                        >
+                          <div>
+                            Customers amending orders
+                          </div>
+                          <div>
+                            +443%
+                          </div>
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Conversion rates including amendments"
+                        >
+                          <div>
+                            Conversion rates including amendments
+                          </div>
+                          <div>
+                            +83%
+                          </div>
+                        </li>
+                        <li
+                          className="listBox__element listBox__element--results"
+                          key="Conversion rates excluding amendments"
+                        >
+                          <div>
+                            Conversion rates excluding amendments
+                          </div>
+                          <div>
+                            +18%
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </ListBox>
+                </div>
+              </Card>
+            </div>
+          </Section>
+        </div>
+      </Body>
+      <MockedWhatToReadNext
+        currentPage="retailer"
+      >
+        <div
+          className="whatNext"
+        >
+          <div
+            className="whatNext__tilesContainer"
+          >
+            <WhatToReadNextSlice
+              image="pride.gif"
+              key="Pride in London-0"
+              linkKey="prideCaseStudy"
+              name="Pride in London"
+              tagline="Delivering a best-in-class digital experience"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="prideCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="prideCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Pride in London"
+                          className="whatNext__image"
+                          src="pride.gif"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Pride in London
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="prideCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="prideCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Delivering a best-in-class digital experience
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="financialTimesReadMore.jpg"
+              key="Financial Times-1"
+              linkKey="financialTimesCaseStudy"
+              name="Financial Times"
+              tagline="Lasting change for a media giant"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="financialTimesCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="financialTimesCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Financial Times"
+                          className="whatNext__image"
+                          src="financialTimesReadMore.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Financial Times
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="financialTimesCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="financialTimesCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Lasting change for a media giant
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="carTrawler.jpg"
+              key="Car Trawler-2"
+              linkKey="carTrawlerCaseStudy"
+              name="Car Trawler"
+              tagline="Creating complete CMS control for travel brands"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="carTrawlerCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="carTrawlerCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Car Trawler"
+                          className="whatNext__image"
+                          src="carTrawler.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Car Trawler
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="carTrawlerCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="carTrawlerCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Creating complete CMS control for travel brands
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+          </div>
+          <Link
+            className="whatNext__button"
+            to="ourWorkPage"
+          >
+            <NavigationLink
+              className="whatNext__button"
+              navigating={[Function]}
+              stateKey="ourWorkPage"
+            >
+              <a
+                className="whatNext__button"
+                href={null}
+                onClick={[Function]}
+              >
+                See more of our work
+              </a>
+            </NavigationLink>
+          </Link>
+        </div>
+      </MockedWhatToReadNext>
+      <_temp>
+        <Checklist
+          isHovered={false}
+          onBlur={[Function]}
+          onHover={[Function]}
+        >
+          <section
+            className="contactUsContainer"
+            id="contactUs"
+          >
+            <h2
+              className="header"
+            >
+              We can help you
+            </h2>
+            <div
+              className="contentContainer"
+            >
+              <ul
+                className="list"
+              >
+                <li
+                  className="item"
+                  key="Create & validate new ideas"
+                >
+                  Create & validate new ideas
+                </li>
+                <li
+                  className="item"
+                  key="Deliver great quality products & services, fast"
+                >
+                  Deliver great quality products & services, fast
+                </li>
+                <li
+                  className="item"
+                  key="Be bold with technology"
+                >
+                  Be bold with technology
+                </li>
+                <li
+                  className="item"
+                  key="Be more customer centric"
+                >
+                  Be more customer centric
+                </li>
+                <li
+                  className="item"
+                  key="Improve efficiency with lean practices"
+                >
+                  Improve efficiency with lean practices
+                </li>
+                <li
+                  className="item"
+                  key="Build capability & confidence"
+                >
+                  Build capability & confidence
+                </li>
+              </ul>
+              <div
+                className="imgContainer"
+              />
+            </div>
+            <div>
+              <a
+                className="mailToLink"
+                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                Send an email
+              </a>
+              <span
+                className="talkToUs"
+              >
+                hello@red-badger.com
+              </span>
+            </div>
+          </section>
+        </Checklist>
+      </_temp>
+    </ScrollTracker>
+  </CaseStudyRetailer>
+</Context>
+`;

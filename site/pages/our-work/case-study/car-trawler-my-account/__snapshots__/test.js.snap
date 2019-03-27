@@ -1,0 +1,955 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/case-study/car-trawler-my-account/ renders correctly 1`] = `
+<Context>
+  <CarTrawler>
+    <ScrollTracker>
+      <Social
+        altText="A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'"
+        description="Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards."
+        metaImage="header-narrow.jpg"
+        title="Building a self-servicing customer account | Red Badger"
+        url="https://red-badger.com/our-work/case-study/car-trawler"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Building a self-servicing customer account | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.comheader-narrow.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Building a self-servicing customer account | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.comheader-narrow.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "https://red-badger.comheader-narrow.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
+                "content": "A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger.com/our-work/case-study/car-trawler",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Building a self-servicing customer account | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.comheader-narrow.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Building a self-servicing customer account | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.comheader-narrow.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "https://red-badger.comheader-narrow.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
+                  "content": "A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger.com/our-work/case-study/car-trawler",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Building a self-servicing customer account | Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.comheader-narrow.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Building a self-servicing customer account | Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.comheader-narrow.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.comheader-narrow.jpg",
+                    "property": "og:image:secure_url",
+                  },
+                  Object {
+                    "content": "A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "Read how we helped travel brands build a new portal for customers to log-in easily, make bookings efficiently, manage their bookings and earn loyalty rewards.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.com/our-work/case-study/car-trawler",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <HeaderImg>
+        <div
+          className="wrapper"
+        >
+          <div
+            className="leftFill"
+          />
+          <img
+            alt="A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'"
+            className="wide"
+            src="header-wide.jpg"
+          />
+          <img
+            alt="A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'"
+            className="narrow"
+            src="header-narrow.jpg"
+          />
+          <div
+            className="rightFill"
+          />
+        </div>
+      </HeaderImg>
+      <Body>
+        <div
+          className="body"
+        >
+          <PageHeading>
+            <div
+              className="heading"
+            >
+              <H1
+                type="fontL"
+              >
+                <h1
+                  className="fontL "
+                >
+                  Building a loyalty portal for customers and reducing customer support queries
+                </h1>
+              </H1>
+            </div>
+          </PageHeading>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <Quote
+                    author={
+                      Object {
+                        "image": "david-kirby.jpg",
+                        "name": "David Kirby",
+                        "title": "Brands Commercial Director, CarTrawler",
+                      }
+                    }
+                    text="Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience."
+                  >
+                    <Quote
+                      author={
+                        Object {
+                          "image": "david-kirby.jpg",
+                          "name": "David Kirby",
+                          "title": "Brands Commercial Director, CarTrawler",
+                        }
+                      }
+                      className="quote"
+                      text="Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience."
+                    >
+                      <div
+                        className="quotation quote"
+                      >
+                        <div
+                          className="quotation__text"
+                        >
+                          <blockquote
+                            className="quotation__quote"
+                          >
+                            Their agile approach also helped us to prioritise the features that mattered most – and is something we’ve subsequently applied in other areas of the team. Working with Red Badger was a great experience.
+                          </blockquote>
+                        </div>
+                        <div
+                          className="quotation__author"
+                        >
+                          <Avatar
+                            image="david-kirby.jpg"
+                            name="David Kirby"
+                            size={70}
+                          >
+                            <div
+                              className="avatar__container"
+                              style={
+                                Object {
+                                  "height": 70,
+                                  "minHeight": 70,
+                                  "minWidth": 70,
+                                  "width": 70,
+                                }
+                              }
+                            >
+                              <img
+                                alt="David Kirby"
+                                src="david-kirby.jpg"
+                              />
+                            </div>
+                          </Avatar>
+                          <div
+                            className="quotation__author__wrapper"
+                          >
+                            <div
+                              className="quotation__author__name"
+                            >
+                              — 
+                              David Kirby
+                            </div>
+                            <div
+                              className="quotation__author__title"
+                            >
+                              Brands Commercial Director, CarTrawler
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Quote>
+                  </Quote>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Increasing abilities across a customer portal"
+                subHeading="Let's make things better"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Let's make things better
+                  </span>
+                  Increasing abilities across a customer portal
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        CarTrawler, a B2B partner to airlines, accommodation providers and online travel retailers, provides a world-leading travel technology platform to connect customers with tailored car rental. The company also operates its own brands, including Holiday Autos and Arguscarhire.com.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Following the success of the
+                         
+                        <Link
+                          target="_blank"
+                          to="carTrawlerCaseStudy"
+                        >
+                          <NavigationLink
+                            className=""
+                            navigating={[Function]}
+                            stateKey="carTrawlerCaseStudy"
+                            target="_blank"
+                          >
+                            <a
+                              className=""
+                              href={null}
+                              onClick={[Function]}
+                              target="_blank"
+                            >
+                              CMS Project
+                            </a>
+                          </NavigationLink>
+                        </Link>
+                         
+                        we were asked to assist with implementing a new loyalty product, My Account. The existing system, running on Arguscarhire.com, was no longer fit for purpose for several reasons:
+                      </p>
+                    </P>
+                  </P>
+                  <UL>
+                    <ul
+                      className="list"
+                    >
+                      <li>
+                        Inflexible and difficult to support
+                      </li>
+                      <li>
+                        Legacy code base, that could not be used with multiple brands or partners
+                      </li>
+                      <li>
+                        Only available in English, but needed to support multiple languages
+                      </li>
+                      <li>
+                        Lack of FAQs, resulting in costly support calls
+                      </li>
+                    </ul>
+                  </UL>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        The vision of this project was to build a newloyalty portal for customers to log-in, make bookings more efficiently, manage their bookings and to earn loyalty rewards.
+                      </p>
+                    </P>
+                  </P>
+                  <ArticleImg
+                    alt="A person smiling while browsing a travel website on her computer"
+                    src="browsing.jpg"
+                  >
+                    <img
+                      alt="A person smiling while browsing a travel website on her computer"
+                      className="articleImg"
+                      src="browsing.jpg"
+                    />
+                  </ArticleImg>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Building a prototype within four days."
+                subHeading="Do the right thing. Do the thing right"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Do the right thing. Do the thing right
+                  </span>
+                  Building a prototype within four days.
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        We decided to take a similar approach to the
+                         
+                        <Link
+                          target="_blank"
+                          to="carTrawlerCaseStudy"
+                        >
+                          <NavigationLink
+                            className=""
+                            navigating={[Function]}
+                            stateKey="carTrawlerCaseStudy"
+                            target="_blank"
+                          >
+                            <a
+                              className=""
+                              href={null}
+                              onClick={[Function]}
+                              target="_blank"
+                            >
+                              CMS Project
+                            </a>
+                          </NavigationLink>
+                        </Link>
+                        , and start with an initial week’s discovery in order to understand the problem, carry out an initial user experience analysis, and determine the appropriate technical approach. The decision was made to ignore the existing platform, and instead to focus on the user requirements, in order to provide maximum user value and speed to market. After just four days, we had a backlog for the project and a working prototype.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        <a
+                          href="https://red-badger.com/blog/2017/10/13/the-end-of-the-cloud-a-truly-serverless-web"
+                        >
+                          Serverless architecture
+                        </a>
+                        , a newcomer on the tech scene, was selected due to the speed at which the solution could be built and deployed, whilst providing assurances in security, stability and scalability. Serverless negates the need for a DevOps team, as providers such as Amazon Web Services provide guaranteed uptime, load balancing, scale and resilience. Any peaks in traffic are automatically accommodated by the service, and the provider can be changed with ease, without expense or downtime. In addition, Serverless significantly reduces the overheads associated with managing and maintaining a platform such as this.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        The solution was a microservices architecture, built with a combination of suitable Software-as-a-Service (SaaS) solutions like Auth0, and bespoke services that used API Gateway, GraphQL, Lambda, DynamoDB, Kinesis and ElasticSearch. JavaScript libraries (including React and Redux) for the UI were also selected. Each of these options are open source or licence-free, significantly reducing the upfront build expense, and meaning the cost to change providers in the future is minimal. These may seem bold choices for a large business, but in reality, they are more efficient and hold less risk in terms of ongoing total cost of ownership.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        With a cross-functional team, we were able to build a solution that requires minimal, if any, ongoing maintenance, with an ultra-low total cost of ownership, whilst providing web scale, performance and security.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Reducing queries to customer support"
+                subHeading="Creating lasting change"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Creating lasting change
+                  </span>
+                  Reducing queries to customer support
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Customers who have positive experiences are more likely to make repeat bookings, and the loyalty programme seeks to improve the customer experience further.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        The new loyalty product, My Account, which is initially running on arguscarhire.com and Holiday Autos has helped:
+                      </p>
+                    </P>
+                  </P>
+                  <UL>
+                    <ul
+                      className="list"
+                    >
+                      <li>
+                        Reduce queries to customer support as customer can see and manage all their bookings in one place
+                      </li>
+                      <li>
+                        Increase the Repeat Booking Rate as customer receive exclusive discounts based on their booking volume
+                      </li>
+                      <li>
+                        Improve the brands’ Net Promoter Score and CSAT
+                      </li>
+                    </ul>
+                  </UL>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+        </div>
+      </Body>
+      <MockedWhatToReadNext
+        currentPage="carTrawlerMyAccount"
+        linkKeys={
+          Array [
+            "carTrawler",
+          ]
+        }
+      >
+        <div
+          className="whatNext"
+        >
+          <div
+            className="whatNext__tilesContainer"
+          >
+            <WhatToReadNextSlice
+              image="pride.gif"
+              key="Pride in London-0"
+              linkKey="prideCaseStudy"
+              name="Pride in London"
+              tagline="Delivering a best-in-class digital experience"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="prideCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="prideCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Pride in London"
+                          className="whatNext__image"
+                          src="pride.gif"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Pride in London
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="prideCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="prideCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Delivering a best-in-class digital experience
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="financialTimesReadMore.jpg"
+              key="Financial Times-1"
+              linkKey="financialTimesCaseStudy"
+              name="Financial Times"
+              tagline="Lasting change for a media giant"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="financialTimesCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="financialTimesCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Financial Times"
+                          className="whatNext__image"
+                          src="financialTimesReadMore.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Financial Times
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="financialTimesCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="financialTimesCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Lasting change for a media giant
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="carTrawler.jpg"
+              key="Car Trawler-2"
+              linkKey="carTrawlerCaseStudy"
+              name="Car Trawler"
+              tagline="Creating complete CMS control for travel brands"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="carTrawlerCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="carTrawlerCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Car Trawler"
+                          className="whatNext__image"
+                          src="carTrawler.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Car Trawler
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="carTrawlerCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="carTrawlerCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Creating complete CMS control for travel brands
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+          </div>
+          <Link
+            className="whatNext__button"
+            to="ourWorkPage"
+          >
+            <NavigationLink
+              className="whatNext__button"
+              navigating={[Function]}
+              stateKey="ourWorkPage"
+            >
+              <a
+                className="whatNext__button"
+                href={null}
+                onClick={[Function]}
+              >
+                See more of our work
+              </a>
+            </NavigationLink>
+          </Link>
+        </div>
+      </MockedWhatToReadNext>
+      <_temp>
+        <Checklist
+          isHovered={false}
+          onBlur={[Function]}
+          onHover={[Function]}
+        >
+          <section
+            className="contactUsContainer"
+            id="contactUs"
+          >
+            <h2
+              className="header"
+            >
+              We can help you
+            </h2>
+            <div
+              className="contentContainer"
+            >
+              <ul
+                className="list"
+              >
+                <li
+                  className="item"
+                  key="Create & validate new ideas"
+                >
+                  Create & validate new ideas
+                </li>
+                <li
+                  className="item"
+                  key="Deliver great quality products & services, fast"
+                >
+                  Deliver great quality products & services, fast
+                </li>
+                <li
+                  className="item"
+                  key="Be bold with technology"
+                >
+                  Be bold with technology
+                </li>
+                <li
+                  className="item"
+                  key="Be more customer centric"
+                >
+                  Be more customer centric
+                </li>
+                <li
+                  className="item"
+                  key="Improve efficiency with lean practices"
+                >
+                  Improve efficiency with lean practices
+                </li>
+                <li
+                  className="item"
+                  key="Build capability & confidence"
+                >
+                  Build capability & confidence
+                </li>
+              </ul>
+              <div
+                className="imgContainer"
+              />
+            </div>
+            <div>
+              <a
+                className="mailToLink"
+                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                Send an email
+              </a>
+              <span
+                className="talkToUs"
+              >
+                hello@red-badger.com
+              </span>
+            </div>
+          </section>
+        </Checklist>
+      </_temp>
+    </ScrollTracker>
+  </CarTrawler>
+</Context>
+`;
