@@ -1,945 +1,561 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/technology renders correctly 1`] = `
-<Context>
-  <TechnologyPage
-    growingTrendsBlogPosts={
-      Array [
-        Object {
-          "author": "The Proclaimers",
-          "date": "1986-01-23",
-          "excerpt": "and I would walk 500 more",
-          "title": "I would walk 500 miles",
-          "url": "https://www.somefakebadgersite.com/blog_02",
-        },
-      ]
-    }
-    triedAndTestedBlogPosts={
-      Array [
-        Object {
-          "author": "The Fresh Prince",
-          "date": "1988-02-11",
-          "excerpt": "my life got flipped turned upside down",
-          "title": "this is a story all about how",
-          "url": "https://www.somefakebadgersite.com/blog_01",
-        },
-      ]
-    }
+Array [
+  <section
+    class="techSlice "
   >
-    <ScrollTracker>
-      <Social
-        altText="The sentence \\"We choose the right tech for the job\\"."
-        description="We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery."
-        metaImage="meta-image.jpg"
-        title="Technology | Red Badger"
-        url="https://red-badger.com/technology"
+    <div
+      class="techSliceIntro"
+    >
+      <h1
+        class="heading"
       >
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "summary_large_image",
-                "name": "twitter:card",
-              },
-              Object {
-                "content": "@redbadgerteam",
-                "name": "twitter:site",
-              },
-              Object {
-                "content": "Technology | Red Badger",
-                "name": "twitter:title",
-              },
-              Object {
-                "content": "We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery.",
-                "name": "twitter:description",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "name": "twitter:image",
-              },
-              Object {
-                "content": "website",
-                "property": "og:type",
-              },
-              Object {
-                "content": "Technology | Red Badger",
-                "property": "og:title",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image:secure_url",
-              },
-              Object {
-                "content": "The sentence \\"We choose the right tech for the job\\".",
-                "property": "og:image:alt",
-              },
-              Object {
-                "content": "We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery.",
-                "property": "og:description",
-              },
-              Object {
-                "content": "https://red-badger.com/technology",
-                "property": "og:url",
-              },
-            ]
-          }
-        >
-          <SideEffect(NullComponent)
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "Technology | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "Technology | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "The sentence \\"We choose the right tech for the job\\".",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/technology",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <NullComponent
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "Technology | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "Technology | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "The sentence \\"We choose the right tech for the job\\".",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "We choose the right tech for the job, have meticulous engineering practices and enable continuous delivery.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/technology",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            />
-          </SideEffect(NullComponent)>
-        </HelmetWrapper>
-      </Social>
-      <TechSlice
-        isHeading={true}
+        We love tech. But we only use what’s right for the job.
+      </h1>
+      <p
+        class="projectsBlerb"
       >
-        <section
-          className="techSlice "
+        Here is a selection of what we’ve used on recent projects.
+      </p>
+    </div>
+    <ul
+      class="techList"
+    >
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
         >
-          <div
-            className="techSliceIntro"
+          <img
+            alt="React + React Native logo"
+            class="techLogo"
+            src="react_x1.png"
+            srcset="react_x1.png 90w, react_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
           >
-            <h1
-              className="heading"
-            >
-              We love tech. But we only use what’s right for the job.
-            </h1>
-            <p
-              className="projectsBlerb"
-            >
-              Here is a selection of what we’ve used on recent projects.
-            </p>
-          </div>
-          <ul
-            className="techList"
-            onClick={[Function]}
-          >
-            <TechListItem
-              imgSrc="react_x1.png"
-              imgSrcLarge="react_x2.png"
-              name="React + React Native"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="React + React Native logo"
-                    className="techLogo"
-                    src="react_x1.png"
-                    srcSet="react_x1.png 90w, react_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    React + React Native
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="graphql_x1.png"
-              imgSrcLarge="graphql_x2.png"
-              name="GraphQL"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="GraphQL logo"
-                    className="techLogo"
-                    src="graphql_x1.png"
-                    srcSet="graphql_x1.png 90w, graphql_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    GraphQL
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="java_x1.png"
-              imgSrcLarge="java_x2.png"
-              name="Java"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="Java logo"
-                    className="techLogo"
-                    src="java_x1.png"
-                    srcSet="java_x1.png 90w, java_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    Java
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="es_x1.png"
-              imgSrcLarge="es_x2.png"
-              name="ESNext"
-              plusSymbol="plus01_x2.png"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="ESNext logo"
-                    className="techLogo"
-                    src="es_x1.png"
-                    srcSet="es_x1.png 90w, es_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    ESNext
-                  </figcaption>
-                </figure>
-                <img
-                  alt=""
-                  className="techPlusSymbol"
-                  src="plus01_x2.png"
-                />
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="flow_x1.png"
-              imgSrcLarge="flow_x2.png"
-              modifier="tall"
-              name="Flow + Typescript"
-              plusSymbol="plus02_x2.png"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="Flow + Typescript logo"
-                    className="techLogo--tall"
-                    src="flow_x1.png"
-                    srcSet="flow_x1.png 90w, flow_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    Flow + Typescript
-                  </figcaption>
-                </figure>
-                <img
-                  alt=""
-                  className="techPlusSymbol"
-                  src="plus02_x2.png"
-                />
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="nodejs_x1.png"
-              imgSrcLarge="nodejs_x2.png"
-              name="NodeJS"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="NodeJS logo"
-                    className="techLogo"
-                    src="nodejs_x1.png"
-                    srcSet="nodejs_x1.png 90w, nodejs_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    NodeJS
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-          </ul>
-          <ul
-            className="techList"
-            onClick={[Function]}
-          >
-            <TechListItem
-              imgSrc="AWS_x1.png"
-              imgSrcLarge="AWS_x2.png"
-              modifier="wide"
-              name="AWS"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="AWS logo"
-                    className="techLogo--wide"
-                    src="AWS_x1.png"
-                    srcSet="AWS_x1.png 90w, AWS_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    AWS
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="GCP_x1.png"
-              imgSrcLarge="GCP_x2.png"
-              name="GCP"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="GCP logo"
-                    className="techLogo"
-                    src="GCP_x1.png"
-                    srcSet="GCP_x1.png 90w, GCP_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    GCP
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="golang_x1.png"
-              imgSrcLarge="golang_x2.png"
-              modifier="tall"
-              name="Golang"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="Golang logo"
-                    className="techLogo--tall"
-                    src="golang_x1.png"
-                    srcSet="golang_x1.png 90w, golang_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    Golang
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="docker_x1.png"
-              imgSrcLarge="docker_x2.png"
-              modifier="wide"
-              name="Docker"
-              plusSymbol="plus03_x2.png"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="Docker logo"
-                    className="techLogo--wide"
-                    src="docker_x1.png"
-                    srcSet="docker_x1.png 90w, docker_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    Docker
-                  </figcaption>
-                </figure>
-                <img
-                  alt=""
-                  className="techPlusSymbol"
-                  src="plus03_x2.png"
-                />
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="kubernetes_x1.png"
-              imgSrcLarge="kubernetes_x2.png"
-              name="Kubernetes"
-              plusSymbol="plus04_x2.png"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="Kubernetes logo"
-                    className="techLogo"
-                    src="kubernetes_x1.png"
-                    srcSet="kubernetes_x1.png 90w, kubernetes_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    Kubernetes
-                  </figcaption>
-                </figure>
-                <img
-                  alt=""
-                  className="techPlusSymbol"
-                  src="plus04_x2.png"
-                />
-              </li>
-            </TechListItem>
-            <TechListItem
-              imgSrc="istio_x1.png"
-              imgSrcLarge="istio_x2.png"
-              name="Istio"
-            >
-              <li
-                className="techListItem"
-              >
-                <figure
-                  className="techItem"
-                >
-                  <img
-                    alt="Istio logo"
-                    className="techLogo"
-                    src="istio_x1.png"
-                    srcSet="istio_x1.png 90w, istio_x2.png 150w"
-                  />
-                  <figcaption
-                    className="techName"
-                  >
-                    Istio
-                  </figcaption>
-                </figure>
-              </li>
-            </TechListItem>
-          </ul>
-        </section>
-      </TechSlice>
-      <Component>
-        <section
-          className="yellowSlice"
+            React + React Native
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
         >
-          <div
-            className="container"
+          <img
+            alt="GraphQL logo"
+            class="techLogo"
+            src="graphql_x1.png"
+            srcset="graphql_x1.png 90w, graphql_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
           >
-            <TechLabSlice
-              linkUrl="https://hubs.ly/H0gFmpQ0"
-            >
-              <section
-                className="techLabSlice"
-              >
-                <h2
-                  className="heading heading__mobile"
-                >
-                  TechLab_Report
-                  <sup>
-                    19
-                  </sup>
-                </h2>
-                <Image
-                  alt="laboratory safety glasses"
-                  className="techLabImage"
-                  src="glasses.jpg"
-                  src2x="glassesX2.jpg"
-                  src3x="glassesX3.jpg"
-                >
-                  <picture>
-                    <source
-                      className="techLabImage"
-                      srcSet="glasses.jpg, glassesX2.jpg 2x, glassesX3.jpg 3x"
-                    />
-                    <img
-                      alt="laboratory safety glasses"
-                      className="techLabImage"
-                      src="glasses.jpg"
-                    />
-                  </picture>
-                </Image>
-                <div
-                  className="headingContainer"
-                >
-                  <h2
-                    className="heading heading__desktop"
-                  >
-                    TechLab_Report
-                    <sup>
-                      19
-                    </sup>
-                    <br />
-                    – our view on what matters in tech
-                  </h2>
-                  <p>
-                    Our view on what matters in tech
-                  </p>
-                  <a
-                    className="exploreBtn"
-                    href="https://hubs.ly/H0gFmpQ0"
-                  >
-                    Explore the report
-                  </a>
-                </div>
-              </section>
-            </TechLabSlice>
-          </div>
-        </section>
-      </Component>
+            GraphQL
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Java logo"
+            class="techLogo"
+            src="java_x1.png"
+            srcset="java_x1.png 90w, java_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Java
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="ESNext logo"
+            class="techLogo"
+            src="es_x1.png"
+            srcset="es_x1.png 90w, es_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            ESNext
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus01_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Flow + Typescript logo"
+            class="techLogo--tall"
+            src="flow_x1.png"
+            srcset="flow_x1.png 90w, flow_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Flow + Typescript
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus02_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="NodeJS logo"
+            class="techLogo"
+            src="nodejs_x1.png"
+            srcset="nodejs_x1.png 90w, nodejs_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            NodeJS
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <ul
+      class="techList"
+    >
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="AWS logo"
+            class="techLogo--wide"
+            src="AWS_x1.png"
+            srcset="AWS_x1.png 90w, AWS_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            AWS
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="GCP logo"
+            class="techLogo"
+            src="GCP_x1.png"
+            srcset="GCP_x1.png 90w, GCP_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            GCP
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Golang logo"
+            class="techLogo--tall"
+            src="golang_x1.png"
+            srcset="golang_x1.png 90w, golang_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Golang
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Docker logo"
+            class="techLogo--wide"
+            src="docker_x1.png"
+            srcset="docker_x1.png 90w, docker_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Docker
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus03_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Kubernetes logo"
+            class="techLogo"
+            src="kubernetes_x1.png"
+            srcset="kubernetes_x1.png 90w, kubernetes_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Kubernetes
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus04_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Istio logo"
+            class="techLogo"
+            src="istio_x1.png"
+            srcset="istio_x1.png 90w, istio_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Istio
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>,
+  <section
+    class="yellowSlice"
+  >
+    <div
+      class="container"
+    >
       <section
-        className="pastAndFuture"
+        class="techLabSlice"
       >
-        <div
-          className="leftBlogs"
+        <h2
+          class="heading heading__mobile"
         >
-          <BlogSlice
-            blogPosts={
-              Array [
-                Object {
-                  "author": "The Fresh Prince",
-                  "date": "1988-02-11",
-                  "excerpt": "my life got flipped turned upside down",
-                  "title": "this is a story all about how",
-                  "url": "https://www.somefakebadgersite.com/blog_01",
-                },
-              ]
-            }
-            title="Tried and tested"
-          >
-            <section
-              className="blogSlice "
-            >
-              <div
-                className="sliceContainer"
-              >
-                <h2
-                  className="blogSliceTitle"
-                >
-                  Tried and tested
-                </h2>
-                <ul
-                  className="blogLinkList "
-                >
-                  <BlogEntry
-                    blogPost={
-                      Object {
-                        "author": "The Fresh Prince",
-                        "date": "1988-02-11",
-                        "excerpt": "my life got flipped turned upside down",
-                        "title": "this is a story all about how",
-                        "url": "https://www.somefakebadgersite.com/blog_01",
-                      }
-                    }
-                    key="https://www.somefakebadgersite.com/blog_01"
-                  >
-                    <li>
-                      <a
-                        className="link"
-                        href="https://www.somefakebadgersite.com/blog_01"
-                      >
-                        <div
-                          className="authorTitle"
-                        >
-                          <span
-                            className="linkAuthor "
-                          >
-                            The Fresh Prince
-                          </span>
-                           
-                          <span
-                            className="publishTime"
-                          >
-                            31 years ago
-                          </span>
-                        </div>
-                        <div
-                          className="linkEntry"
-                        >
-                          <div
-                            className="linkTitle "
-                          >
-                            <h3>
-                              this is a story all about how
-                            </h3>
-                          </div>
-                          <p
-                            className="excerpt"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "my life got flipped turned upside down",
-                              }
-                            }
-                          />
-                        </div>
-                      </a>
-                    </li>
-                  </BlogEntry>
-                </ul>
-              </div>
-            </section>
-          </BlogSlice>
-        </div>
+          TechLab_Report
+          <sup>
+            19
+          </sup>
+        </h2>
+        <picture>
+          <source
+            class="techLabImage"
+            srcset="glasses.jpg, glassesX2.jpg 2x, glassesX3.jpg 3x"
+          />
+          <img
+            alt="laboratory safety glasses"
+            class="techLabImage"
+            src="glasses.jpg"
+          />
+        </picture>
         <div
-          className="rightBlogs"
+          class="headingContainer"
         >
-          <BlogSlice
-            altStyle={true}
-            blogPosts={
-              Array [
-                Object {
-                  "author": "The Proclaimers",
-                  "date": "1986-01-23",
-                  "excerpt": "and I would walk 500 more",
-                  "title": "I would walk 500 miles",
-                  "url": "https://www.somefakebadgersite.com/blog_02",
-                },
-              ]
-            }
-            title="Growing trends"
+          <h2
+            class="heading heading__desktop"
           >
-            <section
-              className="blogSlice blogSliceRight"
-            >
-              <div
-                className="sliceContainer"
-              >
-                <h2
-                  className="blogSliceTitle"
-                >
-                  Growing trends
-                </h2>
-                <ul
-                  className="blogLinkList blogLinkListRight"
-                >
-                  <BlogEntry
-                    altStyle={true}
-                    blogPost={
-                      Object {
-                        "author": "The Proclaimers",
-                        "date": "1986-01-23",
-                        "excerpt": "and I would walk 500 more",
-                        "title": "I would walk 500 miles",
-                        "url": "https://www.somefakebadgersite.com/blog_02",
-                      }
-                    }
-                    key="https://www.somefakebadgersite.com/blog_02"
-                  >
-                    <li>
-                      <a
-                        className="link"
-                        href="https://www.somefakebadgersite.com/blog_02"
-                      >
-                        <div
-                          className="authorTitle"
-                        >
-                          <span
-                            className="linkAuthor linkAuthorBlack"
-                          >
-                            The Proclaimers
-                          </span>
-                           
-                          <span
-                            className="publishTime"
-                          >
-                            33 years ago
-                          </span>
-                        </div>
-                        <div
-                          className="linkEntry"
-                        >
-                          <div
-                            className="linkTitle linkTitleBlack"
-                          >
-                            <h3>
-                              I would walk 500 miles
-                            </h3>
-                          </div>
-                          <p
-                            className="excerpt"
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "and I would walk 500 more",
-                              }
-                            }
-                          />
-                        </div>
-                      </a>
-                    </li>
-                  </BlogEntry>
-                </ul>
-              </div>
-            </section>
-          </BlogSlice>
+            TechLab_Report
+            <sup>
+              19
+            </sup>
+            <br />
+            – our view on what matters in tech
+          </h2>
+          <p>
+            Our view on what matters in tech
+          </p>
+          <a
+            class="exploreBtn"
+            href="https://hubs.ly/H0gFmpQ0"
+          >
+            Explore the report
+          </a>
         </div>
       </section>
-      <_default>
-        <section
-          className="webinar"
+    </div>
+  </section>,
+  <section
+    class="pastAndFuture"
+  >
+    <div
+      class="leftBlogs"
+    >
+      <section
+        class="blogSlice "
+      >
+        <div
+          class="sliceContainer"
         >
-          <div
-            className="webinarInner"
+          <h2
+            class="blogSliceTitle"
           >
-            <h2
-              className="webinarText"
-            >
-              Did you miss our tech webinars on Serverless, GraphQL and more?
-            </h2>
-            <HubspotButton
-              gaTracking={[Function]}
-              hubspotName="webinar"
-            >
-              <div
-                className="hubspotBtn webinarBtnWrapper"
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<!--HubSpot Call-to-Action Code --><span class=\\"hs-cta-wrapper\\" id=\\"hs-cta-wrapper-c87452af-5599-4904-a20c-7d9d48886193\\"><span class=\\"hs-cta-node hs-cta-c87452af-5599-4904-a20c-7d9d48886193\\" id=\\"hs-cta-c87452af-5599-4904-a20c-7d9d48886193\\"><!--[if lte IE 8]><div id=\\"hs-cta-ie-element\\"></div><![endif]--><a href=\\"https://cta-redirect.hubspot.com/cta/redirect/4210858/c87452af-5599-4904-a20c-7d9d48886193\\"  target=\\"_blank\\" ><img class=\\"hs-cta-img\\" id=\\"hs-cta-img-c87452af-5599-4904-a20c-7d9d48886193\\" style=\\"border-width:0px;\\" height=\\"112\\" width=\\"448\\" src=\\"https://no-cache.hubspot.com/cta/default/4210858/c87452af-5599-4904-a20c-7d9d48886193.png\\"  alt=\\"Watch them now\\"/></a></span><script charset=\\"utf-8\\" src=\\"https://js.hscta.net/cta/current.js\\"></script><script type=\\"text/javascript\\"> hbspt.cta.load(4210858, 'c87452af-5599-4904-a20c-7d9d48886193', {}); </script></span><!-- end HubSpot Call-to-Action Code -->",
-                  }
-                }
-                onClick={[Function]}
-              />
-            </HubspotButton>
-          </div>
-        </section>
-      </_default>
-      <_temp>
-        <Checklist
-          isHovered={false}
-          listItems={
-            Array [
-              "Navigate the open source revolution",
-              "Choose the right tech for the job",
-              "Adopt meticulous engineering practices",
-              "Enable continuous deployment",
-              "Increase speed to market",
-              "Create value for your customers",
-            ]
-          }
-          onBlur={[Function]}
-          onHover={[Function]}
-        >
-          <section
-            className="contactUsContainer"
-            id="contactUs"
+            Tried and tested
+          </h2>
+          <ul
+            class="blogLinkList "
           >
-            <h2
-              className="header"
-            >
-              We can help you
-            </h2>
-            <div
-              className="contentContainer"
-            >
-              <ul
-                className="list"
-              >
-                <li
-                  className="item"
-                  key="Navigate the open source revolution"
-                >
-                  Navigate the open source revolution
-                </li>
-                <li
-                  className="item"
-                  key="Choose the right tech for the job"
-                >
-                  Choose the right tech for the job
-                </li>
-                <li
-                  className="item"
-                  key="Adopt meticulous engineering practices"
-                >
-                  Adopt meticulous engineering practices
-                </li>
-                <li
-                  className="item"
-                  key="Enable continuous deployment"
-                >
-                  Enable continuous deployment
-                </li>
-                <li
-                  className="item"
-                  key="Increase speed to market"
-                >
-                  Increase speed to market
-                </li>
-                <li
-                  className="item"
-                  key="Create value for your customers"
-                >
-                  Create value for your customers
-                </li>
-              </ul>
-              <div
-                className="imgContainer"
-              />
-            </div>
-            <div>
+            <li>
               <a
-                className="mailToLink"
-                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
+                class="link"
+                href="https://www.somefakebadgersite.com/blog_01"
               >
-                Send an email
+                <div
+                  class="authorTitle"
+                >
+                  <span
+                    class="linkAuthor "
+                  >
+                    The Fresh Prince
+                  </span>
+                   
+                  <span
+                    class="publishTime"
+                  >
+                    31 years ago
+                  </span>
+                </div>
+                <div
+                  class="linkEntry"
+                >
+                  <div
+                    class="linkTitle "
+                  >
+                    <h3>
+                      this is a story all about how
+                    </h3>
+                  </div>
+                  <p
+                    class="excerpt"
+                  >
+                    my life got flipped turned upside down
+                  </p>
+                </div>
               </a>
-              <span
-                className="talkToUs"
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div
+      class="rightBlogs"
+    >
+      <section
+        class="blogSlice blogSliceRight"
+      >
+        <div
+          class="sliceContainer"
+        >
+          <h2
+            class="blogSliceTitle"
+          >
+            Growing trends
+          </h2>
+          <ul
+            class="blogLinkList blogLinkListRight"
+          >
+            <li>
+              <a
+                class="link"
+                href="https://www.somefakebadgersite.com/blog_02"
               >
-                hello@red-badger.com
-              </span>
-            </div>
-          </section>
-        </Checklist>
-      </_temp>
-    </ScrollTracker>
-  </TechnologyPage>
-</Context>
+                <div
+                  class="authorTitle"
+                >
+                  <span
+                    class="linkAuthor linkAuthorBlack"
+                  >
+                    The Proclaimers
+                  </span>
+                   
+                  <span
+                    class="publishTime"
+                  >
+                    33 years ago
+                  </span>
+                </div>
+                <div
+                  class="linkEntry"
+                >
+                  <div
+                    class="linkTitle linkTitleBlack"
+                  >
+                    <h3>
+                      I would walk 500 miles
+                    </h3>
+                  </div>
+                  <p
+                    class="excerpt"
+                  >
+                    and I would walk 500 more
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </section>,
+  <section
+    class="webinar"
+  >
+    <div
+      class="webinarInner"
+    >
+      <h2
+        class="webinarText"
+      >
+        Did you miss our tech webinars on Serverless, GraphQL and more?
+      </h2>
+      <div
+        class="hubspotBtn webinarBtnWrapper"
+      >
+        <span
+          class="hs-cta-wrapper"
+          id="hs-cta-wrapper-c87452af-5599-4904-a20c-7d9d48886193"
+        >
+          <span
+            class="hs-cta-node hs-cta-c87452af-5599-4904-a20c-7d9d48886193"
+            id="hs-cta-c87452af-5599-4904-a20c-7d9d48886193"
+          >
+            <a
+              href="https://cta-redirect.hubspot.com/cta/redirect/4210858/c87452af-5599-4904-a20c-7d9d48886193"
+              target="_blank"
+            >
+              <img
+                alt="Watch them now"
+                class="hs-cta-img"
+                height="112"
+                id="hs-cta-img-c87452af-5599-4904-a20c-7d9d48886193"
+                src="https://no-cache.hubspot.com/cta/default/4210858/c87452af-5599-4904-a20c-7d9d48886193.png"
+                style="border-width:0px;"
+                width="448"
+              />
+            </a>
+          </span>
+        </span>
+      </div>
+    </div>
+  </section>,
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Navigate the open source revolution
+        </li>
+        <li
+          class="item"
+        >
+          Choose the right tech for the job
+        </li>
+        <li
+          class="item"
+        >
+          Adopt meticulous engineering practices
+        </li>
+        <li
+          class="item"
+        >
+          Enable continuous deployment
+        </li>
+        <li
+          class="item"
+        >
+          Increase speed to market
+        </li>
+        <li
+          class="item"
+        >
+          Create value for your customers
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>,
+]
 `;

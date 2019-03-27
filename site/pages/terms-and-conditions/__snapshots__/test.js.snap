@@ -1,3854 +1,1743 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/terms-and-conditions renders correctly 1`] = `
-<Context>
-  <TermAndConditionsPage
-    effectiveDate="7 of June 2018"
-    policies={
-      Array [
-        Object {
-          "heading": "Introduction",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "About Red Badger",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "Changes to the Red Badger Website Terms",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "Information use only",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "We may suspend or withdraw our Websites",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "You must keep your account details",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "How you may use material on our Websites",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "We are not responsible for websites we link to",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "User-generated content is not approved by us",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "body": [Function],
-          "heading": "Our responsibility for loss or damage suffered by you",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "How we may use your personal data",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "Uploading content to our Websites",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "Rights you are giving us to use material you upload",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "We are not responsible for viruses and you must not introduce them",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "Rules about linking to our Websites",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "Which country's laws apply to any disputes?",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-        Object {
-          "heading": "Our trade mark is registered",
-          "statements": Array [
-            Object {
-              "body": [Function],
-            },
-          ],
-        },
-      ]
-    }
-    social={
-      Object {
-        "altText": "Red Badger logo",
-        "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-        "metaImage": "",
-        "title": "Red Badger",
-        "url": "terms-and-conditions",
-      }
-    }
-    title="Website Terms"
+<div
+  class="container"
+>
+  <h1
+    class="fontL mb10"
   >
-    <Policy
-      effectiveDate="7 of June 2018"
-      policies={
-        Array [
-          Object {
-            "heading": "Introduction",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "About Red Badger",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "Changes to the Red Badger Website Terms",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "Information use only",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "We may suspend or withdraw our Websites",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "You must keep your account details",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "How you may use material on our Websites",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "We are not responsible for websites we link to",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "User-generated content is not approved by us",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "body": [Function],
-            "heading": "Our responsibility for loss or damage suffered by you",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "How we may use your personal data",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "Uploading content to our Websites",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "Rights you are giving us to use material you upload",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "We are not responsible for viruses and you must not introduce them",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "Rules about linking to our Websites",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "Which country's laws apply to any disputes?",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-          Object {
-            "heading": "Our trade mark is registered",
-            "statements": Array [
-              Object {
-                "body": [Function],
-              },
-            ],
-          },
-        ]
-      }
-      social={
-        Object {
-          "altText": "Red Badger logo",
-          "description": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-          "metaImage": "meta-image.jpg",
-          "title": "Red Badger",
-          "url": "terms-and-conditions",
-        }
-      }
-      title="Website Terms"
-    >
-      <Social
-        altText="Red Badger logo"
-        description="Let’s make things better. We are digital transformation experts who innovate and deliver."
-        metaImage="meta-image.jpg"
-        title="Red Badger"
-        url="terms-and-conditions"
-      >
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "summary_large_image",
-                "name": "twitter:card",
-              },
-              Object {
-                "content": "@redbadgerteam",
-                "name": "twitter:site",
-              },
-              Object {
-                "content": "Red Badger",
-                "name": "twitter:title",
-              },
-              Object {
-                "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-                "name": "twitter:description",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "name": "twitter:image",
-              },
-              Object {
-                "content": "website",
-                "property": "og:type",
-              },
-              Object {
-                "content": "Red Badger",
-                "property": "og:title",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image:secure_url",
-              },
-              Object {
-                "content": "Red Badger logo",
-                "property": "og:image:alt",
-              },
-              Object {
-                "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-                "property": "og:description",
-              },
-              Object {
-                "content": "terms-and-conditions",
-                "property": "og:url",
-              },
-            ]
-          }
-        >
-          <SideEffect(NullComponent)
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "Red Badger logo",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "terms-and-conditions",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <NullComponent
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "Red Badger logo",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "Let’s make things better. We are digital transformation experts who innovate and deliver.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "terms-and-conditions",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            />
-          </SideEffect(NullComponent)>
-        </HelmetWrapper>
-      </Social>
+    Website Terms
+  </h1>
+  <p
+    class="effectiveDate"
+  >
+    Effective as from: 7 of June 2018
+  </p>
+  <ol>
+    <li>
       <div
-        className="container"
+        class="box"
       >
-        <H1
-          customClass="mb10"
-          type="fontL"
+        <div
+          class="numberContainer"
         >
-          <h1
-            className="fontL mb10"
+          <span
+            class="number"
           >
-            Website Terms
-          </h1>
-        </H1>
-        <p
-          className="effectiveDate"
+            01
+          </span>
+        </div>
+        <div
+          class=""
         >
-          Effective as from: 
-          7 of June 2018
-        </p>
-        <ol>
-          <PolicyBox
-            heading="Introduction"
-            key="Introduction"
-            policyIndex={1}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
+          <h2
+            class="fontM2 mb10"
           >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    01
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Introduction
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={1}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={1}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          1.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              These Website Terms tell individuals (“
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  you
-                                </b>
-                              </B>
-                              ”, “
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  your
-                                </b>
-                              </B>
-                              ”) the rules that govern the access and/or use of 
-                              <a
-                                href="https://red-badger.com"
-                              >
-                                red-badger.com
-                              </a>
-                              ,
-                               
-                              <a
-                                href="https://react.london"
-                              >
-                                react.london
-                              </a>
-                              ,
-                               
-                              <a
-                                href="https://meetup.react.london"
-                              >
-                                meetup.react.london
-                              </a>
-                               (“
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  Websites
-                                </b>
-                              </B>
-                              ”).
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={1}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          1.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              These Website Terms are part of, and are subject to, our
-                               
-                              <Link
-                                to="privacyPolicy"
-                              >
-                                <NavigationLink
-                                  className=""
-                                  navigating={[Function]}
-                                  stateKey="privacyPolicy"
-                                >
-                                  <a
-                                    className=""
-                                    href={null}
-                                    onClick={[Function]}
-                                  >
-                                    Privacy Statement
-                                  </a>
-                                </NavigationLink>
-                              </Link>
-                               and our
-                               
-                              <Link
-                                to="cookiePolicy"
-                              >
-                                <NavigationLink
-                                  className=""
-                                  navigating={[Function]}
-                                  stateKey="cookiePolicy"
-                                >
-                                  <a
-                                    className=""
-                                    href={null}
-                                    onClick={[Function]}
-                                  >
-                                    Cookies Policy
-                                  </a>
-                                </NavigationLink>
-                              </Link>
-                              . By accessing or using our (“
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  Websites
-                                </b>
-                              </B>
-                              ”), you confirm that you accept these Website Terms.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="About Red Badger"
-            key="About Red Badger"
-            policyIndex={2}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    02
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      About Red Badger
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={2}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={2}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          2.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Our Websites are owned and operated by Red Badger Consulting Limited (“
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  Red Badger
-                                </b>
-                              </B>
-                              ”, “
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  we
-                                </b>
-                              </B>
-                              ”, “
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  us
-                                </b>
-                              </B>
-                              ” or “
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  our
-                                </b>
-                              </B>
-                              ”)
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={2}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          2.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We are a company registered in England and Wales under registration number 7242017. Our registered office and principal place of business is at 4th Floor, 2 Old Street Yard, London, England, EC1Y 8AF.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={2}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          2.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You can contact us by (a) post, to 4th Floor, 2 Old Street Yard, London, England, EC1Y 8AF, (b) telephone, on 0203 567 0555, or (c) email, using the following email address:
-                               
-                              <a
-                                href="mailto:hello@red-badger.com"
-                              >
-                                hello@red-badger.com
-                              </a>
-                              .
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="Changes to the Red Badger Website Terms"
-            key="Changes to the Red Badger Website Terms"
-            policyIndex={3}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    03
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Changes to the Red Badger Website Terms
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={3}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={3}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          3.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We may update the Red Badger Website Terms from time to time by publishing a new version here at
-                               
-                              <a
-                                href="https://red-badger.com/terms-and-conditions"
-                              >
-                                red-badger.com/terms-and-conditions
-                              </a>
-                              . If we make changes to this Website Terms, we will post the revised Website Terms here at
-                               
-                              <a
-                                href="https://red-badger.com/terms-and-conditions"
-                              >
-                                red-badger.com/terms-and-conditions
-                              </a>
-                               
-                              and update the “Effective Date” date at the top of this Website Terms.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={3}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          3.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Please check
-                               
-                              <a
-                                href="https://red-badger.com/terms-and-conditions"
-                              >
-                                red-badger.com/terms-and-conditions
-                              </a>
-                               
-                              regularly for any such changes.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="Information use only"
-            key="Information use only"
-            policyIndex={4}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    04
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Information use only
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={4}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={4}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          4.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              The content on our Websites are provided for general information only. It is not intended to amount to advice on which you (and/or others) should rely. You must obtain professional and/or specialist advice before taking, and/or refraining from, any action on the basis of the content on our Website.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={4}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          4.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Although we make reasonable efforts to update the information on our Websites, we make no representations, warranties and/or guarantees, whether express or implied, that the content on our Websites are accurate, complete and/or up to date. Our content is provided as-is.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="We may suspend or withdraw our Websites"
-            key="We may suspend or withdraw our Websites"
-            policyIndex={5}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    05
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      We may suspend or withdraw our Websites
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={5}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={5}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          5.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Our Websites are made available free of charge.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={5}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          5.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We do not guarantee that our Websites, and/or any content on it, will always be available and/or be uninterrupted. We may suspend and/or withdraw and/or restrict the availability of all and/or any part of our Website for any reason whatsoever in our sole and absolute discretion. We will try to give you reasonable notice of any suspension and/or withdrawal.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={5}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          5.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You are also responsible for ensuring that all persons who access our Websites through your internet connection are aware of these Website Terms and other applicable terms and conditions, and that they comply with them.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="You must keep your account details"
-            key="You must keep your account details"
-            policyIndex={6}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    06
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      You must keep your account details
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={6}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={6}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          6.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              If you choose, or you are provided with, a user identification code, password or any other piece of information as part of our security procedures, you must treat such information as confidential. You must not disclose it to any third party.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={6}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          6.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our reasonable opinion you have failed to comply with any of the provisions of these Website Terms and/or applicable laws.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={6}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          6.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              If you know or suspect that anyone other than you knows your user identification code or password, you must promptly notify us at:
-                               
-                              <a
-                                href="mailto:hello@red-badger.com"
-                              >
-                                hello@red-badger.com
-                              </a>
-                              .
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="How you may use material on our Websites"
-            key="How you may use material on our Websites"
-            policyIndex={7}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    07
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      How you may use material on our Websites
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={7}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={7}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          7.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We are the owner or the licensee of all intellectual property rights in our Website, and in the material published on it. Those works are protected by copyright laws and treaties around the world. All such rights are reserved.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={7}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          7.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You may print off one copy, and may download extracts, of any page(s) from our Website for your personal use and you may draw the attention of others within your organisation to content posted on our Websites.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={7}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          7.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You must not modify the paper and/or digital copies of any materials you have printed off or downloaded in any way, and you must not use any illustrations, photographs, video and/or audio sequences and/or any graphics separately from any accompanying text.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-3"
-                    policyIndex={7}
-                    statementIndex={4}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          7.4
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Our status (and that of any identified contributors) as the authors of content on our Websites must always be acknowledged.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-4"
-                    policyIndex={7}
-                    statementIndex={5}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          7.5
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You must not use any part of the content on our Websites for commercial purposes without obtaining a licence to do so from us or our licensors.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-5"
-                    policyIndex={7}
-                    statementIndex={6}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          7.6
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              If you print off, copy and/or download any part of our Websites in breach of these Website Terms and/or applicable laws, your right to use our Website will cease immediately and you must, at our option, return or destroy any copies of the materials you have made.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="We are not responsible for websites we link to"
-            key="We are not responsible for websites we link to"
-            policyIndex={8}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    08
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      We are not responsible for websites we link to
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={8}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={8}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          8.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Where our Websites contain links to other sites and resources provided by third parties, these links are provided for your information only. Such links should not be interpreted as approval by us of those linked websites or information you may obtain from them.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={8}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          8.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We have no control over the contents of those sites or resources.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="User-generated content is not approved by us"
-            key="User-generated content is not approved by us"
-            policyIndex={9}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    09
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      User-generated content is not approved by us
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={9}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={9}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          9.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Our Websites may include information and materials uploaded by other users of the Websites. This information and these materials have not been verified and/or approved by us. The views expressed by other users on our Websites do not represent Red Badger, our views and/or values.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={9}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          9.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              If you wish to complain about information and materials uploaded by other users please contact us at 
-                              <a
-                                href="mailto:hello@red-badger.com"
-                              >
-                                hello@red-badger.com
-                              </a>
-                              .
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            body={[Function]}
-            heading="Our responsibility for loss or damage suffered by you"
-            key="Our responsibility for loss or damage suffered by you"
-            policyIndex={10}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    10
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Our responsibility for loss or damage suffered by you
-                    </h2>
-                  </H2>
-                  <SerifH3>
-                    <h3
-                      className="largeSimpleHeading"
-                    >
-                      Whether you are a consumer or a business user
-                    </h3>
-                  </SerifH3>
-                </div>
-              </div>
-              <Statements
-                policyIndex={10}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={10}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          10.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We do not exclude and/or limit in any way our liability to you where it would be unlawful to do so. This includes (for example) liability for death or personal injury caused by our negligence or the negligence of our employees, agents or subcontractors and for fraud or fraudulent misrepresentation.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={10}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          10.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P
-                          customClass="mb20"
-                        >
-                          <P
-                            customClass="mb20"
-                          >
-                            <p
-                              className="fontXS mb20"
-                            >
-                              Different limitations and exclusions of liability will apply to liability arising as a result of the supply by us of software, goods and/or services to you. These limitations and exclusions of liability are set out in our terms and conditions of supply.
-                            </p>
-                          </P>
-                        </P>
-                        <H3>
-                          <h3
-                            className="simpleHeading"
-                          >
-                            If you are a business user
-                          </h3>
-                        </H3>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={10}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          10.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We exclude all implied conditions, warranties, undertaking, guaranties, representations and/or other terms that may apply to our Websites and/or any content them.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-3"
-                    policyIndex={10}
-                    statementIndex={4}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          10.4
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We will not be liable to you for any loss and/or damage, whether in contract, tort (including negligence), breach of statutory duty, and/or otherwise, even if foreseeable, arising under and/or in connection with your:
-                            </p>
-                          </P>
-                        </P>
-                        <PolicyList>
-                          <ul
-                            className="policyList"
-                          >
-                            <li>
-                              use of, and/or inability to use, our Websites; and/or
-                            </li>
-                            <li>
-                              use of and/or reliance on any content displayed on our Websites.
-                            </li>
-                          </ul>
-                        </PolicyList>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-4"
-                    policyIndex={10}
-                    statementIndex={5}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          10.5
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We will not be liable for:
-                            </p>
-                          </P>
-                        </P>
-                        <PolicyList>
-                          <ul
-                            className="policyList"
-                          >
-                            <li>
-                              loss of profits, sales, business, and/or revenue;
-                            </li>
-                            <li>
-                              business interruption;
-                            </li>
-                            <li>
-                              loss of anticipated savings;
-                            </li>
-                            <li>
-                              loss of business opportunity, goodwill and/or reputation; and/or
-                            </li>
-                            <li
-                              className="mb20"
-                            >
-                              any indirect and/or consequential loss and/or damage.
-                            </li>
-                          </ul>
-                        </PolicyList>
-                        <H3>
-                          <h3
-                            className="simpleHeading"
-                          >
-                            If you are a consumer user
-                          </h3>
-                        </H3>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-5"
-                    policyIndex={10}
-                    statementIndex={6}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          10.6
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Please note that we only provide our Websites for domestic and private use. You agree not to use our Websites for any commercial and/or business purposes, and we have no liability to you for any loss of profit, loss of business, business interruption, and/or loss of business opportunity.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="How we may use your personal data"
-            key="How we may use your personal data"
-            policyIndex={11}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    11
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      How we may use your personal data
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={11}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={11}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          11.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We will only use your personal data as set out in our
-                               
-                              <Link
-                                to="privacyPolicy"
-                              >
-                                <NavigationLink
-                                  className=""
-                                  navigating={[Function]}
-                                  stateKey="privacyPolicy"
-                                >
-                                  <a
-                                    className=""
-                                    href={null}
-                                    onClick={[Function]}
-                                  >
-                                    Privacy Statement
-                                  </a>
-                                </NavigationLink>
-                              </Link>
-                              .
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="Uploading content to our Websites"
-            key="Uploading content to our Websites"
-            policyIndex={12}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    12
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Uploading content to our Websites
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={12}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={12}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          12.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You warrant, represent and undertake that any content you upload and/or post to our Websites complies with these Website Terms and/or applicable laws, and you will be liable to us and indemnify us for any and/or all breaches of that warranty. This means you will be responsible for any loss and/or damage we suffer as a result of your breach of this warranty.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={12}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          12.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Any content you upload and/or post to our Websites will be considered non-confidential and non-proprietary. You retain all of your ownership rights in your content, but you are required to grant us the licence described in section 13 below.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={12}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          12.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We also have the right to disclose your identity to any third party who is claiming that any content posted and/or uploaded by you to our Websites constitutes a violation of applicable laws and/or their rights including (but not limited to) intellectual property and/or data protection rights.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-3"
-                    policyIndex={12}
-                    statementIndex={4}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          12.4
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We have the right to remove any posting you make on our Websites for any reason whatsoever in our sole and absolute discretion.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-4"
-                    policyIndex={12}
-                    statementIndex={5}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          12.5
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You are solely responsible for securing and backing up your content.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="Rights you are giving us to use material you upload"
-            key="Rights you are giving us to use material you upload"
-            policyIndex={13}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    13
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Rights you are giving us to use material you upload
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={13}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={13}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          13.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              By uploading and/or posting content to our Websites, you hereby grant us a non-exclusive, worldwide, royalty-free, irrevocable, perpetual (or for the term of the protection), sub-licensable, paid up, assignable and transferable license to such content to access, use, store, copy, modify, prepare derivative works of, distribute, publish, transmit, stream, broadcast, allow others to access and use, and otherwise exploit in any manner such content to provide and/or promote our Websites and/or Red Badger as we deem necessary and/or desirable from time to time, in any media and/or platform.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="We are not responsible for viruses and you must not introduce them"
-            key="We are not responsible for viruses and you must not introduce them"
-            policyIndex={14}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    14
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      We are not responsible for viruses and you must not introduce them
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={14}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={14}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          14.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We do not guarantee that our Websites will be secure and/ or free from bugs and/or viruses.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={14}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          14.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You are responsible for configuring your information technology, computer programmes and platform to access our Websites. You should use your own virus protection software.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={14}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          14.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You must not misuse our Websites by knowingly introducing viruses, trojans, worms, logic bombs and/or other material that is malicious or technologically harmful. You must not attempt to gain unauthorised access to our Website, the server on which our Websites are stored and/or any server, computer and/or database connected to our Websites. You must not attack our Websites via a denial-of-service attack or a distributed denial-of service attack. By breaching this provision, you would commit a criminal offence under the Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use our Websites will cease immediately.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="Rules about linking to our Websites"
-            key="Rules about linking to our Websites"
-            policyIndex={15}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    15
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Rules about linking to our Websites
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={15}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={15}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          15.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You may link to our home pages, provided you do so in a way that is fair and legal and does not damage our reputation and/or take advantage of it.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={15}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          15.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You must not establish a link in such a way as to suggest any form of association, approval and/or endorsement on our part where none exists.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-2"
-                    policyIndex={15}
-                    statementIndex={3}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          15.3
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              You must not establish a link to our Website in any website that is not owned by you.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-3"
-                    policyIndex={15}
-                    statementIndex={4}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          15.4
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              Our Websites must not be framed on any other site, nor may you create a link to any part of our Websites other than the home page.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-4"
-                    policyIndex={15}
-                    statementIndex={5}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          15.5
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              We reserve the right to withdraw linking permission without notice.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-5"
-                    policyIndex={15}
-                    statementIndex={6}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          15.6
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              If you wish to link to or make any use of content on our Websites other than that set out above, please contact 
-                              <a
-                                href="mailto:hello@red-badger.com"
-                              >
-                                hello@red-badger.com
-                              </a>
-                              .
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="Which country's laws apply to any disputes?"
-            key="Which country's laws apply to any disputes?"
-            policyIndex={16}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    16
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Which country's laws apply to any disputes?
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={16}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={16}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          16.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              If you are a consumer, please note that these Website Terms, their subject matter and their formation (and any non-contractual disputes or claims), are governed by English law. You and we both agree that the courts of England will have exclusive jurisdiction except that if you are a resident of Northern Ireland you may also bring proceedings in Northern Ireland, and if you are resident of Scotland, you may also bring proceedings in Scotland.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                  <Statement
-                    body={[Function]}
-                    key="statement-1"
-                    policyIndex={16}
-                    statementIndex={2}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          16.2
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              If you are a business, these Website Terms, their subject matter and their formation (and any non-contractual disputes or claims) are governed by English law. We both agree to the exclusive jurisdiction of the courts of England.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-          <PolicyBox
-            heading="Our trade mark is registered"
-            key="Our trade mark is registered"
-            policyIndex={17}
-            statements={
-              Array [
-                Object {
-                  "body": [Function],
-                },
-              ]
-            }
-          >
-            <li>
-              <div
-                className="box"
-              >
-                <div
-                  className="numberContainer"
-                >
-                  <span
-                    className="number"
-                  >
-                    17
-                  </span>
-                </div>
-                <div
-                  className=""
-                >
-                  <H2
-                    customClass="mb10"
-                    type="fontM2"
-                  >
-                    <h2
-                      className="fontM2 mb10"
-                    >
-                      Our trade mark is registered
-                    </h2>
-                  </H2>
-                </div>
-              </div>
-              <Statements
-                policyIndex={17}
-                statements={
-                  Array [
-                    Object {
-                      "body": [Function],
-                    },
-                  ]
-                }
-              >
-                <ol>
-                  <Statement
-                    body={[Function]}
-                    key="statement-0"
-                    policyIndex={17}
-                    statementIndex={1}
-                  >
-                    <li
-                      className="box"
-                    >
-                      <div
-                        className="numberContainer"
-                      >
-                        <span
-                          className="statementNumber"
-                        >
-                          17.1
-                        </span>
-                      </div>
-                      <div
-                        className="policyText"
-                      >
-                        <P>
-                          <P
-                            customClass="mb10"
-                          >
-                            <p
-                              className="fontXS mb10"
-                            >
-                              “
-                              <B>
-                                <b
-                                  className="policyTextBold"
-                                >
-                                  RED BADGER
-                                </b>
-                              </B>
-                              ” is a UK registered trade mark (UK UK00003056439) of Red Badger Consulting Limited. You are not permitted to use this trade mark without our prior written approval.
-                            </p>
-                          </P>
-                        </P>
-                      </div>
-                    </li>
-                  </Statement>
-                </ol>
-              </Statements>
-            </li>
-          </PolicyBox>
-        </ol>
+            Introduction
+          </h2>
+        </div>
       </div>
-    </Policy>
-  </TermAndConditionsPage>
-</Context>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              1.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              These Website Terms tell individuals (“
+              <b
+                class="policyTextBold"
+              >
+                you
+              </b>
+              ”, “
+              <b
+                class="policyTextBold"
+              >
+                your
+              </b>
+              ”) the rules that govern the access and/or use of 
+              <a
+                href="https://red-badger.com"
+              >
+                red-badger.com
+              </a>
+              , 
+              <a
+                href="https://react.london"
+              >
+                react.london
+              </a>
+              , 
+              <a
+                href="https://meetup.react.london"
+              >
+                meetup.react.london
+              </a>
+               (“
+              <b
+                class="policyTextBold"
+              >
+                Websites
+              </b>
+              ”).
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              1.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              These Website Terms are part of, and are subject to, our 
+              <a
+                class=""
+                href="/privacy-policy"
+              >
+                Privacy Statement
+              </a>
+               and our 
+              <a
+                class=""
+                href="/cookie-policy"
+              >
+                Cookies Policy
+              </a>
+              . By accessing or using our (“
+              <b
+                class="policyTextBold"
+              >
+                Websites
+              </b>
+              ”), you confirm that you accept these Website Terms.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            02
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            About Red Badger
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              2.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Our Websites are owned and operated by Red Badger Consulting Limited (“
+              <b
+                class="policyTextBold"
+              >
+                Red Badger
+              </b>
+              ”, “
+              <b
+                class="policyTextBold"
+              >
+                we
+              </b>
+              ”, “
+              <b
+                class="policyTextBold"
+              >
+                us
+              </b>
+              ” or “
+              <b
+                class="policyTextBold"
+              >
+                our
+              </b>
+              ”)
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              2.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We are a company registered in England and Wales under registration number 7242017. Our registered office and principal place of business is at 4th Floor, 2 Old Street Yard, London, England, EC1Y 8AF.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              2.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You can contact us by (a) post, to 4th Floor, 2 Old Street Yard, London, England, EC1Y 8AF, (b) telephone, on 0203 567 0555, or (c) email, using the following email address: 
+              <a
+                href="mailto:hello@red-badger.com"
+              >
+                hello@red-badger.com
+              </a>
+              .
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            03
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Changes to the Red Badger Website Terms
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              3.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We may update the Red Badger Website Terms from time to time by publishing a new version here at 
+              <a
+                href="https://red-badger.com/terms-and-conditions"
+              >
+                red-badger.com/terms-and-conditions
+              </a>
+              . If we make changes to this Website Terms, we will post the revised Website Terms here at 
+              <a
+                href="https://red-badger.com/terms-and-conditions"
+              >
+                red-badger.com/terms-and-conditions
+              </a>
+               and update the “Effective Date” date at the top of this Website Terms.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              3.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Please check 
+              <a
+                href="https://red-badger.com/terms-and-conditions"
+              >
+                red-badger.com/terms-and-conditions
+              </a>
+               regularly for any such changes.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            04
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Information use only
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              4.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              The content on our Websites are provided for general information only. It is not intended to amount to advice on which you (and/or others) should rely. You must obtain professional and/or specialist advice before taking, and/or refraining from, any action on the basis of the content on our Website.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              4.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Although we make reasonable efforts to update the information on our Websites, we make no representations, warranties and/or guarantees, whether express or implied, that the content on our Websites are accurate, complete and/or up to date. Our content is provided as-is.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            05
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            We may suspend or withdraw our Websites
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              5.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Our Websites are made available free of charge.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              5.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We do not guarantee that our Websites, and/or any content on it, will always be available and/or be uninterrupted. We may suspend and/or withdraw and/or restrict the availability of all and/or any part of our Website for any reason whatsoever in our sole and absolute discretion. We will try to give you reasonable notice of any suspension and/or withdrawal.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              5.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You are also responsible for ensuring that all persons who access our Websites through your internet connection are aware of these Website Terms and other applicable terms and conditions, and that they comply with them.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            06
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            You must keep your account details
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              6.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              If you choose, or you are provided with, a user identification code, password or any other piece of information as part of our security procedures, you must treat such information as confidential. You must not disclose it to any third party.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              6.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our reasonable opinion you have failed to comply with any of the provisions of these Website Terms and/or applicable laws.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              6.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              If you know or suspect that anyone other than you knows your user identification code or password, you must promptly notify us at: 
+              <a
+                href="mailto:hello@red-badger.com"
+              >
+                hello@red-badger.com
+              </a>
+              .
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            07
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            How you may use material on our Websites
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              7.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We are the owner or the licensee of all intellectual property rights in our Website, and in the material published on it. Those works are protected by copyright laws and treaties around the world. All such rights are reserved.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              7.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You may print off one copy, and may download extracts, of any page(s) from our Website for your personal use and you may draw the attention of others within your organisation to content posted on our Websites.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              7.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You must not modify the paper and/or digital copies of any materials you have printed off or downloaded in any way, and you must not use any illustrations, photographs, video and/or audio sequences and/or any graphics separately from any accompanying text.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              7.4
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Our status (and that of any identified contributors) as the authors of content on our Websites must always be acknowledged.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              7.5
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You must not use any part of the content on our Websites for commercial purposes without obtaining a licence to do so from us or our licensors.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              7.6
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              If you print off, copy and/or download any part of our Websites in breach of these Website Terms and/or applicable laws, your right to use our Website will cease immediately and you must, at our option, return or destroy any copies of the materials you have made.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            08
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            We are not responsible for websites we link to
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              8.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Where our Websites contain links to other sites and resources provided by third parties, these links are provided for your information only. Such links should not be interpreted as approval by us of those linked websites or information you may obtain from them.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              8.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We have no control over the contents of those sites or resources.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            09
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            User-generated content is not approved by us
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              9.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Our Websites may include information and materials uploaded by other users of the Websites. This information and these materials have not been verified and/or approved by us. The views expressed by other users on our Websites do not represent Red Badger, our views and/or values.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              9.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              If you wish to complain about information and materials uploaded by other users please contact us at 
+              <a
+                href="mailto:hello@red-badger.com"
+              >
+                hello@red-badger.com
+              </a>
+              .
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            10
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Our responsibility for loss or damage suffered by you
+          </h2>
+          <h3
+            class="largeSimpleHeading"
+          >
+            Whether you are a consumer or a business user
+          </h3>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              10.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We do not exclude and/or limit in any way our liability to you where it would be unlawful to do so. This includes (for example) liability for death or personal injury caused by our negligence or the negligence of our employees, agents or subcontractors and for fraud or fraudulent misrepresentation.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              10.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb20"
+            >
+              Different limitations and exclusions of liability will apply to liability arising as a result of the supply by us of software, goods and/or services to you. These limitations and exclusions of liability are set out in our terms and conditions of supply.
+            </p>
+            <h3
+              class="simpleHeading"
+            >
+              If you are a business user
+            </h3>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              10.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We exclude all implied conditions, warranties, undertaking, guaranties, representations and/or other terms that may apply to our Websites and/or any content them.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              10.4
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We will not be liable to you for any loss and/or damage, whether in contract, tort (including negligence), breach of statutory duty, and/or otherwise, even if foreseeable, arising under and/or in connection with your:
+            </p>
+            <ul
+              class="policyList"
+            >
+              <li>
+                use of, and/or inability to use, our Websites; and/or
+              </li>
+              <li>
+                use of and/or reliance on any content displayed on our Websites.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              10.5
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We will not be liable for:
+            </p>
+            <ul
+              class="policyList"
+            >
+              <li>
+                loss of profits, sales, business, and/or revenue;
+              </li>
+              <li>
+                business interruption;
+              </li>
+              <li>
+                loss of anticipated savings;
+              </li>
+              <li>
+                loss of business opportunity, goodwill and/or reputation; and/or
+              </li>
+              <li
+                class="mb20"
+              >
+                any indirect and/or consequential loss and/or damage.
+              </li>
+            </ul>
+            <h3
+              class="simpleHeading"
+            >
+              If you are a consumer user
+            </h3>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              10.6
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Please note that we only provide our Websites for domestic and private use. You agree not to use our Websites for any commercial and/or business purposes, and we have no liability to you for any loss of profit, loss of business, business interruption, and/or loss of business opportunity.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            11
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            How we may use your personal data
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              11.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We will only use your personal data as set out in our 
+              <a
+                class=""
+                href="/privacy-policy"
+              >
+                Privacy Statement
+              </a>
+              .
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            12
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Uploading content to our Websites
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              12.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You warrant, represent and undertake that any content you upload and/or post to our Websites complies with these Website Terms and/or applicable laws, and you will be liable to us and indemnify us for any and/or all breaches of that warranty. This means you will be responsible for any loss and/or damage we suffer as a result of your breach of this warranty.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              12.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Any content you upload and/or post to our Websites will be considered non-confidential and non-proprietary. You retain all of your ownership rights in your content, but you are required to grant us the licence described in section 13 below.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              12.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We also have the right to disclose your identity to any third party who is claiming that any content posted and/or uploaded by you to our Websites constitutes a violation of applicable laws and/or their rights including (but not limited to) intellectual property and/or data protection rights.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              12.4
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We have the right to remove any posting you make on our Websites for any reason whatsoever in our sole and absolute discretion.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              12.5
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You are solely responsible for securing and backing up your content.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            13
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Rights you are giving us to use material you upload
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              13.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              By uploading and/or posting content to our Websites, you hereby grant us a non-exclusive, worldwide, royalty-free, irrevocable, perpetual (or for the term of the protection), sub-licensable, paid up, assignable and transferable license to such content to access, use, store, copy, modify, prepare derivative works of, distribute, publish, transmit, stream, broadcast, allow others to access and use, and otherwise exploit in any manner such content to provide and/or promote our Websites and/or Red Badger as we deem necessary and/or desirable from time to time, in any media and/or platform.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            14
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            We are not responsible for viruses and you must not introduce them
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              14.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We do not guarantee that our Websites will be secure and/ or free from bugs and/or viruses.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              14.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You are responsible for configuring your information technology, computer programmes and platform to access our Websites. You should use your own virus protection software.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              14.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You must not misuse our Websites by knowingly introducing viruses, trojans, worms, logic bombs and/or other material that is malicious or technologically harmful. You must not attempt to gain unauthorised access to our Website, the server on which our Websites are stored and/or any server, computer and/or database connected to our Websites. You must not attack our Websites via a denial-of-service attack or a distributed denial-of service attack. By breaching this provision, you would commit a criminal offence under the Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use our Websites will cease immediately.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            15
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Rules about linking to our Websites
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              15.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You may link to our home pages, provided you do so in a way that is fair and legal and does not damage our reputation and/or take advantage of it.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              15.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You must not establish a link in such a way as to suggest any form of association, approval and/or endorsement on our part where none exists.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              15.3
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              You must not establish a link to our Website in any website that is not owned by you.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              15.4
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              Our Websites must not be framed on any other site, nor may you create a link to any part of our Websites other than the home page.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              15.5
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              We reserve the right to withdraw linking permission without notice.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              15.6
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              If you wish to link to or make any use of content on our Websites other than that set out above, please contact 
+              <a
+                href="mailto:hello@red-badger.com"
+              >
+                hello@red-badger.com
+              </a>
+              .
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            16
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Which country's laws apply to any disputes?
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              16.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              If you are a consumer, please note that these Website Terms, their subject matter and their formation (and any non-contractual disputes or claims), are governed by English law. You and we both agree that the courts of England will have exclusive jurisdiction except that if you are a resident of Northern Ireland you may also bring proceedings in Northern Ireland, and if you are resident of Scotland, you may also bring proceedings in Scotland.
+            </p>
+          </div>
+        </li>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              16.2
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              If you are a business, these Website Terms, their subject matter and their formation (and any non-contractual disputes or claims) are governed by English law. We both agree to the exclusive jurisdiction of the courts of England.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <div
+        class="box"
+      >
+        <div
+          class="numberContainer"
+        >
+          <span
+            class="number"
+          >
+            17
+          </span>
+        </div>
+        <div
+          class=""
+        >
+          <h2
+            class="fontM2 mb10"
+          >
+            Our trade mark is registered
+          </h2>
+        </div>
+      </div>
+      <ol>
+        <li
+          class="box"
+        >
+          <div
+            class="numberContainer"
+          >
+            <span
+              class="statementNumber"
+            >
+              17.1
+            </span>
+          </div>
+          <div
+            class="policyText"
+          >
+            <p
+              class="fontXS mb10"
+            >
+              “
+              <b
+                class="policyTextBold"
+              >
+                RED BADGER
+              </b>
+              ” is a UK registered trade mark (UK UK00003056439) of Red Badger Consulting Limited. You are not permitted to use this trade mark without our prior written approval.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</div>
 `;

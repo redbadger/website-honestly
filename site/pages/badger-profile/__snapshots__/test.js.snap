@@ -1,417 +1,136 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/badger-profile renders correctly 1`] = `
-<Context>
-  <BadgerProfile
-    badger={
-      Object {
-        "about": "I have no idea why a badger is in the office but it hasn't bitten anyone yet",
-        "achievements": "I mean it got into Badger HQ and nobody has managed to evict her yet.",
-        "categories": Array [
-          Object {
-            "name": "woodland-mammals",
-            "order": 1,
-            "slug": "squelch",
-          },
-        ],
-        "firstName": "Sally",
-        "github": "beingABadgerIDoNotCode",
-        "influence": "Probably looking to steal Milo's food",
-        "jobTitle": "Literally just a badger",
-        "lastName": "Badger",
-        "linkedIn": "grrrrr",
-        "primaryImageUrl": "https://www.somefakebadgersite.com/image.jpg",
-        "secondaryImageUrl": "https://www.somefakebadgersite.com/image2.jpg",
-        "skills": "Burrowing underground, eating grubs and stealing dog food.",
-        "slug": "no-not-a-slug-a-badger",
-        "squarespaceId": "grrISaidGrrrr",
-        "twitter": "@literallyABadger",
-      }
-    }
+<div
+  class="badgerProfile"
+>
+  <div
+    class="profileContainer"
   >
     <div
-      className="badgerProfile"
+      class="profilePictureContainer"
     >
-      <Social
-        altText="An illustration of different people."
-        description="Literally just a badger"
-        metaImage="meta-image.jpg"
-        title="Sally Badger | Red Badger"
-        url="https://red-badger.com/peoplesally-badger"
+      <img
+        alt=""
+        class="badgerImage"
+        src="https://www.somefakebadgersite.com/image2.jpg"
+      />
+    </div>
+    <div
+      class="profileDescriptionContainer"
+    >
+      <h1
+        class="header"
       >
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "summary_large_image",
-                "name": "twitter:card",
-              },
-              Object {
-                "content": "@redbadgerteam",
-                "name": "twitter:site",
-              },
-              Object {
-                "content": "Sally Badger | Red Badger",
-                "name": "twitter:title",
-              },
-              Object {
-                "content": "Literally just a badger",
-                "name": "twitter:description",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "name": "twitter:image",
-              },
-              Object {
-                "content": "website",
-                "property": "og:type",
-              },
-              Object {
-                "content": "Sally Badger | Red Badger",
-                "property": "og:title",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image:secure_url",
-              },
-              Object {
-                "content": "An illustration of different people.",
-                "property": "og:image:alt",
-              },
-              Object {
-                "content": "Literally just a badger",
-                "property": "og:description",
-              },
-              Object {
-                "content": "https://red-badger.com/peoplesally-badger",
-                "property": "og:url",
-              },
-            ]
-          }
-        >
-          <SideEffect(NullComponent)
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "Sally Badger | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "Literally just a badger",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "Sally Badger | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "An illustration of different people.",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "Literally just a badger",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/peoplesally-badger",
-                  "property": "og:url",
-                },
-              ]
-            }
+        Sally Badger
+      </h1>
+      <h2
+        class="subheader"
+      >
+        Literally just a badger
+      </h2>
+      <h3
+        class="categories"
+      >
+        woodland-mammals
+      </h3>
+      <ul
+        class="socialLinks"
+      >
+        <li>
+          <a
+            class="badgerSocialIcon"
+            href="@literallyABadger"
+            title="Twitter"
           >
-            <NullComponent
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "Sally Badger | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "Literally just a badger",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "Sally Badger | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "An illustration of different people.",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "Literally just a badger",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/peoplesally-badger",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            />
-          </SideEffect(NullComponent)>
-        </HelmetWrapper>
-      </Social>
+            <svg
+              viewBox="0 0 25 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Twitter
+              </title>
+              <path
+                d="M7.771 19.709c9.117 0 14.104-7.52 14.104-14.04 0-.214 0-.427-.015-.638a10.06 10.06 0 0 0 2.473-2.555c-.905.4-1.864.661-2.847.777a4.956 4.956 0 0 0 2.18-2.73 9.96 9.96 0 0 1-3.148 1.198A4.977 4.977 0 0 0 14.563.75a4.932 4.932 0 0 0-2.492 5.472A14.094 14.094 0 0 1 1.855 1.066 4.925 4.925 0 0 0 3.39 7.653a4.937 4.937 0 0 1-2.25-.618v.063a4.942 4.942 0 0 0 3.977 4.837 4.97 4.97 0 0 1-2.238.085 4.96 4.96 0 0 0 4.63 3.427 9.974 9.974 0 0 1-7.335 2.045 14.079 14.079 0 0 0 7.597 2.213"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="badgerSocialIcon"
+            href="beingABadgerIDoNotCode"
+            title="Github"
+          >
+            <svg
+              viewBox="0 0 21 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                GitHub
+              </title>
+              <path
+                d="M10.32 0C4.622 0 0 4.558 0 10.181c0 4.498 2.957 8.314 7.059 9.66.516.094.704-.22.704-.49 0-.242-.009-.882-.014-1.732-2.87.615-3.476-1.365-3.476-1.365-.47-1.175-1.146-1.489-1.146-1.489-.938-.631.07-.619.07-.619 1.036.072 1.581 1.05 1.581 1.05.921 1.555 2.416 1.106 3.004.846.094-.658.36-1.107.655-1.361-2.291-.257-4.7-1.131-4.7-5.032 0-1.111.401-2.02 1.062-2.732-.107-.258-.461-1.293.1-2.694 0 0 .867-.274 2.839 1.043a9.986 9.986 0 0 1 2.584-.342 10 10 0 0 1 2.584.342c1.97-1.317 2.835-1.043 2.835-1.043.563 1.401.21 2.436.103 2.694.661.712 1.061 1.62 1.061 2.732 0 3.911-2.413 4.772-4.713 5.024.37.314.701.935.701 1.885 0 1.36-.013 2.459-.013 2.793 0 .272.186.589.71.49 4.098-1.35 7.053-5.163 7.053-9.66C20.643 4.558 16.02 0 10.32 0"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div
-        className="profileContainer"
+        class="about"
       >
-        <div
-          className="profilePictureContainer"
-        >
-          <img
-            alt=""
-            className="badgerImage"
-            src="https://www.somefakebadgersite.com/image2.jpg"
-          />
-        </div>
-        <div
-          className="profileDescriptionContainer"
-        >
-          <h1
-            className="header"
-          >
-            Sally Badger
-          </h1>
+        I have no idea why a badger is in the office but it hasn't bitten anyone yet
+      </div>
+      <div
+        class="descriptionSections"
+      >
+        <div>
           <h2
-            className="subheader"
+            class="subheader"
           >
-            Literally just a badger
+            Signature skills
           </h2>
-          <h3
-            className="categories"
+          <p>
+            Burrowing underground, eating grubs and stealing dog food.
+          </p>
+        </div>
+        <div>
+          <h2
+            class="subheader"
           >
-            woodland-mammals
-          </h3>
-          <SocialContacts
-            badger={
-              Object {
-                "about": "I have no idea why a badger is in the office but it hasn't bitten anyone yet",
-                "achievements": "I mean it got into Badger HQ and nobody has managed to evict her yet.",
-                "categories": Array [
-                  Object {
-                    "name": "woodland-mammals",
-                    "order": 1,
-                    "slug": "squelch",
-                  },
-                ],
-                "firstName": "Sally",
-                "github": "beingABadgerIDoNotCode",
-                "influence": "Probably looking to steal Milo's food",
-                "jobTitle": "Literally just a badger",
-                "lastName": "Badger",
-                "linkedIn": "grrrrr",
-                "primaryImageUrl": "https://www.somefakebadgersite.com/image.jpg",
-                "secondaryImageUrl": "https://www.somefakebadgersite.com/image2.jpg",
-                "skills": "Burrowing underground, eating grubs and stealing dog food.",
-                "slug": "no-not-a-slug-a-badger",
-                "squarespaceId": "grrISaidGrrrr",
-                "twitter": "@literallyABadger",
-              }
-            }
+            Achievements at Red Badger
+          </h2>
+          <p>
+            I mean it got into Badger HQ and nobody has managed to evict her yet.
+          </p>
+        </div>
+        <div>
+          <h2
+            class="subheader"
           >
-            <ul
-              className="socialLinks"
-            >
-              <li
-                key="Twitter"
-              >
-                <a
-                  className="badgerSocialIcon"
-                  href="@literallyABadger"
-                  title="Twitter"
-                >
-                  <Twitter>
-                    <svg
-                      viewBox="0 0 25 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>
-                        Twitter
-                      </title>
-                      <path
-                        d="M7.771 19.709c9.117 0 14.104-7.52 14.104-14.04 0-.214 0-.427-.015-.638a10.06 10.06 0 0 0 2.473-2.555c-.905.4-1.864.661-2.847.777a4.956 4.956 0 0 0 2.18-2.73 9.96 9.96 0 0 1-3.148 1.198A4.977 4.977 0 0 0 14.563.75a4.932 4.932 0 0 0-2.492 5.472A14.094 14.094 0 0 1 1.855 1.066 4.925 4.925 0 0 0 3.39 7.653a4.937 4.937 0 0 1-2.25-.618v.063a4.942 4.942 0 0 0 3.977 4.837 4.97 4.97 0 0 1-2.238.085 4.96 4.96 0 0 0 4.63 3.427 9.974 9.974 0 0 1-7.335 2.045 14.079 14.079 0 0 0 7.597 2.213"
-                        fillRule="evenodd"
-                      />
-                    </svg>
-                  </Twitter>
-                </a>
-              </li>
-              <li
-                key="Github"
-              >
-                <a
-                  className="badgerSocialIcon"
-                  href="beingABadgerIDoNotCode"
-                  title="Github"
-                >
-                  <GitHub>
-                    <svg
-                      viewBox="0 0 21 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>
-                        GitHub
-                      </title>
-                      <path
-                        d="M10.32 0C4.622 0 0 4.558 0 10.181c0 4.498 2.957 8.314 7.059 9.66.516.094.704-.22.704-.49 0-.242-.009-.882-.014-1.732-2.87.615-3.476-1.365-3.476-1.365-.47-1.175-1.146-1.489-1.146-1.489-.938-.631.07-.619.07-.619 1.036.072 1.581 1.05 1.581 1.05.921 1.555 2.416 1.106 3.004.846.094-.658.36-1.107.655-1.361-2.291-.257-4.7-1.131-4.7-5.032 0-1.111.401-2.02 1.062-2.732-.107-.258-.461-1.293.1-2.694 0 0 .867-.274 2.839 1.043a9.986 9.986 0 0 1 2.584-.342 10 10 0 0 1 2.584.342c1.97-1.317 2.835-1.043 2.835-1.043.563 1.401.21 2.436.103 2.694.661.712 1.061 1.62 1.061 2.732 0 3.911-2.413 4.772-4.713 5.024.37.314.701.935.701 1.885 0 1.36-.013 2.459-.013 2.793 0 .272.186.589.71.49 4.098-1.35 7.053-5.163 7.053-9.66C20.643 4.558 16.02 0 10.32 0"
-                        fillRule="evenodd"
-                      />
-                    </svg>
-                  </GitHub>
-                </a>
-              </li>
-            </ul>
-          </SocialContacts>
-          <div
-            className="about"
-          >
-            I have no idea why a badger is in the office but it hasn't bitten anyone yet
-          </div>
-          <div
-            className="descriptionSections"
-          >
-            <div>
-              <h2
-                className="subheader"
-              >
-                Signature skills
-              </h2>
-              <p>
-                Burrowing underground, eating grubs and stealing dog food.
-              </p>
-            </div>
-            <div>
-              <h2
-                className="subheader"
-              >
-                Achievements at Red Badger
-              </h2>
-              <p>
-                I mean it got into Badger HQ and nobody has managed to evict her yet.
-              </p>
-            </div>
-            <div>
-              <h2
-                className="subheader"
-              >
-                The thing that changed me
-              </h2>
-              <p>
-                Probably looking to steal Milo's food
-              </p>
-            </div>
-          </div>
-          <hr />
-          <Link
-            className="categoryBox"
-            to="badgers"
-          >
-            <NavigationLink
-              className="categoryBox"
-              navigating={[Function]}
-              stateKey="badgers"
-            >
-              <a
-                className="categoryBox"
-                href={null}
-                onClick={[Function]}
-              >
-                See Everyone
-              </a>
-            </NavigationLink>
-          </Link>
-          <Link
-            className="categoryBox"
-            key="squelch"
-            navigationData={
-              Object {
-                "category": "squelch",
-              }
-            }
-            to="badgers"
-          >
-            <NavigationLink
-              className="categoryBox"
-              navigating={[Function]}
-              navigationData={
-                Object {
-                  "category": "squelch",
-                }
-              }
-              stateKey="badgers"
-            >
-              <a
-                className="categoryBox"
-                href={null}
-                onClick={[Function]}
-              >
-                See 
-                woodland-mammals
-                 team
-              </a>
-            </NavigationLink>
-          </Link>
+            The thing that changed me
+          </h2>
+          <p>
+            Probably looking to steal Milo's food
+          </p>
         </div>
       </div>
+      <hr />
+      <a
+        class="categoryBox"
+        href="/people"
+      >
+        See Everyone
+      </a>
+      <a
+        class="categoryBox"
+        href="/people/category/squelch"
+      >
+        See woodland-mammals team
+      </a>
     </div>
-  </BadgerProfile>
-</Context>
+  </div>
+</div>
 `;

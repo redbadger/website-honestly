@@ -1,30 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/home/hubspot-signup renders correctly 1`] = `
-<Context>
-  <HubspotSignup>
-    <section
-      className="newsletter"
+<section
+  class="newsletter"
+>
+  <h2
+    class="title"
+  >
+    Sign up to Badger News
+    <span
+      class="subTitle"
     >
-      <h2
-        className="title"
+      Be the first to hear about webinars, events blogs and more.
+    </span>
+  </h2>
+  <div
+    class="hubspotBtn btnWrapper"
+  >
+    <span
+      class="hs-cta-wrapper"
+      id="hs-cta-wrapper-6a020b57-ac2f-4b6d-8273-503c7b261094"
+    >
+      <span
+        class="hs-cta-node hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094"
+        id="hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094"
       >
-        Sign up to Badger News
-        <span
-          className="subTitle"
+        <a
+          href="https://cta-redirect.hubspot.com/cta/redirect/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094"
+          target="_blank"
         >
-          Be the first to hear about webinars, events blogs and more.
-        </span>
-      </h2>
-      <div
-        className="hubspotBtn btnWrapper"
-        dangerouslySetInnerHTML={
-          Object {
-            "__html": "<!--HubSpot Call-to-Action Code --><span class=\\"hs-cta-wrapper\\" id=\\"hs-cta-wrapper-6a020b57-ac2f-4b6d-8273-503c7b261094\\"><span class=\\"hs-cta-node hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094\\" id=\\"hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094\\"><!--[if lte IE 8]><div id=\\"hs-cta-ie-element\\"></div><![endif]--><a href=\\"https://cta-redirect.hubspot.com/cta/redirect/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094\\"  target=\\"_blank\\" ><img class=\\"hs-cta-img\\" id=\\"hs-cta-img-6a020b57-ac2f-4b6d-8273-503c7b261094\\" style=\\"border-width:0px;\\" height=\\"112\\" width=\\"249\\" src=\\"https://no-cache.hubspot.com/cta/default/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094.png\\"  alt=\\"Sign Up\\"/></a></span><script charset=\\"utf-8\\" src=\\"https://js.hscta.net/cta/current.js\\"></script><script type=\\"text/javascript\\"> hbspt.cta.load(4210858, '6a020b57-ac2f-4b6d-8273-503c7b261094', {}); </script></span><!-- end HubSpot Call-to-Action Code -->",
-          }
-        }
-      />
-    </section>
-  </HubspotSignup>
-</Context>
+          <img
+            alt="Sign Up"
+            class="hs-cta-img"
+            height="112"
+            id="hs-cta-img-6a020b57-ac2f-4b6d-8273-503c7b261094"
+            src="https://no-cache.hubspot.com/cta/default/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094.png"
+            style="border-width:0px;"
+            width="249"
+          />
+        </a>
+      </span>
+    </span>
+  </div>
+</section>
 `;

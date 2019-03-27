@@ -1,47 +1,46 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+
+import React, { type Node } from 'react';
+import { StateNavigator } from 'navigation';
+import { NavigationHandler } from 'navigation-react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import styles from './style.css';
 import logAmplitudeEvent, { fetchPageMetadata } from '../tracking/amplitude';
 
-export default class Layout extends React.Component {
-  static propTypes = {
-    children: PropTypes.element.isRequired,
-    stateNavigator: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-    title: PropTypes.string.isRequired,
-  };
+type Props = {
+  title: string,
+  stateNavigator: StateNavigator,
+  children: Node,
+};
 
-  static childContextTypes = {
-    stateNavigator: PropTypes.object,
-  };
-
-  getChildContext() {
-    return { stateNavigator: this.props.stateNavigator };
-  }
-
+export default class Layout extends React.Component<Props> {
   componentDidMount = () => {
     const { stateContext } = this.props.stateNavigator;
     logAmplitudeEvent('PAGE LOADED', fetchPageMetadata(stateContext));
     logAmplitudeEvent('ENTRY PAGE', fetchPageMetadata(stateContext), true);
   };
 
-  componentDidUpdate = prevProps => {
+  componentDidUpdate(prevProps: Props) {
     if (prevProps.title !== this.props.title) {
       const { stateContext } = this.props.stateNavigator;
       logAmplitudeEvent('PAGE LOADED', fetchPageMetadata(stateContext));
     }
-  };
+  }
 
   render() {
+    const { stateNavigator, children } = this.props;
+
     return (
-      <div className={styles.application}>
-        <Header />
-        <div id="mainContent" className={styles.background}>
-          {this.props.children}
+      <NavigationHandler stateNavigator={stateNavigator}>
+        <div className={styles.application}>
+          <Header />
+          <div id="mainContent" className={styles.background}>
+            {children}
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </NavigationHandler>
     );
   }
 }

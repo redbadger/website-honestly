@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { render } from 'enzyme';
 
 import { Context } from '../../components/link/test-helper';
 
@@ -18,7 +18,7 @@ const social = {
 describe('site/pages/terms-and-conditions', () => {
   it('renders correctly', () => {
     expect(
-      mount(
+      render(
         <Context>
           <Terms
             title="Website Terms"
