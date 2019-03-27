@@ -88,7 +88,7 @@ const FinancialTimesCaseStudy = () => (
           <h3 className={styles.content__secondaryTitle}>
             There were two overarching challenges to solve for the Financial Times:
           </h3>
-          <p className={styles.content__paragraph}>
+          <div className={styles.content__paragraph}>
             <ol className={styles.content__ordered__list}>
               <li className={styles.content__ordered__list__element}>
                 Delivery — To deliver the next generation ft.com homepage demonstrating the
@@ -98,9 +98,9 @@ const FinancialTimesCaseStudy = () => (
                 Strategy — Creative team strategy across the entire online product portfolio
               </li>
             </ol>
-          </p>
+          </div>
           <h3 className={styles.content__secondaryTitle}>And, core objectives included:</h3>
-          <p className={styles.content__paragraph}>
+          <div className={styles.content__paragraph}>
             <ul className={styles.content__list}>
               <li className={styles.content__list__element}>
                 Introduce and embed Lean UX methodologies and Agile Design at an enterprise level
@@ -117,7 +117,7 @@ const FinancialTimesCaseStudy = () => (
                 Place experts within the organisation who’ll continue to support these methods
               </li>
             </ul>
-          </p>
+          </div>
           <h2 className={styles.content__title}>
             <span className={styles.content__redTitle}>
               Do the right thing. Do the thing right.

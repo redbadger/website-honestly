@@ -1,0 +1,1353 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/case-study/bank/ renders correctly 1`] = `
+<Context>
+  <CaseStudyBank>
+    <ScrollTracker>
+      <Social
+        altText="An arrow built out of colorful, square pieces, assembled by multiple people."
+        description="Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks."
+        metaImage="meta-image.jpg"
+        title="Digital transformation in retail banking | Red Badger"
+        url="https://red-badger.com/our-work/case-study/financial-services-digital-transformation"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Digital transformation in retail banking | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Digital transformation in retail banking | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image",
+              },
+              Object {
+                "content": "https://red-badger.commeta-image.jpg",
+                "property": "og:image:secure_url",
+              },
+              Object {
+                "content": "An arrow built out of colorful, square pieces, assembled by multiple people.",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger.com/our-work/case-study/financial-services-digital-transformation",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Digital transformation in retail banking | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Digital transformation in retail banking | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "https://red-badger.commeta-image.jpg",
+                  "property": "og:image:secure_url",
+                },
+                Object {
+                  "content": "An arrow built out of colorful, square pieces, assembled by multiple people.",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger.com/our-work/case-study/financial-services-digital-transformation",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Digital transformation in retail banking | Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Digital transformation in retail banking | Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.commeta-image.jpg",
+                    "property": "og:image:secure_url",
+                  },
+                  Object {
+                    "content": "An arrow built out of colorful, square pieces, assembled by multiple people.",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "Learn how we've increasing customer satisfaction & conversion rates at one of the world's largest banks.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.com/our-work/case-study/financial-services-digital-transformation",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <div
+        className="header"
+      >
+        <Image
+          alt="Stick figures building a large arrow from small square blocks"
+          className="header__image"
+          src="header.gif"
+        >
+          <picture>
+            <source
+              className="header__image"
+              srcSet="header.gif"
+            />
+            <img
+              alt="Stick figures building a large arrow from small square blocks"
+              className="header__image"
+              src="header.gif"
+            />
+          </picture>
+        </Image>
+      </div>
+      <Body>
+        <div
+          className="body"
+        >
+          <PageHeading>
+            <div
+              className="heading"
+            >
+              <H1
+                type="fontL"
+              >
+                <h1
+                  className="fontL "
+                >
+                  Digital transformation at one of the world’s largest banks
+                </h1>
+              </H1>
+            </div>
+          </PageHeading>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Increasing customer satisfaction & conversion rates"
+                subHeading="Let’s make things better."
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Let’s make things better.
+                  </span>
+                  Increasing customer satisfaction & conversion rates
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        As part of a global digital transformation programme, the bank had a vision to design, build, support and continuously evolve the digital opportunities, products, features, platforms and capabilities from inception to customer delivery, across all markets.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        With conversion rates at less than 5%, the Originations and Utilities programme identified problems with the customer onboarding experience of new account openings, credit card and loan applications, and approached us to help them improve it. Three of the key issues were the requirement for customers to visit bank branches, the heavy back office data entry for staff and the resulting long lead times. With dispersed teams, rigid processes and legacy technology contributing to the limited functionality of their websites, their delivery pipeline and release process needed to change.
+                      </p>
+                    </P>
+                  </P>
+                  <div
+                    className="content__float content__float--noBottomMargin"
+                  >
+                    <Image
+                      alt="Stick figures building a tick from small boxes"
+                      className="tickImage"
+                      src="tick.png"
+                    >
+                      <picture>
+                        <source
+                          className="tickImage"
+                          srcSet="tick.png"
+                        />
+                        <img
+                          alt="Stick figures building a tick from small boxes"
+                          className="tickImage"
+                          src="tick.png"
+                        />
+                      </picture>
+                    </Image>
+                  </div>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        We identified a number of opportunities to help them become customer-centric rather than process-centric and reduce waste with Lean Agile principles, so we embarked on a large scale efficiency programme with Red Badger leading the global programme of work to deliver complex technology solutions across the whole organisation.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Implementing customer-centricity with new ways of working"
+                subHeading="Do the right thing. Do the thing right."
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Do the right thing. Do the thing right.
+                  </span>
+                  Implementing customer-centricity with new ways of working
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Our role was to lead the Origination and Utilities programme which had to:
+                      </p>
+                    </P>
+                  </P>
+                  <UL>
+                    <ul
+                      className="list"
+                    >
+                      <li>
+                        Deliver quality digital products to their customers quickly
+                      </li>
+                      <li>
+                        Vastly improve the customer experience of opening a new current account and applying for a loan or credit card
+                      </li>
+                      <li>
+                        Help them build internal capability and change the culture, leaving a legacy beyond our involvement
+                      </li>
+                      <li>
+                        Reduce operational costs and increase business efficiency
+                      </li>
+                    </ul>
+                  </UL>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        There was a need to change the way they worked. We implemented cross-functional teams, combined with lean processes to drive agility which allowed us to deliver value to customers quickly. This created a robust delivery model which has since been scaled to multiple global teams. At the time of writing, we have scaled from one to twelve global teams with more teams planned over the next year.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Setting up for success
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        As part of the project validation process, we helped create the delivery plans for three product roadmaps that could be delivered by small, cross-functional teams from start to finish. Products were allocated per country starting with account opening, quickly followed by credit cards and loans. Each product team consisting of UX, Design, Engineering and an Agile Delivery Lead became accountable for the on-time success of the product into that market.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Putting the customer at the centre of the project
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        The bank’s UXD teams, which sat separately from Originations and Utilities, had already started designing prototypes which created an opportunity to bring them into the project programme. In order to demonstrate our thinking, we ran a number of workshops to help build trust, as this was a new approach.
+                      </p>
+                    </P>
+                  </P>
+                  <div
+                    className="content__float content__float--left"
+                  >
+                    <Image
+                      alt="Stick figures building a smiley from small boxes"
+                      className="smileyImage"
+                      src="smiley.png"
+                    >
+                      <picture>
+                        <source
+                          className="smileyImage"
+                          srcSet="smiley.png"
+                        />
+                        <img
+                          alt="Stick figures building a smiley from small boxes"
+                          className="smileyImage"
+                          src="smiley.png"
+                        />
+                      </picture>
+                    </Image>
+                  </div>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Rather than design prototypes, when often an idea is designed that can’t be built, we focused on designing live products to capture details of integration with external systems and requirements. This enabled live user testing and ensured complicated system requirements weren’t missed. It also allowed us to bring accessibility testing into the core delivery process, avoiding the risk of it failing at the point of release. All of these principles and practices have allowed us to deliver user value more quickly, and help build a platform where we could easily iterate on the live product.
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Choosing the right tech for the job
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Our objective was to help the business move faster by creating more autonomy within the teams, so we set about reducing their dependencies on shared platforms and pipelines, so that we could first create, and then scale excellence.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        The bank has a cloud-centric strategy and Red Badger are pivotal in helping them to realise their ambitions in this area. We have been working on a solution that leverages recent advances in container orchestration, combined with automated provisioning of immutable infrastructure, to enable teams to deploy their Microservice-based applications onto cloud-provider-agnostic “Microplatforms”. The teams can now create and destroy identical environments in minutes, empowering them to manage their own deployments for testing (and soon for production). This puts the teams in control so that they can deliver continuously, whilst reducing the risk of failure and the mean-time-to-recovery when failures occur.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        By allowing the teams more freedom to align around tools and technologies, we’re already dramatically increasing velocity. Open source tools have helped speed up the process with components shared across teams for reuse. This, combined with a deep sense of ownership, means that our DevOps focused teams have full responsibility for design, build, and run (including 24x7 support).
+                      </p>
+                    </P>
+                  </P>
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Tech we used
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        React, Node, Spring Boot, Go, Microservices, Jenkins, Docker in Swarm Mode, Kubernetes, AWS, GCP, Terraform
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Scaling excellence and increasing speed to market"
+                subHeading="Creating lasting change."
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Creating lasting change.
+                  </span>
+                  Scaling excellence and increasing speed to market
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        So far we have launched multiple live products in both the UK and Hong Kong, with new live products launching in other global markets in 2018.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        The results to date include the successful delivery of the new credit card application journey in Hong Kong, implementing straight-through processes, allowing customers to open an account without the need to visit a branch for the first time. This makes them the first bank in Hong Kong able to accept customers at the end of an online-only application, giving them a crucial competitive advantage.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        We have made groundbreaking progress with the opening of current accounts with an improvement in conversion rates for Account Opening from 5% of customers completing the application to 43% since launch.
+                      </p>
+                    </P>
+                  </P>
+                  <div
+                    className="content__float"
+                  >
+                    <Image
+                      alt="Stick figures building a pyramid from small boxes"
+                      className="pyramidImage"
+                      src="pyramid.png"
+                    >
+                      <picture>
+                        <source
+                          className="pyramidImage"
+                          srcSet="pyramid.png"
+                        />
+                        <img
+                          alt="Stick figures building a pyramid from small boxes"
+                          className="pyramidImage"
+                          src="pyramid.png"
+                        />
+                      </picture>
+                    </Image>
+                  </div>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        As we move forward, cross product sharing is enabling faster development times and greater consistency as components and page elements can be reused and scaled. With product teams sharing their knowledge across the whole programme we’re helping to eliminate inefficiency.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        We’ve successfully integrated UX and Design into the fast-moving delivery environment and the projects have benefited at each stage of the process from business requirements to test and deployment, transforming the way the bank’s own UXD team work.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        We’ve helped shift their ways of working to set them up for continuous delivery. In originations, we have thus far helped them to deploy multiple times a day to the testing environment, deploying weekly to production and releasing to customers monthly. We are moving closer and closer to true continuous deployment, providing them with the technical capability to deploy and release to customers multiple times per day. The contribution to evolving the release process with the global brand and other departments such as legal and compliance, to cater for agile product delivery is a particular highlight. This shift toward true continuous deployment has started to impact other parts of the business outside of originations, that had previously released just a few times a year.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Starting off with one team, we now lead more than 150 people across three countries consisting of both bank employees and third parties, including two teams in Krakow that we’ve helped onboard. By embedding our delivery and technical directors, we’ve been able to drive change and work closely with stakeholders across the globe.
+                      </p>
+                    </P>
+                  </P>
+                  <Quote
+                    author={
+                      Object {
+                        "image": "quote-author.jpg",
+                        "name": "Stuart Harris",
+                        "title": "Red Badger CIO",
+                      }
+                    }
+                    text="Delivering value to customers at this speed and scale requires that each cross-functional team is as self-sufficient as possible, having maximum aligned autonomy. By embracing DevOps culture and using high levels of automation, we are enabling the teams to own every aspect of their domain, from idea conception, through design and build, to runtime management and support."
+                  >
+                    <Quote
+                      author={
+                        Object {
+                          "image": "quote-author.jpg",
+                          "name": "Stuart Harris",
+                          "title": "Red Badger CIO",
+                        }
+                      }
+                      className="quote"
+                      text="Delivering value to customers at this speed and scale requires that each cross-functional team is as self-sufficient as possible, having maximum aligned autonomy. By embracing DevOps culture and using high levels of automation, we are enabling the teams to own every aspect of their domain, from idea conception, through design and build, to runtime management and support."
+                    >
+                      <div
+                        className="quotation quote"
+                      >
+                        <div
+                          className="quotation__text"
+                        >
+                          <blockquote
+                            className="quotation__quote"
+                          >
+                            Delivering value to customers at this speed and scale requires that each cross-functional team is as self-sufficient as possible, having maximum aligned autonomy. By embracing DevOps culture and using high levels of automation, we are enabling the teams to own every aspect of their domain, from idea conception, through design and build, to runtime management and support.
+                          </blockquote>
+                        </div>
+                        <div
+                          className="quotation__author"
+                        >
+                          <Avatar
+                            image="quote-author.jpg"
+                            name="Stuart Harris"
+                            size={70}
+                          >
+                            <div
+                              className="avatar__container"
+                              style={
+                                Object {
+                                  "height": 70,
+                                  "minHeight": 70,
+                                  "minWidth": 70,
+                                  "width": 70,
+                                }
+                              }
+                            >
+                              <img
+                                alt="Stuart Harris"
+                                src="quote-author.jpg"
+                              />
+                            </div>
+                          </Avatar>
+                          <div
+                            className="quotation__author__wrapper"
+                          >
+                            <div
+                              className="quotation__author__name"
+                            >
+                              — 
+                              Stuart Harris
+                            </div>
+                            <div
+                              className="quotation__author__title"
+                            >
+                              Red Badger CIO
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Quote>
+                  </Quote>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <Card
+                    className="listBoxContainer"
+                  >
+                    <div
+                      className="Card listBoxContainer"
+                    >
+                      <ListBox
+                        className="listBox"
+                        itemClassName="listBox__item"
+                        items={
+                          Array [
+                            Object {
+                              "label": "Collaborated with the client and other consultancies",
+                            },
+                            Object {
+                              "label": "Embedded the bank’s resources within Red Badger cross-functional teams",
+                            },
+                            Object {
+                              "label": "Supported the client’s hiring process to bring best in class people into their team",
+                            },
+                            Object {
+                              "label": "Drove alignment and consistent ways of working across the programme",
+                            },
+                            Object {
+                              "label": "Led the project delivery - accountable & responsible",
+                            },
+                            Object {
+                              "label": "Introduced quality at scale",
+                            },
+                            Object {
+                              "label": "Implemented agile engineering practices",
+                            },
+                            Object {
+                              "label": "Introduced autonomous cross-functional teams across multiple products",
+                            },
+                          ]
+                        }
+                        title="What we did"
+                      >
+                        <div
+                          className="listBox listBox"
+                        >
+                          <h3
+                            className="listBox__heading"
+                          >
+                            What we did
+                          </h3>
+                          <ul>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Collaborated with the client and other consultancies"
+                            >
+                              <div>
+                                Collaborated with the client and other consultancies
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Embedded the bank’s resources within Red Badger cross-functional teams"
+                            >
+                              <div>
+                                Embedded the bank’s resources within Red Badger cross-functional teams
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Supported the client’s hiring process to bring best in class people into their team"
+                            >
+                              <div>
+                                Supported the client’s hiring process to bring best in class people into their team
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Drove alignment and consistent ways of working across the programme"
+                            >
+                              <div>
+                                Drove alignment and consistent ways of working across the programme
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Led the project delivery - accountable & responsible"
+                            >
+                              <div>
+                                Led the project delivery - accountable & responsible
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Introduced quality at scale"
+                            >
+                              <div>
+                                Introduced quality at scale
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Implemented agile engineering practices"
+                            >
+                              <div>
+                                Implemented agile engineering practices
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Introduced autonomous cross-functional teams across multiple products"
+                            >
+                              <div>
+                                Introduced autonomous cross-functional teams across multiple products
+                              </div>
+                              <div />
+                            </li>
+                          </ul>
+                        </div>
+                      </ListBox>
+                    </div>
+                  </Card>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <Card
+                    className="listBoxContainer"
+                  >
+                    <div
+                      className="Card listBoxContainer"
+                    >
+                      <ListBox
+                        className="listBox"
+                        itemClassName="listBox__item listBox__item--outcomes"
+                        items={
+                          Array [
+                            Object {
+                              "label": "Continuous deployment capability and a new release process delivering features to production",
+                            },
+                            Object {
+                              "label": "Product delivered in 12 months enabling an end to end account opening journey",
+                            },
+                            Object {
+                              "label": "Product delivered enabling straight-through processing of Hong Kong Credit Cards",
+                            },
+                            Object {
+                              "label": "Reusable components and page elements enabling cross-product sharing, increasing efficiency and velocity",
+                            },
+                            Object {
+                              "label": "UXD embedded in the end to end delivery process",
+                            },
+                            Object {
+                              "label": "Digital capability built across product, design, tech and delivery",
+                            },
+                            Object {
+                              "label": "Global transformation programme delivery - Poland and Canada (9 teams)",
+                            },
+                            Object {
+                              "label": "Two cross-functional teams onboarded in Krakow",
+                            },
+                          ]
+                        }
+                        title="Outcomes"
+                      >
+                        <div
+                          className="listBox listBox"
+                        >
+                          <h3
+                            className="listBox__heading"
+                          >
+                            Outcomes
+                          </h3>
+                          <ul>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="Continuous deployment capability and a new release process delivering features to production"
+                            >
+                              <div>
+                                Continuous deployment capability and a new release process delivering features to production
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="Product delivered in 12 months enabling an end to end account opening journey"
+                            >
+                              <div>
+                                Product delivered in 12 months enabling an end to end account opening journey
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="Product delivered enabling straight-through processing of Hong Kong Credit Cards"
+                            >
+                              <div>
+                                Product delivered enabling straight-through processing of Hong Kong Credit Cards
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="Reusable components and page elements enabling cross-product sharing, increasing efficiency and velocity"
+                            >
+                              <div>
+                                Reusable components and page elements enabling cross-product sharing, increasing efficiency and velocity
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="UXD embedded in the end to end delivery process"
+                            >
+                              <div>
+                                UXD embedded in the end to end delivery process
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="Digital capability built across product, design, tech and delivery"
+                            >
+                              <div>
+                                Digital capability built across product, design, tech and delivery
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="Global transformation programme delivery - Poland and Canada (9 teams)"
+                            >
+                              <div>
+                                Global transformation programme delivery - Poland and Canada (9 teams)
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item listBox__item--outcomes"
+                              key="Two cross-functional teams onboarded in Krakow"
+                            >
+                              <div>
+                                Two cross-functional teams onboarded in Krakow
+                              </div>
+                              <div />
+                            </li>
+                          </ul>
+                        </div>
+                      </ListBox>
+                    </div>
+                  </Card>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+        </div>
+      </Body>
+      <MockedWhatToReadNext
+        currentPage="bank"
+      >
+        <div
+          className="whatNext"
+        >
+          <div
+            className="whatNext__tilesContainer"
+          >
+            <WhatToReadNextSlice
+              image="pride.gif"
+              key="Pride in London-0"
+              linkKey="prideCaseStudy"
+              name="Pride in London"
+              tagline="Delivering a best-in-class digital experience"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="prideCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="prideCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Pride in London"
+                          className="whatNext__image"
+                          src="pride.gif"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Pride in London
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="prideCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="prideCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Delivering a best-in-class digital experience
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="financialTimesReadMore.jpg"
+              key="Financial Times-1"
+              linkKey="financialTimesCaseStudy"
+              name="Financial Times"
+              tagline="Lasting change for a media giant"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="financialTimesCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="financialTimesCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Financial Times"
+                          className="whatNext__image"
+                          src="financialTimesReadMore.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Financial Times
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="financialTimesCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="financialTimesCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Lasting change for a media giant
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="carTrawler.jpg"
+              key="Car Trawler-2"
+              linkKey="carTrawlerCaseStudy"
+              name="Car Trawler"
+              tagline="Creating complete CMS control for travel brands"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="carTrawlerCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="carTrawlerCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Car Trawler"
+                          className="whatNext__image"
+                          src="carTrawler.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Car Trawler
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="carTrawlerCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="carTrawlerCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Creating complete CMS control for travel brands
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+          </div>
+          <Link
+            className="whatNext__button"
+            to="ourWorkPage"
+          >
+            <NavigationLink
+              className="whatNext__button"
+              navigating={[Function]}
+              stateKey="ourWorkPage"
+            >
+              <a
+                className="whatNext__button"
+                href={null}
+                onClick={[Function]}
+              >
+                See more of our work
+              </a>
+            </NavigationLink>
+          </Link>
+        </div>
+      </MockedWhatToReadNext>
+      <_temp>
+        <Checklist
+          isHovered={false}
+          onBlur={[Function]}
+          onHover={[Function]}
+        >
+          <section
+            className="contactUsContainer"
+            id="contactUs"
+          >
+            <h2
+              className="header"
+            >
+              We can help you
+            </h2>
+            <div
+              className="contentContainer"
+            >
+              <ul
+                className="list"
+              >
+                <li
+                  className="item"
+                  key="Create & validate new ideas"
+                >
+                  Create & validate new ideas
+                </li>
+                <li
+                  className="item"
+                  key="Deliver great quality products & services, fast"
+                >
+                  Deliver great quality products & services, fast
+                </li>
+                <li
+                  className="item"
+                  key="Be bold with technology"
+                >
+                  Be bold with technology
+                </li>
+                <li
+                  className="item"
+                  key="Be more customer centric"
+                >
+                  Be more customer centric
+                </li>
+                <li
+                  className="item"
+                  key="Improve efficiency with lean practices"
+                >
+                  Improve efficiency with lean practices
+                </li>
+                <li
+                  className="item"
+                  key="Build capability & confidence"
+                >
+                  Build capability & confidence
+                </li>
+              </ul>
+              <div
+                className="imgContainer"
+              />
+            </div>
+            <div>
+              <a
+                className="mailToLink"
+                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                Send an email
+              </a>
+              <span
+                className="talkToUs"
+              >
+                hello@red-badger.com
+              </span>
+            </div>
+          </section>
+        </Checklist>
+      </_temp>
+    </ScrollTracker>
+  </CaseStudyBank>
+</Context>
+`;

@@ -53,9 +53,9 @@ const renderStep = ({ subHeader, description }: StepProps) => {
   );
 };
 
-const leanAgileSlice = () => {
+const LeanAgileSlice = () => {
   return (
-    <section className={styles.leanAgileSlice}>
+    <section className={styles.LeanAgileSlice}>
       <h2 className={styles.leanAgileHeader}>Our flexible lean and agile process</h2>
       <div className={styles.steps}>
         <div className={styles.loopContainer}>
@@ -76,4 +76,4 @@ const leanAgileSlice = () => {
   );
 };
 
-export default leanAgileSlice;
+export default LeanAgileSlice;

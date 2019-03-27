@@ -1,0 +1,1346 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/case-study/pride/ renders correctly 1`] = `
+<Context>
+  <Pride>
+    <ScrollTracker>
+      <Social
+        altText="People (Badgers) sticking post-its on a blue wall"
+        description="Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team."
+        metaImage="social.gif"
+        title="Building a react native mobile app for Pride in London | Red Badger"
+        url="https://red-badger.com/our-work/case-study/pride"
+      >
+        <HelmetWrapper
+          defer={true}
+          encodeSpecialCharacters={true}
+          meta={
+            Array [
+              Object {
+                "content": "summary_large_image",
+                "name": "twitter:card",
+              },
+              Object {
+                "content": "@redbadgerteam",
+                "name": "twitter:site",
+              },
+              Object {
+                "content": "Building a react native mobile app for Pride in London | Red Badger",
+                "name": "twitter:title",
+              },
+              Object {
+                "content": "Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.",
+                "name": "twitter:description",
+              },
+              Object {
+                "content": "https://red-badger.comsocial.gif",
+                "name": "twitter:image",
+              },
+              Object {
+                "content": "website",
+                "property": "og:type",
+              },
+              Object {
+                "content": "Building a react native mobile app for Pride in London | Red Badger",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://red-badger.comsocial.gif",
+                "property": "og:image",
+              },
+              Object {
+                "content": "https://red-badger.comsocial.gif",
+                "property": "og:image:secure_url",
+              },
+              Object {
+                "content": "People (Badgers) sticking post-its on a blue wall",
+                "property": "og:image:alt",
+              },
+              Object {
+                "content": "Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.",
+                "property": "og:description",
+              },
+              Object {
+                "content": "https://red-badger.com/our-work/case-study/pride",
+                "property": "og:url",
+              },
+            ]
+          }
+        >
+          <SideEffect(NullComponent)
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "summary_large_image",
+                  "name": "twitter:card",
+                },
+                Object {
+                  "content": "@redbadgerteam",
+                  "name": "twitter:site",
+                },
+                Object {
+                  "content": "Building a react native mobile app for Pride in London | Red Badger",
+                  "name": "twitter:title",
+                },
+                Object {
+                  "content": "Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.",
+                  "name": "twitter:description",
+                },
+                Object {
+                  "content": "https://red-badger.comsocial.gif",
+                  "name": "twitter:image",
+                },
+                Object {
+                  "content": "website",
+                  "property": "og:type",
+                },
+                Object {
+                  "content": "Building a react native mobile app for Pride in London | Red Badger",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://red-badger.comsocial.gif",
+                  "property": "og:image",
+                },
+                Object {
+                  "content": "https://red-badger.comsocial.gif",
+                  "property": "og:image:secure_url",
+                },
+                Object {
+                  "content": "People (Badgers) sticking post-its on a blue wall",
+                  "property": "og:image:alt",
+                },
+                Object {
+                  "content": "Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "https://red-badger.com/our-work/case-study/pride",
+                  "property": "og:url",
+                },
+              ]
+            }
+          >
+            <NullComponent
+              defer={true}
+              encodeSpecialCharacters={true}
+              meta={
+                Array [
+                  Object {
+                    "content": "summary_large_image",
+                    "name": "twitter:card",
+                  },
+                  Object {
+                    "content": "@redbadgerteam",
+                    "name": "twitter:site",
+                  },
+                  Object {
+                    "content": "Building a react native mobile app for Pride in London | Red Badger",
+                    "name": "twitter:title",
+                  },
+                  Object {
+                    "content": "Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.",
+                    "name": "twitter:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.comsocial.gif",
+                    "name": "twitter:image",
+                  },
+                  Object {
+                    "content": "website",
+                    "property": "og:type",
+                  },
+                  Object {
+                    "content": "Building a react native mobile app for Pride in London | Red Badger",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://red-badger.comsocial.gif",
+                    "property": "og:image",
+                  },
+                  Object {
+                    "content": "https://red-badger.comsocial.gif",
+                    "property": "og:image:secure_url",
+                  },
+                  Object {
+                    "content": "People (Badgers) sticking post-its on a blue wall",
+                    "property": "og:image:alt",
+                  },
+                  Object {
+                    "content": "Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "https://red-badger.com/our-work/case-study/pride",
+                    "property": "og:url",
+                  },
+                ]
+              }
+            />
+          </SideEffect(NullComponent)>
+        </HelmetWrapper>
+      </Social>
+      <div
+        className="headerImgWrapper"
+      >
+        <Image
+          altText="People (Badgers) sticking post-its on a blue wall"
+          className="headerImg"
+          src="header.gif"
+        >
+          <picture>
+            <source
+              className="headerImg"
+              srcSet="header.gif"
+            />
+            <img
+              alt=""
+              className="headerImg"
+              src="header.gif"
+            />
+          </picture>
+        </Image>
+      </div>
+      <Body>
+        <div
+          className="body"
+        >
+          <PageHeading>
+            <div
+              className="heading"
+            >
+              <H1
+                type="fontL"
+              >
+                <h1
+                  className="fontL "
+                >
+                  A labour of love – delivering a flagship, best-in-class digital experience for the Pride in London community
+                </h1>
+              </H1>
+            </div>
+          </PageHeading>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <Quote
+                    author={
+                      Object {
+                        "image": "Kristof_HS.jpg",
+                        "name": "Kristof Hamilton",
+                        "title": "Product Owner at Pride in London",
+                      }
+                    }
+                    text="I loved working with Red Badger. From the very start of the project I felt the passion and energy from each and every team member. You proved yourself to be a well oiled machine getting some really awesome, creative work out and working to a schedule and deadlines. Everyone at Pride is super excited and happy with what we’ve done."
+                  >
+                    <Quote
+                      author={
+                        Object {
+                          "image": "Kristof_HS.jpg",
+                          "name": "Kristof Hamilton",
+                          "title": "Product Owner at Pride in London",
+                        }
+                      }
+                      className="quote"
+                      text="I loved working with Red Badger. From the very start of the project I felt the passion and energy from each and every team member. You proved yourself to be a well oiled machine getting some really awesome, creative work out and working to a schedule and deadlines. Everyone at Pride is super excited and happy with what we’ve done."
+                    >
+                      <div
+                        className="quotation quote"
+                      >
+                        <div
+                          className="quotation__text"
+                        >
+                          <blockquote
+                            className="quotation__quote"
+                          >
+                            I loved working with Red Badger. From the very start of the project I felt the passion and energy from each and every team member. You proved yourself to be a well oiled machine getting some really awesome, creative work out and working to a schedule and deadlines. Everyone at Pride is super excited and happy with what we’ve done.
+                          </blockquote>
+                        </div>
+                        <div
+                          className="quotation__author"
+                        >
+                          <Avatar
+                            image="Kristof_HS.jpg"
+                            name="Kristof Hamilton"
+                            size={70}
+                          >
+                            <div
+                              className="avatar__container"
+                              style={
+                                Object {
+                                  "height": 70,
+                                  "minHeight": 70,
+                                  "minWidth": 70,
+                                  "width": 70,
+                                }
+                              }
+                            >
+                              <img
+                                alt="Kristof Hamilton"
+                                src="Kristof_HS.jpg"
+                              />
+                            </div>
+                          </Avatar>
+                          <div
+                            className="quotation__author__wrapper"
+                          >
+                            <div
+                              className="quotation__author__name"
+                            >
+                              — 
+                              Kristof Hamilton
+                            </div>
+                            <div
+                              className="quotation__author__title"
+                            >
+                              Product Owner at Pride in London
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Quote>
+                  </Quote>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Encouraging festival discovery with a mobile app"
+                subHeading="Let's make things better"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Let's make things better
+                  </span>
+                  Encouraging festival discovery with a mobile app
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Pride in London is a non-profit, volunteer-led organisation which works to provide a platform for every part of London’s LGBTQ+ community and campaigns for freedoms that will allow them to live their lives on a genuinely equal footing. It’s ​the ​world’s largest curated ​LGBTQ+ ​festival ​with ​over ​300 ​LGBTQ+ events, ​culminating ​in a Pride parade ​through ​Central ​London. Over 1 million visitors join the day, including 30,000 parade participants from ​all ​over ​the ​UK ​and abroad.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Pride In London released their first app for the 2017 parade. 2018 saw more ambitious goals for the events and also the digital experience. Red Badger worked with Pride in London to define the vision for the project. As part of this we mapped a set of key requirements, at the core of which were inclusivity and accessibility, reflecting values and behaviour of Pride in London and respecting the diversity of the community they serve. The main requirement of the app was to encourage the discovery of the events and help Pride goers navigate the parade. Due to organisational challenges, we were not able to reuse the code developed for the previous app thus the product had to be built from scratch.
+                      </p>
+                    </P>
+                  </P>
+                  <Triptych>
+                    <div>
+                      <div
+                        className="wrapper"
+                      >
+                        <img
+                          alt=""
+                          className="leftImg"
+                          src="left.jpg"
+                        />
+                        <img
+                          alt=""
+                          className="middleImg"
+                          src="middle.jpg"
+                        />
+                        <img
+                          alt=""
+                          className="rightImg"
+                          src="right.jpg"
+                        />
+                      </div>
+                      <div>
+                        <form
+                          action=""
+                          className="controls"
+                        >
+                          <label
+                            key="0"
+                          >
+                            <span
+                              className="fakeControl "
+                            />
+                            <span
+                              className="controlsLabel"
+                            >
+                              First
+                            </span>
+                            <input
+                              className="controlsInput"
+                              name="image"
+                              onChange={[Function]}
+                              type="radio"
+                              value={0}
+                            />
+                          </label>
+                          <label
+                            key="1"
+                          >
+                            <span
+                              className="fakeControl fakeControlActive"
+                            />
+                            <span
+                              className="controlsLabel"
+                            >
+                              First
+                            </span>
+                            <input
+                              className="controlsInput"
+                              name="image"
+                              onChange={[Function]}
+                              type="radio"
+                              value={1}
+                            />
+                          </label>
+                          <label
+                            key="2"
+                          >
+                            <span
+                              className="fakeControl "
+                            />
+                            <span
+                              className="controlsLabel"
+                            >
+                              First
+                            </span>
+                            <input
+                              className="controlsInput"
+                              name="image"
+                              onChange={[Function]}
+                              type="radio"
+                              value={2}
+                            />
+                          </label>
+                        </form>
+                      </div>
+                    </div>
+                  </Triptych>
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        The right project for Red Badger
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        As a business we've always been proud of the work we do and two years ago we decided to focus more on delivering social good, leading to us establishing a Social Value team. The Pride in London app was the perfect project to demonstrate what we could achieve by volunteering our time.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        It was the right project for us on many fronts, allowing us to:
+                      </p>
+                    </P>
+                  </P>
+                  <UL>
+                    <ul
+                      className="list"
+                    >
+                      <li>
+                        Work with a brand that chimes with Red Badger’s own values of valuing diversity, and being inclusive and accessible
+                      </li>
+                      <li>
+                        Design and deliver the app as a truly cross-functional team 
+                      </li>
+                      <li>
+                        Choose the right tech for the job 
+                      </li>
+                      <li>
+                        Demonstrate how best in class delivery can create social value
+                      </li>
+                    </ul>
+                  </UL>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Working as a cross-functional volunteer team"
+                subHeading="Do the right thing. Do the thing right"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Do the right thing. Do the thing right
+                  </span>
+                  Working as a cross-functional volunteer team
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Remote cross-functional team
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        At Red Badger we usually work in cross-functional teams, co-locating with our clients to enable short feedback loops and highly efficient teams. In a voluntary project this wasn’t possible and it was particularly challenging.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        At the beginning of the project we had volunteers from our Strategy, Branding, User Experience, Design, Delivery, Engineering teams and Pride in London, in the same room, collaborating on the product vision and roadmap. We agreed that the app had to be a place to promote and showcase the diversity of the 2018 festival and parade, help people discover, plan and get involved in events, while also making it simple and easy to use.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        We ran a branding workshop early on. This helped define the design approach and the creative vision for the app. Our approach centred on a richer, more cohesive experience for the user.
+                      </p>
+                    </P>
+                  </P>
+                  <ArticleImg
+                    alt=""
+                    src="collaboration.jpg"
+                  >
+                    <img
+                      alt=""
+                      className="articleImg"
+                      src="collaboration.jpg"
+                    />
+                  </ArticleImg>
+                  <H3>
+                    <H3
+                      type="fontS2"
+                    >
+                      <h3
+                        className="fontS2 "
+                      >
+                        Choosing React Native as the right tech for the job
+                      </h3>
+                    </H3>
+                  </H3>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        When looking into which tech would be best to deliver a fully functioning app across two platforms, React Native came up top. Firstly, it meant we could open source the project and give back to the tech community which we collectively rely so heavily on. Secondly, it meant that we could develop our skills and expertise in a growing technology that has incredible potential for the future – not just for Pride in London, but for our other clients too. Thirdly, given tight timelines, we could deliver a minimum desirable mobile product for both iOS and Android platforms quickly, and iterate from there.
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionHeading
+                heading="Proud to have built the Pride in London Mobile App"
+                subHeading="Creating lasting change"
+              >
+                <h2
+                  className="sectionHeading"
+                >
+                  <span
+                    className="redTitle"
+                  >
+                    Creating lasting change
+                  </span>
+                  Proud to have built the Pride in London Mobile App
+                </h2>
+              </SectionHeading>
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Proud is the word that best encompasses the ethos of the project. We’re incredibly proud of the quality of work and the product we delivered for Pride In London 2018 festival.
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Amongst the things we’re most proud of are:
+                      </p>
+                    </P>
+                  </P>
+                  <UL>
+                    <ul
+                      className="list"
+                    >
+                      <li>
+                        Partnering with an organisation that promotes equality, diversity and inclusion
+                      </li>
+                      <li>
+                        Developing an open source project that can live beyond our involvement and be easily improved for the next year’s events
+                      </li>
+                      <li>
+                        Delivering a 5★ app experience with AA accessibility standards 
+                      </li>
+                      <li>
+                        Helping 20,000+ people navigate the festival and parade
+                      </li>
+                      <li>
+                        Delivering an end-to-end mobile product in 6 months working as a genuinely cross-functional team
+                      </li>
+                      <li>
+                        Delivering a project using React Native and learning some valuable lessons along the way
+                      </li>
+                    </ul>
+                  </UL>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        You can read more in-depth about
+                         
+                        <a
+                          href="https://blog.red-badger.com/2018/6/27/branding-the-pride-in-london-app"
+                        >
+                          Branding
+                        </a>
+                        ,
+                         
+                        <a
+                          href="https://blog.red-badger.com/2018/6/28/designing-pride-into-the-experience"
+                        >
+                          UX
+                        </a>
+                        ,
+                         
+                        <a
+                          href="https://red-badger.com/blog/2018/6/28/pride-in-london-going-native"
+                        >
+                          React Native
+                        </a>
+                        ,
+                         
+                        <a
+                          href="https://blog.red-badger.com/blog/2018/6/28/open-source-with-pride"
+                        >
+                          Open Source
+                        </a>
+                         
+                        and
+                         
+                        <a
+                          href="https://blog.red-badger.com/2018/6/28/the-pride-in-london-2018-app-delivering-a-rainbow"
+                        >
+                          Delivery
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Since completing this project we have been approached and engaged with some new clients on mobile projects. If you have a mobile app project in mind we’d love to talk to you about how to apply our knowledge and skills to help you deliver great mobile experiences for your customers. Please get in touch on
+                         
+                        <a
+                          className="link"
+                          href="email:hello@red-badger.com"
+                        >
+                          hello@red-badger.com
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                  <P>
+                    <P
+                      customClass="paragraph"
+                    >
+                      <p
+                        className="fontXS paragraph"
+                      >
+                        Are you a charity or NGO looking for help with your project? Our social value team offer pro bono or reduced rates. Please contact us at
+                         
+                        <a
+                          className="link"
+                          href="email:socialvalue@red-badger.com"
+                        >
+                          socialvalue@red-badger.com
+                        </a>
+                        .
+                      </p>
+                    </P>
+                  </P>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <Video
+                elementId="pride-video"
+                name="Pride video"
+                videoId="PwA3wDnYq4Y"
+              >
+                <div
+                  className="videoContainer"
+                >
+                  <span>
+                    <div
+                      id="pride-video"
+                    />
+                  </span>
+                </div>
+              </Video>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <Card>
+                    <div
+                      className="Card"
+                    >
+                      <ListBox
+                        className="listBox"
+                        itemClassName="listBox__item"
+                        items={
+                          Array [
+                            Object {
+                              "label": "21,000+ app downloads, +50% vs. 2017",
+                            },
+                            Object {
+                              "label": "1,000 daily active users, +280% vs. 2017",
+                            },
+                            Object {
+                              "label": "1000+ hours on the app on Parade Day alone",
+                            },
+                            Object {
+                              "label": "5★ user ratings on iOS and Android platforms",
+                            },
+                            Object {
+                              "label": "Featured as an app of the day on App Store",
+                            },
+                            Object {
+                              "label": "‘AA’ accessibility standard",
+                            },
+                          ]
+                        }
+                        title="Results"
+                      >
+                        <div
+                          className="listBox listBox"
+                        >
+                          <h3
+                            className="listBox__heading"
+                          >
+                            Results
+                          </h3>
+                          <ul>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="21,000+ app downloads, +50% vs. 2017"
+                            >
+                              <div>
+                                21,000+ app downloads, +50% vs. 2017
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="1,000 daily active users, +280% vs. 2017"
+                            >
+                              <div>
+                                1,000 daily active users, +280% vs. 2017
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="1000+ hours on the app on Parade Day alone"
+                            >
+                              <div>
+                                1000+ hours on the app on Parade Day alone
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="5★ user ratings on iOS and Android platforms"
+                            >
+                              <div>
+                                5★ user ratings on iOS and Android platforms
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="Featured as an app of the day on App Store"
+                            >
+                              <div>
+                                Featured as an app of the day on App Store
+                              </div>
+                              <div />
+                            </li>
+                            <li
+                              className="listBox__element listBox__element--results listBox__item"
+                              key="‘AA’ accessibility standard"
+                            >
+                              <div>
+                                ‘AA’ accessibility standard
+                              </div>
+                              <div />
+                            </li>
+                          </ul>
+                        </div>
+                      </ListBox>
+                    </div>
+                  </Card>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+          <Section>
+            <div
+              className="section"
+            >
+              <SectionBody>
+                <div
+                  className="sectionBody"
+                >
+                  <Quote
+                    author={
+                      Object {
+                        "image": "Lani_HS.jpg",
+                        "name": "Lani Shamash",
+                        "title": "Delivery Director at Red Badger",
+                      }
+                    }
+                    text="Pride in London’s new app was an exciting challenge for Red Badger and all the volunteers involved. As a pro-bono, voluntary, open source project that has been built for the community, by the community, it’s been a true labour of love and collaboration. The app is a culmination of all the volunteers’ work and truly reflects the enthusiasm they brought to the project."
+                  >
+                    <Quote
+                      author={
+                        Object {
+                          "image": "Lani_HS.jpg",
+                          "name": "Lani Shamash",
+                          "title": "Delivery Director at Red Badger",
+                        }
+                      }
+                      className="quote"
+                      text="Pride in London’s new app was an exciting challenge for Red Badger and all the volunteers involved. As a pro-bono, voluntary, open source project that has been built for the community, by the community, it’s been a true labour of love and collaboration. The app is a culmination of all the volunteers’ work and truly reflects the enthusiasm they brought to the project."
+                    >
+                      <div
+                        className="quotation quote"
+                      >
+                        <div
+                          className="quotation__text"
+                        >
+                          <blockquote
+                            className="quotation__quote"
+                          >
+                            Pride in London’s new app was an exciting challenge for Red Badger and all the volunteers involved. As a pro-bono, voluntary, open source project that has been built for the community, by the community, it’s been a true labour of love and collaboration. The app is a culmination of all the volunteers’ work and truly reflects the enthusiasm they brought to the project.
+                          </blockquote>
+                        </div>
+                        <div
+                          className="quotation__author"
+                        >
+                          <Avatar
+                            image="Lani_HS.jpg"
+                            name="Lani Shamash"
+                            size={70}
+                          >
+                            <div
+                              className="avatar__container"
+                              style={
+                                Object {
+                                  "height": 70,
+                                  "minHeight": 70,
+                                  "minWidth": 70,
+                                  "width": 70,
+                                }
+                              }
+                            >
+                              <img
+                                alt="Lani Shamash"
+                                src="Lani_HS.jpg"
+                              />
+                            </div>
+                          </Avatar>
+                          <div
+                            className="quotation__author__wrapper"
+                          >
+                            <div
+                              className="quotation__author__name"
+                            >
+                              — 
+                              Lani Shamash
+                            </div>
+                            <div
+                              className="quotation__author__title"
+                            >
+                              Delivery Director at Red Badger
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Quote>
+                  </Quote>
+                </div>
+              </SectionBody>
+            </div>
+          </Section>
+        </div>
+      </Body>
+      <MockedWhatToReadNext
+        currentPage="pride"
+        linkKeys={Array []}
+      >
+        <div
+          className="whatNext"
+        >
+          <div
+            className="whatNext__tilesContainer"
+          >
+            <WhatToReadNextSlice
+              image="pride.gif"
+              key="Pride in London-0"
+              linkKey="prideCaseStudy"
+              name="Pride in London"
+              tagline="Delivering a best-in-class digital experience"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="prideCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="prideCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Pride in London"
+                          className="whatNext__image"
+                          src="pride.gif"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Pride in London
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="prideCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="prideCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Delivering a best-in-class digital experience
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="financialTimesReadMore.jpg"
+              key="Financial Times-1"
+              linkKey="financialTimesCaseStudy"
+              name="Financial Times"
+              tagline="Lasting change for a media giant"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="financialTimesCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="financialTimesCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Financial Times"
+                          className="whatNext__image"
+                          src="financialTimesReadMore.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Financial Times
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="financialTimesCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="financialTimesCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Lasting change for a media giant
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+            <WhatToReadNextSlice
+              image="carTrawler.jpg"
+              key="Car Trawler-2"
+              linkKey="carTrawlerCaseStudy"
+              name="Car Trawler"
+              tagline="Creating complete CMS control for travel brands"
+            >
+              <div
+                className="whatNext__tile"
+              >
+                <figure>
+                  <Link
+                    to="carTrawlerCaseStudy"
+                  >
+                    <NavigationLink
+                      className=""
+                      navigating={[Function]}
+                      stateKey="carTrawlerCaseStudy"
+                    >
+                      <a
+                        className=""
+                        href={null}
+                        onClick={[Function]}
+                      >
+                        <img
+                          alt="Car Trawler"
+                          className="whatNext__image"
+                          src="carTrawler.jpg"
+                        />
+                      </a>
+                    </NavigationLink>
+                  </Link>
+                  <figcaption
+                    className="whatNext__caption"
+                  >
+                    Car Trawler
+                  </figcaption>
+                </figure>
+                <Link
+                  className="whatNext__link"
+                  to="carTrawlerCaseStudy"
+                >
+                  <NavigationLink
+                    className="whatNext__link"
+                    navigating={[Function]}
+                    stateKey="carTrawlerCaseStudy"
+                  >
+                    <a
+                      className="whatNext__link"
+                      href={null}
+                      onClick={[Function]}
+                    >
+                      <h2
+                        className="whatNext__title"
+                      >
+                        Creating complete CMS control for travel brands
+                        <span
+                          className="whatNext__arrow_wrapper"
+                        >
+                          <Arrow
+                            className="whatNext__arrow"
+                          >
+                            <svg
+                              className="whatNext__arrow"
+                              viewBox="0 0 22 22"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                                fill="#FC1D42"
+                                fillRule="evenodd"
+                                stroke="#FC1D42"
+                              />
+                            </svg>
+                          </Arrow>
+                        </span>
+                      </h2>
+                    </a>
+                  </NavigationLink>
+                </Link>
+              </div>
+            </WhatToReadNextSlice>
+          </div>
+          <Link
+            className="whatNext__button"
+            to="ourWorkPage"
+          >
+            <NavigationLink
+              className="whatNext__button"
+              navigating={[Function]}
+              stateKey="ourWorkPage"
+            >
+              <a
+                className="whatNext__button"
+                href={null}
+                onClick={[Function]}
+              >
+                See more of our work
+              </a>
+            </NavigationLink>
+          </Link>
+        </div>
+      </MockedWhatToReadNext>
+      <_temp>
+        <Checklist
+          isHovered={false}
+          onBlur={[Function]}
+          onHover={[Function]}
+        >
+          <section
+            className="contactUsContainer"
+            id="contactUs"
+          >
+            <h2
+              className="header"
+            >
+              We can help you
+            </h2>
+            <div
+              className="contentContainer"
+            >
+              <ul
+                className="list"
+              >
+                <li
+                  className="item"
+                  key="Create & validate new ideas"
+                >
+                  Create & validate new ideas
+                </li>
+                <li
+                  className="item"
+                  key="Deliver great quality products & services, fast"
+                >
+                  Deliver great quality products & services, fast
+                </li>
+                <li
+                  className="item"
+                  key="Be bold with technology"
+                >
+                  Be bold with technology
+                </li>
+                <li
+                  className="item"
+                  key="Be more customer centric"
+                >
+                  Be more customer centric
+                </li>
+                <li
+                  className="item"
+                  key="Improve efficiency with lean practices"
+                >
+                  Improve efficiency with lean practices
+                </li>
+                <li
+                  className="item"
+                  key="Build capability & confidence"
+                >
+                  Build capability & confidence
+                </li>
+              </ul>
+              <div
+                className="imgContainer"
+              />
+            </div>
+            <div>
+              <a
+                className="mailToLink"
+                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+              >
+                Send an email
+              </a>
+              <span
+                className="talkToUs"
+              >
+                hello@red-badger.com
+              </span>
+            </div>
+          </section>
+        </Checklist>
+      </_temp>
+    </ScrollTracker>
+  </Pride>
+</Context>
+`;
