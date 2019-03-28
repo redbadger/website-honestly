@@ -1,860 +1,482 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/our-work/case-study/sky-cms/ renders correctly 1`] = `
-<Context>
-  <SkyCmsCaseStudy>
-    <ScrollTracker>
+<div
+  class="caseStudy"
+>
+  <div
+    class="header"
+  >
+    <div
+      class="header__container"
+    >
       <div
-        className="caseStudy"
+        class="header__imageContainer"
       >
-        <Social
-          altText="An illustration of people assembling building-size letters C, M and S."
-          description="Enabling Sky to manage their content with an amazing customer experience."
-          metaImage="header.png"
-          title="Bespoke and made from scratch: a new CMS for Sky | Red Badger"
-          url="https://red-badger.com/our-work/case-study/sky-cms"
-        >
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "Bespoke and made from scratch: a new CMS for Sky | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "Enabling Sky to manage their content with an amazing customer experience.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.comheader.png",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "Bespoke and made from scratch: a new CMS for Sky | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.comheader.png",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.comheader.png",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "An illustration of people assembling building-size letters C, M and S.",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "Enabling Sky to manage their content with an amazing customer experience.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/our-work/case-study/sky-cms",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <SideEffect(NullComponent)
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "Bespoke and made from scratch: a new CMS for Sky | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "Enabling Sky to manage their content with an amazing customer experience.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader.png",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "Bespoke and made from scratch: a new CMS for Sky | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader.png",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader.png",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "An illustration of people assembling building-size letters C, M and S.",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "Enabling Sky to manage their content with an amazing customer experience.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/our-work/case-study/sky-cms",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            >
-              <NullComponent
-                defer={true}
-                encodeSpecialCharacters={true}
-                meta={
-                  Array [
-                    Object {
-                      "content": "summary_large_image",
-                      "name": "twitter:card",
-                    },
-                    Object {
-                      "content": "@redbadgerteam",
-                      "name": "twitter:site",
-                    },
-                    Object {
-                      "content": "Bespoke and made from scratch: a new CMS for Sky | Red Badger",
-                      "name": "twitter:title",
-                    },
-                    Object {
-                      "content": "Enabling Sky to manage their content with an amazing customer experience.",
-                      "name": "twitter:description",
-                    },
-                    Object {
-                      "content": "https://red-badger.comheader.png",
-                      "name": "twitter:image",
-                    },
-                    Object {
-                      "content": "website",
-                      "property": "og:type",
-                    },
-                    Object {
-                      "content": "Bespoke and made from scratch: a new CMS for Sky | Red Badger",
-                      "property": "og:title",
-                    },
-                    Object {
-                      "content": "https://red-badger.comheader.png",
-                      "property": "og:image",
-                    },
-                    Object {
-                      "content": "https://red-badger.comheader.png",
-                      "property": "og:image:secure_url",
-                    },
-                    Object {
-                      "content": "An illustration of people assembling building-size letters C, M and S.",
-                      "property": "og:image:alt",
-                    },
-                    Object {
-                      "content": "Enabling Sky to manage their content with an amazing customer experience.",
-                      "property": "og:description",
-                    },
-                    Object {
-                      "content": "https://red-badger.com/our-work/case-study/sky-cms",
-                      "property": "og:url",
-                    },
-                  ]
-                }
-              />
-            </SideEffect(NullComponent)>
-          </HelmetWrapper>
-        </Social>
-        <div
-          className="header"
-        >
-          <div
-            className="header__container"
-          >
-            <div
-              className="header__imageContainer"
-            >
-              <img
-                alt="Sky CMS"
-                className="header__image"
-                src="header.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="content"
-        >
-          <div
-            className="content__mainTitleWrapper"
-          >
-            <h1
-              className="content__mainTitle"
-            >
-              Bespoke and made from scratch: a new CMS just for Sky
-            </h1>
-          </div>
-          <div
-            className="overview"
-          >
-            <Quote
-              author={
-                Object {
-                  "image": "quote-author.jpg",
-                  "name": "David Crawford",
-                  "title": "Head of Software Engineering, Sky",
-                }
-              }
-              className="quote"
-              text="The new site and CMS have given us the flexibility we needed to effectively update and manage the Help site. It allows us to take an agile approach to the way we work and respond to consumer requirements faster and more efficiently."
-            >
-              <div
-                className="quotation quote"
-              >
-                <div
-                  className="quotation__text"
-                >
-                  <blockquote
-                    className="quotation__quote"
-                  >
-                    The new site and CMS have given us the flexibility we needed to effectively update and manage the Help site. It allows us to take an agile approach to the way we work and respond to consumer requirements faster and more efficiently.
-                  </blockquote>
-                </div>
-                <div
-                  className="quotation__author"
-                >
-                  <Avatar
-                    image="quote-author.jpg"
-                    name="David Crawford"
-                    size={70}
-                  >
-                    <div
-                      className="avatar__container"
-                      style={
-                        Object {
-                          "height": 70,
-                          "minHeight": 70,
-                          "minWidth": 70,
-                          "width": 70,
-                        }
-                      }
-                    >
-                      <img
-                        alt="David Crawford"
-                        src="quote-author.jpg"
-                      />
-                    </div>
-                  </Avatar>
-                  <div
-                    className="quotation__author__wrapper"
-                  >
-                    <div
-                      className="quotation__author__name"
-                    >
-                      — 
-                      David Crawford
-                    </div>
-                    <div
-                      className="quotation__author__title"
-                    >
-                      Head of Software Engineering, Sky
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Quote>
-            <Card
-              className="listBoxContainer"
-            >
-              <div
-                className="Card listBoxContainer"
-              >
-                <ListBox
-                  itemClassName="listBox__item"
-                  items={
-                    Array [
-                      Object {
-                        "label": "New intuitive CMS creating more efficient system, freeing up time to focus on the content ",
-                      },
-                      Object {
-                        "label": "Tripled the number of issues resolved through online self-help journey",
-                      },
-                    ]
-                  }
-                  labelClassName="listBox__label"
-                  title="Results"
-                >
-                  <div
-                    className="listBox"
-                  >
-                    <h3
-                      className="listBox__heading"
-                    >
-                      Results
-                    </h3>
-                    <ul>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="New intuitive CMS creating more efficient system, freeing up time to focus on the content "
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          New intuitive CMS creating more efficient system, freeing up time to focus on the content 
-                        </div>
-                        <div />
-                      </li>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="Tripled the number of issues resolved through online self-help journey"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          Tripled the number of issues resolved through online self-help journey
-                        </div>
-                        <div />
-                      </li>
-                    </ul>
-                  </div>
-                </ListBox>
-              </div>
-            </Card>
-          </div>
-          <div
-            className="content__wrapper"
-          >
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Let’s make things better.
-              </span>
-              Enabling Sky to manage their content with an amazing customer experience
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              A CMS is responsible for three things: storing content, editing content, and publishing content. These are three distinct functions with their own challenges and should be built as such. If you get this part right and built in a reusable way, specifics can be built on top of them.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              As part of its commitment to customer service excellence, Sky wanted to optimize their online self-help service and make it easier for their customers to find solutions to their problems. In a modern world where customer behavior is driving constantly changing requirements and an expectation of brilliant customer experience, it is vital that both a CMS and the website it drives are adaptable to these demands.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              Taking off the shelf products such as Drupal and trying to bend them to your requirements is simply not good enough anymore. They are far too rigid to cope with ever changing demands and inhibit customer experience.
-            </p>
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Do the right thing. Do the thing right.
-              </span>
-              Bespoke customisation tools for a built-from-scratch CMS
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              Red Badger worked with Sky to conduct an objective build vs buy exercise. Analysis of the available tools revealed that the customisation required to make an off-the-shelf tool fit for purpose meant that greater efficiencies could be achieved by implementing a bespoke solution tailored to their business requirements, leveraging an open-source foundation.
-            </p>
-            <ContactBox>
-              <div
-                className="contactBox"
-              >
-                <h2
-                  className="contactBox__heading"
-                >
-                  Project in mind?
-                </h2>
-                <button
-                  className="contactBox__button"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Tell us more
-                </button>
-              </div>
-            </ContactBox>
-            <p
-              className="content__paragraph"
-            >
-              The decision was made to build a new CMS from scratch with three main components to deal with the individual concerns; storing, editing and publishing content. The result is a modern CMS that fits Sky’s requirements exactly - one that would be the foundation of a whole new Help site that could support both customers and the internal content team far more effectively. As demand changes, new features can also be rolled out faster and cheaper due to reduced interdependence and complexity.
-            </p>
-            <h3
-              className="content__secondaryTitle"
-            >
-              Innovative features of the CMS include:
-            </h3>
-            <div
-              className="content__paragraph"
-            >
-              <ul
-                className="content__ordered__list"
-              >
-                <li
-                  className="content__ordered__list__element"
-                >
-                  An editor to build content out of blocks - pluggable components for different types of content (text, image, video, tabs)
-                </li>
-                <li
-                  className="content__ordered__list__element"
-                >
-                  A very rich editing experience tailored to Sky’s needs
-                </li>
-                <li
-                  className="content__ordered__list__element"
-                >
-                  Full audit mechanism which makes it easy to revert to previous versions
-                </li>
-                <li
-                  className="content__ordered__list__element"
-                >
-                  Continuous Deployment pipeline to publish new features into live in seconds
-                </li>
-                <li
-                  className="content__ordered__list__element"
-                >
-                  Responsive Web Design support with preview on desktop, mobile and tablet
-                </li>
-                <li
-                  className="content__ordered__list__element"
-                >
-                  ElasticSearch integration for fast and flexible search
-                </li>
-                <li
-                  className="content__ordered__list__element"
-                >
-                  Image hub to allow content editors to add and store images to the site, reusable for different purposes
-                </li>
-              </ul>
-            </div>
-            <p
-              className="content__paragraph"
-            >
-              <img
-                alt="cms illustration"
-                className="cmsIllustration__image"
-                src="cms-illustration.jpg"
-              />
-            </p>
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Creating lasting change.
-              </span>
-              A system so good, it’s being adopted across the business
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              The new CMS enables editors to provide users with the content they need, fast and efficiently. It has created a greatly enhanced customer experience on the Sky Help site and reduced the time (and skills) required to update and amend content. It is also future proofed, being incredibly easy to scale as requirements change.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              User behavior is closely monitored so that any issues are made apparent and dealt with straight away. In one example, Sky were able to diagnose an issue as it arose, publish content to solve it, and drop the number of customers pushing the ‘need more help’ button by 50%.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              The components on which the CMS is built have proved to be so effectual that they are now used to support other Sky sites and were made available to everyone as an open source software.
-            </p>
-          </div>
-        </div>
-        <MockedWhatToReadNext
-          currentPage="skyCms"
-          linkKeys={
-            Array [
-              "sky",
-            ]
-          }
-        >
-          <div
-            className="whatNext"
-          >
-            <div
-              className="whatNext__tilesContainer"
-            >
-              <WhatToReadNextSlice
-                image="pride.gif"
-                key="Pride in London-0"
-                linkKey="prideCaseStudy"
-                name="Pride in London"
-                tagline="Delivering a best-in-class digital experience"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="prideCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="prideCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Pride in London"
-                            className="whatNext__image"
-                            src="pride.gif"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Pride in London
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="prideCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="prideCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Delivering a best-in-class digital experience
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-              <WhatToReadNextSlice
-                image="financialTimesReadMore.jpg"
-                key="Financial Times-1"
-                linkKey="financialTimesCaseStudy"
-                name="Financial Times"
-                tagline="Lasting change for a media giant"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="financialTimesCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="financialTimesCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Financial Times"
-                            className="whatNext__image"
-                            src="financialTimesReadMore.jpg"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Financial Times
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="financialTimesCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="financialTimesCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Lasting change for a media giant
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-              <WhatToReadNextSlice
-                image="carTrawler.jpg"
-                key="Car Trawler-2"
-                linkKey="carTrawlerCaseStudy"
-                name="Car Trawler"
-                tagline="Creating complete CMS control for travel brands"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="carTrawlerCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="carTrawlerCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Car Trawler"
-                            className="whatNext__image"
-                            src="carTrawler.jpg"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Car Trawler
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="carTrawlerCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="carTrawlerCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Creating complete CMS control for travel brands
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-            </div>
-            <Link
-              className="whatNext__button"
-              to="ourWorkPage"
-            >
-              <NavigationLink
-                className="whatNext__button"
-                navigating={[Function]}
-                stateKey="ourWorkPage"
-              >
-                <a
-                  className="whatNext__button"
-                  href={null}
-                  onClick={[Function]}
-                >
-                  See more of our work
-                </a>
-              </NavigationLink>
-            </Link>
-          </div>
-        </MockedWhatToReadNext>
-        <_temp>
-          <Checklist
-            isHovered={false}
-            onBlur={[Function]}
-            onHover={[Function]}
-          >
-            <section
-              className="contactUsContainer"
-              id="contactUs"
-            >
-              <h2
-                className="header"
-              >
-                We can help you
-              </h2>
-              <div
-                className="contentContainer"
-              >
-                <ul
-                  className="list"
-                >
-                  <li
-                    className="item"
-                    key="Create & validate new ideas"
-                  >
-                    Create & validate new ideas
-                  </li>
-                  <li
-                    className="item"
-                    key="Deliver great quality products & services, fast"
-                  >
-                    Deliver great quality products & services, fast
-                  </li>
-                  <li
-                    className="item"
-                    key="Be bold with technology"
-                  >
-                    Be bold with technology
-                  </li>
-                  <li
-                    className="item"
-                    key="Be more customer centric"
-                  >
-                    Be more customer centric
-                  </li>
-                  <li
-                    className="item"
-                    key="Improve efficiency with lean practices"
-                  >
-                    Improve efficiency with lean practices
-                  </li>
-                  <li
-                    className="item"
-                    key="Build capability & confidence"
-                  >
-                    Build capability & confidence
-                  </li>
-                </ul>
-                <div
-                  className="imgContainer"
-                />
-              </div>
-              <div>
-                <a
-                  className="mailToLink"
-                  href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                >
-                  Send an email
-                </a>
-                <span
-                  className="talkToUs"
-                >
-                  hello@red-badger.com
-                </span>
-              </div>
-            </section>
-          </Checklist>
-        </_temp>
+        <img
+          alt="Sky CMS"
+          class="header__image"
+          src="header.png"
+        />
       </div>
-    </ScrollTracker>
-  </SkyCmsCaseStudy>
-</Context>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__mainTitleWrapper"
+    >
+      <h1
+        class="content__mainTitle"
+      >
+        Bespoke and made from scratch: a new CMS just for Sky
+      </h1>
+    </div>
+    <div
+      class="overview"
+    >
+      <div
+        class="quotation quote"
+      >
+        <div
+          class="quotation__text"
+        >
+          <blockquote
+            class="quotation__quote"
+          >
+            The new site and CMS have given us the flexibility we needed to effectively update and manage the Help site. It allows us to take an agile approach to the way we work and respond to consumer requirements faster and more efficiently.
+          </blockquote>
+        </div>
+        <div
+          class="quotation__author"
+        >
+          <div
+            class="avatar__container"
+            style="width:70px;height:70px;min-width:70px;min-height:70px"
+          >
+            <img
+              alt="David Crawford"
+              src="quote-author.jpg"
+            />
+          </div>
+          <div
+            class="quotation__author__wrapper"
+          >
+            <div
+              class="quotation__author__name"
+            >
+              — David Crawford
+            </div>
+            <div
+              class="quotation__author__title"
+            >
+              Head of Software Engineering, Sky
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="Card listBoxContainer"
+      >
+        <div
+          class="listBox"
+        >
+          <h3
+            class="listBox__heading"
+          >
+            Results
+          </h3>
+          <ul>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                New intuitive CMS creating more efficient system, freeing up time to focus on the content 
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                Tripled the number of issues resolved through online self-help journey
+              </div>
+              <div />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="content__wrapper"
+    >
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Let’s make things better.
+        </span>
+        Enabling Sky to manage their content with an amazing customer experience
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        A CMS is responsible for three things: storing content, editing content, and publishing content. These are three distinct functions with their own challenges and should be built as such. If you get this part right and built in a reusable way, specifics can be built on top of them.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        As part of its commitment to customer service excellence, Sky wanted to optimize their online self-help service and make it easier for their customers to find solutions to their problems. In a modern world where customer behavior is driving constantly changing requirements and an expectation of brilliant customer experience, it is vital that both a CMS and the website it drives are adaptable to these demands.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        Taking off the shelf products such as Drupal and trying to bend them to your requirements is simply not good enough anymore. They are far too rigid to cope with ever changing demands and inhibit customer experience.
+      </p>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Do the right thing. Do the thing right.
+        </span>
+        Bespoke customisation tools for a built-from-scratch CMS
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        Red Badger worked with Sky to conduct an objective build vs buy exercise. Analysis of the available tools revealed that the customisation required to make an off-the-shelf tool fit for purpose meant that greater efficiencies could be achieved by implementing a bespoke solution tailored to their business requirements, leveraging an open-source foundation.
+      </p>
+      <div
+        class="contactBox"
+      >
+        <h2
+          class="contactBox__heading"
+        >
+          Project in mind?
+        </h2>
+        <button
+          class="contactBox__button"
+          type="button"
+        >
+          Tell us more
+        </button>
+      </div>
+      <p
+        class="content__paragraph"
+      >
+        The decision was made to build a new CMS from scratch with three main components to deal with the individual concerns; storing, editing and publishing content. The result is a modern CMS that fits Sky’s requirements exactly - one that would be the foundation of a whole new Help site that could support both customers and the internal content team far more effectively. As demand changes, new features can also be rolled out faster and cheaper due to reduced interdependence and complexity.
+      </p>
+      <h3
+        class="content__secondaryTitle"
+      >
+        Innovative features of the CMS include:
+      </h3>
+      <div
+        class="content__paragraph"
+      >
+        <ul
+          class="content__ordered__list"
+        >
+          <li
+            class="content__ordered__list__element"
+          >
+            An editor to build content out of blocks - pluggable components for different types of content (text, image, video, tabs)
+          </li>
+          <li
+            class="content__ordered__list__element"
+          >
+            A very rich editing experience tailored to Sky’s needs
+          </li>
+          <li
+            class="content__ordered__list__element"
+          >
+            Full audit mechanism which makes it easy to revert to previous versions
+          </li>
+          <li
+            class="content__ordered__list__element"
+          >
+            Continuous Deployment pipeline to publish new features into live in seconds
+          </li>
+          <li
+            class="content__ordered__list__element"
+          >
+            Responsive Web Design support with preview on desktop, mobile and tablet
+          </li>
+          <li
+            class="content__ordered__list__element"
+          >
+            ElasticSearch integration for fast and flexible search
+          </li>
+          <li
+            class="content__ordered__list__element"
+          >
+            Image hub to allow content editors to add and store images to the site, reusable for different purposes
+          </li>
+        </ul>
+      </div>
+      <p
+        class="content__paragraph"
+      >
+        <img
+          alt="cms illustration"
+          class="cmsIllustration__image"
+          src="cms-illustration.jpg"
+        />
+      </p>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Creating lasting change.
+        </span>
+        A system so good, it’s being adopted across the business
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        The new CMS enables editors to provide users with the content they need, fast and efficiently. It has created a greatly enhanced customer experience on the Sky Help site and reduced the time (and skills) required to update and amend content. It is also future proofed, being incredibly easy to scale as requirements change.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        User behavior is closely monitored so that any issues are made apparent and dealt with straight away. In one example, Sky were able to diagnose an issue as it arose, publish content to solve it, and drop the number of customers pushing the ‘need more help’ button by 50%.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        The components on which the CMS is built have proved to be so effectual that they are now used to support other Sky sites and were made available to everyone as an open source software.
+      </p>
+    </div>
+  </div>
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work"
+    >
+      See more of our work
+    </a>
+  </div>
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>
+</div>
 `;

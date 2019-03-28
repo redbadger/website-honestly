@@ -1,813 +1,426 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/our-work/case-study/fortnum-and-mason-digital-transformation/ renders correctly 1`] = `
-<Context>
-  <FMTeaCaseStudy>
-    <ScrollTracker>
-      <Social
-        altText="A picture of a teacup, teapot and mobile phone."
-        description="Discover how we helped customers find products faster and drive sales for F&M."
-        metaImage="header-l.jpg"
-        title="The ongoing digital transformation of a 310-year old retailer | Red Badger"
-        url="https://red-badger.com/our-work/case-study/fortnum-and-mason-digital-transformation"
-      >
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "summary_large_image",
-                "name": "twitter:card",
-              },
-              Object {
-                "content": "@redbadgerteam",
-                "name": "twitter:site",
-              },
-              Object {
-                "content": "The ongoing digital transformation of a 310-year old retailer | Red Badger",
-                "name": "twitter:title",
-              },
-              Object {
-                "content": "Discover how we helped customers find products faster and drive sales for F&M.",
-                "name": "twitter:description",
-              },
-              Object {
-                "content": "https://red-badger.comheader-l.jpg",
-                "name": "twitter:image",
-              },
-              Object {
-                "content": "website",
-                "property": "og:type",
-              },
-              Object {
-                "content": "The ongoing digital transformation of a 310-year old retailer | Red Badger",
-                "property": "og:title",
-              },
-              Object {
-                "content": "https://red-badger.comheader-l.jpg",
-                "property": "og:image",
-              },
-              Object {
-                "content": "https://red-badger.comheader-l.jpg",
-                "property": "og:image:secure_url",
-              },
-              Object {
-                "content": "A picture of a teacup, teapot and mobile phone.",
-                "property": "og:image:alt",
-              },
-              Object {
-                "content": "Discover how we helped customers find products faster and drive sales for F&M.",
-                "property": "og:description",
-              },
-              Object {
-                "content": "https://red-badger.com/our-work/case-study/fortnum-and-mason-digital-transformation",
-                "property": "og:url",
-              },
-            ]
-          }
-        >
-          <SideEffect(NullComponent)
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "The ongoing digital transformation of a 310-year old retailer | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "Discover how we helped customers find products faster and drive sales for F&M.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.comheader-l.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "The ongoing digital transformation of a 310-year old retailer | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.comheader-l.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.comheader-l.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "A picture of a teacup, teapot and mobile phone.",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "Discover how we helped customers find products faster and drive sales for F&M.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/our-work/case-study/fortnum-and-mason-digital-transformation",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <NullComponent
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "The ongoing digital transformation of a 310-year old retailer | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "Discover how we helped customers find products faster and drive sales for F&M.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader-l.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "The ongoing digital transformation of a 310-year old retailer | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader-l.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader-l.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "A picture of a teacup, teapot and mobile phone.",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "Discover how we helped customers find products faster and drive sales for F&M.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/our-work/case-study/fortnum-and-mason-digital-transformation",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            />
-          </SideEffect(NullComponent)>
-        </HelmetWrapper>
-      </Social>
+Array [
+  <div
+    class="header"
+  >
+    <picture
+      class="picture"
+    >
+      <source
+        media="largeScreen"
+        srcset="header-l.jpg"
+      />
+      <source
+        media="mediumScreen"
+        srcset="header-m.jpg"
+      />
+      <img
+        alt="A box of Fortnum & Mason tea"
+        class="img header__image"
+        srcset="header-s.jpg"
+      />
+    </picture>
+  </div>,
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
       <div
-        className="header"
+        class="content__mainTitleWrapper"
       >
-        <Picture
-          alt="A box of Fortnum & Mason tea"
-          className="header__image"
-          largeSrc="header-l.jpg"
-          mediumSrc="header-m.jpg"
-          smallSrc="header-s.jpg"
+        <h1
+          class="content__mainTitle"
         >
-          <picture
-            className="picture"
+          The ongoing digital transformation of a 310-year old retailer
+        </h1>
+      </div>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Let's make things better.
+        </span>
+        Make everyday special
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        Since 2014, we’ve been working with Fortnum & Mason to drive business growth through digital transformation via an ongoing programme of tech initiatives across the website that helps make everyday special for their customers across all touch points. You can read about our award-winning work on the website 
+        <a
+          class="link"
+          href="/our-work/case-study/fortnum-and-mason"
+          target="_blank"
+        >
+          here
+        </a>
+        .
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        Since then, the focus has been on increasing the awareness and accessibility of a wide array of Fortnum’s products; and the need to improve one particular category, tea.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        Fortnum & Mason is famous across the globe for its dedication to supplying the finest quality selection of tea however the online experience needed more visibility to drive interest and revenue, as well as share the impressive breadth with online customers in a new, innovative way. In essence, we needed to bring the gifting and curatorial elements that exist with hampers, to the tea consumer journey.
+      </p>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Do the right thing. Do the thing right.
+        </span>
+        Giving tea a digital twist and improving online experience
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        The solution was the Tea Experience - a design to help improve the browsing experience and enable customers find products faster and with ease to enjoy the wide array of teas on offer outside of the store’s walls.
+      </p>
+      <div
+        class="contactBox"
+      >
+        <h2
+          class="contactBox__heading"
+        >
+          Project in mind?
+        </h2>
+        <a
+          class="contactBox__button"
+          href="#contactUs"
+        >
+          Tell us more
+        </a>
+      </div>
+      <p
+        class="content__paragraph"
+      >
+        We implemented advanced search capabilities so that the Tea Experience could be a fast, intuitive online shopping platform that interacted with Fortnum’s online store in a slick, interactive process.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        In order to make this a reality, we integrated Fortnum’s online store with Elasticsearch, a search engine that allows structured, unstructured, geo and metric search structures, which deliver a quicker and smarter customer browsing experience. Whatever the customer query or search intention, the intelligent platform now allows customers to get a genuine answer to their questions, just as they would in store. On top of this, enhancements including intuitive faceted filtering has improved customer experience further and helped to drive conversation rates upwards.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        Alongside implementing the likes of the Tea Experience, we ensure the smooth running of Fortnum’s website every day and the work has resulted in the website having its biggest sales day, week and month in the last quarter of 2016.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        The team deploys up to five releases per day, getting new features and enhancements in front of customers quickly and enabling Fortnum & Mason to realise revenue increases instantly.
+      </p>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Creating lasting change.
+        </span>
+        Learning fast and scaling excellence
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        The results of all of this mean that with less time waiting and more time browsing, the Fortnum’s Tea Experience has delivered an increase in converted sales and web traffic as well as a huge decrease in server times from 3 to 0.6 seconds.
+      </p>
+      <div
+        class="Card listBoxContainer"
+      >
+        <div
+          class="listBox listBox"
+        >
+          <h3
+            class="listBox__heading"
           >
-            <source
-              media="largeScreen"
-              srcSet="header-l.jpg"
-            />
-            <source
-              media="mediumScreen"
-              srcSet="header-m.jpg"
-            />
+            Since launch in March 2017, the Tea Experience has delivered
+          </h3>
+          <ul>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div>
+                Increase in new customers vs last year
+              </div>
+              <div>
+                +11%
+              </div>
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div>
+                Increase in existing customers vs last year
+              </div>
+              <div>
+                +33%
+              </div>
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div>
+                Increase in conversion rate
+              </div>
+              <div>
+                +8%
+              </div>
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div>
+                Increase in average order value (AOV)
+              </div>
+              <div>
+                +39%
+              </div>
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div>
+                Improvement in average page load times
+              </div>
+              <div>
+                +21%
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride"
+          >
             <img
-              alt="A box of Fortnum & Mason tea"
-              className="img header__image"
-              srcSet="header-s.jpg"
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
             />
-          </picture>
-        </Picture>
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
       </div>
       <div
-        className="content"
+        class="whatNext__tile"
       >
-        <div
-          className="content__wrapper"
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times"
         >
-          <div
-            className="content__mainTitleWrapper"
-          >
-            <h1
-              className="content__mainTitle"
-            >
-              The ongoing digital transformation of a 310-year old retailer
-            </h1>
-          </div>
           <h2
-            className="content__title"
+            class="whatNext__title"
           >
+            Lasting change for a media giant
             <span
-              className="content__redTitle"
+              class="whatNext__arrow_wrapper"
             >
-              Let's make things better.
-            </span>
-            Make everyday special
-          </h2>
-          <p
-            className="content__paragraph"
-          >
-            Since 2014, we’ve been working with Fortnum & Mason to drive business growth through digital transformation via an ongoing programme of tech initiatives across the website that helps make everyday special for their customers across all touch points. You can read about our award-winning work on the website
-             
-            <Link
-              className="link"
-              target="_blank"
-              to="fortnumAndMasonCaseStudy"
-            >
-              <NavigationLink
-                className="link"
-                navigating={[Function]}
-                stateKey="fortnumAndMasonCaseStudy"
-                target="_blank"
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <a
-                  className="link"
-                  href={null}
-                  onClick={[Function]}
-                  target="_blank"
-                >
-                  here
-                </a>
-              </NavigationLink>
-            </Link>
-            .
-          </p>
-          <p
-            className="content__paragraph"
-          >
-            Since then, the focus has been on increasing the awareness and accessibility of a wide array of Fortnum’s products; and the need to improve one particular category, tea.
-          </p>
-          <p
-            className="content__paragraph"
-          >
-            Fortnum & Mason is famous across the globe for its dedication to supplying the finest quality selection of tea however the online experience needed more visibility to drive interest and revenue, as well as share the impressive breadth with online customers in a new, innovative way. In essence, we needed to bring the gifting and curatorial elements that exist with hampers, to the tea consumer journey.
-          </p>
-          <h2
-            className="content__title"
-          >
-            <span
-              className="content__redTitle"
-            >
-              Do the right thing. Do the thing right.
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
             </span>
-            Giving tea a digital twist and improving online experience
           </h2>
-          <p
-            className="content__paragraph"
-          >
-            The solution was the Tea Experience - a design to help improve the browsing experience and enable customers find products faster and with ease to enjoy the wide array of teas on offer outside of the store’s walls.
-          </p>
-          <div
-            className="contactBox"
-          >
-            <h2
-              className="contactBox__heading"
-            >
-              Project in mind?
-            </h2>
-            <a
-              className="contactBox__button"
-              href="#contactUs"
-            >
-              Tell us more
-            </a>
-          </div>
-          <p
-            className="content__paragraph"
-          >
-            We implemented advanced search capabilities so that the Tea Experience could be a fast, intuitive online shopping platform that interacted with Fortnum’s online store in a slick, interactive process.
-          </p>
-          <p
-            className="content__paragraph"
-          >
-            In order to make this a reality, we integrated Fortnum’s online store with Elasticsearch, a search engine that allows structured, unstructured, geo and metric search structures, which deliver a quicker and smarter customer browsing experience. Whatever the customer query or search intention, the intelligent platform now allows customers to get a genuine answer to their questions, just as they would in store. On top of this, enhancements including intuitive faceted filtering has improved customer experience further and helped to drive conversation rates upwards.
-          </p>
-          <p
-            className="content__paragraph"
-          >
-            Alongside implementing the likes of the Tea Experience, we ensure the smooth running of Fortnum’s website every day and the work has resulted in the website having its biggest sales day, week and month in the last quarter of 2016.
-          </p>
-          <p
-            className="content__paragraph"
-          >
-            The team deploys up to five releases per day, getting new features and enhancements in front of customers quickly and enabling Fortnum & Mason to realise revenue increases instantly.
-          </p>
-          <h2
-            className="content__title"
-          >
-            <span
-              className="content__redTitle"
-            >
-              Creating lasting change.
-            </span>
-            Learning fast and scaling excellence
-          </h2>
-          <p
-            className="content__paragraph"
-          >
-            The results of all of this mean that with less time waiting and more time browsing, the Fortnum’s Tea Experience has delivered an increase in converted sales and web traffic as well as a huge decrease in server times from 3 to 0.6 seconds.
-          </p>
-          <Card
-            className="listBoxContainer"
-          >
-            <div
-              className="Card listBoxContainer"
-            >
-              <ListBox
-                className="listBox"
-                itemClassName="listBox__item"
-                items={
-                  Array [
-                    Object {
-                      "label": "Increase in new customers vs last year",
-                      "value": "+11%",
-                    },
-                    Object {
-                      "label": "Increase in existing customers vs last year",
-                      "value": "+33%",
-                    },
-                    Object {
-                      "label": "Increase in conversion rate",
-                      "value": "+8%",
-                    },
-                    Object {
-                      "label": "Increase in average order value (AOV)",
-                      "value": "+39%",
-                    },
-                    Object {
-                      "label": "Improvement in average page load times",
-                      "value": "+21%",
-                    },
-                  ]
-                }
-                title="Since launch in March 2017, the Tea Experience has delivered"
-              >
-                <div
-                  className="listBox listBox"
-                >
-                  <h3
-                    className="listBox__heading"
-                  >
-                    Since launch in March 2017, the Tea Experience has delivered
-                  </h3>
-                  <ul>
-                    <li
-                      className="listBox__element listBox__element--results listBox__item"
-                      key="Increase in new customers vs last year"
-                    >
-                      <div>
-                        Increase in new customers vs last year
-                      </div>
-                      <div>
-                        +11%
-                      </div>
-                    </li>
-                    <li
-                      className="listBox__element listBox__element--results listBox__item"
-                      key="Increase in existing customers vs last year"
-                    >
-                      <div>
-                        Increase in existing customers vs last year
-                      </div>
-                      <div>
-                        +33%
-                      </div>
-                    </li>
-                    <li
-                      className="listBox__element listBox__element--results listBox__item"
-                      key="Increase in conversion rate"
-                    >
-                      <div>
-                        Increase in conversion rate
-                      </div>
-                      <div>
-                        +8%
-                      </div>
-                    </li>
-                    <li
-                      className="listBox__element listBox__element--results listBox__item"
-                      key="Increase in average order value (AOV)"
-                    >
-                      <div>
-                        Increase in average order value (AOV)
-                      </div>
-                      <div>
-                        +39%
-                      </div>
-                    </li>
-                    <li
-                      className="listBox__element listBox__element--results listBox__item"
-                      key="Improvement in average page load times"
-                    >
-                      <div>
-                        Improvement in average page load times
-                      </div>
-                      <div>
-                        +21%
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </ListBox>
-            </div>
-          </Card>
-        </div>
+        </a>
       </div>
-      <MockedWhatToReadNext
-        currentPage="fMTeaCaseStudy"
-        linkKeys={
-          Array [
-            "fortnumAndMason",
-          ]
-        }
+      <div
+        class="whatNext__tile"
       >
-        <div
-          className="whatNext"
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler"
         >
-          <div
-            className="whatNext__tilesContainer"
+          <h2
+            class="whatNext__title"
           >
-            <WhatToReadNextSlice
-              image="pride.gif"
-              key="Pride in London-0"
-              linkKey="prideCaseStudy"
-              name="Pride in London"
-              tagline="Delivering a best-in-class digital experience"
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
             >
-              <div
-                className="whatNext__tile"
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <figure>
-                  <Link
-                    to="prideCaseStudy"
-                  >
-                    <NavigationLink
-                      className=""
-                      navigating={[Function]}
-                      stateKey="prideCaseStudy"
-                    >
-                      <a
-                        className=""
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <img
-                          alt="Pride in London"
-                          className="whatNext__image"
-                          src="pride.gif"
-                        />
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                  <figcaption
-                    className="whatNext__caption"
-                  >
-                    Pride in London
-                  </figcaption>
-                </figure>
-                <Link
-                  className="whatNext__link"
-                  to="prideCaseStudy"
-                >
-                  <NavigationLink
-                    className="whatNext__link"
-                    navigating={[Function]}
-                    stateKey="prideCaseStudy"
-                  >
-                    <a
-                      className="whatNext__link"
-                      href={null}
-                      onClick={[Function]}
-                    >
-                      <h2
-                        className="whatNext__title"
-                      >
-                        Delivering a best-in-class digital experience
-                        <span
-                          className="whatNext__arrow_wrapper"
-                        >
-                          <Arrow
-                            className="whatNext__arrow"
-                          >
-                            <svg
-                              className="whatNext__arrow"
-                              viewBox="0 0 22 22"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                fill="#FC1D42"
-                                fillRule="evenodd"
-                                stroke="#FC1D42"
-                              />
-                            </svg>
-                          </Arrow>
-                        </span>
-                      </h2>
-                    </a>
-                  </NavigationLink>
-                </Link>
-              </div>
-            </WhatToReadNextSlice>
-            <WhatToReadNextSlice
-              image="financialTimesReadMore.jpg"
-              key="Financial Times-1"
-              linkKey="financialTimesCaseStudy"
-              name="Financial Times"
-              tagline="Lasting change for a media giant"
-            >
-              <div
-                className="whatNext__tile"
-              >
-                <figure>
-                  <Link
-                    to="financialTimesCaseStudy"
-                  >
-                    <NavigationLink
-                      className=""
-                      navigating={[Function]}
-                      stateKey="financialTimesCaseStudy"
-                    >
-                      <a
-                        className=""
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <img
-                          alt="Financial Times"
-                          className="whatNext__image"
-                          src="financialTimesReadMore.jpg"
-                        />
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                  <figcaption
-                    className="whatNext__caption"
-                  >
-                    Financial Times
-                  </figcaption>
-                </figure>
-                <Link
-                  className="whatNext__link"
-                  to="financialTimesCaseStudy"
-                >
-                  <NavigationLink
-                    className="whatNext__link"
-                    navigating={[Function]}
-                    stateKey="financialTimesCaseStudy"
-                  >
-                    <a
-                      className="whatNext__link"
-                      href={null}
-                      onClick={[Function]}
-                    >
-                      <h2
-                        className="whatNext__title"
-                      >
-                        Lasting change for a media giant
-                        <span
-                          className="whatNext__arrow_wrapper"
-                        >
-                          <Arrow
-                            className="whatNext__arrow"
-                          >
-                            <svg
-                              className="whatNext__arrow"
-                              viewBox="0 0 22 22"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                fill="#FC1D42"
-                                fillRule="evenodd"
-                                stroke="#FC1D42"
-                              />
-                            </svg>
-                          </Arrow>
-                        </span>
-                      </h2>
-                    </a>
-                  </NavigationLink>
-                </Link>
-              </div>
-            </WhatToReadNextSlice>
-            <WhatToReadNextSlice
-              image="carTrawler.jpg"
-              key="Car Trawler-2"
-              linkKey="carTrawlerCaseStudy"
-              name="Car Trawler"
-              tagline="Creating complete CMS control for travel brands"
-            >
-              <div
-                className="whatNext__tile"
-              >
-                <figure>
-                  <Link
-                    to="carTrawlerCaseStudy"
-                  >
-                    <NavigationLink
-                      className=""
-                      navigating={[Function]}
-                      stateKey="carTrawlerCaseStudy"
-                    >
-                      <a
-                        className=""
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <img
-                          alt="Car Trawler"
-                          className="whatNext__image"
-                          src="carTrawler.jpg"
-                        />
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                  <figcaption
-                    className="whatNext__caption"
-                  >
-                    Car Trawler
-                  </figcaption>
-                </figure>
-                <Link
-                  className="whatNext__link"
-                  to="carTrawlerCaseStudy"
-                >
-                  <NavigationLink
-                    className="whatNext__link"
-                    navigating={[Function]}
-                    stateKey="carTrawlerCaseStudy"
-                  >
-                    <a
-                      className="whatNext__link"
-                      href={null}
-                      onClick={[Function]}
-                    >
-                      <h2
-                        className="whatNext__title"
-                      >
-                        Creating complete CMS control for travel brands
-                        <span
-                          className="whatNext__arrow_wrapper"
-                        >
-                          <Arrow
-                            className="whatNext__arrow"
-                          >
-                            <svg
-                              className="whatNext__arrow"
-                              viewBox="0 0 22 22"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                fill="#FC1D42"
-                                fillRule="evenodd"
-                                stroke="#FC1D42"
-                              />
-                            </svg>
-                          </Arrow>
-                        </span>
-                      </h2>
-                    </a>
-                  </NavigationLink>
-                </Link>
-              </div>
-            </WhatToReadNextSlice>
-          </div>
-          <Link
-            className="whatNext__button"
-            to="ourWorkPage"
-          >
-            <NavigationLink
-              className="whatNext__button"
-              navigating={[Function]}
-              stateKey="ourWorkPage"
-            >
-              <a
-                className="whatNext__button"
-                href={null}
-                onClick={[Function]}
-              >
-                See more of our work
-              </a>
-            </NavigationLink>
-          </Link>
-        </div>
-      </MockedWhatToReadNext>
-      <_temp>
-        <Checklist
-          isHovered={false}
-          onBlur={[Function]}
-          onHover={[Function]}
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work"
+    >
+      See more of our work
+    </a>
+  </div>,
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
         >
-          <section
-            className="contactUsContainer"
-            id="contactUs"
-          >
-            <h2
-              className="header"
-            >
-              We can help you
-            </h2>
-            <div
-              className="contentContainer"
-            >
-              <ul
-                className="list"
-              >
-                <li
-                  className="item"
-                  key="Create & validate new ideas"
-                >
-                  Create & validate new ideas
-                </li>
-                <li
-                  className="item"
-                  key="Deliver great quality products & services, fast"
-                >
-                  Deliver great quality products & services, fast
-                </li>
-                <li
-                  className="item"
-                  key="Be bold with technology"
-                >
-                  Be bold with technology
-                </li>
-                <li
-                  className="item"
-                  key="Be more customer centric"
-                >
-                  Be more customer centric
-                </li>
-                <li
-                  className="item"
-                  key="Improve efficiency with lean practices"
-                >
-                  Improve efficiency with lean practices
-                </li>
-                <li
-                  className="item"
-                  key="Build capability & confidence"
-                >
-                  Build capability & confidence
-                </li>
-              </ul>
-              <div
-                className="imgContainer"
-              />
-            </div>
-            <div>
-              <a
-                className="mailToLink"
-                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-              >
-                Send an email
-              </a>
-              <span
-                className="talkToUs"
-              >
-                hello@red-badger.com
-              </span>
-            </div>
-          </section>
-        </Checklist>
-      </_temp>
-    </ScrollTracker>
-  </FMTeaCaseStudy>
-</Context>
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>,
+]
 `;

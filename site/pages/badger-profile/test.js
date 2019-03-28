@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { render } from 'enzyme';
 
 import { Context } from '../../components/link/test-helper';
 
@@ -26,7 +26,7 @@ const badger = {
 describe('site/pages/badger-profile', () => {
   it('renders correctly', () => {
     expect(
-      mount(
+      render(
         <Context>
           <BadgerProfile badger={badger} />
         </Context>,

@@ -1,734 +1,366 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/our-work/case-study/haller/ renders correctly 1`] = `
-<Context>
-  <HallerCaseStudy>
-    <ScrollTracker>
-      <CaseStudyFrame>
+<div
+  class="caseStudy"
+>
+  <div>
+    <div
+      class="header"
+      style="background-color:#942c2d"
+    >
+      <div
+        class="header__container"
+      >
         <div
-          className="caseStudy"
+          class="header__imageContainer header"
+          style="justify-content:center"
         >
-          <CaseStudyHeader
-            headerClassName="header"
-            headerColor="#942c2d"
-            headerImage="header.jpg"
-            headerImageAlign="center"
-            headerImageAlt="Sketching out ideas for the application"
-            social={
-              Object {
-                "altText": "Dr Rene Haller showing the mobile preview of the Haller app.",
-                "description": "Find out how we develop a mobile application for Haller to help Kenyan farmers.",
-                "metaImage": "header.jpg",
-                "title": "Developing technology for good | Red Badger",
-                "url": "https://red-badger.com/our-work/case-study/haller",
-              }
-            }
-            tagline="Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers"
-            title="Working with the Haller Foundation: Developing technology for good"
-          >
-            <div>
-              <Social
-                altText="Dr Rene Haller showing the mobile preview of the Haller app."
-                description="Find out how we develop a mobile application for Haller to help Kenyan farmers."
-                metaImage="header.jpg"
-                title="Developing technology for good | Red Badger"
-                url="https://red-badger.com/our-work/case-study/haller"
-              >
-                <HelmetWrapper
-                  defer={true}
-                  encodeSpecialCharacters={true}
-                  meta={
-                    Array [
-                      Object {
-                        "content": "summary_large_image",
-                        "name": "twitter:card",
-                      },
-                      Object {
-                        "content": "@redbadgerteam",
-                        "name": "twitter:site",
-                      },
-                      Object {
-                        "content": "Developing technology for good | Red Badger",
-                        "name": "twitter:title",
-                      },
-                      Object {
-                        "content": "Find out how we develop a mobile application for Haller to help Kenyan farmers.",
-                        "name": "twitter:description",
-                      },
-                      Object {
-                        "content": "https://red-badger.comheader.jpg",
-                        "name": "twitter:image",
-                      },
-                      Object {
-                        "content": "website",
-                        "property": "og:type",
-                      },
-                      Object {
-                        "content": "Developing technology for good | Red Badger",
-                        "property": "og:title",
-                      },
-                      Object {
-                        "content": "https://red-badger.comheader.jpg",
-                        "property": "og:image",
-                      },
-                      Object {
-                        "content": "https://red-badger.comheader.jpg",
-                        "property": "og:image:secure_url",
-                      },
-                      Object {
-                        "content": "Dr Rene Haller showing the mobile preview of the Haller app.",
-                        "property": "og:image:alt",
-                      },
-                      Object {
-                        "content": "Find out how we develop a mobile application for Haller to help Kenyan farmers.",
-                        "property": "og:description",
-                      },
-                      Object {
-                        "content": "https://red-badger.com/our-work/case-study/haller",
-                        "property": "og:url",
-                      },
-                    ]
-                  }
-                >
-                  <SideEffect(NullComponent)
-                    defer={true}
-                    encodeSpecialCharacters={true}
-                    meta={
-                      Array [
-                        Object {
-                          "content": "summary_large_image",
-                          "name": "twitter:card",
-                        },
-                        Object {
-                          "content": "@redbadgerteam",
-                          "name": "twitter:site",
-                        },
-                        Object {
-                          "content": "Developing technology for good | Red Badger",
-                          "name": "twitter:title",
-                        },
-                        Object {
-                          "content": "Find out how we develop a mobile application for Haller to help Kenyan farmers.",
-                          "name": "twitter:description",
-                        },
-                        Object {
-                          "content": "https://red-badger.comheader.jpg",
-                          "name": "twitter:image",
-                        },
-                        Object {
-                          "content": "website",
-                          "property": "og:type",
-                        },
-                        Object {
-                          "content": "Developing technology for good | Red Badger",
-                          "property": "og:title",
-                        },
-                        Object {
-                          "content": "https://red-badger.comheader.jpg",
-                          "property": "og:image",
-                        },
-                        Object {
-                          "content": "https://red-badger.comheader.jpg",
-                          "property": "og:image:secure_url",
-                        },
-                        Object {
-                          "content": "Dr Rene Haller showing the mobile preview of the Haller app.",
-                          "property": "og:image:alt",
-                        },
-                        Object {
-                          "content": "Find out how we develop a mobile application for Haller to help Kenyan farmers.",
-                          "property": "og:description",
-                        },
-                        Object {
-                          "content": "https://red-badger.com/our-work/case-study/haller",
-                          "property": "og:url",
-                        },
-                      ]
-                    }
-                  >
-                    <NullComponent
-                      defer={true}
-                      encodeSpecialCharacters={true}
-                      meta={
-                        Array [
-                          Object {
-                            "content": "summary_large_image",
-                            "name": "twitter:card",
-                          },
-                          Object {
-                            "content": "@redbadgerteam",
-                            "name": "twitter:site",
-                          },
-                          Object {
-                            "content": "Developing technology for good | Red Badger",
-                            "name": "twitter:title",
-                          },
-                          Object {
-                            "content": "Find out how we develop a mobile application for Haller to help Kenyan farmers.",
-                            "name": "twitter:description",
-                          },
-                          Object {
-                            "content": "https://red-badger.comheader.jpg",
-                            "name": "twitter:image",
-                          },
-                          Object {
-                            "content": "website",
-                            "property": "og:type",
-                          },
-                          Object {
-                            "content": "Developing technology for good | Red Badger",
-                            "property": "og:title",
-                          },
-                          Object {
-                            "content": "https://red-badger.comheader.jpg",
-                            "property": "og:image",
-                          },
-                          Object {
-                            "content": "https://red-badger.comheader.jpg",
-                            "property": "og:image:secure_url",
-                          },
-                          Object {
-                            "content": "Dr Rene Haller showing the mobile preview of the Haller app.",
-                            "property": "og:image:alt",
-                          },
-                          Object {
-                            "content": "Find out how we develop a mobile application for Haller to help Kenyan farmers.",
-                            "property": "og:description",
-                          },
-                          Object {
-                            "content": "https://red-badger.com/our-work/case-study/haller",
-                            "property": "og:url",
-                          },
-                        ]
-                      }
-                    />
-                  </SideEffect(NullComponent)>
-                </HelmetWrapper>
-              </Social>
-              <div
-                className="header"
-                style={
-                  Object {
-                    "backgroundColor": "#942c2d",
-                  }
-                }
-              >
-                <div
-                  className="header__container"
-                >
-                  <div
-                    className="header__imageContainer header"
-                    style={
-                      Object {
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <img
-                      alt="Sketching out ideas for the application"
-                      className="header__image"
-                      src="header.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="content"
-              >
-                <div
-                  className="content__wrapper"
-                >
-                  <h1
-                    className="content__mainTitle"
-                  >
-                    Working with the Haller Foundation: Developing technology for good
-                  </h1>
-                  <h2
-                    className="content__tagline"
-                  >
-                    Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </CaseStudyHeader>
-          <CaseStudySection
-            title="The challenge"
-          >
-            <div
-              className="content"
-            >
-              <div
-                className="content__wrapper"
-              >
-                <h3>
-                  The challenge
-                </h3>
-                <p>
-                  In December 2013 Red Badger teamed up with the Haller Foundation, a UK-based charity to support its work in helping subsistence farmers in Kenya. The Haller Foundation works with farmers in Kenya to help them rehabilitate their land and achieve sustainable self-sufficiency. But with only 1 extension officer for every 1,000 farmers in Kenya, the process of reaching them is slow, inefficient and expensive.
-                </p>
-                <div>
-                  Haller approached Red Badger wanting to explore the potential to use new technologies to extend these initiatives to a much wider farming audience in Kenya.
-                  <ul>
-                    <li>
-                      Mobile usage in Kenya is surprisingly high with around 50% of Kenyan’s owning a smartphone and this number is growing rapidly thanks to the digital advancements which have been made in recent years.
-                    </li>
-                    <li>
-                      Utilising this greater communication power to launch an app specifically designed to support the agricultural improvements of Kenyan farmers was the logical next step.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </CaseStudySection>
-          <PullQuote
-            author={
-              Object {
-                "name": "Louise Piper",
-                "title": "Founding Trustee of Haller",
-              }
-            }
-            text="This web app fits perfectly with our approach – it releases potential through practical ideas that are collaborative, self-sustainable and resourceful"
-          >
-            <div
-              className="quotation__wrapper"
-            >
-              <div
-                className="quotation__innerWrapper"
-              >
-                <div
-                  className="quotation"
-                >
-                  <blockquote
-                    className="quotation__quote"
-                  >
-                    <p
-                      className="quotation__text"
-                    >
-                      This web app fits perfectly with our approach – it releases potential through practical ideas that are collaborative, self-sustainable and resourceful
-                    </p>
-                  </blockquote>
-                  <div
-                    className="quotation__author"
-                  >
-                    <div
-                      className="quotation__author__name"
-                    >
-                      — 
-                      Louise Piper
-                    </div>
-                    <div
-                      className="quotation__author__title"
-                    >
-                      Founding Trustee of Haller
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </PullQuote>
-          <CaseStudySection
-            title="Solution"
-          >
-            <div
-              className="content"
-            >
-              <div
-                className="content__wrapper"
-              >
-                <h3>
-                  Solution
-                </h3>
-                <p>
-                  Red Badger staff worked together with design agency, Pearlfisher, to provide the user experience, visual design and development of a new mobile website that will enable Haller to deliver the training to the farmers that need it, across the entire country. A prototype was delivered within 5 months and tested with different kinds of farmers in Kenya that would be using the app. This gave Red Badger vital feedback in a number of areas:
-                </p>
-                <div>
-                  <ul>
-                    <li>
-                      Mobile data packages in Kenya are traditionally small but competitively priced
-                    </li>
-                    <li>
-                      There were wide regional disparities in literacy rates
-                    </li>
-                    <li>
-                      Although English is the national language over half the small holder farmers surveyed didn’t speak English
-                    </li>
-                  </ul>
-                  <img
-                    alt="Screenshots of the Haller application"
-                    src="article.jpg"
-                  />
-                </div>
-                <p>
-                  The unique and innovative technical design of the app addresses all these issues. The total size of the app is less than 1MB in total thanks to intelligent use of lightweight iconography and other design considerations. The download is stored on the device itself and only changes if any updates are required or when using the marketplace feature.
-                </p>
-                <p>
-                  The app is multi-lingual with both Swahili and English versions, and literacy issues are further addressed via an audio feature with Swahili translations. Strong use of visuals and symbols also make the app as intuitive to use as possible.
-                </p>
-                <p>
-                  The app was successfully launched in Nairobi in November 2014, and is already being used by farmers – after taking less than a year to deliver. Red Badger and Haller both see huge potential to extend this technology to other parts of Africa and even further afield.
-                </p>
-              </div>
-            </div>
-          </CaseStudySection>
-          <MockedWhatToReadNext>
-            <div
-              className="whatNext"
-            >
-              <div
-                className="whatNext__tilesContainer"
-              >
-                <WhatToReadNextSlice
-                  image="pride.gif"
-                  key="Pride in London-0"
-                  linkKey="prideCaseStudy"
-                  name="Pride in London"
-                  tagline="Delivering a best-in-class digital experience"
-                >
-                  <div
-                    className="whatNext__tile"
-                  >
-                    <figure>
-                      <Link
-                        to="prideCaseStudy"
-                      >
-                        <NavigationLink
-                          className=""
-                          navigating={[Function]}
-                          stateKey="prideCaseStudy"
-                        >
-                          <a
-                            className=""
-                            href={null}
-                            onClick={[Function]}
-                          >
-                            <img
-                              alt="Pride in London"
-                              className="whatNext__image"
-                              src="pride.gif"
-                            />
-                          </a>
-                        </NavigationLink>
-                      </Link>
-                      <figcaption
-                        className="whatNext__caption"
-                      >
-                        Pride in London
-                      </figcaption>
-                    </figure>
-                    <Link
-                      className="whatNext__link"
-                      to="prideCaseStudy"
-                    >
-                      <NavigationLink
-                        className="whatNext__link"
-                        navigating={[Function]}
-                        stateKey="prideCaseStudy"
-                      >
-                        <a
-                          className="whatNext__link"
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <h2
-                            className="whatNext__title"
-                          >
-                            Delivering a best-in-class digital experience
-                            <span
-                              className="whatNext__arrow_wrapper"
-                            >
-                              <Arrow
-                                className="whatNext__arrow"
-                              >
-                                <svg
-                                  className="whatNext__arrow"
-                                  viewBox="0 0 22 22"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                    fill="#FC1D42"
-                                    fillRule="evenodd"
-                                    stroke="#FC1D42"
-                                  />
-                                </svg>
-                              </Arrow>
-                            </span>
-                          </h2>
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                  </div>
-                </WhatToReadNextSlice>
-                <WhatToReadNextSlice
-                  image="financialTimesReadMore.jpg"
-                  key="Financial Times-1"
-                  linkKey="financialTimesCaseStudy"
-                  name="Financial Times"
-                  tagline="Lasting change for a media giant"
-                >
-                  <div
-                    className="whatNext__tile"
-                  >
-                    <figure>
-                      <Link
-                        to="financialTimesCaseStudy"
-                      >
-                        <NavigationLink
-                          className=""
-                          navigating={[Function]}
-                          stateKey="financialTimesCaseStudy"
-                        >
-                          <a
-                            className=""
-                            href={null}
-                            onClick={[Function]}
-                          >
-                            <img
-                              alt="Financial Times"
-                              className="whatNext__image"
-                              src="financialTimesReadMore.jpg"
-                            />
-                          </a>
-                        </NavigationLink>
-                      </Link>
-                      <figcaption
-                        className="whatNext__caption"
-                      >
-                        Financial Times
-                      </figcaption>
-                    </figure>
-                    <Link
-                      className="whatNext__link"
-                      to="financialTimesCaseStudy"
-                    >
-                      <NavigationLink
-                        className="whatNext__link"
-                        navigating={[Function]}
-                        stateKey="financialTimesCaseStudy"
-                      >
-                        <a
-                          className="whatNext__link"
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <h2
-                            className="whatNext__title"
-                          >
-                            Lasting change for a media giant
-                            <span
-                              className="whatNext__arrow_wrapper"
-                            >
-                              <Arrow
-                                className="whatNext__arrow"
-                              >
-                                <svg
-                                  className="whatNext__arrow"
-                                  viewBox="0 0 22 22"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                    fill="#FC1D42"
-                                    fillRule="evenodd"
-                                    stroke="#FC1D42"
-                                  />
-                                </svg>
-                              </Arrow>
-                            </span>
-                          </h2>
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                  </div>
-                </WhatToReadNextSlice>
-                <WhatToReadNextSlice
-                  image="carTrawler.jpg"
-                  key="Car Trawler-2"
-                  linkKey="carTrawlerCaseStudy"
-                  name="Car Trawler"
-                  tagline="Creating complete CMS control for travel brands"
-                >
-                  <div
-                    className="whatNext__tile"
-                  >
-                    <figure>
-                      <Link
-                        to="carTrawlerCaseStudy"
-                      >
-                        <NavigationLink
-                          className=""
-                          navigating={[Function]}
-                          stateKey="carTrawlerCaseStudy"
-                        >
-                          <a
-                            className=""
-                            href={null}
-                            onClick={[Function]}
-                          >
-                            <img
-                              alt="Car Trawler"
-                              className="whatNext__image"
-                              src="carTrawler.jpg"
-                            />
-                          </a>
-                        </NavigationLink>
-                      </Link>
-                      <figcaption
-                        className="whatNext__caption"
-                      >
-                        Car Trawler
-                      </figcaption>
-                    </figure>
-                    <Link
-                      className="whatNext__link"
-                      to="carTrawlerCaseStudy"
-                    >
-                      <NavigationLink
-                        className="whatNext__link"
-                        navigating={[Function]}
-                        stateKey="carTrawlerCaseStudy"
-                      >
-                        <a
-                          className="whatNext__link"
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <h2
-                            className="whatNext__title"
-                          >
-                            Creating complete CMS control for travel brands
-                            <span
-                              className="whatNext__arrow_wrapper"
-                            >
-                              <Arrow
-                                className="whatNext__arrow"
-                              >
-                                <svg
-                                  className="whatNext__arrow"
-                                  viewBox="0 0 22 22"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                    fill="#FC1D42"
-                                    fillRule="evenodd"
-                                    stroke="#FC1D42"
-                                  />
-                                </svg>
-                              </Arrow>
-                            </span>
-                          </h2>
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                  </div>
-                </WhatToReadNextSlice>
-              </div>
-              <Link
-                className="whatNext__button"
-                to="ourWorkPage"
-              >
-                <NavigationLink
-                  className="whatNext__button"
-                  navigating={[Function]}
-                  stateKey="ourWorkPage"
-                >
-                  <a
-                    className="whatNext__button"
-                    href={null}
-                    onClick={[Function]}
-                  >
-                    See more of our work
-                  </a>
-                </NavigationLink>
-              </Link>
-            </div>
-          </MockedWhatToReadNext>
-          <_temp>
-            <Checklist
-              isHovered={false}
-              onBlur={[Function]}
-              onHover={[Function]}
-            >
-              <section
-                className="contactUsContainer"
-                id="contactUs"
-              >
-                <h2
-                  className="header"
-                >
-                  We can help you
-                </h2>
-                <div
-                  className="contentContainer"
-                >
-                  <ul
-                    className="list"
-                  >
-                    <li
-                      className="item"
-                      key="Create & validate new ideas"
-                    >
-                      Create & validate new ideas
-                    </li>
-                    <li
-                      className="item"
-                      key="Deliver great quality products & services, fast"
-                    >
-                      Deliver great quality products & services, fast
-                    </li>
-                    <li
-                      className="item"
-                      key="Be bold with technology"
-                    >
-                      Be bold with technology
-                    </li>
-                    <li
-                      className="item"
-                      key="Be more customer centric"
-                    >
-                      Be more customer centric
-                    </li>
-                    <li
-                      className="item"
-                      key="Improve efficiency with lean practices"
-                    >
-                      Improve efficiency with lean practices
-                    </li>
-                    <li
-                      className="item"
-                      key="Build capability & confidence"
-                    >
-                      Build capability & confidence
-                    </li>
-                  </ul>
-                  <div
-                    className="imgContainer"
-                  />
-                </div>
-                <div>
-                  <a
-                    className="mailToLink"
-                    href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                    onClick={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                  >
-                    Send an email
-                  </a>
-                  <span
-                    className="talkToUs"
-                  >
-                    hello@red-badger.com
-                  </span>
-                </div>
-              </section>
-            </Checklist>
-          </_temp>
+          <img
+            alt="Sketching out ideas for the application"
+            class="header__image"
+            src="header.jpg"
+          />
         </div>
-      </CaseStudyFrame>
-    </ScrollTracker>
-  </HallerCaseStudy>
-</Context>
+      </div>
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="content__wrapper"
+      >
+        <h1
+          class="content__mainTitle"
+        >
+          Working with the Haller Foundation: Developing technology for good
+        </h1>
+        <h2
+          class="content__tagline"
+        >
+          Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
+      <h3>
+        The challenge
+      </h3>
+      <p>
+        In December 2013 Red Badger teamed up with the Haller Foundation, a UK-based charity to support its work in helping subsistence farmers in Kenya. The Haller Foundation works with farmers in Kenya to help them rehabilitate their land and achieve sustainable self-sufficiency. But with only 1 extension officer for every 1,000 farmers in Kenya, the process of reaching them is slow, inefficient and expensive.
+      </p>
+      <div>
+        Haller approached Red Badger wanting to explore the potential to use new technologies to extend these initiatives to a much wider farming audience in Kenya.
+        <ul>
+          <li>
+            Mobile usage in Kenya is surprisingly high with around 50% of Kenyan’s owning a smartphone and this number is growing rapidly thanks to the digital advancements which have been made in recent years.
+          </li>
+          <li>
+            Utilising this greater communication power to launch an app specifically designed to support the agricultural improvements of Kenyan farmers was the logical next step.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    class="quotation__wrapper"
+  >
+    <div
+      class="quotation__innerWrapper"
+    >
+      <div
+        class="quotation"
+      >
+        <blockquote
+          class="quotation__quote"
+        >
+          <p
+            class="quotation__text"
+          >
+            This web app fits perfectly with our approach – it releases potential through practical ideas that are collaborative, self-sustainable and resourceful
+          </p>
+        </blockquote>
+        <div
+          class="quotation__author"
+        >
+          <div
+            class="quotation__author__name"
+          >
+            — Louise Piper
+          </div>
+          <div
+            class="quotation__author__title"
+          >
+            Founding Trustee of Haller
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
+      <h3>
+        Solution
+      </h3>
+      <p>
+        Red Badger staff worked together with design agency, Pearlfisher, to provide the user experience, visual design and development of a new mobile website that will enable Haller to deliver the training to the farmers that need it, across the entire country. A prototype was delivered within 5 months and tested with different kinds of farmers in Kenya that would be using the app. This gave Red Badger vital feedback in a number of areas:
+      </p>
+      <div>
+        <ul>
+          <li>
+            Mobile data packages in Kenya are traditionally small but competitively priced
+          </li>
+          <li>
+            There were wide regional disparities in literacy rates
+          </li>
+          <li>
+            Although English is the national language over half the small holder farmers surveyed didn’t speak English
+          </li>
+        </ul>
+        <img
+          alt="Screenshots of the Haller application"
+          src="article.jpg"
+        />
+      </div>
+      <p>
+        The unique and innovative technical design of the app addresses all these issues. The total size of the app is less than 1MB in total thanks to intelligent use of lightweight iconography and other design considerations. The download is stored on the device itself and only changes if any updates are required or when using the marketplace feature.
+      </p>
+      <p>
+        The app is multi-lingual with both Swahili and English versions, and literacy issues are further addressed via an audio feature with Swahili translations. Strong use of visuals and symbols also make the app as intuitive to use as possible.
+      </p>
+      <p>
+        The app was successfully launched in Nairobi in November 2014, and is already being used by farmers – after taking less than a year to deliver. Red Badger and Haller both see huge potential to extend this technology to other parts of Africa and even further afield.
+      </p>
+    </div>
+  </div>
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work"
+    >
+      See more of our work
+    </a>
+  </div>
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>
+</div>
 `;

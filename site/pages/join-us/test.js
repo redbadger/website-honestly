@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { render } from 'enzyme';
 
 import { Context } from '../../components/link/test-helper';
 
@@ -46,7 +46,7 @@ const jobs = [
 describe('site/pages/join-us', () => {
   it('renders correctly', () => {
     expect(
-      mount(
+      render(
         <Context>
           <JoinUs jobs={jobs} />
         </Context>,

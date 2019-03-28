@@ -1,27 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { render } from 'enzyme';
 import createStateNavigator from '../../routes';
 import MeetOurTeam from '.';
+import { Context } from '../../components/link/test-helper';
 
 describe('site/team-slice', () => {
-  class Layout extends Component {
-    static propTypes = {
-      children: PropTypes.element.isRequired,
-      stateNavigator: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-    };
-
-    static childContextTypes = {
-      stateNavigator: PropTypes.object,
-    };
-
-    getChildContext() {
-      return { stateNavigator: this.props.stateNavigator };
-    }
-
-    render() {
-      return this.props.children;
-    }
+  function Layout({ stateNavigator, children }) {
+    return <Context stateNavigator={stateNavigator}>{children}</Context>;
   }
 
   it('should render badgers list', () => {
@@ -71,8 +56,8 @@ describe('site/team-slice', () => {
       expect(badgersList).toMatch(/Alex 18/);
       expect(badgersList).toMatch(/Are you a potential Badger/);
       expect(badgersList).not.toMatch(/Alex 19/);
-      expect(previousLink.attr('href')).toEqual(undefined);
       expect(previousLink.text()).toEqual('Previous page');
+      expect(previousLink.attr('href')).toEqual(undefined);
       expect(nextLink.attr('href')).toEqual('/people/category/everyone/page-2');
       expect(nextLink.text()).toEqual('Next page');
     });

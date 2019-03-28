@@ -1,45 +1,43 @@
 // @flow
 
-import { StateNavigator } from 'navigation';
-import PropTypes from 'prop-types';
+import { StateNavigator, HTML5HistoryManager } from 'navigation';
 import * as React from 'react';
+import { NavigationHandler } from 'navigation-react';
+import makeAppNavigator from '../../routes';
 
-function MockNavigator(parentKey) {
+export function mockNavigator(parentKey?: string = 'foo') {
   // The constructor is checked in prop-types,
   // so we use it as base and then mutate
-  const child = new StateNavigator();
 
-  child.stateContext = {
-    state: {
-      parentKey,
-    },
-  };
+  const navigator = new StateNavigator(
+    [
+      { key: 'foo', route: 'foo' },
+      { key: 'bar', route: 'bar' },
+      { key: 'barChild', route: 'bar/child', parentKey: 'bar' },
+    ],
+    new HTML5HistoryManager(),
+  );
 
-  child.states = {
-    foo: {},
-    bar: {},
-    barChild: {
-      parentKey: 'bar',
-    },
-  };
+  navigator.navigate(parentKey);
 
-  return child;
+  return navigator;
 }
 
-export function createMockContext(parentKey?: string) {
-  return { stateNavigator: MockNavigator(parentKey) };
-}
+type Props = {
+  stateNavigator?: StateNavigator,
+  children: React.Node,
+};
 
-export class Context extends React.Component<{ children: React.Node }> {
-  static childContextTypes = {
-    stateNavigator: PropTypes.instanceOf(StateNavigator),
-  };
+const initStateNavigator = () => {
+  const navigator = makeAppNavigator();
 
-  getChildContext() {
-    return createMockContext();
-  }
+  navigator.navigateLink('/');
 
-  render() {
-    return this.props.children;
-  }
-}
+  return navigator;
+};
+
+export const Context = (props: Props) => {
+  const { children, stateNavigator = initStateNavigator() } = props;
+
+  return <NavigationHandler stateNavigator={stateNavigator}>{children}</NavigationHandler>;
+};

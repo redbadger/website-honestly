@@ -1,1509 +1,332 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/about-us renders correctly 1`] = `
-<Context>
-  <AboutUs
-    instagramPosts={
-      Array [
-        Object {
-          "comments": 1,
-          "created": "1988-02-11",
-          "image": Object {
-            "height": "640px",
-            "url": "https://www.somefakelink-redbadger.com/image.jpg",
-            "width": "640px",
-          },
-          "likes": 2,
-          "link": "https://www.somefakelink-redbadger.com",
-          "text": "I am an instagram posts",
-        },
-      ]
-    }
-    qAndAs={
-      Array [
-        Object {
-          "name": "I am a qanda",
-          "topics": Array [
-            Object {
-              "answer": "cuz they're delicious",
-              "question": "why do you slugs keep eating my cabbages",
-              "slug": "squelch-slime-slugstuff",
-            },
-          ],
-        },
-      ]
-    }
-    tweets={
-      Array [
-        Object {
-          "created": "1988-02-12",
-          "favouriteCount": 2,
-          "retweetCount": 1,
-          "text": "I am a tweet",
-          "url": "https://www.somefakelink-redbadger.com",
-        },
-        Object {
-          "created": "2019-03-20",
-          "favouriteCount": 5,
-          "image": Object {
-            "smallSize": Object {
-              "height": 600,
-              "width": 1200,
-            },
-            "url": "https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg",
-          },
-          "retweetCount": 0,
-          "text": "I am a tweet with an image",
-          "url": "https://twitter.com/redbadgerteam/status/1108421453903523841",
-        },
-      ]
-    }
+<div>
+  <div
+    class="principles"
   >
-    <div>
-      <Social
-        altText="Our founders Dave, Stu and Cain."
-        description="We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right."
-        metaImage="meta-image.jpg"
-        title="About Us | Red Badger"
-        url="https://red-badger.com/about-us"
+    <div
+      class="container"
+    >
+      <h1
+        class="header"
       >
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "summary_large_image",
-                "name": "twitter:card",
-              },
-              Object {
-                "content": "@redbadgerteam",
-                "name": "twitter:site",
-              },
-              Object {
-                "content": "About Us | Red Badger",
-                "name": "twitter:title",
-              },
-              Object {
-                "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
-                "name": "twitter:description",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "name": "twitter:image",
-              },
-              Object {
-                "content": "website",
-                "property": "og:type",
-              },
-              Object {
-                "content": "About Us | Red Badger",
-                "property": "og:title",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image",
-              },
-              Object {
-                "content": "https://red-badger.commeta-image.jpg",
-                "property": "og:image:secure_url",
-              },
-              Object {
-                "content": "Our founders Dave, Stu and Cain.",
-                "property": "og:image:alt",
-              },
-              Object {
-                "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
-                "property": "og:description",
-              },
-              Object {
-                "content": "https://red-badger.com/about-us",
-                "property": "og:url",
-              },
-            ]
-          }
-        >
-          <SideEffect(NullComponent)
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "About Us | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "About Us | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "Our founders Dave, Stu and Cain.",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/about-us",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <NullComponent
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "About Us | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "About Us | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "Our founders Dave, Stu and Cain.",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/about-us",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            />
-          </SideEffect(NullComponent)>
-        </HelmetWrapper>
-      </Social>
-      <Principles>
-        <div
-          className="principles"
+        Our principles.
+      </h1>
+      <div
+        class="thisIsWhatWeBelieveIn"
+      >
+        This is what we believe – and what the founders say after a couple of pints
+      </div>
+      <ul
+        class="principleList"
+      >
+        <li
+          class="container"
         >
           <div
-            className="container"
+            class="leftCol"
           >
-            <h1
-              className="header"
-            >
-              Our principles.
-            </h1>
             <div
-              className="thisIsWhatWeBelieveIn"
+              class="number"
             >
-              This is what we believe – and what the founders say after a couple of pints
-            </div>
-            <ul
-              className="principleList"
-            >
-              <Principle
-                description="Our work is built on the respect we have for each other and our clients. We’re also very focused on the needs of our clients’ customers."
-                number="01"
-                title="People people."
-              >
-                <li
-                  className="container"
-                >
-                  <div
-                    className="leftCol"
-                  >
-                    <div
-                      className="number"
-                    >
-                      01
-                    </div>
-                  </div>
-                  <div
-                    className="rightCol"
-                  >
-                    <h2
-                      className="title"
-                    >
-                      People people.
-                    </h2>
-                    <div
-                      className="description"
-                    >
-                      Our work is built on the respect we have for each other and our clients. We’re also very focused on the needs of our clients’ customers.
-                    </div>
-                  </div>
-                </li>
-              </Principle>
-              <Principle
-                description="As individuals we need to be proactive, to earn and build the trust of our clients."
-                number="02"
-                title="Find a way."
-              >
-                <li
-                  className="container"
-                >
-                  <div
-                    className="leftCol"
-                  >
-                    <div
-                      className="number"
-                    >
-                      02
-                    </div>
-                  </div>
-                  <div
-                    className="rightCol"
-                  >
-                    <h2
-                      className="title"
-                    >
-                      Find a way.
-                    </h2>
-                    <div
-                      className="description"
-                    >
-                      As individuals we need to be proactive, to earn and build the trust of our clients.
-                    </div>
-                  </div>
-                </li>
-              </Principle>
-              <Principle
-                description="We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it."
-                number="03"
-                title="Always learning."
-              >
-                <li
-                  className="container"
-                >
-                  <div
-                    className="leftCol"
-                  >
-                    <div
-                      className="number"
-                    >
-                      03
-                    </div>
-                  </div>
-                  <div
-                    className="rightCol"
-                  >
-                    <h2
-                      className="title"
-                    >
-                      Always learning.
-                    </h2>
-                    <div
-                      className="description"
-                    >
-                      We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it.
-                    </div>
-                  </div>
-                </li>
-              </Principle>
-              <Principle
-                description="We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner."
-                number="04"
-                title="Honest."
-              >
-                <li
-                  className="container"
-                >
-                  <div
-                    className="leftCol"
-                  >
-                    <div
-                      className="number"
-                    >
-                      04
-                    </div>
-                  </div>
-                  <div
-                    className="rightCol"
-                  >
-                    <h2
-                      className="title"
-                    >
-                      Honest.
-                    </h2>
-                    <div
-                      className="description"
-                    >
-                      We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner.
-                    </div>
-                  </div>
-                </li>
-              </Principle>
-              <Principle
-                description="Clear points-of-view help give our work direction and purpose – but we’re humble about these. We don’t let ego get in the way."
-                number="05"
-                title="Strong opinions, weakly held."
-              >
-                <li
-                  className="container"
-                >
-                  <div
-                    className="leftCol"
-                  >
-                    <div
-                      className="number"
-                    >
-                      05
-                    </div>
-                  </div>
-                  <div
-                    className="rightCol"
-                  >
-                    <h2
-                      className="title"
-                    >
-                      Strong opinions, weakly held.
-                    </h2>
-                    <div
-                      className="description"
-                    >
-                      Clear points-of-view help give our work direction and purpose – but we’re humble about these. We don’t let ego get in the way.
-                    </div>
-                  </div>
-                </li>
-              </Principle>
-            </ul>
-            <div
-              className="buttons"
-            >
-              <Link
-                className="link"
-                to="badgers"
-              >
-                <NavigationLink
-                  className="link"
-                  navigating={[Function]}
-                  stateKey="badgers"
-                >
-                  <a
-                    className="link"
-                    href={null}
-                    onClick={[Function]}
-                  >
-                    Meet our team
-                  </a>
-                </NavigationLink>
-              </Link>
-              <Link
-                className="link"
-                to="joinUs"
-              >
-                <NavigationLink
-                  className="link"
-                  navigating={[Function]}
-                  stateKey="joinUs"
-                >
-                  <a
-                    className="link"
-                    href={null}
-                    onClick={[Function]}
-                  >
-                    Join us
-                  </a>
-                </NavigationLink>
-              </Link>
+              01
             </div>
           </div>
-        </div>
-      </Principles>
-      <TimelineSlice>
-        <div
-          className="timeline"
-        >
           <div
-            className="container"
-          >
-            <ClientOnly>
-              <span>
-                <MobileImage
-                  index={0}
-                  onChangeIndex={[Function]}
-                >
-                  <div
-                    className="mobileImage"
-                  >
-                    <ReactSwipableView
-                      animateHeight={false}
-                      animateTransitions={true}
-                      axis="x"
-                      disableLazyLoading={false}
-                      disabled={false}
-                      enableMouseEvents={false}
-                      hysteresis={0.6}
-                      ignoreNativeScroll={false}
-                      index={0}
-                      onChangeIndex={[Function]}
-                      resistance={false}
-                      springConfig={
-                        Object {
-                          "delay": "0s",
-                          "duration": "0.35s",
-                          "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
-                        }
-                      }
-                      threshold={5}
-                    >
-                      <div
-                        onScroll={[Function]}
-                        onTouchEnd={[Function]}
-                        onTouchStart={[Function]}
-                        style={
-                          Object {
-                            "overflowX": "hidden",
-                          }
-                        }
-                      >
-                        <div
-                          className="react-swipeable-view-container"
-                          style={
-                            Object {
-                              "WebkitFlexDirection": "row",
-                              "WebkitTransition": "all 0s ease 0s",
-                              "direction": "ltr",
-                              "display": "flex",
-                              "flexDirection": "row",
-                              "height": null,
-                              "transition": "all 0s ease 0s",
-                              "willChange": "transform",
-                            }
-                          }
-                        >
-                          <div
-                            aria-hidden={false}
-                            data-swipeable="true"
-                            key=".0"
-                            style={
-                              Object {
-                                "WebkitFlexShrink": 0,
-                                "flexShrink": 0,
-                                "overflow": "auto",
-                                "width": "100%",
-                              }
-                            }
-                          >
-                            <div
-                              className="mobileImageWrapper"
-                            >
-                              <img
-                                alt="year 2010"
-                                className="image"
-                                src="2010.png"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </ReactSwipableView>
-                  </div>
-                </MobileImage>
-                <TimelineNav
-                  currentIndex={0}
-                  onClick={[Function]}
-                >
-                  <div
-                    className="navigator"
-                  >
-                    <div
-                      className="container"
-                    >
-                      <Arrow
-                        currentIndex={0}
-                        direction="left"
-                        lastIndex={7}
-                        onClick={[Function]}
-                      >
-                        <button
-                          aria-label="left"
-                          className="arrow arrowLeft"
-                          onClick={[Function]}
-                          type="button"
-                        >
-                          <div
-                            className="inactive"
-                          />
-                          <div
-                            className="innerArrow"
-                          />
-                        </button>
-                      </Arrow>
-                      <div
-                        className="timeline"
-                      >
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={0}
-                        >
-                          <div
-                            aria-label="slide 1"
-                            className="active"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={1}
-                        >
-                          <div
-                            aria-label="slide 2"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={2}
-                        >
-                          <div
-                            aria-label="slide 3"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={3}
-                        >
-                          <div
-                            aria-label="slide 4"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={4}
-                        >
-                          <div
-                            aria-label="slide 5"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={5}
-                        >
-                          <div
-                            aria-label="slide 6"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={6}
-                        >
-                          <div
-                            aria-label="slide 7"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                        <TimelineNav
-                          currentIndex={0}
-                          onClick={[Function]}
-                          value={7}
-                        >
-                          <div
-                            aria-label="slide 8"
-                            className="future"
-                          >
-                            <span />
-                          </div>
-                        </TimelineNav>
-                      </div>
-                      <Arrow
-                        currentIndex={0}
-                        direction="right"
-                        lastIndex={7}
-                        onClick={[Function]}
-                      >
-                        <button
-                          aria-label="right"
-                          className="arrow arrowRight"
-                          onClick={[Function]}
-                          type="button"
-                        >
-                          <div
-                            className="active"
-                          />
-                          <div
-                            className="innerArrow"
-                          />
-                        </button>
-                      </Arrow>
-                    </div>
-                  </div>
-                </TimelineNav>
-                <div
-                  className="content"
-                >
-                  <ReactSwipableView
-                    animateHeight={false}
-                    animateTransitions={true}
-                    axis="x"
-                    disableLazyLoading={false}
-                    disabled={false}
-                    enableMouseEvents={false}
-                    hysteresis={0.6}
-                    ignoreNativeScroll={false}
-                    index={0}
-                    onChangeIndex={[Function]}
-                    resistance={false}
-                    springConfig={
-                      Object {
-                        "delay": "0s",
-                        "duration": "0.35s",
-                        "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
-                      }
-                    }
-                    threshold={5}
-                  >
-                    <div
-                      onScroll={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchStart={[Function]}
-                      style={
-                        Object {
-                          "overflowX": "hidden",
-                        }
-                      }
-                    >
-                      <div
-                        className="react-swipeable-view-container"
-                        style={
-                          Object {
-                            "WebkitFlexDirection": "row",
-                            "WebkitTransition": "all 0s ease 0s",
-                            "direction": "ltr",
-                            "display": "flex",
-                            "flexDirection": "row",
-                            "height": null,
-                            "transition": "all 0s ease 0s",
-                            "willChange": "transform",
-                          }
-                        }
-                      >
-                        <div
-                          aria-hidden={false}
-                          data-swipeable="true"
-                          key=".0"
-                          style={
-                            Object {
-                              "WebkitFlexShrink": 0,
-                              "flexShrink": 0,
-                              "overflow": "auto",
-                              "width": "100%",
-                            }
-                          }
-                        >
-                          <Zero>
-                            <Content
-                              fact="At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight."
-                              image="2010.png"
-                              text="Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom."
-                              title="Our vision and going for it"
-                              year="2010"
-                            >
-                              <div>
-                                <div
-                                  className="largeScreen"
-                                >
-                                  <div
-                                    className="topRow"
-                                  >
-                                    <div
-                                      className="imageWrapper"
-                                    >
-                                      <img
-                                        alt="year 2010"
-                                        className="image"
-                                        src="2010.png"
-                                      />
-                                    </div>
-                                    <div
-                                      className="copy"
-                                    >
-                                      <div
-                                        className="year"
-                                      >
-                                        2010
-                                      </div>
-                                      <div
-                                        className="title"
-                                      >
-                                        Our vision and going for it
-                                      </div>
-                                      <div
-                                        className="body"
-                                      >
-                                        Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom.
-                                      </div>
-                                      <div
-                                        className="fact"
-                                      >
-                                        <span
-                                          className="factTitle"
-                                        >
-                                          Random fact of the year: 
-                                        </span>
-                                        At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight.
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  className="smallScreen"
-                                >
-                                  <div
-                                    className="copy"
-                                  >
-                                    <div
-                                      className="year"
-                                    >
-                                      2010
-                                    </div>
-                                    <div
-                                      className="title"
-                                    >
-                                      Our vision and going for it
-                                    </div>
-                                    <div
-                                      className="body"
-                                    >
-                                      Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom.
-                                    </div>
-                                    <div
-                                      className="fact"
-                                    >
-                                      <span
-                                        className="factTitle"
-                                      >
-                                        Random fact of the year: 
-                                      </span>
-                                      At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight.
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </Content>
-                          </Zero>
-                        </div>
-                      </div>
-                    </div>
-                  </ReactSwipableView>
-                </div>
-              </span>
-            </ClientOnly>
-            <noscript>
-              <div
-                className="content"
-              />
-            </noscript>
-          </div>
-        </div>
-      </TimelineSlice>
-      <_temp>
-        <Checklist
-          isHovered={false}
-          onBlur={[Function]}
-          onHover={[Function]}
-        >
-          <section
-            className="contactUsContainer"
-            id="contactUs"
+            class="rightCol"
           >
             <h2
-              className="header"
+              class="title"
             >
-              We can help you
+              People people.
             </h2>
             <div
-              className="contentContainer"
+              class="description"
             >
-              <ul
-                className="list"
-              >
-                <li
-                  className="item"
-                  key="Create & validate new ideas"
-                >
-                  Create & validate new ideas
-                </li>
-                <li
-                  className="item"
-                  key="Deliver great quality products & services, fast"
-                >
-                  Deliver great quality products & services, fast
-                </li>
-                <li
-                  className="item"
-                  key="Be bold with technology"
-                >
-                  Be bold with technology
-                </li>
-                <li
-                  className="item"
-                  key="Be more customer centric"
-                >
-                  Be more customer centric
-                </li>
-                <li
-                  className="item"
-                  key="Improve efficiency with lean practices"
-                >
-                  Improve efficiency with lean practices
-                </li>
-                <li
-                  className="item"
-                  key="Build capability & confidence"
-                >
-                  Build capability & confidence
-                </li>
-              </ul>
-              <div
-                className="imgContainer"
-              />
-            </div>
-            <div>
-              <a
-                className="mailToLink"
-                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-              >
-                Send an email
-              </a>
-              <span
-                className="talkToUs"
-              >
-                hello@red-badger.com
-              </span>
-            </div>
-          </section>
-        </Checklist>
-      </_temp>
-      <QAndASlice
-        qAndAs={
-          Array [
-            Object {
-              "name": "I am a qanda",
-              "topics": Array [
-                Object {
-                  "answer": "cuz they're delicious",
-                  "question": "why do you slugs keep eating my cabbages",
-                  "slug": "squelch-slime-slugstuff",
-                },
-              ],
-            },
-          ]
-        }
-      >
-        <div
-          className="qAndA"
-        >
-          <div
-            className="qAndA__wrapper"
-          >
-            <div
-              className="qAndA__container"
-            >
-              <h2
-                className="qAndA__heading"
-              >
-                Answers to common questions
-              </h2>
-              <ul
-                className="qAndA__categoryList"
-              >
-                <li
-                  key="I am a qanda"
-                >
-                  <Category
-                    category={
-                      Object {
-                        "name": "I am a qanda",
-                        "topics": Array [
-                          Object {
-                            "answer": "cuz they're delicious",
-                            "question": "why do you slugs keep eating my cabbages",
-                            "slug": "squelch-slime-slugstuff",
-                          },
-                        ],
-                      }
-                    }
-                  >
-                    <div
-                      className="category"
-                    >
-                      <h3
-                        className="category__title"
-                      >
-                        I am a qanda
-                      </h3>
-                      <ul
-                        className="category__questionList"
-                      >
-                        <li
-                          className="category__element"
-                          key="why do you slugs keep eating my cabbages"
-                        >
-                          <Topic
-                            answer="cuz they're delicious"
-                            question="why do you slugs keep eating my cabbages"
-                            slug="squelch-slime-slugstuff"
-                          >
-                            <div>
-                              <div
-                                className="topic__question"
-                                onClick={[Function]}
-                              >
-                                <h4
-                                  className="topic__heading"
-                                >
-                                  why do you slugs keep eating my cabbages
-                                </h4>
-                                <button
-                                  aria-controls="squelch-slime-slugstuff"
-                                  aria-expanded={false}
-                                  aria-label="why do you slugs keep eating my cabbages"
-                                  className="topic__more"
-                                  type="button"
-                                >
-                                  <span
-                                    className="topic__plus"
-                                  />
-                                </button>
-                              </div>
-                              <div
-                                className="topic__answer__hidden"
-                                dangerouslySetInnerHTML={
-                                  Object {
-                                    "__html": "cuz they're delicious",
-                                  }
-                                }
-                                id="squelch-slime-slugstuff"
-                              />
-                              <noscript>
-                                <div
-                                  className="topic__answer__visible"
-                                  dangerouslySetInnerHTML={
-                                    Object {
-                                      "__html": "cuz they're delicious",
-                                    }
-                                  }
-                                />
-                              </noscript>
-                            </div>
-                          </Topic>
-                        </li>
-                      </ul>
-                    </div>
-                  </Category>
-                </li>
-              </ul>
+              Our work is built on the respect we have for each other and our clients. We’re also very focused on the needs of our clients’ customers.
             </div>
           </div>
-        </div>
-      </QAndASlice>
-      <SocialSlice
-        instagramPosts={
-          Array [
-            Object {
-              "comments": 1,
-              "created": "1988-02-11",
-              "image": Object {
-                "height": "640px",
-                "url": "https://www.somefakelink-redbadger.com/image.jpg",
-                "width": "640px",
-              },
-              "likes": 2,
-              "link": "https://www.somefakelink-redbadger.com",
-              "text": "I am an instagram posts",
-            },
-          ]
-        }
-        tweets={
-          Array [
-            Object {
-              "created": "1988-02-12",
-              "favouriteCount": 2,
-              "retweetCount": 1,
-              "text": "I am a tweet",
-              "url": "https://www.somefakelink-redbadger.com",
-            },
-            Object {
-              "created": "2019-03-20",
-              "favouriteCount": 5,
-              "image": Object {
-                "smallSize": Object {
-                  "height": 600,
-                  "width": 1200,
-                },
-                "url": "https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg",
-              },
-              "retweetCount": 0,
-              "text": "I am a tweet with an image",
-              "url": "https://twitter.com/redbadgerteam/status/1108421453903523841",
-            },
-          ]
-        }
-      >
-        <section
-          className="socialSlice"
+        </li>
+        <li
+          class="container"
         >
-          <ClientOnly>
-            <span>
-              <div
-                className="desktopView"
-              >
-                <IntroDesktopCard
-                  currentTile={0}
-                  nextCard={[Function]}
-                  prevCard={[Function]}
-                  totalSwipableTiles={2}
-                >
-                  <div
-                    className="intro"
-                  >
-                    <div
-                      className="text"
-                    >
-                      From our social feed
-                    </div>
-                    <ClientOnly>
-                      <span>
-                        <div
-                          className="buttons"
-                        >
-                          <button
-                            aria-label="Previous"
-                            className="prevButton"
-                            disabled={true}
-                            onClick={[Function]}
-                            title="Previous"
-                            type="button"
-                          >
-                            <ArrowLight
-                              className="prevArrow"
-                              reverse={true}
-                            >
-                              <svg
-                                className="prevArrow"
-                                height="23"
-                                width="23"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M-1-1h25v25H-1z"
-                                  fill="none"
-                                />
-                                <path
-                                  d="M12 21.955L1.09 11.5 12 1.045l1.914 1.835-7.592 7.336H22.91v2.568H6.322l7.592 7.336z"
-                                  fill="#F8F8F8"
-                                  fillRule="evenodd"
-                                />
-                              </svg>
-                            </ArrowLight>
-                          </button>
-                          <button
-                            aria-label="Next"
-                            className="nextButton"
-                            disabled={false}
-                            onClick={[Function]}
-                            title="Next"
-                            type="button"
-                          >
-                            <ArrowLight
-                              className="nextArrow"
-                            >
-                              <svg
-                                className="nextArrow"
-                                height="23"
-                                width="23"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M-1-1h25v25H-1z"
-                                  fill="none"
-                                />
-                                <path
-                                  d="M12 1.045L22.91 11.5 12 21.955l-1.914-1.835 7.592-7.336H1.09v-2.568h16.587L10.086 2.88z"
-                                  fill="#F8F8F8"
-                                  fillRule="evenodd"
-                                />
-                              </svg>
-                            </ArrowLight>
-                          </button>
-                        </div>
-                      </span>
-                    </ClientOnly>
-                  </div>
-                </IntroDesktopCard>
-                <ReactSwipableView
-                  animateHeight={false}
-                  animateTransitions={true}
-                  axis="x"
-                  disableLazyLoading={false}
-                  disabled={false}
-                  enableMouseEvents={false}
-                  hysteresis={0.6}
-                  ignoreNativeScroll={false}
-                  index={0}
-                  onChangeIndex={[Function]}
-                  resistance={false}
-                  slideStyle={
-                    Object {
-                      "height": 525,
-                      "width": 350,
-                    }
-                  }
-                  springConfig={
-                    Object {
-                      "delay": "0s",
-                      "duration": "0.35s",
-                      "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
-                    }
-                  }
-                  style={
-                    Object {
-                      "paddingRight": 324,
-                    }
-                  }
-                  threshold={5}
-                >
-                  <div
-                    onScroll={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchStart={[Function]}
-                    style={
-                      Object {
-                        "overflowX": "hidden",
-                        "paddingRight": 324,
-                      }
-                    }
-                  >
-                    <div
-                      className="react-swipeable-view-container"
-                      style={
-                        Object {
-                          "WebkitFlexDirection": "row",
-                          "WebkitTransition": "all 0s ease 0s",
-                          "direction": "ltr",
-                          "display": "flex",
-                          "flexDirection": "row",
-                          "height": null,
-                          "transition": "all 0s ease 0s",
-                          "willChange": "transform",
-                        }
-                      }
-                    >
-                      <div
-                        aria-hidden={false}
-                        data-swipeable="true"
-                        key=".$2019-03-20"
-                        style={
-                          Object {
-                            "WebkitFlexShrink": 0,
-                            "flexShrink": 0,
-                            "height": 525,
-                            "overflow": "auto",
-                            "width": 350,
-                          }
-                        }
-                      >
-                        <Twitter
-                          index={0}
-                          key="2019-03-20"
-                          tweet={
-                            Object {
-                              "created": "2019-03-20",
-                              "favouriteCount": 5,
-                              "image": Object {
-                                "smallSize": Object {
-                                  "height": 600,
-                                  "width": 1200,
-                                },
-                                "url": "https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg",
-                              },
-                              "retweetCount": 0,
-                              "text": "I am a tweet with an image",
-                              "url": "https://twitter.com/redbadgerteam/status/1108421453903523841",
-                            }
-                          }
-                        >
-                          <a
-                            className="link"
-                            href="https://twitter.com/redbadgerteam/status/1108421453903523841"
-                            rel="noopener noreferrer"
-                            tabIndex={-1}
-                            target="_blank"
-                          >
-                            <div
-                              className="twitter blue"
-                              tabIndex={0}
-                            >
-                              <div
-                                className="handle"
-                              >
-                                <Twitter
-                                  className="twitterIcon"
-                                >
-                                  <svg
-                                    className="twitterIcon"
-                                    viewBox="0 0 25 20"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <title>
-                                      Twitter
-                                    </title>
-                                    <path
-                                      d="M7.771 19.709c9.117 0 14.104-7.52 14.104-14.04 0-.214 0-.427-.015-.638a10.06 10.06 0 0 0 2.473-2.555c-.905.4-1.864.661-2.847.777a4.956 4.956 0 0 0 2.18-2.73 9.96 9.96 0 0 1-3.148 1.198A4.977 4.977 0 0 0 14.563.75a4.932 4.932 0 0 0-2.492 5.472A14.094 14.094 0 0 1 1.855 1.066 4.925 4.925 0 0 0 3.39 7.653a4.937 4.937 0 0 1-2.25-.618v.063a4.942 4.942 0 0 0 3.977 4.837 4.97 4.97 0 0 1-2.238.085 4.96 4.96 0 0 0 4.63 3.427 9.974 9.974 0 0 1-7.335 2.045 14.079 14.079 0 0 0 7.597 2.213"
-                                      fillRule="evenodd"
-                                    />
-                                  </svg>
-                                </Twitter>
-                                <span
-                                  className="handleText"
-                                >
-                                  @RedBadger
-                                </span>
-                              </div>
-                              <img
-                                alt=""
-                                height={175}
-                                src="https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg"
-                                width={350}
-                              />
-                              <div
-                                className="tweet tweetWithNoImage"
-                              >
-                                I am a tweet with an image
-                              </div>
-                              <div
-                                className="meta"
-                              >
-                                <span>
-                                  <Retweet
-                                    className="icon retweets"
-                                  >
-                                    <svg
-                                      className="icon retweets"
-                                      viewBox="0 0 27 16"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M5.364 15.704a.999.999 0 0 1-.996-1V6.568L0 6.565 5.935.069l5.936 6.498H7.498v5.995h4.696l3.077 3.142H5.364zm21.303-6.565h-4.37V.999A.998.998 0 0 0 21.302 0h-9.906l3.075 3.141h4.696v5.996l-4.371.002 5.936 6.497 5.935-6.497z"
-                                        fill="#212121"
-                                        fillRule="evenodd"
-                                      />
-                                    </svg>
-                                  </Retweet>
-                                  0
-                                </span>
-                                <span>
-                                  <Like
-                                    className="icon"
-                                  >
-                                    <svg
-                                      className="icon"
-                                      viewBox="0 0 17 16"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M16.611 4.613C16.37 1.94 14.476 0 12.108 0c-1.577 0-3.022.85-3.834 2.21C7.468.832 6.083 0 4.53 0 2.163 0 .27 1.94.028 4.613c-.02.118-.098.74.141 1.753.345 1.462 1.142 2.791 2.304 3.844l5.797 5.26 5.896-5.26c1.162-1.053 1.959-2.382 2.304-3.844.239-1.013.16-1.635.141-1.753z"
-                                        fill="#212121"
-                                        fillRule="evenodd"
-                                      />
-                                    </svg>
-                                  </Like>
-                                  5
-                                </span>
-                              </div>
-                            </div>
-                          </a>
-                        </Twitter>
-                      </div>
-                    </div>
-                  </div>
-                </ReactSwipableView>
-              </div>
-              <div
-                className="mobileView"
-              >
-                <ReactSwipableView
-                  animateHeight={false}
-                  animateTransitions={true}
-                  axis="x"
-                  disableLazyLoading={false}
-                  disabled={false}
-                  enableMouseEvents={false}
-                  hysteresis={0.6}
-                  ignoreNativeScroll={false}
-                  index={0}
-                  onChangeIndex={[Function]}
-                  resistance={false}
-                  slideStyle={
-                    Object {
-                      "maxWidth": 415,
-                    }
-                  }
-                  springConfig={
-                    Object {
-                      "delay": "0s",
-                      "duration": "0.35s",
-                      "easeFunction": "cubic-bezier(0.15, 0.3, 0.25, 1)",
-                    }
-                  }
-                  style={
-                    Object {
-                      "paddingRight": 674,
-                    }
-                  }
-                  threshold={5}
-                >
-                  <div
-                    onScroll={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchStart={[Function]}
-                    style={
-                      Object {
-                        "overflowX": "hidden",
-                        "paddingRight": 674,
-                      }
-                    }
-                  >
-                    <div
-                      className="react-swipeable-view-container"
-                      style={
-                        Object {
-                          "WebkitFlexDirection": "row",
-                          "WebkitTransition": "all 0s ease 0s",
-                          "direction": "ltr",
-                          "display": "flex",
-                          "flexDirection": "row",
-                          "height": null,
-                          "transition": "all 0s ease 0s",
-                          "willChange": "transform",
-                        }
-                      }
-                    >
-                      <div
-                        aria-hidden={false}
-                        data-swipeable="true"
-                        key=".0"
-                        style={
-                          Object {
-                            "WebkitFlexShrink": 0,
-                            "flexShrink": 0,
-                            "maxWidth": 415,
-                            "overflow": "auto",
-                            "width": "100%",
-                          }
-                        }
-                      >
-                        <IntroMobileCard>
-                          <div
-                            className="intro"
-                          >
-                            <div
-                              className="text"
-                            >
-                              From our social feed
-                            </div>
-                          </div>
-                        </IntroMobileCard>
-                      </div>
-                    </div>
-                  </div>
-                </ReactSwipableView>
-              </div>
-            </span>
-          </ClientOnly>
-          <noscript>
+          <div
+            class="leftCol"
+          >
             <div
-              className="noscript"
-            />
-          </noscript>
-        </section>
-      </SocialSlice>
+              class="number"
+            >
+              02
+            </div>
+          </div>
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="title"
+            >
+              Find a way.
+            </h2>
+            <div
+              class="description"
+            >
+              As individuals we need to be proactive, to earn and build the trust of our clients.
+            </div>
+          </div>
+        </li>
+        <li
+          class="container"
+        >
+          <div
+            class="leftCol"
+          >
+            <div
+              class="number"
+            >
+              03
+            </div>
+          </div>
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="title"
+            >
+              Always learning.
+            </h2>
+            <div
+              class="description"
+            >
+              We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it.
+            </div>
+          </div>
+        </li>
+        <li
+          class="container"
+        >
+          <div
+            class="leftCol"
+          >
+            <div
+              class="number"
+            >
+              04
+            </div>
+          </div>
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="title"
+            >
+              Honest.
+            </h2>
+            <div
+              class="description"
+            >
+              We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner.
+            </div>
+          </div>
+        </li>
+        <li
+          class="container"
+        >
+          <div
+            class="leftCol"
+          >
+            <div
+              class="number"
+            >
+              05
+            </div>
+          </div>
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="title"
+            >
+              Strong opinions, weakly held.
+            </h2>
+            <div
+              class="description"
+            >
+              Clear points-of-view help give our work direction and purpose – but we’re humble about these. We don’t let ego get in the way.
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div
+        class="buttons"
+      >
+        <a
+          class="link"
+          href="/people"
+        >
+          Meet our team
+        </a>
+        <a
+          class="link"
+          href="/jobs"
+        >
+          Join us
+        </a>
+      </div>
     </div>
-  </AboutUs>
-</Context>
+  </div>
+  <div
+    class="timeline"
+  >
+    <div
+      class="container"
+    >
+      <noscript>
+        &lt;div class="content"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2010.png" alt="year 2010" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRow"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2010.png" alt="year 2010" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2010&lt;/div&gt;&lt;div class="title"&gt;Our vision and going for it&lt;/div&gt;&lt;div class="body"&gt;Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2010&lt;/div&gt;&lt;div class="title"&gt;Our vision and going for it&lt;/div&gt;&lt;div class="body"&gt;Red Badger was born and developed by Cain, Stu and Dave in 2010. They had a shared ambition to create a business that turned the traditional consulting model on its head: no sales team; no RFP processes, just great people doing great work that focused on quality, value and collaboration.  So they left their jobs to turn the dream into reality and set up Red Badger in Cain’s bedroom.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;At the start of Red Badger, Cain would cycle regularly from Clapton to Kingston to have business meetings with Stu and Dave, that’s 40 miles there and back. He lost a lot of weight.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2011.png" alt="year 2011" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRowFlipped"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2011.png" alt="year 2011" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2011&lt;/div&gt;&lt;div class="title"&gt;Our first office, first employees and first client&lt;/div&gt;&lt;div class="body"&gt;We moved into our first office in Clerkenwell and hired Sari Griffiths and Joe Stanton, our first permanent employees; both of whom continue to work and thrive at Red Badger. We also won our first big client project: developing the online presence for the BMW Museum in Munich.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;This was the year that Sally, our Red Badger logo was born as a result of our first rebranding.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2011&lt;/div&gt;&lt;div class="title"&gt;Our first office, first employees and first client&lt;/div&gt;&lt;div class="body"&gt;We moved into our first office in Clerkenwell and hired Sari Griffiths and Joe Stanton, our first permanent employees; both of whom continue to work and thrive at Red Badger. We also won our first big client project: developing the online presence for the BMW Museum in Munich.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;This was the year that Sally, our Red Badger logo was born as a result of our first rebranding.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2012.png" alt="year 2012" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRow"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2012.png" alt="year 2012" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2012&lt;/div&gt;&lt;div class="title"&gt;We won our first Node project and hired a big gun&lt;/div&gt;&lt;div class="body"&gt;This is the year we decided to bring in a big gun to help support our growth.  So, Mike Altendorf, former Conchango CEO and industry veteran, was welcomed as RB’s first non-executive director.  We also gained our first long-term retained client, international insurance broker JLT.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;During the course of our work with JLT, Stu wrote over 1.2 million lines of code.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2012&lt;/div&gt;&lt;div class="title"&gt;We won our first Node project and hired a big gun&lt;/div&gt;&lt;div class="body"&gt;This is the year we decided to bring in a big gun to help support our growth.  So, Mike Altendorf, former Conchango CEO and industry veteran, was welcomed as RB’s first non-executive director.  We also gained our first long-term retained client, international insurance broker JLT.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;During the course of our work with JLT, Stu wrote over 1.2 million lines of code.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2013.png" alt="year 2013" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRowFlipped"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2013.png" alt="year 2013" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2013&lt;/div&gt;&lt;div class="title"&gt;Winning Sky, moving to Mallow Street and socialising beyond the pub&lt;/div&gt;&lt;div class="body"&gt;Our Clerkenwell office started to get a bit small, so we re-located to an amazing warehouse space just behind Old Street’s Silicon Roundabout.  We then took on Sky, our biggest client so far. During this year we also started to think about how Red Badger could operate for social good, and embarked on a pro-bono project to develop an app for Haller, a institution focused on sustainability through helping people in Africa learn essential farming skills.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;With the team growing, we diversified from pub nights and found our voice at karaoke nights, started monthly dinner dates and formed a sporty badgers group.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2013&lt;/div&gt;&lt;div class="title"&gt;Winning Sky, moving to Mallow Street and socialising beyond the pub&lt;/div&gt;&lt;div class="body"&gt;Our Clerkenwell office started to get a bit small, so we re-located to an amazing warehouse space just behind Old Street’s Silicon Roundabout.  We then took on Sky, our biggest client so far. During this year we also started to think about how Red Badger could operate for social good, and embarked on a pro-bono project to develop an app for Haller, a institution focused on sustainability through helping people in Africa learn essential farming skills.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;With the team growing, we diversified from pub nights and found our voice at karaoke nights, started monthly dinner dates and formed a sporty badgers group.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2014.png" alt="year 2014" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRow"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2014.png" alt="year 2014" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2014&lt;/div&gt;&lt;div class="title"&gt;Winning Tesco, pitching with hackathons and starting React meetups&lt;/div&gt;&lt;div class="body"&gt;2014 spelt lift-off for Red Badger in a big way.  We won a big retained project for one of the UK’s largest grocers, Tesco.  We pitched for and won the complete re-build of the Fortnum &amp; Mason website, through a two day hackathon, ripping up the RFP process and demonstrating the skills and innovation we could bring to the project in real time.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;As a consequence of our work with Tesco we started to run small monthly gatherings to discuss working with, and innovations around, React: this has now grown into Europe’s largest React community.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2014&lt;/div&gt;&lt;div class="title"&gt;Winning Tesco, pitching with hackathons and starting React meetups&lt;/div&gt;&lt;div class="body"&gt;2014 spelt lift-off for Red Badger in a big way.  We won a big retained project for one of the UK’s largest grocers, Tesco.  We pitched for and won the complete re-build of the Fortnum &amp; Mason website, through a two day hackathon, ripping up the RFP process and demonstrating the skills and innovation we could bring to the project in real time.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;As a consequence of our work with Tesco we started to run small monthly gatherings to discuss working with, and innovations around, React: this has now grown into Europe’s largest React community.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2015.png" alt="year 2015" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRowFlipped"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2015.png" alt="year 2015" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2015&lt;/div&gt;&lt;div class="title"&gt;Winning media clients and hiring an island&lt;/div&gt;&lt;div class="body"&gt;2015 saw Red Badger spread its wings and move into both the media and finance space. We won a project working for FT.com to deliver its next generation online offering. We also landed three awards for our work with Fortnum &amp; Mason and started consulting for one of the country’s leading high-street banks.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;This year was also Red Badger’s 5th birthday.  So we decided to make it something really special and hired Osea island for a three-day company getaway which featured a hog roast, a ball in a bomb factory, morning yoga and golf-cart racing.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2015&lt;/div&gt;&lt;div class="title"&gt;Winning media clients and hiring an island&lt;/div&gt;&lt;div class="body"&gt;2015 saw Red Badger spread its wings and move into both the media and finance space. We won a project working for FT.com to deliver its next generation online offering. We also landed three awards for our work with Fortnum &amp; Mason and started consulting for one of the country’s leading high-street banks.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;This year was also Red Badger’s 5th birthday.  So we decided to make it something really special and hired Osea island for a three-day company getaway which featured a hog roast, a ball in a bomb factory, morning yoga and golf-cart racing.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2016.png" alt="year 2016" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRow"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2016.png" alt="year 2016" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2016&lt;/div&gt;&lt;div class="title"&gt;Our biggest client win, recognition in the Sunday Times and the arrival of Milo&lt;/div&gt;&lt;div class="body"&gt;2016 saw our fastest growth yet as we reached number 44 on the Tech Track 100 list and featured in Sunday Times. We took on an array of new clients (but we can’t talk about the best one) brought in some incredible new members of staff and welcomed Milo, the office dog.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;To celebrate and reward staff for their hard work, Red Badger went to a castle near Leipzig in Germany. Before celebrations kicked off we held a workshop for all our staff to ensure they had a voice in helping us update our brand proposition and plan 2017.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2016&lt;/div&gt;&lt;div class="title"&gt;Our biggest client win, recognition in the Sunday Times and the arrival of Milo&lt;/div&gt;&lt;div class="body"&gt;2016 saw our fastest growth yet as we reached number 44 on the Tech Track 100 list and featured in Sunday Times. We took on an array of new clients (but we can’t talk about the best one) brought in some incredible new members of staff and welcomed Milo, the office dog.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;To celebrate and reward staff for their hard work, Red Badger went to a castle near Leipzig in Germany. Before celebrations kicked off we held a workshop for all our staff to ensure they had a voice in helping us update our brand proposition and plan 2017.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2017.png" alt="year 2017" class="image"/&gt;&lt;/div&gt;&lt;div&gt;&lt;div class="largeScreen"&gt;&lt;div class="topRowFlipped"&gt;&lt;div class="imageWrapper"&gt;&lt;img src="2017.png" alt="year 2017" class="image"/&gt;&lt;/div&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2017&lt;/div&gt;&lt;div class="title"&gt;Doing the right thing and “Hello Westminster”&lt;/div&gt;&lt;div class="body"&gt;Our Social Value task force launched with our team committing time and skills to Code Your Future and Pride in London. Thanks to our generous badgers, we earned the Platinum Award for Payroll Giving with the company matching employee donations to their charity of choice. We featured in Econsultancy’s Top 100 Digital Agencies for the first time, grew to #31 on the Tech Track 100 and were shortlisted for BIMA’s Entrepreneurial Business of the year. Whilst we didn’t win, Stu was recognised as one of the most influential digital people in the BIMA 100, well done Chief Scientist.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;In July we moved again - this time across the road to a brand new office in Old Street Yard. Oh, and did we say we hosted a conference at QE2 conference centre Westminster for 700 React fans?&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="smallScreen"&gt;&lt;div class="copy"&gt;&lt;div class="year"&gt;2017&lt;/div&gt;&lt;div class="title"&gt;Doing the right thing and “Hello Westminster”&lt;/div&gt;&lt;div class="body"&gt;Our Social Value task force launched with our team committing time and skills to Code Your Future and Pride in London. Thanks to our generous badgers, we earned the Platinum Award for Payroll Giving with the company matching employee donations to their charity of choice. We featured in Econsultancy’s Top 100 Digital Agencies for the first time, grew to #31 on the Tech Track 100 and were shortlisted for BIMA’s Entrepreneurial Business of the year. Whilst we didn’t win, Stu was recognised as one of the most influential digital people in the BIMA 100, well done Chief Scientist.&lt;/div&gt;&lt;div class="fact"&gt;&lt;span class="factTitle"&gt;Random fact of the year: &lt;/span&gt;In July we moved again - this time across the road to a brand new office in Old Street Yard. Oh, and did we say we hosted a conference at QE2 conference centre Westminster for 700 React fans?&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      </noscript>
+    </div>
+  </div>
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>
+  <div
+    class="qAndA"
+  >
+    <div
+      class="qAndA__wrapper"
+    >
+      <div
+        class="qAndA__container"
+      >
+        <h2
+          class="qAndA__heading"
+        >
+          Answers to common questions
+        </h2>
+        <ul
+          class="qAndA__categoryList"
+        >
+          <li>
+            <div
+              class="category"
+            >
+              <h3
+                class="category__title"
+              >
+                I am a qanda
+              </h3>
+              <ul
+                class="category__questionList"
+              >
+                <li
+                  class="category__element"
+                >
+                  <div>
+                    <div
+                      class="topic__question"
+                    >
+                      <h4
+                        class="topic__heading"
+                      >
+                        why do you slugs keep eating my cabbages
+                      </h4>
+                      <button
+                        aria-controls="squelch-slime-slugstuff"
+                        aria-expanded="false"
+                        aria-label="why do you slugs keep eating my cabbages"
+                        class="topic__more__hide"
+                        type="button"
+                      >
+                        <span
+                          class="topic__plus"
+                        />
+                      </button>
+                    </div>
+                    <div
+                      class="topic__answer__hidden"
+                      id="squelch-slime-slugstuff"
+                    >
+                      cuz they're delicious
+                    </div>
+                    <noscript>
+                      &lt;div class="topic__answer__visible"&gt;cuz they're delicious&lt;/div&gt;
+                    </noscript>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section
+    class="socialSlice"
+  >
+    <noscript>
+      &lt;div class="noscript"&gt;&lt;div class="intro"&gt;&lt;div class="text"&gt;From our social feed&lt;/div&gt;&lt;/div&gt;&lt;a class="link" href="https://twitter.com/redbadgerteam/status/1108421453903523841" rel="noopener noreferrer" target="_blank" tabindex="-1"&gt;&lt;div class="twitter blue" tabindex="0"&gt;&lt;div class="handle"&gt;&lt;svg viewBox="0 0 25 20" xmlns="http://www.w3.org/2000/svg" class="twitterIcon"&gt;&lt;title&gt;Twitter&lt;/title&gt;&lt;path d="M7.771 19.709c9.117 0 14.104-7.52 14.104-14.04 0-.214 0-.427-.015-.638a10.06 10.06 0 0 0 2.473-2.555c-.905.4-1.864.661-2.847.777a4.956 4.956 0 0 0 2.18-2.73 9.96 9.96 0 0 1-3.148 1.198A4.977 4.977 0 0 0 14.563.75a4.932 4.932 0 0 0-2.492 5.472A14.094 14.094 0 0 1 1.855 1.066 4.925 4.925 0 0 0 3.39 7.653a4.937 4.937 0 0 1-2.25-.618v.063a4.942 4.942 0 0 0 3.977 4.837 4.97 4.97 0 0 1-2.238.085 4.96 4.96 0 0 0 4.63 3.427 9.974 9.974 0 0 1-7.335 2.045 14.079 14.079 0 0 0 7.597 2.213" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class="handleText"&gt;@RedBadger&lt;/span&gt;&lt;/div&gt;&lt;img width="350" height="175" src="https://pbs.twimg.com/media/D2HnbiMXgAEaJaI.jpg" alt=""/&gt;&lt;div class="tweet tweetWithNoImage"&gt;I am a tweet with an image&lt;/div&gt;&lt;div class="meta"&gt;&lt;span&gt;&lt;svg viewBox="0 0 27 16" xmlns="http://www.w3.org/2000/svg" class="icon retweets"&gt;&lt;path d="M5.364 15.704a.999.999 0 0 1-.996-1V6.568L0 6.565 5.935.069l5.936 6.498H7.498v5.995h4.696l3.077 3.142H5.364zm21.303-6.565h-4.37V.999A.998.998 0 0 0 21.302 0h-9.906l3.075 3.141h4.696v5.996l-4.371.002 5.936 6.497 5.935-6.497z" fill="#212121" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;0&lt;/span&gt;&lt;span&gt;&lt;svg viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg" class="icon"&gt;&lt;path d="M16.611 4.613C16.37 1.94 14.476 0 12.108 0c-1.577 0-3.022.85-3.834 2.21C7.468.832 6.083 0 4.53 0 2.163 0 .27 1.94.028 4.613c-.02.118-.098.74.141 1.753.345 1.462 1.142 2.791 2.304 3.844l5.797 5.26 5.896-5.26c1.162-1.053 1.959-2.382 2.304-3.844.239-1.013.16-1.635.141-1.753z" fill="#212121" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;5&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;a class="link" href="https://www.somefakelink-redbadger.com" rel="noopener noreferrer" target="_blank" tabindex="-1"&gt;&lt;div class="twitter mauve" tabindex="0"&gt;&lt;div class="handle"&gt;&lt;svg viewBox="0 0 25 20" xmlns="http://www.w3.org/2000/svg" class="twitterIcon"&gt;&lt;title&gt;Twitter&lt;/title&gt;&lt;path d="M7.771 19.709c9.117 0 14.104-7.52 14.104-14.04 0-.214 0-.427-.015-.638a10.06 10.06 0 0 0 2.473-2.555c-.905.4-1.864.661-2.847.777a4.956 4.956 0 0 0 2.18-2.73 9.96 9.96 0 0 1-3.148 1.198A4.977 4.977 0 0 0 14.563.75a4.932 4.932 0 0 0-2.492 5.472A14.094 14.094 0 0 1 1.855 1.066 4.925 4.925 0 0 0 3.39 7.653a4.937 4.937 0 0 1-2.25-.618v.063a4.942 4.942 0 0 0 3.977 4.837 4.97 4.97 0 0 1-2.238.085 4.96 4.96 0 0 0 4.63 3.427 9.974 9.974 0 0 1-7.335 2.045 14.079 14.079 0 0 0 7.597 2.213" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class="handleText"&gt;@RedBadger&lt;/span&gt;&lt;/div&gt;&lt;div class="tweet tweetWithNoImage"&gt;I am a tweet&lt;/div&gt;&lt;div class="meta"&gt;&lt;span&gt;&lt;svg viewBox="0 0 27 16" xmlns="http://www.w3.org/2000/svg" class="icon retweets"&gt;&lt;path d="M5.364 15.704a.999.999 0 0 1-.996-1V6.568L0 6.565 5.935.069l5.936 6.498H7.498v5.995h4.696l3.077 3.142H5.364zm21.303-6.565h-4.37V.999A.998.998 0 0 0 21.302 0h-9.906l3.075 3.141h4.696v5.996l-4.371.002 5.936 6.497 5.935-6.497z" fill="#212121" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;1&lt;/span&gt;&lt;span&gt;&lt;svg viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg" class="icon"&gt;&lt;path d="M16.611 4.613C16.37 1.94 14.476 0 12.108 0c-1.577 0-3.022.85-3.834 2.21C7.468.832 6.083 0 4.53 0 2.163 0 .27 1.94.028 4.613c-.02.118-.098.74.141 1.753.345 1.462 1.142 2.791 2.304 3.844l5.797 5.26 5.896-5.26c1.162-1.053 1.959-2.382 2.304-3.844.239-1.013.16-1.635.141-1.753z" fill="#212121" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;2&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;a class="link" href="https://www.somefakelink-redbadger.com" rel="noopener noreferrer" target="_blank"&gt;&lt;div class="instagram green"&gt;&lt;div class="handle" tabindex="0"&gt;&lt;svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="instagramIcon"&gt;&lt;title&gt;Instagram&lt;/title&gt;&lt;path d="M10 1.804c2.67 0 2.985.01 4.04.059.974.044 1.504.207 1.856.344a3.1 3.1 0 0 1 1.15.748c.35.35.566.683.747 1.15.137.351.3.88.344 1.855.048 1.055.059 1.37.059 4.04s-.01 2.985-.059 4.04c-.044.974-.207 1.504-.344 1.856a3.1 3.1 0 0 1-.748 1.15 3.09 3.09 0 0 1-1.15.747c-.351.137-.88.3-1.855.344-1.054.048-1.37.059-4.04.059s-2.986-.01-4.04-.059c-.974-.044-1.504-.207-1.856-.344a3.097 3.097 0 0 1-1.15-.748 3.097 3.097 0 0 1-.747-1.15c-.137-.351-.3-.88-.344-1.855-.048-1.055-.059-1.37-.059-4.04s.01-2.985.059-4.04c.044-.974.207-1.504.344-1.856a3.1 3.1 0 0 1 .748-1.15 3.09 3.09 0 0 1 1.15-.747c.351-.137.88-.3 1.855-.344 1.055-.048 1.37-.059 4.04-.059m0-1.8c-2.715 0-3.055.01-4.122.06-1.064.048-1.79.217-2.426.464A4.9 4.9 0 0 0 1.68 1.681a4.9 4.9 0 0 0-1.153 1.77C.281 4.089.112 4.815.063 5.879.015 6.945.003 7.285.003 10s.012 3.055.06 4.122c.049 1.064.218 1.79.465 2.426a4.9 4.9 0 0 0 1.153 1.771 4.9 4.9 0 0 0 1.77 1.153c.637.247 1.363.416 2.427.465 1.067.048 1.407.06 4.122.06s3.055-.012 4.122-.06c1.064-.049 1.79-.218 2.426-.465a4.9 4.9 0 0 0 1.771-1.153 4.9 4.9 0 0 0 1.153-1.77c.247-.637.416-1.363.465-2.427.048-1.067.06-1.407.06-4.122s-.012-3.055-.06-4.122c-.049-1.064-.218-1.79-.465-2.426a4.9 4.9 0 0 0-1.153-1.771 4.9 4.9 0 0 0-1.77-1.153c-.637-.247-1.363-.416-2.427-.465C13.055.015 12.715.003 10 .003"&gt;&lt;/path&gt;&lt;path d="M10 4.866a5.134 5.134 0 1 0 0 10.268 5.134 5.134 0 0 0 0-10.268zm0 8.466a3.332 3.332 0 1 1 0-6.664 3.332 3.332 0 0 1 0 6.664zm6.536-8.668a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class="handleText"&gt;@redbadgerteam&lt;/span&gt;&lt;/div&gt;&lt;img class="image" alt="I am an instagram post…" src="https://www.somefakelink-redbadger.com/image.jpg"/&gt;&lt;div class="meta"&gt;&lt;div class="text" tabindex="0"&gt;I am an instagram posts&lt;/div&gt;&lt;div&gt;&lt;span class="likes" tabindex="0"&gt;&lt;svg viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg" class="icon"&gt;&lt;path d="M16.611 4.613C16.37 1.94 14.476 0 12.108 0c-1.577 0-3.022.85-3.834 2.21C7.468.832 6.083 0 4.53 0 2.163 0 .27 1.94.028 4.613c-.02.118-.098.74.141 1.753.345 1.462 1.142 2.791 2.304 3.844l5.797 5.26 5.896-5.26c1.162-1.053 1.959-2.382 2.304-3.844.239-1.013.16-1.635.141-1.753z" fill="#212121" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;2&lt;/span&gt;&lt;span class="comments" tabindex="0"&gt;&lt;svg viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg" class="icon"&gt;&lt;path d="M17.455 7.09c0-3.914-3.906-7.09-8.728-7.09C3.907 0 0 3.176 0 7.09c0 2.044 1.068 3.879 2.77 5.171-.32.827-.862 1.906-1.78 3.012 1.743 0 3.988-.229 5.717-1.293.65.128 1.324.2 2.02.2 4.82 0 8.728-3.174 8.728-7.09z" fill="#212121" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;1&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;
+    </noscript>
+  </section>
+</div>
 `;

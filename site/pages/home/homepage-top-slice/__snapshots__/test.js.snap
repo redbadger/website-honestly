@@ -1,84 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/home/homepage-top-slice/ renders correctly 1`] = `
-<Context>
-  <HomepageTopSlice>
-    <section
-      className="homepageTopSlice"
+<section
+  class="homepageTopSlice"
+>
+  <div
+    class="sliceContainer"
+  >
+    <div
+      class="sloganWrapper"
     >
-      <div
-        className="sliceContainer"
+      <h1
+        class="badgerSlogan"
       >
-        <div
-          className="sloganWrapper"
+        Let’s make
+      </h1>
+      <br />
+      <h1
+        class="badgerSlogan"
+      >
+        things better
+      </h1>
+    </div>
+    <p
+      class="sloganDescription fadeInUp"
+    >
+      <a
+        class="sloganLink"
+        href="/what-we-do"
+      >
+        We are digital transformation experts who 
+        <span
+          class="sloganUnderline"
         >
-          <h1
-            className="badgerSlogan"
-          >
-            Let’s make
-          </h1>
-          <br />
-          <h1
-            className="badgerSlogan"
-          >
-            things better
-          </h1>
-        </div>
-        <p
-          className="sloganDescription fadeInUp"
+          innovate and 
+        </span>
+        <span
+          class="lastWord"
         >
-          <Link
-            className="sloganLink"
-            to="whatWeDoPage"
+          <span
+            class="sloganUnderline"
           >
-            <NavigationLink
-              className="sloganLink"
-              navigating={[Function]}
-              stateKey="whatWeDoPage"
-            >
-              <a
-                className="sloganLink"
-                href={null}
-                onClick={[Function]}
-              >
-                We are digital transformation experts who
-                 
-                <span
-                  className="sloganUnderline"
-                >
-                  innovate and 
-                </span>
-                <span
-                  className="lastWord"
-                >
-                  <span
-                    className="sloganUnderline"
-                  >
-                    deliver.
-                  </span>
-                  <Arrow
-                    className="arrow"
-                  >
-                    <svg
-                      className="arrow"
-                      viewBox="0 0 22 22"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                        fill="#FC1D42"
-                        fillRule="evenodd"
-                        stroke="#FC1D42"
-                      />
-                    </svg>
-                  </Arrow>
-                </span>
-              </a>
-            </NavigationLink>
-          </Link>
-        </p>
-      </div>
-    </section>
-  </HomepageTopSlice>
-</Context>
+            deliver.
+          </span>
+          <svg
+            class="arrow"
+            viewBox="0 0 22 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+              fill="#FC1D42"
+              fill-rule="evenodd"
+              stroke="#FC1D42"
+            />
+          </svg>
+        </span>
+      </a>
+    </p>
+  </div>
+</section>
 `;

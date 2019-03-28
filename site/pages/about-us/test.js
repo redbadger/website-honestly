@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { render } from 'enzyme';
 
 import { Context } from '../../components/link/test-helper';
 
@@ -60,7 +60,7 @@ const qAndAs = [
 describe('site/pages/about-us', () => {
   it('renders correctly', () => {
     expect(
-      mount(
+      render(
         <Context>
           <AboutUs tweets={tweets} instagramPosts={instagramPosts} qAndAs={qAndAs} />
         </Context>,

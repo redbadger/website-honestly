@@ -1,73 +1,45 @@
 // @flow
-import * as React from 'react';
+import React, { type Node, useContext } from 'react';
 import { StateNavigator } from 'navigation';
-import { NavigationLink } from 'navigation-react';
-import PropTypes from 'prop-types';
+import { NavigationLink, NavigationContext } from 'navigation-react';
 
 export type LinkProps = {
   to: string,
-  children?: React.Node,
+  children?: Node,
   activeCssClass?: string,
   target?: string,
 };
 
-export default class Link extends React.Component<LinkProps> {
-  static contextTypes = {
-    // The stateNavigator is provided by navigation-react and provides
-    // access to the current route.
-    stateNavigator: PropTypes.instanceOf(StateNavigator),
-  };
-
-  constructor(props: LinkProps) {
-    super(props);
-
-    this.shouldNavigate = this.shouldNavigate.bind(this);
-  }
-
-  getStateNavigator(): StateNavigator {
-    return this.context.stateNavigator;
-  }
-
-  shouldNavigate: Function = this.shouldNavigate;
-
-  props: LinkProps;
-
-  /**
-   * Checks if the currently active state is a child (direct or nested) of
-   * the state specified in the `to` property. Returns true, if this is the
-   * case; otherwise false.
-   */
-  hasActiveChild(): boolean {
-    const stateNavigator = this.getStateNavigator();
-    let { state } = stateNavigator.stateContext;
-    while (state.parentKey) {
-      if (state.parentKey === this.props.to) {
-        return true;
-      }
-
-      state = stateNavigator.states[state.parentKey];
+/**
+ * Checks if the currently active state is a child (direct or nested) of
+ * the state specified in the `to` property. Returns true, if this is the
+ * case; otherwise false.
+ */
+const hasActiveChild = (stateNavigator: StateNavigator, target: string): boolean => {
+  let { state } = stateNavigator.stateContext;
+  while (state.parentKey) {
+    if (state.parentKey === target) {
+      return true;
     }
 
-    return false;
+    state = stateNavigator.states[state.parentKey];
   }
 
-  shouldNavigate(): boolean {
-    return this.props.target !== '_blank';
-  }
+  return false;
+};
 
-  render() {
-    const { to, ...rest } = this.props;
-    const appliedCssClass = this.hasActiveChild() ? this.props.activeCssClass : '';
+export default function Link(props: LinkProps) {
+  const { to, ...rest } = props;
+  const { stateNavigator } = useContext(NavigationContext);
 
-    return (
-      <NavigationLink
-        stateKey={to}
-        className={appliedCssClass}
-        navigating={this.shouldNavigate}
-        {...rest}
-      >
-        {this.props.children}
-      </NavigationLink>
-    );
-  }
+  return (
+    <NavigationLink
+      stateKey={to}
+      className={hasActiveChild(stateNavigator, to) ? props.activeCssClass : ''}
+      navigating={() => props.target !== '_blank'}
+      {...rest}
+    >
+      {props.children}
+    </NavigationLink>
+  );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { render } from 'enzyme';
 
 import { Context } from '../../components/link/test-helper';
 
@@ -27,7 +27,7 @@ const growingTrendsBlogPosts = [
 describe('site/pages/technology', () => {
   it('renders correctly', () => {
     expect(
-      mount(
+      render(
         <Context>
           <TechnologyPage
             triedAndTestedBlogPosts={triedAndTestedBlogPosts}
