@@ -1,1440 +1,759 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/our-work/case-study/fidelity/ renders correctly 1`] = `
-<Context>
-  <Fidelity>
-    <ScrollTracker>
-      <Social
-        altText="People (Badgers) sticking post-its on a blue wall"
-        description="Reflecting Fidelity’s exceptional level of service with industry-leading design and usability on a global website."
-        metaImage="social.jpg"
-        title="Leading design and usability for global financial website | Red Badger"
-        url="https://red-badger.com/our-work/case-study/fidelity"
+Array [
+  <div
+    class="headerImgWrapper"
+  >
+    <img
+      alt="People (Badgers) sticking post-its on a blue wall"
+      class="headerImg"
+      src="header_L.jpg"
+    />
+  </div>,
+  <div
+    class="body"
+  >
+    <div
+      class="heading"
+    >
+      <h1
+        class="fontL "
       >
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "summary_large_image",
-                "name": "twitter:card",
-              },
-              Object {
-                "content": "@redbadgerteam",
-                "name": "twitter:site",
-              },
-              Object {
-                "content": "Leading design and usability for global financial website | Red Badger",
-                "name": "twitter:title",
-              },
-              Object {
-                "content": "Reflecting Fidelity’s exceptional level of service with industry-leading design and usability on a global website.",
-                "name": "twitter:description",
-              },
-              Object {
-                "content": "https://red-badger.comsocial.jpg",
-                "name": "twitter:image",
-              },
-              Object {
-                "content": "website",
-                "property": "og:type",
-              },
-              Object {
-                "content": "Leading design and usability for global financial website | Red Badger",
-                "property": "og:title",
-              },
-              Object {
-                "content": "https://red-badger.comsocial.jpg",
-                "property": "og:image",
-              },
-              Object {
-                "content": "https://red-badger.comsocial.jpg",
-                "property": "og:image:secure_url",
-              },
-              Object {
-                "content": "People (Badgers) sticking post-its on a blue wall",
-                "property": "og:image:alt",
-              },
-              Object {
-                "content": "Reflecting Fidelity’s exceptional level of service with industry-leading design and usability on a global website.",
-                "property": "og:description",
-              },
-              Object {
-                "content": "https://red-badger.com/our-work/case-study/fidelity",
-                "property": "og:url",
-              },
-            ]
-          }
+        Communicating the fine art of investment with a unified, global website in four months
+      </h1>
+    </div>
+    <div
+      class="section"
+    >
+      <h2
+        class="sectionHeading"
+      >
+        <span
+          class="redTitle"
         >
-          <SideEffect(NullComponent)
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "Leading design and usability for global financial website | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "Reflecting Fidelity’s exceptional level of service with industry-leading design and usability on a global website.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.comsocial.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "Leading design and usability for global financial website | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.comsocial.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.comsocial.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "People (Badgers) sticking post-its on a blue wall",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "Reflecting Fidelity’s exceptional level of service with industry-leading design and usability on a global website.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/our-work/case-study/fidelity",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <NullComponent
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "Leading design and usability for global financial website | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "Reflecting Fidelity’s exceptional level of service with industry-leading design and usability on a global website.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.comsocial.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "Leading design and usability for global financial website | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.comsocial.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.comsocial.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "People (Badgers) sticking post-its on a blue wall",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "Reflecting Fidelity’s exceptional level of service with industry-leading design and usability on a global website.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/our-work/case-study/fidelity",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            />
-          </SideEffect(NullComponent)>
-        </HelmetWrapper>
-      </Social>
+          Let's make things better
+        </span>
+        Using design to reflect an exceptional level of client service
+      </h2>
       <div
-        className="headerImgWrapper"
+        class="sectionBody"
       >
-        <img
-          alt="People (Badgers) sticking post-its on a blue wall"
-          className="headerImg"
-          src="header_L.jpg"
-        />
-      </div>
-      <Body>
-        <div
-          className="body"
+        <p
+          class="fontXS paragraph"
         >
-          <PageHeading>
-            <div
-              className="heading"
-            >
-              <H1
-                type="fontL"
-              >
-                <h1
-                  className="fontL "
-                >
-                  Communicating the fine art of investment with a unified, global website in four months
-                </h1>
-              </H1>
-            </div>
-          </PageHeading>
-          <Section>
-            <div
-              className="section"
-            >
-              <SectionHeading
-                heading="Using design to reflect an exceptional level of client service"
-                subHeading="Let's make things better"
-              >
-                <h2
-                  className="sectionHeading"
-                >
-                  <span
-                    className="redTitle"
-                  >
-                    Let's make things better
-                  </span>
-                  Using design to reflect an exceptional level of client service
-                </h2>
-              </SectionHeading>
-              <SectionBody>
-                <div
-                  className="sectionBody"
-                >
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Fidelity International (Fidelity) is a global leader in investment, it manages $310bn globally for clients who range from private individuals to institutions like pension funds and sovereign wealth funds. It has been innovating for 50 years in 25 countries.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        They recognised that it had a fractured web strategy for institutional clients, sometimes combining them with other client groups or, in some markets, not offering any web content at all.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        With an ambitious brief, Fidelity chose to work with Red Badger to create a digital presence that would unite the company’s disparate global sites, showcase its capabilities, and highlight its thinking, without overwhelming the reader. Ultimately, the new website needed to give visitors a taste of the lengths Fidelity will go to for clients.
-                      </p>
-                    </P>
-                  </P>
-                </div>
-              </SectionBody>
-            </div>
-          </Section>
-          <Section>
-            <div
-              className="section"
-            >
-              <SectionHeading
-                heading="Creating a design strategy and delivering on it "
-                subHeading="Do the right thing. Do the thing right"
-              >
-                <h2
-                  className="sectionHeading"
-                >
-                  <span
-                    className="redTitle"
-                  >
-                    Do the right thing. Do the thing right
-                  </span>
-                  Creating a design strategy and delivering on it 
-                </h2>
-              </SectionHeading>
-              <SectionBody>
-                <div
-                  className="sectionBody"
-                >
-                  <H3>
-                    <H3
-                      type="fontS2"
-                    >
-                      <h3
-                        className="fontS2 "
-                      >
-                        Building a brand online
-                      </h3>
-                    </H3>
-                  </H3>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Our engagement with Fidelity began with an intense round of workshops which gathered our own designers, UX and developers with their own cross-disciplinary team. We worked together to set out a clear project vision, articulated as a client statement:
-                      </p>
-                    </P>
-                  </P>
-                  <ArticleImg
-                    alt=""
-                    src="Binoculars.jpg"
-                  >
-                    <img
-                      alt=""
-                      className="articleImg"
-                      src="Binoculars.jpg"
-                    />
-                  </ArticleImg>
-                  <Section>
-                    <div
-                      className="section"
-                    >
-                      <SectionBody>
-                        <div
-                          className="sectionBody"
-                        >
-                          <Quote
-                            text="This elegant site anticipates my needs and supplies the investment thinking I rely on."
-                          >
-                            <Quote
-                              className="quote"
-                              text="This elegant site anticipates my needs and supplies the investment thinking I rely on."
-                            >
-                              <div
-                                className="quotation quote"
-                              >
-                                <div
-                                  className="quotation__text"
-                                >
-                                  <blockquote
-                                    className="quotation__quote"
-                                  >
-                                    This elegant site anticipates my needs and supplies the investment thinking I rely on.
-                                  </blockquote>
-                                </div>
-                              </div>
-                            </Quote>
-                          </Quote>
-                        </div>
-                      </SectionBody>
-                    </div>
-                  </Section>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        We used this vision as a platform to build the creative principles on, which then guided the design expression.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Together, we focused on what clients want by identifying their goals, motivations and behaviours. This was a truly collaborative process from start to finish, making the design something which Fidelity feels reflects the company’s expertise, ambition and spirit.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        The central creative principle for the project which the team referred to throughout was ‘Provocatively Reassuring’. In a crowded market, the site needed to catch clients’ attention but quickly hold their interest with reassuringly excellent and relevant content.
-                      </p>
-                    </P>
-                  </P>
-                  <H3>
-                    <H3
-                      type="fontS2"
-                    >
-                      <h3
-                        className="fontS2 "
-                      >
-                        There are two main sections to the site:
-                      </h3>
-                    </H3>
-                  </H3>
-                  <UL>
-                    <ul
-                      className="list"
-                    >
-                      <li>
-                        <P>
-                          <P
-                            customClass="paragraph"
-                          >
-                            <p
-                              className="fontXS paragraph"
-                            >
-                              <strong>
-                                Editorial, which is itself split into ‘Fidelity Answers’:
-                              </strong>
-                               a novel, magazine-like approach which tackles thematic client questions with a cross-asset class investment insight; and ‘Latest Thinking’: blogs with fast market commentary and topical investment insight.
-                            </p>
-                          </P>
-                        </P>
-                      </li>
-                      <li>
-                        <strong>
-                          The ‘Business Card’:
-                        </strong>
-                         the section of the website that outlines Fidelity’s capabilities, sales contacts and background to the company’s history and heritage.
-                      </li>
-                    </ul>
-                  </UL>
-                  <div
-                    className="articleImgFlexWrapper"
-                  >
-                    <div
-                      className="articleImgFlexContent"
-                    >
-                      <Image
-                        alt="Editorial site section example"
-                        className="articleImgFlex"
-                        src="Screenshots_1_M.png"
-                      >
-                        <picture>
-                          <source
-                            className="articleImgFlex"
-                            srcSet="Screenshots_1_M.png"
-                          />
-                          <img
-                            alt="Editorial site section example"
-                            className="articleImgFlex"
-                            src="Screenshots_1_M.png"
-                          />
-                        </picture>
-                      </Image>
-                      <Image
-                        alt="Business Card site section example"
-                        className="articleImgFlex"
-                        src="Screenshots_2_M.png"
-                      >
-                        <picture>
-                          <source
-                            className="articleImgFlex"
-                            srcSet="Screenshots_2_M.png"
-                          />
-                          <img
-                            alt="Business Card site section example"
-                            className="articleImgFlex"
-                            src="Screenshots_2_M.png"
-                          />
-                        </picture>
-                      </Image>
-                    </div>
-                  </div>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        The design language we developed was informed by the ‘provocatively reassuring’ duality: eye-catching elements of striking imagery, bold headlines and asymmetrical, disruptive layouts were then balanced by a reassuringly logical structure and a disciplined approach to hierarchy. All this was then combined with a suite of refined and user-centric design details.
-                      </p>
-                    </P>
-                  </P>
-                  <H3>
-                    <H3
-                      type="fontS2"
-                    >
-                      <h3
-                        className="fontS2 "
-                      >
-                        An image is worth a thousand words
-                      </h3>
-                    </H3>
-                  </H3>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Across the pages that explain who Fidelity is and how they work, we wanted to find a way to bring the content to life in a rich and thought-provoking way, that hints at the cutting-edge nature of their work.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        The answer was staring us in the face: the company’s art. Across Fidelity‘s offices around the world, there’s a collection of over 3,000 artworks, often created by local artists. We worked with the company’s curator to choose a selection of digital, moving-image pieces to use in the headers - these catch the eye in a sophisticated way and invite the user to make connections with the business, while also highlighting the modern, innovative side of the business. Furthermore, they subtly reinforce the global nature of the company by using artists based in its many locations around the world.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        For the flagship ‘Fidelity Answers’ content, we wanted additional bold imagery to draw people in. Together with the editorial team, we commissioned illustrations based on the editions’ themes to create a sense of intrigue. This enabled us to convey the nuances of complex investment concepts with a lightness of touch.
-                      </p>
-                    </P>
-                  </P>
-                  <H3>
-                    <H3
-                      type="fontS2"
-                    >
-                      <h3
-                        className="fontS2 "
-                      >
-                        Tech made to deliver
-                      </h3>
-                    </H3>
-                  </H3>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Alongside the design strategy, we mapped out the technology that would be implemented to strengthen the responsiveness of the site, across all platforms. We decided to use technology such as React, Serverless, Node, Terraform and AWS, which enabled us to build the site quickly. Accompanying this technology, we worked with Sourcefabric to integrate Superdesk, a digital editorial content management system developed with Fidelity’s team.
-                      </p>
-                    </P>
-                  </P>
-                  <H3>
-                    <H3
-                      type="fontS2"
-                    >
-                      <h3
-                        className="fontS2 "
-                      >
-                        Delivery
-                      </h3>
-                    </H3>
-                  </H3>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        From the very first workshop, we used lean agile methodology in cross-functional teams. This enabled us to embed UXD throughout the process and get feedback ‘just-in-time’. This enabled a continuous stream of testing (internally and with users) and feedback, which was then incorporated into the design and build of the website. Due to the flexibility afforded by agile ways of working, we were able to work through (not insignificant) compliance hurdles, incorporate the views of the various global stakeholders, and align and implement their views. We shared progress with regular demos of what we were building, soliciting feedback and winning buy-in to the site from stakeholders around the world.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        As the project developed we identified, developed and delivered a range of features to help users access and understand the great content the editorial team was generating. These features include:
-                      </p>
-                    </P>
-                  </P>
-                  <UL>
-                    <ul
-                      className="list"
-                    >
-                      <li>
-                        Jargon busters to help those who may not understand all specialist terms 
-                      </li>
-                      <li>
-                        Interactive graphs to help communicate dense information 
-                      </li>
-                      <li>
-                        <P>
-                          <P
-                            customClass="paragraph"
-                          >
-                            <p
-                              className="fontXS paragraph"
-                            >
-                              Embedded
-                               
-                              <a
-                                href="https://www.fidelityinstitutional.com/en/in-depth-in-eight-minutes-end-of-the-cycle-explained-b306d2/"
-                                rel="noreferrer noopener"
-                                target="_blank"
-                              >
-                                video
-                              </a>
-                               
-                              and
-                               
-                              <a
-                                href="https://www.fidelityinstitutional.com/en/novembers-rich-pickings-bill-mcquakers-most-beautiful-index-0e4bbf/"
-                                rel="noreferrer noopener"
-                                target="_blank"
-                              >
-                                podcasts
-                              </a>
-                               
-                              allow Fidelity to add richness to their storytelling
-                            </p>
-                          </P>
-                        </P>
-                      </li>
-                    </ul>
-                  </UL>
-                  <div
-                    className="iframeVideoContainer"
-                  >
-                    <iframe
-                      allowFullScreen={true}
-                      className="iframeVideo"
-                      frameBorder="0"
-                      height="360"
-                      src="https://video.fidelity.tv/view/b7N4LtWHkQG?embed=true&width=640&height=360"
-                      title="Fidelity Video"
-                      width="640"
-                    />
-                  </div>
-                  <Image
-                    alt="Fidelity leadership headshots"
-                    className="articleImgRight"
-                    src="harry_potters.png"
-                  >
-                    <picture>
-                      <source
-                        className="articleImgRight"
-                        srcSet="harry_potters.png"
-                      />
-                      <img
-                        alt="Fidelity leadership headshots"
-                        className="articleImgRight"
-                        src="harry_potters.png"
-                      />
-                    </picture>
-                  </Image>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        For the portraits of Fidelity’s leadership, we found a way to invest them with a little more personality than you might expect for an industry that is typically very conservative.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        As the pages load, you see a fairly traditional set of
-                         
-                        <a
-                          href="https://www.fidelityinstitutional.com/en/about-us/leadership/"
-                          rel="noreferrer noopener"
-                          target="_blank"
-                        >
-                          portraits
-                        </a>
-                        , but on hover they move. This simple but unexpected twist adds a surprising amount of personality and the portraits become known affectionately as the ‘Harry Potters’.
-                      </p>
-                    </P>
-                  </P>
-                </div>
-              </SectionBody>
-              <Image
-                alt="Black Waves"
-                className="articleImgFullWidth"
-                src="BlackWaves.jpg"
-              >
-                <picture>
-                  <source
-                    className="articleImgFullWidth"
-                    srcSet="BlackWaves.jpg"
-                  />
-                  <img
-                    alt="Black Waves"
-                    className="articleImgFullWidth"
-                    src="BlackWaves.jpg"
-                  />
-                </picture>
-              </Image>
-            </div>
-          </Section>
-          <Section>
-            <div
-              className="section"
-            >
-              <video
-                autoPlay={true}
-                className="articleVideoFullWidth"
-                loop={true}
-                muted={true}
-                playsInline={true}
-                title="Black Waves"
-              >
-                <source
-                  src="BlackWaves.webm"
-                  type="video/webm"
-                />
-                <source
-                  src="BlackWaves.mp4"
-                  type="video/mp4"
-                />
-                Your browser does not support the video tag.
-                <img
-                  alt="Black Waves"
-                  src="BlackWaves.jpg"
-                />
-              </video>
-            </div>
-          </Section>
-          <Section>
-            <div
-              className="section"
-            >
-              <SectionHeading
-                heading="Editorial empowerment and agile methods"
-                subHeading="Creating lasting change"
-              >
-                <h2
-                  className="sectionHeading"
-                >
-                  <span
-                    className="redTitle"
-                  >
-                    Creating lasting change
-                  </span>
-                  Editorial empowerment and agile methods
-                </h2>
-              </SectionHeading>
-              <SectionBody>
-                <div
-                  className="sectionBody"
-                >
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Within four months, we designed and built a site for Fidelity Institutional that communicates their innovative and distinctive approach to client service, with authority and personality. It’s now responsive across all devices (ideal for mobile-heavy markets such as Asia) and has a steady stream of premium content that can be easily managed by their editorial team. Additionally, it was the company’s first global website - covering 21 locations - and has been translated into several languages. This saved the overhead of managing 21 different websites.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Through the integration of Superdesk, Fidelity has control over the quality and cadence of the workflow. It has helped Fidelity’s team to position the company as authoritative thought leaders in their industry.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Fidelity can also generate new article ideas, commission the articles and the accompanying illustrations, input the illustrations and populate the content, all internally without specialist help. This level of control empowers the company to present their own innovative views in their own voice.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        By working with us and using lean, agile ways of working to deliver the project, we have helped Fidelity embed these practices, and shift them away from their established waterfall ways of working. The Editorial team at Fidelity has now adopted this as their own best practice for future developments.
-                      </p>
-                    </P>
-                  </P>
-                  <P>
-                    <P
-                      customClass="paragraph"
-                    >
-                      <p
-                        className="fontXS paragraph"
-                      >
-                        Fidelity International’s Institutional business now has a website that sets a benchmark for design and usability within their industry. It is helping them stand out from their competition and the business has been left with the tools and ways of working needed to grow the site and its audience — providing investment thinking that can be relied on.
-                      </p>
-                    </P>
-                  </P>
-                </div>
-              </SectionBody>
-            </div>
-          </Section>
-          <Section>
-            <div
-              className="section"
-            >
-              <Card
-                className="overview"
-              >
-                <div
-                  className="Card overview"
-                >
-                  <ListBox
-                    className="listBox"
-                    items={
-                      Array [
-                        Object {
-                          "label": "Global stakeholder input",
-                        },
-                        Object {
-                          "label": "Defined vision and priciples up front",
-                        },
-                        Object {
-                          "label": "Took art from office walls to website",
-                        },
-                        Object {
-                          "label": "CMS integration",
-                        },
-                      ]
-                    }
-                    labelClassName="listBox__leftLabel"
-                    title="What we did"
-                  >
-                    <div
-                      className="listBox listBox"
-                    >
-                      <h3
-                        className="listBox__heading"
-                      >
-                        What we did
-                      </h3>
-                      <ul>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="Global stakeholder input"
-                        >
-                          <div
-                            className="listBox__leftLabel"
-                          >
-                            Global stakeholder input
-                          </div>
-                          <div />
-                        </li>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="Defined vision and priciples up front"
-                        >
-                          <div
-                            className="listBox__leftLabel"
-                          >
-                            Defined vision and priciples up front
-                          </div>
-                          <div />
-                        </li>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="Took art from office walls to website"
-                        >
-                          <div
-                            className="listBox__leftLabel"
-                          >
-                            Took art from office walls to website
-                          </div>
-                          <div />
-                        </li>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="CMS integration"
-                        >
-                          <div
-                            className="listBox__leftLabel"
-                          >
-                            CMS integration
-                          </div>
-                          <div />
-                        </li>
-                      </ul>
-                    </div>
-                  </ListBox>
-                  <ListBox
-                    className="listBox"
-                    items={
-                      Array [
-                        Object {
-                          "label": "One product adopted across 21 countries",
-                        },
-                        Object {
-                          "label": "Accelerated design and build speed to market",
-                        },
-                        Object {
-                          "label": "Digital experience to reflect the brand",
-                        },
-                        Object {
-                          "label": "Regular flow of thought leadership content",
-                        },
-                      ]
-                    }
-                    title="Results"
-                  >
-                    <div
-                      className="listBox listBox"
-                    >
-                      <h3
-                        className="listBox__heading"
-                      >
-                        Results
-                      </h3>
-                      <ul>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="One product adopted across 21 countries"
-                        >
-                          <div>
-                            One product adopted across 21 countries
-                          </div>
-                          <div />
-                        </li>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="Accelerated design and build speed to market"
-                        >
-                          <div>
-                            Accelerated design and build speed to market
-                          </div>
-                          <div />
-                        </li>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="Digital experience to reflect the brand"
-                        >
-                          <div>
-                            Digital experience to reflect the brand
-                          </div>
-                          <div />
-                        </li>
-                        <li
-                          className="listBox__element listBox__element--results"
-                          key="Regular flow of thought leadership content"
-                        >
-                          <div>
-                            Regular flow of thought leadership content
-                          </div>
-                          <div />
-                        </li>
-                      </ul>
-                    </div>
-                  </ListBox>
-                </div>
-              </Card>
-            </div>
-          </Section>
-          <Section>
-            <div
-              className="section"
-            >
-              <SectionBody>
-                <div
-                  className="sectionBody"
-                >
-                  <Quote
-                    author={
-                      Object {
-                        "image": "Monika_HS.jpg",
-                        "name": "Monika Koziol",
-                        "title": "Managing Director at Red Badger",
-                      }
-                    }
-                    text="We worked closely with Fidelity Institutional to define a project vision, creative strategy and implementation roadmap that we then delivered on to provide a site that is a new benchmark for them in terms of content and execution. The new site has helped them articulate their story with pride and distinctiveness – it also positions them as thought leaders in their industry."
-                  >
-                    <Quote
-                      author={
-                        Object {
-                          "image": "Monika_HS.jpg",
-                          "name": "Monika Koziol",
-                          "title": "Managing Director at Red Badger",
-                        }
-                      }
-                      className="quote"
-                      text="We worked closely with Fidelity Institutional to define a project vision, creative strategy and implementation roadmap that we then delivered on to provide a site that is a new benchmark for them in terms of content and execution. The new site has helped them articulate their story with pride and distinctiveness – it also positions them as thought leaders in their industry."
-                    >
-                      <div
-                        className="quotation quote"
-                      >
-                        <div
-                          className="quotation__text"
-                        >
-                          <blockquote
-                            className="quotation__quote"
-                          >
-                            We worked closely with Fidelity Institutional to define a project vision, creative strategy and implementation roadmap that we then delivered on to provide a site that is a new benchmark for them in terms of content and execution. The new site has helped them articulate their story with pride and distinctiveness – it also positions them as thought leaders in their industry.
-                          </blockquote>
-                        </div>
-                        <div
-                          className="quotation__author"
-                        >
-                          <Avatar
-                            image="Monika_HS.jpg"
-                            name="Monika Koziol"
-                            size={70}
-                          >
-                            <div
-                              className="avatar__container"
-                              style={
-                                Object {
-                                  "height": 70,
-                                  "minHeight": 70,
-                                  "minWidth": 70,
-                                  "width": 70,
-                                }
-                              }
-                            >
-                              <img
-                                alt="Monika Koziol"
-                                src="Monika_HS.jpg"
-                              />
-                            </div>
-                          </Avatar>
-                          <div
-                            className="quotation__author__wrapper"
-                          >
-                            <div
-                              className="quotation__author__name"
-                            >
-                              — 
-                              Monika Koziol
-                            </div>
-                            <div
-                              className="quotation__author__title"
-                            >
-                              Managing Director at Red Badger
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Quote>
-                  </Quote>
-                </div>
-              </SectionBody>
-            </div>
-          </Section>
-        </div>
-      </Body>
-      <MockedWhatToReadNext
-        currentPage="fidelity"
-        linkKeys={
-          Array [
-            "bank",
-            "pride",
-            "financialTimes",
-          ]
-        }
+          Fidelity International (Fidelity) is a global leader in investment, it manages $310bn globally for clients who range from private individuals to institutions like pension funds and sovereign wealth funds. It has been innovating for 50 years in 25 countries.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          They recognised that it had a fractured web strategy for institutional clients, sometimes combining them with other client groups or, in some markets, not offering any web content at all.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          With an ambitious brief, Fidelity chose to work with Red Badger to create a digital presence that would unite the company’s disparate global sites, showcase its capabilities, and highlight its thinking, without overwhelming the reader. Ultimately, the new website needed to give visitors a taste of the lengths Fidelity will go to for clients.
+        </p>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <h2
+        class="sectionHeading"
       >
+        <span
+          class="redTitle"
+        >
+          Do the right thing. Do the thing right
+        </span>
+        Creating a design strategy and delivering on it 
+      </h2>
+      <div
+        class="sectionBody"
+      >
+        <h3
+          class="fontS2 "
+        >
+          Building a brand online
+        </h3>
+        <p
+          class="fontXS paragraph"
+        >
+          Our engagement with Fidelity began with an intense round of workshops which gathered our own designers, UX and developers with their own cross-disciplinary team. We worked together to set out a clear project vision, articulated as a client statement:
+        </p>
+        <img
+          alt=""
+          class="articleImg"
+          src="Binoculars.jpg"
+        />
         <div
-          className="whatNext"
+          class="section"
         >
           <div
-            className="whatNext__tilesContainer"
+            class="sectionBody"
           >
-            <WhatToReadNextSlice
-              image="pride.gif"
-              key="Pride in London-0"
-              linkKey="prideCaseStudy"
-              name="Pride in London"
-              tagline="Delivering a best-in-class digital experience"
-            >
-              <div
-                className="whatNext__tile"
-              >
-                <figure>
-                  <Link
-                    to="prideCaseStudy"
-                  >
-                    <NavigationLink
-                      className=""
-                      navigating={[Function]}
-                      stateKey="prideCaseStudy"
-                    >
-                      <a
-                        className=""
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <img
-                          alt="Pride in London"
-                          className="whatNext__image"
-                          src="pride.gif"
-                        />
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                  <figcaption
-                    className="whatNext__caption"
-                  >
-                    Pride in London
-                  </figcaption>
-                </figure>
-                <Link
-                  className="whatNext__link"
-                  to="prideCaseStudy"
-                >
-                  <NavigationLink
-                    className="whatNext__link"
-                    navigating={[Function]}
-                    stateKey="prideCaseStudy"
-                  >
-                    <a
-                      className="whatNext__link"
-                      href={null}
-                      onClick={[Function]}
-                    >
-                      <h2
-                        className="whatNext__title"
-                      >
-                        Delivering a best-in-class digital experience
-                        <span
-                          className="whatNext__arrow_wrapper"
-                        >
-                          <Arrow
-                            className="whatNext__arrow"
-                          >
-                            <svg
-                              className="whatNext__arrow"
-                              viewBox="0 0 22 22"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                fill="#FC1D42"
-                                fillRule="evenodd"
-                                stroke="#FC1D42"
-                              />
-                            </svg>
-                          </Arrow>
-                        </span>
-                      </h2>
-                    </a>
-                  </NavigationLink>
-                </Link>
-              </div>
-            </WhatToReadNextSlice>
-            <WhatToReadNextSlice
-              image="financialTimesReadMore.jpg"
-              key="Financial Times-1"
-              linkKey="financialTimesCaseStudy"
-              name="Financial Times"
-              tagline="Lasting change for a media giant"
-            >
-              <div
-                className="whatNext__tile"
-              >
-                <figure>
-                  <Link
-                    to="financialTimesCaseStudy"
-                  >
-                    <NavigationLink
-                      className=""
-                      navigating={[Function]}
-                      stateKey="financialTimesCaseStudy"
-                    >
-                      <a
-                        className=""
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <img
-                          alt="Financial Times"
-                          className="whatNext__image"
-                          src="financialTimesReadMore.jpg"
-                        />
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                  <figcaption
-                    className="whatNext__caption"
-                  >
-                    Financial Times
-                  </figcaption>
-                </figure>
-                <Link
-                  className="whatNext__link"
-                  to="financialTimesCaseStudy"
-                >
-                  <NavigationLink
-                    className="whatNext__link"
-                    navigating={[Function]}
-                    stateKey="financialTimesCaseStudy"
-                  >
-                    <a
-                      className="whatNext__link"
-                      href={null}
-                      onClick={[Function]}
-                    >
-                      <h2
-                        className="whatNext__title"
-                      >
-                        Lasting change for a media giant
-                        <span
-                          className="whatNext__arrow_wrapper"
-                        >
-                          <Arrow
-                            className="whatNext__arrow"
-                          >
-                            <svg
-                              className="whatNext__arrow"
-                              viewBox="0 0 22 22"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                fill="#FC1D42"
-                                fillRule="evenodd"
-                                stroke="#FC1D42"
-                              />
-                            </svg>
-                          </Arrow>
-                        </span>
-                      </h2>
-                    </a>
-                  </NavigationLink>
-                </Link>
-              </div>
-            </WhatToReadNextSlice>
-            <WhatToReadNextSlice
-              image="carTrawler.jpg"
-              key="Car Trawler-2"
-              linkKey="carTrawlerCaseStudy"
-              name="Car Trawler"
-              tagline="Creating complete CMS control for travel brands"
-            >
-              <div
-                className="whatNext__tile"
-              >
-                <figure>
-                  <Link
-                    to="carTrawlerCaseStudy"
-                  >
-                    <NavigationLink
-                      className=""
-                      navigating={[Function]}
-                      stateKey="carTrawlerCaseStudy"
-                    >
-                      <a
-                        className=""
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <img
-                          alt="Car Trawler"
-                          className="whatNext__image"
-                          src="carTrawler.jpg"
-                        />
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                  <figcaption
-                    className="whatNext__caption"
-                  >
-                    Car Trawler
-                  </figcaption>
-                </figure>
-                <Link
-                  className="whatNext__link"
-                  to="carTrawlerCaseStudy"
-                >
-                  <NavigationLink
-                    className="whatNext__link"
-                    navigating={[Function]}
-                    stateKey="carTrawlerCaseStudy"
-                  >
-                    <a
-                      className="whatNext__link"
-                      href={null}
-                      onClick={[Function]}
-                    >
-                      <h2
-                        className="whatNext__title"
-                      >
-                        Creating complete CMS control for travel brands
-                        <span
-                          className="whatNext__arrow_wrapper"
-                        >
-                          <Arrow
-                            className="whatNext__arrow"
-                          >
-                            <svg
-                              className="whatNext__arrow"
-                              viewBox="0 0 22 22"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                fill="#FC1D42"
-                                fillRule="evenodd"
-                                stroke="#FC1D42"
-                              />
-                            </svg>
-                          </Arrow>
-                        </span>
-                      </h2>
-                    </a>
-                  </NavigationLink>
-                </Link>
-              </div>
-            </WhatToReadNextSlice>
-          </div>
-          <Link
-            className="whatNext__button"
-            to="ourWorkPage"
-          >
-            <NavigationLink
-              className="whatNext__button"
-              navigating={[Function]}
-              stateKey="ourWorkPage"
-            >
-              <a
-                className="whatNext__button"
-                href={null}
-                onClick={[Function]}
-              >
-                See more of our work
-              </a>
-            </NavigationLink>
-          </Link>
-        </div>
-      </MockedWhatToReadNext>
-      <_temp>
-        <Checklist
-          isHovered={false}
-          onBlur={[Function]}
-          onHover={[Function]}
-        >
-          <section
-            className="contactUsContainer"
-            id="contactUs"
-          >
-            <h2
-              className="header"
-            >
-              We can help you
-            </h2>
             <div
-              className="contentContainer"
+              class="quotation quote"
             >
-              <ul
-                className="list"
-              >
-                <li
-                  className="item"
-                  key="Create & validate new ideas"
-                >
-                  Create & validate new ideas
-                </li>
-                <li
-                  className="item"
-                  key="Deliver great quality products & services, fast"
-                >
-                  Deliver great quality products & services, fast
-                </li>
-                <li
-                  className="item"
-                  key="Be bold with technology"
-                >
-                  Be bold with technology
-                </li>
-                <li
-                  className="item"
-                  key="Be more customer centric"
-                >
-                  Be more customer centric
-                </li>
-                <li
-                  className="item"
-                  key="Improve efficiency with lean practices"
-                >
-                  Improve efficiency with lean practices
-                </li>
-                <li
-                  className="item"
-                  key="Build capability & confidence"
-                >
-                  Build capability & confidence
-                </li>
-              </ul>
               <div
-                className="imgContainer"
+                class="quotation__text"
+              >
+                <blockquote
+                  class="quotation__quote"
+                >
+                  This elegant site anticipates my needs and supplies the investment thinking I rely on.
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="fontXS paragraph"
+        >
+          We used this vision as a platform to build the creative principles on, which then guided the design expression.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          Together, we focused on what clients want by identifying their goals, motivations and behaviours. This was a truly collaborative process from start to finish, making the design something which Fidelity feels reflects the company’s expertise, ambition and spirit.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          The central creative principle for the project which the team referred to throughout was ‘Provocatively Reassuring’. In a crowded market, the site needed to catch clients’ attention but quickly hold their interest with reassuringly excellent and relevant content.
+        </p>
+        <h3
+          class="fontS2 "
+        >
+          There are two main sections to the site:
+        </h3>
+        <ul
+          class="list"
+        >
+          <li>
+            <p
+              class="fontXS paragraph"
+            >
+              <strong>
+                Editorial, which is itself split into ‘Fidelity Answers’:
+              </strong>
+               a novel, magazine-like approach which tackles thematic client questions with a cross-asset class investment insight; and ‘Latest Thinking’: blogs with fast market commentary and topical investment insight.
+            </p>
+          </li>
+          <li>
+            <strong>
+              The ‘Business Card’:
+            </strong>
+             the section of the website that outlines Fidelity’s capabilities, sales contacts and background to the company’s history and heritage.
+          </li>
+        </ul>
+        <div
+          class="articleImgFlexWrapper"
+        >
+          <div
+            class="articleImgFlexContent"
+          >
+            <picture>
+              <source
+                class="articleImgFlex"
+                srcset="Screenshots_1_M.png"
+              />
+              <img
+                alt="Editorial site section example"
+                class="articleImgFlex"
+                src="Screenshots_1_M.png"
+              />
+            </picture>
+            <picture>
+              <source
+                class="articleImgFlex"
+                srcset="Screenshots_2_M.png"
+              />
+              <img
+                alt="Business Card site section example"
+                class="articleImgFlex"
+                src="Screenshots_2_M.png"
+              />
+            </picture>
+          </div>
+        </div>
+        <p
+          class="fontXS paragraph"
+        >
+          The design language we developed was informed by the ‘provocatively reassuring’ duality: eye-catching elements of striking imagery, bold headlines and asymmetrical, disruptive layouts were then balanced by a reassuringly logical structure and a disciplined approach to hierarchy. All this was then combined with a suite of refined and user-centric design details.
+        </p>
+        <h3
+          class="fontS2 "
+        >
+          An image is worth a thousand words
+        </h3>
+        <p
+          class="fontXS paragraph"
+        >
+          Across the pages that explain who Fidelity is and how they work, we wanted to find a way to bring the content to life in a rich and thought-provoking way, that hints at the cutting-edge nature of their work.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          The answer was staring us in the face: the company’s art. Across Fidelity‘s offices around the world, there’s a collection of over 3,000 artworks, often created by local artists. We worked with the company’s curator to choose a selection of digital, moving-image pieces to use in the headers - these catch the eye in a sophisticated way and invite the user to make connections with the business, while also highlighting the modern, innovative side of the business. Furthermore, they subtly reinforce the global nature of the company by using artists based in its many locations around the world.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          For the flagship ‘Fidelity Answers’ content, we wanted additional bold imagery to draw people in. Together with the editorial team, we commissioned illustrations based on the editions’ themes to create a sense of intrigue. This enabled us to convey the nuances of complex investment concepts with a lightness of touch.
+        </p>
+        <h3
+          class="fontS2 "
+        >
+          Tech made to deliver
+        </h3>
+        <p
+          class="fontXS paragraph"
+        >
+          Alongside the design strategy, we mapped out the technology that would be implemented to strengthen the responsiveness of the site, across all platforms. We decided to use technology such as React, Serverless, Node, Terraform and AWS, which enabled us to build the site quickly. Accompanying this technology, we worked with Sourcefabric to integrate Superdesk, a digital editorial content management system developed with Fidelity’s team.
+        </p>
+        <h3
+          class="fontS2 "
+        >
+          Delivery
+        </h3>
+        <p
+          class="fontXS paragraph"
+        >
+          From the very first workshop, we used lean agile methodology in cross-functional teams. This enabled us to embed UXD throughout the process and get feedback ‘just-in-time’. This enabled a continuous stream of testing (internally and with users) and feedback, which was then incorporated into the design and build of the website. Due to the flexibility afforded by agile ways of working, we were able to work through (not insignificant) compliance hurdles, incorporate the views of the various global stakeholders, and align and implement their views. We shared progress with regular demos of what we were building, soliciting feedback and winning buy-in to the site from stakeholders around the world.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          As the project developed we identified, developed and delivered a range of features to help users access and understand the great content the editorial team was generating. These features include:
+        </p>
+        <ul
+          class="list"
+        >
+          <li>
+            Jargon busters to help those who may not understand all specialist terms 
+          </li>
+          <li>
+            Interactive graphs to help communicate dense information 
+          </li>
+          <li>
+            <p
+              class="fontXS paragraph"
+            >
+              Embedded 
+              <a
+                href="https://www.fidelityinstitutional.com/en/in-depth-in-eight-minutes-end-of-the-cycle-explained-b306d2/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                video
+              </a>
+               and 
+              <a
+                href="https://www.fidelityinstitutional.com/en/novembers-rich-pickings-bill-mcquakers-most-beautiful-index-0e4bbf/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                podcasts
+              </a>
+               allow Fidelity to add richness to their storytelling
+            </p>
+          </li>
+        </ul>
+        <div
+          class="iframeVideoContainer"
+        >
+          <iframe
+            allowfullscreen=""
+            class="iframeVideo"
+            frameborder="0"
+            height="360"
+            src="https://video.fidelity.tv/view/b7N4LtWHkQG?embed=true&width=640&height=360"
+            title="Fidelity Video"
+            width="640"
+          />
+        </div>
+        <picture>
+          <source
+            class="articleImgRight"
+            srcset="harry_potters.png"
+          />
+          <img
+            alt="Fidelity leadership headshots"
+            class="articleImgRight"
+            src="harry_potters.png"
+          />
+        </picture>
+        <p
+          class="fontXS paragraph"
+        >
+          For the portraits of Fidelity’s leadership, we found a way to invest them with a little more personality than you might expect for an industry that is typically very conservative.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          As the pages load, you see a fairly traditional set of 
+          <a
+            href="https://www.fidelityinstitutional.com/en/about-us/leadership/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            portraits
+          </a>
+          , but on hover they move. This simple but unexpected twist adds a surprising amount of personality and the portraits become known affectionately as the ‘Harry Potters’.
+        </p>
+      </div>
+      <picture>
+        <source
+          class="articleImgFullWidth"
+          srcset="BlackWaves.jpg"
+        />
+        <img
+          alt="Black Waves"
+          class="articleImgFullWidth"
+          src="BlackWaves.jpg"
+        />
+      </picture>
+    </div>
+    <div
+      class="section"
+    >
+      <video
+        autoplay=""
+        class="articleVideoFullWidth"
+        loop=""
+        muted=""
+        playsinline=""
+        title="Black Waves"
+      >
+        <source
+          src="BlackWaves.webm"
+          type="video/webm"
+        />
+        <source
+          src="BlackWaves.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+        <img
+          alt="Black Waves"
+          src="BlackWaves.jpg"
+        />
+      </video>
+    </div>
+    <div
+      class="section"
+    >
+      <h2
+        class="sectionHeading"
+      >
+        <span
+          class="redTitle"
+        >
+          Creating lasting change
+        </span>
+        Editorial empowerment and agile methods
+      </h2>
+      <div
+        class="sectionBody"
+      >
+        <p
+          class="fontXS paragraph"
+        >
+          Within four months, we designed and built a site for Fidelity Institutional that communicates their innovative and distinctive approach to client service, with authority and personality. It’s now responsive across all devices (ideal for mobile-heavy markets such as Asia) and has a steady stream of premium content that can be easily managed by their editorial team. Additionally, it was the company’s first global website - covering 21 locations - and has been translated into several languages. This saved the overhead of managing 21 different websites.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          Through the integration of Superdesk, Fidelity has control over the quality and cadence of the workflow. It has helped Fidelity’s team to position the company as authoritative thought leaders in their industry.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          Fidelity can also generate new article ideas, commission the articles and the accompanying illustrations, input the illustrations and populate the content, all internally without specialist help. This level of control empowers the company to present their own innovative views in their own voice.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          By working with us and using lean, agile ways of working to deliver the project, we have helped Fidelity embed these practices, and shift them away from their established waterfall ways of working. The Editorial team at Fidelity has now adopted this as their own best practice for future developments.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          Fidelity International’s Institutional business now has a website that sets a benchmark for design and usability within their industry. It is helping them stand out from their competition and the business has been left with the tools and ways of working needed to grow the site and its audience — providing investment thinking that can be relied on.
+        </p>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="Card overview"
+      >
+        <div
+          class="listBox listBox"
+        >
+          <h3
+            class="listBox__heading"
+          >
+            What we did
+          </h3>
+          <ul>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div
+                class="listBox__leftLabel"
+              >
+                Global stakeholder input
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div
+                class="listBox__leftLabel"
+              >
+                Defined vision and priciples up front
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div
+                class="listBox__leftLabel"
+              >
+                Took art from office walls to website
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div
+                class="listBox__leftLabel"
+              >
+                CMS integration
+              </div>
+              <div />
+            </li>
+          </ul>
+        </div>
+        <div
+          class="listBox listBox"
+        >
+          <h3
+            class="listBox__heading"
+          >
+            Results
+          </h3>
+          <ul>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div>
+                One product adopted across 21 countries
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div>
+                Accelerated design and build speed to market
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div>
+                Digital experience to reflect the brand
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results"
+            >
+              <div>
+                Regular flow of thought leadership content
+              </div>
+              <div />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
+        <div
+          class="quotation quote"
+        >
+          <div
+            class="quotation__text"
+          >
+            <blockquote
+              class="quotation__quote"
+            >
+              We worked closely with Fidelity Institutional to define a project vision, creative strategy and implementation roadmap that we then delivered on to provide a site that is a new benchmark for them in terms of content and execution. The new site has helped them articulate their story with pride and distinctiveness – it also positions them as thought leaders in their industry.
+            </blockquote>
+          </div>
+          <div
+            class="quotation__author"
+          >
+            <div
+              class="avatar__container"
+              style="width:70px;height:70px;min-width:70px;min-height:70px"
+            >
+              <img
+                alt="Monika Koziol"
+                src="Monika_HS.jpg"
               />
             </div>
-            <div>
-              <a
-                className="mailToLink"
-                href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                onClick={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
+            <div
+              class="quotation__author__wrapper"
+            >
+              <div
+                class="quotation__author__name"
               >
-                Send an email
-              </a>
-              <span
-                className="talkToUs"
+                — Monika Koziol
+              </div>
+              <div
+                class="quotation__author__title"
               >
-                hello@red-badger.com
-              </span>
+                Managing Director at Red Badger
+              </div>
             </div>
-          </section>
-        </Checklist>
-      </_temp>
-    </ScrollTracker>
-  </Fidelity>
-</Context>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work"
+    >
+      See more of our work
+    </a>
+  </div>,
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>,
+]
 `;

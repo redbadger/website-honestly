@@ -1,935 +1,558 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/our-work/case-study/ft/ renders correctly 1`] = `
-<Context>
-  <FinancialTimesCaseStudy>
-    <ScrollTracker>
+<div
+  class="caseStudy"
+>
+  <div
+    class="header"
+  >
+    <div
+      class="header__container"
+    >
       <div
-        className="caseStudy"
+        class="header__imageContainer"
       >
-        <Social
-          altText="A drawing of people collaborating on a project."
-          description="Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams."
-          metaImage="meta-image.jpg"
-          title="Lasting change for a media giant | Red Badger"
-          url="https://red-badger.com/our-work/case-study/financial-times"
-        >
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "Lasting change for a media giant | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "Lasting change for a media giant | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.commeta-image.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "A drawing of people collaborating on a project.",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/our-work/case-study/financial-times",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <SideEffect(NullComponent)
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "Lasting change for a media giant | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "Lasting change for a media giant | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.commeta-image.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "A drawing of people collaborating on a project.",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/our-work/case-study/financial-times",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            >
-              <NullComponent
-                defer={true}
-                encodeSpecialCharacters={true}
-                meta={
-                  Array [
-                    Object {
-                      "content": "summary_large_image",
-                      "name": "twitter:card",
-                    },
-                    Object {
-                      "content": "@redbadgerteam",
-                      "name": "twitter:site",
-                    },
-                    Object {
-                      "content": "Lasting change for a media giant | Red Badger",
-                      "name": "twitter:title",
-                    },
-                    Object {
-                      "content": "Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams.",
-                      "name": "twitter:description",
-                    },
-                    Object {
-                      "content": "https://red-badger.commeta-image.jpg",
-                      "name": "twitter:image",
-                    },
-                    Object {
-                      "content": "website",
-                      "property": "og:type",
-                    },
-                    Object {
-                      "content": "Lasting change for a media giant | Red Badger",
-                      "property": "og:title",
-                    },
-                    Object {
-                      "content": "https://red-badger.commeta-image.jpg",
-                      "property": "og:image",
-                    },
-                    Object {
-                      "content": "https://red-badger.commeta-image.jpg",
-                      "property": "og:image:secure_url",
-                    },
-                    Object {
-                      "content": "A drawing of people collaborating on a project.",
-                      "property": "og:image:alt",
-                    },
-                    Object {
-                      "content": "Discover how we delivered the next generation ft.com website and successfully integrated UXD across all streams.",
-                      "property": "og:description",
-                    },
-                    Object {
-                      "content": "https://red-badger.com/our-work/case-study/financial-times",
-                      "property": "og:url",
-                    },
-                  ]
-                }
-              />
-            </SideEffect(NullComponent)>
-          </HelmetWrapper>
-        </Social>
-        <div
-          className="header"
-        >
-          <div
-            className="header__container"
-          >
-            <div
-              className="header__imageContainer"
-            >
-              <img
-                alt="An agile stand up in progress"
-                className="header__image"
-                src="header.jpg"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="content"
-        >
-          <div
-            className="content__mainTitleWrapper"
-          >
-            <h1
-              className="content__mainTitle"
-            >
-              Keeping up with the Financial Times
-            </h1>
-          </div>
-          <div
-            className="overview"
-          >
-            <Quote
-              author={
-                Object {
-                  "image": "quote-author.jpg",
-                  "name": "Christina Scott",
-                  "title": "Chief Product & Information Officer, Financial Times",
-                }
-              }
-              className="quote"
-              text="Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change."
-            >
-              <div
-                className="quotation quote"
-              >
-                <div
-                  className="quotation__text"
-                >
-                  <blockquote
-                    className="quotation__quote"
-                  >
-                    Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change.
-                  </blockquote>
-                </div>
-                <div
-                  className="quotation__author"
-                >
-                  <Avatar
-                    image="quote-author.jpg"
-                    name="Christina Scott"
-                    size={70}
-                  >
-                    <div
-                      className="avatar__container"
-                      style={
-                        Object {
-                          "height": 70,
-                          "minHeight": 70,
-                          "minWidth": 70,
-                          "width": 70,
-                        }
-                      }
-                    >
-                      <img
-                        alt="Christina Scott"
-                        src="quote-author.jpg"
-                      />
-                    </div>
-                  </Avatar>
-                  <div
-                    className="quotation__author__wrapper"
-                  >
-                    <div
-                      className="quotation__author__name"
-                    >
-                      — 
-                      Christina Scott
-                    </div>
-                    <div
-                      className="quotation__author__title"
-                    >
-                      Chief Product & Information Officer, Financial Times
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Quote>
-            <Card
-              className="listBoxContainer"
-            >
-              <div
-                className="Card listBoxContainer"
-              >
-                <ListBox
-                  itemClassName="listBox__item"
-                  items={
-                    Array [
-                      Object {
-                        "label": "Integration of Lean UX and Design into all areas of product delivery",
-                      },
-                      Object {
-                        "label": "New homepage designed and built in just 7 weeks",
-                      },
-                      Object {
-                        "label": "Reader engagement increased by 30%",
-                      },
-                    ]
-                  }
-                  labelClassName="listBox__label"
-                  title="Results"
-                >
-                  <div
-                    className="listBox"
-                  >
-                    <h3
-                      className="listBox__heading"
-                    >
-                      Results
-                    </h3>
-                    <ul>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="Integration of Lean UX and Design into all areas of product delivery"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          Integration of Lean UX and Design into all areas of product delivery
-                        </div>
-                        <div />
-                      </li>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="New homepage designed and built in just 7 weeks"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          New homepage designed and built in just 7 weeks
-                        </div>
-                        <div />
-                      </li>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="Reader engagement increased by 30%"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          Reader engagement increased by 30%
-                        </div>
-                        <div />
-                      </li>
-                    </ul>
-                  </div>
-                </ListBox>
-              </div>
-            </Card>
-          </div>
-          <div
-            className="content__wrapper"
-          >
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Let's make things better.
-              </span>
-              Adapting to a changing online news world
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              The Financial Times knew that online news was changing fast, and their subscription model meant they had to deliver something above and beyond the news and services available for free. The next generation of ft.com was already underway, and now they needed a partner who could help envisage it and bring it to life.
-            </p>
-            <h3
-              className="content__secondaryTitle"
-            >
-              There were two overarching challenges to solve for the Financial Times:
-            </h3>
-            <div
-              className="content__paragraph"
-            >
-              <ol
-                className="content__ordered__list"
-              >
-                <li
-                  className="content__ordered__list__element"
-                >
-                  Delivery — To deliver the next generation ft.com homepage demonstrating the successful integration of UX and design across all other streams
-                </li>
-                <li
-                  className="content__ordered__list__element"
-                >
-                  Strategy — Creative team strategy across the entire online product portfolio
-                </li>
-              </ol>
-            </div>
-            <h3
-              className="content__secondaryTitle"
-            >
-              And, core objectives included:
-            </h3>
-            <div
-              className="content__paragraph"
-            >
-              <ul
-                className="content__list"
-              >
-                <li
-                  className="content__list__element"
-                >
-                  Introduce and embed Lean UX methodologies and Agile Design at an enterprise level
-                </li>
-                <li
-                  className="content__list__element"
-                >
-                  Increase speed to market
-                </li>
-                <li
-                  className="content__list__element"
-                >
-                  Raise quality level of design across the product group
-                </li>
-                <li
-                  className="content__list__element"
-                >
-                  Support an organisational shift towards taking an user-centred design (UCD) to product development
-                </li>
-                <li
-                  className="content__list__element"
-                >
-                  Place experts within the organisation who’ll continue to support these methods
-                </li>
-              </ul>
-            </div>
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Do the right thing. Do the thing right.
-              </span>
-              Collaboration both online and offline
-            </h2>
-            <h3
-              className="content__secondaryTitle"
-            >
-              Learn
-            </h3>
-            <p
-              className="content__paragraph"
-            >
-              We approached the work through collaborative design, with representatives from across the business, we built a complete understanding of the publication’s needs.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              In order to demonstrate how collaboration between different functions of a product team can be optimised in a given environment, it is necessary to first learn about that environment. This is why we started our engagement by placing a core multi-disciplined product team central to the working group. Acting as a hub, we were physically, geographically and functionally central to the core offering of the next generation ft.com, the home page.
-            </p>
-            <ContactBox>
-              <div
-                className="contactBox"
-              >
-                <h2
-                  className="contactBox__heading"
-                >
-                  Project in mind?
-                </h2>
-                <button
-                  className="contactBox__button"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Tell us more
-                </button>
-              </div>
-            </ContactBox>
-            <p
-              className="content__paragraph"
-            >
-              In the initial phase of our engagement we redesigned and deployed a new home page in just seven weeks. This involved integrating React and GraphQL into the FT’s already cutting edge tech stack. Demonstrating not only an improved approach to delivery but adding value through introducing new technology.
-            </p>
-            <h3
-              className="content__secondaryTitle"
-            >
-              Understand
-            </h3>
-            <p
-              className="content__paragraph"
-            >
-              After an initial period of delivering at speed into a live production environment we started to mix with the internal teams. We were able to share and explain their working processes and systems to new colleagues, creating the perfect environment to reassess the effectiveness of each stage of their workflow. We learned how the Financial Times operated in the first few weeks of the project. This put us in a position later in the project to recommended some changes to the process in the internal design and development team.
-            </p>
-            <h3
-              className="content__secondaryTitle"
-            >
-              Coach
-            </h3>
-            <p
-              className="content__paragraph"
-            >
-              Initially we found multiple product teams were using processes that were out of view and this resulted in untraceable productivity. This made predicting delivery times and making sound investment decisions difficult. Soon after our arrival we were helping the Financial Times to build a legacy of implementing methodologies out in the open, with work on kanban boards representing their own processes.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              We worked with each team one at a time and through an osmosis like process each team adopted a more open and collaborative way of working together with UX and Design. Now the Financial Times have core metrics measured against each of the backlogs and using Little’s Law we can predict completion time, throughput, lead time and cycle time.
-            </p>
-            <h3
-              className="content__secondaryTitle"
-            >
-              Support
-            </h3>
-            <p
-              className="content__paragraph"
-            >
-              Through a formal education program we taught fundamental User Experience methodologies, Lean UX and Kanban, to a cross section of representatives across the business to support and reinforce the change we have brought to the Financial Times at an enterprise level.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              On going contact beyond our engagement is a given, to offer any level of support required during the maturation of the businesses UCD approach to product development.
-            </p>
-          </div>
-        </div>
-        <div
-          className="screenDemo"
-        >
-          <div
-            className="screenDemo__description"
-          >
-            The first iteration of the new homepage design and built in seven weeks
-          </div>
-          <img
-            alt="Screenshot of Financial Times website"
-            className="screenDemo__image"
-            src="screen.jpg"
-          />
-        </div>
-        <div
-          className="content"
-        >
-          <div
-            className="content__wrapper"
-          >
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Creating lasting change.
-              </span>
-              A new design increasing reader engagement by 30%
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              Our work with the Financial Times was made to last. Through close collaboration with the FT senior management in a controlled and considered way ensures that the gradual cultural shift in working practices and approach to Lean UX and Agile Design is not short lived. On the contrary, through careful coaching and support we have created an environment where teams now make iterative changes to how UX and Design is considered and integrated with other teams, including technology and customer research across the business.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              The Financial Times is at the cutting edge of product development, which puts a Lean UCD process at the heart of everything it does. We have been pivotal in implementing these processes, integrating Lean UX and Agile Design into all areas of product delivery across the organisation.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              It remains one of the fastest news sites in the world, loading in 1.5 seconds on desktop and 2.1 on mobile, reader engagement has increased by 30%, with visitors reading more and returning more frequently. It has also won Website of the Year at the Press Awards and Best Use of Technology at Digiday Publishing Awards.
-            </p>
-          </div>
-        </div>
-        <MockedWhatToReadNext
-          currentPage="financialTimes"
-        >
-          <div
-            className="whatNext"
-          >
-            <div
-              className="whatNext__tilesContainer"
-            >
-              <WhatToReadNextSlice
-                image="pride.gif"
-                key="Pride in London-0"
-                linkKey="prideCaseStudy"
-                name="Pride in London"
-                tagline="Delivering a best-in-class digital experience"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="prideCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="prideCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Pride in London"
-                            className="whatNext__image"
-                            src="pride.gif"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Pride in London
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="prideCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="prideCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Delivering a best-in-class digital experience
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-              <WhatToReadNextSlice
-                image="financialTimesReadMore.jpg"
-                key="Financial Times-1"
-                linkKey="financialTimesCaseStudy"
-                name="Financial Times"
-                tagline="Lasting change for a media giant"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="financialTimesCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="financialTimesCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Financial Times"
-                            className="whatNext__image"
-                            src="financialTimesReadMore.jpg"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Financial Times
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="financialTimesCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="financialTimesCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Lasting change for a media giant
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-              <WhatToReadNextSlice
-                image="carTrawler.jpg"
-                key="Car Trawler-2"
-                linkKey="carTrawlerCaseStudy"
-                name="Car Trawler"
-                tagline="Creating complete CMS control for travel brands"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="carTrawlerCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="carTrawlerCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Car Trawler"
-                            className="whatNext__image"
-                            src="carTrawler.jpg"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Car Trawler
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="carTrawlerCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="carTrawlerCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Creating complete CMS control for travel brands
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-            </div>
-            <Link
-              className="whatNext__button"
-              to="ourWorkPage"
-            >
-              <NavigationLink
-                className="whatNext__button"
-                navigating={[Function]}
-                stateKey="ourWorkPage"
-              >
-                <a
-                  className="whatNext__button"
-                  href={null}
-                  onClick={[Function]}
-                >
-                  See more of our work
-                </a>
-              </NavigationLink>
-            </Link>
-          </div>
-        </MockedWhatToReadNext>
-        <_temp>
-          <Checklist
-            isHovered={false}
-            onBlur={[Function]}
-            onHover={[Function]}
-          >
-            <section
-              className="contactUsContainer"
-              id="contactUs"
-            >
-              <h2
-                className="header"
-              >
-                We can help you
-              </h2>
-              <div
-                className="contentContainer"
-              >
-                <ul
-                  className="list"
-                >
-                  <li
-                    className="item"
-                    key="Create & validate new ideas"
-                  >
-                    Create & validate new ideas
-                  </li>
-                  <li
-                    className="item"
-                    key="Deliver great quality products & services, fast"
-                  >
-                    Deliver great quality products & services, fast
-                  </li>
-                  <li
-                    className="item"
-                    key="Be bold with technology"
-                  >
-                    Be bold with technology
-                  </li>
-                  <li
-                    className="item"
-                    key="Be more customer centric"
-                  >
-                    Be more customer centric
-                  </li>
-                  <li
-                    className="item"
-                    key="Improve efficiency with lean practices"
-                  >
-                    Improve efficiency with lean practices
-                  </li>
-                  <li
-                    className="item"
-                    key="Build capability & confidence"
-                  >
-                    Build capability & confidence
-                  </li>
-                </ul>
-                <div
-                  className="imgContainer"
-                />
-              </div>
-              <div>
-                <a
-                  className="mailToLink"
-                  href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                >
-                  Send an email
-                </a>
-                <span
-                  className="talkToUs"
-                >
-                  hello@red-badger.com
-                </span>
-              </div>
-            </section>
-          </Checklist>
-        </_temp>
+        <img
+          alt="An agile stand up in progress"
+          class="header__image"
+          src="header.jpg"
+        />
       </div>
-    </ScrollTracker>
-  </FinancialTimesCaseStudy>
-</Context>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__mainTitleWrapper"
+    >
+      <h1
+        class="content__mainTitle"
+      >
+        Keeping up with the Financial Times
+      </h1>
+    </div>
+    <div
+      class="overview"
+    >
+      <div
+        class="quotation quote"
+      >
+        <div
+          class="quotation__text"
+        >
+          <blockquote
+            class="quotation__quote"
+          >
+            Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change.
+          </blockquote>
+        </div>
+        <div
+          class="quotation__author"
+        >
+          <div
+            class="avatar__container"
+            style="width:70px;height:70px;min-width:70px;min-height:70px"
+          >
+            <img
+              alt="Christina Scott"
+              src="quote-author.jpg"
+            />
+          </div>
+          <div
+            class="quotation__author__wrapper"
+          >
+            <div
+              class="quotation__author__name"
+            >
+              — Christina Scott
+            </div>
+            <div
+              class="quotation__author__title"
+            >
+              Chief Product & Information Officer, Financial Times
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="Card listBoxContainer"
+      >
+        <div
+          class="listBox"
+        >
+          <h3
+            class="listBox__heading"
+          >
+            Results
+          </h3>
+          <ul>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                Integration of Lean UX and Design into all areas of product delivery
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                New homepage designed and built in just 7 weeks
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                Reader engagement increased by 30%
+              </div>
+              <div />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="content__wrapper"
+    >
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Let's make things better.
+        </span>
+        Adapting to a changing online news world
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        The Financial Times knew that online news was changing fast, and their subscription model meant they had to deliver something above and beyond the news and services available for free. The next generation of ft.com was already underway, and now they needed a partner who could help envisage it and bring it to life.
+      </p>
+      <h3
+        class="content__secondaryTitle"
+      >
+        There were two overarching challenges to solve for the Financial Times:
+      </h3>
+      <div
+        class="content__paragraph"
+      >
+        <ol
+          class="content__ordered__list"
+        >
+          <li
+            class="content__ordered__list__element"
+          >
+            Delivery — To deliver the next generation ft.com homepage demonstrating the successful integration of UX and design across all other streams
+          </li>
+          <li
+            class="content__ordered__list__element"
+          >
+            Strategy — Creative team strategy across the entire online product portfolio
+          </li>
+        </ol>
+      </div>
+      <h3
+        class="content__secondaryTitle"
+      >
+        And, core objectives included:
+      </h3>
+      <div
+        class="content__paragraph"
+      >
+        <ul
+          class="content__list"
+        >
+          <li
+            class="content__list__element"
+          >
+            Introduce and embed Lean UX methodologies and Agile Design at an enterprise level
+          </li>
+          <li
+            class="content__list__element"
+          >
+            Increase speed to market
+          </li>
+          <li
+            class="content__list__element"
+          >
+            Raise quality level of design across the product group
+          </li>
+          <li
+            class="content__list__element"
+          >
+            Support an organisational shift towards taking an user-centred design (UCD) to product development
+          </li>
+          <li
+            class="content__list__element"
+          >
+            Place experts within the organisation who’ll continue to support these methods
+          </li>
+        </ul>
+      </div>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Do the right thing. Do the thing right.
+        </span>
+        Collaboration both online and offline
+      </h2>
+      <h3
+        class="content__secondaryTitle"
+      >
+        Learn
+      </h3>
+      <p
+        class="content__paragraph"
+      >
+        We approached the work through collaborative design, with representatives from across the business, we built a complete understanding of the publication’s needs.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        In order to demonstrate how collaboration between different functions of a product team can be optimised in a given environment, it is necessary to first learn about that environment. This is why we started our engagement by placing a core multi-disciplined product team central to the working group. Acting as a hub, we were physically, geographically and functionally central to the core offering of the next generation ft.com, the home page.
+      </p>
+      <div
+        class="contactBox"
+      >
+        <h2
+          class="contactBox__heading"
+        >
+          Project in mind?
+        </h2>
+        <button
+          class="contactBox__button"
+          type="button"
+        >
+          Tell us more
+        </button>
+      </div>
+      <p
+        class="content__paragraph"
+      >
+        In the initial phase of our engagement we redesigned and deployed a new home page in just seven weeks. This involved integrating React and GraphQL into the FT’s already cutting edge tech stack. Demonstrating not only an improved approach to delivery but adding value through introducing new technology.
+      </p>
+      <h3
+        class="content__secondaryTitle"
+      >
+        Understand
+      </h3>
+      <p
+        class="content__paragraph"
+      >
+        After an initial period of delivering at speed into a live production environment we started to mix with the internal teams. We were able to share and explain their working processes and systems to new colleagues, creating the perfect environment to reassess the effectiveness of each stage of their workflow. We learned how the Financial Times operated in the first few weeks of the project. This put us in a position later in the project to recommended some changes to the process in the internal design and development team.
+      </p>
+      <h3
+        class="content__secondaryTitle"
+      >
+        Coach
+      </h3>
+      <p
+        class="content__paragraph"
+      >
+        Initially we found multiple product teams were using processes that were out of view and this resulted in untraceable productivity. This made predicting delivery times and making sound investment decisions difficult. Soon after our arrival we were helping the Financial Times to build a legacy of implementing methodologies out in the open, with work on kanban boards representing their own processes.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        We worked with each team one at a time and through an osmosis like process each team adopted a more open and collaborative way of working together with UX and Design. Now the Financial Times have core metrics measured against each of the backlogs and using Little’s Law we can predict completion time, throughput, lead time and cycle time.
+      </p>
+      <h3
+        class="content__secondaryTitle"
+      >
+        Support
+      </h3>
+      <p
+        class="content__paragraph"
+      >
+        Through a formal education program we taught fundamental User Experience methodologies, Lean UX and Kanban, to a cross section of representatives across the business to support and reinforce the change we have brought to the Financial Times at an enterprise level.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        On going contact beyond our engagement is a given, to offer any level of support required during the maturation of the businesses UCD approach to product development.
+      </p>
+    </div>
+  </div>
+  <div
+    class="screenDemo"
+  >
+    <div
+      class="screenDemo__description"
+    >
+      The first iteration of the new homepage design and built in seven weeks
+    </div>
+    <img
+      alt="Screenshot of Financial Times website"
+      class="screenDemo__image"
+      src="screen.jpg"
+    />
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Creating lasting change.
+        </span>
+        A new design increasing reader engagement by 30%
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        Our work with the Financial Times was made to last. Through close collaboration with the FT senior management in a controlled and considered way ensures that the gradual cultural shift in working practices and approach to Lean UX and Agile Design is not short lived. On the contrary, through careful coaching and support we have created an environment where teams now make iterative changes to how UX and Design is considered and integrated with other teams, including technology and customer research across the business.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        The Financial Times is at the cutting edge of product development, which puts a Lean UCD process at the heart of everything it does. We have been pivotal in implementing these processes, integrating Lean UX and Agile Design into all areas of product delivery across the organisation.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        It remains one of the fastest news sites in the world, loading in 1.5 seconds on desktop and 2.1 on mobile, reader engagement has increased by 30%, with visitors reading more and returning more frequently. It has also won Website of the Year at the Press Awards and Best Use of Technology at Digiday Publishing Awards.
+      </p>
+    </div>
+  </div>
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work"
+    >
+      See more of our work
+    </a>
+  </div>
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>
+</div>
 `;

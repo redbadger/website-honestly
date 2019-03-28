@@ -365,7 +365,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     itemprop="hiringOrganization"
                   />
                   <meta
-                    content="Thu Feb 08 2018 16:42:31 GMT+0000 (GMT)"
+                    content="2018-02-08T16:42:31.000Z"
                     itemprop="datePosted"
                   />
                   <div
@@ -479,7 +479,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     itemprop="hiringOrganization"
                   />
                   <meta
-                    content="Thu Feb 08 2018 16:42:31 GMT+0000 (GMT)"
+                    content="2018-02-08T16:42:31.000Z"
                     itemprop="datePosted"
                   />
                   <div
@@ -593,7 +593,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     itemprop="hiringOrganization"
                   />
                   <meta
-                    content="Thu Feb 08 2018 16:42:31 GMT+0000 (GMT)"
+                    content="2018-02-08T16:42:31.000Z"
                     itemprop="datePosted"
                   />
                   <div

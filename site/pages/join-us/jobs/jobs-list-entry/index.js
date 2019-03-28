@@ -50,7 +50,7 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
             <meta itemProp="postalCode" content="EC1Y 8AF" />
           </div>
           <meta itemProp="hiringOrganization" content="Red Badger" />
-          <meta itemProp="datePosted" content={new Date(datePosted)} />
+          <meta itemProp="datePosted" content={new Date(datePosted).toISOString()} />
           <Grid fit={false}>
             <Cell size={12} breakOn="smallScreen">
               <button

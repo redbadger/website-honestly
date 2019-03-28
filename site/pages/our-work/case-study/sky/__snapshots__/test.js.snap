@@ -1,836 +1,449 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/our-work/case-study/sky/ renders correctly 1`] = `
-<Context>
-  <SkyCaseStudy>
-    <ScrollTracker>
+<div
+  class="caseStudy"
+>
+  <div
+    class="header"
+  >
+    <div
+      class="header__container"
+    >
       <div
-        className="caseStudy"
+        class="header__imageContainer"
       >
-        <Social
-          altText="A Sky customer standing at cross-roads."
-          description="Enabling Sky to deliver continual improvement across customer services."
-          metaImage="header.jpg"
-          title="Helping customers help themselves | Red Badger"
-          url="https://red-badger.com/our-work/case-study/sky-cms"
-        >
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
-            meta={
-              Array [
-                Object {
-                  "content": "summary_large_image",
-                  "name": "twitter:card",
-                },
-                Object {
-                  "content": "@redbadgerteam",
-                  "name": "twitter:site",
-                },
-                Object {
-                  "content": "Helping customers help themselves | Red Badger",
-                  "name": "twitter:title",
-                },
-                Object {
-                  "content": "Enabling Sky to deliver continual improvement across customer services.",
-                  "name": "twitter:description",
-                },
-                Object {
-                  "content": "https://red-badger.comheader.jpg",
-                  "name": "twitter:image",
-                },
-                Object {
-                  "content": "website",
-                  "property": "og:type",
-                },
-                Object {
-                  "content": "Helping customers help themselves | Red Badger",
-                  "property": "og:title",
-                },
-                Object {
-                  "content": "https://red-badger.comheader.jpg",
-                  "property": "og:image",
-                },
-                Object {
-                  "content": "https://red-badger.comheader.jpg",
-                  "property": "og:image:secure_url",
-                },
-                Object {
-                  "content": "A Sky customer standing at cross-roads.",
-                  "property": "og:image:alt",
-                },
-                Object {
-                  "content": "Enabling Sky to deliver continual improvement across customer services.",
-                  "property": "og:description",
-                },
-                Object {
-                  "content": "https://red-badger.com/our-work/case-study/sky-cms",
-                  "property": "og:url",
-                },
-              ]
-            }
-          >
-            <SideEffect(NullComponent)
-              defer={true}
-              encodeSpecialCharacters={true}
-              meta={
-                Array [
-                  Object {
-                    "content": "summary_large_image",
-                    "name": "twitter:card",
-                  },
-                  Object {
-                    "content": "@redbadgerteam",
-                    "name": "twitter:site",
-                  },
-                  Object {
-                    "content": "Helping customers help themselves | Red Badger",
-                    "name": "twitter:title",
-                  },
-                  Object {
-                    "content": "Enabling Sky to deliver continual improvement across customer services.",
-                    "name": "twitter:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader.jpg",
-                    "name": "twitter:image",
-                  },
-                  Object {
-                    "content": "website",
-                    "property": "og:type",
-                  },
-                  Object {
-                    "content": "Helping customers help themselves | Red Badger",
-                    "property": "og:title",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader.jpg",
-                    "property": "og:image",
-                  },
-                  Object {
-                    "content": "https://red-badger.comheader.jpg",
-                    "property": "og:image:secure_url",
-                  },
-                  Object {
-                    "content": "A Sky customer standing at cross-roads.",
-                    "property": "og:image:alt",
-                  },
-                  Object {
-                    "content": "Enabling Sky to deliver continual improvement across customer services.",
-                    "property": "og:description",
-                  },
-                  Object {
-                    "content": "https://red-badger.com/our-work/case-study/sky-cms",
-                    "property": "og:url",
-                  },
-                ]
-              }
-            >
-              <NullComponent
-                defer={true}
-                encodeSpecialCharacters={true}
-                meta={
-                  Array [
-                    Object {
-                      "content": "summary_large_image",
-                      "name": "twitter:card",
-                    },
-                    Object {
-                      "content": "@redbadgerteam",
-                      "name": "twitter:site",
-                    },
-                    Object {
-                      "content": "Helping customers help themselves | Red Badger",
-                      "name": "twitter:title",
-                    },
-                    Object {
-                      "content": "Enabling Sky to deliver continual improvement across customer services.",
-                      "name": "twitter:description",
-                    },
-                    Object {
-                      "content": "https://red-badger.comheader.jpg",
-                      "name": "twitter:image",
-                    },
-                    Object {
-                      "content": "website",
-                      "property": "og:type",
-                    },
-                    Object {
-                      "content": "Helping customers help themselves | Red Badger",
-                      "property": "og:title",
-                    },
-                    Object {
-                      "content": "https://red-badger.comheader.jpg",
-                      "property": "og:image",
-                    },
-                    Object {
-                      "content": "https://red-badger.comheader.jpg",
-                      "property": "og:image:secure_url",
-                    },
-                    Object {
-                      "content": "A Sky customer standing at cross-roads.",
-                      "property": "og:image:alt",
-                    },
-                    Object {
-                      "content": "Enabling Sky to deliver continual improvement across customer services.",
-                      "property": "og:description",
-                    },
-                    Object {
-                      "content": "https://red-badger.com/our-work/case-study/sky-cms",
-                      "property": "og:url",
-                    },
-                  ]
-                }
-              />
-            </SideEffect(NullComponent)>
-          </HelmetWrapper>
-        </Social>
-        <div
-          className="header"
-        >
-          <div
-            className="header__container"
-          >
-            <div
-              className="header__imageContainer"
-            >
-              <img
-                alt="A Sky customer standing at cross-roads"
-                className="header__image"
-                src="header.jpg"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="content"
-        >
-          <div
-            className="content__wrapper"
-          >
-            <h1
-              className="content__mainTitle"
-            >
-              Helping Sky customers help themselves, with a refreshed customer service website
-            </h1>
-          </div>
-          <div
-            className="overview"
-          >
-            <Quote
-              author={
-                Object {
-                  "image": "quote-author.jpg",
-                  "name": "David Crawford",
-                  "title": "Head of Software Engineering, Sky",
-                }
-              }
-              className="quote"
-              text="Red Badger are recognised leaders in Agile/Lean methodologies so they could immediately start working and deliver results alongside our internal team."
-            >
-              <div
-                className="quotation quote"
-              >
-                <div
-                  className="quotation__text"
-                >
-                  <blockquote
-                    className="quotation__quote"
-                  >
-                    Red Badger are recognised leaders in Agile/Lean methodologies so they could immediately start working and deliver results alongside our internal team.
-                  </blockquote>
-                </div>
-                <div
-                  className="quotation__author"
-                >
-                  <Avatar
-                    image="quote-author.jpg"
-                    name="David Crawford"
-                    size={70}
-                  >
-                    <div
-                      className="avatar__container"
-                      style={
-                        Object {
-                          "height": 70,
-                          "minHeight": 70,
-                          "minWidth": 70,
-                          "width": 70,
-                        }
-                      }
-                    >
-                      <img
-                        alt="David Crawford"
-                        src="quote-author.jpg"
-                      />
-                    </div>
-                  </Avatar>
-                  <div
-                    className="quotation__author__wrapper"
-                  >
-                    <div
-                      className="quotation__author__name"
-                    >
-                      — 
-                      David Crawford
-                    </div>
-                    <div
-                      className="quotation__author__title"
-                    >
-                      Head of Software Engineering, Sky
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Quote>
-            <Card
-              className="listBoxContainer"
-            >
-              <div
-                className="Card listBoxContainer"
-              >
-                <ListBox
-                  itemClassName="listBox__item"
-                  items={
-                    Array [
-                      Object {
-                        "label": "Tripled the number of issues resolved through online self help journey",
-                      },
-                      Object {
-                        "label": "Doubled the customers serviced by the advanced diagnostics capability",
-                      },
-                      Object {
-                        "label": "Serviced half a million customers to date",
-                      },
-                      Object {
-                        "label": "50% Drop in customers pushing the 'need more help' button",
-                      },
-                    ]
-                  }
-                  labelClassName="listBox__label"
-                  title="Results"
-                >
-                  <div
-                    className="listBox"
-                  >
-                    <h3
-                      className="listBox__heading"
-                    >
-                      Results
-                    </h3>
-                    <ul>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="Tripled the number of issues resolved through online self help journey"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          Tripled the number of issues resolved through online self help journey
-                        </div>
-                        <div />
-                      </li>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="Doubled the customers serviced by the advanced diagnostics capability"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          Doubled the customers serviced by the advanced diagnostics capability
-                        </div>
-                        <div />
-                      </li>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="Serviced half a million customers to date"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          Serviced half a million customers to date
-                        </div>
-                        <div />
-                      </li>
-                      <li
-                        className="listBox__element listBox__element--results listBox__item"
-                        key="50% Drop in customers pushing the 'need more help' button"
-                      >
-                        <div
-                          className="listBox__label"
-                        >
-                          50% Drop in customers pushing the 'need more help' button
-                        </div>
-                        <div />
-                      </li>
-                    </ul>
-                  </div>
-                </ListBox>
-              </div>
-            </Card>
-          </div>
-          <div
-            className="content__wrapper"
-          >
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Let’s make things better.
-              </span>
-              Delivering exceptional intuitive customer service
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              Sky are continuously focused on providing customers the services they want and need. It’s part of a simple, two-pronged attack: Sky seeks to improve what it has, and provide what it doesn’t have already. As part of this, Sky found that there was a higher demand for online self-help services as customers’ own digital skills grow.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              As such, Sky was determined to enhance the use of their online self-help tools for in-home diagnostics, allowing issues to be resolved quicker. Taking this, Sky set out to enable customers to troubleshoot problems for themselves, particularly during times of widespread issues. This, in order to help prevent the helpline being overwhelmed with calls for the same problem.
-            </p>
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Do the right thing. Do the thing right.
-              </span>
-              Empowering customers to help themselves
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              With a clear message of achieving customer empowerment, our onsite team at Red Badger got to work. The team focused on improving the online help and support experience by enabling customers to find content, resolve issues, navigate available services, and set up their Sky equipment correctly.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              Sky was already a leader in the use of agile methodologies and lean ways of working, and were determined to work with a partner that would help them to advance these skills. To complement their established structures, augmented by Sky’s UX/Design resources, we brought in an integrated team of UX, design, and technology to deliver rapidly. Bleeding edge software was utilised to revamp the site and give it the modernisation it needed.
-            </p>
-            <ContactBox>
-              <div
-                className="contactBox"
-              >
-                <h2
-                  className="contactBox__heading"
-                >
-                  Project in mind?
-                </h2>
-                <button
-                  className="contactBox__button"
-                  onClick={[Function]}
-                  type="button"
-                >
-                  Tell us more
-                </button>
-              </div>
-            </ContactBox>
-            <p
-              className="content__paragraph"
-            >
-              Through the use of clustered articles, customers are now able to find what they need when they need it. Additionally, the help section was bolstered to handle spikes in activity; saving customers from having to reach for the phone. So, when the football match starts glitching, the Sky team can make sure that the solution is up on the site, or if one is still being found, can put a pop up on the page to reassure customers are that they are working to find the solution needed.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              <img
-                alt="Screenshot of Sky Help and Support page"
-                className="articleImage"
-                src="article.jpg"
-              />
-            </p>
-            <h2
-              className="content__title"
-            >
-              <span
-                className="content__redTitle"
-              >
-                Creating lasting change.
-              </span>
-              Quick delivery with more to come
-            </h2>
-            <p
-              className="content__paragraph"
-            >
-              In just five months, we delivered four major pieces of customer-facing functionality. Focused initially on in-home advanced diagnostics, the first customer facing delivery was made in less than three weeks, leaving room to implement further customer feedback.
-            </p>
-            <p
-              className="content__paragraph"
-            >
-              The new diagnostic platform has had a huge effect. It tripled the number of issues resolved through the online self-help journey, it doubled the customers serviced by the advanced diagnostics, and it’s serviced half a million customers to date.
-               
-            </p>
-          </div>
-        </div>
-        <MockedWhatToReadNext
-          currentPage="sky"
-          linkKeys={
-            Array [
-              "skyCms",
-            ]
-          }
-        >
-          <div
-            className="whatNext"
-          >
-            <div
-              className="whatNext__tilesContainer"
-            >
-              <WhatToReadNextSlice
-                image="pride.gif"
-                key="Pride in London-0"
-                linkKey="prideCaseStudy"
-                name="Pride in London"
-                tagline="Delivering a best-in-class digital experience"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="prideCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="prideCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Pride in London"
-                            className="whatNext__image"
-                            src="pride.gif"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Pride in London
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="prideCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="prideCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Delivering a best-in-class digital experience
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-              <WhatToReadNextSlice
-                image="financialTimesReadMore.jpg"
-                key="Financial Times-1"
-                linkKey="financialTimesCaseStudy"
-                name="Financial Times"
-                tagline="Lasting change for a media giant"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="financialTimesCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="financialTimesCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Financial Times"
-                            className="whatNext__image"
-                            src="financialTimesReadMore.jpg"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Financial Times
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="financialTimesCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="financialTimesCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Lasting change for a media giant
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-              <WhatToReadNextSlice
-                image="carTrawler.jpg"
-                key="Car Trawler-2"
-                linkKey="carTrawlerCaseStudy"
-                name="Car Trawler"
-                tagline="Creating complete CMS control for travel brands"
-              >
-                <div
-                  className="whatNext__tile"
-                >
-                  <figure>
-                    <Link
-                      to="carTrawlerCaseStudy"
-                    >
-                      <NavigationLink
-                        className=""
-                        navigating={[Function]}
-                        stateKey="carTrawlerCaseStudy"
-                      >
-                        <a
-                          className=""
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <img
-                            alt="Car Trawler"
-                            className="whatNext__image"
-                            src="carTrawler.jpg"
-                          />
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                    <figcaption
-                      className="whatNext__caption"
-                    >
-                      Car Trawler
-                    </figcaption>
-                  </figure>
-                  <Link
-                    className="whatNext__link"
-                    to="carTrawlerCaseStudy"
-                  >
-                    <NavigationLink
-                      className="whatNext__link"
-                      navigating={[Function]}
-                      stateKey="carTrawlerCaseStudy"
-                    >
-                      <a
-                        className="whatNext__link"
-                        href={null}
-                        onClick={[Function]}
-                      >
-                        <h2
-                          className="whatNext__title"
-                        >
-                          Creating complete CMS control for travel brands
-                          <span
-                            className="whatNext__arrow_wrapper"
-                          >
-                            <Arrow
-                              className="whatNext__arrow"
-                            >
-                              <svg
-                                className="whatNext__arrow"
-                                viewBox="0 0 22 22"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                  fill="#FC1D42"
-                                  fillRule="evenodd"
-                                  stroke="#FC1D42"
-                                />
-                              </svg>
-                            </Arrow>
-                          </span>
-                        </h2>
-                      </a>
-                    </NavigationLink>
-                  </Link>
-                </div>
-              </WhatToReadNextSlice>
-            </div>
-            <Link
-              className="whatNext__button"
-              to="ourWorkPage"
-            >
-              <NavigationLink
-                className="whatNext__button"
-                navigating={[Function]}
-                stateKey="ourWorkPage"
-              >
-                <a
-                  className="whatNext__button"
-                  href={null}
-                  onClick={[Function]}
-                >
-                  See more of our work
-                </a>
-              </NavigationLink>
-            </Link>
-          </div>
-        </MockedWhatToReadNext>
-        <_temp>
-          <Checklist
-            isHovered={false}
-            onBlur={[Function]}
-            onHover={[Function]}
-          >
-            <section
-              className="contactUsContainer"
-              id="contactUs"
-            >
-              <h2
-                className="header"
-              >
-                We can help you
-              </h2>
-              <div
-                className="contentContainer"
-              >
-                <ul
-                  className="list"
-                >
-                  <li
-                    className="item"
-                    key="Create & validate new ideas"
-                  >
-                    Create & validate new ideas
-                  </li>
-                  <li
-                    className="item"
-                    key="Deliver great quality products & services, fast"
-                  >
-                    Deliver great quality products & services, fast
-                  </li>
-                  <li
-                    className="item"
-                    key="Be bold with technology"
-                  >
-                    Be bold with technology
-                  </li>
-                  <li
-                    className="item"
-                    key="Be more customer centric"
-                  >
-                    Be more customer centric
-                  </li>
-                  <li
-                    className="item"
-                    key="Improve efficiency with lean practices"
-                  >
-                    Improve efficiency with lean practices
-                  </li>
-                  <li
-                    className="item"
-                    key="Build capability & confidence"
-                  >
-                    Build capability & confidence
-                  </li>
-                </ul>
-                <div
-                  className="imgContainer"
-                />
-              </div>
-              <div>
-                <a
-                  className="mailToLink"
-                  href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                  onClick={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                >
-                  Send an email
-                </a>
-                <span
-                  className="talkToUs"
-                >
-                  hello@red-badger.com
-                </span>
-              </div>
-            </section>
-          </Checklist>
-        </_temp>
+        <img
+          alt="A Sky customer standing at cross-roads"
+          class="header__image"
+          src="header.jpg"
+        />
       </div>
-    </ScrollTracker>
-  </SkyCaseStudy>
-</Context>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
+      <h1
+        class="content__mainTitle"
+      >
+        Helping Sky customers help themselves, with a refreshed customer service website
+      </h1>
+    </div>
+    <div
+      class="overview"
+    >
+      <div
+        class="quotation quote"
+      >
+        <div
+          class="quotation__text"
+        >
+          <blockquote
+            class="quotation__quote"
+          >
+            Red Badger are recognised leaders in Agile/Lean methodologies so they could immediately start working and deliver results alongside our internal team.
+          </blockquote>
+        </div>
+        <div
+          class="quotation__author"
+        >
+          <div
+            class="avatar__container"
+            style="width:70px;height:70px;min-width:70px;min-height:70px"
+          >
+            <img
+              alt="David Crawford"
+              src="quote-author.jpg"
+            />
+          </div>
+          <div
+            class="quotation__author__wrapper"
+          >
+            <div
+              class="quotation__author__name"
+            >
+              — David Crawford
+            </div>
+            <div
+              class="quotation__author__title"
+            >
+              Head of Software Engineering, Sky
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="Card listBoxContainer"
+      >
+        <div
+          class="listBox"
+        >
+          <h3
+            class="listBox__heading"
+          >
+            Results
+          </h3>
+          <ul>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                Tripled the number of issues resolved through online self help journey
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                Doubled the customers serviced by the advanced diagnostics capability
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                Serviced half a million customers to date
+              </div>
+              <div />
+            </li>
+            <li
+              class="listBox__element listBox__element--results listBox__item"
+            >
+              <div
+                class="listBox__label"
+              >
+                50% Drop in customers pushing the 'need more help' button
+              </div>
+              <div />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="content__wrapper"
+    >
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Let’s make things better.
+        </span>
+        Delivering exceptional intuitive customer service
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        Sky are continuously focused on providing customers the services they want and need. It’s part of a simple, two-pronged attack: Sky seeks to improve what it has, and provide what it doesn’t have already. As part of this, Sky found that there was a higher demand for online self-help services as customers’ own digital skills grow.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        As such, Sky was determined to enhance the use of their online self-help tools for in-home diagnostics, allowing issues to be resolved quicker. Taking this, Sky set out to enable customers to troubleshoot problems for themselves, particularly during times of widespread issues. This, in order to help prevent the helpline being overwhelmed with calls for the same problem.
+      </p>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Do the right thing. Do the thing right.
+        </span>
+        Empowering customers to help themselves
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        With a clear message of achieving customer empowerment, our onsite team at Red Badger got to work. The team focused on improving the online help and support experience by enabling customers to find content, resolve issues, navigate available services, and set up their Sky equipment correctly.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        Sky was already a leader in the use of agile methodologies and lean ways of working, and were determined to work with a partner that would help them to advance these skills. To complement their established structures, augmented by Sky’s UX/Design resources, we brought in an integrated team of UX, design, and technology to deliver rapidly. Bleeding edge software was utilised to revamp the site and give it the modernisation it needed.
+      </p>
+      <div
+        class="contactBox"
+      >
+        <h2
+          class="contactBox__heading"
+        >
+          Project in mind?
+        </h2>
+        <button
+          class="contactBox__button"
+          type="button"
+        >
+          Tell us more
+        </button>
+      </div>
+      <p
+        class="content__paragraph"
+      >
+        Through the use of clustered articles, customers are now able to find what they need when they need it. Additionally, the help section was bolstered to handle spikes in activity; saving customers from having to reach for the phone. So, when the football match starts glitching, the Sky team can make sure that the solution is up on the site, or if one is still being found, can put a pop up on the page to reassure customers are that they are working to find the solution needed.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        <img
+          alt="Screenshot of Sky Help and Support page"
+          class="articleImage"
+          src="article.jpg"
+        />
+      </p>
+      <h2
+        class="content__title"
+      >
+        <span
+          class="content__redTitle"
+        >
+          Creating lasting change.
+        </span>
+        Quick delivery with more to come
+      </h2>
+      <p
+        class="content__paragraph"
+      >
+        In just five months, we delivered four major pieces of customer-facing functionality. Focused initially on in-home advanced diagnostics, the first customer facing delivery was made in less than three weeks, leaving room to implement further customer feedback.
+      </p>
+      <p
+        class="content__paragraph"
+      >
+        The new diagnostic platform has had a huge effect. It tripled the number of issues resolved through the online self-help journey, it doubled the customers serviced by the advanced diagnostics, and it’s serviced half a million customers to date. 
+      </p>
+    </div>
+  </div>
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work"
+    >
+      See more of our work
+    </a>
+  </div>
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>
+</div>
 `;

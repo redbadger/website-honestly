@@ -1,765 +1,384 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
-<Context>
-  <BBCCaseStudy>
-    <ScrollTracker>
-      <CaseStudyFrame>
+<div
+  class="caseStudy"
+>
+  <div>
+    <div
+      class="header"
+      style="background-color:#F2F3ED"
+    >
+      <div
+        class="header__container"
+      >
         <div
-          className="caseStudy"
+          class="header__imageContainer"
+          style="justify-content:center"
         >
-          <CaseStudyHeader
-            headerColor="#F2F3ED"
-            headerImage="header.jpg"
-            headerImageAlt="Tablet device showing screenshot of BBC website"
-            social={
-              Object {
-                "altText": "A laptop showing the BBC website",
-                "description": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
-                "metaImage": "header.jpg",
-                "title": "Delivering a better customer experience, faster. | Red Badger",
-                "url": "https://red-badger.com/our-work/case-study/bbc-now",
-              }
-            }
-            tagline="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
-            title="BBC Now: Delivering a better customer experience, faster"
-          >
-            <div>
-              <Social
-                altText="A laptop showing the BBC website"
-                description="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience."
-                metaImage="header.jpg"
-                title="Delivering a better customer experience, faster. | Red Badger"
-                url="https://red-badger.com/our-work/case-study/bbc-now"
-              >
-                <HelmetWrapper
-                  defer={true}
-                  encodeSpecialCharacters={true}
-                  meta={
-                    Array [
-                      Object {
-                        "content": "summary_large_image",
-                        "name": "twitter:card",
-                      },
-                      Object {
-                        "content": "@redbadgerteam",
-                        "name": "twitter:site",
-                      },
-                      Object {
-                        "content": "Delivering a better customer experience, faster. | Red Badger",
-                        "name": "twitter:title",
-                      },
-                      Object {
-                        "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
-                        "name": "twitter:description",
-                      },
-                      Object {
-                        "content": "https://red-badger.comheader.jpg",
-                        "name": "twitter:image",
-                      },
-                      Object {
-                        "content": "website",
-                        "property": "og:type",
-                      },
-                      Object {
-                        "content": "Delivering a better customer experience, faster. | Red Badger",
-                        "property": "og:title",
-                      },
-                      Object {
-                        "content": "https://red-badger.comheader.jpg",
-                        "property": "og:image",
-                      },
-                      Object {
-                        "content": "https://red-badger.comheader.jpg",
-                        "property": "og:image:secure_url",
-                      },
-                      Object {
-                        "content": "A laptop showing the BBC website",
-                        "property": "og:image:alt",
-                      },
-                      Object {
-                        "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
-                        "property": "og:description",
-                      },
-                      Object {
-                        "content": "https://red-badger.com/our-work/case-study/bbc-now",
-                        "property": "og:url",
-                      },
-                    ]
-                  }
-                >
-                  <SideEffect(NullComponent)
-                    defer={true}
-                    encodeSpecialCharacters={true}
-                    meta={
-                      Array [
-                        Object {
-                          "content": "summary_large_image",
-                          "name": "twitter:card",
-                        },
-                        Object {
-                          "content": "@redbadgerteam",
-                          "name": "twitter:site",
-                        },
-                        Object {
-                          "content": "Delivering a better customer experience, faster. | Red Badger",
-                          "name": "twitter:title",
-                        },
-                        Object {
-                          "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
-                          "name": "twitter:description",
-                        },
-                        Object {
-                          "content": "https://red-badger.comheader.jpg",
-                          "name": "twitter:image",
-                        },
-                        Object {
-                          "content": "website",
-                          "property": "og:type",
-                        },
-                        Object {
-                          "content": "Delivering a better customer experience, faster. | Red Badger",
-                          "property": "og:title",
-                        },
-                        Object {
-                          "content": "https://red-badger.comheader.jpg",
-                          "property": "og:image",
-                        },
-                        Object {
-                          "content": "https://red-badger.comheader.jpg",
-                          "property": "og:image:secure_url",
-                        },
-                        Object {
-                          "content": "A laptop showing the BBC website",
-                          "property": "og:image:alt",
-                        },
-                        Object {
-                          "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
-                          "property": "og:description",
-                        },
-                        Object {
-                          "content": "https://red-badger.com/our-work/case-study/bbc-now",
-                          "property": "og:url",
-                        },
-                      ]
-                    }
-                  >
-                    <NullComponent
-                      defer={true}
-                      encodeSpecialCharacters={true}
-                      meta={
-                        Array [
-                          Object {
-                            "content": "summary_large_image",
-                            "name": "twitter:card",
-                          },
-                          Object {
-                            "content": "@redbadgerteam",
-                            "name": "twitter:site",
-                          },
-                          Object {
-                            "content": "Delivering a better customer experience, faster. | Red Badger",
-                            "name": "twitter:title",
-                          },
-                          Object {
-                            "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
-                            "name": "twitter:description",
-                          },
-                          Object {
-                            "content": "https://red-badger.comheader.jpg",
-                            "name": "twitter:image",
-                          },
-                          Object {
-                            "content": "website",
-                            "property": "og:type",
-                          },
-                          Object {
-                            "content": "Delivering a better customer experience, faster. | Red Badger",
-                            "property": "og:title",
-                          },
-                          Object {
-                            "content": "https://red-badger.comheader.jpg",
-                            "property": "og:image",
-                          },
-                          Object {
-                            "content": "https://red-badger.comheader.jpg",
-                            "property": "og:image:secure_url",
-                          },
-                          Object {
-                            "content": "A laptop showing the BBC website",
-                            "property": "og:image:alt",
-                          },
-                          Object {
-                            "content": "How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.",
-                            "property": "og:description",
-                          },
-                          Object {
-                            "content": "https://red-badger.com/our-work/case-study/bbc-now",
-                            "property": "og:url",
-                          },
-                        ]
-                      }
-                    />
-                  </SideEffect(NullComponent)>
-                </HelmetWrapper>
-              </Social>
-              <div
-                className="header"
-                style={
-                  Object {
-                    "backgroundColor": "#F2F3ED",
-                  }
-                }
-              >
-                <div
-                  className="header__container"
-                >
-                  <div
-                    className="header__imageContainer"
-                    style={
-                      Object {
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <img
-                      alt="Tablet device showing screenshot of BBC website"
-                      className="header__image"
-                      src="header.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="content"
-              >
-                <div
-                  className="content__wrapper"
-                >
-                  <h1
-                    className="content__mainTitle"
-                  >
-                    BBC Now: Delivering a better customer experience, faster
-                  </h1>
-                  <h2
-                    className="content__tagline"
-                  >
-                    How the rapid prototyping model helped the BBC to uncover new ways to engage its audience
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </CaseStudyHeader>
-          <PullQuote
-            author={
-              Object {
-                "name": "Eleni Sharp",
-                "title": "Senior product manager, BBC Connected Studios",
-              }
-            }
-            text="Red Badger is bursting with creativity... and makes the complicated straightforward."
-          >
-            <div
-              className="quotation__wrapper"
-            >
-              <div
-                className="quotation__innerWrapper"
-              >
-                <div
-                  className="quotation"
-                >
-                  <blockquote
-                    className="quotation__quote"
-                  >
-                    <p
-                      className="quotation__text"
-                    >
-                      Red Badger is bursting with creativity... and makes the complicated straightforward.
-                    </p>
-                  </blockquote>
-                  <div
-                    className="quotation__author"
-                  >
-                    <div
-                      className="quotation__author__name"
-                    >
-                      — 
-                      Eleni Sharp
-                    </div>
-                    <div
-                      className="quotation__author__title"
-                    >
-                      Senior product manager, BBC Connected Studios
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </PullQuote>
-          <CaseStudySection
-            title="The challenge"
-          >
-            <div
-              className="content"
-            >
-              <div
-                className="content__wrapper"
-              >
-                <h3>
-                  The challenge
-                </h3>
-                <p>
-                  Nine million people visit the BBC Homepage each week but most use it as an access point to specific information and miss lots of valuable and relevant content. And, although personalisation tools are available, less than 10% of visitors use them.
-                </p>
-                <p>
-                  Tasked with finding new ways to engage consumers, BBC Connected Studio was looking for creative ideas that would make it easier for visitors to the site to find content relevant to them.
-                </p>
-              </div>
-            </div>
-          </CaseStudySection>
-          <CaseStudySection
-            title="Solution"
-          >
-            <div
-              className="content"
-            >
-              <div
-                className="content__wrapper"
-              >
-                <h3>
-                  Solution
-                </h3>
-                <p>
-                  The concept Red Badger came up with was effectively a fast lane. A real-time stream of BBC content delivered to the homepage, in bite-sized chunks, the instant it’s published.
-                </p>
-                <p>
-                  Combining this with the semantic web, allowing data to be shared across platforms and communities, means the content is refined as the site ‘learns’ more about what a user accesses and how they interact with it.
-                </p>
-              </div>
-            </div>
-          </CaseStudySection>
-          <PullQuote
-            author={
-              Object {
-                "name": "Eleni Sharp",
-                "title": "Senior product manager, BBC Connected Studios",
-              }
-            }
-            text="The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns."
-          >
-            <div
-              className="quotation__wrapper"
-            >
-              <div
-                className="quotation__innerWrapper"
-              >
-                <div
-                  className="quotation"
-                >
-                  <blockquote
-                    className="quotation__quote"
-                  >
-                    <p
-                      className="quotation__text"
-                    >
-                      The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns.
-                    </p>
-                  </blockquote>
-                  <div
-                    className="quotation__author"
-                  >
-                    <div
-                      className="quotation__author__name"
-                    >
-                      — 
-                      Eleni Sharp
-                    </div>
-                    <div
-                      className="quotation__author__title"
-                    >
-                      Senior product manager, BBC Connected Studios
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </PullQuote>
-          <CaseStudySection
-            title="Business benefits"
-          >
-            <div
-              className="content"
-            >
-              <div
-                className="content__wrapper"
-              >
-                <h3>
-                  Business benefits
-                </h3>
-                <p>
-                  For Connected Studio the key metric was the feedback from consumers and overall the reaction was very positive. The concept was proven to be easy to understand, and more than 75% of users agreed the concept was appealing; nearly 50% said they would be very likely to use BBC Now if it went live.
-                </p>
-              </div>
-            </div>
-          </CaseStudySection>
-          <MockedWhatToReadNext>
-            <div
-              className="whatNext"
-            >
-              <div
-                className="whatNext__tilesContainer"
-              >
-                <WhatToReadNextSlice
-                  image="pride.gif"
-                  key="Pride in London-0"
-                  linkKey="prideCaseStudy"
-                  name="Pride in London"
-                  tagline="Delivering a best-in-class digital experience"
-                >
-                  <div
-                    className="whatNext__tile"
-                  >
-                    <figure>
-                      <Link
-                        to="prideCaseStudy"
-                      >
-                        <NavigationLink
-                          className=""
-                          navigating={[Function]}
-                          stateKey="prideCaseStudy"
-                        >
-                          <a
-                            className=""
-                            href={null}
-                            onClick={[Function]}
-                          >
-                            <img
-                              alt="Pride in London"
-                              className="whatNext__image"
-                              src="pride.gif"
-                            />
-                          </a>
-                        </NavigationLink>
-                      </Link>
-                      <figcaption
-                        className="whatNext__caption"
-                      >
-                        Pride in London
-                      </figcaption>
-                    </figure>
-                    <Link
-                      className="whatNext__link"
-                      to="prideCaseStudy"
-                    >
-                      <NavigationLink
-                        className="whatNext__link"
-                        navigating={[Function]}
-                        stateKey="prideCaseStudy"
-                      >
-                        <a
-                          className="whatNext__link"
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <h2
-                            className="whatNext__title"
-                          >
-                            Delivering a best-in-class digital experience
-                            <span
-                              className="whatNext__arrow_wrapper"
-                            >
-                              <Arrow
-                                className="whatNext__arrow"
-                              >
-                                <svg
-                                  className="whatNext__arrow"
-                                  viewBox="0 0 22 22"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                    fill="#FC1D42"
-                                    fillRule="evenodd"
-                                    stroke="#FC1D42"
-                                  />
-                                </svg>
-                              </Arrow>
-                            </span>
-                          </h2>
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                  </div>
-                </WhatToReadNextSlice>
-                <WhatToReadNextSlice
-                  image="financialTimesReadMore.jpg"
-                  key="Financial Times-1"
-                  linkKey="financialTimesCaseStudy"
-                  name="Financial Times"
-                  tagline="Lasting change for a media giant"
-                >
-                  <div
-                    className="whatNext__tile"
-                  >
-                    <figure>
-                      <Link
-                        to="financialTimesCaseStudy"
-                      >
-                        <NavigationLink
-                          className=""
-                          navigating={[Function]}
-                          stateKey="financialTimesCaseStudy"
-                        >
-                          <a
-                            className=""
-                            href={null}
-                            onClick={[Function]}
-                          >
-                            <img
-                              alt="Financial Times"
-                              className="whatNext__image"
-                              src="financialTimesReadMore.jpg"
-                            />
-                          </a>
-                        </NavigationLink>
-                      </Link>
-                      <figcaption
-                        className="whatNext__caption"
-                      >
-                        Financial Times
-                      </figcaption>
-                    </figure>
-                    <Link
-                      className="whatNext__link"
-                      to="financialTimesCaseStudy"
-                    >
-                      <NavigationLink
-                        className="whatNext__link"
-                        navigating={[Function]}
-                        stateKey="financialTimesCaseStudy"
-                      >
-                        <a
-                          className="whatNext__link"
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <h2
-                            className="whatNext__title"
-                          >
-                            Lasting change for a media giant
-                            <span
-                              className="whatNext__arrow_wrapper"
-                            >
-                              <Arrow
-                                className="whatNext__arrow"
-                              >
-                                <svg
-                                  className="whatNext__arrow"
-                                  viewBox="0 0 22 22"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                    fill="#FC1D42"
-                                    fillRule="evenodd"
-                                    stroke="#FC1D42"
-                                  />
-                                </svg>
-                              </Arrow>
-                            </span>
-                          </h2>
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                  </div>
-                </WhatToReadNextSlice>
-                <WhatToReadNextSlice
-                  image="carTrawler.jpg"
-                  key="Car Trawler-2"
-                  linkKey="carTrawlerCaseStudy"
-                  name="Car Trawler"
-                  tagline="Creating complete CMS control for travel brands"
-                >
-                  <div
-                    className="whatNext__tile"
-                  >
-                    <figure>
-                      <Link
-                        to="carTrawlerCaseStudy"
-                      >
-                        <NavigationLink
-                          className=""
-                          navigating={[Function]}
-                          stateKey="carTrawlerCaseStudy"
-                        >
-                          <a
-                            className=""
-                            href={null}
-                            onClick={[Function]}
-                          >
-                            <img
-                              alt="Car Trawler"
-                              className="whatNext__image"
-                              src="carTrawler.jpg"
-                            />
-                          </a>
-                        </NavigationLink>
-                      </Link>
-                      <figcaption
-                        className="whatNext__caption"
-                      >
-                        Car Trawler
-                      </figcaption>
-                    </figure>
-                    <Link
-                      className="whatNext__link"
-                      to="carTrawlerCaseStudy"
-                    >
-                      <NavigationLink
-                        className="whatNext__link"
-                        navigating={[Function]}
-                        stateKey="carTrawlerCaseStudy"
-                      >
-                        <a
-                          className="whatNext__link"
-                          href={null}
-                          onClick={[Function]}
-                        >
-                          <h2
-                            className="whatNext__title"
-                          >
-                            Creating complete CMS control for travel brands
-                            <span
-                              className="whatNext__arrow_wrapper"
-                            >
-                              <Arrow
-                                className="whatNext__arrow"
-                              >
-                                <svg
-                                  className="whatNext__arrow"
-                                  viewBox="0 0 22 22"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
-                                    fill="#FC1D42"
-                                    fillRule="evenodd"
-                                    stroke="#FC1D42"
-                                  />
-                                </svg>
-                              </Arrow>
-                            </span>
-                          </h2>
-                        </a>
-                      </NavigationLink>
-                    </Link>
-                  </div>
-                </WhatToReadNextSlice>
-              </div>
-              <Link
-                className="whatNext__button"
-                to="ourWorkPage"
-              >
-                <NavigationLink
-                  className="whatNext__button"
-                  navigating={[Function]}
-                  stateKey="ourWorkPage"
-                >
-                  <a
-                    className="whatNext__button"
-                    href={null}
-                    onClick={[Function]}
-                  >
-                    See more of our work
-                  </a>
-                </NavigationLink>
-              </Link>
-            </div>
-          </MockedWhatToReadNext>
-          <_temp>
-            <Checklist
-              isHovered={false}
-              onBlur={[Function]}
-              onHover={[Function]}
-            >
-              <section
-                className="contactUsContainer"
-                id="contactUs"
-              >
-                <h2
-                  className="header"
-                >
-                  We can help you
-                </h2>
-                <div
-                  className="contentContainer"
-                >
-                  <ul
-                    className="list"
-                  >
-                    <li
-                      className="item"
-                      key="Create & validate new ideas"
-                    >
-                      Create & validate new ideas
-                    </li>
-                    <li
-                      className="item"
-                      key="Deliver great quality products & services, fast"
-                    >
-                      Deliver great quality products & services, fast
-                    </li>
-                    <li
-                      className="item"
-                      key="Be bold with technology"
-                    >
-                      Be bold with technology
-                    </li>
-                    <li
-                      className="item"
-                      key="Be more customer centric"
-                    >
-                      Be more customer centric
-                    </li>
-                    <li
-                      className="item"
-                      key="Improve efficiency with lean practices"
-                    >
-                      Improve efficiency with lean practices
-                    </li>
-                    <li
-                      className="item"
-                      key="Build capability & confidence"
-                    >
-                      Build capability & confidence
-                    </li>
-                  </ul>
-                  <div
-                    className="imgContainer"
-                  />
-                </div>
-                <div>
-                  <a
-                    className="mailToLink"
-                    href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
-                    onClick={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                  >
-                    Send an email
-                  </a>
-                  <span
-                    className="talkToUs"
-                  >
-                    hello@red-badger.com
-                  </span>
-                </div>
-              </section>
-            </Checklist>
-          </_temp>
+          <img
+            alt="Tablet device showing screenshot of BBC website"
+            class="header__image"
+            src="header.jpg"
+          />
         </div>
-      </CaseStudyFrame>
-    </ScrollTracker>
-  </BBCCaseStudy>
-</Context>
+      </div>
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="content__wrapper"
+      >
+        <h1
+          class="content__mainTitle"
+        >
+          BBC Now: Delivering a better customer experience, faster
+        </h1>
+        <h2
+          class="content__tagline"
+        >
+          How the rapid prototyping model helped the BBC to uncover new ways to engage its audience
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    class="quotation__wrapper"
+  >
+    <div
+      class="quotation__innerWrapper"
+    >
+      <div
+        class="quotation"
+      >
+        <blockquote
+          class="quotation__quote"
+        >
+          <p
+            class="quotation__text"
+          >
+            Red Badger is bursting with creativity... and makes the complicated straightforward.
+          </p>
+        </blockquote>
+        <div
+          class="quotation__author"
+        >
+          <div
+            class="quotation__author__name"
+          >
+            — Eleni Sharp
+          </div>
+          <div
+            class="quotation__author__title"
+          >
+            Senior product manager, BBC Connected Studios
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
+      <h3>
+        The challenge
+      </h3>
+      <p>
+        Nine million people visit the BBC Homepage each week but most use it as an access point to specific information and miss lots of valuable and relevant content. And, although personalisation tools are available, less than 10% of visitors use them.
+      </p>
+      <p>
+        Tasked with finding new ways to engage consumers, BBC Connected Studio was looking for creative ideas that would make it easier for visitors to the site to find content relevant to them.
+      </p>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
+      <h3>
+        Solution
+      </h3>
+      <p>
+        The concept Red Badger came up with was effectively a fast lane. A real-time stream of BBC content delivered to the homepage, in bite-sized chunks, the instant it’s published.
+      </p>
+      <p>
+        Combining this with the semantic web, allowing data to be shared across platforms and communities, means the content is refined as the site ‘learns’ more about what a user accesses and how they interact with it.
+      </p>
+    </div>
+  </div>
+  <div
+    class="quotation__wrapper"
+  >
+    <div
+      class="quotation__innerWrapper"
+    >
+      <div
+        class="quotation"
+      >
+        <blockquote
+          class="quotation__quote"
+        >
+          <p
+            class="quotation__text"
+          >
+            The concept appealed because it allowed us to showcase much more content without overcomplicating the existing site. Plus the feed learns from the user's behaviour and becomes more and more personalised the more it learns.
+          </p>
+        </blockquote>
+        <div
+          class="quotation__author"
+        >
+          <div
+            class="quotation__author__name"
+          >
+            — Eleni Sharp
+          </div>
+          <div
+            class="quotation__author__title"
+          >
+            Senior product manager, BBC Connected Studios
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content"
+  >
+    <div
+      class="content__wrapper"
+    >
+      <h3>
+        Business benefits
+      </h3>
+      <p>
+        For Connected Studio the key metric was the feedback from consumers and overall the reaction was very positive. The concept was proven to be easy to understand, and more than 75% of users agreed the concept was appealing; nearly 50% said they would be very likely to use BBC Now if it went live.
+      </p>
+    </div>
+  </div>
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work"
+    >
+      See more of our work
+    </a>
+  </div>
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>
+</div>
 `;
