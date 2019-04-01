@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 import Helmet from 'react-helmet';
-
+import htmlnano from 'htmlnano';
 import { renderToString } from 'react-dom/server';
 
 import createStateNavigator from '../routes';
@@ -71,7 +71,7 @@ export const expandRoutes = (state, stateNavigator) => {
   return staticRoutes.concat(flattened);
 };
 
-export function compileRoutes(state) {
+async function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
   const stateString = state.data ? JSON.stringify(state.data) : '{}';
@@ -87,7 +87,7 @@ export function compileRoutes(state) {
   };
   console.log(`Compiled ${stateFile.path}`); // eslint-disable-line no-console
 
-  const compile = route => {
+  const compile = async route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
@@ -101,7 +101,7 @@ export function compileRoutes(state) {
     const renderMs = Date.now() - renderStart;
 
     const ejsStart = Date.now();
-    const body = layoutTemplate({
+    const bodyRaw = layoutTemplate({
       title,
       description,
       tracking,
@@ -112,16 +112,24 @@ export function compileRoutes(state) {
       stateHash,
     });
     const ejsMs = Date.now() - ejsStart;
-    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`); // eslint-disable-line no-console
 
-    return { body, path, contentType: 'text/html' };
+    const minifyStart = Date.now();
+    const { html } = await htmlnano.process(bodyRaw, {
+      minifySvg: false, // SVGs are embedded as React components and we don't want to change the SVG markup compared to what the component renders
+    });
+    const minifyMs = Date.now() - minifyStart;
+
+    // eslint-disable-next-line no-console
+    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs} minify=${minifyMs}`);
+
+    return { body: html, path, contentType: 'text/html' };
   };
 
-  const routeFiles = expandRoutes(state.data, stateNavigator).map(compile);
+  const routeFiles = await Promise.all(expandRoutes(state.data, stateNavigator).map(compile));
 
   return { ...state, data: [stateFile, ...routeFiles] };
 }
 
-export function compileSite(state) {
+export async function compileSite(state) {
   return compileRoutes(state);
 }
