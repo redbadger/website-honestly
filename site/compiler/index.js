@@ -70,7 +70,7 @@ export const expandRoutes = (state, stateNavigator) => {
   return staticRoutes.concat(flattened);
 };
 
-async function compileRoutes(state) {
+function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
   const stateString = state.data ? JSON.stringify(state.data) : '{}';
@@ -86,7 +86,7 @@ async function compileRoutes(state) {
   };
   console.log(`Compiled ${stateFile.path}`); // eslint-disable-line no-console
 
-  const compile = async route => {
+  const compile = route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
@@ -120,11 +120,11 @@ async function compileRoutes(state) {
     return { body, path, contentType: 'text/html' };
   };
 
-  const routeFiles = await Promise.all(expandRoutes(state.data, stateNavigator).map(compile));
+  const routeFiles = expandRoutes(state.data, stateNavigator).map(compile);
 
   return { ...state, data: [stateFile, ...routeFiles] };
 }
 
-export async function compileSite(state) {
+export function compileSite(state) {
   return compileRoutes(state);
 }
