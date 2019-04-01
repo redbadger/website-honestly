@@ -1,10 +1,9 @@
 import crypto from 'crypto';
 import Helmet from 'react-helmet';
-
 import { renderToString } from 'react-dom/server';
 
 import createStateNavigator from '../routes';
-import layoutTemplate from '../index.ejs';
+import layoutTemplate from '../index.pug';
 import { cssPath, jsPath } from './asset-paths';
 
 const tracking = !!process.env.INSERT_TRACKING;
@@ -71,7 +70,7 @@ export const expandRoutes = (state, stateNavigator) => {
   return staticRoutes.concat(flattened);
 };
 
-export function compileRoutes(state) {
+async function compileRoutes(state) {
   const stateNavigator = createStateNavigator();
 
   const stateString = state.data ? JSON.stringify(state.data) : '{}';
@@ -87,7 +86,7 @@ export function compileRoutes(state) {
   };
   console.log(`Compiled ${stateFile.path}`); // eslint-disable-line no-console
 
-  const compile = route => {
+  const compile = async route => {
     const path = (process.env.URL_BASENAME || '') + route.filePath;
 
     const title = `${route.title} | ${TITLE_SUFFIX}`;
@@ -100,7 +99,7 @@ export function compileRoutes(state) {
     const meta = typeof window === 'undefined' ? Helmet.rewind().meta : null;
     const renderMs = Date.now() - renderStart;
 
-    const ejsStart = Date.now();
+    const renderTemplateStart = Date.now();
     const body = layoutTemplate({
       title,
       description,
@@ -111,17 +110,21 @@ export function compileRoutes(state) {
       meta,
       stateHash,
     });
-    const ejsMs = Date.now() - ejsStart;
-    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs}`); // eslint-disable-line no-console
+    const renderTemplate = Date.now() - renderTemplateStart;
+
+    // eslint-disable-next-line no-console
+    console.log(
+      `Compiled ${route.filePath} renderBody=${renderMs} renderTemplate=${renderTemplate}`,
+    );
 
     return { body, path, contentType: 'text/html' };
   };
 
-  const routeFiles = expandRoutes(state.data, stateNavigator).map(compile);
+  const routeFiles = await Promise.all(expandRoutes(state.data, stateNavigator).map(compile));
 
   return { ...state, data: [stateFile, ...routeFiles] };
 }
 
-export function compileSite(state) {
+export async function compileSite(state) {
   return compileRoutes(state);
 }
