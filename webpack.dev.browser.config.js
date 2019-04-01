@@ -28,7 +28,7 @@ const devAppConfig = webpackMerge(baseWebConfig, {
   plugins: [
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
-      template: './site/index.pug',
+      template: './site/index.ejs',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
