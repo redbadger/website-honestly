@@ -92,6 +92,10 @@ const baseConfig = {
           },
         ],
       },
+      {
+        test: /.pug$/,
+        use: 'pug-loader',
+      },
     ],
   },
 

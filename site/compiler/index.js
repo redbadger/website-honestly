@@ -1,10 +1,9 @@
 import crypto from 'crypto';
 import Helmet from 'react-helmet';
-import htmlnano from 'htmlnano';
 import { renderToString } from 'react-dom/server';
 
 import createStateNavigator from '../routes';
-import layoutTemplate from '../index.ejs';
+import layoutTemplate from '../index.pug';
 import { cssPath, jsPath } from './asset-paths';
 
 const tracking = !!process.env.INSERT_TRACKING;
@@ -100,8 +99,8 @@ async function compileRoutes(state) {
     const meta = typeof window === 'undefined' ? Helmet.rewind().meta : null;
     const renderMs = Date.now() - renderStart;
 
-    const ejsStart = Date.now();
-    const bodyRaw = layoutTemplate({
+    const renderTemplateStart = Date.now();
+    const body = layoutTemplate({
       title,
       description,
       tracking,
@@ -111,18 +110,14 @@ async function compileRoutes(state) {
       meta,
       stateHash,
     });
-    const ejsMs = Date.now() - ejsStart;
-
-    const minifyStart = Date.now();
-    const { html } = await htmlnano.process(bodyRaw, {
-      minifySvg: false, // SVGs are embedded as React components and we don't want to change the SVG markup compared to what the component renders
-    });
-    const minifyMs = Date.now() - minifyStart;
+    const renderTemplate = Date.now() - renderTemplateStart;
 
     // eslint-disable-next-line no-console
-    console.log(`Compiled ${route.filePath} render=${renderMs} ejs=${ejsMs} minify=${minifyMs}`);
+    console.log(
+      `Compiled ${route.filePath} renderBody=${renderMs} renderTemplate=${renderTemplate}`,
+    );
 
-    return { body: html, path, contentType: 'text/html' };
+    return { body, path, contentType: 'text/html' };
   };
 
   const routeFiles = await Promise.all(expandRoutes(state.data, stateNavigator).map(compile));
