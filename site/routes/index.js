@@ -1,51 +1,44 @@
 import React from 'react';
-import loadable from '@loadable/component';
 import { HTML5HistoryManager, StateNavigator } from 'navigation';
 
 import { routeDefinitions } from './definitions';
 
-const L = loadable(() => import('../layout'));
-const HomePage = loadable(() => import('../pages/home'));
-const NotFoundPage = loadable(() => import('../pages/not-found'));
-const ServerErrorPage = loadable(() => import('../pages/server-error'));
-const WhatWeDoPage = loadable(() => import('../pages/what-we-do'));
-const OfflinePage = loadable(() => import('../pages/offline'));
-const BrowserNotSupported = loadable(() => import('../pages/browser-not-supported'));
-const AboutUsPage = loadable(() => import('../pages/about-us'));
-const CookiePolicyPage = loadable(() => import('../pages/cookie-policy'));
-const PrivacyPolicyPage = loadable(() => import('../pages/privacy-policy'));
-const TermsAndConditions = loadable(() => import('../pages/terms-and-conditions'));
+import L from '../layout';
+import HomePage from '../pages/home';
+import NotFoundPage from '../pages/not-found';
+import ServerErrorPage from '../pages/server-error';
+import WhatWeDoPage from '../pages/what-we-do';
+import OfflinePage from '../pages/offline';
+import BrowserNotSupported from '../pages/browser-not-supported';
+import AboutUsPage from '../pages/about-us';
+import CookiePolicyPage from '../pages/cookie-policy';
+import PrivacyPolicyPage from '../pages/privacy-policy';
+import TermsAndConditions from '../pages/terms-and-conditions';
 
-const JoinUsPage = loadable(() => import('../pages/join-us'));
-const JobPage = loadable(() => import('../pages/job'));
-const Events = loadable(() => import('../pages/events'));
-const EventPage = loadable(() => import('../pages/event'));
-const OurWorkPage = loadable(() => import('../pages/our-work'));
-const MeetOurTeam = loadable(() => import('../pages/meet-our-team'));
-const BadgerProfile = loadable(() => import('../pages/badger-profile'));
-const Technology = loadable(() => import('../pages/technology'));
+import JoinUsPage from '../pages/join-us';
+import JobPage from '../pages/job';
+import Events from '../pages/events';
+import EventPage from '../pages/event';
+import OurWorkPage from '../pages/our-work';
+import MeetOurTeam from '../pages/meet-our-team';
+import BadgerProfile from '../pages/badger-profile';
+import Technology from '../pages/technology';
 
-const BankCaseStudy = loadable(() => import('../pages/our-work/case-study/bank'));
-const BMWCaseStudy = loadable(() => import('../pages/our-work/case-study/bmw'));
-const BBCCaseStudy = loadable(() => import('../pages/our-work/case-study/bbc'));
-const CamdenMarketCaseStudy = loadable(() => import('../pages/our-work/case-study/camden-market'));
-const CarTrawlerCaseStudy = loadable(() => import('../pages/our-work/case-study/car-trawler'));
-const CarTrawlerMyAccountCaseStudy = loadable(() =>
-  import('../pages/our-work/case-study/car-trawler-my-account'),
-);
-const FinancialTimesCaseStudy = loadable(() => import('../pages/our-work/case-study/ft'));
-const FMTeaCaseStudy = loadable(() =>
-  import('../pages/our-work/case-study/fortnum-and-mason-digital-transformation'),
-);
-const FortnumAndMasonCaseStudy = loadable(() =>
-  import('../pages/our-work/case-study/fortnum-and-mason'),
-);
-const HallerCaseStudy = loadable(() => import('../pages/our-work/case-study/haller'));
-const PrideCaseStudy = loadable(() => import('../pages/our-work/case-study/pride'));
-const FidelityCaseStudy = loadable(() => import('../pages/our-work/case-study/fidelity'));
-const RetailerCaseStudy = loadable(() => import('../pages/our-work/case-study/retailer'));
-const SkyCaseStudy = loadable(() => import('../pages/our-work/case-study/sky'));
-const SkyCMSCaseStudy = loadable(() => import('../pages/our-work/case-study/sky-cms'));
+import BankCaseStudy from '../pages/our-work/case-study/bank';
+import BMWCaseStudy from '../pages/our-work/case-study/bmw';
+import BBCCaseStudy from '../pages/our-work/case-study/bbc';
+import CamdenMarketCaseStudy from '../pages/our-work/case-study/camden-market';
+import CarTrawlerCaseStudy from '../pages/our-work/case-study/car-trawler';
+import CarTrawlerMyAccountCaseStudy from '../pages/our-work/case-study/car-trawler-my-account';
+import FinancialTimesCaseStudy from '../pages/our-work/case-study/ft';
+import FMTeaCaseStudy from '../pages/our-work/case-study/fortnum-and-mason-digital-transformation';
+import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-mason';
+import HallerCaseStudy from '../pages/our-work/case-study/haller';
+import PrideCaseStudy from '../pages/our-work/case-study/pride';
+import FidelityCaseStudy from '../pages/our-work/case-study/fidelity';
+import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
+import SkyCaseStudy from '../pages/our-work/case-study/sky';
+import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
 
 const componentMap = {
   aboutUsPage: AboutUsPage,
