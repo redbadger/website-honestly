@@ -13,15 +13,6 @@ head
         link(rel='icon' href=`/assets-honestly/favicons/favicon-${size}.png` type='image/png' sizes=size)
     link(rel='manifest' href='/manifest.json')
     link(rel='stylesheet' type='text/css' href='https://cloud.typography.com/7838134/6842972/css/fonts.css')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.17/ua-parser.min.js' charset='utf-8')
-    script(type='text/javascript').
-        var uaSniffer = new UAParser();
-        var browser = uaSniffer.getBrowser();
-        if (window.location.pathname !== '/#{process.env.URL_BASENAME || ''}browser-not-supported/' ) {
-            if (browser.name === 'IE' && browser.major < 10 ) {
-                window.location.pathname = '/#{process.env.URL_BASENAME || ''}browser-not-supported/';
-            }
-        }
     title #{title}
     if description
         meta(name="description" content=description)
@@ -156,3 +147,13 @@ body
                 background-color: #FFD811;
             }
             /* End of HubSpot Cookie Banner CSS overrides */
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.19/ua-parser.min.js' charset='utf-8' integrity="sha256-/44/B9miLtjvWgFXi6nGKvCzVboFK38jyl5IPsIgS0Y=" crossorigin="anonymous")
+    script.
+        var uaSniffer = new UAParser();
+        var browser = uaSniffer.getBrowser();
+        if (window.location.pathname !== '/#{process.env.URL_BASENAME || ''}browser-not-supported/' ) {
+            if (browser.name === 'IE' && browser.major < 10 ) {
+                window.location.pathname = '/#{process.env.URL_BASENAME || ''}browser-not-supported/';
+            }
+        }
