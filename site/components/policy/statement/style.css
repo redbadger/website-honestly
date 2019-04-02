@@ -4,17 +4,17 @@
 }
 
 .numberContainer {
-  margin-right: 30px;
+  composes: numberContainer from '../policy-box/style.css';
 }
 
 .statementNumber {
-  composes: number from "../policy-box/style.css";
+  composes: number from '../policy-box/style.css';
   border-bottom: 0;
   top: 0;
 }
 
 .policyText {
-  composes: policyText from "../policy-box/style.css";
+  composes: policyText from '../policy-box/style.css';
 }
 
 .policyText p b {
@@ -22,6 +22,5 @@
 }
 
 .policyList {
-  composes: policyList from "../policy-box/style.css";
+  composes: policyList from '../policy-box/style.css';
 }
-

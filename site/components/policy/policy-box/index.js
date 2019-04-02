@@ -19,7 +19,7 @@ const padNumber = (n: number) => (n < 10 ? '0' + n : +n);
 
 const PolicyBox = ({ heading, body, statements = [], policyIndex }: PolicyT) => {
   const hasStatements = statements.length > 0;
-  const wrapperClass = hasStatements ? '' : styles.policyText;
+  const wrapperClass = hasStatements ? styles.policyHeader : styles.policyText;
 
   return (
     <li>
