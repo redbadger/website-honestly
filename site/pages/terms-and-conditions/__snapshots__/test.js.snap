@@ -29,7 +29,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -155,7 +155,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -277,7 +277,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -365,7 +365,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -435,7 +435,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -527,7 +527,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -625,7 +625,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -783,7 +783,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -853,7 +853,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -929,7 +929,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -1133,7 +1133,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -1188,7 +1188,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -1324,7 +1324,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -1372,7 +1372,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -1464,7 +1464,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -1628,7 +1628,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
@@ -1698,7 +1698,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
           </span>
         </div>
         <div
-          class=""
+          class="policyHeader"
         >
           <h2
             class="fontM2 mb10"
