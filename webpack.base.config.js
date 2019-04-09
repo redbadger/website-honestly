@@ -11,6 +11,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const sharpImageLoader = require('responsive-loader/sharp');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.txt';
@@ -29,12 +30,16 @@ function mediaFilesLoaders(options = {}) {
   return [
     {
       test: /\.(jpe?g|png)$/i,
-      loader: 'responsive-loader',
-      options: {
-        name,
-        publicPath,
-        adapter: sharpImageLoader,
-      },
+      use: [
+        {
+          loader: 'responsive-loader',
+          options: {
+            name,
+            publicPath,
+            adapter: sharpImageLoader,
+          },
+        },
+      ],
     },
     {
       test: /\.(gif|eot|ttf|woff|woff2|mp4|webm)$/,
@@ -104,14 +109,6 @@ const baseConfig = {
         ],
       },
       {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'svg-inline-loader',
-          },
-        ],
-      },
-      {
         test: /.pug$/,
         use: 'pug-loader',
       },
@@ -141,6 +138,18 @@ exports.baseWebConfig = webpackMerge(baseConfig, {
       { from: 'assets/txt', to: 'txt/' },
       { from: 'assets/fonts', to: 'assets-honestly/' },
     ]),
+    // responsive-loader currently optimises jpegs but not other image types:
+    // https://github.com/herrstucki/responsive-loader/issues/63
+    new ImageminPlugin({
+      test: /\.(png|gif)$/,
+      disable: devMode,
+      optipng: {
+        optimizationLevel: 7,
+      },
+      gifsicle: {
+        optimizationLevel: 3,
+      },
+    }),
   ],
 });
 

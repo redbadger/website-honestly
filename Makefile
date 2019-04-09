@@ -149,24 +149,6 @@ edit-secrets: keyrings update-secrets ## Edit .env file (get latest -> decrypt -
 	mv keyrings/files/.env .env
 	@$(PRINT_OK)
 
-compress-assets: ## Compress assets. What did you expect? :)
-	find site -type f \
-			\( \
-				-name '*.png' \
-				-o -name '*.jpg' \
-				-o -name '*.jpeg' \
-			\) \
-			-exec sh -c '\
-				echo {} \
-				&& cat {} | yarn imagemin > {}.min \
-				&& mv {}.min {}' \;
-	find site -type f \
-		-name '*.svg' \
-		-exec sh -c '\
-			echo {} \
-			&& yarn svgo {} -q --enable=removeTitle' \;
-	@$(PRINT_OK)
-
 dist/services.zip: dist/services
 	cd dist/services \
 	&& zip -r ../services.zip *
