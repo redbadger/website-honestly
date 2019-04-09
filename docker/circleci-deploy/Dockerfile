@@ -14,7 +14,7 @@ RUN apk add --no-cache ca-certificates && \
   && rm glibc-$GLIBC_VERSION.apk /etc/apk/keys/sgerrand.rsa.pub \
   && apk del --no-cache .build-deps-glibc
 
-RUN apk add --no-cache make git openssh zip curl libpng libpng-dev
+RUN apk add --no-cache make git openssh zip curl libpng zlib
 
 # Install aws cli
 RUN apk add --no-cache \
