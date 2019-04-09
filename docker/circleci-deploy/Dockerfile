@@ -14,7 +14,7 @@ RUN apk add --no-cache ca-certificates && \
   && rm glibc-$GLIBC_VERSION.apk /etc/apk/keys/sgerrand.rsa.pub \
   && apk del --no-cache .build-deps-glibc
 
-RUN apk add --no-cache make git openssh zip curl
+RUN apk add --no-cache make git openssh zip curl libpng
 
 # Install aws cli
 RUN apk add --no-cache \
@@ -22,12 +22,11 @@ RUN apk add --no-cache \
   py-pip \
   groff \
   less \
-  mailcap \
-  && \
-  pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic
+  mailcap && \
+  pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
+  apk -v --purge del py-pip
+
 
 # Install code climate reporter
-RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-RUN chmod +x ./cc-test-reporter
-
-RUN apk -v --purge del py-pip
+RUN curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter \
+  && chmod +x ./cc-test-reporter
