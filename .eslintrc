@@ -16,6 +16,13 @@
     "System": true,
     "globals": true
   },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.browser.config.js"
+      }
+    }
+  },
   "parser": "babel-eslint",
   "plugins": ["flowtype"],
   "rules": {

@@ -7,7 +7,7 @@ import Image from '../../../components/image';
 import bigParty1x from './png/big-party.png';
 import bigParty2x from './png/big-party@2x.png';
 import bigParty3x from './png/big-party@3x.png';
-import crossFunctionalBadgers from './jpg/cross-functional-badgers.jpg';
+import crossFunctionalBadgers from './jpg/cross-functional-badgers.jpg?min=320&max=1600&steps=6';
 
 const content = [
   {
@@ -36,10 +36,12 @@ const content = [
 const CrossFunctionalSlice = () => (
   <section className={styles.crossFunctionalSlice}>
     <div className={styles.photoContainer}>
-      <Image
-        src={crossFunctionalBadgers}
-        alt="a photo showing Red Badger employees working in a cross functional team"
+      <img
+        alt="Red Badger employees working in a cross functional team"
         className={styles.image}
+        src={crossFunctionalBadgers}
+        srcSet={crossFunctionalBadgers.srcSet}
+        sizes="(min-width: 1200px) 1200px, 100vw"
       />
     </div>
     <section className={styles.outerHeadingContainer}>

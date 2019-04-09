@@ -10,28 +10,47 @@ const webpackMerge = require('webpack-merge').smart;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const sharpImageLoader = require('responsive-loader/sharp');
 
 const publicPath = `/${process.env.URL_BASENAME || ''}`;
 const robots = process.env.ALLOW_ROBOTS ? 'robots-allow.txt' : 'robots-disallow.txt';
 
 const devMode = process.env.NODE_ENV !== 'production';
 
-function mediaFilesLoader(extraOptions) {
-  const defaultOptions = {
-    name: 'assets-honestly/[name]-[hash:base64:5].[ext]',
-    publicPath,
-  };
+const pathToFolder = folder => path.resolve(__dirname, folder);
 
-  return {
-    test: /\.(png|jpe?g|gif|eot|ttf|woff|woff2|mp4|webm)$/,
-    exclude: [path.resolve(__dirname, 'dist'), path.resolve(__dirname, 'node_modules')],
-    use: [
-      {
-        loader: 'file-loader',
-        options: Object.assign(defaultOptions, extraOptions),
+function mediaFilesLoaders(options = {}) {
+  const { emitFile = true } = options;
+
+  const name = 'assets-honestly/[name]-[hash:base64:5].[ext]';
+
+  const exclude = ['dist', 'node_modules'].map(pathToFolder);
+
+  return [
+    {
+      test: /\.(jpe?g|png)$/i,
+      loader: 'responsive-loader',
+      options: {
+        name,
+        publicPath,
+        adapter: sharpImageLoader,
       },
-    ],
-  };
+    },
+    {
+      test: /\.(gif|eot|ttf|woff|woff2|mp4|webm)$/,
+      exclude,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name,
+            publicPath,
+            emitFile,
+          },
+        },
+      ],
+    },
+  ];
 }
 
 const baseConfig = {
@@ -40,7 +59,7 @@ const baseConfig = {
   mode: 'development',
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: pathToFolder('dist'),
     filename: '[name].js',
     chunkFilename: '[name].js',
     publicPath,
@@ -68,14 +87,14 @@ const baseConfig = {
       },
       {
         test: /\.js$/,
-        exclude: path.resolve(__dirname, 'node_modules'),
+        exclude: pathToFolder('node_modules'),
         use: [
           {
             loader: 'babel-loader',
           },
         ],
       },
-      mediaFilesLoader(),
+      ...mediaFilesLoaders(),
       {
         test: /\.ejs/,
         use: [
@@ -127,6 +146,6 @@ exports.baseWebConfig = webpackMerge(baseConfig, {
 
 exports.baseServiceConfig = webpackMerge(baseConfig, {
   module: {
-    rules: [mediaFilesLoader({ emitFile: false })],
+    rules: mediaFilesLoaders({ emitFile: false }),
   },
 });

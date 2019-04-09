@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.css';
-import arrowImg from './arrow.png';
+import arrowImg from './arrow.png?min=60&max=549&steps=6';
 
 const headerSlice = () => {
   return (
@@ -18,12 +18,12 @@ const headerSlice = () => {
                 <br />
                 right thing{' '}
               </div>
-              <img alt="" className={styles.arrowDown} src={arrowImg} />
+              <Arrow className={styles.arrowDown} />
             </div>
           </div>
           <div className={styles.alignRight} role="presentation">
             <div className={styles.flexibleLower}>
-              <img alt="" className={styles.arrowUp} src={arrowImg} />
+              <Arrow className={styles.arrowUp} />
               <div className={styles.pageHeaderLower}>
                 {/* Space added so that h1 can be crawled correctly */}
                 Do the <br />
@@ -42,5 +42,15 @@ const headerSlice = () => {
     </section>
   );
 };
+
+const Arrow = ({ className }) => (
+  <img
+    className={className}
+    sizes="(min-width: 980px) 183px, (min-width: 690px) 140px, 60px"
+    srcSet={arrowImg.srcSet}
+    src={arrowImg}
+    alt=""
+  />
+);
 
 export default headerSlice;

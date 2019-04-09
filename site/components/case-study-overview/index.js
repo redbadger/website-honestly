@@ -5,8 +5,8 @@ import moment from 'moment';
 import ReactGA from 'react-ga';
 
 import styles from './style.css';
-import fortnumPNG from './PNG/fortnum.png';
-import financialTimesPNG from './PNG/financialtimes.png';
+import fortnumPNG from './PNG/fortnum.png?sizes[]=180&sizes[]=360&sizes[]=540&sizes[]=288&sizes[]=576&sizes[]=864';
+import financialTimesPNG from './PNG/financialtimes.png?sizes[]=169&sizes[]=338&sizes[]=507&sizes[]=270&sizes[]=540&sizes[]=810';
 
 import Link from '../link';
 import CaseStudyCompanyLogos from '../case-study-company-logos';
@@ -59,7 +59,13 @@ const CaseStudyOverview = () => (
             </span>
           </span>
           <span className={styles.logoContainer}>
-            <img alt="The logo of Fortnum & Masons" src={fortnumPNG} className={styles.logo} />
+            <img
+              alt="The logo of Fortnum &amp; Masons"
+              src={fortnumPNG}
+              sizes="(min-width: 980px) 288px, 180px"
+              srcSet={fortnumPNG.srcSet}
+              className={styles.logo}
+            />
           </span>
         </a>
         <a
@@ -126,6 +132,8 @@ const CaseStudyOverview = () => (
             <img
               alt="The logo of the Financial Times"
               src={financialTimesPNG}
+              sizes="(min-width: 980px) 270px, 169px"
+              srcSet={financialTimesPNG.srcSet}
               className={styles.logo}
             />
           </span>

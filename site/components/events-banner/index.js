@@ -40,9 +40,12 @@ export default function EventsBanner({
         rel="noopener noreferrer"
         onClick={trackAnalytics(campaignName)}
       >
-        <img src={desktopURL} alt={altText} className={styles.eventsDesktopBanner} />
-        <img src={tabletURL} alt={altText} className={styles.eventsTabletBanner} />
-        <img src={mobileURL} alt={altText} className={styles.eventsMobileBanner} />
+        <picture>
+          <source srcSet={desktopURL} media="(min-width: 980px)" />
+          <source srcSet={tabletURL} media="(min-width: 690px)" />
+          <source srcSet={mobileURL} />
+          <img src={desktopURL} alt={altText} className={styles.image} />
+        </picture>
       </a>
     </div>
   );

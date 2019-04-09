@@ -4,6 +4,8 @@
 .*/node_modules/youtube-player/.*
 
 [options]
+; images with options for responsive loader: https://github.com/herrstucki/responsive-loader
+module.name_mapper='^\(.+\)\.\(jpe?g\|png\)\?.+$' -> '<PROJECT_ROOT>/flow-stubs/responsive-loader-image-stub'
 module.name_mapper.extension='ejs' -> 'empty/function'
 module.name_mapper.extension='md' -> 'empty/function'
 suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
