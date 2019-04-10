@@ -144,7 +144,7 @@ exports.baseWebConfig = webpackMerge(baseConfig, {
       test: /\.(png|gif)$/,
       disable: devMode,
       optipng: {
-        optimizationLevel: 7,
+        optimizationLevel: 5,
       },
       gifsicle: {
         optimizationLevel: 3,

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+SHELL=/bin/bash
 BIN=./bin
 LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
 WEBPACK=yarn webpack --bail
