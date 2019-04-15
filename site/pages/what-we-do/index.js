@@ -23,32 +23,14 @@ function CaseStudies() {
       </div>
 
       <div className={styles.caseStudyContainer}>
-        <Link className={styles.caseStudyContent} to="fortnumAndMasonCaseStudy">
-          <div className={styles.imageWrapper}>
-            <img alt="" src={fortnumJpg} />
-          </div>
-          <div className={styles.caseStudyTextContainer}>
-            <div className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}>
-              Fortnum & Mason
-            </div>
-            <div className={styles.caseStudyTitleContainer}>
-              <h3 className={styles.caseStudyTitle}>Elegant e-commerce in eight months</h3>
-            </div>
-            <p className={styles.caseStudyDescription}>
-              Improving online and mobile conversion rates on the new fortnumandmason.com site with
-              great customer experience and innovative tech.
-            </p>
-          </div>
-        </Link>
-      </div>
-
-      <div className={cx('caseStudyContainer', 'inverse')}>
         <Link className={styles.caseStudyContent} to="bankCaseStudy">
-          <div className={cx('imageWrapper', 'bank')}>
+          <div className={styles.imageWrapper}>
             <img alt="" src={bankGif} />
           </div>
           <div className={styles.caseStudyTextContainer}>
-            <div className={styles.caseStudyCompany}>Financial services</div>
+            <div className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}>
+              Financial services
+            </div>
             <div className={styles.caseStudyTitleContainer}>
               <h3 className={styles.caseStudyTitle}>Digital transformation in retail banking</h3>
             </div>
@@ -57,6 +39,24 @@ function CaseStudies() {
               capability and changed the culture to increase business efficiency in one of the
               world’s largest banks.
             </div>
+          </div>
+        </Link>
+      </div>
+
+      <div className={cx('caseStudyContainer', 'inverse')}>
+        <Link className={styles.caseStudyContent} to="fortnumAndMasonCaseStudy">
+          <div className={cx('imageWrapper', 'bank')}>
+            <img alt="" src={fortnumJpg} />
+          </div>
+          <div className={styles.caseStudyTextContainer}>
+            <div className={styles.caseStudyCompany}>Fortnum & Mason</div>
+            <div className={styles.caseStudyTitleContainer}>
+              <h3 className={styles.caseStudyTitle}>Elegant e-commerce in eight months</h3>
+            </div>
+            <p className={styles.caseStudyDescription}>
+              Improving online and mobile conversion rates on the new fortnumandmason.com site with
+              great customer experience and innovative tech.
+            </p>
           </div>
         </Link>
       </div>
