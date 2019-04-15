@@ -13,13 +13,13 @@ exports[`site/pages/home/homepage-top-slice/ renders correctly 1`] = `
       <h1
         class="badgerSlogan"
       >
-        Let’s make
-      </h1>
-      <br />
-      <h1
-        class="badgerSlogan"
-      >
-        things better
+        <span>
+          Let’s make
+        </span>
+         
+        <span>
+          things better
+        </span>
       </h1>
     </div>
     <p

@@ -13,9 +13,9 @@ const HomepageTopSlice = () => {
     <section className={styles.homepageTopSlice}>
       <div className={styles.sliceContainer}>
         <div className={styles.sloganWrapper}>
-          <h1 className={styles.badgerSlogan}>Let’s make</h1>
-          <br />
-          <h1 className={styles.badgerSlogan}>things better</h1>
+          <h1 className={styles.badgerSlogan}>
+            <span>Let’s make</span> <span>things better</span>
+          </h1>
         </div>
         <p className={cx('sloganDescription', 'fadeInUp')}>
           <Link to="whatWeDoPage" className={styles.sloganLink}>

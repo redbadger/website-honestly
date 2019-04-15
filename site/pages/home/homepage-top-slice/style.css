@@ -24,7 +24,8 @@
 .badgerSlogan {
   composes: fontXL from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   border-bottom: 2px solid badgerWhite;
 }
 
@@ -58,10 +59,6 @@
 
   .sloganWrapper {
     margin-bottom: 30px;
-  }
-
-  .badgerSlogan {
-    display: inline-block;
   }
 }
 
