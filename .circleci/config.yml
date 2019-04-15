@@ -2,31 +2,31 @@ version: 2
 jobs:
   build:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
 
     steps:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+            - node_modules-v7-{{ checksum "yarn.lock" }}
 
       - run:
           name: Install Node modules
           command: yarn install --frozen-lockfile
 
       - save_cache:
-          key: node_modules-v6-{{ checksum "yarn.lock" }}
+          key: node_modules-v7-{{ checksum "yarn.lock" }}
           paths:
             - ./node_modules
 
   validate_formatting:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+            - node_modules-v7-{{ checksum "yarn.lock" }}
 
       - run:
           name: Validate formatting
@@ -34,12 +34,12 @@ jobs:
 
   lint:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+            - node_modules-v7-{{ checksum "yarn.lock" }}
 
       - run:
           name: Lint code
@@ -47,12 +47,12 @@ jobs:
 
   validate_types:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+            - node_modules-v7-{{ checksum "yarn.lock" }}
 
       - run:
           name: Validate types
@@ -60,12 +60,12 @@ jobs:
 
   test:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+            - node_modules-v7-{{ checksum "yarn.lock" }}
 
       - run:
           name: Notify Code Climate of build
@@ -87,12 +87,12 @@ jobs:
 
   preview:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+            - node_modules-v7-{{ checksum "yarn.lock" }}
 
       - run:
           name: Deploy branch
@@ -100,12 +100,12 @@ jobs:
 
   deploy_staging:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v6-{{ checksum "yarn.lock" }}
+            - node_modules-v7-{{ checksum "yarn.lock" }}
 
       - run:
           name: Deploy to staging
@@ -113,7 +113,7 @@ jobs:
 
   deploy_production:
     docker:
-      - image: redbadger/website-honestly-deploy:11
+      - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
 

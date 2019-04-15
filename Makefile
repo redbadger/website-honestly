@@ -1,5 +1,6 @@
 #!/bin/sh
 
+SHELL=/bin/bash
 BIN=./bin
 LOAD_ENV=source bin/load-dotenv.sh && source bin/construct-additional-env.sh
 WEBPACK=yarn webpack --bail
@@ -147,24 +148,6 @@ edit-secrets: keyrings update-secrets ## Edit .env file (get latest -> decrypt -
 	&& git push origin website-honestly
 	blackbox_edit_start keyrings/files/.env
 	mv keyrings/files/.env .env
-	@$(PRINT_OK)
-
-compress-assets: ## Compress assets. What did you expect? :)
-	find site -type f \
-			\( \
-				-name '*.png' \
-				-o -name '*.jpg' \
-				-o -name '*.jpeg' \
-			\) \
-			-exec sh -c '\
-				echo {} \
-				&& cat {} | yarn imagemin > {}.min \
-				&& mv {}.min {}' \;
-	find site -type f \
-		-name '*.svg' \
-		-exec sh -c '\
-			echo {} \
-			&& yarn svgo {} -q --enable=removeTitle' \;
 	@$(PRINT_OK)
 
 dist/services.zip: dist/services

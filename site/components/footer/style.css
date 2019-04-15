@@ -158,29 +158,17 @@
   margin: 15px 20px;
 }
 
-.footerMap {
-  display: none;
-}
-
 .mapPin {
   width: 22px;
   height: 30px;
 }
 
 @media screen and (min-width: 820px) {
-  .footerMap {
-    position: absolute;
-    width: 465px;
-    height: 415px;
-    top: 0;
-    right: 35px;
-    display: block;
-    overflow: hidden;
-    margin-right: 30px;
-  }
-
-  .footerMap svg {
-    padding-top: 1px;
+  .footerContainer {
+    background-image: url('./PNG/map.png');
+    background-size: 465px 415px;
+    background-position: right 12px top 10px;
+    background-repeat: no-repeat;
   }
 
   .footer {
@@ -203,11 +191,6 @@
 }
 
 @media largeScreen {
-  .footerMap {
-    top: 10px;
-    right: -18px;
-  }
-
   .footer {
     display: flex;
   }

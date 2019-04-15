@@ -1,43 +1,26 @@
-/* Refactored from Website Next 
+/* Refactored from Website Next
 *  TODO: Stop using variables/breakpoints
 */
 
-@value smallScreenMax, mediumScreenOnly, largeScreen from "../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .bannerContainer {
   text-align: center;
   margin-top: 20px;
 }
 
-.eventsDesktopBanner {
-  width: 920px;
-}
-
-.eventsTabletBanner {
-  width: 768px;
-}
-
-.eventsMobileBanner {
+.image {
   width: 320px;
 }
 
-@media smallScreenMax {
-  .eventsDesktopBanner,
-  .eventsTabletBanner {
-    display: none;
-  }
-}
-
-@media mediumScreenOnly {
-  .eventsMobileBanner,
-  .eventsDesktopBanner {
-    display: none;
+@media mediumScreen {
+  .image {
+    width: 690px;
   }
 }
 
 @media largeScreen {
-  .eventsMobileBanner,
-  .eventsTabletBanner {
-    display: none;
+  .image {
+    width: 920px;
   }
 }

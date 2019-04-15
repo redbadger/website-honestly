@@ -17,13 +17,13 @@
   color: badgerWhite;
   text-align: left;
   position: relative;
-  top: 1px; /* this fixes a thin white line appearing just above the cutout */ 
+  top: 1px; /* this fixes a thin white line appearing just above the cutout */
   overflow: hidden;
 }
 
 .crossFunctionalSlice:before {
   padding-left: 2px;
-  content: "";
+  content: '';
   position: absolute;
   left: -6px;
   width: 50%;
@@ -51,8 +51,8 @@
 
 .heading {
   composes: widthContainer;
-  composes: serif from "../../../css/typography/_fonts.css";
-  composes: fontL from "../../../css/typography/_fonts.css";
+  composes: serif from '../../../css/typography/_fonts.css';
+  composes: fontL from '../../../css/typography/_fonts.css';
   font-weight: bold;
   text-align: center;
   max-width: 800px;
@@ -112,7 +112,7 @@
     margin: 10px auto 0;
   }
 
-  .photoContainer picture {
+  .photoContainer .image {
     position: relative;
     top: -130px;
   }
@@ -137,7 +137,7 @@
     max-width: 1200px;
   }
 
-  .photoContainer picture {
+  .photoContainer .image {
     position: relative;
     top: -150px;
   }

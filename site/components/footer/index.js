@@ -6,7 +6,6 @@ import Link from '../link';
 import logAmplitudeEvent from '../../tracking/amplitude';
 
 /* Icons */
-import mapPNG from './PNG/map.png';
 import GitHub from '../icons/github';
 import Twitter from '../icons/twitter';
 import Slack from '../icons/slack';
@@ -22,12 +21,6 @@ const cx = classnames.bind(styles);
 const Footer = () => (
   <footer role="contentinfo" className={styles.footer}>
     <div className={styles.footerContainer}>
-      <img
-        role="presentation"
-        alt="Map of Red Badger office"
-        src={mapPNG}
-        className={styles.footerMap}
-      />
       <div className={styles.footerSections}>
         <nav className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>

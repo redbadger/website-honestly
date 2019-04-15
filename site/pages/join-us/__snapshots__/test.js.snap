@@ -1167,6 +1167,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
       <img
         alt="Awards"
         class="awardsImage"
+        sizes="(min-width: 1440px) 1440px, 100vw"
         src="awards-april-2018.jpg"
       />
     </div>

@@ -137,8 +137,24 @@ We use AWS CloudWatch for monitoring our staging and prod lambdas; all alarms sh
 
 ## Assets
 
-Any static assets committed to the repo should be compressed first. There is a
-`make compress-assets` command that will do this for common image formats.
+SVGs can be just inlined as JSX but they should be optimised first, [SVGOMG](https://jakearchibald.github.io/svgomg/) is a really handy tool for this.
+
+[Responsive loader](https://github.com/herrstucki/responsive-loader#responsive-loader) can be used to create an [`srcSet` attribute](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/) with multiple sizes of an image (so that appopriately sized images can be served to mobile, tablet and desktop devices for improved performance). See the [plugin’s options](https://github.com/herrstucki/responsive-loader#options) for more details. Example usage:
+
+```js
+import badgers from './badgers.jpeg?min=320&max=1600&steps=6';
+
+const image = (
+  <img
+    src={badgers}
+    srcSet={badgers.srcSet}
+    sizes="(min-width: 1200px) 1200px, 100vw"
+    alt="Badgers working in a team"
+  />
+);
+```
+
+Images are automatically optimised by [imagemin-webpack-plugin](https://www.npmjs.com/package/imagemin-webpack-plugin) in production.
 
 ## Blog
 
