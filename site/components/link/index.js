@@ -37,6 +37,7 @@ export default function Link(props: LinkProps) {
       stateKey={to}
       className={hasActiveChild(stateNavigator, to) ? props.activeCssClass : ''}
       navigating={() => props.target !== '_blank'}
+      rel={props.target === '_blank' ? 'noopener noreferrer' : null}
       {...rest}
     >
       {props.children}

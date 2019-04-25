@@ -92,5 +92,17 @@ describe('components/link', () => {
 
       link.unmount();
     });
+
+    it('adds a `rel` attribute if `target` is set to `_blank`', () => {
+      const link = render(
+        <Context stateNavigator={mockNavigator('bar')}>
+          <Link to="foo" target="_blank">
+            Hello
+          </Link>
+        </Context>,
+      );
+
+      expect(link.attr('rel')).toEqual('noopener noreferrer');
+    });
   });
 });
