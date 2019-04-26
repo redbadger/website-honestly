@@ -1,159 +1,164 @@
 doctype html
-head
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(name='format-detection' content='telephone=no')
-    meta(name='msapplication-TileColor' content='#fc1d42')
-    meta(name='theme-color' content='#212121')
-    meta(name='apple-mobile-web-app-status-bar-style' content='#212121')
-    meta(name='msapplication-TileImage' content='/assets-honestly/favicons/mstile-144x144.png')
-    each size in ['57x57', '60x60', '72x72', '76x76', '114x114', '120x120', '144x144', '152x152', '180x180']
-        link(rel='apple-touch-icon' href=`/assets-honestly/favicons/apple-touch-icon-${size}.png` type='image/png' sizes=size)
-    each size in ['96x96', '192x192', '16x16', '32x32', '194x194']
-        link(rel='icon' href=`/assets-honestly/favicons/favicon-${size}.png` type='image/png' sizes=size)
-    link(rel='manifest' href='/manifest.json')
-    link(rel='stylesheet' href='https://cloud.typography.com/7838134/6842972/css/fonts.css')
-    title #{title}
-    if description
-        meta(name="description" content=description)
-    if meta
-        //- Include raw html for meta tags:
-        .
-            !{meta}
-    if cssPath
-        link(rel="stylesheet" href=cssPath charset="utf-8")
+html(lang='en-GB')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(name='format-detection' content='telephone=no')
+        meta(name='msapplication-TileColor' content='#fc1d42')
+        meta(name='theme-color' content='#212121')
+        meta(name='apple-mobile-web-app-status-bar-style' content='#212121')
+        meta(name='msapplication-TileImage' content='/assets-honestly/favicons/mstile-144x144.png')
+        each size in ['57x57', '60x60', '72x72', '76x76', '114x114', '120x120', '144x144', '152x152', '180x180']
+            link(rel='apple-touch-icon' href=`/assets-honestly/favicons/apple-touch-icon-${size}.png` type='image/png' sizes=size)
+        each size in ['96x96', '192x192', '16x16', '32x32', '194x194']
+            link(rel='icon' href=`/assets-honestly/favicons/favicon-${size}.png` type='image/png' sizes=size)
+        link(rel='manifest' href='/manifest.json')
+        link(rel='stylesheet' href='https://cloud.typography.com/7838134/6842972/css/fonts.css')
+        title #{title}
+        if description
+            meta(name="description" content=description)
+        if meta
+            //- Include raw html for meta tags:
+            .
+                !{meta}
+        if cssPath
+            link(rel="stylesheet" href=cssPath charset="utf-8")
 
-    script.
-        /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-        !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
-        /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-        !function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(t){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var o=t[n];"preload"===o.rel&&"style"===o.getAttribute("as")&&(e.loadCSS(o.href,o,o.getAttribute("media")),o.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);
+        script.
+            /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+            !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+            /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+            !function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(t){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var o=t[n];"preload"===o.rel&&"style"===o.getAttribute("as")&&(e.loadCSS(o.href,o,o.getAttribute("media")),o.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);
 
-    //- Facebook Pixel Code
-    script.
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '127689627854077');
-        fbq('track', 'PageView');
-    noscript
-        img(height="1" width="1" src="https://www.facebook.com/tr?id=127689627854077&ev=PageView&noscript=1")
-    //- End Facebook Pixel Code
+        //- Facebook Pixel Code
+        script.
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '127689627854077');
+            fbq('track', 'PageView');
+        //- End Facebook Pixel Code
 
-    //- Begin LinkedIn Pixel Code
-    script.
-        _linkedin_data_partner_id = "103577";
-        (function(){var s = document.getElementsByTagName("script")[0];
-        var b = document.createElement("script"); b.type = "text/javascript";b.async = true;
-        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-        s.parentNode.insertBefore(b, s);})();
-    noscript
-        img(height='1' width='1' style='display:none;' alt='' src='https://dc.ads.linkedin.com/collect/?pid=103577&fmt=gif')
-    //- End LinkedIn Pixel Code
+        //- Begin LinkedIn Pixel Code
+        script.
+            _linkedin_data_partner_id = "103577";
+            (function(){var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script"); b.type = "text/javascript";b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);})();
+        //- End LinkedIn Pixel Code
 
-    //- Begin Amplitude Tracking Code
-    script.
-        (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
-        ;r.type="text/javascript";r.async=true
-        ;r.src="https://cdn.amplitude.com/libs/amplitude-4.2.1-min.gz.js"
-        ;r.onload=function(){if(e.amplitude.runQueuedFunctions){
-        e.amplitude.runQueuedFunctions()}else{
-        console.log("[Amplitude] Error: could not load SDK")}}
-        ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
-        ;function s(e,t){e.prototype[t]=function(){
-        this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
-        var o=function(){this._q=[];return this}
-        ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
-        ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
-        ;return this}
-        ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
-        ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
-        ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
-        ;function v(e){function t(t){e[t]=function(){
-        e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
-        for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
-        e=(!e||e.length===0?"$default_instance":e).toLowerCase()
-        ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
-        ;e.amplitude=n})(window,document);
-        amplitude.getInstance().init('#{process.env.AMPLITUDE_API_KEY}');
-    //- End Amplitude Tracking Code
-body
-    .js-app.
-      !{bodyContent}
-    input(id="state-hash" type="hidden" value=stateHash || 'none')
-    if jsPath
-        script(src=jsPath)
+        //- Begin Amplitude Tracking Code
+        script.
+            (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+            ;r.type="text/javascript";r.async=true
+            ;r.src="https://cdn.amplitude.com/libs/amplitude-4.2.1-min.gz.js"
+            ;r.onload=function(){if(e.amplitude.runQueuedFunctions){
+            e.amplitude.runQueuedFunctions()}else{
+            console.log("[Amplitude] Error: could not load SDK")}}
+            ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+            ;function s(e,t){e.prototype[t]=function(){
+            this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+            var o=function(){this._q=[];return this}
+            ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
+            ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
+            ;return this}
+            ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+            ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
+            ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
+            ;function v(e){function t(t){e[t]=function(){
+            e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+            for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+            e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+            ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
+            ;e.amplitude=n})(window,document);
+            amplitude.getInstance().init('#{process.env.AMPLITUDE_API_KEY}');
+        //- End Amplitude Tracking Code
+    body
+        .js-app.
+            !{bodyContent}
+        input(id="state-hash" type="hidden" value=stateHash || 'none')
+        if jsPath
+            script(src=jsPath)
 
-    //- Start of HubSpot Embed Code
-    script(id="hs-script-loader" async defer src="//js.hs-scripts.com/4210858.js")
-    //- End of HubSpot Embed Code
+        //- Start of HubSpot Embed Code
+        script(id="hs-script-loader" async defer src="//js.hs-scripts.com/4210858.js")
+        //- End of HubSpot Embed Code
 
-    style
-        :clean-css
-            /* Start of HubSpot Cookie Banner CSS overrides */
-            /* The banner is injected by the HB script, so this needs to be as far as possible in the DOM.
-                Specificity matches/exceeds the one in HB. */
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button {
-                font-family: 'ProximaNova-Bold', sans-serif;
-                font-size: 24px !important;
-                line-height: 1;
-                padding: 14px 20px !important;
-                border: 0 !important;
-                border-radius: 0 !important;
+        //- Start Facebook & LinkedIn No Script Code
+        noscript
+            img(height="1" width="1" style="display:none;" alt='' src="https://www.facebook.com/tr?id=127689627854077&ev=PageView&noscript=1")
+
+        noscript
+            img(height='1' width='1' style='display:none;' alt='' src='https://dc.ads.linkedin.com/collect/?pid=103577&fmt=gif')
+        //- End Facebook & LinkedIn No Script Code
+
+        style
+            :clean-css
+                /* Start of HubSpot Cookie Banner CSS overrides */
+                /* The banner is injected by the HB script, so this needs to be as far as possible in the DOM.
+                    Specificity matches/exceeds the one in HB. */
+                div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button {
+                    font-family: 'ProximaNova-Bold', sans-serif;
+                    font-size: 24px !important;
+                    line-height: 1;
+                    padding: 14px 20px !important;
+                    border: 0 !important;
+                    border-radius: 0 !important;
+                }
+
+                div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
+                    font-family: 'ProximaNova-Bold', sans-serif;
+                    font-size: 16px !important;
+                    line-height: 1.5em !important;
+                    max-width: 600px;
+                    margin: 0;
+                    float: left;
+                    color: #212121;
+                }
+
+                div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p:nth-child(2) {
+                    margin: 0 0 10px;
+                }
+
+                div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
+                    color: #212121;
+                    border-bottom: 1px solid #212121 !important;
+                    font-family: 'ProximaNova-Bold', sans-serif;
+                    font-size: 16px !important;
+                    line-height: 1.5em !important;
+                }
+
+                div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
+                    color: #212121 !important;
+                }
+
+                div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area {
+                    margin-top: 0 !important;
+                }
+
+                div#hs-eu-cookie-confirmation {
+                    background-color: #FFD811;
+                    box-shadow: none !important;
+                    border: 0;
+                }
+
+                div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
+                    background-color: #FFD811;
+                }
+                /* End of HubSpot Cookie Banner CSS overrides */
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.19/ua-parser.min.js' integrity='sha256-WfUykOyzFASY5s5n4T1ENGfSfN0YGcvEJ75f1Zv3S0E=' crossorigin='anonymous')
+        script.
+            var uaSniffer = new UAParser();
+            var browser = uaSniffer.getBrowser();
+            if (window.location.pathname !== '/#{process.env.URL_BASENAME || ''}browser-not-supported/' ) {
+                if (browser.name === 'IE' && browser.major < 10 ) {
+                    window.location.pathname = '/#{process.env.URL_BASENAME || ''}browser-not-supported/';
+                }
             }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
-                font-family: 'ProximaNova-Bold', sans-serif;
-                font-size: 16px !important;
-                line-height: 1.5em !important;
-                max-width: 600px;
-                margin: 0;
-                float: left;
-                color: #212121;
-            }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p:nth-child(2) {
-                margin: 0 0 10px;
-            }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
-                color: #212121;
-                border-bottom: 1px solid #212121 !important;
-                font-family: 'ProximaNova-Bold', sans-serif;
-                font-size: 16px !important;
-                line-height: 1.5em !important;
-            }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p a {
-                color: #212121 !important;
-            }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area {
-                margin-top: 0 !important;
-            }
-
-            div#hs-eu-cookie-confirmation {
-                background-color: #FFD811;
-                box-shadow: none !important;
-                border: 0;
-            }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
-                background-color: #FFD811;
-            }
-            /* End of HubSpot Cookie Banner CSS overrides */
-
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/0.7.19/ua-parser.min.js' integrity='sha256-WfUykOyzFASY5s5n4T1ENGfSfN0YGcvEJ75f1Zv3S0E=' crossorigin='anonymous')
-    script.
-        var uaSniffer = new UAParser();
-        var browser = uaSniffer.getBrowser();
-        if (window.location.pathname !== '/#{process.env.URL_BASENAME || ''}browser-not-supported/' ) {
-            if (browser.name === 'IE' && browser.major < 10 ) {
-                window.location.pathname = '/#{process.env.URL_BASENAME || ''}browser-not-supported/';
-            }
-        }
