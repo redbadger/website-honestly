@@ -6,6 +6,8 @@ plugins:
 checks:
   similar-code:
     enabled: false
+  method-lines:
+    enabled: false
 
 exclude_patterns:
   - '**/node_modules/'
