@@ -1,0 +1,75 @@
+@value badgerWhite, badgerRed, badgerBlack, linesOnWhite from "../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../css/_sizes.css";
+@value timelineContainer, timelineNavigationButton from "../../css/_zindex.css";
+
+.navigator {
+  z-index: timelineContainer;
+  background: badgerWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 5px;
+}
+
+@media mediumScreen {
+  .navigator {
+    margin: 45px 5px;
+  }
+}
+
+.arrow {
+  background: none;
+  border: none;
+  margin: 0 5px;
+  padding: 0;
+  position: relative;
+  width: 20px;
+  height: 28px;
+  overflow: hidden;
+}
+
+.arrowRight {
+  transform: rotate(180deg);
+}
+
+.arrow::before,
+.arrow::after {
+  content: '';
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: badgerRed;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.arrow::after {
+  left: 11px;
+  background-color: badgerWhite;
+}
+
+.arrow:disabled::before {
+  background-color: linesOnWhite;
+}
+
+.item {
+  width: 36px;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: linesOnWhite;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.itemActive::before {
+  background-color: badgerRed;
+}

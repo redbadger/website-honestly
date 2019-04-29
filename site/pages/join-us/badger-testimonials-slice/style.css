@@ -2,10 +2,10 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
 
 .testimonials {
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../css/typography/_fonts.css';
   background-color: badgerWhite;
-  composes: dividerWhite from "../../../css/_divider.css";
+  composes: dividerWhite from '../../../css/_divider.css';
 }
 
 .container {
@@ -33,10 +33,10 @@
 
 @media largeScreen {
   .content {
-    padding: 137px 0 77px;
+    padding: 0 0 77px;
   }
 
   .content__bottomNav {
-    padding: 70px 0 100px;
+    padding: 70px 0 50px;
   }
 }

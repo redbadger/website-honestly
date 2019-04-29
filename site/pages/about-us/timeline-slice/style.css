@@ -1,11 +1,11 @@
 @value badgerWhite, badgerBlack from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
 
-.timeline{
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../css/typography/_fonts.css";
+.timeline {
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  composes: dividerBlackOnTransparent from '../../../css/_divider.css';
   background-color: badgerWhite;
-  composes: dividerBlackOnTransparent from "../../../css/_divider.css";
 }
 
 .container {
@@ -13,11 +13,7 @@
   margin: auto;
 }
 
-.content div div {
-  height: auto;
-}
-
-.image{
+.image {
   width: 100%;
 }
 
@@ -51,7 +47,7 @@
   .content {
     width: 65%;
     margin: auto;
-    padding-top: 120px;
+    padding-top: 20px;
     padding-bottom: 0;
   }
 }
