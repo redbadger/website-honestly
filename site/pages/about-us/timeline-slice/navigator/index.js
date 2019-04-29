@@ -23,6 +23,7 @@ const TimelineNav = ({ currentIndex, onClick }: TimelineNavProps) => {
           <Item value={5} onClick={onClick} currentIndex={currentIndex} />
           <Item value={6} onClick={onClick} currentIndex={currentIndex} />
           <Item value={7} onClick={onClick} currentIndex={currentIndex} />
+          <Item value={8} onClick={onClick} currentIndex={currentIndex} />
         </div>
         <Arrow direction="right" onClick={onClick} currentIndex={currentIndex} lastIndex={7} />
       </div>

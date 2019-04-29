@@ -1,11 +1,11 @@
 // @flow
-import React from 'react';
+import React, { type Node } from 'react';
 import styles from './style.css';
 
 type ContentProps = {
   year: string,
   title: string,
-  text: string,
+  text: Node,
   fact: string,
   image: string,
   mobileImage: string,
@@ -25,7 +25,7 @@ const Content = ({ year, title, text, fact, image, flip }: ContentProps) => {
           <div className={styles.copy}>
             <div className={styles.year}>{year}</div>
             <div className={styles.title}>{title}</div>
-            <div className={styles.body}>{text}</div>
+            <div className={styles.body}>{typeof text === 'string' ? <p>{text}</p> : text}</div>
             <div className={styles.fact}>
               <span className={styles.factTitle}>Random fact of the year: </span>
               {fact}

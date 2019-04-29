@@ -5,40 +5,43 @@
   display: none;
 }
 
-.imageWrapper{
+.imageWrapper {
   display: none;
   padding-top: 10px;
 }
 
 .year {
-  composes: fontS from "../../../../css/typography/_fonts.css";
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: fontS from '../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
   color: badgerRed;
   font-size: 16px;
 }
 
 .title {
-  composes: serif from "../../../../css/typography/_fonts.css";
-  composes: fontM2 from "../../../../css/typography/_fonts.css";
+  composes: serif from '../../../../css/typography/_fonts.css';
+  composes: fontM2 from '../../../../css/typography/_fonts.css';
   margin-bottom: 10px;
   color: badgerBlack;
 }
 
-.body{
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
-  margin-bottom: 10px;
+.body {
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
   color: badgerBlack;
+}
+
+.body p {
+  margin-bottom: 10px;
 }
 
 .fact {
-  composes: sansSerif from "../../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../../css/typography/_fonts.css";
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
   color: badgerBlack;
 }
 
 .factTitle {
-  composes: boldSansSerif from "../../../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
 }
 
 .largeScreen {
@@ -55,13 +58,13 @@
   display: block;
 }
 
-.copy{
+.copy {
   margin: 0px 0px 0px 0px;
   padding: 25px 20px 0px 20px;
 }
 
-.counterRow{
-  border-bottom: 1px solid #CCC;
+.counterRow {
+  border-bottom: 1px solid #ccc;
   margin: 30px 20px 0px 20px;
 }
 
@@ -71,7 +74,7 @@
     width: 100%;
   }
 
-  .imageWrapper{
+  .imageWrapper {
     display: block;
     max-width: 38%;
   }
