@@ -4,7 +4,7 @@ import SwipeableViews from 'react-swipeable-views';
 import styles from './style.css';
 
 type MobileImageProps = {
-  years: Array<{ image: string, year: number }>,
+  years: $ReadOnlyArray<{ image: string, year: number, ... }>,
   index: number,
   onChangeIndex: Function,
 };
