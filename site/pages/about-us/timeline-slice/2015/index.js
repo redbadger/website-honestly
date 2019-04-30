@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import image from './2015.png';
 import Content from '../content';

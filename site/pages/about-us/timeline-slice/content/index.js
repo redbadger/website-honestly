@@ -6,10 +6,9 @@ type ContentProps = {
   year: string,
   title: string,
   text: Node,
-  fact: string,
+  fact: Node,
   image: string,
-  mobileImage: string,
-  flip: boolean,
+  flip?: boolean,
 };
 
 const Content = ({ year, title, text, fact, image, flip }: ContentProps) => {

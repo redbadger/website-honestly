@@ -4,3 +4,7 @@
   color: inherit;
   border-bottom: 1px solid badgerRed;
 }
+
+.link:hover {
+  color: badgerRed;
+}
