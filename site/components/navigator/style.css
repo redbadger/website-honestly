@@ -55,10 +55,13 @@
 }
 
 .item {
+  background-color: transparent;
+  border: none;
   width: 36px;
   flex-shrink: 1;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .item::before {
