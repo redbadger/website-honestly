@@ -10,7 +10,7 @@ import Testimonial from './testimonial';
 import testimonials from './testimonials';
 
 const ClientTestimonialsSlice = () => {
-  const [currentIndex, setPage] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <div className={styles.testimonials}>
@@ -18,11 +18,11 @@ const ClientTestimonialsSlice = () => {
         <ClientOnly>
           <Navigator
             currentIndex={currentIndex}
-            onChange={setPage}
+            onChange={setCurrentIndex}
             maxIndex={testimonials.length - 1}
           />
           <div className={styles.content}>
-            <SwipeableViews index={currentIndex} onChangeIndex={setPage}>
+            <SwipeableViews index={currentIndex} onChangeIndex={setCurrentIndex}>
               {testimonials.map(t => (
                 <Testimonial key={t.content} type={t.type} content={t.content} author={t.author} />
               ))}

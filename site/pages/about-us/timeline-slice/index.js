@@ -40,16 +40,20 @@ const years = [
 ].map((data, index) => ({ year: 2010 + index, ...data }));
 
 const TimelineSlice = () => {
-  const [currentIndex, setPage] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <div className={styles.timeline}>
       <div className={styles.container}>
         <ClientOnly>
-          <ImageMobile years={years} index={currentIndex} onChangeIndex={setPage} />
+          <ImageMobile years={years} index={currentIndex} onChangeIndex={setCurrentIndex} />
           <div className={styles.content}>
-            <Navigator currentIndex={currentIndex} onChange={setPage} maxIndex={years.length - 1} />
-            <SwipeableViews index={currentIndex} onChangeIndex={setPage}>
+            <Navigator
+              currentIndex={currentIndex}
+              onChange={setCurrentIndex}
+              maxIndex={years.length - 1}
+            />
+            <SwipeableViews index={currentIndex} onChangeIndex={setCurrentIndex}>
               {years.map(({ year, Component }) => (
                 <Component key={year} />
               ))}

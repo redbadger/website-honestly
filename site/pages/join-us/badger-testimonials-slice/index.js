@@ -15,17 +15,15 @@ type Props = {
 const BadgerTestimonialsSlice = ({ navPositionBottom }: Props) => {
   const [currentIndex, setPage] = useState(0);
 
+  const navigator = (
+    <Navigator currentIndex={currentIndex} onChange={setPage} maxIndex={testimonials.length - 1} />
+  );
+
   return (
     <div className={styles.testimonials}>
       <div className={styles.container}>
         <ClientOnly>
-          {!navPositionBottom && (
-            <Navigator
-              currentIndex={currentIndex}
-              onChange={setPage}
-              maxIndex={testimonials.length - 1}
-            />
-          )}
+          {!navPositionBottom && navigator}
           <div className={navPositionBottom ? styles.content__bottomNav : styles.content}>
             <SwipeableViews index={currentIndex} onChangeIndex={setPage}>
               {testimonials.map(t => (
@@ -38,14 +36,7 @@ const BadgerTestimonialsSlice = ({ navPositionBottom }: Props) => {
                 />
               ))}
             </SwipeableViews>
-            {navPositionBottom && (
-              <Navigator
-                currentIndex={currentIndex}
-                onChange={setPage}
-                navPositionBottom
-                maxIndex={testimonials.length - 1}
-              />
-            )}
+            {navPositionBottom && navigator}
           </div>
         </ClientOnly>
       </div>

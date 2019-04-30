@@ -21,18 +21,22 @@ function mapOverRange(count, mapper) {
 }
 
 const Navigator = ({ currentIndex, maxIndex, onChange }: Props) => {
+  const arrow = direction => (
+    <Arrow
+      direction={direction}
+      onClick={onChange}
+      currentIndex={currentIndex}
+      lastIndex={maxIndex}
+    />
+  );
+
   return (
     <div className={styles.navigator}>
-      <Arrow direction="left" onClick={onChange} currentIndex={currentIndex} lastIndex={maxIndex} />
+      {arrow('left')}
       {mapOverRange(maxIndex + 1, x => (
         <Item key={x} value={x} currentIndex={currentIndex} />
       ))}
-      <Arrow
-        direction="right"
-        onClick={onChange}
-        currentIndex={currentIndex}
-        lastIndex={maxIndex}
-      />
+      {arrow('right')}
     </div>
   );
 };
