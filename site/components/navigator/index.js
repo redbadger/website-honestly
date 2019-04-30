@@ -34,7 +34,7 @@ const Navigator = ({ currentIndex, maxIndex, onChange }: Props) => {
     <div className={styles.navigator}>
       {arrow('left')}
       {mapOverRange(maxIndex + 1, x => (
-        <Item key={x} value={x} currentIndex={currentIndex} />
+        <Item key={x} value={x} currentIndex={currentIndex} onClick={onChange} />
       ))}
       {arrow('right')}
     </div>
@@ -74,14 +74,17 @@ const Arrow = ({ direction, onClick, currentIndex, lastIndex }: ArrowProps) => {
 type ItemProps = {
   value: number,
   currentIndex: number,
+  onClick: number => void,
 };
 
-const Item = ({ value, currentIndex }: ItemProps) => (
-  <div
+const Item = ({ value, onClick, currentIndex }: ItemProps) => (
+  <button
+    type="button"
     className={classnames({
       [styles.item]: true,
       [styles.itemActive]: value === currentIndex,
     })}
+    onClick={() => onClick(value)}
     aria-label={`slide ${value + 1}`}
   />
 );

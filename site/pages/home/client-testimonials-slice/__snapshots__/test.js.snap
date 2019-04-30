@@ -35,51 +35,66 @@ exports[`site/pages/home/client-testimonal-slice renders correctly 1`] = `
               <Item
                 currentIndex={0}
                 key="0"
+                onClick={[Function]}
                 value={0}
               >
-                <div
+                <button
                   aria-label="slide 1"
                   className="item itemActive"
+                  onClick={[Function]}
+                  type="button"
                 />
               </Item>
               <Item
                 currentIndex={0}
                 key="1"
+                onClick={[Function]}
                 value={1}
               >
-                <div
+                <button
                   aria-label="slide 2"
                   className="item"
+                  onClick={[Function]}
+                  type="button"
                 />
               </Item>
               <Item
                 currentIndex={0}
                 key="2"
+                onClick={[Function]}
                 value={2}
               >
-                <div
+                <button
                   aria-label="slide 3"
                   className="item"
+                  onClick={[Function]}
+                  type="button"
                 />
               </Item>
               <Item
                 currentIndex={0}
                 key="3"
+                onClick={[Function]}
                 value={3}
               >
-                <div
+                <button
                   aria-label="slide 4"
                   className="item"
+                  onClick={[Function]}
+                  type="button"
                 />
               </Item>
               <Item
                 currentIndex={0}
                 key="4"
+                onClick={[Function]}
                 value={4}
               >
-                <div
+                <button
                   aria-label="slide 5"
                   className="item"
+                  onClick={[Function]}
+                  type="button"
                 />
               </Item>
               <Arrow
