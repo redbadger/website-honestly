@@ -57,6 +57,7 @@
 .item {
   background-color: transparent;
   border: none;
+  height: 28px;
   width: 36px;
   flex-shrink: 1;
   display: flex;
