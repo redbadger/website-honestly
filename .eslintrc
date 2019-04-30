@@ -40,6 +40,7 @@
     "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" }],
     "jsx-quotes": 1,
     "no-duplicate-imports": 0,
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-underscore-dangle": 0,
     "prefer-template": 0,
     "react/display-name": 0,

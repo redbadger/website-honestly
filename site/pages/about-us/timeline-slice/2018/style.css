@@ -1,0 +1,6 @@
+@value badgerRed from "../../../../css/_colors.css";
+
+.link {
+  color: inherit;
+  border-bottom: 1px solid badgerRed;
+}

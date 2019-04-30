@@ -19,7 +19,7 @@ describe('site/pages/home/client-testimonal-slice', () => {
   it('only shows the next testimonial when arrow is clicked', () => {
     const testimonialSlice = mount(<ClientTestimonialSlice />);
 
-    const nextButton = testimonialSlice.find('.arrowRight');
+    const nextButton = testimonialSlice.find('.arrow[aria-label="right"]');
     let testimonial = testimonialSlice.find('.main');
     expect(testimonial.text()).toMatch(testimonials[0].content);
     expect(testimonial.text()).not.toMatch(testimonials[1].content);
@@ -32,8 +32,8 @@ describe('site/pages/home/client-testimonal-slice', () => {
   it('can traverse backwards and forwards', async () => {
     const testimonialSlice = mount(<ClientTestimonialSlice />);
 
-    const nextButton = testimonialSlice.find('.arrowRight');
-    const prevButton = testimonialSlice.find('.arrowLeft');
+    const nextButton = testimonialSlice.find('.arrow[aria-label="right"]');
+    const prevButton = testimonialSlice.find('.arrow[aria-label="left"]');
 
     nextButton.simulate('click');
     let testimonialElement = testimonialSlice.find('.main');
@@ -47,7 +47,7 @@ describe('site/pages/home/client-testimonal-slice', () => {
   it('will not go before the first testimonial', async () => {
     const testimonialSlice = mount(<ClientTestimonialSlice />);
 
-    const prevButton = testimonialSlice.find('.arrowLeft');
+    const prevButton = testimonialSlice.find('.arrow[aria-label="left"]');
 
     let testimonialElement = testimonialSlice.find('.main');
     expect(testimonialElement.text()).toMatch(testimonials[0].content);
@@ -60,7 +60,7 @@ describe('site/pages/home/client-testimonal-slice', () => {
   it('will not go beyond the last testimonial', async () => {
     const testimonialSlice = mount(<ClientTestimonialSlice />);
 
-    const nextButton = testimonialSlice.find('.arrowRight');
+    const nextButton = testimonialSlice.find('.arrow[aria-label="right"]');
 
     testimonials.forEach(() => {
       nextButton.simulate('click');

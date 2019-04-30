@@ -10,128 +10,94 @@ exports[`site/pages/home/client-testimonal-slice renders correctly 1`] = `
     >
       <ClientOnly>
         <span>
-          <TestimonialNav
+          <Navigator
             currentIndex={0}
-            onClick={[Function]}
+            maxIndex={4}
+            onChange={[Function]}
           >
             <div
               className="navigator"
             >
-              <div
-                className="container"
+              <Arrow
+                currentIndex={0}
+                direction="left"
+                lastIndex={4}
+                onClick={[Function]}
               >
-                <Arrow
-                  currentIndex={0}
-                  direction="left"
-                  lastIndex={4}
+                <button
+                  aria-label="left"
+                  className="arrow"
+                  disabled={true}
                   onClick={[Function]}
-                >
-                  <button
-                    aria-label="left"
-                    className="arrow arrowLeft"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <div
-                      className="inactive"
-                    />
-                    <div
-                      className="innerArrow"
-                    />
-                  </button>
-                </Arrow>
+                  type="button"
+                />
+              </Arrow>
+              <Item
+                currentIndex={0}
+                key="0"
+                value={0}
+              >
                 <div
-                  className="testimonials"
-                >
-                  <TimelineNav
-                    currentIndex={0}
-                    key="We have to get what Red Badger are providing. With highly skilled teams, they are doing what the big consultancies who have been in here for years just can't do or translate into meaningful outcomes. This is the first time in two decades of banking that I've seen a transformation actually look like it might succeed."
-                    onClick={[Function]}
-                    value={0}
-                  >
-                    <div
-                      aria-label="slide 1"
-                      className="active"
-                    >
-                      <span />
-                    </div>
-                  </TimelineNav>
-                  <TimelineNav
-                    currentIndex={0}
-                    key="Working with Red Badger has allowed the FT to see the future of our .com publishing model in a new light. Helping the FT to get the best out of our own great people, with a fresh approach to delivery and the way in which we collaborate across all disciplines has been central in building lasting change."
-                    onClick={[Function]}
-                    value={1}
-                  >
-                    <div
-                      aria-label="slide 2"
-                      className="future"
-                    >
-                      <span />
-                    </div>
-                  </TimelineNav>
-                  <TimelineNav
-                    currentIndex={0}
-                    key="It’s been great having Red Badger in the building. You guys have really fit in with our style. You have engineered a great product to a really high standard of quality that I am really proud of."
-                    onClick={[Function]}
-                    value={2}
-                  >
-                    <div
-                      aria-label="slide 3"
-                      className="future"
-                    >
-                      <span />
-                    </div>
-                  </TimelineNav>
-                  <TimelineNav
-                    currentIndex={0}
-                    key="Exciting, refreshing, positive & pacey."
-                    onClick={[Function]}
-                    value={3}
-                  >
-                    <div
-                      aria-label="slide 4"
-                      className="future"
-                    >
-                      <span />
-                    </div>
-                  </TimelineNav>
-                  <TimelineNav
-                    currentIndex={0}
-                    key="Working with RB is refreshing, productive and inspiring. RB makes you think differently, makes you believe the prosaic commonplace ways are behind you, enables you to challenge the norm and break the mould of convention."
-                    onClick={[Function]}
-                    value={4}
-                  >
-                    <div
-                      aria-label="slide 5"
-                      className="future"
-                    >
-                      <span />
-                    </div>
-                  </TimelineNav>
-                </div>
-                <Arrow
-                  currentIndex={0}
-                  direction="right"
-                  lastIndex={4}
+                  aria-label="slide 1"
+                  className="item itemActive"
+                />
+              </Item>
+              <Item
+                currentIndex={0}
+                key="1"
+                value={1}
+              >
+                <div
+                  aria-label="slide 2"
+                  className="item"
+                />
+              </Item>
+              <Item
+                currentIndex={0}
+                key="2"
+                value={2}
+              >
+                <div
+                  aria-label="slide 3"
+                  className="item"
+                />
+              </Item>
+              <Item
+                currentIndex={0}
+                key="3"
+                value={3}
+              >
+                <div
+                  aria-label="slide 4"
+                  className="item"
+                />
+              </Item>
+              <Item
+                currentIndex={0}
+                key="4"
+                value={4}
+              >
+                <div
+                  aria-label="slide 5"
+                  className="item"
+                />
+              </Item>
+              <Arrow
+                currentIndex={0}
+                direction="right"
+                lastIndex={4}
+                onClick={[Function]}
+              >
+                <button
+                  aria-label="right"
+                  className="arrow arrowRight"
+                  disabled={false}
                   onClick={[Function]}
-                >
-                  <button
-                    aria-label="right"
-                    className="arrow arrowRight"
-                    onClick={[Function]}
-                    type="button"
-                  >
-                    <div
-                      className="active"
-                    />
-                    <div
-                      className="innerArrow"
-                    />
-                  </button>
-                </Arrow>
-              </div>
+                  type="button"
+                />
+              </Arrow>
             </div>
-          </TestimonialNav>
+          </Navigator>
           <div
             className="content"
           >

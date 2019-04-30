@@ -2,15 +2,16 @@
 @value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
 
 .testimonials {
-  composes: boldSansSerif from "../../../css/typography/_fonts.css";
-  composes: fontXS from "../../../css/typography/_fonts.css";
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../css/typography/_fonts.css';
   background-color: badgerWhite;
-  composes: dividerWhite from "../../../css/_divider.css";
+  composes: dividerWhite from '../../../css/_divider.css';
 }
 
 .container {
   max-width: 1400px;
   margin: auto;
+  padding-top: 20px;
 }
 
 .image {
@@ -18,7 +19,7 @@
 }
 
 .content {
-  padding: 97px 0 47px;
+  padding: 0 0 47px;
 }
 
 @media mediumScreen {
@@ -29,6 +30,6 @@
 
 @media largeScreen {
   .content {
-    padding: 137px 0 77px;
+    padding: 0 0 77px;
   }
 }
