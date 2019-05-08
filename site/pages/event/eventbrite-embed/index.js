@@ -6,6 +6,10 @@ import styles from './style.css';
    the fallback behaviour will take users to the
    eventbrite ticket page */
 
+/* The modal popup will only work on pages served over HTTPS
+   the fallback behaviour will take users to the
+   eventbrite ticket page */
+
 export default class EventbriteEmbed extends React.Component {
   constructor(props) {
     super(props);
@@ -25,6 +29,7 @@ export default class EventbriteEmbed extends React.Component {
     script.type = 'text/javascript';
     script.src = 'https://www.eventbrite.co.uk/static/widgets/eb_widgets.js';
     script.async = true;
+
     const widgetScript = document.createElement('script');
     widgetScript.type = 'text/javascript';
     widgetScript.innerHTML = `window.onload = function() {
@@ -39,22 +44,28 @@ export default class EventbriteEmbed extends React.Component {
           })
       }`;
     widgetScript.async = false;
+
     document.body.appendChild(script);
     document.body.appendChild(widgetScript);
   }
 
   render() {
     const { eventbriteId, url } = this.props;
+    const { windowLoaded } = this.state;
     return (
       <div className="testyTestTest">
-        <noscript>
-          <a href={url} rel="noopener noreferrer" target="_blank">
-            Buy Tickets on Eventbrite
-          </a>
-        </noscript>
-        <button id={`eventbrite-modal-${eventbriteId}`} type="button">
-          Buy Tickets
-        </button>
+        {windowLoaded && (
+          <div>
+            <noscript>
+              <a href={url} rel="noopener noreferrer" target="_blank">
+                Buy Tickets on Eventbrite
+              </a>
+            </noscript>
+            <button id={`eventbrite-modal-${eventbriteId}`} type="button">
+              Buy Tickets
+            </button>
+          </div>
+        )}
       </div>
     );
   }
