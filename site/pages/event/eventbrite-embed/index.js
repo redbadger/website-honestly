@@ -15,7 +15,7 @@ export default class EventbriteEmbed extends React.Component {
             widgetType: 'checkout',
             eventId: '${eventbriteId}',
             modal: true,
-            modalTriggerElementId: 'eventbrite-widget-modal-trigger-${eventbriteId}',
+            modalTriggerElementId: 'eventbrite-modal-${eventbriteId}',
             onOrderComplete: () => {
               console.log('Order complete!');
             },
@@ -35,7 +35,7 @@ export default class EventbriteEmbed extends React.Component {
             Buy Tickets on Eventbrite
           </a>
         </noscript>
-        <button id={`eventbrite-widget-modal-trigger-${eventbriteId}`} type="button">
+        <button id={`eventbrite-modal-${eventbriteId}`} type="button">
           Buy Tickets
         </button>
       </div>
