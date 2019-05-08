@@ -33,7 +33,6 @@ const social = {
 };
 
 export default function Events({ events, eventsBanner }: Props) {
-  console.log(events);
   return (
     <div className={styles.events}>
       <Social {...social} />
