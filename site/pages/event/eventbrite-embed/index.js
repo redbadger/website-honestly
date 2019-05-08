@@ -25,7 +25,6 @@ export default class EventbriteEmbed extends React.Component {
     script.type = 'text/javascript';
     script.src = 'https://www.eventbrite.co.uk/static/widgets/eb_widgets.js';
     script.async = true;
-
     const widgetScript = document.createElement('script');
     widgetScript.type = 'text/javascript';
     widgetScript.innerHTML = `window.onload = function() {
@@ -40,32 +39,22 @@ export default class EventbriteEmbed extends React.Component {
           })
       }`;
     widgetScript.async = false;
-
     document.body.appendChild(script);
     document.body.appendChild(widgetScript);
   }
 
   render() {
     const { eventbriteId, url } = this.props;
-    const { windowLoaded } = this.state;
     return (
-      <div className="eventbrite-modal">
-        {windowLoaded && (
-          <div>
-            <noscript>
-              <a href={url} rel="noopener noreferrer" target="_blank">
-                Get Tickets on Eventbrite
-              </a>
-            </noscript>
-            <button
-              className={styles.getTickets__button}
-              id={`eventbrite-modal-${eventbriteId}`}
-              type="button"
-            >
-              Get tickets
-            </button>
-          </div>
-        )}
+      <div className="testyTestTest">
+        <noscript>
+          <a href={url} rel="noopener noreferrer" target="_blank">
+            Buy Tickets on Eventbrite
+          </a>
+        </noscript>
+        <button id={`eventbrite-widget-modal-trigger-${eventbriteId}`} type="button">
+          Buy Tickets
+        </button>
       </div>
     );
   }

@@ -72,6 +72,9 @@ export default function Event({ event }: EventProps) {
             <h1 className={styles.eventTitle} itemProp="name">
               {event.title}
             </h1>
+            {event.eventbriteId && (
+              <EventbriteEmbed eventbriteId={event.eventbriteId} url={event.ticketLink} />
+            )}
             <div className={styles.twoColumn}>
               <div className={styles.event}>
                 <div className={styles.eventDescription}>{event.strapline}</div>
