@@ -1,5 +1,6 @@
 // @no-flow
 import React from 'react';
+import styles from './style.css';
 
 /* The modal popup will only work on pages served over HTTPS
    the fallback behaviour will take users to the
@@ -48,16 +49,20 @@ export default class EventbriteEmbed extends React.Component {
     const { eventbriteId, url } = this.props;
     const { windowLoaded } = this.state;
     return (
-      <div className="testyTestTest">
+      <div className="eventbrite-modal">
         {windowLoaded && (
           <div>
             <noscript>
               <a href={url} rel="noopener noreferrer" target="_blank">
-                Buy Tickets on Eventbrite
+                Get Tickets on Eventbrite
               </a>
             </noscript>
-            <button id={`eventbrite-modal-${eventbriteId}`} type="button">
-              Buy Tickets
+            <button
+              className={styles.getTickets__button}
+              id={`eventbrite-modal-${eventbriteId}`}
+              type="button"
+            >
+              Get Tickets
             </button>
           </div>
         )}
