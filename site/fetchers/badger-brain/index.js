@@ -91,6 +91,8 @@ const basicFields = `
   tags
   title
   strapline
+  ticketLink
+  eventbriteId
   internalLinks {
     title
     url

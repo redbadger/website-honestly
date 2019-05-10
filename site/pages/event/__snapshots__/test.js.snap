@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/event renders correctly 1`] = `
+<div
+  class="background"
+  itemscope=""
+  itemtype="http://schema.org/Event"
+>
+  <span
+    itemprop="location"
+    itemscope=""
+    itemtype="http://schema.org/Place"
+  >
+    <span
+      content="Badgerham Palace"
+      itemprop="address"
+    />
+  </span>
+  <section
+    class="section"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="mainContainer"
+        >
+          <hr
+            class="hr grey mobileHorizontalLine"
+          />
+          <div
+            class="dateBubble"
+            itemprop="startDate"
+          >
+            31 January 2017 - 01 February 2017
+          </div>
+          <h1
+            class="eventTitle"
+            itemprop="name"
+          >
+            I am the best event ever
+          </h1>
+          <div
+            class="twoColumn"
+          >
+            <div
+              class="event"
+            >
+              <div
+                class="eventDescription"
+              >
+                Come along to the best event ever
+              </div>
+              <div
+                class="eventBody"
+              >
+                <p
+                  class="paragraph"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+              </div>
+              <div
+                class="eventbrite-modal"
+              />
+              <div>
+                <div
+                  class="eventLinks"
+                >
+                  <div
+                    class="eventLinkList cf"
+                  >
+                    <a
+                      class="fullDetailsLink"
+                      href="https://www.external-site.com/some-event"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <span>
+                        some event
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    class="eventLinkList cf"
+                  >
+                    <a
+                      class="fullDetailsLink"
+                      href="https://www.red-badger.com/some-event"
+                    >
+                      <span>
+                        some event
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <hr
+                class="hr grey horizontal-line"
+              />
+              <div
+                class="moreEvents"
+              >
+                <a
+                  class=""
+                  href="/events"
+                >
+                  <span>
+                    More events
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div>
+              <img
+                alt="I am the best event ever"
+                class="eventImg"
+                role="presentation"
+                src="i-am-an-image.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

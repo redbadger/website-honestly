@@ -9,6 +9,7 @@ import HR from '../../components/hr';
 import DateBubble from '../../components/date-bubble';
 import EventMeta from '../../components/event-meta';
 import Social from '../../components/social';
+import EventbriteEmbed from './eventbrite-embed';
 import type { LinkList } from './event-links-list';
 
 import metaImage from './meta-image.jpg';
@@ -26,6 +27,7 @@ type DateShape = {
 
 type EventProps = {
   event: {
+    id: string,
     startDateTime: DateShape,
     endDateTime?: DateShape,
     title: string,
@@ -33,6 +35,8 @@ type EventProps = {
     body: Array<{ text: string }>,
     internalLinks: LinkList,
     externalLinks: LinkList,
+    ticketLink: string,
+    eventbriteId: string,
     featureImageFilename: string,
     location?: {
       address: string,
@@ -80,10 +84,16 @@ export default function Event({ event }: EventProps) {
                     />
                   ))}
                 </div>
+
+                {event.eventbriteId && (
+                  <EventbriteEmbed eventbriteId={event.eventbriteId} url={event.ticketLink} />
+                )}
+
                 <EventMeta
                   internalLinks={event.internalLinks}
                   externalLinks={event.externalLinks}
                 />
+
                 <HR color="grey" />
                 <div className={styles.moreEvents}>
                   <Link to="events">
