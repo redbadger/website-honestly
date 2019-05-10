@@ -93,6 +93,7 @@ export default function Event({ event }: EventProps) {
                   internalLinks={event.internalLinks}
                   externalLinks={event.externalLinks}
                 />
+
                 <HR color="grey" />
                 <div className={styles.moreEvents}>
                   <Link to="events">
