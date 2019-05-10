@@ -62,7 +62,7 @@ export default class EventbriteEmbed extends React.Component {
               id={`eventbrite-modal-${eventbriteId}`}
               type="button"
             >
-              Get Tickets
+              Get tickets
             </button>
           </div>
         )}
