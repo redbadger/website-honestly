@@ -15,10 +15,20 @@ export default class EventbriteEmbed extends React.Component {
   }
 
   componentDidMount() {
+    this.addEventbriteScript();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('load', this.setWindowLoaded.bind(this));
+  }
+
+  setWindowLoaded() {
+    this.setState({ windowLoaded: true });
+  }
+
+  addEventbriteScript() {
     // The widget scripts will only work when the window has loaded
-    window.addEventListener('load', () => {
-      this.setState({ windowLoaded: true });
-    });
+    this.setWindowLoaded();
 
     const { eventbriteId } = this.props;
     const script = document.createElement('script');
@@ -28,8 +38,9 @@ export default class EventbriteEmbed extends React.Component {
 
     const widgetScript = document.createElement('script');
     widgetScript.type = 'text/javascript';
-    widgetScript.innerHTML = `window.onload = function() {
-      window.EBWidgets.createWidget({
+    widgetScript.innerHTML = `document.addEventListener('readystatechange', function() {
+      if (document.readyState === 'complete') {
+        window.EBWidgets.createWidget({
             widgetType: 'checkout',
             eventId: '${eventbriteId}',
             modal: true,
@@ -38,7 +49,8 @@ export default class EventbriteEmbed extends React.Component {
               console.log('Order complete!');
             },
           })
-      }`;
+        }
+      })`;
     widgetScript.async = false;
 
     document.body.appendChild(script);
@@ -54,7 +66,7 @@ export default class EventbriteEmbed extends React.Component {
           <div>
             <noscript>
               <a href={url} rel="noopener noreferrer" target="_blank">
-                Get Tickets on Eventbrite
+                Get tickets on Eventbrite
               </a>
             </noscript>
             <button
