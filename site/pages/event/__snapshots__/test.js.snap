@@ -65,7 +65,20 @@ exports[`site/pages/event renders correctly 1`] = `
               </div>
               <div
                 class="eventbrite-modal"
-              />
+              >
+                <div>
+                  <noscript>
+                    &lt;a href="https://www.eventbrite.com/some-event-123456789" rel="noopener noreferrer" target="_blank"&gt;Get tickets on Eventbrite&lt;/a&gt;
+                  </noscript>
+                  <button
+                    class="getTickets__button"
+                    id="eventbrite-modal-123456789"
+                    type="button"
+                  >
+                    Get tickets
+                  </button>
+                </div>
+              </div>
               <div>
                 <div
                   class="eventLinks"
