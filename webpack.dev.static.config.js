@@ -11,6 +11,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const { baseServiceConfig, baseWebConfig } = require('./webpack.base.config');
 
 const devStaticConfig = webpackMerge(baseServiceConfig, {
+  mode: 'production',
   entry: {
     index: ['babel-polyfill', './dev/static/index.js'],
   },
@@ -24,6 +25,8 @@ const devStaticConfig = webpackMerge(baseServiceConfig, {
 
 const clientConfig = webpackMerge(baseWebConfig, {
   stats: 'errors-only',
+
+  mode: 'production',
 
   entry: {
     index: './client/index.js',
