@@ -15,8 +15,10 @@ jobs:
       - run:
           name: Install Node modules
           command:
-            - yarn install --frozen-lockfile
-            - cd lighthouse && yarn install --frozen-lockfile
+            - >
+              yarn install --frozen-lockfile && \
+              cd lighthouse && \
+              yarn install --frozen-lockfile
 
       - save_cache:
           key: node_modules-v8-{{ checksum "yarn.lock" }}
