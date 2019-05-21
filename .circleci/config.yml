@@ -6,18 +6,23 @@ jobs:
 
     steps:
       - checkout
+
       - restore_cache:
           keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+            - node_modules-v8-{{ checksum "yarn.lock" }}
+            - node_modules-v8-
 
       - run:
           name: Install Node modules
-          command: yarn install --frozen-lockfile
+          command:
+            - yarn install --frozen-lockfile
+            - cd lighthouse && yarn install --frozen-lockfile
 
       - save_cache:
-          key: node_modules-v7-{{ checksum "yarn.lock" }}
+          key: node_modules-v8-{{ checksum "yarn.lock" }}
           paths:
             - ./node_modules
+            - lighthouse/node_modules
 
   validate_formatting:
     docker:
@@ -26,7 +31,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+            - node_modules-v8-{{ checksum "yarn.lock" }}
 
       - run:
           name: Validate formatting
@@ -39,7 +44,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+            - node_modules-v8-{{ checksum "yarn.lock" }}
 
       - run:
           name: Lint code
@@ -52,7 +57,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+            - node_modules-v8-{{ checksum "yarn.lock" }}
 
       - run:
           name: Validate types
@@ -65,7 +70,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+            - node_modules-v8-{{ checksum "yarn.lock" }}
 
       - run:
           name: Notify Code Climate of build
@@ -92,7 +97,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+            - node_modules-v8-{{ checksum "yarn.lock" }}
 
       - run:
           name: Deploy branch
@@ -105,7 +110,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+            - node_modules-v8-{{ checksum "yarn.lock" }}
 
       - run:
           name: Deploy to staging
