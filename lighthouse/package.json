@@ -1,0 +1,11 @@
+{
+  "name": "lighthouse-runner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "chrome-launcher": "^0.10.7",
+    "lighthouse": "^5.0.0"
+  }
+}
