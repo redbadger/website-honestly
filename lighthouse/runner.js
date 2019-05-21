@@ -10,7 +10,7 @@ function readArgumentsFromEnvironment() {
   };
 }
 
-function runLighthouse(url) {
+function runLighthouse({ targetUrl }) {
   const chromeFlags = [
     '--headless',
     '--no-sandbox', // chrome sandboxing requires docker container to have the
@@ -24,7 +24,7 @@ function runLighthouse(url) {
 
     const config = null;
 
-    return lighthouse(url, opts, config).then(results => {
+    return lighthouse(targetUrl, opts, config).then(results => {
       // use results.lhr for the JS-consumable output
       // https://github.com/GoogleChrome/lighthouse/blob/master/types/lhr.d.ts
       // use results.report for the HTML/JSON/CSV output as a string
