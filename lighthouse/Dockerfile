@@ -19,7 +19,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 
 # Install dependencies
 ENV NODE_ENV=production
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock /
 RUN yarn install --frozen-lockfile --production
 
 
@@ -32,7 +32,7 @@ RUN yarn install --frozen-lockfile --production
 # USER chrome
 
 
-COPY . ./
+COPY runner.js /
 
 #VOLUME /home/chrome/reports
 #WORKDIR /home/chrome/reports
@@ -44,4 +44,4 @@ COPY . ./
 EXPOSE 8080
 
 
-ENTRYPOINT ["dumb-init", "--", "node", "runner.js"]
+ENTRYPOINT ["dumb-init", "--", "node", "/runner.js"]
