@@ -3,3 +3,4 @@ dist
 flow-typed/npm
 website-next
 **/node_modules/**
+lighthouse/
