@@ -95,8 +95,6 @@ async function createComment({ body, issueId }) {
   await gitHubGraphqlRequest({ query, variables });
 }
 
-run();
-
 async function getPullRequestIdsForRef({ repo: { owner, name }, ref }) {
   const query = `
   query PullRequestIdsForRef($RepoOwner: String!, $RepoName: String!, $Ref: String!) {
@@ -144,3 +142,10 @@ async function gitHubGraphqlRequest({ query, variables }) {
 
   return data;
 }
+
+run();
+
+process.on('unhandledRejection', error => {
+  console.error(error);
+  process.exit(1);
+});
