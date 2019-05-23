@@ -1,14 +1,13 @@
 const lighthouse = require('lighthouse');
 const chromeLauncher = require('chrome-launcher');
 const fs = require('fs');
+const fetch = require('node-fetch');
 
-function readArgumentsFromEnvironment() {
-  const { deployment } = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH));
+const repoFullName = process.env.GITHUB_REPOSITORY;
+const githubEventPath = process.env.GITHUB_EVENT_PATH;
+const githubAuthToken = process.env.GITHUB_TOKEN;
 
-  return {
-    targetUrl: deployment.url,
-  };
-}
+/* eslint-disable no-use-before-define */
 
 function runLighthouse({ targetUrl }) {
   const chromeFlags = [
@@ -20,6 +19,7 @@ function runLighthouse({ targetUrl }) {
   return chromeLauncher.launch({ chromeFlags }).then(chrome => {
     const opts = {
       port: chrome.port,
+      output: 'html',
     };
 
     const config = null;
@@ -29,17 +29,118 @@ function runLighthouse({ targetUrl }) {
       // https://github.com/GoogleChrome/lighthouse/blob/master/types/lhr.d.ts
       // use results.report for the HTML/JSON/CSV output as a string
       // use results.artifacts for the trace/screenshots/other specific case you need (rarer)
-      return chrome.kill().then(() => results.lhr);
+      return chrome.kill().then(() => results);
     });
   });
 }
 
-function run() {
-  const args = readArgumentsFromEnvironment();
+function readArgumentsFromEnvironment() {
+  if (!githubEventPath) {
+    // eslint-disable-next-line no-console
+    console.warn(`GITHUB_EVENT_PATH environment variable is not set, running locally.`);
+    return { targetUrl: 'https://www-staging.red-badger.com/658e7ac/' };
+  }
 
-  runLighthouse(args).then(results => {
-    console.log(results);
-  });
+  const { deployment } = JSON.parse(fs.readFileSync(githubEventPath));
+
+  const [owner, name] = repoFullName.split('/');
+
+  return {
+    targetUrl: deployment.url,
+    ref: deployment.ref,
+    repo: {
+      owner,
+      name,
+    },
+  };
+}
+
+function run() {
+  const { targetUrl, repo, ref } = readArgumentsFromEnvironment();
+
+  runLighthouse({ targetUrl }).then(results => reportResults({ results, repo, ref }));
+}
+
+async function reportResults({ results, repo, ref }) {
+  const body = `
+Lighthouse scores for latest changes:
+
+
+| Category | Score |
+| -------- | ----- |
+${Object.entries(results.lhr.categories)
+  .map(([categoryName, { score }]) => `| ${categoryName} | ${score * 100} |`)
+  .join('\n')}
+  `;
+
+  const pullRequestIds = await getPullRequestIdsForRef({ repo, ref });
+
+  await Promise.all(pullRequestIds.map(issueId => createComment({ body, issueId })));
+}
+
+async function createComment({ body, issueId }) {
+  const query = `
+  mutation AddLighthouseComment($IssueId: ID!, $Body: String!) {
+    addComment(input: {subjectId: $IssueId, body: $Body}) {
+      clientMutationId
+    }
+  }
+  `;
+
+  const variables = {
+    IssueId: issueId,
+    Body: body,
+  };
+
+  await gitHubGraphqlRequest({ query, variables });
 }
 
 run();
+
+async function getPullRequestIdsForRef({ repo: { owner, name }, ref }) {
+  const query = `
+  query PullRequestIdsForRef($RepoOwner: String!, $RepoName: String!, $Ref: String!) {
+    repository(owner: $RepoOwner, name: $RepoName) {
+      ref(qualifiedName: $Ref) {
+        associatedPullRequests(states: OPEN, first: 10) {
+          nodes {
+            id
+          }
+        }
+      }
+    }
+  }
+  `;
+
+  const variables = {
+    RepoOwner: owner,
+    RepoName: name,
+    Ref: ref,
+  };
+
+  const {
+    repository: {
+      ref: { associatedPullRequests },
+    },
+  } = await gitHubGraphqlRequest({ query, variables });
+
+  return associatedPullRequests.nodes.map(({ id }) => id);
+}
+
+async function gitHubGraphqlRequest({ query, variables }) {
+  const response = await fetch(`https://api.github.com/graphql`, {
+    method: 'POST',
+    headers: {
+      Authorization: `bearer ${githubAuthToken}`,
+    },
+    body: JSON.stringify({ query, variables }),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Bad response from GitHub api: ${response.statusText}`);
+  }
+
+  const { data } = await response.json();
+
+  return data;
+}

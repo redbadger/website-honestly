@@ -5,4 +5,6 @@ workflow "Check website performance" {
 
 action "Run Lighthouse" {
   uses = "./lighthouse"
+
+  secrets = ["GITHUB_TOKEN"]
 }
