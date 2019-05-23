@@ -40,7 +40,7 @@ function readArgumentsFromEnvironment() {
     console.warn(`GITHUB_EVENT_PATH environment variable is not set, running locally.`);
     return {
       targetUrl: 'https://www-staging.red-badger.com/658e7ac/',
-      ref: 'lighthouse_check',
+      ref: '7865779',
       repo: {
         owner: 'redbadger',
         name: 'website-honestly',
@@ -74,7 +74,7 @@ async function reportResults({ results, repo, ref }) {
     .join('\n');
 
   const body = `
-Lighthouse scores for latest changes:
+⚡️ Lighthouse scores for latest changes:
 
 
 | Category | Score |
@@ -126,8 +126,6 @@ async function getPullRequestIdsForRef({ repo: { owner, name }, ref }) {
     RepoName: name,
     Ref: ref,
   };
-
-  console.log('Getting pull requests for ref:', variables);
 
   const {
     repository: {
