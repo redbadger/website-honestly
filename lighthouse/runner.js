@@ -38,7 +38,14 @@ function readArgumentsFromEnvironment() {
   if (!githubEventPath) {
     // eslint-disable-next-line no-console
     console.warn(`GITHUB_EVENT_PATH environment variable is not set, running locally.`);
-    return { targetUrl: 'https://www-staging.red-badger.com/658e7ac/' };
+    return {
+      targetUrl: 'https://www-staging.red-badger.com/658e7ac/',
+      ref: 'lighthouse_check',
+      repo: {
+        owner: 'redbadger',
+        name: 'website-honestly',
+      },
+    };
   }
 
   const { deployment } = JSON.parse(fs.readFileSync(githubEventPath));
@@ -62,15 +69,17 @@ function run() {
 }
 
 async function reportResults({ results, repo, ref }) {
+  const scores = Object.entries(results.lhr.categories)
+    .map(([categoryName, { score }]) => `| ${categoryName} | ${score * 100} |`)
+    .join('\n');
+
   const body = `
 Lighthouse scores for latest changes:
 
 
 | Category | Score |
 | -------- | ----- |
-${Object.entries(results.lhr.categories)
-  .map(([categoryName, { score }]) => `| ${categoryName} | ${score * 100} |`)
-  .join('\n')}
+${scores}
   `;
 
   const pullRequestIds = await getPullRequestIdsForRef({ repo, ref });
