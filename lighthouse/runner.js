@@ -108,10 +108,12 @@ async function getPullRequestIdsForRef({ repo: { owner, name }, ref }) {
   const query = `
   query PullRequestIdsForRef($RepoOwner: String!, $RepoName: String!, $Ref: String!) {
     repository(owner: $RepoOwner, name: $RepoName) {
-      ref(qualifiedName: $Ref) {
-        associatedPullRequests(states: OPEN, first: 10) {
-          nodes {
-            id
+      object(expression: $Ref) {
+        ...on Commit {
+          associatedPullRequests(first: 10) {
+            nodes {
+              id
+            }
           }
         }
       }
@@ -129,9 +131,11 @@ async function getPullRequestIdsForRef({ repo: { owner, name }, ref }) {
 
   const {
     repository: {
-      ref: { associatedPullRequests },
+      object: { associatedPullRequests },
     },
   } = await gitHubGraphqlRequest({ query, variables });
+
+  if (!associatedPullRequests) return [];
 
   return associatedPullRequests.nodes.map(({ id }) => id);
 }
