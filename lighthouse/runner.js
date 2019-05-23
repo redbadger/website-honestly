@@ -125,6 +125,8 @@ async function getPullRequestIdsForRef({ repo: { owner, name }, ref }) {
     Ref: ref,
   };
 
+  console.log('Getting pull requests for ref:', variables);
+
   const {
     repository: {
       ref: { associatedPullRequests },
@@ -155,6 +157,7 @@ async function gitHubGraphqlRequest({ query, variables }) {
 run();
 
 process.on('unhandledRejection', error => {
+  // eslint-disable-next-line no-console
   console.error(error);
   process.exit(1);
 });
