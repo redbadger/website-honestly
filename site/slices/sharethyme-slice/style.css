@@ -6,7 +6,7 @@
   background: #0c5c56;
   min-height: 200px;
   width: 100%;
-  max-width: contentMaxWidth;
+  max-width: 612px;
   margin: auto;
   position: relative;
 }
@@ -47,4 +47,34 @@
   height: 3px;
   width: 38px;
   margin-bottom: 13px;
+}
+
+.shareThymeImage {
+  display: none;
+}
+
+.shareThymeContent {
+  max-width: 280px;
+  margin: auto;
+}
+
+@media mediumScreen {
+  .shareThymeImage {
+    display: block;
+  }
+
+  .shareThymeContent {
+    max-width: 245px;
+    margin: initial;
+    display: inline-block;
+    margin-right: 70px;
+  }
+
+  .shareThymeSlice a {
+    margin: initial;
+  }
+
+  .shareThymeSlice picture {
+    display: inline-block;
+  }
 }
