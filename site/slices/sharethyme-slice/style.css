@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
+@value contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
+
+.shareThymeSlice {
+  background: #0c5c56;
+  min-height: 200px;
+  width: 100%;
+  max-width: contentMaxWidth;
+  margin: auto;
+  position: relative;
+}
+
+/* TODO: Import raleway correctly */
+.shareThymeSlice h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  max-width: 210px;
+}
+
+.shareThymeSlice a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #fcab02;
+  padding: 12px 30px;
+  display: block;
+  margin: auto;
+  width: 142px;
+  height: 40px;
+}
+
+.shareThymeLogo {
+  height: 36px;
+  width: 230px;
+  margin-bottom: 18px;
+}
+
+.shareThymeSlice h3:before {
+  display: block;
+  content: '';
+  background: #ffffff;
+  height: 3px;
+  width: 38px;
+  margin-bottom: 13px;
+}

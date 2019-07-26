@@ -5,11 +5,11 @@ import TopSlice from './homepage-top-slice';
 import CaseStudyOverview from '../../components/case-study-overview';
 import AwardsSlice from '../../slices/awards-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
-import TechLabSlice from '../../slices/techlab-slice';
+import ShareThymeSlice from '../../slices/sharethyme-slice';
 import Social from '../../components/social';
 import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
-import { YellowSlice } from '../../components/slice';
+import { SpruceSlice } from '../../components/slice';
 
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
@@ -30,9 +30,9 @@ export default function HomePage() {
       <Social {...social} />
       <TopSlice />
       <CaseStudyOverview />
-      <YellowSlice>
-        <TechLabSlice linkUrl="https://hubs.ly/H0gG3Wh0" />
-      </YellowSlice>
+      <SpruceSlice>
+        <ShareThymeSlice linkUrl="https://hubs.ly/H0gG3Wh0" />
+      </SpruceSlice>
       <TestimonialsSlice />
       <TechSlice />
       <ChecklistContactUs />

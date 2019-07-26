@@ -18,10 +18,12 @@ const colour = {
   white: 'white',
   green: 'green',
   yellow: 'yellow',
+  spruce: 'spruce',
 };
 
 const WhiteSlice = Slice(`${colour.white}Slice`);
 const GreenSlice = Slice(`${colour.green}Slice`);
 const YellowSlice = Slice(`${colour.yellow}Slice`);
+const SpruceSlice = Slice(`${colour.spruce}Slice`);
 
-export { WhiteSlice, GreenSlice, YellowSlice };
+export { WhiteSlice, GreenSlice, YellowSlice, SpruceSlice };

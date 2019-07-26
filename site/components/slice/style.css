@@ -16,6 +16,12 @@
   background-color: cainYellow;
 }
 
+.spruceSlice {
+  /* Sharethyme Spruce */
+  background-color: #0c5c56;
+}
+
+
 .container {
   padding: 40px 20px;
   display: flex;
