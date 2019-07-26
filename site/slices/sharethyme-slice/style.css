@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
 @value contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
 
@@ -32,6 +31,7 @@
   margin: auto;
   width: 142px;
   height: 40px;
+  font-weight: 800;
 }
 
 .shareThymeLogo {
