@@ -2,42 +2,42 @@
 @value contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
 
 .shareThymeSlice {
+  text-align: center;
   background: #0c5c56;
   min-height: 200px;
   width: 100%;
-  max-width: 612px;
-  margin: auto;
+  max-width: 800px;
   position: relative;
+  margin: auto;
 }
 
-/* TODO: Import raleway correctly */
 .shareThymeSlice h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
   color: #ffffff;
   margin-bottom: 30px;
-  max-width: 210px;
+  text-align: left;
 }
 
 .shareThymeSlice a {
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   color: #000000;
   text-align: center;
   border-radius: 7px;
   background-color: #fcab02;
-  padding: 12px 0;
+  padding: 9px 0;
   display: block;
-  margin: auto;
-  width: 142px;
-  height: 40px;
-  font-weight: 800;
+  width: 160px;
+  height: 42px;
+  font-weight: 700;
 }
 
 .shareThymeLogo {
   height: 36px;
   width: 230px;
   margin-bottom: 18px;
+  display: flex;
 }
 
 .shareThymeSlice h3:before {
@@ -54,6 +54,7 @@
 }
 
 .shareThymeContent {
+  display: inline-block;
   max-width: 280px;
   margin: auto;
 }
@@ -64,7 +65,7 @@
   }
 
   .shareThymeContent {
-    max-width: 245px;
+    max-width: calc(100% - 430px);
     margin: initial;
     display: inline-block;
     margin-right: 70px;
@@ -76,5 +77,29 @@
 
   .shareThymeSlice picture {
     display: inline-block;
+  }
+
+  .shareThymeSlice picture img {
+    max-width: 360px;
+  }
+
+  .shareThymeLogo {
+    height: 60px;
+    width: 330px;
+    margin-bottom: 8px;
+  }
+
+  .shareThymeSlice h3 {
+    font-size: 40px;
+  }
+
+  .shareThymeSlice h3:before {
+    margin-bottom: 33px;
+  }
+
+  .shareThymeSlice a {
+    padding: 18px 0;
+    width: 240px;
+    height: 60px;
   }
 }
