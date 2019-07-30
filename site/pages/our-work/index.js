@@ -4,6 +4,7 @@ import React from 'react';
 
 import styles from './style.css';
 
+import SharethymeSlice from './slices/sharethyme';
 import BankSlice from './slices/bank';
 import CarTrawlerSlice from './slices/car-trawler';
 import RetailerSlice from './slices/retailer';
@@ -35,6 +36,7 @@ export default function CaseStudies() {
   };
 
   const slices = [
+    SharethymeSlice,
     Pride,
     CarTrawlerSlice,
     Fidelity,
