@@ -47,6 +47,7 @@
 
 @value mediumScreen, largeScreen from "../_sizes.css";
 @import url('//hello.myfonts.net/count/322627');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
 @font-face {
   font-family: 'ProximaNova-Bold';

@@ -1,0 +1,104 @@
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../css/_colors.css";
+@value contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css"; 
+
+.shareThymeSlice {
+  text-align: center;
+  background: #0c5c56;
+  min-height: 200px;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.shareThymeSlice h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.shareThymeSlice a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #fcab02;
+  padding: 9px 0;
+  display: block;
+  width: 160px;
+  height: 42px;
+  font-weight: 700;
+}
+
+.shareThymeLogo {
+  height: 36px;
+  width: 230px;
+  margin-bottom: 18px;
+  display: flex;
+}
+
+.shareThymeSlice h3:before {
+  display: block;
+  content: '';
+  background: #ffffff;
+  height: 3px;
+  width: 38px;
+  margin-bottom: 13px;
+}
+
+.shareThymeImage {
+  display: none;
+}
+
+.shareThymeContent {
+  display: inline-block;
+  max-width: 280px;
+  margin: auto;
+}
+
+@media mediumScreen {
+  .shareThymeImage {
+    display: block;
+  }
+
+  .shareThymeContent {
+    max-width: calc(100% - 430px);
+    margin: initial;
+    display: inline-block;
+    margin-right: 70px;
+  }
+
+  .shareThymeSlice a {
+    margin: initial;
+  }
+
+  .shareThymeSlice picture {
+    display: inline-block;
+  }
+
+  .shareThymeSlice picture img {
+    max-width: 360px;
+  }
+
+  .shareThymeLogo {
+    height: 60px;
+    width: 330px;
+  }
+
+  .shareThymeSlice h3 {
+    font-size: 40px;
+  }
+
+  .shareThymeSlice h3:before {
+    margin-bottom: 33px;
+  }
+
+  .shareThymeSlice a {
+    padding: 18px 0;
+    width: 240px;
+    height: 60px;
+  }
+}
