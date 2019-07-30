@@ -31,7 +31,7 @@ export default function HomePage() {
       <TopSlice />
       <CaseStudyOverview />
       <SpruceSlice>
-        <ShareThymeSlice linkUrl="https://hubs.ly/H0gG3Wh0" />
+        <ShareThymeSlice linkUrl="https://www.red-badger.com/sharethyme" />
       </SpruceSlice>
       <TestimonialsSlice />
       <TechSlice />
