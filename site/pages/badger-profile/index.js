@@ -21,7 +21,9 @@ const BlogsLink = ({ badger }: { badger: Badger }) => {
 const BadgerProfile = ({ badger }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   badger.categories.sort((a, b) => a.order - b.order);
-  const categories = badger.categories.map(c => c.name).join(', ');
+  const categories = badger.categories
+    .map(c => c.name.replace(/^\w/, char => char.toUpperCase()))
+    .join(', ');
   const social = {
     title: `${fullName} | Red Badger`,
     description: badger.jobTitle,
