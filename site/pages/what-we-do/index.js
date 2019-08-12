@@ -46,7 +46,10 @@ function CaseStudies() {
       <div className={cx('caseStudyContainer', 'inverse')}>
         <Link className={styles.caseStudyContent} to="fortnumAndMasonCaseStudy">
           <div className={cx('imageWrapper', 'bank')}>
-            <img alt="" src={fortnumJpg} />
+            <img
+              alt="An iPad with the F&M site open, with a jar of F&M branded tea to the left hand side"
+              src={fortnumJpg}
+            />
           </div>
           <div className={styles.caseStudyTextContainer}>
             <div className={styles.caseStudyCompany}>Fortnum & Mason</div>
@@ -64,7 +67,10 @@ function CaseStudies() {
       <div className={styles.caseStudyContainer}>
         <Link className={styles.caseStudyContent} to="financialTimesCaseStudy">
           <div className={styles.imageWrapper}>
-            <img alt="" src={financialTimesJpg} />
+            <img
+              alt="A pair of hands holding an Ipad with the Financial Times page open"
+              src={financialTimesJpg}
+            />
           </div>
           <div className={styles.caseStudyTextContainer}>
             <div className={cx('caseStudyCompany', 'caseStudyCompany--onBlack')}>
