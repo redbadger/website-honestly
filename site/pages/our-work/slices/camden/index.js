@@ -23,11 +23,7 @@ export default function Camden({ layoutRight }: Props) {
         </Description>
         <ReadMore />
       </Text>
-      <Image
-        src={camden}
-        layout="attachToBottom"
-        alt="Hand holding a Samsung phone with the Camden site open"
-      />
+      <Image src={camden} layout="attachToBottom" alt="A mobile phone with the Camden site open" />
     </Container>
   );
 }

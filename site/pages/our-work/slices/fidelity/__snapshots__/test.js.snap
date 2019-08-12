@@ -16,7 +16,7 @@ exports[`pages/our-work/case-study/slices/fidelity renders correctly 1`] = `
     <ReadMore />
   </Text>
   <Image
-    alt="Pride heart animation"
+    alt="Illustration of a brief-case carrying man in a suit walking along a path through stylised mountains."
     src="listing.jpg"
   />
 </Container>
