@@ -28,7 +28,7 @@ const BBCCaseStudy = () => (
         title="BBC Now: Delivering a better customer experience, faster"
         tagline="How the rapid prototyping model helped the BBC to uncover new ways to engage its audience"
         headerImage={headerImage}
-        headerImageAlt="Tablet device showing screenshot of BBC website"
+        headerImageAlt="Laptop showing screenshot of BBC website"
         headerColor="#F2F3ED"
         social={social}
       />
