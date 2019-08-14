@@ -108,17 +108,17 @@ Array [
             class="wrapper"
           >
             <img
-              alt=""
+              alt="Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'"
               class="leftImg"
               src="left.jpg"
             />
             <img
-              alt=""
+              alt="Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'"
               class="middleImg"
               src="middle.jpg"
             />
             <img
-              alt=""
+              alt="Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'"
               class="rightImg"
               src="right.jpg"
             />
