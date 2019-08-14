@@ -181,14 +181,14 @@ const FinancialTimesCaseStudy = () => (
         </div>
       </div>
       <div className={styles.screenDemo}>
-        <div className={styles.screenDemo__description}>
-          The first iteration of the new homepage design and built in seven weeks
-        </div>
         <img
           src={screenImage}
           alt="Screenshot of Financial Times website"
           className={styles.screenDemo__image}
         />
+        <div className={styles.screenDemo__description}>
+          The first iteration of the new homepage design and built in seven weeks
+        </div>
       </div>
       <div className={styles.content}>
         <div className={styles.content__wrapper}>
