@@ -36,7 +36,8 @@
 .articleImgFlex {
   margin-bottom: 0;
   margin-right: 20px;
-  max-height: 680px;
+  padding: 0 10px;
+  width: 100%;
 }
 
 .overview {
