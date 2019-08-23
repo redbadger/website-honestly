@@ -87,9 +87,21 @@ class Triptych extends React.Component<{}, { activeImg: number }> {
     return (
       <div>
         <div ref={this.node} className={wrapperClass}>
-          <img className={styles.leftImg} src={left} alt="" />
-          <img className={styles.middleImg} src={middle} alt="" />
-          <img className={styles.rightImg} src={right} alt="" />
+          <img
+            className={styles.leftImg}
+            src={left}
+            alt="Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'"
+          />
+          <img
+            className={styles.middleImg}
+            src={middle}
+            alt="Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'"
+          />
+          <img
+            className={styles.rightImg}
+            src={right}
+            alt="Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'"
+          />
         </div>
 
         <div>

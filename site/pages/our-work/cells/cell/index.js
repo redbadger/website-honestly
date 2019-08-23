@@ -19,7 +19,7 @@ type Props = {
 
 export default function Cell(props: Props) {
   const displayImg = props.image ? (
-    <img src={props.image} className={styles.clientImage} alt={`${props.clientName} project`} />
+    <img src={props.image} className={styles.clientImage} alt={props.alt} />
   ) : null;
 
   return (
@@ -28,7 +28,7 @@ export default function Cell(props: Props) {
         <div className={styles.caseStudyContent}>
           <Link to={props.routeKey}>
             {displayImg}
-            <img src={props.clientLogo} className={styles.logo} alt={props.alt} />
+            <img src={props.clientLogo} className={styles.logo} alt={`${props.clientName} logo`} />
             <h2 className={props.image ? styles.normalHeader : styles.largeHeader}>
               {props.headerText}
             </h2>

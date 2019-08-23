@@ -14,11 +14,11 @@ exports[`pages/our-work/cells/cell renders a cell with a client image 1`] = `
         to="hallerCaseStudy"
       >
         <img
-          alt="Haller project"
           className="clientImage"
           src="/assets-honestly/Hall-3uKBy.jpg"
         />
         <img
+          alt="Haller logo"
           className="logo"
           src="/assets-honestly/haller-38WYH.png"
         />
@@ -61,6 +61,7 @@ exports[`pages/our-work/cells/cell renders a cell without a client image and lar
         to="hallerCaseStudy"
       >
         <img
+          alt="Haller logo"
           className="logo"
           src="/assets-honestly/haller-38WYH.png"
         />

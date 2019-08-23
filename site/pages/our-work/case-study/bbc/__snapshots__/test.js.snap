@@ -17,7 +17,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
           style="justify-content:center"
         >
           <img
-            alt="Tablet device showing screenshot of BBC website"
+            alt="Laptop showing screenshot of BBC website"
             class="header__image"
             src="header.jpg"
           />

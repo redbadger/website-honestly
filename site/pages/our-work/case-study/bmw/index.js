@@ -61,7 +61,10 @@ const BMWCaseStudy = () => (
           Using the companion iPhone, iPad and Android apps we created, visitors are able to
           retrieve the itinerary they created on the website to enhance their experience as they
           navigate around the museum.
-          <img alt="BMW car" src={articleImage} />
+          <img
+            alt="A wide-shot black and white CG render of a car in a museum surrounded by ribbons of light"
+            src={articleImage}
+          />
         </p>
       </CaseStudySection>
       <CaseStudySection title="Business benefits">

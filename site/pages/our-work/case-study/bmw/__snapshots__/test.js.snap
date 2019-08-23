@@ -105,7 +105,7 @@ exports[`site/pages/our-work/case-study/bmw/ renders correctly 1`] = `
       <p>
         Using the companion iPhone, iPad and Android apps we created, visitors are able to retrieve the itinerary they created on the website to enhance their experience as they navigate around the museum.
         <img
-          alt="BMW car"
+          alt="A wide-shot black and white CG render of a car in a museum surrounded by ribbons of light"
           src="article.jpg"
         />
       </p>

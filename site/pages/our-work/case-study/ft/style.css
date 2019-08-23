@@ -184,6 +184,7 @@
   height: auto;
   width: 80%;
   max-width: 733px;
+  margin-bottom: 20px;
 }
 
 .screenDemo__description {
@@ -264,6 +265,10 @@
 
   .screenDemo {
     padding-bottom: 0px;
+  }
+
+  .screenDemo__image {
+    margin-bottom: 0;
   }
 
   .quote {

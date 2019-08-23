@@ -22,7 +22,10 @@ export default function Fidelity({ layoutRight }: Props) {
         </Description>
         <ReadMore />
       </Text>
-      <Image src={fidelityImg} alt="Pride heart animation" />
+      <Image
+        src={fidelityImg}
+        alt="Illustration of a brief-case carrying man in a suit walking along a path through stylised mountains."
+      />
     </Container>
   );
 }

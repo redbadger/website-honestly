@@ -51,7 +51,7 @@ const BMWCell = () => (
     headerText="The shortcut between you and the museum"
     descriptionText="Pushing the boundaries of HTML5 technology to deliver a multi-platform 3D tour of the BMW Museum."
     routeKey="bmwCaseStudy"
-    alt="A wide-shot black and white CGI image of a car in a museum surrounded by ribbons of light"
+    alt="A wide-shot black and white CG render of a car in a museum surrounded by ribbons of light"
   />
 );
 

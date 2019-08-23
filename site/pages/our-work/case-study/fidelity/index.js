@@ -66,7 +66,7 @@ export default function Fidelity() {
         <img
           src={headerL}
           className={styles.headerImg}
-          alt="People (Badgers) sticking post-its on a blue wall"
+          alt="Illustration of a brief-case carrying man in a suit walking along a path through stylised mountains."
         />
       </div>
       <Body>

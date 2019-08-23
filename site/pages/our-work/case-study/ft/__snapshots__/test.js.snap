@@ -291,16 +291,16 @@ exports[`site/pages/our-work/case-study/ft/ renders correctly 1`] = `
   <div
     class="screenDemo"
   >
-    <div
-      class="screenDemo__description"
-    >
-      The first iteration of the new homepage design and built in seven weeks
-    </div>
     <img
       alt="Screenshot of Financial Times website"
       class="screenDemo__image"
       src="screen.jpg"
     />
+    <div
+      class="screenDemo__description"
+    >
+      The first iteration of the new homepage design and built in seven weeks
+    </div>
   </div>
   <div
     class="content"
