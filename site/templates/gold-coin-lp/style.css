@@ -1,0 +1,214 @@
+@value badgerWhite, badgerBlack, badgerRedOnWhite, badgerRedOnBlack, cainYellow from "../../css/_colors.css";
+@value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css";
+
+.goldCoinLP {
+  position: relative;
+}
+
+.goldCoinLPHeaderImage {
+  width: 100%;
+}
+
+.goldCoinLPContentContainer {
+  max-width: contentMaxWidth;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.goldCoinLPContent {
+  background: badgerWhite;
+  width: 100%;
+  z-index: 99;
+  margin-top: -160px;
+  padding: 20px;
+}
+
+.goldCoinLPDuration {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  composes: fontS from '../../css/typography/_fonts.css';
+  display: flex;
+  background: badgerBlack;
+  color: badgerWhite;
+  position: absolute;
+  line-height: 32px;
+  height: 65px;
+  top: -65px;
+  left: 0;
+  padding: 18px;
+}
+
+.goldCoinLPDuration svg {
+  margin-right: 12px;
+}
+
+.h1 {
+  composes: serif from '../../css/typography/_fonts.css';
+  composes: fontL from '../../css/typography/_fonts.css';
+  margin-bottom: 10px;
+}
+
+.h2 {
+  composes: lightSerif from '../../css/typography/_fonts.css';
+  composes: fontM from '../../css/typography/_fonts.css';
+  margin-bottom: 50px;
+}
+
+.h3 {
+  composes: serif from '../../css/typography/_fonts.css';
+  composes: fontM2 from '../../css/typography/_fonts.css';
+  margin-bottom: 10px;
+}
+
+.h4 {
+  composes: serif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
+}
+
+.goldCoinLPAtAGlance {
+  composes: fontS2 from '../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  margin-bottom: 45px;
+}
+
+.goldCoinLPAtAGlance p {
+  margin-bottom: 25px;
+}
+
+.goldCoinLPPriceImg {
+  height: 35px;
+  margin-right: 20px;
+  margin-bottom: -10px;
+}
+
+.goldCoinLPTypeImg {
+  height: 30px;
+  margin-right: 16px;
+  margin-bottom: -8px;
+}
+
+.goldCoinLPLocationImg {
+  height: 30px;
+  margin-right: 25px;
+  margin-bottom: -8px;
+}
+
+.goldCoinLPBodyText {
+  width: 50%;
+}
+
+.goldCoinLPQSection {
+  composes: lightSerif from '../../css/typography/_fonts.css';
+  composes: fontS2 from '../../css/typography/_fonts.css';
+  margin-bottom: 40px;
+}
+
+.goldCoinLPQSection li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.goldCoinLPQSection li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+
+.goldCoinLPConsultants {
+  display: flex;
+  margin-top: 40px;
+  width: 100vw;
+  max-width: contentMaxWidth;
+}
+
+.goldCoinLPConsultant {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
+  margin-right: 50px;
+}
+
+.goldCoinLPConsultant img {
+  width: 170px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.goldCoinLPConsultantRole {
+  max-width: 170px;
+}
+
+.goldCoinLPConsultantLink {
+  composes: serif from '../../css/typography/_fonts.css';
+  composes: fontS2 from '../../css/typography/_fonts.css';
+  color: badgerBlack;
+  position: relative;
+}
+
+.goldCoinLPConsultantArrow {
+  width: 10px;
+  margin-left: 6px;
+}
+
+
+.goldCoinLPConsultantLink:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.goldCoinLPExplore {
+  background: cainYellow;
+  padding: 50px 0 60px;
+}
+
+.goldCoinLPExploreContent {
+  width: contentMaxWidth;
+  margin: auto;
+}
+
+.goldCoinLPPreviews {
+  margin-top: 70px;
+  display: flex;
+}
+
+.goldCoinLPPreview {
+  display: block;
+  position: relative;
+  width: 270px;
+  margin-right: 65px;
+}
+
+.goldCoinLPPreview img {
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+.goldCoinLPDurationSmall {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
+  display: flex;
+  background: badgerBlack;
+  color: badgerWhite;
+  position: absolute;
+  line-height: 32px;
+  height: 35px;
+  top: -35px;
+  left: 0;
+  padding: 3px 10px;
+}
+
+.goldCoinLPDurationSmall svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+  margin-top: 4px;
+}
+
+.goldCoinLPPreviewText {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  composes: fontXS from '../../css/typography/_fonts.css';
+  color: badgerBlack;
+  background: badgerWhite;
+  height: 90px;
+  padding: 12px;
+  line-height: 1.0rem;
+}

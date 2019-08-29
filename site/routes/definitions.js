@@ -324,6 +324,12 @@ export const routeDefinitions: Array<RouteDefinition> = [
     parentKey: 'whatWeDoPage',
   },
   {
+    title: 'Service mesh',
+    description: 'Service mesh.',
+    key: 'serviceMeshLP',
+    route: 'what-we-offer/service-mesh',
+  },
+  {
     title: 'Not found',
     key: 'notFoundPage',
     route: '404',
