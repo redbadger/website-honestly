@@ -7,6 +7,8 @@ import Consultant from './consultant';
 import type { ConsultantProps } from './consultant';
 import PreviewSlice from './preview-slice';
 import type { PreviewSliceProps } from './preview-slice';
+import HubspotForm from '../../components/hubspot/form/index';
+import type { HubspotFormProps } from '../../components/hubspot/form/index';
 
 import ClockIcon from './clock-icon';
 
@@ -30,11 +32,14 @@ type GoldCoinLPProps = {
   whoWillRun: React.Node,
   consultants: Array<ConsultantProps>,
   previews: Array<PreviewSliceProps>,
+  formId: String,
+  hubspotForm: HubspotFormProps,
+  pageTitle: string,
 };
 
 const renderConsultants = (consultants: Array<ConsultantProps>) => {
   return consultants.map(({ image, name, role, profileUrl }: ConsultantProps) => {
-    return <Consultant image={image} name={name} role={role} profileUrl={profileUrl} />;
+    return <Consultant key={name} image={image} name={name} role={role} profileUrl={profileUrl} />;
   });
 };
 
@@ -42,6 +47,7 @@ const renderPreviews = (previews: Array<PreviewSliceProps>) => {
   return previews.map(({ image, title, subTitle, url, duration, alt }: PreviewSliceProps) => {
     return (
       <PreviewSlice
+        key={title}
         image={image}
         title={title}
         subTitle={subTitle}
@@ -68,6 +74,8 @@ const GoldCoinLP = ({
   whoWillRun,
   consultants,
   previews,
+  hubspotForm,
+  pageTitle,
 }: GoldCoinLPProps) => (
   <div>
     <div className={styles.goldCoinLP}>
@@ -84,7 +92,7 @@ const GoldCoinLP = ({
           <div className={styles.goldCoinLPAtAGlance}>
             <p>
               <img
-                className={styles.goldCoinLPPriceImg}
+                className={styles.goldCoinLPInfoImg}
                 src={priceImage}
                 alt="Price of engagement"
               />
@@ -92,18 +100,20 @@ const GoldCoinLP = ({
             </p>
             <p>
               <img
-                className={styles.goldCoinLPTypeImg}
+                className={styles.goldCoinLPInfoImg}
                 src={atAGlanceTypes[type].image}
                 alt="Type of engagement"
               />
               {atAGlanceTypes[type].text}
             </p>
             <p>
-              <img
-                className={styles.goldCoinLPLocationImg}
-                src={locationImage}
-                alt="Location of engagement"
-              />
+              <span className={styles.goldCoinLPInfoLocation}>
+                <img
+                  className={styles.goldCoinLPInfoImg}
+                  src={locationImage}
+                  alt="Location of engagement"
+                />
+              </span>
               {location}
             </p>
           </div>
@@ -128,12 +138,26 @@ const GoldCoinLP = ({
                 <div className={styles.goldCoinLPConsultants}>{renderConsultants(consultants)}</div>
               </div>
             </div>
+            <HubspotForm
+              portalId={hubspotForm.portalId}
+              guid={hubspotForm.guid}
+              name={hubspotForm.name}
+              cssClass={
+                hubspotForm.cssClass
+                  ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
+                  : styles.goldCoinForm
+              }
+              submitText={hubspotForm.submitText}
+              inlineMessage={hubspotForm.inlineMessage}
+              formFields={hubspotForm.formFields}
+              pageTitle={pageTitle}
+            />
           </div>
         </div>
       </div>
       <div className={styles.goldCoinLPExplore}>
         <div className={styles.goldCoinLPExploreContent}>
-          <h3 className={styles.h3}>Thirsty for know-how? There&apos;s more to explore.</h3>
+          <h3 className={styles.h3}>Thirsty for know-how? There’s more to explore.</h3>
           <div className={styles.goldCoinLPPreviews}>{renderPreviews(previews)}</div>
         </div>
       </div>

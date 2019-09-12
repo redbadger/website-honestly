@@ -11,6 +11,7 @@ describe('site/compiler', () => {
     tweets: [],
     badgers: [],
     badgerLookup: {},
+    hubspotForms: [],
   };
 
   describe('compileSite', () => {

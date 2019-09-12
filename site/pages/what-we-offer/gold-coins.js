@@ -1,5 +1,5 @@
 import React from 'react';
-// This is crying out to be moved to prismic/badger brain.
+// This is a great candidate to be moved to prismic/badger brain.
 // We should definitely be drawing consultant info from the badgers table
 
 import serviceMeshImage from './images/service-mesh-header.png';
@@ -44,7 +44,7 @@ export const serviceMeshData = {
       <ul>
         <li>What Service Mesh is</li>
         <li>How you can benefit from reducing complexity and boosting efficiency</li>
-        <li>Where to start with Service Mesh for your orginisation</li>
+        <li>Where to start with Service Mesh for your organisation</li>
       </ul>
     </div>
   ),
@@ -54,6 +54,9 @@ export const serviceMeshData = {
       <p>Red Badger&apos;s Technical Consultants:</p>
     </div>
   ),
+  hubspotForm: {
+    formId: 'a2c3b495-7093-47af-a6b6-bd4d82b9fe94',
+  },
   consultants: [
     {
       image: stuImg,
@@ -80,7 +83,7 @@ export const continuousDeliveryData = {
   duration: '1.5 hours',
   image: continuousDeliveryImage,
   alt: 'Illustration of a line of web-pages rolling off a conveyor belt',
-  title: 'Continuous delivery',
+  title: 'Continuous Delivery',
   subTitle: 'Get products out there faster (and drama-free)',
   url: 'what-we-offer/continuous-delivery',
 };
@@ -90,7 +93,7 @@ export const northStarData = {
   image: northStarImage,
   alt:
     'Illustration of overlayed graph lines with one that is highlighted and reach up towardsa a shining star',
-  title: 'North star',
+  title: 'North Star',
   subTitle: 'Be guided by a single, shining metric',
   url: 'what-we-offer/north-star',
 };
@@ -99,7 +102,7 @@ export const productStrategyData = {
   duration: '2 weeks',
   image: productStrategyImage,
   alt: 'Illustration of an array of bubbling laboratory beakers, test-tubes and so on',
-  title: 'Product strategy',
+  title: 'Product Strategy',
   subTitle: 'Get products out there faster (and drama-free)',
   url: 'what-we-offer/product-strategy',
 };

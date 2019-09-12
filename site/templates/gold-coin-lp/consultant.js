@@ -12,14 +12,14 @@ export type ConsultantProps = {
 };
 
 const Consultant = ({ image, name, role, profileUrl }: ConsultantProps) => (
-  <div className={styles.goldCoinLPConsultant}>
+  <a className={styles.goldCoinLPConsultant} href={profileUrl}>
     <img src={image} alt={`${name} headshot`} />
-    <a className={styles.goldCoinLPConsultantLink} href={profileUrl}>
+    <div className={styles.goldCoinLPConsultantLink}>
       {name}
       <Arrow className={styles.goldCoinLPConsultantArrow} />
-    </a>
+    </div>
     <p className={styles.goldCoinLPConsultantRole}>{role}</p>
-  </div>
+  </a>
 );
 
 export default Consultant;

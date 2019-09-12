@@ -73,6 +73,7 @@
     "react/destructuring-assignment": "off",
     "react/self-closing-comp": 1,
     "react/sort-comp": 0,
-    "no-unused-expressions": ["error", { "allowTernary": true }]
+    "no-unused-expressions": ["error", { "allowTernary": true }],
+    "react/no-array-index-key": 0
   }
 }
