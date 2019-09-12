@@ -138,20 +138,22 @@ const GoldCoinLP = ({
                 <div className={styles.goldCoinLPConsultants}>{renderConsultants(consultants)}</div>
               </div>
             </div>
-            <HubspotForm
-              portalId={hubspotForm.portalId}
-              guid={hubspotForm.guid}
-              name={hubspotForm.name}
-              cssClass={
-                hubspotForm.cssClass
-                  ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
-                  : styles.goldCoinForm
-              }
-              submitText={hubspotForm.submitText}
-              inlineMessage={hubspotForm.inlineMessage}
-              formFields={hubspotForm.formFields}
-              pageTitle={pageTitle}
-            />
+            {hubspotForm && (
+              <HubspotForm
+                portalId={hubspotForm.portalId}
+                guid={hubspotForm.guid}
+                name={hubspotForm.name}
+                cssClass={
+                  hubspotForm.cssClass
+                    ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
+                    : styles.goldCoinForm
+                }
+                submitText={hubspotForm.submitText}
+                inlineMessage={hubspotForm.inlineMessage}
+                formFields={hubspotForm.formFields}
+                pageTitle={pageTitle}
+              />
+            )}
           </div>
         </div>
       </div>
