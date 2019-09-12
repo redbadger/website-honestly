@@ -35,7 +35,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     super(props);
 
     let fieldData = [];
-    if (props.formFields.length) {
+    if (props.formFields && props.formFields.length) {
       fieldData = props.formFields
         .filter(field => {
           // Hubspot packages form fields and isolated chunks of html together
