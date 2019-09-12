@@ -35,7 +35,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     super(props);
 
     let fieldData = [];
-    if (props.formFields && props.formFields.length) {
+    if (props.formFields) {
       fieldData = props.formFields
         .filter(field => {
           // Hubspot packages form fields and isolated chunks of html together
@@ -161,29 +161,30 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
             encType="multipart/form-data"
             method="POST"
           >
-            {formFields.map((field, index) => {
-              const fieldState = HubspotForm.getFieldState(fieldData, field.name);
-              return (
-                <FormField
-                  key={index}
-                  richText={field.richText}
-                  name={field.name}
-                  label={field.label}
-                  fieldType={field.fieldType}
-                  description={field.description}
-                  defaultValue={field.defaultValue}
-                  value={fieldState ? fieldState.value : ''}
-                  placeholder={field.placeholder}
-                  required={field.required}
-                  enabled={field.enabled}
-                  hidden={field.hidden}
-                  labelHidden={field.labelHidden}
-                  valid={fieldState ? fieldState.valid : true}
-                  showWarnings={showWarnings}
-                  onChange={this._onChange}
-                />
-              );
-            })}
+            {formFields &&
+              formFields.map((field, index) => {
+                const fieldState = HubspotForm.getFieldState(fieldData, field.name);
+                return (
+                  <FormField
+                    key={index}
+                    richText={field.richText}
+                    name={field.name}
+                    label={field.label}
+                    fieldType={field.fieldType}
+                    description={field.description}
+                    defaultValue={field.defaultValue}
+                    value={fieldState ? fieldState.value : ''}
+                    placeholder={field.placeholder}
+                    required={field.required}
+                    enabled={field.enabled}
+                    hidden={field.hidden}
+                    labelHidden={field.labelHidden}
+                    valid={fieldState ? fieldState.valid : true}
+                    showWarnings={showWarnings}
+                    onChange={this._onChange}
+                  />
+                );
+              })}
             <input type="submit" onClick={this._onSubmit} name={submitText} value={submitText} />
           </form>
         )}
