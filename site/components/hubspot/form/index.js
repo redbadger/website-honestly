@@ -33,23 +33,28 @@ type HubspotFormState = {
 export default class HubspotForm extends React.Component<HubspotFormProps, HubspotFormState> {
   constructor(props: HubspotFormProps) {
     super(props);
-    const fieldData = props.formFields
-      .filter(field => {
-        // Hubspot packages form fields and isolated chunks of html together
-        // this removes any fields that don't correlate to an input.
-        if (field.name) {
-          return true;
-        }
-        return false;
-      })
-      .map(field => {
-        const formField = {
-          name: field.name,
-          value: field.defaultValue ? field.defaultValue : '',
-          valid: !field.required,
-        };
-        return formField;
-      });
+
+    let fieldData = [];
+    if (props.formFields.length) {
+      fieldData = props.formFields
+        .filter(field => {
+          // Hubspot packages form fields and isolated chunks of html together
+          // this removes any fields that don't correlate to an input.
+          if (field.name) {
+            return true;
+          }
+          return false;
+        })
+        .map(field => {
+          const formField = {
+            name: field.name,
+            value: field.defaultValue ? field.defaultValue : '',
+            valid: !field.required,
+          };
+          return formField;
+        });
+    }
+
     this.state = {
       showWarnings: false,
       submitted: false,
