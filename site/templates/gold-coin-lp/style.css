@@ -1,4 +1,4 @@
-@value badgerWhite, badgerBlack, badgerRedOnBlack, cainYellow, grey, linesOnWhite from "../../css/_colors.css";
+@value badgerWhite, badgerBlack, badgerRedOnBlack, cainYellow, grey, scorpian, linesOnWhite from "../../css/_colors.css";
 @value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../css/_sizes.css";
 
 .goldCoinLP {
@@ -7,6 +7,8 @@
 
 .goldCoinLPHeaderImage {
   width: 100%;
+  min-height: 124px;
+  object-fit: cover;
 }
 
 .goldCoinLPContentContainer {
@@ -19,9 +21,8 @@
 .goldCoinLPContent {
   background: badgerWhite;
   width: 100%;
-  z-index: 99;
-  margin-top: -160px;
-  padding: 20px;
+  margin-top: 0;
+  padding: 20px 32px 0;
 }
 
 .goldCoinLPDuration {
@@ -31,11 +32,11 @@
   background: badgerBlack;
   color: badgerWhite;
   position: absolute;
-  line-height: 32px;
-  height: 65px;
-  top: -65px;
-  left: 0;
-  padding: 18px;
+  line-height: 37px;
+  height: 46px;
+  top: -49px;
+  left: 32px;
+  padding: 7px;
 }
 
 .goldCoinLPDuration img {
@@ -45,24 +46,26 @@
 }
 
 .goldCoinLPBody {
-  display: flex;
+  display: block;
 }
 
 .h1 {
   composes: serif from '../../css/typography/_fonts.css';
-  composes: fontL from '../../css/typography/_fonts.css';
+  font-size: 40px;
+  line-height: 1.1em;
   margin-bottom: 10px;
 }
 
 .h2 {
   composes: lightSerif from '../../css/typography/_fonts.css';
   composes: fontM from '../../css/typography/_fonts.css';
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .h3 {
   composes: serif from '../../css/typography/_fonts.css';
-  composes: fontM2 from '../../css/typography/_fonts.css';
+  font-size: 30px;
+  line-height: 1.2em;
   margin-bottom: 10px;
 }
 
@@ -78,7 +81,7 @@
 }
 
 .goldCoinLPAtAGlance p {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .goldCoinLPInfoImg {
@@ -93,8 +96,8 @@
 }
 
 .goldCoinLPBodyText {
-  width: 50%;
-  padding-right: 10px;
+  width: 100%;
+  padding-right: 0;
 }
 
 .goldCoinLPQSection {
@@ -121,6 +124,7 @@
 
 .goldCoinLPConsultants {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
   width: 100vw;
   max-width: contentMaxWidth;
@@ -129,6 +133,8 @@
 .goldCoinLPConsultant {
   composes: sansSerif from '../../css/typography/_fonts.css';
   composes: fontXS from '../../css/typography/_fonts.css';
+  width: 120px;
+  white-space: nowrap;
   margin-right: 50px;
   color: badgerBlack;
 }
@@ -138,18 +144,19 @@
 }
 
 .goldCoinLPConsultant img {
-  width: 170px;
+  width: 100%;
   display: block;
   margin-bottom: 8px;
 }
 
 .goldCoinLPConsultantRole {
-  max-width: 170px;
+  white-space: initial;
 }
 
 .goldCoinLPConsultantLink {
   composes: serif from '../../css/typography/_fonts.css';
-  composes: fontS2 from '../../css/typography/_fonts.css';
+  font-size: 16px;
+  line-height: 1.2em;
   display: inline;
   color: badgerBlack;
   position: relative;
@@ -166,17 +173,18 @@
 
 .goldCoinLPExplore {
   background: cainYellow;
-  padding: 50px 0 60px;
+  padding: 50px 32px 60px;
 }
 
 .goldCoinLPExploreContent {
-  width: contentMaxWidth;
+  max-width: contentMaxWidth;
   margin: auto;
 }
 
 .goldCoinLPPreviews {
   margin-top: 70px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 20px;
 }
@@ -186,7 +194,12 @@
   padding: 3px;
   display: block;
   position: relative;
-  width: 270px;
+  width: 100%;
+  margin-bottom: 68px;
+}
+
+.goldCoinLPPreview:last-child {
+  margin-bottom: 0;
 }
 
 .goldCoinLPPreview img {
@@ -228,12 +241,12 @@
 .goldCoinForm {
   composes: sansSerif from '../../css/typography/_fonts.css';
   composes: fontS2 from '../../css/typography/_fonts.css';
-  display: table;
-  margin-left: 10px;
-  float: right;
   background: grey;
   padding: 30px 30px 20px;
-  width: 100%;
+  display: block;
+  margin-left: -32px;
+  float: none;
+  width: 100vw;
 }
 
 .goldCoinForm label {
@@ -261,10 +274,15 @@
   color: badgerWhite;
   height: 42px;
   display: block;
+  outline: none;
   background: badgerRedOnBlack;
   width: auto;
   margin: 10px auto;
   padding: 0 40px;
+}
+
+.goldCoinForm input[type='submit']:hover {
+  background: scorpian;
 }
 
 .goldCoinForm h5 {
@@ -285,4 +303,61 @@
 
 .goldCoinForm figure + input {
   border: 1px solid badgerRedOnBlack;
+}
+
+@media largeScreen {
+  .goldCoinLPConsultantLink {
+    font-size: 20px;
+    line-height: 1.35em;
+  }
+
+  .goldCoinLPContent {
+    margin-top: -160px;
+    padding: 20px;
+  }
+
+  .goldCoinLPDuration {
+    line-height: 32px;
+    height: 65px;
+    top: -65px;
+    left: 0;
+    padding: 18px;
+  }
+
+  .h2 {
+    margin-bottom: 50px;
+  }
+
+  .goldCoinLPAtAGlance p {
+    margin-bottom: 15px;
+  }
+
+  .goldCoinLPBodyText {
+    width: 50%;
+    padding-right: 10px;
+  }
+
+  .goldCoinLPBody {
+    display: flex;
+  }
+
+  .goldCoinLPConsultant {
+    width: 170px;
+  }
+
+  .goldCoinForm {
+    display: table;
+    margin-left: 10px;
+    float: right;
+    width: 100%;
+  }
+
+  .goldCoinLPExplore {
+    padding: 50px 0 60px;
+  }
+
+  .goldCoinLPPreview {
+    width: 270px;
+    margin-bottom: 0;
+  }
 }
