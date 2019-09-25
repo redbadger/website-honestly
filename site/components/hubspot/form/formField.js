@@ -35,6 +35,7 @@ const FormInput = ({
   onChange,
   valid,
   showWarnings,
+  value,
 }) => {
   return (
     <div aria-label={description}>
@@ -58,7 +59,7 @@ const FormInput = ({
         // I have no idea why this needs to be a string??
         enabled={enabled.toString()}
         hidden={hidden}
-        value={defaultValue || ''}
+        value={value || defaultValue || ''}
         placeholder={placeholder}
         onChange={event => {
           onChange(event, name, required);
@@ -89,6 +90,7 @@ const FormField = ({
   showWarnings,
   valid,
   onChange,
+  value,
 }: HubspotFormField) => {
   return (
     <div id={name}>
@@ -108,6 +110,7 @@ const FormField = ({
           onChange={onChange}
           valid={valid}
           showWarnings={showWarnings}
+          value={value}
         />
       )}
     </div>

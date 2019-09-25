@@ -18,7 +18,7 @@ type ServiceMeshProps = {
 };
 
 const social = {
-  title: 'Service Mesh| Red Badger',
+  title: 'Service Mesh | Red Badger',
   description:
     'We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.',
   metaImage: serviceMeshData.headerImage,
