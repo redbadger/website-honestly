@@ -327,7 +327,6 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ title }) => title,
     description: 'The value that Red Badger offers - a page for a specific Red Badger engagement',
     key: 'goldCoinPage',
-    parentKey: 'goldCoinPages',
     route: 'what-we-offer/{slug}',
     stateToProps: ({ badgers, goldCoinPages }, params = {}) => {
       if (goldCoinPages) {
