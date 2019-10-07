@@ -1,4 +1,6 @@
 // @flow
+// html strings are provided by our CMS and sanitized in badger brain
+/* eslint-disable react/no-danger */
 // Requires import * as syntax to use React.Node prop type.
 import * as React from 'react';
 import styles from './style.css';
@@ -76,95 +78,105 @@ const GoldCoinLP = ({
   previews,
   hubspotForm,
   pageTitle,
-}: GoldCoinLPProps) => (
-  <div>
-    <div className={styles.goldCoinLP}>
-      <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />
-      <div className={styles.goldCoinLPContentContainer}>
-        <div className={styles.goldCoinLPContent}>
-          <div className={styles.goldCoinLPDuration}>
-            <ClockIcon />
-            {duration}
-          </div>
-          <h1 className={styles.h1}>{title}</h1>
-          <h2 className={styles.h2}>{subTitle}</h2>
+}: GoldCoinLPProps) => {
+  return (
+    <div>
+      <div className={styles.goldCoinLP}>
+        <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />
+        <div className={styles.goldCoinLPContentContainer}>
+          <div className={styles.goldCoinLPContent}>
+            <div className={styles.goldCoinLPDuration}>
+              <ClockIcon />
+              {duration}
+            </div>
+            <h1 className={styles.h1}>{title}</h1>
+            <h2 className={styles.h2}>{subTitle}</h2>
 
-          <div className={styles.goldCoinLPAtAGlance}>
-            <p>
-              <img
-                className={styles.goldCoinLPInfoImg}
-                src={priceImage}
-                alt="Price of engagement"
-              />
-              {price}
-            </p>
-            <p>
-              <img
-                className={styles.goldCoinLPInfoImg}
-                src={atAGlanceTypes[type].image}
-                alt="Type of engagement"
-              />
-              {atAGlanceTypes[type].text}
-            </p>
-            <p>
-              <span className={styles.goldCoinLPInfoLocation}>
+            <div className={styles.goldCoinLPAtAGlance}>
+              <p>
                 <img
                   className={styles.goldCoinLPInfoImg}
-                  src={locationImage}
-                  alt="Location of engagement"
+                  src={priceImage}
+                  alt="Price of engagement"
                 />
-              </span>
-              {location}
-            </p>
-          </div>
+                {price}
+              </p>
+              {atAGlanceTypes[type] && (
+                <p>
+                  <img
+                    className={styles.goldCoinLPInfoImg}
+                    src={atAGlanceTypes[type].image}
+                    alt="Type of engagement"
+                  />
+                  {atAGlanceTypes[type].text}
+                </p>
+              )}
 
-          <div className={styles.goldCoinLPBody}>
-            <div className={styles.goldCoinLPBodyText}>
-              <div className={styles.goldCoinLPQSection}>
-                <h3 className={styles.h3}>What is it?</h3>
-                {whatIsIt}
-              </div>
-              <div className={styles.goldCoinLPQSection}>
-                <h3 className={styles.h3}>Who is this for?</h3>
-                {whoIsItFor}
-              </div>
-              <div className={styles.goldCoinLPQSection}>
-                <h3 className={styles.h3}>What will you learn?</h3>
-                {whatWillYouLearn}
-              </div>
-              <div className={styles.goldCoinLPQSection}>
-                <h3 className={styles.h3}>Who will run this session?</h3>
-                {whoWillRun}
-                <div className={styles.goldCoinLPConsultants}>{renderConsultants(consultants)}</div>
-              </div>
+              <p>
+                <span className={styles.goldCoinLPInfoLocation}>
+                  <img
+                    className={styles.goldCoinLPInfoImg}
+                    src={locationImage}
+                    alt="Location of engagement"
+                  />
+                </span>
+                {location}
+              </p>
             </div>
-            {hubspotForm && (
-              <HubspotForm
-                portalId={hubspotForm.portalId}
-                guid={hubspotForm.guid}
-                name={hubspotForm.name}
-                cssClass={
-                  hubspotForm.cssClass
-                    ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
-                    : styles.goldCoinForm
-                }
-                submitText={hubspotForm.submitText}
-                inlineMessage={hubspotForm.inlineMessage}
-                formFields={hubspotForm.formFields}
-                pageTitle={pageTitle}
-              />
-            )}
+
+            <div className={styles.goldCoinLPBody}>
+              <div className={styles.goldCoinLPBodyText}>
+                <div className={styles.goldCoinLPQSection}>
+                  <h3 className={styles.h3}>What is it?</h3>
+                  <div dangerouslySetInnerHTML={{ __html: whatIsIt }} />
+                </div>
+                <div className={styles.goldCoinLPQSection}>
+                  <h3 className={styles.h3}>Who is this for?</h3>
+                  <div dangerouslySetInnerHTML={{ __html: whoIsItFor }} />
+                </div>
+                <div className={styles.goldCoinLPQSection}>
+                  <h3 className={styles.h3}>What will you learn?</h3>
+                  <div dangerouslySetInnerHTML={{ __html: whatWillYouLearn }} />
+                </div>
+                <div className={styles.goldCoinLPQSection}>
+                  <h3 className={styles.h3}>Who will run this session?</h3>
+                  <div dangerouslySetInnerHTML={{ __html: whoWillRun }} />
+                  <div className={styles.goldCoinLPConsultants}>
+                    {renderConsultants(consultants)}
+                  </div>
+                </div>
+              </div>
+              {hubspotForm && (
+                <HubspotForm
+                  portalId={hubspotForm.portalId}
+                  guid={hubspotForm.guid}
+                  name={hubspotForm.name}
+                  cssClass={
+                    hubspotForm.cssClass
+                      ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
+                      : styles.goldCoinForm
+                  }
+                  submitText={hubspotForm.submitText}
+                  inlineMessage={hubspotForm.inlineMessage}
+                  formFields={hubspotForm.formFields}
+                  pageTitle={pageTitle}
+                />
+              )}
+            </div>
           </div>
         </div>
-      </div>
-      <div className={styles.goldCoinLPExplore}>
-        <div className={styles.goldCoinLPExploreContent}>
-          <h3 className={styles.h3}>Thirsty for know-how? There’s more to explore.</h3>
-          <div className={styles.goldCoinLPPreviews}>{renderPreviews(previews)}</div>
-        </div>
+        {previews.length && (
+          <div className={styles.goldCoinLPExplore}>
+            <div className={styles.goldCoinLPExploreContent}>
+              <h3 className={styles.h3}>Thirsty for know-how? There’s more to explore.</h3>
+              <div className={styles.goldCoinLPPreviews}>{renderPreviews(previews)}</div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
-  </div>
-);
+  );
+};
 
+/* eslint-enable react/no-danger */
 export default GoldCoinLP;

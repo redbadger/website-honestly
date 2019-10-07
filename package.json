@@ -41,6 +41,7 @@
     "babel-loader": "^8.0.0",
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-dynamic-import-node": "^2.2.0",
+    "babel-polyfill": "^6.26.0",
     "bugsnag": "^2.3.0",
     "classnames": "^2.2.5",
     "copy-webpack-plugin": "^5.0.2",

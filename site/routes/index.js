@@ -40,7 +40,7 @@ import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
 
-import ServiceMeshLP from '../pages/what-we-offer/service-mesh';
+import GoldCoinLP from '../templates/gold-coin-lp/index';
 
 const componentMap = {
   aboutUsPage: AboutUsPage,
@@ -76,7 +76,7 @@ const componentMap = {
   technology: Technology,
   termsAndConditions: TermsAndConditions,
   whatWeDoPage: WhatWeDoPage,
-  serviceMeshLP: ServiceMeshLP,
+  goldCoinPage: GoldCoinLP,
 };
 
 function routes() {

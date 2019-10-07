@@ -32,17 +32,17 @@
   background: badgerBlack;
   color: badgerWhite;
   position: absolute;
-  line-height: 37px;
+  line-height: 32px;
   height: 46px;
   top: -49px;
   left: 32px;
-  padding: 7px;
+  padding: 9px;
 }
 
 .goldCoinLPDuration img {
   margin-right: 12px;
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
 }
 
 .goldCoinLPBody {
@@ -109,6 +109,11 @@
 .goldCoinLPQSection li {
   position: relative;
   padding-left: 20px;
+}
+
+.goldCoinLPQSection img,
+.goldCoinLPQSection iframe {
+  width: 100%;
 }
 
 .goldCoinLPQSection li:before {
@@ -202,8 +207,15 @@
   margin-bottom: 0;
 }
 
-.goldCoinLPPreview img {
-  width: 100%;
+.goldCoinLPPreviewImageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.goldCoinLPPreviewImageContainer img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
   margin-bottom: -3px;
 }
 
@@ -306,6 +318,16 @@
 }
 
 @media largeScreen {
+  .goldCoinLPDuration {
+    line-height: 37px;
+    padding: 7px;
+  }
+
+  .goldCoinLPDuration img {
+    height: 32px;
+    width: 32px;
+  }
+
   .goldCoinLPConsultantLink {
     font-size: 20px;
     line-height: 1.35em;

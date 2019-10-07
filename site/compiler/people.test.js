@@ -11,7 +11,43 @@ describe('site/compiler', () => {
     tweets: [],
     badgers: [],
     badgerLookup: {},
-    hubspotForms: [],
+    goldCoinPages: [],
+  };
+
+  const testGoldCoinPage = {
+    slug: 'test',
+    title: 'test',
+    subTitle: 'test',
+    headerImage: 'https://www.example.com/test.jpg',
+    headerAlt: 'test',
+    duration: 'test',
+    price: 'test',
+    type: 'test',
+    location: 'test',
+    whatIsIt: '<p>test</p>',
+    whoIsItFor: '<p>test</p>',
+    whatWillYouLearn: '<p>test</p>',
+    whoWillRun: '<p>test</p>',
+    consultants: ['test', 'test', 'test'],
+    hubspotForm: {
+      portalId: 1111111,
+      guid: 'test',
+      name: 'test',
+      cssClass: 'test',
+      submitText: 'test',
+      inlineMessage: 'test',
+      formFields: [
+        {
+          name: 'test',
+          label: 'test',
+          fieldType: 'test',
+          required: true,
+          enabled: true,
+          hidden: false,
+          labelHidden: false,
+        },
+      ],
+    },
   };
 
   describe('compileSite', () => {
@@ -26,13 +62,13 @@ describe('site/compiler', () => {
         slug: 'alex',
         categories,
       };
-
       const routes = expandRoutes(
         {
           ...baseState,
           badgers: [a],
           categories,
           badgerLookup: { [a.slug]: 0 },
+          goldCoinPages: [testGoldCoinPage],
         },
         createStateNavigator(),
       );
@@ -76,6 +112,7 @@ describe('site/compiler', () => {
               [a.slug]: 0,
               [s.slug]: 1,
             },
+            goldCoinPages: [testGoldCoinPage],
             categories,
           },
           createStateNavigator(),
@@ -108,6 +145,7 @@ describe('site/compiler', () => {
             badgers: [s],
             badgerLookup: { [s.slug]: 0 },
             categories,
+            goldCoinPages: [testGoldCoinPage],
           },
           createStateNavigator(),
         );
@@ -150,6 +188,7 @@ describe('site/compiler', () => {
             badgers: badgers.push(e) && badgers,
             badgerLookup: { ...badgerLookup, [e.slug]: badgers.indexOf(e) },
             categories,
+            goldCoinPages: [testGoldCoinPage],
           },
           createStateNavigator(),
         );
@@ -188,6 +227,7 @@ describe('site/compiler', () => {
             badgers,
             badgerLookup,
             categories,
+            goldCoinPages: [testGoldCoinPage],
           },
           createStateNavigator(),
         );
@@ -225,6 +265,7 @@ describe('site/compiler', () => {
           badgers,
           badgerLookup,
           categories,
+          goldCoinPages: [testGoldCoinPage],
         },
         createStateNavigator(),
       );
@@ -260,6 +301,7 @@ describe('site/compiler', () => {
           badgers,
           badgerLookup,
           categories,
+          goldCoinPages: [testGoldCoinPage],
         },
         createStateNavigator(),
       );
@@ -313,6 +355,7 @@ describe('site/compiler', () => {
           badgers,
           badgerLookup,
           categories,
+          goldCoinPages: [testGoldCoinPage],
         },
         createStateNavigator(),
       );
@@ -350,6 +393,7 @@ describe('site/compiler', () => {
           badgers: [a],
           categories,
           badgerLookup: { [a.slug]: 0 },
+          goldCoinPages: [testGoldCoinPage],
         },
         createStateNavigator(),
       );
@@ -385,6 +429,7 @@ describe('site/compiler', () => {
             [a.slug]: 0,
             [s.slug]: 1,
           },
+          goldCoinPages: [testGoldCoinPage],
         },
         createStateNavigator(),
       );

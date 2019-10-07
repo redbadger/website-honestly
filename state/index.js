@@ -53,7 +53,7 @@ const getSiteState = () =>
           badgerLookup: toLookupDict(data.badgers, b => b.slug),
           categories: data.categories,
           qAndAs: data.qAndAs,
-          hubspotForms: data.hubspotForms,
+          goldCoinPages: data.goldCoinPages,
         },
         fetchErrors,
       };

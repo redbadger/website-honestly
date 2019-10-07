@@ -32,15 +32,13 @@ export const sanitiseExcerpt = (excerpt: string = ''): string =>
   excerpt.replace(/<(?:.|\n)*?>/gm, '');
 
 export const mapDataToState = (data: Object): Array<BlogPost> =>
-  data.map(
-    (post: Object): BlogPost => ({
-      url: post.absolute_url,
-      title: post.page_title,
-      excerpt: sanitiseExcerpt(post.post_summary) || 'Click to read more!',
-      date: moment(post.publish_date),
-      author: post.blog_author.display_name,
-    }),
-  );
+  data.map((post: Object): BlogPost => ({
+    url: post.absolute_url,
+    title: post.page_title,
+    excerpt: sanitiseExcerpt(post.post_summary) || 'Click to read more!',
+    date: moment(post.publish_date),
+    author: post.blog_author.display_name,
+  }));
 
 const getPostsForTag = params =>
   fetchRetry(getUrl(params), { timeout: 10000, retryDelay: 200 })

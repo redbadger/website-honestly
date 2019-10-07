@@ -20,7 +20,9 @@ const PreviewSlice = ({ image, title, subTitle, url, duration, alt }: PreviewSli
       <ClockIcon />
       {duration}
     </div>
-    <img src={image} alt={alt} />
+    <div className={styles.goldCoinLPPreviewImageContainer}>
+      <img src={image} alt={alt} />
+    </div>
     <div className={styles.goldCoinLPPreviewText}>
       <h4 className={styles.h4}>{title}</h4>
       <p className={styles.goldCoinLPPreviewSubtitle}>{subTitle}</p>

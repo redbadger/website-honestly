@@ -324,17 +324,50 @@ export const routeDefinitions: Array<RouteDefinition> = [
     parentKey: 'whatWeDoPage',
   },
   {
-    title: 'Service mesh',
-    description: 'Service mesh.',
-    key: 'serviceMeshLP',
-    route: 'what-we-offer/service-mesh',
-    defaults: { formId: 'a2c3b495-7093-47af-a6b6-bd4d82b9fe94' },
-    stateToProps: ({ hubspotForms }, params = {}) => {
-      const formData = hubspotForms.find(form => form.guid === params.formId);
-      return {
-        hubspotForm: { ...formData },
-      };
+    title: ({ title }) => title,
+    description: 'The value that Red Badger offers - a page for a specific Red Badger engagement',
+    key: 'goldCoinPage',
+    parentKey: 'goldCoinPages',
+    route: 'what-we-offer/{slug}',
+    stateToProps: ({ badgers, goldCoinPages }, params = {}) => {
+      if (goldCoinPages) {
+        const pageData = goldCoinPages.find(page => page.slug === params.slug);
+
+        if (pageData) {
+          pageData.consultants = pageData.consultants
+            .map(consultant => {
+              let matchedBadger = badgers.find(badger => badger.slug === consultant);
+              if (matchedBadger) {
+                const { firstName, lastName, slug, primaryImageUrl, jobTitle } = matchedBadger;
+                matchedBadger = {
+                  name: `${firstName} ${lastName}`,
+                  image: primaryImageUrl,
+                  role: jobTitle,
+                  profileUrl: `/people/${slug}`,
+                };
+              }
+              return matchedBadger;
+            })
+            .filter(consultant => !!consultant);
+          pageData.previews = goldCoinPages
+            .filter(page => page.slug !== pageData.slug)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 3)
+            .map(preview => {
+              return {
+                image: preview.headerImage,
+                title: preview.title,
+                subTitle: preview.subTitle,
+                url: `/what-we-offer/${preview.slug}`,
+                duration: preview.duration,
+                alt: preview.headerAlt,
+              };
+            });
+          return { ...pageData };
+        }
+      }
     },
+    gen: state => state.goldCoinPages.map(({ slug }) => ({ slug })),
   },
   {
     title: 'Not found',

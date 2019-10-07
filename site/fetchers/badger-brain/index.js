@@ -2,8 +2,6 @@ import marked from 'marked';
 import fetch from 'node-fetch';
 import handleErrors from '../util/handle-errors';
 
-import { hubspotFormIds } from './hubspotFormIds';
-
 const badgerBrainEndpoint = () => process.env.BADGER_BRAIN_HOST;
 
 const getRequestOptions = (body, token) => ({
@@ -135,28 +133,44 @@ const fullEventsQuery = `
   }
 `;
 
-const hubspotForms = `
-  hubspotFormsById(ids: "${hubspotFormIds}") {
-    portalId
-    guid
-    name
-    cssClass
-    submitText
-    inlineMessage
-    formFields {
-      richText
-      name
-      label
-      fieldType
-      description
-      defaultValue
-      placeholder
-      required
-      enabled
-      hidden
-      labelHidden
-    }
-  }
+const goldCoinPages = `
+  allGoldCoinPages {
+        slug
+        title
+        subTitle
+        headerImage
+        headerAlt
+        duration
+        price
+        type
+        location
+        whatIsIt
+        whoIsItFor
+        whatWillYouLearn
+        whoWillRun
+        consultants
+        hubspotForm {
+          portalId
+          guid
+          name
+          cssClass
+          submitText
+          inlineMessage
+          formFields {
+            richText
+            name
+            label
+            fieldType
+            description
+            defaultValue
+            placeholder
+            required
+            enabled
+            hidden
+            labelHidden
+          }
+        }
+      }
 `;
 
 export function getData() {
@@ -206,19 +220,19 @@ export function getData() {
         tabletURL
         mobileURL
       }
-      ${hubspotForms}
+      ${goldCoinPages}
     }
   `;
 
   return fetch(badgerBrainEndpoint(), getRequestOptions(body))
     .then(handleErrors)
     .then(response => response.json())
-    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner, hubspotFormsById } }) => ({
+    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner, allGoldCoinPages } }) => ({
       events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
       badgers: sortBadgers(allBadgers),
       categories: getCategories(allBadgers),
       qAndAs: selectValidQandAs(allQnA),
-      hubspotForms: hubspotFormsById,
+      goldCoinPages: allGoldCoinPages,
       eventsBanner,
     }));
 }
