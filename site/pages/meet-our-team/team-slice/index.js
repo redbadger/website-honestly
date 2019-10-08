@@ -52,13 +52,13 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
   }
 
   // TODO: Rebuild this whole component. Some weird anti-patterns going on.
-  // eslint-disable camelcase
+  /* eslint-disable camelcase */
   UNSAFE_componentWillReceiveProps(nextProps: TeamSliceProps) {
     const { badgers, page } = nextProps;
     this.setState({ badgers: initBadgers(badgers, page) });
     this.badgerElements = {};
   }
-  // eslint-enable camelcase
+  /* eslint-enable camelcase */
 
   componentWillUnmount() {
     cancelAnimationFrame(this.requestAnimationFrameId);
