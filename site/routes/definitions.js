@@ -333,21 +333,23 @@ export const routeDefinitions: Array<RouteDefinition> = [
         const pageData = goldCoinPages.find(page => page.slug === params.slug);
 
         if (pageData) {
-          pageData.consultants = pageData.consultants
-            .map(consultant => {
-              let matchedBadger = badgers.find(badger => badger.slug === consultant);
-              if (matchedBadger) {
-                const { firstName, lastName, slug, primaryImageUrl, jobTitle } = matchedBadger;
-                matchedBadger = {
-                  name: `${firstName} ${lastName}`,
-                  image: primaryImageUrl,
-                  role: jobTitle,
-                  profileUrl: `/people/${slug}`,
-                };
-              }
-              return matchedBadger;
-            })
-            .filter(consultant => !!consultant);
+          if (pageData.consultants) {
+            pageData.consultants = pageData.consultants
+              .map(consultant => {
+                let matchedBadger = badgers.find(badger => badger.slug === consultant);
+                if (matchedBadger) {
+                  const { firstName, lastName, slug, primaryImageUrl, jobTitle } = matchedBadger;
+                  matchedBadger = {
+                    name: `${firstName} ${lastName}`,
+                    image: primaryImageUrl,
+                    role: jobTitle,
+                    profileUrl: `/people/${slug}`,
+                  };
+                }
+                return matchedBadger;
+              })
+              .filter(consultant => !!consultant);
+          }
           pageData.previews = goldCoinPages
             .filter(page => page.slug !== pageData.slug)
             .sort(() => 0.5 - Math.random())

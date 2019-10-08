@@ -35,12 +35,6 @@ class BeforeSignUp extends Component<BeforeSignUpProps, BeforeSignUpState> {
     };
   }
 
-  componentWillReceiveProps() {
-    this.setState({
-      submitting: false,
-    });
-  }
-
   handleInputChange = (event: SyntheticInputEvent<HTMLInputElement>) => {
     this.setState({
       [event.target.name]: event.target.value,

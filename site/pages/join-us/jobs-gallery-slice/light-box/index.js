@@ -48,7 +48,7 @@ class LightBoxGallery extends Component<LightBoxGalleryProps, LightBoxGallerySta
     (this: any).handleArrowNavigation = this.handleArrowNavigation.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     document.addEventListener('keydown', this.handleArrowNavigation);
   }
 

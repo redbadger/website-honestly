@@ -124,12 +124,6 @@ export default class AfterSignup extends Component<AfterSignupProps, AfterSignup
     this.triggerReflow();
   }
 
-  componentWillReceiveProps() {
-    this.setState({
-      submitting: false,
-    });
-  }
-
   element: HTMLElement;
 
   handleInputChange = (event: SyntheticInputEvent<HTMLInputElement>) => {

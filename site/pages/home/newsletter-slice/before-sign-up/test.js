@@ -28,15 +28,6 @@ describe('BeforeSignUp', () => {
     });
   });
 
-  it('handles componentWillReceiveProps and sets the state correctly', () => {
-    const wrapper = shallow(<BeforeSignUp />);
-    wrapper.instance().componentWillReceiveProps();
-    expect(wrapper.state()).toEqual({
-      email_address: '',
-      submitting: false,
-    });
-  });
-
   it('handles handleSubmit and sets the state correctly', () => {
     const submitFormFunction = () =>
       new Promise(resolve => {

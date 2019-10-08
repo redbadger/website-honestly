@@ -31,17 +31,6 @@ describe('AfterSignUp', () => {
     });
   });
 
-  it('handles componentWillReceiveProps and sets the state correctly', () => {
-    const wrapper = mount(<AfterSignUp />);
-    wrapper.instance().componentWillReceiveProps();
-    expect(wrapper.state()).toEqual({
-      name: '',
-      company: '',
-      role: '',
-      submitting: false,
-    });
-  });
-
   it('handles handleSubmit and sets the state correctly', () => {
     const submitFormFunction = () =>
       new Promise(resolve => {

@@ -15,6 +15,10 @@ type BenefitState = {
 };
 
 class Benefit extends Component<BenefitProps, BenefitState> {
+  static getDerivedStateFromProps(props: BenefitProps) {
+    return { showButton: !props.mobileView };
+  }
+
   constructor(props: BenefitProps) {
     super(props);
     this.state = {
@@ -22,12 +26,6 @@ class Benefit extends Component<BenefitProps, BenefitState> {
       showButton: false,
     };
   }
-
-  componentWillReceiveProps = (props: BenefitProps) => {
-    this.setState({ showButton: !props.mobileView });
-  };
-
-  props: BenefitProps;
 
   handleClick = () => {
     this.setState(({ open }) => ({ open: !open }));
