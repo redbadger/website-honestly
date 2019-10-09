@@ -51,8 +51,7 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
     this.requestAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
   }
 
-  // TODO: Rebuild this whole component. Some weird anti-patterns going on.
-  /* eslint-disable camelcase */
+  // TODO: Rebuild this component, I'm getting code smell here.
   UNSAFE_componentWillReceiveProps(nextProps: TeamSliceProps) {
     const { badgers, page } = nextProps;
     this.setState({ badgers: initBadgers(badgers, page) });
