@@ -21,6 +21,18 @@ export type HubspotFormField = {
   onChange: Function,
 };
 
+const InputWarning = ({ warningText }) => {
+  return (
+    <figure id="form-field-required-warning">
+      <figcaption>{warningText}</figcaption>
+    </figure>
+  );
+};
+
+const InputLabel = ({ id, labelText }) => {
+  return <label id={id}>{labelText}</label>;
+};
+
 const FormInput = ({
   name,
   label,
@@ -40,16 +52,17 @@ const FormInput = ({
   return (
     <div aria-label={description}>
       {!hidden && !labelHidden && label && (
-        <label id={`${name || ''}-${fieldType}-label`}>{`${label || ''}${
-          required ? ' *' : ''
-        }`}</label>
+        <InputLabel
+          id={`${name || ''}-${fieldType}-label`}
+          labelText={`${label || ''}${required ? ' *' : ''}`}
+        />
       )}
       {!valid && showWarnings && required && (
-        <figure id="form-field-required-warning">
-          <figcaption>
-            Please enter a valid {inputTypes[name] ? inputTypes[name].fullName : ' input'}
-          </figcaption>
-        </figure>
+        <InputWarning
+          warningText={`Please enter a valid ${
+            inputTypes[name] ? inputTypes[name].fullName : ' input'
+          }`}
+        />
       )}
       <input
         id={`${name || ''}-${fieldType}`}

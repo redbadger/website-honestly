@@ -331,7 +331,6 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ badgers, goldCoinPages }, params = {}) => {
       if (goldCoinPages) {
         const pageData = goldCoinPages.find(page => page.slug === params.slug);
-
         if (pageData) {
           if (pageData.consultants) {
             pageData.consultants = pageData.consultants
