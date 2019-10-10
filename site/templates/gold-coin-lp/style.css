@@ -8,6 +8,7 @@
 .goldCoinLPHeaderImage {
   width: 100%;
   min-height: 124px;
+  max-height: 474px;
   object-fit: cover;
 }
 
