@@ -101,14 +101,24 @@ const GoldCoinLP = ({
                 />
                 {price}
               </p>
-              {atAGlanceTypes[type] && (
+              {(type &&
+                (atAGlanceTypes[type] && (
+                  <p>
+                    <img
+                      className={styles.goldCoinLPInfoImg}
+                      src={atAGlanceTypes[type].image}
+                      alt="Type of engagement"
+                    />
+                    {atAGlanceTypes[type].text}
+                  </p>
+                ))) || (
                 <p>
                   <img
                     className={styles.goldCoinLPInfoImg}
-                    src={atAGlanceTypes[type].image}
+                    src={atAGlanceTypes.lunch.image}
                     alt="Type of engagement"
                   />
-                  {atAGlanceTypes[type].text}
+                  {atAGlanceTypes.lunch.text}
                 </p>
               )}
 

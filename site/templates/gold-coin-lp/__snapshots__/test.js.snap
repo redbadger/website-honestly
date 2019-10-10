@@ -44,6 +44,14 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
             test-price
           </p>
           <p>
+            <img
+              alt="Type of engagement"
+              className="goldCoinLPInfoImg"
+              src="lunch.png"
+            />
+            Lunch & Learn
+          </p>
+          <p>
             <span
               className="goldCoinLPInfoLocation"
             >
