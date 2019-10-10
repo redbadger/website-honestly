@@ -5,6 +5,7 @@
 import * as React from 'react';
 import styles from './style.css';
 
+import Social from '../../components/social';
 import Consultant from './consultant';
 import type { ConsultantProps } from './consultant';
 import PreviewSlice from './preview-slice';
@@ -37,6 +38,7 @@ type GoldCoinLPProps = {
   formId: String,
   hubspotForm: HubspotFormProps,
   pageTitle: string,
+  slug: string,
 };
 
 const renderConsultants = (consultants: Array<ConsultantProps>) => {
@@ -78,9 +80,19 @@ const GoldCoinLP = ({
   previews,
   hubspotForm,
   pageTitle,
+  slug,
 }: GoldCoinLPProps) => {
   return (
     <div>
+      <Social
+        title={`${title} | Red Badger`}
+        description={
+          'We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.'
+        }
+        metaImage={headerImage}
+        altTex={headerAlt}
+        url={`https://red-badger.com/what-we-offer/${slug}`}
+      />
       <div className={styles.goldCoinLP}>
         <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />
         <div className={styles.goldCoinLPContentContainer}>
