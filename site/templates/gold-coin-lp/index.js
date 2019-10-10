@@ -141,9 +141,11 @@ const GoldCoinLP = ({
                 <div className={styles.goldCoinLPQSection}>
                   <h3 className={styles.h3}>Who will run this session?</h3>
                   <div dangerouslySetInnerHTML={{ __html: whoWillRun }} />
-                  <div className={styles.goldCoinLPConsultants}>
-                    {renderConsultants(consultants)}
-                  </div>
+                  {consultants && (
+                    <div className={styles.goldCoinLPConsultants}>
+                      {renderConsultants(consultants)}
+                    </div>
+                  )}
                 </div>
               </div>
               {hubspotForm && (
@@ -165,7 +167,7 @@ const GoldCoinLP = ({
             </div>
           </div>
         </div>
-        {previews.length && (
+        {previews && (
           <div className={styles.goldCoinLPExplore}>
             <div className={styles.goldCoinLPExploreContent}>
               <h3 className={styles.h3}>Thirsty for know-how? There’s more to explore.</h3>
