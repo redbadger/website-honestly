@@ -3,7 +3,7 @@
 exports[`site/templates/gold-coin-lp Renders 1`] = `
 <div>
   <Social
-    altTex="test-alt"
+    altText="test-alt"
     description="We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right."
     metaImage="https://www.example.com/test.jpg"
     title="test-title | Red Badger"

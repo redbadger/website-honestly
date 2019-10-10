@@ -90,7 +90,7 @@ const GoldCoinLP = ({
           'We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.'
         }
         metaImage={headerImage}
-        altTex={headerAlt}
+        altText={headerAlt}
         url={`https://red-badger.com/what-we-offer/${slug}`}
       />
       <div className={styles.goldCoinLP}>
