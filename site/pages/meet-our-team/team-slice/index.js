@@ -52,6 +52,7 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
   }
 
   // TODO: Rebuild this component, I'm getting code smell here.
+  /* eslint-disable camelcase */
   UNSAFE_componentWillReceiveProps(nextProps: TeamSliceProps) {
     const { badgers, page } = nextProps;
     this.setState({ badgers: initBadgers(badgers, page) });
