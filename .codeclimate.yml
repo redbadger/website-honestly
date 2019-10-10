@@ -10,3 +10,4 @@ exclude_patterns:
   - '**/__snapshots__/'
   - '**/*.stories.js'
   - 'webpack.*.config.js'
+  - '**/*test.js'
