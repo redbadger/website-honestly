@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/templates/gold-coin-lp Renders 1`] = `
+<div>
+  <Social
+    altText="test-alt"
+    description="We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right."
+    metaImage="https://www.example.com/test.jpg"
+    title="test-title | Red Badger"
+    url="https://red-badger.com/what-we-offer/test"
+  />
+  <div
+    className="goldCoinLP"
+  >
+    <img
+      alt="test-alt"
+      className="goldCoinLPHeaderImage"
+      src="https://www.example.com/test.jpg"
+    />
+    <div
+      className="goldCoinLPContentContainer"
+    >
+      <div
+        className="goldCoinLPContent"
+      >
+        <div
+          className="goldCoinLPDuration"
+        >
+          <ClockIcon />
+          test-duration
+        </div>
+        <h1
+          className="h1"
+        >
+          test-title
+        </h1>
+        <h2
+          className="h2"
+        >
+          test-subtitle
+        </h2>
+        <div
+          className="goldCoinLPAtAGlance"
+        >
+          <p>
+            <img
+              alt="Price of engagement"
+              className="goldCoinLPInfoImg"
+              src="price.png"
+            />
+            test-price
+          </p>
+          <p>
+            <img
+              alt="Type of engagement"
+              className="goldCoinLPInfoImg"
+              src="lunch.png"
+            />
+            Lunch & Learn
+          </p>
+          <p>
+            <span
+              className="goldCoinLPInfoLocation"
+            >
+              <img
+                alt="Location of engagement"
+                className="goldCoinLPInfoImg"
+                src="location.png"
+              />
+            </span>
+            test-location
+          </p>
+        </div>
+        <div
+          className="goldCoinLPBody"
+        >
+          <div
+            className="goldCoinLPBodyText"
+          >
+            <div
+              className="goldCoinLPQSection"
+            >
+              <h3
+                className="h3"
+              >
+                What is it?
+              </h3>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<p>test what is it</p>",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="goldCoinLPQSection"
+            >
+              <h3
+                className="h3"
+              >
+                Who is this for?
+              </h3>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<p>test who is it for</p>",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="goldCoinLPQSection"
+            >
+              <h3
+                className="h3"
+              >
+                What will you learn?
+              </h3>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<p>test what will you learn</p>",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="goldCoinLPQSection"
+            >
+              <h3
+                className="h3"
+              >
+                Who will run this session?
+              </h3>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<p>test who will run</p>",
+                  }
+                }
+              />
+              <div
+                className="goldCoinLPConsultants"
+              >
+                <Consultant
+                  image="https://www.example.com/test-3.jpg"
+                  key="test-consultant"
+                  name="test-consultant"
+                  profileUrl="https://www.example.com/test-consultant"
+                  role="test-role"
+                />
+              </div>
+            </div>
+          </div>
+          <HubspotForm
+            cssClass="test-css goldCoinForm"
+            formFields={
+              Array [
+                Object {
+                  "enabled": true,
+                  "fieldType": "test-type",
+                  "hidden": false,
+                  "label": "test-label",
+                  "labelHidden": false,
+                  "name": "test-field-name",
+                  "required": true,
+                },
+              ]
+            }
+            guid="test-guid"
+            inlineMessage="test-inline"
+            name="test-name"
+            portalId={1111111}
+            submitText="test-submit"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="goldCoinLPExplore"
+    >
+      <div
+        className="goldCoinLPExploreContent"
+      >
+        <h3
+          className="h3"
+        >
+          Thirsty for know-how? There’s more to explore.
+        </h3>
+        <div
+          className="goldCoinLPPreviews"
+        >
+          <PreviewSlice
+            alt="test-alt-2"
+            duration="test-duration-2"
+            image="https://www.example.com/test-2.jpg"
+            key="test-title-2"
+            subTitle="test-subtitle-2"
+            title="test-title-2"
+            url="https://www.example.com/"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

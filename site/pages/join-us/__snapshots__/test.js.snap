@@ -717,9 +717,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             How does Red Badger support me if I’m unwell?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, How does Red Badger support me if I’m unwell? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             As well as enhanced sick pay, we also offer private medical cover provided by Vitality.
@@ -737,9 +747,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             What is covered to keep me healthy?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, What is covered to keep me healthy? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             We have a cycle to work scheme, which offers a loan of up to £1,000 to lease you a bike and accessories. Our HQ office also has great bike storage and shower facilities. We have ad-hoc yoga and other classes and there’s always a supply of free fruit in our kitchens.
@@ -757,9 +777,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             In the worst-case scenario, how do Red Badger support me and my family?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, In the worst-case scenario, how do Red Badger support me and my family? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             We’ve got several benefits designed to help you through difficult times. These include confidential legal advice and counselling through our Employee Assistance Programme, our death in service cover, permanent health insurance and critical illness cover.
@@ -801,9 +831,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             What pension contributions will I receive?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, What pension contributions will I receive? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             From day one you’ll be auto-enrolled on our pension scheme and on passing probation you’ll be able to opt-in to our enhanced scheme, which offers an employer contribution of 5% of your salary.
@@ -821,9 +861,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             Do you offer assistance with the cost of commuting?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, Do you offer assistance with the cost of commuting? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             Yes, you can take out an interest-free loan to help with the cost of travel to and from work.
@@ -841,9 +891,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             Is there a bonus scheme?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, Is there a bonus scheme? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             While we don’t believe in performance-related bonuses, we do have a generous referral bonus scheme.
@@ -885,9 +945,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             How much holiday will I get?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, How much holiday will I get? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             In addition to bank holidays, we offer 24 holidays per year, which incrementally increases to 28 days after six years service.
@@ -905,9 +975,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             What’s your parental leave policy?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, What’s your parental leave policy? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             Starting at 26 weeks and depending on your length of service, you’ll be eligible for either our enhanced - 12 weeks full pay - or our enhanced plus - 16 weeks full pay - maternity or shared parental leave. New fathers can also take enhanced paternity leave in addition to shared parental leave.
@@ -925,9 +1005,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             Do you have any wellbeing programmes?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, Do you have any wellbeing programmes? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             Once a month a masseuse comes into the office to give at-desk massages. We also have several wellbeing programmes and talks throughout the year.
@@ -969,9 +1059,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             What socials can I get involved in?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, What socials can I get involved in? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             When you join, check out our social calendar to see what’s going on - from dodgeball to pub quizzes to ring making to diversity lunches, you are invited to take part in as much or as little as you would like. And don’t forget our two annual parties!
@@ -989,9 +1089,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             Can I donate to charity through the payroll?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, Can I donate to charity through the payroll? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             Yes, you can join our Give As You Earn scheme to make tax-free charity donations, Red Badger will also match your donation!
@@ -1009,9 +1119,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             I’m interested in the Red Badger culture, can I get involved?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, I’m interested in the Red Badger culture, can I get involved? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             We’re proud of our culture and we want to consciously grow it as the business expands, join our monthly Culture Committee to help shape our culture conversations.
@@ -1029,9 +1149,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             Does Red Badger work with any charities?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, Does Red Badger work with any charities? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             We pride ourself on our charity partnerships and we encourage Badgers to get involved in our charity initiatives by joining our Social Value taskforce.
@@ -1073,9 +1203,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             How can I develop at Red Badger?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, How can I develop at Red Badger? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             Each year you’ll receive a training budget of £2,000 to spend on your professional development. You’ll also be invited to attend various in-house training events and lunch n learns.
@@ -1093,9 +1233,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             Do you have a library?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, Do you have a library? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             Our HQ office has a well-stocked library, which you are welcome to borrow from or add to. We’ll buy the books on the condition that you share them with everyone!
@@ -1113,9 +1263,19 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           >
                             How will I be supported to develop?
                           </h4>
+                          <button
+                            aria-expanded="false"
+                            aria-label="answer, How will I be supported to develop? "
+                            class="button__more"
+                            type="button"
+                          >
+                            <span
+                              class="button__arrow"
+                            />
+                          </button>
                         </div>
                         <div
-                          class="benefit__answer__visible"
+                          class="benefit__answer__hidden"
                         >
                           <p>
                             You’ll be able to discuss your career development goals with your manager, who will help give you opportunities and support to achieve these.

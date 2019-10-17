@@ -15,6 +15,7 @@ describe('site/compiler', () => {
           categories: [],
           instagramPosts: [],
           tweets: [],
+          goldCoinPages: [],
         },
         createStateNavigator(),
       );
@@ -64,6 +65,7 @@ describe('site/compiler', () => {
           categories: [],
           instagramPosts: [],
           tweets: [],
+          goldCoinPages: [],
         },
         createStateNavigator(),
       );
@@ -128,6 +130,7 @@ describe('site/compiler', () => {
           categories: [],
           instagramPosts: [],
           tweets: [],
+          goldCoinPages: [],
         },
         createStateNavigator(),
       );

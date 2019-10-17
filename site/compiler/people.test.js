@@ -11,6 +11,7 @@ describe('site/compiler', () => {
     tweets: [],
     badgers: [],
     badgerLookup: {},
+    goldCoinPages: [],
   };
 
   describe('compileSite', () => {
@@ -25,7 +26,6 @@ describe('site/compiler', () => {
         slug: 'alex',
         categories,
       };
-
       const routes = expandRoutes(
         {
           ...baseState,
@@ -75,6 +75,7 @@ describe('site/compiler', () => {
               [a.slug]: 0,
               [s.slug]: 1,
             },
+
             categories,
           },
           createStateNavigator(),

@@ -17,6 +17,52 @@ type RouteDefinition = {|
   },
 |};
 
+const getGoldCoinConsultants = (consultants, badgers) => {
+  // the 'consultants' data comes in from badger brain as an array of slugs.
+  // the slugs themselves are provided in prismic from the same records as the
+  // badger profiles. So rather than bload the site state with duplicates of said profiles
+  // We can retrieve them from the already fetched state here by matching slugs.
+  return consultants
+    .map(consultant => {
+      let matchedBadger = badgers.find(badger => badger.slug === consultant);
+      if (matchedBadger) {
+        const { firstName, lastName, slug, primaryImageUrl, jobTitle } = matchedBadger;
+        matchedBadger = {
+          name: `${firstName} ${lastName}`,
+          image: primaryImageUrl,
+          role: jobTitle,
+          profileUrl: `/people/${slug}`,
+        };
+      }
+      return matchedBadger;
+    })
+    .filter(consultant => !!consultant);
+};
+
+const getGoldCoinPreviews = (goldCoinPages, currentPageSlug) => {
+  // Like the above case for the consultants, there is no point in duplicating records
+  // This function generates and collates the data for three random previews
+  // that are shown at the bottom of a gold coin page.
+  // First we remove the current page from the pool of pages
+  // Then we shuffle them up,
+  // We slice off 3 at random
+  // and maps those into an array of usable previews.
+  return goldCoinPages
+    .filter(page => page.slug !== currentPageSlug)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3)
+    .map(preview => {
+      return {
+        image: preview.headerImage,
+        title: preview.title,
+        subTitle: preview.subTitle,
+        url: `/what-we-offer/${preview.slug}`,
+        duration: preview.duration,
+        alt: preview.headerAlt,
+      };
+    });
+};
+
 export const routeDefinitions: Array<RouteDefinition> = [
   {
     title: 'Home',
@@ -322,6 +368,26 @@ export const routeDefinitions: Array<RouteDefinition> = [
       growingTrendsBlogPosts,
     }),
     parentKey: 'whatWeDoPage',
+  },
+  {
+    title: ({ title }) => title,
+    description: 'The value that Red Badger offers - a page for a specific Red Badger engagement',
+    key: 'goldCoinPage',
+    route: 'what-we-offer/{slug}',
+    stateToProps: ({ badgers, goldCoinPages }, params = {}) => {
+      if (goldCoinPages) {
+        // find page that matches passed in slug.
+        const pageData = goldCoinPages.find(page => page.slug === params.slug);
+        if (pageData) {
+          if (pageData.consultants) {
+            pageData.consultants = getGoldCoinConsultants(pageData.consultants, badgers);
+          }
+          pageData.previews = getGoldCoinPreviews(goldCoinPages, pageData.slug);
+          return { ...pageData };
+        }
+      }
+    },
+    gen: state => state.goldCoinPages.map(({ slug }) => ({ slug })),
   },
   {
     title: 'Not found',

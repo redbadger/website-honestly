@@ -40,6 +40,15 @@ exports[`site/pages/home/hubspot-signup renders correctly 1`] = `
           />
         </a>
       </span>
+      <script
+        charset="utf-8"
+        src="https://js.hscta.net/cta/current.js"
+      />
+      <script
+        type="text/javascript"
+      >
+         hbspt.cta.load(4210858, '6a020b57-ac2f-4b6d-8273-503c7b261094', {}); 
+      </script>
     </span>
   </div>
 </section>

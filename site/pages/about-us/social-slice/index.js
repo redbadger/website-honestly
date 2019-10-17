@@ -25,12 +25,13 @@ type SocialSliceState = {
 };
 
 class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
-  componentWillMount() {
-    this.setState({
+  constructor(props: SocialSliceProps) {
+    super(props);
+    this.state = {
       tile: 0,
-      totalTiles: this.props.instagramPosts.length + (this.props.tweets.length - 1),
+      totalTiles: props.instagramPosts.length + (props.tweets.length - 1),
       viewWidth: 0,
-    });
+    };
   }
 
   componentDidMount() {

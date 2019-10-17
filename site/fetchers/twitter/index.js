@@ -114,19 +114,17 @@ const firstImageInTweet = (tweet: TwitterResponse) => {
   const media = entities.media || [];
 
   return media
-    .map(
-      ({ media_url_https: url, type, sizes }): ?$PropertyType<Tweet, 'image'> => {
-        if (type === 'photo' && url && sizes) {
-          const { w: width, h: height } = sizes.small || {};
+    .map(({ media_url_https: url, type, sizes }): ?$PropertyType<Tweet, 'image'> => {
+      if (type === 'photo' && url && sizes) {
+        const { w: width, h: height } = sizes.small || {};
 
-          if (typeof width === 'number' && typeof height === 'number') {
-            return { url, smallSize: { width, height } };
-          }
+        if (typeof width === 'number' && typeof height === 'number') {
+          return { url, smallSize: { width, height } };
         }
+      }
 
-        return null;
-      },
-    )
+      return null;
+    })
     .filter(x => x)[0];
 };
 

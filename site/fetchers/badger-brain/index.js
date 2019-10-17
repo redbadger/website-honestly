@@ -133,6 +133,46 @@ const fullEventsQuery = `
   }
 `;
 
+const goldCoinPages = `
+  allGoldCoinPages {
+        slug
+        title
+        subTitle
+        headerImage
+        headerAlt
+        duration
+        price
+        type
+        location
+        whatIsIt
+        whoIsItFor
+        whatWillYouLearn
+        whoWillRun
+        consultants
+        hubspotForm {
+          portalId
+          guid
+          name
+          cssClass
+          submitText
+          inlineMessage
+          formFields {
+            richText
+            name
+            label
+            fieldType
+            description
+            defaultValue
+            placeholder
+            required
+            enabled
+            hidden
+            labelHidden
+          }
+        }
+      }
+`;
+
 export function getData() {
   const body = `
     query {
@@ -180,17 +220,19 @@ export function getData() {
         tabletURL
         mobileURL
       }
+      ${goldCoinPages}
     }
   `;
 
   return fetch(badgerBrainEndpoint(), getRequestOptions(body))
     .then(handleErrors)
     .then(response => response.json())
-    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner } }) => ({
+    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner, allGoldCoinPages } }) => ({
       events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
       badgers: sortBadgers(allBadgers),
       categories: getCategories(allBadgers),
       qAndAs: selectValidQandAs(allQnA),
+      goldCoinPages: allGoldCoinPages,
       eventsBanner,
     }));
 }

@@ -40,6 +40,8 @@ import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
 
+import GoldCoinLP from '../templates/gold-coin-lp/index';
+
 const componentMap = {
   aboutUsPage: AboutUsPage,
   badger: BadgerProfile,
@@ -74,6 +76,7 @@ const componentMap = {
   technology: Technology,
   termsAndConditions: TermsAndConditions,
   whatWeDoPage: WhatWeDoPage,
+  goldCoinPage: GoldCoinLP,
 };
 
 function routes() {

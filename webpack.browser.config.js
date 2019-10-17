@@ -36,10 +36,10 @@ const clientConfig = webpackMerge(baseWebConfig, {
           output: {
             comments: false,
           },
+          warnings: false,
           compress: {
             unused: true,
             dead_code: true,
-            warnings: false,
             drop_debugger: true,
           },
         },
