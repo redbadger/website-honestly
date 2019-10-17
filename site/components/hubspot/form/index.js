@@ -72,6 +72,9 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
   }
 
   static validateContent(type: string, value: string, required: boolean) {
+    // for strings with special constraints like emails or phone numbers
+    // If they input has a special case retrieve that validator and run
+    // the string through it
     if (inputTypes[type]) {
       const { validator } = inputTypes[type];
       if (validator && (required || value)) {
@@ -81,6 +84,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     if (required) {
       return value.length > 0;
     }
+    // If neither of the above constrains apply, the input is inherently valid.
     return true;
   }
 
