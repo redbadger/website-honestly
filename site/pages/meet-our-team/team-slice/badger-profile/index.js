@@ -17,7 +17,6 @@ export type Badger = {
   jobTitle: string,
   loaded: boolean,
   inView: boolean,
-  className: string,
 };
 
 const BadgerProfile = ({ badger, inView }: { badger: Badger }) => {
