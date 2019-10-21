@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import { InView } from 'react-intersection-observer';
 import styles from './style.css';
 import BadgerProfile from './badger-profile';
 import JobAdvert from './job-advert';
@@ -12,18 +13,8 @@ const paginate = (badgers, page, loadAll) => {
   return badgers.slice(start, start + 20);
 };
 
-const inView = el => {
-  let distance = 0;
-  let element = el;
-  while (element) {
-    distance += element.offsetTop;
-    element = element.offsetParent;
-  }
-  return distance !== 0 && distance < window.pageYOffset + window.innerHeight + 50;
-};
-
 const initBadgers = (badgers, page) =>
-  badgers.map((badger, i) => ({
+  badgers.map<Badger>((badger, i) => ({
     ...badger,
     loaded: i < page * 20,
   }));
@@ -39,11 +30,15 @@ type TeamSliceState = {
 };
 
 class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
+  static getDerivedStateFromProps(nextProps: TeamSliceProps) {
+    const { badgers, page } = nextProps;
+    return { badgers: initBadgers(badgers, page) };
+  }
+
   constructor(props: TeamSliceProps) {
     super(props);
     const { badgers, page } = props;
     this.state = { loadAll: false, badgers: initBadgers(badgers, page) };
-    this.badgerElements = {};
     this.calculateLoaded = this.calculateLoaded.bind(this);
   }
 
@@ -51,20 +46,9 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
     this.requestAnimationFrameId = requestAnimationFrame(this.calculateLoaded);
   }
 
-  // TODO: Rebuild this component, I'm getting code smell here.
-  /* eslint-disable camelcase */
-  UNSAFE_componentWillReceiveProps(nextProps: TeamSliceProps) {
-    const { badgers, page } = nextProps;
-    this.setState({ badgers: initBadgers(badgers, page) });
-    this.badgerElements = {};
-  }
-  /* eslint-enable camelcase */
-
   componentWillUnmount() {
     cancelAnimationFrame(this.requestAnimationFrameId);
   }
-
-  badgerElements: any;
 
   /*
     Upgrading Babel 7 has caused an issue with flow:
@@ -79,7 +63,7 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
     this.calculateLoaded has been set with void 0, which causes:
     TypeError: Cannot read property 'bind' of undefined
     the syntax below is a workaround hopefully later versions 
-    of @babel/preset-flow will fix thi
+    of @babel/preset-flow will fix
   */
   calculateLoaded: Function = this.calculateLoaded;
 
@@ -89,7 +73,7 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
     const { badgers, loadAll } = this.state;
     let loadedChanged = false;
     const updatedBadgers = badgers.map(badger => {
-      const loaded = badger.loaded || inView(this.badgerElements[badger.slug]);
+      const { loaded } = badger;
       loadedChanged = loadedChanged || badger.loaded !== loaded;
       return { ...badger, loaded };
     });
@@ -106,15 +90,17 @@ class TeamSlice extends React.Component<TeamSliceProps, TeamSliceState> {
       <div>
         <ul className={styles.badgers}>
           {paginate(badgers, page, loadAll).map(badger => (
-            <li
-              key={badger.slug}
-              className={styles.badger}
-              ref={el => {
-                this.badgerElements[badger.slug] = el;
-              }}
-            >
-              {!badger.jobAdvert ? <BadgerProfile badger={badger} /> : <JobAdvert />}
-            </li>
+            <InView key={badger.slug}>
+              {({ inView, ref }) => (
+                <li key={badger.slug} className={styles.badger} ref={ref}>
+                  {badger.jobAdvert ? (
+                    <JobAdvert />
+                  ) : (
+                    <BadgerProfile badger={badger} inView={inView} />
+                  )}
+                </li>
+              )}
+            </InView>
           ))}
         </ul>
         {!loadAll && <Paging page={page} count={badgers.length} />}
