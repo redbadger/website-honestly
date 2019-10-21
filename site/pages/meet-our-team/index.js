@@ -31,6 +31,7 @@ const getTeam = (badgers, category) => {
     jobDescription: '',
     jobTitle: '',
     loaded: true,
+    inView: true,
   };
 
   const advertIndex = 6;

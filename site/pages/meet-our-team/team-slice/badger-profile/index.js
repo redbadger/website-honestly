@@ -17,10 +17,9 @@ export type Badger = {
   jobTitle: string,
   loaded: boolean,
   inView: boolean,
-  className: string,
 };
 
-const BadgerProfile = ({ badger, inView }: { badger: Badger }) => {
+const BadgerProfile = ({ badger, inView }: { badger: Badger, inView: boolean }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   return (
     <Link to="badger" navigationData={{ slug: badger.slug }}>

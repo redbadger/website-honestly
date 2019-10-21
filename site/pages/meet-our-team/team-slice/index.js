@@ -14,7 +14,7 @@ const paginate = (badgers, page, loadAll) => {
 };
 
 const initBadgers = (badgers, page) =>
-  badgers.map((badger, i) => ({
+  badgers.map<Badger>((badger, i) => ({
     ...badger,
     loaded: i < page * 20,
   }));
