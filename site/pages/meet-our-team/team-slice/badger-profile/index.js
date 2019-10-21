@@ -16,9 +16,11 @@ export type Badger = {
   jobDescription: string,
   jobTitle: string,
   loaded: boolean,
+  inView: boolean,
+  className: string,
 };
 
-const BadgerProfile = ({ badger }: { badger: Badger }) => {
+const BadgerProfile = ({ badger, inView }: { badger: Badger }) => {
   const fullName = [badger.firstName, badger.lastName].join(' ');
   return (
     <Link to="badger" navigationData={{ slug: badger.slug }}>
@@ -31,7 +33,7 @@ const BadgerProfile = ({ badger }: { badger: Badger }) => {
             https://github.com/prettier/prettier/issues/737 and
             https://github.com/prettier/prettier/issues/1271
           */
-          badger.loaded ? (
+          badger.loaded || inView ? (
             <img src={badger.primaryImageUrl} alt="" className={styles.badgerImage} aria-hidden />
           ) : (
             <div className={styles.placeholder} />
