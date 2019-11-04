@@ -16,7 +16,6 @@ type Props = {
     // events banner image details are set in prismic.io, check slack for login details
     url: string,
     altText: string,
-    campaignName: string,
     desktopURL: string,
     tabletURL: string,
     mobileURL: string,

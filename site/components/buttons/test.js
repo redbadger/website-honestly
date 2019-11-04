@@ -15,12 +15,5 @@ describe('components/buttons', () => {
       const component = render({ hubspotName: 'webinar' });
       expect(component).toMatchSnapshot();
     });
-
-    it('passes the gaTracking callback to the onClick handler', () => {
-      const gaTracking = jest.fn();
-      const component = render({ hubspotName: 'webinar', gaTracking });
-      component.simulate('click');
-      expect(gaTracking).toHaveBeenCalledTimes(1);
-    });
   });
 });

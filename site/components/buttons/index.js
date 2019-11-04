@@ -7,14 +7,12 @@ import HubspotButtons from './hubspot-buttons';
 
 type HubspotButtonProps = {
   hubspotName: string,
-  gaTracking?: Function,
 };
 
-const HubspotButton = ({ hubspotName, gaTracking }: HubspotButtonProps) =>
+const HubspotButton = ({ hubspotName }: HubspotButtonProps) =>
   HubspotButtons[hubspotName] && (
     <div
       className={`${styles.hubspotBtn} ${styles[`${hubspotName}BtnWrapper`] || ''}`}
-      onClick={gaTracking}
       dangerouslySetInnerHTML={HubspotButtons[hubspotName]}
     />
   );

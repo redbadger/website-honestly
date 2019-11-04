@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 
 import React from 'react';
-import ReactGA from 'react-ga';
 
 import Link from '../../components/link';
 import styles from './styles.css';
@@ -49,13 +48,6 @@ type TechListItemProps = {
   modifier?: string,
 };
 
-const trackTechLogosClicks = () =>
-  ReactGA.event({
-    category: 'Tech Icons',
-    action: 'click',
-    label: 'Technology',
-  });
-
 function TechListItem({ name, imgSrc, imgSrcLarge, plusSymbol, modifier }: TechListItemProps) {
   return (
     <li className={styles.techListItem}>
@@ -93,7 +85,7 @@ export default function TechSlice({ isHeading }: TechSliceProps) {
         </p>
       </div>
 
-      <ul className={styles.techList} onClick={trackTechLogosClicks}>
+      <ul className={styles.techList}>
         <TechListItem name="React + React Native" imgSrcLarge={reactImgLarge} imgSrc={reactImg} />
         <TechListItem name="GraphQL" imgSrcLarge={graphqlImgLarge} imgSrc={graphqlImg} />
         <TechListItem name="Java" imgSrcLarge={javaImgLarge} imgSrc={javaImg} />
@@ -112,7 +104,7 @@ export default function TechSlice({ isHeading }: TechSliceProps) {
         />
         <TechListItem name="NodeJS" imgSrcLarge={nodejsImgLarge} imgSrc={nodejsImg} />
       </ul>
-      <ul className={styles.techList} onClick={trackTechLogosClicks}>
+      <ul className={styles.techList}>
         {/* replace icons when ready */}
         <TechListItem name="AWS" imgSrcLarge={awsImgLarge} imgSrc={awsImg} modifier="wide" />
         <TechListItem name="GCP" imgSrcLarge={gcpImgLarge} imgSrc={gcpImg} />
