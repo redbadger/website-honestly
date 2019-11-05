@@ -1,6 +1,5 @@
 // @flow
 import React from 'react';
-import ReactGA from 'react-ga';
 
 import styles from './styles.css';
 
@@ -43,18 +42,7 @@ class Video extends React.Component<Props> {
 
   player: ?Object = null;
 
-  trackPlayVideo() {
-    const { name } = this.props;
-
-    ReactGA.event({
-      category: name,
-      action: 'click',
-      label: 'Case Study',
-    });
-  }
-
   addPlayerInitCallback() {
-    let dataSent = false;
     const { elementId, videoId } = this.props;
 
     this.player = new window.YT.Player(elementId, {
@@ -62,12 +50,6 @@ class Video extends React.Component<Props> {
       events: {
         // eslint-disable-next-line no-console
         onError: e => console.error(e),
-        onStateChange: e => {
-          if (e.data === YT.PlayerState.PLAYING && !dataSent) {
-            this.trackPlayVideo();
-            dataSent = true;
-          }
-        },
       },
     });
   }

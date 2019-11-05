@@ -6,7 +6,7 @@ import 'core-js/es/array';
 import 'core-js/es/symbol';
 
 import ReactDOM from 'react-dom';
-import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module';
 
 import createStateNavigator from '../routes';
 
@@ -44,8 +44,14 @@ export function makeApp({ element, state }) {
     });
   }
 
-  const { GOOGLE_ANALYTICS_TRACKER } = process.env;
-  ReactGA.initialize(GOOGLE_ANALYTICS_TRACKER);
+  const tagManagerArgs = {
+    gtmId: process.env.GTM_ID,
+    dataLayer: {
+      domain: `Red Badger: ${process.env.ENVIRONMENT_NAME} environment`,
+    },
+  };
+
+  TagManager.initialize(tagManagerArgs);
 
   const stateNavigator = createStateNavigator();
   stateNavigator.onNavigate((oldRoute, route, params) => {
@@ -55,11 +61,15 @@ export function makeApp({ element, state }) {
     stateNavigator.stateContext.title = title;
     const component = route.component({ stateNavigator, title }, props);
     ReactDOM.render(component, element, scrollTo(params));
-
     const page = stateNavigator.getNavigationLink(route.key, params);
     const location = window.location.origin;
-    ReactGA.set({ location, page, title });
-    ReactGA.pageview(page);
+    TagManager.dataLayer({
+      dataLayer: {
+        page,
+        location,
+      },
+      dataLayerName: 'PageDataLayer',
+    });
   });
 
   return stateNavigator;

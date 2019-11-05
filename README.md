@@ -156,6 +156,16 @@ const image = (
 
 Images are automatically optimised by [imagemin-webpack-plugin](https://www.npmjs.com/package/imagemin-webpack-plugin) in production.
 
+## Tracking
+
+Analytics are tracked through google tag manager. This requires a `gtm` or `container` id which should be stored as an environment variable.
+
+We use the `TagManager` supplied by the [react-gtm-module](https://github.com/alinemorelli/react-gtm) package. It is initialised in `site/client/index.js` with the primary data layer which provides the current domain.
+
+The tag manager is setup for each page during the `makeApp` step
+
+The rational for using google tag manager is that individual events can be setup and tracked without dev support, thus removing a bottleneck for the marketing and analytics team.
+
 ## Blog
 
-The blog `/blog` is it's own Squarespace site and needs to updated separately. The template can be found in [blog-squarespace-template](https://github.com/redbadger/blog-squarespace-template).
+The blog `/blog` is hosted on hubspot and can be managed there.
