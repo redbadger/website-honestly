@@ -4,7 +4,7 @@ import { getJobs } from './index';
 
 describe('site/fetchers/workable', () => {
   it('returns error if request has incorrect access credentials', async () => {
-    nock('https://www.workable.com')
+    nock('https://redbadger.workable.com')
       .get(/.*jobs*/)
       .reply(403, {});
 

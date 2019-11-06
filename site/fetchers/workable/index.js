@@ -7,10 +7,10 @@ import sanitizeHtml from 'sanitize-html';
 import handleErrors from '../util/handle-errors';
 
 const jobsUrl =
-  'https://www.workable.com/spi/v3/accounts/redbadger/jobs?include_fields=description,benefits,requirements&state=published';
+  'https://redbadger.workable.com/spi/v3/jobs?include_fields=description,benefits,requirements&state=published';
 
-const normalizeJobs = jobs =>
-  jobs.map(job => ({
+const normalizeJobs = jobs => {
+  return jobs.map(job => ({
     id: job.id,
     title: job.title,
     department: job.department,
@@ -20,9 +20,10 @@ const normalizeJobs = jobs =>
     slug: paramCase(job.title),
     datePosted: job.created_at,
   }));
+};
 
-export const getJobs = (key: string) =>
-  fetch(jobsUrl, {
+export const getJobs = (key: string) => {
+  return fetch(jobsUrl, {
     headers: {
       authorization: `Bearer ${key}`,
       'Content-Type': 'application/json',
@@ -30,6 +31,11 @@ export const getJobs = (key: string) =>
     timeout: 10000,
   })
     .then(handleErrors)
-    .then(response => response.json())
+    .then(response => {
+      return response.json();
+    })
     .then(response => normalizeJobs(response.jobs))
-    .catch(error => error);
+    .catch(error => {
+      return error;
+    });
+};
