@@ -9,8 +9,8 @@ import handleErrors from '../util/handle-errors';
 const jobsUrl =
   'https://redbadger.workable.com/spi/v3/jobs?include_fields=description,benefits,requirements&state=published';
 
-const normalizeJobs = jobs => {
-  return jobs.map(job => ({
+const normalizeJobs = jobs =>
+  jobs.map(job => ({
     id: job.id,
     title: job.title,
     department: job.department,
@@ -20,7 +20,6 @@ const normalizeJobs = jobs => {
     slug: paramCase(job.title),
     datePosted: job.created_at,
   }));
-};
 
 export const getJobs = (key: string) =>
   fetch(jobsUrl, {
