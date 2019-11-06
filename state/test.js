@@ -32,7 +32,7 @@ describe('state', () => {
       .get(/.*statuses*/)
       .reply(200, []);
 
-    nock('https://www.workable.com')
+    nock('https://redbadger.workable.com')
       .get(/.*jobs*/)
       .reply(200, { jobs: [] });
 
@@ -84,7 +84,7 @@ describe('state', () => {
       .post(/.*oauth*/)
       .reply(403, {});
 
-    nock('https://www.workable.com')
+    nock('https://redbadger.workable.com')
       .get(/.*jobs*/)
       .reply(500, { jobs: [] });
 

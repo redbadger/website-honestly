@@ -7,7 +7,7 @@ import sanitizeHtml from 'sanitize-html';
 import handleErrors from '../util/handle-errors';
 
 const jobsUrl =
-  'https://www.workable.com/spi/v3/accounts/redbadger/jobs?include_fields=description,benefits,requirements&state=published';
+  'https://redbadger.workable.com/spi/v3/jobs?include_fields=description,benefits,requirements&state=published';
 
 const normalizeJobs = jobs =>
   jobs.map(job => ({
