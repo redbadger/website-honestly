@@ -21,6 +21,10 @@
   box-shadow: -1px -1px linesOnBlack;
 }
 
+.footer:after {
+  box-shadow: 0 -1px linesOnBlack;
+}
+
 .footerContainer {
   max-width: containerMaxWidth;
   width: 100%;
