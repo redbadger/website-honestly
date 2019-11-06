@@ -22,8 +22,8 @@ const normalizeJobs = jobs => {
   }));
 };
 
-export const getJobs = (key: string) => {
-  return fetch(jobsUrl, {
+export const getJobs = (key: string) =>
+  fetch(jobsUrl, {
     headers: {
       authorization: `Bearer ${key}`,
       'Content-Type': 'application/json',
@@ -31,11 +31,8 @@ export const getJobs = (key: string) => {
     timeout: 10000,
   })
     .then(handleErrors)
-    .then(response => {
-      return response.json();
-    })
+    .then(response => response.json())
     .then(response => normalizeJobs(response.jobs))
     .catch(error => {
       return error;
     });
-};
