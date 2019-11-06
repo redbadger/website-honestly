@@ -33,6 +33,4 @@ export const getJobs = (key: string) =>
     .then(handleErrors)
     .then(response => response.json())
     .then(response => normalizeJobs(response.jobs))
-    .catch(error => {
-      return error;
-    });
+    .catch(error => error);
