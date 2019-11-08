@@ -164,7 +164,7 @@ We use the `TagManager` supplied by the [react-gtm-module](https://github.com/al
 
 The tag manager is setup for each page during the `makeApp` step
 
-The rational for using google tag manager is that individual events can be setup and tracked without dev support, thus removing a bottleneck for the marketing and analytics team.
+The rational for using google tag manager is that individual events can be setup and tracked without dev support.
 
 ## Blog
 
