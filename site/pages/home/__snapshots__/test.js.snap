@@ -1,0 +1,883 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/home renders correctly 1`] = `
+Array [
+  <section
+    class="homepageTopSlice"
+  >
+    <div
+      class="sliceContainer"
+    >
+      <div
+        class="sloganWrapper"
+      >
+        <h1
+          class="badgerSlogan"
+        >
+          <span>
+            Let’s make
+          </span>
+           
+          <span>
+            things better
+          </span>
+        </h1>
+      </div>
+      <p
+        class="sloganDescription fadeInUp"
+      >
+        <a
+          class="sloganLink"
+          href="/what-we-do"
+        >
+          We are digital transformation experts who 
+          <span
+            class="sloganUnderline"
+          >
+            innovate and 
+          </span>
+          <span
+            class="lastWord"
+          >
+            <span
+              class="sloganUnderline"
+            >
+              deliver.
+            </span>
+            <svg
+              class="arrow"
+              viewBox="0 0 22 22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                fill="#FC1D42"
+                fill-rule="evenodd"
+                stroke="#FC1D42"
+              />
+            </svg>
+          </span>
+        </a>
+      </p>
+    </div>
+  </section>,
+  <section
+    class="caseStudyContainer"
+    id="stats"
+  >
+    <h2
+      class="heading"
+    >
+      We solve complex problems and deliver real impact.
+    </h2>
+    <div
+      class="limitWidth"
+    >
+      <div
+        class="figuresContainer"
+      >
+        <a
+          class="figureLink"
+          href="/our-work/case-study/fortnum-and-mason"
+          title="Fortnum and mason case study"
+        >
+          <span
+            class="statsContainer"
+          >
+            <span
+              class="countdownText"
+            >
+              2,004
+            </span>
+            <span
+              class="countdownCaseText"
+            >
+              days of innovation and continuous 
+              <span
+                class="lastWord"
+              >
+                deployment
+                <div
+                  class="arrow"
+                >
+                  <svg
+                    viewBox="0 0 22 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                      fill="#FC1D42"
+                      fill-rule="evenodd"
+                      stroke="#FC1D42"
+                    />
+                  </svg>
+                </div>
+              </span>
+            </span>
+          </span>
+          <span
+            class="logoContainer"
+          >
+            <img
+              alt="The logo of Fortnum & Masons"
+              class="logo"
+              sizes="(min-width: 980px) 288px, 180px"
+              src="fortnum.png"
+            />
+          </span>
+        </a>
+        <a
+          class="figureLink"
+          href="our-work/case-study/retailer"
+          title="Retailer case study"
+        >
+          <span
+            class="statsContainer"
+          >
+            <span
+              class="centerText"
+            >
+              Five months to clear an eight year 
+              <span
+                class="lastWord"
+              >
+                backlog
+                <div
+                  class="arrow"
+                >
+                  <svg
+                    viewBox="0 0 22 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                      fill="#FC1D42"
+                      fill-rule="evenodd"
+                      stroke="#FC1D42"
+                    />
+                  </svg>
+                </div>
+              </span>
+            </span>
+          </span>
+          <span
+            class="logoContainer"
+          >
+            <span
+              class="companyText"
+            >
+              Britain’s Biggest Retailer
+            </span>
+          </span>
+        </a>
+        <a
+          class="figureLink"
+          href="/our-work/case-study/financial-services-digital-transformation"
+          title="Bank case study"
+        >
+          <span
+            class="statsContainer"
+          >
+            <span
+              class="centerText"
+            >
+              Catalysts for change, delivery deployment and 
+              <span
+                class="lastWord"
+              >
+                culture
+                <div
+                  class="arrow"
+                >
+                  <svg
+                    viewBox="0 0 22 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                      fill="#FC1D42"
+                      fill-rule="evenodd"
+                      stroke="#FC1D42"
+                    />
+                  </svg>
+                </div>
+              </span>
+            </span>
+          </span>
+          <span
+            class="logoContainer"
+          >
+            <span
+              class="companyText"
+            >
+              Giant Global Bank
+            </span>
+          </span>
+        </a>
+        <a
+          class="figureLink"
+          href="/our-work/case-study/financial-times"
+          title="Financial times case study"
+        >
+          <span
+            class="statsContainer"
+          >
+            <span
+              class="countdownText"
+            >
+              30%
+            </span>
+            <span
+              class="caseText"
+            >
+              uplift in reader 
+              <span
+                class="lastWord"
+              >
+                engagement
+                <div
+                  class="arrow"
+                >
+                  <svg
+                    viewBox="0 0 22 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                      fill="#FC1D42"
+                      fill-rule="evenodd"
+                      stroke="#FC1D42"
+                    />
+                  </svg>
+                </div>
+              </span>
+            </span>
+          </span>
+          <span
+            class="logoContainer"
+          >
+            <img
+              alt="The logo of the Financial Times"
+              class="logo"
+              sizes="(min-width: 980px) 270px, 169px"
+              src="financialtimes.png"
+            />
+          </span>
+        </a>
+      </div>
+      <div
+        class="caseCompanies"
+      >
+        <div
+          class="caseCompaniesLogo"
+        >
+          <img
+            alt="The logo of Selfridges"
+            src="selfridges.png"
+          />
+        </div>
+        <div
+          class="caseCompaniesLogo"
+        >
+          <img
+            alt="The logo of Car Trawler"
+            src="cartrawler.png"
+          />
+        </div>
+        <div
+          class="caseCompaniesLogo"
+        >
+          <img
+            alt="The logo of Tesco"
+            src="tesco.png"
+          />
+        </div>
+        <div
+          class="caseCompaniesLogo"
+        >
+          <img
+            alt="The logo of the BBC"
+            src="bbc.png"
+          />
+        </div>
+        <div
+          class="caseCompaniesLogo"
+        >
+          <img
+            alt="The logo of Pride"
+            src="pride.png"
+          />
+        </div>
+        <div
+          class="caseCompaniesLogo"
+        >
+          <img
+            alt="The logo of HSBC"
+            src="hsbc.png"
+          />
+        </div>
+      </div>
+      <div
+        class="buttonContainer"
+      >
+        <a
+          class="button"
+          href="/our-work"
+        >
+          See more of our work
+        </a>
+      </div>
+    </div>
+  </section>,
+  <section
+    class="spruceSlice"
+  >
+    <div
+      class="container"
+    >
+      <section
+        class="shareThymeSlice"
+      >
+        <div
+          class="shareThymeContent"
+        >
+          <svg
+            class="shareThymeLogo"
+            version="1.1"
+            viewBox="0 0 335 50"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              ThymeShare_Logo_White
+            </title>
+            <desc>
+              Created with Sketch.
+            </desc>
+            <defs>
+              <polygon
+                id="path-1"
+                points="0.648475352 0.08544375 25.7365035 0.08544375 25.7365035 35.7291667 0.648475352 35.7291667"
+              />
+            </defs>
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              id="ThymeShare_Logo_White"
+              stroke="none"
+              stroke-width="1"
+            >
+              <g
+                id="Group-22"
+                transform="translate(0.000000, 2.000000)"
+              >
+                <g
+                  id="Group-3"
+                  transform="translate(194.683099, 12.340037)"
+                >
+                  <mask
+                    fill="white"
+                    id="mask-2"
+                  >
+                    <use
+                      href="#path-1"
+                    />
+                  </mask>
+                  <g
+                    id="Clip-2"
+                  />
+                  <path
+                    d="M13.1453239,30.0203604 C11.7303592,33.6657562 10.2682289,35.7298812 7.29780634,35.7298812 C3.9139331,35.7298812 2.9495493,32.0273187 2.9495493,31.6373604 C2.9495493,31.1636937 4.52005986,30.3215062 6.4407993,30.5716104 C8.45285915,30.8339646 8.39264789,31.9681104 8.96866901,32.2968187 C9.50053521,32.6010271 10.299338,32.2631312 11.9661866,28.2941312 L12.8151655,25.9911312 L3.05291197,3.25104792 C2.62942606,2.24348542 2.3464331,1.90865208 0.648475352,1.47683958 L0.648475352,0.08544375 L12.1548486,0.08544375 L12.1548486,1.47683958 C9.75041197,1.76369375 8.9014331,1.95663125 8.9014331,3.06015208 C8.9014331,3.44296458 8.99576408,3.82679792 9.18442606,4.40254792 L15.2677711,19.7538396 L20.8794613,4.40254792 C21.0681232,3.82679792 21.1624542,3.44296458 21.1624542,3.06015208 C21.1624542,1.95663125 20.3134754,1.76369375 17.9090387,1.47683958 L17.9090387,0.08544375 L25.7365035,0.08544375 L25.7365035,1.47683958 C24.0395493,1.90865208 23.7093908,2.29248542 23.3320669,3.25104792 L13.1453239,30.0203604 Z"
+                    fill="#FFFFFF"
+                    id="Fill-1"
+                    mask="url(#mask-2)"
+                  />
+                </g>
+                <path
+                  d="M166.660474,3.8857 L167.367956,14.3921167 L166.141653,14.3921167 C163.312727,7.48311667 162.274083,5.4690125 158.36035,5.4690125 L155.341759,5.4690125 L155.341759,32.8620542 C155.341759,35.5488875 156.568062,35.6918042 159.775315,36.1246375 L159.775315,37.5629917 L145.343678,37.5629917 L145.343678,36.1246375 C148.598097,35.6918042 149.8244,35.5488875 149.8244,32.8620542 L149.8244,5.4690125 L146.758643,5.4690125 C142.84491,5.4690125 141.807269,7.48311667 139.024505,14.3921167 L137.751037,14.3921167 L138.458519,3.8857 L166.660474,3.8857 Z"
+                  fill="#FFFFFF"
+                  id="Fill-4"
+                />
+                <path
+                  d="M171.988268,4.70124375 L169.017845,3.06995208 L169.017845,2.35026458 L176.516155,0.00030625 L177.270803,0.00030625 L177.270803,16.5500562 C179.392246,14.1041396 182.127845,11.9460979 185.901085,11.9460979 C190.286472,11.9460979 192.456085,14.5839312 192.456085,19.8136604 L192.456085,33.9174937 C192.456085,35.6917021 193.210732,36.0275562 195.569007,36.1725146 L195.569007,37.5628896 L184.06163,37.5628896 L184.06163,36.1725146 C186.419905,36.0275562 187.173549,35.6917021 187.173549,33.9174937 L187.173549,19.9085979 C187.173549,16.6950146 185.901085,15.2556396 183.212651,15.2556396 C180.995873,15.2556396 178.921595,16.4071396 177.270803,17.7505562 L177.270803,33.9174937 C177.270803,35.6917021 177.978285,36.0275562 180.335556,36.1725146 L180.335556,37.5628896 L168.875345,37.5628896 L168.875345,36.1725146 C171.234623,36.0275562 171.988268,35.6917021 171.988268,33.9174937 L171.988268,4.70124375 Z"
+                  fill="#FFFFFF"
+                  id="Fill-6"
+                />
+                <path
+                  d="M253.857127,19.9090062 C253.857127,16.7423813 252.819486,15.2550271 250.178218,15.2550271 C248.008606,15.2550271 246.264486,16.4065271 244.613694,17.7509646 L244.613694,33.9179021 C244.613694,35.6921104 245.274011,36.0279646 247.631282,36.1729229 L247.631282,37.5632979 L236.266405,37.5632979 L236.266405,36.1729229 C238.623676,36.0279646 239.331158,35.6921104 239.331158,33.9179021 L239.331158,19.9090062 C239.331158,16.7423813 238.246352,15.2550271 235.606088,15.2550271 C233.436475,15.2550271 231.691352,16.4065271 230.041563,17.7509646 L230.041563,33.9179021 C230.041563,35.6921104 230.748042,36.0279646 233.106317,36.1729229 L233.106317,37.5632979 L221.646106,37.5632979 L221.646106,36.1729229 C224.00438,36.0279646 224.759028,35.6921104 224.759028,33.9179021 L224.759028,16.7903604 L221.787602,15.1121104 L221.787602,14.4404021 L229.428412,11.9454854 L230.230225,11.9454854 L230.041563,16.5504646 C232.163007,14.0565688 234.568447,11.9454854 238.387849,11.9454854 C241.783764,11.9454854 243.670384,13.4328396 244.330701,16.6954229 C246.453148,14.1994854 249.140577,11.9454854 252.913817,11.9454854 C257.204873,11.9454854 259.138658,14.5833187 259.138658,19.7181104 L259.138658,33.9179021 C259.138658,35.6921104 259.893306,36.0279646 262.251581,36.1729229 L262.251581,37.5632979 L250.838535,37.5632979 L250.838535,36.1729229 C253.19681,36.0279646 253.857127,35.6921104 253.857127,33.9179021 L253.857127,19.9090062 Z"
+                  fill="#FFFFFF"
+                  id="Fill-8"
+                />
+                <path
+                  d="M268.805577,21.1561583 L279.275313,21.1561583 C279.275313,16.7430958 277.95468,13.5764708 274.558764,13.5764708 C271.163852,13.5764708 269.182901,16.8390542 268.805577,21.1561583 M284.179521,21.68495 L284.179521,22.6914917 L268.664081,22.6914917 C268.381088,30.0312833 272.012831,34.2054708 276.775542,34.2054708 C280.077127,34.2054708 282.151405,32.7181167 283.849363,30.1272417 L284.462514,30.4630958 C283.330542,34.9251583 279.982796,38.0427833 274.841757,38.0427833 C268.05093,38.0427833 263.900366,32.7181167 263.900366,25.6662 C263.900366,17.6536792 268.711246,11.9462 274.983254,11.9462 C281.019433,11.9462 284.179521,16.1183458 284.179521,21.68495"
+                  fill="#FFFFFF"
+                  id="Fill-10"
+                />
+                <path
+                  d="M0.565985915,34.8287917 L0,26.4334583 L2.78176056,26.4334583 C3.96089789,31.6152083 7.16815141,35.5484792 11.9318662,35.5484792 C15.0437852,35.5484792 17.1662324,34.1581042 17.1662324,31.3263125 C17.1662324,28.4485833 15.1852817,27.1061875 10.1395775,25.7137708 C3.58357394,23.8905625 0.141496479,20.5810208 0.141496479,14.6806042 C0.141496479,7.62766667 5.47019366,3.40652083 12.5911796,3.40652083 C17.0719014,3.40652083 20.7026408,4.55802083 22.9665845,6.28425 L22.9665845,13.6250625 L20.6564789,13.6250625 C19.4773415,8.97108333 16.9775704,5.8524375 12.5911796,5.8524375 C9.90375,5.8524375 7.96996479,7.38777083 7.96996479,10.026625 C7.96996479,13.0003125 9.95091549,14.2487917 14.7136268,15.5911875 C20.9394718,17.3674375 25.2776937,19.9093125 25.2776937,26.9612292 C25.2776937,34.6848542 19.2886796,38.042375 11.9318662,38.042375 C7.12098592,38.042375 2.87709507,36.6040208 0.565985915,34.8287917"
+                  fill="#FFFFFF"
+                  id="Fill-12"
+                />
+                <path
+                  d="M29.4746197,5.08507708 L26.9748486,3.78963958 L26.9748486,2.15936875 L37.5389155,0.00030625 L39.1897077,0.00030625 L39.1897077,15.8793687 C40.8876655,13.6243479 43.5760986,11.0334729 48.0086514,11.0334729 C52.5827007,11.0334729 55.3182993,13.6243479 55.3182993,18.9010354 L55.3182993,33.8215354 C55.3182993,35.2609104 56.0729472,35.4048479 57.8180704,35.5487854 L57.8180704,37.5628896 L43.2459401,37.5628896 L43.2459401,35.5487854 C44.9900599,35.4048479 45.6032113,35.2609104 45.6032113,33.8215354 L45.6032113,19.7656812 C45.6032113,17.9904521 45.0372254,16.7909729 42.6799542,16.7909729 C41.3593204,16.7909729 40.2745141,17.0308687 39.1897077,17.4147021 L39.1897077,33.8215354 C39.1897077,35.2609104 39.8028592,35.4048479 41.5479824,35.5487854 L41.5479824,37.5628896 L26.9748486,37.5628896 L26.9748486,35.5487854 C28.7199718,35.4048479 29.4746197,35.2609104 29.4746197,33.8215354 L29.4746197,5.08507708 Z"
+                  fill="#FFFFFF"
+                  id="Fill-14"
+                />
+                <path
+                  d="M73.521169,32.6225667 L73.521169,23.7474417 L71.6345493,24.4671292 C70.1252535,25.0418583 69.0886162,25.809525 69.0886162,28.6402958 C69.0886162,31.0392542 69.8894261,32.8614417 72.1533697,32.8614417 C72.6721901,32.8614417 73.0495141,32.7665042 73.521169,32.6225667 L73.521169,32.6225667 Z M83.0475951,32.2867125 C83.0475951,33.245275 83.1419261,34.2538583 84.2267324,34.2538583 C84.8398838,34.2538583 85.4530352,34.1089 85.6888627,34.0129417 L86.0190211,35.4523167 C84.3682289,36.98765 82.2929472,38.0431917 79.4630176,38.0431917 C76.5869261,38.0431917 74.5116444,36.6038167 73.6626655,34.0609208 C72.3420317,36.1250458 70.1734225,37.851275 66.6831761,37.851275 C62.6269437,37.851275 59.7508521,35.5962542 59.7508521,31.3261083 C59.7508521,27.1059833 62.5797782,25.3777125 65.8813627,24.2262125 L73.521169,21.5404 L73.521169,16.2637125 C73.521169,14.3445458 73.0495141,13.0491083 71.4930528,13.0491083 C69.8422606,13.0491083 69.2301127,14.5354417 69.2301127,16.7424833 C69.2301127,17.8939833 69.4187746,19.0934625 69.7007641,20.2929417 L63.8532465,21.0606083 C62.4382817,20.5808167 61.4006408,19.3813375 61.4006408,17.5581292 C61.4006408,13.0001083 66.0228592,11.0339833 71.9175423,11.0339833 C78.8037042,11.0339833 83.0475951,13.0970875 83.0475951,19.5732542 L83.0475951,32.2867125 Z"
+                  fill="#FFFFFF"
+                  id="Fill-16"
+                />
+                <path
+                  d="M100.118894,32.9097271 C100.118894,35.0208104 101.156535,35.1647479 103.797803,35.5485812 L103.797803,37.5637062 L87.9040352,37.5637062 L87.9040352,35.5485812 C89.6491585,35.4046437 90.4038063,35.2607062 90.4038063,33.8223521 L90.4038063,17.0306646 L87.9040352,15.4003937 L87.9040352,13.9130396 L98.4209366,11.0332687 L100.307556,11.0332687 L100.118894,18.5169979 C101.911183,12.7615396 103.655303,11.0332687 106.673894,11.0332687 C107.853032,11.0332687 108.654845,11.3691229 109.173665,11.8489146 L109.173665,19.1897271 L107.947363,19.1897271 C104.928771,19.1897271 102.147011,19.2846646 100.118894,20.5331437 L100.118894,32.9097271 Z"
+                  fill="#FFFFFF"
+                  id="Fill-18"
+                />
+                <path
+                  d="M119.642498,20.6287958 L126.291829,20.6287958 C126.291829,15.8798792 125.538185,13.1450667 123.274241,13.1450667 C120.915967,13.1450667 119.83116,16.1187542 119.642498,20.6287958 M134.54579,21.7802958 L134.54579,22.979775 L119.595333,22.979775 C119.595333,28.2574833 122.519593,31.6150042 126.669153,31.6150042 C129.640579,31.6150042 131.904523,30.6074417 133.695808,28.2574833 L134.686283,28.8801917 C133.366653,34.4447542 129.640579,38.0431917 123.462903,38.0431917 C116.435245,38.0431917 110.823555,33.4861917 110.823555,25.0898375 C110.823555,16.4066292 116.9069,11.0339833 123.886389,11.0339833 C130.961213,11.0339833 134.54579,15.4960458 134.54579,21.7802958"
+                  fill="#FFFFFF"
+                  id="Fill-20"
+                />
+              </g>
+            </g>
+          </svg>
+          <h3>
+            See what we've been cooking up
+          </h3>
+          <a
+            href="https://www.red-badger.com/sharethyme"
+          >
+            Take a look
+          </a>
+        </div>
+        <picture>
+          <source
+            class="shareThymeImage"
+            srcset="group-21_2x.png, group-21_2x.png 2x, group-21_3x.png 3x"
+          />
+          <img
+            alt="Illustration of hands carrying a pot of food with a love heart on it"
+            class="shareThymeImage"
+            src="group-21_2x.png"
+          />
+        </picture>
+      </section>
+    </div>
+  </section>,
+  <div
+    class="testimonials"
+  >
+    <div
+      class="container"
+    />
+  </div>,
+  <section
+    class="techSlice withDivider"
+  >
+    <div
+      class="techSliceIntro"
+    >
+      <h2
+        class="heading"
+      >
+        We love tech. But we only use what’s right for the job.
+      </h2>
+      <p
+        class="projectsBlerb"
+      >
+        Here is a selection of what we’ve used on recent projects.
+      </p>
+    </div>
+    <ul
+      class="techList"
+    >
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="React + React Native logo"
+            class="techLogo"
+            src="react_x1.png"
+            srcset="react_x1.png 90w, react_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            React + React Native
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="GraphQL logo"
+            class="techLogo"
+            src="graphql_x1.png"
+            srcset="graphql_x1.png 90w, graphql_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            GraphQL
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Java logo"
+            class="techLogo"
+            src="java_x1.png"
+            srcset="java_x1.png 90w, java_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Java
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="ESNext logo"
+            class="techLogo"
+            src="es_x1.png"
+            srcset="es_x1.png 90w, es_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            ESNext
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus01_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Flow + Typescript logo"
+            class="techLogo--tall"
+            src="flow_x1.png"
+            srcset="flow_x1.png 90w, flow_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Flow + Typescript
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus02_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="NodeJS logo"
+            class="techLogo"
+            src="nodejs_x1.png"
+            srcset="nodejs_x1.png 90w, nodejs_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            NodeJS
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <ul
+      class="techList"
+    >
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="AWS logo"
+            class="techLogo--wide"
+            src="AWS_x1.png"
+            srcset="AWS_x1.png 90w, AWS_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            AWS
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="GCP logo"
+            class="techLogo"
+            src="GCP_x1.png"
+            srcset="GCP_x1.png 90w, GCP_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            GCP
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Golang logo"
+            class="techLogo--tall"
+            src="golang_x1.png"
+            srcset="golang_x1.png 90w, golang_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Golang
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Docker logo"
+            class="techLogo--wide"
+            src="docker_x1.png"
+            srcset="docker_x1.png 90w, docker_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Docker
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus03_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Kubernetes logo"
+            class="techLogo"
+            src="kubernetes_x1.png"
+            srcset="kubernetes_x1.png 90w, kubernetes_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Kubernetes
+          </figcaption>
+        </figure>
+        <img
+          alt=""
+          class="techPlusSymbol"
+          src="plus04_x2.png"
+        />
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Istio logo"
+            class="techLogo"
+            src="istio_x1.png"
+            srcset="istio_x1.png 90w, istio_x2.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Istio
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <a
+      class="moreBtn"
+      href="/technology"
+    >
+      More about the tech
+    </a>
+  </section>,
+  <section
+    class="contactUsContainer"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>,
+  <section
+    class="newsletter"
+  >
+    <h2
+      class="title"
+    >
+      Sign up to Badger News
+      <span
+        class="subTitle"
+      >
+        Be the first to hear about webinars, events blogs and more.
+      </span>
+    </h2>
+    <div
+      class="hubspotBtn btnWrapper"
+    >
+      <span
+        class="hs-cta-wrapper"
+        id="hs-cta-wrapper-6a020b57-ac2f-4b6d-8273-503c7b261094"
+      >
+        <span
+          class="hs-cta-node hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094"
+          id="hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094"
+        >
+          <a
+            href="https://cta-redirect.hubspot.com/cta/redirect/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094"
+            target="_blank"
+          >
+            <img
+              alt="Sign Up"
+              class="hs-cta-img"
+              height="112"
+              id="hs-cta-img-6a020b57-ac2f-4b6d-8273-503c7b261094"
+              src="https://no-cache.hubspot.com/cta/default/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094.png"
+              style="border-width:0px;"
+              width="249"
+            />
+          </a>
+        </span>
+        <script
+          charset="utf-8"
+          src="https://js.hscta.net/cta/current.js"
+        />
+        <script
+          type="text/javascript"
+        >
+           hbspt.cta.load(4210858, '6a020b57-ac2f-4b6d-8273-503c7b261094', {}); 
+        </script>
+      </span>
+    </div>
+  </section>,
+  <div
+    class="awardsContainer"
+  >
+    <div
+      class="awards"
+    >
+      <img
+        alt="Awards"
+        class="awardsImage"
+        sizes="(min-width: 1440px) 1440px, 100vw"
+        src="awards-april-2018.jpg"
+      />
+    </div>
+  </div>,
+]
+`;
