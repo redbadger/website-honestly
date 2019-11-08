@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/home renders correctly 1`] = `
+<div
+  class="background"
+>
+  <section
+    class="section"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="grid withGutter responsive-grid-smallScreen"
+        >
+          <div
+            class="responsive-cell-smallestScreen cell size8of12 hideOndont"
+          >
+            <h1
+              class="jobTitle"
+            >
+              jobberty
+            </h1>
+            <div
+              class="typography rawHtml"
+            >
+              job
+            </div>
+            <hr
+              class="hr grey horizontal-line"
+            />
+            <a
+              class="linkBack"
+              href="/jobs"
+            >
+              &lt; See all vacancies
+            </a>
+          </div>
+          <div
+            class="responsive-cell-smallestScreen cell size4of12 hideOndont"
+          >
+            <div
+              class="note"
+            >
+              <h2
+                class="noteTitle"
+              >
+                How to Apply
+              </h2>
+              <p
+                class="p"
+              >
+                If you'd like to know more or you want to apply please get in touch with your CV, Stackoverflow profile, Github, code, portfolio and anything else you think we might be interested in.
+              </p>
+              <p
+                class="p"
+              >
+                <a
+                  class="sidebarApplyLink"
+                  href="jobbington"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Apply here
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
