@@ -1,0 +1,916 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work renders correctly 1`] = `
+Array [
+  <div
+    class="headerContainer"
+  >
+    <div>
+      <h1
+        class="mainHeader"
+      >
+        The proof is in the pudding.
+      </h1>
+      <h2
+        class="mainSlogan"
+      >
+        Read some of our case studies.
+      </h2>
+    </div>
+  </div>,
+  <div
+    class="caseStudyTopSection"
+  >
+    <div
+      class="topSlicesContainer"
+    >
+      <div
+        class="container"
+      >
+        <a
+          class="content row-reverse"
+          href="https://www.red-badger.com/sharethyme"
+        >
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="header"
+            >
+               Solving real world problems without the risk 
+            </h2>
+            <p
+              class="description"
+            >
+              Here’s how we built an innovative, user-first platform in 8 days.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="Animated illustration of hands adding oil to a bowl and stirring"
+              src="sharethyme.gif"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row"
+          href="/our-work/case-study/pride"
+        >
+          <div
+            class="leftCol"
+          >
+            <h2
+              class="header"
+            >
+              Delivering a best-in-class digital experience
+            </h2>
+            <p
+              class="description"
+            >
+              Building a 5 star digital experience for Pride in London’s mobile app using React Native, promoting inclusion and accessibility for an improved user experience.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="Pride heart animation"
+              src="listing.gif"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row-reverse"
+          href="/our-work/case-study/car-trawler"
+        >
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="header"
+            >
+              Complete CMS control for travel brands
+            </h2>
+            <p
+              class="description"
+            >
+              Find out how we demonstrated value with a working prototype in one week and delivered a complete CMS control for travel brands within only 5 months.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="Toy blue car driving through paper-made scenery, surrounded by triangular paper trees."
+              src="car-trawler.jpg"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row"
+          href="/our-work/case-study/fidelity"
+        >
+          <div
+            class="leftCol"
+          >
+            <h2
+              class="header"
+            >
+              Global design and build project for Fidelity International, delivered in four months
+            </h2>
+            <p
+              class="description"
+            >
+              A website which creates a new industry benchmark for design & usability, and empowers the client to grow the site and their audience, with tools and ways of working.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="Illustration of a brief-case carrying man in a suit walking along a path through stylised mountains."
+              src="listing.jpg"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row-reverse"
+          href="/our-work/case-study/financial-services-digital-transformation"
+        >
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="header"
+            >
+              Digital transformation in retail banking
+            </h2>
+            <p
+              class="description"
+            >
+              Discover how we delivered quality digital products to customers quickly, built capability and changed the culture to increase business efficiency in one of the world’s largest banks.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="Stick figures building a large arrow from small square blocks"
+              src="bank.gif"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row"
+          href="/our-work/case-study/car-trawler-my-account"
+        >
+          <div
+            class="leftCol"
+          >
+            <h2
+              class="header"
+            >
+              Building a self-servicing customer account
+            </h2>
+            <p
+              class="description"
+            >
+              Find out how we built a self-servicing customer account, enabling customers to make bookings more efficiently, and reducing risks and costs for travel brands, all within 12 weeks.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="A red car heading to a data center right next to the beach, passing a roadsign that says 'Serverless'"
+              src="car-trawler.jpg"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row-reverse"
+          href="/our-work/case-study/retailer"
+        >
+          <div
+            class="rightCol"
+          >
+            <h2
+              class="header"
+            >
+              Next generation platform for retail giant
+            </h2>
+            <p
+              class="description"
+            >
+              Find out how we helped clear a five year backlog in eight months and delivered a mobile first application across seven countries.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="imageWrapper"
+          >
+            <div
+              class="imageContainer"
+            >
+              <img
+                alt="Toy shopping cart filled with fruit & veg, surrounded by key statistics "
+                src="retailer.jpg"
+              />
+              <div
+                class="orders"
+              >
+                <div
+                  class="imagePercentage"
+                >
+                  +54%
+                </div>
+                <div
+                  class="imageText"
+                >
+                  Increased orders
+                </div>
+              </div>
+              <div
+                class="visits"
+              >
+                <div
+                  class="imagePercentage"
+                >
+                  +29%
+                </div>
+                <div
+                  class="imageText"
+                >
+                  Uplift in visits
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row"
+          href="/our-work/case-study/camden-market"
+        >
+          <div
+            class="leftCol"
+          >
+            <img
+              alt=""
+              class="camden"
+              src="camden-logo.png"
+            />
+            <h2
+              class="header"
+            >
+              Taking steps towards a digital future
+            </h2>
+            <p
+              class="description"
+            >
+              Built in just ten weeks, Camdenmarket.com relaunched in May 2016 to drive more footfall from Londoners to the physical market by showcasing the eclectic range of goods, food and events.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="attachToBottom"
+          >
+            <img
+              alt="A mobile phone with the Camden site open"
+              src="camden.png"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row-reverse"
+          href="/our-work/case-study/financial-times"
+        >
+          <div
+            class="rightCol"
+          >
+            <img
+              alt=""
+              class="ft"
+              src="ft-logo.png"
+            />
+            <h2
+              class="header"
+            >
+              Lasting change for a media giant
+            </h2>
+            <p
+              class="description"
+            >
+              The Financial Times (FT) is one of the world’s best known and most respected news publications. The ‘pink paper’ has a good existing online offering with total circulation of over 750k readers, including 550k corporate memberships.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="An agile stand up in progress"
+              src="ft.png"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row"
+          href="/our-work/case-study/fortnum-and-mason"
+        >
+          <div
+            class="leftCol"
+          >
+            <img
+              alt=""
+              class="fm"
+              src="fortnum-mason-logo.png"
+            />
+            <h2
+              class="header"
+            >
+              Fortnum & Mason’s new, elegant website increases revenue and conversion rates
+            </h2>
+            <p
+              class="description"
+            >
+              A scalable, highly flexible new site was needed, and very quickly to avoid more lost revenue.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="base"
+          >
+            <img
+              alt="An iPad with the F&M site open, with a box of F&M branded tea to the left hand side"
+              src="fortnum-mason.png"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row-reverse"
+          href="/our-work/case-study/fortnum-and-mason-digital-transformation"
+        >
+          <div
+            class="fullWidth"
+          >
+            <img
+              alt=""
+              class="fm"
+              src="fortnum-mason-logo.png"
+            />
+            <h2
+              class="header"
+            >
+              The ongoing digital transformation of a 310-year old retailer
+            </h2>
+            <p
+              class="description"
+            >
+              Discover how we helped customers find products faster and drive sales of tea.
+            </p>
+            <div
+              class="linksCenter"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row"
+          href="/our-work/case-study/sky-cms"
+        >
+          <div
+            class="fullWidth"
+          >
+            <img
+              alt=""
+              class="sky"
+              src="sky.png"
+            />
+            <h2
+              class="header"
+            >
+              A modern CMS that is the foundation that supports both customers and the internal team
+            </h2>
+            <p
+              class="description"
+            >
+              Enabling Sky to manage their content with an amazing customer experience.
+            </p>
+            <div
+              class="linksCenter"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="caseStudyContainer"
+      >
+        <div
+          class="caseStudyContent"
+        >
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="HSBC logo"
+              class="hsbcLogo"
+              src="hsbc.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Camden Market logo"
+              class="camdenLogo"
+              src="camden_market.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Financial Times logo"
+              class="ftLogo"
+              src="ft.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Fortnum and Mason logo"
+              class="fortnumLogo"
+              src="fortnum-mason-logo.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Anthony Nolan logo"
+              class="anLogo"
+              src="anthony-nolan.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Sky logo"
+              class="skyLogo"
+              src="sky.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Cartrawler logo"
+              class="cartrawlerLogo"
+              src="cartrawler.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Tesco logo"
+              class="tescoLogo"
+              src="tesco.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Lloyds bank logo"
+              class="lloydsLogo"
+              src="lloyds.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Asos logo"
+              class="asosLogo"
+              src="asos.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="BBC logo"
+              class="bbcLogo"
+              src="bbc.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Pride in London logo"
+              class="prideLogo"
+              src="pride.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="BMW logo"
+              class="bmwLogo"
+              src="bmw.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Atkins logo"
+              class="atkinsLogo"
+              src="atkins.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Wickes logo"
+              class="wickesLogo"
+              src="wickes.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Selfridges logo"
+              class="selfridgesLogo"
+              src="selfridges.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Haller logo"
+              class="hallerLogo"
+              src="haller.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="F&F logo"
+              class="fnfLogo"
+              src="f_f.png"
+            />
+          </div>
+          <div
+            class="logoWrapper"
+          >
+            <img
+              alt="Fidelity logo"
+              class="fidelityLogo"
+              src="fidelity.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid"
+      >
+        <div
+          class="gridRow"
+        >
+          <div
+            class="cell cell-BBC"
+          >
+            <div
+              class="caseStudyContentContainer"
+            >
+              <div
+                class="caseStudyContent"
+              >
+                <a
+                  class=""
+                  href="/our-work/case-study/bbc-now"
+                >
+                  <img
+                    alt="BBC logo"
+                    class="logo"
+                    src="bbc.png"
+                  />
+                  <h2
+                    class="largeHeader"
+                  >
+                    Delivering a better customer experience, faster
+                  </h2>
+                  <p
+                    class="description"
+                  >
+                    How the rapid prototyping model helped the BBC to uncover new ways to engage its audience.
+                  </p>
+                  <div
+                    class="links"
+                  >
+                    <p
+                      class="readmore"
+                    >
+                      Read more
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="cell cell-Sky"
+          >
+            <div
+              class="caseStudyContentContainer"
+            >
+              <div
+                class="caseStudyContent"
+              >
+                <a
+                  class=""
+                  href="/our-work/case-study/sky"
+                >
+                  <img
+                    alt="Sky logo"
+                    class="logo"
+                    src="sky.png"
+                  />
+                  <h2
+                    class="largeHeader"
+                  >
+                    Helping customers help themselves
+                  </h2>
+                  <p
+                    class="description"
+                  >
+                    Enabling Sky to deliver continual improvement across customer services
+                  </p>
+                  <div
+                    class="links"
+                  >
+                    <p
+                      class="readmore"
+                    >
+                      Read more
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gridRow"
+        >
+          <div
+            class="cell cell-Haller"
+          >
+            <div
+              class="caseStudyContentContainer"
+            >
+              <div
+                class="caseStudyContent"
+              >
+                <a
+                  class=""
+                  href="/our-work/case-study/haller"
+                >
+                  <img
+                    alt="A man holding up the Haller app on a mobile device)"
+                    class="clientImage"
+                    src="haller.jpg"
+                  />
+                  <img
+                    alt="Haller logo"
+                    class="logo"
+                    src="haller.png"
+                  />
+                  <h2
+                    class="normalHeader"
+                  >
+                    Developing technology for good
+                  </h2>
+                  <p
+                    class="description"
+                  >
+                    Red Badger teamed up with the Haller Foundation on a pro-bono basis to develop a mobile application which helps Kenyan farmers.
+                  </p>
+                  <div
+                    class="links"
+                  >
+                    <p
+                      class="readmore"
+                    >
+                      Read more
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="cell cell-BMW"
+          >
+            <div
+              class="caseStudyContentContainer"
+            >
+              <div
+                class="caseStudyContent"
+              >
+                <a
+                  class=""
+                  href="/our-work/case-study/bmw"
+                >
+                  <img
+                    alt="A wide-shot black and white CG render of a car in a museum surrounded by ribbons of light"
+                    class="clientImage"
+                    src="bmw.jpg"
+                  />
+                  <img
+                    alt="BMW logo"
+                    class="logo"
+                    src="bmw.png"
+                  />
+                  <h2
+                    class="normalHeader"
+                  >
+                    The shortcut between you and the museum
+                  </h2>
+                  <p
+                    class="description"
+                  >
+                    Pushing the boundaries of HTML5 technology to deliver a multi-platform 3D tour of the BMW Museum.
+                  </p>
+                  <div
+                    class="links"
+                  >
+                    <p
+                      class="readmore"
+                    >
+                      Read more
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
