@@ -25,22 +25,32 @@ const Footer = () => (
         <nav className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>
             <li>
-              <Link to="homePage">Home</Link>
+              <Link data-link="footer" to="homePage">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="aboutUsPage">About us</Link>
+              <Link data-link="footer" to="aboutUsPage">
+                About us
+              </Link>
             </li>
             <li>
-              <Link to="whatWeDoPage">What we do</Link>
+              <Link data-link="footer" to="whatWeDoPage">
+                What we do
+              </Link>
             </li>
             <li>
               <a href="/blog">Blog</a>
             </li>
             <li>
-              <Link to="events">Events</Link>
+              <Link data-link="footer" to="events">
+                Events
+              </Link>
             </li>
             <li>
-              <Link to="joinUs">Jobs</Link>
+              <Link data-link="footer" to="joinUs">
+                Jobs
+              </Link>
             </li>
           </ul>
         </nav>
@@ -191,9 +201,19 @@ const Footer = () => (
           </p>
           <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
           <p className={styles.cookieWarning}>
-            We use <Link to="cookiePolicy">cookies</Link> on our website. For more information, view
-            our <Link to="privacyPolicy">privacy policy</Link> and website{' '}
-            <Link to="termsAndConditions">T&amp;C&apos;s</Link>.
+            We use{' '}
+            <Link data-link="footer" to="cookiePolicy">
+              cookies
+            </Link>{' '}
+            on our website. For more information, view our{' '}
+            <Link data-link="footer" to="privacyPolicy">
+              privacy policy
+            </Link>{' '}
+            and website{' '}
+            <Link data-link="footer" to="termsAndConditions">
+              T&amp;C&apos;s
+            </Link>
+            .
           </p>
         </div>
         <div className={styles.badgerIcon}>

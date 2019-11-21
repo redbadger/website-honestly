@@ -18,29 +18,29 @@ const Header = () => {
       <nav className={styles.mediumScreenNavContainer}>
         <ul role="listbox" className={styles.mediumScreenNav}>
           <li className={styles.navItemWithChild}>
-            <Link to="whatWeDoPage" activeCssClass={styles.activeNavLink}>
+            <Link to="whatWeDoPage" data-link="header" activeCssClass={styles.activeNavLink}>
               What we do
             </Link>
             <ul className={styles.mediumScreenChildList}>
               <li>
-                <Link to="technology" activeCssClass={styles.activeNavLink}>
+                <Link to="technology" data-link="header" activeCssClass={styles.activeNavLink}>
                   Technology
                 </Link>
               </li>
               <li>
-                <Link to="ourWorkPage" activeCssClass={styles.activeNavLink}>
+                <Link to="ourWorkPage" data-link="header" activeCssClass={styles.activeNavLink}>
                   Our work
                 </Link>
               </li>
             </ul>
           </li>
           <li className={styles.navItemWithChild}>
-            <Link to="aboutUsPage" activeCssClass={styles.activeNavLink}>
+            <Link to="aboutUsPage" data-link="header" activeCssClass={styles.activeNavLink}>
               About us
             </Link>
             <ul className={styles.mediumScreenChildList}>
               <li>
-                <Link to="badgers" activeCssClass={styles.activeNavLink}>
+                <Link to="badgers" data-link="header" activeCssClass={styles.activeNavLink}>
                   Our team
                 </Link>
               </li>
@@ -50,12 +50,12 @@ const Header = () => {
             <a href="/blog">Blog</a>
           </li>
           <li>
-            <Link to="events" activeCssClass={styles.activeNavLink}>
+            <Link to="events" data-link="header" activeCssClass={styles.activeNavLink}>
               Events
             </Link>
           </li>
           <li>
-            <Link to="joinUs" activeCssClass={styles.activeNavLink}>
+            <Link to="joinUs" data-link="header" activeCssClass={styles.activeNavLink}>
               Jobs
             </Link>
           </li>
