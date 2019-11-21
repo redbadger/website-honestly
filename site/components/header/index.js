@@ -47,7 +47,9 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <a href="/blog">Blog</a>
+            <a href="/blog" data-link="header">
+              Blog
+            </a>
           </li>
           <li>
             <Link to="events" data-link="header" activeCssClass={styles.activeNavLink}>
