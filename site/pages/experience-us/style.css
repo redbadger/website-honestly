@@ -1,0 +1,12 @@
+@value badgerWhite, badgerBlack from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.background {
+  background-color: badgerWhite;
+}
+
+@media mediumScreen {
+}
+
+@media largeScreen {
+}

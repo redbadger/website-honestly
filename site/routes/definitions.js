@@ -109,6 +109,13 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ jobs }) => ({ jobs }),
   },
   {
+    title: 'Experience Red Badger',
+    description:
+      'We’re a Sunday Times 100 Best Small Company to Work For 2018 and looking for the best talent to join our team. ',
+    key: 'experienceUs',
+    route: 'experience-us',
+  },
+  {
     title: ({ job }) => job.title,
     key: 'job',
     route: 'jobs/{slug}',
