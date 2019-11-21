@@ -8,6 +8,7 @@ export type LinkProps = {
   children?: Node,
   activeCssClass?: string,
   target?: string,
+  'data-link'?: string,
 };
 
 /**

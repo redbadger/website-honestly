@@ -25,22 +25,34 @@ const Footer = () => (
         <nav className={cx('section', 'footerLinks', 'underline')}>
           <ul className={styles.nav}>
             <li>
-              <Link to="homePage">Home</Link>
+              <Link data-link="footer" to="homePage">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="aboutUsPage">About us</Link>
+              <Link data-link="footer" to="aboutUsPage">
+                About us
+              </Link>
             </li>
             <li>
-              <Link to="whatWeDoPage">What we do</Link>
+              <Link data-link="footer" to="whatWeDoPage">
+                What we do
+              </Link>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a data-link="footer" href="/blog">
+                Blog
+              </a>
             </li>
             <li>
-              <Link to="events">Events</Link>
+              <Link data-link="footer" to="events">
+                Events
+              </Link>
             </li>
             <li>
-              <Link to="joinUs">Jobs</Link>
+              <Link data-link="footer" to="joinUs">
+                Jobs
+              </Link>
             </li>
           </ul>
         </nav>
@@ -49,6 +61,7 @@ const Footer = () => (
           <div className={cx('section', 'social', 'underline')}>
             <span className={styles.screenReaderText}>Email us at</span>
             <a
+              data-link="footer"
               href="mailto:hello@red-badger.com"
               onClick={() =>
                 logAmplitudeEvent('CLICK CONTACT US', { type: 'email', subject: 'footer' })
@@ -59,6 +72,7 @@ const Footer = () => (
             </a>
             <span className={styles.screenReaderText}>Call us on</span>
             <a
+              data-link="footer"
               href="tel:+442035670555"
               onClick={() =>
                 logAmplitudeEvent('CLICK CONTACT US', { type: 'phone', subject: 'footer' })
@@ -88,6 +102,7 @@ const Footer = () => (
             <ul className={styles.socialLinks}>
               <li>
                 <a
+                  data-link="footer"
                   href="https://github.com/redbadger"
                   title="Red Badger Github"
                   aria-label="Red Badger Github"
@@ -98,6 +113,7 @@ const Footer = () => (
               </li>
               <li>
                 <a
+                  data-link="footer"
                   href="https://twitter.com/redbadgerteam"
                   title="Red Badger Twitter"
                   aria-label="Red Badger Twitter"
@@ -108,6 +124,7 @@ const Footer = () => (
               </li>
               <li>
                 <a
+                  data-link="footer"
                   href="https://redbadger.typeform.com/to/cBuJUl"
                   title="Red Badger Slack"
                   aria-label="Red Badger Slack"
@@ -118,6 +135,7 @@ const Footer = () => (
               </li>
               <li>
                 <a
+                  data-link="footer"
                   href="https://www.linkedin.com/company/red-badger"
                   title="Red Badger Linkedin"
                   aria-label="Red Badger Linkedin"
@@ -129,6 +147,7 @@ const Footer = () => (
 
               <li>
                 <a
+                  data-link="footer"
                   href="https://www.instagram.com/redbadgerteam/"
                   title="Red Badger Instagram"
                   aria-label="Red Badger Instagram"
@@ -139,6 +158,7 @@ const Footer = () => (
               </li>
               <li>
                 <a
+                  data-link="footer"
                   href="https://www.facebook.com/RedBadger"
                   title="Red Badger Facebook"
                   aria-label="Red Badger Facebook"
@@ -149,6 +169,7 @@ const Footer = () => (
               </li>
               <li>
                 <a
+                  data-link="footer"
                   href="https://www.youtube.com/redbadgerteam"
                   title="Red Badger Youtube"
                   aria-label="Red Badger Youtube"
@@ -170,6 +191,7 @@ const Footer = () => (
                   <a
                     title="Red Badger address on Google Maps"
                     aria-label="Red Badger address on Google Maps"
+                    data-link="footer"
                     href="https://www.google.co.uk/maps/place/Red+Badger/@51.524652,-0.0903147,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca9aaaaaaab:0xf14bdb5cbedebef9!8m2!3d51.524652!4d-0.088126"
                   >
                     EC1Y 8AF
@@ -191,9 +213,19 @@ const Footer = () => (
           </p>
           <p className={styles.disclaimerParagraph}>VAT Registration No. 990 8085 82</p>
           <p className={styles.cookieWarning}>
-            We use <Link to="cookiePolicy">cookies</Link> on our website. For more information, view
-            our <Link to="privacyPolicy">privacy policy</Link> and website{' '}
-            <Link to="termsAndConditions">T&amp;C&apos;s</Link>.
+            We use{' '}
+            <Link data-link="footer" to="cookiePolicy">
+              cookies
+            </Link>{' '}
+            on our website. For more information, view our{' '}
+            <Link data-link="footer" to="privacyPolicy">
+              privacy policy
+            </Link>{' '}
+            and website{' '}
+            <Link data-link="footer" to="termsAndConditions">
+              T&amp;C&apos;s
+            </Link>
+            .
           </p>
         </div>
         <div className={styles.badgerIcon}>
