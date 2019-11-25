@@ -1,0 +1,56 @@
+@value badgerWhite, badgerBlack, badgerRedOnBlack, cainYellow, grey, scorpian, linesOnWhite from "../../../../css/_colors.css";
+@value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../../../css/_sizes.css";
+
+.engagementCard {
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  display: inline-block;
+  width: 220px;
+  overflow: hidden;
+  margin-right: 50px;
+  color: badgerBlack;
+}
+
+.engagementCard:hover .engagementCardLink {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.engagementCard img {
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.engagementCardRole {
+  white-space: initial;
+}
+
+.engagementCardLink {
+  composes: serif from '../../../../css/typography/_fonts.css';
+  font-size: 16px;
+  line-height: 1.2em;
+  display: inline;
+  color: badgerBlack;
+  position: relative;
+}
+
+.engagementCardArrow {
+  width: 10px;
+  margin-left: 6px;
+}
+
+.engagementCardLink:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+@media largeScreen {
+  .engagementCardLink {
+    font-size: 20px;
+    line-height: 1.35em;
+  }
+
+  .engagementCard {
+    width: 170px;
+  }
+}

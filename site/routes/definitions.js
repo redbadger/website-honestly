@@ -114,6 +114,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
       'We’re a Sunday Times 100 Best Small Company to Work For 2018 and looking for the best talent to join our team. ',
     key: 'experienceUs',
     route: 'experience-us',
+    stateToProps: ({ goldCoinPages }) => ({ goldCoinPages }),
   },
   {
     title: ({ job }) => job.title,

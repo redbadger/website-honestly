@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import styles from './style.css';
-import ShowMoreButton from '../shared/show-more-button';
+import ShowMoreIcon from '../../../../components/show-more-button';
 
 export type BenefitProps = {
   question: string,
@@ -45,16 +45,16 @@ class Benefit extends Component<BenefitProps, BenefitState> {
     const { open, showButton } = this.state;
     return (
       <div>
-        <div className={styles.benefit__question} onClick={this.handleClick}>
+        <button
+          type="button"
+          aria-label={`answer, ${question} `}
+          aria-expanded={open}
+          className={styles.benefit__question}
+          onClick={this.handleClick}
+        >
           <h4 className={styles.benefit__heading}>{question}</h4>
-          {showButton && (
-            <ShowMoreButton
-              open={open}
-              showButton={showButton}
-              ariaLabel={`answer, ${question} `}
-            />
-          )}
-        </div>
+          {showButton && <ShowMoreIcon open={open} />}
+        </button>
         <div className={this.toggleBenefitsVisibility(open, showButton)}>
           <p>{answer}</p>
         </div>

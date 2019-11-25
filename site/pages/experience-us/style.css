@@ -1,9 +1,25 @@
-@value badgerWhite, badgerBlack from "../../css/_colors.css";
+@value badgerRed, badgerWhite, badgerBlack from "../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .background {
   background-color: badgerWhite;
+  padding: 20px;
 }
+
+.h1 {
+  composes: fontL from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
+  color: badgerBlack;
+  margin-bottom: 10px;
+}
+
+.h3 {
+  composes: fontXS from '../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  color: badgerRed;
+  margin-bottom: 10px;
+}
+
 
 @media mediumScreen {
 }

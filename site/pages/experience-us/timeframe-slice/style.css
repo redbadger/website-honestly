@@ -1,85 +1,17 @@
 @value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
 
-.benefitsTimelineSection {
-  composes: dividerYellow from '../../../css/_divider.css';
-  padding: 40px 20px 10px;
-  padding-top: 30px;
-  background-color: cainYellow;
-  text-align: center;
-}
-.benefitsTimelineSection h2 {
-  margin-bottom: 0;
-  font-family: 'Sentinel A', 'Sentinel B', serif;
-}
-
-.benefits__container {
-  padding: 20px 5px 10px 3px;
-}
-
-.benefits__heading {
-  font-size: 35px;
-  font-weight: 800;
-  font-family: 'Sentinel A', 'Sentinel B', serif;
-  text-align: left;
-}
-
-.benefits__categoryList {
-  margin-bottom: 30px;
-}
-
-.benefits__wrapper {
-  padding: 0;
+.timelineSlice {
+  padding: 40px 0;
+  border-bottom: badgerBlack 1px solid;
+  margin-bottom: 18px;
 }
 
 @media smallScreen {
-  .benefits__heading {
-    font-size: 48px;
-  }
 }
 
 @media mediumScreen {
-  .benefitsTimelineSection {
-    padding: 40px 20px 40px;
-  }
-
-  .benefits__wrapper {
-    padding: 0 5px;
-  }
-
-  .benefits__heading {
-    padding-bottom: 20px;
-  }
-
-  .benefits__container {
-    padding: 40px 0 10px;
-  }
-
-  .benefits__categoryList {
-    margin-bottom: 40px;
-  }
 }
 
 @media largeScreen {
-  .benefitsTimelineSection {
-    padding: 40px 20px 40px;
-  }
-
-  .benefits__heading {
-    padding-bottom: 40px;
-  }
-
-  .benefits__wrapper {
-    max-width: 1400px;
-    margin: auto;
-    padding: 0 25px;
-  }
-
-  .benefits__container {
-    padding-top: 60px;
-  }
-
-  .benefits__categoryList {
-    margin-bottom: 70px;
-  }
 }
