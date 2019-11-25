@@ -9,7 +9,7 @@ type ShowMoreIconProps = {
 
 const ShowMoreIcon = ({ open, cssModifier }: ShowMoreIconProps) => {
   return (
-    <div className={`${styles.button__more} ${cssModifier}`}>
+    <div className={`${styles.button__more} ${cssModifier || ''}`}>
       <span className={open ? styles.button__arrowDown : styles.button__arrow} />
     </div>
   );

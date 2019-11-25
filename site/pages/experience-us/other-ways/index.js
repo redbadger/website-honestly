@@ -1,9 +1,9 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './style.css';
 import EngagementCard from './engagement-card';
 
-import type { GoldCoinLPProps } from '../../../../templates/gold-coin-lp';
+import type { GoldCoinLPProps } from '../../../templates/gold-coin-lp';
 
 export type OtherWaysProps = {
   goldCoinPages: Array<GoldCoinLPProps>,

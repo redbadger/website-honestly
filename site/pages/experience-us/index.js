@@ -11,13 +11,13 @@ type Props = {
   goldCoinPages: Array<GoldCoinLPProps>,
 };
 
-const social = {
-  title: 'Join us | Red Badger',
-  description:
-    'We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.',
-  altText: 'An illustration an award we won.',
-  url: 'https://red-badger/jobs',
-};
+// const social = {
+//   title: 'Join us | Red Badger',
+//   description:
+//     'We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.',
+//   altText: 'An illustration an award we won.',
+//   url: 'https://red-badger/jobs',
+// };
 
 const validTimeframes = ['1 hour', '1 day', '1 week', '2 weeks'];
 
@@ -26,7 +26,6 @@ const sortTimeframes = goldCoinPages => {
   validTimeframes.forEach(timeframe => {
     timeframes[timeframe] = goldCoinPages.filter(page => page.duration === timeframe);
   });
-  console.log(1, timeframes);
   return timeframes;
 };
 

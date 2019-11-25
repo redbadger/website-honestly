@@ -6,6 +6,7 @@
   composes: fontXS from '../../../../css/typography/_fonts.css';
   display: inline-block;
   width: 220px;
+  flex: 0 0 auto;
   overflow: hidden;
   margin-right: 50px;
   color: badgerBlack;

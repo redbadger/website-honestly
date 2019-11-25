@@ -690,8 +690,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                 <div
                   class="category"
                 >
-                  <div
+                  <button
+                    aria-expanded="false"
+                    aria-label="expand Health section"
                     class="category__content"
+                    type="button"
                   >
                     <h3
                       class="category__title"
@@ -703,31 +706,31 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       class="category__icon"
                       src="Health_icon.png"
                     />
-                  </div>
+                  </button>
                   <ul
                     class="category__questionList category__visible"
                   >
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, How does Red Badger support me if I’m unwell? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             How does Red Badger support me if I’m unwell?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, How does Red Badger support me if I’m unwell? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -739,25 +742,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, What is covered to keep me healthy? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             What is covered to keep me healthy?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, What is covered to keep me healthy? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -769,25 +772,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, In the worst-case scenario, how do Red Badger support me and my family? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             In the worst-case scenario, how do Red Badger support me and my family?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, In the worst-case scenario, how do Red Badger support me and my family? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -804,8 +807,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                 <div
                   class="category"
                 >
-                  <div
+                  <button
+                    aria-expanded="false"
+                    aria-label="expand Finance section"
                     class="category__content"
+                    type="button"
                   >
                     <h3
                       class="category__title"
@@ -817,31 +823,31 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       class="category__icon"
                       src="Finance_icon.png"
                     />
-                  </div>
+                  </button>
                   <ul
                     class="category__questionList category__visible"
                   >
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, What pension contributions will I receive? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             What pension contributions will I receive?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, What pension contributions will I receive? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -853,25 +859,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, Do you offer assistance with the cost of commuting? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             Do you offer assistance with the cost of commuting?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, Do you offer assistance with the cost of commuting? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -883,25 +889,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, Is there a bonus scheme? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             Is there a bonus scheme?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, Is there a bonus scheme? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -918,8 +924,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                 <div
                   class="category"
                 >
-                  <div
+                  <button
+                    aria-expanded="false"
+                    aria-label="expand Work-life balance section"
                     class="category__content"
+                    type="button"
                   >
                     <h3
                       class="category__title"
@@ -931,31 +940,31 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       class="category__icon"
                       src="Worklifebalance_icon.png"
                     />
-                  </div>
+                  </button>
                   <ul
                     class="category__questionList category__visible"
                   >
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, How much holiday will I get? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             How much holiday will I get?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, How much holiday will I get? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -967,25 +976,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, What’s your parental leave policy? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             What’s your parental leave policy?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, What’s your parental leave policy? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -997,25 +1006,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, Do you have any wellbeing programmes? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             Do you have any wellbeing programmes?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, Do you have any wellbeing programmes? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -1032,8 +1041,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                 <div
                   class="category"
                 >
-                  <div
+                  <button
+                    aria-expanded="false"
+                    aria-label="expand Community and culture section"
                     class="category__content"
+                    type="button"
                   >
                     <h3
                       class="category__title"
@@ -1045,31 +1057,31 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       class="category__icon"
                       src="Social_icon.png"
                     />
-                  </div>
+                  </button>
                   <ul
                     class="category__questionList category__visible"
                   >
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, What socials can I get involved in? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             What socials can I get involved in?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, What socials can I get involved in? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -1081,25 +1093,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, Can I donate to charity through the payroll? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             Can I donate to charity through the payroll?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, Can I donate to charity through the payroll? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -1111,25 +1123,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, I’m interested in the Red Badger culture, can I get involved? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             I’m interested in the Red Badger culture, can I get involved?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, I’m interested in the Red Badger culture, can I get involved? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -1141,25 +1153,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, Does Red Badger work with any charities? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             Does Red Badger work with any charities?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, Does Red Badger work with any charities? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -1176,8 +1188,11 @@ exports[`site/pages/join-us renders correctly 1`] = `
                 <div
                   class="category"
                 >
-                  <div
+                  <button
+                    aria-expanded="false"
+                    aria-label="expand Career development section"
                     class="category__content"
+                    type="button"
                   >
                     <h3
                       class="category__title"
@@ -1189,31 +1204,31 @@ exports[`site/pages/join-us renders correctly 1`] = `
                       class="category__icon"
                       src="Career_icon.png"
                     />
-                  </div>
+                  </button>
                   <ul
                     class="category__questionList category__visible"
                   >
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, How can I develop at Red Badger? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             How can I develop at Red Badger?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, How can I develop at Red Badger? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -1225,25 +1240,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, Do you have a library? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             Do you have a library?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, Do you have a library? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >
@@ -1255,25 +1270,25 @@ exports[`site/pages/join-us renders correctly 1`] = `
                     </li>
                     <li>
                       <div>
-                        <div
+                        <button
+                          aria-expanded="false"
+                          aria-label="answer, How will I be supported to develop? "
                           class="benefit__question"
+                          type="button"
                         >
                           <h4
                             class="benefit__heading"
                           >
                             How will I be supported to develop?
                           </h4>
-                          <button
-                            aria-expanded="false"
-                            aria-label="answer, How will I be supported to develop? "
-                            class="button__more"
-                            type="button"
+                          <div
+                            class="button__more "
                           >
                             <span
                               class="button__arrow"
                             />
-                          </button>
-                        </div>
+                          </div>
+                        </button>
                         <div
                           class="benefit__answer__hidden"
                         >

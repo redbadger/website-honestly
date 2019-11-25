@@ -7,7 +7,8 @@
 }
 
 .carousel {
-  overflow-x: scroll;
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   height: 380px;
 }

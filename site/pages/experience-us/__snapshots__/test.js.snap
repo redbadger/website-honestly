@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/join-us renders correctly 1`] = `
+<div
+  class="background"
+>
+  <h3
+    class="h3"
+  >
+    Experience Red Badger
+  </h3>
+  <h1
+    class="h1"
+  >
+    How long have you got?
+  </h1>
+  <section
+    class="timelineSlice"
+    id="contactUs"
+  >
+    <div
+      class="benefits__wrapper"
+    >
+      <div
+        class="benefits__container"
+      >
+        <ul
+          class="benefits__categoryList"
+        >
+          <li>
+            <div>
+              <button
+                aria-label="toggle 1 hour dropdown"
+                class="dropdownButton dropdownButtonClosed"
+                type="button"
+              >
+                <h4
+                  class=""
+                >
+                  1 HOUR
+                </h4>
+                <div
+                  class="button__more timeframeButton timeframeButtonClosed"
+                >
+                  <span
+                    class="button__arrow"
+                  />
+                </div>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button
+                aria-label="toggle 1 day dropdown"
+                class="dropdownButton dropdownButtonClosed"
+                type="button"
+              >
+                <h4
+                  class=""
+                >
+                  1 DAY
+                </h4>
+                <div
+                  class="button__more timeframeButton timeframeButtonClosed"
+                >
+                  <span
+                    class="button__arrow"
+                  />
+                </div>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button
+                aria-label="toggle 1 week dropdown"
+                class="dropdownButton dropdownButtonClosed"
+                type="button"
+              >
+                <h4
+                  class=""
+                >
+                  1 WEEK
+                </h4>
+                <div
+                  class="button__more timeframeButton timeframeButtonClosed"
+                >
+                  <span
+                    class="button__arrow"
+                  />
+                </div>
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <button
+                aria-label="toggle 2 weeks dropdown"
+                class="dropdownButton dropdownButtonClosed"
+                type="button"
+              >
+                <h4
+                  class=""
+                >
+                  2 WEEKS
+                </h4>
+                <div
+                  class="button__more timeframeButton timeframeButtonClosed"
+                >
+                  <span
+                    class="button__arrow"
+                  />
+                </div>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div>
+    <h2
+      class="h2"
+    >
+      Other ways to engage with us
+    </h2>
+    <div
+      class="carousel"
+    >
+      <a
+        class="engagementCard"
+        href="/experience-us/service-mesh"
+      >
+        <img
+          alt="Service Mesh headshot"
+          src="https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948"
+        />
+        <div
+          class="engagementCardLink"
+        >
+          Service Mesh
+          <svg
+            class="engagementCardArrow"
+            viewBox="0 0 22 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+              fill="#FC1D42"
+              fill-rule="evenodd"
+              stroke="#FC1D42"
+            />
+          </svg>
+        </div>
+        <p
+          class="engagementCardRole"
+        >
+          Service Mesh
+        </p>
+      </a>
+      <a
+        class="engagementCard"
+        href="/experience-us/service-mesh"
+      >
+        <img
+          alt="Service Mesh headshot"
+          src="https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948"
+        />
+        <div
+          class="engagementCardLink"
+        >
+          Service Mesh
+          <svg
+            class="engagementCardArrow"
+            viewBox="0 0 22 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+              fill="#FC1D42"
+              fill-rule="evenodd"
+              stroke="#FC1D42"
+            />
+          </svg>
+        </div>
+        <p
+          class="engagementCardRole"
+        >
+          Service Mesh
+        </p>
+      </a>
+      <a
+        class="engagementCard"
+        href="/experience-us/service-mesh"
+      >
+        <img
+          alt="Service Mesh headshot"
+          src="https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948"
+        />
+        <div
+          class="engagementCardLink"
+        >
+          Service Mesh
+          <svg
+            class="engagementCardArrow"
+            viewBox="0 0 22 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+              fill="#FC1D42"
+              fill-rule="evenodd"
+              stroke="#FC1D42"
+            />
+          </svg>
+        </div>
+        <p
+          class="engagementCardRole"
+        >
+          Service Mesh
+        </p>
+      </a>
+      <a
+        class="engagementCard"
+        href="/experience-us/service-mesh"
+      >
+        <img
+          alt="Service Mesh headshot"
+          src="https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948"
+        />
+        <div
+          class="engagementCardLink"
+        >
+          Service Mesh
+          <svg
+            class="engagementCardArrow"
+            viewBox="0 0 22 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+              fill="#FC1D42"
+              fill-rule="evenodd"
+              stroke="#FC1D42"
+            />
+          </svg>
+        </div>
+        <p
+          class="engagementCardRole"
+        >
+          Service Mesh
+        </p>
+      </a>
+    </div>
+  </div>
+</div>
+`;

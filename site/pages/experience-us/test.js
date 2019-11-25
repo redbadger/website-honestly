@@ -3,43 +3,112 @@ import { render } from 'enzyme';
 
 import { Context } from '../../components/link/test-helper';
 
-import JoinUs from './index';
+import ExperienceUsPage from './index';
 
-const jobs = [
+const goldCoinPages = [
   {
-    id: '1',
-    title: 'chief awesome person',
-    description: 'awesomeness is a full-time job so we need you here being awesome',
-    fullDescription:
-      'awesomeness is a full-time job so we need you here being awesome and that is all I have to say about that',
-    department: 'Awesome Squad',
-    slug: 'awesome',
-    applicationUrl: 'https://www.red-badger.com/jobs/awesome',
-    datePosted: 'Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)',
+    consultants: ['mr-sitemap', 'milo-castro', 'clementine-brown'],
+    duration: '1 hour',
+    headerAlt: null,
+    headerImage:
+      'https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948',
+    hubspotForm: {
+      portalId: 4210858,
+      guid: 'a2c3b495-7093-47af-a6b6-bd4d82b9fe94',
+      name: 'Gold coins: service mesh',
+      cssClass: 'hs-form stacked',
+      submitText: 'Book now',
+    },
+    location: 'Your office, or ours',
+    price: 'Free',
+    slug: 'service-mesh',
+    subTitle: 'Service Mesh',
+    title: 'Service Mesh',
+    type: 'lunch',
+    whatIsIt:
+      '<p>Service Mesh is an emerging approach to orchestrating microservices at scale. When designed and deployed well, it can help you solve some of the major challenges posed by complex system architectures. These areas include service discovery, security, networking and observability.</p>',
+    whatWillYouLearn:
+      '<ol><li>What is Service Mesh</li><li>How organisations can benefit by reducing complexity and improving efficiency</li><li>Where to start with Service Mesh for your organisation</li></ol>',
+    whoIsItFor: '<p>CTOs, engineers, architects and technical product leads   </p>',
+    whoWillRun: '<p>Red Badger’s Technical Directors </p>',
   },
   {
-    id: '2',
-    title: 'Junior adorable dog',
-    description:
-      'Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack',
-    fullDescription:
-      'Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack and that is all I have to say about that',
-    department: 'four legged friends',
-    slug: 'woof',
-    applicationUrl: 'https://www.red-badger.com/jobs/woof',
-    datePosted: 'Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)',
+    consultants: ['mr-sitemap', 'milo-castro', 'clementine-brown'],
+    duration: '1 day',
+    headerAlt: null,
+    headerImage:
+      'https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948',
+    hubspotForm: {
+      portalId: 4210858,
+      guid: 'a2c3b495-7093-47af-a6b6-bd4d82b9fe94',
+      name: 'Gold coins: service mesh',
+      cssClass: 'hs-form stacked',
+      submitText: 'Book now',
+    },
+    location: 'Your office, or ours',
+    price: 'Free',
+    slug: 'service-mesh',
+    subTitle: 'Service Mesh',
+    title: 'Service Mesh',
+    type: 'lunch',
+    whatIsIt:
+      '<p>Service Mesh is an emerging approach to orchestrating microservices at scale. When designed and deployed well, it can help you solve some of the major challenges posed by complex system architectures. These areas include service discovery, security, networking and observability.</p>',
+    whatWillYouLearn:
+      '<ol><li>What is Service Mesh</li><li>How organisations can benefit by reducing complexity and improving efficiency</li><li>Where to start with Service Mesh for your organisation</li></ol>',
+    whoIsItFor: '<p>CTOs, engineers, architects and technical product leads   </p>',
+    whoWillRun: '<p>Red Badger’s Technical Directors </p>',
   },
   {
-    id: '3',
-    title: 'Mid 2 Tea drinker',
-    description:
-      'Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required',
-    fullDescription:
-      'Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required and that is all I have to say about that',
-    department: 'Caffiends',
-    slug: 'slurp',
-    applicationUrl: 'https://www.red-badger.com/jobs/tea',
-    datePosted: 'Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)',
+    consultants: ['mr-sitemap', 'milo-castro', 'clementine-brown'],
+    duration: '1 week',
+    headerAlt: null,
+    headerImage:
+      'https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948',
+    hubspotForm: {
+      portalId: 4210858,
+      guid: 'a2c3b495-7093-47af-a6b6-bd4d82b9fe94',
+      name: 'Gold coins: service mesh',
+      cssClass: 'hs-form stacked',
+      submitText: 'Book now',
+    },
+    location: 'Your office, or ours',
+    price: 'Free',
+    slug: 'service-mesh',
+    subTitle: 'Service Mesh',
+    title: 'Service Mesh',
+    type: 'lunch',
+    whatIsIt:
+      '<p>Service Mesh is an emerging approach to orchestrating microservices at scale. When designed and deployed well, it can help you solve some of the major challenges posed by complex system architectures. These areas include service discovery, security, networking and observability.</p>',
+    whatWillYouLearn:
+      '<ol><li>What is Service Mesh</li><li>How organisations can benefit by reducing complexity and improving efficiency</li><li>Where to start with Service Mesh for your organisation</li></ol>',
+    whoIsItFor: '<p>CTOs, engineers, architects and technical product leads   </p>',
+    whoWillRun: '<p>Red Badger’s Technical Directors </p>',
+  },
+  {
+    consultants: ['mr-sitemap', 'milo-castro', 'clementine-brown'],
+    duration: '2 weeks',
+    headerAlt: null,
+    headerImage:
+      'https://images.prismic.io/rb-website-stage/b378bba2-8c68-4734-b657-455e3af357f1_Headerimage.png?auto=compress,format&rect=159,0,2560,948&w=2560&h=948',
+    hubspotForm: {
+      portalId: 4210858,
+      guid: 'a2c3b495-7093-47af-a6b6-bd4d82b9fe94',
+      name: 'Gold coins: service mesh',
+      cssClass: 'hs-form stacked',
+      submitText: 'Book now',
+    },
+    location: 'Your office, or ours',
+    price: 'Free',
+    slug: 'service-mesh',
+    subTitle: 'Service Mesh',
+    title: 'Service Mesh',
+    type: 'lunch',
+    whatIsIt:
+      '<p>Service Mesh is an emerging approach to orchestrating microservices at scale. When designed and deployed well, it can help you solve some of the major challenges posed by complex system architectures. These areas include service discovery, security, networking and observability.</p>',
+    whatWillYouLearn:
+      '<ol><li>What is Service Mesh</li><li>How organisations can benefit by reducing complexity and improving efficiency</li><li>Where to start with Service Mesh for your organisation</li></ol>',
+    whoIsItFor: '<p>CTOs, engineers, architects and technical product leads   </p>',
+    whoWillRun: '<p>Red Badger’s Technical Directors </p>',
   },
 ];
 
@@ -48,7 +117,7 @@ describe('site/pages/join-us', () => {
     expect(
       render(
         <Context>
-          <JoinUs jobs={jobs} />
+          <ExperienceUsPage goldCoinPages={goldCoinPages} />
         </Context>,
       ),
     ).toMatchSnapshot();

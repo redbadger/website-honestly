@@ -2,7 +2,6 @@
 import React from 'react';
 import Timeframe from './timeframe';
 import styles from './style.css';
-import Container from '../../../components/container';
 import type { GoldCoinLPProps } from '../../../templates/gold-coin-lp';
 
 type TimeframeSliceProps = {

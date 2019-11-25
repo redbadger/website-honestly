@@ -1,0 +1,97 @@
+@value badgerWhite, badgerBlack, badgerRedOnBlack, cainYellow, grey, scorpian, linesOnWhite from "../../../css/_colors.css";
+@value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../../css/_sizes.css";
+
+.heroCard {
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  display: inline-block;
+  width: 100%;
+  flex: 0 0 auto;
+  overflow: hidden;
+  color: badgerBlack;
+  margin-bottom: 20px;
+}
+
+.heroCard:hover .linkHighlight {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.heroCard:hover .heroCardLink {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.heroCard img {
+  height: 188px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.heroCardType {
+  composes: lightSerif from '../../../css/typography/_fonts.css';
+  composes: fontM2 from '../../../css/typography/_fonts.css';
+  white-space: initial;
+  margin-bottom: 24px;
+}
+
+.heroCardTitle {
+  composes: serif from '../../../css/typography/_fonts.css';
+  composes: fontM2 from '../../../css/typography/_fonts.css';
+  display: inline;
+  color: badgerBlack;
+  position: relative;
+}
+
+.description,
+.subHeader, .linkHighlight {
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.subHeader {
+  margin-bottom: 5px;
+}
+
+.linkHighlight {
+  float: right;
+}
+
+.linkHighlight:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.blurb {
+  margin-bottom: 24px;
+}
+
+.heroCardContent {
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  composes: fontS from '../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  background: #ffffff;
+  padding: 12px 20px 38px;
+}
+
+.heroCardArrow {
+  width: 10px;
+  margin-left: 6px;
+}
+
+.heroCardLink:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+@media largeScreen {
+  .eheroCardLink {
+    font-size: 20px;
+    line-height: 1.35em;
+  }
+
+  .eheroCard {
+    width: 170px;
+  }
+}
