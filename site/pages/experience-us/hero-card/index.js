@@ -1,6 +1,6 @@
 // @flow
 /* eslint-disable react/no-danger */
-import React from 'react';
+import * as React from 'react';
 import { atAGlanceTypes } from '../../../templates/gold-coin-lp/atAGlance';
 
 import styles from './style.css';
@@ -11,7 +11,7 @@ export type HeroCardProps = {
   type: string,
   description: string,
   url: string,
-  blurb: string,
+  blurb: React.Node,
 };
 
 const HeroCard = ({ image, title, type, blurb, description, url }: HeroCardProps) => (

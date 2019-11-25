@@ -7,7 +7,7 @@ import ShowMoreIcon from '../../../../components/show-more-button';
 import type { GoldCoinLPProps } from '../../../../templates/gold-coin-lp';
 
 export type TimeframeProps = {
-  title: String,
+  title: string,
   goldCoinPages: Array<GoldCoinLPProps>,
 };
 
@@ -21,7 +21,7 @@ class Timeframe extends Component<TimeframeProps, TimeframeState> {
     this.state = {
       open: false,
     };
-    this.handleClick = this.handleClick.bind(this);
+    (this: any).handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {

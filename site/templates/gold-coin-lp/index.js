@@ -35,7 +35,7 @@ export type GoldCoinLPProps = {
   whoWillRun: React.Node,
   consultants: Array<ConsultantProps>,
   previews: Array<PreviewSliceProps>,
-  formId: String,
+  formId: string,
   hubspotForm: HubspotFormProps,
   pageTitle: string,
   slug: string,
