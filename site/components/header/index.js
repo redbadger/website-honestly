@@ -11,7 +11,7 @@ import Logo from './logo';
 const Header = () => {
   return (
     <header className={styles.header} role="banner">
-      <Link to="homePage" title="Home" className={styles.logo}>
+      <Link to="homePage" data-link="header" title="Home" className={styles.logo}>
         <Logo />
       </Link>
 

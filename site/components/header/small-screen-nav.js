@@ -95,34 +95,64 @@ export default class SmallScreenNav extends React.Component<any, State> {
             <nav className={styles.smallScreenNavContainer}>
               <ul role="listbox" className={styles.smallScreenNav}>
                 <li>
-                  <Link tabIndex={navTabIndex} to="homePage" navigating={this.closeMenu}>
+                  <Link
+                    data-link="header"
+                    tabIndex={navTabIndex}
+                    to="homePage"
+                    navigating={this.closeMenu}
+                  >
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link tabIndex={navTabIndex} to="whatWeDoPage" navigating={this.closeMenu}>
+                  <Link
+                    data-link="header"
+                    tabIndex={navTabIndex}
+                    to="whatWeDoPage"
+                    navigating={this.closeMenu}
+                  >
                     What we do
                   </Link>
                   <ul className={styles.childList}>
                     <li>
-                      <Link tabIndex={navTabIndex} to="technology" navigating={this.closeMenu}>
+                      <Link
+                        data-link="header"
+                        tabIndex={navTabIndex}
+                        to="technology"
+                        navigating={this.closeMenu}
+                      >
                         Technology
                       </Link>
                     </li>
                     <li>
-                      <Link tabIndex={navTabIndex} to="ourWorkPage" navigating={this.closeMenu}>
+                      <Link
+                        data-link="header"
+                        tabIndex={navTabIndex}
+                        to="ourWorkPage"
+                        navigating={this.closeMenu}
+                      >
                         Our work
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link tabIndex={navTabIndex} to="aboutUsPage" navigating={this.closeMenu}>
+                  <Link
+                    data-link="header"
+                    tabIndex={navTabIndex}
+                    to="aboutUsPage"
+                    navigating={this.closeMenu}
+                  >
                     About us
                   </Link>
                   <ul className={styles.childList}>
                     <li>
-                      <Link tabIndex={navTabIndex} to="badgers" navigating={this.closeMenu}>
+                      <Link
+                        data-link="header"
+                        tabIndex={navTabIndex}
+                        to="badgers"
+                        navigating={this.closeMenu}
+                      >
                         Our team
                       </Link>
                     </li>
@@ -134,17 +164,28 @@ export default class SmallScreenNav extends React.Component<any, State> {
                   </a>
                 </li>
                 <li>
-                  <Link tabIndex={navTabIndex} to="events" navigating={this.closeMenu}>
+                  <Link
+                    data-link="header"
+                    tabIndex={navTabIndex}
+                    to="events"
+                    navigating={this.closeMenu}
+                  >
                     Events
                   </Link>
                 </li>
                 <li>
-                  <Link tabIndex={navTabIndex} to="joinUs" navigating={this.closeMenu}>
+                  <Link
+                    data-link="header"
+                    tabIndex={navTabIndex}
+                    to="joinUs"
+                    navigating={this.closeMenu}
+                  >
                     Jobs
                   </Link>
                 </li>
                 <li>
                   <Link
+                    data-link="header"
                     tabIndex={navTabIndex}
                     to="homePage"
                     navigationData={{ contactUs: true }}
