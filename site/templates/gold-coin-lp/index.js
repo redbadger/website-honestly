@@ -20,7 +20,7 @@ import locationImage from './images/location.png';
 
 import { atAGlanceTypes } from './atAGlance';
 
-type GoldCoinLPProps = {
+export type GoldCoinLPProps = {
   duration: string,
   headerImage: string,
   headerAlt: string,
