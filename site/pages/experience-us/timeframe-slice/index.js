@@ -15,11 +15,11 @@ type TimeframeSliceProps = {
 };
 
 type TimeframeSliceState = {
-  currentlyOpen?: number,
+  currentlyOpen?: any,
 };
 
 class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState> {
-  static getDerivedStateFromProps(props, state) {
+  static getDerivedStateFromProps(props: TimeframeSliceProps, state: TimeframeSliceState) {
     const { currentWidth } = props;
     const { currentlyOpen } = state;
     if (!currentlyOpen && currentWidth !== 'mobile') {
@@ -32,13 +32,13 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
     };
   }
 
-  constructor(props: TimeframeProps) {
+  constructor(props: TimeframeSliceProps) {
     super(props);
-    this.state = 0;
+    this.state = { currentlyOpen: null };
     (this: any).handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(indexId) {
+  handleClick(indexId: string) {
     const { currentWidth } = this.props;
     let { currentlyOpen } = this.state;
     if (currentWidth === 'mobile' && indexId === currentlyOpen) {
@@ -49,7 +49,7 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
     this.setState({ currentlyOpen });
   }
 
-  determinOpen(index) {
+  determinOpen(index: number) {
     return index === this.state.currentlyOpen;
   }
 

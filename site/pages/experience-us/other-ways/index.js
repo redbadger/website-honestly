@@ -25,7 +25,7 @@ const renderEngagementCards = goldCoinPages => {
 
 const scrollCarosel = step => {
   const element = document.getElementById('otherWaysCarousel');
-  element.scrollLeft += step;
+  (element: any).scrollLeft += step;
 };
 
 const OtherWays = ({ goldCoinPages }: OtherWaysProps) => {
