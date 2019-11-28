@@ -24,7 +24,7 @@ const renderEngagementCards = goldCoinPages => {
 };
 
 const scrollCarosel = step => {
-  if (typeof document !== 'undefined') {
+  if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     const element = document.getElementById('otherWaysCarousel');
     (element: any).scrollLeft += step;
   }
