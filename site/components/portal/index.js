@@ -14,12 +14,16 @@ function canUseDOM() {
 class Portal extends React.Component<PortalProps> {
   constructor(props: PortalProps) {
     super(props);
-    (this: any).el = document.createElement('div');
+    if (canUseDOM()) {
+      (this: any).el = document.createElement('div');
+    }
   }
 
   componentDidMount = () => {
-    (this: any).portalRoot = document.getElementById((this: any).props.portalRootId);
-    (this: any).portalRoot.appendChild((this: any).el);
+    if (canUseDOM()) {
+      (this: any).portalRoot = document.getElementById((this: any).props.portalRootId);
+      (this: any).portalRoot.appendChild((this: any).el);
+    }
   };
 
   componentWillUnmount = () => {
