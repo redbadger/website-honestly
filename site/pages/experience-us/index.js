@@ -1,5 +1,5 @@
 // @flow
-import React from 'react';
+import React, { Component } from 'react';
 import TimeframeSlice from './timeframe-slice';
 import OtherWays from './other-ways';
 
@@ -9,6 +9,10 @@ import type { GoldCoinLPProps } from '../../templates/gold-coin-lp';
 
 type Props = {
   goldCoinPages: Array<GoldCoinLPProps>,
+};
+
+type State = {
+  currentWidth: string,
 };
 
 // const social = {
@@ -29,13 +33,56 @@ const sortTimeframes = goldCoinPages => {
   return timeframes;
 };
 
-const ExperienceUsPage = ({ goldCoinPages }: Props) => (
-  <div className={styles.background}>
-    <h3 className={styles.h3}>Experience Red Badger</h3>
-    <h1 className={styles.h1}>How long have you got?</h1>
-    <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} />
-    <OtherWays goldCoinPages={goldCoinPages} />
-  </div>
-);
+const screenBreakPoints = {
+  tablet: 690,
+  desktop: 980,
+};
+
+class ExperienceUsPage extends Component<Props, State> {
+  static setWindowSize() {
+    let currentWidth = 'tablet';
+    if (window.innerWidth < screenBreakPoints.tablet) {
+      currentWidth = 'mobile';
+    }
+    if (
+      window.innerWidth >= screenBreakPoints.tablet &&
+      window.innerWidth < screenBreakPoints.desktop
+    ) {
+      currentWidth = 'tablet';
+    }
+    if (window.innerWidth >= screenBreakPoints.desktop) {
+      currentWidth = 'desktop';
+    }
+
+    return currentWidth;
+  }
+
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      currentWidth: ExperienceUsPage.setWindowSize(),
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({ currentWidth: ExperienceUsPage.setWindowSize() });
+    });
+  }
+
+  render() {
+    const { goldCoinPages } = this.props;
+    const { currentWidth } = this.state;
+    return (
+      <div className={styles.background}>
+        <h3 className={styles.h3}>Experience Red Badger</h3>
+        {currentWidth}
+        <h1 className={styles.h1}>How long have you got?</h1>
+        <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} currentWidth={currentWidth} />
+        <OtherWays goldCoinPages={goldCoinPages} />
+      </div>
+    );
+  }
+}
 
 export default ExperienceUsPage;

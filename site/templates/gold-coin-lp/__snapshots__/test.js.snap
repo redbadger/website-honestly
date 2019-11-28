@@ -7,7 +7,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
     description="We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right."
     metaImage="https://www.example.com/test.jpg"
     title="test-title | Red Badger"
-    url="https://red-badger.com/what-we-offer/test"
+    url="https://red-badger.com/experience-us/test"
   />
   <div
     className="goldCoinLP"

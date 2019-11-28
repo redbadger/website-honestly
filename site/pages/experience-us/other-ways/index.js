@@ -22,11 +22,39 @@ const renderEngagementCards = goldCoinPages => {
     );
   });
 };
+
+const scrollCarosel = step => {
+  const element = document.getElementById('otherWaysCarousel');
+  element.scrollLeft += step;
+};
+
 const OtherWays = ({ goldCoinPages }: OtherWaysProps) => {
   return (
-    <div>
+    <div className={styles.otherWays}>
       <h2 className={styles.h2}>Other ways to engage with us</h2>
-      <div className={styles.carousel}>{renderEngagementCards(goldCoinPages)}</div>
+      <div className={styles.carousel} id="otherWaysCarousel">
+        {renderEngagementCards(goldCoinPages)}
+      </div>
+      <div className={styles.carouselButtons}>
+        <button
+          type="button"
+          aria-label="Scroll engagement carousel left"
+          id="caroselScrollLeft"
+          className={styles.carouselButtonLeft}
+          onClick={() => {
+            scrollCarosel(-160);
+          }}
+        />{' '}
+        <button
+          type="button"
+          aria-label="Scroll engagement carousel right"
+          id="caroselScrollRight"
+          className={styles.carouselButtonRight}
+          onClick={() => {
+            scrollCarosel(160);
+          }}
+        />
+      </div>
     </div>
   );
 };

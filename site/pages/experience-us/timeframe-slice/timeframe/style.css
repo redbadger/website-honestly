@@ -70,3 +70,42 @@
   border: solid badgerBlack;
   border-width: 0 2px 2px 0;
 }
+
+@media mediumScreen {
+  .timeframeListItem {
+    width: 25%;
+    margin-right: 20px;
+  }
+
+  .timeframeListItem:last-child {
+    margin-right: 0;
+  }
+
+  .h4Open {
+    margin-bottom: 20px;
+  }
+
+  .dropdownButton {
+    margin-bottom: 0;
+  }
+
+  .timeframeButton {
+    display: none;
+  }
+
+  .dropdownButtonOpen::after {
+    width: 100px;
+    left: calc(50% - 50px);
+  }
+
+  .timeFrameIntro {
+    padding: 40px;
+    background: badgerRed;
+    color: badgerWhite;
+  }
+
+  .timeFrameLargeContainer {
+    position: absolute;
+    left: 0;
+  }
+}

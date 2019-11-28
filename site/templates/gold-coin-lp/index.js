@@ -91,7 +91,7 @@ const GoldCoinLP = ({
         }
         metaImage={headerImage}
         altText={headerAlt}
-        url={`https://red-badger.com/what-we-offer/${slug}`}
+        url={`https://red-badger.com/experience-us/${slug}`}
       />
       <div className={styles.goldCoinLP}>
         <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />

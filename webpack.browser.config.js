@@ -25,7 +25,7 @@ const clientConfig = webpackMerge(baseWebConfig, {
 
   target: 'web',
 
-  externals: ['./client-digest'],
+  externals: ['./client-digest', 'react-portal-universal'],
 
   optimization: {
     minimizer: [

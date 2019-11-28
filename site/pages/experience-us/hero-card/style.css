@@ -44,7 +44,8 @@
 }
 
 .description,
-.subHeader, .linkHighlight {
+.subHeader,
+.linkHighlight {
   composes: boldSansSerif from '../../../css/typography/_fonts.css';
 }
 
@@ -85,13 +86,48 @@
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
-@media largeScreen {
-  .eheroCardLink {
-    font-size: 20px;
-    line-height: 1.35em;
+.heroCardContent ol,
+heroCardContent ol {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+@media mediumScreen {
+  .heroCard {
+    display: flex;
+    height: 355px;
+    margin-bottom: 40px;
   }
 
-  .eheroCard {
-    width: 170px;
+  .heroCard img {
+    max-width: 355px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .heroCardContent {
+    width: 100%;
+    position: relative;
+  }
+
+  .heroCardTitle,
+  .heroCardType {
+    font-size: 20px;
+  }
+
+  .description,
+  .subHeader,
+  .blurb,
+  .linkHighlight {
+    font-size: 16px;
+  }
+
+  .linkHighlight {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
   }
 }

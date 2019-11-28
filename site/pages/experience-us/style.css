@@ -14,14 +14,18 @@
 }
 
 .h3 {
-  composes: fontXS from '../../css/typography/_fonts.css';
   composes: boldSansSerif from '../../css/typography/_fonts.css';
   color: badgerRed;
   margin-bottom: 10px;
 }
 
-
 @media mediumScreen {
+  .h1 {
+    font-size: 60px;
+  }
+  .h3 {
+    font-size: 20px;
+  }
 }
 
 @media largeScreen {

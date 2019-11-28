@@ -1,16 +1,28 @@
 @value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
 @value smallScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
 
-.timelineSlice {
+.timeframeSlice {
+  position: relative;
   padding: 40px 0;
   border-bottom: badgerBlack 1px solid;
   margin-bottom: 18px;
 }
 
-@media smallScreen {
-}
-
 @media mediumScreen {
+  .timeframeList {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .timeframeListItem {
+    width: 25%;
+    margin-right: 20px;
+  }
+
+  .timeframeListItem:last-child {
+    margin-right: 0;
+  }
 }
 
 @media largeScreen {

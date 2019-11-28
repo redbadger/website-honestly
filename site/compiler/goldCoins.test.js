@@ -74,7 +74,7 @@ describe('site/compiler', () => {
 
       const filePaths = routes.map(r => r.filePath);
 
-      expect(filePaths).toEqual(expect.arrayContaining(['what-we-offer/test/index.html']));
+      expect(filePaths).toEqual(expect.arrayContaining(['experience-us/test/index.html']));
     });
 
     it('should render multiple gold coin pages', () => {
@@ -95,8 +95,8 @@ describe('site/compiler', () => {
 
       expect(filePaths).toEqual(
         expect.arrayContaining([
-          'what-we-offer/test/index.html',
-          'what-we-offer/test-2/index.html',
+          'experience-us/test/index.html',
+          'experience-us/test-2/index.html',
         ]),
       );
     });

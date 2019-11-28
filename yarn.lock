@@ -11002,6 +11002,13 @@ react-motion@^0.5.2:
     prop-types "^15.5.8"
     raf "^3.1.0"
 
+react-portal-universal@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-portal-universal/-/react-portal-universal-0.1.2.tgz#f206f64b8a8a9768e649df619b604b99d66b4cff"
+  integrity sha512-ikDGI7RZYxZJZZjopXA2bxhV4hpcPhVw/iSWGQn72TkRwGEV54256qElSi68QoBIC/eYH+z/BgZ65cGiV3ctcw==
+  dependencies:
+    cheerio "^1.0.0-rc.2"
+
 react-side-effect@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.2.0.tgz#0e940c78faba0c73b9b0eba9cd3dda8dfb7e7dae"

@@ -56,7 +56,7 @@ const getGoldCoinPreviews = (goldCoinPages, currentPageSlug) => {
         image: preview.headerImage,
         title: preview.title,
         subTitle: preview.subTitle,
-        url: `/what-we-offer/${preview.slug}`,
+        url: `/experience-us/${preview.slug}`,
         duration: preview.duration,
         alt: preview.headerAlt,
       };
@@ -381,7 +381,7 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ title }) => title,
     description: 'The value that Red Badger offers - a page for a specific Red Badger engagement',
     key: 'goldCoinPage',
-    route: 'what-we-offer/{slug}',
+    route: 'experience-us/{slug}',
     stateToProps: ({ badgers, goldCoinPages }, params = {}) => {
       if (goldCoinPages) {
         // find page that matches passed in slug.

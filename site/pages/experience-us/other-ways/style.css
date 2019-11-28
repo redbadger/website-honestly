@@ -1,9 +1,15 @@
-@value badgerBlack from "../../../css/_colors.css";
+@value badgerBlack, grey2 from "../../../css/_colors.css";
+@value mediumScreen from "../../../css/_sizes.css";
+
+.otherWays {
+  margin-bottom: 60px;
+}
 
 .h2 {
   composes: fontM from '../../../css/typography/_fonts.css';
   composes: serif from '../../../css/typography/_fonts.css';
   color: badgerBlack;
+  margin-bottom: 40px;
 }
 
 .carousel {
@@ -11,4 +17,46 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   height: 380px;
+}
+
+.carouselButtons {
+  display: none;
+  width: 100%;
+}
+
+.carouselButtonRight {
+  cursor: pointer;
+  background: none;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid grey2;
+  border-right: none;
+  margin-right: -16px;
+  outline: none;
+}
+
+.carouselButtonLeft {
+  cursor: pointer;
+  background: none;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 30px solid grey2;
+  border-left: none;
+  margin-left: -16px;
+  outline: none;
+}
+
+@media mediumScreen {
+  .carousel {
+    margin-bottom: 30px;
+  }
+
+  .carouselButtons {
+    display: flex;
+    justify-content: space-between;
+  }
 }

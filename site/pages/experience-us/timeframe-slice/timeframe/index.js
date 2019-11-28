@@ -1,44 +1,42 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './style.css';
 import HeroCard from '../../hero-card';
 import ShowMoreIcon from '../../../../components/show-more-button';
+import Portal from '../../../../components/portal';
 
 import type { GoldCoinLPProps } from '../../../../templates/gold-coin-lp';
 
 export type TimeframeProps = {
   title: string,
   goldCoinPages: Array<GoldCoinLPProps>,
-};
-
-type TimeframeState = {
+  currentWidth: string,
+  indexId: number,
   open: boolean,
+  portalRoot: string,
+  handleClick: Function,
 };
 
-class Timeframe extends Component<TimeframeProps, TimeframeState> {
-  constructor(props: TimeframeProps) {
-    super(props);
-    this.state = {
-      open: false,
-    };
-    (this: any).handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(prevState => ({ open: !prevState.open }));
-  }
-
+const Timeframe = ({
+  goldCoinPages,
+  title,
+  currentWidth,
+  indexId,
+  open,
+  handleClick,
+  portalRoot,
+}: TimeframeProps) => {
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
-  render() {
-    const { goldCoinPages, title } = { ...this.props };
-    const { open } = { ...this.state };
-    return (
-      <div>
+  return (
+    <li className={styles.timeframeListItem}>
+      <div className={styles.dropdownButtonContainer}>
         <button
           type="button"
           aria-label={`toggle ${title} dropdown`}
-          onClick={this.handleClick}
+          onClick={() => {
+            handleClick(indexId);
+          }}
           className={`${styles.dropdownButton} ${
             open ? styles.dropdownButtonOpen : styles.dropdownButtonClosed
           }`}
@@ -50,7 +48,7 @@ class Timeframe extends Component<TimeframeProps, TimeframeState> {
               open ? styles.timeframeButtonOpen : styles.timeframeButtonClosed
             }`}
           />
-          {open && (
+          {open && currentWidth === 'mobile' && (
             <div className={styles.timeFrameIntro}>
               <h5 className={styles.h5}>Let&apos;s meet</h5>
               <span>
@@ -60,7 +58,34 @@ class Timeframe extends Component<TimeframeProps, TimeframeState> {
             </div>
           )}
         </button>
+      </div>
+      <div className={open && currentWidth !== 'mobile' ? styles.timeFrameLargeContainer : ''}>
+        {open && currentWidth !== 'mobile' && (
+          <Portal portalRootId={portalRoot}>
+            <div className={styles.timeFrameIntro}>
+              <h5 className={styles.h5}>Let&apos;s meet</h5>
+              <span>
+                The best way to know if we’re right for you is to meet up. Here are some suggestions
+                if you can spare an hour.
+              </span>
+            </div>
+            {goldCoinPages.map(page => {
+              return (
+                <HeroCard
+                  image={page.headerImage}
+                  title={page.title}
+                  type={page.type}
+                  description={page.subTitle}
+                  url={`experience-us/${page.slug}`}
+                  blurb={page.whatWillYouLearn}
+                  key={page.slug}
+                />
+              );
+            })}
+          </Portal>
+        )}
         {open &&
+          currentWidth === 'mobile' &&
           goldCoinPages.map(page => {
             return (
               <HeroCard
@@ -69,13 +94,14 @@ class Timeframe extends Component<TimeframeProps, TimeframeState> {
                 type={page.type}
                 description={page.subTitle}
                 url={`experience-us/${page.slug}`}
-                blurb={page.whatIsIt}
+                blurb={page.whatWillYouLearn}
+                key={page.slug}
               />
             );
           })}
       </div>
-    );
-  }
-}
+    </li>
+  );
+};
 
 export default Timeframe;

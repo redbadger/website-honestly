@@ -10,9 +10,15 @@
   overflow: hidden;
   margin-right: 50px;
   color: badgerBlack;
+  background: #ffffff;
 }
 
-.engagementCard:hover .engagementCardLink {
+.engagementCardContent {
+  padding: 0 20px;
+}
+
+.engagementCard:hover .engagementCardLink,
+.engagementCard:hover .engagementCardCTA {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
@@ -25,6 +31,7 @@
 
 .engagementCardRole {
   white-space: initial;
+  margin-bottom: 20px;
 }
 
 .engagementCardLink {
@@ -34,6 +41,15 @@
   display: inline;
   color: badgerBlack;
   position: relative;
+}
+
+.engagementCardCTA {
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  float: right;
+}
+
+.engagementCardLinkWrapper {
+  margin-bottom: 20px;
 }
 
 .engagementCardArrow {
@@ -46,12 +62,12 @@
 }
 
 @media largeScreen {
-  .engagementCardLink {
+  /* .engagementCardLink {
     font-size: 20px;
     line-height: 1.35em;
   }
 
   .engagementCard {
     width: 170px;
-  }
+  } */
 }
