@@ -41,17 +41,19 @@ const screenBreakPoints = {
 class ExperienceUsPage extends Component<Props, State> {
   static setWindowSize() {
     let currentWidth = 'tablet';
-    if (window.innerWidth < screenBreakPoints.tablet) {
-      currentWidth = 'mobile';
-    }
-    if (
-      window.innerWidth >= screenBreakPoints.tablet &&
-      window.innerWidth < screenBreakPoints.desktop
-    ) {
-      currentWidth = 'tablet';
-    }
-    if (window.innerWidth >= screenBreakPoints.desktop) {
-      currentWidth = 'desktop';
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth < screenBreakPoints.tablet) {
+        currentWidth = 'mobile';
+      }
+      if (
+        window.innerWidth >= screenBreakPoints.tablet &&
+        window.innerWidth < screenBreakPoints.desktop
+      ) {
+        currentWidth = 'tablet';
+      }
+      if (window.innerWidth >= screenBreakPoints.desktop) {
+        currentWidth = 'desktop';
+      }
     }
 
     return currentWidth;
