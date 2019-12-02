@@ -77,11 +77,13 @@ class ExperienceUsPage extends Component<Props, State> {
     const { currentWidth } = this.state;
     return (
       <div className={styles.background}>
-        <h3 className={styles.h3}>Experience Red Badger</h3>
-        {currentWidth}
-        <h1 className={styles.h1}>How long have you got?</h1>
-        <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} currentWidth={currentWidth} />
-        <OtherWays goldCoinPages={goldCoinPages} />
+        <div className={styles.content}>
+          <h3 className={styles.h3}>Experience Red Badger</h3>
+          {currentWidth}
+          <h1 className={styles.h1}>How long have you got?</h1>
+          <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} currentWidth={currentWidth} />
+          <OtherWays goldCoinPages={goldCoinPages} />
+        </div>
       </div>
     );
   }

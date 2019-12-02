@@ -109,3 +109,14 @@
     left: 0;
   }
 }
+
+@media largeScreen {
+  .heroContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .timeFrameIntro {
+    margin-bottom: 40px;
+  }
+}

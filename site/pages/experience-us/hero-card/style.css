@@ -87,9 +87,13 @@
 }
 
 .heroCardContent ol,
-heroCardContent ol {
+heroCardContent ul {
   list-style: disc;
   margin-left: 20px;
+}
+
+.heroCardContainer {
+  width: 100%;
 }
 
 @media mediumScreen {
@@ -129,5 +133,33 @@ heroCardContent ol {
     position: absolute;
     bottom: 40px;
     right: 20px;
+  }
+}
+
+@media largeScreen {
+  .heroCard {
+    display: inline-block;
+    width: calc(33.3% - 20px);
+    max-width: 440px;
+    height: 620px;
+  }
+
+  .heroCard img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .heroCardContainer {
+    display: block;
+    height: calc(100% - 260px);
+    background: #ffffff;
+  }
+
+  .linkHighlight {
+    bottom: 20px;
   }
 }

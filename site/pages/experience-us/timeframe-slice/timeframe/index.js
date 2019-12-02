@@ -69,19 +69,21 @@ const Timeframe = ({
                 if you can spare an hour.
               </span>
             </div>
-            {goldCoinPages.map(page => {
-              return (
-                <HeroCard
-                  image={page.headerImage}
-                  title={page.title}
-                  type={page.type}
-                  description={page.subTitle}
-                  url={`experience-us/${page.slug}`}
-                  blurb={page.whatWillYouLearn}
-                  key={page.slug}
-                />
-              );
-            })}
+            <div className={styles.heroContainer}>
+              {goldCoinPages.map(page => {
+                return (
+                  <HeroCard
+                    image={page.headerImage}
+                    title={page.title}
+                    type={page.type}
+                    description={page.subTitle}
+                    url={`experience-us/${page.slug}`}
+                    blurb={page.whatWillYouLearn}
+                    key={page.slug}
+                  />
+                );
+              })}
+            </div>
           </Portal>
         )}
         {open &&

@@ -1,8 +1,9 @@
 @value badgerBlack, grey2 from "../../../css/_colors.css";
-@value mediumScreen from "../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .otherWays {
   margin-bottom: 60px;
+  position: relative;
 }
 
 .h2 {
@@ -58,5 +59,17 @@
   .carouselButtons {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media largeScreen {
+  .h2 {
+    font-size: 30px;
+  }
+  .carouselButtons {
+    width: calc(100% + 120px);
+    position: absolute;
+    top: 50%;
+    left: -60px;
   }
 }
