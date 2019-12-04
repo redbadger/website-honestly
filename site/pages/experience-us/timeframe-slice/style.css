@@ -8,11 +8,32 @@
   margin-bottom: 18px;
 }
 
+.h5 {
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  margin-bottom: 12px;
+}
+
+.timeFrameIntro {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  text-align: left;
+  margin-bottom: 10px;
+  background: badgerRed;
+  color: badgerWhite;
+  padding: 10px 40px 8px;
+}
+
 @media mediumScreen {
   .timeframeList {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+  }
+
+  .timeFrameIntro {
+    padding: 35px 40px 30px;
+    margin-bottom: 40px;
   }
 
   .timeframeListItem {
@@ -26,7 +47,16 @@
 }
 
 @media largeScreen {
+  .heroContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .timeframeSlice {
     padding: 40px 0 20px;
+  }
+
+  .timeFrameIntro {
+    padding: 35px 40px 40px;
   }
 }

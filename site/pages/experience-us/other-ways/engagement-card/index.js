@@ -9,16 +9,17 @@ export type EngagementCardProps = {
   title: string,
   description: string,
   url: string,
+  person: boolean,
 };
 
-const EngagementCard = ({ image, title, description, url }: EngagementCardProps) => (
+const EngagementCard = ({ image, title, description, url, person }: EngagementCardProps) => (
   <a className={styles.engagementCard} href={url}>
     <img src={image} alt={`${title} headshot`} />
     <div className={styles.engagementCardContent}>
       <div className={styles.engagementCardLinkWrapper}>
         <div className={styles.engagementCardLink}>
           {title}
-          <Arrow className={styles.engagementCardArrow} />
+          {person && <Arrow className={styles.engagementCardArrow} />}
         </div>
       </div>
       <p className={styles.engagementCardRole}>{description}</p>

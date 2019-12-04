@@ -12,6 +12,12 @@
   margin-bottom: 20px;
 }
 
+.linkHighlight,
+.heroCardLink {
+  border-bottom: 2px solid transparent;
+  line-height: 18px;
+}
+
 .heroCard:hover .linkHighlight {
   border-bottom: 2px solid badgerRedOnBlack;
 }
@@ -20,12 +26,26 @@
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
-.heroCard img {
+.heroCard:hover .imgContainer img {
+  width: 110%;
+  height: auto;
+}
+
+.imgContainer {
   height: 188px;
   width: 100%;
   object-fit: cover;
   display: block;
-  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.imgContainer img {
+  width: 100%;
+  min-width: 540px;
+  height: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.5s;
 }
 
 .heroCardType {
@@ -67,6 +87,10 @@
 
 .blurb {
   margin-bottom: 24px;
+  width: 100%;
+  height: 140px;
+  display: block;
+  overflow: hidden;
 }
 
 .heroCardContent {
@@ -75,6 +99,7 @@
   color: badgerBlack;
   background: #ffffff;
   padding: 12px 20px 38px;
+  height: 100%;
 }
 
 .heroCardArrow {
@@ -87,7 +112,7 @@
 }
 
 .heroCardContent ol,
-heroCardContent ul {
+.heroCardContent ul {
   list-style: disc;
   margin-left: 20px;
 }
@@ -103,7 +128,18 @@ heroCardContent ul {
     margin-bottom: 40px;
   }
 
-  .heroCard img {
+  .imgContainer img {
+    height: 100%;
+    width: auto;
+    transition: height 0.5s;
+  }
+
+  .heroCard:hover .imgContainer img {
+    height: 110%;
+    width: auto;
+  }
+
+  .imgContainer {
     max-width: 355px;
     width: 50%;
     height: 100%;
@@ -131,7 +167,7 @@ heroCardContent ul {
 
   .linkHighlight {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     right: 20px;
   }
 }
@@ -144,7 +180,7 @@ heroCardContent ul {
     height: 620px;
   }
 
-  .heroCard img {
+  .imgContainer {
     height: 260px;
     width: 100%;
     object-fit: cover;
@@ -161,5 +197,12 @@ heroCardContent ul {
 
   .linkHighlight {
     bottom: 20px;
+  }
+
+  .heroCardContent li:last-child {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
   }
 }

@@ -18,6 +18,7 @@ const renderEngagementCards = goldCoinPages => {
         title={page.title}
         description={page.subTitle}
         url={`/experience-us/${page.slug}`}
+        person={false}
       />
     );
   });

@@ -5,6 +5,7 @@
   composes: sansSerif from '../../../../css/typography/_fonts.css';
   composes: fontXS from '../../../../css/typography/_fonts.css';
   display: inline-block;
+  position: relative;
   width: 220px;
   flex: 0 0 auto;
   overflow: hidden;
@@ -45,7 +46,11 @@
 
 .engagementCardCTA {
   composes: boldSansSerif from '../../../../css/typography/_fonts.css';
-  float: right;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-bottom: 2px solid transparent;
+  line-height: 18px;
 }
 
 .engagementCardLinkWrapper {

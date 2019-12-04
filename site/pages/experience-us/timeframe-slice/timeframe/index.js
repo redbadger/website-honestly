@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './style.css';
 import HeroCard from '../../hero-card';
 import ShowMoreIcon from '../../../../components/show-more-button';
-import Portal from '../../../../components/portal';
 
 import type { GoldCoinLPProps } from '../../../../templates/gold-coin-lp';
 
@@ -13,7 +12,6 @@ export type TimeframeProps = {
   currentWidth: string,
   indexId: number,
   open: boolean,
-  portalRoot: string,
   handleClick: Function,
 };
 
@@ -24,7 +22,6 @@ const Timeframe = ({
   indexId,
   open,
   handleClick,
-  portalRoot,
 }: TimeframeProps) => {
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -60,32 +57,6 @@ const Timeframe = ({
         </button>
       </div>
       <div className={open && currentWidth !== 'mobile' ? styles.timeFrameLargeContainer : ''}>
-        {open && currentWidth !== 'mobile' && (
-          <Portal portalRootId={portalRoot}>
-            <div className={styles.timeFrameIntro}>
-              <h5 className={styles.h5}>Let&apos;s meet</h5>
-              <span>
-                The best way to know if we’re right for you is to meet up. Here are some suggestions
-                if you can spare an hour.
-              </span>
-            </div>
-            <div className={styles.heroContainer}>
-              {goldCoinPages.map(page => {
-                return (
-                  <HeroCard
-                    image={page.headerImage}
-                    title={page.title}
-                    type={page.type}
-                    description={page.subTitle}
-                    url={`experience-us/${page.slug}`}
-                    blurb={page.whatWillYouLearn}
-                    key={page.slug}
-                  />
-                );
-              })}
-            </div>
-          </Portal>
-        )}
         {open &&
           currentWidth === 'mobile' &&
           goldCoinPages.map(page => {

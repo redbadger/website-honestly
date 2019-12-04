@@ -16,7 +16,9 @@ export type HeroCardProps = {
 
 const HeroCard = ({ image, title, type, blurb, description, url }: HeroCardProps) => (
   <a className={styles.heroCard} href={url}>
-    <img src={image} alt={`${title} headshot`} />
+    <div className={styles.imgContainer}>
+      <img src={image} alt={`${title} headshot`} />
+    </div>
     <div className={styles.heroCardContainer}>
       <div className={styles.heroCardContent}>
         <div className={styles.heroCardTitle}>{title}</div>

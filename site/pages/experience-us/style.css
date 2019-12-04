@@ -7,7 +7,7 @@
 }
 
 .content {
-  max-width: containerMaxWidth;
+  max-width: 1160px;
   margin: auto;
 }
 
@@ -31,8 +31,4 @@
   .h3 {
     font-size: 20px;
   }
-}
-
-@media largeScreen {
-
 }

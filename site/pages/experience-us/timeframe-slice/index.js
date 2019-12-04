@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import Timeframe from './timeframe';
+import HeroCard from '../hero-card';
 import styles from './style.css';
 import type { GoldCoinLPProps } from '../../../templates/gold-coin-lp';
 
@@ -36,6 +37,7 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
     super(props);
     this.state = { currentlyOpen: null };
     (this: any).handleClick = this.handleClick.bind(this);
+    (this: any).renderHeroCards = this.renderHeroCards.bind(this);
   }
 
   handleClick(indexId: string) {
@@ -51,6 +53,39 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
 
   determinOpen(index: number) {
     return index === this.state.currentlyOpen;
+  }
+
+  renderHeroCards() {
+    if (this.props.currentWidth !== 'mobile' && typeof this.state.currentlyOpen === 'number') {
+      return (
+        <div>
+          <div className={styles.timeFrameIntro}>
+            <h5 className={styles.h5}>Let&apos;s meet</h5>
+            <span>
+              The best way to know if we’re right for you is to meet up. Here are some suggestions
+              if you can spare an hour.
+            </span>
+          </div>
+          <div className={styles.heroContainer}>
+            {this.props.timeframes[
+              Object.keys(this.props.timeframes)[this.state.currentlyOpen]
+            ].map(page => {
+              return (
+                <HeroCard
+                  image={page.headerImage}
+                  title={page.title}
+                  type={page.type}
+                  description={page.subTitle}
+                  url={`/experience-us/${page.slug}`}
+                  blurb={page.whatWillYouLearn}
+                  key={page.slug}
+                />
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
   }
 
   render() {
@@ -72,11 +107,12 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
                   open={this.determinOpen(index)}
                   timeframeKey={timeframeKey}
                   key={timeframeKey}
-                  portalRoot={portalRoot}
+                  renderHeroCards={this.renderHeroCards}
                 />
               );
             })}
           </ul>
+          {this.renderHeroCards()}
           <div id={portalRoot} />
         </section>
       )) ||
