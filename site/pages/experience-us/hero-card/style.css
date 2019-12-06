@@ -41,6 +41,7 @@
 
 .imgContainer img {
   width: 100%;
+  margin-top: 0;
   min-width: 540px;
   height: auto;
   margin-left: 50%;
@@ -131,11 +132,12 @@
   .imgContainer img {
     height: 100%;
     width: auto;
-    transition: height 0.5s;
+    transition: height 0.5s, margin-top 0.5s;
   }
 
   .heroCard:hover .imgContainer img {
     height: 110%;
+    margin-top: -3%;
     width: auto;
   }
 

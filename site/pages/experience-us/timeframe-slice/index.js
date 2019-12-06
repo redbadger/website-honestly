@@ -56,6 +56,12 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
   }
 
   renderHeroCards() {
+    // So what is going on here?
+    // Because of the way that this slice is rendered with different windows
+    // droping down from a button at mobile, but full width sections at tblet/desktop
+    // I needed a way to pass the data to a component and then render it outside of its parent.
+    // I intially tried to use a portal but that doesn't work with server-side rendering.
+    // So this hacky workaround is doing the job instead.
     if (this.props.currentWidth !== 'mobile' && typeof this.state.currentlyOpen === 'number') {
       return (
         <div>
