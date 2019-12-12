@@ -1,4 +1,4 @@
-@value badgerBlack, grey2 from "../../../css/_colors.css";
+@value badgerBlack, badgerRed, badgerWhite, grey2 from "../../../css/_colors.css";
 @value mediumScreen, largeScreen from "../../../css/_sizes.css";
 
 .otherWays {
@@ -21,34 +21,80 @@
 }
 
 .carouselButtons {
-  display: none;
-  width: 100%;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 120px;
 }
 
-.carouselButtonRight {
+.carouselButton {
   cursor: pointer;
-  background: none;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid grey2;
-  border-right: none;
-  margin-right: -16px;
+  height: 50px;
+  width: 50px;
+  background: badgerBlack;
+  border: none;
   outline: none;
 }
 
-.carouselButtonLeft {
+.carouselButtonDisabled {
+  background: grey2 !important;
+}
+
+.carouselButtonDisabled:hover {
+  background: grey2 !important;
+}
+
+.carouselButton:last-child {
+  margin-left: 8px;
+}
+
+.carouselButton:hover {
+  background: badgerRed;
+}
+
+.carouselButtonDisabled .button__more {
+  opacity: 0.8;
+}
+
+.button__more {
   cursor: pointer;
+  display: block;
+  height: 21px;
+  width: 21px;
+  margin: auto;
+  padding: 0;
+  position: relative;
   background: none;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 30px solid grey2;
-  border-left: none;
-  margin-left: -16px;
-  outline: none;
+  border: 0;
+  z-index: 0;
+}
+
+.button__moreRight {
+  margin-left: 3px;
+}
+
+.button__moreLeft {
+  margin-right: 3px;
+}
+
+.button__more:focus {
+  outline: 0;
+}
+
+.button__arrowLeft {
+  border: solid badgerWhite;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(135deg);
+}
+
+.button__arrowRight {
+  border: solid badgerWhite;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(315deg);
 }
 
 @media mediumScreen {
@@ -57,19 +103,12 @@
   }
 
   .carouselButtons {
-    display: flex;
-    justify-content: space-between;
+    top: 130px;
   }
 }
 
 @media largeScreen {
   .h2 {
     font-size: 30px;
-  }
-  .carouselButtons {
-    width: calc(100% + 120px);
-    position: absolute;
-    top: 50%;
-    left: -60px;
   }
 }
