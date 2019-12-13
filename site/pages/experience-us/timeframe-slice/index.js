@@ -62,7 +62,7 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
     // I needed a way to pass the data to a component and then render it outside of its parent.
     // I intially tried to use a portal but that doesn't work with server-side rendering.
     // So this hacky workaround is doing the job instead.
-    if (this.props.currentWidth !== 'mobile' && typeof this.state.currentlyOpen === 'number') {
+    if (typeof this.state.currentlyOpen === 'number') {
       return (
         <div>
           <div className={styles.timeFrameIntro}>
