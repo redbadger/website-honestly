@@ -9,7 +9,7 @@ export type TimeframeProps = {
   indexId: string,
   open: boolean,
   handleClick: Function,
-  bugerMenu: boolean,
+  burgerMenu?: boolean,
 };
 
 const Timeframe = ({ title, indexId, open, handleClick, burgerMenu }: TimeframeProps) => {

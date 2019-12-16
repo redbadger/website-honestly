@@ -102,7 +102,7 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
   sortTimeframes(keys: Array<string>) {
     if (this.props.currentWidth === 'mobile') {
       const first = this.state.currentlyOpen;
-      return keys.sort((x, y) => {
+      return (keys: any).sort((x, y) => {
         if (x === first) {
           return -1;
         }
@@ -115,9 +115,14 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
     return keys;
   }
 
-  renderDropdown(keys, timeframes, dropdownOpen, currentWidth) {
+  renderDropdown(
+    keys: Array<string>,
+    timeframes: any,
+    dropdownOpen: boolean,
+    currentWidth: string,
+  ) {
     if (dropdownOpen) {
-      return keys.map((timeframeKey, index) => {
+      return (keys: any).map((timeframeKey: string, index: number) => {
         const goldCoinPages = timeframes[timeframeKey];
         return (
           <div>
