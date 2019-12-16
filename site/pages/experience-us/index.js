@@ -79,7 +79,6 @@ class ExperienceUsPage extends Component<Props, State> {
       <div className={styles.background}>
         <div className={styles.content}>
           <h3 className={styles.h3}>Experience Red Badger</h3>
-          {currentWidth}
           <h1 className={styles.h1}>How long have you got?</h1>
           <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} currentWidth={currentWidth} />
           <OtherWays goldCoinPages={goldCoinPages} />

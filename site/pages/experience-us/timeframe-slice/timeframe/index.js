@@ -2,15 +2,17 @@
 import React from 'react';
 import styles from './style.css';
 import ShowMoreIcon from '../../../../components/show-more-button';
+import BurgerMenuIcon from '../../../../components/burger-menu';
 
 export type TimeframeProps = {
   title: string,
-  indexId: number,
+  indexId: string,
   open: boolean,
   handleClick: Function,
+  bugerMenu: boolean,
 };
 
-const Timeframe = ({ title, indexId, open, handleClick }: TimeframeProps) => {
+const Timeframe = ({ title, indexId, open, handleClick, burgerMenu }: TimeframeProps) => {
   /* eslint-disable react/no-danger */
   /* eslint-disable jsx-a11y/no-static-element-interactions */
   return (
@@ -27,12 +29,14 @@ const Timeframe = ({ title, indexId, open, handleClick }: TimeframeProps) => {
           }`}
         >
           <h4 className={open ? styles.h4Open : ''}>{title.toUpperCase()}</h4>
-          <ShowMoreIcon
-            open={open}
-            cssModifier={`${styles.timeframeButton} ${
-              open ? styles.timeframeButtonOpen : styles.timeframeButtonClosed
-            }`}
-          />
+          {(burgerMenu && <BurgerMenuIcon bars={2} cssModifier={styles.timeframeButton} />) || (
+            <ShowMoreIcon
+              open={open}
+              cssModifier={`${styles.timeframeButton} ${
+                open ? styles.timeframeButtonOpen : styles.timeframeButtonClosed
+              }`}
+            />
+          )}
         </button>
       </div>
     </li>

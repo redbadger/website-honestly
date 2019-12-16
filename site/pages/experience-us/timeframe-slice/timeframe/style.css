@@ -9,23 +9,24 @@
   cursor: pointer;
   display: block;
   outline: none;
-  padding: 10px 0 8px;
+  padding: 23px 0 20px;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 0;
+  margin-top: -2px;
 }
 
 .dropdownButtonOpen {
   color: badgerWhite;
   background: badgerRed;
   border: solid badgerRed 2px;
-  padding: 10px 20px 8px;
-  margin-bottom: 20px;
+  padding: 20px 20px 8px;
+  margin-bottom: 0;
 }
 
 .dropdownButtonOpen::after {
   content: '';
   position: absolute;
-  top: 45px;
+  top: 65px;
   width: 150px;
   left: calc(50% - 75px);
   height: 2px;
@@ -38,8 +39,12 @@
   border: solid badgerRed 2px;
 }
 
+.lastButton dropdownButtonClosed {
+  border-bottom: solid badgerRed 2px;
+}
+
 .h4Open {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .timeFrameIntro {
@@ -58,7 +63,7 @@
 .timeframeButton {
   position: absolute;
   right: 15px;
-  top: 6px;
+  top: 18px;
 }
 
 .timeframeButtonOpen span {
@@ -73,6 +78,7 @@
 
 @media mediumScreen {
   .timeframeListItem {
+    height: auto;
     width: 25%;
     margin-right: 20px;
   }
@@ -87,6 +93,7 @@
 
   .dropdownButton {
     margin-bottom: 0;
+    padding: 12px 0 12px;
   }
 
   .timeframeButton {
@@ -96,6 +103,7 @@
   .dropdownButtonOpen::after {
     width: 100px;
     left: calc(50% - 50px);
+    top: 45px;
   }
 
   .timeFrameIntro {

@@ -10,7 +10,7 @@ const inputTypes = {
   phone: {
     fullName: 'Phone number',
     validator: number => {
-      const re = /^\d{10}$/;
+      const re = /^[0-9]*$/;
       return re.test(String(number).toLowerCase());
     },
   },
