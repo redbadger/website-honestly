@@ -25,7 +25,14 @@ type State = {
 //   url: 'https://red-badger/jobs',
 // };
 
-const timeframes = {
+export type TimeframesType = {
+  '1 hour': { heading: string, copy: string, pages?: Array<GoldCoinLPProps> },
+  '1 day': { heading: string, copy: string, pages?: Array<GoldCoinLPProps> },
+  '1 week': { heading: string, copy: string, pages?: Array<GoldCoinLPProps> },
+  '2 weeks': { heading: string, copy: string, pages?: Array<GoldCoinLPProps> },
+};
+
+const timeframes: TimeframesType = {
   '1 hour': {
     heading: 'Let’s meet',
     copy:

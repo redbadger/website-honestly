@@ -3,15 +3,10 @@ import React, { Component } from 'react';
 import Timeframe from './timeframe';
 import HeroCard from '../hero-card';
 import styles from './style.css';
-import type { GoldCoinLPProps } from '../../../templates/gold-coin-lp';
+import type { TimeframesType } from '..';
 
 type TimeframeSliceProps = {
-  timeframes: {
-    '1 hour': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
-    '1 day': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
-    '1 week': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
-    '2 weeks': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
-  },
+  timeframes: TimeframesType,
   currentWidth: string,
 };
 
