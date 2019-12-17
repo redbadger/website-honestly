@@ -90,7 +90,6 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
 
   formIsValid() {
     const { fieldData } = this.state;
-    console.log(4, fieldData);
     const isValid = fieldData.filter(value => value.valid === false).length === 0;
     return isValid;
   }
@@ -123,14 +122,11 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
   }
 
   _onSubmit(event: SyntheticInputEvent<HTMLInputElement>) {
-    console.log(1);
     event.preventDefault();
     if (this.formIsValid()) {
-      console.log(2);
       this.postFormDataToHubspot();
       this.setState({ submitted: true });
     } else {
-      console.log(3);
       let { showWarnings } = this.state;
       showWarnings = true;
       this.setState({ showWarnings });
