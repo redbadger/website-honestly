@@ -14,7 +14,9 @@ export type EngagementCardProps = {
 
 const EngagementCard = ({ image, title, description, url, person }: EngagementCardProps) => (
   <a className={styles.engagementCard} href={url}>
-    <img src={image} alt={`${title} headshot`} />
+    <div className={styles.imgContainer}>
+      <img src={image} alt={`${title} headshot`} />
+    </div>
     <div className={styles.engagementCardContent}>
       <div className={styles.engagementCardLinkWrapper}>
         <div className={styles.engagementCardLink}>

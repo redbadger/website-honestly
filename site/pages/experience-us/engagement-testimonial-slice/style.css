@@ -1,0 +1,41 @@
+@value badgerWhite, badgerBlack from "../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../css/_sizes.css";
+
+.testimonials {
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  background-color: badgerWhite;
+  composes: dividerWhite from '../../../css/_divider.css';
+  border-bottom: #212121 1px solid;
+  margin-bottom: 18px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+}
+
+.content {
+  padding: 20px 0 55px;
+}
+
+.content__bottomNav {
+  padding: 30px 0 50px;
+}
+
+@media mediumScreen {
+  .content {
+    width: 100%;
+  }
+}
+
+@media largeScreen {
+
+  .content__bottomNav {
+    padding: 70px 0 50px;
+  }
+}

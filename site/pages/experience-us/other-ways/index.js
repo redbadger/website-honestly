@@ -57,7 +57,7 @@ class OtherWays extends React.Component<OtherWaysProps> {
           image={page.headerImage}
           title={page.title}
           description={page.subTitle}
-          url={`/experience-us/${page.slug}`}
+          url={`./${page.slug}`}
           person={false}
         />
       );
@@ -83,6 +83,7 @@ class OtherWays extends React.Component<OtherWaysProps> {
             type="button"
             aria-label="Scroll engagement carousel left"
             id="caroselScrollLeft"
+            data-click="carousel-left"
             className={`${styles.carouselButton} ${styles.carouselButtonDisabled}`}
             onClick={() => {
               this.scrollCarosel(-160);
@@ -96,6 +97,7 @@ class OtherWays extends React.Component<OtherWaysProps> {
             type="button"
             aria-label="Scroll engagement carousel right"
             id="caroselScrollRight"
+            data-click="carousel-right"
             className={styles.carouselButton}
             onClick={() => {
               this.scrollCarosel(160);

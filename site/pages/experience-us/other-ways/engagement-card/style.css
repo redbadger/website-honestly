@@ -18,16 +18,27 @@
   padding: 0 20px;
 }
 
-.engagementCard:hover .engagementCardLink,
 .engagementCard:hover .engagementCardCTA {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
-.engagementCard img {
+.engagementCard:hover img {
+  height: 110%;
+  margin-top: -5px;
+}
+
+.imgContainer {
+  overflow: hidden;
   height: 160px;
+}
+
+.engagementCard img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   display: block;
   margin-bottom: 8px;
+  transition: height 0.5s, margin-top 0.5s;
 }
 
 .engagementCardRole {
@@ -60,10 +71,6 @@
 .engagementCardArrow {
   width: 10px;
   margin-left: 6px;
-}
-
-.engagementCardLink:hover {
-  border-bottom: 2px solid badgerRedOnBlack;
 }
 
 @media largeScreen {

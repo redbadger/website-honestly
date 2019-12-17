@@ -7,10 +7,10 @@ import type { GoldCoinLPProps } from '../../../templates/gold-coin-lp';
 
 type TimeframeSliceProps = {
   timeframes: {
-    '1 hour': Array<GoldCoinLPProps>,
-    '1 day': Array<GoldCoinLPProps>,
-    '1 week': Array<GoldCoinLPProps>,
-    '2 weeks': Array<GoldCoinLPProps>,
+    '1 hour': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
+    '1 day': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
+    '1 week': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
+    '2 weeks': { heading: string, copy: string, pages: Array<GoldCoinLPProps> },
   },
   currentWidth: string,
 };
@@ -20,14 +20,16 @@ type TimeframeSliceState = {
   dropdownOpen: boolean,
 };
 
-const TimeframeIntro = () => {
+type TimeframeIntroProps = {
+  heading: string,
+  copy: string,
+};
+
+const TimeframeIntro = ({ heading, copy }: TimeframeIntroProps) => {
   return (
     <div className={styles.timeFrameIntro}>
-      <h5 className={styles.h5}>Let&apos;s meet</h5>
-      <span>
-        The best way to know if we’re right for you is to meet up. Here are some suggestions if you
-        can spare an hour.
-      </span>
+      <h5 className={styles.h5}>{heading}</h5>
+      <span>{copy}</span>
     </div>
   );
 };
@@ -76,18 +78,19 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
     // I intially tried to use a portal but that doesn't work with server-side rendering.
     // So this hacky workaround is doing the job instead.
     if (typeof this.state.currentlyOpen === 'string') {
+      const { copy, heading, pages } = this.props.timeframes[this.state.currentlyOpen];
       return (
         <div>
-          {this.props.currentWidth !== 'mobile' && <TimeframeIntro />}
+          {this.props.currentWidth !== 'mobile' && <TimeframeIntro heading={heading} copy={copy} />}
           <div className={styles.heroContainer}>
-            {this.props.timeframes[this.state.currentlyOpen].map(page => {
+            {pages.map(page => {
               return (
                 <HeroCard
                   image={page.headerImage}
                   title={page.title}
                   type={page.type}
                   description={page.subTitle}
-                  url={`/experience-us/${page.slug}`}
+                  url={`./${page.slug}`}
                   blurb={page.whatWillYouLearn}
                   key={page.slug}
                 />
@@ -123,13 +126,16 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
   ) {
     if (dropdownOpen) {
       return (keys: any).map((timeframeKey: string, index: number) => {
-        const goldCoinPages = timeframes[timeframeKey];
+        const goldCoinPages = timeframes[timeframeKey].pages;
+        const { heading, copy } = timeframes[timeframeKey];
         return (
-          <div>
+          <div key={timeframeKey}>
             <Timeframe
               goldCoinPages={goldCoinPages}
               burgerMenu={currentWidth === 'mobile' && index === 0}
               title={timeframeKey}
+              heading={heading}
+              copy={copy}
               currentWidth={currentWidth}
               indexId={timeframeKey}
               handleClick={this.handleClick}
@@ -138,19 +144,24 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
               key={timeframeKey}
               renderHeroCards={this.renderHeroCards}
             />
-            {currentWidth === 'mobile' && index === 0 && <TimeframeIntro />}
+            {currentWidth === 'mobile' && index === 0 && (
+              <TimeframeIntro heading={heading} copy={copy} />
+            )}
           </div>
         );
       });
     }
     const timeframeKey = keys[0];
-    const goldCoinPages = timeframes[timeframeKey];
+    const goldCoinPages = timeframes[timeframeKey].pages;
+    const { heading, copy } = timeframes[timeframeKey];
     return (
       <div>
         <Timeframe
           goldCoinPages={goldCoinPages}
           title={timeframeKey}
           currentWidth={currentWidth}
+          heding={heading}
+          copy={copy}
           burgerMenu
           indexId={timeframeKey}
           handleClick={this.handleDropDownClick}
@@ -159,7 +170,7 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
           key={timeframeKey}
           renderHeroCards={this.renderHeroCards}
         />
-        {currentWidth === 'mobile' && <TimeframeIntro />}
+        {currentWidth === 'mobile' && <TimeframeIntro heading={heading} copy={copy} />}
       </div>
     );
   }
@@ -185,11 +196,14 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
               )}
             {currentWidth !== 'mobile' &&
               Object.keys(timeframes).map(timeframeKey => {
-                const goldCoinPages = timeframes[timeframeKey];
+                const goldCoinPages = timeframes[timeframeKey].pages;
+                const { heading, copy } = timeframes[timeframeKey];
                 return (
                   <Timeframe
                     goldCoinPages={goldCoinPages}
                     title={timeframeKey}
+                    heading={heading}
+                    copy={copy}
                     currentWidth={currentWidth}
                     indexId={timeframeKey}
                     handleClick={this.handleClick}

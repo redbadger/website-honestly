@@ -1,0 +1,95 @@
+@value smallScreen, mediumScreen, largeScreen, maxWidth from "../../../../css/_sizes.css";
+
+.main {
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
+  font-size: 20px;
+  position: relative;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 27px;
+  letter-spacing: normal;
+  text-align: left;
+  padding-left: 14px;
+  color: #212121;
+}
+.contentContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.mainWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main:before {
+  content: '“ ';
+  position: absolute;
+  left: 0;
+  color: #ff0038;
+}
+
+.main:after {
+  content: ' ”';
+  color: #ff0038;
+}
+
+.author {
+  margin-top: 8px;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+.role {
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #212121;
+}
+
+.contentWrapper {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.icon {
+  margin-right: 14px;
+  float: left;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.attribution {
+  margin-top: 30px;
+  display: flex;
+  margin-left: 20px;
+}
+
+@media mediumScreen {
+  .main {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+@media largeScreen {
+  .main {
+    font-size: 40px;
+    line-height: normal;
+    padding-left: 26px;
+  }
+}

@@ -20,6 +20,7 @@ const Timeframe = ({ title, indexId, open, handleClick, burgerMenu }: TimeframeP
       <div className={styles.dropdownButtonContainer}>
         <button
           type="button"
+          data-click={`gold-coin-${title.replace(' ', '-')}`}
           aria-label={`toggle ${title} dropdown`}
           onClick={() => {
             handleClick(indexId);

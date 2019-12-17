@@ -10,7 +10,7 @@ type ShowMoreIconProps = {
 const BurgerMenuIcon = ({ cssModifier, bars }: ShowMoreIconProps) => {
   const barElements = [];
   for (let i = 0; i < bars; i++) {
-    barElements.push(<div className={styles.bar} />);
+    barElements.push(<div key={i} className={styles.bar} />);
   }
   return (
     <div className={`${styles.button__more} ${cssModifier || ''}`}>

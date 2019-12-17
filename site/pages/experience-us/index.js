@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import TimeframeSlice from './timeframe-slice';
 import OtherWays from './other-ways';
+import EngagementTestimonialSlice from './engagement-testimonial-slice';
+import icon from './assets/barbara.png';
 
 import styles from './style.css';
 
@@ -23,12 +25,34 @@ type State = {
 //   url: 'https://red-badger/jobs',
 // };
 
-const validTimeframes = ['1 hour', '1 day', '1 week', '2 weeks'];
+const timeframes = {
+  '1 hour': {
+    heading: 'Let’s meet',
+    copy:
+      'The best way to know if we’re right for you is to meet up. Here are some suggestions if you’ve got an hour to spare.',
+  },
+  '1 day': {
+    heading: 'Let’s explore',
+    copy:
+      'Want to shake up the way you do things? We can bring fresh thinking and new approaches to your projects. In just one day.',
+  },
+  '1 week': {
+    heading: 'Let’s dig',
+    copy:
+      'We love digging into tricky problems. Got a week? Discover how we create value by working together.',
+  },
+  '2 weeks': {
+    heading: 'Let’s do',
+    copy:
+      'Given two weeks we can explore issues you’re facing in more depth, and even make things we can test. Here’s how to get going.',
+  },
+};
 
 const sortTimeframes = goldCoinPages => {
-  const timeframes = {};
-  validTimeframes.forEach(timeframe => {
-    timeframes[timeframe] = goldCoinPages.filter(page => page.duration === timeframe);
+  Object.keys(timeframes).forEach(timeframe => {
+    timeframes[timeframe].pages = goldCoinPages
+      .filter(page => page.duration === timeframe)
+      .slice(0, 3);
   });
   return timeframes;
 };
@@ -81,6 +105,12 @@ class ExperienceUsPage extends Component<Props, State> {
           <h3 className={styles.h3}>Experience Red Badger</h3>
           <h1 className={styles.h1}>How long have you got?</h1>
           <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} currentWidth={currentWidth} />
+          <EngagementTestimonialSlice
+            content="I’m depressed you guys are leaving and hope we’ll be working together again soon."
+            author="Barbara Wray"
+            jobRole="Head of Engineering &amp; Test, LME"
+            icon={icon}
+          />
           <OtherWays goldCoinPages={goldCoinPages} />
         </div>
       </div>
