@@ -26,7 +26,6 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
         <div
           className="goldCoinLPDuration"
         >
-          <ClockIcon />
           test-duration
         </div>
         <h1
@@ -51,12 +50,13 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
             test-price
           </p>
           <p>
-            <img
-              alt="Type of engagement"
+            <span
+              alt="Lunch & learn engagement type icon"
               className="goldCoinLPInfoImg"
-              src="lunch.png"
-            />
-            Lunch & Learn
+            >
+              <LunchIcon />
+            </span>
+            Lunch & learn
           </p>
           <p>
             <span
@@ -159,7 +159,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
               Array [
                 Object {
                   "enabled": true,
-                  "fieldType": "test-type",
+                  "fieldType": "lunch",
                   "hidden": false,
                   "label": "test-label",
                   "labelHidden": false,
@@ -176,6 +176,12 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
           />
         </div>
       </div>
+      <a
+        className="backCTA"
+        href="/experience-us/"
+      >
+        Back to overview
+      </a>
     </div>
     <div
       className="goldCoinLPExplore"
@@ -186,7 +192,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
         <h3
           className="h3"
         >
-          Thirsty for know-how? There’s more to explore.
+          Thirsty for more?
         </h3>
         <div
           className="goldCoinLPPreviews"

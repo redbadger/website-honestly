@@ -59,6 +59,7 @@ const getGoldCoinPreviews = (goldCoinPages, currentPageSlug) => {
         url: `/experience-us/${preview.slug}`,
         duration: preview.duration,
         alt: preview.headerAlt,
+        type: preview.type,
       };
     });
 };
