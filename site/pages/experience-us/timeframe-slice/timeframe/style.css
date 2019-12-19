@@ -40,7 +40,7 @@
 }
 
 .dropdownButtonClosed:hover {
-  border: solid white 2px;
+  background-color: white;
 }
 
 .lastButton dropdownButtonClosed {
