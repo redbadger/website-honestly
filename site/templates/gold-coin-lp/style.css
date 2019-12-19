@@ -313,6 +313,14 @@
   width: 100vw;
 }
 
+.goldCoinForm a {
+  color: badgerBlack;
+}
+
+.goldCoinForm a:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
 .goldCoinForm label {
   display: block;
   margin-bottom: 2px;
