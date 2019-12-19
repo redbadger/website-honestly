@@ -24,7 +24,7 @@ const Header = () => {
             <ul className={styles.mediumScreenChildList}>
               <li>
                 <Link to="experienceUs" activeCssClass={styles.activeNavLink}>
-                  Experience Us
+                  Experience us
                 </Link>
               </li>
               <li>
