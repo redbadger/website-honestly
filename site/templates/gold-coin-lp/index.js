@@ -96,7 +96,7 @@ const GoldCoinLP = ({
         <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />
         <div className={styles.goldCoinLPContentContainer}>
           <div className={styles.goldCoinLPContent}>
-            <div className={styles.goldCoinLPDuration}>{duration}</div>
+            <div className={styles.goldCoinLPDuration}>{duration.toUpperCase()}</div>
             <h1 className={styles.h1}>{title}</h1>
             <h2 className={styles.h2}>{subTitle}</h2>
 
@@ -158,7 +158,7 @@ const GoldCoinLP = ({
                   <div dangerouslySetInnerHTML={{ __html: whatWillYouLearn }} />
                 </div>
                 <div className={styles.goldCoinLPQSection}>
-                  <h3 className={styles.h3}>Who will run this session?</h3>
+                  <h3 className={styles.h3}>Who&apos;ll run it?</h3>
                   <div dangerouslySetInnerHTML={{ __html: whoWillRun }} />
                   {consultants && (
                     <div className={styles.goldCoinLPConsultants}>
@@ -186,7 +186,7 @@ const GoldCoinLP = ({
               )}
             </div>
           </div>
-          <a href={'/experience-us/'} className={styles.backCTA}>
+          <a href={'../experience-us/'} className={`${styles.backCTA} ${styles.backCTADesktop}`}>
             Back to overview
           </a>
         </div>
@@ -198,6 +198,9 @@ const GoldCoinLP = ({
             </div>
           </div>
         )}
+        <a href={'../experience-us/'} className={`${styles.backCTA} ${styles.backCTAMobile}`}>
+          Back to overview
+        </a>
       </div>
     </div>
   );

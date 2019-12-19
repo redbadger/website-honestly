@@ -17,7 +17,7 @@ export type PreviewSliceProps = {
 
 const PreviewSlice = ({ image, title, subTitle, url, duration, alt, type }: PreviewSliceProps) => (
   <a className={styles.goldCoinLPPreview} href={url}>
-    <div className={styles.goldCoinLPDurationSmall}>{duration}</div>
+    <div className={styles.goldCoinLPDurationSmall}>{duration.toUpperCase()}</div>
     <div className={styles.goldCoinLPPreviewImageContainer}>
       <img src={image} alt={alt} />
     </div>

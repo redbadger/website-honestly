@@ -24,7 +24,6 @@ const HeroCard = ({ image, title, type, blurb, description, url }: HeroCardProps
         <div className={styles.heroCardTitle}>{title}</div>
         <p className={styles.heroCardType}>{atAGlanceTypes[type] && atAGlanceTypes[type].text}</p>
         <div className={styles.description}>{description}</div>
-        <div className={styles.subHeader}>You&apos;ll learn</div>
         <div className={styles.blurb} dangerouslySetInnerHTML={{ __html: blurb }} />
         <div className={styles.linkHighlight}>
           {atAGlanceTypes[type] && atAGlanceTypes[type].messaging}

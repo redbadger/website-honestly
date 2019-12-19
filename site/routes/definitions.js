@@ -56,7 +56,7 @@ const getGoldCoinPreviews = (goldCoinPages, currentPageSlug) => {
         image: preview.headerImage,
         title: preview.title,
         subTitle: preview.subTitle,
-        url: `/experience-us/${preview.slug}`,
+        url: `./${preview.slug}`,
         duration: preview.duration,
         alt: preview.headerAlt,
         type: preview.type,

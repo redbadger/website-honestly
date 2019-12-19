@@ -39,6 +39,10 @@
   border: solid badgerRed 2px;
 }
 
+.dropdownButtonClosed:hover {
+  border: solid transparent 2px;
+}
+
 .lastButton dropdownButtonClosed {
   border-bottom: solid badgerRed 2px;
 }
@@ -103,7 +107,7 @@
   .dropdownButtonOpen::after {
     width: 100px;
     left: calc(50% - 50px);
-    top: 45px;
+    top: 51px;
   }
 
   .timeFrameIntro {

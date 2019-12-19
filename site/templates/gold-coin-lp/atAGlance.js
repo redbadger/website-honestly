@@ -9,26 +9,26 @@ export const atAGlanceTypes = {
   lunch: {
     text: 'Lunch & learn',
     image: () => <LunchIcon />,
-    messaging: 'Book session now',
+    messaging: 'Book now',
   },
   workshop: {
     text: 'Workshop',
     image: () => <WorkshopIcon />,
-    messaging: 'Book session now',
+    messaging: 'Book now',
   },
   'one-on-one': {
     text: 'One-to-one',
     image: () => <OneOnOneIcon />,
-    messaging: 'Book session now',
+    messaging: 'Book now',
   },
   'two-week-engagement': {
     text: 'Two week engagement',
     image: () => <TwoWeekIcon />,
-    messaging: 'Book session now',
+    messaging: 'Book now',
   },
   'one-week-engagement': {
     text: 'One week engagement',
     image: () => <TwoWeekIcon />,
-    messaging: 'Book session now',
+    messaging: 'Book now',
   },
 };

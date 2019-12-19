@@ -19,7 +19,6 @@
   font-size: 20px;
   color: badgerWhite;
   height: 42px;
-  display: block;
   outline: none;
   background: badgerRedOnBlack;
   width: auto;
@@ -27,6 +26,15 @@
   margin: 10px auto 40px;
   text-align: center;
   padding: 10px 0;
+}
+
+.backCTADesktop {
+  display: none;
+}
+
+.backCTAMobile {
+  display: block;
+  margin-bottom: 64px;
 }
 
 .backCTA:hover {
@@ -231,7 +239,8 @@
 }
 
 .previewCTA {
-  display: inline-block;
+  display: inline;
+  line-height: 1.25em;
 }
 
 .goldCoinLPPreview:hover .previewCTA {
@@ -249,7 +258,7 @@
 }
 
 .goldCoinLPPreview:hover img {
-  width: 110%;
+  height: 110%;
 }
 
 .goldCoinLPPreviewImageContainer img {
@@ -368,6 +377,14 @@
 }
 
 @media largeScreen {
+  .backCTADesktop {
+    display: block;
+  }
+
+  .backCTAMobile {
+    display: none;
+  }
+
   .goldCoinLPDuration {
     line-height: 37px;
     padding: 7px;
@@ -421,7 +438,7 @@
     display: table;
     margin-left: 10px;
     float: right;
-    width: 100%;
+    width: 50%;
   }
 
   .goldCoinLPExplore {
