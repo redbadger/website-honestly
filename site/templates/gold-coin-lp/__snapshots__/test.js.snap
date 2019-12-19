@@ -176,12 +176,12 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
           />
         </div>
       </div>
-      <a
+      <Link
         className="backCTA backCTADesktop"
-        href="../experience-us/"
+        to="experienceUs"
       >
         Back to overview
-      </a>
+      </Link>
     </div>
     <div
       className="goldCoinLPExplore"
@@ -204,17 +204,16 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
             key="test-title-2"
             subTitle="test-subtitle-2"
             title="test-title-2"
-            url="https://www.example.com/"
           />
         </div>
       </div>
     </div>
-    <a
+    <Link
       className="backCTA backCTAMobile"
-      href="../experience-us/"
+      to="experienceUs"
     >
       Back to overview
-    </a>
+    </Link>
   </div>
 </div>
 `;

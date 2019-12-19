@@ -85,7 +85,7 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
                   title={page.title}
                   type={page.type}
                   description={page.subTitle}
-                  url={`./${page.slug}`}
+                  slug={page.slug}
                   blurb={page.whatWillYouLearn}
                   key={page.slug}
                 />

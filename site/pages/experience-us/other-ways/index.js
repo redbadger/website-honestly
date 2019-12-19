@@ -57,7 +57,7 @@ class OtherWays extends React.Component<OtherWaysProps> {
           image={page.headerImage}
           title={page.title}
           description={page.subTitle}
-          url={`./${page.slug}`}
+          slug={page.slug}
           person={false}
         />
       );

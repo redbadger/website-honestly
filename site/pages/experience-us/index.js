@@ -2,8 +2,8 @@
 import React, { Component } from 'react';
 import TimeframeSlice from './timeframe-slice';
 import OtherWays from './other-ways';
-import EngagementTestimonialSlice from './engagement-testimonial-slice';
-import icon from './assets/barbara.png';
+// import EngagementTestimonialSlice from './engagement-testimonial-slice';
+// import icon from './assets/barbara.png';
 
 import styles from './style.css';
 
@@ -112,12 +112,13 @@ class ExperienceUsPage extends Component<Props, State> {
           <h3 className={styles.h3}>Experience Red Badger</h3>
           <h1 className={styles.h1}>How long have you got?</h1>
           <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} currentWidth={currentWidth} />
-          <EngagementTestimonialSlice
+          {/* Currently disabled until we have a new quote */}
+          {/* <EngagementTestimonialSlice
             content="I’m depressed you guys are leaving and hope we’ll be working together again soon."
             author="Barbara Wray"
             jobRole="Head of Engineering &amp; Test, LME"
             icon={icon}
-          />
+          /> */}
           <OtherWays goldCoinPages={goldCoinPages} />
         </div>
       </div>

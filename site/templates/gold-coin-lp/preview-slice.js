@@ -3,6 +3,8 @@ import React from 'react';
 
 import styles from './style.css';
 
+import Link from '../../components/link';
+
 import { atAGlanceTypes } from './atAGlance';
 
 export type PreviewSliceProps = {
@@ -10,13 +12,13 @@ export type PreviewSliceProps = {
   title: string,
   type: string,
   subTitle: string,
-  url: string,
+  slug: string,
   duration: string,
   alt: string,
 };
 
-const PreviewSlice = ({ image, title, subTitle, url, duration, alt, type }: PreviewSliceProps) => (
-  <a className={styles.goldCoinLPPreview} href={url}>
+const PreviewSlice = ({ image, title, subTitle, slug, duration, alt, type }: PreviewSliceProps) => (
+  <Link className={styles.goldCoinLPPreview} to="goldCoinPage" navigationData={{ slug }}>
     <div className={styles.goldCoinLPDurationSmall}>{duration.toUpperCase()}</div>
     <div className={styles.goldCoinLPPreviewImageContainer}>
       <img src={image} alt={alt} />
@@ -28,7 +30,7 @@ const PreviewSlice = ({ image, title, subTitle, url, duration, alt, type }: Prev
       )}
       <p className={styles.previewCTA}>{subTitle}</p>
     </div>
-  </a>
+  </Link>
 );
 
 export default PreviewSlice;

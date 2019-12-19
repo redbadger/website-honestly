@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import Arrow from '../../../../components/icons/arrow';
+import Link from '../../../../components/link';
 
 import styles from './style.css';
 
@@ -8,12 +9,12 @@ export type EngagementCardProps = {
   image: string,
   title: string,
   description: string,
-  url: string,
+  slug: string,
   person: boolean,
 };
 
-const EngagementCard = ({ image, title, description, url, person }: EngagementCardProps) => (
-  <a className={styles.engagementCard} href={url}>
+const EngagementCard = ({ image, title, description, slug, person }: EngagementCardProps) => (
+  <Link className={styles.engagementCard} to="goldCoinPage" navigationData={{ slug }}>
     <div className={styles.imgContainer}>
       <img src={image} alt={`${title} headshot`} />
     </div>
@@ -27,7 +28,7 @@ const EngagementCard = ({ image, title, description, url, person }: EngagementCa
       <p className={styles.engagementCardRole}>{description}</p>
       <div className={styles.engagementCardCTA}>Read more</div>
     </div>
-  </a>
+  </Link>
 );
 
 export default EngagementCard;

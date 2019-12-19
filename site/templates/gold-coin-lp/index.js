@@ -12,6 +12,7 @@ import PreviewSlice from './preview-slice';
 import type { PreviewSliceProps } from './preview-slice';
 import HubspotForm from '../../components/hubspot/form/index';
 import type { HubspotFormProps } from '../../components/hubspot/form/index';
+import Link from '../../components/link';
 
 import priceImage from './images/price.png';
 import locationImage from './images/location.png';
@@ -46,20 +47,22 @@ const renderConsultants = (consultants: Array<ConsultantProps>) => {
 };
 
 const renderPreviews = (previews: Array<PreviewSliceProps>) => {
-  return previews.map(({ image, title, subTitle, url, duration, alt, type }: PreviewSliceProps) => {
-    return (
-      <PreviewSlice
-        key={title}
-        image={image}
-        title={title}
-        subTitle={subTitle}
-        url={url}
-        duration={duration}
-        alt={alt}
-        type={type}
-      />
-    );
-  });
+  return previews.map(
+    ({ image, title, subTitle, slug, duration, alt, type }: PreviewSliceProps) => {
+      return (
+        <PreviewSlice
+          key={title}
+          image={image}
+          title={title}
+          subTitle={subTitle}
+          slug={slug}
+          duration={duration}
+          alt={alt}
+          type={type}
+        />
+      );
+    },
+  );
 };
 
 const GoldCoinLP = ({
@@ -186,9 +189,9 @@ const GoldCoinLP = ({
               )}
             </div>
           </div>
-          <a href={'../experience-us/'} className={`${styles.backCTA} ${styles.backCTADesktop}`}>
+          <Link to="experienceUs" className={`${styles.backCTA} ${styles.backCTADesktop}`}>
             Back to overview
-          </a>
+          </Link>
         </div>
         {previews && (
           <div className={styles.goldCoinLPExplore}>
@@ -198,9 +201,9 @@ const GoldCoinLP = ({
             </div>
           </div>
         )}
-        <a href={'../experience-us/'} className={`${styles.backCTA} ${styles.backCTAMobile}`}>
+        <Link to="experienceUs" className={`${styles.backCTA} ${styles.backCTAMobile}`}>
           Back to overview
-        </a>
+        </Link>
       </div>
     </div>
   );
