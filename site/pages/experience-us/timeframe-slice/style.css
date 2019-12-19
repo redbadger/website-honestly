@@ -1,0 +1,66 @@
+@value badgerBlack, badgerWhite, badgerRed, badgerRedOnWhite, scorpian, cainYellow, cainYellowFaded from "../../../css/_colors.css";
+@value smallScreen, mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.timeframeSlice {
+  position: relative;
+  padding: 20px 0;
+  border-bottom: badgerBlack 1px solid;
+  margin-bottom: 18px;
+}
+
+.timeframeList {
+  margin-bottom: 30px;
+}
+
+.h5 {
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  margin-bottom: 12px;
+}
+
+.timeFrameIntro {
+  composes: fontS from '../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  text-align: left;
+  background: badgerRed;
+  color: badgerWhite;
+  padding: 10px 20px 18px;
+}
+
+@media mediumScreen {
+  .timeframeList {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .timeFrameIntro {
+    padding: 35px 40px 30px;
+    margin-bottom: 40px;
+  }
+
+  .timeframeListItem {
+    width: 25%;
+    margin-right: 20px;
+  }
+
+  .timeframeListItem:last-child {
+    margin-right: 0;
+  }
+}
+
+@media largeScreen {
+  .heroContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .timeframeSlice {
+    padding: 40px 0 20px;
+  }
+
+  .timeFrameIntro {
+    padding: 35px 40px 40px;
+  }
+}

@@ -1,0 +1,232 @@
+@value badgerWhite, badgerBlack, badgerRedOnBlack, cainYellow, grey, scorpian, linesOnWhite from "../../../css/_colors.css";
+@value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../../css/_sizes.css";
+
+.heroCard {
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../css/typography/_fonts.css';
+  display: inline-block;
+  width: 100%;
+  flex: 0 0 auto;
+  overflow: hidden;
+  color: badgerBlack;
+  margin-bottom: 20px;
+}
+
+.linkHighlight,
+.heroCardLink {
+  border-bottom: 2px solid transparent;
+  line-height: 18px;
+}
+
+.heroCard:hover .linkHighlight {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.heroCard:hover .heroCardLink {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.heroCard:hover .imgContainer img {
+  height: 110%;
+}
+
+.imgContainer {
+  height: 188px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+
+.imgContainer img {
+  width: auto;
+  margin-top: 0;
+  height: 100%;
+  min-width: 540px;
+  min-height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  transition: height 0.5s;
+}
+
+.heroCardType {
+  composes: lightSerif from '../../../css/typography/_fonts.css';
+  composes: fontM2 from '../../../css/typography/_fonts.css';
+  white-space: initial;
+  margin-bottom: 24px;
+}
+
+.heroCardTitle {
+  composes: serif from '../../../css/typography/_fonts.css';
+  composes: fontM2 from '../../../css/typography/_fonts.css';
+  display: inline;
+  color: badgerBlack;
+  position: relative;
+}
+
+.description,
+.subHeader,
+.linkHighlight {
+  composes: boldSansSerif from '../../../css/typography/_fonts.css';
+}
+
+.description {
+  margin-bottom: 10px;
+  line-height: 1.25em;
+}
+
+.subHeader {
+  margin-bottom: 5px;
+}
+
+.linkHighlight {
+  float: right;
+}
+
+.linkHighlight:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.blurb {
+  margin-bottom: 24px;
+  width: 100%;
+  height: 170px;
+  display: block;
+  line-height: 1.25em;
+  overflow: hidden;
+}
+
+.blurb li {
+  margin-bottom: 4px;
+}
+
+.heroCardContent {
+  composes: sansSerif from '../../../css/typography/_fonts.css';
+  composes: fontS from '../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  background: #ffffff;
+  padding: 12px 20px 38px;
+  height: 100%;
+}
+
+.heroCardArrow {
+  width: 10px;
+  margin-left: 6px;
+}
+
+.heroCardLink:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.heroCardContent li {
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Creating list points with pseudoelement
+   because overflow hidden cuts off normal list style
+   when positioned outside
+   and using an inside position breaks the formatting */
+
+.heroCardContent li:before {
+  content:"";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 3px;
+  top: 10px;
+  left: 1px;
+  background-color: badgerBlack;
+  border-radius: 50%;
+}
+
+.heroCardContainer {
+  width: 100%;
+}
+
+@media mediumScreen {
+  .heroCard {
+    display: flex;
+    height: 355px;
+    margin-bottom: 40px;
+  }
+
+  .imgContainer img {
+    height: 100%;
+    width: auto;
+    transition: height 0.5s, margin-top 0.5s;
+  }
+
+  .heroCard:hover .imgContainer img {
+    height: 110%;
+    margin-top: -3%;
+    width: auto;
+  }
+
+  .imgContainer {
+    max-width: 355px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .heroCardContent {
+    width: 100%;
+    position: relative;
+  }
+
+  .heroCardTitle,
+  .heroCardType {
+    font-size: 20px;
+  }
+
+  .description,
+  .subHeader,
+  .blurb,
+  .linkHighlight {
+    font-size: 16px;
+  }
+
+  .linkHighlight {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media largeScreen {
+  .heroCard {
+    display: inline-block;
+    width: calc(33.3% - 20px);
+    max-width: 440px;
+    height: 620px;
+  }
+
+  .imgContainer {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .heroCardContainer {
+    display: block;
+    height: calc(100% - 260px);
+    background: #ffffff;
+  }
+
+  .linkHighlight {
+    bottom: 20px;
+  }
+
+  .heroCardContent li:last-child {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+  }
+}

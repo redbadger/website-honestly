@@ -1,0 +1,134 @@
+@value badgerBlack, badgerWhite, badgerRed from "../../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.dropdownButton {
+  composes: fontS2 from '../../../../css/typography/_fonts.css';
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 23px 0 20px;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: -2px;
+}
+
+.dropdownButtonOpen {
+  color: badgerWhite;
+  background: badgerRed;
+  border: solid badgerRed 2px;
+  padding: 20px 20px 8px;
+  margin-bottom: 0;
+}
+
+.dropdownButtonOpen::after {
+  content: '';
+  position: absolute;
+  top: 65px;
+  width: 150px;
+  left: calc(50% - 75px);
+  height: 2px;
+  background: badgerWhite;
+}
+
+.dropdownButtonClosed {
+  color: badgerBlack;
+  background: badgerWhite;
+  border: solid badgerRed 2px;
+}
+
+.dropdownButtonClosed:hover {
+  background-color: white;
+}
+
+.lastButton dropdownButtonClosed {
+  border-bottom: solid badgerRed 2px;
+}
+
+.h4Open {
+  margin-bottom: 35px;
+}
+
+.timeFrameIntro {
+  composes: fontS from '../../../../css/typography/_fonts.css';
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.h5 {
+  composes: fontM from '../../../../css/typography/_fonts.css';
+  composes: serif from '../../../../css/typography/_fonts.css';
+  margin-bottom: 12px;
+}
+
+.timeframeButton {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+
+.timeframeButtonOpen span {
+  border: solid badgerWhite;
+  border-width: 0 2px 2px 0;
+}
+
+.timeframeButtonClosed span {
+  border: solid badgerBlack;
+  border-width: 0 2px 2px 0;
+}
+
+@media mediumScreen {
+  .timeframeListItem {
+    height: auto;
+    width: 25%;
+    margin-right: 20px;
+  }
+
+  .timeframeListItem:last-child {
+    margin-right: 0;
+  }
+
+  .h4Open {
+    margin-bottom: 20px;
+  }
+
+  .dropdownButton {
+    margin-bottom: 0;
+    padding: 12px 0 12px;
+  }
+
+  .timeframeButton {
+    display: none;
+  }
+
+  .dropdownButtonOpen::after {
+    width: 100px;
+    left: calc(50% - 50px);
+    top: 51px;
+  }
+
+  .timeFrameIntro {
+    padding: 40px;
+    background: badgerRed;
+    color: badgerWhite;
+  }
+
+  .timeFrameLargeContainer {
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media largeScreen {
+  .heroContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .timeFrameIntro {
+    margin-bottom: 40px;
+  }
+}

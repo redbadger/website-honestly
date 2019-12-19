@@ -7,7 +7,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
     description="We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right."
     metaImage="https://www.example.com/test.jpg"
     title="test-title | Red Badger"
-    url="https://red-badger.com/what-we-offer/test"
+    url="https://red-badger.com/experience-us/test"
   />
   <div
     className="goldCoinLP"
@@ -26,8 +26,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
         <div
           className="goldCoinLPDuration"
         >
-          <ClockIcon />
-          test-duration
+          TEST-DURATION
         </div>
         <h1
           className="h1"
@@ -51,12 +50,13 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
             test-price
           </p>
           <p>
-            <img
-              alt="Type of engagement"
+            <span
+              alt="Lunch & learn engagement type icon"
               className="goldCoinLPInfoImg"
-              src="lunch.png"
-            />
-            Lunch & Learn
+            >
+              <LunchIcon />
+            </span>
+            Lunch & learn
           </p>
           <p>
             <span
@@ -131,7 +131,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
               <h3
                 className="h3"
               >
-                Who will run this session?
+                Who'll run it?
               </h3>
               <div
                 dangerouslySetInnerHTML={
@@ -159,7 +159,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
               Array [
                 Object {
                   "enabled": true,
-                  "fieldType": "test-type",
+                  "fieldType": "lunch",
                   "hidden": false,
                   "label": "test-label",
                   "labelHidden": false,
@@ -176,6 +176,12 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
           />
         </div>
       </div>
+      <Link
+        className="backCTA backCTADesktop"
+        to="experienceUs"
+      >
+        Back to overview
+      </Link>
     </div>
     <div
       className="goldCoinLPExplore"
@@ -186,7 +192,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
         <h3
           className="h3"
         >
-          Thirsty for know-how? There’s more to explore.
+          Thirsty for more?
         </h3>
         <div
           className="goldCoinLPPreviews"
@@ -198,11 +204,16 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
             key="test-title-2"
             subTitle="test-subtitle-2"
             title="test-title-2"
-            url="https://www.example.com/"
           />
         </div>
       </div>
     </div>
+    <Link
+      className="backCTA backCTAMobile"
+      to="experienceUs"
+    >
+      Back to overview
+    </Link>
   </div>
 </div>
 `;

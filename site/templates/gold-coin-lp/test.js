@@ -11,7 +11,7 @@ describe('site/templates/gold-coin-lp', () => {
     headerAlt: 'test-alt',
     duration: 'test-duration',
     price: 'test-price',
-    type: 'test-type',
+    type: 'lunch',
     location: 'test-location',
     whatIsIt: '<p>test what is it</p>',
     whoIsItFor: '<p>test who is it for</p>',
@@ -46,7 +46,7 @@ describe('site/templates/gold-coin-lp', () => {
         {
           name: 'test-field-name',
           label: 'test-label',
-          fieldType: 'test-type',
+          fieldType: 'lunch',
           required: true,
           enabled: true,
           hidden: false,

@@ -152,10 +152,12 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
   render() {
     const { portalId, guid, name, cssClass, submitText, inlineMessage, formFields } = this.props;
     const { showWarnings, submitted, fieldData } = this.state;
+    // html strings are provided by our CMS and sanitized in badger brain
+    /* eslint-disable react/no-danger */
     return (
       <div id={name} className={cssClass}>
         {submitted ? (
-          <p>{inlineMessage}</p>
+          <p dangerouslySetInnerHTML={{ __html: inlineMessage }} />
         ) : (
           <form
             acceptCharset="UTF-8"
@@ -192,5 +194,6 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
         )}
       </div>
     );
+    /* eslint-enable react/no-danger */
   }
 }

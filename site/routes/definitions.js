@@ -56,9 +56,10 @@ const getGoldCoinPreviews = (goldCoinPages, currentPageSlug) => {
         image: preview.headerImage,
         title: preview.title,
         subTitle: preview.subTitle,
-        url: `/what-we-offer/${preview.slug}`,
+        slug: preview.slug,
         duration: preview.duration,
         alt: preview.headerAlt,
+        type: preview.type,
       };
     });
 };
@@ -107,6 +108,14 @@ export const routeDefinitions: Array<RouteDefinition> = [
     key: 'joinUs',
     route: 'jobs',
     stateToProps: ({ jobs }) => ({ jobs }),
+  },
+  {
+    title: 'Experience Red Badger',
+    description:
+      'We’re a Sunday Times 100 Best Small Company to Work For 2018 and looking for the best talent to join our team. ',
+    key: 'experienceUs',
+    route: 'what-we-do/experience-us',
+    stateToProps: ({ goldCoinPages }) => ({ goldCoinPages }),
   },
   {
     title: ({ job }) => job.title,
@@ -373,7 +382,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
     title: ({ title }) => title,
     description: 'The value that Red Badger offers - a page for a specific Red Badger engagement',
     key: 'goldCoinPage',
-    route: 'what-we-offer/{slug}',
+    parentKey: 'experienceUs',
+    route: 'what-we-do/experience-us/{slug}',
     stateToProps: ({ badgers, goldCoinPages }, params = {}) => {
       if (goldCoinPages) {
         // find page that matches passed in slug.

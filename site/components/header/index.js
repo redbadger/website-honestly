@@ -23,7 +23,12 @@ const Header = () => {
             </Link>
             <ul className={styles.mediumScreenChildList}>
               <li>
-                <Link to="technology" data-link="header" activeCssClass={styles.activeNavLink}>
+                <Link to="experienceUs" activeCssClass={styles.activeNavLink}>
+                  Experience us
+                </Link>
+              </li>
+              <li>
+                <Link to="technology" activeCssClass={styles.activeNavLink}>
                   Technology
                 </Link>
               </li>

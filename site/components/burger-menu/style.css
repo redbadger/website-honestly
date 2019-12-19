@@ -1,4 +1,4 @@
-@value badgerBlack, badgerRed from "../../../../../css/_colors.css";
+@value badgerBlack, badgerWhite, badgerRed from "../../css/_colors.css";
 
 .button__more {
   cursor: pointer;
@@ -7,9 +7,11 @@
   width: 21px;
   margin: 0;
   padding: 0;
-  position: relative;
+  position: absolute;
+  top: 30px;
   background: none;
   border: 0;
+  z-index: 0;
 }
 
 .button__more__hide {
@@ -34,4 +36,14 @@
   display: inline-block;
   padding: 5px;
   transform: rotate(225deg);
+}
+
+.bar {
+  height: 2px;
+  background: badgerWhite;
+  margin-bottom: 4px;
+}
+
+.bar:last-child {
+  margin-bottom: 0;
 }

@@ -1,0 +1,85 @@
+@value badgerWhite, badgerBlack, badgerRedOnBlack, cainYellow, grey, scorpian, linesOnWhite from "../../../../css/_colors.css";
+@value containerMaxWidth, contentMaxWidth, largeScreen, mediumScreen, smallScreen from "../../../../css/_sizes.css";
+
+.engagementCard {
+  composes: sansSerif from '../../../../css/typography/_fonts.css';
+  composes: fontXS from '../../../../css/typography/_fonts.css';
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  margin-right: 50px;
+  color: badgerBlack;
+  background: #ffffff;
+}
+
+.engagementCardContent {
+  padding: 5px 20px;
+}
+
+.engagementCard:hover .engagementCardCTA {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.engagementCard:hover img {
+  height: 110%;
+  margin-top: -5px;
+}
+
+.imgContainer {
+  overflow: hidden;
+  height: 160px;
+}
+
+.engagementCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 8px;
+  transition: height 0.5s, margin-top 0.5s;
+}
+
+.engagementCardRole {
+  white-space: initial;
+  margin-bottom: 20px;
+}
+
+.engagementCardLink {
+  composes: serif from '../../../../css/typography/_fonts.css';
+  font-size: 16px;
+  line-height: 1.2em;
+  display: inline;
+  color: badgerBlack;
+  position: relative;
+}
+
+.engagementCardCTA {
+  composes: boldSansSerif from '../../../../css/typography/_fonts.css';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-bottom: 2px solid transparent;
+  line-height: 18px;
+}
+
+.engagementCardLinkWrapper {
+  margin-bottom: 20px;
+}
+
+.engagementCardArrow {
+  width: 10px;
+  margin-left: 6px;
+}
+
+@media largeScreen {
+  /* .engagementCardLink {
+    font-size: 20px;
+    line-height: 1.35em;
+  }
+
+  .engagementCard {
+    width: 170px;
+  } */
+}

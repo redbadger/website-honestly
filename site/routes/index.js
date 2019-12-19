@@ -16,6 +16,7 @@ import PrivacyPolicyPage from '../pages/privacy-policy';
 import TermsAndConditions from '../pages/terms-and-conditions';
 
 import JoinUsPage from '../pages/join-us';
+import ExperienceUsPage from '../pages/experience-us';
 import JobPage from '../pages/job';
 import Events from '../pages/events';
 import EventPage from '../pages/event';
@@ -63,6 +64,7 @@ const componentMap = {
   homePage: HomePage,
   job: JobPage,
   joinUs: JoinUsPage,
+  experienceUs: ExperienceUsPage,
   notFoundPage: NotFoundPage,
   offlinePage: OfflinePage,
   ourWorkPage: OurWorkPage,

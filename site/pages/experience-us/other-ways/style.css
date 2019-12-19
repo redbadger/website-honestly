@@ -1,0 +1,114 @@
+@value badgerBlack, badgerRed, badgerWhite, grey2 from "../../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../../css/_sizes.css";
+
+.otherWays {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.h2 {
+  composes: fontM from '../../../css/typography/_fonts.css';
+  composes: serif from '../../../css/typography/_fonts.css';
+  color: badgerBlack;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 380px;
+}
+
+.carouselButtons {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+}
+
+.carouselButton {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background: badgerBlack;
+  border: none;
+  outline: none;
+}
+
+.carouselButtonDisabled {
+  background: grey2 !important;
+}
+
+.carouselButtonDisabled:hover {
+  background: grey2 !important;
+}
+
+.carouselButton:last-child {
+  margin-left: 8px;
+}
+
+.carouselButton:hover {
+  background: badgerRed;
+}
+
+.carouselButtonDisabled .button__more {
+  opacity: 0.8;
+}
+
+.button__more {
+  cursor: pointer;
+  display: block;
+  height: 21px;
+  width: 21px;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  background: none;
+  border: 0;
+  z-index: 0;
+}
+
+.button__moreRight {
+  margin-left: 3px;
+}
+
+.button__moreLeft {
+  margin-right: 3px;
+}
+
+.button__more:focus {
+  outline: 0;
+}
+
+.button__arrowLeft {
+  border: solid badgerWhite;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(135deg);
+}
+
+.button__arrowRight {
+  border: solid badgerWhite;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(315deg);
+}
+
+@media mediumScreen {
+  .carousel {
+    margin-bottom: 30px;
+  }
+
+  .carouselButtons {
+    top: 130px;
+  }
+}
+
+@media largeScreen {
+  .h2 {
+    font-size: 30px;
+  }
+}

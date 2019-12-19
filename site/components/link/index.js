@@ -18,7 +18,7 @@ export type LinkProps = {
  */
 const hasActiveChild = (stateNavigator: StateNavigator, target: string): boolean => {
   let { state } = stateNavigator.stateContext;
-  while (state.parentKey) {
+  while (state && state.parentKey) {
     if (state.parentKey === target) {
       return true;
     }

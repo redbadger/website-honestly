@@ -12,15 +12,14 @@ import PreviewSlice from './preview-slice';
 import type { PreviewSliceProps } from './preview-slice';
 import HubspotForm from '../../components/hubspot/form/index';
 import type { HubspotFormProps } from '../../components/hubspot/form/index';
-
-import ClockIcon from './clock-icon';
+import Link from '../../components/link';
 
 import priceImage from './images/price.png';
 import locationImage from './images/location.png';
 
 import { atAGlanceTypes } from './atAGlance';
 
-type GoldCoinLPProps = {
+export type GoldCoinLPProps = {
   duration: string,
   headerImage: string,
   headerAlt: string,
@@ -35,7 +34,7 @@ type GoldCoinLPProps = {
   whoWillRun: React.Node,
   consultants: Array<ConsultantProps>,
   previews: Array<PreviewSliceProps>,
-  formId: String,
+  formId: string,
   hubspotForm: HubspotFormProps,
   pageTitle: string,
   slug: string,
@@ -48,19 +47,22 @@ const renderConsultants = (consultants: Array<ConsultantProps>) => {
 };
 
 const renderPreviews = (previews: Array<PreviewSliceProps>) => {
-  return previews.map(({ image, title, subTitle, url, duration, alt }: PreviewSliceProps) => {
-    return (
-      <PreviewSlice
-        key={title}
-        image={image}
-        title={title}
-        subTitle={subTitle}
-        url={url}
-        duration={duration}
-        alt={alt}
-      />
-    );
-  });
+  return previews.map(
+    ({ image, title, subTitle, slug, duration, alt, type }: PreviewSliceProps) => {
+      return (
+        <PreviewSlice
+          key={title}
+          image={image}
+          title={title}
+          subTitle={subTitle}
+          slug={slug}
+          duration={duration}
+          alt={alt}
+          type={type}
+        />
+      );
+    },
+  );
 };
 
 const GoldCoinLP = ({
@@ -91,16 +93,13 @@ const GoldCoinLP = ({
         }
         metaImage={headerImage}
         altText={headerAlt}
-        url={`https://red-badger.com/what-we-offer/${slug}`}
+        url={`https://red-badger.com/experience-us/${slug}`}
       />
       <div className={styles.goldCoinLP}>
         <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />
         <div className={styles.goldCoinLPContentContainer}>
           <div className={styles.goldCoinLPContent}>
-            <div className={styles.goldCoinLPDuration}>
-              <ClockIcon />
-              {duration}
-            </div>
+            <div className={styles.goldCoinLPDuration}>{duration.toUpperCase()}</div>
             <h1 className={styles.h1}>{title}</h1>
             <h2 className={styles.h2}>{subTitle}</h2>
 
@@ -116,11 +115,12 @@ const GoldCoinLP = ({
               {(type &&
                 (atAGlanceTypes[type] && (
                   <p>
-                    <img
+                    <span
                       className={styles.goldCoinLPInfoImg}
-                      src={atAGlanceTypes[type].image}
-                      alt="Type of engagement"
-                    />
+                      alt={`${atAGlanceTypes[type].text} engagement type icon`}
+                    >
+                      {atAGlanceTypes[type].image()}
+                    </span>
                     {atAGlanceTypes[type].text}
                   </p>
                 ))) || (
@@ -161,7 +161,7 @@ const GoldCoinLP = ({
                   <div dangerouslySetInnerHTML={{ __html: whatWillYouLearn }} />
                 </div>
                 <div className={styles.goldCoinLPQSection}>
-                  <h3 className={styles.h3}>Who will run this session?</h3>
+                  <h3 className={styles.h3}>Who&apos;ll run it?</h3>
                   <div dangerouslySetInnerHTML={{ __html: whoWillRun }} />
                   {consultants && (
                     <div className={styles.goldCoinLPConsultants}>
@@ -170,6 +170,7 @@ const GoldCoinLP = ({
                   )}
                 </div>
               </div>
+
               {hubspotForm && (
                 <HubspotForm
                   portalId={hubspotForm.portalId}
@@ -188,15 +189,21 @@ const GoldCoinLP = ({
               )}
             </div>
           </div>
+          <Link to="experienceUs" className={`${styles.backCTA} ${styles.backCTADesktop}`}>
+            Back to overview
+          </Link>
         </div>
         {previews && (
           <div className={styles.goldCoinLPExplore}>
             <div className={styles.goldCoinLPExploreContent}>
-              <h3 className={styles.h3}>Thirsty for know-how? There’s more to explore.</h3>
+              <h3 className={styles.h3}>Thirsty for more?</h3>
               <div className={styles.goldCoinLPPreviews}>{renderPreviews(previews)}</div>
             </div>
           </div>
         )}
+        <Link to="experienceUs" className={`${styles.backCTA} ${styles.backCTAMobile}`}>
+          Back to overview
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,34 @@
+@value badgerRed, badgerWhite, badgerBlack from "../../css/_colors.css";
+@value mediumScreen, largeScreen, containerMaxWidth from "../../css/_sizes.css";
+
+.background {
+  background-color: badgerWhite;
+  padding: 20px;
+}
+
+.content {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.h1 {
+  composes: fontL from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
+  color: badgerBlack;
+  margin-bottom: 10px;
+}
+
+.h3 {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  color: badgerRed;
+  margin-bottom: 10px;
+}
+
+@media mediumScreen {
+  .h1 {
+    font-size: 60px;
+  }
+  .h3 {
+    font-size: 20px;
+  }
+}

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Benefit from '../benefit';
 import type { BenefitProps } from '../benefit';
 import styles from './style.css';
-import ShowMoreButton from '../shared/show-more-button';
+import ShowMoreIcon from '../../../../components/show-more-button';
 
 export type CategoryProps = {
   name: string,
@@ -109,19 +109,21 @@ class Category extends Component<CategoryProps, CategoryState> {
     const { open, mobileView } = { ...this.state };
     return (
       <div className={styles.category}>
-        <div className={styles.category__content} onClick={this.handleClick}>
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-label={`expand ${name} section`}
+          className={styles.category__content}
+          onClick={this.handleClick}
+        >
           <h3 className={styles.category__title}>{name}</h3>
           {mobileView && (
             <div className={styles.categoryButton__container}>
-              <ShowMoreButton
-                open={open}
-                mobileView={mobileView}
-                ariaLabel={`expand ${name} section`}
-              />
+              <ShowMoreIcon open={open} />
             </div>
           )}
           <img src={icon} alt={`${name} icon`} className={styles.category__icon} />
-        </div>
+        </button>
         <ul
           className={[
             styles.category__questionList,

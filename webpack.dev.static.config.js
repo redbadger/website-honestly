@@ -19,7 +19,7 @@ const devStaticConfig = webpackMerge(baseServiceConfig, {
     libraryTarget: 'commonjs',
   },
   target: 'node',
-  externals: ['./client-digest'],
+  externals: ['./client-digest', 'react-portal-universal'],
 });
 
 const clientConfig = webpackMerge(baseWebConfig, {
