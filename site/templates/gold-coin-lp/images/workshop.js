@@ -11,38 +11,30 @@ const WorkshopIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <title>Artboard</title>
+      <title>Group 8</title>
       <desc>Created with Sketch.</desc>
-      <g id="Artboard" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-        <g id="Group-10">
-          <g id="Group-9">
+      <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+        <g id="Artboard" transform="translate(-5.000000, -5.000000)">
+          <g id="Group-8" transform="translate(5.000000, 5.000000)">
             <polygon
               id="Fill-1"
               fill="#212121"
               points="23.5143 -0.0003 0.0003 8.3917 8.3913 31.9057 23.0873 26.6607 19.9413 17.8437 28.7573 14.6977"
-            />
+            ></polygon>
             <polygon
               id="Fill-2"
               fill="#212121"
               points="21.9348 18.789 24.5578 26.137 29.2828 16.166"
-            />
-            <g id="Group-5" transform="translate(7.000000, 7.905600)">
-              <path d="M0.2298,5.1154 L13.9728,0.2114" id="Fill-3" fill="#FFFFFF" />
+            ></polygon>
+            <g id="Group-7" transform="translate(6.000000, 6.905600)" fill="#FFFFFF">
               <path
-                d="M0.2298,5.1154 L13.9728,0.2114"
-                id="Stroke-4"
-                stroke="#FFFFFF"
-                strokeWidth="1.5"
-              />
-            </g>
-            <g id="Group-8" transform="translate(8.000000, 11.905600)">
-              <path d="M0.7273,4.9708 L14.4693,0.0668" id="Fill-6" fill="#FFFFFF" />
+                d="M2.1599,6.442 C2.6969,5.529 3.5009,4.795 4.4839,4.384 C5.6959,3.879 7.0269,4.008 8.3069,4.011 C10.3649,4.017 12.7099,3.473 13.4929,1.321 C13.8029,0.473 12.4499,0.108 12.1429,0.949 C11.8229,1.828 10.8939,2.264 10.0419,2.466 C8.8459,2.749 7.5869,2.552 6.3709,2.606 C4.1199,2.704 2.1079,3.767 0.9509,5.735 C0.4929,6.514 1.7029,7.219 2.1599,6.442"
+                id="Fill-3"
+              ></path>
               <path
-                d="M0.7273,4.9708 L14.4693,0.0668"
-                id="Stroke-7"
-                stroke="#FFFFFF"
-                strokeWidth="1.5"
-              />
+                d="M4.0452,10.7247 C5.4242,8.5997 8.2462,8.6997 10.4722,8.7417 C11.5982,8.7637 12.6732,8.5987 13.5832,7.8927 C14.4212,7.2427 14.9892,6.3227 15.4462,5.3797 C15.8372,4.5717 14.6292,3.8607 14.2372,4.6727 C13.8082,5.5577 13.2832,6.5177 12.3932,7.0137 C11.3452,7.5977 9.9482,7.2947 8.8022,7.3177 C6.5182,7.3647 4.1472,7.9987 2.8362,10.0177 C2.3442,10.7767 3.5562,11.4787 4.0452,10.7247"
+                id="Fill-5"
+              ></path>
             </g>
           </g>
         </g>
