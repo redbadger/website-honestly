@@ -1,0 +1,68 @@
+@value badgerWhite, badgerRedOnBlack, scorpian from "../../css/_colors.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.goldCoinsContainer {
+  max-height: 796px;
+  min-height: 378px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.goldCoinsImage {
+  width: 100%;
+  min-height: 378px;
+  display: block;
+  object-fit: cover;
+}
+
+.goldCoinsContent {
+  position: absolute;
+  bottom: 0;
+  height: 38%;
+  width: 100%;
+}
+
+.goldCoinsHeading {
+  composes: fontXL from '../../css/typography/_fonts.css';
+  composes: serif from '../../css/typography/_fonts.css';
+  color: badgerWhite;
+  margin: 0 auto 18px;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.goldCoinsCTA {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  position: reltaive;
+  margin: auto;
+  display: block;
+  background: badgerRedOnBlack;
+  color: badgerWhite;
+  width: 250px;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+.goldCoinsCTA:hover {
+  background: scorpian;
+}
+
+@media mediumScreen {
+  .goldCoinsContent {
+    height: 180px;
+  }
+}
+
+@media largeScreen {
+  .goldCoinsHeading {
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+
+  .goldCoinsContent {
+    height: 210px;
+  }
+}

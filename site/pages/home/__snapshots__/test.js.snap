@@ -61,6 +61,31 @@ Array [
       </p>
     </div>
   </section>,
+  <div
+    class="goldCoinsContainer"
+  >
+    <div
+      class="goldCoinsContent"
+    >
+      <h2
+        class="goldCoinsHeading"
+      >
+        See how we work
+      </h2>
+      <a
+        class="goldCoinsCTA"
+        href="/what-we-do/experience-us"
+      >
+        Experience Red Badger
+      </a>
+    </div>
+    <img
+      alt="Awards"
+      class="goldCoinsImage"
+      sizes="(min-width: 1440px) 1440px, 100vw"
+      src="Homepage_1.jpg"
+    />
+  </div>,
   <section
     class="caseStudyContainer"
     id="stats"
@@ -87,7 +112,7 @@ Array [
             <span
               class="countdownText"
             >
-              2,045
+              2,046
             </span>
             <span
               class="countdownCaseText"
