@@ -54,6 +54,11 @@
   .goldCoinsContent {
     height: 180px;
   }
+  .goldCoinsCTA {
+    font-size: 24px;
+    padding: 14px 16px;
+    width: 292px;
+  }
 }
 
 @media largeScreen {
