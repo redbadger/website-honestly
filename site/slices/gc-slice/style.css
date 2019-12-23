@@ -2,30 +2,30 @@
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .goldCoinsContainer {
-  max-height: 796px;
-  min-height: 378px;
+  height: 378px;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 
 .goldCoinsImage {
-  width: 100%;
+  height: 100%;
   min-height: 378px;
+  top: 0;
   display: block;
   object-fit: cover;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 .goldCoinsNextImage {
   position: absolute;
   top: 0;
-  width: 100%;
+  height: 100%;
   min-height: 378px;
   display: block;
   object-fit: cover;
-  z-index: 0;
+  z-index: 1;
 }
 
 .goldCoinsTransition {
@@ -72,9 +72,14 @@
 }
 
 @media mediumScreen {
+  .goldCoinsContainer {
+    height: 520px;
+  }
+
   .goldCoinsContent {
     height: 180px;
   }
+
   .goldCoinsCTA {
     font-size: 24px;
     padding: 14px 16px;
@@ -89,5 +94,9 @@
 
   .goldCoinsContent {
     height: 210px;
+  }
+
+  .goldCoinsContainer {
+    height: 796px;
   }
 }
