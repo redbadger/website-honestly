@@ -81,20 +81,20 @@ class GoldCoinSlice extends Component {
         this.setState({
           currentImage,
         });
+        const timeout = setTimeout(() => {
+          const showTransition = false;
+          const showOpacity = 1;
+          const { images } = this.state;
+          nextImage = nextImage === images.length - 1 ? 0 : nextImage + 1;
+          this.setState({
+            nextImage,
+            opacity: showOpacity,
+            transition: showTransition,
+          });
+          clearTimeout(timeout);
+        }, 50);
         clearTimeout(fade);
       }, 1000);
-      const timeout = setTimeout(() => {
-        const showTransition = false;
-        const showOpacity = 1;
-        const { images } = this.state;
-        nextImage = nextImage === images.length - 1 ? 0 : nextImage + 1;
-        this.setState({
-          nextImage,
-          opacity: showOpacity,
-          transition: showTransition,
-        });
-        clearTimeout(timeout);
-      }, 1050);
     }, 5000);
   }
 
