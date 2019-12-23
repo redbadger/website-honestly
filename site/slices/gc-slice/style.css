@@ -14,6 +14,26 @@
   min-height: 378px;
   display: block;
   object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+.goldCoinsNextImage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 378px;
+  display: block;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.goldCoinsTransition {
+  transition: opacity 1s;
+}
+
+.hide {
+  display: none;
 }
 
 .goldCoinsContent {
@@ -21,11 +41,12 @@
   bottom: 0;
   height: 38%;
   width: 100%;
+  z-index: 99;
 }
 
 .goldCoinsHeading {
-  composes: fontXL from '../../css/typography/_fonts.css';
   composes: serif from '../../css/typography/_fonts.css';
+  font-size: 40px;
   color: badgerWhite;
   margin: 0 auto 18px;
   text-align: center;
@@ -63,7 +84,6 @@
 
 @media largeScreen {
   .goldCoinsHeading {
-    font-size: 70px;
     margin-bottom: 40px;
   }
 
