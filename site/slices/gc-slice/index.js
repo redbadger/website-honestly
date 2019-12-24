@@ -121,7 +121,9 @@ class GoldCoinSlice extends Component {
           src={images[currentImage]}
           srcSet={images[currentImage].srcSet}
           sizes="(min-width: 1440px) 1440px, 100vw"
-          className={`${styles.goldCoinsImage} ${transition ? styles.goldCoinsTransition : ''}`}
+          className={`${styles.goldCoinsImage} ${styles.goldCoinsCurrentImage} ${
+            transition ? styles.goldCoinsTransition : ''
+          }`}
           alt="Awards"
           style={{ opacity }}
         />
@@ -129,7 +131,9 @@ class GoldCoinSlice extends Component {
           src={images[nextImage]}
           srcSet={images[nextImage].srcSet}
           sizes="(min-width: 1440px) 1440px, 100vw"
-          className={`${styles.goldCoinsNextImage} ${transition ? '' : styles.hide}`}
+          className={`${styles.goldCoinsImage} ${styles.goldCoinsNextImage} ${
+            transition ? '' : styles.hide
+          }`}
           alt="Awards"
         />
       </div>

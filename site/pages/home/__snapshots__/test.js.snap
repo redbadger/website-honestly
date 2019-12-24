@@ -82,14 +82,14 @@ Array [
     </div>
     <img
       alt="Awards"
-      class="goldCoinsImage "
+      class="goldCoinsImage goldCoinsCurrentImage "
       sizes="(min-width: 1440px) 1440px, 100vw"
       src="Homepage_1.jpg"
       style="opacity:1"
     />
     <img
       alt="Awards"
-      class="goldCoinsNextImage hide"
+      class="goldCoinsImage goldCoinsNextImage hide"
       sizes="(min-width: 1440px) 1440px, 100vw"
       src="Homepage_2.jpg"
     />
