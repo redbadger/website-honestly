@@ -9,13 +9,14 @@
 }
 
 .goldCoinsImage {
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 100%;
-  min-height: 378px;
-  top: 0;
+  width: auto;
   display: block;
   object-fit: cover;
-  position: absolute;
   object-position: 50% 50%;
 }
 
@@ -70,10 +71,10 @@
   background: scorpian;
 }
 
-@media screen and (min-width: containerMaxWidth) {
+@media screen and (min-width: 1378px) {
   .goldCoinsImage {
-    width: 100%;
     height: auto;
+    width: 100%;
   }
 }
 
