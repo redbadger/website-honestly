@@ -9,6 +9,7 @@ import ShareThymeSlice from '../../slices/sharethyme-slice';
 import Social from '../../components/social';
 import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
+import GoldCoinSlice from '../../slices/gc-slice';
 import { SpruceSlice } from '../../components/slice';
 
 import metaImage from './meta-image.jpg';
@@ -29,6 +30,7 @@ export default function HomePage() {
     <ScrollTracker>
       <Social {...social} />
       <TopSlice />
+      <GoldCoinSlice />
       <CaseStudyOverview />
       <SpruceSlice>
         <ShareThymeSlice linkUrl="https://www.red-badger.com/sharethyme" />

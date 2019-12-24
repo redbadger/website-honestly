@@ -1,5 +1,5 @@
 import React from 'react';
-import awardsImage from './awards-april-2018.jpg?min=320&max=2000&steps=6';
+import awardsImage from './awards-april-2018.jpg?min=320&max=1440&steps=6';
 import styles from './style.css';
 
 export default () => (

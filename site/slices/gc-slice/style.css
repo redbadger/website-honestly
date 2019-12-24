@@ -1,0 +1,109 @@
+@value badgerWhite, badgerRedOnBlack, scorpian from "../../css/_colors.css";
+@value mediumScreen, largeScreen, containerMaxWidth from "../../css/_sizes.css";
+
+.goldCoinsContainer {
+  height: 378px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.goldCoinsImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.goldCoinsCurrentImage {
+  z-index: 2;
+}
+
+.goldCoinsNextImage {
+  z-index: 1;
+}
+
+.goldCoinsTransition {
+  transition: opacity 1s;
+}
+
+.hide {
+  display: none;
+}
+
+.goldCoinsContent {
+  position: absolute;
+  bottom: 0;
+  height: 38%;
+  width: 100%;
+  z-index: 99;
+}
+
+.goldCoinsHeading {
+  composes: serif from '../../css/typography/_fonts.css';
+  font-size: 40px;
+  color: badgerWhite;
+  margin: 0 auto 18px;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.goldCoinsCTA {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  position: reltaive;
+  margin: auto;
+  display: block;
+  background: badgerRedOnBlack;
+  color: badgerWhite;
+  width: 250px;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+.goldCoinsCTA:hover {
+  background: scorpian;
+}
+
+@media screen and (min-width: 1378px) {
+  .goldCoinsImage {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media mediumScreen {
+  .goldCoinsContainer {
+    height: 520px;
+  }
+
+  .goldCoinsContent {
+    height: 180px;
+  }
+
+  .goldCoinsCTA {
+    font-size: 24px;
+    padding: 14px 16px;
+    width: 292px;
+  }
+}
+
+@media largeScreen {
+  .goldCoinsHeading {
+    margin-bottom: 40px;
+  }
+
+  .goldCoinsContent {
+    height: 210px;
+  }
+
+  .goldCoinsContainer {
+    height: 640px;
+  }
+}
