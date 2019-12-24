@@ -77,6 +77,11 @@ class GoldCoinSlice extends Component {
       const opacity = 0;
       this.setState({ opacity, transition });
       const fade = setTimeout(() => {
+        // This is a bit of a hack changing the images and opacity
+        // at the same time sometimes resulted in a "blink"
+        // stepping the current image first and then delaying slightly
+        // ensures the blick doesn't happen
+
         currentImage = nextImage;
         this.setState({
           currentImage,
@@ -108,7 +113,7 @@ class GoldCoinSlice extends Component {
       <div className={styles.goldCoinsContainer}>
         <div className={styles.goldCoinsContent}>
           <h2 className={styles.goldCoinsHeading}>See how we work</h2>
-          <Link className={styles.goldCoinsCTA} to="experienceUs">
+          <Link className={styles.goldCoinsCTA} to="experienceUs" data-link="experience-us-slice">
             Experience Red Badger
           </Link>
         </div>

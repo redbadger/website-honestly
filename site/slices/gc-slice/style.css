@@ -10,6 +10,7 @@
 
 .goldCoinsImage {
   height: 100%;
+  width: 100%;
   min-height: 378px;
   top: 0;
   display: block;
@@ -22,6 +23,7 @@
   position: absolute;
   top: 0;
   height: 100%;
+  width: 100%;
   min-height: 378px;
   display: block;
   object-fit: cover;
@@ -97,6 +99,6 @@
   }
 
   .goldCoinsContainer {
-    height: 796px;
+    height: 640px;
   }
 }

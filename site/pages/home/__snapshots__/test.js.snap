@@ -74,6 +74,7 @@ Array [
       </h2>
       <a
         class="goldCoinsCTA"
+        data-link="experience-us-slice"
         href="/what-we-do/experience-us"
       >
         Experience Red Badger
@@ -119,7 +120,7 @@ Array [
             <span
               class="countdownText"
             >
-              2,049
+              2,050
             </span>
             <span
               class="countdownCaseText"
