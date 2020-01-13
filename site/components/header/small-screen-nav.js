@@ -116,6 +116,16 @@ export default class SmallScreenNav extends React.Component<any, State> {
                   <ul className={styles.childList}>
                     <li>
                       <Link
+                        to="experienceUs"
+                        data-link="header"
+                        activeCssClass={styles.activeNavLink}
+                        navigating={this.closeMenu}
+                      >
+                        Experience us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         data-link="header"
                         tabIndex={navTabIndex}
                         to="technology"
