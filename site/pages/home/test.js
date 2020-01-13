@@ -5,6 +5,7 @@ import { Context } from '../../components/link/test-helper';
 
 import HomePage from './index';
 
+jest.mock('../../components/case-study-overview/daysSinceFortnumStarted.js', () => () => '2,000');
 describe('site/pages/home', () => {
   it('renders correctly', () => {
     expect(
@@ -15,4 +16,5 @@ describe('site/pages/home', () => {
       ),
     ).toMatchSnapshot();
   });
+  jest.unmock('../../components/case-study-overview/daysSinceFortnumStarted.js');
 });
