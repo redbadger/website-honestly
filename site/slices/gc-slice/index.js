@@ -150,7 +150,11 @@ class GoldCoinSlice extends Component {
         </div>
         {currentWidth !== 'mobile' && (
           <React.Fragment>
-            <div className={styles.goldCoinsVideoOverlay} />
+            <div
+              className={`${styles.goldCoinsVideoOverlay} ${
+                videoPlaying ? styles.goldCoinsVideoOverlayOn : ''
+              }`}
+            />
             <VideoTag
               className={`${styles.goldCoinsVideo} ${
                 videoPlaying ? styles.goldCoinsVideoPlaying : ''
