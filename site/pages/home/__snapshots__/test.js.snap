@@ -80,6 +80,27 @@ Array [
         Experience Red Badger
       </a>
     </div>
+    <div
+      class="goldCoinsVideoOverlay"
+    />
+    <div
+      class="goldCoinsVideo "
+    >
+      
+        
+      <video
+        autoplay="true"
+        disablepictureinpicture="false"
+        disableremoteplayback="false"
+        id="gc-slice-video"
+        loop="true"
+        muted="true"
+        src="HomepageVid.mp4"
+      >
+        
+        
+      </video>
+    </div>
     <img
       alt="Awards"
       class="goldCoinsImage goldCoinsCurrentImage "

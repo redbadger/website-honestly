@@ -1,4 +1,4 @@
-@value badgerWhite, badgerRedOnBlack, scorpian from "../../css/_colors.css";
+@value badgerBlack, badgerWhite, badgerRedOnBlack, scorpian from "../../css/_colors.css";
 @value mediumScreen, largeScreen, containerMaxWidth from "../../css/_sizes.css";
 
 .goldCoinsContainer {
@@ -71,8 +71,36 @@
   background: scorpian;
 }
 
+.goldCoinsVideo {
+  position: absolute;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+}
+
+.goldCoinsVideoOverlay {
+  background: badgerBlack;
+  opacity: 30%;
+  position: absolute;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+}
+
+.goldCoinsVideo video {
+  height: 100%;
+  width: auto;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.goldCoinsVideoPlaying video {
+  opacity: 1;
+}
+
 @media screen and (min-width: 1378px) {
-  .goldCoinsImage {
+  .goldCoinsImage,
+  .goldCoinsVideo video {
     height: auto;
     width: 100%;
   }
