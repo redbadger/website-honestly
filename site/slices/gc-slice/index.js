@@ -6,6 +6,7 @@ import Homepage02 from './assets/Homepage_2.jpg?min=320&max=1440&steps=6';
 import Homepage03 from './assets/Homepage_3.jpg?min=320&max=1440&steps=6';
 import Homepage04 from './assets/Homepage_4.jpg?min=320&max=1440&steps=6';
 import Homepage05 from './assets/Homepage_5.jpg?min=320&max=1440&steps=6';
+import HomepageVideo from './assets/HomepageVid.mp4';
 import Link from '../../components/link';
 
 const screenBreakPoints = {
@@ -80,7 +81,7 @@ class GoldCoinSlice extends Component {
         // This is a bit of a hack changing the images and opacity
         // at the same time sometimes resulted in a "blink"
         // stepping the current image first and then delaying slightly
-        // ensures the blick doesn't happen
+        // ensures the blink doesn't happen
 
         currentImage = nextImage;
         this.setState({
@@ -117,6 +118,7 @@ class GoldCoinSlice extends Component {
             Experience Red Badger
           </Link>
         </div>
+        <video src={HomepageVideo} autoplay loop muted />
         <img
           src={images[currentImage]}
           srcSet={images[currentImage].srcSet}
