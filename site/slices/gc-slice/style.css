@@ -76,26 +76,26 @@
   z-index: 3;
   height: 100%;
   width: 100%;
+  opacity: 0%;
+  transition: opacity 1s;
 }
 
 .goldCoinsVideoOverlay {
   background: badgerBlack;
-  opacity: 0;
   position: absolute;
   z-index: 4;
   height: 100%;
   width: 100%;
+  opacity: 0%;
   transition: opacity 1s;
 }
 
 .goldCoinsVideo video {
   height: 100%;
   width: auto;
-  opacity: 0;
-  transition: opacity 1s;
 }
 
-.goldCoinsVideoPlaying video {
+.goldCoinsVideoPlaying {
   opacity: 100%;
 }
 
