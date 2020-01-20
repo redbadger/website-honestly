@@ -92,6 +92,10 @@
     padding: 14px 16px;
     width: 292px;
   }
+
+  .goldCoinsHeading {
+    font-size: 60px;
+  }
 }
 
 @media largeScreen {

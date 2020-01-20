@@ -15,7 +15,7 @@
 }
 
 .engagementCardContent {
-  padding: 5px 20px;
+  padding: 12px 20px 5px;
 }
 
 .engagementCard:hover .engagementCardCTA {
@@ -49,7 +49,6 @@
 .engagementCardLink {
   composes: serif from '../../../../css/typography/_fonts.css';
   font-size: 16px;
-  line-height: 1.2em;
   display: inline;
   color: badgerBlack;
   position: relative;
@@ -65,7 +64,7 @@
 }
 
 .engagementCardLinkWrapper {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .engagementCardArrow {

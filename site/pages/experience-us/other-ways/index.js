@@ -10,9 +10,7 @@ export type OtherWaysProps = {
 };
 
 class OtherWays extends React.Component<OtherWaysProps> {
-  // would use React.Element<'element name here'> but flow is
-  // needlessly obtuse about it. What do you mean classList isn't
-  // available in React.Element?!
+  // would use React.Element<'element name here'> but flow isn't happy about that...
   element: any;
 
   leftButton: any;
@@ -64,10 +62,14 @@ class OtherWays extends React.Component<OtherWaysProps> {
     });
   }
 
-  scrollCarosel(step: number) {
+  scrollCarosel(direction: string) {
     const { element } = this;
     if (element) {
-      (element: any).scrollLeft += step;
+      if (direction === 'forward') {
+        (element: any).scrollLeft += element.offsetWidth - 100;
+      } else {
+        (element: any).scrollLeft -= element.offsetWidth - 100;
+      }
     }
   }
 
@@ -86,7 +88,7 @@ class OtherWays extends React.Component<OtherWaysProps> {
             data-click="carousel-left"
             className={`${styles.carouselButton} ${styles.carouselButtonDisabled}`}
             onClick={() => {
-              this.scrollCarosel(-160);
+              this.scrollCarosel('backwards');
             }}
           >
             <div className={`${styles.button__more} ${styles.button__moreLeft}`}>
@@ -100,7 +102,7 @@ class OtherWays extends React.Component<OtherWaysProps> {
             data-click="carousel-right"
             className={styles.carouselButton}
             onClick={() => {
-              this.scrollCarosel(160);
+              this.scrollCarosel('forward');
             }}
           >
             <div className={`${styles.button__more} ${styles.button__moreRight}`}>
