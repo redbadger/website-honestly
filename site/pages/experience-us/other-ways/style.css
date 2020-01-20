@@ -17,6 +17,7 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  scroll-behavior: smooth;
   height: 380px;
 }
 
