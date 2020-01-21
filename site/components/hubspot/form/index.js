@@ -88,6 +88,17 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     return true;
   }
 
+  static fireSubmitEvent() {
+    const dataObject = {
+      event: 'gtm.click',
+      category: 'Gold Coin Submit',
+      'gtm.element': 'form_success',
+    };
+    if (typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push(dataObject);
+    }
+  }
+
   formIsValid() {
     const { fieldData } = this.state;
     const isValid = fieldData.filter(value => value.valid === false).length === 0;
@@ -125,6 +136,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     event.preventDefault();
     if (this.formIsValid()) {
       this.postFormDataToHubspot();
+      HubspotForm.fireSubmitEvent();
       this.setState({ submitted: true });
     } else {
       let { showWarnings } = this.state;
