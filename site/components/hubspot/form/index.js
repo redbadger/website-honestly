@@ -88,7 +88,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     return true;
   }
 
-  static fireSubmitEvent(status: String) {
+  static fireSubmitEvent(status: string) {
     const dataObject = {
       event: 'gtm.click',
       category: 'Gold Coin Submit',
