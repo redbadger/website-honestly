@@ -38,7 +38,7 @@ describe('Routes', () => {
     it('should not add a trailing slash to urls with one', () => {
       const url = '/test/';
       const historyManager = new TrailingSlashHistoryManager();
-      expect(historyManager.getHref(url)).not.toEqual(url + '/');
+      expect(historyManager.getHref(url)).toEqual(url);
     });
   });
 });
