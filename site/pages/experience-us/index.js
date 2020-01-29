@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import TimeframeSlice from './timeframe-slice';
 import OtherWays from './other-ways';
+import metaImage from '../../slices/gc-slice/assets/Homepage_2.jpg';
 
 import Social from '../../components/social';
 // import EngagementTestimonialSlice from './engagement-testimonial-slice';
@@ -25,6 +26,7 @@ const social = {
     'Meet our tech and design experts to find out how we can deliver value, build capability, and change your culture to increase business efficiency.',
   altText: 'An illustration an award we won.',
   url: 'https://red-badger.com/what-we-do/experience-us/',
+  metaImage,
 };
 
 export type TimeframesType = {

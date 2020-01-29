@@ -5,6 +5,7 @@ exports[`site/pages/experience-us Renders 1`] = `
   <Social
     altText="An illustration an award we won."
     description="Meet our tech and design experts to find out how we can deliver value, build capability, and change your culture to increase business efficiency."
+    metaImage="Homepage_2.jpg"
     title="Experience Red Badger"
     url="https://red-badger.com/what-we-do/experience-us/"
   />
