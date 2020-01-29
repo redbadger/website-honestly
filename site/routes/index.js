@@ -1,5 +1,6 @@
 import React from 'react';
-import { HTML5HistoryManager, StateNavigator } from 'navigation';
+import { StateNavigator } from 'navigation';
+import TrailingSlashHistoryManager from './history-manager';
 
 import { routeDefinitions } from './definitions';
 
@@ -155,7 +156,7 @@ const handleContactUsHash = stateNavigator => {
 export default () => {
   const stateNavigator = new StateNavigator(
     routes(),
-    new HTML5HistoryManager((process.env.URL_BASENAME || '').slice(0, -1)),
+    new TrailingSlashHistoryManager((process.env.URL_BASENAME || '').slice(0, -1)),
   );
   handleContactUsHash(stateNavigator);
   stateNavigator.onNavigate((oldState, state) => {

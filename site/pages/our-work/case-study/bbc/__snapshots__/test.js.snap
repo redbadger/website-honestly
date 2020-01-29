@@ -173,7 +173,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
         <figure>
           <a
             class=""
-            href="/our-work/case-study/pride"
+            href="/our-work/case-study/pride/"
           >
             <img
               alt="Pride in London"
@@ -189,7 +189,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
         </figure>
         <a
           class="whatNext__link"
-          href="/our-work/case-study/pride"
+          href="/our-work/case-study/pride/"
         >
           <h2
             class="whatNext__title"
@@ -220,7 +220,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
         <figure>
           <a
             class=""
-            href="/our-work/case-study/financial-times"
+            href="/our-work/case-study/financial-times/"
           >
             <img
               alt="Financial Times"
@@ -236,7 +236,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
         </figure>
         <a
           class="whatNext__link"
-          href="/our-work/case-study/financial-times"
+          href="/our-work/case-study/financial-times/"
         >
           <h2
             class="whatNext__title"
@@ -267,7 +267,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
         <figure>
           <a
             class=""
-            href="/our-work/case-study/car-trawler"
+            href="/our-work/case-study/car-trawler/"
           >
             <img
               alt="Car Trawler"
@@ -283,7 +283,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
         </figure>
         <a
           class="whatNext__link"
-          href="/our-work/case-study/car-trawler"
+          href="/our-work/case-study/car-trawler/"
         >
           <h2
             class="whatNext__title"
@@ -311,7 +311,7 @@ exports[`site/pages/our-work/case-study/bbc/ renders correctly 1`] = `
     </div>
     <a
       class="whatNext__button"
-      href="/our-work"
+      href="/our-work/"
     >
       See more of our work
     </a>

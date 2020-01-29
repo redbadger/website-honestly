@@ -42,7 +42,7 @@ exports[`site/pages/cookie-policy renders correctly 1`] = `
             The reason we have a Cookies Policy is to explain to you what cookies and similar technologies we use, why we use them, and what you need to do if you want to restrict, block, disable or delete them. Our Cookies Policy is part of, and is subject to, our 
             <a
               class=""
-              href="/privacy-policy"
+              href="/privacy-policy/"
             >
               Privacy Statement
             </a>

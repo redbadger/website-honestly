@@ -118,14 +118,14 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
               These Website Terms are part of, and are subject to, our 
               <a
                 class=""
-                href="/privacy-policy"
+                href="/privacy-policy/"
               >
                 Privacy Statement
               </a>
                and our 
               <a
                 class=""
-                href="/cookie-policy"
+                href="/cookie-policy/"
               >
                 Cookies Policy
               </a>
@@ -1164,7 +1164,7 @@ exports[`site/pages/terms-and-conditions renders correctly 1`] = `
               We will only use your personal data as set out in our 
               <a
                 class=""
-                href="/privacy-policy"
+                href="/privacy-policy/"
               >
                 Privacy Statement
               </a>

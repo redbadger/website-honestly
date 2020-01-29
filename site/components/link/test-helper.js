@@ -1,9 +1,11 @@
 // @flow
 
-import { StateNavigator, HTML5HistoryManager } from 'navigation';
+import { StateNavigator } from 'navigation';
 import * as React from 'react';
 import { NavigationHandler } from 'navigation-react';
 import makeAppNavigator from '../../routes';
+
+import TrailingSlashHistoryManager from '../../routes/history-manager';
 
 export function mockNavigator(parentKey?: string = 'foo') {
   // The constructor is checked in prop-types,
@@ -15,7 +17,7 @@ export function mockNavigator(parentKey?: string = 'foo') {
       { key: 'bar', route: 'bar' },
       { key: 'barChild', route: 'bar/child', parentKey: 'bar' },
     ],
-    new HTML5HistoryManager(),
+    new TrailingSlashHistoryManager(),
   );
 
   navigator.navigate(parentKey);

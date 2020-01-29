@@ -94,14 +94,14 @@ exports[`site/pages/privacy-policy renders correctly 1`] = `
               Our Privacy Statement is part of, and is subject to, our 
               <a
                 class=""
-                href="/cookie-policy"
+                href="/cookie-policy/"
               >
                 Cookies Policy
               </a>
                and our 
               <a
                 class=""
-                href="/terms-and-conditions"
+                href="/terms-and-conditions/"
               >
                 Website Terms
               </a>
@@ -1120,7 +1120,7 @@ exports[`site/pages/privacy-policy renders correctly 1`] = `
                We collect your personal data when you contact us or automatically when you access and/or use our Websites and through the use of cookies (see our 
               <a
                 class=""
-                href="/cookie-policy"
+                href="/cookie-policy/"
               >
                 Cookies Policy
               </a>
