@@ -87,13 +87,13 @@ const GoldCoinLP = ({
   return (
     <div>
       <Social
-        title={`${title} | Red Badger`}
+        title={'Experience Red Badger'}
         description={
-          'We’re an award winning, independently owned consultancy who believe in doing the right thing and doing the thing right.'
+          'Meet our tech and design experts to find out how we can deliver value, build capability, and change your culture to increase business efficiency.'
         }
         metaImage={headerImage}
         altText={headerAlt}
-        url={`https://red-badger.com/experience-us/${slug}`}
+        url={`https://red-badger.com/what-we-do/experience-us/${slug}/`}
       />
       <div className={styles.goldCoinLP}>
         <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />
