@@ -2,6 +2,9 @@
 import React, { Component } from 'react';
 import TimeframeSlice from './timeframe-slice';
 import OtherWays from './other-ways';
+import metaImage from '../../slices/gc-slice/assets/Homepage_2.jpg';
+
+import Social from '../../components/social';
 // import EngagementTestimonialSlice from './engagement-testimonial-slice';
 // import icon from './assets/barbara.png';
 
@@ -17,13 +20,14 @@ type State = {
   currentWidth: string,
 };
 
-// const social = {
-//   title: 'Join us | Red Badger',
-//   description:
-//     'We’re a Sunday Times Best Small Company to Work For 2018 and looking for the best talent to join our team.',
-//   altText: 'An illustration an award we won.',
-//   url: 'https://red-badger/jobs',
-// };
+const social = {
+  title: 'Experience Red Badger',
+  description:
+    'Meet our tech and design experts to find out how we can deliver value, build capability, and change your culture to increase business efficiency.',
+  altText: 'An illustration an award we won.',
+  url: 'https://red-badger.com/what-we-do/experience-us/',
+  metaImage,
+};
 
 export type TimeframesType = {
   '1 hour': { heading: string, copy: string, pages?: Array<GoldCoinLPProps> },
@@ -107,19 +111,25 @@ class ExperienceUsPage extends Component<Props, State> {
     const { goldCoinPages } = this.props;
     const { currentWidth } = this.state;
     return (
-      <div className={styles.background}>
-        <div className={styles.content}>
-          <h3 className={styles.h3}>Experience Red Badger</h3>
-          <h1 className={styles.h1}>How long have you got?</h1>
-          <TimeframeSlice timeframes={sortTimeframes(goldCoinPages)} currentWidth={currentWidth} />
-          {/* Currently disabled until we have a new quote */}
-          {/* <EngagementTestimonialSlice
+      <div>
+        <Social {...social} />
+        <div className={styles.background}>
+          <div className={styles.content}>
+            <h3 className={styles.h3}>Experience Red Badger</h3>
+            <h1 className={styles.h1}>How long have you got?</h1>
+            <TimeframeSlice
+              timeframes={sortTimeframes(goldCoinPages)}
+              currentWidth={currentWidth}
+            />
+            {/* Currently disabled until we have a new quote */}
+            {/* <EngagementTestimonialSlice
             content="I’m depressed you guys are leaving and hope we’ll be working together again soon."
             author="Barbara Wray"
             jobRole="Head of Engineering &amp; Test, LME"
             icon={icon}
           /> */}
-          <OtherWays goldCoinPages={goldCoinPages} />
+            <OtherWays goldCoinPages={goldCoinPages} />
+          </div>
         </div>
       </div>
     );

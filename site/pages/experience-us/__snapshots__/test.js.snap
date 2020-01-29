@@ -1,107 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`site/pages/experience-us Renders 1`] = `
-<div
-  className="background"
->
+<div>
+  <Social
+    altText="An illustration an award we won."
+    description="Meet our tech and design experts to find out how we can deliver value, build capability, and change your culture to increase business efficiency."
+    metaImage="Homepage_2.jpg"
+    title="Experience Red Badger"
+    url="https://red-badger.com/what-we-do/experience-us/"
+  />
   <div
-    className="content"
+    className="background"
   >
-    <h3
-      className="h3"
+    <div
+      className="content"
     >
-      Experience Red Badger
-    </h3>
-    <h1
-      className="h1"
-    >
-      How long have you got?
-    </h1>
-    <TimeframeSlice
-      currentWidth="desktop"
-      timeframes={
-        Object {
-          "1 day": Object {
-            "copy": "Want to shake up the way you do things? We can bring fresh thinking and new approaches to your projects. In just one day.",
-            "heading": "Let’s explore",
-            "pages": Array [],
-          },
-          "1 hour": Object {
-            "copy": "The best way to know if we’re right for you is to meet up. Here are some suggestions if you’ve got an hour to spare.",
-            "heading": "Let’s meet",
-            "pages": Array [],
-          },
-          "1 week": Object {
-            "copy": "We love digging into tricky problems. Got a week? Discover how we create value by working together.",
-            "heading": "Let’s dig",
-            "pages": Array [],
-          },
-          "2 weeks": Object {
-            "copy": "Given two weeks we can explore issues you’re facing in more depth, and even make things we can test. Here’s how to get going.",
-            "heading": "Let’s do",
-            "pages": Array [],
-          },
-        }
-      }
-    />
-    <OtherWays
-      goldCoinPages={
-        Array [
+      <h3
+        className="h3"
+      >
+        Experience Red Badger
+      </h3>
+      <h1
+        className="h1"
+      >
+        How long have you got?
+      </h1>
+      <TimeframeSlice
+        currentWidth="desktop"
+        timeframes={
           Object {
-            "consultants": Array [
-              Object {
-                "image": "https://www.example.com/test-3.jpg",
-                "name": "test-consultant",
-                "profileUrl": "https://www.example.com/test-consultant",
-                "role": "test-role",
-              },
-            ],
-            "duration": "test-duration",
-            "headerAlt": "test-alt",
-            "headerImage": "https://www.example.com/test.jpg",
-            "hubspotForm": Object {
-              "cssClass": "test-css",
-              "formFields": Array [
+            "1 day": Object {
+              "copy": "Want to shake up the way you do things? We can bring fresh thinking and new approaches to your projects. In just one day.",
+              "heading": "Let’s explore",
+              "pages": Array [],
+            },
+            "1 hour": Object {
+              "copy": "The best way to know if we’re right for you is to meet up. Here are some suggestions if you’ve got an hour to spare.",
+              "heading": "Let’s meet",
+              "pages": Array [],
+            },
+            "1 week": Object {
+              "copy": "We love digging into tricky problems. Got a week? Discover how we create value by working together.",
+              "heading": "Let’s dig",
+              "pages": Array [],
+            },
+            "2 weeks": Object {
+              "copy": "Given two weeks we can explore issues you’re facing in more depth, and even make things we can test. Here’s how to get going.",
+              "heading": "Let’s do",
+              "pages": Array [],
+            },
+          }
+        }
+      />
+      <OtherWays
+        goldCoinPages={
+          Array [
+            Object {
+              "consultants": Array [
                 Object {
-                  "enabled": true,
-                  "fieldType": "lunch",
-                  "hidden": false,
-                  "label": "test-label",
-                  "labelHidden": false,
-                  "name": "test-field-name",
-                  "required": true,
+                  "image": "https://www.example.com/test-3.jpg",
+                  "name": "test-consultant",
+                  "profileUrl": "https://www.example.com/test-consultant",
+                  "role": "test-role",
                 },
               ],
-              "guid": "test-guid",
-              "inlineMessage": "test-inline",
-              "name": "test-name",
-              "portalId": 1111111,
-              "submitText": "test-submit",
-            },
-            "location": "test-location",
-            "previews": Array [
-              Object {
-                "alt": "test-alt-2",
-                "duration": "test-duration-2",
-                "image": "https://www.example.com/test-2.jpg",
-                "subTitle": "test-subtitle-2",
-                "title": "test-title-2",
-                "url": "https://www.example.com/",
+              "duration": "test-duration",
+              "headerAlt": "test-alt",
+              "headerImage": "https://www.example.com/test.jpg",
+              "hubspotForm": Object {
+                "cssClass": "test-css",
+                "formFields": Array [
+                  Object {
+                    "enabled": true,
+                    "fieldType": "lunch",
+                    "hidden": false,
+                    "label": "test-label",
+                    "labelHidden": false,
+                    "name": "test-field-name",
+                    "required": true,
+                  },
+                ],
+                "guid": "test-guid",
+                "inlineMessage": "test-inline",
+                "name": "test-name",
+                "portalId": 1111111,
+                "submitText": "test-submit",
               },
-            ],
-            "price": "test-price",
-            "slug": "test",
-            "subTitle": "test-subtitle",
-            "title": "test-title",
-            "type": "lunch",
-            "whatIsIt": "<p>test what is it</p>",
-            "whatWillYouLearn": "<p>test what will you learn</p>",
-            "whoIsItFor": "<p>test who is it for</p>",
-            "whoWillRun": "<p>test who will run</p>",
-          },
-        ]
-      }
-    />
+              "location": "test-location",
+              "previews": Array [
+                Object {
+                  "alt": "test-alt-2",
+                  "duration": "test-duration-2",
+                  "image": "https://www.example.com/test-2.jpg",
+                  "subTitle": "test-subtitle-2",
+                  "title": "test-title-2",
+                  "url": "https://www.example.com/",
+                },
+              ],
+              "price": "test-price",
+              "slug": "test",
+              "subTitle": "test-subtitle",
+              "title": "test-title",
+              "type": "lunch",
+              "whatIsIt": "<p>test what is it</p>",
+              "whatWillYouLearn": "<p>test what will you learn</p>",
+              "whoIsItFor": "<p>test who is it for</p>",
+              "whoWillRun": "<p>test who will run</p>",
+            },
+          ]
+        }
+      />
+    </div>
   </div>
 </div>
 `;
