@@ -28,7 +28,7 @@ Array [
       >
         <a
           class="sloganLink"
-          href="/what-we-do"
+          href="/what-we-do/"
         >
           We are digital transformation experts who 
           <span
@@ -75,7 +75,7 @@ Array [
       <a
         class="goldCoinsCTA"
         data-link="experience-us-slice"
-        href="/what-we-do/experience-us"
+        href="/what-we-do/experience-us/"
       >
         Experience Red Badger
       </a>
@@ -376,7 +376,7 @@ Array [
       >
         <a
           class="button"
-          href="/our-work"
+          href="/our-work/"
         >
           See more of our work
         </a>
@@ -799,7 +799,7 @@ Array [
     </ul>
     <a
       class="moreBtn"
-      href="/technology"
+      href="/technology/"
     >
       More about the tech
     </a>

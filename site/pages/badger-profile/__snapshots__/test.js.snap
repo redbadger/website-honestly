@@ -120,13 +120,13 @@ exports[`site/pages/badger-profile renders correctly 1`] = `
       <hr />
       <a
         class="categoryBox"
-        href="/people"
+        href="/people/"
       >
         See Everyone
       </a>
       <a
         class="categoryBox"
-        href="/people/category/squelch"
+        href="/people/category/squelch/"
       >
         See woodland-mammals team
       </a>

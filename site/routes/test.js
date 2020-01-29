@@ -1,5 +1,7 @@
 import createStateNavigator from '.';
 
+import TrailingSlashHistoryManager from './history-manager';
+
 describe('Routes', () => {
   describe('Home Page', () => {
     it('should accept contact us boolean', () => {
@@ -23,6 +25,20 @@ describe('Routes', () => {
       };
       const url = stateNavigator.historyManager.getUrl(anchor);
       expect(url).toEqual('/?contactUs=true');
+    });
+  });
+
+  describe('HistoryManager', () => {
+    it('should add a trailing slash to urls without one', () => {
+      const url = '/test';
+      const historyManager = new TrailingSlashHistoryManager();
+      expect(historyManager.getHref(url)).toEqual(url + '/');
+    });
+
+    it('should not add a trailing slash to urls with one', () => {
+      const url = '/test/';
+      const historyManager = new TrailingSlashHistoryManager();
+      expect(historyManager.getHref(url)).toEqual(url);
     });
   });
 });

@@ -34,7 +34,7 @@ exports[`site/pages/home renders correctly 1`] = `
             />
             <a
               class="linkBack"
-              href="/jobs"
+              href="/jobs/"
             >
               &lt; See all vacancies
             </a>

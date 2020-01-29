@@ -58,7 +58,7 @@ describe('site/team-slice', () => {
       expect(badgersList).not.toMatch(/Alex 19/);
       expect(previousLink.text()).toEqual('Previous page');
       expect(previousLink.attr('href')).toEqual(undefined);
-      expect(nextLink.attr('href')).toEqual('/people/category/everyone/page-2');
+      expect(nextLink.attr('href')).toEqual('/people/category/everyone/page-2/');
       expect(nextLink.text()).toEqual('Next page');
     });
   });
@@ -89,7 +89,7 @@ describe('site/team-slice', () => {
       expect(badgersList).toMatch(/Alex 19/);
       expect(badgersList).not.toMatch(/Alex 18/);
       expect(badgersList).not.toMatch(/Are you a potential Badger/);
-      expect(previousLink.attr('href')).toEqual('/people');
+      expect(previousLink.attr('href')).toEqual('/people/');
       expect(previousLink.text()).toEqual('Previous page');
       expect(nextLink.attr('href')).toEqual(undefined);
       expect(nextLink.text()).toEqual('Next page');

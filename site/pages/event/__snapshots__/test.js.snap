@@ -119,7 +119,7 @@ exports[`site/pages/event renders correctly 1`] = `
               >
                 <a
                   class=""
-                  href="/events"
+                  href="/events/"
                 >
                   <span>
                     More events

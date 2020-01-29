@@ -415,7 +415,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           </div>
                           <a
                             class="applyBtn"
-                            href="/jobs/awesome"
+                            href="/jobs/awesome/"
                           >
                             Read more
                           </a>
@@ -529,7 +529,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           </div>
                           <a
                             class="applyBtn"
-                            href="/jobs/woof"
+                            href="/jobs/woof/"
                           >
                             Read more
                           </a>
@@ -643,7 +643,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           </div>
                           <a
                             class="applyBtn"
-                            href="/jobs/slurp"
+                            href="/jobs/slurp/"
                           >
                             Read more
                           </a>

@@ -69,7 +69,7 @@ Array [
       >
         <a
           class="content row"
-          href="/our-work/case-study/pride"
+          href="/our-work/case-study/pride/"
         >
           <div
             class="leftCol"
@@ -109,7 +109,7 @@ Array [
       >
         <a
           class="content row-reverse"
-          href="/our-work/case-study/car-trawler"
+          href="/our-work/case-study/car-trawler/"
         >
           <div
             class="rightCol"
@@ -149,7 +149,7 @@ Array [
       >
         <a
           class="content row"
-          href="/our-work/case-study/fidelity"
+          href="/our-work/case-study/fidelity/"
         >
           <div
             class="leftCol"
@@ -189,7 +189,7 @@ Array [
       >
         <a
           class="content row-reverse"
-          href="/our-work/case-study/financial-services-digital-transformation"
+          href="/our-work/case-study/financial-services-digital-transformation/"
         >
           <div
             class="rightCol"
@@ -229,7 +229,7 @@ Array [
       >
         <a
           class="content row"
-          href="/our-work/case-study/car-trawler-my-account"
+          href="/our-work/case-study/car-trawler-my-account/"
         >
           <div
             class="leftCol"
@@ -269,7 +269,7 @@ Array [
       >
         <a
           class="content row-reverse"
-          href="/our-work/case-study/retailer"
+          href="/our-work/case-study/retailer/"
         >
           <div
             class="rightCol"
@@ -341,7 +341,7 @@ Array [
       >
         <a
           class="content row"
-          href="/our-work/case-study/camden-market"
+          href="/our-work/case-study/camden-market/"
         >
           <div
             class="leftCol"
@@ -386,7 +386,7 @@ Array [
       >
         <a
           class="content row-reverse"
-          href="/our-work/case-study/financial-times"
+          href="/our-work/case-study/financial-times/"
         >
           <div
             class="rightCol"
@@ -431,7 +431,7 @@ Array [
       >
         <a
           class="content row"
-          href="/our-work/case-study/fortnum-and-mason"
+          href="/our-work/case-study/fortnum-and-mason/"
         >
           <div
             class="leftCol"
@@ -476,7 +476,7 @@ Array [
       >
         <a
           class="content row-reverse"
-          href="/our-work/case-study/fortnum-and-mason-digital-transformation"
+          href="/our-work/case-study/fortnum-and-mason-digital-transformation/"
         >
           <div
             class="fullWidth"
@@ -513,7 +513,7 @@ Array [
       >
         <a
           class="content row"
-          href="/our-work/case-study/sky-cms"
+          href="/our-work/case-study/sky-cms/"
         >
           <div
             class="fullWidth"
@@ -741,7 +741,7 @@ Array [
               >
                 <a
                   class=""
-                  href="/our-work/case-study/bbc-now"
+                  href="/our-work/case-study/bbc-now/"
                 >
                   <img
                     alt="BBC logo"
@@ -782,7 +782,7 @@ Array [
               >
                 <a
                   class=""
-                  href="/our-work/case-study/sky"
+                  href="/our-work/case-study/sky/"
                 >
                   <img
                     alt="Sky logo"
@@ -827,7 +827,7 @@ Array [
               >
                 <a
                   class=""
-                  href="/our-work/case-study/haller"
+                  href="/our-work/case-study/haller/"
                 >
                   <img
                     alt="A man holding up the Haller app on a mobile device)"
@@ -873,7 +873,7 @@ Array [
               >
                 <a
                   class=""
-                  href="/our-work/case-study/bmw"
+                  href="/our-work/case-study/bmw/"
                 >
                   <img
                     alt="A wide-shot black and white CG render of a car in a museum surrounded by ribbons of light"
