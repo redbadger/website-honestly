@@ -81,7 +81,7 @@ class TimeframeSlice extends Component<TimeframeSliceProps, TimeframeSliceState>
             {pages.map(page => {
               return (
                 <HeroCard
-                  image={page.headerImage}
+                  images={page.headerImage}
                   title={page.title}
                   type={page.type}
                   description={page.subTitle}

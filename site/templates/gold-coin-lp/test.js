@@ -7,7 +7,12 @@ describe('site/templates/gold-coin-lp', () => {
     slug: 'test',
     title: 'test-title',
     subTitle: 'test-subtitle',
-    headerImage: 'https://www.example.com/test.jpg',
+    headerImage: {
+      main: 'https://www.example.com/test.jpg',
+      large: 'https://www.example.com/test.jpg',
+      medium: 'https://www.example.com/test.jpg',
+      small: 'https://www.example.com/test.jpg',
+    },
     headerAlt: 'test-alt',
     duration: 'test-duration',
     price: 'test-price',
@@ -27,7 +32,12 @@ describe('site/templates/gold-coin-lp', () => {
     ],
     previews: [
       {
-        image: 'https://www.example.com/test-2.jpg',
+        images: {
+          main: 'https://www.example.com/test.jpg',
+          large: 'https://www.example.com/test.jpg',
+          medium: 'https://www.example.com/test.jpg',
+          small: 'https://www.example.com/test.jpg',
+        },
         title: 'test-title-2',
         subTitle: 'test-subtitle-2',
         url: 'https://www.example.com/',

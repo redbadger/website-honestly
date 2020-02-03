@@ -3,11 +3,17 @@
 import * as React from 'react';
 import { atAGlanceTypes } from '../../../templates/gold-coin-lp/atAGlance';
 import Link from '../../../components/link';
+import Picture from '../../../components/picture';
 
 import styles from './style.css';
 
 export type HeroCardProps = {
-  image: string,
+  images: {
+    main: string,
+    large: string,
+    medium: string,
+    small: string,
+  },
   title: string,
   type: string,
   description: string,
@@ -15,10 +21,16 @@ export type HeroCardProps = {
   blurb: React.Node,
 };
 
-const HeroCard = ({ image, title, type, blurb, description, slug }: HeroCardProps) => (
+const HeroCard = ({ images, title, type, blurb, description, slug }: HeroCardProps) => (
   <Link className={styles.heroCard} to="goldCoinPage" navigationData={{ slug }}>
     <div className={styles.imgContainer}>
-      <img src={image} alt={`${title} headshot`} />
+      <Picture
+        xLargeSrc={images.main}
+        largeSrc={images.large}
+        mediumSrc={images.medium}
+        smallSrc={images.small}
+        alt={`${title} illustration`}
+      />
     </div>
     <div className={styles.heroCardContainer}>
       <div className={styles.heroCardContent}>

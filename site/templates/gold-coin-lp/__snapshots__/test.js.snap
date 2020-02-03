@@ -12,10 +12,13 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
   <div
     className="goldCoinLP"
   >
-    <img
+    <Picture
       alt="test-alt"
       className="goldCoinLPHeaderImage"
-      src="https://www.example.com/test.jpg"
+      largeSrc="https://www.example.com/test.jpg"
+      mediumSrc="https://www.example.com/test.jpg"
+      smallSrc="https://www.example.com/test.jpg"
+      xLargeSrc="https://www.example.com/test.jpg"
     />
     <div
       className="goldCoinLPContentContainer"
@@ -200,7 +203,14 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
           <PreviewSlice
             alt="test-alt-2"
             duration="test-duration-2"
-            image="https://www.example.com/test-2.jpg"
+            images={
+              Object {
+                "large": "https://www.example.com/test.jpg",
+                "main": "https://www.example.com/test.jpg",
+                "medium": "https://www.example.com/test.jpg",
+                "small": "https://www.example.com/test.jpg",
+              }
+            }
             key="test-title-2"
             subTitle="test-subtitle-2"
             title="test-title-2"

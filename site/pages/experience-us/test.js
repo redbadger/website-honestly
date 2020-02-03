@@ -8,7 +8,12 @@ describe('site/pages/experience-us', () => {
       slug: 'test',
       title: 'test-title',
       subTitle: 'test-subtitle',
-      headerImage: 'https://www.example.com/test.jpg',
+      headerImage: {
+        main: 'https://www.example.com/test.jpg',
+        large: 'https://www.example.com/test.jpg',
+        medium: 'https://www.example.com/test.jpg',
+        small: 'https://www.example.com/test.jpg',
+      },
       headerAlt: 'test-alt',
       duration: 'test-duration',
       price: 'test-price',

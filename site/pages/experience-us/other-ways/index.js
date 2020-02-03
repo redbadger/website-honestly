@@ -52,7 +52,7 @@ class OtherWays extends React.Component<OtherWaysProps> {
       return (
         <EngagementCard
           key={page.slug}
-          image={page.headerImage}
+          images={page.headerImage}
           title={page.title}
           description={page.subTitle}
           slug={page.slug}
