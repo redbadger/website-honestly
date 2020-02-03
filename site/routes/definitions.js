@@ -53,7 +53,7 @@ const getGoldCoinPreviews = (goldCoinPages, currentPageSlug) => {
     .slice(0, 3)
     .map(preview => {
       return {
-        image: preview.headerImage,
+        images: preview.headerImage,
         title: preview.title,
         subTitle: preview.subTitle,
         slug: preview.slug,

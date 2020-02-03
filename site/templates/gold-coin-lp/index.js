@@ -17,11 +17,18 @@ import Link from '../../components/link';
 import priceImage from './images/price.png';
 import locationImage from './images/location.png';
 
+import Picture from '../../components/picture';
+
 import { atAGlanceTypes } from './atAGlance';
 
 export type GoldCoinLPProps = {
   duration: string,
-  headerImage: string,
+  headerImage: {
+    main: string,
+    large: string,
+    medium: string,
+    small: string,
+  },
   headerAlt: string,
   title: string,
   subTitle: string,
@@ -48,11 +55,11 @@ const renderConsultants = (consultants: Array<ConsultantProps>) => {
 
 const renderPreviews = (previews: Array<PreviewSliceProps>) => {
   return previews.map(
-    ({ image, title, subTitle, slug, duration, alt, type }: PreviewSliceProps) => {
+    ({ images, title, subTitle, slug, duration, alt, type }: PreviewSliceProps) => {
       return (
         <PreviewSlice
           key={title}
-          image={image}
+          images={images}
           title={title}
           subTitle={subTitle}
           slug={slug}
@@ -91,12 +98,19 @@ const GoldCoinLP = ({
         description={
           'Meet our tech and design experts to find out how we can deliver value, build capability, and change your culture to increase business efficiency.'
         }
-        metaImage={headerImage}
+        metaImage={headerImage.main}
         altText={headerAlt}
         url={`https://red-badger.com/what-we-do/experience-us/${slug}/`}
       />
       <div className={styles.goldCoinLP}>
-        <img src={headerImage} className={styles.goldCoinLPHeaderImage} alt={headerAlt} />
+        <Picture
+          xLargeSrc={headerImage.main}
+          largeSrc={headerImage.large}
+          mediumSrc={headerImage.medium}
+          smallSrc={headerImage.small}
+          className={styles.goldCoinLPHeaderImage}
+          alt={headerAlt}
+        />
         <div className={styles.goldCoinLPContentContainer}>
           <div className={styles.goldCoinLPContent}>
             <div className={styles.goldCoinLPDuration}>{duration.toUpperCase()}</div>

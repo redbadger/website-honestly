@@ -4,11 +4,17 @@ import React from 'react';
 import styles from './style.css';
 
 import Link from '../../components/link';
+import Picture from '../../components/picture';
 
 import { atAGlanceTypes } from './atAGlance';
 
 export type PreviewSliceProps = {
-  image: string,
+  images: {
+    main: string,
+    large: string,
+    medium: string,
+    small: string,
+  },
   title: string,
   type: string,
   subTitle: string,
@@ -17,11 +23,25 @@ export type PreviewSliceProps = {
   alt: string,
 };
 
-const PreviewSlice = ({ image, title, subTitle, slug, duration, alt, type }: PreviewSliceProps) => (
+const PreviewSlice = ({
+  images,
+  title,
+  subTitle,
+  slug,
+  duration,
+  alt,
+  type,
+}: PreviewSliceProps) => (
   <Link className={styles.goldCoinLPPreview} to="goldCoinPage" navigationData={{ slug }}>
     <div className={styles.goldCoinLPDurationSmall}>{duration.toUpperCase()}</div>
     <div className={styles.goldCoinLPPreviewImageContainer}>
-      <img src={image} alt={alt} />
+      <Picture
+        xLargeSrc={images.main}
+        largeSrc={images.large}
+        mediumSrc={images.medium}
+        smallSrc={images.small}
+        alt={alt}
+      />
     </div>
     <div className={styles.goldCoinLPPreviewText}>
       <h4 className={styles.h4}>{title}</h4>

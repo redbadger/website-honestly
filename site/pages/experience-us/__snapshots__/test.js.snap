@@ -66,7 +66,12 @@ exports[`site/pages/experience-us Renders 1`] = `
               ],
               "duration": "test-duration",
               "headerAlt": "test-alt",
-              "headerImage": "https://www.example.com/test.jpg",
+              "headerImage": Object {
+                "large": "https://www.example.com/test.jpg",
+                "main": "https://www.example.com/test.jpg",
+                "medium": "https://www.example.com/test.jpg",
+                "small": "https://www.example.com/test.jpg",
+              },
               "hubspotForm": Object {
                 "cssClass": "test-css",
                 "formFields": Array [

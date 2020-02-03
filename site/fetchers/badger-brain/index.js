@@ -138,7 +138,12 @@ const goldCoinPages = `
         slug
         title
         subTitle
-        headerImage
+        headerImage {
+          main
+          large
+          medium
+          small
+        }
         headerAlt
         duration
         price
