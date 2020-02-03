@@ -6,6 +6,7 @@ import Homepage02 from './assets/Homepage_2.jpg?min=320&max=1440&steps=6';
 import Homepage03 from './assets/Homepage_3.jpg?min=320&max=1440&steps=6';
 import Homepage04 from './assets/Homepage_4.jpg?min=320&max=1440&steps=6';
 import Homepage05 from './assets/Homepage_5.jpg?min=320&max=1440&steps=6';
+import Homepage06 from './assets/Homepage_6.jpg?min=320&max=1440&steps=6';
 import HomepageVideo from './assets/HomepageVid.mp4';
 import Link from '../../components/link';
 import VideoTag from '../../components/video-tag';
@@ -16,7 +17,7 @@ const screenBreakPoints = {
 };
 
 const headerImages = {
-  mobile: [Homepage01, Homepage02, Homepage05],
+  mobile: [Homepage01, Homepage02, Homepage05, Homepage06],
   desktop: [Homepage03, Homepage04],
 };
 
