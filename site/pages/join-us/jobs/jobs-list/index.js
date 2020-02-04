@@ -15,7 +15,19 @@ const getDepartments = jobs => {
 const groupByDepartment = jobs => {
   const grouped = [];
   getDepartments(jobs).forEach(department => {
-    grouped.push(jobs.filter(job => job.department === department));
+    grouped.push(
+      jobs
+        .filter(job => job.department === department)
+        .sort((a, b) => {
+          if (a.title > b.title) {
+            return 1;
+          }
+          if (a.title < b.title) {
+            return -1;
+          }
+          return 0;
+        }),
+    );
   });
   return grouped;
 };
