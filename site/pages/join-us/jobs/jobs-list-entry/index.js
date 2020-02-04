@@ -55,7 +55,6 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
             <Cell size={12} breakOn="smallScreen">
               <button
                 type="button"
-                onClick={this.handleClick}
                 aria-expanded={open}
                 aria-label={`expand ${title} job description`}
                 className={styles.jobEntry__more}
