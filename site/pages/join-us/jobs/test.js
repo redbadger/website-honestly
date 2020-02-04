@@ -90,4 +90,42 @@ describe('site/join-us/benefits-slice', () => {
     const jobsList = jobsSlice.find('ul').first();
     expect(jobsList.find('h3').text()).toEqual('Junior adorable dog');
   });
+
+  it('should alphabetise jobs by title within their department', () => {
+    const jobs = [
+      {
+        id: '2',
+        title: 'b',
+        description: '1',
+        fullDescription: '1',
+        department: '1',
+        slug: '1',
+        applicationUrl: '1',
+        datePosted: 'Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)',
+      },
+      {
+        id: '1',
+        title: 'a',
+        description: '1',
+        fullDescription: '1',
+        department: '1',
+        slug: '1',
+        applicationUrl: '1',
+        datePosted: 'Thu Feb 08 2018 16:42:31 GMT+0000 (Greenwich Mean Time)',
+      },
+    ];
+    const jobsSlice = render(
+      <Context>
+        <Jobs jobs={jobs} />
+      </Context>,
+    );
+
+    const jobsList = jobsSlice.find('ul').first();
+    expect(
+      jobsList
+        .find('h3')
+        .first()
+        .text(),
+    ).toEqual('a');
+  });
 });
