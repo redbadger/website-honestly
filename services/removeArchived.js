@@ -25,8 +25,8 @@ function extractSlugFromKey(key, prefix) {
 }
 
 const getLiveBadgers = (Bucket, Prefix) => s3.listObjects({ Bucket, Prefix }).promise();
-const deleteObjects = (bucketName, keysToDelete) => {
-  return s3
+const deleteObjects = (bucketName, keysToDelete) =>
+  s3
     .deleteObjects({
       Bucket: bucketName,
       Delete: {
@@ -35,7 +35,6 @@ const deleteObjects = (bucketName, keysToDelete) => {
       },
     })
     .promise();
-};
 
 function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
   return getLiveBadgers(bucketName, s3Prefix).then(objects => {
@@ -50,11 +49,11 @@ function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
     console.log(`About to delete these slugs from "${s3Prefix}" :\n${slugsToDelete.join('\n')}`);
 
     const indexFiles = slugsToDelete.map(slug => ({
-      Key: `/${s3Prefix}${slug}/index.html`,
+      Key: `${s3Prefix}${slug}/index.html`,
     }));
 
     const directories = slugsToDelete.map(slug => ({
-      Key: `/${s3Prefix}${slug}/`,
+      Key: `${s3Prefix}${slug}/`,
     }));
 
     // File inside folder needs to be deleted first before deleting the parent folder
