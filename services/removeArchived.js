@@ -42,9 +42,6 @@ function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
       .map(obj => extractSlugFromKey(obj, s3Prefix))
       .filter(slug => slug != null);
 
-    console.log(s3Prefix, listed);
-    console.log(s3Prefix, actualSlugs);
-
     const slugsToDelete = difference(listed, actualSlugs).filter(obj => obj !== 'index.html'); // Ensure directory index file doesn't get deleted
 
     if (!slugsToDelete.length) return;
@@ -58,6 +55,9 @@ function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
     const directories = slugsToDelete.map(slug => ({
       Key: `${s3Prefix}${slug}/`,
     }));
+
+    console.log(s3Prefix + 'index', indexFiles);
+    console.log(s3Prefix + 'directories', directories);
 
     // File inside folder needs to be deleted first before deleting the parent folder
     return deleteObjects(bucketName, indexFiles).then(() => deleteObjects(bucketName, directories));
