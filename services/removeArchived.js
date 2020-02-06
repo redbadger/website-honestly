@@ -12,8 +12,15 @@ const peoplePrefix = 'about-us/people/';
 const jobsPrefix = 'jobs/';
 
 // Takes in a S3 key/path and extracts the relevant slug
-function extractSlugFromKey(key) {
-  const match = key.match(/about-us\/[\w-]+\/([\w-]+)\/index.html/);
+function extractSlugFromKey(key, prefix) {
+  let match;
+  if (prefix === peoplePrefix) {
+    match = key.match(/about-us\/[\w-]+\/([\w-]+)\/index.html/);
+  }
+
+  if (prefix === jobsPrefix) {
+    match = key.match(/jobs\/([\w-]+)\/index.html/);
+  }
   return match && match[1];
 }
 
@@ -32,7 +39,7 @@ const deleteObjects = (bucketName, keysToDelete) =>
 function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
   return getLiveBadgers(bucketName, s3Prefix).then(objects => {
     const listed = objects.Contents.map(obj => obj.Key)
-      .map(extractSlugFromKey)
+      .map(obj => extractSlugFromKey(obj, s3Prefix))
       .filter(slug => slug != null);
 
     console.log('Old badgers:', listed);
