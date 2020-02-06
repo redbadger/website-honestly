@@ -26,7 +26,7 @@ function extractSlugFromKey(key, prefix) {
 
 const getLiveBadgers = (Bucket, Prefix) => s3.listObjects({ Bucket, Prefix }).promise();
 const deleteObjects = (bucketName, keysToDelete) => {
-  console.logs('Deleting: ' + keysToDelete + 'from ' + bucketName);
+  console.log('Deleting: ' + keysToDelete + 'from ' + bucketName);
   return s3
     .deleteObjects({
       Bucket: bucketName,
