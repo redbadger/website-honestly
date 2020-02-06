@@ -25,8 +25,9 @@ function extractSlugFromKey(key, prefix) {
 }
 
 const getLiveBadgers = (Bucket, Prefix) => s3.listObjects({ Bucket, Prefix }).promise();
-const deleteObjects = (bucketName, keysToDelete) =>
-  s3
+const deleteObjects = (bucketName, keysToDelete) => {
+  console.logs('Deleting: ' + keysToDelete + 'from ' + bucketName);
+  return s3
     .deleteObjects({
       Bucket: bucketName,
       Delete: {
@@ -35,6 +36,7 @@ const deleteObjects = (bucketName, keysToDelete) =>
       },
     })
     .promise();
+};
 
 function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
   return getLiveBadgers(bucketName, s3Prefix).then(objects => {
