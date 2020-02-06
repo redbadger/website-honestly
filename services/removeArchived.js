@@ -42,7 +42,8 @@ function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
       .map(obj => extractSlugFromKey(obj, s3Prefix))
       .filter(slug => slug != null);
 
-    console.log('Old badgers:', listed);
+    console.log(s3Prefix, listed);
+    console.log(s3Prefix, actualSlugs);
 
     const slugsToDelete = difference(listed, actualSlugs).filter(obj => obj !== 'index.html'); // Ensure directory index file doesn't get deleted
 
