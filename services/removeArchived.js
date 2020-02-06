@@ -55,6 +55,7 @@ function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
 }
 
 export default function removeArchived(bucketName) {
+  console.log('removing archived content');
   return state => {
     return Promise.all([
       removeArchivedWithPrefix(
