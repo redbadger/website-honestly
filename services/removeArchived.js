@@ -56,9 +56,6 @@ function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
       Key: `${s3Prefix}${slug}/`,
     }));
 
-    console.log(s3Prefix + 'index', indexFiles);
-    console.log(s3Prefix + 'directories', directories);
-
     // File inside folder needs to be deleted first before deleting the parent folder
     return deleteObjects(bucketName, indexFiles).then(() => deleteObjects(bucketName, directories));
   });
