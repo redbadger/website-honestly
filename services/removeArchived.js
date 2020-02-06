@@ -9,7 +9,7 @@ const s3 = new AWS.S3({
 });
 
 const peoplePrefix = 'about-us/people/';
-const jobsPrefix = 'about-us/join-us/';
+const jobsPrefix = 'jobs/';
 
 // Takes in a S3 key/path and extracts the relevant slug
 function extractSlugFromKey(key) {
