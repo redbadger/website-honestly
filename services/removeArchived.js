@@ -10,12 +10,17 @@ const s3 = new AWS.S3({
 
 const peoplePrefix = 'people/';
 const jobsPrefix = 'jobs/';
+const goldCoinsPrefix = 'what-we-do/experience-us/';
 
 // Takes in a S3 key/path and extracts the relevant slug
 function extractSlugFromKey(key, prefix) {
   let match;
   if (prefix === peoplePrefix) {
     match = key.match(/people\/([\w-]+)\/index.html/);
+  }
+
+  if (prefix === goldCoinsPrefix) {
+    match = key.match(/what-we-do\/experience-us\/([\w-]+)\/index.html/);
   }
 
   if (prefix === jobsPrefix) {
@@ -85,6 +90,11 @@ export default function removeArchived(bucketName) {
         peoplePrefix,
       ),
       removeArchivedWithPrefix(bucketName, state.data.jobs.map(job => job.slug), jobsPrefix),
+      removeArchivedWithPrefix(
+        bucketName,
+        state.data.goldCoinPages.map(page => page.slug),
+        goldCoinsPrefix,
+      ),
     ])
       .catch(err => console.error('Error when deleting archived pages:', err))
       .then(() => state);
