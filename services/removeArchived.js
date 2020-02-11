@@ -27,13 +27,22 @@ function extractSlugFromKey(key, prefix) {
 const getLiveBadgers = (Bucket, Prefix) => s3.listObjects({ Bucket, Prefix }).promise();
 const deleteObjects = (bucketName, keysToDelete) =>
   s3
-    .deleteObjects({
-      Bucket: bucketName,
-      Delete: {
-        Objects: keysToDelete,
-        Quiet: false,
+    .deleteObjects(
+      {
+        Bucket: bucketName,
+        Delete: {
+          Objects: keysToDelete,
+          Quiet: false,
+        },
       },
-    })
+      (err, data) => {
+        if (err) {
+          console.log('Error when deleting archived pages: ' + err, err.stack);
+        } else {
+          console.log('Archived content successfully deleted: ', data);
+        }
+      },
+    )
     .promise();
 
 function removeArchivedWithPrefix(bucketName, actualSlugs, s3Prefix) {
