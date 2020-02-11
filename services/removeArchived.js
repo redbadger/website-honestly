@@ -39,7 +39,12 @@ const deleteObjects = (bucketName, keysToDelete) =>
         if (err) {
           console.log('Error when deleting archived pages: ' + err, err.stack);
         } else {
-          console.log('Archived content successfully deleted: ', data);
+          if (data.Errors.length) {
+            console.log('Error when deleting archived pages: ', data.Errors);
+          }
+          if (data.Deleted.length) {
+            console.log('Archived content successfully deleted: ', data.Deleted);
+          }
         }
       },
     )
