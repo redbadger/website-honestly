@@ -8,14 +8,14 @@ const s3 = new AWS.S3({
   region: 'eu-west-1',
 });
 
-const peoplePrefix = 'about-us/people/';
+const peoplePrefix = 'people/';
 const jobsPrefix = 'jobs/';
 
 // Takes in a S3 key/path and extracts the relevant slug
 function extractSlugFromKey(key, prefix) {
   let match;
   if (prefix === peoplePrefix) {
-    match = key.match(/about-us\/[\w-]+\/([\w-]+)\/index.html/);
+    match = key.match(/people\/([\w-]+)\/index.html/);
   }
 
   if (prefix === jobsPrefix) {
