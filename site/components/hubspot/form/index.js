@@ -17,9 +17,14 @@ export type HubspotFormProps = {
   guid: string,
   name: string,
   cssClass: string,
+  consentCssClass: string,
   submitText?: string,
   inlineMessage?: string,
   formFields: Array<HubspotFormField>,
+  formConsent: {
+    consentMessage: string,
+    checkboxes: Array<{ label: string, required: boolean }>,
+  },
   pageTitle: string,
 };
 
@@ -28,6 +33,7 @@ type HubspotFormState = {
   submitted: boolean,
   fieldData: Array<HubspotFormFieldValues>,
   hubspotAPIEndpoint: string,
+  isDisabled: boolean,
 };
 
 export default class HubspotForm extends React.Component<HubspotFormProps, HubspotFormState> {
@@ -60,11 +66,13 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
       submitted: false,
       fieldData,
       hubspotAPIEndpoint: `https://api.hsforms.com/submissions/v3/integration/submit/${props.portalId}/${props.guid}`,
+      isDisabled: true,
     };
     (this: any)._onSubmit = this._onSubmit.bind(this);
     (this: any)._onChange = this._onChange.bind(this);
     (this: any).formIsValid = this.formIsValid.bind(this);
     (this: any).postFormDataToHubspot = this.postFormDataToHubspot.bind(this);
+    (this: any).checkConsented = this.checkConsented.bind(this);
   }
 
   static getFieldState(fieldData: Array<HubspotFormFieldValues>, fieldName: string) {
@@ -162,9 +170,29 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     }
   }
 
+  checkConsented() {
+    if (document) {
+      const checkboxes = Array.from(document.querySelectorAll('#form-legal-consent')).filter(
+        (check: any) => check.required,
+      );
+      const isDisabled = checkboxes.some((check: any) => !check.checked);
+      this.setState({ isDisabled });
+    }
+  }
+
   render() {
-    const { portalId, guid, name, cssClass, submitText, inlineMessage, formFields } = this.props;
-    const { showWarnings, submitted, fieldData } = this.state;
+    const {
+      portalId,
+      guid,
+      name,
+      cssClass,
+      consentCssClass,
+      submitText,
+      inlineMessage,
+      formFields,
+      formConsent,
+    } = this.props;
+    const { showWarnings, submitted, fieldData, isDisabled } = this.state;
     // html strings are provided by our CMS and sanitized in badger brain
     /* eslint-disable react/no-danger */
     return (
@@ -202,7 +230,31 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
                   />
                 );
               })}
-            <input type="submit" onClick={this._onSubmit} name={submitText} value={submitText} />
+            {formConsent && (
+              <div className={consentCssClass}>
+                {formConsent.consentMessage}
+                {formConsent.checkboxes.map(checkbox => {
+                  return (
+                    <label>
+                      <span>{checkbox.label}</span>
+                      <input
+                        type="checkbox"
+                        id="form-legal-consent"
+                        required={checkbox.required}
+                        onChange={this.checkConsented}
+                      />
+                    </label>
+                  );
+                })}
+              </div>
+            )}
+            <input
+              type="submit"
+              disabled={isDisabled}
+              onClick={this._onSubmit}
+              name={submitText}
+              value={submitText}
+            />
           </form>
         )}
       </div>

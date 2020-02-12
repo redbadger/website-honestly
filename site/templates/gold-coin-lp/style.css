@@ -326,6 +326,21 @@
   margin-bottom: 2px;
 }
 
+.goldCoinFormConsent {
+  font-size: 16px;
+}
+
+.goldCoinFormConsent label {
+  position: relative;
+  max-height: 40px;
+}
+
+.goldCoinFormConsent label span {
+  position: absolute;
+  top: 8px;
+  left: 30px;
+}
+
 .goldCoinForm input {
   padding: 8px;
   width: 100%;
@@ -360,7 +375,8 @@
   padding: 0 40px;
 }
 
-.goldCoinForm input[type='submit']:hover {
+.goldCoinForm input[type='submit']:hover,
+.goldCoinForm input[type='submit']:disabled {
   background: scorpian;
 }
 
