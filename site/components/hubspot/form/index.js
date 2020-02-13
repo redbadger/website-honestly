@@ -66,7 +66,9 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
       submitted: false,
       fieldData,
       hubspotAPIEndpoint: `https://api.hsforms.com/submissions/v3/integration/submit/${props.portalId}/${props.guid}`,
-      isDisabled: true,
+      isDisabled: props.formConsent
+        ? props.formConsent.checkboxes.some(checkbox => checkbox.required)
+        : false,
     };
     (this: any)._onSubmit = this._onSubmit.bind(this);
     (this: any)._onChange = this._onChange.bind(this);
