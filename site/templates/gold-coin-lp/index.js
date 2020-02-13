@@ -49,7 +49,7 @@ export type GoldCoinLPProps = {
 
 const BackCTA = ({ modifier }: { modifier?: string }) => {
   return (
-    <Link to="experienceUs" className={`${styles.backCTA} ${modifier}`}>
+    <Link to="experienceUs" className={`${styles.backCTA} ${modifier || ''}`}>
       See more experiences
     </Link>
   );
