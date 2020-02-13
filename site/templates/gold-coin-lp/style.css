@@ -315,9 +315,6 @@
 
 .goldCoinForm a {
   color: badgerBlack;
-}
-
-.goldCoinForm a:hover {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 

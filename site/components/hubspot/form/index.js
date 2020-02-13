@@ -232,7 +232,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
               })}
             {formConsent && (
               <div className={consentCssClass}>
-                {formConsent.consentMessage}
+                <div dangerouslySetInnerHTML={{ __html: formConsent.consentMessage }} />
                 {formConsent.checkboxes.map(checkbox => {
                   return (
                     <label>
