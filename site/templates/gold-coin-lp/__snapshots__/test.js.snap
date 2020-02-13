@@ -74,6 +74,12 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
             test-location
           </p>
         </div>
+        <BackCTA
+          modifier="backCTADesktop"
+        />
+        <BackCTA
+          modifier="backCTAMobile"
+        />
         <div
           className="goldCoinLPBody"
         >
@@ -180,12 +186,9 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
           />
         </div>
       </div>
-      <Link
-        className="backCTA backCTADesktop"
-        to="experienceUs"
-      >
-        Back to overview
-      </Link>
+      <BackCTA
+        modifier="backCTADesktop"
+      />
     </div>
     <div
       className="goldCoinLPExplore"
@@ -219,12 +222,9 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
         </div>
       </div>
     </div>
-    <Link
-      className="backCTA backCTAMobile"
-      to="experienceUs"
-    >
-      Back to overview
-    </Link>
+    <BackCTA
+      modifier="backCTAMobile"
+    />
   </div>
 </div>
 `;
