@@ -157,6 +157,7 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
             </div>
           </div>
           <HubspotForm
+            consentCssClass="goldCoinFormConsent"
             cssClass="test-css goldCoinForm"
             formFields={
               Array [

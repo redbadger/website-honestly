@@ -195,9 +195,11 @@ const GoldCoinLP = ({
                       ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
                       : styles.goldCoinForm
                   }
+                  consentCssClass={styles.goldCoinFormConsent}
                   submitText={hubspotForm.submitText}
                   inlineMessage={hubspotForm.inlineMessage}
                   formFields={hubspotForm.formFields}
+                  formConsent={hubspotForm.formConsent}
                   pageTitle={pageTitle}
                 />
               )}

@@ -315,9 +315,6 @@
 
 .goldCoinForm a {
   color: badgerBlack;
-}
-
-.goldCoinForm a:hover {
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
@@ -326,11 +323,48 @@
   margin-bottom: 2px;
 }
 
+.goldCoinFormConsent {
+  font-size: 16px;
+}
+
+.goldCoinFormConsent input[type='checkbox'] {
+  appearance: none;
+  background: grey;
+}
+
+.goldCoinFormConsent input[type='checkbox']::before {
+  content: '';
+  display: block;
+  background: white;
+  margin-top: 5px;
+  height: 16px;
+  width: 16px;
+}
+
+.goldCoinFormConsent input[type='checkbox']:checked::before {
+  content: '\2713';
+  background: #4a89f5;
+  color: white;
+  text-align: center;
+}
+
+.goldCoinFormConsent label {
+  position: relative;
+  max-height: 40px;
+}
+
+.goldCoinFormConsent label span {
+  position: absolute;
+  top: 8px;
+  left: 30px;
+}
+
 .goldCoinForm input {
   padding: 8px;
   width: 100%;
   height: 46px;
   border: none;
+  outline: none;
   background: badgerWhite;
   margin-bottom: 12px;
 }
@@ -360,7 +394,8 @@
   padding: 0 40px;
 }
 
-.goldCoinForm input[type='submit']:hover {
+.goldCoinForm input[type='submit']:hover,
+.goldCoinForm input[type='submit']:disabled {
   background: scorpian;
 }
 

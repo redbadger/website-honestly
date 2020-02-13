@@ -174,6 +174,13 @@ const goldCoinPages = `
             hidden
             labelHidden
           }
+          formConsent {
+      	    consentMessage
+      	    checkboxes {
+        	    label
+        	    required
+      	    }
+    	    }
         }
       }
 `;
