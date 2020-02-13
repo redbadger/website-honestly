@@ -47,6 +47,14 @@ export type GoldCoinLPProps = {
   slug: string,
 };
 
+const BackCTA = ({ modifier }: { modifier?: string }) => {
+  return (
+    <Link to="experienceUs" className={`${styles.backCTA} ${modifier || ''}`}>
+      See more experiences
+    </Link>
+  );
+};
+
 const renderConsultants = (consultants: Array<ConsultantProps>) => {
   return consultants.map(({ image, name, role, profileUrl }: ConsultantProps) => {
     return <Consultant key={name} image={image} name={name} role={role} profileUrl={profileUrl} />;
@@ -160,6 +168,9 @@ const GoldCoinLP = ({
               </p>
             </div>
 
+            <BackCTA modifier={styles.backCTADesktop} />
+            <BackCTA modifier={styles.backCTAMobile} />
+
             <div className={styles.goldCoinLPBody}>
               <div className={styles.goldCoinLPBodyText}>
                 <div className={styles.goldCoinLPQSection}>
@@ -205,9 +216,7 @@ const GoldCoinLP = ({
               )}
             </div>
           </div>
-          <Link to="experienceUs" className={`${styles.backCTA} ${styles.backCTADesktop}`}>
-            Back to overview
-          </Link>
+          <BackCTA modifier={styles.backCTADesktop} />
         </div>
         {previews && (
           <div className={styles.goldCoinLPExplore}>
@@ -217,9 +226,7 @@ const GoldCoinLP = ({
             </div>
           </div>
         )}
-        <Link to="experienceUs" className={`${styles.backCTA} ${styles.backCTAMobile}`}>
-          Back to overview
-        </Link>
+        <BackCTA modifier={styles.backCTAMobile} />
       </div>
     </div>
   );

@@ -22,7 +22,7 @@
   outline: none;
   background: badgerRedOnBlack;
   width: auto;
-  max-width: 220px;
+  max-width: 240px;
   margin: 10px auto 40px;
   text-align: center;
   padding: 10px 0;
@@ -318,6 +318,10 @@
   border-bottom: 2px solid badgerRedOnBlack;
 }
 
+.goldCoinForm p {
+  margin-bottom: 8px;
+}
+
 .goldCoinForm label {
   display: block;
   margin-bottom: 2px;
@@ -328,6 +332,7 @@
 }
 
 .goldCoinFormConsent input[type='checkbox'] {
+  padding-left: 0;
   appearance: none;
   background: grey;
 }
