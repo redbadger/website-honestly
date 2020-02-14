@@ -7,7 +7,7 @@ import TwoWeekIcon from './images/2weekengagement';
 
 export const atAGlanceTypes = {
   lunch: {
-    text: 'Lunch & learn',
+    text: 'Lunch & Learn',
     image: () => <LunchIcon />,
     messaging: 'Book now',
   },

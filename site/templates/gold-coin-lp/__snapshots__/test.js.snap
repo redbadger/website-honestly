@@ -54,12 +54,12 @@ exports[`site/templates/gold-coin-lp Renders 1`] = `
           </p>
           <p>
             <span
-              alt="Lunch & learn engagement type icon"
+              alt="Lunch & Learn engagement type icon"
               className="goldCoinLPInfoImg"
             >
               <LunchIcon />
             </span>
-            Lunch & learn
+            Lunch & Learn
           </p>
           <p>
             <span
