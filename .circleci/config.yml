@@ -6,6 +6,7 @@ jobs:
 
     steps:
       - checkout
+
       - restore_cache:
           keys:
             - node_modules-v7-{{ checksum "yarn.lock" }}
@@ -19,14 +20,19 @@ jobs:
           paths:
             - ./node_modules
 
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules/
+
   validate_formatting:
     docker:
       - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+
+      - attach_workspace:
+          at: .
 
       - run:
           name: Validate formatting
@@ -37,9 +43,9 @@ jobs:
       - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+
+      - attach_workspace:
+          at: .
 
       - run:
           name: Lint code
@@ -50,9 +56,9 @@ jobs:
       - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+
+      - attach_workspace:
+          at: .
 
       - run:
           name: Validate types
@@ -63,9 +69,9 @@ jobs:
       - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+
+      - attach_workspace:
+          at: .
 
       - run:
           name: Notify Code Climate of build
@@ -90,9 +96,9 @@ jobs:
       - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+
+      - attach_workspace:
+          at: .
 
       - run:
           name: Deploy branch
@@ -103,9 +109,9 @@ jobs:
       - image: redbadger/website-honestly-deploy:16
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - node_modules-v7-{{ checksum "yarn.lock" }}
+
+      - attach_workspace:
+          at: .
 
       - run:
           name: Deploy to staging
