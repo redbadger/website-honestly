@@ -68,7 +68,7 @@ function TechListItem({ name, imgSrc, imgSrcLarge, plusSymbol, modifier }: TechL
 export default function TechSlice({ isHeading }: TechSliceProps) {
   const techSliceClasses = `${styles.techSlice} ${isHeading ? '' : styles.withDivider}`;
   return (
-    <section className={techSliceClasses}>
+    <section className={techSliceClasses} data-cy="tech-slice">
       <div className={styles.techSliceIntro}>
         {isHeading ? (
           <h1 className={styles.heading}>

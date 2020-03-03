@@ -38,7 +38,7 @@ const Checklist = ({
   onBlur,
   title = 'We can help you',
 }: Props) => (
-  <section className={styles.contactUsContainer} id="contactUs">
+  <section className={styles.contactUsContainer} id="contactUs" data-cy="contact-us-slice">
     <h2 className={styles.header}>{title}</h2>
     <div className={styles.contentContainer}>
       <ul className={styles.list}>
@@ -56,6 +56,7 @@ const Checklist = ({
         className={styles.mailToLink}
         onMouseEnter={onHover}
         onMouseLeave={onBlur}
+        data-cy="email-link"
       >
         {cta}
       </a>

@@ -11,7 +11,9 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "start": "make dev",
-    "badger": "node dev/badger.js"
+    "badger": "node dev/badger.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "yarn run cypress run "
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -48,6 +50,7 @@
     "core-js": "^3.0.0",
     "css-loader": "^2.0.1",
     "css-modules-require-hook": "^4.2.3",
+    "cypress-graphql-mock": "^0.5.0-alpha.4",
     "empty": "^0.10.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -161,7 +164,9 @@
     "@babel/preset-flow": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.5.0",
+    "cypress": "^4.1.0",
     "enzyme-to-json": "^3.3.4",
+    "eslint-plugin-cypress": "^2.10.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.5.0",
     "prettier": "^1.16.4"
