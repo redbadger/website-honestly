@@ -12,8 +12,8 @@
     "test:coverage": "jest --coverage",
     "start": "make dev",
     "badger": "node dev/badger.js",
-    "cypress:open": "cypress open",
-    "cypress:run": "yarn run cypress run "
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",

@@ -4,6 +4,7 @@ exports[`site/pages/home renders correctly 1`] = `
 Array [
   <section
     class="homepageTopSlice"
+    data-cy="top-slice"
   >
     <div
       class="sliceContainer"
@@ -63,6 +64,7 @@ Array [
   </section>,
   <div
     class="goldCoinsContainer"
+    data-cy="gold-coins-slice"
   >
     <div
       class="goldCoinsContent"
@@ -117,6 +119,7 @@ Array [
   </div>,
   <section
     class="caseStudyContainer"
+    data-cy="case-study-slice"
     id="stats"
   >
     <h2
@@ -383,6 +386,7 @@ Array [
     >
       <section
         class="shareThymeSlice"
+        data-cy="sharethyme-slice"
       >
         <div
           class="shareThymeContent"
@@ -511,6 +515,7 @@ Array [
   </section>,
   <div
     class="testimonials"
+    data-cy="testimonial-slice"
   >
     <div
       class="container"
@@ -518,6 +523,7 @@ Array [
   </div>,
   <section
     class="techSlice withDivider"
+    data-cy="tech-slice"
   >
     <div
       class="techSliceIntro"
@@ -798,6 +804,7 @@ Array [
   </section>,
   <section
     class="contactUsContainer"
+    data-cy="contact-us-slice"
     id="contactUs"
   >
     <h2
@@ -849,6 +856,7 @@ Array [
     <div>
       <a
         class="mailToLink"
+        data-cy="email-link"
         href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
       >
         Send an email
@@ -862,6 +870,7 @@ Array [
   </section>,
   <section
     class="newsletter"
+    data-cy="newsletter-signup-slice"
   >
     <h2
       class="title"
@@ -885,6 +894,7 @@ Array [
           id="hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094"
         >
           <a
+            data-cy="email-signup"
             href="https://cta-redirect.hubspot.com/cta/redirect/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094"
             target="_blank"
           >
@@ -913,6 +923,7 @@ Array [
   </section>,
   <div
     class="awardsContainer"
+    data-cy="awards-slice"
   >
     <div
       class="awards"
