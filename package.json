@@ -50,7 +50,6 @@
     "core-js": "^3.0.0",
     "css-loader": "^2.0.1",
     "css-modules-require-hook": "^4.2.3",
-    "cypress-graphql-mock": "^0.5.0-alpha.4",
     "empty": "^0.10.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
