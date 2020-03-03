@@ -118,6 +118,13 @@ export const routeDefinitions: Array<RouteDefinition> = [
     stateToProps: ({ goldCoinPages }) => ({ goldCoinPages }),
   },
   {
+    title: 'Mission Beyond',
+     description:
+      'We’re a Sunday Times 100 Best Small Company to Work For 2018 and looking for the best talent to join our team. ',
+    key: 'missionBeyond',
+    route: 'mission-beyond'
+  },
+  {
     title: ({ job }) => job.title,
     key: 'job',
     route: 'jobs/{slug}',

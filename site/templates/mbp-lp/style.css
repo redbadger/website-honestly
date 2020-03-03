@@ -1,0 +1,62 @@
+@value badgerBlack, badgerWhite from "../../css/_colors.css";
+
+.MBPLP {
+  font-family: 'ProximaNova-light', sans-serif;
+  background: badgerBlack;
+  color: badgerWhite;
+}
+
+.mainContent {
+  padding: 30px 34px;
+}
+
+.header {
+  height: 130px;
+  position: relative;
+}
+
+.headerLogo {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  width: 100px;
+  font-size: 20px;
+  color: badgerBlack;
+}
+
+.headerLogo span:nth-child(2) {
+  margin-left: 20px;
+}
+
+.headerLogo span {
+  display: inline-block;
+  width: 80px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  background: #ffed2e;
+}
+
+.contentText {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-bottom: 60px;
+}
+
+.contentText strong {
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+
+.contentText p {
+  margin-bottom: 18px;
+}
+
+.contentText p:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  color: #ffed2e;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
