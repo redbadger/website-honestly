@@ -4,14 +4,14 @@ import React from 'react';
 import inputTypes from './inputTypeDefinitions';
 
 export type HubspotFormField = {
-  richText: string,
+  richText?: string,
   name: string,
   label: string,
   fieldType: string,
   description: string,
-  defaultValue: string,
+  defaultValue?: string,
   value?: string,
-  placeholder: string,
+  placeholder?: string,
   required: boolean,
   enabled: boolean,
   hidden: boolean,

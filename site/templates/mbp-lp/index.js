@@ -7,7 +7,7 @@ import styles from './style.css';
 
 // import Social from '../../components/social';
 import Consultant from './consultant';
-// import type { ConsultantProps } from './consultant';
+import type { ConsultantProps } from './consultant';
 import HubspotForm from '../../components/hubspot/form/index';
 import type { HubspotFormProps } from '../../components/hubspot/form/index';
 // import Link from '../../components/link';
