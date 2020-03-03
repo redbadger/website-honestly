@@ -37,6 +37,9 @@ make keyrings
 # - "Getting Blackbox"
 # - "Get access to existing blackbox secrets"
 
+# Make sure you have git-secrets installed by running
+brew install git-secrets
+
 # Set up git secrets to scan for secrets pre-commit. Follow the instructions of this command:
 make scanner
 
