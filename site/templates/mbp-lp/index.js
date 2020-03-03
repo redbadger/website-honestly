@@ -5,14 +5,14 @@
 import * as React from 'react';
 import styles from './style.css';
 
-import Social from '../../components/social';
-// import Consultant from './consultant';
+// import Social from '../../components/social';
+import Consultant from './consultant';
 // import type { ConsultantProps } from './consultant';
 import HubspotForm from '../../components/hubspot/form/index';
 import type { HubspotFormProps } from '../../components/hubspot/form/index';
-import Link from '../../components/link';
+// import Link from '../../components/link';
 
-import Picture from '../../components/picture';
+// import Picture from '../../components/picture';
 
 export type MBPLPProps = {
   title: string,
@@ -31,16 +31,7 @@ const renderConsultants = (consultants: Array<ConsultantProps>) => {
   });
 };
 
-const MBPLP = ({
-  title,
-  slug,
-  time,
-  date,
-  location,
-  consultants,
-  formId,
-  hubspotForm,
-}: MBPLPProps) => {
+const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPProps) => {
   return (
     <div>
       {/* <Social
@@ -94,8 +85,7 @@ const MBPLP = ({
             </p>
           </div>
           <div className={styles.MBPLPContentContainer}>
-            <div className={styles.MBPLPContent}>
-              <h1 className={styles.h1}>{title}</h1>
+            <div className={styles.MBPLPForm}>
               <div>
                 {hubspotForm && (
                   <HubspotForm
@@ -107,7 +97,7 @@ const MBPLP = ({
                         ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
                         : styles.goldCoinForm
                     }
-                    consentCssClass={styles.goldCoinFormConsent}
+                    consentCssClass={styles.MBPLPFormConsent}
                     submitText={hubspotForm.submitText}
                     inlineMessage={hubspotForm.inlineMessage}
                     formFields={hubspotForm.formFields}
@@ -117,6 +107,42 @@ const MBPLP = ({
                 )}
               </div>
             </div>
+          </div>
+          <div className={styles.contentText}>
+            <h2>Agenda</h2>
+            <p>
+              <strong>8:30am:</strong> Breakfast served{' '}
+            </p>
+            <p>
+              <strong>9:00am:</strong> Welcome and what’s Mission Beyond Product about - Cain Ullah,
+              CEO of Red Badger
+            </p>
+            <p>
+              <strong>9:10am:</strong> Think Outside the Building: How Advanced Leaders Can Change
+              the World One Smart Innovation at a Time - Rosabeth Moss Kanter, Harvard Business
+              School
+            </p>
+            <p>
+              <strong>9:40am:</strong> How to tackle food waste? - Lindsay Boswell, CEO FareShare
+            </p>
+            <p>
+              <strong>10:00am:</strong> Words into action: Mission X - Cain Ullah, CEO of Red Badger
+            </p>
+            <p>
+              <strong>10:30am:</strong> Close
+            </p>
+          </div>
+          <div className={styles.contentText}>
+            <h2>Speakers</h2>
+            {renderConsultants(consultants)}
+          </div>
+          <div className={styles.contentText}>
+            <h2>Any other questions?</h2>
+            If you have any queries or dietary requirements that we should be aware of, get in touch
+            with us{' '}
+            <a className={styles.inlineLink} href="https://www.red-badger.com">
+              here
+            </a>
           </div>
         </div>
       </div>

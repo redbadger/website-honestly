@@ -1,8 +1,11 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import MBPLP from '../../templates/mbp-lp';
 
-import Social from '../../components/social';
+// import Social from '../../components/social';
+import joeImage from './assets/joe.jpg';
+import harriImage from './assets/harri.jpg';
+import chrisImage from './assets/chris.jpg';
 
 // const social = {
 //   title: 'Experience Red Badger',
@@ -22,21 +25,21 @@ const MBPPage = () => (
     location="The Conduit"
     consultants={[
       {
-        image: 'image.jpg',
-        name: 'this person',
-        role: 'stuff',
+        image: chrisImage,
+        name: 'Elizabeth Moss Kanter',
+        role: 'UCL Institute of Management Studies',
         profileUrl: 'this-person',
       },
       {
-        image: 'image.jpg',
-        name: 'this person',
-        role: 'stuff',
+        image: harriImage,
+        name: 'Harri Adams',
+        role: 'Managing Director Cell C, Red Badger',
         profileUrl: 'this-person',
       },
       {
-        image: 'image.jpg',
-        name: 'this person',
-        role: 'stuff',
+        image: joeImage,
+        name: 'Joe Paice',
+        role: 'Managing Director Cell C, Red Badger',
         profileUrl: 'this-person',
       },
     ]}
@@ -47,21 +50,57 @@ const MBPPage = () => (
       name: 'mbp-form',
       cssClass: 'css',
       consentCssClass: 'css-consent',
-      submitText: 'thanks',
+      submitText: 'RSVP',
       inlineMessage: 'thank you',
       formFields: [
         {
-          richText: 'hello there',
-          name: 'form bit',
-          label: 'form-bit',
-          fieldType: 'checkbox',
-          description: 'this is a checkbox',
-          defaultValue: 'yes',
-          placeholder: 'no',
+          richText: null,
+          name: 'first-name',
+          label: 'First name',
+          fieldType: 'text',
+          description: 'please enter your first name',
+          defaultValue: null,
+          placeholder: null,
           required: true,
           enabled: true,
-          hidden: true,
-          labelHidden: true,
+          hidden: false,
+          labelHidden: false,
+          showWarnings: true,
+          valid: true,
+          onChange: () => {
+            console.log('hi');
+          },
+        },
+        {
+          richText: null,
+          name: 'last-name',
+          label: 'Last name',
+          fieldType: 'text',
+          description: 'please enter your last name',
+          defaultValue: null,
+          placeholder: null,
+          required: true,
+          enabled: true,
+          hidden: false,
+          labelHidden: false,
+          showWarnings: true,
+          valid: true,
+          onChange: () => {
+            console.log('hi');
+          },
+        },
+        {
+          richText: null,
+          name: 'email-address',
+          label: 'Email Address',
+          fieldType: 'text',
+          description: 'please enter your ekail address',
+          defaultValue: null,
+          placeholder: null,
+          required: true,
+          enabled: true,
+          hidden: false,
+          labelHidden: false,
           showWarnings: true,
           valid: true,
           onChange: () => {
@@ -70,10 +109,11 @@ const MBPPage = () => (
         },
       ],
       formConsent: {
-        consentMessage: 'I consent',
+        consentMessage:
+          'Once you are signed up to our marketing communications, you can unsubscribe and update your preferences at any time. We’ll share our news, blogs, and invitations to our events and webinars. View our Privacy Policy to find out more about how we take care of your personal data.',
         checkboxes: [
           {
-            label: 'checkbox',
+            label: 'Yes, please sign me up.',
             required: true,
           },
         ],

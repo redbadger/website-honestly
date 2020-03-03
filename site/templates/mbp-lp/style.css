@@ -1,4 +1,4 @@
-@value badgerBlack, badgerWhite from "../../css/_colors.css";
+@value scorpian, badgerBlack, badgerWhite, cainYellow from "../../css/_colors.css";
 
 .MBPLP {
   font-family: 'ProximaNova-light', sans-serif;
@@ -37,9 +37,19 @@
 
 .contentText {
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4em;
   margin-bottom: 60px;
+}
+
+.inlineLink {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  text-decoration: underline;
+  color: badgerWhite;
+}
+
+.inlineLink:hover {
+  color: cainYellow;
 }
 
 .contentText strong {
@@ -59,4 +69,121 @@ h2 {
   color: #ffed2e;
   font-size: 25px;
   margin-bottom: 15px;
+}
+
+.MBPLPForm {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.MBPLPForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.MBPLPForm input[type='text'] {
+  font-family: 'ProximaNova-Light', sans-serif;
+  padding: 12px;
+  color: badgerWhite;
+  height: 52px;
+  width: 100%;
+  margin-bottom: 24px;
+  background: #363636;
+  border: 1px cainYellow solid;
+}
+
+.MBPLPFormConsent {
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 16px;
+}
+
+.MBPLPFormConsent input[type='checkbox'] {
+  float: left;
+  margin-right: 8px;
+  padding-left: 0;
+  appearance: none;
+  outline: none;
+}
+
+.MBPLPFormConsent input[type='checkbox']::before {
+  content: '';
+  display: block;
+  background: white;
+  height: 16px;
+  width: 16px;
+}
+
+.MBPLPFormConsent input[type='checkbox']:checked::before {
+  content: '\2713';
+  background: #4a89f5;
+  color: white;
+  text-align: center;
+}
+
+.MBPLPForm input[type='submit'] {
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+  color: badgerBlack;
+  background: linear-gradient(220deg, transparent 6%, cainYellow 7%);
+  height: 40px;
+  width: 150px;
+  border: none;
+  outline: none;
+}
+
+.MBPLPForm input[type='submit']:hover,
+.MBPLPForm input[type='submit']:disabled {
+  background: linear-gradient(220deg, transparent 6%, scorpian 7%);
+}
+
+.MBPLPConsultants {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 100vw;
+  max-width: contentMaxWidth;
+}
+
+.MBPLPConsultant {
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 18px;
+  width: 120px;
+  white-space: nowrap;
+  margin-right: 50px;
+  color: badgerWhite;
+  margin-bottom: 20px;
+}
+
+.MBPLPConsultant:hover .MBPLPConsultantLink {
+  border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.MBPLPConsultant img {
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.MBPLPConsultantRole {
+  white-space: initial;
+}
+
+.MBPLPConsultantLink {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  display: inline;
+  color: cainYellow;
+  position: relative;
+}
+
+.MBPLPConsultantArrow {
+  width: 10px;
+  margin-left: 6px;
+}
+
+.MBPLPConsultantLink:hover {
+  border-bottom: 2px solid badgerRedOnBlack;
 }
