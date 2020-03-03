@@ -13,7 +13,6 @@ import fnfLogo from './images/f_f.png';
 import fortnumLogo from './images/fortnum-mason-logo.png';
 import ftLogo from './images/ft.png';
 import hallerLogo from './images/haller.png';
-import hsbcLogo from './images/hsbc.png';
 import lloydsLogo from './images/lloyds.png';
 import prideLogo from './images/pride.png';
 import selfridgesLogo from './images/selfridges.png';
@@ -25,9 +24,6 @@ export default function Logos() {
   return (
     <div className={styles.caseStudyContainer}>
       <div className={styles.caseStudyContent}>
-        <div className={styles.logoWrapper}>
-          <img src={hsbcLogo} className={styles.hsbcLogo} alt="HSBC logo" />
-        </div>
         <div className={styles.logoWrapper}>
           <img src={camdenLogo} className={styles.camdenLogo} alt="Camden Market logo" />
         </div>

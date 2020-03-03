@@ -555,15 +555,6 @@ Array [
             class="logoWrapper"
           >
             <img
-              alt="HSBC logo"
-              class="hsbcLogo"
-              src="hsbc.png"
-            />
-          </div>
-          <div
-            class="logoWrapper"
-          >
-            <img
               alt="Camden Market logo"
               class="camdenLogo"
               src="camden_market.png"
