@@ -130,41 +130,15 @@ h2 {
   text-align: center;
 }
 
-.headerAnchor span {
-  font-family: 'ProximaNova-Bold', sans-serif;
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  color: badgerWhite;
-  text-align: center;
-  line-height: 40px;
-  background: linear-gradient(220deg, transparent 6%, #363636 7%);
-  height: 36px;
-  width: 146px;
-  outline: none;
-  z-index: 2;
-  top: 2px;
-  left: 2px;
-}
-
 .headerAnchor {
   font-family: 'ProximaNova-Bold', sans-serif;
-  margin-top: 30px;
-  cursor: pointer;
   display: block;
-  position: relative;
-  color: badgerWhite;
   text-align: center;
-  line-height: 40px;
   font-size: 18px;
-  background: linear-gradient(220deg, transparent 6%, cainYellow 7%);
-  height: 40px;
-  width: 150px;
-  outline: none;
-  z-index: 0;
 }
 
-.MBPLPForm input[type='submit'] {
+.MBPLPForm input[type='submit'],
+.headerAnchor {
   cursor: pointer;
   position: relative;
   margin-top: 30px;
@@ -173,11 +147,13 @@ h2 {
   height: 40px;
   width: 150px;
   border: none;
+  line-height: 42px;
   outline: none;
 }
 
 .MBPLPForm input[type='submit']:hover,
-.MBPLPForm input[type='submit']:disabled {
+.MBPLPForm input[type='submit']:disabled,
+.headerAnchor:hover {
   background: linear-gradient(220deg, transparent 6%, scorpian 7%);
 }
 

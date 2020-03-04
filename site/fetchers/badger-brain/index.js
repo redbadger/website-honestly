@@ -185,6 +185,40 @@ const goldCoinPages = `
       }
 `;
 
+// This should eventually be replaced by making these pages
+// content editable in prismic and setting the attached form there
+// in the same way Gold Coin Pages are handled
+const mbpEventHubspotForm = `
+  hubspotForm(id: "059d8ceb-ee0f-4379-a5ba-8bd637ab1bfb") {
+    portalId
+    guid
+    name
+    cssClass
+    submitText
+    inlineMessage
+    formFields {
+      richText
+      name
+      label
+      fieldType
+      description
+      defaultValue
+      placeholder
+      required
+      enabled
+      hidden
+      labelHidden
+    }
+    formConsent {
+      consentMessage
+      checkboxes {
+        label
+        required
+      }
+    }
+  }
+`;
+
 export function getData() {
   const body = `
     query {
@@ -233,18 +267,24 @@ export function getData() {
         mobileURL
       }
       ${goldCoinPages}
+      ${mbpEventHubspotForm}
     }
   `;
 
   return fetch(badgerBrainEndpoint(), getRequestOptions(body))
     .then(handleErrors)
     .then(response => response.json())
-    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner, allGoldCoinPages } }) => ({
-      events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
-      badgers: sortBadgers(allBadgers),
-      categories: getCategories(allBadgers),
-      qAndAs: selectValidQandAs(allQnA),
-      goldCoinPages: allGoldCoinPages,
-      eventsBanner,
-    }));
+    .then(
+      ({
+        data: { allEvents, allBadgers, allQnA, eventsBanner, allGoldCoinPages, hubspotForm },
+      }) => ({
+        events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
+        badgers: sortBadgers(allBadgers),
+        categories: getCategories(allBadgers),
+        qAndAs: selectValidQandAs(allQnA),
+        goldCoinPages: allGoldCoinPages,
+        eventsBanner,
+        hubspotForm,
+      }),
+    );
 }

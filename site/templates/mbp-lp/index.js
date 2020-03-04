@@ -60,7 +60,7 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
             </p>
 
             <a href="#mbp-form" className={styles.headerAnchor}>
-              <span>RSVP</span>
+              RSVP
             </a>
           </div>
           <div className={styles.contentText}>

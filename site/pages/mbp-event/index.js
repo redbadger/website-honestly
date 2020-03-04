@@ -7,6 +7,8 @@ import joeImage from './assets/joe.jpg';
 import harriImage from './assets/harri.jpg';
 import chrisImage from './assets/chris.jpg';
 
+import type { HubspotFormProps } from '../../components/hubspot/form';
+
 // const social = {
 //   title: 'Experience Red Badger',
 //   description:
@@ -16,7 +18,7 @@ import chrisImage from './assets/chris.jpg';
 //   metaImage,
 // };
 
-const MBPPage = () => (
+const MBPPage = ({ hubspotForm }: HubspotFormProps) => (
   <MBPLP
     title="Mission Beyond"
     slug="mission-beyond"
@@ -44,82 +46,7 @@ const MBPPage = () => (
       },
     ]}
     formId={'1234567'}
-    hubspotForm={{
-      portalId: '1234567',
-      guid: '1234567',
-      name: 'mbp-form',
-      cssClass: 'css',
-      consentCssClass: 'css-consent',
-      submitText: 'RSVP',
-      inlineMessage: 'thank you',
-      formFields: [
-        {
-          richText: '',
-          name: 'first-name',
-          label: 'First name',
-          fieldType: 'text',
-          description: 'please enter your first name',
-          defaultValue: '',
-          placeholder: '',
-          required: true,
-          enabled: true,
-          hidden: false,
-          labelHidden: false,
-          showWarnings: true,
-          valid: true,
-          onChange: () => {
-            console.log('hi');
-          },
-        },
-        {
-          richText: '',
-          name: 'last-name',
-          label: 'Last name',
-          fieldType: 'text',
-          description: 'please enter your last name',
-          defaultValue: '',
-          placeholder: '',
-          required: true,
-          enabled: true,
-          hidden: false,
-          labelHidden: false,
-          showWarnings: true,
-          valid: true,
-          onChange: () => {
-            console.log('hi');
-          },
-        },
-        {
-          richText: '',
-          name: 'email-address',
-          label: 'Email Address',
-          fieldType: 'text',
-          description: 'please enter your ekail address',
-          defaultValue: '',
-          placeholder: '',
-          required: true,
-          enabled: true,
-          hidden: false,
-          labelHidden: false,
-          showWarnings: true,
-          valid: true,
-          onChange: () => {
-            console.log('hi');
-          },
-        },
-      ],
-      formConsent: {
-        consentMessage:
-          'Once you are signed up to our marketing communications, you can unsubscribe and update your preferences at any time. We’ll share our news, blogs, and invitations to our events and webinars. View our Privacy Policy to find out more about how we take care of your personal data.',
-        checkboxes: [
-          {
-            label: 'Yes, please sign me up.',
-            required: true,
-          },
-        ],
-      },
-      pageTitle: 'this-page',
-    }}
+    hubspotForm={hubspotForm}
   />
 );
 
