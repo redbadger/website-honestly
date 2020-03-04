@@ -32,7 +32,7 @@
   height: 27px;
   line-height: 27px;
   text-align: center;
-  background: #ffed2e;
+  background: cainYellow;
 }
 
 .contentText {
@@ -75,7 +75,7 @@
 
 h2 {
   font-family: 'ProximaNova-Bold', sans-serif;
-  color: #ffed2e;
+  color: cainYellow;
   font-size: 25px;
   margin-bottom: 15px;
 }
@@ -234,6 +234,7 @@ h2 {
   background: badgerWhite;
   border-radius: 50%;
   position: relative;
+  float: left;
 }
 
 .sallyIcon svg {
@@ -248,6 +249,7 @@ h2 {
   cursor: pointer;
   outline: none;
   border: none;
+  width: 100%;
 }
 
 .poweredBy h3 {
@@ -256,4 +258,6 @@ h2 {
   width: 100%;
   text-align: center;
   font-size: 16px;
+  height: 65px;
+  line-height: 65px;
 }
