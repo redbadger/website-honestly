@@ -18,7 +18,7 @@ import type { HubspotFormProps } from '../../components/hubspot/form';
 //   metaImage,
 // };
 
-const MBPPage = ({ hubspotForm }: HubspotFormProps) => (
+const MBPPage = ({ hubspotForm }: { hubspotForm: HubspotFormProps }) => (
   <MBPLP
     title="Mission Beyond"
     slug="mission-beyond"
