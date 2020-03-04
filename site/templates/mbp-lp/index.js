@@ -10,9 +10,8 @@ import Consultant from './consultant';
 import type { ConsultantProps } from './consultant';
 import HubspotForm from '../../components/hubspot/form/index';
 import type { HubspotFormProps } from '../../components/hubspot/form/index';
-// import Link from '../../components/link';
 
-// import Picture from '../../components/picture';
+import Footer from './footer';
 
 export type MBPLPProps = {
   title: string,
@@ -52,13 +51,19 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
               <span>Product</span>
             </div>
           </div>
-          <div className={styles.contentText}>
+          <div className={styles.contentHeaderText}>
             <h2>What’s this all about?</h2>
             <p>
               Mission Beyond Product is a coalition of advanced leaders with diverse minds willing
               to step outside of their own organisations to work together on the world’s biggest
               challenges.
             </p>
+
+            <a href="#mbp-form" className={styles.headerAnchor}>
+              <span>RSVP</span>
+            </a>
+          </div>
+          <div className={styles.contentText}>
             <p>
               The grand challenges the world faces today, from climate change to the ageing
               population, can be tackled with a mission-based approach, changing the world one smart
@@ -146,6 +151,7 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -42,6 +42,14 @@
   margin-bottom: 60px;
 }
 
+.contentHeaderText {
+  width: 100%;
+  color: cainYellow;
+  font-size: 22px;
+  line-height: 1.4em;
+  margin-bottom: 60px;
+}
+
 .inlineLink {
   font-family: 'ProximaNova-Bold', sans-serif;
   text-decoration: underline;
@@ -52,7 +60,8 @@
   color: cainYellow;
 }
 
-.contentText strong {
+.contentText strong,
+.contentHeaderText strong {
   font-family: 'ProximaNova-Bold', sans-serif;
 }
 
@@ -121,6 +130,40 @@ h2 {
   text-align: center;
 }
 
+.headerAnchor span {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  color: badgerWhite;
+  text-align: center;
+  line-height: 40px;
+  background: linear-gradient(220deg, transparent 6%, #363636 7%);
+  height: 36px;
+  width: 146px;
+  outline: none;
+  z-index: 2;
+  top: 2px;
+  left: 2px;
+}
+
+.headerAnchor {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  margin-top: 30px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  color: badgerWhite;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  background: linear-gradient(220deg, transparent 6%, cainYellow 7%);
+  height: 40px;
+  width: 150px;
+  outline: none;
+  z-index: 0;
+}
+
 .MBPLPForm input[type='submit'] {
   cursor: pointer;
   position: relative;
@@ -186,4 +229,55 @@ h2 {
 
 .MBPLPConsultantLink:hover {
   border-bottom: 2px solid badgerRedOnBlack;
+}
+
+.footer {
+  font-family: 'ProximaNova-Light', sans-serif;
+  padding: 30px 34px 50px;
+  background: #363636;
+  color: badgerWhite;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+
+.footerText {
+  margin-bottom: 38px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid badgerWhite;
+}
+
+.footerText:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sallyIcon {
+  margin: 0 auto 20px;
+  height: 65px;
+  width: 65px;
+  background: badgerWhite;
+  border-radius: 50%;
+  position: relative;
+}
+
+.sallyIcon svg {
+  height: 45px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-44%, -50%);
+}
+
+.poweredBy {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.poweredBy h3 {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  color: cainYellow;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
 }
