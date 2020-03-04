@@ -24,6 +24,9 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
+/* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": false}] */
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+
 Cypress.Commands.overwrite('visit', (originalFn, url, options) => {
   // eslint-disable-next-line no-param-reassign
   const opts = Object.assign({}, (options = {}), {
@@ -38,3 +41,5 @@ Cypress.Commands.overwrite('visit', (originalFn, url, options) => {
   });
   return originalFn(url, opts);
 });
+
+addMatchImageSnapshotCommand();
