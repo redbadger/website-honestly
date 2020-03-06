@@ -1,4 +1,4 @@
-import { acceptCookiePolicy } from './utils';
+import { acceptCookiePolicy } from '../shared-utils/utils';
 
 describe('The Red Badger Events page', () => {
   beforeEach(() => {

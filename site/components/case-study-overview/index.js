@@ -115,7 +115,7 @@ const CaseStudyOverview = () => {
         </div>
         <CaseStudyCompanyLogos />
         <div className={styles.buttonContainer}>
-          <Link to="ourWorkPage" className={styles.button}>
+          <Link to="ourWorkPage" className={styles.button} data-cy="ourWorkButton">
             See more of our work
           </Link>
         </div>

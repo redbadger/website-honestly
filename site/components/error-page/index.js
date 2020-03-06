@@ -30,7 +30,7 @@ export default function ErrorPage({ title, content, linkText, linkHref }: ErrorP
         <h1 className={styles.header}>{title}</h1>
         <p className={styles.content}>
           <img alt="confused badger" className={styles.badger} src={confusedBadger} />
-          <span className={styles.copy}>{content}</span>
+          <span className={styles.copy} data-cy="error-text">{content}</span>
           {renderButton(linkHref, linkText)}
           <span className={styles.clear} />
         </p>

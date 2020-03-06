@@ -1,8 +1,8 @@
-import { acceptCookiePolicy } from './utils';
+import { acceptCookiePolicy } from '../shared-utils/utils';
 
 describe('The Red Badger Homepage', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8080');
+    cy.visit('/');
   });
 
   it('displays the correct header slogan', () => {
@@ -18,7 +18,7 @@ describe('The Red Badger Homepage', () => {
   });
 
   it('contains the Red Badger logo', () => {
-    cy.get('.style__logo___XLpSf').should('be.visible');
+    cy.get('[data-cy="redBadgerLogo"]').should('be.visible');
   });
 
   it('contains all slices', () => {
@@ -80,6 +80,12 @@ describe('The Red Badger Homepage', () => {
       .and('be.visible');
   });
 
+  it('contains a sharethyme logo', () => {
+    cy.get('.style__shareThymeLogo___2Dvhz')
+      .should('exist')
+      .and('be.visible');
+  });
+
   it('contains a link to sign-up for badger news', () => {
     cy.get('[data-cy=email-signup')
       .should('have.prop', 'href')
@@ -91,4 +97,9 @@ describe('The Red Badger Homepage', () => {
       .should('have.prop', 'href')
       .and('contain', 'mailto:hello@red-badger.com');
   });
+
+  // it('contains a link to our case studies', () => {
+  //   cy.get('[data-cy=ourWorkButton]')
+  //   .should('have.attr', 'href').and('include', 'contact')
+  // });
 });
