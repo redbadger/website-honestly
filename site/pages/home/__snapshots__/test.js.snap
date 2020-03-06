@@ -371,6 +371,7 @@ Array [
       >
         <a
           class="button"
+          data-cy="ourWorkButton"
           href="/our-work/"
         >
           See more of our work
