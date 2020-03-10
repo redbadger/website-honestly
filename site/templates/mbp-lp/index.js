@@ -11,6 +11,8 @@ import type { ConsultantProps } from './consultant';
 import HubspotForm from '../../components/hubspot/form/index';
 import type { HubspotFormProps } from '../../components/hubspot/form/index';
 
+import TriangleGraphic from './assets/triangle-graphic';
+
 import Footer from './footer';
 
 export type MBPLPProps = {
@@ -31,6 +33,7 @@ const renderConsultants = (consultants: Array<ConsultantProps>) => {
 };
 
 const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPProps) => {
+  const formLegalConsentId = 'form-legal-consent';
   return (
     <div>
       {/* <Social
@@ -52,7 +55,7 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
             </div>
           </div>
           <div className={styles.contentHeaderText}>
-            <h2>What’s this all about?</h2>
+            <h3>What’s this all about?</h3>
             <p>
               Mission Beyond Product is a coalition of advanced leaders with diverse minds willing
               to step outside of their own organisations to work together on the world’s biggest
@@ -63,7 +66,10 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
               RSVP
             </a>
           </div>
-          <div className={styles.contentText}>
+          <div className={styles.triangleContainer}>
+            <TriangleGraphic />
+          </div>
+          <div className={`${styles.contentText} ${styles.contentTextLarge}`}>
             <p>
               The grand challenges the world faces today, from climate change to the ageing
               population, can be tackled with a mission-based approach, changing the world one smart
@@ -77,7 +83,32 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
               <strong>Get involved.</strong>
             </p>
           </div>
-          <div className={styles.contentText}>
+
+          <div id="mbp-form" className={`${styles.MBPLPForm} ${styles.MBPLPFormLargeScreen}`}>
+            <div>
+              {hubspotForm && (
+                <HubspotForm
+                  portalId={hubspotForm.portalId}
+                  guid={hubspotForm.guid}
+                  name={hubspotForm.name}
+                  cssClass={
+                    hubspotForm.cssClass
+                      ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
+                      : styles.goldCoinForm
+                  }
+                  consentCssClass={styles.MBPLPFormConsent}
+                  submitText={hubspotForm.submitText}
+                  inlineMessage={hubspotForm.inlineMessage}
+                  formFields={hubspotForm.formFields}
+                  formConsent={hubspotForm.formConsent}
+                  pageTitle={title}
+                  consentId={formLegalConsentId}
+                />
+              )}
+            </div>
+          </div>
+
+          <div className={`${styles.contentText} ${styles.contentTextColumn}`}>
             <h2>Event Details</h2>
             <p>
               <strong>Date:</strong> {date}
@@ -90,7 +121,7 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
             </p>
           </div>
           <div className={styles.MBPLPContentContainer}>
-            <div className={styles.MBPLPForm}>
+            <div id="mbp-form" className={`${styles.MBPLPForm} ${styles.MBPLPFormSmallScreen}`}>
               <div>
                 {hubspotForm && (
                   <HubspotForm
@@ -108,12 +139,13 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
                     formFields={hubspotForm.formFields}
                     formConsent={hubspotForm.formConsent}
                     pageTitle={title}
+                    consentId={formLegalConsentId + '-1'}
                   />
                 )}
               </div>
             </div>
           </div>
-          <div className={styles.contentText}>
+          <div className={`${styles.contentText} ${styles.contentTextColumn}`}>
             <h2>Agenda</h2>
             <p>
               <strong>8:30am:</strong> Breakfast served{' '}
@@ -139,9 +171,9 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
           </div>
           <div className={styles.contentText}>
             <h2>Speakers</h2>
-            {renderConsultants(consultants)}
+            <div className={styles.contentSpeakers}>{renderConsultants(consultants)}</div>
           </div>
-          <div className={styles.contentText}>
+          <div className={`${styles.contentText} ${styles.contentTextAOC}`}>
             <h2>Any other questions?</h2>
             If you have any queries or dietary requirements that we should be aware of, get in touch
             with us{' '}

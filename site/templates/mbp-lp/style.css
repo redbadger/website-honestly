@@ -1,4 +1,5 @@
 @value scorpian, badgerBlack, badgerWhite, cainYellow from "../../css/_colors.css";
+@value largeScreen, mediumScreen from "../../css/_sizes.css";
 
 .MBPLP {
   font-family: 'ProximaNova-light', sans-serif;
@@ -35,8 +36,11 @@
   background: cainYellow;
 }
 
-.contentText {
+.contentTextColumn {
   width: 100%;
+}
+
+.contentText {
   font-size: 18px;
   line-height: 1.4em;
   margin-bottom: 60px;
@@ -73,11 +77,20 @@
   margin-bottom: 0;
 }
 
-h2 {
+h2,
+h3 {
   font-family: 'ProximaNova-Bold', sans-serif;
   color: cainYellow;
   font-size: 25px;
   margin-bottom: 15px;
+}
+
+.MBPLPFormSmallScreen {
+  display: block;
+}
+
+.MBPLPFormLargeScreen {
+  display: none;
 }
 
 .MBPLPForm {
@@ -255,9 +268,110 @@ h2 {
 .poweredBy h3 {
   font-family: 'ProximaNova-Bold', sans-serif;
   color: cainYellow;
-  width: 100%;
+  width: 270px;
   text-align: center;
   font-size: 16px;
   height: 65px;
   line-height: 65px;
+}
+
+.triangleContainer {
+  display: none;
+}
+
+@media mediumScreen {
+  .headerLogo {
+    width: 180px;
+    font-size: 32px;
+    margin-left: -60px;
+  }
+
+  .headerLogo span:nth-child(2) {
+    margin: -13px 0 -13px 40px;
+  }
+
+  .headerLogo span {
+    display: block;
+    width: 140px;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .mainContent {
+    padding: 50px 110px;
+  }
+
+  .header {
+    margin-bottom: 58px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  .contentHeaderText {
+    font-size: 35px;
+    line-height: 1.2em;
+  }
+
+  .contentTextColumn {
+    width: 50%;
+  }
+
+  .contentText {
+    font-size: 18px;
+    line-height: 1.4em;
+    margin-bottom: 80px;
+  }
+
+  .contentTextLarge {
+    font-size: 22px;
+    margin-bottom: 120px;
+  }
+
+  .triangleContainer {
+    display: block;
+  }
+
+  .triangleContainer svg {
+    width: calc(50% + 30px);
+    float: right;
+    max-height: 360px;
+    margin-right: -40px;
+  }
+
+  .contentText p {
+    margin-bottom: 10px;
+  }
+
+  .MBPLPFormSmallScreen {
+    display: none;
+  }
+
+  .MBPLPFormLargeScreen {
+    display: block;
+  }
+
+  .MBPLPForm {
+    width: 50%;
+    float: right;
+    padding-left: 24px;
+  }
+
+  .contentSpeakers {
+    display: flex;
+  }
+
+  .MBPLPConsultant {
+    width: 200px;
+  }
+
+  .contentTextAOC {
+    width: 60%;
+  }
 }
