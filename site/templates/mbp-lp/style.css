@@ -1,5 +1,13 @@
 @value scorpian, badgerBlack, badgerWhite, cainYellow from "../../css/_colors.css";
-@value largeScreen, mediumScreen from "../../css/_sizes.css";
+@value largeScreen, mediumScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
+
+.displaySmall {
+  display: block;
+}
+
+.displayLarge {
+  display: none;
+}
 
 .MBPLP {
   font-family: 'ProximaNova-light', sans-serif;
@@ -9,6 +17,7 @@
 
 .mainContent {
   padding: 30px 34px;
+  margin: auto;
 }
 
 .header {
@@ -83,14 +92,6 @@ h3 {
   color: cainYellow;
   font-size: 25px;
   margin-bottom: 15px;
-}
-
-.MBPLPFormSmallScreen {
-  display: block;
-}
-
-.MBPLPFormLargeScreen {
-  display: none;
 }
 
 .MBPLPForm {
@@ -183,7 +184,7 @@ h3 {
   font-size: 18px;
   width: 120px;
   white-space: nowrap;
-  margin-right: 50px;
+  padding-right: 50px;
   color: badgerWhite;
   margin-bottom: 20px;
 }
@@ -231,8 +232,6 @@ h3 {
 
 .footerText {
   margin-bottom: 38px;
-  padding-bottom: 38px;
-  border-bottom: 1px solid badgerWhite;
 }
 
 .footerText:last-child {
@@ -280,6 +279,26 @@ h3 {
 }
 
 @media mediumScreen {
+  .displaySmall {
+    display: none;
+  }
+
+  .displayLarge {
+    display: block;
+  }
+
+  .columnContainer {
+    display: flex;
+  }
+
+  .narrowContent {
+    max-width: contentMaxWidth;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
   .headerLogo {
     width: 180px;
     font-size: 32px;
@@ -314,6 +333,10 @@ h3 {
     margin-bottom: 2px;
   }
 
+  .MBPLPConsultant {
+    white-space: normal;
+  }
+
   .contentHeaderText {
     font-size: 35px;
     line-height: 1.2em;
@@ -332,6 +355,7 @@ h3 {
   .contentTextLarge {
     font-size: 22px;
     margin-bottom: 120px;
+    width: 50%;
   }
 
   .triangleContainer {
@@ -349,14 +373,6 @@ h3 {
     margin-bottom: 10px;
   }
 
-  .MBPLPFormSmallScreen {
-    display: none;
-  }
-
-  .MBPLPFormLargeScreen {
-    display: block;
-  }
-
   .MBPLPForm {
     width: 50%;
     float: right;
@@ -368,10 +384,46 @@ h3 {
   }
 
   .MBPLPConsultant {
-    width: 200px;
+    max-width: 200px;
+    width: 33.33%;
   }
 
   .contentTextAOC {
     width: 60%;
+  }
+}
+
+@media largeScreen {
+  .narrowContent {
+    padding: 0 80px;
+  }
+
+  .mainContent {
+    max-width: 1200px;
+    padding: 50px 70px;
+    position: relative;
+  }
+
+  .triangleContainer svg {
+    width: calc(50% + 60px);
+    max-height: 510px;
+    margin-right: -40px;
+    margin-top: -130px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .headerLogo {
+    margin-left: 0;
+  }
+
+  .contentTextLarge {
+    margin-bottom: 140px;
+  }
+
+  .contentTextColumn {
+    padding-right: 40px;
   }
 }

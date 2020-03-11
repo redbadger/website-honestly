@@ -32,8 +32,33 @@ const renderConsultants = (consultants: Array<ConsultantProps>) => {
   });
 };
 
+const Agenda = ({ className }: { className: string }) => (
+  <div className={`${styles.contentText} ${className}`}>
+    <h2>Agenda</h2>
+    <p>
+      <strong>8:30am:</strong> Breakfast served{' '}
+    </p>
+    <p>
+      <strong>9:00am:</strong> Welcome and what’s Mission Beyond Product about - Cain Ullah, CEO of
+      Red Badger
+    </p>
+    <p>
+      <strong>9:10am:</strong> Think Outside the Building: How Advanced Leaders Can Change the World
+      One Smart Innovation at a Time - Rosabeth Moss Kanter, Harvard Business School
+    </p>
+    <p>
+      <strong>9:40am:</strong> How to tackle food waste? - Lindsay Boswell, CEO FareShare
+    </p>
+    <p>
+      <strong>10:00am:</strong> Words into action: Mission X - Cain Ullah, CEO of Red Badger
+    </p>
+    <p>
+      <strong>10:30am:</strong> Close
+    </p>
+  </div>
+);
+
 const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPProps) => {
-  const formLegalConsentId = 'form-legal-consent';
   return (
     <div>
       {/* <Social
@@ -54,7 +79,7 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
               <span>Product</span>
             </div>
           </div>
-          <div className={styles.contentHeaderText}>
+          <div className={`${styles.contentHeaderText} ${styles.narrowContent}`}>
             <h3>What’s this all about?</h3>
             <p>
               Mission Beyond Product is a coalition of advanced leaders with diverse minds willing
@@ -83,45 +108,25 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
               <strong>Get involved.</strong>
             </p>
           </div>
+          <div className={`${styles.columnContainer} ${styles.narrowContent}`}>
+            <div className={styles.contentTextColumn}>
+              <div className={styles.contentText}>
+                <h2>Event Details</h2>
+                <p>
+                  <strong>Date:</strong> {date}
+                </p>
+                <p>
+                  <strong>Time:</strong> {time}
+                </p>
+                <p>
+                  <strong>location:</strong> {location}
+                </p>
+              </div>
 
-          <div id="mbp-form" className={`${styles.MBPLPForm} ${styles.MBPLPFormLargeScreen}`}>
-            <div>
-              {hubspotForm && (
-                <HubspotForm
-                  portalId={hubspotForm.portalId}
-                  guid={hubspotForm.guid}
-                  name={hubspotForm.name}
-                  cssClass={
-                    hubspotForm.cssClass
-                      ? `${hubspotForm.cssClass} ${styles.goldCoinForm}`
-                      : styles.goldCoinForm
-                  }
-                  consentCssClass={styles.MBPLPFormConsent}
-                  submitText={hubspotForm.submitText}
-                  inlineMessage={hubspotForm.inlineMessage}
-                  formFields={hubspotForm.formFields}
-                  formConsent={hubspotForm.formConsent}
-                  pageTitle={title}
-                  consentId={formLegalConsentId}
-                />
-              )}
+              <Agenda className={styles.displayLarge} />
             </div>
-          </div>
 
-          <div className={`${styles.contentText} ${styles.contentTextColumn}`}>
-            <h2>Event Details</h2>
-            <p>
-              <strong>Date:</strong> {date}
-            </p>
-            <p>
-              <strong>Time:</strong> {time}
-            </p>
-            <p>
-              <strong>location:</strong> {location}
-            </p>
-          </div>
-          <div className={styles.MBPLPContentContainer}>
-            <div id="mbp-form" className={`${styles.MBPLPForm} ${styles.MBPLPFormSmallScreen}`}>
+            <div id="mbp-form" className={styles.MBPLPForm}>
               <div>
                 {hubspotForm && (
                   <HubspotForm
@@ -139,47 +144,26 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
                     formFields={hubspotForm.formFields}
                     formConsent={hubspotForm.formConsent}
                     pageTitle={title}
-                    consentId={formLegalConsentId + '-1'}
                   />
                 )}
               </div>
             </div>
+
+            <Agenda className={styles.displaySmall} />
           </div>
-          <div className={`${styles.contentText} ${styles.contentTextColumn}`}>
-            <h2>Agenda</h2>
-            <p>
-              <strong>8:30am:</strong> Breakfast served{' '}
-            </p>
-            <p>
-              <strong>9:00am:</strong> Welcome and what’s Mission Beyond Product about - Cain Ullah,
-              CEO of Red Badger
-            </p>
-            <p>
-              <strong>9:10am:</strong> Think Outside the Building: How Advanced Leaders Can Change
-              the World One Smart Innovation at a Time - Rosabeth Moss Kanter, Harvard Business
-              School
-            </p>
-            <p>
-              <strong>9:40am:</strong> How to tackle food waste? - Lindsay Boswell, CEO FareShare
-            </p>
-            <p>
-              <strong>10:00am:</strong> Words into action: Mission X - Cain Ullah, CEO of Red Badger
-            </p>
-            <p>
-              <strong>10:30am:</strong> Close
-            </p>
-          </div>
-          <div className={styles.contentText}>
-            <h2>Speakers</h2>
-            <div className={styles.contentSpeakers}>{renderConsultants(consultants)}</div>
-          </div>
-          <div className={`${styles.contentText} ${styles.contentTextAOC}`}>
-            <h2>Any other questions?</h2>
-            If you have any queries or dietary requirements that we should be aware of, get in touch
-            with us{' '}
-            <a className={styles.inlineLink} href="https://www.red-badger.com">
-              here
-            </a>
+          <div className={styles.narrowContent}>
+            <div className={styles.contentText}>
+              <h2>Speakers</h2>
+              <div className={styles.contentSpeakers}>{renderConsultants(consultants)}</div>
+            </div>
+            <div className={`${styles.contentText} ${styles.contentTextAOC}`}>
+              <h2>Any other questions?</h2>
+              If you have any queries or dietary requirements that we should be aware of, get in
+              touch with us{' '}
+              <a className={styles.inlineLink} href="https://www.red-badger.com">
+                here
+              </a>
+            </div>
           </div>
         </div>
       </div>

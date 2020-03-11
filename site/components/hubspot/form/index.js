@@ -26,7 +26,7 @@ export type HubspotFormProps = {
     checkboxes: Array<{ label: string, required: boolean }>,
   },
   pageTitle: string,
-  consentId?: string,
+  uniqueFormId?: string, // Used when multiple forms exist on one page
 };
 
 type HubspotFormState = {
@@ -175,10 +175,10 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
   }
 
   checkConsented() {
-    const { consentId } = this.props;
+    const { uniqueFormId } = this.props;
     if (document) {
       const checkboxes = Array.from(
-        document.querySelectorAll(consentId ? `#${consentId}` : '#form-legal-consent'),
+        document.querySelectorAll(uniqueFormId ? `#${uniqueFormId}` : '#form-legal-consent'),
       ).filter((check: any) => check.required);
       const isDisabled = checkboxes.some((check: any) => !check.checked);
       this.setState({ isDisabled });
@@ -196,7 +196,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
       inlineMessage,
       formFields,
       formConsent,
-      consentId,
+      uniqueFormId,
     } = this.props;
     const { showWarnings, submitted, fieldData, isDisabled } = this.state;
     // html strings are provided by our CMS and sanitized in badger brain
@@ -240,11 +240,11 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
               <div className={consentCssClass}>
                 {formConsent.checkboxes.map(checkbox => {
                   return (
-                    <label key={consentId || 'form-legal-consent'}>
+                    <label key={uniqueFormId || 'form-legal-consent'}>
                       <span>{checkbox.label}</span>
                       <input
                         type="checkbox"
-                        id={consentId || 'form-legal-consent'}
+                        id={uniqueFormId || 'form-legal-consent'}
                         required={checkbox.required}
                         onChange={this.checkConsented}
                       />
