@@ -21,6 +21,7 @@ export type MBPLPProps = {
   slug: string,
   time: string,
   date: string,
+  place: string,
   location: string,
   consultants: Array<ConsultantProps>,
   formId: string,
