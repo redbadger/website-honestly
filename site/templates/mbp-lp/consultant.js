@@ -6,15 +6,15 @@ import styles from './style.css';
 export type ConsultantProps = {
   image: string,
   name: string,
-  role: string,
+  description: string,
   profileUrl: string,
 };
 
-const Consultant = ({ image, name, role, profileUrl }: ConsultantProps) => (
+const Consultant = ({ image, name, description, profileUrl }: ConsultantProps) => (
   <a className={styles.MBPLPConsultant} href={profileUrl}>
     <img src={image} alt={`${name} headshot`} />
     <div className={styles.MBPLPConsultantLink}>{name}</div>
-    <p className={styles.MBPLPConsultantRole}>{role}</p>
+    <p className={styles.MBPLPConsultantRole}>{description}</p>
   </a>
 );
 

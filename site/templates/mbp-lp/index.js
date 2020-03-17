@@ -12,6 +12,7 @@ import HubspotForm from '../../components/hubspot/form/index';
 import type { HubspotFormProps } from '../../components/hubspot/form/index';
 
 import TriangleGraphic from './assets/triangle-graphic';
+import MBPLogo from './assets/mbp-logo';
 
 import Footer from './footer';
 
@@ -27,8 +28,16 @@ export type MBPLPProps = {
 };
 
 const renderConsultants = (consultants: Array<ConsultantProps>) => {
-  return consultants.map(({ image, name, role, profileUrl }: ConsultantProps) => {
-    return <Consultant key={name} image={image} name={name} role={role} profileUrl={profileUrl} />;
+  return consultants.map(({ image, name, description, profileUrl }: ConsultantProps) => {
+    return (
+      <Consultant
+        key={name}
+        image={image}
+        name={name}
+        description={description}
+        profileUrl={profileUrl}
+      />
+    );
   });
 };
 
@@ -39,18 +48,10 @@ const Agenda = ({ className }: { className: string }) => (
       <strong>8:30am:</strong> Breakfast served{' '}
     </p>
     <p>
-      <strong>9:00am:</strong> Welcome and what’s Mission Beyond Product about - Cain Ullah, CEO of
-      Red Badger
+      <strong>9:00am:</strong> Welcome from Cain Ullah, CEO of Red Badger
     </p>
     <p>
-      <strong>9:10am:</strong> Think Outside the Building: How Advanced Leaders Can Change the World
-      One Smart Innovation at a Time - Rosabeth Moss Kanter, Harvard Business School
-    </p>
-    <p>
-      <strong>9:40am:</strong> How to tackle food waste? - Lindsay Boswell, CEO FareShare
-    </p>
-    <p>
-      <strong>10:00am:</strong> Words into action: Mission X - Cain Ullah, CEO of Red Badger
+      <strong>9:20am:</strong> Power of diverse thinking by Matthew Syed, author of Rebel Ideas
     </p>
     <p>
       <strong>10:30am:</strong> Close
@@ -58,7 +59,7 @@ const Agenda = ({ className }: { className: string }) => (
   </div>
 );
 
-const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPProps) => {
+const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }: MBPLPProps) => {
   return (
     <div>
       {/* <Social
@@ -74,17 +75,15 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
         <div className={styles.mainContent}>
           <div className={styles.header}>
             <div className={styles.headerLogo}>
-              <span>Mission</span>
-              <span>Beyond</span>
-              <span>Product</span>
+              <MBPLogo />
             </div>
           </div>
           <div className={`${styles.contentHeaderText} ${styles.narrowContent}`}>
-            <h3>What’s this all about?</h3>
+            <h3>What?</h3>
             <p>
-              Mission Beyond Product is a coalition of advanced leaders with diverse minds willing
-              to step outside of their own organisations to work together on the world’s biggest
-              challenges.
+              Mission Beyond Product is a coalition of action-taking business leaders ready to step
+              beyond the walls of their own organisations. Together, we’ll tackle the world’s
+              biggest challenges by creating bold new ideas and transforming words into action.
             </p>
 
             <a href="#mbp-form" className={styles.headerAnchor}>
@@ -96,16 +95,11 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
           </div>
           <div className={`${styles.contentText} ${styles.contentTextLarge}`}>
             <p>
-              The grand challenges the world faces today, from climate change to the ageing
-              population, can be tackled with a mission-based approach, changing the world one smart
-              innovation at a time.
-            </p>
-            <p>
-              We believe the best way to unlock human creativity and potential is through groups of
-              diverse thinkers collaborating. Mission Beyond Product brings cross-sector coalitions
-              to turn ideas into actions.
-              <br />
-              <strong>Get involved.</strong>
+              Join us at the first event with <strong>Matthew Syed</strong>, a bestselling author
+              and <strong>Cain Ullah</strong>, CEO of Red Badger for a breakfast masterclass in
+              creative problem-solving for the future. As part of the event, we will demo
+              ShareThyme, a platform that connects generations through cooking, and invite you to be
+              part of our next mission.
             </p>
           </div>
           <div className={`${styles.columnContainer} ${styles.narrowContent}`}>
@@ -114,12 +108,15 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
                 <h2>Event Details</h2>
                 <p>
                   <strong>Date:</strong> {date}
-                </p>
-                <p>
+                  <br />
                   <strong>Time:</strong> {time}
+                  <br />
+                  <strong>Place:</strong> {place}
+                  <br />
+                  <strong>location:</strong> {location}
                 </p>
                 <p>
-                  <strong>location:</strong> {location}
+                  <strong>Invitation only.</strong>
                 </p>
               </div>
 
@@ -158,10 +155,10 @@ const MBPLP = ({ title, time, date, location, consultants, hubspotForm }: MBPLPP
             </div>
             <div className={`${styles.contentText} ${styles.contentTextAOC}`}>
               <h2>Any other questions?</h2>
-              If you have any queries or dietary requirements that we should be aware of, get in
-              touch with us{' '}
+              If you have any queries or dietary/access requirements that we should be aware of, get
+              in touch with us{' '}
               <a className={styles.inlineLink} href="https://www.red-badger.com">
-                here
+                here.
               </a>
             </div>
           </div>
