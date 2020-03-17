@@ -152,7 +152,7 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
           </div>
           <div className={styles.narrowContent}>
             <div className={styles.contentText}>
-              <h2>Speakers</h2>
+              <h2 className={styles.speakers}>Speakers</h2>
               <div className={styles.contentSpeakers}>{renderConsultants(consultants)}</div>
             </div>
             <div className={`${styles.contentText} ${styles.contentTextAOC}`}>
