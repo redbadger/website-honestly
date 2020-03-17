@@ -447,6 +447,10 @@ h3 {
     top: 50%;
     transform: perspective(1px) translateY(-50%);
   }
+
+  .speakers {
+    margin-bottom: 40px;
+  }
 }
 
 @media largeScreen {
@@ -485,9 +489,5 @@ h3 {
 
   .MBPLPConsultant:nth-child(2) img {
     margin-right: -80px;
-  }
-
-  .speakers {
-    margin-bottom: 40px;
   }
 }
