@@ -12,10 +12,10 @@ const Footer = () => (
             View our <a href="https://red-badger.com/privacy-policy/">Privacy Policy</a> to find out
             more about how we take care of your personal data.
           </p>
-          <p>Copyright © Red Badger Consulting Limited 2020</p>
+          <p>Copyright © Red Badger Consulting Limited 2020.</p>
         </div>
         <div className={styles.footerText}>
-          <p>4th Floor, 2 Old Street Yard, London. EC1Y 8AF</p>
+          <p>4th Floor, 2 Old Street Yard, London, EC1Y 8AF</p>
           <p>
             <a href="mailto:hello@red-badger.com">hello@red-badger.com</a>
           </p>

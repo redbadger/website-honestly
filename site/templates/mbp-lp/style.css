@@ -1,4 +1,4 @@
-@value scorpian, badgerBlack, badgerWhite, cainYellow from "../../css/_colors.css";
+@value badgerRedOnBlack, scorpian, badgerBlack, badgerWhite, cainYellow from "../../css/_colors.css";
 @value largeScreen, mediumScreen, contentMaxWidth, containerMaxWidth from "../../css/_sizes.css";
 
 .displaySmall {
@@ -100,6 +100,13 @@ h3 {
   margin-bottom: 60px;
 }
 
+.MBPLP figure {
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: badgerRedOnBlack;
+}
+
 .MBPLPForm label {
   display: block;
   margin-bottom: 10px;
@@ -195,13 +202,17 @@ h3 {
 }
 
 .MBPLPConsultant:hover .MBPLPConsultantLink {
-  border-bottom: 2px solid badgerRedOnBlack;
+  border-bottom: 2px solid cainYellow;
 }
 
-.MBPLPConsultant img {
+.MBPLPConsultantImgMobile {
   width: 100%;
   display: block;
   margin-bottom: 8px;
+}
+
+.MBPLPConsultantImg {
+  display: none;
 }
 
 .MBPLPConsultant:nth-child(1) img {
@@ -265,8 +276,8 @@ h3 {
 
 .sallyIcon {
   margin: 0 auto 20px;
-  height: 65px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
   background: badgerWhite;
   border-radius: 50%;
   position: relative;
@@ -274,7 +285,7 @@ h3 {
 }
 
 .sallyIcon svg {
-  height: 45px;
+  height: 40px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -291,11 +302,11 @@ h3 {
 .poweredBy h3 {
   font-family: 'ProximaNova-Bold', sans-serif;
   color: badgerWhite;
-  width: 270px;
+  width: 250px;
   text-align: center;
   font-size: 16px;
-  height: 65px;
-  line-height: 65px;
+  height: 55px;
+  line-height: 55px;
 }
 
 .triangleContainer {
@@ -326,7 +337,7 @@ h3 {
   .headerLogo {
     width: 180px;
     font-size: 32px;
-    margin-left: -60px;
+    margin-left: 0;
   }
 
   .headerLogo span:nth-child(2) {
@@ -341,7 +352,7 @@ h3 {
   }
 
   .mainContent {
-    padding: 50px 110px;
+    padding: 50px;
   }
 
   .header {
@@ -403,17 +414,42 @@ h3 {
     padding-left: 24px;
   }
 
-  .contentSpeakers {
+  .MBPLPConsultant {
+    width: 100%;
     display: flex;
+    margin-bottom: 30px;
   }
 
-  .MBPLPConsultant {
-    max-width: 200px;
-    width: 33.33%;
+  .MBPLPConsultantText {
+    width: calc(100% - 300px);
+  }
+
+  .MBPLPConsultantImg {
+    display: block;
+    width: auto;
+    height: 300px;
+  }
+
+  .MBPLPConsultantImgMobile {
+    display: none;
+  }
+
+  .MBPLPConsultant:nth-child(1) img {
+    float: left;
+  }
+
+  .MBPLPConsultant:nth-child(2) img {
+    float: right;
   }
 
   .contentTextAOC {
     width: 60%;
+  }
+
+  .MBPLPConsultantTextCenter {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
   }
 }
 
@@ -437,10 +473,6 @@ h3 {
 
   .header {
     width: 100%;
-  }
-
-  .headerLogo {
-    margin-left: 0;
   }
 
   .contentTextLarge {

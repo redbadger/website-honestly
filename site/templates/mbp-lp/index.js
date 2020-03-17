@@ -29,7 +29,7 @@ export type MBPLPProps = {
 };
 
 const renderConsultants = (consultants: Array<ConsultantProps>) => {
-  return consultants.map(({ image, name, description, profileUrl }: ConsultantProps) => {
+  return consultants.map(({ image, name, description, profileUrl, imgRight }: ConsultantProps) => {
     return (
       <Consultant
         key={name}
@@ -37,6 +37,7 @@ const renderConsultants = (consultants: Array<ConsultantProps>) => {
         name={name}
         description={description}
         profileUrl={profileUrl}
+        imgRight={imgRight}
       />
     );
   });
@@ -114,7 +115,7 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
                   <br />
                   <strong>Place:</strong> {place}
                   <br />
-                  <strong>location:</strong> {location}
+                  <strong>Location:</strong> {location}
                 </p>
                 <p>
                   <strong>Invitation only.</strong>
@@ -156,8 +157,8 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
             </div>
             <div className={`${styles.contentText} ${styles.contentTextAOC}`}>
               <h2>Any other questions?</h2>
-              If you have any queries or dietary/access requirements that we should be aware of, get
-              in touch with us{' '}
+              If you have any queries or dietary or access requirements that we should be aware of,
+              get in touch with us{' '}
               <a className={styles.inlineLink} href="https://www.red-badger.com">
                 here.
               </a>

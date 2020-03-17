@@ -8,13 +8,20 @@ export type ConsultantProps = {
   name: string,
   description: string,
   profileUrl: string,
+  imgRight: boolean,
 };
 
-const Consultant = ({ image, name, description, profileUrl }: ConsultantProps) => (
+const Consultant = ({ image, name, description, profileUrl, imgRight }: ConsultantProps) => (
   <a className={styles.MBPLPConsultant} href={profileUrl}>
-    <img src={image} alt={`${name} headshot`} />
-    <div className={styles.MBPLPConsultantLink}>{name}</div>
-    <p className={styles.MBPLPConsultantRole}>{description}</p>
+    <img className={styles.MBPLPConsultantImgMobile} src={image} alt={`${name} headshot`} />
+    {imgRight || <img className={styles.MBPLPConsultantImg} src={image} alt={`${name} headshot`} />}
+    <div className={styles.MBPLPConsultantText}>
+      <div className={styles.MBPLPConsultantTextCenter}>
+        <div className={styles.MBPLPConsultantLink}>{name}</div>
+        <p className={styles.MBPLPConsultantRole}>{description}</p>
+      </div>
+    </div>
+    {imgRight && <img className={styles.MBPLPConsultantImg} src={image} alt={`${name} headshot`} />}
   </a>
 );
 
