@@ -3,8 +3,8 @@ import React from 'react';
 import MBPLP from '../../templates/mbp-lp';
 
 // import Social from '../../components/social';
-import harriImage from './assets/harri.jpg';
-import chrisImage from './assets/chris.jpg';
+import cainImage from './assets/cain.jpg?min=400&max=1200&steps=3';
+import matthewImage from './assets/matthew.jpg?min=400&max=1200&steps=3';
 
 import type { HubspotFormProps } from '../../components/hubspot/form';
 
@@ -17,35 +17,37 @@ import type { HubspotFormProps } from '../../components/hubspot/form';
 //   metaImage,
 // };
 
-const MBPPage = ({ hubspotForm }: { hubspotForm: HubspotFormProps }) => (
-  <MBPLP
-    title="Mission Beyond"
-    slug="mission-beyond"
-    time="8:30am - 10:30am"
-    date="Wednesday,  May 6, 2020 "
-    place="The Conduit"
-    location="40 Conduit St, W1S 2YQ"
-    consultants={[
-      {
-        image: chrisImage,
-        name: 'Matthew Syed',
-        description:
-          'Matthew is a broadcaster and bestselling author. His latest book, Rebel Ideas, is a fascinating journey through the science of team performance, drawing on psychology, economics, anthropology and genetics, with lessons from a dazzling range of case studies. It will strengthen any company, institution, team, or individual, sharing the remarkable benefits of personalised nutrition, advice on how to break free of the echo chambers that surround us, and tips on how we can all develop an ‘outsider mindset’.',
-        profileUrl: 'this-person',
-        imgRight: false,
-      },
-      {
-        image: harriImage,
-        name: 'Cain Ullah',
-        description:
-          'Cain is CEO and co-founder of Red Badger, an independent digital product and innovation consultancy. Mission Beyond Product is born out of the belief the huge challenges the world faces today – from climate change to our ageing population – can be solved with a collaborative, mission-based approach. It’s a cross-sector coalition to turn ideas into action.',
-        profileUrl: 'this-person',
-        imgRight: true,
-      },
-    ]}
-    formId={hubspotForm.guid}
-    hubspotForm={hubspotForm}
-  />
-);
+const MBPPage = ({ hubspotForm }: { hubspotForm: HubspotFormProps }) => {
+  return (
+    <MBPLP
+      title="Mission Beyond"
+      slug="mission-beyond"
+      time="8:30am - 10:30am"
+      date="Wednesday,  May 6, 2020 "
+      place="The Conduit"
+      location="40 Conduit St, W1S 2YQ"
+      consultants={[
+        {
+          image: matthewImage,
+          name: 'Matthew Syed',
+          description:
+            'Matthew is a broadcaster and bestselling author. His latest book, Rebel Ideas, is a fascinating journey through the science of team performance, drawing on psychology, economics, anthropology and genetics, with lessons from a dazzling range of case studies. It will strengthen any company, institution, team, or individual, sharing the remarkable benefits of personalised nutrition, advice on how to break free of the echo chambers that surround us, and tips on how we can all develop an ‘outsider mindset’.',
+          profileUrl: 'https://www.goodreads.com/en/book/show/52326253',
+          imgRight: false,
+        },
+        {
+          image: cainImage,
+          name: 'Cain Ullah',
+          description:
+            'Cain is CEO and co-founder of Red Badger, an independent digital product and innovation consultancy. Mission Beyond Product is born out of the belief the huge challenges the world faces today – from climate change to our ageing population – can be solved with a collaborative, mission-based approach. It’s a cross-sector coalition to turn ideas into action.',
+          profileUrl: 'https://red-badger.com/people/cain-ullah/',
+          imgRight: true,
+        },
+      ]}
+      formId={hubspotForm.guid}
+      hubspotForm={hubspotForm}
+    />
+  );
+};
 
 export default MBPPage;

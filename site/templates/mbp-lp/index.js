@@ -159,7 +159,7 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
               <h2>Any other questions?</h2>
               If you have any queries or dietary or access requirements that we should be aware of,
               get in touch with us{' '}
-              <a className={styles.inlineLink} href="https://www.red-badger.com">
+              <a className={styles.inlineLink} href="mailto:hello@missionbeyond.co.uk">
                 here.
               </a>
             </div>

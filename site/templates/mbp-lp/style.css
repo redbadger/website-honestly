@@ -216,7 +216,7 @@ h3 {
 }
 
 .MBPLPConsultant:nth-child(1) img {
-  clip-path: polygon(28% 0, 86% 11%, 72% 100%, 9% 85%);
+  clip-path: polygon(15% 0, 89% 8%, 82% 100%, 0% 88%);
 }
 
 .MBPLPConsultant:nth-child(2) img {
@@ -297,6 +297,14 @@ h3 {
   outline: none;
   border: none;
   width: 100%;
+}
+
+.poweredBy:hover .sallyIcon {
+  background: cainYellow;
+}
+
+.poweredBy:hover h3 {
+  color: cainYellow;
 }
 
 .poweredBy h3 {
@@ -402,6 +410,7 @@ h3 {
     float: right;
     max-height: 360px;
     margin-right: -40px;
+    margin-top: -40px;
   }
 
   .contentText p {
@@ -466,9 +475,9 @@ h3 {
 
   .triangleContainer svg {
     width: calc(50% + 60px);
-    max-height: 510px;
+    max-height: 400px;
     margin-right: -40px;
-    margin-top: -130px;
+    margin-top: -100px;
   }
 
   .header {
