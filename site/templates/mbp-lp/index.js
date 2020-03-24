@@ -5,7 +5,7 @@
 import * as React from 'react';
 import styles from './style.css';
 
-// import Social from '../../components/social';
+import Social from '../../components/social';
 import Consultant from './consultant';
 import type { ConsultantProps } from './consultant';
 import HubspotForm from '../../components/hubspot/form/index';
@@ -13,6 +13,7 @@ import type { HubspotFormProps } from '../../components/hubspot/form/index';
 
 import TriangleGraphic from './assets/triangle-graphic';
 import MBPLogo from './assets/mbp-logo';
+import metaLogo from './assets/mbp-meta-logo.png';
 
 import Footer from './footer';
 
@@ -64,15 +65,15 @@ const Agenda = ({ className }: { className: string }) => (
 const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }: MBPLPProps) => {
   return (
     <div>
-      {/* <Social
-        title={'Experience Red Badger'}
+      <Social
+        title={'Mission Beyond Product'}
         description={
-          'Meet our tech and design experts to find out how we can deliver value, build capability, and change your culture to increase business efficiency.'
+          'Mission Beyond Product is an event series enabling collective cooperation, where thinkers and doers come together to tackle the world’s biggest challenges.'
         }
-        metaImage={headerImage.main}
-        altText={headerAlt}
-        url={`https://red-badger.com/what-we-do/experience-us/${slug}/`}
-      /> */}
+        metaImage={metaLogo}
+        altText="Mission Beyond Product Logo"
+        url="https://missionbeyond.co.uk"
+      />
       <div className={styles.MBPLP}>
         <div className={styles.mainContent}>
           <div className={styles.header}>
@@ -106,8 +107,8 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
           </div>
           <div className={`${styles.columnContainer} ${styles.narrowContent}`}>
             <div className={styles.contentTextColumn}>
-              <div className={styles.contentText}>
-                <h2>Event Details</h2>
+              <div id="mbp-form" className={styles.contentText}>
+                <h2>Event details</h2>
                 <p>
                   <strong>Date:</strong> {date}
                   <br />
@@ -125,7 +126,7 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
               <Agenda className={styles.displayLarge} />
             </div>
 
-            <div id="mbp-form" className={styles.MBPLPForm}>
+            <div className={styles.MBPLPForm}>
               <div>
                 {hubspotForm && (
                   <HubspotForm

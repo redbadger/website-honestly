@@ -255,6 +255,10 @@ h3 {
 }
 
 .footerText {
+  margin-bottom: 12px;
+}
+
+.footerText:last-child {
   margin-bottom: 38px;
 }
 
