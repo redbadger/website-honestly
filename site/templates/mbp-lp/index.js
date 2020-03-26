@@ -107,7 +107,8 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
           </div>
           <div className={`${styles.columnContainer} ${styles.narrowContent}`}>
             <div className={styles.contentTextColumn}>
-              <div id="mbp-form" className={styles.contentText}>
+              <div className={styles.contentText}>
+                <div id="mbp-form" className={styles.anchorCushion} />
                 <h2>Event details</h2>
                 <p>
                   <strong>Date:</strong> {date}

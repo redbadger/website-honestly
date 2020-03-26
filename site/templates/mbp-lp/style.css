@@ -53,6 +53,12 @@
   font-size: 18px;
   line-height: 1.4em;
   margin-bottom: 60px;
+  position: relative;
+}
+
+.anchorCushion {
+  position: absolute;
+  top: -20px;
 }
 
 .contentHeaderText {
