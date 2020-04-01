@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/templates/gold-coin-lp Renders 1`] = `
+<div>
+  <Social
+    altText="Mission Beyond Product Logo"
+    description="Mission Beyond Product is an event series enabling collective cooperation, where thinkers and doers come together to tackle the world’s biggest challenges."
+    metaImage="mbp-meta-logo.png"
+    title="Mission Beyond Product"
+    url="https://missionbeyond.co.uk"
+  />
+  <div
+    className="MBPLP"
+  >
+    <div
+      className="mainContent"
+    >
+      <div
+        className="header"
+      >
+        <div
+          className="headerLogo"
+        >
+          <MBPLogo />
+        </div>
+      </div>
+      <div
+        className="contentHeaderText narrowContent"
+      >
+        <h3>
+          What?
+        </h3>
+        <p>
+          Mission Beyond Product is a coalition of action-taking business leaders ready to step beyond the walls of their own organisations. Together, we’ll tackle the world’s biggest challenges by creating bold new ideas and transforming words into action.
+        </p>
+        <a
+          className="headerAnchor"
+          href="#mbp-form"
+        >
+          RSVP
+        </a>
+      </div>
+      <div
+        className="triangleContainer"
+      >
+        <TriangleGraphic />
+      </div>
+      <div
+        className="contentText contentTextLarge"
+      >
+        <p>
+          Join us at the first event with 
+          <strong>
+            Matthew Syed
+          </strong>
+          , a bestselling author and 
+          <strong>
+            Cain Ullah
+          </strong>
+          , CEO of Red Badger for a breakfast masterclass in creative problem-solving for the future. As part of the event, we will demo ShareThyme, a platform that connects generations through cooking, and invite you to be part of our next mission.
+        </p>
+      </div>
+      <div
+        className="columnContainer narrowContent"
+      >
+        <div
+          className="contentTextColumn"
+        >
+          <div
+            className="contentText"
+          >
+            <div
+              className="anchorCushion"
+              id="mbp-form"
+            />
+            <h2>
+              Event details
+            </h2>
+            <p>
+              <strong>
+                Date:
+              </strong>
+               
+              string
+              <br />
+              <strong>
+                Time:
+              </strong>
+               
+              string
+              <br />
+              <strong>
+                Place:
+              </strong>
+               
+              string
+              <br />
+              <strong>
+                Location:
+              </strong>
+               
+              string
+            </p>
+            <p>
+              <strong>
+                Invitation only.
+              </strong>
+            </p>
+          </div>
+          <Agenda
+            className="displayLarge"
+          />
+        </div>
+        <div
+          className="MBPLPForm"
+        >
+          <div>
+            <HubspotForm
+              consentCssClass="MBPLPFormConsent"
+              cssClass="test-css goldCoinForm"
+              formFields={
+                Array [
+                  Object {
+                    "enabled": true,
+                    "fieldType": "lunch",
+                    "hidden": false,
+                    "label": "test-label",
+                    "labelHidden": false,
+                    "name": "test-field-name",
+                    "required": true,
+                  },
+                ]
+              }
+              guid="test-guid"
+              inlineMessage="test-inline"
+              name="test-name"
+              pageTitle="test-title"
+              portalId={1111111}
+              submitText="test-submit"
+            />
+          </div>
+        </div>
+        <Agenda
+          className="displaySmall"
+        />
+      </div>
+      <div
+        className="narrowContent"
+      >
+        <div
+          className="contentText"
+        >
+          <h2
+            className="speakers"
+          >
+            Speakers
+          </h2>
+          <div
+            className="contentSpeakers"
+          >
+            <Consultant
+              image="https://www.example.com/test-3.jpg"
+              key="test-consultant"
+              name="test-consultant"
+              profileUrl="https://www.example.com/test-consultant"
+            />
+          </div>
+        </div>
+        <div
+          className="contentText contentTextAOC"
+        >
+          <h2>
+            Any other questions?
+          </h2>
+          If you have any queries or dietary or access requirements that we should be aware of, get in touch with us
+           
+          <a
+            className="inlineLink"
+            href="mailto:hello@missionbeyond.co.uk"
+          >
+            here.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <Footer />
+</div>
+`;

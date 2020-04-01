@@ -467,10 +467,12 @@ h3 {
 
   .MBPLPConsultant:nth-child(1) img {
     float: left;
+    margin-right: 20px;
   }
 
   .MBPLPConsultant:nth-child(2) img {
     float: right;
+    margin-left: 20px;
   }
 
   .contentTextAOC {
