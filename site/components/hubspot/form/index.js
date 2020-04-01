@@ -166,7 +166,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
       const { value } = event.target;
       targetField.value = value;
       targetField.valid = HubspotForm.validateContent(fieldName, value, required);
-      if (!showWarnings) {
+      if (targetField.name === 'email' && !showWarnings) {
         showWarnings = true;
         this.setState({ showWarnings });
       }
@@ -180,8 +180,9 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
       const checkboxes = Array.from(
         document.querySelectorAll(uniqueFormId ? `#${uniqueFormId}` : '#form-legal-consent'),
       ).filter((check: any) => check.required);
-      const isDisabled = checkboxes.some((check: any) => !check.checked);
-      this.setState({ isDisabled });
+      const isDisabled = checkboxes.some((check: any) => !check.checked) || !this.formIsValid();
+      const showWarnings = isDisabled;
+      this.setState({ isDisabled, showWarnings });
     }
   }
 

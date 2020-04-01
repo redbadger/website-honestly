@@ -29,8 +29,12 @@ const InputWarning = ({ warningText }) => {
   );
 };
 
-const InputLabel = ({ id, labelText }) => {
-  return <label id={id}>{labelText}</label>;
+const InputLabel = ({ id, labelText, htmlFor }) => {
+  return (
+    <label id={id} htmlFor={htmlFor}>
+      {labelText}
+    </label>
+  );
 };
 
 const FormInput = ({
@@ -49,11 +53,13 @@ const FormInput = ({
   showWarnings,
   value,
 }) => {
+  const forminputId = `${name || ''}-${fieldType}`;
   return (
     <div aria-label={description}>
       {!hidden && !labelHidden && label && (
         <InputLabel
           id={`${name || ''}-${fieldType}-label`}
+          htmlFor={forminputId}
           labelText={`${label || ''}${required ? ' *' : ''}`}
         />
       )}
@@ -65,11 +71,12 @@ const FormInput = ({
         />
       )}
       <input
-        id={`${name || ''}-${fieldType}`}
+        id={forminputId}
         type={fieldType}
         name={name}
         required={required}
-        // I have no idea why this needs to be a string??
+        // I have no idea why these needs to be a string.
+        invalid={(showWarnings && (!valid).toString()) || ''}
         enabled={enabled.toString()}
         hidden={hidden}
         value={value || defaultValue || ''}

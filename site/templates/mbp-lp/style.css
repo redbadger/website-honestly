@@ -122,11 +122,20 @@ h3 {
   font-family: 'ProximaNova-Light', sans-serif;
   padding: 12px;
   color: badgerWhite;
+  outline: none;
   height: 52px;
   width: 100%;
   margin-bottom: 24px;
   background: #363636;
   border: 1px cainYellow solid;
+}
+
+.MBPLPForm input[type='text']:focus {
+  border: 1px badgerWhite solid;
+}
+
+.MBPLPForm input[invalid='true'] {
+  border: 1px badgerRedOnBlack solid;
 }
 
 .MBPLPFormConsent {
@@ -157,8 +166,11 @@ h3 {
 
 .MBPLPFormConsent input[type='checkbox']:checked::before {
   content: '\2713';
-  background: #4a89f5;
-  color: white;
+  font-family: 'ProximaNova-Bold', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  background: cainYellow;
+  color: badgerBlack;
   text-align: center;
 }
 
@@ -176,17 +188,20 @@ h3 {
   margin-top: 30px;
   color: badgerBlack;
   background: linear-gradient(220deg, transparent 6%, cainYellow 7%);
-  height: 40px;
+  height: 39px;
   width: 150px;
   border: none;
   line-height: 42px;
   outline: none;
 }
 
-.MBPLPForm input[type='submit']:hover,
-.MBPLPForm input[type='submit']:disabled,
-.headerAnchor:hover {
+.MBPLPForm input[type='submit']:disabled {
   background: linear-gradient(220deg, transparent 6%, scorpian 7%);
+}
+
+.MBPLPForm input[type='submit']:hover,
+.headerAnchor:hover {
+  background: linear-gradient(220deg, transparent 6%, #988d1a 7%);
 }
 
 .MBPLPConsultants {
@@ -213,6 +228,7 @@ h3 {
 
 .MBPLPConsultantImgMobile {
   width: 100%;
+  max-width: 200px;
   display: block;
   margin-bottom: 8px;
 }
