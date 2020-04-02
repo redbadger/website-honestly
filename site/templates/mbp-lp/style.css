@@ -174,11 +174,21 @@ h3 {
   text-align: center;
 }
 
+/* Safari doesn't center text properly in the 
+submit button using the line-height attribute
+I can't find exactly why this is so I'm using
+padding-top specifically on the submit button
+as a workaround */
 .headerAnchor {
   font-family: 'ProximaNova-Bold', sans-serif;
   display: block;
   text-align: center;
   font-size: 18px;
+  line-height: 42px;
+}
+
+.MBPLPForm input[type='submit'] {
+  padding-top: 5px;
 }
 
 .MBPLPForm input[type='submit'],
@@ -191,11 +201,11 @@ h3 {
   height: 39px;
   width: 150px;
   border: none;
-  line-height: 42px;
   outline: none;
 }
 
-.MBPLPForm input[type='submit']:disabled {
+.MBPLPForm input[type='submit']:disabled,
+.MBPLPForm input[type='submit']:disabled:hover {
   background: linear-gradient(220deg, transparent 6%, scorpian 7%);
 }
 

@@ -100,6 +100,12 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
     return true;
   }
 
+  static getRequiredCheckboxes(uniqueFormId: ?string): any {
+    return Array.from(
+      document.querySelectorAll(uniqueFormId ? `#${uniqueFormId}` : '#form-legal-consent'),
+    ).filter((check: any) => check.required);
+  }
+
   static fireSubmitEvent(status: string) {
     const dataObject = {
       event: 'gtm.click',
@@ -161,6 +167,7 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
   _onChange(event: SyntheticInputEvent<HTMLInputElement>, fieldName: string, required: boolean) {
     const { fieldData } = this.state;
     let { showWarnings } = this.state;
+    const { uniqueFormId } = this.props;
     const targetField = HubspotForm.getFieldState(fieldData, fieldName);
     if (targetField) {
       const { value } = event.target;
@@ -170,16 +177,18 @@ export default class HubspotForm extends React.Component<HubspotFormProps, Hubsp
         showWarnings = true;
         this.setState({ showWarnings });
       }
-      this.setState({ fieldData });
+
+      const checkboxes = HubspotForm.getRequiredCheckboxes(uniqueFormId);
+      const isDisabled = checkboxes.some((check: any) => !check.checked) || !this.formIsValid();
+
+      this.setState({ fieldData, isDisabled });
     }
   }
 
   checkConsented() {
     const { uniqueFormId } = this.props;
     if (document) {
-      const checkboxes = Array.from(
-        document.querySelectorAll(uniqueFormId ? `#${uniqueFormId}` : '#form-legal-consent'),
-      ).filter((check: any) => check.required);
+      const checkboxes = HubspotForm.getRequiredCheckboxes(uniqueFormId);
       const isDisabled = checkboxes.some((check: any) => !check.checked) || !this.formIsValid();
       const showWarnings = isDisabled;
       this.setState({ isDisabled, showWarnings });
