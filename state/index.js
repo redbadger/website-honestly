@@ -39,7 +39,6 @@ const getSiteState = () =>
     ([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, instagramPosts, data]) => {
       const fetchErrors = collectErrors({ jobs, tweets, instagramPosts });
       const fetchSuccess = collectSuccesses({ jobs, tweets, instagramPosts });
-
       return {
         data: {
           ...fetchSuccess,
@@ -54,6 +53,7 @@ const getSiteState = () =>
           categories: data.categories,
           qAndAs: data.qAndAs,
           goldCoinPages: data.goldCoinPages,
+          hubspotForm: data.hubspotForm,
         },
         fetchErrors,
       };
