@@ -92,7 +92,7 @@
   margin-bottom: 0;
 }
 
-h2,
+.MBPLP h2,
 h3 {
   font-family: 'ProximaNova-Bold', sans-serif;
   color: cainYellow;
@@ -399,11 +399,11 @@ h3 {
     margin-bottom: 58px;
   }
 
-  h2 {
+  .MBPLP h2 {
     font-size: 30px;
   }
 
-  h3 {
+  .MBPLP h3 {
     font-size: 22px;
     margin-bottom: 2px;
   }
