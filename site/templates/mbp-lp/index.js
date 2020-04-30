@@ -22,8 +22,8 @@ export type MBPLPProps = {
   slug: string,
   time: string,
   date: string,
-  place: string,
-  location: string,
+  place: ?string,
+  location: ?string,
   consultants: Array<ConsultantProps>,
   formId: string,
   hubspotForm: HubspotFormProps,
@@ -48,16 +48,20 @@ const Agenda = ({ className }: { className: string }) => (
   <div className={`${styles.contentText} ${className}`}>
     <h2>Agenda</h2>
     <p>
-      <strong>8:30am:</strong> Breakfast served{' '}
+      <strong>11:00am:</strong> Welcome from <strong>Cain Ullah</strong>, CEO of Red Badger
     </p>
     <p>
-      <strong>9:00am:</strong> Welcome from Cain Ullah, CEO of Red Badger
+      <strong>11:10am:</strong> The Power of Diverse Thinking, <strong>Matthew Syed</strong>, author
+      of Rebel Ideas
     </p>
     <p>
-      <strong>9:20am:</strong> Power of diverse thinking by Matthew Syed, author of Rebel Ideas
+      <strong>11:40am:</strong> ShareThyme demo
     </p>
     <p>
-      <strong>10:30am:</strong> Close
+      <strong>11:50am:</strong> Our next mission and Q&A
+    </p>
+    <p>
+      <strong>12:15pm:</strong> Close
     </p>
   </div>
 );
@@ -98,9 +102,9 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
           </div>
           <div className={`${styles.contentText} ${styles.contentTextLarge}`}>
             <p>
-              Join us at the first event with <strong>Matthew Syed</strong>, a bestselling author
-              and <strong>Cain Ullah</strong>, CEO of Red Badger for a breakfast masterclass in
-              creative problem-solving for the future. As part of the event, we will demo
+              Join us at the first event online with <strong>Matthew Syed</strong>, a bestselling
+              author and <strong>Cain Ullah</strong>, CEO of Red Badger for a breakfast masterclass
+              in creative problem-solving for the future. As part of the event, we will demo
               ShareThyme, a platform that connects generations through cooking, and invite you to be
               part of our next mission.
             </p>
@@ -114,13 +118,21 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
                   <strong>Date:</strong> {date}
                   <br />
                   <strong>Time:</strong> {time}
-                  <br />
-                  <strong>Place:</strong> {place}
-                  <br />
-                  <strong>Location:</strong> {location}
+                  {place && (
+                    <React.Fragment>
+                      <br />
+                      <strong>Place:</strong> {place}
+                    </React.Fragment>
+                  )}
+                  {location && (
+                    <React.Fragment>
+                      <br />
+                      <strong>Location:</strong> {location}
+                    </React.Fragment>
+                  )}
                 </p>
                 <p>
-                  <strong>Invitation only.</strong>
+                  <strong>This is an invitation-only event.</strong>
                 </p>
               </div>
 
@@ -158,9 +170,8 @@ const MBPLP = ({ title, time, place, date, location, consultants, hubspotForm }:
               <div className={styles.contentSpeakers}>{renderConsultants(consultants)}</div>
             </div>
             <div className={`${styles.contentText} ${styles.contentTextAOC}`}>
-              <h2>Any other questions?</h2>
-              If you have any queries or dietary or access requirements that we should be aware of,
-              get in touch with us{' '}
+              <h2>Questions?</h2>
+              If you have any queries, please get in touch with us{' '}
               <a className={styles.inlineLink} href="mailto:hello@missionbeyond.co.uk">
                 here.
               </a>
