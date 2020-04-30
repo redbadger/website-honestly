@@ -22,10 +22,10 @@ const MBPPage = ({ hubspotForm }: { hubspotForm: HubspotFormProps }) => {
     <MBPLP
       title="Mission Beyond"
       slug="mission-beyond"
-      time="8:30am - 10:30am"
-      date="Wednesday,  May 6, 2020 "
-      place="The Conduit"
-      location="40 Conduit St, W1S 2YQ"
+      time="11:00am - 12:15pm"
+      date="Thursday, June 18"
+      // place="The Conduit"
+      // location="40 Conduit St, W1S 2YQ"
       consultants={[
         {
           image: matthewImage,
