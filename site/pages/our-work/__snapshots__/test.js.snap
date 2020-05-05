@@ -645,9 +645,9 @@ Array [
             class="logoWrapper"
           >
             <img
-              alt="Pride in London logo"
-              class="prideLogo"
-              src="pride.png"
+              alt="The NHS"
+              class="nhsLogo"
+              src="nhs.png"
             />
           </div>
           <div

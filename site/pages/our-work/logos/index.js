@@ -14,7 +14,7 @@ import fortnumLogo from './images/fortnum-mason-logo.png';
 import ftLogo from './images/ft.png';
 import hallerLogo from './images/haller.png';
 import lloydsLogo from './images/lloyds.png';
-import prideLogo from './images/pride.png';
+import nhsLogo from './images/nhs.png';
 import selfridgesLogo from './images/selfridges.png';
 import skyLogo from './images/sky.png';
 import tescoLogo from './images/tesco.png';
@@ -55,7 +55,7 @@ export default function Logos() {
           <img src={bbcLogo} className={styles.bbcLogo} alt="BBC logo" />
         </div>
         <div className={styles.logoWrapper}>
-          <img src={prideLogo} className={styles.prideLogo} alt="Pride in London logo" />
+          <img src={nhsLogo} className={styles.nhsLogo} alt="The NHS" />
         </div>
         <div className={styles.logoWrapper}>
           <img src={bmwLogo} className={styles.bmwLogo} alt="BMW logo" />
