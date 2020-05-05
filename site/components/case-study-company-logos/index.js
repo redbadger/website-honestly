@@ -20,10 +20,10 @@ const CaseStudyCompanyLogos = () => (
       <img alt="The logo of Car Trawler" src={cartrawlerPNG} />
     </div>
     <div className={styles.caseCompaniesLogo}>
-      <img alt="The logo of Tesco" src={tescoPNG} />
+      <img alt="The logo of the BBC" src={bbcPNG} />
     </div>
     <div className={styles.caseCompaniesLogo}>
-      <img alt="The logo of the BBC" src={bbcPNG} />
+      <img alt="The logo of Tesco" src={tescoPNG} />
     </div>
     <div className={styles.caseCompaniesLogo}>
       <img alt="The logo of the NHS" src={nhsPNG} />

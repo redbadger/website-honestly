@@ -342,16 +342,16 @@ Array [
           class="caseCompaniesLogo"
         >
           <img
-            alt="The logo of Tesco"
-            src="tesco.png"
+            alt="The logo of the BBC"
+            src="bbc.png"
           />
         </div>
         <div
           class="caseCompaniesLogo"
         >
           <img
-            alt="The logo of the BBC"
-            src="bbc.png"
+            alt="The logo of Tesco"
+            src="tesco.png"
           />
         </div>
         <div
