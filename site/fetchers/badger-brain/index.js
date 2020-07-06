@@ -185,40 +185,6 @@ const goldCoinPages = `
       }
 `;
 
-// This should eventually be replaced by making these pages
-// content editable in prismic and setting the attached form there
-// in the same way Gold Coin Pages are handled
-const mbpEventHubspotForm = `
-  hubspotForm(id: "059d8ceb-ee0f-4379-a5ba-8bd637ab1bfb") {
-    portalId
-    guid
-    name
-    cssClass
-    submitText
-    inlineMessage
-    formFields {
-      richText
-      name
-      label
-      fieldType
-      description
-      defaultValue
-      placeholder
-      required
-      enabled
-      hidden
-      labelHidden
-    }
-    formConsent {
-      consentMessage
-      checkboxes {
-        label
-        required
-      }
-    }
-  }
-`;
-
 export function getData() {
   const body = `
     query {
@@ -267,7 +233,6 @@ export function getData() {
         mobileURL
       }
       ${goldCoinPages}
-      ${mbpEventHubspotForm}
     }
   `;
 

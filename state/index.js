@@ -53,7 +53,6 @@ const getSiteState = () =>
           categories: data.categories,
           qAndAs: data.qAndAs,
           goldCoinPages: data.goldCoinPages,
-          hubspotForm: data.hubspotForm,
         },
         fetchErrors,
       };

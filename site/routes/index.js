@@ -43,7 +43,6 @@ import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
 
 import GoldCoinLP from '../templates/gold-coin-lp/index';
-import MBPPage from '../pages/mbp-event';
 
 const componentMap = {
   aboutUsPage: AboutUsPage,
@@ -81,7 +80,6 @@ const componentMap = {
   termsAndConditions: TermsAndConditions,
   whatWeDoPage: WhatWeDoPage,
   goldCoinPage: GoldCoinLP,
-  missionBeyond: MBPPage,
 };
 
 function routes() {
