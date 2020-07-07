@@ -11,6 +11,7 @@ import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
 import GoldCoinSlice from '../../slices/gc-slice';
 import { SpruceSlice } from '../../components/slice';
+import MBPSlice from './mbp-slice';
 
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
@@ -32,6 +33,7 @@ export default function HomePage() {
       <TopSlice />
       <GoldCoinSlice />
       <CaseStudyOverview />
+      <MBPSlice />
       <SpruceSlice>
         <ShareThymeSlice linkUrl="https://www.red-badger.com/sharethyme" />
       </SpruceSlice>
