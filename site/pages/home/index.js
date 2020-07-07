@@ -5,12 +5,10 @@ import TopSlice from './homepage-top-slice';
 import CaseStudyOverview from '../../components/case-study-overview';
 import AwardsSlice from '../../slices/awards-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
-import ShareThymeSlice from '../../slices/sharethyme-slice';
 import Social from '../../components/social';
 import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
 import GoldCoinSlice from '../../slices/gc-slice';
-import { SpruceSlice } from '../../components/slice';
 import MBPSlice from './mbp-slice';
 
 import metaImage from './meta-image.jpg';
@@ -34,9 +32,6 @@ export default function HomePage() {
       <GoldCoinSlice />
       <CaseStudyOverview />
       <MBPSlice />
-      <SpruceSlice>
-        <ShareThymeSlice linkUrl="https://www.red-badger.com/sharethyme" />
-      </SpruceSlice>
       <TestimonialsSlice />
       <TechSlice />
       <ChecklistContactUs />
