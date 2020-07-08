@@ -9,6 +9,12 @@
   line-height: 1.25em;
   padding: 94px 78px;
   color: badgerWhite;
+  composes: dividerWhite from '../../../css/_divider.css';
+}
+
+.mbpSlice::before,
+.mbpSlice::after {
+  background-color: #2e2e2e;
 }
 
 .mbpSlice__wrapper {
