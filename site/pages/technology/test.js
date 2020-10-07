@@ -41,8 +41,8 @@ describe('site/pages/technology', () => {
         </Context>,
       ),
     ).toMatchSnapshot();
-    afterAll(() => {
-      MockDate.reset();
-    });
+  });
+  afterAll(() => {
+    MockDate.reset();
   });
 });
