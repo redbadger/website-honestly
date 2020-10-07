@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'enzyme';
+import MockDate from 'mockdate';
 
 import { Context } from '../../components/link/test-helper';
 
@@ -25,6 +26,10 @@ const growingTrendsBlogPosts = [
 ];
 
 describe('site/pages/technology', () => {
+  beforeAll(() => {
+    MockDate.set('11/05/2019');
+  });
+
   it('renders correctly', () => {
     expect(
       render(
@@ -36,5 +41,8 @@ describe('site/pages/technology', () => {
         </Context>,
       ),
     ).toMatchSnapshot();
+    afterAll(() => {
+      MockDate.reset();
+    });
   });
 });

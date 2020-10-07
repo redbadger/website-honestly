@@ -8844,6 +8844,11 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mockdate@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/mockdate/-/mockdate-3.0.2.tgz#a5a7bb5820da617747af424d7a4dcb22c6c03d79"
+  integrity sha512-ldfYSUW1ocqSHGTK6rrODUiqAFPGAg0xaHqYJ5tvj1hQyFsjuHpuWgWFTZWwDVlzougN/s2/mhDr8r5nY5xDpA==
+
 module-not-found-error@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/module-not-found-error/-/module-not-found-error-1.0.1.tgz#cf8b4ff4f29640674d6cdd02b0e3bc523c2bbdc0"
