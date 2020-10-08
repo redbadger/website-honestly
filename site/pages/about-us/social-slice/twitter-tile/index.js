@@ -35,10 +35,9 @@ const renderedImageData = (tweet: Tweet) => {
 const maxTextLengthWithImage = 130;
 
 const ensureEscapedText = text => {
-  const parser = new DOMParser();
-  const decodedString =
-    // $FlowIgnore
-    parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body.textContent;
+  const parser = new window.DOMParser();
+  const decodedString = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body
+    .textContent;
   return decodedString;
 };
 
