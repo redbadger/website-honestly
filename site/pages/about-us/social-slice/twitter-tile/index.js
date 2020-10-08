@@ -34,6 +34,13 @@ const renderedImageData = (tweet: Tweet) => {
 
 const maxTextLengthWithImage = 130;
 
+const ensureEscapedText = text => {
+  const parser = new DOMParser();
+  const decodedString = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body
+    .textContent;
+  return decodedString;
+};
+
 const truncate = text =>
   text.length > maxTextLengthWithImage ? text.slice(0, maxTextLengthWithImage) + '...' : text;
 
@@ -43,6 +50,8 @@ const Twitter = ({ tweet, index }: TweetProps) => {
   const image = renderedImageData(tweet);
 
   const shrinkTextSize = image && image.height >= 200;
+
+  const parsedText = ensureEscapedText(tweet.text);
 
   return (
     <a
@@ -64,7 +73,7 @@ const Twitter = ({ tweet, index }: TweetProps) => {
             shrinkTextSize ? styles.tweetWithLargeImage : styles.tweetWithNoImage,
           )}
         >
-          {tweet.image ? truncate(tweet.text) : tweet.text}
+          {tweet.image ? truncate(parsedText) : parsedText}
         </div>
         <div className={styles.meta}>
           <span>
