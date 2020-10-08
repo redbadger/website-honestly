@@ -36,8 +36,9 @@ const maxTextLengthWithImage = 130;
 
 const ensureEscapedText = text => {
   const parser = new DOMParser();
-  const decodedString = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body
-    .textContent;
+  const decodedString =
+    // $FlowIgnore
+    parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body.textContent;
   return decodedString;
 };
 
