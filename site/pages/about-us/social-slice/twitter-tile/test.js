@@ -11,7 +11,7 @@ const specialTweet = {
   created: '2019-03-20',
 };
 
-describe('site/pages/about-us', () => {
+describe('TwitterTile', () => {
   it('renders correctly with special characters', () => {
     expect(render(<TwitterTile tweet={specialTweet} index={1} />)).toMatchSnapshot();
   });

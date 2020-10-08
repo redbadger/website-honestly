@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`site/pages/about-us renders correctly with special characters 1`] = `
+exports[`TwitterTile renders correctly with special characters 1`] = `
 <a
   class="link"
   href="https://twitter.com/redbadgerteam/status/1108421453903523841"
