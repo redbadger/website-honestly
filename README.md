@@ -163,7 +163,7 @@ Images are automatically optimised by [imagemin-webpack-plugin](https://www.npmj
 
 Analytics are tracked through google tag manager. This requires a `gtm` or `container` id which should be stored as an environment variable.
 
-We use the `TagManager` supplied by the [react-gtm-module](https://github.com/alinemorelli/react-gtm) package. It is initialised in `site/client/index.js` with the primary data layer which provides the current domain.
+We use `TagManager` supplied by the [react-gtm-module](https://github.com/alinemorelli/react-gtm) package. It is initialised in `site/client/index.js` with the primary data layer which provides the current domain.
 
 The tag manager is setup for each page during the `makeApp` step
 
