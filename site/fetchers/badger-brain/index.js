@@ -239,12 +239,17 @@ export function getData() {
   return fetch(badgerBrainEndpoint(), getRequestOptions(body))
     .then(handleErrors)
     .then(response => response.json())
-    .then(({ data: { allEvents, allBadgers, allQnA, eventsBanner, allGoldCoinPages } }) => ({
-      events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
-      badgers: sortBadgers(allBadgers),
-      categories: getCategories(allBadgers),
-      qAndAs: selectValidQandAs(allQnA),
-      goldCoinPages: allGoldCoinPages,
-      eventsBanner,
-    }));
+    .then(
+      ({
+        data: { allEvents, allBadgers, allQnA, eventsBanner, allGoldCoinPages, hubspotForm },
+      }) => ({
+        events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
+        badgers: sortBadgers(allBadgers),
+        categories: getCategories(allBadgers),
+        qAndAs: selectValidQandAs(allQnA),
+        goldCoinPages: allGoldCoinPages,
+        eventsBanner,
+        hubspotForm,
+      }),
+    );
 }

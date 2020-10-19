@@ -609,9 +609,9 @@ Array [
             class="logoWrapper"
           >
             <img
-              alt="Tesco logo"
-              class="tescoLogo"
-              src="tesco.png"
+              alt="BBC logo"
+              class="bbcLogo"
+              src="bbc.png"
             />
           </div>
           <div
@@ -636,18 +636,18 @@ Array [
             class="logoWrapper"
           >
             <img
-              alt="BBC logo"
-              class="bbcLogo"
-              src="bbc.png"
+              alt="Tesco logo"
+              class="tescoLogo"
+              src="tesco.png"
             />
           </div>
           <div
             class="logoWrapper"
           >
             <img
-              alt="Pride in London logo"
-              class="prideLogo"
-              src="pride.png"
+              alt="The NHS"
+              class="nhsLogo"
+              src="nhs.png"
             />
           </div>
           <div
