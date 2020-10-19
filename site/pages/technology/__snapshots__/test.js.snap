@@ -4,6 +4,7 @@ exports[`site/pages/technology renders correctly 1`] = `
 Array [
   <section
     class="techSlice "
+    data-cy="tech-slice"
   >
     <div
       class="techSliceIntro"
@@ -504,6 +505,7 @@ Array [
   </section>,
   <section
     class="contactUsContainer"
+    data-cy="contact-us-slice"
     id="contactUs"
   >
     <h2
@@ -555,6 +557,7 @@ Array [
     <div>
       <a
         class="mailToLink"
+        data-cy="email-link"
         href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
       >
         Send an email

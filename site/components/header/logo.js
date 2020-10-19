@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Logo() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401 100">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401 100" data-cy="redBadgerLogo">
       <title>Red Badger logo</title>
       <path d="M99.17 18.76h301.47v75.91H99.17z" fill="#fc1d42" />
       <path

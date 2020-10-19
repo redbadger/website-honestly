@@ -3,6 +3,7 @@
 exports[`site/pages/home/homepage-top-slice/ renders correctly 1`] = `
 <section
   class="homepageTopSlice"
+  data-cy="top-slice"
 >
   <div
     class="sliceContainer"

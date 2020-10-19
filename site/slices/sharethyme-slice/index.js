@@ -14,7 +14,7 @@ type Props = {
 
 export default function ShareThymeSlice({ linkUrl }: Props) {
   return (
-    <section className={styles.shareThymeSlice}>
+    <section className={styles.shareThymeSlice} data-cy="sharethyme-slice">
       <div className={styles.shareThymeContent}>
         <ShareThymeLogo className={styles.shareThymeLogo} />
         <h3>See what we&apos;ve been cooking up</h3>

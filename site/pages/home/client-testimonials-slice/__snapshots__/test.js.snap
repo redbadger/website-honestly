@@ -4,6 +4,7 @@ exports[`site/pages/home/client-testimonal-slice renders correctly 1`] = `
 <ClientTestimonialsSlice>
   <div
     className="testimonials"
+    data-cy="testimonial-slice"
   >
     <div
       className="container"
