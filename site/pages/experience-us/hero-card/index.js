@@ -32,13 +32,13 @@ const HeroCard = ({ images, title, type, blurb, description, slug }: HeroCardPro
         alt={`${title} illustration`}
       />
     </div>
-    <div className={styles.heroCardContainer}>
+    <div className={styles.heroCardContainer} data-cy="goldCoinContainer">
       <div className={styles.heroCardContent}>
         <div className={styles.heroCardTitle}>{title}</div>
         <p className={styles.heroCardType}>{atAGlanceTypes[type] && atAGlanceTypes[type].text}</p>
         <div className={styles.description}>{description}</div>
         <div className={styles.blurb} dangerouslySetInnerHTML={{ __html: blurb }} />
-        <div className={styles.linkHighlight}>
+        <div className={styles.linkHighlight} data-cy="goldCoinBookNowButton">
           {atAGlanceTypes[type] && atAGlanceTypes[type].messaging}
         </div>
       </div>

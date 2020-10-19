@@ -63,7 +63,7 @@ export default class SmallScreenNav extends React.Component<any, State> {
       <div className={styles.smallScreenNavComponent}>
         {!navOpen && (
           <div className={styles.triggerContainer}>
-            <label htmlFor="burger" className={styles.triggerLabel}>
+            <label htmlFor="burger" className={styles.triggerLabel} data-cy="burger-menu-trigger">
               MENU
             </label>
           </div>

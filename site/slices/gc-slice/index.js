@@ -142,7 +142,7 @@ class GoldCoinSlice extends Component {
       videoPlaying,
     } = this.state;
     return (
-      <div className={styles.goldCoinsContainer}>
+      <div className={styles.goldCoinsContainer} data-cy="gold-coins-slice">
         <div className={styles.goldCoinsContent}>
           <h2 className={styles.goldCoinsHeading}>See how we work</h2>
           <Link className={styles.goldCoinsCTA} to="experienceUs" data-link="experience-us-slice">

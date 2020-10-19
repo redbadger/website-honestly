@@ -14,7 +14,7 @@ import daysSinceFortumStarted from './daysSinceFortnumStarted';
 const CaseStudyOverview = () => {
   return (
     // The id here is to allow us to link directly to the page stats
-    <section className={styles.caseStudyContainer} id="stats">
+    <section className={styles.caseStudyContainer} id="stats" data-cy="case-study-slice">
       <h2 className={styles.heading}>We solve complex problems and deliver real impact.</h2>
       <div className={styles.limitWidth}>
         <div className={styles.figuresContainer}>
@@ -115,7 +115,7 @@ const CaseStudyOverview = () => {
         </div>
         <CaseStudyCompanyLogos />
         <div className={styles.buttonContainer}>
-          <Link to="ourWorkPage" className={styles.button}>
+          <Link to="ourWorkPage" className={styles.button} data-cy="ourWorkButton">
             See more of our work
           </Link>
         </div>

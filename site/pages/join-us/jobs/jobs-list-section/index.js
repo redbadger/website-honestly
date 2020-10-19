@@ -15,7 +15,9 @@ const JobsListSection = ({ title, jobs }: JobsListSectionProps) => {
     <React.Fragment>
       <HR color="black" />
       <div className={styles.jobSectionContainer}>
-        <h2 className={styles.jobSectionHeader}>{title}</h2>
+        <h2 className={styles.jobSectionHeader} data-cy="job-section">
+          {title}
+        </h2>
         <ul className={styles.jobsList}>
           {jobs.map(job => (
             <JobsListEntry {...job} type="job" key={`key_${job.title}`} />
