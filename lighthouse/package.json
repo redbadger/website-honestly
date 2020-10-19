@@ -7,6 +7,6 @@
   "dependencies": {
     "chrome-launcher": "^0.10.7",
     "lighthouse": "^5.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
