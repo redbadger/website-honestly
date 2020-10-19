@@ -11,7 +11,9 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "start": "make dev",
-    "badger": "node dev/badger.js"
+    "badger": "node dev/badger.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",
@@ -94,7 +96,7 @@
     "navigation": "^5.1.0",
     "navigation-react": "^4.0.1",
     "nock": "^10.0.6",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.1",
     "node-hook": "^1.0.0",
     "normalize.css": "^8.0.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
@@ -162,7 +164,10 @@
     "@babel/preset-flow": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.5.0",
+    "cypress": "^4.1.0",
+    "cypress-image-snapshot": "^3.1.1",
     "enzyme-to-json": "^3.3.4",
+    "eslint-plugin-cypress": "^2.10.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.5.0",
     "prettier": "^1.16.4"

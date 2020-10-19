@@ -1,6 +1,7 @@
 {
   "extends": [
     "airbnb",
+    "plugin:cypress/recommended",
     "plugin:flowtype/recommended",
     "prettier",
     "prettier/react",
