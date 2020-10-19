@@ -13,7 +13,7 @@ const ClientTestimonialsSlice = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <div className={styles.testimonials}>
+    <div className={styles.testimonials} data-cy="testimonial-slice">
       <div className={styles.container}>
         <ClientOnly>
           <Navigator
