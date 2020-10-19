@@ -3,6 +3,7 @@
 exports[`site/pages/home/hubspot-signup renders correctly 1`] = `
 <section
   class="newsletter"
+  data-cy="newsletter-signup-slice"
 >
   <h2
     class="title"
@@ -26,6 +27,7 @@ exports[`site/pages/home/hubspot-signup renders correctly 1`] = `
         id="hs-cta-6a020b57-ac2f-4b6d-8273-503c7b261094"
       >
         <a
+          data-cy="email-signup"
           href="https://cta-redirect.hubspot.com/cta/redirect/4210858/6a020b57-ac2f-4b6d-8273-503c7b261094"
           target="_blank"
         >

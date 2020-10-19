@@ -1,0 +1,114 @@
+{
+  "events": [
+    {
+      "id": "XkvOyBAAACoAsAx5",
+      "slug": "join-us-for-an-evening-of-great-conversation-around9",
+      "tags": [],
+      "title": "February React London Meetup",
+      "strapline": "Join us for an evening of great conversation around React!",
+      "ticketLink": "https://ti.to/red-badger/february-react-london-2020/with/mzcn0qquq-e",
+      "eventbriteId": null,
+      "internalLinks": [],
+      "externalLinks": [],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "<p>6:30 - Doors open for pizza and drinks</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>7:00 - Intro from Red Badger</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>7:10 - Up to 3 speakers each with 20 minutes to talk followed by Q&amp;A</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>8:30 / 9:00 - Everyone is welcome to stay for another drink</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Where: <a href=\"https://www.google.com/maps?q=facebook+office&amp;rlz=1C5CHFA_enGB834GB834&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwifrYD3vuTlAhUQiFwKHeoQDNgQ_AUIEygC\">Facebook</a></p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>For more information and tickets click <a href=\"https://meetup.react.london/\">here</a></p>\n"
+        }
+      ],
+      "featureImageFilename": "https://images.prismic.io/rb-website%2F209b6d9f-6319-496b-adb1-262ce453e5c3_react-community.jpg?auto=compress,format",
+      "startDateTime": {
+        "iso": "2020-02-25T18:30:00+0000",
+        "date": "25",
+        "month": "02",
+        "monthSym": "February",
+        "year": "2020"
+      },
+      "endDateTime": {
+        "iso": "2020-02-25T20:30:00+0000",
+        "date": "25",
+        "month": "02",
+        "monthSym": "February",
+        "year": "2020"
+      },
+      "location": {
+        "address": "Capital One, 1 Old Street Yard, Old Street, London EC1Y 8AF"
+      }
+    },
+    {
+      "id": "Xh2wzhIAAB8AZbMx",
+      "slug": "january-react-london-meetup1",
+      "tags": [],
+      "title": "January React London Meetup",
+      "strapline": "Join us for an evening of great conversation around React!",
+      "ticketLink": "https://ti.to/red-badger/january-react-london-meetup/with/39occ1zqbpm",
+      "eventbriteId": null,
+      "internalLinks": [],
+      "externalLinks": [],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "<p>6:30 - Doors open for pizza and drinks</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>7:00 - Intro from Red Badger</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>7:10 - Up to 3 speakers each with 20 minutes to talk followed by Q&amp;A</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>8:30 / 9:00 - Everyone is welcome to stay for another drink</p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>Where: <a href=\"https://www.google.com/maps?q=facebook+office&amp;rlz=1C5CHFA_enGB834GB834&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwifrYD3vuTlAhUQiFwKHeoQDNgQ_AUIEygC\">Facebook</a></p>\n"
+        },
+        {
+          "type": "paragraph",
+          "text": "<p>For more information and tickets click <a href=\"https://meetup.react.london/\">here</a></p>\n"
+        }
+      ],
+      "featureImageFilename": "https://images.prismic.io/rb-website%2F209b6d9f-6319-496b-adb1-262ce453e5c3_react-community.jpg?auto=compress,format",
+      "startDateTime": {
+        "iso": "2020-01-21T18:30:00+0000",
+        "date": "21",
+        "month": "01",
+        "monthSym": "January",
+        "year": "2020"
+      },
+      "endDateTime": {
+        "iso": "2020-01-21T20:30:00+0000",
+        "date": "21",
+        "month": "01",
+        "monthSym": "January",
+        "year": "2020"
+      },
+      "location": {
+        "address": "1 Rathbone Square, Fitzrovia, London W1T 1FB"
+      }
+    }
+  ]
+}

@@ -59,18 +59,25 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
                 aria-label={`expand ${title} job description`}
                 className={styles.jobEntry__more}
               >
-                <span className={open ? styles.jobEntry__arrowDown : styles.jobEntry__arrow} />
+                <span
+                  className={open ? styles.jobEntry__arrowDown : styles.jobEntry__arrow}
+                  data-cy="arrow"
+                />
               </button>
               <div className={styles.jobEntryHeaderContainer}>
                 <div className={styles.jobEntryHeader} itemProp="title">
-                  <h3 className={styles.jobTitle} itemProp="name">
+                  <h3 className={styles.jobTitle} itemProp="name" data-cy="job-title">
                     <span>{title}</span>
                   </h3>
                 </div>
                 <div
                   className={open ? styles.jobDescription__visible : styles.jobDescription__hidden}
                 >
-                  <div className={styles.jobDescription} itemProp="description">
+                  <div
+                    className={styles.jobDescription}
+                    itemProp="description"
+                    data-cy="job-description"
+                  >
                     <RawHtml>{description}</RawHtml>
                   </div>
                   <Link to="job" navigationData={eventLink} className={styles.applyBtn}>
