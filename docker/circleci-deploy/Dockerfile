@@ -1,4 +1,4 @@
-FROM node:8.15.1-jessie-slim
+FROM node:10.22.1-buster-slim
 
 # Install aws cli
 RUN apt-get update && apt-get install -y \
