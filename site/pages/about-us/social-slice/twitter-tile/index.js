@@ -44,7 +44,7 @@ const ensureEscapedText = text => {
   }
 };
 
-const truncate = text =>
+const truncate = (text: string) =>
   text.length > maxTextLengthWithImage ? text.slice(0, maxTextLengthWithImage) + '...' : text;
 
 const colours = [styles.blue, styles.mauve, styles.green];
@@ -76,7 +76,7 @@ const Twitter = ({ tweet, index }: TweetProps) => {
             shrinkTextSize ? styles.tweetWithLargeImage : styles.tweetWithNoImage,
           )}
         >
-          {tweet.image ? truncate(parsedText) : parsedText}
+          {tweet.image && parsedText ? truncate(parsedText) : parsedText}
         </div>
         <div className={styles.meta}>
           <span>
