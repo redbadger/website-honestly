@@ -35,10 +35,13 @@ const renderedImageData = (tweet: Tweet) => {
 const maxTextLengthWithImage = 130;
 
 const ensureEscapedText = text => {
-  const parser = new window.DOMParser();
-  const decodedString = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body
-    .textContent;
-  return decodedString;
+  // Causes circleci to fail if window is not tested for
+  if (window) {
+    const parser = new window.DOMParser();
+    const decodedString = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body
+      .textContent;
+    return decodedString;
+  }
 };
 
 const truncate = text =>
