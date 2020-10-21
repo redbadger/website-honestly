@@ -36,7 +36,7 @@ const maxTextLengthWithImage = 130;
 
 const ensureEscapedText = text => {
   // Causes circleci to fail if window is not tested for
-  if (window && window != undefined && window != null) {
+  if (window && window !== undefined && window !== null) {
     const parser = new window.DOMParser();
     const decodedString = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body
       .textContent;
