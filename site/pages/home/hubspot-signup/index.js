@@ -9,7 +9,7 @@ import buttonStyles from '../../../components/buttons/style.css';
 
 export default function HubspotSignup() {
   return (
-    <section className={styles.newsletter}>
+    <section className={styles.newsletter} data-cy="newsletter-signup-slice">
       <h2 className={styles.title}>
         Sign up to Badger News
         <span className={styles.subTitle}>
