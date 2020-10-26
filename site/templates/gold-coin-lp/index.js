@@ -134,18 +134,17 @@ const GoldCoinLP = ({
                 />
                 {price}
               </p>
-              {(type &&
-                (atAGlanceTypes[type] && (
-                  <p>
-                    <span
-                      className={styles.goldCoinLPInfoImg}
-                      alt={`${atAGlanceTypes[type].text} engagement type icon`}
-                    >
-                      {atAGlanceTypes[type].image()}
-                    </span>
-                    {atAGlanceTypes[type].text}
-                  </p>
-                ))) || (
+              {(type && atAGlanceTypes[type] && (
+                <p>
+                  <span
+                    className={styles.goldCoinLPInfoImg}
+                    alt={`${atAGlanceTypes[type].text} engagement type icon`}
+                  >
+                    {atAGlanceTypes[type].image()}
+                  </span>
+                  {atAGlanceTypes[type].text}
+                </p>
+              )) || (
                 <p>
                   <img
                     className={styles.goldCoinLPInfoImg}

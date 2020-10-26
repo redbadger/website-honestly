@@ -14,7 +14,7 @@ RUN apk add --no-cache ca-certificates && \
  && rm glibc-$GLIBC_VERSION.apk /etc/apk/keys/sgerrand.rsa.pub \
  && apk del --no-cache .build-deps-glibc
 
-ENV NODE_VERSION 8.15.1
+ENV NODE_VERSION 10.22.1
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NPM_GPG_KEY DD8F2338BAE7501E3DD5AC78C273792F7D83545D
 RUN addgroup -g 1000 node \

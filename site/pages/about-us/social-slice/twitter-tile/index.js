@@ -34,7 +34,17 @@ const renderedImageData = (tweet: Tweet) => {
 
 const maxTextLengthWithImage = 130;
 
-const truncate = text =>
+const ensureEscapedText = text => {
+  // Causes circleci to fail if window is not tested for
+  if (typeof window !== 'undefined') {
+    const parser = new window.DOMParser();
+    const decodedString = parser.parseFromString(`<!doctype html><body>${text}`, 'text/html').body
+      .textContent;
+    return decodedString;
+  }
+};
+
+const truncate = (text: string) =>
   text.length > maxTextLengthWithImage ? text.slice(0, maxTextLengthWithImage) + '...' : text;
 
 const colours = [styles.blue, styles.mauve, styles.green];
@@ -43,6 +53,8 @@ const Twitter = ({ tweet, index }: TweetProps) => {
   const image = renderedImageData(tweet);
 
   const shrinkTextSize = image && image.height >= 200;
+
+  const parsedText = ensureEscapedText(tweet.text);
 
   return (
     <a
@@ -64,7 +76,7 @@ const Twitter = ({ tweet, index }: TweetProps) => {
             shrinkTextSize ? styles.tweetWithLargeImage : styles.tweetWithNoImage,
           )}
         >
-          {tweet.image ? truncate(tweet.text) : tweet.text}
+          {tweet.image && parsedText ? truncate(parsedText) : parsedText}
         </div>
         <div className={styles.meta}>
           <span>
