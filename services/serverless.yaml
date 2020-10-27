@@ -71,23 +71,3 @@ resources:
         Subscription:
           - Endpoint: '${env:LAMBDA_ERROR_REPORT_EMAIL}'
             Protocol: email
-
-    SignUpLambdaErrorAlarm:
-      Type: AWS::CloudWatch::Alarm
-      Properties:
-        AlarmActions:
-          - Ref: 'ErrorSNSTopic'
-        AlarmDescription: 'An error has been thrown by the lambda function responsible for signing people up to our mailing list'
-        AlarmName: WebsiteHonestlySignUpLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
-        ComparisonOperator: GreaterThanOrEqualToThreshold
-        Dimensions:
-          - Name: FunctionName
-            Value:
-              Ref: SignUpLambdaFunction
-        EvaluationPeriods: 1
-        MetricName: Errors
-        Namespace: AWS/Lambda
-        Period: 60
-        Statistic: Sum
-        Threshold: 1
-        Unit: Count
