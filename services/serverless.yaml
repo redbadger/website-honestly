@@ -32,20 +32,6 @@ functions:
           cors: true
       # Invoke publish function every hour, on the hour, to keep content fresh
       - schedule: cron(0 * * * ? *)
-  signUp:
-    handler: index.signUp
-    events:
-      - http:
-          path: mailing-list
-          method: post
-          cors: true
-  updateUser:
-    handler: index.updateUser
-    events:
-      - http:
-          path: mailing-list
-          method: patch
-          cors: true
   registerForWebinar:
     handler: index.registerForWebinar
     events:
