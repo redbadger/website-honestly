@@ -16,6 +16,7 @@ provider:
       Action:
         - 's3:ListBucket'
         - 's3:PutObject'
+        - 'iam:DeleteRolePolicy'
       Resource:
         - 'arn:aws:s3:::${self:custom.bucket_name}'
         - 'arn:aws:s3:::${self:custom.bucket_name}/*'
