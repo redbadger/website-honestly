@@ -16,6 +16,7 @@ provider:
       Action:
         - 's3:ListBucket'
         - 's3:PutObject'
+        - 'iam:DeleteRolePolicy'
       Resource:
         - 'arn:aws:s3:::${self:custom.bucket_name}'
         - 'arn:aws:s3:::${self:custom.bucket_name}/*'
@@ -32,20 +33,6 @@ functions:
           cors: true
       # Invoke publish function every hour, on the hour, to keep content fresh
       - schedule: cron(0 * * * ? *)
-  signUp:
-    handler: index.signUp
-    events:
-      - http:
-          path: mailing-list
-          method: post
-          cors: true
-  updateUser:
-    handler: index.updateUser
-    events:
-      - http:
-          path: mailing-list
-          method: patch
-          cors: true
   registerForWebinar:
     handler: index.registerForWebinar
     events:
@@ -85,23 +72,3 @@ resources:
         Subscription:
           - Endpoint: '${env:LAMBDA_ERROR_REPORT_EMAIL}'
             Protocol: email
-
-    SignUpLambdaErrorAlarm:
-      Type: AWS::CloudWatch::Alarm
-      Properties:
-        AlarmActions:
-          - Ref: 'ErrorSNSTopic'
-        AlarmDescription: 'An error has been thrown by the lambda function responsible for signing people up to our mailing list'
-        AlarmName: WebsiteHonestlySignUpLambdaErrorAlarm-${env:ENVIRONMENT_NAME}
-        ComparisonOperator: GreaterThanOrEqualToThreshold
-        Dimensions:
-          - Name: FunctionName
-            Value:
-              Ref: SignUpLambdaFunction
-        EvaluationPeriods: 1
-        MetricName: Errors
-        Namespace: AWS/Lambda
-        Period: 60
-        Statistic: Sum
-        Threshold: 1
-        Unit: Count
