@@ -29,21 +29,6 @@ const tweets = [
   },
 ];
 
-const instagramPosts = [
-  {
-    text: 'I am an instagram posts',
-    link: 'https://www.somefakelink-redbadger.com',
-    image: {
-      url: 'https://www.somefakelink-redbadger.com/image.jpg',
-      width: '640px',
-      height: '640px',
-    },
-    comments: 1,
-    likes: 2,
-    created: '1988-02-11',
-  },
-];
-
 const qAndAs = [
   {
     name: 'I am a qanda',
@@ -62,7 +47,7 @@ describe('site/pages/about-us', () => {
     expect(
       render(
         <Context>
-          <AboutUs tweets={tweets} instagramPosts={instagramPosts} qAndAs={qAndAs} />
+          <AboutUs tweets={tweets} qAndAs={qAndAs} />
         </Context>,
       ),
     ).toMatchSnapshot();

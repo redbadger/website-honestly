@@ -7,7 +7,6 @@ describe('site/compiler', () => {
     jobLookup: {},
     events: [],
     eventLookup: {},
-    instagramPosts: [],
     tweets: [],
     badgers: [],
     badgerLookup: {},

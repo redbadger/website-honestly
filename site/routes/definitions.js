@@ -95,9 +95,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
       'Founded by Cain, Dave and Stu in 2010, we’re an award winning independently owned consultancy who believe in doing the right thing and doing the thing right.',
     key: 'aboutUsPage',
     route: 'about-us',
-    stateToProps: ({ tweets, instagramPosts, qAndAs }) => ({
+    stateToProps: ({ tweets, qAndAs }) => ({
       tweets,
-      instagramPosts,
       qAndAs,
     }),
   },
