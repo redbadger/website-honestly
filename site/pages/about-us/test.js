@@ -29,7 +29,6 @@ const tweets = [
   },
 ];
 
-
 const qAndAs = [
   {
     name: 'I am a qanda',
