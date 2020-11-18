@@ -8,14 +8,12 @@ import SwipeableViews from 'react-swipeable-views';
 import styles from './styles.css';
 import IntroMobileTile from './intro-mobile-tile';
 import IntroDesktopTile from './intro-desktop-tile';
-import InstagramTile from './instagram-tile';
 import TwitterTile from './twitter-tile';
-import type { Tweet, InstagramPost } from '../../../types';
+import type { Tweet } from '../../../types';
 import ClientOnly from '../../../components/clientOnly';
 
 type SocialSliceProps = {
   tweets: Array<Tweet>,
-  instagramPosts: Array<InstagramPost>,
 };
 
 type SocialSliceState = {
@@ -29,7 +27,7 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
     super(props);
     this.state = {
       tile: 0,
-      totalTiles: props.instagramPosts.length + (props.tweets.length - 1),
+      totalTiles: props.tweets.length - 1,
       viewWidth: 0,
     };
   }
@@ -121,11 +119,8 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
   }
 
   renderTiles = (): React.Node => {
-    const { tweets, instagramPosts } = this.props;
-    const data = [
-      ...tweets.map(tweet => ({ type: 'tweet', tweet, created: tweet.created })),
-      ...instagramPosts.map(post => ({ type: 'insta-post', post, created: post.created })),
-    ];
+    const { tweets } = this.props;
+    const data = [...tweets.map(tweet => ({ type: 'tweet', tweet, created: tweet.created }))];
 
     if (data.length === 0) {
       return null;
@@ -134,11 +129,7 @@ class SocialSlice extends React.Component<SocialSliceProps, SocialSliceState> {
     data.sort((a, b) => new Date(b.created) - new Date(a.created));
 
     const socialComp = (row, index) => {
-      return row.type === 'insta-post' ? (
-        <InstagramTile key={row.created} post={row.post} index={index} />
-      ) : (
-        <TwitterTile key={row.created} tweet={row.tweet} index={index} />
-      );
+      return <TwitterTile key={row.created} tweet={row.tweet} index={index} />;
     };
 
     return data.map(socialComp);

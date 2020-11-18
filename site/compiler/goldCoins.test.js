@@ -13,7 +13,6 @@ describe('site/compiler', () => {
     events: [],
     eventLookup: {},
     categories,
-    instagramPosts: [],
     tweets: [],
     badgers: [
       {

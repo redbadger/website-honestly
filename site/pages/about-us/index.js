@@ -10,12 +10,11 @@ import Social from '../../components/social';
 
 import metaImage from './meta-image.jpg';
 
-import type { Tweet, InstagramPost } from '../../types';
+import type { Tweet } from '../../types';
 import type { CategoryProps } from './q-and-a-slice/category';
 
 type AboutUsProps = {
   tweets: Array<Tweet>,
-  instagramPosts: Array<InstagramPost>,
   qAndAs: Array<CategoryProps>,
 };
 
@@ -28,7 +27,7 @@ const social = {
   url: 'https://red-badger.com/about-us',
 };
 
-const AboutUs = ({ tweets, instagramPosts, qAndAs }: AboutUsProps) => {
+const AboutUs = ({ tweets, qAndAs }: AboutUsProps) => {
   return (
     <div>
       <Social {...social} />
@@ -36,7 +35,7 @@ const AboutUs = ({ tweets, instagramPosts, qAndAs }: AboutUsProps) => {
       <TimelineSlice />
       <ChecklistContactUs />
       <QAndASlice qAndAs={qAndAs} />
-      <SocialSlice tweets={tweets} instagramPosts={instagramPosts} />
+      <SocialSlice tweets={tweets} />
     </div>
   );
 };

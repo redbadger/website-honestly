@@ -8,7 +8,6 @@ describe('state', () => {
     process.env.HUBSPOT_API_KEY = 'ABC';
     process.env.TWITTER_KEY = 'SECRET_KEY';
     process.env.TWITTER_SECRET = 'SECRET_KEY';
-    process.env.INSTAGRAM_ACCESS_TOKEN = 'SECRET_KEY';
     process.env.BADGER_BRAIN_HOST = 'https://brain-staging.red-badger.com/graphql';
     process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT = 'https://api.hubapi.com/blogs/v3/blog-authors';
   });
@@ -18,7 +17,6 @@ describe('state', () => {
     delete process.env.HUBSPOT_API_KEY;
     delete process.env.TWITTER_KEY;
     delete process.env.TWITTER_SECRET;
-    delete process.env.INSTAGRAM_ACCESS_TOKEN;
     delete process.env.BADGER_BRAIN_HOST;
     delete process.env.HUBSPOT_BLOG_AUTHORS_ENDPOINT;
   });
@@ -35,10 +33,6 @@ describe('state', () => {
     nock('https://redbadger.workable.com')
       .get(/.*jobs*/)
       .reply(200, { jobs: [] });
-
-    nock('https://api.instagram.com')
-      .get(/.*media*/)
-      .reply(200, { data: [] });
 
     nock('https://api.hubapi.com/')
       .get(/.*blog-posts*/)
@@ -68,7 +62,6 @@ describe('state', () => {
         events: [],
         eventsBanner: undefined,
         growingTrendsBlogPosts: [],
-        instagramPosts: [],
         jobLookup: {},
         jobs: [],
         qAndAs: [],
@@ -88,10 +81,6 @@ describe('state', () => {
       .get(/.*jobs*/)
       .reply(500, { jobs: [] });
 
-    nock('https://api.instagram.com')
-      .get(/.*media*/)
-      .reply(500, { data: [] });
-
     nock('https://api.hubapi.com/')
       .get(/.*blog-posts*/)
       .times(2)
@@ -110,16 +99,15 @@ describe('state', () => {
       });
 
     const {
-      data: { jobs, tweets, instagramPosts },
+      data: { jobs, tweets },
       fetchErrors,
     } = await getSiteState();
 
     expect(fetchErrors).toEqual({
-      instagramPosts: 'Internal Server Error',
       jobs: 'Internal Server Error',
       tweets: 'Forbidden',
     });
 
-    expect({ jobs, tweets, instagramPosts }).toEqual({ jobs: [], tweets: [], instagramPosts: [] });
+    expect({ jobs, tweets }).toEqual({ jobs: [], tweets: [] });
   });
 });
