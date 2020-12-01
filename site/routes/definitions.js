@@ -366,6 +366,17 @@ export const routeDefinitions: Array<RouteDefinition> = [
     },
   },
   {
+    title: 'PagoFX case study',
+    description: 'PagoFX case study',
+    key: 'pagoFxCaseStudy',
+    route: 'our-work/case-study/pagofx',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'pagofx',
+    },
+  },
+  {
     title: 'Technology',
     description:
       'We choose the right tech for the job and with meticulous engineering practices we enable continuous delivery, speed to market and create value for customers quickly.',
