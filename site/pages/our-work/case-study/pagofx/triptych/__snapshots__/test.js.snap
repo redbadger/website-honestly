@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/case-study/pride/triptych renders correctly 1`] = `
+<Triptych>
+  <div>
+    <div
+      className="wrapper"
+    >
+      <img
+        alt="Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'"
+        className="leftImg"
+        src="left.png"
+      />
+      <img
+        alt="Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'"
+        className="middleImg"
+        src="middle.png"
+      />
+      <img
+        alt="Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'"
+        className="rightImg"
+        src="right.png"
+      />
+    </div>
+    <div>
+      <form
+        action=""
+        className="controls"
+      >
+        <label
+          key="0"
+        >
+          <span
+            className="fakeControl "
+          />
+          <span
+            className="controlsLabel"
+          >
+            First
+          </span>
+          <input
+            className="controlsInput"
+            name="image"
+            onChange={[Function]}
+            type="radio"
+            value={0}
+          />
+        </label>
+        <label
+          key="1"
+        >
+          <span
+            className="fakeControl fakeControlActive"
+          />
+          <span
+            className="controlsLabel"
+          >
+            First
+          </span>
+          <input
+            className="controlsInput"
+            name="image"
+            onChange={[Function]}
+            type="radio"
+            value={1}
+          />
+        </label>
+        <label
+          key="2"
+        >
+          <span
+            className="fakeControl "
+          />
+          <span
+            className="controlsLabel"
+          >
+            First
+          </span>
+          <input
+            className="controlsInput"
+            name="image"
+            onChange={[Function]}
+            type="radio"
+            value={2}
+          />
+        </label>
+      </form>
+    </div>
+  </div>
+</Triptych>
+`;
