@@ -23,7 +23,9 @@ import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 // Assets
-import header from './images/header@3x.png';
+import header from './images/header.png';
+import header2x from './images/header@2x.png';
+import header3x from './images/header@3x.png';
 import artboard from './images/artboard.png';
 import postitGroup from './images/post-it-group.png';
 import MapDotImage from './map-dot';
@@ -46,107 +48,112 @@ const PagoFx = () => (
     <div className={styles.headerImgWrapper}>
       <Image
         src={header}
+        src2x={header2x}
+        src3x={header3x}
         className={styles.headerImg}
-        altText="People (Badgers) sticking post-its on a blue wall"
+        altText="iPhone showing Pago FX application"
       />
     </div>
     <Body>
-      <PageHeading>PagoFX: Helping Santander build a trusted digital business</PageHeading>
-      <Section>
-        <SectionBody>
-          <P>
-            Red Badger worked with Santander’s PagoFX team to design, build and deliver a
-            best-in-class payments service.
-          </P>
-          <P>
-            Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge,
-            PagoFX is a standalone international money transfer app that offers anyone low cost
-            money transfers, bank-level security, and multi-channel customer support.
-          </P>
-          <P>
-            In 2020, the service was launched in the UK with bold plans to expand into 20 new
-            markets thereafter.
-          </P>
-        </SectionBody>
-      </Section>
-      <Section>
-        {/* TODO: change Id */}
-        <Video name="PagoFX video" elementId="pride-video" videoId="56apxChHLDs" />
-      </Section>
+      <div className={styles.bodyFirstOfType}>
+        <PageHeading>PagoFX: Helping Santander build a trusted digital business</PageHeading>
+        <Section>
+          <SectionBody>
+            <P>
+              Red Badger worked with Santander’s PagoFX team to design, build and deliver a
+              best-in-class payments service.
+            </P>
+            <P>
+              Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge,
+              PagoFX is a standalone international money transfer app that offers anyone low cost
+              money transfers, bank-level security, and multi-channel customer support.
+            </P>
+            <P>
+              In 2020, the service was launched in the UK with bold plans to expand into 20 new
+              markets thereafter.
+            </P>
+          </SectionBody>
+        </Section>
+        <Section>
+          {/* TODO: change Id */}
+          <Video name="PagoFX video" elementId="pride-video" videoId="56apxChHLDs" />
+        </Section>
 
-      <Section>
-        <SectionBody>
-          <Card>
-            {/* TODO: ListBox with a subheading */}
-            <ListBox
-              className={styles.listBox}
-              title="Results, at glance"
-              items={[
-                {
-                  label:
-                    'Built an end-to-end product in just 18 months – in a highly regulated financial sector',
-                },
-                {
-                  label:
-                    'Designed a best-in-class customer experience, powered by user testing across Europe',
-                },
-                {
-                  label:
-                    'Helped establish a solid technical foundation to set PagoFX up for future success',
-                },
-                {
-                  label:
-                    'Created a service that was recognised by users with a 4+ star rating on the App Store ',
-                },
-              ]}
-              itemClassName={styles.listBox__item}
-            />
-          </Card>
-        </SectionBody>
-      </Section>
-      <Section>
-        <SectionHeading heading="Finding the right product-market fit" />
-        <SectionBody>
-          <P>
-            Over the last couple of years, international transfers have seen an increasing number of
-            new-to-market providers offering innovative, user centred services. Consumer
-            expectations are changing fast.
-          </P>
+        <Section>
+          <SectionBody>
+            <Card>
+              {/* TODO: ListBox with a subheading */}
+              <ListBox
+                className={styles.listBox}
+                title="Results, at glance"
+                items={[
+                  {
+                    label:
+                      'Built an end-to-end product in just 18 months – in a highly regulated financial sector',
+                  },
+                  {
+                    label:
+                      'Designed a best-in-class customer experience, powered by user testing across Europe',
+                  },
+                  {
+                    label:
+                      'Helped establish a solid technical foundation to set PagoFX up for future success',
+                  },
+                  {
+                    label:
+                      'Created a service that was recognised by users with a 4+ star rating on the App Store ',
+                  },
+                ]}
+                itemClassName={styles.listBox__item}
+              />
+            </Card>
+          </SectionBody>
+        </Section>
+        <Section>
+          <SectionHeading heading="Finding the right product-market fit" />
+          <SectionBody>
+            <P>
+              Over the last couple of years, international transfers have seen an increasing number
+              of new-to-market providers offering innovative, user centred services. Consumer
+              expectations are changing fast.
+            </P>
 
-          <P>
-            In this context, Santander saw an opportunity to delight the market with a brand new
-            service that brings together the best of both worlds. PagoFX combines the trust and
-            security of a large established bank with the single-minded customer focus of an
-            industry disruptor.
-          </P>
-          <H3>Defining unknown problems</H3>
-          <P>
-            Money transfer services haven’t traditionally been beloved of customers. Imagine
-            WhatsApp without the blue ticks, without notifications and where only half your message
-            gets delivered. Then imagine being charged £20 to send that message. That’s what sending
-            money overseas has felt like for many.
-          </P>
-          <P>
-            How do you shake that up and offer something altogether more effortless and reassuring?
-            PagoFX&apos;s key selling points are around giving back control to the customer through
-            transparency, offering fair pricing, and being trustworthy (which goes hand in hand with
-            being backed by a world-renowned bank).
-          </P>
-          <P>
-            Part of our job was to validate the assumptions underlying the new product and help
-            PagoFX product owners prioritise which problems to solve first.
-          </P>
-          <P>
-            Red Badger experts set out to design a minimum desirable product – a limited internal
-            pilot launch of an iOS application with a full customer onboarding journey and
-            end-to-end international payment encompassing the capture of funds, FX hedging, and
-            settlement.
-          </P>
-        </SectionBody>
-      </Section>
+            <P>
+              In this context, Santander saw an opportunity to delight the market with a brand new
+              service that brings together the best of both worlds. PagoFX combines the trust and
+              security of a large established bank with the single-minded customer focus of an
+              industry disruptor.
+            </P>
+            <div className={styles.h3}>
+              <H3>Defining unknown problems</H3>
+            </div>
+            <P>
+              Money transfer services haven’t traditionally been beloved of customers. Imagine
+              WhatsApp without the blue ticks, without notifications and where only half your
+              message gets delivered. Then imagine being charged £20 to send that message. That’s
+              what sending money overseas has felt like for many.
+            </P>
+            <P>
+              How do you shake that up and offer something altogether more effortless and
+              reassuring? PagoFX&apos;s key selling points are around giving back control to the
+              customer through transparency, offering fair pricing, and being trustworthy (which
+              goes hand in hand with being backed by a world-renowned bank).
+            </P>
+            <P>
+              Part of our job was to validate the assumptions underlying the new product and help
+              PagoFX product owners prioritise which problems to solve first.
+            </P>
+            <P>
+              Red Badger experts set out to design a minimum desirable product – a limited internal
+              pilot launch of an iOS application with a full customer onboarding journey and
+              end-to-end international payment encompassing the capture of funds, FX hedging, and
+              settlement.
+            </P>
+          </SectionBody>
+        </Section>
+      </div>
     </Body>
-
-    <div className={styles.headerImgWrapper}>
+    <div className={styles.bannerWrapper}>
       <Image
         src={artboard}
         className={styles.headerImg}
@@ -155,7 +162,9 @@ const PagoFx = () => (
     </div>
     <Body>
       <Section>
-        <H3>Speaking to real customers</H3>
+        <div className={styles.h3}>
+          <H3>Speaking to real customers</H3>
+        </div>
         <P>
           At Red Badger, we believe in getting out of the building to speak to real customers,
           shaping products with people at their heart. This project was no exception. We listened,
@@ -181,7 +190,9 @@ const PagoFx = () => (
         <ArticleImg src={postitGroup} alt="Post it with ideas" />
       </Section>
       <Section>
-        <H3>Thinking like a start-up</H3>
+        <div className={styles.h3}>
+          <H3>Thinking like a start-up</H3>
+        </div>
         <P>
           To create value fast, we needed to run the project according to Lean and Agile principles.
           The PagoFX team was set up to operate independently of the larger bank’s operations. It
@@ -224,7 +235,9 @@ const PagoFx = () => (
             EU. While the pilot product was an end-to-end journey, the full scope of work for a
             public launch was significantly larger and more complex.
           </P>
-          <H3>Scaling and learning</H3>
+          <div className={styles.h3}>
+            <H3>Scaling and learning</H3>
+          </div>
           <P>
             To achieve the larger scale launch at speed, the project grew from one Red Badger team
             to four parallel Red Badger teams.

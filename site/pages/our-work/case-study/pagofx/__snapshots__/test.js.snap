@@ -8,12 +8,12 @@ Array [
     <picture>
       <source
         class="headerImg"
-        srcset="header@3x.png"
+        srcset="header.png, header@2x.png 2x, header@3x.png 3x"
       />
       <img
         alt=""
         class="headerImg"
-        src="header@3x.png"
+        src="header.png"
       />
     </picture>
   </div>,
@@ -21,159 +21,167 @@ Array [
     class="body"
   >
     <div
-      class="heading"
-    >
-      <h1
-        class="fontL "
-      >
-        PagoFX: Helping Santander build a trusted digital business
-      </h1>
-    </div>
-    <div
-      class="section"
+      class="bodyFirstOfType"
     >
       <div
-        class="sectionBody"
+        class="heading"
       >
-        <p
-          class="fontXS paragraph"
+        <h1
+          class="fontL "
         >
-          Red Badger worked with Santander’s PagoFX team to design, build and deliver a best-in-class payments service.
-        </p>
-        <p
-          class="fontXS paragraph"
-        >
-          Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge, PagoFX is a standalone international money transfer app that offers anyone low cost money transfers, bank-level security, and multi-channel customer support.
-        </p>
-        <p
-          class="fontXS paragraph"
-        >
-          In 2020, the service was launched in the UK with bold plans to expand into 20 new markets thereafter.
-        </p>
+          PagoFX: Helping Santander build a trusted digital business
+        </h1>
       </div>
-    </div>
-    <div
-      class="section"
-    >
       <div
-        class="videoContainer"
-      >
-        <span>
-          <div
-            id="pride-video"
-          />
-        </span>
-      </div>
-    </div>
-    <div
-      class="section"
-    >
-      <div
-        class="sectionBody"
+        class="section"
       >
         <div
-          class="Card"
+          class="sectionBody"
+        >
+          <p
+            class="fontXS paragraph"
+          >
+            Red Badger worked with Santander’s PagoFX team to design, build and deliver a best-in-class payments service.
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge, PagoFX is a standalone international money transfer app that offers anyone low cost money transfers, bank-level security, and multi-channel customer support.
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            In 2020, the service was launched in the UK with bold plans to expand into 20 new markets thereafter.
+          </p>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="videoContainer"
+        >
+          <span>
+            <div
+              id="pride-video"
+            />
+          </span>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
         >
           <div
-            class="listBox listBox"
+            class="Card"
           >
-            <h3
-              class="listBox__heading"
+            <div
+              class="listBox listBox"
             >
-              Results, at glance
-            </h3>
-            <ul>
-              <li
-                class="listBox__element listBox__element--results listBox__item"
+              <h3
+                class="listBox__heading"
               >
-                <div>
-                  Built an end-to-end product in just 18 months – in a highly regulated financial sector
-                </div>
-                <div />
-              </li>
-              <li
-                class="listBox__element listBox__element--results listBox__item"
-              >
-                <div>
-                  Designed a best-in-class customer experience, powered by user testing across Europe
-                </div>
-                <div />
-              </li>
-              <li
-                class="listBox__element listBox__element--results listBox__item"
-              >
-                <div>
-                  Helped establish a solid technical foundation to set PagoFX up for future success
-                </div>
-                <div />
-              </li>
-              <li
-                class="listBox__element listBox__element--results listBox__item"
-              >
-                <div>
-                  Created a service that was recognised by users with a 4+ star rating on the App Store 
-                </div>
-                <div />
-              </li>
-            </ul>
+                Results, at glance
+              </h3>
+              <ul>
+                <li
+                  class="listBox__element listBox__element--results listBox__item"
+                >
+                  <div>
+                    Built an end-to-end product in just 18 months – in a highly regulated financial sector
+                  </div>
+                  <div />
+                </li>
+                <li
+                  class="listBox__element listBox__element--results listBox__item"
+                >
+                  <div>
+                    Designed a best-in-class customer experience, powered by user testing across Europe
+                  </div>
+                  <div />
+                </li>
+                <li
+                  class="listBox__element listBox__element--results listBox__item"
+                >
+                  <div>
+                    Helped establish a solid technical foundation to set PagoFX up for future success
+                  </div>
+                  <div />
+                </li>
+                <li
+                  class="listBox__element listBox__element--results listBox__item"
+                >
+                  <div>
+                    Created a service that was recognised by users with a 4+ star rating on the App Store 
+                  </div>
+                  <div />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="section"
-    >
-      <h2
-        class="sectionHeading"
-      >
-        <span
-          class="redTitle"
-        />
-        Finding the right product-market fit
-      </h2>
       <div
-        class="sectionBody"
+        class="section"
       >
-        <p
-          class="fontXS paragraph"
+        <h2
+          class="sectionHeading"
         >
-          Over the last couple of years, international transfers have seen an increasing number of new-to-market providers offering innovative, user centred services. Consumer expectations are changing fast.
-        </p>
-        <p
-          class="fontXS paragraph"
+          <span
+            class="redTitle"
+          />
+          Finding the right product-market fit
+        </h2>
+        <div
+          class="sectionBody"
         >
-          In this context, Santander saw an opportunity to delight the market with a brand new service that brings together the best of both worlds. PagoFX combines the trust and security of a large established bank with the single-minded customer focus of an industry disruptor.
-        </p>
-        <h3
-          class="fontS2 "
-        >
-          Defining unknown problems
-        </h3>
-        <p
-          class="fontXS paragraph"
-        >
-          Money transfer services haven’t traditionally been beloved of customers. Imagine WhatsApp without the blue ticks, without notifications and where only half your message gets delivered. Then imagine being charged £20 to send that message. That’s what sending money overseas has felt like for many.
-        </p>
-        <p
-          class="fontXS paragraph"
-        >
-          How do you shake that up and offer something altogether more effortless and reassuring? PagoFX's key selling points are around giving back control to the customer through transparency, offering fair pricing, and being trustworthy (which goes hand in hand with being backed by a world-renowned bank).
-        </p>
-        <p
-          class="fontXS paragraph"
-        >
-          Part of our job was to validate the assumptions underlying the new product and help PagoFX product owners prioritise which problems to solve first.
-        </p>
-        <p
-          class="fontXS paragraph"
-        >
-          Red Badger experts set out to design a minimum desirable product – a limited internal pilot launch of an iOS application with a full customer onboarding journey and end-to-end international payment encompassing the capture of funds, FX hedging, and settlement.
-        </p>
+          <p
+            class="fontXS paragraph"
+          >
+            Over the last couple of years, international transfers have seen an increasing number of new-to-market providers offering innovative, user centred services. Consumer expectations are changing fast.
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            In this context, Santander saw an opportunity to delight the market with a brand new service that brings together the best of both worlds. PagoFX combines the trust and security of a large established bank with the single-minded customer focus of an industry disruptor.
+          </p>
+          <div
+            class="h3"
+          >
+            <h3
+              class="fontS2 "
+            >
+              Defining unknown problems
+            </h3>
+          </div>
+          <p
+            class="fontXS paragraph"
+          >
+            Money transfer services haven’t traditionally been beloved of customers. Imagine WhatsApp without the blue ticks, without notifications and where only half your message gets delivered. Then imagine being charged £20 to send that message. That’s what sending money overseas has felt like for many.
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            How do you shake that up and offer something altogether more effortless and reassuring? PagoFX's key selling points are around giving back control to the customer through transparency, offering fair pricing, and being trustworthy (which goes hand in hand with being backed by a world-renowned bank).
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            Part of our job was to validate the assumptions underlying the new product and help PagoFX product owners prioritise which problems to solve first.
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            Red Badger experts set out to design a minimum desirable product – a limited internal pilot launch of an iOS application with a full customer onboarding journey and end-to-end international payment encompassing the capture of funds, FX hedging, and settlement.
+          </p>
+        </div>
       </div>
     </div>
   </div>,
   <div
-    class="headerImgWrapper"
+    class="bannerWrapper"
   >
     <picture>
       <source
@@ -193,11 +201,15 @@ Array [
     <div
       class="section"
     >
-      <h3
-        class="fontS2 "
+      <div
+        class="h3"
       >
-        Speaking to real customers
-      </h3>
+        <h3
+          class="fontS2 "
+        >
+          Speaking to real customers
+        </h3>
+      </div>
       <p
         class="fontXS paragraph"
       >
@@ -227,11 +239,15 @@ Array [
     <div
       class="section"
     >
-      <h3
-        class="fontS2 "
+      <div
+        class="h3"
       >
-        Thinking like a start-up
-      </h3>
+        <h3
+          class="fontS2 "
+        >
+          Thinking like a start-up
+        </h3>
+      </div>
       <p
         class="fontXS paragraph"
       >
@@ -651,11 +667,15 @@ Array [
         >
           The pilot’s success meant the next goals were a full launch in the UK, followed by the EU. While the pilot product was an end-to-end journey, the full scope of work for a public launch was significantly larger and more complex.
         </p>
-        <h3
-          class="fontS2 "
+        <div
+          class="h3"
         >
-          Scaling and learning
-        </h3>
+          <h3
+            class="fontS2 "
+          >
+            Scaling and learning
+          </h3>
+        </div>
         <p
           class="fontXS paragraph"
         >

@@ -1,5 +1,5 @@
 @value badgerRedOnWhite, badgerAccessibleRedOnBlack from '../../../../css/_colors.css';
-@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+/* @value mediumScreen, largeScreen from "../../../../css/_sizes.css"; */
 
 .listBox__item:last-child {
   border: none;
@@ -21,17 +21,27 @@
 }
 
 .headerImgWrapper {
-  text-align: center;
+  /* text-align: center;
   max-height: 460px;
   height: 50vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #2d2f7f;
-  min-height: 255px;
+  justify-content: center; */
 }
 
 .headerImg {
-  display: inline-block;
-  height: 210px;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.h3 {
+  padding-bottom: 25px;
+}
+
+.bodyFirstOfType {
+  margin-bottom: -120px;
+}
+
+.bannerWrapper {
+  padding-bottom: 20px;
 }
