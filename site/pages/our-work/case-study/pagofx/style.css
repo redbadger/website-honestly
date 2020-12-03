@@ -20,14 +20,6 @@
   border-bottom: 2px solid badgerAccessibleRedOnBlack;
 }
 
-.headerImgWrapper {
-  /* text-align: center;
-  max-height: 460px;
-  height: 50vw;
-  display: flex;
-  justify-content: center; */
-}
-
 .headerImg {
   display: block;
   height: auto;
@@ -38,10 +30,19 @@
   padding-bottom: 25px;
 }
 
-.bodyFirstOfType {
-  margin-bottom: -120px;
+.h2 > h2 {
+  font-size: 30px;
+}
+
+.body {
+  margin-bottom: -100px;
 }
 
 .bannerWrapper {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+.listWrapper > ul {
+  padding-left: 0px;
+  list-style: inside;
 }
