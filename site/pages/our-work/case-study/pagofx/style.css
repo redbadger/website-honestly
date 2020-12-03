@@ -26,6 +26,12 @@
   max-width: 100%;
 }
 
+.banner {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
 .h3 {
   padding-bottom: 25px;
 }
@@ -59,5 +65,45 @@
 
   .lastParagraphWrapper {
     padding-bottom: 60px;
+  }
+}
+
+@media largeScreen {
+  .desktopContentWrapper > div {
+    max-width: 920px;
+  }
+
+  .videoAndResultsDesktop {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .videoAndResultsDesktop > div {
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .videoAndResultsDesktop > div:first-of-type {
+    max-width: 590px;
+  }
+
+  .videoAndResultsDesktop > div:last-of-type {
+    max-width: 450px;
+  }
+
+  .tabletContentWrapper > div {
+    max-width: 920px;
+  }
+
+  .bannerWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    width: 100%;
   }
 }

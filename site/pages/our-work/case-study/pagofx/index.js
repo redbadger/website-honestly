@@ -46,7 +46,7 @@ const PagoFx = () => (
   <ScrollTracker>
     <Social {...social} />
     <Image
-      src={header}
+      src={header3x}
       src2x={header2x}
       src3x={header3x}
       className={styles.headerImg}
@@ -56,6 +56,7 @@ const PagoFx = () => (
       <div className={styles.body}>
         <PageHeading>PagoFX: Helping Santander build a trusted digital business</PageHeading>
         <Section>
+          {/* <div className={styles.desktopContentWrapper}> */}
           <SectionBody>
             <P>
               Red Badger worked with Santander’s PagoFX team to design, build and deliver a
@@ -71,40 +72,44 @@ const PagoFx = () => (
               markets thereafter.
             </P>
           </SectionBody>
+          {/* </div> */}
         </Section>
-        <Section>
-          <Video name="PagoFX video" elementId="pride-video" videoId="56apxChHLDs" />
-        </Section>
+        <div className={styles.videoAndResultsDesktop}>
+          <Section>
+            <Video name="PagoFX video" elementId="pride-video" videoId="56apxChHLDs" />
+          </Section>
 
-        <Section>
-          <SectionBody>
-            <Card>
-              <ListBox
-                className={styles.listBox}
-                title="Results, at glance"
-                items={[
-                  {
-                    label:
-                      'Built an end-to-end product in just 18 months – in a highly regulated financial sector',
-                  },
-                  {
-                    label:
-                      'Designed a best-in-class customer experience, powered by user testing across Europe',
-                  },
-                  {
-                    label:
-                      'Helped establish a solid technical foundation to set PagoFX up for future success',
-                  },
-                  {
-                    label:
-                      'Created a service that was recognised by users with a 4+ star rating on the App Store ',
-                  },
-                ]}
-                itemClassName={styles.listBox__item}
-              />
-            </Card>
-          </SectionBody>
-        </Section>
+          <Section>
+            <SectionBody>
+              <Card>
+                <ListBox
+                  className={styles.listBox}
+                  title="Results, at glance"
+                  items={[
+                    {
+                      label:
+                        'Built an end-to-end product in just 18 months – in a highly regulated financial sector',
+                    },
+                    {
+                      label:
+                        'Designed a best-in-class customer experience, powered by user testing across Europe',
+                    },
+                    {
+                      label:
+                        'Helped establish a solid technical foundation to set PagoFX up for future success',
+                    },
+                    {
+                      label:
+                        'Created a service that was recognised by users with a 4+ star rating on the App Store ',
+                    },
+                  ]}
+                  itemClassName={styles.listBox__item}
+                />
+              </Card>
+            </SectionBody>
+          </Section>
+        </div>
+
         <Section>
           <div className={styles.h2}>
             <SectionHeading heading="Finding the right product-market fit" />
@@ -156,7 +161,7 @@ const PagoFx = () => (
     <div className={styles.bannerWrapper}>
       <Image
         src={artboard}
-        className={styles.headerImg}
+        className={styles.banner}
         altText="Challenger mindset plus Santander is equal to Pago FX"
       />
     </div>
