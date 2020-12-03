@@ -73,14 +73,12 @@ const PagoFx = () => (
           </SectionBody>
         </Section>
         <Section>
-          {/* TODO: change Id */}
           <Video name="PagoFX video" elementId="pride-video" videoId="56apxChHLDs" />
         </Section>
 
         <Section>
           <SectionBody>
             <Card>
-              {/* TODO: ListBox with a subheading */}
               <ListBox
                 className={styles.listBox}
                 title="Results, at glance"
@@ -246,7 +244,6 @@ const PagoFx = () => (
               to four parallel Red Badger teams.
             </P>
             <P>Here’s what the additional teams worked on:</P>
-            {/* TODO: check if list is like this or design */}
             <div className={styles.listWrapper}>
               <UL>
                 <li> Android application – a key platform to reach customers in the EU markets</li>
@@ -272,7 +269,6 @@ const PagoFx = () => (
               We created a clear roadmap to incorporate customer desires and feedback, to continue
               to improve the experience and grow the customer base.
             </P>
-            {/* TODO: Check on Tryptych to check wy is not rendering one of the images */}
             <Triptych />
           </SectionBody>
         </Section>

@@ -2,7 +2,7 @@
   margin: 0 auto 20px;
   display: flex;
   position: relative;
-  transform: translateX(calc((-740px + 100vw) / 2));
+  transform: translateX(calc((-800px + 100vw) / 2));
   width: 700px;
   justify-content: space-between;
   align-items: flex-start;
@@ -11,12 +11,12 @@
 
 .wrapperLeft {
   composes: wrapper;
-  transform: translateX(calc((-740px + 100vw) / 2 + 240px));
+  transform: translateX(calc((-280px + 100vw) / 2));
 }
 
 .wrapperRight {
   composes: wrapper;
-  transform: translateX(calc((-740px + 100vw) / 2 - 240px));
+  transform: translateX(calc((-570px - 100vw) / 2));
 }
 
 .controls {
@@ -47,7 +47,7 @@
 }
 
 .img {
-  max-height: 400px;
+  max-height: 240px;
 }
 
 .leftImg {
@@ -56,6 +56,7 @@
 
 .middleImg {
   composes: img;
+  margin: 0 20px;
 }
 
 .rightImg {
