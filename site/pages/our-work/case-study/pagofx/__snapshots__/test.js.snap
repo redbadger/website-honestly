@@ -5,12 +5,12 @@ Array [
   <picture>
     <source
       class="headerImg"
-      srcset="header.png, header@2x.png 2x, header@3x.png 3x"
+      srcset="header@3x.png, header@2x.png 2x, header@3x.png 3x"
     />
     <img
       alt=""
       class="headerImg"
-      src="header.png"
+      src="header@3x.png"
     />
   </picture>,
   <div
@@ -52,69 +52,73 @@ Array [
         </div>
       </div>
       <div
-        class="section"
+        class="videoAndResultsDesktop"
       >
         <div
-          class="videoContainer"
-        >
-          <span>
-            <div
-              id="pride-video"
-            />
-          </span>
-        </div>
-      </div>
-      <div
-        class="section"
-      >
-        <div
-          class="sectionBody"
+          class="section"
         >
           <div
-            class="Card"
+            class="videoContainer"
+          >
+            <span>
+              <div
+                id="pride-video"
+              />
+            </span>
+          </div>
+        </div>
+        <div
+          class="section"
+        >
+          <div
+            class="sectionBody"
           >
             <div
-              class="listBox listBox"
+              class="Card"
             >
-              <h3
-                class="listBox__heading"
+              <div
+                class="listBox listBox"
               >
-                Results, at glance
-              </h3>
-              <ul>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
+                <h3
+                  class="listBox__heading"
                 >
-                  <div>
-                    Built an end-to-end product in just 18 months – in a highly regulated financial sector
-                  </div>
-                  <div />
-                </li>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
-                >
-                  <div>
-                    Designed a best-in-class customer experience, powered by user testing across Europe
-                  </div>
-                  <div />
-                </li>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
-                >
-                  <div>
-                    Helped establish a solid technical foundation to set PagoFX up for future success
-                  </div>
-                  <div />
-                </li>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
-                >
-                  <div>
-                    Created a service that was recognised by users with a 4+ star rating on the App Store 
-                  </div>
-                  <div />
-                </li>
-              </ul>
+                  Results, at glance
+                </h3>
+                <ul>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      Built an end-to-end product in just 18 months – in a highly regulated financial sector
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      Designed a best-in-class customer experience, powered by user testing across Europe
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      Helped establish a solid technical foundation to set PagoFX up for future success
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      Created a service that was recognised by users with a 4+ star rating on the App Store 
+                    </div>
+                    <div />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -189,12 +193,12 @@ Array [
   >
     <picture>
       <source
-        class="headerImg"
+        class="banner"
         srcset="artboard.png"
       />
       <img
         alt=""
-        class="headerImg"
+        class="banner"
         src="artboard.png"
       />
     </picture>
@@ -248,12 +252,16 @@ Array [
               </p>
             </div>
           </div>
-          <img
-            alt="Post it with ideas"
-            class="articleImg"
-            src="post-it-group.png"
-          />
         </div>
+      </div>
+      <div
+        class="postitGroupWrapper"
+      >
+        <img
+          alt="Post it with ideas"
+          class="articleImg"
+          src="post-it-group.png"
+        />
       </div>
       <div
         class="section"

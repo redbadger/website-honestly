@@ -198,9 +198,11 @@ const PagoFx = () => (
                 </P>
               </div>
             </div>
-            <ArticleImg src={postitGroup} alt="Post it with ideas" />
           </SectionBody>
         </Section>
+        <div className={styles.postitGroupWrapper}>
+          <ArticleImg src={postitGroup} alt="Post it with ideas" />
+        </div>
         <Section>
           <SectionBody>
             <div className={styles.tabletContentWrapper}>

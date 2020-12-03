@@ -106,4 +106,9 @@
   .banner {
     width: 100%;
   }
+
+  .postitGroupWrapper {
+    margin: -40px 0 40px;
+    max-width: 930px;
+  }
 }
