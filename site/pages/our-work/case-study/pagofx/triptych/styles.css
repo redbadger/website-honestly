@@ -1,3 +1,4 @@
+@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
 .wrapper {
   margin: 0 auto 20px;
   display: flex;
@@ -16,7 +17,7 @@
 
 .wrapperRight {
   composes: wrapper;
-  transform: translateX(calc((-570px - 100vw) / 2));
+  transform: translateX(calc((-280px - 100vw) / 2));
 }
 
 .controls {
@@ -63,19 +64,23 @@
   composes: img;
 }
 
-@media (min-width: 700px) {
+@media mediumScreen {
   .controls {
     display: none;
   }
 
   .wrapper {
-    transform: translateX(0);
     width: 100%;
+    transform: none;
   }
 
   .img {
-    width: 32%;
+    width: calc(33.33% - 10px);
     max-height: none;
+  }
+
+  .middleImg {
+    margin: 0;
   }
 }
 

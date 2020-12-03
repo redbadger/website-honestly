@@ -1,5 +1,5 @@
 @value badgerRedOnWhite, badgerAccessibleRedOnBlack from '../../../../css/_colors.css';
-/* @value mediumScreen, largeScreen from "../../../../css/_sizes.css"; */
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
 
 .listBox__item:last-child {
   border: none;
@@ -45,4 +45,19 @@
 .listWrapper > ul {
   padding-left: 0px;
   list-style: inside;
+}
+
+@media mediumScreen {
+  .tabletContentWrapper {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .bannerWrapper {
+    padding: 0 20px 40px;
+  }
+
+  .lastParagraphWrapper {
+    padding-bottom: 60px;
+  }
 }
