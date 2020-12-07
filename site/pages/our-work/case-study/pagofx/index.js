@@ -19,7 +19,6 @@ import {
 import ListBox from '../../../../components/list-box';
 import Card from '../../../../components/card';
 import Video from '../shared/video';
-// import Triptych from './triptych';
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 

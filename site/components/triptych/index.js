@@ -3,24 +3,26 @@
 import * as React from 'react';
 import styles from './styles.css';
 
-class Triptych extends React.Component<
-  {},
-  {
-    activeImg: number,
-    srcImageLeft: string,
-    srcImageMiddle: string,
-    srcImageRight: string,
-    altImageLeft: string,
-    altImageMiddle: string,
-    altImageRight: string,
-  },
-> {
+type PropsType = {
+  srcImageLeft: string,
+  srcImageMiddle: string,
+  srcImageRight: string,
+  altImageLeft: string,
+  altImageMiddle: string,
+  altImageRight: string,
+};
+
+type StateType = {
+  activeImg: number,
+};
+
+class Triptych extends React.Component<PropsType, StateType> {
   static wrapperClasses = [styles.wrapperLeft, styles.wrapper, styles.wrapperRight];
 
   static activeClass = (current: number, activeImg: number) =>
     `${styles.fakeControl} ${activeImg === current ? styles.fakeControlActive : ''}`;
 
-  constructor(props: {}) {
+  constructor(props: PropsType) {
     super(props);
 
     this.state = {
