@@ -4,6 +4,7 @@ import React from 'react';
 import ScrollTracker from '../../../../components/scroll-tracker';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
+import Triptych from '../../../../components/triptych';
 import {
   PageHeading,
   Body,
@@ -18,7 +19,7 @@ import {
 import ListBox from '../../../../components/list-box';
 import Card from '../../../../components/card';
 import Video from '../shared/video';
-import Triptych from './triptych';
+// import Triptych from './triptych';
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 

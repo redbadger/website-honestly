@@ -3,10 +3,6 @@
 import * as React from 'react';
 import styles from './styles.css';
 
-// import left from './images/left.png';
-// import middle from './images/middle.png';
-// import right from './images/right.png';
-
 class Triptych extends React.Component<
   {},
   {

@@ -1,4 +1,4 @@
-@value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .wrapper {
   margin: 0 auto 20px;
@@ -39,7 +39,7 @@
 }
 
 .controlsLabel {
-  composes: visuallyHidden from '../../../../../css/_accessibility.css';
+  composes: visuallyHidden from '../../css/_accessibility.css';
 }
 
 .controlsInput {
