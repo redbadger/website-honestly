@@ -1,4 +1,5 @@
 @value mediumScreen, largeScreen from "../../../../../css/_sizes.css";
+
 .wrapper {
   margin: 0 auto 20px;
   display: flex;
@@ -67,33 +68,5 @@
   .wrapper {
     width: 100%;
     transform: none;
-  }
-
-  /* .img {
-    width: calc(33.33% - 10px);
-    max-height: none;
-  } */
-
-  /* .middleImg {
-    margin: 0;
-  } */
-}
-
-@media (min-width: 881px) {
-  .wrapper {
-    transform: translateX(-75px);
-    width: 800px;
-  }
-
-  .img {
-    max-height: none;
-    width: 32%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .wrapper {
-    transform: translateX(-260px);
-    width: 1160px;
   }
 }

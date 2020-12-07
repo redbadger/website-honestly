@@ -290,8 +290,8 @@ const PagoFx = () => (
                 to improve the experience and grow the customer base.
               </P>
             </div>
-            <Triptych />
           </SectionBody>
+          <Triptych />
         </Section>
         <Section>
           <div className={styles.h2}>

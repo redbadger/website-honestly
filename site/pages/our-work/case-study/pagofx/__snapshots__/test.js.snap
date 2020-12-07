@@ -756,87 +756,87 @@ Array [
               We created a clear roadmap to incorporate customer desires and feedback, to continue to improve the experience and grow the customer base.
             </p>
           </div>
+        </div>
+        <div>
+          <div
+            class="wrapper"
+          >
+            <picture>
+              <img
+                alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+                class="leftImg"
+                src="left.png"
+              />
+            </picture>
+            <picture>
+              <img
+                alt="Phone with the Pago FX app on in screen displaying a list 'greetings Reece'"
+                class="middleImg"
+                src="middle.png"
+              />
+            </picture>
+            <picture>
+              <img
+                alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+                class="rightImg"
+                src="right.png"
+              />
+            </picture>
+          </div>
           <div>
-            <div
-              class="wrapper"
+            <form
+              action=""
+              class="controls"
             >
-              <picture>
-                <img
-                  alt="Phone with the Pago FX app on in screen displaying a convertion quote"
-                  class="leftImg"
-                  src="left.png"
+              <label>
+                <span
+                  class="fakeControl "
                 />
-              </picture>
-              <picture>
-                <img
-                  alt="Phone with the Pago FX app on in screen displaying a list 'greetings Reece'"
-                  class="middleImg"
-                  src="middle.png"
+                <span
+                  class="controlsLabel"
+                >
+                  First
+                </span>
+                <input
+                  class="controlsInput"
+                  name="image"
+                  type="radio"
+                  value="0"
                 />
-              </picture>
-              <picture>
-                <img
-                  alt="Phone with the Pago FX app on in screen displaying a convertion quote"
-                  class="rightImg"
-                  src="right.png"
+              </label>
+              <label>
+                <span
+                  class="fakeControl fakeControlActive"
                 />
-              </picture>
-            </div>
-            <div>
-              <form
-                action=""
-                class="controls"
-              >
-                <label>
-                  <span
-                    class="fakeControl "
-                  />
-                  <span
-                    class="controlsLabel"
-                  >
-                    First
-                  </span>
-                  <input
-                    class="controlsInput"
-                    name="image"
-                    type="radio"
-                    value="0"
-                  />
-                </label>
-                <label>
-                  <span
-                    class="fakeControl fakeControlActive"
-                  />
-                  <span
-                    class="controlsLabel"
-                  >
-                    First
-                  </span>
-                  <input
-                    class="controlsInput"
-                    name="image"
-                    type="radio"
-                    value="1"
-                  />
-                </label>
-                <label>
-                  <span
-                    class="fakeControl "
-                  />
-                  <span
-                    class="controlsLabel"
-                  >
-                    First
-                  </span>
-                  <input
-                    class="controlsInput"
-                    name="image"
-                    type="radio"
-                    value="2"
-                  />
-                </label>
-              </form>
-            </div>
+                <span
+                  class="controlsLabel"
+                >
+                  First
+                </span>
+                <input
+                  class="controlsInput"
+                  name="image"
+                  type="radio"
+                  value="1"
+                />
+              </label>
+              <label>
+                <span
+                  class="fakeControl "
+                />
+                <span
+                  class="controlsLabel"
+                >
+                  First
+                </span>
+                <input
+                  class="controlsInput"
+                  name="image"
+                  type="radio"
+                  value="2"
+                />
+              </label>
+            </form>
           </div>
         </div>
       </div>
