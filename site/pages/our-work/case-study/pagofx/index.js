@@ -29,6 +29,9 @@ import header3x from './images/header@3x.png';
 import artboard from './images/artboard.png';
 import postitGroup from './images/post-it-group.png';
 import MapDotImage from './map-dot';
+import left from './images/left.png';
+import middle from './images/middle.png';
+import right from './images/right.png';
 
 // Styles
 import styles from './style.css';
@@ -40,6 +43,15 @@ const social = {
   metaImage: header,
   altText: 'People (Badgers) sticking post-its on a blue wall',
   url: 'https://red-badger.com/our-work/case-study/pagofx',
+};
+
+const tryptychConfig = {
+  srcImageLeft: left,
+  srcImageMiddle: middle,
+  srcImageRight: right,
+  altImageLeft: 'Phone with the Pago FX app on in screen displaying a convertion quote',
+  altImageMiddle: "Phone with the Pago FX app on in screen displaying a list 'greetings Reece'",
+  altImageRight: 'Phone with the Pago FX app on in screen displaying a convertion quote',
 };
 
 const PagoFx = () => (
@@ -291,7 +303,7 @@ const PagoFx = () => (
               </P>
             </div>
           </SectionBody>
-          <Triptych />
+          <Triptych {...tryptychConfig} />
         </Section>
         <Section>
           <div className={styles.h2}>

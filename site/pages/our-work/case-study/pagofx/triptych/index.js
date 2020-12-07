@@ -3,11 +3,22 @@
 import * as React from 'react';
 import styles from './styles.css';
 
-import left from './images/left.png';
-import middle from './images/middle.png';
-import right from './images/right.png';
+// import left from './images/left.png';
+// import middle from './images/middle.png';
+// import right from './images/right.png';
 
-class Triptych extends React.Component<{}, { activeImg: number }> {
+class Triptych extends React.Component<
+  {},
+  {
+    activeImg: number,
+    srcImageLeft: string,
+    srcImageMiddle: string,
+    srcImageRight: string,
+    altImageLeft: string,
+    altImageMiddle: string,
+    altImageRight: string,
+  },
+> {
   static wrapperClasses = [styles.wrapperLeft, styles.wrapper, styles.wrapperRight];
 
   static activeClass = (current: number, activeImg: number) =>
@@ -90,22 +101,22 @@ class Triptych extends React.Component<{}, { activeImg: number }> {
           <picture>
             <img
               className={styles.leftImg}
-              src={left}
-              alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+              src={this.props.srcImageLeft}
+              alt={this.props.altImageLeft}
             />
           </picture>
           <picture>
             <img
               className={styles.middleImg}
-              src={middle}
-              alt="Phone with the Pago FX app on in screen displaying a list 'greetings Reece'"
+              src={this.props.srcImageMiddle}
+              alt={this.props.altImageMiddle}
             />
           </picture>
           <picture>
             <img
               className={styles.rightImg}
-              src={right}
-              alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+              src={this.props.srcImageRight}
+              alt={this.props.altImageRight}
             />
           </picture>
         </div>
