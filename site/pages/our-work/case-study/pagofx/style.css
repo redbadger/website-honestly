@@ -52,6 +52,9 @@
   padding-left: 0px;
   list-style: inside;
 }
+.postitGroupWrapper {
+  margin-bottom: 40px;
+}
 
 @media mediumScreen {
   .tabletContentWrapper {
@@ -65,6 +68,10 @@
 
   .lastParagraphWrapper {
     padding-bottom: 60px;
+  }
+
+  .postitGroupWrapper {
+    margin-bottom: -40px 0 40px;
   }
 }
 
@@ -105,10 +112,5 @@
 
   .banner {
     width: 100%;
-  }
-
-  .postitGroupWrapper {
-    margin: -40px 0 40px;
-    max-width: 930px;
   }
 }

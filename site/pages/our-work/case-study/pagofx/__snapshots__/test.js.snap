@@ -37,12 +37,25 @@ Array [
           <p
             class="fontXS paragraph"
           >
-            Red Badger worked with Santander’s PagoFX team to design, build and deliver a best-in-class payments service.
+            Red Badger worked with Santander’s 
+            <a
+              class="link"
+              href="https://pagofx.com/"
+            >
+              PagoFX
+            </a>
+             team to design, build and deliver a best-in-class payments service.
           </p>
           <p
             class="fontXS paragraph"
           >
-            Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge, PagoFX is a standalone international money transfer app that offers anyone low cost money transfers, bank-level security, and multi-channel customer support.
+            <a
+              class="link"
+              href="https://www.santander.com/en/press-room/press-releases/2020/04/santander-launches-pagofx-in-the-uk-to-offer-fast-secure-and-low-cost-international-transfers-with-no-fees-for-two-months"
+            >
+              Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge
+            </a>
+            , PagoFX is a standalone international money transfer app that offers anyone low cost money transfers, bank-level security, and multi-channel customer support.
           </p>
           <p
             class="fontXS paragraph"

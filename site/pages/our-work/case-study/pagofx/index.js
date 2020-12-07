@@ -69,15 +69,22 @@ const PagoFx = () => (
       <div className={styles.body}>
         <PageHeading>PagoFX: Helping Santander build a trusted digital business</PageHeading>
         <Section>
-          {/* <div className={styles.desktopContentWrapper}> */}
           <SectionBody>
             <P>
-              Red Badger worked with Santander’s PagoFX team to design, build and deliver a
-              best-in-class payments service.
+              Red Badger worked with Santander’s{' '}
+              <a href="https://pagofx.com/" className={styles.link}>
+                PagoFX
+              </a>{' '}
+              team to design, build and deliver a best-in-class payments service.
             </P>
             <P>
-              Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge,
-              PagoFX is a standalone international money transfer app that offers anyone low cost
+              <a
+                href="https://www.santander.com/en/press-room/press-releases/2020/04/santander-launches-pagofx-in-the-uk-to-offer-fast-secure-and-low-cost-international-transfers-with-no-fees-for-two-months"
+                className={styles.link}
+              >
+                Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge
+              </a>
+              , PagoFX is a standalone international money transfer app that offers anyone low cost
               money transfers, bank-level security, and multi-channel customer support.
             </P>
             <P>
@@ -85,7 +92,6 @@ const PagoFx = () => (
               markets thereafter.
             </P>
           </SectionBody>
-          {/* </div> */}
         </Section>
         <div className={styles.videoAndResultsDesktop}>
           <Section>
