@@ -87,24 +87,27 @@ class Triptych extends React.Component<{}, { activeImg: number }> {
     return (
       <div>
         <div ref={this.node} className={wrapperClass}>
-          <img
-            className={styles.leftImg}
-            src={left}
-            // TODO: Change alt
-            alt="Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'"
-          />
-          <img
-            className={styles.middleImg}
-            src={middle}
-            // TODO: Change alt
-            alt="Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'"
-          />
-          <img
-            className={styles.rightImg}
-            src={right}
-            // TODO: Change alt
-            alt="Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'"
-          />
+          <picture>
+            <img
+              className={styles.leftImg}
+              src={left}
+              alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+            />
+          </picture>
+          <picture>
+            <img
+              className={styles.middleImg}
+              src={middle}
+              alt="Phone with the Pago FX app on in screen displaying a list 'greetings Reece'"
+            />
+          </picture>
+          <picture>
+            <img
+              className={styles.rightImg}
+              src={right}
+              alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+            />
+          </picture>
         </div>
 
         <div>

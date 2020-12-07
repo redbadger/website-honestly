@@ -6,21 +6,27 @@ exports[`pages/our-work/case-study/pride/triptych renders correctly 1`] = `
     <div
       className="wrapper"
     >
-      <img
-        alt="Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'"
-        className="leftImg"
-        src="left.png"
-      />
-      <img
-        alt="Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'"
-        className="middleImg"
-        src="middle.png"
-      />
-      <img
-        alt="Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'"
-        className="rightImg"
-        src="right.png"
-      />
+      <picture>
+        <img
+          alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+          className="leftImg"
+          src="left.png"
+        />
+      </picture>
+      <picture>
+        <img
+          alt="Phone with the Pago FX app on in screen displaying a list 'greetings Reece'"
+          className="middleImg"
+          src="middle.png"
+        />
+      </picture>
+      <picture>
+        <img
+          alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+          className="rightImg"
+          src="right.png"
+        />
+      </picture>
     </div>
     <div>
       <form

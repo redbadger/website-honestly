@@ -760,21 +760,27 @@ Array [
             <div
               class="wrapper"
             >
-              <img
-                alt="Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'"
-                class="leftImg"
-                src="left.png"
-              />
-              <img
-                alt="Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'"
-                class="middleImg"
-                src="middle.png"
-              />
-              <img
-                alt="Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'"
-                class="rightImg"
-                src="right.png"
-              />
+              <picture>
+                <img
+                  alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+                  class="leftImg"
+                  src="left.png"
+                />
+              </picture>
+              <picture>
+                <img
+                  alt="Phone with the Pago FX app on in screen displaying a list 'greetings Reece'"
+                  class="middleImg"
+                  src="middle.png"
+                />
+              </picture>
+              <picture>
+                <img
+                  alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+                  class="rightImg"
+                  src="right.png"
+                />
+              </picture>
             </div>
             <div>
               <form

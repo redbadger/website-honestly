@@ -3,21 +3,33 @@
   margin: 0 auto 20px;
   display: flex;
   position: relative;
-  transform: translateX(calc((-800px + 100vw) / 2));
+  transform: translateX(calc(-25% - 5px));
   width: 700px;
   justify-content: space-between;
   align-items: flex-start;
   transition: transform 0.2s ease-in-out;
 }
 
+.wrapper > picture {
+  background-color: red;
+  display: block;
+  flex-basis: calc(33% - 20px);
+}
+
+.wrapper img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .wrapperLeft {
   composes: wrapper;
-  transform: translateX(calc((-280px + 100vw) / 2));
+  transform: translateX(calc(10% - 5px));
 }
 
 .wrapperRight {
   composes: wrapper;
-  transform: translateX(calc((-280px - 100vw) / 2));
+  transform: translateX(calc(-60% - 5px));
 }
 
 .controls {
@@ -47,23 +59,6 @@
   background-color: grey;
 }
 
-.img {
-  max-height: 240px;
-}
-
-.leftImg {
-  composes: img;
-}
-
-.middleImg {
-  composes: img;
-  margin: 0 20px;
-}
-
-.rightImg {
-  composes: img;
-}
-
 @media mediumScreen {
   .controls {
     display: none;
@@ -74,14 +69,14 @@
     transform: none;
   }
 
-  .img {
+  /* .img {
     width: calc(33.33% - 10px);
     max-height: none;
-  }
+  } */
 
-  .middleImg {
+  /* .middleImg {
     margin: 0;
-  }
+  } */
 }
 
 @media (min-width: 881px) {
