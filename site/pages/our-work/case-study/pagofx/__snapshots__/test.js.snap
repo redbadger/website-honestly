@@ -2,17 +2,21 @@
 
 exports[`site/pages/our-work/case-study/pagofx/ renders correctly 1`] = `
 Array [
-  <picture>
-    <source
-      class="headerImg"
-      srcset="header@3x.png, header@2x.png 2x, header@3x.png 3x"
-    />
-    <img
-      alt=""
-      class="headerImg"
-      src="header@3x.png"
-    />
-  </picture>,
+  <div
+    class="headerImgWrapper"
+  >
+    <picture>
+      <source
+        class="headerImg"
+        srcset="header@3x.png, header@2x.png 2x, header@3x.png 3x"
+      />
+      <img
+        alt=""
+        class="headerImg"
+        src="header@3x.png"
+      />
+    </picture>
+  </div>,
   <div
     class="body"
   >
@@ -41,6 +45,8 @@ Array [
             <a
               class="link"
               href="https://pagofx.com/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               PagoFX
             </a>
@@ -52,6 +58,8 @@ Array [
             <a
               class="link"
               href="https://www.santander.com/en/press-room/press-releases/2020/04/santander-launches-pagofx-in-the-uk-to-offer-fast-secure-and-low-cost-international-transfers-with-no-fees-for-two-months"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge
             </a>
@@ -95,7 +103,7 @@ Array [
                 <h3
                   class="listBox__heading"
                 >
-                  Results, at glance
+                  RESULTS, AT A GLANCE
                 </h3>
                 <ul>
                   <li
@@ -776,7 +784,7 @@ Array [
           >
             <picture>
               <img
-                alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+                alt="Phone with the Pago FX app on in screen displaying a conversion quote"
                 class="leftImg"
                 src="left.png"
               />
@@ -790,7 +798,7 @@ Array [
             </picture>
             <picture>
               <img
-                alt="Phone with the Pago FX app on in screen displaying a convertion quote"
+                alt="Phone with the Pago FX app on in screen displaying a conversion quote"
                 class="rightImg"
                 src="right.png"
               />

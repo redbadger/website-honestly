@@ -49,21 +49,23 @@ const tryptychConfig = {
   srcImageLeft: left,
   srcImageMiddle: middle,
   srcImageRight: right,
-  altImageLeft: 'Phone with the Pago FX app on in screen displaying a convertion quote',
+  altImageLeft: 'Phone with the Pago FX app on in screen displaying a conversion quote',
   altImageMiddle: "Phone with the Pago FX app on in screen displaying a list 'greetings Reece'",
-  altImageRight: 'Phone with the Pago FX app on in screen displaying a convertion quote',
+  altImageRight: 'Phone with the Pago FX app on in screen displaying a conversion quote',
 };
 
 const PagoFx = () => (
   <ScrollTracker>
     <Social {...social} />
-    <Image
-      src={header3x}
-      src2x={header2x}
-      src3x={header3x}
-      className={styles.headerImg}
-      altText="iPhone showing Pago FX application"
-    />
+    <div className={styles.headerImgWrapper}>
+      <Image
+        src={header3x}
+        src2x={header2x}
+        src3x={header3x}
+        className={styles.headerImg}
+        altText="iPhone showing Pago FX application"
+      />
+    </div>
     <Body>
       <div className={styles.body}>
         <PageHeading>PagoFX: Helping Santander build a trusted digital business</PageHeading>
@@ -71,7 +73,12 @@ const PagoFx = () => (
           <SectionBody>
             <P>
               Red Badger worked with Santander’s{' '}
-              <a href="https://pagofx.com/" className={styles.link}>
+              <a
+                href="https://pagofx.com/"
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 PagoFX
               </a>{' '}
               team to design, build and deliver a best-in-class payments service.
@@ -80,6 +87,8 @@ const PagoFx = () => (
               <a
                 href="https://www.santander.com/en/press-room/press-releases/2020/04/santander-launches-pagofx-in-the-uk-to-offer-fast-secure-and-low-cost-international-transfers-with-no-fees-for-two-months"
                 className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge
               </a>
@@ -102,7 +111,7 @@ const PagoFx = () => (
               <Card>
                 <ListBox
                   className={styles.listBox}
-                  title="Results, at glance"
+                  title="RESULTS, AT A GLANCE"
                   items={[
                     {
                       label:

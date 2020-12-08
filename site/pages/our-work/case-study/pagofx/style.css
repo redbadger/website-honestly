@@ -20,10 +20,15 @@
   border-bottom: 2px solid badgerAccessibleRedOnBlack;
 }
 
+.headerImgWrapper {
+  background-image: linear-gradient(to right, rgb(155, 41, 128) 0 50%, rgb(110, 42, 141) 50% 100%);
+}
+
 .headerImg {
   display: block;
   height: auto;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .banner {
