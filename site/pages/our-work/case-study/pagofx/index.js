@@ -103,7 +103,7 @@ const PagoFx = () => (
         </Section>
         <div className={styles.videoAndResultsDesktop}>
           <Section>
-            <Video name="PagoFX video" elementId="pride-video" videoId="56apxChHLDs" />
+            <Video name="PagoFX video" elementId="pagofx-video" videoId="56apxChHLDs" />
           </Section>
 
           <Section>
