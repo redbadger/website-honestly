@@ -77,6 +77,12 @@ const sliceData = {
     image: skyCmsImage,
     linkKey: 'skyCMSCaseStudy',
   },
+  pagoFx: {
+    name: 'PagoFX',
+    tagline: 'Delivering an end-to-end international transfers product in just 18 monts',
+    image: skyCmsImage,
+    linkKey: 'pagoFxCaseStudy',
+  },
 };
 
 export default sliceData;

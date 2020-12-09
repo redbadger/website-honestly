@@ -346,7 +346,7 @@ const PagoFx = () => (
         </Section>
       </div>
     </Body>
-    <WhatToReadNext currentPage="pagofx" linkKeys={[]} />
+    <WhatToReadNext currentPage="pagoFxCaseStudy" linkKeys={[]} />
     <ChecklistContactUs />
   </ScrollTracker>
 );

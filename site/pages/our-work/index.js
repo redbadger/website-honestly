@@ -16,6 +16,7 @@ import FortnumDigitalTransformationSlice from './slices/fortnum-and-mason-digita
 import SkySlice from './slices/sky';
 import Pride from './slices/pride';
 import Fidelity from './slices/fidelity';
+import PagoFxSlice from './slices/pagofx';
 
 import { BBCCell, SkyCell, HallerCell, BMWCell } from './cells';
 import Logos from './logos';
@@ -36,6 +37,7 @@ export default function CaseStudies() {
   };
 
   const slices = [
+    PagoFxSlice,
     SharethymeSlice,
     Pride,
     CarTrawlerSlice,

@@ -298,7 +298,7 @@ export default function Pride() {
           </SectionBody>
         </Section>
       </Body>
-      <WhatToReadNext currentPage="pride" linkKeys={[]} />
+      <WhatToReadNext currentPage="prideCaseStudy" linkKeys={['pagoFx']} />
       <ChecklistContactUs />
     </ScrollTracker>
   );
