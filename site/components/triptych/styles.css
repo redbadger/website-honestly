@@ -1,0 +1,72 @@
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.wrapper {
+  margin: 0 auto 20px;
+  display: flex;
+  position: relative;
+  transform: translateX(calc(-25% - 5px));
+  width: 700px;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s ease-in-out;
+}
+
+.wrapper > picture {
+  background-color: red;
+  display: block;
+  flex-basis: calc(33% - 20px);
+}
+
+.wrapper img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.wrapperLeft {
+  composes: wrapper;
+  transform: translateX(calc(10% - 5px));
+}
+
+.wrapperRight {
+  composes: wrapper;
+  transform: translateX(calc(-60% - 5px));
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.controlsLabel {
+  composes: visuallyHidden from '../../css/_accessibility.css';
+}
+
+.controlsInput {
+  visibility: hidden;
+  display: block;
+}
+
+.fakeControl {
+  border-radius: 50%;
+  background-color: lightgrey;
+  width: 10px;
+  height: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.fakeControlActive {
+  background-color: grey;
+}
+
+@media mediumScreen {
+  .controls {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    transform: none;
+  }
+}

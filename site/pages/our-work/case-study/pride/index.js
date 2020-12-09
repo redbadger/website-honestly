@@ -4,6 +4,7 @@ import React from 'react';
 import Social from '../../../../components/social';
 import Image from '../../../../components/image';
 import ScrollTracker from '../../../../components/scroll-tracker';
+import Triptych from '../../../../components/triptych';
 import {
   PageHeading,
   Body,
@@ -23,13 +24,16 @@ import ListBox from '../../../../components/list-box';
 import Card from '../../../../components/card';
 
 import styles from './style.css';
-import Triptych from './triptych';
+// import Triptych from './triptych';
 
 import socialImg from './images/social.gif';
 import collaborationImg from './images/collaboration.jpg';
 import header from './images/header.gif';
 import Kristof from './images/Kristof_HS.jpg';
 import Lani from './images/Lani_HS.jpg';
+import left from './images/left.jpg';
+import middle from './images/middle.jpg';
+import right from './images/right.jpg';
 
 // Update
 const social = {
@@ -59,6 +63,18 @@ const endQuoteProps = {
     title: 'Delivery Director at Red Badger',
     image: Lani,
   },
+};
+
+const tryptychConfig = {
+  srcImageLeft: left,
+  srcImageMiddle: middle,
+  srcImageRight: right,
+  altImageLeft:
+    "Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'",
+  altImageMiddle:
+    "Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'",
+  altImageRight:
+    "Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'",
 };
 
 export default function Pride() {
@@ -107,7 +123,7 @@ export default function Pride() {
               were not able to reuse the code developed for the previous app thus the product had to
               be built from scratch.
             </P>
-            <Triptych />
+            <Triptych {...tryptychConfig} />
             <H3>The right project for Red Badger</H3>
             <P>
               As a business we&#39;ve always been proud of the work we do and two years ago we

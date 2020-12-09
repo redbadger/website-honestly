@@ -38,6 +38,7 @@ import FortnumAndMasonCaseStudy from '../pages/our-work/case-study/fortnum-and-m
 import HallerCaseStudy from '../pages/our-work/case-study/haller';
 import PrideCaseStudy from '../pages/our-work/case-study/pride';
 import FidelityCaseStudy from '../pages/our-work/case-study/fidelity';
+import PagoFXCaseStudy from '../pages/our-work/case-study/pagofx';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
@@ -80,6 +81,7 @@ const componentMap = {
   termsAndConditions: TermsAndConditions,
   whatWeDoPage: WhatWeDoPage,
   goldCoinPage: GoldCoinLP,
+  pagoFxCaseStudy: PagoFXCaseStudy,
 };
 
 function routes() {
