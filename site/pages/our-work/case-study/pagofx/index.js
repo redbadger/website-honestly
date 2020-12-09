@@ -25,7 +25,7 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 // Assets
 import header from './images/header.png';
 import header2x from './images/header@2x.png';
-import header3x from './images/header@3x.png';
+import header3x from './images/transparent-header.png';
 import artboard from './images/artboard.png';
 import postitGroup from './images/post-it-group.png';
 import MapDotImage from './map-dot';
