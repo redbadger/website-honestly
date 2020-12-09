@@ -367,7 +367,8 @@ export const routeDefinitions: Array<RouteDefinition> = [
   },
   {
     title: 'PagoFX case study',
-    description: 'PagoFX case study',
+    description:
+      'Learn how Red Badger helped Santander’s PagoFX team to design, build and deliver a best-in-class payments service',
     key: 'pagoFxCaseStudy',
     route: 'our-work/case-study/pagofx',
     parentKey: 'ourWorkPage',
