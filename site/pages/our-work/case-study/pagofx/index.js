@@ -39,7 +39,7 @@ import styles from './style.css';
 const social = {
   title: 'PagoFX: Helping Santander build a trusted digital business | Red Badger',
   description:
-    'Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.',
+    'Learn how Red Badger helped Santander’s PagoFX team to design, build and deliver a best-in-class payments service.',
   metaImage: header,
   altText: 'People (Badgers) sticking post-its on a blue wall',
   url: 'https://red-badger.com/our-work/case-study/pagofx',
