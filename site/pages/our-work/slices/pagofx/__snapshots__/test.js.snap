@@ -17,7 +17,7 @@ exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
   </Text>
   <Image
     alt="iPhone showing Pago FX application "
-    src="listing.gif"
+    src="pagofx.jpg"
   />
 </Container>
 `;
