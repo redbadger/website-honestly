@@ -9,6 +9,7 @@ import pride from './images/pride.gif';
 import retailerImage from './images/retailerReadMore.jpg';
 import skyImage from './images/skyReadMore.jpg';
 import skyCmsImage from './images/skyCmsReadMore.jpg';
+import pagoFxImage from './images/pagoFxReadmore.jpg';
 
 const sliceData = {
   bank: {
@@ -76,6 +77,12 @@ const sliceData = {
     tagline: 'A new CMS just for Sky',
     image: skyCmsImage,
     linkKey: 'skyCMSCaseStudy',
+  },
+  pagoFx: {
+    name: 'PagoFX',
+    tagline: 'Delivering an end-to-end international transfers product in just 18 monts',
+    image: pagoFxImage,
+    linkKey: 'pagoFxCaseStudy',
   },
 };
 
