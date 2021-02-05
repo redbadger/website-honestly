@@ -8,8 +8,10 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 function htmlDecode(input) {
-  const doc = new DOMParser().parseFromString(input, 'text/html');
-  return doc.documentElement.textContent;
+  if (DOMParser) {
+    const doc = new DOMParser().parseFromString(input, 'text/html');
+    return doc.documentElement.textContent;
+  }
 }
 
 const RawHtml = ({ children, escaped }) => {

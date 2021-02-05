@@ -34,10 +34,6 @@ const getSiteState = () =>
   ]).then(([triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, data]) => {
     const fetchErrors = collectErrors({ tweets });
     const fetchSuccess = collectSuccesses({ tweets });
-    console.log(
-      4,
-      toLookupDict(data.jobs, j => j.slug),
-    );
     return {
       data: {
         ...fetchSuccess,
