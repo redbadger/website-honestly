@@ -185,6 +185,19 @@ const goldCoinPages = `
       }
 `;
 
+const jobs = `
+  allJobs {
+    id
+    title
+    description
+    fullDescription
+    department
+    applicationUrl
+    slug
+    datePosted
+  }   
+`;
+
 export function getData() {
   const body = `
     query {
@@ -233,6 +246,7 @@ export function getData() {
         mobileURL
       }
       ${goldCoinPages}
+      ${jobs}
     }
   `;
 
@@ -241,7 +255,15 @@ export function getData() {
     .then(response => response.json())
     .then(
       ({
-        data: { allEvents, allBadgers, allQnA, eventsBanner, allGoldCoinPages, hubspotForm },
+        data: {
+          allEvents,
+          allBadgers,
+          allQnA,
+          eventsBanner,
+          allGoldCoinPages,
+          hubspotForm,
+          allJobs,
+        },
       }) => ({
         events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
         badgers: sortBadgers(allBadgers),
@@ -250,6 +272,7 @@ export function getData() {
         goldCoinPages: allGoldCoinPages,
         eventsBanner,
         hubspotForm,
+        jobs: allJobs,
       }),
     );
 }

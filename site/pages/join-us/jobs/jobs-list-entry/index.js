@@ -78,7 +78,7 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
                     itemProp="description"
                     data-cy="job-description"
                   >
-                    <RawHtml>{description}</RawHtml>
+                    <RawHtml escaped>{description}...</RawHtml>
                   </div>
                   <Link to="job" navigationData={eventLink} className={styles.applyBtn}>
                     Read more

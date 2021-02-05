@@ -1,4 +1,3 @@
-import { getJobs } from '../site/fetchers/workable';
 import { getTweets } from '../site/fetchers/twitter';
 import { getBlogPosts } from '../site/fetchers/blog-posts';
 import { getData } from '../site/fetchers/badger-brain';
@@ -28,20 +27,24 @@ const collectSuccesses = sources =>
 
 const getSiteState = () =>
   Promise.all([
-    getJobs(process.env.WORKABLE_API_KEY),
     getBlogPosts(['5834972778']), // tried-and-tested
     getBlogPosts(['5834972328']), // growing-trends
     getTweets(process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
     getData(),
-  ]).then(([jobs, triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, data]) => {
-    const fetchErrors = collectErrors({ jobs, tweets });
-    const fetchSuccess = collectSuccesses({ jobs, tweets });
+  ]).then(([triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, data]) => {
+    const fetchErrors = collectErrors({ tweets });
+    const fetchSuccess = collectSuccesses({ tweets });
+    console.log(
+      4,
+      toLookupDict(data.jobs, j => j.slug),
+    );
     return {
       data: {
         ...fetchSuccess,
         triedAndTestedBlogPosts,
         growingTrendsBlogPosts,
-        jobLookup: toLookupDict(fetchSuccess.jobs, j => j.slug),
+        jobLookup: toLookupDict(data.jobs, j => j.slug),
+        jobs: data.jobs,
         events: data.events,
         eventsBanner: data.eventsBanner[0],
         eventLookup: toLookupDict(data.events, e => e.slug),
