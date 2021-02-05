@@ -8,7 +8,7 @@ import styles from './style.css';
 const cx = classnames.bind(styles);
 
 function htmlDecode(input) {
-  if (window && DOMParser) {
+  if (typeof window !== 'undefined' && typeof DOMParser !== 'undefined') {
     const doc = new DOMParser().parseFromString(input, 'text/html');
     return doc.documentElement.textContent;
   }
