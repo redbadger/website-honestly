@@ -113,6 +113,12 @@ exports[`site/pages/privacy-policy renders correctly 1`] = `
               </a>
               , 
               <a
+                href="https://missionbeyond.co.uk"
+              >
+                missionbeyond.co.uk
+              </a>
+              , 
+              <a
                 href="https://react.london"
               >
                 react.london

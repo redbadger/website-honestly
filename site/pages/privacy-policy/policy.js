@@ -29,6 +29,7 @@ const policies = [
             <Link to="cookiePolicy">Cookies Policy</Link> and our{' '}
             <Link to="termsAndConditions">Website Terms</Link>. By accessing or using{' '}
             <a href="https://red-badger.com">red-badger.com</a>,{' '}
+            <a href="https://missionbeyond.co.uk">missionbeyond.co.uk</a>,{' '}
             <a href="https://react.london">react.london</a>,{' '}
             <a href="https://meetup.react.london">meetup.react.london</a> (“<B>Websites</B>”), you
             confirm that you accept the terms of our Privacy Statement.
