@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
+<Container
+  to="pagoFxCaseStudy"
+>
+  <Text
+    layout="leftCol"
+  >
+    <Header>
+      Delivering an end-to-end international transfers product in just 18 months 
+    </Header>
+    <Description>
+      Learn how Red Badger helped Santander’s PagoFX team to design, build and deliver a best-in-class payments service.
+    </Description>
+    <ReadMore />
+  </Text>
+  <Image
+    alt="iPhone showing Pago FX application "
+    src="pagofx.jpg"
+  />
+</Container>
+`;

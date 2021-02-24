@@ -50,7 +50,7 @@ export default function Job({ job }: JobProps) {
           <Grid>
             <Cell size={8}>
               <h1 className={styles.jobTitle}>{job.title}</h1>
-              <RawHtml>{job.fullDescription}</RawHtml>
+              <RawHtml escaped>{job.fullDescription}</RawHtml>
               <Hr color="grey" />
               <Link className={styles.linkBack} to="joinUs">
                 &lt; See all vacancies

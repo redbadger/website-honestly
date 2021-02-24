@@ -8,12 +8,12 @@ Array [
     <picture>
       <source
         class="headerImg"
-        srcset="header@3x.png, header@2x.png 2x, header@3x.png 3x"
+        srcset="transparent-header.png, header@2x.png 2x, transparent-header.png 3x"
       />
       <img
         alt=""
         class="headerImg"
-        src="header@3x.png"
+        src="transparent-header.png"
       />
     </picture>
   </div>,
@@ -83,7 +83,7 @@ Array [
           >
             <span>
               <div
-                id="pride-video"
+                id="pagofx-video"
               />
             </span>
           </div>

@@ -25,7 +25,7 @@ import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 // Assets
 import header from './images/header.png';
 import header2x from './images/header@2x.png';
-import header3x from './images/header@3x.png';
+import header3x from './images/transparent-header.png';
 import artboard from './images/artboard.png';
 import postitGroup from './images/post-it-group.png';
 import MapDotImage from './map-dot';
@@ -39,7 +39,7 @@ import styles from './style.css';
 const social = {
   title: 'PagoFX: Helping Santander build a trusted digital business | Red Badger',
   description:
-    'Find out how we used React Native to deliver a 5 star mobile app across two platforms working as a cross-functional volunteer team.',
+    'Learn how Red Badger helped Santander’s PagoFX team to design, build and deliver a best-in-class payments service.',
   metaImage: header,
   altText: 'People (Badgers) sticking post-its on a blue wall',
   url: 'https://red-badger.com/our-work/case-study/pagofx',
@@ -103,7 +103,7 @@ const PagoFx = () => (
         </Section>
         <div className={styles.videoAndResultsDesktop}>
           <Section>
-            <Video name="PagoFX video" elementId="pride-video" videoId="56apxChHLDs" />
+            <Video name="PagoFX video" elementId="pagofx-video" videoId="56apxChHLDs" />
           </Section>
 
           <Section>
@@ -346,7 +346,7 @@ const PagoFx = () => (
         </Section>
       </div>
     </Body>
-    <WhatToReadNext currentPage="pagofx" linkKeys={[]} />
+    <WhatToReadNext currentPage="pagoFxCaseStudy" linkKeys={[]} />
     <ChecklistContactUs />
   </ScrollTracker>
 );
