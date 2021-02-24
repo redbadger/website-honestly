@@ -414,7 +414,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             <div
                               class="typography rawHtml"
                             >
-                              awesomeness is a full-time job so we need you here being awesome
+                              awesomeness is a full-time job so we need you here being awesome,...
                             </div>
                           </div>
                           <a
@@ -532,7 +532,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             <div
                               class="typography rawHtml"
                             >
-                              Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack
+                              Being (mostly) the only aodrable dog in the office is hard work for milo, so we need an apprentice to take up the slack,...
                             </div>
                           </div>
                           <a
@@ -650,7 +650,7 @@ exports[`site/pages/join-us renders correctly 1`] = `
                             <div
                               class="typography rawHtml"
                             >
-                              Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required
+                              Ideally you have 2-4 years experience drinking tea, proficiency with green and white teas is ideal but not required,...
                             </div>
                           </div>
                           <a

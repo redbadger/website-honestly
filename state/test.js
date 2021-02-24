@@ -30,10 +30,6 @@ describe('state', () => {
       .get(/.*statuses*/)
       .reply(200, []);
 
-    nock('https://redbadger.workable.com')
-      .get(/.*jobs*/)
-      .reply(200, { jobs: [] });
-
     nock('https://api.hubapi.com/')
       .get(/.*blog-posts*/)
       .times(2)
@@ -48,6 +44,7 @@ describe('state', () => {
           allBadgers: [],
           allQnA: [],
           eventsBanner: [],
+          allJobs: [],
         },
       });
 
@@ -77,10 +74,6 @@ describe('state', () => {
       .post(/.*oauth*/)
       .reply(403, {});
 
-    nock('https://redbadger.workable.com')
-      .get(/.*jobs*/)
-      .reply(500, { jobs: [] });
-
     nock('https://api.hubapi.com/')
       .get(/.*blog-posts*/)
       .times(2)
@@ -95,19 +88,19 @@ describe('state', () => {
           allBadgers: [],
           allQnA: [],
           eventsBanner: [],
+          allJobs: [],
         },
       });
 
     const {
-      data: { jobs, tweets },
+      data: { tweets },
       fetchErrors,
     } = await getSiteState();
 
     expect(fetchErrors).toEqual({
-      jobs: 'Internal Server Error',
       tweets: 'Forbidden',
     });
 
-    expect({ jobs, tweets }).toEqual({ jobs: [], tweets: [] });
+    expect({ tweets }).toEqual({ tweets: [] });
   });
 });
