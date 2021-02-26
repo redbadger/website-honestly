@@ -6,33 +6,33 @@ import React from 'react';
 import Link from '../../components/link';
 import styles from './styles.css';
 
-import awsImg from './img/AWS_x1.png';
-import awsImgLarge from './img/AWS_x2.png';
-import dockerImg from './img/docker_x1.png';
-import dockerImgLarge from './img/docker_x2.png';
-import esImg from './img/es_x1.png';
-import esImgLarge from './img/es_x2.png';
-import flowImg from './img/flow_x1.png';
-import flowImgLarge from './img/flow_x2.png';
-import gcpImg from './img/GCP_x1.png';
-import gcpImgLarge from './img/GCP_x2.png';
-import golangImg from './img/golang_x1.png';
-import golangImgLarge from './img/golang_x2.png';
-import graphqlImg from './img/graphql_x1.png';
-import graphqlImgLarge from './img/graphql_x2.png';
-import istioImg from './img/istio_x1.png';
-import istioImgLarge from './img/istio_x2.png';
-import javaImg from './img/java_x1.png';
-import javaImgLarge from './img/java_x2.png';
-import kubernetesImg from './img/kubernetes_x1.png';
-import kubernetesImgLarge from './img/kubernetes_x2.png';
-import nodejsImg from './img/nodejs_x1.png';
-import nodejsImgLarge from './img/nodejs_x2.png';
-import reactImg from './img/react_x1.png';
-import reactImgLarge from './img/react_x2.png';
+import nodejsImg from './img/nodejs_v1_x1.png';
+import kubernetesImg from './img/kubernetes_v1_x1.png';
+import dockerImg from './img/docker_v1_x1.png';
+import istioImg from './img/istio_v1_x1.png';
+import graphqlImg from './img/graphql_v1_x1.png';
+import reactImg from './img/react_v1_x1.png';
+import golangImg from './img/golang_v1_x1.png';
+import gcpImg from './img/GCP_v1_x1.png';
+import typescriptImg from './img/typescript_v1_x1.png';
+import awsImg from './img/AWS_v4_x1.png';
+import rustImg from './img/rust_v1_x1.png';
+import azureImg from './img/azure_v1_x1.png';
+
+import nodejsImgLarge from './img/nodejs_v1.png';
+import kubernetesImgLarge from './img/kubernetes_v1.png';
+import dockerImgLarge from './img/docker_v1.png';
+import istioImgLarge from './img/istio_v1.png';
+import graphqlImgLarge from './img/graphql_v1.png';
+import reactImgLarge from './img/react_v1.png';
+import golangImgLarge from './img/golang_v1.png';
+import gcpImgLarge from './img/GCP_v1.png';
+import typescriptImgLarge from './img/typescript_v1.png';
+import awsImgLarge from './img/AWS_v4.png';
+import rustImgLarge from './img/rust_v1.png';
+import azureImgLarge from './img/azure_v1.png';
 
 import plusImg01 from './img/plus01_x2.png';
-import plusImg02 from './img/plus02_x2.png';
 import plusImg03 from './img/plus03_x2.png';
 import plusImg04 from './img/plus04_x2.png';
 
@@ -88,32 +88,26 @@ export default function TechSlice({ isHeading }: TechSliceProps) {
       <ul className={styles.techList}>
         <TechListItem name="React + React Native" imgSrcLarge={reactImgLarge} imgSrc={reactImg} />
         <TechListItem name="GraphQL" imgSrcLarge={graphqlImgLarge} imgSrc={graphqlImg} />
-        <TechListItem name="Java" imgSrcLarge={javaImgLarge} imgSrc={javaImg} />
-        <TechListItem
-          name="ESNext"
-          imgSrcLarge={esImgLarge}
-          imgSrc={esImg}
-          plusSymbol={plusImg01}
-        />
-        <TechListItem
-          name="Flow + Typescript"
-          imgSrcLarge={flowImgLarge}
-          imgSrc={flowImg}
-          plusSymbol={plusImg02}
-          modifier="tall"
-        />
-        <TechListItem name="NodeJS" imgSrcLarge={nodejsImgLarge} imgSrc={nodejsImg} />
-      </ul>
-      <ul className={styles.techList}>
-        {/* replace icons when ready */}
-        <TechListItem name="AWS" imgSrcLarge={awsImgLarge} imgSrc={awsImg} modifier="wide" />
-        <TechListItem name="GCP" imgSrcLarge={gcpImgLarge} imgSrc={gcpImg} />
+
+        <TechListItem name="Rust" imgSrcLarge={rustImgLarge} imgSrc={rustImg} />
         <TechListItem
           name="Golang"
           imgSrcLarge={golangImgLarge}
           imgSrc={golangImg}
           modifier="tall"
         />
+        <TechListItem
+          name="Typescript"
+          imgSrcLarge={typescriptImgLarge}
+          imgSrc={typescriptImg}
+          plusSymbol={plusImg01}
+        />
+        <TechListItem name="NodeJS" imgSrcLarge={nodejsImgLarge} imgSrc={nodejsImg} />
+      </ul>
+      <ul className={styles.techList}>
+        <TechListItem name="AWS" imgSrcLarge={awsImgLarge} imgSrc={awsImg} modifier="wide" />
+        <TechListItem name="GCP" imgSrcLarge={gcpImgLarge} imgSrc={gcpImg} />
+        <TechListItem name="Azure" imgSrcLarge={azureImgLarge} imgSrc={azureImg} />
         <TechListItem
           name="Docker"
           imgSrcLarge={dockerImgLarge}
