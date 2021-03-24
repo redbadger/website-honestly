@@ -1,5 +1,4 @@
 import { getTweets } from '../site/fetchers/twitter';
-import { getBlogPosts } from '../site/fetchers/blog-posts';
 import { getData } from '../site/fetchers/badger-brain';
 
 const toLookupDict = (array, keyFn) => {
@@ -26,32 +25,29 @@ const collectSuccesses = sources =>
   }));
 
 const getSiteState = () =>
-  Promise.all([
-    getBlogPosts(['5834972778']), // tried-and-tested
-    getBlogPosts(['5834972328']), // growing-trends
-    getTweets(process.env.TWITTER_KEY, process.env.TWITTER_SECRET),
-    getData(),
-  ]).then(([triedAndTestedBlogPosts, growingTrendsBlogPosts, tweets, data]) => {
-    const fetchErrors = collectErrors({ tweets });
-    const fetchSuccess = collectSuccesses({ tweets });
-    return {
-      data: {
-        ...fetchSuccess,
-        triedAndTestedBlogPosts,
-        growingTrendsBlogPosts,
-        jobLookup: toLookupDict(data.jobs, j => j.slug),
-        jobs: data.jobs,
-        events: data.events,
-        eventsBanner: data.eventsBanner[0],
-        eventLookup: toLookupDict(data.events, e => e.slug),
-        badgers: data.badgers,
-        badgerLookup: toLookupDict(data.badgers, b => b.slug),
-        categories: data.categories,
-        qAndAs: data.qAndAs,
-        goldCoinPages: data.goldCoinPages,
-      },
-      fetchErrors,
-    };
-  });
+  Promise.all([getTweets(process.env.TWITTER_KEY, process.env.TWITTER_SECRET), getData()]).then(
+    ([tweets, data]) => {
+      const fetchErrors = collectErrors({ tweets });
+      const fetchSuccess = collectSuccesses({ tweets });
+      return {
+        data: {
+          ...fetchSuccess,
+          triedAndTestedBlogPosts: data.triedAndTestedBlogPosts,
+          growingTrendsBlogPosts: data.growingTrendsBlogPosts,
+          jobLookup: toLookupDict(data.jobs, j => j.slug),
+          jobs: data.jobs,
+          events: data.events,
+          eventsBanner: data.eventsBanner[0],
+          eventLookup: toLookupDict(data.events, e => e.slug),
+          badgers: data.badgers,
+          badgerLookup: toLookupDict(data.badgers, b => b.slug),
+          categories: data.categories,
+          qAndAs: data.qAndAs,
+          goldCoinPages: data.goldCoinPages,
+        },
+        fetchErrors,
+      };
+    },
+  );
 
 export default getSiteState;

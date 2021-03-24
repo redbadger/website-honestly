@@ -1,7 +1,6 @@
 import bugsnag from 'bugsnag';
 
 import doPublish from './publish';
-import doRegisterForWebinar from './webinar_registration';
 
 bugsnag.register(process.env.BUGSNAG_KEY);
 bugsnag.configure({
@@ -35,5 +34,3 @@ export function publish(event, context, cb) {
 
   errorHandlerWrapper(doPublish)(event, context, cb);
 }
-
-export const registerForWebinar = errorHandlerWrapper(doRegisterForWebinar);

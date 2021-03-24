@@ -10,7 +10,7 @@ provider:
   name: aws
   stage: dev
   region: eu-west-1
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   iamRoleStatements:
     - Effect: 'Allow'
       Action:
@@ -33,13 +33,6 @@ functions:
           cors: true
       # Invoke publish function every hour, on the hour, to keep content fresh
       - schedule: cron(0 * * * ? *)
-  registerForWebinar:
-    handler: index.registerForWebinar
-    events:
-      - http:
-          path: webinar-registration
-          method: post
-          cors: true
 
 resources:
   Resources:
