@@ -30,12 +30,6 @@ describe('state', () => {
       .get(/.*statuses*/)
       .reply(200, []);
 
-    nock('https://api.hubapi.com/')
-      .get(/.*blog-posts*/)
-      .times(2)
-      .query(true)
-      .reply(200, {});
-
     nock('https://brain-staging.red-badger.com')
       .post(/.*graphql*/)
       .reply(200, {
@@ -45,6 +39,8 @@ describe('state', () => {
           allQnA: [],
           eventsBanner: [],
           allJobs: [],
+          growingTrends: [],
+          triedAndTested: [],
         },
       });
 

@@ -198,6 +198,16 @@ const jobs = `
   }   
 `;
 
+const blogPostExerpts = (alias, tag) => `
+    ${alias}: blogPostExcerptsByTag(topic_id: ${tag}, limit: 5) {
+      title
+      url
+      excerpt
+      date
+      author
+    }
+`;
+
 export function getData() {
   const body = `
     query {
@@ -247,12 +257,16 @@ export function getData() {
       }
       ${goldCoinPages}
       ${jobs}
+      ${blogPostExerpts('triedAndTested', '5834972778')}
+      ${blogPostExerpts('growingTrends', '5834972328')}
     }
   `;
 
   return fetch(badgerBrainEndpoint(), getRequestOptions(body))
     .then(handleErrors)
-    .then(response => response.json())
+    .then(response => {
+      return response.json();
+    })
     .then(
       ({
         data: {
@@ -263,6 +277,8 @@ export function getData() {
           allGoldCoinPages,
           hubspotForm,
           allJobs,
+          triedAndTested,
+          growingTrends,
         },
       }) => ({
         events: sortEvents(prepareEventsBodyHtml(selectValidEvents(allEvents))),
@@ -273,6 +289,8 @@ export function getData() {
         eventsBanner,
         hubspotForm,
         jobs: allJobs,
+        triedAndTestedBlogPosts: triedAndTested,
+        growingTrendsBlogPosts: growingTrends,
       }),
     );
 }
