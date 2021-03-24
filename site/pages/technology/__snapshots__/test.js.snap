@@ -32,8 +32,8 @@ Array [
           <img
             alt="React + React Native logo"
             class="techLogo"
-            src="react_x1.png"
-            srcset="react_x1.png 90w, react_x2.png 150w"
+            src="react_v1_x1.png"
+            srcset="react_v1_x1.png 90w, react_v1.png 150w"
           />
           <figcaption
             class="techName"
@@ -51,8 +51,8 @@ Array [
           <img
             alt="GraphQL logo"
             class="techLogo"
-            src="graphql_x1.png"
-            srcset="graphql_x1.png 90w, graphql_x2.png 150w"
+            src="graphql_v1_x1.png"
+            srcset="graphql_v1_x1.png 90w, graphql_v1.png 150w"
           />
           <figcaption
             class="techName"
@@ -68,15 +68,15 @@ Array [
           class="techItem"
         >
           <img
-            alt="Java logo"
+            alt="Rust logo"
             class="techLogo"
-            src="java_x1.png"
-            srcset="java_x1.png 90w, java_x2.png 150w"
+            src="rust_v1_x1.png"
+            srcset="rust_v1_x1.png 90w, rust_v1.png 150w"
           />
           <figcaption
             class="techName"
           >
-            Java
+            Rust
           </figcaption>
         </figure>
       </li>
@@ -87,15 +87,34 @@ Array [
           class="techItem"
         >
           <img
-            alt="ESNext logo"
-            class="techLogo"
-            src="es_x1.png"
-            srcset="es_x1.png 90w, es_x2.png 150w"
+            alt="Golang logo"
+            class="techLogo--tall"
+            src="golang_v1_x1.png"
+            srcset="golang_v1_x1.png 90w, golang_v1.png 150w"
           />
           <figcaption
             class="techName"
           >
-            ESNext
+            Golang
+          </figcaption>
+        </figure>
+      </li>
+      <li
+        class="techListItem"
+      >
+        <figure
+          class="techItem"
+        >
+          <img
+            alt="Typescript logo"
+            class="techLogo"
+            src="typescript_v1_x1.png"
+            srcset="typescript_v1_x1.png 90w, typescript_v1.png 150w"
+          />
+          <figcaption
+            class="techName"
+          >
+            Typescript
           </figcaption>
         </figure>
         <img
@@ -111,34 +130,10 @@ Array [
           class="techItem"
         >
           <img
-            alt="Flow + Typescript logo"
-            class="techLogo--tall"
-            src="flow_x1.png"
-            srcset="flow_x1.png 90w, flow_x2.png 150w"
-          />
-          <figcaption
-            class="techName"
-          >
-            Flow + Typescript
-          </figcaption>
-        </figure>
-        <img
-          alt=""
-          class="techPlusSymbol"
-          src="plus02_x2.png"
-        />
-      </li>
-      <li
-        class="techListItem"
-      >
-        <figure
-          class="techItem"
-        >
-          <img
             alt="NodeJS logo"
             class="techLogo"
-            src="nodejs_x1.png"
-            srcset="nodejs_x1.png 90w, nodejs_x2.png 150w"
+            src="nodejs_v1_x1.png"
+            srcset="nodejs_v1_x1.png 90w, nodejs_v1.png 150w"
           />
           <figcaption
             class="techName"
@@ -160,8 +155,8 @@ Array [
           <img
             alt="AWS logo"
             class="techLogo--wide"
-            src="AWS_x1.png"
-            srcset="AWS_x1.png 90w, AWS_x2.png 150w"
+            src="AWS_v4_x1.png"
+            srcset="AWS_v4_x1.png 90w, AWS_v4.png 150w"
           />
           <figcaption
             class="techName"
@@ -179,8 +174,8 @@ Array [
           <img
             alt="GCP logo"
             class="techLogo"
-            src="GCP_x1.png"
-            srcset="GCP_x1.png 90w, GCP_x2.png 150w"
+            src="GCP_v1_x1.png"
+            srcset="GCP_v1_x1.png 90w, GCP_v1.png 150w"
           />
           <figcaption
             class="techName"
@@ -196,15 +191,15 @@ Array [
           class="techItem"
         >
           <img
-            alt="Golang logo"
-            class="techLogo--tall"
-            src="golang_x1.png"
-            srcset="golang_x1.png 90w, golang_x2.png 150w"
+            alt="Azure logo"
+            class="techLogo"
+            src="azure_v1_x1.png"
+            srcset="azure_v1_x1.png 90w, azure_v1.png 150w"
           />
           <figcaption
             class="techName"
           >
-            Golang
+            Azure
           </figcaption>
         </figure>
       </li>
@@ -217,8 +212,8 @@ Array [
           <img
             alt="Docker logo"
             class="techLogo--wide"
-            src="docker_x1.png"
-            srcset="docker_x1.png 90w, docker_x2.png 150w"
+            src="docker_v1_x1.png"
+            srcset="docker_v1_x1.png 90w, docker_v1.png 150w"
           />
           <figcaption
             class="techName"
@@ -241,8 +236,8 @@ Array [
           <img
             alt="Kubernetes logo"
             class="techLogo"
-            src="kubernetes_x1.png"
-            srcset="kubernetes_x1.png 90w, kubernetes_x2.png 150w"
+            src="kubernetes_v1_x1.png"
+            srcset="kubernetes_v1_x1.png 90w, kubernetes_v1.png 150w"
           />
           <figcaption
             class="techName"
@@ -265,8 +260,8 @@ Array [
           <img
             alt="Istio logo"
             class="techLogo"
-            src="istio_x1.png"
-            srcset="istio_x1.png 90w, istio_x2.png 150w"
+            src="istio_v1_x1.png"
+            srcset="istio_v1_x1.png 90w, istio_v1.png 150w"
           />
           <figcaption
             class="techName"
