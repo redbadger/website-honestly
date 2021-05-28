@@ -14,6 +14,7 @@ import MBPSlice from './mbp-slice';
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
 import ScrollTracker from '../../components/scroll-tracker';
+import StickyModal from '../../components/sticky-modal';
 
 export default function HomePage() {
   const social = {
@@ -26,17 +27,20 @@ export default function HomePage() {
   };
 
   return (
-    <ScrollTracker>
-      <Social {...social} />
-      <TopSlice />
-      <GoldCoinSlice />
-      <CaseStudyOverview />
-      <MBPSlice />
-      <TestimonialsSlice />
-      <TechSlice />
-      <ChecklistContactUs />
-      <HubspotSignup />
-      <AwardsSlice />
-    </ScrollTracker>
+    <React.Fragment>
+      <StickyModal />
+      <ScrollTracker>
+        <Social {...social} />
+        <TopSlice />
+        <GoldCoinSlice />
+        <CaseStudyOverview />
+        <MBPSlice />
+        <TestimonialsSlice />
+        <TechSlice />
+        <ChecklistContactUs />
+        <HubspotSignup />
+        <AwardsSlice />
+      </ScrollTracker>
+    </React.Fragment>
   );
 }
