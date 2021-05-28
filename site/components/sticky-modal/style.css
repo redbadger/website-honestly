@@ -1,0 +1,106 @@
+@value badgerBlack, mbpOrange, mbpGreen from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.stickyModalWrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  bottom: 0;
+}
+
+.stickyModal {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  position: relative;
+  background: mbpOrange;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px;
+  padding: 27px;
+  line-height: 1.5em;
+}
+
+.stickyModalHeading {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  font-size: 18px;
+}
+
+.stickyModal p {
+  font-size: 14px;
+}
+
+.stickyModal h4 {
+  margin-bottom: 8px;
+}
+
+.stickyModalLink {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  margin-top: 14px;
+  font-size: 14px;
+  background: mbpGreen;
+  color: badgerBlack;
+  display: block;
+  height: 48px;
+  width: 178px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.stickyModalLink:hover {
+  background: #61e4b8;
+}
+
+.stickyModalCloseButton {
+  position: absolute;
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: none;
+  top: 14px;
+  right: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.stickyModalCloseButton:after,
+.stickyModalCloseButton:before {
+  content: '';
+  display: block;
+  background: badgerBlack;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  left: -2px;
+  top: 7px;
+}
+
+.stickyModalCloseButton:after {
+  transform: rotate(45deg);
+}
+
+.stickyModalCloseButton:before {
+  transform: rotate(-45deg);
+}
+
+.stickyModalImageWrapper {
+  display: none;
+}
+
+@media mediumScreen {
+  .stickyModal {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 562px;
+    margin: 0 20px 20px auto;
+  }
+
+  .stickyModalImageWrapper {
+    display: block;
+    position: relative;
+  }
+
+  .stickyModalImage {
+    margin-top: 14px;
+  }
+}

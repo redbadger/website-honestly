@@ -30,3 +30,11 @@
 /* Lines and shades */
 @value linesOnBlack: #565656;
 @value linesOnWhite: #CCCCCC;
+
+/* MBP Colour Palette */
+@value mbpPurple: #A770FF;
+@value mbpMidGrey: #373737;
+@value mbpLightGrey: #979797;
+@value mbpGreen: #22D69B;
+@value mbpOrange: #ffa000;
+@value mbpBlue: #00d8f0;

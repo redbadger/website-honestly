@@ -2,6 +2,48 @@
 
 exports[`site/pages/home renders correctly 1`] = `
 Array [
+  <div
+    class="stickyModalWrapper"
+  >
+    <div
+      class="stickyModalContent"
+    >
+      <div
+        class="stickyModal"
+      >
+        <button
+          aria-label="close popup"
+          class="stickyModalCloseButton"
+          type="button"
+        />
+        <div
+          class="stickyModalImageWrapper"
+        >
+          <img
+            alt="illustration, a smiling man looks at his phone as a jet flies away"
+            class="stickyModalImage"
+            src="image.png"
+          />
+        </div>
+        <div>
+          <h4
+            class="stickyModalHeading"
+          >
+            Are you delivering seamless customer experiences?
+          </h4>
+          <p>
+            With lockdown easing and customers returning to venues, restaurants and hotels, how is the hospitality sector responding to supercharged expectations and what can other industries learn from their approach? 
+          </p>
+          <a
+            class="stickyModalLink"
+            href="https://content.red-badger.com/hotels-meet-the-new-expectations"
+          >
+            Download the report
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
   <section
     class="homepageTopSlice"
     data-cy="top-slice"
