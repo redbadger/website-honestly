@@ -14,7 +14,7 @@ import MBPSlice from './mbp-slice';
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
 import ScrollTracker from '../../components/scroll-tracker';
-import StickyModal from '../../components/sticky-modal';
+import CellASlice from '../../components/cell-a-slice';
 
 export default function HomePage() {
   const social = {
@@ -28,10 +28,10 @@ export default function HomePage() {
 
   return (
     <React.Fragment>
-      <StickyModal />
       <ScrollTracker>
         <Social {...social} />
         <TopSlice />
+        <CellASlice />
         <GoldCoinSlice />
         <CaseStudyOverview />
         <MBPSlice />
