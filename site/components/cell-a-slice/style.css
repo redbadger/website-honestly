@@ -1,38 +1,38 @@
 @value badgerBlack, mbpOrange, mbpGreen from '../../css/_colors.css';
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
-.stickyModalWrapper {
-  position: fixed;
+.CellASliceWrapper {
+  composes: dividerOrange from '../../css/_divider.css';
   width: 100%;
-  z-index: 999;
-  bottom: 0;
+  background: mbpOrange;
 }
 
-.stickyModal {
+.CellASlice {
   composes: sansSerif from '../../css/typography/_fonts.css';
   position: relative;
-  background: mbpOrange;
+  max-width: 1060px;
   width: 100%;
-  max-width: 350px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   padding: 27px;
   line-height: 1.5em;
 }
 
-.stickyModalHeading {
-  composes: boldSansSerif from '../../css/typography/_fonts.css';
+.CellASliceHeading {
+  composes: serif from '../../css/typography/_fonts.css';
   font-size: 18px;
+  line-height: 1.5em;
 }
 
-.stickyModal p {
+.CellASlice p {
   font-size: 14px;
+  line-height: 1.25em;
 }
 
-.stickyModal h4 {
+.CellASlice h4 {
   margin-bottom: 8px;
 }
 
-.stickyModalLink {
+.CellASliceLink {
   composes: boldSansSerif from '../../css/typography/_fonts.css';
   cursor: pointer;
   margin-top: 14px;
@@ -46,11 +46,11 @@
   text-align: center;
 }
 
-.stickyModalLink:hover {
+.CellASliceLink:hover {
   background: #61e4b8;
 }
 
-.stickyModalCloseButton {
+.CellASliceCloseButton {
   position: absolute;
   display: block;
   height: 16px;
@@ -63,8 +63,8 @@
   cursor: pointer;
 }
 
-.stickyModalCloseButton:after,
-.stickyModalCloseButton:before {
+.CellASliceCloseButton:after,
+.CellASliceCloseButton:before {
   content: '';
   display: block;
   background: badgerBlack;
@@ -75,32 +75,67 @@
   top: 7px;
 }
 
-.stickyModalCloseButton:after {
+.CellASliceCloseButton:after {
   transform: rotate(45deg);
 }
 
-.stickyModalCloseButton:before {
+.CellASliceCloseButton:before {
   transform: rotate(-45deg);
 }
 
-.stickyModalImageWrapper {
+.CellASliceImageWrapper {
   display: none;
 }
 
 @media mediumScreen {
-  .stickyModal {
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 562px;
-    margin: 0 20px 20px auto;
+  .CellASliceWrapper {
+    padding: 90px;
   }
 
-  .stickyModalImageWrapper {
+  .CellASlice {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .CellASliceImageWrapper {
     display: block;
     position: relative;
+    width: 40%;
   }
 
-  .stickyModalImage {
+  .CellASliceImageWrapper img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .CellASliceImage {
     margin-top: 14px;
+  }
+
+  .CellASliceHeading {
+    font-size: 36px;
+  }
+
+  .CellASlice h4 {
+    margin-bottom: 40px;
+  }
+
+  .CellASlice p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .CellASliceLink {
+    font-size: 24px;
+    width: 292px;
+    height: 58px;
+    line-height: 58px;
+  }
+
+  .CellASliceText {
+    width: 60%;
+    padding-right: 20px;
   }
 }

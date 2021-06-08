@@ -1,4 +1,4 @@
-@value badgerRedOnWhite, badgerWhite, badgerBlack, daveGreen, cainYellow, grey from "./_colors.css";
+@value badgerRedOnWhite, badgerWhite, badgerBlack, daveGreen, cainYellow, mbpOrange, grey from "./_colors.css";
 @value timelineDivider from "./_zindex.css";
 @value largeScreen from "./_sizes.css";
 
@@ -29,7 +29,7 @@
   /* background-color: badgerRedOnWhite; */
 }
 
-.dividerBlack, .dividerWhite, .dividerYellow, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey, .dividerBlackLarge, .dividerWhiteSmall {
+.dividerBlack, .dividerWhite, .dividerYellow, .dividerOrange, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey, .dividerBlackLarge, .dividerWhiteSmall {
   composes: divider;
 }
 
@@ -43,6 +43,10 @@
 
 .dividerYellow:before, .dividerYellow:after {
   background-color: cainYellow;
+}
+
+.dividerOrange:before, .dividerOrange:after {
+  background-color: mbpOrange;
 }
 
 .dividerGreen:before, .dividerGreen:after {
