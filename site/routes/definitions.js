@@ -378,6 +378,18 @@ export const routeDefinitions: Array<RouteDefinition> = [
     },
   },
   {
+    title: "Nando's loyalty case study",
+    description:
+      'Red Badger worked with the Nando’s product team to reimagine the customer experience of the restaurant’s loyalty programme. Together we designed and built a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.',
+    key: 'nandosLoyaltyCaseStudy',
+    route: 'our-work/case-study/nandos-loyalty',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'nandos-loyalty',
+    },
+  },
+  {
     title: 'Technology',
     description:
       'We choose the right tech for the job and with meticulous engineering practices we enable continuous delivery, speed to market and create value for customers quickly.',
