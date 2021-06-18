@@ -2,7 +2,7 @@
 import React from 'react';
 
 // import Social from '../../../../components/social';
-// import Image from '../../../../components/image';
+import Image from '../../../../components/image';
 import ScrollTracker from '../../../../components/scroll-tracker';
 // import Triptych from '../../../../components/triptych';
 import {
@@ -22,6 +22,22 @@ import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ListBox from '../../../../components/list-box';
 import Card from '../../../../components/card';
+
+// Image imports
+import DevicesX1Img from './images/Devices@1x.png';
+import DevicesX2Img from './images/Devices@2x.png';
+import HeaderX1Img from './images/Header@1x.png';
+import HeaderX2Img from './images/Header@2x.png';
+import HeaderX3Img from './images/Header@3x.png';
+import PlasticCardX1Img from './images/PlasticCard@1x.png';
+import PlasticCardX2Img from './images/PlasticCard@2x.png';
+import RyanX2Img from './images/Ryan@2x.png';
+import TapWithPhoneX1Img from './images/TapWithPhone@1x.png';
+import TapWithPhoneX2Img from './images/TapWithPhone@2x.png';
+import TapWithWatchX1Img from './images/TapWithWatch@1x.png';
+import TapWithWatchX2Img from './images/TapWithWatch@2x.png';
+import TestingX1Img from './images/Testing@1x.png';
+import TestingX2Img from './images/Testing@2x.png';
 
 import styles from './style.css';
 // import Triptych from './triptych';
@@ -54,7 +70,7 @@ const quoteProps = {
   author: {
     name: 'Ryan Foreman',
     title: "Product Manager at Nando's",
-    // image: Ryan,
+    image: RyanX2Img,
   },
 };
 
@@ -87,11 +103,13 @@ export default function Pride() {
         // <Social {...social} />
       }
       <div className={styles.headerImgWrapper}>
-        {/* <Image
-          src={header}
+        <Image
+          src={HeaderX1Img}
+          src2x={HeaderX2Img}
+          src3x={HeaderX3Img}
           className={styles.headerImg}
           altText="People (Badgers) sticking post-its on a blue wall"
-        /> */}
+        />
       </div>
       <Body>
         <PageHeading>Digital-first loyalty programme</PageHeading>
@@ -105,30 +123,37 @@ export default function Pride() {
               digital-first, mobile wallet enabled loyalty experience enabling customers to earn and
               redeem rewards across all digital touchpoints.
             </P>
-            <Card>
-              <ListBox
-                className={styles.listBox}
-                title="RESULTS, AT A GLANCE"
-                items={[
-                  {
-                    label: 'Introduced first NFC-enabled Loyalty Card in the UK',
-                  },
-                  {
-                    label:
-                      'Created a new digital channel for both customer acquisition and engagement ',
-                  },
-                  {
-                    label:
-                      'Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability',
-                  },
-                  {
-                    label:
-                      'Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem',
-                  },
-                ]}
-                itemClassName={styles.listBox__item}
+            <div className={styles.coloumnContent}>
+              <Image
+                src={TapWithPhoneX1Img}
+                src2x={TapWithPhoneX2Img}
+                altText="People (Badgers) sticking post-its on a blue wall"
               />
-            </Card>
+              <Card>
+                <ListBox
+                  className={styles.listBox}
+                  title="RESULTS, AT A GLANCE"
+                  items={[
+                    {
+                      label: 'Introduced first NFC-enabled Loyalty Card in the UK',
+                    },
+                    {
+                      label:
+                        'Created a new digital channel for both customer acquisition and engagement ',
+                    },
+                    {
+                      label:
+                        'Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability',
+                    },
+                    {
+                      label:
+                        'Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem',
+                    },
+                  ]}
+                  itemClassName={styles.listBox__item}
+                />
+              </Card>
+            </div>
           </SectionBody>
         </Section>
         <Section>
@@ -145,22 +170,31 @@ export default function Pride() {
             <P>
               <b>Image placehodler: the plastic card</b>
             </P>
-            <P>
-              The original loyalty offering relied on a plastic card. Handing the card to staff at
-              point of sale in the restaurant would allow customers to collect chillies, which add
-              up to rewards that can be redeemed for free food (scientifically proven to taste even
-              better than regular Nando’s).
-            </P>
-            <P>
-              There were multiple issues with this setup. Customers had to keep the card in their
-              wallet and have it every time they visited. Cards were easily lost and time consuming
-              to replace. Customers would often start collecting towards a reward, but then abandon
-              their card, only to register a new one and start over again, no closer to their free
-              PERi-PERi. On top of that, the scheme released more plastic into the world, which
-              wasn’t aligned with Nando’s environmental efforts such as their commitment to reduce
-              direct emissions to zero by 2030.
-            </P>
-            <P>The plastic card had to evolve with the times.</P>
+            <div className={styles.coloumnContent}>
+              <Image
+                src={PlasticCardX1Img}
+                src2x={PlasticCardX2Img}
+                altText="People (Badgers) sticking post-its on a blue wall"
+              />
+              <div>
+                <P>
+                  The original loyalty offering relied on a plastic card. Handing the card to staff
+                  at point of sale in the restaurant would allow customers to collect chillies,
+                  which add up to rewards that can be redeemed for free food (scientifically proven
+                  to taste even better than regular Nando’s).
+                </P>
+                <P>
+                  There were multiple issues with this setup. Customers had to keep the card in
+                  their wallet and have it every time they visited. Cards were easily lost and time
+                  consuming to replace. Customers would often start collecting towards a reward, but
+                  then abandon their card, only to register a new one and start over again, no
+                  closer to their free PERi-PERi. On top of that, the scheme released more plastic
+                  into the world, which wasn’t aligned with Nando’s environmental efforts such as
+                  their commitment to reduce direct emissions to zero by 2030.
+                </P>
+                <P>The plastic card had to evolve with the times.</P>
+              </div>
+            </div>
             {
               // <Triptych {...tryptychConfig} />
             }
@@ -191,6 +225,11 @@ export default function Pride() {
                 and create a unified customer data ecosystem.
               </li>
             </UL>
+            <Image
+              src={TapWithWatchX1Img}
+              src2x={TapWithWatchX2Img}
+              altText="People (Badgers) sticking post-its on a blue wall"
+            />
             <P>
               The team identified a number of options for digitally enabled loyalty, the best of
               which was to launch the Nando’s card for customer’s mobile wallets through Apple’s
@@ -236,7 +275,18 @@ export default function Pride() {
               understood and supported the service.
             </P>
             <P>
-              <b>Image placeholder: evolution of the design</b>
+              <div className={styles.coloumnContent}>
+                <Image
+                  src={TestingX1Img}
+                  src2x={TestingX2Img}
+                  altText="People (Badgers) sticking post-its on a blue wall"
+                />
+                <Image
+                  src={DevicesX1Img}
+                  src2x={DevicesX2Img}
+                  altText="People (Badgers) sticking post-its on a blue wall"
+                />
+              </div>
             </P>
             <P>
               On the back of what we found out, we refined the experience and in the Beta phase,
