@@ -124,9 +124,6 @@ export default function NandosLoyalty() {
               loyalty programme into a digital-first journey would eradicate a number of problems
               it’s customers were experiencing.
             </P>
-            <P>
-              <b>Image placehodler: the plastic card</b>
-            </P>
           </SectionBody>
         </Section>
         <div className={styles.coloumnContent}>
@@ -203,9 +200,6 @@ export default function NandosLoyalty() {
               phone at the till and the transaction would automatically use the customer’s Nando’s
               account, earning Chillies and unlocking rewards when ordering in restaurants or
               online.
-            </P>
-            <P>
-              <b>Image placeholder: tapping a phone on the reader</b>
             </P>
             <P>
               The challenge for the team was designing an experience that seamlessly connected
