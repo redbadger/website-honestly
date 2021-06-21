@@ -5,7 +5,6 @@ import styles from './style.css';
 import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
 import Card from '../../../../components/card';
 import Image from '../../../../components/image';
-import ContactBox from '../../../../components/contact-box';
 import BaseQuote from '../../../../components/quote';
 import Video from './video';
 
@@ -65,9 +64,7 @@ export const UL = ({
 }): React.Element<'ul'> => <ul className={styles.list}>{children}</ul>;
 
 type BodyProps = {
-  children: React.ChildrenArray<
-    React.Element<typeof Section | typeof PageHeading | typeof ContactBox>,
-  >,
+  children: any,
 };
 export const Body = ({ children }: BodyProps) => <div className={styles.body}>{children}</div>;
 

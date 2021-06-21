@@ -116,12 +116,12 @@ export default function Pride() {
         <Section>
           <SectionBody>
             <P>
-              <a href="https://www.nandos.co.uk/card/about">Nando&aposs loyalty programme</a> allows
-              lovers of the legendary PERi-PERi Chicken restaurant to collect ‘chillies’ and access
-              free meals. Red Badger worked with the Nando’s product team to reimagine the customer
-              experience of the restaurant’s loyalty programme. Together we designed and built a
-              digital-first, mobile wallet enabled loyalty experience enabling customers to earn and
-              redeem rewards across all digital touchpoints.
+              <a href="https://www.nandos.co.uk/card/about">Nando&:aposs loyalty programme</a>{' '}
+              allows lovers of the legendary PERi-PERi Chicken restaurant to collect ‘chillies’ and
+              access free meals. Red Badger worked with the Nando’s product team to reimagine the
+              customer experience of the restaurant’s loyalty programme. Together we designed and
+              built a digital-first, mobile wallet enabled loyalty experience enabling customers to
+              earn and redeem rewards across all digital touchpoints.
             </P>
           </SectionBody>
         </Section>
