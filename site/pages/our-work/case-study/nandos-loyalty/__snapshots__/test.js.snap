@@ -45,64 +45,74 @@ Array [
           </a>
            allows lovers of the legendary PERi-PERi Chicken restaurant to collect ‘chillies’ and access free meals. Red Badger worked with the Nando’s product team to reimagine the customer experience of the restaurant’s loyalty programme. Together we designed and built a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.
         </p>
+      </div>
+    </div>
+    <div
+      class="videoAndResultsDesktop"
+    >
+      <div
+        class="section"
+      >
+        <picture>
+          <source
+            class="bodyImage"
+            srcset="TapWithPhone@1x.png, TapWithPhone@2x.png 2x"
+          />
+          <img
+            alt=""
+            class="bodyImage"
+            src="TapWithPhone@1x.png"
+          />
+        </picture>
+      </div>
+      <div
+        class="section"
+      >
         <div
-          class="coloumnContent"
+          class="Card"
         >
-          <picture>
-            <source
-              srcset="TapWithPhone@1x.png, TapWithPhone@2x.png 2x"
-            />
-            <img
-              alt=""
-              src="TapWithPhone@1x.png"
-            />
-          </picture>
           <div
-            class="Card"
+            class="listBox listBox"
           >
-            <div
-              class="listBox listBox"
+            <h3
+              class="listBox__heading"
             >
-              <h3
-                class="listBox__heading"
+              RESULTS, AT A GLANCE
+            </h3>
+            <ul>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
               >
-                RESULTS, AT A GLANCE
-              </h3>
-              <ul>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
-                >
-                  <div>
-                    Introduced first NFC-enabled Loyalty Card in the UK
-                  </div>
-                  <div />
-                </li>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
-                >
-                  <div>
-                    Created a new digital channel for both customer acquisition and engagement 
-                  </div>
-                  <div />
-                </li>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
-                >
-                  <div>
-                    Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability
-                  </div>
-                  <div />
-                </li>
-                <li
-                  class="listBox__element listBox__element--results listBox__item"
-                >
-                  <div>
-                    Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem
-                  </div>
-                  <div />
-                </li>
-              </ul>
-            </div>
+                <div>
+                  Introduced first NFC-enabled Loyalty Card in the UK
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Created a new digital channel for both customer acquisition and engagement 
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem
+                </div>
+                <div />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -135,35 +145,45 @@ Array [
             Image placehodler: the plastic card
           </b>
         </p>
-        <div
-          class="coloumnContent"
-        >
-          <picture>
-            <source
-              srcset="PlasticCard@1x.png, PlasticCard@2x.png 2x"
-            />
-            <img
-              alt=""
-              src="PlasticCard@1x.png"
-            />
-          </picture>
-          <div>
-            <p
-              class="fontXS paragraph"
-            >
-              The original loyalty offering relied on a plastic card. Handing the card to staff at point of sale in the restaurant would allow customers to collect chillies, which add up to rewards that can be redeemed for free food (scientifically proven to taste even better than regular Nando’s).
-            </p>
-            <p
-              class="fontXS paragraph"
-            >
-              There were multiple issues with this setup. Customers had to keep the card in their wallet and have it every time they visited. Cards were easily lost and time consuming to replace. Customers would often start collecting towards a reward, but then abandon their card, only to register a new one and start over again, no closer to their free PERi-PERi. On top of that, the scheme released more plastic into the world, which wasn’t aligned with Nando’s environmental efforts such as their commitment to reduce direct emissions to zero by 2030.
-            </p>
-            <p
-              class="fontXS paragraph"
-            >
-              The plastic card had to evolve with the times.
-            </p>
-          </div>
+      </div>
+    </div>
+    <div
+      class="coloumnContent"
+    >
+      <div
+        class="section"
+      >
+        <picture>
+          <source
+            class="bodyImage"
+            srcset="PlasticCard@1x.png, PlasticCard@2x.png 2x"
+          />
+          <img
+            alt=""
+            class="bodyImage"
+            src="PlasticCard@1x.png"
+          />
+        </picture>
+      </div>
+      <div
+        class="section"
+      >
+        <div>
+          <p
+            class="fontXS paragraph"
+          >
+            The original loyalty offering relied on a plastic card. Handing the card to staff at point of sale in the restaurant would allow customers to collect chillies, which add up to rewards that can be redeemed for free food (scientifically proven to taste even better than regular Nando’s).
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            There were multiple issues with this setup. Customers had to keep the card in their wallet and have it every time they visited. Cards were easily lost and time consuming to replace. Customers would often start collecting towards a reward, but then abandon their card, only to register a new one and start over again, no closer to their free PERi-PERi. On top of that, the scheme released more plastic into the world, which wasn’t aligned with Nando’s environmental efforts such as their commitment to reduce direct emissions to zero by 2030.
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            The plastic card had to evolve with the times.
+          </p>
         </div>
       </div>
     </div>
@@ -210,15 +230,29 @@ Array [
             : Reduce administration of the scheme and create a unified customer data ecosystem.
           </li>
         </ul>
-        <picture>
-          <source
-            srcset="TapWithWatch@1x.png, TapWithWatch@2x.png 2x"
-          />
-          <img
-            alt=""
-            src="TapWithWatch@1x.png"
-          />
-        </picture>
+      </div>
+    </div>
+    <div
+      class="bannerWrapper"
+    >
+      <picture>
+        <source
+          class="banner"
+          srcset="TapWithWatch@1x.png, TapWithWatch@2x.png 2x"
+        />
+        <img
+          alt=""
+          class="banner"
+          src="TapWithWatch@1x.png"
+        />
+      </picture>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
         <p
           class="fontXS paragraph"
         >
@@ -279,32 +313,44 @@ Array [
         >
           In the Alpha stage, we took a road trip to guerrilla-test our riskiest customer assumptions and validate the technical viability of a new-to-market hardware solution. We worked hand-in-hand with internal stakeholders to ensure every part of the business understood and supported the service.
         </p>
-        <p
-          class="fontXS paragraph"
+      </div>
+    </div>
+    <p
+      class="fontXS paragraph"
+    />
+    <div
+      class="coloumnContentShort"
+    >
+      <picture>
+        <source
+          class="bodyImage"
+          srcset="Testing@1x.png, Testing@2x.png 2x"
         />
-        <div
-          class="coloumnContent"
-        >
-          <picture>
-            <source
-              srcset="Testing@1x.png, Testing@2x.png 2x"
-            />
-            <img
-              alt=""
-              src="Testing@1x.png"
-            />
-          </picture>
-          <picture>
-            <source
-              srcset="Devices@1x.png, Devices@2x.png 2x"
-            />
-            <img
-              alt=""
-              src="Devices@1x.png"
-            />
-          </picture>
-        </div>
-        <p />
+        <img
+          alt=""
+          class="bodyImage"
+          src="Testing@1x.png"
+        />
+      </picture>
+      <picture>
+        <source
+          class="bodyImage"
+          srcset="Devices@1x.png, Devices@2x.png 2x"
+        />
+        <img
+          alt=""
+          class="bodyImage"
+          src="Devices@1x.png"
+        />
+      </picture>
+    </div>
+    <p />
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
         <p
           class="fontXS paragraph"
         >

@@ -123,39 +123,44 @@ export default function Pride() {
               digital-first, mobile wallet enabled loyalty experience enabling customers to earn and
               redeem rewards across all digital touchpoints.
             </P>
-            <div className={styles.coloumnContent}>
-              <Image
-                src={TapWithPhoneX1Img}
-                src2x={TapWithPhoneX2Img}
-                altText="People (Badgers) sticking post-its on a blue wall"
-              />
-              <Card>
-                <ListBox
-                  className={styles.listBox}
-                  title="RESULTS, AT A GLANCE"
-                  items={[
-                    {
-                      label: 'Introduced first NFC-enabled Loyalty Card in the UK',
-                    },
-                    {
-                      label:
-                        'Created a new digital channel for both customer acquisition and engagement ',
-                    },
-                    {
-                      label:
-                        'Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability',
-                    },
-                    {
-                      label:
-                        'Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem',
-                    },
-                  ]}
-                  itemClassName={styles.listBox__item}
-                />
-              </Card>
-            </div>
           </SectionBody>
         </Section>
+        <div className={styles.videoAndResultsDesktop}>
+          <Section>
+            <Image
+              src={TapWithPhoneX1Img}
+              src2x={TapWithPhoneX2Img}
+              className={styles.bodyImage}
+              altText="People (Badgers) sticking post-its on a blue wall"
+            />
+          </Section>
+          <Section>
+            <Card>
+              <ListBox
+                className={styles.listBox}
+                title="RESULTS, AT A GLANCE"
+                items={[
+                  {
+                    label: 'Introduced first NFC-enabled Loyalty Card in the UK',
+                  },
+                  {
+                    label:
+                      'Created a new digital channel for both customer acquisition and engagement ',
+                  },
+                  {
+                    label:
+                      'Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability',
+                  },
+                  {
+                    label:
+                      'Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem',
+                  },
+                ]}
+                itemClassName={styles.listBox__item}
+              />
+            </Card>
+          </Section>
+        </div>
         <Section>
           <SectionHeading
             subHeading="The Challenge"
@@ -170,36 +175,42 @@ export default function Pride() {
             <P>
               <b>Image placehodler: the plastic card</b>
             </P>
-            <div className={styles.coloumnContent}>
-              <Image
-                src={PlasticCardX1Img}
-                src2x={PlasticCardX2Img}
-                altText="People (Badgers) sticking post-its on a blue wall"
-              />
-              <div>
-                <P>
-                  The original loyalty offering relied on a plastic card. Handing the card to staff
-                  at point of sale in the restaurant would allow customers to collect chillies,
-                  which add up to rewards that can be redeemed for free food (scientifically proven
-                  to taste even better than regular Nando’s).
-                </P>
-                <P>
-                  There were multiple issues with this setup. Customers had to keep the card in
-                  their wallet and have it every time they visited. Cards were easily lost and time
-                  consuming to replace. Customers would often start collecting towards a reward, but
-                  then abandon their card, only to register a new one and start over again, no
-                  closer to their free PERi-PERi. On top of that, the scheme released more plastic
-                  into the world, which wasn’t aligned with Nando’s environmental efforts such as
-                  their commitment to reduce direct emissions to zero by 2030.
-                </P>
-                <P>The plastic card had to evolve with the times.</P>
-              </div>
-            </div>
-            {
-              // <Triptych {...tryptychConfig} />
-            }
           </SectionBody>
         </Section>
+        <div className={styles.coloumnContent}>
+          <Section>
+            <Image
+              src={PlasticCardX1Img}
+              src2x={PlasticCardX2Img}
+              className={styles.bodyImage}
+              altText="People (Badgers) sticking post-its on a blue wall"
+            />
+          </Section>
+          <Section>
+            <div>
+              <P>
+                The original loyalty offering relied on a plastic card. Handing the card to staff at
+                point of sale in the restaurant would allow customers to collect chillies, which add
+                up to rewards that can be redeemed for free food (scientifically proven to taste
+                even better than regular Nando’s).
+              </P>
+              <P>
+                There were multiple issues with this setup. Customers had to keep the card in their
+                wallet and have it every time they visited. Cards were easily lost and time
+                consuming to replace. Customers would often start collecting towards a reward, but
+                then abandon their card, only to register a new one and start over again, no closer
+                to their free PERi-PERi. On top of that, the scheme released more plastic into the
+                world, which wasn’t aligned with Nando’s environmental efforts such as their
+                commitment to reduce direct emissions to zero by 2030.
+              </P>
+              <P>The plastic card had to evolve with the times.</P>
+            </div>
+          </Section>
+        </div>
+        {
+          // <Triptych {...tryptychConfig} />
+        }
+
         <Section>
           <SectionHeading
             subHeading="Doing the right thing"
@@ -225,11 +236,18 @@ export default function Pride() {
                 and create a unified customer data ecosystem.
               </li>
             </UL>
-            <Image
-              src={TapWithWatchX1Img}
-              src2x={TapWithWatchX2Img}
-              altText="People (Badgers) sticking post-its on a blue wall"
-            />
+          </SectionBody>
+        </Section>
+        <div className={styles.bannerWrapper}>
+          <Image
+            src={TapWithWatchX1Img}
+            src2x={TapWithWatchX2Img}
+            className={styles.banner}
+            altText="People (Badgers) sticking post-its on a blue wall"
+          />
+        </div>
+        <Section>
+          <SectionBody>
             <P>
               The team identified a number of options for digitally enabled loyalty, the best of
               which was to launch the Nando’s card for customer’s mobile wallets through Apple’s
@@ -274,20 +292,26 @@ export default function Pride() {
               We worked hand-in-hand with internal stakeholders to ensure every part of the business
               understood and supported the service.
             </P>
-            <P>
-              <div className={styles.coloumnContent}>
-                <Image
-                  src={TestingX1Img}
-                  src2x={TestingX2Img}
-                  altText="People (Badgers) sticking post-its on a blue wall"
-                />
-                <Image
-                  src={DevicesX1Img}
-                  src2x={DevicesX2Img}
-                  altText="People (Badgers) sticking post-its on a blue wall"
-                />
-              </div>
-            </P>
+          </SectionBody>
+        </Section>
+        <P>
+          <div className={styles.coloumnContentShort}>
+            <Image
+              src={TestingX1Img}
+              src2x={TestingX2Img}
+              className={styles.bodyImage}
+              altText="People (Badgers) sticking post-its on a blue wall"
+            />
+            <Image
+              src={DevicesX1Img}
+              src2x={DevicesX2Img}
+              className={styles.bodyImage}
+              altText="People (Badgers) sticking post-its on a blue wall"
+            />
+          </div>
+        </P>
+        <Section>
+          <SectionBody>
             <P>
               On the back of what we found out, we refined the experience and in the Beta phase,
               rolled out the solution to Nando’s most loyal customers. Once everything worked to
