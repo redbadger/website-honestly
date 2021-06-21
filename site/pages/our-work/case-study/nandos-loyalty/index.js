@@ -4,7 +4,6 @@ import React from 'react';
 // import Social from '../../../../components/social';
 import Image from '../../../../components/image';
 import ScrollTracker from '../../../../components/scroll-tracker';
-// import Triptych from '../../../../components/triptych';
 import {
   PageHeading,
   Body,
@@ -15,9 +14,7 @@ import {
   P,
   H3,
   UL,
-  // ArticleImg,
 } from '../shared';
-// import Video from '../shared/video';
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 import ListBox from '../../../../components/list-box';
@@ -40,29 +37,6 @@ import TestingX1Img from './images/Testing@1x.png';
 import TestingX2Img from './images/Testing@2x.png';
 
 import styles from './style.css';
-// import Triptych from './triptych';
-
-// import socialImg from './images/social.gif';
-// import collaborationImg from './images/collaboration.jpg';
-// import header from './images/header.gif';
-
-// import Ryan from './images/Ryan_HS.jpg';
-// import Viktor from './images/Viktor_HS.jpg';
-
-// triptich images
-// import triptychLeft from './images/trip-left.jpg';
-// import triptychMiddle from './images/trip-middle.jpg';
-// import triptychRight from './images/trip-right.jpg';
-
-// // Update
-// const social = {
-//   title: "Nando's loyalty case study | Red Badger",
-//   description:
-//     'Red Badger worked with the Nando’s product team to reimagine the customer experience of the restaurant’s loyalty programme. Together we designed and built a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.',
-//   metaImage: socialImg,
-//   altText: 'TODO',
-//   url: 'https://red-badger.com/our-work/case-study/nandos-loyalty',
-// };
 
 const quoteProps = {
   text:
@@ -74,29 +48,7 @@ const quoteProps = {
   },
 };
 
-// const endQuoteProps = {
-//   text:
-//     "It was a real joy to work with Nando's on a truly innovative, industry first approach to customer loyalty. The brand has a cult following unlike any other among the digital native customers, and the mobile wallet approach clearly fit right in with their lives, allowing more of them to enjoy the Nando's rewards. Overcoming the technical obstacles was great fun for the team and thanks to Nando's openness to innovation, we were able to do some of our best work together.",
-//   author: {
-//     name: 'Viktor Charypar',
-//     title: 'Tech Director at Red Badger',
-//     image: Viktor,
-//   },
-// };
-
-// const tryptychConfig = {
-//   srcImageLeft: left,
-//   srcImageMiddle: middle,
-//   srcImageRight: right,
-//   altImageLeft:
-//     "Phone with the Pride app on in screen displaying a map, text reads: 'Easily find bars and events on the day'",
-//   altImageMiddle:
-//     "Phone with the Pride app on in screen displaying a list of events, text reads: 'Plan your perfect festival with ease and love'",
-//   altImageRight:
-//     "Phone with the Pride app on in screen displaying a list of event categories, text reads: 'Find diverse experiences from cabaret to films'",
-// };
-
-export default function Pride() {
+export default function NandosLoyalty() {
   return (
     <ScrollTracker>
       {
@@ -108,7 +60,7 @@ export default function Pride() {
           src2x={HeaderX2Img}
           src3x={HeaderX3Img}
           className={styles.headerImg}
-          altText="People (Badgers) sticking post-its on a blue wall"
+          altText="An illustration of a chilli with a wifi icon against a red background"
         />
       </div>
       <Body>
@@ -116,7 +68,7 @@ export default function Pride() {
         <Section>
           <SectionBody>
             <P>
-              <a href="https://www.nandos.co.uk/card/about">Nando&:aposs loyalty programme</a>{' '}
+              <a href="https://www.nandos.co.uk/card/about">Nando&apos;s loyalty programme</a>{' '}
               allows lovers of the legendary PERi-PERi Chicken restaurant to collect ‘chillies’ and
               access free meals. Red Badger worked with the Nando’s product team to reimagine the
               customer experience of the restaurant’s loyalty programme. Together we designed and
@@ -131,7 +83,7 @@ export default function Pride() {
               src={TapWithPhoneX1Img}
               src2x={TapWithPhoneX2Img}
               className={styles.bodyImage}
-              altText="People (Badgers) sticking post-its on a blue wall"
+              altText="A phone being tapped on a card machine."
             />
           </Section>
           <Section>
@@ -207,10 +159,6 @@ export default function Pride() {
             </div>
           </Section>
         </div>
-        {
-          // <Triptych {...tryptychConfig} />
-        }
-
         <Section>
           <SectionHeading
             subHeading="Doing the right thing"
