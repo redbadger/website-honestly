@@ -125,36 +125,38 @@ export default function NandosLoyalty() {
             </P>
           </SectionBody>
         </Section>
-        <div className={styles.coloumnContentTall}>
-          <Section>
-            <Image
-              src={PlasticCardX1Img}
-              src2x={PlasticCardX2Img}
-              className={styles.bodyImage}
-              altText="People (Badgers) sticking post-its on a blue wall"
-            />
-          </Section>
-          <Section>
-            <div>
-              <P>
-                The original loyalty offering relied on a plastic card. Handing the card to staff at
-                point of sale in the restaurant would allow customers to collect chillies, which add
-                up to rewards that can be redeemed for free food (scientifically proven to taste
-                even better than regular Nando’s).
-              </P>
-              <P>
-                There were multiple issues with this setup. Customers had to keep the card in their
-                wallet and have it every time they visited. Cards were easily lost and time
-                consuming to replace. Customers would often start collecting towards a reward, but
-                then abandon their card, only to register a new one and start over again, no closer
-                to their free PERi-PERi. On top of that, the scheme released more plastic into the
-                world, which wasn’t aligned with Nando’s environmental efforts such as their
-                commitment to reduce direct emissions to zero by 2030.
-              </P>
-              <P>The plastic card had to evolve with the times.</P>
-            </div>
-          </Section>
-        </div>
+        <Section>
+          <div className={styles.coloumnContentTall}>
+            <Section>
+              <Image
+                src={PlasticCardX1Img}
+                src2x={PlasticCardX2Img}
+                className={styles.bodyImage}
+                altText="People (Badgers) sticking post-its on a blue wall"
+              />
+            </Section>
+            <Section>
+              <div>
+                <P>
+                  The original loyalty offering relied on a plastic card. Handing the card to staff
+                  at point of sale in the restaurant would allow customers to collect chillies,
+                  which add up to rewards that can be redeemed for free food (scientifically proven
+                  to taste even better than regular Nando’s).
+                </P>
+                <P>
+                  There were multiple issues with this setup. Customers had to keep the card in
+                  their wallet and have it every time they visited. Cards were easily lost and time
+                  consuming to replace. Customers would often start collecting towards a reward, but
+                  then abandon their card, only to register a new one and start over again, no
+                  closer to their free PERi-PERi. On top of that, the scheme released more plastic
+                  into the world, which wasn’t aligned with Nando’s environmental efforts such as
+                  their commitment to reduce direct emissions to zero by 2030.
+                </P>
+                <P>The plastic card had to evolve with the times.</P>
+              </div>
+            </Section>
+          </div>
+        </Section>
         <Section>
           <SectionHeading
             subHeading="Doing the right thing"
