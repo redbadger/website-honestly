@@ -76,8 +76,18 @@
     margin: 0 auto;
   }
 
+  .coloumnContent {
+    max-height: 396px;
+  }
+
   .coloumnContent > *:first-child {
-    padding-right: 47px;
+    padding-right: 28px;
+    margin-bottom: -4px;
+  }
+
+  .coloumnContent > *:last-child {
+    /* had to explicitly set the height as 100% wasn't filling the parent for some reason */
+    height: 396px;
   }
 
   .coloumnContent img {
@@ -85,7 +95,7 @@
   }
 
   .bannerWrapper {
-    padding: 0 20px 40px;
+    padding: 0 0 40px;
   }
 
   .lastParagraphWrapper {
@@ -104,8 +114,20 @@
     margin-bottom: inherit;
   }
 
+  .coloumnContentTall 
+  .coloumnContentShort,
+  .coloumnContent {
+    max-width: 1160px;
+  }
+
+  .coloumnContentTall {
+    display: flex;
+    margin-bottom: 0;
+  }
+
   .coloumnContent > * {
     width: 50%;
+    padding: 0;
   }
 
   .desktopContentWrapper > div {
@@ -113,8 +135,7 @@
   }
 
   .coloumnContentShort,
-  .coloumnContent,
-  .videoAndResultsDesktop {
+  .coloumnContent {
     display: flex;
     padding: 0 20px;
     align-items: center;
@@ -122,11 +143,10 @@
   }
 
   .coloumnContentShort,
-  .coloumnContent,
-  .videoAndResultsDesktop > div {
+  .coloumnContent {
     width: 100%;
     padding-left: 0;
-    margin: 0;
+    margin: 0 0 80px;
   }
 
   .coloumnContentShort {
@@ -134,25 +154,12 @@
     justify-content: space-evenly;
   }
 
+  .coloumnContentShort img{
+    width: 100%;
+  }
+
   .coloumnContentShort > *:first-child {
     padding-right: 40px;
-  }
-
-  .coloumnContentShort img {
-    height: 100%;
-  }
-
-  .coloumnContent > div:last-of-type {
-    margin-top: -150px;
-  }
-
-  .videoAndResultsDesktop > div:first-of-type {
-    max-width: 590px;
-    margin-top: 150px;
-  }
-
-  .videoAndResultsDesktop > div:last-of-type {
-    margin-top: -100px;
   }
 
   .tabletContentWrapper > div {

@@ -48,7 +48,7 @@ Array [
       </div>
     </div>
     <div
-      class="videoAndResultsDesktop"
+      class="coloumnContent"
     >
       <div
         class="section"
@@ -56,12 +56,12 @@ Array [
         <picture>
           <source
             class="bodyImage"
-            srcset="TapWithPhone@1x.png, TapWithPhone@2x.png 2x"
+            srcset="TapWithPhone@1x.jpg, TapWithPhone@2x.jpg 2x, TapWithPhone@3x.jpg 3x"
           />
           <img
             alt=""
             class="bodyImage"
-            src="TapWithPhone@1x.png"
+            src="TapWithPhone@1x.jpg"
           />
         </picture>
       </div>
@@ -77,14 +77,14 @@ Array [
             <h3
               class="listBox__heading"
             >
-              RESULTS, AT A GLANCE
+              HEADLINES
             </h3>
             <ul>
               <li
                 class="listBox__element listBox__element--results listBox__item"
               >
                 <div>
-                  Introduced first NFC-enabled Loyalty Card in the UK
+                  Introduced first NFC-enabled loyalty card in the UK built upon entirely bespoke infrastructure to enable the loyalty scheme across Nando's digital ecosystem
                 </div>
                 <div />
               </li>
@@ -101,14 +101,6 @@ Array [
               >
                 <div>
                   Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability
-                </div>
-                <div />
-              </li>
-              <li
-                class="listBox__element listBox__element--results listBox__item"
-              >
-                <div>
-                  Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem
                 </div>
                 <div />
               </li>
@@ -141,7 +133,7 @@ Array [
       </div>
     </div>
     <div
-      class="coloumnContent"
+      class="coloumnContentTall"
     >
       <div
         class="section"
@@ -199,7 +191,9 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          Nando’s believed solving the plastic card problem would unlock a host of other benefits for both customers and business alike:
+          <strong>
+            Nando’s believed solving the plastic card problem would unlock a host of other benefits for both customers and business alike:
+          </strong>
         </p>
         <ul
           class="list"
@@ -223,6 +217,11 @@ Array [
             : Reduce administration of the scheme and create a unified customer data ecosystem.
           </li>
         </ul>
+        <p
+          class="fontXS paragraph"
+        >
+          The team identified a number of options for digitally enabled loyalty, the best of which was to launch the Nando’s card for customers’ mobile wallets through Apple’s Wallet app and GPay. Now instead of the plastic card, customers simply touch their phone at the till and the transaction would automatically use the customer’s Nando’s account, earning Chillies and unlocking rewards when ordering in restaurants or online.
+        </p>
       </div>
     </div>
     <div
@@ -246,11 +245,6 @@ Array [
       <div
         class="sectionBody"
       >
-        <p
-          class="fontXS paragraph"
-        >
-          The team identified a number of options for digitally enabled loyalty, the best of which was to launch the Nando’s card for customer’s mobile wallets through Apple’s Wallet app and GPay. Now instead of the plastic card, customers simply touch their phone at the till and the transaction would automatically use the customer’s Nando’s account, earning Chillies and unlocking rewards when ordering in restaurants or online.
-        </p>
         <p
           class="fontXS paragraph"
         >
@@ -389,7 +383,7 @@ Array [
             <h3
               class="listBox__heading"
             >
-              Results
+              Impact
             </h3>
             <ul>
               <li

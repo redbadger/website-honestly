@@ -29,8 +29,9 @@ import HeaderX3Img from './images/Header@3x.png';
 import PlasticCardX1Img from './images/PlasticCard@1x.png';
 import PlasticCardX2Img from './images/PlasticCard@2x.png';
 import RyanX2Img from './images/Ryan@2x.png';
-import TapWithPhoneX1Img from './images/TapWithPhone@1x.png';
-import TapWithPhoneX2Img from './images/TapWithPhone@2x.png';
+import TapWithPhoneX1Img from './images/TapWithPhone@1x.jpg';
+import TapWithPhoneX2Img from './images/TapWithPhone@2x.jpg';
+import TapWithPhoneX3Img from './images/TapWithPhone@3x.jpg';
 import TapWithWatchX1Img from './images/TapWithWatch@1x.png';
 import TapWithWatchX2Img from './images/TapWithWatch@2x.png';
 import TestingX1Img from './images/Testing@1x.png';
@@ -77,11 +78,12 @@ export default function NandosLoyalty() {
             </P>
           </SectionBody>
         </Section>
-        <div className={styles.videoAndResultsDesktop}>
+        <div className={styles.coloumnContent}>
           <Section>
             <Image
               src={TapWithPhoneX1Img}
               src2x={TapWithPhoneX2Img}
+              src3x={TapWithPhoneX3Img}
               className={styles.bodyImage}
               altText="A phone being tapped on a card machine."
             />
@@ -90,10 +92,11 @@ export default function NandosLoyalty() {
             <Card>
               <ListBox
                 className={styles.listBox}
-                title="RESULTS, AT A GLANCE"
+                title="HEADLINES"
                 items={[
                   {
-                    label: 'Introduced first NFC-enabled Loyalty Card in the UK',
+                    label:
+                      "Introduced first NFC-enabled loyalty card in the UK built upon entirely bespoke infrastructure to enable the loyalty scheme across Nando's digital ecosystem",
                   },
                   {
                     label:
@@ -102,10 +105,6 @@ export default function NandosLoyalty() {
                   {
                     label:
                       'Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability',
-                  },
-                  {
-                    label:
-                      'Built a bespoke tech infrastructure to enable the loyalty scheme across Nando’s digital ecosystem',
                   },
                 ]}
                 itemClassName={styles.listBox__item}
@@ -126,7 +125,7 @@ export default function NandosLoyalty() {
             </P>
           </SectionBody>
         </Section>
-        <div className={styles.coloumnContent}>
+        <div className={styles.coloumnContentTall}>
           <Section>
             <Image
               src={PlasticCardX1Img}
@@ -163,8 +162,10 @@ export default function NandosLoyalty() {
           />
           <SectionBody>
             <P>
-              Nando’s believed solving the plastic card problem would unlock a host of other
-              benefits for both customers and business alike:
+              <strong>
+                Nando’s believed solving the plastic card problem would unlock a host of other
+                benefits for both customers and business alike:
+              </strong>
             </P>
             <UL>
               <li>
@@ -181,6 +182,14 @@ export default function NandosLoyalty() {
                 and create a unified customer data ecosystem.
               </li>
             </UL>
+            <P>
+              The team identified a number of options for digitally enabled loyalty, the best of
+              which was to launch the Nando’s card for customers’ mobile wallets through Apple’s
+              Wallet app and GPay. Now instead of the plastic card, customers simply touch their
+              phone at the till and the transaction would automatically use the customer’s Nando’s
+              account, earning Chillies and unlocking rewards when ordering in restaurants or
+              online.
+            </P>
           </SectionBody>
         </Section>
         <div className={styles.bannerWrapper}>
@@ -193,14 +202,6 @@ export default function NandosLoyalty() {
         </div>
         <Section>
           <SectionBody>
-            <P>
-              The team identified a number of options for digitally enabled loyalty, the best of
-              which was to launch the Nando’s card for customer’s mobile wallets through Apple’s
-              Wallet app and GPay. Now instead of the plastic card, customers simply touch their
-              phone at the till and the transaction would automatically use the customer’s Nando’s
-              account, earning Chillies and unlocking rewards when ordering in restaurants or
-              online.
-            </P>
             <P>
               The challenge for the team was designing an experience that seamlessly connected
               physical and digital spaces, ensuring all the customer touchpoints work in sync and
@@ -285,7 +286,7 @@ export default function NandosLoyalty() {
             <Card>
               <ListBox
                 className={styles.listBox}
-                title="Results"
+                title="Impact"
                 items={[
                   {
                     label:
