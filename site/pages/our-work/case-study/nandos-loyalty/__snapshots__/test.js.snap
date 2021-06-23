@@ -26,7 +26,7 @@ Array [
       <h1
         class="fontL "
       >
-        Digital-first loyalty programme
+        Digital-first rewards programme
       </h1>
     </div>
     <div
@@ -41,9 +41,9 @@ Array [
           <a
             href="https://www.nandos.co.uk/card/about"
           >
-            Nando's loyalty programme
+            The Nando's Rewards programme
           </a>
-           allows lovers of the legendary PERi-PERi Chicken restaurant to collect ‘chillies’ and access free meals. Red Badger worked with the Nando’s product team to reimagine the customer experience of the restaurant’s loyalty programme. Together we designed and built a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.
+           allows lovers of our legendary PERi-PERi to collect ‘chillies' to earn free PERi-PERi. The Nando's Loyalty product team has reimagined the customer experience of our Nando's rewards programme, we designed and built a digital-first, mobile wallet enabled loyalty experience enabling our customers to earn and redeem rewards across all digital touchpoints.
         </p>
       </div>
     </div>
@@ -128,7 +128,7 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          In 2018, Nando’s came to Red Badger with a hypothesis that transforming it’s existing loyalty programme into a digital-first journey would eradicate a number of problems it’s customers were experiencing.
+          In 2018, Nando's came up with a hypothesis that transforming the existing Nando's reward programme into a digital-first journey would eradicate a number of problems customers were experiencing.
         </p>
       </div>
     </div>
@@ -160,12 +160,12 @@ Array [
             <p
               class="fontXS paragraph"
             >
-              The original loyalty offering relied on a plastic card. Handing the card to staff at point of sale in the restaurant would allow customers to collect chillies, which add up to rewards that can be redeemed for free food (scientifically proven to taste even better than regular Nando’s).
+              The original Nando's rewards programme offering relied on a plastic card. Handing the card to staff at point of sale in the restaurant would allow customers to collect chillies, which add up to rewards that can be redeemed for free food (scientifically proven to taste even better than regular Nando's).
             </p>
             <p
               class="fontXS paragraph"
             >
-              There were multiple issues with this setup. Customers had to keep the card in their wallet and have it every time they visited. Cards were easily lost and time consuming to replace. Customers would often start collecting towards a reward, but then abandon their card, only to register a new one and start over again, no closer to their free PERi-PERi. On top of that, the scheme released more plastic into the world, which wasn’t aligned with Nando’s environmental efforts such as their commitment to reduce direct emissions to zero by 2030.
+              There were multiple issues with this setup. Customers had to keep the card in their wallet and have it every time they visited. Cards were easily lost and time consuming to replace. Customers would often start collecting towards a reward, but then abandon their card, only to register a new one and start over again, no closer to their free PERi-PERi. On top of that, the programme released more plastic into the world, which wasn't aligned with Nando's environmental efforts such as their commitment to reduce direct emissions to zero by 2030.
             </p>
             <p
               class="fontXS paragraph"
@@ -196,7 +196,7 @@ Array [
           class="fontXS paragraph"
         >
           <strong>
-            Nando’s believed solving the plastic card problem would unlock a host of other benefits for both customers and business alike:
+            Nando's believed solving the plastic card problem would unlock a host of other benefits for both customers and business alike:
           </strong>
         </p>
         <ul
@@ -224,7 +224,7 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          The team identified a number of options for digitally enabled loyalty, the best of which was to launch the Nando’s card for customers’ mobile wallets through Apple’s Wallet app and GPay. Now instead of the plastic card, customers simply touch their phone at the till and the transaction would automatically use the customer’s Nando’s account, earning Chillies and unlocking rewards when ordering in restaurants or online.
+          The team identified a number of options for digitally enabled loyalty, the best of which was to launch the Nando's card for customers' mobile wallets through Apple's Wallet app and GPay. Now instead of the plastic card, customers simply touch their phone at the till and the transaction would automatically use the customer's Nando's account, earning Chillies and unlocking rewards when ordering in restaurants or online.
         </p>
       </div>
     </div>
@@ -280,7 +280,7 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          The initiative kicked off with an 8-week discovery period. A blended Nando’s and Red Badger cross-functional team used a Lean approach to conduct customer research, competitor analysis and business stakeholder interviews. We experimented with 7-10 technical solutions to digitally enable loyalty, from linking credit card data to using a phone number to verify identity and even biometric authentication.
+          The initiative kicked off with an 8-week discovery period. A cross-functional team used a Lean approach to conduct customer research, competitor analysis and business stakeholder interviews. We experimented with 7-10 technical solutions to digitally enable loyalty, from linking credit card data to using a phone number to verify identity and even biometric authentication.
         </p>
         <h3
           class="fontS2 "
@@ -290,45 +290,45 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          The team settled on a mobile-wallet enabled scheme as the most viable and desirable solution. The plan was to adopt an incremental approach to deliver value to Nando’s customers following a Lean methodology of rapid test & learn phases with customers.
+          The team settled on a mobile-wallet enabled scheme as the most viable and desirable solution. The plan was to adopt an incremental approach to deliver value to Nando's customers following a Lean methodology of rapid test & learn phases with customers.
         </p>
         <p
           class="fontXS paragraph"
         >
-          In the Alpha stage, we took a road trip to guerrilla-test our riskiest customer assumptions and validate the technical viability of a new-to-market hardware solution. We worked hand-in-hand with internal stakeholders to ensure every part of the business understood and supported the service.
+          In the Alpha stage, we took a road trip to guerrilla-test our riskiest customer assumptions and validate the technical viability of a new-to-market hardware solution. Through this process we came up with many iterations of the journey and visuals to identify what worked best for the customer.
         </p>
       </div>
     </div>
     <p
       class="fontXS paragraph"
-    />
-    <div
-      class="coloumnContentShort"
     >
-      <picture>
-        <source
-          class="bodyImage"
-          srcset="Testing@1x.png, Testing@2x.png 2x"
-        />
-        <img
-          alt=""
-          class="bodyImage"
-          src="Testing@1x.png"
-        />
-      </picture>
-      <picture>
-        <source
-          class="bodyImage"
-          srcset="Devices@1x.png, Devices@2x.png 2x"
-        />
-        <img
-          alt=""
-          class="bodyImage"
-          src="Devices@1x.png"
-        />
-      </picture>
-    </div>
-    <p />
+      <span
+        class="coloumnContentShort"
+      >
+        <picture>
+          <source
+            class="bodyImage"
+            srcset="Testing@1x.png, Testing@2x.png 2x"
+          />
+          <img
+            alt=""
+            class="bodyImage"
+            src="Testing@1x.png"
+          />
+        </picture>
+        <picture>
+          <source
+            class="bodyImage"
+            srcset="Devices@1x.png, Devices@2x.png 2x"
+          />
+          <img
+            alt=""
+            class="bodyImage"
+            src="Devices@1x.png"
+          />
+        </picture>
+      </span>
+    </p>
     <div
       class="section"
     >
@@ -338,7 +338,7 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          On the back of what we found out, we refined the experience and in the Beta phase, rolled out the solution to Nando’s most loyal customers. Once everything worked to their satisfaction, we gradually expanded the new experience to include all customer segments. This let the team release the new experience as early as possible to get fast feedback, but without having to cater to every edge case and with a limited impact if anything didn’t work quite right at first try.
+          On the back of what we found out, we refined the experience and in the Beta phase, rolled out the solution to Nando's most loyal customers. Once everything worked to their satisfaction, we gradually expanded the new experience to include all customer segments. This let the team release the new experience as early as possible to get fast feedback, but without having to cater to every edge case and with a limited impact if anything didn't work quite right at first try.
         </p>
         <h3
           class="fontS2 "
@@ -348,7 +348,12 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          Brand new and not available publicly at the time, the NFC loyalty technology was a first for us and Nando’s. We worked closely with Apple to implement the new service, and helped find a hardware supplier for the NFC readers supporting it. In the end, it even took a custom device driver to make the user journey as smooth as possible.
+          The team was the first in the UK to introduce a loyalty scheme into Apple's Wallet app using NFC to tap the pass in the restaurant. This took full-stack effort like no other, spanning web and mobile customer journeys, web services, transactional email, Apple and Google wallet API infrastructure, down to integrating the tills with a new hardware device enabling the NFC transactions for passes in mobile wallets.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          Brand new and not available publicly in the UK and Ireland at the time, the NFC loyalty technology was a first for Nando's. We worked closely with Apple to implement the new service, and helped find a hardware supplier for the NFC readers supporting it. In the end, it even took a custom device driver to make the user journey as smooth as possible.
         </p>
       </div>
     </div>
@@ -371,7 +376,7 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          In addition to the foundation services to earn Chillies and redeem rewards, the team delivered a brand new registration flow and an industry-first NFC loyalty pass in mobile wallet, as well as redesigned messaging of the scheme. We brought in new agile ways of working and embedded a test & learn approach with customers and internal stakeholders.
+          In addition to the foundation services to earn Chillies and redeem rewards, the team delivered a brand new registration flow and an industry-first mobile NFC loyalty card on mobile, as well as redesigned messaging of the scheme. We brought in new agile ways of working and embedded a test & learn approach with customers and internal stakeholders.
         </p>
         <p
           class="fontXS paragraph"
