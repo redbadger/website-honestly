@@ -52,9 +52,7 @@ const quoteProps = {
 export default function NandosLoyalty() {
   return (
     <ScrollTracker>
-      {
-        // <Social {...social} />
-      }
+      {/* <Social {...social} /> */}
       <div className={styles.headerImgWrapper}>
         <Image
           src={HeaderX1Img}
@@ -100,7 +98,7 @@ export default function NandosLoyalty() {
                   },
                   {
                     label:
-                      'Created a new digital channel for both customer acquisition and engagement ',
+                      'Created a new digital channel for both customer acquisition and engagement',
                   },
                   {
                     label:
@@ -176,12 +174,12 @@ export default function NandosLoyalty() {
                 value of the scheme, and incomplete registrations.
               </li>
               <li>
-                <b>Open up new customer segments</b>: Attract digital natives - who expect to engage
-                with brands in a digital way.
+                <strong>Open up new customer segments</strong>: Attract digital natives - who expect
+                to engage with brands in a digital way.
               </li>
               <li>
-                <b>Business efficiency and cost reduction</b>: Reduce administration of the scheme
-                and create a unified customer data ecosystem.
+                <strong>Business efficiency and cost reduction</strong>: Reduce administration of
+                the scheme and create a unified customer data ecosystem.
               </li>
             </UL>
             <P>
@@ -296,7 +294,7 @@ export default function NandosLoyalty() {
                   },
                   {
                     label:
-                      'Loyalty registrations doubled compared to the same period of the previous year.',
+                      'Loyalty registrations doubled compared to the same period of the previous year',
                   },
                   {
                     label:

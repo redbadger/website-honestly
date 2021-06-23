@@ -92,7 +92,7 @@ Array [
                 class="listBox__element listBox__element--results listBox__item"
               >
                 <div>
-                  Created a new digital channel for both customer acquisition and engagement 
+                  Created a new digital channel for both customer acquisition and engagement
                 </div>
                 <div />
               </li>
@@ -209,15 +209,15 @@ Array [
             : Eliminate current pain points with the scheme such as lost or forgotten cards, lack of understanding of the value of the scheme, and incomplete registrations.
           </li>
           <li>
-            <b>
+            <strong>
               Open up new customer segments
-            </b>
+            </strong>
             : Attract digital natives - who expect to engage with brands in a digital way.
           </li>
           <li>
-            <b>
+            <strong>
               Business efficiency and cost reduction
-            </b>
+            </strong>
             : Reduce administration of the scheme and create a unified customer data ecosystem.
           </li>
         </ul>
@@ -402,7 +402,7 @@ Array [
                 class="listBox__element listBox__element--results listBox__item"
               >
                 <div>
-                  Loyalty registrations doubled compared to the same period of the previous year.
+                  Loyalty registrations doubled compared to the same period of the previous year
                 </div>
                 <div />
               </li>
