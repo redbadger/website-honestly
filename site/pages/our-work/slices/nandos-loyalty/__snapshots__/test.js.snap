@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
+<Container
+  to="nandosLoyaltyCaseStudy"
+>
+  <Text
+    layout="leftCol"
+  >
+    <Header>
+      Reimagining what a loyalty programme experience could be like
+    </Header>
+    <Description>
+      Together with Nando's, we designed and built a UK first mobile NFC loyalty card and changed the way customers interact with the loyalty programme across physical and digital channels.
+    </Description>
+    <ReadMore />
+  </Text>
+  <Image
+    alt="iPhone showing Pago FX application "
+    src="loyalty.jpg"
+  />
+</Container>
+`;
