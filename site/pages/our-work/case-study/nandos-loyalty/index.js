@@ -41,7 +41,7 @@ import styles from './style.css';
 
 const quoteProps = {
   text:
-    'None of this would be possible without the audacity and vision to deliver a cutting edge customer experience, willingness to collaborate, adopt a test and learn mindset and staying totally focused on the needs of our customers. Red Badger has been a powerful ally from the start and instrumental in bringing this loyalty programme to market.',
+    'None of this would be possible without the audacity and vision to deliver a cutting edge customer experience, willingness to collaborate, adopt a test and learn mindset and staying totally focused on the needs of our customers.  Red Badger has been a powerful ally from the start and instrumental in delivering a great customer experience with Nando’s.',
   author: {
     name: 'Ryan Foreman',
     title: "Product Manager at Nando's",
@@ -78,10 +78,10 @@ export default function NandosLoyalty() {
           <SectionBody>
             <P>
               <a href="https://www.nandos.co.uk/card/about">The Nando&apos;s Rewards programme</a>{' '}
-              allows lovers of our legendary PERi-PERi to collect ‘chillies&apos; to earn free
-              PERi-PERi. The Nando&apos;s Loyalty product team has reimagined the customer
-              experience of our Nando&apos;s rewards programme, we designed and built a
-              digital-first, mobile wallet enabled loyalty experience enabling our customers to earn
+              allows lovers of the brand&apos;s legendary PERi-PERi to collect ‘chillies’ to earn
+              free PERi-PERi. Red Badger and the Nando&apos;s Loyalty product team have reimagined
+              the customer experience of the Nando&apos;s rewards programme – designing and building
+              a digital-first, mobile wallet enabled loyalty experience enabling customers to earn
               and redeem rewards across all digital touchpoints.
             </P>
           </SectionBody>
@@ -104,7 +104,7 @@ export default function NandosLoyalty() {
                 items={[
                   {
                     label:
-                      "Introduced first NFC-enabled loyalty card in the UK built upon entirely bespoke infrastructure to enable the loyalty scheme across Nando's digital ecosystem",
+                      "Introduced first NFC-enabled mobile loyalty card in the UK built upon entirely bespoke infrastructure to enable the loyalty scheme across Nando's digital ecosystem",
                   },
                   {
                     label:
@@ -296,10 +296,9 @@ export default function NandosLoyalty() {
           <SectionBody>
             <P>
               In addition to the foundation services to earn Chillies and redeem rewards, the team
-              delivered a brand new registration flow and an industry-first mobile NFC loyalty card
-              on mobile, as well as redesigned messaging of the scheme. We brought in new agile ways
-              of working and embedded a test &amp; learn approach with customers and internal
-              stakeholders.
+              delivered a brand new registration flow and an industry-first mobile NFC loyalty card,
+              as well as redesigned messaging of the scheme. We brought in new agile ways of working
+              and embedded a test &amp; learn approach with customers and internal stakeholders.
             </P>
             <P>The results speak for themselves:</P>
             <Card>
