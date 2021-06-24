@@ -79,10 +79,10 @@ export default function NandosLoyalty() {
             <P>
               <a href="https://www.nandos.co.uk/card/about">The Nando&apos;s Rewards programme</a>{' '}
               allows lovers of the brand&apos;s legendary PERi-PERi to collect ‘chillies’ to earn
-              free PERi-PERi. Red Badger and the Nando&apos;s Loyalty product team have reimagined
-              the customer experience of the Nando&apos;s rewards programme – designing and building
-              a digital-first, mobile wallet enabled loyalty experience enabling customers to earn
-              and redeem rewards across all digital touchpoints.
+              free PERi-PERi. Red Badger and the Nando&apos;s Loyalty product team reimagined the
+              customer experience of the Nando&apos;s rewards programme - designing and building a
+              digital-first, mobile wallet enabled loyalty experience enabling customers to earn and
+              redeem rewards across all digital touchpoints.
             </P>
           </SectionBody>
         </Section>
@@ -158,7 +158,14 @@ export default function NandosLoyalty() {
                   then abandon their card, only to register a new one and start over again, no
                   closer to their free PERi-PERi. On top of that, the programme released more
                   plastic into the world, which wasn&apos;t aligned with Nando&apos;s environmental
-                  efforts such as their commitment to reduce direct emissions to zero by 2030.
+                  efforts such as their commitment to{' '}
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.nandos.co.uk/carbonneutral#"
+                  >
+                    reduce direct emissions to zero by 2030.
+                  </a>
                 </P>
                 <P>The plastic card had to evolve with the times.</P>
               </div>
@@ -196,7 +203,7 @@ export default function NandosLoyalty() {
               The team identified a number of options for digitally enabled loyalty, the best of
               which was to launch the Nando&apos;s card for customers&apos; mobile wallets through
               Apple&apos;s Wallet app and GPay. Now instead of the plastic card, customers simply
-              touch their phone at the till and the transaction would automatically use the
+              touch their phone at the till and the transaction will automatically use the
               customer&apos;s Nando&apos;s account, earning Chillies and unlocking rewards when
               ordering in restaurants or online.
             </P>

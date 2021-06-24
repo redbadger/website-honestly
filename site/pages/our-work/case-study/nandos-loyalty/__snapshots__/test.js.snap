@@ -43,7 +43,7 @@ Array [
           >
             The Nando's Rewards programme
           </a>
-           allows lovers of the brand's legendary PERi-PERi to collect ‘chillies’ to earn free PERi-PERi. Red Badger and the Nando's Loyalty product team have reimagined the customer experience of the Nando's rewards programme – designing and building a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.
+           allows lovers of the brand's legendary PERi-PERi to collect ‘chillies’ to earn free PERi-PERi. Red Badger and the Nando's Loyalty product team reimagined the customer experience of the Nando's rewards programme - designing and building a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.
         </p>
       </div>
     </div>
@@ -165,7 +165,14 @@ Array [
             <p
               class="fontXS paragraph"
             >
-              There were multiple issues with this setup. Customers had to keep the card in their wallet and have it every time they visited. Cards were easily lost and time consuming to replace. Customers would often start collecting towards a reward, but then abandon their card, only to register a new one and start over again, no closer to their free PERi-PERi. On top of that, the programme released more plastic into the world, which wasn't aligned with Nando's environmental efforts such as their commitment to reduce direct emissions to zero by 2030.
+              There were multiple issues with this setup. Customers had to keep the card in their wallet and have it every time they visited. Cards were easily lost and time consuming to replace. Customers would often start collecting towards a reward, but then abandon their card, only to register a new one and start over again, no closer to their free PERi-PERi. On top of that, the programme released more plastic into the world, which wasn't aligned with Nando's environmental efforts such as their commitment to 
+              <a
+                href="https://www.nandos.co.uk/carbonneutral#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                reduce direct emissions to zero by 2030.
+              </a>
             </p>
             <p
               class="fontXS paragraph"
@@ -224,7 +231,7 @@ Array [
         <p
           class="fontXS paragraph"
         >
-          The team identified a number of options for digitally enabled loyalty, the best of which was to launch the Nando's card for customers' mobile wallets through Apple's Wallet app and GPay. Now instead of the plastic card, customers simply touch their phone at the till and the transaction would automatically use the customer's Nando's account, earning Chillies and unlocking rewards when ordering in restaurants or online.
+          The team identified a number of options for digitally enabled loyalty, the best of which was to launch the Nando's card for customers' mobile wallets through Apple's Wallet app and GPay. Now instead of the plastic card, customers simply touch their phone at the till and the transaction will automatically use the customer's Nando's account, earning Chillies and unlocking rewards when ordering in restaurants or online.
         </p>
       </div>
     </div>
