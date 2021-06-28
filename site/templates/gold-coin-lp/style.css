@@ -308,6 +308,7 @@
   background: grey;
   padding: 30px 30px 20px;
   display: block;
+  height: fit-content;
   margin-left: -32px;
   float: none;
   width: 100vw;
