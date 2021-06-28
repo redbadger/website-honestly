@@ -170,9 +170,12 @@ const GoldCoinLP = ({
                 {location}
               </p>
             </div>
-
-            <BackCTA modifier={styles.backCTADesktop} />
-            <BackCTA modifier={styles.backCTAMobile} />
+            {!unlisted && (
+              <React.Fragment>
+                <BackCTA modifier={styles.backCTADesktop} />
+                <BackCTA modifier={styles.backCTAMobile} />
+              </React.Fragment>
+            )}
 
             <div className={styles.goldCoinLPBody}>
               <div className={styles.goldCoinLPBodyText}>
@@ -219,7 +222,7 @@ const GoldCoinLP = ({
               )}
             </div>
           </div>
-          <BackCTA modifier={styles.backCTADesktop} />
+          {!unlisted && <BackCTA modifier={styles.backCTADesktop} />}
         </div>
         {previews && (
           <div className={styles.goldCoinLPExplore}>
@@ -229,7 +232,7 @@ const GoldCoinLP = ({
             </div>
           </div>
         )}
-        <BackCTA modifier={styles.backCTAMobile} />
+        {!unlisted && <BackCTA modifier={styles.backCTAMobile} />}
       </div>
     </div>
   );
