@@ -3,6 +3,7 @@
 /* eslint-disable react/no-danger */
 // Requires import * as syntax to use React.Node prop type.
 import * as React from 'react';
+import Helmet from 'react-helmet';
 import styles from './style.css';
 
 import Social from '../../components/social';
@@ -22,6 +23,7 @@ import Picture from '../../components/picture';
 import { atAGlanceTypes } from './atAGlance';
 
 export type GoldCoinLPProps = {
+  unlisted: Boolean,
   duration: string,
   headerImage: {
     main: string,
@@ -81,6 +83,7 @@ const renderPreviews = (previews: Array<PreviewSliceProps>) => {
 };
 
 const GoldCoinLP = ({
+  unlisted,
   duration,
   headerImage,
   title,
@@ -101,6 +104,7 @@ const GoldCoinLP = ({
 }: GoldCoinLPProps) => {
   return (
     <div>
+      {unlisted && <Helmet meta={[{ name: 'robots', content: 'noindex' }]} />}
       <Social
         title={'Experience Red Badger'}
         description={
@@ -111,6 +115,7 @@ const GoldCoinLP = ({
         url={`https://red-badger.com/what-we-do/experience-us/${slug}/`}
       />
       <div className={styles.goldCoinLP}>
+        {unlisted}
         <Picture
           xLargeSrc={headerImage.main}
           largeSrc={headerImage.large}

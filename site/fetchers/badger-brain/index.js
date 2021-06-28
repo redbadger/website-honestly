@@ -135,6 +135,7 @@ const fullEventsQuery = `
 
 const goldCoinPages = `
   allGoldCoinPages {
+        unlisted
         slug
         title
         subTitle
