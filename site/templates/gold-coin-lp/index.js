@@ -115,7 +115,6 @@ const GoldCoinLP = ({
         url={`https://red-badger.com/what-we-do/experience-us/${slug}/`}
       />
       <div className={styles.goldCoinLP}>
-        {unlisted}
         <Picture
           xLargeSrc={headerImage.main}
           largeSrc={headerImage.large}
