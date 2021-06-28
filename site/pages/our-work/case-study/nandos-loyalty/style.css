@@ -1,0 +1,184 @@
+@value badgerRedOnWhite, badgerAccessibleRedOnBlack from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+@value badgerRedOnWhite, badgerAccessibleRedOnBlack from '../../../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../../../css/_sizes.css";
+
+.listBox__item:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+.listBox__item--outcomes {
+  composes: lightSerif from '../../../../css/typography/_fonts.css';
+}
+
+.link {
+  color: badgerBlack;
+  border-bottom: 1px solid badgerRedOnWhite;
+}
+
+.link:hover {
+  color: badgerRedOnWhite;
+  border-bottom: 2px solid badgerAccessibleRedOnBlack;
+}
+
+.headerImgWrapper {
+  background-color: #99262e;
+}
+
+.headerImg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.banner {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.h3 {
+  padding-bottom: 25px;
+}
+
+.h2 > h2 {
+  font-size: 30px;
+}
+
+.body {
+  margin-bottom: -100px;
+}
+
+.bannerWrapper {
+  padding-bottom: 40px;
+}
+
+.listWrapper > ul {
+  padding-left: 0px;
+  list-style: inside;
+}
+.postitGroupWrapper {
+  margin-bottom: 40px;
+}
+
+.bodyImage {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media mediumScreen {
+  .tabletContentWrapper {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+
+
+  .coloumnContent > *:first-child {
+    padding-right: 28px;
+    margin-bottom: -4px;
+  }
+
+  .coloumnContent img {
+    width: 100%;
+  }
+
+  .bannerWrapper {
+    padding: 0 0 70px;
+  }
+
+  .lastParagraphWrapper {
+    padding-bottom: 60px;
+  }
+
+  .postitGroupWrapper {
+    margin-bottom: -40px 0 40px;
+  }
+}
+
+@media largeScreen {
+  .coloumnContent > *:last-child {
+    /* had to explicitly set the height as 100% wasn't filling the parent for some reason */
+    height: 396px;
+  }
+
+  .coloumnContent {
+    max-height: 396px;
+  }
+
+  .bodyImage {
+    width: inherit;
+    margin: inherit;
+    margin-bottom: inherit;
+  }
+
+  .coloumnContentTall .coloumnContentShort,
+  .coloumnContent {
+    max-width: 1160px;
+  }
+
+  .coloumnContentTall {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: -40px;
+    padding: 0 50px;
+  }
+
+  .coloumnContentTall img {
+    width: 300px;
+  }
+
+  .coloumnContent > * {
+    width: 50%;
+    padding: 0;
+  }
+
+  .desktopContentWrapper > div {
+    max-width: 920px;
+  }
+
+  .coloumnContentShort,
+  .coloumnContent {
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .coloumnContentShort,
+  .coloumnContent {
+    width: 100%;
+    padding-left: 0;
+    margin: 0 0 80px;
+  }
+
+  .coloumnContentShort {
+    max-height: 384px;
+    justify-content: space-evenly;
+  }
+
+  .coloumnContentShort img {
+    width: 100%;
+  }
+
+  .coloumnContentShort > *:first-child {
+    padding-right: 40px;
+  }
+
+  .tabletContentWrapper > div {
+    max-width: 920px;
+  }
+
+  .bannerWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    width: 100%;
+  }
+}

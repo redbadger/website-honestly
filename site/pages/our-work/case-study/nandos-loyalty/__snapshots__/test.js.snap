@@ -1,0 +1,713 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/case-study/pride/ renders correctly 1`] = `
+Array [
+  <div
+    class="headerImgWrapper"
+  >
+    <picture>
+      <source
+        class="headerImg"
+        srcset="Header@1x.png, Header@2x.png 2x, Header@3x.png 3x"
+      />
+      <img
+        alt=""
+        class="headerImg"
+        src="Header@1x.png"
+      />
+    </picture>
+  </div>,
+  <div
+    class="body"
+  >
+    <div
+      class="heading"
+    >
+      <h1
+        class="fontL "
+      >
+        Digital-first rewards programme
+      </h1>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
+        <p
+          class="fontXS paragraph"
+        >
+          <a
+            href="https://www.nandos.co.uk/card/about"
+          >
+            The Nando's Rewards programme
+          </a>
+           allows lovers of the brand's legendary PERi-PERi to collect ‘chillies’ to earn free PERi-PERi. Red Badger and the Nando's Loyalty product team reimagined the customer experience of the Nando's rewards programme - designing and building a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.
+        </p>
+      </div>
+    </div>
+    <div
+      class="coloumnContent"
+    >
+      <div
+        class="section"
+      >
+        <picture>
+          <source
+            class="bodyImage"
+            srcset="TapWithPhone@1x.jpg, TapWithPhone@2x.jpg 2x, TapWithPhone@3x.jpg 3x"
+          />
+          <img
+            alt=""
+            class="bodyImage"
+            src="TapWithPhone@1x.jpg"
+          />
+        </picture>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="Card"
+        >
+          <div
+            class="listBox listBox"
+          >
+            <h3
+              class="listBox__heading"
+            >
+              HEADLINES
+            </h3>
+            <ul>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Introduced first NFC-enabled mobile loyalty card in the UK built upon entirely bespoke infrastructure to enable the loyalty scheme across Nando's digital ecosystem
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Created a new digital channel for both customer acquisition and engagement
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Designed and built an end-to-end digital loyalty experience validated for customer desirability and business viability
+                </div>
+                <div />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <h2
+        class="sectionHeading"
+      >
+        <span
+          class="redTitle"
+        >
+          The Challenge
+        </span>
+        Poor experiences spoil the taste of free PERi-PERi
+      </h2>
+      <div
+        class="sectionBody"
+      >
+        <p
+          class="fontXS paragraph"
+        >
+          In 2018, Nando's came up with a hypothesis that transforming the existing Nando's reward programme into a digital-first journey would eradicate a number of problems customers were experiencing.
+        </p>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="coloumnContentTall"
+      >
+        <div
+          class="section"
+        >
+          <picture>
+            <source
+              class="bodyImage"
+              srcset="PlasticCard@1x.png, PlasticCard@2x.png 2x"
+            />
+            <img
+              alt=""
+              class="bodyImage"
+              src="PlasticCard@1x.png"
+            />
+          </picture>
+        </div>
+        <div
+          class="section"
+        >
+          <div>
+            <p
+              class="fontXS paragraph"
+            >
+              The original Nando's rewards programme offering relied on a plastic card. Handing the card to staff at point of sale in the restaurant would allow customers to collect chillies, which add up to rewards that can be redeemed for free food (scientifically proven to taste even better than regular Nando's).
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              There were multiple issues with this setup. Customers had to keep the card in their wallet and have it every time they visited. Cards were easily lost and time consuming to replace. Customers would often start collecting towards a reward, but then abandon their card, only to register a new one and start over again, no closer to their free PERi-PERi. On top of that, the programme released more plastic into the world, which wasn't aligned with Nando's environmental efforts such as their commitment to 
+              <a
+                href="https://www.nandos.co.uk/carbonneutral#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                reduce direct emissions to zero by 2030.
+              </a>
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              The plastic card had to evolve with the times.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <h2
+        class="sectionHeading"
+      >
+        <span
+          class="redTitle"
+        >
+          Doing the right thing
+        </span>
+        Reimagining a loyalty programme
+      </h2>
+      <div
+        class="sectionBody"
+      >
+        <p
+          class="fontXS paragraph"
+        >
+          <strong>
+            Nando's believed solving the plastic card problem would unlock a host of other benefits for both customers and business alike:
+          </strong>
+        </p>
+        <ul
+          class="list"
+        >
+          <li>
+            <strong>
+              Increased engagement from current customers
+            </strong>
+            : Eliminate current pain points with the scheme such as lost or forgotten cards, lack of understanding of the value of the scheme, and incomplete registrations.
+          </li>
+          <li>
+            <strong>
+              Open up new customer segments
+            </strong>
+            : Attract digital natives - who expect to engage with brands in a digital way.
+          </li>
+          <li>
+            <strong>
+              Business efficiency and cost reduction
+            </strong>
+            : Reduce administration of the scheme and create a unified customer data ecosystem.
+          </li>
+        </ul>
+        <p
+          class="fontXS paragraph"
+        >
+          The team identified a number of options for digitally enabled loyalty, the best of which was to launch the Nando's card for customers' mobile wallets through Apple's Wallet app and GPay. Now instead of the plastic card, customers simply touch their phone at the till and the transaction will automatically use the customer's Nando's account, earning Chillies and unlocking rewards when ordering in restaurants or online.
+        </p>
+      </div>
+    </div>
+    <div
+      class="bannerWrapper"
+    >
+      <picture>
+        <source
+          class="banner"
+          srcset="TapWithWatch@1x.png, TapWithWatch@2x.png 2x"
+        />
+        <img
+          alt=""
+          class="banner"
+          src="TapWithWatch@1x.png"
+        />
+      </picture>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
+        <p
+          class="fontXS paragraph"
+        >
+          The challenge for the team was designing an experience that seamlessly connected physical and digital spaces, ensuring all the customer touchpoints work in sync and making the immense technical complexity feel entirely effortless.
+        </p>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <h2
+        class="sectionHeading"
+      >
+        <span
+          class="redTitle"
+        >
+          Do the thing right
+        </span>
+        Striving for the best customer experience
+      </h2>
+      <div
+        class="sectionBody"
+      >
+        <h3
+          class="fontS2 "
+        >
+          8-week test & learn discovery
+        </h3>
+        <p
+          class="fontXS paragraph"
+        >
+          The initiative kicked off with an 8-week discovery period. A cross-functional team used a Lean approach to conduct customer research, competitor analysis and business stakeholder interviews. We experimented with 7-10 technical solutions to digitally enable loyalty, from linking credit card data to using a phone number to verify identity and even biometric authentication.
+        </p>
+        <h3
+          class="fontS2 "
+        >
+          Incremental value to the customers
+        </h3>
+        <p
+          class="fontXS paragraph"
+        >
+          The team settled on a mobile-wallet enabled scheme as the most viable and desirable solution. The plan was to adopt an incremental approach to deliver value to Nando's customers following a Lean methodology of rapid test & learn phases with customers.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          In the Alpha stage, we took a road trip to guerrilla-test our riskiest customer assumptions and validate the technical viability of a new-to-market hardware solution. Through this process we came up with many iterations of the journey and visuals to identify what worked best for the customer.
+        </p>
+      </div>
+    </div>
+    <p
+      class="fontXS paragraph"
+    >
+      <span
+        class="coloumnContentShort"
+      >
+        <picture>
+          <source
+            class="bodyImage"
+            srcset="Testing@1x.png, Testing@2x.png 2x"
+          />
+          <img
+            alt=""
+            class="bodyImage"
+            src="Testing@1x.png"
+          />
+        </picture>
+        <picture>
+          <source
+            class="bodyImage"
+            srcset="Devices@1x.png, Devices@2x.png 2x"
+          />
+          <img
+            alt=""
+            class="bodyImage"
+            src="Devices@1x.png"
+          />
+        </picture>
+      </span>
+    </p>
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
+        <p
+          class="fontXS paragraph"
+        >
+          On the back of what we found out, we refined the experience and in the Beta phase, rolled out the solution to Nando's most loyal customers. Once everything worked to their satisfaction, we gradually expanded the new experience to include all customer segments. This let the team release the new experience as early as possible to get fast feedback, but without having to cater to every edge case and with a limited impact if anything didn't work quite right at first try.
+        </p>
+        <h3
+          class="fontS2 "
+        >
+          The fullest of full-stack software engineering
+        </h3>
+        <p
+          class="fontXS paragraph"
+        >
+          The team was the first in the UK to introduce a loyalty scheme into Apple's Wallet app using NFC to tap the pass in the restaurant. This took full-stack effort like no other, spanning web and mobile customer journeys, web services, transactional email, Apple and Google wallet API infrastructure, down to integrating the tills with a new hardware device enabling the NFC transactions for passes in mobile wallets.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          Brand new and not available publicly in the UK and Ireland at the time, the NFC loyalty technology was a first for Nando's. We worked closely with Apple to implement the new service, and helped find a hardware supplier for the NFC readers supporting it. In the end, it even took a custom device driver to make the user journey as smooth as possible.
+        </p>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <h2
+        class="sectionHeading"
+      >
+        <span
+          class="redTitle"
+        >
+          The results
+        </span>
+        A future-proof digital solution
+      </h2>
+      <div
+        class="sectionBody"
+      >
+        <p
+          class="fontXS paragraph"
+        >
+          In addition to the foundation services to earn Chillies and redeem rewards, the team delivered a brand new registration flow and an industry-first mobile NFC loyalty card, as well as redesigned messaging of the scheme. We brought in new agile ways of working and embedded a test & learn approach with customers and internal stakeholders.
+        </p>
+        <p
+          class="fontXS paragraph"
+        >
+          The results speak for themselves:
+        </p>
+        <div
+          class="Card"
+        >
+          <div
+            class="listBox listBox"
+          >
+            <h3
+              class="listBox__heading"
+            >
+              Impact
+            </h3>
+            <ul>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Within 3 months, over 300,000 customers had added the card to their mobile wallet
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Loyalty registrations doubled compared to the same period of the previous year
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  The percentage of orders earning loyalty went from 33% to 66% and reward redemption jumped from 6% to 18% of orders
+                </div>
+                <div />
+              </li>
+              <li
+                class="listBox__element listBox__element--results listBox__item"
+              >
+                <div>
+                  Removed £200k of annual plastic card production cost from the business
+                </div>
+                <div />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
+        <div
+          class="quotation quote"
+        >
+          <div
+            class="quotation__text"
+          >
+            <blockquote
+              class="quotation__quote"
+            >
+              None of this would be possible without the audacity and vision to deliver a cutting edge customer experience, willingness to collaborate, adopt a test and learn mindset and staying totally focused on the needs of our customers.  Red Badger has been a powerful ally from the start and instrumental in delivering a great customer experience with Nando’s.
+            </blockquote>
+          </div>
+          <div
+            class="quotation__author"
+          >
+            <div
+              class="avatar__container"
+              style="width:70px;height:70px;min-width:70px;min-height:70px"
+            >
+              <img
+                alt="Ryan Foreman"
+                src="Ryan@2x.png"
+              />
+            </div>
+            <div
+              class="quotation__author__wrapper"
+            >
+              <div
+                class="quotation__author__name"
+              >
+                — Ryan Foreman
+              </div>
+              <div
+                class="quotation__author__title"
+              >
+                Product Manager at Nando's
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride/"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride/"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times/"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times/"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler/"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler/"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work/"
+    >
+      See more of our work
+    </a>
+  </div>,
+  <section
+    class="contactUsContainer"
+    data-cy="contact-us-slice"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        data-cy="email-link"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>,
+]
+`;

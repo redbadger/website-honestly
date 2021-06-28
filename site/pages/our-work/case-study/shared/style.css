@@ -25,6 +25,11 @@
   padding-bottom: 30px;
 }
 
+.section strong {
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
+  font-weight: 800;
+}
+
 .sectionHeading {
   composes: fontM from '../../../../css/typography/_fonts.css';
   composes: lightSerif from '../../../../css/typography/_fonts.css';
