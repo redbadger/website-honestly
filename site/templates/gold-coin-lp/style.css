@@ -157,7 +157,14 @@
   font-size: 20px;
 }
 
-.goldCoinLPQSection p {
+.goldCoinLPQSection p strong {
+  font-family: 'Sentinel A', 'Sentinel B', Georgia, serif;
+  font-weight: 800;
+}
+
+.goldCoinLPQSection p,
+.goldCoinLPQSection ul,
+.goldCoinLPQSection ol {
   margin-bottom: 20px;
 }
 
@@ -308,6 +315,7 @@
   background: grey;
   padding: 30px 30px 20px;
   display: block;
+  height: fit-content;
   margin-left: -32px;
   float: none;
   width: 100vw;

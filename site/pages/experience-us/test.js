@@ -5,6 +5,7 @@ import ExperienceUsPage from '.';
 describe('site/pages/experience-us', () => {
   const goldCoinPages = [
     {
+      unlisted: false,
       slug: 'test',
       title: 'test-title',
       subTitle: 'test-subtitle',

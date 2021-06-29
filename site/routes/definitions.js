@@ -48,7 +48,7 @@ const getGoldCoinPreviews = (goldCoinPages, currentPageSlug) => {
   // We slice off 3 at random
   // and maps those into an array of usable previews.
   return goldCoinPages
-    .filter(page => page.slug !== currentPageSlug)
+    .filter(page => page.slug !== currentPageSlug && !page.unlisted)
     .sort(() => 0.5 - Math.random())
     .slice(0, 3)
     .map(preview => {
@@ -114,7 +114,9 @@ export const routeDefinitions: Array<RouteDefinition> = [
       'We’re a Sunday Times 100 Best Small Company to Work For 2018 and looking for the best talent to join our team. ',
     key: 'experienceUs',
     route: 'what-we-do/experience-us',
-    stateToProps: ({ goldCoinPages }) => ({ goldCoinPages }),
+    stateToProps: ({ goldCoinPages }) => ({
+      goldCoinPages: goldCoinPages.filter(page => !page.unlisted),
+    }),
   },
   {
     title: ({ job }) => job.title,

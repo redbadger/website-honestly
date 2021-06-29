@@ -3,6 +3,7 @@
 /* eslint-disable react/no-danger */
 // Requires import * as syntax to use React.Node prop type.
 import * as React from 'react';
+import Helmet from 'react-helmet';
 import styles from './style.css';
 
 import Social from '../../components/social';
@@ -22,6 +23,7 @@ import Picture from '../../components/picture';
 import { atAGlanceTypes } from './atAGlance';
 
 export type GoldCoinLPProps = {
+  unlisted: Boolean,
   duration: string,
   headerImage: {
     main: string,
@@ -81,6 +83,7 @@ const renderPreviews = (previews: Array<PreviewSliceProps>) => {
 };
 
 const GoldCoinLP = ({
+  unlisted,
   duration,
   headerImage,
   title,
@@ -101,6 +104,7 @@ const GoldCoinLP = ({
 }: GoldCoinLPProps) => {
   return (
     <div>
+      {unlisted && <Helmet meta={[{ name: 'robots', content: 'noindex' }]} />}
       <Social
         title={'Experience Red Badger'}
         description={
@@ -166,9 +170,12 @@ const GoldCoinLP = ({
                 {location}
               </p>
             </div>
-
-            <BackCTA modifier={styles.backCTADesktop} />
-            <BackCTA modifier={styles.backCTAMobile} />
+            {!unlisted && (
+              <React.Fragment>
+                <BackCTA modifier={styles.backCTADesktop} />
+                <BackCTA modifier={styles.backCTAMobile} />
+              </React.Fragment>
+            )}
 
             <div className={styles.goldCoinLPBody}>
               <div className={styles.goldCoinLPBodyText}>
@@ -215,7 +222,7 @@ const GoldCoinLP = ({
               )}
             </div>
           </div>
-          <BackCTA modifier={styles.backCTADesktop} />
+          {!unlisted && <BackCTA modifier={styles.backCTADesktop} />}
         </div>
         {previews && (
           <div className={styles.goldCoinLPExplore}>
@@ -225,7 +232,7 @@ const GoldCoinLP = ({
             </div>
           </div>
         )}
-        <BackCTA modifier={styles.backCTAMobile} />
+        {!unlisted && <BackCTA modifier={styles.backCTAMobile} />}
       </div>
     </div>
   );

@@ -107,6 +107,7 @@ exports[`site/pages/experience-us Renders 1`] = `
               "subTitle": "test-subtitle",
               "title": "test-title",
               "type": "lunch",
+              "unlisted": false,
               "whatIsIt": "<p>test what is it</p>",
               "whatWillYouLearn": "<p>test what will you learn</p>",
               "whoIsItFor": "<p>test who is it for</p>",
