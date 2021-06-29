@@ -61,7 +61,9 @@ const timeframes: TimeframesType = {
 
 const sortTimeframes = goldCoinPages => {
   Object.keys(timeframes).forEach(timeframe => {
-    timeframes[timeframe].pages = goldCoinPages.slice(0, 3);
+    timeframes[timeframe].pages = goldCoinPages
+      .filter(page => page.duration === timeframe)
+      .slice(0, 3);
   });
   return timeframes;
 };
