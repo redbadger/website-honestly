@@ -89,11 +89,7 @@ export default function removeArchived(bucketName) {
         state.data.badgers.map(badger => badger.slug),
         peoplePrefix,
       ),
-      removeArchivedWithPrefix(
-        bucketName,
-        state.data.jobs.map(job => job.slug),
-        jobsPrefix,
-      ),
+      removeArchivedWithPrefix(bucketName, state.data.jobs.map(job => job.slug), jobsPrefix),
       removeArchivedWithPrefix(
         bucketName,
         state.data.goldCoinPages.map(page => page.slug),

@@ -7,35 +7,32 @@ export default function Principles() {
   return (
     <div className={styles.principles}>
       <div className={styles.container}>
-        <h1 className={styles.header}>Our principles.</h1>
-        <div className={styles.thisIsWhatWeBelieveIn}>
-          This is what we believe – and what the founders say after a couple of pints
-        </div>
+        <h1 className={styles.header}>Our values.</h1>
         <ul className={styles.principleList}>
           <Principle
             number="01"
             title="People people."
-            description="Our work is built on the respect we have for each other and our clients. We’re also very focused on the needs of our clients’ customers."
+            description="We respect and care for each other, giving us the space to feel safe and be our true selves"
           />
           <Principle
             number="02"
             title="Find a way."
-            description="As individuals we need to be proactive, to earn and build the trust of our clients."
+            description="We’re comfortable with uncertainty and accountability, whilst achieving great outcomes through shared goals"
           />
           <Principle
             number="03"
             title="Always learning."
-            description="We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it."
+            description="We’re curious. It’s how we learn and grow as individuals, continuously testing and improving what we do, and how we do it"
           />
           <Principle
             number="04"
-            title="Honest."
-            description="We’re relied upon to tell things as they are. We do so in an approachable and down-to-earth manner."
+            title="Open &amp; fair"
+            description="We build trust by telling things as they are, being open, and seeking to achieve fair and equitable outcomes"
           />
           <Principle
             number="05"
-            title="Strong opinions, weakly held."
-            description="Clear points-of-view help give our work direction and purpose – but we’re humble about these. We don’t let ego get in the way."
+            title="Collaborative"
+            description="We are united by our desire to get to the best ideas. We are generous with our knowledge, actively listen to each other, and are open minded"
           />
         </ul>
         <div className={styles.buttons}>
