@@ -13,11 +13,6 @@ exports[`site/pages/about-us renders correctly 1`] = `
       >
         Our values.
       </h1>
-      <div
-        class="thisIsWhatWeBelieveIn"
-      >
-        This is what we believe
-      </div>
       <ul
         class="principleList"
       >

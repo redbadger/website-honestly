@@ -8,7 +8,6 @@ export default function Principles() {
     <div className={styles.principles}>
       <div className={styles.container}>
         <h1 className={styles.header}>Our values.</h1>
-        <div className={styles.thisIsWhatWeBelieveIn}>This is what we believe</div>
         <ul className={styles.principleList}>
           <Principle
             number="01"
