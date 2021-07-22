@@ -12,7 +12,6 @@
     "jest": true
   },
   "globals": {
-    "amplitude": true,
     "expect": true,
     "System": true,
     "globals": true

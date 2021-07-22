@@ -6,7 +6,6 @@ import { NavigationHandler } from 'navigation-react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import styles from './style.css';
-import logAmplitudeEvent, { fetchPageMetadata } from '../tracking/amplitude';
 
 type Props = {
   title: string,
@@ -14,33 +13,18 @@ type Props = {
   children: Node,
 };
 
-export default class Layout extends React.Component<Props> {
-  componentDidMount = () => {
-    const { stateContext } = this.props.stateNavigator;
-    logAmplitudeEvent('PAGE LOADED', fetchPageMetadata(stateContext));
-    logAmplitudeEvent('ENTRY PAGE', fetchPageMetadata(stateContext), true);
-  };
-
-  componentDidUpdate(prevProps: Props) {
-    if (prevProps.title !== this.props.title) {
-      const { stateContext } = this.props.stateNavigator;
-      logAmplitudeEvent('PAGE LOADED', fetchPageMetadata(stateContext));
-    }
-  }
-
-  render() {
-    const { stateNavigator, children } = this.props;
-
-    return (
-      <NavigationHandler stateNavigator={stateNavigator}>
-        <div className={styles.application}>
-          <Header />
-          <div id="mainContent" className={styles.background}>
-            {children}
-          </div>
-          <Footer />
+const Layout = ({ stateNavigator, children }: Props) => {
+  return (
+    <NavigationHandler stateNavigator={stateNavigator}>
+      <div className={styles.application}>
+        <Header />
+        <div id="mainContent" className={styles.background}>
+          {children}
         </div>
-      </NavigationHandler>
-    );
-  }
-}
+        <Footer />
+      </div>
+    </NavigationHandler>
+  );
+};
+
+export default Layout;
