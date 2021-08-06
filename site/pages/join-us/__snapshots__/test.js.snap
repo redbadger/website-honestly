@@ -316,9 +316,6 @@ exports[`site/pages/join-us renders correctly 1`] = `
               We believe in creating opportunity for all. We benefit from diversity. That said, we're far from perfect – we want to be more diverse and representative. Join us and help make that happen.
             </p>
           </div>
-          <hr
-            class="hr black horizontal-line"
-          />
           <div
             class="jobSectionContainer"
           >
@@ -425,18 +422,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           </a>
                         </div>
                       </div>
-                      <hr
-                        class="hr black mobileHorizontalLine"
-                      />
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
-          <hr
-            class="hr black horizontal-line"
-          />
           <div
             class="jobSectionContainer"
           >
@@ -543,18 +534,12 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           </a>
                         </div>
                       </div>
-                      <hr
-                        class="hr black mobileHorizontalLine"
-                      />
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
-          <hr
-            class="hr black horizontal-line"
-          />
           <div
             class="jobSectionContainer"
           >
@@ -661,9 +646,6 @@ exports[`site/pages/join-us renders correctly 1`] = `
                           </a>
                         </div>
                       </div>
-                      <hr
-                        class="hr black mobileHorizontalLine"
-                      />
                     </div>
                   </div>
                 </div>

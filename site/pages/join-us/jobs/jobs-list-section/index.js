@@ -2,7 +2,6 @@
 import React from 'react';
 import JobsListEntry from '../jobs-list-entry';
 import styles from '../jobs-list/style.css';
-import HR from '../../../../components/hr';
 import type { JobProps } from '..';
 
 type JobsListSectionProps = {
@@ -13,7 +12,6 @@ type JobsListSectionProps = {
 const JobsListSection = ({ title, jobs }: JobsListSectionProps) => {
   return (
     <React.Fragment>
-      <HR color="black" />
       <div className={styles.jobSectionContainer}>
         <h2 className={styles.jobSectionHeader} data-cy="job-section">
           {title}
