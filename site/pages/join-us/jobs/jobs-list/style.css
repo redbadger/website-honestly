@@ -36,6 +36,14 @@
 .jobItem {
   position: relative;
   list-style-type: none;
+  border-bottom: 2px badgerBlack solid;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+}
+
+.jobItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 /* Disable the final small hr in each section */
@@ -82,6 +90,8 @@
 
 .jobSectionContainer {
   display: block;
+  padding-top: 22px;
+  border-top: 2px badgerBlack solid;
 }
 
 .jobSectionContainer:last-child {
@@ -172,6 +182,10 @@
     padding: 0;
   }
 
+  .jobItem {
+    margin-left: 25px;
+  }
+
   .jobSectionContainer {
     display: flex;
     position: relative;
@@ -179,7 +193,6 @@
 
   .jobEntryHeaderContainer {
     width: 100%;
-    padding-left: 25px;
     padding-right: calc(100% - 580px);
   }
 

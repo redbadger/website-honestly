@@ -1,7 +1,6 @@
 // @flow
 import React, { Component } from 'react';
 
-import HR from '../../../../components/hr';
 import Link from '../../../../components/link';
 import { Grid, Cell } from '../../../../components/grid';
 import RawHtml from '../../../../components/raw-html';
@@ -85,7 +84,6 @@ class JobsListEntry extends Component<JobProps, JobsListEntryState> {
                   </Link>
                 </div>
               </div>
-              <HR color="black" customClassName={styles.mobileHorizontalLine} />
             </Cell>
           </Grid>
         </div>
