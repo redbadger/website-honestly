@@ -93,8 +93,7 @@ const PagoFx = () => (
                   title="AT A GLANCE"
                   items={[
                     {
-                      label:
-                        '18 month end-to-end product development in highly regulated financial sector',
+                      label: 'Rapid end-to-end product development in regulated financial sector',
                     },
                     {
                       label:
@@ -102,7 +101,7 @@ const PagoFx = () => (
                     },
                     {
                       label:
-                        'Architected long-term technical foundation and set up PagoFX for future success',
+                        'Architected long-term technical foundation priming PagoFX for future success',
                     },
                     {
                       label: '4.9 * rating on App Store',
@@ -140,9 +139,9 @@ const PagoFx = () => (
                 pricing and with the trust that comes from the backing of a world-renowned bank.
               </P>
               <P>
-                Red Badger’s job was to validate assumptions of the customer challenges being faced,
-                the problem the service was trying to solve and give PagoFX product owners a clear
-                understanding of which problems to solve first.
+                Red Badger’s job was to validate assumptions of customer challenges, the problem the
+                service was solving and provide PagoFX product owners a clear understanding of which
+                problems to solve first.
               </P>
               <P>
                 We designed a minimum desirable product - a limited internal pilot launch of an iOS
@@ -258,8 +257,7 @@ const PagoFx = () => (
               <div className={styles.listWrapper}>
                 <UL>
                   <li>
-                    <strong>The Android application </strong>- a key platform to reach customers in
-                    EU markets
+                    <strong>The Android application </strong>- a key platform to reach EU customers
                   </li>
                   <li>
                     <strong>A staff facing customer and payment operations portal</strong> -
@@ -300,7 +298,7 @@ const PagoFx = () => (
               </P>
               <P>
                 In under 18 months, Red Badger helped PagoFX go from prototype to a globally rolled
-                out product. PagoFX now has a solid foundation to build on the for the future and a
+                out product. PagoFX now has a solid foundation to build on for the future and a
                 best-in-class payments platform enabling customers to send money abroad quickly and
                 safely.
               </P>
