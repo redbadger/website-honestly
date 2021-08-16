@@ -68,36 +68,15 @@ const PagoFx = () => (
     </div>
     <Body>
       <div className={styles.body}>
-        <PageHeading>PagoFX: Helping Santander build a trusted digital business</PageHeading>
+        <PageHeading>PagoFX: Helping Santander build a digital business</PageHeading>
         <Section>
           <SectionBody>
             <P>
-              Red Badger worked with Santander’s{' '}
-              <a
-                href="https://pagofx.com/"
-                className={styles.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PagoFX
-              </a>{' '}
-              team to design, build and deliver a best-in-class payments service.
-            </P>
-            <P>
-              <a
-                href="https://www.santander.com/en/press-room/press-releases/2020/04/santander-launches-pagofx-in-the-uk-to-offer-fast-secure-and-low-cost-international-transfers-with-no-fees-for-two-months"
-                className={styles.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Part of Santander’s four-year (2019-2022), 20 billion-euro digital technology pledge
-              </a>
-              , PagoFX is a standalone international money transfer app that offers anyone low cost
-              money transfers, bank-level security, and multi-channel customer support.
-            </P>
-            <P>
-              In 2020, the service was launched in the UK with bold plans to expand into 20 new
-              markets thereafter.
+              PagoFX is a Santander-backed, standalone international money transfer app. Currently
+              available in the UK but with ambitious global growth plans, it offers customers
+              low-cost money transfers with bank-level security supported by multi-channel customer
+              service. Instrumental in its development, Red Badger worked with PagoFX to design,
+              build and launch the best in class payments service.
             </P>
           </SectionBody>
         </Section>
@@ -111,23 +90,21 @@ const PagoFx = () => (
               <Card>
                 <ListBox
                   className={styles.listBox}
-                  title="RESULTS, AT A GLANCE"
+                  title="AT A GLANCE"
                   items={[
                     {
-                      label:
-                        'Built an end-to-end product in just 18 months – in a highly regulated financial sector',
+                      label: 'Rapid end-to-end product development in regulated financial sector',
                     },
                     {
                       label:
-                        'Designed a best-in-class customer experience, powered by user testing across Europe',
+                        'Leveraged user testing across Europe to design best-in-class customer experience',
                     },
                     {
                       label:
-                        'Helped establish a solid technical foundation to set PagoFX up for future success',
+                        'Architected long-term technical foundation priming PagoFX for future success',
                     },
                     {
-                      label:
-                        'Created a service that was recognised by users with a 4+ star rating on the App Store ',
+                      label: '4.9 * rating on App Store',
                     },
                   ]}
                   itemClassName={styles.listBox__item}
@@ -144,41 +121,32 @@ const PagoFx = () => (
           <SectionBody>
             <div className={styles.tabletContentWrapper}>
               <P>
-                Over the last couple of years, international transfers have seen an increasing
-                number of new-to-market providers offering innovative, user centred services.
-                Consumer expectations are changing fast.
-              </P>
-
-              <P>
-                In this context, Santander saw an opportunity to delight the market with a brand new
-                service that brings together the best of both worlds. PagoFX combines the trust and
-                security of a large established bank with the single-minded customer focus of an
-                industry disruptor.
+                PagoFX is part of Santander’s 4-year digital transformation program, a program which
+                has been pledged a staggering €20 billion investment. Identifying a gap in the
+                international payments market, PagoFX is designed to combine the best of both
+                worlds: the trust and security of a large bank with the single-minded customer focus
+                of an industry disruptor. Santander believes that even with the flux of new market
+                entrants, there is a clear space for the service.
               </P>
               <div className={styles.h3}>
-                <H3>Defining unknown problems</H3>
+                <H3>The challenge</H3>
               </div>
               <P>
-                Money transfer services haven’t traditionally been beloved of customers. Imagine
-                WhatsApp without the blue ticks, without notifications and where only half your
-                message gets delivered. Then imagine being charged £20 to send that message. That’s
-                what sending money overseas has felt like for many.
+                Sending money overseas today can be a painful experience. No clear verification
+                process, no acknowledgement that funds received and no oversight as to whether the
+                money even arrived. Plus you have to pay for the privilege. PagoFX’s key selling
+                points are giving back control to the customer while being transparent, with fair
+                pricing and with the trust that comes from the backing of a world-renowned bank.
               </P>
               <P>
-                How do you shake that up and offer something altogether more effortless and
-                reassuring? PagoFX&apos;s key selling points are around giving back control to the
-                customer through transparency, offering fair pricing, and being trustworthy (which
-                goes hand in hand with being backed by a world-renowned bank).
+                Red Badger’s job was to validate assumptions of customer challenges, the problem the
+                service was solving and provide PagoFX product owners a clear understanding of which
+                problems to solve first.
               </P>
               <P>
-                Part of our job was to validate the assumptions underlying the new product and help
-                PagoFX product owners prioritise which problems to solve first.
-              </P>
-              <P>
-                Red Badger experts set out to design a minimum desirable product – a limited
-                internal pilot launch of an iOS application with a full customer onboarding journey
-                and end-to-end international payment encompassing the capture of funds, FX hedging,
-                and settlement.
+                We designed a minimum desirable product - a limited internal pilot launch of an iOS
+                application with full customer onboarding journey and end-to-end international
+                payment - which captured funds, FX hedging and settlement.
               </P>
             </div>
           </SectionBody>
@@ -198,30 +166,22 @@ const PagoFx = () => (
           <SectionBody>
             <div className={styles.tabletContentWrapper}>
               <div className={styles.h3}>
-                <H3>Speaking to real customers</H3>
+                <H3>Get out of the building and speak to customers</H3>
               </div>
               <P>
-                At Red Badger, we believe in getting out of the building to speak to real customers,
-                shaping products with people at their heart. This project was no exception. We
-                listened, and learnt that customers who’d used traditional banks to make
-                international money transfers were frustrated with hidden fees, long delivery times,
-                and poor visibility of payments.
-              </P>
-              <P>
-                This valuable information allowed us to better understand the problems we needed to
-                solve, as well as who’s been struggling with these problems and how.
-              </P>
-              <P>
-                Red Badger put the product in the hands of real users early on, through a
-                comprehensive user onboarding initiative. We worked closely with PagoFX’s business,
-                legal and tech teams to create a journey that met their requirements as well as the
-                needs of users. The result? We crafted a product that gave users a strong sense of
-                security and that’s simple and easy to use.
+                Ahead of any concrete decisions, it was critical to collect real customer feedback.
+                Hidden fees, long delivery times and poor payment visibility were all cited as
+                problems using traditional banks to make international money transfers. This
+                information crystallised the problems to solve and the broad swathes of people
+                experiencing them.
               </P>
               <div className={styles.lastParagraphWrapper}>
                 <P>
-                  We took the same user-centric approach to defining the payments journey, too. And
-                  we did everything we could to make the payment process refreshingly transparent.
+                  User onboarding was tackled first, working closely with business, legal and tech
+                  teams to create a journey which delivered the security customers demanded while
+                  meeting the quality requirements of the new service. The approach formulated
+                  tackling this challenge gave a framework to define the payments journey, ensuring
+                  money was safe and the process transparent.
                 </P>
               </div>
             </div>
@@ -234,29 +194,33 @@ const PagoFx = () => (
           <SectionBody>
             <div className={styles.tabletContentWrapper}>
               <div className={styles.h3}>
-                <H3>Thinking like a start-up</H3>
+                <H3>Start-up thinking</H3>
               </div>
               <P>
-                To create value fast, we needed to run the project according to Lean and Agile
-                principles. The PagoFX team was set up to operate independently of the larger bank’s
-                operations. It was given the autonomy to make product and technology choices and to
-                experiment safely in isolation.
+                To facilitate lean and agile operations, the PagoFX team was set up to operate
+                independently of the larger bank’s operations. The team has autonomy to make product
+                and technology decisions, experimenting safely in isolation.
               </P>
               <P>
-                For dramatically increased speed to market, the initial minimum desirable product
-                was built using a number of third party services for some of the key functionality,
-                with the longer-term strategy to migrate onto Santander platforms where appropriate.
+                To rapidly accelerate time to market for the new service, the initial minimum
+                desirable product was built using 3rd party services for some of the key
+                functionalities with the longer-term strategy to migrate onto Santander platforms
+                where appropriate.
               </P>
               <P>
                 The first step towards an end-to-end product was to produce a pilot proving the key
-                features we knew we needed: customer registration; the “Know Your Customer”
-                verification process; acquiring funds from the customer; exchanging currency on the
-                FX market; and sending money to the recipient.
+                features needed - customer registration, the “Know Your Customer”(KYC) verification
+                process, fund acquisition from customer, currency exchange and sending money to the
+                recipient. A series of prototypes were built to explore the technical feasibility of
+                early product ideas (e.g. processing ApplePay payments, NFC scanning of biometric
+                information from ID documents on Android).
               </P>
               <P>
-                We built a series of prototypes exploring the technical feasibility of various early
-                product ideas, including processing ApplePay payments and NFC scanning of biometric
-                information from ID documents on Android.
+                The team set themselves an ambitious goal of making an international payment from
+                the app within four months. This involved setting up brand new cloud infrastructure,
+                building the iOS app itself, designing and building the payments platform powering
+                it and selecting and integrating 3rd party services. Despite the size of the
+                challenge, the team achieved its goal in time.
               </P>
             </div>
             <div>
@@ -274,47 +238,47 @@ const PagoFx = () => (
             <div className={styles.tabletContentWrapper}>
               <P>
                 Santander established a separate legal entity for PagoFX and submitted an
-                application for a payments license to the UK and EU regulators. Red Badger gave
-                expert support from a technology perspective, covering cloud architecture, the
-                processing of sensitive information, and general information security controls.
+                application for a payments license to UK and EU regulators. Red Badger provided
+                technology support covering cloud architecture, processing sensitive information and
+                general information security controls.
               </P>
               <P>
-                The pilot’s success meant the next goals were a full launch in the UK, followed by
-                the EU. While the pilot product was an end-to-end journey, the full scope of work
-                for a public launch was significantly larger and more complex.
+                The pilot’s success pushed the project forward to a full launch in the UK, followed
+                by the EU. While the pilot product was an end-to-end journey, the full scope of work
+                for public launch was significantly larger and more complex.
               </P>
               <div className={styles.h3}>
-                <H3>Scaling and learning</H3>
+                <H3>Scaling delivery</H3>
               </div>
               <P>
-                To achieve the larger scale launch at speed, the project grew from one Red Badger
-                team to four parallel Red Badger teams.
+                To achieve the larger scale launch, the project expanded to four parallel Red Badger
+                teams. The additional teams worked on:
               </P>
-              <P>Here’s what the additional teams worked on:</P>
               <div className={styles.listWrapper}>
                 <UL>
-                  <li>Android application – a key platform to reach customers in the EU markets</li>
                   <li>
-                    A staff-facing customer and payment operations portal – enabling operators to
-                    monitor customer onboarding and payments processing so they could support
-                    customers and monitor for any financial crime
+                    <strong>The Android application </strong>- a key platform to reach EU customers
                   </li>
                   <li>
-                    An accounting ledger system to keep track of the precise movements of funds
-                    during online payment processing
+                    <strong>A staff facing customer and payment operations portal</strong> -
+                    critical to enable operators to monitor customer onboarding and payments
+                    processing and provide additional support for any potential financial crime
+                  </li>
+                  <li>
+                    <strong>The accounting ledger system</strong> - required to keep track of the
+                    precise movements of funds during online payment processing
                   </li>
                 </UL>
               </div>
+              <div className={styles.h3}>
+                <H3>Continuous learning</H3>
+              </div>
               <P>
-                As with any Red Badger project, we made sure we were continuously learning and
-                improving. With our key user journeys defined, we ran regular lab-style usability
-                testing sessions to evaluate journeys and to highlight any key usability issues. The
-                process was designed to be collaborative, allowing key stakeholders and team members
-                to understand and empathise with the user.
-              </P>
-              <P>
-                We created a clear roadmap to incorporate customer desires and feedback, to continue
-                to improve the experience and grow the customer base.
+                With key user journeys defined, regular lab-style usability testing was conducted to
+                evaluate performance and highlight any key usability issues. The process was
+                designed to be collaborative, allowing stakeholders to and team members to build
+                user empathy - a very important element of delivering exemplary customer
+                experiences.
               </P>
             </div>
           </SectionBody>
@@ -322,24 +286,21 @@ const PagoFx = () => (
         </Section>
         <Section>
           <div className={styles.h2}>
-            <SectionHeading heading="From project to sustainable business" />
+            <SectionHeading heading="From a project to a sustainable business" />
           </div>
           <SectionBody>
             <div className={styles.tabletContentWrapper}>
               <P>
-                PagoFX’s aim? To make sure the business was well-positioned to operate the service
-                independently and continue to scale the product into new markets. Together, we’ve
-                provided a solid platform for these ambitions.
+                A core objective of the project was to ensure PagoFX’s team could operate the
+                service independently and continue to scale the product into new markets. A clear
+                roadmap was devised to incorporate customer desires and feedback to fuel
+                development, improve the experience and expand the customer base.
               </P>
               <P>
-                In under 18 months, Red Badger helped PagoFX go from prototype to live product. The
-                live product we created is now being rolled out globally.
-              </P>
-              <P>
-                We’re proud of the work we’ve done to help create a foundation which PagoFX can
-                confidently build upon in the future. Above all, we’re excited that so many
-                customers will be able to make use of this trusted, secure and innovative product to
-                send money abroad quickly and safely.
+                In under 18 months, Red Badger helped PagoFX go from prototype to a globally rolled
+                out product. PagoFX now has a solid foundation to build on for the future and a
+                best-in-class payments platform enabling customers to send money abroad quickly and
+                safely.
               </P>
             </div>
           </SectionBody>
