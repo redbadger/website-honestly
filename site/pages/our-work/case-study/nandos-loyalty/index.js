@@ -127,7 +127,7 @@ export default function NandosLoyalty() {
           />
           <SectionBody>
             <P>
-              In 2018, Nando&apos;s came up with a hypothesis that transforming the existing
+              Back in 2018, Nando&apos;s came up with a hypothesis that transforming the existing
               Nando&apos;s reward programme into a digital-first journey would eradicate a number of
               problems customers were experiencing.
             </P>
