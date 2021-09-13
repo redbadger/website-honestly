@@ -5,7 +5,6 @@ import getSiteState from './index';
 describe('state', () => {
   beforeAll(() => {
     process.env.HUBSPOT_BLOG_ENDPOINT = 'https://api.hubapi.com/content/api/v2/blog-posts';
-    process.env.HUBSPOT_API_KEY = 'ABC';
     process.env.TWITTER_KEY = 'SECRET_KEY';
     process.env.TWITTER_SECRET = 'SECRET_KEY';
     process.env.BADGER_BRAIN_HOST = 'https://brain-staging.red-badger.com/graphql';
@@ -14,7 +13,6 @@ describe('state', () => {
 
   afterAll(() => {
     delete process.env.HUBSPOT_BLOG_ENDPOINT;
-    delete process.env.HUBSPOT_API_KEY;
     delete process.env.TWITTER_KEY;
     delete process.env.TWITTER_SECRET;
     delete process.env.BADGER_BRAIN_HOST;
