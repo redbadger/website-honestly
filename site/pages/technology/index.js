@@ -5,7 +5,6 @@ import styles from './style.css';
 
 import TechSlice from '../../slices/tech-slice';
 import BlogSlice from './blog-slice';
-import WebinarSignupSlice from './webinar-signup-slice';
 import { TechChecklist } from '../../slices/checklist-contact-us-slice';
 
 import { YellowSlice } from '../../components/slice';
@@ -45,7 +44,6 @@ const TechnologyPage = ({ triedAndTestedBlogPosts, growingTrendsBlogPosts }: Pro
         <BlogSlice blogPosts={growingTrendsBlogPosts} title="Growing trends" altStyle />
       </div>
     </section>
-    <WebinarSignupSlice />
     <TechChecklist />
   </ScrollTracker>
 );

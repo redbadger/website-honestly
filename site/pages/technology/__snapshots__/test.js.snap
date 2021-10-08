@@ -449,56 +449,6 @@ Array [
     </div>
   </section>,
   <section
-    class="webinar"
-  >
-    <div
-      class="webinarInner"
-    >
-      <h2
-        class="webinarText"
-      >
-        Did you miss our tech webinars on Serverless, GraphQL and more?
-      </h2>
-      <div
-        class="hubspotBtn webinarBtnWrapper"
-      >
-        <span
-          class="hs-cta-wrapper"
-          id="hs-cta-wrapper-c87452af-5599-4904-a20c-7d9d48886193"
-        >
-          <span
-            class="hs-cta-node hs-cta-c87452af-5599-4904-a20c-7d9d48886193"
-            id="hs-cta-c87452af-5599-4904-a20c-7d9d48886193"
-          >
-            <a
-              href="https://cta-redirect.hubspot.com/cta/redirect/4210858/c87452af-5599-4904-a20c-7d9d48886193"
-              target="_blank"
-            >
-              <img
-                alt="Watch them now"
-                class="hs-cta-img"
-                height="112"
-                id="hs-cta-img-c87452af-5599-4904-a20c-7d9d48886193"
-                src="https://no-cache.hubspot.com/cta/default/4210858/c87452af-5599-4904-a20c-7d9d48886193.png"
-                style="border-width:0px;"
-                width="448"
-              />
-            </a>
-          </span>
-          <script
-            charset="utf-8"
-            src="https://js.hscta.net/cta/current.js"
-          />
-          <script
-            type="text/javascript"
-          >
-             hbspt.cta.load(4210858, 'c87452af-5599-4904-a20c-7d9d48886193', {}); 
-          </script>
-        </span>
-      </div>
-    </div>
-  </section>,
-  <section
     class="contactUsContainer"
     data-cy="contact-us-slice"
     id="contactUs"
