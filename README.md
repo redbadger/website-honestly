@@ -14,6 +14,18 @@ Red Badger Website Episode 6: Return of the Jedi.
 
 ## Usage
 
+### Codespaces
+Github Codespaces is enabled for this repository to get your development environment up and running as quickly as possible. To get started,
+
+- Click the Code drop-down menu, and then in the Codespaces tab, click New codespace. 
+- A pop up should appear to select the size of the VM, select a 4 core VM or higher.
+- Then select whether you would like to use VSCode in the browser (preferably a chromium based browser) or the native app on your local machine.
+- [Follow instructions on how to run the website locally](#running-the-website). 
+
+*Note: All the necessary credentials for local development should already be embedded within the codespaces environment on the startup automatically.*
+
+### Local Setup
+
 You will require the correct version of [Node.js](https://nodejs.org/en/) installed - check it in the `.node-version` file.
 On OSX you can use [nvm](https://github.com/creationix/nvm) and [avn](https://github.com/wbyoung/avn) to install and manage versions (avn will read the `.node-version` file).
 
@@ -53,6 +65,7 @@ make scanner
 make fetch
 ```
 
+### Running the website
 Now start the website:
 
 ```sh
