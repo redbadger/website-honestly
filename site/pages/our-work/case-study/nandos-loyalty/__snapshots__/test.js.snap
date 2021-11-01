@@ -241,12 +241,12 @@ Array [
       <picture>
         <source
           class="banner"
-          srcset="TapWithWatch@1x.png, TapWithWatch@2x.png 2x"
+          srcset="Wallets@1x.png, Wallets@2x.png 2x, Wallets@3x.png 3x"
         />
         <img
           alt=""
           class="banner"
-          src="TapWithWatch@1x.png"
+          src="Wallets@1x.png"
         />
       </picture>
     </div>
@@ -306,11 +306,11 @@ Array [
         </p>
       </div>
     </div>
-    <p
-      class="fontXS paragraph"
+    <div
+      class="section"
     >
-      <span
-        class="coloumnContentShort"
+      <div
+        class="sectionBody"
       >
         <picture>
           <source
@@ -323,19 +323,8 @@ Array [
             src="Testing@1x.png"
           />
         </picture>
-        <picture>
-          <source
-            class="bodyImage"
-            srcset="Devices@1x.png, Devices@2x.png 2x"
-          />
-          <img
-            alt=""
-            class="bodyImage"
-            src="Devices@1x.png"
-          />
-        </picture>
-      </span>
-    </p>
+      </div>
+    </div>
     <div
       class="section"
     >
@@ -385,6 +374,40 @@ Array [
         >
           In addition to the foundation services to earn Chillies and redeem rewards, the team delivered a brand new registration flow and an industry-first mobile NFC loyalty card, as well as redesigned messaging of the scheme. We brought in new agile ways of working and embedded a test & learn approach with customers and internal stakeholders.
         </p>
+      </div>
+    </div>
+    <div
+      class="bannerWrapper"
+    >
+      <picture>
+        <source
+          class="banner"
+          srcset="Registration1@1x.png, Registration1@2x.png 2x, Registration1@3x.png 3x"
+        />
+        <img
+          alt=""
+          class="banner"
+          src="Registration1@1x.png"
+        />
+      </picture>
+      <picture>
+        <source
+          class="banner"
+          srcset="Registration2@1x.png, Registration2@2x.png 2x, Registration2@3x.png 3x"
+        />
+        <img
+          alt=""
+          class="banner"
+          src="Registration2@1x.png"
+        />
+      </picture>
+    </div>
+    <div
+      class="section"
+    >
+      <div
+        class="sectionBody"
+      >
         <p
           class="fontXS paragraph"
         >
