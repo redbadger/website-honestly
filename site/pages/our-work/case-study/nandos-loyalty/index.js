@@ -21,8 +21,6 @@ import ListBox from '../../../../components/list-box';
 import Card from '../../../../components/card';
 
 // Image imports
-import DevicesX1Img from './images/Devices@1x.png';
-import DevicesX2Img from './images/Devices@2x.png';
 import HeaderX1Img from './images/Header@1x.png';
 import HeaderX2Img from './images/Header@2x.png';
 import HeaderX3Img from './images/Header@3x.png';
@@ -32,11 +30,17 @@ import RyanX2Img from './images/Ryan@2x.png';
 import TapWithPhoneX1Img from './images/TapWithPhone@1x.jpg';
 import TapWithPhoneX2Img from './images/TapWithPhone@2x.jpg';
 import TapWithPhoneX3Img from './images/TapWithPhone@3x.jpg';
-import TapWithWatchX1Img from './images/TapWithWatch@1x.png';
-import TapWithWatchX2Img from './images/TapWithWatch@2x.png';
+import WalletsX1Img from './images/Wallets@1x.png';
+import WalletsX2Img from './images/Wallets@2x.png';
+import WalletsX3Img from './images/Wallets@3x.png';
 import TestingX1Img from './images/Testing@1x.png';
 import TestingX2Img from './images/Testing@2x.png';
-
+import Registration1X1Img from './images/Registration1@1x.png';
+import Registration1X2Img from './images/Registration1@2x.png';
+import Registration1X3Img from './images/Registration1@3x.png';
+import Registration2X1Img from './images/Registration2@1x.png';
+import Registration2X2Img from './images/Registration2@2x.png';
+import Registration2X3Img from './images/Registration2@3x.png';
 import styles from './style.css';
 
 const quoteProps = {
@@ -211,10 +215,11 @@ export default function NandosLoyalty() {
         </Section>
         <div className={styles.bannerWrapper}>
           <Image
-            src={TapWithWatchX1Img}
-            src2x={TapWithWatchX2Img}
+            src={WalletsX1Img}
+            src2x={WalletsX2Img}
+            src3x={WalletsX3Img}
             className={styles.banner}
-            altText="Apple Watch and Restaurant POS - Nando's digital reward programme"
+            altText="Nando's card in Apple Wallet and Google Pay"
           />
         </div>
         <Section>
@@ -255,22 +260,16 @@ export default function NandosLoyalty() {
             </P>
           </SectionBody>
         </Section>
-        <P>
-          <span className={styles.coloumnContentShort}>
+        <Section>
+          <SectionBody>
             <Image
               src={TestingX1Img}
               src2x={TestingX2Img}
               className={styles.bodyImage}
               altText="Group testing the Nando's digital reward programme"
             />
-            <Image
-              src={DevicesX1Img}
-              src2x={DevicesX2Img}
-              className={styles.bodyImage}
-              altText="Nando's digital reward programme on mobile devices"
-            />
-          </span>
-        </P>
+          </SectionBody>
+        </Section>
         <Section>
           <SectionBody>
             <P>
@@ -307,6 +306,26 @@ export default function NandosLoyalty() {
               as well as redesigned messaging of the scheme. We brought in new agile ways of working
               and embedded a test &amp; learn approach with customers and internal stakeholders.
             </P>
+          </SectionBody>
+        </Section>
+        <div className={styles.bannerWrapper}>
+          <Image
+            src={Registration1X1Img}
+            src2x={Registration1X2Img}
+            src3x={Registration1X3Img}
+            className={styles.banner}
+            altText="Registration flow - card linking and adding a pass"
+          />
+          <Image
+            src={Registration2X1Img}
+            src2x={Registration2X2Img}
+            src3x={Registration2X3Img}
+            className={styles.banner}
+            altText="Registration flow - confirmation and using a pass"
+          />
+        </div>
+        <Section>
+          <SectionBody>
             <P>The results speak for themselves:</P>
             <Card>
               <ListBox
