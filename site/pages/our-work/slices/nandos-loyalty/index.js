@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { Container, Description, ReadMore, Header, Text, Image } from '../shared';
-import pagoFxImg from './images/loyalty.jpg';
+import NandosLoyaltyImg from './images/listing-loyalty.png';
 
 type Props = {
   layoutRight?: boolean,
@@ -23,7 +23,7 @@ export default function PagoFx({ layoutRight }: Props) {
         </Description>
         <ReadMore />
       </Text>
-      <Image src={pagoFxImg} alt="iPhone showing Pago FX application " />
+      <Image src={NandosLoyaltyImg} alt="Nando's loyalty" />
     </Container>
   );
 }
