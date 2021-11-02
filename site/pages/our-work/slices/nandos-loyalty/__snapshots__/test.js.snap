@@ -16,8 +16,8 @@ exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
     <ReadMore />
   </Text>
   <Image
-    alt="iPhone showing Pago FX application "
-    src="loyalty.jpg"
+    alt="Nando's loyalty"
+    src="listing-loyalty.png"
   />
 </Container>
 `;
