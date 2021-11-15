@@ -215,10 +215,6 @@ const MissionBeyondCaseStudy = () => (
             </div>
           </SectionBody>
         </Section>
-      </div>
-    </Body>
-    <Body>
-      <div className={styles.body}>
         <Section>
           <SectionBody>
             <div className={styles.tabletContentWrapper}>
