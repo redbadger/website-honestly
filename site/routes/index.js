@@ -40,6 +40,7 @@ import PrideCaseStudy from '../pages/our-work/case-study/pride';
 import FidelityCaseStudy from '../pages/our-work/case-study/fidelity';
 import PagoFXCaseStudy from '../pages/our-work/case-study/pagofx';
 import NandosLoyaltyCaseStudy from '../pages/our-work/case-study/nandos-loyalty';
+import MissionBeyondCaseStudy from '../pages/our-work/case-study/mission-beyond';
 import RetailerCaseStudy from '../pages/our-work/case-study/retailer';
 import SkyCaseStudy from '../pages/our-work/case-study/sky';
 import SkyCMSCaseStudy from '../pages/our-work/case-study/sky-cms';
@@ -84,6 +85,7 @@ const componentMap = {
   goldCoinPage: GoldCoinLP,
   pagoFxCaseStudy: PagoFXCaseStudy,
   nandosLoyaltyCaseStudy: NandosLoyaltyCaseStudy,
+  missionBeyondCaseStudy: MissionBeyondCaseStudy,
 };
 
 function routes() {

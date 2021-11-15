@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import styles from './style.css';
-import { H1, P as BaseP, H3 as BaseH3 } from '../../../../components/text';
+import { H1, P as BaseP, H3 as BaseH3, H2 as BaseH2 } from '../../../../components/text';
 import Card from '../../../../components/card';
 import Image from '../../../../components/image';
 import BaseQuote from '../../../../components/quote';
@@ -56,6 +56,8 @@ export const P = ({ children }: { children: React.Node }) => (
 );
 
 export const H3 = ({ children }: { children: string }) => <BaseH3 type="fontS2">{children}</BaseH3>;
+
+export const H2 = ({ children }: { children: string }) => <BaseH2 type="fontS2">{children}</BaseH2>;
 
 export const UL = ({
   children,

@@ -392,6 +392,18 @@ export const routeDefinitions: Array<RouteDefinition> = [
     },
   },
   {
+    title: 'Mission Beyond case study',
+    description:
+      'Red Badger worked with the Nando’s product team to reimagine the customer experience of the restaurant’s loyalty programme. Together we designed and built a digital-first, mobile wallet enabled loyalty experience enabling customers to earn and redeem rewards across all digital touchpoints.',
+    key: 'missionBeyondCaseStudy',
+    route: 'our-work/case-study/mission-beyond',
+    parentKey: 'ourWorkPage',
+    ampPageType: 'case-study',
+    ampPageProperties: {
+      caseStudyName: 'mission-beyond',
+    },
+  },
+  {
     title: 'Technology',
     description:
       'We choose the right tech for the job and with meticulous engineering practices we enable continuous delivery, speed to market and create value for customers quickly.',
