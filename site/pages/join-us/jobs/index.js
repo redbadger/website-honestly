@@ -21,14 +21,11 @@ type _JobsProps = {
 
 const Jobs = ({ jobs }: _JobsProps) => {
   const jobsClasses = `jobs ${styles.jobs}`;
-  if (jobs.length > 0) {
-    return (
-      <div className={jobsClasses}>
-        <JobList jobs={jobs} />
-      </div>
-    );
-  }
-  return null;
+  return (
+    <div className={jobsClasses}>
+      <JobList jobs={jobs} />
+    </div>
+  );
 };
 
 export default Jobs;

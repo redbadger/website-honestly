@@ -42,10 +42,12 @@ const JoinUs = ({ jobs }: Props) => (
       <HeaderContainer />
     </JobsIntro>
     <JobsGallerySlide />
-    <Container>
-      <Jobs jobs={jobs} />
-    </Container>
-    <Benefits benefitsCategories={benefitsCategories} />
+    {jobs.length && (
+      <Container>
+        <Jobs jobs={jobs} />
+      </Container>
+    )}
+    {benefitsCategories.length && <Benefits benefitsCategories={benefitsCategories} />}
     <BadgerTestimonialsSlice navPositionBottom />
     <div className={styles.videoContainer}>
       <div className={styles.video}>
