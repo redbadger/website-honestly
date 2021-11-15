@@ -76,6 +76,7 @@
     "no-unused-expressions": ["error", { "allowTernary": true }],
     "react/no-array-index-key": 0,
     "react/jsx-curly-brace-presence": 0,
-    "import/no-cycle": 0
+    "import/no-cycle": 0,
+    "react/jsx-no-target-blank": 0
   }
 }
