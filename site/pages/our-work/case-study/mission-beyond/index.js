@@ -21,9 +21,9 @@ import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
 // Assets
-import header from './images/header.jpg';
-import header2x from './images/header@2x.jpg';
-import header3x from './images/header@3x.jpg';
+import header from './images/TabletHeader@1x.png';
+import header2x from './images/DesktopHeader@1x.png';
+import header3x from './images/DesktopHeader@2x.png';
 import rehearse from './images/Rehearse@1x.jpg';
 import thinking from './images/ThinkingDesktop.jpg';
 import openDoors from './images/OpendoorsDesktop@2x.jpg';
