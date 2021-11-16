@@ -99,7 +99,7 @@ const MissionBeyondCaseStudy = () => (
         src2x={header2x}
         src3x={header3x}
         className={styles.headerImg}
-        altText="iPhone showing Pago FX application"
+        altText="A graphical banner that reads: Mission Beyond"
       />
     </div>
     <Body>
@@ -124,7 +124,7 @@ const MissionBeyondCaseStudy = () => (
             <Image
               src={openDoors}
               className={styles.banner}
-              altText="iPhone showing Pago FX application"
+              altText="A screenshot of a website that reads: Open Doors to diverse candidates"
             />
           </div>
 
@@ -209,7 +209,7 @@ const MissionBeyondCaseStudy = () => (
                 <Image
                   src={rehearse}
                   className={styles.banner}
-                  altText="iPhone showing Pago FX application"
+                  altText="A diagram showing user stories."
                 />
               </div>
             </div>
@@ -245,7 +245,7 @@ const MissionBeyondCaseStudy = () => (
                 <Image
                   src={thinking}
                   className={styles.banner}
-                  altText="iPhone showing Pago FX application"
+                  altText="A graphics that depicts the design thinking process. it reads: Design thinking - structure, agility and pace. It maps the steps involved as: empathy, define, ideate, prototype and test."
                 />
               </div>
             </div>
@@ -306,7 +306,7 @@ const MissionBeyondCaseStudy = () => (
             <Image
               src={chatbot}
               className={styles.banner}
-              altText="iPhone showing Pago FX application"
+              altText="A screenshot from a phone showing a conversation with a chatbot"
             />
           </div>
         </div>
@@ -322,7 +322,7 @@ const MissionBeyondCaseStudy = () => (
               <Image
                 src={businessModel}
                 className={styles.banner}
-                altText="iPhone showing Pago FX application"
+                altText="A table showing the Business model canvas, the sections are listed as: Key partners, Key activities, value propositions, customer relationships, customer segments, channels, cost structure, revenue streams"
               />
             </div>
           </SectionBody>
@@ -359,12 +359,12 @@ const MissionBeyondCaseStudy = () => (
               <Image
                 src={talent}
                 className={styles.banner}
-                altText="iPhone showing Pago FX application"
+                altText="A screenshot of a website, it reads: You've already got the skills to get hired."
               />
               <Image
                 src={device}
                 className={styles.banner}
-                altText="iPhone showing Pago FX application"
+                altText="A screenshot of a smartphone showing an ongoing conversation with a chatbot"
               />
             </div>
             <div className={styles.tabletContentWrapper}>
@@ -412,8 +412,13 @@ const MissionBeyondCaseStudy = () => (
             </div>
             <div className={styles.tabletContentWrapper}>
               <P>
-                To ensure Open Doors could serve all sides of the ecosystem, the team explored how
-                the service could provide value to all of them, not just the talent seeking work. A
+                To ensure the success of the product and that it more accurately satisfied the
+                market demand, the team expanded its remit to include employers and the broader
+                ecosystem. To reflect this shift, Talent Compass became Open Doors.
+              </P>
+              <P>
+                Open Doors would serve all sides of the ecosystem and the team explored how the
+                service could provide value to all of them, not just the talent seeking work. A
                 service blueprint was drawn of all possible interactions with other segments through
                 the Open Doors platform. A customer value proposition was created and a reworked
                 business model canvas created to test desirability, feasibility and viability of the
@@ -424,7 +429,7 @@ const MissionBeyondCaseStudy = () => (
               <Image
                 src={website}
                 className={styles.banner}
-                altText="iPhone showing Pago FX application"
+                altText="A screenshot of a website, it reads: Open doors to candidates. It then has a section that reads: Don't be late to the part. Finally there is a section that reads: How it works."
               />
             </div>
           </SectionBody>
@@ -453,7 +458,7 @@ const MissionBeyondCaseStudy = () => (
               <Image
                 src={reporting}
                 className={styles.banner}
-                altText="iPhone showing Pago FX application"
+                altText="A screenshot of an app dashboard, it reads: Reporting, company, fiteen candidates your company has encouraged to apply and Eleven organic applications."
               />
             </div>
             <div className={styles.tabletContentWrapper}>

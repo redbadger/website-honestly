@@ -18,6 +18,7 @@ import Pride from './slices/pride';
 import Fidelity from './slices/fidelity';
 import PagoFxSlice from './slices/pagofx';
 import NandosLoyaltySlice from './slices/nandos-loyalty';
+import MissionBeyond from './slices/mission-beyond';
 
 import { BBCCell, SkyCell, HallerCell, BMWCell } from './cells';
 import Logos from './logos';
@@ -38,6 +39,7 @@ export default function CaseStudies() {
   };
 
   const slices = [
+    MissionBeyond,
     NandosLoyaltySlice,
     PagoFxSlice,
     SharethymeSlice,

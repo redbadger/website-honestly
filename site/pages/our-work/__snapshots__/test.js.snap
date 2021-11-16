@@ -29,10 +29,50 @@ Array [
       >
         <a
           class="content row-reverse"
-          href="/our-work/case-study/nandos-loyalty/"
+          href="/our-work/case-study/mission-beyond/"
         >
           <div
             class="rightCol"
+          >
+            <h2
+              class="header"
+            >
+              Building a mission-oriented product business from the group up
+            </h2>
+            <p
+              class="description"
+            >
+              Find out how a Red Badger team set about tackling social inequality by building a digital platform to connect employers with a diverse talent pool from poorer socioeconomic backgrounds.
+            </p>
+            <div
+              class="links"
+            >
+              <p
+                class="readmore"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div
+            class="imageWrapper"
+          >
+            <img
+              alt="Mission Beyond"
+              src="header@3x.jpg"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="container"
+      >
+        <a
+          class="content row"
+          href="/our-work/case-study/nandos-loyalty/"
+        >
+          <div
+            class="leftCol"
           >
             <h2
               class="header"
@@ -68,11 +108,11 @@ Array [
         class="container"
       >
         <a
-          class="content row"
+          class="content row-reverse"
           href="/our-work/case-study/pagofx/"
         >
           <div
-            class="leftCol"
+            class="rightCol"
           >
             <h2
               class="header"
@@ -108,11 +148,11 @@ Array [
         class="container"
       >
         <a
-          class="content row-reverse"
+          class="content row"
           href="https://www.red-badger.com/sharethyme"
         >
           <div
-            class="rightCol"
+            class="leftCol"
           >
             <h2
               class="header"
@@ -148,11 +188,11 @@ Array [
         class="container"
       >
         <a
-          class="content row"
+          class="content row-reverse"
           href="/our-work/case-study/pride/"
         >
           <div
-            class="leftCol"
+            class="rightCol"
           >
             <h2
               class="header"
@@ -188,11 +228,11 @@ Array [
         class="container"
       >
         <a
-          class="content row-reverse"
+          class="content row"
           href="/our-work/case-study/car-trawler/"
         >
           <div
-            class="rightCol"
+            class="leftCol"
           >
             <h2
               class="header"
@@ -228,11 +268,11 @@ Array [
         class="container"
       >
         <a
-          class="content row"
+          class="content row-reverse"
           href="/our-work/case-study/fidelity/"
         >
           <div
-            class="leftCol"
+            class="rightCol"
           >
             <h2
               class="header"
@@ -268,11 +308,11 @@ Array [
         class="container"
       >
         <a
-          class="content row-reverse"
+          class="content row"
           href="/our-work/case-study/financial-services-digital-transformation/"
         >
           <div
-            class="rightCol"
+            class="leftCol"
           >
             <h2
               class="header"
@@ -308,11 +348,11 @@ Array [
         class="container"
       >
         <a
-          class="content row"
+          class="content row-reverse"
           href="/our-work/case-study/car-trawler-my-account/"
         >
           <div
-            class="leftCol"
+            class="rightCol"
           >
             <h2
               class="header"
@@ -348,11 +388,11 @@ Array [
         class="container"
       >
         <a
-          class="content row-reverse"
+          class="content row"
           href="/our-work/case-study/retailer/"
         >
           <div
-            class="rightCol"
+            class="leftCol"
           >
             <h2
               class="header"
@@ -420,11 +460,11 @@ Array [
         class="container"
       >
         <a
-          class="content row"
+          class="content row-reverse"
           href="/our-work/case-study/camden-market/"
         >
           <div
-            class="leftCol"
+            class="rightCol"
           >
             <img
               alt=""
@@ -465,11 +505,11 @@ Array [
         class="container"
       >
         <a
-          class="content row-reverse"
+          class="content row"
           href="/our-work/case-study/financial-times/"
         >
           <div
-            class="rightCol"
+            class="leftCol"
           >
             <img
               alt=""
@@ -510,11 +550,11 @@ Array [
         class="container"
       >
         <a
-          class="content row"
+          class="content row-reverse"
           href="/our-work/case-study/fortnum-and-mason/"
         >
           <div
-            class="leftCol"
+            class="rightCol"
           >
             <img
               alt=""
@@ -555,7 +595,7 @@ Array [
         class="container"
       >
         <a
-          class="content row-reverse"
+          class="content row"
           href="/our-work/case-study/fortnum-and-mason-digital-transformation/"
         >
           <div
@@ -592,7 +632,7 @@ Array [
         class="container"
       >
         <a
-          class="content row"
+          class="content row-reverse"
           href="/our-work/case-study/sky-cms/"
         >
           <div

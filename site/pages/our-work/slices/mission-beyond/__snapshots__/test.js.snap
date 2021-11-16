@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/our-work/case-study/slices/pride renders correctly 1`] = `
+<Container
+  to="missionBeyondCaseStudy"
+>
+  <Text
+    layout="leftCol"
+  >
+    <Header>
+      Building a mission-oriented product business from the group up
+    </Header>
+    <Description>
+      Find out how a Red Badger team set about tackling social inequality by building a digital platform to connect employers with a diverse talent pool from poorer socioeconomic backgrounds.
+    </Description>
+    <ReadMore />
+  </Text>
+  <div
+    className="imageWrapper"
+  >
+    <img
+      alt="Mission Beyond"
+      src="header@3x.jpg"
+    />
+  </div>
+</Container>
+`;
