@@ -40,12 +40,13 @@ import reporting from './images/ReportingDesktop@2x.jpg';
 import styles from './style.css';
 
 const social = {
-  title: 'PagoFX: Helping Santander build a trusted digital business | Red Badger',
+  title:
+    'Mission Beyond: Building a mission-oriented product business from the group up | Red Badger',
   description:
-    'Learn how Red Badger helped Santander’s PagoFX team to design, build and deliver a best-in-class payments service.',
+    'Find out how a Red Badger team set about tackling social inequality by building a digital platform to connect employers with a diverse talent pool from poorer socioeconomic backgrounds.',
   metaImage: header,
-  altText: 'People (Badgers) sticking post-its on a blue wall',
-  url: 'https://red-badger.com/our-work/case-study/pagofx',
+  altText: 'An abstract graphic that reads: Mission Beyond',
+  url: 'https://red-badger.com/our-work/case-study/mission-beyond',
 };
 
 const cainQuoteAProps = {
