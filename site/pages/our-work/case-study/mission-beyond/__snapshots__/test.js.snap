@@ -1,0 +1,1047 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`site/pages/our-work/case-study/mission-beyond/ renders correctly 1`] = `
+Array [
+  <div
+    class="headerImgWrapper"
+  >
+    <picture>
+      <source
+        class="headerImg"
+        srcset="DesktopHeader@2x.png, DesktopHeader@1x.png 2x, DesktopHeader@2x.png 3x"
+      />
+      <img
+        alt=""
+        class="headerImg"
+        src="DesktopHeader@2x.png"
+      />
+    </picture>
+  </div>,
+  <div
+    class="body"
+  >
+    <div
+      class="body"
+    >
+      <div
+        class="heading"
+      >
+        <h1
+          class="fontL "
+        >
+          Open Doors: Building a national digital ecosystem to positively impact young peoples’ lives
+        </h1>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <p
+            class="fontXS paragraph"
+          >
+            This is the story of how Red Badger built a mission-oriented product organisation from the ground up. Deploying cross-functional teams and digital product thinking, Red Badger set out to create a product-led charity that could tackle social inequality and help 1 million people from poorer socioeconomic backgrounds reach economic independence by 2025.
+          </p>
+        </div>
+      </div>
+      <div
+        class="videoAndResultsDesktop"
+      >
+        <div
+          class="bannerWrapper"
+        >
+          <picture>
+            <source
+              class="banner"
+              srcset="OpendoorsDesktop@2x.jpg"
+            />
+            <img
+              alt=""
+              class="banner"
+              src="OpendoorsDesktop@2x.jpg"
+            />
+          </picture>
+        </div>
+        <div
+          class="section"
+        >
+          <div
+            class="sectionBody"
+          >
+            <div
+              class="Card"
+            >
+              <div
+                class="listBox listBox"
+              >
+                <h3
+                  class="listBox__heading"
+                >
+                  AT A GLANCE
+                </h3>
+                <ul>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      From idea to functioning, validated product primed for investment in under 6 months
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      MVP delivered clear value as evidenced by young people and the business community
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      In 5 weeks the team was designing and validating an interconnected social mobility ecosystem
+                    </div>
+                    <div />
+                  </li>
+                  <li
+                    class="listBox__element listBox__element--results listBox__item"
+                  >
+                    <div>
+                      Collated insights from hundreds of users to valide numerous assumptions
+                    </div>
+                    <div />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="tabletContentWrapper"
+          >
+            <h2
+              class="sectionHeading"
+            >
+              <span
+                class="redTitle"
+              >
+                The challenge
+              </span>
+              Building a mission driven organisation
+            </h2>
+            <p
+              class="fontXS paragraph"
+            >
+              In August 2020, Red Badger launched Mission Beyond, an initiative that brings together purpose-led leaders to form coalitions to solve some of the world’s grand challenges. Leveraging mission thinking to solve these challenges, Mission Beyond tasked itself with addressing social mobility. In September of the same year, a coalition was formed and developed a mission to enhance social mobility and representation. The group was going to do this by harnessing the power of digital platforms and products.
+            </p>
+            <div
+              class="quotation quote"
+            >
+              <div
+                class="quotation__text"
+              >
+                <blockquote
+                  class="quotation__quote"
+                >
+                  Our ethos has always been to deliver work that matters, tackle big problems and
+    deliver meaningful results. Tackling the world’s grand challenges is a gargantuan
+    undertaking. You have to break it down into bite-sized chunks. Fuelled by Mariana
+    Mazzucato’s Mission Economy principles, we built a coalition of like-minded, purpose
+    driven leaders from across the business community and set ourselves the ambitious
+    goal of enhancing social mobility and representation.
+                </blockquote>
+              </div>
+              <div
+                class="quotation__author"
+              >
+                <div
+                  class="avatar__container"
+                  style="width:70px;height:70px;min-width:70px;min-height:70px"
+                >
+                  <img
+                    alt="Cain Ullah"
+                    src="cain.jpg"
+                  />
+                </div>
+                <div
+                  class="quotation__author__wrapper"
+                >
+                  <div
+                    class="quotation__author__name"
+                  >
+                    — Cain Ullah
+                  </div>
+                  <div
+                    class="quotation__author__title"
+                  >
+                    Red Badger Board Member, Founder, and former CEO
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="tabletContentWrapper"
+          >
+            <h2
+              class="sectionHeading"
+            >
+              <span
+                class="redTitle"
+              >
+                DO THE RIGHT THING
+              </span>
+              Creating a solution for social inequality
+            </h2>
+            <p
+              class="fontXS paragraph"
+            >
+              Cognitive and demographic diversity are key to improving collective intelligence, enhancing productivity, powering innovation, fuelling new ideas and creating more equitable companies. Delivering it, however, is a fundamental challenge felt around the world. How do you source and attract the kinds of diverse talent pools needed to expand thinking and grow your collective knowledge?
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              This is the challenge that the Red Badger team set out to solve, with a particular focus on empowering those from underrepresented backgrounds. As experts in product conception and discovery, a cross-functional team was deployed to examine the landscape, analyse potential paths and plot a route to a solution. Aligning around the core proposition and working collaboratively, the team experimented rapidly using proven techniques from the world of digital entrepreneurship to evolve the right digital product and platform.
+            </p>
+            <div
+              class="bannerWrapper"
+            >
+              <picture>
+                <source
+                  class="banner"
+                  srcset="Rehearse@1x.jpg"
+                />
+                <img
+                  alt=""
+                  class="banner"
+                  src="Rehearse@1x.jpg"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="tabletContentWrapper"
+          >
+            <h3
+              class="fontS2 "
+            >
+              A structured approach to digital innovation
+            </h3>
+            <p
+              class="fontXS paragraph"
+            >
+              In product strategy, customer desirability is tested before considering whether it is viable or feasible to build it. This approach proved incredibly successful for Mission Beyond who couldn’t afford to waste time, resources or money on an undesirable (and therefore unsustainable) solution. Red Badger’s product strategy proposition runs through three distinct phases which follow a metered funding approach where the aim of each phase is to validate assumptions and uncover insights that build a business case to move forward. The phases are:
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              <strong>
+                Ready:
+              </strong>
+               Define innovation focus, ensure propositions explored in the next phase relate to an addressable market, real business challenge or grand challenge the business feels comfortable investing in.
+              <br />
+              <strong>
+                Rinse:
+              </strong>
+               Conduct successive short sprints to uncover customer wants, needs and challenges. Identify multiple propositions to address these and explore how to reach and build relationships with these particular customers.
+              <br />
+              <strong>
+                Rehearse:
+              </strong>
+               Validate the business model for a proposition by testing low-tech, low-fidelity versions of the product or service with customers.
+            </p>
+            <div
+              class="bannerWrapper"
+            >
+              <picture>
+                <source
+                  class="banner"
+                  srcset="ThinkingDesktop.jpg"
+                />
+                <img
+                  alt=""
+                  class="banner"
+                  src="ThinkingDesktop.jpg"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="tabletContentWrapper"
+          >
+            <h2
+              class="sectionHeading"
+            >
+              <span
+                class="redTitle"
+              />
+              Generating momentum and building a proposition
+            </h2>
+            <p
+              class="fontXS paragraph"
+            >
+              With social mobility clearly defined by the Mission Beyond coalition as the innovation focus, the team set to work. Bringing together diverse technical, design, product, engineering and delivery experts, the team began crafting a viable proposition.
+            </p>
+            <h3
+              class="fontS2 "
+            >
+              Deploying design thinking methodology
+            </h3>
+            <p
+              class="fontXS paragraph"
+            >
+              Over a series of intensive 5-day sprints, the team uncovered multiple desirable solutions to better enable 18-25 year olds from disadvantaged backgrounds to enter the workforce. Two clear personas were identified for both the employer and potential employee, and all the assumptions about their individual journeys were rigorously analysed and worked through.
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              Interviews with persona representatives were conducted. The insights gathered from these sessions helped seed several brainstorms to create a long list of potential products or services, where the most compelling were brought forward for testing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="coloumnContentTall"
+      >
+        <div
+          class="coloumnContentText"
+        >
+          <p
+            class="fontXS paragraph"
+          >
+            A front door test helped the team zero in on desirability and an initial concept, Talent Compass, performed extremely well. A chat bot service devised to help the potential employee extract desirable traits and skills for the workforce from their life experiences, Talent Compass exhibited extremely high conversion rates.
+          </p>
+          <div
+            class="h3"
+          >
+            <h3
+              class="fontS2 "
+            >
+              Building a sustainable model
+            </h3>
+          </div>
+          <p
+            class="fontXS paragraph"
+          >
+            With a desirable product identified, a number of workshops and elements of individual work were undertaken to align on the Talent Compass vision and mission, market size, potential competitors and the details of the value proposition.
+          </p>
+          <p
+            class="fontXS paragraph"
+          >
+            A business model canvas was created to highlight key activities, resources and partners needed to deliver the value proposition and identify assumptions that needed testing. The riskiest assumptions were prioritised and a backlog of experiments to prove/disprove these assumptions was created.
+          </p>
+        </div>
+        <div
+          class="bannerWrapper"
+        >
+          <picture>
+            <source
+              class="banner"
+              srcset="ChatbotDesktop@2x.png"
+            />
+            <img
+              alt=""
+              class="banner"
+              src="ChatbotDesktop@2x.png"
+            />
+          </picture>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="quotation quote"
+          >
+            <div
+              class="quotation__text"
+            >
+              <blockquote
+                class="quotation__quote"
+              >
+                This was a critical part of the process, not only did we have to validate Talent Compass as a potential business, we had to clearly show how it would help us tackle our broader mission to positively impact young people’s lives. The painstaking work testing and eradicating assumptions required great discipline, a great framework and great commitment. The Red Badger team left nothing to chance and used real data and information to inform any and all decisions taken, all but guaranteeing the best ideas won through.
+              </blockquote>
+            </div>
+            <div
+              class="quotation__author"
+            >
+              <div
+                class="avatar__container"
+                style="width:70px;height:70px;min-width:70px;min-height:70px"
+              >
+                <img
+                  alt="Cain Ullah"
+                  src="cain.jpg"
+                />
+              </div>
+              <div
+                class="quotation__author__wrapper"
+              >
+                <div
+                  class="quotation__author__name"
+                >
+                  — Cain Ullah
+                </div>
+                <div
+                  class="quotation__author__title"
+                >
+                  Red Badger Board Member, Founder, and former CEO
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="bannerWrapper"
+          >
+            <picture>
+              <source
+                class="banner"
+                srcset="CanvasDesktop@2x.jpg"
+              />
+              <img
+                alt=""
+                class="banner"
+                src="CanvasDesktop@2x.jpg"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <h2
+          class="sectionHeading"
+        >
+          <span
+            class="redTitle"
+          >
+            Doing the thing right.
+          </span>
+          Working backwards from a successful outcome
+        </h2>
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="tabletContentWrapper"
+          >
+            <p
+              class="fontXS paragraph"
+            >
+              With a list of experiments to conduct and business model assumptions to test, the team established processes and norms for how to work rapidly and maintain clarity of mission throughout.
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              A pre-mortem identified the biggest hurdles to overcome and provided the framework to define which tasks needed to be completed to mitigate them. Leading indicators of success were mapped out to balance product health (ex. numbers of users interviewed, expressions of interest, and assumptions validated) with team health (ex. psychological safety, blogs posted) — these were leveraged to help everyone maintain focus throughout.
+            </p>
+            <h3
+              class="fontS2 "
+            >
+              Validating multiple assumptions
+            </h3>
+            <p
+              class="fontXS paragraph"
+            >
+              With so much to test, the team devised a ‘Wizard of Oz’ test to validate them all in the leanest way possible. Product desirability, tech feasibility and business viability were all run through a comprehensive evaluation process which involved building a minimum viable product and user testing.
+            </p>
+          </div>
+          <div
+            class="tandemImage"
+          >
+            <picture>
+              <source
+                class="banner"
+                srcset="TalentDesktop@2x.jpg"
+              />
+              <img
+                alt=""
+                class="banner"
+                src="TalentDesktop@2x.jpg"
+              />
+            </picture>
+            <picture>
+              <source
+                class="banner"
+                srcset="DeviceDesktop@2x.jpg"
+              />
+              <img
+                alt=""
+                class="banner"
+                src="DeviceDesktop@2x.jpg"
+              />
+            </picture>
+          </div>
+          <div
+            class="tabletContentWrapper"
+          >
+            <p
+              class="fontXS paragraph"
+            >
+              Over a two-week period the team conducted one hour sessions to test a lightweight version of Talent Compass with many young people aligned with the employee persona. The core assumptions being tested were:
+            </p>
+            <p
+              class="fontXS paragraph"
+            />
+            <ul
+              class="list"
+            >
+              <li>
+                <strong>
+                  A conversational interface and tone
+                </strong>
+                 as the most effective way to engage users
+              </li>
+              <li>
+                Our users would value a product that 
+                <strong>
+                  helps identify hidden job- relevant skills
+                </strong>
+              </li>
+              <li>
+                It is possible to 
+                <strong>
+                  surface job-relevant skills based on responses
+                </strong>
+                 to the conversational UI
+              </li>
+              <li>
+                It is possible to 
+                <strong>
+                  identify potential jobs for users
+                </strong>
+                 based on the skills Talent Compass surfaces
+              </li>
+              <li>
+                The product’s 
+                <strong>
+                  branding lends it credibility,
+                </strong>
+                 and users will be willing to engage with it
+              </li>
+            </ul>
+            <p />
+            <p
+              class="fontXS paragraph"
+            >
+              All participants acknowledged the tremendous value of the product but provided valuable feedback which would shape the future development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="quoteWrapper"
+          >
+            <div
+              class="quotation quote"
+            >
+              <div
+                class="quotation__text"
+              >
+                <blockquote
+                  class="quotation__quote"
+                >
+                  The Red Badger team’s flexibility and adaptability is remarkable. From their initial dedicated focus on ensuring every interaction with a beneficiary was valuable, to ensuring a platform design at scale would meet the requirements of an ecosystem of thousands of entities offering job and mentoring opportunities. It’s a testament to the agile ways of working deployed, commitment to delivering the right product and the depth of talent within the team to move seamlessly between a single user need to a national digital infrastructure platform and keep value and impact at the heart of every decision.
+                </blockquote>
+              </div>
+              <div
+                class="quotation__author"
+              >
+                <div
+                  class="avatar__container"
+                  style="width:70px;height:70px;min-width:70px;min-height:70px"
+                >
+                  <img
+                    alt="John Godfrey"
+                    src="john.jpg"
+                  />
+                </div>
+                <div
+                  class="quotation__author__wrapper"
+                >
+                  <div
+                    class="quotation__author__name"
+                  >
+                    — John Godfrey
+                  </div>
+                  <div
+                    class="quotation__author__title"
+                  >
+                    Executive Commercial Director, Red Badger
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tabletContentWrapper"
+          >
+            <p
+              class="fontXS paragraph"
+            >
+              To ensure the success of the product and that it more accurately satisfied the market demand, the team expanded its remit to include employers and the broader ecosystem. To reflect this shift, Talent Compass became Open Doors.
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              Open Doors would serve all sides of the ecosystem and the team explored how the service could provide value to all of them, not just the talent seeking work. A service blueprint was drawn of all possible interactions with other segments through the Open Doors platform. A customer value proposition was created and a reworked business model canvas created to test desirability, feasibility and viability of the new platform.
+            </p>
+          </div>
+          <div
+            class="bannerWrapper"
+          >
+            <picture>
+              <source
+                class="banner"
+                srcset="WebsiteDesktop@2x.jpg"
+              />
+              <img
+                alt=""
+                class="banner"
+                src="WebsiteDesktop@2x.jpg"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <div
+            class="tabletContentWrapper"
+          >
+            <h3
+              class="fontS2 "
+            >
+              Expanding the mission and delivering the right product
+            </h3>
+            <p
+              class="fontXS paragraph"
+            >
+              Within 5 weeks of the start of the project, the team was already designing and validating an interconnected social mobility ecosystem. To keep things lean, the team tested a static prototype of a partner portal designed purely on assumptions. This portal demonstrated how an employer could:
+            </p>
+            <ul
+              class="list"
+            >
+              <li>
+                Understand the Open Doors proposition for employers and mentorship programmes
+              </li>
+              <li>
+                Sign up to Open Doors providing organisational details and available roles
+              </li>
+              <li>
+                View potential candidates interested in the available roles
+              </li>
+              <li>
+                Review profiles and applications of people who have applied for roles
+              </li>
+              <li>
+                See anonymised diversity data of applicants
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bannerWrapper"
+          >
+            <picture>
+              <source
+                class="banner"
+                srcset="ReportingDesktop@2x.jpg"
+              />
+              <img
+                alt=""
+                class="banner"
+                src="ReportingDesktop@2x.jpg"
+              />
+            </picture>
+          </div>
+          <div
+            class="tabletContentWrapper"
+          >
+            <p
+              class="fontXS paragraph"
+            >
+              Iterating and seeking feedback from stakeholders and customers throughout the process, the team made job descriptions more user friendly, enabled employees to apply directly through the platform and created a differentiated product from any existing recruitment platforms available today. It even brought in development opportunities for those candidates who didn’t receive any job matches.
+            </p>
+            <p
+              class="fontXS paragraph"
+            >
+              The final stage of the project was to equip the Mission Beyond board with the materials it would need in its quest to secure funding for the next stage: building a launchable product ready to meet the needs of a diverse ecosystem.
+            </p>
+          </div>
+          <div
+            class="quotation quote"
+          >
+            <div
+              class="quotation__text"
+            >
+              <blockquote
+                class="quotation__quote"
+              >
+                With such rigorous product development, user testing and analysis we knew we had a great service on our hands. The supporting materials provided by the team alongside the consistent and in-depth feedback sessions throughout this project has made our job simple in communicating the tremendous value of this service. We are extremely hopeful of securing the necessary investment to bring this platform to life and start tackling the social mobility challenge.
+              </blockquote>
+            </div>
+            <div
+              class="quotation__author"
+            >
+              <div
+                class="avatar__container"
+                style="width:70px;height:70px;min-width:70px;min-height:70px"
+              >
+                <img
+                  alt="Cain Ullah"
+                  src="cain.jpg"
+                />
+              </div>
+              <div
+                class="quotation__author__wrapper"
+              >
+                <div
+                  class="quotation__author__name"
+                >
+                  — Cain Ullah
+                </div>
+                <div
+                  class="quotation__author__title"
+                >
+                  Red Badger Board Member, Founder, and former CEO
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+      >
+        <div
+          class="sectionBody"
+        >
+          <h2
+            class="sectionHeading"
+          >
+            <span
+              class="redTitle"
+            />
+            Want to know more about Mission Beyond and the Open Doors product?
+          </h2>
+          <div
+            class="Card"
+          >
+            <div
+              class="listBox listBox"
+            >
+              <h3
+                class="listBox__heading"
+              >
+                CATCH THE FULL THREE-PART AND IN DEPTH STORY ON OUR BLOG:
+              </h3>
+              <ul>
+                <li
+                  class="listBox__element listBox__element--results listBox__item"
+                >
+                  <div>
+                     Part 1: How to build a product organisation to tackle social inequality
+                  </div>
+                  <div />
+                </li>
+                <li
+                  class="listBox__element listBox__element--results listBox__item"
+                >
+                  <div>
+                    Part 2: How to define and design a solution for a challenge like social inequality
+                  </div>
+                  <div />
+                </li>
+                <li
+                  class="listBox__element listBox__element--results listBox__item"
+                >
+                  <div>
+                    Part 3: How to bring product ideas to life: validating a potential solution to social inequality
+                  </div>
+                  <div />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    class="whatNext"
+  >
+    <div
+      class="whatNext__tilesContainer"
+    >
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/pride/"
+          >
+            <img
+              alt="Pride in London"
+              class="whatNext__image"
+              src="pride.gif"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Pride in London
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/pride/"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Delivering a best-in-class digital experience
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/financial-times/"
+          >
+            <img
+              alt="Financial Times"
+              class="whatNext__image"
+              src="financialTimesReadMore.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Financial Times
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/financial-times/"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Lasting change for a media giant
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+      <div
+        class="whatNext__tile"
+      >
+        <figure>
+          <a
+            class=""
+            href="/our-work/case-study/car-trawler/"
+          >
+            <img
+              alt="Car Trawler"
+              class="whatNext__image"
+              src="carTrawler.jpg"
+            />
+          </a>
+          <figcaption
+            class="whatNext__caption"
+          >
+            Car Trawler
+          </figcaption>
+        </figure>
+        <a
+          class="whatNext__link"
+          href="/our-work/case-study/car-trawler/"
+        >
+          <h2
+            class="whatNext__title"
+          >
+            Creating complete CMS control for travel brands
+            <span
+              class="whatNext__arrow_wrapper"
+            >
+              <svg
+                class="whatNext__arrow"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 1l10 10-10 10-1.754-1.754 6.959-7.018H1V9.772h15.205l-6.96-7.018z"
+                  fill="#FC1D42"
+                  fill-rule="evenodd"
+                  stroke="#FC1D42"
+                />
+              </svg>
+            </span>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <a
+      class="whatNext__button"
+      href="/our-work/"
+    >
+      See more of our work
+    </a>
+  </div>,
+  <section
+    class="contactUsContainer"
+    data-cy="contact-us-slice"
+    id="contactUs"
+  >
+    <h2
+      class="header"
+    >
+      We can help you
+    </h2>
+    <div
+      class="contentContainer"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="item"
+        >
+          Create & validate new ideas
+        </li>
+        <li
+          class="item"
+        >
+          Deliver great quality products & services, fast
+        </li>
+        <li
+          class="item"
+        >
+          Be bold with technology
+        </li>
+        <li
+          class="item"
+        >
+          Be more customer centric
+        </li>
+        <li
+          class="item"
+        >
+          Improve efficiency with lean practices
+        </li>
+        <li
+          class="item"
+        >
+          Build capability & confidence
+        </li>
+      </ul>
+      <div
+        class="imgContainer"
+      />
+    </div>
+    <div>
+      <a
+        class="mailToLink"
+        data-cy="email-link"
+        href="mailto:hello@red-badger.com?Subject=Can%20you%20help%20me%20with%20..."
+      >
+        Send an email
+      </a>
+      <span
+        class="talkToUs"
+      >
+        hello@red-badger.com
+      </span>
+    </div>
+  </section>,
+]
+`;

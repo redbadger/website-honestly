@@ -4,11 +4,6 @@ import Jobs from '.';
 import { Context } from '../../../components/link/test-helper';
 
 describe('site/join-us/benefits-slice', () => {
-  it('should render nothing for empty array', () => {
-    const jobsSlice = render(<Jobs jobs={[]} />);
-    expect(jobsSlice.html()).toEqual(null);
-  });
-
   it('should render heading 2', () => {
     const jobs = [
       {

@@ -4,11 +4,6 @@ import BenefitsSlice from '.';
 import careerIcon from '../images/Career_icon.png';
 
 describe('site/join-us/benefits-slice', () => {
-  it('should render nothing for empty array', () => {
-    const benefitsSlice = render(<BenefitsSlice benefitsCategories={[]} />);
-    expect(benefitsSlice.html()).toEqual(null);
-  });
-
   it('should render heading 2', () => {
     const categories = [
       {

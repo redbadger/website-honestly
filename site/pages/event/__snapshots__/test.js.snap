@@ -89,7 +89,7 @@ exports[`site/pages/event renders correctly 1`] = `
                     <a
                       class="fullDetailsLink"
                       href="https://www.external-site.com/some-event"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
                       <span>

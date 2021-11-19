@@ -34,7 +34,7 @@ const AboutUs = ({ tweets, qAndAs }: AboutUsProps) => {
       <PrinciplesSlice />
       <TimelineSlice />
       <ChecklistContactUs />
-      <QAndASlice qAndAs={qAndAs} />
+      {qAndAs.length && <QAndASlice qAndAs={qAndAs} />}
       <SocialSlice tweets={tweets} />
     </div>
   );

@@ -3,11 +3,6 @@ import { render } from 'enzyme';
 import QAndASlice from '.';
 
 describe('site/about-us/q-and-a-slice', () => {
-  it('should render nothing for empty array', () => {
-    const qAndASlice = render(<QAndASlice qAndAs={[]} />);
-    expect(qAndASlice.html()).toEqual(null);
-  });
-
   it('should render heading 2', () => {
     const qAndAs = [
       {

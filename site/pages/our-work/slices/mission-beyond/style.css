@@ -1,0 +1,15 @@
+.imageWrapper {
+  display: block;
+  width: 50%;
+  height: 100%;
+  height: 338px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageWrapper img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

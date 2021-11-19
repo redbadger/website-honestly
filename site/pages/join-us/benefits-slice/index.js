@@ -5,28 +5,23 @@ import styles from './style.css';
 import type { CategoryProps } from './category';
 import Container from '../../../components/container';
 
-const BenefitsSlice = ({ benefitsCategories }: { benefitsCategories: Array<CategoryProps> }) =>
-  benefitsCategories && benefitsCategories.length ? (
-    <section className={styles.benefitsTimelineSection} id="contactUs">
-      <Container>
-        <div className={styles.benefits__wrapper}>
-          <div className={styles.benefits__container}>
-            <h1 className={styles.benefits__heading}>Benefits</h1>
-            <ul className={styles.benefits__categoryList}>
-              {benefitsCategories.map(category => (
-                <li key={category.name}>
-                  <Category
-                    name={category.name}
-                    icon={category.icon}
-                    benefits={category.benefits}
-                  />
-                </li>
-              ))}
-            </ul>
-          </div>
+const BenefitsSlice = ({ benefitsCategories }: { benefitsCategories: Array<CategoryProps> }) => (
+  <section className={styles.benefitsTimelineSection} id="contactUs">
+    <Container>
+      <div className={styles.benefits__wrapper}>
+        <div className={styles.benefits__container}>
+          <h1 className={styles.benefits__heading}>Benefits</h1>
+          <ul className={styles.benefits__categoryList}>
+            {benefitsCategories.map(category => (
+              <li key={category.name}>
+                <Category name={category.name} icon={category.icon} benefits={category.benefits} />
+              </li>
+            ))}
+          </ul>
         </div>
-      </Container>
-    </section>
-  ) : null;
+      </div>
+    </Container>
+  </section>
+);
 
 export default BenefitsSlice;
