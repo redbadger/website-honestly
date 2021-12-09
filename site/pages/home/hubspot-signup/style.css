@@ -16,6 +16,9 @@
 
 .newsletter {
   composes: dividerBlack;
+  background-image: url('./images/website-newsletter-strip.png');
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: badgerBlack;
   color: badgerWhite;
   text-align: center;
