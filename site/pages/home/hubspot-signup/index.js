@@ -13,7 +13,7 @@ export default function HubspotSignup() {
       <h2 className={styles.title}>
         Sign up to Badger News
         <span className={styles.subTitle}>
-          Be the first to hear about webinars, events blogs and more.
+          Be the first to hear about webinars, events, blogs and more.
         </span>
       </h2>
       <div
