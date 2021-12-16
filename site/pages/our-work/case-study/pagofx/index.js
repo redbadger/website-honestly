@@ -18,7 +18,6 @@ import {
 } from '../shared';
 import ListBox from '../../../../components/list-box';
 import Card from '../../../../components/card';
-import Video from '../shared/video';
 import WhatToReadNext from '../shared/what-to-read-next';
 import ChecklistContactUs from '../../../../slices/checklist-contact-us-slice';
 
@@ -81,10 +80,6 @@ const PagoFx = () => (
           </SectionBody>
         </Section>
         <div className={styles.videoAndResultsDesktop}>
-          <Section>
-            <Video name="PagoFX video" elementId="pagofx-video" videoId="56apxChHLDs" />
-          </Section>
-
           <Section>
             <SectionBody>
               <Card>

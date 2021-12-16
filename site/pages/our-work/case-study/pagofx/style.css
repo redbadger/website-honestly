@@ -104,6 +104,7 @@
 
   .videoAndResultsDesktop > div:last-of-type {
     max-width: 450px;
+    margin: auto;
   }
 
   .tabletContentWrapper > div {
