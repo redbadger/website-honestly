@@ -488,14 +488,20 @@ const MissionBeyondCaseStudy = () => (
                 title="CATCH THE FULL THREE-PART AND IN DEPTH STORY ON OUR BLOG:"
                 items={[
                   {
+                    link:
+                      'https://blog.red-badger.com/how-build-product-organisation-tackle-social-inequality',
                     label:
                       ' Part 1: How to build a product organisation to tackle social inequality',
                   },
                   {
+                    link:
+                      'https://blog.red-badger.com/how-to-design-solution-for-social-inequality',
                     label:
                       'Part 2: How to define and design a solution for a challenge like social inequality',
                   },
                   {
+                    link:
+                      'https://blog.red-badger.com/how-to-product-ideas-life-validating-solution-social-inequality',
                     label:
                       'Part 3: How to bring product ideas to life: validating a potential solution to social inequality',
                   },

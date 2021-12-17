@@ -794,26 +794,38 @@ Array [
                 <li
                   class="listBox__element listBox__element--results listBox__item"
                 >
-                  <div>
-                     Part 1: How to build a product organisation to tackle social inequality
-                  </div>
-                  <div />
+                  <a
+                    href="https://blog.red-badger.com/how-build-product-organisation-tackle-social-inequality"
+                  >
+                    <div>
+                       Part 1: How to build a product organisation to tackle social inequality
+                    </div>
+                    <div />
+                  </a>
                 </li>
                 <li
                   class="listBox__element listBox__element--results listBox__item"
                 >
-                  <div>
-                    Part 2: How to define and design a solution for a challenge like social inequality
-                  </div>
-                  <div />
+                  <a
+                    href="https://blog.red-badger.com/how-to-design-solution-for-social-inequality"
+                  >
+                    <div>
+                      Part 2: How to define and design a solution for a challenge like social inequality
+                    </div>
+                    <div />
+                  </a>
                 </li>
                 <li
                   class="listBox__element listBox__element--results listBox__item"
                 >
-                  <div>
-                    Part 3: How to bring product ideas to life: validating a potential solution to social inequality
-                  </div>
-                  <div />
+                  <a
+                    href="https://blog.red-badger.com/how-to-product-ideas-life-validating-solution-social-inequality"
+                  >
+                    <div>
+                      Part 3: How to bring product ideas to life: validating a potential solution to social inequality
+                    </div>
+                    <div />
+                  </a>
                 </li>
               </ul>
             </div>

@@ -33,8 +33,17 @@ const ListBox = ({
               key={item.label}
               className={cx('listBox__element', 'listBox__element--results', itemClassName)}
             >
-              <div className={labelClassName}>{item.label}</div>
-              <div className={valueClassName}>{item.value}</div>
+              {(item.link && (
+                <a href={item.link}>
+                  <div className={labelClassName}>{item.label}</div>
+                  <div className={valueClassName}>{item.value}</div>
+                </a>
+              )) || (
+                <>
+                  <div className={labelClassName}>{item.label}</div>
+                  <div className={valueClassName}>{item.value}</div>
+                </>
+              )}
             </li>
           );
         })}

@@ -1,4 +1,4 @@
-@value badgerRedOnWhite, linesOnWhite from '../../css/_colors.css';
+@value badgerRedOnWhite, linesOnWhite, badgerBlack from '../../css/_colors.css';
 @value mediumScreen, largeScreen from '../../css/_sizes.css';
 
 .listBox__heading {
@@ -28,4 +28,20 @@
   justify-content: space-between;
   composes: fontS2 from '../../css/typography/_fonts.css';
   composes: serif from '../../css/typography/_fonts.css';
+}
+
+.listBox__element a
+{
+  display: inline;
+  color: badgerBlack;
+  cursor: pointer;
+}
+
+.listBox__element a *
+{
+  display: inline;
+}
+
+.listBox__element a:hover div {
+  border-bottom: 2px solid badgerRedOnWhite;
 }
