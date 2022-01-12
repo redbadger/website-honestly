@@ -20,14 +20,13 @@
 
 .GenZSliceHeading {
   composes: serif from '../../css/typography/_fonts.css';
-  font-size: 60px;
+  font-size: 28px;
   line-height: 1.25em;
 }
 
 .GenZSliceTextContent {
   border-top: 2px solid badgerRed;
   padding-top: 40px;
-  margin-right: 50px;
 }
 
 .GenZSlice p {
@@ -39,6 +38,7 @@
 .GenZSlice h4 {
   margin-bottom: 8px;
   padding-bottom: 8px;
+ 
 }
 
 .GenZSliceLink {
@@ -163,6 +163,10 @@
 
   .GenZSliceText {
     width: 65%;
+  }
+
+  .GenZSliceTextContent {
+    margin-right: 50px;
   }
 }
 
