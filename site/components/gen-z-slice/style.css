@@ -14,7 +14,7 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 80px;
+  padding: 60px 24px;
   line-height: 1.5em;
 }
 
@@ -26,7 +26,7 @@
 
 .GenZSliceTextContent {
   border-top: 2px solid badgerRed;
-  padding-top: 40px;
+  padding-top: 16px;
 }
 
 .GenZSlice p {
@@ -36,9 +36,7 @@
 }
 
 .GenZSlice h4 {
-  margin-bottom: 8px;
-  padding-bottom: 8px;
- 
+  margin-bottom: 16px; 
 }
 
 .GenZSliceLink {
@@ -113,6 +111,12 @@
   .GenZSlice {
     display: flex;
     flex-direction: row;
+    padding: 80px;
+  }
+
+  .GenZSliceTextContent {
+    border-top: 2px solid badgerRed;
+    padding-top: 40px;
   }
 
   .GenZSliceImage {
