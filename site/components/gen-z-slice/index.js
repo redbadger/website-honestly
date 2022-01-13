@@ -6,7 +6,7 @@ import image from './image.png';
 
 const GenZSlice = () => {
   return (
-    <div className={`${styles.GenZSliceWrapper}`}>
+    <div className={`${styles.GenZSliceWrapper}`} id="genz">
       <div className={styles.GenZSliceContent}>
         <div className={styles.GenZSlice}>
           <div className={styles.GenZSliceText}>

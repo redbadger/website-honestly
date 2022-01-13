@@ -64,6 +64,7 @@ Array [
   </section>,
   <div
     class="GenZSliceWrapper"
+    id="genz"
   >
     <div
       class="GenZSliceContent"
