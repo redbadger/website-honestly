@@ -63,38 +63,54 @@ Array [
     </div>
   </section>,
   <div
-    class="CellASliceWrapper"
+    class="GenZSliceWrapper"
+    id="genz"
   >
     <div
-      class="CellASliceContent"
+      class="GenZSliceContent"
     >
       <div
-        class="CellASlice"
+        class="GenZSlice"
       >
         <div
-          class="CellASliceText"
+          class="GenZSliceText"
         >
           <h4
-            class="CellASliceHeading"
+            class="GenZSliceHeading"
           >
-            Are you delivering seamless customer experiences?
+            Is your loyalty programme ready for Gen Z?
           </h4>
-          <p>
-            With lockdown easing and customers returning to venues, restaurants and hotels, how is the hospitality sector responding to supercharged expectations and what can other industries learn from their approach? 
-          </p>
-          <a
-            class="CellASliceLink"
-            href="https://content.red-badger.com/hotels-meet-the-new-expectations"
+          <div
+            class="GenZSliceTextContent"
           >
-            Download the report
-          </a>
+            <p>
+              Gen Z believe their favourite brands should reward them for their patronage with an equitable loyalty programme that is both personalised and seamless. Are you set up to manage the incoming tidal wave of supercharged expectations?
+            </p>
+            <div
+              class="GenZSliceCTA"
+            >
+              <div>
+                <p>
+                  Thursday, 10th February 2022
+                  <br />
+                  5:00pm - 6:00pm (GMT)
+                </p>
+              </div>
+              <a
+                class="GenZSliceLink"
+                href="https://content.red-badger.com/gen-z-adapting-to-digital-demands#register-now"
+              >
+                Register for our event
+              </a>
+            </div>
+          </div>
         </div>
         <div
-          class="CellASliceImageWrapper"
+          class="GenZSliceImageWrapper"
         >
           <img
             alt="illustration, a smiling man looks at his phone as a jet flies away"
-            class="CellASliceImage"
+            class="GenZSliceImage"
             src="image.png"
           />
         </div>

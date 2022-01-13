@@ -1,0 +1,182 @@
+@value badgerBlack, badgerWhite, scorpian, badgerRed from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.GenZSliceWrapper {
+  composes: dividerBlack from '../../css/_divider.css';
+  width: 100%;
+  background: badgerBlack;
+  color: badgerWhite;
+}
+
+.GenZSlice {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 24px;
+  line-height: 1.5em;
+}
+
+.GenZSliceHeading {
+  composes: serif from '../../css/typography/_fonts.css';
+  font-size: 28px;
+  line-height: 1.25em;
+}
+
+.GenZSliceTextContent {
+  border-top: 2px solid badgerRed;
+  padding-top: 16px;
+}
+
+.GenZSlice p {
+  font-size: 18px;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+.GenZSlice h4 {
+  margin-bottom: 16px; 
+}
+
+.GenZSliceLink {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  font-size: 18px;
+  background: badgerRed;
+  color: badgerWhite;
+  display: block;
+  height: 48px;
+  width: 220px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.GenZSliceLink:hover {
+  background: scorpian;
+}
+
+.GenZSliceCloseButton {
+  position: absolute;
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: none;
+  top: 14px;
+  right: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.GenZSliceCloseButton:after,
+.GenZSliceCloseButton:before {
+  content: '';
+  display: block;
+  background: badgerWhite;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  left: -2px;
+  top: 7px;
+}
+
+.GenZSliceCloseButton:after {
+  transform: rotate(45deg);
+}
+
+.GenZSliceCloseButton:before {
+  transform: rotate(-45deg);
+}
+
+.GenZSliceImageWrapper {
+  display: none;
+  max-width: 472px;
+}
+
+.GenZSliceImageWrapper img {
+  display: none;
+}
+
+.GenZSliceCTA {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  display: block;
+}
+
+.GenZSliceCTA p {
+  display: flex;
+}
+
+@media mediumScreen {
+  .GenZSlice {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+  }
+
+  .GenZSliceTextContent {
+    border-top: 2px solid badgerRed;
+    padding-top: 40px;
+  }
+
+  .GenZSliceImage {
+    margin-top: 14px;
+  }
+
+  .GenZSliceHeading {
+    font-size: 60px;
+  }
+
+  .GenZSlice h4 {
+    margin-bottom: 40px;
+  }
+
+  .GenZSlice p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .GenZSliceLink {
+    font-size: 24px;
+    width: 292px;
+    height: 58px;
+    line-height: 58px;
+  }
+
+  .GenZSliceText {
+    width: 100%;
+    min-width: 420px;
+  }
+}
+
+@media largeScreen {
+  .GenZSliceImageWrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .GenZSliceImageWrapper img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .GenZSliceText {
+    width: 65%;
+  }
+
+  .GenZSliceTextContent {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .GenZSliceCTA {
+    display: flex;
+    justify-content: space-between;
+  }
+}
