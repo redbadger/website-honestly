@@ -43,12 +43,12 @@ const JoinUs = ({ jobs }: Props) => (
       <HeaderContainer />
     </JobsIntro>
     <JobsGallerySlice />
-    <StonewallSlice />
     {jobs.length && (
       <Container>
         <Jobs jobs={jobs} />
       </Container>
     )}
+    <StonewallSlice />
     {benefitsCategories.length && <Benefits benefitsCategories={benefitsCategories} />}
     <BadgerTestimonialsSlice navPositionBottom />
     <div className={styles.videoContainer}>
