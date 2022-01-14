@@ -88,6 +88,10 @@
   position: relative;
 }
 
+.jobSectionContainer:nth-child(3) {
+  border-top: none;
+}
+
 .jobSectionContainer {
   display: block;
   padding-top: 22px;
