@@ -293,6 +293,63 @@ exports[`site/pages/join-us renders correctly 1`] = `
     </div>
   </div>
   <div
+    class="StonewallSliceWrapper"
+    id="genz"
+  >
+    <div
+      class="StonewallSliceContent"
+    >
+      <div
+        class="StonewallSlice"
+      >
+        <div
+          class="StonewallSliceText"
+        >
+          <h4
+            class="StonewallSliceHeading"
+          >
+            We are a Stonewall Diversity Champion employer
+          </h4>
+          <div
+            class="StonewallSliceImageSmallWrapper"
+          >
+            <img
+              alt="illustration, a smiling man looks at his phone as a jet flies away"
+              class="StonewallSliceImageSmall"
+              src="image.png"
+            />
+          </div>
+          <div
+            class="StonewallSliceTextContent"
+          >
+            <p>
+              We take pride in our diversity and actively seek to create a working environment that reflects the variety of the world we live in. Red Badger is a diverse and inclusive place to work. As one of the company’s core objectives, we have joined the Stonewall Diversity Champion programme to help us continue to be a welcome place for all and be a bastion of best practice for LGBTQ+ and BIPOC recruitment.
+            </p>
+            <div
+              class="StonewallSliceCTA"
+            >
+              <a
+                class="StonewallSliceLink"
+                href="https://content.red-badger.com/gen-z-adapting-to-digital-demands#register-now"
+              >
+                Find out more
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="StonewallSliceImageWrapper"
+        >
+          <img
+            alt="illustration, a smiling man looks at his phone as a jet flies away"
+            class="StonewallSliceImage"
+            src="image.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
     class="wrapper"
   >
     <div
