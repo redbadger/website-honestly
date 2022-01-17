@@ -31,10 +31,7 @@ const StonewallSlice = () => {
                 recruitment.
               </p>
               <div className={styles.StonewallSliceCTA}>
-                <a
-                  href="https://content.red-badger.com/gen-z-adapting-to-digital-demands#register-now"
-                  className={styles.StonewallSliceLink}
-                >
+                <a href="https://www.stonewall.org.uk/" className={styles.StonewallSliceLink}>
                   Find out more
                 </a>
               </div>
