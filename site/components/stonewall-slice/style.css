@@ -1,0 +1,206 @@
+@value badgerBlack, badgerWhite, scorpian, badgerRed from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.StonewallSliceWrapper {
+  composes: dividerBlack from '../../css/_divider.css';
+  width: 100%;
+  background: badgerBlack;
+  color: badgerWhite;
+}
+
+.StonewallSlice {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 24px;
+  line-height: 1.5em;
+}
+
+.StonewallSliceHeading {
+  composes: serif from '../../css/typography/_fonts.css';
+  font-size: 28px;
+  line-height: 1.25em;
+  display: none;
+}
+
+.StonewallSliceTextContent {
+  padding-top: 16px;
+}
+
+.StonewallSlice p {
+  font-size: 18px;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+.StonewallSlice h4 {
+  margin-bottom: 16px;
+}
+
+.StonewallSliceLink {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  font-size: 18px;
+  background: badgerRed;
+  color: badgerWhite;
+  display: block;
+  height: 48px;
+  width: 220px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.StonewallSliceLink:hover {
+  background: scorpian;
+}
+
+.StonewallSliceCloseButton {
+  position: absolute;
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: none;
+  top: 14px;
+  right: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.StonewallSliceCloseButton:after,
+.StonewallSliceCloseButton:before {
+  content: '';
+  display: block;
+  background: badgerWhite;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  left: -2px;
+  top: 7px;
+}
+
+.StonewallSliceCloseButton:after {
+  transform: rotate(45deg);
+}
+
+.StonewallSliceCloseButton:before {
+  transform: rotate(-45deg);
+}
+
+.StonewallSliceImageSmallWrapper {
+  display: block;
+  width: 100%;
+}
+
+.StonewallSliceImageSmallWrapper img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+
+.StonewallSliceImageWrapper {
+  display: none;
+  max-width: 600px;
+}
+
+.StonewallSliceImageWrapper img {
+  display: none;
+}
+
+.StonewallSliceCTA {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  display: block;
+}
+
+.StonewallSliceCTA p {
+  display: flex;
+}
+
+@media mediumScreen {
+  .StonewallSlice {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 70px 60px;
+  }
+
+  .StonewallSliceTextContent {
+    padding-top: 40px;
+  }
+
+  .StonewallSliceImage {
+    margin-top: 14px;
+  }
+
+  .StonewallSliceHeading {
+    font-size: 44px;
+  }
+
+  .StonewallSlice h4 {
+    margin-bottom: 10px;
+  }
+
+  .StonewallSlice p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .StonewallSliceLink {
+    font-size: 24px;
+    width: 292px;
+    height: 58px;
+    line-height: 58px;
+  }
+
+  .StonewallSliceText {
+    width: 100%;
+    min-width: 420px;
+  }
+}
+
+@media largeScreen {
+  .StonewallSliceHeading {
+    display: block;
+  }
+
+  .StonewallSliceImageWrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .StonewallSliceImageSmallWrapper {
+    display: none;
+  }
+  
+  .StonewallSliceImageSmallWrapper img {
+    display: none;
+  }
+  
+
+  .StonewallSliceImageWrapper img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .StonewallSliceText {
+    width: 50%;
+  }
+
+  .StonewallSliceTextContent {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .StonewallSliceCTA {
+    display: flex;
+    justify-content: space-between;
+  }
+}

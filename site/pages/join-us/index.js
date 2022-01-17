@@ -11,7 +11,8 @@ import Benefits from './benefits-slice';
 import JobsIntro from './jobs-intro-slice';
 import AwardsSlice from '../../slices/awards-slice/index';
 import BadgerTestimonialsSlice from './badger-testimonials-slice';
-import JobsGallerySlide from './jobs-gallery-slice';
+import JobsGallerySlice from './jobs-gallery-slice';
+import StonewallSlice from '../../components/stonewall-slice';
 
 import metaImage from './meta-image.jpg';
 
@@ -41,12 +42,13 @@ const JoinUs = ({ jobs }: Props) => (
     <JobsIntro>
       <HeaderContainer />
     </JobsIntro>
-    <JobsGallerySlide />
+    <JobsGallerySlice />
     {jobs.length && (
       <Container>
         <Jobs jobs={jobs} />
       </Container>
     )}
+    <StonewallSlice />
     {benefitsCategories.length && <Benefits benefitsCategories={benefitsCategories} />}
     <BadgerTestimonialsSlice navPositionBottom />
     <div className={styles.videoContainer}>

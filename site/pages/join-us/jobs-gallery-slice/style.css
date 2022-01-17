@@ -4,7 +4,7 @@
   position: relative;
   max-width: 310px;
   min-height: 340px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 }
 
 .galleryWrapper {
@@ -44,7 +44,7 @@
 @media mediumScreen {
   .galleryContainer {
     max-width: 780px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
   
   .galleryWrapper {
