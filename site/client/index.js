@@ -45,7 +45,7 @@ export function makeApp({ element, state }) {
   }
 
   const tagManagerArgs = {
-    gtmId: process.env.GTM_ID,
+    gtmId: 'GTM-WKH5X5W',
     dataLayer: {
       domain: `Red Badger: ${process.env.ENVIRONMENT_NAME} environment`,
     },
