@@ -63,61 +63,6 @@ Array [
     </div>
   </section>,
   <div
-    class="GenZSliceWrapper"
-    id="genz"
-  >
-    <div
-      class="GenZSliceContent"
-    >
-      <div
-        class="GenZSlice"
-      >
-        <div
-          class="GenZSliceText"
-        >
-          <h4
-            class="GenZSliceHeading"
-          >
-            Is your loyalty programme ready for Gen Z?
-          </h4>
-          <div
-            class="GenZSliceTextContent"
-          >
-            <p>
-              Gen Z believe their favourite brands should reward them for their patronage with an equitable loyalty programme that is both personalised and seamless. Are you set up to manage the incoming tidal wave of supercharged expectations?
-            </p>
-            <div
-              class="GenZSliceCTA"
-            >
-              <div>
-                <p>
-                  Thursday, 10th February 2022
-                  <br />
-                  5:00pm - 6:00pm (GMT)
-                </p>
-              </div>
-              <a
-                class="GenZSliceLink"
-                href="https://content.red-badger.com/gen-z-adapting-to-digital-demands#register-now"
-              >
-                Register for our event
-              </a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="GenZSliceImageWrapper"
-        >
-          <img
-            alt="illustration, a smiling man looks at his phone as a jet flies away"
-            class="GenZSliceImage"
-            src="image.png"
-          />
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
     class="goldCoinsContainer"
     data-cy="gold-coins-slice"
   >

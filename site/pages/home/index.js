@@ -14,7 +14,6 @@ import MBPSlice from './mbp-slice';
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
 import ScrollTracker from '../../components/scroll-tracker';
-import GenZSlice from '../../components/gen-z-slice';
 
 export default function HomePage() {
   const social = {
@@ -31,7 +30,6 @@ export default function HomePage() {
       <ScrollTracker>
         <Social {...social} />
         <TopSlice />
-        <GenZSlice />
         <GoldCoinSlice />
         <CaseStudyOverview />
         <MBPSlice />
