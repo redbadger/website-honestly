@@ -117,6 +117,66 @@ Array [
       src="Homepage_2.jpg"
     />
   </div>,
+  <div
+    class="WasmSliceWrapper"
+    id="genz"
+  >
+    <div
+      class="WasmSliceContent"
+    >
+      <div
+        class="WasmSlice"
+      >
+        <div
+          class="WasmSliceText"
+        >
+          <img
+            alt="text reading: We Love Tech"
+            class="WasmSliceTitleImage"
+            src="title.png"
+          />
+          <div
+            class="WasmSliceTextContent"
+          >
+            <p>
+              <strong
+                class="WasmSliceStrong"
+              >
+                The next generation of cloud native distributed systems is here
+              </strong>
+               There’s a quiet revolution going on that’s starting to affect every corner of the software industry. It’s called WebAssembly. You’ve probably heard about it as the fourth language of the web, but its application outside the browser is about to change everything! Join us as we explore the power of this simple technology and what it means for the future of the platform.
+            </p>
+            <div
+              class="WasmSliceCTA"
+            >
+              <div>
+                <p>
+                  Event - Wednesday, 2nd March - 18:30
+                  <br />
+                  At Red Badger HQ and Virtual
+                </p>
+              </div>
+              <a
+                class="WasmSliceLink"
+                href="https://bit.ly/3sH4sar"
+              >
+                Register for our event
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="WasmSliceImageWrapper"
+        >
+          <img
+            alt="illustration, a smiling man looks at his phone as a jet flies away"
+            class="WasmSliceImage"
+            src="background.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
   <section
     class="caseStudyContainer"
     data-cy="case-study-slice"
