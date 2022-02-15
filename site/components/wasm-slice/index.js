@@ -35,10 +35,7 @@ const WasmSlice = () => {
                     At Red Badger HQ and Virtual
                   </p>
                 </div>
-                <a
-                  href="https://www.meetup.com/we-love-tech/events/283523953/"
-                  className={styles.WasmSliceLink}
-                >
+                <a href="https://bit.ly/3sH4sar" className={styles.WasmSliceLink}>
                   Register for our event
                 </a>
               </div>
