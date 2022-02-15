@@ -1,4 +1,4 @@
-@value badgerRedOnWhite, badgerWhite, badgerBlack, daveGreen, cainYellow, mbpOrange, grey from "./_colors.css";
+@value badgerRedOnWhite, badgerWhite, badgerBlack, daveGreen, cainYellow, mbpOrange, grey, stuBlue from "./_colors.css";
 @value timelineDivider from "./_zindex.css";
 @value largeScreen from "./_sizes.css";
 
@@ -8,7 +8,7 @@
 
 .divider:before {
   padding-left: 2px;
-  content:"";
+  content: '';
   position: absolute;
   right: -6px;
   width: 45%;
@@ -20,7 +20,7 @@
 
 .divider:after {
   padding-left: 2px;
-  content:"";
+  content: '';
   position: absolute;
   right: -0;
   width: 10%;
@@ -29,46 +29,69 @@
   /* background-color: badgerRedOnWhite; */
 }
 
-.dividerBlack, .dividerWhite, .dividerYellow, .dividerOrange, .dividerGreen, .dividerBlackOnTransparent, .dividerBlackSocialSlice, .dividerGrey, .dividerBlackLarge, .dividerWhiteSmall {
+.dividerBlack,
+.dividerWhite,
+.dividerYellow,
+.dividerOrange,
+.dividerGreen,
+.dividerBlue,
+.dividerBlackOnTransparent,
+.dividerBlackSocialSlice,
+.dividerGrey,
+.dividerBlackLarge,
+.dividerWhiteSmall {
   composes: divider;
 }
 
-.dividerBlack:before, .dividerBlack:after {
+.dividerBlack:before,
+.dividerBlack:after {
   background-color: badgerBlack;
 }
 
-.dividerWhite:before, .dividerWhite:after {
+.dividerWhite:before,
+.dividerWhite:after {
   background-color: badgerWhite;
 }
 
-.dividerYellow:before, .dividerYellow:after {
+.dividerYellow:before,
+.dividerYellow:after {
   background-color: cainYellow;
 }
 
-.dividerOrange:before, .dividerOrange:after {
+.dividerOrange:before,
+.dividerOrange:after {
   background-color: mbpOrange;
 }
 
-.dividerGreen:before, .dividerGreen:after {
+.dividerGreen:before,
+.dividerGreen:after {
   background-color: daveGreen;
 }
 
-.dividerGrey:before, .dividerGrey:after {
+.dividerBlue:before,
+.dividerBlue:after {
+  background-color: stuBlue;
+}
+
+.dividerGrey:before,
+.dividerGrey:after {
   background-color: grey;
 }
 
-.dividerBlackOnTransparent:before, .dividerBlackOnTransparent:after {
+.dividerBlackOnTransparent:before,
+.dividerBlackOnTransparent:after {
   background-color: badgerBlack;
   right: auto;
   left: -6px;
   /** IE 11 fix*/
-  top:-1px;
+  top: -1px;
   /** Compensate for the IE11 fix */
   height: 11px;
   z-index: timelineDivider;
 }
 
-.dividerBlackSocialSlice:before, .dividerBlackSocialSlice:after {
+.dividerBlackSocialSlice:before,
+.dividerBlackSocialSlice:after {
   background-color: badgerBlack;
   right: 0;
   left: 352px;
@@ -98,6 +121,6 @@
   }
 
   .dividerWhiteSmall:after {
-    display:none;
+    display: none;
   }
 }

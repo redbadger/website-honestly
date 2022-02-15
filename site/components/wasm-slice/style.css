@@ -2,7 +2,7 @@
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .WasmSliceWrapper {
-  composes: dividerBlack from '../../css/_divider.css';
+  composes: dividerBlue from '../../css/_divider.css';
   width: 100%;
   background: stuBlue;
   color: badgerBlack;
