@@ -45,6 +45,7 @@
 .WasmSliceTitleImage {
   display: block;
   width: 100%;
+  max-width: 610px;
 }
 
 .WasmSliceLink {
@@ -139,7 +140,7 @@
   }
 
   .WasmSlice p {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 40px;
   }
 
@@ -167,13 +168,13 @@
     display: block;
     width: 200%;
     position: absolute;
-    right: -500px;
+    right: -422px;
     top: 50%;
     transform: translateY(-50%);
   }
 
   .WasmSliceText {
-    width: 58%;
+    width: 52%;
   }
 
   .WasmSliceTextContent {
