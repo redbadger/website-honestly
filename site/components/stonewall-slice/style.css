@@ -144,6 +144,10 @@
 
   .StonewallSlice p {
     font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .StonewallSlice p:last-of-type {
     margin-bottom: 40px;
   }
 
@@ -174,11 +178,10 @@
   .StonewallSliceImageSmallWrapper {
     display: none;
   }
-  
+
   .StonewallSliceImageSmallWrapper img {
     display: none;
   }
-  
 
   .StonewallSliceImageWrapper img {
     display: block;
