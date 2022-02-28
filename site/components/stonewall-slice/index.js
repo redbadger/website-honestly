@@ -22,11 +22,17 @@ const StonewallSlice = () => {
             </div>
             <div className={styles.StonewallSliceTextContent}>
               <p>
-                We take pride in our diversity and actively seek to create a working environment
-                that reflects the variety of the world we live in. Red Badger is a diverse and
-                inclusive place to work. As one of the company’s core objectives, we have joined the
-                Stonewall Diversity Champion programme to help us continue to be a welcome place for
-                all and be a bastion of best practice for LGBTQ+ and BIPOC recruitment.
+                We respect and care for each other and strive for a truly diverse workplace where
+                everyone has the freedom to be their true selves and feel safe.
+              </p>
+              <p>
+                We’re part of the Stonewall Diversity Champion programme to continuously develop
+                structured and systematic policies and practises that reflect the world we live in.
+              </p>
+              <p>
+                In addition to supporting the LGBTQ+ community, we’re focused on applying what we
+                learn to all areas of equality including ethnicity, gender, disability and social
+                mobility.
               </p>
               <div className={styles.StonewallSliceCTA}>
                 <a
