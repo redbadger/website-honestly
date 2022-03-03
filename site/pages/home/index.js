@@ -6,7 +6,6 @@ import CaseStudyOverview from '../../components/case-study-overview';
 import AwardsSlice from '../../slices/awards-slice';
 import ChecklistContactUs from '../../slices/checklist-contact-us-slice';
 import Social from '../../components/social';
-import WasmSlice from '../../components/wasm-slice';
 import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
 import GoldCoinSlice from '../../slices/gc-slice';
@@ -32,7 +31,6 @@ export default function HomePage() {
         <Social {...social} />
         <TopSlice />
         <GoldCoinSlice />
-        <WasmSlice />
         <CaseStudyOverview />
         <MBPSlice />
         <TestimonialsSlice />
