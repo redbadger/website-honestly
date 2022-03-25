@@ -8,6 +8,19 @@
   color: badgerBlack;
 }
 
+.NatsSliceStrong {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  position: relative;
+  font-size: 40px;
+}
+
+.NatsSliceStrong img {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  margin-left: 12px;
+}
+
 .NatsSlice {
   composes: sansSerif from '../../css/typography/_fonts.css';
   position: relative;
@@ -18,10 +31,10 @@
   line-height: 1.5em;
 }
 
-/* Hacky workaround because the slice wasn't provided as indivisual assets instead it is a single image that also needed text + a button laid on top */
-.NatsSliceText {
-  width: 50%;
-  margin-top: -20px;
+.NatsSliceHeading {
+  composes: serif from '../../css/typography/_fonts.css';
+  font-size: 28px;
+  line-height: 1.25em;
 }
 
 .NatsSliceTextContent {
@@ -29,7 +42,7 @@
 }
 
 .NatsSlice p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.25em;
   margin-bottom: 20px;
 }
@@ -41,7 +54,7 @@
 .NatsSliceTitleImage {
   display: block;
   width: 100%;
-  max-width: 1440px;
+  max-width: 610px;
 }
 
 .NatsSliceLink {
@@ -51,9 +64,9 @@
   background: badgerBlack;
   color: badgerWhite;
   display: block;
-  height: 60px;
-  width: 240px;
-  line-height: 60px;
+  height: 72px;
+  width: 300px;
+  line-height: 72px;
   text-align: center;
 }
 
@@ -61,21 +74,119 @@
   background: scorpian;
 }
 
+.NatsSliceCloseButton {
+  position: absolute;
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: none;
+  top: 14px;
+  right: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.NatsSliceCloseButton:after,
+.NatsSliceCloseButton:before {
+  content: '';
+  display: block;
+  background: badgerWhite;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  left: -2px;
+  top: 7px;
+}
+
+.NatsSliceCloseButton:after {
+  transform: rotate(45deg);
+}
+
+.NatsSliceCloseButton:before {
+  transform: rotate(-45deg);
+}
+
+.NatsSliceImageWrapper {
+  display: none;
+  max-width: 472px;
+}
+
+.NatsSliceImageWrapper img {
+  display: none;
+}
+
+.NatsSliceCTA {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  display: block;
+}
+
+.NatsSliceCTA p {
+  display: flex;
+}
+
 @media mediumScreen {
-  .NatsSliceText {
-    width: 50%;
-    margin-top: -40px;
+  .NatsSlice {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 60px;
+  }
+
+  .NatsSliceTextContent {
+    padding-top: 40px;
+  }
+
+  .NatsSliceImage {
+    margin-top: 14px;
+  }
+
+  .NatsSliceHeading {
+    font-size: 60px;
+  }
+
+  .NatsSlice h4 {
+    margin-bottom: 40px;
   }
 
   .NatsSlice p {
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .NatsSliceLink {
+    font-size: 24px;
+    width: 300px;
+    height: 72px;
+    line-height: 72px;
+  }
+
+  .NatsSliceText {
+    width: 100%;
+    min-width: 420px;
   }
 }
 
 @media largeScreen {
-  .NatsSliceText {
-    width: 50%;
-    margin-top: -60px;
+  .NatsSliceImageWrapper {
+    display: block;
+    position: relative;
+    width: 100%;
   }
-  
+
+  .NatsSliceImageWrapper img {
+    display: block;
+    width: 150%;
+    position: absolute;
+    right: -190px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .NatsSliceText {
+    width: 52%;
+  }
+
+  .NatsSliceTextContent {
+    margin-right: 50px;
+  }
 }

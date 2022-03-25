@@ -127,23 +127,58 @@ Array [
       <div
         class="NatsSlice"
       >
-        <img
-          alt="text reading: We Love Tech"
-          class="NatsSliceTitleImage"
-          src="background.png"
-        />
         <div
           class="NatsSliceText"
         >
-          <p>
-            Join Red Badger, Synadia, FLEETCOR and Form3 to explore why NATS is the next generation of cloud connectivity for financial blue chips. More than a message broker, NATS is THE connective substrate for a global organisation–or even the whole planet.
-          </p>
-          <a
-            class="NatsSliceLink"
-            href="https://content.red-badger.com/events/we-love-tech/we-love-nats"
+          <img
+            alt="text reading: We Love Tech"
+            class="NatsSliceTitleImage"
+            src="title.png"
+          />
+          <div
+            class="NatsSliceTextContent"
           >
-            Register →
-          </a>
+            <p>
+              <strong
+                class="NatsSliceStrong"
+              >
+                We love 
+                <img
+                  alt="N A T S"
+                  src="natslogo.png"
+                />
+              </strong>
+            </p>
+            <p>
+              Join Red Badger, Synadia, FLEETCOR and Form3 to explore why NATS is the next generation of cloud connectivity for financial blue chips. More than a message broker, NATS is THE connective substrate for a global organisation–or even the whole planet.
+            </p>
+            <div
+              class="NatsSliceCTA"
+            >
+              <div>
+                <p>
+                  Wednesday 20th April - 18:30
+                  <br />
+                  Red Badger HQ & Virtual
+                </p>
+              </div>
+              <a
+                class="NatsSliceLink"
+                href="https://content.red-badger.com/events/we-love-tech/we-love-nats"
+              >
+                Register →
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="NatsSliceImageWrapper"
+        >
+          <img
+            alt="illustration, a smiling man looks at his phone as a jet flies away"
+            class="NatsSliceImage"
+            src="background.png"
+          />
         </div>
       </div>
     </div>
