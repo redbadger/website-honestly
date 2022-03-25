@@ -34,6 +34,16 @@
   margin-bottom: 20px;
 }
 
+.NatsSlice h4 {
+  margin-bottom: 16px;
+}
+
+.NatsSliceTitleImage {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+}
+
 .NatsSliceLink {
   composes: boldSansSerif from '../../css/typography/_fonts.css';
   cursor: pointer;
