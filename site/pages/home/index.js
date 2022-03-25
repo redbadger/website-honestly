@@ -10,6 +10,7 @@ import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
 import GoldCoinSlice from '../../slices/gc-slice';
 import MBPSlice from './mbp-slice';
+import NatsSlice from '../../components/nats-slice';
 
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
@@ -30,6 +31,7 @@ export default function HomePage() {
       <ScrollTracker>
         <Social {...social} />
         <TopSlice />
+        <NatsSlice />
         <GoldCoinSlice />
         <CaseStudyOverview />
         <MBPSlice />
