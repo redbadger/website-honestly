@@ -63,37 +63,6 @@ Array [
     </div>
   </section>,
   <div
-    class="NatsSliceWrapper"
-    id="genz"
-  >
-    <div
-      class="NatsSliceContent"
-    >
-      <div
-        class="NatsSlice"
-      >
-        <img
-          alt="text reading: We Love Tech"
-          class="NatsSliceTitleImage"
-          src="background.png"
-        />
-        <div
-          class="NatsSliceText"
-        >
-          <p>
-            Join Red Badger, Synadia, FLEETCOR and Form3 to explore why NATS is the next generation of cloud connectivity for financial blue chips. More than a message broker, NATS is THE connective substrate for a global organisation–or even the whole planet.
-          </p>
-          <a
-            class="NatsSliceLink"
-            href="https://content.red-badger.com/events/we-love-tech/we-love-nats"
-          >
-            Register →
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
     class="goldCoinsContainer"
     data-cy="gold-coins-slice"
   >

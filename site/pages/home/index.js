@@ -31,7 +31,6 @@ export default function HomePage() {
       <ScrollTracker>
         <Social {...social} />
         <TopSlice />
-        <NatsSlice />
         <GoldCoinSlice />
         <NatsSlice />
         <CaseStudyOverview />
