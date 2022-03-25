@@ -1,0 +1,81 @@
+@value badgerBlack, badgerWhite, scorpian, badgerRed, midBlue from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.NatsSliceWrapper {
+  composes: dividerMidBlue from '../../css/_divider.css';
+  width: 100%;
+  background: midBlue;
+  color: badgerBlack;
+}
+
+.NatsSlice {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 24px;
+  line-height: 1.5em;
+}
+
+/* Hacky workaround because the slice wasn't provided as indivisual assets instead it is a single image that also needed text + a button laid on top */
+.NatsSliceText {
+  width: 50%;
+  margin-top: -20px;
+}
+
+.NatsSliceTextContent {
+  padding-top: 16px;
+}
+
+.NatsSlice p {
+  font-size: 16px;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+.NatsSlice h4 {
+  margin-bottom: 16px;
+}
+
+.NatsSliceTitleImage {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.NatsSliceLink {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  font-size: 18px;
+  background: badgerBlack;
+  color: badgerWhite;
+  display: block;
+  height: 60px;
+  width: 240px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.NatsSliceLink:hover {
+  background: scorpian;
+}
+
+@media mediumScreen {
+  .NatsSliceText {
+    width: 50%;
+    margin-top: -40px;
+  }
+
+  .NatsSlice p {
+    font-size: 18px;
+  }
+}
+
+@media largeScreen {
+  .NatsSliceText {
+    width: 50%;
+    margin-top: -60px;
+  }
+  
+}

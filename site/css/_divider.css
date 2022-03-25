@@ -1,4 +1,4 @@
-@value badgerRedOnWhite, badgerWhite, badgerBlack, daveGreen, cainYellow, mbpOrange, grey, stuBlue from "./_colors.css";
+@value badgerRedOnWhite, badgerWhite, badgerBlack, daveGreen, cainYellow, mbpOrange, grey, stuBlue, midBlue from "./_colors.css";
 @value timelineDivider from "./_zindex.css";
 @value largeScreen from "./_sizes.css";
 
@@ -35,6 +35,7 @@
 .dividerOrange,
 .dividerGreen,
 .dividerBlue,
+.dividerMidBlue,
 .dividerBlackOnTransparent,
 .dividerBlackSocialSlice,
 .dividerGrey,
@@ -71,6 +72,11 @@
 .dividerBlue:before,
 .dividerBlue:after {
   background-color: stuBlue;
+}
+
+.dividerMidBlue:before,
+.dividerMidBlue:after {
+  background-color: midBlue;
 }
 
 .dividerGrey:before,
