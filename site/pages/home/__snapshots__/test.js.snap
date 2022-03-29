@@ -138,20 +138,17 @@ Array [
           <div
             class="NatsSliceTextContent"
           >
-            <p>
-              <strong
-                class="NatsSliceStrong"
-              >
-                We love 
-                <img
-                  alt="N A T S"
-                  src="natslogo.png"
-                />
-              </strong>
-            </p>
-            <p>
-              Join Red Badger, Synadia, FLEETCOR and Form3 to explore why NATS is the next generation of cloud connectivity for financial blue chips. More than a message broker, NATS is THE connective substrate for a global organisation–or even the whole planet.
-            </p>
+            <div
+              class="NatsSliceBodyheader"
+            >
+              <h4>
+                We love
+              </h4>
+              <img
+                alt="N.A.T.S logo"
+                src="nats-logo.png"
+              />
+            </div>
             <div
               class="NatsSliceCTA"
             >
@@ -162,20 +159,23 @@ Array [
                   Red Badger HQ & Virtual
                 </p>
               </div>
-              <a
-                class="NatsSliceLink"
-                href="https://content.red-badger.com/events/we-love-tech/we-love-nats"
-              >
-                Register →
-              </a>
             </div>
+            <p>
+              Join Red Badger, Synadia, FLEETCOR and Form3 to explore why NATS is the next generation of cloud connectivity for financial blue chips. More than a message broker, NATS is THE connective substrate for a global organisation–or even the whole planet.
+            </p>
+            <a
+              class="NatsSliceLink"
+              href="https://content.red-badger.com/events/we-love-tech/we-love-nats"
+            >
+              Register
+            </a>
           </div>
         </div>
         <div
           class="NatsSliceImageWrapper"
         >
           <img
-            alt="illustration, a smiling man looks at his phone as a jet flies away"
+            alt="An illustration of the letters n.a.t.s floating above a cloud"
             class="NatsSliceImage"
             src="background.png"
           />

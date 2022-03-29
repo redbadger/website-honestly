@@ -2,23 +2,30 @@
 @value mediumScreen, largeScreen from "../../css/_sizes.css";
 
 .NatsSliceWrapper {
-  composes: dividerMidBlue from '../../css/_divider.css';
+  composes: dividerBlue from '../../css/_divider.css';
   width: 100%;
   background: midBlue;
   color: badgerBlack;
 }
 
-.NatsSliceStrong {
+.NatsSliceBodyheader {
   composes: boldSansSerif from '../../css/typography/_fonts.css';
-  position: relative;
-  font-size: 40px;
+  display: flex;
 }
 
-.NatsSliceStrong img {
-  width: 200px;
-  position: absolute;
-  top: 0;
-  margin-left: 12px;
+.NatsSliceBodyheader h4 {
+  font-size: 35px;
+  margin-right: 14px;
+}
+
+.NatsSliceBodyheader img {
+  width: 162px;
+  height: 42px;
+  margin-top: -7px;
+}
+
+.NatsSliceStrong {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
 }
 
 .NatsSlice {
@@ -65,7 +72,7 @@
   color: badgerWhite;
   display: block;
   height: 72px;
-  width: 300px;
+  width: 179px;
   line-height: 72px;
   text-align: center;
 }
@@ -155,8 +162,6 @@
 
   .NatsSliceLink {
     font-size: 24px;
-    width: 300px;
-    height: 72px;
     line-height: 72px;
   }
 
@@ -175,9 +180,9 @@
 
   .NatsSliceImageWrapper img {
     display: block;
-    width: 150%;
+    width: 200%;
     position: absolute;
-    right: -190px;
+    right: -422px;
     top: 50%;
     transform: translateY(-50%);
   }
