@@ -1,0 +1,130 @@
+@value badgerBlack, badgerWhite, scorpian, badgerRed, midBlue, brightBlue from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.WasmWhitepaperSliceWrapper {
+  composes: dividerMidBlue from '../../css/_divider.css';
+  width: 100%;
+  background: brightBlue;
+  color: badgerBlack;
+}
+
+.WasmWhitepaperSliceBodyheader {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.WasmWhitepaperSliceBodyheader h3 {
+  font-size: 42px;
+  line-height: 46px;
+  margin-right: 14px;
+}
+
+.WasmWhitepaperSlice {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 24px;
+  line-height: 1.5em;
+}
+
+.WasmWhitepaperSlice p {
+  font-size: 18px;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+.WasmWhitepaperSliceBodySubHeader {
+  margin-bottom: 50px;
+}
+
+.WasmWhitepaperSliceTitleImage {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 16px;
+}
+
+.WasmWhitepaperSliceLink {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  font-size: 18px;
+  background: badgerBlack;
+  color: badgerWhite;
+  display: inline;
+  text-align: center;
+  padding: 16px;
+}
+
+.WasmWhitepaperSliceLink:hover {
+  background: scorpian;
+}
+
+.WasmWhitepaperSliceImageWrapper {
+  display: none;
+  max-width: 472px;
+}
+
+.WasmWhitepaperSliceImageWrapper img {
+  display: none;
+}
+
+.WasmWhitepaperSliceCTA {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  display: block;
+  color: badgerWhite;
+  margin-bottom: 20px;
+}
+
+.WasmWhitepaperSliceCTA p {
+  display: flex;
+}
+
+@media mediumScreen {
+  .WasmWhitepaperSlice {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 60px;
+  }
+
+  .WasmWhitepaperSliceImage {
+    margin-top: 14px;
+  }
+
+  .WasmWhitepaperSlice p {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .WasmWhitepaperSliceLink {
+    font-size: 24px;
+  }
+
+  .WasmWhitepaperSliceText {
+    width: 100%;
+    min-width: 420px;
+  }
+}
+
+@media largeScreen {
+  .WasmWhitepaperSliceTitleImage {
+    margin-bottom: 32px;
+  }
+
+  .WasmWhitepaperSliceImageWrapper {
+    display: flex;
+    flex-grow: 1;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .WasmWhitepaperSliceImageWrapper img {
+    display: block;
+  }
+
+  .WasmWhitepaperSliceText {
+    width: 52%;
+  }
+}

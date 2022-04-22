@@ -10,7 +10,7 @@ import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
 import GoldCoinSlice from '../../slices/gc-slice';
 import MBPSlice from './mbp-slice';
-import NatsSlice from '../../components/nats-slice';
+import WasmWhitepaperSlice from '../../components/wasm-whitepaper-slice';
 
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
@@ -32,7 +32,7 @@ export default function HomePage() {
         <Social {...social} />
         <TopSlice />
         <GoldCoinSlice />
-        <NatsSlice />
+        <WasmWhitepaperSlice />
         <CaseStudyOverview />
         <MBPSlice />
         <TestimonialsSlice />
