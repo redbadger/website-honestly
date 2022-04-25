@@ -118,66 +118,64 @@ Array [
     />
   </div>,
   <div
-    class="NatsSliceWrapper"
+    class="WasmWhitepaperSliceWrapper"
     id="genz"
   >
     <div
-      class="NatsSliceContent"
+      class="WasmWhitepaperSliceContent"
     >
       <div
-        class="NatsSlice"
+        class="WasmWhitepaperSlice"
       >
         <div
-          class="NatsSliceText"
+          class="WasmWhitepaperSliceText"
         >
           <img
             alt="text reading: We Love Tech"
-            class="NatsSliceTitleImage"
+            class="WasmWhitepaperSliceTitleImage"
             src="title.png"
           />
           <div
-            class="NatsSliceTextContent"
+            class="WasmWhitepaperSliceTextContent"
           >
             <div
-              class="NatsSliceBodyheader"
+              class="WasmWhitepaperSliceCTA"
             >
-              <h4>
-                We love
-              </h4>
-              <img
-                alt="N.A.T.S logo"
-                src="nats-logo.png"
-              />
+              <h5>
+                DOWNLOAD THE WHITE PAPER
+              </h5>
             </div>
             <div
-              class="NatsSliceCTA"
+              class="WasmWhitepaperSliceBodyheader"
             >
-              <div>
-                <p>
-                  Wednesday 20th April - 18:30
-                  <br />
-                  Red Badger HQ & Virtual
-                </p>
-              </div>
+              <h3>
+                Multi-cloud platforms are here:
+              </h3>
             </div>
-            <p>
-              Join Red Badger, Synadia, FLEETCOR and Form3 to explore why NATS is the next generation of cloud connectivity for financial blue chips. More than a message broker, NATS is THE connective substrate for a global organisation–or even the whole planet.
-            </p>
-            <a
-              class="NatsSliceLink"
-              href="https://content.red-badger.com/events/we-love-tech/we-love-nats"
+            <div
+              class="WasmWhitepaperSliceBodySubHeader"
             >
-              Register
-            </a>
+              <h4>
+                How WebAssembly, NATS and wasmCloud can move us beyond the cloud
+              </h4>
+            </div>
+            <div>
+              <a
+                class="WasmWhitepaperSliceLink"
+                href="https://bit.ly/393vkLn"
+              >
+                Download White Paper
+              </a>
+            </div>
           </div>
         </div>
         <div
-          class="NatsSliceImageWrapper"
+          class="WasmWhitepaperSliceImageWrapper"
         >
           <img
-            alt="An illustration of the letters n.a.t.s floating above a cloud"
-            class="NatsSliceImage"
-            src="background.png"
+            alt="An illustration of the WASM whitepaper"
+            class="WasmWhitepaperSliceImage"
+            src="whitepaper.png"
           />
         </div>
       </div>
