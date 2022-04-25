@@ -4,7 +4,10 @@
 .WasmWhitepaperSliceWrapper {
   composes: dividerMidBlue from '../../css/_divider.css';
   width: 100%;
-  background: brightBlue;
+  background-color: brightBlue;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: badgerBlack;
 }
 
@@ -26,7 +29,7 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 24px 24px 60px;
   line-height: 1.5em;
 }
 
@@ -37,7 +40,7 @@
 }
 
 .WasmWhitepaperSliceBodySubHeader {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .WasmWhitepaperSliceTitleImage {
@@ -53,7 +56,7 @@
   font-size: 18px;
   background: badgerBlack;
   color: badgerWhite;
-  display: inline;
+  display: inline-block;
   text-align: center;
   padding: 16px;
 }
@@ -65,10 +68,6 @@
 .WasmWhitepaperSliceImageWrapper {
   display: none;
   max-width: 472px;
-}
-
-.WasmWhitepaperSliceImageWrapper img {
-  display: none;
 }
 
 .WasmWhitepaperSliceCTA {
@@ -90,7 +89,6 @@
   }
 
   .WasmWhitepaperSliceImage {
-    margin-top: 14px;
   }
 
   .WasmWhitepaperSlice p {
@@ -110,7 +108,10 @@
 
 @media largeScreen {
   .WasmWhitepaperSliceTitleImage {
+    margin-top: 14px;
     margin-bottom: 32px;
+    display: block;
+    width: 320px;
   }
 
   .WasmWhitepaperSliceImageWrapper {
@@ -118,10 +119,6 @@
     flex-grow: 1;
     max-width: 100%;
     justify-content: center;
-  }
-
-  .WasmWhitepaperSliceImageWrapper img {
-    display: block;
   }
 
   .WasmWhitepaperSliceText {
