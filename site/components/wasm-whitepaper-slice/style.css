@@ -18,7 +18,7 @@
 }
 
 .WasmWhitepaperSliceBodyheader h3 {
-  font-size: 42px;
+  font-size: 32px;
   line-height: 46px;
   margin-right: 14px;
 }
@@ -68,17 +68,6 @@
 .WasmWhitepaperSliceImageWrapper {
   display: none;
   max-width: 472px;
-}
-
-.WasmWhitepaperSliceCTA {
-  composes: boldSansSerif from '../../css/typography/_fonts.css';
-  display: block;
-  color: badgerWhite;
-  margin-bottom: 20px;
-}
-
-.WasmWhitepaperSliceCTA p {
-  display: flex;
 }
 
 @media mediumScreen {
