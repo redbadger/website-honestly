@@ -70,14 +70,15 @@
   max-width: 472px;
 }
 
+.WasmWhitepaperSliceBodyLink {
+  composes: bodyUnderlineLink from '../../css/_links.css';
+}
+
 @media mediumScreen {
   .WasmWhitepaperSlice {
     display: flex;
     flex-direction: row;
     padding: 40px 60px;
-  }
-
-  .WasmWhitepaperSliceImage {
   }
 
   .WasmWhitepaperSlice p {

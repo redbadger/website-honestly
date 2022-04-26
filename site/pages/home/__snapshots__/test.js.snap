@@ -150,6 +150,7 @@ Array [
               <h4>
                 With contributions from Liam Randall, Cosmonic’s CEO and Derek Collison, CEO of Synadia and creator of 
                 <a
+                  class="WasmWhitepaperSliceBodyLink"
                   href="http://nats.io/"
                 >
                   NATS.io

@@ -26,9 +26,12 @@ const WasmWhitepaperSlice = () => {
               <div className={styles.WasmWhitepaperSliceBodySubHeader}>
                 <h4>
                   With contributions from Liam Randall, Cosmonic’s CEO and Derek Collison, CEO of
-                  Synadia and creator of <a href="http://nats.io/">NATS.io</a>, our latest white
-                  paper written by our Chief Scientist, Stuart Harris, maps out the journey to a
-                  truly resilient multi-cloud platform.
+                  Synadia and creator of{' '}
+                  <a href="http://nats.io/" className={styles.WasmWhitepaperSliceBodyLink}>
+                    NATS.io
+                  </a>
+                  , our latest white paper written by our Chief Scientist, Stuart Harris, maps out
+                  the journey to a truly resilient multi-cloud platform.
                 </h4>
               </div>
               <div>
