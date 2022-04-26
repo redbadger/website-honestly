@@ -7,7 +7,7 @@ import whitepaperImg from './images/whitepaper.png';
 
 const WasmWhitepaperSlice = () => {
   return (
-    <div className={`${styles.WasmWhitepaperSliceWrapper}`} id="genz">
+    <div className={`${styles.WasmWhitepaperSliceWrapper}`}>
       <div className={styles.WasmWhitepaperSliceContent}>
         <div className={styles.WasmWhitepaperSlice}>
           <div className={styles.WasmWhitepaperSliceText}>
@@ -17,9 +17,6 @@ const WasmWhitepaperSlice = () => {
               alt="text reading: We Love Tech"
             />
             <div className={styles.WasmWhitepaperSliceTextContent}>
-              {/* <div className={styles.WasmWhitepaperSliceCTA}>
-                <h5>DOWNLOAD THE WHITE PAPER</h5>
-              </div> */}
               <div className={styles.WasmWhitepaperSliceBodyheader}>
                 <h3>
                   Multi-cloud platforms are here: How WebAssembly, NATS and wasmCloud can move us
