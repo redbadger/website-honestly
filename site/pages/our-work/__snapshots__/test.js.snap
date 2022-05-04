@@ -801,15 +801,6 @@ Array [
             class="logoWrapper"
           >
             <img
-              alt="Selfridges logo"
-              class="selfridgesLogo"
-              src="selfridges.png"
-            />
-          </div>
-          <div
-            class="logoWrapper"
-          >
-            <img
               alt="Haller logo"
               class="hallerLogo"
               src="haller.png"
