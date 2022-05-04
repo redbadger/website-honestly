@@ -15,7 +15,6 @@ import ftLogo from './images/ft.png';
 import hallerLogo from './images/haller.png';
 import lloydsLogo from './images/lloyds.png';
 import nhsLogo from './images/nhs.png';
-import selfridgesLogo from './images/selfridges.png';
 import skyLogo from './images/sky.png';
 import tescoLogo from './images/tesco.png';
 import wickesLogo from './images/wickes.png';
@@ -65,9 +64,6 @@ export default function Logos() {
         </div>
         <div className={styles.logoWrapper}>
           <img src={wickesLogo} className={styles.wickesLogo} alt="Wickes logo" />
-        </div>
-        <div className={styles.logoWrapper}>
-          <img src={selfridgesLogo} className={styles.selfridgesLogo} alt="Selfridges logo" />
         </div>
         <div className={styles.logoWrapper}>
           <img src={hallerLogo} className={styles.hallerLogo} alt="Haller logo" />

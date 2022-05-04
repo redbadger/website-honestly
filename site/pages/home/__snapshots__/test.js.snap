@@ -392,14 +392,6 @@ Array [
           class="caseCompaniesLogo"
         >
           <img
-            alt="The logo of Selfridges"
-            src="selfridges.png"
-          />
-        </div>
-        <div
-          class="caseCompaniesLogo"
-        >
-          <img
             alt="The logo of Car Trawler"
             src="cartrawler.png"
           />
