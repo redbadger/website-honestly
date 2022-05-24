@@ -35,7 +35,7 @@ const Slice = () => {
             </div>
           </div>
           <div className={styles.SliceImageWrapper}>
-            <img className={styles.SliceImage} src={loyaltyImage} alt="" />
+            <img className={styles.SliceImage} src={loyaltyImage} aria-hidden="true" alt="" />
           </div>
         </div>
       </div>

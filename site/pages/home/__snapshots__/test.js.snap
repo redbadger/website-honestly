@@ -118,63 +118,55 @@ Array [
     />
   </div>,
   <div
-    class="WasmWhitepaperSliceWrapper"
+    class="SliceWrapper"
   >
-    <div
-      class="WasmWhitepaperSliceContent"
-    >
+    <div>
       <div
-        class="WasmWhitepaperSlice"
+        class="Slice"
       >
         <div
-          class="WasmWhitepaperSliceText"
+          class="SliceText"
         >
           <img
-            alt="text reading: We Love Tech"
-            class="WasmWhitepaperSliceTitleImage"
+            alt="text reading: Badger Sessions"
+            class="SliceTitleImage"
             src="title.png"
           />
           <div
-            class="WasmWhitepaperSliceTextContent"
+            class="SliceTextContent"
           >
             <div
-              class="WasmWhitepaperSliceBodyheader"
+              class="SliceBodyheader"
             >
               <h3>
-                Multi-cloud platforms are here: How WebAssembly, NATS and wasmCloud can move us beyond the cloud
+                Is the future of digital loyalty point-less?
               </h3>
             </div>
             <div
-              class="WasmWhitepaperSliceBodySubHeader"
+              class="SliceBodySubHeader"
             >
               <h4>
-                With contributions from Liam Randall, Cosmonic’s CEO and Derek Collison, CEO of Synadia and creator of 
-                <a
-                  class="WasmWhitepaperSliceBodyLink"
-                  href="http://nats.io/"
-                >
-                  NATS.io
-                </a>
-                , our latest white paper written by our Chief Scientist, Stuart Harris, maps out the journey to a truly resilient multi-cloud platform.
+                Join us on Wednesday 6th July at 4pm for a virtual panel discussion to find out how and why loyalty is evolving
               </h4>
             </div>
             <div>
               <a
-                class="WasmWhitepaperSliceLink"
-                href="https://bit.ly/393vkLn"
+                class="SliceLink"
+                href="https://bit.ly/3GbWdcw"
               >
-                Download White Paper
+                Register now
               </a>
             </div>
           </div>
         </div>
         <div
-          class="WasmWhitepaperSliceImageWrapper"
+          class="SliceImageWrapper"
         >
           <img
-            alt="An illustration of the WASM whitepaper"
-            class="WasmWhitepaperSliceImage"
-            src="whitepaper.png"
+            alt=""
+            aria-hidden="true"
+            class="SliceImage"
+            src="loyalty-image.png"
           />
         </div>
       </div>
