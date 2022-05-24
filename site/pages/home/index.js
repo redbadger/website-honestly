@@ -10,8 +10,7 @@ import HubspotSignup from './hubspot-signup';
 import TechSlice from '../../slices/tech-slice';
 import GoldCoinSlice from '../../slices/gc-slice';
 import MBPSlice from './mbp-slice';
-import WasmWhitepaperSlice from '../../components/wasm-whitepaper-slice';
-
+import FutureOfLoyaltySlice from '../../components/future-of-loyalty-slice';
 import metaImage from './meta-image.jpg';
 import TestimonialsSlice from './client-testimonials-slice';
 import ScrollTracker from '../../components/scroll-tracker';
@@ -32,7 +31,7 @@ export default function HomePage() {
         <Social {...social} />
         <TopSlice />
         <GoldCoinSlice />
-        <WasmWhitepaperSlice />
+        <FutureOfLoyaltySlice />
         <CaseStudyOverview />
         <MBPSlice />
         <TestimonialsSlice />
