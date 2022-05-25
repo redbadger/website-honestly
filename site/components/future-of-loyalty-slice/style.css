@@ -1,0 +1,101 @@
+@value badgerBlack, badgerWhite, scorpian, badgerRed, midBlue, brightBlue from '../../css/_colors.css';
+@value mediumScreen, largeScreen from "../../css/_sizes.css";
+
+.SliceWrapper {
+  composes: dividerMidBlue from '../../css/_divider.css';
+  width: 100%;
+  background-color: #fc1d43;
+  color: badgerWhite;
+}
+
+.Slice {
+  composes: sansSerif from '../../css/typography/_fonts.css';
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 24px 60px;
+  line-height: 1.5em;
+}
+
+.SliceTitleImage {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+}
+
+.SliceTextContent {
+  padding-left: 8px;
+}
+
+.SliceBodyheader {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.SliceBodyheader h3 {
+  font-family: 'Sentinel A', 'Sentinel B', serif;
+  font-size: 42px;
+  line-height: 46px;
+  margin-right: 14px;
+}
+
+.SliceBodySubHeader {
+  margin-bottom: 24px;
+}
+
+.SliceLink {
+  composes: boldSansSerif from '../../css/typography/_fonts.css';
+  cursor: pointer;
+  font-size: 18px;
+  background: badgerBlack;
+  color: badgerWhite;
+  display: inline-block;
+  text-align: center;
+  padding: 12px 18px;
+}
+
+.SliceLink:hover {
+  background: scorpian;
+}
+
+.SliceImageWrapper {
+  display: none;
+  max-width: 350px;
+}
+
+.SliceImage {
+  max-width: 350px;
+  max-height: 318px;
+  width: auto;
+  height: auto;
+}
+
+@media mediumScreen {
+  .Slice {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 60px;
+  }
+
+  .SliceText {
+    width: 100%;
+    min-width: 420px;
+  }
+}
+
+@media largeScreen {
+  .SliceTitleImage {
+    margin-top: 14px;
+    margin-bottom: 12px;
+    display: block;
+    width: 320px;
+  }
+
+  .SliceImageWrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
