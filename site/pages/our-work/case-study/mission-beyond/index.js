@@ -41,7 +41,7 @@ import styles from './style.css';
 
 const social = {
   title:
-    'Mission Beyond: Building a mission-oriented product business from the group up | Red Badger',
+    'Mission Beyond: Building a mission-oriented product business from the ground up | Red Badger',
   description:
     'Find out how a Red Badger team set about tackling social inequality by building a digital platform to connect employers with a diverse talent pool from poorer socioeconomic backgrounds.',
   metaImage: header,
