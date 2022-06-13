@@ -5,6 +5,7 @@ Array [
   <section
     class="homepageTopSlice"
     data-cy="top-slice"
+    id="this-is-a-test"
   >
     <div
       class="sliceContainer"
