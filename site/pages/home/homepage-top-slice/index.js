@@ -10,7 +10,7 @@ const cx = classnames.bind(styles);
 
 const HomepageTopSlice = () => {
   return (
-    <section className={styles.homepageTopSlice} data-cy="top-slice">
+    <section id="this-is-a-test" className={styles.homepageTopSlice} data-cy="top-slice">
       <div className={styles.sliceContainer}>
         <div className={styles.sloganWrapper}>
           <h1 className={styles.badgerSlogan}>
