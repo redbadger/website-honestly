@@ -23,11 +23,16 @@ const Slice = () => {
               </div>
               <div className={styles.SliceBodySubHeader}>
                 <h4>
-                  Our latest event hosted an exclusive panel of digital loyalty experts from some of the UK’s leading brands debate the future of loyalty, and where blue-chips must go next to keep customers happy, engaged and loyal.
+                  Our latest event hosted an exclusive panel of digital loyalty experts from some of
+                  the UK’s leading brands debate the future of loyalty, and where blue-chips must go
+                  next to keep customers happy, engaged and loyal.
                 </h4>
               </div>
               <div>
-                <a href="https://content.red-badger.com/digital-loyalty/pointless-loyalty" className={styles.SliceLink}>
+                <a
+                  href="https://content.red-badger.com/digital-loyalty/pointless-loyalty"
+                  className={styles.SliceLink}
+                >
                   WATCH NOW
                 </a>
               </div>
