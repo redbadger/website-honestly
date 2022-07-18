@@ -19,17 +19,21 @@ const Slice = () => {
 
             <div className={styles.SliceTextContent}>
               <div className={styles.SliceBodyheader}>
-                <h3>Is the future of digital loyalty point-less?</h3>
+                <h3>Is the future of loyalty point-less, or point-based?</h3>
               </div>
               <div className={styles.SliceBodySubHeader}>
                 <h4>
-                  Join us on Wednesday 6th July at 4pm for a virtual panel discussion to find out
-                  how and why loyalty is evolving
+                  Our latest event hosted an exclusive panel of digital loyalty experts from some of
+                  the UK’s leading brands debate the future of loyalty, and where blue-chips must go
+                  next to keep customers happy, engaged and loyal.
                 </h4>
               </div>
               <div>
-                <a href="https://bit.ly/3GbWdcw" className={styles.SliceLink}>
-                  Register now
+                <a
+                  href="https://content.red-badger.com/digital-loyalty/pointless-loyalty"
+                  className={styles.SliceLink}
+                >
+                  WATCH NOW
                 </a>
               </div>
             </div>
