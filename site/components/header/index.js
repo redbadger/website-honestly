@@ -48,14 +48,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="ourWorkPage"
-                  data-link="header"
-                  activeCssClass={styles.activeNavLink}
-                  data-cy="ourWorkLink"
-                >
+                <a href="/our-work" data-link="header" data-cy="ourWorkLink">
                   Our work
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
@@ -83,7 +78,7 @@ const Header = () => {
           </li>
           <li>
             <a href="/blog" data-link="header" data-cy="blogLink">
-              Blog
+              Resources
             </a>
           </li>
           <li>
