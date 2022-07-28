@@ -92,7 +92,7 @@
     "mini-css-extract-plugin": "^0.5.0",
     "mkdirp": "^0.5.1",
     "mockdate": "^3.0.2",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "navigation": "^5.1.0",
     "navigation-react": "^4.0.1",
     "nock": "^10.0.6",
