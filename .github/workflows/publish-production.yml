@@ -1,4 +1,4 @@
-name: publish-staging
+name: publish-production
 on:
   workflow_dispatch: {}
 jobs:
@@ -8,7 +8,7 @@ jobs:
       - name: call-publish-API
         uses: indiesdev/curl@v1.1
         with:
-          url: ${{ secrets.PUBLISH_STAGING_URL }}
+          url: ${{ secrets.PUBLISH_PRODUCTION_URL }}
           method: POST
           headers: '{ "Accept": "application/json", "Content-Type": "application/json" }'
           timeout: 15000 # 15 seconds
