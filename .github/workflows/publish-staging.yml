@@ -1,0 +1,13 @@
+name: publish-staging
+on: []
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: call-publish-API
+        uses: indiesdev/curl@v1.1
+        with:
+          url: ${{ secrets.PUBLISH_STAGING_URL }}
+          method: POST
+          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
+          timeout: 15000 # 15 seconds
