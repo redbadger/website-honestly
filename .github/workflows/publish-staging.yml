@@ -1,7 +1,9 @@
 name: publish-staging
 on:
-  workflow_dispatch:
-    inputs:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - 'publish-action'
 jobs:
   publish:
     runs-on: ubuntu-latest
