@@ -13,5 +13,5 @@ jobs:
         with:
           url: ${{ secrets.PUBLISH_STAGING_URL }}
           method: POST
-          headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
+          headers: '{ "Accept": "application/json", "Content-Type": "application/json" }'
           timeout: 15000 # 15 seconds
