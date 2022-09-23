@@ -77,8 +77,8 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <a href="/blog" data-link="header" data-cy="blogLink">
-              Resources
+            <a href="https://content.red-badger.com/" data-link="header" data-cy="blogLink">
+              Insights
             </a>
           </li>
           <li>
