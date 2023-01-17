@@ -82,14 +82,9 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <Link
-              to="events"
-              data-link="header"
-              activeCssClass={styles.activeNavLink}
-              data-cy="eventsLink"
-            >
+            <a href="https://content.red-badger.com/events" data-link="header" data-cy="eventsLink">
               Events
-            </Link>
+            </a>
           </li>
           <li>
             <Link
