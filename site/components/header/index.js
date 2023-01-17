@@ -82,7 +82,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="https://content.red-badger.com/events" data-link="header" data-cy="blogLink">
+            <a href="https://content.red-badger.com/events" data-link="header" data-cy="eventsLink">
               Events
             </a>
           </li>
